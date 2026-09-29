@@ -1,0 +1,57 @@
+slug: crypt-raiders
+title: Crypt Raiders
+tagline: Shoot your way through a zombie graveyard, collecting loot and upgrades
+description: >-
+  Crypt Raiders is a 3D action shooter set in a graveyard overrun by zombies.
+  The player fights through the undead, picks up loot, and buys or finds
+  upgrades along the way. Each level is procedurally generated, so a run keeps
+  going into new layouts with no fixed end.
+
+
+  The loop centers on getting stronger while the pressure builds: loot and
+  upgrades feed back into the next fight, and the generated levels change the
+  ground you cover from one run to the next. It was entered in Vibe Jam 2026 and
+  placed 294th among 945 entries.
+
+
+  The creator built it with Cursor, and it runs on Three.js. They said that
+  watching others start the jam made them curious whether they could make a game
+  too.
+play:
+  url: https://cryptraiders.xyz
+  embeddable: true
+  platforms:
+    - browser
+creator:
+  name: maybe_im_sam
+  handle: maybe-im-sam
+  x: maybe_im_sam
+made:
+  models: []
+  tools:
+    - cursor
+  aiShare: most
+  source: Vibe Jam 2026 submission form
+  evidence: creator
+tech:
+  engine: threejs
+  multiplayer: single
+genres:
+  - action
+  - shooter
+jam:
+  event: vibe-jam-2026
+  rank: 294
+  entries: 945
+media:
+  cover: games/crypt-raiders/cover
+  screenshots:
+    - games/crypt-raiders/shot-1
+    - games/crypt-raiders/shot-2
+dates:
+  added: 2026-09-29
+  updated: 2026-09-29
+status: live
+provenance:
+  foundVia: scout:vibejam-2026
+  scannedAt: 2026-09-29T16:37:11.667Z

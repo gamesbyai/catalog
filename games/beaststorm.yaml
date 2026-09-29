@@ -1,0 +1,60 @@
+slug: beaststorm
+title: Beaststorm
+tagline: Scout, expand, and command beast armies to destroy the enemy sanctuary.
+description: >-
+  Beaststorm is a lightweight fantasy real-time strategy game. You scout the
+  map, expand your territory, and harvest resources to build up your forces.
+  Each run is a contest between commanders, and it ends when one side's
+  sanctuary is destroyed.
+
+
+  The game centers on beast factions, so your army is made up of creatures
+  instead of typical soldiers. It aims for the pace of a quick, stripped-down
+  RTS, with the scouting, expansion, and economy loop associated with Age of
+  Empires II but in a smaller package. It runs in the browser in 3D, supports
+  multiplayer, and works on mobile.
+
+
+  According to the listing, the creator built it with Codex. It was entered in
+  Vibe Jam 2026, where it placed 288th out of 945 entries, and it is playable in
+  a browser.
+play:
+  url: https://beaststorm.xyz
+  embeddable: true
+  platforms:
+    - browser
+    - mobile
+creator:
+  name: badengineer
+  handle: badengineer
+  x: badengineer
+made:
+  models: []
+  providers:
+    - openai
+  tools:
+    - codex
+  aiShare: most
+  source: Vibe Jam 2026 submission form
+  evidence: creator
+tech:
+  engine: threejs
+  multiplayer: online
+genres:
+  - strategy
+jam:
+  event: vibe-jam-2026
+  rank: 288
+  entries: 945
+media:
+  cover: games/beaststorm/cover
+  screenshots:
+    - games/beaststorm/shot-1
+    - games/beaststorm/shot-2
+dates:
+  added: 2026-09-29
+  updated: 2026-09-29
+status: live
+provenance:
+  foundVia: scout:vibejam-2026
+  scannedAt: 2026-09-29T16:37:11.664Z

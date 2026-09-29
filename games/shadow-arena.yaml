@@ -1,0 +1,57 @@
+slug: shadow-arena
+title: Shadow Arena
+tagline: Fight off waves of monsters and bosses in a top-down arena with a friend.
+description: >-
+  Shadow Arena is a top-down arena survival game in which you and a friend fight
+  off waves of monsters and bosses. Each run has you leveling up in the middle
+  of combat, picking upgrades as you go, and trying to outlast whatever the
+  arena throws at you.
+
+
+  The pace is frantic, and the leveling system encourages experimenting with
+  unusual builds rather than settling on one setup. Two-player play makes the
+  fights a shared effort, and the game also runs on mobile. It was inspired by
+  Vampire Survivors, and its creator wanted to make something in that style.
+
+
+  It was an entry in Vibe Jam 2026, where it placed 260th out of 945 entries.
+  The creator built it with Cursor, using Three.js for the 3D rendering.
+play:
+  url: https://shadow-arena-five.vercel.app
+  embeddable: true
+  platforms:
+    - browser
+    - mobile
+creator:
+  name: BWBlit
+  handle: bwblit
+  x: BWBlit
+made:
+  models: []
+  tools:
+    - cursor
+  aiShare: most
+  source: Vibe Jam 2026 submission form
+  evidence: creator
+tech:
+  engine: threejs
+  multiplayer: online
+genres:
+  - action
+  - roguelike
+jam:
+  event: vibe-jam-2026
+  rank: 260
+  entries: 945
+media:
+  cover: games/shadow-arena/cover
+  screenshots:
+    - games/shadow-arena/shot-1
+    - games/shadow-arena/shot-2
+dates:
+  added: 2026-09-29
+  updated: 2026-09-29
+status: live
+provenance:
+  foundVia: scout:vibejam-2026
+  scannedAt: 2026-09-29T16:37:11.644Z

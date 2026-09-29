@@ -1,0 +1,59 @@
+slug: plunder
+title: Plunder
+tagline: Sail a pirate ship, collect resources, and sink rival captains on
+  chaotic islands.
+description: >-
+  Plunder is a browser-based pirate battle game built around short, fast
+  matches. You command a ship around an island setting, gathering resources
+  along the way and using them to strengthen your vessel. Rival captains share
+  the map, so each match turns into a scramble between collecting and fighting.
+
+
+  The focus is on quick, chaotic naval combat where upgrades matter as much as
+  aim. Growing your ship during a match gives you a way to turn the tables on
+  opponents who started out stronger. The pirate theme comes from the creator's
+  personal love of pirates.
+
+
+  It was entered in Vibe Jam 2026 and runs on Three.js. According to the
+  creator, it was built with Codex, OpenAI's coding tool, which handled the
+  development work.
+play:
+  url: https://plunder.magnificentgames.com
+  embeddable: true
+  platforms:
+    - browser
+creator:
+  name: wade_owen_watts
+  handle: wade-owen-watts
+  x: wade_owen_watts
+made:
+  models: []
+  providers:
+    - openai
+  tools:
+    - codex
+  aiShare: most
+  source: Vibe Jam 2026 submission form
+  evidence: creator
+tech:
+  engine: threejs
+  multiplayer: single
+genres:
+  - action
+jam:
+  event: vibe-jam-2026
+  rank: 277
+  entries: 945
+media:
+  cover: games/plunder/cover
+  screenshots:
+    - games/plunder/shot-1
+    - games/plunder/shot-2
+dates:
+  added: 2026-09-29
+  updated: 2026-09-29
+status: live
+provenance:
+  foundVia: scout:vibejam-2026
+  scannedAt: 2026-09-29T16:37:11.655Z

@@ -1,0 +1,62 @@
+slug: the-lighter-path
+title: The Lighter Path
+tagline: Descend through Hell as Dante, hopping portals between minigames as
+  karma sways your fate.
+description: >-
+  The Lighter Path casts you as Dante on a descent through Hell. Along the way
+  you step through portals that drop you into different games: an Archero-style
+  roguelite, a dinosaur survival shooter, a Flappy Bird-style Heaven Taxi, and a
+  swarm of smaller minigames.
+
+
+  Every stop changes the rules, so the journey blends action, platforming,
+  puzzles, and racing into one strange trip. Your karma is tracked throughout,
+  and it determines whether the run ends in damnation or salvation. The
+  genre-hopping structure is the main draw.
+
+
+  The creator built it with Claude Code for Vibe Jam 2026 using Three.js. They
+  describe it as a collection of their many ideas, which they could not have
+  made without vibe coding since they are not an engineer. It also runs on
+  mobile.
+play:
+  url: https://the-lighter-path-game.vercel.app
+  embeddable: true
+  platforms:
+    - browser
+    - mobile
+creator:
+  name: Mrkavica
+  handle: mrkavica
+  x: Mrkavica
+made:
+  models: []
+  providers:
+    - anthropic
+  tools:
+    - claude-code
+  aiShare: most
+  source: Vibe Jam 2026 submission form
+  evidence: creator
+tech:
+  engine: threejs
+  multiplayer: single
+genres:
+  - action
+  - adventure
+jam:
+  event: vibe-jam-2026
+  rank: 271
+  entries: 945
+media:
+  cover: games/the-lighter-path/cover
+  screenshots:
+    - games/the-lighter-path/shot-1
+    - games/the-lighter-path/shot-2
+dates:
+  added: 2026-09-29
+  updated: 2026-09-29
+status: live
+provenance:
+  foundVia: scout:vibejam-2026
+  scannedAt: 2026-09-29T16:37:11.651Z

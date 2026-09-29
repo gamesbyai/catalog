@@ -1,0 +1,60 @@
+slug: mobius-strip
+title: Mobius Strip
+tagline: Race and fight on gravity-defying tracks until you're the last rider alive.
+description: >-
+  Möbius Strip is a combat racing game in which riders speed along twisting
+  tracks and try to outlast one another. The last rider still alive wins the
+  round. The courses ignore normal gravity, so you tear along surfaces that bend
+  and flip while dodging explosions and trying to take out your rivals.
+
+
+  The presentation leans hard into spectacle: an electric guitar soundtrack,
+  blasts, and a strong sense of velocity give each race a loud, chaotic feel. It
+  supports multiplayer, so the rivals you fight can be other people. It entered
+  Vibe Jam 2026, where it placed 240th among 945 entries.
+
+
+  The creator built it with Claude Code and describes using AI like a brush
+  rather than a shortcut. It helped them work on art, animation, audio, and
+  visual polish, areas they say they are less strong in. The game runs on
+  Babylon.js.
+play:
+  url: https://mobius-strip-game.com
+  embeddable: true
+  platforms:
+    - browser
+creator:
+  name: yaworsw
+  handle: yaworsw
+  x: yaworsw
+made:
+  models: []
+  providers:
+    - anthropic
+  tools:
+    - claude-code
+  aiShare: most
+  source: Vibe Jam 2026 submission form
+  evidence: creator
+tech:
+  engine: babylonjs
+  multiplayer: online
+genres:
+  - action
+  - racing
+jam:
+  event: vibe-jam-2026
+  rank: 240
+  entries: 945
+media:
+  cover: games/mobius-strip/cover
+  screenshots:
+    - games/mobius-strip/shot-1
+    - games/mobius-strip/shot-2
+dates:
+  added: 2026-09-29
+  updated: 2026-09-29
+status: live
+provenance:
+  foundVia: scout:vibejam-2026
+  scannedAt: 2026-09-29T16:37:11.623Z

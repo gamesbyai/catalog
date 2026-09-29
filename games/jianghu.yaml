@@ -1,0 +1,60 @@
+slug: jianghu
+title: jianghu
+tagline: Fight wuxia duels by building a deck and playing cards each turn.
+description: >-
+  Jianghu is a strategy game that blends deck-building combat with a martial
+  arts setting. The creator describes it as Slay the Spire meets wuxia, so a run
+  likely means facing opponents in turn-based card battles and choosing which
+  techniques to play each round.
+
+
+  The pairing of a card-battler structure with the wandering swordfighter world
+  of wuxia is the main draw. It runs in the browser with 3D rendering through
+  Three.js, and it is set up to work on mobile devices as well as desktop. It is
+  a single-player experience with no multiplayer mode.
+
+
+  The game was entered in Vibe Jam 2026, where it placed 246th among 945
+  entries. According to the creator's information, it was built with Codex,
+  OpenAI's coding tool.
+play:
+  url: https://jianghu-ascendant.pages.dev
+  embeddable: true
+  platforms:
+    - browser
+    - mobile
+creator:
+  name: vincexplorer
+  handle: vincexplorer
+  x: vincexplorer
+made:
+  models: []
+  providers:
+    - openai
+  tools:
+    - codex
+  aiShare: most
+  source: Vibe Jam 2026 submission form
+  evidence: creator
+tech:
+  engine: threejs
+  multiplayer: single
+genres:
+  - strategy
+  - card
+jam:
+  event: vibe-jam-2026
+  rank: 246
+  entries: 945
+media:
+  cover: games/jianghu/cover
+  screenshots:
+    - games/jianghu/shot-1
+    - games/jianghu/shot-2
+dates:
+  added: 2026-09-29
+  updated: 2026-09-29
+status: live
+provenance:
+  foundVia: scout:vibejam-2026
+  scannedAt: 2026-09-29T16:37:11.633Z

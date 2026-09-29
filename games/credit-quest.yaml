@@ -1,0 +1,60 @@
+slug: credit-quest
+title: Credit Quest
+tagline: Collect API credits and finish terminal-themed quests in a
+  Zelda-inspired adventure.
+description: >-
+  Credit Quest is a 3D adventure where the player explores a world in which
+  terminals hold the power. The goal is to collect API credits and spend that
+  progress on completing tasks and quests along the way. Puzzle elements are
+  mixed into the exploration.
+
+
+  The game draws on classic Zelda-style adventure, and the creator said they
+  grew up loving that series. The setting turns computing culture into the
+  fantasy backdrop, so credits work as the currency of the world and terminals
+  act as its centers of authority.
+
+
+  It was built with Three.js as an entry in Vibe Jam 2026, where it ranked 289
+  out of 945 entries. The creator built it with Claude Code. It is a
+  single-player game.
+play:
+  url: https://creditquest.packetloss404.com
+  embeddable: true
+  platforms:
+    - browser
+creator:
+  name: packetloss
+  handle: packetloss
+  x: packetloss
+made:
+  models: []
+  providers:
+    - anthropic
+  tools:
+    - claude-code
+  aiShare: most
+  source: Vibe Jam 2026 submission form
+  evidence: creator
+tech:
+  engine: threejs
+  multiplayer: single
+genres:
+  - adventure
+  - puzzle
+jam:
+  event: vibe-jam-2026
+  rank: 289
+  entries: 945
+media:
+  cover: games/credit-quest/cover
+  screenshots:
+    - games/credit-quest/shot-1
+    - games/credit-quest/shot-2
+dates:
+  added: 2026-09-29
+  updated: 2026-09-29
+status: live
+provenance:
+  foundVia: scout:vibejam-2026
+  scannedAt: 2026-09-29T16:37:11.665Z

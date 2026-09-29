@@ -1,0 +1,59 @@
+slug: scream-to-fly
+title: Scream To Fly
+tagline: Scream to make your character fly through a platformer with life lessons.
+description: >-
+  Scream To Fly is a platformer in which your voice is the way you get around.
+  Instead of only pressing buttons, you scream to send your character into the
+  air and work through the stage. Each run is a loose mix of flying, landing,
+  and picking up small pieces of advice along the way.
+
+
+  The idea behind it is a mix of stress relief and gentle life lessons. Letting
+  out a shout is the core action, and the lessons show up as you play rather
+  than as a lecture. The tone is light and a bit tongue-in-cheek, and it runs on
+  mobile as well as desktop.
+
+
+  It was entered in Vibe Jam 2026, where it placed 257th out of 945 entries.
+  According to the creator, it was built with Claude Code, Anthropic's coding
+  tool.
+play:
+  url: https://screamtofly.com
+  embeddable: true
+  platforms:
+    - browser
+    - mobile
+creator:
+  name: acadictive
+  handle: acadictive
+  x: acadictive
+made:
+  models: []
+  providers:
+    - anthropic
+  tools:
+    - claude-code
+  aiShare: most
+  source: Vibe Jam 2026 submission form
+  evidence: creator
+tech:
+  multiplayer: single
+genres:
+  - platformer
+  - casual
+jam:
+  event: vibe-jam-2026
+  rank: 257
+  entries: 945
+media:
+  cover: games/scream-to-fly/cover
+  screenshots:
+    - games/scream-to-fly/shot-1
+    - games/scream-to-fly/shot-2
+dates:
+  added: 2026-09-29
+  updated: 2026-09-29
+status: live
+provenance:
+  foundVia: scout:vibejam-2026
+  scannedAt: 2026-09-29T16:37:11.643Z

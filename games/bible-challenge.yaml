@@ -1,0 +1,56 @@
+slug: bible-challenge
+title: Bible Challenge
+tagline: Answer Bible questions and see how your knowledge compares with friends.
+description: >-
+  Bible Challenge is a quiz game built around questions from the Bible. Players
+  answer questions to test how much scripture they actually know, and the game
+  supports playing against friends, so a round can turn into a friendly contest
+  over who knows the text best.
+
+
+  The tone is reflective rather than purely competitive. The creator describes
+  the idea as a way to see how real Christian beliefs remain to us, which gives
+  the quiz a personal angle beyond scoring points. It is playable on mobile
+  devices as well as desktop browsers.
+
+
+  The game was entered in Vibe Jam 2026, where it placed 281st among 945
+  entries. According to the creator, it was built with Lovable, an AI
+  app-building tool, rather than a traditional game engine.
+play:
+  url: https://scripturama-challenge.lovable.app
+  embeddable: true
+  platforms:
+    - browser
+    - mobile
+creator:
+  name: jolayemiAy101
+  handle: jolayemiay101
+  x: jolayemiAy101
+made:
+  models: []
+  tools:
+    - lovable
+  aiShare: most
+  source: Vibe Jam 2026 submission form
+  evidence: creator
+tech:
+  multiplayer: online
+genres:
+  - trivia
+jam:
+  event: vibe-jam-2026
+  rank: 281
+  entries: 945
+media:
+  cover: games/bible-challenge/cover
+  screenshots:
+    - games/bible-challenge/shot-1
+    - games/bible-challenge/shot-2
+dates:
+  added: 2026-09-29
+  updated: 2026-09-29
+status: live
+provenance:
+  foundVia: scout:vibejam-2026
+  scannedAt: 2026-09-29T16:37:11.659Z
