@@ -1,0 +1,61 @@
+slug: ship-snatch
+title: Ship Snatch
+tagline: Build a hex archipelago and defend your Captain's Keep from enemy ships
+  and sea monsters.
+description: >-
+  Ship Snatch is a top-down hex tower defense and base builder set on the sea.
+  You expand an archipelago one hex at a time, place defenses, and upgrade them
+  to hold your Captain's Keep against waves of enemy ships and sea monsters.
+
+
+  The look is claymation with a pirate theme, aimed at being cute enough for
+  kids while still giving adults something to think about. Growing the map and
+  choosing where to fortify are part of the challenge, not just placing towers
+  on a fixed path.
+
+
+  It runs in the browser and supports solo play or co-op with up to 32 players,
+  and it works on mobile. The creator built it with Cursor and the Gemini app,
+  using Three.js for rendering, and made it for the Vibe Jam 2026.
+play:
+  url: https://shipsnatch.com
+  embeddable: true
+  platforms:
+    - browser
+    - mobile
+creator:
+  name: radomir_3
+  handle: radomir-3
+  x: radomir_3
+made:
+  models: []
+  providers:
+    - google
+  tools:
+    - cursor
+    - gemini-app
+  aiShare: most
+  source: Vibe Jam 2026 submission form
+  evidence: creator
+tech:
+  engine: threejs
+  multiplayer: online
+genres:
+  - tower-defense
+  - strategy
+jam:
+  event: vibe-jam-2026
+  rank: 107
+  entries: 945
+media:
+  cover: games/ship-snatch/cover
+  screenshots:
+    - games/ship-snatch/shot-1
+    - games/ship-snatch/shot-2
+dates:
+  added: 2026-09-29
+  updated: 2026-09-29
+status: live
+provenance:
+  foundVia: scout:vibejam-2026
+  scannedAt: 2026-09-29T16:15:02.124Z

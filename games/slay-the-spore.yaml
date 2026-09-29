@@ -1,0 +1,57 @@
+slug: slay-the-spore
+title: Slay the Spore
+tagline: Fight through strategic battles using randomly generated creatures.
+description: >-
+  Slay the Spore is a strategy game that borrows its structure from Slay the
+  Spire. Players work through encounters using mechanics in that style, and the
+  creatures they face and use are randomly generated instead of hand-built. It
+  runs in the browser and supports mobile.
+
+
+  The main hook is the mix of two inspirations: the tactical decisions of a
+  deck-driven climb and the creature-making spirit of Spore. Because each
+  creature is procedurally generated, the opponents and allies vary from run to
+  run. The game was entered in Vibe Jam 2026, where it placed 100th among 945
+  entries.
+
+
+  The visuals are built with Three.js, which draws the randomly generated
+  creatures in 3D inside the browser, so nothing needs to be installed to play.
+play:
+  url: https://slaythespore.netlify.app
+  embeddable: true
+  platforms:
+    - browser
+    - mobile
+creator:
+  name: op__nico
+  handle: op-nico
+  x: op__nico
+made:
+  models: []
+  tools: []
+  aiShare: most
+  source: Vibe Jam 2026 submission form
+  evidence: inferred
+tech:
+  engine: threejs
+  multiplayer: single
+genres:
+  - strategy
+  - action
+jam:
+  event: vibe-jam-2026
+  rank: 100
+  entries: 945
+media:
+  cover: games/slay-the-spore/cover
+  screenshots:
+    - games/slay-the-spore/shot-1
+    - games/slay-the-spore/shot-2
+dates:
+  added: 2026-09-29
+  updated: 2026-09-29
+status: live
+provenance:
+  foundVia: scout:vibejam-2026
+  scannedAt: 2026-09-29T16:15:02.120Z

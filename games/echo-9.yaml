@@ -1,0 +1,65 @@
+slug: echo-9
+title: Echo-9
+tagline: Deliver packages on foot through post-apocalyptic Hanoi using a desktop
+  and a phone.
+description: >-
+  Echo-9 casts you as a delivery courier in a post-apocalyptic Hanoi where the
+  power grid has failed. You carry packages on foot through the city in 3D,
+  steering your character with WASD on a desktop while weaving around thousands
+  of scooters that fill the streets.
+
+
+  The game is played across two devices at once. The desktop shows the city and
+  handles movement, while a phone becomes a companion tool for the mission,
+  offering buttons, a briefing, and accelerometer input among other features.
+  That split gives each device a distinct job instead of mirroring one screen.
+
+
+  The creator says the project draws on the 1991 game Another World, aiming for
+  a similar mood in 3D, and added the phone pairing for novelty. It was built
+  with Claude Code using Three.js and entered in Vibe Jam 2026.
+play:
+  url: https://echo9.tonnoz.com
+  embeddable: false
+  platforms:
+    - browser
+    - mobile
+  controls:
+    - WASD to move (desktop)
+    - Phone buttons
+    - Phone accelerometer
+creator:
+  name: tonnoz
+  handle: tonnoz
+  x: tonnoz
+made:
+  models: []
+  providers:
+    - anthropic
+  tools:
+    - claude-code
+  aiShare: most
+  source: Vibe Jam 2026 submission form
+  evidence: creator
+tech:
+  engine: threejs
+  multiplayer: single
+genres:
+  - adventure
+  - simulation
+jam:
+  event: vibe-jam-2026
+  rank: 85
+  entries: 945
+media:
+  cover: games/echo-9/cover
+  screenshots:
+    - games/echo-9/shot-1
+    - games/echo-9/shot-2
+dates:
+  added: 2026-09-29
+  updated: 2026-09-29
+status: live
+provenance:
+  foundVia: scout:vibejam-2026
+  scannedAt: 2026-09-29T16:15:02.111Z

@@ -1,0 +1,61 @@
+slug: hollowlands
+title: Hollowlands
+tagline: Explore an endless shared world, survive, and build alongside other players.
+description: >-
+  Hollowlands is a multiplayer survival adventure set in an infinite world.
+  Players roam the landscape, gather what they need to stay alive, and put up
+  structures as they go. Sessions are open-ended, driven by curiosity about what
+  lies past the next horizon rather than a fixed goal.
+
+
+  The game cites Zelda: Breath of the Wild as its inspiration, which points
+  toward free-form exploration across a large open landscape. Because the world
+  has no edge and other people share it, building and traveling can play out
+  differently on each visit. It runs in the browser and is set up for mobile as
+  well.
+
+
+  Hollowlands was an entry in Vibe Jam 2026, where it placed 94th out of 945
+  entries. It is built on Three.js, and the creator built it with Claude Code.
+play:
+  url: https://hollowlands.andreelias.dev
+  embeddable: true
+  platforms:
+    - browser
+    - mobile
+creator:
+  name: andreeliasdev
+  handle: andreeliasdev
+  x: andreeliasdev
+made:
+  models: []
+  providers:
+    - anthropic
+  tools:
+    - claude-code
+  aiShare: most
+  source: Vibe Jam 2026 submission form
+  evidence: creator
+tech:
+  engine: threejs
+  multiplayer: online
+genres:
+  - survival
+  - open-world
+  - adventure
+jam:
+  event: vibe-jam-2026
+  rank: 94
+  entries: 945
+media:
+  cover: games/hollowlands/cover
+  screenshots:
+    - games/hollowlands/shot-1
+    - games/hollowlands/shot-2
+dates:
+  added: 2026-09-29
+  updated: 2026-09-29
+status: live
+provenance:
+  foundVia: scout:vibejam-2026
+  scannedAt: 2026-09-29T16:15:02.117Z

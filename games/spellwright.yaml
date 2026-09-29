@@ -1,0 +1,61 @@
+slug: spellwright
+title: Spellwright
+tagline: Type spell ideas and fight rival wizards in a multiplayer arena with
+  physics-driven magic.
+description: >-
+  Spellwright is a multiplayer wizard arena where players fight each other with
+  magic. Instead of picking spells from a fixed list, you write a prompt
+  describing what you want to cast, and an AI model generates the spell on the
+  spot. The results then play out in a physics-driven arena fight.
+
+
+  The main hook is that the game runs on language model inference while you
+  play. Spells come from what players type, so outcomes are chaotic and hard to
+  predict, and the physics simulation adds to the disorder as effects collide.
+  It was built for Vibe Jam 2026 and is meant to work on mobile as well as
+  desktop.
+
+
+  The creator says the goal was a game powered fully by LLM inference at run
+  time. It runs on Three.js, and the creator built it with Claude Code.
+play:
+  url: https://spellwright.xyz
+  embeddable: true
+  platforms:
+    - browser
+    - mobile
+creator:
+  name: liampoli
+  handle: liampoli
+  x: liampoli
+made:
+  models: []
+  providers:
+    - anthropic
+  tools:
+    - claude-code
+  aiShare: most
+  source: Vibe Jam 2026 submission form
+  evidence: creator
+tech:
+  engine: threejs
+  multiplayer: online
+genres:
+  - action
+  - shooter
+jam:
+  event: vibe-jam-2026
+  rank: 117
+  entries: 945
+media:
+  cover: games/spellwright/cover
+  screenshots:
+    - games/spellwright/shot-1
+    - games/spellwright/shot-2
+dates:
+  added: 2026-09-29
+  updated: 2026-09-29
+status: live
+provenance:
+  foundVia: scout:vibejam-2026
+  scannedAt: 2026-09-29T16:15:02.131Z

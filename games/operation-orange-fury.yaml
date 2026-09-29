@@ -1,0 +1,63 @@
+slug: operation-orange-fury
+title: "Operation: Orange Fury"
+tagline: Swipe through political scandals, bet fake crypto on surviving, and
+  share your death.
+description: >-
+  Operation: Orange Fury is a mobile-friendly action game built around swiping.
+  You move through scenarios drawn from real presidential scandals while placing
+  bets of fake crypto on whether you will survive. When a run goes wrong, your
+  character dies in a darkly comic way, and the game hands you a cause of death
+  to show off.
+
+
+  The satire is the hook. It takes real political controversies as its raw
+  material and pairs them with a mock-crypto betting layer, so every decision
+  carries both a survival risk and a wager. The shareable cause-of-death result
+  turns each failure into something to pass along to friends.
+
+
+  The creator says it grew out of interest in the war and the worldwide dislike
+  of the American political scene. It was entered in Vibe Jam 2026, and the
+  creator built it with Claude Code.
+play:
+  url: https://oof.midatlantic.ai
+  embeddable: true
+  platforms:
+    - browser
+    - mobile
+  controls:
+    - Swipe
+creator:
+  name: jviruet83
+  handle: jviruet83
+  x: jviruet83
+made:
+  models: []
+  providers:
+    - anthropic
+  tools:
+    - claude-code
+  aiShare: most
+  source: Vibe Jam 2026 submission form
+  evidence: creator
+tech:
+  multiplayer: single
+genres:
+  - action
+  - arcade
+jam:
+  event: vibe-jam-2026
+  rank: 113
+  entries: 945
+media:
+  cover: games/operation-orange-fury/cover
+  screenshots:
+    - games/operation-orange-fury/shot-1
+    - games/operation-orange-fury/shot-2
+dates:
+  added: 2026-09-29
+  updated: 2026-09-29
+status: live
+provenance:
+  foundVia: scout:vibejam-2026
+  scannedAt: 2026-09-29T16:15:02.129Z

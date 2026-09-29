@@ -1,0 +1,61 @@
+slug: hired-swords
+title: Hired Swords
+tagline: Draft a team of fighters and battle other players' ghost teams in auto-battles.
+description: >-
+  Hired Swords is a roguelite autobattler in which you assemble a team of
+  fighters and send them into automatic battles. Each round you shape your
+  lineup, then watch it face a ghost, a saved team built by another human
+  player. Win enough fights and you climb toward the top.
+
+
+  The focus is on synergies. Choosing which units to hold and how they combine
+  with one another matters more than reflexes, which gives the game a
+  puzzle-like feel alongside its strategy. Because opponents are recorded teams
+  from real players, every run meets a different set of rivals.
+
+
+  The game was made for Vibe Jam 2026, where it placed 68th among 945 entries,
+  and it takes inspiration from Super Auto Pets. The creator built it with
+  Claude Code on the Phaser engine, and it is playable on mobile as well as
+  desktop.
+play:
+  url: https://hiredswordsvibecode2026.netlify.app
+  embeddable: true
+  platforms:
+    - browser
+    - mobile
+creator:
+  name: Titanztommy
+  handle: titanztommy
+  x: Titanztommy
+made:
+  models: []
+  providers:
+    - anthropic
+  tools:
+    - claude-code
+  aiShare: most
+  source: Vibe Jam 2026 submission form
+  evidence: creator
+tech:
+  engine: phaser
+  multiplayer: online
+genres:
+  - strategy
+  - roguelike
+jam:
+  event: vibe-jam-2026
+  rank: 68
+  entries: 945
+media:
+  cover: games/hired-swords/cover
+  screenshots:
+    - games/hired-swords/shot-1
+    - games/hired-swords/shot-2
+dates:
+  added: 2026-09-29
+  updated: 2026-09-29
+status: live
+provenance:
+  foundVia: scout:vibejam-2026
+  scannedAt: 2026-09-29T16:15:02.098Z

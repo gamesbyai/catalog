@@ -1,0 +1,59 @@
+slug: temple-fist
+title: Temple Fist
+tagline: Box in a photoreal ring where every frame comes from AI-generated video.
+description: >-
+  Temple Fist is a boxing game that plays in the browser and on mobile. The
+  player steps into the ring and trades punches with an opponent, with the fight
+  running as a series of short exchanges rather than a free-roaming simulation.
+
+
+  What stands out is the look. Every visual is built from AI-generated video, so
+  the fighters and ring have a photographic quality instead of the usual
+  stylized game art. Boxing suits the approach because the action breaks into
+  clear moments, which fits how video models produce footage.
+
+
+  The creator says the idea came after a wave of AI-made game trailers that
+  could not be played. They wanted photoreal visuals of that kind in something
+  you can actually play. The creator built it with Claude Code, and it was
+  entered in Vibe Jam 2026.
+play:
+  url: https://templefist.vamonke.com
+  embeddable: true
+  platforms:
+    - browser
+    - mobile
+creator:
+  name: vamonke
+  handle: vamonke
+  x: vamonke
+made:
+  models: []
+  providers:
+    - anthropic
+  tools:
+    - claude-code
+  aiShare: most
+  source: Vibe Jam 2026 submission form
+  evidence: creator
+tech:
+  multiplayer: single
+genres:
+  - action
+  - sports
+jam:
+  event: vibe-jam-2026
+  rank: 88
+  entries: 945
+media:
+  cover: games/temple-fist/cover
+  screenshots:
+    - games/temple-fist/shot-1
+    - games/temple-fist/shot-2
+dates:
+  added: 2026-09-29
+  updated: 2026-09-29
+status: live
+provenance:
+  foundVia: scout:vibejam-2026
+  scannedAt: 2026-09-29T16:15:02.113Z

@@ -1,0 +1,60 @@
+slug: hormuzy
+title: Hormuzy
+tagline: Steer a giant oil tanker through a strait full of mines, missiles and
+  speedboats.
+description: >-
+  Hormuzy is an arcade-action survival game in which you captain a massive oil
+  tanker through a dangerous strait. Each run is a delivery: you guide the ship
+  along the route while avoiding mines, missiles, and swarms of speedboats, and
+  try to bring your cargo to its destination intact.
+
+
+  The setting comes from a real, ongoing news event, which gives the game its
+  premise. Playing a slow, heavy tanker instead of a nimble fighter makes the
+  hazards feel different, since every threat has to be handled with a large
+  ship. It runs in the browser and supports mobile play.
+
+
+  The creator says they wanted to test whether AI-assisted coding in 2026 could
+  turn a current event into a full game within days, while the event was still
+  unfolding. The creator built it with Bolt, and it was an entry in Vibe Jam
+  2026.
+play:
+  url: https://hormuzy.com
+  embeddable: true
+  platforms:
+    - browser
+    - mobile
+creator:
+  name: CDB_Dave
+  handle: cdb-dave
+  x: CDB_Dave
+made:
+  models: []
+  tools:
+    - bolt
+  aiShare: most
+  source: Vibe Jam 2026 submission form
+  evidence: creator
+tech:
+  engine: threejs
+  multiplayer: single
+genres:
+  - action
+  - survival
+jam:
+  event: vibe-jam-2026
+  rank: 97
+  entries: 945
+media:
+  cover: games/hormuzy/cover
+  screenshots:
+    - games/hormuzy/shot-1
+    - games/hormuzy/shot-2
+dates:
+  added: 2026-09-29
+  updated: 2026-09-29
+status: live
+provenance:
+  foundVia: scout:vibejam-2026
+  scannedAt: 2026-09-29T16:15:02.117Z

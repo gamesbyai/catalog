@@ -1,0 +1,58 @@
+slug: ekeko
+title: Ekeko
+tagline: Bargain with a corrupted Andean deity by playing cards in a horror roguelite.
+description: >-
+  Ekeko is a horror roguelite card game in which the player negotiates ritual
+  offerings with a corrupted deity of abundance drawn from Andean tradition.
+  Each run is a series of card-driven exchanges, with the player weighing what
+  to offer against what the deity grants in return.
+
+
+  The premise rests on Bolivian folklore, centered on the Ekeko figure, and the
+  tone is built around the idea that every wish has a price. The creator points
+  to Balatro, Inscryption, and Buckshot Roulette as touchstones, which suggests
+  a mix of run-based card strategy and tense, high-stakes encounters.
+
+
+  It was made by a solo developer from Bolivia and entered in Vibe Jam 2026,
+  where it placed 89th out of 945 entries. It runs on Godot.
+play:
+  url: https://adriver.itch.io/ekeko
+  embeddable: false
+  platforms:
+    - browser
+creator:
+  name: AdriverBuilds
+  handle: adriverbuilds
+  x: AdriverBuilds
+made:
+  models: []
+  tools: []
+  aiShare: most
+  source: Vibe Jam 2026 submission form
+  evidence: inferred
+tech:
+  engine: godot
+  multiplayer: single
+genres:
+  - card
+  - roguelike
+  - horror
+jam:
+  event: vibe-jam-2026
+  rank: 89
+  entries: 945
+media:
+  cover: games/ekeko/cover
+  screenshots:
+    - games/ekeko/shot-1
+    - games/ekeko/shot-2
+dates:
+  added: 2026-09-29
+  updated: 2026-09-29
+status: live
+provenance:
+  foundVia: scout:vibejam-2026
+  scannedAt: 2026-09-29T16:15:02.114Z
+  flags:
+    - unclear-ai

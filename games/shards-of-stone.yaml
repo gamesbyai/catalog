@@ -1,0 +1,57 @@
+slug: shards-of-stone
+title: Shards of Stone
+tagline: Build a base, train an army, and destroy the enemy in a fantasy RTS.
+description: >-
+  Shards of Stone is a real-time strategy game that runs in the browser. Players
+  build a base, raise an army, and send it against an opposing fantasy faction.
+  A match is decided by which side can crush the other's forces and holdings
+  first.
+
+
+  The game draws on classic fantasy RTS titles like Warcraft 2 and 3, which the
+  creator played as a child. The factions are asymmetric, so each side plays
+  differently and calls for its own approach to building and combat. It is
+  marked as supporting multiplayer and mobile play.
+
+
+  It was entered in Vibe Jam 2026, where it ranked 115th out of 945 entries. The
+  creator built it with Cursor, and the 3D rendering is done with Three.js, so
+  the whole game loads and plays in a web page.
+play:
+  url: https://shardsofstone.com/play
+  embeddable: false
+  platforms:
+    - browser
+    - mobile
+creator:
+  name: AJSturrock
+  handle: ajsturrock
+  x: AJSturrock
+made:
+  models: []
+  tools:
+    - cursor
+  aiShare: most
+  source: Vibe Jam 2026 submission form
+  evidence: creator
+tech:
+  engine: threejs
+  multiplayer: online
+genres:
+  - strategy
+jam:
+  event: vibe-jam-2026
+  rank: 115
+  entries: 945
+media:
+  cover: games/shards-of-stone/cover
+  screenshots:
+    - games/shards-of-stone/shot-1
+    - games/shards-of-stone/shot-2
+dates:
+  added: 2026-09-29
+  updated: 2026-09-29
+status: live
+provenance:
+  foundVia: scout:vibejam-2026
+  scannedAt: 2026-09-29T16:15:02.130Z

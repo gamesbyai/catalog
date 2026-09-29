@@ -1,0 +1,59 @@
+slug: smash-clash
+title: Smash&Clash
+tagline: Battle a second player with cards on a compact 3×5 grid in short, tense
+  matches.
+description: >-
+  Smash&Clash is a two-player card battle played on a 3×5 grid. Players take
+  turns placing and using cards on the board, competing for control of the grid.
+  Matches are built to be short, so a single game runs as a quick burst of
+  tactical decisions rather than a long session.
+
+
+  The design centers on momentum. Small wins on the board add up, and each move
+  can tip the balance toward one side or the other. The compact grid keeps the
+  options readable, so every placement carries weight and comebacks stay
+  possible.
+
+
+  It was an entry in Vibe Jam 2026, and the creator lists Cursor as a tool. It
+  runs in the browser on a canvas and is set up for both multiplayer and mobile
+  play.
+play:
+  url: https://smashandclash.in
+  embeddable: false
+  platforms:
+    - browser
+    - mobile
+creator:
+  name: HarshitKhemani
+  handle: harshitkhemani
+  x: HarshitKhemani
+made:
+  models: []
+  tools:
+    - cursor
+  aiShare: most
+  source: Vibe Jam 2026 submission form
+  evidence: creator
+tech:
+  engine: canvas
+  multiplayer: online
+genres:
+  - strategy
+  - card
+jam:
+  event: vibe-jam-2026
+  rank: 109
+  entries: 945
+media:
+  cover: games/smash-clash/cover
+  screenshots:
+    - games/smash-clash/shot-1
+    - games/smash-clash/shot-2
+dates:
+  added: 2026-09-29
+  updated: 2026-09-29
+status: live
+provenance:
+  foundVia: scout:vibejam-2026
+  scannedAt: 2026-09-29T16:15:02.125Z

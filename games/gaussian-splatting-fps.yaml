@@ -1,0 +1,59 @@
+slug: gaussian-splatting-fps
+title: Gaussian Splatting FPS
+tagline: Shoot your way through a first-person level built from a real-world 3D scan.
+description: >-
+  Gaussian Splatting FPS is a browser first-person shooter set inside a Gaussian
+  Splat scan of a real place. The player moves through the scanned environment
+  from a first-person view and fights within its walls, corridors and open
+  areas, playing directly in the browser.
+
+
+  The main draw is the setting. Gaussian Splats are static and carry no
+  geometry, so the project had to work out collision, dynamic objects,
+  navigation and rendering compatibility on its own. The result puts a shooter
+  inside a photographic space instead of a hand-modeled level. It was entered in
+  Vibe Jam 2026 and also supports mobile.
+
+
+  The creator built it with Cursor and says most of the technical obstacles were
+  solved that way. They describe making games as a longtime hobby and credit AI
+  with helping them finally finish a project. A full writeup is available on the
+  PlayCanvas blog.
+play:
+  url: https://aez.one/gs-fps
+  embeddable: true
+  platforms:
+    - browser
+    - mobile
+creator:
+  name: yak32
+  handle: yak32
+  x: yak32
+made:
+  models: []
+  tools:
+    - cursor
+  aiShare: most
+  source: Vibe Jam 2026 submission form
+  evidence: creator
+tech:
+  engine: playcanvas
+  multiplayer: single
+genres:
+  - shooter
+jam:
+  event: vibe-jam-2026
+  rank: 103
+  entries: 945
+media:
+  cover: games/gaussian-splatting-fps/cover
+  screenshots:
+    - games/gaussian-splatting-fps/shot-1
+    - games/gaussian-splatting-fps/shot-2
+dates:
+  added: 2026-09-29
+  updated: 2026-09-29
+status: live
+provenance:
+  foundVia: scout:vibejam-2026
+  scannedAt: 2026-09-29T16:15:02.121Z
