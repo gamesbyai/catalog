@@ -1,0 +1,60 @@
+slug: neon-flux
+title: Neon Flux
+tagline: Blow up your own ship to set off chain explosions and rack up points
+description: >-
+  Neon Flux is a score-chasing arcade shooter played against a countdown. Waves
+  of enemies fill the screen, and instead of only firing at them, you detonate
+  your own ship to set off chain explosions that sweep through the crowd. Each
+  run is a race to turn the clock into as many points as possible.
+
+
+  The core idea is that destruction is your main tool. Lining up enemies so one
+  blast ripples through many of them matters more than picking targets off one
+  at a time. The timer keeps every decision tight, and the game is set up for
+  repeat attempts at a higher score.
+
+
+  It was entered in Vibe Jam 2026, where it placed 162nd out of 945 entries. The
+  game runs on Three.js and works on mobile. The creator built it with Claude
+  Code.
+play:
+  url: https://neon-flux.org
+  embeddable: true
+  platforms:
+    - browser
+    - mobile
+creator:
+  name: witlogic
+  handle: witlogic
+  x: witlogic
+made:
+  models: []
+  providers:
+    - anthropic
+  tools:
+    - claude-code
+  aiShare: most
+  source: Vibe Jam 2026 submission form
+  evidence: creator
+tech:
+  engine: threejs
+  multiplayer: single
+genres:
+  - arcade
+  - shooter
+jam:
+  event: vibe-jam-2026
+  rank: 162
+  entries: 945
+media:
+  cover: games/neon-flux/cover
+  screenshots:
+    - games/neon-flux/shot-1
+    - games/neon-flux/shot-2
+dates:
+  added: 2026-09-29
+  updated: 2026-09-29
+status: live
+provenance:
+  foundVia: scout:vibejam-2026
+  scannedAt: 2026-09-29T18:39:12.036Z
