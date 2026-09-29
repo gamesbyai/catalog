@@ -6,7 +6,7 @@ import { join } from 'node:path';
 import { crc32 } from 'node:zlib';
 import { execFileSync } from 'node:child_process';
 import sharp from 'sharp';
-import { processImage, contactSheet, escapeText, runUpload, restPut } from '../scripts/upload.mjs';
+import { processImage, contactSheet, escapeText, runUpload, s3Put, r2Credentials } from '../scripts/upload.mjs';
 
 const tmp = () => mkdtempSync(join(tmpdir(), 'upload-'));
 const shot = (width = 1280, height = 720) =>
@@ -225,31 +225,60 @@ test('runUpload can read entries from a git ref instead of the working tree', as
   assert.ok(readFileSync(join(out, 'contact-sheet.md'), 'utf8').includes('Good From Git'));
 });
 
-test('restPut uploads through the Cloudflare R2 API with type and cache headers, retrying server errors', async () => {
-  const dir = tmp();
-  const file = join(dir, 'x.webp');
-  writeFileSync(file, 'data');
+test('R2 S3 credentials come from the R2 token: its id and the SHA-256 of its value', async () => {
   const calls = [];
-  let n = 0;
-  const fetchImpl = async (url, init) => {
-    calls.push({ url, init });
-    return ++n < 3 ? new Response('busy', { status: 503 }) : Response.json({ success: true });
+  const fetchImpl = async (url) => {
+    calls.push(url);
+    return url.includes('/accounts/acc/tokens/verify') ? Response.json({ success: true, result: { id: 'tok-id', status: 'active' } }) : new Response('', { status: 404 });
   };
-  const r = await restPut('games/a/cover-640.webp', file, 'image/webp', { token: 't', accountId: 'acc', fetchImpl, backoffMs: 1 });
-  assert.equal(r.ok, true);
-  assert.equal(calls.length, 3);
-  assert.equal(calls[0].url, 'https://api.cloudflare.com/client/v4/accounts/acc/r2/buckets/gamesbyai-media/objects/games/a/cover-640.webp');
-  assert.equal(calls[0].init.method, 'PUT');
-  assert.equal(calls[0].init.headers['Content-Type'], 'image/webp');
-  assert.match(calls[0].init.headers['Cache-Control'], /max-age=604800/);
-  assert.equal(calls[0].init.headers.Authorization, 'Bearer t');
+  const c = await r2Credentials('secret-token', 'acc', fetchImpl);
+  assert.equal(c.accessKeyId, 'tok-id');
+  const { createHash } = await import('node:crypto');
+  assert.equal(c.secretAccessKey, createHash('sha256').update('secret-token').digest('hex'));
 });
 
-test('restPut reports a clear error after permanent failures', async () => {
+test('s3Put signs a PUT to the account R2 endpoint with type and cache headers, retrying server errors', async () => {
   const dir = tmp();
   const file = join(dir, 'x.webp');
   writeFileSync(file, 'data');
-  const r = await restPut('games/a/x.webp', file, 'image/webp', { token: 't', accountId: 'acc', fetchImpl: async () => Response.json({ errors: [{ message: 'Authentication error' }] }, { status: 403 }), backoffMs: 1 });
+  const seen = [];
+  let n = 0;
+  const fetchImpl = async (req) => {
+    seen.push(req);
+    return ++n < 3 ? new Response('busy', { status: 503 }) : new Response('', { status: 200 });
+  };
+  const r = await s3Put('games/a/cover-640.webp', file, 'image/webp', { creds: { accessKeyId: 'id', secretAccessKey: 'k' }, accountId: 'acc', fetchImpl, backoffMs: 1 });
+  assert.equal(r.ok, true);
+  assert.equal(seen.length, 3);
+  assert.equal(seen[0].method, 'PUT');
+  assert.equal(seen[0].url, 'https://acc.r2.cloudflarestorage.com/gamesbyai-media/games/a/cover-640.webp');
+  assert.equal(seen[0].headers.get('content-type'), 'image/webp');
+  assert.match(seen[0].headers.get('cache-control'), /max-age=604800/);
+  assert.match(seen[0].headers.get('authorization'), /^AWS4-HMAC-SHA256 Credential=id\//);
+});
+
+test('s3Put reports a clear error after a permanent failure', async () => {
+  const dir = tmp();
+  const file = join(dir, 'x.webp');
+  writeFileSync(file, 'data');
+  const r = await s3Put('games/a/x.webp', file, 'image/webp', { creds: { accessKeyId: 'id', secretAccessKey: 'k' }, accountId: 'acc', fetchImpl: async () => new Response('<Error><Code>AccessDenied</Code></Error>', { status: 403 }), backoffMs: 1 });
   assert.equal(r.ok, false);
-  assert.match(String(r.error.message), /403.*Authentication error/);
+  assert.match(String(r.error.message), /403.*AccessDenied/);
+});
+
+test('a partial capture (cover only) is uploaded, and ready.json lists what exists', async () => {
+  const root = tmp();
+  const out = join(root, 'out');
+  const games = join(root, 'games');
+  mkdirSync(games);
+  writeFileSync(join(games, 'part.yaml'), 'slug: part\ntitle: Part\nplay: { url: "https://part.example.com/" }\n');
+  mkdirSync(join(out, 'part'), { recursive: true });
+  writeFileSync(join(out, 'part', 'cover.png'), await shot());
+  const puts = [];
+  const res = await runUpload({ outDir: out, gamesDir: games, put: (key, file) => puts.push({ key, file }), log: () => {} });
+  assert.deepEqual(res.problems, {});
+  assert.ok(puts.some((p) => p.key === 'games/part/cover-640.webp'));
+  assert.ok(!puts.some((p) => p.key.startsWith('games/part/shot-')));
+  const marker = puts.find((p) => p.key === 'games/part/ready.json');
+  assert.deepEqual(JSON.parse(readFileSync(marker.file, 'utf8')).names, ['cover']);
 });

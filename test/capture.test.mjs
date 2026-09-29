@@ -18,6 +18,11 @@ const PAGES = {
     addEventListener('click', () => { t += 90; });
   </script>`),
   '/hang': html(`<p style="color:#fff">loading</p><script>addEventListener('load', () => setTimeout(() => { for (;;) {} }, 200));</script>`),
+  '/late-hang': html(`<canvas id="c" width="1280" height="720"></canvas><script>
+    document.getElementById('c').getContext('2d').fillStyle = '#c6ff3d';
+    document.getElementById('c').getContext('2d').fillRect(0, 0, 1280, 720);
+    addEventListener('load', () => setTimeout(() => { for (;;) {} }, 600));
+  </script>`),
   '/to-download': html(`<p style="color:#fff">starting</p><script>addEventListener('load', () => setTimeout(() => { location.href = '/download'; }, 100));</script>`),
   '/alerts': html(`<script>
     addEventListener('beforeunload', (e) => { e.preventDefault(); e.returnValue = ''; });
@@ -145,4 +150,12 @@ test('the CLI loop reads entries, logs failures to failed.json and always contin
     ['no-such-game', 'no-entry'],
     ['(invalid)', 'invalid-slug'],
   ]);
+});
+
+test('a game that freezes after its cover keeps the cover (partial capture)', async () => {
+  const dir = join(tmp(), 'late');
+  const res = await captureOne(`${base}/late-hang`, dir, { ...FAST, deadline: 3000, shotTimeout: 1000 });
+  assert.equal(res.ok, true, res.reason);
+  assert.equal(res.partial, true);
+  assert.deepEqual(files(dir), ['cover.png']);
 });

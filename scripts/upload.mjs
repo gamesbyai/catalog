@@ -4,13 +4,15 @@
 // Runs in CI's upload job, which holds the R2 token. Everything in out/ came from a job that ran untrusted game
 // code, so it is only ever read as bytes: PNGs are decoded by sharp and re-encoded from raw pixels (no metadata, no
 // trailing bytes survive), failed.json is parsed as JSON, and nothing from out/ is executed or uploaded as-is.
-import { lstatSync, readdirSync, readFileSync, writeFileSync, mkdirSync, mkdtempSync, rmSync } from 'node:fs';
+import { lstatSync, readdirSync, readFileSync, writeFileSync, mkdirSync, mkdtempSync, rmSync, existsSync } from 'node:fs';
 import { join } from 'node:path';
 import { tmpdir } from 'node:os';
 import { execFileSync } from 'node:child_process';
 import { fileURLToPath } from 'node:url';
 import { parse } from 'yaml';
 import sharp from 'sharp';
+import { AwsClient } from 'aws4fetch';
+import { createHash } from 'node:crypto';
 
 export const MEDIA_URL = 'https://media.gamesbyai.win';
 const ROOT = fileURLToPath(new URL('..', import.meta.url));
@@ -195,25 +197,36 @@ function loadEntry(slug, { gamesDir, entriesRef, repoDir }) {
 }
 
 /**
- * Uploads one file through the Cloudflare R2 API (no wrangler, no npx). Retries server errors and rate limits with
- * backoff; returns { ok, error }. Needs R2_UPLOAD_TOKEN and CLOUDFLARE_ACCOUNT_ID.
+ * R2's S3 credentials for an R2 API token: the access key id is the token's id, the secret is the SHA-256 of its value.
+ * The id comes from Cloudflare's token-verify endpoint (account-owned tokens first, then user tokens).
  */
-export async function restPut(key, file, type, { token = process.env.R2_UPLOAD_TOKEN, accountId = process.env.CLOUDFLARE_ACCOUNT_ID, fetchImpl = fetch, attempts = 3, backoffMs = 1000 } = {}) {
-  const url = `https://api.cloudflare.com/client/v4/accounts/${accountId}/r2/buckets/${BUCKET}/objects/${key.split('/').map(encodeURIComponent).join('/')}`;
+export async function r2Credentials(token, accountId, fetchImpl = fetch) {
+  for (const url of [`https://api.cloudflare.com/client/v4/accounts/${accountId}/tokens/verify`, 'https://api.cloudflare.com/client/v4/user/tokens/verify']) {
+    const res = await fetchImpl(url, { headers: { Authorization: `Bearer ${token}` } });
+    if (!res.ok) continue;
+    const id = (await res.json())?.result?.id;
+    if (id) return { accessKeyId: id, secretAccessKey: createHash('sha256').update(token).digest('hex') };
+  }
+  throw new Error('could not verify R2_UPLOAD_TOKEN');
+}
+
+/**
+ * Uploads one file to R2 through its S3 API (what R2 API tokens are for). Retries server errors and rate limits with
+ * backoff; returns { ok, error }.
+ */
+export async function s3Put(key, file, type, { creds, accountId = process.env.CLOUDFLARE_ACCOUNT_ID, fetchImpl = fetch, attempts = 3, backoffMs = 1000 } = {}) {
+  const client = new AwsClient({ accessKeyId: creds.accessKeyId, secretAccessKey: creds.secretAccessKey, service: 's3', region: 'auto' });
+  const url = `https://${accountId}.r2.cloudflarestorage.com/${BUCKET}/${key.split('/').map(encodeURIComponent).join('/')}`;
   const body = readFileSync(file);
   let error;
   for (let i = 0; i < attempts; i++) {
     try {
-      const res = await fetchImpl(url, { method: 'PUT', headers: { Authorization: `Bearer ${token}`, 'Content-Type': type, 'Cache-Control': CACHE_CONTROL }, body });
+      const req = await client.sign(url, { method: 'PUT', headers: { 'Content-Type': type, 'Cache-Control': CACHE_CONTROL }, body });
+      const res = await fetchImpl(req);
       if (res.ok) return { ok: true };
       const text = await res.text().catch(() => '');
-      let detail = text;
-      try {
-        detail = JSON.parse(text).errors?.map((e) => e.message).join('; ') || text;
-      } catch {
-        /* not JSON */
-      }
-      error = new Error(`R2 ${res.status}: ${String(detail).slice(0, 200)}`);
+      const code = /<Code>([^<]+)<\/Code>/.exec(text)?.[1] ?? text.slice(0, 120);
+      error = new Error(`R2 ${res.status}: ${code}`);
       if (res.status < 500 && res.status !== 429) break; // auth or bad request: retrying won't help
     } catch (e) {
       error = e;
@@ -223,8 +236,10 @@ export async function restPut(key, file, type, { token = process.env.R2_UPLOAD_T
   return { ok: false, error };
 }
 
+let credsPromise;
 const defaultPut = async (key, file, type) => {
-  const r = await restPut(key, file, type);
+  credsPromise ??= r2Credentials(process.env.R2_UPLOAD_TOKEN, process.env.CLOUDFLARE_ACCOUNT_ID);
+  const r = await s3Put(key, file, type, { creds: await credsPromise });
   if (!r.ok) throw r.error;
 };
 
@@ -273,8 +288,10 @@ export async function runUpload({ outDir, gamesDir = join(ROOT, 'games'), entrie
       continue;
     }
     const variants = [];
+    // The cover is required; screenshots are uploaded when the capture got them.
+    const names = NAMES.filter((name) => name === 'cover' || existsSync(join(outDir, slug, `${name}.png`)));
     try {
-      for (const name of NAMES) {
+      for (const name of names) {
         const out = await processImage(readRegularFile(join(outDir, slug, `${name}.png`)), { og: name === 'cover' });
         for (const [suffix, data] of Object.entries(out)) variants.push({ key: `games/${slug}/${name}${suffix}`, data, type: TYPES[suffix.split('.').pop()] });
       }
@@ -293,7 +310,7 @@ export async function runUpload({ outDir, gamesDir = join(ROOT, 'games'), entrie
     // The ready marker goes up last and only after every variant: the site links a game's images only when it exists.
     if (results.every((r) => r.ok)) {
       const marker = { key: `games/${slug}/ready.json`, file: join(vdir, slug, 'ready.json'), type: 'application/json' };
-      writeFileSync(marker.file, JSON.stringify({ slug, files: variants.length }));
+      writeFileSync(marker.file, JSON.stringify({ slug, files: variants.length, names }));
       const [res] = dryRun ? [{ ok: true }] : await mapLimit([marker], 1, (v) => put(v.key, v.file, v.type));
       if (res.ok) uploaded.push(marker.key);
       else results.push(res);
