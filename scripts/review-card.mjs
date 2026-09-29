@@ -13,8 +13,9 @@
 // Usage (CI): GITHUB_TOKEN=… GITHUB_REPOSITORY=… HEAD_BRANCH=submission/<slug> HEAD_SHA=<sha> [APP_TOKEN=…]
 //             [CLAUDE_CODE_OAUTH_TOKEN=…] [URLSCAN_TOKEN=… CLOUDFLARE_ACCOUNT_ID=…] node scripts/review-card.mjs
 import { createHash } from 'node:crypto';
+import { isDeepStrictEqual } from 'node:util';
 import { fileURLToPath } from 'node:url';
-import { parse, parseDocument } from 'yaml';
+import { parse, parseDocument, visit } from 'yaml';
 import { escapeText, MEDIA_URL } from './upload.mjs';
 import { scanInjection } from './enrich/injection.mjs';
 import { draftCandidate, loadTaxonomySlugs, FLAGS } from './enrich/draft.mjs';
@@ -94,9 +95,16 @@ export function stripReadme(raw, max = README_MAX) {
 export function applyDraft(yamlText, draft) {
   const doc = parseDocument(yamlText, { maxAliasCount: 50 });
   if (doc.errors.length) throw new Error('the entry is not valid YAML');
+  // An anchored tagline aliased elsewhere would let the draft rewrite that field too (play.url, say).
+  let linked = false;
+  visit(doc, { Alias: () => { linked = true; return visit.BREAK; }, Node: (_, n) => { if (n.anchor) { linked = true; return visit.BREAK; } } });
+  if (linked) throw new Error('the entry uses YAML anchors or aliases');
+  const before = { ...doc.toJS(), tagline: undefined, description: undefined };
   doc.set('tagline', draft.tagline);
   doc.set('description', strings(draft.description).join('\n\n'));
-  return doc.toString({ lineWidth: 0 });
+  const text = doc.toString({ lineWidth: 0 });
+  if (!isDeepStrictEqual({ ...parse(text), tagline: undefined, description: undefined }, before)) throw new Error('the draft changed more than the tagline and description');
+  return text;
 }
 
 /** Git's blob SHA of a file's text: the contents API's `sha` for replacing exactly this version. */

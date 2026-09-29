@@ -101,7 +101,8 @@ jobs:
           R2_UPLOAD_TOKEN: ${{ secrets.R2_UPLOAD_TOKEN }}
           CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
           HEAD_SHA: ${{ github.event.pull_request.head.sha || needs.capture.outputs.sha }}
-        run: node scripts/upload.mjs out/ --entries-ref "$HEAD_SHA"
+        # --base-ref: only games this PR adds or changes are uploaded, whatever the artifact holds.
+        run: node scripts/upload.mjs out/ --entries-ref "$HEAD_SHA" --base-ref "$(git rev-parse HEAD)"
       - name: Post the contact sheet
         if: always() && steps.upload.outcome != 'skipped' && github.event_name == 'pull_request' && hashFiles('out/contact-sheet.md') != ''
         env:

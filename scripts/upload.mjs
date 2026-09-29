@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 // Re-encodes captured PNGs, uploads the variants to R2 and writes out/contact-sheet.md:
-//   node scripts/upload.mjs out/ [--dry-run] [--games <dir> | --entries-ref <git ref>]
+//   node scripts/upload.mjs out/ [--dry-run] [--games <dir> | --entries-ref <git ref> [--base-ref <git ref>]]
 // Runs in CI's upload job, which holds the R2 token. Everything in out/ came from a job that ran untrusted game
 // code, so it is only ever read as bytes: PNGs are decoded by sharp and re-encoded from raw pixels (no metadata, no
 // trailing bytes survive), failed.json is parsed as JSON, and nothing from out/ is executed or uploaded as-is.
@@ -262,8 +262,15 @@ async function mapLimit(items, limit, fn) {
  * Processes out/<slug>/{cover,shot-1,shot-2}.png for every slug that has an entry, puts the variants
  * (unless dryRun) and writes out/contact-sheet.md. Returns the uploaded keys and a slug → problem map.
  */
-export async function runUpload({ outDir, gamesDir = join(ROOT, 'games'), entriesRef, repoDir = ROOT, dryRun = false, baseUrl = MEDIA_URL, put = defaultPut, variantsDir, concurrency = 4, log = console.log } = {}) {
-  if (entriesRef !== undefined && !/^[A-Za-z0-9][A-Za-z0-9._/-]{0,99}$/.test(entriesRef)) throw new Error('invalid --entries-ref');
+export async function runUpload({ outDir, gamesDir = join(ROOT, 'games'), entriesRef, baseRef, repoDir = ROOT, dryRun = false, baseUrl = MEDIA_URL, put = defaultPut, variantsDir, concurrency = 4, log = console.log } = {}) {
+  const REF = /^[A-Za-z0-9][A-Za-z0-9._/-]{0,99}$/;
+  if (entriesRef !== undefined && !REF.test(entriesRef)) throw new Error('invalid --entries-ref');
+  if (baseRef !== undefined && (!REF.test(baseRef) || entriesRef === undefined)) throw new Error('invalid --base-ref (needs --entries-ref)');
+  // Only games the PR itself adds or changes: the shots artifact never decides which live game's images get replaced.
+  const inPr = baseRef === undefined ? null : new Set(
+    execFileSync('git', ['-C', repoDir, 'diff', '--name-only', '--diff-filter=AM', baseRef, entriesRef, '--', 'games/'], { encoding: 'utf8' })
+      .split('\n').map((l) => /^games\/([a-z0-9]+(?:-[a-z0-9]+)*)\.yaml$/.exec(l.trim())?.[1]).filter(Boolean),
+  );
   rmSync(join(outDir, 'contact-sheet.md'), { force: true }); // never post a sheet we didn't write
   const problems = {};
   for (const f of readFailed(outDir)) if (isSlug(f.slug)) problems[f.slug] = typeof f.reason === 'string' && CODE.test(f.reason) ? f.reason : 'failed';
@@ -282,6 +289,11 @@ export async function runUpload({ outDir, gamesDir = join(ROOT, 'games'), entrie
 
   for (const slug of captured) {
     delete problems[slug]; // a fresh capture replaces an earlier failure
+    if (inPr && !inPr.has(slug)) {
+      problems[slug] = 'not-in-pr';
+      log(`skip ${slug}: not added or changed by this PR`);
+      continue;
+    }
     if (!entryOf(slug)) {
       problems[slug] = 'no-entry';
       log(`skip ${slug}: no entry`);
@@ -344,6 +356,7 @@ if (process.argv[1] === fileURLToPath(import.meta.url)) {
     if (args[i] === '--dry-run') opts.dryRun = true;
     else if (args[i] === '--games') opts.gamesDir = args[++i] ?? usage();
     else if (args[i] === '--entries-ref') opts.entriesRef = args[++i] ?? usage();
+    else if (args[i] === '--base-ref') opts.baseRef = args[++i] ?? usage();
     else if (args[i].startsWith('--')) usage();
     else positional.push(args[i]);
   }

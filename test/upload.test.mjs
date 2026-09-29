@@ -225,6 +225,25 @@ test('runUpload can read entries from a git ref instead of the working tree', as
   assert.ok(readFileSync(join(out, 'contact-sheet.md'), 'utf8').includes('Good From Git'));
 });
 
+test('with a base ref, only games the PR adds or changes are uploaded; captures of other live games are refused', async () => {
+  const { root, out } = await fixtureOut();
+  const repo = join(root, 'repo2');
+  mkdirSync(join(repo, 'games'), { recursive: true });
+  const git = (...args) => execFileSync('git', ['-C', repo, '-c', 'user.name=t', '-c', 'user.email=t@t', '-c', 'commit.gpgsign=false', ...args], { stdio: 'pipe', encoding: 'utf8' }).trim();
+  writeFileSync(join(repo, 'games', 'stray.yaml'), 'slug: stray\ntitle: Live Game\nplay: { url: "https://stray.example/" }\n');
+  git('init', '-q');
+  git('add', '.');
+  git('commit', '-qm', 'main');
+  const base = git('rev-parse', 'HEAD');
+  writeFileSync(join(repo, 'games', 'good.yaml'), 'slug: good\ntitle: Good\nplay: { url: "https://good.example/" }\n');
+  git('add', '.');
+  git('commit', '-qm', 'pr');
+  const res = await runUpload({ outDir: out, repoDir: repo, entriesRef: 'HEAD', baseRef: base, dryRun: true, log: () => {} });
+  assert.ok(res.uploaded.includes('games/good/ready.json'));
+  assert.ok(!res.uploaded.some((k) => k.startsWith('games/stray/')));
+  assert.equal(res.problems.stray, 'not-in-pr');
+});
+
 test('R2 S3 credentials come from the R2 token: its id and the SHA-256 of its value', async () => {
   const calls = [];
   const fetchImpl = async (url) => {

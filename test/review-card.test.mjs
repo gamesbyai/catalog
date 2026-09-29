@@ -100,6 +100,13 @@ test('applyDraft sets the tagline and the description (paragraphs joined by a bl
   assert.equal(doc.made.aiShare, 'most');
 });
 
+test('applyDraft refuses entries with YAML anchors or aliases, so the draft can never change another field', () => {
+  const aliased = 'slug: sky-hop\ntagline: &dest https://safe.example.com\ndescription: ""\nplay:\n  url: *dest\n';
+  assert.throws(() => applyDraft(aliased, { tagline: 'https://evil.example.com', description: ['One.', 'Two.'] }), /anchors or aliases/);
+  const merged = 'slug: sky-hop\nbase: &b { url: https://safe.example.com }\ntagline: x\ndescription: ""\nplay:\n  <<: *b\n';
+  assert.throws(() => applyDraft(merged, { tagline: 'Hop', description: ['One.', 'Two.'] }), /anchors or aliases/);
+});
+
 test('no screenshots until the ready marker exists; a bad slug never builds image URLs', () => {
   const card = reviewCard({ entry: entry(), flags: {}, scan: clean, draft: goodDraft, capture: { ready: false } });
   assert.match(card, /no screenshots yet/i);
