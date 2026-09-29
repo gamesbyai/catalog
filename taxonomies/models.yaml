@@ -1,0 +1,12 @@
+# AI model families. Model versions are added in P2 as catalog entries name them, with `parent: <family>`.
+terms:
+  - { slug: claude, name: Claude, maker: Anthropic, url: "https://www.anthropic.com/claude" }
+  - { slug: gpt, name: GPT, maker: OpenAI, url: "https://openai.com/" }
+  - { slug: gemini, name: Gemini, maker: Google, url: "https://gemini.google.com/" }
+  - { slug: grok, name: Grok, maker: xAI, url: "https://x.ai/" }
+  - { slug: deepseek, name: DeepSeek, maker: DeepSeek, url: "https://www.deepseek.com/" }
+  - { slug: qwen, name: Qwen, maker: Alibaba, url: "https://qwen.ai/" }
+  - { slug: llama, name: Llama, maker: Meta, url: "https://www.llama.com/" }
+  - { slug: mistral, name: Mistral, maker: Mistral AI, url: "https://mistral.ai/" }
+  - { slug: kimi, name: Kimi, maker: Moonshot AI, url: "https://www.kimi.com/" }
+  - { slug: glm, name: GLM, maker: Z.ai, url: "https://z.ai/" }

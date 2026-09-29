@@ -1,0 +1,25 @@
+terms:
+  - { slug: action, name: Action }
+  - { slug: adventure, name: Adventure }
+  - { slug: arcade, name: Arcade }
+  - { slug: card, name: Card }
+  - { slug: casual, name: Casual }
+  - { slug: educational, name: Educational }
+  - { slug: fighting, name: Fighting }
+  - { slug: horror, name: Horror }
+  - { slug: idle, name: Idle }
+  - { slug: platformer, name: Platformer }
+  - { slug: puzzle, name: Puzzle }
+  - { slug: racing, name: Racing }
+  - { slug: rhythm, name: Rhythm }
+  - { slug: roguelike, name: Roguelike }
+  - { slug: rpg, name: RPG }
+  - { slug: sandbox, name: Sandbox }
+  - { slug: shooter, name: Shooter }
+  - { slug: simulation, name: Simulation }
+  - { slug: sports, name: Sports }
+  - { slug: strategy, name: Strategy }
+  - { slug: survival, name: Survival }
+  - { slug: tower-defense, name: Tower defense }
+  - { slug: trivia, name: Trivia }
+  - { slug: word, name: Word }

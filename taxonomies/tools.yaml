@@ -1,0 +1,19 @@
+terms:
+  - { slug: claude-code, name: Claude Code, maker: Anthropic, url: "https://www.anthropic.com/claude-code" }
+  - { slug: claude-ai, name: Claude app, maker: Anthropic, url: "https://claude.ai/" }
+  - { slug: cursor, name: Cursor, maker: Anysphere, url: "https://cursor.com/" }
+  - { slug: codex, name: Codex, maker: OpenAI, url: "https://openai.com/codex/" }
+  - { slug: chatgpt, name: ChatGPT, maker: OpenAI, url: "https://chatgpt.com/" }
+  - { slug: github-copilot, name: GitHub Copilot, maker: GitHub, url: "https://github.com/features/copilot" }
+  - { slug: windsurf, name: Windsurf, url: "https://windsurf.com/" }
+  - { slug: gemini-cli, name: Gemini CLI, maker: Google, url: "https://github.com/google-gemini/gemini-cli" }
+  - { slug: google-ai-studio, name: Google AI Studio, maker: Google, url: "https://aistudio.google.com/" }
+  - { slug: gemini-app, name: Gemini app, maker: Google, url: "https://gemini.google.com/" }
+  - { slug: bolt, name: Bolt, maker: StackBlitz, url: "https://bolt.new/" }
+  - { slug: lovable, name: Lovable, url: "https://lovable.dev/" }
+  - { slug: replit, name: Replit, url: "https://replit.com/" }
+  - { slug: v0, name: v0, maker: Vercel, url: "https://v0.app/" }
+  - { slug: rosebud, name: Rosebud AI, url: "https://rosebud.ai/" }
+  - { slug: websim, name: WebSim, url: "https://websim.com/" }
+  - { slug: aider, name: Aider, url: "https://aider.chat/" }
+  - { slug: cline, name: Cline, url: "https://cline.bot/" }

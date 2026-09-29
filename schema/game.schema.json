@@ -1,0 +1,404 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://gamesbyai.win/schema/game.schema.json",
+  "title": "GamesByAI catalog entry",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "slug",
+    "title",
+    "tagline",
+    "description",
+    "play",
+    "creator",
+    "made",
+    "tech",
+    "genres",
+    "media",
+    "dates",
+    "status",
+    "provenance"
+  ],
+  "properties": {
+    "slug": {
+      "type": "string",
+      "pattern": "^(?=[a-z0-9-]*[a-z])[a-z0-9]+(?:-[a-z0-9]+)*$",
+      "maxLength": 60
+    },
+    "title": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 80
+    },
+    "tagline": {
+      "type": "string",
+      "minLength": 10,
+      "maxLength": 90
+    },
+    "description": {
+      "type": "string",
+      "maxLength": 4000
+    },
+    "play": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "url",
+        "platforms"
+      ],
+      "properties": {
+        "url": {
+          "type": "string",
+          "pattern": "^https://",
+          "maxLength": 300
+        },
+        "embeddable": {
+          "type": "boolean"
+        },
+        "platforms": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "enum": [
+              "browser",
+              "desktop",
+              "mobile",
+              "vr"
+            ]
+          }
+        },
+        "controls": {
+          "type": "array",
+          "maxItems": 12,
+          "items": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 80
+          }
+        }
+      }
+    },
+    "repo": {
+      "type": "string",
+      "pattern": "^https://",
+      "maxLength": 300
+    },
+    "license": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 40
+    },
+    "creator": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "name",
+        "handle"
+      ],
+      "properties": {
+        "name": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 80
+        },
+        "handle": {
+          "type": "string",
+          "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$",
+          "maxLength": 40
+        },
+        "links": {
+          "type": "array",
+          "maxItems": 6,
+          "items": {
+            "type": "string",
+            "pattern": "^https://",
+            "maxLength": 300
+          }
+        },
+        "x": {
+          "type": "string",
+          "pattern": "^[A-Za-z0-9_]{1,15}$"
+        },
+        "youtube": {
+          "type": "string",
+          "pattern": "^@[A-Za-z0-9._-]{3,30}$"
+        }
+      }
+    },
+    "made": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "models",
+        "tools",
+        "aiShare",
+        "source"
+      ],
+      "properties": {
+        "models": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$",
+            "maxLength": 60
+          }
+        },
+        "tools": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$",
+            "maxLength": 60
+          }
+        },
+        "aiShare": {
+          "enum": [
+            "all",
+            "most",
+            "some",
+            "unknown"
+          ]
+        },
+        "source": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 200
+        },
+        "notes": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 600
+        }
+      }
+    },
+    "tech": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "engine",
+        "multiplayer"
+      ],
+      "properties": {
+        "engine": {
+          "type": "string",
+          "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$",
+          "maxLength": 60
+        },
+        "multiplayer": {
+          "enum": [
+            "single",
+            "local",
+            "online"
+          ]
+        }
+      }
+    },
+    "genres": {
+      "type": "array",
+      "minItems": 1,
+      "maxItems": 3,
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$",
+        "maxLength": 60
+      }
+    },
+    "tags": {
+      "type": "array",
+      "maxItems": 8,
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$",
+        "maxLength": 30
+      }
+    },
+    "jam": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "event"
+      ],
+      "properties": {
+        "event": {
+          "type": "string",
+          "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$",
+          "maxLength": 60
+        },
+        "placement": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 40
+        },
+        "award": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 80
+        }
+      }
+    },
+    "media": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "cover"
+      ],
+      "properties": {
+        "cover": {
+          "type": "string",
+          "pattern": "^(games|fixtures)/[a-z0-9-]+/[a-z0-9-]+$"
+        },
+        "screenshots": {
+          "type": "array",
+          "maxItems": 8,
+          "items": {
+            "type": "string",
+            "pattern": "^(games|fixtures)/[a-z0-9-]+/[a-z0-9-]+$"
+          }
+        },
+        "video": {
+          "type": "string",
+          "pattern": "^[A-Za-z0-9_-]{11}$"
+        }
+      }
+    },
+    "editor": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "score": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "fun",
+            "polish",
+            "originality",
+            "aiCraft"
+          ],
+          "properties": {
+            "fun": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 5
+            },
+            "polish": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 5
+            },
+            "originality": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 5
+            },
+            "aiCraft": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 5
+            }
+          }
+        },
+        "pick": {
+          "type": "boolean"
+        },
+        "reviewedAt": {
+          "type": "string",
+          "format": "date"
+        }
+      }
+    },
+    "dates": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "added",
+        "updated"
+      ],
+      "properties": {
+        "released": {
+          "type": "string",
+          "format": "date"
+        },
+        "added": {
+          "type": "string",
+          "format": "date"
+        },
+        "updated": {
+          "type": "string",
+          "format": "date"
+        }
+      }
+    },
+    "status": {
+      "enum": [
+        "draft",
+        "live",
+        "broken",
+        "removed"
+      ]
+    },
+    "provenance": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "foundVia"
+      ],
+      "properties": {
+        "foundVia": {
+          "type": "string",
+          "pattern": "^(form|pr|fixture|scout:[a-z0-9-]+)$"
+        },
+        "submittedBy": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 40
+        },
+        "scannedAt": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "flags": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 120
+          }
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "if": {
+        "required": [
+          "status"
+        ],
+        "properties": {
+          "status": {
+            "const": "live"
+          }
+        }
+      },
+      "then": {
+        "required": [
+          "editor"
+        ],
+        "properties": {
+          "description": {
+            "minLength": 600
+          },
+          "editor": {
+            "required": [
+              "score"
+            ]
+          }
+        }
+      }
+    }
+  ]
+}

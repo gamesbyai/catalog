@@ -1,0 +1,63 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://gamesbyai.win/schema/taxonomy.schema.json",
+  "title": "GamesByAI taxonomy file",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "terms"
+  ],
+  "properties": {
+    "terms": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "slug",
+          "name"
+        ],
+        "properties": {
+          "slug": {
+            "type": "string",
+            "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$",
+            "maxLength": 60
+          },
+          "name": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 60
+          },
+          "parent": {
+            "type": "string",
+            "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$",
+            "maxLength": 60
+          },
+          "maker": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 60
+          },
+          "url": {
+            "type": "string",
+            "pattern": "^https://",
+            "maxLength": 300
+          },
+          "intro": {
+            "type": "string",
+            "maxLength": 3000
+          },
+          "sources": {
+            "type": "array",
+            "maxItems": 10,
+            "items": {
+              "type": "string",
+              "pattern": "^https://",
+              "maxLength": 300
+            }
+          }
+        }
+      }
+    }
+  }
+}

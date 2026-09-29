@@ -1,0 +1,16 @@
+terms:
+  - { slug: threejs, name: Three.js, url: "https://threejs.org/" }
+  - { slug: babylonjs, name: Babylon.js, url: "https://www.babylonjs.com/" }
+  - { slug: playcanvas, name: PlayCanvas, url: "https://playcanvas.com/" }
+  - { slug: react-three-fiber, name: React Three Fiber, url: "https://r3f.docs.pmnd.rs/" }
+  - { slug: aframe, name: A-Frame, url: "https://aframe.io/" }
+  - { slug: phaser, name: Phaser, url: "https://phaser.io/" }
+  - { slug: pixijs, name: PixiJS, url: "https://pixijs.com/" }
+  - { slug: kaplay, name: KAPLAY, url: "https://kaplayjs.com/" }
+  - { slug: excalibur, name: Excalibur.js, url: "https://excaliburjs.com/" }
+  - { slug: littlejs, name: LittleJS, url: "https://github.com/KilledByAPixel/LittleJS" }
+  - { slug: p5js, name: p5.js, url: "https://p5js.org/" }
+  - { slug: canvas, name: HTML5 Canvas, url: "https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API" }
+  - { slug: webgl, name: WebGL, url: "https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API" }
+  - { slug: godot, name: Godot, url: "https://godotengine.org/" }
+  - { slug: unity, name: Unity, url: "https://unity.com/" }

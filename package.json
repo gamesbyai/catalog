@@ -1,0 +1,15 @@
+{
+  "name": "gamesbyai-catalog",
+  "private": true,
+  "type": "module",
+  "license": "CC-BY-4.0",
+  "scripts": {
+    "validate": "node scripts/validate.mjs",
+    "test": "node --test \"test/**/*.test.mjs\""
+  },
+  "dependencies": {
+    "ajv": "^8.20.0",
+    "ajv-formats": "^3.0.1",
+    "yaml": "^2.9.1"
+  }
+}
