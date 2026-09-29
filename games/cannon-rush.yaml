@@ -1,0 +1,56 @@
+slug: cannon-rush
+title: Cannon Rush
+tagline: Sail the seas and sink enemy ships with broadside cannon fire.
+description: >-
+  Cannon Rush is a naval shooter in which the player commands a sailboat and
+  fires cannons at other sailing ships on the water. The goal is simple: line up
+  shots, blast the passing vessels, and keep the fight going against the ships
+  around you.
+
+
+  The game is a tribute to the sailing and trading classics Uncharted Waters and
+  Port Royale, and it takes their seafaring setting and boils it down to direct
+  cannon combat. It runs in the browser on Three.js and includes multiplayer, so
+  other players can share the water. It was built for Vibe Jam 2026.
+
+
+  The creator describes the project as a personal tribute made out of affection
+  for those older ship games, and says the whole idea was to enjoy blasting
+  sailing ships with cannons.
+play:
+  url: https://kadfun.com/cannon-rush
+  embeddable: true
+  platforms:
+    - browser
+creator:
+  name: Kadovat
+  handle: kadovat
+  x: Kadovat
+made:
+  models: []
+  tools: []
+  aiShare: most
+  source: Vibe Jam 2026 submission form
+  evidence: inferred
+tech:
+  engine: threejs
+  multiplayer: online
+genres:
+  - shooter
+  - action
+jam:
+  event: vibe-jam-2026
+  rank: 214
+  entries: 945
+media:
+  cover: games/cannon-rush/cover
+  screenshots:
+    - games/cannon-rush/shot-1
+    - games/cannon-rush/shot-2
+dates:
+  added: 2026-09-29
+  updated: 2026-09-29
+status: live
+provenance:
+  foundVia: scout:vibejam-2026
+  scannedAt: 2026-09-29T16:15:14.276Z

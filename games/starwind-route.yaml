@@ -1,0 +1,61 @@
+slug: starwind-route
+title: Starwind Route
+tagline: Sail a Mediterranean trade route, recruit tavern companions, and dodge pirates.
+description: >-
+  Starwind Route is a 3D sailing adventure set along a Mediterranean trade
+  route. The player moves a ship between ports, buys and sells goods, and
+  chooses which stretches of sea to cross. Some routes are riskier than others,
+  and pirate waters threaten the ship and its cargo.
+
+
+  The game draws on older sailing RPGs. Taverns are where the player meets
+  companions and builds bonds with them, adding a character-driven layer on top
+  of the trading and route planning. Trade, danger, and relationships all feed
+  into the journey.
+
+
+  A portal is the Vibe Jam addition. Once unlocked, it turns the voyage into a
+  stepping stone that leads on to the next game in the jam. The creator built it
+  with ChatGPT and Three.js, and it runs on mobile as well.
+play:
+  url: https://sailing-sim-rpg.kumastudio.app
+  embeddable: true
+  platforms:
+    - browser
+    - mobile
+creator:
+  name: AldegadWildKim
+  handle: aldegadwildkim
+  x: AldegadWildKim
+made:
+  models: []
+  providers:
+    - openai
+  tools:
+    - chatgpt
+  aiShare: most
+  source: Vibe Jam 2026 submission form
+  evidence: creator
+tech:
+  engine: threejs
+  multiplayer: single
+genres:
+  - adventure
+  - rpg
+  - simulation
+jam:
+  event: vibe-jam-2026
+  rank: 200
+  entries: 945
+media:
+  cover: games/starwind-route/cover
+  screenshots:
+    - games/starwind-route/shot-1
+    - games/starwind-route/shot-2
+dates:
+  added: 2026-09-29
+  updated: 2026-09-29
+status: live
+provenance:
+  foundVia: scout:vibejam-2026
+  scannedAt: 2026-09-29T16:15:14.266Z

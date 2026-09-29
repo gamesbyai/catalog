@@ -1,0 +1,58 @@
+slug: vibe-oke
+title: Vibe-oke
+tagline: Play along with a song one lyric word at a time, in sync with the vocals.
+description: >-
+  Vibe-oke is a karaoke rhythm game in which each word of a song's lyrics
+  becomes something the player interacts with. Instead of following a generic
+  beat track, the player acts on the words as they arrive, timing each input to
+  match the singer's vocals through the song.
+
+
+  The central idea is tying the challenge to the lyrics themselves. Rhythm play
+  usually centers on notes or a drum pattern, but here the unit of play is the
+  spoken or sung word, so the rhythm follows the phrasing of the vocal line. It
+  suits players who enjoy karaoke and want a more active way to take part.
+
+
+  The game was submitted to Vibe Jam 2026 and runs in the browser on Three.js.
+  The creator built it with Codex, and says the inspiration came from a love of
+  karaoke.
+play:
+  url: https://vibe-oke.com
+  embeddable: true
+  platforms:
+    - browser
+creator:
+  name: roieambulo
+  handle: roieambulo
+  x: roieambulo
+made:
+  models: []
+  providers:
+    - openai
+  tools:
+    - codex
+  aiShare: most
+  source: Vibe Jam 2026 submission form
+  evidence: creator
+tech:
+  engine: threejs
+  multiplayer: single
+genres:
+  - rhythm
+jam:
+  event: vibe-jam-2026
+  rank: 182
+  entries: 945
+media:
+  cover: games/vibe-oke/cover
+  screenshots:
+    - games/vibe-oke/shot-1
+    - games/vibe-oke/shot-2
+dates:
+  added: 2026-09-29
+  updated: 2026-09-29
+status: live
+provenance:
+  foundVia: scout:vibejam-2026
+  scannedAt: 2026-09-29T16:15:14.250Z

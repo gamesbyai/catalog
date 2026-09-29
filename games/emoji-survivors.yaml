@@ -1,0 +1,59 @@
+slug: emoji-survivors
+title: Emoji Survivors
+tagline: Fight endless waves of emoji monsters as a mage and stack chaotic upgrades.
+description: >-
+  Emoji Survivors is a survival shooter in which you play a mage facing endless
+  waves of emoji monsters. Each run is a fight to stay alive as the horde grows,
+  while you collect upgrades that reshape your build and clear the screen before
+  the crowd overwhelms you.
+
+
+  The upgrade system is the focus. Choices push the mage build in chaotic
+  directions, so each run can end up with a different set of powers. The emoji
+  enemies give the swarm a playful look that contrasts with the escalating
+  pressure of the waves.
+
+
+  It was an entry in Vibe Jam 2026, where it placed 196th out of 945 entries.
+  The creator says they had long wanted to build a complete game from scratch
+  and that AI made it possible. The known tooling is Codex.
+play:
+  url: https://emoji-survivors.fun
+  embeddable: true
+  platforms:
+    - browser
+creator:
+  name: swisnotjan
+  handle: swisnotjan
+  x: swisnotjan
+made:
+  models: []
+  providers:
+    - openai
+  tools:
+    - codex
+  aiShare: most
+  source: Vibe Jam 2026 submission form
+  evidence: creator
+tech:
+  multiplayer: single
+genres:
+  - action
+  - shooter
+  - roguelike
+jam:
+  event: vibe-jam-2026
+  rank: 196
+  entries: 945
+media:
+  cover: games/emoji-survivors/cover
+  screenshots:
+    - games/emoji-survivors/shot-1
+    - games/emoji-survivors/shot-2
+dates:
+  added: 2026-09-29
+  updated: 2026-09-29
+status: live
+provenance:
+  foundVia: scout:vibejam-2026
+  scannedAt: 2026-09-29T16:15:14.263Z

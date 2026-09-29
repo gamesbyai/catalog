@@ -1,0 +1,63 @@
+slug: draw-the-life
+title: Draw the Life
+tagline: Draw cards and steer a cartoon character through the ups and downs of a
+  lifetime.
+description: >-
+  Draw the Life is a cute, funny life-sim card game with a strategy bent. The
+  player draws cards that shape a character's journey, making choices along the
+  way as events unfold and the story of a whole life takes form.
+
+
+  Its tone mixes tabletop and board game inspirations: the character-building
+  feel of D&D, the card play of Magic the Gathering, and the milestone-driven
+  path of the Game of LIFE. The result is a lighthearted take on life's
+  decisions, where humor and charm lead the presentation.
+
+
+  It was built in Three.js and entered in Vibe Jam 2026, where it placed 188th
+  out of 945 entries. The creator credits Codex, Claude Code, and Antigravity as
+  the tools used to make it.
+play:
+  url: https://drawlife.eastfever.com
+  embeddable: false
+  platforms:
+    - browser
+creator:
+  name: mysticodoi
+  handle: mysticodoi
+  x: mysticodoi
+made:
+  models: []
+  providers:
+    - openai
+    - anthropic
+    - google
+  tools:
+    - codex
+    - claude-code
+    - antigravity
+  aiShare: most
+  source: Vibe Jam 2026 submission form
+  evidence: creator
+tech:
+  engine: threejs
+  multiplayer: single
+genres:
+  - strategy
+  - card
+jam:
+  event: vibe-jam-2026
+  rank: 188
+  entries: 945
+media:
+  cover: games/draw-the-life/cover
+  screenshots:
+    - games/draw-the-life/shot-1
+    - games/draw-the-life/shot-2
+dates:
+  added: 2026-09-29
+  updated: 2026-09-29
+status: live
+provenance:
+  foundVia: scout:vibejam-2026
+  scannedAt: 2026-09-29T16:15:14.256Z

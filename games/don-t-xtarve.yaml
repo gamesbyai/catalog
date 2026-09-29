@@ -1,0 +1,60 @@
+slug: don-t-xtarve
+title: Don't Xtarve
+tagline: Gather, craft, cook, and fight to survive long nights in an isometric world.
+description: >-
+  Don't Xtarve is an isometric survival game set in a procedurally generated
+  world. You gather resources, craft gear, cook food, and fight off hostile
+  creatures while trying to stay alive. Weather turns harsh and the nights run
+  long, so each run is a struggle to keep supplied until morning.
+
+
+  The game is openly inspired by Don't Starve, and it carries that survival loop
+  into a three-dimensional isometric view. Its creator, a husband and father
+  with little free time for playing, cites a long history with isometric games
+  such as Diablo 2. The project supports multiplayer and runs on mobile devices
+  as well.
+
+
+  It was made for Vibe Jam 2026, where it placed 222nd among 945 entries. The
+  creator built it with Claude Code, and it renders with Three.js.
+play:
+  url: https://dontxtarve.alangsilveira.com
+  embeddable: true
+  platforms:
+    - browser
+    - mobile
+creator:
+  name: alangsilveira
+  handle: alangsilveira
+  x: alangsilveira
+made:
+  models: []
+  providers:
+    - anthropic
+  tools:
+    - claude-code
+  aiShare: most
+  source: Vibe Jam 2026 submission form
+  evidence: creator
+tech:
+  engine: threejs
+  multiplayer: online
+genres:
+  - survival
+  - strategy
+jam:
+  event: vibe-jam-2026
+  rank: 222
+  entries: 945
+media:
+  cover: games/don-t-xtarve/cover
+  screenshots:
+    - games/don-t-xtarve/shot-1
+    - games/don-t-xtarve/shot-2
+dates:
+  added: 2026-09-29
+  updated: 2026-09-29
+status: live
+provenance:
+  foundVia: scout:vibejam-2026
+  scannedAt: 2026-09-29T16:15:14.280Z

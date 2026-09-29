@@ -1,0 +1,60 @@
+slug: slaughterdome
+title: SlaughterDome
+tagline: Survive enemy waves in a shrinking dome, building walls and capturing flags.
+description: >-
+  SlaughterDome is an arena survival game set inside a dome that keeps closing
+  in. Players fight waves of enemies while the safe area contracts, pushing
+  everyone toward the center. Co-op play is possible, so a run can be solo or
+  shared with others.
+
+
+  The game mixes three ideas: a battle royale style shrinking circle, quick wall
+  building for cover and defense, and flag capture objectives in the spirit of
+  classic arena shooters. Walls can be placed on the fly to block enemies, while
+  flags give the fighting a goal beyond staying alive. It runs in the browser
+  and supports mobile play.
+
+
+  It was built for Vibe Jam 2026, where it placed 183rd out of 945 entries. The
+  creator states it was made with Claude Code and rendered with Three.js.
+play:
+  url: https://slaughterdome.vercel.app
+  embeddable: true
+  platforms:
+    - browser
+    - mobile
+creator:
+  name: 3xhuman
+  handle: 3xhuman
+  x: 3xhuman
+made:
+  models: []
+  providers:
+    - anthropic
+  tools:
+    - claude-code
+  aiShare: most
+  source: Vibe Jam 2026 submission form
+  evidence: creator
+tech:
+  engine: threejs
+  multiplayer: online
+genres:
+  - action
+  - survival
+jam:
+  event: vibe-jam-2026
+  rank: 183
+  entries: 945
+media:
+  cover: games/slaughterdome/cover
+  screenshots:
+    - games/slaughterdome/shot-1
+    - games/slaughterdome/shot-2
+dates:
+  added: 2026-09-29
+  updated: 2026-09-29
+status: live
+provenance:
+  foundVia: scout:vibejam-2026
+  scannedAt: 2026-09-29T16:15:14.252Z

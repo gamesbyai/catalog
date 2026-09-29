@@ -1,0 +1,61 @@
+slug: three-suns
+title: Three Suns
+tagline: Place gravity anchors to keep a world alive under three unpredictable suns.
+description: >-
+  Three Suns is a physics survival game set on the last living world in a
+  chaotic three-sun system. The player places gravity anchors to steer the
+  planet's path and switches between survival modes as conditions change, trying
+  to last through one punishing dawn after another.
+
+
+  The setup draws on the three-body problem from orbital mechanics and on Liu
+  Cixin's novel The Three-Body Problem, but the story, mechanics, and world are
+  original. Survival depends on reading how the suns pull on the planet and
+  responding with well-timed anchor placement rather than steady, predictable
+  orbits.
+
+
+  It was entered in Vibe Jam 2026, where it placed 217th out of 945 entries. The
+  game is built with Three.js and runs on mobile as well as desktop. The creator
+  lists ChatGPT as the tool used.
+play:
+  url: https://threesuns.xyz
+  embeddable: true
+  platforms:
+    - browser
+    - mobile
+creator:
+  name: Danil38138190
+  handle: danil38138190
+  x: Danil38138190
+made:
+  models: []
+  providers:
+    - openai
+  tools:
+    - chatgpt
+  aiShare: most
+  source: Vibe Jam 2026 submission form
+  evidence: creator
+tech:
+  engine: threejs
+  multiplayer: single
+genres:
+  - survival
+  - simulation
+jam:
+  event: vibe-jam-2026
+  rank: 217
+  entries: 945
+media:
+  cover: games/three-suns/cover
+  screenshots:
+    - games/three-suns/shot-1
+    - games/three-suns/shot-2
+dates:
+  added: 2026-09-29
+  updated: 2026-09-29
+status: live
+provenance:
+  foundVia: scout:vibejam-2026
+  scannedAt: 2026-09-29T16:15:14.277Z

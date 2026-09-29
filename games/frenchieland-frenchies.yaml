@@ -1,0 +1,60 @@
+slug: frenchieland-frenchies
+title: Frenchieland Frenchies
+tagline: Launch flying French Bulldogs through space, eating star-fruit and
+  dodging hazards.
+description: >-
+  Frenchieland Frenchies is an endless runner set in a cosmic backdrop, where
+  the player launches a flying French Bulldog into space. Each run has you
+  gobbling zero-gravity star-fruit, avoiding hazards, and completing challenges.
+  Gravity shifts and multiple layers change the shape of the course as you go.
+
+
+  Progress feeds a collection element: challenges you clear unlock a growing
+  roster of rare and exotic pups. The look is a wild, cosmic universe built
+  around angelic-looking Frenchies, inspired by the creator's own dogs and their
+  personalities.
+
+
+  The creator built it with Claude Code over about three and a half weeks, after
+  thinking about the idea for more than three years. They describe it as
+  unfinished but a start, and say their kid enjoys it. It was entered in Vibe
+  Jam 2026.
+play:
+  url: https://frenchielandfrenchies.io
+  embeddable: true
+  platforms:
+    - browser
+creator:
+  name: FrenchielandF
+  handle: frenchielandf
+  x: FrenchielandF
+made:
+  models: []
+  providers:
+    - anthropic
+  tools:
+    - claude-code
+  aiShare: most
+  source: Vibe Jam 2026 submission form
+  evidence: creator
+tech:
+  multiplayer: single
+genres:
+  - arcade
+  - platformer
+jam:
+  event: vibe-jam-2026
+  rank: 212
+  entries: 945
+media:
+  cover: games/frenchieland-frenchies/cover
+  screenshots:
+    - games/frenchieland-frenchies/shot-1
+    - games/frenchieland-frenchies/shot-2
+dates:
+  added: 2026-09-29
+  updated: 2026-09-29
+status: live
+provenance:
+  foundVia: scout:vibejam-2026
+  scannedAt: 2026-09-29T16:15:14.274Z

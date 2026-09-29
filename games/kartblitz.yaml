@@ -1,0 +1,58 @@
+slug: kartblitz
+title: Kartblitz
+tagline: Drift around stylized 3D tracks in a fast arcade kart racer.
+description: >-
+  Kartblitz is a 3D arcade kart racer built for the browser. Players jump
+  straight in and race through stylized, high-speed worlds, using precise
+  drifting to hold speed through corners. It supports multiplayer, so races can
+  include other people rather than only the computer.
+
+
+  The design draws on 90s karting games, and the focus is on a sense of speed
+  and style that needs no setup. A portal system links the game to other
+  creators' projects, tying it to the Vibe Jam 2026 Webring. The genre tags also
+  include adventure and platformer elements alongside the racing.
+
+
+  The game was entered in Vibe Jam 2026 and runs on Three.js. The creator
+  describes wanting to build a high-performance 3D experience directly in the
+  browser, and it placed 189th among 945 entries.
+play:
+  url: https://kartblitz.fun
+  embeddable: true
+  platforms:
+    - browser
+creator:
+  name: heyysomu08
+  handle: heyysomu08
+  x: heyysomu08
+made:
+  models: []
+  tools: []
+  aiShare: most
+  source: Vibe Jam 2026 submission form
+  evidence: inferred
+tech:
+  engine: threejs
+  multiplayer: online
+genres:
+  - racing
+  - arcade
+jam:
+  event: vibe-jam-2026
+  rank: 189
+  entries: 945
+media:
+  cover: games/kartblitz/cover
+  screenshots:
+    - games/kartblitz/shot-1
+    - games/kartblitz/shot-2
+dates:
+  added: 2026-09-29
+  updated: 2026-09-29
+status: live
+provenance:
+  foundVia: scout:vibejam-2026
+  scannedAt: 2026-09-29T16:15:14.257Z
+  flags:
+    - unclear-ai

@@ -1,0 +1,61 @@
+slug: clickwasher-td
+title: Clickwasher TD
+tagline: Place towers to defend a citadel and grow stronger through a research tree.
+description: >-
+  Clickwasher TD is a tower defense game where you place towers to protect a
+  citadel from incoming enemies. Each run centers on choosing where to build,
+  holding the line against attackers, and spending what you earn to strengthen
+  your defenses.
+
+
+  The game blends tower defense with the incremental genre. A research tree
+  gives you long-term upgrades to unlock, so progress builds over time rather
+  than resetting to zero with each attempt. It runs in 3D in the browser and is
+  playable on mobile.
+
+
+  The creator says they recently discovered incremental games and wanted to
+  combine that interest with tower defense. They built it with Claude Code, and
+  mention also experimenting with Codex and Cursor. It was entered in Vibe Jam
+  2026.
+play:
+  url: https://clickwasher-td.vercel.app
+  embeddable: true
+  platforms:
+    - browser
+    - mobile
+creator:
+  name: hamsteroforion
+  handle: hamsteroforion
+  x: hamsteroforion
+made:
+  models: []
+  providers:
+    - anthropic
+  tools:
+    - claude-code
+  aiShare: most
+  source: Vibe Jam 2026 submission form
+  evidence: creator
+tech:
+  engine: threejs
+  multiplayer: single
+genres:
+  - tower-defense
+  - strategy
+jam:
+  event: vibe-jam-2026
+  rank: 225
+  entries: 945
+media:
+  cover: games/clickwasher-td/cover
+  screenshots:
+    - games/clickwasher-td/shot-1
+    - games/clickwasher-td/shot-2
+dates:
+  added: 2026-09-29
+  updated: 2026-09-29
+status: live
+provenance:
+  foundVia: scout:vibejam-2026
+  scannedAt: 2026-09-29T16:15:14.282Z

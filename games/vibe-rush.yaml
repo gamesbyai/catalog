@@ -1,0 +1,57 @@
+slug: vibe-rush
+title: Vibe Rush
+tagline: Lead a growing squad through zombie hordes, traps, and boss fights in a runner.
+description: >-
+  Vibe Rush is a nonstop runner battler in which you guide a squad through
+  streets full of zombies. You keep moving forward, steering around deadly traps
+  and picking up survivors along the way. Each recruit adds to your group, so
+  the squad you bring to the end depends on the choices you make during the run.
+
+
+  The game mixes lane-style running with shooting and squad management. Growing
+  your team is the central tension: more survivors mean more firepower against
+  the crowds, while traps threaten to thin the group. Runs build toward giant
+  bosses that test the squad you have assembled. It was a Vibe Jam 2026 entry,
+  rendered with Three.js, and it is playable on mobile devices as well as in a
+  browser.
+play:
+  url: https://vibe-rush.pages.dev
+  embeddable: true
+  platforms:
+    - browser
+    - mobile
+creator:
+  name: woocassh
+  handle: woocassh
+  x: woocassh
+made:
+  models: []
+  providers:
+    - anthropic
+  tools:
+    - claude-code
+  aiShare: most
+  source: Vibe Jam 2026 submission form
+  evidence: creator
+tech:
+  engine: threejs
+  multiplayer: single
+genres:
+  - action
+  - shooter
+jam:
+  event: vibe-jam-2026
+  rank: 220
+  entries: 945
+media:
+  cover: games/vibe-rush/cover
+  screenshots:
+    - games/vibe-rush/shot-1
+    - games/vibe-rush/shot-2
+dates:
+  added: 2026-09-29
+  updated: 2026-09-29
+status: live
+provenance:
+  foundVia: scout:vibejam-2026
+  scannedAt: 2026-09-29T16:15:14.279Z

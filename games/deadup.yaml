@@ -1,0 +1,58 @@
+slug: deadup
+title: DEADUP
+tagline: Shoot endless zombie waves while the arena closes in around you.
+description: >-
+  DEADUP is a browser-based survival shooter. You face waves of zombies that
+  keep coming, and the arena you fight in shrinks as time passes. Each run is a
+  test of how long you can stay alive while the space to move and the pressure
+  from the horde both get worse.
+
+
+  The game draws on two sources. The nonstop wave survival comes from Call of
+  Duty Zombies, and the sense of climbing through rising pressure comes from
+  Tower of God. Together they give each run an upward push, with the chaos
+  escalating the longer you last.
+
+
+  It runs in the browser using Three.js and works on mobile as well as desktop.
+  It was entered in Vibe Jam 2026, and the creator built it with Cursor.
+play:
+  url: https://deadup.abel.social
+  embeddable: false
+  platforms:
+    - browser
+    - mobile
+creator:
+  name: AbelSanzDev
+  handle: abelsanzdev
+  x: AbelSanzDev
+made:
+  models: []
+  tools:
+    - cursor
+  aiShare: most
+  source: Vibe Jam 2026 submission form
+  evidence: creator
+tech:
+  engine: threejs
+  multiplayer: single
+genres:
+  - shooter
+  - survival
+  - action
+jam:
+  event: vibe-jam-2026
+  rank: 239
+  entries: 945
+media:
+  cover: games/deadup/cover
+  screenshots:
+    - games/deadup/shot-1
+    - games/deadup/shot-2
+dates:
+  added: 2026-09-29
+  updated: 2026-09-29
+status: live
+provenance:
+  foundVia: scout:vibejam-2026
+  scannedAt: 2026-09-29T16:15:14.293Z

@@ -1,0 +1,58 @@
+slug: battletank-360
+title: BattleTank 360
+tagline: Drive a tank around a globe and destroy enemies in orbital combat.
+description: >-
+  BattleTank 360 is a browser-based tank shooter set on a globe. The player
+  takes command of a tank and hunts down enemy targets in orbital combat, with
+  the stated goal of dominating the entire planet. Each run centers on seeking
+  out opponents and destroying them.
+
+
+  The spherical battlefield is the main hook. Instead of a flat arena, the
+  action wraps around a planet, which suggests combat from every angle and a
+  360-degree feel that matches the title. It is built with Three.js for
+  real-time 3D rendering and runs on mobile as well as desktop.
+
+
+  The game was an entry in Vibe Jam 2026, where it placed 191st out of 945
+  entries. The creator built it with Cursor. It is a single-player experience
+  with no multiplayer mode.
+play:
+  url: https://battletank360.com
+  embeddable: true
+  platforms:
+    - browser
+    - mobile
+creator:
+  name: marcelocorp
+  handle: marcelocorp
+  x: marcelocorp
+made:
+  models: []
+  tools:
+    - cursor
+  aiShare: most
+  source: Vibe Jam 2026 submission form
+  evidence: creator
+tech:
+  engine: threejs
+  multiplayer: single
+genres:
+  - action
+  - shooter
+jam:
+  event: vibe-jam-2026
+  rank: 191
+  entries: 945
+media:
+  cover: games/battletank-360/cover
+  screenshots:
+    - games/battletank-360/shot-1
+    - games/battletank-360/shot-2
+dates:
+  added: 2026-09-29
+  updated: 2026-09-29
+status: live
+provenance:
+  foundVia: scout:vibejam-2026
+  scannedAt: 2026-09-29T16:15:14.260Z
