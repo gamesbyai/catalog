@@ -1,0 +1,68 @@
+slug: jellyblob
+title: JellyBlob
+tagline: Grow a wobbly jelly, trap rivals with your trail and go Supernova in a shared pond.
+description: >-
+  JellyBlob is a free multiplayer .io arena where you play a wobbly gelatin
+  jelly in a glowing night pond. You grow by eating dew, cut rivals off with
+  your trail, hop over theirs and stomp jellies smaller than you. Shedding size
+  lets you surge for a burst of speed, and a full Glow meter sets off
+  Supernova: seven seconds of swallowing anything smaller.
+
+
+  Pond events break up each match every few minutes, from a Dew Storm to a
+  fleeing Golden Jelly. Between runs there is a long progression: endless
+  levels with rank badges, a Reward Road, daily quests and a weekly challenge,
+  plus hats, faces, trails and emotes to collect. It plays on phones as well as
+  desktops, with touch controls for both orientations.
+
+
+  According to its creator, the game was first built with GPT-6 Astra in Codex
+  and then remade with Claude Opus 5.5. The remake runs on Three.js with its own
+  game server, and it renders each jelly as squashy, see-through gelatin.
+play:
+  url: https://jellyblob.win
+  embeddable: false
+  platforms:
+    - browser
+    - mobile
+  controls:
+    - Mouse, WASD or arrow keys to steer
+    - Click or Space to hop
+    - Hold click, Shift or right mouse to surge
+    - Keys 1–4 for emotes
+    - "Touch: drag to steer, HOP and SURGE buttons"
+creator:
+  name: Kvickan
+  handle: kvickan
+  links:
+    - https://buymeacoffee.com/kvickan
+made:
+  models:
+    - gpt-6-astra
+    - claude-opus-5-5
+  providers:
+    - openai
+    - anthropic
+  tools:
+    - codex
+  aiShare: unknown
+  source: The creator's own statement
+  evidence: creator
+  notes: "Initially made with GPT-6 Astra in Codex, then remade with Claude Opus 5.5."
+tech:
+  engine: threejs
+  multiplayer: online
+genres:
+  - io
+  - action
+media:
+  cover: games/jellyblob/cover
+  screenshots:
+    - games/jellyblob/shot-1
+    - games/jellyblob/shot-2
+dates:
+  added: 2026-09-29
+  updated: 2026-09-29
+status: live
+provenance:
+  foundVia: pr
