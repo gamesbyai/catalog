@@ -1,0 +1,64 @@
+slug: deep-dive
+title: Deep Dive
+tagline: Walk a diver through an undersea lab and play mini games that explain
+  how chatbots work.
+description: >-
+  Deep Dive is a 3D browser game for kids ages 10 to 14. You guide a diver
+  through an underwater research station, entering lab rooms along a corridor.
+  At each glowing console, Pip the robot explains one idea about AI chatbots,
+  then a mini game lets you try it. A full run takes about 20 minutes.
+
+
+  The lessons run real mechanisms at kid size. A tokenizer splits your words
+  into chunks, a small language model trained in the browser guesses the next
+  word, and a 60-token backpack drops old messages when it fills. Token goggles
+  repaint every sign in the station as colored tokens. Five core labs earn a
+  Diver's License, and three bonus labs cover tools, bias, and privacy.
+
+
+  It needs no account and makes no live AI calls. Map mode opens each lab as a
+  plain list without 3D, works with a keyboard alone, and can run offline after
+  loading. Reduced-motion and low-graphics settings are included. The creator
+  made it solo for a hackathon.
+play:
+  url: https://deep-dive-rosy.vercel.app
+  embeddable: true
+  platforms:
+    - browser
+  controls:
+    - E to start a lesson
+    - T to toggle token goggles
+repo: https://github.com/chichiroxursox-droid/deep-dive
+creator:
+  name: chichiroxursox-droid
+  handle: chichiroxursox-droid
+made:
+  models:
+    - gpt-4o
+  providers:
+    - openai
+  tools: []
+  aiShare: unknown
+  source: Repository README
+  evidence: repo
+  evidenceUrl: https://github.com/chichiroxursox-droid/deep-dive
+tech:
+  engine: threejs
+  multiplayer: single
+genres:
+  - educational
+  - puzzle
+media:
+  cover: games/deep-dive/cover
+  screenshots:
+    - games/deep-dive/shot-1
+    - games/deep-dive/shot-2
+dates:
+  added: 2026-09-29
+  updated: 2026-09-29
+status: live
+provenance:
+  foundVia: scout:awesome-opus
+  scannedAt: 2026-09-29T18:38:41.045Z
+  flags:
+    - unclear-ai

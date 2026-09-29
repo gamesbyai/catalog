@@ -1,0 +1,59 @@
+slug: project-vibecode-grokbuild-game-void-surge
+title: Project Vibecode GrokBuild Game Void Surge
+tagline: Steer a ship while its weapons fire on their own, then extract before
+  four bosses arrive.
+description: >-
+  Void Surge is a bullet-heaven survivor for mobile and desktop browsers. The
+  player only steers the ship; the weapons fire automatically. A run lasts ten
+  minutes, during which the player holds Station Helix-9 while the intensity
+  keeps climbing, and the goal is to extract before four bosses stack up on
+  screen.
+
+
+  Progression centers on building Mk 5 loadouts, stacking weapon upgrades so the
+  automatic fire grows heavier as the pressure rises. Steering is the only
+  input, which keeps the game easy to pick up on a touch screen as well as with
+  a desktop pointer or keys.
+
+
+  The creator says it was vibe-coded for fun with Grok Build. The project is an
+  HTML5 game whose repository tags it as a roguelike survivor.
+play:
+  url: https://void-surge-survivor.grok.me
+  embeddable: true
+  platforms:
+    - browser
+repo: https://github.com/NguyenMav/Project_Vibecode_GrokBuild_Game_Void_Surge
+license: MIT
+creator:
+  name: NguyenMav
+  handle: nguyenmav
+made:
+  models:
+    - grok-build
+  providers:
+    - xai
+  tools:
+    - grok-app
+  aiShare: unknown
+  source: GitHub repository README
+  evidence: creator
+  evidenceUrl: https://github.com/NguyenMav/Project_Vibecode_GrokBuild_Game_Void_Surge
+tech:
+  engine: canvas
+  multiplayer: single
+genres:
+  - roguelike
+  - shooter
+media:
+  cover: games/project-vibecode-grokbuild-game-void-surge/cover
+  screenshots:
+    - games/project-vibecode-grokbuild-game-void-surge/shot-1
+    - games/project-vibecode-grokbuild-game-void-surge/shot-2
+dates:
+  added: 2026-09-29
+  updated: 2026-09-29
+status: live
+provenance:
+  foundVia: scout:github
+  scannedAt: 2026-09-29T18:38:41.026Z

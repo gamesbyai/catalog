@@ -1,0 +1,67 @@
+slug: casadegema
+title: Casadegema
+tagline: Water a bare courtyard and find hidden gems through a full watercolor year.
+description: >-
+  Casa de Gemas is a watercolor garden game set around a whitewashed Spanish
+  house. The courtyard starts bare. You water a tree bed, then explore to find
+  five hidden gems in each of four seasons. Every gem flies to a counter, and
+  Oli the owl narrates and offers hints when tapped. A full year takes about 10
+  to 15 minutes.
+
+
+  Each season changes how the garden looks and what you can do. Spring has
+  shaking branches and a nest of chicks, summer adds a kite and a balloon,
+  autumn brings rain and a rake, and winter offers a snowman and chalk. The last
+  gem sends a message rising from the chimney, and a link parameter can put a
+  name in it.
+
+
+  The creator says it was built entirely through conversation with Claude Opus
+  5.5 in Cursor, with no hand-written code. It is a single HTML file using
+  Canvas 2D art, spring physics for the branches and petals, and music generated
+  live with Web Audio.
+play:
+  url: https://1xaispark.com/games/casa-de-gemas
+  embeddable: true
+  platforms:
+    - browser
+  controls:
+    - "Mouse or touch: tap and drag"
+    - "Esc: put down held item"
+    - "M: toggle music"
+    - "R: restart the year"
+repo: https://github.com/deepujain/casadegema
+license: MIT
+creator:
+  name: deepujain
+  handle: deepujain
+made:
+  models:
+    - claude-opus-5-5
+  providers:
+    - anthropic
+  tools:
+    - cursor
+    - claude-ai
+  aiShare: all
+  source: Repository README
+  evidence: repo
+  evidenceUrl: https://github.com/deepujain/casadegema
+tech:
+  engine: canvas
+  multiplayer: single
+genres:
+  - puzzle
+  - adventure
+media:
+  cover: games/casadegema/cover
+  screenshots:
+    - games/casadegema/shot-1
+    - games/casadegema/shot-2
+dates:
+  added: 2026-09-29
+  updated: 2026-09-29
+status: live
+provenance:
+  foundVia: scout:awesome-opus
+  scannedAt: 2026-09-29T18:38:41.030Z

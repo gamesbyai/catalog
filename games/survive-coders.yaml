@@ -1,0 +1,67 @@
+slug: survive-coders
+title: Survive Coders
+tagline: Cross San Francisco on foot, shooting bugs and shouting voice commands
+  at a boss.
+description: >-
+  Survive Coders is a browser platformer about a vibe coder dropped by a
+  robotaxi in Daly City, with one request: make one small change before the
+  demo. The run crosses San Francisco toward Anthropic HQ. Enemies come from
+  vibe-coding pain, including Bad Prompt Blobs, Keyboard Goblins and overheating
+  GPUs, and the run ends against the Context Rot Hydra, a three-headed boss.
+
+
+  The main idea is that your voice is a weapon. Hold a key, say a command such
+  as ship it, rollback or refactor, and the power fires on release. Speech is
+  optional, since each power also has a keyboard key and a touch target on
+  phones. Levels add new threats one at a time: Salesforce Park with
+  pitch-throwing founders, then Salesforce Tower floors where contracts lock
+  your weapon. A typed parachute fall and a Waymo ride follow.
+
+
+  The creator says it was built as a hackathon demo with Claude Code, using
+  Claude Opus 5.5 as a pair programmer, and commits carry co-author trailers. It
+  works with a keyboard or touch controls.
+play:
+  url: https://survive-coders.vercel.app
+  embeddable: true
+  platforms:
+    - browser
+  controls:
+    - "Hold M: voice commands"
+    - "V: microphone setup"
+    - "Enter: skip intro"
+    - "Tab: autofill typed line"
+    - Touch controls on phones
+repo: https://github.com/travisstephenfraser/survive-coders
+license: Apache-2.0
+creator:
+  name: travisstephenfraser
+  handle: travisstephenfraser
+made:
+  models:
+    - claude-opus-5-5
+  providers:
+    - anthropic
+  tools:
+    - claude-code
+  aiShare: unknown
+  source: Repository README
+  evidence: repo
+  evidenceUrl: https://github.com/travisstephenfraser/survive-coders
+tech:
+  multiplayer: single
+genres:
+  - platformer
+  - action
+media:
+  cover: games/survive-coders/cover
+  screenshots:
+    - games/survive-coders/shot-1
+    - games/survive-coders/shot-2
+dates:
+  added: 2026-09-29
+  updated: 2026-09-29
+status: live
+provenance:
+  foundVia: scout:awesome-opus
+  scannedAt: 2026-09-29T18:38:41.042Z

@@ -1,0 +1,52 @@
+slug: ai-generated-snake-game-sapseedi
+title: ai generated Snake Game sapseedi
+tagline: Steer a growing snake around the board, eating food without hitting anything.
+description: >-
+  This is a simple take on the classic Snake formula. The player guides a snake
+  around a play area, collecting food to make it longer. A run continues until
+  the snake collides with an obstacle or with its own body, which ends the
+  attempt and invites another go.
+
+
+  The project is deliberately small and focused on the familiar core loop: move,
+  eat, grow, and avoid trouble. That keeps it easy to pick up, since anyone who
+  has played a Snake game will understand the goal right away, and the rising
+  length gradually makes tight turns harder.
+
+
+  The creator states that the game was generated with Cursor, an AI coding tool.
+  The repository is a small personal experiment in having an AI assistant
+  produce a complete, playable version of a well-known arcade game.
+play:
+  url: https://ranjeetrocky.github.io/ai-generated-Snake-Game-sapseedi
+  embeddable: true
+  platforms:
+    - browser
+repo: https://github.com/ranjeetrocky/ai-generated-Snake-Game-sapseedi
+creator:
+  name: ranjeetrocky
+  handle: ranjeetrocky
+made:
+  models: []
+  tools:
+    - cursor
+  aiShare: unknown
+  source: GitHub repository README
+  evidence: repo
+  evidenceUrl: https://github.com/ranjeetrocky/ai-generated-Snake-Game-sapseedi
+tech:
+  multiplayer: single
+genres:
+  - arcade
+media:
+  cover: games/ai-generated-snake-game-sapseedi/cover
+  screenshots:
+    - games/ai-generated-snake-game-sapseedi/shot-1
+    - games/ai-generated-snake-game-sapseedi/shot-2
+dates:
+  added: 2026-09-29
+  updated: 2026-09-29
+status: live
+provenance:
+  foundVia: scout:github
+  scannedAt: 2026-09-29T18:38:41.029Z

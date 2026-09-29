@@ -1,0 +1,69 @@
+slug: meridian-wake-g6a
+title: Meridian Wake G6a
+tagline: Fly a brick-built spaceship, trade, mine, fight, and follow stories
+  across star systems.
+description: >-
+  Meridian Wake is a three-dimensional, brick-styled browser reimagining of
+  Endless Sky. You start with a Sparrow, Shuttle, or Star Barge, accept a first
+  transmission at New Boston, open the map, jump to Arcturus, and land on New
+  Greenland. From there you take contracts, haul cargo and passengers, mine, and
+  upgrade your ship.
+
+
+  Ports offer markets, shipyards, outfitters, fleet services, and banking, and
+  the Concourse adds civilian conversations, a field guide, and four branching
+  stories alongside the Free Worlds storyline. Contracts name exact planets,
+  surveys need fresh scans, and excursions require every stop plus a return
+  home. A journal tracks unfinished objectives, and exploration continues after
+  the ending.
+
+
+  The creator states it was generated with GPT-6 Astra. It renders with Three.js
+  on WebGPU with a WebGL2 fallback and uses Rapier for physics. Play works with
+  keyboard, touch, or gamepad, and progress autosaves in the browser with import
+  and export options.
+play:
+  url: https://meridian-wake-g6a.vercel.app
+  embeddable: true
+  platforms:
+    - browser
+  controls:
+    - "W / arrows: thrust"
+    - "A / D: turn"
+    - "S: brake"
+    - "Space: primary fire"
+    - "Shift: boost"
+    - "L: land/launch"
+repo: https://github.com/michaelcrosato/meridian-wake-g6a
+license: GPL-3.0
+creator:
+  name: michaelcrosato
+  handle: michaelcrosato
+made:
+  models:
+    - gpt-6-astra
+  providers:
+    - openai
+  tools: []
+  aiShare: unknown
+  source: Repository README
+  evidence: repo
+  evidenceUrl: https://github.com/michaelcrosato/meridian-wake-g6a
+tech:
+  engine: threejs
+  multiplayer: single
+genres:
+  - simulation
+  - adventure
+media:
+  cover: games/meridian-wake-g6a/cover
+  screenshots:
+    - games/meridian-wake-g6a/shot-1
+    - games/meridian-wake-g6a/shot-2
+dates:
+  added: 2026-09-29
+  updated: 2026-09-29
+status: live
+provenance:
+  foundVia: scout:awesome-opus
+  scannedAt: 2026-09-29T18:38:41.041Z

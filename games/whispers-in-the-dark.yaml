@@ -1,0 +1,57 @@
+slug: whispers-in-the-dark
+title: Whispers in the Dark
+tagline: Read the story, type your choices, and steer an AI-narrated text adventure.
+description: >-
+  Whispers in the Dark is a text adventure in which an AI acts as the narrator.
+  The player reads each passage of the unfolding story and responds with
+  actions, and the story continues based on those decisions. A session is a
+  chain of text exchanges rather than a fixed set of levels.
+
+
+  The story is generated as you play, so the path through the setting depends on
+  what you choose to do. The presentation is built around words instead of
+  graphics, which keeps attention on the narration and on the dark, mysterious
+  mood suggested by the title.
+
+
+  The creator's repository tags point to Codex and Gemini as the tools behind
+  the project, and it is labeled as vibe-coded. The creator built it with those
+  AI assistants, and the game itself uses AI to drive its storytelling.
+play:
+  url: https://eliotcougar.github.io/Whispers-in-the-Dark
+  embeddable: true
+  platforms:
+    - browser
+repo: https://github.com/eliotcougar/Whispers-in-the-Dark
+license: MIT
+creator:
+  name: eliotcougar
+  handle: eliotcougar
+made:
+  models: []
+  providers:
+    - google
+    - openai
+  tools:
+    - gemini-app
+    - codex
+  aiShare: unknown
+  source: GitHub repository README
+  evidence: repo
+  evidenceUrl: https://github.com/eliotcougar/Whispers-in-the-Dark
+tech:
+  multiplayer: single
+genres:
+  - adventure
+media:
+  cover: games/whispers-in-the-dark/cover
+  screenshots:
+    - games/whispers-in-the-dark/shot-1
+    - games/whispers-in-the-dark/shot-2
+dates:
+  added: 2026-09-29
+  updated: 2026-09-29
+status: live
+provenance:
+  foundVia: scout:github
+  scannedAt: 2026-09-29T18:38:41.016Z

@@ -1,0 +1,70 @@
+slug: pokemon-claude-red
+title: Pokemon Claude Red
+tagline: Play through a full Pokémon Red remake drawn entirely in code, right in
+  your browser.
+description: >-
+  Pokémon Claude Red is a browser remake of Pokémon Red that follows the Kanto
+  story from start to finish. You walk through 224 maps, battle trainers, earn
+  eight gym badges, take on Team Rocket and Silph Co., then face the Elite Four,
+  the Champion and Cerulean Cave. Progress saves in the browser, with optional
+  accounts for cloud saves.
+
+
+  What stands out is that no image files exist. Every tile, building, battle
+  effect and all 151 Pokémon is drawn at runtime from shapes like ellipses and
+  polygons. The 52 songs are played through synthesized Web Audio instruments,
+  and each of the 165 moves has its own animation. There is also a day and night
+  cycle, a character customizer, and recreations of classic glitches such as
+  MissingNo. and the Mew trick.
+
+
+  Beyond the main quest, a Social Zone lets players meet in a live lounge,
+  trade, and fight real-time link battles or a level-50 Battle Tower. A daily
+  silhouette quiz and shareable pixel-art cards round it out. The creator says
+  it began as a single prompt in Claude Code, built by Claude Opus 5.5 and
+  refined over a few days of play and fix requests.
+play:
+  url: https://claudered.dev
+  embeddable: true
+  platforms:
+    - browser
+  controls:
+    - "Arrow keys or WASD: move"
+    - "Z, J or Space: A (talk, confirm)"
+    - "X, K, Backspace or Esc: B (cancel, hold to run)"
+    - "Enter: START menu"
+    - "Shift or C: SELECT"
+    - Touch D-pad, gamepad or mouse also work
+repo: https://github.com/levy-street/pokemon-claude-red
+creator:
+  name: levy-street
+  handle: levy-street
+made:
+  models:
+    - claude-opus-5-5
+  providers:
+    - anthropic
+  tools:
+    - claude-code
+  aiShare: all
+  source: Repository README
+  evidence: repo
+  evidenceUrl: https://github.com/levy-street/pokemon-claude-red
+tech:
+  engine: canvas
+  multiplayer: single
+genres:
+  - rpg
+  - adventure
+media:
+  cover: games/pokemon-claude-red/cover
+  screenshots:
+    - games/pokemon-claude-red/shot-1
+    - games/pokemon-claude-red/shot-2
+dates:
+  added: 2026-09-29
+  updated: 2026-09-29
+status: live
+provenance:
+  foundVia: scout:awesome-opus
+  scannedAt: 2026-09-29T18:38:40.996Z
