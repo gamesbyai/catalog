@@ -1,0 +1,54 @@
+slug: second-form-requiem
+title: "Second Form: Requiem"
+tagline: Pilot a spaceship that becomes a mecha and blast through waves of enemies.
+description: >-
+  Second Form: Requiem is a fast-paced space shoot 'em up. You fly a ship
+  through relentless waves of enemies, firing to survive as the screen fills
+  with hostile fire. At some point your craft transforms into a combat mecha,
+  changing how you fight.
+
+
+  The game leans on energy and escalation. High-energy music drives the pace,
+  power-ups change your firepower as you go, and the chaos builds the longer you
+  last. The transformation into a mecha is the hook that gives the game its name
+  and sets it apart from a plain ship-versus-swarm shooter.
+
+
+  The creator entered it in Vibe Jam 2026 and said the project came from wanting
+  to learn how to vibe code and make games they would want to play themselves.
+play:
+  url: https://secondformrequiem.com
+  embeddable: false
+  platforms:
+    - browser
+creator:
+  name: iamchuck504
+  handle: iamchuck504
+  x: iamchuck504
+made:
+  models: []
+  tools: []
+  aiShare: most
+  source: Vibe Jam 2026 submission form
+  evidence: inferred
+tech:
+  multiplayer: single
+genres:
+  - shooter
+  - action
+jam:
+  event: vibe-jam-2026
+  rank: 219
+  entries: 945
+media:
+  cover: games/second-form-requiem/cover
+  screenshots:
+    - games/second-form-requiem/shot-1
+    - games/second-form-requiem/shot-2
+dates:
+  added: 2026-09-29
+  updated: 2026-09-29
+status: live
+provenance:
+  foundVia: scout:vibejam-2026
+  scannedAt: 2026-09-29T18:39:15.179Z
