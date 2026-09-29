@@ -1,9 +1,13 @@
 name: review
-# Posts the review card on a submission PR once its capture run finishes (and updates it after later runs).
+# Posts the review card on a submission PR once its capture run finishes (and updates it after later runs). When the
+# entry has no description yet and nothing is flagged, it first commits the tool-less draft (tagline and description)
+# into games/<slug>.yaml on the PR branch. Merging the PR is the approval; there is no scoring.
 #
 # This is a PRIVILEGED workflow_run job: it holds secrets, so it must NEVER check out, install or run anything from the
 # PR. The checkout is main, dependencies install without install scripts, and scripts/review-card.mjs reads the PR's
-# entry through the contents API at the captured head SHA as YAML data. The play URL is only header-checked and scanned
+# entry through the contents API at the captured head SHA as YAML data. The draft is written back through the contents
+# API as data (replacing exactly the file at that SHA) with the GitHub App's token, so capture and validate rerun;
+# the App token is never given to the model (claude.mjs passes an allowlisted environment). The play URL is only header-checked and scanned
 # by Cloudflare URL Scanner (unlisted); the repo README (HTML and comments stripped, at most 8 kB) only reaches a
 # tool-less Claude call (no tools, no MCP, no settings) whose output is schema-checked and shown as escaped text.
 # Branch names and PR text reach the script only through environment variables, never through the shell.
@@ -34,9 +38,17 @@ jobs:
       - uses: actions/setup-node@v5
         with: { node-version: 22 }
       - run: npm ci --ignore-scripts --no-audit --no-fund
-      - name: Build and post the review card
+      # Contents write only, for committing the draft into the entry (GITHUB_TOKEN pushes would not rerun the checks).
+      - uses: actions/create-github-app-token@v2
+        id: app
+        with:
+          app-id: ${{ secrets.GH_APP_ID }}
+          private-key: ${{ secrets.GH_APP_PRIVATE_KEY }}
+          permission-contents: write
+      - name: Commit the draft and post the review card
         env:
           GITHUB_TOKEN: ${{ github.token }}
+          APP_TOKEN: ${{ steps.app.outputs.token }}
           HEAD_BRANCH: ${{ github.event.workflow_run.head_branch }}
           HEAD_SHA: ${{ github.event.workflow_run.head_sha }}
           # Optional: without it the draft is skipped with a note on the card.

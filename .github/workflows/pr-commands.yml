@@ -1,5 +1,6 @@
 name: pr-commands
-# Review commands on seed and submission PRs: /drop, /score, /reject, /changes (scripts/pr-commands.mjs has the syntax).
+# Review commands on seed and submission PRs: /drop, /reject, /changes (scripts/pr-commands.mjs has the syntax). There is
+# no scoring: rankings come from player votes, and merging the PR is the approval.
 # Only the catalog owner's comments run this. No code from the PR branch is ever executed: the scripts come from main,
 # the branch is only read and edited with git as data. Edits are pushed with the GitHub App's token so checks rerun.
 on:
@@ -11,8 +12,8 @@ jobs:
   command:
     if: >-
       github.event.issue.pull_request && github.event.comment.user.login == 'MansGullberg' &&
-      (startsWith(github.event.comment.body, '/drop') || startsWith(github.event.comment.body, '/score') ||
-       startsWith(github.event.comment.body, '/reject') || startsWith(github.event.comment.body, '/changes'))
+      (startsWith(github.event.comment.body, '/drop') || startsWith(github.event.comment.body, '/reject') ||
+       startsWith(github.event.comment.body, '/changes'))
     runs-on: ubuntu-latest
     permissions:
       contents: read
@@ -58,9 +59,9 @@ jobs:
           COMMENT_AUTHOR: ${{ github.event.comment.user.login }}
           OWNERS: MansGullberg
         run: |
-          # Only games this PR adds can be dropped or scored.
+          # Only games this PR adds can be dropped.
           export PR_SLUGS="$(git -C pr diff --name-only --diff-filter=A origin/main...HEAD -- games/ | sed -nE 's#^games/([a-z0-9-]+)\.yaml$#\1#p' | tr '\n' ' ')"
-          node tools/scripts/pr-commands.mjs pr > action.json
+          node tools/scripts/pr-commands.mjs > action.json
           cat action.json
       - name: Apply it
         env:
@@ -89,13 +90,6 @@ jobs:
               git push -q origin "HEAD:$REF"
               left=$(git diff --name-only --diff-filter=A origin/main...HEAD -- games/ | wc -l | tr -d ' ')
               gh pr comment "$PR" --body "Dropped $(wc -l < ../remove.txt | tr -d ' '). Games left in this PR: $left." ;;
-            score)
-              file=$(jq -r .file ../action.json)
-              jq -r .content ../action.json > "$file"
-              git add "$file"
-              git commit -q -m "Score $(jq -r .slug ../action.json) on review"
-              git push -q origin "HEAD:$REF"
-              gh pr comment "$PR" --body "Scored $(jq -r .slug ../action.json). It goes live when this PR is merged." ;;
             reject)
               gh pr edit "$PR" --add-label rejected || true
               gh pr close "$PR" --comment "Closed on review: $(jq -r .text ../action.json)"
@@ -104,6 +98,4 @@ jobs:
               gh pr edit "$PR" --add-label needs-changes || true
               gh pr comment "$PR" --body "Changes requested: $(jq -r .text ../action.json)"
               notify changes "$(jq -r .text ../action.json)" "" ;;
-            error)
-              gh pr comment "$PR" --body "$(jq -r .message ../action.json)" ;;
           esac

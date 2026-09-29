@@ -418,34 +418,7 @@
           "description": {
             "minLength": 600
           }
-        },
-        "anyOf": [
-          {
-            "required": [
-              "editor"
-            ],
-            "properties": {
-              "editor": {
-                "required": [
-                  "score"
-                ]
-              }
-            }
-          },
-          {
-            "required": [
-              "jam"
-            ],
-            "properties": {
-              "jam": {
-                "required": [
-                  "rank",
-                  "entries"
-                ]
-              }
-            }
-          }
-        ]
+        }
       }
     }
   ]

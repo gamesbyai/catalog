@@ -14,15 +14,21 @@ const PAGES = {
   '/game': html(`<canvas id="c" width="1280" height="720"></canvas><script>
     const g = document.getElementById('c').getContext('2d');
     let t = 0;
-    (function frame() { t += 1; g.fillStyle = 'hsl(' + ((t * 7) % 360) + ' 80% 50%)'; g.fillRect(0, 0, 1280, 720); requestAnimationFrame(frame); })();
+    (function frame() { t += 1; for (let x = 0; x < 1280; x += 40) for (let y = 0; y < 720; y += 40) { g.fillStyle = 'hsl(' + ((t * 7 + x + y * 3) % 360) + ' 80% ' + (20 + ((x + y + t * 23) % 60)) + '%)'; g.fillRect(x, y, 40, 40); } requestAnimationFrame(frame); })();
     addEventListener('click', () => { t += 90; });
   </script>`),
   '/hang': html(`<p style="color:#fff">loading</p><script>addEventListener('load', () => setTimeout(() => { for (;;) {} }, 200));</script>`),
   '/late-hang': html(`<canvas id="c" width="1280" height="720"></canvas><script>
-    document.getElementById('c').getContext('2d').fillStyle = '#c6ff3d';
-    document.getElementById('c').getContext('2d').fillRect(0, 0, 1280, 720);
+    const g = document.getElementById('c').getContext('2d');
+    for (let x = 0; x < 1280; x += 40) for (let y = 0; y < 720; y += 40) { g.fillStyle = 'hsl(' + ((x + y * 3) % 360) + ' 80% ' + (30 + ((x * y) % 40)) + '%)'; g.fillRect(x, y, 40, 40); }
     addEventListener('load', () => setTimeout(() => { for (;;) {} }, 600));
   </script>`),
+  '/loading-then-game': html(`<canvas id="c" width="1280" height="720"></canvas><script>
+    const g = document.getElementById('c').getContext('2d');
+    g.fillStyle = '#050505'; g.fillRect(0, 0, 1280, 720);
+    setTimeout(() => { for (let x = 0; x < 1280; x += 40) for (let y = 0; y < 720; y += 40) { g.fillStyle = 'hsl(' + ((x + y * 3) % 360) + ' 80% ' + (30 + ((x * y) % 40)) + '%)'; g.fillRect(x, y, 40, 40); } }, 500);
+  </script>`),
+  '/black': html(`<canvas width="1280" height="720" style="background:#000"></canvas>`),
   '/to-download': html(`<p style="color:#fff">starting</p><script>addEventListener('load', () => setTimeout(() => { location.href = '/download'; }, 100));</script>`),
   '/alerts': html(`<script>
     addEventListener('beforeunload', (e) => { e.preventDefault(); e.returnValue = ''; });
@@ -158,4 +164,37 @@ test('a game that freezes after its cover keeps the cover (partial capture)', as
   assert.equal(res.ok, true, res.reason);
   assert.equal(res.partial, true);
   assert.deepEqual(files(dir), ['cover.png']);
+});
+
+test('pickFrames drops black and flat frames, puts the most detailed first and skips near-duplicates', async () => {
+  const { pickFrames } = await import('../scripts/capture.mjs');
+  const sharp = (await import('sharp')).default;
+  const solid = (r, g, b) => sharp({ create: { width: 320, height: 180, channels: 3, background: { r, g, b } } }).png().toBuffer();
+  // Two clearly different detailed frames: a horizontal and a vertical gradient.
+  const gradient = async (horizontal) => {
+    const px = Buffer.alloc(320 * 180 * 3);
+    for (let y = 0; y < 180; y++) for (let x = 0; x < 320; x++) px.fill(horizontal ? Math.round((x / 319) * 255) : Math.round((y / 179) * 255), (y * 320 + x) * 3, (y * 320 + x) * 3 + 3);
+    return sharp(px, { raw: { width: 320, height: 180, channels: 3 } }).png().toBuffer();
+  };
+  const noisy = (seed) => gradient(seed === 1);
+  const black = await solid(2, 2, 3);
+  const grey = await solid(128, 128, 128);
+  const a = await noisy(1);
+  const b = await noisy(99);
+  const picked = await pickFrames([black, a, grey, a, b]);
+  assert.equal(picked.length, 2, 'black, flat grey and the duplicate are dropped');
+  assert.ok(picked.includes(a) && picked.includes(b));
+  assert.deepEqual(await pickFrames([black, grey]), []);
+});
+
+test('a loading screen never becomes the cover; an all-black game is not captured', async () => {
+  const dir = join(tmp(), 'loading');
+  const res = await captureOne(`${base}/loading-then-game`, dir, FAST);
+  assert.equal(res.ok, true, res.reason);
+  const { default: sharp } = await import('sharp');
+  const { channels } = await sharp(readFileSync(join(dir, 'cover.png'))).stats();
+  assert.ok(channels[0].mean > 18, 'the cover is the game, not the black loading frame');
+  const black = await captureOne(`${base}/black`, join(tmp(), 'black'), FAST);
+  assert.equal(black.ok, false);
+  assert.equal(black.reason, 'blank');
 });
