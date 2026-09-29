@@ -42,11 +42,13 @@ test('a rendered issue form parses into fields; "_No response_" is empty', () =>
   assert.equal(f['AI tools used'], 'Claude Code, Cursor');
 });
 
-test('a valid submission becomes a draft entry that passes the validator', () => {
+test('a valid submission becomes a live entry (the merge is the approval) that fails validation only on its empty description', () => {
   const dir = repo();
   const r = toEntry(parseIssue(body()), { ...loadContext(dir), today: '2026-09-29', issue: 12 });
   assert.equal(r.slug, 'sky-hop');
-  assert.equal(r.entry.status, 'draft');
+  assert.equal(r.entry.status, 'live');
+  assert.equal(r.entry.description, '');
+  assert.doesNotMatch(r.entry.tagline, /editor/i);
   assert.deepEqual(r.entry.made.models, ['claude-opus-5-5']);
   assert.deepEqual(r.entry.made.tools, ['claude-code', 'cursor']);
   assert.deepEqual(r.entry.genres, ['platformer', 'puzzle']);
@@ -54,6 +56,11 @@ test('a valid submission becomes a draft entry that passes the validator', () =>
   assert.equal(r.entry.made.evidence, 'creator');
   assert.deepEqual(r.entry.provenance, { foundVia: 'form', submittedBy: '#12' });
   writeFileSync(join(dir, 'games', 'sky-hop.yaml'), stringify(r.entry));
+  // The intended gate: the review card commits the drafted description; until then validate fails on it alone.
+  const problems = validate(dir).problems;
+  assert.ok(problems.length > 0);
+  assert.ok(problems.every((p) => /description|"then"/.test(p)), problems.join('\n'));
+  writeFileSync(join(dir, 'games', 'sky-hop.yaml'), stringify({ ...r.entry, tagline: 'Hop between floating islands before they sink', description: `${'Sky Hop is a platformer. '.repeat(20)}\n\n${'Each island sinks. '.repeat(10)}` }));
   assert.deepEqual(validate(dir).problems, []);
 });
 
@@ -87,6 +94,13 @@ test('the issue form on disk matches the taxonomies (run node scripts/issue-form
   const { renderForm, FORM_PATH } = await import('../scripts/issue-form.mjs');
   const { readFileSync } = await import('node:fs');
   assert.equal(readFileSync(FORM_PATH, 'utf8'), renderForm('.'));
+});
+
+test('the issue form makes no editor claims: automated checks, then approval', async () => {
+  const { issueForm } = await import('../scripts/issue-form.mjs');
+  const f = issueForm('.');
+  assert.doesNotMatch(f.description, /editor/i);
+  assert.match(f.description, /automated checks/);
 });
 
 test('every label the converter reads exists in the issue form', async () => {

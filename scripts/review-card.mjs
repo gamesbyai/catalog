@@ -7,10 +7,14 @@
 // the entry is read through the contents API at the head SHA and parsed as YAML data, the play URL is only
 // header-checked and scanned by Cloudflare URL Scanner (unlisted), and the repo README (HTML and comments stripped,
 // at most 8 kB) only reaches a tool-less model.
-// Usage (CI): GITHUB_TOKEN=… GITHUB_REPOSITORY=… HEAD_BRANCH=submission/<slug> HEAD_SHA=<sha>
+// When the entry has no description yet and nothing is flagged, the drafted tagline and description are written into
+// games/<slug>.yaml on the PR branch through the contents API (APP_TOKEN, so the checks rerun), then the card is posted.
+// Merging the PR is the approval; there is no scoring (rankings come from player votes).
+// Usage (CI): GITHUB_TOKEN=… GITHUB_REPOSITORY=… HEAD_BRANCH=submission/<slug> HEAD_SHA=<sha> [APP_TOKEN=…]
 //             [CLAUDE_CODE_OAUTH_TOKEN=…] [URLSCAN_TOKEN=… CLOUDFLARE_ACCOUNT_ID=…] node scripts/review-card.mjs
+import { createHash } from 'node:crypto';
 import { fileURLToPath } from 'node:url';
-import { parse } from 'yaml';
+import { parse, parseDocument } from 'yaml';
 import { escapeText, MEDIA_URL } from './upload.mjs';
 import { scanInjection } from './enrich/injection.mjs';
 import { draftCandidate, loadTaxonomySlugs, FLAGS } from './enrich/draft.mjs';
@@ -25,6 +29,7 @@ const GH_REPO = /^https:\/\/github\.com\/([A-Za-z0-9-]{1,39})\/([A-Za-z0-9._-]{1
 const INVISIBLE = /[​-‏‪-‮⁠-⁩﻿]/g;
 const EMAIL = /[\p{L}\p{N}._%+-]+@[\p{L}\p{N}-]+(?:\.[\p{L}\p{N}-]+)+/gu;
 const README_MAX = 8192;
+export const DECISION = 'Merge to publish. Comment /changes <note> or /reject <reason> to decline.';
 
 const obj = (v) => (v && typeof v === 'object' && !Array.isArray(v) ? v : {});
 const strings = (v) => (Array.isArray(v) ? v.filter((x) => typeof x === 'string') : []);
@@ -85,6 +90,18 @@ export function stripReadme(raw, max = README_MAX) {
   return s;
 }
 
+/** The entry's YAML with the drafted tagline and description (paragraphs joined by a blank line); nothing else changes. */
+export function applyDraft(yamlText, draft) {
+  const doc = parseDocument(yamlText, { maxAliasCount: 50 });
+  if (doc.errors.length) throw new Error('the entry is not valid YAML');
+  doc.set('tagline', draft.tagline);
+  doc.set('description', strings(draft.description).join('\n\n'));
+  return doc.toString({ lineWidth: 0 });
+}
+
+/** Git's blob SHA of a file's text: the contents API's `sha` for replacing exactly this version. */
+const blobSha = (text) => createHash('sha1').update(`blob ${Buffer.byteLength(text)}\0`).update(text).digest('hex');
+
 /** The draft input for a submitted entry. Notes and README are untrusted text; everything else is structured. */
 export function candidateFromEntry(entry, readme = '') {
   const e = obj(entry);
@@ -111,9 +128,10 @@ export function candidateFromEntry(entry, readme = '') {
 /**
  * The card's Markdown. `flags`: { injection: [{ field, rules }], notes: [string] }; `scan`: { status: 'done', malicious }
  * or { status: 'pending' | 'error' | 'skipped', reason }; `draft`: draftCandidate's result or { skipped: reason };
- * `repoFacts`: { stars, license, pushedAt, archived }; `capture`: { ready }; `checks`: checkOne's result.
+ * `repoFacts`: { stars, license, pushedAt, archived }; `capture`: { ready }; `checks`: checkOne's result;
+ * `commit`: { status: 'committed' } or { status: 'skipped' | 'error', reason } for the drafted text, or null.
  */
-export function reviewCard({ entry, flags = {}, scan = null, draft = null, repoFacts = null, capture = null, checks = null, sha = '' }) {
+export function reviewCard({ entry, flags = {}, scan = null, draft = null, repoFacts = null, capture = null, checks = null, commit = null, sha = '' }) {
   const e = obj(entry);
   const play = obj(e.play);
   const made = obj(e.made);
@@ -187,23 +205,26 @@ export function reviewCard({ entry, flags = {}, scan = null, draft = null, repoF
   for (const n of strings(flags.notes).slice(0, 10)) flagLines.push(`- ${text(n, 160)}`);
   lines.push('#### Flags', '', ...(flagLines.length ? flagLines : ['None.']), '');
 
-  // The tool-less draft, as a suggestion only.
-  lines.push('#### Suggested text', '');
+  // The tool-less draft: committed to the entry when nothing was flagged, otherwise a suggestion only.
+  lines.push('#### Drafted text', '');
   if (draft?.skipped) lines.push(`No draft: ${label(draft.skipped)}.`);
   else if (!d) lines.push(`No draft: ${draft ? label(draft.reason) : 'not run'}.`);
   else if (d.isGame === false) lines.push('No draft: the model judged that this is not a game.');
   else if (draftFlags.includes('injection') || outRules.length) lines.push('Draft withheld: it was flagged for injection.');
   else {
-    lines.push('> Draft by a tool-less model, check before use.', '', `**Tagline:** ${text(d.tagline, 100)}`, '');
+    const note = commit?.status === 'committed'
+      ? `> Drafted by a tool-less model and committed to \`games/${slug}.yaml\`. Edit the file on this branch to change it.`
+      : commit ? `> Draft by a tool-less model, not committed (${label(commit.reason)}). Check before use.` : '> Draft by a tool-less model, check before use.';
+    lines.push(note, '', `**Tagline:** ${text(d.tagline, 100)}`, '');
     for (const p of strings(d.description).slice(0, 3)) lines.push(text(p, 700), '');
     lines.push(`**Suggested genres:** ${strings(d.genres).slice(0, 3).map((g) => text(g, 40)).join(', ') || '—'}`);
   }
   lines.push('');
 
-  // Score.
-  lines.push('#### Score', '');
+  // Decision: merging is the approval. No scoring: rankings come from player votes.
+  lines.push('#### Decision', '');
   if (malicious) lines.push('⛔ **Do not merge.** Cloudflare URL Scanner marked the play URL as malicious.');
-  else lines.push('Rubric: fun, polish, originality and AI craft (`aiCraft`), each 1–5; the editor score is their average.', 'Paste this as a comment with your four scores; merging after /score publishes it.', '', '```', '/score <fun> <polish> <originality> <aiCraft>', '```');
+  else lines.push(DECISION);
   lines.push('', `<sub>Review workflow from main${/^[0-9a-f]{40}$/.test(sha) ? `, entry at ${sha.slice(0, 7)}` : ''}. PR code is never run; entry text is shown as plain text.</sub>`);
   return lines.join('\n') + '\n';
 }
@@ -261,11 +282,13 @@ export async function runReview({ env = process.env, run, sleep, log = console.l
   // The entry, as data, at the SHA that was captured.
   const notes = [];
   let entry = null;
+  let yaml = '';
   const res = await gh(`/repos/${repo}/contents/games/${slug}.yaml?ref=${sha}`, { headers: { Accept: 'application/vnd.github.raw+json' } });
   if (res.ok) {
-    const { text: yaml, truncated } = await readText(res, 64 * 1024);
+    const read = await readText(res, 64 * 1024);
+    yaml = read.truncated ? '' : read.text;
     try {
-      const data = truncated ? null : parse(yaml, { maxAliasCount: 50 });
+      const data = read.truncated ? null : parse(yaml, { maxAliasCount: 50 });
       entry = data && typeof data === 'object' && !Array.isArray(data) ? data : null;
     } catch {
       entry = null;
@@ -274,6 +297,7 @@ export async function runReview({ env = process.env, run, sleep, log = console.l
   if (!entry) notes.push(`games/${slug}.yaml could not be read as an entry`);
   else if (entry.slug !== slug) notes.push('the entry slug differs from the branch name');
   const e = obj(entry);
+  const hasDescription = typeof e.description === 'string' && e.description.trim() !== '';
   const injection = scanEntry(e);
   const playUrl = typeof e.play?.url === 'string' && safeHref(e.play.url) ? e.play.url.trim() : null;
 
@@ -319,6 +343,8 @@ export async function runReview({ env = process.env, run, sleep, log = console.l
     const readmeRules = scanInjection(readme);
     if (readmeRules.length) injection.push({ field: 'README', rules: readmeRules });
     if (!entry) return { skipped: 'the entry could not be read' };
+    // Our own commit (or Måns's edit) filled it: no new draft, and no loop through the capture rerun.
+    if (hasDescription) return { skipped: 'the entry already has a description' };
     if (!env.CLAUDE_CODE_OAUTH_TOKEN && !env.CLAUDE_CLI_PATH) return { skipped: 'CLAUDE_CODE_OAUTH_TOKEN not set' };
     if (injection.some((f) => f.field !== 'README')) return { skipped: 'the submission was flagged for injection' };
     try {
@@ -330,8 +356,32 @@ export async function runReview({ env = process.env, run, sleep, log = console.l
   const [scan, checks, ready, { facts: repoFacts }, draft] = await Promise.all([scanP, checksP, captureP, repoP, draftP]);
   // Media are keyed by the file's slug; the card builds image URLs from the entry's, so both must agree.
   const capture = entry?.slug === slug ? ready : { ready: false };
-  const card = reviewCard({ entry, flags: { injection, notes }, scan, draft, repoFacts, capture, checks, sha });
-  log(`PR #${pr.number}: scan ${scan.status}, draft ${draft.ok ? 'ok' : 'none'}, screenshots ${capture.ready ? 'ready' : 'not yet'}, ${injection.length} injection flag(s)`);
+
+  // Commit the clean draft into the entry, as data, on the PR branch. Any flag, a malicious scan or a missing App
+  // token leaves the entry as it is, and the validate check keeps failing on the empty description.
+  const commit = await (async () => {
+    const d = draft?.ok === true ? obj(draft.draft) : null;
+    if (!d || d.isGame === false || !yaml) return null;
+    if (entry?.slug !== slug) return { status: 'skipped', reason: 'the entry slug differs from the branch' };
+    const outRules = scanInjection([d.tagline, ...strings(d.description)].join('\n'));
+    if (injection.length || strings(d.flags).includes('injection') || outRules.length) return { status: 'skipped', reason: 'flagged for injection' };
+    if (scan.status === 'done' && scan.malicious) return { status: 'skipped', reason: 'malicious play URL' };
+    if (!env.APP_TOKEN) return { status: 'skipped', reason: 'APP_TOKEN not set' };
+    try {
+      const put = await fetch(`https://api.github.com/repos/${repo}/contents/games/${slug}.yaml`, {
+        method: 'PUT',
+        headers: { Authorization: `Bearer ${env.APP_TOKEN}`, Accept: 'application/vnd.github+json', 'X-GitHub-Api-Version': '2022-11-28', 'User-Agent': 'gamesbyai-review', 'Content-Type': 'application/json' },
+        body: JSON.stringify({ message: `Draft the description of ${slug}`, content: Buffer.from(applyDraft(yaml, d)).toString('base64'), branch, sha: blobSha(yaml) }),
+      });
+      return put.ok ? { status: 'committed' } : { status: 'error', reason: `GitHub ${put.status}` };
+    } catch (err) {
+      return { status: 'error', reason: err.message };
+    }
+  })();
+  if (entry && !hasDescription && commit?.status !== 'committed') notes.push('no description yet: the validate check fails until one is added');
+
+  const card = reviewCard({ entry, flags: { injection, notes }, scan, draft, repoFacts, capture, checks, commit, sha });
+  log(`PR #${pr.number}: scan ${scan.status}, draft ${draft.ok ? 'ok' : 'none'}, commit ${commit?.status ?? 'none'}, screenshots ${capture.ready ? 'ready' : 'not yet'}, ${injection.length} injection flag(s)`);
 
   // Update our own earlier card, if any; never touch anyone else's comment.
   let own = null;
