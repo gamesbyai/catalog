@@ -1,0 +1,54 @@
+slug: oyster-arcade
+title: Oyster Arcade
+tagline: Play four arcade games in a CRT cabinet and chase shared high scores
+description: >-
+  Oyster Arcade is a browser-based arcade cabinet styled after an old CRT
+  screen. It bundles four separate games under one menu, including Invaders and
+  Carrier Defense. Each session is a short score chase: pick a game from the
+  cabinet, play until the run ends, and see how the result compares.
+
+
+  The cabinet presentation ties the collection together, with a retro monitor
+  look across the games. Leaderboards are shared, so scores from every game land
+  in a common place rather than staying local to one run. The mix of a classic
+  shooter-style title and a defense-themed one gives the collection some
+  variety.
+
+
+  The creator states that it was built with Claude Code, and that all of the
+  graphics are drawn on an HTML5 Canvas rather than with a separate game engine.
+play:
+  url: https://arcade.oyster.to
+  embeddable: true
+  platforms:
+    - browser
+creator:
+  name: Unknown creator
+  handle: oyster-arcade
+made:
+  models: []
+  providers:
+    - anthropic
+  tools:
+    - claude-code
+  aiShare: unknown
+  source: Project README
+  evidence: creator
+tech:
+  engine: canvas
+  multiplayer: single
+genres:
+  - arcade
+  - shooter
+media:
+  cover: games/oyster-arcade/cover
+  screenshots:
+    - games/oyster-arcade/shot-1
+    - games/oyster-arcade/shot-2
+dates:
+  added: 2026-09-29
+  updated: 2026-09-29
+status: live
+provenance:
+  foundVia: scout:awesome-cc0
+  scannedAt: 2026-09-29T18:39:28.293Z

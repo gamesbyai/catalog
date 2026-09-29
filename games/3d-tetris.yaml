@@ -1,0 +1,52 @@
+slug: 3d-tetris
+title: 3D Tetris
+tagline: Stack falling 3D blocks on floating platforms and fill whole layers to
+  clear them.
+description: >-
+  3D Tetris takes the falling-block formula into three dimensions. Tetrominoes
+  drop onto a floating platform, and the player places them so that an entire
+  layer is filled. Completed layers clear away, making room for more pieces and
+  keeping the stack from growing out of control.
+
+
+  Instead of clearing single rows on a flat grid, the player has to think about
+  depth as well as width. Each piece must be judged from several angles, since a
+  gap hidden behind other blocks can stop a layer from completing. The platform
+  floats in open space, which gives the board a clean, minimal look.
+
+
+  According to the creator, the game was built with Lovable and rendered with
+  Three.js, so it runs in the browser as a 3D scene.
+play:
+  url: https://3d-tetris-platforms.lovable.app
+  embeddable: true
+  platforms:
+    - browser
+creator:
+  name: Unknown creator
+  handle: 3d-tetris
+made:
+  models: []
+  tools:
+    - lovable
+  aiShare: unknown
+  source: Project README
+  evidence: creator
+tech:
+  engine: threejs
+  multiplayer: single
+genres:
+  - puzzle
+  - arcade
+media:
+  cover: games/3d-tetris/cover
+  screenshots:
+    - games/3d-tetris/shot-1
+    - games/3d-tetris/shot-2
+dates:
+  added: 2026-09-29
+  updated: 2026-09-29
+status: live
+provenance:
+  foundVia: scout:awesome-cc0
+  scannedAt: 2026-09-29T18:39:28.286Z
