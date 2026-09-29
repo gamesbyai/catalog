@@ -1,0 +1,66 @@
+slug: bonecrawler
+title: BoneCrawler
+tagline: Explore a dark gothic world and fight through fast combat in an
+  NES-style action game.
+description: >-
+  BoneCrawler is a dark fantasy action game with an NES-style look. The player
+  explores a gothic world in the manner of classic top-down adventures, then
+  fights enemies in quick, combo-minded combat that leans toward
+  character-action games rather than slow, deliberate swordplay.
+
+
+  The design is openly a tribute to the games that shaped its author. Zelda-like
+  exploration sits alongside the faster combat of Devil May Cry and Ninja
+  Gaiden, all set in a gloomy fantasy atmosphere shaped by The Lord of the
+  Rings. It is a small project from a solo developer and runs on mobile as well.
+
+
+  The creator says the code was generated with AI while they directed the scope
+  and tested the results. Claude, ChatGPT, and Codex handled code generation,
+  and Gemini was used for planning. The game was built as a reusable engine with
+  an editor, and the creator plans to open-source it later.
+play:
+  url: https://bonecrawler.com/vibejam/index.html
+  embeddable: true
+  platforms:
+    - browser
+    - mobile
+creator:
+  name: immagundam
+  handle: immagundam
+  x: immagundam
+made:
+  models: []
+  providers:
+    - anthropic
+    - openai
+    - google
+  tools:
+    - claude-ai
+    - chatgpt
+    - codex
+    - gemini-app
+  aiShare: most
+  source: Vibe Jam 2026 submission form
+  evidence: creator
+tech:
+  multiplayer: single
+genres:
+  - action
+  - adventure
+jam:
+  event: vibe-jam-2026
+  rank: 568
+  entries: 945
+media:
+  cover: games/bonecrawler/cover
+  screenshots:
+    - games/bonecrawler/shot-1
+    - games/bonecrawler/shot-2
+dates:
+  added: 2026-09-29
+  updated: 2026-09-29
+status: live
+provenance:
+  foundVia: scout:vibejam-2026
+  scannedAt: 2026-09-29T18:39:24.747Z

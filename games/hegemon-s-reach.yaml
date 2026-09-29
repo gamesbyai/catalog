@@ -1,0 +1,59 @@
+slug: hegemon-s-reach
+title: Hegemon's Reach
+tagline: Build a colony with production chains, then raise an army to crush a rival.
+description: >-
+  Hegemon's Reach is a browser strategy game in the style of classic settlers
+  titles. You grow a colony by setting up production chains, where one workplace
+  supplies the next, and you guide the settlement indirectly rather than
+  commanding every worker. Once the economy runs well, you turn it toward war.
+
+
+  The focus is on optimizing. Deep chains of goods reward careful planning, and
+  the appeal lies in watching a well-tuned colony hum along. A rival is building
+  up in the same way, so the late game becomes a race to have the stronger
+  military ready first.
+
+
+  The creator built it with Claude Code and made it in Three.js for Vibe Jam
+  2026. They say it comes from childhood affection for the games that first drew
+  them to technology.
+play:
+  url: https://hegemon.max.vodka
+  embeddable: true
+  platforms:
+    - browser
+creator:
+  name: maxgeithe
+  handle: maxgeithe
+  x: maxgeithe
+made:
+  models: []
+  providers:
+    - anthropic
+  tools:
+    - claude-code
+  aiShare: most
+  source: Vibe Jam 2026 submission form
+  evidence: creator
+tech:
+  engine: threejs
+  multiplayer: single
+genres:
+  - strategy
+  - simulation
+jam:
+  event: vibe-jam-2026
+  rank: 594
+  entries: 945
+media:
+  cover: games/hegemon-s-reach/cover
+  screenshots:
+    - games/hegemon-s-reach/shot-1
+    - games/hegemon-s-reach/shot-2
+dates:
+  added: 2026-09-29
+  updated: 2026-09-29
+status: live
+provenance:
+  foundVia: scout:vibejam-2026
+  scannedAt: 2026-09-29T18:39:24.766Z

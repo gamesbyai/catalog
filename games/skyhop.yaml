@@ -1,0 +1,56 @@
+slug: skyhop
+title: SkyHop
+tagline: Pilot a hovering craft through a futuristic space racing course.
+description: >-
+  SkyHop is a space racing game in which the player pilots a craft along a track
+  set among the stars. Each run is a race against the course itself, with the
+  goal of getting around it cleanly and quickly. It runs in the browser and is
+  playable on mobile devices as well as desktop.
+
+
+  The game is a fresh take on HexGL, the browser racer the creator felt had gone
+  without updates for a long time. The main aim is to show what current WebGL
+  rendering can look like, so the visuals are the focus, with a space setting
+  and a sense of speed.
+
+
+  The creator built it with Cursor for the Vibe Jam 2026 and rendered it with
+  Three.js. It is a single-player experience with no multiplayer mode.
+play:
+  url: https://sidcode.github.io/SkyHop
+  embeddable: true
+  platforms:
+    - browser
+    - mobile
+creator:
+  name: sidcode_
+  handle: sidcode
+  x: sidcode_
+made:
+  models: []
+  tools:
+    - cursor
+  aiShare: most
+  source: Vibe Jam 2026 submission form
+  evidence: creator
+tech:
+  engine: threejs
+  multiplayer: single
+genres:
+  - racing
+jam:
+  event: vibe-jam-2026
+  rank: 564
+  entries: 945
+media:
+  cover: games/skyhop/cover
+  screenshots:
+    - games/skyhop/shot-1
+    - games/skyhop/shot-2
+dates:
+  added: 2026-09-29
+  updated: 2026-09-29
+status: live
+provenance:
+  foundVia: scout:vibejam-2026
+  scannedAt: 2026-09-29T18:39:24.745Z

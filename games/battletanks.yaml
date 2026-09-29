@@ -1,0 +1,61 @@
+slug: battletanks
+title: battletanks
+tagline: Fight other players' tanks in a 3D arena using cannons, missiles, and a laser.
+description: >-
+  Battletanks is a 3D multiplayer tank arena that runs in the browser. Each
+  player drives a tank around a shared map and picks from three weapons: a spray
+  cannon, salvo missiles, and a laser that can be held down to sweep across the
+  battlefield. Matches are about positioning and choosing the right weapon for
+  the moment.
+
+
+  The weapon choices give the arena its character. The laser rewards players who
+  keep it aimed for a long stretch, while the cannon and missiles suit quicker
+  exchanges. The setup draws on Tanki Online, the browser tank battler known for
+  futuristic turret weapons. The game also supports mobile play.
+
+
+  It was entered in Vibe Jam 2026 and is built on Babylon.js. Claude Code is the
+  tool named as part of its development, and the game is made for play on both
+  desktop and mobile browsers.
+play:
+  url: https://battletanks.marcosbrendon.com
+  embeddable: false
+  platforms:
+    - browser
+    - mobile
+creator:
+  name: MarcosBren31124
+  handle: marcosbren31124
+  x: MarcosBren31124
+made:
+  models: []
+  providers:
+    - anthropic
+  tools:
+    - claude-code
+  aiShare: most
+  source: Vibe Jam 2026 submission form
+  evidence: creator
+tech:
+  engine: babylonjs
+  multiplayer: online
+genres:
+  - action
+  - shooter
+jam:
+  event: vibe-jam-2026
+  rank: 577
+  entries: 945
+media:
+  cover: games/battletanks/cover
+  screenshots:
+    - games/battletanks/shot-1
+    - games/battletanks/shot-2
+dates:
+  added: 2026-09-29
+  updated: 2026-09-29
+status: live
+provenance:
+  foundVia: scout:vibejam-2026
+  scannedAt: 2026-09-29T18:39:24.756Z

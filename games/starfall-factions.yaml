@@ -1,0 +1,59 @@
+slug: starfall-factions
+title: Starfall Factions
+tagline: Mine pastel planets, take risky contracts, and upgrade your ship as a
+  broke rookie pirate.
+description: >-
+  Starfall Factions is a cozy open-world space adventure. You play a broke
+  rookie pirate flying between pastel planets, mining resources, and taking on
+  risky contracts to earn money. Each run is a loop of exploring, gathering, and
+  spending your earnings on ship upgrades so you can handle bigger jobs.
+
+
+  The setting is a strange living star system, where factions, salvage, and
+  trouble shape what you find as you explore. The creator aimed for a smaller,
+  more focused take on the feeling of getting lost in a beautiful sci-fi world,
+  favoring a soft pastel look over gritty space combat.
+
+
+  It was entered in Vibe Jam 2026 and runs on Three.js. The creator's submission
+  names Claude Code as the tool used to build it.
+play:
+  url: https://starfallfactions.vercel.app
+  embeddable: true
+  platforms:
+    - browser
+creator:
+  name: BrunoOBunito
+  handle: brunoobunito
+  x: BrunoOBunito
+made:
+  models: []
+  providers:
+    - anthropic
+  tools:
+    - claude-code
+  aiShare: most
+  source: Vibe Jam 2026 submission form
+  evidence: creator
+tech:
+  engine: threejs
+  multiplayer: single
+genres:
+  - adventure
+  - action
+jam:
+  event: vibe-jam-2026
+  rank: 590
+  entries: 945
+media:
+  cover: games/starfall-factions/cover
+  screenshots:
+    - games/starfall-factions/shot-1
+    - games/starfall-factions/shot-2
+dates:
+  added: 2026-09-29
+  updated: 2026-09-29
+status: live
+provenance:
+  foundVia: scout:vibejam-2026
+  scannedAt: 2026-09-29T18:39:24.764Z

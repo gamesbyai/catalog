@@ -1,0 +1,61 @@
+slug: xcolony
+title: xColony
+tagline: Mine the Moon, research tech, launch cargo to orbit, and prestige to
+  new worlds.
+description: >-
+  xColony is a 3D idle colony sim that runs in the browser. You start by mining
+  the Moon, gathering resources that feed your growing settlement. Over time you
+  spend them on upgrades and research, then send cargo up to orbit. When
+  progress slows, you prestige and begin again on a new world.
+
+
+  Two separate tech trees give the colony more than one direction to grow, so
+  choices about what to research shape how quickly each cycle moves. The
+  prestige loop carries the colony from the Moon to other worlds, and the space
+  theme ties mining, launches, and expansion together in a 3D view.
+
+
+  The game was entered in Vibe Jam 2026 and is built on Three.js. The catalog
+  records Claude Code as the tool behind it, though the exact details of how it
+  was used are not spelled out.
+play:
+  url: https://x-colony.vercel.app
+  embeddable: true
+  platforms:
+    - browser
+creator:
+  name: den_storozhyk
+  handle: den-storozhyk
+  x: den_storozhyk
+made:
+  models: []
+  providers:
+    - anthropic
+  tools:
+    - claude-code
+  aiShare: most
+  source: Vibe Jam 2026 submission form
+  evidence: creator
+tech:
+  engine: threejs
+  multiplayer: single
+genres:
+  - idle
+  - strategy
+  - simulation
+jam:
+  event: vibe-jam-2026
+  rank: 586
+  entries: 945
+media:
+  cover: games/xcolony/cover
+  screenshots:
+    - games/xcolony/shot-1
+    - games/xcolony/shot-2
+dates:
+  added: 2026-09-29
+  updated: 2026-09-29
+status: live
+provenance:
+  foundVia: scout:vibejam-2026
+  scannedAt: 2026-09-29T18:39:24.762Z

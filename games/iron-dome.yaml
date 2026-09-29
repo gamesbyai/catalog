@@ -1,0 +1,59 @@
+slug: iron-dome
+title: Iron Dome
+tagline: Shoot down incoming rockets and bosses to keep your glowing city standing.
+description: >-
+  Iron Dome is an arcade missile-defense shooter in which the player guards a
+  glowing city against waves of incoming rockets. Each run is a fight to keep
+  the skyline intact as the attacks keep coming, with boss encounters
+  interrupting the regular waves and raising the pressure.
+
+
+  The premise draws on the classic Missile Command and on the real-world Iron
+  Dome system. That gives it a tense, defensive feel: the goal is not to chase
+  enemies but to intercept threats before they reach the city below. It also
+  runs on mobile devices.
+
+
+  The game was an entry in Vibe Jam 2026, where it placed 569th out of 945
+  entries. The creator states it was built mostly with Claude AI, and credits
+  Claude Code as the tool.
+play:
+  url: https://iron-dome-8hb.pages.dev
+  embeddable: true
+  platforms:
+    - browser
+    - mobile
+creator:
+  name: OdedEfraim
+  handle: odedefraim
+  x: OdedEfraim
+made:
+  models: []
+  providers:
+    - anthropic
+  tools:
+    - claude-code
+  aiShare: most
+  source: Vibe Jam 2026 submission form
+  evidence: creator
+tech:
+  multiplayer: single
+genres:
+  - shooter
+  - arcade
+jam:
+  event: vibe-jam-2026
+  rank: 569
+  entries: 945
+media:
+  cover: games/iron-dome/cover
+  screenshots:
+    - games/iron-dome/shot-1
+    - games/iron-dome/shot-2
+dates:
+  added: 2026-09-29
+  updated: 2026-09-29
+status: live
+provenance:
+  foundVia: scout:vibejam-2026
+  scannedAt: 2026-09-29T18:39:24.748Z
