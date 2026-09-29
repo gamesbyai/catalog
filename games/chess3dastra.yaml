@@ -1,0 +1,69 @@
+slug: chess3dastra
+title: Chess3dastra
+tagline: Play chess against a computer opponent on a 3D or 2D board.
+description: >-
+  Chess3dastra is a browser chess game where you play against a local computer
+  opponent. It follows full chess rules, including castling, en passant,
+  promotion, and draws. You pick one of three difficulty levels, then move
+  pieces by clicking, using the keyboard, or typing algebraic notation. Undo, a
+  move history, and a captures list are available during play.
+
+
+  The board can be shown in 3D or in a flat 2D view, and the choice persists
+  across reloads. The 3D pieces are built from hand-made geometry rather than
+  sprites, and the camera can be orbited. Light and dark themes are included,
+  the layout adapts to mobile screens, and a game in progress is saved and
+  restored after a reload. The computer's search runs in a Web Worker, so the
+  interface stays responsive.
+
+
+  According to the repository, the game was built in the GitHub Copilot app with
+  GPT-6 Astra from four prompts, including a review pass by a second agent. The
+  whole thing ships as a single static HTML file, with automated unit and
+  browser tests included.
+play:
+  url: https://yortch.github.io/chess3dastra
+  embeddable: true
+  platforms:
+    - browser
+  controls:
+    - Mouse click to move pieces
+    - Keyboard moves
+    - Algebraic notation entry
+    - Orbit camera in 3D view
+repo: https://github.com/yortch/chess3dastra
+creator:
+  name: yortch
+  handle: yortch
+made:
+  models:
+    - gpt-6-astra
+    - claude-sonnet-5
+  providers:
+    - anthropic
+    - openai
+  tools:
+    - github-copilot
+    - claude-ai
+  aiShare: all
+  source: Repository README
+  evidence: repo
+  evidenceUrl: https://github.com/yortch/chess3dastra
+tech:
+  engine: threejs
+  multiplayer: single
+genres:
+  - board
+  - strategy
+media:
+  cover: games/chess3dastra/cover
+  screenshots:
+    - games/chess3dastra/shot-1
+    - games/chess3dastra/shot-2
+dates:
+  added: 2026-09-29
+  updated: 2026-09-29
+status: live
+provenance:
+  foundVia: scout:awesome-opus
+  scannedAt: 2026-09-29T18:39:37.944Z

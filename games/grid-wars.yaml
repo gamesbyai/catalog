@@ -1,0 +1,57 @@
+slug: grid-wars
+title: grid wars
+tagline: Command units on a glowing hex grid against a computer rival or online players.
+description: >-
+  Grid Wars is a turn-based strategy game set on a hex grid with a TRON-style
+  look, rendered in 3D in the browser. In single-player, you face the MCP, the
+  computer opponent, taking turns to move across the board and outmaneuver it.
+
+
+  The game also supports online multiplayer over websockets, so a match can be
+  played against another person instead of the AI. Its neon aesthetic is paired
+  with procedural generation and audio built on the Web Audio API, which give
+  the arena a distinct electric atmosphere.
+
+
+  The repository describes the project as AI-generated and untested, and it
+  carries a warning to use it at your own risk. Its tags point to Claude and
+  Claude Code, and the creator's label for the approach is vibe coding. Expect
+  rough edges.
+play:
+  url: https://hub.docker.com/r/loosecannons/grid-wars
+  embeddable: false
+  platforms:
+    - browser
+repo: https://github.com/loosecannons/grid-wars
+license: MIT
+creator:
+  name: loosecannons
+  handle: loosecannons
+made:
+  models: []
+  providers:
+    - anthropic
+  tools:
+    - claude-ai
+    - claude-code
+  aiShare: all
+  source: GitHub repository README
+  evidence: repo
+  evidenceUrl: https://github.com/loosecannons/grid-wars
+tech:
+  engine: threejs
+  multiplayer: single
+genres:
+  - strategy
+media:
+  cover: games/grid-wars/cover
+  screenshots:
+    - games/grid-wars/shot-1
+    - games/grid-wars/shot-2
+dates:
+  added: 2026-09-29
+  updated: 2026-09-29
+status: live
+provenance:
+  foundVia: scout:github
+  scannedAt: 2026-09-29T18:39:37.948Z

@@ -1,0 +1,59 @@
+slug: little-flock
+title: little flock
+tagline: Tend a shared flock of sheep on a cozy farm with other players.
+description: >-
+  Little Flock is a cozy multiplayer sheep-farming simulation rendered in 3D.
+  Players share a farm with others online and look after a flock of sheep
+  together, settling into a relaxed routine of tending animals rather than
+  racing against a clock or an opponent.
+
+
+  The tone is gentle and low-pressure, built around the pleasure of pottering
+  about a pastoral space with friends. The client is written with React Three
+  Fiber, so the farm is drawn in the browser, while the multiplayer side is
+  handled by a Go backend that keeps everyone's view of the flock in sync.
+
+
+  According to the repository, the whole game was made in one shot with GPT 6
+  Astra in Codex. That makes it a compact example of a complete networked game,
+  with both a 3D front end and a server, produced from a single prompt to a
+  coding agent.
+play:
+  url: https://sharpherd.song.work
+  embeddable: false
+  platforms:
+    - browser
+repo: https://github.com/songkeys/little-flock
+license: MIT
+creator:
+  name: songkeys
+  handle: songkeys
+made:
+  models:
+    - gpt-6-astra
+  providers:
+    - openai
+  tools:
+    - codex
+  aiShare: all
+  source: GitHub repository README
+  evidence: repo
+  evidenceUrl: https://github.com/songkeys/little-flock
+tech:
+  engine: threejs
+  multiplayer: single
+genres:
+  - simulation
+  - casual
+media:
+  cover: games/little-flock/cover
+  screenshots:
+    - games/little-flock/shot-1
+    - games/little-flock/shot-2
+dates:
+  added: 2026-09-29
+  updated: 2026-09-29
+status: live
+provenance:
+  foundVia: scout:github
+  scannedAt: 2026-09-29T18:39:37.947Z
