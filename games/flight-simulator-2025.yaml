@@ -38,7 +38,7 @@ made:
   evidence: creator
 tech:
   engine: threejs
-  multiplayer: single
+  multiplayer: online
 genres:
   - simulation
   - action

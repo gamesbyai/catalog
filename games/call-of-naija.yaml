@@ -52,7 +52,7 @@ made:
   evidenceUrl: https://github.com/bigbadbillion/game
 tech:
   engine: threejs
-  multiplayer: single
+  multiplayer: online
 genres:
   - shooter
   - action

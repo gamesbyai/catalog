@@ -41,7 +41,7 @@ made:
   evidenceUrl: https://github.com/songkeys/little-flock
 tech:
   engine: threejs
-  multiplayer: single
+  multiplayer: online
 genres:
   - simulation
   - casual
