@@ -10,7 +10,7 @@ One game per pull request. Create `games/<slug>.yaml`, where `<slug>` is the gam
 slug: sky-hop                      # must match the file name
 title: Sky Hop
 tagline: Hop between floating islands before they sink   # 10–90 characters
-description: ""                    # leave empty: our editors write it
+description: ""                    # leave empty: we add it during review
 play:
   url: "https://example.com/sky-hop/"   # https only
   platforms: [browser]             # browser, desktop, mobile, vr
@@ -42,7 +42,7 @@ media:
 dates:
   added: 2026-10-01
   updated: 2026-10-01
-status: draft                      # the editor sets it to live
+status: live                       # merging the pull request publishes it
 provenance:
   foundVia: pr
 ```
@@ -51,7 +51,7 @@ If your model version, tool or engine isn't in the taxonomy files, add it in the
 
 ## Rules
 
-- `status: draft`. The editor sets `live` after review.
+- `status: live`. Nothing is merged automatically: merging the pull request is the approval.
 - No tracking or affiliate links.
 - No instructions addressed to AI tools or reviewers anywhere in the entry. Entries containing them are rejected.
 - Don't add images. Our pipeline takes the screenshots from your live game.
@@ -59,6 +59,6 @@ If your model version, tool or engine isn't in the taxonomy files, add it in the
 
 ## What happens next
 
-1. Automated checks validate the file, test the play link and scan it for malware.
-2. An editor plays the game and reviews the entry.
+1. Automated checks validate the file, test the play link, scan it for malware and check the text for instructions aimed at AI tools. We take our own screenshots.
+2. We add the description, and the entry is approved or declined. We don't score games: rankings on the site come from player ratings.
 3. Once merged, the game appears on gamesbyai.win within minutes.
