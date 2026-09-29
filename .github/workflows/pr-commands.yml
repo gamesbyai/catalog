@@ -11,7 +11,7 @@ permissions:
 jobs:
   command:
     if: >-
-      github.event.issue.pull_request && github.event.comment.user.login == 'MansGullberg' &&
+      github.event.issue.pull_request && contains(fromJSON('["OWNER","MEMBER","COLLABORATOR"]'), github.event.comment.author_association) &&
       (startsWith(github.event.comment.body, '/drop') || startsWith(github.event.comment.body, '/reject') ||
        startsWith(github.event.comment.body, '/changes'))
     runs-on: ubuntu-latest
@@ -56,8 +56,7 @@ jobs:
       - name: Work out the action
         env:
           COMMENT_BODY: ${{ github.event.comment.body }}
-          COMMENT_AUTHOR: ${{ github.event.comment.user.login }}
-          OWNERS: MansGullberg
+          COMMENT_ASSOCIATION: ${{ github.event.comment.author_association }}
         run: |
           # Only games this PR adds can be dropped.
           export PR_SLUGS="$(git -C pr diff --name-only --diff-filter=A origin/main...HEAD -- games/ | sed -nE 's#^games/([a-z0-9-]+)\.yaml$#\1#p' | tr '\n' ' ')"
@@ -69,12 +68,12 @@ jobs:
           REF: ${{ steps.pr.outputs.ref }}
           ISSUE: ${{ steps.pr.outputs.issue }}
           NOTIFY_TOKEN: ${{ secrets.INTERNAL_NOTIFY_TOKEN }}
-          NOTIFY_URL: https://gamesbyai-preview.mansgullberg.workers.dev/api/internal/notify
+          NOTIFY_URL: ${{ vars.NOTIFY_URL }}
         run: |
           [ -s action.json ] || { echo "no valid command"; exit 0; }
           action=$(jq -r .action action.json)
           notify() { # event, note, slug
-            [ -n "$ISSUE" ] && [ -n "$NOTIFY_TOKEN" ] || return 0
+            [ -n "$ISSUE" ] && [ -n "$NOTIFY_TOKEN" ] && [ -n "$NOTIFY_URL" ] || return 0
             code=$(jq -n --argjson issue "$ISSUE" --arg event "$1" --arg note "$2" --arg slug "$3" '{issue:$issue,event:$event,note:$note} + (if $slug == "" then {} else {slug:$slug} end)' \
               | curl -sS -o /dev/null -w "%{http_code}" -X POST "$NOTIFY_URL" -H "Authorization: Bearer $NOTIFY_TOKEN" -H 'Content-Type: application/json' --data-binary @- || echo 000)
             echo "notify: $code"

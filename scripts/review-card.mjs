@@ -351,7 +351,7 @@ export async function runReview({ env = process.env, run, sleep, log = console.l
     const readmeRules = scanInjection(readme);
     if (readmeRules.length) injection.push({ field: 'README', rules: readmeRules });
     if (!entry) return { skipped: 'the entry could not be read' };
-    // Our own commit (or Måns's edit) filled it: no new draft, and no loop through the capture rerun.
+    // Our own commit (or a maintainer's edit) filled it: no new draft, and no loop through the capture rerun.
     if (hasDescription) return { skipped: 'the entry already has a description' };
     if (!env.CLAUDE_CODE_OAUTH_TOKEN && !env.CLAUDE_CLI_PATH) return { skipped: 'CLAUDE_CODE_OAUTH_TOKEN not set' };
     if (injection.some((f) => f.field !== 'README')) return { skipped: 'the submission was flagged for injection' };

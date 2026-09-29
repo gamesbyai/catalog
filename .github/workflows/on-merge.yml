@@ -26,10 +26,10 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
           NOTIFY_TOKEN: ${{ secrets.INTERNAL_NOTIFY_TOKEN }}
-          NOTIFY_URL: https://gamesbyai-preview.mansgullberg.workers.dev/api/internal/notify
+          NOTIFY_URL: ${{ vars.NOTIFY_URL }}
           SHA: ${{ github.sha }}
         run: |
-          [ -n "$NOTIFY_TOKEN" ] || exit 0
+          [ -n "$NOTIFY_TOKEN" ] && [ -n "$NOTIFY_URL" ] || exit 0
           gh api "repos/$GITHUB_REPOSITORY/commits/$SHA/pulls" --jq '.[] | select(.head.ref | startswith("submission/")) | [.head.ref, (.body // "")] | @tsv' |
           while IFS=$'\t' read -r ref body; do
             slug=${ref#submission/}

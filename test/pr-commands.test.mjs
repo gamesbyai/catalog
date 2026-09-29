@@ -3,16 +3,17 @@ import assert from 'node:assert/strict';
 import * as commands from '../scripts/pr-commands.mjs';
 import { parseCommand, dropTargets, plan } from '../scripts/pr-commands.mjs';
 
-const owner = { author: 'MansGullberg', owners: ['MansGullberg'] };
+// GitHub's author_association for the commenter: only the organization's members and owners are obeyed.
+const owner = { association: 'MEMBER' };
 
-test('/drop lists slugs from the owner', () => {
+test('/drop lists slugs from a maintainer', () => {
   assert.deepEqual(parseCommand('/drop neon-drift tiny-skies', owner), { drop: ['neon-drift', 'tiny-skies'] });
   assert.deepEqual(parseCommand('/drop  neon-drift,\ntiny-skies ', owner), { drop: ['neon-drift', 'tiny-skies'] });
 });
 
 test('comments from anyone else are ignored', () => {
-  assert.equal(parseCommand('/drop neon-drift', { author: 'someone', owners: ['MansGullberg'] }), null);
-  assert.equal(parseCommand('/drop neon-drift', { author: 'mansgullberg', owners: ['MansGullberg'] }), null);
+  for (const association of ['CONTRIBUTOR', 'FIRST_TIME_CONTRIBUTOR', 'FIRST_TIMER', 'NONE', '', undefined]) assert.equal(parseCommand('/drop neon-drift', { association }), null, String(association));
+  for (const association of ['OWNER', 'COLLABORATOR']) assert.deepEqual(parseCommand('/drop neon-drift', { association }), { drop: ['neon-drift'] });
 });
 
 test('other comments and malformed slugs are ignored', () => {

@@ -25,7 +25,7 @@ export function loadTaxonomySlugs(catalogDir = ROOT) {
   );
 }
 
-// Things Måns must look at before merging. Features (multiplayer, mobile) are facts, not flags.
+// Things the maintainer must look at before merging. Features (multiplayer, mobile) are facts, not flags.
 export const FLAGS = ['injection', 'mature', 'gambling', 'crypto', 'not-a-game', 'broken', 'unclear-ai'];
 
 const arr = (values, max) => ({ type: 'array', maxItems: max, uniqueItems: true, items: { enum: values } });
