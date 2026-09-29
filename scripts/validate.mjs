@@ -60,6 +60,7 @@ export function validate(dir = '.') {
     if (g.tech.engine) check('engines', [g.tech.engine], 'engine');
     check('genres', g.genres, 'genre');
     if (g.jam) check('jams', [g.jam.event], 'jam');
+    if (g.jam?.rank && g.jam.entries && g.jam.rank > g.jam.entries) problems.push(`${rel}: jam.rank ${g.jam.rank} is above jam.entries ${g.jam.entries}`);
     const key = g.play.url.replace(/\/+$/, '').toLowerCase();
     if (playUrls.has(key)) problems.push(`${rel}: same play.url as ${playUrls.get(key)}`);
     else playUrls.set(key, rel);

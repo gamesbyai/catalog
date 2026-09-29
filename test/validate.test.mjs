@@ -62,3 +62,8 @@ test('a live jam entry needs no editor score, and the engine may be left out', (
     .replace('tech: { engine: threejs, multiplayer: single }', 'tech: { multiplayer: single }') + 'jam: { event: vibe-jam-2026, rank: 3, entries: 945 }\n';
   assert.deepEqual(validate(repo({ 'sky-hop.yaml': live })).problems, []);
 });
+
+test('a jam rank above the number of entries is rejected', () => {
+  const bad = draft + 'jam: { event: vibe-jam-2026, rank: 30, entries: 10 }\n';
+  assert.ok(validate(repo({ 'sky-hop.yaml': bad })).problems.some((p) => p.includes('jam.rank')));
+});
