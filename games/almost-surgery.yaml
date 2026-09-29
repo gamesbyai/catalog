@@ -1,0 +1,62 @@
+slug: almost-surgery
+title: Almost Surgery
+tagline: Perform shady operations on patients with saws and shocks to earn money.
+description: >-
+  Almost Surgery is a dark simulation where you work as an unlicensed surgeon
+  and get paid for the procedures you perform. Patients arrive, and you use
+  tools such as a saw, a blade and an electric shock to carry out the job,
+  collecting cash for each result.
+
+
+  The premise pairs a bureaucratic, paperwork-style job game with horror-tinged
+  surgery, and the tone leans deliberately grim and absurd. The creator names
+  Papers, Please and developer Mike Klubnika as inspirations. It placed 28th of
+  945 entries at Vibe Jam 2026 and received the Most Cursed award.
+
+
+  The creator built it in the Godot engine and used Codex as the AI coding tool.
+  It was entered in Vibe Jam 2026 as a single-player game that is not made for
+  mobile play.
+play:
+  url: https://almostsurgery.ragim.dev
+  embeddable: true
+  platforms:
+    - browser
+creator:
+  name: RagimMusakaev
+  handle: ragimmusakaev
+  x: RagimMusakaev
+made:
+  models: []
+  providers:
+    - openai
+  tools:
+    - codex
+  aiShare: most
+  source: Vibe Jam 2026 submission form
+  evidence: creator
+tech:
+  engine: godot
+  multiplayer: single
+genres:
+  - simulation
+  - horror
+jam:
+  event: vibe-jam-2026
+  rank: 28
+  entries: 945
+  award: Most Cursed
+media:
+  cover: games/almost-surgery/cover
+  screenshots:
+    - games/almost-surgery/shot-1
+    - games/almost-surgery/shot-2
+dates:
+  added: 2026-09-29
+  updated: 2026-09-29
+status: live
+provenance:
+  foundVia: scout:vibejam-2026
+  scannedAt: 2026-09-29T15:38:44.459Z
+  flags:
+    - mature

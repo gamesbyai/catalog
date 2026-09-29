@@ -1,0 +1,60 @@
+slug: mouse-trouble
+title: Mouse Trouble
+tagline: Sneak, grab loot, and escape as a mouse in a cartoon extraction shooter.
+description: >-
+  Mouse Trouble is a multiplayer action game that mixes loot extraction shooters
+  with the chase-and-scramble spirit of golden age cartoons, in the vein of Tom
+  and Jerry. Players enter a match, gather valuables, and try to get out with
+  them while other players compete for the same spoils.
+
+
+  The focus is on speed and a small footprint. It is built to load quickly and
+  run fast, and it works on both desktop and mobile browsers. The cartoon theme
+  gives the extraction formula a lighter, slapstick tone. The game placed 30th
+  out of 945 entries in Vibe Jam 2026.
+
+
+  The creator built it in Three.js with Codex, and the tool credit comes from
+  the creator's own statement. The game was made for the jam with the goal of
+  keeping the bundle as small as possible.
+play:
+  url: https://mouse.ryanfitzpatrick.io
+  embeddable: false
+  platforms:
+    - browser
+    - mobile
+creator:
+  name: rfitzpatrick_io
+  handle: rfitzpatrick-io
+  x: rfitzpatrick_io
+made:
+  models: []
+  providers:
+    - openai
+  tools:
+    - codex
+  aiShare: most
+  source: Vibe Jam 2026 submission form
+  evidence: creator
+tech:
+  engine: threejs
+  multiplayer: online
+genres:
+  - action
+  - shooter
+jam:
+  event: vibe-jam-2026
+  rank: 30
+  entries: 945
+media:
+  cover: games/mouse-trouble/cover
+  screenshots:
+    - games/mouse-trouble/shot-1
+    - games/mouse-trouble/shot-2
+dates:
+  added: 2026-09-29
+  updated: 2026-09-29
+status: live
+provenance:
+  foundVia: scout:vibejam-2026
+  scannedAt: 2026-09-29T15:38:44.460Z

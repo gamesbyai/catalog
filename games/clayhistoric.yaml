@@ -1,0 +1,62 @@
+slug: clayhistoric
+title: Clayhistoric
+tagline: Fight rival clay cavemen and haul resources back to your cave first.
+description: >-
+  Clayhistoric is a prehistoric arena game where clay-sculpted characters
+  compete on the same map. Each side gathers resources scattered around the
+  arena and carries them back to its own cave. The goal is to get them home
+  before the opponents do, and characters can fight to disrupt each other along
+  the way.
+
+
+  The look is the main draw. The creator was missing the handmade charm of The
+  Neverhood, a 1990s clay game, and built the game as a nostalgic nod to that
+  style. The mix of combat, exploration, and a race for resources gives each
+  round a mild strategic edge, since choosing what to grab and when to fight
+  matters.
+
+
+  The game runs in the browser on Three.js and supports mobile devices. It was
+  an entry in Vibe Jam 2026, where it placed 43rd out of 945 entries. The
+  creator built it with Codex.
+play:
+  url: https://clayhistoric.com
+  embeddable: true
+  platforms:
+    - browser
+    - mobile
+creator:
+  name: eylamkeshet
+  handle: eylamkeshet
+  x: eylamkeshet
+made:
+  models: []
+  providers:
+    - openai
+  tools:
+    - codex
+  aiShare: most
+  source: Vibe Jam 2026 submission form
+  evidence: creator
+tech:
+  engine: threejs
+  multiplayer: single
+genres:
+  - action
+  - strategy
+jam:
+  event: vibe-jam-2026
+  rank: 43
+  entries: 945
+media:
+  cover: games/clayhistoric/cover
+  screenshots:
+    - games/clayhistoric/shot-1
+    - games/clayhistoric/shot-2
+dates:
+  added: 2026-09-29
+  updated: 2026-09-29
+status: live
+provenance:
+  foundVia: scout:vibejam-2026
+  scannedAt: 2026-09-29T15:38:44.469Z

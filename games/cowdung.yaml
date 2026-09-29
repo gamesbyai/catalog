@@ -1,0 +1,56 @@
+slug: cowdung
+title: cowdung
+tagline: Fly around as a fly, taste the dung, and dodge the incoming splat.
+description: >-
+  cowdung puts you in the wings of a fly. The goal is to reach the dung and
+  taste it while keeping clear of the splat that can land on you. It is an
+  action game with a simulation flavor, played in a 3D scene rendered in the
+  browser.
+
+
+  The premise is simple and a little gross, and the tone leans on that humor.
+  Avoiding the splat is the main source of tension, since a fly has to get close
+  to the food to score but pays for getting careless. The game supports
+  multiplayer, so other players can share the pasture.
+
+
+  It was an entry in Vibe Jam 2026, where it placed 45th out of 945 entries. The
+  creator built it with Cursor, using Three.js for the 3D graphics.
+play:
+  url: https://cowdung.vercel.app
+  embeddable: true
+  platforms:
+    - browser
+creator:
+  name: el_rei_gabriel
+  handle: el-rei-gabriel
+  x: el_rei_gabriel
+made:
+  models: []
+  tools:
+    - cursor
+  aiShare: most
+  source: Vibe Jam 2026 submission form
+  evidence: creator
+tech:
+  engine: threejs
+  multiplayer: online
+genres:
+  - action
+  - simulation
+jam:
+  event: vibe-jam-2026
+  rank: 45
+  entries: 945
+media:
+  cover: games/cowdung/cover
+  screenshots:
+    - games/cowdung/shot-1
+    - games/cowdung/shot-2
+dates:
+  added: 2026-09-29
+  updated: 2026-09-29
+status: live
+provenance:
+  foundVia: scout:vibejam-2026
+  scannedAt: 2026-09-29T15:38:44.471Z

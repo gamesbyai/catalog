@@ -1,0 +1,58 @@
+slug: leviathan
+title: Leviathan
+tagline: Play a vengeful whale smashing whaling ships and snapping harpoon lines.
+description: >-
+  Leviathan turns the Moby-Dick story around: you play the whale. You rise from
+  the black deep to attack whaling fleets, ramming ships, breaking harpoon
+  lines, and freeing the whales that have been caught. Each run is a race
+  against the hunters, who close in as you work through the fleet.
+
+
+  The setting leans on mythic imagery: a vast, unknowable creature, a doomed
+  hunt, and fragile ships pushing into fog. Casting the player as the hunted
+  animal instead of the hunter gives the action a revenge-story tone. It is a
+  single-player game built in Three.js, and it placed 33rd out of 945 entries in
+  Vibe Jam 2026.
+
+
+  The creator says Codex was used to build it, and describes the imagery of
+  Moby-Dick as the inspiration behind the whole concept of the game.
+play:
+  url: https://leviathan.timothybauman.com
+  embeddable: true
+  platforms:
+    - browser
+creator:
+  name: baumant
+  handle: baumant
+  x: baumant
+made:
+  models: []
+  providers:
+    - openai
+  tools:
+    - codex
+  aiShare: most
+  source: Vibe Jam 2026 submission form
+  evidence: creator
+tech:
+  engine: threejs
+  multiplayer: single
+genres:
+  - action
+jam:
+  event: vibe-jam-2026
+  rank: 33
+  entries: 945
+media:
+  cover: games/leviathan/cover
+  screenshots:
+    - games/leviathan/shot-1
+    - games/leviathan/shot-2
+dates:
+  added: 2026-09-29
+  updated: 2026-09-29
+status: live
+provenance:
+  foundVia: scout:vibejam-2026
+  scannedAt: 2026-09-29T15:38:44.463Z

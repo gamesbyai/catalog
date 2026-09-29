@@ -1,0 +1,57 @@
+slug: vibeos-hacking-sim
+title: VibeOS -Hacking Sim
+tagline: Run a fake operating system and pull off high-stakes hacks in the browser.
+description: >-
+  VibeOS is a browser-based hacking simulator built around the idea of a desktop
+  operating system. The player sits at a virtual machine and takes on hacking
+  jobs where the stakes are high. It is a simulation at heart, with the tension
+  coming from working through each intrusion.
+
+
+  The game supports multiplayer and is playable on mobile devices as well as
+  desktop, so a session can start from nearly any screen. Its Three.js base
+  points to a presentation that goes beyond a plain text terminal.
+
+
+  The creator says the project grew out of the Vibe Jam and the vibe coding
+  community on X. Seeing other people share games and projects made them wonder
+  whether they could do the same. They built it with Cursor and placed 32nd out
+  of 945 entries in Vibe Jam 2026.
+play:
+  url: https://vibehackos.com
+  embeddable: true
+  platforms:
+    - browser
+    - mobile
+creator:
+  name: DeepVoidHub
+  handle: deepvoidhub
+  x: DeepVoidHub
+made:
+  models: []
+  tools:
+    - cursor
+  aiShare: most
+  source: Vibe Jam 2026 submission form
+  evidence: creator
+tech:
+  engine: threejs
+  multiplayer: online
+genres:
+  - simulation
+jam:
+  event: vibe-jam-2026
+  rank: 32
+  entries: 945
+media:
+  cover: games/vibeos-hacking-sim/cover
+  screenshots:
+    - games/vibeos-hacking-sim/shot-1
+    - games/vibeos-hacking-sim/shot-2
+dates:
+  added: 2026-09-29
+  updated: 2026-09-29
+status: live
+provenance:
+  foundVia: scout:vibejam-2026
+  scannedAt: 2026-09-29T15:38:44.462Z

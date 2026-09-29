@@ -1,0 +1,57 @@
+slug: aerobolt
+title: Aerobolt
+tagline: Glide through the sky and strike down rivals in Greek-myth aerial combat.
+description: >-
+  Aerobolt is an airborne fighting game set among the gods of Greek mythology.
+  The player takes to the sky, gliding between mythic surroundings and striking
+  down foes in mid-air. Combat happens while flying, so positioning and movement
+  matter as much as the attacks themselves.
+
+
+  The game blends the feel of Minecraft-style gliding with a mythological
+  setting, giving flight a central role in how fights unfold. It supports
+  multiplayer and runs on mobile as well as desktop, so matches can be picked up
+  on different devices. It placed 35th out of 945 entries in Vibe Jam 2026.
+
+
+  The game runs on Three.js, and it was made with the help of Cursor as an entry
+  in the 2026 Vibe Jam, where AI-assisted coding was part of the process.
+play:
+  url: https://aerobolt.net
+  embeddable: true
+  platforms:
+    - browser
+    - mobile
+creator:
+  name: VoloBuilds
+  handle: volobuilds
+  x: VoloBuilds
+made:
+  models: []
+  tools:
+    - cursor
+  aiShare: most
+  source: Vibe Jam 2026 submission form
+  evidence: creator
+tech:
+  engine: threejs
+  multiplayer: online
+genres:
+  - action
+  - fighting
+jam:
+  event: vibe-jam-2026
+  rank: 35
+  entries: 945
+media:
+  cover: games/aerobolt/cover
+  screenshots:
+    - games/aerobolt/shot-1
+    - games/aerobolt/shot-2
+dates:
+  added: 2026-09-29
+  updated: 2026-09-29
+status: live
+provenance:
+  foundVia: scout:vibejam-2026
+  scannedAt: 2026-09-29T15:38:44.464Z

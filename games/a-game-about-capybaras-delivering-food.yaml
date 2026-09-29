@@ -1,0 +1,64 @@
+slug: a-game-about-capybaras-delivering-food
+title: A Game About Capybaras Delivering Food
+tagline: Drive capybaras around a cozy open world delivering food without
+  toppling the fruit stack.
+description: >-
+  This is a cozy open-world game where you play a capybara working as a food
+  courier. You accept delivery orders, then travel across the map to get each
+  one to its destination as quickly as you can. The fruit you carry stacks up
+  like a tower, so every run is a balance between speed and steadiness.
+
+
+  The setting is a capybara-themed take on the food delivery apps people already
+  know. Buildings, apps, and outdoor areas all follow the theme, giving the
+  world a playful, fictional-but-familiar feel. Its mix of adventure,
+  simulation, and racing puts time pressure on top of the careful handling
+  needed to keep the tower from falling. The game supports multiplayer and runs
+  on mobile.
+
+
+  The creator built it with Claude Code on Three.js as an entry in Vibe Jam
+  2026, where it ranked first out of 945 entries. The idea came from the
+  creator's own past work as a developer on a food delivery app.
+play:
+  url: https://capybara-vibejam26.leocoout.dev
+  embeddable: true
+  platforms:
+    - browser
+    - mobile
+creator:
+  name: leocooout
+  handle: leocooout
+  x: leocooout
+made:
+  models: []
+  providers:
+    - anthropic
+  tools:
+    - claude-code
+  aiShare: most
+  source: Vibe Jam 2026 submission form
+  evidence: creator
+tech:
+  engine: threejs
+  multiplayer: online
+genres:
+  - simulation
+  - racing
+  - adventure
+jam:
+  event: vibe-jam-2026
+  rank: 1
+  entries: 945
+media:
+  cover: games/a-game-about-capybaras-delivering-food/cover
+  screenshots:
+    - games/a-game-about-capybaras-delivering-food/shot-1
+    - games/a-game-about-capybaras-delivering-food/shot-2
+dates:
+  added: 2026-09-29
+  updated: 2026-09-29
+status: live
+provenance:
+  foundVia: scout:vibejam-2026
+  scannedAt: 2026-09-29T15:38:44.428Z
