@@ -36,7 +36,10 @@ test('injection scanner names the rules it matched and tolerates non-strings', (
 
 test('the CLI is CLAUDE_CLI_PATH locally and the npm package through npx otherwise', () => {
   assert.deepEqual(claudeCommand({ CLAUDE_CLI_PATH: '/opt/claude' }), { cmd: '/opt/claude', pre: [] });
-  assert.deepEqual(claudeCommand({}), { cmd: 'npx', pre: ['-y', '@anthropic-ai/claude-code'] });
+  // Pinned to an exact version: the review job holds secrets, so no floating npm tag.
+  const cmd = claudeCommand({});
+  assert.equal(cmd.cmd, 'npx');
+  assert.match(cmd.pre[1], /^@anthropic-ai\/claude-code@\d+\.\d+\.\d+$/);
 });
 
 test('the call disables every tool, MCP server, setting source and saved session', () => {
