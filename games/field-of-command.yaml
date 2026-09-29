@@ -1,0 +1,57 @@
+slug: field-of-command
+title: Field of Command
+tagline: Command British or German forces in a real-time battle across 1940 Kent.
+description: >-
+  Field of Command is a real-time strategy game set in an alternate 1940s
+  England, where a German invasion of Kent actually happens. Players pick a
+  side: organize the desperate British defense or lead the German assault across
+  the fields. Each match is a contest for ground between the two armies.
+
+
+  The setting is the hook. Instead of retelling a known campaign, the game
+  imagines the invasion that never took place and lets either side try to change
+  how it ends. Playing as defender or attacker gives the same battlefield two
+  different goals.
+
+
+  It runs in the browser on a 3D engine, supports multiplayer, and works on
+  mobile devices. It placed tenth out of 945 entries in Vibe Jam 2026. The
+  creator built it with Cursor.
+play:
+  url: https://play.fieldofcommand.com
+  embeddable: false
+  platforms:
+    - browser
+    - mobile
+creator:
+  name: Southers15
+  handle: southers15
+  x: Southers15
+made:
+  models: []
+  tools:
+    - cursor
+  aiShare: most
+  source: Vibe Jam 2026 submission form
+  evidence: creator
+tech:
+  engine: threejs
+  multiplayer: online
+genres:
+  - strategy
+jam:
+  event: vibe-jam-2026
+  rank: 10
+  entries: 945
+media:
+  cover: games/field-of-command/cover
+  screenshots:
+    - games/field-of-command/shot-1
+    - games/field-of-command/shot-2
+dates:
+  added: 2026-09-29
+  updated: 2026-09-29
+status: live
+provenance:
+  foundVia: scout:vibejam-2026
+  scannedAt: 2026-09-29T18:39:11.999Z

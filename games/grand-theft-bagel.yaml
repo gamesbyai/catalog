@@ -1,0 +1,61 @@
+slug: grand-theft-bagel
+title: Grand Theft Bagel
+tagline: Play a mischievous pigeon that steals from tourists, poops on targets
+  and dives for bagels
+description: >-
+  Grand Theft Bagel is a multiplayer action game that puts you in the feathers
+  of a criminal pigeon. You swoop through a tourist-filled area, lifting goods
+  from unsuspecting visitors, dropping droppings on chosen targets, and diving
+  down to grab bagels. It runs in the browser and is playable on mobile.
+
+
+  The tone is the draw here. The premise comes from the creator watching a
+  pigeon do something outrageous and deciding to build a game around that
+  spirit. The actions are short and silly, from the theft to the deliberate mess
+  to the bagel dive, all played from a bird's point of view alongside other
+  players.
+
+
+  The game was made for Vibe Jam 2026, where it placed 86th out of 945 entries.
+  It is built with Three.js, and the creator built it with Claude Code.
+play:
+  url: https://grand-theft-bagel.pages.dev
+  embeddable: true
+  platforms:
+    - browser
+    - mobile
+creator:
+  name: lilruntime
+  handle: lilruntime
+  x: lilruntime
+made:
+  models: []
+  providers:
+    - anthropic
+  tools:
+    - claude-code
+  aiShare: most
+  source: Vibe Jam 2026 submission form
+  evidence: creator
+tech:
+  engine: threejs
+  multiplayer: online
+genres:
+  - action
+  - arcade
+jam:
+  event: vibe-jam-2026
+  rank: 86
+  entries: 945
+media:
+  cover: games/grand-theft-bagel/cover
+  screenshots:
+    - games/grand-theft-bagel/shot-1
+    - games/grand-theft-bagel/shot-2
+dates:
+  added: 2026-09-29
+  updated: 2026-09-29
+status: live
+provenance:
+  foundVia: scout:vibejam-2026
+  scannedAt: 2026-09-29T18:39:12.020Z

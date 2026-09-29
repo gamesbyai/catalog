@@ -1,0 +1,56 @@
+slug: cube-rush
+title: Cube Rush
+tagline: Collect cubes matching your color in a multiplayer race to top each round.
+description: >-
+  Cube Rush is a multiplayer action game built in Three.js. Each player controls
+  a character with an assigned color, and the arena is scattered with cubes in
+  several colors. The goal is to gather the cubes that match your own color
+  within one quarter of the match.
+
+
+  The scoring is direct: the player who collects the most matching cubes in a
+  quarter wins it. Because everyone competes over the same field, choosing which
+  cubes to chase and which to leave for others matters as much as raw speed. The
+  quarter structure splits a match into short rounds.
+
+
+  The game was entered in Vibe Jam 2026, where it placed 171st out of 945
+  entries. It is tagged as a kids-friendly action game and is aimed at desktop
+  play rather than mobile.
+play:
+  url: https://vibejam.switchflow.cc
+  embeddable: true
+  platforms:
+    - browser
+creator:
+  name: kmiterror
+  handle: kmiterror
+  x: kmiterror
+made:
+  models: []
+  tools: []
+  aiShare: most
+  source: Vibe Jam 2026 submission form
+  evidence: inferred
+tech:
+  engine: threejs
+  multiplayer: online
+genres:
+  - action
+  - arcade
+jam:
+  event: vibe-jam-2026
+  rank: 171
+  entries: 945
+media:
+  cover: games/cube-rush/cover
+  screenshots:
+    - games/cube-rush/shot-1
+    - games/cube-rush/shot-2
+dates:
+  added: 2026-09-29
+  updated: 2026-09-29
+status: live
+provenance:
+  foundVia: scout:vibejam-2026
+  scannedAt: 2026-09-29T18:39:12.039Z

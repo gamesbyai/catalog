@@ -1,0 +1,57 @@
+slug: hinom-tower
+title: Hinom Tower
+tagline: Team up to survive arena waves, stack upgrades, and mow down hordes.
+description: >-
+  Hinom Tower is a cooperative arena roguelike shooter. Players fight through
+  successive waves of enemies inside a closed arena, picking up upgrades along
+  the way. Each run builds on the last choice, so the character grows steadily
+  stronger as the waves get bigger.
+
+
+  The focus is on snowballing power. Upgrades stack on top of one another, and
+  the screen fills with enemies that a well-built character can clear in bulk.
+  Playing with others in co-op adds a shared sense of chaos, since several
+  players can combine their builds against the same crowd.
+
+
+  It was an entry in Vibe Jam 2026, where it ranked 165 out of 945 entries. The
+  creator built it with Cursor and lists Unity as the engine.
+play:
+  url: https://hinomtower.xyz
+  embeddable: true
+  platforms:
+    - browser
+creator:
+  name: kiddowdev
+  handle: kiddowdev
+  x: kiddowdev
+made:
+  models: []
+  tools:
+    - cursor
+  aiShare: most
+  source: Vibe Jam 2026 submission form
+  evidence: creator
+tech:
+  engine: unity
+  multiplayer: online
+genres:
+  - action
+  - shooter
+  - roguelike
+jam:
+  event: vibe-jam-2026
+  rank: 165
+  entries: 945
+media:
+  cover: games/hinom-tower/cover
+  screenshots:
+    - games/hinom-tower/shot-1
+    - games/hinom-tower/shot-2
+dates:
+  added: 2026-09-29
+  updated: 2026-09-29
+status: live
+provenance:
+  foundVia: scout:vibejam-2026
+  scannedAt: 2026-09-29T18:39:12.037Z

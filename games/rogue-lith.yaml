@@ -1,0 +1,58 @@
+slug: rogue-lith
+title: Rogue Lith
+tagline: Sneak downward through hostile levels, stealing and shooting your way deeper.
+description: >-
+  Rogue Lith is a browser game that mixes action, shooting, and stealth in a
+  roguelike descent. You play a thief heading deeper level by level, choosing
+  between slipping past threats unseen and fighting your way through when a plan
+  falls apart.
+
+
+  The pairing of stealth with roguelike structure is the hook: each descent asks
+  whether to stay quiet or open fire, and every choice carries into the next
+  level down. It runs in 3D, supports multiplayer, and works on mobile as well
+  as desktop. It placed 34th out of 945 entries in Vibe Jam 2026.
+
+
+  The creator built it with Cursor, using Three.js for the 3D rendering, which
+  lets the whole game run directly in a web browser without any installation.
+play:
+  url: https://roguelith.com
+  embeddable: true
+  platforms:
+    - browser
+    - mobile
+creator:
+  name: ickack1
+  handle: ickack1
+  x: ickack1
+made:
+  models: []
+  tools:
+    - cursor
+  aiShare: most
+  source: Vibe Jam 2026 submission form
+  evidence: creator
+tech:
+  engine: threejs
+  multiplayer: online
+genres:
+  - action
+  - shooter
+  - stealth
+jam:
+  event: vibe-jam-2026
+  rank: 34
+  entries: 945
+media:
+  cover: games/rogue-lith/cover
+  screenshots:
+    - games/rogue-lith/shot-1
+    - games/rogue-lith/shot-2
+dates:
+  added: 2026-09-29
+  updated: 2026-09-29
+status: live
+provenance:
+  foundVia: scout:vibejam-2026
+  scannedAt: 2026-09-29T18:39:12.009Z

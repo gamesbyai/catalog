@@ -1,0 +1,60 @@
+slug: tritanium
+title: Tritanium
+tagline: Survive in deep space while exploring and managing resources in 3D.
+description: >-
+  Tritanium is a space survival game that blends adventure and simulation. The
+  player ventures through a 3D space setting, working to stay alive while
+  dealing with the demands of an environment that offers little margin for
+  error.
+
+
+  The game was entered in Vibe Jam 2026, where it placed 67th out of 945
+  entries. It runs in the browser on Three.js and is set up to work on mobile
+  devices as well as desktops. It is a single-player experience with no
+  multiplayer component.
+
+
+  According to the listed information, the creator built it with Codex from
+  OpenAI. The creator's note says they have always liked this type of game,
+  which suggests the project grew from a personal interest in space survival.
+play:
+  url: https://project-ocuux.vercel.app
+  embeddable: true
+  platforms:
+    - browser
+    - mobile
+creator:
+  name: xirosstudio
+  handle: xirosstudio
+  x: xirosstudio
+made:
+  models: []
+  providers:
+    - openai
+  tools:
+    - codex
+  aiShare: most
+  source: Vibe Jam 2026 submission form
+  evidence: creator
+tech:
+  engine: threejs
+  multiplayer: single
+genres:
+  - survival
+  - simulation
+jam:
+  event: vibe-jam-2026
+  rank: 67
+  entries: 945
+media:
+  cover: games/tritanium/cover
+  screenshots:
+    - games/tritanium/shot-1
+    - games/tritanium/shot-2
+dates:
+  added: 2026-09-29
+  updated: 2026-09-29
+status: live
+provenance:
+  foundVia: scout:vibejam-2026
+  scannedAt: 2026-09-29T18:39:12.014Z

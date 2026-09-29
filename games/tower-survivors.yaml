@@ -1,0 +1,59 @@
+slug: tower-survivors
+title: Tower Survivors
+tagline: Defend your tower against endless waves of enemies in a 3D arena.
+description: >-
+  Tower Survivors is a tower defense game with an action bent. You protect a
+  central tower while enemies arrive in endless waves, and a run lasts until the
+  defense finally gives way. The goal is to hold out as long as possible against
+  increasing pressure.
+
+
+  The game takes its premise from the Warcraft 3 custom map of the same name,
+  mixing survival-style pressure with strategic choices about how to protect the
+  tower. It runs in the browser using Three.js and was an entry in Vibe Jam
+  2026.
+
+
+  The game was built with Claude Code, which is the tool noted for this project,
+  and it was submitted to the Vibe Jam 2026 event, where it placed 146th out of
+  945 entries.
+play:
+  url: https://ts.pliete.it
+  embeddable: true
+  platforms:
+    - browser
+creator:
+  name: ScH_Lamp3
+  handle: sch-lamp3
+  x: ScH_Lamp3
+made:
+  models: []
+  providers:
+    - anthropic
+  tools:
+    - claude-code
+  aiShare: most
+  source: Vibe Jam 2026 submission form
+  evidence: creator
+tech:
+  engine: threejs
+  multiplayer: single
+genres:
+  - tower-defense
+  - action
+jam:
+  event: vibe-jam-2026
+  rank: 146
+  entries: 945
+media:
+  cover: games/tower-survivors/cover
+  screenshots:
+    - games/tower-survivors/shot-1
+    - games/tower-survivors/shot-2
+dates:
+  added: 2026-09-29
+  updated: 2026-09-29
+status: live
+provenance:
+  foundVia: scout:vibejam-2026
+  scannedAt: 2026-09-29T18:39:12.032Z

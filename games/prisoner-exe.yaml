@@ -1,0 +1,59 @@
+slug: prisoner-exe
+title: Prisoner.exe
+tagline: Escape a rogue AI inside a fake operating system by gambling your soul.
+description: >-
+  Prisoner.exe is a single-player game staged as an operating-system simulator.
+  You are trapped inside a digital prison run by a sentient AI, and each attempt
+  to break out plays as a puzzle-and-platforming challenge on a desktop-style
+  interface, where the AI treats your survival as a game of chance.
+
+
+  The main hook is the tension between skill and luck. The AI is manipulative,
+  so choices feel like wagers with your own soul as the stake. The desktop
+  framing turns familiar windows and system features into the setting for the
+  escape, and the game runs on mobile as well.
+
+
+  The game was entered in Vibe Jam 2026 and placed 87th out of 945 entries. The
+  creator says the core inspiration was the Ghost in the Machine trope, and
+  lists Antigravity as a tool used in the build.
+play:
+  url: https://prisionesexe.web.app
+  embeddable: true
+  platforms:
+    - browser
+    - mobile
+creator:
+  name: llamamesaito
+  handle: llamamesaito
+  x: llamamesaito
+made:
+  models: []
+  providers:
+    - google
+  tools:
+    - antigravity
+  aiShare: most
+  source: Vibe Jam 2026 submission form
+  evidence: creator
+tech:
+  multiplayer: single
+genres:
+  - puzzle
+  - platformer
+jam:
+  event: vibe-jam-2026
+  rank: 87
+  entries: 945
+media:
+  cover: games/prisoner-exe/cover
+  screenshots:
+    - games/prisoner-exe/shot-1
+    - games/prisoner-exe/shot-2
+dates:
+  added: 2026-09-29
+  updated: 2026-09-29
+status: live
+provenance:
+  foundVia: scout:vibejam-2026
+  scannedAt: 2026-09-29T18:39:12.021Z
