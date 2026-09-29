@@ -1,5 +1,7 @@
 # Adding a game
 
+The easiest way: [submit it on gamesbyai.win](https://gamesbyai.win/submit/) or use the [submission form on GitHub](https://github.com/gamesbyai/catalog/issues/new?template=submit-game.yml). A bot turns it into a pull request for review, with screenshots. Open a pull request yourself only if you want to write the entry by hand, as described below.
+
 One game per pull request. Create `games/<slug>.yaml`, where `<slug>` is the game's name in lowercase with hyphens (`neon-drift`). The slug is permanent.
 
 ## Example entry
