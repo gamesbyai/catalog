@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 // Turns a "Submit a game" issue (GitHub's rendered issue form) into a catalog entry with status: live (merging the PR is
-// the approval). Its description stays empty until the review card commits the tool-less draft, so the validate check
+// the approval). Its description stays empty until the review adds one, so the validate check
 // fails until then: that is the intended gate. Everything in the issue is untrusted text: it is parsed as data,
 // reduced to plain text, mapped onto taxonomy slugs, and never executed.
 // Usage (CI): ISSUE_BODY=… ISSUE_NUMBER=… node scripts/issue-to-entry.mjs → prints JSON { slug, yaml, notes } or { error }.
