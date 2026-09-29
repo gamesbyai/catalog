@@ -1,0 +1,59 @@
+slug: anikombat
+title: AniKombat
+tagline: Fight in 3D duels against the CPU or other players, casually or on a
+  ranked ladder.
+description: >-
+  AniKombat is a 3D fighting game in the vein of Mortal Kombat-style brawlers.
+  Players can jump in right away as a guest and fight CPU opponents, or take on
+  other people in online casual matches. Each bout is a one-on-one duel built
+  around combos, special moves, and character matchups.
+
+
+  The game offers a ranked ladder for players who want competitive tension,
+  alongside casual online matches for lower-stakes play. Guest access means
+  there is no sign-up step before the first fight. It also runs on mobile
+  devices, and multiplayer is part of the design.
+
+
+  It was entered in Vibe Jam 2026, is built with Three.js, and the creator says
+  they used Cursor. The creator says the project comes from a long-standing love
+  of fighting games and their combos, matchups, and competitive feel.
+play:
+  url: https://anikombat.com
+  embeddable: true
+  platforms:
+    - browser
+    - mobile
+creator:
+  name: adrscott
+  handle: adrscott
+  x: adrscott
+made:
+  models: []
+  tools:
+    - cursor
+  aiShare: most
+  source: Vibe Jam 2026 submission form
+  evidence: creator
+tech:
+  engine: threejs
+  multiplayer: online
+genres:
+  - fighting
+  - action
+jam:
+  event: vibe-jam-2026
+  rank: 226
+  entries: 945
+media:
+  cover: games/anikombat/cover
+  screenshots:
+    - games/anikombat/shot-1
+    - games/anikombat/shot-2
+dates:
+  added: 2026-09-29
+  updated: 2026-09-29
+status: live
+provenance:
+  foundVia: scout:vibejam-2026
+  scannedAt: 2026-09-29T16:15:14.283Z

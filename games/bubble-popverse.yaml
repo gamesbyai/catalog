@@ -1,0 +1,58 @@
+slug: bubble-popverse
+title: Bubble Popverse
+tagline: Pop bubble wrap, grow an empire, and prestige for rarer rainbow bubbles.
+description: >-
+  Bubble Popverse is an idle game built around bubble wrap. You pop bubbles to
+  earn currency, spend it on upgrades that grow your popping operation into an
+  empire, and collect rarer rainbow bubbles along the way. When progress slows,
+  you prestige to start over with a boost.
+
+
+  The focus is on feel. Each pop has its own satisfying sound, and the game
+  leans on ASMR-style feedback and a relaxed, absurd premise. The idea came from
+  silly simulators and the appeal of bubble wrap, and it plays in a browser on
+  both desktop and mobile.
+
+
+  A father made it with his two children, Alice and Michael, who played every
+  version and said which pops felt best. The creator built it with Cursor, and
+  the 3D rendering uses Three.js. It was entered in Vibe Jam 2026.
+play:
+  url: https://bubblepopverse.life
+  embeddable: true
+  platforms:
+    - browser
+    - mobile
+creator:
+  name: thekibermaks
+  handle: thekibermaks
+  x: thekibermaks
+made:
+  models: []
+  tools:
+    - cursor
+  aiShare: most
+  source: Vibe Jam 2026 submission form
+  evidence: creator
+tech:
+  engine: threejs
+  multiplayer: single
+genres:
+  - idle
+  - simulation
+jam:
+  event: vibe-jam-2026
+  rank: 237
+  entries: 945
+media:
+  cover: games/bubble-popverse/cover
+  screenshots:
+    - games/bubble-popverse/shot-1
+    - games/bubble-popverse/shot-2
+dates:
+  added: 2026-09-29
+  updated: 2026-09-29
+status: live
+provenance:
+  foundVia: scout:vibejam-2026
+  scannedAt: 2026-09-29T16:15:14.291Z

@@ -1,0 +1,56 @@
+slug: deep-sea-duel
+title: Deep Sea Duel
+tagline: Pilot a shrimp or axolotl in real-time underwater duels against another player.
+description: >-
+  Deep Sea Duel is an online player-versus-player action game set underwater.
+  You choose to pilot either a shrimp or an axolotl and face another player in a
+  real-time match, aiming to destroy your opponent before they destroy you. A
+  quickmatch option pairs you with someone new.
+
+
+  There is also a solo mode where you play as the ocean's savior and clear out
+  floating trash on your own. The game is built around two-player rivalry, and
+  it works on mobile as well, so friends and siblings can play against each
+  other from whatever device they have.
+
+
+  The creator says it grew out of childhood memories of searching for good
+  two-player games to play against a sister. It was made for the Vibe Jam 2026,
+  and the creator built it with Lovable.
+play:
+  url: https://deepseaduel.life
+  embeddable: true
+  platforms:
+    - browser
+    - mobile
+creator:
+  name: camryn_alvares
+  handle: camryn-alvares
+made:
+  models: []
+  tools:
+    - lovable
+  aiShare: most
+  source: Vibe Jam 2026 submission form
+  evidence: creator
+tech:
+  multiplayer: online
+genres:
+  - action
+  - shooter
+jam:
+  event: vibe-jam-2026
+  rank: 184
+  entries: 945
+media:
+  cover: games/deep-sea-duel/cover
+  screenshots:
+    - games/deep-sea-duel/shot-1
+    - games/deep-sea-duel/shot-2
+dates:
+  added: 2026-09-29
+  updated: 2026-09-29
+status: live
+provenance:
+  foundVia: scout:vibejam-2026
+  scannedAt: 2026-09-29T16:15:14.253Z

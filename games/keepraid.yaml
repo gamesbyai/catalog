@@ -1,0 +1,58 @@
+slug: keepraid
+title: KeepRaid
+tagline: Build a fortress, defend your flag, and break into the enemy keep to
+  capture theirs.
+description: >-
+  KeepRaid is a multiplayer capture-the-flag game where each side constructs its
+  own keep and then attacks the opposing one. A match moves between building
+  defenses, holding them against intruders, and tearing through enemy walls to
+  reach the flag and carry it home.
+
+
+  The core idea is that the map is shaped by the players. Your walls and layout
+  are your defense, and the other team's structures are the obstacle you have to
+  break. The tagline sums up the loop: build it, break it, take it. The creator
+  says it was inspired by King Arthur's Gold, a game they loved and miss.
+
+
+  It was entered in Vibe Jam 2026, where it placed 197th out of 945 entries. The
+  creator built it with Claude Code, Anthropic's coding assistant.
+play:
+  url: https://keepraid.com
+  embeddable: false
+  platforms:
+    - browser
+creator:
+  name: corysimmons123
+  handle: corysimmons123
+  x: corysimmons123
+made:
+  models: []
+  providers:
+    - anthropic
+  tools:
+    - claude-code
+  aiShare: most
+  source: Vibe Jam 2026 submission form
+  evidence: creator
+tech:
+  multiplayer: online
+genres:
+  - action
+  - strategy
+jam:
+  event: vibe-jam-2026
+  rank: 197
+  entries: 945
+media:
+  cover: games/keepraid/cover
+  screenshots:
+    - games/keepraid/shot-1
+    - games/keepraid/shot-2
+dates:
+  added: 2026-09-29
+  updated: 2026-09-29
+status: live
+provenance:
+  foundVia: scout:vibejam-2026
+  scannedAt: 2026-09-29T16:15:14.264Z

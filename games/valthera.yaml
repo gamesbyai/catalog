@@ -1,0 +1,59 @@
+slug: valthera
+title: Valthera
+tagline: Explore a fantasy world, fight bosses, gather resources and craft gear
+  with other players.
+description: >-
+  Valthera is a free 2D multiplayer RPG set in a fantasy world. Players explore
+  the map, fight bosses, gather resources, and craft items, building up their
+  characters over time while sharing the world with other adventurers online.
+
+
+  The game combines familiar MMO loops in a 2D format: gathering feeds crafting,
+  crafting supports stronger equipment, and bosses give a reason to use it.
+  Playing alongside other people is part of the design rather than an extra. It
+  also supports mobile devices, so it can be played away from a desktop.
+
+
+  It was entered in Vibe Jam 2026, where it placed 231st out of 945 entries. The
+  creator says it comes from a long-held passion for AI and a dream of making a
+  game, and lists Codex as the tool used to build it.
+play:
+  url: https://valthera.fun
+  embeddable: false
+  platforms:
+    - browser
+    - mobile
+creator:
+  name: MunliteARG
+  handle: munlitearg
+  x: MunliteARG
+made:
+  models: []
+  providers:
+    - openai
+  tools:
+    - codex
+  aiShare: most
+  source: Vibe Jam 2026 submission form
+  evidence: creator
+tech:
+  multiplayer: online
+genres:
+  - rpg
+  - adventure
+jam:
+  event: vibe-jam-2026
+  rank: 231
+  entries: 945
+media:
+  cover: games/valthera/cover
+  screenshots:
+    - games/valthera/shot-1
+    - games/valthera/shot-2
+dates:
+  added: 2026-09-29
+  updated: 2026-09-29
+status: live
+provenance:
+  foundVia: scout:vibejam-2026
+  scannedAt: 2026-09-29T16:15:14.287Z

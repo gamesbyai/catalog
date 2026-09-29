@@ -1,0 +1,58 @@
+slug: idle-craft-the-curse
+title: "IDLE-CRAFT: The Curse"
+tagline: Gather, forge card decks, and fight through permadeath runs solo or
+  with friends.
+description: >-
+  IDLE-CRAFT: The Curse is a browser idle survival RPG. Players gather
+  resources, craft gear, and forge decks of cards, then use those decks in
+  fights. Each run continues until permadeath ends it, after which the player
+  starts the climb again with a fresh attempt.
+
+
+  The game mixes several genres: idle progression, deck-building, crafting, and
+  survival. It can be played alone or with friends, with co-op modes and PvP
+  duels including 1v1 and 3v3 formats. The interface is styled around forged
+  iron, giving menus and cards a heavy, metallic look.
+
+
+  The creator built it with Cursor and said they made it because it was
+  something they wanted to play. It was entered in Vibe Jam 2026, where it
+  placed 230th out of 945 entries.
+play:
+  url: https://idle-craft1.netlify.app
+  embeddable: true
+  platforms:
+    - browser
+creator:
+  name: shields_wi49029
+  handle: shields-wi49029
+  x: shields_wi49029
+made:
+  models: []
+  tools:
+    - cursor
+  aiShare: most
+  source: Vibe Jam 2026 submission form
+  evidence: creator
+tech:
+  multiplayer: online
+genres:
+  - idle
+  - card
+  - rpg
+jam:
+  event: vibe-jam-2026
+  rank: 230
+  entries: 945
+media:
+  cover: games/idle-craft-the-curse/cover
+  screenshots:
+    - games/idle-craft-the-curse/shot-1
+    - games/idle-craft-the-curse/shot-2
+dates:
+  added: 2026-09-29
+  updated: 2026-09-29
+status: live
+provenance:
+  foundVia: scout:vibejam-2026
+  scannedAt: 2026-09-29T16:15:14.287Z

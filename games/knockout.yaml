@@ -1,0 +1,58 @@
+slug: knockout
+title: Knockout
+tagline: Pick or create an MMA fighter and battle in the octagon online or solo.
+description: >-
+  Knockout is a browser MMA fighting game. You choose a ready-made fighter or
+  build your own, step into the octagon, and trade strikes with an opponent
+  until one fighter is beaten. Matches can be played solo against the computer
+  or online against another person.
+
+
+  Online bouts run over peer-to-peer multiplayer, so two players can connect
+  directly and fight without a separate server setup. The game is free to play
+  in the browser and aims to be easy to pick up, with fighter creation adding a
+  personal touch before each match.
+
+
+  The creator says the goal was a fun, approachable MMA game and an experiment
+  to see whether it could be made by vibe coding. It was built with Claude Code
+  and entered in Vibe Jam 2026.
+play:
+  url: https://playknockout.app
+  embeddable: true
+  platforms:
+    - browser
+creator:
+  name: JanKratochvil1
+  handle: jankratochvil1
+  x: JanKratochvil1
+made:
+  models: []
+  providers:
+    - anthropic
+  tools:
+    - claude-code
+  aiShare: most
+  source: Vibe Jam 2026 submission form
+  evidence: creator
+tech:
+  multiplayer: online
+genres:
+  - fighting
+  - action
+jam:
+  event: vibe-jam-2026
+  rank: 228
+  entries: 945
+media:
+  cover: games/knockout/cover
+  screenshots:
+    - games/knockout/shot-1
+    - games/knockout/shot-2
+dates:
+  added: 2026-09-29
+  updated: 2026-09-29
+status: live
+provenance:
+  foundVia: scout:vibejam-2026
+  scannedAt: 2026-09-29T16:15:14.285Z
