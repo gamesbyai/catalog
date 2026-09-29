@@ -14,3 +14,19 @@ terms:
   - { slug: webgl, name: WebGL, url: "https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API" }
   - { slug: godot, name: Godot, url: "https://godotengine.org/" }
   - { slug: unity, name: Unity, url: "https://unity.com/" }
+  - { slug: unreal, name: Unreal Engine, maker: Epic Games, url: "https://www.unrealengine.com/" }
+  - { slug: gamemaker, name: GameMaker, url: "https://gamemaker.io/" }
+  - { slug: defold, name: Defold, url: "https://defold.com/" }
+  - { slug: bevy, name: Bevy, url: "https://bevy.org/" }
+  - { slug: love2d, name: LÖVE, url: "https://love2d.org/" }
+  - { slug: monogame, name: MonoGame, url: "https://monogame.net/" }
+  - { slug: cocos, name: Cocos Creator, url: "https://www.cocos.com/en/creator" }
+  - { slug: construct, name: Construct 3, url: "https://www.construct.net/" }
+  - { slug: gdevelop, name: GDevelop, url: "https://gdevelop.io/" }
+  - { slug: roblox, name: Roblox Studio, maker: Roblox, url: "https://create.roblox.com/" }
+  - { slug: pygame, name: Pygame, url: "https://www.pygame.org/docs/" }
+  - { slug: raylib, name: raylib, url: "https://www.raylib.com/" }
+  - { slug: pico-8, name: PICO-8, maker: Lexaloffle, url: "https://www.lexaloffle.com/pico-8.php" }
+  - { slug: tic-80, name: TIC-80, url: "https://tic80.com/" }
+  - { slug: rpg-maker, name: RPG Maker, url: "https://www.rpgmakerweb.com/" }
+  - { slug: webgpu, name: WebGPU, url: "https://developer.mozilla.org/en-US/docs/Web/API/WebGPU_API" }

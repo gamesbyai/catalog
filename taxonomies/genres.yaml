@@ -23,3 +23,11 @@ terms:
   - { slug: tower-defense, name: Tower defense }
   - { slug: trivia, name: Trivia }
   - { slug: word, name: Word }
+  - { slug: board, name: Board }
+  - { slug: io, name: .io }
+  - { slug: management, name: Management and tycoon }
+  - { slug: metroidvania, name: Metroidvania }
+  - { slug: open-world, name: Open world }
+  - { slug: party, name: Party }
+  - { slug: stealth, name: Stealth }
+  - { slug: visual-novel, name: Visual novel }
