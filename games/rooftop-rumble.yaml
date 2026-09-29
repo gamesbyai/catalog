@@ -1,0 +1,59 @@
+slug: rooftop-rumble
+title: Rooftop Rumble
+tagline: Blast rival neighbors off flooded rooftops into shark-filled water.
+description: >-
+  Rooftop Rumble is a multiplayer battle royale set on the rooftops of a flooded
+  suburb. A leaf-blower arms race has gone too far, and the streets are now
+  underwater. Players fight for position on the roofs, using blowers to push
+  rivals off the edge until one is left as King of the Street.
+
+
+  The comedy is the main draw. Property disputes are settled by shoving
+  neighbors into the water, where escaped pet goldfish have mutated into Gutter
+  Sharks after the drains clogged with leaf mulch. The tone stays silly from
+  start to finish, and the goal is to be quickly understood and easy to jump
+  into.
+
+
+  The game runs in the browser on Three.js and supports mobile play. It was
+  entered in Vibe Jam 2026, where it placed 164th out of 945 entries. The
+  creator says they used Cursor to build it.
+play:
+  url: https://rooftop-rumble.fun
+  embeddable: false
+  platforms:
+    - browser
+    - mobile
+creator:
+  name: JordanHeightsX
+  handle: jordanheightsx
+  x: JordanHeightsX
+made:
+  models: []
+  tools:
+    - cursor
+  aiShare: most
+  source: Vibe Jam 2026 submission form
+  evidence: creator
+tech:
+  engine: threejs
+  multiplayer: online
+genres:
+  - shooter
+  - action
+jam:
+  event: vibe-jam-2026
+  rank: 164
+  entries: 945
+media:
+  cover: games/rooftop-rumble/cover
+  screenshots:
+    - games/rooftop-rumble/shot-1
+    - games/rooftop-rumble/shot-2
+dates:
+  added: 2026-09-29
+  updated: 2026-09-29
+status: live
+provenance:
+  foundVia: scout:vibejam-2026
+  scannedAt: 2026-09-29T16:15:11.336Z

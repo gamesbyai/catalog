@@ -1,0 +1,58 @@
+slug: sky-critters
+title: Sky Critters
+tagline: Pilot a drone, shoot critters, and spend coins on upgrades to guard your base.
+description: >-
+  Sky Critters is a tower defense game played from the cockpit of a drone. You
+  fly over the map, shoot the critters that approach, and collect coins for each
+  one you take down. The goal is to keep your base standing while the attackers
+  keep coming.
+
+
+  Instead of placing static turrets, the player is the defense, moving the drone
+  into position and firing directly at targets. Coins earned in combat go toward
+  upgrading your gear, so each round feeds into a stronger setup for the next.
+  The game supports multiplayer and runs on mobile devices as well as desktop.
+
+
+  It was built with Three.js and entered in Vibe Jam 2026, where it ranked 140th
+  among 945 entries. Its author, Jody Bernal, is credited as the creator, and
+  the project used Cursor during development.
+play:
+  url: https://skycritters.io
+  embeddable: true
+  platforms:
+    - browser
+    - mobile
+creator:
+  name: jasperdeboer
+  handle: jasperdeboer
+  x: jasperdeboer
+made:
+  models: []
+  tools:
+    - cursor
+  aiShare: most
+  source: Vibe Jam 2026 submission form
+  evidence: creator
+tech:
+  engine: threejs
+  multiplayer: online
+genres:
+  - tower-defense
+  - shooter
+jam:
+  event: vibe-jam-2026
+  rank: 140
+  entries: 945
+media:
+  cover: games/sky-critters/cover
+  screenshots:
+    - games/sky-critters/shot-1
+    - games/sky-critters/shot-2
+dates:
+  added: 2026-09-29
+  updated: 2026-09-29
+status: live
+provenance:
+  foundVia: scout:vibejam-2026
+  scannedAt: 2026-09-29T16:15:11.319Z

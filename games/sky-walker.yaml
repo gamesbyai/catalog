@@ -1,0 +1,62 @@
+slug: sky-walker
+title: SKY WALKER
+tagline: Keep your balance on a tightrope above a neon city while storms and
+  wind push you off.
+description: >-
+  SKY WALKER is a high-altitude balancing game. You play a wire walker crossing
+  a tightrope strung above a neon-lit cyberpunk city, keeping your balance pole
+  centered while working your way forward. Each step is a small fight against
+  the pull of gravity, and one bad lean can end the run.
+
+
+  The core mechanic is deliberately simple, but the surroundings keep raising
+  the pressure. Storms grow more violent as you go, and unpredictable gusts
+  shove you off center. The procedurally generated cityscape glows below to sell
+  the vertigo. The creator drew on the tension of real high-wire walkers and
+  aimed for a demanding, frustrating challenge.
+
+
+  The game runs in the browser on Three.js and supports mobile play. It was a
+  Vibe Jam 2026 entry, and the creator states that it was made with the Gemini
+  app.
+play:
+  url: https://sky-walker.xyz
+  embeddable: true
+  platforms:
+    - browser
+    - mobile
+creator:
+  name: iboualissouf
+  handle: iboualissouf
+  x: iboualissouf
+made:
+  models: []
+  providers:
+    - google
+  tools:
+    - gemini-app
+  aiShare: most
+  source: Vibe Jam 2026 submission form
+  evidence: creator
+tech:
+  engine: threejs
+  multiplayer: single
+genres:
+  - action
+  - simulation
+jam:
+  event: vibe-jam-2026
+  rank: 126
+  entries: 945
+media:
+  cover: games/sky-walker/cover
+  screenshots:
+    - games/sky-walker/shot-1
+    - games/sky-walker/shot-2
+dates:
+  added: 2026-09-29
+  updated: 2026-09-29
+status: live
+provenance:
+  foundVia: scout:vibejam-2026
+  scannedAt: 2026-09-29T16:15:11.305Z

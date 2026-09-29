@@ -1,0 +1,61 @@
+slug: maze-wars
+title: Maze Wars
+tagline: Fly through a huge maze, shoot down five towers, and dodge hostile mobs.
+description: >-
+  Maze Wars is a flight combat game set inside a large-scale maze. The goal is
+  to destroy five towers scattered through the map while evading mobs that
+  attack you along the way. Finding a route through the corridors is part of the
+  challenge, so each run mixes shooting with navigation.
+
+
+  The game pairs the quick, stylish feel of air combat with a tighter,
+  puzzle-like map, so every flight has a destination. Instead of open skies, the
+  maze's walls shape where you can move, turn, and escape pursuers. Multiplayer
+  is supported. It is built for desktop rather than mobile.
+
+
+  The game was made for Vibe Jam 2026, where it placed 175th out of 945 entries.
+  The creator says they have always liked mazes and wanted to add action to a
+  big one. According to the creator, it was built with Codex and runs on
+  Three.js.
+play:
+  url: https://mazewars.fun
+  embeddable: true
+  platforms:
+    - browser
+creator:
+  name: fortuneofweb3
+  handle: fortuneofweb3
+  x: fortuneofweb3
+made:
+  models: []
+  providers:
+    - openai
+  tools:
+    - codex
+  aiShare: most
+  source: Vibe Jam 2026 submission form
+  evidence: creator
+tech:
+  engine: threejs
+  multiplayer: online
+genres:
+  - action
+  - shooter
+  - puzzle
+jam:
+  event: vibe-jam-2026
+  rank: 175
+  entries: 945
+media:
+  cover: games/maze-wars/cover
+  screenshots:
+    - games/maze-wars/shot-1
+    - games/maze-wars/shot-2
+dates:
+  added: 2026-09-29
+  updated: 2026-09-29
+status: live
+provenance:
+  foundVia: scout:vibejam-2026
+  scannedAt: 2026-09-29T16:15:11.343Z

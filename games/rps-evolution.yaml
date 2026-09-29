@@ -1,0 +1,61 @@
+slug: rps-evolution
+title: RPS Evolution
+tagline: Battle other players as a rock, paper, or scissors and evolve to top
+  the leaderboard.
+description: >-
+  RPS Evolution takes the classic hand game and turns it into a multiplayer
+  arena. You face other players online, and the rock-paper-scissors matchup
+  decides who comes out ahead. Winning fights lets your character evolve, and
+  the goal is to climb the leaderboard.
+
+
+  The mix of genres is what sets it apart: it draws on platformer movement,
+  strategy in choosing your matchups, and a simulation-style evolution loop. It
+  is built in 3D for the browser and works on mobile as well as desktop, so a
+  match is easy to join from either.
+
+
+  The developer says the project was an experiment in how much a game developer
+  could build using only AI tools. The creator built it with Claude Code, and it
+  was submitted to Vibe Jam 2026.
+play:
+  url: https://rps-evolution.vercel.app
+  embeddable: true
+  platforms:
+    - browser
+    - mobile
+creator:
+  name: McSnagz
+  handle: mcsnagz
+  x: McSnagz
+made:
+  models: []
+  providers:
+    - anthropic
+  tools:
+    - claude-code
+  aiShare: most
+  source: Vibe Jam 2026 submission form
+  evidence: creator
+tech:
+  engine: threejs
+  multiplayer: online
+genres:
+  - strategy
+  - platformer
+jam:
+  event: vibe-jam-2026
+  rank: 177
+  entries: 945
+media:
+  cover: games/rps-evolution/cover
+  screenshots:
+    - games/rps-evolution/shot-1
+    - games/rps-evolution/shot-2
+dates:
+  added: 2026-09-29
+  updated: 2026-09-29
+status: live
+provenance:
+  foundVia: scout:vibejam-2026
+  scannedAt: 2026-09-29T16:15:11.345Z

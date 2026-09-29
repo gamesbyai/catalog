@@ -1,0 +1,58 @@
+slug: chanclazo
+title: Chanclazo
+tagline: Dodge incoming attacks and survive as long as you can in a comic 3D arena.
+description: >-
+  Chanclazo is a dodge-and-survive game built around the chancla, the flip-flop
+  that a scolding relative throws when words run out. A run is about staying
+  alive: you move around, avoid what comes at you, and try to last as long as
+  possible before getting hit.
+
+
+  The premise leans on a familiar piece of family humor, turning a household
+  threat into the core hazard. The tagline says the chanclazo speaks when words
+  fail, and that tone carries through the concept. It runs in the browser in 3D
+  and is set up to work on mobile as well as desktop.
+
+
+  The creator says the idea had been on their mind for a couple of years before
+  AI made it possible to build. The listing names Bolt as the tool used, and the
+  game was submitted to Vibe Jam 2026.
+play:
+  url: https://chanclazo.com
+  embeddable: true
+  platforms:
+    - browser
+    - mobile
+creator:
+  name: ChanclaStrike
+  handle: chanclastrike
+  x: ChanclaStrike
+made:
+  models: []
+  tools:
+    - bolt
+  aiShare: most
+  source: Vibe Jam 2026 submission form
+  evidence: creator
+tech:
+  engine: threejs
+  multiplayer: single
+genres:
+  - arcade
+  - survival
+jam:
+  event: vibe-jam-2026
+  rank: 149
+  entries: 945
+media:
+  cover: games/chanclazo/cover
+  screenshots:
+    - games/chanclazo/shot-1
+    - games/chanclazo/shot-2
+dates:
+  added: 2026-09-29
+  updated: 2026-09-29
+status: live
+provenance:
+  foundVia: scout:vibejam-2026
+  scannedAt: 2026-09-29T16:15:11.326Z

@@ -1,0 +1,60 @@
+slug: strait-outta-hormuz
+title: Strait Outta Hormuz
+tagline: Steer a tanker 167 km through the Strait of Hormuz.
+description: >-
+  Strait Outta Hormuz is an arcade naval action game in which you pilot a tanker
+  along a 167 km route through the Strait of Hormuz. The goal is to get the ship
+  from one end of the waterway to the other, steering through the passage as the
+  trip unfolds.
+
+
+  The game takes a current-events and geopolitics theme and turns it into a
+  short, arcade-style voyage. The setting is a real, well-known shipping lane,
+  and the game frames the journey as a distance to cover rather than a scenario
+  to simulate. It runs in the browser and has a mobile-friendly version.
+
+
+  The game was entered in Vibe Jam 2026, where it placed 134th out of 945
+  entries. It is a single-player game built with Three.js, and the creator used
+  Claude Code to make it.
+play:
+  url: https://straitouttahormuz.us
+  embeddable: true
+  platforms:
+    - browser
+    - mobile
+creator:
+  name: davedushi
+  handle: davedushi
+  x: davedushi
+made:
+  models: []
+  providers:
+    - anthropic
+  tools:
+    - claude-code
+  aiShare: most
+  source: Vibe Jam 2026 submission form
+  evidence: creator
+tech:
+  engine: threejs
+  multiplayer: single
+genres:
+  - action
+  - arcade
+jam:
+  event: vibe-jam-2026
+  rank: 134
+  entries: 945
+media:
+  cover: games/strait-outta-hormuz/cover
+  screenshots:
+    - games/strait-outta-hormuz/shot-1
+    - games/strait-outta-hormuz/shot-2
+dates:
+  added: 2026-09-29
+  updated: 2026-09-29
+status: live
+provenance:
+  foundVia: scout:vibejam-2026
+  scannedAt: 2026-09-29T16:15:11.313Z

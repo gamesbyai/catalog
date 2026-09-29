@@ -1,0 +1,60 @@
+slug: bean-of-the-hill
+title: Bean of the Hill
+tagline: Fight other players in a bean-themed shooter to hold the hill.
+description: >-
+  Bean of the Hill is a multiplayer first-person shooter built around
+  king-of-the-hill rules. Players control bean characters and fight over a
+  central zone, trying to stay in control of it while opponents shoot to push
+  them out. Matches are played against other people online rather than against
+  bots.
+
+
+  The bean theme gives the shooter a silly identity while the objective stays
+  familiar: hold the point, hit your targets, and contest the hill when someone
+  else takes it. It was made for Vibe Jam 2026, where it placed 142nd among 945
+  entries.
+
+
+  The creator built it with Claude Code on Three.js. They describe making a
+  multiplayer FPS during a game jam as a challenge that would have been
+  impossible without AI.
+play:
+  url: https://beanofthehill.io
+  embeddable: true
+  platforms:
+    - browser
+creator:
+  name: colin_k
+  handle: colin-k
+  x: colin_k
+made:
+  models: []
+  providers:
+    - anthropic
+  tools:
+    - claude-code
+  aiShare: most
+  source: Vibe Jam 2026 submission form
+  evidence: creator
+tech:
+  engine: threejs
+  multiplayer: online
+genres:
+  - shooter
+  - action
+jam:
+  event: vibe-jam-2026
+  rank: 142
+  entries: 945
+media:
+  cover: games/bean-of-the-hill/cover
+  screenshots:
+    - games/bean-of-the-hill/shot-1
+    - games/bean-of-the-hill/shot-2
+dates:
+  added: 2026-09-29
+  updated: 2026-09-29
+status: live
+provenance:
+  foundVia: scout:vibejam-2026
+  scannedAt: 2026-09-29T16:15:11.321Z

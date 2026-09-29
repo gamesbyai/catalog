@@ -1,0 +1,61 @@
+slug: shoot-or-die
+title: Shoot or Die
+tagline: Grab a gun, shoot rival players, and be the last one standing.
+description: >-
+  Shoot or Die is a multiplayer shooter played in the browser. Each round,
+  players pick up a gun and try to eliminate everyone else. The last player
+  still standing wins, so every match comes down to staying alive while picking
+  off opponents.
+
+
+  The concept comes from a map the creator originally built in UEFN for
+  Fortnite. It was kept deliberately small in scope to suit a jam project,
+  focusing on quick rounds and a simple win condition. It also runs on phones,
+  and the creator reports it working well on an older Galaxy Note10 Lite.
+
+
+  The creator, an experienced UEFN and Unity developer, had never made a
+  Three.js game before. They built it with Claude Code, spending about a day and
+  a half on the game, server, and bug fixes, then another day and a half on
+  polish and deployment. It was entered in Vibe Jam 2026.
+play:
+  url: https://play.fortlite.org
+  embeddable: true
+  platforms:
+    - browser
+    - mobile
+creator:
+  name: SuperAppGames
+  handle: superappgames
+  x: SuperAppGames
+made:
+  models: []
+  providers:
+    - anthropic
+  tools:
+    - claude-code
+  aiShare: most
+  source: Vibe Jam 2026 submission form
+  evidence: creator
+tech:
+  engine: threejs
+  multiplayer: online
+genres:
+  - action
+  - shooter
+jam:
+  event: vibe-jam-2026
+  rank: 163
+  entries: 945
+media:
+  cover: games/shoot-or-die/cover
+  screenshots:
+    - games/shoot-or-die/shot-1
+    - games/shoot-or-die/shot-2
+dates:
+  added: 2026-09-29
+  updated: 2026-09-29
+status: live
+provenance:
+  foundVia: scout:vibejam-2026
+  scannedAt: 2026-09-29T16:15:11.335Z

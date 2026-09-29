@@ -1,0 +1,61 @@
+slug: simdrive
+title: SimDrive
+tagline: Race friends in a shared car game, steering with your phone as the controller.
+description: >-
+  SimDrive is a multiplayer racing game where each player's phone becomes the
+  controller. Players tilt and move their phones to steer a car, and the device
+  gives back haptic and sound feedback as they drive. The cars use reasonably
+  realistic physics, so races reward smooth handling more than button mashing.
+
+
+  The idea comes from couch and party games such as Jackbox and Gaming Couch,
+  where a group gathers around one screen and plays together. SimDrive applies
+  that format to racing, inspired by the creator's love of Mario Kart and the
+  unused motion controls of the PS3 controller. It suits a group in one room,
+  with the shared screen showing the race.
+
+
+  The creator describes it as a first game and says it was made with Codex,
+  using plenty of tokens along the way. It runs in the browser with Three.js. It
+  can technically run on mobile, but in practice it needs two phones, one to
+  display and one to control.
+play:
+  url: https://simdrive.xyz
+  embeddable: true
+  platforms:
+    - browser
+creator:
+  name: 1000xcat
+  handle: 1000xcat
+  x: 1000xcat
+made:
+  models: []
+  providers:
+    - openai
+  tools:
+    - codex
+  aiShare: most
+  source: Vibe Jam 2026 submission form
+  evidence: creator
+tech:
+  engine: threejs
+  multiplayer: online
+genres:
+  - racing
+  - simulation
+jam:
+  event: vibe-jam-2026
+  rank: 123
+  entries: 945
+media:
+  cover: games/simdrive/cover
+  screenshots:
+    - games/simdrive/shot-1
+    - games/simdrive/shot-2
+dates:
+  added: 2026-09-29
+  updated: 2026-09-29
+status: live
+provenance:
+  foundVia: scout:vibejam-2026
+  scannedAt: 2026-09-29T16:15:11.302Z

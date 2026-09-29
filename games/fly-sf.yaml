@@ -1,0 +1,60 @@
+slug: fly-sf
+title: FLY SF
+tagline: Fly, drive, run and parachute around a 3D scan of San Francisco with friends
+description: >-
+  FLY SF is a multiplayer sandbox set in a photorealistic 3D scan of San
+  Francisco. Players move through the city in several ways: flying, parachuting,
+  driving, running, and using a jetpack. Sessions are open-ended, with friends
+  sharing the same space and choosing how to explore it.
+
+
+  The main draw is the scenery. The city is rendered from high-detail scans, so
+  flights over familiar streets and landmarks feel grounded in a real place.
+  Switching between vehicles and on-foot movement lets a session shift from
+  sightseeing to stunts without leaving the map.
+
+
+  It runs in the browser on Three.js and works on mobile as well as desktop. It
+  entered Vibe Jam 2026 and places itself as a follow-up to the creator's 2025
+  flight sim. The creator lists Codex as the tool used to build it.
+play:
+  url: https://sf.flyover.gg
+  embeddable: true
+  platforms:
+    - browser
+    - mobile
+creator:
+  name: alistairmcleay
+  handle: alistairmcleay
+  x: alistairmcleay
+made:
+  models: []
+  providers:
+    - openai
+  tools:
+    - codex
+  aiShare: most
+  source: Vibe Jam 2026 submission form
+  evidence: creator
+tech:
+  engine: threejs
+  multiplayer: online
+genres:
+  - simulation
+  - adventure
+jam:
+  event: vibe-jam-2026
+  rank: 138
+  entries: 945
+media:
+  cover: games/fly-sf/cover
+  screenshots:
+    - games/fly-sf/shot-1
+    - games/fly-sf/shot-2
+dates:
+  added: 2026-09-29
+  updated: 2026-09-29
+status: live
+provenance:
+  foundVia: scout:vibejam-2026
+  scannedAt: 2026-09-29T16:15:11.317Z

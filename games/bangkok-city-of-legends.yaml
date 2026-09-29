@@ -1,0 +1,60 @@
+slug: bangkok-city-of-legends
+title: Bangkok City of Legends
+tagline: Choose your path through a story-driven adventure set in Bangkok.
+description: >-
+  Bangkok City of Legends is a choose-your-own-adventure story set in Bangkok.
+  The player steps into the city and makes decisions that shape how the story
+  unfolds, moving through scenes in the manner of classic point-and-click
+  adventures and role-playing games.
+
+
+  The game draws on the tradition of branching narratives and point-and-click
+  titles like Monkey Island, pairing that structure with a specific real-world
+  setting. Its focus is on story and choices rather than reflexes, which suits a
+  relaxed, exploratory pace. It is playable on mobile devices as well as
+  desktop, and it runs as a single-player experience.
+
+
+  The creator built it with Claude Code and rendered it with PixiJS. It was
+  submitted to Vibe Jam 2026, where it placed 161st out of 945 entries.
+play:
+  url: https://bangkok-city-of-legends.onrender.com
+  embeddable: true
+  platforms:
+    - browser
+    - mobile
+creator:
+  name: BigLoudChris
+  handle: bigloudchris
+  x: BigLoudChris
+made:
+  models: []
+  providers:
+    - anthropic
+  tools:
+    - claude-code
+  aiShare: most
+  source: Vibe Jam 2026 submission form
+  evidence: creator
+tech:
+  engine: pixijs
+  multiplayer: single
+genres:
+  - adventure
+  - rpg
+jam:
+  event: vibe-jam-2026
+  rank: 161
+  entries: 945
+media:
+  cover: games/bangkok-city-of-legends/cover
+  screenshots:
+    - games/bangkok-city-of-legends/shot-1
+    - games/bangkok-city-of-legends/shot-2
+dates:
+  added: 2026-09-29
+  updated: 2026-09-29
+status: live
+provenance:
+  foundVia: scout:vibejam-2026
+  scannedAt: 2026-09-29T16:15:11.333Z
