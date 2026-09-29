@@ -83,6 +83,7 @@ jobs:
         with:
           ref: ${{ github.event.pull_request.base.sha || 'main' }}
           persist-credentials: false
+          fetch-depth: 0 # history for the merge base below
       - uses: actions/setup-node@v5
         with: { node-version: 22 }
       - run: npm ci --ignore-scripts --no-audit --no-fund
@@ -94,15 +95,16 @@ jobs:
         run: |
           rm -f out/contact-sheet.md
           [[ "$HEAD_SHA" =~ ^[0-9a-f]{40}$ ]] || { echo "unexpected head sha"; exit 1; }
-          git fetch --no-tags --depth=1 origin "$HEAD_SHA"
+          git fetch --no-tags origin "$HEAD_SHA"
       - name: Re-encode and upload to R2
         id: upload
         env:
           R2_UPLOAD_TOKEN: ${{ secrets.R2_UPLOAD_TOKEN }}
           CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
           HEAD_SHA: ${{ github.event.pull_request.head.sha || needs.capture.outputs.sha }}
-        # --base-ref: only games this PR adds or changes are uploaded, whatever the artifact holds.
-        run: node scripts/upload.mjs out/ --entries-ref "$HEAD_SHA" --base-ref "$(git rev-parse HEAD)"
+        # --base-ref (the merge base, as in the capture job): only games this PR adds or changes are uploaded, whatever
+        # the artifact holds; changes made only on main never count.
+        run: node scripts/upload.mjs out/ --entries-ref "$HEAD_SHA" --base-ref "$(git merge-base HEAD "$HEAD_SHA")"
       - name: Post the contact sheet
         if: always() && steps.upload.outcome != 'skipped' && github.event_name == 'pull_request' && hashFiles('out/contact-sheet.md') != ''
         env:
