@@ -14,7 +14,11 @@ const PAGES = {
   '/game': html(`<canvas id="c" width="1280" height="720"></canvas><script>
     const g = document.getElementById('c').getContext('2d');
     let t = 0;
-    (function frame() { t += 1; for (let x = 0; x < 1280; x += 40) for (let y = 0; y < 720; y += 40) { g.fillStyle = 'hsl(' + ((t * 7 + x + y * 3) % 360) + ' 80% ' + (20 + ((x + y + t * 23) % 60)) + '%)'; g.fillRect(x, y, 40, 40); } requestAnimationFrame(frame); })();
+    (function frame() { t += 1; for (let x = 0; x < 1280; x += 40) for (let y = 0; y < 720; y += 40) { g.fillStyle = 'hsl(' + ((t * 7 + x + y * 3) % 360) + ' 80% ' + (20 + ((x + y + t * 23) % 60)) + '%)'; g.fillRect(x, y, 40, 40); }
+      // The cell pattern repeats every 60 frames, and a throttled CI runner can capture two frames exactly one period
+      // apart (deduped as the same picture). A white bar that moves with wall-clock time keeps every capture distinct.
+      g.fillStyle = '#fff'; g.fillRect((performance.now() / 2) % 1080, 0, 200, 720);
+      requestAnimationFrame(frame); })();
     addEventListener('click', () => { t += 90; });
   </script>`),
   '/hang': html(`<p style="color:#fff">loading</p><script>addEventListener('load', () => setTimeout(() => { for (;;) {} }, 200));</script>`),
