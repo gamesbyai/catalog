@@ -36,6 +36,10 @@ jobs:
             [[ "$slug" =~ ^[a-z0-9]+(-[a-z0-9]+)*$ ]] || continue
             issue=$(grep -oE 'Closes #[0-9]+' <<<"$body" | head -1 | grep -oE '[0-9]+' || true)
             [ -n "$issue" ] || continue
-            jq -n --argjson issue "$issue" --arg slug "$slug" '{issue:$issue,event:"live",slug:$slug}' |
-              curl -sS -o /dev/null -w "notify %{http_code}\n" -X POST "$NOTIFY_URL" -H "Authorization: Bearer $NOTIFY_TOKEN" -H 'Content-Type: application/json' --data-binary @- || true
+            code=$(jq -n --argjson issue "$issue" --arg slug "$slug" '{issue:$issue,event:"live",slug:$slug}' |
+              curl -sS -o /dev/null -w "%{http_code}" -X POST "$NOTIFY_URL" -H "Authorization: Bearer $NOTIFY_TOKEN" -H 'Content-Type: application/json' --data-binary @- || echo 000)
+            echo "notify #$issue: $code"
+            # 404 = a GitHub-form submission (no email on file). 5xx = the email was not sent: fail so it can be re-run.
+            case "$code" in 5*|000) echo "::error::live email for #$issue not sent (HTTP $code); re-run this job"; echo "$issue" >> "$RUNNER_TEMP/unsent" ;; esac
           done
+          [ ! -s "$RUNNER_TEMP/unsent" ]
