@@ -140,9 +140,12 @@ export async function draftCandidate(c, { slugs, run = claudeJson }) {
   });
   let reason = '';
   for (let attempt = 0; attempt < 2; attempt++) {
+    // The retry names the problem. A copied phrase is input text, so it never goes back into the prompt.
+    const said = reason.startsWith('copied from the input') ? 'copied a phrase from the input' : reason;
+    const system = attempt && said ? `${SYSTEM}\nYour previous draft was rejected: ${said}. Write a new draft that fixes this.` : SYSTEM;
     let d;
     try {
-      d = await run(SYSTEM, data, schema);
+      d = await run(system, data, schema);
     } catch (e) {
       reason = e.message;
       continue;
