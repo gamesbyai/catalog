@@ -1,5 +1,5 @@
-slug: skate-game-opus-5-5
-title: Skate Game Opus 5 5
+slug: pro-skater-the-warehouse
+title: "Pro Skater: The Warehouse"
 tagline: Skate a two-minute run through a warehouse park, chaining tricks and
   hitting goals.
 description: >-
@@ -55,10 +55,10 @@ genres:
   - sports
   - arcade
 media:
-  cover: games/skate-game-opus-5-5/cover
+  cover: games/pro-skater-the-warehouse/cover
   screenshots:
-    - games/skate-game-opus-5-5/shot-1
-    - games/skate-game-opus-5-5/shot-2
+    - games/pro-skater-the-warehouse/shot-1
+    - games/pro-skater-the-warehouse/shot-2
 dates:
   added: 2026-09-29
   updated: 2026-09-29

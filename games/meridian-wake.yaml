@@ -1,5 +1,5 @@
-slug: meridian-wake-g6a
-title: Meridian Wake G6a
+slug: meridian-wake
+title: Meridian Wake
 tagline: Fly a brick-built spaceship, trade, mine, fight, and follow stories
   across star systems.
 description: >-
@@ -56,10 +56,10 @@ genres:
   - simulation
   - adventure
 media:
-  cover: games/meridian-wake-g6a/cover
+  cover: games/meridian-wake/cover
   screenshots:
-    - games/meridian-wake-g6a/shot-1
-    - games/meridian-wake-g6a/shot-2
+    - games/meridian-wake/shot-1
+    - games/meridian-wake/shot-2
 dates:
   added: 2026-09-29
   updated: 2026-09-29

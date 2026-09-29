@@ -1,5 +1,5 @@
-slug: metal-assault-game-claude-fable
-title: metal assault game claude fable
+slug: metal-assault
+title: Metal Assault
 tagline: Run, jump, and shoot through side-scrolling levels in a Metal
   Slug-style action game.
 description: >-
@@ -43,10 +43,10 @@ genres:
   - action
   - shooter
 media:
-  cover: games/metal-assault-game-claude-fable/cover
+  cover: games/metal-assault/cover
   screenshots:
-    - games/metal-assault-game-claude-fable/shot-1
-    - games/metal-assault-game-claude-fable/shot-2
+    - games/metal-assault/shot-1
+    - games/metal-assault/shot-2
 dates:
   added: 2026-09-29
   updated: 2026-09-29

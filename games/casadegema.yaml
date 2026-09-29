@@ -40,9 +40,7 @@ made:
     - claude-opus-5-5
   providers:
     - anthropic
-  tools:
-    - cursor
-    - claude-ai
+  tools: []
   aiShare: all
   source: Repository README
   evidence: repo

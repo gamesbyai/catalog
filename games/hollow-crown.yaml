@@ -1,5 +1,5 @@
 slug: hollow-crown
-title: hollow crown
+title: Hollow Crown
 tagline: Pick a class and fight through a pixel RPG toward a three-stage boss
 description: >-
   Hollow Crown is a browser-based pixel RPG inspired by MapleStory. You choose
@@ -31,7 +31,6 @@ made:
   providers:
     - anthropic
   tools:
-    - claude-ai
     - claude-code
   aiShare: unknown
   source: GitHub repository README

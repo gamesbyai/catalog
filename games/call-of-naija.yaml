@@ -1,5 +1,5 @@
-slug: game
-title: Game
+slug: call-of-naija
+title: Call of Naija
 tagline: Fight through Lagos in a browser FPS with a campaign, co-op modes and
   multiplayer.
 description: >-
@@ -57,10 +57,10 @@ genres:
   - shooter
   - action
 media:
-  cover: games/game/cover
+  cover: games/call-of-naija/cover
   screenshots:
-    - games/game/shot-1
-    - games/game/shot-2
+    - games/call-of-naija/shot-1
+    - games/call-of-naija/shot-2
 dates:
   added: 2026-09-29
   updated: 2026-09-29

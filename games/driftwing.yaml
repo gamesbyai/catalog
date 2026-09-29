@@ -38,12 +38,9 @@ creator:
 made:
   models:
     - claude-opus-5-5
-    - claude-haiku-4-5
   providers:
     - anthropic
-  tools:
-    - claude-ai
-    - claude-code
+  tools: []
   aiShare: all
   source: Repository README
   evidence: repo
