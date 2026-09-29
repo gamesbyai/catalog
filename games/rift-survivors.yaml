@@ -1,0 +1,60 @@
+slug: rift-survivors
+title: Rift Survivors
+tagline: Fight through 100 neon floors with combos, parries, and stamina management.
+description: >-
+  Rift Survivors is a cyber-neon hack-and-slash roguelike built around a
+  100-floor cycle. Combat borrows from Demons' Souls: you chain combos, time
+  parries, and spend stamina carefully, since every swing and dodge draws from
+  the same pool. Each run pushes you up through the floors toward tougher
+  fights.
+
+
+  Bosses come in three types, each with five to six distinct attack patterns to
+  learn and read. Gear follows an MMO-style rarity ladder from Common to
+  Legendary, and skills can be linked into chains. The interface switches
+  automatically between Japanese and English, and the game runs on mobile.
+
+
+  The creator started out making games for feature phones and built this one
+  under a 1MB size limit, a constraint that recalled that early work. It was
+  submitted to Vibe Jam 2026, and the creator's tooling included Claude Code.
+play:
+  url: https://rift-survivors.pages.dev
+  embeddable: true
+  platforms:
+    - browser
+    - mobile
+creator:
+  name: otani_ai_memo
+  handle: otani-ai-memo
+  x: otani_ai_memo
+made:
+  models: []
+  providers:
+    - anthropic
+  tools:
+    - claude-code
+  aiShare: most
+  source: Vibe Jam 2026 submission form
+  evidence: creator
+tech:
+  multiplayer: single
+genres:
+  - action
+  - roguelike
+jam:
+  event: vibe-jam-2026
+  rank: 430
+  entries: 945
+media:
+  cover: games/rift-survivors/cover
+  screenshots:
+    - games/rift-survivors/shot-1
+    - games/rift-survivors/shot-2
+dates:
+  added: 2026-09-29
+  updated: 2026-09-29
+status: live
+provenance:
+  foundVia: scout:vibejam-2026
+  scannedAt: 2026-09-29T16:37:17.551Z

@@ -1,0 +1,59 @@
+slug: ad-bird-tising-exe
+title: AD_BIRD_TISING.EXE
+tagline: Flap through obstacles in a Flappy Bird-style run with an ad-agency twist.
+description: >-
+  AD_BIRD_TISING.EXE is a one-button action game in the Flappy Bird tradition.
+  You guide a bird through a side-scrolling course, tapping to flap and stay
+  airborne while steering clear of obstacles. A run ends on a collision, so the
+  goal is to get as far as you can.
+
+
+  The game dresses its familiar formula in a satirical marketing theme, with a
+  title styled like an old executable file and a tagline about high-performance
+  marketing delivered one flap at a time. It runs on mobile as well as desktop,
+  and it is a single-player experience.
+
+
+  It was an entry in Vibe Jam 2026, where it placed 431st out of 945 entries.
+  The listing names Antigravity, Google's coding tool, as the tool used to build
+  it.
+play:
+  url: https://stockout.studio
+  embeddable: true
+  platforms:
+    - browser
+    - mobile
+creator:
+  name: stockoutio
+  handle: stockoutio
+  x: stockoutio
+made:
+  models: []
+  providers:
+    - google
+  tools:
+    - antigravity
+  aiShare: most
+  source: Vibe Jam 2026 submission form
+  evidence: creator
+tech:
+  multiplayer: single
+genres:
+  - arcade
+  - action
+jam:
+  event: vibe-jam-2026
+  rank: 431
+  entries: 945
+media:
+  cover: games/ad-bird-tising-exe/cover
+  screenshots:
+    - games/ad-bird-tising-exe/shot-1
+    - games/ad-bird-tising-exe/shot-2
+dates:
+  added: 2026-09-29
+  updated: 2026-09-29
+status: live
+provenance:
+  foundVia: scout:vibejam-2026
+  scannedAt: 2026-09-29T16:37:17.552Z

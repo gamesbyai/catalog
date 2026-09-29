@@ -1,0 +1,63 @@
+slug: riot-bots
+title: Riot Bots
+tagline: Fight as a robot in a Martian colony, solo or allied, against an
+  invading Dark AI.
+description: >-
+  Riot Bots is a 3D robot battle game set on a Martian base where a riot has
+  broken out. The Dark AI is invading and trying to seize the energy center. You
+  control a battle robot in the fight, choosing whether to go it alone or team
+  up with other players to defend the colony.
+
+
+  The game supports multiplayer and runs on mobile as well as desktop. Its
+  premise leaves room for player choice, since alliances are optional and the
+  story is described as having an open-ended ending. The action is mixed with
+  RPG elements.
+
+
+  The creator says a friend showed them the Vibe Jam games, which made them want
+  to try 3D game development. They enjoy building hardware and watching
+  battlebots, so a robot fighting game was a natural pick. The creator built it
+  with Cursor and Codex, and it was entered in Vibe Jam 2026.
+play:
+  url: https://riotbots.up.railway.app
+  embeddable: true
+  platforms:
+    - browser
+    - mobile
+creator:
+  name: PanPiller
+  handle: panpiller
+  x: PanPiller
+made:
+  models: []
+  providers:
+    - openai
+  tools:
+    - cursor
+    - codex
+  aiShare: most
+  source: Vibe Jam 2026 submission form
+  evidence: creator
+tech:
+  engine: threejs
+  multiplayer: online
+genres:
+  - action
+  - rpg
+jam:
+  event: vibe-jam-2026
+  rank: 449
+  entries: 945
+media:
+  cover: games/riot-bots/cover
+  screenshots:
+    - games/riot-bots/shot-1
+    - games/riot-bots/shot-2
+dates:
+  added: 2026-09-29
+  updated: 2026-09-29
+status: live
+provenance:
+  foundVia: scout:vibejam-2026
+  scannedAt: 2026-09-29T16:37:17.565Z

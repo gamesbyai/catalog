@@ -1,0 +1,59 @@
+slug: mazerift
+title: MazeRift
+tagline: Roll through mazes, collect perks, and race through increasingly
+  strange worlds.
+description: >-
+  MazeRift is a maze roller in which the player guides a ball through a series
+  of mazes. The rules are simple: find the way through each layout, and do it
+  quickly. Skillful play is rewarded with perks and better speed as the levels
+  progress.
+
+
+  The environments become more surreal the further you get, so the look of the
+  maze changes even when the core task stays the same. Perks give a reason to
+  play cleanly instead of just finishing. It also runs on mobile devices, which
+  suits a quick session.
+
+
+  The creator says the idea came from a four-year-old's love of mazes and from a
+  lack of good maze games on the App Store. It was made for Vibe Jam 2026 with
+  Bolt and Three.js, and it placed 407th out of 945 entries.
+play:
+  url: https://mazerift.bolt.host
+  embeddable: true
+  platforms:
+    - browser
+    - mobile
+creator:
+  name: Shebuka
+  handle: shebuka
+  x: Shebuka
+made:
+  models: []
+  tools:
+    - bolt
+  aiShare: most
+  source: Vibe Jam 2026 submission form
+  evidence: creator
+tech:
+  engine: threejs
+  multiplayer: single
+genres:
+  - action
+  - puzzle
+jam:
+  event: vibe-jam-2026
+  rank: 407
+  entries: 945
+media:
+  cover: games/mazerift/cover
+  screenshots:
+    - games/mazerift/shot-1
+    - games/mazerift/shot-2
+dates:
+  added: 2026-09-29
+  updated: 2026-09-29
+status: live
+provenance:
+  foundVia: scout:vibejam-2026
+  scannedAt: 2026-09-29T16:37:17.539Z

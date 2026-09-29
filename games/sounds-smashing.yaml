@@ -1,0 +1,58 @@
+slug: sounds-smashing
+title: Sounds Smashing!
+tagline: Smash blocks in time with the beat to build melodies and earn coins.
+description: >-
+  Sounds Smashing! is a physics-based rhythm game in which the player breaks
+  blocks in time with the music. Each smash adds a note, so a successful run
+  gradually builds a melody out of the destruction. Timing decides the payout:
+  the closer the hit lands to the beat, the more coins the player collects.
+
+
+  The music leans on microtonal tuning, which gives the smashed melodies a sound
+  different from standard scales. The mix of physical block-breaking and rhythm
+  play draws on Donkey Kong-style bonanza energy and Minecraft-like blocks, and
+  the whole thing is meant to feel like a constant groove.
+
+
+  The creator built it with Claude Code and Three.js for Vibe Jam 2026, working
+  on it for about two days. It placed 379th out of 945 entries in the jam.
+play:
+  url: https://soundssmashing.com
+  embeddable: true
+  platforms:
+    - browser
+creator:
+  name: ocorich
+  handle: ocorich
+  x: ocorich
+made:
+  models: []
+  providers:
+    - anthropic
+  tools:
+    - claude-code
+  aiShare: most
+  source: Vibe Jam 2026 submission form
+  evidence: creator
+tech:
+  engine: threejs
+  multiplayer: single
+genres:
+  - rhythm
+  - action
+jam:
+  event: vibe-jam-2026
+  rank: 379
+  entries: 945
+media:
+  cover: games/sounds-smashing/cover
+  screenshots:
+    - games/sounds-smashing/shot-1
+    - games/sounds-smashing/shot-2
+dates:
+  added: 2026-09-29
+  updated: 2026-09-29
+status: live
+provenance:
+  foundVia: scout:vibejam-2026
+  scannedAt: 2026-09-29T16:37:17.524Z

@@ -1,0 +1,60 @@
+slug: hell-chess
+title: Hell Chess
+tagline: Summon armies and curse your opponent in a hellish twist on chess.
+description: >-
+  Hell Chess is a strategy game that takes the familiar chess board and fills it
+  with infernal powers. Players summon armies, reshape the battlefield, and
+  place curses on their enemies while trying to outmaneuver an opponent. It
+  supports multiplayer, so matches can be played against another person.
+
+
+  The game borrows ideas from Polytopia and Slay the Spire, according to its
+  pitch. That points to a mix of turn-based territory tactics and ability-driven
+  decision making layered over the chess format. Summoning, terrain
+  transformation, and curses give each turn more options than standard piece
+  movement.
+
+
+  It was entered in Vibe Jam 2026, where it placed 439th among 945 entries. It
+  is playable on mobile as well as desktop. The creator says it was built with
+  Claude Code.
+play:
+  url: https://hellchess.korajos.de
+  embeddable: false
+  platforms:
+    - browser
+    - mobile
+creator:
+  name: korajos
+  handle: korajos
+  x: korajos
+made:
+  models: []
+  providers:
+    - anthropic
+  tools:
+    - claude-code
+  aiShare: most
+  source: Vibe Jam 2026 submission form
+  evidence: creator
+tech:
+  multiplayer: online
+genres:
+  - strategy
+  - board
+jam:
+  event: vibe-jam-2026
+  rank: 439
+  entries: 945
+media:
+  cover: games/hell-chess/cover
+  screenshots:
+    - games/hell-chess/shot-1
+    - games/hell-chess/shot-2
+dates:
+  added: 2026-09-29
+  updated: 2026-09-29
+status: live
+provenance:
+  foundVia: scout:vibejam-2026
+  scannedAt: 2026-09-29T16:37:17.560Z

@@ -1,0 +1,59 @@
+slug: code-rage
+title: Code Rage
+tagline: Fight off enemy waves inside a buggy codebase that keeps corrupting itself.
+description: >-
+  Code Rage puts you in the shoes of a vibe coder trapped inside their own
+  broken game. Each run is a series of waves in which you shoot down enemies
+  while the surrounding code steadily corrupts itself, so the arena keeps
+  getting less stable the longer you survive.
+
+
+  The premise comes from a familiar frustration: AI-coded projects that ship
+  with odd glitches, where it is hard to tell a bug from an intended feature.
+  The game turns that confusion into its core loop, asking you to decide which
+  corruption is worth fixing and which you can live with while the fight
+  continues.
+
+
+  The creator built it with Claude Code and made it for Vibe Jam 2026. It runs
+  on Three.js and is played as a single-player shooter.
+play:
+  url: https://code-rage.pages.dev
+  embeddable: true
+  platforms:
+    - browser
+creator:
+  name: RohanSudo
+  handle: rohansudo
+  x: RohanSudo
+made:
+  models: []
+  providers:
+    - anthropic
+  tools:
+    - claude-code
+  aiShare: most
+  source: Vibe Jam 2026 submission form
+  evidence: creator
+tech:
+  engine: threejs
+  multiplayer: single
+genres:
+  - shooter
+  - action
+jam:
+  event: vibe-jam-2026
+  rank: 380
+  entries: 945
+media:
+  cover: games/code-rage/cover
+  screenshots:
+    - games/code-rage/shot-1
+    - games/code-rage/shot-2
+dates:
+  added: 2026-09-29
+  updated: 2026-09-29
+status: live
+provenance:
+  foundVia: scout:vibejam-2026
+  scannedAt: 2026-09-29T16:37:17.525Z
