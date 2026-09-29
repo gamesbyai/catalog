@@ -1,0 +1,56 @@
+slug: zombow
+title: Zombow
+tagline: Shoot arrows at an endless zombie horde and keep moving to survive.
+description: >-
+  Zombow is a browser-based 3D archery survival game. Zombies spawn without end,
+  and the only weapon is a bow. A run comes down to staying alive: you move
+  around the arena, line up shots, and thin out the horde before it closes in.
+
+
+  The game leans on atmosphere. Thick fog limits how far you can see, and
+  spatial audio helps place threats around you, so the tension comes as much
+  from what you can't see as from the zombies on screen. The pacing takes cues
+  from classic arcade survival shooters, with quick, high-pressure rounds.
+
+
+  The creator built it with Cursor and Three.js, describing the process as vibe
+  coding. The audio is described as AI-generated, and the stated goal was a
+  frightening horde experience that runs entirely in the browser.
+play:
+  url: https://zombow-game.vercel.app
+  embeddable: true
+  platforms:
+    - browser
+creator:
+  name: sandman_sh
+  handle: sandman-sh
+  x: sandman_sh
+made:
+  models: []
+  tools:
+    - cursor
+  aiShare: most
+  source: Vibe Jam 2026 submission form
+  evidence: creator
+tech:
+  engine: threejs
+  multiplayer: single
+genres:
+  - action
+  - survival
+  - shooter
+jam:
+  event: vibe-jam-2026
+  rank: 528
+  entries: 945
+media:
+  cover: games/zombow/cover
+  screenshots:
+    - games/zombow/shot-1
+    - games/zombow/shot-2
+dates:
+  added: 2026-09-29
+  updated: 2026-09-29
+status: live
+provenance:
+  foundVia: scout:vibejam-2026

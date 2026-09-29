@@ -1,0 +1,60 @@
+slug: galactic-golf
+title: Galactic Golf
+tagline: Sink golf shots while black holes bend the ball's path across space courses.
+description: >-
+  Galactic Golf is a physics puzzle game that plays like mini golf set in space.
+  On each hole, the player lines up a shot and sends the ball toward the cup
+  across a floating course. Gravity does not stay quiet: nearby masses tug at
+  the ball in flight, so a straight line rarely gets the job done.
+
+
+  Black holes are the centerpiece. Instead of serving only as hazards that end a
+  run, they pull on the ball and bend its path, so any shot passing close
+  becomes a small problem in trajectory. The pull can be used as well as
+  avoided, which rewards planning an arc before swinging.
+
+
+  The creator was inspired by Mario Golf: Toadstool Tour and the gravity
+  mechanics of Mario Galaxy, and aimed to pair a whimsical look with
+  mechanically deep play. It was built in Godot, and the creator states that
+  Claude Code was used. The game was a Vibe Jam 2026 entry and runs on mobile.
+play:
+  url: https://galactic.golf
+  embeddable: true
+  platforms:
+    - browser
+    - mobile
+creator:
+  name: uuqstrings
+  handle: uuqstrings
+  x: uuqstrings
+made:
+  models: []
+  providers:
+    - anthropic
+  tools:
+    - claude-code
+  aiShare: most
+  source: Vibe Jam 2026 submission form
+  evidence: creator
+tech:
+  engine: godot
+  multiplayer: single
+genres:
+  - puzzle
+  - sports
+jam:
+  event: vibe-jam-2026
+  rank: 527
+  entries: 945
+media:
+  cover: games/galactic-golf/cover
+  screenshots:
+    - games/galactic-golf/shot-1
+    - games/galactic-golf/shot-2
+dates:
+  added: 2026-09-29
+  updated: 2026-09-29
+status: live
+provenance:
+  foundVia: scout:vibejam-2026

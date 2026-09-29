@@ -1,0 +1,52 @@
+slug: geosports
+title: GeoSports
+tagline: Pin the answers to five daily sports trivia questions on a world map.
+description: >-
+  GeoSports is a daily quiz that mixes sports trivia with geography. Each day
+  brings five questions, and every answer is a place. Instead of typing a
+  response, you drop a pin on the map where you think the answer is located. One
+  round covers all five questions, and a new set arrives each day.
+
+
+  The appeal is the pairing of two familiar quiz subjects. A question about a
+  team, venue, or event turns into a map-reading challenge, so knowing the sport
+  helps but knowing where things are matters just as much. The short daily
+  format keeps each session brief and easy to repeat.
+
+
+  The creator states that the game was built with Claude. No further details
+  about the development process are given, so the specific model and the share
+  of the work done by AI are not known.
+play:
+  url: https://geosports.app
+  embeddable: true
+  platforms:
+    - browser
+creator:
+  name: Unknown creator
+  handle: geosports
+made:
+  models: []
+  providers:
+    - anthropic
+  tools:
+    - claude-ai
+  aiShare: unknown
+  source: Project README
+  evidence: inferred
+tech:
+  multiplayer: single
+genres:
+  - trivia
+  - casual
+media:
+  cover: games/geosports/cover
+  screenshots:
+    - games/geosports/shot-1
+    - games/geosports/shot-2
+dates:
+  added: 2026-09-29
+  updated: 2026-09-29
+status: live
+provenance:
+  foundVia: scout:awesome-cc0

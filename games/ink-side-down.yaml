@@ -1,0 +1,52 @@
+slug: ink-side-down
+title: Ink Side Down
+tagline: Roll a cube across a grid so its inked face stamps only the marked squares.
+description: >-
+  Ink Side Down is a daily logic puzzle played on a grid. You roll a cube from
+  square to square, and the face that is coated in ink presses onto whatever
+  tile it touches. The goal is to finish with prints on the marked squares and
+  nowhere else.
+
+
+  Because the cube turns with every roll, the inked face keeps changing
+  position, so each move affects both where you stand and which side will land
+  next. Planning the route ahead matters more than reacting to the current tile.
+  A fresh puzzle is offered each day, which gives the game a short, repeatable
+  rhythm.
+
+
+  The creator states that an autonomous AI agent designed and coded the whole
+  game, using Claude Code. It runs on HTML5 Canvas.
+play:
+  url: https://arkai.win/games/ink-side-down
+  embeddable: false
+  platforms:
+    - browser
+creator:
+  name: Unknown creator
+  handle: ink-side-down
+made:
+  models: []
+  providers:
+    - anthropic
+  tools:
+    - claude-code
+  aiShare: all
+  source: Project README
+  evidence: creator
+tech:
+  engine: canvas
+  multiplayer: single
+genres:
+  - puzzle
+media:
+  cover: games/ink-side-down/cover
+  screenshots:
+    - games/ink-side-down/shot-1
+    - games/ink-side-down/shot-2
+dates:
+  added: 2026-09-29
+  updated: 2026-09-29
+status: live
+provenance:
+  foundVia: scout:awesome-cc0

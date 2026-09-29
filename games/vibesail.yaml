@@ -1,0 +1,55 @@
+slug: vibesail
+title: VibeSail
+tagline: Trim your sail to the wind, race daily and explore islands online.
+description: >-
+  VibeSail is a multiplayer sailing sim where wind direction shapes every
+  decision. You adjust your sail to catch the breeze, steer your boat across
+  open water, and choose between competing in a daily race or sailing off to
+  look around the islands.
+
+
+  The focus is on the sailing itself. Trimming the sail to the wind is the core
+  skill, so speed comes from reading conditions rather than simply pointing the
+  boat forward. The daily race gives players a shared course to compete on,
+  while island exploration offers a slower alternative. Because it is
+  multiplayer, other sailors share the water with you.
+
+
+  The creator says it was made with Cursor and Claude 3.7 Sonnet, and that
+  Three.js handles the 3D rendering in the browser.
+play:
+  url: https://vibesail.com
+  embeddable: false
+  platforms:
+    - browser
+creator:
+  name: Unknown creator
+  handle: vibesail
+made:
+  models:
+    - claude-3-7-sonnet
+  providers:
+    - anthropic
+  tools:
+    - cursor
+    - claude-ai
+  aiShare: unknown
+  source: Project README
+  evidence: creator
+tech:
+  engine: threejs
+  multiplayer: single
+genres:
+  - simulation
+  - sports
+media:
+  cover: games/vibesail/cover
+  screenshots:
+    - games/vibesail/shot-1
+    - games/vibesail/shot-2
+dates:
+  added: 2026-09-29
+  updated: 2026-09-29
+status: live
+provenance:
+  foundVia: scout:awesome-cc0

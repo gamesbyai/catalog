@@ -1,0 +1,66 @@
+slug: critical-mass
+title: Critical Mass
+tagline: Survive a horde by staying in motion, because your guns only fire while
+  you move.
+description: >-
+  Critical Mass is a horde survival shooter played in the browser. Enemies close
+  in from all sides, and the weapon system is tied directly to momentum. Keep
+  moving and your firepower stays strong; slow down and the pressure drops,
+  leaving you exposed. A run is a constant balance of dodging, circling, and
+  staying lethal.
+
+
+  The twist is that movement is the weapon system rather than just a way to
+  position yourself. It starts out feeling like a familiar survival shooter,
+  then pushes toward a more aggressive style where standing still is the
+  riskiest choice. It is built to be quick to pick up, with no setup before you
+  jump in, and it also runs on mobile.
+
+
+  The creator entered it in Vibe Jam 2026 and says it was made with the help of
+  ChatGPT, Claude, and Gemini. The game runs on the Phaser framework, which
+  suits its fast, instantly playable browser design.
+play:
+  url: https://jam2026.maxbasev.com
+  embeddable: true
+  platforms:
+    - browser
+    - mobile
+creator:
+  name: maxbasev
+  handle: maxbasev
+  x: maxbasev
+made:
+  models: []
+  providers:
+    - openai
+    - anthropic
+    - google
+  tools:
+    - chatgpt
+    - claude-ai
+    - gemini-app
+  aiShare: most
+  source: Vibe Jam 2026 submission form
+  evidence: creator
+tech:
+  engine: phaser
+  multiplayer: single
+genres:
+  - action
+  - shooter
+jam:
+  event: vibe-jam-2026
+  rank: 478
+  entries: 945
+media:
+  cover: games/critical-mass/cover
+  screenshots:
+    - games/critical-mass/shot-1
+    - games/critical-mass/shot-2
+dates:
+  added: 2026-09-29
+  updated: 2026-09-29
+status: live
+provenance:
+  foundVia: scout:vibejam-2026

@@ -1,0 +1,59 @@
+slug: rescue-from-the-shadows
+title: RESCUE FROM THE SHADOWS
+tagline: Explore a dark world and learn digital security and Web3 along the way.
+description: >-
+  Rescue From the Shadows is a narrative puzzle game set in a dark world that
+  the player explores step by step. Progress comes from working through the
+  situations the story presents, with the goal of bringing someone back out of
+  the darkness.
+
+
+  The game is built around a teaching idea: the creator wanted something
+  immersive that also adds real value instead of being pure entertainment.
+  Lessons about digital security and Web3 are woven into the exploration and
+  puzzles, so understanding those topics is part of moving forward.
+
+
+  It was entered in Vibe Jam 2026, where it placed 529 of 945 entries. The
+  creator lists ChatGPT as the tool used to make it, and the game is set up for
+  both mobile play and multiplayer.
+play:
+  url: https://o-resgate-das-sombras.vercel.app
+  embeddable: true
+  platforms:
+    - browser
+    - mobile
+creator:
+  name: xsuikem
+  handle: xsuikem
+  x: xsuikem
+made:
+  models: []
+  providers:
+    - openai
+  tools:
+    - chatgpt
+  aiShare: most
+  source: Vibe Jam 2026 submission form
+  evidence: creator
+tech:
+  multiplayer: online
+genres:
+  - puzzle
+  - adventure
+  - educational
+jam:
+  event: vibe-jam-2026
+  rank: 529
+  entries: 945
+media:
+  cover: games/rescue-from-the-shadows/cover
+  screenshots:
+    - games/rescue-from-the-shadows/shot-1
+    - games/rescue-from-the-shadows/shot-2
+dates:
+  added: 2026-09-29
+  updated: 2026-09-29
+status: live
+provenance:
+  foundVia: scout:vibejam-2026

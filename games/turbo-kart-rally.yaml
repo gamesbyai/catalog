@@ -1,0 +1,58 @@
+slug: turbo-kart-rally
+title: turbo kart rally
+tagline: Race colorful karts around tracks in a Mario Kart-style arcade racer.
+description: >-
+  Turbo Kart Rally is an arcade kart racer that runs in the browser. The player
+  drives a kart around a course in the spirit of Mario Kart, competing for
+  position in short, fast-paced races that favor quick handling over realistic
+  driving physics.
+
+
+  Everything on screen is generated procedurally, so the game has no external
+  art or model files. It is written in plain JavaScript on top of Three.js and
+  needs no build step, which means the project can be opened and run directly
+  from the repository without setup.
+
+
+  According to the repository, the game was built by five Claude Opus 5.5
+  sub-agents working from a single prompt. The repository is tagged as
+  AI-generated and lists kart racing, procedural generation, and WebGL among its
+  topics.
+play:
+  url: https://bridge-mind.github.io/turbo-kart-rally
+  embeddable: true
+  platforms:
+    - browser
+repo: https://github.com/bridge-mind/turbo-kart-rally
+license: MIT
+creator:
+  name: bridge-mind
+  handle: bridge-mind
+made:
+  models:
+    - claude-opus-5-5
+  providers:
+    - anthropic
+  tools:
+    - claude-ai
+  aiShare: all
+  source: GitHub repository README
+  evidence: repo
+  evidenceUrl: https://github.com/bridge-mind/turbo-kart-rally
+tech:
+  engine: threejs
+  multiplayer: single
+genres:
+  - racing
+  - arcade
+media:
+  cover: games/turbo-kart-rally/cover
+  screenshots:
+    - games/turbo-kart-rally/shot-1
+    - games/turbo-kart-rally/shot-2
+dates:
+  added: 2026-09-29
+  updated: 2026-09-29
+status: live
+provenance:
+  foundVia: scout:github

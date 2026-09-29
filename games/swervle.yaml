@@ -1,0 +1,55 @@
+slug: swervle
+title: Swervle
+tagline: Race a fresh procedurally generated 90-second route that changes every day.
+description: >-
+  Swervle is a racing game modeled on the daily-puzzle format popularized by
+  Wordle. Each day brings a new route, generated procedurally, and a run lasts
+  90 seconds. The goal is to steer through that day's course as well as you can
+  before the clock runs out.
+
+
+  The daily structure is the main hook. Because the route is the same for
+  everyone on a given day, a run becomes a small, repeatable challenge. You can
+  try to improve on the same course instead of facing an endless stream of
+  random tracks. The short 90-second length keeps each attempt quick.
+
+
+  The creator states it was built with GPT-5.6 and Claude Opus 5, and it renders
+  in the browser with Three.js. The catalog also lists Claude as a tool used in
+  its creation.
+play:
+  url: https://swervle.com
+  embeddable: false
+  platforms:
+    - browser
+creator:
+  name: Unknown creator
+  handle: swervle
+made:
+  models:
+    - claude-opus-5
+  providers:
+    - anthropic
+    - openai
+  tools:
+    - claude-ai
+  aiShare: unknown
+  source: Project README
+  evidence: creator
+tech:
+  engine: threejs
+  multiplayer: single
+genres:
+  - racing
+  - arcade
+media:
+  cover: games/swervle/cover
+  screenshots:
+    - games/swervle/shot-1
+    - games/swervle/shot-2
+dates:
+  added: 2026-09-29
+  updated: 2026-09-29
+status: live
+provenance:
+  foundVia: scout:awesome-cc0

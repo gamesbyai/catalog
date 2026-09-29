@@ -1,0 +1,52 @@
+slug: plug-prosper
+title: Plug & Prosper
+tagline: Run a phone-charging kiosk by wiring customers' devices into wall sockets.
+description: >-
+  Plug & Prosper puts you behind the counter of a charging kiosk. Customers
+  arrive with devices that need power, and you connect each one to a wall socket
+  using the right cables and adapters. Each day is a shift of matching gear to
+  sockets, and the earnings from it carry into the next stage.
+
+
+  Between days you spend your income on upgrades to the shop, so the setup grows
+  along with the customer flow. The core task is a hands-on puzzle of untangling
+  connections and picking compatible parts, wrapped in a light management loop
+  of earning and improving.
+
+
+  The game won AI Browser Game Jam 4. According to the creator, it was built
+  with Codex and the Godot engine, and it runs as a browser game.
+play:
+  url: https://smallloopworks.itch.io/plug-prosper
+  embeddable: false
+  platforms:
+    - browser
+creator:
+  name: Unknown creator
+  handle: plug-prosper
+made:
+  models: []
+  providers:
+    - openai
+  tools:
+    - codex
+  aiShare: unknown
+  source: Project README
+  evidence: creator
+tech:
+  engine: godot
+  multiplayer: single
+genres:
+  - management
+  - puzzle
+media:
+  cover: games/plug-prosper/cover
+  screenshots:
+    - games/plug-prosper/shot-1
+    - games/plug-prosper/shot-2
+dates:
+  added: 2026-09-29
+  updated: 2026-09-29
+status: live
+provenance:
+  foundVia: scout:awesome-cc0

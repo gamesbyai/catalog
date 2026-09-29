@@ -1,0 +1,58 @@
+slug: aether-rift
+title: Aether Rift
+tagline: Dodge dense patterns of projectiles and shoot back in a bullet hell shooter.
+description: >-
+  Aether Rift is a bullet hell shooter in which the player steers a ship through
+  crowded screens of incoming projectiles while firing back at enemies. Each run
+  is about reading the patterns, finding gaps to slip through, and staying alive
+  as long as possible.
+
+
+  The project comes from a creator who had never programmed before and wanted to
+  find out whether a playable bullet hell was within reach. The result is a
+  working action shooter that entered the Vibe Jam 2026, where it placed 576th
+  among 945 entries.
+
+
+  The creator built it with Claude Code and describes the experience as a
+  pleasant surprise, saying the tools made it possible to get a playable game
+  running without prior programming experience. It runs on the Phaser framework.
+play:
+  url: https://aether-rift.onrender.com
+  embeddable: true
+  platforms:
+    - browser
+creator:
+  name: remotayx
+  handle: remotayx
+  x: remotayx
+made:
+  models: []
+  providers:
+    - anthropic
+  tools:
+    - claude-code
+  aiShare: most
+  source: Vibe Jam 2026 submission form
+  evidence: creator
+tech:
+  engine: phaser
+  multiplayer: single
+genres:
+  - shooter
+  - arcade
+jam:
+  event: vibe-jam-2026
+  rank: 576
+  entries: 945
+media:
+  cover: games/aether-rift/cover
+  screenshots:
+    - games/aether-rift/shot-1
+    - games/aether-rift/shot-2
+dates:
+  added: 2026-09-29
+  updated: 2026-09-29
+status: live
+provenance:
+  foundVia: scout:vibejam-2026

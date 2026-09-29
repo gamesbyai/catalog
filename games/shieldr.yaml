@@ -1,0 +1,57 @@
+slug: shieldr
+title: Shieldr
+tagline: Place shields and grab power-ups to defend your planet from endless attacks.
+description: >-
+  Shieldr is an arcade survival game in which you protect a planet from a
+  constant stream of attacks. You place shields to block incoming threats and
+  pick up power-ups along the way. Runs continue until the defenses fail, so the
+  goal is to last as long as possible.
+
+
+  The design stays simple on purpose. The creator says they wanted a
+  straightforward arcade game after seeing that other games made through vibe
+  coding tended to be fairly complex. The result is a quick, easy-to-grasp
+  defense loop built around placement and timing. It also works on mobile.
+
+
+  The game was entered in Vibe Jam 2026 and runs on Phaser. According to the
+  creator, it was built with Cursor, which handled the coding work for this
+  small arcade project.
+play:
+  url: https://shieldrgame.com
+  embeddable: true
+  platforms:
+    - browser
+    - mobile
+creator:
+  name: richard_waithe
+  handle: richard-waithe
+  x: richard_waithe
+made:
+  models: []
+  tools:
+    - cursor
+  aiShare: most
+  source: Vibe Jam 2026 submission form
+  evidence: creator
+tech:
+  engine: phaser
+  multiplayer: single
+genres:
+  - arcade
+  - survival
+jam:
+  event: vibe-jam-2026
+  rank: 563
+  entries: 945
+media:
+  cover: games/shieldr/cover
+  screenshots:
+    - games/shieldr/shot-1
+    - games/shieldr/shot-2
+dates:
+  added: 2026-09-29
+  updated: 2026-09-29
+status: live
+provenance:
+  foundVia: scout:vibejam-2026

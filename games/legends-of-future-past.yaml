@@ -1,0 +1,52 @@
+slug: legends-of-future-past
+title: Legends of Future Past
+tagline: Explore a fantasy world in a rebuilt 1992 online multiplayer adventure.
+description: >-
+  Legends of Future Past is a recreation of a multiplayer adventure that ran on
+  CompuServe in 1992. It is an online adventure in which players explore a
+  shared fantasy world. The original service is no longer available, so this
+  version aims to bring the experience back for people to play again.
+
+
+  The project is a reconstruction rather than a fresh design. It draws on
+  surviving scripts, manuals and recordings of the original, which are used to
+  piece together how the adventure worked and what it looked like. That gives it
+  a preservation angle, treating a lost piece of early online gaming as
+  something worth restoring.
+
+
+  The creator built it with Claude Code, using the AI tool to help rebuild the
+  game from the archival material that still exists.
+play:
+  url: https://lofp.metavert.io
+  embeddable: true
+  platforms:
+    - browser
+creator:
+  name: Unknown creator
+  handle: legends-of-future-past
+made:
+  models: []
+  providers:
+    - anthropic
+  tools:
+    - claude-code
+  aiShare: unknown
+  source: Project README
+  evidence: creator
+tech:
+  multiplayer: single
+genres:
+  - adventure
+  - rpg
+media:
+  cover: games/legends-of-future-past/cover
+  screenshots:
+    - games/legends-of-future-past/shot-1
+    - games/legends-of-future-past/shot-2
+dates:
+  added: 2026-09-29
+  updated: 2026-09-29
+status: live
+provenance:
+  foundVia: scout:awesome-cc0

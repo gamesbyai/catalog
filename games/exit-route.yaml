@@ -1,0 +1,57 @@
+slug: exit-route
+title: EXIT ROUTE
+tagline: Manage energy, money, and paperwork week by week to build a new life abroad.
+description: >-
+  EXIT ROUTE is a strategy simulation about relocating to another country. The
+  player moves through the process week by week, balancing burnout, paperwork,
+  rising costs, and the pressure of a shrinking timeline. The goal is to secure
+  a future abroad before everything falls apart.
+
+
+  Instead of monsters or fantasy quests, the obstacles come from everyday life:
+  unreliable recruiters, bureaucracy, exhaustion, and bad luck. Each week is
+  built as a tradeoff, so pushing hard in one area tends to cost something in
+  another, and the tension comes from holding yourself together long enough to
+  make it.
+
+
+  The creator says the game was made to capture the stress of starting over
+  somewhere new. It was built with Lovable, according to the creator, and was
+  entered in Vibe Jam 2026. It is playable on mobile.
+play:
+  url: https://exit-route.lovable.app
+  embeddable: true
+  platforms:
+    - browser
+    - mobile
+creator:
+  name: LordBalyn
+  handle: lordbalyn
+  x: LordBalyn
+made:
+  models: []
+  tools:
+    - lovable
+  aiShare: most
+  source: Vibe Jam 2026 submission form
+  evidence: creator
+tech:
+  multiplayer: single
+genres:
+  - strategy
+  - simulation
+jam:
+  event: vibe-jam-2026
+  rank: 584
+  entries: 945
+media:
+  cover: games/exit-route/cover
+  screenshots:
+    - games/exit-route/shot-1
+    - games/exit-route/shot-2
+dates:
+  added: 2026-09-29
+  updated: 2026-09-29
+status: live
+provenance:
+  foundVia: scout:vibejam-2026
