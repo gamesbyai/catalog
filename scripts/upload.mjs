@@ -133,7 +133,7 @@ function jamCell(jam) {
  * Markdown contact sheet for a PR comment. `entries` are catalog entries (third-party text, all escaped);
  * `problems` maps slug → a short reason code for games without usable captures.
  */
-export function contactSheet(entries, baseUrl = MEDIA_URL, { problems = {} } = {}) {
+export function contactSheet(entries, baseUrl = MEDIA_URL, { problems = {}, version = Date.now().toString(36) } = {}) {
   const base = String(baseUrl).replace(/\/+$/, '');
   if (!/^https:\/\/[a-z0-9.-]+(?::\d+)?(?:\/[a-z0-9._-]+)*$/i.test(base)) throw new Error('baseUrl must be a plain https URL');
   const games = entries.filter((e) => e && typeof e === 'object' && isSlug(e.slug));
@@ -152,7 +152,8 @@ export function contactSheet(entries, baseUrl = MEDIA_URL, { problems = {} } = {
     const made = e.made && typeof e.made === 'object' ? e.made : {};
     const models = strings(made.models);
     const cells = [
-      problem ? `no capture (${problem})` : `<img src="${base}/games/${e.slug}/cover-320.webp" width="160">`,
+      // Versioned: the same URL may be edge-cached from an earlier capture.
+      problem ? `no capture (${problem})` : `<img src="${base}/games/${e.slug}/cover-320.webp?v=${version}" width="160">`,
       `**${escapeText(typeof e.title === 'string' ? e.title : e.slug, 80)}**<br>\`${e.slug}\``,
       list([...strings(made.tools), ...(models.length ? models : strings(made.providers))]),
       typeof e.tech?.engine === 'string' ? escapeText(e.tech.engine, 60) : '—',

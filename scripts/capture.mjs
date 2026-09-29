@@ -188,7 +188,7 @@ export async function captureOne(url, outDir, opts = {}) {
   const stop = new AbortController();
 
   // Frames taken so far live outside `work`, so a deadline or a frozen page after the cover still keeps the cover.
-  const state = { context: null, finished: false, shots: [] };
+  const state = { context: null, finished: false, shots: [], timedOut: false };
   const work = async () => {
     const b = await guard(
       getBrowser(o.sandbox).catch((e) => {
@@ -244,7 +244,7 @@ export async function captureOne(url, outDir, opts = {}) {
           shot = await guard(page.screenshot({ type: 'png', timeout: o.shotTimeout }));
         } catch (e) {
           if (e instanceof CaptureError || attempt === 1) {
-            if (i > 0) return shots; // earlier frames are enough; later ones are a bonus
+            if (i > 0) { state.timedOut = true; return shots; } // earlier frames may be enough; later ones are a bonus
             throw e instanceof CaptureError ? e : new CaptureError('screenshot', firstLine(e));
           }
         }
@@ -268,7 +268,8 @@ export async function captureOne(url, outDir, opts = {}) {
     const shots = await guard(running);
     // The best frames only: a loading screen or a black canvas never becomes a cover.
     const picked = await pickFrames(shots);
-    if (!picked.length) throw new CaptureError('blank', 'every frame was black, blank or a loading screen');
+    // Only black frames before a screenshot timeout: the game is slow, not blank, so the throttled pass gets a turn.
+    if (!picked.length) throw state.timedOut ? new CaptureError('screenshot', 'frames timed out after a blank start') : new CaptureError('blank', 'every frame was black, blank or a loading screen');
     mkdirSync(outDir, { recursive: true });
     picked.forEach((buf, i) => writeFileSync(files[i], buf));
     result = { ok: true, files: files.slice(0, picked.length), ...(picked.length < files.length ? { partial: true } : {}) };
@@ -320,9 +321,11 @@ function appendFailure(outRoot, failure) {
 }
 
 /** Captures each slug's play.url into <out>/<slug>/, logging failures to <out>/failed.json. Never stops early. */
-export async function captureSlugs(slugs, { root = ROOT, out = join(root, 'out'), log = console.log, ...opts } = {}) {
+export async function captureSlugs(slugs, { root = ROOT, out = join(root, 'out'), log = console.log, budgetMs = 75 * 60_000, ...opts } = {}) {
   mkdirSync(out, { recursive: true });
   const results = [];
+  // Throttled retries stop once the batch has used its budget, so the job always ends in time to upload.
+  const batchStart = Date.now();
   for (const slug of slugs) {
     const started = Date.now();
     let res;
@@ -336,7 +339,7 @@ export async function captureSlugs(slugs, { root = ROOT, out = join(root, 'out')
         const run = (o) => captureOne(url, join(out, slug), o).catch((e) => ({ ok: false, reason: 'error', detail: firstLine(e) }));
         res = await run(opts);
         // Screenshots that time out usually mean frames hog the main thread; one more pass with throttled frames.
-        if (!res.ok && (res.reason === 'screenshot' || res.reason === 'deadline') && !opts.throttle) {
+        if (!res.ok && (res.reason === 'screenshot' || res.reason === 'deadline') && !opts.throttle && Date.now() - batchStart < budgetMs) {
           log(`     ${slug}: ${res.reason}, retry throttled`);
           const again = await run({ ...opts, throttle: true });
           if (again.ok) res = { ...again, throttled: true };

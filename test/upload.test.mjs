@@ -110,7 +110,7 @@ test('contactSheet escapes third-party text and keeps one row per game', () => {
   assert.equal(rows.length, 1, md);
   const row = rows[0];
   assert.equal(row.split('|').length, cols, 'no extra table cells');
-  assert.ok(row.includes('<img src="https://media.gamesbyai.win/games/evil-game/cover-320.webp" width="160"'));
+  assert.match(row, /<img src="https:\/\/media\.gamesbyai\.win\/games\/evil-game\/cover-320\.webp\?v=[a-z0-9]+" width="160"/);
   assert.ok(!md.includes('<img src=x'));
   assert.ok(!md.includes('[x]('));
   assert.equal(row.split('](').length, 2, 'the play link is the only Markdown link');
@@ -175,7 +175,7 @@ test('runUpload --dry-run processes captures, never calls put, and writes our ow
   assert.deepEqual(res.problems, { bad: 'rejected', gone: 'deadline', stray: 'no-entry' });
   const sheet = readFileSync(join(out, 'contact-sheet.md'), 'utf8');
   assert.ok(!sheet.includes('attacker'));
-  assert.ok(sheet.includes('games/good/cover-320.webp'));
+  assert.match(sheet, /games\/good\/cover-320\.webp\?v=[a-z0-9]+"/, 'contact-sheet images carry a version (edge cache)');
   assert.ok(sheet.includes('no capture (rejected)'));
   assert.ok(sheet.includes('no capture (deadline)'));
   assert.ok(existsSync(join(res.variantsDir, 'good', 'cover-og.jpg')));

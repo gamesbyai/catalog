@@ -39,6 +39,20 @@ const PAGES = {
       requestAnimationFrame(frame);
     })();
   </script>`),
+  // Black at first; after 800 ms every frame blocks the main thread for 2 s.
+  '/black-then-hog': html(`<canvas id="c" width="1280" height="720"></canvas><script>
+    const g = document.getElementById('c').getContext('2d');
+    g.fillStyle = '#000'; g.fillRect(0, 0, 1280, 720);
+    let t = 0;
+    setTimeout(function start() {
+      (function frame() {
+        t += 1;
+        for (let x = 0; x < 1280; x += 40) for (let y = 0; y < 720; y += 40) { g.fillStyle = 'hsl(' + ((t * 7 + x + y * 3) % 360) + ' 80% ' + (20 + ((x + y + t * 23) % 60)) + '%)'; g.fillRect(x, y, 40, 40); }
+        const end = performance.now() + 2000; while (performance.now() < end) {}
+        requestAnimationFrame(frame);
+      })();
+    }, 800);
+  </script>`),
   '/black': html(`<canvas width="1280" height="720" style="background:#000"></canvas>`),
   '/to-download': html(`<p style="color:#fff">starting</p><script>addEventListener('load', () => setTimeout(() => { location.href = '/download'; }, 100));</script>`),
   '/alerts': html(`<script>
@@ -194,6 +208,26 @@ test('a game whose frames hog the main thread times out, then is captured on a t
   assert.equal(res.throttled, true);
   assert.ok(existsSync(join(root, 'out', 'hog', 'cover.png')));
   assert.match(lines.join(' '), /retry throttled/);
+});
+
+test('a black first frame followed by screenshot timeouts still gets the throttled retry', async () => {
+  const root = tmp();
+  mkdirSync(join(root, 'games'));
+  writeFileSync(join(root, 'games', 'late.yaml'), `play:\n  url: ${base}/black-then-hog\n`);
+  const lines = [];
+  const [res] = await captureSlugs(['late'], { ...FAST, times: [200, 1200, 1600], shotTimeout: 1900, deadline: 20_000, root, out: join(root, 'out'), log: (l) => lines.push(l) });
+  assert.match(lines.join(' '), /retry throttled/);
+  assert.notEqual(res.reason, 'blank');
+});
+
+test('no throttled retry once the batch budget is spent', async () => {
+  const root = tmp();
+  mkdirSync(join(root, 'games'));
+  writeFileSync(join(root, 'games', 'hog.yaml'), `play:\n  url: ${base}/raf-hog\n`);
+  const lines = [];
+  const [res] = await captureSlugs(['hog'], { ...FAST, times: [300, 700], shotTimeout: 1900, deadline: 20_000, budgetMs: 0, root, out: join(root, 'out'), log: (l) => lines.push(l) });
+  assert.equal(res.ok, false);
+  assert.doesNotMatch(lines.join(' '), /retry throttled/);
 });
 
 test('the throttle keeps requestAnimationFrame working and cancellable', async () => {
