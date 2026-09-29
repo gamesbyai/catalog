@@ -1,0 +1,60 @@
+slug: perihelion-arc
+title: Perihelion Arc
+tagline: Fly custom drones through time trial courses and upgrade them after every run.
+description: >-
+  Perihelion Arc is a time trial racing game in which you pilot a custom drone
+  through a course set in the void. Each run is a race against the clock, and
+  the goal is to finish faster than before while keeping control of a machine
+  built for speed.
+
+
+  Progression is the focus. Every run improves both your drone and your skills,
+  so the gear you collect and the way you fly feed into each other. The design
+  leans on the appeal of time trial racing combined with gear upgrades, which
+  the creator says they enjoy in other games.
+
+
+  It was made for Vibe Jam 2026 using Three.js, and it runs in the browser with
+  support for mobile devices and multiplayer, so you can race on a phone or a
+  desktop.
+play:
+  url: https://0x1b6f9003f7b31c9f127a77951c70bae228da7b6b-1776030150984.verse8.games
+  embeddable: true
+  platforms:
+    - browser
+    - mobile
+creator:
+  name: CosminSerban10
+  handle: cosminserban10
+  x: CosminSerban10
+made:
+  models: []
+  tools: []
+  aiShare: most
+  source: Vibe Jam 2026 submission form
+  evidence: inferred
+tech:
+  engine: threejs
+  multiplayer: online
+genres:
+  - racing
+  - action
+  - rpg
+jam:
+  event: vibe-jam-2026
+  rank: 456
+  entries: 945
+media:
+  cover: games/perihelion-arc/cover
+  screenshots:
+    - games/perihelion-arc/shot-1
+    - games/perihelion-arc/shot-2
+dates:
+  added: 2026-09-29
+  updated: 2026-09-29
+status: live
+provenance:
+  foundVia: scout:vibejam-2026
+  scannedAt: 2026-09-29T18:39:18.375Z
+  flags:
+    - unclear-ai

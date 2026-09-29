@@ -1,0 +1,62 @@
+slug: gravity-rush
+title: Gravity Rush
+tagline: Flip gravity to run, jump, and collect crystals through endless
+  generated levels.
+description: >-
+  Gravity Rush is a platformer built around a single mechanic: flipping gravity.
+  The player guides a character through levels, switching between floor and
+  ceiling to cross gaps, dodge hazards, and gather crystals. Levels are
+  procedurally generated, so a run continues as long as the player can survive
+  the obstacles ahead.
+
+
+  The design leans on momentum and timing rather than a large move set. With
+  only one action to master, difficulty comes from how the levels are laid out
+  and from hazards that grow more dangerous as the run goes on. The creator
+  cites classic gravity-flipping games such as VVVVVV as inspiration.
+
+
+  It runs in the browser on Three.js and supports mobile devices. The creator
+  lists Antigravity as the tool used to build it, and it was entered in Vibe Jam
+  2026.
+play:
+  url: https://gravity-heist.vercel.app
+  embeddable: true
+  platforms:
+    - browser
+    - mobile
+creator:
+  name: TheMananJain
+  handle: themananjain
+  x: TheMananJain
+made:
+  models: []
+  providers:
+    - google
+  tools:
+    - antigravity
+  aiShare: most
+  source: Vibe Jam 2026 submission form
+  evidence: creator
+tech:
+  engine: threejs
+  multiplayer: single
+genres:
+  - platformer
+  - arcade
+jam:
+  event: vibe-jam-2026
+  rank: 458
+  entries: 945
+media:
+  cover: games/gravity-rush/cover
+  screenshots:
+    - games/gravity-rush/shot-1
+    - games/gravity-rush/shot-2
+dates:
+  added: 2026-09-29
+  updated: 2026-09-29
+status: live
+provenance:
+  foundVia: scout:vibejam-2026
+  scannedAt: 2026-09-29T18:39:18.376Z

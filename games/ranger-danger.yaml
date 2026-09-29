@@ -1,0 +1,63 @@
+slug: ranger-danger
+title: Ranger Danger
+tagline: Defend your base by placing defenses and fighting enemies yourself in
+  pixel-art combat.
+description: >-
+  Ranger Danger is a pixel-art game that mixes tower defense with real-time
+  action combat. Instead of only placing defenses and watching, the player takes
+  part in the fight directly, using strategic planning alongside hands-on combat
+  to hold off incoming enemies.
+
+
+  The appeal is in the hybrid loop. Tower defense usually leaves you waiting
+  between decisions, while action games lean on reflexes. Here the two are
+  combined, so the player is always choosing between building up the defense and
+  stepping in to fight. The creator says it was the most fun loop among several
+  one-shot ideas they tried.
+
+
+  The creator built it with Claude Code, using Phaser for the game itself. It
+  was a Vibe Jam 2026 entry, placing 389th out of 945 entries, and it is set up
+  to work on mobile devices as well as desktop.
+play:
+  url: https://rangerdanger.xyz
+  embeddable: true
+  platforms:
+    - browser
+    - mobile
+creator:
+  name: ZakAgain
+  handle: zakagain
+  x: ZakAgain
+made:
+  models: []
+  providers:
+    - anthropic
+  tools:
+    - claude-code
+  aiShare: most
+  source: Vibe Jam 2026 submission form
+  evidence: creator
+tech:
+  engine: phaser
+  multiplayer: single
+genres:
+  - tower-defense
+  - action
+  - strategy
+jam:
+  event: vibe-jam-2026
+  rank: 389
+  entries: 945
+media:
+  cover: games/ranger-danger/cover
+  screenshots:
+    - games/ranger-danger/shot-1
+    - games/ranger-danger/shot-2
+dates:
+  added: 2026-09-29
+  updated: 2026-09-29
+status: live
+provenance:
+  foundVia: scout:vibejam-2026
+  scannedAt: 2026-09-29T18:39:18.361Z

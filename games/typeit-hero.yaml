@@ -1,0 +1,57 @@
+slug: typeit-hero
+title: TypeIt Hero
+tagline: Practice touch typing by playing, so kids learn to type without looking down.
+description: >-
+  TypeIt Hero is a typing game built to help children learn to type without
+  watching the keyboard. Players take the role of a hero whose progress depends
+  on their keystrokes, which turns drills that are usually dull into something
+  with a goal and a sense of momentum.
+
+
+  The idea came from a parent of four who watched his oldest, a 9-year-old,
+  struggle through slow hunt-and-peck typing. The game aims to make touch typing
+  feel playful instead of like homework, keeping the focus on building real
+  keyboard habits that carry over to everyday use.
+
+
+  It placed 412th out of 945 entries in Vibe Jam 2026. Claude Code is the tool
+  associated with its development, and the game is played on a desktop keyboard.
+play:
+  url: https://typeithero.cates.fm/rhythm.html
+  embeddable: true
+  platforms:
+    - browser
+creator:
+  name: _AnnaCates
+  handle: annacates
+  x: _AnnaCates
+made:
+  models: []
+  providers:
+    - anthropic
+  tools:
+    - claude-code
+  aiShare: most
+  source: Vibe Jam 2026 submission form
+  evidence: creator
+tech:
+  multiplayer: single
+genres:
+  - educational
+  - casual
+jam:
+  event: vibe-jam-2026
+  rank: 412
+  entries: 945
+media:
+  cover: games/typeit-hero/cover
+  screenshots:
+    - games/typeit-hero/shot-1
+    - games/typeit-hero/shot-2
+dates:
+  added: 2026-09-29
+  updated: 2026-09-29
+status: live
+provenance:
+  foundVia: scout:vibejam-2026
+  scannedAt: 2026-09-29T18:39:18.364Z
