@@ -168,7 +168,7 @@ test('runUpload --dry-run processes captures, never calls put, and writes our ow
   const calls = [];
   const res = await runUpload({ outDir: out, gamesDir: games, dryRun: true, put: (...a) => calls.push(a), log: () => {} });
   assert.equal(calls.length, 0);
-  assert.equal(res.uploaded.length, 3 * 6 + 1);
+  assert.equal(res.uploaded.length, 3 * 6 + 1 + 1);
   assert.ok(res.uploaded.includes('games/good/cover-og.jpg'));
   assert.ok(res.uploaded.includes('games/good/shot-2-640.avif'));
   assert.ok(!res.uploaded.some((k) => k.startsWith('games/bad/') || k.startsWith('games/stray/')));
@@ -185,8 +185,11 @@ test('runUpload puts every variant under games/<slug>/ with its content type', a
   const { out, games } = await fixtureOut();
   const calls = [];
   const res = await runUpload({ outDir: out, gamesDir: games, put: (key, file, type) => calls.push({ key, file, type }), log: () => {} });
-  assert.equal(calls.length, 19);
+  assert.equal(calls.length, 20);
   assert.deepEqual(calls.map((c) => c.key), res.uploaded);
+  // The ready marker goes up last, so the site never links a half-uploaded game.
+  assert.equal(calls.at(-1).key, 'games/good/ready.json');
+  assert.equal(calls.at(-1).type, 'application/json');
   const byKey = Object.fromEntries(calls.map((c) => [c.key, c]));
   assert.equal(byKey['games/good/cover-320.avif'].type, 'image/avif');
   assert.equal(byKey['games/good/shot-1-1280.webp'].type, 'image/webp');
@@ -199,6 +202,13 @@ test('runUpload marks a game whose upload fails and keeps going', async () => {
   const res = await runUpload({ outDir: out, gamesDir: games, put: () => { throw new Error('r2 said no'); }, log: () => {} });
   assert.equal(res.problems.good, 'upload-failed');
   assert.ok(readFileSync(join(out, 'contact-sheet.md'), 'utf8').includes('no capture (upload-failed)'));
+});
+
+test('no ready marker when any variant fails to upload', async () => {
+  const { out, games } = await fixtureOut();
+  const keys = [];
+  await runUpload({ outDir: out, gamesDir: games, put: (key) => { keys.push(key); if (key.endsWith('shot-2-1280.avif')) throw new Error('r2 said no'); }, log: () => {} });
+  assert.ok(!keys.includes('games/good/ready.json'));
 });
 
 test('runUpload can read entries from a git ref instead of the working tree', async () => {

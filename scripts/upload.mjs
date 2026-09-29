@@ -277,6 +277,14 @@ export async function runUpload({ outDir, gamesDir = join(ROOT, 'games'), entrie
     }
     const results = dryRun ? variants.map(() => ({ ok: true })) : await mapLimit(variants, concurrency, (v) => put(v.key, v.file, v.type));
     variants.forEach((v, i) => results[i].ok && uploaded.push(v.key));
+    // The ready marker goes up last and only after every variant: the site links a game's images only when it exists.
+    if (results.every((r) => r.ok)) {
+      const marker = { key: `games/${slug}/ready.json`, file: join(vdir, slug, 'ready.json'), type: 'application/json' };
+      writeFileSync(marker.file, JSON.stringify({ slug, files: variants.length }));
+      const [res] = dryRun ? [{ ok: true }] : await mapLimit([marker], 1, (v) => put(v.key, v.file, v.type));
+      if (res.ok) uploaded.push(marker.key);
+      else results.push(res);
+    }
     const failedPut = results.find((r) => !r.ok);
     if (failedPut) {
       problems[slug] = 'upload-failed';
