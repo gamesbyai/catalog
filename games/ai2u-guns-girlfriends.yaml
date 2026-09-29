@@ -1,0 +1,55 @@
+slug: ai2u-guns-girlfriends
+title: AI2U - Guns & Girlfriends
+tagline: Build a base, launch nukes and outfight three rival factions in a
+  real-time strategy game.
+description: >-
+  AI2U - Guns & Girlfriends is a real-time strategy game in the style of Red
+  Alert. The player builds up a base, gathers forces and fights against three
+  rival factions, with nukes available as a late-game weapon. It runs in the
+  browser and is rendered in 3D.
+
+
+  The game placed as runner-up in AI Browser Game Jam 4. Its appeal lies in
+  packing the classic base-building and army-management loop into a browser
+  page, with several opponents competing at once rather than a single enemy to
+  beat.
+
+
+  The creator says it was built with Claude Code and Gemini, using Three.js for
+  the 3D graphics. That combination of AI coding tools and a web graphics
+  library kept the whole project playable directly in a browser tab.
+play:
+  url: https://helixngc7293.itch.io/gandg
+  embeddable: false
+  platforms:
+    - browser
+creator:
+  name: Unknown creator
+  handle: ai2u-guns-girlfriends
+made:
+  models: []
+  providers:
+    - anthropic
+    - google
+  tools:
+    - claude-code
+    - gemini-app
+  aiShare: unknown
+  source: Project README
+  evidence: creator
+tech:
+  engine: threejs
+  multiplayer: single
+genres:
+  - strategy
+media:
+  cover: games/ai2u-guns-girlfriends/cover
+  screenshots:
+    - games/ai2u-guns-girlfriends/shot-1
+    - games/ai2u-guns-girlfriends/shot-2
+dates:
+  added: 2026-09-29
+  updated: 2026-09-29
+status: live
+provenance:
+  foundVia: scout:awesome-cc0

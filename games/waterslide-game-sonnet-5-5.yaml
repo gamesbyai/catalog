@@ -1,0 +1,54 @@
+slug: waterslide-game-sonnet-5-5
+title: waterslide game sonnet 5.5
+tagline: Play a waterslide-themed game built in one shot by an AI model
+description: >-
+  Waterslide Game Sonnet 5.5 is a waterslide-themed game published as a GitHub
+  repository. It comes from a personal benchmark in which the creator gives the
+  same game idea to several AI models and compares what each one produces from a
+  single attempt.
+
+
+  This version is the Claude Sonnet 5.5 entry in that comparison. It was run at
+  the extra-high effort setting. That makes it useful as a snapshot of what one
+  model built from a single pass, with no follow-up rounds of fixes or added
+  features.
+
+
+  The creator states that it was made with Claude Sonnet 5.5 and that the whole
+  game was a zero-shot attempt. Because it is one of several versions of the
+  same idea, it can be compared with the sibling projects built by other models.
+play:
+  url: https://kjlkurt.github.io/waterslide-game-sonnet-5.5
+  embeddable: true
+  platforms:
+    - browser
+repo: https://github.com/KJLKurt/waterslide-game-sonnet-5.5
+creator:
+  name: KJLKurt
+  handle: kjlkurt
+made:
+  models:
+    - claude-sonnet-5-5
+  providers:
+    - anthropic
+  tools:
+    - claude-ai
+  aiShare: all
+  source: GitHub repository README
+  evidence: repo
+  evidenceUrl: https://github.com/KJLKurt/waterslide-game-sonnet-5.5
+tech:
+  multiplayer: single
+genres:
+  - arcade
+media:
+  cover: games/waterslide-game-sonnet-5-5/cover
+  screenshots:
+    - games/waterslide-game-sonnet-5-5/shot-1
+    - games/waterslide-game-sonnet-5-5/shot-2
+dates:
+  added: 2026-09-29
+  updated: 2026-09-29
+status: live
+provenance:
+  foundVia: scout:github
