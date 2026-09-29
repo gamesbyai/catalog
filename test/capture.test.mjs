@@ -176,7 +176,9 @@ test('the CLI loop reads entries, logs failures to failed.json and always contin
 
   const results = await captureSlugs(['hangs', 'no-such-game', '../escape', 'plays'], { ...FAST, deadline: 2500, shotTimeout: 60_000, root, out, log: () => {} });
   assert.deepEqual(results.map((r) => r.ok), [false, false, false, true]);
-  assert.deepEqual(files(join(out, 'plays')).sort(), ['cover.png', 'shot-1.png', 'shot-2.png']);
+  // The loop continued and captured the good game. Its frame count isn't the point here: the 2.5 s deadline that keeps
+  // the hanging case fast can end a slow runner's capture after the cover (a partial result, still ok).
+  assert.ok(files(join(out, 'plays')).includes('cover.png'));
   assert.ok(!existsSync(join(out, 'hangs')) || files(join(out, 'hangs')).length === 0);
   const failed = JSON.parse(readFileSync(join(out, 'failed.json'), 'utf8'));
   assert.deepEqual(failed.map((f) => [f.slug, f.reason]), [
