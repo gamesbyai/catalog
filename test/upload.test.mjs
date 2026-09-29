@@ -121,6 +121,9 @@ test('contactSheet escapes third-party text and keeps one row per game', () => {
   assert.ok(row.includes('threejs'));
   assert.ok(row.includes('| yes |'));
   assert.ok(row.includes('[e.vil](https://e.vil/play?a=1%7C2&b=%283%29)'));
+  // The public sheet shows the games, never review flags.
+  assert.doesNotMatch(lines[header], /Flags/);
+  assert.ok(!md.includes('injection'));
 });
 
 test('contactSheet shows failures without an image and refuses unsafe play links', () => {

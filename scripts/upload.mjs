@@ -142,10 +142,10 @@ export function contactSheet(entries, baseUrl = MEDIA_URL, { problems = {}, vers
   const lines = [
     `### Contact sheet: ${captured} of ${games.length} game${games.length === 1 ? '' : 's'} captured`,
     '',
-    'Screenshots were taken in a CI job without secrets and re-encoded before upload. Entry text is shown as plain text.',
+    'Entry text is shown as plain text.',
     '',
-    '| Cover | Game | Made with | Engine | Genres | Jam rank | Embeddable | Flags | Play |',
-    '| --- | --- | --- | --- | --- | --- | --- | --- | --- |',
+    '| Cover | Game | Made with | Engine | Genres | Jam rank | Embeddable | Play |',
+    '| --- | --- | --- | --- | --- | --- | --- | --- |',
   ];
   for (const e of games) {
     const problem = problemOf(e.slug);
@@ -160,7 +160,6 @@ export function contactSheet(entries, baseUrl = MEDIA_URL, { problems = {}, vers
       list(e.genres),
       jamCell(e.jam),
       e.play?.embeddable === true ? 'yes' : 'no',
-      list(e.provenance?.flags, '; '),
       playLink(e.play?.url),
     ];
     lines.push(`| ${cells.join(' | ')} |`);
