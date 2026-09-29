@@ -1,33 +1,270 @@
 terms:
-  - { slug: action, name: Action }
-  - { slug: adventure, name: Adventure }
-  - { slug: arcade, name: Arcade }
-  - { slug: card, name: Card }
-  - { slug: casual, name: Casual }
-  - { slug: educational, name: Educational }
-  - { slug: fighting, name: Fighting }
-  - { slug: horror, name: Horror }
-  - { slug: idle, name: Idle }
-  - { slug: platformer, name: Platformer }
-  - { slug: puzzle, name: Puzzle }
-  - { slug: racing, name: Racing }
-  - { slug: rhythm, name: Rhythm }
-  - { slug: roguelike, name: Roguelike }
-  - { slug: rpg, name: RPG }
-  - { slug: sandbox, name: Sandbox }
-  - { slug: shooter, name: Shooter }
-  - { slug: simulation, name: Simulation }
-  - { slug: sports, name: Sports }
-  - { slug: strategy, name: Strategy }
-  - { slug: survival, name: Survival }
-  - { slug: tower-defense, name: Tower defense }
-  - { slug: trivia, name: Trivia }
-  - { slug: word, name: Word }
-  - { slug: board, name: Board }
-  - { slug: io, name: .io }
-  - { slug: management, name: Management and tycoon }
-  - { slug: metroidvania, name: Metroidvania }
-  - { slug: open-world, name: Open world }
-  - { slug: party, name: Party }
-  - { slug: stealth, name: Stealth }
-  - { slug: visual-novel, name: Visual novel }
+  - slug: action
+    name: Action
+    intro: |-
+      An action game is a video game that emphasizes physical challenges, mainly hand-eye coordination and reaction time. The core loop is short and repeated: read the screen, react, and survive the next threat, with little time for long planning. Platformers, shooters and fighting games are all action games, and Space Invaders and Pac-Man are classic examples.
+
+      Action games run in real time, so the code reads input every frame, moves the player and the enemies, and tests for collisions between them. Collision tests usually use simple shapes such as rectangles and circles. Many action games also track lives, health and score across a run.
+    sources:
+      - "https://en.wikipedia.org/wiki/Action_game"
+      - "https://developer.mozilla.org/en-US/docs/Games/Techniques/2D_collision_detection"
+  - slug: adventure
+    name: Adventure
+    intro: |-
+      An adventure game puts the player in the role of a protagonist in an interactive story, driven by exploration and puzzle solving. The core loop is to explore a location, collect and use items, talk to characters, and solve the puzzle that opens the next area. Colossal Cave Adventure (1976) is widely considered the first adventure game, and Zork and Myst are well-known later examples.
+
+      Adventure games are mostly about state rather than physics. The code tracks an inventory, which areas are unlocked, which dialogue choices were made and which puzzles are solved, and it lets players save and resume. Text adventures add a parser that turns typed commands into actions, while point-and-click games map mouse clicks to objects on screen.
+    sources:
+      - "https://en.wikipedia.org/wiki/Adventure_game"
+  - slug: arcade
+    name: Arcade
+    intro: |-
+      An arcade video game is a game played on a coin-operated cabinet, and arcade-style games keep the same short, score-driven design. The core loop is a single run: survive as levels get harder, use up your lives, and try to beat your best score. Wikipedia describes the classic formula as easy to learn and difficult to master. Pong, Space Invaders and Pac-Man are classic examples.
+
+      Because the classic formula is built on multiple lives and levels that get harder, the code needs a tight game loop, quick input handling and a difficulty curve that rises with each level. It also tracks lives and score, and it has to restart quickly after each game over.
+    sources:
+      - "https://en.wikipedia.org/wiki/Arcade_video_game"
+  - slug: card
+    name: Card
+    intro: |-
+      A card game is any game that uses cards as its main device, whether the cards are a standard deck or made for that game. Digital versions cover classics such as solitaire, trick-taking games like Bridge, and digital collectible card games such as Hearthstone. The core loop is to hold a hand, choose which card to play, and respond to the other side until the rules declare a winner.
+
+      Card games are rules plus hidden information. The code has to model a deck, shuffle it, deal hands, keep each player's cards private, and enforce turn order and legal plays. Collectible card games add deck building and resources such as mana, so the software must also track card effects, health and the state of the board through every turn.
+    sources:
+      - "https://en.wikipedia.org/wiki/Card_game"
+      - "https://en.wikipedia.org/wiki/Digital_collectible_card_game"
+  - slug: casual
+    name: Casual
+    intro: |-
+      A casual game is a video game aimed at a mass-market audience, as opposed to a hardcore game aimed at hobbyist gamers. Wikipedia describes casual games as having simpler rules, shorter sessions and less learned skill. The core loop is a quick round you can start and stop at any time, such as matching gems or laying out a solitaire deal. Solitaire and Bejeweled are well-known examples.
+
+      Casual games are commonly played in web browsers and on phones, so the code usually has to load quickly and work with both a mouse and touch. With simple rules, the logic is typically a small board or grid, a scoring rule and a clear win or lose state.
+    sources:
+      - "https://en.wikipedia.org/wiki/Casual_game"
+  - slug: educational
+    name: Educational
+    intro: |-
+      An educational game is a game designed with an educational purpose, or one that has incidental educational value. It can be a board, card or video game. The core loop is to attempt a task, get feedback on the answer or choice, and move on to the next challenge. The Oregon Trail, first written in 1971 by three college students, teaches players about 19th-century pioneer life through supply and travel decisions.
+
+      Educational games need content that is accurate and suited to the learner's age. The code usually pairs a bank of questions or scenarios with a way to check answers and give feedback. Typical design elements include clear learning goals, structured rules and content tailored to the learners' age and familiarity.
+    sources:
+      - "https://en.wikipedia.org/wiki/Educational_game"
+      - "https://en.wikipedia.org/wiki/The_Oregon_Trail_(series)"
+  - slug: fighting
+    name: Fighting
+    intro: |-
+      A fighting game is an action game in which two or more on-screen characters fight each other, most often one-on-one in a fixed arena. The core loop is a round: read your opponent, land attacks and combos, and drain their health bar before yours empties, typically over three rounds. Street Fighter II (1991), Mortal Kombat (1992) and Tekken (1994) are classic examples.
+
+      Fighting games depend on precise timing. Special moves are triggered by carefully timed button and stick sequences, so the code has to read input sequences, decide when attacks connect, and keep health, combo and round state in sync. Online play needs netcode that copes with latency, and rollback netcode does this by returning to the last accurate game state and correcting errors.
+    sources:
+      - "https://en.wikipedia.org/wiki/Fighting_game"
+  - slug: horror
+    name: Horror
+    intro: |-
+      A horror game is a video game centered on horror fiction and designed to scare the player. It is defined more by tone and presentation than by one set of mechanics, so the core loop varies. In survival horror, the loop is to explore, find items and solve puzzles while avoiding or barely surviving enemies. Resident Evil (1996) and Silent Hill (1999) are well-known survival horror examples.
+
+      Horror leans on atmosphere, which is also a code problem: dim lighting that limits what the player can see, off-screen sounds, and scripted enemy encounters. Survival horror designs add limited ammunition and health, a small inventory and save points. Some games use fixed camera angles to build tension.
+    sources:
+      - "https://en.wikipedia.org/wiki/Horror_game"
+      - "https://en.wikipedia.org/wiki/Survival_horror"
+  - slug: idle
+    name: Idle
+    intro: |-
+      An idle game, also called an incremental game, is built around gradual, often exponential growth of in-game resources through repetitive actions or automation. Clicker games stress active clicking, while idle games automate most of the work. The core loop is to earn currency, spend it on upgrades that earn more, and often reset for a permanent bonus called prestige. Cookie Clicker and AdVenture Capitalist are well-known examples.
+
+      The code in an idle game is mostly numbers and saved state. It needs a way to store and display very large values, using scientific notation or suffixes such as M and T, plus a timed update that adds income. Many games also track progress while the game is closed.
+    sources:
+      - "https://en.wikipedia.org/wiki/Incremental_game"
+  - slug: platformer
+    name: Platformer
+    intro: |-
+      A platformer is an action game whose core objective is to move the player character between points in an environment, over uneven terrain and suspended platforms that require jumping and climbing. The core loop is to run, time jumps across gaps, avoid hazards such as pits, and reach the end of the level. Donkey Kong (1981) and Super Mario Bros. (1985) are classic examples.
+
+      Platformers live on movement code. The developer needs gravity, a jump model (a fixed arc, or one the player can steer mid-air) and collision tests against terrain and hazards. Levels are commonly built from a grid of tiles, and scrolling levels need a camera that converts world coordinates to screen coordinates.
+    sources:
+      - "https://en.wikipedia.org/wiki/Platform_game"
+      - "https://developer.mozilla.org/en-US/docs/Games/Techniques/Tilemaps"
+      - "https://developer.mozilla.org/en-US/docs/Games/Techniques/2D_collision_detection"
+  - slug: puzzle
+    name: Puzzle
+    intro: |-
+      A puzzle video game emphasizes puzzle solving and tests skills such as logic, pattern recognition, sequence solving and spatial awareness. The core loop is to study a board or a set of rules, make a move, and see whether it gets you closer to the solution, level after level. Tetris (1985), Bejeweled and Portal are examples.
+
+      Puzzle games are defined by their rules, so the code centers on a clear model of the board or pieces and a check for win and lose conditions. Some add physics, and many add a real-time element, as with the falling blocks in Tetris. Levels must be built or generated so that a solution exists.
+    sources:
+      - "https://en.wikipedia.org/wiki/Puzzle_video_game"
+  - slug: racing
+    name: Racing
+    intro: |-
+      A racing game is a video game in which the player takes part in racing competitions, ranging from realistic simulations to fantastical arcade-style racers. The core loop is to drive a circuit or a point-to-point course, manage laps and position against opponents or the clock, and improve your time. Pole Position (1982), Gran Turismo (1997) and Mario Kart are examples.
+
+      Racers need a vehicle model. Simulation racers emphasize realistic handling and cornering, while arcade racers use looser physics that let players drift through turns. The code also needs track data, lap and position tracking, computer-controlled opponents and a camera view such as first-person, chase or overhead.
+    sources:
+      - "https://en.wikipedia.org/wiki/Racing_video_game"
+  - slug: rhythm
+    name: Rhythm
+    intro: |-
+      A rhythm game is a music-themed action game that challenges the player's sense of rhythm. Players press buttons in a set sequence in time with music, and the game awards points for accuracy and for staying in sync with the beat. The core loop is a song: read the on-screen prompts, hit them on time, and raise your score. PaRappa the Rapper (1996), Dance Dance Revolution and Guitar Hero are examples.
+
+      Timing is the main code problem. The game has to keep note prompts in sync with the audio, judge each input against the beat and score it. Many games show upcoming notes on a scrolling note highway with a score and a performance meter. Some rely on special controllers, such as guitars or dance mats.
+    sources:
+      - "https://en.wikipedia.org/wiki/Rhythm_game"
+  - slug: roguelike
+    name: Roguelike
+    intro: |-
+      A roguelike is a style of role-playing game traditionally built around dungeon crawls through procedurally generated levels, with turn-based play, grid-based movement and permanent death. The name comes from Rogue (1980). The core loop is a run: enter the dungeon, fight, gather items, and get as far as you can before dying and starting over. NetHack is a classic example.
+
+      Roguelikes need procedural generation, which means code that builds a new, playable level each run. They also need turn logic, where the game waits for the player and then moves every monster, plus systems for items, monster stats and resources such as food. Games that keep some of these traits without turn-based play are often called roguelites.
+    sources:
+      - "https://en.wikipedia.org/wiki/Roguelike"
+  - slug: rpg
+    name: RPG
+    intro: |-
+      A role-playing game is a genre generally defined by a detailed story and character advancement, often through levels or other skills. The player controls a central character or a party, and the core loop is to take on quests, fight or talk through encounters, collect loot and grow stronger. The genre draws on tabletop Dungeons & Dragons, and Ultima, Dragon Quest and Final Fantasy are well-known series.
+
+      RPGs are data-heavy. Characters have numeric attributes such as strength that decide whether an action succeeds, and the code tracks experience, levels, equipment, an inventory and quest progress. Combat is either turn-based, where one character acts at a time, or real-time. Because a character can die, reloading a saved state is a core feature.
+    sources:
+      - "https://en.wikipedia.org/wiki/Role-playing_video_game"
+  - slug: sandbox
+    name: Sandbox
+    intro: |-
+      A sandbox game gives players a great degree of freedom to interact creatively, usually with no predetermined goal or with goals the players set themselves, such as building a house. The core loop is open-ended: gather or place material, change the world, and decide what to try next. Minecraft and Garry's Mod are well-known examples.
+
+      Sandbox games need a world the player can change and that stays changed. The code usually holds a persistent world state and a physics or interaction system that responds to what players do, and many use block or voxel grids. Some also let players share what they make.
+    sources:
+      - "https://en.wikipedia.org/wiki/Sandbox_game"
+  - slug: shooter
+    name: Shooter
+    intro: |-
+      A shooter is a subgenre of action games focused on defeating enemies with ranged weapons the game gives the player. The core loop is to aim and fire, dodge incoming fire, and move on to the next wave or area, relying on spatial awareness and reflexes. Subgenres include shoot 'em ups such as Space Invaders, first-person shooters such as Doom, and third-person shooters.
+
+      Shooters need projectiles and hit detection, enemies driven by code, and rules for ammunition and health. The camera depends on the subgenre: a fixed or scrolling screen for shoot 'em ups, a first-person or third-person view in 3D. Shooters played against other people also need multiplayer networking.
+    sources:
+      - "https://en.wikipedia.org/wiki/Shooter_game"
+      - "https://developer.mozilla.org/en-US/docs/Games/Techniques/2D_collision_detection"
+  - slug: simulation
+    name: Simulation
+    intro: |-
+      A simulation game is a broad category of games designed to closely simulate real-world activities, for purposes such as training, analysis, prediction or entertainment. They cover vehicles, life and social systems, farming, construction and management, and jobs. Usually there are no strictly defined goals, and the player controls a character or environment freely. The Sims and SimCity are well-known examples.
+
+      The code models a system: rules for physics, economies or ecosystems that respond to one another. Player choices have consequences that carry forward, so these games track state over time. Managing limited resources is a common thread.
+    sources:
+      - "https://en.wikipedia.org/wiki/Simulation_video_game"
+  - slug: sports
+    name: Sports
+    intro: |-
+      A sports video game centers on simulating sports activities, including team sports, track and field, shooting sports, extreme sports and combat sports. The core loop is match play: control athletes, score within the rules of the sport, and often continue through a season or career mode. Pong, Madden NFL and Wii Sports are well-known examples.
+
+      Sports games need the rules of the sport in code, physics for the ball and the athletes, and athlete attributes such as speed, strength and accuracy. Teammates and opponents are often controlled by artificial intelligence. Modern titles often add online play with ranked matchmaking, and career modes add a management layer on top of the matches.
+    sources:
+      - "https://en.wikipedia.org/wiki/Sports_video_game"
+  - slug: strategy
+    name: Strategy
+    intro: |-
+      A strategy video game emphasizes strategic or tactical planning and decision-making, often through indirect control of multiple units and management of limited resources. The core loop is to gather resources, turn them into units, buildings or research, and use them to gain ground on an opponent. Subgenres include real-time strategy, such as StarCraft, and turn-based strategy and 4X games such as Civilization.
+
+      Strategy games need AI opponents and pathfinding so units find routes around obstacles. Turn-based games need turn logic that decides who acts when, either alternating or simultaneous. Many hide information with fog of war, so the game must track what each side has seen.
+    sources:
+      - "https://en.wikipedia.org/wiki/Strategy_video_game"
+  - slug: survival
+    name: Survival
+    intro: |-
+      A survival game is an action-game subgenre set in a hostile environment where players start with minimal equipment and must survive by finding resources to manage hunger, thirst, disease and mental state. The core loop is to gather resources, craft tools and weapons, build shelter and fend off threats. Minecraft, Don't Starve and Rust are well-known examples.
+
+      Survival games need crafting recipes, tool durability, an inventory and meters for needs such as hunger and health. They also need a persistent world that players can save and return to. Multiplayer versions run on game servers and support cooperative or competitive play.
+    sources:
+      - "https://en.wikipedia.org/wiki/Survival_game"
+  - slug: tower-defense
+    name: Tower defense
+    intro: |-
+      Tower defense is a strategy subgenre where the goal is to defend territory by obstructing attackers or stopping enemies from reaching the exits. The core loop is to place defenses along an enemy path, survive a wave, earn currency for defeated enemies, and upgrade or repair before the next wave. Plants vs. Zombies (2009) and Bloons Tower Defense are well-known examples.
+
+      The code is mostly wave scripting and pathfinding. Enemies follow set paths or find routes around the towers players place, and each wave defines enemy types, counts and timing. Some games let players lengthen the route by building mazes, and air units can bypass ground obstacles. Currency, costs and wave difficulty need balancing.
+    sources:
+      - "https://en.wikipedia.org/wiki/Tower_defense"
+  - slug: trivia
+    name: Trivia
+    intro: |-
+      A trivia game asks players to answer questions on one or several topics, and a quiz is the general name for that kind of contest. The core loop is to read a question, pick or type an answer, earn points for correct ones and move to the next. Trivial Pursuit, released in 1982, is a board game example. You Don't Know Jack (1995) is a computer game that mixes trivia with comedy in a game-show format.
+
+      A trivia game is mostly content plus rules: a bank of questions, each with a verified answer, logic for choosing the next question, and a scoring rule. Games with several players also need a way to handle turns or simultaneous answers.
+    sources:
+      - "https://en.wikipedia.org/wiki/Quiz"
+      - "https://en.wikipedia.org/wiki/Trivia"
+      - "https://en.wikipedia.org/wiki/You_Don%27t_Know_Jack_(1995_video_game)"
+  - slug: word
+    name: Word
+    intro: |-
+      Word games are spoken, board, card or video games designed to test ability with language or to explore its properties. The core loop is to form or guess words from letters and clues: Scrabble arranges letters into words, Hangman and Wordle guess a hidden word, and crosswords fill a grid from clues. Wordle, made by Josh Wardle and released in October 2021, gives players six tries to find a five-letter word.
+
+      A word game needs a word list to check guesses and a rule for scoring or feedback. In a daily game like Wordle, every player gets the same puzzle each day, so the game must pick one word per date. Wordle also shows green, yellow or gray feedback after each guess, which is letter-by-letter logic.
+    sources:
+      - "https://en.wikipedia.org/wiki/Word_game"
+      - "https://en.wikipedia.org/wiki/Wordle"
+  - slug: board
+    name: Board
+    intro: |-
+      A board game is a tabletop game in which small objects, called game pieces, are placed and moved in particular ways on a patterned game board. Most add a rules system, a turn order and often dice or cards for chance. The core loop is to take your turn, move or place pieces under the rules, and respond to the other players until someone wins. Chess, Go, Monopoly and Catan are well-known examples.
+
+      A digital board game has to do what players do at the table: enforce the rules, track whose turn it is, roll dice or shuffle cards, and detect a win. Playing against the computer also needs an opponent AI. Virtual tabletop tools such as Tabletop Simulator work differently, leaving rule enforcement to the players.
+    sources:
+      - "https://en.wikipedia.org/wiki/Board_game"
+  - slug: io
+    name: .io
+    intro: |-
+      An .io game is a browser-based multiplayer game, a category often named for the .io domain. The genre took off in the mid-2010s: Agar.io launched in April 2015 and Slither.io in March 2016. The core loop is short: join a shared arena, start small, eat food or defeat other players to grow, and climb the leaderboard until someone knocks you out.
+
+      An .io game runs one shared, real-time world with many players at once, so a server has to track every player while each browser sends input and draws the result. Browsers can hold a two-way connection to a server through the WebSocket API, which avoids polling for replies.
+    sources:
+      - "https://en.wikipedia.org/wiki/.io_game"
+      - "https://en.wikipedia.org/wiki/Agar.io"
+      - "https://en.wikipedia.org/wiki/Slither.io"
+      - "https://developer.mozilla.org/en-US/docs/Web/API/WebSockets_API"
+  - slug: management
+    name: Management and tycoon
+    intro: |-
+      Management and tycoon games are construction and management simulations, where players build, expand or manage fictional communities or projects with limited resources. Tycoon games are the subset that simulates economies and businesses. The core loop is to build or buy something, watch income and demand respond, and reinvest to grow. SimCity (1989), Railroad Tycoon (1990) and RollerCoaster Tycoon (1999) are classic examples.
+
+      Underneath, these games run an economy where resources are produced, consumed and exchanged. The code needs budget rules, prices and costs, and a way to lose, such as running out of money or popular opinion. Simulated agents such as citizens or guests respond to what the player builds and are seldom given direct orders.
+    sources:
+      - "https://en.wikipedia.org/wiki/Construction_and_management_simulation"
+  - slug: metroidvania
+    name: Metroidvania
+    intro: |-
+      Metroidvania is a subgenre of action-adventure games built on nonlinear exploration and guided progression, where the player needs key items or abilities to enter certain areas. The name combines Metroid and Castlevania. The core loop is to explore a large connected map, gain an ability, and return to earlier areas that the new ability now opens. Metroid (1986), Castlevania: Symphony of the Night (1997) and Hollow Knight (2017) are examples.
+
+      Metroidvanias gate progress with world state: the code tracks which abilities the player has, which doors and shortcuts are open and which rooms have been visited. Save points and fast travel reduce backtracking. Level design ties story progression to the areas a player can reach, using unlocks such as double jumps and wall jumps.
+    sources:
+      - "https://en.wikipedia.org/wiki/Metroidvania"
+  - slug: open-world
+    name: Open world
+    intro: |-
+      An open world game is set in a virtual world where the player can approach objectives freely, rather than following a linear, structured path. The core loop is to explore a large map, pick a mission or side activity, and choose what to do next. The Legend of Zelda (1986), Grand Theft Auto III (2001), The Elder Scrolls V: Skyrim (2011) and Breath of the Wild (2017) are examples.
+
+      The main technical problem is size. Large maps use level streaming, which loads assets as the player approaches new areas, and procedural generation is one way to fill big worlds. The game also keeps persistent state, so what the player does has lasting consequences in the world.
+    sources:
+      - "https://en.wikipedia.org/wiki/Open-world_video_game"
+  - slug: party
+    name: Party
+    intro: |-
+      A party video game is built around player-to-player interaction, with simple controls that players of any skill level can pick up. Most are collections of short minigames played in quick succession by several people in the same room. The core loop is to play a round, tally points and start another. Mario Party (1998) and the Jackbox Party Pack series (first released in 2014) are examples.
+
+      Party games need local multiplayer: several controllers on a shared screen or, as with Jackbox Games, phones used as controllers. The code has to handle several inputs at once, run many small minigames with their own rules and keep a running score across them.
+    sources:
+      - "https://en.wikipedia.org/wiki/Party_video_game"
+  - slug: stealth
+    name: Stealth
+    intro: |-
+      A stealth game is a video game in which the player primarily uses stealth to avoid or overcome opponents, and avoidance is often rewarded over direct combat. The core loop is to watch patrols, hide or move quietly, slip past or strike from concealment, and retry if spotted. Metal Gear (1987), Thief: The Dark Project (1998), Splinter Cell and Hitman are well-known examples.
+
+      The code has to model what enemies can perceive: vision cones for line of sight, sound detection tied to how the player moves, and alert states that change enemy behavior once they notice something. Light and shadow can affect visibility. Enemies usually follow regular patrol patterns, and the game restricts what they know about areas they have not seen.
+    sources:
+      - "https://en.wikipedia.org/wiki/Stealth_game"
+  - slug: visual-novel
+    name: Visual novel
+    intro: |-
+      A visual novel is a narrative-focused video game that tells its story through text boxes, static images, background art and audio, with progress made by clicking, tapping or pressing a button. The core loop is to read, make a choice at a decision point, and follow the branch toward one of several endings. The genre originated in Japan in the 1990s. Steins;Gate, Phoenix Wright: Ace Attorney and Fate/stay night are examples.
+
+      A visual novel is mostly a script plus state. The code runs branching scripts, sets flags to remember earlier choices, and offers save and load and a backlog for rereading text. Dedicated engines exist for this, and Ren'Py is described as among the most popular visual novel development kits.
+    sources:
+      - "https://en.wikipedia.org/wiki/Visual_novel"

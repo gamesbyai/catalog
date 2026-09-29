@@ -1,13 +1,160 @@
 # AI providers. `family` is the model family name people search for ("games made with Claude").
 terms:
-  - { slug: anthropic, name: Anthropic, family: Claude, url: "https://www.anthropic.com/" }
-  - { slug: openai, name: OpenAI, family: GPT, url: "https://openai.com/" }
-  - { slug: google, name: Google, family: Gemini, url: "https://deepmind.google/models/gemini/" }
-  - { slug: xai, name: xAI, family: Grok, url: "https://x.ai/" }
-  - { slug: deepseek, name: DeepSeek, family: DeepSeek, url: "https://www.deepseek.com/" }
-  - { slug: alibaba, name: Alibaba, family: Qwen, url: "https://qwen.ai/" }
-  - { slug: moonshot, name: Moonshot AI, family: Kimi, url: "https://www.moonshot.ai/" }
-  - { slug: zhipu, name: Z.ai, family: GLM, url: "https://z.ai/" }
-  - { slug: minimax, name: MiniMax, family: MiniMax, url: "https://www.minimax.io/" }
-  - { slug: mistral, name: Mistral AI, family: Mistral, url: "https://mistral.ai/" }
-  - { slug: meta, name: Meta, family: Llama, url: "https://www.llama.com/" }
+  - slug: anthropic
+    name: Anthropic
+    family: Claude
+    url: "https://www.anthropic.com/"
+    intro: |-
+      Anthropic is an AI company that makes the Claude family of models. As of September 2026 its documentation lists four current tiers. Fable is for demanding reasoning and long-horizon agentic work, Opus for long-running agentic coding and knowledge work, Sonnet for speed and intelligence together, and Haiku is the fastest.
+
+      Developers reach Claude through the Claude apps on web, desktop and mobile, through the Claude API, and through Claude Code. Claude Code is Anthropic's coding agent, and it runs in a terminal, in IDE extensions, on the web and in a desktop app. The models are also offered on Amazon Bedrock, Google Cloud and Microsoft Foundry.
+
+      According to Anthropic's model documentation, Claude Fable 5.1 was released on September 1, 2026, Claude Opus 5.5 on September 22 and Claude Sonnet 5.5 on September 28.
+    sources:
+      - "https://platform.claude.com/docs/en/about-claude/models/overview"
+      - "https://claude.com/product/claude-code"
+      - "https://claude.com/product/overview"
+  - slug: openai
+    name: OpenAI
+    family: GPT
+    url: "https://openai.com/"
+    intro: |-
+      OpenAI makes the GPT family of AI models, plus the o-series reasoning models such as o3 and o4-mini. As of September 2026 its API documentation lists GPT-6 Astra as its most capable model, with GPT-6 Sol for complex coding and agentic work and GPT-6 Luna for focused, high-volume tasks.
+
+      Developers reach the models through ChatGPT, through the OpenAI API, and through Codex. Codex is OpenAI's coding agent, and it runs in a command-line tool, in an IDE extension, on the web and in a desktop app. It is available with ChatGPT plans or with an API key.
+
+      According to OpenAI's API changelog, GPT-6 Astra was released on September 3, 2026, and GPT-6 Sol and GPT-6 Luna on September 22, 2026.
+    sources:
+      - "https://developers.openai.com/api/docs/models"
+      - "https://developers.openai.com/api/docs/changelog"
+      - "https://learn.chatgpt.com/docs"
+  - slug: google
+    name: Google
+    family: Gemini
+    url: "https://deepmind.google/models/gemini/"
+    intro: |-
+      Google makes the Gemini family of AI models, built by Google DeepMind. As of September 2026 DeepMind's Gemini page lists four main models. Gemini 3.8 Flash is for agentic tasks at scale, Gemini 3.5 Flash-Lite for high-volume work, Gemini 3.1 Pro for complex tasks, and Deep Think for science and engineering problems.
+
+      People use Gemini through the Gemini app, through the Gemini API and Google AI Studio, and through developer tools. Gemini CLI is an open-source terminal app under the Apache 2.0 license, and Google Antigravity is Google's agent-first development environment.
+
+      Google's API release notes say Gemini 3.8 Flash became generally available on September 2, 2026. On September 18 Google limited access to the Gemini 2.5 models to users who had already used them.
+    sources:
+      - "https://deepmind.google/models/gemini/"
+      - "https://ai.google.dev/gemini-api/docs"
+      - "https://ai.google.dev/gemini-api/docs/changelog"
+      - "https://github.com/google-gemini/gemini-cli"
+  - slug: xai
+    name: xAI
+    family: Grok
+    url: "https://x.ai/"
+    intro: |-
+      xAI makes the Grok family of AI models. Its current documentation and announcements use the company name SpaceXAI, and the Grok name is unchanged. As of September 2026 the API documentation calls Grok 4.7 the most capable model xAI has built.
+
+      People use Grok through the Grok chatbot and grok.com, through the xAI API, and through coding tools. Grok Build is xAI's own terminal coding agent, and xAI says Grok 4.7 is also available in Cursor and third-party coding environments.
+
+      According to xAI's announcements, Grok 4.5 was released on July 16, 2026, Grok 4.6 on August 12 and Grok 4.7 on September 21.
+    sources:
+      - "https://docs.x.ai/developers/models"
+      - "https://docs.x.ai/build/overview"
+      - "https://x.ai/news/grok-4-7"
+  - slug: deepseek
+    name: DeepSeek
+    family: DeepSeek
+    url: "https://www.deepseek.com/"
+    intro: |-
+      DeepSeek makes the DeepSeek family of AI models, and it has published the weights of several of them. As of September 2026 its API offers two models, deepseek-flash and deepseek-v4-pro, and its website features DeepSeek-V4.1-Flash as the newest release.
+
+      People use DeepSeek through its web chat and through the DeepSeek API, which follows OpenAI and Anthropic request formats, so tools built for those APIs can be pointed at it. DeepSeek's V4 announcement mentions integration with coding agents such as Claude Code and OpenCode.
+
+      According to DeepSeek's change log, DeepSeek-V4 arrived on April 24, 2026 and DeepSeek-V4.1-Flash on September 10, 2026.
+    sources:
+      - "https://www.deepseek.com/"
+      - "https://api-docs.deepseek.com/"
+      - "https://api-docs.deepseek.com/updates"
+      - "https://api-docs.deepseek.com/news/news260424"
+  - slug: alibaba
+    name: Alibaba
+    family: Qwen
+    url: "https://qwen.ai/"
+    intro: |-
+      Alibaba makes the Qwen family of AI models, developed by its Qwen team. As of September 2026 the newest generation is Qwen3.8, which includes the flagship Qwen3.8-Max and two open-weight models, Qwen3.8-27B and Qwen3.8-2.4T-A95B.
+
+      People use Qwen through web chat, through Alibaba Cloud's API, which is compatible with the OpenAI and Anthropic formats, and by downloading open weights from Hugging Face and ModelScope. Qwen Code is Alibaba's open-source terminal coding agent under the Apache 2.0 license. It is tuned for Qwen models but can also use other providers.
+
+      Alibaba released Qwen3-Coder on July 22, 2025 and announced Qwen3.8-Max on August 3, 2026.
+    sources:
+      - "https://github.com/QwenLM/Qwen3.8"
+      - "https://github.com/QwenLM/qwen-code"
+      - "https://www.alibabacloud.com/blog/alibaba-unveils-qwen3-8-max-its-largest-and-most-capable-flagship-model-to-date_603420"
+  - slug: moonshot
+    name: Moonshot AI
+    family: Kimi
+    url: "https://www.moonshot.ai/"
+    intro: |-
+      Moonshot AI makes the Kimi family of AI models and the Kimi assistant. As of September 2026 its API documentation lists Kimi K3 as its flagship model, built for long-horizon coding and end-to-end knowledge work.
+
+      People use Kimi through the Kimi web chat, mobile apps and desktop software, through Kimi Code, a terminal coding interface, and through the Kimi API at platform.kimi.ai. Moonshot has also published the weights of its K2 and K3 models on Hugging Face.
+
+      Moonshot released Kimi K2 in July 2025 and announced Kimi K3 on July 17, 2026.
+    sources:
+      - "https://www.moonshot.ai/"
+      - "https://platform.kimi.ai/docs/models"
+      - "https://www.kimi.ai/blog/kimi-k3"
+  - slug: zhipu
+    name: Z.ai
+    family: GLM
+    url: "https://z.ai/"
+    intro: |-
+      Z.ai, also known as Zhipu AI, makes the GLM family of AI models. As of September 2026 its documentation lists GLM-5.3 as the latest model, released on August 18, 2026, and GLM-5.3-Flash as a lower-cost, faster option released on August 26.
+
+      People use GLM through the Z.ai chat, through the Z.ai API, and through the GLM Coding Plan, a subscription for AI-assisted coding that works with tools such as Claude Code, Cline and OpenCode. Z.ai has also published open weights for several GLM models on Hugging Face under the MIT license.
+
+      Earlier releases in its notes include GLM-4.5 on July 28, 2025 and GLM-5.2 on June 16, 2026.
+    sources:
+      - "https://docs.z.ai/guides/overview/overview"
+      - "https://docs.z.ai/release-notes/new-released"
+      - "https://docs.z.ai/devpack/overview"
+  - slug: minimax
+    name: MiniMax
+    family: MiniMax
+    url: "https://www.minimax.io/"
+    intro: |-
+      MiniMax makes the MiniMax family of AI models. Its M-series language models include MiniMax M3, and the company also offers video, speech and music models. As of September 2026 its site names MiniMax M3 as the flagship language model.
+
+      Developers reach the models through the MiniMax API and token plans, through MiniMax Code, a desktop app for agent-driven coding, and through MiniMax Agent. MiniMax has published open weights for some of its models, including M3.
+
+      According to MiniMax's release notes, MiniMax M2 came out on October 27, 2025, M2.7 on March 18, 2026 and M3 on June 1, 2026.
+    sources:
+      - "https://www.minimax.io/"
+      - "https://platform.minimax.io/docs/release-notes/models"
+      - "https://huggingface.co/MiniMaxAI/MiniMax-M3"
+  - slug: mistral
+    name: Mistral AI
+    family: Mistral
+    url: "https://mistral.ai/"
+    intro: |-
+      Mistral AI makes the Mistral family of AI models. As of September 2026 its documentation lists Mistral Medium 3.5, a frontier multimodal model tuned for agentic and coding use, and Mistral Large 3, an open-weight general-purpose model. Codestral is its code generation and completion model.
+
+      People use Mistral through the Vibe platform at chat.mistral.ai, through the Mistral API and Studio, and through cloud partners such as AWS, Google Cloud and Azure. Mistral Vibe is also an open-source command-line coding assistant under the Apache 2.0 license. Some Mistral models are published as open weights.
+
+      According to Mistral's changelog, Mistral Small 4 was released on March 16, 2026 and Mistral Medium 3.5 on April 28, 2026.
+    sources:
+      - "https://docs.mistral.ai/getting-started/models/models_overview/"
+      - "https://docs.mistral.ai/getting-started/changelog/"
+      - "https://mistral.ai/"
+      - "https://github.com/mistralai/mistral-vibe"
+  - slug: meta
+    name: Meta
+    family: Llama
+    url: "https://www.llama.com/"
+    intro: |-
+      Meta makes the Llama family of AI models and publishes their weights for download. The newest Llama generation, Llama 4, was introduced on April 5, 2025 with two models, Llama 4 Scout and Llama 4 Maverick. Both are downloadable from llama.com and Hugging Face, and Meta also uses them in Meta AI.
+
+      Llama models are released under Meta's own community license. The Llama 4 license asks for "Built with Llama" attribution and requires a separate license from Meta for products with more than 700 million monthly active users.
+
+      Meta's newer models are a different line. Meta introduced Muse Spark on April 8, 2026 as a proprietary model that succeeds Llama 4 Maverick, and its developer site now highlights the Muse Spark series.
+    sources:
+      - "https://ai.meta.com/blog/llama-4-multimodal-intelligence/"
+      - "https://github.com/meta-llama/llama-models/blob/main/models/llama4/LICENSE"
+      - "https://ai.meta.com/blog/introducing-muse-spark-msl/"
+      - "https://dev.meta.ai/"
