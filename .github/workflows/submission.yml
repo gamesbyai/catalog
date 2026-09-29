@@ -1,7 +1,8 @@
 name: submission
-# "Submit a game" issues (from the issue form or the site's form) become draft PRs on submission/<slug>. The issue is
-# untrusted text: it reaches our scripts from main only through environment variables and is parsed as data. The PR is
-# opened with the GitHub App's token so capture and validate run on it (GITHUB_TOKEN events trigger no workflows).
+# "Submit a game" issues (from the issue form or the site's form) become PRs on submission/<slug> (status: live; merging
+# is the approval). The issue is untrusted text: it reaches our scripts from main only through environment variables and
+# is parsed as data. The PR is opened with the GitHub App's token so capture and validate run on it (GITHUB_TOKEN
+# events trigger no workflows).
 on:
   issues:
     types: [opened, edited]
@@ -36,7 +37,7 @@ jobs:
           else
             echo "ok=true" >> "$GITHUB_OUTPUT"
           fi
-      - name: Convert the issue to a draft entry
+      - name: Convert the issue to an entry
         if: steps.limit.outputs.ok == 'true'
         env:
           ISSUE_BODY: ${{ github.event.issue.body }}

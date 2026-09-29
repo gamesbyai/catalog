@@ -14,7 +14,7 @@ export function issueForm(dir = '.') {
   const dropdown = (id, label, options, { multiple = false, required = false } = {}) => ({ type: 'dropdown', id, attributes: { label, multiple, options }, validations: { required } });
   return {
     name: 'Submit a game',
-    description: 'Add an AI-made game to GamesByAI. An editor plays every submission before it goes live.',
+    description: 'Add an AI-made game to GamesByAI. Every submission passes automated checks and is approved before it goes live.',
     title: 'Submit: ',
     labels: ['submission'],
     body: [
