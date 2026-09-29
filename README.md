@@ -2,7 +2,7 @@
 
 The open catalog behind [gamesbyai.win](https://gamesbyai.win): games made with AI, one YAML file per game.
 
-Every game here passed automated checks (the play link loads, a Cloudflare URL Scanner malware check, injection checks on the text, our own screenshots) and was approved before it went live on the site. Rankings on the site come from player ratings. Each entry records how the game was made (the AI models and tools, and how much of the code AI wrote, according to the creator), where to play it and who made it.
+Every game here was reviewed and approved before it went live on the site. Rankings on the site come from player ratings. Each entry records how the game was made (the AI models and tools, and how much of the code AI wrote, according to the creator), where to play it and who made it.
 
 ## Add your game
 
@@ -16,7 +16,7 @@ Nothing is merged automatically: every entry is approved before it goes live.
 - **Playable:** a browser build that loads, or a downloadable build with a repo.
 - **Substantially AI-made:** stated by the creator, or implied by jam rules (for example, Vibe Jam requires most of the code to be AI-written).
 - **A real game:** a goal, feedback and a way to win or lose. A tech demo alone doesn't qualify.
-- **Safe:** passes a malware and phishing scan, with no crypto miners, no adult or hateful content, and no collection of personal data without a reason.
+- **Safe:** no malware or phishing, no crypto miners, no adult or hateful content, and no collection of personal data without a reason.
 - **Not a duplicate:** a fork needs meaningful changes to be listed on its own.
 
 ## Taxonomies

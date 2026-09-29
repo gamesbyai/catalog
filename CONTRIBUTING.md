@@ -59,6 +59,6 @@ If your model version, tool or engine isn't in the taxonomy files, add it in the
 
 ## What happens next
 
-1. Automated checks validate the file, test the play link, scan it for malware and check the text for instructions aimed at AI tools. We take our own screenshots.
+1. The file is validated, and we take our own screenshots of your game.
 2. We add the description, and the entry is approved or declined. We don't score games: rankings on the site come from player ratings.
 3. Once merged, the game appears on gamesbyai.win within minutes.
