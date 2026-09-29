@@ -1,6 +1,8 @@
 #!/usr/bin/env node
-// Turns a "Submit a game" issue (GitHub's rendered issue form) into a draft catalog entry. Everything in the issue is
-// untrusted text: it is parsed as data, reduced to plain text, mapped onto taxonomy slugs, and never executed.
+// Turns a "Submit a game" issue (GitHub's rendered issue form) into a catalog entry with status: live (merging the PR is
+// the approval). Its description stays empty until the review card commits the tool-less draft, so the validate check
+// fails until then: that is the intended gate. Everything in the issue is untrusted text: it is parsed as data,
+// reduced to plain text, mapped onto taxonomy slugs, and never executed.
 // Usage (CI): ISSUE_BODY=… ISSUE_NUMBER=… node scripts/issue-to-entry.mjs → prints JSON { slug, yaml, notes } or { error }.
 import { readFileSync, readdirSync, existsSync } from 'node:fs';
 import { join } from 'node:path';
@@ -87,7 +89,7 @@ export function toEntry(f, { names, playUrls, slugs, today, issue }) {
   const entry = {
     slug,
     title,
-    tagline: 'Submitted by its creator; the description follows the editor review.',
+    tagline: 'Submitted by its creator; the description is added during review.',
     description: '',
     play: { url: playUrl, platforms: ['browser'] },
     ...(repo ? { repo } : {}),
@@ -104,7 +106,7 @@ export function toEntry(f, { names, playUrls, slugs, today, issue }) {
     genres,
     media: { cover: `games/${slug}/cover`, screenshots: [`games/${slug}/shot-1`, `games/${slug}/shot-2`] },
     dates: { added: today, updated: today },
-    status: 'draft',
+    status: 'live',
     provenance: { foundVia: 'form', submittedBy: `#${issue}` },
   };
   if (!entry.made.notes) delete entry.made.notes;
