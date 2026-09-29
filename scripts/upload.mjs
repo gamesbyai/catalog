@@ -21,7 +21,8 @@ const CACHE_CONTROL = 'public, max-age=604800';
 const SLUG = /^[a-z0-9]+(?:-[a-z0-9]+)*$/;
 const CODE = /^[a-z0-9-]{1,32}$/;
 const NAMES = ['cover', 'shot-1', 'shot-2'];
-const WIDTHS = [320, 640, 1280];
+// 960 serves phones (about 720 device pixels wide at 1.75x) without the 1280 download.
+export const WIDTHS = [320, 640, 960, 1280];
 const MAX_SIDE = 4096;
 const MAX_BYTES = 20 * 1024 * 1024;
 const TYPES = { avif: 'image/avif', webp: 'image/webp', jpg: 'image/jpeg' };
@@ -41,7 +42,7 @@ const MARK = Buffer.from(
 
 /**
  * Validates one capture and returns its variants, keyed by file suffix:
- * -320/-640/-1280 .avif and .webp, plus -og.jpg (1200x630 with the corner mark) when `og` is set.
+ * -320/-640/-960/-1280 .avif and .webp, plus -og.jpg (1200x630 with the corner mark) when `og` is set.
  */
 export async function processImage(buf, { og = false } = {}) {
   if (!Buffer.isBuffer(buf) || buf.length === 0) throw new ImageError('empty file');
@@ -322,7 +323,7 @@ export async function runUpload({ outDir, gamesDir = join(ROOT, 'games'), entrie
     // The ready marker goes up last and only after every variant: the site links a game's images only when it exists.
     if (results.every((r) => r.ok)) {
       const marker = { key: `games/${slug}/ready.json`, file: join(vdir, slug, 'ready.json'), type: 'application/json' };
-      writeFileSync(marker.file, JSON.stringify({ slug, files: variants.length, names }));
+      writeFileSync(marker.file, JSON.stringify({ slug, files: variants.length, names, widths: WIDTHS }));
       const [res] = dryRun ? [{ ok: true }] : await mapLimit([marker], 1, (v) => put(v.key, v.file, v.type));
       if (res.ok) uploaded.push(marker.key);
       else results.push(res);

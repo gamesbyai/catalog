@@ -25,9 +25,9 @@ function withChunk(png, type, data) {
   return Buffer.concat([png.subarray(0, png.length - 12), len, body, crc, png.subarray(png.length - 12)]);
 }
 
-test('a valid PNG gives 320/640/1280 AVIF and WebP, plus a 1200x630 JPEG for the cover', async () => {
+test('a valid PNG gives 320/640/960/1280 AVIF and WebP, plus a 1200x630 JPEG for the cover', async () => {
   const out = await processImage(await shot(), { og: true });
-  assert.deepEqual(Object.keys(out).sort(), ['-1280.avif', '-1280.webp', '-320.avif', '-320.webp', '-640.avif', '-640.webp', '-og.jpg']);
+  assert.deepEqual(Object.keys(out).sort(), ['-1280.avif', '-1280.webp', '-320.avif', '-320.webp', '-640.avif', '-640.webp', '-960.avif', '-960.webp', '-og.jpg']);
   for (const [suffix, buf] of Object.entries(out)) {
     const m = await sharp(buf).metadata();
     if (suffix === '-og.jpg') {
@@ -168,7 +168,7 @@ test('runUpload --dry-run processes captures, never calls put, and writes our ow
   const calls = [];
   const res = await runUpload({ outDir: out, gamesDir: games, dryRun: true, put: (...a) => calls.push(a), log: () => {} });
   assert.equal(calls.length, 0);
-  assert.equal(res.uploaded.length, 3 * 6 + 1 + 1);
+  assert.equal(res.uploaded.length, 3 * 8 + 1 + 1);
   assert.ok(res.uploaded.includes('games/good/cover-og.jpg'));
   assert.ok(res.uploaded.includes('games/good/shot-2-640.avif'));
   assert.ok(!res.uploaded.some((k) => k.startsWith('games/bad/') || k.startsWith('games/stray/')));
@@ -185,7 +185,7 @@ test('runUpload puts every variant under games/<slug>/ with its content type', a
   const { out, games } = await fixtureOut();
   const calls = [];
   const res = await runUpload({ outDir: out, gamesDir: games, put: (key, file, type) => calls.push({ key, file, type }), log: () => {} });
-  assert.equal(calls.length, 20);
+  assert.equal(calls.length, 26);
   assert.deepEqual(calls.map((c) => c.key), res.uploaded);
   // The ready marker goes up last, so the site never links a half-uploaded game.
   assert.equal(calls.at(-1).key, 'games/good/ready.json');
@@ -300,4 +300,5 @@ test('a partial capture (cover only) is uploaded, and ready.json lists what exis
   assert.ok(!puts.some((p) => p.key.startsWith('games/part/shot-')));
   const marker = puts.find((p) => p.key === 'games/part/ready.json');
   assert.deepEqual(JSON.parse(readFileSync(marker.file, 'utf8')).names, ['cover']);
+  assert.deepEqual(JSON.parse(readFileSync(marker.file, 'utf8')).widths, [320, 640, 960, 1280]);
 });
