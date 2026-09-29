@@ -1,0 +1,58 @@
+slug: fanto-s-mega-mart
+title: Fanto's Mega-Mart
+tagline: Race through a haunted grocery store at rocket speed, grabbing items as you go.
+description: >-
+  Fanto's Mega-Mart is a fast action racer set inside a haunted grocery store.
+  The player zips through the aisles at rocket speed on a shopping run, in a
+  race that draws on the spirit of supermarket dash contests. It supports
+  multiplayer, so other players can compete in the same store.
+
+
+  The mix of everyday retail and supernatural spookiness gives the game its
+  identity, and the tone stays playful throughout. The concept came from a dream
+  the creator had, shaped by a TV supermarket-sweep contest. The game placed
+  second out of 945 entries in Vibe Jam 2026.
+
+
+  It runs in the browser on Three.js. The creator built it with Codex, and it is
+  designed for desktop play rather than mobile.
+play:
+  url: https://fantos-megamart.vercel.app
+  embeddable: true
+  platforms:
+    - browser
+creator:
+  name: e_c_t_o
+  handle: e-c-t-o
+  x: e_c_t_o
+made:
+  models: []
+  providers:
+    - openai
+  tools:
+    - codex
+  aiShare: most
+  source: Vibe Jam 2026 submission form
+  evidence: creator
+tech:
+  engine: threejs
+  multiplayer: online
+genres:
+  - action
+  - racing
+jam:
+  event: vibe-jam-2026
+  rank: 2
+  entries: 945
+media:
+  cover: games/fanto-s-mega-mart/cover
+  screenshots:
+    - games/fanto-s-mega-mart/shot-1
+    - games/fanto-s-mega-mart/shot-2
+dates:
+  added: 2026-09-29
+  updated: 2026-09-29
+status: live
+provenance:
+  foundVia: scout:vibejam-2026
+  scannedAt: 2026-09-29T15:38:44.435Z

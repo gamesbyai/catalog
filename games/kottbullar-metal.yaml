@@ -1,0 +1,60 @@
+slug: kottbullar-metal
+title: KÖTTBULLAR METAL
+tagline: Survive a 15-minute mosh pit fueled by death metal versions of IKEA
+  product names.
+description: >-
+  KÖTTBULLAR METAL is a survival action game set in a mosh pit. A run lasts 15
+  minutes, and the goal is to stay alive until the clock runs out. Fail, and you
+  become a Köttbullar, the meatball of the title. The game mixes action, RPG,
+  simulation, and musical elements.
+
+
+  The joke is at the center: odd Swedish-style furniture names from a home-goods
+  catalog are treated as brutal death metal lyrics. The result is a loud, absurd
+  mix of flat-pack humor and heavy music. It placed 22nd out of 945 entries at
+  Vibe Jam 2026 and took the Funniest Game award.
+
+
+  The creator built it with Claude Code. The game supports multiplayer, and it
+  is also playable on mobile devices, so friends can join the pit from a phone.
+play:
+  url: https://kottbullar-metal.vercel.app
+  embeddable: true
+  platforms:
+    - browser
+    - mobile
+creator:
+  name: MichalPastier
+  handle: michalpastier
+  x: MichalPastier
+made:
+  models: []
+  providers:
+    - anthropic
+  tools:
+    - claude-code
+  aiShare: most
+  source: Vibe Jam 2026 submission form
+  evidence: creator
+tech:
+  multiplayer: online
+genres:
+  - action
+  - survival
+jam:
+  event: vibe-jam-2026
+  rank: 22
+  entries: 945
+  award: Funniest Game
+media:
+  cover: games/kottbullar-metal/cover
+  screenshots:
+    - games/kottbullar-metal/shot-1
+    - games/kottbullar-metal/shot-2
+dates:
+  added: 2026-09-29
+  updated: 2026-09-29
+status: live
+provenance:
+  foundVia: scout:vibejam-2026
+  scannedAt: 2026-09-29T15:38:44.453Z

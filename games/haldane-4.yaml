@@ -1,0 +1,59 @@
+slug: haldane-4
+title: HALDANE-4
+tagline: Descend alone beneath the Antarctic ice and uncover what waits below in ASCII.
+description: >-
+  HALDANE-4 is a short horror story told entirely in ASCII characters. You play
+  a lone figure descending beneath the Antarctic ice shelf, moving deeper
+  through cold, dark spaces while the narrative unfolds around you. A single run
+  is brief and built around atmosphere and discovery rather than combat.
+
+
+  The game was made for Vibe Jam 2026 under tight rules: ASCII graphics only, a
+  download under 5MB, and no outside assets. All sound is generated
+  procedurally, with the exception of an AI-generated voice-over that carries
+  part of the story. Those limits shape its look and mood, with text characters
+  and synthesized audio building the dread.
+
+
+  The creator built it with Cursor, and it placed fifth out of 945 entries at
+  the jam, where it also received Cursor's Most Original award. It is playable
+  on mobile as well as desktop and is a single-player experience.
+play:
+  url: https://haldane4.denisbondare.com
+  embeddable: true
+  platforms:
+    - browser
+    - mobile
+creator:
+  name: denisbondare
+  handle: denisbondare
+  x: denisbondare
+made:
+  models: []
+  tools:
+    - cursor
+  aiShare: most
+  source: Vibe Jam 2026 submission form
+  evidence: creator
+tech:
+  multiplayer: single
+genres:
+  - adventure
+  - horror
+jam:
+  event: vibe-jam-2026
+  rank: 5
+  entries: 945
+  award: Most Original
+media:
+  cover: games/haldane-4/cover
+  screenshots:
+    - games/haldane-4/shot-1
+    - games/haldane-4/shot-2
+dates:
+  added: 2026-09-29
+  updated: 2026-09-29
+status: live
+provenance:
+  foundVia: scout:vibejam-2026
+  scannedAt: 2026-09-29T15:38:44.439Z

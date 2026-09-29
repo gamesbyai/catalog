@@ -1,0 +1,59 @@
+slug: the-far-colony
+title: The Far Colony
+tagline: Grow an alien organism across the Moon while human machines try to burn it out.
+description: >-
+  The Far Colony is a strategy simulation played from the alien side of a lunar
+  settlement. You control an organism that starts from a damaged seed and
+  spreads across the dust, growing organs as it expands. Human machines are
+  working to burn it out, so each run is a contest between growth and defense.
+
+
+  The premise flips the usual moon colonization story. Instead of managing human
+  outposts, you tend something invasive and living, and the humans become the
+  threat. The creator had wanted to try making a strategy game, and a separate
+  jam with an alien theme prompted the idea of seeing colonization through alien
+  eyes.
+
+
+  It was made for Vibe Jam 2026, where it ranked 49th among 945 entries. It runs
+  in 3D with Three.js, and the creator built it with Codex.
+play:
+  url: https://the-far-colony.netlify.app
+  embeddable: true
+  platforms:
+    - browser
+creator:
+  name: MoeMagicLantern
+  handle: moemagiclantern
+  x: MoeMagicLantern
+made:
+  models: []
+  providers:
+    - openai
+  tools:
+    - codex
+  aiShare: most
+  source: Vibe Jam 2026 submission form
+  evidence: creator
+tech:
+  engine: threejs
+  multiplayer: single
+genres:
+  - strategy
+  - simulation
+jam:
+  event: vibe-jam-2026
+  rank: 49
+  entries: 945
+media:
+  cover: games/the-far-colony/cover
+  screenshots:
+    - games/the-far-colony/shot-1
+    - games/the-far-colony/shot-2
+dates:
+  added: 2026-09-29
+  updated: 2026-09-29
+status: live
+provenance:
+  foundVia: scout:vibejam-2026
+  scannedAt: 2026-09-29T15:38:44.474Z

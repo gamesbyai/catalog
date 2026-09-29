@@ -1,0 +1,59 @@
+slug: the-rite
+title: The Rite
+tagline: Fight other players in a fast multiplayer arena shooter in your browser.
+description: >-
+  The Rite is a player-versus-player arena shooter that runs in the browser.
+  Players join a match, move around the arena, and fight each other in fast,
+  close-range firefights. It supports multiplayer and also works on mobile
+  devices, so a round can start from a phone or a desktop.
+
+
+  The game is inspired by classic arena shooters in the vein of Unreal
+  Tournament, a series the creator points out no longer gets a new release
+  alongside each Unreal Engine version. It aims to bring that fast, competitive
+  deathmatch style back in a lightweight web form.
+
+
+  It was entered in Vibe Jam 2026, where it placed 16th out of 945 entries. The
+  creator built it with Claude Code, and it renders with Three.js.
+play:
+  url: https://therite.magooney.org
+  embeddable: true
+  platforms:
+    - browser
+    - mobile
+creator:
+  name: MyMoonEnt
+  handle: mymoonent
+  x: MyMoonEnt
+made:
+  models: []
+  providers:
+    - anthropic
+  tools:
+    - claude-code
+  aiShare: most
+  source: Vibe Jam 2026 submission form
+  evidence: creator
+tech:
+  engine: threejs
+  multiplayer: online
+genres:
+  - shooter
+  - action
+jam:
+  event: vibe-jam-2026
+  rank: 16
+  entries: 945
+media:
+  cover: games/the-rite/cover
+  screenshots:
+    - games/the-rite/shot-1
+    - games/the-rite/shot-2
+dates:
+  added: 2026-09-29
+  updated: 2026-09-29
+status: live
+provenance:
+  foundVia: scout:vibejam-2026
+  scannedAt: 2026-09-29T15:38:44.449Z

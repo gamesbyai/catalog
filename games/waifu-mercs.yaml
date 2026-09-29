@@ -1,0 +1,61 @@
+slug: waifu-mercs
+title: Waifu Mercs
+tagline: Shoot waves of zombies from behind the shoulder in split-screen co-op.
+description: >-
+  Waifu Mercs is a third-person zombie shooter that blends the tense
+  over-the-shoulder combat of survival horror with the horde-clearing loop of
+  survivor-style games. Players fight off crowds of undead, aiming and firing as
+  the pressure builds around them. It is built for two people playing together
+  on one shared split screen.
+
+
+  The split-screen focus is the core idea. The creator wanted a couch-style
+  co-op game to play with their wife, and that goal shapes the whole design. Two
+  mercenaries share the action side by side, each with their own view of the
+  fight. The mix of shooter aiming and survivor-style waves keeps the pace fast
+  and casual.
+
+
+  The game runs in the browser on Three.js and was entered in Vibe Jam 2026,
+  where it placed 36th out of 945 entries. The creator built it with Claude
+  Code.
+play:
+  url: https://waifumercs.com
+  embeddable: true
+  platforms:
+    - browser
+creator:
+  name: SuperJonBear
+  handle: superjonbear
+  x: SuperJonBear
+made:
+  models: []
+  providers:
+    - anthropic
+  tools:
+    - claude-code
+  aiShare: most
+  source: Vibe Jam 2026 submission form
+  evidence: creator
+tech:
+  engine: threejs
+  multiplayer: online
+genres:
+  - shooter
+  - action
+jam:
+  event: vibe-jam-2026
+  rank: 36
+  entries: 945
+media:
+  cover: games/waifu-mercs/cover
+  screenshots:
+    - games/waifu-mercs/shot-1
+    - games/waifu-mercs/shot-2
+dates:
+  added: 2026-09-29
+  updated: 2026-09-29
+status: live
+provenance:
+  foundVia: scout:vibejam-2026
+  scannedAt: 2026-09-29T15:38:44.465Z

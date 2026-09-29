@@ -1,0 +1,61 @@
+slug: banished
+title: Banished
+tagline: Fly and fight in a six-degrees-of-freedom arena shooter with multiplayer.
+description: >-
+  Banished is a six-degrees-of-freedom arena shooter, where the player can move
+  and turn freely in every direction rather than staying on a flat floor.
+  Matches take place in enclosed arenas, and the goal is to outmaneuver
+  opponents and shoot them down. It supports multiplayer and also runs on
+  mobile.
+
+
+  The arenas were built with the Hammer level editor from Half-Life 2, which
+  gives the maps a classic level-design feel. The art, sound effects, and music
+  are all generated. Its subtitle points to Forsaken 64, a fast free-flight
+  shooter, as a clear reference for the style.
+
+
+  The game was entered in Vibe Jam 2026 and runs on PlayCanvas. The creator
+  built it with Claude Code, and generated assets fill out the visuals and audio
+  around the hand-built levels.
+play:
+  url: https://banished.smsithlord.com
+  embeddable: true
+  platforms:
+    - browser
+    - mobile
+creator:
+  name: AnarchyArcade
+  handle: anarchyarcade
+  x: AnarchyArcade
+made:
+  models: []
+  providers:
+    - anthropic
+  tools:
+    - claude-code
+  aiShare: most
+  source: Vibe Jam 2026 submission form
+  evidence: creator
+tech:
+  engine: playcanvas
+  multiplayer: online
+genres:
+  - shooter
+  - action
+jam:
+  event: vibe-jam-2026
+  rank: 56
+  entries: 945
+media:
+  cover: games/banished/cover
+  screenshots:
+    - games/banished/shot-1
+    - games/banished/shot-2
+dates:
+  added: 2026-09-29
+  updated: 2026-09-29
+status: live
+provenance:
+  foundVia: scout:vibejam-2026
+  scannedAt: 2026-09-29T15:38:44.479Z

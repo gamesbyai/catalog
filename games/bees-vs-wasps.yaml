@@ -1,0 +1,62 @@
+slug: bees-vs-wasps
+title: Bees vs Wasps
+tagline: Gather flowers as a bee and get back to the hive before angry wasps catch you.
+description: >-
+  Bees vs Wasps is a 3D action game in which you play a bee collecting pollen
+  from flowers. Each trip ends with a safe return to the hive, and wasps hunt
+  you along the way. Getting stung costs you, so every run comes down to
+  balancing greed for flowers against the distance back home.
+
+
+  Progression drives the game. As you climb levels, new elements arrive:
+  honeycomb, extra lives, and tougher enemies. The Tarantula Hawk shows up at
+  level 12 and the Executioner at level 15, both drawn from real stinging
+  insects. Wasp spawns originally followed the Fibonacci sequence, but the count
+  became overwhelming and was capped. The design aims for something you can
+  start right away and keep playing.
+
+
+  The idea began with the Fibonacci sequence, which led to sunflowers and then
+  bees. The creator built it for Vibe Jam 2026 using Claude Code and Three.js,
+  and it supports multiplayer and mobile play.
+play:
+  url: https://beesvswasps.com
+  embeddable: true
+  platforms:
+    - browser
+    - mobile
+creator:
+  name: alexismediaco
+  handle: alexismediaco
+  x: alexismediaco
+made:
+  models: []
+  providers:
+    - anthropic
+  tools:
+    - claude-code
+  aiShare: most
+  source: Vibe Jam 2026 submission form
+  evidence: creator
+tech:
+  engine: threejs
+  multiplayer: online
+genres:
+  - action
+  - arcade
+jam:
+  event: vibe-jam-2026
+  rank: 48
+  entries: 945
+media:
+  cover: games/bees-vs-wasps/cover
+  screenshots:
+    - games/bees-vs-wasps/shot-1
+    - games/bees-vs-wasps/shot-2
+dates:
+  added: 2026-09-29
+  updated: 2026-09-29
+status: live
+provenance:
+  foundVia: scout:vibejam-2026
+  scannedAt: 2026-09-29T15:38:44.473Z

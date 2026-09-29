@@ -1,0 +1,62 @@
+slug: wenware
+title: WenWare
+tagline: Guess the place and year of a 360-degree historical scene.
+description: >-
+  WenWare is a time-travel take on the geography guessing game. Each round drops
+  you into an immersive 360-degree scene from history. You look around, study
+  the buildings, clothing, and surroundings, then commit to an answer for both
+  where you are standing and what year it is.
+
+
+  The twist is the second guess. Placing a pin on a map is only half the job,
+  since you also have to estimate the date, so architecture, technology, and
+  everyday details become clues about the era as well as the region. That makes
+  each scene a small detective puzzle rather than a pure map test.
+
+
+  The game placed third at Vibe Jam 2026 out of 945 entries and received the
+  Most Played award from Bolt. The creator built it with Codex and Three.js, and
+  it supports multiplayer and mobile play. The creator describes the appeal as
+  using AI to explore moments in history.
+play:
+  url: https://wen-ware.com
+  embeddable: false
+  platforms:
+    - browser
+    - mobile
+creator:
+  name: underpaid_mom
+  handle: underpaid-mom
+  x: underpaid_mom
+made:
+  models: []
+  providers:
+    - openai
+  tools:
+    - codex
+  aiShare: most
+  source: Vibe Jam 2026 submission form
+  evidence: creator
+tech:
+  engine: threejs
+  multiplayer: online
+genres:
+  - puzzle
+  - simulation
+jam:
+  event: vibe-jam-2026
+  rank: 3
+  entries: 945
+  award: Most Played
+media:
+  cover: games/wenware/cover
+  screenshots:
+    - games/wenware/shot-1
+    - games/wenware/shot-2
+dates:
+  added: 2026-09-29
+  updated: 2026-09-29
+status: live
+provenance:
+  foundVia: scout:vibejam-2026
+  scannedAt: 2026-09-29T15:38:44.436Z

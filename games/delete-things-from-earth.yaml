@@ -1,0 +1,60 @@
+slug: delete-things-from-earth
+title: Delete Things From Earth
+tagline: Click to erase everything from coffee cups to the sun itself.
+description: >-
+  Delete Things From Earth is a darkly comedic clicker. You start by erasing
+  small everyday objects such as a cup of coffee, then work up to continents and
+  eventually the sun. Each click removes a little more of the planet, and a run
+  is a race to see how few clicks it takes to wipe out civilization.
+
+
+  The tone is dark and jokey, and the escalation from mundane items to cosmic
+  ones drives the humor. The creator cites Plague Inc. as an influence on the
+  style, and Cookie Clicker as an influence on the incremental loop, although
+  the premise differs from both.
+
+
+  The creator built it with Claude Code as an entry in Vibe Jam 2026, where it
+  placed 55th out of 945 entries. It is rendered in 3D with Three.js.
+play:
+  url: https://delete-things-from-earth.vercel.app
+  embeddable: true
+  platforms:
+    - browser
+  controls:
+    - Click to delete
+creator:
+  name: luciocreatives
+  handle: luciocreatives
+  x: luciocreatives
+made:
+  models: []
+  providers:
+    - anthropic
+  tools:
+    - claude-code
+  aiShare: most
+  source: Vibe Jam 2026 submission form
+  evidence: creator
+tech:
+  engine: threejs
+  multiplayer: single
+genres:
+  - idle
+  - casual
+jam:
+  event: vibe-jam-2026
+  rank: 55
+  entries: 945
+media:
+  cover: games/delete-things-from-earth/cover
+  screenshots:
+    - games/delete-things-from-earth/shot-1
+    - games/delete-things-from-earth/shot-2
+dates:
+  added: 2026-09-29
+  updated: 2026-09-29
+status: live
+provenance:
+  foundVia: scout:vibejam-2026
+  scannedAt: 2026-09-29T15:38:44.478Z

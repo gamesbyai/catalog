@@ -1,0 +1,57 @@
+slug: rally-positano
+title: Rally Positano
+tagline: Drive a rally car along the scenic coastal roads around Positano.
+description: >-
+  Rally Positano is a browser racing game set in the scenic region of Positano.
+  The player takes the wheel of a rally car and races along the coastal setting,
+  aiming to get through the course in a relaxed but competitive drive.
+
+
+  The game leans on atmosphere as much as speed. Its creator describes it as a
+  nice, scenic drive, so the setting is the main attraction, and the racing is
+  meant to be enjoyable rather than punishing. Multiplayer is supported, which
+  lets players share the road with others.
+
+
+  It was built with Three.js for the 3D rendering. The creator used Codex to
+  make it, and it was entered in Vibe Jam 2026, where it placed 42nd out of 945
+  entries.
+play:
+  url: https://rally-positano.sachasayan.com
+  embeddable: true
+  platforms:
+    - browser
+creator:
+  name: sachasayan
+  handle: sachasayan
+  x: sachasayan
+made:
+  models: []
+  providers:
+    - openai
+  tools:
+    - codex
+  aiShare: most
+  source: Vibe Jam 2026 submission form
+  evidence: creator
+tech:
+  engine: threejs
+  multiplayer: online
+genres:
+  - racing
+jam:
+  event: vibe-jam-2026
+  rank: 42
+  entries: 945
+media:
+  cover: games/rally-positano/cover
+  screenshots:
+    - games/rally-positano/shot-1
+    - games/rally-positano/shot-2
+dates:
+  added: 2026-09-29
+  updated: 2026-09-29
+status: live
+provenance:
+  foundVia: scout:vibejam-2026
+  scannedAt: 2026-09-29T15:38:44.468Z

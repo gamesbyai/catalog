@@ -1,0 +1,57 @@
+slug: roomba-wars
+title: Roomba Wars
+tagline: Play a roomba that cleans up dirt and fights off enemies in a top-down arena.
+description: >-
+  Roomba Wars casts you as a robot vacuum in a room full of dirt and hostile
+  enemies. The goal is simple: clean up the mess while dealing with whatever
+  gets in your way. It is an action shooter, so a run mixes collecting dirt with
+  fighting off threats.
+
+
+  The premise leans on a joke about household robots gone rogue, and the game
+  plays it for humor. It supports multiplayer and runs on mobile as well as
+  desktop, so it can be picked up quickly in a browser. It placed 39th out of
+  945 entries in Vibe Jam 2026.
+
+
+  The game runs on Three.js, and the creator says they built it with Cursor, an
+  AI coding tool, as their entry for the Vibe Jam 2026 game jam.
+play:
+  url: https://roomba-wars.com
+  embeddable: true
+  platforms:
+    - browser
+    - mobile
+creator:
+  name: thijsmakes
+  handle: thijsmakes
+  x: thijsmakes
+made:
+  models: []
+  tools:
+    - cursor
+  aiShare: most
+  source: Vibe Jam 2026 submission form
+  evidence: creator
+tech:
+  engine: threejs
+  multiplayer: online
+genres:
+  - action
+  - shooter
+jam:
+  event: vibe-jam-2026
+  rank: 39
+  entries: 945
+media:
+  cover: games/roomba-wars/cover
+  screenshots:
+    - games/roomba-wars/shot-1
+    - games/roomba-wars/shot-2
+dates:
+  added: 2026-09-29
+  updated: 2026-09-29
+status: live
+provenance:
+  foundVia: scout:vibejam-2026
+  scannedAt: 2026-09-29T15:38:44.466Z

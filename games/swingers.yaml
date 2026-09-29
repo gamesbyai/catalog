@@ -1,0 +1,57 @@
+slug: swingers
+title: Swingers
+tagline: Swing with friends to rack up the most damage to city infrastructure.
+description: >-
+  Swingers is a multiplayer action game where you and your friends swing through
+  a setting full of critical infrastructure. The goal is to cause more monetary
+  damage than everyone else, so each round becomes a contest over who can wreck
+  the most while staying in motion.
+
+
+  The premise is deliberately chaotic: the score is counted in dollars of
+  damage, and the creator's own pitch jokes about a love of swinging and
+  insurance fraud. That tone earned it the Most Unhinged award at Vibe Jam 2026,
+  where it placed 17th out of 945 entries.
+
+
+  It runs in the browser on Three.js and is set up for both multiplayer and
+  mobile play, so a group can jump in together from different devices.
+play:
+  url: https://swing.offmylawn.com
+  embeddable: true
+  platforms:
+    - browser
+    - mobile
+creator:
+  name: _offmylawn
+  handle: offmylawn
+  x: _offmylawn
+made:
+  models: []
+  tools: []
+  aiShare: most
+  source: Vibe Jam 2026 submission form
+  evidence: inferred
+tech:
+  engine: threejs
+  multiplayer: online
+genres:
+  - action
+  - party
+jam:
+  event: vibe-jam-2026
+  rank: 17
+  entries: 945
+  award: Most Unhinged
+media:
+  cover: games/swingers/cover
+  screenshots:
+    - games/swingers/shot-1
+    - games/swingers/shot-2
+dates:
+  added: 2026-09-29
+  updated: 2026-09-29
+status: live
+provenance:
+  foundVia: scout:vibejam-2026
+  scannedAt: 2026-09-29T15:38:44.450Z

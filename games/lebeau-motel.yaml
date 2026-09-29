@@ -1,0 +1,62 @@
+slug: lebeau-motel
+title: LeBeau Motel
+tagline: Race rivals to $10,000 in a shared motel by stealing, hustling, or gambling.
+description: >-
+  LeBeau Motel is a multiplayer action shooter set in a run-down motel. Players
+  compete to be the first to reach $10,000, and the way there is up to them:
+  steal from others, hustle for cash, or take a chance at gambling. Each round
+  is a race against the other people sharing the building.
+
+
+  The setting mixes the social hangout feel of a virtual hotel with
+  top-down-style violence and the crime-driven freedom of an open city sandbox.
+  The creator describes it as a blend of Habbo Hotel, Hotline Miami, and GTA.
+  That mix gives the money race several routes, from risky fights to quieter
+  schemes. It also runs on mobile.
+
+
+  It was built with Three.js as an entry in Vibe Jam 2026, where it placed 51st
+  out of 945 entries. The creator built it with Claude Code.
+play:
+  url: https://motel.floorsjs.com
+  embeddable: false
+  platforms:
+    - browser
+    - mobile
+creator:
+  name: VynseDev
+  handle: vynsedev
+  x: VynseDev
+made:
+  models: []
+  providers:
+    - anthropic
+  tools:
+    - claude-code
+  aiShare: most
+  source: Vibe Jam 2026 submission form
+  evidence: creator
+tech:
+  engine: threejs
+  multiplayer: online
+genres:
+  - action
+  - shooter
+jam:
+  event: vibe-jam-2026
+  rank: 51
+  entries: 945
+media:
+  cover: games/lebeau-motel/cover
+  screenshots:
+    - games/lebeau-motel/shot-1
+    - games/lebeau-motel/shot-2
+dates:
+  added: 2026-09-29
+  updated: 2026-09-29
+status: live
+provenance:
+  foundVia: scout:vibejam-2026
+  scannedAt: 2026-09-29T15:38:44.476Z
+  flags:
+    - gambling

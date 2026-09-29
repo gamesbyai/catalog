@@ -1,0 +1,63 @@
+slug: vibefall
+title: Vibefall
+tagline: Run walls, fight gunfights, and battle giant mechs in a fast
+  multiplayer shooter.
+description: >-
+  Vibefall is a fast-paced movement shooter that mixes parkour traversal with
+  firefights and large-scale mech combat. Players move quickly through the
+  environment, chaining parkour moves between gunfights, and fight alongside or
+  against other players in a multiplayer setting. It runs in the browser and
+  also supports mobile.
+
+
+  The game draws on Titanfall for its inspiration, and that shows in its focus
+  on momentum and titan-scale battles. Combining on-foot movement, gunplay, and
+  giant machines in one browser project is an ambitious scope, and the game
+  keeps all three at the center of its design.
+
+
+  It was entered in Vibe Jam 2026, where it placed 52nd out of 945 entries. The
+  creator says they picked the Titanfall-inspired idea because nothing else they
+  brainstormed felt as exciting, and they were unsure at the start what AI could
+  manage. The creator built it with Codex on Three.js.
+play:
+  url: https://vibefall.kieransmith.me
+  embeddable: true
+  platforms:
+    - browser
+    - mobile
+creator:
+  name: imkieransmith
+  handle: imkieransmith
+  x: imkieransmith
+made:
+  models: []
+  providers:
+    - openai
+  tools:
+    - codex
+  aiShare: most
+  source: Vibe Jam 2026 submission form
+  evidence: creator
+tech:
+  engine: threejs
+  multiplayer: online
+genres:
+  - action
+  - shooter
+jam:
+  event: vibe-jam-2026
+  rank: 52
+  entries: 945
+media:
+  cover: games/vibefall/cover
+  screenshots:
+    - games/vibefall/shot-1
+    - games/vibefall/shot-2
+dates:
+  added: 2026-09-29
+  updated: 2026-09-29
+status: live
+provenance:
+  foundVia: scout:vibejam-2026
+  scannedAt: 2026-09-29T15:38:44.476Z

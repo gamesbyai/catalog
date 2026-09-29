@@ -1,0 +1,60 @@
+slug: timecrime
+title: TimeCrime
+tagline: Spot the impossible object in a 360° historical scene, then guess where
+  and when.
+description: >-
+  TimeCrime is a fast anomaly-hunt set in 360° historical scenes. A time
+  traveler has planted one impossible object in each scene. You look around the
+  panorama, find the item that does not belong, and then guess the place and the
+  era to repair the timeline.
+
+
+  The game mixes a hidden-object search with history trivia. Instead of only
+  recalling facts, you scan the environment and notice what feels wrong, and the
+  rounds stay short and simple. Fixing the timeline is presented as a visual
+  payoff for a correct answer. It also runs on mobile devices.
+
+
+  The game was built with Three.js, and it was entered in Vibe Jam 2026, where
+  it placed 44th among 945 entries. Codex is named as one of the tools used to
+  make it.
+play:
+  url: https://timecrime.vercel.app
+  embeddable: true
+  platforms:
+    - browser
+    - mobile
+creator:
+  name: Peter TP
+  handle: peter-tp
+made:
+  models: []
+  providers:
+    - openai
+  tools:
+    - codex
+  aiShare: most
+  source: Vibe Jam 2026 submission form
+  evidence: creator
+tech:
+  engine: threejs
+  multiplayer: single
+genres:
+  - puzzle
+  - trivia
+jam:
+  event: vibe-jam-2026
+  rank: 44
+  entries: 945
+media:
+  cover: games/timecrime/cover
+  screenshots:
+    - games/timecrime/shot-1
+    - games/timecrime/shot-2
+dates:
+  added: 2026-09-29
+  updated: 2026-09-29
+status: live
+provenance:
+  foundVia: scout:vibejam-2026
+  scannedAt: 2026-09-29T15:38:44.470Z
