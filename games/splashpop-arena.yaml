@@ -11,12 +11,13 @@ description: >-
   The design draws on the tense tactical duels, aim-focused gunplay, and
   round-based competitive rhythm of CS:GO, according to the creator. That
   influence shows in the emphasis on accurate shooting and short, contained
-  matches rather than open-ended free-for-alls. The paint theme keeps the tone
-  lighter than a typical military shooter.
+  matches. The paint theme keeps the tone lighter than a typical military
+  shooter.
 
 
-  It runs in 3D with Three.js, and the creator built it with Cursor. It was
-  entered in Vibe Jam 2026, where it placed 306th out of 945 entries.
+  It runs in 3D in the browser with Three.js, and the creator built it with
+  Cursor. It was entered in Vibe Jam 2026, where it placed 306th out of 945
+  entries.
 play:
   url: https://splashpoparena.com
   embeddable: true

@@ -16,8 +16,8 @@ description: >-
 
   It was entered in Vibe Jam 2026 and built in Three.js. The creator says it was
   their first attempt at making a game, partly to show their kids that ideas can
-  be turned into something real even without prior experience. The known tooling
-  is Claude Code.
+  be turned into something real even without prior experience. The creator built
+  it with Claude Code.
 play:
   url: https://mass-chaos.com
   embeddable: true

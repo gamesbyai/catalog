@@ -15,8 +15,8 @@ description: >-
   hold the line.
 
 
-  The game runs in the browser on Three.js. According to the listing, the
-  creator built it with a mix of Cursor, Claude, Grok, and gptme, so several AI
+  The game runs in the browser on Three.js. According to its README, the creator
+  built it with a mix of Cursor, Claude, Grok, and gptme, so several AI
   assistants took part in the work.
 play:
   url: https://dyson-defender.vercel.app

@@ -15,8 +15,7 @@ description: >-
 
 
   It was entered in Vibe Jam 2026, where it placed 265th out of 945 entries. The
-  creator's statement lists Lovable as the tool used, and the 3D scene is
-  rendered with Three.js.
+  creator built it with Lovable, and the 3D scene is rendered with Three.js.
 play:
   url: https://shadowmonarch.app
   embeddable: true

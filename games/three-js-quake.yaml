@@ -15,8 +15,8 @@ description: >-
   for the library itself.
 
 
-  The listing credits Claude and Three.js in its build. That points to
-  Anthropic's Claude as part of how the port was made. It is a single-player
+  According to its README, the build involved Claude and Three.js. That points
+  to Anthropic's Claude as part of how the port was made. It is a single-player
   game in the shooter and action genres.
 play:
   url: https://mrdoob.github.io/three-quake

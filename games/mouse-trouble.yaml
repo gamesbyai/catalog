@@ -14,9 +14,8 @@ description: >-
   out of 945 entries in Vibe Jam 2026.
 
 
-  The creator built it in Three.js with Codex, and the tool credit comes from
-  the creator's own statement. The game was made for the jam with the goal of
-  keeping the bundle as small as possible.
+  The creator built it in Three.js with Codex. The game was made for the jam
+  with the goal of keeping the bundle as small as possible.
 play:
   url: https://mouse.ryanfitzpatrick.io
   embeddable: false

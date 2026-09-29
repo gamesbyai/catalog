@@ -16,8 +16,7 @@ description: >-
 
 
   The game was built with Three.js, and it was entered in Vibe Jam 2026, where
-  it placed 44th among 945 entries. Codex is named as one of the tools used to
-  make it.
+  it placed 44th among 945 entries. The creator built it with Codex.
 play:
   url: https://timecrime.vercel.app
   embeddable: true

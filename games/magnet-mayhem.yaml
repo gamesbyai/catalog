@@ -16,8 +16,8 @@ description: >-
   desktop.
 
 
-  The game runs on Three.js and was entered in Vibe Jam 2026. The creator's
-  statement says it was built with Antigravity, Google's AI coding tool.
+  The game runs on Three.js and was entered in Vibe Jam 2026. The creator built
+  it with Antigravity, Google's AI coding tool.
 play:
   url: https://magnet-mayhem.vercel.app
   embeddable: true

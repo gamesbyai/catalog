@@ -5,8 +5,7 @@ description: >-
   Bean of the Hill is a multiplayer first-person shooter built around
   king-of-the-hill rules. Players control bean characters and fight over a
   central zone, trying to stay in control of it while opponents shoot to push
-  them out. Matches are played against other people online rather than against
-  bots.
+  them out. Matches are played against other people online.
 
 
   The bean theme gives the shooter a silly identity while the objective stays
@@ -15,9 +14,9 @@ description: >-
   entries.
 
 
-  The creator built it with Claude Code on Three.js. They describe making a
-  multiplayer FPS during a game jam as a challenge that would have been
-  impossible without AI.
+  According to the creator, it was built with Claude Code on Three.js, and it
+  runs in the browser. They describe making a multiplayer FPS during a game jam
+  as a challenge that would have been impossible without AI.
 play:
   url: https://beanofthehill.io
   embeddable: true

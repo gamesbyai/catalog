@@ -9,13 +9,13 @@ description: >-
 
 
   The game placed fourth out of 945 entries in Vibe Jam 2026 and won the award
-  for best art direction, presented by Cursor. The listing points to Elite:
+  for best art direction, presented by Cursor. The creator points to Elite:
   Dangerous as a reference, which fits the emphasis on cockpit-view flight. It
-  is also marked as playable on mobile, alongside desktop.
+  is also playable on mobile, alongside desktop.
 
 
-  It runs in the browser on Three.js. The creator built it with Cursor, and the
-  jam recognized the visual style in particular.
+  It runs in the browser on Three.js. According to the creator, it was built
+  with Cursor, and the jam recognized the visual style in particular.
 play:
   url: https://nullrange.com
   embeddable: false

@@ -15,8 +15,8 @@ description: >-
 
 
   StarJam was entered in Vibe Jam 2026, where it placed 205th among 945 entries.
-  It was built with the Godot engine, and the creator's details list Claude Code
-  as the tool used in development.
+  According to the creator, it was built with the Godot engine, using Claude
+  Code in development. It is a single-player game.
 play:
   url: https://star-jam.vercel.app
   embeddable: true

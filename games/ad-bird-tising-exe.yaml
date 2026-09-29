@@ -9,14 +9,13 @@ description: >-
 
 
   The game dresses its familiar formula in a satirical marketing theme, with a
-  title styled like an old executable file and a tagline about high-performance
+  title styled like an old executable file and a slogan about high-performance
   marketing delivered one flap at a time. It runs on mobile as well as desktop,
   and it is a single-player experience.
 
 
   It was an entry in Vibe Jam 2026, where it placed 431st out of 945 entries.
-  The listing names Antigravity, Google's coding tool, as the tool used to build
-  it.
+  The creator built it with Antigravity, Google's coding tool.
 play:
   url: https://stockout.studio
   embeddable: true

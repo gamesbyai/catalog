@@ -17,7 +17,7 @@ description: >-
 
   It was entered in Vibe Jam 2026, where it placed 217th out of 945 entries. The
   game is built with Three.js and runs on mobile as well as desktop. The creator
-  lists ChatGPT as the tool used.
+  built it with ChatGPT.
 play:
   url: https://threesuns.xyz
   embeddable: true

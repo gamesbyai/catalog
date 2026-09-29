@@ -15,8 +15,8 @@ description: >-
   favoring a soft pastel look over gritty space combat.
 
 
-  It was entered in Vibe Jam 2026 and runs on Three.js. The creator's submission
-  names Claude Code as the tool used to build it.
+  It was entered in Vibe Jam 2026, where it placed 590th out of 945 entries, and
+  runs on Three.js. The creator built it with Claude Code.
 play:
   url: https://starfallfactions.vercel.app
   embeddable: true

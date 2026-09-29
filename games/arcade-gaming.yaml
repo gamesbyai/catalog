@@ -8,15 +8,14 @@ description: >-
   were doing. It runs on mobile as well as desktop.
 
 
-  The project is tagged as both strategy and simulation, which suggests the play
-  leans on planning and managing systems more than on twitch reflexes. It was
-  entered in Vibe Jam 2026, where it placed 120th among 945 entries. The creator
-  says the community's passion, and reaching 150 users who tried it, were the
-  high points of the project.
+  The project mixes arcade and strategy, which suggests it leans on planning. It
+  was entered in Vibe Jam 2026, where it placed 120th among 945 entries. The
+  creator says the community's passion, and reaching 150 users who tried it,
+  were the high points of the project.
 
 
-  The creator built it with Claude Code, and the 3D presentation runs on
-  Three.js.
+  According to the creator, it was built with Claude Code, and the 3D
+  presentation runs on Three.js in the browser. It is built for solo play.
 play:
   url: https://arcadegaming.app
   embeddable: true

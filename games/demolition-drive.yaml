@@ -11,11 +11,12 @@ description: >-
   The game grew out of the creator's fatigue with building. Many games they
   played or made centered on construction loops, so they wanted something where
   the whole point is knocking things down. That contrast shapes the game: it
-  focuses on the satisfaction of destruction rather than assembly.
+  focuses on the satisfaction of destruction.
 
 
   It runs in the browser on Three.js and works on mobile devices. The creator
-  submitted it to Vibe Jam 2026, and the listed tooling is Google's Antigravity.
+  submitted it to Vibe Jam 2026, where it placed 74th out of 945 entries, and
+  built it with Google's Antigravity.
 play:
   url: https://tower-crusher.vercel.app
   embeddable: true

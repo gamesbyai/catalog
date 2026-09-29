@@ -14,8 +14,8 @@ description: >-
   scripted enemies.
 
 
-  It was built with Three.js for 3D rendering. The creator's submission lists
-  Claude and Codex as the AI tools used, and the game was entered in Vibe Jam
+  It was built with Three.js for 3D rendering and runs in the browser. The
+  creator built it with Claude and Codex, and the game was entered in Vibe Jam
   2026, where it placed 474th out of 945 entries.
 play:
   url: https://bloodandblade.hexpandify.com

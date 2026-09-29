@@ -17,8 +17,8 @@ description: >-
 
   The idea came from the creator's curiosity about what lies down the dark
   tunnels seen from subway trains, such as abandoned stations or old bunkers. It
-  was entered in Vibe Jam 2026, and the creator lists Cursor as a tool and
-  Three.js as the engine.
+  was entered in Vibe Jam 2026, and the creator built it with Cursor and
+  Three.js.
 play:
   url: https://mcg-urbex.web.app
   embeddable: true

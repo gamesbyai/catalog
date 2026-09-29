@@ -4,8 +4,8 @@ tagline: Shoot your way through a Doom-style level using nothing but the scroll 
 description: >-
   DOOMscroll is a first-person shooter in the style of classic Doom, with one
   twist: the player controls everything by scrolling. Movement and action are
-  tied to the scroll input instead of the usual keyboard and mouse setup, so
-  each run becomes an exercise in working out how far and how fast to scroll.
+  tied to the scroll input, so each run becomes an exercise in working out how
+  far and how fast to scroll.
 
 
   The in-game plaques display real news headlines, which gives the corridors a
@@ -14,8 +14,9 @@ description: >-
   of the design.
 
 
-  The creator states that it was built with GPT-5 and rendered with HTML5
-  Canvas, so it runs directly in a web browser. It is built for solo play.
+  According to its README, the creator built it with GPT-5, OpenAI's model, and
+  rendered it with HTML5 Canvas, so it runs directly in a web browser. It is
+  built for solo play, and you shoot your way through a Doom-style level.
 play:
   url: https://gisnep.com/doomscroll
   embeddable: true

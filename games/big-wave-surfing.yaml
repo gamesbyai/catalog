@@ -8,10 +8,9 @@ description: >-
   staying ahead of the foam that chases you and ends the run if it catches up.
 
 
-  The focus is on the feel of riding rather than on tricks. The creator wanted
-  people who have never surfed, such as coworkers, to get a small taste of the
-  joy of catching a wave, so the game leans on simple wave physics and smooth
-  carving instead of complicated scoring or maneuvers.
+  The focus is on the feel of riding. The creator wanted people who have never
+  surfed, such as coworkers, to get a small taste of the joy of catching a wave,
+  so the game leans on simple wave physics and smooth carving.
 
 
   It runs on Three.js and works on mobile as well as desktop. The creator built

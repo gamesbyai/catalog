@@ -14,7 +14,7 @@ description: >-
   work.
 
 
-  The game is rendered with PixiJS. According to the listing, it was built with
+  The game is rendered with PixiJS. According to its README, it was built with
   Claude, which fits its small scope: one familiar mechanic, kept simple and
   easy to pick up in a short session on any device with a browser.
 play:

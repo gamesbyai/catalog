@@ -6,7 +6,7 @@ description: >-
   Vibe Sentinel is a turn-based dungeon roguelike played on a grid. You work
   through ten levels, facing shadow beasts that grow tougher as you descend.
   Every move counts, so a run comes down to managing your resources and choosing
-  each step with care rather than reacting quickly.
+  each step with care.
 
 
   Each level has its own look. The ten biomes range from a forest grove to a
@@ -17,8 +17,7 @@ description: >-
 
   The game was an entry in Vibe Jam 2026 and runs with PixiJS. The creator built
   it with Claude Code. The design draws on classic grid roguelikes such as Rogue
-  and early Nethack, where tension comes from limited resources instead of
-  reflexes.
+  and early Nethack, where tension comes from limited resources.
 play:
   url: https://flash-source.github.io/vibeSentinel
   embeddable: true

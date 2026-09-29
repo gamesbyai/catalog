@@ -9,12 +9,13 @@ description: >-
 
 
   The game keeps to the familiar Breakout formula, aiming for a fresh version of
-  a well-known arcade idea rather than a new set of rules. Its simple, immediate
-  action makes it easy to pick up for a quick session.
+  a well-known arcade idea. Its simple, immediate action makes it easy to pick
+  up for a quick session.
 
 
-  The creator says they built it with the Gemini app, and it runs on Phaser. It
-  was entered in Vibe Jam 2026, where it placed 583rd out of 945 entries.
+  The creator says they built it with the Gemini app, and it runs on Phaser in
+  the browser. It was entered in Vibe Jam 2026, where it placed 583rd out of 945
+  entries. It is a single-player game.
 play:
   url: https://cool-down.live
   embeddable: true

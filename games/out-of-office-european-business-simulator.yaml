@@ -15,8 +15,8 @@ description: >-
 
 
   The game was entered in Vibe Jam 2026, where it placed 401 out of 945 entries.
-  The creator built it with Claude Code. It is marked as playable on mobile and
-  is a single-player experience.
+  The creator built it with Claude Code. It is playable on mobile and is a
+  single-player experience.
 play:
   url: https://business-tycoon-european-summer-edi.vercel.app
   embeddable: true
