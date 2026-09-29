@@ -39,10 +39,12 @@ test('rejects unknown taxonomy slugs and a file name that differs from the slug'
   assert.ok(problems.some((p) => p.includes('must match the file name')));
 });
 
-test('a live entry needs an editor score and a 600-character description', () => {
+test('a live entry needs a 600-character description, and no editor score or jam rank (rankings come from player votes)', () => {
   const { problems } = validate(repo({ 'sky-hop.yaml': draft.replace('status: draft', 'status: live') }));
-  assert.ok(problems.some((p) => p.includes('editor')));
   assert.ok(problems.some((p) => p.includes('description')));
+  assert.ok(!problems.some((p) => /editor|jam/.test(p)), problems.join('\n'));
+  const live = draft.replace('status: draft', 'status: live').replace('description: ""', `description: "${'x'.repeat(620)}"`);
+  assert.deepEqual(validate(repo({ 'sky-hop.yaml': live })).problems, []);
 });
 
 test('a draft may name only a provider or a tool; with none it needs a jam', () => {
@@ -56,7 +58,7 @@ test('a draft may name only a provider or a tool; with none it needs a jam', () 
   assert.deepEqual(validate(repo({ 'sky-hop.yaml': jamOnly })).problems, []);
 });
 
-test('a live jam entry needs no editor score, and the engine may be left out', () => {
+test('a live jam entry may leave out the engine', () => {
   const long = 'x'.repeat(620);
   const live = draft.replace('status: draft', 'status: live').replace('description: ""', `description: "${long}"`)
     .replace('tech: { engine: threejs, multiplayer: single }', 'tech: { multiplayer: single }') + 'jam: { event: vibe-jam-2026, rank: 3, entries: 945 }\n';

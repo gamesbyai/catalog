@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-// Opens (or, for an edited issue, updates) the draft PR for a submission, with the GitHub App's token so the capture
+// Opens (or, for an edited issue, updates) the PR for a submission, with the GitHub App's token so the capture
 // and validate workflows run on it. Talks to the REST API directly: no shell ever sees issue text.
 // Usage (CI): GH_TOKEN=… ISSUE_NUMBER=… node scripts/submission-pr.mjs <converter-output.json>
 import { readFileSync } from 'node:fs';
@@ -42,7 +42,7 @@ export async function openOrUpdate(out, { repo, issue, token, fetchImpl = fetch 
   let pr = open[0];
   if (!pr) {
     const notes = out.notes?.length ? `\n\nNotes:\n${out.notes.map((n) => `- ${esc(n)}`).join('\n')}` : '';
-    const res = await post('/pulls', { title: `Submission: ${out.slug}`, head: branch, base: 'main', body: `Closes #${issue}. Draft entry from the submission form; screenshots and the review card follow.${notes}` });
+    const res = await post('/pulls', { title: `Submission: ${out.slug}`, head: branch, base: 'main', body: `Closes #${issue}. Entry from the submission form; screenshots, the drafted description and the review card follow. Merging publishes it.${notes}` });
     pr = await res.json();
     await post(`/issues/${issue}/comments`, { body: `Thanks. Your game is in review: ${pr.html_url}` });
   }
