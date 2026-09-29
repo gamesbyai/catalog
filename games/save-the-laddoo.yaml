@@ -1,0 +1,59 @@
+slug: save-the-laddoo
+title: Save The Laddoo
+tagline: Defend a single laddoo on the table from waves of ants at Nani's house.
+description: >-
+  Save The Laddoo is a casual strategy and tower-defense game set during a 90s
+  Indian summer vacation at Nani's house. One laddoo sits on the table, and ants
+  keep arriving to carry it off. The player has to stop them before they reach
+  the sweet and survive as long as possible.
+
+
+  The game is built around nostalgia more than score. The setting draws on
+  ceiling fans, load-shedding, and the quiet war between a child and the ants.
+  The creator says it came from childhood memories and from spotting ants on a
+  window sill, and that it is meant to bring back the feeling of being cared for
+  by a grandmother.
+
+
+  The creator made it for Vibe Jam 2026 and lists Antigravity as the tool used.
+  It is playable on mobile and is single-player.
+play:
+  url: https://savetheladdoo.vercel.app
+  embeddable: true
+  platforms:
+    - browser
+    - mobile
+creator:
+  name: akarshmanas
+  handle: akarshmanas
+  x: akarshmanas
+made:
+  models: []
+  providers:
+    - google
+  tools:
+    - antigravity
+  aiShare: most
+  source: Vibe Jam 2026 submission form
+  evidence: creator
+tech:
+  multiplayer: single
+genres:
+  - strategy
+  - tower-defense
+jam:
+  event: vibe-jam-2026
+  rank: 542
+  entries: 945
+media:
+  cover: games/save-the-laddoo/cover
+  screenshots:
+    - games/save-the-laddoo/shot-1
+    - games/save-the-laddoo/shot-2
+dates:
+  added: 2026-09-29
+  updated: 2026-09-29
+status: live
+provenance:
+  foundVia: scout:vibejam-2026
+  scannedAt: 2026-09-29T18:39:21.624Z

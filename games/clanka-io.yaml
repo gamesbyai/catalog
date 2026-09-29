@@ -1,0 +1,60 @@
+slug: clanka-io
+title: Clanka.io
+tagline: Hunt rival assassins on a crowded ship without shooting any passengers.
+description: >-
+  Clanka.io is a multiplayer first-person shooter drawn in 1-bit ink-on-paper
+  style. Players control clanker assassins, called clankas, who stalk one
+  another across a passenger ship. Each run is a hunt: find another assassin
+  among the crowd and take them out before they get you.
+
+
+  The twist is the crowd itself. Passengers wander the ship, and shooting one
+  ends your run, so every shot needs a certain target. That turns a standard
+  arena shooter into a game of watching, blending in, and picking the right
+  moment. The monochrome look gives it a distinct sketchbook feel.
+
+
+  It was submitted to Vibe Jam 2026, and the creator says it was built with
+  Claude Code. It runs in the browser and is marked as playable on mobile as
+  well as desktop.
+play:
+  url: https://clankaio.pages.dev
+  embeddable: true
+  platforms:
+    - browser
+    - mobile
+creator:
+  name: vincentdotml
+  handle: vincentdotml
+  x: vincentdotml
+made:
+  models: []
+  providers:
+    - anthropic
+  tools:
+    - claude-code
+  aiShare: most
+  source: Vibe Jam 2026 submission form
+  evidence: creator
+tech:
+  multiplayer: online
+genres:
+  - shooter
+  - stealth
+  - io
+jam:
+  event: vibe-jam-2026
+  rank: 550
+  entries: 945
+media:
+  cover: games/clanka-io/cover
+  screenshots:
+    - games/clanka-io/shot-1
+    - games/clanka-io/shot-2
+dates:
+  added: 2026-09-29
+  updated: 2026-09-29
+status: live
+provenance:
+  foundVia: scout:vibejam-2026
+  scannedAt: 2026-09-29T18:39:21.628Z

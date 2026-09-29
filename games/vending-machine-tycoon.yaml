@@ -1,0 +1,62 @@
+slug: vending-machine-tycoon
+title: Vending Machine Tycoon
+tagline: Place vending machines around town, avoid getting caught, and build up
+  passive income.
+description: >-
+  Vending Machine Tycoon is a 3D strategy game about setting up vending machines
+  and earning money from them. You choose where to place each machine, then
+  collect the profits while trying not to get caught. Each run is a balance
+  between expanding your operation and staying out of trouble.
+
+
+  The game centers on chasing passive income. Every machine you add feeds your
+  earnings, so the choice of where to put the next one shapes how quickly your
+  money grows. The risk of getting caught adds tension to what would otherwise
+  be a simple money-building loop. It runs in the browser and is playable on
+  mobile.
+
+
+  It was entered in Vibe Jam 2026 and placed 498th out of 945 entries. The
+  creator's information lists Claude Code as the tool used, and the game is
+  built with Three.js.
+play:
+  url: https://vendingmachinetycoon.com
+  embeddable: true
+  platforms:
+    - browser
+    - mobile
+creator:
+  name: iampiet
+  handle: iampiet
+  x: iampiet
+made:
+  models: []
+  providers:
+    - anthropic
+  tools:
+    - claude-code
+  aiShare: most
+  source: Vibe Jam 2026 submission form
+  evidence: creator
+tech:
+  engine: threejs
+  multiplayer: single
+genres:
+  - strategy
+  - simulation
+jam:
+  event: vibe-jam-2026
+  rank: 498
+  entries: 945
+media:
+  cover: games/vending-machine-tycoon/cover
+  screenshots:
+    - games/vending-machine-tycoon/shot-1
+    - games/vending-machine-tycoon/shot-2
+dates:
+  added: 2026-09-29
+  updated: 2026-09-29
+status: live
+provenance:
+  foundVia: scout:vibejam-2026
+  scannedAt: 2026-09-29T18:39:21.598Z

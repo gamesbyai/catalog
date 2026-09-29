@@ -1,0 +1,61 @@
+slug: blood-blade
+title: Blood&Blade
+tagline: Fight melee duels with directional attacks and blocks in the browser.
+description: >-
+  Blood&Blade is a browser-based melee combat game modeled on the fighting
+  system of Mount & Blade. Players swing weapons in chosen directions and must
+  block in the matching direction to stop incoming strikes, so each fight comes
+  down to reading an opponent and timing your own attacks.
+
+
+  The focus is narrow on purpose: the creator loves the directional combat of
+  Mount & Blade and wanted to recreate it with melee only, leaving out mounted
+  play. The game supports multiplayer, so duels can be fought against other
+  people rather than only scripted enemies.
+
+
+  It was built with Three.js for 3D rendering. The creator's submission lists
+  Claude and Codex as the AI tools used, and the game was entered in Vibe Jam
+  2026.
+play:
+  url: https://bloodandblade.hexpandify.com
+  embeddable: true
+  platforms:
+    - browser
+creator:
+  name: zahrdaniel
+  handle: zahrdaniel
+  x: zahrdaniel
+made:
+  models: []
+  providers:
+    - anthropic
+    - openai
+  tools:
+    - claude-ai
+    - codex
+  aiShare: most
+  source: Vibe Jam 2026 submission form
+  evidence: creator
+tech:
+  engine: threejs
+  multiplayer: online
+genres:
+  - action
+  - fighting
+jam:
+  event: vibe-jam-2026
+  rank: 474
+  entries: 945
+media:
+  cover: games/blood-blade/cover
+  screenshots:
+    - games/blood-blade/shot-1
+    - games/blood-blade/shot-2
+dates:
+  added: 2026-09-29
+  updated: 2026-09-29
+status: live
+provenance:
+  foundVia: scout:vibejam-2026
+  scannedAt: 2026-09-29T18:39:21.582Z

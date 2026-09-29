@@ -1,0 +1,61 @@
+slug: rubble-kings
+title: Rubble Kings
+tagline: Stack physics blocks into a tall kingdom and knock down your rivals' towers.
+description: >-
+  Rubble Kings is a multiplayer strategy game built around physics-based blocks.
+  You construct your kingdom by stacking pieces, and the height of your
+  structure determines how much land you control. Building upward is the way to
+  expand, so every run comes down to how ambitious you are willing to be with
+  your tower.
+
+
+  The tension comes from the physics. A tall structure claims more territory,
+  but it is also easier to topple, and a single well-placed hit from an opponent
+  can send everything crashing down. Growth and defense pull against each other,
+  so stability matters as much as size.
+
+
+  The creator remembered a similar game from more than twenty years ago but
+  could never recall its name or track it down, so they made their own version.
+  It was built with Three.js, and the creator used Claude Code. It was entered
+  in Vibe Jam 2026.
+play:
+  url: https://pixelcrowngames.com/games/rubblekings
+  embeddable: true
+  platforms:
+    - browser
+creator:
+  name: eric_j_sexton
+  handle: eric-j-sexton
+  x: eric_j_sexton
+made:
+  models: []
+  providers:
+    - anthropic
+  tools:
+    - claude-code
+  aiShare: most
+  source: Vibe Jam 2026 submission form
+  evidence: creator
+tech:
+  engine: threejs
+  multiplayer: online
+genres:
+  - strategy
+  - sandbox
+jam:
+  event: vibe-jam-2026
+  rank: 520
+  entries: 945
+media:
+  cover: games/rubble-kings/cover
+  screenshots:
+    - games/rubble-kings/shot-1
+    - games/rubble-kings/shot-2
+dates:
+  added: 2026-09-29
+  updated: 2026-09-29
+status: live
+provenance:
+  foundVia: scout:vibejam-2026
+  scannedAt: 2026-09-29T18:39:21.611Z

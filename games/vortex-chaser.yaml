@@ -1,0 +1,64 @@
+slug: vortex-chaser
+title: Vortex Chaser
+tagline: Drive a storm-chasing rig, boost and drift after tornadoes, and tune
+  your vehicle.
+description: >-
+  Vortex Chaser is an arcade driving game about pursuing tornadoes. You get
+  behind the wheel of a storm-chasing vehicle and race toward violent supercells
+  rated EF3 and above. Boosting and drifting are the main tools for closing the
+  distance to a storm, and a run is about staying on the tornado's trail.
+
+
+  A garage can be opened at any time with the G key, so you can customize your
+  rig on the fly rather than only between runs. The game also supports the Vibe
+  Jam portal system and includes multiplayer, and it is set up to work on mobile
+  devices as well as desktop.
+
+
+  The creator says the idea came from their son, who loves tornado chasing
+  games. The creator enjoys the movies but wanted to build something to the
+  son's taste. It was made with Antigravity and runs on Three.js, and it was
+  entered in Vibe Jam 2026.
+play:
+  url: https://vortex-chaser.waterschie.com?portal=true
+  embeddable: true
+  platforms:
+    - browser
+    - mobile
+  controls:
+    - "G: open garage"
+creator:
+  name: WatersChie
+  handle: waterschie
+  x: WatersChie
+made:
+  models: []
+  providers:
+    - google
+  tools:
+    - antigravity
+  aiShare: most
+  source: Vibe Jam 2026 submission form
+  evidence: creator
+tech:
+  engine: threejs
+  multiplayer: online
+genres:
+  - arcade
+  - simulation
+jam:
+  event: vibe-jam-2026
+  rank: 534
+  entries: 945
+media:
+  cover: games/vortex-chaser/cover
+  screenshots:
+    - games/vortex-chaser/shot-1
+    - games/vortex-chaser/shot-2
+dates:
+  added: 2026-09-29
+  updated: 2026-09-29
+status: live
+provenance:
+  foundVia: scout:vibejam-2026
+  scannedAt: 2026-09-29T18:39:21.620Z

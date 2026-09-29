@@ -1,0 +1,60 @@
+slug: fat-pac
+title: Fat Pac
+tagline: Eat everything in a maze while growing fatter and slower with every bite.
+description: >-
+  Fat Pac is a maze arcade game in the Pac-Man tradition. You guide a hungry
+  character through a board and eat everything in sight. Each bite has a cost:
+  the character grows fatter and slower, so a run becomes a race against hunger
+  on one side and obesity on the other.
+
+
+  The twist is that your body becomes part of the challenge. As you swell, you
+  get closer to literally breaking the board, which turns the usual
+  pellet-clearing routine into a balancing act between eating enough to survive
+  and staying small enough to keep moving. The result is a chaotic take on a
+  familiar maze chase.
+
+
+  Fat Pac was entered in Vibe Jam 2026 and draws its graphics on an HTML canvas.
+  It was built with Claude Code, and it plays in the browser without any
+  multiplayer component or dedicated mobile layout.
+play:
+  url: https://fatpac.vercel.app
+  embeddable: true
+  platforms:
+    - browser
+creator:
+  name: AnaRozeno
+  handle: anarozeno
+  x: AnaRozeno
+made:
+  models: []
+  providers:
+    - anthropic
+  tools:
+    - claude-code
+  aiShare: most
+  source: Vibe Jam 2026 submission form
+  evidence: creator
+tech:
+  engine: canvas
+  multiplayer: single
+genres:
+  - arcade
+  - strategy
+jam:
+  event: vibe-jam-2026
+  rank: 500
+  entries: 945
+media:
+  cover: games/fat-pac/cover
+  screenshots:
+    - games/fat-pac/shot-1
+    - games/fat-pac/shot-2
+dates:
+  added: 2026-09-29
+  updated: 2026-09-29
+status: live
+provenance:
+  foundVia: scout:vibejam-2026
+  scannedAt: 2026-09-29T18:39:21.600Z

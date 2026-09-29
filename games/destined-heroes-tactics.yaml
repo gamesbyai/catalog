@@ -1,0 +1,57 @@
+slug: destined-heroes-tactics
+title: Destined Heroes Tactics
+tagline: Command a squad of unique heroes in turn-based battles won by tactics alone.
+description: >-
+  Destined Heroes Tactics is a lite tactical RPG played in turns. You lead a
+  group of heroes across the battlefield, positioning each unit and choosing its
+  actions to defeat the opposing side. Outcomes come from planning rather than
+  chance, so every move you make is a decision you can reason about.
+
+
+  Each hero is unique, which shapes how you build a team and approach a fight.
+  The design draws on a love of chess and on tactical RPGs like Fire Emblem,
+  favoring careful positioning and reading your opponent over random rolls. The
+  game also runs on mobile devices, so battles fit on a phone screen.
+
+
+  The creator built it with Cursor, and it was entered in Vibe Jam 2026, where
+  it placed 484th out of 945 entries in the final ranking.
+play:
+  url: https://destinedstudio.com/destined-heroes-tactics
+  embeddable: true
+  platforms:
+    - browser
+    - mobile
+creator:
+  name: WillifordBlake
+  handle: willifordblake
+  x: WillifordBlake
+made:
+  models: []
+  tools:
+    - cursor
+  aiShare: most
+  source: Vibe Jam 2026 submission form
+  evidence: creator
+tech:
+  engine: unity
+  multiplayer: single
+genres:
+  - rpg
+  - strategy
+jam:
+  event: vibe-jam-2026
+  rank: 484
+  entries: 945
+media:
+  cover: games/destined-heroes-tactics/cover
+  screenshots:
+    - games/destined-heroes-tactics/shot-1
+    - games/destined-heroes-tactics/shot-2
+dates:
+  added: 2026-09-29
+  updated: 2026-09-29
+status: live
+provenance:
+  foundVia: scout:vibejam-2026
+  scannedAt: 2026-09-29T18:39:21.590Z

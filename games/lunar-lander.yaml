@@ -1,0 +1,55 @@
+slug: lunar-lander
+title: Lunar Lander
+tagline: Steer a lunar module with thrust and tilt to land softly on rough terrain.
+description: >-
+  Lunar Lander is a retro-style landing challenge played in the browser. You
+  pilot a lunar module over a jagged moonscape, using thrusters and tilt to
+  control your descent. Each attempt ends at the surface: a gentle touchdown
+  counts as a success, while coming in too hard means a crash.
+
+
+  The design follows the old Lunar Lander arcade cabinets, keeping the format
+  tight and focused on a single task: getting down safely. The uneven terrain
+  makes the landing spot matter as much as your speed, so every approach takes
+  careful judgment of angle and thrust.
+
+
+  The creator built it with Cursor, wanting a compact version that was easy to
+  tweak and share with friends. It was entered in Vibe Jam 2026.
+play:
+  url: https://lunarlanderv5.netlify.app
+  embeddable: true
+  platforms:
+    - browser
+creator:
+  name: bobmute2
+  handle: bobmute2
+  x: bobmute2
+made:
+  models: []
+  tools:
+    - cursor
+  aiShare: most
+  source: Vibe Jam 2026 submission form
+  evidence: creator
+tech:
+  multiplayer: single
+genres:
+  - arcade
+  - simulation
+jam:
+  event: vibe-jam-2026
+  rank: 525
+  entries: 945
+media:
+  cover: games/lunar-lander/cover
+  screenshots:
+    - games/lunar-lander/shot-1
+    - games/lunar-lander/shot-2
+dates:
+  added: 2026-09-29
+  updated: 2026-09-29
+status: live
+provenance:
+  foundVia: scout:vibejam-2026
+  scannedAt: 2026-09-29T18:39:21.613Z

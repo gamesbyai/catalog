@@ -1,0 +1,60 @@
+slug: glitch-court
+title: GLITCH COURT
+tagline: Judge absurd disputes between digital objects and chain combo streaks
+  in a 3D courtroom.
+description: >-
+  Glitch Court is an endless 3D tribunal where you play the judge. Digital
+  entities bring unhinged disputes before you, such as a Toaster suing a
+  Microwave, and you rule on each case at a fast pace. Correct calls build combo
+  streaks, so a run is about keeping momentum through a steady stream of
+  ridiculous cases.
+
+
+  The game leans on the absurdity of modern tech relationships and pairs it with
+  the punchy, escalating feedback of Balatro. Its courtroom drama takes cues
+  from Phoenix Wright, but the parties are everyday digital objects rather than
+  people. Screen-breaking revenge mechanics add a chaotic payoff when the
+  feedback loop peaks.
+
+
+  It was built with Three.js, and the creator used Cursor during development.
+  The game entered Vibe Jam 2026 and runs on mobile as well as desktop.
+play:
+  url: https://glitch-court.vercel.app
+  embeddable: true
+  platforms:
+    - browser
+    - mobile
+creator:
+  name: he_068
+  handle: he-068
+  x: he_068
+made:
+  models: []
+  tools:
+    - cursor
+  aiShare: most
+  source: Vibe Jam 2026 submission form
+  evidence: creator
+tech:
+  engine: threejs
+  multiplayer: single
+genres:
+  - arcade
+  - simulation
+jam:
+  event: vibe-jam-2026
+  rank: 480
+  entries: 945
+media:
+  cover: games/glitch-court/cover
+  screenshots:
+    - games/glitch-court/shot-1
+    - games/glitch-court/shot-2
+dates:
+  added: 2026-09-29
+  updated: 2026-09-29
+status: live
+provenance:
+  foundVia: scout:vibejam-2026
+  scannedAt: 2026-09-29T18:39:21.587Z

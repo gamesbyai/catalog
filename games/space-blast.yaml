@@ -1,0 +1,58 @@
+slug: space-blast
+title: Space Blast
+tagline: Dodge and shoot through asteroid fields, alone or with a friend on the
+  same screen.
+description: >-
+  Space Blast is a 3D asteroid survival shooter set in outer space. You pilot a
+  ship through dense fields of rocks, shooting and steering to stay alive as the
+  pressure builds. A run can be played solo or as a couch co-op pair sharing one
+  screen, and it ends when the asteroids close in.
+
+
+  Between the shooting and dodging, you upgrade your loadout on the fly, so the
+  ship changes as a run goes on. Scores feed a leaderboard, which gives each
+  attempt a target to beat. The game runs in the browser on top of Three.js and
+  supports mobile play as well as desktop.
+
+
+  It was an entry in Vibe Jam 2026, where it placed 516th out of 945 entries.
+  The creator says it was built with the Cursor editor.
+play:
+  url: https://space-blast.vercel.app
+  embeddable: true
+  platforms:
+    - browser
+    - mobile
+creator:
+  name: Emanuellson7
+  handle: emanuellson7
+  x: Emanuellson7
+made:
+  models: []
+  tools:
+    - cursor
+  aiShare: most
+  source: Vibe Jam 2026 submission form
+  evidence: creator
+tech:
+  engine: threejs
+  multiplayer: online
+genres:
+  - shooter
+  - arcade
+jam:
+  event: vibe-jam-2026
+  rank: 516
+  entries: 945
+media:
+  cover: games/space-blast/cover
+  screenshots:
+    - games/space-blast/shot-1
+    - games/space-blast/shot-2
+dates:
+  added: 2026-09-29
+  updated: 2026-09-29
+status: live
+provenance:
+  foundVia: scout:vibejam-2026
+  scannedAt: 2026-09-29T18:39:21.608Z
