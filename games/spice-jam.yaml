@@ -1,0 +1,60 @@
+slug: spice-jam
+title: Spice Jam
+tagline: Harvest spice in the desert, hunt rival harvesters, and outlast the worm.
+description: >-
+  Spice Jam is a multiplayer, Dune-inspired shooter built around a single loop.
+  You roam open sand collecting spice, then take it back to your base. Other
+  players are harvesting too, so you can kill a rival harvester to steal what
+  they have gathered before heading home.
+
+
+  The worm is the constant threat. Staying out on the dunes pays off in spice,
+  but it also leaves you exposed to both other players and the creature beneath
+  the sand. The tension comes from deciding when to push for more and when to
+  return.
+
+
+  The prototype was made for Vibe Jam 2026, where it placed 250th among 945
+  entries. It runs in 3D on Three.js, and the creator states it was built with
+  Codex. Its combat draws on lasgun and Holtzman shield ideas from the source
+  material.
+play:
+  url: https://spice.bananatriangles.com
+  embeddable: true
+  platforms:
+    - browser
+creator:
+  name: ltfawg
+  handle: ltfawg
+  x: ltfawg
+made:
+  models: []
+  providers:
+    - openai
+  tools:
+    - codex
+  aiShare: most
+  source: Vibe Jam 2026 submission form
+  evidence: creator
+tech:
+  engine: threejs
+  multiplayer: online
+genres:
+  - action
+  - shooter
+jam:
+  event: vibe-jam-2026
+  rank: 250
+  entries: 945
+media:
+  cover: games/spice-jam/cover
+  screenshots:
+    - games/spice-jam/shot-1
+    - games/spice-jam/shot-2
+dates:
+  added: 2026-09-29
+  updated: 2026-09-29
+status: live
+provenance:
+  foundVia: scout:vibejam-2026
+  scannedAt: 2026-09-29T16:37:11.636Z

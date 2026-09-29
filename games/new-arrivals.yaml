@@ -1,0 +1,59 @@
+slug: new-arrivals
+title: New Arrivals
+tagline: Sort VHS tapes into categories on the shelves of a retro rental store.
+description: >-
+  New Arrivals is a sorting puzzle set inside a retro video rental store. Tapes
+  are waiting to be put away, and the player places each VHS on the shelf that
+  matches its category until the store is tidy. It plays in a browser in 3D and
+  is set up to work on mobile devices too.
+
+
+  The premise comes from real hobby experience: the creator runs and visits
+  local VHS swaps and enjoys arranging tapes into quirky collections. That
+  affection for the format shapes the store setting, where the goal is a
+  well-organized shelf rather than speed or combat.
+
+
+  It was a Vibe Jam 2026 entry and placed 251st out of 945. The creator built it
+  with Claude Code, and the 3D scene runs on Three.js.
+play:
+  url: https://game.vhsgarage.com
+  embeddable: true
+  platforms:
+    - browser
+    - mobile
+creator:
+  name: clarklab
+  handle: clarklab
+  x: clarklab
+made:
+  models: []
+  providers:
+    - anthropic
+  tools:
+    - claude-code
+  aiShare: most
+  source: Vibe Jam 2026 submission form
+  evidence: creator
+tech:
+  engine: threejs
+  multiplayer: single
+genres:
+  - puzzle
+  - casual
+jam:
+  event: vibe-jam-2026
+  rank: 251
+  entries: 945
+media:
+  cover: games/new-arrivals/cover
+  screenshots:
+    - games/new-arrivals/shot-1
+    - games/new-arrivals/shot-2
+dates:
+  added: 2026-09-29
+  updated: 2026-09-29
+status: live
+provenance:
+  foundVia: scout:vibejam-2026
+  scannedAt: 2026-09-29T16:37:11.637Z

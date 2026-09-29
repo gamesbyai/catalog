@@ -1,0 +1,60 @@
+slug: superskyler
+title: superskyler
+tagline: Play party mini-games with friends, using your phone as the controller.
+description: >-
+  superskyler is a multiplayer party game made up of short mini-games. Players
+  join a shared session and use their own phones as controllers, so a group can
+  play together without extra hardware. Each round is a quick challenge, and the
+  group moves from one mini-game to the next.
+
+
+  The phone-as-controller setup keeps the barrier to entry low, since everyone
+  in the room already has the device they need. It is built around the feel of
+  family game nights, and the creator describes it as inspired by playing family
+  games. It was made for a school coding contest and entered in Vibe Jam 2026.
+
+
+  The creator built it with Cursor and Claude Code, using Three.js for the
+  graphics. It placed 286th out of 945 entries in the jam.
+play:
+  url: https://superskyler.com
+  embeddable: true
+  platforms:
+    - browser
+    - mobile
+creator:
+  name: jpmarindiaz
+  handle: jpmarindiaz
+  x: jpmarindiaz
+made:
+  models: []
+  providers:
+    - anthropic
+  tools:
+    - cursor
+    - claude-code
+  aiShare: most
+  source: Vibe Jam 2026 submission form
+  evidence: creator
+tech:
+  engine: threejs
+  multiplayer: online
+genres:
+  - party
+  - casual
+jam:
+  event: vibe-jam-2026
+  rank: 286
+  entries: 945
+media:
+  cover: games/superskyler/cover
+  screenshots:
+    - games/superskyler/shot-1
+    - games/superskyler/shot-2
+dates:
+  added: 2026-09-29
+  updated: 2026-09-29
+status: live
+provenance:
+  foundVia: scout:vibejam-2026
+  scannedAt: 2026-09-29T16:37:11.662Z

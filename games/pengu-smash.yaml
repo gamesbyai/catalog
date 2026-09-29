@@ -1,0 +1,62 @@
+slug: pengu-smash
+title: Pengu Smash
+tagline: Charge and clash with penguins to knock rivals off a crumbling hex ice arena.
+description: >-
+  Pengu Smash is a real-time 3D multiplayer brawler set on a platform of
+  hexagonal ice tiles floating in the ocean. Each player controls a penguin that
+  charges and collides with others, trying to bowl them into the water. The
+  arena crumbles as the round goes on, so the safe footing shrinks and the last
+  penguin standing wins.
+
+
+  The game runs in the browser and supports online play with friends, including
+  on mobile. It uses no external assets: the visuals, sparkling water effects,
+  selectable themes, and chiptune music are all produced in code. The shrinking
+  hex floor keeps rounds tense, since every clash risks sending you off an edge.
+
+
+  The creator built it with Claude Code as an experiment in how far an AI
+  pair-programmer could take a multiplayer 3D browser game, inspired by Pieter
+  Levels' build-in-public approach. It uses Three.js and needs no build step. It
+  was entered in Vibe Jam 2026.
+play:
+  url: https://pengusmash.com
+  embeddable: true
+  platforms:
+    - browser
+    - mobile
+creator:
+  name: s1mphon1
+  handle: s1mphon1
+  x: s1mphon1
+made:
+  models: []
+  providers:
+    - anthropic
+  tools:
+    - claude-code
+  aiShare: all
+  source: Vibe Jam 2026 submission form
+  evidence: creator
+tech:
+  engine: threejs
+  multiplayer: online
+genres:
+  - action
+  - party
+jam:
+  event: vibe-jam-2026
+  rank: 244
+  entries: 945
+media:
+  cover: games/pengu-smash/cover
+  screenshots:
+    - games/pengu-smash/shot-1
+    - games/pengu-smash/shot-2
+dates:
+  added: 2026-09-29
+  updated: 2026-09-29
+status: live
+provenance:
+  foundVia: scout:vibejam-2026
+  scannedAt: 2026-09-29T16:37:11.631Z

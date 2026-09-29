@@ -1,0 +1,61 @@
+slug: voc
+title: VOC
+tagline: Sail a global Age of Sail map to plunder, trade, or explore.
+description: >-
+  VOC is an Age of Sail role-playing game set on a map of the entire globe,
+  built from real geographic data. You command a ship and choose how to make
+  your way: plunder other vessels as a pirate, trade goods between ports, or
+  simply explore the seas and coastlines.
+
+
+  The world is based on actual geography, so the routes you sail follow the
+  shape of real oceans and coasts. The creator's interest in maps, boats,
+  maritime law, and shipwrecks shapes the setting. The game supports multiplayer
+  and runs on mobile as well as desktop browsers.
+
+
+  It was made for Vibe Jam 2026 and renders in Three.js. The creator says it was
+  inspired by a post from the three.js account, and lists Codex as the tool used
+  to build it.
+play:
+  url: https://vocgame.com
+  embeddable: true
+  platforms:
+    - browser
+    - mobile
+creator:
+  name: scaevola171
+  handle: scaevola171
+  x: scaevola171
+made:
+  models: []
+  providers:
+    - openai
+  tools:
+    - codex
+  aiShare: most
+  source: Vibe Jam 2026 submission form
+  evidence: creator
+tech:
+  engine: threejs
+  multiplayer: online
+genres:
+  - rpg
+  - strategy
+  - adventure
+jam:
+  event: vibe-jam-2026
+  rank: 274
+  entries: 945
+media:
+  cover: games/voc/cover
+  screenshots:
+    - games/voc/shot-1
+    - games/voc/shot-2
+dates:
+  added: 2026-09-29
+  updated: 2026-09-29
+status: live
+provenance:
+  foundVia: scout:vibejam-2026
+  scannedAt: 2026-09-29T16:37:11.653Z

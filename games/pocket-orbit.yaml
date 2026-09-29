@@ -1,0 +1,60 @@
+slug: pocket-orbit
+title: Pocket Orbit
+tagline: Fly between tiny planets, fight, claim worlds, and build defenses with
+  a crew online.
+description: >-
+  Pocket Orbit is a multiplayer space adventure set on tiny planets in a shared
+  solar system. Players fly between worlds, fight enemies and rivals, and claim
+  planets as their own. Once a world is claimed, they can build defenses to hold
+  it while the action keeps moving around them.
+
+
+  Crew portals let players team up and join each other across the solar system,
+  which gives the chaos a cooperative side. The mix of shooting, exploration,
+  and base building draws on colony-style management and space travel, all
+  condensed into small, bite-sized planets. It supports mobile play as well as
+  desktop.
+
+
+  The game was entered in Vibe Jam 2026, where it placed 285th among 945
+  entries. The creator built it with Cursor, and it runs on Three.js.
+play:
+  url: https://pocketorbit.com
+  embeddable: true
+  platforms:
+    - browser
+    - mobile
+creator:
+  name: alhuissi
+  handle: alhuissi
+  x: alhuissi
+made:
+  models: []
+  tools:
+    - cursor
+  aiShare: most
+  source: Vibe Jam 2026 submission form
+  evidence: creator
+tech:
+  engine: threejs
+  multiplayer: online
+genres:
+  - action
+  - shooter
+  - simulation
+jam:
+  event: vibe-jam-2026
+  rank: 285
+  entries: 945
+media:
+  cover: games/pocket-orbit/cover
+  screenshots:
+    - games/pocket-orbit/shot-1
+    - games/pocket-orbit/shot-2
+dates:
+  added: 2026-09-29
+  updated: 2026-09-29
+status: live
+provenance:
+  foundVia: scout:vibejam-2026
+  scannedAt: 2026-09-29T16:37:11.661Z

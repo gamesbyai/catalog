@@ -1,0 +1,60 @@
+slug: defense-the-tower
+title: Defense The Tower
+tagline: Spit balls at incoming enemies to protect your base, growing stronger each run.
+description: >-
+  Defense The Tower is an action tower defense game where the player guards a
+  base by spitting balls at approaching enemies. The pace and setup draw on
+  Galaga-style shooting, so the focus is on aiming and holding off waves rather
+  than placing many separate turrets.
+
+
+  Roguelike progression drives the loop. Each run lets the player build up their
+  abilities, so the defense changes from one attempt to the next. The mix of
+  arcade shooting and tower defense goals gives it a familiar feel with a twist
+  on how the base is protected.
+
+
+  It was entered in Vibe Jam 2026, where it placed 247th out of 945 entries. The
+  creator built it with Claude Code, and it runs on the PixiJS rendering
+  library.
+play:
+  url: https://dtt.dbuilder.xyz
+  embeddable: true
+  platforms:
+    - browser
+creator:
+  name: starrftw
+  handle: starrftw
+  x: starrftw
+made:
+  models: []
+  providers:
+    - anthropic
+  tools:
+    - claude-code
+  aiShare: most
+  source: Vibe Jam 2026 submission form
+  evidence: creator
+tech:
+  engine: pixijs
+  multiplayer: single
+genres:
+  - action
+  - tower-defense
+  - roguelike
+jam:
+  event: vibe-jam-2026
+  rank: 247
+  entries: 945
+media:
+  cover: games/defense-the-tower/cover
+  screenshots:
+    - games/defense-the-tower/shot-1
+    - games/defense-the-tower/shot-2
+dates:
+  added: 2026-09-29
+  updated: 2026-09-29
+status: live
+provenance:
+  foundVia: scout:vibejam-2026
+  scannedAt: 2026-09-29T16:37:11.634Z

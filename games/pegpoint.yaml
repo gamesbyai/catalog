@@ -1,0 +1,59 @@
+slug: pegpoint
+title: PEGPOINT!
+tagline: Launch balls at pegs and bumpers to clear boards in a retro pixel-art puzzler
+description: >-
+  PEGPOINT! is a pixel-art puzzle game in the style of Peggle. Each level is a
+  board filled with pegs, bumpers, and portals, and the player aims and launches
+  a ball to knock pegs out and rack up points. A run moves through a series of
+  hand-designed boards, each with its own layout.
+
+
+  The game includes 99 distinct levels and 25 power-ups that change how a shot
+  plays out. A daily seeded puzzle gives everyone the same board, and a
+  leaderboard lets players compare scores. The look draws on Super Nintendo and
+  Game Boy era graphics, and the rules stay simple enough to pick up quickly.
+
+
+  The creator built it with Claude Code and cites PopCap titles like Peggle,
+  Plants vs. Zombies, and Bejeweled as inspiration. It was entered in Vibe Jam
+  2026 and is playable on mobile devices.
+play:
+  url: https://pegpoint.io
+  embeddable: true
+  platforms:
+    - browser
+    - mobile
+creator:
+  name: meaux247
+  handle: meaux247
+  x: meaux247
+made:
+  models: []
+  providers:
+    - anthropic
+  tools:
+    - claude-code
+  aiShare: most
+  source: Vibe Jam 2026 submission form
+  evidence: creator
+tech:
+  multiplayer: single
+genres:
+  - puzzle
+  - arcade
+jam:
+  event: vibe-jam-2026
+  rank: 276
+  entries: 945
+media:
+  cover: games/pegpoint/cover
+  screenshots:
+    - games/pegpoint/shot-1
+    - games/pegpoint/shot-2
+dates:
+  added: 2026-09-29
+  updated: 2026-09-29
+status: live
+provenance:
+  foundVia: scout:vibejam-2026
+  scannedAt: 2026-09-29T16:37:11.655Z

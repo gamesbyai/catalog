@@ -1,0 +1,59 @@
+slug: build-destroy-fortress-duel
+title: Build & Destroy - Fortress Duel
+tagline: Build a fragile fortress, then smash it apart in a physics sandbox.
+description: >-
+  Build & Destroy - Fortress Duel is a physics-based game in which the player
+  first constructs a fortress and then tears it down. A session has two phases:
+  assembling a structure meant to be tricky to topple, then aiming at it and
+  watching the pieces collapse under the impact.
+
+
+  The central idea is that players make their own challenges instead of only
+  solving premade ones. The creator says the concept came from years of playing
+  Angry Birds and wondering why such games rarely let players design levels.
+  Building the puzzle becomes as much of the fun as breaking it, and the mix of
+  puzzle and strategy comes from planning how a structure will hold or fall.
+
+
+  The game runs in the browser on Three.js and was entered in Vibe Jam 2026.
+  According to the creator, it was built with Codex.
+play:
+  url: https://launchingdock.com
+  embeddable: true
+  platforms:
+    - browser
+creator:
+  name: domenicodd
+  handle: domenicodd
+  x: domenicodd
+made:
+  models: []
+  providers:
+    - openai
+  tools:
+    - codex
+  aiShare: most
+  source: Vibe Jam 2026 submission form
+  evidence: creator
+tech:
+  engine: threejs
+  multiplayer: single
+genres:
+  - puzzle
+  - strategy
+jam:
+  event: vibe-jam-2026
+  rank: 256
+  entries: 945
+media:
+  cover: games/build-destroy-fortress-duel/cover
+  screenshots:
+    - games/build-destroy-fortress-duel/shot-1
+    - games/build-destroy-fortress-duel/shot-2
+dates:
+  added: 2026-09-29
+  updated: 2026-09-29
+status: live
+provenance:
+  foundVia: scout:vibejam-2026
+  scannedAt: 2026-09-29T16:37:11.642Z

@@ -1,0 +1,58 @@
+slug: undead-siege
+title: Undead Siege
+tagline: Shoot endless zombie waves, buy weapons and perks, and survive as long
+  as you can.
+description: >-
+  Undead Siege is a browser-based first-person zombie survival shooter. Each run
+  drops you into a fight against waves of the undead that keep coming. You earn
+  the means to buy new weapons and unlock perks between and during rounds, and
+  the goal is to last as many rounds as you can.
+
+
+  The design is openly modeled on the Call of Duty Zombies mode, with dark
+  corridors, round-by-round pressure, and a purchase-and-upgrade loop. The game
+  is marked as multiplayer, so you can take on the horde alongside friends, and
+  it is also flagged as playable on mobile. It was entered in Vibe Jam 2026.
+
+
+  The creator says they built it entirely through conversation with an AI, using
+  AutoPilot by AutoGPT, describing sounds, mechanics, and fixes one message at a
+  time instead of writing code by hand. The rendering runs on Three.js.
+play:
+  url: https://itsababseh.github.io/undead-siege-3d
+  embeddable: true
+  platforms:
+    - browser
+    - mobile
+creator:
+  name: whatdoesababsay
+  handle: whatdoesababsay
+  x: whatdoesababsay
+made:
+  models: []
+  tools: []
+  aiShare: all
+  source: Vibe Jam 2026 submission form
+  evidence: creator
+tech:
+  engine: threejs
+  multiplayer: online
+genres:
+  - shooter
+  - survival
+jam:
+  event: vibe-jam-2026
+  rank: 252
+  entries: 945
+media:
+  cover: games/undead-siege/cover
+  screenshots:
+    - games/undead-siege/shot-1
+    - games/undead-siege/shot-2
+dates:
+  added: 2026-09-29
+  updated: 2026-09-29
+status: live
+provenance:
+  foundVia: scout:vibejam-2026
+  scannedAt: 2026-09-29T16:37:11.638Z
