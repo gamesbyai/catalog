@@ -95,7 +95,7 @@ terms:
 
       People use Kimi through the Kimi web chat, mobile apps and desktop software, through Kimi Code, a terminal coding interface, and through the Kimi API at platform.kimi.ai. Moonshot has also published the weights of its K2 and K3 models on Hugging Face.
 
-      Moonshot released Kimi K2 in July 2025 and announced Kimi K3 on July 17, 2026.
+      Moonshot released Kimi K2 in July 2025 and announced Kimi K3 on July 16, 2026.
     sources:
       - "https://www.moonshot.ai/"
       - "https://platform.kimi.ai/docs/models"
@@ -146,9 +146,9 @@ terms:
   - slug: meta
     name: Meta
     family: Llama
-    url: "https://www.llama.com/"
+    url: "https://dev.meta.ai/"
     intro: |-
-      Meta makes the Llama family of AI models and publishes their weights for download. The newest Llama generation, Llama 4, was introduced on April 5, 2025 with two models, Llama 4 Scout and Llama 4 Maverick. Both are downloadable from llama.com and Hugging Face, and Meta also uses them in Meta AI.
+      Meta makes the Llama family of AI models and publishes their weights for download. The newest Llama generation, Llama 4, was introduced on April 5, 2025 with two models, Llama 4 Scout and Llama 4 Maverick. Meta released both as downloadable weights on llama.com and Hugging Face, and also uses them in Meta AI.
 
       Llama models are released under Meta's own community license. The Llama 4 license asks for "Built with Llama" attribution and requires a separate license from Meta for products with more than 700 million monthly active users.
 
