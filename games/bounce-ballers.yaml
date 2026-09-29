@@ -1,0 +1,61 @@
+slug: bounce-ballers
+title: Bounce Ballers
+tagline: Score goals in a networked, platform-hopping soccer match against other
+  players.
+description: >-
+  Bounce Ballers is a competitive soccer platformer for online multiplayer.
+  Players run and jump across platforms while trying to get the ball into the
+  opposing goal, so each match mixes side-scrolling movement with the
+  goal-scoring pressure of a sports contest.
+
+
+  The game is inspired by IDARB, which its creator played throughout college.
+  That original was built mostly around sharing one screen, so this version aims
+  to work properly over the internet. The creator also wants matches to be more
+  replayable through a progression system, and plans to give the game a personal
+  visual style.
+
+
+  It was entered in Vibe Jam 2026 and is built with the Phaser framework. The
+  known tooling for the project includes Codex from OpenAI, which was used
+  during development of the game.
+play:
+  url: https://bounceballers.com
+  embeddable: true
+  platforms:
+    - browser
+creator:
+  name: matthayes13
+  handle: matthayes13
+  x: matthayes13
+made:
+  models: []
+  providers:
+    - openai
+  tools:
+    - codex
+  aiShare: most
+  source: Vibe Jam 2026 submission form
+  evidence: creator
+tech:
+  engine: phaser
+  multiplayer: online
+genres:
+  - platformer
+  - sports
+jam:
+  event: vibe-jam-2026
+  rank: 308
+  entries: 945
+media:
+  cover: games/bounce-ballers/cover
+  screenshots:
+    - games/bounce-ballers/shot-1
+    - games/bounce-ballers/shot-2
+dates:
+  added: 2026-09-29
+  updated: 2026-09-29
+status: live
+provenance:
+  foundVia: scout:vibejam-2026
+  scannedAt: 2026-09-29T16:37:14.613Z

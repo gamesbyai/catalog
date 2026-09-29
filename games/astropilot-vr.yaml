@@ -1,0 +1,57 @@
+slug: astropilot-vr
+title: Astropilot VR
+tagline: Race through space in a phone-based VR view that responds to how you move
+description: >-
+  Astropilot VR is a space racing game built to be played on a phone. It uses
+  the browser's immersive, VR-style view so the race surrounds you instead of
+  sitting on a flat screen. You pilot a ship through a course among the stars
+  and try to finish the run.
+
+
+  The main draw is the immersive effect itself. The creator wanted to see
+  whether JavaScript browser APIs on phones could deliver a VR-like experience,
+  and this project is the result. It works as a proof of concept for that idea,
+  and it keeps a casual, easy-to-pick-up feel.
+
+
+  The creator made it for Vibe Jam 2026 and built it with opencode. The game
+  runs on Three.js, and the creator says they plan to add more features.
+play:
+  url: https://astropilot.mikekasberg.com
+  embeddable: true
+  platforms:
+    - browser
+    - mobile
+creator:
+  name: mike_kasberg
+  handle: mike-kasberg
+  x: mike_kasberg
+made:
+  models: []
+  tools:
+    - opencode
+  aiShare: most
+  source: Vibe Jam 2026 submission form
+  evidence: creator
+tech:
+  engine: threejs
+  multiplayer: single
+genres:
+  - racing
+  - casual
+jam:
+  event: vibe-jam-2026
+  rank: 341
+  entries: 945
+media:
+  cover: games/astropilot-vr/cover
+  screenshots:
+    - games/astropilot-vr/shot-1
+    - games/astropilot-vr/shot-2
+dates:
+  added: 2026-09-29
+  updated: 2026-09-29
+status: live
+provenance:
+  foundVia: scout:vibejam-2026
+  scannedAt: 2026-09-29T16:37:14.634Z

@@ -1,0 +1,62 @@
+slug: for-the-realm
+title: For The Realm
+tagline: Build a deck and join other players to cross a broken realm and end an
+  ancient evil.
+description: >-
+  For the Realm is a dark fantasy roguelike deckbuilder set across a broken
+  land. Players journey through the realm, gather cards, and fight toward a
+  final confrontation with an ancient evil. Runs end in victory against that
+  threat or in defeat along the way.
+
+
+  Multiplayer sits at the center of the design rather than being an add-on. The
+  premise is built around uniting the realm, so players work together to survive
+  the journey. It blends RPG progression with strategic card play in a grim,
+  moody setting.
+
+
+  The game was an entry in Vibe Jam 2026, where it placed 318th of 945 entries.
+  The creator built it with Claude Code on Babylon.js. The creator says the goal
+  was to make the roguelike deckbuilder they had always wished for, with real
+  multiplayer as its foundation.
+play:
+  url: https://for-the-realm.vercel.app
+  embeddable: true
+  platforms:
+    - browser
+creator:
+  name: NitroNeal
+  handle: nitroneal
+  x: NitroNeal
+made:
+  models: []
+  providers:
+    - anthropic
+  tools:
+    - claude-code
+  aiShare: most
+  source: Vibe Jam 2026 submission form
+  evidence: creator
+tech:
+  engine: babylonjs
+  multiplayer: online
+genres:
+  - roguelike
+  - card
+  - rpg
+jam:
+  event: vibe-jam-2026
+  rank: 318
+  entries: 945
+media:
+  cover: games/for-the-realm/cover
+  screenshots:
+    - games/for-the-realm/shot-1
+    - games/for-the-realm/shot-2
+dates:
+  added: 2026-09-29
+  updated: 2026-09-29
+status: live
+provenance:
+  foundVia: scout:vibejam-2026
+  scannedAt: 2026-09-29T16:37:14.622Z

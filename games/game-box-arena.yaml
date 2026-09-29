@@ -1,0 +1,60 @@
+slug: game-box-arena
+title: Game Box Arena
+tagline: Battle other players in fast multiplayer arena deathmatch and capture
+  the flag matches.
+description: >-
+  Game Box Arena is a multiplayer browser shooter built around quick arena
+  fights. Players jump into Deathmatch or Capture the Flag, grab futuristic
+  weapons, and use shields to survive firefights while chasing kills or carrying
+  the enemy flag back to base.
+
+
+  Movement is a big part of the design. Dodge and wall dodge moves let players
+  sidestep incoming fire and change direction fast, and sound effects give each
+  shot and hit some weight. The creator drew on fond memories of Unreal
+  Tournament from 1999 and its fast, competitive pace.
+
+
+  The creator added their own maps, characters, effects, and ideas on top of
+  that inspiration. The game was entered in Vibe Jam 2026, and the creator
+  states it was built with Codex.
+play:
+  url: https://gameboxarena.com
+  embeddable: true
+  platforms:
+    - browser
+creator:
+  name: quantusdynamics
+  handle: quantusdynamics
+  x: quantusdynamics
+made:
+  models: []
+  providers:
+    - openai
+  tools:
+    - codex
+  aiShare: most
+  source: Vibe Jam 2026 submission form
+  evidence: creator
+tech:
+  engine: threejs
+  multiplayer: online
+genres:
+  - shooter
+  - action
+jam:
+  event: vibe-jam-2026
+  rank: 307
+  entries: 945
+media:
+  cover: games/game-box-arena/cover
+  screenshots:
+    - games/game-box-arena/shot-1
+    - games/game-box-arena/shot-2
+dates:
+  added: 2026-09-29
+  updated: 2026-09-29
+status: live
+provenance:
+  foundVia: scout:vibejam-2026
+  scannedAt: 2026-09-29T16:37:14.611Z

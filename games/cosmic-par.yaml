@@ -1,0 +1,61 @@
+slug: cosmic-par
+title: Cosmic Par
+tagline: Sink mini-golf shots on a daily space course where gravity curves the
+  ball's path.
+description: >-
+  Cosmic Par is a mini-golf game set in space. Each shot is bent by gravity, so
+  the ball's path curves instead of running straight. You line up a stroke, send
+  the ball across the course, and try to sink it in as few strokes as you can.
+
+
+  The hook is the shared daily course. Everyone who plays on a given day gets
+  the same new layout, and the creator says courses are never repeated. That
+  makes scores easy to compare and gives players a reason to come back for a
+  fresh puzzle each day.
+
+
+  The concept comes from combining golf and space, and the creator says they
+  asked AI to brainstorm the idea for the game. It was built with Claude Code on
+  Three.js, and it was entered in Vibe Jam 2026. It is set up for both
+  multiplayer and mobile play.
+play:
+  url: https://cosmicpar.com
+  embeddable: true
+  platforms:
+    - browser
+    - mobile
+creator:
+  name: RyanSael
+  handle: ryansael
+  x: RyanSael
+made:
+  models: []
+  providers:
+    - anthropic
+  tools:
+    - claude-code
+  aiShare: most
+  source: Vibe Jam 2026 submission form
+  evidence: creator
+tech:
+  engine: threejs
+  multiplayer: online
+genres:
+  - puzzle
+  - sports
+jam:
+  event: vibe-jam-2026
+  rank: 317
+  entries: 945
+media:
+  cover: games/cosmic-par/cover
+  screenshots:
+    - games/cosmic-par/shot-1
+    - games/cosmic-par/shot-2
+dates:
+  added: 2026-09-29
+  updated: 2026-09-29
+status: live
+provenance:
+  foundVia: scout:vibejam-2026
+  scannedAt: 2026-09-29T16:37:14.621Z

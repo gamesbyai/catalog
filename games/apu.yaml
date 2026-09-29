@@ -1,0 +1,61 @@
+slug: apu
+title: APU
+tagline: Climb a voxel Andean mountain, surviving cold, wind, and cliffs to
+  reach the summit.
+description: >-
+  APU is a voxel mountain-climbing survival game set in the Andes. You start in
+  a warm mountain town and head up the slope, facing cold, strong wind, and
+  sheer cliffs. The goal is to make it to the summit alive, so each stretch of
+  the climb is about managing the conditions and picking a safe way up.
+
+
+  The setting draws on Peruvian mountain mythology, and the blocky voxel look
+  gives the peaks a mythic feel. The contrast between the cozy town at the
+  bottom and the harsh terrain above shapes the mood of the climb. It also runs
+  on mobile devices.
+
+
+  The creator combined an interest in game development, mountain climbing, and
+  Peruvian roots in this project. They built it with Codex as an experiment in
+  vibe coding, and it was submitted to Vibe Jam 2026.
+play:
+  url: https://apu-1ts.pages.dev
+  embeddable: true
+  platforms:
+    - browser
+    - mobile
+creator:
+  name: asalinasmark
+  handle: asalinasmark
+  x: asalinasmark
+made:
+  models: []
+  providers:
+    - openai
+  tools:
+    - codex
+  aiShare: most
+  source: Vibe Jam 2026 submission form
+  evidence: creator
+tech:
+  engine: threejs
+  multiplayer: single
+genres:
+  - survival
+  - adventure
+jam:
+  event: vibe-jam-2026
+  rank: 301
+  entries: 945
+media:
+  cover: games/apu/cover
+  screenshots:
+    - games/apu/shot-1
+    - games/apu/shot-2
+dates:
+  added: 2026-09-29
+  updated: 2026-09-29
+status: live
+provenance:
+  foundVia: scout:vibejam-2026
+  scannedAt: 2026-09-29T16:37:14.602Z

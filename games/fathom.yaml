@@ -1,0 +1,59 @@
+slug: fathom
+title: Fathom
+tagline: Dive underwater in first person and salvage what the deep has to offer.
+description: >-
+  Fathom is a first-person underwater simulation where you play the diver. It
+  draws on the salvage loop of Dredge: you head out, search the water for things
+  worth recovering, and bring them back. Movement happens in three dimensions
+  beneath the surface, so exploring means looking around and descending.
+
+
+  The game pairs that collect-and-return structure with the sense of wonder
+  found in first-person underwater exploration games like Subnautica. Instead of
+  steering a boat from above, you are in the water yourself, which changes how
+  the sea feels and how you approach each trip.
+
+
+  It was entered in Vibe Jam 2026 and runs in the browser on Three.js. The
+  creator built it with Claude Code as a co-developer, partly to see how much of
+  a real game could be made that way.
+play:
+  url: https://fathom-3e9.pages.dev
+  embeddable: true
+  platforms:
+    - browser
+creator:
+  name: wolfertstetter
+  handle: wolfertstetter
+  x: wolfertstetter
+made:
+  models: []
+  providers:
+    - anthropic
+  tools:
+    - claude-code
+  aiShare: most
+  source: Vibe Jam 2026 submission form
+  evidence: creator
+tech:
+  engine: threejs
+  multiplayer: single
+genres:
+  - simulation
+  - adventure
+jam:
+  event: vibe-jam-2026
+  rank: 355
+  entries: 945
+media:
+  cover: games/fathom/cover
+  screenshots:
+    - games/fathom/shot-1
+    - games/fathom/shot-2
+dates:
+  added: 2026-09-29
+  updated: 2026-09-29
+status: live
+provenance:
+  foundVia: scout:vibejam-2026
+  scannedAt: 2026-09-29T16:37:14.641Z

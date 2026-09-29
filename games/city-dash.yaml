@@ -1,0 +1,59 @@
+slug: city-dash
+title: City Dash
+tagline: Race through city streets delivering packages to earn more money.
+description: >-
+  City Dash is a racing game built around courier work. The player drives
+  through an urban setting, picking up deliveries and getting them to their
+  destinations. The tagline promises that more deliveries mean more earnings, so
+  each run is a loop of driving, dropping off, and collecting pay.
+
+
+  The game combines racing with delivery gameplay, so speed matters alongside
+  the route you choose through the streets. It supports multiplayer and is
+  playable on mobile devices as well as in a browser. It was entered in Vibe Jam
+  2026, where it placed 316th out of 945 entries.
+
+
+  The creator built it with Claude Code, and it renders its 3D city using
+  Three.js, so it runs directly in the browser without extra installs.
+play:
+  url: https://citygame.goranmitev.com
+  embeddable: true
+  platforms:
+    - browser
+    - mobile
+creator:
+  name: goranmitev
+  handle: goranmitev
+  x: goranmitev
+made:
+  models: []
+  providers:
+    - anthropic
+  tools:
+    - claude-code
+  aiShare: most
+  source: Vibe Jam 2026 submission form
+  evidence: creator
+tech:
+  engine: threejs
+  multiplayer: online
+genres:
+  - racing
+  - arcade
+jam:
+  event: vibe-jam-2026
+  rank: 316
+  entries: 945
+media:
+  cover: games/city-dash/cover
+  screenshots:
+    - games/city-dash/shot-1
+    - games/city-dash/shot-2
+dates:
+  added: 2026-09-29
+  updated: 2026-09-29
+status: live
+provenance:
+  foundVia: scout:vibejam-2026
+  scannedAt: 2026-09-29T16:37:14.620Z

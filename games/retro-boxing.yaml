@@ -1,0 +1,59 @@
+slug: retro-boxing
+title: Retro Boxing
+tagline: Box a live opponent online in a top-down, old-school ring.
+description: >-
+  Retro Boxing is an online player-versus-player boxing game styled after the
+  classic Atari boxing games. You step into the ring against another person,
+  trade punches in real time, and try to outscore or outlast your opponent.
+
+
+  The appeal is its simple, old-school approach. The look and feel borrow from
+  early home console sports games, which keeps the action easy to read and quick
+  to learn. Matches are played against real opponents instead of
+  computer-controlled ones, so each bout depends on the person across the ring.
+
+
+  The game was made for Vibe Jam 2026, where it placed 321st out of 945 entries.
+  It is built with PixiJS, and the creator built it with Claude Code. It is set
+  up for multiplayer and also works on mobile devices.
+play:
+  url: https://retroboxing.fun
+  embeddable: true
+  platforms:
+    - browser
+    - mobile
+creator:
+  name: ismyhc
+  handle: ismyhc
+  x: ismyhc
+made:
+  models: []
+  providers:
+    - anthropic
+  tools:
+    - claude-code
+  aiShare: most
+  source: Vibe Jam 2026 submission form
+  evidence: creator
+tech:
+  engine: pixijs
+  multiplayer: online
+genres:
+  - action
+  - sports
+jam:
+  event: vibe-jam-2026
+  rank: 321
+  entries: 945
+media:
+  cover: games/retro-boxing/cover
+  screenshots:
+    - games/retro-boxing/shot-1
+    - games/retro-boxing/shot-2
+dates:
+  added: 2026-09-29
+  updated: 2026-09-29
+status: live
+provenance:
+  foundVia: scout:vibejam-2026
+  scannedAt: 2026-09-29T16:37:14.623Z

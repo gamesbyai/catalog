@@ -1,0 +1,63 @@
+slug: forest-runner
+title: Forest Runner
+tagline: Skate through a blocky forest, dodge obstacles, grab power-ups, and
+  outrun rivals.
+description: >-
+  Forest Runner is an endless arcade runner set in a forest with
+  Minecraft-inspired blocky visuals. The player rides a skateboard at high
+  speed, steering around obstacles and taking sharp turns while trying to stay
+  ahead of rival chasers. Power-ups appear along the path, and a run continues
+  until the player crashes or is caught.
+
+
+  The game takes the familiar endless-runner formula and moves it into a
+  chaotic, dangerous woodland. Skateboarding gives the movement a different feel
+  from a typical on-foot runner, and the rival chases add pressure beyond simply
+  avoiding hazards. The blocky art style gives the forest a distinct look.
+
+
+  The creator says they have long enjoyed endless running games and wanted to
+  reimagine that fast pace in a Minecraft-style setting. It was built with
+  Three.js, and the creator states they used Claude Code. It was entered in Vibe
+  Jam 2026 and supports mobile play.
+play:
+  url: https://forest-runner-vibejam26.netlify.app
+  embeddable: true
+  platforms:
+    - browser
+    - mobile
+creator:
+  name: mercurianranger
+  handle: mercurianranger
+  x: mercurianranger
+made:
+  models: []
+  providers:
+    - anthropic
+  tools:
+    - claude-code
+  aiShare: most
+  source: Vibe Jam 2026 submission form
+  evidence: creator
+tech:
+  engine: threejs
+  multiplayer: single
+genres:
+  - racing
+  - arcade
+jam:
+  event: vibe-jam-2026
+  rank: 340
+  entries: 945
+media:
+  cover: games/forest-runner/cover
+  screenshots:
+    - games/forest-runner/shot-1
+    - games/forest-runner/shot-2
+dates:
+  added: 2026-09-29
+  updated: 2026-09-29
+status: live
+provenance:
+  foundVia: scout:vibejam-2026
+  scannedAt: 2026-09-29T16:37:14.633Z

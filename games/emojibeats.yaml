@@ -1,0 +1,59 @@
+slug: emojibeats
+title: EmojiBeats
+tagline: Guess pop song titles from emoji clues in a pixel-art arcade music quiz.
+description: >-
+  EmojiBeats is an 8-bit arcade music quiz. Each puzzle shows a string of emojis
+  that stands in for a pop song title, and the player works out which song it is
+  and enters the answer. Correct guesses move you on to the next puzzle.
+
+
+  The game is built to be forgiving. Small spelling mistakes still count, which
+  helps players who are not native English speakers. For anyone who would rather
+  not type, a voice mode lets you solve a puzzle by saying the answer out loud.
+
+
+  The look borrows from old game cartridges, with pixel art meant to bring back
+  nostalgia. The song choices center on the pop hits the creator grew up with,
+  and the goal was a game people anywhere could enjoy. The creator built it with
+  Cursor for Vibe Jam 2026.
+play:
+  url: https://emoji-beats.vercel.app
+  embeddable: true
+  platforms:
+    - browser
+    - mobile
+  controls:
+    - Type the answer
+    - Speak the answer (voice mode)
+creator:
+  name: Lab_YmK
+  handle: lab-ymk
+  x: Lab_YmK
+made:
+  models: []
+  tools:
+    - cursor
+  aiShare: most
+  source: Vibe Jam 2026 submission form
+  evidence: creator
+tech:
+  multiplayer: single
+genres:
+  - puzzle
+  - trivia
+jam:
+  event: vibe-jam-2026
+  rank: 351
+  entries: 945
+media:
+  cover: games/emojibeats/cover
+  screenshots:
+    - games/emojibeats/shot-1
+    - games/emojibeats/shot-2
+dates:
+  added: 2026-09-29
+  updated: 2026-09-29
+status: live
+provenance:
+  foundVia: scout:vibejam-2026
+  scannedAt: 2026-09-29T16:37:14.639Z

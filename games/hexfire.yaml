@@ -1,0 +1,61 @@
+slug: hexfire
+title: HexFire
+tagline: Battle other wizards in a shrinking arena where every kill raises your bounty.
+description: >-
+  HexFire is a multiplayer wizard battle royale. Each player enters the arena as
+  a spellcaster and fights the others until only one is left. Combat is built
+  around casting spells at rival wizards, and a run ends when you fall or when
+  you outlast everyone else.
+
+
+  The central twist is that success works against you. Every kill you land makes
+  you a bigger target, so a player who racks up eliminations draws attention
+  from the rest of the lobby. That turns a winning streak into a risk and pushes
+  players to weigh aggression against staying hidden.
+
+
+  The game was entered in Vibe Jam 2026 and runs in the browser with a Three.js
+  3D view, including on mobile. According to the creator, it was inspired by a
+  childhood fondness for Runescape and Minecraft, and it was built with Claude
+  Code.
+play:
+  url: https://hexfi.re
+  embeddable: true
+  platforms:
+    - browser
+    - mobile
+creator:
+  name: TeemuSor
+  handle: teemusor
+  x: TeemuSor
+made:
+  models: []
+  providers:
+    - anthropic
+  tools:
+    - claude-code
+  aiShare: most
+  source: Vibe Jam 2026 submission form
+  evidence: creator
+tech:
+  engine: threejs
+  multiplayer: online
+genres:
+  - shooter
+  - action
+jam:
+  event: vibe-jam-2026
+  rank: 336
+  entries: 945
+media:
+  cover: games/hexfire/cover
+  screenshots:
+    - games/hexfire/shot-1
+    - games/hexfire/shot-2
+dates:
+  added: 2026-09-29
+  updated: 2026-09-29
+status: live
+provenance:
+  foundVia: scout:vibejam-2026
+  scannedAt: 2026-09-29T16:37:14.631Z

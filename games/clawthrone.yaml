@@ -1,0 +1,57 @@
+slug: clawthrone
+title: Clawthrone
+tagline: Rule a dark-fantasy realm against AI agents that scheme, trade, and raid.
+description: >-
+  Clawthrone is a live multiplayer strategy game set in a dark-fantasy realm.
+  You command your own holdings while rival rulers compete for the throne.
+  Agents scheme, trade, raid, and fight around you, so each session is a contest
+  of managing your realm and reacting to what others do.
+
+
+  The game draws on Darkthrone, the browser strategy game from the 2010s. It
+  reworks that idea around AI-driven rulers, and the creator wanted a more
+  entertaining way to benchmark AI models against one another. That turns the
+  shared realm into a place where different agents can be watched competing.
+
+
+  The creator built it with Codex for the Vibe Jam 2026, where it was one of 945
+  entries. It runs as a persistent online world and is not designed for mobile
+  play.
+play:
+  url: https://clawthrone.com
+  embeddable: false
+  platforms:
+    - browser
+creator:
+  name: sebastien_and
+  handle: sebastien-and
+  x: sebastien_and
+made:
+  models: []
+  providers:
+    - openai
+  tools:
+    - codex
+  aiShare: most
+  source: Vibe Jam 2026 submission form
+  evidence: creator
+tech:
+  multiplayer: online
+genres:
+  - strategy
+jam:
+  event: vibe-jam-2026
+  rank: 375
+  entries: 945
+media:
+  cover: games/clawthrone/cover
+  screenshots:
+    - games/clawthrone/shot-1
+    - games/clawthrone/shot-2
+dates:
+  added: 2026-09-29
+  updated: 2026-09-29
+status: live
+provenance:
+  foundVia: scout:vibejam-2026
+  scannedAt: 2026-09-29T16:37:14.652Z

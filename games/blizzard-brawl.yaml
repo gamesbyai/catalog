@@ -1,0 +1,59 @@
+slug: blizzard-brawl
+title: BLIZZARD BRAWL
+tagline: Build snow defenses and throw gadgets at rivals in a shrinking frozen arena.
+description: >-
+  Blizzard Brawl is a multiplayer snow duel that runs in the browser. Players
+  fight rivals in a frozen arena that keeps shrinking, so space to maneuver gets
+  tighter as a match goes on. Each round mixes building defenses, deploying
+  gadgets, and attacking opponents.
+
+
+  The focus is on pacing and positioning. Because the arena closes in, players
+  can't sit behind cover forever, and the defenses they set up have to be
+  weighed against pushing forward to outplay the other side. Gadgets add options
+  beyond a plain snowball exchange, and rounds are quick.
+
+
+  It was an entry in Vibe Jam 2026, where it placed 323rd out of 945 entries.
+  The creator built it with Codex and Three.js, and says it was inspired by an
+  article about a game made in about three hours.
+play:
+  url: https://jenemia.github.io/SnowBattle
+  embeddable: true
+  platforms:
+    - browser
+creator:
+  name: seanDDari
+  handle: seanddari
+  x: seanDDari
+made:
+  models: []
+  providers:
+    - openai
+  tools:
+    - codex
+  aiShare: most
+  source: Vibe Jam 2026 submission form
+  evidence: creator
+tech:
+  engine: threejs
+  multiplayer: online
+genres:
+  - shooter
+  - action
+jam:
+  event: vibe-jam-2026
+  rank: 323
+  entries: 945
+media:
+  cover: games/blizzard-brawl/cover
+  screenshots:
+    - games/blizzard-brawl/shot-1
+    - games/blizzard-brawl/shot-2
+dates:
+  added: 2026-09-29
+  updated: 2026-09-29
+status: live
+provenance:
+  foundVia: scout:vibejam-2026
+  scannedAt: 2026-09-29T16:37:14.624Z

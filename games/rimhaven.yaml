@@ -1,0 +1,61 @@
+slug: rimhaven
+title: Rimhaven
+tagline: Team up with other players to mine, craft and fight through dungeon bosses.
+description: >-
+  Rimhaven is a multiplayer dungeon crawler in the style of an online
+  role-playing game. Players form a party, gather ore, craft gear and head down
+  through dungeons, facing bosses that grow tougher with each level. A run
+  combines resource gathering with group combat and a steady push deeper.
+
+
+  The design draws on the creator's affection for classic World of Warcraft, and
+  it shows in the party structure, crafting loop and boss-focused progression.
+  Boss kills carry a chance of dropping cryptocurrency, which ties a real-world
+  reward mechanic into the loot system and may matter to some players.
+
+
+  The creator built it with Claude Code, using Babylon.js for the 3D rendering.
+  It was entered in the Vibe Jam 2026 event, where it placed 369th out of 945
+  entries.
+play:
+  url: https://rimhaven.vercel.app
+  embeddable: true
+  platforms:
+    - browser
+creator:
+  name: Asbet0s
+  handle: asbet0s
+  x: Asbet0s
+made:
+  models: []
+  providers:
+    - anthropic
+  tools:
+    - claude-code
+  aiShare: most
+  source: Vibe Jam 2026 submission form
+  evidence: creator
+tech:
+  engine: babylonjs
+  multiplayer: online
+genres:
+  - rpg
+  - adventure
+jam:
+  event: vibe-jam-2026
+  rank: 369
+  entries: 945
+media:
+  cover: games/rimhaven/cover
+  screenshots:
+    - games/rimhaven/shot-1
+    - games/rimhaven/shot-2
+dates:
+  added: 2026-09-29
+  updated: 2026-09-29
+status: live
+provenance:
+  foundVia: scout:vibejam-2026
+  scannedAt: 2026-09-29T16:37:14.648Z
+  flags:
+    - crypto

@@ -1,0 +1,55 @@
+slug: palomitas
+title: Palomitas
+tagline: Play a pigeon who swipes food to stay alive.
+description: >-
+  Palomitas is a 3D adventure in which you control a pigeon. Survival depends on
+  food, and the only way to get it is to steal it. A run is a hungry scavenging
+  loop: you look for something edible, grab it, and try to keep yourself fed.
+
+
+  The premise is small and funny, casting a city bird as a scrappy thief. The
+  title is Spanish for popcorn, which fits a pigeon hunting for scraps. It was
+  entered in Vibe Jam 2026, where it ranked 368th out of 945 entries.
+
+
+  The creator says they wanted to try a completely vibe-coded project instead of
+  doing everything by hand as they usually do. They built it with Cursor, and it
+  runs in the browser on Three.js.
+play:
+  url: https://palomitas.pages.dev
+  embeddable: true
+  platforms:
+    - browser
+creator:
+  name: lexandermorgan
+  handle: lexandermorgan
+  x: lexandermorgan
+made:
+  models: []
+  tools:
+    - cursor
+  aiShare: all
+  source: Vibe Jam 2026 submission form
+  evidence: creator
+tech:
+  engine: threejs
+  multiplayer: single
+genres:
+  - adventure
+  - survival
+jam:
+  event: vibe-jam-2026
+  rank: 368
+  entries: 945
+media:
+  cover: games/palomitas/cover
+  screenshots:
+    - games/palomitas/shot-1
+    - games/palomitas/shot-2
+dates:
+  added: 2026-09-29
+  updated: 2026-09-29
+status: live
+provenance:
+  foundVia: scout:vibejam-2026
+  scannedAt: 2026-09-29T16:37:14.647Z
