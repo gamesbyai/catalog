@@ -1,0 +1,58 @@
+slug: tanker-defense
+title: Tanker Defense
+tagline: Shoot pirates off your oil tanker while steering the ship to safety.
+description: >-
+  Tanker Defense puts you in charge of an oil tanker under attack by pirates.
+  You steer the ship toward safety while fighting off the raiders with guns and
+  grenade launchers, so each run is a balance between staying on course and
+  keeping attackers away from the hull.
+
+
+  The game mixes shooting with ship handling, asking the player to split
+  attention between aiming and navigation. Its genre tags also point to RPG and
+  simulation elements alongside the action. It runs in the browser on Three.js
+  and is marked as playable on mobile.
+
+
+  It was entered in Vibe Jam 2026, where it placed 508 out of 945 entries. The
+  creator says it was their first game, taken on as a fun small challenge.
+play:
+  url: https://admirable-biscotti-57d1ee.netlify.app
+  embeddable: true
+  platforms:
+    - browser
+    - mobile
+creator:
+  name: bleyldev
+  handle: bleyldev
+  x: bleyldev
+made:
+  models: []
+  tools: []
+  aiShare: most
+  source: Vibe Jam 2026 submission form
+  evidence: inferred
+tech:
+  engine: threejs
+  multiplayer: single
+genres:
+  - shooter
+  - action
+jam:
+  event: vibe-jam-2026
+  rank: 508
+  entries: 945
+media:
+  cover: games/tanker-defense/cover
+  screenshots:
+    - games/tanker-defense/shot-1
+    - games/tanker-defense/shot-2
+dates:
+  added: 2026-09-29
+  updated: 2026-09-29
+status: live
+provenance:
+  foundVia: scout:vibejam-2026
+  scannedAt: 2026-09-29T18:39:21.604Z
+  flags:
+    - unclear-ai

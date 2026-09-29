@@ -1,0 +1,61 @@
+slug: terrastrike-terra
+title: terrastrike/terra
+tagline: Purify a toxic world from the deep sea up to a surface garden as an
+  evolving guardian.
+description: >-
+  Terra is a browser action-adventure with shooter and RPG elements. The player
+  works upward from the deep sea to a surface garden, purifying a toxic world
+  along the way. The character evolves into a stronger guardian as the journey
+  continues, with the goal of protecting the last sanctuary of life.
+
+
+  The central idea is contrast. Dark, industrial wasteland gives way to a
+  colorful, thriving ecosystem as areas are cleansed, so progress shows up
+  directly in the scenery. The theme leans on nature's resilience, and the
+  guardian's growth in power mirrors the world's recovery.
+
+
+  The game was entered in Vibe Jam 2026 and is built with Three.js. The tooling
+  associated with it includes Google's Antigravity, though the details of how it
+  was used are not given.
+play:
+  url: https://terrastrike.pages.dev
+  embeddable: true
+  platforms:
+    - browser
+creator:
+  name: Srikanth
+  handle: srikanth
+  x: Srikanth
+made:
+  models: []
+  providers:
+    - google
+  tools:
+    - antigravity
+  aiShare: most
+  source: Vibe Jam 2026 submission form
+  evidence: creator
+tech:
+  engine: threejs
+  multiplayer: single
+genres:
+  - action
+  - adventure
+  - shooter
+jam:
+  event: vibe-jam-2026
+  rank: 540
+  entries: 945
+media:
+  cover: games/terrastrike-terra/cover
+  screenshots:
+    - games/terrastrike-terra/shot-1
+    - games/terrastrike-terra/shot-2
+dates:
+  added: 2026-09-29
+  updated: 2026-09-29
+status: live
+provenance:
+  foundVia: scout:vibejam-2026
+  scannedAt: 2026-09-29T18:39:21.624Z

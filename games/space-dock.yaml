@@ -1,0 +1,59 @@
+slug: space-dock
+title: Space Dock
+tagline: Stack and balance pieces to build a structure that reaches space.
+description: >-
+  Space Dock is a stacking puzzle game about building upward. The player places
+  pieces one on top of another and has to keep the growing structure balanced so
+  it doesn't topple. The goal is to connect the build to space, so each run is a
+  matter of careful placement as the tower gets taller.
+
+
+  The game combines stacking with balance and connection, which gives each
+  placement a bit of risk. A shaky base makes later pieces harder to set down,
+  so planning ahead matters as much as steady timing. It runs in the browser on
+  Three.js and is set up to work on mobile devices as well as desktop.
+
+
+  It was entered in Vibe Jam 2026, where it placed 507 out of 945 entries. The
+  creator says it was built with Claude Code, Anthropic's coding assistant.
+play:
+  url: https://space-dock.gollysoda.com
+  embeddable: true
+  platforms:
+    - browser
+    - mobile
+creator:
+  name: princeyesuraj
+  handle: princeyesuraj
+  x: princeyesuraj
+made:
+  models: []
+  providers:
+    - anthropic
+  tools:
+    - claude-code
+  aiShare: most
+  source: Vibe Jam 2026 submission form
+  evidence: creator
+tech:
+  engine: threejs
+  multiplayer: single
+genres:
+  - puzzle
+  - casual
+jam:
+  event: vibe-jam-2026
+  rank: 507
+  entries: 945
+media:
+  cover: games/space-dock/cover
+  screenshots:
+    - games/space-dock/shot-1
+    - games/space-dock/shot-2
+dates:
+  added: 2026-09-29
+  updated: 2026-09-29
+status: live
+provenance:
+  foundVia: scout:vibejam-2026
+  scannedAt: 2026-09-29T18:39:21.603Z

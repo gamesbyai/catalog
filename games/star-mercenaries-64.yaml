@@ -1,0 +1,61 @@
+slug: star-mercenaries-64
+title: Star Mercenaries 64
+tagline: Fly a rail shooter route as space-faring animal mercenaries and blast
+  enemy markets.
+description: >-
+  Star Mercenaries 64 is an arcade rail shooter in the style of Star Fox 64. The
+  player pilots a ship along a fixed path through space, shooting down enemies
+  and hazards as the route unfolds. It runs in the browser and is playable on
+  mobile devices as well as desktop.
+
+
+  The setting is a satire of the AI industry. The pilots are animal mercenaries
+  who weaponize capitalism, and they bicker like tech billionaires while blowing
+  up markets. The tone draws on the creator's fascination with AI lore and its
+  founding figures, and it is the main thing that sets this shooter apart from
+  its inspiration.
+
+
+  The creator built it with Codex, and it is rendered with Three.js. It was
+  submitted to Vibe Jam 2026, where it placed 482 out of 945 entries.
+play:
+  url: https://star-mercenaries-64.pages.dev
+  embeddable: true
+  platforms:
+    - browser
+    - mobile
+creator:
+  name: Lifeofthe_JeDI
+  handle: lifeofthe-jedi
+  x: Lifeofthe_JeDI
+made:
+  models: []
+  providers:
+    - openai
+  tools:
+    - codex
+  aiShare: most
+  source: Vibe Jam 2026 submission form
+  evidence: creator
+tech:
+  engine: threejs
+  multiplayer: single
+genres:
+  - shooter
+  - arcade
+jam:
+  event: vibe-jam-2026
+  rank: 482
+  entries: 945
+media:
+  cover: games/star-mercenaries-64/cover
+  screenshots:
+    - games/star-mercenaries-64/shot-1
+    - games/star-mercenaries-64/shot-2
+dates:
+  added: 2026-09-29
+  updated: 2026-09-29
+status: live
+provenance:
+  foundVia: scout:vibejam-2026
+  scannedAt: 2026-09-29T18:39:21.588Z

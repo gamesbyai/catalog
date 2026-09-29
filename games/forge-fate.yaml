@@ -1,0 +1,59 @@
+slug: forge-fate
+title: Forge&Fate
+tagline: Fight through isometric dungeons, collect loot, and forge gear to chase
+  a top score.
+description: >-
+  Forge&Fate is an isometric dungeon crawler where you battle through
+  enemy-filled dungeons using tactical combat. Defeated foes drop loot, and the
+  enemies scale as you progress. Each run is a push to survive longer and earn a
+  higher score on the leaderboard.
+
+
+  A forging system sits at the center of the design. Instead of only equipping
+  what drops, you can craft your own items, which gives progression a steady
+  sense of growth. The creator cited a love of role-playing games, exploration,
+  and the feeling of getting stronger bit by bit as the inspiration.
+
+
+  The creator built it with Claude Code as an entry in Vibe Jam 2026, and it
+  runs on the Phaser engine. It placed 510th out of 945 entries in the jam.
+play:
+  url: https://forgeandfate-ebon.vercel.app
+  embeddable: true
+  platforms:
+    - browser
+creator:
+  name: TheGrampas
+  handle: thegrampas
+  x: TheGrampas
+made:
+  models: []
+  providers:
+    - anthropic
+  tools:
+    - claude-code
+  aiShare: most
+  source: Vibe Jam 2026 submission form
+  evidence: creator
+tech:
+  engine: phaser
+  multiplayer: single
+genres:
+  - rpg
+  - action
+jam:
+  event: vibe-jam-2026
+  rank: 510
+  entries: 945
+media:
+  cover: games/forge-fate/cover
+  screenshots:
+    - games/forge-fate/shot-1
+    - games/forge-fate/shot-2
+dates:
+  added: 2026-09-29
+  updated: 2026-09-29
+status: live
+provenance:
+  foundVia: scout:vibejam-2026
+  scannedAt: 2026-09-29T18:39:21.604Z

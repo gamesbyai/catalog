@@ -1,0 +1,61 @@
+slug: solar-drift
+title: Solar Drift
+tagline: Fly a spacecraft between planets and slingshot around a true-scale
+  solar system.
+description: >-
+  Solar Drift is a space exploration game in which you pilot a sleek spacecraft
+  through a living solar system. You travel from world to world, using planetary
+  slingshots to build speed and cross the huge gaps between them at light speed,
+  with no fixed course to follow.
+
+
+  The main draw is scale. Every body is shown in true-scale perspective, from
+  tiny Pluto to the blazing Sun, so the distances and size differences between
+  worlds are easy to see as you fly. The game is themed around the Artemis II
+  mission and supports multiplayer. It also runs on mobile devices.
+
+
+  Solar Drift was entered in Vibe Jam 2026 and is built with Three.js for 3D
+  rendering in the browser. According to the creator, it was made with Codex,
+  OpenAI's coding tool, as the main development aid.
+play:
+  url: https://solar.chikocorp.com
+  embeddable: true
+  platforms:
+    - browser
+    - mobile
+creator:
+  name: chikop2p
+  handle: chikop2p
+  x: chikop2p
+made:
+  models: []
+  providers:
+    - openai
+  tools:
+    - codex
+  aiShare: most
+  source: Vibe Jam 2026 submission form
+  evidence: creator
+tech:
+  engine: threejs
+  multiplayer: online
+genres:
+  - simulation
+  - adventure
+jam:
+  event: vibe-jam-2026
+  rank: 511
+  entries: 945
+media:
+  cover: games/solar-drift/cover
+  screenshots:
+    - games/solar-drift/shot-1
+    - games/solar-drift/shot-2
+dates:
+  added: 2026-09-29
+  updated: 2026-09-29
+status: live
+provenance:
+  foundVia: scout:vibejam-2026
+  scannedAt: 2026-09-29T18:39:21.605Z

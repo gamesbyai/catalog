@@ -1,0 +1,60 @@
+slug: land-capture
+title: Land Capture
+tagline: Fight alongside your team to claim more of a shared island than four
+  rival teams.
+description: >-
+  Land Capture is a multiplayer action game in which five teams compete for
+  control of a single island. Players join a team and try to take over
+  territory, with each team's share of the land deciding who is ahead. The goal
+  is to win the island and, with it, the leaderboard.
+
+
+  The game turns territory control into a shared, competitive contest. Because
+  five teams are always fighting over the same piece of land, the map shifts as
+  ownership changes hands, and a team's standing depends on how much ground it
+  holds. The leaderboard gives each match a clear measure of success.
+
+
+  It was built in Three.js as an entry in Vibe Jam 2026, where it placed 524th
+  out of 945 entries. The creator states that they wanted to make a fun
+  multiplayer game, and that Claude Code was used in making it.
+play:
+  url: https://landcapture.up.railway.app
+  embeddable: true
+  platforms:
+    - browser
+creator:
+  name: civaxo
+  handle: civaxo
+  x: civaxo
+made:
+  models: []
+  providers:
+    - anthropic
+  tools:
+    - claude-code
+  aiShare: most
+  source: Vibe Jam 2026 submission form
+  evidence: creator
+tech:
+  engine: threejs
+  multiplayer: online
+genres:
+  - action
+  - io
+jam:
+  event: vibe-jam-2026
+  rank: 524
+  entries: 945
+media:
+  cover: games/land-capture/cover
+  screenshots:
+    - games/land-capture/shot-1
+    - games/land-capture/shot-2
+dates:
+  added: 2026-09-29
+  updated: 2026-09-29
+status: live
+provenance:
+  foundVia: scout:vibejam-2026
+  scannedAt: 2026-09-29T18:39:21.612Z

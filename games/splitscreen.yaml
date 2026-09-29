@@ -1,0 +1,58 @@
+slug: splitscreen
+title: Splitscreen
+tagline: Play local multiplayer rounds on a shared screen, using phones as controllers.
+description: >-
+  Splitscreen is a local multiplayer game meant for a shared screen. One display
+  shows the action while each player uses a phone as a remote controller, so no
+  extra gamepads are needed. Players gather around the screen and take part in
+  the game's rounds together, each steering from their own device.
+
+
+  The setup runs through AirConsole, which turns everyday phones into
+  controllers. That keeps the barrier to joining low: a screen, a few phones,
+  and people in the same room are what it takes to start playing. The game
+  blends action, puzzle, and strategy elements, so rounds can call for quick
+  reactions as well as some planning ahead. It was entered in Vibe Jam 2026 and
+  renders its scenes with Three.js.
+play:
+  url: https://splitscreen.fun
+  embeddable: true
+  platforms:
+    - browser
+  controls:
+    - Phone as remote controller
+creator:
+  name: vincent_maurin
+  handle: vincent-maurin
+  x: vincent_maurin
+made:
+  models: []
+  tools: []
+  aiShare: most
+  source: Vibe Jam 2026 submission form
+  evidence: inferred
+tech:
+  engine: threejs
+  multiplayer: online
+genres:
+  - party
+  - action
+  - puzzle
+jam:
+  event: vibe-jam-2026
+  rank: 539
+  entries: 945
+media:
+  cover: games/splitscreen/cover
+  screenshots:
+    - games/splitscreen/shot-1
+    - games/splitscreen/shot-2
+dates:
+  added: 2026-09-29
+  updated: 2026-09-29
+status: live
+provenance:
+  foundVia: scout:vibejam-2026
+  scannedAt: 2026-09-29T18:39:21.623Z
+  flags:
+    - unclear-ai

@@ -1,0 +1,63 @@
+slug: rummy-ombesh
+title: Rummy - Ombesh
+tagline: Build melds and race for bonuses in a rummy variant driven by one flipped card
+description: >-
+  Ombesh is a rummy variant played around the Taba, a single card flipped at the
+  start of each round. That card decides which card counts as wild and changes
+  what scores, so every hand becomes a race to claim the round's bonuses.
+  Players build sets and runs and try to finish ahead of the others.
+
+
+  The rules come from a family variant the creator learned from their father.
+  The creator says they found no reference to it online and built the game to
+  preserve it and share it with more people. The Taba twist means the same hand
+  can play very differently from one round to the next.
+
+
+  The game supports multiplayer and runs on mobile. It was entered in Vibe Jam
+  2026, where it placed 549 of 945 entries. The creator built it with Claude
+  Code, Codex, and Cursor.
+play:
+  url: https://ombesh.vercel.app
+  embeddable: true
+  platforms:
+    - browser
+    - mobile
+creator:
+  name: KBaba6137
+  handle: kbaba6137
+  x: KBaba6137
+made:
+  models: []
+  providers:
+    - anthropic
+    - openai
+  tools:
+    - claude-code
+    - codex
+    - cursor
+  aiShare: most
+  source: Vibe Jam 2026 submission form
+  evidence: creator
+tech:
+  engine: unity
+  multiplayer: online
+genres:
+  - card
+  - strategy
+jam:
+  event: vibe-jam-2026
+  rank: 549
+  entries: 945
+media:
+  cover: games/rummy-ombesh/cover
+  screenshots:
+    - games/rummy-ombesh/shot-1
+    - games/rummy-ombesh/shot-2
+dates:
+  added: 2026-09-29
+  updated: 2026-09-29
+status: live
+provenance:
+  foundVia: scout:vibejam-2026
+  scannedAt: 2026-09-29T18:39:21.627Z

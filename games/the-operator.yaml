@@ -1,0 +1,59 @@
+slug: the-operator
+title: The Operator
+tagline: Inspect the output of a 1980s mainframe AI and decide what gets through.
+description: >-
+  The Operator puts you in the chair of a mainframe operator in a retro office,
+  tasked with managing an LLM server. Instead of checking passports, you review
+  the unruly output of a dusty, analog AI machine and make calls on what passes.
+  Each shift is built around bureaucratic pressure and careful document
+  checking.
+
+
+  The setting is a cassette-futurism vision of the 1980s, where the AI is a
+  bulky piece of hardware and not a sleek modern service. The design takes its
+  core idea from Papers, Please, moving the tense routine of inspection and
+  judgment into a mainframe room. Puzzle and simulation elements sit together in
+  the loop.
+
+
+  It was an entry in Vibe Jam 2026, where it placed 513th out of 945 entries.
+  The game runs on Phaser, and GitHub Copilot is among the tools noted for its
+  development.
+play:
+  url: https://the-operator-game.vercel.app
+  embeddable: true
+  platforms:
+    - browser
+creator:
+  name: CriptoCeelo
+  handle: criptoceelo
+  x: CriptoCeelo
+made:
+  models: []
+  tools:
+    - github-copilot
+  aiShare: most
+  source: Vibe Jam 2026 submission form
+  evidence: creator
+tech:
+  engine: phaser
+  multiplayer: single
+genres:
+  - puzzle
+  - simulation
+jam:
+  event: vibe-jam-2026
+  rank: 513
+  entries: 945
+media:
+  cover: games/the-operator/cover
+  screenshots:
+    - games/the-operator/shot-1
+    - games/the-operator/shot-2
+dates:
+  added: 2026-09-29
+  updated: 2026-09-29
+status: live
+provenance:
+  foundVia: scout:vibejam-2026
+  scannedAt: 2026-09-29T18:39:21.607Z

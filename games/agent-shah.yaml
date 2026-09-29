@@ -1,0 +1,61 @@
+slug: agent-shah
+title: Agent Shah
+tagline: Sneak through a warehouse, shoot hostiles, and decrypt a developer's
+  career dossier.
+description: >-
+  Agent Shah is a spy-themed 3D top-down shooter set in a warehouse. You play an
+  infiltrator who fights off hostiles using a pistol, a machine gun, a pencil,
+  or bare fists. The goal is to clear the threats and decrypt the dossier
+  waiting inside.
+
+
+  The twist is that the dossier is the developer's career portfolio. Instead of
+  a static page listing work history, the portfolio is something you play
+  through, with the mission structure doubling as the way visitors learn about
+  the person behind it. The look blends a Mission Impossible spy aesthetic with
+  top-down combat in the vein of Hotline Miami.
+
+
+  The creator cites Bruno Simon's interactive portfolio as another inspiration.
+  According to the creator, the project was built with Claude Code and Three.js,
+  and it was submitted to Vibe Jam 2026.
+play:
+  url: https://agentshah.shahfahad.dev
+  embeddable: true
+  platforms:
+    - browser
+creator:
+  name: fahaddoc600
+  handle: fahaddoc600
+  x: fahaddoc600
+made:
+  models: []
+  providers:
+    - anthropic
+  tools:
+    - claude-code
+  aiShare: most
+  source: Vibe Jam 2026 submission form
+  evidence: creator
+tech:
+  engine: threejs
+  multiplayer: single
+genres:
+  - action
+  - shooter
+jam:
+  event: vibe-jam-2026
+  rank: 479
+  entries: 945
+media:
+  cover: games/agent-shah/cover
+  screenshots:
+    - games/agent-shah/shot-1
+    - games/agent-shah/shot-2
+dates:
+  added: 2026-09-29
+  updated: 2026-09-29
+status: live
+provenance:
+  foundVia: scout:vibejam-2026
+  scannedAt: 2026-09-29T18:39:21.585Z

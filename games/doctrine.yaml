@@ -1,0 +1,60 @@
+slug: doctrine
+title: Doctrine
+tagline: Summon conquered armies from spellcards and battle rival wizards in real time.
+description: >-
+  Doctrine is a real-time strategy card game where you play an interdimensional
+  wizard facing other wizards. Armies you have defeated, hired, or bound are
+  stored as spellcards, and you summon them onto the battlefield when a war
+  begins. Cards stand in for units, spells, and towers, so each match is a
+  series of quick decisions about what to deploy and where.
+
+
+  The game blends action RTS play with autobattler-style chaos, letting summoned
+  forces clash on their own while you keep making choices. A fantasy premise
+  ties it together: a living Doctrine holds the armies of broken worlds and
+  explains why cards can become troops. Genre tags cover action, strategy, and
+  simulation, and the game runs on mobile as well.
+
+
+  The creator says the idea had been in their head for years, and that AI and
+  Cursor let them turn it into a playable game in about two weeks. It is built
+  with Three.js and was submitted to Vibe Jam 2026.
+play:
+  url: https://doctrine.shinythings.space
+  embeddable: true
+  platforms:
+    - browser
+    - mobile
+creator:
+  name: AlaskanMagpie
+  handle: alaskanmagpie
+  x: AlaskanMagpie
+made:
+  models: []
+  tools:
+    - cursor
+  aiShare: most
+  source: Vibe Jam 2026 submission form
+  evidence: creator
+tech:
+  engine: threejs
+  multiplayer: single
+genres:
+  - strategy
+  - action
+jam:
+  event: vibe-jam-2026
+  rank: 499
+  entries: 945
+media:
+  cover: games/doctrine/cover
+  screenshots:
+    - games/doctrine/shot-1
+    - games/doctrine/shot-2
+dates:
+  added: 2026-09-29
+  updated: 2026-09-29
+status: live
+provenance:
+  foundVia: scout:vibejam-2026
+  scannedAt: 2026-09-29T18:39:21.599Z

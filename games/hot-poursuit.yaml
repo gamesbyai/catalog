@@ -1,0 +1,55 @@
+slug: hot-poursuit
+title: Hot Poursuit
+tagline: Chase down a thief in a Scotland Yard-style pursuit game with online players.
+description: >-
+  Hot Poursuit is a multiplayer pursuit simulation inspired by Scotland Yard.
+  One side plays a thief trying to slip away, while the others act as
+  investigators who track the target down. A round centers on the chase: the
+  thief moves, the pursuers try to close in and make the catch.
+
+
+  The premise is a hidden-target hunt, where pursuers have to work out where the
+  thief has gone and cut off the routes. It supports online play with other
+  people and is set up to work on mobile devices as well as desktop browsers.
+
+
+  The game was entered in Vibe Jam 2026, where it placed 545th out of 945
+  entries. According to the creator, it was built with the Cursor code editor.
+play:
+  url: https://scot-tau.vercel.app
+  embeddable: true
+  platforms:
+    - browser
+    - mobile
+creator:
+  name: Klr_Kilik
+  handle: klr-kilik
+  x: Klr_Kilik
+made:
+  models: []
+  tools:
+    - cursor
+  aiShare: most
+  source: Vibe Jam 2026 submission form
+  evidence: creator
+tech:
+  multiplayer: online
+genres:
+  - simulation
+  - strategy
+jam:
+  event: vibe-jam-2026
+  rank: 545
+  entries: 945
+media:
+  cover: games/hot-poursuit/cover
+  screenshots:
+    - games/hot-poursuit/shot-1
+    - games/hot-poursuit/shot-2
+dates:
+  added: 2026-09-29
+  updated: 2026-09-29
+status: live
+provenance:
+  foundVia: scout:vibejam-2026
+  scannedAt: 2026-09-29T18:39:21.626Z

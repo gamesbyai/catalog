@@ -1,0 +1,63 @@
+slug: the-house
+title: The House
+tagline: Explore an unsettling house and solve its puzzles as the place seems to
+  watch you.
+description: >-
+  The House is a browser-based horror adventure with puzzle elements. The player
+  explores a strange house that the game hints is aware of whoever walks through
+  it, working through its rooms and solving what they present. The tone leans
+  toward quiet dread rather than action.
+
+
+  The game is based on the novel House of Leaves, and the creator says it grew
+  out of a longtime admiration for that book. That source shapes its unsettling
+  premise, in which the house itself feels like the main presence. It also
+  placed 512th out of 945 entries in Vibe Jam 2026, and it is built for mobile
+  play as well as desktop.
+
+
+  The creator built it with Codex, and the game runs on the PixiJS rendering
+  library for its visuals, which keeps the whole experience playable directly in
+  a web browser.
+play:
+  url: https://house-of-leaves-antigravity.vercel.app
+  embeddable: true
+  platforms:
+    - browser
+    - mobile
+creator:
+  name: Kyle_L_Wiggers
+  handle: kyle-l-wiggers
+  x: Kyle_L_Wiggers
+made:
+  models: []
+  providers:
+    - openai
+  tools:
+    - codex
+  aiShare: most
+  source: Vibe Jam 2026 submission form
+  evidence: creator
+tech:
+  engine: pixijs
+  multiplayer: single
+genres:
+  - adventure
+  - puzzle
+  - horror
+jam:
+  event: vibe-jam-2026
+  rank: 512
+  entries: 945
+media:
+  cover: games/the-house/cover
+  screenshots:
+    - games/the-house/shot-1
+    - games/the-house/shot-2
+dates:
+  added: 2026-09-29
+  updated: 2026-09-29
+status: live
+provenance:
+  foundVia: scout:vibejam-2026
+  scannedAt: 2026-09-29T18:39:21.606Z

@@ -1,0 +1,56 @@
+slug: mystic-realms
+title: Mystic Realms
+tagline: Explore a voxel world with other players and fight in shooter-style combat.
+description: >-
+  Mystic Realms is a browser-based multiplayer game set in a voxel world.
+  Players join a shared space, explore the blocky landscape, and fight using
+  shooter-style mechanics while taking on RPG-style roles alongside other people
+  connected at the same time.
+
+
+  The design mixes Minecraft-style exploration with fast-paced shooting, aiming
+  for an MMO feel that runs directly in the browser. Joining is meant to be
+  instant, so there is no install step between opening the page and sharing the
+  world with others. It was entered in Vibe Jam 2026.
+
+
+  The creator says the whole thing was built in a single morning with AI, as a
+  way to show that complex multiplayer genres are within reach of more people.
+  The project is built on Three.js.
+play:
+  url: https://haruka-apps-games.vercel.app
+  embeddable: true
+  platforms:
+    - browser
+creator:
+  name: haruka_apps
+  handle: haruka-apps
+  x: haruka_apps
+made:
+  models: []
+  tools: []
+  aiShare: most
+  source: Vibe Jam 2026 submission form
+  evidence: inferred
+tech:
+  engine: threejs
+  multiplayer: online
+genres:
+  - shooter
+  - rpg
+jam:
+  event: vibe-jam-2026
+  rank: 532
+  entries: 945
+media:
+  cover: games/mystic-realms/cover
+  screenshots:
+    - games/mystic-realms/shot-1
+    - games/mystic-realms/shot-2
+dates:
+  added: 2026-09-29
+  updated: 2026-09-29
+status: live
+provenance:
+  foundVia: scout:vibejam-2026
+  scannedAt: 2026-09-29T18:39:21.617Z

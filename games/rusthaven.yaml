@@ -1,0 +1,61 @@
+slug: rusthaven
+title: Rusthaven
+tagline: Explore a ruined city, gather parts, and wire and program your own robot.
+description: >-
+  Rusthaven is a robotics adventure set in a broken industrial city. The player
+  explores the ruins, collects electronic parts, and uses them to build a robot.
+  Assembling it means wiring the components together and programming its
+  behavior, with the goal of uncovering the mystery behind the first spark.
+
+
+  The game is meant to teach how electronics, wiring, and coding actually work.
+  The creator wanted learning to feel exciting rather than intimidating, so
+  players are encouraged to experiment, make mistakes, and solve problems on
+  their own. It is aimed at kids, teenagers, and adults alike.
+
+
+  The creator built it with Codex for the Vibe Jam 2026, using Three.js. The
+  motivation was a concern that many students skip the basics when using AI, so
+  the game focuses on hands-on understanding of programming, electronics, and
+  robotics.
+play:
+  url: https://menuliomiestas.lt
+  embeddable: true
+  platforms:
+    - browser
+creator:
+  name: pkay141
+  handle: pkay141
+  x: pkay141
+made:
+  models: []
+  providers:
+    - openai
+  tools:
+    - codex
+  aiShare: most
+  source: Vibe Jam 2026 submission form
+  evidence: creator
+tech:
+  engine: threejs
+  multiplayer: single
+genres:
+  - adventure
+  - puzzle
+  - educational
+jam:
+  event: vibe-jam-2026
+  rank: 497
+  entries: 945
+media:
+  cover: games/rusthaven/cover
+  screenshots:
+    - games/rusthaven/shot-1
+    - games/rusthaven/shot-2
+dates:
+  added: 2026-09-29
+  updated: 2026-09-29
+status: live
+provenance:
+  foundVia: scout:vibejam-2026
+  scannedAt: 2026-09-29T18:39:21.597Z
