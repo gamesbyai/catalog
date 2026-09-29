@@ -196,7 +196,7 @@ terms:
     intro: |-
       GameMaker is a 2D game engine and editor from YoYo Games, which is part of Opera. Games are written in GameMaker Language (GML). The site says one project can export to Windows, macOS, Linux, Android, iOS, HTML5 and consoles including Xbox Series X|S, PlayStation 5 and Nintendo Switch.
 
-      As of September 2026, GameMaker's download page says it is free for non-commercial use, including web export through GX.games and HTML5, and that a commercial license is a one-time $99.99 purchase. The site also lists Professional and Enterprise tiers for commercial releases. GML is text code, so an AI can write game scripts directly.
+      As of September 2026, GameMaker's download page says it is free for non-commercial use, including web export through GX.games and HTML5, that commercial use needs the Professional license, a one-time $99.99 purchase, and that console export needs the Enterprise subscription. GML is text code, so an AI can write game scripts directly.
     sources:
       - "https://gamemaker.io/en"
       - "https://gamemaker.io/en/get"
@@ -265,7 +265,7 @@ terms:
     intro: |-
       Construct 3 is a 2D game engine from Scirra whose editor itself runs in the browser. Its site says games are built with a drag-and-drop interface and an event system, with no coding needed, and that advanced users can add JavaScript alongside the visual system. It publishes to HTML5, iOS, Android and Windows.
 
-      As of September 2026, Construct's pricing page says the free edition includes web publishing but limits a project to 50 events, 2 layers and 2 effects. Paid plans add desktop, mobile and console publishing. Since most logic is built visually with events, JavaScript is the text-code path in a Construct project.
+      As of September 2026, Construct's pricing page says the free edition includes web publishing but limits a project to 50 events, 2 layers and 2 effects. Paid plans add desktop and mobile publishing, plus Facebook Instant Games and playable ads. Since most logic is built visually with events, JavaScript is the text-code path in a Construct project.
     sources:
       - "https://editor.construct.net/"
       - "https://www.construct.net/en/make-games/buy-construct"
@@ -273,7 +273,7 @@ terms:
     name: GDevelop
     url: "https://gdevelop.io/"
     intro: |-
-      GDevelop is a free, open-source, no-code game engine for 2D, 3D and multiplayer games. Its README says the core library, game engines, editor and extensions are all MIT licensed, and that Florian Rival maintains the project. The GitHub repository dates to June 2014.
+      GDevelop is a free, open-source, no-code game engine for 2D, 3D and multiplayer games. Its README says the core library, game engines, editor and extensions are all MIT licensed, and that the GDevelop name and logo belong to Florian Rival. The GitHub repository dates to June 2014.
 
       Game logic is built with an event-based system, and users can extend GDevelop with JavaScript and custom extensions. The web game engine, GDJS, is written in TypeScript and uses PixiJS and Three.js. Games export as HTML5 for the web, and the site also lists Android, iOS and Steam.
     sources:
@@ -360,4 +360,5 @@ terms:
     sources:
       - "https://developer.mozilla.org/en-US/docs/Web/API/WebGPU_API"
       - "https://web.dev/blog/webgpu-supported-major-browsers"
+      - "https://www.w3.org/TR/webgpu/"
       - "https://github.com/mrdoob/three.js"

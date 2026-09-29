@@ -263,7 +263,7 @@ terms:
   - slug: visual-novel
     name: Visual novel
     intro: |-
-      A visual novel is a narrative-focused video game that tells its story through text boxes, static images, background art and audio, with progress made by clicking, tapping or pressing a button. The core loop is to read, make a choice at a decision point, and follow the branch toward one of several endings. The genre originated in Japan in the 1990s. Steins;Gate, Phoenix Wright: Ace Attorney and Fate/stay night are examples.
+      A visual novel is a narrative-focused video game that tells its story through text boxes, static images, background art and audio, with progress made by clicking, tapping or pressing a button. The core loop is to read, make a choice at a decision point, and follow the branch toward one of several endings. The genre originated in Japan, and the term visual novel emerged in the mid-1990s. Steins;Gate, Phoenix Wright: Ace Attorney and Fate/stay night are examples.
 
       A visual novel is mostly a script plus state. The code runs branching scripts, sets flags to remember earlier choices, and offers save and load and a backlog for rereading text. Dedicated engines exist for this, and Ren'Py is described as among the most popular visual novel development kits.
     sources:

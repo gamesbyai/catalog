@@ -124,7 +124,7 @@ terms:
 
       For a game, you open your project in the Cursor editor and hand tasks to an agent, choosing how much autonomy it gets, from targeted edits to fully autonomous work. Cursor lets you pick between its own models and models from OpenAI, Anthropic and Google.
 
-      SpaceX completed its acquisition of Anysphere on August 14, 2026, according to Cursor's announcement. Cursor said it remains a separate product.
+      SpaceX completed its acquisition of Anysphere on August 14, 2026, according to Cursor's announcement. Cursor said this completed an acquisition process that began in April with its SpaceXAI partnership.
     sources:
       - "https://cursor.com/"
       - "https://cursor.com/blog/joining-spacex"
@@ -210,7 +210,7 @@ terms:
 
       Kilo works with more than 500 models. You can use free models, open-weight models, your own API keys or local models, and you can switch models in the middle of a task. It has specialized agents for code, planning, asking questions and debugging. The Kilo CLI is a fork of OpenCode.
 
-      Anaconda acquired Kilo Code on July 15, 2026, and said Kilo remains open source.
+      Anaconda acquired Kilo Code on July 15, 2026, and said Kilo remains available for individual builders, teams and organizations.
     sources:
       - "https://kilo.ai/"
       - "https://github.com/Kilo-Org/kilocode"
@@ -241,7 +241,7 @@ terms:
     intro: |-
       Continue is an open source AI coding assistant that has been used in VS Code, in JetBrains IDEs and from the command line. Its site now opens with a notice that Continue was acquired by Cursor.
 
-      The notice says the team's mission was always to amplify developers instead of automating them, and that the open source codebase remains freely available as a foundation for others. It also points to a July 15 deadline for exporting your data. As of September 2026, that notice is the first thing on continue.dev.
+      The notice says the team's mission was always to amplify developers instead of automating them, and that the open source codebase remains freely available as a foundation for others. Its FAQ now says all user data has been deleted in line with its privacy notice. As of September 2026, that notice is the first thing on continue.dev.
     sources:
       - "https://www.continue.dev/"
       - "https://blog.continue.dev/"

@@ -4,7 +4,7 @@ terms:
     maker: Pieter Levels
     url: "https://vibejam.com/2025/"
     intro: |-
-      The 2025 Vibe Coding Game Jam was an online game jam for AI-written games, organized by Pieter Levels (@levelsio). He announced it in March 2025 with a March 25 deadline, and the deadline was extended to April 1, 2025 at 23:59 UTC. Bolt and CodeRabbit sponsored it.
+      The 2025 Vibe Coding Game Jam was an online game jam for AI-written games, organized by Pieter Levels (@levelsio). He announced it in March 2025 with a March 25 deadline, and the deadline was extended to April 1, 2025 at 23:59 UTC. Bolt.new, CodeRabbit and Lambda sponsored it.
 
       The official rules required at least 80% of the game to be written by AI (code, assets and so on). Games had to be instantly playable on the web with no logins, signups or loading screens, free to play, and hosted on their own domain or subdomain. Any engine was allowed, and the rules recommended Three.js.
 
