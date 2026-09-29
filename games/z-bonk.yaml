@@ -1,0 +1,59 @@
+slug: z-bonk
+title: Z-Bonk
+tagline: Survive waves of zombies in a roguelite shooter with multiplayer support.
+description: >-
+  Z-Bonk is a roguelite zombie survival shooter drawing on Call of Duty Zombies
+  and Megabonk. The player fights off oncoming zombies from a first-hand
+  shooting perspective, trying to last as long as possible in each run before
+  starting over.
+
+
+  The game blends the round-based zombie survival format with the run-based
+  structure of a roguelite. It runs in the browser on Three.js and supports
+  multiplayer, so players can share the fight. It placed 248th out of 945
+  entries in Vibe Jam 2026.
+
+
+  The creator says they had wanted to make games for a long time but found
+  engines like Unity and Unreal too hard to learn. They built Z-Bonk with Cursor
+  and describe it as the result of several earlier projects, all started with no
+  prior knowledge of the underlying technology.
+play:
+  url: https://project-zombie.vercel.app
+  embeddable: true
+  platforms:
+    - browser
+creator:
+  name: oongaboonga420x
+  handle: oongaboonga420x
+  x: oongaboonga420x
+made:
+  models: []
+  tools:
+    - cursor
+  aiShare: most
+  source: Vibe Jam 2026 submission form
+  evidence: creator
+tech:
+  engine: threejs
+  multiplayer: online
+genres:
+  - shooter
+  - roguelike
+  - survival
+jam:
+  event: vibe-jam-2026
+  rank: 248
+  entries: 945
+media:
+  cover: games/z-bonk/cover
+  screenshots:
+    - games/z-bonk/shot-1
+    - games/z-bonk/shot-2
+dates:
+  added: 2026-09-29
+  updated: 2026-09-29
+status: live
+provenance:
+  foundVia: scout:vibejam-2026
+  scannedAt: 2026-09-29T18:39:15.191Z

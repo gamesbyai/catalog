@@ -1,0 +1,60 @@
+slug: zagreb-tram-simulator
+title: Zagreb Tram Simulator
+tagline: Drive a tram through Zagreb, pick up passengers, and shoot enemies.
+description: >-
+  Zagreb Tram Simulator puts you at the controls of a tram running through the
+  streets of Zagreb. The job is to carry passengers along the route while
+  dealing with enemies that appear along the way, so driving and shooting are
+  combined in the same run.
+
+
+  The setting is a fun twist on a transit simulation: a city tram, usually a
+  calm ride, becomes a vehicle for action and light adventure. It runs in the
+  browser on a 3D scene and is marked as playable on mobile, with no
+  multiplayer.
+
+
+  It was entered in Vibe Jam 2026, where it placed 236th out of 945 entries. The
+  creator's submission lists Claude Code as the tool used to build it, and it is
+  rendered with Three.js.
+play:
+  url: https://zagreb.lol/voznja
+  embeddable: true
+  platforms:
+    - browser
+    - mobile
+creator:
+  name: zagreblol
+  handle: zagreblol
+  x: zagreblol
+made:
+  models: []
+  providers:
+    - anthropic
+  tools:
+    - claude-code
+  aiShare: most
+  source: Vibe Jam 2026 submission form
+  evidence: creator
+tech:
+  engine: threejs
+  multiplayer: single
+genres:
+  - action
+  - simulation
+jam:
+  event: vibe-jam-2026
+  rank: 236
+  entries: 945
+media:
+  cover: games/zagreb-tram-simulator/cover
+  screenshots:
+    - games/zagreb-tram-simulator/shot-1
+    - games/zagreb-tram-simulator/shot-2
+dates:
+  added: 2026-09-29
+  updated: 2026-09-29
+status: live
+provenance:
+  foundVia: scout:vibejam-2026
+  scannedAt: 2026-09-29T18:39:15.187Z

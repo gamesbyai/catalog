@@ -1,0 +1,59 @@
+slug: jam-train
+title: Jam Train
+tagline: Play music with a friend while riding a relaxing train at sunset
+description: >-
+  Jam Train is a multiplayer music game in which two players make music together
+  during a calm train ride. Instead of racing against a clock or chasing a
+  score, you play along with a friend while the scenery rolls past, and the
+  session is about improvising together.
+
+
+  The mood is the main draw. The idea came from relaxing on a beach at sunset
+  and playing guitar with a friend, and the train ride carries that same
+  unhurried feeling. It runs in the browser and works on mobile, so a friend can
+  join from a phone.
+
+
+  It was entered in Vibe Jam 2026 and is built with Three.js. The creator built
+  it with Claude Code, Anthropic's coding tool, as part of the jam submission.
+play:
+  url: https://jamtrain.to
+  embeddable: true
+  platforms:
+    - browser
+    - mobile
+creator:
+  name: EricAlar11
+  handle: ericalar11
+  x: EricAlar11
+made:
+  models: []
+  providers:
+    - anthropic
+  tools:
+    - claude-code
+  aiShare: most
+  source: Vibe Jam 2026 submission form
+  evidence: creator
+tech:
+  engine: threejs
+  multiplayer: online
+genres:
+  - rhythm
+  - casual
+jam:
+  event: vibe-jam-2026
+  rank: 213
+  entries: 945
+media:
+  cover: games/jam-train/cover
+  screenshots:
+    - games/jam-train/shot-1
+    - games/jam-train/shot-2
+dates:
+  added: 2026-09-29
+  updated: 2026-09-29
+status: live
+provenance:
+  foundVia: scout:vibejam-2026
+  scannedAt: 2026-09-29T18:39:15.176Z

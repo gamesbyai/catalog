@@ -1,0 +1,56 @@
+slug: tron-cyber-cycles
+title: "Tron: Cyber Cycles"
+tagline: Ride a light cycle through neon arenas and trap rivals in your trail.
+description: >-
+  Tron: Cyber Cycles is an arena action game in which you steer a light cycle
+  across a glowing grid. Your bike leaves a solid trail behind it, and the goal
+  is to outmaneuver rival riders so they crash into the walls of light. Each
+  round comes down to positioning and timing.
+
+
+  The look and feel draw on the neon style of Tron Legacy, and the creator said
+  they made it because no existing game captured that feeling for them. Several
+  arenas give the trail-cutting chases some variety. It is a single-player game
+  built in Three.js, and it placed 282nd among 945 entries in Vibe Jam 2026.
+
+
+  According to the creator, the game was built with Cursor, an AI coding tool,
+  and the project was submitted to the Vibe Jam 2026 event.
+play:
+  url: https://tron.ganji.me
+  embeddable: true
+  platforms:
+    - browser
+creator:
+  name: ganjidotme
+  handle: ganjidotme
+  x: ganjidotme
+made:
+  models: []
+  tools:
+    - cursor
+  aiShare: most
+  source: Vibe Jam 2026 submission form
+  evidence: creator
+tech:
+  engine: threejs
+  multiplayer: single
+genres:
+  - action
+  - racing
+jam:
+  event: vibe-jam-2026
+  rank: 282
+  entries: 945
+media:
+  cover: games/tron-cyber-cycles/cover
+  screenshots:
+    - games/tron-cyber-cycles/shot-1
+    - games/tron-cyber-cycles/shot-2
+dates:
+  added: 2026-09-29
+  updated: 2026-09-29
+status: live
+provenance:
+  foundVia: scout:vibejam-2026
+  scannedAt: 2026-09-29T18:39:15.203Z

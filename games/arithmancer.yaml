@@ -1,0 +1,59 @@
+slug: arithmancer
+title: Arithmancer
+tagline: Solve arithmetic problems to cast spells and drive back the darkness.
+description: >-
+  Arithmancer is a fantasy RPG where math is the way you fight. The land has
+  fallen under a spreading darkness, and you push it back by casting spells,
+  with each cast powered by working out basic arithmetic problems correctly.
+
+
+  The game began as a spring break project between a parent and his 8-year-old
+  daughter, who wanted a fun way to practice arithmetic. That origin shapes the
+  design: the learning is part of the combat, not a quiz bolted on beside it. It
+  targets young players building number skills, and it runs in the browser with
+  support for mobile and multiplayer.
+
+
+  It was built in Three.js for the Vibe Jam 2026 event, where it placed 287th
+  out of 945 entries. The creator states that Codex was used in its development.
+play:
+  url: https://play.arithmancer.com
+  embeddable: true
+  platforms:
+    - browser
+    - mobile
+creator:
+  name: nswanix
+  handle: nswanix
+  x: nswanix
+made:
+  models: []
+  providers:
+    - openai
+  tools:
+    - codex
+  aiShare: most
+  source: Vibe Jam 2026 submission form
+  evidence: creator
+tech:
+  engine: threejs
+  multiplayer: online
+genres:
+  - rpg
+  - educational
+jam:
+  event: vibe-jam-2026
+  rank: 287
+  entries: 945
+media:
+  cover: games/arithmancer/cover
+  screenshots:
+    - games/arithmancer/shot-1
+    - games/arithmancer/shot-2
+dates:
+  added: 2026-09-29
+  updated: 2026-09-29
+status: live
+provenance:
+  foundVia: scout:vibejam-2026
+  scannedAt: 2026-09-29T18:39:15.204Z

@@ -1,0 +1,57 @@
+slug: mechbrawl
+title: MechBrawl
+tagline: Pilot a giant mech and fight other players in a deathmatch arena.
+description: >-
+  MechBrawl is a multiplayer deathmatch shooter in which players pilot heavy
+  combat mechs. Each match pits pilots against one another in a free-for-all, so
+  a run comes down to finding opponents, trading weapon fire, and staying alive
+  long enough to rack up more kills than everyone else.
+
+
+  The game draws on the mech combat of MechWarrior 2 and MechAssault, aiming for
+  the weighty feel of piloting a walking war machine instead of a nimble
+  soldier. It runs in the browser on Three.js and was entered in Vibe Jam 2026,
+  where it placed 190th out of 945 entries.
+
+
+  The creator built it with Cursor. It is set up for online play with other
+  people, and it is not designed for mobile devices, so a desktop browser is the
+  intended way to play.
+play:
+  url: https://mechbrawl.gg
+  embeddable: true
+  platforms:
+    - browser
+creator:
+  name: ThomasGrayX
+  handle: thomasgrayx
+  x: ThomasGrayX
+made:
+  models: []
+  tools:
+    - cursor
+  aiShare: most
+  source: Vibe Jam 2026 submission form
+  evidence: creator
+tech:
+  engine: threejs
+  multiplayer: online
+genres:
+  - action
+  - shooter
+jam:
+  event: vibe-jam-2026
+  rank: 190
+  entries: 945
+media:
+  cover: games/mechbrawl/cover
+  screenshots:
+    - games/mechbrawl/shot-1
+    - games/mechbrawl/shot-2
+dates:
+  added: 2026-09-29
+  updated: 2026-09-29
+status: live
+provenance:
+  foundVia: scout:vibejam-2026
+  scannedAt: 2026-09-29T18:39:15.170Z

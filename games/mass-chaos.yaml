@@ -1,0 +1,61 @@
+slug: mass-chaos
+title: Mass Chaos
+tagline: Grab, carry and deliver mass across a tilting arena without falling off.
+description: >-
+  Mass Chaos is a multiplayer arena game played on a platform that works like a
+  scale. Players grab objects, carry them, shoot, and deliver them to score,
+  since the mass you gather is your score. Every step shifts the balance of the
+  arena, so movement matters as much as aim.
+
+
+  The central idea is that the arena itself reacts to what everyone does.
+  Picking up weight and moving it tips the world, which turns positioning into a
+  strategic choice. Falling off is the constant risk, so each delivery has to be
+  weighed against the stability of the ground under you. It also runs on mobile.
+
+
+  It was entered in Vibe Jam 2026 and built in Three.js. The creator says it was
+  their first attempt at making a game, partly to show their kids that ideas can
+  be turned into something real even without prior experience. The known tooling
+  is Claude Code.
+play:
+  url: https://mass-chaos.com
+  embeddable: true
+  platforms:
+    - browser
+    - mobile
+creator:
+  name: vahagn_bbjnyan
+  handle: vahagn-bbjnyan
+  x: vahagn_bbjnyan
+made:
+  models: []
+  providers:
+    - anthropic
+  tools:
+    - claude-code
+  aiShare: most
+  source: Vibe Jam 2026 submission form
+  evidence: creator
+tech:
+  engine: threejs
+  multiplayer: online
+genres:
+  - action
+  - strategy
+jam:
+  event: vibe-jam-2026
+  rank: 261
+  entries: 945
+media:
+  cover: games/mass-chaos/cover
+  screenshots:
+    - games/mass-chaos/shot-1
+    - games/mass-chaos/shot-2
+dates:
+  added: 2026-09-29
+  updated: 2026-09-29
+status: live
+provenance:
+  foundVia: scout:vibejam-2026
+  scannedAt: 2026-09-29T18:39:15.196Z

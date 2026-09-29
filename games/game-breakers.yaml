@@ -1,0 +1,59 @@
+slug: game-breakers
+title: Game Breakers
+tagline: Invent fighters and attacks, then watch them battle other players' creations.
+description: >-
+  Game Breakers is a multiplayer auto-battler where players create their own
+  fighters instead of picking from a preset roster. An AI writes JavaScript for
+  each creation's visuals, attacks, and behavior, and that code runs on the game
+  server. Once a fighter is made, it enters a battle against creations from
+  other players.
+
+
+  The open-ended creation is the main draw. There are no predefined attacks or
+  hand-authored logic to choose from, so what a fighter looks like and how it
+  fights depends on what the player asks for. Matches can turn out surprising
+  because each opponent's behavior was generated from someone else's idea.
+
+
+  The game runs on mobile as well as desktop. It was entered in Vibe Jam 2026,
+  where it placed 176th out of 945 entries. The creator's tagline invites
+  players to try to break the game, which fits its design of running generated
+  code directly in the simulation.
+play:
+  url: https://gamebreakers.gg
+  embeddable: true
+  platforms:
+    - browser
+    - mobile
+creator:
+  name: Nevsved
+  handle: nevsved
+  x: Nevsved
+made:
+  models: []
+  tools:
+    - cursor
+  aiShare: most
+  source: Vibe Jam 2026 submission form
+  evidence: creator
+tech:
+  multiplayer: online
+genres:
+  - action
+  - strategy
+jam:
+  event: vibe-jam-2026
+  rank: 176
+  entries: 945
+media:
+  cover: games/game-breakers/cover
+  screenshots:
+    - games/game-breakers/shot-1
+    - games/game-breakers/shot-2
+dates:
+  added: 2026-09-29
+  updated: 2026-09-29
+status: live
+provenance:
+  foundVia: scout:vibejam-2026
+  scannedAt: 2026-09-29T18:39:15.161Z

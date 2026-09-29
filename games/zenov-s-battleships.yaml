@@ -1,0 +1,59 @@
+slug: zenov-s-battleships
+title: Zenov's Battleships
+tagline: Hunt hidden enemy ships on a grid in a twist on paper-and-pencil Battleships.
+description: >-
+  Zenov's Battleships is a strategy game based on the classic paper-and-pencil
+  naval guessing game. Players try to locate and sink an opponent's hidden fleet
+  on a grid, taking turns to call out shots and reading the results to narrow
+  down where the ships are placed.
+
+
+  The game puts a variation on the familiar rules rather than repeating them
+  exactly, giving the well-known format a different feel. It supports
+  multiplayer, so matches can be played against another person instead of only a
+  computer opponent. It is built for desktop play rather than mobile.
+
+
+  The game was entered in Vibe Jam 2026, where it placed 275th out of 945
+  entries. According to the creator, it was made with Claude Code and runs on
+  the Phaser framework.
+play:
+  url: https://playzenov.com
+  embeddable: false
+  platforms:
+    - browser
+creator:
+  name: zenov
+  handle: zenov
+  x: zenov
+made:
+  models: []
+  providers:
+    - anthropic
+  tools:
+    - claude-code
+  aiShare: most
+  source: Vibe Jam 2026 submission form
+  evidence: creator
+tech:
+  engine: phaser
+  multiplayer: online
+genres:
+  - strategy
+  - board
+jam:
+  event: vibe-jam-2026
+  rank: 275
+  entries: 945
+media:
+  cover: games/zenov-s-battleships/cover
+  screenshots:
+    - games/zenov-s-battleships/shot-1
+    - games/zenov-s-battleships/shot-2
+dates:
+  added: 2026-09-29
+  updated: 2026-09-29
+status: live
+provenance:
+  foundVia: scout:vibejam-2026
+  scannedAt: 2026-09-29T18:39:15.200Z

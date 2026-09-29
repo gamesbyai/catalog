@@ -1,0 +1,65 @@
+slug: jellingstone
+title: Jellingstone
+tagline: Guide Harold Bluetooth to build defenses and hold a Viking coast
+  against raiders.
+description: >-
+  Jellingstone is a voxel Viking village defense game with a toy-like look. You
+  guide Harold Bluetooth around the map, gathering supplies, awakening runes,
+  and building fortifications. Raiders threaten the coast, so each stretch of
+  play balances growing the settlement against holding it.
+
+
+  The tone is cozy but dangerous, mixing click-to-move action RPG movement with
+  village building. A peaceful coastal settlement can grow into a defended
+  kingdom, and the world beyond the shore is endless and full of things to find.
+  It runs on mobile as well as desktop.
+
+
+  It began as a father-and-son project, inspired by the real Jelling Stone and
+  the family's ties to Jelling, Denmark. The creator says they built it with GPT
+  5.5 over a single weekend, as a way for the son to learn programming, and then
+  entered it in Vibe Jam 2026.
+play:
+  url: https://jellingstone.com
+  embeddable: true
+  platforms:
+    - browser
+    - mobile
+  controls:
+    - Click to move
+creator:
+  name: hansent
+  handle: hansent
+  x: hansent
+made:
+  models: []
+  providers:
+    - openai
+  tools:
+    - codex
+  aiShare: most
+  source: Vibe Jam 2026 submission form
+  evidence: creator
+tech:
+  engine: threejs
+  multiplayer: single
+genres:
+  - strategy
+  - action
+  - rpg
+jam:
+  event: vibe-jam-2026
+  rank: 300
+  entries: 945
+media:
+  cover: games/jellingstone/cover
+  screenshots:
+    - games/jellingstone/shot-1
+    - games/jellingstone/shot-2
+dates:
+  added: 2026-09-29
+  updated: 2026-09-29
+status: live
+provenance:
+  foundVia: scout:vibejam-2026
+  scannedAt: 2026-09-29T18:39:15.208Z

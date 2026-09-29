@@ -1,0 +1,64 @@
+slug: space-loop
+title: Space Loop
+tagline: Pilot a ship through procedural solar systems, blast rocks, trade, and
+  fuse upgrades.
+description: >-
+  Space Loop is a browser-based 3D space roguelite. Each run sends you in a
+  small ship through a procedurally generated solar system, where you shoot
+  asteroids, fight alien convoys, and stop at merchant planets to trade. What
+  you collect feeds back into your ship, so every trip through the loop leaves
+  you a bit stronger.
+
+
+  Upgrades come from fusing colored modules, which gives progression across runs
+  a puzzle-like layer on top of the shooting. The creator drew on Asteroids on
+  the Atari, one of the first games they played as a kid, and aimed to keep that
+  tense arcade feeling of dodging incoming rocks while building a larger 3D
+  universe around it.
+
+
+  The game runs in the browser using Three.js and supports mobile devices. The
+  creator states it was built with Claude Code. It placed 208th out of 945
+  entries in Vibe Jam 2026.
+play:
+  url: https://spaceloop.fr
+  embeddable: true
+  platforms:
+    - browser
+    - mobile
+creator:
+  name: libcedric
+  handle: libcedric
+  x: libcedric
+made:
+  models: []
+  providers:
+    - anthropic
+  tools:
+    - claude-code
+  aiShare: most
+  source: Vibe Jam 2026 submission form
+  evidence: creator
+tech:
+  engine: threejs
+  multiplayer: single
+genres:
+  - shooter
+  - roguelike
+  - action
+jam:
+  event: vibe-jam-2026
+  rank: 208
+  entries: 945
+media:
+  cover: games/space-loop/cover
+  screenshots:
+    - games/space-loop/shot-1
+    - games/space-loop/shot-2
+dates:
+  added: 2026-09-29
+  updated: 2026-09-29
+status: live
+provenance:
+  foundVia: scout:vibejam-2026
+  scannedAt: 2026-09-29T18:39:15.175Z
