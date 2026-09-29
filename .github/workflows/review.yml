@@ -33,6 +33,7 @@ jobs:
           owner: gamesbyai
           repositories: gamesbyai-site
           permission-contents: read
+          permission-issues: write
       - uses: actions/checkout@v5
         with:
           repository: gamesbyai/gamesbyai-site
@@ -60,4 +61,7 @@ jobs:
           URLSCAN_TOKEN: ${{ secrets.URLSCAN_TOKEN }}
           CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
           CATALOG_DIR: ${{ github.workspace }}
+          # The full review card is saved as an issue in the private repository; the PR gets a neutral status.
+          PRIVATE_TOKEN: ${{ steps.tools.outputs.token }}
+          PRIVATE_REPO: gamesbyai/gamesbyai-site
         run: node tools/review/review-card.mjs
