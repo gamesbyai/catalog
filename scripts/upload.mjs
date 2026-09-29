@@ -7,7 +7,7 @@
 import { lstatSync, readdirSync, readFileSync, writeFileSync, mkdirSync, mkdtempSync, rmSync } from 'node:fs';
 import { join } from 'node:path';
 import { tmpdir } from 'node:os';
-import { execFileSync, spawn } from 'node:child_process';
+import { execFileSync } from 'node:child_process';
 import { fileURLToPath } from 'node:url';
 import { parse } from 'yaml';
 import sharp from 'sharp';
@@ -15,7 +15,6 @@ import sharp from 'sharp';
 export const MEDIA_URL = 'https://media.gamesbyai.win';
 const ROOT = fileURLToPath(new URL('..', import.meta.url));
 const BUCKET = 'gamesbyai-media';
-const WRANGLER = 'wrangler@4.143.0';
 const CACHE_CONTROL = 'public, max-age=604800';
 const SLUG = /^[a-z0-9]+(?:-[a-z0-9]+)*$/;
 const CODE = /^[a-z0-9-]{1,32}$/;
@@ -195,25 +194,39 @@ function loadEntry(slug, { gamesDir, entriesRef, repoDir }) {
   }
 }
 
-/** Uploads one file with wrangler. Needs R2_UPLOAD_TOKEN and CLOUDFLARE_ACCOUNT_ID in the environment. */
-export function wranglerPut(key, file, type) {
-  const args = ['--yes', WRANGLER, 'r2', 'object', 'put', `${BUCKET}/${key}`, '--remote', '--file', file, '--content-type', type, '--cache-control', CACHE_CONTROL];
-  const env = { ...process.env, CLOUDFLARE_API_TOKEN: process.env.R2_UPLOAD_TOKEN, WRANGLER_SEND_METRICS: 'false' };
-  delete env.R2_UPLOAD_TOKEN;
-  const win = process.platform === 'win32';
-  return new Promise((resolve, reject) => {
-    const child = spawn(win ? 'npx.cmd' : 'npx', win ? args.map((a) => `"${a}"`) : args, { env, shell: win, stdio: ['ignore', 'ignore', 'pipe'] });
-    let stderr = '';
-    child.stderr.on('data', (d) => (stderr = (stderr + d).slice(-2000)));
-    const timer = setTimeout(() => child.kill(), 180_000);
-    child.on('error', (e) => (clearTimeout(timer), reject(e)));
-    child.on('close', (code) => {
-      clearTimeout(timer);
-      if (code === 0) resolve();
-      else reject(new Error(`wrangler exited with ${code}: ${stderr.trim().split('\n').slice(-3).join(' ').slice(0, 300)}`));
-    });
-  });
+/**
+ * Uploads one file through the Cloudflare R2 API (no wrangler, no npx). Retries server errors and rate limits with
+ * backoff; returns { ok, error }. Needs R2_UPLOAD_TOKEN and CLOUDFLARE_ACCOUNT_ID.
+ */
+export async function restPut(key, file, type, { token = process.env.R2_UPLOAD_TOKEN, accountId = process.env.CLOUDFLARE_ACCOUNT_ID, fetchImpl = fetch, attempts = 3, backoffMs = 1000 } = {}) {
+  const url = `https://api.cloudflare.com/client/v4/accounts/${accountId}/r2/buckets/${BUCKET}/objects/${key.split('/').map(encodeURIComponent).join('/')}`;
+  const body = readFileSync(file);
+  let error;
+  for (let i = 0; i < attempts; i++) {
+    try {
+      const res = await fetchImpl(url, { method: 'PUT', headers: { Authorization: `Bearer ${token}`, 'Content-Type': type, 'Cache-Control': CACHE_CONTROL }, body });
+      if (res.ok) return { ok: true };
+      const text = await res.text().catch(() => '');
+      let detail = text;
+      try {
+        detail = JSON.parse(text).errors?.map((e) => e.message).join('; ') || text;
+      } catch {
+        /* not JSON */
+      }
+      error = new Error(`R2 ${res.status}: ${String(detail).slice(0, 200)}`);
+      if (res.status < 500 && res.status !== 429) break; // auth or bad request: retrying won't help
+    } catch (e) {
+      error = e;
+    }
+    if (i < attempts - 1) await new Promise((r) => setTimeout(r, backoffMs * 2 ** i));
+  }
+  return { ok: false, error };
 }
+
+const defaultPut = async (key, file, type) => {
+  const r = await restPut(key, file, type);
+  if (!r.ok) throw r.error;
+};
 
 async function mapLimit(items, limit, fn) {
   const results = new Array(items.length);
@@ -234,7 +247,7 @@ async function mapLimit(items, limit, fn) {
  * Processes out/<slug>/{cover,shot-1,shot-2}.png for every slug that has an entry, puts the variants
  * (unless dryRun) and writes out/contact-sheet.md. Returns the uploaded keys and a slug → problem map.
  */
-export async function runUpload({ outDir, gamesDir = join(ROOT, 'games'), entriesRef, repoDir = ROOT, dryRun = false, baseUrl = MEDIA_URL, put = wranglerPut, variantsDir, concurrency = 4, log = console.log } = {}) {
+export async function runUpload({ outDir, gamesDir = join(ROOT, 'games'), entriesRef, repoDir = ROOT, dryRun = false, baseUrl = MEDIA_URL, put = defaultPut, variantsDir, concurrency = 4, log = console.log } = {}) {
   if (entriesRef !== undefined && !/^[A-Za-z0-9][A-Za-z0-9._/-]{0,99}$/.test(entriesRef)) throw new Error('invalid --entries-ref');
   rmSync(join(outDir, 'contact-sheet.md'), { force: true }); // never post a sheet we didn't write
   const problems = {};

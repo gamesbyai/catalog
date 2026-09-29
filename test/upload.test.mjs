@@ -6,7 +6,7 @@ import { join } from 'node:path';
 import { crc32 } from 'node:zlib';
 import { execFileSync } from 'node:child_process';
 import sharp from 'sharp';
-import { processImage, contactSheet, escapeText, runUpload } from '../scripts/upload.mjs';
+import { processImage, contactSheet, escapeText, runUpload, restPut } from '../scripts/upload.mjs';
 
 const tmp = () => mkdtempSync(join(tmpdir(), 'upload-'));
 const shot = (width = 1280, height = 720) =>
@@ -223,4 +223,33 @@ test('runUpload can read entries from a git ref instead of the working tree', as
   const res = await runUpload({ outDir: out, repoDir: repo, entriesRef: 'HEAD', dryRun: true, log: () => {} });
   assert.equal(res.problems.bad, 'no-entry');
   assert.ok(readFileSync(join(out, 'contact-sheet.md'), 'utf8').includes('Good From Git'));
+});
+
+test('restPut uploads through the Cloudflare R2 API with type and cache headers, retrying server errors', async () => {
+  const dir = tmp();
+  const file = join(dir, 'x.webp');
+  writeFileSync(file, 'data');
+  const calls = [];
+  let n = 0;
+  const fetchImpl = async (url, init) => {
+    calls.push({ url, init });
+    return ++n < 3 ? new Response('busy', { status: 503 }) : Response.json({ success: true });
+  };
+  const r = await restPut('games/a/cover-640.webp', file, 'image/webp', { token: 't', accountId: 'acc', fetchImpl, backoffMs: 1 });
+  assert.equal(r.ok, true);
+  assert.equal(calls.length, 3);
+  assert.equal(calls[0].url, 'https://api.cloudflare.com/client/v4/accounts/acc/r2/buckets/gamesbyai-media/objects/games/a/cover-640.webp');
+  assert.equal(calls[0].init.method, 'PUT');
+  assert.equal(calls[0].init.headers['Content-Type'], 'image/webp');
+  assert.match(calls[0].init.headers['Cache-Control'], /max-age=604800/);
+  assert.equal(calls[0].init.headers.Authorization, 'Bearer t');
+});
+
+test('restPut reports a clear error after permanent failures', async () => {
+  const dir = tmp();
+  const file = join(dir, 'x.webp');
+  writeFileSync(file, 'data');
+  const r = await restPut('games/a/x.webp', file, 'image/webp', { token: 't', accountId: 'acc', fetchImpl: async () => Response.json({ errors: [{ message: 'Authentication error' }] }, { status: 403 }), backoffMs: 1 });
+  assert.equal(r.ok, false);
+  assert.match(String(r.error.message), /403.*Authentication error/);
 });

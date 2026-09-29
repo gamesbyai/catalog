@@ -1,0 +1,96 @@
+import { test } from 'node:test';
+import assert from 'node:assert/strict';
+import { mkdtempSync, mkdirSync, writeFileSync, cpSync } from 'node:fs';
+import { tmpdir } from 'node:os';
+import { join } from 'node:path';
+import { stringify } from 'yaml';
+import { parseIssue, toEntry, loadContext } from '../scripts/issue-to-entry.mjs';
+import { validate } from '../scripts/validate.mjs';
+
+const body = (over = {}) => {
+  const f = {
+    'Play URL': 'https://sky-hop.example.com/',
+    'Repository (optional)': '_No response_',
+    'Game title': 'Sky Hop',
+    'Creator name': 'Ada',
+    'Creator handle (optional)': 'ada',
+    Genres: 'Platformer, Puzzle',
+    Players: 'Single player',
+    'How much of the code did AI write?': 'Most of it',
+    'AI models used': 'Claude Opus 5.5',
+    'AI tools used': 'Claude Code, Cursor',
+    'How you made it (600 characters max)': 'I described the idea to Claude Code and tuned the jumps by hand.',
+    Permission: "- [X] I made this game or have the creator's permission, and I agree to the editorial policy.",
+    ...over,
+  };
+  return Object.entries(f).map(([h, v]) => `### ${h}\n\n${v}`).join('\n\n');
+};
+
+function repo(games = {}) {
+  const dir = mkdtempSync(join(tmpdir(), 'catalog-'));
+  cpSync('schema', join(dir, 'schema'), { recursive: true });
+  cpSync('taxonomies', join(dir, 'taxonomies'), { recursive: true });
+  mkdirSync(join(dir, 'games'));
+  for (const [slug, g] of Object.entries(games)) writeFileSync(join(dir, 'games', `${slug}.yaml`), stringify(g));
+  return dir;
+}
+
+test('a rendered issue form parses into fields; "_No response_" is empty', () => {
+  const f = parseIssue(body());
+  assert.equal(f['Play URL'], 'https://sky-hop.example.com/');
+  assert.equal(f['Repository (optional)'], '');
+  assert.equal(f['AI tools used'], 'Claude Code, Cursor');
+});
+
+test('a valid submission becomes a draft entry that passes the validator', () => {
+  const dir = repo();
+  const r = toEntry(parseIssue(body()), { ...loadContext(dir), today: '2026-09-29', issue: 12 });
+  assert.equal(r.slug, 'sky-hop');
+  assert.equal(r.entry.status, 'draft');
+  assert.deepEqual(r.entry.made.models, ['claude-opus-5-5']);
+  assert.deepEqual(r.entry.made.tools, ['claude-code', 'cursor']);
+  assert.deepEqual(r.entry.genres, ['platformer', 'puzzle']);
+  assert.equal(r.entry.made.aiShare, 'most');
+  assert.equal(r.entry.made.evidence, 'creator');
+  assert.deepEqual(r.entry.provenance, { foundVia: 'form', submittedBy: '#12' });
+  writeFileSync(join(dir, 'games', 'sky-hop.yaml'), stringify(r.entry));
+  assert.deepEqual(validate(dir).problems, []);
+});
+
+test('a game that is already in the catalog is refused, and slugs never collide', () => {
+  const dir = repo({ 'sky-hop': { slug: 'sky-hop', play: { url: 'https://other.example.com/' } } });
+  const ctx = { ...loadContext(dir), today: '2026-09-29', issue: 13 };
+  assert.equal(toEntry(parseIssue(body()), ctx).slug, 'sky-hop-2');
+  const dup = repo({ x: { slug: 'x', play: { url: 'https://SKY-HOP.example.com' } } });
+  assert.match(toEntry(parseIssue(body()), { ...loadContext(dup), today: '2026-09-29', issue: 14 }).error, /already/);
+});
+
+test('unknown models or tools are dropped and noted; missing permission or a bad URL is an error', () => {
+  const ctx = { ...loadContext(repo()), today: '2026-09-29', issue: 15 };
+  const r = toEntry(parseIssue(body({ 'AI models used': 'Claude Opus 5.5, Mystery Model 9' })), ctx);
+  assert.deepEqual(r.entry.made.models, ['claude-opus-5-5']);
+  assert.match(r.notes.join(' '), /Mystery Model 9/);
+  assert.match(toEntry(parseIssue(body({ Permission: '- [ ] I made this game' })), ctx).error, /permission/);
+  assert.match(toEntry(parseIssue(body({ 'Play URL': 'javascript:alert(1)' })), ctx).error, /Play URL/);
+  assert.match(toEntry(parseIssue(body({ 'Play URL': 'https://gamesbyai.win/x' })), ctx).error, /Play URL/);
+});
+
+test('text fields become plain text and can not smuggle extra form sections', () => {
+  const ctx = { ...loadContext(repo()), today: '2026-09-29', issue: 16 };
+  const r = toEntry(parseIssue(body({ 'Game title': 'Sky <img src=x onerror=alert(1)> Hop' })), ctx);
+  assert.equal(r.entry.title, 'Sky Hop');
+  const smuggled = parseIssue(body({ 'Creator name': 'Ada\n\n### Play URL\n\nhttps://evil.example' }));
+  assert.equal(smuggled['Play URL'], 'https://sky-hop.example.com/', 'the first section wins');
+});
+
+test('the issue form on disk matches the taxonomies (run node scripts/issue-form.mjs after a taxonomy change)', async () => {
+  const { renderForm, FORM_PATH } = await import('../scripts/issue-form.mjs');
+  const { readFileSync } = await import('node:fs');
+  assert.equal(readFileSync(FORM_PATH, 'utf8'), renderForm('.'));
+});
+
+test('every label the converter reads exists in the issue form', async () => {
+  const { issueForm } = await import('../scripts/issue-form.mjs');
+  const labels = issueForm('.').body.filter((b) => b.attributes?.label).map((b) => b.attributes.label);
+  for (const l of ['Play URL', 'Repository (optional)', 'Game title', 'Creator name', 'Creator handle (optional)', 'Genres', 'Players', 'How much of the code did AI write?', 'AI models used', 'AI tools used', 'How you made it (600 characters max)', 'Permission']) assert.ok(labels.includes(l), l);
+});

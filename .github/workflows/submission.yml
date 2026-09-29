@@ -1,0 +1,56 @@
+name: submission
+# "Submit a game" issues (from the issue form or the site's form) become draft PRs on submission/<slug>. The issue is
+# untrusted text: it reaches our scripts from main only through environment variables and is parsed as data. The PR is
+# opened with the GitHub App's token so capture and validate run on it (GITHUB_TOKEN events trigger no workflows).
+on:
+  issues:
+    types: [opened, edited]
+permissions:
+  contents: read
+  issues: write
+jobs:
+  to-pr:
+    if: contains(github.event.issue.labels.*.name, 'submission') && github.event.issue.state == 'open'
+    runs-on: ubuntu-latest
+    concurrency:
+      group: submission-${{ github.event.issue.number }}
+      cancel-in-progress: false
+    steps:
+      - uses: actions/checkout@v5
+        with: { ref: main, persist-credentials: false }
+      - uses: actions/setup-node@v5
+        with: { node-version: 22 }
+      - run: npm ci --ignore-scripts --no-audit --no-fund
+      - name: At most three open submissions per person (the site form has its own limit)
+        id: limit
+        env:
+          GH_TOKEN: ${{ github.token }}
+          AUTHOR: ${{ github.event.issue.user.login }}
+          AUTHOR_TYPE: ${{ github.event.issue.user.type }}
+        run: |
+          if [ "$AUTHOR_TYPE" = "Bot" ]; then echo "ok=true" >> "$GITHUB_OUTPUT"; exit 0; fi
+          n=$(gh issue list --repo "$GITHUB_REPOSITORY" --label submission --state open --author "$AUTHOR" --json number --jq length)
+          if [ "$n" -gt 3 ]; then
+            gh issue comment "${{ github.event.issue.number }}" --repo "$GITHUB_REPOSITORY" --body "Thanks! You have more than three submissions waiting, so this one will be checked once the others are reviewed."
+            echo "ok=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "ok=true" >> "$GITHUB_OUTPUT"
+          fi
+      - name: Convert the issue to a draft entry
+        if: steps.limit.outputs.ok == 'true'
+        env:
+          ISSUE_BODY: ${{ github.event.issue.body }}
+          ISSUE_NUMBER: ${{ github.event.issue.number }}
+        run: node scripts/issue-to-entry.mjs > "$RUNNER_TEMP/entry.json"
+      - uses: actions/create-github-app-token@v2
+        if: steps.limit.outputs.ok == 'true'
+        id: app
+        with:
+          app-id: ${{ secrets.GH_APP_ID }}
+          private-key: ${{ secrets.GH_APP_PRIVATE_KEY }}
+      - name: Open or update the pull request
+        if: steps.limit.outputs.ok == 'true'
+        env:
+          GH_TOKEN: ${{ steps.app.outputs.token }}
+          ISSUE_NUMBER: ${{ github.event.issue.number }}
+        run: node scripts/submission-pr.mjs "$RUNNER_TEMP/entry.json"
