@@ -1,0 +1,62 @@
+slug: the-operator
+title: The Operator
+tagline: Survive a night in a forest tower by working a broken emergency phone.
+description: >-
+  The Operator is a psychological horror puzzle game set in an abandoned forest
+  tower at night. The player is stranded with a malfunctioning emergency phone
+  system, and the only way out is to work through it while something waits
+  outside. Each attempt to get help means dealing with a line that keeps putting
+  you on hold.
+
+
+  The horror comes from helplessness rather than combat. Siren Head lurks beyond
+  the walls, and the tension builds as you wait, retry, and figure out the phone
+  system while the threat closes in. The creator cites Coldline as an
+  inspiration and wanted the scariest element to be powerlessness instead of the
+  monster itself.
+
+
+  It was built with Three.js, and the creator lists Antigravity as the tool
+  used. It placed 464th out of 945 entries in Vibe Jam 2026 and is marked as
+  playable on mobile.
+play:
+  url: https://playtheoperator.vercel.app
+  embeddable: true
+  platforms:
+    - browser
+    - mobile
+creator:
+  name: itscoleblake
+  handle: itscoleblake
+  x: itscoleblake
+made:
+  models: []
+  providers:
+    - google
+  tools:
+    - antigravity
+  aiShare: most
+  source: Vibe Jam 2026 submission form
+  evidence: creator
+tech:
+  engine: threejs
+  multiplayer: single
+genres:
+  - puzzle
+  - horror
+jam:
+  event: vibe-jam-2026
+  rank: 464
+  entries: 945
+media:
+  cover: games/the-operator/cover
+  screenshots:
+    - games/the-operator/shot-1
+    - games/the-operator/shot-2
+dates:
+  added: 2026-09-29
+  updated: 2026-09-29
+status: live
+provenance:
+  foundVia: scout:vibejam-2026
+  scannedAt: 2026-09-29T18:39:18.380Z

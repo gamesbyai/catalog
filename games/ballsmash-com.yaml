@@ -1,0 +1,60 @@
+slug: ballsmash-com
+title: ballSmash.com
+tagline: Bash a ball around an arena in a mix of soccer and sumo, online with others.
+description: >-
+  ballSmash.com is a multiplayer browser game that the creator describes as
+  soccer meets sumo. Players compete in a shared arena built around a ball,
+  combining the goal-scoring idea of football with the shoving and pushing of a
+  sumo match. It runs in the browser and works on mobile devices as well.
+
+
+  The mix of two familiar sports is the main hook: the physical contest of
+  knocking opponents around sits alongside the aim of getting the ball where it
+  needs to go. Playing against other people keeps each match unpredictable, and
+  the 3D presentation gives the arena a tactile feel.
+
+
+  It was a Vibe Jam 2026 entry, built with Three.js. The creator says they tried
+  the same idea in the previous jam, but the AI models then were not good enough
+  to pull it off. This time they used Claude Code to make it.
+play:
+  url: https://ballsmash.com
+  embeddable: true
+  platforms:
+    - browser
+    - mobile
+creator:
+  name: highDevGuy
+  handle: highdevguy
+  x: highDevGuy
+made:
+  models: []
+  providers:
+    - anthropic
+  tools:
+    - claude-code
+  aiShare: most
+  source: Vibe Jam 2026 submission form
+  evidence: creator
+tech:
+  engine: threejs
+  multiplayer: online
+genres:
+  - sports
+  - action
+jam:
+  event: vibe-jam-2026
+  rank: 374
+  entries: 945
+media:
+  cover: games/ballsmash-com/cover
+  screenshots:
+    - games/ballsmash-com/shot-1
+    - games/ballsmash-com/shot-2
+dates:
+  added: 2026-09-29
+  updated: 2026-09-29
+status: live
+provenance:
+  foundVia: scout:vibejam-2026
+  scannedAt: 2026-09-29T18:39:18.358Z

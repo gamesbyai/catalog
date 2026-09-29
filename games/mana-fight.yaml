@@ -1,0 +1,57 @@
+slug: mana-fight
+title: MANA FIGHT
+tagline: Pick a spellcasting class and fight through fast third-person arena battles.
+description: >-
+  MANA FIGHT is a fantasy third-person shooter set in an arena. You choose a
+  class, learn its spells, and fight opponents in quick, action-heavy rounds.
+  Magic takes the place of the usual guns and grenades, while the core loop of
+  aiming, moving, and out-fighting rivals stays familiar.
+
+
+  The creator is a fan of first-person and third-person shooters and wanted to
+  keep their core principles while replacing the weapons with a fantasy setting.
+  That idea shapes the game: class choice and spell mastery are the main ways to
+  gain an edge in the arena.
+
+
+  It runs on Three.js and was entered in Vibe Jam 2026. The creator states that
+  Cursor was used to build it, though the extent of AI involvement is not
+  described.
+play:
+  url: https://manafight.vercel.app
+  embeddable: true
+  platforms:
+    - browser
+creator:
+  name: NinoGreeno
+  handle: ninogreeno
+  x: NinoGreeno
+made:
+  models: []
+  tools:
+    - cursor
+  aiShare: most
+  source: Vibe Jam 2026 submission form
+  evidence: creator
+tech:
+  engine: threejs
+  multiplayer: single
+genres:
+  - shooter
+  - action
+jam:
+  event: vibe-jam-2026
+  rank: 455
+  entries: 945
+media:
+  cover: games/mana-fight/cover
+  screenshots:
+    - games/mana-fight/shot-1
+    - games/mana-fight/shot-2
+dates:
+  added: 2026-09-29
+  updated: 2026-09-29
+status: live
+provenance:
+  foundVia: scout:vibejam-2026
+  scannedAt: 2026-09-29T18:39:18.374Z

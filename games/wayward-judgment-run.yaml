@@ -1,0 +1,57 @@
+slug: wayward-judgment-run
+title: Wayward Judgment Run
+tagline: Run a route where each life you take comes back to judge you in Purgatory.
+description: >-
+  Wayward Judgment Run is a cinematic runner built around morality. You move
+  through a course in the action style of a familiar endless runner, and the
+  people you kill along the way do not simply vanish. Their lives return to you
+  in Purgatory, where you face what you have done.
+
+
+  The game takes a well-known mechanic and pushes it toward something more
+  provocative, using mortality, judgment, and consequence as its themes. Instead
+  of treating harm as a scoring event, it makes each death feed into a later
+  reckoning. The presentation leans on a cinematic, moody tone.
+
+
+  It was made for Vibe Jam 2026 as a 3D browser entry running on Three.js, and
+  it is playable on mobile. The creator says it was inspired by last year's
+  winning entry, The Great Taxi Assignment, and built it with Bolt.
+play:
+  url: https://waywardjudgmentrun.com
+  embeddable: true
+  platforms:
+    - browser
+    - mobile
+creator:
+  name: AIChaperones
+  handle: aichaperones
+  x: AIChaperones
+made:
+  models: []
+  tools:
+    - bolt
+  aiShare: most
+  source: Vibe Jam 2026 submission form
+  evidence: creator
+tech:
+  engine: threejs
+  multiplayer: single
+genres:
+  - action
+jam:
+  event: vibe-jam-2026
+  rank: 350
+  entries: 945
+media:
+  cover: games/wayward-judgment-run/cover
+  screenshots:
+    - games/wayward-judgment-run/shot-1
+    - games/wayward-judgment-run/shot-2
+dates:
+  added: 2026-09-29
+  updated: 2026-09-29
+status: live
+provenance:
+  foundVia: scout:vibejam-2026
+  scannedAt: 2026-09-29T18:39:18.351Z

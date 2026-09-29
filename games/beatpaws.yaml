@@ -1,0 +1,60 @@
+slug: beatpaws
+title: BeatPaws
+tagline: Guide bouncing cats through neon lanes, hitting notes and dodging
+  hazards to the beat.
+description: >-
+  BeatPaws is a 3D rhythm game that starts the moment the page opens, with no
+  menus, logins, or loading screens. Cats bounce along neon beat lanes, and the
+  player hits musical notes as they arrive while steering clear of hazards on
+  the track.
+
+
+  The look draws on arcade rhythm games and retro neon worlds, with the cats,
+  music, and motion aiming for an upbeat feel right from the first second. The
+  cats are AI-generated, and the game is playable on mobile as well as desktop.
+
+
+  It was entered in Vibe Jam 2026, and the idea of connected games that players
+  can jump between instantly shaped its design. The creator built it with Codex,
+  using Three.js for the 3D stage.
+play:
+  url: https://beatpaws.vercel.app
+  embeddable: true
+  platforms:
+    - browser
+    - mobile
+creator:
+  name: swhan0329
+  handle: swhan0329
+  x: swhan0329
+made:
+  models: []
+  providers:
+    - openai
+  tools:
+    - codex
+  aiShare: most
+  source: Vibe Jam 2026 submission form
+  evidence: creator
+tech:
+  engine: threejs
+  multiplayer: online
+genres:
+  - rhythm
+  - arcade
+jam:
+  event: vibe-jam-2026
+  rank: 468
+  entries: 945
+media:
+  cover: games/beatpaws/cover
+  screenshots:
+    - games/beatpaws/shot-1
+    - games/beatpaws/shot-2
+dates:
+  added: 2026-09-29
+  updated: 2026-09-29
+status: live
+provenance:
+  foundVia: scout:vibejam-2026
+  scannedAt: 2026-09-29T18:39:18.384Z

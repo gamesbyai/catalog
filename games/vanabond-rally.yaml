@@ -1,0 +1,62 @@
+slug: vanabond-rally
+title: Vanabond Rally
+tagline: Drive a vagabond's car down an open road, covering as many kilometers
+  as you can.
+description: >-
+  Vanabond Rally casts you as a vagabond behind the wheel on an open road. The
+  goal is simple: cover as many kilometers as possible before the run ends. It
+  is presented as a platformer, so the road works like a course to be traversed
+  rather than a plain straight track.
+
+
+  The standout choice is the restrained input scheme. The whole experience of
+  driving is boiled down to just three buttons, which keeps the game easy to
+  pick up and suits quick attempts at beating a distance. It also runs on mobile
+  devices.
+
+
+  The game was an entry in Vibe Jam 2026. The creator says they enjoy driving on
+  the open road and wanted to capture that feeling in a platformer. It is built
+  in Three.js, and the creator's submission points to Gemini as the AI tool
+  used.
+play:
+  url: https://vanabond.renderfiction.com
+  embeddable: true
+  platforms:
+    - browser
+    - mobile
+creator:
+  name: renderfiction
+  handle: renderfiction
+  x: renderfiction
+made:
+  models: []
+  providers:
+    - google
+  tools:
+    - gemini-app
+  aiShare: most
+  source: Vibe Jam 2026 submission form
+  evidence: creator
+tech:
+  engine: threejs
+  multiplayer: single
+genres:
+  - platformer
+  - arcade
+jam:
+  event: vibe-jam-2026
+  rank: 365
+  entries: 945
+media:
+  cover: games/vanabond-rally/cover
+  screenshots:
+    - games/vanabond-rally/shot-1
+    - games/vanabond-rally/shot-2
+dates:
+  added: 2026-09-29
+  updated: 2026-09-29
+status: live
+provenance:
+  foundVia: scout:vibejam-2026
+  scannedAt: 2026-09-29T18:39:18.356Z

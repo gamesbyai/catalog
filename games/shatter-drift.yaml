@@ -1,0 +1,67 @@
+slug: shatter-drift
+title: SHATTER DRIFT
+tagline: Hold to shatter through obstacles, release to recombine and collect energy.
+description: >-
+  SHATTER DRIFT is an abstract arcade runner in which a crystal drifts through
+  endless procedural space. The game uses a single input. Holding it breaks the
+  crystal apart so it can pass through obstacles, and releasing it lets the
+  pieces recombine and gather energy along the way.
+
+
+  The push and pull between those two states drives each run, with safety on one
+  side and collection on the other. Five biomes, boss waves, and power-ups add
+  variety, and a global leaderboard tracks scores. The whole game loads
+  instantly at under a megabyte, and it also runs on mobile. Custom
+  post-processing shaders and procedural audio with convolution reverb shape the
+  look and sound.
+
+
+  The creator says they built it entirely with Claude Code to show one AI tool
+  could produce a polished arcade game from scratch. It contains more than 22
+  game systems, and the skyboxes for the five biomes were AI-generated. The
+  creator cites Ikaruga and Super Hexagon as inspirations for its
+  risk-and-reward design. It placed 472nd of 945 entries in Vibe Jam 2026.
+play:
+  url: https://tommyato.com/games/shatter-drift
+  embeddable: true
+  platforms:
+    - browser
+    - mobile
+  controls:
+    - Hold to shatter
+    - Release to recombine
+creator:
+  name: tommyatoai
+  handle: tommyatoai
+  x: tommyatoai
+made:
+  models: []
+  providers:
+    - anthropic
+  tools:
+    - claude-code
+  aiShare: all
+  source: Vibe Jam 2026 submission form
+  evidence: creator
+tech:
+  engine: threejs
+  multiplayer: single
+genres:
+  - arcade
+  - action
+jam:
+  event: vibe-jam-2026
+  rank: 472
+  entries: 945
+media:
+  cover: games/shatter-drift/cover
+  screenshots:
+    - games/shatter-drift/shot-1
+    - games/shatter-drift/shot-2
+dates:
+  added: 2026-09-29
+  updated: 2026-09-29
+status: live
+provenance:
+  foundVia: scout:vibejam-2026
+  scannedAt: 2026-09-29T18:39:18.386Z

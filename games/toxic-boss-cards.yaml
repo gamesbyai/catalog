@@ -1,0 +1,61 @@
+slug: toxic-boss-cards
+title: Toxic Boss Cards
+tagline: Beat 50 terrible bosses in card battles, alone or with a friend.
+description: >-
+  Toxic Boss Cards is a card battler where the opponents are 50 of the worst
+  bosses imaginable. Each fight is a card duel: you play cards from your hand
+  against a nightmare manager and try to wear them down before they do the same
+  to you. You can work through the campaign solo or bring a friend along for the
+  fight.
+
+
+  The premise comes from the creator's own background as a developer who went
+  back to working in a corporate job, and the bosses lean into that workplace
+  frustration. The two-player option turns the office grind into a shared fight
+  instead of a lonely one. It runs in the browser and is set up to work on
+  mobile as well as desktop.
+
+
+  The game was entered in Vibe Jam 2026, where it placed 453rd out of 945
+  entries. According to the creator, it was built with Replit and drawn on a
+  canvas, so it is a lightweight browser project you can open and start playing
+  quickly.
+play:
+  url: https://toxicbosscards.com
+  embeddable: true
+  platforms:
+    - browser
+    - mobile
+creator:
+  name: IRZ_23
+  handle: irz-23
+  x: IRZ_23
+made:
+  models: []
+  tools:
+    - replit
+  aiShare: most
+  source: Vibe Jam 2026 submission form
+  evidence: creator
+tech:
+  engine: canvas
+  multiplayer: online
+genres:
+  - strategy
+  - card
+jam:
+  event: vibe-jam-2026
+  rank: 453
+  entries: 945
+media:
+  cover: games/toxic-boss-cards/cover
+  screenshots:
+    - games/toxic-boss-cards/shot-1
+    - games/toxic-boss-cards/shot-2
+dates:
+  added: 2026-09-29
+  updated: 2026-09-29
+status: live
+provenance:
+  foundVia: scout:vibejam-2026
+  scannedAt: 2026-09-29T18:39:18.373Z

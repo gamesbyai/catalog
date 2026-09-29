@@ -1,0 +1,59 @@
+slug: portal-runner
+title: Portal-Runner
+tagline: Run through five parallel worlds, dodging vanishing obstacles and
+  leaping through portals.
+description: >-
+  Portal-Runner is an endless runner in which the player sprints forward, dodges
+  obstacles, and jumps through portals. Each run moves through five parallel
+  worlds at high speed. A golden exit marked JAM EXIT waits at the end and pulls
+  the runner into a wider multiverse.
+
+
+  The main twist is that some obstacles disappear as you approach, so you can't
+  fully trust what is on screen. That keeps runs unpredictable even after you
+  learn the patterns. Portals do more than swap the backdrop: each one sends you
+  to a different dimension with its own colors, rules, and feel.
+
+
+  The creator cites Subway Surfers and Temple Run as the inspiration for the
+  runner core, and built the game with Kiro. It runs on Three.js, has mobile
+  support, and was a Vibe Jam 2026 entry.
+play:
+  url: https://portal-runner.vercel.app
+  embeddable: true
+  platforms:
+    - browser
+    - mobile
+creator:
+  name: tempest_4754
+  handle: tempest-4754
+  x: tempest_4754
+made:
+  models: []
+  tools:
+    - kiro
+  aiShare: most
+  source: Vibe Jam 2026 submission form
+  evidence: creator
+tech:
+  engine: threejs
+  multiplayer: single
+genres:
+  - action
+  - arcade
+jam:
+  event: vibe-jam-2026
+  rank: 461
+  entries: 945
+media:
+  cover: games/portal-runner/cover
+  screenshots:
+    - games/portal-runner/shot-1
+    - games/portal-runner/shot-2
+dates:
+  added: 2026-09-29
+  updated: 2026-09-29
+status: live
+provenance:
+  foundVia: scout:vibejam-2026
+  scannedAt: 2026-09-29T18:39:18.378Z
