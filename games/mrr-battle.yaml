@@ -1,0 +1,59 @@
+slug: mrr-battle
+title: MRR Battle
+tagline: Play cards as an indie hacker, fending off DDoS attacks and Hacker News roasts.
+description: >-
+  MRR Battle is a card battler about running an indie software business. You
+  build a hand of cards, play Paid Ads to grow your revenue, and survive hazards
+  like DDoS Attacks and Hacker News Roasts. It is a strategy game where each
+  turn is a choice between growth and defense.
+
+
+  The game is a lighthearted take on the startup grind, drawn from the creator's
+  nearly ten years as an indie hacker. The idea is to let friends and family
+  feel that experience without the thousands of hours and money it usually
+  costs. Multiplayer support and a mobile-friendly layout make it easy to share
+  with them.
+
+
+  It runs on Three.js and was entered in Vibe Jam 2026, where it placed 101st
+  out of 945 entries. The creator has not said which AI tools were involved.
+play:
+  url: https://mrrbattle.com
+  embeddable: true
+  platforms:
+    - browser
+    - mobile
+creator:
+  name: MRRBattle
+  handle: mrrbattle
+  x: MRRBattle
+made:
+  models: []
+  tools: []
+  aiShare: most
+  source: Vibe Jam 2026 submission form
+  evidence: inferred
+tech:
+  engine: threejs
+  multiplayer: online
+genres:
+  - strategy
+  - card
+jam:
+  event: vibe-jam-2026
+  rank: 101
+  entries: 945
+media:
+  cover: games/mrr-battle/cover
+  screenshots:
+    - games/mrr-battle/shot-1
+    - games/mrr-battle/shot-2
+dates:
+  added: 2026-09-29
+  updated: 2026-09-29
+status: live
+provenance:
+  foundVia: scout:vibejam-2026
+  scannedAt: 2026-09-29T16:15:02.121Z
+  flags:
+    - unclear-ai

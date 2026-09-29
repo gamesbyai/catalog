@@ -1,0 +1,59 @@
+slug: cityride
+title: CityRide
+tagline: Pedal a bike around a chibi anime city, taking missions and buying new rides.
+description: >-
+  CityRide is a cozy open-world bike adventure set in a chibi anime city. You
+  pedal through the streets, pick up missions, and earn enough to buy new bikes.
+  Errands and racing-style riding give each session a loose goal, while the city
+  is free to explore at your own pace.
+
+
+  The tone is relaxed and cute rather than competitive. One of the listed
+  errands is grabbing food in Bangkok, which hints at a real-world flavor mixed
+  into the anime look. Buying different bikes gives you something to work toward
+  between missions. It also runs on mobile, so you can ride from a phone.
+
+
+  It was entered in Vibe Jam 2026, where it placed 79th out of 945 entries. The
+  creator built it with Claude Code, and it is rendered in Three.js.
+play:
+  url: https://cityride.pai77.workers.dev
+  embeddable: true
+  platforms:
+    - browser
+    - mobile
+creator:
+  name: paijinfeng
+  handle: paijinfeng
+  x: paijinfeng
+made:
+  models: []
+  providers:
+    - anthropic
+  tools:
+    - claude-code
+  aiShare: most
+  source: Vibe Jam 2026 submission form
+  evidence: creator
+tech:
+  engine: threejs
+  multiplayer: single
+genres:
+  - adventure
+  - racing
+jam:
+  event: vibe-jam-2026
+  rank: 79
+  entries: 945
+media:
+  cover: games/cityride/cover
+  screenshots:
+    - games/cityride/shot-1
+    - games/cityride/shot-2
+dates:
+  added: 2026-09-29
+  updated: 2026-09-29
+status: live
+provenance:
+  foundVia: scout:vibejam-2026
+  scannedAt: 2026-09-29T16:15:02.107Z

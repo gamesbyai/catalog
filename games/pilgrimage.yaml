@@ -1,0 +1,58 @@
+slug: pilgrimage
+title: Pilgrimage
+tagline: Trek across a lonely digital wilderness and find companions along the way.
+description: >-
+  Pilgrimage is a 3D adventure set in a digital void, framed as a Cyber-Odyssey.
+  The player sets out on a long trek through an unknown landscape, moving from
+  place to place and looking for companionship along the way. It mixes action,
+  adventure, and simulation elements.
+
+
+  The mood is the main draw. The game draws on the classic Chinese tale Journey
+  to the West and on Death Stranding, aiming to capture the deep solitude of a
+  long journey into the unknown. Multiplayer support means the companionship it
+  talks about can involve other real players sharing the same space.
+
+
+  The creator built it with Claude Code on top of Three.js. It placed 62nd out
+  of 945 entries in Vibe Jam 2026, a game jam focused on projects made with AI.
+play:
+  url: https://pilgrimage.alsomindtech.com
+  embeddable: true
+  platforms:
+    - browser
+creator:
+  name: Ariescar
+  handle: ariescar
+  x: Ariescar
+made:
+  models: []
+  providers:
+    - anthropic
+  tools:
+    - claude-code
+  aiShare: most
+  source: Vibe Jam 2026 submission form
+  evidence: creator
+tech:
+  engine: threejs
+  multiplayer: online
+genres:
+  - adventure
+  - simulation
+jam:
+  event: vibe-jam-2026
+  rank: 62
+  entries: 945
+media:
+  cover: games/pilgrimage/cover
+  screenshots:
+    - games/pilgrimage/shot-1
+    - games/pilgrimage/shot-2
+dates:
+  added: 2026-09-29
+  updated: 2026-09-29
+status: live
+provenance:
+  foundVia: scout:vibejam-2026
+  scannedAt: 2026-09-29T16:15:02.092Z

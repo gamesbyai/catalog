@@ -1,0 +1,63 @@
+slug: beat-world-2-0
+title: Beat World 2.0
+tagline: Make beats in pixel-art cities, win critic reviews, and collect each
+  city's soundsystem.
+description: >-
+  Beat World 2.0 is a pixel-art beatmaking RPG in which the player travels
+  between cities and produces beats. Each city has hometown critics who review
+  the result, and a good review earns the local iconic soundsystem rig, which
+  the player adds to a growing collection.
+
+
+  The game is built around cultural stops such as the boombox in the Bronx, the
+  picó in Puerto Rico and the sonidero in Mexico City. Its design leans toward
+  arcade play rather than a full production suite, so beginners and kids can
+  make real beats without much friction while learning where these sounds come
+  from. The visual style nods to classic PC DOS games like Commander Keen.
+
+
+  The creator is an architect-turned-DJ from Bogotá and built the game with
+  Claude Code. It was submitted to Vibe Jam 2026 and runs in the browser on
+  Three.js, with mobile support.
+play:
+  url: https://beatworld.nicoborja.com
+  embeddable: true
+  platforms:
+    - browser
+    - mobile
+creator:
+  name: nicoborja
+  handle: nicoborja
+  x: nicoborja
+made:
+  models: []
+  providers:
+    - anthropic
+  tools:
+    - claude-code
+  aiShare: most
+  source: Vibe Jam 2026 submission form
+  evidence: creator
+tech:
+  engine: threejs
+  multiplayer: single
+genres:
+  - rpg
+  - simulation
+  - rhythm
+jam:
+  event: vibe-jam-2026
+  rank: 104
+  entries: 945
+media:
+  cover: games/beat-world-2-0/cover
+  screenshots:
+    - games/beat-world-2-0/shot-1
+    - games/beat-world-2-0/shot-2
+dates:
+  added: 2026-09-29
+  updated: 2026-09-29
+status: live
+provenance:
+  foundVia: scout:vibejam-2026
+  scannedAt: 2026-09-29T16:15:02.122Z

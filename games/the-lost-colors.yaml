@@ -1,0 +1,58 @@
+slug: the-lost-colors
+title: The Lost Colors
+tagline: Guide a young painter through a colorless kingdom, fighting creatures
+  and restoring color.
+description: >-
+  The Lost Colors casts you as Hue, a young painter traveling through Canvaria,
+  a ruined kingdom drained of all color. You move through the world, fight the
+  color-hungry creatures that stole its hues, and bring the land back to life
+  before Hue fades away and the kingdom's last spark goes out.
+
+
+  The game mixes action, adventure, and platforming in a 3D setting. Its central
+  idea is restoration: color is both the goal and the stake, so progress is
+  meant to be visible as the gray landscape fills back in. The creator points to
+  Stardew Valley and Graveyard Keeper as influences on its tone.
+
+
+  The creator built it with Cursor for the Vibe Jam 2026 and describes the
+  graphics as AI-generated. It runs in the browser on Three.js.
+play:
+  url: https://thelostcolors.com
+  embeddable: true
+  platforms:
+    - browser
+creator:
+  name: PatrykKarw6413
+  handle: patrykkarw6413
+  x: PatrykKarw6413
+made:
+  models: []
+  tools:
+    - cursor
+  aiShare: most
+  source: Vibe Jam 2026 submission form
+  evidence: creator
+tech:
+  engine: threejs
+  multiplayer: single
+genres:
+  - action
+  - adventure
+  - platformer
+jam:
+  event: vibe-jam-2026
+  rank: 99
+  entries: 945
+media:
+  cover: games/the-lost-colors/cover
+  screenshots:
+    - games/the-lost-colors/shot-1
+    - games/the-lost-colors/shot-2
+dates:
+  added: 2026-09-29
+  updated: 2026-09-29
+status: live
+provenance:
+  foundVia: scout:vibejam-2026
+  scannedAt: 2026-09-29T16:15:02.119Z

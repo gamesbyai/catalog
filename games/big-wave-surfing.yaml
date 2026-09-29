@@ -1,0 +1,59 @@
+slug: big-wave-surfing
+title: Big Wave Surfing
+tagline: Paddle into big waves, carve the face, and grab stars before the foam hits.
+description: >-
+  Big Wave Surfing is a 3D surfing simulation played in the browser. You paddle
+  out, catch a large swell, and steer across the breaking face of the wave.
+  Stars are scattered along the ride, and the goal is to collect them while
+  staying ahead of the foam that chases you and ends the run if it catches up.
+
+
+  The focus is on the feel of riding rather than on tricks. The creator wanted
+  people who have never surfed, such as coworkers, to get a small taste of the
+  joy of catching a wave, so the game leans on simple wave physics and smooth
+  carving instead of complicated scoring or maneuvers.
+
+
+  It runs on Three.js and works on mobile as well as desktop. The creator built
+  it with Claude Code for Vibe Jam 2026, where it placed 80th among 945 entries.
+play:
+  url: https://bigwavesurfing.fun
+  embeddable: true
+  platforms:
+    - browser
+    - mobile
+creator:
+  name: rolznz
+  handle: rolznz
+  x: rolznz
+made:
+  models: []
+  providers:
+    - anthropic
+  tools:
+    - claude-code
+  aiShare: most
+  source: Vibe Jam 2026 submission form
+  evidence: creator
+tech:
+  engine: threejs
+  multiplayer: single
+genres:
+  - simulation
+  - sports
+jam:
+  event: vibe-jam-2026
+  rank: 80
+  entries: 945
+media:
+  cover: games/big-wave-surfing/cover
+  screenshots:
+    - games/big-wave-surfing/shot-1
+    - games/big-wave-surfing/shot-2
+dates:
+  added: 2026-09-29
+  updated: 2026-09-29
+status: live
+provenance:
+  foundVia: scout:vibejam-2026
+  scannedAt: 2026-09-29T16:15:02.107Z

@@ -1,0 +1,63 @@
+slug: tech-bros-save-the-world
+title: "Tech Bros: Save the World"
+tagline: Fight off waves as a satirical tech mogul and take down rival
+  billionaire bosses.
+description: >-
+  Tech Bros: Save the World is a survivor's-like in the vein of Vampire
+  Survivors and Megabonk. You play as a caricature of a famous technocrat,
+  fending off swarms of enemies while building up your character with upgrades
+  over the course of a run.
+
+
+  The satire is the main hook. Well-known tech figures show up both as playable
+  characters and as bosses, and a story runs through the action instead of
+  leaving it as pure arena survival. The RPG elements sit alongside the fast
+  survivor-style combat.
+
+
+  It was made for Vibe Jam 2026, where it placed 63rd out of 945 entries. The
+  creator built it with Claude Code and Codex, using the PixiJS engine, and says
+  a post from levelsio about the jam prompted them to join.
+play:
+  url: https://techbrosgame.app
+  embeddable: true
+  platforms:
+    - browser
+creator:
+  name: TheJohnnyStaley
+  handle: thejohnnystaley
+  x: TheJohnnyStaley
+made:
+  models: []
+  providers:
+    - anthropic
+    - openai
+  tools:
+    - claude-code
+    - codex
+  aiShare: most
+  source: Vibe Jam 2026 submission form
+  evidence: creator
+tech:
+  engine: pixijs
+  multiplayer: single
+genres:
+  - action
+  - roguelike
+  - rpg
+jam:
+  event: vibe-jam-2026
+  rank: 63
+  entries: 945
+media:
+  cover: games/tech-bros-save-the-world/cover
+  screenshots:
+    - games/tech-bros-save-the-world/shot-1
+    - games/tech-bros-save-the-world/shot-2
+dates:
+  added: 2026-09-29
+  updated: 2026-09-29
+status: live
+provenance:
+  foundVia: scout:vibejam-2026
+  scannedAt: 2026-09-29T16:15:02.093Z

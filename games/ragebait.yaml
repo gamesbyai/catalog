@@ -1,0 +1,58 @@
+slug: ragebait
+title: Ragebait
+tagline: Face one opponent in a voice-driven first-person shooter with
+  platform-fighter energy.
+description: >-
+  Ragebait is a browser-based, one-on-one first-person shooter with a
+  voice-driven twist. Two players face off in real-time multiplayer, and the
+  match draws on the feel of a platform fighter like Smash Bros. as much as on
+  standard shooter conventions.
+
+
+  The voice-based angle is the main hook: what you say plays a part in the duel,
+  which fits the name and the trash-talking mood. The scope is small and focused
+  on a single matchup format, which keeps each round quick to start and easy to
+  understand.
+
+
+  It was built for Vibe Jam 2026 with Three.js, and the creator used Cursor. The
+  creator works in AAA development and made it as a personal experiment, using
+  the jam as a reason to try something playful on the web.
+play:
+  url: https://ragebait-project.vercel.app
+  embeddable: true
+  platforms:
+    - browser
+creator:
+  name: SoyBoyRoyy
+  handle: soyboyroyy
+  x: SoyBoyRoyy
+made:
+  models: []
+  tools:
+    - cursor
+  aiShare: most
+  source: Vibe Jam 2026 submission form
+  evidence: creator
+tech:
+  engine: threejs
+  multiplayer: online
+genres:
+  - shooter
+  - action
+jam:
+  event: vibe-jam-2026
+  rank: 66
+  entries: 945
+media:
+  cover: games/ragebait/cover
+  screenshots:
+    - games/ragebait/shot-1
+    - games/ragebait/shot-2
+dates:
+  added: 2026-09-29
+  updated: 2026-09-29
+status: live
+provenance:
+  foundVia: scout:vibejam-2026
+  scannedAt: 2026-09-29T16:15:02.096Z

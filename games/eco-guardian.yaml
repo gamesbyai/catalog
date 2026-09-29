@@ -1,0 +1,60 @@
+slug: eco-guardian
+title: ECO Guardian
+tagline: Fight garbage monsters and answer sustainability quizzes to earn power-ups.
+description: >-
+  ECO Guardian is a 2.5D survivor game in which the player fights off waves of
+  garbage monsters. Combat is action-focused, and sustainability quiz questions
+  appear during play. Answering them turns knowledge into power-ups that help
+  the player hold out against the growing horde.
+
+
+  The game ties learning directly to progression: the quizzes are part of how a
+  character gets stronger rather than a separate mode. Its environmental theme
+  is central, with trash as the enemy and sustainability as the way to fight
+  back. It lists multiplayer support and works on mobile.
+
+
+  The creator, a father of four daughters, wanted to make something that is fun
+  and also has a positive influence on children. The game was built with Codex
+  and Three.js, and it placed 121st of 945 entries in Vibe Jam 2026.
+play:
+  url: https://eco-guardian-delta.vercel.app
+  embeddable: true
+  platforms:
+    - browser
+    - mobile
+creator:
+  name: VibeCreAI
+  handle: vibecreai
+  x: VibeCreAI
+made:
+  models: []
+  providers:
+    - openai
+  tools:
+    - codex
+  aiShare: most
+  source: Vibe Jam 2026 submission form
+  evidence: creator
+tech:
+  engine: threejs
+  multiplayer: online
+genres:
+  - action
+  - educational
+jam:
+  event: vibe-jam-2026
+  rank: 121
+  entries: 945
+media:
+  cover: games/eco-guardian/cover
+  screenshots:
+    - games/eco-guardian/shot-1
+    - games/eco-guardian/shot-2
+dates:
+  added: 2026-09-29
+  updated: 2026-09-29
+status: live
+provenance:
+  foundVia: scout:vibejam-2026
+  scannedAt: 2026-09-29T16:15:02.135Z
