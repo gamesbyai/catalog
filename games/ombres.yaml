@@ -1,0 +1,68 @@
+slug: ombres
+title: Ombres
+tagline: Steer a giant bird whose shadow paints the desert; biggest territory at
+  nightfall wins.
+description: >-
+  Ombres is a local party game for 1 to 12 players. The game runs in a browser
+  on a computer connected to a screen, and each player scans a QR code to steer
+  a giant bird from their phone. Your bird's shadow paints the sand in your
+  color. A match is three rounds of about two minutes, with the last round
+  counting double.
+
+
+  Diving low gives a small, strong shadow, while climbing gives a wide, pale one
+  that cannot repaint strong sand. You can strike a lower bird by diving onto
+  it, and the target can dodge with a wingbeat. Tower shadows freeze the sand.
+  As the sun sets, shadows stretch, and in the final seconds night sweeps across
+  the map and locks everything in place. Bots fill empty seats, so one phone is
+  enough.
+
+
+  The look follows the ink outlines and flat colors of Moebius, with a pastel
+  desert. The repository states it was designed and built by Claude Opus 5.5
+  from a single brief, with Brieuc Crosson supervising and no human-written
+  code. The work ran as multi-agent workflows in Claude Code.
+play:
+  url: https://ombres.deploy.breizhware.com
+  embeddable: true
+  platforms:
+    - browser
+  controls:
+    - "Phone: joystick, tilt, or relative steering"
+    - "Phone: big DIVE button, small WINGBEAT button"
+    - "Keyboard P1: WASD/arrows, Space to dive, Left Shift wingbeat"
+    - "Keyboard P2: IJKL, AltGr dive, ; wingbeat"
+    - "Gamepad: left stick, A/right trigger dive, B/RB wingbeat"
+    - "F: fullscreen; Esc: pause"
+repo: https://github.com/briossant/ombres
+creator:
+  name: briossant
+  handle: briossant
+made:
+  models:
+    - claude-opus-5-5
+  providers:
+    - anthropic
+  tools: []
+  aiShare: all
+  source: Repository README
+  evidence: repo
+  evidenceUrl: https://github.com/briossant/ombres
+tech:
+  engine: react-three-fiber
+  multiplayer: single
+genres:
+  - party
+  - action
+media:
+  cover: games/ombres/cover
+  screenshots:
+    - games/ombres/shot-1
+    - games/ombres/shot-2
+dates:
+  added: 2026-09-29
+  updated: 2026-09-29
+status: live
+provenance:
+  foundVia: scout:awesome-opus
+  scannedAt: 2026-09-29T18:38:41.031Z

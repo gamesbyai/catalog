@@ -1,0 +1,70 @@
+slug: call-of-naija
+title: Call of Naija
+tagline: Fight through Lagos in a browser FPS with a campaign, co-op modes and
+  multiplayer.
+description: >-
+  Call of Naija is a first-person shooter set in Lagos that runs in the browser.
+  The campaign, Operation Eko Liberation, has five scripted missions with
+  cutscenes, dialogue, allies and checkpoints. Objectives include freeing
+  hostages at Balogun Market, destroying jammer convoys, restarting generators
+  and holding a bridge against an armored push. Boss fights close out the later
+  missions.
+
+
+  Beyond the campaign, the game offers Free-for-All, Team Deathmatch and
+  Domination against bots or online players. Lagos Siege is a co-op survival
+  mode for one to four players, with ten waves, shops, upgrades, revives and a
+  final boss. Extraction is a co-op raid where a squad finds valuables, uploads
+  a hack under fire and escapes. Five maps cover the settings.
+
+
+  The simulation is written in TypeScript and shared between the offline client
+  and an authoritative Node multiplayer server. Rendering uses Three.js, physics
+  uses Rapier, and enemy AI navigates with a Recast navmesh. Models come from
+  Blender scripts, and textures are generated procedurally at runtime.
+  Progression includes XP, weapon unlocks, loadouts, rebindable controls and
+  gamepad support.
+play:
+  url: https://callofnaija.vercel.app
+  embeddable: true
+  platforms:
+    - browser
+  controls:
+    - WASD move
+    - Mouse aim
+    - Shift sprint
+    - Space jump
+    - R reload
+    - E interact/revive
+repo: https://github.com/bigbadbillion/game
+creator:
+  name: bigbadbillion
+  handle: bigbadbillion
+made:
+  models:
+    - claude-opus-5-5
+  providers:
+    - anthropic
+  tools: []
+  aiShare: unknown
+  source: Repository README
+  evidence: repo
+  evidenceUrl: https://github.com/bigbadbillion/game
+tech:
+  engine: threejs
+  multiplayer: single
+genres:
+  - shooter
+  - action
+media:
+  cover: games/call-of-naija/cover
+  screenshots:
+    - games/call-of-naija/shot-1
+    - games/call-of-naija/shot-2
+dates:
+  added: 2026-09-29
+  updated: 2026-09-29
+status: live
+provenance:
+  foundVia: scout:awesome-opus
+  scannedAt: 2026-09-29T18:38:41.039Z

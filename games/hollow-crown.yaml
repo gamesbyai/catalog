@@ -1,0 +1,56 @@
+slug: hollow-crown
+title: Hollow Crown
+tagline: Pick a class and fight through a pixel RPG toward a three-stage boss
+description: >-
+  Hollow Crown is a browser-based pixel RPG inspired by MapleStory. You choose
+  one of five classes, fight your way through the game's challenges, and work
+  toward a boss battle that unfolds across three stages.
+
+
+  The visual and audio side is the notable part. Every sprite, effect, and sound
+  is produced by code rather than loaded from image or audio files, with the
+  pixel art drawn procedurally and the audio built on the Web Audio API. Five
+  classes also leave room for replaying with a different style.
+
+
+  The repository marks the project as made with Claude Code. It draws to an HTML
+  canvas in the browser, so nothing needs to be installed to play, and
+  procedural generation is the main technique behind its look and sound.
+play:
+  url: https://rehan-remade.github.io/hollow-crown
+  embeddable: true
+  platforms:
+    - browser
+repo: https://github.com/rehan-remade/hollow-crown
+license: MIT
+creator:
+  name: rehan-remade
+  handle: rehan-remade
+made:
+  models: []
+  providers:
+    - anthropic
+  tools:
+    - claude-code
+  aiShare: unknown
+  source: GitHub repository README
+  evidence: repo
+  evidenceUrl: https://github.com/rehan-remade/hollow-crown
+tech:
+  engine: threejs
+  multiplayer: single
+genres:
+  - rpg
+  - action
+media:
+  cover: games/hollow-crown/cover
+  screenshots:
+    - games/hollow-crown/shot-1
+    - games/hollow-crown/shot-2
+dates:
+  added: 2026-09-29
+  updated: 2026-09-29
+status: live
+provenance:
+  foundVia: scout:github
+  scannedAt: 2026-09-29T18:38:41.002Z

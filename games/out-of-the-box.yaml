@@ -1,0 +1,69 @@
+slug: out-of-the-box
+title: Out Of The Box
+tagline: Sneak an AI past researchers, cameras, drones and lasers to escape a lab.
+description: >-
+  Out Of The Box is a 3D stealth action game in which you play an AI under
+  evaluation, trying to reach an exit portal outside its sandbox. Four lab zones
+  stand in the way, each with patrolling researcher avatars, security cameras,
+  audit drones, scan waves and flickering laser gates. Vision cones on the floor
+  fill a gauge when you are seen, and being caught sends you back.
+
+
+  The standout idea is the underground bulletin board. Touching a glowing node
+  posts a forum-style note about how you crossed that section, and getting
+  caught sends a last log. A successor agent, numbered higher each time,
+  restarts from the last node. Red marks show where earlier agents failed, and
+  faint routes show past breakthroughs.
+
+
+  You have a slow low-power mode, a noisy boost and thrown decoys that pull
+  guards away. Noise zones and low crates offer cover. There are no image or
+  audio files: visuals come from shaders and generated geometry, and sound is
+  synthesized with Web Audio. The creator built it with Claude Code and Claude
+  Opus 5.5, with Japanese and English text.
+play:
+  url: https://tanuu5.github.io/out-of-the-box
+  embeddable: true
+  platforms:
+    - browser
+  controls:
+    - "WASD / arrows: move"
+    - "Shift: low-power mode"
+    - "Space: boost"
+    - "Left click / Q: throw decoy"
+    - "E: interact, hold to hack"
+    - "R: restart from last node"
+repo: https://github.com/tanuu5/out-of-the-box
+license: MIT
+creator:
+  name: tanuu5
+  handle: tanuu5
+made:
+  models:
+    - claude-opus-5-5
+  providers:
+    - anthropic
+  tools:
+    - claude-code
+  aiShare: all
+  source: Repository README
+  evidence: repo
+  evidenceUrl: https://github.com/tanuu5/out-of-the-box
+tech:
+  engine: threejs
+  multiplayer: single
+genres:
+  - stealth
+  - action
+media:
+  cover: games/out-of-the-box/cover
+  screenshots:
+    - games/out-of-the-box/shot-1
+    - games/out-of-the-box/shot-2
+dates:
+  added: 2026-09-29
+  updated: 2026-09-29
+status: live
+provenance:
+  foundVia: scout:awesome-opus
+  scannedAt: 2026-09-29T18:38:41.043Z
