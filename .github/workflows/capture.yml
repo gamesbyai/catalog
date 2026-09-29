@@ -24,7 +24,7 @@ jobs:
     # A pull_request `branches` filter matches the base branch, so the head branch is checked here instead.
     if: github.event_name == 'workflow_dispatch' || startsWith(github.head_ref, 'seed/') || startsWith(github.head_ref, 'submission/')
     runs-on: ubuntu-24.04
-    timeout-minutes: 60
+    timeout-minutes: 120
     permissions:
       contents: read
     outputs:

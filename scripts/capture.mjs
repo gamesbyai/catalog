@@ -16,8 +16,8 @@ const ROOT = fileURLToPath(new URL('..', import.meta.url));
 export const DEFAULTS = {
   times: [3000, 8000, 14000], // ms after load; the first one is the cover
   navTimeout: 20_000,
-  deadline: 40_000, // per game, from start to files on disk
-  shotTimeout: 5000,
+  deadline: 70_000, // per game, from start to files on disk
+  shotTimeout: 15_000, // WebGL games render in software on CI runners (no GPU), so frames can be slow
   clickTimeout: 2000,
   closeTimeout: 5000,
   viewport: { width: 1280, height: 720 },
@@ -68,7 +68,8 @@ let launchedSandbox = null;
 async function getBrowser(sandbox) {
   if (browser?.isConnected() && launchedSandbox === sandbox) return browser;
   await killBrowser();
-  server = await chromium.launchServer({ headless: true, chromiumSandbox: sandbox });
+  // Runners have no GPU: let WebGL fall back to SwiftShader instead of failing, so 3D games still draw a frame.
+  server = await chromium.launchServer({ headless: true, chromiumSandbox: sandbox, args: ['--use-angle=swiftshader', '--enable-unsafe-swiftshader', '--ignore-gpu-blocklist'] });
   browser = await chromium.connect(server.wsEndpoint());
   launchedSandbox = sandbox;
   return browser;
@@ -138,6 +139,8 @@ export async function captureOne(url, outDir, opts = {}) {
       serviceWorkers: 'block',
       locale: 'en-US',
       timezoneId: 'UTC',
+      // Some game hosts refuse "HeadlessChrome"; present the same browser without that marker.
+      userAgent: `Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/${b.version().split('.')[0]}.0.0.0 Safari/537.36`,
     });
     if (state.finished) {
       closeContext(context, o.closeTimeout).catch(() => {});
@@ -169,12 +172,16 @@ export async function captureOne(url, outDir, opts = {}) {
     const shots = [];
     for (let i = 0; i < o.times.length; i++) {
       await guard(sleep(t0 + o.times[i] - Date.now(), stop.signal));
-      try {
-        shots.push(await guard(page.screenshot({ type: 'png', timeout: o.shotTimeout })));
-      } catch (e) {
-        if (e instanceof CaptureError) throw e;
-        throw new CaptureError('screenshot', firstLine(e));
+      // A busy renderer can miss one frame deadline; one retry before giving up on the game.
+      let shot;
+      for (let attempt = 0; attempt < 2 && !shot; attempt++) {
+        try {
+          shot = await guard(page.screenshot({ type: 'png', timeout: o.shotTimeout }));
+        } catch (e) {
+          if (e instanceof CaptureError || attempt === 1) throw e instanceof CaptureError ? e : new CaptureError('screenshot', firstLine(e));
+        }
       }
+      shots.push(shot);
       if (i === 0) {
         // One click in the centre starts games that wait for input.
         await guard(within(page.mouse.click(o.viewport.width / 2, o.viewport.height / 2), o.clickTimeout));
