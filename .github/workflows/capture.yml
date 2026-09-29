@@ -1,0 +1,113 @@
+name: capture
+# Screenshots for entries added or changed on seed/* and submission/* branches.
+#
+# Game pages are untrusted code. They only ever run in the `capture` job, which has no secrets and a read-only token.
+# The `upload` job holds the R2 token and must NEVER execute files from the `shots` artifact (or anything else from
+# the PR): it checks out the base commit, installs dependencies without install scripts, reads the PNGs as bytes and
+# re-encodes them with sharp, and reads the PR's entries with `git show` as data. The PR comment is our own
+# contact sheet, with every entry string escaped.
+on:
+  workflow_dispatch:
+    inputs:
+      branch:
+        description: Branch whose added or changed entries to capture (compared with main)
+        required: true
+        type: string
+  pull_request:
+permissions:
+  contents: read
+concurrency:
+  group: capture-${{ github.event.pull_request.number || inputs.branch }}
+  cancel-in-progress: true
+jobs:
+  capture:
+    # A pull_request `branches` filter matches the base branch, so the head branch is checked here instead.
+    if: github.event_name == 'workflow_dispatch' || startsWith(github.head_ref, 'seed/') || startsWith(github.head_ref, 'submission/')
+    runs-on: ubuntu-24.04
+    timeout-minutes: 60
+    permissions:
+      contents: read
+    outputs:
+      count: ${{ steps.list.outputs.count }}
+      sha: ${{ steps.list.outputs.sha }}
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          ref: ${{ github.event.pull_request.head.sha || inputs.branch }}
+          fetch-depth: 0
+          persist-credentials: false
+      - name: List added or changed entries
+        id: list
+        env:
+          BASE_SHA: ${{ github.event.pull_request.base.sha }}
+        run: |
+          base="${BASE_SHA:-origin/main}"
+          git diff --name-only --diff-filter=AM "$base...HEAD" -- 'games/*.yaml' \
+            | sed -nE 's#^games/([a-z0-9]+(-[a-z0-9]+)*)\.yaml$#\1#p' > "$RUNNER_TEMP/slugs.txt"
+          echo "count=$(wc -l < "$RUNNER_TEMP/slugs.txt" | tr -d ' ')" >> "$GITHUB_OUTPUT"
+          echo "sha=$(git rev-parse HEAD)" >> "$GITHUB_OUTPUT"
+          cat "$RUNNER_TEMP/slugs.txt"
+      - uses: actions/setup-node@v5
+        if: steps.list.outputs.count != '0'
+        with: { node-version: 22 }
+      - if: steps.list.outputs.count != '0'
+        run: npm ci --no-audit --no-fund
+      - if: steps.list.outputs.count != '0'
+        run: npx playwright install --with-deps chromium
+      - name: Let Chromium use its sandbox (Ubuntu 24.04 restricts unprivileged user namespaces)
+        if: steps.list.outputs.count != '0'
+        run: sudo sysctl -w kernel.apparmor_restrict_unprivileged_userns=0
+      - name: Capture
+        if: steps.list.outputs.count != '0'
+        run: xargs -a "$RUNNER_TEMP/slugs.txt" node scripts/capture.mjs
+      - uses: actions/upload-artifact@v5
+        if: steps.list.outputs.count != '0'
+        with:
+          name: shots
+          path: out/
+          retention-days: 7
+          if-no-files-found: error
+
+  upload:
+    needs: capture
+    # Same-repo branches only: fork PRs never reach the R2 token.
+    if: needs.capture.outputs.count != '0' && (github.event_name == 'workflow_dispatch' || github.event.pull_request.head.repo.full_name == github.repository)
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    permissions:
+      contents: read
+      pull-requests: write
+    steps:
+      # The BASE commit, not the PR head: every script in this job comes from main.
+      - uses: actions/checkout@v5
+        with:
+          ref: ${{ github.event.pull_request.base.sha || 'main' }}
+          persist-credentials: false
+      - uses: actions/setup-node@v5
+        with: { node-version: 22 }
+      - run: npm ci --ignore-scripts --no-audit --no-fund
+      - uses: actions/download-artifact@v6
+        with: { name: shots, path: out }
+      - name: Fetch the PR's entries as data
+        env:
+          HEAD_SHA: ${{ github.event.pull_request.head.sha || needs.capture.outputs.sha }}
+        run: |
+          rm -f out/contact-sheet.md
+          [[ "$HEAD_SHA" =~ ^[0-9a-f]{40}$ ]] || { echo "unexpected head sha"; exit 1; }
+          git fetch --no-tags --depth=1 origin "$HEAD_SHA"
+      - name: Re-encode and upload to R2
+        id: upload
+        env:
+          R2_UPLOAD_TOKEN: ${{ secrets.R2_UPLOAD_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          HEAD_SHA: ${{ github.event.pull_request.head.sha || needs.capture.outputs.sha }}
+        run: node scripts/upload.mjs out/ --entries-ref "$HEAD_SHA"
+      - name: Post the contact sheet
+        if: always() && steps.upload.outcome != 'skipped' && github.event_name == 'pull_request' && hashFiles('out/contact-sheet.md') != ''
+        env:
+          GH_TOKEN: ${{ github.token }}
+          PR: ${{ github.event.pull_request.number }}
+        run: gh pr comment "$PR" --repo "$GITHUB_REPOSITORY" --body-file out/contact-sheet.md
+      - name: Contact sheet in the run summary
+        if: always() && steps.upload.outcome != 'skipped' && hashFiles('out/contact-sheet.md') != ''
+        run: cat out/contact-sheet.md >> "$GITHUB_STEP_SUMMARY"

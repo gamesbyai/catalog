@@ -13,5 +13,6 @@ jobs:
       - uses: actions/setup-node@v5
         with: { node-version: 22 }
       - run: npm install --no-audit --no-fund
+      - run: npx playwright install --with-deps --only-shell chromium # capture tests use local fixture pages only
       - run: npm test
       - run: npm run validate

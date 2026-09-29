@@ -30,6 +30,23 @@ Every entry is reviewed by a human before it goes live.
 | `taxonomies/genres.yaml` | Genres |
 | `taxonomies/jams.yaml` | Game jams |
 
+## Screenshots
+
+We take every screenshot from the live game, so don't add images to your pull request.
+
+- **Capture:** on `seed/*` and `submission/*` pull requests, `.github/workflows/capture.yml` opens each added or changed game in headless Chromium. Each game gets a fresh browser context with no downloads, no permissions and dialogs dismissed. It saves a cover and two screenshots at 3, 8 and 14 seconds after load.
+- **Failures:** a game that hangs, starts a download or crashes stops after 40 seconds, is listed in `out/failed.json`, and the run moves on.
+- **No secrets during capture:** game pages are untrusted code, so the capture job gets a read-only token and no secrets.
+- **Upload:** a second job, for branches in this repo only, runs the scripts from `main`. It re-encodes each PNG with sharp into AVIF and WebP at 320, 640 and 1280 px, plus a 1200×630 social image for the cover. It uploads them to R2 (`media.gamesbyai.win/games/<slug>/…`) and posts a contact sheet on the pull request.
+
+To try it locally: `node scripts/capture.mjs <slug…>`, then `node scripts/upload.mjs out/ --dry-run`.
+
+### Maintainer setup (once)
+
+1. Cloudflare → R2 → Manage API tokens: create a token with **Object Read & Write**, limited to the bucket `gamesbyai-media`.
+2. `gh secret set R2_UPLOAD_TOKEN --repo gamesbyai/catalog` and paste the token when asked.
+3. `gh secret set CLOUDFLARE_ACCOUNT_ID --repo gamesbyai/catalog` with the Cloudflare account ID.
+
 ## License
 
 The data is licensed under [CC BY 4.0](LICENSE). If you reuse it, credit "GamesByAI (gamesbyai.win)" with a link.
