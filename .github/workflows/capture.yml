@@ -13,6 +13,10 @@ on:
         description: Branch whose added or changed entries to capture (compared with main)
         required: true
         type: string
+      slugs:
+        description: Optional. Re-capture these listed games instead (space-separated slugs, for broken covers)
+        required: false
+        type: string
   pull_request:
 permissions:
   contents: read
@@ -40,10 +44,18 @@ jobs:
         id: list
         env:
           BASE_SHA: ${{ github.event.pull_request.base.sha }}
+          ONLY: ${{ inputs.slugs }}
         run: |
-          base="${BASE_SHA:-origin/main}"
-          git diff --name-only --diff-filter=AM "$base...HEAD" -- 'games/*.yaml' \
-            | sed -nE 's#^games/([a-z0-9]+(-[a-z0-9]+)*)\.yaml$#\1#p' > "$RUNNER_TEMP/slugs.txt"
+          if [ -n "$ONLY" ]; then
+            # Manual re-capture: plain slugs of entries that exist on this branch, nothing else.
+            for s in $ONLY; do
+              [[ "$s" =~ ^[a-z0-9]+(-[a-z0-9]+)*$ ]] && [ -f "games/$s.yaml" ] && echo "$s"
+            done > "$RUNNER_TEMP/slugs.txt"
+          else
+            base="${BASE_SHA:-origin/main}"
+            git diff --name-only --diff-filter=AM "$base...HEAD" -- 'games/*.yaml' \
+              | sed -nE 's#^games/([a-z0-9]+(-[a-z0-9]+)*)\.yaml$#\1#p' > "$RUNNER_TEMP/slugs.txt"
+          fi
           echo "count=$(wc -l < "$RUNNER_TEMP/slugs.txt" | tr -d ' ')" >> "$GITHUB_OUTPUT"
           echo "sha=$(git rev-parse HEAD)" >> "$GITHUB_OUTPUT"
           cat "$RUNNER_TEMP/slugs.txt"
@@ -102,9 +114,13 @@ jobs:
           R2_UPLOAD_TOKEN: ${{ secrets.R2_UPLOAD_TOKEN }}
           CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
           HEAD_SHA: ${{ github.event.pull_request.head.sha || needs.capture.outputs.sha }}
+          ONLY: ${{ inputs.slugs }}
         # --base-ref (the merge base, as in the capture job): only games this PR adds or changes are uploaded, whatever
         # the artifact holds; changes made only on main never count.
-        run: node scripts/upload.mjs out/ --entries-ref "$HEAD_SHA" --base-ref "$(git merge-base HEAD "$HEAD_SHA")"
+        # A manual re-capture uploads exactly the slugs it was given (validated by upload.mjs).
+        run: |
+          if [ -n "$ONLY" ]; then node scripts/upload.mjs out/ --entries-ref "$HEAD_SHA" --only "$ONLY"
+          else node scripts/upload.mjs out/ --entries-ref "$HEAD_SHA" --base-ref "$(git merge-base HEAD "$HEAD_SHA")"; fi
       - name: Post the contact sheet
         if: always() && steps.upload.outcome != 'skipped' && github.event_name == 'pull_request' && hashFiles('out/contact-sheet.md') != ''
         env:

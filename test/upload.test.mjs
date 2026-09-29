@@ -244,6 +244,14 @@ test('with a base ref, only games the PR adds or changes are uploaded; captures 
   assert.equal(res.problems.stray, 'not-in-pr');
 });
 
+test('a re-capture run uploads only the games it was asked for', async () => {
+  const { out, games } = await fixtureOut();
+  const res = await runUpload({ outDir: out, gamesDir: games, only: ['good'], dryRun: true, log: () => {} });
+  assert.ok(res.uploaded.includes('games/good/ready.json'));
+  assert.equal(res.problems.stray, 'not-in-pr');
+  await assert.rejects(runUpload({ outDir: out, gamesDir: games, only: ['../x'], dryRun: true, log: () => {} }), /invalid/);
+});
+
 test('R2 S3 credentials come from the R2 token: its id and the SHA-256 of its value', async () => {
   const calls = [];
   const fetchImpl = async (url) => {
