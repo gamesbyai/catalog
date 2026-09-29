@@ -239,6 +239,25 @@ test('pickFrames drops black and flat frames, puts the most detailed first and s
   assert.deepEqual(await pickFrames([black, grey]), []);
 });
 
+test('a dark title screen is kept as the only frame when nothing brighter exists; a spinner on black never is', async () => {
+  const { pickFrames } = await import('../scripts/capture.mjs');
+  const sharp = (await import('sharp')).default;
+  const px = (draw) => {
+    const buf = Buffer.alloc(320 * 180 * 3, 2);
+    for (let y = 0; y < 180; y++) for (let x = 0; x < 320; x++) { const v = draw(x, y); if (v !== undefined) buf.fill(v, (y * 320 + x) * 3, (y * 320 + x) * 3 + 3); }
+    return sharp(buf, { raw: { width: 320, height: 180, channels: 3 } }).png().toBuffer();
+  };
+  // A logo-and-menu block on black: dark overall, but clearly content.
+  const darkTitle = await px((x, y) => (x >= 80 && x < 240 && y >= 60 && y < 120 ? 20 + Math.round(((x - 80) / 159) * 100) : undefined));
+  // A small spinner on black.
+  const spinner = await px((x, y) => (x >= 155 && x < 165 && y >= 85 && y < 95 ? 255 : undefined));
+  const black = await px(() => undefined);
+  const bright = await px((x) => Math.round((x / 319) * 255));
+  assert.deepEqual(await pickFrames([black, darkTitle, black]), [darkTitle]);
+  assert.deepEqual(await pickFrames([black, spinner]), []);
+  assert.deepEqual(await pickFrames([darkTitle, bright]), [bright], 'a real frame wins; the fallback is only for dark games');
+});
+
 test('a loading screen never becomes the cover; an all-black game is not captured', async () => {
   const dir = join(tmp(), 'loading');
   const res = await captureOne(`${base}/loading-then-game`, dir, FAST);

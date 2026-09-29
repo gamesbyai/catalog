@@ -119,7 +119,10 @@ export async function pickFrames(frames, { max = 3 } = {}) {
       return { buf, mean, sd, entropy: stats.entropy, thumb };
     }),
   );
-  const usable = info.filter((f) => f.mean >= 18 && f.mean <= 245 && f.sd >= 12 && f.entropy >= 3).sort((a, b) => b.entropy - a.entropy);
+  let usable = info.filter((f) => f.mean >= 18 && f.mean <= 245 && f.sd >= 12 && f.entropy >= 3).sort((a, b) => b.entropy - a.entropy);
+  // Dark games: when no frame passes, one dark title screen with real content (a logo or a menu, not a spinner on
+  // black) still beats no cover.
+  if (!usable.length) usable = info.filter((f) => f.mean <= 250 && f.sd >= 8 && f.entropy >= 1.5).sort((a, b) => b.entropy - a.entropy).slice(0, 1);
   const kept = [];
   for (const f of usable) {
     if (kept.some((k) => thumbDiff(k.thumb, f.thumb) < 6)) continue;
