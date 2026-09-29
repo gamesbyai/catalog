@@ -130,6 +130,33 @@ export async function pickFrames(frames, { max = 3 } = {}) {
 }
 
 /**
+ * Runs in the page on the throttled pass: each animation frame waits `gap` ms first, so a game whose frames hog the
+ * main thread (heavy WebGL on software rendering) leaves idle time for the screenshot. Self-contained: it is
+ * serialized into an init script.
+ */
+export function throttleFrames(win, gap) {
+  const raf = win.requestAnimationFrame.bind(win);
+  const caf = win.cancelAnimationFrame.bind(win);
+  const pending = new Map();
+  let next = 0;
+  win.requestAnimationFrame = (cb) => {
+    const id = ++next;
+    const timer = win.setTimeout(() => {
+      pending.set(id, { frame: raf((t) => { pending.delete(id); cb(t); }) });
+    }, gap);
+    pending.set(id, { timer });
+    return id;
+  };
+  win.cancelAnimationFrame = (id) => {
+    const p = pending.get(id);
+    if (!p) return;
+    if (p.timer !== undefined) win.clearTimeout(p.timer);
+    if (p.frame !== undefined) caf(p.frame);
+    pending.delete(id);
+  };
+}
+
+/**
  * Captures cover.png, shot-1.png and shot-2.png of one game into outDir.
  * @returns {Promise<{ ok: true, files: string[] } | { ok: false, reason: string, detail?: string }>}
  */
@@ -181,6 +208,7 @@ export async function captureOne(url, outDir, opts = {}) {
       throw new CaptureError('deadline');
     }
     state.context = context;
+    if (o.throttle) await guard(context.addInitScript(`(${throttleFrames})(window, ${Number(o.throttleGap) || 250});`));
     const page = await guard(context.newPage());
     context.on('page', (p) => p !== page && p.close().catch(() => {})); // popups
     page.on('dialog', (d) => d.dismiss().catch(() => {}));
@@ -301,7 +329,16 @@ export async function captureSlugs(slugs, { root = ROOT, out = join(root, 'out')
       const url = entry?.play?.url;
       if (!entry) res = { ok: false, reason: 'no-entry' };
       else if (typeof url !== 'string') res = { ok: false, reason: 'bad-url' };
-      else res = await captureOne(url, join(out, slug), opts).catch((e) => ({ ok: false, reason: 'error', detail: firstLine(e) }));
+      else {
+        const run = (o) => captureOne(url, join(out, slug), o).catch((e) => ({ ok: false, reason: 'error', detail: firstLine(e) }));
+        res = await run(opts);
+        // Screenshots that time out usually mean frames hog the main thread; one more pass with throttled frames.
+        if (!res.ok && (res.reason === 'screenshot' || res.reason === 'deadline') && !opts.throttle) {
+          log(`     ${slug}: ${res.reason}, retry throttled`);
+          const again = await run({ ...opts, throttle: true });
+          if (again.ok) res = { ...again, throttled: true };
+        }
+      }
     }
     const name = SLUG.test(slug) ? slug : '(invalid)';
     if (!res.ok) appendFailure(out, { slug: name, reason: res.reason, ...(res.detail ? { detail: res.detail } : {}) });

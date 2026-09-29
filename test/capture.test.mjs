@@ -4,7 +4,7 @@ import { createServer } from 'node:http';
 import { mkdtempSync, mkdirSync, readdirSync, readFileSync, writeFileSync, existsSync } from 'node:fs';
 import { tmpdir } from 'node:os';
 import { join } from 'node:path';
-import { captureOne, captureSlugs, closeBrowser } from '../scripts/capture.mjs';
+import { captureOne, captureSlugs, closeBrowser, throttleFrames } from '../scripts/capture.mjs';
 
 // Fixture pages are our own, so the Chromium sandbox is off here (CI's validate job has no sandbox setup).
 const FAST = { times: [300, 700, 1100], navTimeout: 4000, deadline: 6000, shotTimeout: 2000, clickTimeout: 1000, closeTimeout: 2000, allowLocalHttp: true, sandbox: false };
@@ -27,6 +27,17 @@ const PAGES = {
     const g = document.getElementById('c').getContext('2d');
     g.fillStyle = '#050505'; g.fillRect(0, 0, 1280, 720);
     setTimeout(() => { for (let x = 0; x < 1280; x += 40) for (let y = 0; y < 720; y += 40) { g.fillStyle = 'hsl(' + ((x + y * 3) % 360) + ' 80% ' + (30 + ((x * y) % 40)) + '%)'; g.fillRect(x, y, 40, 40); } }, 500);
+  </script>`),
+  // Every frame blocks the main thread for 2 s, like a heavy WebGL game on software rendering.
+  '/raf-hog': html(`<canvas id="c" width="1280" height="720"></canvas><script>
+    const g = document.getElementById('c').getContext('2d');
+    let t = 0;
+    (function frame() {
+      t += 1;
+      for (let x = 0; x < 1280; x += 40) for (let y = 0; y < 720; y += 40) { g.fillStyle = 'hsl(' + ((t * 7 + x + y * 3) % 360) + ' 80% ' + (20 + ((x + y + t * 23) % 60)) + '%)'; g.fillRect(x, y, 40, 40); }
+      const end = performance.now() + 2000; while (performance.now() < end) {}
+      requestAnimationFrame(frame);
+    })();
   </script>`),
   '/black': html(`<canvas width="1280" height="720" style="background:#000"></canvas>`),
   '/to-download': html(`<p style="color:#fff">starting</p><script>addEventListener('load', () => setTimeout(() => { location.href = '/download'; }, 100));</script>`),
@@ -164,6 +175,47 @@ test('a game that freezes after its cover keeps the cover (partial capture)', as
   assert.equal(res.ok, true, res.reason);
   assert.equal(res.partial, true);
   assert.deepEqual(files(dir), ['cover.png']);
+});
+
+test('a game whose frames hog the main thread times out, then is captured on a throttled second pass', async () => {
+  const hog = { ...FAST, times: [300, 700], shotTimeout: 1900, deadline: 20_000 };
+  const first = await captureOne(`${base}/raf-hog`, join(tmp(), 'hog'), hog);
+  assert.equal(first.ok, false);
+  assert.equal(first.reason, 'screenshot');
+
+  const root = tmp();
+  mkdirSync(join(root, 'games'));
+  writeFileSync(join(root, 'games', 'hog.yaml'), `play:
+  url: ${base}/raf-hog
+`);
+  const lines = [];
+  const [res] = await captureSlugs(['hog'], { ...hog, root, out: join(root, 'out'), log: (l) => lines.push(l) });
+  assert.equal(res.ok, true, JSON.stringify(res));
+  assert.equal(res.throttled, true);
+  assert.ok(existsSync(join(root, 'out', 'hog', 'cover.png')));
+  assert.match(lines.join(' '), /retry throttled/);
+});
+
+test('the throttle keeps requestAnimationFrame working and cancellable', async () => {
+  const calls = [];
+  const timers = new Map();
+  let next = 0;
+  const win = {
+    requestAnimationFrame: (cb) => { const id = ++next; calls.push(['raf', id]); queueMicrotask(() => cb(16)); return id; },
+    cancelAnimationFrame: (id) => calls.push(['caf', id]),
+    setTimeout: (fn, ms) => { const id = ++next; timers.set(id, fn); calls.push(['timeout', ms]); return id; },
+    clearTimeout: (id) => timers.delete(id),
+  };
+  throttleFrames(win, 250);
+  let ran = 0;
+  const a = win.requestAnimationFrame(() => ran++);
+  const b = win.requestAnimationFrame(() => ran++);
+  win.cancelAnimationFrame(b);
+  for (const fn of [...timers.values()]) fn();
+  await new Promise((r) => setTimeout(r, 0));
+  assert.equal(ran, 1);
+  assert.ok(calls.some(([k, ms]) => k === 'timeout' && ms === 250));
+  assert.notEqual(a, b);
 });
 
 test('pickFrames drops black and flat frames, puts the most detailed first and skips near-duplicates', async () => {
