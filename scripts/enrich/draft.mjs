@@ -78,7 +78,8 @@ Write original sentences; never copy phrases longer than five words from the dat
 Description: 2 or 3 paragraphs, each 30-80 words, 120-220 words in total. First paragraph: what the game is and how a run plays.
 Second: what stands out. Optional third: how it was made, only if the data says so.
 Write as the catalog's editor describing the game itself. Never mention the data, the entry, the submission, the pitch,
-what is listed, or what information is missing; if a fact is unknown, leave it out.
+what is listed, or what information is missing; if a fact is unknown, leave it out. Describe what the game has, never what it
+lacks (no "there is no multiplayer mode").
 controls: only keys or inputs the data states; otherwise empty. Credit tools as the creator's statement ("the creator
 built it with Cursor"), never "is listed".
 US English spelling (cozy, color). No hype. Don't make claims about how common or rare something is. Never use these words: ${BANNED.join(', ')}. No exclamation marks.
