@@ -10,7 +10,7 @@ export const PROMPT = 'Write the catalog entry for the game described in the inp
 /** The command that runs Claude Code: `cmd` plus `pre` arguments before ours. */
 export function claudeCommand(env = process.env) {
   if (env.CLAUDE_CLI_PATH) return { cmd: env.CLAUDE_CLI_PATH, pre: [] };
-  return { cmd: 'npx', pre: ['-y', '@anthropic-ai/claude-code'] };
+  return { cmd: 'npx', pre: ['-y', '@anthropic-ai/claude-code@2.1.284'] }; // pinned: this runs next to secrets
 }
 
 export function claudeArgs(system, schema, { model = 'sonnet' } = {}) {
