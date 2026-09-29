@@ -1,0 +1,60 @@
+slug: monaco-gp
+title: Monaco GP
+tagline: Race F1-style cars against other players on 3D tracks with arcade handling.
+description: >-
+  Monaco GP is a multiplayer 3D racing game with an F1 flavor and arcade-style
+  handling. Players take a car onto the track and race against others online,
+  working through corners and straights in a loop that can be replayed as often
+  as they like. It also runs on mobile devices.
+
+
+  The creator says the main focus was on race mechanics and physics, and the
+  game leans toward a simulation feel while keeping the pick-up-and-play pace of
+  an arcade racer. Rendering is done with Three.js, so it runs directly in the
+  browser.
+
+
+  The game was entered in Vibe Jam 2026, where it placed 333 out of 945 entries.
+  The creator built it with Claude Code, as a way to try current AI agents on
+  game development.
+play:
+  url: https://monaco-gp.vercel.app
+  embeddable: true
+  platforms:
+    - browser
+    - mobile
+creator:
+  name: markoprogrammer
+  handle: markoprogrammer
+  x: markoprogrammer
+made:
+  models: []
+  providers:
+    - anthropic
+  tools:
+    - claude-code
+  aiShare: most
+  source: Vibe Jam 2026 submission form
+  evidence: creator
+tech:
+  engine: threejs
+  multiplayer: online
+genres:
+  - racing
+  - simulation
+jam:
+  event: vibe-jam-2026
+  rank: 333
+  entries: 945
+media:
+  cover: games/monaco-gp/cover
+  screenshots:
+    - games/monaco-gp/shot-1
+    - games/monaco-gp/shot-2
+dates:
+  added: 2026-09-29
+  updated: 2026-09-29
+status: live
+provenance:
+  foundVia: scout:vibejam-2026
+  scannedAt: 2026-09-29T16:37:14.629Z

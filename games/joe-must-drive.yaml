@@ -1,0 +1,61 @@
+slug: joe-must-drive
+title: Joe Must Drive
+tagline: Ride a sidecar motorcycle as driver or gunner and fight through zombie
+  waves and bosses.
+description: >-
+  Joe Must Drive is a fast-paced zombie shooter set on a motorcycle with a
+  sidecar. Before a run, you pick a role: the driver, who steers the bike, or
+  the gunner, who handles the shooting. From there you push forward through
+  obstacles, fend off waves of zombies, and face boss fights along the way.
+
+
+  The two-seat setup is the core idea. Driving and shooting are split into
+  separate jobs, and the game supports multiplayer, so two people can share the
+  bike. It also runs on mobile, which fits its quick, action-heavy pace.
+
+
+  The creator drew on a fondness for horror shooters like Resident Evil and the
+  mobile apocalypse games they played growing up. It is their first real game
+  project, built in 3D with Three.js, and the creator states they used Codex
+  during development. It was entered in Vibe Jam 2026.
+play:
+  url: https://joe-must-drive.vercel.app
+  embeddable: true
+  platforms:
+    - browser
+    - mobile
+creator:
+  name: michelin_dude
+  handle: michelin-dude
+  x: michelin_dude
+made:
+  models: []
+  providers:
+    - openai
+  tools:
+    - codex
+  aiShare: most
+  source: Vibe Jam 2026 submission form
+  evidence: creator
+tech:
+  engine: threejs
+  multiplayer: online
+genres:
+  - shooter
+  - action
+jam:
+  event: vibe-jam-2026
+  rank: 346
+  entries: 945
+media:
+  cover: games/joe-must-drive/cover
+  screenshots:
+    - games/joe-must-drive/shot-1
+    - games/joe-must-drive/shot-2
+dates:
+  added: 2026-09-29
+  updated: 2026-09-29
+status: live
+provenance:
+  foundVia: scout:vibejam-2026
+  scannedAt: 2026-09-29T16:37:14.637Z

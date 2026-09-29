@@ -1,0 +1,60 @@
+slug: pocketbots
+title: PocketBots
+tagline: Assemble a toy battle robot from scavenged parts and fight arena duels.
+description: >-
+  PocketBots is a multiplayer arena fighter where you put together a small toy
+  battle robot from scavenged parts. Each limb works as part of your loadout, so
+  the build you choose shapes how you fight. Matches are quick duels in which
+  you shoot and maneuver against an opponent.
+
+
+  Every fight pays out something toward your next upgrade, which gives the loop
+  a steady build, battle, improve rhythm. The scrappy toy-robot theme keeps the
+  tone light, and swapping parts is the main way to change your playstyle
+  between rounds.
+
+
+  The creator says the idea came from wanting a western take on Medabots-style
+  robot battle games, one that doesn't require reading Japanese to play. It was
+  built with Three.js, and the creator used Codex. It was entered in Vibe Jam
+  2026.
+play:
+  url: https://pokebots-vibejamv.netlify.app
+  embeddable: true
+  platforms:
+    - browser
+creator:
+  name: circa90x
+  handle: circa90x
+  x: circa90x
+made:
+  models: []
+  providers:
+    - openai
+  tools:
+    - codex
+  aiShare: most
+  source: Vibe Jam 2026 submission form
+  evidence: creator
+tech:
+  engine: threejs
+  multiplayer: online
+genres:
+  - action
+  - shooter
+jam:
+  event: vibe-jam-2026
+  rank: 347
+  entries: 945
+media:
+  cover: games/pocketbots/cover
+  screenshots:
+    - games/pocketbots/shot-1
+    - games/pocketbots/shot-2
+dates:
+  added: 2026-09-29
+  updated: 2026-09-29
+status: live
+provenance:
+  foundVia: scout:vibejam-2026
+  scannedAt: 2026-09-29T16:37:14.638Z

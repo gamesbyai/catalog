@@ -1,0 +1,60 @@
+slug: dodgy-air
+title: Dodgy Air
+tagline: Manage a struggling budget airline with a moody captain and a shady CFO.
+description: >-
+  Dodgy Air is a comedy management game in which you run a third-rate airline.
+  You make decisions for the business while the people around you complicate
+  them, and each session is about keeping the operation flying despite the
+  staff's odd habits and questionable paperwork.
+
+
+  The characters are the focus. Your captain asks for altitude changes based on
+  feelings, and your CFO insists the receipts aren't really receipts. The humor
+  and personality of the crew drive the strategy and simulation, so running the
+  airline becomes a series of absurd workplace problems. It supports multiplayer
+  and is built with Three.js.
+
+
+  The creator, a veteran of the games industry, built it for Vibe Jam 2026 using
+  Claude Code. They say AI handled the full production pipeline, which let them
+  ship a comedy title heavy on characters.
+play:
+  url: https://dodgyair.com/play
+  embeddable: true
+  platforms:
+    - browser
+creator:
+  name: gilbo852
+  handle: gilbo852
+  x: gilbo852
+made:
+  models: []
+  providers:
+    - anthropic
+  tools:
+    - claude-code
+  aiShare: all
+  source: Vibe Jam 2026 submission form
+  evidence: creator
+tech:
+  engine: threejs
+  multiplayer: online
+genres:
+  - strategy
+  - simulation
+jam:
+  event: vibe-jam-2026
+  rank: 324
+  entries: 945
+media:
+  cover: games/dodgy-air/cover
+  screenshots:
+    - games/dodgy-air/shot-1
+    - games/dodgy-air/shot-2
+dates:
+  added: 2026-09-29
+  updated: 2026-09-29
+status: live
+provenance:
+  foundVia: scout:vibejam-2026
+  scannedAt: 2026-09-29T16:37:14.625Z

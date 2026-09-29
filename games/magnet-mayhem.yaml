@@ -1,0 +1,61 @@
+slug: magnet-mayhem
+title: Magnet Mayhem
+tagline: Pull and push floating junk to knock rival UFOs around while dodging
+  laser beams.
+description: >-
+  Magnet Mayhem is a multiplayer action game where players pilot UFOs and
+  compete against friends for points. Each pilot uses a magnetic pull to attract
+  or repel scattered junk, turning debris into weapons against rival saucers in
+  the arena.
+
+
+  The twist is the hazard layer: laser beams, themed as coming from Vibe Jam
+  judges, sweep in while you fight, so you have to keep an eye on incoming fire
+  as well as your opponents. The playful alien setup gives the friendly rivalry
+  a lighthearted tone, and it is built to run on mobile devices as well as
+  desktop.
+
+
+  The game runs on Three.js and was entered in Vibe Jam 2026. The creator's
+  statement says it was built with Antigravity, Google's AI coding tool.
+play:
+  url: https://magnet-mayhem.vercel.app
+  embeddable: true
+  platforms:
+    - browser
+    - mobile
+creator:
+  name: yazanbruv
+  handle: yazanbruv
+  x: yazanbruv
+made:
+  models: []
+  providers:
+    - google
+  tools:
+    - antigravity
+  aiShare: most
+  source: Vibe Jam 2026 submission form
+  evidence: creator
+tech:
+  engine: threejs
+  multiplayer: online
+genres:
+  - action
+  - arcade
+jam:
+  event: vibe-jam-2026
+  rank: 329
+  entries: 945
+media:
+  cover: games/magnet-mayhem/cover
+  screenshots:
+    - games/magnet-mayhem/shot-1
+    - games/magnet-mayhem/shot-2
+dates:
+  added: 2026-09-29
+  updated: 2026-09-29
+status: live
+provenance:
+  foundVia: scout:vibejam-2026
+  scannedAt: 2026-09-29T16:37:14.627Z

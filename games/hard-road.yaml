@@ -1,0 +1,58 @@
+slug: hard-road
+title: Hard Road
+tagline: Drive a scavenger's Lada down an endless road, towing wrecks for scrap.
+description: >-
+  Hard Road is a driving survival sim set on an endless wasteland highway. You
+  pilot a scavenger's Lada, hook up wrecks along the route and tow them for
+  scrap, then spend that scrap on a better engine and tougher tires. Each run is
+  a push to keep rolling as far as the road allows.
+
+
+  The pressure comes from the car's needs and the environment. Fuel can run dry,
+  the battery can die, and wasteland weather makes the trip harder, so you weigh
+  every detour for scrap against the risk of stalling out. Upgrades give you a
+  way to stretch each trip a little longer.
+
+
+  The game was entered in Vibe Jam 2026, and the creator names Cursor as a tool
+  used to build it. The creator cites Hard Truck Apocalypse and Drive Beyond
+  Horizons as favorite games, and the tone of the road and the salvage loop fit
+  that influence. It is playable on mobile.
+play:
+  url: https://hardroad.xyz
+  embeddable: true
+  platforms:
+    - browser
+    - mobile
+creator:
+  name: cipriangb
+  handle: cipriangb
+  x: cipriangb
+made:
+  models: []
+  tools:
+    - cursor
+  aiShare: most
+  source: Vibe Jam 2026 submission form
+  evidence: creator
+tech:
+  multiplayer: single
+genres:
+  - simulation
+  - survival
+jam:
+  event: vibe-jam-2026
+  rank: 360
+  entries: 945
+media:
+  cover: games/hard-road/cover
+  screenshots:
+    - games/hard-road/shot-1
+    - games/hard-road/shot-2
+dates:
+  added: 2026-09-29
+  updated: 2026-09-29
+status: live
+provenance:
+  foundVia: scout:vibejam-2026
+  scannedAt: 2026-09-29T16:37:14.644Z
