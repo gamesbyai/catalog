@@ -1,54 +1,109 @@
 name: pr-commands
-# `/drop slug …` on a seed or submission PR removes those games from the branch. Only the catalog owner's comments run
-# this, and no code from the PR branch is ever executed: the script comes from main, the branch is only edited with git.
+# Review commands on seed and submission PRs: /drop, /score, /reject, /changes (scripts/pr-commands.mjs has the syntax).
+# Only the catalog owner's comments run this. No code from the PR branch is ever executed: the scripts come from main,
+# the branch is only read and edited with git as data. Edits are pushed with the GitHub App's token so checks rerun.
 on:
   issue_comment:
     types: [created]
 permissions:
   contents: read
 jobs:
-  drop:
-    if: github.event.issue.pull_request && startsWith(github.event.comment.body, '/drop') && github.event.comment.user.login == 'MansGullberg'
+  command:
+    if: >-
+      github.event.issue.pull_request && github.event.comment.user.login == 'MansGullberg' &&
+      (startsWith(github.event.comment.body, '/drop') || startsWith(github.event.comment.body, '/score') ||
+       startsWith(github.event.comment.body, '/reject') || startsWith(github.event.comment.body, '/changes'))
     runs-on: ubuntu-latest
     permissions:
-      contents: write
+      contents: read
       pull-requests: write
+      issues: write
     env:
-      GH_TOKEN: ${{ github.token }}
       PR: ${{ github.event.issue.number }}
     steps:
       - uses: actions/checkout@v5
         with: { path: tools, persist-credentials: false }
       - uses: actions/setup-node@v5
         with: { node-version: 22 }
+      - run: npm ci --ignore-scripts --no-audit --no-fund
+        working-directory: tools
+      - uses: actions/create-github-app-token@v2
+        id: app
+        with:
+          app-id: ${{ secrets.GH_APP_ID }}
+          private-key: ${{ secrets.GH_APP_PRIVATE_KEY }}
       - name: Check the PR branch
         id: pr
+        env:
+          GH_TOKEN: ${{ github.token }}
         run: |
-          info=$(gh pr view "$PR" --repo "$GITHUB_REPOSITORY" --json headRefName,isCrossRepository,state)
+          info=$(gh pr view "$PR" --repo "$GITHUB_REPOSITORY" --json headRefName,isCrossRepository,state,body)
           ref=$(jq -r .headRefName <<<"$info")
           [ "$(jq -r .isCrossRepository <<<"$info")" = "false" ] || { echo "fork PR, ignored"; exit 1; }
           [ "$(jq -r .state <<<"$info")" = "OPEN" ] || { echo "PR not open"; exit 1; }
           [[ "$ref" =~ ^(seed|submission)/[a-z0-9-]+$ ]] || { echo "not a seed or submission branch"; exit 1; }
           echo "ref=$ref" >> "$GITHUB_OUTPUT"
+          # The submission issue this PR closes (our bot writes "Closes #N" into the body).
+          issue=$(jq -r .body <<<"$info" | grep -oE 'Closes #[0-9]+' | head -1 | grep -oE '[0-9]+' || true)
+          echo "issue=$issue" >> "$GITHUB_OUTPUT"
       - uses: actions/checkout@v5
-        with: { path: pr, ref: '${{ steps.pr.outputs.ref }}', fetch-depth: 0 }
-      - name: Drop games
+        with:
+          path: pr
+          ref: ${{ steps.pr.outputs.ref }}
+          fetch-depth: 0
+          token: ${{ steps.app.outputs.token }}
+      - name: Work out the action
         env:
           COMMENT_BODY: ${{ github.event.comment.body }}
           COMMENT_AUTHOR: ${{ github.event.comment.user.login }}
           OWNERS: MansGullberg
-          REF: ${{ steps.pr.outputs.ref }}
         run: |
-          node tools/scripts/pr-commands.mjs pr > remove.txt
-          if [ ! -s remove.txt ]; then
-            gh pr comment "$PR" --repo "$GITHUB_REPOSITORY" --body "Nothing dropped: none of those slugs are in this PR."
-            exit 0
-          fi
+          # Only games this PR adds can be dropped or scored.
+          export PR_SLUGS="$(git -C pr diff --name-only --diff-filter=A origin/main...HEAD -- games/ | sed -nE 's#^games/([a-z0-9-]+)\.yaml$#\1#p' | tr '\n' ' ')"
+          node tools/scripts/pr-commands.mjs pr > action.json
+          cat action.json
+      - name: Apply it
+        env:
+          GH_TOKEN: ${{ steps.app.outputs.token }}
+          REF: ${{ steps.pr.outputs.ref }}
+          ISSUE: ${{ steps.pr.outputs.issue }}
+          NOTIFY_TOKEN: ${{ secrets.INTERNAL_NOTIFY_TOKEN }}
+          NOTIFY_URL: https://gamesbyai-preview.mansgullberg.workers.dev/api/internal/notify
+        run: |
+          [ -s action.json ] || { echo "no valid command"; exit 0; }
+          action=$(jq -r .action action.json)
+          notify() { # event, note, slug
+            [ -n "$ISSUE" ] && [ -n "$NOTIFY_TOKEN" ] || return 0
+            jq -n --argjson issue "$ISSUE" --arg event "$1" --arg note "$2" --arg slug "$3" '{issue:$issue,event:$event,note:$note} + (if $slug == "" then {} else {slug:$slug} end)' \
+              | curl -sS -o /dev/null -w "notify %{http_code}\n" -X POST "$NOTIFY_URL" -H "Authorization: Bearer $NOTIFY_TOKEN" -H 'Content-Type: application/json' --data-binary @- || true
+          }
           cd pr
-          git config user.name "gamesbyai-bot"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          xargs git rm -q < ../remove.txt
-          git commit -q -m "Drop $(wc -l < ../remove.txt | tr -d ' ') games on review"
-          git push -q origin "HEAD:$REF"
-          left=$(git diff --name-only --diff-filter=A "origin/main...HEAD" -- games/ | wc -l | tr -d ' ')
-          gh pr comment "$PR" --repo "$GITHUB_REPOSITORY" --body "Dropped $(wc -l < ../remove.txt | tr -d ' '). Games left in this PR: $left."
+          git config user.name "gamesbyai-bot[bot]"
+          git config user.email "gamesbyai-bot[bot]@users.noreply.github.com"
+          case "$action" in
+            drop)
+              jq -r '.files[]' ../action.json > ../remove.txt
+              if [ ! -s ../remove.txt ]; then gh pr comment "$PR" --body "Nothing dropped: none of those games are added by this PR."; exit 0; fi
+              xargs git rm -q < ../remove.txt
+              git commit -q -m "Drop $(wc -l < ../remove.txt | tr -d ' ') games on review"
+              git push -q origin "HEAD:$REF"
+              left=$(git diff --name-only --diff-filter=A origin/main...HEAD -- games/ | wc -l | tr -d ' ')
+              gh pr comment "$PR" --body "Dropped $(wc -l < ../remove.txt | tr -d ' '). Games left in this PR: $left." ;;
+            score)
+              file=$(jq -r .file ../action.json)
+              jq -r .content ../action.json > "$file"
+              git add "$file"
+              git commit -q -m "Score $(jq -r .slug ../action.json) on review"
+              git push -q origin "HEAD:$REF"
+              gh pr comment "$PR" --body "Scored $(jq -r .slug ../action.json). It goes live when this PR is merged." ;;
+            reject)
+              gh pr edit "$PR" --add-label rejected || true
+              gh pr close "$PR" --comment "Closed on review: $(jq -r .text ../action.json)"
+              notify rejected "$(jq -r .text ../action.json)" "" ;;
+            changes)
+              gh pr edit "$PR" --add-label needs-changes || true
+              gh pr comment "$PR" --body "Changes requested: $(jq -r .text ../action.json)"
+              notify changes "$(jq -r .text ../action.json)" "" ;;
+            error)
+              gh pr comment "$PR" --body "$(jq -r .message ../action.json)" ;;
+          esac

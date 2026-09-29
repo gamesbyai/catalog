@@ -1,0 +1,41 @@
+name: on-merge
+# After games change on main: rebuild the site (repository_dispatch through the GitHub App, which is installed on the
+# site repo) and email submitters whose games just went live. Runs from main's own code only.
+on:
+  push:
+    branches: [main]
+    paths: ['games/**']
+permissions:
+  contents: read
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/create-github-app-token@v2
+        id: app
+        with:
+          app-id: ${{ secrets.GH_APP_ID }}
+          private-key: ${{ secrets.GH_APP_PRIVATE_KEY }}
+          owner: gamesbyai
+          repositories: gamesbyai-site
+      - name: Rebuild the site
+        env:
+          GH_TOKEN: ${{ steps.app.outputs.token }}
+        run: gh api repos/gamesbyai/gamesbyai-site/dispatches -f event_type=catalog-updated
+      - name: Email submitters whose games went live
+        env:
+          GH_TOKEN: ${{ github.token }}
+          NOTIFY_TOKEN: ${{ secrets.INTERNAL_NOTIFY_TOKEN }}
+          NOTIFY_URL: https://gamesbyai-preview.mansgullberg.workers.dev/api/internal/notify
+          SHA: ${{ github.sha }}
+        run: |
+          [ -n "$NOTIFY_TOKEN" ] || exit 0
+          gh api "repos/$GITHUB_REPOSITORY/commits/$SHA/pulls" --jq '.[] | select(.head.ref | startswith("submission/")) | [.head.ref, (.body // "")] | @tsv' |
+          while IFS=$'\t' read -r ref body; do
+            slug=${ref#submission/}
+            [[ "$slug" =~ ^[a-z0-9]+(-[a-z0-9]+)*$ ]] || continue
+            issue=$(grep -oE 'Closes #[0-9]+' <<<"$body" | head -1 | grep -oE '[0-9]+' || true)
+            [ -n "$issue" ] || continue
+            jq -n --argjson issue "$issue" --arg slug "$slug" '{issue:$issue,event:"live",slug:$slug}' |
+              curl -sS -o /dev/null -w "notify %{http_code}\n" -X POST "$NOTIFY_URL" -H "Authorization: Bearer $NOTIFY_TOKEN" -H 'Content-Type: application/json' --data-binary @- || true
+          done
