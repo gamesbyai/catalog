@@ -45,9 +45,20 @@ test('a live entry needs an editor score and a 600-character description', () =>
   assert.ok(problems.some((p) => p.includes('description')));
 });
 
-test('a draft may name only a provider, but must name one of the two', () => {
+test('a draft may name only a provider or a tool; with none it needs a jam', () => {
   const providerOnly = draft.replace('models: [claude-sonnet-5-5]', 'models: [], providers: [openai]');
   assert.deepEqual(validate(repo({ 'sky-hop.yaml': providerOnly })).problems, []);
-  const neither = draft.replace('models: [claude-sonnet-5-5]', 'models: []');
-  assert.ok(validate(repo({ 'sky-hop.yaml': neither })).problems.some((p) => p.includes('model or provider')));
+  const toolOnly = draft.replace('models: [claude-sonnet-5-5]', 'models: []');
+  assert.deepEqual(validate(repo({ 'sky-hop.yaml': toolOnly })).problems, []);
+  const none = toolOnly.replace('tools: [claude-code]', 'tools: []');
+  assert.ok(validate(repo({ 'sky-hop.yaml': none })).problems.some((p) => p.includes('model, provider or tool')));
+  const jamOnly = none + 'jam: { event: vibe-jam-2026, rank: 3, entries: 945 }\n';
+  assert.deepEqual(validate(repo({ 'sky-hop.yaml': jamOnly })).problems, []);
+});
+
+test('a live jam entry needs no editor score, and the engine may be left out', () => {
+  const long = 'x'.repeat(620);
+  const live = draft.replace('status: draft', 'status: live').replace('description: ""', `description: "${long}"`)
+    .replace('tech: { engine: threejs, multiplayer: single }', 'tech: { multiplayer: single }') + 'jam: { event: vibe-jam-2026, rank: 3, entries: 945 }\n';
+  assert.deepEqual(validate(repo({ 'sky-hop.yaml': live })).problems, []);
 });

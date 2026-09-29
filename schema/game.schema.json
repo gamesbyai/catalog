@@ -180,6 +180,19 @@
           "type": "string",
           "minLength": 1,
           "maxLength": 600
+        },
+        "evidence": {
+          "enum": [
+            "direct",
+            "creator",
+            "repo",
+            "inferred"
+          ]
+        },
+        "evidenceUrl": {
+          "type": "string",
+          "pattern": "^https://",
+          "maxLength": 300
         }
       }
     },
@@ -187,7 +200,6 @@
       "type": "object",
       "additionalProperties": false,
       "required": [
-        "engine",
         "multiplayer"
       ],
       "properties": {
@@ -247,6 +259,14 @@
           "type": "string",
           "minLength": 1,
           "maxLength": 80
+        },
+        "rank": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "entries": {
+          "type": "integer",
+          "minimum": 1
         }
       }
     },
@@ -394,19 +414,38 @@
         }
       },
       "then": {
-        "required": [
-          "editor"
-        ],
         "properties": {
           "description": {
             "minLength": 600
-          },
-          "editor": {
-            "required": [
-              "score"
-            ]
           }
-        }
+        },
+        "anyOf": [
+          {
+            "required": [
+              "editor"
+            ],
+            "properties": {
+              "editor": {
+                "required": [
+                  "score"
+                ]
+              }
+            }
+          },
+          {
+            "required": [
+              "jam"
+            ],
+            "properties": {
+              "jam": {
+                "required": [
+                  "rank",
+                  "entries"
+                ]
+              }
+            }
+          }
+        ]
       }
     }
   ]

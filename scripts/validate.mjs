@@ -54,9 +54,10 @@ export function validate(dir = '.') {
     const check = (kind, list, label) => list.forEach((s) => slugs[kind].has(s) || problems.push(`${rel}: unknown ${label} "${s}"`));
     check('models', g.made.models, 'model');
     check('providers', g.made.providers ?? [], 'provider');
-    if (!g.made.models.length && !(g.made.providers ?? []).length) problems.push(`${rel}: name at least one model or provider in made.models / made.providers`);
     check('tools', g.made.tools, 'tool');
-    check('engines', [g.tech.engine], 'engine');
+    // Jam rules require mostly AI-written code, so a jam entry may name no AI at all.
+    if (!g.made.models.length && !(g.made.providers ?? []).length && !g.made.tools.length && !g.jam) problems.push(`${rel}: name a model, provider or tool, or a jam`);
+    if (g.tech.engine) check('engines', [g.tech.engine], 'engine');
     check('genres', g.genres, 'genre');
     if (g.jam) check('jams', [g.jam.event], 'jam');
     const key = g.play.url.replace(/\/+$/, '').toLowerCase();
