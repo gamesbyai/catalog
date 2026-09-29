@@ -124,7 +124,8 @@ export async function captureOne(url, outDir, opts = {}) {
   const deadline = setTimeout(() => fail('deadline', `no result after ${o.deadline} ms`), o.deadline);
   const stop = new AbortController();
 
-  const state = { context: null, finished: false };
+  // Frames taken so far live outside `work`, so a deadline or a frozen page after the cover still keeps the cover.
+  const state = { context: null, finished: false, shots: [] };
   const work = async () => {
     const b = await guard(
       getBrowser(o.sandbox).catch((e) => {
@@ -169,7 +170,7 @@ export async function captureOne(url, outDir, opts = {}) {
     await guard(page.waitForLoadState('load', { timeout: Math.max(1, o.navTimeout - (Date.now() - navStart)) }).catch(() => {}));
 
     const t0 = Date.now();
-    const shots = [];
+    const shots = state.shots;
     for (let i = 0; i < o.times.length; i++) {
       await guard(sleep(t0 + o.times[i] - Date.now(), stop.signal));
       // A busy renderer can miss one frame deadline; one retry before giving up on the game.
@@ -178,7 +179,10 @@ export async function captureOne(url, outDir, opts = {}) {
         try {
           shot = await guard(page.screenshot({ type: 'png', timeout: o.shotTimeout }));
         } catch (e) {
-          if (e instanceof CaptureError || attempt === 1) throw e instanceof CaptureError ? e : new CaptureError('screenshot', firstLine(e));
+          if (e instanceof CaptureError || attempt === 1) {
+            if (i > 0) return shots; // the cover is enough; later shots are a bonus
+            throw e instanceof CaptureError ? e : new CaptureError('screenshot', firstLine(e));
+          }
         }
       }
       shots.push(shot);
@@ -195,14 +199,21 @@ export async function captureOne(url, outDir, opts = {}) {
     const running = work();
     running.catch(() => {});
     const shots = await guard(running);
-    if (shots.length !== files.length) throw new CaptureError('error', 'wrong number of captures');
     // Synchronous from here on: the deadline timer cannot fire in between.
     mkdirSync(outDir, { recursive: true });
     shots.forEach((buf, i) => writeFileSync(files[i], buf));
-    result = { ok: true, files };
+    result = { ok: true, files: files.slice(0, shots.length), ...(shots.length < files.length ? { partial: true } : {}) };
   } catch (e) {
     cleanup();
-    result = e instanceof CaptureError ? { ok: false, reason: e.reason, detail: e.message } : { ok: false, reason: 'error', detail: firstLine(e) };
+    const keep = state.shots.slice();
+    if (keep.length && e instanceof CaptureError && (e.reason === 'deadline' || e.reason === 'screenshot')) {
+      // The game froze or ran out of time after its cover: keep what we have.
+      mkdirSync(outDir, { recursive: true });
+      keep.forEach((buf, i) => writeFileSync(files[i], buf));
+      result = { ok: true, files: files.slice(0, keep.length), partial: true };
+    } else {
+      result = e instanceof CaptureError ? { ok: false, reason: e.reason, detail: e.message } : { ok: false, reason: 'error', detail: firstLine(e) };
+    }
   } finally {
     over = true;
     state.finished = true;
