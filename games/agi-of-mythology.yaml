@@ -10,8 +10,7 @@ description: >-
 
   The game is built for quick sessions with friends, and it supports multiplayer
   and mobile play. Its premise turns the AI race into a contest over one map
-  location, which keeps matches focused on a single point of conflict instead of
-  sprawling economies.
+  location, which keeps matches focused on a single point of conflict.
 
 
   It was made for Vibe Jam 2026 and renders with Three.js. The creator says it

@@ -17,8 +17,7 @@ description: >-
 
 
   It was entered in Vibe Jam 2026 and placed 498th out of 945 entries. The
-  creator's information lists Claude Code as the tool used, and the game is
-  built with Three.js.
+  creator built it with Claude Code, and the game runs on Three.js.
 play:
   url: https://vendingmachinetycoon.com
   embeddable: true

@@ -13,9 +13,8 @@ description: >-
   barreling waves are to ride, after two years away from surfing.
 
 
-  It was made for Vibe Jam 2026 as a browser game built with Three.js, and the
-  jam listed it at rank 181 out of 945 entries. The creator built it with Claude
-  Code.
+  It was made for Vibe Jam 2026 as a browser game built with Three.js, and it
+  placed 181st out of 945 entries. The creator built it with Claude Code.
 play:
   url: https://onelast.surf
   embeddable: true

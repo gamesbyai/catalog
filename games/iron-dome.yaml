@@ -15,8 +15,8 @@ description: >-
 
 
   The game was an entry in Vibe Jam 2026, where it placed 569th out of 945
-  entries. The creator states it was built mostly with Claude AI, and credits
-  Claude Code as the tool.
+  entries. The creator states it was built mostly with Claude AI, through Claude
+  Code.
 play:
   url: https://iron-dome-8hb.pages.dev
   embeddable: true

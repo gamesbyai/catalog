@@ -10,15 +10,14 @@ description: >-
   the obstacles ahead.
 
 
-  The design leans on momentum and timing rather than a large move set. With
-  only one action to master, difficulty comes from how the levels are laid out
-  and from hazards that grow more dangerous as the run goes on. The creator
-  cites classic gravity-flipping games such as VVVVVV as inspiration.
+  The design leans on momentum and timing. With only one action to master,
+  difficulty comes from how the levels are laid out and from hazards that grow
+  more dangerous as the run goes on. The creator cites classic gravity-flipping
+  games such as VVVVVV as inspiration.
 
 
   It runs in the browser on Three.js and supports mobile devices. The creator
-  lists Antigravity as the tool used to build it, and it was entered in Vibe Jam
-  2026.
+  built it with Antigravity, and it was entered in Vibe Jam 2026.
 play:
   url: https://gravity-heist.vercel.app
   embeddable: true

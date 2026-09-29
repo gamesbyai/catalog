@@ -10,12 +10,13 @@ description: >-
 
   The focus is on speed and quick reactions rather than slow, careful aiming.
   Drifting is part of the movement, so the craft slides through turns while the
-  player weaves between threats. It is tagged as both a shooter and a roguelite,
-  which points to short, repeatable runs.
+  player weaves between threats. It combines shooter and roguelite play, which
+  points to short, repeatable runs.
 
 
-  It was submitted to Vibe Jam 2026 and runs in the browser on Three.js. The
-  creator lists Windsurf as the tool used to build it.
+  It was submitted to Vibe Jam 2026, where it placed 523rd out of 945 entries,
+  and runs in the browser on Three.js. According to the creator, it was built
+  with Windsurf.
 play:
   url: https://hell-dodger.vercel.app
   embeddable: true

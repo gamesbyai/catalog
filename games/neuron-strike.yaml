@@ -16,8 +16,8 @@ description: >-
 
 
   The game was entered in Vibe Jam 2026, where it placed 359th among 945
-  entries. Its listed tooling points to Claude from Anthropic as part of how it
-  was made.
+  entries. The creator built it with Claude from Anthropic. It is a
+  single-player game that runs in the browser.
 play:
   url: https://neuronstrike.net
   embeddable: true

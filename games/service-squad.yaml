@@ -16,8 +16,8 @@ description: >-
 
   It was made by a solo developer using Flutter and Dart for the frontend and a
   Node.js backend. The developer says the project was a way to learn how new AI
-  tools work, and it was entered in Vibe Jam 2026. The creator's tool list
-  includes Antigravity.
+  tools work, and it was entered in Vibe Jam 2026. The creator built it with
+  Antigravity.
 play:
   url: https://service-sim.netlify.app
   embeddable: true

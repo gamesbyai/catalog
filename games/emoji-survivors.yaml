@@ -16,7 +16,7 @@ description: >-
 
   It was an entry in Vibe Jam 2026, where it placed 196th out of 945 entries.
   The creator says they had long wanted to build a complete game from scratch
-  and that AI made it possible. The known tooling is Codex.
+  and that AI made it possible. The creator built it with Codex.
 play:
   url: https://emoji-survivors.fun
   embeddable: true

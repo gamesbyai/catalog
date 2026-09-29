@@ -9,14 +9,14 @@ description: >-
 
 
   The premise leans on a familiar piece of family humor, turning a household
-  threat into the core hazard. The tagline says the chanclazo speaks when words
+  threat into the core hazard. The joke is that the chanclazo speaks when words
   fail, and that tone carries through the concept. It runs in the browser in 3D
   and is set up to work on mobile as well as desktop.
 
 
   The creator says the idea had been on their mind for a couple of years before
-  AI made it possible to build. The listing names Bolt as the tool used, and the
-  game was submitted to Vibe Jam 2026.
+  AI made it possible to build. The creator built it with Bolt, and the game was
+  submitted to Vibe Jam 2026.
 play:
   url: https://chanclazo.com
   embeddable: true

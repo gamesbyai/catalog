@@ -9,14 +9,13 @@ description: >-
 
 
   The mix of open flying and player-versus-player combat is the main draw.
-  Because the world is shared, the other aircraft you see are real players
-  rather than scripted targets, so every encounter depends on who happens to be
-  in the sky with you.
+  Because the world is shared, the other aircraft you see are real players, so
+  every encounter depends on who happens to be in the sky with you.
 
 
-  The creator says it was built with Cursor and Grok 3, and it renders in the
-  browser with Three.js. Those are the tools the creator credits for the code
-  and the 3D scene.
+  According to its README, the creator built it with Cursor and Grok 3, which
+  covered the code and the 3D scene, and it renders in the browser with
+  Three.js. It is an online multiplayer game that mixes simulation and action.
 play:
   url: https://fly.pieter.com
   embeddable: true

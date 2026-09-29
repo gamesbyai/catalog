@@ -15,9 +15,8 @@ description: >-
   multiplayer, and works on mobile.
 
 
-  According to the listing, the creator built it with Codex. It was entered in
-  Vibe Jam 2026, where it placed 288th out of 945 entries, and it is playable in
-  a browser.
+  The creator built it with Codex. It was entered in Vibe Jam 2026, where it
+  placed 288th out of 945 entries, and it is playable in a browser.
 play:
   url: https://beaststorm.xyz
   embeddable: true

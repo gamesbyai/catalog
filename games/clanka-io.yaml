@@ -15,8 +15,8 @@ description: >-
 
 
   It was submitted to Vibe Jam 2026, and the creator says it was built with
-  Claude Code. It runs in the browser and is marked as playable on mobile as
-  well as desktop.
+  Claude Code. It runs in the browser and is playable on mobile as well as
+  desktop.
 play:
   url: https://clankaio.pages.dev
   embeddable: true

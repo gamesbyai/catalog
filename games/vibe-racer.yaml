@@ -14,8 +14,8 @@ description: >-
   the layouts vary between runs. It also runs on mobile devices.
 
 
-  The game was an entry in Vibe Jam 2026. The creator's listing names
-  Antigravity as the tool used to build it, and it runs on Three.js.
+  The game was an entry in Vibe Jam 2026. The creator built it with Antigravity,
+  and it runs on Three.js.
 play:
   url: https://vibe-racer-d3h.pages.dev
   embeddable: true

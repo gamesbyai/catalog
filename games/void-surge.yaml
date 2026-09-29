@@ -17,7 +17,7 @@ description: >-
 
 
   The creator says it was vibe-coded for fun with Grok Build. The project is an
-  HTML5 game whose repository tags it as a roguelike survivor.
+  HTML5 roguelike survivor that draws to a canvas. It is built for solo play.
 play:
   url: https://void-surge-survivor.grok.me
   embeddable: true

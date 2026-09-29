@@ -15,8 +15,7 @@ description: >-
 
 
   It was submitted to Vibe Jam 2026, where it placed 174th out of 945 entries.
-  The creator lists Codex as the tool used to build it, with Three.js handling
-  the 3D rendering.
+  The creator built it with Codex, with Three.js handling the 3D rendering.
 play:
   url: https://kurveroyale.com
   embeddable: false

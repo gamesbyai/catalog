@@ -14,9 +14,8 @@ description: >-
   models can move from confidence to uncertainty under pressure.
 
 
-  It was entered in Vibe Jam 2026 and built with Three.js. The creator lists
-  Antigravity and Kiro as the tools used, and the game supports multiplayer and
-  mobile play.
+  It was entered in Vibe Jam 2026 and built with Three.js. The creator built it
+  with Antigravity and Kiro, and the game supports multiplayer and mobile play.
 play:
   url: https://skybreak.xyz
   embeddable: true

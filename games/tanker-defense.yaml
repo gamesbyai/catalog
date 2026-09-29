@@ -9,13 +9,14 @@ description: >-
 
 
   The game mixes shooting with ship handling, asking the player to split
-  attention between aiming and navigation. Its genre tags also point to RPG and
-  simulation elements alongside the action. It runs in the browser on Three.js
-  and is marked as playable on mobile.
+  attention between aiming and navigation. According to the creator, it also
+  blends RPG and simulation elements with the action. It runs in the browser on
+  Three.js and is playable on mobile.
 
 
   It was entered in Vibe Jam 2026, where it placed 508 out of 945 entries. The
-  creator says it was their first game, taken on as a fun small challenge.
+  creator says it was their first game, taken on as a fun small challenge. It is
+  a single-player game.
 play:
   url: https://admirable-biscotti-57d1ee.netlify.app
   embeddable: true

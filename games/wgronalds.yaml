@@ -15,9 +15,8 @@ description: >-
   is left uncertain.
 
 
-  It was a Vibe Jam 2026 entry, and the creator lists Claude Code among the
-  tools used. The game is playable on mobile as well as desktop and is
-  single-player.
+  It was a Vibe Jam 2026 entry, and the creator built it with Claude Code. The
+  game is playable on mobile as well as desktop and is single-player.
 play:
   url: https://wgronalds.vercel.app
   embeddable: true

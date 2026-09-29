@@ -15,8 +15,7 @@ description: >-
 
 
   The game was entered in Vibe Jam 2026, where it placed 246th among 945
-  entries. According to the creator's information, it was built with Codex,
-  OpenAI's coding tool.
+  entries. The creator built it with Codex, OpenAI's coding tool.
 play:
   url: https://jianghu-ascendant.pages.dev
   embeddable: true

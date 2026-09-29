@@ -15,8 +15,8 @@ description: >-
 
 
   It was made for Vibe Jam 2026 and renders in Three.js. The creator says it was
-  inspired by a post from the three.js account, and lists Codex as the tool used
-  to build it.
+  inspired by a post from the three.js account, and that they built it with
+  Codex.
 play:
   url: https://vocgame.com
   embeddable: true

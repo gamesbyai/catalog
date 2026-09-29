@@ -14,8 +14,8 @@ description: >-
   conditions you work in.
 
 
-  According to the creator, the game was made with Claude and Codex, and it runs
-  in the Godot engine. The tools are credited as the creator's statement.
+  According to its README, the game was made with Claude and Codex, and it runs
+  in the Godot engine. It is a single-player game.
 play:
   url: https://pocket-salvage.web.app
   embeddable: true

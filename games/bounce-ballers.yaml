@@ -16,9 +16,9 @@ description: >-
   visual style.
 
 
-  It was entered in Vibe Jam 2026 and is built with the Phaser framework. The
-  known tooling for the project includes Codex from OpenAI, which was used
-  during development of the game.
+  It was entered in Vibe Jam 2026, where it placed 308th out of 945 entries, and
+  is built with the Phaser framework. The creator built it with Codex from
+  OpenAI.
 play:
   url: https://bounceballers.com
   embeddable: true

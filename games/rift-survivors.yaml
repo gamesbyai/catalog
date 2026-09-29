@@ -17,7 +17,7 @@ description: >-
 
   The creator started out making games for feature phones and built this one
   under a 1MB size limit, a constraint that recalled that early work. It was
-  submitted to Vibe Jam 2026, and the creator's tooling included Claude Code.
+  submitted to Vibe Jam 2026, and the creator built it with Claude Code.
 play:
   url: https://rift-survivors.pages.dev
   embeddable: true

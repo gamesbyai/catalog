@@ -11,11 +11,11 @@ description: >-
   The appeal is in the role swap. Most people have spent time prompting
   chatbots, and this puts them in the position of the thing being prompted. It
   sits between a puzzle, a simulation, and a small educational lesson, aiming to
-  give a feel for how text gets predicted rather than a technical explanation.
+  give a feel for how text gets predicted.
 
 
   It was entered in Vibe Jam 2026, where it placed 112th out of 945 entries. The
-  creator built it with Claude Code. It is marked as playable on mobile and is
+  creator built it with Claude Code. It is playable on mobile and is
   single-player.
 play:
   url: https://next-token-please.abacatogames.com

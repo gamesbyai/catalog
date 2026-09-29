@@ -16,8 +16,8 @@ description: >-
 
 
   It was an entry in Vibe Jam 2026, where it placed 76th among 945 entries. It
-  runs in the browser on Three.js, and the creator's statement credits Codex as
-  the tool used to build it.
+  runs in the browser on Three.js, and the creator built it with Codex. It is a
+  single-player game.
 play:
   url: https://portroyal1691.vercel.app
   embeddable: true

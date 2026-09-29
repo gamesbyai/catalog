@@ -15,8 +15,7 @@ description: >-
 
 
   It was built with Three.js and entered in Vibe Jam 2026, where it ranked 140th
-  among 945 entries. Its author, Jody Bernal, is credited as the creator, and
-  the project used Cursor during development.
+  among 945 entries. The creator used Cursor during development.
 play:
   url: https://skycritters.io
   embeddable: true

@@ -16,8 +16,7 @@ description: >-
 
 
   The game was made for Vibe Jam 2026, where it placed 299th out of 945 entries.
-  It runs on the HTML canvas, and the creator's listing names Codex as the tool
-  used to build it.
+  It runs on the HTML canvas, and the creator built it with Codex.
 play:
   url: https://er.lediana.net
   embeddable: true

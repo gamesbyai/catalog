@@ -16,7 +16,7 @@ description: >-
 
 
   It was entered in Vibe Jam 2026, where it placed 390th among 945 entries. The
-  creator's submission names Claude Code as the tool used to build it.
+  creator says they built it with Claude Code. It runs in the browser.
 play:
   url: https://caprush.vercel.app/index.html
   embeddable: true
