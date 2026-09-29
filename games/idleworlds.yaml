@@ -1,0 +1,61 @@
+slug: idleworlds
+title: IdleWorlds
+tagline: Train a character in a text-based online RPG that keeps progressing
+  while you're away.
+description: >-
+  IdleWorlds is a text-based multiplayer RPG that runs in the browser. You
+  create a character and set it to work, then check back in as it gains progress
+  over time. Advancement continues even when you are offline, so a session is a
+  short visit to collect results and choose what comes next.
+
+
+  The game leans on an old-school MMORPG feel, with rare loot to chase and an
+  economy driven entirely by players. It is free to play in the browser and
+  works on mobile. The creator built it out of frustration with idle and MMO
+  games that turn paywalled, bloated, or shut down, and aims for a simple
+  long-term check-in game that respects your time.
+
+
+  According to the creator, the game was built with Codex, and it was submitted
+  to Vibe Jam 2026, where it placed 122nd out of 945 entries. It is a browser
+  project with shared online play between players.
+play:
+  url: https://idleworlds.com
+  embeddable: false
+  platforms:
+    - browser
+    - mobile
+creator:
+  name: matduke
+  handle: matduke
+  x: matduke
+made:
+  models: []
+  providers:
+    - openai
+  tools:
+    - codex
+  aiShare: most
+  source: Vibe Jam 2026 submission form
+  evidence: creator
+tech:
+  multiplayer: online
+genres:
+  - rpg
+  - idle
+jam:
+  event: vibe-jam-2026
+  rank: 122
+  entries: 945
+media:
+  cover: games/idleworlds/cover
+  screenshots:
+    - games/idleworlds/shot-1
+    - games/idleworlds/shot-2
+dates:
+  added: 2026-09-29
+  updated: 2026-09-29
+status: live
+provenance:
+  foundVia: scout:vibejam-2026
+  scannedAt: 2026-09-29T16:15:11.295Z

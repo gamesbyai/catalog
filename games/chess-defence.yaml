@@ -1,0 +1,58 @@
+slug: chess-defence
+title: Chess Defence
+tagline: Place chess pieces to hold off zombie waves and keep your king alive.
+description: >-
+  Chess Defence is a tower-defense strategy game built around classic chess
+  units. Zombie waves advance on your king, and you deploy chess pieces to stop
+  them. Each run is a series of waves where positioning and piece choice decide
+  whether the king survives.
+
+
+  The idea is to take a familiar board game and turn it into something
+  different. Pieces take the role of defensive towers, so knowing how chess
+  units work carries over into planning your defense against the undead. It also
+  runs on mobile devices.
+
+
+  The creator built it with Cursor using Three.js for the 3D presentation. It
+  was made for Vibe Jam 2026, and the creator says the jam pushed them to
+  finally start a project they had been considering for a while.
+play:
+  url: https://chessdefence.com
+  embeddable: true
+  platforms:
+    - browser
+    - mobile
+creator:
+  name: indierdcr
+  handle: indierdcr
+  x: indierdcr
+made:
+  models: []
+  tools:
+    - cursor
+  aiShare: most
+  source: Vibe Jam 2026 submission form
+  evidence: creator
+tech:
+  engine: threejs
+  multiplayer: single
+genres:
+  - strategy
+  - tower-defense
+jam:
+  event: vibe-jam-2026
+  rank: 135
+  entries: 945
+media:
+  cover: games/chess-defence/cover
+  screenshots:
+    - games/chess-defence/shot-1
+    - games/chess-defence/shot-2
+dates:
+  added: 2026-09-29
+  updated: 2026-09-29
+status: live
+provenance:
+  foundVia: scout:vibejam-2026
+  scannedAt: 2026-09-29T16:15:11.314Z

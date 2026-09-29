@@ -1,0 +1,58 @@
+slug: bayou-blitz
+title: Bayou Blitz
+tagline: Collect crawfish through the bayou while dodging hungry gators.
+description: >-
+  Bayou Blitz is a 3D action-adventure set in a swampy bayou. The player moves
+  through the wetland gathering crawfish while steering clear of gators that
+  threaten the route. A run comes down to picking safe paths, grabbing as much
+  food as possible, and avoiding contact with the predators.
+
+
+  The Louisiana-flavored setting gives the game a clear identity, and the goal
+  is easy to grasp at a glance. It supports multiplayer and is playable on
+  mobile devices as well as desktop browsers. The game was entered in Vibe Jam
+  2026, where it placed 147th among 945 entries.
+
+
+  According to the creator, the game was built with Cursor, and it renders its
+  3D scenes with Three.js. The creator describes themselves as a returning
+  participant in the jam who enjoys the competition.
+play:
+  url: https://gogg.cloud
+  embeddable: true
+  platforms:
+    - browser
+    - mobile
+creator:
+  name: lanb135
+  handle: lanb135
+  x: lanb135
+made:
+  models: []
+  tools:
+    - cursor
+  aiShare: most
+  source: Vibe Jam 2026 submission form
+  evidence: creator
+tech:
+  engine: threejs
+  multiplayer: online
+genres:
+  - action
+  - adventure
+jam:
+  event: vibe-jam-2026
+  rank: 147
+  entries: 945
+media:
+  cover: games/bayou-blitz/cover
+  screenshots:
+    - games/bayou-blitz/shot-1
+    - games/bayou-blitz/shot-2
+dates:
+  added: 2026-09-29
+  updated: 2026-09-29
+status: live
+provenance:
+  foundVia: scout:vibejam-2026
+  scannedAt: 2026-09-29T16:15:11.325Z

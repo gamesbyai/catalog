@@ -1,0 +1,61 @@
+slug: grand-quack-auto
+title: Grand Quack Auto
+tagline: Honk your way through a city as a rubber duck and escalate the chaos.
+description: >-
+  Grand Quack Auto puts you in the webbed feet of a rubber duck loose in a city.
+  Your main tool is a honk button, and the more havoc you cause, the further the
+  duck climbs from its humble start as Lil' Quacker. Each stage of the climb
+  raises the stakes of the mayhem.
+
+
+  The premise mixes open-city crime-game antics with the mischievous animal
+  energy of a goose prank sim. The duck's rise ends with a gun-wielding persona
+  called Duck Norris, so a tiny noisemaker gradually turns into a full-blown
+  menace. The tone stays silly throughout, built around a joke that keeps
+  escalating.
+
+
+  It was built in Three.js for Vibe Jam 2026, and the creator states the code
+  was written entirely by AI. The creator used Claude Code for the work. The
+  game also runs on mobile devices.
+play:
+  url: https://grand-quack-auto.pages.dev
+  embeddable: true
+  platforms:
+    - browser
+    - mobile
+creator:
+  name: UdayMydam
+  handle: udaymydam
+  x: UdayMydam
+made:
+  models: []
+  providers:
+    - anthropic
+  tools:
+    - claude-code
+  aiShare: all
+  source: Vibe Jam 2026 submission form
+  evidence: creator
+tech:
+  engine: threejs
+  multiplayer: single
+genres:
+  - action
+  - simulation
+jam:
+  event: vibe-jam-2026
+  rank: 153
+  entries: 945
+media:
+  cover: games/grand-quack-auto/cover
+  screenshots:
+    - games/grand-quack-auto/shot-1
+    - games/grand-quack-auto/shot-2
+dates:
+  added: 2026-09-29
+  updated: 2026-09-29
+status: live
+provenance:
+  foundVia: scout:vibejam-2026
+  scannedAt: 2026-09-29T16:15:11.329Z

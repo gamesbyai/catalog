@@ -1,0 +1,58 @@
+slug: gun-ladder
+title: Gun Ladder
+tagline: Fight in a first-person arena and score the most kills in five minutes.
+description: >-
+  Gun Ladder is a first-person arena shooter played in five-minute rounds. Each
+  player spawns into the arena with a randomly assigned weapon and tries to rack
+  up eliminations. When the timer runs out, the player with the most kills wins
+  the round.
+
+
+  The random weapon on every spawn keeps each life different, so players have to
+  adapt to whatever they are handed instead of relying on a favorite loadout.
+  Rounds are short and the goal is simple, which suits quick matches against
+  other players online. It also runs on mobile devices.
+
+
+  The creator says the game grew from fond childhood memories of classic arena
+  shooters. It was built with Cursor on top of Three.js and entered in Vibe Jam
+  2026.
+play:
+  url: https://gun.doppelshift.de
+  embeddable: true
+  platforms:
+    - browser
+    - mobile
+creator:
+  name: merlinshabaj
+  handle: merlinshabaj
+  x: merlinshabaj
+made:
+  models: []
+  tools:
+    - cursor
+  aiShare: most
+  source: Vibe Jam 2026 submission form
+  evidence: creator
+tech:
+  engine: threejs
+  multiplayer: online
+genres:
+  - shooter
+  - action
+jam:
+  event: vibe-jam-2026
+  rank: 137
+  entries: 945
+media:
+  cover: games/gun-ladder/cover
+  screenshots:
+    - games/gun-ladder/shot-1
+    - games/gun-ladder/shot-2
+dates:
+  added: 2026-09-29
+  updated: 2026-09-29
+status: live
+provenance:
+  foundVia: scout:vibejam-2026
+  scannedAt: 2026-09-29T16:15:11.316Z

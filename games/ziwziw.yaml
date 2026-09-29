@@ -1,0 +1,56 @@
+slug: ziwziw
+title: ZiwZiw
+tagline: Race your piece across the board to reach your opponent's starting point first.
+description: >-
+  ZiwZiw is a two-player board game where the goal is to be first to reach the
+  opponent's starting point. The rules are meant to be understood at a glance,
+  so a match starts quickly. Players take turns moving across the board,
+  balancing advancement against blocking the other side.
+
+
+  The game grew out of the creator's fondness for chess. The aim was a simpler
+  ruleset that anyone can pick up right away, while still asking for focus and
+  strategic thinking during play. That gives it a short learning curve with room
+  to improve as you spot better plans.
+
+
+  It supports multiplayer and runs on mobile devices. ZiwZiw was submitted to
+  Vibe Jam 2026, and the creator says it was built with Cursor.
+play:
+  url: https://ziwziw.com
+  embeddable: true
+  platforms:
+    - browser
+    - mobile
+creator:
+  name: lordahmed3d
+  handle: lordahmed3d
+  x: lordahmed3d
+made:
+  models: []
+  tools:
+    - cursor
+  aiShare: most
+  source: Vibe Jam 2026 submission form
+  evidence: creator
+tech:
+  multiplayer: online
+genres:
+  - board
+  - strategy
+jam:
+  event: vibe-jam-2026
+  rank: 150
+  entries: 945
+media:
+  cover: games/ziwziw/cover
+  screenshots:
+    - games/ziwziw/shot-1
+    - games/ziwziw/shot-2
+dates:
+  added: 2026-09-29
+  updated: 2026-09-29
+status: live
+provenance:
+  foundVia: scout:vibejam-2026
+  scannedAt: 2026-09-29T16:15:11.326Z

@@ -1,0 +1,60 @@
+slug: kurve-royale
+title: Kurve Royale
+tagline: Fly a trail-leaving craft and outlast rival pilots inside a shrinking dome.
+description: >-
+  Kurve Royale is a 3D survival game in which pilots drop into a dome that keeps
+  shrinking. Each pilot flies a craft that leaves a trail behind it, and the aim
+  is to stay airborne longer than everyone else as the safe space closes in.
+
+
+  The game blends the trail-avoidance idea of classic curve games with battle
+  royale pacing, moved into three dimensions. Rivals share the arena in
+  multiplayer, so the trails and the shrinking boundary create constant
+  pressure. It is built for browsers and is set up to work on mobile devices as
+  well.
+
+
+  It was submitted to Vibe Jam 2026, where it placed 174th out of 945 entries.
+  The creator lists Codex as the tool used to build it, with Three.js handling
+  the 3D rendering.
+play:
+  url: https://kurveroyale.com
+  embeddable: false
+  platforms:
+    - browser
+    - mobile
+creator:
+  name: Bamieater
+  handle: bamieater
+  x: Bamieater
+made:
+  models: []
+  providers:
+    - openai
+  tools:
+    - codex
+  aiShare: most
+  source: Vibe Jam 2026 submission form
+  evidence: creator
+tech:
+  engine: threejs
+  multiplayer: online
+genres:
+  - action
+  - io
+jam:
+  event: vibe-jam-2026
+  rank: 174
+  entries: 945
+media:
+  cover: games/kurve-royale/cover
+  screenshots:
+    - games/kurve-royale/shot-1
+    - games/kurve-royale/shot-2
+dates:
+  added: 2026-09-29
+  updated: 2026-09-29
+status: live
+provenance:
+  foundVia: scout:vibejam-2026
+  scannedAt: 2026-09-29T16:15:11.342Z

@@ -1,0 +1,56 @@
+slug: eurotune
+title: eurotune
+tagline: Answer Eurovision questions in a quick quiz built for phones and browsers.
+description: >-
+  Eurotune is a quiz game centered on the Eurovision Song Contest. The player
+  works through questions about the contest and picks answers to test how much
+  they know. It is a single-player game with no multiplayer mode, and it is set
+  up to be playable on mobile devices.
+
+
+  The game is a small, focused project made for a game jam, with a clear theme
+  that fans of the contest can pick up right away. It is filed under puzzle,
+  though its core is trivia. The creator has said it was made with a partner in
+  mind, which gives it a personal touch.
+
+
+  According to the creator, the game was built with Cursor. No further details
+  about the models or other tools involved have been shared.
+play:
+  url: https://eurotune.net
+  embeddable: true
+  platforms:
+    - browser
+    - mobile
+creator:
+  name: k_vaiders
+  handle: k-vaiders
+  x: k_vaiders
+made:
+  models: []
+  tools:
+    - cursor
+  aiShare: most
+  source: Vibe Jam 2026 submission form
+  evidence: creator
+tech:
+  multiplayer: single
+genres:
+  - trivia
+  - puzzle
+jam:
+  event: vibe-jam-2026
+  rank: 156
+  entries: 945
+media:
+  cover: games/eurotune/cover
+  screenshots:
+    - games/eurotune/shot-1
+    - games/eurotune/shot-2
+dates:
+  added: 2026-09-29
+  updated: 2026-09-29
+status: live
+provenance:
+  foundVia: scout:vibejam-2026
+  scannedAt: 2026-09-29T16:15:11.330Z

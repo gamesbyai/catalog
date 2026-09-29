@@ -1,0 +1,56 @@
+slug: jump-ninja
+title: Jump Ninja
+tagline: Charge your jump and hop upward as a ninja in a simple platformer.
+description: >-
+  Jump Ninja is a platformer built around a single idea: charge up your jump,
+  then let go to leap. The controls are kept deliberately small, so a run comes
+  down to judging how much power a given gap or ledge needs and timing each hop.
+
+
+  The design aims at people who want something to pick up quickly without a long
+  story or layered mechanics. It is set up to run on phones and other devices as
+  well as desktop, so a short session can happen anywhere.
+
+
+  The creator, a parent who found complex games had become a chore, says the
+  goal was a game anyone can play at any time on any device. The creator built
+  it with Lovable, and it renders in Three.js. It was entered in Vibe Jam 2026.
+play:
+  url: https://jumpninja.fun
+  embeddable: true
+  platforms:
+    - browser
+    - mobile
+creator:
+  name: playpareho
+  handle: playpareho
+  x: playpareho
+made:
+  models: []
+  tools:
+    - lovable
+  aiShare: most
+  source: Vibe Jam 2026 submission form
+  evidence: creator
+tech:
+  engine: threejs
+  multiplayer: single
+genres:
+  - platformer
+  - casual
+jam:
+  event: vibe-jam-2026
+  rank: 133
+  entries: 945
+media:
+  cover: games/jump-ninja/cover
+  screenshots:
+    - games/jump-ninja/shot-1
+    - games/jump-ninja/shot-2
+dates:
+  added: 2026-09-29
+  updated: 2026-09-29
+status: live
+provenance:
+  foundVia: scout:vibejam-2026
+  scannedAt: 2026-09-29T16:15:11.313Z
