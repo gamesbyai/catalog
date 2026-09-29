@@ -8,10 +8,10 @@ description: >-
   slices, and works through the adventure inside the browser.
 
 
-  The project is a deliberate technical choice: it was made for Vibe Jam 2026,
-  where the creator chose to build a 2.5D game in Phaser rather than take the
-  more common route of using a dedicated 3D library. The result is a retro look
-  produced by a 2D engine. It runs instantly in the browser.
+  The project is a deliberate technical choice. For Vibe Jam 2026, the creator
+  built a 2.5D game in Phaser instead of reaching for a dedicated 3D library,
+  the more common route. The result is a retro look produced by a 2D engine. It
+  runs instantly in the browser.
 
 
   The creator built it with Claude Code. In the Vibe Jam 2026 ranking, it placed

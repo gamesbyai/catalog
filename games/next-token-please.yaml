@@ -4,8 +4,8 @@ tagline: Pick the next word one token at a time and play the part of a language 
 description: >-
   Next Token Please reverses the usual relationship with language models.
   Instead of typing prompts and reading replies, the player sits on the model's
-  side and builds text by choosing tokens one at a time, making the same kind of
-  decision a model makes at every step of generating a sentence.
+  side and builds text by choosing tokens one at a time. Each pick is the same
+  kind of decision a model makes at every step of generating a sentence.
 
 
   The appeal is in the role swap. Most people have spent time prompting
