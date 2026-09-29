@@ -68,7 +68,7 @@ jobs:
           REF: ${{ steps.pr.outputs.ref }}
           ISSUE: ${{ steps.pr.outputs.issue }}
           NOTIFY_TOKEN: ${{ secrets.INTERNAL_NOTIFY_TOKEN }}
-          NOTIFY_URL: ${{ vars.NOTIFY_URL }}
+          NOTIFY_URL: ${{ secrets.NOTIFY_URL }}
         run: |
           [ -s action.json ] || { echo "no valid command"; exit 0; }
           action=$(jq -r .action action.json)

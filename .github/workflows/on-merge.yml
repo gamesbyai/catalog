@@ -26,7 +26,7 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
           NOTIFY_TOKEN: ${{ secrets.INTERNAL_NOTIFY_TOKEN }}
-          NOTIFY_URL: ${{ vars.NOTIFY_URL }}
+          NOTIFY_URL: ${{ secrets.NOTIFY_URL }}
           SHA: ${{ github.sha }}
         run: |
           [ -n "$NOTIFY_TOKEN" ] && [ -n "$NOTIFY_URL" ] || exit 0
