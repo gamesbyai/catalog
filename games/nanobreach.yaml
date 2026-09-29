@@ -1,0 +1,62 @@
+slug: nanobreach
+title: NanoBreach
+tagline: Plan and execute tactical hacks in a 3D roguelike where action unfolds
+  as you move.
+description: >-
+  NanoBreach is a 3D action-strategy roguelike that blends the hacking theme of
+  an older roguelike with tactical, squad-style planning. The creator describes
+  it as a mix of Superhot, Commandos, and a hack-style roguelike, so each run
+  asks the player to think through positioning and timing before committing to
+  moves.
+
+
+  The game is presented as a next-generation take on a classic roguelike the
+  creator admires. It is not a straight 3D port; the creator says many things
+  were changed, and the original serves as inspiration rather than a blueprint.
+  That mix of stealth-tactics influence and roguelike structure gives it a
+  distinct flavor among jam entries.
+
+
+  It was built for Vibe Jam 2026 with Three.js, and the creator built it with
+  Claude Code. It placed 570th out of 945 entries in the jam.
+play:
+  url: https://nanobreach.questtracers.com
+  embeddable: true
+  platforms:
+    - browser
+creator:
+  name: Josepho
+  handle: josepho
+  x: Josepho
+made:
+  models: []
+  providers:
+    - anthropic
+  tools:
+    - claude-code
+  aiShare: most
+  source: Vibe Jam 2026 submission form
+  evidence: creator
+tech:
+  engine: threejs
+  multiplayer: single
+genres:
+  - action
+  - strategy
+  - roguelike
+jam:
+  event: vibe-jam-2026
+  rank: 570
+  entries: 945
+media:
+  cover: games/nanobreach/cover
+  screenshots:
+    - games/nanobreach/shot-1
+    - games/nanobreach/shot-2
+dates:
+  added: 2026-09-29
+  updated: 2026-09-29
+status: live
+provenance:
+  foundVia: scout:vibejam-2026
+  scannedAt: 2026-09-29T18:39:24.750Z

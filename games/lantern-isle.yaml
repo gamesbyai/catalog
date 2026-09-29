@@ -1,0 +1,58 @@
+slug: lantern-isle
+title: Lantern Isle
+tagline: Help island residents earn back crystal shards and restore shrines in a
+  cozy adventure.
+description: >-
+  Lantern Isle is a cozy 3D adventure spread across six islands, each home to
+  charming characters who need a hand. Players explore, help the residents, and
+  earn back the crystal shards that belong to them. Kindness is the way forward,
+  and each shard brings a shrine closer to being restored.
+
+
+  The story runs underneath the errands. As the shrines come back to life, the
+  player pieces together a bittersweet mystery about why the Guardian Star went
+  dark. The gentle, friendly tone draws on the creator's fondness for Animal
+  Crossing and Poptropica, which they played while growing up.
+
+
+  The game was submitted to Vibe Jam 2026 and runs in the browser with Three.js.
+  It is playable on mobile as well as desktop, and it is a single-player
+  experience.
+play:
+  url: https://ktaing.com/lantern-isle
+  embeddable: true
+  platforms:
+    - browser
+    - mobile
+creator:
+  name: kristytaing
+  handle: kristytaing
+  x: kristytaing
+made:
+  models: []
+  tools: []
+  aiShare: most
+  source: Vibe Jam 2026 submission form
+  evidence: inferred
+tech:
+  engine: threejs
+  multiplayer: single
+genres:
+  - adventure
+  - casual
+jam:
+  event: vibe-jam-2026
+  rank: 585
+  entries: 945
+media:
+  cover: games/lantern-isle/cover
+  screenshots:
+    - games/lantern-isle/shot-1
+    - games/lantern-isle/shot-2
+dates:
+  added: 2026-09-29
+  updated: 2026-09-29
+status: live
+provenance:
+  foundVia: scout:vibejam-2026
+  scannedAt: 2026-09-29T18:39:24.761Z

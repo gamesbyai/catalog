@@ -1,0 +1,59 @@
+slug: panic-push-cosmic-arena
+title: "Panic Push: Cosmic Arena"
+tagline: Shove rivals off a cosmic arena platform in chaotic multiplayer brawls.
+description: >-
+  Panic Push: Cosmic Arena is a multiplayer party brawler where players compete
+  on a floating arena set in space. The goal is to shove opponents out of the
+  ring while staying on it yourself. Each round is a short, chaotic scramble,
+  and the last player standing comes out on top.
+
+
+  The creator describes it as a mix of sumo and Beyblade-style games, and that
+  shows in the pushing and collision-driven fights. The bright cosmic setting
+  keeps the mood light, and the fast pace suits quick sessions with other
+  people.
+
+
+  It was made for Vibe Jam 2026 using the Phaser framework. The creator states
+  that Codex was part of the build process, and the game placed 580th among 945
+  entries in the jam.
+play:
+  url: https://panic-push-cosmic-arena.vercel.app
+  embeddable: true
+  platforms:
+    - browser
+creator:
+  name: summerlilac___
+  handle: summerlilac
+  x: summerlilac___
+made:
+  models: []
+  providers:
+    - openai
+  tools:
+    - codex
+  aiShare: most
+  source: Vibe Jam 2026 submission form
+  evidence: creator
+tech:
+  engine: phaser
+  multiplayer: online
+genres:
+  - party
+  - action
+jam:
+  event: vibe-jam-2026
+  rank: 580
+  entries: 945
+media:
+  cover: games/panic-push-cosmic-arena/cover
+  screenshots:
+    - games/panic-push-cosmic-arena/shot-1
+    - games/panic-push-cosmic-arena/shot-2
+dates:
+  added: 2026-09-29
+  updated: 2026-09-29
+status: live
+provenance:
+  foundVia: scout:vibejam-2026
+  scannedAt: 2026-09-29T18:39:24.757Z

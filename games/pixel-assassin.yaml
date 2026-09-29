@@ -1,0 +1,60 @@
+slug: pixel-assassin
+title: Pixel Assassin
+tagline: Kill enemies to take their weapons and survive endless pixelated levels.
+description: >-
+  Pixel Assassin is a 3D action shooter where you play a pixel-styled killer
+  facing a steady stream of enemies. Defeating an enemy earns you a weapon, so
+  your loadout depends on who you take down. The goal is to last through levels
+  that keep coming with no final stage.
+
+
+  The weapon-pickup loop ties offense to progress: you can't just wait out a
+  fight, because kills are how you get better gear. The tags also point to a
+  strategic side, since choosing which enemies to go after and when affects how
+  long you survive. The game runs in the browser and is marked as playable on
+  mobile.
+
+
+  It was made for Vibe Jam 2026, where it placed 571st out of 945 entries. The
+  creator built it with Claude Code on Three.js.
+play:
+  url: https://pixel-assassin.vercel.app
+  embeddable: true
+  platforms:
+    - browser
+    - mobile
+creator:
+  name: Justin_lords
+  handle: justin-lords
+  x: Justin_lords
+made:
+  models: []
+  providers:
+    - anthropic
+  tools:
+    - claude-code
+  aiShare: most
+  source: Vibe Jam 2026 submission form
+  evidence: creator
+tech:
+  engine: threejs
+  multiplayer: single
+genres:
+  - action
+  - shooter
+jam:
+  event: vibe-jam-2026
+  rank: 571
+  entries: 945
+media:
+  cover: games/pixel-assassin/cover
+  screenshots:
+    - games/pixel-assassin/shot-1
+    - games/pixel-assassin/shot-2
+dates:
+  added: 2026-09-29
+  updated: 2026-09-29
+status: live
+provenance:
+  foundVia: scout:vibejam-2026
+  scannedAt: 2026-09-29T18:39:24.751Z

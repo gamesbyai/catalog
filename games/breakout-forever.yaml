@@ -1,0 +1,57 @@
+slug: breakout-forever
+title: Breakout Forever
+tagline: Bounce a ball off a paddle to break bricks in a classic arcade style
+description: >-
+  Breakout Forever is a take on the classic brick-breaking arcade game. The
+  player controls a paddle at the bottom of the screen, keeps a ball in play,
+  and knocks out bricks above by bouncing the ball into them. The goal is to
+  keep clearing bricks without letting the ball fall past the paddle.
+
+
+  The game keeps to the familiar Breakout formula, aiming for a fresh version of
+  a well-known arcade idea rather than a new set of rules. Its simple, immediate
+  action makes it easy to pick up for a quick session.
+
+
+  The creator says they built it with the Gemini app, and it runs on Phaser. It
+  was entered in Vibe Jam 2026, where it placed 583rd out of 945 entries.
+play:
+  url: https://cool-down.live
+  embeddable: true
+  platforms:
+    - browser
+creator:
+  name: StellarBear1252
+  handle: stellarbear1252
+  x: StellarBear1252
+made:
+  models: []
+  providers:
+    - google
+  tools:
+    - gemini-app
+  aiShare: most
+  source: Vibe Jam 2026 submission form
+  evidence: creator
+tech:
+  engine: phaser
+  multiplayer: single
+genres:
+  - arcade
+  - action
+jam:
+  event: vibe-jam-2026
+  rank: 583
+  entries: 945
+media:
+  cover: games/breakout-forever/cover
+  screenshots:
+    - games/breakout-forever/shot-1
+    - games/breakout-forever/shot-2
+dates:
+  added: 2026-09-29
+  updated: 2026-09-29
+status: live
+provenance:
+  foundVia: scout:vibejam-2026
+  scannedAt: 2026-09-29T18:39:24.759Z

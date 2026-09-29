@@ -1,0 +1,61 @@
+slug: floom
+title: floom
+tagline: Drift through a shared canvas, plant seeds, and grow flowers alongside
+  strangers.
+description: >-
+  floom is a quiet multiplayer canvas where players drift around a shared space
+  and work with seeds. Nothing is scored and there is no fixed goal. A session
+  is about wandering, placing seeds, and watching what grows from the actions of
+  everyone present.
+
+
+  The focus is on small, unplanned connections between strangers. One player's
+  seed can meet another's, and the result is sound and flowers appearing on the
+  canvas. The mood is cozy and unhurried. It was inspired by how people shape
+  the world around them and how that world changes in response. It also runs on
+  mobile.
+
+
+  The creator built it with Claude Code, using PixiJS for rendering, and entered
+  it in Vibe Jam 2026, where it placed 587th among 945 entries.
+play:
+  url: https://floom-game.vercel.app
+  embeddable: true
+  platforms:
+    - browser
+    - mobile
+creator:
+  name: jeremiespoken
+  handle: jeremiespoken
+  x: jeremiespoken
+made:
+  models: []
+  providers:
+    - anthropic
+  tools:
+    - claude-code
+  aiShare: most
+  source: Vibe Jam 2026 submission form
+  evidence: creator
+tech:
+  engine: pixijs
+  multiplayer: online
+genres:
+  - simulation
+  - casual
+jam:
+  event: vibe-jam-2026
+  rank: 587
+  entries: 945
+media:
+  cover: games/floom/cover
+  screenshots:
+    - games/floom/shot-1
+    - games/floom/shot-2
+dates:
+  added: 2026-09-29
+  updated: 2026-09-29
+status: live
+provenance:
+  foundVia: scout:vibejam-2026
+  scannedAt: 2026-09-29T18:39:24.763Z

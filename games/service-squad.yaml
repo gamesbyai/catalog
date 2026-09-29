@@ -1,0 +1,60 @@
+slug: service-squad
+title: Service Squad
+tagline: Manage a repair business and fix broken things yourself in first person
+description: >-
+  Service Squad is a hybrid of management strategy and hands-on repair action.
+  The player runs a service operation from above, then switches to a
+  first-person view to carry out the repairs personally. Balancing the business
+  side with the fieldwork is the core of each session.
+
+
+  The mix of tycoon-style decisions and first-person repair work sets it apart
+  from a typical management sim. Instead of only watching numbers, the player
+  steps into the job itself. It is built for casual play and runs on mobile as
+  well.
+
+
+  It was made by a solo developer using Flutter and Dart for the frontend and a
+  Node.js backend. The developer says the project was a way to learn how new AI
+  tools work, and it was entered in Vibe Jam 2026. The creator's tool list
+  includes Antigravity.
+play:
+  url: https://service-sim.netlify.app
+  embeddable: true
+  platforms:
+    - browser
+    - mobile
+creator:
+  name: ralphcanapa
+  handle: ralphcanapa
+  x: ralphcanapa
+made:
+  models: []
+  providers:
+    - google
+  tools:
+    - antigravity
+  aiShare: most
+  source: Vibe Jam 2026 submission form
+  evidence: creator
+tech:
+  multiplayer: single
+genres:
+  - simulation
+  - management
+jam:
+  event: vibe-jam-2026
+  rank: 557
+  entries: 945
+media:
+  cover: games/service-squad/cover
+  screenshots:
+    - games/service-squad/shot-1
+    - games/service-squad/shot-2
+dates:
+  added: 2026-09-29
+  updated: 2026-09-29
+status: live
+provenance:
+  foundVia: scout:vibejam-2026
+  scannedAt: 2026-09-29T18:39:24.742Z
