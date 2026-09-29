@@ -1,0 +1,58 @@
+slug: dyson-defender
+title: Dyson Defender
+tagline: Circle a Dyson sphere and shoot down alien ships before they reach it.
+description: >-
+  Dyson Defender is a 3D shooter set around a giant Dyson sphere. You pilot a
+  ship that flies around the structure and fires at waves of incoming alien
+  vessels. Each run is a defensive stand: the goal is to destroy the attackers
+  before any of them get to the sphere.
+
+
+  The setup gives the shooting a clear purpose. Instead of simply clearing a
+  screen, you are guarding a single megastructure, so you have to think about
+  where to position your ship and which enemies are closest to reaching it.
+  Waves keep coming, which turns each session into a test of how long you can
+  hold the line.
+
+
+  The game runs in the browser on Three.js. According to the listing, the
+  creator built it with a mix of Cursor, Claude, Grok, and gptme, so several AI
+  assistants took part in the work.
+play:
+  url: https://dyson-defender.vercel.app
+  embeddable: true
+  platforms:
+    - browser
+creator:
+  name: Unknown creator
+  handle: dyson-defender
+made:
+  models: []
+  providers:
+    - anthropic
+    - xai
+  tools:
+    - cursor
+    - claude-ai
+    - grok-app
+  aiShare: unknown
+  source: Project README
+  evidence: creator
+tech:
+  engine: threejs
+  multiplayer: single
+genres:
+  - shooter
+  - arcade
+media:
+  cover: games/dyson-defender/cover
+  screenshots:
+    - games/dyson-defender/shot-1
+    - games/dyson-defender/shot-2
+dates:
+  added: 2026-09-29
+  updated: 2026-09-29
+status: live
+provenance:
+  foundVia: scout:awesome-cc0
+  scannedAt: 2026-09-29T18:39:28.275Z

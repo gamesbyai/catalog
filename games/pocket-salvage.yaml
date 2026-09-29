@@ -1,0 +1,55 @@
+slug: pocket-salvage
+title: Pocket Salvage
+tagline: Swing a crane, switch tools, and sort scrap into bins before time runs out.
+description: >-
+  Pocket Salvage is a scrap-sorting game built around a swinging crane. Each
+  round, you steer the crane over a pile of junk, pick items up, and drop them
+  into the matching bins. A countdown limits every level, so the goal is to sort
+  as much as you can before it hits zero.
+
+
+  The crane can switch between a magnet and a claw, so each piece of scrap calls
+  for a choice of tool. The swinging motion adds a timing challenge to every
+  grab. The game spans five levels, each with its own weather, which changes the
+  conditions you work in.
+
+
+  According to the creator, the game was made with Claude and Codex, and it runs
+  in the Godot engine. The tools are credited as the creator's statement.
+play:
+  url: https://pocket-salvage.web.app
+  embeddable: true
+  platforms:
+    - browser
+creator:
+  name: Unknown creator
+  handle: pocket-salvage
+made:
+  models: []
+  providers:
+    - anthropic
+    - openai
+  tools:
+    - claude-ai
+    - codex
+  aiShare: unknown
+  source: Project README
+  evidence: creator
+tech:
+  engine: godot
+  multiplayer: single
+genres:
+  - arcade
+  - casual
+media:
+  cover: games/pocket-salvage/cover
+  screenshots:
+    - games/pocket-salvage/shot-1
+    - games/pocket-salvage/shot-2
+dates:
+  added: 2026-09-29
+  updated: 2026-09-29
+status: live
+provenance:
+  foundVia: scout:awesome-cc0
+  scannedAt: 2026-09-29T18:39:28.293Z
