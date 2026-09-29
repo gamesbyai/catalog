@@ -4,16 +4,15 @@ tagline: Drift through a shared canvas, plant seeds, and grow flowers alongside
   strangers.
 description: >-
   floom is a quiet multiplayer canvas where players drift around a shared space
-  and work with seeds. Nothing is scored and there is no fixed goal. A session
-  is about wandering, placing seeds, and watching what grows from the actions of
-  everyone present.
+  and work with seeds. Play is open-ended. A session is about wandering, placing
+  seeds, and watching what grows from the actions of everyone present.
 
 
   The focus is on small, unplanned connections between strangers. One player's
   seed can meet another's, and the result is sound and flowers appearing on the
   canvas. The mood is cozy and unhurried. It was inspired by how people shape
-  the world around them and how that world changes in response. It also runs on
-  mobile.
+  the world around them and how that world changes in response. It runs in the
+  browser and also on mobile.
 
 
   The creator built it with Claude Code, using PixiJS for rendering, and entered

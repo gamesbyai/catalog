@@ -15,8 +15,7 @@ description: >-
 
 
   The creator states that it was built with GPT-5 and rendered with HTML5
-  Canvas, so it runs directly in a web browser without any plugins or extra
-  installs.
+  Canvas, so it runs directly in a web browser. It is built for solo play.
 play:
   url: https://gisnep.com/doomscroll
   embeddable: true

@@ -16,7 +16,7 @@ description: >-
 
 
   The visuals are built with Three.js, which draws the randomly generated
-  creatures in 3D inside the browser, so nothing needs to be installed to play.
+  creatures in 3D inside the browser. It is built for solo play.
 play:
   url: https://slaythespore.netlify.app
   embeddable: true

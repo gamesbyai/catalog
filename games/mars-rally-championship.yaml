@@ -10,8 +10,8 @@ description: >-
 
   The setting is the main hook: a rally circuit on the red planet, inspired by
   the idea of crewed missions to Mars becoming real in the near future. The game
-  is a single-player experience with no multiplayer mode, so each run is a solo
-  effort to chase a better result.
+  is a single-player experience, so each run is a solo effort to chase a better
+  result.
 
 
   The creator built it with Claude Code, and it uses Three.js for its 3D

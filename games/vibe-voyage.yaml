@@ -16,7 +16,7 @@ description: >-
 
   It was built with Three.js for the Vibe Jam 2026 and placed 596th out of 945
   entries. The creator built it with Claude Code. It is aimed at desktop
-  browsers rather than mobile devices.
+  browsers.
 play:
   url: https://vibe.voyage
   embeddable: true

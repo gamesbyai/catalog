@@ -1,6 +1,6 @@
 slug: all-in-texas-hold-em
 title: All In Texas Hold'em
-tagline: Play Texas Hold'em poker against opponents with no ads getting in the way.
+tagline: Play free, uninterrupted Texas Hold'em poker in your browser or on mobile.
 description: >-
   All In Texas Hold'em is a browser poker game built around the classic Texas
   Hold'em format. You sit at the table, receive your hole cards, and decide
@@ -8,14 +8,14 @@ description: >-
   session continues as long as you keep chips in your stack.
 
 
-  The main draw is its ad-free design. The creator wanted a way to play poker
-  online without interruptions, so the game presents the table and the betting
-  action without banners or pop-ups. It is free to play and also works on mobile
-  devices, making quick hands easy to pick up.
+  The main draw is uninterrupted play. The creator wanted a way to play poker
+  online that keeps the table and the betting action in view. It is free to play
+  and also works on mobile devices, making quick hands easy to pick up.
 
 
-  The game was an entry in Vibe Jam 2026, and the creator built it with Claude
-  Code. It is a single-player experience rather than a multiplayer one.
+  The game was an entry in Vibe Jam 2026, where it placed 311th out of 945
+  entries, and the creator built it with Claude Code. It is a single-player
+  experience.
 play:
   url: https://allintexasholdem.com
   embeddable: true

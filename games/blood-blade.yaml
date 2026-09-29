@@ -9,14 +9,14 @@ description: >-
 
 
   The focus is narrow on purpose: the creator loves the directional combat of
-  Mount & Blade and wanted to recreate it with melee only, leaving out mounted
-  play. The game supports multiplayer, so duels can be fought against other
-  people rather than only scripted enemies.
+  Mount & Blade and wanted to recreate its melee fighting. The game supports
+  multiplayer, so duels can be fought against other people rather than only
+  scripted enemies.
 
 
   It was built with Three.js for 3D rendering. The creator's submission lists
   Claude and Codex as the AI tools used, and the game was entered in Vibe Jam
-  2026.
+  2026, where it placed 474th out of 945 entries.
 play:
   url: https://bloodandblade.hexpandify.com
   embeddable: true

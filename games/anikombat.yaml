@@ -10,14 +10,14 @@ description: >-
 
 
   The game offers a ranked ladder for players who want competitive tension,
-  alongside casual online matches for lower-stakes play. Guest access means
-  there is no sign-up step before the first fight. It also runs on mobile
+  alongside casual online matches for lower-stakes play. It also runs on mobile
   devices, and multiplayer is part of the design.
 
 
-  It was entered in Vibe Jam 2026, is built with Three.js, and the creator says
-  they used Cursor. The creator says the project comes from a long-standing love
-  of fighting games and their combos, matchups, and competitive feel.
+  It was entered in Vibe Jam 2026, where it placed 226th out of 945 entries. It
+  is built with Three.js, and the creator says they used Cursor. The creator
+  says the project comes from a long-standing love of fighting games and their
+  combos, matchups, and competitive feel.
 play:
   url: https://anikombat.com
   embeddable: true

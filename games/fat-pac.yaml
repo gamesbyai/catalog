@@ -16,8 +16,7 @@ description: >-
 
 
   Fat Pac was entered in Vibe Jam 2026 and draws its graphics on an HTML canvas.
-  It was built with Claude Code, and it plays in the browser without any
-  multiplayer component or dedicated mobile layout.
+  It was built with Claude Code, and it plays in the browser.
 play:
   url: https://fatpac.vercel.app
   embeddable: true

@@ -15,8 +15,8 @@ description: >-
   each draft a clear measure of success.
 
 
-  According to the creator, the game was built with Claude and Kimi. No specific
-  model versions are named, and the tools used beyond Claude are not detailed.
+  According to the creator, the game was built with Claude and Kimi. It is a
+  single-player game that runs in the browser.
 play:
   url: https://20-0.com
   embeddable: true

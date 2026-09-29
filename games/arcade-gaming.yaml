@@ -16,7 +16,7 @@ description: >-
 
 
   The creator built it with Claude Code, and the 3D presentation runs on
-  Three.js. It is a single-player experience with no multiplayer mode.
+  Three.js.
 play:
   url: https://arcadegaming.app
   embeddable: true

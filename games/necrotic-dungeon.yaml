@@ -16,7 +16,7 @@ description: >-
 
 
   The creator says the game was built with Lovable, the AI app builder, as part
-  of the jam submission. No other tools or models are named for the project.
+  of the jam submission. It is a single-player game that runs in the browser.
 play:
   url: https://necroticdungeon.com
   embeddable: true

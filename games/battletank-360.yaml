@@ -15,8 +15,7 @@ description: >-
 
 
   The game was an entry in Vibe Jam 2026, where it placed 191st out of 945
-  entries. The creator built it with Cursor. It is a single-player experience
-  with no multiplayer mode.
+  entries. The creator built it with Cursor. It is built for solo play.
 play:
   url: https://battletank360.com
   embeddable: true

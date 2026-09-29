@@ -11,10 +11,10 @@ description: >-
 
 
   The game is presented as a next-generation take on a classic roguelike the
-  creator admires. It is not a straight 3D port; the creator says many things
-  were changed, and the original serves as inspiration rather than a blueprint.
-  That mix of stealth-tactics influence and roguelike structure gives it a
-  distinct flavor among jam entries.
+  creator admires. The creator says many things were changed, and the original
+  serves as inspiration rather than a blueprint. That mix of stealth-tactics
+  influence and roguelike structure gives it a distinct flavor among jam
+  entries.
 
 
   It was built for Vibe Jam 2026 with Three.js, and the creator built it with

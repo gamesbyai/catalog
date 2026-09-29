@@ -10,13 +10,13 @@ description: >-
 
   The game is a tribute to Heroes of Might and Magic 3, and it borrows that
   series' style of tactical, unit-based combat and faction variety. It was made
-  by a single developer and runs entirely in the browser, so there is nothing to
-  install before starting a match.
+  by a single developer and runs entirely in the browser, so you can start a
+  match right from the page.
 
 
-  The creator built it with Claude Code. It was submitted to Vibe Jam 2026,
-  where it placed 405th out of 945 entries, and it stands as a solo project from
-  start to finish.
+  According to the creator, it was built with Claude Code. It was submitted to
+  Vibe Jam 2026, where it placed 405th out of 945 entries, and it stands as a
+  solo project from start to finish.
 play:
   url: https://heroescm-jam.fly.dev
   embeddable: true

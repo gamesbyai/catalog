@@ -11,12 +11,11 @@ description: >-
   The game draws on the Only Up style of climbing challenge, where progress is
   measured by altitude and every jump matters. It runs in the browser using
   Three.js and works on mobile devices as well as desktop, so a climb can start
-  without an install.
+  straight from the page.
 
 
   It was entered in Vibe Jam 2026, where it placed 420th among 945 entries. The
-  creator built it with Cursor, and the game is a single-player experience with
-  no multiplayer mode.
+  creator built it with Cursor, and the game is a single-player experience.
 play:
   url: https://jumpory.com
   embeddable: true

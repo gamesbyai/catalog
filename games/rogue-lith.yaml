@@ -14,8 +14,8 @@ description: >-
   as desktop. It placed 34th out of 945 entries in Vibe Jam 2026.
 
 
-  The creator built it with Cursor, using Three.js for the 3D rendering, which
-  lets the whole game run directly in a web browser without any installation.
+  According to the creator, it was built with Cursor, using Three.js for the 3D
+  rendering, which lets the whole game run directly in a web browser.
 play:
   url: https://roguelith.com
   embeddable: true

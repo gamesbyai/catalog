@@ -15,8 +15,8 @@ description: >-
 
 
   The creator built it in the Godot engine and used Codex as the AI coding tool.
-  It was entered in Vibe Jam 2026 as a single-player game that is not made for
-  mobile play.
+  It was entered in Vibe Jam 2026 as a single-player game that runs in the
+  browser.
 play:
   url: https://almostsurgery.ragim.dev
   embeddable: true

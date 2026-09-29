@@ -8,11 +8,10 @@ description: >-
   areas, playing directly in the browser.
 
 
-  The main draw is the setting. Gaussian Splats are static and carry no
-  geometry, so the project had to work out collision, dynamic objects,
-  navigation and rendering compatibility on its own. The result puts a shooter
-  inside a photographic space instead of a hand-modeled level. It was entered in
-  Vibe Jam 2026 and also supports mobile.
+  The main draw is the setting. Gaussian Splats are static, so the project had
+  to work out collision, dynamic objects, navigation and rendering compatibility
+  on its own. The result puts a shooter inside a photographic space instead of a
+  hand-modeled level. It was entered in Vibe Jam 2026 and also supports mobile.
 
 
   The creator built it with Cursor and says most of the technical obstacles were

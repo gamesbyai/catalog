@@ -14,8 +14,8 @@ description: >-
 
 
   The repository marks the project as made with Claude Code. It draws to an HTML
-  canvas in the browser, so nothing needs to be installed to play, and
-  procedural generation is the main technique behind its look and sound.
+  canvas in the browser, and procedural generation is the main technique behind
+  its look and sound. It is a single-player game.
 play:
   url: https://rehan-remade.github.io/hollow-crown
   embeddable: true

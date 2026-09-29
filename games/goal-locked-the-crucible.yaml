@@ -17,7 +17,7 @@ description: >-
 
   The creator built it with Antigravity, and it runs on Three.js in the browser.
   It was entered in Vibe Jam 2026 and is playable on mobile devices as well as
-  desktop. It is a single-player experience rather than a multiplayer one.
+  desktop.
 play:
   url: https://goal-locked.vercel.app
   embeddable: true

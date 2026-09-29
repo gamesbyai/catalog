@@ -4,8 +4,8 @@ tagline: Answer Eurovision questions in a quick quiz built for phones and browse
 description: >-
   Eurotune is a quiz game centered on the Eurovision Song Contest. The player
   works through questions about the contest and picks answers to test how much
-  they know. It is a single-player game with no multiplayer mode, and it is set
-  up to be playable on mobile devices.
+  they know. It is a single-player game, and it is set up to be playable on
+  mobile devices as well as in a browser.
 
 
   The game is a small, focused project made for a game jam, with a clear theme
@@ -14,8 +14,8 @@ description: >-
   mind, which gives it a personal touch.
 
 
-  According to the creator, the game was built with Cursor. No further details
-  about the models or other tools involved have been shared.
+  According to the creator, the game was built with Cursor for Vibe Jam 2026,
+  where it placed 156th out of 945 entries.
 play:
   url: https://eurotune.net
   embeddable: true

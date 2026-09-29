@@ -14,8 +14,8 @@ description: >-
   be a quiet solo build or a shared one.
 
 
-  It was entered in Vibe Jam 2026, and the creator built it with Cursor. It runs
-  in the browser on Three.js and is not aimed at mobile devices.
+  It was entered in Vibe Jam 2026, where it placed 533rd out of 945 entries, and
+  the creator built it with Cursor. It runs in the browser on Three.js.
 play:
   url: https://vibefarm.vercel.app
   embeddable: true

@@ -6,13 +6,13 @@ description: >-
   MoonCraft is a first-person shooter set on the moon. The player moves through
   a lunar arena, aims, and fires at opponents in fast, arena-style combat. It
   supports multiplayer, so matches can be played against other people, and it is
-  built to run in a browser.
+  built to run in a browser. You can play alone or with other players.
 
 
   The game takes its cue from Quake 3, and that shows in the emphasis on quick
   movement and direct gunplay. The lunar setting gives the arena shooter
   template a different backdrop from the usual industrial corridors. It also
-  runs on mobile devices, which is not typical for a shooter in this style.
+  runs on mobile devices.
 
 
   It was entered in Vibe Jam 2026, where it placed 460th out of 945 entries. The

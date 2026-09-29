@@ -17,10 +17,9 @@ description: >-
 
 
   You have a slow low-power mode, a noisy boost and thrown decoys that pull
-  guards away. Noise zones and low crates offer cover. There are no image or
-  audio files: visuals come from shaders and generated geometry, and sound is
-  synthesized with Web Audio. The creator built it with Claude Code and Claude
-  Opus 5.5, with Japanese and English text.
+  guards away. Noise zones and low crates offer cover. Visuals come from shaders
+  and generated geometry, and sound is synthesized with Web Audio. The creator
+  built it with Claude Code and Claude Opus 5.5, with Japanese and English text.
 play:
   url: https://tanuu5.github.io/out-of-the-box
   embeddable: true

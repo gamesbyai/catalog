@@ -4,15 +4,15 @@ tagline: Drive through an endless generated city, choosing turns at every
   junction to stay alive.
 description: >-
   Racernaut is a driving game set in a city that streams in as you go. The
-  streets are procedurally generated, so the route ahead is never the same. Each
-  junction forces a quick decision about which turn to take, and a wrong choice
-  ends the run.
+  streets are procedurally generated, so the route ahead is different every
+  time. Each junction forces a quick decision about which turn to take, and a
+  wrong choice ends the run.
 
 
   The appeal is in the pressure of the choices. Because the layout builds itself
-  around the car, you can't memorize a route and have to read each intersection
-  as it appears. The genre mix leans toward racing, with platformer and
-  simulation elements in the blend. It also runs on mobile.
+  around the car, you have to read each intersection as it appears. The genre
+  mix leans toward racing, with platformer and simulation elements in the blend.
+  It also runs on mobile.
 
 
   The creator built it with Claude Code and Three.js for the Vibe Jam 2026. They

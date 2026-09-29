@@ -8,11 +8,11 @@ description: >-
   is brief and built around atmosphere and discovery rather than combat.
 
 
-  The game was made for Vibe Jam 2026 under tight rules: ASCII graphics only, a
-  download under 5MB, and no outside assets. All sound is generated
-  procedurally, with the exception of an AI-generated voice-over that carries
-  part of the story. Those limits shape its look and mood, with text characters
-  and synthesized audio building the dread.
+  The game was made for Vibe Jam 2026 under tight rules: ASCII graphics and a
+  download under 5MB. All sound is generated procedurally, with the exception of
+  an AI-generated voice-over that carries part of the story. Those limits shape
+  its look and mood, with text characters and synthesized audio building the
+  dread.
 
 
   The creator built it with Cursor, and it placed fifth out of 945 entries at

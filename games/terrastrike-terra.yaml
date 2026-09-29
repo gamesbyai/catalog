@@ -15,9 +15,9 @@ description: >-
   guardian's growth in power mirrors the world's recovery.
 
 
-  The game was entered in Vibe Jam 2026 and is built with Three.js. The tooling
-  associated with it includes Google's Antigravity, though the details of how it
-  was used are not given.
+  The game was entered in Vibe Jam 2026, where it placed 540th out of 945
+  entries, and is built with Three.js. The tooling associated with it includes
+  Google's Antigravity.
 play:
   url: https://terrastrike.pages.dev
   embeddable: true

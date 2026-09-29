@@ -15,8 +15,8 @@ description: >-
 
 
   The game supports multiplayer and runs on mobile as well as desktop, so a
-  match can start quickly without setup. It was entered in Vibe Jam 2026, and
-  the creator built it with Lovable.
+  match can start quickly. It was entered in Vibe Jam 2026, and the creator
+  built it with Lovable.
 play:
   url: https://snapfc.com
   embeddable: true

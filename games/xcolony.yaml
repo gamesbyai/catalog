@@ -16,8 +16,7 @@ description: >-
 
 
   The game was entered in Vibe Jam 2026 and is built on Three.js. The catalog
-  records Claude Code as the tool behind it, though the exact details of how it
-  was used are not spelled out.
+  records Claude Code as the tool behind it.
 play:
   url: https://x-colony.vercel.app
   embeddable: true

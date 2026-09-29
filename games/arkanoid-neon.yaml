@@ -19,8 +19,8 @@ description: >-
 
   The creator states that all of the code, graphics, sound, music and levels
   were made by Claude Opus 5.5 through Claude Code, from a single one-sentence
-  request. It uses plain JavaScript with Canvas 2D and Web Audio, with no
-  dependencies or build step. It is a fan project inspired by Taito's Arkanoid.
+  request. It uses plain JavaScript with Canvas 2D and Web Audio. It is a fan
+  project inspired by Taito's Arkanoid.
 play:
   url: https://jack-c3l2w.github.io/arkanoid-neon
   embeddable: true

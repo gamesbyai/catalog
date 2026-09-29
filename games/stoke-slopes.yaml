@@ -11,8 +11,7 @@ description: >-
   Results are saved to persistent leaderboards, so every descent counts toward a
   standing that carries over between sessions. The lodge acts as a shared hub
   where players gather before picking a run. The game runs on mobile as well as
-  desktop, and it was written in vanilla JavaScript and hosted on Cloudflare
-  without third-party services.
+  desktop, and it was written in vanilla JavaScript and hosted on Cloudflare.
 
 
   The creator built it with Claude Code as an entry in Vibe Jam 2026, where it

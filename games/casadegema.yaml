@@ -17,9 +17,8 @@ description: >-
 
 
   The creator says it was built entirely through conversation with Claude Opus
-  5.5 in Cursor, with no hand-written code. It is a single HTML file using
-  Canvas 2D art, spring physics for the branches and petals, and music generated
-  live with Web Audio.
+  5.5 in Cursor. It is a single HTML file using Canvas 2D art, spring physics
+  for the branches and petals, and music generated live with Web Audio.
 play:
   url: https://1xaispark.com/games/casa-de-gemas
   embeddable: true

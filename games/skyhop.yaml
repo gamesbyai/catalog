@@ -8,14 +8,14 @@ description: >-
   playable on mobile devices as well as desktop.
 
 
-  The game is a fresh take on HexGL, the browser racer the creator felt had gone
-  without updates for a long time. The main aim is to show what current WebGL
-  rendering can look like, so the visuals are the focus, with a space setting
-  and a sense of speed.
+  The game is a fresh take on HexGL, the browser racer the creator felt was long
+  overdue for an update. The main aim is to show what current WebGL rendering
+  can look like, so the visuals are the focus, with a space setting and a sense
+  of speed.
 
 
-  The creator built it with Cursor for the Vibe Jam 2026 and rendered it with
-  Three.js. It is a single-player experience with no multiplayer mode.
+  The creator built it with Cursor for the Vibe Jam 2026, where it placed 564th
+  out of 945 entries, and rendered it with Three.js.
 play:
   url: https://sidcode.github.io/SkyHop
   embeddable: true

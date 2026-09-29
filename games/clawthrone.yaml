@@ -15,8 +15,7 @@ description: >-
 
 
   The creator built it with Codex for the Vibe Jam 2026, where it was one of 945
-  entries. It runs as a persistent online world and is not designed for mobile
-  play.
+  entries. It runs as a persistent online world.
 play:
   url: https://clawthrone.com
   embeddable: false

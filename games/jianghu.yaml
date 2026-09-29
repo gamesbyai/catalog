@@ -11,7 +11,7 @@ description: >-
   The pairing of a card-battler structure with the wandering swordfighter world
   of wuxia is the main draw. It runs in the browser with 3D rendering through
   Three.js, and it is set up to work on mobile devices as well as desktop. It is
-  a single-player experience with no multiplayer mode.
+  a single-player experience where you build a deck and play cards each turn.
 
 
   The game was entered in Vibe Jam 2026, where it placed 246th among 945

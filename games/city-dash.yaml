@@ -15,7 +15,8 @@ description: >-
 
 
   The creator built it with Claude Code, and it renders its 3D city using
-  Three.js, so it runs directly in the browser without extra installs.
+  Three.js, so it runs directly in the browser. It sits in the racing and arcade
+  genres.
 play:
   url: https://citygame.goranmitev.com
   embeddable: true

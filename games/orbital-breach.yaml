@@ -9,11 +9,10 @@ description: >-
   where position in three dimensions matters as much as aim.
 
 
-  The zero-G setting changes how a firefight works, since there is no up or down
-  to anchor to. The creator points to Orson Scott Card's Ender's Game as
-  inspiration, which suggests the weightless battle-room style of combat. It
-  runs in the browser on Three.js and is set up for both desktop and mobile
-  play.
+  The zero-G setting changes how a firefight works, since every direction is
+  open. The creator points to Orson Scott Card's Ender's Game as inspiration,
+  which suggests the weightless battle-room style of combat. It runs in the
+  browser on Three.js and is set up for both desktop and mobile play.
 
 
   The creator built it with Claude Code. It was entered in Vibe Jam 2026, the AI

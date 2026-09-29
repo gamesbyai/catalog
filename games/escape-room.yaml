@@ -15,7 +15,7 @@ description: >-
 
 
   According to the creator, the game was built with Claude Code and rendered
-  with Three.js. It is single-player, with no multiplayer mode.
+  with Three.js. It is single-player.
 play:
   url: https://escape-room.ybouane.com
   embeddable: true

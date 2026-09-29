@@ -15,9 +15,8 @@ description: >-
 
 
   The creator says the idea came from wanting a western take on Medabots-style
-  robot battle games, one that doesn't require reading Japanese to play. It was
-  built with Three.js, and the creator used Codex. It was entered in Vibe Jam
-  2026.
+  robot battle games. It was built with Three.js, and the creator used Codex. It
+  was entered in Vibe Jam 2026.
 play:
   url: https://pokebots-vibejamv.netlify.app
   embeddable: true

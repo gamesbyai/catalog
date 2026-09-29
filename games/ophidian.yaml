@@ -9,9 +9,9 @@ description: >-
 
 
   The main touch is the set of on-screen arrow keys built for mobile play.
-  Phones and tablets get a direct way to steer without a keyboard, while the
-  stripped-down presentation keeps attention on the movement and timing that
-  make the genre work.
+  Phones and tablets get a direct way to steer, while the stripped-down
+  presentation keeps attention on the movement and timing that make the genre
+  work.
 
 
   The game is rendered with PixiJS. According to the listing, it was built with

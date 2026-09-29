@@ -4,19 +4,19 @@ tagline: Run, jump, and shoot through side-scrolling levels in a Metal
   Slug-style action game.
 description: >-
   Metal Assault is a run-and-gun action game in the style of Metal Slug. It runs
-  in the browser on an HTML5 canvas, and the player moves through side-scrolling
-  levels while shooting enemies in a classic arcade fashion.
+  in the browser on an HTML5 canvas, and the player runs and jumps through
+  side-scrolling levels while shooting enemies in a classic arcade fashion.
 
 
   Everything in the game is generated in code. The pixel-art sprites, the
-  levels, the sound effects, and the music are all procedural, so there are no
-  external assets to load. It uses plain JavaScript with no dependencies and no
-  build step, which keeps the project small and easy to open and read.
+  levels, the sound effects, and the music are all procedural, so every asset
+  comes from the code itself. It uses plain JavaScript that the browser runs
+  directly, which keeps the project small and easy to open and read.
 
 
-  The repository states that Claude Fable built the whole game with no hand-made
-  assets involved. It is playable through a hosted browser version, so nothing
-  needs to be installed to try it.
+  The repository states that Claude Fable built the whole game, assets included.
+  It is playable through a hosted browser version, so you can try it straight
+  from the page. It is a single-player game.
 play:
   url: https://m-assault-fable.netlify.app
   embeddable: true

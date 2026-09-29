@@ -14,9 +14,8 @@ description: >-
   gain an edge in the arena.
 
 
-  It runs on Three.js and was entered in Vibe Jam 2026. The creator states that
-  Cursor was used to build it, though the extent of AI involvement is not
-  described.
+  It runs on Three.js and was entered in Vibe Jam 2026, where it placed 455th
+  out of 945 entries. The creator states that Cursor was used to build it.
 play:
   url: https://manafight.vercel.app
   embeddable: true

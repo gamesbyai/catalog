@@ -10,15 +10,15 @@ description: >-
 
 
   The game runs in the browser and supports online play with friends, including
-  on mobile. It uses no external assets: the visuals, sparkling water effects,
-  selectable themes, and chiptune music are all produced in code. The shrinking
-  hex floor keeps rounds tense, since every clash risks sending you off an edge.
+  on mobile. The visuals, sparkling water effects, selectable themes, and
+  chiptune music are all produced in code. The shrinking hex floor keeps rounds
+  tense, since every clash risks sending you off an edge.
 
 
   The creator built it with Claude Code as an experiment in how far an AI
   pair-programmer could take a multiplayer 3D browser game, inspired by Pieter
-  Levels' build-in-public approach. It uses Three.js and needs no build step. It
-  was entered in Vibe Jam 2026.
+  Levels' build-in-public approach. It uses Three.js. It was entered in Vibe Jam
+  2026.
 play:
   url: https://pengusmash.com
   embeddable: true

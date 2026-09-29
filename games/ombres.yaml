@@ -20,8 +20,8 @@ description: >-
 
   The look follows the ink outlines and flat colors of Moebius, with a pastel
   desert. The repository states it was designed and built by Claude Opus 5.5
-  from a single brief, with Brieuc Crosson supervising and no human-written
-  code. The work ran as multi-agent workflows in Claude Code.
+  from a single brief, with Brieuc Crosson supervising and all of the code
+  written by the model. The work ran as multi-agent workflows in Claude Code.
 play:
   url: https://ombres.deploy.breizhware.com
   embeddable: true
