@@ -2,14 +2,14 @@
 
 The open catalog behind [gamesbyai.win](https://gamesbyai.win): games made with AI, one YAML file per game.
 
-Every game here was tested by an editor before it went live on the site. Each entry records how the game was made (the AI models and tools, and how much of the code AI wrote, according to the creator), where to play it and who made it.
+Every game here passed automated checks (the play link loads, a Cloudflare URL Scanner malware check, injection checks on the text, our own screenshots) and was approved before it went live on the site. Rankings on the site come from player ratings. Each entry records how the game was made (the AI models and tools, and how much of the code AI wrote, according to the creator), where to play it and who made it.
 
 ## Add your game
 
 1. Use the form at [gamesbyai.win/submit](https://gamesbyai.win/submit/) (opening soon), or
 2. Fork this repo, add `games/<your-game>.yaml` as described in [CONTRIBUTING.md](CONTRIBUTING.md), and open a pull request.
 
-Every entry is reviewed by a human before it goes live.
+Nothing is merged automatically: every entry is approved before it goes live.
 
 ## What gets listed
 

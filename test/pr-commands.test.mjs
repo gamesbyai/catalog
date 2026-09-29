@@ -1,6 +1,7 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
-import { parseCommand, dropTargets } from '../scripts/pr-commands.mjs';
+import * as commands from '../scripts/pr-commands.mjs';
+import { parseCommand, dropTargets, plan } from '../scripts/pr-commands.mjs';
 
 const owner = { author: 'MansGullberg', owners: ['MansGullberg'] };
 
@@ -25,12 +26,10 @@ test('only slugs that exist in the PR are dropped', () => {
   assert.deepEqual(dropTargets(['neon-drift', 'nope'], ['neon-drift', 'tiny-skies']), { remove: ['neon-drift'], unknown: ['nope'] });
 });
 
-test('/score with four 1–5 numbers, optionally for one slug in a batch', () => {
-  assert.deepEqual(parseCommand('/score 4 4 3 5', owner), { score: { fun: 4, polish: 4, originality: 3, aiCraft: 5 } });
-  assert.deepEqual(parseCommand('/score neon-drift 4 4 4 4', owner), { score: { slug: 'neon-drift', fun: 4, polish: 4, originality: 4, aiCraft: 4 } });
-  assert.equal(parseCommand('/score 6 1 1 1', owner), null);
-  assert.equal(parseCommand('/score 4 4 4', owner), null);
-  assert.equal(parseCommand('/score 4 4 4 4', { author: 'someone', owners: ['MansGullberg'] }), null);
+test('there is no /score: rankings come from player votes and the merge is the approval', () => {
+  assert.equal(parseCommand('/score 4 4 3 5', owner), null);
+  assert.equal(parseCommand('/score neon-drift 4 4 4 4', owner), null);
+  assert.equal('applyScore' in commands, false);
 });
 
 test('/reject and /changes carry a short plain reason', () => {
@@ -40,23 +39,9 @@ test('/reject and /changes carry a short plain reason', () => {
   assert.equal(parseCommand('/reject <b>x</b>', owner).reject, 'x');
 });
 
-test('applyScore publishes the entry: score, review date and status live, keeping everything else', async () => {
-  const { applyScore } = await import('../scripts/pr-commands.mjs');
-  const before = '# keep me\nslug: sky-hop\ntitle: Sky Hop\nstatus: draft\nmade:\n  aiShare: most\n';
-  const after = applyScore(before, { fun: 4, polish: 3, originality: 5, aiCraft: 4 }, '2026-09-30');
-  assert.match(after, /# keep me/);
-  assert.match(after, /status: live/);
-  assert.match(after, /editor:\n  score:\n    fun: 4\n    polish: 3\n    originality: 5\n    aiCraft: 4\n  reviewedAt: 2026-09-30/);
-  assert.match(after, /aiShare: most/);
-});
-
-test('commands only touch games the PR adds, never a live game on main', async () => {
-  const { plan } = await import('../scripts/pr-commands.mjs');
-  const read = () => 'slug: a\nstatus: draft\n';
-  assert.deepEqual(plan({ drop: ['a', 'live-game'] }, ['a', 'b'], read, '2026-09-30'), { action: 'drop', files: ['games/a.yaml'] });
-  assert.equal(plan({ score: { slug: 'live-game', fun: 3, polish: 3, originality: 3, aiCraft: 3 } }, ['a', 'b'], read, '2026-09-30').action, 'error');
-  assert.equal(plan({ score: { fun: 3, polish: 3, originality: 3, aiCraft: 3 } }, ['a', 'b'], read, '2026-09-30').action, 'error');
-  const one = plan({ score: { fun: 3, polish: 3, originality: 3, aiCraft: 3 } }, ['a'], read, '2026-09-30');
-  assert.equal(one.file, 'games/a.yaml');
-  assert.match(one.content, /status: live/);
+test('commands only touch games the PR adds, never a live game on main', () => {
+  assert.deepEqual(plan({ drop: ['a', 'live-game'] }, ['a', 'b']), { action: 'drop', files: ['games/a.yaml'] });
+  assert.deepEqual(plan({ reject: 'Not a game' }, ['a']), { action: 'reject', text: 'Not a game' });
+  assert.deepEqual(plan({ changes: 'Add the play link' }, ['a']), { action: 'changes', text: 'Add the play link' });
+  assert.equal(plan({ score: { fun: 3, polish: 3, originality: 3, aiCraft: 3 } }, ['a']), null);
 });

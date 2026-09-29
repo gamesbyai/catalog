@@ -8,13 +8,15 @@ import { join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { parse } from 'yaml';
 import { chromium } from 'playwright';
+import sharp from 'sharp';
 
 export const SLUG = /^[a-z0-9]+(?:-[a-z0-9]+)*$/;
 export const NAMES = ['cover', 'shot-1', 'shot-2'];
 const ROOT = fileURLToPath(new URL('..', import.meta.url));
 
 export const DEFAULTS = {
-  times: [3000, 8000, 14000], // ms after load; the first one is the cover
+  // ms after load. More frames than we keep: pickFrames drops loading and black screens and keeps the best three.
+  times: [2500, 5000, 8000, 11500, 15000],
   navTimeout: 20_000,
   deadline: 70_000, // per game, from start to files on disk
   shotTimeout: 15_000, // WebGL games render in software on CI runners (no GPU), so frames can be slow
@@ -94,6 +96,37 @@ async function closeContext(context, closeTimeout) {
   if (!context) return;
   const closed = await within(context.close().then(() => true, () => true), closeTimeout, false);
   if (!closed) await killBrowser();
+}
+
+const thumbDiff = (a, b) => {
+  let d = 0;
+  for (let i = 0; i < a.length; i++) d += Math.abs(a[i] - b[i]);
+  return d / a.length;
+};
+
+/**
+ * Picks the frames worth showing: drops near-black, near-white and flat frames (loading screens, blank canvases),
+ * orders the rest by detail (entropy), and skips near-duplicates. Returns up to `max` PNG buffers, best first.
+ */
+export async function pickFrames(frames, { max = 3 } = {}) {
+  const info = await Promise.all(
+    frames.map(async (buf) => {
+      const stats = await sharp(buf).stats();
+      const rgb = stats.channels.slice(0, 3);
+      const mean = rgb.reduce((s, c) => s + c.mean, 0) / rgb.length;
+      const sd = rgb.reduce((s, c) => s + c.stdev, 0) / rgb.length;
+      const thumb = await sharp(buf).resize(32, 18, { fit: 'fill' }).greyscale().raw().toBuffer();
+      return { buf, mean, sd, entropy: stats.entropy, thumb };
+    }),
+  );
+  const usable = info.filter((f) => f.mean >= 18 && f.mean <= 245 && f.sd >= 12 && f.entropy >= 3).sort((a, b) => b.entropy - a.entropy);
+  const kept = [];
+  for (const f of usable) {
+    if (kept.some((k) => thumbDiff(k.thumb, f.thumb) < 6)) continue;
+    kept.push(f);
+    if (kept.length === max) break;
+  }
+  return kept.map((f) => f.buf);
 }
 
 /**
@@ -180,15 +213,18 @@ export async function captureOne(url, outDir, opts = {}) {
           shot = await guard(page.screenshot({ type: 'png', timeout: o.shotTimeout }));
         } catch (e) {
           if (e instanceof CaptureError || attempt === 1) {
-            if (i > 0) return shots; // the cover is enough; later shots are a bonus
+            if (i > 0) return shots; // earlier frames are enough; later ones are a bonus
             throw e instanceof CaptureError ? e : new CaptureError('screenshot', firstLine(e));
           }
         }
       }
       shots.push(shot);
       if (i === 0) {
-        // One click in the centre starts games that wait for input.
+        // One click in the centre starts games that wait for input…
         await guard(within(page.mouse.click(o.viewport.width / 2, o.viewport.height / 2), o.clickTimeout));
+      } else if (i === 1) {
+        // …and Enter gets past "press any key" menus.
+        await guard(within(page.keyboard.press('Enter'), o.clickTimeout));
       }
     }
     return shots;
@@ -199,15 +235,18 @@ export async function captureOne(url, outDir, opts = {}) {
     const running = work();
     running.catch(() => {});
     const shots = await guard(running);
-    // Synchronous from here on: the deadline timer cannot fire in between.
+    // The best frames only: a loading screen or a black canvas never becomes a cover.
+    const picked = await pickFrames(shots);
+    if (!picked.length) throw new CaptureError('blank', 'every frame was black, blank or a loading screen');
     mkdirSync(outDir, { recursive: true });
-    shots.forEach((buf, i) => writeFileSync(files[i], buf));
-    result = { ok: true, files: files.slice(0, shots.length), ...(shots.length < files.length ? { partial: true } : {}) };
+    picked.forEach((buf, i) => writeFileSync(files[i], buf));
+    result = { ok: true, files: files.slice(0, picked.length), ...(picked.length < files.length ? { partial: true } : {}) };
   } catch (e) {
     cleanup();
-    const keep = state.shots.slice();
-    if (keep.length && e instanceof CaptureError && (e.reason === 'deadline' || e.reason === 'screenshot')) {
-      // The game froze or ran out of time after its cover: keep what we have.
+    const froze = e instanceof CaptureError && (e.reason === 'deadline' || e.reason === 'screenshot');
+    const keep = froze && state.shots.length ? await pickFrames(state.shots.slice()) : [];
+    if (keep.length) {
+      // The game froze or ran out of time after some good frames: keep those.
       mkdirSync(outDir, { recursive: true });
       keep.forEach((buf, i) => writeFileSync(files[i], buf));
       result = { ok: true, files: files.slice(0, keep.length), partial: true };
