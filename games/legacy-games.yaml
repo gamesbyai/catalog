@@ -10,9 +10,8 @@ description: >-
 
   The whole collection comes to more than 16,500 lines of code and uses no
   outside dependencies or libraries. Every title is built directly on the Canvas
-  API rather than on a game engine, which keeps the project small and easy to
-  read through for anyone curious about how simple browser games are put
-  together.
+  API, with no game engine. That keeps the project small and easy to read for
+  anyone curious about how simple browser games are put together.
 
 
   The repository's topics and the creator's classification credit Claude from
