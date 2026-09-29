@@ -1,0 +1,58 @@
+slug: puzzle-punch
+title: Puzzle-Punch
+tagline: Stack falling blocks in a 1v1 duel and use abilities to sabotage your rival.
+description: >-
+  Puzzle-Punch is a head-to-head take on falling-block puzzles. Two players face
+  off, each clearing lines in their own well while trying to outscore the other.
+  A match plays out as a duel, with the score race pushing you to stack cleanly
+  and act quickly.
+
+
+  The twist is a set of abilities layered on top of the classic formula. Some
+  can hinder your opponent, while others help you build a higher score, so each
+  match mixes stacking skill with decisions about when to strike or when to
+  boost yourself.
+
+
+  It was made for Vibe Jam 2026, where the team set out to combine a competitive
+  game with a puzzle game, using Tetris as the starting point. The creator built
+  it with Claude Code.
+play:
+  url: https://puzzle-punch.com
+  embeddable: true
+  platforms:
+    - browser
+creator:
+  name: El_Perforator
+  handle: el-perforator
+  x: El_Perforator
+made:
+  models: []
+  providers:
+    - anthropic
+  tools:
+    - claude-code
+  aiShare: most
+  source: Vibe Jam 2026 submission form
+  evidence: creator
+tech:
+  multiplayer: online
+genres:
+  - puzzle
+  - action
+jam:
+  event: vibe-jam-2026
+  rank: 397
+  entries: 945
+media:
+  cover: games/puzzle-punch/cover
+  screenshots:
+    - games/puzzle-punch/shot-1
+    - games/puzzle-punch/shot-2
+dates:
+  added: 2026-09-29
+  updated: 2026-09-29
+status: live
+provenance:
+  foundVia: scout:vibejam-2026
+  scannedAt: 2026-09-29T16:37:17.534Z

@@ -1,0 +1,62 @@
+slug: storybook-sword-adventure
+title: Storybook Sword adventure
+tagline: Swing your arms in front of a webcam to slash through fairy-tale worlds.
+description: >-
+  Storybook Sword Adventure is a body-tracking action game. The webcam follows
+  your arms and turns them into a sword, so you play by physically moving around
+  and slashing. Each level is a storybook world, and the goal is to take back
+  the fairy tales that the Story-Eater has stolen.
+
+
+  The controller is your own body rather than a keyboard or gamepad. Swinging a
+  real arm becomes a sword strike on screen, which makes each run more physical
+  than a typical action game. The storybook setting gives the adventure a light
+  fairy-tale framing.
+
+
+  It was built in the browser with Three.js as an entry in Vibe Jam 2026. The
+  creator's stated aim was to make games that use your body as the controller.
+  The creator built it with Claude Code.
+play:
+  url: https://storybook-adventure.netlify.app
+  embeddable: true
+  platforms:
+    - browser
+  controls:
+    - Webcam body tracking
+    - Arm movement swings the sword
+creator:
+  name: RebuffReality
+  handle: rebuffreality
+  x: RebuffReality
+made:
+  models: []
+  providers:
+    - anthropic
+  tools:
+    - claude-code
+  aiShare: most
+  source: Vibe Jam 2026 submission form
+  evidence: creator
+tech:
+  engine: threejs
+  multiplayer: single
+genres:
+  - action
+  - adventure
+jam:
+  event: vibe-jam-2026
+  rank: 428
+  entries: 945
+media:
+  cover: games/storybook-sword-adventure/cover
+  screenshots:
+    - games/storybook-sword-adventure/shot-1
+    - games/storybook-sword-adventure/shot-2
+dates:
+  added: 2026-09-29
+  updated: 2026-09-29
+status: live
+provenance:
+  foundVia: scout:vibejam-2026
+  scannedAt: 2026-09-29T16:37:17.551Z

@@ -1,0 +1,59 @@
+slug: chain-puzzle
+title: Chain Puzzle
+tagline: Link words into chains and use bonuses to push your score higher.
+description: >-
+  Chain Puzzle is a word game about linking words together into as long a chain
+  as possible. Each run is a race to build connections, and the final score
+  depends on how many words you string together and how well you use the bonuses
+  available along the way.
+
+
+  The focus is on the score chase. Bonuses add a layer of decision-making to
+  what would otherwise be a simple chaining exercise, so you have to think about
+  when to spend them for the biggest payoff. It runs on mobile as well as
+  desktop, and it is a single-player experience.
+
+
+  It was entered in Vibe Jam 2026, where it placed 391st out of 945 entries. The
+  creator built it with Claude Code, and said they wanted to learn about game
+  play logic and make something people would enjoy playing.
+play:
+  url: https://cwpuzzle2.purpleprawn.com
+  embeddable: true
+  platforms:
+    - browser
+    - mobile
+creator:
+  name: seanchk
+  handle: seanchk
+  x: seanchk
+made:
+  models: []
+  providers:
+    - anthropic
+  tools:
+    - claude-code
+  aiShare: most
+  source: Vibe Jam 2026 submission form
+  evidence: creator
+tech:
+  multiplayer: single
+genres:
+  - word
+  - puzzle
+jam:
+  event: vibe-jam-2026
+  rank: 391
+  entries: 945
+media:
+  cover: games/chain-puzzle/cover
+  screenshots:
+    - games/chain-puzzle/shot-1
+    - games/chain-puzzle/shot-2
+dates:
+  added: 2026-09-29
+  updated: 2026-09-29
+status: live
+provenance:
+  foundVia: scout:vibejam-2026
+  scannedAt: 2026-09-29T16:37:17.532Z

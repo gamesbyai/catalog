@@ -1,0 +1,59 @@
+slug: echo-ohce
+title: ECHO|OHCE
+tagline: Find your way through a dark dungeon using echolocation pings
+description: >-
+  ECHO|OHCE is a dungeon crawler where the player cannot see the surroundings
+  directly. Instead, a scanner sends out sound pulses that reveal nearby walls
+  and objects for a moment. Each run means moving through dark rooms, reading
+  the returning signals, and finding a way forward.
+
+
+  The scanner design draws on the Odradek device from Death Stranding, and the
+  game leans on that idea of sensing a space rather than looking at it. It mixes
+  action, puzzle, and strategy elements, so timing your pings and choosing your
+  route both matter. The game supports mobile play.
+
+
+  It was entered in Vibe Jam 2026, where it placed 414th among 945 entries. It
+  runs on Three.js, and the creator built it with Codex.
+play:
+  url: https://project-kqtw7.vercel.app
+  embeddable: true
+  platforms:
+    - browser
+    - mobile
+creator:
+  name: JayShugito
+  handle: jayshugito
+  x: JayShugito
+made:
+  models: []
+  providers:
+    - openai
+  tools:
+    - codex
+  aiShare: most
+  source: Vibe Jam 2026 submission form
+  evidence: creator
+tech:
+  engine: threejs
+  multiplayer: single
+genres:
+  - action
+  - puzzle
+jam:
+  event: vibe-jam-2026
+  rank: 414
+  entries: 945
+media:
+  cover: games/echo-ohce/cover
+  screenshots:
+    - games/echo-ohce/shot-1
+    - games/echo-ohce/shot-2
+dates:
+  added: 2026-09-29
+  updated: 2026-09-29
+status: live
+provenance:
+  foundVia: scout:vibejam-2026
+  scannedAt: 2026-09-29T16:37:17.543Z

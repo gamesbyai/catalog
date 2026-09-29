@@ -1,0 +1,57 @@
+slug: helmet-sloshers
+title: Helmet Sloshers
+tagline: Race go-karts through a Finnish holiday, with beer, hot dogs and sauna stops.
+description: >-
+  Helmet Sloshers is a go-kart racing game set in a Finnish paradise and framed
+  as a stag do with the squad. Between races you drink beer, smash hot dogs and
+  sweat it out in the sauna, then head back to the track and do it all again.
+
+
+  The appeal is the tone. Instead of a straight racing circuit, the game wraps
+  its karting in a loop of silly Nordic leisure, where the pre-race and
+  post-race rituals matter as much as the lap itself. It plays as a lighthearted
+  party in the woods.
+
+
+  The game was entered in Vibe Jam 2026 and runs on Three.js. According to the
+  creator, it was built with Claude Code, and it is a single-player experience.
+play:
+  url: https://helmet-sloshers.vercel.app
+  embeddable: true
+  platforms:
+    - browser
+creator:
+  name: danpietrow
+  handle: danpietrow
+  x: danpietrow
+made:
+  models: []
+  providers:
+    - anthropic
+  tools:
+    - claude-code
+  aiShare: most
+  source: Vibe Jam 2026 submission form
+  evidence: creator
+tech:
+  engine: threejs
+  multiplayer: single
+genres:
+  - racing
+  - party
+jam:
+  event: vibe-jam-2026
+  rank: 440
+  entries: 945
+media:
+  cover: games/helmet-sloshers/cover
+  screenshots:
+    - games/helmet-sloshers/shot-1
+    - games/helmet-sloshers/shot-2
+dates:
+  added: 2026-09-29
+  updated: 2026-09-29
+status: live
+provenance:
+  foundVia: scout:vibejam-2026
+  scannedAt: 2026-09-29T16:37:17.561Z

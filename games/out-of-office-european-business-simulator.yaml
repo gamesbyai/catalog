@@ -1,0 +1,61 @@
+slug: out-of-office-european-business-simulator
+title: "OUT OF OFFICE: European Business Simulator"
+tagline: Run a European business while doing as little actual work as possible.
+description: >-
+  OUT OF OFFICE: European Business Simulator is a satirical management sim about
+  running a company in Europe during the summer. The player takes the role of a
+  business owner whose main trait is laziness, and the joke is built around
+  getting by with as little effort as possible.
+
+
+  The tone is tongue-in-cheek, presenting itself as a completely realistic
+  portrait of European business life. The premise leans on the gap between the
+  serious title and the owner's lack of interest in working, which gives the
+  simulation genre a comic twist.
+
+
+  The game was entered in Vibe Jam 2026, where it placed 401 out of 945 entries.
+  The creator built it with Claude Code. It is marked as playable on mobile and
+  is a single-player experience.
+play:
+  url: https://business-tycoon-european-summer-edi.vercel.app
+  embeddable: true
+  platforms:
+    - browser
+    - mobile
+creator:
+  name: jicecream
+  handle: jicecream
+  x: jicecream
+made:
+  models: []
+  providers:
+    - anthropic
+  tools:
+    - claude-code
+  aiShare: most
+  source: Vibe Jam 2026 submission form
+  evidence: creator
+tech:
+  multiplayer: single
+genres:
+  - simulation
+  - casual
+jam:
+  event: vibe-jam-2026
+  rank: 401
+  entries: 945
+media:
+  cover: games/out-of-office-european-business-simulator/cover
+  screenshots:
+    - games/out-of-office-european-business-simulator/shot-1
+    - games/out-of-office-european-business-simulator/shot-2
+dates:
+  added: 2026-09-29
+  updated: 2026-09-29
+status: live
+provenance:
+  foundVia: scout:vibejam-2026
+  scannedAt: 2026-09-29T16:37:17.535Z
+  flags:
+    - mature

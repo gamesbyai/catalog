@@ -1,0 +1,59 @@
+slug: twin-suns-turbo
+title: Twin Suns Turbo
+tagline: Race a pod racer against rivals in a sci-fi take on F1 competition.
+description: >-
+  Twin Suns Turbo is a racing game set in a galaxy far, far away, where the
+  player pilots a pod racer around a track in the style of Formula 1. Each run
+  is a race against other competitors, with the goal of getting around the
+  circuit ahead of the pack.
+
+
+  The game grew out of the creator's wish to try a pod racer of their own after
+  seeing an autonomous racer built for Fullsend.game. That origin gives it a
+  clear point of reference, blending the look of space-opera pod racing with the
+  structure of a motorsport event.
+
+
+  It runs in the browser on Three.js and supports multiplayer and mobile play.
+  The creator says it was vibecoded with Codex, and it was submitted to Vibe Jam
+  2026.
+play:
+  url: https://twinsunsturbo.com
+  embeddable: true
+  platforms:
+    - browser
+    - mobile
+creator:
+  name: brcullum
+  handle: brcullum
+  x: brcullum
+made:
+  models: []
+  providers:
+    - openai
+  tools:
+    - codex
+  aiShare: most
+  source: Vibe Jam 2026 submission form
+  evidence: creator
+tech:
+  engine: threejs
+  multiplayer: online
+genres:
+  - racing
+jam:
+  event: vibe-jam-2026
+  rank: 433
+  entries: 945
+media:
+  cover: games/twin-suns-turbo/cover
+  screenshots:
+    - games/twin-suns-turbo/shot-1
+    - games/twin-suns-turbo/shot-2
+dates:
+  added: 2026-09-29
+  updated: 2026-09-29
+status: live
+provenance:
+  foundVia: scout:vibejam-2026
+  scannedAt: 2026-09-29T16:37:17.554Z

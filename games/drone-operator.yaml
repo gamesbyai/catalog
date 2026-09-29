@@ -1,0 +1,58 @@
+slug: drone-operator
+title: Drone Operator
+tagline: Fly a delivery drone through hazards to drop packages on time and earn cash.
+description: >-
+  Drone Operator is a delivery simulation where you pilot a drone carrying
+  packages across a city. Each run is about getting parcels to their
+  destinations before time runs out, while collecting cash for successful
+  drop-offs. Along the way, the route is crowded with obstacles and threats that
+  make a simple delivery harder.
+
+
+  The hazards give the job its personality. Other drones fly recklessly, an
+  angry driver who lost his job tries to interfere, and eagles hunt in the
+  skies. A wrong move can leave your drone as pet food. It is a multiplayer
+  game, so other pilots can share the airspace.
+
+
+  The creator built it for Vibe Jam 2026 with OpenCode, using Three.js for the
+  3D world. They describe it as a follow-up to a project from the previous year,
+  made to push their own limits.
+play:
+  url: https://drone-operator.cliive.com
+  embeddable: true
+  platforms:
+    - browser
+creator:
+  name: MoneOunchPan
+  handle: moneounchpan
+  x: MoneOunchPan
+made:
+  models: []
+  tools:
+    - opencode
+  aiShare: most
+  source: Vibe Jam 2026 submission form
+  evidence: creator
+tech:
+  engine: threejs
+  multiplayer: online
+genres:
+  - simulation
+  - action
+jam:
+  event: vibe-jam-2026
+  rank: 392
+  entries: 945
+media:
+  cover: games/drone-operator/cover
+  screenshots:
+    - games/drone-operator/shot-1
+    - games/drone-operator/shot-2
+dates:
+  added: 2026-09-29
+  updated: 2026-09-29
+status: live
+provenance:
+  foundVia: scout:vibejam-2026
+  scannedAt: 2026-09-29T16:37:17.533Z

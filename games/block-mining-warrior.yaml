@@ -1,0 +1,60 @@
+slug: block-mining-warrior
+title: Block Mining Warrior
+tagline: Fight in multiplayer block rounds to secure Bitcoin payouts in a fast shooter
+description: >-
+  Block Mining Warrior is a multiplayer shooter played in a browser. Matches are
+  structured as block rounds, and players fight one another in each round to
+  secure Bitcoin payouts. It is described as an MMO shooter, so many players
+  share the same arena at once.
+
+
+  The design draws on the creator's fondness for Quake and Tribes, two shooters
+  known for quick movement and aggressive combat, and combines that with a
+  Bitcoin theme. The mining idea shapes the match structure: each round works
+  like a block, with a reward at stake for the players who come out on top.
+
+
+  The game was entered in Vibe Jam 2026, where it placed 436 out of 945 entries.
+  It runs on Three.js, and the creator built it with Claude Code.
+play:
+  url: https://block-mining-warrior.sayfti.workers.dev
+  embeddable: true
+  platforms:
+    - browser
+creator:
+  name: Sayfs0
+  handle: sayfs0
+  x: Sayfs0
+made:
+  models: []
+  providers:
+    - anthropic
+  tools:
+    - claude-code
+  aiShare: most
+  source: Vibe Jam 2026 submission form
+  evidence: creator
+tech:
+  engine: threejs
+  multiplayer: online
+genres:
+  - shooter
+  - action
+jam:
+  event: vibe-jam-2026
+  rank: 436
+  entries: 945
+media:
+  cover: games/block-mining-warrior/cover
+  screenshots:
+    - games/block-mining-warrior/shot-1
+    - games/block-mining-warrior/shot-2
+dates:
+  added: 2026-09-29
+  updated: 2026-09-29
+status: live
+provenance:
+  foundVia: scout:vibejam-2026
+  scannedAt: 2026-09-29T16:37:17.557Z
+  flags:
+    - crypto

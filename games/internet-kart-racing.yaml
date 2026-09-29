@@ -1,0 +1,59 @@
+slug: internet-kart-racing
+title: Internet Kart Racing
+tagline: Race kart opponents on tracks inspired by internet culture and memes.
+description: >-
+  Internet Kart Racing is a browser kart racer with multiplayer support. Players
+  drive against other racers, aiming to cross the line first. The setting is
+  built around internet culture and memes, and the game describes itself as the
+  South Park of kart racing, pointing to an irreverent, satirical tone.
+
+
+  The meme-heavy theme is what sets it apart from a standard kart racer, giving
+  the races a comic, cartoonish identity. It runs in the browser on Three.js and
+  is playable on mobile as well as desktop, so a race can start without an
+  install.
+
+
+  It was entered in Vibe Jam 2026, where it placed 441st out of 945 entries. The
+  creator states that it was built with Claude Code, Anthropic's coding
+  assistant.
+play:
+  url: https://ikracing.com
+  embeddable: true
+  platforms:
+    - browser
+    - mobile
+creator:
+  name: folarin0x
+  handle: folarin0x
+  x: folarin0x
+made:
+  models: []
+  providers:
+    - anthropic
+  tools:
+    - claude-code
+  aiShare: most
+  source: Vibe Jam 2026 submission form
+  evidence: creator
+tech:
+  engine: threejs
+  multiplayer: online
+genres:
+  - racing
+jam:
+  event: vibe-jam-2026
+  rank: 441
+  entries: 945
+media:
+  cover: games/internet-kart-racing/cover
+  screenshots:
+    - games/internet-kart-racing/shot-1
+    - games/internet-kart-racing/shot-2
+dates:
+  added: 2026-09-29
+  updated: 2026-09-29
+status: live
+provenance:
+  foundVia: scout:vibejam-2026
+  scannedAt: 2026-09-29T16:37:17.562Z

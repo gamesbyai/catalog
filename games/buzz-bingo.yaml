@@ -1,0 +1,60 @@
+slug: buzz-bingo
+title: Buzz Bingo
+tagline: Fill a bingo card with your own predictions and play along as events unfold.
+description: >-
+  Buzz Bingo is a multiplayer social prediction game built around the bingo
+  card. Instead of fixed numbers, players write their own predictions onto a
+  card, then watch a moment, crowd, or community to see which of them come true.
+  Squares get marked as things happen, and the round is a race to complete a
+  line.
+
+
+  The idea comes from the familiar phrase about not having a certain outcome on
+  your bingo card. Buzz Bingo turns that joke into a playable format, so any
+  live event can become a game. Guessing what others will say or do adds a light
+  puzzle and strategy layer to the card you build. It also works on mobile, so
+  players can join from a phone.
+
+
+  According to the creator, the game was built with Codex and entered in Vibe
+  Jam 2026, where it placed 413th out of 945 entries.
+play:
+  url: https://buzzbingo.fun
+  embeddable: true
+  platforms:
+    - browser
+    - mobile
+creator:
+  name: buzzbingofun
+  handle: buzzbingofun
+  x: buzzbingofun
+made:
+  models: []
+  providers:
+    - openai
+  tools:
+    - codex
+  aiShare: most
+  source: Vibe Jam 2026 submission form
+  evidence: creator
+tech:
+  multiplayer: online
+genres:
+  - party
+  - strategy
+jam:
+  event: vibe-jam-2026
+  rank: 413
+  entries: 945
+media:
+  cover: games/buzz-bingo/cover
+  screenshots:
+    - games/buzz-bingo/shot-1
+    - games/buzz-bingo/shot-2
+dates:
+  added: 2026-09-29
+  updated: 2026-09-29
+status: live
+provenance:
+  foundVia: scout:vibejam-2026
+  scannedAt: 2026-09-29T16:37:17.542Z

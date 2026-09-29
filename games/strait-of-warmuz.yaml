@@ -1,0 +1,57 @@
+slug: strait-of-warmuz
+title: Strait Of Warmuz
+tagline: Build up and battle five rivals in a last-player-standing war.
+description: >-
+  Strait Of Warmuz is a multiplayer strategy war game for six players. Each
+  participant builds up and fights using an inventory of resources, and the
+  match continues until only one player remains. The goal is simple: outlast
+  everyone else and be the last man standing.
+
+
+  The game mixes action with strategy, so decisions about what to build and when
+  to fight matter as much as reacting during a clash. Six-person matches keep
+  the pressure on, since every rival is also a target and a threat. It runs in
+  the browser and was rendered with Three.js.
+
+
+  The creator entered it in Vibe Jam 2026 and says they have been making web
+  games for a long time. According to the creator, AI tools made the process
+  much easier, and Cursor is the tool named for its development.
+play:
+  url: https://straitofwarmuz.netlify.app
+  embeddable: true
+  platforms:
+    - browser
+creator:
+  name: madesh02104
+  handle: madesh02104
+  x: madesh02104
+made:
+  models: []
+  tools:
+    - cursor
+  aiShare: most
+  source: Vibe Jam 2026 submission form
+  evidence: creator
+tech:
+  engine: threejs
+  multiplayer: online
+genres:
+  - strategy
+  - action
+jam:
+  event: vibe-jam-2026
+  rank: 424
+  entries: 945
+media:
+  cover: games/strait-of-warmuz/cover
+  screenshots:
+    - games/strait-of-warmuz/shot-1
+    - games/strait-of-warmuz/shot-2
+dates:
+  added: 2026-09-29
+  updated: 2026-09-29
+status: live
+provenance:
+  foundVia: scout:vibejam-2026
+  scannedAt: 2026-09-29T16:37:17.548Z

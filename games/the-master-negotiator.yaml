@@ -1,0 +1,59 @@
+slug: the-master-negotiator
+title: The Master Negotiator
+tagline: Haggle with AI characters who remember past deals, buying low and selling high.
+description: >-
+  The Master Negotiator is a negotiation simulator with a retro CRT look. The
+  player buys low, sells high, and talks their way through haggling sessions
+  with AI-driven characters. A voice mode lets you speak your offers instead of
+  typing them, and each deal turns on how persuasive you are.
+
+
+  Characters remember how earlier deals went, so burning someone once can affect
+  later dealings with them. There is also a multiplayer mode built around PvP
+  betrayal contracts, where other players can double-cross you. It also runs on
+  mobile.
+
+
+  The creator wanted to turn a real-life skill into a game so that shy,
+  introverted people can practice negotiating and avoid getting scammed. The
+  creator built it with Claude Code and entered it in Vibe Jam 2026.
+play:
+  url: https://the-master-negotiator.vercel.app
+  embeddable: true
+  platforms:
+    - browser
+    - mobile
+creator:
+  name: prathampunmiya
+  handle: prathampunmiya
+  x: prathampunmiya
+made:
+  models: []
+  providers:
+    - anthropic
+  tools:
+    - claude-code
+  aiShare: most
+  source: Vibe Jam 2026 submission form
+  evidence: creator
+tech:
+  multiplayer: online
+genres:
+  - strategy
+  - simulation
+jam:
+  event: vibe-jam-2026
+  rank: 382
+  entries: 945
+media:
+  cover: games/the-master-negotiator/cover
+  screenshots:
+    - games/the-master-negotiator/shot-1
+    - games/the-master-negotiator/shot-2
+dates:
+  added: 2026-09-29
+  updated: 2026-09-29
+status: live
+provenance:
+  foundVia: scout:vibejam-2026
+  scannedAt: 2026-09-29T16:37:17.526Z

@@ -1,0 +1,61 @@
+slug: deer-diplomacy
+title: Deer Diplomacy
+tagline: Bow to deer and feed them crackers without letting the herd charge you.
+description: >-
+  You play a tourist wandering Nara Deer Park in Japan. Bowing to a deer earns
+  its trust, and once a deer trusts you, you can feed it rice crackers. The
+  catch is that the herd is watching. If the deer notice you are carrying food,
+  they charge, so each encounter becomes a careful matter of timing and
+  positioning.
+
+
+  The game builds on the real-life habit of Nara's deer bowing back at visitors
+  who bow to them. That gentle exchange is turned into a tense stealth puzzle,
+  since every bow leaves you exposed for about a second and a half. Deciding
+  when to bow, and who is close enough to notice, is what gives the game its
+  pressure.
+
+
+  The creator built it with Claude Code, using Three.js for the 3D scene. It was
+  an entry in Vibe Jam 2026, and it is set up to run on mobile as well.
+play:
+  url: https://deer-diplomacy.vercel.app
+  embeddable: true
+  platforms:
+    - browser
+    - mobile
+creator:
+  name: imshubham31
+  handle: imshubham31
+  x: imshubham31
+made:
+  models: []
+  providers:
+    - anthropic
+  tools:
+    - claude-code
+  aiShare: most
+  source: Vibe Jam 2026 submission form
+  evidence: creator
+tech:
+  engine: threejs
+  multiplayer: single
+genres:
+  - puzzle
+  - stealth
+jam:
+  event: vibe-jam-2026
+  rank: 419
+  entries: 945
+media:
+  cover: games/deer-diplomacy/cover
+  screenshots:
+    - games/deer-diplomacy/shot-1
+    - games/deer-diplomacy/shot-2
+dates:
+  added: 2026-09-29
+  updated: 2026-09-29
+status: live
+provenance:
+  foundVia: scout:vibejam-2026
+  scannedAt: 2026-09-29T16:37:17.546Z

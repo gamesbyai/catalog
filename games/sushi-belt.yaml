@@ -1,0 +1,59 @@
+slug: sushi-belt
+title: Sushi Belt !
+tagline: Grab sushi off a conveyor belt and serve it to impatient customers.
+description: >-
+  Sushi Belt ! is a pixel art time management game set at a conveyor belt sushi
+  counter. Plates roll past, and you grab the right pieces and hand them to
+  customers who are waiting and losing patience. Each run is a race to keep
+  orders filled before anyone gives up and leaves.
+
+
+  Serving quickly in succession builds combos, which push your score higher.
+  Those scores go to a global leaderboard, so every run doubles as an attempt to
+  beat other players. The pace is fast, and the puzzle side comes from matching
+  dishes to orders while the belt keeps moving.
+
+
+  The creator says it was inspired by mobile cooking and time management games,
+  along with a fondness for conveyor belt sushi. It was built with Claude Code
+  and entered in Vibe Jam 2026. It is playable on mobile and is single player.
+play:
+  url: https://sushi-belt.vercel.app
+  embeddable: true
+  platforms:
+    - browser
+    - mobile
+creator:
+  name: 0xsteen
+  handle: 0xsteen
+  x: 0xsteen
+made:
+  models: []
+  providers:
+    - anthropic
+  tools:
+    - claude-code
+  aiShare: most
+  source: Vibe Jam 2026 submission form
+  evidence: creator
+tech:
+  multiplayer: single
+genres:
+  - puzzle
+  - simulation
+jam:
+  event: vibe-jam-2026
+  rank: 416
+  entries: 945
+media:
+  cover: games/sushi-belt/cover
+  screenshots:
+    - games/sushi-belt/shot-1
+    - games/sushi-belt/shot-2
+dates:
+  added: 2026-09-29
+  updated: 2026-09-29
+status: live
+provenance:
+  foundVia: scout:vibejam-2026
+  scannedAt: 2026-09-29T16:37:17.544Z

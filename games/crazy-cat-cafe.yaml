@@ -1,0 +1,57 @@
+slug: crazy-cat-cafe
+title: Crazy Cat Cafe
+tagline: Run a cozy cat cafe while the cats keep knocking your mugs off the counter
+description: >-
+  Crazy Cat Cafe is a cozy cafe management game in which the cafe's cats are the
+  main obstacle. You serve drinks and keep the place running, while the cats
+  keep breaking your mugs. Each session is a balancing act between looking after
+  customers and dealing with the mess the felines leave behind.
+
+
+  The pairing of a relaxed cafe setting with cats that cause trouble gives the
+  game its humor and its tone. It is built to run on mobile as well as in a
+  browser, so a short session fits easily into a spare moment.
+
+
+  The game was entered in Vibe Jam 2026. According to the creator, it began when
+  the kids asked for a game about cats and the creator wanted a coffee. It was
+  built with Bolt and uses the Phaser framework.
+play:
+  url: https://crazycatcafe.22u.ai
+  embeddable: true
+  platforms:
+    - browser
+    - mobile
+creator:
+  name: 22u
+  handle: 22u
+  x: 22u
+made:
+  models: []
+  tools:
+    - bolt
+  aiShare: most
+  source: Vibe Jam 2026 submission form
+  evidence: creator
+tech:
+  engine: phaser
+  multiplayer: single
+genres:
+  - management
+  - casual
+jam:
+  event: vibe-jam-2026
+  rank: 376
+  entries: 945
+media:
+  cover: games/crazy-cat-cafe/cover
+  screenshots:
+    - games/crazy-cat-cafe/shot-1
+    - games/crazy-cat-cafe/shot-2
+dates:
+  added: 2026-09-29
+  updated: 2026-09-29
+status: live
+provenance:
+  foundVia: scout:vibejam-2026
+  scannedAt: 2026-09-29T16:37:17.515Z

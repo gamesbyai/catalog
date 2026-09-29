@@ -1,0 +1,61 @@
+slug: sato-denki-akihabara-tech-shop
+title: Sato Denki — Akihabara Tech Shop
+tagline: Chain fast combo shifts to keep your hospitalized dad's Akihabara tech
+  shop afloat.
+description: >-
+  Sato Denki is a shop simulation set in Akihabara. Your father is in the
+  hospital, and the family's 40-year-old electronics store is in danger of being
+  taken by the bank. You run the counter through quick rounds, working through
+  rapid, Street Fighter-style combo shifts to bring in enough money before the
+  bank wins.
+
+
+  The design borrows from casino machines: short rounds, loud combo feedback,
+  and global stakes meant to pull you into one more run. The game supports
+  multiplayer and runs on mobile. Every sprite in the game was produced with the
+  creator's own AI pixel art tool, which gives the shop a consistent look.
+
+
+  The creator says Claude Code wrote 99% of the code and describes the project
+  as 100% vibe coded. It was built as a jam entry to test the creator's pixel
+  art generator alongside the coding workflow from start to finish.
+play:
+  url: https://sato-denki-eight.vercel.app
+  embeddable: true
+  platforms:
+    - browser
+    - mobile
+creator:
+  name: Unknown creator
+  handle: sato-denki-akihabara-tech-shop
+made:
+  models: []
+  providers:
+    - anthropic
+  tools:
+    - claude-code
+  aiShare: all
+  source: Vibe Jam 2026 submission form
+  evidence: creator
+tech:
+  engine: threejs
+  multiplayer: online
+genres:
+  - simulation
+  - arcade
+jam:
+  event: vibe-jam-2026
+  rank: 438
+  entries: 945
+media:
+  cover: games/sato-denki-akihabara-tech-shop/cover
+  screenshots:
+    - games/sato-denki-akihabara-tech-shop/shot-1
+    - games/sato-denki-akihabara-tech-shop/shot-2
+dates:
+  added: 2026-09-29
+  updated: 2026-09-29
+status: live
+provenance:
+  foundVia: scout:vibejam-2026
+  scannedAt: 2026-09-29T16:37:17.559Z
