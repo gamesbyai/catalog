@@ -17,9 +17,10 @@ description: >-
   desktops, with touch controls for both orientations.
 
 
-  According to its creator, the game was first built with GPT-6 Astra in Codex
-  and then remade with Claude Opus 5.5 in Claude Code. The remake runs on Three.js with its own
-  game server, and it renders each jelly as squashy, see-through gelatin.
+  According to its creator, AI wrote all of the code over hundreds of rounds of
+  instructions and feedback: first GPT-6 Astra in Codex, then a remake with
+  Claude Opus 5.5 in Claude Code. The remake runs on Three.js with its own game
+  server, and it renders each jelly as squashy, see-through gelatin.
 play:
   url: https://jellyblob.win
   embeddable: false
@@ -47,11 +48,12 @@ made:
   tools:
     - codex
     - claude-code
-  aiShare: unknown
+  aiShare: all
   source: The creator's own statement
   evidence: creator
-  notes: Initially made with GPT-6 Astra in Codex, then remade with Claude Opus
-    5.5 in Claude Code.
+  notes: AI wrote all of the code, with hundreds of iterations from my input and
+    instructions. Initially made with GPT-6 Astra in Codex, then remade with
+    Claude Opus 5.5 in Claude Code.
 tech:
   engine: threejs
   multiplayer: online
