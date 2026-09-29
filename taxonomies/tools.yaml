@@ -1,19 +1,40 @@
+# AI coding tools, agents, IDEs and app builders. Checked 2026-09-29.
 terms:
+  # Agents and CLIs
   - { slug: claude-code, name: Claude Code, maker: Anthropic, url: "https://www.anthropic.com/claude-code" }
-  - { slug: claude-ai, name: Claude app, maker: Anthropic, url: "https://claude.ai/" }
-  - { slug: cursor, name: Cursor, maker: Anysphere, url: "https://cursor.com/" }
   - { slug: codex, name: Codex, maker: OpenAI, url: "https://openai.com/codex/" }
-  - { slug: chatgpt, name: ChatGPT, maker: OpenAI, url: "https://chatgpt.com/" }
-  - { slug: github-copilot, name: GitHub Copilot, maker: GitHub, url: "https://github.com/features/copilot" }
-  - { slug: windsurf, name: Windsurf, url: "https://windsurf.com/" }
   - { slug: gemini-cli, name: Gemini CLI, maker: Google, url: "https://github.com/google-gemini/gemini-cli" }
-  - { slug: google-ai-studio, name: Google AI Studio, maker: Google, url: "https://aistudio.google.com/" }
+  - { slug: jules, name: Jules, maker: Google, url: "https://jules.google/" }
+  - { slug: devin, name: Devin, maker: Cognition, url: "https://devin.ai/" }
+  - { slug: opencode, name: OpenCode, url: "https://opencode.ai/" }
+  - { slug: aider, name: Aider, url: "https://aider.chat/" }
+  - { slug: amp, name: Amp, maker: Sourcegraph, url: "https://ampcode.com/" }
+  - { slug: qwen-code, name: Qwen Code, maker: Alibaba, url: "https://github.com/QwenLM/qwen-code" }
+  - { slug: warp, name: Warp, url: "https://www.warp.dev/" }
+  # Editors and IDEs
+  - { slug: cursor, name: Cursor, maker: Anysphere, url: "https://cursor.com/" }
+  - { slug: github-copilot, name: GitHub Copilot, maker: GitHub, url: "https://github.com/features/copilot" }
+  - { slug: windsurf, name: Devin Desktop (Windsurf), maker: Cognition, url: "https://windsurf.com/" }
+  - { slug: antigravity, name: Google Antigravity, maker: Google, url: "https://antigravity.google/" }
+  - { slug: kiro, name: Kiro, maker: Amazon, url: "https://kiro.dev/" }
+  - { slug: trae, name: Trae, maker: ByteDance, url: "https://www.trae.ai/" }
+  - { slug: zed, name: Zed, url: "https://zed.dev/" }
+  # Editor extensions
+  - { slug: kilo-code, name: Kilo Code, url: "https://kilocode.ai/" }
+  - { slug: cline, name: Cline, url: "https://cline.bot/" }
+  - { slug: roo-code, name: Roo Code, url: "https://roocode.com/" }
+  - { slug: continue, name: Continue, url: "https://www.continue.dev/" }
+  # Chat apps
+  - { slug: claude-ai, name: Claude app, maker: Anthropic, url: "https://claude.ai/" }
+  - { slug: chatgpt, name: ChatGPT, maker: OpenAI, url: "https://chatgpt.com/" }
   - { slug: gemini-app, name: Gemini app, maker: Google, url: "https://gemini.google.com/" }
-  - { slug: bolt, name: Bolt, maker: StackBlitz, url: "https://bolt.new/" }
-  - { slug: lovable, name: Lovable, url: "https://lovable.dev/" }
+  - { slug: grok-app, name: Grok app, maker: xAI, url: "https://grok.com/" }
+  # App and game builders
+  - { slug: google-ai-studio, name: Google AI Studio, maker: Google, url: "https://aistudio.google.com/" }
+  - { slug: firebase-studio, name: Firebase Studio, maker: Google, url: "https://firebase.studio/" }
   - { slug: replit, name: Replit, url: "https://replit.com/" }
+  - { slug: lovable, name: Lovable, url: "https://lovable.dev/" }
+  - { slug: bolt, name: Bolt, maker: StackBlitz, url: "https://bolt.new/" }
   - { slug: v0, name: v0, maker: Vercel, url: "https://v0.app/" }
   - { slug: rosebud, name: Rosebud AI, url: "https://rosebud.ai/" }
   - { slug: websim, name: WebSim, url: "https://websim.com/" }
-  - { slug: aider, name: Aider, url: "https://aider.chat/" }
-  - { slug: cline, name: Cline, url: "https://cline.bot/" }

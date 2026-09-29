@@ -145,6 +145,15 @@
             "maxLength": 60
           }
         },
+        "providers": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$",
+            "maxLength": 60
+          }
+        },
         "tools": {
           "type": "array",
           "uniqueItems": true,

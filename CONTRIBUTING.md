@@ -21,7 +21,8 @@ creator:
   x: ada                           # optional, without @
   youtube: "@ada"                  # optional
 made:
-  models: [claude]                 # slugs from taxonomies/models.yaml
+  models: [claude-sonnet-5-5]      # model versions from taxonomies/models.yaml
+  providers: []                    # optional: e.g. [anthropic] if you don't know the exact version
   tools: [claude-code]             # slugs from taxonomies/tools.yaml
   aiShare: most                    # all, most, some or unknown
   source: "Creator's README"       # where the AI-share claim comes from
@@ -44,7 +45,7 @@ provenance:
   foundVia: pr
 ```
 
-If your model, tool or engine isn't in the taxonomy files, add it in the same pull request with its official URL.
+If your model version, tool or engine isn't in the taxonomy files, add it in the same pull request with its official URL.
 
 ## Rules
 

@@ -23,8 +23,9 @@ Every entry is reviewed by a human before it goes live.
 
 | File | Holds |
 | --- | --- |
-| `taxonomies/models.yaml` | AI model families (and later their versions) |
-| `taxonomies/tools.yaml` | AI coding tools and apps |
+| `taxonomies/providers.yaml` | AI providers and their model family (Anthropic → Claude) |
+| `taxonomies/models.yaml` | Model versions, each with its provider (Claude Opus 5.5, GPT-6 Sol…) |
+| `taxonomies/tools.yaml` | AI coding agents, editors, extensions, chat apps and app builders |
 | `taxonomies/engines.yaml` | Game engines and frameworks |
 | `taxonomies/genres.yaml` | Genres |
 | `taxonomies/jams.yaml` | Game jams |

@@ -1,0 +1,13 @@
+# AI providers. `family` is the model family name people search for ("games made with Claude").
+terms:
+  - { slug: anthropic, name: Anthropic, family: Claude, url: "https://www.anthropic.com/" }
+  - { slug: openai, name: OpenAI, family: GPT, url: "https://openai.com/" }
+  - { slug: google, name: Google, family: Gemini, url: "https://deepmind.google/models/gemini/" }
+  - { slug: xai, name: xAI, family: Grok, url: "https://x.ai/" }
+  - { slug: deepseek, name: DeepSeek, family: DeepSeek, url: "https://www.deepseek.com/" }
+  - { slug: alibaba, name: Alibaba, family: Qwen, url: "https://qwen.ai/" }
+  - { slug: moonshot, name: Moonshot AI, family: Kimi, url: "https://www.moonshot.ai/" }
+  - { slug: zhipu, name: Z.ai, family: GLM, url: "https://z.ai/" }
+  - { slug: minimax, name: MiniMax, family: MiniMax, url: "https://www.minimax.io/" }
+  - { slug: mistral, name: Mistral AI, family: Mistral, url: "https://mistral.ai/" }
+  - { slug: meta, name: Meta, family: Llama, url: "https://www.llama.com/" }

@@ -1,12 +1,66 @@
-# AI model families. Model versions are added in P2 as catalog entries name them, with `parent: <family>`.
+# Model versions, each with its provider. Current lineups checked 2026-09-29 (Anthropic, OpenAI, Google, xAI
+# release notes and news); older versions are listed because many listed games were built with them.
+# Add a version when a catalog entry names one, with the provider's announcement as the source.
 terms:
-  - { slug: claude, name: Claude, maker: Anthropic, url: "https://www.anthropic.com/claude" }
-  - { slug: gpt, name: GPT, maker: OpenAI, url: "https://openai.com/" }
-  - { slug: gemini, name: Gemini, maker: Google, url: "https://gemini.google.com/" }
-  - { slug: grok, name: Grok, maker: xAI, url: "https://x.ai/" }
-  - { slug: deepseek, name: DeepSeek, maker: DeepSeek, url: "https://www.deepseek.com/" }
-  - { slug: qwen, name: Qwen, maker: Alibaba, url: "https://qwen.ai/" }
-  - { slug: llama, name: Llama, maker: Meta, url: "https://www.llama.com/" }
-  - { slug: mistral, name: Mistral, maker: Mistral AI, url: "https://mistral.ai/" }
-  - { slug: kimi, name: Kimi, maker: Moonshot AI, url: "https://www.kimi.com/" }
-  - { slug: glm, name: GLM, maker: Z.ai, url: "https://z.ai/" }
+  # Anthropic
+  - { slug: claude-fable-5-1, name: Claude Fable 5.1, provider: anthropic }
+  - { slug: claude-fable-5, name: Claude Fable 5, provider: anthropic }
+  - { slug: claude-opus-5-5, name: Claude Opus 5.5, provider: anthropic }
+  - { slug: claude-sonnet-5-5, name: Claude Sonnet 5.5, provider: anthropic }
+  - { slug: claude-sonnet-5, name: Claude Sonnet 5, provider: anthropic }
+  - { slug: claude-opus-4-8, name: Claude Opus 4.8, provider: anthropic }
+  - { slug: claude-opus-4-7, name: Claude Opus 4.7, provider: anthropic }
+  - { slug: claude-opus-4-6, name: Claude Opus 4.6, provider: anthropic }
+  - { slug: claude-sonnet-4-6, name: Claude Sonnet 4.6, provider: anthropic }
+  - { slug: claude-opus-4-5, name: Claude Opus 4.5, provider: anthropic }
+  - { slug: claude-sonnet-4-5, name: Claude Sonnet 4.5, provider: anthropic }
+  - { slug: claude-haiku-4-5, name: Claude Haiku 4.5, provider: anthropic }
+  - { slug: claude-opus-4-1, name: Claude Opus 4.1, provider: anthropic }
+  - { slug: claude-opus-4, name: Claude Opus 4, provider: anthropic }
+  - { slug: claude-sonnet-4, name: Claude Sonnet 4, provider: anthropic }
+  - { slug: claude-3-7-sonnet, name: Claude 3.7 Sonnet, provider: anthropic }
+  - { slug: claude-3-5-sonnet, name: Claude 3.5 Sonnet, provider: anthropic }
+  # OpenAI
+  - { slug: gpt-6-astra, name: GPT-6 Astra, provider: openai }
+  - { slug: gpt-6-sol, name: GPT-6 Sol, provider: openai }
+  - { slug: gpt-6-luna, name: GPT-6 Luna, provider: openai }
+  - { slug: gpt-5-codex, name: GPT-5-Codex, provider: openai }
+  - { slug: gpt-5, name: GPT-5, provider: openai }
+  - { slug: gpt-4-1, name: GPT-4.1, provider: openai }
+  - { slug: gpt-4o, name: GPT-4o, provider: openai }
+  - { slug: o3, name: o3, provider: openai }
+  - { slug: o4-mini, name: o4-mini, provider: openai }
+  # Google
+  - { slug: gemini-3-8-flash, name: Gemini 3.8 Flash, provider: google }
+  - { slug: gemini-3-5-flash-lite, name: Gemini 3.5 Flash-Lite, provider: google }
+  - { slug: gemini-3-1-pro, name: Gemini 3.1 Pro, provider: google }
+  - { slug: gemini-3-deep-think, name: Gemini 3 Deep Think, provider: google }
+  - { slug: gemini-3-pro, name: Gemini 3 Pro, provider: google }
+  - { slug: gemini-3-flash, name: Gemini 3 Flash, provider: google }
+  - { slug: gemini-2-5-pro, name: Gemini 2.5 Pro, provider: google }
+  - { slug: gemini-2-5-flash, name: Gemini 2.5 Flash, provider: google }
+  # xAI
+  - { slug: grok-4-7, name: Grok 4.7, provider: xai }
+  - { slug: grok-4-6, name: Grok 4.6, provider: xai }
+  - { slug: grok-4-5, name: Grok 4.5, provider: xai }
+  - { slug: grok-build, name: Grok Build, provider: xai }
+  - { slug: grok-4, name: Grok 4, provider: xai }
+  - { slug: grok-code-fast-1, name: Grok Code Fast 1, provider: xai }
+  - { slug: grok-3, name: Grok 3, provider: xai }
+  # DeepSeek
+  - { slug: deepseek-v4, name: DeepSeek V4, provider: deepseek }
+  - { slug: deepseek-v3, name: DeepSeek-V3, provider: deepseek }
+  - { slug: deepseek-r1, name: DeepSeek-R1, provider: deepseek }
+  # Alibaba
+  - { slug: qwen-3-8, name: Qwen3.8, provider: alibaba }
+  - { slug: qwen3-coder, name: Qwen3-Coder, provider: alibaba }
+  # Moonshot AI
+  - { slug: kimi-k3, name: Kimi K3, provider: moonshot }
+  - { slug: kimi-k2, name: Kimi K2, provider: moonshot }
+  # Z.ai
+  - { slug: glm-5-2, name: GLM-5.2, provider: zhipu }
+  - { slug: glm-4-5, name: GLM-4.5, provider: zhipu }
+  # MiniMax
+  - { slug: minimax-m3, name: MiniMax M3, provider: minimax }
+  # Meta
+  - { slug: llama-4, name: Llama 4, provider: meta }

@@ -33,6 +33,16 @@
             "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$",
             "maxLength": 60
           },
+          "provider": {
+            "type": "string",
+            "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$",
+            "maxLength": 60
+          },
+          "family": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 30
+          },
           "maker": {
             "type": "string",
             "minLength": 1,

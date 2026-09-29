@@ -7,7 +7,7 @@ import { parse } from 'yaml';
 import Ajv2020 from 'ajv/dist/2020.js';
 import addFormats from 'ajv-formats';
 
-const KINDS = ['models', 'tools', 'engines', 'genres', 'jams'];
+const KINDS = ['providers', 'models', 'tools', 'engines', 'genres', 'jams'];
 
 export function validate(dir = '.') {
   const problems = [];
@@ -36,6 +36,7 @@ export function validate(dir = '.') {
     slugs[kind] = new Set(terms.map((t) => t.slug));
     if (slugs[kind].size !== terms.length) problems.push(`${file}: duplicate slug`);
     for (const t of terms) if (t.parent && !slugs[kind].has(t.parent)) problems.push(`${file}: ${t.slug} has unknown parent ${t.parent}`);
+    if (kind === 'models') for (const t of terms) if (!t.provider || !slugs.providers.has(t.provider)) problems.push(`${file}: ${t.slug} has unknown provider "${t.provider ?? ''}"`);
   }
 
   const gamesDir = join(dir, 'games');
@@ -52,6 +53,8 @@ export function validate(dir = '.') {
     if (basename(f, '.yaml') !== g.slug) problems.push(`${rel}: slug "${g.slug}" must match the file name`);
     const check = (kind, list, label) => list.forEach((s) => slugs[kind].has(s) || problems.push(`${rel}: unknown ${label} "${s}"`));
     check('models', g.made.models, 'model');
+    check('providers', g.made.providers ?? [], 'provider');
+    if (!g.made.models.length && !(g.made.providers ?? []).length) problems.push(`${rel}: name at least one model or provider in made.models / made.providers`);
     check('tools', g.made.tools, 'tool');
     check('engines', [g.tech.engine], 'engine');
     check('genres', g.genres, 'genre');
