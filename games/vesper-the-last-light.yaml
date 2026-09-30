@@ -1,23 +1,7 @@
 slug: vesper-the-last-light
 title: "Vesper: The Last Light"
-tagline: Carry a drowned world's last light through a flooded voxel gate.
-description: >-
-  Vesper: The Last Light is a single-player exploration game set in a drowned
-  voxel world. Its first chapter, The Flooded Gate, opens on rain-slick stone
-  walkways lit by lanterns and terraced islands with pink blossom trees. A
-  towering gate marked with three glowing symbols stands under a ringed planet
-  and a pale moon, and the title card sets the task: carry the world's last
-  light beyond it.
-
-
-  It is an adventure with puzzles and a casual pace. The creator set out to
-  build a place you can explore, make sense of and finish, rather than a view
-  that only looks good.
-
-
-  According to the creator, AI wrote all of the code. The game was built with
-  GPT-6 Astra in Codex over rounds of building, playtesting and fixing, and it
-  mixes procedural assets with licensed resources. It runs in the browser.
+tagline: Submitted by its creator; the description is added during review.
+description: ""
 play:
   url: https://vesper.mansgullberg.chatgpt.site/
   platforms:
@@ -25,17 +9,17 @@ play:
   embedPermission:
     by: submission
     date: 2026-09-30
-  embeddable: true
 creator:
-  name: kvickan
-  handle: kvickan
+  name: Kvickan
+  handle: mansgullberg
+  x: MansGullberg
 made:
   models:
     - gpt-6-astra
   tools:
     - codex
   aiShare: all
-  source: "Creator's submission (issue #26)"
+  source: "Creator's submission (issue #40)"
   evidence: creator
   notes: >-
     I built it with GPT-6 Astra in Codex, shaping the game through
@@ -47,6 +31,7 @@ made:
     make a world you can actually explore, understand and finish—and care a
     little about along the way.
 tech:
+  engine: threejs
   multiplayer: single
 genres:
   - adventure
@@ -63,4 +48,7 @@ dates:
 status: live
 provenance:
   foundVia: form
-  submittedBy: "#26"
+  submittedBy: "#40"
+  uploads:
+    ref: 1d60b4ee65dcd0e1
+    count: 1
