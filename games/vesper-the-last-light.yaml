@@ -1,0 +1,66 @@
+slug: vesper-the-last-light
+title: "Vesper: The Last Light"
+tagline: Carry a drowned world's last light through a flooded voxel gate.
+description: >-
+  Vesper: The Last Light is a single-player exploration game set in a drowned
+  voxel world. Its first chapter, The Flooded Gate, opens on rain-slick stone
+  walkways lit by lanterns and terraced islands with pink blossom trees. A
+  towering gate marked with three glowing symbols stands under a ringed planet
+  and a pale moon, and the title card sets the task: carry the world's last
+  light beyond it.
+
+
+  It is an adventure with puzzles and a casual pace. The creator set out to
+  build a place you can explore, make sense of and finish, rather than a view
+  that only looks good.
+
+
+  According to the creator, AI wrote all of the code. The game was built with
+  GPT-6 Astra in Codex over rounds of building, playtesting and fixing, and it
+  mixes procedural assets with licensed resources. It runs in the browser.
+play:
+  url: https://vesper.mansgullberg.chatgpt.site/
+  platforms:
+    - browser
+  embedPermission:
+    by: submission
+    date: 2026-09-30
+  embeddable: true
+creator:
+  name: kvickan
+  handle: kvickan
+made:
+  models:
+    - gpt-6-astra
+  tools:
+    - codex
+  aiShare: all
+  source: "Creator's submission (issue #26)"
+  evidence: creator
+  notes: >-
+    I built it with GPT-6 Astra in Codex, shaping the game through
+    implementation, playtesting and iteration. The project combines AI-assisted
+    work, procedural assets and licensed resources.
+
+
+    The goal was not just to generate a scene that looks impressive. It was to
+    make a world you can actually explore, understand and finish—and care a
+    little about along the way.
+tech:
+  multiplayer: single
+genres:
+  - adventure
+  - casual
+  - puzzle
+media:
+  cover: games/vesper-the-last-light/cover
+  screenshots:
+    - games/vesper-the-last-light/shot-1
+    - games/vesper-the-last-light/shot-2
+dates:
+  added: 2026-09-30
+  updated: 2026-09-30
+status: live
+provenance:
+  foundVia: form
+  submittedBy: "#26"
