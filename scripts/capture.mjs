@@ -2,7 +2,8 @@
 // Captures a cover and two screenshots per game: node scripts/capture.mjs <slug…>
 // Game pages are untrusted code. This runs only in CI's capture job, which has no secrets and a read-only token.
 // Every game gets a fresh browser context, a hard deadline kept by Node (not by Playwright), and nothing
-// from the page is ever read back except the pixels of the screenshots.
+// from the page is ever read back except the pixels of the screenshots, and on itch.io the address of the game's
+// own frame, which must match itch's CDN pattern (itchFrame).
 // Games whose creator sent screenshots with the submission (provenance.uploads) are never captured; the upload job
 // fetches those instead. node scripts/capture.mjs --split <slug-list file> prints { capture, uploads } for the workflow.
 import { mkdirSync, rmSync, rmdirSync, writeFileSync, readFileSync, existsSync } from 'node:fs';
@@ -63,6 +64,27 @@ export function checkUrl(url, { allowLocalHttp = false } = {}) {
   if (u.username || u.password) return false;
   if (u.protocol === 'https:') return true;
   return allowLocalHttp && u.protocol === 'http:' && u.hostname === '127.0.0.1';
+}
+
+// itch.io wraps an HTML5 game in its own page: a toolbar ("Follow", "Add To Collection"), jam banners and often a
+// "Run game" button would end up in the cover. The game itself is an iframe served from itch's CDN.
+const ITCH_FRAME = /^https:\/\/html(?:-classic)?\.itch\.zone\/html\/\d+(?:-\d+)?\/(?:[\w%-]+\/)*[\w%.-]+\.html(?:\?v=\d+)?$/;
+
+/** The game's own frame on an itch.io page (pageUrl on *.itch.io), or null. html is the page's markup, read as data. */
+export function itchFrame(pageUrl, html) {
+  let host;
+  try {
+    host = new URL(pageUrl).hostname;
+  } catch {
+    return null;
+  }
+  if (!host.endsWith('.itch.io')) return null;
+  const text = String(html).replace(/&quot;/g, '"').replace(/&amp;/g, '&');
+  for (const [, raw] of text.matchAll(/src="(https:\/\/html(?:-classic)?\.itch\.zone\/[^"<>\n]+)"/g)) {
+    const src = raw.replace(/ /g, '%20');
+    if (ITCH_FRAME.test(src) && !src.includes('..')) return src;
+  }
+  return null;
 }
 
 // One browser per process, launched through launchServer so a hung browser can be killed outright.
@@ -224,17 +246,29 @@ export async function captureOne(url, outDir, opts = {}) {
     });
     page.on('crash', () => fail('crash'));
 
-    const navStart = Date.now();
-    let res;
-    try {
-      res = await guard(page.goto(url, { waitUntil: 'domcontentloaded', timeout: o.navTimeout }));
-    } catch (e) {
-      if (e instanceof CaptureError) throw e;
-      throw new CaptureError(/download is starting/i.test(e.message) ? 'download' : 'navigation', firstLine(e));
+    const open = async (target) => {
+      const navStart = Date.now();
+      let res;
+      try {
+        res = await guard(page.goto(target, { waitUntil: 'domcontentloaded', timeout: o.navTimeout }));
+      } catch (e) {
+        if (e instanceof CaptureError) throw e;
+        throw new CaptureError(/download is starting/i.test(e.message) ? 'download' : 'navigation', firstLine(e));
+      }
+      if (res && res.status() >= 400) throw new CaptureError('http-status', String(res.status()));
+      // Wait for `load` within what is left of the navigation budget; slow subresources don't fail the game.
+      await guard(page.waitForLoadState('load', { timeout: Math.max(1, o.navTimeout - (Date.now() - navStart)) }).catch(() => {}));
+    };
+    await open(url);
+    // On itch.io the cover shows the game's own frame, not the page around it. No other page's markup is read.
+    if (new URL(url).hostname.endsWith('.itch.io')) {
+      const markup = await guard(page.content()).catch((e) => {
+        if (e instanceof CaptureError) throw e;
+        return '';
+      });
+      const frame = itchFrame(url, markup);
+      if (frame) await open(frame);
     }
-    if (res && res.status() >= 400) throw new CaptureError('http-status', String(res.status()));
-    // Wait for `load` within what is left of the navigation budget; slow subresources don't fail the game.
-    await guard(page.waitForLoadState('load', { timeout: Math.max(1, o.navTimeout - (Date.now() - navStart)) }).catch(() => {}));
 
     const t0 = Date.now();
     const shots = state.shots;
