@@ -6,6 +6,10 @@ name: capture
 # the PR): it checks out the base commit, installs dependencies without install scripts, reads the PNGs as bytes and
 # re-encodes them with sharp, and reads the PR's entries with `git show` as data. The PR comment is our own
 # contact sheet, with every entry string escaped.
+#
+# A game whose creator sent screenshots with the submission (provenance.uploads) is never opened in the browser: the
+# upload job fetches those images from the site's internal route (NOTIFY_URL's origin, INTERNAL_NOTIFY_TOKEN), holds
+# them in memory as untrusted bytes and re-encodes them exactly like captures.
 on:
   workflow_dispatch:
     inputs:
@@ -36,7 +40,9 @@ jobs:
     permissions:
       contents: read
     outputs:
-      count: ${{ steps.list.outputs.count }}
+      # Games to capture in the browser, and the space-separated slugs of games whose creator sent screenshots.
+      count: ${{ steps.split.outputs.count || '0' }}
+      uploads: ${{ steps.split.outputs.uploads }}
       sha: ${{ steps.list.outputs.sha }}
     steps:
       - uses: actions/checkout@v5
@@ -76,18 +82,27 @@ jobs:
         with: { node-version: 22 }
       - if: steps.list.outputs.count != '0'
         run: npm ci --no-audit --no-fund
-      - if: steps.list.outputs.count != '0'
+      - name: Games whose creator sent screenshots skip the browser
+        id: split
+        if: steps.list.outputs.count != '0'
+        run: |
+          node scripts/capture.mjs --split "$RUNNER_TEMP/slugs.txt" > "$RUNNER_TEMP/split.json"
+          jq -r '.capture[]' "$RUNNER_TEMP/split.json" > "$RUNNER_TEMP/capture.txt"
+          echo "count=$(wc -l < "$RUNNER_TEMP/capture.txt" | tr -d ' ')" >> "$GITHUB_OUTPUT"
+          echo "uploads=$(jq -r '.uploads | join(" ")' "$RUNNER_TEMP/split.json")" >> "$GITHUB_OUTPUT"
+          cat "$RUNNER_TEMP/split.json"
+      - if: (steps.split.outputs.count || '0') != '0'
         run: npx playwright install --with-deps chromium
       - name: Let Chromium use its sandbox (Ubuntu 24.04 restricts unprivileged user namespaces)
-        if: steps.list.outputs.count != '0'
+        if: (steps.split.outputs.count || '0') != '0'
         run: sudo sysctl -w kernel.apparmor_restrict_unprivileged_userns=0
       - name: Capture
-        if: steps.list.outputs.count != '0'
+        if: (steps.split.outputs.count || '0') != '0'
         env:
           CAPTURE_WAIT: ${{ inputs.wait }}
-        run: xargs -a "$RUNNER_TEMP/slugs.txt" node scripts/capture.mjs
+        run: xargs -a "$RUNNER_TEMP/capture.txt" node scripts/capture.mjs
       - uses: actions/upload-artifact@v5
-        if: steps.list.outputs.count != '0'
+        if: (steps.split.outputs.count || '0') != '0'
         with:
           name: shots
           path: out/
@@ -97,7 +112,7 @@ jobs:
   upload:
     needs: capture
     # Same-repo branches only: fork PRs never reach the R2 token.
-    if: needs.capture.outputs.count != '0' && (github.event_name == 'workflow_dispatch' || github.event.pull_request.head.repo.full_name == github.repository)
+    if: (needs.capture.outputs.count != '0' || needs.capture.outputs.uploads != '') && (github.event_name == 'workflow_dispatch' || github.event.pull_request.head.repo.full_name == github.repository)
     runs-on: ubuntu-latest
     timeout-minutes: 30
     permissions:
@@ -114,11 +129,13 @@ jobs:
         with: { node-version: 22 }
       - run: npm ci --ignore-scripts --no-audit --no-fund
       - uses: actions/download-artifact@v6
+        if: needs.capture.outputs.count != '0' # no artifact when every game came with its creator's screenshots
         with: { name: shots, path: out }
       - name: Fetch the PR's entries as data
         env:
           HEAD_SHA: ${{ github.event.pull_request.head.sha || needs.capture.outputs.sha }}
         run: |
+          mkdir -p out
           rm -f out/contact-sheet.md
           [[ "$HEAD_SHA" =~ ^[0-9a-f]{40}$ ]] || { echo "unexpected head sha"; exit 1; }
           git fetch --no-tags origin "$HEAD_SHA"
@@ -127,14 +144,20 @@ jobs:
         env:
           R2_UPLOAD_TOKEN: ${{ secrets.R2_UPLOAD_TOKEN }}
           CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          # The creator's screenshots come from the site's internal uploads route (the base of the notify URL).
+          NOTIFY_URL: ${{ secrets.NOTIFY_URL }}
+          INTERNAL_NOTIFY_TOKEN: ${{ secrets.INTERNAL_NOTIFY_TOKEN }}
           HEAD_SHA: ${{ github.event.pull_request.head.sha || needs.capture.outputs.sha }}
           ONLY: ${{ inputs.slugs }}
+          UPLOADS: ${{ needs.capture.outputs.uploads }}
         # --base-ref (the merge base, as in the capture job): only games this PR adds or changes are uploaded, whatever
         # the artifact holds; changes made only on main never count.
         # A manual re-capture uploads exactly the slugs it was given (validated by upload.mjs).
+        # --uploads only narrows the choice: upload.mjs fetches a game's screenshots only when that game passes the same
+        # checks and its entry (read from the PR as data) names them.
         run: |
-          if [ -n "$ONLY" ]; then node scripts/upload.mjs out/ --entries-ref "$HEAD_SHA" --only "$ONLY"
-          else node scripts/upload.mjs out/ --entries-ref "$HEAD_SHA" --base-ref "$(git merge-base HEAD "$HEAD_SHA")"; fi
+          if [ -n "$ONLY" ]; then node scripts/upload.mjs out/ --entries-ref "$HEAD_SHA" --only "$ONLY" --uploads "$UPLOADS"
+          else node scripts/upload.mjs out/ --entries-ref "$HEAD_SHA" --base-ref "$(git merge-base HEAD "$HEAD_SHA")" --uploads "$UPLOADS"; fi
       - name: Post the contact sheet
         if: always() && steps.upload.outcome != 'skipped' && github.event_name == 'pull_request' && hashFiles('out/contact-sheet.md') != ''
         env:

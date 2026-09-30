@@ -6,7 +6,8 @@ import { join } from 'node:path';
 import { crc32 } from 'node:zlib';
 import { execFileSync } from 'node:child_process';
 import sharp from 'sharp';
-import { processImage, contactSheet, escapeText, runUpload, s3Put, r2Credentials } from '../scripts/upload.mjs';
+import { stringify } from 'yaml';
+import { processImage, contactSheet, escapeText, runUpload, s3Put, r2Credentials, sniff, uploadsOf, siteOrigin, fetchUpload, UPLOAD_LIMITS } from '../scripts/upload.mjs';
 
 const tmp = () => mkdtempSync(join(tmpdir(), 'upload-'));
 const shot = (width = 1280, height = 720) =>
@@ -312,4 +313,238 @@ test('a partial capture (cover only) is uploaded, and ready.json lists what exis
   const marker = puts.find((p) => p.key === 'games/part/ready.json');
   assert.deepEqual(JSON.parse(readFileSync(marker.file, 'utf8')).names, ['cover']);
   assert.deepEqual(JSON.parse(readFileSync(marker.file, 'utf8')).widths, [320, 640, 960, 1280]);
+});
+
+// --- Creators' own screenshots (sent with the site's submit form) ---
+
+const MARK = 'GBAI-METADATA-PAYLOAD-7f3c';
+const XMP = `<x:xmpmeta xmlns:x="adobe:ns:meta/"><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"><rdf:Description xmlns:dc="http://purl.org/dc/elements/1.1/" dc:description="${MARK}"/></rdf:RDF></x:xmpmeta>`;
+/** A screenshot as a creator would send it: PNG, JPEG or WebP, with EXIF and XMP metadata. */
+async function creatorShot(format = 'jpeg', width = 1920, height = 1080) {
+  const img = sharp(await shot(width, height));
+  const encoded = format === 'png' ? img.png() : format === 'jpeg' ? img.jpeg({ quality: 90 }) : img.webp({ quality: 90 });
+  return encoded.withExif({ IFD0: { ImageDescription: MARK, Copyright: MARK } }).withXmp(XMP).toBuffer();
+}
+
+test('magic bytes decide the format: PNG, JPEG and WebP, nothing else', async () => {
+  assert.equal(sniff(await shot()), 'png');
+  assert.equal(sniff(await creatorShot('jpeg')), 'jpeg');
+  assert.equal(sniff(await creatorShot('webp')), 'webp');
+  assert.equal(sniff(Buffer.from('RIFF\0\0\0\0WAVEfmt ', 'latin1')), null);
+  assert.equal(sniff(Buffer.from('GIF89a')), null);
+  assert.equal(sniff(Buffer.from([0xff, 0xd8])), null, 'too short');
+  assert.equal(sniff(Buffer.alloc(0)), null);
+});
+
+test("a creator's JPEG, WebP or PNG is re-encoded from its pixels: the same variants, and no metadata survives", async () => {
+  for (const format of ['jpeg', 'webp', 'png']) {
+    const input = await creatorShot(format);
+    assert.ok(input.includes(MARK), `the ${format} input carries the metadata`);
+    assert.ok((await sharp(input).metadata()).exif, `the ${format} input has EXIF`);
+    const out = await processImage(input, { og: true, upload: true });
+    assert.deepEqual(Object.keys(out).sort(), ['-1280.avif', '-1280.webp', '-320.avif', '-320.webp', '-640.avif', '-640.webp', '-960.avif', '-960.webp', '-og.jpg'], format);
+    for (const [suffix, buf] of Object.entries(out)) {
+      assert.ok(!buf.includes(MARK), `${format} ${suffix} carries the metadata`);
+      const m = await sharp(buf).metadata();
+      assert.equal(m.exif, undefined, `${format} ${suffix} has EXIF`);
+      assert.equal(m.xmp, undefined, `${format} ${suffix} has XMP`);
+      if (suffix === '-1280.webp') assert.deepEqual([m.width, m.height], [1280, 720]);
+      if (suffix === '-og.jpg') assert.deepEqual([m.width, m.height], [1200, 630]);
+    }
+  }
+});
+
+test("a creator's screenshot must be landscape, at least 1280x720 and at most 3840 px a side", async () => {
+  const plain = (w, h, format = 'png') => sharp(Buffer.alloc(w * h * 3, 90), { raw: { width: w, height: h, channels: 3 } })[format]().toBuffer();
+  for (const [w, h, format] of [[1280, 720], [1280, 1280], [3840, 2160, 'jpeg'], [2560, 1440, 'webp']]) {
+    const out = await processImage(await plain(w, h, format), { upload: true });
+    assert.equal((await sharp(out['-1280.webp']).metadata()).width, 1280, `${w}x${h}`);
+  }
+  await assert.rejects(processImage(await plain(1279, 720), { upload: true }), /smaller than 1280x720/);
+  await assert.rejects(processImage(await plain(1280, 719), { upload: true }), /smaller than 1280x720/);
+  await assert.rejects(processImage(await plain(1300, 1400), { upload: true }), /portrait/);
+  await assert.rejects(processImage(await plain(3841, 1000), { upload: true }), /3840/);
+  // Captures keep their own limits: a small capture is still fine.
+  await processImage(await plain(400, 300));
+});
+
+test("a creator's screenshot over 3 MB, in another format, or truncated is rejected", async () => {
+  const big = withChunk(await shot(), 'tEXt', Buffer.alloc(UPLOAD_LIMITS.maxBytes, 0x61));
+  assert.ok(big.length > UPLOAD_LIMITS.maxBytes);
+  await assert.rejects(processImage(big, { upload: true }), /too large/);
+  assert.equal(UPLOAD_LIMITS.maxBytes, 3 * 1024 * 1024);
+  const gif = await sharp(await shot()).gif().toBuffer();
+  await assert.rejects(processImage(gif, { upload: true }), /not a PNG, JPEG or WebP \(gif\)/);
+  const tiff = await sharp(await shot()).tiff().toBuffer();
+  await assert.rejects(processImage(tiff, { upload: true }), /not a PNG, JPEG or WebP \(tiff\)/);
+  await assert.rejects(processImage(Buffer.from('<html><script>alert(1)</script></html>'), { upload: true }), /not an image/);
+  for (const format of ['jpeg', 'webp', 'png']) {
+    const full = await creatorShot(format);
+    await assert.rejects(processImage(full.subarray(0, Math.floor(full.length / 2)), { upload: true }), /decode|not an image/, format);
+  }
+  // A capture is still a PNG only.
+  await assert.rejects(processImage(await creatorShot('jpeg')), /not a PNG \(jpeg\)/);
+});
+
+test('uploadsOf reads provenance.uploads as data and accepts only { ref: 16 hex, count: 1-3 }', () => {
+  const e = (uploads) => ({ provenance: { foundVia: 'form', uploads } });
+  assert.deepEqual(uploadsOf(e({ ref: '3f9a0c1e8b7d6a54', count: 2 })), { ref: '3f9a0c1e8b7d6a54', count: 2 });
+  for (const bad of [undefined, null, 'x', [], { ref: '3F9A0C1E8B7D6A54', count: 2 }, { ref: '3f9a0c1e8b7d6a5', count: 2 }, { ref: '../../../etc/passwd', count: 1 }, { ref: '3f9a0c1e8b7d6a54', count: 0 }, { ref: '3f9a0c1e8b7d6a54', count: 4 }, { ref: '3f9a0c1e8b7d6a54', count: '2' }, { ref: 3, count: 1 }]) {
+    assert.equal(uploadsOf(e(bad)), null, JSON.stringify(bad));
+  }
+  assert.equal(uploadsOf(null), null);
+  assert.equal(uploadsOf({ slug: 'x' }), null);
+});
+
+test("the site's origin comes from the notify URL: https only, its path dropped", () => {
+  assert.equal(siteOrigin('https://site.example/api/internal/notify'), 'https://site.example');
+  assert.equal(siteOrigin('https://site.example:8443/x?y=1'), 'https://site.example:8443');
+  for (const bad of ['http://site.example/api/internal/notify', 'https://u:p@site.example/', 'not a url', '', undefined]) assert.equal(siteOrigin(bad), null, String(bad));
+});
+
+const REF = '3f9a0c1e8b7d6a54';
+const NOTIFY = 'https://site.example/api/internal/notify';
+const TOKEN = 'test-token-not-a-secret';
+
+/** The site's internal uploads route, mocked: images[n - 1] for /api/internal/uploads/<ref>/<n>, or a status per n. */
+function site(images, { status = {}, calls = [] } = {}) {
+  return async (url, init) => {
+    calls.push({ url, init });
+    const m = /^https:\/\/site\.example\/api\/internal\/uploads\/([0-9a-f]{16})\/([1-3])$/.exec(url);
+    if (!m || new Headers(init?.headers).get('authorization') !== `Bearer ${TOKEN}`) return new Response('not found', { status: 404 });
+    const n = Number(m[2]);
+    if (status[n]) return new Response('no', { status: status[n] });
+    return images[n - 1] ? new Response(images[n - 1], { headers: { 'content-type': 'image/jpeg' } }) : new Response('not found', { status: 404 });
+  };
+}
+
+async function sentFixture(count = 3, uploads = { ref: REF, count }) {
+  const { root, out, games } = await fixtureOut();
+  writeFileSync(join(games, 'sent.yaml'), stringify({ slug: 'sent', title: 'Sent Game', play: { url: 'https://sent.example/' }, provenance: { foundVia: 'form', submittedBy: '#9', uploads } }));
+  // A stray capture of the same game is ignored: the creator's screenshots win.
+  mkdirSync(join(out, 'sent'));
+  writeFileSync(join(out, 'sent', 'cover.png'), 'not an image');
+  return { root, out, games };
+}
+
+test("the creator's screenshots are fetched with the token and go through the capture pipeline: n=1 cover, n=2 shot-1, n=3 shot-2", async () => {
+  const { out, games } = await sentFixture(3);
+  const images = [await creatorShot('jpeg'), await creatorShot('webp', 1600, 900), await creatorShot('png', 1280, 720)];
+  const calls = [];
+  const puts = [];
+  const logs = [];
+  const res = await runUpload({ outDir: out, gamesDir: games, uploads: ['sent'], notifyUrl: NOTIFY, notifyToken: TOKEN, fetchImpl: site(images, { calls }), put: (key, file, type) => puts.push({ key, file, type }), log: (l) => logs.push(l) });
+  assert.deepEqual(calls.map((c) => c.url), [1, 2, 3].map((n) => `https://site.example/api/internal/uploads/${REF}/${n}`));
+  for (const c of calls) {
+    assert.equal(new Headers(c.init.headers).get('authorization'), `Bearer ${TOKEN}`);
+    assert.equal(c.init.redirect, 'error', 'the token never follows a redirect');
+  }
+  assert.equal(res.problems.sent, undefined);
+  const sent = puts.filter((p) => p.key.startsWith('games/sent/'));
+  assert.equal(sent.length, 3 * 8 + 1 + 1);
+  for (const key of ['games/sent/cover-og.jpg', 'games/sent/cover-320.avif', 'games/sent/shot-1-1280.webp', 'games/sent/shot-2-640.avif']) assert.ok(sent.some((p) => p.key === key), key);
+  assert.equal(sent.at(-1).key, 'games/sent/ready.json', 'the ready marker goes up last');
+  assert.deepEqual(JSON.parse(readFileSync(sent.at(-1).file, 'utf8')).names, ['cover', 'shot-1', 'shot-2']);
+  for (const p of sent) if (!p.key.endsWith('.json')) assert.ok(!readFileSync(p.file).includes(MARK), `${p.key} carries the creator's metadata`);
+  // The other games of the run are handled as before.
+  assert.ok(puts.some((p) => p.key === 'games/good/ready.json'));
+  assert.equal(res.problems.bad, 'rejected');
+  const sheet = readFileSync(join(out, 'contact-sheet.md'), 'utf8');
+  assert.match(sheet, /games\/sent\/cover-320\.webp\?v=/);
+  assert.ok(sheet.includes('Sent Game'));
+  assert.ok(!logs.join('\n').includes(TOKEN), 'the token is never logged');
+});
+
+test('one screenshot from the creator gives the cover alone', async () => {
+  const { out, games } = await sentFixture(1);
+  const calls = [];
+  const puts = [];
+  await runUpload({ outDir: out, gamesDir: games, uploads: ['sent'], notifyUrl: NOTIFY, notifyToken: TOKEN, fetchImpl: site([await creatorShot('webp')], { calls }), put: (key, file) => puts.push({ key, file }), log: () => {} });
+  assert.equal(calls.length, 1);
+  const sent = puts.filter((p) => p.key.startsWith('games/sent/'));
+  assert.ok(!sent.some((p) => p.key.includes('/shot-')));
+  assert.deepEqual(JSON.parse(readFileSync(sent.at(-1).file, 'utf8')).names, ['cover']);
+});
+
+test("a failed fetch is a problem for that game in the sheet, never a crash, and nothing of it is uploaded", async () => {
+  const { out, games } = await sentFixture(3);
+  const images = [await creatorShot('jpeg'), await creatorShot('jpeg'), await creatorShot('jpeg')];
+  for (const status of [404, 401, 500]) {
+    const calls = [];
+    const puts = [];
+    const logs = [];
+    const res = await runUpload({ outDir: out, gamesDir: games, uploads: ['sent'], notifyUrl: NOTIFY, notifyToken: TOKEN, fetchImpl: site(images, { status: { 2: status }, calls }), fetchBackoffMs: 1, put: (key) => puts.push(key), log: (l) => logs.push(l) });
+    assert.equal(res.problems.sent, 'fetch-failed', String(status));
+    assert.ok(!puts.some((k) => k.startsWith('games/sent/')), String(status));
+    assert.ok(puts.includes('games/good/ready.json'), 'the rest of the run goes on');
+    assert.ok(readFileSync(join(out, 'contact-sheet.md'), 'utf8').includes('no capture (fetch-failed)'));
+    // Client errors are final; server errors are retried.
+    assert.equal(calls.filter((c) => c.url.endsWith('/2')).length, status >= 500 ? 3 : 1, String(status));
+    assert.match(logs.join('\n'), new RegExp(`screenshot 2 of 3: not fetched \\(HTTP ${status}\\)`));
+    assert.ok(!logs.join('\n').includes('site.example'), 'the internal URL is never logged');
+  }
+  const res = await runUpload({ outDir: out, gamesDir: games, uploads: ['sent'], notifyUrl: NOTIFY, notifyToken: TOKEN, fetchImpl: async () => { throw new TypeError('fetch failed'); }, fetchBackoffMs: 1, put: () => {}, log: () => {} });
+  assert.equal(res.problems.sent, 'fetch-failed');
+});
+
+test('server errors are retried until the screenshot arrives', async () => {
+  const img = await creatorShot('jpeg');
+  let n = 0;
+  const buf = await fetchUpload(NOTIFY, TOKEN, REF, 1, { fetchImpl: async () => (++n < 3 ? new Response('busy', { status: 503 }) : new Response(img)), backoffMs: 1 });
+  assert.equal(n, 3);
+  assert.ok(buf.equals(img));
+});
+
+test('fetchUpload refuses a bad ref or number without a request, and a body over 3 MB however it is sent', async () => {
+  let calls = 0;
+  const counting = async () => (calls++, new Response('x'));
+  for (const [ref, n] of [['../x', 1], ['3F9A0C1E8B7D6A54', 1], [REF, 0], [REF, 4], [REF, 1.5]]) await assert.rejects(fetchUpload(NOTIFY, TOKEN, ref, n, { fetchImpl: counting }), /invalid request/);
+  await assert.rejects(fetchUpload('http://site.example/x', TOKEN, REF, 1, { fetchImpl: counting }), /invalid request/);
+  await assert.rejects(fetchUpload(NOTIFY, '', REF, 1, { fetchImpl: counting }), /invalid request/);
+  assert.equal(calls, 0);
+  const declared = async () => new Response('x', { headers: { 'content-length': String(UPLOAD_LIMITS.maxBytes + 1) } });
+  await assert.rejects(fetchUpload(NOTIFY, TOKEN, REF, 1, { fetchImpl: declared }), /too large/);
+  const chunk = new Uint8Array(1024 * 1024);
+  const streamed = async () => new Response(new ReadableStream({ pull(c) { c.enqueue(chunk); } }));
+  await assert.rejects(fetchUpload(NOTIFY, TOKEN, REF, 1, { fetchImpl: streamed }), /too large/);
+  // Too large is the image's fault: a rejected game, not a fetch to retry.
+  const { out, games } = await sentFixture(1);
+  const res = await runUpload({ outDir: out, gamesDir: games, uploads: ['sent'], notifyUrl: NOTIFY, notifyToken: TOKEN, fetchImpl: declared, put: () => {}, log: () => {} });
+  assert.equal(res.problems.sent, 'rejected');
+});
+
+test("a creator's screenshot that breaks the limits rejects the game", async () => {
+  const { out, games } = await sentFixture(2);
+  const res = await runUpload({ outDir: out, gamesDir: games, uploads: ['sent'], notifyUrl: NOTIFY, notifyToken: TOKEN, fetchImpl: site([await creatorShot('jpeg'), await creatorShot('jpeg', 1280, 1600)]), put: () => {}, log: () => {} });
+  assert.equal(res.problems.sent, 'rejected');
+});
+
+test('no fetch without an https notify URL and a token, for a game whose entry names no uploads, or outside the PR', async () => {
+  let calls = 0;
+  const counting = async () => (calls++, new Response('x'));
+  const { out, games } = await sentFixture(2);
+  for (const [notifyUrl, notifyToken] of [[undefined, TOKEN], [NOTIFY, undefined], ['http://site.example/api/internal/notify', TOKEN]]) {
+    const res = await runUpload({ outDir: out, gamesDir: games, uploads: ['sent'], notifyUrl, notifyToken, fetchImpl: counting, dryRun: true, log: () => {} });
+    assert.equal(res.problems.sent, 'fetch-failed');
+  }
+  const plain = await runUpload({ outDir: out, gamesDir: games, uploads: ['good'], notifyUrl: NOTIFY, notifyToken: TOKEN, fetchImpl: counting, dryRun: true, log: () => {} });
+  assert.equal(plain.problems.good, 'no-uploads', 'a game in --uploads whose entry names none');
+  const bad = await sentFixture(2, { ref: 'NOT-A-REF', count: 2 });
+  assert.equal((await runUpload({ outDir: bad.out, gamesDir: bad.games, uploads: ['sent'], notifyUrl: NOTIFY, notifyToken: TOKEN, fetchImpl: counting, dryRun: true, log: () => {} })).problems.sent, 'no-uploads');
+  const other = await runUpload({ outDir: out, gamesDir: games, only: ['good'], uploads: ['sent'], notifyUrl: NOTIFY, notifyToken: TOKEN, fetchImpl: counting, dryRun: true, log: () => {} });
+  assert.equal(other.problems.sent, 'not-in-pr');
+  assert.equal(calls, 0);
+  await assert.rejects(runUpload({ outDir: out, gamesDir: games, uploads: ['../x'], dryRun: true, log: () => {} }), /invalid --uploads/);
+});
+
+test("a run with only the creator's screenshots needs no capture artifact", async () => {
+  const root = tmp();
+  const games = join(root, 'games');
+  mkdirSync(games);
+  writeFileSync(join(games, 'sent.yaml'), stringify({ slug: 'sent', title: 'Sent', play: { url: 'https://sent.example/' }, provenance: { uploads: { ref: REF, count: 1 } } }));
+  const out = join(root, 'out'); // never created: no artifact was downloaded
+  const res = await runUpload({ outDir: out, gamesDir: games, uploads: ['sent'], notifyUrl: NOTIFY, notifyToken: TOKEN, fetchImpl: site([await creatorShot('png')]), dryRun: true, log: () => {} });
+  assert.deepEqual(res.problems, {});
+  assert.ok(res.uploaded.includes('games/sent/ready.json'));
+  assert.match(readFileSync(join(out, 'contact-sheet.md'), 'utf8'), /1 of 1 game captured/);
 });

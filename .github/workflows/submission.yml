@@ -42,6 +42,8 @@ jobs:
         env:
           ISSUE_BODY: ${{ github.event.issue.body }}
           ISSUE_NUMBER: ${{ github.event.issue.number }}
+          # Only issues the site files (a Bot author) can name the creator's uploaded screenshots.
+          ISSUE_AUTHOR_TYPE: ${{ github.event.issue.user.type }}
         run: node scripts/issue-to-entry.mjs > "$RUNNER_TEMP/entry.json"
       - uses: actions/create-github-app-token@v2
         if: steps.limit.outputs.ok == 'true'
