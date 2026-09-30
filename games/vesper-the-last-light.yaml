@@ -25,6 +25,7 @@ play:
   embedPermission:
     by: submission
     date: 2026-09-30
+  embeddable: true
 creator:
   name: kvickan
   handle: kvickan
