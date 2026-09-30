@@ -1,0 +1,68 @@
+slug: running-late
+title: RUNNING LATE
+tagline: Sprint and wall-jump through 30 commuter rooms while deaths add time to
+  your clock
+description: >-
+  RUNNING LATE is a precision platformer about a commute that turns into one
+  long near miss. A run is 30 rooms, drawn from a pool of hand-built modules.
+  You run, control jump height, rebound off walls, and time your moves around
+  trains and gates. Each death adds twenty seconds to the clock, and the room
+  restarts almost instantly.
+
+
+  Between legs you pick Local, Express, or Shortcut, a choice that can't be
+  undone and sets how readable or direct the next stretch is. Difficulty climbs
+  through five tiers, from basic jumps to wall-jumps, moving platforms, timed
+  gates, pressure plates, and combinations. Jump control includes coyote time
+  and input buffering.
+
+
+  Each new commute uses a fresh seed, and you can retry the same seed or copy it
+  to practice. Results show all 30 splits, route history, deaths, and an arrival
+  rating. The look is a two-ink palette with shape and pattern cues. The creator
+  states generative AI helped with code, copy, backgrounds, and the commuter
+  animation sheet, while music and effects are synthesized at runtime.
+play:
+  url: https://peppoasap.itch.io/running-late
+  embeddable: false
+  platforms:
+    - browser
+  controls:
+    - "A / D or arrow keys: move"
+    - "W, Space, or Up: jump (hold for height)"
+    - "Push toward wall and jump: wall-jump"
+    - "Click, tap, or 1 / 2 / 3: choose route"
+    - "Esc: pause"
+    - "F: fullscreen"
+creator:
+  name: "0x00000000"
+  handle: peppoasap
+  links:
+    - https://peppoasap.itch.io
+made:
+  models: []
+  tools: []
+  aiShare: some
+  source: AI Browser Game Jam 4 rules (most of each game AI-generated) and the
+    itch.io game page
+  evidence: creator
+tech:
+  multiplayer: single
+genres:
+  - platformer
+  - puzzle
+jam:
+  event: ai-browser-game-jam-4
+  rank: 19
+  entries: 126
+media:
+  cover: games/running-late/cover
+  screenshots:
+    - games/running-late/shot-1
+    - games/running-late/shot-2
+dates:
+  added: 2026-09-30
+  updated: 2026-09-30
+status: live
+provenance:
+  foundVia: scout:aibgj-4

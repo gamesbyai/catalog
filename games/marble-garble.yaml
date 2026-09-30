@@ -1,0 +1,67 @@
+slug: marble-garble
+title: MARBLE GARBLE
+tagline: Roll a marble across hazardous terrain and collect all the money in each level.
+description: >-
+  MARBLE Garble is a 3D marble platformer in which you roll and steer a ball
+  through a series of levels. Each level asks you to collect all the money to
+  advance. Bottomless pits, lava, and cacti are waiting for any wrong move, and
+  a quick restart puts you back at the start.
+
+
+  The game has 50 procedurally generated levels spread across five themed
+  worlds, and the surfaces change how the marble behaves. Ice is slippery, while
+  desert sand adds heavy friction, so momentum needs constant attention. Enemies
+  such as hovering UFOs and forest snakes add moving threats. Music comes from
+  Creative Commons and royalty-free sources.
+
+
+  Designer Daniel Borge Kristensen credits Gemini and Claude as technical
+  collaborators, and the game is built with Three.js. The AI disclosure
+  describes it as AI assisted, with help on the code. It placed fourth among 29
+  entries in the AI Browser Game Jam 1.
+play:
+  url: https://daniel-bk.itch.io/marble-garble
+  embeddable: false
+  platforms:
+    - browser
+  controls:
+    - "Arrow keys / WASD: roll the marble"
+    - "R: restart"
+creator:
+  name: Daniel__BK
+  handle: daniel-bk
+  links:
+    - https://daniel-bk.itch.io
+made:
+  models: []
+  providers:
+    - anthropic
+    - google
+  tools:
+    - claude-ai
+    - gemini-app
+  aiShare: some
+  source: AI Browser Game Jam rules (at least half of each game AI-generated) and
+    the itch.io game page
+  evidence: creator
+tech:
+  engine: threejs
+  multiplayer: single
+genres:
+  - platformer
+  - puzzle
+jam:
+  event: ai-browser-game-jam-1
+  rank: 4
+  entries: 29
+media:
+  cover: games/marble-garble/cover
+  screenshots:
+    - games/marble-garble/shot-1
+    - games/marble-garble/shot-2
+dates:
+  added: 2026-09-30
+  updated: 2026-09-30
+status: live
+provenance:
+  foundVia: scout:aibgj-1

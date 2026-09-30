@@ -1,0 +1,62 @@
+slug: junkissa-dive
+title: 純喫茶ダイヴ - JUNKISSA DIVE
+tagline: Launch cherries and sugar cubes onto dishes to finish orders at a
+  late-night café.
+description: >-
+  JUNKISSA DIVE is a short action game set in a late-night retro Japanese café,
+  called a junkissa. Instead of diving yourself, you launch toppings such as
+  cherries and sugar cubes so they land on the food and complete each order. A
+  shift lasts five orders.
+
+
+  After the fifth order, the dishes from your shift are turned into a poster,
+  and a short message arrives from your childhood friend, who owns the café. The
+  game is not built around high scores. It aims to make each day's result worth
+  enjoying, whether the toppings landed neatly or the dish came out strange.
+
+
+  The controls are kept simple so the game can be understood by playing it.
+  Effort went into the feel of the launches, the sounds, the camera movement,
+  the receipts, and the posters. The creator says ChatGPT worked as a
+  development buddy on the code, screen design, and rules. It was made for AI
+  Browser Game Jam 4.
+play:
+  url: https://sukimastock.itch.io/junkissa-dive
+  embeddable: false
+  platforms:
+    - browser
+creator:
+  name: SukimaStock
+  handle: sukimastock
+  links:
+    - https://sukimastock.itch.io
+made:
+  models: []
+  providers:
+    - openai
+  tools:
+    - chatgpt
+  aiShare: some
+  source: AI Browser Game Jam 4 rules (most of each game AI-generated) and the
+    itch.io game page
+  evidence: creator
+tech:
+  multiplayer: single
+genres:
+  - action
+  - casual
+jam:
+  event: ai-browser-game-jam-4
+  rank: 12
+  entries: 126
+media:
+  cover: games/junkissa-dive/cover
+  screenshots:
+    - games/junkissa-dive/shot-1
+    - games/junkissa-dive/shot-2
+dates:
+  added: 2026-09-30
+  updated: 2026-09-30
+status: live
+provenance:
+  foundVia: scout:aibgj-4

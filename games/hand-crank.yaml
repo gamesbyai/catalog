@@ -1,0 +1,57 @@
+slug: hand-crank
+title: Hand Crank
+tagline: Rebuild a hand-crank, keep its battery charged, and power the vault door open.
+description: >-
+  Hand Crank is a mechanical escape game set in a forgotten sub-basement. The
+  player rebuilds a failing hand-crank generator, keeps its leaking battery
+  topped up, and installs upgrades along the way. The goal is to gather enough
+  power to run the vault door and get out.
+
+
+  The setting is dark and gritty, with a grimy, industrial mood that suits the
+  repair-and-survive loop. A battery that constantly drains gives the cranking a
+  purpose beyond repetition, and the upgrades change how the machine produces
+  power. A single run is short, averaging around five to seven minutes.
+
+
+  It was made for the AI Browser Game Jam 4 and runs in the browser as HTML5.
+  The creator's AI disclosure says AI assisted with the code, graphics, sounds,
+  and text. The page also mentions that the game can be played through Astrocade
+  for better performance.
+play:
+  url: https://plepguy.itch.io/hand-crank
+  embeddable: false
+  platforms:
+    - browser
+creator:
+  name: Plepguy
+  handle: plepguy
+  links:
+    - https://plepguy.itch.io
+made:
+  models: []
+  tools: []
+  aiShare: some
+  source: AI Browser Game Jam 4 rules (most of each game AI-generated) and the
+    itch.io game page
+  evidence: creator
+tech:
+  multiplayer: single
+genres:
+  - simulation
+  - puzzle
+jam:
+  event: ai-browser-game-jam-4
+  rank: 14
+  entries: 126
+media:
+  cover: games/hand-crank/cover
+  screenshots:
+    - games/hand-crank/shot-1
+    - games/hand-crank/shot-2
+dates:
+  added: 2026-09-30
+  updated: 2026-09-30
+status: live
+provenance:
+  foundVia: scout:aibgj-4

@@ -1,0 +1,67 @@
+slug: chain-camp-classic
+title: Chain Camp Classic
+tagline: Charge and release disc throws across nine top-down holes of pixel-art
+  disc golf.
+description: >-
+  Chain Camp Classic is a top-down disc golf game with a retro pixel look. A
+  round covers nine holes on one course. On each throw you aim at the course,
+  hold to charge power, release to lock it in, then tap again to set the angle
+  of release. Near the basket, a timing meter handles the putt.
+
+
+  Shots involve choices. You pick a driver, midrange, or putter and throw
+  backhand or forehand, while each hole has its own wind. Risky routes,
+  ricochets, rough, water, and out-of-bounds penalties reward careful planning.
+  A Practice Field mode lets you work on throws, and scorecards and best scores
+  are saved in the browser.
+
+
+  It plays in the browser with keyboard, mouse, or touch, and uses adaptive
+  procedural music. The creator built it with Phaser 4, TypeScript, and Bun, and
+  the disclosure lists AI assistance for code and graphics, with art generated
+  through OpenAI image generation.
+play:
+  url: https://joeydoorbell.itch.io/chain-camp-classic
+  embeddable: false
+  platforms:
+    - browser
+  controls:
+    - Hold Space to charge throw
+    - Click or drag course to aim
+    - Q / E fine aim
+    - WASD / arrows pan camera
+    - 1 / 2 / 3 choose disc
+    - F backhand/forehand
+creator:
+  name: joeydoorbell
+  handle: joeydoorbell
+  links:
+    - https://joeydoorbell.itch.io
+made:
+  models: []
+  tools: []
+  aiShare: some
+  source: AI Browser Game Jam 4 rules (most of each game AI-generated) and the
+    itch.io game page
+  evidence: creator
+tech:
+  engine: phaser
+  multiplayer: single
+genres:
+  - sports
+  - simulation
+jam:
+  event: ai-browser-game-jam-4
+  rank: 15
+  entries: 126
+media:
+  cover: games/chain-camp-classic/cover
+  screenshots:
+    - games/chain-camp-classic/shot-1
+    - games/chain-camp-classic/shot-2
+dates:
+  added: 2026-09-30
+  updated: 2026-09-30
+status: live
+provenance:
+  foundVia: scout:aibgj-4

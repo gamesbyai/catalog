@@ -1,0 +1,53 @@
+slug: isometric-city
+title: IsoCity
+tagline: Build and manage an isometric city, growing it from the ground up.
+description: >-
+  IsoCity is a city-building simulation shown from an isometric viewpoint. The
+  player lays out a city on a tiled map and manages it as it grows, in the
+  tradition of classic urban planning games. The project lives in a public
+  GitHub repository.
+
+
+  The isometric presentation gives the city a clear, readable look, so the
+  layout of the map is easy to follow as it fills in. The focus stays on
+  planning and managing a city rather than on combat or fast reflexes, which
+  suits players who like to take their time.
+
+
+  The creator's listing names Cursor as a tool used in building the project. The
+  repository hosts the source code, so the game can be read, run, and studied by
+  anyone curious about how a browser-style city builder is put together.
+play:
+  url: https://iso-city.com
+  embeddable: true
+  platforms:
+    - browser
+repo: https://github.com/amilich/isometric-city
+license: MIT
+creator:
+  name: amilich
+  handle: amilich
+made:
+  models: []
+  tools:
+    - cursor
+  aiShare: unknown
+  source: GitHub repository README
+  evidence: repo
+  evidenceUrl: https://github.com/amilich/isometric-city
+tech:
+  multiplayer: single
+genres:
+  - simulation
+  - management
+media:
+  cover: games/isometric-city/cover
+  screenshots:
+    - games/isometric-city/shot-1
+    - games/isometric-city/shot-2
+dates:
+  added: 2026-09-30
+  updated: 2026-09-30
+status: live
+provenance:
+  foundVia: scout:github

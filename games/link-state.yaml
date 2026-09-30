@@ -1,0 +1,67 @@
+slug: link-state
+title: Link State
+tagline: Guide a data packet up through hardware zones, pinging and phasing past
+  firewalls.
+description: >-
+  Link State is a short 2D platformer in which you play a lone data packet
+  climbing through a decaying computer. Across five zones, from the Legacy
+  Partition and Cooling Towers to the GPU Glitch-scape and the Wireless Antenna,
+  you move upward to deliver a final message to the User. A full run takes about
+  five minutes.
+
+
+  Two abilities shape the climb. System Ping sends out a sonar pulse that
+  reveals invisible platforms and hidden data paths, while Phase Dash lets you
+  ghost through firewalls, security gates, and enemies. Both draw on the same
+  stamina pool as boosting, though boosting is free inside updrafts, so you keep
+  weighing where to spend signal strength. Neon visuals, CRT scanlines, and a
+  dark synth mood set the tone.
+
+
+  The creator built it for an AI game jam, where it placed third of 29 entries.
+  They used Google Gemini for prototyping, code, and Sonic Pi sound effect
+  scripts, worked in JetBrains Rider with Gemini, and made the music with ACE
+  Step 1.5.
+play:
+  url: https://bml.itch.io/link-state
+  embeddable: false
+  platforms:
+    - browser
+  controls:
+    - "WASD: Move"
+    - "Shift: Boost"
+    - "F: System Ping"
+    - "E: Phase Dash"
+    - "Space: Interact / advance dialogue"
+creator:
+  name: bml
+  handle: bml
+  links:
+    - https://bml.itch.io
+made:
+  models: []
+  tools: []
+  aiShare: most
+  source: AI Browser Game Jam rules (at least half of each game AI-generated) and
+    the itch.io game page
+  evidence: creator
+tech:
+  multiplayer: single
+genres:
+  - platformer
+  - adventure
+jam:
+  event: ai-browser-game-jam-1
+  rank: 3
+  entries: 29
+media:
+  cover: games/link-state/cover
+  screenshots:
+    - games/link-state/shot-1
+    - games/link-state/shot-2
+dates:
+  added: 2026-09-30
+  updated: 2026-09-30
+status: live
+provenance:
+  foundVia: scout:aibgj-1

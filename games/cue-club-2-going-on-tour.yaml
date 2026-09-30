@@ -1,0 +1,67 @@
+slug: cue-club-2-going-on-tour
+title: Cue Club 2 — Going on Tour
+tagline: Play British pub 8-ball pool through a ten-stop tour of first-to-two sets.
+description: >-
+  Cue Club 2 is a top-down pixel-art game of British pub-rules 8-ball pool. You
+  start in Leeds and play ten first-to-two sets against a different opponent at
+  each stop, finishing at Crystal Palace. Clear your seven balls, then pot the
+  black. Pot it early and you lose. Win a set and the tour moves on; lose and
+  you drop back a stop.
+
+
+  Each opponent plays in their own style, from fast and cautious to showy and
+  methodical. They weigh up safeties, chalk their cues, and sometimes bottle a
+  shot. Chalk matters for you too, since low chalk hurts accuracy. A 30-second
+  shot clock runs each visit and can be adjusted in settings. Fouls hand the
+  opponent two visits, and the table is open after the break.
+
+
+  The game saves up to three separate tours, along with statistics, trophies,
+  and unlocked freeplay. Unfinished tables are remembered locally between
+  sessions. Sound is generated procedurally rather than loaded from audio files.
+  The creator's AI disclosure says AI assisted with the code, graphics, sounds,
+  and text.
+play:
+  url: https://0xe25f.itch.io/cue-club-2
+  embeddable: false
+  platforms:
+    - browser
+  controls:
+    - "Mouse: aim, hold left click to pull back, release to shoot"
+    - "Right-click: cancel pull-back"
+    - "A / D or arrow keys: aim"
+    - "Hold Space: pull back; release to shoot"
+    - "C: chalk"
+    - "M: mute"
+creator:
+  name: Agent 57951
+  handle: "0xe25f"
+  links:
+    - https://0xe25f.itch.io
+made:
+  models: []
+  tools: []
+  aiShare: some
+  source: AI Browser Game Jam 4 rules (most of each game AI-generated) and the
+    itch.io game page
+  evidence: creator
+tech:
+  multiplayer: single
+genres:
+  - sports
+  - simulation
+jam:
+  event: ai-browser-game-jam-4
+  rank: 51
+  entries: 126
+media:
+  cover: games/cue-club-2-going-on-tour/cover
+  screenshots:
+    - games/cue-club-2-going-on-tour/shot-1
+    - games/cue-club-2-going-on-tour/shot-2
+dates:
+  added: 2026-09-30
+  updated: 2026-09-30
+status: live
+provenance:
+  foundVia: scout:aibgj-4

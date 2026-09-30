@@ -1,0 +1,64 @@
+slug: pulsari-demo
+title: PULSARI Demo
+tagline: Strike beat rings in four directions to bring hidden music out of the dark.
+description: >-
+  PULSARI is a rhythm arcade game built around a rotating nexus. Beat rings
+  converge on it from four directions, and you strike up, down, left or right as
+  each one arrives. Clean hits build a combo, while misses break it. Tracks are
+  short enough to restart instantly.
+
+
+  The music is layered into your performance. A bass line appears at combo four,
+  an arpeggio joins at sixteen, and the full song opens at thirty-two. There are
+  41 tracks across five sets, running from an 80 BPM tutorial to a 250 BPM
+  finale. Four difficulty modes tighten timing windows from 70 ms to 20 ms, and
+  audio and visual offsets can be calibrated separately.
+
+
+  Thirty cosmetic variants across sigil, aura, trail, hit effects and horizon
+  unlock through cleared sets, flawless runs, daily streaks and combo
+  milestones. It supports keyboard, gamepads and dance pads, offers three
+  languages, and saves progress locally. The creator's AI disclosure lists AI
+  assistance and sounds. The game uses flashing lights and beat-synced color
+  pulses.
+play:
+  url: https://critics-arcade.itch.io/pulsari
+  embeddable: false
+  platforms:
+    - browser
+  controls:
+    - Arrow keys or WASD
+    - Gamepad
+    - Dance pad
+creator:
+  name: Critics Arcade
+  handle: critics-arcade
+  links:
+    - https://critics-arcade.itch.io
+made:
+  models: []
+  tools: []
+  aiShare: unknown
+  source: AI Browser Game Jam 3 rules (at least half of each game AI-generated)
+    and the itch.io game page
+  evidence: inferred
+tech:
+  multiplayer: single
+genres:
+  - rhythm
+  - arcade
+jam:
+  event: ai-browser-game-jam-3
+  rank: 22
+  entries: 77
+media:
+  cover: games/pulsari-demo/cover
+  screenshots:
+    - games/pulsari-demo/shot-1
+    - games/pulsari-demo/shot-2
+dates:
+  added: 2026-09-30
+  updated: 2026-09-30
+status: live
+provenance:
+  foundVia: scout:aibgj-3

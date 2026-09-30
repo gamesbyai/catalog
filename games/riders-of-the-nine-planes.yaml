@@ -1,0 +1,65 @@
+slug: riders-of-the-nine-planes
+title: Riders Of The Nine Planes
+tagline: Ride a steed through dungeons, charging at targets to build energy and
+  cast spells.
+description: >-
+  Riders Of The Nine Planes is a roguelike where you play a cavalier on
+  horseback. Charging around is your main action, and each charge builds up
+  energy. Number keys 1 through 6 commit a charge at a target, sometimes a wall,
+  and choose which spell to discharge. Standing still leaves you vulnerable, so
+  every move needs planning.
+
+
+  The game is meant to grow beyond its roguelike start into a fuller RPG and
+  eventually a strategy layer, where the goal is to become Emperor Of The Known
+  Multiverse. You can also ignore those layers and smash around the dungeon like
+  an old arcade or UMoria-style run. Hidden spells unlock later, and you can
+  save your journey and continue it from the title screen.
+
+
+  The creator made it for AI Browser Game Jam 4 and describes it as AI assisted
+  in code, graphics, sounds, and text. The music is composed by the creator and
+  is not AI generated, while the sound effects are procedural. Some parts of the
+  wider game are still sealed off, and the interface is still being worked out.
+play:
+  url: https://exedexes1.itch.io/riders-of-the-nine-planes
+  embeddable: false
+  platforms:
+    - browser
+  controls:
+    - "1-6: commit a charge and choose a spell"
+    - "J: save journey"
+    - "M: mute music"
+creator:
+  name: exedexes1
+  handle: exedexes1
+  links:
+    - https://exedexes1.itch.io
+made:
+  models: []
+  tools: []
+  aiShare: some
+  source: AI Browser Game Jam 4 rules (most of each game AI-generated) and the
+    itch.io game page
+  evidence: creator
+tech:
+  multiplayer: single
+genres:
+  - roguelike
+  - action
+  - rpg
+jam:
+  event: ai-browser-game-jam-4
+  rank: 4
+  entries: 126
+media:
+  cover: games/riders-of-the-nine-planes/cover
+  screenshots:
+    - games/riders-of-the-nine-planes/shot-1
+    - games/riders-of-the-nine-planes/shot-2
+dates:
+  added: 2026-09-30
+  updated: 2026-09-30
+status: live
+provenance:
+  foundVia: scout:aibgj-4

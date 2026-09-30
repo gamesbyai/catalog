@@ -1,0 +1,63 @@
+slug: wagon-bones
+title: Wagon Bones
+tagline: Roll d12 dice, build scoring hands, and travel the Oregon Trail one leg
+  at a time.
+description: >-
+  Wagon Bones is a roguelike deckbuilder that swaps playing cards for d12 dice
+  and a poker table for the Oregon Trail. Each travel day you draw eight dice
+  from your pouch, roll them, and lock in up to five as a hand. Pips become
+  miles, and you must hit the mile target before the days run out.
+
+
+  The scoring follows a chips-and-mult model, with equipment that triggers on
+  conditions, trail guides that level up hand types, and one-use supply cards
+  that enhance dice. Equipment effects resolve left to right, so the order you
+  arrange them matters. Between rounds you pick from trail events, visit a shop,
+  and face a boss with a special rule at the end of each leg. Professions and
+  difficulty levels change the starting conditions.
+
+
+  A run covers eight legs from Independence, Missouri to Oregon City, and an
+  endless mode continues past that. The creator says the project was built
+  heavily with AI help, using GitHub Copilot and then Cursor. Dice and card art
+  came from an image model. The game runs in the browser on Phaser.
+play:
+  url: https://voltron2112.itch.io/wagon-bones
+  embeddable: false
+  platforms:
+    - browser
+  controls:
+    - Drag to reorder equipment
+creator:
+  name: voltron2112
+  handle: voltron2112
+  links:
+    - https://voltron2112.itch.io
+made:
+  models: []
+  tools: []
+  aiShare: most
+  source: AI Browser Game Jam 3 rules (at least half of each game AI-generated)
+    and the itch.io game page
+  evidence: creator
+tech:
+  engine: phaser
+  multiplayer: single
+genres:
+  - roguelike
+  - strategy
+jam:
+  event: ai-browser-game-jam-3
+  rank: 7
+  entries: 77
+media:
+  cover: games/wagon-bones/cover
+  screenshots:
+    - games/wagon-bones/shot-1
+    - games/wagon-bones/shot-2
+dates:
+  added: 2026-09-30
+  updated: 2026-09-30
+status: live
+provenance:
+  foundVia: scout:aibgj-3

@@ -1,0 +1,63 @@
+slug: emberwood
+title: Emberwood
+tagline: Tend a druid's idle RPG by seeding cells, mining rock and herding
+  schools of fish
+description: >-
+  Emberwood is an idle RPG about a druid tending a world that runs on real
+  simulations. Each skill is played with two simple taps. In Growth, you seed a
+  living cellular automaton and harvest what ripens before it decays. In
+  Stonehollow, you strike rock to reveal ore and choose when to descend. In
+  Stillmere, you fish a lake of about 150 fish.
+
+
+  The skills turn mathematical models into gameplay instead of visual effects.
+  The fish school with boid flocking, and each species moves differently. You
+  can fish with a rod, cast a net where a school is heading, or herd schools
+  into position. Progression draws on OSRS, with per-skill XP, equipment, drops
+  and a skill tree. Each region ends with a guardian that uses the same
+  mechanics as the skills.
+
+
+  The creator describes the game as an early prototype with placeholder pixel
+  art and balance still being tuned. It runs in the browser on desktop or mobile
+  and can be installed as a PWA. The AI disclosure says AI assisted with code
+  and graphics. It was entered in AI Browser Game Jam 4.
+play:
+  url: https://leonbzt.itch.io/emberwood
+  embeddable: false
+  platforms:
+    - browser
+  controls:
+    - Two-tap interactions per skill
+creator:
+  name: leonbzt
+  handle: leonbzt
+  links:
+    - https://leonbzt.itch.io
+made:
+  models: []
+  tools: []
+  aiShare: some
+  source: AI Browser Game Jam 4 rules (most of each game AI-generated) and the
+    itch.io game page
+  evidence: creator
+tech:
+  multiplayer: single
+genres:
+  - idle
+  - simulation
+jam:
+  event: ai-browser-game-jam-4
+  rank: 62
+  entries: 126
+media:
+  cover: games/emberwood/cover
+  screenshots:
+    - games/emberwood/shot-1
+    - games/emberwood/shot-2
+dates:
+  added: 2026-09-30
+  updated: 2026-09-30
+status: live
+provenance:
+  foundVia: scout:aibgj-4

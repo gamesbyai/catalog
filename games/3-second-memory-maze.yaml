@@ -1,0 +1,62 @@
+slug: 3-second-memory-maze
+title: 3-Second Memory Maze
+tagline: Memorize a maze route in three seconds, then find the exit in the dark.
+description: >-
+  3-Second Memory Maze is a short browser puzzle game about memory under
+  pressure. Each level shows the maze for a few seconds, then it fades to
+  darkness and leaves only a small glow around your character. You steer from
+  memory to the exit, aiming to finish quickly and with few moves.
+
+
+  The game has 30 bite-sized levels, each scored from one to three stars based
+  on speed and move count. A single route peek per level reveals the path once
+  if you get lost. A Daily Challenge gives everyone the same maze each day, and
+  local best records and daily streaks track your progress. The neon look suits
+  the dark play, and touch swipes, keyboard, and on-screen buttons all work.
+
+
+  According to the jam submission, AI assisted with the code, graphics, and
+  text. The game runs directly in the browser as HTML5 and is built to be
+  friendly to mobile devices.
+play:
+  url: https://cravveo-lab.itch.io/3-second-memory-maze
+  embeddable: false
+  platforms:
+    - browser
+  controls:
+    - "Arrow keys / WASD: move"
+    - "Swipe: move on touch screens"
+    - "Route peek: reveal the path once"
+    - "Pause: freeze the run"
+creator:
+  name: cravveo-lab
+  handle: cravveo-lab
+  links:
+    - https://cravveo-lab.itch.io
+made:
+  models: []
+  tools: []
+  aiShare: some
+  source: AI Browser Game Jam 4 rules (most of each game AI-generated) and the
+    itch.io game page
+  evidence: creator
+tech:
+  multiplayer: single
+genres:
+  - puzzle
+  - casual
+jam:
+  event: ai-browser-game-jam-4
+  rank: 30
+  entries: 126
+media:
+  cover: games/3-second-memory-maze/cover
+  screenshots:
+    - games/3-second-memory-maze/shot-1
+    - games/3-second-memory-maze/shot-2
+dates:
+  added: 2026-09-30
+  updated: 2026-09-30
+status: live
+provenance:
+  foundVia: scout:aibgj-4

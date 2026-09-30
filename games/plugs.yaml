@@ -1,0 +1,67 @@
+slug: plugs
+title: PLUGS
+tagline: Plug in lamps and mix colored light to brighten seven rooms in a dark house.
+description: >-
+  PLUGS is a point-and-click puzzle game set in a dark house with a box of lamps
+  and too few outlets. In each of seven rooms, you drag plugs, carry lamps, open
+  drawers and flip switches to light the space. Colored light has to be told
+  apart, and the breaker needs watching.
+
+
+  Lighting is the centerpiece. A per-pixel relight pass lets colored pools of
+  light mix on the walls, objects cast shadows, and dust shows only where light
+  falls. Cords behave like ropes: they sag and tangle, and heavy-gauge ones
+  resist being dragged. Every room has its own puzzle logic, palette and era,
+  and 65 secrets are tucked into walls, paint and plaster. A 59-page owner's
+  manual includes wiring diagrams and an appliance register.
+
+
+  An optional Bulb Marks setting stamps a letter on each lit lamp so no puzzle
+  depends on color alone. The menu also offers a room hint, volume steps, a CRT
+  filter and full screen. Progress saves in the browser. The credits name Claude
+  for code and pixels, with design and direction by Grant Haffner. Every image
+  is drawn and every sound synthesized at runtime, all in one HTML file. It was
+  made for the CHARGE jam theme.
+play:
+  url: https://granthaffner.itch.io/plugs
+  embeddable: false
+  platforms:
+    - browser
+  controls:
+    - "Mouse: drag plugs, carry lamps, open drawers, flip switches"
+    - "M: open/close manual"
+    - "Esc: close whatever is open"
+    - "Left/Right arrows: turn manual pages"
+    - "R: reset room furniture"
+creator:
+  name: HAFFNERVISION
+  handle: granthaffner
+  links:
+    - https://granthaffner.itch.io
+made:
+  models: []
+  tools: []
+  aiShare: most
+  source: AI Browser Game Jam 4 rules (most of each game AI-generated) and the
+    itch.io game page
+  evidence: creator
+tech:
+  engine: canvas
+  multiplayer: single
+genres:
+  - puzzle
+jam:
+  event: ai-browser-game-jam-4
+  rank: 6
+  entries: 126
+media:
+  cover: games/plugs/cover
+  screenshots:
+    - games/plugs/shot-1
+    - games/plugs/shot-2
+dates:
+  added: 2026-09-30
+  updated: 2026-09-30
+status: live
+provenance:
+  foundVia: scout:aibgj-4

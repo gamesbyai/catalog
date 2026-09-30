@@ -1,0 +1,66 @@
+slug: sketching-fish
+title: Sketching Fish
+tagline: Tap to the beat of each fish and fill a crayon sketchbook with 75 catches.
+description: >-
+  Sketching Fish is a one-button fishing game set in a child's crayon
+  sketchbook. You cast a line, then click or press Space in time with a
+  shrinking ring to land the fish. Each catch takes about ten seconds, and every
+  fish follows one of 11 beat patterns, so you learn to feel the rhythm before
+  you tap.
+
+
+  The 75 fish are named after stationery, such as the Pencil Eel, Eraser Shark,
+  and Clip Anchovy, and each comes with its own joke. They are spread across a
+  lake, a sea, and a foggy swamp, and the later pages unlock as you fill the
+  book. Fish fight in different ways, from slippery to dashing to ghostly rings.
+  Three legendary fish, coins, rods, baits, 36 achievements, and an ending for a
+  full book give you goals beyond the catch.
+
+
+  The creator says the code, including every drawing routine, was written with
+  Claude, and the three background tracks were composed with Google Gemini. No
+  image files are used; the wobbly crayon art is drawn by code as you play. The
+  game offers Korean, English, Japanese, and Chinese text.
+play:
+  url: https://hf-doodle-studio.itch.io/sketching-fish
+  embeddable: false
+  platforms:
+    - browser
+  controls:
+    - "Click or Space: cast and hit the ring"
+creator:
+  name: hf-doodle-studio
+  handle: hf-doodle-studio
+  links:
+    - https://hf-doodle-studio.itch.io
+made:
+  models: []
+  providers:
+    - anthropic
+  tools:
+    - claude-ai
+  aiShare: most
+  source: AI Browser Game Jam 4 rules (most of each game AI-generated) and the
+    itch.io game page
+  evidence: creator
+tech:
+  engine: canvas
+  multiplayer: single
+genres:
+  - rhythm
+  - simulation
+jam:
+  event: ai-browser-game-jam-4
+  rank: 7
+  entries: 126
+media:
+  cover: games/sketching-fish/cover
+  screenshots:
+    - games/sketching-fish/shot-1
+    - games/sketching-fish/shot-2
+dates:
+  added: 2026-09-30
+  updated: 2026-09-30
+status: live
+provenance:
+  foundVia: scout:aibgj-4

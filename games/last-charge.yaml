@@ -1,0 +1,67 @@
+slug: last-charge
+title: Last Charge
+tagline: Play or charge cards to build a deck while a Trace meter draws Sentinels.
+description: >-
+  Last Charge is a deckbuilding roguelike set in a world ruled by Machines,
+  where one human Citadel remains. Each expedition is a numbered Charge. In a
+  fight, you get Amps every turn and decide for each card in hand: play it for
+  its printed cost, or charge it to level it up for the rest of the fight.
+  Charging locks the card for that turn.
+
+
+  Every charge raises a Trace meter. At 6, a Sentinel joins the fight and the
+  meter resets without returning to zero, so greed has a price. Enemies show
+  their next action and damage, and route nodes reveal their threat rating up
+  front. The 34 cards use four keywords: Grounded, Discharge, Feedback, and
+  Conduit. Six bosses and several enemy types, including Armored Crawlers,
+  Scanners, and Agents, change how you build.
+
+
+  Between runs, Salvage lights up Citadel Districts, but stronger districts
+  raise the difficulty. Failing three Charges lets Sentinels breach the wall and
+  disable districts on your map. With 50 Salvage you can reach a final battle
+  with uncapped Trace and endless waves. It runs in the browser or as an offline
+  PWA, with mouse, keyboard, touch, and gamepad support. The creator's
+  disclosure says AI assisted with code, graphics, sounds, and text.
+play:
+  url: https://bittiai.itch.io/last-charge
+  embeddable: false
+  platforms:
+    - browser
+  controls:
+    - Mouse
+    - Keyboard
+    - Touchscreen
+    - Gamepad
+creator:
+  name: bitti.ai
+  handle: bittiai
+  links:
+    - https://bittiai.itch.io
+made:
+  models: []
+  tools: []
+  aiShare: some
+  source: AI Browser Game Jam 4 rules (most of each game AI-generated) and the
+    itch.io game page
+  evidence: creator
+tech:
+  multiplayer: single
+genres:
+  - card
+  - roguelike
+jam:
+  event: ai-browser-game-jam-4
+  rank: 15
+  entries: 126
+media:
+  cover: games/last-charge/cover
+  screenshots:
+    - games/last-charge/shot-1
+    - games/last-charge/shot-2
+dates:
+  added: 2026-09-30
+  updated: 2026-09-30
+status: live
+provenance:
+  foundVia: scout:aibgj-4

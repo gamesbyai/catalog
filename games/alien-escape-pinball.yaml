@@ -1,0 +1,69 @@
+slug: alien-escape-pinball
+title: Alien Escape Pinball
+tagline: Work the flippers, hit ramps, and crack alien eggs to survive an
+  invasion in pinball.
+description: >-
+  Alien Escape Pinball is a browser pinball game set during an alien invasion.
+  You pull the plunger to launch the ball, then use the flippers to keep it in
+  play while hitting ramps, poking eyes, and breaking targets. Hit each ramp
+  three times to start multiball. Spelling ALIEN raises the end-of-ball bonus
+  multiplier, and draining every ball means the aliens win.
+
+
+  The table runs on Box2D physics and includes slingshots, bumpers, drop
+  targets, a spinner, and a strobing skill-shot lane on each fresh ball.
+  Smashing and capturing the egg sets up repeatable jackpots, and aliens hatch
+  from it in four forms. Killing them refreshes the ball saver. A combo system
+  rewards alternating target and lock hits within five seconds, and wizard mode
+  stacks a 5x multiplier with multiball and a boss alien. Text-to-speech voice
+  lines add commentary.
+
+
+  The creator describes the game as made with heavy use of AI. Code came from
+  Claude Opus in VS Code, artwork and the title screen from GPT Image 2, and
+  three songs from Suno. It is built on LittleJS with ZzFX sound effects, and it
+  supports mouse, keyboard, gamepad, and touch.
+play:
+  url: https://focaccai.itch.io/alien-pinball
+  embeddable: false
+  platforms:
+    - browser
+  controls:
+    - "Left flipper: Left mouse / Z / Left Arrow"
+    - "Right flipper: Right mouse / Slash / Right Arrow"
+    - "Plunger: hold Space / Down Arrow"
+    - "Nudge: period and X keys, or swipe"
+    - "Restart: R"
+creator:
+  name: Focaccai
+  handle: focaccai
+  links:
+    - https://focaccai.itch.io
+made:
+  models: []
+  tools: []
+  aiShare: most
+  source: AI Browser Game Jam 2 rules (at least half of each game AI-generated)
+    and the itch.io game page
+  evidence: creator
+tech:
+  engine: littlejs
+  multiplayer: single
+genres:
+  - arcade
+  - action
+jam:
+  event: ai-browser-game-jam-2
+  rank: 1
+  entries: 42
+media:
+  cover: games/alien-escape-pinball/cover
+  screenshots:
+    - games/alien-escape-pinball/shot-1
+    - games/alien-escape-pinball/shot-2
+dates:
+  added: 2026-09-30
+  updated: 2026-09-30
+status: live
+provenance:
+  foundVia: scout:aibgj-2

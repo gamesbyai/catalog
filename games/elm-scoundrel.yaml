@@ -1,0 +1,52 @@
+slug: elm-scoundrel
+title: Elm Scoundrel
+tagline: Play a roguelike solitaire card game through a deck of dangers and rewards
+description: >-
+  Elm Scoundrel is a roguelike solitaire card game written in the Elm
+  programming language. It takes the single-player card format and gives it a
+  roguelike structure, so each session is a fresh run through a shuffled deck
+  where the player decides how to handle whatever cards come up.
+
+
+  The project is also a demonstration of functional programming applied to a
+  game. Elm's strict, typed approach suits a card game well, since the state of
+  the deck, hand, and player can be modeled as plain data that changes one step
+  at a time.
+
+
+  The creator built it with Cursor and presents it as a showcase of what that AI
+  tool can do on functional programming projects. The repository is tagged with
+  vibe-coding, Elm, solitaire, and roguelike.
+play:
+  url: https://nofate.github.io/elm-scoundrel
+  embeddable: true
+  platforms:
+    - browser
+repo: https://github.com/nofate/elm-scoundrel
+creator:
+  name: nofate
+  handle: nofate
+made:
+  models: []
+  tools:
+    - cursor
+  aiShare: unknown
+  source: GitHub repository README
+  evidence: repo
+  evidenceUrl: https://github.com/nofate/elm-scoundrel
+tech:
+  multiplayer: single
+genres:
+  - card
+  - roguelike
+media:
+  cover: games/elm-scoundrel/cover
+  screenshots:
+    - games/elm-scoundrel/shot-1
+    - games/elm-scoundrel/shot-2
+dates:
+  added: 2026-09-30
+  updated: 2026-09-30
+status: live
+provenance:
+  foundVia: scout:github

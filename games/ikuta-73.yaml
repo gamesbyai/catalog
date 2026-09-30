@@ -1,0 +1,67 @@
+slug: ikuta-73
+title: Ikuta '73
+tagline: Mow lawns in a 1973 Tokyo summer and rest in the shade to keep your stamina up
+description: >-
+  You play a college student in the summer of 1973, mowing lawns for your
+  uncle's company in the hills west of Tokyo. The game is first-person and
+  unhurried. You push the mower across yards, watch the sun move through a day
+  cycle, and keep an eye on your stamina as the work goes on.
+
+
+  The sun drains your stamina and shade restores it, so you pick when to keep
+  cutting and when to step out of the heat. Doing the job well can earn
+  hospitality from the people you work for, such as something cold to drink,
+  which gives bonus stamina. The idea comes from a Haruki Murakami short story,
+  with Katamari Damacy and the Boku no Natsuyasumi series as further influences.
+  A two-stick mower option is available for gamepad players.
+
+
+  It was made for AI Browser Game Jam 4 using Godot. The creator credits Claude
+  Code with the code, sound effects, modeling, and level QA, and Grok Build with
+  the title screen and lens flare code. Stuart Weiss of Plinth Games handled
+  everything else. A session runs about half an hour.
+play:
+  url: https://plinthcybernetics.itch.io/ikuta-73
+  embeddable: false
+  platforms:
+    - browser
+  controls:
+    - W/S walk or push and pull
+    - A/D step or steer
+    - Mouse look
+    - E take, use, put down
+    - F or left mouse use item
+    - T check the time
+creator:
+  name: plinth
+  handle: plinthcybernetics
+  links:
+    - https://plinthcybernetics.itch.io
+made:
+  models: []
+  tools: []
+  aiShare: most
+  source: AI Browser Game Jam 4 rules (most of each game AI-generated) and the
+    itch.io game page
+  evidence: creator
+tech:
+  engine: godot
+  multiplayer: single
+genres:
+  - simulation
+  - casual
+jam:
+  event: ai-browser-game-jam-4
+  rank: 12
+  entries: 126
+media:
+  cover: games/ikuta-73/cover
+  screenshots:
+    - games/ikuta-73/shot-1
+    - games/ikuta-73/shot-2
+dates:
+  added: 2026-09-30
+  updated: 2026-09-30
+status: live
+provenance:
+  foundVia: scout:aibgj-4

@@ -1,0 +1,67 @@
+slug: alien-orbital-assault
+title: Alien Orbital Assault
+tagline: Shoot down drone escorts, crack open a boss, and spend the salvage to
+  stay alive.
+description: >-
+  Alien Orbital Assault is a vertical shoot-'em-up built around a single boss
+  fight. The boss sits behind a ring of orbiting drones. Clear every drone to
+  open a short vulnerability window, then hit the boss hard before it closes. If
+  you miss the chance, the drones return in greater numbers and tougher than
+  before. You get five lives and no continues.
+
+
+  Destroyed ships give you no points. They release corrupted Earth matter,
+  called Substrate, which serves as ammunition and fuel, so every shot is a
+  spending decision. You begin with the Vulcan Cannon. One orbiter always
+  carries a weapon drop that unlocks the Shotgun Blaster or the Latch Beam
+  Projector, and each weapon upgrades across three tiers. Deciding whether to
+  chase the upgrade or rush the window drives each run.
+
+
+  The game was part of the AI Browser Game Jam 2. Its page discloses AI
+  assistance for code, graphics, sounds, and text. It runs in the browser and
+  supports keyboard, mouse, Xbox controller, and touchscreen, with configurable
+  controls, a high-contrast option, and an interactive tutorial. A session lasts
+  about half an hour.
+play:
+  url: https://kc00l.itch.io/alien-orbital-assault
+  embeddable: false
+  platforms:
+    - browser
+  controls:
+    - Keyboard
+    - Mouse
+    - Xbox controller
+    - Touchscreen
+creator:
+  name: Fifth Layer Studio
+  handle: kc00l
+  links:
+    - https://kc00l.itch.io
+made:
+  models: []
+  tools: []
+  aiShare: some
+  source: AI Browser Game Jam 2 rules (at least half of each game AI-generated)
+    and the itch.io game page
+  evidence: creator
+tech:
+  multiplayer: single
+genres:
+  - shooter
+  - arcade
+jam:
+  event: ai-browser-game-jam-2
+  rank: 2
+  entries: 42
+media:
+  cover: games/alien-orbital-assault/cover
+  screenshots:
+    - games/alien-orbital-assault/shot-1
+    - games/alien-orbital-assault/shot-2
+dates:
+  added: 2026-09-30
+  updated: 2026-09-30
+status: live
+provenance:
+  foundVia: scout:aibgj-2
