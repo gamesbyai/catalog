@@ -231,6 +231,13 @@ terms:
       - "https://www.anthropic.com/news/claude-3-5-sonnet"
       - "https://www.anthropic.com/news/3-5-models-and-computer-use"
       - "https://platform.claude.com/docs/en/about-claude/model-deprecations"
+  - slug: gpt-6-1-sol
+    name: GPT-6.1 Sol
+    provider: openai
+    sources:
+      - https://developers.openai.com/api/docs/models/gpt-6.1-sol
+      - https://developers.openai.com/api/docs/changelog
+      - https://developers.openai.com/api/docs/models
   # OpenAI
   - slug: gpt-6-astra
     name: GPT-6 Astra
@@ -276,6 +283,90 @@ terms:
       - "https://developers.openai.com/api/docs/changelog"
       - "https://openai.com/index/introducing-gpt-6-sol-and-luna/"
       - "https://learn.chatgpt.com/docs/models"
+  - slug: gpt-5-6-sol
+    name: GPT-5.6 Sol
+    provider: openai
+    sources:
+      - https://developers.openai.com/api/docs/models/gpt-5.6-sol
+      - https://developers.openai.com/api/docs/changelog
+      - https://developers.openai.com/api/docs/models/all
+  - slug: gpt-5-6-terra
+    name: GPT-5.6 Terra
+    provider: openai
+    sources:
+      - https://developers.openai.com/api/docs/models/gpt-5.6-terra
+      - https://developers.openai.com/api/docs/changelog
+      - https://developers.openai.com/api/docs/models/all
+  - slug: gpt-5-6-luna
+    name: GPT-5.6 Luna
+    provider: openai
+    sources:
+      - https://developers.openai.com/api/docs/models/gpt-5.6-luna
+      - https://developers.openai.com/api/docs/changelog
+      - https://developers.openai.com/api/docs/models/all
+  - slug: gpt-5-5
+    name: GPT-5.5
+    provider: openai
+    sources:
+      - https://developers.openai.com/api/docs/models/gpt-5.5
+      - https://developers.openai.com/api/docs/changelog
+  - slug: gpt-5-4
+    name: GPT-5.4
+    provider: openai
+    sources:
+      - https://developers.openai.com/api/docs/models/gpt-5.4
+      - https://developers.openai.com/api/docs/changelog
+  - slug: gpt-5-4-mini
+    name: GPT-5.4 mini
+    provider: openai
+    sources:
+      - https://developers.openai.com/api/docs/models/gpt-5.4-mini
+      - https://developers.openai.com/api/docs/changelog
+  - slug: gpt-5-4-nano
+    name: GPT-5.4 nano
+    provider: openai
+    sources:
+      - https://developers.openai.com/api/docs/models/gpt-5.4-nano
+      - https://developers.openai.com/api/docs/changelog
+  - slug: gpt-5-3-codex
+    name: GPT-5.3-Codex
+    provider: openai
+    sources:
+      - https://developers.openai.com/api/docs/models/gpt-5.3-codex
+      - https://developers.openai.com/api/docs/changelog
+  - slug: gpt-5-2-codex
+    name: GPT-5.2-Codex
+    provider: openai
+    sources:
+      - https://developers.openai.com/api/docs/models/gpt-5.2-codex
+      - https://developers.openai.com/api/docs/changelog
+      - https://developers.openai.com/api/docs/deprecations
+  - slug: gpt-5-2
+    name: GPT-5.2
+    provider: openai
+    sources:
+      - https://developers.openai.com/api/docs/models/gpt-5.2
+      - https://developers.openai.com/api/docs/changelog
+  - slug: gpt-5-1-codex-max
+    name: GPT-5.1-Codex-Max
+    provider: openai
+    sources:
+      - https://developers.openai.com/api/docs/models/gpt-5.1-codex-max
+      - https://developers.openai.com/api/docs/changelog
+      - https://developers.openai.com/api/docs/deprecations
+  - slug: gpt-5-1-codex
+    name: GPT-5.1-Codex
+    provider: openai
+    sources:
+      - https://developers.openai.com/api/docs/models/gpt-5.1-codex
+      - https://developers.openai.com/api/docs/changelog
+      - https://developers.openai.com/api/docs/deprecations
+  - slug: gpt-5-1
+    name: GPT-5.1
+    provider: openai
+    sources:
+      - https://developers.openai.com/api/docs/models/gpt-5.1
+      - https://developers.openai.com/api/docs/changelog
   - slug: gpt-5-codex
     name: GPT-5-Codex
     provider: openai
@@ -306,6 +397,20 @@ terms:
       - "https://developers.openai.com/api/docs/changelog"
       - "https://developers.openai.com/api/docs/deprecations"
       - "https://help.openai.com/en/articles/20001051-retiring-gpt-4o-and-other-chatgpt-models"
+  - slug: gpt-5-mini
+    name: GPT-5 mini
+    provider: openai
+    sources:
+      - https://developers.openai.com/api/docs/models/gpt-5-mini
+      - https://developers.openai.com/api/docs/changelog
+      - https://developers.openai.com/api/docs/deprecations
+  - slug: gpt-oss
+    name: gpt-oss
+    provider: openai
+    sources:
+      - https://developers.openai.com/api/docs/models/gpt-oss-120b
+      - https://github.com/openai/gpt-oss
+      - https://huggingface.co/openai/gpt-oss-120b
   - slug: gpt-4-1
     name: GPT-4.1
     provider: openai
@@ -321,21 +426,6 @@ terms:
       - "https://developers.openai.com/api/docs/changelog"
       - "https://developers.openai.com/api/docs/deprecations"
       - "https://help.openai.com/en/articles/20001051-retiring-gpt-4o-and-other-chatgpt-models"
-  - slug: gpt-4o
-    name: GPT-4o
-    provider: openai
-    intro: |-
-      GPT-4o was a flagship model from OpenAI, released in the API on May 13, 2024 as its fastest and most affordable flagship model at the time. It reads text and images, writes text, and has a 128,000-token context window with up to 16,384 output tokens.
-
-      It also brought image generation into ChatGPT. On March 25, 2025, 4o image generation became the default image generator for Free, Plus, Pro and Team users. OpenAI pointed to stronger text rendering and closer instruction following.
-
-      It has since been superseded. OpenAI retired GPT-4o from ChatGPT on February 13, 2026, and business plans lost it in custom GPTs after April 3. The API still lists it, but the gpt-4o-2024-05-13 snapshot shuts down on October 23, 2026, with gpt-5.6-sol named as the replacement.
-    sources:
-      - "https://developers.openai.com/api/docs/models/gpt-4o"
-      - "https://developers.openai.com/api/docs/changelog"
-      - "https://developers.openai.com/api/docs/deprecations"
-      - "https://help.openai.com/en/articles/20001051-retiring-gpt-4o-and-other-chatgpt-models"
-      - "https://openai.com/index/introducing-4o-image-generation/"
   - slug: o3
     name: o3
     provider: openai
@@ -365,6 +455,21 @@ terms:
       - "https://developers.openai.com/api/docs/changelog"
       - "https://developers.openai.com/api/docs/deprecations"
       - "https://help.openai.com/en/articles/20001051-retiring-gpt-4o-and-other-chatgpt-models"
+  - slug: gpt-4o
+    name: GPT-4o
+    provider: openai
+    intro: |-
+      GPT-4o was a flagship model from OpenAI, released in the API on May 13, 2024 as its fastest and most affordable flagship model at the time. It reads text and images, writes text, and has a 128,000-token context window with up to 16,384 output tokens.
+
+      It also brought image generation into ChatGPT. On March 25, 2025, 4o image generation became the default image generator for Free, Plus, Pro and Team users. OpenAI pointed to stronger text rendering and closer instruction following.
+
+      It has since been superseded. OpenAI retired GPT-4o from ChatGPT on February 13, 2026, and business plans lost it in custom GPTs after April 3. The API still lists it, but the gpt-4o-2024-05-13 snapshot shuts down on October 23, 2026, with gpt-5.6-sol named as the replacement.
+    sources:
+      - "https://developers.openai.com/api/docs/models/gpt-4o"
+      - "https://developers.openai.com/api/docs/changelog"
+      - "https://developers.openai.com/api/docs/deprecations"
+      - "https://help.openai.com/en/articles/20001051-retiring-gpt-4o-and-other-chatgpt-models"
+      - "https://openai.com/index/introducing-4o-image-generation/"
   # Google
   - slug: gemini-3-8-flash
     name: Gemini 3.8 Flash
@@ -379,6 +484,27 @@ terms:
       - "https://blog.google/innovation-and-ai/models-and-research/gemini-models/3-8-flash-and-3-8-flash-cyber/"
       - "https://ai.google.dev/gemini-api/docs/models"
       - "https://ai.google.dev/gemini-api/docs/changelog"
+  - slug: gemini-3-7-flash
+    name: Gemini 3.7 Flash
+    provider: google
+    sources:
+      - https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-3-7-flash/
+      - https://ai.google.dev/gemini-api/docs/models
+      - https://ai.google.dev/gemini-api/docs/changelog
+  - slug: gemini-3-6-flash
+    name: Gemini 3.6 Flash
+    provider: google
+    sources:
+      - https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-6-flash-3-5-flash-lite-3-5-flash-cyber/
+      - https://ai.google.dev/gemini-api/docs/models
+      - https://ai.google.dev/gemini-api/docs/changelog
+  - slug: gemini-3-5-flash
+    name: Gemini 3.5 Flash
+    provider: google
+    sources:
+      - https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-5/
+      - https://ai.google.dev/gemini-api/docs/models
+      - https://ai.google.dev/gemini-api/docs/changelog
   - slug: gemini-3-5-flash-lite
     name: Gemini 3.5 Flash-Lite
     provider: google
@@ -406,6 +532,13 @@ terms:
       - "https://ai.google.dev/gemini-api/docs/deprecations"
       - "https://ai.google.dev/gemini-api/docs/models"
       - "https://deepmind.google/models/gemini/"
+  - slug: gemini-3-1-flash-lite
+    name: Gemini 3.1 Flash-Lite
+    provider: google
+    sources:
+      - https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-1-flash-lite/
+      - https://ai.google.dev/gemini-api/docs/models
+      - https://ai.google.dev/gemini-api/docs/changelog
   - slug: gemini-3-deep-think
     name: Gemini 3 Deep Think
     provider: google
@@ -474,6 +607,13 @@ terms:
       - "https://ai.google.dev/gemini-api/docs/changelog"
       - "https://developers.googleblog.com/en/introducing-gemini-2-5-flash-image/"
       - "https://ai.google.dev/gemini-api/docs/deprecations"
+  - slug: gemma-4
+    name: Gemma 4
+    provider: google
+    sources:
+      - https://ai.google.dev/gemma/docs/core
+      - https://ai.google.dev/gemma/docs/releases
+      - https://blog.google/innovation-and-ai/technology/developers-tools/gemma-4/
   # xAI
   - slug: grok-4-7
     name: Grok 4.7
@@ -515,7 +655,7 @@ terms:
       - "https://docs.x.ai/developers/models/grok-4.5"
       - "https://docs.x.ai/developers/models"
   - slug: grok-build
-    name: Grok Build
+    name: Grok Build 0.1
     provider: xai
     intro: |-
       Grok Build is xAI's coding agent, and Grok Build 0.1 is the coding model built for it. The agent launched in early beta on May 25, 2026 for SuperGrok and X Premium+ subscribers, and xAI open-sourced it under Apache 2.0 on July 15, 2026. It runs in a terminal, headless in scripts or inside editors through the Agent Client Protocol, and it supports MCP servers.
@@ -531,18 +671,37 @@ terms:
       - "https://docs.x.ai/developers/models/grok-build-0.1"
       - "https://docs.x.ai/developers/grok-4-7"
       - "https://docs.x.ai/developers/migration/may-15-retirement"
-  - slug: grok-4
-    name: Grok 4
+  - slug: grok-4-3
+    name: Grok 4.3
     provider: xai
-    intro: |-
-      Grok 4 was a model from xAI, released July 9, 2025, when xAI called it the most intelligent model in the world. It came with native tool use and real-time search, and Grok 4 Heavy, a version that uses parallel test-time compute, launched with a new SuperGrok Heavy subscription.
-
-      Grok 4 was available to SuperGrok and Premium+ subscribers in Grok and through the xAI API, with a 256,000-token context window.
-
-      It has been retired from the API. Since May 15, 2026, requests to grok-4-0709 are served by grok-4.3 at low reasoning effort, at grok-4.3 prices.
     sources:
-      - "https://x.ai/news/grok-4"
-      - "https://docs.x.ai/developers/migration/may-15-retirement"
+      - https://docs.x.ai/developers/models/grok-4.3
+      - https://docs.x.ai/developers/models
+      - https://x.ai/news/grok-amazon-bedrock
+  - slug: grok-4-20
+    name: Grok 4.20
+    provider: xai
+    sources:
+      - https://docs.x.ai/developers/models/grok-4.20
+      - https://docs.x.ai/developers/release-notes
+      - https://docs.x.ai/developers/models
+  - slug: grok-4-1-fast
+    name: Grok 4.1 Fast
+    provider: xai
+    sources:
+      - https://x.ai/news/grok-4-1-fast
+      - https://docs.x.ai/developers/migration/may-15-retirement
+  - slug: grok-4-1
+    name: Grok 4.1
+    provider: xai
+    sources:
+      - https://x.ai/news/grok-4-1
+  - slug: grok-4-fast
+    name: Grok 4 Fast
+    provider: xai
+    sources:
+      - https://x.ai/news/grok-4-fast
+      - https://docs.x.ai/developers/migration/may-15-retirement
   - slug: grok-code-fast-1
     name: Grok Code Fast 1
     provider: xai
@@ -554,6 +713,18 @@ terms:
       It has been retired from the API. Since May 15, 2026, requests to grok-code-fast-1 go to grok-build-0.1, which xAI names as the replacement.
     sources:
       - "https://x.ai/news/grok-code-fast-1"
+      - "https://docs.x.ai/developers/migration/may-15-retirement"
+  - slug: grok-4
+    name: Grok 4
+    provider: xai
+    intro: |-
+      Grok 4 was a model from xAI, released July 9, 2025, when xAI called it the most intelligent model in the world. It came with native tool use and real-time search, and Grok 4 Heavy, a version that uses parallel test-time compute, launched with a new SuperGrok Heavy subscription.
+
+      Grok 4 was available to SuperGrok and Premium+ subscribers in Grok and through the xAI API, with a 256,000-token context window.
+
+      It has been retired from the API. Since May 15, 2026, requests to grok-4-0709 are served by grok-4.3 at low reasoning effort, at grok-4.3 prices.
+    sources:
+      - "https://x.ai/news/grok-4"
       - "https://docs.x.ai/developers/migration/may-15-retirement"
   - slug: grok-3
     name: Grok 3
@@ -568,6 +739,13 @@ terms:
       - "https://x.ai/news/grok-3"
       - "https://docs.x.ai/developers/release-notes"
       - "https://docs.x.ai/developers/migration/may-15-retirement"
+  - slug: deepseek-v4-1-flash
+    name: DeepSeek-V4.1-Flash
+    provider: deepseek
+    sources:
+      - https://api-docs.deepseek.com/news/news260910/
+      - https://api-docs.deepseek.com/quick_start/pricing
+      - https://openrouter.ai/deepseek/deepseek-v4.1-flash
   # DeepSeek
   - slug: deepseek-v4
     name: DeepSeek V4
@@ -582,6 +760,20 @@ terms:
       - "https://api-docs.deepseek.com/news/news260424"
       - "https://api-docs.deepseek.com/updates"
       - "https://api-docs.deepseek.com/news/news260910/"
+  - slug: deepseek-v3-2
+    name: DeepSeek-V3.2
+    provider: deepseek
+    sources:
+      - https://api-docs.deepseek.com/news/news251201
+      - https://api-docs.deepseek.com/updates
+      - https://openrouter.ai/deepseek/deepseek-v3.2
+  - slug: deepseek-v3-1
+    name: DeepSeek-V3.1
+    provider: deepseek
+    sources:
+      - https://api-docs.deepseek.com/news/news250821
+      - https://api-docs.deepseek.com/updates
+      - https://openrouter.ai/deepseek/deepseek-chat-v3.1
   - slug: deepseek-v3
     name: DeepSeek-V3
     provider: deepseek
@@ -626,6 +818,35 @@ terms:
       - "https://www.alibabacloud.com/blog/alibaba-unveils-qwen3-8-max-its-largest-and-most-capable-flagship-model-to-date_603420"
       - "https://huggingface.co/Qwen/Qwen3.8-27B"
       - "https://github.com/QwenLM/qwen-code"
+  - slug: qwen-3-7
+    name: Qwen3.7
+    provider: alibaba
+    sources:
+      - https://www.alibabacloud.com/blog/qwen3-7-the-agent-frontier_603154
+      - https://www.alibabacloud.com/blog/qwen3-7-plus-multimodal-agent-intelligence_603206
+      - https://www.alibabacloud.com/help/en/model-studio/models
+      - https://openrouter.ai/qwen/qwen3.7-max
+  - slug: qwen-3-6
+    name: Qwen3.6
+    provider: alibaba
+    sources:
+      - https://www.alibabacloud.com/blog/qwen3-6-plus-towards-real-world-agents_603005
+      - https://www.alibabacloud.com/blog/qwen3-6-35b-a3b-agentic-coding-power-now-open-to-all_603043
+      - https://github.com/QwenLM/Qwen3.8
+      - https://openrouter.ai/qwen/qwen3.6-plus
+  - slug: qwen-3-5
+    name: Qwen3.5
+    provider: alibaba
+    sources:
+      - https://www.alibabacloud.com/blog/qwen3-5-towards-native-multimodal-agents_602894
+      - https://github.com/QwenLM/Qwen3.8
+      - https://openrouter.ai/qwen/qwen3.5-397b-a17b
+  - slug: qwen3-coder-next
+    name: Qwen3-Coder-Next
+    provider: alibaba
+    sources:
+      - https://huggingface.co/Qwen/Qwen3-Coder-Next
+      - https://openrouter.ai/qwen/qwen3-coder-next
   - slug: qwen3-coder
     name: Qwen3-Coder
     provider: alibaba
@@ -639,6 +860,13 @@ terms:
       - "https://qwenlm.github.io/blog/qwen3-coder/"
       - "https://huggingface.co/Qwen/Qwen3-Coder-480B-A35B-Instruct"
       - "https://github.com/QwenLM/Qwen3.8"
+  - slug: qwen-3
+    name: Qwen3
+    provider: alibaba
+    sources:
+      - https://qwenlm.github.io/blog/qwen3/
+      - https://www.alibabacloud.com/blog/qwen3-max-just-scale-it_602621
+      - https://openrouter.ai/qwen/qwen3-235b-a22b
   # Moonshot AI
   - slug: kimi-k3
     name: Kimi K3
@@ -653,6 +881,34 @@ terms:
       - "https://www.kimi.ai/blog/kimi-k3"
       - "https://huggingface.co/moonshotai/Kimi-K3"
       - "https://platform.kimi.ai/docs/models"
+  - slug: kimi-k2-7-code
+    name: Kimi K2.7 Code
+    provider: moonshot
+    sources:
+      - https://platform.kimi.ai/docs/models
+      - https://huggingface.co/moonshotai/Kimi-K2.7-Code
+      - https://openrouter.ai/moonshotai/kimi-k2.7-code
+  - slug: kimi-k2-6
+    name: Kimi K2.6
+    provider: moonshot
+    sources:
+      - https://www.kimi.ai/blog/kimi-k2-6
+      - https://platform.kimi.ai/docs/models
+      - https://huggingface.co/moonshotai/Kimi-K2.6
+  - slug: kimi-k2-5
+    name: Kimi K2.5
+    provider: moonshot
+    sources:
+      - https://www.kimi.ai/blog/kimi-k2-5
+      - https://platform.kimi.ai/docs/models
+      - https://huggingface.co/moonshotai/Kimi-K2.5
+  - slug: kimi-k2-thinking
+    name: Kimi K2 Thinking
+    provider: moonshot
+    sources:
+      - https://www.kimi.ai/blog/kimi-k2-thinking
+      - https://platform.kimi.ai/docs/models
+      - https://openrouter.ai/moonshotai/kimi-k2-thinking
   - slug: kimi-k2
     name: Kimi K2
     provider: moonshot
@@ -667,6 +923,20 @@ terms:
       - "https://huggingface.co/moonshotai/Kimi-K2-Instruct"
       - "https://arxiv.org/abs/2507.20534"
       - "https://platform.kimi.ai/docs/models"
+  - slug: glm-5-3
+    name: GLM-5.3
+    provider: zhipu
+    sources:
+      - https://docs.z.ai/guides/llm/glm-5.3
+      - https://docs.z.ai/release-notes/new-released
+      - https://openrouter.ai/z-ai/glm-5.3
+  - slug: glm-5-3-flash
+    name: GLM-5.3-Flash
+    provider: zhipu
+    sources:
+      - https://docs.z.ai/guides/vlm/glm-5.3-flash
+      - https://docs.z.ai/release-notes/new-released
+      - https://openrouter.ai/z-ai/glm-5.3-flash
   # Z.ai
   - slug: glm-5-2
     name: GLM-5.2
@@ -682,6 +952,34 @@ terms:
       - "https://docs.z.ai/release-notes/new-released"
       - "https://huggingface.co/zai-org/GLM-5.2"
       - "https://docs.z.ai/devpack/overview"
+  - slug: glm-5-1
+    name: GLM-5.1
+    provider: zhipu
+    sources:
+      - https://docs.z.ai/guides/llm/glm-5.1
+      - https://docs.z.ai/release-notes/new-released
+      - https://openrouter.ai/z-ai/glm-5.1
+  - slug: glm-5
+    name: GLM-5
+    provider: zhipu
+    sources:
+      - https://docs.z.ai/guides/llm/glm-5
+      - https://docs.z.ai/release-notes/new-released
+      - https://openrouter.ai/z-ai/glm-5
+  - slug: glm-4-7
+    name: GLM-4.7
+    provider: zhipu
+    sources:
+      - https://docs.z.ai/guides/llm/glm-4.7
+      - https://docs.z.ai/release-notes/new-released
+      - https://openrouter.ai/z-ai/glm-4.7
+  - slug: glm-4-6
+    name: GLM-4.6
+    provider: zhipu
+    sources:
+      - https://docs.z.ai/guides/llm/glm-4.6
+      - https://docs.z.ai/release-notes/new-released
+      - https://openrouter.ai/z-ai/glm-4.6
   - slug: glm-4-5
     name: GLM-4.5
     provider: zhipu
@@ -710,6 +1008,62 @@ terms:
       - "https://platform.minimax.io/docs/release-notes/models"
       - "https://huggingface.co/MiniMaxAI/MiniMax-M3"
       - "https://www.minimax.io/"
+  - slug: minimax-m2-7
+    name: MiniMax M2.7
+    provider: minimax
+    sources:
+      - https://www.minimax.io/models/text/m27
+      - https://platform.minimax.io/docs/release-notes/models
+      - https://huggingface.co/MiniMaxAI/MiniMax-M2.7
+  - slug: minimax-m2-5
+    name: MiniMax M2.5
+    provider: minimax
+    sources:
+      - https://www.minimax.io/models/text
+      - https://platform.minimax.io/docs/release-notes/models
+      - https://huggingface.co/MiniMaxAI/MiniMax-M2.5
+  - slug: minimax-m2-1
+    name: MiniMax M2.1
+    provider: minimax
+    sources:
+      - https://platform.minimax.io/docs/release-notes/models
+      - https://huggingface.co/MiniMaxAI/MiniMax-M2.1
+  - slug: minimax-m2
+    name: MiniMax M2
+    provider: minimax
+    sources:
+      - https://platform.minimax.io/docs/release-notes/models
+      - https://huggingface.co/MiniMaxAI/MiniMax-M2
+  - slug: muse-spark-1-3
+    name: Muse Spark 1.3
+    provider: meta
+    sources:
+      - https://research.meta.ai/blog/introducing-muse-spark-1-3
+      - https://dev.meta.ai/models/muse-spark
+  - slug: muse-glimmer
+    name: Muse Glimmer
+    provider: meta
+    sources:
+      - https://dev.meta.ai/docs/overview
+      - https://huggingface.co/meta-models/Muse-Glimmer-30B
+      - https://huggingface.co/blog/muse-glimmer
+  - slug: muse-spark-1-2
+    name: Muse Spark 1.2
+    provider: meta
+    sources:
+      - https://research.meta.ai/blog/introducing-muse-code-and-muse-spark-1-2
+      - https://dev.meta.ai/docs/overview
+  - slug: muse-spark-1-1
+    name: Muse Spark 1.1
+    provider: meta
+    sources:
+      - https://ai.meta.com/blog/introducing-muse-spark-meta-model-api/
+      - https://dev.meta.ai/docs/overview
+  - slug: muse-spark
+    name: Muse Spark
+    provider: meta
+    sources:
+      - https://ai.meta.com/blog/introducing-muse-spark-msl/
   # Meta
   - slug: llama-4
     name: Llama 4
@@ -719,9 +1073,263 @@ terms:
 
       Meta released both as downloadable weights on llama.com and Hugging Face under the Llama 4 Community License. It asks for "Built with Llama" attribution and needs a separate license above 700 million monthly active users. A larger Llama 4 Behemoth was still in training at the announcement.
 
-      As of September 2026 Llama 4 is still Meta's newest Llama generation. Meta's newer models are the proprietary Muse Spark series, introduced April 8, 2026, and Meta calls Llama 4 Maverick its previous model.
+      As of September 2026 Llama 4 is still Meta's newest Llama generation. Meta's newer models are the proprietary Muse Spark series, introduced April 8, 2026, and the open-weight Muse Glimmer, released August 10, 2026. Meta's Muse Spark announcement calls Llama 4 Maverick its previous model.
     sources:
       - "https://ai.meta.com/blog/llama-4-multimodal-intelligence/"
       - "https://github.com/meta-llama/llama-models/blob/main/models/llama4/LICENSE"
       - "https://huggingface.co/meta-llama"
       - "https://ai.meta.com/blog/introducing-muse-spark-msl/"
+  - slug: solar-mini-4
+    name: Solar Mini 4
+    provider: upstage
+    sources:
+      - https://console.upstage.ai/docs/models/solar-mini-4
+      - https://openrouter.ai/upstage/solar-mini4
+  - slug: solar-pro-4
+    name: Solar Pro 4
+    provider: upstage
+    sources:
+      - https://www.upstage.ai/blog/en/solar-pro-4
+      - https://www.upstage.ai/news/upstage-ai-unveils-solar-pro-4-scoring-42-on-artificial-analysis-index-to-rank
+      - https://openrouter.ai/upstage/solar-pro4
+  - slug: mimo-v2-6-pro
+    name: MiMo-V2.6-Pro
+    provider: xiaomi
+    sources:
+      - https://mimo.xiaomi.com/mimo-v2-6
+      - https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Pro-RL
+      - https://openrouter.ai/xiaomi/mimo-v2.6-pro
+  - slug: mimo-v2-6-flash
+    name: MiMo-V2.6-Flash
+    provider: xiaomi
+    sources:
+      - https://mimo.xiaomi.com/mimo-v2-6
+      - https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Flash-RL
+      - https://openrouter.ai/xiaomi/mimo-v2.6-flash
+  - slug: mimo-v2-5-pro
+    name: MiMo-V2.5-Pro
+    provider: xiaomi
+    sources:
+      - https://mimo.xiaomi.com/mimo-v2-5-pro
+      - https://huggingface.co/XiaomiMiMo/MiMo-V2.5-Pro
+      - https://openrouter.ai/xiaomi/mimo-v2.5-pro
+  - slug: mimo-v2-5
+    name: MiMo-V2.5
+    provider: xiaomi
+    sources:
+      - https://mimo.xiaomi.com/mimo-v2-5
+      - https://huggingface.co/XiaomiMiMo/MiMo-V2.5
+      - https://openrouter.ai/xiaomi/mimo-v2.5
+  - slug: mimo-v2-flash
+    name: MiMo-V2-Flash
+    provider: xiaomi
+    sources:
+      - https://huggingface.co/XiaomiMiMo/MiMo-V2-Flash
+      - https://mimo.xiaomi.com/
+  - slug: mercury-2-5
+    name: Mercury 2.5
+    provider: inception
+    sources:
+      - https://www.inceptionlabs.ai/blog/introducing-mercury-2-5
+      - https://www.inceptionlabs.ai/models
+      - https://docs.inceptionlabs.ai/get-started/models
+  - slug: mercury-2
+    name: Mercury 2
+    provider: inception
+    sources:
+      - https://www.inceptionlabs.ai/blog/introducing-mercury-2
+      - https://docs.inceptionlabs.ai/get-started/models
+  - slug: mai-code-1-1-flash
+    name: MAI-Code-1.1-Flash
+    provider: microsoft
+    sources:
+      - https://github.blog/changelog/2026-08-11-mai-code-1-1-flash-available-in-github-copilot/
+      - https://microsoft.ai/models/mai-code-1-flash/
+  - slug: mai-code-1-flash
+    name: MAI-Code-1-Flash
+    provider: microsoft
+    sources:
+      - https://microsoft.ai/news/introducingmai-code-1-flash/
+      - https://github.blog/changelog/2026-09-10-mai-code-1-flash-deprecated/
+  - slug: nemotron-3-5-lightning
+    name: Nemotron 3.5 Lightning
+    provider: nvidia
+    sources:
+      - https://developer.nvidia.com/blog/nvidia-nemotron-3-5-lightning-delivers-fast-accurate-specialized-task-execution-for-long-running-agents/
+      - https://developer.nvidia.com/nemotron
+  - slug: nemotron-3
+    name: Nemotron 3
+    provider: nvidia
+    sources:
+      - https://research.nvidia.com/labs/nemotron/Nemotron-3/
+      - https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Super-120B-A12B-BF16
+      - https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-BF16
+  - slug: ling-3-0-flash
+    name: Ling-3.0-flash
+    provider: ant-group
+    sources:
+      - https://huggingface.co/inclusionAI/Ling-3.0-flash
+      - https://huggingface.co/inclusionAI/Ling-3.0-flash-VL
+      - https://openrouter.ai/inclusionai/ling-3.0-flash
+  - slug: ring-2-6-1t
+    name: Ring-2.6-1T
+    provider: ant-group
+    sources:
+      - https://huggingface.co/inclusionAI/Ring-2.6-1T
+  - slug: ling-2-6-1t
+    name: Ling-2.6-1T
+    provider: ant-group
+    sources:
+      - https://huggingface.co/inclusionAI/Ling-2.6-1T
+  - slug: laguna-s-2-1
+    name: Laguna S 2.1
+    provider: poolside
+    sources:
+      - https://poolside.ai/blog/introducing-laguna-s-2-1
+      - https://poolside.ai/models
+      - https://docs.poolside.ai/release-notes/models
+  - slug: laguna-xs-2-1
+    name: Laguna XS 2.1
+    provider: poolside
+    sources:
+      - https://poolside.ai/models
+      - https://poolside.ai/blog/introducing-laguna-s-2-1
+      - https://docs.poolside.ai/release-notes/models
+  - slug: laguna-m-1
+    name: Laguna M.1
+    provider: poolside
+    sources:
+      - https://poolside.ai/blog/introducing-laguna-xs2-m1
+      - https://docs.poolside.ai/release-notes/models
+  - slug: kat-coder
+    name: KAT-Coder
+    provider: kuaishou
+    sources:
+      - https://kwaipilot.github.io/KAT-Coder/
+      - https://huggingface.co/papers/2607.05471
+      - https://openrouter.ai/kwaipilot/kat-coder-pro-v2.5
+  - slug: hy3
+    name: Hy3
+    provider: tencent
+    sources:
+      - https://huggingface.co/tencent/Hy3
+      - https://github.com/Tencent-Hunyuan/Hy3
+      - https://openrouter.ai/tencent/hy3
+  - slug: longcat-2-0
+    name: LongCat-2.0
+    provider: meituan
+    sources:
+      - https://huggingface.co/meituan-longcat/LongCat-2.0
+      - https://longcat.chat/blog/longcat-2.0
+      - https://openrouter.ai/meituan/longcat-2.0
+  - slug: longcat-flash
+    name: LongCat-Flash
+    provider: meituan
+    sources:
+      - https://huggingface.co/meituan-longcat/LongCat-Flash-Chat
+  - slug: seed2-1
+    name: Seed2.1
+    provider: bytedance
+    sources:
+      - https://seed.bytedance.com/en/blog/seed2-1-officially-released-advancing-ai-productivity
+      - https://seed.bytedance.com/en/seed2_1
+      - https://openrouter.ai/bytedance-seed/seed-2-1-turbo
+  - slug: seed2-0
+    name: Seed2.0
+    provider: bytedance
+    sources:
+      - https://seed.bytedance.com/en/blog/seed-2-0-official-launch
+      - https://seed.bytedance.com/en/seed2
+      - https://openrouter.ai/bytedance-seed/seed-2.0-lite
+  - slug: north-mini-code
+    name: North Mini Code
+    provider: cohere
+    sources:
+      - https://cohere.com/blog/north-mini-code
+      - https://docs.cohere.com/docs/models
+      - https://huggingface.co/CohereLabs/North-Mini-Code-1.0
+  - slug: command-a-plus
+    name: Command A+
+    provider: cohere
+    sources:
+      - https://cohere.com/blog/command-a-plus
+      - https://docs.cohere.com/changelog/command-a-plus-05-2026
+      - https://docs.cohere.com/docs/models
+  - slug: step-3-7-flash
+    name: Step 3.7 Flash
+    provider: stepfun
+    sources:
+      - https://static.stepfun.com/blog/step-3.7-flash/
+      - https://huggingface.co/stepfun-ai/Step-3.7-Flash
+      - https://openrouter.ai/stepfun/step-3.7-flash
+  - slug: step-3-5-flash
+    name: Step 3.5 Flash
+    provider: stepfun
+    sources:
+      - https://static.stepfun.com/blog/step-3.5-flash/
+      - https://huggingface.co/stepfun-ai/Step-3.5-Flash
+      - https://openrouter.ai/stepfun/step-3.5-flash
+  - slug: ernie-5-1
+    name: ERNIE 5.1
+    provider: baidu
+    sources:
+      - https://ernie.baidu.com/blog/posts/ernie-5.1-0508-release/
+      - https://ernie.baidu.com/
+  - slug: ernie-5-0
+    name: ERNIE 5.0
+    provider: baidu
+    sources:
+      - https://ernie.baidu.com/blog/posts/ernie5.0/
+      - https://ernie.baidu.com/
+  - slug: mistral-medium-3-5
+    name: Mistral Medium 3.5
+    provider: mistral
+    sources:
+      - https://docs.mistral.ai/models/mistral-medium-3-5-26-04
+      - https://docs.mistral.ai/getting-started/models/models_overview/
+      - https://mistral.ai/news/vibe-remote-agents-mistral-medium-3-5/
+  - slug: mistral-small-4
+    name: Mistral Small 4
+    provider: mistral
+    sources:
+      - https://docs.mistral.ai/models/model-cards/mistral-small-4-0-26-03
+      - https://docs.mistral.ai/getting-started/changelog/
+  - slug: devstral-2
+    name: Devstral 2
+    provider: mistral
+    sources:
+      - https://mistral.ai/news/devstral-2-vibe-cli/
+      - https://huggingface.co/mistralai/Devstral-2-123B-Instruct-2512
+      - https://docs.mistral.ai/getting-started/models/models_overview/
+  - slug: mistral-large-3
+    name: Mistral Large 3
+    provider: mistral
+    sources:
+      - https://docs.mistral.ai/models/mistral-large-3-25-12
+      - https://mistral.ai/news/mistral-3/
+  - slug: ministral-3
+    name: Ministral 3
+    provider: mistral
+    sources:
+      - https://mistral.ai/news/mistral-3/
+      - https://docs.mistral.ai/models/ministral-3-3b-25-12
+      - https://docs.mistral.ai/getting-started/models/models_overview/
+  - slug: codestral
+    name: Codestral
+    provider: mistral
+    sources:
+      - https://docs.mistral.ai/models/codestral-25-08
+      - https://docs.mistral.ai/getting-started/models/models_overview/
+  - slug: trinity-large-thinking
+    name: Trinity Large Thinking
+    provider: arcee
+    sources:
+      - https://www.arcee.ai/blog/trinity-large-thinking
+      - https://www.arcee.ai/trinity
+  - slug: nova-2-lite
+    name: Nova 2 Lite
+    provider: amazon
+    sources:
+      - https://aws.amazon.com/nova/models/
+      - https://aws.amazon.com/about-aws/whats-new/2025/12/nova-2-foundation-models-amazon-bedrock/
+      - https://docs.aws.amazon.com/nova/latest/nova2-userguide/whats-new.html

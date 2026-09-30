@@ -25,7 +25,7 @@ terms:
     intro: |-
       Codex is OpenAI's coding agent. It runs as an open-source command-line tool under the Apache-2.0 license, as an IDE extension for VS Code and Cursor, in the ChatGPT desktop app and as a cloud agent at chatgpt.com/codex.
 
-      For a game, you point Codex at a project folder and describe what to build or fix. The desktop app's built-in browser previews a local dev server and takes screenshots, and Codex can generate images with gpt-image-2, including sprite sheets, backgrounds and UI assets. MCP servers connect it to engines: Unity's official server and the community Godot AI server both list Codex as a client.
+      For a game, you point Codex at a project folder and describe what to build or fix. The desktop app's built-in browser previews a local dev server and takes screenshots, and Codex can generate images, including sprite sheets, backgrounds and UI assets. MCP servers connect it to engines: Unity's official server and the community Godot AI server both list Codex as a client.
 
       As of September 2026, every ChatGPT plan includes Codex, from Free and Go to Enterprise, and the CLI and IDE extension also run on an OpenAI API key.
     sources:
@@ -321,7 +321,9 @@ terms:
     intro: |-
       ChatGPT is OpenAI's chat assistant, released on November 30, 2022, as a free research preview. It runs on the web, as a desktop app for macOS, Windows and Linux, and on phones.
 
-      For a small game, you ask for a single HTML file in the chat. Code blocks have a Preview option that shows HTML pages and React components inside ChatGPT, so you can try the game before saving it. ChatGPT also generates images with gpt-image-2, and OpenAI lists sprite sheets, backgrounds and UI assets among the uses.
+      For a small game, you ask for a single HTML file in the chat. Code blocks have a Preview option that shows HTML pages and React components inside ChatGPT, so you can try the game before saving it. ChatGPT also generates images, with ChatGPT Images 2.5 since September 8, 2026, and OpenAI lists sprite sheets, backgrounds and UI assets among the uses.
+
+      With Sites, in public beta on the Plus, Pro, Business, Enterprise and Edu plans, ChatGPT builds a game, hosts it and can share it at a public URL.
 
       Bigger projects go to Codex, OpenAI's coding agent, which works inside the ChatGPT desktop app and at chatgpt.com/codex. As of September 2026, every ChatGPT plan includes Codex, Free included.
     sources:
@@ -463,3 +465,71 @@ terms:
       WebSim has community channels on Discord, Reddit and X. The homepage shows a 2026 copyright for websim and doesn't name a company or the AI models behind it.
     sources:
       - "https://websim.com/"
+  - slug: grok-build
+    name: Grok Build
+    maker: SpaceXAI
+    url: https://docs.x.ai/build/overview
+    sources:
+      - https://docs.x.ai/build/overview
+      - https://github.com/xai-org/grok-build
+  - slug: mistral-vibe
+    name: Mistral Vibe
+    maker: Mistral AI
+    url: https://mistral.ai/products/vibe/
+    sources:
+      - https://mistral.ai/products/vibe/
+      - https://mistral.ai/news/vibe-agent/
+      - https://help.mistral.ai/en/articles/682992-le-chat-is-now-vibe
+      - https://github.com/mistralai/mistral-vibe
+  - slug: kimi-code
+    name: Kimi Code
+    maker: Moonshot AI
+    url: https://www.kimi.com/code/en
+    sources:
+      - https://www.kimi.com/code/en
+      - https://github.com/MoonshotAI/kimi-code
+  - slug: minimax-code
+    name: MiniMax Code
+    maker: MiniMax
+    url: https://agent.minimax.io/docs/code/welcome
+    sources:
+      - https://agent.minimax.io/docs/code/welcome
+      - https://github.com/MiniMax-AI/minimax-code
+  - slug: muse-code
+    name: Muse Code
+    maker: Meta
+    url: https://dev.meta.ai/products/muse-code
+    sources:
+      - https://dev.meta.ai/products/muse-code
+  - slug: pi
+    name: Pi
+    maker: Earendil
+    url: https://pi.dev/
+    sources:
+      - https://pi.dev/
+      - https://github.com/earendil-works/pi
+  - slug: openclaw
+    name: OpenClaw
+    maker: OpenClaw Foundation
+    url: https://openclaw.ai/
+    sources:
+      - https://openclaw.ai/
+      - https://github.com/openclaw/openclaw
+  - slug: astrocade
+    name: Astrocade
+    url: https://www.astrocade.com/
+    sources:
+      - https://www.astrocade.com/
+      - https://www.astrocade.com/create
+  - slug: verse8
+    name: Verse8
+    url: https://verse8.io/
+    sources:
+      - https://verse8.io/
+      - https://docs.verse8.io/
+  - slug: base44
+    name: Base44
+    maker: Wix
+    url: https://base44.com/
+    sources:
+      - https://base44.com/

@@ -414,3 +414,46 @@ terms:
       - "https://www.w3.org/TR/webgpu/"
       - "https://threejs.org/manual/#en/webgpurenderer"
       - "https://pixijs.com/"
+  - slug: react
+    name: React
+    url: https://react.dev/
+    sources:
+      - https://react.dev/blog
+      - https://github.com/facebook/react
+  - slug: flutter
+    name: Flutter
+    url: https://flutter.dev/
+    sources:
+      - https://flutter.dev/games
+  - slug: twine
+    name: Twine
+    url: https://twinery.org/
+    sources:
+      - https://twinery.org/
+  - slug: renpy
+    name: Ren'Py
+    url: https://www.renpy.org/
+    sources:
+      - https://www.renpy.org/
+  - slug: bitsy
+    name: bitsy
+    url: https://www.bitsy.org/
+    sources:
+      - https://www.bitsy.org/
+  - slug: puzzlescript
+    name: PuzzleScript
+    url: https://www.puzzlescript.net/
+    sources:
+      - https://www.puzzlescript.net/
+      - https://github.com/increpare/PuzzleScript
+  - slug: gb-studio
+    name: GB Studio
+    url: https://www.gbstudio.dev/
+    sources:
+      - https://www.gbstudio.dev/
+      - https://github.com/chrismaltby/gb-studio
+  - slug: libgdx
+    name: libGDX
+    url: https://libgdx.com/
+    sources:
+      - https://libgdx.com/
