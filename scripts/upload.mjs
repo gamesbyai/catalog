@@ -82,14 +82,17 @@ export async function processImage(buf, { og = false, upload = false } = {}) {
   // The magic bytes and sharp's own sniffing must agree on an allowed format.
   const formats = upload ? UPLOAD_FORMATS : ['png'];
   if (!formats.includes(meta.format) || sniff(buf) !== meta.format) throw new ImageError(`not a ${upload ? 'PNG, JPEG or WebP' : 'PNG'} (${meta.format})`);
-  if (!(meta.width > 0 && meta.height > 0) || meta.width > maxSide || meta.height > maxSide) throw new ImageError(`not within ${maxSide} px`);
-  if (upload && (meta.width < UPLOAD_LIMITS.minWidth || meta.height < UPLOAD_LIMITS.minHeight)) throw new ImageError(`smaller than ${UPLOAD_LIMITS.minWidth}x${UPLOAD_LIMITS.minHeight}`);
-  if (upload && meta.width < meta.height) throw new ImageError('portrait');
+  const orientedWidth = meta.autoOrient?.width ?? meta.width;
+  const orientedHeight = meta.autoOrient?.height ?? meta.height;
+  if (!(orientedWidth > 0 && orientedHeight > 0) || orientedWidth > maxSide || orientedHeight > maxSide) throw new ImageError(`not within ${maxSide} px`);
+  if (upload && (orientedWidth < UPLOAD_LIMITS.minWidth || orientedHeight < UPLOAD_LIMITS.minHeight)) throw new ImageError(`smaller than ${UPLOAD_LIMITS.minWidth}x${UPLOAD_LIMITS.minHeight}`);
+  if (upload && orientedWidth < orientedHeight) throw new ImageError('portrait');
 
   // Decode once to raw 8-bit sRGB pixels; every output is encoded from these pixels alone.
   let pixels;
   try {
     pixels = await sharp(buf, { failOn: 'error', limitInputPixels: maxSide * maxSide })
+      .rotate()
       .flatten({ background: '#0a0b0d' })
       .toColourspace('srgb')
       .raw({ depth: 'uchar' })
