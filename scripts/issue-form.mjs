@@ -5,6 +5,7 @@ import { readFileSync, writeFileSync, mkdirSync } from 'node:fs';
 import { join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { parse, stringify } from 'yaml';
+import { allowedList } from './profiles.mjs';
 
 export const FORM_PATH = '.github/ISSUE_TEMPLATE/submit-game.yml';
 
@@ -23,7 +24,7 @@ export function issueForm(dir = '.') {
       input('repo_url', 'Repository (optional)', 'https://github.com/owner/repo'),
       input('title', 'Game title', '', true),
       input('creator', 'Creator name', '', true),
-      input('handle', 'Creator handle (optional)', 'Your usual username, for your creator page'),
+      input('profile_url', 'Profile link (optional)', `A link to your profile on ${allowedList()}. It shows on your game page.`),
       dropdown('genres', 'Genres', names('genres'), { multiple: true, required: true }),
       dropdown('players', 'Players', ['Single player', 'Local multiplayer', 'Online multiplayer'], { required: true }),
       dropdown('ai_share', 'How much of the code did AI write?', ['All of it', 'Most of it', 'Some of it'], { required: true }),
