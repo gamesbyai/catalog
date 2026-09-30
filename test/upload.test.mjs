@@ -354,6 +354,42 @@ test("a creator's JPEG, WebP or PNG is re-encoded from its pixels: the same vari
   }
 });
 
+test('JPEG EXIF orientation is applied before validating dimensions and encoding pixels', async () => {
+  const orientedJpeg = async (width, height, orientation, pixelAt) => {
+    const raw = Buffer.alloc(width * height * 3);
+    for (let y = 0; y < height; y++) for (let x = 0; x < width; x++) {
+      raw.set(pixelAt(x, y), (y * width + x) * 3);
+    }
+    return sharp(raw, { raw: { width, height, channels: 3 } })
+      .jpeg({ quality: 100 })
+      .withMetadata({ orientation })
+      .toBuffer();
+  };
+
+  // Encoded landscape is displayed as too-small portrait after orientation 6.
+  const turnedPortrait = await orientedJpeg(1280, 720, 6, () => [40, 80, 120]);
+  await assert.rejects(processImage(turnedPortrait, { upload: true }), /smaller than 1280x720/);
+
+  // Encoded portrait becomes a valid landscape screenshot after orientation 6.
+  const turnedLandscape = await orientedJpeg(720, 1280, 6, () => [40, 80, 120]);
+  const valid = await processImage(turnedLandscape, { upload: true });
+  const validMeta = await sharp(valid['-1280.webp']).metadata();
+  assert.deepEqual([validMeta.width, validMeta.height], [1280, 720]);
+
+  // Orientation 3 must rotate the pixels too, not only swap dimensions.
+  const quadrants = await orientedJpeg(1280, 720, 3, (x, y) => x < 640
+    ? (y < 360 ? [240, 20, 20] : [20, 240, 20])
+    : (y < 360 ? [20, 20, 240] : [240, 240, 20]));
+  const output = await processImage(quadrants, { upload: true });
+  const { data, info } = await sharp(output['-1280.webp']).raw().toBuffer({ resolveWithObject: true });
+  const sample = (x, y) => [...data.subarray((y * info.width + x) * info.channels, (y * info.width + x) * info.channels + 3)];
+  const near = (actual, expected) => actual.every((v, i) => Math.abs(v - expected[i]) < 40);
+  assert.ok(near(sample(100, 100), [240, 240, 20]), `top-left after rotation: ${sample(100, 100)}`);
+  assert.ok(near(sample(1180, 100), [20, 240, 20]), `top-right after rotation: ${sample(1180, 100)}`);
+  assert.ok(near(sample(100, 620), [20, 20, 240]), `bottom-left after rotation: ${sample(100, 620)}`);
+  assert.ok(near(sample(1180, 620), [240, 20, 20]), `bottom-right after rotation: ${sample(1180, 620)}`);
+});
+
 test("a creator's screenshot must be landscape, at least 1280x720 and at most 3840 px a side", async () => {
   const plain = (w, h, format = 'png') => sharp(Buffer.alloc(w * h * 3, 90), { raw: { width: w, height: h, channels: 3 } })[format]().toBuffer();
   for (const [w, h, format] of [[1280, 720], [1280, 1280], [3840, 2160, 'jpeg'], [2560, 1440, 'webp']]) {

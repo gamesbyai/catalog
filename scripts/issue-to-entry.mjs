@@ -107,12 +107,19 @@ function sameCreator(creator, creators, issue, notes) {
   const known = creators.get(creator.handle);
   if (known === undefined || known === creator.name) return creator;
   if (known.toLowerCase() === creator.name.toLowerCase()) return { ...creator, name: known };
-  notes.push(`The creator page /creators/${creator.handle}/ belongs to "${known}", so this entry uses ${creator.handle}-${issue}. Change it if they are the same person.`);
-  return { ...creator, handle: `${creator.handle}-${issue}` };
+  let handle;
+  for (let i = 1; ; i++) {
+    const suffix = `-${issue}${i === 1 ? '' : `-${i}`}`;
+    handle = `${creator.handle.slice(0, 40 - suffix.length).replace(/-+$/, '')}${suffix}`;
+    if (!creators.has(handle)) break;
+  }
+  notes.push(`The creator page /creators/${creator.handle}/ belongs to "${known}", so this entry uses ${handle}. Change it if they are the same person.`);
+  return { ...creator, handle };
 }
 
 const PLAYERS = { 'single player': 'single', 'local multiplayer': 'local', 'online multiplayer': 'online' };
 const SHARE = { 'all of it': 'all', 'most of it': 'most', 'some of it': 'some' };
+const EMBED_CONSENT = /^- \[[xX]\] I made this game or have the creator's permission\. GamesByAI may show it in its player, and I agree to the editorial policy\.[ \t]*$/m;
 
 export function toEntry(f, { names, playUrls, slugs, creators = new Map(), today, issue, fromSite = false }) {
   const notes = [];
@@ -153,7 +160,7 @@ export function toEntry(f, { names, playUrls, slugs, creators = new Map(), today
     tagline: 'Submitted by its creator; the description is added during review.',
     description: '',
     // The consent box (since 2026-09-30) also allows our player; older issues give no such permission.
-    play: { url: playUrl, platforms: ['browser'], ...(/may show it in its player/i.test(f.Permission ?? '') ? { embedPermission: { by: 'submission', date: today } } : {}) },
+    play: { url: playUrl, platforms: ['browser'], ...(EMBED_CONSENT.test(f.Permission ?? '') ? { embedPermission: { by: 'submission', date: today } } : {}) },
     ...(repo ? { repo } : {}),
     creator: sameCreator(creatorOf(f, creatorName, issue, notes), creators, issue, notes),
     made: {

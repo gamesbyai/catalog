@@ -44,14 +44,21 @@ export async function openOrUpdate(out, { repo, issue, token, fetchImpl = fetch 
   const path = `games/${slug}.yaml`;
 
   const ref = await api(`/git/ref/heads/${branch}`);
-  const openPr = async () => (await (await api(`/pulls?head=${encodeURIComponent(`${repo.split('/')[0]}:${branch}`)}&state=open`)).json())[0];
+  const openPr = async () => {
+    const res = await api(`/pulls?head=${encodeURIComponent(`${repo.split('/')[0]}:${branch}`)}&state=open`);
+    if (!res.ok) throw new Error(`GitHub pull lookup answered ${res.status}`);
+    const prs = await res.json();
+    if (!Array.isArray(prs)) throw new Error('GitHub pull lookup did not return an array');
+    return prs[0];
+  };
   const main = async () => (await (await api('/git/ref/heads/main')).json()).object.sha;
   if (ref.status === 404) {
     await post('/git/refs', { ref: `refs/heads/${branch}`, sha: await main() });
   } else if (!(await openPr())) {
     // A branch left behind by an earlier, closed PR (a rejection, or a merge before branches were auto-deleted): start
-    // it again from main, or the new PR would run last month's scripts (Vesper, 2026-09-30).
-    await api(`/git/refs/heads/${branch}`, { method: 'PATCH', body: JSON.stringify({ sha: await main(), force: true }) });
+    // it again from main, or the new PR would run last month's scripts.
+    const reset = await api(`/git/refs/heads/${branch}`, { method: 'PATCH', body: JSON.stringify({ sha: await main(), force: true }) });
+    if (!reset.ok) throw new Error(`GitHub branch reset answered ${reset.status}`);
     existing = await pending(slug);
   }
   await api(`/contents/${path}`, {
@@ -59,8 +66,7 @@ export async function openOrUpdate(out, { repo, issue, token, fetchImpl = fetch 
     body: JSON.stringify({ message: `Submission #${issue}: ${slug}`, content: Buffer.from(yaml).toString('base64'), branch, ...(existing?.sha ? { sha: existing.sha } : {}) }),
   });
 
-  const open = await (await api(`/pulls?head=${encodeURIComponent(`${repo.split('/')[0]}:${branch}`)}&state=open`)).json();
-  let pr = open[0];
+  let pr = await openPr();
   // The same game submitted again (after /changes): this issue takes over the PR and the old issue is closed, so the
   // merge closes and notifies the latest submission.
   const old = Number(/^Closes #(\d+)/.exec(pr?.body ?? '')?.[1]);

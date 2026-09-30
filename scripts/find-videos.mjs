@@ -7,7 +7,7 @@
 import { readFileSync, writeFileSync, readdirSync, appendFileSync } from 'node:fs';
 import { join } from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { parse } from 'yaml';
+import { parse, parseDocument, isMap, isScalar, isSeq } from 'yaml';
 
 const ROOT = fileURLToPath(new URL('..', import.meta.url));
 const API = 'https://www.googleapis.com/youtube/v3';
@@ -66,15 +66,27 @@ export function proposals(videos, entries, today) {
   return out;
 }
 
-/** Appends videos to an entry's YAML without reformatting it: a new `videos:` block, or more items on the last one. */
+/** Adds videos to an entry's YAML, preserving comments and key order. */
 export function appendVideos(text, videos) {
-  const items = videos.map((v) => ['  - youtube: ' + v.youtube, '    title: ' + JSON.stringify(v.title), '    channel: ' + JSON.stringify(v.channel), ...(v.channelId ? ['    channelId: ' + v.channelId] : []), '    added: ' + v.added].join('\n')).join('\n');
-  const body = text.endsWith('\n') ? text : `${text}\n`;
-  const at = body.search(/^videos:\s*$/m);
-  if (at === -1) return `${body}videos:\n${items}\n`;
-  // `videos` must be the last top-level key to append to it; otherwise leave the file for a person.
-  if (/^[A-Za-z]/m.test(body.slice(at).split('\n').slice(1).join('\n'))) throw new Error('videos is not the last key');
-  return `${body}${items}\n`;
+  const doc = parseDocument(text);
+  if (doc.errors.length) throw doc.errors[0];
+  if (!isMap(doc.contents)) throw new Error('entry must be a YAML map');
+  let seq = doc.get('videos', true);
+  if (seq === undefined || (isScalar(seq) && seq.value === null)) {
+    const previous = seq;
+    seq = doc.createNode([]);
+    seq.comment = previous?.comment;
+    seq.commentBefore = previous?.commentBefore;
+    seq.spaceBefore = previous?.spaceBefore;
+    seq.anchor = previous?.anchor;
+    doc.set('videos', seq);
+  }
+  if (!isSeq(seq)) throw new Error('videos must be a YAML sequence');
+  for (const video of videos) seq.add(doc.createNode(video));
+  // The entries are written with the default width, so the rest of the file comes back byte for byte.
+  const out = doc.toString();
+  parse(out); // Validate the serialized YAML before the caller writes it.
+  return out;
 }
 
 export function prBody(props) {
