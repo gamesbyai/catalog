@@ -2,20 +2,22 @@ slug: hollow-crown
 title: Hollow Crown
 tagline: Pick a class and fight through a pixel RPG toward a three-stage boss
 description: >-
-  You pick one of five classes in Hollow Crown and fight your way toward a boss
-  battle that unfolds across three stages. It is a single-player action RPG in
-  pixel art, inspired by MapleStory and played entirely in the browser.
+  Hollow Crown is a pixel-art action RPG inspired by MapleStory. You pick one of
+  five classes, from Hero to Night Lord, follow a quest chain out of a lakeside
+  town and fight toward King Shroom, a three-stage boss that speeds up and adds
+  attacks as its health drops.
 
 
-  None of it is loaded from image or audio files. Every sprite, effect and sound
-  is produced by code, with the pixel art drawn procedurally and the audio built
-  on the Web Audio API, all rendered to an HTML canvas in the browser.
+  It plays like the games it borrows from: jump up through platforms, climb
+  ropes, flash-jump in mid-air, earn levels, spend MP on skills and buy upgrades
+  from a merchant across four maps.
 
 
-  Procedural generation is the main technique behind both the look and the
-  sound. Five classes leave room to replay with a different style, and the
-  repository, which marks the project as made with Claude Code, holds the code
-  that draws every sprite.
+  The art has an unusual origin. According to the creator's README, every
+  sprite, effect, song and sound started as code: skill animations drawn pixel
+  by pixel on an HTML canvas with Web Audio sound, then baked into sprite sheets
+  and rebuilt as a game in Unity 6. The README credits Claude Code for the
+  build, and the game is free to play in the browser.
 play:
   url: https://rehan-remade.github.io/hollow-crown
   embeddable: true
@@ -37,7 +39,7 @@ made:
   evidence: repo
   evidenceUrl: https://github.com/rehan-remade/hollow-crown
 tech:
-  engine: threejs
+  engine: unity
   multiplayer: single
 genres:
   - rpg
@@ -49,7 +51,7 @@ media:
     - games/hollow-crown/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-09-29
+  updated: 2026-10-01
 status: live
 provenance:
   foundVia: scout:github
