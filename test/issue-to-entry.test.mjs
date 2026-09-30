@@ -19,6 +19,7 @@ const body = (over = {}) => {
     'How much of the code did AI write?': 'Most of it',
     'AI models used': 'Claude Opus 5.5',
     'AI tools used': 'Claude Code, Cursor',
+    'Engine or framework': 'Three.js',
     'How you made it (600 characters max)': 'I described the idea to Claude Code and tuned the jumps by hand.',
     Permission: "- [X] I made this game or have the creator's permission, and I agree to the editorial policy.",
     ...over,
@@ -51,6 +52,7 @@ test('a valid submission becomes a live entry (the merge is the approval) that f
   assert.doesNotMatch(r.entry.tagline, /editor/i);
   assert.deepEqual(r.entry.made.models, ['claude-opus-5-5']);
   assert.deepEqual(r.entry.made.tools, ['claude-code', 'cursor']);
+  assert.equal(r.entry.tech.engine, 'threejs');
   assert.deepEqual(r.entry.genres, ['platformer', 'puzzle']);
   assert.equal(r.entry.made.aiShare, 'most');
   assert.equal(r.entry.made.evidence, 'creator');
@@ -96,15 +98,27 @@ test('the issue form on disk matches the taxonomies (run node scripts/issue-form
   assert.equal(readFileSync(FORM_PATH, 'utf8'), renderForm('.'));
 });
 
-test('the issue form makes no editor claims: automated checks, then approval', async () => {
+test('the issue form makes no editor claims and never says how games are checked', async () => {
   const { issueForm } = await import('../scripts/issue-form.mjs');
   const f = issueForm('.');
   assert.doesNotMatch(f.description, /editor/i);
-  assert.match(f.description, /automated checks/);
+  assert.doesNotMatch(JSON.stringify(f), /automated|scan|malware/i);
+  assert.match(f.description, /reviewed before it goes live/);
+});
+
+test('the engine is optional: "Not sure" or an unknown name leaves it out (noted), a known one becomes tech.engine', () => {
+  const ctx = { ...loadContext(repo()), today: '2026-09-30', issue: 13 };
+  assert.equal(toEntry(parseIssue(body({ 'Engine or framework': 'Not sure' })), ctx).entry.tech.engine, undefined);
+  const odd = toEntry(parseIssue(body({ 'Engine or framework': 'MyEngine 9000' })), ctx);
+  assert.equal(odd.entry.tech.engine, undefined);
+  assert.ok(odd.notes.some((n) => /engine/i.test(n)));
+  assert.equal(toEntry(parseIssue(body({ 'Engine or framework': 'Godot' })), ctx).entry.tech.engine, 'godot');
+  const { 'Engine or framework': _, ...older } = parseIssue(body());
+  assert.equal(toEntry(older, ctx).entry.tech.engine, undefined, 'issues filed before the field existed still convert');
 });
 
 test('every label the converter reads exists in the issue form', async () => {
   const { issueForm } = await import('../scripts/issue-form.mjs');
   const labels = issueForm('.').body.filter((b) => b.attributes?.label).map((b) => b.attributes.label);
-  for (const l of ['Play URL', 'Repository (optional)', 'Game title', 'Creator name', 'Creator handle (optional)', 'Genres', 'Players', 'How much of the code did AI write?', 'AI models used', 'AI tools used', 'How you made it (600 characters max)', 'Permission']) assert.ok(labels.includes(l), l);
+  for (const l of ['Play URL', 'Repository (optional)', 'Game title', 'Creator name', 'Creator handle (optional)', 'Genres', 'Players', 'How much of the code did AI write?', 'AI models used', 'AI tools used', 'Engine or framework', 'How you made it (600 characters max)', 'Permission']) assert.ok(labels.includes(l), l);
 });
