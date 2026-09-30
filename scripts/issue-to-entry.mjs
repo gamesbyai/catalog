@@ -48,7 +48,7 @@ export function loadContext(dir = '.') {
   const gamesDir = join(dir, 'games');
   const games = existsSync(gamesDir) ? readdirSync(gamesDir).filter((f) => f.endsWith('.yaml')).map((f) => parse(readFileSync(join(gamesDir, f), 'utf8')) ?? {}) : [];
   return {
-    names: { models: names('models'), tools: names('tools'), genres: names('genres') },
+    names: { models: names('models'), tools: names('tools'), genres: names('genres'), engines: names('engines') },
     playUrls: new Set(games.map((g) => norm(g.play?.url))),
     slugs: new Set(games.map((g) => g.slug)),
   };
@@ -79,6 +79,8 @@ export function toEntry(f, { names, playUrls, slugs, today, issue }) {
     }
     return [...new Set(out)];
   };
+  // One engine at most; issues filed before the field existed simply have none.
+  const engine = pick('engines', f['Engine or framework'])[0];
   const genres = pick('genres', f.Genres).slice(0, 3);
   if (!genres.length) return { error: 'Pick at least one genre.' };
   let slug = kebab(title) || `game-${issue}`;
@@ -102,7 +104,7 @@ export function toEntry(f, { names, playUrls, slugs, today, issue }) {
       evidence: 'creator',
       notes: block(f['How you made it (600 characters max)'], 600) || undefined,
     },
-    tech: { multiplayer: PLAYERS[line(f.Players, 40).toLowerCase()] ?? 'single' },
+    tech: { ...(engine ? { engine } : {}), multiplayer: PLAYERS[line(f.Players, 40).toLowerCase()] ?? 'single' },
     genres,
     media: { cover: `games/${slug}/cover`, screenshots: [`games/${slug}/shot-1`, `games/${slug}/shot-2`] },
     dates: { added: today, updated: today },
