@@ -79,6 +79,8 @@ export function loadContext(dir = '.') {
     names: { models: names('models'), tools: names('tools'), genres: names('genres'), engines: names('engines') },
     playUrls: new Set(games.map((g) => norm(g.play?.url))),
     slugs: new Set(games.map((g) => g.slug)),
+    // Each creator page's handle and the name its games spell (the validator requires one spelling per handle).
+    creators: new Map(games.filter((g) => g.creator?.handle).map((g) => [g.creator.handle, g.creator.name])),
   };
 }
 
@@ -99,10 +101,20 @@ function creatorOf(f, creatorName, issue, notes) {
   return creator;
 }
 
+/** A handle already in the catalog: the same name in other letter case is the same creator (keep their spelling); a
+ * different name gets its own page, and the reviewer merges them by hand if it's the same person. */
+function sameCreator(creator, creators, issue, notes) {
+  const known = creators.get(creator.handle);
+  if (known === undefined || known === creator.name) return creator;
+  if (known.toLowerCase() === creator.name.toLowerCase()) return { ...creator, name: known };
+  notes.push(`The creator page /creators/${creator.handle}/ belongs to "${known}", so this entry uses ${creator.handle}-${issue}. Change it if they are the same person.`);
+  return { ...creator, handle: `${creator.handle}-${issue}` };
+}
+
 const PLAYERS = { 'single player': 'single', 'local multiplayer': 'local', 'online multiplayer': 'online' };
 const SHARE = { 'all of it': 'all', 'most of it': 'most', 'some of it': 'some' };
 
-export function toEntry(f, { names, playUrls, slugs, today, issue, fromSite = false }) {
+export function toEntry(f, { names, playUrls, slugs, creators = new Map(), today, issue, fromSite = false }) {
   const notes = [];
   const playUrl = safePlayUrl(f['Play URL']);
   if (!playUrl) return { error: 'The Play URL must be a public https link to where the game runs (not gamesbyai.win).' };
@@ -143,7 +155,7 @@ export function toEntry(f, { names, playUrls, slugs, today, issue, fromSite = fa
     // The consent box (since 2026-09-30) also allows our player; older issues give no such permission.
     play: { url: playUrl, platforms: ['browser'], ...(/may show it in its player/i.test(f.Permission ?? '') ? { embedPermission: { by: 'submission', date: today } } : {}) },
     ...(repo ? { repo } : {}),
-    creator: creatorOf(f, creatorName, issue, notes),
+    creator: sameCreator(creatorOf(f, creatorName, issue, notes), creators, issue, notes),
     made: {
       models: pick('models', f['AI models used']),
       tools: pick('tools', f['AI tools used']),
