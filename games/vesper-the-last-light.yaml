@@ -1,0 +1,46 @@
+slug: vesper-the-last-light
+title: "Vesper: The Last Light"
+tagline: Submitted by its creator; the description is added during review.
+description: ""
+play:
+  url: https://vesper.mansgullberg.chatgpt.site/
+  platforms:
+    - browser
+creator:
+  name: kvickan
+  handle: kvickan
+made:
+  models:
+    - gpt-6-astra
+  tools:
+    - codex
+  aiShare: all
+  source: "Creator's submission (issue #26)"
+  evidence: creator
+  notes: >-
+    I built it with GPT-6 Astra in Codex, shaping the game through
+    implementation, playtesting and iteration. The project combines AI-assisted
+    work, procedural assets and licensed resources.
+
+
+    The goal was not just to generate a scene that looks impressive. It was to
+    make a world you can actually explore, understand and finish—and care a
+    little about along the way.
+tech:
+  multiplayer: single
+genres:
+  - adventure
+  - casual
+  - puzzle
+media:
+  cover: games/vesper-the-last-light/cover
+  screenshots:
+    - games/vesper-the-last-light/shot-1
+    - games/vesper-the-last-light/shot-2
+dates:
+  added: 2026-09-30
+  updated: 2026-09-30
+status: live
+provenance:
+  foundVia: form
+  submittedBy: "#26"
