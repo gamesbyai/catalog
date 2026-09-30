@@ -2,22 +2,21 @@ slug: graviton
 title: GRAVITON
 tagline: Orbit a star and bend photon beams through gravity to destroy enemy waves
 description: >-
-  GRAVITON is a 3D orbital combat arena where the player circles a star and
-  fights off waves of enemies. Gravity wells pull on the ship, so movement is
-  about orbiting and slingshotting rather than flying in straight lines. Shots
-  are curved photon beams that bend as they travel.
+  In GRAVITON you circle a star in a 3D orbital combat arena and fight off waves
+  of enemies. Gravity wells pull on your ship, so you get around by orbiting and
+  slingshotting instead of flying in straight lines.
 
 
-  Gravity is the central mechanic instead of background flavor. It shapes every
-  shot, dodge, and slingshot maneuver, so aiming means predicting how a beam
-  will curve around massive bodies. The creator cites orbital mechanics and
-  gravitational lensing as the inspiration, and the action leans on planning as
-  much as reflexes.
+  Your shots bend too: they are curved photon beams, so aiming means predicting
+  how a beam will curve around massive bodies, and every dodge and slingshot
+  runs on the same physics. Gravity is the central mechanic rather than
+  background flavor, and the action leans on planning as much as reflexes.
 
 
-  The creator built it with Bolt, Cursor, and Claude, using Three.js for the 3D
-  rendering. It was a Vibe Jam 2026 entry, and it runs on mobile as well as
-  desktop.
+  The creator cites orbital mechanics and gravitational lensing as the
+  inspiration. They built the game with Bolt, Cursor and Claude for Vibe Jam
+  2026, where it came 159th of 945, and Three.js renders the star, the ship and
+  the beams in 3D.
 play:
   url: https://graviton-space.netlify.app
   embeddable: true

@@ -3,21 +3,21 @@ title: Gravity Rush
 tagline: Flip gravity to run, jump, and collect crystals through endless
   generated levels.
 description: >-
-  Gravity Rush is a platformer built around a single mechanic: flipping gravity.
-  The player guides a character through levels, switching between floor and
-  ceiling to cross gaps, dodge hazards, and gather crystals. Levels are
-  procedurally generated, so a run continues as long as the player can survive
-  the obstacles ahead.
+  Gravity Rush is an arcade platformer with one mechanic, and it is flipping
+  gravity. You guide a character through levels by switching between floor and
+  ceiling, which is how you cross gaps, dodge hazards and gather crystals. A run
+  lasts for as long as you can survive the obstacles ahead.
 
 
-  The design leans on momentum and timing. With only one action to master,
-  difficulty comes from how the levels are laid out and from hazards that grow
-  more dangerous as the run goes on. The creator cites classic gravity-flipping
-  games such as VVVVVV as inspiration.
+  The levels are procedurally generated and endless. With only one action to
+  master, the difficulty comes from how they are laid out and from hazards that
+  grow more dangerous as the run goes on. Timing and momentum decide how far you
+  get.
 
 
-  It runs in the browser on Three.js and supports mobile devices. The creator
-  built it with Antigravity, and it was entered in Vibe Jam 2026.
+  The creator cites classic gravity-flipping games such as VVVVVV as the
+  inspiration. It was a Vibe Jam 2026 entry, made in Antigravity and rendered
+  with Three.js, and it plays on phones as well.
 play:
   url: https://gravity-heist.vercel.app
   embeddable: true

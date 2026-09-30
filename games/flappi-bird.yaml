@@ -3,20 +3,19 @@ title: Flappi Bird
 tagline: Flap through 3D obstacles, dodge bee swarms, and chain combos for a high score.
 description: >-
   Flappi Bird takes the flap-and-glide formula of Flappy Bird and moves it into
-  three dimensions. The player keeps a bird airborne while steering it through
-  obstacles that are generated procedurally, so each run presents a different
-  layout to fly through.
+  three dimensions. You keep a bird airborne and steer it through procedurally
+  generated obstacles, so each flight lays out a different course to fly
+  through. It is a casual arcade game built for chasing a high score.
 
 
-  Bee swarms add a moving hazard on top of the fixed obstacles, and the game
-  tracks combos, which reward players who string clean passes together.
+  Bee swarms add a moving hazard on top of the fixed obstacles you fly past, so
+  the course is not the only thing to dodge. Clean passes strung together build
+  combos, and chaining them is how you push the score higher.
+
+
   Power-ups appear during a run and change the situation for a short stretch,
-  giving a reason to take riskier lines.
-
-
-  The creator says it was built with Cursor, Claude, and Grok, with Three.js
-  handling the 3D rendering in the browser. The project draws on the familiar
-  one-button premise and adds its own hazards and scoring layers.
+  which makes a riskier line worth trying. Cursor, Claude and Grok were the
+  creator's tools, and Three.js handles the 3D rendering in the browser.
 play:
   url: https://flappi-bird.vercel.app
   embeddable: true

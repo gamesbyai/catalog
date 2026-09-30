@@ -2,21 +2,20 @@ slug: vibe-city
 title: vibe city
 tagline: Hang out in a pixel-art isometric town, chat, and play arcade games
 description: >-
-  Vibe City is a cozy isometric hangout that runs in the browser. Players step
-  into a pixel-art street with rooms to explore, customize an avatar, and chat
-  with other people who are online. Joining takes a single click.
+  One click is all it takes to join vibe city, a cozy isometric hangout built
+  around a pixel-art street with rooms to explore. You customize an avatar, look
+  around the rooms, and chat with whoever else is online.
 
 
-  The world doubles as a social space and an arcade. Inside it sits an arcade
-  with several games from different genres, including action, shooter, puzzle,
-  and racing styles, so a visit can move from chatting to a quick round of
-  something else. The creator was inspired by Habbo and a love of many kinds of
-  games, aiming for a warm, welcoming neighborhood feel.
+  The creator took inspiration from Habbo and a love of many kinds of games,
+  aiming for a warm, welcoming neighborhood feel. They built it with Cursor on
+  PixiJS as a multiplayer space, it runs on phones and on desktops alike, and it
+  placed 493rd of 945 in Vibe Jam 2026.
 
 
-  The creator built it with Cursor, using PixiJS for the rendering. It was
-  submitted to Vibe Jam 2026 and supports multiplayer, and it is set up to work
-  on mobile devices as well.
+  The town doubles as an arcade. Inside sit several games from different genres,
+  including action, shooter, puzzle, and racing, so a visit can move from
+  chatting to a quick round of something else.
 play:
   url: https://isometric-social-game.vercel.app
   embeddable: true

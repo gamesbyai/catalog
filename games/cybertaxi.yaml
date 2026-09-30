@@ -2,20 +2,21 @@ slug: cybertaxi
 title: Cybertaxi
 tagline: Hijack a robo-taxi and fly through a neon city to earn your freedom.
 description: >-
-  Cybertaxi is a cyberpunk arcade flight game. You hijack a robo-taxi and race
-  through a neon-lit city, with the goal of earning your freedom. Each run is a
-  dash across the skyline while you dodge hazards and keep the cab in one piece.
+  Cybertaxi is a cyberpunk arcade flight game that starts with a theft: you
+  hijack a robo-taxi and fly it through a neon-lit city to earn your freedom.
+  Each run is a dash across the skyline, dodging hazards and keeping the cab in
+  one piece.
 
 
-  Rival AI taxis, storms, and other obstacles stand between you and the finish,
-  so the ride mixes racing with survival. The creator drew on childhood memories
-  of playing Simpsons: Hit and Run with a friend, and wanted a taxi game in a
-  similar spirit but set in a cyberpunk future.
+  The creator drew on childhood memories of playing Simpsons: Hit and Run with a
+  friend and wanted a taxi game in that spirit, set in a cyberpunk future. It
+  was built with Codex on Three.js, and for a more cinematic feel the creator
+  tried Suno for music and ElevenLabs for spoken dialog.
 
 
-  The creator built it with Codex on Three.js. They also wanted a more cinematic
-  feel, so they tried Suno for music and ElevenLabs for spoken dialog. It was
-  submitted to Vibe Jam 2026.
+  Rival AI taxis, storms and other obstacles stand between you and the finish,
+  so the ride is part race, part survival run, with your freedom waiting at the
+  end of it.
 play:
   url: https://cybertaxi.toddgoates.com
   embeddable: true

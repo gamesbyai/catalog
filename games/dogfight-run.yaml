@@ -3,20 +3,20 @@ title: DogFight Run
 tagline: Fly a spaceship in fast multiplayer dogfights inspired by arena shooters.
 description: >-
   DogFight Run is a multiplayer space shooter that takes the pace of a classic
-  arena shooter and moves it into open space. Players pilot spaceships and fight
-  other pilots in fast dogfights, chasing and shooting down opponents. It is
-  built to run in the browser and works on mobile devices as well.
+  arena shooter and moves it into open space. You pilot a spaceship against
+  other players in fast dogfights, chasing opponents down and shooting them
+  before they shoot you, in the browser or on a phone.
 
 
-  The creator describes it as Quake 3 in space with spaceships, and that shows
-  in the emphasis on quick, competitive combat between players rather than slow
-  pacing. It was made for Vibe Jam 2026, where it placed 145th out of 945
-  entries. The creator says they had wanted to build it for a while and the jam
-  gave them the reason.
+  The creator, ElydanStudio, describes it as Quake 3 in space, with spaceships,
+  and says they had wanted to build it for a while before Vibe Jam 2026 gave
+  them the reason. It was made with Claude Code, with Three.js handling the 3D
+  space combat, and placed 145th of 945.
 
 
-  The creator built it with Claude Code, and the game renders in the browser
-  with Three.js, which handles the 3D space combat and the ships on screen.
+  That description shows in the emphasis on quick, competitive combat between
+  players rather than slow pacing, with every dogfight fought online against
+  another pilot in open space.
 play:
   url: https://dogfight.run
   embeddable: true

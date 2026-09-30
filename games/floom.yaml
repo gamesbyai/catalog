@@ -3,20 +3,21 @@ title: floom
 tagline: Drift through a shared canvas, plant seeds, and grow flowers alongside
   strangers.
 description: >-
-  floom is a quiet multiplayer canvas where players drift around a shared space
-  and work with seeds. Play is open-ended. A session is about wandering, placing
-  seeds, and watching what grows from the actions of everyone present.
+  In floom, a quiet online game, you drift around a shared canvas and plant
+  seeds. The other people drifting past are strangers doing the same, and play
+  is open-ended: a session is about wandering, placing seeds and watching what
+  grows from the actions of everyone present.
 
 
-  The focus is on small, unplanned connections between strangers. One player's
-  seed can meet another's, and the result is sound and flowers appearing on the
-  canvas. The mood is cozy and unhurried. It was inspired by how people shape
-  the world around them and how that world changes in response. It runs in the
-  browser and also on mobile.
+  Seeds from different players can meet, and when they do, the result is sound
+  and flowers appearing on the canvas. Those small, unplanned connections
+  between strangers are what the game is about, and the mood stays cozy and
+  unhurried.
 
 
-  The creator built it with Claude Code, using PixiJS for rendering, and entered
-  it in Vibe Jam 2026, where it placed 587th among 945 entries.
+  The idea came from how people shape the world around them, and how that world
+  changes in response. PixiJS draws the canvas, and the creator put it together
+  with Claude Code as a Vibe Jam 2026 entry, which finished 587th of 945.
 play:
   url: https://floom-game.vercel.app
   embeddable: true

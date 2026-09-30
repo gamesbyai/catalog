@@ -2,21 +2,21 @@ slug: hold-the-line
 title: Hold the Line
 tagline: Draw electric wires to trap and eliminate zombies in a 3D isometric arena.
 description: >-
-  Hold the Line is an isometric 3D survival game in which the player fights off
-  zombies by drawing electric wires around them. Trapping enemies inside the
-  wires eliminates them, so each run is about reading the arena, planning where
-  to lay a line, and staying clear of the horde while doing it.
+  In Hold the Line you fight off zombies by drawing electric wire around them.
+  Trap an enemy inside the wire and it is eliminated. A run in this isometric 3D
+  arena comes down to reading the space, planning where to lay a line and
+  staying clear of the horde while you do it.
 
 
-  The design mixes Snake and Bomberman. Snake's spatial awareness comes through
-  in how the trailing wire has to be routed, and Bomberman's arena combat shows
-  up in the tense, close-quarters fights. The creator describes the wire-drawing
-  mechanic as their own twist on those classics.
+  The design borrows from Snake and Bomberman. The trailing wire has to be
+  routed with a Snake player's spatial awareness, and the close-quarters arena
+  fights come from Bomberman. The creator calls the wire drawing their own twist
+  on those classics.
 
 
-  It offers single-player, local multiplayer, and online multiplayer modes, and
-  it is set up for mobile play as well. It was entered in Vibe Jam 2026, and the
-  creator built it with Claude Code on top of Three.js.
+  The game has three modes, single-player, local multiplayer and online
+  multiplayer, and it works on phones too. Claude Code and Three.js were its
+  tools during Vibe Jam 2026, where it ranked 377th of 945.
 play:
   url: https://eramis73.github.io/htl-server
   embeddable: true

@@ -2,20 +2,20 @@ slug: typeit-hero
 title: TypeIt Hero
 tagline: Practice touch typing by playing, so kids learn to type without looking down.
 description: >-
-  TypeIt Hero is a typing game built to help children learn to type without
-  watching the keyboard. Players take the role of a hero whose progress depends
-  on their keystrokes, which turns drills that are usually dull into something
+  TypeIt Hero is a casual typing game that teaches kids to type without looking
+  down at the keyboard. You play a hero whose progress depends on your
+  keystrokes, which turns typing drills that are usually dull into something
   with a goal and a sense of momentum.
 
 
-  The idea came from a parent of four who watched his oldest, a 9-year-old,
-  struggle through slow hunt-and-peck typing. The game aims to make touch typing
-  feel playful instead of like homework, keeping the focus on building real
-  keyboard habits that carry over to everyday use.
+  The idea came from a parent of four who watched their oldest, a 9-year-old,
+  struggle through slow hunt-and-peck typing. The creator names Claude Code as
+  the tool. In the Vibe Jam 2026 standings it sits at 412th of 945.
 
 
-  It placed 412th out of 945 entries in Vibe Jam 2026. According to the creator,
-  it was built with Claude Code, and the game is played on a desktop keyboard.
+  Touch typing is meant to feel playful here rather than like homework, and the
+  focus stays on building real keyboard habits that carry over to everyday use.
+  The game is played on a desktop keyboard.
 play:
   url: https://typeithero.cates.fm/rhythm.html
   embeddable: true

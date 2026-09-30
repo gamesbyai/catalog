@@ -2,22 +2,19 @@ slug: deer-diplomacy
 title: Deer Diplomacy
 tagline: Bow to deer and feed them crackers without letting the herd charge you.
 description: >-
-  You play a tourist wandering Nara Deer Park in Japan. Bowing to a deer earns
-  its trust, and once a deer trusts you, you can feed it rice crackers. The
-  catch is that the herd is watching. If the deer notice you are carrying food,
-  they charge, so each encounter becomes a careful matter of timing and
-  positioning.
+  Deer Diplomacy makes you a tourist in Nara Deer Park, Japan, with rice
+  crackers to hand out and a herd that notices things. Bow to a deer and it
+  starts to trust you, and once it does, you can feed it a cracker.
 
 
-  The game builds on the real-life habit of Nara's deer bowing back at visitors
-  who bow to them. That gentle exchange is turned into a tense stealth puzzle,
-  since every bow leaves you exposed for about a second and a half. Deciding
-  when to bow, and who is close enough to notice, is what gives the game its
-  pressure.
+  It builds on the real habit of Nara's deer bowing back at visitors who bow to
+  them. The creator made it with Claude Code and Three.js for Vibe Jam 2026 and
+  turned that gentle exchange into a tense stealth puzzle.
 
 
-  The creator built it with Claude Code, using Three.js for the 3D scene. It was
-  an entry in Vibe Jam 2026, and it is set up to run on mobile as well.
+  The herd is watching. If the deer notice you are carrying food, they charge,
+  and every bow leaves you exposed for about a second and a half. Deciding when
+  to bow, and who is close enough to notice, is where the pressure comes from.
 play:
   url: https://deer-diplomacy.vercel.app
   embeddable: true

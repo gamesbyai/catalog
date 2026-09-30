@@ -2,20 +2,21 @@ slug: sky-break
 title: Sky Break
 tagline: Run, shoot, and survive while a hostile AI sabotages your escape.
 description: >-
-  Sky Break is a high-speed survival shooter runner. You race through an escape
-  while fighting off threats, and a hostile AI works against you the whole way,
-  sabotaging your route as you go. Each run is a push to outlast its
-  interference and reach the end.
+  Sky Break is a high-speed survival shooter runner with a hostile AI as the
+  villain. You race through an escape while fighting off threats, and the AI
+  works against you the whole way, sabotaging your route as you go. A run is a
+  push to outlast its interference and reach the end.
 
 
-  The AI is the antagonist, and it responds to how well you play in real time.
-  Early on it mocks you, but as you outplay it, its tone shifts to panic and
-  then desperation, all within a single run. The idea draws on how language
-  models can move from confidence to uncertainty under pressure.
+  Antigravity and Kiro were the creator's tools, with Three.js as the engine,
+  and the game supports online multiplayer. It ranked 144th of 945 in Vibe Jam
+  2026.
 
 
-  It was entered in Vibe Jam 2026 and built with Three.js. The creator built it
-  with Antigravity and Kiro, and the game supports multiplayer and mobile play.
+  The AI reacts to how well you play, in real time. It mocks you early on, and
+  as you outplay it, its tone shifts to panic and then desperation, all within a
+  single run. The idea draws on how language models can move from confidence to
+  uncertainty under pressure.
 play:
   url: https://skybreak.xyz
   embeddable: true

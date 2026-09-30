@@ -2,22 +2,20 @@ slug: beatback
 title: BEATBACK
 tagline: Fight off waves of enemies with attacks that fire in time to the music.
 description: >-
-  BEATBACK is a survivors-style action game built around rhythm. Your attacks
-  pulse in time with the music, so each run is a mix of staying alive against
-  approaching enemies and keeping your timing on the beat. The music does not
-  just sit in the background; it pushes back against you.
+  BEATBACK is a single-player, survivors-style action game where your attacks
+  fire in time with the music. Enemies close in wave after wave, and each run
+  asks two things of you at once: stay alive, and keep your timing on the beat.
 
 
-  The main idea is adding real skill to a genre that often leans on automatic
-  attacks. Timing matters here, and the rhythm mechanic is the center of the
-  moment-to-moment play. It runs in the browser, is set up for mobile, and is a
-  single-player arcade experience.
+  The creator, a game designer with seven years of experience, made it with
+  Cursor for Vibe Jam 2026 and describes AI as a collaborator that amplifies a
+  designer's taste. They hoped to add an upgrade system before the jam closed,
+  and the game placed 210th of 945.
 
 
-  The creator, a game designer with seven years of experience, says they built
-  it with AI for a game jam and used Cursor. They describe AI as a collaborator
-  that amplifies a designer's taste, and they hoped to add an upgrade system
-  before the jam closed.
+  The design goal is to put real skill into a genre that often leans on
+  automatic attacks. Timing matters here, and the rhythm mechanic is the center
+  of the moment-to-moment play rather than something in the background.
 play:
   url: https://beatbackgame.com
   embeddable: true

@@ -4,20 +4,20 @@ tagline: Fight through Quake's shareware episode in a browser-based first-person
   shooter.
 description: >-
   Three.js Quake is a browser port of the shareware episode of Quake, the
-  classic first-person shooter. The player moves through the episode's levels in
-  3D, fighting enemies and working toward the exit of each stage, all inside a
-  web page.
+  classic first-person shooter. You move through the episode's levels in 3D,
+  fight your way past the enemies, and work toward the exit of each stage, level
+  after level, all inside a web page.
 
 
-  The project renders the original game's content using Three.js, which shows
-  how a full retro shooter can run on a general-purpose web 3D library. It was
-  put together by the creator of Three.js, so the port also works as a showcase
-  for the library itself.
+  The port renders the original game's content with Three.js, a general-purpose
+  web 3D library, and in doing so shows that a full retro shooter can run on it.
+  It was put together by the creator of Three.js, so it also works as a showcase
+  for what the library itself can do.
 
 
-  According to its README, the build involved Claude and Three.js. That points
-  to Anthropic's Claude as part of how the port was made. It is a single-player
-  game in the shooter and action genres.
+  According to its README, the build involved Anthropic's Claude alongside
+  Three.js. The result is a single-player first-person shooter that you can play
+  right in a browser tab.
 play:
   url: https://mrdoob.github.io/three-quake
   embeddable: true

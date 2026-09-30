@@ -3,21 +3,21 @@ title: "Tech Bros: Save the World"
 tagline: Fight off waves as a satirical tech mogul and take down rival
   billionaire bosses.
 description: >-
-  Tech Bros: Save the World is a survivor's-like in the vein of Vampire
-  Survivors and Megabonk. You play as a caricature of a famous technocrat,
-  fending off swarms of enemies while building up your character with upgrades
-  over the course of a run.
+  In Tech Bros: Save the World you play a caricature of a famous technocrat,
+  fending off swarms of enemies and stacking upgrades over the course of a run,
+  one wave after another. It is a survivors-like in the vein of Vampire
+  Survivors and Megabonk, with rival billionaires waiting as bosses.
 
 
-  The satire is the main hook. Well-known tech figures show up both as playable
-  characters and as bosses, and a story runs through the action instead of
-  leaving it as pure arena survival. The RPG elements sit alongside the fast
-  survivor-style combat.
+  The creator says a post from levelsio about the jam prompted them to join, and
+  they built the game with Claude Code and Codex on PixiJS. In Vibe Jam 2026 it
+  came 63rd of 945.
 
 
-  It was made for Vibe Jam 2026, where it placed 63rd out of 945 entries. The
-  creator built it with Claude Code and Codex, using the PixiJS engine, and says
-  a post from levelsio about the jam prompted them to join.
+  The satire is the hook. Well-known tech figures show up both as playable
+  characters and as bosses, and a story runs through the fights. The RPG
+  elements sit alongside fast survivor-style combat instead of leaving it as
+  pure arena survival.
 play:
   url: https://techbrosgame.app
   embeddable: true

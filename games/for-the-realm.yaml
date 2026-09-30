@@ -3,22 +3,21 @@ title: For The Realm
 tagline: Build a deck and join other players to cross a broken realm and end an
   ancient evil.
 description: >-
-  For the Realm is a dark fantasy roguelike deckbuilder set across a broken
-  land. Players journey through the realm, gather cards, and fight toward a
-  final confrontation with an ancient evil. Runs end in victory against that
-  threat or in defeat along the way.
+  An ancient evil waits at the end of a broken land, and in For The Realm you
+  cross it with other players, gathering cards and fighting toward that final
+  confrontation. It is a dark fantasy roguelike deckbuilder, and a run ends in
+  victory or in defeat along the way.
 
 
-  Multiplayer sits at the center of the design rather than being an add-on. The
-  premise is built around uniting the realm, so players work together to survive
-  the journey. It blends RPG progression with strategic card play in a grim,
-  moody setting.
+  Multiplayer sits at the center of the design rather than being bolted on, and
+  it plays online in the browser. The premise is uniting the realm, so players
+  work together to survive the journey, growing through RPG-style progression
+  and strategic card play in a grim, moody setting.
 
 
-  The game was an entry in Vibe Jam 2026, where it placed 318th of 945 entries.
-  The creator built it with Claude Code on Babylon.js. The creator says the goal
-  was to make the roguelike deckbuilder they had always wished for, with real
-  multiplayer as its foundation.
+  According to the creator, the goal was the roguelike deckbuilder they had
+  always wished for, with real multiplayer as its foundation. It is a Claude
+  Code project running on Babylon.js, entered in Vibe Jam 2026.
 play:
   url: https://for-the-realm.vercel.app
   embeddable: true

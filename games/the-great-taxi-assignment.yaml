@@ -6,17 +6,18 @@ description: >-
   The Great Taxi Assignment is a driving game in the spirit of Grand Theft Auto,
   set in a three-dimensional city. You take the wheel of a taxi and ferry
   passengers from place to place, racing a countdown timer that limits how long
-  each run can last.
+  a run can last.
 
 
-  The game draws on the open city-driving style of its inspiration but narrows
-  the goal to a simple job: pick up fares and get them where they need to go
-  quickly. It took part in Vibe Jam 2025 and is described as a winner of that
-  event.
+  It keeps the open city driving of its inspiration but narrows the goal to a
+  simple job: pick up fares and get them where they need to go, quickly, before
+  the clock runs out. Three.js renders the whole city as a 3D scene in the
+  browser.
 
 
-  The creator says it was built with Cursor and Claude 3.7 Sonnet, using
-  Three.js to render the whole city in the browser as a 3D scene.
+  This one is single-player, and the creator says it was built with Cursor and
+  Claude 3.7 Sonnet. It took part in Vibe Jam 2025 and is described as a winner
+  of that event.
 play:
   url: https://great-taxi-assignment.netlify.app
   embeddable: true

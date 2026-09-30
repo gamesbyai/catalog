@@ -3,22 +3,22 @@ title: SKY WALKER
 tagline: Keep your balance on a tightrope above a neon city while storms and
   wind push you off.
 description: >-
-  SKY WALKER is a high-altitude balancing game. You play a wire walker crossing
-  a tightrope strung above a neon-lit cyberpunk city, keeping your balance pole
-  centered while working your way forward. Each step is a small fight against
-  the pull of gravity, and one bad lean can end the run.
+  SKY WALKER puts you on a tightrope strung high above a neon-lit cyberpunk
+  city. You play a wire walker working your way forward while keeping the
+  balance pole centered. Each step is a small fight against the pull of gravity,
+  and one bad lean can end the run.
 
 
-  The core mechanic is deliberately simple, but the surroundings keep raising
-  the pressure. Storms grow more violent as you go, and unpredictable gusts
-  shove you off center. The procedurally generated cityscape glows below to sell
-  the vertigo. The creator drew on the tension of real high-wire walkers and
-  aimed for a demanding, frustrating challenge.
+  The creator drew on the tension of real high-wire walkers and aimed for
+  something demanding and frustrating on purpose. They state that it was made
+  with the Gemini app, and it runs on Three.js. It ranked 126th of 945 in Vibe
+  Jam 2026.
 
 
-  The game runs in the browser on Three.js and supports mobile play. It was a
-  Vibe Jam 2026 entry, and the creator states that it was made with the Gemini
-  app.
+  The core mechanic is deliberately simple, so the pressure comes from around
+  you. Storms grow more violent the farther you get, and unpredictable gusts
+  shove you off center. Below, a procedurally generated cityscape glows to sell
+  the vertigo.
 play:
   url: https://sky-walker.xyz
   embeddable: true

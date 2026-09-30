@@ -2,22 +2,20 @@ slug: hired-swords
 title: Hired Swords
 tagline: Draft a team of fighters and battle other players' ghost teams in auto-battles.
 description: >-
-  Hired Swords is a roguelite autobattler in which you assemble a team of
-  fighters and send them into automatic battles. Each round you shape your
-  lineup, then watch it face a ghost, a saved team built by another human
-  player. Win enough fights and you climb toward the top.
+  You draft a team of fighters in Hired Swords and send it into automatic
+  battles against other players' saved teams. It is a roguelite autobattler that
+  takes its cue from Super Auto Pets: each round you shape your lineup, then
+  watch it face a ghost built by another human player.
 
 
-  The focus is on synergies. Choosing which units to hold and how they combine
-  with one another matters more than reflexes, which gives the game a
-  puzzle-like feel alongside its strategy. Because opponents are recorded teams
-  from real players, every run meets a different set of rivals.
+  The game is about synergies. Which units you hold and how they combine with
+  each other matter more than reflexes, which gives the drafting a puzzle-like
+  feel. Because the opponents are recorded teams, each climb meets a different
+  set of rivals without anyone needing to be online at the same time.
 
 
-  The game was made for Vibe Jam 2026, where it placed 68th among 945 entries,
-  and it takes inspiration from Super Auto Pets. The creator built it with
-  Claude Code on the Phaser engine, and it is playable on mobile as well as
-  desktop.
+  Win enough fights and you climb toward the top. It came 68th of 945 at Vibe
+  Jam 2026, built with Claude Code on the Phaser engine.
 play:
   url: https://hiredswordsvibecode2026.netlify.app
   embeddable: true

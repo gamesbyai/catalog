@@ -3,22 +3,21 @@ title: The Underground
 tagline: Explore generated tunnels, open locked doors, and find artifacts before
   time runs out.
 description: >-
-  The Underground is a browser adventure set in a procedurally generated network
-  of subway-style tunnels. Each run sends you into dark passages with locked
-  doors and hidden artifacts to track down, and a timer keeps the pressure on.
-  You need to work out where to go before the clock runs out.
-
-
-  The world is endless in principle, since the tunnel layout is generated rather
-  than hand-built, so each descent leads somewhere different. Multiplayer adds a
-  shared layer: players can leave clues that others encounter, which turns the
-  search into a loose collaboration between strangers.
+  The Underground is a roguelike adventure that sends you into a network of
+  dark, subway-style tunnels with a timer running. You open locked doors, track
+  down hidden artifacts, and work out where to go before the clock runs out.
 
 
   The idea came from the creator's curiosity about what lies down the dark
-  tunnels seen from subway trains, such as abandoned stations or old bunkers. It
-  was entered in Vibe Jam 2026, and the creator built it with Cursor and
-  Three.js.
+  tunnels you see from a subway train, such as abandoned stations or old
+  bunkers. The Vibe Jam 2026 build runs on Three.js and was made with Cursor,
+  and it ranked 408th of 945.
+
+
+  The layout is procedurally generated rather than hand-built, so the network is
+  endless in principle and each descent leads somewhere different. Other players
+  can leave clues for you to find, which turns the search into a loose
+  collaboration between strangers.
 play:
   url: https://mcg-urbex.web.app
   embeddable: true

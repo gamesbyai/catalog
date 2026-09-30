@@ -2,21 +2,20 @@ slug: build-destroy-fortress-duel
 title: Build & Destroy - Fortress Duel
 tagline: Build a fragile fortress, then smash it apart in a physics sandbox.
 description: >-
-  Build & Destroy - Fortress Duel is a physics-based game in which the player
-  first constructs a fortress and then tears it down. A session has two phases:
-  assembling a structure meant to be tricky to topple, then aiming at it and
-  watching the pieces collapse under the impact.
+  Build & Destroy - Fortress Duel is a physics game that splits every session in
+  two. First you construct a fortress meant to be tricky to topple, then you aim
+  at it and watch the pieces collapse under the impact.
 
 
-  The central idea is that players make their own challenges instead of only
-  solving premade ones. The creator says the concept came from years of playing
-  Angry Birds and wondering why such games rarely let players design levels.
-  Building the puzzle becomes as much of the fun as breaking it, and the mix of
-  puzzle and strategy comes from planning how a structure will hold or fall.
+  The creator says the concept came from years of playing Angry Birds and
+  wondering why games like it rarely let players design the levels. Here you
+  make your own challenge instead of only solving premade ones. The creator used
+  Codex and Three.js, and the game came 256th of 945 at Vibe Jam 2026.
 
 
-  The game runs in the browser on Three.js and was entered in Vibe Jam 2026.
-  According to the creator, it was built with Codex.
+  Planning is where the puzzle and strategy come in. Working out how a structure
+  will hold, and where it will fall, makes building the puzzle as much of the
+  game as breaking it.
 play:
   url: https://launchingdock.com
   embeddable: true

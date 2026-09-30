@@ -3,22 +3,21 @@ title: Ship It!
 tagline: Juggle too many ideas against the clock and submit something before
   time runs out.
 description: >-
-  Ship It! is a meta game about the pressure of a game jam. You have more ideas
-  than time, and the goal is to get something finished and submitted instead of
-  endlessly switching projects. The action and simulation elements reflect the
-  scramble of a jam session.
+  Ship It! is a game about finishing a game jam. You have more ideas than time,
+  and the job is to juggle them against the clock and submit something before
+  time runs out, instead of switching projects forever.
 
 
-  The premise comes from the creator's own experience of hopping between ideas
-  with AI during a single jam. The chaos of that process turned out to be more
-  interesting to them than any of the games they nearly built, so that chaos
-  became the subject. The tone is self-aware and rooted in the courage it takes
-  to hit submit.
+  The premise is the creator's own. During a single jam they kept hopping
+  between ideas with AI, and the chaos of that process turned out to be more
+  interesting to them than any of the games they nearly built. So the chaos
+  became the subject, with action and simulation elements standing in for the
+  scramble.
 
 
-  The creator built it with Cursor for Vibe Jam 2026, where it placed 82nd out
-  of 945 entries. The jam setting fits the theme, since the game is about the
-  very process that produced it.
+  The tone is self-aware and built around the courage it takes to hit submit.
+  Made with Cursor for Vibe Jam 2026, it is a jam game about the process that
+  produced it.
 play:
   url: https://shipit.nootcode.de
   embeddable: true

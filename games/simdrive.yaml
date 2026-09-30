@@ -2,23 +2,20 @@ slug: simdrive
 title: SimDrive
 tagline: Race friends in a shared car game, steering with your phone as the controller.
 description: >-
-  SimDrive is a multiplayer racing game where each player's phone becomes the
-  controller. Players tilt and move their phones to steer a car, and the device
-  gives back haptic and sound feedback as they drive. The cars use reasonably
-  realistic physics, so races reward smooth handling more than button mashing.
+  In SimDrive your phone is the steering wheel. Each player tilts and moves
+  their phone to drive a car on a shared screen, and the phone answers with
+  haptic and sound feedback as you race.
 
 
-  The idea comes from couch and party games such as Jackbox and Gaming Couch,
-  where a group gathers around one screen and plays together. SimDrive applies
-  that format to racing, inspired by the creator's love of Mario Kart and the
-  unused motion controls of the PS3 controller. It suits a group in one room,
-  with the shared screen showing the race.
+  The format comes from couch party games like Jackbox and Gaming Couch, where a
+  group gathers around one screen. The creator applied it to racing out of a
+  love of Mario Kart and the PS3 controller's unused motion controls. The
+  physics are reasonably realistic, so smooth handling beats button mashing.
 
 
-  The creator describes it as a first game and says it was made with Codex,
-  using plenty of tokens along the way. It runs in the browser with Three.js. It
-  can technically run on mobile, but in practice it needs two phones, one to
-  display and one to control.
+  It suits a group in one room. It can technically run on mobile, but in
+  practice that takes two phones: one to display the race and one to steer. The
+  creator calls it a first game, made with Codex and plenty of tokens.
 play:
   url: https://simdrive.xyz
   embeddable: true

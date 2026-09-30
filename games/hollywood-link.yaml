@@ -2,20 +2,20 @@ slug: hollywood-link
 title: Hollywood Link
 tagline: Answer movie trivia questions in a linked-question quiz format.
 description: >-
-  Hollywood Link is a movie quiz built around a specific question format, where
-  players work through film trivia and try to connect the answers. It supports
-  multiplayer, so friends can compete on the same questions, and it is set up to
-  be playable on mobile as well as desktop.
+  Your job in Hollywood Link is to connect the answers, in a movie trivia quiz
+  built on linked questions. Friends compete online on the same questions, so
+  everyone faces the same film trivia and the same answers to link up.
 
 
-  The questions are the centerpiece. The creator says the quiz content was
-  sourced with AI, and that they were surprised at how reliably it produced good
-  questions that fit the format they had designed. The idea had been on their
-  mind for a while before the jam gave them the push to build it.
+  The questions are the centerpiece, and the project is built around having AI
+  generate them. The creator says the quiz content was sourced with AI, and that
+  they were surprised at how reliably it produced good questions that fit the
+  format they had designed.
 
 
-  It was entered in Vibe Jam 2026, where it placed 344th out of 945 entries. The
-  project centers on using AI to generate the quiz questions.
+  The idea had been on their mind for a while before Vibe Jam 2026 gave them the
+  push to build it. What came out is a quiz you can play from a phone or a
+  desktop browser, where the links between answers are the puzzle.
 play:
   url: https://hollywoodlink.fundamento.be
   embeddable: false

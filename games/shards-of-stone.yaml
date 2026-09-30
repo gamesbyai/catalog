@@ -2,21 +2,21 @@ slug: shards-of-stone
 title: Shards of Stone
 tagline: Build a base, train an army, and destroy the enemy in a fantasy RTS.
 description: >-
-  Shards of Stone is a real-time strategy game that runs in the browser. Players
-  build a base, raise an army, and send it against an opposing fantasy faction.
-  A match is decided by which side can crush the other's forces and holdings
-  first.
+  Shards of Stone is a fantasy real-time strategy game in the classic shape,
+  played in the browser. You build a base, raise an army, and send it against an
+  opposing faction, and the match goes to whichever side crushes the other's
+  forces and holdings first.
 
 
-  The game draws on classic fantasy RTS titles like Warcraft 2 and 3, which the
-  creator played as a child. The factions are asymmetric, so each side plays
-  differently and calls for its own approach to building and combat. It supports
-  multiplayer and mobile play.
+  Matches can be played online against other people, from a phone or a desktop
+  browser. Cursor supplied the AI help, and Three.js renders the 3D, so the
+  whole game loads and plays right in a web page. It ranked 115th of 945 in Vibe
+  Jam 2026.
 
 
-  It was entered in Vibe Jam 2026, where it ranked 115th out of 945 entries. The
-  creator built it with Cursor, and the 3D rendering is done with Three.js, so
-  the whole game loads and plays in a web page.
+  The factions are asymmetric, so each side plays differently and needs its own
+  approach to building and combat. The creator played Warcraft 2 and 3 as a
+  child, and those classic fantasy RTS games are the model here.
 play:
   url: https://shardsofstone.com/play
   embeddable: false

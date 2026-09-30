@@ -3,19 +3,19 @@ title: Scooter Boy
 tagline: Ride an electric scooter through traffic, grab coins, and hop through portals.
 description: >-
   Scooter Boy puts you on an electric scooter as a cool rider threading through
-  busy traffic. You weave between vehicles, pick up coins along the way, and try
-  to keep the ride going without running into anything. The action mixes
-  racing-style movement with platformer-like dodging and hopping.
+  busy traffic. You weave between vehicles, pick up coins along the way, and
+  dodge and hop to keep the ride going without running into anything.
 
 
-  Portals are the twist. Along the route you can hop into gateways that lead to
-  other games, so a run can turn into a trip across the jam's connected entries.
-  The game is built for the browser and works on mobile as well.
+  It started with the creator's brother. They wanted to show him what is
+  possible today with the help of AI, and they made the game with Claude Code on
+  Three.js. It ranked 372nd of 945 in Vibe Jam 2026.
 
 
-  The creator built it with Claude Code on Three.js. They said they wanted to
-  show their brother what is possible today with the help of AI. It was
-  submitted to Vibe Jam 2026.
+  The movement is racing-style, while the dodging and hopping come from
+  platformers. Portals along the route add a detour: hop into one and it leads
+  to another game, so a single ride can turn into a trip across the jam's
+  connected entries.
 play:
   url: https://vibejam2026.1clickdev.com
   embeddable: true

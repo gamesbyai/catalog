@@ -2,21 +2,21 @@ slug: fairy-arena
 title: Fairy Arena
 tagline: Fly around an arena and shoot the enemy team off onto a cloud.
 description: >-
-  Fairy Arena is a 3D action shooter where you play a flying fairy in a
-  team-based arena. The goal is to fire at the opposing side and push the enemy
-  team onto the cloud. Each round is about staying airborne, lining up shots,
-  and forcing rivals out of position.
+  Fairy Arena is a team shooter where the goal is to shoot the enemy team off
+  the arena and onto a cloud. You fly a fairy around a 3D arena, firing at the
+  opposing side and trying to push its members out.
 
 
-  The pushing objective gives the shooting a spatial, puzzle-like angle, since
-  positioning matters as much as damage. It was entered in Vibe Jam 2026, where
-  it placed 470th among 945 entries.
+  The creator says it grew from an old ambition. Over 20 years ago they started
+  web development intending to make a web-based indie game and began one, then
+  moved on to other programming work. This project is another attempt at
+  something other people could appreciate, and it placed 470th of 945 at Vibe
+  Jam 2026.
 
 
-  The creator says the game grew from an old ambition. Over 20 years ago they
-  started web development intending to make a web-based indie game, began one,
-  then moved on to other programming work. This project is described as another
-  attempt to make something other people could appreciate.
+  Each round is about staying airborne, lining up shots and forcing rivals out
+  of position. Pushing is the objective, so positioning matters as much as
+  damage, which gives the shooting a spatial, puzzle-like angle.
 play:
   url: https://arena.nidmo.com
   embeddable: true

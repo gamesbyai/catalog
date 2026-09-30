@@ -2,21 +2,20 @@ slug: bloombound
 title: BloomBound
 tagline: Cross a bloom portal to heal four broken worlds and befriend their creatures.
 description: >-
-  BloomBound is a 3D adventure in which the player steps through a bloom portal
-  into four broken worlds. Each world needs to be restored, and the creatures
-  living there can be befriended along the way. The goal is to bring the
-  withered valley back to life.
+  BloomBound is a 3D adventure that begins in a withered valley. You step
+  through a bloom portal into four broken worlds, and the goal is to bring the
+  valley back to life.
 
 
-  The game is framed as a gentle, family-friendly quest built around restoration
-  and friendship. Moving between separate worlds gives the adventure a
-  hub-and-portal structure, with the valley acting as the thing you are slowly
-  repairing as you progress.
+  The creator says it grew out of a shared love of games with their three kids,
+  and it is framed as a gentle, family-friendly quest. Codex was the AI tool
+  behind it, Three.js renders it, and it came 535th of 945 at Vibe Jam 2026.
 
 
-  It was entered in Vibe Jam 2026, where it placed 535th out of 945 entries, and
-  runs in the browser on Three.js. The creator says it grew out of a shared love
-  of games with their three kids, and built it with Codex.
+  Restoration and friendship are the two threads. Each world needs to be
+  restored, and the creatures living there can be befriended along the way.
+  Moving between the separate worlds gives the adventure a hub-and-portal shape,
+  with the valley as the place you keep coming back to and slowly repair.
 play:
   url: https://bloombound-jam.vercel.app
   embeddable: true

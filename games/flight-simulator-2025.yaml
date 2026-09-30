@@ -2,20 +2,21 @@ slug: flight-simulator-2025
 title: Flight Simulator 2025
 tagline: Take off, fly over a shared world and dogfight other pilots online.
 description: >-
-  Flight Simulator 2025 is a multiplayer flight game set in a shared 3D world.
-  Each session begins with a takeoff, after which you fly over the landscape
-  alongside other players. When you meet another pilot in the air, you can turn
-  the flight into a dogfight.
+  Each session of Flight Simulator 2025 begins with a takeoff into one shared 3D
+  world. From there it is an online flight game: you fly over the landscape
+  alongside other players. Every other aircraft you see is flown by a real
+  person, not by the computer.
 
 
-  The mix of open flying and player-versus-player combat is the main draw.
-  Because the world is shared, the other aircraft you see are real players, so
-  every encounter depends on who happens to be in the sky with you.
+  Meet another pilot in the air and you can turn the flight into a dogfight.
+  That puts the game between simulation and action, with open flying and
+  player-versus-player combat in the same sky, and each encounter depends on who
+  happens to be up there with you.
 
 
-  According to its README, the creator built it with Cursor and Grok 3, which
-  covered the code and the 3D scene, and it renders in the browser with
-  Three.js. It is an online multiplayer game that mixes simulation and action.
+  According to its README, the creator used Cursor and Grok 3 for both the code
+  and the 3D scene. Three.js renders the landscape and the aircraft in the
+  browser, and the whole thing is online multiplayer from the first takeoff.
 play:
   url: https://fly.pieter.com
   embeddable: true

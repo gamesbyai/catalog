@@ -2,22 +2,22 @@ slug: goal-locked-the-crucible
 title: "Goal-Locked: The Crucible"
 tagline: Score goals and outlast rivals in a shrinking cyber-sport arena.
 description: >-
-  Goal-Locked: The Crucible is a physics-driven action game that mixes sports
-  with battle royale rules. Players compete inside a tactical arena that keeps
-  shrinking, and the goal is to be the last one standing. Scoring is tied to
-  survival, so each goal counts as a way to knock out an opponent.
+  Goal-Locked: The Crucible puts battle royale rules on a sport. You compete
+  against rivals inside a tactical arena that keeps shrinking, and the aim is to
+  be the last one standing. Each goal you score counts as a way to knock out an
+  opponent.
 
 
-  The main idea is to put elimination stakes into a sports format. Chaotic
-  physics drive the brawling, so collisions and momentum shape each match
-  instead of fixed animations. The presentation leans into a high-tech,
-  cyber-sport look, with a shrinking play space that pushes everyone toward the
-  same spot.
+  That ties survival to scoring and puts elimination stakes into a sports
+  format, the main idea behind the design. Chaotic physics drive the brawling,
+  so collisions and momentum shape each match instead of fixed animations, and
+  the shrinking play space pushes everyone toward the same spot as the match
+  goes on.
 
 
-  The creator built it with Antigravity, and it runs on Three.js in the browser.
-  It was entered in Vibe Jam 2026 and is playable on mobile devices as well as
-  desktop.
+  The presentation leans into a high-tech, cyber-sport look, and the arena is
+  rendered in Three.js. It is a Vibe Jam 2026 entry built in Antigravity that
+  also runs on phones.
 play:
   url: https://goal-locked.vercel.app
   embeddable: true

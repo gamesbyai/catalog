@@ -2,20 +2,19 @@ slug: local-news-hero
 title: Local News Hero
 tagline: Drive a news van through your own city and race rivals to breaking stories.
 description: >-
-  Local News Hero is a driving game set in a 3D version of a real city that the
-  player picks. You steer a news van through the streets, head for breaking
-  stories as they appear, and try to beat rival stations to each one. A run
-  lasts two minutes and is framed as a live broadcast.
+  Local News Hero lets you pick a real city, then puts you behind the wheel of a
+  news van in a 3D version of it. Breaking stories pop up as you drive, and you
+  steer through the streets to beat rival stations to each one.
 
 
-  The hook is playing on streets you may actually know, with a photorealistic
-  look instead of a made-up map. The creator said it came from wanting to play
-  something like Simpsons Hit and Run in their own city. The short timer keeps
-  rounds fast, and the game supports multiplayer and mobile play.
+  The creator traces it to wanting to play something like Simpsons Hit and Run
+  in their own city, and built it with Claude Code on Three.js. The look is
+  photorealistic rather than a made-up map, so the streets may be ones you
+  actually know, and the game supports multiplayer on desktop and phones.
 
 
-  It was made for Vibe Jam 2026, where it placed 255th out of 945 entries. The
-  creator built it with Claude Code on Three.js.
+  Each round lasts two minutes and is framed as a live broadcast, so the short
+  timer keeps rounds fast and every story you chase is against the clock.
 play:
   url: https://localnewshero.com
   embeddable: false

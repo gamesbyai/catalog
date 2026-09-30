@@ -2,21 +2,21 @@ slug: blizzard-brawl
 title: BLIZZARD BRAWL
 tagline: Build snow defenses and throw gadgets at rivals in a shrinking frozen arena.
 description: >-
-  Blizzard Brawl is a multiplayer snow duel that runs in the browser. Players
-  fight rivals in a frozen arena that keeps shrinking, so space to maneuver gets
-  tighter as a match goes on. Each round mixes building defenses, deploying
-  gadgets, and attacking opponents.
+  BLIZZARD BRAWL is an online multiplayer snow duel in a frozen arena that keeps
+  shrinking. Each round mixes three jobs: build snow defenses, deploy gadgets
+  and attack your rivals, all while the space to maneuver gets tighter and
+  tighter.
 
 
-  The focus is on pacing and positioning. Because the arena closes in, players
-  can't sit behind cover forever, and the defenses they set up have to be
-  weighed against pushing forward to outplay the other side. Gadgets add options
-  beyond a plain snowball exchange, and rounds are quick.
+  The creator says the spark was an article about a game made in about three
+  hours. The build uses Codex and Three.js for the frozen arena, and at Vibe Jam
+  2026 it came 323rd of 945.
 
 
-  It was an entry in Vibe Jam 2026, where it placed 323rd out of 945 entries.
-  The creator built it with Codex and Three.js, and says it was inspired by an
-  article about a game made in about three hours.
+  Pacing and positioning are the focus, and rounds are quick. Because the arena
+  closes in, nobody can sit behind cover forever, so every defense you build has
+  to be weighed against pushing forward to outplay the other side. Gadgets,
+  thrown at rivals, give you more options than a plain snowball exchange.
 play:
   url: https://jenemia.github.io/SnowBattle
   embeddable: true

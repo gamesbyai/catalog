@@ -2,21 +2,21 @@ slug: soul-captcha
 title: Soul Captcha
 tagline: Solve tricky puzzles while an AI heckles you and tries to make you laugh.
 description: >-
-  Soul Captcha is a puzzle game built around a captcha-style challenge. You work
-  through a series of puzzles while an AI voice comments on your attempts,
-  teasing you as you go. The setup is a contest of wits with a talkative
-  opponent that sits alongside every challenge.
+  Soul Captcha is a captcha-style puzzle game with a heckler built in. You work
+  through a series of tricky puzzles while an AI voice comments on your
+  attempts, teases you, and tries to make you laugh. Every puzzle becomes a
+  contest of wits with a talkative opponent.
 
 
-  The hook is the tone. The AI mocks the player throughout, and the game frames
-  the whole thing as a question: can a machine actually make a person laugh? The
-  puzzles borrow their spirit from The Impossible Game, which the creator names
-  as the inspiration for the idea.
+  The puzzles borrow their spirit from The Impossible Game, which the creator
+  names as the idea's inspiration. The creator, who says they have been
+  developing AI games for about half a year, made it with Claude Code, and it
+  ranked 427th of 945 entries in Vibe Jam 2026.
 
 
-  The creator built it with Claude Code and entered it in Vibe Jam 2026. They
-  say they have been developing AI games for about half a year. It is a
-  single-player experience.
+  The AI mocks you throughout, and the game frames the whole thing around
+  whether a machine can actually make a person laugh. It is a single-player
+  game: just you and the heckler.
 play:
   url: https://soulcaptcha.com
   embeddable: true

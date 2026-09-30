@@ -2,21 +2,20 @@ slug: symblify
 title: Symblify
 tagline: Decode a daily phrase by working out what each symbol instructs you to do.
 description: >-
-  Symblify is a daily puzzle built around a small invented language of symbols.
-  Each symbol acts as a consistent instruction, and the player has to work out
-  what each one does and then apply them to crack the day's hidden phrase. A new
-  puzzle is offered each day.
-
-
-  The design mixes three familiar puzzle styles: word puzzles, cryptic
-  crosswords and mathematical notation. Because every symbol keeps the same
-  meaning, solving is a matter of learning the rules of the language as you go,
-  then using them to reach the answer. It also runs on mobile devices.
+  Symblify hides a phrase behind a small invented language of symbols, and a new
+  puzzle arrives every day. Each symbol is an instruction that always means the
+  same thing, so you work out what each one does and then apply them to crack
+  the day's hidden phrase.
 
 
   The creator says the mechanics came first and the rest of the game was built
-  around them. The project was made for Vibe Jam 2026, and the creator built it
-  with Claude.
+  around them, with Claude as the tool. It borrows from three puzzle styles at
+  once: word puzzles, cryptic crosswords, and mathematical notation.
+
+
+  Solving is a matter of learning the rules of the language as you go. Once a
+  symbol's meaning is clear, it holds for the rest of the puzzle, and that is
+  what gets you to the answer.
 play:
   url: https://symblify.app
   embeddable: true

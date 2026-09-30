@@ -2,20 +2,20 @@ slug: robot-royale
 title: Robot Royale
 tagline: Fight through a ruined cyber-city arena, upgrading from bare fists to RPGs.
 description: >-
-  Robot Royale is a single-player arena shooter set in a dying cyber-city. You
-  begin with bare fists and fight your way up through a series of stronger
-  weapons, finishing with explosive RPGs. Each run is a push to survive the
-  arena while your firepower escalates.
+  You start Robot Royale with bare fists and finish with explosive RPGs, if you
+  survive long enough to reach them. The setting is a dying cyber-city, and the
+  format is a single-player arena shooter. You fight your way up through a
+  series of stronger weapons, and a run is a push to stay alive in the arena
+  while your firepower escalates.
 
 
-  The game runs in the browser, and a run starts the moment the page opens. The
-  whole thing is contained in a single file built on Three.js. The premise draws
-  on the idea of how powerful robots could become in the future when combined
-  with AI.
+  The premise plays on how powerful robots could become in the future once they
+  are combined with AI. According to the creator, it was built with Claude Code,
+  and it ranked 357th of 945 in the final Vibe Jam 2026 standings.
 
 
-  According to the creator, it was built with Claude Code as an entry in Vibe
-  Jam 2026, where it placed 357th out of 945 entries in the final ranking.
+  There is no waiting around. A run starts the moment the page opens, and the
+  whole game is contained in a single file built on Three.js.
 play:
   url: https://robot-royale.pages.dev
   embeddable: true

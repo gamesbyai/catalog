@@ -2,23 +2,21 @@ slug: bees-vs-wasps
 title: Bees vs Wasps
 tagline: Gather flowers as a bee and get back to the hive before angry wasps catch you.
 description: >-
-  Bees vs Wasps is a 3D action game in which you play a bee collecting pollen
-  from flowers. Each trip ends with a safe return to the hive, and wasps hunt
-  you along the way. Getting stung costs you, so every run comes down to
-  balancing greed for flowers against the distance back home.
+  Bees vs Wasps is a 3D action game that sends you out as a bee to collect
+  pollen from flowers, then back to the hive before the angry wasps catch you.
+  Getting stung costs you, so every trip is a trade between greed for one more
+  flower and the distance home.
 
 
-  Progression drives the game. As you climb levels, new elements arrive:
-  honeycomb, extra lives, and tougher enemies. The Tarantula Hawk shows up at
-  level 12 and the Executioner at level 15, both drawn from real stinging
-  insects. Wasp spawns originally followed the Fibonacci sequence, but the count
-  became overwhelming and was capped. The design aims for something you can
-  start right away and keep playing.
+  The idea began with the Fibonacci sequence, which led the creator to
+  sunflowers and then to bees. Wasp spawns first followed the same sequence,
+  until the count became overwhelming and was capped.
 
 
-  The idea began with the Fibonacci sequence, which led to sunflowers and then
-  bees. The creator built it for Vibe Jam 2026 using Claude Code and Three.js,
-  and it supports multiplayer and mobile play.
+  Climbing the levels brings new pieces: honeycomb, extra lives and tougher
+  enemies. The Tarantula Hawk arrives at level 12 and the Executioner at level
+  15, both drawn from real stinging insects, and the design aims for something
+  you can start right away and keep playing.
 play:
   url: https://beesvswasps.com
   embeddable: true

@@ -2,22 +2,21 @@ slug: battletanks
 title: battletanks
 tagline: Fight other players' tanks in a 3D arena using cannons, missiles, and a laser.
 description: >-
-  Battletanks is a 3D multiplayer tank arena that runs in the browser. Each
-  player drives a tank around a shared map and picks from three weapons: a spray
-  cannon, salvo missiles, and a laser that can be held down to sweep across the
-  battlefield. Matches are about positioning and choosing the right weapon for
-  the moment.
+  Every player in battletanks drives a tank around one shared 3D map and fights
+  the other players' tanks online. Each player picks from three weapons: a spray
+  cannon, salvo missiles and a laser you can hold down to sweep across the
+  battlefield.
 
 
-  The weapon choices give the arena its character. The laser rewards players who
-  keep it aimed for a long stretch, while the cannon and missiles suit quicker
-  exchanges. The setup draws on Tanki Online, the browser tank battler known for
-  futuristic turret weapons. The game also supports mobile play.
+  The setup draws on Tanki Online, the browser tank battler known for futuristic
+  turret weapons. This one was built with Claude Code on Babylon.js, plays in
+  desktop and mobile browsers, and ranked 577th of 945 at Vibe Jam 2026.
 
 
-  It was entered in Vibe Jam 2026 and is built on Babylon.js. The creator built
-  it with Claude Code, and the game is made for play on both desktop and mobile
-  browsers.
+  Matches come down to positioning and to picking the right weapon for the
+  moment, since each one has its own use. The laser pays off if you can keep it
+  aimed across the battlefield for a long stretch, while the cannon and missiles
+  suit quicker exchanges.
 play:
   url: https://battletanks.marcosbrendon.com
   embeddable: false

@@ -2,21 +2,21 @@ slug: vibe-party
 title: Vibe Party
 tagline: Race around a board and win chaotic minigames with cute AI-themed characters
 description: >-
-  Vibe Party is a multiplayer party board game with an AI theme. Players move
-  cute characters around a board, jump into quick minigames, and try to come out
-  ahead. Rounds are short and lighthearted, and the tone stays silly from start
-  to finish.
+  Vibe Party is a multiplayer party board game with an AI theme. You move a cute
+  character around the board, jump into quick minigames, and try to come out
+  ahead of the other players, in short rounds that stay silly from start to
+  finish.
+
+
+  Mario Party was the main inspiration for the structure and mood. The creator
+  made it with Codex on Phaser to test how far AI-generated art and assets could
+  be pushed in a full party game, and its Vibe Jam 2026 finish was 158th of 945.
+  The look leans on AI-generated characters, backgrounds, and assets, which
+  gives the board a playful, cartoon feel.
 
 
   Chaos is built into the design. Sudden moments can flip the standings, so a
-  player who is behind can still win. The look leans on AI-generated characters,
-  backgrounds, and game assets, which gives the board a playful, cartoon feel.
-  Mario Party was the main inspiration for the structure and mood.
-
-
-  The creator built it with Codex on Phaser, and wanted to test how far
-  AI-generated art and assets could be pushed in a full party game. It entered
-  Vibe Jam 2026 and runs on mobile as well.
+  player who is behind can still win.
 play:
   url: https://playvibeparty.com
   embeddable: true

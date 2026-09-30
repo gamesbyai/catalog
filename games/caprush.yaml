@@ -3,20 +3,21 @@ title: CapRush
 tagline: Race toy-sized cars over homemade dirt tracks built from holes, rock
   ramps and bottle caps
 description: >-
-  CapRush is a multiplayer racing game inspired by childhood afternoons spent
-  building dirt tracks outdoors. Players race miniature vehicles in the spirit
-  of Hot Wheels toys, driving over a course that recalls hand-dug holes, rock
-  ramps and soil, with soda bottle caps as part of the scene.
+  CapRush is a multiplayer racing game for toy-sized cars on the kind of dirt
+  track kids build outdoors. The course is made of hand-dug holes, rock ramps
+  and soil, with soda bottle caps as part of the scene, and you race other
+  players online in the spirit of Hot Wheels.
 
 
-  The concept comes from a personal memory: kids shaping a track with a small
-  shovel, earth and stones, then playing for hours. That backyard, improvised
-  feel is what sets the game apart from polished circuit racers, and it leans on
-  a tactile, toy-scale look rather than realism.
+  The idea is a personal memory from the creator's childhood: kids shaping a
+  track with a small shovel, earth and stones, then playing on it for hours. The
+  creator says it was built with Claude Code, and it came 390th of 945 at Vibe
+  Jam 2026.
 
 
-  It was entered in Vibe Jam 2026, where it placed 390th among 945 entries. The
-  creator says they built it with Claude Code. It runs in the browser.
+  That improvised, backyard feel is what separates it from polished circuit
+  racers. The look is tactile and toy-scale rather than realistic, down to the
+  bottle caps on the course.
 play:
   url: https://caprush.vercel.app/index.html
   embeddable: true

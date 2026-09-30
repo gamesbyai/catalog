@@ -2,23 +2,23 @@ slug: casadegema
 title: Casadegema
 tagline: Water a bare courtyard and find hidden gems through a full watercolor year.
 description: >-
-  Casa de Gemas is a watercolor garden game set around a whitewashed Spanish
-  house. The courtyard starts bare. You water a tree bed, then explore to find
-  five hidden gems in each of four seasons. Every gem flies to a counter, and
-  Oli the owl narrates and offers hints when tapped. A full year takes about 10
-  to 15 minutes.
+  Casadegema is a watercolor garden game set around a whitewashed Spanish house.
+  The courtyard starts bare: you water a tree bed, then explore to find five
+  hidden gems in each of four seasons, and a full year takes about 10 to 15
+  minutes.
 
 
   Each season changes how the garden looks and what you can do. Spring has
   shaking branches and a nest of chicks, summer adds a kite and a balloon,
-  autumn brings rain and a rake, and winter offers a snowman and chalk. The last
-  gem sends a message rising from the chimney, and a link parameter can put a
-  name in it.
+  autumn brings rain and a rake, and winter offers a snowman and chalk. Oli the
+  owl narrates and gives hints when tapped.
 
 
   The creator says it was built entirely through conversation with Claude Opus
-  5.5 in Cursor. It is a single HTML file using Canvas 2D art, spring physics
-  for the branches and petals, and music generated live with Web Audio.
+  5.5 in Cursor, as a single HTML file with Canvas 2D art, spring physics and
+  music generated live with Web Audio. Every gem flies to a counter, and the
+  last one sends a message rising from the chimney, which a link parameter can
+  personalize with a name.
 play:
   url: https://1xaispark.com/games/casa-de-gemas
   embeddable: true

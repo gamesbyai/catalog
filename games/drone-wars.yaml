@@ -2,21 +2,21 @@ slug: drone-wars
 title: Drone Wars
 tagline: Pilot a combat drone and fight through shooter missions with a full arsenal.
 description: >-
-  Drone Wars is a 3D action shooter in which the player flies a combat drone
-  into battle. The game centers on aerial combat, with a full arsenal of weapons
-  available to take on enemies. It runs in the browser and is playable on mobile
-  devices as well as desktop.
+  Drone Wars puts you in control of a combat drone and sends it into battle,
+  mission after mission. It is a 3D action shooter built around aerial combat:
+  you fly through shooter missions and take on enemies with a full arsenal of
+  weapons at your disposal.
 
 
-  The idea comes from the creator's own enthusiasm for drones. They have flown
-  several themselves, and that firsthand interest shapes the game's focus on
-  drone piloting and warfare. The action and adventure elements sit alongside
-  the shooting.
+  The idea comes from the creator's own enthusiasm for drones. The creator,
+  shrimalmadhur, has flown several of them, and that firsthand interest shapes
+  the game's focus on drone piloting and drone warfare.
 
 
-  The creator submitted it to Vibe Jam 2026, where it placed 91st out of 945
-  entries. It is built on Three.js, and the creator used Codex to make it. It is
-  built for solo play.
+  Action and adventure elements sit alongside the shooting in this single-player
+  game. It was built with Codex on Three.js, plays on phones as well as
+  desktops, and placed 91st of 945 at Vibe Jam 2026. The drone is both your
+  vehicle and your weapon platform in every fight.
 play:
   url: https://dronewars.madhurshrimal.com
   embeddable: true

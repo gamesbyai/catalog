@@ -2,21 +2,19 @@ slug: pictomaze
 title: Pictomaze
 tagline: Find your way through hand-drawn style 2D mazes
 description: >-
-  Pictomaze is a 2D maze puzzle game. The player works through mazes in the
-  spirit of the ones drawn on paper, tracing a route from the start to the exit.
-  It is built to be simple and quick to pick up, and it runs on mobile as well
-  as desktop.
+  Pictomaze takes the kind of maze you would draw on paper and puts it on a
+  screen. You trace a route from the start to the exit through 2D mazes with a
+  hand-drawn look, and the game is built to be simple and quick to pick up.
 
 
-  The idea comes from the creator's school days, when a friend and they sketched
-  mazes on paper and played them with a finger and some imagination. Pictomaze
-  turns that pastime into an actual game, keeping the plain, approachable feel
-  of a doodled puzzle.
+  The idea comes from the creator's school days, when they and a friend sketched
+  mazes on paper and played them with a finger and some imagination. Codex was
+  used to build it for Vibe Jam 2026, with Three.js for rendering even though
+  the play itself is flat and two-dimensional, like the paper original.
 
 
-  The creator built it with Codex for the Vibe Jam 2026, where it was one of 945
-  entries. It uses Three.js for rendering, even though the play itself is flat
-  and two-dimensional.
+  It works on phones and desktops alike and keeps the plain, approachable feel
+  of a doodled puzzle: find the way out, then start on the next maze.
 play:
   url: https://pictomaze.aq.to
   embeddable: true

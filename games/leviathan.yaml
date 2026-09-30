@@ -2,21 +2,21 @@ slug: leviathan
 title: Leviathan
 tagline: Play a vengeful whale smashing whaling ships and snapping harpoon lines.
 description: >-
-  Leviathan turns the Moby-Dick story around: you play the whale. You rise from
-  the black deep to attack whaling fleets, ramming ships, breaking harpoon
-  lines, and freeing the whales that have been caught. Each run is a race
-  against the hunters, who close in as you work through the fleet.
+  Leviathan turns Moby-Dick around: you play the whale. You rise from the black
+  deep to attack the whaling fleets, ramming their ships, snapping harpoon lines
+  and freeing the whales that have been caught. It is a single-player action
+  game built in Three.js.
 
 
-  The setting leans on mythic imagery: a vast, unknowable creature, a doomed
-  hunt, and fragile ships pushing into fog. Casting the player as the hunted
-  animal instead of the hunter gives the action a revenge-story tone. It is a
-  single-player game built in Three.js, and it placed 33rd out of 945 entries in
-  Vibe Jam 2026.
+  The creator says the imagery of Moby-Dick inspired the whole concept, and the
+  setting leans on it: a vast, unknowable creature, a doomed hunt and fragile
+  ships pushing into fog. Codex was used to build it, and it placed 33rd of 945
+  at Vibe Jam 2026.
 
 
-  The creator says Codex was used to build it, and describes the imagery of
-  Moby-Dick as the inspiration behind the whole concept of the game.
+  Playing the hunted animal instead of the hunter gives the game a revenge-story
+  tone. It is a race against the hunters, who close in on you as you work your
+  way through the fleet, ship by ship.
 play:
   url: https://leviathan.timothybauman.com
   embeddable: true

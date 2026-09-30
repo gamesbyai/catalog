@@ -2,21 +2,22 @@ slug: musictetris
 title: MusicTetris
 tagline: Stack falling blocks while the scenery and music shift over time.
 description: >-
-  MusicTetris is a falling-block puzzle in the Tetris tradition. Pieces drop
-  into a playfield, and the player positions them to complete lines and keep the
-  stack from reaching the top. The core rules stay simple, so a run is about
-  steady placement while the presentation around the board keeps moving.
+  MusicTetris is a falling-block puzzle in the Tetris tradition, where the board
+  stays familiar and everything around it keeps changing. Pieces drop into the
+  playfield, and you position them to complete lines and keep the stack from
+  reaching the top of the board.
 
 
-  What sets it apart is that the 3D scene and the soundtrack change as the game
-  goes on and as time passes. Music is generated in the browser with Tone.js,
-  and the visuals are built with Three.js, so the audio and backdrop evolve
-  alongside the puzzle. It supports multiplayer and works on mobile.
+  The creator explains that it began as a playground for experimenting with
+  Tone.js and graphics on top of a simple game mechanic. The music is generated
+  in the browser with Tone.js, the visuals are built with Three.js, and Codex
+  was used to build it.
 
 
-  The creator says it began as a playground for experimenting with Tone.js and
-  graphics on top of a simple game mechanic. The creator built it with Codex. It
-  was submitted to Vibe Jam 2026.
+  It supports multiplayer, works on phones, and came 552nd of 945 at Vibe Jam
+  2026. Because the core rules stay simple, a run is about steady placement
+  while the 3D scene and the soundtrack evolve alongside the puzzle as time
+  passes.
 play:
   url: https://musictetris.anshuldhawan.com
   embeddable: true

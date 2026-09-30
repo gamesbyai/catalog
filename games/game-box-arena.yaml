@@ -3,21 +3,21 @@ title: Game Box Arena
 tagline: Battle other players in fast multiplayer arena deathmatch and capture
   the flag matches.
 description: >-
-  Game Box Arena is a multiplayer browser shooter built around quick arena
-  fights. Players jump into Deathmatch or Capture the Flag, grab futuristic
-  weapons, and use shields to survive firefights while chasing kills or carrying
-  the enemy flag back to base.
+  Game Box Arena runs quick online arena fights in Deathmatch or Capture the
+  Flag, straight from the browser. You grab futuristic weapons, use shields to
+  survive firefights, and either chase kills or carry the enemy flag back to
+  your base while other players try to stop you.
 
 
-  Movement is a big part of the design. Dodge and wall dodge moves let players
+  Movement carries a lot of the design. Dodge and wall dodge moves let you
   sidestep incoming fire and change direction fast, and sound effects give each
-  shot and hit some weight. The creator drew on fond memories of Unreal
-  Tournament from 1999 and its fast, competitive pace.
+  shot and each hit some weight.
 
 
-  The creator added their own maps, characters, effects, and ideas on top of
-  that inspiration. The game was entered in Vibe Jam 2026, and the creator
-  states it was built with Codex.
+  The creator drew on fond memories of Unreal Tournament from 1999 and its fast,
+  competitive pace. On top of that inspiration they added their own maps,
+  characters, effects and ideas, and put the game together with Codex and
+  Three.js as a Vibe Jam 2026 entry. It finished 307th of 945.
 play:
   url: https://gameboxarena.com
   embeddable: true

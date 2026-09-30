@@ -3,22 +3,19 @@ title: Overthrow
 tagline: Battle other players in a physics-driven king of the hill arena to hold
   the top score.
 description: >-
-  Overthrow is a multiplayer king of the hill game set in an arena. Players
-  fight to take and hold the top spot, and the player with the highest score
-  comes out ahead. Battles are physics-based, so knocking rivals around and
-  defending your position is the core of each round.
+  Overthrow is king of the hill with physics. You fight other players in an
+  arena to take the top spot and hold it, knocking rivals around while defending
+  your position, and the player with the highest score comes out ahead.
 
 
-  The tone is casual and whimsical rather than grim. The creator drew
-  inspiration from Super Mario Party and aimed for a similar charming feel,
-  blending fast action with a bit of strategy about when to hold ground and when
-  to push out challengers.
+  The creator drew on Super Mario Party and aimed for a similar charming feel,
+  so the tone is casual and whimsical rather than grim. Using Cursor and
+  Three.js, they turned an idea they had carried for a while into a finished
+  Vibe Jam 2026 game, and it plays on phones as well as desktop.
 
 
-  It was built with Three.js and runs in the browser, with support for both
-  multiplayer and mobile play. The creator built it with Cursor as an entry in
-  Vibe Jam 2026, turning an idea they had carried for a while into a finished
-  game.
+  The action is fast, with a bit of strategy on top: the question in every round
+  is when to hold your ground and when to push the challengers out of the way.
 play:
   url: https://overthrow.gg
   embeddable: true

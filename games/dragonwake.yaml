@@ -2,22 +2,21 @@ slug: dragonwake
 title: Dragonwake
 tagline: Explore dungeons in a text-character roguelike built for long replay value.
 description: >-
-  Dragonwake is a roguelike drawn entirely in ASCII characters. The player
-  guides a hero through a fantasy setting, fighting monsters, gathering gear,
-  and making risky choices where a mistake can end the run. Each attempt starts
-  fresh, so progress depends on how well the character is built and played.
+  Dragonwake is a roguelike drawn entirely in ASCII characters. You guide a hero
+  through a fantasy setting, fighting monsters, gathering gear and making risky
+  choices where one mistake can end the run.
 
 
-  The creator aims for long, complex replayability and wants a large amount of
-  content for players to work through. It leans toward the hardcore end of the
-  roguelike tradition, with an adventure and RPG focus. The text-based
-  presentation follows the style of classic dungeon crawlers, and the design
-  comes from the creator's love of that style.
+  It is also an experiment in whether AI-assisted coding, in this case Codex,
+  can produce a deep, replayable roguelike, and it placed 106th of 945 at Vibe
+  Jam 2026. It is single-player, and the text-based look follows classic dungeon
+  crawlers, a style the creator loves.
 
 
-  The creator built it with Codex as an experiment in whether AI-assisted coding
-  can produce a deep, replayable roguelike. It was submitted to Vibe Jam 2026,
-  where it placed 106th among 945 entries.
+  It leans toward the hardcore end of the tradition, with an adventure and RPG
+  focus. Each attempt starts fresh, so progress depends on how well you build
+  and play the character, and the creator is aiming for long, complex
+  replayability with a large amount of content to work through.
 play:
   url: https://kalineh.github.io/dragonwake-pages
   embeddable: true

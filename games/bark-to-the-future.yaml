@@ -2,21 +2,22 @@ slug: bark-to-the-future
 title: Bark to the Future
 tagline: Flap with one button and bounce off walls to fill the screen with bullets.
 description: >-
-  Bark to the Future mixes one-button flapping with side-scrolling shoot-'em-up
-  action. You keep your character airborne with taps, dodge incoming threats,
-  and fire back while moving through a crowded screen. The goal is to survive
-  and score by making the most of every shot you can land.
+  Bark to the Future is a single-player, side-scrolling shoot-'em-up played with
+  one-button flapping. Taps keep your character airborne while you dodge
+  incoming threats and fire back across a crowded screen, trying to survive and
+  score.
 
 
-  The hook is the environment itself. Walls act as part of your arsenal, and
-  chaining bounces off them builds toward full bullet-hell chaos. The creator
-  cites Gradius, Flappy Bird, and pinball as influences, and the game plays as a
-  blend of all three: flap-style control, shmup pacing, and ricochet timing.
+  The creator cites Gradius, Flappy Bird and pinball as influences, and each one
+  maps to a piece of the game: flap-style control, shmup pacing and ricochet
+  timing. Codex and the Phaser engine were the tools, it is set up for phones as
+  well, and it came 477th of 945 at Vibe Jam 2026.
 
 
-  It was entered in Vibe Jam 2026, where it placed 477th out of 945 entries. The
-  creator built it with Codex, using the Phaser engine, and it is set up to work
-  on mobile as well.
+  The hook is the environment: the walls are part of your arsenal. Chaining
+  bounces off them fills the screen with bullets and builds toward full
+  bullet-hell chaos, and the score climbs by making the most of every shot you
+  can land.
 play:
   url: https://bttfgame.vercel.app
   embeddable: true

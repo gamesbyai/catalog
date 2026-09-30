@@ -2,20 +2,20 @@ slug: skyhop
 title: SkyHop
 tagline: Pilot a hovering craft through a futuristic space racing course.
 description: >-
-  SkyHop is a space racing game in which the player pilots a craft along a track
-  set among the stars. Each run is a race against the course itself, with the
-  goal of getting around it cleanly and quickly. It runs in the browser and is
-  playable on mobile devices as well as desktop.
+  SkyHop is a space racing game in which you pilot a hovering craft through a
+  futuristic course set among the stars. The race is against the course itself:
+  get around it cleanly, and get around it quickly.
 
 
-  The game is a fresh take on HexGL, the browser racer the creator felt was long
-  overdue for an update. The main aim is to show what current WebGL rendering
-  can look like, so the visuals are the focus, with a space setting and a sense
-  of speed.
+  The creator made it as a fresh take on HexGL, the browser racer they felt was
+  long overdue for an update. Its main goal is to show what current WebGL
+  rendering can look like in a browser, so the visuals come first: the space
+  setting, and a sense of speed along the track.
 
 
-  The creator built it with Cursor for the Vibe Jam 2026, where it placed 564th
-  out of 945 entries, and rendered it with Three.js.
+  Cursor was the AI tool and Three.js handles the rendering. Out of 945 Vibe Jam
+  2026 entries, it came 564th. It is single-player and runs on phones as well as
+  desktop browsers.
 play:
   url: https://sidcode.github.io/SkyHop
   embeddable: true

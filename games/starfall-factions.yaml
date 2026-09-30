@@ -3,20 +3,21 @@ title: Starfall Factions
 tagline: Mine pastel planets, take risky contracts, and upgrade your ship as a
   broke rookie pirate.
 description: >-
-  Starfall Factions is a cozy open-world space adventure. You play a broke
-  rookie pirate flying between pastel planets, mining resources, and taking on
-  risky contracts to earn money. Each run is a loop of exploring, gathering, and
-  spending your earnings on ship upgrades so you can handle bigger jobs.
+  You start Starfall Factions as a broke rookie pirate, and the money has to
+  come from somewhere. It is a cozy open-world space adventure in which you fly
+  between pastel planets, mine resources, and take on risky contracts to earn
+  it.
 
 
-  The setting is a strange living star system, where factions, salvage, and
-  trouble shape what you find as you explore. The creator aimed for a smaller,
-  more focused take on the feeling of getting lost in a beautiful sci-fi world,
-  favoring a soft pastel look over gritty space combat.
+  The earnings go into ship upgrades, and the upgrades let you handle bigger
+  jobs, so the loop runs from exploring to gathering to spending and back out
+  again. Factions, salvage, and trouble in this strange, living star system
+  shape what you find along the way.
 
 
-  It was entered in Vibe Jam 2026, where it placed 590th out of 945 entries, and
-  runs on Three.js. The creator built it with Claude Code.
+  The creator, working with Claude Code, aimed for a smaller, more focused take
+  on the feeling of getting lost in a beautiful sci-fi world. That is why the
+  look is soft and pastel rather than gritty.
 play:
   url: https://starfallfactions.vercel.app
   embeddable: true

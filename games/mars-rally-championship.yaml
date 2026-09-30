@@ -2,21 +2,20 @@ slug: mars-rally-championship
 title: Mars Rally Championship
 tagline: Race rally cars across the Martian surface in a championship.
 description: >-
-  Mars Rally Championship is a racing game set on the surface of Mars. The
-  player drives a rally vehicle through a championship, aiming to finish ahead
-  of the competition. It runs in the browser and is playable on mobile devices
-  as well as desktop.
+  Mars Rally Championship takes rally racing to the red planet. You drive a
+  rally car across the Martian surface through a championship, and the goal in
+  every race is to finish ahead of the rest of the competition.
 
 
-  The setting is the main hook: a rally circuit on the red planet, inspired by
-  the idea of crewed missions to Mars becoming real in the near future. The game
-  is a single-player experience, so each run is a solo effort to chase a better
-  result.
+  The idea comes from the prospect of crewed missions to Mars becoming real in
+  the near future. The creator used Claude Code, with Three.js for the 3D
+  graphics; it ended up 229th of 945 at Vibe Jam 2026 and plays in a desktop
+  browser as well as on phones.
 
 
-  The creator built it with Claude Code, and it uses Three.js for its 3D
-  graphics. It was submitted to Vibe Jam 2026, where it placed 229th out of 945
-  entries.
+  It is a single-player game, so each race is a solo effort to chase a better
+  result than the last one. The setting is the main hook: the rally circuit is
+  laid out on the red planet instead of somewhere on Earth.
 play:
   url: https://marsrallychampionship.com
   embeddable: true

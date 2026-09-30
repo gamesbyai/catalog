@@ -2,20 +2,21 @@ slug: jumpory
 title: Jumpory
 tagline: Climb a tower of 3D platforms and see how high you can get.
 description: >-
-  Jumpory is a 3D platformer about vertical climbing. The player moves through a
-  series of platforms stacked upward, jumping from one ledge to the next to gain
-  height. Each run is a push toward a new personal high, with the challenge
-  coming from platforms that get harder to reach.
+  Jumpory is a 3D platformer about climbing, and the question it asks is how
+  high you can get. You move through a series of platforms stacked upward,
+  jumping from one ledge to the next to gain height, and every climb is a push
+  toward a new personal high.
 
 
-  The game draws on the Only Up style of climbing challenge, where progress is
-  measured by altitude and every jump matters. It runs in the browser using
-  Three.js and works on mobile devices as well as desktop, so a climb can start
-  straight from the page.
+  It follows the Only Up style of climbing game, where progress is measured by
+  altitude and every jump matters. It is a single-player game built with Cursor
+  and Three.js, and a climb can start straight from the page on a phone or a
+  desktop.
 
 
-  It was entered in Vibe Jam 2026, where it placed 420th among 945 entries. The
-  creator built it with Cursor, and the game is a single-player experience.
+  The platforms get harder to reach as the climb goes on. Altitude is the only
+  measure of progress, so the number that matters at the end of a run is how
+  high you got.
 play:
   url: https://jumpory.com
   embeddable: true

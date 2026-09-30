@@ -2,22 +2,21 @@ slug: legacy-games
 title: legacy games
 tagline: Play a collection of twelve retro pixel art games in your browser.
 description: >-
-  Legacy Games is a collection of twelve retro-style pixel art games that run in
-  the browser. Each one is drawn on an HTML5 Canvas and written in plain
-  JavaScript, so there is nothing to install. The tags point to arcade and
-  platformer styles, with short pick-up-and-play sessions in the classic mold.
-
-
-  The whole collection comes to more than 16,500 lines of code and uses no
-  outside dependencies or libraries. Every title is built directly on the Canvas
-  API, with no game engine. That keeps the project small and easy to read for
-  anyone curious about how simple browser games are put together.
+  Twelve retro-style pixel art games make up legacy games, and all of them run
+  in the browser with nothing to install. The tags point to arcade and
+  platformer styles, with short, pick-up-and-play sessions in the classic mold.
 
 
   The repository's topics and the creator's classification credit Claude from
   Anthropic with generating the code, and the project is tagged as vibe coding.
-  It works as both a playable set of retro games and an example of what
-  AI-assisted development can produce with basic web tools.
+  Each game is drawn on an HTML5 Canvas in plain JavaScript, built straight on
+  the Canvas API with no game engine at all.
+
+
+  The whole collection comes to more than 16,500 lines of code with no outside
+  dependencies or libraries. That keeps it small enough to read for anyone
+  curious how simple browser games are put together, and it is still twelve
+  single-player games to play.
 play:
   url: https://humancto.github.io/legacy-games
   embeddable: true

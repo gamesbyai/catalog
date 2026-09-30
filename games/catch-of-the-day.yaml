@@ -2,21 +2,20 @@ slug: catch-of-the-day
 title: Catch of The Day
 tagline: Catch fish in swarming schools while dodging a hunting shark.
 description: >-
-  Catch of The Day is a browser action game set among schools of fish. You go
-  after fish moving in flocks while a shark hunts you, so each run is a race to
+  Catch of The Day drops you among swarming schools of fish with a shark on your
+  trail. You go after the fish as they move in flocks, and each run is a race to
   catch as many as you can before the predator catches you.
 
 
-  The game grew out of an experiment with boids, the flocking behavior in which
-  each fish steers by its neighbors. That gives the schools a fluid, natural
-  motion, and the chase depends on reading how the groups bend and scatter
-  around you and the shark.
+  It started as a test of how boids perform in Three.js. Boids are the flocking
+  behavior in which each fish steers by its neighbors, and the creator turned
+  that experiment into a game with Claude Code. Vibe Jam 2026 ranked it 305th of
+  945.
 
 
-  It was an entry in Vibe Jam 2026, and the creator says it started as a test of
-  how boids perform in Three.js. The creator built it with Claude Code. It also
-  runs on mobile, so it can be played on a phone as well as in a desktop
-  browser.
+  Boids give the schools a fluid, natural motion, and the chase depends on
+  reading it. You watch how the groups bend and scatter around you and around
+  the shark, dodging the hunter while you line up the next catch.
 play:
   url: https://cotd.graywhite.cloud
   embeddable: true

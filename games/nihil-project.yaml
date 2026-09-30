@@ -2,21 +2,21 @@ slug: nihil-project
 title: Nihil Project
 tagline: Shoot through ten voxel rooms as an ex-hitman, picking upgrades between fights.
 description: >-
-  Nihil Project is a top-down voxel roguelite shooter. You play an ex-hitman
-  fighting through ten rooms that grow harder as you go. Each room puts you
-  against the hunters of the Nihil Project, and the goal is to survive all ten
-  and escape alive.
+  Nihil Project puts an ex-hitman in front of ten rooms, and the goal is to
+  survive all of them and escape alive. It is a top-down voxel roguelite
+  shooter, and each room sets the hunters of the Nihil Project on you, a little
+  harder every time.
 
 
-  Between fights you draft Fragments, upgrades that can change how a run plays.
+  The creator used Cursor and wanted to make a game shaped by what they and
+  other people want, then see how players react to it. It runs on Three.js and
+  was a Vibe Jam 2026 entry.
+
+
+  Between fights you draft Fragments, upgrades that can change how a run plays,
+  so each attempt takes a different shape depending on which Fragments you pick.
   The pace is fast, and the blocky voxel look keeps the action easy to read from
-  above. Each run can take a different shape depending on which Fragments you
-  pick.
-
-
-  The game was an entry in Vibe Jam 2026, built with Three.js. The creator says
-  they used Cursor, and that they wanted to make a game shaped by what they and
-  other people want, and to see how players react to it.
+  above.
 play:
   url: https://oneman.vercel.app
   embeddable: true

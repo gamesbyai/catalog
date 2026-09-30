@@ -2,22 +2,21 @@ slug: blockzilla
 title: Blockzilla
 tagline: Play a giant kaiju smashing New York while evolving new powers each run.
 description: >-
-  Blockzilla is a roguelite action game in which you control a giant monster
-  rampaging through a blocky version of New York City. You stomp through
-  streets, wreck buildings, and fight off whatever tries to stop you, growing
-  stronger over the course of each run as you pick up new abilities.
+  Blockzilla makes you the destructive force instead of humanity's defender. You
+  play a giant kaiju rampaging through a blocky New York City, stomping through
+  streets, wrecking buildings and fighting off whatever tries to stop you.
 
 
-  The concept blends the auto-attacking, upgrade-stacking loop of Vampire
-  Survivors with the city-wrecking fantasy of the classic arcade game Rampage.
-  Rather than defending humanity, you play the destructive force, and the
-  monster's evolving powers are the main reward for surviving longer. It also
-  runs on mobile.
+  The loop takes the auto-attacking, upgrade-stacking structure of Vampire
+  Survivors and points it at the city-wrecking fantasy of the arcade classic
+  Rampage. The creator says the idea came from childhood memories of playing
+  Rampage and a wish to turn that into a roguelike power fantasy. Built with
+  Claude Code on Three.js, it placed 23rd of 945 at Vibe Jam 2026.
 
 
-  The creator built it with Claude Code using Three.js, and it was entered in
-  Vibe Jam 2026. The creator says the idea came from childhood memories of
-  playing Rampage and wanting to turn that into a roguelike power fantasy.
+  It is a roguelite, so each run starts over. Along the way you pick up new
+  abilities and grow stronger, and those evolving powers are the main reward for
+  surviving longer.
 play:
   url: https://blockzilla.io
   embeddable: true

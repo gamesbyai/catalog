@@ -3,21 +3,20 @@ title: "ASTROPHAGE : SURVIVAL"
 tagline: Outrun an alien threat and breed a predatory microbe to stop a swarm
   eating the Sun.
 description: >-
-  ASTROPHAGE : SURVIVAL is a sci-fi survival game set around a star under attack
-  from a devouring swarm. The player races to escape an alien threat while
-  working on a way to stop the swarm, which means bio-engineering a predatory
-  microbe that can be turned against it.
+  ASTROPHAGE : SURVIVAL is a sci-fi survival game about a swarm eating the Sun.
+  You race to escape an alien threat while you work on a way to stop the swarm,
+  which means breeding a predatory microbe that can be turned against it.
 
 
-  The game draws on Andy Weir's Project Hail Mary and its film adaptation, and
-  it mixes the pressure of a chase with slower, methodical problem-solving. The
-  goal is to combine tense survival with the lab-style puzzle of engineering a
-  cure. An interstellar friendship is part of the emotional tone the creator
-  aimed for.
+  It draws on Andy Weir's Project Hail Mary and its film adaptation, and the
+  creator aimed for an interstellar friendship as part of its emotional tone.
+  Online multiplayer is supported, the game was made with Cursor and Three.js,
+  and Vibe Jam 2026 ranked it 434th of 945.
 
 
-  It was entered in Vibe Jam 2026 and runs in the browser on Three.js, with
-  multiplayer support. The creator says they used Cursor to build it.
+  The pressure comes from two directions. The chase keeps you moving, while the
+  lab-style puzzle of engineering a cure asks for slower, methodical
+  problem-solving. The aim is tense survival and lab work in the same game.
 play:
   url: https://astrophage-game.netlify.app
   embeddable: true

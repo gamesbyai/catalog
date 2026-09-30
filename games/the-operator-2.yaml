@@ -2,23 +2,20 @@ slug: the-operator-2
 title: The Operator
 tagline: Inspect the output of a 1980s mainframe AI and decide what gets through.
 description: >-
-  The Operator puts you in the chair of a mainframe operator in a retro office,
-  tasked with managing an LLM server. Instead of checking passports, you review
-  the unruly output of a dusty, analog AI machine and make calls on what passes.
-  Each shift is built around bureaucratic pressure and careful document
-  checking.
+  The Operator takes the core idea of Papers, Please and moves it into a 1980s
+  mainframe room. You sit in a retro office as the operator of an LLM server.
+  Instead of checking passports, you review the unruly output of a dusty, analog
+  AI machine and decide what gets through and what does not.
 
 
-  The setting is a cassette-futurism vision of the 1980s, where the AI is a
-  bulky piece of hardware and not a sleek modern service. The design takes its
-  core idea from Papers, Please, moving the tense routine of inspection and
-  judgment into a mainframe room. Puzzle and simulation elements sit together in
-  the loop.
+  The setting is cassette futurism: the AI is a bulky piece of hardware, not a
+  sleek modern service. It was built on Phaser, with GitHub Copilot among the
+  tools noted for its development, and Vibe Jam 2026 ranked it 513th of 945.
 
 
-  It was an entry in Vibe Jam 2026, where it placed 513th out of 945 entries.
-  The game runs on Phaser, and GitHub Copilot is among the tools noted for its
-  development.
+  Each shift runs on bureaucratic pressure and careful document checking, the
+  same tense routine of inspection and judgment, with puzzle and simulation
+  elements sharing the loop, one document at a time.
 play:
   url: https://the-operator-game.vercel.app
   embeddable: true

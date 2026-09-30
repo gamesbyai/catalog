@@ -2,20 +2,20 @@ slug: shadow-monarch
 title: shadow monarch
 tagline: Explore a first-person memory from a 90s childhood and uncover what was buried.
 description: >-
-  Shadow Monarch is a first-person game built around a resurfacing childhood
-  memory. The player explores a space drawn from the creator's own childhood in
-  the 1990s, moving through it from a first-person view while piecing together
-  why something was left forgotten.
+  A childhood memory resurfaces in Shadow Monarch, and you walk back into it
+  from a first-person view. The space is drawn from the creator's own childhood
+  in the 1990s. As you explore it, you piece together why something there was
+  left forgotten, and what was buried with it.
 
 
-  The premise leans on nostalgia with an uneasy edge: the memory returns, but
-  the setup hints that some things were buried for a reason. That tension
-  between familiar, personal surroundings and a growing sense of dread is the
-  main draw. It runs in the browser and is playable on mobile.
+  The creator used Lovable, with Three.js rendering the 3D scene, and it came
+  265th of 945 entries in Vibe Jam 2026. Phones can run it too.
 
 
-  It was entered in Vibe Jam 2026, where it placed 265th out of 945 entries. The
-  creator built it with Lovable, and the 3D scene is rendered with Three.js.
+  The game leans on nostalgia with an uneasy edge, somewhere between adventure
+  and horror. The memory comes back, but the setup hints that some things were
+  buried for a reason, and uncovering them is the job. That tension between
+  familiar, personal surroundings and a growing sense of dread is the main draw.
 play:
   url: https://shadowmonarch.app
   embeddable: true

@@ -2,21 +2,20 @@ slug: beetlejump
 title: BeetleJump
 tagline: Jump your beetle up a towering course and try to reach the top.
 description: >-
-  BeetleJump is a 3D climbing platformer where you guide a beetle upward through
-  a course of precarious jumps. The goal is simple: reach the summit and claim
-  the title of king. Each attempt comes down to timing and precision, and a
-  missed landing can cost you progress.
+  BeetleJump is a 3D climbing platformer with one goal: get your beetle to the
+  top of a towering course and claim the title of king. Every jump on the way up
+  the course is precarious, and each attempt comes down to timing and precision.
 
 
-  The design draws on the Counter-Strike map kz_giantbean, a jump-focused
-  climbing course, and it carries that map's demanding, unforgiving style. The
-  game earned the Rage-Quit Award at Vibe Jam 2026, where it placed 20th among
-  945 entries. It supports multiplayer and runs on mobile devices as well.
+  The creator, assentorp, came up with it after looking at other jam entries and
+  wanting to try a challenge of their own. Built with Claude Code on Three.js,
+  with online multiplayer and phone support, it won the Rage-Quit Award at Vibe
+  Jam 2026 and came 20th of 945.
 
 
-  The creator built it with Claude Code on Three.js. They said they came up with
-  it after looking at other jam entries and wanting to try a challenge of their
-  own.
+  The design draws on kz_giantbean, a jump-focused climbing map from
+  Counter-Strike, and keeps that map's demanding, unforgiving style: a missed
+  landing can drop you back down and cost you the progress you made.
 play:
   url: https://beetlejump.com
   embeddable: true

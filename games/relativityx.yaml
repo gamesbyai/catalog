@@ -3,21 +3,21 @@ title: RelativityX
 tagline: Fly a near-light-speed spacecraft through the solar system and watch
   time stretch.
 description: >-
-  RelativityX is a space flight simulator set in the solar system. The player
-  pilots a relativistic spacecraft, moving from planet to planet and clicking on
-  worlds to read short facts about them. The goal is to reach a black-hole
-  portal that carries the ship out into the Vibe Jam webring.
+  RelativityX puts you at the controls of a relativistic spacecraft and lets you
+  watch time stretch. You fly through the solar system from planet to planet,
+  and the trip ends at a black-hole portal that carries the ship out into the
+  Vibe Jam webring.
 
 
-  The main idea is time dilation. As the ship approaches the speed of light,
-  time behaves differently for the traveler, and the player sees that effect
-  firsthand instead of reading about it in a textbook. The planet facts add a
-  light educational layer to the trip.
+  In the creator's telling, the project grew out of seeing Interstellar for the
+  first time and wanting Einstein's relativity to feel understandable and
+  emotional. It was built in Three.js with Codex.
 
 
-  The creator says the project grew out of seeing Interstellar for the first
-  time and wanting to make Einstein's relativity feel understandable and
-  emotional. They built it in Three.js with Codex, as an entry in Vibe Jam 2026.
+  Time dilation is the point. As the ship nears the speed of light, time runs
+  differently for the traveler, and you see the effect firsthand instead of
+  reading about it in a textbook. Clicking a world brings up short facts about
+  it, a light educational layer on the way.
 play:
   url: https://relativity-cng.vercel.app
   embeddable: true

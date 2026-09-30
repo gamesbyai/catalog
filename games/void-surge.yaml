@@ -3,21 +3,20 @@ title: Void Surge
 tagline: Steer a ship while its weapons fire on their own, then extract before
   four bosses arrive.
 description: >-
-  Void Surge is a bullet-heaven survivor for mobile and desktop browsers. The
-  player only steers the ship; the weapons fire automatically. A run lasts ten
-  minutes, during which the player holds Station Helix-9 while the intensity
-  keeps climbing, and the goal is to extract before four bosses stack up on
-  screen.
+  In Void Surge you only steer; the ship's weapons fire on their own. It is a
+  bullet-heaven survivor in which you hold Station Helix-9 for a ten-minute run
+  while the intensity keeps climbing, and the aim is to extract before four
+  bosses stack up on screen.
 
 
-  Progression centers on building Mk 5 loadouts, stacking weapon upgrades so the
-  automatic fire grows heavier as the pressure rises. Steering is the only
-  input, which keeps the game easy to pick up on a touch screen as well as with
-  a desktop pointer or keys.
+  It was vibe-coded for fun with Grok Build, the creator says, as an HTML5
+  roguelike survivor that draws to a canvas. It is built for solo play. Steering
+  is the only input, which keeps it easy to pick up on a touch screen as well as
+  with a desktop pointer or keys.
 
 
-  The creator says it was vibe-coded for fun with Grok Build. The project is an
-  HTML5 roguelike survivor that draws to a canvas. It is built for solo play.
+  Progression is about building Mk 5 loadouts: you stack weapon upgrades so the
+  automatic fire grows heavier as the pressure rises around the station.
 play:
   url: https://void-surge-survivor.grok.me
   embeddable: true

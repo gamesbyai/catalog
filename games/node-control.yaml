@@ -3,22 +3,21 @@ title: Node Control
 tagline: Fight rivals for control of nodes inside a neural network in a
   multiplayer .io arena.
 description: >-
-  Node Control is a competitive multiplayer .io game set inside a neural
-  network. Players fight for influence over the network by extending trails,
-  infecting nodes, and contesting territory with other players in real time. It
-  runs in the browser on desktop and mobile.
+  Inside a neural network, players battle for control of nodes in Node Control,
+  a competitive multiplayer .io game. You fight other players for influence over
+  the network in real time by extending trails, infecting nodes and contesting
+  territory, on a computer or a phone, with Three.js rendering the network.
 
 
-  The design aims to be easy to pick up while leaving room to improve. Boost
-  timing, trail length, contested infections, and the choice between extending a
-  trail or closing it all shape how a round goes. The creator also put work into
-  the surrounding stack, including netcode, multi-region deployment, telemetry,
-  and an ad-friendly structure.
+  The creator's aim with Claude Code was to show that AI can already help ship a
+  commercially viable game. They also put work into the stack around it:
+  netcode, multi-region deployment, telemetry and an ad-friendly structure. It
+  finished 111th of 945 entries at Vibe Jam 2026.
 
 
-  The creator built it with Claude Code as an entry in Vibe Jam 2026, aiming to
-  show that AI can already help ship a commercially viable game. The rendering
-  uses Three.js.
+  It aims to be easy to pick up while leaving room to improve. Boost timing,
+  trail length, contested infections and the choice between extending a trail or
+  closing it all shape how a round goes.
 play:
   url: https://nodecontrol.gg
   embeddable: true

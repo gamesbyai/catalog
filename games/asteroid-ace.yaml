@@ -2,21 +2,21 @@ slug: asteroid-ace
 title: Asteroid Ace
 tagline: Blast drifting asteroids and dodge hunter drones in escalating waves.
 description: >-
-  Asteroid Ace is a classic asteroid shooter in which you pilot a ship through
-  successive waves of hazards. Slow-drifting asteroid clusters break apart into
-  dangerous fragments when hit, so clearing space means managing an ever-growing
-  spread of debris while staying clear of it.
+  Asteroid Ace is a classic asteroid shooter played in escalating waves. You
+  pilot a ship through slow-drifting asteroid clusters that break into dangerous
+  fragments when hit, so every hit adds to the debris you then have to stay
+  clear of.
 
 
-  Agile hunter drones join the rocks and force quick adjustments. Each enemy
-  type has its own movement pattern and attack style, and the danger climbs as
-  waves progress. The mix of passive obstacles and active pursuers keeps the
-  pace tense. It runs on mobile as well.
+  The creator says the whole game was made with a local LLM. The experiment was
+  to see what one laptop could do: a 5090 GPU, 24 GB of video memory and 32 GB
+  of RAM. It finished 404th of the 945 entries at Vibe Jam 2026.
 
 
-  The creator says the whole game was made with a local LLM. It was an
-  experiment to see what a laptop with a 5090 GPU, 24 GB of video memory and 32
-  GB of RAM could do. It was submitted to Vibe Jam 2026.
+  Agile hunter drones join the rocks and force quick changes of course. Each
+  enemy type has its own movement pattern and attack style, and the danger
+  climbs from wave to wave, with passive obstacles and active pursuers on screen
+  together.
 play:
   url: https://asteroid-ace.fractalvision.co.uk
   embeddable: true

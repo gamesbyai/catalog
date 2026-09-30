@@ -4,19 +4,18 @@ tagline: Haul cargo across the planet by ship and spend your earnings on better 
 description: >-
   Vibe Voyage is a shipping simulation set on a round planet. You take cargo
   from one port to another, get paid on delivery, and put that money toward
-  better ships. Each run is a loop of picking a route, sailing it, collecting
-  the payout, and upgrading your fleet.
+  better ships. The loop is simple: pick a route, sail it, collect the payout,
+  and upgrade the fleet.
 
 
-  The game is multiplayer, so other captains share the seas with you. Its
-  premise is a personal take on the Roblox game Shipping Lanes, keeping that
-  game's basic idea of trading distance and time for income while adding the
-  creator's own changes.
+  It is the creator's personal take on the Roblox game Shipping Lanes, keeping
+  that game's basic idea of trading distance and time for income and adding
+  their own changes. Built with Claude Code on Three.js and aimed at desktop
+  browsers, it was 596th of 945 entries in Vibe Jam 2026.
 
 
-  It was built with Three.js for the Vibe Jam 2026 and placed 596th out of 945
-  entries. The creator built it with Claude Code. It is aimed at desktop
-  browsers.
+  The seas are shared, too. It is multiplayer, so other captains are out on the
+  same planet, trading distance and time for income alongside you.
 play:
   url: https://vibe.voyage
   embeddable: true

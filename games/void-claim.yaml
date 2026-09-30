@@ -2,21 +2,21 @@ slug: void-claim
 title: Void Claim
 tagline: Mine asteroids, upgrade your ship, and fight rivals in dangerous space zones.
 description: >-
-  Void Claim is a multiplayer space mining game. You begin in a safe area,
-  gather resources, and upgrade your ship. As your ship improves, you can head
-  into more dangerous PvP zones, where the richest asteroids are found and other
-  players are competing for the same claims.
+  Void Claim is a multiplayer space mining game that starts you in a safe area.
+  You gather resources and upgrade the ship, and as it improves you can head
+  into the dangerous PvP zones where the richest asteroids sit and other players
+  compete for the same claims.
 
 
-  The risk grows the farther out you go. Better rewards sit in contested space,
-  so each trip is a choice between staying safe and pushing toward more valuable
-  rocks. Deep in the void, something ancient is stirring, which means rival
-  pilots may not be the only threat hunting you.
+  The creator says they had no technical knowledge and very little time, and
+  built it with the AutoGPT Platform. It placed 224th of 945 in Vibe Jam 2026
+  and runs on phones too.
 
 
-  The creator built it with the AutoGPT Platform, saying they had no technical
-  knowledge and very little time. It was submitted to Vibe Jam 2026 and is
-  playable on mobile as well as in a browser.
+  The farther out you go, the bigger the risk and the better the rewards, so
+  every trip is a choice between staying safe and pushing toward more valuable
+  rocks. Deep in the void, something ancient is stirring, and rival pilots may
+  not be the only threat hunting you.
 play:
   url: https://torantulino.github.io/void-claim
   embeddable: true

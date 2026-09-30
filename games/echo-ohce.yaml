@@ -2,20 +2,21 @@ slug: echo-ohce
 title: ECHO|OHCE
 tagline: Find your way through a dark dungeon using echolocation pings
 description: >-
-  ECHO|OHCE is a dungeon crawler where the player cannot see the surroundings
-  directly. Instead, a scanner sends out sound pulses that reveal nearby walls
-  and objects for a moment. Each run means moving through dark rooms, reading
-  the returning signals, and finding a way forward.
+  ECHO|OHCE is a dungeon crawler played without seeing the surroundings
+  directly. A scanner sends out sound pulses that reveal nearby walls and
+  objects for a moment, and you move through the dark rooms by reading the
+  returning signals and finding a way forward.
 
 
-  The scanner design draws on the Odradek device from Death Stranding, and the
-  game leans on that idea of sensing a space rather than looking at it. It mixes
-  action, puzzle, and strategy elements, so timing your pings and choosing your
-  route both matter. The game supports mobile play.
+  The scanner draws on the Odradek device from Death Stranding, and the whole
+  game leans on that idea of sensing a space rather than looking at it. The
+  creator made it with Codex on Three.js, and it ranked 414th of 945 at Vibe Jam
+  2026. It also plays on phones.
 
 
-  It was entered in Vibe Jam 2026, where it placed 414th among 945 entries. It
-  runs on Three.js, and the creator built it with Codex.
+  Action, puzzle and strategy all come into it. Timing your pings and choosing
+  your route both matter, since each pulse only shows the room for a moment
+  before it goes dark again.
 play:
   url: https://project-kqtw7.vercel.app
   embeddable: true

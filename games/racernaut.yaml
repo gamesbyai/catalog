@@ -3,21 +3,21 @@ title: Racernaut
 tagline: Drive through an endless generated city, choosing turns at every
   junction to stay alive.
 description: >-
-  Racernaut is a driving game set in a city that streams in as you go. The
+  Racernaut is a driving game in a city that builds itself as you go. The
   streets are procedurally generated, so the route ahead is different every
-  time. Each junction forces a quick decision about which turn to take, and a
-  wrong choice ends the run.
+  time, and every junction forces a quick decision about which way to turn.
 
 
-  The appeal is in the pressure of the choices. Because the layout builds itself
-  around the car, you have to read each intersection as it appears. The genre
-  mix leans toward racing, with platformer and simulation elements in the blend.
-  It also runs on mobile.
+  The creator describes a long interest in procedural generation that they had
+  never turned into a serious project, and says AI made it possible to try.
+  Their Vibe Jam 2026 build used Claude Code and Three.js, and it runs on phones
+  as well.
 
 
-  The creator built it with Claude Code and Three.js for the Vibe Jam 2026. They
-  describe a long interest in procedural generation that they had never turned
-  into a serious project, and say AI made it possible to try.
+  A wrong turn ends the run. Because the layout appears around the car as you
+  drive, you have to read each intersection the moment it shows up, and the
+  pressure of those choices is the appeal. It is a single-player arcade racer,
+  and the city never ends.
 play:
   url: https://racernaut.com
   embeddable: true

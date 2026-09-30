@@ -2,24 +2,21 @@ slug: up-with-a-stranger
 title: UP! with a stranger
 tagline: Climb from a backyard to space as two blobs tied together by a string.
 description: >-
-  UP! with a stranger is a cooperative climbing game for two players. Each of
-  you controls a plasticine blob, and the two blobs are joined by a string.
-  Together you work your way upward from a backyard toward space and beyond,
-  aiming to reach the greatest height you can. The one rule is that the string
-  must not break.
+  Two plasticine blobs, one string, and a stranger on the other end. UP! with a
+  stranger is a cooperative climbing game for two players: each of you controls
+  a blob, and together you work your way up from a backyard toward space and
+  beyond. The one rule is that the string must not break.
 
 
-  The look draws on childhood games, with a clay-like art style, small odd
-  details, and a lot of charm. The creator, who comes from an art direction
-  background, described the mix as a cross between Purple & Brown, It Takes Two,
-  and Flappy Bird. The pairing is meant for strangers, so the game leans on
-  quick, shared trouble. It also runs on mobile.
+  The creator comes from an art direction background and describes the mix as a
+  cross between Purple & Brown, It Takes Two, and Flappy Bird. The look draws on
+  childhood games, with a clay-like art style and small odd details. It is their
+  first shipped game, built with Claude Code and, they say, 99% vibe coded.
 
 
-  The creator built it with Claude Code and describes it as 99% vibe coded, and
-  it is their first shipped game. It placed 27th out of 945 entries in Vibe Jam
-  2026. One goal was to see whether AI-built work could still feel handmade and
-  full of personality.
+  One goal was to see whether AI-built work could still feel handmade and full
+  of personality. The pairing is meant for strangers, so the climb leans on
+  quick, shared trouble and a height to beat.
 play:
   url: https://upwithastranger.com
   embeddable: true

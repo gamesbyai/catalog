@@ -3,21 +3,21 @@ title: ORBITAL-SLOP.io
 tagline: Pilot air and ground vehicles through a shared asteroid belt in a space
   shooter.
 description: >-
-  ORBITAL-SLOP.io is a multiplayer space shooter and flight simulation set in an
-  asteroid belt. Players operate both air and ground vehicles, moving through
-  the field and taking part in combat alongside other people in the same
-  session. It runs in the browser and is playable on mobile devices as well.
+  ORBITAL-SLOP.io puts air and ground vehicles into the same asteroid belt and
+  lets players fight it out in space. It is a multiplayer space shooter and
+  flight simulation, and you move through the field and join the combat
+  alongside whoever else is in the session.
 
 
-  The tone is deliberately loose and messy, described by its creator as a High
-  Slop adventure. It draws on the flight sims the creator played in their youth,
-  and the game is framed as a love letter to them. Mixing vehicle types in a
-  single asteroid setting gives it a different feel from a pure flight game.
+  The creator calls it a High Slop adventure, and the tone is deliberately loose
+  and messy. It is framed as a love letter to the flight sims the creator played
+  in their youth. It came together in Cursor and Three.js during Vibe Jam 2026,
+  where it ranked 445th of 945.
 
 
-  The game was built with Three.js for its 3D rendering. The creator built it
-  with Cursor, and it was submitted to Vibe Jam 2026, where it placed 445th out
-  of 945 entries.
+  It runs on phones too, and having both air and ground vehicles in one asteroid
+  setting gives it a different feel from a pure flight game, where you only ever
+  fly.
 play:
   url: https://orbital-slop.io
   embeddable: true

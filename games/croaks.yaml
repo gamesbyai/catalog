@@ -2,20 +2,21 @@ slug: croaks
 title: CROAKS
 tagline: Aim and fire at rival frogs in a turn-based artillery battle.
 description: >-
-  CROAKS is a turn-based artillery game in the spirit of Worms, with frogs
-  standing in for the soldiers. Players take turns aiming and firing at opposing
-  frogs, working out angles and power to land shots across the terrain. A match
-  continues until one side is left standing.
+  CROAKS is a turn-based artillery game: Worms, with frogs. Players take turns
+  aiming and firing at the opposing frogs, working out the angle and power it
+  takes to land a shot across the terrain. The match goes on until one side is
+  left standing.
 
 
-  The game is built around the creator's memories of playing Worms when they
-  were young, and it keeps that formula of tactical positioning mixed with
-  shooting. It supports multiplayer and is playable on mobile devices as well as
-  desktop, so a round can be played with friends wherever they are.
+  The creator built the game around memories of playing Worms when they were
+  young, and it keeps that formula of tactical positioning mixed with shooting.
+  It was made with Claude Code, renders with PixiJS and ranked 338th of the 945
+  entries at Vibe Jam 2026.
 
 
-  It was entered in Vibe Jam 2026, where it placed 338th out of 945 entries. The
-  creator built it with Claude Code, and it renders with PixiJS.
+  Multiplayer works online and on phones, so a match with friends does not need
+  everyone in one room. Each turn is a small physics problem: the angle, the
+  power and the terrain between you and the target.
 play:
   url: https://croaks.cc
   embeddable: true

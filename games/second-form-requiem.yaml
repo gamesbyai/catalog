@@ -2,20 +2,20 @@ slug: second-form-requiem
 title: "Second Form: Requiem"
 tagline: Pilot a spaceship that becomes a mecha and blast through waves of enemies.
 description: >-
-  Second Form: Requiem is a fast-paced space shoot 'em up. You fly a ship
-  through relentless waves of enemies, firing to survive as the screen fills
-  with hostile fire. At some point your craft transforms into a combat mecha,
-  changing how you fight.
+  Second Form: Requiem is a fast-paced space shoot 'em up that changes shape
+  partway through. You fly a ship through relentless waves of enemies, firing to
+  survive as the screen fills with hostile fire. At some point the craft
+  transforms into a combat mecha, and the way you fight changes with it.
 
 
-  The game leans on energy and escalation. High-energy music drives the pace,
-  power-ups change your firepower as you go, and the chaos builds the longer you
-  last. The transformation into a mecha is the hook that gives the game its name
-  and sets it apart from a plain ship-versus-swarm shooter.
+  That transformation gives the game its name. Around it, everything runs on
+  escalation: high-energy music sets the pace, power-ups change your firepower
+  as you go, and the chaos builds the longer you last.
 
 
-  The creator entered it in Vibe Jam 2026 and said the project came from wanting
-  to learn how to vibe code and make games they would want to play themselves.
+  It came out of Vibe Jam 2026, where the single-player game ranked 219th of
+  945. The project, the creator says, grew from wanting to learn how to vibe
+  code and to make the kind of games they would want to play themselves.
 play:
   url: https://secondformrequiem.com
   embeddable: false

@@ -2,20 +2,21 @@ slug: everest-troll-summit
 title: everest-troll-summit
 tagline: Help or sabotage a shared Everest climber alongside thousands of other players.
 description: >-
-  Everest Troll Summit is a multiplayer browser game built around one shared
-  climber making their way up Everest. Every connected player picks a side in
-  real time: boost the climber toward the summit as a helper, or get in the way
-  as a troll. The climb is a single ongoing contest between the two camps.
+  In everest-troll-summit, every player shares one climber on Everest, and every
+  player picks a side. Helpers boost the climber toward the summit and trolls
+  get in the way, all in real time, so the climb is one ongoing contest between
+  the two camps of players.
 
 
-  The hook is the crowd. Instead of controlling your own character, you join
-  thousands of others pushing the same figure in opposing directions, so the
-  outcome depends on which group is more active. It runs in the browser and is
-  playable on mobile, which keeps the barrier to joining a session low.
+  The creator describes it as a spur-of-the-moment idea, built with Claude Code
+  on Three.js as a multiplayer party game. It ranked 536th of 945 at Vibe Jam
+  2026, and it plays on phones as well as in a browser, which keeps the barrier
+  to joining low.
 
 
-  The creator built it with Claude Code and describes it as a spur-of-the-moment
-  idea. It was entered in Vibe Jam 2026 and uses Three.js for its 3D scene.
+  The crowd is the hook. You never control a character of your own. You join
+  thousands of others pushing the same figure in opposite directions, and the
+  outcome depends on which group is more active.
 play:
   url: https://everest-troll-summit.agentmeshlab.com
   embeddable: true

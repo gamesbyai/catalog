@@ -3,22 +3,22 @@ title: Captain Curveball's Cruise
 tagline: Drive a speedboat around Maldivian islands, picking up tourists and
   dodging disasters.
 description: >-
-  Captain Curveball's Cruise is a boat-driving game set in a playful version of
-  the Maldives. One or two players race the clock to earn as much money as
-  possible. A run means picking up tourists, steering past absurd disasters, and
-  delivering passengers safely to their destinations.
+  Captain Curveball's Cruise hands you a speedboat in a playful version of the
+  Maldives and a clock to race. You pick up tourists, steer past absurd
+  disasters and deliver your passengers safely, earning as much money as you
+  can, alone or with a second player.
 
 
-  The game grew out of its creator's Maldivian background. It turns the
-  beautiful, chaotic, unpredictable work of excursion crews into a lighthearted
-  exaggeration built around speedboats, islands, resorts, and reefs. The score
-  chase gives each run a goal, but the game is also meant to be enjoyable
-  without it.
+  The game grew out of the creator's Maldivian background. It takes the
+  beautiful, chaotic, unpredictable work of excursion crews and exaggerates it
+  into something lighthearted, built around speedboats, islands, resorts and
+  reefs. It was made with Claude Code on Three.js, plays on phones too, and came
+  345th of 945 at Vibe Jam 2026.
 
 
-  Simply sailing around the islands and banking around resorts is part of the
-  appeal. It runs on Three.js, supports both two-player sessions and mobile
-  play, and was entered in Vibe Jam 2026.
+  The score chase gives each run a goal, but the game is meant to be enjoyable
+  without it too. Simply sailing around the islands and banking around the
+  resorts is part of the appeal.
 play:
   url: https://captain-curveballs-cruise.netlify.app
   embeddable: true

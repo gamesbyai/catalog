@@ -2,21 +2,21 @@ slug: game-breakers
 title: Game Breakers
 tagline: Invent fighters and attacks, then watch them battle other players' creations.
 description: >-
-  Game Breakers is a multiplayer auto-battler where players create their own
-  fighters. An AI writes JavaScript for each creation's visuals, attacks, and
-  behavior, and that code runs on the game server. Once a fighter is made, it
-  enters a battle against creations from other players.
+  You invent the fighters in Game Breakers, and an AI writes the code that makes
+  them work. For each creation it writes JavaScript covering the visuals,
+  attacks and behavior, that code runs on the game server, and the finished
+  fighter goes into battle against other players' creations.
 
 
-  The open-ended creation is the main draw. What a fighter looks like and how it
-  fights depends on what the player asks for. Matches can turn out surprising
-  because each opponent's behavior was generated from someone else's idea.
+  It is a multiplayer auto-battler for desktop and phone browsers, so once a
+  fighter exists you watch rather than steer. Creation is open-ended: how a
+  fighter looks and fights depends on what you asked for, and since every
+  opponent grew out of someone else's idea, matches can turn out surprising.
 
 
-  The game runs on mobile as well as desktop. It was entered in Vibe Jam 2026,
-  where it placed 176th out of 945 entries. The creator invites players to try
-  to break the game, which fits its design of running generated code directly in
-  the simulation.
+  The creator invites players to try to break the game, which fits a design that
+  runs generated code directly in the simulation. The title makes the same
+  promise.
 play:
   url: https://gamebreakers.gg
   embeddable: true

@@ -2,20 +2,21 @@ slug: hamster-hustle
 title: Hamster Hustle
 tagline: Escape the office wheel as a hamster in a pixel-art adventure with puzzles.
 description: >-
-  Hamster Hustle is a pixel-art adventure built around a simple wish: getting
-  off the wheel. The player guides a hamster through a stylized,
-  corporate-flavored world, solving puzzles and making strategic choices on the
-  way to freedom from the daily grind.
+  Hamster Hustle is a pixel-art adventure about a hamster with one wish: to get
+  off the wheel. You guide it through a stylized, corporate-flavored world,
+  solving puzzles and making strategic choices on the way to freedom from the
+  daily grind.
 
 
-  The look and feel draw on the Game Boy Color games the creator loved growing
-  up, with a chunky pixel style and the sense of slipping into a small handheld
-  world after a long day. Workplace satire runs through the setting, poking fun
-  at office life in ways that feel a little too familiar.
+  The chunky pixel style draws on the Game Boy Color games the creator loved
+  growing up, along with the feeling of slipping into a small handheld world
+  after a long day. Workplace satire runs through the setting and pokes fun at
+  office life, with a hamster standing in for the worker.
 
 
-  The creator built it with Claude Code as a way to decompress from work. It
-  entered Vibe Jam 2026 and is playable on mobile as well as desktop.
+  Making it in Claude Code was the creator's way to decompress from work, which
+  suits a game about escaping the wheel. It went into Vibe Jam 2026, and like
+  the handhelds that inspired it, it also plays on a phone.
 play:
   url: https://hamsterhustle.co
   embeddable: true

@@ -3,19 +3,19 @@ title: Tank Town
 tagline: Defend your base and blast enemy tanks in a cartoon take on Battle City.
 description: >-
   Tank Town is a top-down tank shooter inspired by the NES classic Battle City.
-  You drive a small cartoon tank through a field of chunky bricks, fire at enemy
-  tanks, and protect a single base that has to survive each round.
+  You drive a small cartoon tank through a field of chunky bricks and fire at
+  enemy tanks, all while protecting a single base that has to survive each
+  round. Lose the base and the round is lost.
 
 
-  The look is a 1930s Sunday-morning cartoon, with tiny tanks and blocky brick
-  walls rendered in 3D. The creator wanted to play Battle City with friends,
-  since the emulator version they tried only allowed solo play, so multiplayer
-  is built in. It also runs on mobile browsers, which makes it easy to share and
-  jump into with others.
+  The creator wanted to play Battle City with friends, but the emulator version
+  they tried only allowed solo play. So multiplayer is built in, and it runs in
+  mobile browsers too, which makes a match easy to share. The game came together
+  in Claude Code on Three.js, and its Vibe Jam 2026 result was 565th of 945.
 
 
-  The creator built it with Claude Code using Three.js. It was entered in Vibe
-  Jam 2026, where it placed 565th out of 945 entries.
+  The look is a 1930s Sunday-morning cartoon: tiny tanks and blocky brick walls,
+  rendered in 3D.
 play:
   url: https://tanktown.kristapsbezbailis.com
   embeddable: true

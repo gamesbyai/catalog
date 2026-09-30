@@ -2,20 +2,21 @@ slug: codex-usage-game
 title: codex usage game
 tagline: Play a one-minute arcade round tucked inside a usage chart.
 description: >-
-  Codex Usage Game is a short arcade game that lives inside a chart of Codex
-  usage. Each run lasts about one minute, so a session is a quick attempt to get
-  through the round and do as well as possible before the timer ends.
+  In codex usage game, the playing field is a chart of Codex usage. It is a
+  short arcade game tucked inside that graph, and each round lasts about one
+  minute: you try to get through it and do as well as possible before the timer
+  runs out.
 
 
-  The main hook is the setting. Instead of a typical game screen, the playing
-  field is disguised as a familiar usage graph, which turns a dry dashboard into
-  something you can play. The one-minute length keeps rounds tight and makes it
-  easy to jump straight back in for another try.
+  The joke is the disguise. Instead of a typical game screen you get a familiar
+  usage graph, and a dry dashboard turns into something you can play. The
+  project's GitHub README names Codex as the tool involved, and the code is
+  released under the MIT license.
 
 
-  The project is hosted on GitHub, and the listing points to Codex as the tool
-  involved, with OpenAI as the provider. Beyond that, the game keeps its scope
-  small: one idea, one short round, and a joke that fits the chart it hides in.
+  The scope stays small: one idea, one short round and a joke that fits the
+  chart it hides in. The one-minute length keeps rounds tight and makes it easy
+  to jump straight back in for another try.
 play:
   url: https://petergpt.github.io/codex-usage-game
   embeddable: true

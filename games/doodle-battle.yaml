@@ -2,20 +2,21 @@ slug: doodle-battle
 title: Doodle Battle
 tagline: Sketch a picture, let AI name it, then watch it fight your opponent's drawing.
 description: >-
-  Doodle Battle is a multiplayer drawing game where each player sketches
-  something on a canvas. An AI then looks at the sketch and guesses what it is.
-  Once the guess is made, the drawing becomes a fighter and battles the creation
-  made by the opponent.
+  Doodle Battle is a multiplayer drawing game that turns your sketch into a
+  fighter. Each player draws something on a canvas, an AI looks at the drawing
+  and guesses what it is, and then the drawing steps into the ring against the
+  opponent's creation.
 
 
-  The appeal comes from mixing a drawing prompt game with a head-to-head fight.
-  What you draw, and how well the AI reads it, shapes the drawing that ends up
-  in the ring. It blends action, strategy and simulation elements with the
-  creativity of a sketchpad, and it was entered in Vibe Jam 2026.
+  It pairs a drawing prompt game with a head-to-head fight between players
+  online, so the drawing you face comes from another person. It was built by
+  axxelwp with Claude Code on PixiJS for the browser and placed 272nd of the 945
+  entries at Vibe Jam 2026.
 
 
-  The game runs in the browser and uses PixiJS for its graphics. The creator
-  built it with Claude Code, and it placed 272nd out of 945 entries in the jam.
+  What you draw matters, and so does how well the AI reads it, since the AI's
+  guess is what names your fighter. The game mixes action, strategy and
+  simulation elements with the creativity of a sketchpad.
 play:
   url: https://doodlebattle.online
   embeddable: true

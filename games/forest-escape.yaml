@@ -2,20 +2,21 @@ slug: forest-escape
 title: Forest Escape
 tagline: Find seven blue flowers in a dark forest while spirits chase you.
 description: >-
-  Forest Escape is a first-person horror game set in a dark forest. You carry
-  only a flashlight and must search the trees for seven blue flowers. Spirits
-  roam the woods and hunt you as you look, so each run is a balance between
-  exploring for the next flower and staying out of reach.
+  Forest Escape drops you into a dark forest with nothing but a flashlight and
+  one job: find seven blue flowers. It plays as first-person survival horror,
+  and while you search between the trees, spirits roam the woods and hunt you as
+  you look.
 
 
-  The flashlight is the main tool for finding your way, which keeps the view
-  narrow and the tension high. Collecting the flowers is the clear goal, and the
-  pursuing spirits turn every stretch of open ground into a risk. The game runs
-  in the browser and is built with Three.js.
+  The flashlight is your main tool for finding the way, which keeps the view
+  narrow and the tension high. The pursuing spirits turn every stretch of open
+  ground into a risk, so the search becomes a trade between pushing on toward
+  the next flower and staying out of their reach.
 
 
-  According to the creator, the game was built with Cursor and Claude, using
-  Three.js for the 3D forest and its flashlight lighting.
+  The creator credits Cursor and Claude for the build, with Three.js handling
+  the dark 3D forest and its flashlight lighting in the browser. It is a
+  single-player game, so the only company in the woods is the spirits.
 play:
   url: https://escape.alexandre-grisey.fr
   embeddable: true

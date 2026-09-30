@@ -2,21 +2,22 @@ slug: beaststorm
 title: Beaststorm
 tagline: Scout, expand, and command beast armies to destroy the enemy sanctuary.
 description: >-
-  Beaststorm is a lightweight fantasy real-time strategy game. You scout the
-  map, expand your territory, and harvest resources to build up your forces.
-  Each run is a contest between commanders, and it ends when one side's
-  sanctuary is destroyed.
+  A match of Beaststorm ends when one side's sanctuary falls. To get there, you
+  scout the map, expand your territory, harvest resources and build up an army
+  of beasts, then command it against the other commander.
 
 
-  The game centers on beast factions, so your army is made up of creatures
-  instead of typical soldiers. It aims for the pace of a quick, stripped-down
-  RTS, with the scouting, expansion, and economy loop associated with Age of
-  Empires II but in a smaller package. It runs in the browser in 3D, supports
-  multiplayer, and works on mobile.
+  It is a lightweight fantasy real-time strategy game, built with Codex and
+  played in 3D, with online multiplayer support, and it works on phones too. The
+  factions are beasts, so your forces are creatures instead of the usual
+  soldiers, and each match is a contest between commanders. It ranked 288th of
+  945 at Vibe Jam 2026.
 
 
-  The creator built it with Codex. It was entered in Vibe Jam 2026, where it
-  placed 288th out of 945 entries, and it is playable in a browser.
+  The scouting, expansion and economy loop is the one associated with Age of
+  Empires II, in a smaller package with a quick, stripped-down pace. All of it
+  builds toward one target: the enemy sanctuary, destroyed before yours goes
+  down.
 play:
   url: https://beaststorm.xyz
   embeddable: true

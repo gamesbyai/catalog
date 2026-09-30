@@ -2,22 +2,21 @@ slug: mass-chaos
 title: Mass Chaos
 tagline: Grab, carry and deliver mass across a tilting arena without falling off.
 description: >-
-  Mass Chaos is a multiplayer arena game played on a platform that works like a
-  scale. Players grab objects, carry them, shoot, and deliver them to score,
-  since the mass you gather is your score. Every step shifts the balance of the
-  arena, so movement matters as much as aim.
+  Mass Chaos is played on an arena that works like a scale. You grab objects,
+  carry them, shoot and deliver them to score, because the mass you gather is
+  your score, and every step you take shifts the balance of the platform under
+  everyone.
 
 
-  The central idea is that the arena itself reacts to what everyone does.
-  Picking up weight and moving it tips the world, which turns positioning into a
-  strategic choice. Falling off is the constant risk, so each delivery has to be
-  weighed against the stability of the ground under you. It also runs on mobile.
+  It was the creator's first attempt at making a game, partly to show their kids
+  that ideas can be turned into something real even without prior experience.
+  They made it with Claude Code for Vibe Jam 2026, and it runs on phones too.
 
 
-  It was entered in Vibe Jam 2026 and built in Three.js. The creator says it was
-  their first attempt at making a game, partly to show their kids that ideas can
-  be turned into something real even without prior experience. The creator built
-  it with Claude Code.
+  Since picking up weight and moving it tips the world, positioning becomes a
+  strategic choice and movement matters as much as aim. Falling off is the
+  constant risk, so every delivery has to be weighed against the ground under
+  you.
 play:
   url: https://mass-chaos.com
   embeddable: true

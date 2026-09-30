@@ -2,20 +2,21 @@ slug: battletank-360
 title: BattleTank 360
 tagline: Drive a tank around a globe and destroy enemies in orbital combat.
 description: >-
-  BattleTank 360 is a browser-based tank shooter set on a globe. The player
-  takes command of a tank and hunts down enemy targets in orbital combat, with
-  the stated goal of dominating the entire planet. Each run centers on seeking
-  out opponents and destroying them.
+  BattleTank 360 is a browser-based tank shooter where the battlefield is a
+  whole planet. You take command of a tank, drive it around the globe in orbital
+  combat, and seek out and destroy enemy targets, with the stated goal of
+  dominating the entire planet.
 
 
-  The spherical battlefield is the main hook. Instead of a flat arena, the
-  action wraps around a planet, which suggests combat from every angle and a
-  360-degree feel that matches the title. It is built with Three.js for
-  real-time 3D rendering and runs on mobile as well as desktop.
+  It is a single-player game that plays on phones as well as desktops. The
+  creator, marcelocorp, built it with Cursor and rendered it in real-time 3D
+  with Three.js, and it finished 191st of 945 at Vibe Jam 2026.
 
 
-  The game was an entry in Vibe Jam 2026, where it placed 191st out of 945
-  entries. The creator built it with Cursor. It is built for solo play.
+  The spherical battlefield is the hook. There is no flat arena here: the action
+  wraps around the planet, as the 360 in the title suggests, and finding the
+  next opponent means driving around the curve of the globe. Each run centers on
+  that hunt.
 play:
   url: https://battletank360.com
   embeddable: true

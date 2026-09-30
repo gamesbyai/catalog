@@ -2,20 +2,21 @@ slug: toybox-brawlers
 title: ToyBox Brawlers
 tagline: Fight one-on-one as a plush toy in a chaotic arena until one is left.
 description: >-
-  ToyBox Brawlers is a fast-paced one-on-one arena fighter where soft, cute toys
-  battle inside a toy box. Each match pits two toys against each other, and only
-  one makes it out. The action mixes brawling with platforming, so positioning
-  in the arena matters as much as landing hits.
+  ToyBox Brawlers is a fast-paced, one-on-one arena fighter starring plush toys.
+  Two soft, cute toys go into a toy box and only one makes it out. The action
+  mixes brawling with platforming, so positioning in the arena matters as much
+  as landing hits.
 
 
-  The contrast between the cuddly look and the savage fighting is the hook. The
-  creator cites Street Fighter and Toy Story as inspirations, and the game
-  blends the two ideas into a playful head-to-head duel. It supports multiplayer
-  and is playable on mobile.
+  The creator cites Street Fighter and Toy Story as inspirations. They started
+  the project after a friend decided to enter Vibe Jam 2026, built it in Phaser
+  with Cursor, and set it up for online multiplayer across phones and desktops.
+  It placed 314th of 945 entries.
 
 
-  It was built in Phaser as an entry in Vibe Jam 2026. The creator says they
-  used Cursor and started the project after a friend decided to enter the jam.
+  The contrast between the cuddly look and the savage fighting is the hook: the
+  toys are soft, and the fights are not. It makes for a playful head-to-head
+  duel that ends when one toy is left.
 play:
   url: https://toyboxbrawlers.com
   embeddable: true

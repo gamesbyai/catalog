@@ -2,21 +2,20 @@ slug: clear-the-strait
 title: Clear the Strait
 tagline: Clear mines from the Strait of Hormuz in a shared multiplayer Minesweeper
 description: >-
-  Clear the Strait is a multiplayer take on Minesweeper set in the Strait of
-  Hormuz. Players reveal tiles across a shared waterway, reading number clues to
-  work out where mines are hidden and marking them so ships can pass. A run is
-  about clearing the channel without hitting a mine.
+  Clear the Strait is multiplayer Minesweeper on a shared board, set in the
+  Strait of Hormuz. You reveal tiles across the waterway, read the number clues
+  to work out where the mines are hidden and mark them so ships can pass.
 
 
-  The game swaps the usual empty grid for a geopolitical setting, and the shared
-  board makes it a cooperative or competitive effort. It draws on classic logic
-  deduction and adds a strategic layer from playing alongside others. It also
-  runs on mobile devices.
+  The creator, CodyBrown, states it was built with Windsurf, the AI coding
+  editor, and it is drawn on an HTML canvas and works on phones as well as
+  desktops. Vibe Jam 2026 ranked it 313th of 945.
 
 
-  It was entered in Vibe Jam 2026 and drawn on an HTML canvas. The creator
-  states it was built with Windsurf, the AI coding editor, as part of the jam
-  entry.
+  The setting swaps the usual empty grid for a geopolitical one, and the shared
+  board makes clearing it a cooperative or competitive effort. The logic is
+  classic deduction, the strategy comes from playing alongside others, and a run
+  is about clearing the channel without hitting a mine.
 play:
   url: https://hormuz-94ql.vercel.app
   embeddable: true

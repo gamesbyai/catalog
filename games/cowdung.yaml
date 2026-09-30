@@ -2,20 +2,20 @@ slug: cowdung
 title: cowdung
 tagline: Fly around as a fly, taste the dung, and dodge the incoming splat.
 description: >-
-  cowdung puts you in the wings of a fly. The goal is to reach the dung and
-  taste it while keeping clear of the splat that can land on you. It is an
-  action game with a simulation flavor, played in a 3D scene rendered in the
-  browser.
+  In cowdung you play a fly in a 3D pasture. The goal is to reach the cow dung
+  and taste it. The threat is the incoming splat that can land on you, so every
+  approach is a gamble between getting a taste and getting flattened.
 
 
-  The premise is simple and a little gross, and the tone leans on that humor.
-  Avoiding the splat is the main source of tension, since a fly has to get close
-  to the food to score but pays for getting careless. The game supports
-  multiplayer, so other players can share the pasture.
+  It is an action game with a simulation flavor. The premise is simple and a
+  little gross, as the title promises, and the tone leans on that humor.
+  Multiplayer means other players can share the pasture with you at the same
+  time.
 
 
-  It was an entry in Vibe Jam 2026, where it placed 45th out of 945 entries. The
-  creator built it with Cursor, using Three.js for the 3D graphics.
+  Built by el_rei_gabriel with Cursor and Three.js, it placed 45th of 945 at
+  Vibe Jam 2026. The tension stays in one place: a fly has to get close to the
+  food to score, and a fly that gets careless pays for it.
 play:
   url: https://cowdung.vercel.app
   embeddable: true

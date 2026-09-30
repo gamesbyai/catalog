@@ -2,23 +2,21 @@ slug: rubble-kings
 title: Rubble Kings
 tagline: Stack physics blocks into a tall kingdom and knock down your rivals' towers.
 description: >-
-  Rubble Kings is a multiplayer strategy game built around physics-based blocks.
-  You construct your kingdom by stacking pieces, and the height of your
-  structure determines how much land you control. Building upward is the way to
-  expand, so every run comes down to how ambitious you are willing to be with
-  your tower.
-
-
-  The tension comes from the physics. A tall structure claims more territory,
-  but it is also easier to topple, and a single well-placed hit from an opponent
-  can send everything crashing down. Growth and defense pull against each other,
-  so stability matters as much as size.
+  In Rubble Kings, land comes from height. You stack physics-based blocks into a
+  kingdom, and the taller your structure stands, the more territory you control.
+  Building upward is the way to expand, so a match comes down to how ambitious
+  you are willing to be with your tower.
 
 
   The creator remembered a similar game from more than twenty years ago but
-  could never recall its name or track it down, so they made their own version.
-  It was built with Three.js, and the creator used Claude Code. It was entered
-  in Vibe Jam 2026.
+  could never recall its name or track it down, so they built their own with
+  Claude Code and Three.js.
+
+
+  The physics is where the strategy lives. A tall tower claims more land but is
+  easier to topple, and one well-placed hit from a rival can bring the whole
+  thing down. Rivals try to knock your tower over while you go after theirs, so
+  stability matters as much as size.
 play:
   url: https://pixelcrowngames.com/games/rubblekings
   embeddable: true

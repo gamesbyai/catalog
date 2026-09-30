@@ -2,23 +2,21 @@ slug: astroxite
 title: Astroxite
 tagline: Take jobs between alien settlements and build a life in a shared frontier.
 description: >-
-  Astroxite is a multiplayer frontier sandbox set among alien settlements.
-  Players pick up jobs from different towns, travel through the wilderness to
-  complete them, and earn standing with the communities they work for. Over time
-  a run becomes less about a single goal and more about deciding what kind of
-  life to build.
+  In Astroxite you take jobs from alien settlements, cross the wilderness to
+  finish them and earn standing with the towns you work for. It is a multiplayer
+  frontier sandbox that also runs on phones, and the wilderness between the hubs
+  is shared with other players.
 
 
-  The design is inspired by online MMOs such as Silkroad Online, and that shows
-  in its focus on reputation, travel between hubs, and a wilderness that other
-  players share with you. It combines adventure and RPG elements with open-ended
-  sandbox play, so progress comes from the jobs you choose and the places you
-  settle. It runs in the browser and supports mobile.
+  The creator points to online MMOs such as Silkroad Online as the inspiration,
+  and that shows in the weight on reputation and on travel between hubs. The
+  game was built with Claude Code, renders in Three.js and ranked 173rd of 945
+  at Vibe Jam 2026.
 
 
-  The game is built with Three.js, and the creator built it with Claude Code. It
-  was entered in the Vibe Jam 2026 event, where it placed among several hundred
-  submissions.
+  Over time, a run becomes less about a single goal and more about what kind of
+  life you build. Progress comes from the jobs you choose and the places you
+  settle, with adventure and RPG elements under the open-ended play.
 play:
   url: https://astroxite.com
   embeddable: true

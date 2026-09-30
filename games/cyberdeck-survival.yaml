@@ -2,22 +2,21 @@ slug: cyberdeck-survival
 title: Cyberdeck Survival
 tagline: Play cards, parry attacks, and outlast enemy waves in a cyberpunk arena.
 description: >-
-  Cyberdeck Survival is a cyberpunk arena survivor that blends deck-building
-  with action. The player fights off enemies in a closed arena, playing cards
-  and parrying incoming attacks to stay alive. A run ends when the boss goes
-  down and a portal opens to the next game.
+  Cyberdeck Survival mixes deck-building into a cyberpunk arena survivor. You
+  fight off waves of enemies in a closed arena by playing cards and parrying
+  incoming attacks, and a run ends when the boss goes down and a portal opens to
+  the next game.
 
 
-  The game pairs the horde-survival loop familiar from Vampire Survivors-style
-  games with card play, so each card use and each parry carries weight. Timing
-  defensive moves matters as much as choosing what to play, which keeps the
-  action from being simple auto-fire.
+  That portal connects it to other Vibe Jam 2026 games, so finishing a run sends
+  you on to the next one. The creator used Codex and the Phaser engine, set it
+  up to run on phones as well, and it placed 353rd of 945 in that jam.
 
 
-  The game was entered in Vibe Jam 2026, where it placed 353rd out of 945
-  entries. The creator built it with Codex, using Phaser, and it is set up to
-  run on mobile devices as well. The portal at the end connects it to other jam
-  games.
+  The horde-survival loop is familiar from Vampire Survivors-style games, but
+  here each card and each parry carries weight. Timing your defense matters as
+  much as choosing what to play, which keeps the action from turning into simple
+  auto-fire.
 play:
   url: https://elvlin.store/games/cyberdeck-survivor
   embeddable: true

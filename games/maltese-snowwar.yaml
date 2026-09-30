@@ -2,22 +2,21 @@ slug: maltese-snowwar
 title: maltese snowwar
 tagline: Fight snowball battles in a Maltese-themed remake of a classic Flash game
 description: >-
-  Maltese Snowwar is a replica of a classic Flash-era snowball fighting game,
-  reworked with a Maltese theme. Players take part in a snowy battle, aiming and
-  throwing snowballs at opponents while trying to avoid getting hit themselves.
-  The topic tags point to a peer-to-peer multiplayer setup for head-to-head
-  matches.
+  In maltese snowwar you fight a snowball battle: aim, throw at your opponents
+  and try not to get hit yourself. It is a replica of a classic Flash-era
+  snowball fighting game, reworked with a Maltese theme. It is a casual action
+  game, and it runs in the browser.
 
 
-  The main draw is the mix of nostalgic Flash gameplay and a Maltese setting,
-  which gives a familiar formula a different look. The repository is tagged with
-  netcode and p2p-game, suggesting that online play between players is a focus
-  of the project rather than an afterthought.
+  The creator states that the game was produced with Grok AI. The repository
+  topics mention Grok Build and Grok Imagine along with vibe-coding, which
+  points to AI for both the code and the visual assets.
 
 
-  The creator states that the game was produced with Grok AI, and the repository
-  topics mention Grok Build and Grok Imagine along with vibe-coding. That points
-  to an AI-driven workflow for both the code and the visual assets.
+  The draw is the mix of nostalgic Flash gameplay and a Maltese setting, which
+  gives a familiar formula a different look. The repository is also tagged with
+  netcode and p2p-game, which suggests head-to-head online matches between
+  players are a focus rather than an afterthought.
 play:
   url: https://maltese-snowwar.grok.me
   embeddable: true

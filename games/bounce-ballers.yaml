@@ -3,22 +3,21 @@ title: Bounce Ballers
 tagline: Score goals in a networked, platform-hopping soccer match against other
   players.
 description: >-
-  Bounce Ballers is a competitive soccer platformer for online multiplayer.
-  Players run and jump across platforms while trying to get the ball into the
-  opposing goal, so each match mixes side-scrolling movement with the
-  goal-scoring pressure of a sports contest.
+  Bounce Ballers is a competitive soccer platformer, played over the network.
+  You run and jump across platforms in a side-scrolling level, competing with
+  other players online to get the ball into the opposing goal.
 
 
-  The game is inspired by IDARB, which its creator played throughout college.
-  That original was built mostly around sharing one screen, so this version aims
-  to work properly over the internet. The creator also wants matches to be more
-  replayable through a progression system, and plans to give the game a personal
-  visual style.
+  The inspiration is IDARB, which the creator played throughout college. That
+  game was built mostly around sharing one screen, so this version is meant to
+  work properly over the internet, with every player on their own device. It was
+  made with Codex in the Phaser framework and came 308th of 945 at Vibe Jam
+  2026.
 
 
-  It was entered in Vibe Jam 2026, where it placed 308th out of 945 entries, and
-  is built with the Phaser framework. The creator built it with Codex from
-  OpenAI.
+  The creator wants matches to be more replayable through a progression system
+  and plans to give the game a personal visual style of its own. Each match
+  mixes platforming movement with the goal-scoring pressure of a sports contest.
 play:
   url: https://bounceballers.com
   embeddable: true

@@ -2,21 +2,21 @@ slug: crypt-raiders
 title: Crypt Raiders
 tagline: Shoot your way through a zombie graveyard, collecting loot and upgrades
 description: >-
-  Crypt Raiders is a 3D action shooter set in a graveyard overrun by zombies.
-  The player fights through the undead, picks up loot, and buys or finds
-  upgrades along the way. Each level is procedurally generated, so a run keeps
-  going into new layouts.
+  Crypt Raiders is a single-player 3D action shooter set in a graveyard overrun
+  by zombies. You shoot your way through the undead, pick up loot, and buy or
+  find upgrades as you go, and every level is procedurally generated, so a run
+  keeps moving into new layouts.
 
 
-  The loop centers on getting stronger while the pressure builds: loot and
-  upgrades feed back into the next fight, and the generated levels change the
-  ground you cover from one run to the next. It was entered in Vibe Jam 2026 and
-  placed 294th among 945 entries.
+  The creator, maybe_im_sam, says watching others start Vibe Jam 2026 made them
+  curious whether they could make a game too, and this is the answer, built with
+  Cursor on Three.js. It placed 294th of 945 in that jam.
 
 
-  The creator built it with Cursor, and it runs on Three.js. They said that
-  watching others start the jam made them curious whether they could make a game
-  too.
+  The loop is about getting stronger while the pressure from the zombies builds.
+  Loot and upgrades feed into the next fight against the undead, and because the
+  levels are procedurally generated, the ground you cover changes from one run
+  to the next.
 play:
   url: https://cryptraiders.xyz
   embeddable: true

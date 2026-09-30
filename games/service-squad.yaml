@@ -2,22 +2,21 @@ slug: service-squad
 title: Service Squad
 tagline: Manage a repair business and fix broken things yourself in first person
 description: >-
-  Service Squad is a hybrid of management strategy and hands-on repair action.
-  The player runs a service operation from above, then switches to a
-  first-person view to carry out the repairs personally. Balancing the business
-  side with the fieldwork is the core of each session.
+  In Service Squad you run a repair business from above, then switch to a
+  first-person view to fix the broken things yourself. Half of it is management
+  and half is hands-on repair, and a session is about balancing the business
+  side against the fieldwork.
 
 
-  The mix of tycoon-style decisions and first-person repair work sets it apart
-  from a typical management sim. Instead of only watching numbers, the player
-  steps into the job itself. It is built for casual play and runs on mobile as
-  well.
+  Tycoon-style decisions sit on one side and first-person repair work on the
+  other. Instead of only watching numbers, you step into the job itself, which
+  separates it from a typical management sim. It is built for casual sessions,
+  on a phone as well as a desktop.
 
 
-  It was made by a solo developer using Flutter and Dart for the frontend and a
-  Node.js backend. The developer says the project was a way to learn how new AI
-  tools work, and it was entered in Vibe Jam 2026. The creator built it with
-  Antigravity.
+  A solo developer made it for Vibe Jam 2026 with Flutter and Dart on the
+  frontend and a Node.js backend, using Antigravity. They say the project was a
+  way to learn how new AI tools work.
 play:
   url: https://service-sim.netlify.app
   embeddable: true
