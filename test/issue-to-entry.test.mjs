@@ -13,7 +13,7 @@ const body = (over = {}) => {
     'Repository (optional)': '_No response_',
     'Game title': 'Sky Hop',
     'Creator name': 'Ada',
-    'Creator handle (optional)': 'ada',
+    'Profile link (optional)': 'https://twitter.com/ada_makes/',
     Genres: 'Platformer, Puzzle',
     Players: 'Single player',
     'How much of the code did AI write?': 'Most of it',
@@ -57,6 +57,7 @@ test('a valid submission becomes a live entry (the merge is the approval) that f
   assert.equal(r.entry.made.aiShare, 'most');
   assert.equal(r.entry.made.evidence, 'creator');
   assert.deepEqual(r.entry.provenance, { foundVia: 'form', submittedBy: '#12' });
+  assert.deepEqual(r.entry.creator, { name: 'Ada', handle: 'ada-makes', x: 'ada_makes' });
   writeFileSync(join(dir, 'games', 'sky-hop.yaml'), stringify(r.entry));
   // The intended gate: the review card commits the drafted description; until then validate fails on it alone.
   const problems = validate(dir).problems;
@@ -120,5 +121,54 @@ test('the engine is optional: "Not sure" or an unknown name leaves it out (noted
 test('every label the converter reads exists in the issue form', async () => {
   const { issueForm } = await import('../scripts/issue-form.mjs');
   const labels = issueForm('.').body.filter((b) => b.attributes?.label).map((b) => b.attributes.label);
-  for (const l of ['Play URL', 'Repository (optional)', 'Game title', 'Creator name', 'Creator handle (optional)', 'Genres', 'Players', 'How much of the code did AI write?', 'AI models used', 'AI tools used', 'Engine or framework', 'How you made it (600 characters max)', 'Permission']) assert.ok(labels.includes(l), l);
+  // "Creator handle (optional)" is still read, for issues filed before the profile link replaced it.
+  for (const l of ['Play URL', 'Repository (optional)', 'Game title', 'Creator name', 'Profile link (optional)', 'Genres', 'Players', 'How much of the code did AI write?', 'AI models used', 'AI tools used', 'Engine or framework', 'How you made it (600 characters max)', 'Permission']) assert.ok(labels.includes(l), l);
+  assert.ok(!labels.includes('Creator handle (optional)'));
+});
+
+test('the issue form asks for one optional profile link and names every accepted site', async () => {
+  const { issueForm } = await import('../scripts/issue-form.mjs');
+  const field = issueForm('.').body.find((b) => b.attributes?.label === 'Profile link (optional)');
+  assert.equal(field.type, 'input');
+  assert.equal(field.validations.required, false);
+  assert.match(field.attributes.description, /X, GitHub, itch\.io, YouTube, Bluesky, Reddit, Twitch, TikTok, Instagram, LinkedIn or Threads/);
+});
+
+test('the profile link: X and YouTube handles get their own fields, other profiles go in links, and the handle names the creator page', () => {
+  const ctx = { ...loadContext(repo()), today: '2026-09-30', issue: 20 };
+  const creator = (link) => toEntry(parseIssue(body({ 'Profile link (optional)': link })), ctx).entry.creator;
+  assert.deepEqual(creator('https://www.youtube.com/@Ada.Makes'), { name: 'Ada', handle: 'ada-makes', youtube: '@Ada.Makes' });
+  assert.deepEqual(creator('https://github.com/ada-makes/'), { name: 'Ada', handle: 'ada-makes', links: ['https://github.com/ada-makes'] });
+  assert.deepEqual(creator('https://ada-games.itch.io'), { name: 'Ada', handle: 'ada-games', links: ['https://ada-games.itch.io'] });
+  assert.deepEqual(creator('https://bsky.app/profile/ada.bsky.social'), { name: 'Ada', handle: 'ada', links: ['https://bsky.app/profile/ada.bsky.social'] });
+  assert.deepEqual(creator('https://www.reddit.com/u/Ada_Makes'), { name: 'Ada', handle: 'ada-makes', links: ['https://reddit.com/user/Ada_Makes'] });
+  // A channel ID names no one: the creator page takes the creator's name.
+  assert.deepEqual(creator('https://www.youtube.com/channel/UCabcdefghijklmnopqrstuv'), { name: 'Ada', handle: 'ada', links: ['https://www.youtube.com/channel/UCabcdefghijklmnopqrstuv'] });
+  assert.deepEqual(creator('_No response_'), { name: 'Ada', handle: 'ada' });
+});
+
+test('a profile link that is not a profile page on an allowed site is left out with a note, never a failure', () => {
+  const ctx = { ...loadContext(repo()), today: '2026-09-30', issue: 21 };
+  for (const link of ['https://x.com/ada_makes/status/123', 'https://evil.example.com/ada', 'https://x.com.evil.test/ada', 'javascript:alert(1)', 'ada_makes']) {
+    const r = toEntry(parseIssue(body({ 'Profile link (optional)': link })), ctx);
+    assert.equal(r.error, undefined, link);
+    assert.deepEqual(r.entry.creator, { name: 'Ada', handle: 'ada' }, link);
+    assert.ok(r.notes.some((n) => /profile link/.test(n)), link);
+  }
+});
+
+test('issues filed before the profile link still convert their "Creator handle (optional)"', () => {
+  const ctx = { ...loadContext(repo()), today: '2026-09-30', issue: 22 };
+  const { 'Profile link (optional)': _, ...older } = parseIssue(body());
+  assert.deepEqual(toEntry({ ...older, 'Creator handle (optional)': 'Ada Games' }, ctx).entry.creator, { name: 'Ada', handle: 'ada-games' });
+  assert.deepEqual(toEntry(older, ctx).entry.creator, { name: 'Ada', handle: 'ada' });
+});
+
+test('an entry with a profile link passes validation once its description is written', () => {
+  const dir = repo();
+  for (const [i, link] of ['https://x.com/ada_makes', 'https://www.youtube.com/@ada.makes', 'https://ada-games.itch.io'].entries()) {
+    const r = toEntry(parseIssue(body({ 'Profile link (optional)': link, 'Play URL': `https://sky-hop-${i}.example.com/` })), { ...loadContext(dir), today: '2026-09-30', issue: 30 + i });
+    writeFileSync(join(dir, 'games', `${r.slug}.yaml`), stringify({ ...r.entry, tagline: 'Hop between floating islands before they sink', description: `${'Sky Hop is a platformer. '.repeat(20)}\n\n${'Each island sinks. '.repeat(10)}` }));
+  }
+  assert.deepEqual(validate(dir).problems, []);
 });
