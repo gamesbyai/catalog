@@ -22,6 +22,9 @@ play:
   url: https://vesper.mansgullberg.chatgpt.site/
   platforms:
     - browser
+  embedPermission:
+    by: submission
+    date: 2026-09-30
 creator:
   name: kvickan
   handle: kvickan
