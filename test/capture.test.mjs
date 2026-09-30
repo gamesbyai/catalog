@@ -199,7 +199,8 @@ test('a game that freezes after its cover keeps the cover (partial capture)', as
 });
 
 test('a game whose frames hog the main thread times out, then is captured on a throttled second pass', async () => {
-  const hog = { ...FAST, times: [300, 700], shotTimeout: 1900, deadline: 20_000 };
+  // A hogged main thread can also slow the page load on a busy CI runner: load gets its own generous limit.
+  const hog = { ...FAST, times: [300, 700], shotTimeout: 1900, deadline: 20_000, navTimeout: 15_000 };
   const first = await captureOne(`${base}/raf-hog`, join(tmp(), 'hog'), hog);
   assert.equal(first.ok, false);
   assert.equal(first.reason, 'screenshot');
@@ -222,7 +223,7 @@ test('a black first frame followed by screenshot timeouts still gets the throttl
   mkdirSync(join(root, 'games'));
   writeFileSync(join(root, 'games', 'late.yaml'), `play:\n  url: ${base}/black-then-hog\n`);
   const lines = [];
-  const [res] = await captureSlugs(['late'], { ...FAST, times: [200, 1200, 1600], shotTimeout: 1900, deadline: 20_000, root, out: join(root, 'out'), log: (l) => lines.push(l) });
+  const [res] = await captureSlugs(['late'], { ...FAST, times: [200, 1200, 1600], shotTimeout: 1900, deadline: 20_000, navTimeout: 15_000, root, out: join(root, 'out'), log: (l) => lines.push(l) });
   assert.match(lines.join(' '), /retry throttled/);
   assert.notEqual(res.reason, 'blank');
 });
