@@ -24,7 +24,7 @@ play:
     - browser
 repo: https://github.com/KJLKurt/waterslide-game-sonnet-5.5
 creator:
-  name: KJLKurt
+  name: Kurt Lietzau
   handle: kjlkurt
 made:
   models:

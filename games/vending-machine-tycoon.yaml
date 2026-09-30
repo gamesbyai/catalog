@@ -24,9 +24,9 @@ play:
     - browser
     - mobile
 creator:
-  name: iampiet
-  handle: iampiet
-  x: iampiet
+  name: piet
+  handle: repiet
+  x: repiet
 made:
   models: []
   providers:

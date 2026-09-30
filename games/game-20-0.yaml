@@ -22,8 +22,11 @@ play:
   platforms:
     - browser
 creator:
-  name: Unknown creator
-  handle: game-20-0
+  name: Gamerank
+  handle: gamerank
+  x: 20_0football
+  links:
+    - https://gamerank.com
 made:
   models: []
   providers:

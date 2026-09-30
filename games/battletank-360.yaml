@@ -24,9 +24,9 @@ play:
     - browser
     - mobile
 creator:
-  name: marcelocorp
-  handle: marcelocorp
-  x: marcelocorp
+  name: Marcelo Pastorino
+  handle: builtbymarcelo
+  x: BuiltByMarcelo
 made:
   models: []
   tools:

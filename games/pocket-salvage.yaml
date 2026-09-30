@@ -22,8 +22,10 @@ play:
   platforms:
     - browser
 creator:
-  name: Unknown creator
-  handle: pocket-salvage
+  name: RaresKeY & Dale Mooney
+  handle: rareskey
+  links:
+    - https://github.com/RaresKeY
 made:
   models: []
   providers:

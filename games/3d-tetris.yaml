@@ -46,6 +46,8 @@ media:
 dates:
   added: 2026-09-29
   updated: 2026-09-29
-status: live
+status: draft
 provenance:
   foundVia: scout:awesome-cc0
+  flags:
+    - "unlisted 2026-09-30: no creator credit found"

@@ -23,8 +23,11 @@ play:
   platforms:
     - browser
 creator:
-  name: Unknown creator
-  handle: flight-simulator-2025
+  name: Pieter Levels
+  handle: levelsio
+  x: levelsio
+  links:
+    - https://levels.io
 made:
   models:
     - grok-3

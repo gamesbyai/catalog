@@ -24,8 +24,12 @@ play:
   platforms:
     - browser
 creator:
-  name: Unknown creator
-  handle: three-js-quake
+  name: Mr.doob
+  handle: mrdoob
+  x: mrdoob
+  links:
+    - https://mrdoob.com
+    - https://github.com/mrdoob
 made:
   models: []
   providers:

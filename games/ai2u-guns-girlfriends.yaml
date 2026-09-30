@@ -24,8 +24,11 @@ play:
   platforms:
     - browser
 creator:
-  name: Unknown creator
-  handle: ai2u-guns-girlfriends
+  name: DGSpitzer
+  handle: dgspitzer
+  x: DGSpitzer
+  links:
+    - https://helixngc7293.itch.io
 made:
   models: []
   providers:
