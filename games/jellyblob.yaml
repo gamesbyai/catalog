@@ -33,6 +33,9 @@ play:
     - Hold click, Shift or right mouse to surge
     - Keys 1–4 for emotes
     - "Touch: drag to steer, HOP and SURGE buttons"
+  embedPermission:
+    by: submission
+    date: 2026-09-30
 creator:
   name: Kvickan
   handle: kvickan

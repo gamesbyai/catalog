@@ -24,8 +24,10 @@ play:
   controls:
     - Scroll
 creator:
-  name: Unknown creator
-  handle: doomscroll
+  name: David Friedman
+  handle: david-friedman
+  links:
+    - https://ironicsans.ghost.io
 made:
   models:
     - gpt-5

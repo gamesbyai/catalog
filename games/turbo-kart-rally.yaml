@@ -25,8 +25,9 @@ play:
 repo: https://github.com/bridge-mind/turbo-kart-rally
 license: MIT
 creator:
-  name: bridge-mind
+  name: BridgeMind
   handle: bridge-mind
+  x: bridgemindai
 made:
   models:
     - claude-opus-5-5

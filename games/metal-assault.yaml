@@ -25,7 +25,7 @@ play:
     - browser
 repo: https://github.com/AndreaZero/metal-assault-game-claude-fable
 creator:
-  name: AndreaZero
+  name: Andrea Vitolo
   handle: andreazero
 made:
   models: []

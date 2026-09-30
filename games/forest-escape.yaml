@@ -23,8 +23,10 @@ play:
   platforms:
     - browser
 creator:
-  name: Unknown creator
-  handle: forest-escape
+  name: Alexandre Grisey
+  handle: alexandre-grisey
+  links:
+    - https://alexandre-grisey.fr
 made:
   models: []
   providers:

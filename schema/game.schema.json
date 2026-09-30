@@ -55,6 +55,26 @@
         "embeddable": {
           "type": "boolean"
         },
+        "embedPermission": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "by",
+            "date"
+          ],
+          "properties": {
+            "by": {
+              "enum": [
+                "submission",
+                "email"
+              ]
+            },
+            "date": {
+              "type": "string",
+              "format": "date"
+            }
+          }
+        },
         "platforms": {
           "type": "array",
           "minItems": 1,
@@ -292,6 +312,44 @@
         "video": {
           "type": "string",
           "pattern": "^[A-Za-z0-9_-]{11}$"
+        }
+      }
+    },
+    "videos": {
+      "type": "array",
+      "maxItems": 4,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "youtube",
+          "title",
+          "channel",
+          "added"
+        ],
+        "properties": {
+          "youtube": {
+            "type": "string",
+            "pattern": "^[A-Za-z0-9_-]{11}$"
+          },
+          "title": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 120
+          },
+          "channel": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 80
+          },
+          "channelId": {
+            "type": "string",
+            "pattern": "^UC[A-Za-z0-9_-]{22}$"
+          },
+          "added": {
+            "type": "string",
+            "format": "date"
+          }
         }
       }
     },

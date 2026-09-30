@@ -29,7 +29,7 @@ play:
     - Orbit camera in 3D view
 repo: https://github.com/yortch/chess3dastra
 creator:
-  name: yortch
+  name: Jorge Balderas
   handle: yortch
 made:
   models:

@@ -8,6 +8,7 @@ import { readFileSync, readdirSync, existsSync } from 'node:fs';
 import { join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { parse, stringify } from 'yaml';
+import { parseProfile, allowedList } from './profiles.mjs';
 
 /** `### Label\n\nvalue` sections → { Label: value }. The first section with a label wins. */
 export function parseIssue(body) {
@@ -54,6 +55,23 @@ export function loadContext(dir = '.') {
   };
 }
 
+/** The creator page slug from a profile's username. A YouTube channel ID or a Bluesky DID names no one: no slug. */
+const handleFrom = (p) => (!p || p.url.includes('/channel/') || p.handle.startsWith('did:') ? '' : kebab(p.handle.replace(/\.bsky\.social$/, '')));
+
+/** The creator block: X and YouTube handles go in their own fields, any other profile in links. */
+function creatorOf(f, creatorName, issue, notes) {
+  const raw = line(f['Profile link (optional)'], 300);
+  const profile = raw ? parseProfile(raw) : null;
+  if (raw && !profile) notes.push(`The profile link was not a profile page on ${allowedList()}, so it was left out.`);
+  // Issues filed before the profile link existed have "Creator handle (optional)" instead.
+  const handle = handleFrom(profile) || kebab(line(f['Creator handle (optional)'], 40)) || kebab(creatorName) || `creator-${issue}`;
+  const creator = { name: creatorName, handle };
+  if (profile?.kind === 'x') creator.x = profile.handle;
+  else if (profile?.kind === 'youtube' && profile.label.startsWith('@')) creator.youtube = profile.label;
+  else if (profile) creator.links = [profile.url];
+  return creator;
+}
+
 const PLAYERS = { 'single player': 'single', 'local multiplayer': 'local', 'online multiplayer': 'online' };
 const SHARE = { 'all of it': 'all', 'most of it': 'most', 'some of it': 'some' };
 
@@ -93,9 +111,10 @@ export function toEntry(f, { names, playUrls, slugs, today, issue }) {
     title,
     tagline: 'Submitted by its creator; the description is added during review.',
     description: '',
-    play: { url: playUrl, platforms: ['browser'] },
+    // The consent box (since 2026-09-30) also allows our player; older issues give no such permission.
+    play: { url: playUrl, platforms: ['browser'], ...(/may show it in its player/i.test(f.Permission ?? '') ? { embedPermission: { by: 'submission', date: today } } : {}) },
     ...(repo ? { repo } : {}),
-    creator: { name: creatorName, handle: kebab(line(f['Creator handle (optional)'], 40)) || kebab(creatorName) || `creator-${issue}` },
+    creator: creatorOf(f, creatorName, issue, notes),
     made: {
       models: pick('models', f['AI models used']),
       tools: pick('tools', f['AI tools used']),
@@ -112,6 +131,10 @@ export function toEntry(f, { names, playUrls, slugs, today, issue }) {
     provenance: { foundVia: 'form', submittedBy: `#${issue}` },
   };
   if (!entry.made.notes) delete entry.made.notes;
+  // Models, tools or an engine the form doesn't list: a note for the reviewer (Recipe G), never a term in the entry.
+  // Issues filed before the field existed simply have none.
+  const otherTerms = line(f['Other AI models, tools or engine (optional)'], 120);
+  if (otherTerms) notes.push(`New term requested: ${otherTerms}`);
   return { slug, entry, notes };
 }
 

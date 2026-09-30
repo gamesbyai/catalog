@@ -1,0 +1,49 @@
+name: videos
+# Weekly: YouTube videos whose description links a listed game's page on gamesbyai.win become one PR (videos/<date>)
+# that adds them to those games' `videos`. Titles and channel names are the channels' own, untrusted text: stored as
+# data, escaped in the PR body, rendered as text on the site. Nothing goes live without review; merging is the approval.
+# The PR is opened with the GitHub App's token so validate runs on it.
+on:
+  schedule:
+    - cron: '23 6 * * 1'
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: videos
+  cancel-in-progress: false
+jobs:
+  find:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v5
+        with: { ref: main, persist-credentials: false }
+      - uses: actions/setup-node@v5
+        with: { node-version: 22 }
+      - run: npm ci --ignore-scripts --no-audit --no-fund
+      - name: Find videos that link game pages
+        id: find
+        env:
+          YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
+        run: node scripts/find-videos.mjs --body "$RUNNER_TEMP/body.md"
+      - uses: actions/create-github-app-token@v2
+        if: steps.find.outputs.count != '0'
+        id: app
+        with:
+          app-id: ${{ secrets.GH_APP_ID }}
+          private-key: ${{ secrets.GH_APP_PRIVATE_KEY }}
+      - name: Open the pull request
+        if: steps.find.outputs.count != '0'
+        env:
+          GH_TOKEN: ${{ steps.app.outputs.token }}
+        run: |
+          day=$(date -u +%F)
+          branch="videos/$day"
+          git config user.name "gamesbyai-bot[bot]"
+          git config user.email "gamesbyai-bot[bot]@users.noreply.github.com"
+          git checkout -b "$branch"
+          git add games/
+          git commit -m "Videos that link game pages ($day)"
+          git push "https://x-access-token:${GH_TOKEN}@github.com/${GITHUB_REPOSITORY}.git" "$branch"
+          gh pr create --repo "$GITHUB_REPOSITORY" --base main --head "$branch" --title "Videos: $day" --body-file "$RUNNER_TEMP/body.md"

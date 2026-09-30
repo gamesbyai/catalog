@@ -5,6 +5,7 @@ import { readFileSync, writeFileSync, mkdirSync } from 'node:fs';
 import { join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { parse, stringify } from 'yaml';
+import { allowedList } from './profiles.mjs';
 
 export const FORM_PATH = '.github/ISSUE_TEMPLATE/submit-game.yml';
 
@@ -23,18 +24,19 @@ export function issueForm(dir = '.') {
       input('repo_url', 'Repository (optional)', 'https://github.com/owner/repo'),
       input('title', 'Game title', '', true),
       input('creator', 'Creator name', '', true),
-      input('handle', 'Creator handle (optional)', 'Your usual username, for your creator page'),
+      input('profile_url', 'Profile link (optional)', `A link to your profile on ${allowedList()}. It shows on your game page.`),
       dropdown('genres', 'Genres', names('genres'), { multiple: true, required: true }),
       dropdown('players', 'Players', ['Single player', 'Local multiplayer', 'Online multiplayer'], { required: true }),
       dropdown('ai_share', 'How much of the code did AI write?', ['All of it', 'Most of it', 'Some of it'], { required: true }),
       dropdown('models', 'AI models used', ['Not sure', ...names('models')], { multiple: true }),
       dropdown('tools', 'AI tools used', ['Not sure', ...names('tools')], { multiple: true }),
       dropdown('engine', 'Engine or framework', ['Not sure', ...names('engines')]),
+      input('other_terms', 'Other AI models, tools or engine (optional)', "AI models, tools or an engine missing above, with a link to the maker's page if you have one."),
       { type: 'textarea', id: 'how_made', attributes: { label: 'How you made it (600 characters max)' }, validations: { required: true } },
       {
         type: 'checkboxes',
         id: 'permission',
-        attributes: { label: 'Permission', options: [{ label: "I made this game or have the creator's permission, and I agree to the editorial policy.", required: true }] },
+        attributes: { label: 'Permission', options: [{ label: "I made this game or have the creator's permission. GamesByAI may show it in its player, and I agree to the editorial policy.", required: true }] },
       },
     ],
   };

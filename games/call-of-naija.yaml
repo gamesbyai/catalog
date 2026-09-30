@@ -32,9 +32,8 @@ play:
     - Space jump
     - R reload
     - E interact/revive
-repo: https://github.com/bigbadbillion/game
 creator:
-  name: bigbadbillion
+  name: Ugo Nwune
   handle: bigbadbillion
 made:
   models:
@@ -45,7 +44,6 @@ made:
   aiShare: unknown
   source: Repository README
   evidence: repo
-  evidenceUrl: https://github.com/bigbadbillion/game
 tech:
   engine: threejs
   multiplayer: online

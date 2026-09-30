@@ -23,8 +23,11 @@ play:
   platforms:
     - browser
 creator:
-  name: Unknown creator
-  handle: oyster-arcade
+  name: Oyster
+  handle: oyster
+  links:
+    - https://oyster.to
+    - https://github.com/mattslight
 made:
   models: []
   providers:

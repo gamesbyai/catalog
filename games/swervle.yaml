@@ -22,8 +22,10 @@ play:
   platforms:
     - browser
 creator:
-  name: Unknown creator
+  name: Swervle
   handle: swervle
+  links:
+    - https://swervle.com
 made:
   models:
     - claude-opus-5

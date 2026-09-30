@@ -22,8 +22,10 @@ play:
   platforms:
     - browser
 creator:
-  name: I dont have one
-  handle: i-dont-have-one
+  name: charliegkoch-design
+  handle: charliegkoch-design
+  links:
+    - https://github.com/charliegkoch-design
 made:
   models: []
   tools:

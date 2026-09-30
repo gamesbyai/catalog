@@ -35,10 +35,10 @@ body:
     validations:
       required: true
   - type: input
-    id: handle
+    id: profile_url
     attributes:
-      label: Creator handle (optional)
-      description: Your usual username, for your creator page
+      label: Profile link (optional)
+      description: A link to your profile on X, GitHub, itch.io, YouTube, Bluesky, Reddit, Twitch, TikTok, Instagram, LinkedIn or Threads. It shows on your game page.
     validations:
       required: false
   - type: dropdown
@@ -247,6 +247,13 @@ body:
         - WebGPU
     validations:
       required: false
+  - type: input
+    id: other_terms
+    attributes:
+      label: Other AI models, tools or engine (optional)
+      description: AI models, tools or an engine missing above, with a link to the maker's page if you have one.
+    validations:
+      required: false
   - type: textarea
     id: how_made
     attributes:
@@ -258,5 +265,5 @@ body:
     attributes:
       label: Permission
       options:
-        - label: I made this game or have the creator's permission, and I agree to the editorial policy.
+        - label: I made this game or have the creator's permission. GamesByAI may show it in its player, and I agree to the editorial policy.
           required: true

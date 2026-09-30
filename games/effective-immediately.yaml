@@ -23,9 +23,9 @@ play:
   platforms:
     - browser
 creator:
-  name: insomni4_jpg
-  handle: insomni4-jpg
-  x: insomni4_jpg
+  name: Lucas Teixeira
+  handle: lucastex-ai
+  x: lucastex_ai
 made:
   models: []
   providers:

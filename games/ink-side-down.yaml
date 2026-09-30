@@ -23,8 +23,10 @@ play:
   platforms:
     - browser
 creator:
-  name: Unknown creator
-  handle: ink-side-down
+  name: Arkai
+  handle: arkai
+  links:
+    - https://arkai.win
 made:
   models: []
   providers:
