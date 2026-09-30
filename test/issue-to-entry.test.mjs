@@ -118,11 +118,48 @@ test('the engine is optional: "Not sure" or an unknown name leaves it out (noted
   assert.equal(toEntry(older, ctx).entry.tech.engine, undefined, 'issues filed before the field existed still convert');
 });
 
+test('models, tools or an engine we do not list become a note for the reviewer, never a term in the entry', () => {
+  const ctx = { ...loadContext(repo()), today: '2026-09-30', issue: 40 };
+  const plain = toEntry(parseIssue(body()), ctx);
+  const r = toEntry(parseIssue(body({ 'Other AI models, tools or engine (optional)': 'Nova Coder 2 <b>(https://nova.example/)</b>' })), ctx);
+  assert.equal(r.error, undefined);
+  assert.ok(r.notes.includes('New term requested: Nova Coder 2 (https://nova.example/)'), r.notes.join('\n'));
+  assert.deepEqual(r.entry, plain.entry, 'the entry is the same as without the field');
+  assert.doesNotMatch(JSON.stringify(r.entry), /Nova/);
+  const long = toEntry(parseIssue(body({ 'Other AI models, tools or engine (optional)': 'n'.repeat(500) })), ctx);
+  assert.ok(long.notes.includes(`New term requested: ${'n'.repeat(120)}`), 'cut to 120 characters');
+});
+
+test('an empty "Other AI models, tools or engine" adds no note, and issues filed before the field still convert', () => {
+  const ctx = { ...loadContext(repo()), today: '2026-09-30', issue: 41 };
+  for (const v of ['_No response_', '   ']) {
+    const r = toEntry(parseIssue(body({ 'Other AI models, tools or engine (optional)': v })), ctx);
+    assert.equal(r.error, undefined, v);
+    assert.ok(!r.notes.some((n) => /New term/.test(n)), v);
+  }
+  const older = parseIssue(body());
+  assert.ok(!('Other AI models, tools or engine (optional)' in older), 'the old body has no such heading');
+  const r = toEntry(older, ctx);
+  assert.equal(r.error, undefined);
+  assert.equal(r.slug, 'sky-hop');
+  assert.deepEqual(r.notes, []);
+});
+
+test('the issue form asks for other models, tools or an engine in one optional field, right after the engine', async () => {
+  const { issueForm } = await import('../scripts/issue-form.mjs');
+  const items = issueForm('.').body;
+  const i = items.findIndex((b) => b.attributes?.label === 'Other AI models, tools or engine (optional)');
+  assert.equal(items[i].type, 'input');
+  assert.equal(items[i].validations.required, false);
+  assert.equal(items[i - 1].attributes.label, 'Engine or framework');
+  assert.match(items[i].attributes.description, /missing above, with a link to the maker's page/);
+});
+
 test('every label the converter reads exists in the issue form', async () => {
   const { issueForm } = await import('../scripts/issue-form.mjs');
   const labels = issueForm('.').body.filter((b) => b.attributes?.label).map((b) => b.attributes.label);
   // "Creator handle (optional)" is still read, for issues filed before the profile link replaced it.
-  for (const l of ['Play URL', 'Repository (optional)', 'Game title', 'Creator name', 'Profile link (optional)', 'Genres', 'Players', 'How much of the code did AI write?', 'AI models used', 'AI tools used', 'Engine or framework', 'How you made it (600 characters max)', 'Permission']) assert.ok(labels.includes(l), l);
+  for (const l of ['Play URL', 'Repository (optional)', 'Game title', 'Creator name', 'Profile link (optional)', 'Genres', 'Players', 'How much of the code did AI write?', 'AI models used', 'AI tools used', 'Engine or framework', 'Other AI models, tools or engine (optional)', 'How you made it (600 characters max)', 'Permission']) assert.ok(labels.includes(l), l);
   assert.ok(!labels.includes('Creator handle (optional)'));
 });
 

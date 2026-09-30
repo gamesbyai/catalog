@@ -247,6 +247,13 @@ body:
         - WebGPU
     validations:
       required: false
+  - type: input
+    id: other_terms
+    attributes:
+      label: Other AI models, tools or engine (optional)
+      description: AI models, tools or an engine missing above, with a link to the maker's page if you have one.
+    validations:
+      required: false
   - type: textarea
     id: how_made
     attributes:

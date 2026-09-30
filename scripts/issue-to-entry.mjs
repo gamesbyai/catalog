@@ -130,6 +130,10 @@ export function toEntry(f, { names, playUrls, slugs, today, issue }) {
     provenance: { foundVia: 'form', submittedBy: `#${issue}` },
   };
   if (!entry.made.notes) delete entry.made.notes;
+  // Models, tools or an engine the form doesn't list: a note for the reviewer (Recipe G), never a term in the entry.
+  // Issues filed before the field existed simply have none.
+  const otherTerms = line(f['Other AI models, tools or engine (optional)'], 120);
+  if (otherTerms) notes.push(`New term requested: ${otherTerms}`);
   return { slug, entry, notes };
 }
 
