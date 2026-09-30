@@ -31,6 +31,7 @@ made:
   providers:
     - xai
   tools:
+    - grok-build
     - grok-app
   aiShare: most
   source: GitHub repository README
@@ -48,7 +49,7 @@ media:
     - games/maltese-snowwar/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-09-29
+  updated: 2026-09-30
 status: live
 provenance:
   foundVia: scout:github

@@ -39,7 +39,8 @@ made:
     - claude-opus-5-5
   providers:
     - anthropic
-  tools: []
+  tools:
+    - cursor
   aiShare: all
   source: Repository README
   evidence: repo
@@ -57,7 +58,7 @@ media:
     - games/casadegema/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-09-29
+  updated: 2026-09-30
 status: live
 provenance:
   foundVia: scout:awesome-opus

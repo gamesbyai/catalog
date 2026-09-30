@@ -28,11 +28,11 @@ creator:
   name: Maverick Nguyen
   handle: nguyenmav
 made:
-  models:
-    - grok-build
+  models: []
   providers:
     - xai
-  tools: []
+  tools:
+    - grok-build
   aiShare: unknown
   source: GitHub repository README
   evidence: creator
@@ -50,7 +50,7 @@ media:
     - games/void-surge/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-09-29
+  updated: 2026-09-30
 status: live
 provenance:
   foundVia: scout:github
