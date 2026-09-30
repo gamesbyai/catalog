@@ -14,7 +14,7 @@ export function issueForm(dir = '.') {
   const dropdown = (id, label, options, { multiple = false, required = false } = {}) => ({ type: 'dropdown', id, attributes: { label, multiple, options }, validations: { required } });
   return {
     name: 'Submit a game',
-    description: 'Add an AI-made game to GamesByAI. Every submission passes automated checks and is approved before it goes live.',
+    description: 'Add an AI-made game to GamesByAI. Every submission is reviewed before it goes live.',
     title: 'Submit: ',
     labels: ['submission'],
     body: [
@@ -29,6 +29,7 @@ export function issueForm(dir = '.') {
       dropdown('ai_share', 'How much of the code did AI write?', ['All of it', 'Most of it', 'Some of it'], { required: true }),
       dropdown('models', 'AI models used', ['Not sure', ...names('models')], { multiple: true }),
       dropdown('tools', 'AI tools used', ['Not sure', ...names('tools')], { multiple: true }),
+      dropdown('engine', 'Engine or framework', ['Not sure', ...names('engines')]),
       { type: 'textarea', id: 'how_made', attributes: { label: 'How you made it (600 characters max)' }, validations: { required: true } },
       {
         type: 'checkboxes',

@@ -354,13 +354,23 @@ export async function captureSlugs(slugs, { root = ROOT, out = join(root, 'out')
   return results;
 }
 
+/**
+ * Extra seconds before the first frame, for games that load for longer than the default schedule on CI's software
+ * renderer (a title screen with a progress bar is not a cover). 0 to 90; anything else is no change.
+ */
+export function waitOptions(seconds) {
+  const s = Math.min(90, Math.max(0, Math.floor(Number(seconds))));
+  if (!s) return {};
+  return { times: DEFAULTS.times.map((t) => t + s * 1000), deadline: DEFAULTS.deadline + s * 1000 };
+}
+
 if (process.argv[1] === fileURLToPath(import.meta.url)) {
   const slugs = process.argv.slice(2);
   if (!slugs.length) {
     console.error('usage: node scripts/capture.mjs <slug…>');
     process.exit(2);
   }
-  const results = await captureSlugs(slugs);
+  const results = await captureSlugs(slugs, waitOptions(process.env.CAPTURE_WAIT));
   await closeBrowser();
   console.log(`captured ${results.filter((r) => r.ok).length} of ${results.length}`);
   // Failed games are expected and logged; a browser that never starts is a broken runner.

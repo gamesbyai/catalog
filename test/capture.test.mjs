@@ -4,7 +4,7 @@ import { createServer } from 'node:http';
 import { mkdtempSync, mkdirSync, readdirSync, readFileSync, writeFileSync, existsSync } from 'node:fs';
 import { tmpdir } from 'node:os';
 import { join } from 'node:path';
-import { captureOne, captureSlugs, closeBrowser, throttleFrames } from '../scripts/capture.mjs';
+import { captureOne, captureSlugs, closeBrowser, throttleFrames, DEFAULTS } from '../scripts/capture.mjs';
 
 // Fixture pages are our own, so the Chromium sandbox is off here (CI's validate job has no sandbox setup).
 const FAST = { times: [300, 700, 1100], navTimeout: 4000, deadline: 6000, shotTimeout: 2000, clickTimeout: 1000, closeTimeout: 2000, allowLocalHttp: true, sandbox: false };
@@ -309,4 +309,14 @@ test('a loading screen never becomes the cover; an all-black game is not capture
   const black = await captureOne(`${base}/black`, join(tmp(), 'black'), FAST);
   assert.equal(black.ok, false);
   assert.equal(black.reason, 'blank');
+});
+
+test('a slow game can get a longer wait: every frame moves later and the deadline grows with it', async () => {
+  const { waitOptions } = await import('../scripts/capture.mjs');
+  assert.deepEqual(waitOptions(0), {});
+  const o = waitOptions(30);
+  assert.deepEqual(o.times, DEFAULTS.times.map((t) => t + 30_000));
+  assert.equal(o.deadline, DEFAULTS.deadline + 30_000);
+  assert.deepEqual(waitOptions(500).times, DEFAULTS.times.map((t) => t + 90_000), 'capped at 90 seconds');
+  assert.deepEqual(waitOptions('nope'), {});
 });
