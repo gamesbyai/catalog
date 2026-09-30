@@ -17,6 +17,10 @@ on:
         description: Optional. Re-capture these listed games instead (space-separated slugs, for broken covers)
         required: false
         type: string
+      wait:
+        description: Optional. Extra seconds before the first frame (0-90), for games that load slowly
+        required: false
+        type: string
   pull_request:
 permissions:
   contents: read
@@ -79,6 +83,8 @@ jobs:
         run: sudo sysctl -w kernel.apparmor_restrict_unprivileged_userns=0
       - name: Capture
         if: steps.list.outputs.count != '0'
+        env:
+          CAPTURE_WAIT: ${{ inputs.wait }}
         run: xargs -a "$RUNNER_TEMP/slugs.txt" node scripts/capture.mjs
       - uses: actions/upload-artifact@v5
         if: steps.list.outputs.count != '0'
