@@ -209,3 +209,11 @@ test('an entry with a profile link passes validation once its description is wri
   }
   assert.deepEqual(validate(dir).problems, []);
 });
+
+test('the consent box that allows our player records the permission; an older consent text does not', () => {
+  const dir = repo();
+  const now = toEntry(parseIssue(body({ Permission: "- [X] I made this game or have the creator's permission. GamesByAI may show it in its player, and I agree to the editorial policy." })), { ...loadContext(dir), today: '2026-10-01', issue: 12 });
+  assert.deepEqual(now.entry.play.embedPermission, { by: 'submission', date: '2026-10-01' });
+  const old = toEntry(parseIssue(body()), { ...loadContext(dir), today: '2026-10-01', issue: 13 });
+  assert.equal(old.entry.play.embedPermission, undefined);
+});
