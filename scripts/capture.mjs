@@ -3,12 +3,15 @@
 // Game pages are untrusted code. This runs only in CI's capture job, which has no secrets and a read-only token.
 // Every game gets a fresh browser context, a hard deadline kept by Node (not by Playwright), and nothing
 // from the page is ever read back except the pixels of the screenshots.
+// Games whose creator sent screenshots with the submission (provenance.uploads) are never captured; the upload job
+// fetches those instead. node scripts/capture.mjs --split <slug-list file> prints { capture, uploads } for the workflow.
 import { mkdirSync, rmSync, rmdirSync, writeFileSync, readFileSync, existsSync } from 'node:fs';
 import { join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { parse } from 'yaml';
 import { chromium } from 'playwright';
 import sharp from 'sharp';
+import { uploadsOf } from './upload.mjs';
 
 export const SLUG = /^[a-z0-9]+(?:-[a-z0-9]+)*$/;
 export const NAMES = ['cover', 'shot-1', 'shot-2'];
@@ -320,7 +323,17 @@ function appendFailure(outRoot, failure) {
   writeFileSync(file, JSON.stringify(list, null, 2) + '\n');
 }
 
-/** Captures each slug's play.url into <out>/<slug>/, logging failures to <out>/failed.json. Never stops early. */
+/** Splits slugs into games to capture and games whose creator sent screenshots (each entry read as data). */
+export function splitUploads(slugs, { root = ROOT } = {}) {
+  const res = { capture: [], uploads: [] };
+  for (const slug of slugs) (SLUG.test(slug) && uploadsOf(readEntry(root, slug)) ? res.uploads : res.capture).push(slug);
+  return res;
+}
+
+/**
+ * Captures each slug's play.url into <out>/<slug>/, logging failures to <out>/failed.json. Never stops early.
+ * A game whose creator sent screenshots is skipped: no browser, no files, no failure.
+ */
 export async function captureSlugs(slugs, { root = ROOT, out = join(root, 'out'), log = console.log, budgetMs = 75 * 60_000, ...opts } = {}) {
   mkdirSync(out, { recursive: true });
   const results = [];
@@ -334,6 +347,7 @@ export async function captureSlugs(slugs, { root = ROOT, out = join(root, 'out')
       const entry = readEntry(root, slug);
       const url = entry?.play?.url;
       if (!entry) res = { ok: false, reason: 'no-entry' };
+      else if (uploadsOf(entry)) res = { ok: true, skipped: 'uploads' };
       else if (typeof url !== 'string') res = { ok: false, reason: 'bad-url' };
       else {
         const run = (o) => captureOne(url, join(out, slug), o).catch((e) => ({ ok: false, reason: 'error', detail: firstLine(e) }));
@@ -348,7 +362,8 @@ export async function captureSlugs(slugs, { root = ROOT, out = join(root, 'out')
     }
     const name = SLUG.test(slug) ? slug : '(invalid)';
     if (!res.ok) appendFailure(out, { slug: name, reason: res.reason, ...(res.detail ? { detail: res.detail } : {}) });
-    log(`${res.ok ? 'ok  ' : 'FAIL'} ${name} (${((Date.now() - started) / 1000).toFixed(1)} s)${res.ok ? '' : `: ${res.reason}`}`);
+    if (res.skipped) log(`skip ${name}: the creator sent screenshots`);
+    else log(`${res.ok ? 'ok  ' : 'FAIL'} ${name} (${((Date.now() - started) / 1000).toFixed(1)} s)${res.ok ? '' : `: ${res.reason}`}`);
     results.push({ slug: name, ...res });
   }
   return results;
@@ -365,6 +380,14 @@ export function waitOptions(seconds) {
 }
 
 if (process.argv[1] === fileURLToPath(import.meta.url)) {
+  if (process.argv[2] === '--split') {
+    if (process.argv.length !== 4) {
+      console.error('usage: node scripts/capture.mjs --split <file with one slug per line>');
+      process.exit(2);
+    }
+    console.log(JSON.stringify(splitUploads(readFileSync(process.argv[3], 'utf8').split(/\s+/).filter(Boolean))));
+    process.exit(0);
+  }
   const slugs = process.argv.slice(2);
   if (!slugs.length) {
     console.error('usage: node scripts/capture.mjs <slug…>');
@@ -372,7 +395,7 @@ if (process.argv[1] === fileURLToPath(import.meta.url)) {
   }
   const results = await captureSlugs(slugs, waitOptions(process.env.CAPTURE_WAIT));
   await closeBrowser();
-  console.log(`captured ${results.filter((r) => r.ok).length} of ${results.length}`);
+  console.log(`captured ${results.filter((r) => r.ok && !r.skipped).length} of ${results.length}`);
   // Failed games are expected and logged; a browser that never starts is a broken runner.
-  process.exit(results.some((r) => r.reason === 'browser') && !results.some((r) => r.ok) ? 1 : 0);
+  process.exit(results.some((r) => r.reason === 'browser') && !results.some((r) => r.ok && !r.skipped) ? 1 : 0);
 }

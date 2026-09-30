@@ -3,24 +3,51 @@
 // the approval). Its description stays empty until the review adds one, so the validate check
 // fails until then: that is the intended gate. Everything in the issue is untrusted text: it is parsed as data,
 // reduced to plain text, mapped onto taxonomy slugs, and never executed.
-// Usage (CI): ISSUE_BODY=… ISSUE_NUMBER=… node scripts/issue-to-entry.mjs → prints JSON { slug, yaml, notes } or { error }.
+// Usage (CI): ISSUE_BODY=… ISSUE_NUMBER=… ISSUE_AUTHOR_TYPE=… node scripts/issue-to-entry.mjs → prints JSON { slug, yaml, notes } or { error }.
 import { readFileSync, readdirSync, existsSync } from 'node:fs';
 import { join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { parse, stringify } from 'yaml';
 import { parseProfile, allowedList } from './profiles.mjs';
 
+/** The labels that appear more than once in an issue (a non-enumerable Set on parseIssue's result). */
+export const REPEATED = Symbol('repeated labels');
+
 /** `### Label\n\nvalue` sections → { Label: value }. The first section with a label wins. */
 export function parseIssue(body) {
   const out = {};
+  const repeated = new Set();
   const parts = String(body ?? '').replace(/\r\n?/g, '\n').split(/^### (.+)$/m);
   for (let i = 1; i < parts.length; i += 2) {
     const label = parts[i].trim();
-    if (label in out) continue;
+    if (label in out) {
+      repeated.add(label);
+      continue;
+    }
     const value = parts[i + 1].trim();
     out[label] = value === '_No response_' ? '' : value;
   }
-  return out;
+  return Object.defineProperty(out, REPEATED, { value: repeated });
+}
+
+// The site's submit form stores the creator's screenshots and writes exactly this value (or "_No response_").
+const SHOTS_LABEL = 'Screenshots (optional)';
+const SHOTS = /^([1-3]) uploaded, ref ([0-9a-f]{16})$/;
+
+/**
+ * The creator's screenshots named in the issue, or undefined (with a note when the section is there but unusable).
+ * Only issues the site files (its GitHub App: a Bot author) can name them: anyone can write this section into an issue
+ * of their own, and refs are public in the issues.
+ */
+function uploadsFrom(f, fromSite, notes) {
+  const raw = String(f[SHOTS_LABEL] ?? '');
+  const twice = f[REPEATED]?.has(SHOTS_LABEL);
+  if (!raw && !twice) return undefined;
+  const m = SHOTS.exec(raw);
+  if (!m || twice) notes.push('The Screenshots section was not in the form the site writes, so it was left out; the browser capture takes the screenshots.');
+  else if (!fromSite) notes.push('Screenshots only come through the form on gamesbyai.win, so the Screenshots section was left out; the browser capture takes the screenshots.');
+  else return { ref: m[2], count: Number(m[1]) };
+  return undefined;
 }
 
 const line = (s, max) => String(s ?? '').replace(/<[^>]*>/g, '').replace(/[\u0000-\u001f\u007f]+/g, ' ').replace(/\s+/g, ' ').trim().slice(0, max);
@@ -75,7 +102,7 @@ function creatorOf(f, creatorName, issue, notes) {
 const PLAYERS = { 'single player': 'single', 'local multiplayer': 'local', 'online multiplayer': 'online' };
 const SHARE = { 'all of it': 'all', 'most of it': 'most', 'some of it': 'some' };
 
-export function toEntry(f, { names, playUrls, slugs, today, issue }) {
+export function toEntry(f, { names, playUrls, slugs, today, issue, fromSite = false }) {
   const notes = [];
   const playUrl = safePlayUrl(f['Play URL']);
   if (!playUrl) return { error: 'The Play URL must be a public https link to where the game runs (not gamesbyai.win).' };
@@ -105,6 +132,8 @@ export function toEntry(f, { names, playUrls, slugs, today, issue }) {
   if (!/[a-z]/.test(slug)) slug = `game-${slug}`;
   const base = slug;
   for (let i = 2; slugs.has(slug); i++) slug = `${base}-${i}`;
+  // With the creator's screenshots, the upload job fetches them and no browser capture runs for the game.
+  const uploads = uploadsFrom(f, fromSite, notes);
 
   const entry = {
     slug,
@@ -128,7 +157,7 @@ export function toEntry(f, { names, playUrls, slugs, today, issue }) {
     media: { cover: `games/${slug}/cover`, screenshots: [`games/${slug}/shot-1`, `games/${slug}/shot-2`] },
     dates: { added: today, updated: today },
     status: 'live',
-    provenance: { foundVia: 'form', submittedBy: `#${issue}` },
+    provenance: { foundVia: 'form', submittedBy: `#${issue}`, ...(uploads ? { uploads } : {}) },
   };
   if (!entry.made.notes) delete entry.made.notes;
   // Models, tools or an engine the form doesn't list: a note for the reviewer (Recipe G), never a term in the entry.
@@ -140,6 +169,8 @@ export function toEntry(f, { names, playUrls, slugs, today, issue }) {
 
 if (process.argv[1] === fileURLToPath(import.meta.url)) {
   const issue = Number(process.env.ISSUE_NUMBER);
-  const r = toEntry(parseIssue(process.env.ISSUE_BODY), { ...loadContext('.'), today: new Date().toISOString().slice(0, 10), issue });
+  // The site files its issues through its GitHub App, so their author is a Bot.
+  const fromSite = process.env.ISSUE_AUTHOR_TYPE === 'Bot';
+  const r = toEntry(parseIssue(process.env.ISSUE_BODY), { ...loadContext('.'), today: new Date().toISOString().slice(0, 10), issue, fromSite });
   console.log(JSON.stringify(r.error ? { error: r.error } : { slug: r.slug, yaml: stringify(r.entry), notes: r.notes }));
 }
