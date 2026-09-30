@@ -31,6 +31,7 @@ export function issueForm(dir = '.') {
       dropdown('models', 'AI models used', ['Not sure', ...names('models')], { multiple: true }),
       dropdown('tools', 'AI tools used', ['Not sure', ...names('tools')], { multiple: true }),
       dropdown('engine', 'Engine or framework', ['Not sure', ...names('engines')]),
+      input('other_terms', 'Other AI models, tools or engine (optional)', "AI models, tools or an engine missing above, with a link to the maker's page if you have one."),
       { type: 'textarea', id: 'how_made', attributes: { label: 'How you made it (600 characters max)' }, validations: { required: true } },
       {
         type: 'checkboxes',
