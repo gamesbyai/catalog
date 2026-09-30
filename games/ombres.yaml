@@ -36,8 +36,9 @@ play:
     - "F: fullscreen; Esc: pause"
 repo: https://github.com/briossant/ombres
 creator:
-  name: briossant
+  name: Brieuc Crosson
   handle: briossant
+  x: BriossantC
 made:
   models:
     - claude-opus-5-5

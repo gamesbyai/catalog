@@ -25,8 +25,11 @@ play:
   controls:
     - On-screen arrow keys (mobile)
 creator:
-  name: Unknown creator
-  handle: ophidian
+  name: OFFEKT
+  handle: offekt
+  x: drewvergara
+  links:
+    - https://www.offekt.com
 made:
   models: []
   providers:
