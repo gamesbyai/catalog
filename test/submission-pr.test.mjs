@@ -82,3 +82,11 @@ test('slugs that are not plain kebab-case never reach a branch name or path', as
   await assert.rejects(openOrUpdate({ ...ok, slug: '../../main' }, ctx(gh.fetchImpl)));
   assert.equal(gh.calls.length, 0);
 });
+
+test('a branch left behind by a closed PR starts again from main, so the new PR runs current scripts', async () => {
+  const gh = fakeGitHub({ branchExists: true, prExists: false });
+  await openOrUpdate(ok, ctx(gh.fetchImpl));
+  const reset = gh.calls.find((c) => c.method === 'PATCH' && c.path.endsWith('/git/refs/heads/submission/sky-hop'));
+  assert.deepEqual(reset?.body, { sha: 'mainsha', force: true });
+  assert.ok(gh.calls.some((c) => c.method === 'POST' && c.path.endsWith('/pulls')), 'and a new PR opens');
+});

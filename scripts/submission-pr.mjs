@@ -44,9 +44,15 @@ export async function openOrUpdate(out, { repo, issue, token, fetchImpl = fetch 
   const path = `games/${slug}.yaml`;
 
   const ref = await api(`/git/ref/heads/${branch}`);
+  const openPr = async () => (await (await api(`/pulls?head=${encodeURIComponent(`${repo.split('/')[0]}:${branch}`)}&state=open`)).json())[0];
+  const main = async () => (await (await api('/git/ref/heads/main')).json()).object.sha;
   if (ref.status === 404) {
-    const main = await (await api('/git/ref/heads/main')).json();
-    await post('/git/refs', { ref: `refs/heads/${branch}`, sha: main.object.sha });
+    await post('/git/refs', { ref: `refs/heads/${branch}`, sha: await main() });
+  } else if (!(await openPr())) {
+    // A branch left behind by an earlier, closed PR (a rejection, or a merge before branches were auto-deleted): start
+    // it again from main, or the new PR would run last month's scripts (Vesper, 2026-09-30).
+    await api(`/git/refs/heads/${branch}`, { method: 'PATCH', body: JSON.stringify({ sha: await main(), force: true }) });
+    existing = await pending(slug);
   }
   await api(`/contents/${path}`, {
     method: 'PUT',
