@@ -27,8 +27,10 @@ play:
     date: 2026-09-30
   embeddable: true
 creator:
-  name: kvickan
+  name: Kvickan
   handle: kvickan
+  links:
+    - https://buymeacoffee.com/kvickan
 made:
   models:
     - gpt-6-astra

@@ -312,3 +312,14 @@ test('the consent box that allows our player records the permission; an older co
   const old = toEntry(parseIssue(body()), { ...loadContext(dir), today: '2026-10-01', issue: 13 });
   assert.equal(old.entry.play.embedPermission, undefined);
 });
+
+test("a creator handle already in the catalog keeps its spelling; someone else's gets its own page", () => {
+  const dir = repo();
+  const ctx = { ...loadContext(dir), creators: new Map([['ada-dev', 'Ada Dev'], ['taken', 'Someone Else']]), today: '2026-10-01', issue: 44 };
+  const same = toEntry(parseIssue(body({ 'Creator name': 'ada dev', 'Profile link (optional)': 'https://github.com/ada-dev' })), ctx);
+  assert.equal(same.entry.creator.name, 'Ada Dev');
+  assert.equal(same.entry.creator.handle, 'ada-dev');
+  const other = toEntry(parseIssue(body({ 'Creator name': 'Taken Name', 'Profile link (optional)': 'https://github.com/taken' })), ctx);
+  assert.equal(other.entry.creator.handle, 'taken-44');
+  assert.ok(other.notes.some((n) => n.includes('/creators/taken/')));
+});
