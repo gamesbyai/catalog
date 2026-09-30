@@ -313,6 +313,29 @@ test('the consent box that allows our player records the permission; an older co
   assert.equal(old.entry.play.embedPermission, undefined);
 });
 
+test('only a checked line with the issue form consent grants embed permission', async () => {
+  const { issueForm } = await import('../scripts/issue-form.mjs');
+  const consent = issueForm('.').body.find((b) => b.id === 'permission').attributes.options[0].label;
+  const ctx = { ...loadContext(repo()), today: '2026-10-01', issue: 45 };
+  const legacy = '- [x] I agree to the editorial policy.';
+  for (const permission of [
+    `${legacy}\n- [ ] ${consent}`,
+    `${legacy}\n- [ ] GamesByAI may show it in its player`,
+    `${legacy}\nI do not agree that GamesByAI may show it in its player.`,
+    '- [x] I do not agree that GamesByAI may show it in its player.',
+    `${legacy}\n${consent}`,
+    `- [x] I made this game or have the creator's permission.\nGamesByAI may show it in its player, and I agree to the editorial policy.`,
+  ]) {
+    const r = toEntry(parseIssue(body({ Permission: permission })), ctx);
+    assert.equal(r.error, undefined, permission);
+    assert.equal(r.entry.play.embedPermission, undefined, permission);
+  }
+  for (const checked of ['x', 'X']) {
+    const r = toEntry(parseIssue(body({ Permission: `- [${checked}] ${consent}` })), ctx);
+    assert.deepEqual(r.entry.play.embedPermission, { by: 'submission', date: ctx.today });
+  }
+});
+
 test("a creator handle already in the catalog keeps its spelling; someone else's gets its own page", () => {
   const dir = repo();
   const ctx = { ...loadContext(dir), creators: new Map([['ada-dev', 'Ada Dev'], ['taken', 'Someone Else']]), today: '2026-10-01', issue: 44 };
@@ -323,3 +346,20 @@ test("a creator handle already in the catalog keeps its spelling; someone else's
   assert.equal(other.entry.creator.handle, 'taken-44');
   assert.ok(other.notes.some((n) => n.includes('/creators/taken/')));
 });
+
+for (const [label, base, taken, expected] of [
+  ['a 40-character handle', 'a'.repeat(40), [], `${'a'.repeat(37)}-44`],
+  ['a truncation ending in a hyphen', `${'a'.repeat(36)}-bbb`, [], `${'a'.repeat(36)}-44`],
+  ['occupied suffixed handles', 'a'.repeat(40), [`${'a'.repeat(37)}-44`, `${'a'.repeat(35)}-44-2`], `${'a'.repeat(35)}-44-3`],
+]) {
+  test(`creator collisions produce a free valid handle for ${label}`, () => {
+    const creators = new Map([base, ...taken].map((handle) => [handle, 'Existing Creator']));
+    const ctx = { ...loadContext(repo()), creators, today: '2026-10-01', issue: 44 };
+    const r = toEntry(parseIssue(body({ 'Creator name': 'New Creator', 'Profile link (optional)': '_No response_', 'Creator handle (optional)': base })), ctx);
+    assert.equal(r.entry.creator.handle, expected);
+    assert.ok(r.entry.creator.handle.length <= 40);
+    assert.match(r.entry.creator.handle, /^[a-z0-9]+(?:-[a-z0-9]+)*$/);
+    assert.ok(!creators.has(r.entry.creator.handle));
+    assert.ok(r.notes.some((n) => n.includes(`uses ${expected}.`)));
+  });
+}

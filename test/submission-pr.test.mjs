@@ -90,3 +90,36 @@ test('a branch left behind by a closed PR starts again from main, so the new PR 
   assert.deepEqual(reset?.body, { sha: 'mainsha', force: true });
   assert.ok(gh.calls.some((c) => c.method === 'POST' && c.path.endsWith('/pulls')), 'and a new PR opens');
 });
+
+for (const [status, payload] of [[503, { message: 'Unavailable' }], [503, []], [200, { message: 'Unexpected response' }]]) {
+  test(`a PR lookup returning ${status} and ${Array.isArray(payload) ? 'an array' : 'an object'} never resets an active branch`, async () => {
+    const gh = fakeGitHub({ branchExists: true, prExists: true });
+    const fetchImpl = async (url, init) => {
+      const res = await gh.fetchImpl(url, init);
+      return new URL(url).pathname.endsWith('/pulls') ? Response.json(payload, { status }) : res;
+    };
+    await assert.rejects(openOrUpdate(ok, ctx(fetchImpl)), /pull lookup/);
+    assert.ok(!gh.calls.some((c) => c.method === 'PATCH' || c.method === 'PUT'));
+  });
+}
+
+test('a failed branch reset stops before reloading or updating the entry', async () => {
+  const gh = fakeGitHub({ branchExists: true });
+  const fetchImpl = async (url, init) => {
+    const res = await gh.fetchImpl(url, init);
+    return init?.method === 'PATCH' ? Response.json({ message: 'Unavailable' }, { status: 503 }) : res;
+  };
+  await assert.rejects(openOrUpdate(ok, ctx(fetchImpl)), /branch reset.*503/);
+  assert.equal(gh.calls.filter((c) => c.method === 'GET' && c.path.includes('/contents/')).length, 1);
+  assert.ok(!gh.calls.some((c) => c.method === 'PUT' || (c.method === 'POST' && c.path.endsWith('/pulls'))));
+});
+
+test('a failed PR lookup after writing the entry never opens a replacement PR', async () => {
+  const gh = fakeGitHub();
+  const fetchImpl = async (url, init) => {
+    const res = await gh.fetchImpl(url, init);
+    return new URL(url).pathname.endsWith('/pulls') && !init?.method ? Response.json({ message: 'Unavailable' }, { status: 503 }) : res;
+  };
+  await assert.rejects(openOrUpdate(ok, ctx(fetchImpl)), /pull lookup.*503/);
+  assert.ok(!gh.calls.some((c) => c.method === 'POST' && c.path.endsWith('/pulls')));
+});

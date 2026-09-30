@@ -4,7 +4,7 @@ import { createServer } from 'node:http';
 import { mkdtempSync, mkdirSync, readdirSync, readFileSync, writeFileSync, existsSync } from 'node:fs';
 import { tmpdir } from 'node:os';
 import { join } from 'node:path';
-import { captureOne, captureSlugs, closeBrowser, throttleFrames, DEFAULTS } from '../scripts/capture.mjs';
+import { captureOne, captureSlugs, closeBrowser, throttleFrames, itchFrame, DEFAULTS } from '../scripts/capture.mjs';
 
 // Fixture pages are our own, so the Chromium sandbox is off here (CI's validate job has no sandbox setup).
 const FAST = { times: [300, 700, 1100], navTimeout: 4000, deadline: 6000, shotTimeout: 2000, clickTimeout: 1000, closeTimeout: 2000, allowLocalHttp: true, sandbox: false };
@@ -94,6 +94,26 @@ after(async () => {
 const tmp = () => mkdtempSync(join(tmpdir(), 'capture-'));
 const files = (dir) => (existsSync(dir) ? readdirSync(dir) : []);
 const pngSize = (buf) => ({ width: buf.readUInt32BE(16), height: buf.readUInt32BE(20) });
+
+test("itchFrame: an itch.io game page gives the game's own frame on itch's CDN, nothing else does", () => {
+  const src = 'https://html-classic.itch.zone/html/18045891/index.html?v=1782553893';
+  const placeholder = `<div class="iframe_placeholder" data-iframe="&lt;iframe allowfullscreen=&quot;true&quot; src=&quot;${src}&quot; width=&quot;960&quot;&gt;&lt;/iframe&gt;"></div>`;
+  assert.equal(itchFrame('https://netravelr.itch.io/witchs-familiar', placeholder), src);
+  assert.equal(itchFrame('https://someone.itch.io/game', `<iframe id="game_drop" src="https://html.itch.zone/html/42/Build/index.html"></iframe>`), 'https://html.itch.zone/html/42/Build/index.html');
+  // Upload ids with a build suffix, and folder names with spaces (sent encoded).
+  assert.equal(itchFrame('https://someone.itch.io/game', '<iframe src="https://html-classic.itch.zone/html/17992902-1817582/index.html?v=1784940635"></iframe>'), 'https://html-classic.itch.zone/html/17992902-1817582/index.html?v=1784940635');
+  assert.equal(itchFrame('https://someone.itch.io/game', '&lt;iframe src=&quot;https://html-classic.itch.zone/html/16619648/Marble Garble/index.html?v=1782564506&quot;&gt;'), 'https://html-classic.itch.zone/html/16619648/Marble%20Garble/index.html?v=1782564506');
+  // Only itch.io pages, and only itch's CDN pattern: no other host, scheme or path is ever followed.
+  assert.equal(itchFrame('https://example.com/game', placeholder), null);
+  assert.equal(itchFrame('https://itch.io.example.com/game', placeholder), null);
+  for (const bad of [
+    'https://html-classic.itch.zone.example.com/html/1/index.html',
+    'http://html-classic.itch.zone/html/1/index.html',
+    'https://html-classic.itch.zone/other/1/index.html',
+    'https://html-classic.itch.zone/html/1/../../x.html',
+  ]) assert.equal(itchFrame('https://someone.itch.io/game', `<iframe src="${bad}"></iframe>`), null, bad);
+  assert.equal(itchFrame('https://someone.itch.io/game', '<p>a downloadable game</p>'), null);
+});
 
 test('only https URLs are captured (http only for 127.0.0.1 when allowed)', async () => {
   for (const url of ['http://example.com/', 'file:///C:/Windows/win.ini', 'javascript:alert(1)', 'data:text/html,hi', 'not a url', 'http://127.0.0.1:1/']) {

@@ -50,6 +50,9 @@ jobs:
           ref: ${{ github.event.pull_request.head.sha || inputs.branch }}
           fetch-depth: 0
           persist-credentials: false
+      - uses: actions/setup-node@v5
+        with: { node-version: 22 }
+      - run: npm ci --no-audit --no-fund
       - name: List added or changed entries
         id: list
         env:
@@ -65,23 +68,15 @@ jobs:
             base="${BASE_SHA:-origin/main}"
             fork=$(git merge-base "$base" HEAD)
             # New entries always; a changed entry only when its play URL changed. Text edits keep their screenshots.
+            node scripts/changed-play-urls.mjs "$fork" > "$RUNNER_TEMP/changed.txt"
             {
               git diff --name-only --diff-filter=A "$fork" HEAD -- 'games/*.yaml'
-              for f in $(git diff --name-only --diff-filter=M "$fork" HEAD -- 'games/*.yaml'); do
-                old=$(git show "$fork:$f" | grep -m1 -E '^  url:' || true)
-                new=$(grep -m1 -E '^  url:' "$f" || true)
-                [ "$old" != "$new" ] && echo "$f"
-              done
+              cat "$RUNNER_TEMP/changed.txt"
             } | sed -nE 's#^games/([a-z0-9]+(-[a-z0-9]+)*)\.yaml$#\1#p' > "$RUNNER_TEMP/slugs.txt"
           fi
           echo "count=$(wc -l < "$RUNNER_TEMP/slugs.txt" | tr -d ' ')" >> "$GITHUB_OUTPUT"
           echo "sha=$(git rev-parse HEAD)" >> "$GITHUB_OUTPUT"
           cat "$RUNNER_TEMP/slugs.txt"
-      - uses: actions/setup-node@v5
-        if: steps.list.outputs.count != '0'
-        with: { node-version: 22 }
-      - if: steps.list.outputs.count != '0'
-        run: npm ci --no-audit --no-fund
       - name: Games whose creator sent screenshots skip the browser
         id: split
         if: steps.list.outputs.count != '0'
