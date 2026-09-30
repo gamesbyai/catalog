@@ -4,26 +4,25 @@ terms:
     maker: Pieter Levels
     url: "https://vibejam.com/2025/"
     intro: |-
-      The 2025 Vibe Coding Game Jam was an online game jam for AI-written games, organized by Pieter Levels (@levelsio). He announced it in March 2025 with a March 25 deadline, and the deadline was extended to April 1, 2025 at 23:59 UTC. Bolt.new, CodeRabbit and Lambda sponsored it.
+      The 2025 Vibe Coding Game Jam, called Bolt Vibe Coding Game Jam 2025 on its official page, was the first edition of Pieter Levels' online jam for AI-made web games. Bolt.new, CodeRabbit and Lambda sponsored it, and Andrej Karpathy, Tim Soret, Mr. Doob, S13K and Levels judged it.
 
-      The official rules required at least 80% of the game to be written by AI (code, assets and so on). Games had to be instantly playable on the web with no logins, signups or loading screens, free to play, and hosted on their own domain or subdomain. Any engine was allowed, and the rules recommended Three.js.
+      The rules required at least 80 percent of each game to be written by AI, code and assets included. Games had to be instantly playable on the web with no logins, signups or loading screens, free to play and hosted on their own domain or subdomain. Each had to carry a snippet of code from the submit form that marked it as an entry, and any engine was allowed, with Three.js recommended.
 
-      Prizes were $10,000, $5,000 and $2,500 for the top three. The jam page says more than 1,000 games were entered. The top three were The Great Taxi Assignment, Vibeware and Vector Tango.
+      Levels announced the results on April 23, 2025. Over a thousand games were submitted, and The Great Taxi Assignment, Vibeware and Vector Tango won $10,000, $5,000 and $2,500. The jam's page is archived at vibejam.com/2025.
     sources:
       - "https://vibejam.com/2025/"
-      - "https://x.com/levelsio/status/1901660771505021314"
-      - "https://x.com/levelsio/status/1906650541347717573"
       - "https://levels.io/winners-of-the-2025-vibe-code-game-jam"
+      - "https://vibejam.com/2026/press"
   - slug: vibe-jam-2026
     name: 2026 Vibe Coding Game Jam
     maker: Pieter Levels
     url: "https://vibejam.com/2026/"
     intro: |-
-      The 2026 Vibe Coding Game Jam, called Cursor Vibe Jam 2026 on its official page, was the second edition, organized by Pieter Levels. It started on April 1, 2026, and submissions closed on May 1, 2026 at 13:37 UTC. Cursor, Bolt.new, Glif and Tripo3D sponsored it.
+      The 2026 Vibe Coding Game Jam, officially Cursor Vibe Jam 2026, was the second edition of Pieter Levels' jam for AI-made web games. It opened on April 1, 2026 and closed for submissions on May 1, 2026 at 13:37 UTC. Cursor was the diamond sponsor, with Bolt.new, Glif and Tripo3D also sponsoring.
 
-      The official rules required at least 90% of the code to be written by AI. Only new games made during the jam were accepted, and each person could submit one entry. Games had to be free to play on the web with no login or signup, and had to load almost instantly. Any engine was allowed, and Three.js was recommended.
+      At least 90 percent of the code had to be written by AI, and only new games made during the jam counted, one entry per person. Games had to be free on the web with no login or signup and load almost instantly, and each had to include the jam's widget script or be disqualified. Any engine was allowed and Three.js recommended, and multiplayer was preferred but optional.
 
-      Prizes were $25,000 for gold, $10,000 for silver and $5,000 for bronze, plus 12 special prizes of $1,000 each. Levels' results post names A Game About Capybaras Delivering Food, Fanto's Mega-Mart and WenWare as the top three.
+      Prizes were $25,000, $10,000 and $5,000, plus 12 special prizes of $1,000 each. Levels' results post on June 17, 2026 names A Game About Capybaras Delivering Food, Fanto's Mega-Mart and WenWare as the top three, and all entries are playable at vibej.am.
     sources:
       - "https://vibejam.com/2026/"
       - "https://vibejam.com/2026/press"

@@ -6,34 +6,47 @@ terms:
     maker: Anthropic
     url: "https://claude.com/product/claude-code"
     intro: |-
-      Claude Code is Anthropic's coding agent. It reads your codebase, edits files and runs commands, and it works in a terminal, in VS Code and JetBrains, in a desktop app and in the browser, according to Anthropic's documentation.
+      Claude Code is Anthropic's coding agent. It reads a project, edits files and runs commands, and it works in a terminal, in VS Code and JetBrains IDEs, in the Claude desktop app and on the web at claude.ai/code.
 
-      For a game, you describe what you want in plain language. Claude Code plans the change, writes code across several files and verifies that it works. It asks permission before it edits files or runs commands. It uses Claude models, with aliases for Opus, Sonnet and Haiku, and it can connect through Amazon Bedrock, Google Cloud or Microsoft Foundry. A CLAUDE.md file in the project root holds standing instructions that Claude Code reads at the start of every session.
+      For a browser game, you start it in the project folder and describe the game in plain language. It writes the HTML and JavaScript, and with the Claude in Chrome extension it can open the game, read console errors and fix the code behind them. A CLAUDE.md file in the project holds standing rules.
+
+      MCP servers connect it to engines and 3D tools. Unity's official server lets Claude Code inspect scenes, read the console and trigger editor actions, and community servers let it build scenes in a live Godot editor and create objects in Blender. As of September 2026, it needs a Pro, Max, Team, Enterprise or Console account, and the free Claude plan doesn't include it.
     sources:
       - "https://code.claude.com/docs/en/overview"
-      - "https://code.claude.com/docs/en/model-config"
-      - "https://claude.com/product/claude-code"
+      - "https://code.claude.com/docs/en/setup"
+      - "https://code.claude.com/docs/en/chrome"
+      - "https://unity.com/blog/unity-ai-mcp-how-to-get-started"
+      - "https://github.com/hi-godot/godot-ai"
+      - "https://github.com/ahujasid/blender-mcp"
   - slug: codex
     name: Codex
     maker: OpenAI
     url: "https://openai.com/codex/"
     intro: |-
-      Codex is OpenAI's coding agent. It comes as a command-line tool, an IDE extension, a desktop app and a cloud version at chatgpt.com/codex. The command-line tool is open source under the Apache-2.0 license, and its code is on GitHub.
+      Codex is OpenAI's coding agent. It runs as an open-source command-line tool under the Apache-2.0 license, as an IDE extension for VS Code and Cursor, in the ChatGPT desktop app and as a cloud agent at chatgpt.com/codex.
 
-      The command-line agent runs in your terminal on your own computer, so it works on the files in your project folder. You sign in with a ChatGPT account or use an OpenAI API key. The README lists installs through npm, Homebrew, a shell script, or a PowerShell installer on Windows. The IDE extension works with VS Code, Cursor and Windsurf.
+      For a game, you point Codex at a project folder and describe what to build or fix. The desktop app's built-in browser previews a local dev server and takes screenshots, and Codex can generate images with gpt-image-2, including sprite sheets, backgrounds and UI assets. MCP servers connect it to engines: Unity's official server and the community Godot AI server both list Codex as a client.
+
+      As of September 2026, every ChatGPT plan includes Codex, from Free and Go to Enterprise, and the CLI and IDE extension also run on an OpenAI API key.
     sources:
       - "https://github.com/openai/codex"
-      - "https://github.com/openai/codex/releases"
+      - "https://learn.chatgpt.com/docs"
+      - "https://learn.chatgpt.com/docs/browser"
+      - "https://learn.chatgpt.com/docs/image-generation"
+      - "https://learn.chatgpt.com/docs/extend/mcp"
+      - "https://learn.chatgpt.com/docs/pricing"
+      - "https://unity.com/blog/unity-ai-mcp-how-to-get-started"
+      - "https://github.com/hi-godot/godot-ai"
   - slug: gemini-cli
     name: Gemini CLI
     maker: Google
     url: "https://github.com/google-gemini/gemini-cli"
     intro: |-
-      Gemini CLI is Google's open source AI agent for the terminal. Its code is on GitHub under the Apache 2.0 license. It brings Gemini models into the command line, with built-in tools for Google Search grounding, file operations, shell commands and web fetching.
+      Gemini CLI is Google's open-source AI agent for the terminal, released under the Apache 2.0 license. It brings Gemini models to the command line, with built-in tools for file operations, shell commands, web fetching and Google Search grounding, and it supports MCP servers for extra tools.
 
-      For a game, you run it in a project folder and let it use those file and shell tools on your project. It supports the Model Context Protocol for custom integrations.
+      For a game, you run it in the project folder and let those file and shell tools work on your code.
 
-      On May 19, 2026, Google announced Antigravity CLI as the successor. Google said Gemini CLI would stop serving requests for Google AI Pro, Google AI Ultra and free Gemini Code Assist users on June 18, 2026. Google said enterprise customers with Standard or Enterprise licenses or paid API keys are not affected.
+      Access has narrowed. On June 18, 2026, Gemini CLI stopped serving requests for free users and for Google AI Pro and Ultra subscribers, as Google announced in May. It still works with paid Gemini API keys and with Gemini Code Assist Standard or Enterprise licenses. Google points everyone else to Antigravity CLI, part of Google Antigravity.
     sources:
       - "https://github.com/google-gemini/gemini-cli"
       - "https://developers.googleblog.com/an-important-update-transitioning-gemini-cli-to-antigravity-cli/"
@@ -42,9 +55,11 @@ terms:
     maker: Google
     url: "https://jules.google/"
     intro: |-
-      Jules is an autonomous coding agent from Google. Google Labs built it, and it works on projects hosted on GitHub.
+      Jules is Google's autonomous coding agent for GitHub repositories. Google calls it experimental, and it runs as a web app at jules.google, with a command-line tool called Jules Tools and a REST API.
 
-      You connect a GitHub repository and write a prompt. Jules clones the repository into a cloud virtual machine, installs dependencies and drafts a plan for you to approve. It then shows code diffs and opens a pull request. It reads an AGENTS.md file if your repository has one, and it runs on Gemini models. A game therefore needs to live in a GitHub repository first, and the changes come back as pull requests for you to review.
+      You connect a repository and write a prompt. Jules clones the code into a cloud virtual machine, installs dependencies and drafts a plan for you to approve, then shows diffs and opens a pull request. It reads an AGENTS.md file if the repository has one. A game therefore has to live on GitHub first, and changes come back as pull requests to review.
+
+      As of September 2026, the free tier allows 15 tasks a day on Gemini 2.5 Pro, and the Pro and Ultra tiers raise the limit and add Gemini 3 Pro.
     sources:
       - "https://jules.google/"
       - "https://jules.google/docs"
@@ -53,35 +68,43 @@ terms:
     maker: Cognition
     url: "https://devin.ai/"
     intro: |-
-      Devin is an autonomous AI software engineer made by Cognition. Its documentation says it can write, run and test code.
+      Devin is Cognition's autonomous AI software engineer. It writes, runs and tests code in a cloud environment with its own shell, code editor and browser, and works toward a pull request. You assign tasks in the web app at app.devin.ai, from Slack or Microsoft Teams, through the Devin CLI or the API.
 
-      Each Devin session runs in its own cloud virtual machine, and Devin tests its work in its own browser. You give it a task through the web app at app.devin.ai, from Slack or Teams, or with the Devin CLI, and it works toward a pull request. Devin connects to GitHub, Jira and Linear. The documentation names bug fixes, feature work, migrations and pull request review as typical jobs.
+      The docs name web app testing as one use of that browser, which suits browser games. Typical jobs include tickets from Jira or Linear, new features, bug fixes, migrations and pull request reviews.
 
-      As of September 2026, Devin is also the name of a wider product family. Cognition renamed its Windsurf editor to Devin Desktop on June 2, 2026.
+      Devin is also the name of a product family that includes Devin Desktop, the editor Cognition renamed from Windsurf on June 2, 2026. As of September 2026, cloud agents start with the Pro plan at $20 a month, and the free plan comes with a light quota.
     sources:
       - "https://devin.ai/"
       - "https://docs.devin.ai/get-started/devin-intro"
       - "https://docs.devin.ai/desktop/devin-desktop-faq"
+      - "https://devin.ai/pricing"
   - slug: opencode
     name: OpenCode
     url: "https://opencode.ai/"
     intro: |-
-      OpenCode is an open source AI coding agent for the terminal, with a desktop app in beta and IDE extensions. It is released under the MIT license, and the Anomaly organization maintains it on GitHub.
+      OpenCode is an open-source AI coding agent from Anomaly, released under the MIT license. It runs in the terminal, as an IDE extension and as a desktop app, which is in beta for macOS, Windows and Linux.
 
-      OpenCode is not tied to one model maker. Its site says it connects to more than 75 providers through Models.dev, including Claude, GPT and Gemini, and it works with local models. It has two built-in agents: build, which has full access for development work, and plan, a read-only agent for analyzing code. For a game, you run it in your project folder and pick the model you want to use.
+      It isn't tied to one model maker. The site says it connects to more than 75 providers through Models.dev, including Claude, GPT, Gemini and local models, and it includes some free models. You can also sign in with GitHub Copilot or a ChatGPT Plus or Pro account.
+
+      For a game, you run it in the project folder with the build agent, which has full access, or the read-only plan agent for exploring code. MCP servers add tools, and the Blender MCP server lists OpenCode as a client for 3D work.
     sources:
       - "https://opencode.ai/"
       - "https://github.com/anomalyco/opencode"
+      - "https://opencode.ai/docs/mcp-servers/"
+      - "https://github.com/ahujasid/blender-mcp"
   - slug: aider
     name: Aider
     url: "https://aider.chat/"
     intro: |-
-      Aider is an open source AI pair programming tool that runs in your terminal. It is released under the Apache-2.0 license, and its code is on GitHub.
+      Aider is an open-source AI pair programmer that runs in your terminal, released under the Apache-2.0 license. You install it with pip, start it in a git repository and pick a model with an API key.
 
-      Aider builds a map of your whole codebase, edits the files in a local git repository, and commits each change to git with a descriptive message. Its site says it supports more than 100 programming languages and can run linting and tests after a change. It connects to many language models, including Claude, OpenAI models and DeepSeek, and to local models. You can also give it images and web pages as context.
+      It maps the whole codebase, edits files and commits each change to git with a descriptive message, and /undo takes the last change back. It can lint and test after each edit, take images and web pages as context, and run in watch mode next to your IDE. It works with Claude, OpenAI and DeepSeek models, and with local models.
+
+      Aider's most recent release is v0.86.0, from August 9, 2025, which added GPT-5 support.
     sources:
       - "https://aider.chat/"
       - "https://github.com/Aider-AI/aider"
+      - "https://github.com/Aider-AI/aider/releases"
   - slug: amp
     name: Amp
     maker: Amp
@@ -89,7 +112,9 @@ terms:
     intro: |-
       Amp is a coding agent and development environment. It began inside Sourcegraph, and on December 2, 2025, Sourcegraph announced that Amp was becoming an independent company.
 
-      Amp runs on the web at ampcode.com, where work happens in a cloud environment the manual calls an orb. It also has macOS and iOS apps and a command-line tool that runs on your own machine, in your editor's terminal or from scripts. The manual says Amp uses models from several makers and picks them by task instead of relying on a single model.
+      Amp runs on the web at ampcode.com, as macOS and iOS apps and as a command-line tool on your own machine. For a game, you run the CLI in the project folder or hand the work to an orb, a cloud machine Amp sets up for each thread with the code and tools in place.
+
+      Rather than one model, Amp uses models from several makers, including GPT and Claude, each for the tasks it does best. It supports MCP servers and reads AGENTS.md files. As of September 2026, Amp is free to use when you bring your own compute and model subscriptions or keys.
     sources:
       - "https://ampcode.com/manual"
       - "https://sourcegraph.com/blog/why-sourcegraph-and-amp-are-becoming-independent-companies"
@@ -99,18 +124,22 @@ terms:
     maker: Alibaba
     url: "https://github.com/QwenLM/qwen-code"
     intro: |-
-      Qwen Code is an open source AI coding agent from the Qwen team at Alibaba, licensed under Apache 2.0. It runs in the terminal, and its repository also lists a desktop app, a web UI, editor plugins and chat platforms.
+      Qwen Code is an open-source AI coding agent from the Qwen team at Alibaba, released under the Apache 2.0 license. It runs in the terminal, as a desktop app for macOS, Windows and Linux, in VS Code, Zed and JetBrains plugins, in an experimental web UI and through chat apps such as Telegram.
 
-      The project started from Google's Gemini CLI, at version 0.8.2, and has developed independently since its v0.1. It works with Qwen models, with OpenAI, Anthropic and Gemini compatible APIs, and with local models through Ollama or vLLM. For a game, you run it in your project folder. It supports MCP for extra tools. Install options are npm (Node.js 22 or newer), Homebrew and standalone installers.
+      The project started from Google's Gemini CLI at version 0.8.2 and has developed on its own since. It works with Qwen models, with OpenAI, Anthropic and Gemini compatible APIs, and with local models through Ollama or vLLM, and the /auth command sets the provider and key.
+
+      For a game, you run it in the project folder, and MCP servers add extra tools. Install options are a standalone script, Homebrew and npm, which needs Node.js 22 or newer.
     sources:
       - "https://github.com/QwenLM/qwen-code"
   - slug: warp
     name: Warp
     url: "https://www.warp.dev/"
     intro: |-
-      Warp is an agentic development environment that began as a terminal. The company Warp makes it, and the client code is open source on GitHub under the AGPL v3 license, with an MIT-licensed UI framework.
+      Warp is an agentic development environment that grew out of a terminal. The company Warp builds it in Rust, and the client code is open source on GitHub under the AGPL v3 license, with an MIT-licensed UI framework. It runs on macOS, Linux and Windows.
 
-      It runs on macOS, Linux and Windows. Warp can run its built-in agents or command-line agents you bring yourself. Its GitHub page says agents can triage issues, write specs, implement code changes and review pull requests. Its site says you can bring your own model or harness, and it lists Claude, GPT, Gemini and open-weight models.
+      For a game, the Warp Terminal is where you work in the project folder, with Warp's built-in agent or with command-line agents you bring, such as Claude Code, Codex or Gemini CLI. Agents there can triage issues, write specs, implement changes and review pull requests.
+
+      Warp also offers a standalone Agent CLI and Warp Factories, which runs fleets of agents across a team's workflow. Models include Claude, GPT, Gemini and open-weight options, and you can bring your own.
     sources:
       - "https://github.com/warpdotdev/warp"
       - "https://www.warp.dev/"
@@ -120,35 +149,44 @@ terms:
     maker: Anysphere
     url: "https://cursor.com/"
     intro: |-
-      Cursor is an AI coding tool from Anysphere, with a desktop code editor, a command-line tool and cloud agents. Its site also lists Slack and GitHub integrations.
+      Cursor is an AI code editor and coding agent from Anysphere. SpaceX completed its acquisition of the company on August 14, 2026. Cursor runs as a desktop editor, a command-line tool and cloud agents, and it connects to Slack and GitHub.
 
-      For a game, you open your project in the Cursor editor and hand tasks to an agent, choosing how much autonomy it gets, from targeted edits to fully autonomous work. Cursor lets you pick between its own models and models from OpenAI, Anthropic and Google.
+      For a game, you open the project folder in the editor and hand tasks to the agent, which can scope larger changes first in Plan Mode. Its built-in browser opens pages in a pane, clicks, takes screenshots and reads console errors, so the agent can load a browser game and check its work. MCP servers reach further: Unity's official server and the community Godot AI server both list Cursor as a client.
 
-      SpaceX completed its acquisition of Anysphere on August 14, 2026, according to Cursor's announcement. Cursor said this completed an acquisition process that began in April with its SpaceXAI partnership.
+      Cursor has its own Composer models and also offers models from OpenAI, Anthropic, Google and other makers. As of September 2026, the free Hobby plan includes limited agent requests.
     sources:
-      - "https://cursor.com/"
+      - "https://cursor.com/docs"
+      - "https://cursor.com/docs/agent/browser"
+      - "https://cursor.com/pricing"
       - "https://cursor.com/blog/joining-spacex"
-      - "https://en.wikipedia.org/wiki/Cursor_(code_editor)"
+      - "https://unity.com/blog/unity-ai-mcp-how-to-get-started"
+      - "https://github.com/hi-godot/godot-ai"
   - slug: github-copilot
     name: GitHub Copilot
     maker: GitHub
     url: "https://github.com/features/copilot"
     intro: |-
-      GitHub Copilot is GitHub's AI coding assistant. It runs in Visual Studio Code, Visual Studio, JetBrains IDEs and Neovim, on github.com and GitHub Mobile, and in the command line through GitHub CLI.
+      GitHub Copilot is GitHub's AI coding assistant. It works in VS Code, Visual Studio, JetBrains IDEs, Xcode, Eclipse, Vim and Neovim, on github.com and GitHub Mobile, and in the terminal through Copilot CLI. You pick the model per task, from Claude, GPT, Gemini and others.
 
-      It offers code suggestions as you type, chat, pull request review and an agentic mode that plans steps and edits files to reach a goal. A cloud agent can take an assigned task and work on it by itself. GitHub's documentation lists models from OpenAI, Anthropic, Google, xAI and other makers, and you choose one per task. Copilot has a free plan, and GitHub offers free access to students, teachers and open source maintainers.
+      For a game, agent mode in the editor plans a change and edits several files, with keep and undo options for each edit. It can use MCP servers, and Unity's official MCP server lists VS Code GitHub Copilot as a client. On github.com you can assign a task to Copilot's cloud agent or to Claude and Codex agents, then review and merge their work.
+
+      As of September 2026, the Free plan includes 2,000 inline suggestions a month and limited chat and agent use, and paid plans start at $10 a month. Students, teachers and open source maintainers get free access.
     sources:
       - "https://docs.github.com/en/copilot/get-started/what-is-github-copilot"
       - "https://docs.github.com/en/copilot/reference/ai-models/supported-models"
       - "https://github.com/features/copilot"
+      - "https://github.com/features/copilot/plans"
+      - "https://unity.com/blog/unity-ai-mcp-how-to-get-started"
   - slug: windsurf
     name: Devin Desktop (Windsurf)
     maker: Cognition
     url: "https://devin.ai/desktop"
     intro: |-
-      Devin Desktop is Cognition's AI code editor, and it is the new name of Windsurf. Cognition renamed Windsurf to Devin Desktop on June 2, 2026, through an over-the-air update, and windsurf.com now redirects to devin.ai/desktop.
+      Devin Desktop is Cognition's AI code editor and the new name of Windsurf. Cognition renamed Windsurf through an over-the-air update on June 2, 2026, and windsurf.com now redirects to devin.ai/desktop. The FAQ calls it the same IDE with the same features, and plans, pricing and settings carried over.
 
-      Devin Desktop keeps the Windsurf editor and adds an Agent Command Center, a Kanban-style view for managing local and cloud agents, plus Spaces for sharing context between agents. Devin Local replaces Cascade as the default local agent. Cognition says plans, pricing, extensions and settings carried over. The editor can also run other agents, including Codex, Claude Agent and OpenCode, through the open Agent Client Protocol.
+      It adds an Agent Command Center, a Kanban-style view for local and cloud agents. Devin Local replaces Cascade as the default local agent, and other agents such as Codex, Claude Agent and OpenCode run inside it through the Agent Client Protocol. For a web game, the built-in browser preview shows the rendered page, and MCP servers add tools.
+
+      As of September 2026, there is a free tier, and Pro costs $20 a month.
     sources:
       - "https://devin.ai/blog/windsurf-is-now-devin-desktop"
       - "https://docs.devin.ai/desktop/devin-desktop-faq"
@@ -158,59 +196,69 @@ terms:
     maker: Google
     url: "https://antigravity.google/"
     intro: |-
-      Google Antigravity is Google's agentic development platform. Google announced it in November 2025, and its site describes an IDE, an Agent Manager for running several agents in parallel, browser agents, a terminal tool and an SDK.
+      Google Antigravity is Google's agentic development platform, launched in public preview on November 20, 2025. It includes an agent-first IDE, the Antigravity 2.0 desktop app for running several agents in parallel, a CLI that replaces Gemini CLI, and an SDK.
 
-      The Manager surface runs agents that plan, execute and verify tasks across the editor, the terminal and a browser. At launch it supported Gemini 3 Pro, Anthropic's Claude Sonnet 4.5 and OpenAI's GPT-OSS. As of September 2026, Google's site says it is available at no charge for individual developers.
+      For a web game, the agent can launch the app from the terminal and test it in a browser, then report back with Artifacts such as screenshots and walkthroughs that you can comment on. MCP servers install from a built-in MCP Store or a config file, and the community Godot AI and Blender MCP servers list Antigravity as a client.
 
-      At Google I/O on May 19, 2026, Google introduced Antigravity 2.0, a desktop app for orchestrating agents in parallel, and Antigravity CLI, which replaces Gemini CLI.
+      Models include Gemini, Claude Sonnet and Opus, and GPT-OSS, and Nano Banana 2 draws UI mockups. As of September 2026, Antigravity is free for individual developers.
     sources:
       - "https://developers.googleblog.com/build-with-google-antigravity-our-new-agentic-development-platform/"
       - "https://blog.google/innovation-and-ai/technology/developers-tools/google-io-2026-developer-highlights/"
       - "https://antigravity.google/"
+      - "https://antigravity.google/docs/mcp"
+      - "https://antigravity.google/docs/models"
+      - "https://github.com/hi-godot/godot-ai"
+      - "https://github.com/ahujasid/blender-mcp"
   - slug: kiro
     name: Kiro
     maker: Amazon
     url: "https://kiro.dev/"
     intro: |-
-      Kiro is an agentic IDE built and operated by Amazon Web Services. It is built on Code OSS, so you can import VS Code settings, themes and Open VSX plugins. AWS introduced it on July 14, 2025.
+      Kiro is an agentic IDE that Amazon Web Services builds and operates, introduced on July 14, 2025. It is built on Code OSS, so VS Code settings and Open VSX plugins carry over, and it also comes as a CLI, a web app and a mobile app.
 
-      Kiro centers on spec-driven development. You give it a prompt, and it turns that into requirements, a design and a sequenced task list before it writes code. Hooks run automations when the agent changes files, and steering keeps project standards in place. Kiro also has a CLI. Its site lists models from Anthropic, OpenAI and open-weight makers such as DeepSeek and Qwen, plus an Auto mode that picks a model by task.
+      Kiro centers on spec-driven development: a prompt becomes requirements, a design and a sequenced task list before any code is written. Hooks run automations when files change, and steering files keep project rules in place. MCP servers connect other tools, and Unity lists Kiro as a client of its official MCP server.
+
+      Models come from Anthropic, OpenAI and open-weight makers such as DeepSeek and Qwen, plus an Auto mode that picks one by task. As of September 2026, the free plan includes 50 credits, and Pro costs $20 a month for 1,000 credits.
     sources:
       - "https://kiro.dev/"
       - "https://kiro.dev/blog/introducing-kiro/"
-      - "https://kiro.dev/docs/"
+      - "https://kiro.dev/pricing/"
+      - "https://unity.com/blog/unity-ai-mcp-how-to-get-started"
   - slug: trae
     name: Trae
     maker: ByteDance
     url: "https://www.trae.ai/"
     intro: |-
-      Trae is an AI coding tool from ByteDance. Its site lists two products: TraeCode, an AI development tool you download for the desktop, and TraeWork, a work assistant that also has a web version.
+      Trae is an AI coding tool that comes as two products. TraeCode is an AI coding app you download for the desktop, and TraeWork is a work assistant that also has a web version at work.trae.ai.
 
-      Trae's documentation describes TraeCode as covering coding, project understanding, debugging and running, and change management. It includes several built-in models and lets you add your own models with an API key. Some built-in model series, such as Seed, MiniMax and GLM, are not available to users in the United States. Visual Studio Magazine covered the first release of Trae in January 2025.
+      For a game, TraeCode is the coding product. A September 2025 announcement from Trae described an IDE mode for developer-led work and a SOLO mode that turns a plain-language request into a complete project. SOLO writes front-end and back-end code and connects databases, APIs and Figma.
+
+      As of September 2026, the free plan offers only Auto model selection with limited usage, and Pro costs $20 a month and unlocks all models.
     sources:
       - "https://www.trae.ai/"
-      - "https://docs.trae.ai/ide/models"
-      - "https://visualstudiomagazine.com/articles/2025/01/27/ai-powered-trae-ide-ships.aspx"
+      - "https://www.trae.ai/pricing"
+      - "https://www.newsfilecorp.com/release/267532"
   - slug: zed
     name: Zed
     url: "https://zed.dev/"
     intro: |-
-      Zed is an open source code editor from Zed Industries, written in Rust. Its GitHub page describes it as coming from the creators of Atom and Tree-sitter, and it runs on macOS, Linux and Windows.
+      Zed is an open-source code editor from Zed Industries, written in Rust and released under GPL-3.0-or-later, with some Apache-2.0 parts. It comes from the creators of Atom and Tree-sitter and runs on macOS, Linux and Windows.
 
-      Zed's AI features include agentic editing, where you delegate a task to an agent and review the changes live, parallel agent threads, an inline assistant and edit prediction from an open source model. Through the Agent Client Protocol it can also host outside agents such as Claude Agent, Codex and OpenCode, and it connects to MCP servers. For a game, you open the project folder in Zed and let an agent work on it.
+      For a game, you open the project folder and delegate work to an agent, then follow its edits live and review them. You can run several agent threads in parallel, and an open-source model predicts your next edit. Through the Agent Client Protocol, Zed also hosts outside agents such as Claude Agent, Codex and OpenCode, and MCP servers extend what agents can reach.
+
+      As of September 2026, the free Personal plan includes 2,000 accepted edit predictions and unlimited use with your own API keys or external agents.
     sources:
       - "https://zed.dev/"
+      - "https://zed.dev/pricing"
       - "https://github.com/zed-industries/zed"
   # Editor extensions
   - slug: kilo-code
     name: Kilo Code
     url: "https://kilo.ai/"
     intro: |-
-      Kilo Code is an open source AI coding agent for VS Code, JetBrains IDEs and the command line. The code is on GitHub under the MIT license, and Kilo also offers a cloud agent and automated pull request reviews.
+      Kilo Code is an open-source AI coding agent for VS Code, JetBrains IDEs and the command line, released under the MIT license. Kilo also runs a cloud agent that needs no local setup, automated code reviews and a Slack integration. Anaconda acquired Kilo Code on July 15, 2026, and said Kilo remains available for individual builders, teams and organizations.
 
-      Kilo works with more than 500 models. You can use free models, open-weight models, your own API keys or local models, and you can switch models in the middle of a task. It has specialized agents for code, planning, asking questions and debugging. The Kilo CLI is a fork of OpenCode.
-
-      Anaconda acquired Kilo Code on July 15, 2026, and said Kilo remains available for individual builders, teams and organizations.
+      Kilo works with more than 500 models: free ones, open-weight ones, your own API keys or local models, and you can switch mid-task. Models are billed at provider cost with no markup. For a game, the Plan agent lays out the project and the Code agent builds it, with Ask and Debug agents for questions and bugs. MCP servers come from the Kilo Marketplace, and the Kilo CLI is a fork of OpenCode.
     sources:
       - "https://kilo.ai/"
       - "https://github.com/Kilo-Org/kilocode"
@@ -219,19 +267,24 @@ terms:
     name: Cline
     url: "https://cline.bot/"
     intro: |-
-      Cline is an open source AI coding agent from Cline Bot Inc., released under the Apache 2.0 license. It runs as a VS Code extension, as JetBrains plugins, as a command-line tool and as a desktop app for macOS and Windows.
+      Cline is an open-source AI coding agent from Cline Bot Inc., released under the Apache 2.0 license. It runs as a VS Code extension, a JetBrains plugin, a command-line tool, a desktop app for macOS and Windows, and an SDK. The extension is free, and you pay the model provider you connect.
 
-      Cline edits multiple files, runs bash commands and plans tasks, and it asks for your approval along the way. It has a Plan-and-Act workflow and supports MCP servers for extra tools. It is not tied to one model maker. Its site lists Anthropic, OpenAI, Google Gemini, AWS Bedrock, Azure, Ollama, DeepSeek, xAI, Mistral and OpenRouter, plus any OpenAI-compatible API.
+      For a web game, Cline can launch a browser, click, type, take screenshots and read console logs to test what it built. Plan mode explores and sets strategy, and Act mode asks for approval on each file edit and command. MCP servers add tools, and the community Godot MCP server names Cline as a client.
+
+      It works with Anthropic, OpenAI, Google Gemini, OpenRouter, AWS Bedrock, local models through Ollama and any OpenAI-compatible API.
     sources:
       - "https://cline.bot/"
       - "https://github.com/cline/cline"
+      - "https://github.com/Coding-Solo/godot-mcp"
   - slug: roo-code
     name: Roo Code
     url: "https://github.com/RooCodeInc/Roo-Code"
     intro: |-
-      Roo Code was an open source AI coding agent that ran as a VS Code extension, released under the Apache 2.0 license. Its maintainers shut the extension down on May 15, 2026, and archived the GitHub repository, which is now read-only.
+      Roo Code was an open-source AI coding agent for VS Code, released under the Apache 2.0 license. It offered Code, Architect, Ask and Debug modes plus custom modes. The extension shut down on May 15, 2026, and its GitHub repository is archived and read-only, with no further updates.
 
-      The repository's notice recommends Cline, or ZooCode, a community fork. The team now makes Roomote, a source-available, self-hosted cloud agent that investigates code, answers repository questions and opens pull requests. As of September 2026, roocode.com redirects to roomote.dev.
+      The repository points users to two alternatives: ZooCode, a fork started by the Roo Code community, and Cline, the project Roo Code originated from.
+
+      The same team now makes Roomote, a source-available, self-hosted cloud agent that investigates code, answers repository questions and opens pull requests. As of September 2026, roocode.com redirects to roomote.dev, and Roomote's self-hosted version is free for up to 10 users.
     sources:
       - "https://github.com/RooCodeInc/Roo-Code"
       - "https://roomote.dev/"
@@ -239,46 +292,56 @@ terms:
     name: Continue
     url: "https://continue.dev/"
     intro: |-
-      Continue is an open source AI coding assistant that has been used in VS Code, in JetBrains IDEs and from the command line. Its site now opens with a notice that Continue was acquired by Cursor.
+      Continue is an open-source AI coding assistant that has run as a VS Code extension, a JetBrains plugin and a command-line tool, released under the Apache 2.0 license. Continue was acquired by Cursor. The notice on its site says the team's mission was to amplify developers rather than automate them, and that the open-source codebase remains freely available as a foundation for others.
 
-      The notice says the team's mission was always to amplify developers instead of automating them, and that the open source codebase remains freely available as a foundation for others. Its FAQ now says all user data has been deleted in line with its privacy notice. As of September 2026, that notice is the first thing on continue.dev.
+      The GitHub repository is read-only and no longer actively maintained, so Continue gets no further fixes or features. Its final 2.0.0 release removed anonymous telemetry and pulled out authentication.
     sources:
       - "https://www.continue.dev/"
-      - "https://blog.continue.dev/"
+      - "https://github.com/continuedev/continue"
   # Chat apps
   - slug: claude-ai
     name: Claude app
     maker: Anthropic
     url: "https://claude.ai/"
     intro: |-
-      The Claude app is Anthropic's chat assistant. It is available on the web at claude.ai, as desktop apps for macOS and Windows, and as mobile apps for iOS and Android.
+      The Claude app is Anthropic's chat assistant. It runs on the web at claude.ai, as desktop apps for macOS and Windows with a Linux beta, and as mobile apps for iOS and Android.
 
-      For games, the feature to know is artifacts, which Anthropic introduced on June 21, 2024. Claude shows generated code, documents or website designs in a side panel, and it renders HTML and React live there, so a small browser game can be played in the panel and changed by chatting. Artifacts start private, and published artifacts get a shareable link. The desktop app also has a Code tab that includes Claude Code.
+      For games, the feature to know is artifacts, which Anthropic introduced on June 21, 2024. Ask for a small browser game and Claude builds it as an interactive artifact in a side panel, where you play it and change it by chatting. Artifacts start private, and you can publish one with a public link that others can remix. AI-powered artifacts can call Claude themselves, and players sign in with their own Claude account, so the maker pays no API costs.
+
+      Artifacts come with every plan, Free included. The desktop app also runs Claude Code for projects that outgrow one page.
     sources:
       - "https://support.claude.com/en/articles/9487310-what-are-artifacts-and-how-do-i-use-them"
       - "https://www.anthropic.com/news/claude-3-5-sonnet"
+      - "https://claude.com/download"
       - "https://code.claude.com/docs/en/overview"
   - slug: chatgpt
     name: ChatGPT
     maker: OpenAI
     url: "https://chatgpt.com/"
     intro: |-
-      ChatGPT is OpenAI's chat assistant. OpenAI released it on November 30, 2022, as a free research preview.
+      ChatGPT is OpenAI's chat assistant, released on November 30, 2022, as a free research preview. It runs on the web, as a desktop app for macOS, Windows and Linux, and on phones.
 
-      For code, OpenAI's help center says ChatGPT can show a preview of HTML pages and React components in a sandbox inside the chat, and it can run supported Python and show the console output. OpenAI notes that previews may fail when a page needs network access or external packages. Codex, OpenAI's coding agent, is also available from ChatGPT, with a cloud version at chatgpt.com/codex.
+      For a small game, you ask for a single HTML file in the chat. Code blocks have a Preview option that shows HTML pages and React components inside ChatGPT, so you can try the game before saving it. ChatGPT also generates images with gpt-image-2, and OpenAI lists sprite sheets, backgrounds and UI assets among the uses.
+
+      Bigger projects go to Codex, OpenAI's coding agent, which works inside the ChatGPT desktop app and at chatgpt.com/codex. As of September 2026, every ChatGPT plan includes Codex, Free included.
     sources:
       - "https://openai.com/index/chatgpt/"
-      - "https://help.openai.com/en/articles/9930697"
       - "https://help.openai.com/en/articles/20001246-working-with-writing-blocks-and-code-blocks-in-chatgpt"
+      - "https://learn.chatgpt.com/docs"
+      - "https://learn.chatgpt.com/docs/app"
+      - "https://learn.chatgpt.com/docs/image-generation"
+      - "https://learn.chatgpt.com/docs/pricing"
       - "https://github.com/openai/codex"
   - slug: gemini-app
     name: Gemini app
     maker: Google
     url: "https://gemini.google.com/"
     intro: |-
-      The Gemini app is Google's AI assistant, built on its Gemini models. You can use it to write, summarize, brainstorm, generate images and get coding help.
+      The Gemini app is Google's AI assistant, built on its Gemini models, on the web and on Android and iOS. It writes, summarizes and helps with code, and it also generates images and, with Veo, video.
 
-      For games, the relevant feature is Canvas. Google says Canvas lets you write, code and create in one place, turning ideas into working apps, games, quizzes and web pages from text prompts. You can preview what it builds, share it through a link, and refine the project with real-time feedback. Canvas is available to all Gemini users, and Google AI Pro and Ultra subscribers get more advanced models and a larger context window.
+      For games, the feature is Canvas. You describe an idea, Canvas writes the code, and you preview the result, refine it by chatting and share it with a link. Google's own examples include a sound memory game and a 3D planet generator.
+
+      Canvas is available to every Gemini user. Google AI Pro and Ultra subscribers get Canvas with Gemini 3 and a 1-million-token context window. Canvas projects open in the mobile apps, but text formatting edits work only on the desktop web version.
     sources:
       - "https://gemini.google/overview/canvas/"
       - "https://gemini.google/overview/"
@@ -287,13 +350,14 @@ terms:
     maker: SpaceXAI
     url: "https://grok.com/"
     intro: |-
-      The Grok app is the AI assistant made by xAI, the company behind the Grok family of models. SpaceX acquired xAI on February 2, 2026, and the company has since rebranded as SpaceXAI. Its site now reads SpaceXAI, creators of Grok.
+      The Grok app is the chat assistant from SpaceXAI, formerly xAI, the company behind the Grok models. SpaceX acquired xAI on February 2, 2026, and the company later took the SpaceXAI name. The app runs at grok.com, and SpaceXAI's Imagine models generate images and video, which developers can also reach through its API.
 
-      The app is a chat interface at grok.com. For building on your own computer, SpaceXAI has a separate tool, Grok Build, a coding agent that runs in a full-screen terminal interface, headlessly for scripts, or inside other editors through the Agent Client Protocol. SpaceXAI's documentation lists grok-4.7 as the coding model that powers Grok Build.
+      For building a game on your own computer, SpaceXAI has a separate tool, Grok Build. It is a coding agent with a full-screen terminal interface, a headless mode for scripts, and Agent Client Protocol support for running inside other editors. It installs on macOS, Linux and Windows.
+
+      The docs list grok-4.7 as the coding model behind Grok Build, and you sign in through the browser or with an xAI API key.
     sources:
       - "https://docs.x.ai/build/overview"
       - "https://docs.x.ai/overview"
-      - "https://x.ai/"
       - "https://en.wikipedia.org/wiki/SpaceXAI"
   # App and game builders
   - slug: google-ai-studio
@@ -301,11 +365,11 @@ terms:
     maker: Google
     url: "https://aistudio.google.com/"
     intro: |-
-      Google AI Studio is Google's browser-based workspace for building with Gemini models, and it includes a Build mode that turns a prompt into an app.
+      Google AI Studio is Google's browser-based workspace for building with Gemini models. Its Build mode turns a description into a working app with a live preview, and you refine it by chatting or by editing the code.
 
-      In Build mode you describe an app, and Gemini generates the code and files with a live preview beside them. You refine it by chatting or by editing code directly. Google's documentation lists two-way GitHub sync, deployment to Cloud Run and a ZIP download. Build mode can create web or Android apps, and it supports a full-stack Node.js runtime and Firebase.
+      Web apps are the default: a React front end with a Node.js runtime that can call APIs, use npm packages and connect to Firestore and Firebase Authentication. Build mode can also make Android apps in Kotlin and Jetpack Compose, previewed in a browser emulator.
 
-      At Google I/O on May 19, 2026, Google added project export to Antigravity with full context, and publishing of Android apps to the test track in Google Play Console.
+      You can sync with GitHub, download a ZIP, share the app or deploy it to Cloud Run, where Google Cloud pricing may apply. At Google I/O on May 19, 2026, Google added export of whole projects to Antigravity and publishing to the Google Play Console test track.
     sources:
       - "https://ai.google.dev/gemini-api/docs/aistudio-build-mode"
       - "https://blog.google/innovation-and-ai/technology/developers-tools/google-io-2026-developer-highlights/"
@@ -314,58 +378,77 @@ terms:
     maker: Google
     url: "https://firebase.studio/"
     intro: |-
-      Firebase Studio was Google's browser-based workspace for building full-stack apps with AI and Firebase services. Google describes it as a preview to explore AI-driven, full-stack development.
+      Firebase Studio is Google's agentic, cloud-based development environment for building full-stack apps with Gemini in the browser. Google is shutting it down.
 
-      Google announced the sunset on March 19, 2026. New workspaces and sign-ups were disabled on June 22, 2026, and Firebase Studio shuts down on March 22, 2027, when remaining data is permanently deleted. Google points users to Google AI Studio for prompt-to-app work on the web, or to Google Antigravity for code-first work. Core Firebase services such as Firestore, Authentication and App Hosting are not affected.
+      Google announced the sunset on March 19, 2026. New workspaces and sign-ups were disabled on June 22, 2026, and Firebase Studio closes on March 22, 2027, when all remaining data is permanently deleted. Apps already deployed keep running, and projects can be saved with Move now, then Zip and Download.
+
+      Google points prompt-to-app work on the web to Google AI Studio, and code-first agent work to Google Antigravity. Core Firebase services such as Cloud Firestore, Authentication and App Hosting are not affected.
     sources:
+      - "https://firebase.google.com/docs/studio"
       - "https://firebase.google.com/docs/studio/migrating-project"
   - slug: replit
     name: Replit
     url: "https://replit.com/"
     intro: |-
-      Replit is an online platform from Replit, Inc. for building apps and websites with AI. Its site describes an Agent that builds from a plain-language description, and its documentation lists Chat, Build and Design as the main parts.
+      Replit is an online platform for building and publishing apps and websites with AI. Its Agent writes the code from a plain-language description, and Replit's site lists 3D games next to apps, dashboards and mobile apps among the things it builds.
 
-      You describe what you want, and the Agent writes the code. Replit provides authentication, databases, hosting and monitoring, and you publish the result from the same place. The documentation says the Build area has a code editor with live preview. Replit runs in a web browser, on desktop for macOS and Windows, and on mobile for iOS and Android. It has a free mode.
+      You describe the game, the Agent builds it and tests it in a browser, and you publish it from the same place, so it gets a live link without separate hosting. Authentication, a database, hosting and monitoring are built in. Replit runs in the browser, as desktop apps for macOS and Windows, and on iOS and Android.
+
+      As of September 2026, a free mode needs no credit card, and paid plans start with Core at $20 a month.
     sources:
       - "https://replit.com/"
       - "https://docs.replit.com/"
+      - "https://replit.com/pricing"
   - slug: lovable
     name: Lovable
     url: "https://lovable.dev/"
     intro: |-
-      Lovable is a full-stack AI development platform where you build web apps by chatting with an AI. According to its documentation, it generates the frontend, backend, database and authentication from your description.
+      Lovable is a full-stack AI development platform where you build web apps by chatting. It generates the frontend, backend, database, authentication and integrations as editable code, and its docs list games and interactive content among the things people build.
 
-      The documented workflow is to chat, preview the app inside Lovable, publish it to a live URL, and sync the code to GitHub, GitLab or Bitbucket. Lovable connects to Supabase and other services for data. Plans are credit-based, and there is a free tier. Its output is web apps, so a game made there runs in the browser.
+      The workflow is to describe the app, try it in Lovable's preview, publish it to a live URL and, when you want to deploy elsewhere, sync the code to GitHub, GitLab or Bitbucket. The output is a web app, so a game made there runs in the browser, and the generated backend can hold player accounts and data.
+
+      Plans are priced by credits. As of September 2026, the free plan grants 5 build credits a day, up to 30 a month.
     sources:
       - "https://docs.lovable.dev/introduction/welcome"
+      - "https://lovable.dev/pricing"
   - slug: bolt
     name: Bolt
     maker: StackBlitz
     url: "https://bolt.new/"
     intro: |-
-      Bolt, at bolt.new, is an AI tool from StackBlitz that builds websites and apps from a chat. Its help center says it makes marketing sites, portfolios, online stores, dashboards, internal tools and presentations.
+      Bolt, at bolt.new, is an AI tool that turns a chat into websites and apps. Its help center lists marketing sites, portfolios, online stores, dashboards and internal tools, and when you ask for a mobile app, Bolt builds it with Expo for iPhone and Android.
 
-      You describe an idea in a prompt and watch a live preview as the project is built. Plan Mode lets you discuss an idea before Bolt generates code. Bolt Cloud provides a database, hosting with custom domains and publishing to a live site, and projects connect to GitHub. Bolt's site says it routes work to suitable AI models by task.
+      Plan Mode lets you talk an idea through before Bolt writes any code. When the game works, Bolt Cloud publishes it to a live website, with a database and third-party domains available, and projects can connect to GitHub. Bolt picks the model for each task, balancing quality and cost.
+
+      As of September 2026, the free plan allows 300K tokens a day and 1M a month, and free sites carry Bolt branding.
     sources:
       - "https://bolt.new/"
       - "https://support.bolt.new/"
+      - "https://support.bolt.new/integrations/expo"
+      - "https://bolt.new/pricing"
   - slug: v0
     name: v0
     maker: Vercel
     url: "https://v0.app/"
     intro: |-
-      v0 is Vercel's AI agent platform for building web apps from plain-language prompts. Vercel makes and runs it.
+      v0 is Vercel's AI agent for building code and full-stack apps from plain-language prompts. Its docs list landing pages, dashboards, online stores and AI apps as typical projects.
 
-      You describe an idea, and v0 generates a user interface and backend code, with a live preview as it builds. It supports modern web stacks such as Next.js, Tailwind CSS and shadcn/ui. It can fix errors it finds, deploy with one click to Vercel's infrastructure, and open pull requests for review. Vercel's homepage for v0 does not name the AI models behind it.
+      You describe an idea, and v0 writes the code with a live preview beside it. It works with Next.js, React, Tailwind CSS and shadcn/ui, so a game built there is a React web app. It fixes errors it finds, can browse and inspect sites, deploys to Vercel with one click, and can open a pull request for review instead.
+
+      As of September 2026, the free plan includes $5 of monthly credits, deployments to Vercel, GitHub sync and a limit of 7 messages a day.
     sources:
       - "https://v0.app/"
+      - "https://v0.app/docs"
+      - "https://v0.app/pricing"
   - slug: rosebud
     name: Rosebud AI
     url: "https://rosebud.ai/"
     intro: |-
-      Rosebud AI is a browser-based game maker from Rosebud AI, Inc. You describe a game in plain English, and Rosebud generates the code along with art and sound.
+      Rosebud AI is a browser-based game maker from Rosebud AI, Inc. You describe a game in plain English, and Rosebud builds the code, art and sound.
 
-      Games are built on Three.js, so they run as WebGL in the browser, and the JavaScript is editable. Rosebud covers 2D games, 3D worlds and voxel styles, and its site lists asset tools such as a sprite sheet generator and PixelVibe. You can playtest in the browser, iterate through chat and publish with one click. Windows desktop export is available. There is a free tier, and the site does not name the AI models behind it.
+      Games run as WebGL in the browser, with Three.js for 3D, and you can view and edit the generated JavaScript. Rosebud covers 2D games, 3D games and voxel worlds. Its asset tools include a sprite sheet generator, PixelVibe for 2D assets, a skybox generator and AI audio. You refine the game by chatting and publish it with one click to a shareable link, and a Windows export makes desktop builds.
+
+      There is a free tier, and paid plans add commercial rights. The site doesn't name the AI models behind it.
     sources:
       - "https://rosebud.ai/ai-game-creator"
       - "https://rosebud.ai/"
@@ -373,8 +456,10 @@ terms:
     name: WebSim
     url: "https://websim.com/"
     intro: |-
-      WebSim is a website where people create games and apps in the browser and share them. Its homepage says you can create games and apps for free.
+      WebSim is a website where people make games and apps in the browser, for free, and share them with other visitors.
 
-      Projects run in the browser, so other visitors can play them from the site. Visitors can comment on and rate projects, and the homepage highlights hot and trending projects, from games to simulators and interactive tools. WebSim has community channels on Discord, Reddit and X. The homepage carries a 2026 copyright for websim and does not name a company behind it.
+      Projects run on the site, so other visitors can play them without installing anything. The front page ranks them by Hot and Top, with a time filter, and visitors like and comment on them. Featured projects range from simulators to a game where AI adds whatever you comment, and some titles are multiplayer.
+
+      WebSim has community channels on Discord, Reddit and X. The homepage shows a 2026 copyright for websim and doesn't name a company or the AI models behind it.
     sources:
       - "https://websim.com/"
