@@ -1,7 +1,13 @@
 slug: vesper-the-last-light
 title: "Vesper: The Last Light"
-tagline: Submitted by its creator; the description is added during review.
-description: ""
+tagline: Explore a dim world, solve its puzzles, and bring back the last light.
+description: "Vesper: The Last Light is a single-player browser adventure built around exploration and puzzle solving. The player moves through a three-dimensional world, pieces together how its spaces fit together, and works toward a finish line. It is a casual, self-contained journey that can be completed in one sitting.
+
+
+  The creator's stated aim was a place you can explore, understand, and finish, rather than a scene that only looks impressive. That goal shapes the design, which favors a readable world and a sense of progress over spectacle. The project mixes procedural assets with licensed resources to fill out its setting.
+
+
+  According to the creator, the game was made with GPT-6 Astra in Codex. They describe shaping it through implementation, playtesting, and repeated iteration, combining AI-assisted work with procedural content and licensed materials. It runs on Three.js in the browser."
 play:
   url: https://vesper.mansgullberg.chatgpt.site/
   platforms:
@@ -9,6 +15,7 @@ play:
   embedPermission:
     by: submission
     date: 2026-09-30
+  embeddable: true
 creator:
   name: Kvickan
   handle: mansgullberg
@@ -22,14 +29,10 @@ made:
   source: "Creator's submission (issue #40)"
   evidence: creator
   notes: >-
-    I built it with GPT-6 Astra in Codex, shaping the game through
-    implementation, playtesting and iteration. The project combines AI-assisted
-    work, procedural assets and licensed resources.
+    I built it with GPT-6 Astra in Codex, shaping the game through implementation, playtesting and iteration. The project combines AI-assisted work, procedural assets and licensed resources.
 
 
-    The goal was not just to generate a scene that looks impressive. It was to
-    make a world you can actually explore, understand and finish—and care a
-    little about along the way.
+    The goal was not just to generate a scene that looks impressive. It was to make a world you can actually explore, understand and finish—and care a little about along the way.
 tech:
   engine: threejs
   multiplayer: single
