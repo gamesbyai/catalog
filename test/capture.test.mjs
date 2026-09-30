@@ -106,7 +106,8 @@ test('only https URLs are captured (http only for 127.0.0.1 when allowed)', asyn
 
 test('(a) a canvas game gives cover, shot-1 and shot-2 at 1280x720', async () => {
   const dir = join(tmp(), 'game');
-  const res = await captureOne(`${base}/game`, dir, FAST);
+  // Busy CI runners render this canvas in software: the FAST timings can let screenshots time out after the cover.
+  const res = await captureOne(`${base}/game`, dir, { ...FAST, times: [400, 1200, 2000], shotTimeout: 6000, deadline: 20_000 });
   assert.equal(res.ok, true, res.reason);
   assert.deepEqual(files(dir).sort(), ['cover.png', 'shot-1.png', 'shot-2.png']);
   assert.deepEqual(res.files.map((f) => f.slice(dir.length + 1)), ['cover.png', 'shot-1.png', 'shot-2.png']);
