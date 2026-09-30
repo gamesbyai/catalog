@@ -111,7 +111,8 @@ export function toEntry(f, { names, playUrls, slugs, today, issue }) {
     title,
     tagline: 'Submitted by its creator; the description is added during review.',
     description: '',
-    play: { url: playUrl, platforms: ['browser'] },
+    // The consent box (since 2026-09-30) also allows our player; older issues give no such permission.
+    play: { url: playUrl, platforms: ['browser'], ...(/may show it in its player/i.test(f.Permission ?? '') ? { embedPermission: { by: 'submission', date: today } } : {}) },
     ...(repo ? { repo } : {}),
     creator: creatorOf(f, creatorName, issue, notes),
     made: {

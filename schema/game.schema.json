@@ -55,6 +55,26 @@
         "embeddable": {
           "type": "boolean"
         },
+        "embedPermission": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "by",
+            "date"
+          ],
+          "properties": {
+            "by": {
+              "enum": [
+                "submission",
+                "email"
+              ]
+            },
+            "date": {
+              "type": "string",
+              "format": "date"
+            }
+          }
+        },
         "platforms": {
           "type": "array",
           "minItems": 1,

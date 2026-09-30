@@ -36,7 +36,7 @@ export function issueForm(dir = '.') {
       {
         type: 'checkboxes',
         id: 'permission',
-        attributes: { label: 'Permission', options: [{ label: "I made this game or have the creator's permission, and I agree to the editorial policy.", required: true }] },
+        attributes: { label: 'Permission', options: [{ label: "I made this game or have the creator's permission. GamesByAI may show it in its player, and I agree to the editorial policy.", required: true }] },
       },
     ],
   };
