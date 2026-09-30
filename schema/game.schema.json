@@ -455,6 +455,25 @@
             "minLength": 1,
             "maxLength": 120
           }
+        },
+        "uploads": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "ref",
+            "count"
+          ],
+          "properties": {
+            "ref": {
+              "type": "string",
+              "pattern": "^[0-9a-f]{16}$"
+            },
+            "count": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 3
+            }
+          }
         }
       }
     }

@@ -3,7 +3,8 @@ import assert from 'node:assert/strict';
 import { mkdtempSync, mkdirSync, writeFileSync, cpSync } from 'node:fs';
 import { tmpdir } from 'node:os';
 import { join } from 'node:path';
-import { stringify } from 'yaml';
+import { execFileSync } from 'node:child_process';
+import { parse, stringify } from 'yaml';
 import { parseIssue, toEntry, loadContext } from '../scripts/issue-to-entry.mjs';
 import { validate } from '../scripts/validate.mjs';
 
@@ -210,10 +211,115 @@ test('an entry with a profile link passes validation once its description is wri
   assert.deepEqual(validate(dir).problems, []);
 });
 
+// The site's issue body: the Screenshots section comes right after "How you made it".
+const siteBody = (shots, over = {}) =>
+  body(over).replace(/(### How you made it \(600 characters max\)\n\n[^\n]*)/, (m) => (shots === undefined ? m : `${m}\n\n### Screenshots (optional)\n\n${shots}`));
+
+test("the site's Screenshots section becomes provenance.uploads", () => {
+  const ctx = { ...loadContext(repo()), today: '2026-09-30', issue: 50, fromSite: true };
+  for (const [value, count] of [['1 uploaded, ref 0123456789abcdef', 1], ['2 uploaded, ref 3f9a0c1e8b7d6a54', 2], ['3 uploaded, ref ffffffffffffffff', 3]]) {
+    const f = parseIssue(siteBody(value));
+    assert.equal(f['Screenshots (optional)'], value);
+    const r = toEntry(f, ctx);
+    assert.equal(r.error, undefined);
+    assert.deepEqual(r.entry.provenance, { foundVia: 'form', submittedBy: '#50', uploads: { ref: value.slice(-16), count } });
+    assert.deepEqual(r.notes, []);
+  }
+});
+
+test('no screenshots ("_No response_" or no section at all) means no uploads and no note', () => {
+  const ctx = { ...loadContext(repo()), today: '2026-09-30', issue: 51, fromSite: true };
+  const plain = toEntry(parseIssue(body()), ctx);
+  for (const b of [siteBody('_No response_'), siteBody(undefined), body()]) {
+    const r = toEntry(parseIssue(b), ctx);
+    assert.equal(r.entry.provenance.uploads, undefined);
+    assert.deepEqual(r.notes, []);
+    assert.deepEqual(r.entry, plain.entry);
+  }
+});
+
+test('a Screenshots value in any other form is a note and no uploads (strict)', () => {
+  const ctx = { ...loadContext(repo()), today: '2026-09-30', issue: 52, fromSite: true };
+  const plain = toEntry(parseIssue(body()), ctx);
+  for (const value of [
+    '0 uploaded, ref 3f9a0c1e8b7d6a54',
+    '4 uploaded, ref 3f9a0c1e8b7d6a54',
+    '2 uploaded, ref 3F9A0C1E8B7D6A54',
+    '2 uploaded, ref 3f9a0c1e8b7d6a5',
+    '2 uploaded, ref 3f9a0c1e8b7d6a54a',
+    '2 uploaded, ref 3f9a0c1e8b7d6a54 and more',
+    '2 uploaded,  ref 3f9a0c1e8b7d6a54',
+    'two uploaded, ref 3f9a0c1e8b7d6a54',
+    '2 uploaded, ref ../../3f9a0c1e8b',
+    '2 uploaded, ref 3f9a0c1e8b7d6a54\n\nsee https://evil.example/',
+    'yes',
+  ]) {
+    const r = toEntry(parseIssue(siteBody(value)), ctx);
+    assert.equal(r.error, undefined, value);
+    assert.equal(r.entry.provenance.uploads, undefined, value);
+    assert.ok(r.notes.some((n) => /Screenshots section was not in the form the site writes/.test(n)), value);
+    assert.deepEqual(r.entry, plain.entry, value);
+    assert.doesNotMatch(r.notes.join(' '), /evil|3f9a/, 'the note never echoes the value');
+  }
+});
+
+test('a Screenshots section that appears twice is ignored, even when one of them is valid', () => {
+  const ctx = { ...loadContext(repo()), today: '2026-09-30', issue: 53, fromSite: true };
+  const section = (v) => `### Screenshots (optional)\n\n${v}`;
+  for (const [first, second] of [['3 uploaded, ref 0123456789abcdef', '_No response_'], ['_No response_', '3 uploaded, ref 0123456789abcdef'], ['1 uploaded, ref 0123456789abcdef', '1 uploaded, ref 0123456789abcdef']]) {
+    const twice = body({ 'How you made it (600 characters max)': `Made it.\n\n${section(first)}\n\n${section(second)}` });
+    const r = toEntry(parseIssue(twice), ctx);
+    assert.equal(r.entry.provenance.uploads, undefined, `${first} / ${second}`);
+    assert.ok(r.notes.some((n) => /Screenshots section was not in the form/.test(n)), `${first} / ${second}`);
+  }
+});
+
+test('only issues the site files can name uploaded screenshots: refs are public, and anyone can write the section', () => {
+  const dir = repo();
+  for (const fromSite of [false, undefined]) {
+    const r = toEntry(parseIssue(siteBody('2 uploaded, ref 3f9a0c1e8b7d6a54')), { ...loadContext(dir), today: '2026-09-30', issue: 54, ...(fromSite === undefined ? {} : { fromSite }) });
+    assert.equal(r.error, undefined);
+    assert.equal(r.entry.provenance.uploads, undefined);
+    assert.ok(r.notes.some((n) => /only come through the form on gamesbyai\.win/.test(n)), r.notes.join('\n'));
+  }
+});
+
+test('the GitHub issue form has no Screenshots field: uploads only come through the site', async () => {
+  const { issueForm } = await import('../scripts/issue-form.mjs');
+  assert.ok(!issueForm('.').body.some((b) => /screenshot/i.test(b.attributes?.label ?? '')));
+});
+
+test('the CLI trusts the Screenshots section only when the issue author is a Bot', () => {
+  const dir = repo();
+  const run = (type) =>
+    JSON.parse(
+      execFileSync(process.execPath, [join(process.cwd(), 'scripts', 'issue-to-entry.mjs')], {
+        cwd: dir,
+        encoding: 'utf8',
+        env: { ...process.env, ISSUE_BODY: siteBody('2 uploaded, ref 3f9a0c1e8b7d6a54'), ISSUE_NUMBER: '55', ISSUE_AUTHOR_TYPE: type },
+      }),
+    );
+  assert.deepEqual(parse(run('Bot').yaml).provenance.uploads, { ref: '3f9a0c1e8b7d6a54', count: 2 });
+  const user = run('User');
+  assert.equal(parse(user.yaml).provenance.uploads, undefined);
+  assert.ok(user.notes.some((n) => /only come through the form/.test(n)));
+});
+
 test('the consent box that allows our player records the permission; an older consent text does not', () => {
   const dir = repo();
   const now = toEntry(parseIssue(body({ Permission: "- [X] I made this game or have the creator's permission. GamesByAI may show it in its player, and I agree to the editorial policy." })), { ...loadContext(dir), today: '2026-10-01', issue: 12 });
   assert.deepEqual(now.entry.play.embedPermission, { by: 'submission', date: '2026-10-01' });
   const old = toEntry(parseIssue(body()), { ...loadContext(dir), today: '2026-10-01', issue: 13 });
   assert.equal(old.entry.play.embedPermission, undefined);
+});
+
+test("a creator handle already in the catalog keeps its spelling; someone else's gets its own page", () => {
+  const dir = repo();
+  const ctx = { ...loadContext(dir), creators: new Map([['ada-dev', 'Ada Dev'], ['taken', 'Someone Else']]), today: '2026-10-01', issue: 44 };
+  const same = toEntry(parseIssue(body({ 'Creator name': 'ada dev', 'Profile link (optional)': 'https://github.com/ada-dev' })), ctx);
+  assert.equal(same.entry.creator.name, 'Ada Dev');
+  assert.equal(same.entry.creator.handle, 'ada-dev');
+  const other = toEntry(parseIssue(body({ 'Creator name': 'Taken Name', 'Profile link (optional)': 'https://github.com/taken' })), ctx);
+  assert.equal(other.entry.creator.handle, 'taken-44');
+  assert.ok(other.notes.some((n) => n.includes('/creators/taken/')));
 });

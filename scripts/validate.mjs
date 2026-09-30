@@ -42,6 +42,7 @@ export function validate(dir = '.') {
   const gamesDir = join(dir, 'games');
   const files = existsSync(gamesDir) ? readdirSync(gamesDir).filter((f) => f.endsWith('.yaml')).sort() : [];
   const playUrls = new Map();
+  const handles = new Map();
   for (const f of files) {
     const rel = `games/${f}`;
     const g = read(rel);
@@ -64,6 +65,10 @@ export function validate(dir = '.') {
     const key = g.play.url.replace(/\/+$/, '').toLowerCase();
     if (playUrls.has(key)) problems.push(`${rel}: same play.url as ${playUrls.get(key)}`);
     else playUrls.set(key, rel);
+    // One creator page per handle: every entry with the handle must spell the name the same way (the site checks too).
+    const prev = handles.get(g.creator.handle);
+    if (prev !== undefined && prev !== g.creator.name) problems.push(`${rel}: creator handle "${g.creator.handle}" already belongs to "${prev}"`);
+    else handles.set(g.creator.handle, g.creator.name);
   }
   return { problems, files: files.length };
 }

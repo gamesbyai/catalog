@@ -62,7 +62,7 @@ terms:
     family: Grok
     url: "https://x.ai/"
     intro: |-
-      xAI makes the Grok models. Its site and documentation now use the name SpaceXAI, while the models keep the Grok name. As of September 2026 its most capable model is Grok 4.7, released September 21, 2026 for coding, agentic tasks and knowledge work. The API still lists Grok 4.6 and Grok 4.5.
+      xAI makes the Grok models. Its site and documentation now use the name SpaceXAI, while the models keep the Grok name. As of September 2026 its most capable model is Grok 4.7, released September 21, 2026 for coding, agentic tasks and knowledge work. The API still lists Grok 4.6, Grok 4.5, Grok 4.3 and Grok 4.20.
 
       Grok Build is xAI's coding agent, open source under Apache 2.0 since July 2026. It launched in early beta in May 2026 for SuperGrok and X Premium+ subscribers, now has a free tier, and also accepts an xAI API key. It runs in a terminal, headless in scripts, or inside other apps through the Agent Client Protocol, and it works with AGENTS.md files, skills, plugins and MCP servers.
 
@@ -173,6 +173,8 @@ terms:
       That license asks for "Built with Llama" attribution and requires a separate license from Meta for products with more than 700 million monthly active users.
 
       Meta introduced Muse Spark on April 8, 2026 and calls Llama 4 Maverick its previous model. As of September 2026 its developer site offers Muse Spark 1.3 through the Meta Model API. It also offers Muse Code, a terminal coding agent built for Muse Spark, and Muse Image, which generates and edits images. In chat, Muse Spark is available at meta.ai and in the Meta AI app.
+
+      Muse Glimmer, released August 10, 2026, is an open-weight model distilled from Muse Spark and built to run on your own hardware. Its weights are on Hugging Face under the Apache 2.0 license.
     sources:
       - "https://ai.meta.com/blog/llama-4-multimodal-intelligence/"
       - "https://github.com/meta-llama/llama-models/blob/main/models/llama4/LICENSE"
@@ -180,3 +182,124 @@ terms:
       - "https://ai.meta.com/blog/introducing-muse-spark-msl/"
       - "https://dev.meta.ai/docs/overview"
       - "https://dev.meta.ai/models/muse-spark"
+  - slug: microsoft
+    name: Microsoft
+    family: MAI
+    url: https://microsoft.ai/
+    sources:
+      - https://microsoft.ai/news/building-a-hillclimbing-machine-launching-seven-new-mai-models/
+      - https://microsoft.ai/models/mai-code-1-flash/
+      - https://github.blog/changelog/2026-08-11-mai-code-1-1-flash-available-in-github-copilot/
+  - slug: poolside
+    name: Poolside
+    family: Laguna
+    url: https://poolside.ai/
+    sources:
+      - https://poolside.ai/models
+      - https://docs.poolside.ai/release-notes/models
+      - https://openrouter.ai/poolside
+  - slug: cohere
+    name: Cohere
+    family: Command
+    url: https://cohere.com/
+    sources:
+      - https://docs.cohere.com/docs/models
+      - https://cohere.com/blog/north-mini-code
+      - https://openrouter.ai/cohere
+  - slug: nvidia
+    name: NVIDIA
+    family: Nemotron
+    url: https://developer.nvidia.com/nemotron
+    sources:
+      - https://developer.nvidia.com/nemotron
+      - https://research.nvidia.com/labs/nemotron/Nemotron-3/
+      - https://openrouter.ai/nvidia
+  - slug: inception
+    name: Inception
+    family: Mercury
+    url: https://www.inceptionlabs.ai/
+    sources:
+      - https://www.inceptionlabs.ai/models
+      - https://docs.inceptionlabs.ai/get-started/models
+      - https://openrouter.ai/inception
+  - slug: amazon
+    name: Amazon
+    family: Nova
+    url: https://aws.amazon.com/nova/
+    sources:
+      - https://aws.amazon.com/nova/models/
+      - https://docs.aws.amazon.com/nova/latest/nova2-userguide/whats-new.html
+      - https://openrouter.ai/amazon
+  - slug: arcee
+    name: Arcee AI
+    family: Trinity
+    url: https://www.arcee.ai/
+    sources:
+      - https://www.arcee.ai/trinity
+      - https://www.arcee.ai/blog/trinity-large-thinking
+      - https://openrouter.ai/arcee-ai
+  - slug: xiaomi
+    name: Xiaomi
+    family: MiMo
+    url: https://mimo.xiaomi.com/
+    sources:
+      - https://mimo.xiaomi.com/
+      - https://mimo.xiaomi.com/mimo-v2-6
+      - https://huggingface.co/XiaomiMiMo
+  - slug: bytedance
+    name: ByteDance
+    family: Seed
+    url: https://seed.bytedance.com/en/
+    sources:
+      - https://seed.bytedance.com/en/seed2_1
+      - https://seed.bytedance.com/en/blog/seed2-1-officially-released-advancing-ai-productivity
+  - slug: tencent
+    name: Tencent
+    family: Hy
+    url: https://aistudio.tencent.com/
+    sources:
+      - https://huggingface.co/tencent/Hy3
+      - https://github.com/Tencent-Hunyuan/Hy3
+  - slug: baidu
+    name: Baidu
+    family: ERNIE
+    url: https://ernie.baidu.com/
+    sources:
+      - https://ernie.baidu.com/blog/posts/ernie-5.1-0508-release/
+      - https://ernie.baidu.com/blog/posts/ernie5.0/
+  - slug: stepfun
+    name: StepFun
+    family: Step
+    url: https://platform.stepfun.ai/
+    sources:
+      - https://static.stepfun.com/blog/step-3.7-flash/
+      - https://platform.stepfun.ai/
+  - slug: meituan
+    name: Meituan
+    family: LongCat
+    url: https://longcat.chat/
+    sources:
+      - https://huggingface.co/meituan-longcat/LongCat-2.0
+      - https://longcat.chat/blog/longcat-2.0
+  - slug: ant-group
+    name: Ant Group
+    family: Ling
+    url: https://huggingface.co/inclusionAI
+    sources:
+      - https://huggingface.co/inclusionAI
+      - https://huggingface.co/inclusionAI/Ling-3.0-flash
+  - slug: kuaishou
+    name: Kuaishou
+    family: KAT
+    url: https://kwaipilot.github.io/KAT-Coder/
+    sources:
+      - https://kwaipilot.github.io/KAT-Coder/
+      - https://huggingface.co/Kwaipilot
+      - https://huggingface.co/papers/2607.05471
+  - slug: upstage
+    name: Upstage
+    family: Solar
+    url: https://www.upstage.ai/
+    sources:
+      - https://www.upstage.ai/blog/en/solar-pro-4
+      - https://console.upstage.ai/docs/models

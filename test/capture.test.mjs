@@ -199,7 +199,8 @@ test('a game that freezes after its cover keeps the cover (partial capture)', as
 });
 
 test('a game whose frames hog the main thread times out, then is captured on a throttled second pass', async () => {
-  const hog = { ...FAST, times: [300, 700], shotTimeout: 1900, deadline: 20_000 };
+  // A hogged main thread can also slow the page load on a busy CI runner: load gets its own generous limit.
+  const hog = { ...FAST, times: [300, 700], shotTimeout: 1900, deadline: 20_000, navTimeout: 15_000 };
   const first = await captureOne(`${base}/raf-hog`, join(tmp(), 'hog'), hog);
   assert.equal(first.ok, false);
   assert.equal(first.reason, 'screenshot');
@@ -222,7 +223,7 @@ test('a black first frame followed by screenshot timeouts still gets the throttl
   mkdirSync(join(root, 'games'));
   writeFileSync(join(root, 'games', 'late.yaml'), `play:\n  url: ${base}/black-then-hog\n`);
   const lines = [];
-  const [res] = await captureSlugs(['late'], { ...FAST, times: [200, 1200, 1600], shotTimeout: 1900, deadline: 20_000, root, out: join(root, 'out'), log: (l) => lines.push(l) });
+  const [res] = await captureSlugs(['late'], { ...FAST, times: [200, 1200, 1600], shotTimeout: 1900, deadline: 20_000, navTimeout: 15_000, root, out: join(root, 'out'), log: (l) => lines.push(l) });
   assert.match(lines.join(' '), /retry throttled/);
   assert.notEqual(res.reason, 'blank');
 });
@@ -309,6 +310,63 @@ test('a loading screen never becomes the cover; an all-black game is not capture
   const black = await captureOne(`${base}/black`, join(tmp(), 'black'), FAST);
   assert.equal(black.ok, false);
   assert.equal(black.reason, 'blank');
+});
+
+const sentEntry = (url, uploads = { ref: '3f9a0c1e8b7d6a54', count: 2 }) =>
+  `slug: sent\ntitle: Sent\nplay: { url: "${url}", platforms: [browser] }\nprovenance:\n  foundVia: form\n  submittedBy: "#9"\n  uploads: ${JSON.stringify(uploads)}\n`;
+
+test('a game whose creator sent screenshots is never opened in the browser: skipped, no files, no failure', async () => {
+  const root = tmp();
+  mkdirSync(join(root, 'games'));
+  // The play URL would capture fine: the skip is the entry's doing, not the page's.
+  writeFileSync(join(root, 'games', 'sent.yaml'), sentEntry(`${base}/game`));
+  const out = join(root, 'out');
+  const lines = [];
+  const started = Date.now();
+  const [res] = await captureSlugs(['sent'], { ...FAST, root, out, log: (l) => lines.push(l) });
+  assert.deepEqual(res, { slug: 'sent', ok: true, skipped: 'uploads' });
+  assert.ok(Date.now() - started < 1000, 'no page was loaded');
+  assert.ok(!existsSync(join(out, 'sent')));
+  assert.ok(!existsSync(join(out, 'failed.json')), 'a skip is not a failure');
+  assert.match(lines.join(' '), /skip sent: the creator sent screenshots/);
+});
+
+test('splitUploads sends games with valid creator uploads to the upload job and every other slug to the browser', async () => {
+  const { splitUploads } = await import('../scripts/capture.mjs');
+  const root = tmp();
+  mkdirSync(join(root, 'games'));
+  writeFileSync(join(root, 'games', 'sent.yaml'), sentEntry('https://sent.example/'));
+  writeFileSync(join(root, 'games', 'plain.yaml'), 'slug: plain\nplay: { url: "https://plain.example/" }\nprovenance: { foundVia: form }\n');
+  writeFileSync(join(root, 'games', 'odd.yaml'), sentEntry('https://odd.example/', { ref: 'NOT-HEX', count: 2 }));
+  writeFileSync(join(root, 'games', 'many.yaml'), sentEntry('https://many.example/', { ref: '3f9a0c1e8b7d6a54', count: 4 }));
+  writeFileSync(join(root, 'games', 'broken.yaml'), 'slug: [unclosed\n');
+  assert.deepEqual(splitUploads(['plain', 'sent', 'odd', 'many', 'broken', 'missing', '../games/sent'], { root }), {
+    capture: ['plain', 'odd', 'many', 'broken', 'missing', '../games/sent'],
+    uploads: ['sent'],
+  });
+});
+
+test('capture.mjs --split prints the split as JSON for the workflow', async () => {
+  const { execFileSync } = await import('node:child_process');
+  const slug = readdirSync('games').find((f) => f.endsWith('.yaml')).slice(0, -5);
+  const list = join(tmp(), 'slugs.txt');
+  writeFileSync(list, `${slug}\nno-such-game\n`);
+  const res = JSON.parse(execFileSync(process.execPath, ['scripts/capture.mjs', '--split', list], { encoding: 'utf8' }));
+  assert.deepEqual(res, { capture: [slug, 'no-such-game'], uploads: [] });
+});
+
+test('the capture workflow: the capture job holds no secrets and skips uploaded games; the upload job fetches them', async () => {
+  const { parse } = await import('yaml');
+  const wf = parse(readFileSync('.github/workflows/capture.yml', 'utf8'));
+  const capture = JSON.stringify(wf.jobs.capture);
+  assert.doesNotMatch(capture, /secrets\./, 'game pages run in the capture job: it gets no secrets');
+  assert.match(wf.jobs.capture.steps.find((s) => s.name === 'Capture').run, /capture\.txt/, 'only the split list is captured');
+  assert.match(wf.jobs.capture.outputs.uploads, /steps\.split\.outputs\.uploads/);
+  const step = wf.jobs.upload.steps.find((s) => s.id === 'upload');
+  assert.equal(step.env.INTERNAL_NOTIFY_TOKEN, '${{ secrets.INTERNAL_NOTIFY_TOKEN }}');
+  assert.equal(step.env.UPLOADS, '${{ needs.capture.outputs.uploads }}');
+  assert.equal(step.run.match(/--uploads "\$UPLOADS"/g).length, 2);
+  assert.match(wf.jobs.upload.if, /needs\.capture\.outputs\.uploads != ''/);
 });
 
 test('a slow game can get a longer wait: every frame moves later and the deadline grows with it', async () => {
