@@ -1,8 +1,8 @@
-slug: buzzdrop
-title: Buzzdrop
+slug: night-drop
+title: Night Drop
 tagline: Fly a tiny delivery drone through a dark apartment without waking the cat
 description: >-
-  Buzzdrop is a 3D courier game that runs from a single HTML file. You pilot a
+  Night Drop is a 3D courier game that runs from a single HTML file. You pilot a
   drone about the size of a cookie through a giant apartment at night, carrying
   deliveries from place to place while keeping quiet enough that the household
   cat stays asleep.
@@ -14,9 +14,10 @@ description: >-
   without disturbing anything.
 
 
-  The project is hosted on GitHub as one self-contained page, so it needs no
-  install. The creator credits Claude as the AI tool used, and the game draws on
-  the canvas for its rendering.
+  The whole game is one self-contained page on GitHub, so it needs no install.
+  According to the creator's README, the room is built at load time from simple
+  shapes and canvas textures with three.js, with no model or image files. Grok
+  4.7 supplied the ideas and prompts, and Claude wrote the code.
 play:
   url: https://gipppp121.github.io/buzzdrop
   embeddable: true
@@ -40,16 +41,16 @@ made:
   evidence: repo
   evidenceUrl: https://github.com/Gipppp121/buzzdrop
 tech:
-  engine: canvas
+  engine: threejs
   multiplayer: single
 genres:
   - stealth
   - simulation
 media:
-  cover: games/buzzdrop/cover
+  cover: games/night-drop/cover
   screenshots:
-    - games/buzzdrop/shot-1
-    - games/buzzdrop/shot-2
+    - games/night-drop/shot-1
+    - games/night-drop/shot-2
 dates:
   added: 2026-09-30
   updated: 2026-09-30
