@@ -2,20 +2,20 @@ slug: aerosim
 title: AeroSim
 tagline: Pilot a rocket from one interstellar location to another.
 description: >-
-  AeroSim is a rocket flight simulator set among interstellar locations. The
-  player pilots a rocket and flies from one destination to the next, treating
-  the trip as a journey between places in space rather than a single short hop.
+  AeroSim is a flight simulator for a rocket, set among interstellar locations.
+  You pilot the rocket from one of them to the next, and the game treats each
+  trip as a journey between places in space rather than a single short hop.
 
 
-  The game grows out of the creator's long-standing interest in flight
-  simulators, and it applies that interest to spaceflight. Its focus is on the
-  act of flying itself, with travel between locations as the goal. It was
-  entered in Vibe Jam 2026 as a single-player browser project.
+  The creator made it for Vibe Jam 2026 as a first attempt at building a flight
+  simulator of this kind, using Cursor as the AI tool and Three.js for the 3D
+  scene. The single-player jam build finished 207th of the 945 entries.
 
 
-  Cursor was part of the development process, and the 3D scene is rendered with
-  Three.js. The project was made for the jam as a first attempt at building a
-  flight simulator of this kind.
+  The idea grew out of the creator's long-standing interest in flight
+  simulators, applied here to spaceflight. Flying is the point: the focus stays
+  on the act of piloting the rocket, with reaching the next destination as the
+  goal of each trip.
 play:
   url: https://space-exploration-imye.onrender.com
   embeddable: true

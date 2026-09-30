@@ -2,21 +2,20 @@ slug: bomber-guys
 title: Bomber Guys
 tagline: Blast the floor away and knock seven rivals off the arena.
 description: >-
-  Bomber Guys is an eight-player bomb arena set on a floor that breaks apart as
-  the match goes on. Each player drops bombs to blow holes in the ground and
-  shove opponents toward the edge. The goal is to be the last one standing after
-  everyone else has been knocked off.
+  Bomber Guys is an eight-player bomb arena on a floor that breaks apart as the
+  match goes on. You drop bombs to blow holes in the ground and shove opponents
+  toward the edge, and you win by being the last one standing once the other
+  seven are gone.
 
 
-  The arena itself is the main weapon and the main hazard. Every explosion
-  removes footing, so a well-placed bomb can trap a rival, while a careless one
-  can leave you with nowhere to run. Matches stay short and readable, in the
-  style of simple arcade games. It supports multiplayer and runs on mobile.
+  Its creator says it draws on the kind of simple games they used to work on at
+  Voodoo.io, and matches stay short and readable in that arcade style. It was
+  made with Claude Code on Three.js and came 296th of 945 at Vibe Jam 2026.
 
 
-  The creator built it with Claude Code on Three.js, and says it draws on the
-  kind of simple games they used to work on at Voodoo.io. It was entered in Vibe
-  Jam 2026.
+  The arena is both the main weapon and the main hazard. Every explosion removes
+  footing, so a well-placed bomb can trap a rival, while a careless one can
+  leave you with nowhere to run.
 play:
   url: https://bomber-guys.vercel.app
   embeddable: true

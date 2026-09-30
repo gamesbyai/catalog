@@ -2,19 +2,20 @@ slug: one-last-surf
 title: One Last Surf
 tagline: Ride waves through a surf session that runs from daylight into a starry night.
 description: >-
-  One Last Surf is a relaxed surfing game set on the open ocean. You paddle out,
-  catch waves, and ride them while the day moves on. Sessions are meant to be
-  unhurried, centered on getting into the next wave and staying on your board.
+  You paddle out, catch waves and ride them while the day moves on in One Last
+  Surf, a relaxed surfing game on the open ocean. Sessions are unhurried,
+  centered on getting into the next wave and then staying up on your board.
 
 
-  The sky is a big part of the experience. The light shifts through the day into
-  a sunset, and once night falls you can look up at the stars. The creator drew
-  on a year of surf lessons after school and wanted to capture how hard
-  barreling waves are to ride, after two years away from surfing.
+  The creator drew on a year of surf lessons after school. After two years away
+  from surfing, they wanted to capture how hard barreling waves are to ride.
+  Claude Code and Three.js were used for the build, and it came 181st of 945 at
+  Vibe Jam 2026.
 
 
-  It was made for Vibe Jam 2026 as a browser game built with Three.js, and it
-  placed 181st out of 945 entries. The creator built it with Claude Code.
+  The sky does a lot of the work. The light shifts through the day into a
+  sunset, and once night falls you can look up at the stars, so one session runs
+  from daylight into a starry night.
 play:
   url: https://onelast.surf
   embeddable: true

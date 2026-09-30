@@ -2,22 +2,21 @@ slug: call-of-the-abyss
 title: Call Of The Abyss
 tagline: Defend a beach as the last crab against waves of mutant sea creatures.
 description: >-
-  You play the last crab on a sun-bleached beach, holding your ground against
-  endless waves of mutant sea creatures. Your weapons are powered by water, and
-  each wave pushes you to keep shooting and stay alive. The run has a clear end
-  point: Cthulhu rises from the abyss to finish you off.
+  Call Of The Abyss makes you the last crab on a sun-bleached beach. Endless
+  waves of mutant sea creatures keep coming, and you hold your ground with
+  water-powered weapons, shooting through each wave to stay alive for as long as
+  you can.
 
 
-  The mix of a small, bleached shoreline and a tentacled cosmic horror gives the
-  game a darkly comic tone. It blends action shooting with wave-defense
-  structure, so the goal is to survive as long as possible. The game supports
-  mobile play as well.
+  A solo developer made it over a few weeks for Vibe Jam 2026, as an experiment
+  in how far AI-assisted vibe coding can go for a solo indie game. It was built
+  with Claude Code on Three.js and plays on phones as well as desktops.
 
 
-  It was made for Vibe Jam 2026 by a solo developer working over a few weeks.
-  The creator built it with Claude Code on Three.js, and describes the project
-  as an experiment in how far AI-assisted vibe coding can go for a solo indie
-  game.
+  The tone is darkly comic, with a small, bleached shoreline set against a
+  tentacled cosmic horror. Underneath, it is wave defense built on action
+  shooting, and every run heads for the same end point: Cthulhu rising from the
+  abyss to finish you off.
 play:
   url: https://calloftheabyss.online
   embeddable: true

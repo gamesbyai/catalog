@@ -2,22 +2,21 @@ slug: splashpop-arena
 title: SplashPop Arena
 tagline: Shoot paint at bots or up to 8 friends and score points before time runs out.
 description: >-
-  SplashPop Arena is a fast-paced arena shooter in which paint replaces bullets.
+  SplashPop Arena is a fast-paced arena shooter that swaps bullets for paint.
   Every paint hit you land earns points, and each match is a race against the
-  clock. You can play against computer-controlled bots or bring in up to 8
-  friends for a multiplayer round.
+  clock. You can take on computer-controlled bots, or bring in up to 8 friends
+  for a multiplayer round.
 
 
-  The design draws on the tense tactical duels, aim-focused gunplay, and
-  round-based competitive rhythm of CS:GO, according to the creator. That
-  influence shows in the emphasis on accurate shooting and short, contained
-  matches. The paint theme keeps the tone lighter than a typical military
-  shooter.
+  According to the creator, the design draws on CS:GO: tense tactical duels,
+  aim-focused gunplay, and a round-based competitive rhythm. It shows in the
+  weight on accurate shooting and in matches that stay short and contained.
+  Cursor and Three.js were the creator's tools, the arena is rendered in 3D, and
+  it landed 306th of 945 in Vibe Jam 2026.
 
 
-  It runs in 3D in the browser with Three.js, and the creator built it with
-  Cursor. It was entered in Vibe Jam 2026, where it placed 306th out of 945
-  entries.
+  The paint keeps the tone lighter than a typical military shooter, but every
+  point still comes down to landing the hit before the clock runs out.
 play:
   url: https://splashpoparena.com
   embeddable: true

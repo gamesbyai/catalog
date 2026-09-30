@@ -2,20 +2,20 @@ slug: escape-room
 title: Escape Room
 tagline: Solve puzzles to escape rooms that an AI generates on the fly.
 description: >-
-  Escape Room is a browser puzzle game in which the player is placed inside a
-  room and has to work out how to get out. The rooms are generated dynamically
-  by AI, so the layout and the puzzles to solve can differ from one attempt to
-  the next.
+  Escape Room locks you in a room that an AI generated on the fly and asks you
+  to work out how to get out. Because the rooms are generated dynamically, the
+  layout and the puzzles can differ from one attempt to the next.
 
 
-  The game centers on recreating the escape room experience virtually. The
-  creator says they simply like escape rooms, and the project reflects that with
-  a puzzle-first design built around a 3D space you can look around and examine.
-  It was entered in Vibe Jam 2026 and is playable on mobile as well as desktop.
+  The creator says they simply like escape rooms, and the project is an attempt
+  to recreate the real thing virtually. According to the creator, it was built
+  with Claude Code and rendered with Three.js, and it ranked 574th of the 945
+  entries at Vibe Jam 2026.
 
 
-  According to the creator, the game was built with Claude Code and rendered
-  with Three.js. It is single-player.
+  The design is puzzle-first, built around a 3D space you can look around and
+  examine. Since the rooms can differ, each attempt starts with a fresh look at
+  your surroundings and a new way out to find.
 play:
   url: https://escape-room.ybouane.com
   embeddable: true

@@ -2,20 +2,20 @@ slug: bichitos-rumble
 title: Bichitos Rumble
 tagline: Shove cute animal fighters off the arena in fast, chaotic 3D brawls.
 description: >-
-  Bichitos Rumble is a 3D arena brawler in which small, cute animal fighters
-  crowd onto a platform and try to knock each other off the edge. Rounds are
-  quick and messy: you push, smash, and scramble for position, and the last
-  fighter standing on the arena wins.
+  Bichitos Rumble crowds small, cute animal fighters onto one platform and lets
+  them try to knock each other off the edge. It is a 3D arena brawler, and every
+  round is a fast, chaotic scramble: you push, smash and fight for position
+  until only one fighter is left on the arena.
 
 
-  The game is built as a party-style competition, aimed at the kind of casual
-  rivalry that works best among friends. It supports multiplayer and runs on
-  mobile devices as well as desktop browsers. The chaotic pace and playful
-  animal cast keep the tone light.
+  Built with Claude Code and Three.js, it came 209th of 945 at Vibe Jam 2026 and
+  runs on phones as well as desktops. It is meant as party-style competition
+  with multiplayer support, the kind of casual rivalry that works best among
+  friends, and the playful animal cast keeps the tone light.
 
 
-  It was an entry in Vibe Jam 2026, where it placed 209th out of 945 entries.
-  The creator built it with Claude Code, using Three.js for the 3D graphics.
+  Rounds are quick and messy, and staying on the platform matters as much as
+  shoving others off it, since the last fighter still standing wins.
 play:
   url: https://bichitosrumble.com
   embeddable: true

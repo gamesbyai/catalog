@@ -3,22 +3,22 @@ title: ZOMBIE DEFENSE PROTOCOL
 tagline: Place towers to build a killbox that stops waves of zombies and
   exploding bosses.
 description: >-
-  Zombie Defense Protocol is a tower defense game where you position towers
-  along the zombies' route and try to hold out through escalating waves. Each
-  run is a test of whether your setup can handle whatever the next wave brings,
-  since different enemy types call for different answers.
+  Zombie Defense Protocol is tower defense that asks you to build a killbox. You
+  position towers along the zombies' route and try to hold out through
+  escalating waves, and each wave tests whether your setup can handle what it
+  brings.
 
 
-  Enemy variety drives the strategy. Shielded zombies, ones carrying umbrellas,
-  and invisible ones each get past the wrong kind of tower, so a single favorite
-  build won't carry you far. Every fifth wave arrives by car, which changes the
-  rhythm of the defense. Bosses burst into swarms when they die, so a boss kill
-  is not the end of the threat.
+  It takes cues from World of Warcraft-style tower defense maps and renders in
+  3D with Three.js. Claude Code is the tool the creator used, and Vibe Jam 2026
+  put it 467th of 945.
 
 
-  The game was entered in Vibe Jam 2026, and the creator built it with Claude
-  Code. It renders in 3D with Three.js and takes cues from World of
-  Warcraft-style tower defense maps.
+  Enemy variety drives the strategy. Shielded zombies, zombies carrying
+  umbrellas, and invisible ones each get past the wrong kind of tower, so a
+  single favorite build will not carry you far. Every fifth wave arrives by car,
+  and bosses burst into swarms when they die, so a boss kill is not the end of
+  the threat.
 play:
   url: https://vibejgame.vercel.app
   embeddable: true

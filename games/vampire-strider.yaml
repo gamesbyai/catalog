@@ -3,22 +3,21 @@ title: Vampire Strider
 tagline: Run through a haunted castle as a vampire prince, slashing monsters
   along the way.
 description: >-
-  Vampire Strider is a gothic pixel-art auto-runner in which a vampire prince
-  sprints through an endless haunted castle. The prince keeps moving on his own
-  while the player slashes at monsters and tries to survive as long as possible,
-  so each run is a single dash through dark, hostile surroundings.
+  In Vampire Strider the prince runs on his own, and your job is the sword. This
+  gothic pixel-art auto-runner sends a vampire prince sprinting through an
+  endless haunted castle while you slash at the monsters in his way and try to
+  survive as long as you can.
 
 
-  The game draws on the mood of classic gothic action titles. The route passes
-  through haunted forests, ruined castles, stained glass halls, and
-  monster-filled corridors, all rendered in pixel art. The creator paired that
-  dark vampire-fantasy atmosphere with the quick readability and rhythm of an
-  auto-runner, aiming for a pace that is fast and easy to pick up.
+  The creator paired the mood of classic gothic action games with the quick
+  readability and rhythm of an auto-runner, aiming for a pace that is fast and
+  easy to pick up. They made it in Phaser with Claude Code, and it was 227th of
+  945 entries in Vibe Jam 2026.
 
 
-  It was entered in Vibe Jam 2026 and built with Phaser. The creator states that
-  Claude Code was used in making it. The game is playable on mobile as well as
-  desktop.
+  A run is a single dash through dark, hostile surroundings: haunted forests,
+  ruined castles, stained glass halls, and monster-filled corridors, all in
+  pixel art.
 play:
   url: https://vampirestrider.com?instant=
   embeddable: true

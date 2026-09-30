@@ -3,20 +3,20 @@ title: Slime Escape
 tagline: Survive ten waves of mutant slimes, beat the boss, and flee through a
   suspicious portal.
 description: >-
-  Slime Escape is a 3D action game built around ten waves of mutant slimes. Each
-  run has you fending off the oncoming creatures wave after wave until a boss
-  appears. Defeating it opens a portal, and stepping through is the way out,
-  though the game warns that the portal is not to be trusted.
+  Slime Escape is a 3D action shooter built around ten waves of mutant slimes.
+  You fend them off wave after wave until a boss appears, and beating the boss
+  opens a portal out of the arena.
 
 
   The premise comes from a child's hand-drawn fantasy worlds, full of odd
-  creatures, strange machines, and tiny stories. That origin shapes the tone:
-  the slimes and the machinery feel like sketchbook inventions that grew into a
-  playable arena, and the portal gag adds some mischief to the finale.
+  creatures, strange machines, and tiny stories. That origin sets the tone: the
+  slimes and machinery read like sketchbook inventions grown into a playable
+  arena. The build uses Three.js and was made with Cursor, and the game came
+  83rd of 945 entries in Vibe Jam 2026.
 
 
-  The creator built it with Cursor, and it runs in the browser on Three.js. It
-  was entered in Vibe Jam 2026, where it placed 83rd among 945 entries.
+  The portal is the last joke. Stepping through it is the way out, even though
+  the game itself warns that the portal is not to be trusted.
 play:
   url: https://slimeescape.com/portal
   embeddable: true

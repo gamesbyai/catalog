@@ -2,21 +2,20 @@ slug: bow-seige
 title: bow seige
 tagline: Pick a bow or an RPG and blow up the enemy king in multiplayer combat.
 description: >-
-  Bow Siege is a multiplayer action shooter where players pick up a weapon,
-  either a bow or an RPG, and fight to take down the enemy's king. The goal is
-  direct: get past the opposing side and destroy the king before he falls to
-  yours.
+  In bow seige you pick one weapon, a bow or an RPG, and go after the enemy
+  king. It is a multiplayer action shooter with a direct goal: get past the
+  other side and blow up their king before they take down yours.
 
 
-  The weapon choice sets the tone, pairing the precision of a bow with the
-  explosive power of a rocket launcher. It runs in the browser on Three.js and
-  is playable on mobile as well as desktop. The creator describes it as made
-  with a lot of love, and it entered Vibe Jam 2026.
+  The creator describes themselves as a gamer who wanted to learn Claude Code,
+  and this is the result. It was made with a lot of love, in their words, and
+  built on Three.js for Vibe Jam 2026. It is a learning project first, and the
+  design stays straightforward and approachable.
 
 
-  The creator says they wanted to learn Claude Code and describes themselves as
-  a gamer, and they built the project with it. It is a learning project first,
-  and that shows in its straightforward, approachable design.
+  The weapon choice sets the tone of every match: the precision of a bow or the
+  explosive power of a rocket launcher, both aimed at the same target, the enemy
+  king on the other side.
 play:
   url: https://014-vibe-jam-portal.yeet-and-arrow.pages.dev
   embeddable: true

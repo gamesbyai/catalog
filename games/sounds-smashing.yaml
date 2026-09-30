@@ -2,20 +2,22 @@ slug: sounds-smashing
 title: Sounds Smashing!
 tagline: Smash blocks in time with the beat to build melodies and earn coins.
 description: >-
-  Sounds Smashing! is a physics-based rhythm game in which the player breaks
-  blocks in time with the music. Each smash adds a note, so a successful run
-  gradually builds a melody out of the destruction. Timing decides the payout:
-  the closer the hit lands to the beat, the more coins the player collects.
+  Sounds Smashing! is a single-player, physics-based rhythm game in which you
+  break blocks in time with the music. Every smash adds a note, so a successful
+  run gradually builds a melody out of the destruction, one broken block at a
+  time.
 
 
-  The music leans on microtonal tuning, which gives the smashed melodies a sound
-  different from standard scales. The mix of physical block-breaking and rhythm
-  play draws on Donkey Kong-style bonanza energy and Minecraft-like blocks, and
-  the whole thing is meant to feel like a constant groove.
+  The mix of physical block-breaking and rhythm play draws on Donkey Kong-style
+  bonanza energy and Minecraft-like blocks. It took the creator about two days
+  to make with Claude Code and Three.js, and it landed 379th of 945 in Vibe Jam
+  2026.
 
 
-  The creator built it with Claude Code and Three.js for Vibe Jam 2026, working
-  on it for about two days. It placed 379th out of 945 entries in the jam.
+  Timing decides the payout: the closer a hit lands to the beat, the more coins
+  you collect. The soundtrack leans on microtonal tuning, which gives the
+  smashed melodies a sound that differs from standard scales, and the whole
+  thing is meant to feel like a constant groove.
 play:
   url: https://soundssmashing.com
   embeddable: true

@@ -2,20 +2,21 @@ slug: tdshooter
 title: TDShooter
 tagline: Shoot enemies from above, finish quests, and open up new zones.
 description: >-
-  TDShooter is a top-down shooter where the player fights off enemies while
-  moving around the map. Along the way there are quests to complete, and
-  finishing them opens up new zones to explore. A session is a loop of shooting,
-  completing objectives, and pushing into fresh areas.
+  TDShooter is a top-down shooter with somewhere to go. You shoot enemies from
+  above while moving around the map, and along the way there are quests to
+  complete. Finishing them opens up new zones to explore, so the playable area
+  grows as you go, quest by quest.
 
 
-  The game supports online multiplayer and also works on mobile, so it can be
-  played with other people and on a phone or tablet as well as on a desktop
-  browser. Zone unlocking gives the shooting a sense of progression beyond
-  simply surviving waves.
+  Cursor was in the creator's toolkit for this PixiJS game, and it finished
+  279th of 945 in Vibe Jam 2026. It supports online multiplayer, so the shooting
+  and the questing can be shared with other people, on a phone or tablet as well
+  as in a desktop browser.
 
 
-  It was entered in Vibe Jam 2026, where it placed 279th out of 945 entries, and
-  it is built on PixiJS. The creator says they used Cursor while making it.
+  Zone unlocking gives the shooting a sense of progression beyond simply
+  surviving waves: a session is a loop of shooting, completing objectives, and
+  pushing into fresh areas of the map.
 play:
   url: https://tdshooter.space
   embeddable: true

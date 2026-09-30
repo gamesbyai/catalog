@@ -3,22 +3,21 @@ title: BoneCrawler
 tagline: Explore a dark gothic world and fight through fast combat in an
   NES-style action game.
 description: >-
-  BoneCrawler is a dark fantasy action game with an NES-style look. The player
-  explores a gothic world in the manner of classic top-down adventures, then
-  fights enemies in quick, combo-minded combat that leans toward
-  character-action games rather than slow, deliberate swordplay.
+  BoneCrawler looks like an NES game and fights like a character-action one. You
+  explore a dark, gothic world in the manner of classic top-down adventures,
+  then take on enemies in quick, combo-minded combat instead of slow, deliberate
+  swordplay.
 
 
-  The design is openly a tribute to the games that shaped its author. Zelda-like
+  The creator, a solo developer, says the code was generated with AI while they
+  directed the scope and tested the results. Claude, ChatGPT and Codex handled
+  code generation and Gemini helped with planning, and the game was built as a
+  reusable engine with an editor that the creator plans to open-source later.
+
+
+  It is openly a tribute to the games that shaped its author. Zelda-like
   exploration sits alongside the faster combat of Devil May Cry and Ninja
-  Gaiden, all set in a gloomy fantasy atmosphere shaped by The Lord of the
-  Rings. It is a small project from a solo developer and runs on mobile as well.
-
-
-  The creator says the code was generated with AI while they directed the scope
-  and tested the results. Claude, ChatGPT, and Codex handled code generation,
-  and Gemini was used for planning. The game was built as a reusable engine with
-  an editor, and the creator plans to open-source it later.
+  Gaiden, all under a gloomy fantasy atmosphere shaped by The Lord of the Rings.
 play:
   url: https://bonecrawler.com/vibejam/index.html
   embeddable: true

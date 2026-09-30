@@ -2,22 +2,21 @@ slug: three-suns
 title: Three Suns
 tagline: Place gravity anchors to keep a world alive under three unpredictable suns.
 description: >-
-  Three Suns is a physics survival game set on the last living world in a
-  chaotic three-sun system. The player places gravity anchors to steer the
-  planet's path and switches between survival modes as conditions change, trying
-  to last through one punishing dawn after another.
+  Three Suns is a physics survival game that puts you in charge of the last
+  living world in a chaotic three-sun system. You place gravity anchors to steer
+  the planet's path and switch between survival modes as conditions change,
+  trying to last through one punishing dawn after another.
 
 
   The setup draws on the three-body problem from orbital mechanics and on Liu
-  Cixin's novel The Three-Body Problem, but the story, mechanics, and world are
-  original. Survival depends on reading how the suns pull on the planet and
-  responding with well-timed anchor placement rather than steady, predictable
-  orbits.
+  Cixin's novel The Three-Body Problem, though the story, mechanics, and world
+  are the creator's own. ChatGPT and Three.js were the tools behind it, and it
+  finished 217th of 945 in Vibe Jam 2026. Phones are supported too.
 
 
-  It was entered in Vibe Jam 2026, where it placed 217th out of 945 entries. The
-  game is built with Three.js and runs on mobile as well as desktop. The creator
-  built it with ChatGPT.
+  There is no steady orbit to settle into. Survival depends on reading how the
+  suns pull on the planet and answering with well-timed anchor placement, dawn
+  after dawn.
 play:
   url: https://threesuns.xyz
   embeddable: true

@@ -2,20 +2,20 @@ slug: pocket-salvage
 title: Pocket Salvage
 tagline: Swing a crane, switch tools, and sort scrap into bins before time runs out.
 description: >-
-  Pocket Salvage is a scrap-sorting game built around a swinging crane. Each
-  round, you steer the crane over a pile of junk, pick items up, and drop them
-  into the matching bins. A countdown limits every level, so the goal is to sort
-  as much as you can before it hits zero.
+  Pocket Salvage hands you a swinging crane and a pile of junk. Each round you
+  steer the crane over the pile, pick items up and drop them into the matching
+  bins. A countdown limits every level, and the goal is to sort as much scrap as
+  you can before it hits zero.
 
 
-  The crane can switch between a magnet and a claw, so each piece of scrap calls
-  for a choice of tool. The swinging motion adds a timing challenge to every
-  grab. The game spans five levels, each with its own weather, which changes the
-  conditions you work in.
+  Its README names Claude and Codex as the tools, and it runs in the Godot
+  engine as a single-player game.
 
 
-  According to its README, the game was made with Claude and Codex, and it runs
-  in the Godot engine. It is a single-player game.
+  The crane switches between a magnet and a claw, so each piece of scrap calls
+  for a choice of tool, and the swing turns every grab into a timing test.
+  Across five levels, each with its own weather, the conditions you work in keep
+  changing from one level to the next, on top of the clock.
 play:
   url: https://pocket-salvage.web.app
   embeddable: true

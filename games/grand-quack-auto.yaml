@@ -2,22 +2,21 @@ slug: grand-quack-auto
 title: Grand Quack Auto
 tagline: Honk your way through a city as a rubber duck and escalate the chaos.
 description: >-
-  Grand Quack Auto puts you in the webbed feet of a rubber duck loose in a city.
-  Your main tool is a honk button, and the more havoc you cause, the further the
-  duck climbs from its humble start as Lil' Quacker. Each stage of the climb
-  raises the stakes of the mayhem.
+  You are a rubber duck loose in a city, and your main tool is a honk button. In
+  Grand Quack Auto, the more havoc you cause, the further the duck climbs from
+  its humble start as Lil' Quacker, and each stage of the climb raises the
+  stakes.
 
 
-  The premise mixes open-city crime-game antics with the mischievous animal
-  energy of a goose prank sim. The duck's rise ends with a gun-wielding persona
-  called Duck Norris, so a tiny noisemaker gradually turns into a full-blown
-  menace. The tone stays silly throughout, built around a joke that keeps
-  escalating.
+  It borrows the antics of open-city crime games and the mischievous animal
+  energy of a goose prank sim. At the top of the climb waits a gun-wielding
+  persona called Duck Norris, so a tiny noisemaker ends up a full-blown menace.
+  The joke keeps escalating, and the tone stays silly throughout.
 
 
-  It was built in Three.js for Vibe Jam 2026, and the creator states the code
-  was written entirely by AI. The creator used Claude Code for the work. The
-  game also runs on mobile devices.
+  According to the creator, the code for this Vibe Jam 2026 entry was written
+  entirely by AI with Claude Code, and the city is built in Three.js. It also
+  runs on phones.
 play:
   url: https://grand-quack-auto.pages.dev
   embeddable: true

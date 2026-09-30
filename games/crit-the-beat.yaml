@@ -2,21 +2,20 @@ slug: crit-the-beat
 title: Crit The Beat
 tagline: Hit notes in time with the music while fighting with RPG-style combat.
 description: >-
-  Crit The Beat is a browser rhythm game that blends note-hitting with
-  role-playing ideas. Players follow the music and hit notes in time, in the
-  style of Guitar Hero, while the action carries an RPG flavor suggested by the
-  title's play on critical hits.
+  Crit The Beat is a browser rhythm game with an RPG twist, in the Guitar Hero
+  mold. You follow the music and hit notes in time with it while the fight plays
+  out as RPG-style combat, and the title's play on critical hits points at that
+  side of it.
 
 
-  The premise pairs two genres that rarely share a screen: the timing challenge
-  of a rhythm track and the sense of progression and combat from an RPG. It is
-  built with Three.js in 3D and is playable on mobile devices as well as
-  desktop. It is a single-player experience.
+  The creator, mxvdl, says they always loved Guitar Hero and wanted to add an
+  RPG twist to it. It was made with Cursor for Vibe Jam 2026, which ranked it
+  284th of 945, with Three.js drawing the 3D scene.
 
 
-  The creator says they always loved Guitar Hero and wanted to add an RPG twist
-  to it. The project was entered in Vibe Jam 2026, and the creator used Cursor
-  while making it.
+  The premise pairs two genres that rarely share a screen: the timing test of a
+  rhythm track, and the sense of progression and combat from an RPG. It is
+  single-player, so it comes down to you, the song and the fight.
 play:
   url: https://critthebeat.com
   embeddable: true

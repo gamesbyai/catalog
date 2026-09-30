@@ -2,21 +2,21 @@ slug: slingshot-escape-the-solar-system
 title: "Slingshot: Escape the solar system"
 tagline: Swing past planets and use their gravity to escape the solar system.
 description: >-
-  Slingshot is a 2D orbital mechanics game set in the real solar system. The
-  player flies a craft past planets and uses their gravity to gain speed and
-  bend the trajectory. The goal is to build enough momentum to leave the solar
+  Slingshot: Escape the solar system gives you a craft, the real solar system,
+  and one goal: get out. You fly past planets and use their gravity to gain
+  speed and bend your trajectory, building enough momentum to leave the solar
   system behind.
 
 
-  The game takes its inspiration from Outer Wilds, which the creator cites for
-  its contemplative mood and music, and from Spaceflight Simulator for its flat,
-  physics-driven view of real planetary layouts. Combining those two influences
-  gives a quiet, exploratory tone to what is at heart a gravity puzzle.
+  The creator cites Outer Wilds for its contemplative mood and music, and
+  Spaceflight Simulator for its flat, physics-driven view of real planetary
+  layouts. They built this single-player game with Claude Code, it runs on touch
+  screens too, and it placed 59th of 945 entries in Vibe Jam 2026.
 
 
-  It was entered in Vibe Jam 2026, where it placed 59th among 945 entries. The
-  creator built it with Claude Code. It is playable on mobile and is a
-  single-player experience.
+  Together those influences give a quiet, exploratory tone to what is, at heart,
+  a 2D gravity puzzle. Every planet you pass can add speed or bend your path on
+  the way out of the system.
 play:
   url: https://slingshot.indiega.me
   embeddable: true

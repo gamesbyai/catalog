@@ -2,20 +2,21 @@ slug: fishing
 title: Fishing
 tagline: Sail the open sea, cast lures for fish and spend coins on new lures.
 description: >-
-  Fishing is a 3D game set on the open sea. The player sails a boat across the
-  water, stops to cast a lure and tries to hook fish. Each catch earns coins,
-  which carry over into the next stretch of fishing.
+  Fishing is a 3D game set on the open sea, and the title is the whole pitch.
+  You sail a boat across the water, stop to cast a lure and try to hook a fish.
+  Each catch earns coins, and those coins carry over into the next stretch of
+  fishing instead of resetting.
 
 
-  Coins are spent on new lures, so the loop is simple: sail out, cast, catch,
-  upgrade and head back out. The open water setting gives the game a relaxed
-  feel, with the focus on exploring and casting, and each new lure gives a
-  reason to keep going.
+  The coins go toward new lures, and that closes the loop: sail out, cast,
+  catch, upgrade and head back out. Each new lure is a reason to go out again.
+  You fish alone, at a relaxed pace, with the attention on exploring the water
+  and casting.
 
 
-  The creator says it was built with Cursor, Claude and Grok. It runs on
-  Three.js, so the sea, the boat and the fishing all render as real-time 3D
-  graphics in the browser.
+  The creator's README lists Cursor, Claude and Grok as the tools behind it.
+  Three.js renders the sea, the boat and the fishing as real-time 3D graphics in
+  the browser.
 play:
   url: https://fishing.lureconcept.com
   embeddable: true

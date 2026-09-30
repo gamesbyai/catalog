@@ -3,20 +3,21 @@ title: 0 Tanks
 tagline: Fight through procedural floors in a tank, buying upgrades and beating
   armored bosses.
 description: >-
-  0 Tanks is a roguelite tank shooter. You drive an armored tank through a
-  series of procedurally generated floors, shooting enemies as you go. Each run
-  pushes you deeper, and the layout changes every time you start over.
+  0 Tanks is a roguelite tank shooter played one floor at a time. You drive an
+  armored tank through procedurally generated floors and fight your way down,
+  shooting the enemies in your path as you go. Each run pushes deeper, and when
+  you start over the layout is new.
 
 
-  Upgrades are the core of progression, so each run builds toward a different
-  setup as you go down. Armored bosses guard the way forward and test whatever
-  build you have put together. The top-down tank combat has a nod to Battle
-  City, the classic arcade tank game, and it runs in the browser on 3D graphics
-  with mobile support.
+  The top-down tank combat nods to Battle City, the classic arcade tank game,
+  with the floors drawn in 3D. The creator used Claude Code, and the Vibe Jam
+  2026 entry came 312th of 945.
 
 
-  The creator built it with Claude Code as an entry in the Vibe Jam 2026 game
-  jam, where it placed 312th out of 945 entries.
+  Upgrades carry the progression. You buy them on the way down, and the ones you
+  choose shape the tank, so each run builds toward a different setup. Armored
+  bosses guard the way forward and test whatever build you have put together by
+  then.
 play:
   url: https://0tanks.com
   embeddable: true

@@ -2,22 +2,20 @@ slug: spice-jam
 title: Spice Jam
 tagline: Harvest spice in the desert, hunt rival harvesters, and outlast the worm.
 description: >-
-  Spice Jam is a multiplayer, Dune-inspired shooter built around a single loop.
-  You roam open sand collecting spice, then take it back to your base. Other
-  players are harvesting too, so you can kill a rival harvester to steal what
-  they have gathered before heading home.
+  Spice Jam is a Dune-inspired multiplayer shooter built around one loop. You
+  roam the open sand collecting spice and haul it back to your base. Other
+  players are harvesting too, so killing a rival harvester and taking what they
+  gathered is always an option on the way home.
 
 
-  The worm is the constant threat. Staying out on the dunes pays off in spice,
-  but it also leaves you exposed to both other players and the creature beneath
-  the sand. The tension comes from deciding when to push for more and when to
-  return.
+  The combat borrows lasgun and Holtzman shield ideas from the source material.
+  The creator states it was built with Codex as a prototype, rendered in 3D with
+  Three.js, and Vibe Jam 2026 put it 250th of 945.
 
 
-  The prototype was made for Vibe Jam 2026, where it placed 250th among 945
-  entries. It runs in 3D on Three.js, and the creator states it was built with
-  Codex. Its combat draws on lasgun and Holtzman shield ideas from the source
-  material.
+  Then there is the worm. Staying out on the dunes pays in spice but leaves you
+  exposed to other players and to the creature beneath the sand. Every trip
+  comes down to when to push for more and when to head back.
 play:
   url: https://spice.bananatriangles.com
   embeddable: true

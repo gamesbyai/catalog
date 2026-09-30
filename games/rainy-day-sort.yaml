@@ -2,20 +2,20 @@ slug: rainy-day-sort
 title: Rainy Day Sort
 tagline: Pour and sort colored water between glasses in a calm, tactile puzzle.
 description: >-
-  Rainy Day Sort is a water sort puzzle built around a slow, meditative pace.
-  The player moves colored liquid between containers until each one holds a
-  single color. It is designed for touch screens, so pouring and selecting are
-  meant to feel physical and simple to pick up.
+  Rainy Day Sort is a casual water sort puzzle at a slow, meditative pace. You
+  pour colored liquid between glasses until each one holds a single color, and
+  the controls are designed for touch screens, so pouring and selecting feel
+  physical and simple to pick up on a phone.
 
 
-  The game aims for a cozy, uncluttered look and feel, and it was made as an
-  answer to mobile puzzle games crowded with ads and awkward visuals. The
-  emphasis is on quiet, relaxed play.
+  The creator drew on an old computer science degree but had not written code
+  since around 2001, and used the project to learn vibe coding by doing, with
+  Claude Code and Gemini. It was a Vibe Jam 2026 entry, placing 556th of 945.
 
 
-  The creator built it with Claude Code and Gemini, drawing on an old computer
-  science degree. They had not written code since around 2001 and used the
-  project to learn vibe coding by doing. It was submitted to Vibe Jam 2026.
+  It was made as an answer to mobile puzzle games crowded with ads and awkward
+  visuals. The look stays cozy and uncluttered, and the play stays quiet: pour,
+  check the colors, and pour again.
 play:
   url: https://rainy-day-sort.pages.dev
   embeddable: true

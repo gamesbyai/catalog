@@ -3,22 +3,20 @@ title: Sato Denki — Akihabara Tech Shop
 tagline: Chain fast combo shifts to keep your hospitalized dad's Akihabara tech
   shop afloat.
 description: >-
-  Sato Denki is a shop simulation set in Akihabara. Your father is in the
-  hospital, and the family's 40-year-old electronics store is in danger of being
-  taken by the bank. You run the counter through quick rounds, working through
-  rapid, Street Fighter-style combo shifts to bring in enough money before the
-  bank wins.
+  Your father is in the hospital, and the family's 40-year-old electronics store
+  in Akihabara is in danger of being taken by the bank. Sato Denki is a shop
+  simulation where you run the counter in quick rounds, chaining rapid, Street
+  Fighter-style combo shifts to bring in enough money before the bank wins.
 
 
-  The design borrows from casino machines: short rounds, loud combo feedback,
-  and global stakes meant to pull you into one more run. The game supports
-  multiplayer and runs on mobile. Every sprite in the game was produced with the
-  creator's own AI pixel art tool, which gives the shop a consistent look.
+  The loop borrows from casino machines: short rounds, loud combo feedback, and
+  global stakes meant to pull you into one more run. Every sprite came from the
+  creator's own AI pixel art tool, which keeps the shop's look consistent.
 
 
-  The creator says Claude Code wrote 99% of the code and describes the project
-  as 100% vibe coded. It was built as a jam entry to test the creator's pixel
-  art generator alongside the coding workflow from start to finish.
+  The creator says Claude Code wrote 99% of the code and calls the project 100%
+  vibe coded. They made it for the jam to test that pixel art generator and the
+  coding workflow together, from start to finish.
 play:
   url: https://sato-denki-eight.vercel.app
   embeddable: true

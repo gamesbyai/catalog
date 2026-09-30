@@ -2,21 +2,21 @@ slug: scavender
 title: Scavender
 tagline: Explore a ruined world and make choices that lead to different endings
 description: >-
-  Scavender is a point-and-click adventure set after the collapse of
-  civilization. The player moves through ruined environments, clicking to
-  explore, interact with objects and make decisions as the story unfolds. Those
-  decisions steer the run toward one of several possible endings.
+  Civilization has collapsed, and in Scavender you explore what is left of it
+  one click at a time. The genre is point-and-click adventure: you move through
+  ruined environments, interact with objects, and make decisions that steer the
+  story toward one of several endings.
 
 
-  The game draws its inspiration from The Walking Dead series, favoring
-  story-driven survival and consequential choices over fast action. Because the
-  outcome depends on what the player chooses, replaying to see other endings is
-  part of the design. It runs in the browser on 3D graphics and is playable on
-  mobile devices as well as desktop.
+  The ruins are rendered in 3D with Three.js, and the single-player game works
+  in a mobile browser too. Antigravity, Google's AI coding tool, was the
+  creator's choice, and it ranked 81st of 945 in Vibe Jam 2026.
 
 
-  It was entered in Vibe Jam 2026, where it placed 81st out of 945 entries. The
-  creator built it with Antigravity, Google's AI coding tool.
+  The inspiration is The Walking Dead series, and it shows in the priorities:
+  story-driven survival and choices with consequences, not fast action. Since
+  the outcome depends on what you choose, replaying to reach the other endings
+  is part of the design, because a single run leads to only one of them.
 play:
   url: https://scavender.mhirsd.com
   embeddable: true

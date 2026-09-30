@@ -2,22 +2,21 @@ slug: rooftop-rumble
 title: Rooftop Rumble
 tagline: Blast rival neighbors off flooded rooftops into shark-filled water.
 description: >-
-  Rooftop Rumble is a multiplayer battle royale set on the rooftops of a flooded
-  suburb. A leaf-blower arms race has gone too far, and the streets are now
-  underwater. Players fight for position on the roofs, using blowers to push
-  rivals off the edge until one is left as King of the Street.
+  A suburban leaf-blower arms race went too far, and now the streets are
+  underwater. Rooftop Rumble is a multiplayer battle royale on the roofs that
+  are left. You fight for position and use leaf blowers to push rival neighbors
+  off the edge until one player stands as King of the Street.
 
 
-  The comedy is the main draw. Property disputes are settled by shoving
-  neighbors into the water, where escaped pet goldfish have mutated into Gutter
-  Sharks after the drains clogged with leaf mulch. The tone stays silly from
-  start to finish, and the goal is to be quickly understood and easy to jump
-  into.
+  It is designed to be understood quickly and easy to jump into, on a phone or a
+  desktop. In the creator's words, they used Cursor to build it on Three.js.
+  Vibe Jam 2026 put it 164th of 945.
 
 
-  The game runs in the browser on Three.js and supports mobile play. It was
-  entered in Vibe Jam 2026, where it placed 164th out of 945 entries. The
-  creator says they used Cursor to build it.
+  The water below is the punchline. Escaped pet goldfish mutated into Gutter
+  Sharks after the drains clogged with leaf mulch, so property disputes end with
+  a neighbor shoved into shark-filled water. The tone stays silly from start to
+  finish.
 play:
   url: https://rooftop-rumble.fun
   embeddable: false

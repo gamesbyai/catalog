@@ -2,20 +2,20 @@ slug: vibe-farm
 title: Vibe Farm
 tagline: Level up and build a growing colony, playing solo or with others online.
 description: >-
-  Vibe Farm is a 3D adventure game that can be played solo or with other players
-  online. The focus is on leveling up and building a colony, growing it step by
-  step as your character progresses. The creator points to Stardew Valley as a
-  reference for the farming-life feel.
+  Vibe Farm is a 3D adventure game about leveling up and building a colony. The
+  colony grows step by step as your character progresses and levels up, and you
+  can build it alone or team up with other players online in multiplayer.
 
 
-  The game asks new players to read its tutorial first, which suggests some
-  systems need explaining before you start. The mix of progression and colony
-  building sits alongside the option to team up in multiplayer, so a session can
-  be a quiet solo build or a shared one.
+  The creator points to Stardew Valley as the reference for its farming-life
+  feel, and built the game with Cursor on Three.js. Its Vibe Jam 2026 result was
+  533rd of 945.
 
 
-  It was entered in Vibe Jam 2026, where it placed 533rd out of 945 entries, and
-  the creator built it with Cursor. It runs in the browser on Three.js.
+  Start with the tutorial: the game asks new players to read it first, which
+  suggests some of its systems need explaining before you begin. After that, a
+  session can be a quiet solo build or a shared one, with progression and colony
+  building at the center either way.
 play:
   url: https://vibefarm.vercel.app
   embeddable: true

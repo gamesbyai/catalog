@@ -2,21 +2,21 @@ slug: out-of-office-european-business-simulator
 title: "OUT OF OFFICE: European Business Simulator"
 tagline: Run a European business while doing as little actual work as possible.
 description: >-
-  OUT OF OFFICE: European Business Simulator is a satirical management sim about
-  running a company in Europe during the summer. The player takes the role of a
-  business owner whose main trait is laziness, and the joke is built around
-  getting by with as little effort as possible.
+  OUT OF OFFICE: European Business Simulator is a satirical, casual management
+  sim about running a company in Europe during the summer. You play the owner,
+  whose main trait is laziness, and the aim is to get by with as little actual
+  work as possible.
 
 
-  The tone is tongue-in-cheek, presenting itself as a completely realistic
-  portrait of European business life. The premise leans on the gap between the
-  serious title and the owner's lack of interest in working, which gives the
-  simulation genre a comic twist.
+  It presents itself, tongue in cheek, as a completely realistic portrait of
+  European business life in summer. It is a single-player game, made with Claude
+  Code, that ranked 401st of 945 at Vibe Jam 2026 and works on phones as well as
+  desktop.
 
 
-  The game was entered in Vibe Jam 2026, where it placed 401 out of 945 entries.
-  The creator built it with Claude Code. It is playable on mobile and is a
-  single-player experience.
+  The joke lives in the gap between the serious title and an owner with no
+  interest in working. That gap is what turns the management sim into a comedy,
+  since doing less is the whole plan for your company.
 play:
   url: https://business-tycoon-european-summer-edi.vercel.app
   embeddable: true

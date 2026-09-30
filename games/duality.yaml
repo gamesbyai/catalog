@@ -3,23 +3,22 @@ title: Duality
 tagline: Guide two linked entities across parallel dimensions to their portals,
   dodging Void Agents
 description: >-
-  Duality is a 3D action puzzle game in which you control two quantum entities
-  at once, each in its own parallel dimension. The goal in every level is to
-  bring both to their escape portals while avoiding Void Agents that hunt them.
-  Success depends on keeping track of two positions and two sets of threats at
-  the same time.
+  Duality gives you two characters to move with one set of inputs. You control
+  two quantum entities at once, each in its own parallel dimension, and every
+  level asks you to bring both to their escape portals while Void Agents hunt
+  them.
+
+
+  The creator says the idea came from brainstorming with AI, mixing a love of
+  games that split your attention with an interest in quantum physics and
+  parallel dimensions. It came together in Claude Code and Three.js and placed
+  119th of 945 at Vibe Jam 2026.
 
 
   The hook is the Echo, a mirror of your character that follows your inputs
-  under its own rules, and those rules grow more twisted as levels progress.
-  Each stage plays like a small physics puzzle dressed as a survival challenge,
-  so you have to think about how one move will change things in both dimensions.
-
-
-  The creator built it with Claude Code and Three.js for Vibe Jam 2026. The idea
-  came from brainstorming with AI, mixing a love of games that split your
-  attention with an interest in quantum physics and parallel dimensions. It is
-  playable on mobile as well.
+  under its own rules, and those rules get more twisted as the levels go on.
+  Each stage plays like a small physics puzzle dressed as survival, where one
+  move changes things in both dimensions.
 play:
   url: https://duality-game-vibejam.vercel.app
   embeddable: true

@@ -2,21 +2,21 @@ slug: ball-fall
 title: Ball Fall
 tagline: Roll a ball across collapsing tiles and outlast rivals until they fall.
 description: >-
-  Ball Fall is a multiplayer survival game in which each player controls a
-  rolling ball on a platform made of tiles that collapse. A round is a scramble
-  to stay on solid ground, dodge opponents, and keep moving as the floor
-  disappears. The last ball still on the platform wins.
+  The floor in Ball Fall is falling apart, and the last ball still on it wins.
+  Every player rolls a ball across a platform of collapsing tiles, trying to
+  outlast the rivals until they fall, so a multiplayer round is a scramble to
+  keep moving and stay on solid ground.
 
 
-  The pace is fast and chaotic, with the shrinking arena forcing constant
-  decisions about where to roll next. Rivals share the same space, so
-  positioning and timing matter as much as avoiding the gaps. Rounds are short
-  and easy to restart, which suits quick sessions. It runs in the browser and is
-  playable on mobile.
+  Rounds are short and easy to restart, which suits quick sessions. Made by
+  figwad with Cursor, with Three.js for the 3D visuals, it finished 72nd of 945
+  at Vibe Jam 2026.
 
 
-  The game was an entry in Vibe Jam 2026, where it placed 72nd among 945
-  entries. The creator built it with Cursor, and the 3D visuals use Three.js.
+  The pace is fast and chaotic. The arena shrinks under everyone at once, which
+  forces a constant choice of where to roll next. Rivals share the same space
+  and have to be dodged too, so positioning and timing count as much as avoiding
+  the gaps.
 play:
   url: https://ballfall.net
   embeddable: true

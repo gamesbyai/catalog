@@ -2,20 +2,20 @@ slug: swingers
 title: Swingers
 tagline: Swing with friends to rack up the most damage to city infrastructure.
 description: >-
-  Swingers is a multiplayer action game where you and your friends swing through
-  a setting full of critical infrastructure. The goal is to cause more monetary
-  damage than everyone else, so each round becomes a contest over who can wreck
-  the most while staying in motion.
+  Swingers is a multiplayer action and party game about swinging and property
+  damage. You and your friends swing through a city full of critical
+  infrastructure, and the aim is to cause more monetary damage than everyone
+  else by the end of the round.
 
 
-  The premise is deliberately chaotic: the score is counted in dollars of
-  damage, and the creator jokes in their own words about a love of swinging and
-  insurance fraud. That tone earned it the Most Unhinged award at Vibe Jam 2026,
-  where it placed 17th out of 945 entries.
+  The premise is deliberately chaotic, and the creator jokes, in their own
+  words, about a love of swinging and insurance fraud. That tone earned it the
+  Most Unhinged award at Vibe Jam 2026, where it also placed 17th of 945.
 
 
-  It runs in the browser on Three.js and is set up for both multiplayer and
-  mobile play, so a group can jump in together from different devices.
+  The score is counted in dollars of damage, so a round becomes a contest over
+  who can wreck the most while staying in motion. It runs on Three.js and is set
+  up for groups to jump in together from different devices, phones included.
 play:
   url: https://swing.offmylawn.com
   embeddable: true

@@ -1,5 +1,5 @@
 name: capture
-# Screenshots for entries added or changed on seed/* and submission/* branches.
+# Screenshots for entries added on seed/* and submission/* branches, or whose play URL changed there.
 #
 # Game pages are untrusted code. They only ever run in the `capture` job, which has no secrets and a read-only token.
 # The `upload` job holds the R2 token and must NEVER execute files from the `shots` artifact (or anything else from
@@ -53,8 +53,16 @@ jobs:
             done > "$RUNNER_TEMP/slugs.txt"
           else
             base="${BASE_SHA:-origin/main}"
-            git diff --name-only --diff-filter=AM "$base...HEAD" -- 'games/*.yaml' \
-              | sed -nE 's#^games/([a-z0-9]+(-[a-z0-9]+)*)\.yaml$#\1#p' > "$RUNNER_TEMP/slugs.txt"
+            fork=$(git merge-base "$base" HEAD)
+            # New entries always; a changed entry only when its play URL changed. Text edits keep their screenshots.
+            {
+              git diff --name-only --diff-filter=A "$fork" HEAD -- 'games/*.yaml'
+              for f in $(git diff --name-only --diff-filter=M "$fork" HEAD -- 'games/*.yaml'); do
+                old=$(git show "$fork:$f" | grep -m1 -E '^  url:' || true)
+                new=$(grep -m1 -E '^  url:' "$f" || true)
+                [ "$old" != "$new" ] && echo "$f"
+              done
+            } | sed -nE 's#^games/([a-z0-9]+(-[a-z0-9]+)*)\.yaml$#\1#p' > "$RUNNER_TEMP/slugs.txt"
           fi
           echo "count=$(wc -l < "$RUNNER_TEMP/slugs.txt" | tr -d ' ')" >> "$GITHUB_OUTPUT"
           echo "sha=$(git rev-parse HEAD)" >> "$GITHUB_OUTPUT"

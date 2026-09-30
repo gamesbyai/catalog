@@ -3,20 +3,20 @@ title: NEEDLE RUN
 tagline: Fly through gates, avoid pursuers, and chase score multipliers for a
   leaderboard spot.
 description: >-
-  NEEDLE RUN is an arcade action game in which the player steers a craft through
-  a series of gates while staying out of the reach of whatever is hunting it.
-  Each run is a scoring attempt: pass through gates, avoid getting caught, and
-  pick up multipliers to push the total higher.
+  NEEDLE RUN has you thread a craft through a series of gates while something
+  hunts you. Every run is a scoring attempt with three parts: pass through the
+  gates, stay out of the pursuers' reach, and pick up multipliers to push the
+  total higher.
 
 
   The game is framed as a take on the Pacifism mode from the Geometry Wars
-  series, so the emphasis falls on evasion and routing. Score multipliers reward
-  taking risks, and a leaderboard gives each run something to be measured
-  against.
+  series. It is a single-player arcade game, rendered in 3D with Three.js and
+  played in the browser, and it placed 98th of 945 at Vibe Jam 2026.
 
 
-  NEEDLE RUN was entered in Vibe Jam 2026, where it placed 98th out of 945
-  entries. It is rendered in 3D with Three.js, and it is played in the browser.
+  That puts the emphasis on evasion and on routing a path between the gates and
+  the pursuers as they close in. The multipliers reward taking risks, and the
+  leaderboard gives every attempt a number to beat and a spot to chase.
 play:
   url: https://needle-run.afterimage-dev.com
   embeddable: false

@@ -2,22 +2,21 @@ slug: bloc-tcg
 title: Bloc TCG
 tagline: Build a deck and battle rivals in an urban-themed trading card game.
 description: >-
-  Bloc TCG is a trading card game with an urban setting, which its creator calls
-  the GTA of trading card games. Players collect cards, assemble a deck, and
-  take on opponents in strategic matches that blend puzzle-style planning with
-  role-playing elements. Multiplayer is supported, and the game is built to work
-  on mobile.
+  Bloc TCG is an urban-themed trading card game set on the street, and its
+  creator calls it the GTA of trading card games. You collect cards, build a
+  deck and take on rivals online in strategic matches that mix puzzle-style
+  planning with role-playing elements, on a phone or in a browser.
 
 
-  The game's identity comes from its theme. The creator and partners grew up in
-  poverty and struggle, and they wanted to make something that represents the
-  people around them. That personal angle shapes the street-level setting and
-  tone of the cards and the world they belong to.
+  The creator taught themselves to code, built the game with Claude Code and
+  took it to Vibe Jam 2026, where it came 170th of 945 entries. They and their
+  partners grew up in poverty and struggle, and wanted to make something that
+  represents the people around them.
 
 
-  The creator taught themselves to code and built the game for Vibe Jam 2026,
-  where it placed 170th out of 945 entries. The creator states that it was made
-  with Claude Code.
+  That personal angle is where the game gets its identity. It shapes the
+  street-level setting, the tone of the cards and the world those cards belong
+  to.
 play:
   url: https://bloctcg.netlify.app
   embeddable: true

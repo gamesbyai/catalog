@@ -2,20 +2,20 @@ slug: hoverx
 title: HoverX
 tagline: Race a hoverboard down a slope, with visual effects and an AR mode.
 description: >-
-  HoverX is a downhill racing game in which the player rides a hoverboard along
-  a slope. The goal is to keep the board moving quickly down the course, in a
-  style that draws on skating and snowboarding. It runs in the browser and is
-  set up for mobile play.
+  HoverX puts you on a hoverboard and sends you down a slope. It is a
+  single-player downhill racer, and the creator describes it as a personal hobby
+  project inspired by skating and snowboarding, which is where its riding style
+  comes from.
 
 
-  The game adds visual effects to the ride and includes an AR mode that brings
-  the hoverboard experience into the player's surroundings. The creator
-  describes it as a personal hobby project inspired by skating and snowboarding,
-  and that influence shapes the downhill focus.
+  Visual effects are layered over the ride, and the game plays in a desktop
+  browser and on phones alike. It runs on Three.js, the creator says Gemini was
+  used to make it, and out of 945 Vibe Jam 2026 entries it ranked 339th.
 
 
-  It was built with Three.js as an entry in Vibe Jam 2026, where it placed 339th
-  out of 945 entries. The creator states that Gemini was used to make it.
+  The aim is to keep the board moving quickly from the top of the course to the
+  bottom, the way a skater or snowboarder would. An AR mode then takes the
+  hoverboard out of the course and into your own surroundings.
 play:
   url: https://boocanova.lovable.app/hoverx.html
   embeddable: true

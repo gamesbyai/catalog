@@ -2,22 +2,21 @@ slug: dyson-defender
 title: Dyson Defender
 tagline: Circle a Dyson sphere and shoot down alien ships before they reach it.
 description: >-
-  Dyson Defender is a 3D shooter set around a giant Dyson sphere. You pilot a
-  ship that flies around the structure and fires at waves of incoming alien
-  vessels. Each run is a defensive stand: the goal is to destroy the attackers
-  before any of them get to the sphere.
+  Dyson Defender puts a giant Dyson sphere at the center of a 3D shooter and
+  makes you its guard. You pilot a ship around the structure and fire at waves
+  of incoming alien vessels, and the goal is to destroy every attacker before it
+  gets to the sphere.
 
 
-  The setup gives the shooting a clear purpose. Instead of simply clearing a
-  screen, you are guarding a single megastructure, so you have to think about
-  where to position your ship and which enemies are closest to reaching it.
-  Waves keep coming, which turns each session into a test of how long you can
-  hold the line.
+  According to its README, it was built with a mix of Cursor, Claude, Grok and
+  gptme, so several AI assistants took part in the work. It is built on
+  Three.js.
 
 
-  The game runs in the browser on Three.js. According to its README, the creator
-  built it with a mix of Cursor, Claude, Grok, and gptme, so several AI
-  assistants took part in the work.
+  Guarding one megastructure, instead of simply clearing a screen, changes the
+  shooting. You have to think about where to position your ship and which
+  enemies are closest to reaching the sphere, and the waves keep coming, so
+  every session tests how long you can hold the line.
 play:
   url: https://dyson-defender.vercel.app
   embeddable: true

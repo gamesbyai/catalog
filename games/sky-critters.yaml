@@ -2,20 +2,21 @@ slug: sky-critters
 title: Sky Critters
 tagline: Pilot a drone, shoot critters, and spend coins on upgrades to guard your base.
 description: >-
-  Sky Critters is a tower defense game played from the cockpit of a drone. You
-  fly over the map, shoot the critters that approach, and collect coins for each
-  one you take down. The goal is to keep your base standing while the attackers
-  keep coming.
+  Sky Critters is tower defense played from the cockpit of a drone. Critters
+  approach your base, and you fly out over the map to shoot them down,
+  collecting coins for each one you take down. The base has to stay standing
+  while the attackers keep coming.
 
 
-  Instead of placing static turrets, the player is the defense, moving the drone
-  into position and firing directly at targets. Coins earned in combat go toward
-  upgrading your gear, so each round feeds into a stronger setup for the next.
-  The game supports multiplayer and runs on mobile devices as well as desktop.
+  It supports online multiplayer, on touch screens and desktops alike. The
+  creator used Cursor during development, with Three.js as the engine, and it
+  ranked 140th of 945 in Vibe Jam 2026.
 
 
-  It was built with Three.js and entered in Vibe Jam 2026, where it ranked 140th
-  among 945 entries. The creator used Cursor during development.
+  There are no static turrets doing the work for you. You are the defense,
+  moving the drone into position and firing directly at the critters as they
+  come. The coins you earn in combat go toward upgrading your gear, so each
+  round feeds into a stronger setup for the next.
 play:
   url: https://skycritters.io
   embeddable: true

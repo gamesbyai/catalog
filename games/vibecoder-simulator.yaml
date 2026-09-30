@@ -3,20 +3,20 @@ title: Vibecoder Simulator
 tagline: Craft items, fight rival players, and race to the portal to escape a
   digital hell.
 description: >-
-  Vibecoder Simulator casts you as a programmer trapped in a hostile matrix.
-  Each run, you prompt your AI companion to craft items, fend off other players,
-  and fight your way toward the portal that offers the only exit.
+  Vibecoder Simulator traps you, a programmer, in a hostile matrix with one way
+  out: the portal. You prompt your AI companion to craft the items you need,
+  fend off rival players racing for the same portal, and fight your way toward
+  that exit.
+
+
+  It mixes action, puzzle, strategy, and simulation in a space shared with other
+  players, on phones as well as desktop. The tools were Codex and Three.js. In
+  the Vibe Jam 2026 standings it sits at 223rd of 945.
 
 
   The game plays with the everyday habits of vibecoding. You can whip your AI
   into working harder, mine tokens for resources, and survive a blue screen of
-  death along the way. The mix of action, puzzle, strategy, and simulation
-  elements plays out in a shared space with other players, and it also runs on
-  mobile.
-
-
-  The game was made for Vibe Jam 2026, where it placed 223rd out of 945 entries.
-  It runs on Three.js, and the creator built it with Codex.
+  death on the way to the portal, the only exit from this digital hell.
 play:
   url: https://vibe-bot-jam.pages.dev
   embeddable: true

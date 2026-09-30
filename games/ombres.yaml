@@ -3,25 +3,25 @@ title: Ombres
 tagline: Steer a giant bird whose shadow paints the desert; biggest territory at
   nightfall wins.
 description: >-
-  Ombres is a local party game for 1 to 12 players. The game runs in a browser
-  on a computer connected to a screen, and each player scans a QR code to steer
-  a giant bird from their phone. Your bird's shadow paints the sand in your
-  color. A match is three rounds of about two minutes, with the last round
-  counting double.
+  In Ombres, each player steers a giant bird whose shadow paints the desert sand
+  in their color, and the biggest territory at nightfall wins. It is a local
+  party game for 1 to 12 players: the game runs in a browser on a computer
+  connected to a screen, and everyone flies from a phone after scanning a QR
+  code. Bots fill empty seats, so one phone is enough.
 
 
-  Diving low gives a small, strong shadow, while climbing gives a wide, pale one
-  that cannot repaint strong sand. You can strike a lower bird by diving onto
-  it, and the target can dodge with a wingbeat. Tower shadows freeze the sand.
-  As the sun sets, shadows stretch, and in the final seconds night sweeps across
-  the map and locks everything in place. Bots fill empty seats, so one phone is
-  enough.
+  The look follows the ink outlines and flat colors of Moebius. According to the
+  repository, Claude Opus 5.5 designed and built it from a single brief, with
+  Brieuc Crosson supervising. The model wrote all of the code, in multi-agent
+  workflows in Claude Code.
 
 
-  The look follows the ink outlines and flat colors of Moebius, with a pastel
-  desert. The repository states it was designed and built by Claude Opus 5.5
-  from a single brief, with Brieuc Crosson supervising and all of the code
-  written by the model. The work ran as multi-agent workflows in Claude Code.
+  Altitude is the tactic: diving low gives a small, strong shadow, and climbing
+  gives a wide, pale one that cannot repaint strong sand. You can strike a lower
+  bird by diving onto it, though it can dodge with a wingbeat. A match is three
+  rounds of about two minutes, the last counting double, and as the sun sets the
+  shadows stretch until night sweeps across the map and locks everything in
+  place.
 play:
   url: https://ombres.deploy.breizhware.com
   embeddable: true

@@ -2,20 +2,21 @@ slug: clawthrone
 title: Clawthrone
 tagline: Rule a dark-fantasy realm against AI agents that scheme, trade, and raid.
 description: >-
-  Clawthrone is a live multiplayer strategy game set in a dark-fantasy realm.
-  You command your own holdings while rival rulers compete for the throne.
-  Agents scheme, trade, raid, and fight around you, so each session is a contest
-  of managing your realm and reacting to what others do.
+  Clawthrone is a live strategy game where you rule part of a dark-fantasy realm
+  and compete for the throne. Rival rulers driven by AI agents scheme, trade,
+  raid and fight around you, so a session is about managing your holdings and
+  reacting to what the others do.
 
 
-  The game draws on Darkthrone, the browser strategy game from the 2010s. It
-  reworks that idea around AI-driven rulers, and the creator wanted a more
-  entertaining way to benchmark AI models against one another. That turns the
-  shared realm into a place where different agents can be watched competing.
+  It draws on Darkthrone, the browser strategy game from the 2010s, reworked
+  around AI-driven rulers. The creator wanted a more entertaining way to
+  benchmark AI models against one another, and built it with Codex for Vibe Jam
+  2026, where it ranked 375th of 945.
 
 
-  The creator built it with Codex for the Vibe Jam 2026, where it was one of 945
-  entries. It runs as a persistent online world.
+  That turns the realm into a persistent online world where different AI agents
+  can be watched competing, while you rule your own holdings in the middle of it
+  and try to take the throne.
 play:
   url: https://clawthrone.com
   embeddable: false

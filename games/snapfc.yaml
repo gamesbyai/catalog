@@ -2,21 +2,21 @@ slug: snapfc
 title: SnapFC
 tagline: Drag, aim, and snap your players to score in quick physics soccer matches.
 description: >-
-  SnapFC is a physics-based soccer game played in short, competitive matches.
-  Instead of running a player around a pitch, you drag and aim your pieces, then
-  snap them toward the ball, letting momentum and collisions decide what happens
+  SnapFC is physics soccer you play by dragging, aiming, and snapping. Instead
+  of running a player around a pitch, you drag one of your pieces, aim it, and
+  snap it toward the ball, then let momentum and collisions decide what happens
   next. Each turn is a quick decision about angle and power.
 
 
-  The design draws on tabletop games, and the rules stay easy to pick up within
-  seconds. Depth comes from positioning and timing: a careless shot leaves your
-  side exposed, while a well-placed snap can set up a scoring chance. That gives
-  the matches a strategic edge beyond the simple premise.
+  The design draws on tabletop games, and the rules are easy to pick up within
+  seconds. Matches are short, competitive, and played online from a phone or a
+  desktop, and the creator made the game with Lovable. Its final spot in Vibe
+  Jam 2026 was 178th of 945.
 
 
-  The game supports multiplayer and runs on mobile as well as desktop, so a
-  match can start quickly. It was entered in Vibe Jam 2026, and the creator
-  built it with Lovable.
+  The depth comes from positioning and timing. A careless shot leaves your side
+  exposed, while a well-placed snap can set up a scoring chance, which gives the
+  matches a strategic edge.
 play:
   url: https://snapfc.com
   embeddable: true

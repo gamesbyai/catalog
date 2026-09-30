@@ -2,21 +2,20 @@ slug: vibeinc
 title: VibeInc
 tagline: Run a chaotic vibe coding studio, ship AI projects, and survive bugs and hype.
 description: >-
-  VibeInc is a browser tycoon in which the player runs a vibe coding studio.
-  Each run is about shipping AI-made projects, managing the studio's resources,
-  and keeping the company alive through bugs and swings in hype, with the goal
-  of growing a small shop into a sprawling tech empire.
+  VibeInc puts you in charge of a vibe coding studio and asks you to grow it
+  from a small shop into a sprawling tech empire. It is a browser tycoon: you
+  ship AI-made projects, manage the studio's resources, and keep the company
+  alive through bugs and swings in hype.
 
 
-  The setting is what sets it apart. It pokes fun at the messier side of the AI
-  startup scene. Founders treat a working demo as a finished product, dashboards
-  are held together by good vibes, and "agents" amount to a single enthusiastic
-  API call. The creator, a longtime tycoon fan, built economy systems around
-  that chaos.
+  The creator is a longtime tycoon fan who made it with Cursor on Three.js, and
+  the economy systems are built around the chaos of the AI startup scene. It
+  finished 130th of 945 in Vibe Jam 2026.
 
 
-  The game was made for Vibe Jam 2026, where it placed 130th out of 945 entries.
-  It runs in the browser on Three.js, and the creator built it with Cursor.
+  The messier side of that scene is the joke. Founders treat a working demo as a
+  finished product, dashboards are held together by good vibes, and "agents"
+  amount to a single enthusiastic API call.
 play:
   url: https://cadostropia.github.io/VibeInc
   embeddable: true

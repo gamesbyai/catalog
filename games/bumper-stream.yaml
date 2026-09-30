@@ -2,21 +2,19 @@ slug: bumper-stream
 title: Bumper Stream
 tagline: Outlast seven AI rivals on a neon arena that cracks apart with every collision.
 description: >-
-  Bumper Stream is a single-player arena action game in which you face seven AI
-  opponents on a glowing neon platform. Each run is a battle of survival: you
-  bump into rivals and try to stay on the stage longer than any of them.
+  Bumper Stream puts you on a glowing neon platform with seven AI rivals, and
+  the goal is to stay on the stage longer than any of them. Each run is a battle
+  of survival, fought by bumping into the others until only one is left.
 
 
-  The main twist is the floor itself. Every collision cracks the ground beneath
-  the vehicles, so the playing area gets smaller and riskier as the match goes
-  on. Aggressive play speeds up the collapse, which pushes you to weigh each hit
-  against your own footing.
+  The game is described as a mix of Mario Kart and Fall Guys: kart-style bumping
+  with last-one-standing elimination. It is a single-player game, built with
+  Claude Code, and it came 328th of the 945 entries at Vibe Jam 2026.
 
 
-  The game was entered in Vibe Jam 2026, where it placed 328th out of 945
-  entries. It is described as a mix of Mario Kart and Fall Guys, combining
-  kart-style bumping with last-one-standing elimination. The creator built it
-  with Claude Code.
+  The floor is part of the fight. Every collision cracks the ground beneath the
+  vehicles, so the arena gets smaller and riskier as the match goes on, and each
+  hit you land speeds up a collapse you also have to survive yourself.
 play:
   url: https://bumperstream.georgekal.com
   embeddable: true

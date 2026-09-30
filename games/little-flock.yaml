@@ -2,21 +2,21 @@ slug: little-flock
 title: little flock
 tagline: Tend a shared flock of sheep on a cozy farm with other players.
 description: >-
-  Little Flock is a cozy multiplayer sheep-farming simulation rendered in 3D.
-  Players share a farm with others online and look after a flock of sheep
-  together, settling into a relaxed routine of tending animals.
-
-
-  The tone is gentle and low-pressure, built around the pleasure of pottering
-  about a pastoral space with friends. The client is written with React Three
-  Fiber, so the farm is drawn in the browser, while the multiplayer side is
-  handled by a Go backend that keeps everyone's view of the flock in sync.
+  In little flock you share a cozy farm with other players online and look after
+  a flock of sheep together. The routine is relaxed: tend the animals and potter
+  about the pastoral space with friends, and the tone stays gentle and
+  low-pressure.
 
 
   According to the repository, the whole game was made in one shot with GPT 6
-  Astra in Codex. That makes it a compact example of a complete networked game,
-  with both a 3D front end and a server, produced from a single prompt to a
-  coding agent.
+  Astra in Codex: a complete networked game from a single prompt to a coding
+  agent. The client uses React Three Fiber to draw the farm in the browser, and
+  a Go backend keeps everyone's view of the flock in sync.
+
+
+  Because the flock is shared and kept in sync, every player sees the same
+  sheep, and looking after them is something the whole farm does together. It is
+  a casual simulation with no rush to it.
 play:
   url: https://sharpherd.song.work
   embeddable: false

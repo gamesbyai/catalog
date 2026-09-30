@@ -2,21 +2,20 @@ slug: right-behind-you
 title: Right Behind You
 tagline: Run from an evil clown that eats you if you slow down.
 description: >-
-  Right Behind You is a fast-paced horror runner. An evil clown chases the
-  player through each run, and slowing down lets it catch up and eat you. The
-  goal is to keep moving quickly and stay ahead of the threat for as long as
-  possible.
+  An evil clown is right behind you, and if you slow down, it eats you. Right
+  Behind You is a fast-paced horror runner built on that one rule: keep moving
+  quickly and stay ahead of it for as long as you can.
 
 
-  The game pairs the pressure of an endless chase with a horror mood built
-  around a single pursuer that stays close behind. It runs in the browser on a
-  3D scene and is set up to work on mobile devices as well as desktop.
+  The chase is endless, so a run lasts as long as you keep your lead. The
+  pressure comes from that endless chase, and the horror mood is built around a
+  single pursuer that stays close behind the whole time. The 3D scene was made
+  with Three.js and Codex, and the game ranked 295th of 945 in Vibe Jam 2026.
 
 
-  The creator says a strong dislike of clowns inspired the project, and that
-  spending hours being chased by one during development might work as exposure
-  therapy. The creator built it with Codex and Three.js, and it was entered in
-  Vibe Jam 2026.
+  A strong dislike of clowns inspired the project, according to the creator, who
+  adds that spending hours being chased by one during development might work as
+  exposure therapy.
 play:
   url: https://rightbehindyougame.ejurovibejam.com
   embeddable: true

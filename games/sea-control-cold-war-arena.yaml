@@ -2,21 +2,21 @@ slug: sea-control-cold-war-arena
 title: Sea Control - Cold War Arena
 tagline: Command missile-armed warships in online Cold War naval battles.
 description: >-
-  Sea Control - Cold War Arena is a multiplayer naval combat game set in the
-  Cold War era. Players take command of warships and fight other players at sea,
-  using missiles as the main weapons. The creator describes it as a take on the
-  ship-battle formula of World of Warships, with guided firepower replacing deck
-  guns.
+  Sea Control - Cold War Arena is naval combat from the Cold War era, played in
+  online matches against other people. You take command of a missile-armed
+  warship and fight at sea, ship against ship.
 
 
-  The focus is on missile warfare between ships, blending action, shooting, and
-  a simulation feel. Online multiplayer is a central feature, so matches are
-  played against other people. The game also supports mobile, so it can be
-  played on phones as well as desktop browsers.
+  Online play is central to the game, though the developer notes that
+  multiplayer was added as a later step in development. The game was built with
+  Three.js and Cursor, it runs in phone and desktop browsers alike, and it
+  ranked 406th of 945 entries in Vibe Jam 2026.
 
 
-  It was built with Three.js for the Vibe Jam 2026, and the creator used Cursor.
-  The developer noted that multiplayer was added as a later step in development.
+  The creator describes it as a take on the ship-battle formula of World of
+  Warships, with guided firepower replacing deck guns. Missile warfare between
+  ships is the center of every fight, and the feel sits somewhere between
+  action, shooting, and simulation.
 play:
   url: https://coldwararena.seacontrol.net
   embeddable: true

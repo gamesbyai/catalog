@@ -3,21 +3,21 @@ title: save the city
 tagline: Play a tourist turned hero fighting rogue AI and giant robots across
   Seoul and Waikiki.
 description: >-
-  Save the City is a 3D action game in which an ordinary tourist ends up as the
-  only person able to defend two cities. The player fights rogue AI forces,
-  corrupted E.R.A. heroes, and giant robots, moving through Seoul and Waikiki to
-  stop the threat.
+  A tourist on vacation turns out to be the only person who can defend two
+  cities. Save the City is a 3D action game that sends that unlikely hero
+  through Seoul and Waikiki to stop rogue AI forces, corrupted E.R.A. heroes,
+  and giant robots.
 
 
-  The setting stands out: two real-world locations serve as battlegrounds, and
-  the hero starts as a vacationer instead of a trained fighter. The enemy roster
-  mixes former heroes who have gone bad with oversized machines, which gives the
-  story a comic-book feel. The creator describes it as a childhood game, so it
-  reads as a personal project.
+  The creator describes it as a childhood game, so it reads as a personal
+  project. It was made with Codex and Three.js as a single-player browser game,
+  and it went into Vibe Jam 2026, where it came 378th of 945.
 
 
-  The creator built it with Codex and Three.js for the Vibe Jam 2026 event,
-  where it placed 378th out of 945 entries. It runs in the browser.
+  The setting is the draw: both battlegrounds are real-world locations, and the
+  hero starts as an ordinary vacationer rather than a trained fighter. The enemy
+  list pairs former heroes who have gone bad with oversized machines, which
+  gives the story a comic-book feel.
 play:
   url: https://savecity.vizuo.work
   embeddable: true

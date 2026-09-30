@@ -2,20 +2,20 @@ slug: destined-heroes-tactics
 title: Destined Heroes Tactics
 tagline: Command a squad of unique heroes in turn-based battles won by tactics alone.
 description: >-
-  Destined Heroes Tactics is a lite tactical RPG played in turns. You lead a
-  group of heroes across the battlefield, positioning each unit and choosing its
-  actions to defeat the opposing side. Outcomes come from planning, so every
-  move you make is a decision you can reason about.
+  Destined Heroes Tactics is a single-player lite tactical RPG where battles are
+  won by planning, not luck. You lead a squad of unique heroes across the
+  battlefield turn by turn, positioning each unit and choosing its actions to
+  defeat the other side.
 
 
-  Each hero is unique, which shapes how you build a team and approach a fight.
-  The design draws on a love of chess and on tactical RPGs like Fire Emblem,
-  favoring careful positioning and reading your opponent over random rolls. The
-  game also runs on mobile devices, so battles fit on a phone screen.
+  The design draws on a love of chess and on tactical RPGs like Fire Emblem. It
+  was built with Cursor in Unity and ranked 484th of the 945 entries at Vibe Jam
+  2026, and the battles fit on a phone screen as well as a desktop one.
 
 
-  The creator built it with Cursor, and it was entered in Vibe Jam 2026, where
-  it placed 484th out of 945 entries in the final ranking.
+  Because each hero is unique, the team you build shapes how you approach a
+  fight. Careful positioning and reading your opponent count for more than
+  random rolls, so every move is a decision you can reason about.
 play:
   url: https://destinedstudio.com/destined-heroes-tactics
   embeddable: true

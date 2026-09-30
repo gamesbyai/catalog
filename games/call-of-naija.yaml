@@ -3,27 +3,23 @@ title: Call of Naija
 tagline: Fight through Lagos in a browser FPS with a campaign, co-op modes and
   multiplayer.
 description: >-
-  Call of Naija is a first-person shooter set in Lagos that runs in the browser.
-  The campaign, Operation Eko Liberation, has five scripted missions with
-  cutscenes, dialogue, allies and checkpoints. Objectives include freeing
-  hostages at Balogun Market, destroying jammer convoys, restarting generators
-  and holding a bridge against an armored push. Boss fights close out the later
+  Call of Naija is a first-person shooter set in Lagos, with a campaign, co-op
+  modes and online multiplayer. The campaign, Operation Eko Liberation, has five
+  scripted missions with cutscenes, dialogue, allies and checkpoints. You free
+  hostages at Balogun Market, destroy jammer convoys, restart generators and
+  hold a bridge against an armored push, with boss fights closing out the later
   missions.
 
 
-  Beyond the campaign, the game offers Free-for-All, Team Deathmatch and
-  Domination against bots or online players. Lagos Siege is a co-op survival
-  mode for one to four players, with ten waves, shops, upgrades, revives and a
-  final boss. Extraction is a co-op raid where a squad finds valuables, uploads
-  a hack under fire and escapes. Five maps cover the settings.
+  Free-for-All, Team Deathmatch and Domination run against bots or online
+  players across five maps. Under the hood, a TypeScript simulation is shared by
+  the offline client and an authoritative Node server, with Three.js rendering,
+  Rapier physics and a Recast navmesh for enemy AI.
 
 
-  The simulation is written in TypeScript and shared between the offline client
-  and an authoritative Node multiplayer server. Rendering uses Three.js, physics
-  uses Rapier, and enemy AI navigates with a Recast navmesh. Models come from
-  Blender scripts, and textures are generated procedurally at runtime.
-  Progression includes XP, weapon unlocks, loadouts, rebindable controls and
-  gamepad support.
+  The co-op modes go further. Lagos Siege is survival for one to four players,
+  with ten waves, shops, upgrades, revives and a final boss. Extraction is a
+  raid where a squad finds valuables, uploads a hack under fire and gets out.
 play:
   url: https://callofnaija.vercel.app
   embeddable: true

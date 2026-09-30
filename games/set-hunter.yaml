@@ -3,20 +3,21 @@ title: Set Hunter
 tagline: Open card packs, trade singles, and finish animal card sets before time
   runs out.
 description: >-
-  Set Hunter is a trading card collector built as a short roguelike. Each run,
-  you try to complete an animal-themed card set as quickly as you can. You open
-  packs, buy individual cards, and sell your duplicates to keep your money
-  moving, all while watching how much cash you have left.
+  Set Hunter is a short roguelike about completing an animal-themed card set as
+  quickly as you can, before time runs out. You open packs, buy single cards,
+  and sell your duplicates to keep money moving, all while keeping an eye on how
+  much cash is left.
 
 
-  The game aims to capture the tension of ripping open a pack and hoping for the
-  missing card. Perks shape your strategy from run to run, and quirky NPCs bring
-  events that can help or complicate your plans. Players also chase rare finds
-  as a community, with global discoveries shared across everyone.
+  Rare finds are also a community chase. Global discoveries are shared across
+  everyone who plays, so players hunt the rare cards together. Cursor and
+  Three.js went into this Vibe Jam 2026 entry, which placed 562nd of 945.
 
 
-  It was a Vibe Jam 2026 entry, built with Three.js, and the creator used
-  Cursor. It is playable on mobile as well as desktop.
+  The game is after the feeling of ripping open a pack and hoping the missing
+  card is inside, the one that completes the set. Perks change your strategy
+  from run to run, and quirky NPCs bring events that can help your plans or get
+  in their way.
 play:
   url: https://set-hunter-game.vercel.app
   embeddable: true

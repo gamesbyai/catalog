@@ -2,21 +2,20 @@ slug: napless
 title: Napless
 tagline: Brawl as a toddler and race to grab the TV remote before nap time.
 description: >-
-  Napless is a multiplayer action game where players control toddlers loose in
-  an oversized living room. Everyone is after the same prize, the TV remote, and
-  the round is a race against nap time. Along the way, toddlers fight each
-  other, throw toys, and wreck the furniture and clutter around them.
+  In Napless every player is a toddler, and there is only one TV remote. The
+  round is a race against nap time across an oversized living room, and on the
+  way to the remote you fight the other toddlers, throw toys and wreck the
+  furniture and clutter.
 
 
   The premise comes straight from parenting life: the creator has a toddler and
-  drew on real experience. That gives the chaos a playful, household flavor,
-  with toys as projectiles and a giant room as the arena. Matches are fast and
-  messy, built around scrambling for one object.
+  drew on that real experience. Codex was their tool, the result came 21st of
+  945 at Vibe Jam 2026, and it runs on phones as well as desktop.
 
 
-  It runs in the browser using Three.js and supports both multiplayer and mobile
-  play. The creator built it with Codex for Vibe Jam 2026, where it placed 21st
-  out of 945 entries.
+  Toys are the projectiles and the giant room is the arena, which gives the
+  chaos a playful, household flavor. Matches are fast and messy, and all of it
+  is a scramble for one object before nap time wins.
 play:
   url: https://playnapless.com
   embeddable: true

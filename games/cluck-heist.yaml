@@ -2,22 +2,20 @@ slug: cluck-heist
 title: Cluck Heist
 tagline: Rampage as a chicken through a cartoon version of your own neighborhood.
 description: >-
-  Cluck Heist is a top-down sandbox where you play a menacing chicken. You type
-  in a real address, and the game builds a cartoon version of the surrounding
-  neighborhood from OpenStreetMap data. From there you peck, poop, and steal
-  your way around, then haul the loot back to your nest before the humans catch
-  on.
+  Cluck Heist starts with a real address. Type one in and the game builds a
+  cartoon version of the surrounding neighborhood from OpenStreetMap data, then
+  turns you loose in those streets as a menacing chicken.
 
 
-  The standout idea is the map. Instead of a fixed level, the streets you run
-  through are based on a place you choose, so the chaos can happen on your own
-  block. The tone is openly silly, built around chicken mischief and petty
-  theft.
+  It is a top-down sandbox, and the creator describes it as an attempt to make
+  the most ridiculous game possible, for fun. Made with Claude Code and
+  Three.js, it placed 278th of 945 at Vibe Jam 2026, and the tone is openly
+  silly, built around chicken mischief and petty theft.
 
 
-  The game was an entry in Vibe Jam 2026. The creator built it with Claude Code
-  and Three.js, and describes it as an attempt to make the most ridiculous game
-  possible for fun.
+  From there you peck, poop and steal your way around, then haul the loot back
+  to your nest before the humans catch on. Because the streets come from a place
+  you choose, the chaos can happen on your own block.
 play:
   url: https://cluckheist.cates.fm
   embeddable: true

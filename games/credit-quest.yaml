@@ -3,21 +3,21 @@ title: Credit Quest
 tagline: Collect API credits and finish terminal-themed quests in a
   Zelda-inspired adventure.
 description: >-
-  Credit Quest is a 3D adventure where the player explores a world in which
-  terminals hold the power. The goal is to collect API credits and spend that
-  progress on completing tasks and quests along the way. Puzzle elements are
-  mixed into the exploration.
+  Credit Quest is a Zelda-inspired 3D adventure, and in its world the terminals
+  hold the power. You explore, collect API credits and spend that progress on
+  the tasks and quests along the way, with puzzles mixed into the exploring.
 
 
-  The game draws on classic Zelda-style adventure, and the creator said they
-  grew up loving that series. The setting turns computing culture into the
-  fantasy backdrop, so credits work as the currency of the world and terminals
-  act as its centers of authority.
+  The creator grew up loving the Zelda series, and this is their take on that
+  kind of classic adventure, built for the browser. It is a single-player game,
+  built with Claude Code on Three.js, and at Vibe Jam 2026 it ranked 289 of the
+  945 entries.
 
 
-  It was built with Three.js as an entry in Vibe Jam 2026, where it ranked 289
-  out of 945 entries. The creator built it with Claude Code. It is a
-  single-player game.
+  The setting turns computing culture into the backdrop for a fantasy adventure.
+  Credits are the currency of the world, terminals are its centers of authority,
+  and the quests you finish are themed around them, so collecting credits is how
+  you move forward.
 play:
   url: https://creditquest.packetloss404.com
   embeddable: true

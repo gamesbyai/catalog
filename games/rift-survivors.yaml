@@ -3,21 +3,20 @@ title: Rift Survivors
 tagline: Fight through 100 neon floors with combos, parries, and stamina management.
 description: >-
   Rift Survivors is a cyber-neon hack-and-slash roguelike built around a
-  100-floor cycle. Combat borrows from Demons' Souls: you chain combos, time
-  parries, and spend stamina carefully, since every swing and dodge draws from
-  the same pool. Each run pushes you up through the floors toward tougher
-  fights.
+  100-floor cycle. You fight your way up through the floors, and the fights get
+  tougher as you climb. Combat borrows from Demons' Souls: you chain combos and
+  time parries, and every swing and dodge draws stamina from the same pool.
 
 
-  Bosses come in three types, each with five to six distinct attack patterns to
-  learn and read. Gear follows an MMO-style rarity ladder from Common to
-  Legendary, and skills can be linked into chains. The interface switches
-  automatically between Japanese and English, and the game runs on mobile.
+  Bosses come in three types, each with five to six attack patterns to learn.
+  Gear climbs an MMO-style rarity ladder from Common to Legendary, and skills
+  link into chains. The interface switches between Japanese and English on its
+  own.
 
 
-  The creator started out making games for feature phones and built this one
-  under a 1MB size limit, a constraint that recalled that early work. It was
-  submitted to Vibe Jam 2026, and the creator built it with Claude Code.
+  The creator started out making games for feature phones. This one was built
+  with Claude Code under a 1MB size limit, a constraint that recalled that early
+  work, and it ranked 430th of 945 in Vibe Jam 2026.
 play:
   url: https://rift-survivors.pages.dev
   embeddable: true

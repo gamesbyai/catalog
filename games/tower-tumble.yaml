@@ -2,21 +2,19 @@ slug: tower-tumble
 title: Tower Tumble
 tagline: Bounce off walls and backflip your way up an endless pixelated tower.
 description: >-
-  Tower Tumble is an endless tower climber in a pixelated 3D style. The goal is
-  to keep ascending platform after platform, bouncing off the walls to gain
-  height and speed. A run continues until you fall, so the point is to climb as
-  high as you can.
+  Tower Tumble is an endless climb up a pixelated 3D tower. You go up platform
+  after platform, bouncing off the walls to gain height and speed. The run
+  continues until you fall, so the whole point is to climb as high as you can.
 
 
-  Backflips earn style points, which rewards flashy movement over cautious
-  hopping. The game is a 3D reimagining of Icy Tower, a childhood favorite of
-  the creator, and it aims to keep the feel of that original. Multiplayer is
-  included, and a leaderboard lets you compare your climbs with other players.
-  It also runs on mobile.
+  It is a 3D reimagining of Icy Tower, a childhood favorite of the creator, and
+  it aims to keep the feel of the original. Claude Code and Three.js went into
+  the build, along with multiplayer. Its Vibe Jam 2026 result was 483rd of 945.
 
 
-  The creator built it with Claude Code, using Three.js for the rendering, and
-  entered it in Vibe Jam 2026, where it placed 483rd out of 945 entries.
+  Height is not the only score. Backflips earn style points, which rewards
+  flashy movement over cautious hopping on the way up, and a leaderboard lets
+  you compare your climbs with other players.
 play:
   url: https://tower-tumble.vercel.app
   embeddable: true

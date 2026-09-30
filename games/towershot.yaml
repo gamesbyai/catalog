@@ -3,21 +3,20 @@ title: towershot
 tagline: Fire shots with a single button and place each one with careful spatial
   judgment.
 description: >-
-  Towershot is a one-button shooter that mixes aiming with puzzle thinking. The
-  player has a single input, so every decision comes down to when to fire and
-  where a shot will land. Each move has to be planned against the space around
-  it.
+  In towershot you have one button, and everything depends on when you press it.
+  It is a shooter, but one that mixes aiming with puzzle thinking. Every
+  decision comes down to when to fire and where the shot will land, and each
+  move has to be planned against the space around it.
 
 
-  The game is built around spatial awareness and focus. With a single button to
-  press, the challenge lies in reading the layout and timing shots, which gives
-  it a feel closer to a falling-block puzzler than a typical shooter. The
-  creator cites Puyo Puyo as a reference point for that puzzle feel.
+  The creator cites Puyo Puyo as the reference for that puzzle feel. They made
+  the game with ChatGPT on Three.js, it works on a phone or a computer, and it
+  placed 473rd of 945 in Vibe Jam 2026.
 
 
-  It runs in the browser on Three.js and works on mobile as well as desktop. The
-  game was an entry in Vibe Jam 2026, and the creator used ChatGPT while
-  building it.
+  Reading the layout and timing your shots is the whole task, which puts it
+  closer to a falling-block puzzler than a typical shooter. The game is built
+  around spatial awareness and focus.
 play:
   url: https://lucky-wave-e666.soft-glade-15f8.workers.dev
   embeddable: true

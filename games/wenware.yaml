@@ -2,22 +2,20 @@ slug: wenware
 title: WenWare
 tagline: Guess the place and year of a 360-degree historical scene.
 description: >-
-  WenWare is a time-travel take on the geography guessing game. Each round drops
-  you into an immersive 360-degree scene from history. You look around, study
-  the buildings, clothing, and surroundings, then commit to an answer for both
-  where you are standing and what year it is.
+  WenWare is a geography guessing game with a time machine attached. Each round
+  drops you into a 360-degree scene from history. You look around at the
+  buildings, clothing, and surroundings, then commit to two answers: where you
+  are standing and what year it is.
 
 
-  The twist is the second guess. Placing a pin on a map is only half the job,
-  since you also have to estimate the date, so architecture, technology, and
-  everyday details become clues about the era as well as the region. That makes
-  each scene a small detective puzzle.
+  It placed third of 945 in Vibe Jam 2026 and won the Most Played award from
+  Bolt. It supports multiplayer, and the creator describes the appeal as using
+  AI to explore moments in history.
 
 
-  The game placed third at Vibe Jam 2026 out of 945 entries and received the
-  Most Played award from Bolt. The creator built it with Codex and Three.js, and
-  it supports multiplayer and mobile play. The creator describes the appeal as
-  using AI to explore moments in history.
+  The date is what makes it different. A pin on the map is only half the job, so
+  architecture, technology, and everyday details become clues about the era as
+  well as the region, and each scene turns into a small detective puzzle.
 play:
   url: https://wen-ware.com
   embeddable: false

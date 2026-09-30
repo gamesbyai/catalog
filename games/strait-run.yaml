@@ -3,21 +3,20 @@ title: Strait-run
 tagline: Pilot a fast cargo ship through hazardous waters and deliver supplies
   before time runs out
 description: >-
-  Strait-run is an arcade survival game in which the player commands a
-  high-speed cargo ship through dangerous waters. Threats keep getting tougher,
-  so each run is about dodging hazards and staying afloat long enough to deliver
-  critical supplies before global trade collapses.
+  Strait-run is an arcade survival game that puts you in command of a high-speed
+  cargo ship with critical supplies aboard and global trade close to collapse.
+  You dodge hazards and stay afloat through dangerous waters while the threats
+  keep getting tougher, and the delivery has to land before time runs out.
 
 
   The premise comes from the creator's interest in how one disrupted shipping
   route can ripple out into fuel prices, supply chains, and daily life around
-  the world. That fragility becomes the pressure driving the action, giving a
-  simple dodge-and-survive loop a clear reason to exist.
+  the world. It is built on Phaser, was made with Claude Code, and runs on
+  mobile too. Vibe Jam 2026 ranked it 553rd of 945.
 
 
-  It was entered in Vibe Jam 2026 and runs on Phaser. The creator built it with
-  Claude Code, and it is set up to work on mobile devices as well as desktop
-  browsers.
+  That fragility is the pressure behind the action, and it gives a simple
+  dodge-and-survive loop a clear reason to exist: the cargo has to get through.
 play:
   url: https://strait-run.onrender.com
   embeddable: true

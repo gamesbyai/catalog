@@ -2,21 +2,21 @@ slug: effective-immediately
 title: Effective Immediately
 tagline: Shoot your way out of a collapsing office nightmare as a burned-out worker.
 description: >-
-  Effective Immediately is a first-person shooter set inside a surreal, decaying
-  corporate office. You play a burned-out worker fighting through the building's
-  twisted spaces, trying to escape before the system consumes him. The pace is
-  fast and violent, in the spirit of old browser shooters.
+  Effective Immediately turns a bad job into a first-person shooter. You play a
+  burned-out worker fighting through the twisted spaces of a surreal, decaying
+  corporate office, trying to escape before the system consumes him.
 
 
-  The look mixes 2D animated characters with breakable 3D office props, all
-  wrapped in a comic-book horror style. The setting turns workplace pressure
-  into something literal, with the sense of losing your mind under a controlling
-  employer driving the mood. It placed 25th out of 945 entries in Vibe Jam 2026.
+  The look mixes 2D animated characters with breakable 3D office props, all in a
+  comic-book horror style. According to the creator, it was built with Codex on
+  Three.js, which handles the breakable props and the flat characters in one 3D
+  space. It placed 25th of 945 at Vibe Jam 2026.
 
 
-  According to the creator, the game was built with Codex and runs on Three.js
-  for its 3D rendering, which handles the breakable props and the mix of flat
-  characters in a 3D space.
+  The pace is fast and violent, in the spirit of old browser shooters. Workplace
+  pressure is made literal here, and the sense of losing your mind under a
+  controlling employer drives the mood while you shoot your way out of the
+  collapsing office.
 play:
   url: https://vibejam2026.vercel.app
   embeddable: true

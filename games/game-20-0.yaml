@@ -2,21 +2,20 @@ slug: game-20-0
 title: 20-0
 tagline: Draft an NFL roster from random franchise eras and try for a perfect season.
 description: >-
-  20-0 is a football drafting game built around a single goal: assemble a roster
-  strong enough to go undefeated. Each pick draws from random franchise eras
-  across NFL history, so a run means filling out your lineup with players from
-  different teams and decades, then seeing whether the finished team can win
-  every game.
+  In 20-0 you draft an NFL roster and try to take it through a season without a
+  loss. Every pick draws from a random franchise era somewhere in NFL history,
+  so your lineup ends up mixing players from different teams and decades. Once
+  it is full, you find out whether the finished team can win every game.
 
 
-  The appeal is in the roster-building decisions. Because the eras come up at
-  random, you have to weigh star names against positional needs and adapt as the
-  pool changes from pick to pick. A perfect season is the target, which gives
-  each draft a clear measure of success.
+  The strategy lives in the roster-building decisions. Because the eras come up
+  at random, you weigh star names against positional needs and adapt as the pool
+  changes from one pick to the next, which makes it as much strategy as sports.
 
 
-  According to the creator, the game was built with Claude and Kimi. It is a
-  single-player game that runs in the browser.
+  A perfect season is the target, which gives every draft a clear measure of
+  success. The creator names Claude and Kimi as the AI behind it, and you play
+  it solo.
 play:
   url: https://20-0.com
   embeddable: true

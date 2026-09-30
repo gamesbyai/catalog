@@ -2,22 +2,22 @@ slug: hero-nearby
 title: Hero Nearby
 tagline: Run through a neighborhood as a developer and fix people's tech problems.
 description: >-
-  Hero Nearby is a 2D endless runner in which the player takes the role of a
-  developer moving through a neighborhood. Along the way, residents need help
-  with everyday tech problems, and the runner steps in to fix their bugs while
-  avoiding obstacles that stand in the way.
+  In Hero Nearby you play a developer running through a neighborhood and fixing
+  people's tech problems on the way. It is a 2D endless runner: residents need
+  help with everyday bugs, and you step in to fix them while avoiding the
+  obstacles in your path.
 
 
-  The game is inspired by Informatici di Quartiere, an Italian non-profit
-  association that helps local communities with digital challenges through
-  education, workshops, and educational video games. The story follows that
-  mission with a playful tone.
+  The idea comes from Informatici di Quartiere, an Italian non-profit
+  association that helps local communities with technology through education,
+  workshops and educational video games. The story follows that mission with a
+  playful tone in a casual arcade format.
 
 
-  Humor runs through the setting, poking fun at programmer stereotypes.
-  Developers get asked to fix everything, printers included, and they face the
-  eternal enemy of cable management. It was built for Vibe Jam 2026 and runs in
-  the browser on 3D web tech, with mobile support.
+  The humor pokes at programmer stereotypes. Developers get asked to fix
+  everything, printers included, and they face the eternal enemy of cable
+  management. It came out of Vibe Jam 2026, where it came 465th of 945, and it
+  plays on phones as well as desktop.
 play:
   url: https://hero-nearby.vercel.app
   embeddable: true

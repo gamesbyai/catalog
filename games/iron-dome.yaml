@@ -2,21 +2,21 @@ slug: iron-dome
 title: Iron Dome
 tagline: Shoot down incoming rockets and bosses to keep your glowing city standing.
 description: >-
-  Iron Dome is an arcade missile-defense shooter in which the player guards a
-  glowing city against waves of incoming rockets. Each run is a fight to keep
-  the skyline intact as the attacks keep coming, with boss encounters
-  interrupting the regular waves and raising the pressure.
+  Rockets come in waves, and your job in Iron Dome is to shoot them down before
+  they reach a glowing city. It is a single-player arcade missile-defense
+  shooter, and a run is a fight to keep the skyline standing as the attacks keep
+  coming.
 
 
-  The premise draws on the classic Missile Command and on the real-world Iron
-  Dome system. That gives it a tense, defensive feel: the goal is not to chase
-  enemies but to intercept threats before they reach the city below. It also
-  runs on mobile devices.
+  The premise draws on two sources: the classic Missile Command and the
+  real-world Iron Dome system that gives the game its name. In the creator's
+  account, it was built mostly with Claude, through Claude Code, and it also
+  plays on phones.
 
 
-  The game was an entry in Vibe Jam 2026, where it placed 569th out of 945
-  entries. The creator states it was built mostly with Claude AI, through Claude
-  Code.
+  That makes it a defensive game at heart, where the job is to intercept threats
+  before they reach the city rather than to chase enemies down. Boss encounters
+  break up the regular waves and raise the pressure on the city below.
 play:
   url: https://iron-dome-8hb.pages.dev
   embeddable: true

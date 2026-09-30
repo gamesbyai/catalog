@@ -2,25 +2,21 @@ slug: chess3dastra
 title: Chess3dastra
 tagline: Play chess against a computer opponent on a 3D or 2D board.
 description: >-
-  Chess3dastra is a browser chess game where you play against a local computer
-  opponent. It follows full chess rules, including castling, en passant,
-  promotion, and draws. You pick one of three difficulty levels, then move
-  pieces by clicking, using the keyboard, or typing algebraic notation. Undo, a
-  move history, and a captures list are available during play.
+  Chess3dastra is full-rules chess against a computer opponent that runs locally
+  in your browser. Castling, en passant, promotion and draws are all in, and you
+  choose one of three difficulty levels before you start.
 
 
-  The board can be shown in 3D or in a flat 2D view, and the choice persists
-  across reloads. The 3D pieces are built from hand-made geometry rather than
-  sprites, and the camera can be orbited. Light and dark themes are included,
-  the layout adapts to mobile screens, and a game in progress is saved and
-  restored after a reload. The computer's search runs in a Web Worker, so the
-  interface stays responsive.
+  According to the repository, it was built in the GitHub Copilot app with GPT-6
+  Astra from four prompts, including a review pass by a second agent. It ships
+  as a single static HTML file with unit and browser tests, and the computer's
+  search runs in a Web Worker so the interface stays responsive.
 
 
-  According to the repository, the game was built in the GitHub Copilot app with
-  GPT-6 Astra from four prompts, including a review pass by a second agent. The
-  whole thing ships as a single static HTML file, with automated unit and
-  browser tests included.
+  You move by clicking, with the keyboard or by typing algebraic notation, with
+  undo, a move history and a captures list at hand. The board switches between
+  3D, with hand-made pieces and an orbiting camera, and a flat 2D view. That
+  choice survives a reload, and so does a game in progress.
 play:
   url: https://yortch.github.io/chess3dastra
   embeddable: true

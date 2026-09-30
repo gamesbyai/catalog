@@ -2,20 +2,21 @@ slug: sunset-city-the-dark-tower
 title: Sunset City - The Dark Tower
 tagline: Climb toward the Black Tower while sneaking past guards who watch the city.
 description: >-
-  Sunset City - The Dark Tower is a 3D action-adventure with platforming and
-  stealth elements. The goal is to reach the Black Tower by climbing through the
-  city while staying out of the guards' line of sight. Each attempt is a
-  route-finding problem: you scale structures and choose when to move.
-
-
-  The game leans on the idea that a quiet path always exists. Guards' gaze acts
-  as the main threat, so climbing becomes a matter of timing and observation. It
-  placed 8th out of 945 entries in Vibe Jam 2026, and it runs on mobile as well.
+  Sunset City - The Dark Tower is a climb through a watched city. You scale
+  structures on the way to the Black Tower and stay out of the guards' line of
+  sight, choosing when to move. Platforming and stealth share this single-player
+  3D action-adventure, which also runs on phones.
 
 
   The creator describes it as a collection of Three.js concepts gathered over
   time and finally combined into one game, the kind they would have wanted to
-  play as a child. The creator built it with Claude Code.
+  play as a child. Claude Code was the tool, and Vibe Jam 2026 ranked it 8th of
+  945.
+
+
+  The design rests on the idea that a quiet path always exists. The guards' gaze
+  is the main threat, so each attempt becomes a route-finding problem solved
+  with timing and observation.
 play:
   url: https://sunset-city.didof.dev
   embeddable: true

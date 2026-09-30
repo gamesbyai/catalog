@@ -3,22 +3,21 @@ title: Reach the Relay
 tagline: Pick a route through AI-ravaged ruins and keep your VIP alive in
   turn-based fights.
 description: >-
-  Reach the Relay is a turn-based RPG set in the ruins of an AI apocalypse. Each
-  run begins with a choice among three routes. You then guide a party through
-  encounters, protecting a VIP who must survive the whole trip to reach the
-  Relay at the end.
+  You lead a party across the ruins of an AI apocalypse, and the VIP in your
+  care has to survive the whole trip. Reach the Relay is a turn-based RPG that
+  opens every run with a choice of three routes, then takes you through the
+  encounters on that path until the VIP reaches the Relay.
 
 
-  Combat follows the active time battle style of SNES-era role-playing games, so
-  fights unfold in real-time-flavored turns rather than strict alternation. The
-  route choice adds a strategic layer, since the path you pick shapes what you
-  face on the way. The design draws on Final Fantasy, Dragon Quest, and the
-  Temple Trekking activity from OSRS.
+  The design draws on Final Fantasy, Dragon Quest, and the Temple Trekking
+  activity from OSRS. It was made with Claude Code on Phaser, and it finished
+  65th of 945 in Vibe Jam 2026.
 
 
-  The game was an entry in Vibe Jam 2026, where it placed 65th out of 945
-  entries. It runs in the browser on Phaser and is playable on mobile. The
-  creator built it with Claude Code.
+  Fights use the active time battle style of SNES-era role-playing games, so
+  turns carry a real-time flavor instead of strict alternation. Because the
+  route you pick shapes what you face along the way, the strategy starts before
+  the first fight.
 play:
   url: https://reach-the-relay.pages.dev
   embeddable: true

@@ -2,21 +2,22 @@ slug: wgronalds
 title: WgRonalds
 tagline: Survive a fast-food job application full of ever-stranger HR rules.
 description: >-
-  WgRonalds is a puzzle game set inside a fast-food job application. You apply
-  for a crew position, and the process hands you a series of forms and
-  requirements to satisfy. Each round adds to the pile of policies, so a run
-  comes down to following the growing list correctly without slipping up.
+  WgRonalds turns a fast-food job application into a single-player puzzle game.
+  You apply for a crew position, and the process hands you form after form and
+  requirement after requirement, with every round adding to the pile of
+  ever-stranger policies you have to follow.
 
 
-  The humor comes from the rules themselves: familiar HR and workplace policies
-  exaggerated well past reason, yet phrased in calm, courteous corporate
-  language. The escalating rule structure drives the challenge, since every new
-  condition has to be kept in mind alongside the old ones. Whether you get hired
-  is left uncertain.
+  The rules are the joke: familiar HR and workplace policies exaggerated well
+  past reason, yet phrased in calm, courteous corporate language. Claude Code is
+  what the creator used, the game works on a phone, and its Vibe Jam 2026 finish
+  was 423rd of 945.
 
 
-  It was a Vibe Jam 2026 entry, and the creator built it with Claude Code. The
-  game is playable on mobile as well as desktop and is single-player.
+  The escalating rules drive the difficulty, since every new condition has to be
+  kept in mind alongside the old ones, so a run comes down to following the
+  growing list without slipping up. Whether you get hired at the end is left
+  uncertain.
 play:
   url: https://wgronalds.vercel.app
   embeddable: true

@@ -2,21 +2,21 @@ slug: openbar
 title: OpenBar
 tagline: Chat, flirt and play games with AI patrons in a 3D dive bar.
 description: >-
-  OpenBar is a 3D dive bar simulation where you walk in and mingle with a room
-  of AI-driven patrons. They gossip among themselves, flirt, and may challenge
-  you to games. Each conversation is open-ended, so a visit plays out as a
-  series of encounters with whoever is at the bar.
+  OpenBar is a 3D dive bar full of AI-driven patrons, and you walk in to mingle.
+  They gossip among themselves, flirt and may challenge you to games, and every
+  conversation is open-ended, so a visit plays out as a series of encounters
+  with whoever is at the bar.
+
+
+  To the creator, worlds like this feel appealing, and a dive bar seemed the
+  right setting. Codex was the build tool for Vibe Jam 2026, where it finished
+  269th of 945. It is single-player and runs on Three.js on desktop and on
+  phones.
 
 
   The patrons remember how you treat them, so earlier behavior shapes how later
-  conversations go. The idea is a shared 3D space where characters respond on
-  their own terms rather than following a fixed script. The creator says worlds
-  like this feel appealing, and a dive bar seemed the right setting.
-
-
-  It runs in the browser on Three.js and supports mobile devices. The creator
-  built it with Codex and submitted it to Vibe Jam 2026. It is a single-player
-  experience.
+  conversations go. The characters respond on their own terms rather than
+  following a fixed script, which is the whole idea behind this 3D simulation.
 play:
   url: https://openbar.live
   embeddable: true

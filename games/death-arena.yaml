@@ -3,22 +3,20 @@ title: Death Arena
 tagline: Fight rival players and three bosses in a 3D arena to reach 10,000
   points first.
 description: >-
-  Death Arena is a multiplayer 3D combat game played in the browser. Each match
-  drops you into a shared arena where you fight other players and three bosses
-  at the same time. The goal is to be the first to reach 10,000 points, so every
-  kill and every boss hit pushes you along the race.
+  Death Arena is a multiplayer race to 10,000 points, run through a 3D arena
+  full of rival players and three bosses. You fight all of them at the same
+  time, every kill and every boss hit moves you closer, and the first to reach
+  the target wins.
 
 
-  The scoring race gives the fights a clear direction: you are not only
-  surviving, you are competing for points against everyone else in the arena.
-  Mixing player combat with boss encounters keeps the action crowded and
-  unpredictable. The creator cites the Death Race film, classic arcade combat
-  games, and browser multiplayer IO games as inspirations.
+  The creator cites the Death Race film, classic arcade combat games and browser
+  multiplayer IO games as inspirations. Claude Code and Cursor were both used to
+  build it on Three.js, and it placed 75th of the 945 entries at Vibe Jam 2026.
 
 
-  It was entered in Vibe Jam 2026, where it placed 75th out of 945 entries. The
-  creator built it with Claude Code and Cursor, using Three.js for the 3D
-  graphics.
+  The score gives the fighting a direction: you are not only surviving, you are
+  competing for points against everyone else in the arena. With players and
+  bosses in the same space, the action stays crowded and unpredictable.
 play:
   url: https://deatharena.fun
   embeddable: true

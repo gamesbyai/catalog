@@ -2,25 +2,22 @@ slug: arkanoid-neon
 title: Arkanoid Neon
 tagline: Bounce a ball off a paddle to clear glowing neon brick levels.
 description: >-
-  Arkanoid Neon is a brick-breaking game for the browser in a glowing neon
-  style. You steer a paddle along the bottom of the screen, launch the ball, and
-  knock out the bricks above. Silver blocks take several hits, gold blocks
-  cannot be destroyed, and falling capsules change how the paddle and ball
-  behave.
+  Arkanoid Neon is a brick breaker in glowing neon. You steer a paddle along the
+  bottom of the screen, launch the ball and knock out the bricks above, where
+  silver blocks take several hits and gold ones cannot be destroyed at all.
 
 
-  Seven capsule types add variety: a wider paddle, slower ball, catch-and-aim,
-  twin lasers, a triple ball, an extra life, and a portal in the right wall that
-  skips to the next round. Eight hand-built levels, from Rainbow to Fortress,
-  loop at a faster pace afterward. Particle bursts, shockwaves, screen shake and
-  ball trails give hits weight, and a synthwave soundtrack is generated live.
-  The title screen runs an AI-driven demo mode.
+  Falling capsules change how the paddle and ball behave. There are seven: a
+  wider paddle, a slower ball, catch-and-aim, twin lasers, a triple ball, an
+  extra life and a portal in the right wall that skips to the next round. Eight
+  levels, from Rainbow to Fortress, loop at a faster pace afterward.
 
 
-  The creator states that all of the code, graphics, sound, music and levels
-  were made by Claude Opus 5.5 through Claude Code, from a single one-sentence
-  request. It uses plain JavaScript with Canvas 2D and Web Audio. It is a fan
-  project inspired by Taito's Arkanoid.
+  Particle bursts, shockwaves, screen shake and ball trails give hits weight,
+  and the synthwave soundtrack is generated live. The creator states that Claude
+  Opus 5.5, working through Claude Code, made all of the code, graphics, sound,
+  music and levels from a single one-sentence request. It is plain JavaScript
+  with Canvas 2D and Web Audio, and a fan project inspired by Taito's Arkanoid.
 play:
   url: https://jack-c3l2w.github.io/arkanoid-neon
   embeddable: true

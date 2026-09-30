@@ -3,22 +3,19 @@ title: IdleWorlds
 tagline: Train a character in a text-based online RPG that keeps progressing
   while you're away.
 description: >-
-  IdleWorlds is a text-based multiplayer RPG that runs in the browser. You
-  create a character and set it to work, then check back in as it gains progress
-  over time. Advancement continues even when you are offline, so a session is a
-  short visit to collect results and choose what comes next.
+  Your character in IdleWorlds keeps making progress while you are offline. It
+  is a text-based online RPG: you create a character, set it to work, and come
+  back for short visits to collect the results and choose what comes next.
 
 
-  The game leans on an old-school MMORPG feel, with rare loot to chase and an
-  economy driven entirely by players. It is free to play in the browser and
-  works on mobile. The creator built it out of frustration with idle and MMO
-  games that turn paywalled, bloated, or shut down, and aims for a simple
-  long-term check-in game that respects your time.
+  The creator built it out of frustration with idle and MMO games that turn
+  paywalled, bloated or shut down. The goal was a simple long-term check-in game
+  that respects your time, and it is free to play in the browser, whether on a
+  desktop or a phone. Codex was used to build it, according to the creator.
 
 
-  According to the creator, the game was built with Codex, and it was submitted
-  to Vibe Jam 2026, where it placed 122nd out of 945 entries. It is a browser
-  project with shared online play between players.
+  It aims for an old-school MMORPG feel, with rare loot to chase and an economy
+  driven entirely by the players who share the world, all of it in plain text.
 play:
   url: https://idleworlds.com
   embeddable: false

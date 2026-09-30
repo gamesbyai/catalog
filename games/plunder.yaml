@@ -3,21 +3,20 @@ title: Plunder
 tagline: Sail a pirate ship, collect resources, and sink rival captains on
   chaotic islands.
 description: >-
-  Plunder is a browser-based pirate battle game built around short, fast
-  matches. You command a ship around an island setting, gathering resources
-  along the way and using them to strengthen your vessel. Rival captains share
-  the map, so each match turns into a scramble between collecting and fighting.
+  Plunder gives you a pirate ship, a chaotic island map and rival captains to
+  sink, all in a single-player action game. Matches are short and fast: you sail
+  around gathering resources and spend them to strengthen your ship, and every
+  match turns into a scramble between collecting and fighting.
 
 
-  The focus is on quick, chaotic naval combat where upgrades matter as much as
-  aim. Growing your ship during a match gives you a way to turn the tables on
-  opponents who started out stronger. The pirate theme comes from the creator's
-  personal love of pirates.
+  The pirate theme comes from the creator's personal love of pirates. According
+  to the creator, Codex, OpenAI's coding tool, handled the development work, and
+  it runs on Three.js as a Vibe Jam 2026 entry, placing 277th of 945.
 
 
-  It was entered in Vibe Jam 2026 and runs on Three.js. According to the
-  creator, it was built with Codex, OpenAI's coding tool, which handled the
-  development work.
+  The naval combat is quick and chaotic, and upgrades matter as much as aim.
+  Growing your ship during a match is how you turn the tables on opponents who
+  started out stronger, so collecting pays off in the fighting.
 play:
   url: https://plunder.magnificentgames.com
   embeddable: true

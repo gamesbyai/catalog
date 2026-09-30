@@ -2,20 +2,21 @@ slug: arcade-gaming
 title: Arcade Gaming
 tagline: Pick from a browser arcade for quick, casual play breaks
 description: >-
-  Arcade Gaming is a browser-based arcade built for short breaks. It presents
-  itself as a go-to spot for quick, fun sessions, so a visit is meant to be
-  brief: open the page, pick something to play, and get back to whatever you
-  were doing. It runs on mobile as well as desktop.
+  Arcade Gaming is a browser arcade built for short, casual breaks. A visit is
+  meant to be brief: open the page, pick something to play, and get back to
+  whatever you were doing. It pitches itself as a go-to spot for quick, fun
+  sessions.
 
 
-  The project mixes arcade and strategy, which suggests it leans on planning. It
-  was entered in Vibe Jam 2026, where it placed 120th among 945 entries. The
-  creator says the community's passion, and reaching 150 users who tried it,
-  were the high points of the project.
+  The mix is arcade and strategy, all of it solo play, with a 3D presentation
+  that Three.js draws in the browser. It works on phones as well as desktops, so
+  a break can start from either one.
 
 
-  According to the creator, it was built with Claude Code, and the 3D
-  presentation runs on Three.js in the browser. It is built for solo play.
+  According to the creator, parth_kadakia, it was built with Claude Code for
+  Vibe Jam 2026, where it finished 120th of 945. The creator counts two things
+  as the high points of the project: the community's passion, and reaching 150
+  users who tried it out.
 play:
   url: https://arcadegaming.app
   embeddable: true

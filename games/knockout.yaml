@@ -2,21 +2,20 @@ slug: knockout
 title: Knockout
 tagline: Pick or create an MMA fighter and battle in the octagon online or solo.
 description: >-
-  Knockout is a browser MMA fighting game. You choose a ready-made fighter or
-  build your own, step into the octagon, and trade strikes with an opponent
-  until one fighter is beaten. Matches can be played solo against the computer
-  or online against another person.
+  Pick a ready-made fighter or build your own, then step into the octagon:
+  Knockout is a free MMA fighting game that runs in the browser. You trade
+  strikes with your opponent until one of you is beaten.
 
 
-  Online bouts run over peer-to-peer multiplayer, so two players can connect
-  directly and fight. The game is free to play in the browser and aims to be
-  easy to pick up, with fighter creation adding a personal touch before each
-  match.
+  The creator describes the goal as a fun, approachable MMA game, and also an
+  experiment to see whether one could be made by vibe coding. The experiment ran
+  on Claude Code, and the game ranked 228th of 945 entries at Vibe Jam 2026.
 
 
-  The creator says the goal was a fun, approachable MMA game and an experiment
-  to see whether it could be made by vibe coding. It was built with Claude Code
-  and entered in Vibe Jam 2026.
+  Bouts are one-on-one: you can fight the computer solo or take a bout online
+  against another person, where peer-to-peer multiplayer connects two players
+  directly. Building your own fighter adds a personal touch before each match,
+  and the whole thing aims to be easy to pick up.
 play:
   url: https://playknockout.app
   embeddable: true

@@ -9,14 +9,15 @@ description: >-
   before Hue fades away and the kingdom's last spark goes out.
 
 
-  The game mixes action, adventure, and platforming in a 3D setting. Its central
-  idea is restoration: color is both the goal and the stake, so progress is
-  meant to be visible as the gray landscape fills back in. The creator points to
-  Stardew Valley and Graveyard Keeper as influences on its tone.
+  The game mixes action, adventure, and platforming in 3D. The creator points to
+  Stardew Valley and Graveyard Keeper as influences on its tone, built it with
+  Cursor on Three.js, and describes the graphics as AI-generated. It ranked 99th
+  of 945 in Vibe Jam 2026.
 
 
-  The creator built it with Cursor for the Vibe Jam 2026 and describes the
-  graphics as AI-generated. It runs in the browser on Three.js.
+  Restoration is the central idea. Color is both the goal and the stake, so your
+  progress is meant to show as the gray landscape fills back in, and failing
+  means Hue fades with it.
 play:
   url: https://thelostcolors.com
   embeddable: true

@@ -2,20 +2,22 @@ slug: ironclash
 title: ironclash
 tagline: Fight multiplayer battles from tanks, helicopters, and FPV drones.
 description: >-
-  Ironclash is a multiplayer first-person shooter set on a battlefield where
-  players fight on foot or take control of vehicles. Tanks, helicopters, and FPV
-  drones are all available, so each match can shift between ground combat, air
-  support, and fast explosive drone strikes.
+  In ironclash you fight a multiplayer first-person battle on foot or from the
+  controls of a tank, a helicopter or an FPV drone. The project grew from the
+  creator's fond memories of playing Black Ops when young and a wish to recreate
+  that.
+
+
+  Built in Godot with Claude Code, it ranked 280th of 945 at Vibe Jam 2026 and
+  runs in desktop and phone browsers alike. Matches are online against other
+  players.
 
 
   The vehicle variety is the main draw. Each machine changes how you approach a
-  fight, from the armored weight of a tank to the quick, fragile handling of a
-  drone. The game also runs on mobile devices as well as desktop browsers.
-
-
-  The creator says the project grew from fond memories of playing Black Ops when
-  young and a wish to recreate that experience. It was entered in Vibe Jam 2026,
-  built in Godot with Claude Code.
+  fight: a tank brings armored weight, a helicopter brings air support, and a
+  drone is quick to handle but fragile. A match can swing between ground combat,
+  air cover and fast, explosive drone strikes, and you can always fight on foot
+  instead.
 play:
   url: https://ironclash.xyz
   embeddable: true

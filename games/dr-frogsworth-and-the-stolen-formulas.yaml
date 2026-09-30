@@ -3,21 +3,21 @@ title: Dr. Frogsworth and the Stolen Formulas
 tagline: Hop and blast through five decaying internet realms as a frog doctor
   reclaiming memes.
 description: >-
-  Dr. Frogsworth and the Stolen Formulas is a retro pixel-art side-scrolling
-  platformer. You guide a frog scientist through five realms of internet decay,
-  jumping across hazards and shooting enemies on the way to recover the meme
+  Dr. Frogsworth and the Stolen Formulas is a retro pixel-art platformer about
+  getting memes back. You guide a frog scientist through five realms of internet
+  decay, jumping across hazards and shooting enemies on the way to the meme
   formulas that were taken from him.
 
 
-  The story sets it apart from typical platformer plots. The villains are the
-  Wojak King and Dr. Croak, who hoard the formulas behind patents, while the
-  hero wants them shared and remixed freely. The look and feel draw on Super
-  Mario Bros. and Mega Man 2, and the creator describes it as a love letter to
-  NES-era platformers and the early internet.
+  The look and feel draw on Super Mario Bros. and Mega Man 2, and the creator
+  describes it as a love letter to NES-era platformers and the early internet.
+  The creator made it with Claude Code on Three.js, and Vibe Jam 2026 ranked it
+  199th of 945.
 
 
-  The creator built it with Claude Code, and it runs on Three.js. It was entered
-  in Vibe Jam 2026, where it placed 199th out of 945 entries.
+  The villains are the Wojak King and Dr. Croak, who hoard the formulas behind
+  patents. Frogsworth wants them shared and remixed freely, a cause that sets
+  the hopping and blasting apart from typical platformer plots.
 play:
   url: https://drfrogsworth.com
   embeddable: true

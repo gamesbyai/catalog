@@ -2,21 +2,21 @@ slug: the-bad-bunch
 title: The Bad Bunch
 tagline: Place monkey defenders to stop waves of bad bananas in a jungle last stand.
 description: >-
-  The Bad Bunch is a tower-defense game in which a troop of jungle monkeys makes
-  a last stand against waves of hostile bananas. Players position monkey
-  defenders to hold back each wave, and the rounds move quickly with a humorous
-  tone throughout.
+  In The Bad Bunch the bananas have turned hostile, and a troop of jungle
+  monkeys is making its last stand. It is a tower-defense game in 3D, playable
+  on phones as well as desktop: you position monkey defenders to hold back each
+  wave of bad bananas, and the rounds move quickly.
 
 
-  The game was inspired by Bloons, a favorite of the creator's 10-year-old son,
-  and that influence shows in its playful monkeys-versus-invaders premise. It is
-  built in 3D with Three.js and runs in the browser, with support for mobile
-  play. The short, comic showdown format keeps sessions light.
+  It began as a father-and-son project, made together after the creator's
+  10-year-old son asked to create a game of his own. Bloons, one of the son's
+  favorites, was the inspiration, and the creator made it with Codex on
+  Three.js. Out of 945 Vibe Jam 2026 entries, it came 172nd.
 
 
-  It began as a father-and-son project, made together after the son asked to
-  create a game. The creator built it with Codex, and it was entered in Vibe Jam
-  2026, where it placed 172nd out of 945 entries.
+  That influence shows in the playful premise: monkeys on defense, bananas on
+  the attack. The tone stays humorous throughout, and the short, comic showdowns
+  keep sessions light.
 play:
   url: https://thebadbunch.com
   embeddable: true

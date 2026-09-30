@@ -3,20 +3,20 @@ title: One Step Late
 tagline: Guide your character while a shadow repeats your last move and risks
   falling into holes.
 description: >-
-  One Step Late is a daily logic puzzle played on a grid with holes in the
-  floor. You move your character, and a shadow follows along by repeating the
-  move you made just before. Each puzzle asks you to reach the goal while
-  planning around where that delayed copy will end up.
+  In One Step Late, a shadow copies your moves one step behind. It is a daily
+  logic puzzle on a grid with holes in the floor: you move your character, and
+  the shadow repeats the move you made just before.
 
 
-  The twist is that the shadow walks into the holes you avoid. Every step has to
-  be judged twice: once for where you land and once for where your shadow lands
-  next. Solving a level means sequencing your moves so the lag works in your
-  favor. A new puzzle is offered each day.
+  The creator states that the whole game, design and code, came from an
+  autonomous AI agent working in Claude Code. It is drawn on an HTML5 Canvas,
+  and a new puzzle arrives each day.
 
 
-  The creator states that the game was designed and coded from start to finish
-  by an autonomous AI agent, using Claude Code. It runs on an HTML5 Canvas.
+  The catch is that the shadow can walk straight into the holes you avoid, so
+  every step has to be judged twice: once for where you land and once for where
+  your shadow lands next. Solving a level means sequencing your moves so the lag
+  works in your favor on the way to the goal.
 play:
   url: https://arkai.win/games/one-step-late
   embeddable: false

@@ -2,22 +2,22 @@ slug: videovideogame
 title: VideoVideoGame
 tagline: Choose your path through 100+ video scenes and short minigames as Levelsio.
 description: >-
-  VideoVideoGame is a choose-your-own-adventure told through video. The player
-  follows Levelsio, the main character, through more than 100 video scenes,
-  picking a direction at each branch and watching the story continue based on
-  those choices.
+  VideoVideoGame is a choose-your-own-adventure told in video, with Levelsio as
+  the main character. You follow Levelsio through more than 100 video scenes,
+  pick a direction at each branch, and watch the story continue from your
+  choice.
 
 
-  Between the story scenes sit a few minigames that mix puzzle and racing
-  moments into the adventure. The scenes were generated with Seedance, so the
-  whole game plays like a branching film. It runs on mobile as well as desktop
-  and is single-player.
+  The scenes were generated with Seedance, and the creator built the game around
+  them with Claude Code. Images came from experiments with the new GPT image
+  model and Nano Banana 2, and the creator says the fun was in making videos
+  with Seedance and trying out these tools. Its Vibe Jam 2026 result was 60th of
+  945.
 
 
-  The creator built it with Claude Code and used Seedance for the video clips.
-  Images were made while experimenting with the new GPT image model and Nano
-  Banana 2. The creator says the fun came from making videos with Seedance and
-  trying out these tools. It placed 60th out of 945 entries in Vibe Jam 2026.
+  A few minigames sit between the story scenes and add puzzle and racing
+  moments, so the whole single-player game plays like a branching film with
+  detours, on phones as well as desktop.
 play:
   url: https://videovideogame.com
   embeddable: true

@@ -2,20 +2,21 @@ slug: cannon-clash
 title: Cannon Clash
 tagline: Aim a cannon and outshoot a rival in a physics-driven puzzle duel.
 description: >-
-  Cannon Clash is a two-player physics puzzle shooter. Each side controls a
-  cannon and fires shots that bounce and tumble through the playfield, with the
-  outcome decided by how well each player reads the physics and lines up a shot.
-  Rounds are meant to be quick and easy to pick up.
+  Cannon Clash is a physics puzzle duel between two cannons, and the goal is to
+  outshoot your rival. You aim yours, they aim theirs, and the shots bounce and
+  tumble through the playfield, so whoever reads the physics better and lines up
+  a shot comes out ahead.
 
 
-  The design is inspired by Peggle and, before that, the Plinko board from The
-  Price Is Right. That lineage shows in the emphasis on ricochets and chain
-  reactions over reflexes. The creator wanted something simple and fast that
-  plays well on mobile, so it is built with touch screens in mind.
+  The design comes from Peggle and, before that, the Plinko board from The Price
+  Is Right. The creator wanted something simple and fast that plays well on
+  mobile, so it was built with touch screens in mind, using Codex and Three.js.
+  It came 544th of 945 at Vibe Jam 2026.
 
 
-  The game runs on Three.js, and the creator built it with Codex, OpenAI's
-  coding tool, as an entry in the 2026 Vibe Jam event.
+  Rounds are quick and easy to pick up. Ricochets and chain reactions matter
+  more than reflexes, so the skill is in reading where a shot will bounce before
+  you fire it.
 play:
   url: https://cannonclash.com
   embeddable: true

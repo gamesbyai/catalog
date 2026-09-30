@@ -3,19 +3,20 @@ title: Mototaxi Runner
 tagline: Drive a mototaxi against the clock to get each passenger to their
   destination on time.
 description: >-
-  Mototaxi Runner is a 3D driving game where you take the wheel of a mototaxi
-  and race the clock on every trip. Each fare is a timed run: you pick up a
-  customer and try to get them to their destination before time runs out.
+  Every fare in Mototaxi Runner is a race against the clock. You take the wheel
+  of a mototaxi in a 3D driving game, pick up a customer and try to get them to
+  their destination before time runs out.
 
 
-  The game draws on the daily routine of mototaxi drivers, who deal with time
-  pressure to deliver their customers punctually. That everyday setting gives
-  the racing and simulation mix a grounded, human angle instead of a purely
-  competitive one. It supports multiplayer and runs on mobile devices as well.
+  The game draws on the daily routine of mototaxi drivers, who work under time
+  pressure to get their customers somewhere punctually. That everyday setting
+  gives the mix of racing and simulation a grounded, human angle instead of a
+  purely competitive one. It ranked 466th of 945 at Vibe Jam 2026.
 
 
-  It was entered in Vibe Jam 2026, where it placed 466th out of 945 entries. The
-  creator says it was built with Cursor, and it runs on Three.js.
+  Made in Cursor with Three.js for Vibe Jam 2026, it supports multiplayer and
+  runs on phones and desktop browsers alike. Each trip ends in one of two ways:
+  the passenger arrives on time, or the clock wins.
 play:
   url: https://moto-taxi-runner.vercel.app
   embeddable: true

@@ -2,21 +2,21 @@ slug: tanker-defense
 title: Tanker Defense
 tagline: Shoot pirates off your oil tanker while steering the ship to safety.
 description: >-
-  Tanker Defense puts you in charge of an oil tanker under attack by pirates.
-  You steer the ship toward safety while fighting off the raiders with guns and
-  grenade launchers, so each run is a balance between staying on course and
-  keeping attackers away from the hull.
+  Pirates are attacking your oil tanker in Tanker Defense, and you have to steer
+  the ship to safety while fighting them off with guns and grenade launchers. A
+  run is a balance between staying on course and keeping the raiders away from
+  the hull.
 
 
-  The game mixes shooting with ship handling, asking the player to split
-  attention between aiming and navigation. According to the creator, it also
-  blends RPG and simulation elements with the action. It runs in the browser on
-  Three.js and is playable on mobile.
+  The creator says it was their first game, taken on as a fun small challenge,
+  and describes RPG and simulation elements mixed in with the action. It is
+  single-player, runs on Three.js, plays on a phone or a PC, and placed 508th of
+  945 in Vibe Jam 2026.
 
 
-  It was entered in Vibe Jam 2026, where it placed 508 out of 945 entries. The
-  creator says it was their first game, taken on as a fun small challenge. It is
-  a single-player game.
+  Shooting and ship handling compete for your attention the whole way. You aim
+  at the raiders while keeping the tanker on course for safety, and neither job
+  can wait for the other.
 play:
   url: https://admirable-biscotti-57d1ee.netlify.app
   embeddable: true

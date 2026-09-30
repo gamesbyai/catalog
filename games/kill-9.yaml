@@ -2,21 +2,21 @@ slug: kill-9
 title: KILL-9
 tagline: Play turn-based cards against a rogue AI in a retro terminal.
 description: >-
-  KILL-9 is a turn-based card duel staged inside a retro computer terminal. You
-  face a rogue AI that deals your hand, and the two of you trade plays until one
-  side is beaten. The strategy comes from choosing which cards to play against
-  an opponent that controls what you are given.
-
-
-  The AI opponent is more than a rival. It narrates your defeat as the match
-  unfolds, which gives the duel a menacing, scripted personality. The
-  green-screen terminal look and the IT-flavored theme give the card battle a
-  distinct identity, built around the idea of a machine turning on its user.
+  In KILL-9 you play cards against a rogue AI, and the AI is also the dealer.
+  The duel runs turn by turn inside a retro computer terminal, and the two of
+  you trade plays until one side is beaten. It is a single-player strategy card
+  game.
 
 
   The creator has worked in IT throughout their career and wanted a tech- and
-  AI-flavored take on a turn-based card game. The creator built it with Claude
-  Code, and it was entered in Vibe Jam 2026, running on Three.js.
+  AI-flavored take on the turn-based card game. The green-screen terminal look
+  and the IT theme give the card battle its identity, built around the idea of a
+  machine turning on its user.
+
+
+  Your opponent controls what you are given, so the strategy is in choosing
+  which of those cards to play. Meanwhile it narrates your defeat as the match
+  unfolds, which gives the duel a menacing, scripted personality.
 play:
   url: https://kill9.unfinished-works.com
   embeddable: true

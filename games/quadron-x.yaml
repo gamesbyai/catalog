@@ -2,21 +2,22 @@ slug: quadron-x
 title: Quadron X
 tagline: Fly an X-wing through a 15-mission dogfight campaign with a voice-acted story.
 description: >-
-  Quadron X is a space combat game built around a 15-mission campaign in an
-  X-wing fighter. Each mission puts you in a 360° cockpit, where you dogfight
-  enemy craft while a story unfolds through voiced dialogue and short video
-  transmissions from your allies and command.
+  Quadron X puts you in an X-wing fighter for a 15-mission campaign. Each
+  mission seats you in a 360° cockpit, where you dogfight enemy craft while the
+  story unfolds through voiced dialogue and short video transmissions from your
+  allies and command.
 
 
-  The cockpit is generated procedurally, giving a full view in every direction.
-  More than 200 video comms were produced with Grok, so briefings and in-flight
-  chatter carry much of the narrative. The creator describes it as a spiritual
-  successor to xpilot, and the game supports multiplayer and mobile play.
+  By the creator's account, it was built from scratch in a single Sunday with
+  Claude Code and Three.js, and it placed 41st of 945 at Vibe Jam 2026. More
+  than 200 video comms were produced with Grok, and the creator describes the
+  game as a spiritual successor to xpilot.
 
 
-  The creator built it from scratch in a single Sunday for Vibe Jam 2026, where
-  it placed 41st out of 945 entries. It runs on Three.js, and the creator used
-  Claude Code during development.
+  Multiplayer and phone play are both supported, and the campaign mixes action
+  with simulation. The cockpit is generated procedurally, with a full view in
+  every direction, and the briefings and in-flight chatter carry much of the
+  narrative.
 play:
   url: https://x.danielfarina.com
   embeddable: true

@@ -2,23 +2,21 @@ slug: starpit-io
 title: Starpit.io
 tagline: Grow from a brown dwarf into a black hole by devouring rival bodies online.
 description: >-
-  Starpit.io is a real-time multiplayer .io game set in space. You start out as
-  a brown dwarf and consume rivals to gain mass, working your way up through
-  larger stellar stages until you become a primordial black hole. Each run is a
-  climb where bigger opponents are threats and smaller ones are food.
+  Starpit.io starts you as a brown dwarf and asks you to eat your way up to a
+  primordial black hole. It is a real-time multiplayer .io game in space: you
+  consume rivals to gain mass and climb through larger stellar stages, where
+  bigger opponents are threats and smaller ones are food.
 
 
-  The movement and combat rules are built around astrophysics. Gravity follows
-  an inverse-square law, and you can use slingshot maneuvers to gain speed
-  around heavier bodies. Tidal stripping, spaghettification, Hawking radiation,
-  and black-hole collapse all shape how fights play out, so the physics drives
-  the action instead of scripted events.
+  The creator loves .io games and astrophysics and made this game with Claude
+  Code on Three.js to combine the two, and it finished 326th of 945 in Vibe Jam
+  2026. Movement and combat run on astrophysics: gravity follows an
+  inverse-square law, and you can slingshot around heavier bodies to gain speed.
 
 
-  The creator says they love .io games and astrophysics and wanted to combine
-  the two. It runs on Three.js and was built with Claude Code. It supports
-  multiplayer and mobile play, and it placed 326th of 945 entries in Vibe Jam
-  2026.
+  Tidal stripping, spaghettification, Hawking radiation, and black-hole collapse
+  all shape how fights play out, so the physics drives the action instead of
+  scripted events.
 play:
   url: https://starpit.io
   embeddable: false

@@ -2,20 +2,20 @@ slug: vibe-racer
 title: Vibe Racer
 tagline: Race neon tracks against adaptive AI rivals in a fast arcade driver.
 description: >-
-  Vibe Racer is an arcade racing game built around speed and competition. Each
-  race puts you on a procedurally generated track, where you drive against AI
-  rivals and try to cross the line ahead of them. The action is fast and the
-  focus stays on staying in front of the pack.
+  Vibe Racer is a fast arcade racing game built around speed and competition.
+  Every race runs on a procedurally generated track, where you drive against AI
+  rivals and try to cross the finish line ahead of them. The job is to get in
+  front of the pack and stay there.
 
 
-  The visual style leans on glowing neon color and sleek vehicles, giving the
-  tracks a nightlife feel. Rivals adapt as you drive, so the challenge shifts
-  from race to race instead of following a fixed pattern. Generated courses mean
-  the layouts vary between runs. It also runs on mobile devices.
+  Glowing neon color and sleek vehicles give the tracks a nightlife feel. It was
+  put together in Antigravity on Three.js, it plays on a phone or a desktop
+  computer, and it placed 494th of 945 in Vibe Jam 2026.
 
 
-  The game was an entry in Vibe Jam 2026. The creator built it with Antigravity,
-  and it runs on Three.js.
+  The rivals adapt as you drive instead of following a fixed pattern, and
+  because the courses are generated, the layout changes between runs. One race
+  does not play quite like the last.
 play:
   url: https://vibe-racer-d3h.pages.dev
   embeddable: true

@@ -2,22 +2,21 @@ slug: shade-chasers
 title: Shade Chasers
 tagline: Sprint through shadows to reach a shelter before the rising sun burns you.
 description: >-
-  Shade Chasers is a 3D action game about outrunning the light. The sun is
-  slowly rising and its rays are deadly, so the player must reach a shelter
-  while moving only through shadows. Each run is a race against the clock, with
-  the safe path shifting as the light climbs.
+  The sun is slowly rising in Shade Chasers, and its rays are deadly. You have
+  to reach a shelter by moving only through shadows, and as the light climbs,
+  the safe path shifts.
 
 
-  The core mechanic is built around dynamic light sources and shadows. Instead
-  of treating lighting as decoration, the game makes it the danger and the map
-  at once, so players read cast shadows to plan a route. It mixes running, quick
-  decisions and a bit of strategy.
+  Light and shadow are the core mechanic. Dynamic light sources cast the shadows
+  you run through, so the light is both the danger and the map, and you read the
+  shadows to plan a route. A run is a race against the clock that mixes running,
+  quick decisions, and a bit of strategy.
 
 
-  The creator started learning Three.js only days before the jam was announced
-  and used this game to keep learning while building it with AI assistance. The
-  creator built it with Cursor. An interest in lighting, post-processing and
-  shaders shaped the concept.
+  The creator started learning Three.js only days before Vibe Jam 2026 was
+  announced and kept learning by building this game with Cursor. It ranked 575th
+  of 945 entries. An interest in lighting, post-processing, and shaders shaped
+  the concept.
 play:
   url: https://shade-chasers.vercel.app
   embeddable: true

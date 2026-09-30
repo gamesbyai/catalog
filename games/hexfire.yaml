@@ -2,22 +2,21 @@ slug: hexfire
 title: HexFire
 tagline: Battle other wizards in a shrinking arena where every kill raises your bounty.
 description: >-
-  HexFire is a multiplayer wizard battle royale. Each player enters the arena as
-  a spellcaster and fights the others until only one is left. Combat is built
-  around casting spells at rival wizards, and a run ends when you fall or when
-  you outlast everyone else.
+  HexFire is a multiplayer wizard battle royale where every kill makes you a
+  bigger target. Each player enters a shrinking arena as a spellcaster and casts
+  spells at rival wizards, and your match ends when you fall or when you outlast
+  everyone else.
 
 
-  The central twist is that success works against you. Every kill you land makes
-  you a bigger target, so a player who racks up eliminations draws attention
-  from the rest of the lobby. That turns a winning streak into a risk and pushes
-  players to weigh aggression against staying hidden.
+  Success works against you. Every kill raises your bounty, so a player who
+  racks up eliminations draws attention from the rest of the lobby, and a
+  winning streak turns into a risk. You end up weighing aggression against
+  staying hidden.
 
 
-  The game was entered in Vibe Jam 2026 and runs in the browser with a Three.js
-  3D view, including on mobile. According to the creator, it was inspired by a
-  childhood fondness for Runescape and Minecraft, and it was built with Claude
-  Code.
+  According to the creator, the game was inspired by a childhood fondness for
+  Runescape and Minecraft. Made with Claude Code as a Vibe Jam 2026 entry, it
+  came 336th of 945 and has a Three.js 3D view that also works on phones.
 play:
   url: https://hexfi.re
   embeddable: true

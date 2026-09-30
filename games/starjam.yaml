@@ -2,21 +2,21 @@ slug: starjam
 title: StarJam
 tagline: Place defenses and click for income in a tower defense idler hybrid.
 description: >-
-  StarJam is a strategy game that combines tower defense with clicker and idler
-  mechanics. Players build up defenses against incoming threats while also
-  generating resources through clicking and passive income, so attention is
-  split between placing towers and growing the economy that pays for them.
+  StarJam is a strategy game that puts a clicker inside tower defense. You build
+  defenses against incoming threats while generating the resources that pay for
+  them, partly by clicking and partly through passive income. Your attention is
+  split between placing towers and growing the economy behind them.
 
 
-  The mix of the two genres is the main hook. Instead of waiting out each wave,
-  the player has active work to do between placements, and idle progress keeps
-  building over time. It suits short sessions as well as longer stretches of
-  upgrading and optimizing.
+  According to the creator, it was built in Godot with Claude Code, and it
+  finished 205th of 945 in Vibe Jam 2026. The idler half changes the rhythm:
+  instead of waiting out each wave, you have active work to do between
+  placements, like clicking for income, and idle progress keeps building over
+  time.
 
 
-  StarJam was entered in Vibe Jam 2026, where it placed 205th among 945 entries.
-  According to the creator, it was built with the Godot engine, using Claude
-  Code in development. It is a single-player game.
+  It suits short sessions as well as longer stretches of upgrading and
+  optimizing, and it is a single-player game that runs in the browser.
 play:
   url: https://star-jam.vercel.app
   embeddable: true

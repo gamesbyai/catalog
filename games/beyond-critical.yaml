@@ -2,22 +2,21 @@ slug: beyond-critical
 title: Beyond Critical
 tagline: Shoot waves of alien creatures pouring out of a rift in deep space
 description: >-
-  Beyond Critical is a first-person wave shooter set in deep space. A
-  dimensional rift has opened, and alien creatures keep pouring through it. The
-  player takes the role of humanity's defender, aiming and firing at each
-  oncoming group and trying to survive as long as possible.
+  A dimensional rift has opened in deep space, and Beyond Critical makes you the
+  one standing in front of it. Alien creatures keep pouring through in waves,
+  and as humanity's defender you aim, fire and try to survive as long as you
+  can.
 
 
-  The premise is straightforward and focused on action: hold your ground, clear
-  the incoming creatures, and face the next wave. The deep-space setting and the
-  looming rift give the encounters a clear sense of place, and the first-person
-  view keeps every attack close.
+  The creator says the project started from a wish to have fun making something
+  completely different from their usual projects. It became a single-player,
+  first-person wave shooter set in deep space, built on Three.js and playable on
+  phones as well as desktops. It placed 211th of 945 at Vibe Jam 2026.
 
 
-  It runs in the browser on Three.js and works on mobile devices as well as
-  desktop. The creator says it started from a wish to have fun making something
-  completely different from their usual projects. It was entered in Vibe Jam
-  2026.
+  The loop is plain and focused on action: hold your ground, clear the creatures
+  coming at you, and face the next wave. The first-person view keeps every
+  attack close, and the looming rift gives each fight a clear sense of place.
 play:
   url: https://beyondcritical.com
   embeddable: true

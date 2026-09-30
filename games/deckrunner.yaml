@@ -2,22 +2,21 @@ slug: deckrunner
 title: DECKRUNNER
 tagline: Shoot through a derelict space station deck by deck and reach the escape pod.
 description: >-
-  DECKRUNNER is a first-person roguelike shooter set on a derelict space
-  station. Each run sends you down through the station one deck at a time,
-  fighting whatever is still moving. You pick up weapons and perks along the way
-  and head for the escape pod before the station finishes you off.
+  DECKRUNNER is a first-person roguelike shooter about getting off a derelict
+  space station. Each run takes you down through the station one deck at a time,
+  fighting whatever is still moving, on the way to the escape pod.
 
 
-  The game mixes roguelike run structure with shooter combat, and customization
-  is a stated focus: the weapons and perks you scavenge shape how each descent
-  plays out. It runs in the browser, supports multiplayer, and works on mobile
-  devices as well as desktop. It placed 70th out of 945 entries in Vibe Jam
-  2026.
+  The idea, according to paledustgames, came from a love of roguelikes and
+  shooters and a wish to put both into one game. It was built with Claude Code
+  on Three.js, supports multiplayer, runs on phones as well as desktops, and
+  placed 70th of 945 at Vibe Jam 2026.
 
 
-  The creator built it with Claude Code, using Three.js for the 3D rendering.
-  The idea came from a love of both roguelikes and shooters and a wish to
-  combine them into one game.
+  Customization is a stated focus, on top of the roguelike run structure. The
+  weapons and perks you scavenge along the way shape how each descent plays out,
+  and the goal stays the same: reach the pod before the station finishes you
+  off.
 play:
   url: https://deckrunner.paledust.com
   embeddable: true

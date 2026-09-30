@@ -2,21 +2,22 @@ slug: fever-trip
 title: Fever Trip
 tagline: Fight aliens and your own inner demons in a story-driven first-person shooter.
 description: >-
-  Fever Trip is a first-person shooter with a single-player campaign. You play
-  an agent sent to look into a strange occurrence, only to learn that he is
-  caught in the middle of a war with aliens. Progress comes from gunfights as
-  the story unfolds around you.
+  An agent sent to look into a strange occurrence finds himself caught in the
+  middle of a war with aliens, and in Fever Trip you play him. It is a
+  story-driven first-person shooter with a single-player campaign, and the story
+  moves forward through gunfights. It plays in the browser, rendered with
+  Three.js.
 
 
-  The game pairs its alien conflict with a psychological thread: the agent also
-  has to fight his own inner demons, quite literally, before he loses his
-  sanity. The creator says the focus was on storytelling and on making the
-  shooting mechanics feel faithful and precise.
+  The aliens are only one front in this shooter-adventure. The agent also has to
+  fight his own inner demons, quite literally, before he loses his sanity.
+  According to the creator, the focus was on two things: storytelling, and
+  shooting mechanics that feel faithful and precise.
 
 
-  It was made for Vibe Jam 2026 and runs in the browser on Three.js. The creator
-  says they had always wanted to make video games and used Cursor to build this
-  one.
+  Making video games is something the creator says they had always wanted to do.
+  This one came together in Cursor, and it finished 69th of the 945 entries at
+  Vibe Jam 2026.
 play:
   url: https://fevertrip-game.vercel.app
   embeddable: true

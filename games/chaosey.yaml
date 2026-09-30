@@ -2,20 +2,21 @@ slug: chaosey
 title: Chaosey
 tagline: Team up with friends in chaotic co-op, each player using their own key
 description: >-
-  Chaosey is an online co-op adventure for two to four players. Each person is
-  assigned a single key, and everyone has to press theirs to move the group
-  forward. Since no one controls the whole team, progress depends on players
-  coordinating, or failing to, in the middle of the mess.
+  In Chaosey, each player gets one key, and nobody controls the whole team. It
+  is an online co-op adventure for two to four players, on phones or desktops,
+  and the group only moves forward when everyone presses their key, so a single
+  missed press holds everyone up.
 
 
-  The one-key-per-player setup makes the game about communication and timing
-  more than individual skill. It is built for playing with friends, and the
-  creator says the idea came from wanting something to play together when
-  hanging out. It supports multiplayer and runs on mobile as well.
+  The creator says the idea came from wanting something to play together when
+  hanging out with friends, and it is built for exactly that kind of session. It
+  was made with Codex in the Phaser engine, and its Vibe Jam 2026 placing was
+  462nd of the 945 entries.
 
 
-  The creator built it with Codex as an entry in Vibe Jam 2026, and it runs on
-  the Phaser engine. It placed 462nd out of 945 entries in the jam.
+  The one-key setup makes the game about communication and timing more than
+  individual skill. Progress depends on the players coordinating as a team, and
+  the chaos comes from the moments they don't.
 play:
   url: https://chaosey-game.rizamaulana.com
   embeddable: true

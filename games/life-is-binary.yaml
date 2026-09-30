@@ -2,21 +2,21 @@ slug: life-is-binary
 title: Life is Binary
 tagline: Farm, hack, and hustle with other players in a pixelated multiplayer life sim.
 description: >-
-  Life is Binary is a multiplayer life sim set in a pixelated world. Players
-  build a living by farming, hacking, and hustling, sharing the space with other
-  people online. The game frames every decision as a 1 or a 0, so each choice
-  about how to spend your time pushes your character down a different path.
+  In Life is Binary you make a living by farming, hacking and hustling in a
+  pixelated world you share with other players online. Every decision is framed
+  as a 1 or a 0, and each choice about how to spend your time pushes your
+  character down a different path.
 
 
-  The pairing of rural chores and hacking gives the game a mixed identity, with
-  a quiet farming routine sitting alongside more scheming, computer-themed side
-  work. The binary motif runs through the premise and gives the RPG-style
-  progression a consistent theme. It also runs in the browser and supports
-  mobile play.
+  The creator used Cursor to build it in Three.js, and it finished 46th of 945
+  at Vibe Jam 2026. Phones are supported alongside desktop browsers. It is an
+  RPG and a life sim at once, with other players sharing the space.
 
 
-  It was an entry in Vibe Jam 2026, where it placed 46th out of 945 entries. The
-  game is built with Three.js, and the creator used Cursor during development.
+  The pairing of rural chores and hacking gives it a mixed identity: a quiet
+  farming routine sits alongside more scheming, computer-themed side work. The
+  binary motif runs through the whole premise and gives the RPG-style
+  progression a consistent theme.
 play:
   url: https://lifeisbinary.com
   embeddable: true

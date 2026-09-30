@@ -2,21 +2,21 @@ slug: bayou-blitz
 title: Bayou Blitz
 tagline: Collect crawfish through the bayou while dodging hungry gators.
 description: >-
-  Bayou Blitz is a 3D action-adventure set in a swampy bayou. The player moves
-  through the wetland gathering crawfish while steering clear of gators that
-  threaten the route. A run comes down to picking safe paths, grabbing as much
-  food as possible, and avoiding contact with the predators.
+  Bayou Blitz sends you through a swampy Louisiana bayou to gather crawfish,
+  with hungry gators along the route. A run comes down to three things: picking
+  a safe path through the wetland, grabbing as much food as you can and keeping
+  clear of the predators.
 
 
-  The Louisiana-flavored setting gives the game a clear identity, and the goal
-  is easy to grasp at a glance. It supports multiplayer and is playable on
-  mobile devices as well as desktop browsers. The game was entered in Vibe Jam
-  2026, where it placed 147th among 945 entries.
+  The creator describes themselves as a returning Vibe Jam participant who
+  enjoys the competition. Their 2026 entry was built with Cursor, renders its 3D
+  scenes with Three.js, plays on phones as well as in a browser and finished
+  147th of 945 entries.
 
 
-  According to the creator, the game was built with Cursor, and it renders its
-  3D scenes with Three.js. The creator describes themselves as a returning
-  participant in the jam who enjoys the competition.
+  The goal is easy to read at a glance: more crawfish, no gator contact. The
+  Louisiana flavor gives the 3D action-adventure a clear identity, and online
+  multiplayer means the bayou does not have to be a solo trip.
 play:
   url: https://gogg.cloud
   embeddable: true
