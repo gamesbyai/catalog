@@ -83,6 +83,35 @@ const PAGES = {
   '/text-menu': menuPage(`<a href="/elsewhere" style="position:absolute;left:40px;top:40px;font-size:30px;color:#fff">Play</a>
     <div style="position:absolute;left:40px;bottom:40px;font-size:40px;color:#fff;cursor:pointer" onclick="startGame()">PLAY</div>`),
   '/link-only': menuPage(`<a href="/elsewhere" style="position:absolute;left:40px;bottom:40px;font-size:40px;color:#fff">Play</a>`),
+  // "Play" opens a server list here (the game never starts); "Solo" starts it.
+  '/solo-menu': menuPage(`<button style="position:absolute;left:40px;top:40px;font-size:40px" onclick="location.hash = 'servers'">PLAY</button>
+    <button style="position:absolute;left:40px;bottom:40px;font-size:40px" onclick="startGame()">Solo</button>`),
+  '/german-menu': menuPage(`<button style="position:absolute;left:40px;bottom:40px;font-size:40px" onclick="startGame()">Neues Spiel</button>`),
+  // A transparent layer over the whole page takes every mouse click.
+  '/covered-menu': menuPage(`<button style="position:absolute;left:40px;bottom:40px;font-size:40px" onclick="startGame()">PLAY</button>
+    <div style="position:fixed;inset:0;z-index:5"></div>`),
+  // The menu's button appears only after a long load.
+  '/late-menu': menuPage(`<script>setTimeout(() => {
+      const b = document.createElement('button'); b.textContent = 'PLAY'; b.style.cssText = 'position:absolute;left:40px;bottom:40px;font-size:40px';
+      b.onclick = () => startGame(); document.getElementById('menu').appendChild(b);
+    }, 1500);</script>`),
+  // A "Play" tab that stays on screen and does nothing; the game starts with Deploy.
+  '/tab-menu': menuPage(`<div style="position:absolute;left:40px;top:40px;font-size:30px;color:#fff;cursor:pointer">Play</div>
+    <button style="position:absolute;left:40px;bottom:40px;font-size:40px" onclick="startGame()">Deploy</button>`),
+  // A name with a button of its own and no form.
+  '/name-button': menuPage(`<input placeholder="Your name" style="position:absolute;left:40px;top:40px;font-size:30px">
+    <button style="position:absolute;left:40px;top:120px;font-size:30px" onclick="startGame()">Open Caf&eacute;</button>`),
+  '/rooms': menuPage(`<button style="position:absolute;left:40px;top:40px;font-size:30px" onclick="startGame()">Neon Corner 0/12</button>
+    <button style="position:absolute;left:40px;bottom:40px;font-size:30px">Back</button>`),
+  // A question first ("No" declines it), then the menu.
+  '/sound-prompt': menuPage(`<p style="position:absolute;left:40px;top:40px;font-size:30px">Enable sounds?</p>
+    <button id="yes" style="position:absolute;left:40px;top:200px;font-size:30px">Yes</button>
+    <button id="no" style="position:absolute;left:200px;top:200px;font-size:30px">No</button>
+    <script>document.getElementById('no').onclick = () => {
+      const m = document.getElementById('menu'); m.innerHTML = '';
+      const b = document.createElement('button'); b.textContent = 'PLAY'; b.style.cssText = 'position:absolute;left:40px;bottom:40px;font-size:40px';
+      b.onclick = () => startGame(); m.appendChild(b);
+    };</script>`),
 };
 
 // The scene behind the menus: still until startGame(); after that it scrolls only while arrow or WASD keys are held.
@@ -617,6 +646,77 @@ test("start 'retry': a game that kept one frame gets a pass with the start step,
   assert.match(lines.join('\n'), /ok {3}menu \([\d.]+ s, 3 of 3 frames\)/);
   assert.deepEqual(files(join(root, 'out', 'menu')).sort(), ['cover.png', 'shot-1.png', 'shot-2.png']);
   assert.ok(!(await magentaAt(join(root, 'out', 'menu', 'cover.png'), 300, 200)));
+});
+
+test('solo, German, decline and room patterns match whole names only', async () => {
+  const { SOLO_NAMES, START_NAMES, NEXT_NAMES, ROOM_NAMES } = await import('../scripts/capture.mjs');
+  for (const s of ['Solo', 'Play Offline', 'OFFLINE', 'Practice', 'Practice Range', 'Training', 'FFA Bot Lobby', 'Bot Match', 'Play vs Bots', 'vs CPU', 'Single Player', 'Einzelspieler', 'Übung', 'Gegen Computer']) assert.match(s, SOLO_NAMES, s);
+  for (const s of ['Play', 'Browse Lobbies', 'Online', 'Multiplayer', 'Solo leaderboard', 'Bot settings']) assert.doesNotMatch(s, SOLO_NAMES, s);
+  for (const s of ['Neues Spiel', 'Spielen', 'Jetzt spielen', 'Spiel starten', 'Starten', 'Los geht’s', 'Enter the Arena ↗', 'Enter Game']) assert.match(s, START_NAMES, s);
+  for (const s of ['Spielanleitung', 'Spielstand wählen', 'Enter your name', 'Enter the code']) assert.doesNotMatch(s, START_NAMES, s);
+  for (const s of ['Weiter', 'No', 'No thanks', 'Not now', 'Nein', 'Überspringen', 'Play without sound']) assert.match(s, NEXT_NAMES, s);
+  for (const s of ['Yes', 'Accept', 'Nothing', 'Notes', 'Weitere Spiele']) assert.doesNotMatch(s, NEXT_NAMES, s);
+  for (const s of ['Neon Corner 0/12', 'Agartha (0/32)', 'EU-1 3/16', 'Room #4 2 / 8']) assert.match(s, ROOM_NAMES, s);
+  for (const s of ['01 / 11', '1/2', 'Settings', 'Neon Corner']) assert.doesNotMatch(s, ROOM_NAMES, s);
+  // Playwright passes each pattern inside a selector string, which allows no "u" flag and no bare "/".
+  for (const re of [SOLO_NAMES, START_NAMES, NEXT_NAMES, ROOM_NAMES]) assert.doesNotMatch(re.flags, /u/, re.source);
+});
+
+const startsTheGame = async (path) => {
+  const dir = join(tmp(), path.slice(1));
+  const res = await captureOne(`${base}${path}`, dir, { ...FAST, ...START_FAST });
+  assert.equal(res.ok, true, res.reason);
+  assert.equal(res.files.length, 3, `${path}: ${res.files.length} frames`);
+  for (const f of res.files) assert.ok(!(await magentaAt(f, 300, 200)), `${path}: ${f.slice(dir.length + 1)} shows the menu`);
+};
+
+test('the start step prefers Solo over a Play button that opens a server list', () => startsTheGame('/solo-menu'));
+test('the start step presses German start buttons', () => startsTheGame('/german-menu'));
+test('the start step presses a button under a transparent layer with a click event', () => startsTheGame('/covered-menu'));
+test('the start step keeps looking while a menu is still loading', () => startsTheGame('/late-menu'));
+test('a start option that stays on screen is pressed once, so the next button gets its turn', () => startsTheGame('/tab-menu'));
+test("a name with no form gets the button beside it", () => startsTheGame('/name-button'));
+test('a room list with player counts: the first room is joined', () => startsTheGame('/rooms'));
+test('a question in the way gets the declining answer, then the menu its Play', () => startsTheGame('/sound-prompt'));
+
+test('local captures: launch options, command line, play time and page scripts', async () => {
+  const { launchOptions, cliOptions, playOptions, noFilePickers, noWebGPU } = await import('../scripts/capture.mjs');
+  const ci = launchOptions({ sandbox: true });
+  assert.equal(ci.headless, true);
+  assert.equal(ci.channel, undefined, "CI keeps Playwright's headless shell");
+  assert.ok(ci.args.includes('--use-angle=swiftshader'));
+  assert.deepEqual(launchOptions({ gpu: true }), { headless: true, channel: 'chromium', chromiumSandbox: DEFAULTS.sandbox, args: ['--ignore-gpu-blocklist'] });
+  assert.equal(launchOptions({ chrome: true }).channel, 'chrome');
+  assert.equal(launchOptions({ headed: true }).headless, false);
+
+  assert.deepEqual(cliOptions(['a', 'b']), { slugs: ['a', 'b'] }, 'CI passes slugs only');
+  const local = cliOptions(['--chrome', '--webgl', '--trace', '--root', 'wt', '--out', 'o', '--all-frames', 'f', '--play', '30', 'x']);
+  assert.deepEqual({ ...local, startTimes: undefined, startExtra: undefined }, { slugs: ['x'], chrome: true, webgl: true, trace: true, root: 'wt', out: 'o', allFrames: 'f', startTimes: undefined, startExtra: undefined });
+  for (const bad of [['--nope', 'x'], ['--root'], ['--out', '--gpu'], ['--play', '5', 'x']]) assert.throws(() => cliOptions(bad), bad.join(' '));
+
+  const p = playOptions(40);
+  assert.equal(p.startTimes.length, DEFAULTS.startTimes.length);
+  assert.equal(p.startTimes[0], DEFAULTS.startTimes[0]);
+  assert.equal(p.startTimes.at(-1), 40_000);
+  assert.ok(p.startTimes.every((t, i) => !i || t > p.startTimes[i - 1]), 'frames in order');
+  assert.equal(p.startExtra, DEFAULTS.startExtra + 40_000 - DEFAULTS.startTimes.at(-1));
+  for (const v of [0, 10, 200, 'nope']) assert.deepEqual(playOptions(v), {}, String(v));
+
+  const win = { showOpenFilePicker() {}, showSaveFilePicker() {}, showDirectoryPicker() {}, Navigator: function () {} };
+  win.Navigator.prototype.gpu = {};
+  noFilePickers(win);
+  noWebGPU(win);
+  assert.equal(win.showOpenFilePicker, undefined);
+  assert.equal(win.showDirectoryPicker, undefined);
+  assert.equal(new win.Navigator().gpu, undefined);
+});
+
+test('--all-frames keeps every frame of every pass for review, picked or not', async () => {
+  const all = join(tmp(), 'all');
+  const res = await captureOne(`${base}/menu`, join(tmp(), 'menu-all'), { ...FAST, times: [300, 700, 1100, 1500], shotTimeout: 4000, deadline: 12_000, allFrames: all });
+  assert.equal(res.ok, true, res.reason);
+  assert.equal(res.files.length, 1, 'the picked frames: one menu');
+  assert.deepEqual(files(all).sort(), ['plain-0.png', 'plain-1.png', 'plain-2.png', 'plain-3.png']);
 });
 
 test('CAPTURE_START: true, retry or off; the summary warns about games with fewer than three frames', async () => {

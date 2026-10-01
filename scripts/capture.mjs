@@ -1,6 +1,8 @@
 #!/usr/bin/env node
 // Captures a cover and two screenshots per game: node scripts/capture.mjs <slug…>
-// Game pages are untrusted code. This runs only in CI's capture job, which has no secrets and a read-only token.
+// Game pages are untrusted code. This runs in CI's capture job, which has no secrets and a read-only token, and, for
+// games CI's software renderer can't draw, on a maintainer's machine with a GPU (`--gpu` or `--chrome`: a fresh
+// temporary profile, downloads refused, no file pickers, nothing uploaded from here).
 // Every game gets a fresh browser context, a hard deadline kept by Node (not by Playwright), and nothing
 // from the page is ever read back except the pixels of the screenshots, and on itch.io the address of the game's
 // own frame, which must match itch's CDN pattern (itchFrame). The opt-in start step (CAPTURE_START, startGame) also
@@ -30,7 +32,8 @@ export const DEFAULTS = {
   startTimes: [1500, 4000, 7000, 10500, 14000],
   startExtra: 25_000,
   holdMs: 700, // how long a movement key is held between frames
-  startRounds: 3, // menus behind menus: Play, then a mode, then a character
+  startRounds: 4, // presses: menus behind menus (Solo, then Play, then a mode, then a character)
+  startIdle: 2, // after a press, rounds that look for the next screen's button before the frames begin
   startPause: 1200, // after each start click, for the next screen to appear
   startBudget: 15_000, // the whole start step
   navTimeout: 20_000,
@@ -43,6 +46,14 @@ export const DEFAULTS = {
   itchHost: /\.itch\.io$/, // pages captured the itch.io way (tests point it at 127.0.0.1)
   itchPage: false, // on itch.io: capture the page itself, toolbar hidden, instead of the game's own frame
   sandbox: process.env.CAPTURE_SANDBOX !== '0',
+  // Local captures on a machine with a GPU (`--gpu`): full Chromium in its new headless mode draws WebGL and WebGPU on
+  // the real GPU, for games CI's software renderer leaves blank. `headed: true` shows the window instead.
+  gpu: false,
+  headed: false,
+  // Local only (`--webgl`): the page sees no WebGPU, so a game whose WebGPU path draws nothing on this machine falls
+  // back to its WebGL renderer, as it does on CI.
+  webgl: false,
+  chrome: false, // local only (`--chrome`): the installed Google Chrome instead of Playwright's Chromium
 };
 
 class CaptureError extends Error {
@@ -106,15 +117,27 @@ export function itchFrame(pageUrl, candidate) {
 // One browser per process, launched through launchServer so a hung browser can be killed outright.
 let server = null;
 let browser = null;
-let launchedSandbox = null;
+let launchedAs = null;
 
-async function getBrowser(sandbox) {
-  if (browser?.isConnected() && launchedSandbox === sandbox) return browser;
-  await killBrowser();
+/**
+ * Launch options: CI's software renderer, or (gpu/headed/chrome, local only) a full browser on the machine's GPU:
+ * Playwright's Chromium, or the installed Google Chrome (`chrome`), whose WebGPU draws some games that Chromium leaves
+ * half blank. Both start from a fresh temporary profile.
+ */
+export function launchOptions({ sandbox = DEFAULTS.sandbox, gpu = false, headed = false, chrome = false } = {}) {
+  if (gpu || headed || chrome) return { headless: !headed, channel: chrome ? 'chrome' : 'chromium', chromiumSandbox: sandbox, args: ['--ignore-gpu-blocklist'] };
   // Runners have no GPU: let WebGL fall back to SwiftShader instead of failing, so 3D games still draw a frame.
-  server = await chromium.launchServer({ headless: true, chromiumSandbox: sandbox, args: ['--use-angle=swiftshader', '--enable-unsafe-swiftshader', '--ignore-gpu-blocklist'] });
+  return { headless: true, chromiumSandbox: sandbox, args: ['--use-angle=swiftshader', '--enable-unsafe-swiftshader', '--ignore-gpu-blocklist'] };
+}
+
+async function getBrowser(o) {
+  const opts = launchOptions(o);
+  const key = JSON.stringify(opts);
+  if (browser?.isConnected() && launchedAs === key) return browser;
+  await killBrowser();
+  server = await chromium.launchServer(opts);
   browser = await chromium.connect(server.wsEndpoint());
-  launchedSandbox = sandbox;
+  launchedAs = key;
   return browser;
 }
 
@@ -203,6 +226,23 @@ export function throttleFrames(win, gap) {
   };
 }
 
+/** Runs in the page (local captures): removes the File System Access pickers. Self-contained, like throttleFrames. */
+export function noFilePickers(win) {
+  for (const k of ['showOpenFilePicker', 'showSaveFilePicker', 'showDirectoryPicker']) {
+    try {
+      delete win[k];
+      if (k in win) Object.defineProperty(win, k, { value: undefined, configurable: false });
+    } catch {}
+  }
+}
+
+/** Runs in the page (`webgl`): hides WebGPU, so the game picks its WebGL renderer. Self-contained. */
+export function noWebGPU(win) {
+  try {
+    delete win.Navigator.prototype.gpu;
+  } catch {}
+}
+
 // The start step. Most games that kept a single frame sat on a title, menu or name-entry screen: the centre click and
 // Enter of the plain schedule don't press a Play button off-centre, so every frame was the same menu and the
 // near-duplicate check kept one. With `start: true` the capture presses the game's own Start or Play button, found by
@@ -210,16 +250,42 @@ export function throttleFrames(win, gap) {
 // (movement keys, a click) between frames. Nothing the page says is saved or logged: the page is only asked whether
 // such an element is visible, and links are never followed (they can lead off the game).
 const phrase = (words) => new RegExp(`^[\\W_]*(?:${words.join('|')})[\\W_]*$`, 'i');
+/**
+ * Options that start a game alone on this machine (no server list, no strangers): pressed before any other start
+ * button, so "Play" never opens a lobby browser when "Solo" or "Bots" sits next to it. English and German.
+ */
+export const SOLO_NAMES = phrase([
+  'solo', 'play solo', 'solo play', 'single ?player', 'play single ?player', 'offline', 'play offline', 'offline mode',
+  'practi[cs]e', 'practi[cs]e mode', 'practi[cs]e (?:run|round|match|range)', 'training', 'training mode', 'free ?play', 'sandbox',
+  'play (?:vs|against|with) (?:the )?(?:cpu|ai|computer|bots?)', '(?:vs|versus) (?:cpu|ai|computer|bots?)', '(?:ffa |free for all )?bots? (?:lobby|match|game|mode)', 'add bots?',
+  'einzelspieler', 'offline spielen', 'gegen (?:den )?(?:computer|bots?|ki)', '(?:ü|ue)bung', 'trainingsmodus',
+]);
 /** Buttons that start a game, matched against the whole name or text (arrows and punctuation around it ignored). */
 export const START_NAMES = phrase([
   'play', 'start', 'play now', 'play game', 'play the game', 'start game', 'start the game', 'new game', 'start run', 'new run',
   'begin', 'begin game', 'begin run', 'begin adventure', 'begin journey', 'launch', 'launch game', 'launch mission', 'quick ?play',
   'single ?player', 'solo', 'play solo', 'play offline', 'play as guest', 'play (?:vs|against) (?:cpu|ai|computer|bots?)', 'vs (?:cpu|ai)',
   "let[\\u2019']?s (?:go|play)", '(?:click|tap|press) (?:here |anywhere )?to (?:start|play|begin)', 'press start', 'start (?:adventure|mission|playing|now|demo)',
-  'enter (?:the )?game', 'run game', 'dive in', 'drop in', 'jump in', 'insert coin',
+  'enter (?:the )?(?:game|arena|world|battle|match)', 'run game', 'dive in', 'drop in', 'jump in', 'insert coin',
+  // German
+  'spielen', 'jetzt spielen', 'spiel starten', 'starten', 'neues spiel', 'spiel beginnen', 'beginnen', 'los', "los geht[\\u2019']?s",
+  '(?:klicken|tippen|dr(?:ü|ue)cken) (?:zum|um zu) (?:starten|spielen)',
 ]);
-/** Second-screen buttons (after a name or a mode): pressed only when no start button is visible. */
-export const NEXT_NAMES = phrase(['continue', 'join', 'join game', 'enter', 'go', 'fight', 'ok', 'okay', 'got it', 'skip', 'skip intro', 'next', 'ready', "i[\\u2019']?m ready", 'deploy', 'embark']);
+/**
+ * Second-screen buttons (after a name or a mode): pressed only when no start button is visible. A question in the way
+ * ("Enable sound?", a newsletter) gets the declining answer: a capture never opts in to anything.
+ */
+export const NEXT_NAMES = phrase([
+  'continue', 'join', 'join game', 'enter', 'go', 'fight', 'ok', 'okay', 'got it', 'skip', 'skip intro', 'next', 'ready', "i[\\u2019']?m ready", 'deploy', 'embark',
+  'no', 'no thanks', 'not now', 'maybe later', 'mute', 'sound off', 'no sound', '(?:play )?without sound',
+  'weiter', 'fortfahren', 'beitreten', 'bereit', '(?:ü|ue)berspringen', 'verstanden', 'alles klar', 'nein', 'nein danke', 'sp(?:ä|ae)ter', 'ohne ton',
+]);
+/**
+ * A room or server in a list, shown with its player count ("Neon Corner 0/12"): the last resort, pressed once when a
+ * game offers nothing to start alone and no other button. (Playwright passes the pattern inside a selector string,
+ * which allows no "u" flag and no bare "/".)
+ */
+export const ROOM_NAMES = /^[\W_]*(?=[^\/]*[a-zÀ-ɏ])[a-zÀ-ɏ0-9][a-zÀ-ɏ0-9 '.#(-]{0,39}?\s*\d{1,3}\s*\/\s*\d{1,3}[\W_]*$/i;
 /** A name field: its label or placeholder asks for a name. */
 export const NAME_FIELD = /\bnick(?:name)?\b|\b(?:user ?)?name\b|\bcall ?sign\b|who are you/i;
 export const PLAYER_NAME = 'Player';
@@ -232,32 +298,58 @@ const PLAY_STEPS = [
   { keys: ['ArrowDown', 'KeyS'], press: 'Space' },
 ];
 
+// A solo or start option is pressed once: the start step marks it, so a tab called "Play" or an "Offline" toggle that
+// stays on screen never eats the rounds the next button (Deploy, Join) needs. Continue/OK buttons may be pressed again.
+const PRESSED = 'data-capture-pressed';
+const NOT_PRESSED = `:not([${PRESSED}]):not([${PRESSED}] *)`;
+
 /**
  * Clicks the first visible element whose accessible name (buttons) or whole text (anything that isn't a link) matches
  * `names`. Returns true after a click. Every call is bounded by `o.clickTimeout`, the whole search by `until` (a time);
- * `guard` keeps the capture deadline.
+ * `guard` keeps the capture deadline. `once`: skip elements pressed before, and mark this one.
  */
-async function clickByName(page, names, o, guard, until) {
+async function clickByName(page, names, o, guard, until, { once = false, label = 'button', trace } = {}) {
   const tries = [page.getByRole('button', { name: names }), page.getByText(names)];
   for (const [i, all] of tries.entries()) {
     if (Date.now() > until) return false;
-    const loc = all.filter({ visible: true });
+    const visible = all.filter({ visible: true });
+    const loc = once ? visible.and(page.locator(NOT_PRESSED)) : visible;
     const n = Math.min(await guard(within(loc.count(), o.clickTimeout, 0)), 3);
     for (let k = 0; k < n && Date.now() <= until; k++) {
-      const el = loc.nth(k);
-      // Text matches can sit inside a link; a link to another page is never clicked (a "#" or script link is a button).
-      if (i === 1 && !(await guard(within(el.evaluate((e) => !e.closest('a[href]:not([href^="#"]):not([href^="javascript:"])')), o.clickTimeout, false)))) continue;
-      if (await guard(within(el.click({ timeout: o.clickTimeout }).then(() => true), o.clickTimeout + 500, false))) return true;
+      // One element, held while it is pressed and marked (a locator would find whatever replaced it after the click).
+      const el = await guard(within(loc.nth(k).elementHandle({ timeout: o.clickTimeout }), o.clickTimeout + 500, null));
+      if (!el) continue;
+      try {
+        // Text matches can sit inside a link; a link to another page is never clicked (a "#" or script link is a button).
+        if (i === 1 && !(await guard(within(el.evaluate((e) => !e.closest('a[href]:not([href^="#"]):not([href^="javascript:"])')), o.clickTimeout, false)))) continue;
+        // A mouse click first. A button under a transparent layer (a full-screen canvas or overlay that takes the
+        // pointer) or one that never stops moving gets the click event itself instead.
+        let how = 'clicked';
+        let ok = await guard(within(el.click({ timeout: o.clickTimeout }).then(() => true), o.clickTimeout + 500, false));
+        if (!ok) {
+          how = 'click event';
+          ok = await guard(within(el.dispatchEvent('click').then(() => true), o.clickTimeout, false));
+        }
+        trace?.(`${ok ? `pressed (${how})` : 'could not press'} a ${label} (${i ? 'text' : 'button role'}, match ${k + 1} of ${n})`);
+        if (!ok) continue;
+        // Marked after the press: a press that failed is tried again next round.
+        if (once) await guard(within(el.evaluate((e, attr) => e.setAttribute(attr, ''), PRESSED), o.clickTimeout));
+        return true;
+      } finally {
+        el.dispose().catch(() => {});
+      }
     }
   }
   return false;
 }
 
 /**
- * Gets past a title, menu or name-entry screen: fills a visible name field once, then presses a start button (or, when
- * none is visible, a continue/join button), up to `o.startRounds` times within `o.startBudget` ms. A canvas title
- * screen gets the centre click and Enter of the plain schedule instead, after which a DOM menu may appear. Never throws
- * except for the deadline.
+ * Gets past a title, menu or name-entry screen: fills a visible name field once, then presses a solo or offline option,
+ * else a start button (each once), else a continue/join button, up to `o.startRounds` presses within `o.startBudget` ms.
+ * A filled name with nothing to press gets Enter, then the button beside the field. A canvas title screen gets the
+ * centre click and Enter of the plain schedule, after which a DOM menu may appear. While nothing has been pressed the
+ * step keeps looking (a menu can appear after a long load); after a press it looks `o.startIdle` more times for the
+ * next screen's button. Never throws except for the deadline.
  */
 export async function startGame(page, o, guard, signal) {
   const until = Date.now() + o.startBudget;
@@ -266,31 +358,77 @@ export async function startGame(page, o, guard, signal) {
     await guard(within(page.mouse.click(o.viewport.width / 2, o.viewport.height / 2), o.clickTimeout));
     await guard(within(page.keyboard.press('Enter'), o.clickTimeout));
   };
+  const nameField = () => page.getByRole('textbox', { name: NAME_FIELD }).or(page.getByPlaceholder(NAME_FIELD)).and(page.locator('input:not([type="email"]):not([type="search"])')).filter({ visible: true }).first();
   let named = false;
-  let clicked = false;
+  let enterTried = false;
+  let nameButtonTried = false;
   let canvasTried = false;
-  for (let round = 0; round < o.startRounds && Date.now() <= until; round++) {
+  let presses = 0;
+  let idle = 0; // rounds without a press since the last one
+  for (let round = 0; presses < o.startRounds && Date.now() <= until; round++) {
+    // Local review only: our own decisions, never anything the page says.
+    const trace = typeof o.trace === 'function' ? (s) => o.trace(`start round ${round + 1}: ${s}`) : undefined;
     if (!named) {
-      const field = page.getByRole('textbox', { name: NAME_FIELD }).or(page.getByPlaceholder(NAME_FIELD)).and(page.locator('input:not([type="email"]):not([type="search"])')).filter({ visible: true }).first();
+      const field = nameField();
       if (await guard(within(field.count(), o.clickTimeout, 0))) {
         named = await guard(within(field.fill(PLAYER_NAME, { timeout: o.clickTimeout }).then(() => true), o.clickTimeout + 500, false));
+        trace?.(named ? 'filled a name field' : 'could not fill a name field');
       }
     }
-    if ((await clickByName(page, START_NAMES, o, guard, until)) || (await clickByName(page, NEXT_NAMES, o, guard, until))) {
-      clicked = true;
+    if (
+      (await clickByName(page, SOLO_NAMES, o, guard, until, { once: true, label: 'solo option', trace })) ||
+      (await clickByName(page, START_NAMES, o, guard, until, { once: true, label: 'start button', trace })) ||
+      (await clickByName(page, NEXT_NAMES, o, guard, until, { label: 'next button', trace })) ||
+      (await clickByName(page, ROOM_NAMES, o, guard, until, { once: true, label: 'room in a list', trace }))
+    ) {
+      presses++;
+      idle = 0;
       await pause(o.startPause);
       continue;
     }
-    if (named && round === 0) {
+    if (named && !presses && !enterTried) {
       // A name field whose form submits on Enter.
+      enterTried = true;
+      trace?.('Enter after the name');
       await guard(within(page.keyboard.press('Enter'), o.clickTimeout));
       await pause(o.startPause);
       continue;
     }
-    // A game already started by a button gets no Enter (in many multiplayer games it opens the chat).
-    if (clicked || canvasTried) break;
-    canvasTried = true;
-    await centre();
+    if (named && !presses && !nameButtonTried) {
+      // A name form whose button has a name of its own ("Open Café"): the last enabled button in the field's own box
+      // (the nearest of its four closest ancestors that holds one). Never a link.
+      nameButtonTried = true;
+      const button = nameField()
+        .locator('xpath=ancestor::*[position() <= 4][.//button or .//input[@type="submit"]][1]')
+        .locator('button:not([disabled]), input[type="submit"]:not([disabled])')
+        .filter({ visible: true })
+        .last();
+      const ok = await guard(within(button.click({ timeout: o.clickTimeout }).then(() => true), o.clickTimeout + 500, false));
+      trace?.(ok ? "pressed the name form's button" : "no button beside the name");
+      if (ok) {
+        presses++;
+        idle = 0;
+        await pause(o.startPause);
+        continue;
+      }
+    }
+    // A game already started by a button gets no Enter (in many multiplayer games it opens the chat); it gets a short
+    // look for the next screen's button, then the frames.
+    if (presses) {
+      if (++idle > o.startIdle) break;
+      trace?.('nothing new to press yet');
+      await pause(o.startPause);
+      continue;
+    }
+    if (!canvasTried) {
+      canvasTried = true;
+      trace?.('nothing to press: centre click and Enter');
+      await centre();
+      await pause(o.startPause);
+      continue;
+    }
+    // Nothing pressed yet: the menu may still be loading.
+    if (round === 2) trace?.('nothing to press yet: looking again until the start budget ends');
     await pause(o.startPause);
   }
   // Focus the game for the play input that follows.
@@ -347,7 +485,7 @@ export async function captureOne(url, outDir, opts = {}) {
   const pick = () => pickFrames([...state.shots, ...state.before], { preferred: state.shots.length });
   const work = async () => {
     const b = await guard(
-      getBrowser(o.sandbox).catch((e) => {
+      getBrowser(o).catch((e) => {
         throw new CaptureError('browser', firstLine(e));
       }),
     );
@@ -368,7 +506,12 @@ export async function captureOne(url, outDir, opts = {}) {
     }
     state.context = context;
     if (o.throttle) await guard(context.addInitScript(`(${throttleFrames})(window, ${Number(o.throttleGap) || 250});`));
+    // A local browser runs on someone's machine: no File System Access pickers for the page.
+    if (o.gpu || o.headed || o.chrome) await guard(context.addInitScript(`(${noFilePickers})(window);`));
+    if (o.webgl) await guard(context.addInitScript(`(${noWebGPU})(window);`));
     const page = await guard(context.newPage());
+    // A file input never opens a native dialog: a listener makes Playwright intercept it, and nothing is ever chosen.
+    page.on('filechooser', () => {});
     context.on('page', (p) => p !== page && p.close().catch(() => {})); // popups
     page.on('dialog', (d) => d.dismiss().catch(() => {}));
     page.on('download', (d) => {
@@ -420,10 +563,18 @@ export async function captureOne(url, outDir, opts = {}) {
 
     // One frame. A busy renderer can miss one frame deadline; one retry before giving up on the game. Null when the
     // game stopped answering after earlier frames (those may be enough; later ones are a bonus).
+    // Local review (`--all-frames`): every frame of every pass is also written as it is taken, picked or not.
+    const pass = `${start ? 'start' : 'plain'}${o.throttle ? '-throttled' : ''}${o.itchPage ? '-itchpage' : ''}`;
+    let taken = 0;
     const snap = async () => {
       for (let attempt = 0; ; attempt++) {
         try {
-          return await guard(page.screenshot({ type: 'png', timeout: o.shotTimeout }));
+          const buf = await guard(page.screenshot({ type: 'png', timeout: o.shotTimeout }));
+          if (o.allFrames) {
+            mkdirSync(o.allFrames, { recursive: true });
+            writeFileSync(join(o.allFrames, `${pass}-${taken++}.png`), buf);
+          }
+          return buf;
         } catch (e) {
           if (e instanceof CaptureError || attempt === 1) {
             if (state.shots.length || state.before.length) {
@@ -560,7 +711,11 @@ export async function captureSlugs(slugs, { root = ROOT, out = join(root, 'out')
       else if (uploadsOf(entry)) res = { ok: true, skipped: 'uploads' };
       else if (typeof url !== 'string') res = { ok: false, reason: 'bad-url' };
       else {
-        const run = (o) => captureOne(url, join(out, slug), o).catch((e) => ({ ok: false, reason: 'error', detail: firstLine(e) }));
+        const all = {
+          ...(opts.allFrames ? { allFrames: join(opts.allFrames, slug) } : {}),
+          ...(opts.trace === true ? { trace: (line) => log(`     ${slug}: ${line}`) } : {}),
+        };
+        const run = (o) => captureOne(url, join(out, slug), { ...o, ...all }).catch((e) => ({ ok: false, reason: 'error', detail: firstLine(e) }));
         res = await run(opts);
         // Screenshots that time out usually mean frames hog the main thread; one more pass with throttled frames.
         if (!res.ok && (res.reason === 'screenshot' || res.reason === 'deadline') && !opts.throttle && Date.now() - batchStart < budgetMs) {
@@ -580,7 +735,7 @@ export async function captureSlugs(slugs, { root = ROOT, out = join(root, 'out')
         if (opts.start === 'retry' && (res.ok ? kept < NAMES.length : res.reason === 'blank') && Date.now() - batchStart < budgetMs) {
           log(`     ${slug}: ${res.ok ? `${kept} of ${NAMES.length} frames` : res.reason}, retry with the start step`);
           const scratch = mkdtempSync(join(tmpdir(), 'capture-start-'));
-          const again = await captureOne(url, join(scratch, slug), { ...opts, start: true, ...(res.throttled ? { throttle: true } : {}), ...(res.itchPage ? { itchPage: true } : {}) }).catch((e) => ({ ok: false, reason: 'error', detail: firstLine(e) }));
+          const again = await captureOne(url, join(scratch, slug), { ...opts, ...all, start: true, ...(res.throttled ? { throttle: true } : {}), ...(res.itchPage ? { itchPage: true } : {}) }).catch((e) => ({ ok: false, reason: 'error', detail: firstLine(e) }));
           if (again.ok && again.files.length > kept) {
             for (const n of NAMES) rmSync(join(out, slug, `${n}.png`), { force: true });
             mkdirSync(join(out, slug), { recursive: true });
@@ -635,6 +790,50 @@ export function waitOptions(seconds) {
   return { times: DEFAULTS.times.map((t) => t + s * 1000), deadline: DEFAULTS.deadline + s * 1000 };
 }
 
+/**
+ * Seconds of play after the start step, for slow games (a management sim, a rocket on the pad) whose frames a few
+ * seconds apart look the same: the post-start frames spread evenly up to that time, and the deadline grows with it.
+ * 15 to 120; anything else is no change.
+ */
+export function playOptions(seconds) {
+  const s = Math.floor(Number(seconds));
+  if (!(s >= 15 && s <= 120)) return {};
+  const first = DEFAULTS.startTimes[0];
+  const last = s * 1000;
+  const n = DEFAULTS.startTimes.length;
+  const startTimes = Array.from({ length: n }, (_, i) => Math.round(first + ((last - first) * i) / (n - 1)));
+  return { startTimes, startExtra: DEFAULTS.startExtra + last - DEFAULTS.startTimes[n - 1] };
+}
+
+/**
+ * Command-line options. CI passes slugs only. A local capture on a machine with a GPU adds `--gpu` (Playwright's
+ * Chromium) or `--chrome` (the installed Chrome), `--headed` to watch, `--webgl` for a game whose WebGPU path draws
+ * nothing, `--play <s>` for slow games, `--trace` (the start step's decisions) and `--all-frames <dir>` (every frame, for
+ * review); it may read entries from another checkout (`--root`, e.g. a seed branch's worktree) and write elsewhere (`--out`).
+ */
+export function cliOptions(argv) {
+  const res = { slugs: [] };
+  for (let i = 0; i < argv.length; i++) {
+    const a = argv[i];
+    if (a === '--gpu') res.gpu = true;
+    else if (a === '--headed') res.headed = true;
+    else if (a === '--trace') res.trace = true;
+    else if (a === '--webgl') res.webgl = true;
+    else if (a === '--chrome') res.chrome = true;
+    else if (a === '--play') {
+      const p = playOptions(argv[++i]);
+      if (!p.startTimes) throw new Error('--play needs 15 to 120 seconds');
+      Object.assign(res, p);
+    } else if (a === '--root' || a === '--out' || a === '--all-frames') {
+      const v = argv[++i];
+      if (!v || v.startsWith('--')) throw new Error(`${a} needs a directory`);
+      res[{ '--root': 'root', '--out': 'out', '--all-frames': 'allFrames' }[a]] = v;
+    } else if (a.startsWith('--')) throw new Error(`unknown option ${a}`);
+    else res.slugs.push(a);
+  }
+  return res;
+}
+
 if (process.argv[1] === fileURLToPath(import.meta.url)) {
   if (process.argv[2] === '--split') {
     if (process.argv.length !== 4) {
@@ -644,12 +843,18 @@ if (process.argv[1] === fileURLToPath(import.meta.url)) {
     console.log(JSON.stringify(splitUploads(readFileSync(process.argv[3], 'utf8').split(/\s+/).filter(Boolean))));
     process.exit(0);
   }
-  const slugs = process.argv.slice(2);
-  if (!slugs.length) {
-    console.error('usage: node scripts/capture.mjs <slug…>');
+  let cli;
+  try {
+    cli = cliOptions(process.argv.slice(2));
+  } catch {
+    cli = null;
+  }
+  if (!cli?.slugs.length) {
+    console.error('usage: node scripts/capture.mjs [--gpu] [--chrome] [--headed] [--webgl] [--trace] [--play <15-120 s>] [--root <catalog checkout>] [--out <dir>] [--all-frames <dir>] <slug…>');
     process.exit(2);
   }
-  const results = await captureSlugs(slugs, { ...waitOptions(process.env.CAPTURE_WAIT), ...startOptions(process.env.CAPTURE_START) });
+  const { slugs, ...local } = cli;
+  const results = await captureSlugs(slugs, { ...waitOptions(process.env.CAPTURE_WAIT), ...startOptions(process.env.CAPTURE_START), ...local });
   await closeBrowser();
   for (const line of summary(results)) console.log(line);
   // Failed games are expected and logged; a browser that never starts is a broken runner.
