@@ -70,22 +70,24 @@ export function checkUrl(url, { allowLocalHttp = false } = {}) {
 
 // itch.io wraps an HTML5 game in its own page: a toolbar ("Follow", "Add To Collection"), jam banners and often a
 // "Run game" button would end up in the cover. The game itself is an iframe served from itch's CDN.
-const ITCH_FRAME = /^https:\/\/html(?:-classic)?\.itch\.zone\/html\/\d+(?:-\d+)?\/(?:[\w%-]+\/)*[\w%.-]+\.html(?:\?v=\d+)?$/;
+const ITCH_FRAME = /^https:\/\/html(?:-classic)?\.itch\.zone(\/html\/\d+(?:-\d+)?\/)(?:[\w%-]+\/)*[\w%.-]+\.html(?:\?v=\d+)?$/;
 
-/** The game's own frame on an itch.io page (pageUrl on *.itch.io), or null. html is the page's markup, read as data. */
-export function itchFrame(pageUrl, html) {
+/** The game's own frame on an itch.io page (pageUrl on *.itch.io), or null. candidate is its src, read as data. */
+export function itchFrame(pageUrl, candidate) {
   let host;
   try {
     host = new URL(pageUrl).hostname;
   } catch {
     return null;
   }
-  if (!host.endsWith('.itch.io')) return null;
-  const text = String(html).replace(/&quot;/g, '"').replace(/&amp;/g, '&');
-  for (const [, raw] of text.matchAll(/src="(https:\/\/html(?:-classic)?\.itch\.zone\/[^"<>\n]+)"/g)) {
-    const src = raw.replace(/ /g, '%20');
-    if (ITCH_FRAME.test(src) && !src.includes('..')) return src;
-  }
+  if (!host.endsWith('.itch.io') || typeof candidate !== 'string') return null;
+  const src = candidate.replace(/ /g, '%20');
+  const match = ITCH_FRAME.exec(src);
+  if (!match || src.includes('..')) return null;
+  try {
+    const u = new URL(src);
+    if (u.protocol === 'https:' && ['html.itch.zone', 'html-classic.itch.zone'].includes(u.host) && !u.username && !u.password && u.pathname.startsWith(match[1])) return u.href;
+  } catch {}
   return null;
 }
 
@@ -262,7 +264,7 @@ export async function captureOne(url, outDir, opts = {}) {
       await guard(page.waitForLoadState('load', { timeout: Math.max(1, o.navTimeout - (Date.now() - navStart)) }).catch(() => {}));
     };
     await open(url);
-    // On itch.io the cover shows the game's own frame, not the page around it. No other page's markup is read.
+    // On itch.io the cover shows the game's own frame, not the page around it. Only its src is read back.
     // A game that fails in its frame gets a second pass on the page itself (itchPage), with itch's toolbar hidden.
     if (o.itchHost.test(new URL(url).hostname)) {
       if (o.itchPage) {
@@ -270,11 +272,21 @@ export async function captureOne(url, outDir, opts = {}) {
           if (e instanceof CaptureError) throw e;
         });
       } else {
-        const markup = await guard(page.content()).catch((e) => {
+        // A frame address is short; anything longer than 2 kB is not one and is never transferred whole.
+        const candidate = await guard(page.evaluate(() => {
+          const short = (s) => (typeof s === 'string' ? s.slice(0, 2048) : null);
+          const frame = document.querySelector('iframe#game_drop');
+          if (frame) return short(frame.getAttribute('src'));
+          const markup = document.querySelector('.iframe_placeholder')?.getAttribute('data-iframe');
+          if (!markup) return null;
+          const template = document.createElement('template');
+          template.innerHTML = markup.slice(0, 8192);
+          return short(template.content.querySelector('iframe')?.getAttribute('src') ?? null);
+        })).catch((e) => {
           if (e instanceof CaptureError) throw e;
-          return '';
+          return null;
         });
-        const frame = itchFrame(url, markup);
+        const frame = itchFrame(url, candidate);
         if (frame) await open(frame);
       }
     }
