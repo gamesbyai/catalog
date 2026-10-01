@@ -22,6 +22,7 @@ play:
   embeddable: true
   platforms:
     - browser
+    - mobile
   controls:
     - On-screen arrow keys (mobile)
 creator:
@@ -51,7 +52,7 @@ media:
     - games/ophidian/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-09-29
+  updated: 2026-10-01
 status: live
 provenance:
   foundVia: scout:awesome-cc0

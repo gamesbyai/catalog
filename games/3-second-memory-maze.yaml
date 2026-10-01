@@ -23,6 +23,7 @@ play:
   embeddable: false
   platforms:
     - browser
+    - mobile
   controls:
     - "Arrow keys / WASD: move"
     - "Swipe: move on touch screens"
@@ -56,7 +57,7 @@ media:
     - games/3-second-memory-maze/shot-2
 dates:
   added: 2026-09-30
-  updated: 2026-09-30
+  updated: 2026-10-01
 status: live
 provenance:
   foundVia: scout:aibgj-4

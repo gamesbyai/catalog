@@ -30,6 +30,7 @@ play:
   embeddable: false
   platforms:
     - browser
+    - mobile
   controls:
     - Mouse or touch to choose actions
     - Tabs to switch screens

@@ -29,6 +29,7 @@ play:
   embeddable: false
   platforms:
     - browser
+    - mobile
   controls:
     - "Left flipper: Left mouse / Z / Left Arrow"
     - "Right flipper: Right mouse / Slash / Right Arrow"

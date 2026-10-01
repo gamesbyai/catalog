@@ -29,6 +29,7 @@ play:
   embeddable: false
   platforms:
     - browser
+    - mobile
   controls:
     - "A / D or arrow keys: move"
     - "W, Space, or Up: jump (hold for height)"

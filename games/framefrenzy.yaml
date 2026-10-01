@@ -23,6 +23,7 @@ play:
   embeddable: false
   platforms:
     - browser
+    - mobile
   controls:
     - Touch
     - Mouse

@@ -31,6 +31,7 @@ play:
   embeddable: false
   platforms:
     - browser
+    - mobile
   controls:
     - Drag to pan
     - Scroll or pinch to zoom

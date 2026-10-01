@@ -30,6 +30,7 @@ play:
   embeddable: false
   platforms:
     - browser
+    - mobile
   controls:
     - Keyboard
     - Mouse
