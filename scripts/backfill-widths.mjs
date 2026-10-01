@@ -13,9 +13,17 @@ import { MEDIA_URL, WIDTHS, r2Credentials, s3Put } from './upload.mjs';
 const NAMES = ['cover', 'shot-1', 'shot-2'];
 const SLUG = /^[a-z0-9]+(?:-[a-z0-9]+)*$/;
 
-/** @returns {Promise<'added' | 'done' | 'no-marker'>} */
-export async function backfillGame(slug, { fetchImpl = fetch, put, width = 960 }) {
+/**
+ * `put` may throw or answer like s3Put ({ ok, error }); either way a failed upload stops the game before its marker is
+ * rewritten, so the site never lists a width that is not there and the next run tries the game again.
+ * @returns {Promise<'added' | 'done' | 'no-marker'>}
+ */
+export async function backfillGame(slug, { fetchImpl = fetch, put: putRaw, width = 960 }) {
   if (!SLUG.test(slug)) throw new Error('bad slug');
+  const put = async (key, file, type) => {
+    const r = await putRaw(key, file, type);
+    if (r && typeof r === 'object' && r.ok === false) throw new Error(`${key}: ${r.error?.message ?? r.error ?? 'upload failed'}`);
+  };
   const r = await fetchImpl(`${MEDIA_URL}/games/${slug}/ready.json`);
   if (r.status === 404) return 'no-marker';
   if (!r.ok) throw new Error(`ready.json for ${slug}: HTTP ${r.status}`);

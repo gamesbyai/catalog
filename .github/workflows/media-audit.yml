@@ -1,0 +1,27 @@
+name: media-audit
+# Weekly check that every game's images are live (scripts/media-audit.mjs): fails on a broken image, a live game
+# without ready.json, or too many live games without a screenshot, so a capture or upload gap never goes unnoticed.
+# Read-only: no secrets; it only reads our own media host. The table of games to fix lands in the run summary.
+on:
+  schedule:
+    - cron: '17 6 * * 1'
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: media-audit
+  cancel-in-progress: true
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          ref: main
+          persist-credentials: false
+      - uses: actions/setup-node@v5
+        with: { node-version: 22 }
+      - run: npm ci --ignore-scripts --no-audit --no-fund
+      - name: Check every listed image on the media host
+        run: node scripts/media-audit.mjs --summary "$GITHUB_STEP_SUMMARY" --max-without-shots 20

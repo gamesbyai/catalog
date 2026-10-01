@@ -584,3 +584,85 @@ test("a run with only the creator's screenshots needs no capture artifact", asyn
   assert.ok(res.uploaded.includes('games/sent/ready.json'));
   assert.match(readFileSync(join(out, 'contact-sheet.md'), 'utf8'), /1 of 1 game captured/);
 });
+
+// --- Frame counts and re-captures of live games ---
+
+/** out/<slug>/ with `n` images (cover first) for each [slug, n], and an entry per slug. */
+async function framesFixture(games) {
+  const root = tmp();
+  const out = join(root, 'out');
+  const dir = join(root, 'games');
+  mkdirSync(dir);
+  for (const [slug, n] of games) {
+    writeFileSync(join(dir, `${slug}.yaml`), `slug: ${slug}\ntitle: ${slug}\nplay: { url: "https://${slug}.example/" }\n`);
+    mkdirSync(join(out, slug), { recursive: true });
+    for (const name of ['cover', 'shot-1', 'shot-2'].slice(0, n)) writeFileSync(join(out, slug, `${name}.png`), await shot());
+  }
+  return { out, games: dir };
+}
+
+/** Our media host, mocked: the live ready.json per slug (an object, a status number, or absent for 404). */
+const media = (live, calls = []) => async (url) => {
+  calls.push(url);
+  const m = /^https:\/\/media\.gamesbyai\.win\/games\/([a-z0-9-]+)\/ready\.json\?live=[a-z0-9]+$/.exec(url);
+  const v = m ? live[m[1]] : undefined;
+  if (typeof v === 'number') return new Response('x', { status: v });
+  return v ? Response.json(v) : new Response('not found', { status: 404 });
+};
+
+test('the contact sheet shows how many images each game kept, and flags games without both screenshots', async () => {
+  const { out, games } = await framesFixture([['full', 3], ['menu', 1], ['half', 2]]);
+  const res = await runUpload({ outDir: out, gamesDir: games, dryRun: true, log: () => {} });
+  assert.deepEqual(res.frames, { full: 3, half: 2, menu: 1 });
+  const sheet = readFileSync(join(out, 'contact-sheet.md'), 'utf8');
+  assert.match(sheet, /3 of 3 games captured, 1 with both screenshots/);
+  assert.match(sheet, /\*\*2 without both screenshots\*\*/);
+  const row = (slug) => sheet.split('\n').find((l) => l.includes(`\`${slug}\``));
+  assert.match(row('full'), /\| 3 of 3 \|/);
+  assert.match(row('menu'), /\| \*\*1 of 3\*\* \|/);
+  assert.match(row('half'), /\| \*\*2 of 3\*\* \|/);
+});
+
+test('--min-frames: a re-capture replaces live images only with at least that many and no fewer than are live', async () => {
+  const { out, games } = await framesFixture([['still-menu', 1], ['now-plays', 3], ['worse', 2], ['new', 2], ['old-marker', 2], ['outage', 3]]);
+  const live = {
+    'still-menu': { names: ['cover'] },
+    'now-plays': { names: ['cover'] },
+    worse: { names: ['cover', 'shot-1', 'shot-2'] },
+    'old-marker': { slug: 'old-marker', files: 19 }, // before `names`: all three are live
+    outage: 503,
+  };
+  const calls = [];
+  const puts = [];
+  const logs = [];
+  const res = await runUpload({ outDir: out, gamesDir: games, only: Object.keys(live).concat('new'), minFrames: 2, fetchImpl: media(live, calls), put: (key) => puts.push(key), log: (l) => logs.push(l) });
+  assert.deepEqual(res.problems, { 'still-menu': 'too-few-frames', worse: 'fewer-frames', 'old-marker': 'fewer-frames', outage: 'live-unknown' });
+  const touched = [...new Set(puts.map((k) => k.split('/')[1]))].sort();
+  assert.deepEqual(touched, ['new', 'now-plays'], 'only better captures replace live images');
+  assert.ok(puts.includes('games/now-plays/shot-2-640.webp'));
+  assert.ok(!calls.some((u) => u.includes('/still-menu/')), 'too few images: no need to ask what is live');
+  const sheet = readFileSync(join(out, 'contact-sheet.md'), 'utf8');
+  assert.ok(sheet.includes('live images kept (too-few-frames)'));
+  assert.ok(sheet.includes('live images kept (fewer-frames)'));
+  assert.ok(sheet.includes('no capture (live-unknown)'));
+  assert.match(logs.join('\n'), /keep still-menu: the capture kept 1 of 3 images, under --min-frames 2/);
+  await assert.rejects(runUpload({ outDir: out, gamesDir: games, minFrames: 4, dryRun: true, log: () => {} }), /invalid --min-frames/);
+});
+
+test('without --min-frames nothing asks what is live (PR captures of new games)', async () => {
+  const { out, games } = await framesFixture([['one', 1]]);
+  const calls = [];
+  const res = await runUpload({ outDir: out, gamesDir: games, fetchImpl: media({}, calls), dryRun: true, log: () => {} });
+  assert.deepEqual(res.problems, {});
+  assert.equal(calls.length, 0);
+});
+
+test('liveNames reads the live marker: names, all three for an old marker, null for none, and throws otherwise', async () => {
+  const { liveNames } = await import('../scripts/upload.mjs');
+  const fetchImpl = media({ a: { names: ['cover', 'shot-1', 'evil'] }, b: { files: 19 }, c: 500 });
+  assert.deepEqual(await liveNames('a', { fetchImpl }), ['cover', 'shot-1']);
+  assert.deepEqual(await liveNames('b', { fetchImpl }), ['cover', 'shot-1', 'shot-2']);
+  assert.equal(await liveNames('none', { fetchImpl }), null);
+  await assert.rejects(liveNames('c', { fetchImpl }), /HTTP 500/);
+  await assert.rejects(liveNames('../x', { fetchImpl }), /bad slug/);
+});
