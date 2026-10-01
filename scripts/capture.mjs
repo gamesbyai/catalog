@@ -746,14 +746,17 @@ export async function captureOne(url, outDir, opts = {}) {
     let taken = 0;
     const snap = async () => {
       for (let attempt = 0; ; attempt++) {
+        const asked = Date.now();
         try {
           const buf = await guard(page.screenshot({ type: 'png', timeout: o.shotTimeout }));
+          trace?.(`screenshot took ${Date.now() - asked} ms`);
           if (o.allFrames) {
             mkdirSync(o.allFrames, { recursive: true });
             writeFileSync(join(o.allFrames, `${pass}-${taken++}.png`), buf);
           }
           return buf;
         } catch (e) {
+          trace?.(`screenshot failed after ${Date.now() - asked} ms`);
           if (e instanceof CaptureError || attempt === 1) {
             if (state.shots.length || state.before.length) {
               state.timedOut = true;
@@ -779,7 +782,11 @@ export async function captureOne(url, outDir, opts = {}) {
         trace?.(`frame ${i + 1} of ${o.startTimes.length} ${shot ? 'taken' : 'lost'} at ${Date.now() - started} ms`);
         if (!shot) return;
         state.shots.push(shot);
-        if (i < o.startTimes.length - 1) await playInput(page, i, o, guard, stop.signal);
+        if (i < o.startTimes.length - 1) {
+          const played = Date.now();
+          await playInput(page, i, o, guard, stop.signal);
+          trace?.(`play input ${i + 1} took ${Date.now() - played} ms`);
+        }
       }
       return;
     }
