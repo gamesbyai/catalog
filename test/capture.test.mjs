@@ -3,6 +3,7 @@ import assert from 'node:assert/strict';
 import { createServer } from 'node:http';
 import { mkdtempSync, mkdirSync, readdirSync, readFileSync, writeFileSync, existsSync } from 'node:fs';
 import { tmpdir } from 'node:os';
+import { chromium } from 'playwright';
 import sharp from 'sharp';
 import { join } from 'node:path';
 import { captureOne, captureSlugs, closeBrowser, throttleFrames, itchFrame, DEFAULTS } from '../scripts/capture.mjs';
@@ -104,22 +105,83 @@ const pngSize = (buf) => ({ width: buf.readUInt32BE(16), height: buf.readUInt32B
 
 test("itchFrame: an itch.io game page gives the game's own frame on itch's CDN, nothing else does", () => {
   const src = 'https://html-classic.itch.zone/html/18045891/index.html?v=1782553893';
-  const placeholder = `<div class="iframe_placeholder" data-iframe="&lt;iframe allowfullscreen=&quot;true&quot; src=&quot;${src}&quot; width=&quot;960&quot;&gt;&lt;/iframe&gt;"></div>`;
-  assert.equal(itchFrame('https://netravelr.itch.io/witchs-familiar', placeholder), src);
-  assert.equal(itchFrame('https://someone.itch.io/game', `<iframe id="game_drop" src="https://html.itch.zone/html/42/Build/index.html"></iframe>`), 'https://html.itch.zone/html/42/Build/index.html');
+  assert.equal(itchFrame('https://fixture.itch.io/game', src), src);
+  assert.equal(itchFrame('https://fixture.itch.io/game', 'https://html.itch.zone/html/42/Build/index.html'), 'https://html.itch.zone/html/42/Build/index.html');
   // Upload ids with a build suffix, and folder names with spaces (sent encoded).
-  assert.equal(itchFrame('https://someone.itch.io/game', '<iframe src="https://html-classic.itch.zone/html/17992902-1817582/index.html?v=1784940635"></iframe>'), 'https://html-classic.itch.zone/html/17992902-1817582/index.html?v=1784940635');
-  assert.equal(itchFrame('https://someone.itch.io/game', '&lt;iframe src=&quot;https://html-classic.itch.zone/html/16619648/Marble Garble/index.html?v=1782564506&quot;&gt;'), 'https://html-classic.itch.zone/html/16619648/Marble%20Garble/index.html?v=1782564506');
+  assert.equal(itchFrame('https://fixture.itch.io/game', 'https://html-classic.itch.zone/html/17992902-1817582/index.html?v=1784940635'), 'https://html-classic.itch.zone/html/17992902-1817582/index.html?v=1784940635');
+  assert.equal(itchFrame('https://fixture.itch.io/game', 'https://html-classic.itch.zone/html/16619648/Marble Garble/index.html?v=1782564506'), 'https://html-classic.itch.zone/html/16619648/Marble%20Garble/index.html?v=1782564506');
   // Only itch.io pages, and only itch's CDN pattern: no other host, scheme or path is ever followed.
-  assert.equal(itchFrame('https://example.com/game', placeholder), null);
-  assert.equal(itchFrame('https://itch.io.example.com/game', placeholder), null);
+  for (const page of ['https://example.com/game', 'https://itch.io.example.com/game', 'not a url']) assert.equal(itchFrame(page, src), null, page);
   for (const bad of [
     'https://html-classic.itch.zone.example.com/html/1/index.html',
     'http://html-classic.itch.zone/html/1/index.html',
+    'https://user:pass@html.itch.zone/html/1/index.html',
+    'https://html.itch.zone:444/html/1/index.html',
     'https://html-classic.itch.zone/other/1/index.html',
     'https://html-classic.itch.zone/html/1/../../x.html',
-  ]) assert.equal(itchFrame('https://someone.itch.io/game', `<iframe src="${bad}"></iframe>`), null, bad);
-  assert.equal(itchFrame('https://someone.itch.io/game', '<p>a downloadable game</p>'), null);
+    `<title>src="${src}"</title>`,
+    '',
+    null,
+    undefined,
+  ]) assert.equal(itchFrame('https://fixture.itch.io/game', bad), null, String(bad));
+});
+
+test('itchFrame: encoded dot segments cannot escape the upload directory after URL normalisation', () => {
+  for (const src of [
+    'https://html.itch.zone/html/42/%2e%2e/%2e%2e/index.html',
+    'https://html-classic.itch.zone/html/42/%2E%2e/%2e%2E/index.html',
+    'https://html.itch.zone/html/42/%2e%2e/43/index.html',
+  ]) assert.equal(itchFrame('https://fixture.itch.io/game', src), null, src);
+  assert.equal(itchFrame('https://fixture.itch.io/game', 'https://html.itch.zone/html/42/sub/%2e%2e/index.html'), 'https://html.itch.zone/html/42/index.html');
+});
+
+test('captureOne: only the game frame is read from an itch.io page, even with a decoy URL in the title', async (t) => {
+  await closeBrowser();
+  const pageUrl = 'https://fixture.itch.io/game';
+  const frameUrl = 'https://html.itch.zone/html/42/index.html';
+  const spacedUrl = 'https://html-classic.itch.zone/html/42/Marble Garble/index.html?v=123';
+  const decoy = 'https://html.itch.zone/html/99/index.html';
+  const placeholder = (markup) => `<div class="iframe_placeholder" data-iframe="${markup.replace(/&/g, '&amp;').replace(/"/g, '&quot;').replace(/</g, '&lt;').replace(/>/g, '&gt;')}"></div>`;
+  const fixtures = [
+    ['game_drop wins over the title and placeholder', `<iframe id="game_drop" src="${frameUrl}"></iframe>${placeholder(`<iframe src="${decoy}"></iframe>`)}`, frameUrl],
+    ['placeholder HTML supports single quotes and spaces', placeholder(`<iframe src='${spacedUrl}'></iframe>`), spacedUrl.replace(/ /g, '%20')],
+    ['placeholder text is not a frame', placeholder(`<!-- src="${decoy}" --><iframe src="${frameUrl}"></iframe>`), frameUrl],
+    ['an unrelated iframe is ignored', `<iframe src="${decoy}"></iframe>`, null],
+    ['an invalid game_drop does not select another frame', `<iframe id="game_drop" src="https://example.com/game.html"></iframe>${placeholder(`<iframe src="${frameUrl}"></iframe>`)}`, null],
+    ['a title alone is ignored', '', null],
+  ];
+  let markup;
+  let page;
+  let navigations;
+  const connect = chromium.connect.bind(chromium);
+  t.mock.method(chromium, 'connect', async (...args) => {
+    const b = await connect(...args);
+    const newContext = b.newContext.bind(b);
+    t.mock.method(b, 'newContext', async (...args) => {
+      const context = await newContext(...args);
+      // Every request is answered locally; these fixtures never contact itch.io or its CDN.
+      await context.route('**/*', (route) => {
+        const req = route.request();
+        if (req.isNavigationRequest() && !req.frame().parentFrame()) navigations.push(req.url());
+        return route.fulfill({ contentType: 'text/html', body: req.url() === pageUrl ? markup : PAGES['/game'] });
+      });
+      context.on('page', (p) => { page = p; t.mock.method(p, 'content'); });
+      return context;
+    });
+    return b;
+  });
+  try {
+    for (const [name, body, frame] of fixtures) await t.test(name, async () => {
+      markup = PAGES['/game'].replace('<title>fixture</title>', `<title>src="${decoy}"</title>`) + body;
+      navigations = [];
+      const res = await captureOne(pageUrl, join(tmp(), 'itch-frame'), { ...FAST, times: [100] });
+      assert.deepEqual(navigations, frame ? [pageUrl, frame] : [pageUrl]);
+      assert.equal(page.content.mock.callCount(), 0, 'the whole page markup is never read');
+      assert.equal(res.ok, true, JSON.stringify(res));
+    });
+  } finally {
+    await closeBrowser();
+  }
 });
 
 const ITCH_TEST = { itchHost: /^127\.0\.0\.1$/ };
