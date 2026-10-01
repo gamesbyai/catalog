@@ -1,7 +1,13 @@
 slug: rimehold
 title: rimehold
-tagline: Submitted by its creator; the description is added during review.
-description: ""
+tagline: Command a frozen stronghold in a single-player strategy game inspired by Warcraft 3 maps.
+description: "Rimehold is a single-player strategy game that runs in the browser and is rendered in 3D. The title and the Warcraft 3 map influence suggest a cold, fortified setting where the player manages a stronghold and directs it against opposing forces.
+
+
+  The design takes its cues from custom maps made for Warcraft 3, so the play leans on the familiar map-scenario style of that scene rather than a conventional campaign. It is built for one player and does not require a mobile device or a partner.
+
+
+  The creator says they handed every design decision to Claude and built the whole thing with Claude Code, using Warcraft 3 maps as a reference point. The result is a project shaped largely by the model's own choices."
 play:
   url: https://malnourishd.itch.io/rimehold
   platforms:
@@ -9,6 +15,7 @@ play:
   embedPermission:
     by: submission
     date: 2026-10-01
+  embeddable: false
 creator:
   name: malny
   handle: malny
