@@ -1,0 +1,58 @@
+slug: undersphere
+title: Undersphere
+tagline: Run and shoot opponents on the inside surface of a hollow sphere.
+description: >-
+  Undersphere is a multiplayer first-person shooter set on the inner surface of
+  a spherical world. Players run across the curved interior, fight each other,
+  and try to outmaneuver opponents while gravity pulls them toward the sphere's
+  shell instead of a flat floor.
+
+
+  The setting shapes everything. A grenade thrown toward the far side of the map
+  stays under the sphere's gravity and travels with believable proportions, so
+  distant targets and overhead arcs become part of the fight. The creator also
+  designed its own movement mechanics, aiming to keep them fair and conventional
+  enough for shooter players.
+
+
+  The game placed 14th of 945 entries at Vibe Jam 2026 and received the Unique
+  Concept award. It runs in the browser on Three.js, and the creator says it was
+  built with Cursor.
+play:
+  url: https://playundersphere.com
+  embeddable: true
+  platforms:
+    - browser
+creator:
+  name: _NoahWhiteson
+  handle: noahwhiteson
+  x: _NoahWhiteson
+made:
+  models: []
+  tools:
+    - cursor
+  aiShare: most
+  source: Vibe Jam 2026 submission form
+  evidence: creator
+tech:
+  engine: threejs
+  multiplayer: online
+genres:
+  - shooter
+  - action
+jam:
+  event: vibe-jam-2026
+  rank: 14
+  entries: 945
+  award: Unique Concept
+media:
+  cover: games/undersphere/cover
+  screenshots:
+    - games/undersphere/shot-1
+    - games/undersphere/shot-2
+dates:
+  added: 2026-10-01
+  updated: 2026-10-01
+status: live
+provenance:
+  foundVia: scout:vibejam-2026

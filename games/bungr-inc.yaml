@@ -1,0 +1,56 @@
+slug: bungr-inc
+title: BUNGR INC.
+tagline: Cook burgers in a cursed kitchen to earn your way to freedom.
+description: >-
+  BUNGR INC. is a kitchen simulator set in a cursed workplace. The goal is to
+  make burgers and, through that work, earn your freedom. Each shift puts you
+  behind the counter, assembling orders and keeping production moving so you can
+  work your way toward getting out for good.
+
+
+  The game pairs the familiar rhythm of a cooking sim with an eerie, atmospheric
+  setting. The cursed world and its dark aesthetic give ordinary burger assembly
+  an unsettling tone, so the kitchen feels like a place you are trapped in
+  rather than a cheerful restaurant where you happen to work.
+
+
+  It was an entry in Vibe Jam 2026, where it placed 11th among 945 entries. The
+  game is built with Three.js and runs in the browser, and the creator's
+  submission names OpenCode as the tool used to make it.
+play:
+  url: https://bungr.net
+  embeddable: true
+  platforms:
+    - browser
+creator:
+  name: JacobFinite
+  handle: jacobfinite
+  x: JacobFinite
+made:
+  models: []
+  tools:
+    - opencode
+  aiShare: most
+  source: Vibe Jam 2026 submission form
+  evidence: creator
+tech:
+  engine: threejs
+  multiplayer: single
+genres:
+  - simulation
+  - casual
+jam:
+  event: vibe-jam-2026
+  rank: 11
+  entries: 945
+media:
+  cover: games/bungr-inc/cover
+  screenshots:
+    - games/bungr-inc/shot-1
+    - games/bungr-inc/shot-2
+dates:
+  added: 2026-10-01
+  updated: 2026-10-01
+status: live
+provenance:
+  foundVia: scout:vibejam-2026

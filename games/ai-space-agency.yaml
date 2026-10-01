@@ -1,0 +1,55 @@
+slug: ai-space-agency
+title: AI Space Agency
+tagline: Build and launch an AI data center into orbit in a space-agency simulation.
+description: >-
+  AI Space Agency is a browser simulation about putting an AI data center into
+  space. The creator compares it to Kerbal Space Program, so a run centers on
+  assembling space hardware and sending it beyond the atmosphere, with the
+  orbiting data center as the goal of the mission.
+
+
+  The premise ties spaceflight to the computing infrastructure behind modern AI,
+  which gives the familiar rocket-building idea a different purpose than
+  exploring planets. It is rendered in 3D with Three.js and is set up to work on
+  mobile devices as well as desktop browsers, so it opens without an install.
+
+
+  It was entered in Vibe Jam 2026, where it placed 64th out of 945 entries. The
+  creator built it with Cursor.
+play:
+  url: https://aispaceagency.com
+  embeddable: true
+  platforms:
+    - browser
+    - mobile
+creator:
+  name: dom_scholz
+  handle: dom-scholz
+  x: dom_scholz
+made:
+  models: []
+  tools:
+    - cursor
+  aiShare: most
+  source: Vibe Jam 2026 submission form
+  evidence: creator
+tech:
+  engine: threejs
+  multiplayer: single
+genres:
+  - simulation
+jam:
+  event: vibe-jam-2026
+  rank: 64
+  entries: 945
+media:
+  cover: games/ai-space-agency/cover
+  screenshots:
+    - games/ai-space-agency/shot-1
+    - games/ai-space-agency/shot-2
+dates:
+  added: 2026-10-01
+  updated: 2026-10-01
+status: live
+provenance:
+  foundVia: scout:vibejam-2026

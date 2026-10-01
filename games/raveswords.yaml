@@ -1,0 +1,60 @@
+slug: raveswords
+title: Raveswords
+tagline: Duel other players online in medieval sword combat set to dance music
+description: >-
+  Raveswords is a multiplayer sword fighting game that runs in the browser.
+  Players step onto a medieval battlefield and fight other people in melee
+  combat, in the spirit of Chivalry: Medieval Warfare. Each round comes down to
+  landing blows with a blade while avoiding the hits coming back at you.
+
+
+  The unusual part is the mix of settings. Grim medieval warfare is paired with
+  dance music, so the clashing of swords happens against a rave-style
+  soundtrack. The game is built with three.js, which keeps the 3D arena running
+  in an ordinary browser tab, and it also supports mobile devices.
+
+
+  Raveswords was an entry in Vibe Jam 2026, where it placed 53rd out of 945
+  entries. According to the creator, the game was built with Claude Code,
+  Anthropic's coding tool, and the project is a small, focused take on online
+  sword duels.
+play:
+  url: https://fight.neets.fun
+  embeddable: true
+  platforms:
+    - browser
+    - mobile
+creator:
+  name: neetsdotfun
+  handle: neetsdotfun
+  x: neetsdotfun
+made:
+  models: []
+  providers:
+    - anthropic
+  tools:
+    - claude-code
+  aiShare: most
+  source: Vibe Jam 2026 submission form
+  evidence: creator
+tech:
+  engine: threejs
+  multiplayer: online
+genres:
+  - action
+  - fighting
+jam:
+  event: vibe-jam-2026
+  rank: 53
+  entries: 945
+media:
+  cover: games/raveswords/cover
+  screenshots:
+    - games/raveswords/shot-1
+    - games/raveswords/shot-2
+dates:
+  added: 2026-10-01
+  updated: 2026-10-01
+status: live
+provenance:
+  foundVia: scout:vibejam-2026

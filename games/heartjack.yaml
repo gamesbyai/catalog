@@ -1,0 +1,59 @@
+slug: heartjack
+title: Heartjack
+tagline: Fight other players in stylized melee duels that reward positioning and timing
+description: >-
+  Heartjack is a stylized melee PvP game that runs in the browser and pits
+  players against each other in close-quarters combat. It sits between action
+  and strategy, so a match is about swinging at the right moment as much as it
+  is about choosing where to stand and how to answer an opponent.
+
+
+  The creator says the project was an attempt to push what AI can produce, and
+  that ambition covers the character models, the animations, the art direction
+  and the overall attitude of the presentation. The look is deliberately
+  stylized rather than realistic, and the visual identity is a central part of
+  what the game offers.
+
+
+  It was entered in Vibe Jam 2026, where it placed 96th out of 945 entries. The
+  creator built it in Three.js using Codex, and the multiplayer focus means
+  every encounter is against another person instead of scripted enemies.
+play:
+  url: https://demov001.vercel.app
+  embeddable: true
+  platforms:
+    - browser
+creator:
+  name: DaraChaww
+  handle: darachaww
+  x: DaraChaww
+made:
+  models: []
+  providers:
+    - openai
+  tools:
+    - codex
+  aiShare: most
+  source: Vibe Jam 2026 submission form
+  evidence: creator
+tech:
+  engine: threejs
+  multiplayer: online
+genres:
+  - action
+  - strategy
+jam:
+  event: vibe-jam-2026
+  rank: 96
+  entries: 945
+media:
+  cover: games/heartjack/cover
+  screenshots:
+    - games/heartjack/shot-1
+    - games/heartjack/shot-2
+dates:
+  added: 2026-10-01
+  updated: 2026-10-01
+status: live
+provenance:
+  foundVia: scout:vibejam-2026
