@@ -2,10 +2,10 @@ slug: vibe-party
 title: Vibe Party
 tagline: Race around a board and win chaotic minigames with cute AI-themed characters
 description: >-
-  The title screen has three buttons: Quick Match, Online Party and Local Party.
-  Quick Match opens a board with four player cards in the corners. P1 is the
-  human player and P2 through P4 are CPU players. Each card starts with 3 tokens
-  and 0 RAM.
+  The title screen offers Quick Match, Online Party and Local Party. A match is
+  played on a board with four player cards in the corners. P1 is the human
+  player and P2 through P4 are CPU players. Each card starts with 3 tokens and 0
+  RAM.
 
 
   The board is two connected rings of gold paths with a few crossing links.

@@ -5,7 +5,7 @@ description: >-
   Sounds Smashing! has you break blocks in time with the music. Each smash adds
   a note to the melody, and the closer your hit lands to the beat, the more
   coins you earn. The blocks are voxel-style structures in an isometric
-  pixel-art setting, and the music uses microtonal tuning.
+  pixel-art setting.
 
 
   A multiplayer mode supports up to 4 players. One player creates a room and
@@ -22,7 +22,7 @@ description: >-
 
 
   The creator built it over two days of nonstop work, drawing inspiration from
-  Donkey Kong Bonanza, Minecraft and a love of rhythm games.
+  Donkey Kong Bonanza and Minecraft.
 play:
   url: https://soundssmashing.com
   embeddable: true

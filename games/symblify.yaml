@@ -4,8 +4,9 @@ tagline: Decode a daily phrase by working out what each symbol instructs you to 
 description: >-
   Each puzzle gives you a short line of words joined by symbols, and every
   symbol is an instruction. You work out what the line says, type the phrase
-  into the answer box and press Enter. A one-line clue sits under the line. You
-  have four guesses, and four empty rows below the box hold your attempts.
+  into the answer box and press the Enter button. A one-line clue sits under the
+  line. You have four guesses, and four empty rows below the box hold your
+  attempts.
 
 
   The practice puzzle, numbered 0, is rated medium and carries two tags,
@@ -30,7 +31,7 @@ play:
     - mobile
   controls:
     - "Keyboard: type your answer"
-    - "Enter: submit guess"
+    - "Enter button: submit a guess"
 creator:
   name: Symblify
   handle: symblify

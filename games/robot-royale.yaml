@@ -10,8 +10,8 @@ description: >-
 
   A panel in the corner tracks the current phase, elapsed time, scrap collected,
   your level, and the level at which the next boss appears, which reads Nv.5 at
-  the start. It also names your equipped weapon. A red health bar runs along the
-  bottom of the screen.
+  the start. It also names your equipped weapon. A red bar runs along the bottom
+  of the screen.
 
 
   Shift dashes, and the panel shows when the dash is ready again. Red medical
