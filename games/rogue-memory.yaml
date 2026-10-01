@@ -3,23 +3,29 @@ title: Rogue Memory
 tagline: Crawl through a deleted AI's mind, recovering memories and escaping the
   Architect.
 description: >-
-  Rogue Memory is a first-person dungeon crawler with retro raycasting visuals.
-  You play GHOST.EXE, a deleted program surviving in a buffer overflow. Each run
-  generates new maps across five layers. You find a key fragment, reach the
-  exit, and descend toward the system kernel, where the Architect waits.
+  You are GHOST.EXE, an AI that was deleted and survives as a fragment, walking
+  a first-person raycast maze built from its own memory. Every run generates a
+  new map, and the run goes through five layers, from memory banks down to the
+  system kernel.
 
 
-  Combat is turn-based: attack, scan for weaknesses, or retreat. Scanning
-  exposes an enemy's vulnerability and strengthens your next strike. Nine enemy
-  types patrol, chase on sight, hit harder over time, or heal themselves, and
-  breaking line of sight can shake them off. Running is often smarter than
-  fighting.
+  Each layer asks for the same job: find the glowing key fragment, which unlocks
+  the exit, then reach the exit to go deeper. Your integrity meter is your
+  health. Echo chambers drain it slowly, traps cost a lot, and enemies cost
+  more. Avoiding a fight is often an option.
 
 
-  The story arrives through more than 25 recovered memory logs, and three
-  endings depend on how many fragments you gather. Sound effects are generated
-  in real time. The creator says it was made entirely with Claude, and the
-  jam-version notes mention difficulty levels and a Phase Shift move.
+  Combat is turn-based, with three choices: attack, scan, or retreat. A scan
+  exposes an enemy's weak point and strengthens your next hit. Nine enemy types
+  include patrollers, sight-based chasers, attackers that escalate, parasites
+  that heal themselves, and the Architect at the bottom. Chasers head for where
+  they last saw you, so breaking line of sight shakes them.
+
+
+  More than 25 memory logs tell the story as you collect them, and one of three
+  endings depends on how many fragments you gathered before escaping. The start
+  screen offers difficulty levels and a top-runs list showing score, cause of
+  death, level, fragments, kills, and steps.
 play:
   url: https://quantumcodemonk.itch.io/rogue-memory
   embeddable: false
@@ -59,7 +65,7 @@ media:
     - games/rogue-memory/shot-2
 dates:
   added: 2026-09-30
-  updated: 2026-09-30
+  updated: 2026-10-01
 status: live
 provenance:
   foundVia: scout:aibgj-1

@@ -3,25 +3,28 @@ title: A Low Poly Dungeon Game
 tagline: Fight skeletons and find three keys in a seeded first-person dungeon to
   claim the crown.
 description: >-
-  A Low Poly Dungeon Game is a first-person dungeon crawler with
-  PlayStation-style visuals. Each run starts from a seed, which you can type in
-  or randomize, and that seed builds a labyrinth of rooms, locked gates, and
-  skeletons. Three zones are sealed in order by Bronze, Silver, and Gold gates,
-  and each key is in a chest in the zone before it.
+  Every dungeon is built from a seed, and the same seed always produces the same
+  layout, boss included. Type one on the title screen or hit Randomize, then
+  enter a first-person labyrinth of rooms, locked gates, and skeletons, drawn in
+  a PSX style with low-poly models and posterized light.
 
 
-  Combat rewards timing. A tap is a quick slash, holding the button charges a
-  heavy chop, and a guard only parries if raised at the right moment. Stamina
-  limits every action. Armored skeletons hit harder, and some throw a slow crush
-  that breaks through a guard. Health potions and fireball scrolls help. The
-  Gold key opens the Grand Hall, where the boss cannot be outrun, and the crown
-  in the vault ends the run.
+  The dungeon has three zones, each sealed by a gate. Bronze, Silver, and Gold
+  keys sit in chests in the zone before each gate. The Gold key opens the Grand
+  Hall, where the gate shuts behind you. Defeat the boss, take the key to the
+  treasure vault, and pick up the crown to end the run.
 
 
-  It was made in Godot 4.6 with art from several itch.io asset packs. The
-  creator discloses AI assistance for code and sounds, with generated audio
-  mixed with CC0 packs. Difficulty can be changed mid-run, and mobile controls
-  are included.
+  Combat uses stamina. A tap is a quick slash, holding the attack button charges
+  a heavy chop, and a guard raised at the right moment parries. Armored
+  skeletons hit harder, and some throw a slow crush that breaks through a guard,
+  so you step out of the way. Health potions restore health, and scrolls fuel a
+  fireball in your left hand.
+
+
+  Difficulty can be changed mid-run, and all keys can be remapped in settings.
+  Touch controls add a virtual stick, drag-to-look, and on-screen attack and
+  guard buttons. The creator lists the average session as a few minutes.
 play:
   url: https://fynbosexplorer.itch.io/a-low-poly-dungeon-game
   embeddable: false

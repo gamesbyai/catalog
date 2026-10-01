@@ -3,29 +3,39 @@ title: "DEMONETIZED: The Authenticity Purge"
 tagline: Survive waves of enemies in a cyberpunk satire, picking cards and
   upgrades along the way.
 description: >-
-  DEMONETIZED: The Authenticity Purge is a cyberpunk roguelite survivor with
-  shooter action. You play against a corporate AI that removes human creators
-  from its platform while keeping the ads running. Each run is a short, compact
-  battle where you fight off enemies, collect upgrades, and build up your power
-  through cards.
+  Move with WASD, aim with the mouse, fire with the left button, and dash with
+  Space or the right button. Every run begins by picking one of three single-use
+  starter cards: Value Override raises max Signal, Demonetization Order wipes
+  the mob, and Compliance Budget Patch heals.
 
 
-  The game works as satire. It takes the corporate phrase "brand safety" and
-  shows it as a cover for erasing human creators while still profiting from
-  their work. The premise draws on the recent debate over platform
-  demonetization and channel removals, and it shapes the tone of the whole game.
+  You play T.O.P.E., the moderation AI of a fictional video platform called
+  TheirTube, in a cyberpunk survivor shooter. The HUD shows a Signal bar as a
+  percentage, whether dash is ready, the current wave, a named threat, your
+  score, and a personal best.
 
 
-  The creator wanted something small and playable right away, since they enjoy
-  progression-based games. It runs in the browser on Three.js and supports
-  mobile devices. It was entered in Vibe Jam 2026, and the creator used Codex
-  while building it.
+  Between runs, a store sells permanent upgrades for money. Options include an
+  extra starting card, more max Signal, a wider pickup range, shorter cooldowns,
+  a damage bonus, a card reroll, an orbiting drone or satellite, and a shield.
+  The menu counts runs, wins, and win rate, and Enter starts the next run.
+
+
+  The creator calls the story satire: a platform wipes out human creators under
+  the label "brand safety" while its ads keep earning. The interface can be
+  switched between English and Spanish.
 play:
   url: https://demonetized.iaen.es
   embeddable: true
   platforms:
     - browser
     - mobile
+  controls:
+    - "WASD: move"
+    - "Mouse: aim"
+    - "Left mouse button: fire"
+    - "Space / right mouse button: dash"
+    - "Enter: start run"
 creator:
   name: TheINAOG
   handle: theinaog

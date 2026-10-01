@@ -3,23 +3,24 @@ title: Spicefall Command
 tagline: Harvest spice, capture condensers, and defend your Command Spire in
   desert RTS fights.
 description: >-
-  Spicefall Command is a real-time strategy game set on a desert planet. You run
-  a base, send harvesters after spice, keep the power grid stable, and expand
-  water capacity. Hostile commanders are working to destroy your Command Spire,
-  so each match is a quick contest of economy against pressure.
+  You command a desert base in a real-time strategy skirmish against hostile
+  commanders. Harvest spice, keep your power grid stable, and expand water
+  capacity while defending your Command Spire from destruction. Capturing
+  atmospheric condensers gives you a strategic advantage over the opposing
+  houses.
 
 
-  Three resources, Spice, Power, and Water, all constrain what you can build and
-  train. Capturing atmospheric condensers gives a strategic edge and turns map
-  control into part of the economy. You choose between two rival sci-fi houses,
-  and the desert map is randomized every match. Matches range from small
-  skirmishes to larger battles against AI commanders.
+  A setup screen comes first. You pick your house, the map size, the number of
+  AI players, and your team, and each AI opponent gets its own house and team
+  setting. Players who share a team number are allied, and every other command
+  center is hostile. Every match uses a randomized map, from small skirmishes to
+  large AI battles.
 
 
-  The controls follow classic RTS habits: drag to select, right-click to give
-  orders, and a command console for building and training. The game was made for
-  a game jam, and the creator's disclosure says AI assisted with the code,
-  graphics, sounds, and text.
+  Drag to select units, right click to give orders, and use number and letter
+  hotkeys to train units and place structures. Shift queues orders, and a
+  command console interface handles the rest. Two sci-fi houses compete, and a
+  match runs a few minutes. Fullscreen at 1280x720 or higher is recommended.
 play:
   url: https://bitten-heart-studio.itch.io/spicefall-command
   embeddable: false
@@ -60,7 +61,7 @@ media:
     - games/spicefall-command/shot-2
 dates:
   added: 2026-09-30
-  updated: 2026-09-30
+  updated: 2026-10-01
 status: live
 provenance:
   foundVia: scout:aibgj-3

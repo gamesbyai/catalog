@@ -3,21 +3,23 @@ title: open case
 tagline: Read evidence, spot contradictions, and answer six questions to close a
   homicide case.
 description: >-
-  Open Case is a murder mystery about a reopened homicide investigation. The
-  player goes through the case evidence, looks for statements and facts that
-  contradict each other, and fills in a Casebook made up of six answers. Once
-  the Casebook is complete, the final report goes in.
+  You play a investigator handed a reopened homicide file. Cole Vance, a
+  winemaker's brother, washed up on the Sonoma Coast in dive gear, and the
+  sheriff ruled it an accidental free-diving drowning. Your task is to confirm
+  or overturn that ruling.
 
 
-  The structure keeps the focus on deduction. Instead of chasing action, the
-  player compares the material on hand and works out who the killer is from what
-  does not add up. The six-answer Casebook gives each run a clear checklist to
-  work toward and a defined end point.
+  The evidence is split into 18 files in a side dock: a case briefing, persons
+  of interest, coast photos, cellar logs, sale and alibi documents, and witness
+  messages. Each source tells part of the story, so you cross-check the timeline
+  and look for contradictions. The briefing points you to the coast first.
 
 
-  The game was entered in Vibe Jam 2026. The creator's submission lists Claude
-  Code as the tool used to build it, and it is set up to work on mobile as well
-  as desktop.
+  A Casebook sits beside the files with six dropdown answers, grouped under
+  physical and proof. Questions cover what Cole Vance died from, where he really
+  died, what the beach scene was, the fatal tell, and who lied for Marcus Vance,
+  the half-brother and prime suspect. Once the answers are filled in, you send
+  your final report.
 play:
   url: https://case.stephapp.com
   embeddable: true

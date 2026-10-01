@@ -2,27 +2,28 @@ slug: ride-tales
 title: Ride Tales
 tagline: Choose any place on Earth and drive through quests and hidden treasures.
 description: >-
-  Pick a spot anywhere on Earth, drop in, and head out in a vehicle to explore
-  the surroundings. Ride Tales is an open-world driving game set on the real
-  globe, so the map is wherever you choose to start rather than one fixed world.
-  That freedom to start anywhere is the main draw.
+  The first screen shows a low-poly white hatchback parked on a coastal road,
+  with blue sea on one side and pale apartment blocks and rounded trees on the
+  other. A row of buttons sets the time of day: morning, day, sunset, night or
+  now. A Next button moves on.
 
 
-  The creator describes it as a way to bring the feeling of travel and discovery
-  into your home. It was built with Claude Code on Three.js and ranked 31st of
-  945 entries in Vibe Jam 2026.
+  Before driving, you pick a spot anywhere on Earth and drop in. The tagline on
+  the title screen describes the game as driving, playing and exploring the real
+  world, and the arrow keys steer the car.
 
 
-  Once you are out there, you turn up quests to complete, hidden treasures to
-  track down, and legendary rides to discover. The driving mixes action,
-  adventure, and racing, and it takes cues from open-world driving games like
-  GTA.
+  The creator describes an open world with quests, hidden treasures and
+  legendary rides. They say it combines their love of travel with open-world
+  driving games like GTA, so you can roam and discover places from home.
 play:
   url: https://ridetales.lumaris.works
   embeddable: true
   platforms:
     - browser
     - mobile
+  controls:
+    - "Arrow keys: drive"
 creator:
   name: Aurelien_Gz
   handle: aurelien-gz
@@ -54,7 +55,7 @@ media:
     - games/ride-tales/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-09-29
+  updated: 2026-10-01
 status: live
 provenance:
   foundVia: scout:vibejam-2026

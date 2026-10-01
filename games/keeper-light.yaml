@@ -3,28 +3,29 @@ title: Keeper Light
 tagline: Upgrade your boat and lighthouse by day, then defend the light through
   each night's waves.
 description: >-
-  Keeper Light is a survival action game built around a lighthouse. Each run
-  alternates between daytime and night. During the day you spend your resources
-  on upgrades for your boat and for the lighthouse beam. When night falls, waves
-  of enemies arrive, and you have to hold them off so the lighthouse stays
-  standing.
+  The game opens on a small green island on Day 1, in a Planning phase with an
+  8h timer at the top. A red-and-white lighthouse stands on the island, a wooden
+  boat is moored at the shore, and a keeper character waits beside a ring marker
+  with an F prompt for the Boat Yard.
 
 
-  The nights grow harder as the run goes on, so the choices made in daylight
-  decide how long the light survives. The split between preparing and defending
-  gives the roguelite structure a clear rhythm, and the beam upgrades make the
-  lighthouse an active part of the defense rather than just something to
-  protect.
+  Daylight hours go to upgrading your boat and the lighthouse beam. A panel on
+  the right tracks stores of scrap, fuel, glass, copper and relics, along with
+  kills, a BPs counter, fuel, boat condition and the current beam type, which
+  starts as Sweep.
 
 
-  The game was entered in Vibe Jam 2026 and runs on Three.js. The creator
-  describes it as a first game made for a game jam and says it was built with
-  Cursor.
+  Once night falls, enemy waves escalate and the goal is to keep the lighthouse
+  from falling. A Keeper Light bar at top left starts at 1000 of 1000, and a
+  circular minimap in the bottom right corner shows the lighthouse and nearby
+  markers.
 play:
   url: https://vibejam.peterrock.dev
   embeddable: true
   platforms:
     - browser
+  controls:
+    - "F: use Boat Yard"
 creator:
   name: PetrSeifer87103
   handle: petrseifer87103

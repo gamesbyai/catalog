@@ -2,23 +2,24 @@ slug: marble-garble
 title: MARBLE GARBLE
 tagline: Roll a marble across hazardous terrain and collect all the money in each level.
 description: >-
-  MARBLE Garble is a 3D marble platformer in which you roll and steer a ball
-  through a series of levels. Each level asks you to collect all the money to
-  advance. Bottomless pits, lava, and cacti are waiting for any wrong move, and
-  a quick restart puts you back at the start.
+  A red marble sits on a dark, walled grid scattered with gold coins, black
+  blocks and open pits ringed in orange. You roll it with the keyboard, building
+  momentum to collect every coin on the board. Collecting them all advances you
+  to the next level.
 
 
-  The game has 50 procedurally generated levels spread across five themed
-  worlds, and the surfaces change how the marble behaves. Ice is slippery, while
-  desert sand adds heavy friction, so momentum needs constant attention. Enemies
-  such as hovering UFOs and forest snakes add moving threats. Music comes from
-  Creative Commons and royalty-free sources.
+  The game has 50 procedurally generated levels across five worlds. Surfaces
+  change how the marble moves: ice is slippery, while desert sand adds heavy
+  friction. Bottomless pits, lava and cacti end a run on contact, and enemies
+  such as hovering UFOs and forest snakes patrol the levels.
 
 
-  Designer Daniel Borge Kristensen credits Gemini and Claude as technical
-  collaborators, and the game is built with Three.js. The AI disclosure
-  describes it as AI assisted, with help on the code. It placed fourth among 29
-  entries in the AI Browser Game Jam 1.
+  The title menu offers a New Game button, a High Score list, and two
+  checkboxes: one turns enemies on or off, the other adds a total game timer for
+  speedrunning. A progress bar at the top tracks how close you are to unlocking
+  the next world, and the HUD shows your level and coin count. Press R to
+  restart a level after a fall or when you get stuck, and Esc to pause. Sessions
+  run a few minutes.
 play:
   url: https://daniel-bk.itch.io/marble-garble
   embeddable: false
@@ -61,7 +62,7 @@ media:
     - games/marble-garble/shot-2
 dates:
   added: 2026-09-30
-  updated: 2026-09-30
+  updated: 2026-10-01
 status: live
 provenance:
   foundVia: scout:aibgj-1

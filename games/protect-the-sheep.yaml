@@ -2,22 +2,22 @@ slug: protect-the-sheep
 title: Protect the Sheep
 tagline: Build towers to hold off thirty-five waves of enemies and keep one sheep alive.
 description: >-
-  Protect the Sheep is a tower defense game in which the player guards a single
-  sheep against thirty-five waves of attackers. Each run is a matter of placing
-  towers along the enemy route and choosing from six tower archetypes, adjusting
-  the defense as the waves get harder. If the sheep survives to the end, the run
-  is won.
+  Build towers with gold to stop monsters before they reach the sheep in its
+  fenced pen. You start with 100 gold, and the first tower in the bottom bar is
+  the Archer at 25 gold. A countdown launches each wave, or you can press Start
+  wave to call it early.
 
 
-  The game draws on the classic Warcraft III tower defense maps its creator
-  loved as a kid. That heritage shapes its structure: a fixed wave count, a
-  variety of tower roles and a single thing to protect. The six archetypes give
-  the player real choices about how to spend resources and where to build.
+  The sheep has 100 HP, shown at the top left, and the goal is to keep it alive
+  through all thirty-five waves. There are six tower archetypes. An Upgrades
+  menu sits beside the gold counter, and plus and minus buttons change the game
+  speed. Music and sound effects each have a volume slider.
 
 
-  It runs in the browser on Three.js and works on mobile as well as desktop. It
-  also has multiplayer support. The creator built it with Claude Code and
-  entered it in Vibe Jam 2026.
+  The main menu offers Play Solo, Play vs AI, Host Game and Join Game, so you
+  can also play against another player online. A short tutorial introduces the
+  sheep and the basics on first load. The creator based it on old Warcraft III
+  tower defense maps loved in childhood.
 play:
   url: https://protect-the-sheep.henrikvilhelmberglund.com
   embeddable: true

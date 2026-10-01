@@ -3,24 +3,28 @@ title: TECHNICAL DEBT
 tagline: Juggle groceries, debt, and clutter for a family chasing a vacation,
   then restart.
 description: >-
-  TECHNICAL DEBT is a dark-comedy resource management game presented as a
-  cheerful imitation of an old family computer. After a layoff, you keep a
-  household afloat by buying groceries, keeping promises to Deborah and DJ, and
-  charging needs to earn PALM Points toward a beach getaway. Reaching 100,000
-  points ends a run.
+  The aim is to collect 100,000 PALM Points before the family's debt catches up.
+  You play a parent laid off after an employer automated the job. Putting
+  household needs on credit earns points toward a vacation package, and hitting
+  the total shows who actually goes on the trip.
 
 
-  Choices carry risk: pay more for reliable goods, or buy discount items that
-  may arrive late or barely count as goods. Purchases pile up at home, so you
-  sell extras through Baylist before the boxes fill every room. Declaring
-  bankruptcy is part of the design: the first one is meant to happen, and
-  permanent lessons carry into the next attempt.
+  Each purchase is a choice between costly goods that show up reliably and cheap
+  ones that might be late or barely count as goods. Orders accumulate as boxes,
+  so you resell what you don't need on Baylist before storage runs out. Cash,
+  credit, storage, and your standing with Deborah and DJ all need watching.
 
 
-  The creator says Codex handled programming, testing, and content drafting,
-  with OpenAI image generation for artwork, Suno for music, and ElevenLabs for
-  sound sources edited by hand. It was made for AI Browser Game Jam 4 and ranked
-  third of 126 entries.
+  Bankruptcy is built into the loop. You declare it, carry over permanent
+  lessons, and restart knowing more about how the system works. According to the
+  creator, the first bankruptcy is intended and shows how progression works.
+
+
+  The screen imitates an old family computer with a CRT filter and 1-bit art,
+  with dark comedy throughout. Tabs cover MailBox, BUYMORE, Haulu, Baylist,
+  Vantage One, and Lessons. Red blinking badges flag unread mail and actions
+  waiting on you. A movable jukebox plays music, and the menu bar adjusts sound,
+  CRT strength, and reduced motion, and offers a full reset.
 play:
   url: https://oblongoolong.itch.io/technical-debt
   embeddable: false
@@ -58,7 +62,7 @@ media:
     - games/technical-debt/shot-2
 dates:
   added: 2026-09-30
-  updated: 2026-09-30
+  updated: 2026-10-01
 status: live
 provenance:
   foundVia: scout:aibgj-4

@@ -3,26 +3,32 @@ title: Escape From Xibalba
 tagline: Crawl through a procedural dark maze, light torches, steal relics and
   survive bosses.
 description: >-
-  Escape From Xibalba is a first-entry-into-darkness maze crawl set in Xibalba,
-  the Maya underworld. Each run generates a new maze. You move through its
-  corridors lighting torches, taking relics, and facing bosses, all while
-  looking for an exit that may not exist.
+  You crawl through a procedurally generated dark maze in Xibalba, lighting
+  torches, taking relics and surviving boss fights. The game's blurb frames each
+  of these as one step toward a way out that may not exist.
 
 
-  The procedural layout means the dark corridors change from run to run, and
-  light is part of the tension: torches are how you push back the gloom. Relics
-  and boss encounters give the crawl clear milestones, and the premise keeps a
-  sense of dread about whether escape is even possible.
+  Move with the arrow keys. Z or X attacks, and holding the button down gives a
+  strong attack instead of a quick one. Press E to read a sign or open a chest,
+  and ESC to pause. R rotates the camera, and plus and minus zoom in and out.
 
 
-  The game was built in Three.js as an entry in Vibe Jam 2026. The creator used
-  Claude Code and said they had always wanted to make a game and treated the jam
-  as the push to finally do it.
+  The title screen lists these keys over dark brick walls and rows of carved
+  face glyphs, with the line "The lords of death are waiting." A click starts
+  the game. The creator says they had always wanted to make a game and treated
+  the jam as the excuse to finally do it. The source code is linked on GitHub.
 play:
   url: https://xibalba.monkeyscript.com
   embeddable: true
   platforms:
     - browser
+  controls:
+    - "Arrow keys: move"
+    - "Z / X: attack (hold for strong attack)"
+    - "E: read sign / open chest"
+    - "R: rotate camera"
+    - "+ / -: zoom in / out"
+    - "ESC: pause"
 creator:
   name: fmatzdorf
   handle: fmatzdorf

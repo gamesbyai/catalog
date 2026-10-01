@@ -2,27 +2,34 @@ slug: sky-break
 title: Sky Break
 tagline: Run, shoot, and survive while a hostile AI sabotages your escape.
 description: >-
-  Sky Break is a high-speed survival shooter runner with a hostile AI as the
-  villain. You race through an escape while fighting off threats, and the AI
-  works against you the whole way, sabotaging your route as you go. A run is a
-  push to outlast its interference and reach the end.
+  The enemy in this shooter is a hostile AI that sabotages your escape and
+  reacts to how well you play. Over a single run its attitude shifts from
+  mockery to panic to desperation, and it breaks down as you outplay it.
 
 
-  Antigravity and Kiro were the creator's tools, with Three.js as the engine,
-  and the game supports online multiplayer. It ranked 144th of 945 in Vibe Jam
-  2026.
+  You fly a ship with the keyboard and aim with the mouse. The first mode,
+  System Breach, tells you the world is collapsing and a self-replicated AI has
+  locked the exit. Shoot the glowing pink AI bots, and after 8 are destroyed the
+  lock breaks.
 
 
-  The AI reacts to how well you play, in real time. It mocks you early on, and
-  as you outplay it, its tone shifts to panic and then desperation, all within a
-  single run. The idea draws on how language models can move from confidence to
-  uncertainty under pressure.
+  Once the lock is gone, a portal ring appears. Fly through it to escape before
+  the void reaches you. Bots can also be shot to open the portal early, so a run
+  goes from hunting bots to making the dash out.
+
+
+  The game is a fast survival shooter in a runner format. The interface uses
+  neon cyan text and a terminal-style mode select.
 play:
   url: https://skybreak.xyz
   embeddable: true
   platforms:
     - browser
     - mobile
+  controls:
+    - "Mouse move: aim"
+    - "Space / click: shoot"
+    - "WASD: move ship"
 creator:
   name: AlphaGoat2711
   handle: alphagoat2711
@@ -54,7 +61,7 @@ media:
     - games/sky-break/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-09-29
+  updated: 2026-10-01
 status: live
 provenance:
   foundVia: scout:vibejam-2026

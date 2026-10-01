@@ -3,28 +3,35 @@ title: SKY WALKER
 tagline: Keep your balance on a tightrope above a neon city while storms and
   wind push you off.
 description: >-
-  SKY WALKER puts you on a tightrope strung high above a neon-lit cyberpunk
-  city. You play a wire walker working your way forward while keeping the
-  balance pole centered. Each step is a small fight against the pull of gravity,
-  and one bad lean can end the run.
+  A tightrope stretches over a neon-lit cyberpunk city, and a walker crosses it
+  while you keep a balancing pole centered. Press W or Up once to start. After
+  that the walker moves forward on his own, so the only job left is staying
+  upright.
 
 
-  The creator drew on the tension of real high-wire walkers and aimed for
-  something demanding and frustrating on purpose. They state that it was made
-  with the Gemini app, and it runs on Three.js. It ranked 126th of 945 in Vibe
-  Jam 2026.
+  Use A and D or the left and right arrows to correct your balance. Storms and
+  unpredictable winds push against you, and the weather turns more violent as
+  you advance. The first stage is labeled Level 1: Calm.
 
 
-  The core mechanic is deliberately simple, so the pressure comes from around
-  you. Storms grow more violent the farther you get, and unpredictable gusts
-  shove you off center. Below, a procedurally generated cityscape glows to sell
-  the vertigo.
+  The screen tracks distance walked in meters along with your best distance, a
+  heart icon, the current stage, and a live wind speed reading. A leaderboard
+  button sits beside the start button. The city behind the rope is generated
+  procedurally, with dark towers and red and cyan lighting.
+
+
+  The creator drew on the tension of real high-wire walkers and built the game
+  around one simple mechanic, keeping the pole centered, with a deliberate lean
+  toward frustrating difficulty.
 play:
   url: https://sky-walker.xyz
   embeddable: true
   platforms:
     - browser
     - mobile
+  controls:
+    - "W / Up: start walking"
+    - "A / D or Left / Right: balance"
 creator:
   name: iboualissouf
   handle: iboualissouf
@@ -55,7 +62,7 @@ media:
     - games/sky-walker/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-09-29
+  updated: 2026-10-01
 status: live
 provenance:
   foundVia: scout:vibejam-2026

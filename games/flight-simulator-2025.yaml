@@ -2,26 +2,37 @@ slug: flight-simulator-2025
 title: Flight Simulator 2025
 tagline: Take off, fly over a shared world and dogfight other pilots online.
 description: >-
-  Each session of Flight Simulator 2025 begins with a takeoff into one shared 3D
-  world. From there it is an online flight game: you fly over the landscape
-  alongside other players. Every other aircraft you see is flown by a real
-  person, not by the computer.
+  Type a name and join to spawn on an airport runway with the throttle at 0%.
+  Raise it with W, roll and pitch with the arrow keys, and use A and D for the
+  rudder. Take off into a world shared with other players, who can be dogfighted
+  in the air. Space shoots missiles.
 
 
-  Meet another pilot in the air and you can turn the flight into a dogfight.
-  That puts the game between simulation and action, with open flying and
-  player-versus-player combat in the same sky, and each encounter depends on who
-  happens to be up there with you.
+  An on-screen mission list gives three goals: shoot down all the balloons,
+  shoot down other planes, and fly to space. The HUD tracks health, score,
+  altitude, speed, throttle and vertical speed. A radar sits in the lower right,
+  and a small inset view shows the scene ahead.
 
 
-  According to its README, the creator used Cursor and Grok 3 for both the code
-  and the 3D scene. Three.js renders the landscape and the aircraft in the
-  browser, and the whole thing is online multiplayer from the first takeoff.
+  The world is low-poly. It has an airport with a control tower, houses, pine
+  trees, a snowy mountain, a castle, blimps, a flying saucer and birds. A
+  scrolling airport weather report runs along the top of the screen. Landing
+  gear, engine, sound and camera view can be toggled, and chat and a leaderboard
+  are available.
 play:
   url: https://fly.pieter.com
   embeddable: true
   platforms:
     - browser
+  controls:
+    - "W/S: throttle up/down"
+    - "Left/Right arrows: roll"
+    - "Up/Down arrows: pitch"
+    - "A/D: rudder left/right"
+    - "Space: shoot missiles"
+    - "Shift: SuperTURBO XXL boost"
+    - "G: landing gear up/down"
+    - "T: chat"
 creator:
   name: Pieter Levels
   handle: levelsio
@@ -52,7 +63,7 @@ media:
     - games/flight-simulator-2025/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-09-29
+  updated: 2026-10-01
 status: live
 provenance:
   foundVia: scout:awesome-cc0

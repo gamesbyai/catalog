@@ -2,27 +2,37 @@ slug: night-drop
 title: Night Drop
 tagline: Fly a tiny delivery drone through a dark apartment without waking the cat
 description: >-
-  Night Drop is a 3D courier game that runs from a single HTML file. You pilot a
-  drone about the size of a cookie through a giant apartment at night, carrying
-  deliveries from place to place while keeping quiet enough that the household
-  cat stays asleep.
+  A shift is a run of timed courier jobs, flown as a drone the size of a cookie
+  through a dark apartment at 3 a.m. Touch the honey beam to pick up a parcel,
+  then carry it to the mint beam. The countdown begins when you grab the parcel.
 
 
-  The scale is the hook: ordinary rooms become large spaces to cross, and the
-  sleeping cat turns a simple delivery route into a stealth problem. Flying
-  carefully matters as much as flying fast, since the goal is to finish the job
-  without disturbing anything.
+  Faster drop-offs pay bigger tips. A late one pays half and resets your streak.
+  Each order pairs an item, such as an AA battery, a sugar cube, a lost earring,
+  a Lego brick or a cat treat, with a drop spot in a different zone. There are
+  15 spots in total.
 
 
-  The whole game is one self-contained page on GitHub, so it needs no install.
-  According to the creator's README, the room is built at load time from simple
-  shapes and canvas textures with three.js, with no model or image files. Grok
-  4.7 supplied the ideas and prompts, and Claude wrote the code.
+  Hot burners push the drone around and the ceiling fan knocks it down. The cat
+  sleeps on the sofa, and a status label and noise meter in the corner track
+  whether it is awake. Keep away for a few seconds and it dozes off again. On
+  long shifts it relocates to the table and the counter.
+
+
+  The screen shows your money, deliveries, streak, speed, altitude, a minimap
+  and the distance to the current target. Your best shift is saved in the
+  browser. All the furniture is generated from basic shapes when the page loads.
 play:
   url: https://gipppp121.github.io/buzzdrop
   embeddable: true
   platforms:
     - browser
+  controls:
+    - "WASD: fly and strafe"
+    - "Space: climb"
+    - "Shift: dive"
+    - "Mouse: look (click to lock)"
+    - "Touch: left side moves, right side looks"
 repo: https://github.com/Gipppp121/buzzdrop
 license: MIT
 creator:
@@ -53,7 +63,7 @@ media:
     - games/night-drop/shot-2
 dates:
   added: 2026-09-30
-  updated: 2026-09-30
+  updated: 2026-10-01
 status: live
 provenance:
   foundVia: scout:github

@@ -2,26 +2,30 @@ slug: bumper-king
 title: Bumper King
 tagline: Ram rival bumper cars, grab powerups, and fight to hold the crown.
 description: >-
-  Bumper King is an arcade bumper car battle played in a 3D arena. You steer
-  your car into rivals to knock them around, pick up powerups, and steer clear
-  of hazards. The goal in each run is to come out on top and wear the crown.
+  You drive a bumper car around a tiled arena, ramming rival cars to knock them
+  out and collecting glowing pickups to grow bigger and stronger. The goal is to
+  climb the scoreboard, become King, and hold the crown.
 
 
-  The design borrows the growth-and-domination loop of Snake.io and applies it
-  to bumper cars, so the pace stays quick and a bit chaotic. Multiplayer is
-  supported, and the game is built to run on mobile as well as desktop. It
-  entered Vibe Jam 2026, where it ranked 631 out of 945 entries.
+  Four powerups appear in the arena. Speed gives a boost, Mega Bump makes your
+  hits stronger, Shield protects you, and Magnet blasts nearby cars away.
+  Hazards also sit in the arena and have to be dodged. The creator describes the
+  loop as bumper cars mixed with the growth-and-domination pattern of Snake.io.
 
 
-  The creator wanted something that feels instantly fun, drawing on bumper cars
-  and the Snake.io style of escalating dominance. The game is built with
-  Three.js.
+  You start from a title screen where you enter a username and press Enter
+  Arena. The screen also shows your best score. In the arena, a ten-row
+  scoreboard on the left ranks you against named rival cars, and a side panel
+  lists the powerups and the four basics: drive, bump, grow, survive.
 play:
   url: https://bumper-king.vercel.app
   embeddable: true
   platforms:
     - browser
     - mobile
+  controls:
+    - "WASD / arrows: drive"
+    - "Touch joystick: drive"
 creator:
   name: xwerux
   handle: xwerux

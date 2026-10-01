@@ -2,26 +2,40 @@ slug: maltese-snowwar
 title: maltese snowwar
 tagline: Fight snowball battles in a Maltese-themed remake of a classic Flash game
 description: >-
-  In maltese snowwar you fight a snowball battle: aim, throw at your opponents
-  and try not to get hit yourself. It is a replica of a classic Flash-era
-  snowball fighting game, reworked with a Maltese theme. It is a casual action
-  game, and it runs in the browser.
+  Press and drag one of your three Maltese to move it, then release to throw a
+  snowball at the nearest opponent a dashed line points to. A quick tap gives a
+  short toss, and holding longer charges a long throw. After each shot the dog
+  has to pack snow before throwing again.
 
 
-  The creator states that the game was produced with Grok AI. The repository
-  topics mention Grok Build and Grok Imagine along with vibe-coding, which
-  points to AI for both the code and the visual assets.
+  The opponents are golden retrievers. One hit stuns a dog and a second hit
+  buries it, so the round ends when you have cleared every retriever. Snow forts
+  block balls that pass through them. A dog can hide inside a pile and can't be
+  hit there, but it can't throw until it steps out to the rim. If no opponent is
+  in a clear shot, there is no aim line and releasing throws nothing.
 
 
-  The draw is the mix of nostalgic Flash gameplay and a Maltese setting, which
-  gives a familiar formula a different look. The repository is also tagged with
-  netcode and p2p-game, which suggests head-to-head online matches between
-  players are a focus rather than an afterthought.
+  A gold-rimmed big snowball appears during a match. Walk onto it or tap it and
+  your team gets three big throws within ten seconds. Big balls fly slower,
+  shrink when a small ball hits them, and shatter against another big one.
+
+
+  You can play against AI on Easy or Hard, or against a friend on a second
+  device using a six-letter code or QR. Unselected teammates can be set to
+  Manual, Defend or Attack. The interface supports five languages, and M mutes
+  sound. The game is a fan tribute to the 1998 Flash game SnowCraft, with an
+  optional alternate Chibi Pups cast you can switch to from the title screen.
 play:
   url: https://maltese-snowwar.grok.me
   embeddable: true
   platforms:
     - browser
+  controls:
+    - "Press and drag: move a Maltese"
+    - "Release: throw snowball"
+    - "Tap: short toss"
+    - "Hold: charge long throw"
+    - "M: mute"
 repo: https://github.com/rayony/maltese-snowwar
 creator:
   name: rayony
@@ -49,7 +63,7 @@ media:
     - games/maltese-snowwar/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-09-30
+  updated: 2026-10-01
 status: live
 provenance:
   foundVia: scout:github

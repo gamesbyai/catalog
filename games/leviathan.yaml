@@ -2,26 +2,32 @@ slug: leviathan
 title: Leviathan
 tagline: Play a vengeful whale smashing whaling ships and snapping harpoon lines.
 description: >-
-  Leviathan turns Moby-Dick around: you play the whale. You rise from the black
-  deep to attack the whaling fleets, ramming their ships, snapping harpoon lines
-  and freeing the whales that have been caught. It is a single-player action
-  game built in Three.js.
+  Leviathan puts you in the body of the whale in a reverse Moby-Dick hunt. You
+  rise from the dark water to smash whaling ships, snap harpoon lines, and free
+  other whales before the hunters close in. The tagline reads, "Take your
+  revenge on the whalers."
 
 
-  The creator says the imagery of Moby-Dick inspired the whole concept, and the
-  setting leans on it: a vast, unknowable creature, a doomed hunt and fragile
-  ships pushing into fog. Codex was used to build it, and it placed 33rd of 945
-  at Vibe Jam 2026.
+  The screen shows a whale health bar and an air bar at the top right. A score,
+  a timer, and a ships-sunk count sit at the bottom left. Along the bottom are
+  key prompts for WASD, Shift, Space, and F, each paired with an icon of a
+  diving, rising, or splashing whale.
 
 
-  Playing the hunted animal instead of the hunter gives the game a revenge-story
-  tone. It is a race against the hunters, who close in on you as you work your
-  way through the fleet, ship by ship.
+  The game opens from the other side. You row a small lantern-lit boat past a
+  large wooden ship while a line of text warns that something is moving in the
+  deeps and tells you to row for open water. The fog and dark sea set the mood
+  for the hunt. The creator cites the imagery of Moby-Dick as the inspiration.
 play:
   url: https://leviathan.timothybauman.com
   embeddable: true
   platforms:
     - browser
+  controls:
+    - "WASD: move"
+    - "Shift: dive"
+    - "Space: rise"
+    - "F: splash"
 creator:
   name: baumant
   handle: baumant
@@ -51,7 +57,7 @@ media:
     - games/leviathan/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-09-29
+  updated: 2026-10-01
 status: live
 provenance:
   foundVia: scout:vibejam-2026

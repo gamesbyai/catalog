@@ -2,26 +2,38 @@ slug: fishing
 title: Fishing
 tagline: Sail the open sea, cast lures for fish and spend coins on new lures.
 description: >-
-  Fishing is a 3D game set on the open sea, and the title is the whole pitch.
-  You sail a boat across the water, stop to cast a lure and try to hook a fish.
-  Each catch earns coins, and those coins carry over into the next stretch of
-  fishing instead of resetting.
+  Steer a boat across open water with WASD or the arrow keys, then hold Space to
+  charge a cast and release it to throw the lure. Longer holds send the lure
+  farther. Hold R to reel it back toward the boat, and cast again once it
+  arrives.
 
 
-  The coins go toward new lures, and that closes the loop: sail out, cast,
-  catch, upgrade and head back out. Each new lure is a reason to go out again.
-  You fish alone, at a relaxed pace, with the attention on exploring the water
-  and casting.
+  A radar in the top left marks nearby fish as yellow dots, and the HUD beside
+  it shows speed in knots, heading, and the number of fish left. The tips panel
+  notes that fish are attracted to moving lures.
 
 
-  The creator's README lists Cursor, Claude and Grok as the tools behind it.
-  Three.js renders the sea, the boat and the fishing as real-time 3D graphics in
-  the browser.
+  Catches earn coins, shown in a counter at the top of the screen. Spend them at
+  the lure shop on new lures, and press 1 to 4 to switch between the lures you
+  own. You start with a soft lure.
+
+
+  The camera follows behind the boat in third person. Floating platforms with
+  large signs sit on the water, and a controls panel on screen lists the keys
+  and fishing tips.
 play:
   url: https://fishing.lureconcept.com
   embeddable: true
   platforms:
     - browser
+  controls:
+    - "W / Up arrow: move forward"
+    - "S / Down arrow: brake"
+    - "A / Left arrow: turn left"
+    - "D / Right arrow: turn right"
+    - "Space: cast rod (hold to charge)"
+    - "R: hold to reel in lure"
+    - "1-4: switch lures"
 creator:
   name: ChecaSEO
   handle: checaseo
@@ -51,7 +63,7 @@ media:
     - games/fishing/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-09-29
+  updated: 2026-10-01
 status: live
 provenance:
   foundVia: scout:awesome-cc0

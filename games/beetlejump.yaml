@@ -2,26 +2,35 @@ slug: beetlejump
 title: BeetleJump
 tagline: Jump your beetle up a towering course and try to reach the top.
 description: >-
-  BeetleJump is a 3D climbing platformer with one goal: get your beetle to the
-  top of a towering course and claim the title of king. Every jump on the way up
-  the course is precarious, and each attempt comes down to timing and precision.
+  Type a name, press Start, and a black beetle with red eyes appears on a
+  lily-pad-like platform at the foot of a giant beanstalk rising out of a pond.
+  You jump from leaf to leaf up the stalk, and a timer near the top of the
+  screen counts up from 0.0 while you climb. The goal is to reach the top.
 
 
-  The creator, assentorp, came up with it after looking at other jam entries and
-  wanting to try a challenge of their own. Built with Claude Code on Three.js,
-  with online multiplayer and phone support, it won the Rage-Quit Award at Vibe
-  Jam 2026 and came 20th of 945.
+  Some leaves carry extras. A coiled spring pad sits on one leaf, and a
+  crate-like object rests on another. Pressing E throws a fireball. Other
+  beetles can join the climb, a message announces each arrival, and a chat box
+  in the lower left corner takes text.
 
 
-  The design draws on kz_giantbean, a jump-focused climbing map from
-  Counter-Strike, and keeps that map's demanding, unforgiving style: a missed
-  landing can drop you back down and cost you the progress you made.
+  The start screen also offers a Private Race button as an alternative to the
+  public climb. A leaderboard with All-Time and Today tabs lists players' times
+  and stays visible during play.
+
+
+  The creator says the stalk is modeled on kz_giantbean, a Counter-Strike map,
+  and that other people's entries made this look like a good challenge.
 play:
   url: https://beetlejump.com
   embeddable: true
   platforms:
     - browser
     - mobile
+  controls:
+    - "WASD: move"
+    - "Space: jump"
+    - "E: fireball"
 creator:
   name: assentorp
   handle: assentorp
@@ -53,7 +62,7 @@ media:
     - games/beetlejump/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-09-29
+  updated: 2026-10-01
 status: live
 provenance:
   foundVia: scout:vibejam-2026

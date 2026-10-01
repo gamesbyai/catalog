@@ -2,27 +2,32 @@ slug: gravity-golf
 title: Gravity Golf
 tagline: Guide a golf ball through solar systems using orbital pull
 description: >-
-  Gravity Golf is a puzzle game that takes golf into space. Each course is a
-  different solar system, and the player sends a ball across it toward the goal
-  while planets and stars pull on its path. Getting the ball home means reading
-  those pulls and planning the arc of each shot.
+  Gravity Golf starts with a drag and release to launch a white ball across a
+  dark board of stars. A grid bends around each body on the field, so the ball's
+  path curves as it passes. The first level, Open Lane, has a yellow sun with a
+  thin orbit ring, a teal planet with a small moon, and a dark purple ring on
+  the right.
 
 
-  The idea comes from the creator's fascination with orbital mechanics after
-  playing Outer Wilds. That shows in the way the ball curves around bodies
-  instead of flying straight, so a good shot often uses a planet's gravity
-  rather than fighting it. Each system asks for a fresh read of the layout.
+  A gold ring sits in the lower left corner of that first level. The header
+  reads Level 1 / 160, with a map icon beside it, so the game holds 160 levels.
+  Retry and Undo buttons at the top right are tied to the R and Z keys, and a
+  small how-to card explains the launch.
 
 
-  It is a 3D browser game built with Three.js and entered in Vibe Jam 2026. The
-  creator used Codex while making it. The game is playable on mobile devices as
-  well as desktop.
+  The creator says the idea came from playing Outer Wilds and wanting to explore
+  orbital mechanics further. The levels move the ball through different solar
+  systems, with gravity as the puzzle.
 play:
   url: https://gravity-golf-olive.vercel.app
   embeddable: true
   platforms:
     - browser
     - mobile
+  controls:
+    - "Drag and release: launch the ball"
+    - "R: retry"
+    - "Z: undo"
 creator:
   name: RichardGerum
   handle: richardgerum

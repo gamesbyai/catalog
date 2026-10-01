@@ -3,23 +3,27 @@ title: Chain Camp Classic
 tagline: Charge and release disc throws across nine top-down holes of pixel-art
   disc golf.
 description: >-
-  Chain Camp Classic is a top-down disc golf game with a retro pixel look. A
-  round covers nine holes on one course. On each throw you aim at the course,
-  hold to charge power, release to lock it in, then tap again to set the angle
-  of release. Near the basket, a timing meter handles the putt.
+  Nine holes of top-down disc golf on one course, with a scorecard and best
+  scores saved in the browser. The HUD shows hole number, par, distance to the
+  basket in feet, shot count, and wind speed. Hole 1 is a par 3 of 521 feet, and
+  a raccoon named Rally sits in the corner.
 
 
-  Shots involve choices. You pick a driver, midrange, or putter and throw
-  backhand or forehand, while each hole has its own wind. Risky routes,
-  ricochets, rough, water, and out-of-bounds penalties reward careful planning.
-  A Practice Field mode lets you work on throws, and scorecards and best scores
-  are saved in the browser.
+  Each throw takes two inputs. Aim by clicking or dragging on the course, hold
+  to charge power, release to lock it in, then tap again to set the angle of
+  release. A bar along the bottom tracks the throw. Near the basket, putting
+  switches to a timing meter.
 
 
-  It plays in the browser with keyboard, mouse, or touch, and uses adaptive
-  procedural music. The creator built it with Phaser 4, TypeScript, and Bun, and
-  the disclosure lists AI assistance for code and graphics, with art generated
-  through OpenAI image generation.
+  Pick a driver, midrange, or putter disc and throw backhand or forehand. Wind
+  differs per hole. Holes include risky routes, ricochets, rough, water, and
+  out-of-bounds penalties. A Practice Field mode is available from the main
+  menu.
+
+
+  The look is CRT-era pixel art, with procedural music that adapts as you play.
+  A minimap toggle helps with the layout. Sessions run a few minutes, and touch
+  controls are supported alongside keyboard and mouse.
 play:
   url: https://joeydoorbell.itch.io/chain-camp-classic
   embeddable: false
@@ -61,7 +65,7 @@ media:
     - games/chain-camp-classic/shot-2
 dates:
   added: 2026-09-30
-  updated: 2026-09-30
+  updated: 2026-10-01
 status: live
 provenance:
   foundVia: scout:aibgj-4
