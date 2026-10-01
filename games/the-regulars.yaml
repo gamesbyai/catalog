@@ -20,7 +20,7 @@ description: >-
 
   Every visual and sound is generated in code on a canvas, with no image or
   audio files. Each face is built from a seed, so a character looks the same
-  every time you return. The game was made for a jam with the theme Familiar.
+  every time you return.
 play:
   url: https://granthaffner.itch.io/the-regulars
   embeddable: false
