@@ -40,11 +40,15 @@ creator:
     - https://bitten-heart-studio.itch.io
 made:
   models: []
-  tools: []
+  providers:
+    - openai
+  tools:
+    - codex
   aiShare: some
   source: AI Browser Game Jam 3 rules (at least half of each game AI-generated)
-    and the itch.io game page
+    and the creator's jam submission
   evidence: creator
+  evidenceUrl: https://itch.io/jam/ai-game-jam-3/rate/4686843
 tech:
   multiplayer: single
 genres:

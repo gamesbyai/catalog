@@ -38,11 +38,14 @@ creator:
     - https://vibeaxis.itch.io
 made:
   models: []
+  providers:
+    - google
   tools: []
   aiShare: most
   source: AI Browser Game Jam 2 rules (at least half of each game AI-generated)
-    and the itch.io game page
+    and the creator's jam submission
   evidence: creator
+  evidenceUrl: https://itch.io/jam/ai-game-jam-2/rate/4508001
 tech:
   multiplayer: single
 genres:

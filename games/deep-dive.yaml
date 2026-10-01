@@ -39,11 +39,11 @@ creator:
   name: Ethan Hauger
   handle: chichiroxursox-droid
 made:
-  models:
-    - gpt-4o
+  models: []
   providers:
-    - openai
-  tools: []
+    - anthropic
+  tools:
+    - claude-code
   aiShare: unknown
   source: Repository README
   evidence: repo

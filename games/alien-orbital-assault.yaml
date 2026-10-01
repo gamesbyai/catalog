@@ -43,11 +43,16 @@ creator:
     - https://kc00l.itch.io
 made:
   models: []
-  tools: []
+  providers:
+    - anthropic
+    - google
+  tools:
+    - claude-code
   aiShare: some
   source: AI Browser Game Jam 2 rules (at least half of each game AI-generated)
-    and the itch.io game page
+    and the creator's jam submission
   evidence: creator
+  evidenceUrl: https://itch.io/jam/ai-game-jam-2/rate/4522085
 tech:
   multiplayer: single
 genres:

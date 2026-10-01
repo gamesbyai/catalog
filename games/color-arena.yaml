@@ -30,10 +30,11 @@ creator:
   x: edibudimilic
 made:
   models: []
-  tools: []
+  tools:
+    - github-copilot
   aiShare: most
   source: Vibe Jam 2026 submission form
-  evidence: inferred
+  evidence: creator
 tech:
   engine: phaser
   multiplayer: online
@@ -51,7 +52,7 @@ media:
     - games/color-arena/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-09-29
+  updated: 2026-10-01
 status: live
 provenance:
   foundVia: scout:vibejam-2026

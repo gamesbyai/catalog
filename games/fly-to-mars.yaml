@@ -41,12 +41,27 @@ creator:
   links:
     - https://maxzillion.itch.io
 made:
-  models: []
-  tools: []
+  models:
+    - claude-opus-4-8
+    - claude-opus-4-5
+    - gpt-5-5
+    - claude-opus-4-6
+    - gemini-3-5-flash
+  providers:
+    - anthropic
+    - openai
+    - google
+  tools:
+    - claude-code
+    - kiro
+    - codex
+    - openclaw
+    - antigravity
   aiShare: all
   source: AI Browser Game Jam 3 rules (at least half of each game AI-generated)
-    and the itch.io game page
+    and the creator's jam submission
   evidence: creator
+  evidenceUrl: https://itch.io/jam/ai-game-jam-3/rate/4682230
 tech:
   engine: threejs
   multiplayer: single

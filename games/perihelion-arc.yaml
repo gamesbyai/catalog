@@ -27,10 +27,11 @@ creator:
   x: CosminSerban10
 made:
   models: []
-  tools: []
+  tools:
+    - verse8
   aiShare: most
   source: Vibe Jam 2026 submission form
-  evidence: inferred
+  evidence: creator
 tech:
   engine: threejs
   multiplayer: online
@@ -49,7 +50,7 @@ media:
     - games/perihelion-arc/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-09-29
+  updated: 2026-10-01
 status: live
 provenance:
   foundVia: scout:vibejam-2026

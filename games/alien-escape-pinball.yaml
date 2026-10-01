@@ -43,11 +43,17 @@ creator:
     - https://focaccai.itch.io
 made:
   models: []
-  tools: []
+  providers:
+    - anthropic
+    - openai
+  tools:
+    - claude-code
+    - chatgpt
   aiShare: most
   source: AI Browser Game Jam 2 rules (at least half of each game AI-generated)
-    and the itch.io game page
+    and the creator's jam submission and postmortem devlog
   evidence: creator
+  evidenceUrl: https://focaccai.itch.io/alien-pinball/devlog/1517147/alien-pinball-postmortem-how-i-made-a-full-physics-pinball-game-with-ai-tools
 tech:
   engine: littlejs
   multiplayer: single

@@ -40,12 +40,20 @@ creator:
   links:
     - https://voltron2112.itch.io
 made:
-  models: []
-  tools: []
+  models:
+    - claude-opus-4-6
+    - gpt-5-5
+  providers:
+    - anthropic
+    - openai
+  tools:
+    - github-copilot
+    - cursor
   aiShare: most
   source: AI Browser Game Jam 3 rules (at least half of each game AI-generated)
-    and the itch.io game page
+    and the creator's jam submission
   evidence: creator
+  evidenceUrl: https://itch.io/jam/ai-game-jam-3/rate/4668111
 tech:
   engine: phaser
   multiplayer: single
