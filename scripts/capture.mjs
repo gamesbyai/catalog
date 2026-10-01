@@ -28,6 +28,8 @@ export const DEFAULTS = {
   closeTimeout: 5000,
   viewport: { width: 1280, height: 720 },
   allowLocalHttp: false, // tests only: http://127.0.0.1
+  itchHost: /\.itch\.io$/, // pages captured the itch.io way (tests point it at 127.0.0.1)
+  itchPage: false, // on itch.io: capture the page itself, toolbar hidden, instead of the game's own frame
   sandbox: process.env.CAPTURE_SANDBOX !== '0',
 };
 
@@ -261,13 +263,20 @@ export async function captureOne(url, outDir, opts = {}) {
     };
     await open(url);
     // On itch.io the cover shows the game's own frame, not the page around it. No other page's markup is read.
-    if (new URL(url).hostname.endsWith('.itch.io')) {
-      const markup = await guard(page.content()).catch((e) => {
-        if (e instanceof CaptureError) throw e;
-        return '';
-      });
-      const frame = itchFrame(url, markup);
-      if (frame) await open(frame);
+    // A game that fails in its frame gets a second pass on the page itself (itchPage), with itch's toolbar hidden.
+    if (o.itchHost.test(new URL(url).hostname)) {
+      if (o.itchPage) {
+        await guard(page.evaluate(() => document.getElementById('user_tools')?.style.setProperty('display', 'none', 'important'))).catch((e) => {
+          if (e instanceof CaptureError) throw e;
+        });
+      } else {
+        const markup = await guard(page.content()).catch((e) => {
+          if (e instanceof CaptureError) throw e;
+          return '';
+        });
+        const frame = itchFrame(url, markup);
+        if (frame) await open(frame);
+      }
     }
 
     const t0 = Date.now();
@@ -357,6 +366,14 @@ function appendFailure(outRoot, failure) {
   writeFileSync(file, JSON.stringify(list, null, 2) + '\n');
 }
 
+function onItch(url, opts) {
+  try {
+    return (opts.itchHost ?? DEFAULTS.itchHost).test(new URL(url).hostname);
+  } catch {
+    return false;
+  }
+}
+
 /** Splits slugs into games to capture and games whose creator sent screenshots (each entry read as data). */
 export function splitUploads(slugs, { root = ROOT } = {}) {
   const res = { capture: [], uploads: [] };
@@ -391,6 +408,12 @@ export async function captureSlugs(slugs, { root = ROOT, out = join(root, 'out')
           log(`     ${slug}: ${res.reason}, retry throttled`);
           const again = await run({ ...opts, throttle: true });
           if (again.ok) res = { ...again, throttled: true };
+        }
+        // Heavy WebGL games on itch.io can stay blank outside itch's page: one more pass on the page, toolbar hidden.
+        if (!res.ok && res.reason !== 'bad-url' && onItch(url, opts) && !opts.itchPage && Date.now() - batchStart < budgetMs) {
+          log(`     ${slug}: ${res.reason}, retry on the itch page`);
+          const again = await run({ ...opts, itchPage: true });
+          if (again.ok) res = { ...again, itchPage: true };
         }
       }
     }

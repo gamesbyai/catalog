@@ -3,6 +3,7 @@ import assert from 'node:assert/strict';
 import { createServer } from 'node:http';
 import { mkdtempSync, mkdirSync, readdirSync, readFileSync, writeFileSync, existsSync } from 'node:fs';
 import { tmpdir } from 'node:os';
+import sharp from 'sharp';
 import { join } from 'node:path';
 import { captureOne, captureSlugs, closeBrowser, throttleFrames, itchFrame, DEFAULTS } from '../scripts/capture.mjs';
 
@@ -58,6 +59,12 @@ const PAGES = {
     }, 800);
   </script>`),
   '/black': html(`<canvas width="1280" height="720" style="background:#000"></canvas>`),
+  // An itch.io-style page: the game fills the window and the page's toolbar sits over its top-right corner.
+  '/itch-page': html(`<div id="user_tools" style="position:fixed;top:0;right:0;width:240px;height:160px;background:#f00;z-index:9"></div>
+    <canvas id="c" width="1280" height="720"></canvas><script>
+    const g = document.getElementById('c').getContext('2d');
+    for (let x = 0; x < 1280; x += 40) for (let y = 0; y < 720; y += 40) { g.fillStyle = 'hsl(' + ((x + y * 3) % 360) + ' 60% ' + (30 + ((x * y) % 40)) + '%)'; g.fillRect(x, y, 40, 40); }
+  </script>`),
   '/to-download': html(`<p style="color:#fff">starting</p><script>addEventListener('load', () => setTimeout(() => { location.href = '/download'; }, 100));</script>`),
   '/alerts': html(`<script>
     addEventListener('beforeunload', (e) => { e.preventDefault(); e.returnValue = ''; });
@@ -113,6 +120,30 @@ test("itchFrame: an itch.io game page gives the game's own frame on itch's CDN, 
     'https://html-classic.itch.zone/html/1/../../x.html',
   ]) assert.equal(itchFrame('https://someone.itch.io/game', `<iframe src="${bad}"></iframe>`), null, bad);
   assert.equal(itchFrame('https://someone.itch.io/game', '<p>a downloadable game</p>'), null);
+});
+
+const ITCH_TEST = { itchHost: /^127\.0\.0\.1$/ };
+
+test('itchPage: the itch.io page is captured with its toolbar hidden', async () => {
+  const dir = join(tmp(), 'itch');
+  const res = await captureOne(`${base}/itch-page`, dir, { ...FAST, ...ITCH_TEST, itchPage: true, times: [400, 900], shotTimeout: 6000, deadline: 20_000 });
+  assert.equal(res.ok, true, res.reason);
+  const { data } = await sharp(readFileSync(join(dir, 'cover.png'))).extract({ left: 1200, top: 20, width: 1, height: 1 }).raw().toBuffer({ resolveWithObject: true });
+  assert.notDeepEqual([...data.subarray(0, 3)], [255, 0, 0], 'the toolbar is not in the cover');
+});
+
+test('an itch.io game that fails in its own frame gets one more try on the itch page', async () => {
+  const root = tmp();
+  mkdirSync(join(root, 'games'));
+  writeFileSync(join(root, 'games', 'dark.yaml'), `play:\n  url: ${base}/black\n`);
+  writeFileSync(join(root, 'games', 'plain.yaml'), `play:\n  url: ${base}/black\n`);
+  const lines = [];
+  const [itch] = await captureSlugs(['dark'], { ...FAST, ...ITCH_TEST, root, out: join(root, 'out'), log: (l) => lines.push(l) });
+  assert.equal(itch.reason, 'blank');
+  assert.match(lines.join(' '), /dark: blank, retry on the itch page/);
+  const other = [];
+  await captureSlugs(['plain'], { ...FAST, root, out: join(root, 'out2'), log: (l) => other.push(l) });
+  assert.doesNotMatch(other.join(' '), /itch page/, 'only itch.io games get the page retry');
 });
 
 test('only https URLs are captured (http only for 127.0.0.1 when allowed)', async () => {
