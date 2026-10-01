@@ -267,6 +267,7 @@ export async function startGame(page, o, guard, signal) {
     await guard(within(page.keyboard.press('Enter'), o.clickTimeout));
   };
   let named = false;
+  let clicked = false;
   let canvasTried = false;
   for (let round = 0; round < o.startRounds && Date.now() <= until; round++) {
     if (!named) {
@@ -276,6 +277,7 @@ export async function startGame(page, o, guard, signal) {
       }
     }
     if ((await clickByName(page, START_NAMES, o, guard, until)) || (await clickByName(page, NEXT_NAMES, o, guard, until))) {
+      clicked = true;
       await pause(o.startPause);
       continue;
     }
@@ -285,7 +287,8 @@ export async function startGame(page, o, guard, signal) {
       await pause(o.startPause);
       continue;
     }
-    if (canvasTried) break;
+    // A game already started by a button gets no Enter (in many multiplayer games it opens the chat).
+    if (clicked || canvasTried) break;
     canvasTried = true;
     await centre();
     await pause(o.startPause);
