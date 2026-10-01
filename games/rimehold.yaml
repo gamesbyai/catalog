@@ -1,13 +1,29 @@
 slug: rimehold
-title: rimehold
-tagline: Command a frozen stronghold in a single-player strategy game inspired by Warcraft 3 maps.
-description: "Rimehold is a single-player strategy game that runs in the browser and is rendered in 3D. The title and the Warcraft 3 map influence suggest a cold, fortified setting where the player manages a stronghold and directs it against opposing forces.
+title: Rimehold
+tagline: Maze your towers to hold a frozen mountain pass, Warcraft 3 tower
+  defense style.
+description: "Rimehold: Siege of the Frozen Pass is a mazing tower defense game
+  that runs in the browser in 3D. You hold a snowbound pass against creeps by
+  placing towers so they form the maze the enemies have to walk.
 
 
-  The design takes its cues from custom maps made for Warcraft 3, so the play leans on the familiar map-scenario style of that scene rather than a conventional campaign. It is built for one player and does not require a mobile device or a partner.
+  Before a run you pick a watch, the game's word for difficulty. Recruit is
+  billed as a gentle introduction to mazing, with 60 lives, 360 starting gold,
+  half-strength creeps and bigger bounties. Warden is the intended challenge at
+  40 lives and 300 gold. Warlord and Rimebound drop to 25 and 15 lives with less
+  gold and smaller bounties, and Rimebound's own card says only the perfect maze
+  survives.
 
 
-  The creator says they handed every design decision to Claude and built the whole thing with Claude Code, using Warcraft 3 maps as a reference point. The result is a project shaped largely by the model's own choices."
+  The mazing idea comes from Warcraft 3 custom maps, which the creator names as
+  the reference. According to the creator's submission, they left every design
+  decision to Claude and built the game with Claude Code, using Claude Opus 5.5
+  and Claude Sonnet 5.5. The title screen calls it an original game built with
+  Three.js with no external assets.
+
+
+  It's a single-player game for anyone who misses the tower defense maps of the
+  Warcraft 3 era and wants a clear difficulty ladder to climb."
 play:
   url: https://malnourishd.itch.io/rimehold
   platforms:
@@ -33,6 +49,7 @@ tech:
   engine: threejs
   multiplayer: single
 genres:
+  - tower-defense
   - strategy
 media:
   cover: games/rimehold/cover
