@@ -1,0 +1,66 @@
+slug: the-list-s-champion
+title: The List's Champion
+tagline: Ride down the lists in first person and land your lance on rival knights
+description: >-
+  The List's Champion puts you behind a knight's visor for a first-person
+  jousting tournament. Each pass starts when the marshal lifts his flag. You
+  charge down the course, aim the lance at the opponent's armor, and brace as
+  the two of you meet.
+
+
+  Rivals get tougher as the tournament goes on. Each one rides in a different
+  style, wears a different armor setup, and fights with its own tactics. A lance
+  can fail in four distinct ways, and each has its own sound.
+
+
+  A Training Mode lets you practice timing, balance, and aim before you enter
+  the tournament. The lance comes with seven interchangeable heads. The creator
+  settled the lance weight, the timing window, and the scoring weights by
+  playtesting.
+
+
+  All sprite art came from text prompts, including the knight and horse as
+  separate posed pieces, the crowd, and the field details. Every sound effect
+  and all five music loops are synthesized by a generated Python program, and
+  the game has no voice acting.
+play:
+  url: https://felmeric.itch.io/the-lists-champion
+  embeddable: false
+  platforms:
+    - browser
+creator:
+  name: Felmeric
+  handle: felmeric
+  links:
+    - https://felmeric.itch.io
+made:
+  models:
+    - claude-opus-5
+  providers:
+    - anthropic
+  tools:
+    - claude-code
+  aiShare: most
+  source: AI Browser Game Jam 4 rules (most of each game AI-generated) and the
+    itch.io game page
+  evidence: creator
+tech:
+  multiplayer: single
+genres:
+  - simulation
+  - action
+jam:
+  event: ai-browser-game-jam-4
+  rank: 24
+  entries: 126
+media:
+  cover: games/the-list-s-champion/cover
+  screenshots:
+    - games/the-list-s-champion/shot-1
+    - games/the-list-s-champion/shot-2
+dates:
+  added: 2026-10-01
+  updated: 2026-10-01
+status: live
+provenance:
+  foundVia: scout:aibgj-4

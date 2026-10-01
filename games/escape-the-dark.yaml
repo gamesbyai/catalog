@@ -1,0 +1,62 @@
+slug: escape-the-dark
+title: Escape the Dark
+tagline: Find the ladder out of a dark maze while monsters chase you
+description: >-
+  You hold a fire torch in a randomly generated dungeon maze on an unknown
+  planet. The torch is your only light, so you see just the squares around you
+  while you look for the escape ladder, which sits in a different part of the
+  dungeon each time.
+
+
+  Smart monsters follow you through the maze. One starts after you, and the
+  count grows as you go deeper, up to 15. Scrolls are scattered around the
+  dungeon for you to find.
+
+
+  Difficulty changes three things: monster speed, light radius and scroll count.
+  Very Easy monsters move 0.67 squares per second, your light reaches 20
+  squares, and 5 scrolls are placed. Very Hard monsters move 10 squares per
+  second, the light reaches 2.5 squares, and 1000 scrolls are placed.
+
+
+  Medium sits between them with monsters at 2 squares per second, a 10 square
+  light radius and 50 scrolls. Hard uses 5 squares per second, a 5 square radius
+  and 150 scrolls. The creator describes the game as AI assisted across code,
+  graphics, sounds and text.
+play:
+  url: https://intjt2.itch.io/escape-the-dark
+  embeddable: false
+  platforms:
+    - browser
+creator:
+  name: INTJT2
+  handle: intjt2
+  links:
+    - https://intjt2.itch.io
+made:
+  models: []
+  tools: []
+  aiShare: some
+  source: AI Browser Game Jam 2 rules (at least half of each game AI-generated)
+    and the itch.io game page
+  evidence: creator
+tech:
+  multiplayer: single
+genres:
+  - strategy
+  - horror
+jam:
+  event: ai-browser-game-jam-2
+  rank: 34
+  entries: 42
+media:
+  cover: games/escape-the-dark/cover
+  screenshots:
+    - games/escape-the-dark/shot-1
+    - games/escape-the-dark/shot-2
+dates:
+  added: 2026-10-01
+  updated: 2026-10-01
+status: live
+provenance:
+  foundVia: scout:aibgj-2

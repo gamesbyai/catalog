@@ -1,0 +1,65 @@
+slug: charge-autobattler
+title: Charge! AutoBattler
+tagline: Draft units from a shop, set their deployment, and watch the armies
+  fight on their own.
+description: >-
+  You build an army by drafting from a pool of 30 different units, then set
+  where each one is deployed. Once the battle starts, the fighting runs by
+  itself and you watch it play out.
+
+
+  Units pick targets automatically and use abilities whenever they come off
+  cooldown. Melee units advance and charge once enemies are in range. Ranged
+  units fire at targets in range and try to kite away until their ammo runs out,
+  then charge in. Morale matters: low morale makes a unit retreat, and none at
+  all makes it rout.
+
+
+  Between fights, the shop offers rarer units more often the further you get.
+  Armies built around shared culture and weapon traits earn synergy bonuses. You
+  also earn interest that scales with the lives you have lost. Several other
+  stat mechanics sit underneath these systems.
+
+
+  The creator says items and formations were cut before the jam deadline. The
+  code was written by Claude, the music was made with Suno, and the pictures
+  were made with Civitai. The soundtrack does not loop.
+play:
+  url: https://id107.itch.io/charge-autobattler
+  embeddable: false
+  platforms:
+    - browser
+creator:
+  name: ID107
+  handle: id107
+  links:
+    - https://id107.itch.io
+made:
+  models: []
+  providers:
+    - anthropic
+  tools:
+    - claude-ai
+  aiShare: most
+  source: AI Browser Game Jam 4 rules (most of each game AI-generated) and the
+    itch.io game page
+  evidence: creator
+tech:
+  multiplayer: single
+genres:
+  - strategy
+jam:
+  event: ai-browser-game-jam-4
+  rank: 100
+  entries: 126
+media:
+  cover: games/charge-autobattler/cover
+  screenshots:
+    - games/charge-autobattler/shot-1
+    - games/charge-autobattler/shot-2
+dates:
+  added: 2026-10-01
+  updated: 2026-10-01
+status: live
+provenance:
+  foundVia: scout:aibgj-4

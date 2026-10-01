@@ -1,0 +1,66 @@
+slug: starchart
+title: STARCHART
+tagline: Fly routes between generated stars and keep each route as a permanent
+  constellation
+description: >-
+  You pilot a ship from star to star, spending flux and hull on each jump. Every
+  star's shape shows what it does: a forge repairs the hull, a shrine takes
+  flux, a nebula is a gamble, and a twin wreck offers a choice.
+
+
+  Each voyage starts at one of three gates in the sector. You pick how far to
+  jump, then decide when to stop. Setting anchor ends the run and banks your
+  route. Closing the route into a loop seals the constellation and doubles its
+  grant, but pushing on risks going adrift.
+
+
+  Every voyage, even a failed one, becomes a named constellation in your atlas.
+  Its dominant family gives a permanent bonus: extra hull, starting flux, jump
+  range, better salvage, a hazard ward, or more flux from shrines. Nothing
+  resets. Re-flying a charted route deepens its line instead of copying it.
+
+
+  Four sectors open as the atlas fills: The Verge from the start, The Drift at 5
+  inscriptions, The Hollow Crown at 12, and The Long Dark at 21. Stars, charts
+  and names are all drawn by code, with synthesized sound that can be switched
+  off. Progress saves on every arrival, so closing the tab mid-voyage resumes
+  where you left off. A run takes about half an hour.
+play:
+  url: https://csaf.itch.io/starchart
+  embeddable: false
+  platforms:
+    - browser
+  controls:
+    - "Mouse: choose gates, jump between stars, set anchor"
+creator:
+  name: csaf
+  handle: csaf
+  links:
+    - https://csaf.itch.io
+made:
+  models: []
+  tools: []
+  aiShare: unknown
+  source: AI Browser Game Jam 4 rules (most of each game AI-generated) and the
+    itch.io game page
+  evidence: creator
+tech:
+  multiplayer: single
+genres:
+  - strategy
+  - roguelike
+jam:
+  event: ai-browser-game-jam-4
+  rank: 89
+  entries: 126
+media:
+  cover: games/starchart/cover
+  screenshots:
+    - games/starchart/shot-1
+    - games/starchart/shot-2
+dates:
+  added: 2026-10-01
+  updated: 2026-10-01
+status: live
+provenance:
+  foundVia: scout:aibgj-4

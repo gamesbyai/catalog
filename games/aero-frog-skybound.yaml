@@ -1,0 +1,64 @@
+slug: aero-frog-skybound
+title: Aero Frog Skybound
+tagline: Leap between floating islands as a frog and rescue stolen tadpoles from aliens.
+description: >-
+  The game starts in first person on a bright sky level with floating platforms.
+  You play a frog whose tadpoles were taken by a UFO. Move with the keyboard,
+  look with the mouse, and jump to reach islands above and across the gaps.
+
+
+  Each jump goes higher than the last, so levels use vertical space. Holding the
+  jump key gives a taller leap. Every level hides 4 tadpoles to collect, and the
+  game has 2 levels followed by a boss fight.
+
+
+  How you act through the levels decides your ending. Destroying everything in
+  your path pushes the frog toward becoming something closer to a machine. The
+  choice is made through play rather than a menu.
+
+
+  The look follows the glossy Frutiger Aero style, and the design draws on
+  Jumping Flash! 2 from the PS1. The creator lists Claude (Sonnet 4.6) for code,
+  and AI tools for art, music and sound effects.
+play:
+  url: https://devandreakira.itch.io/aero-frog-skybound
+  embeddable: false
+  platforms:
+    - browser
+  controls:
+    - "WASD: move"
+    - "Space: jump (hold for higher jump)"
+    - "Mouse: look around"
+creator:
+  name: DevAndreAkira
+  handle: devandreakira
+  links:
+    - https://devandreakira.itch.io
+made:
+  models: []
+  tools: []
+  aiShare: most
+  source: AI Browser Game Jam 2 rules (at least half of each game AI-generated)
+    and the itch.io game page
+  evidence: creator
+tech:
+  engine: threejs
+  multiplayer: single
+genres:
+  - platformer
+  - adventure
+jam:
+  event: ai-browser-game-jam-2
+  rank: 4
+  entries: 42
+media:
+  cover: games/aero-frog-skybound/cover
+  screenshots:
+    - games/aero-frog-skybound/shot-1
+    - games/aero-frog-skybound/shot-2
+dates:
+  added: 2026-10-01
+  updated: 2026-10-01
+status: live
+provenance:
+  foundVia: scout:aibgj-2

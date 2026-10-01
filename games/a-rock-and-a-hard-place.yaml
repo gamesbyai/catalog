@@ -1,0 +1,73 @@
+slug: a-rock-and-a-hard-place
+title: A Rock and a Hard Place
+tagline: Tilt the whole board to roll a rock into a leak before the village floods.
+description: >-
+  You tilt a board to roll a rock into a leak and stop a flooding village. The
+  rock can't be picked up, and the villagers stand on the same board, so every
+  tilt moves them too. Tilt gently and the water keeps rising. Tilt hard and you
+  arrive in time, but villagers topple.
+
+
+  Hold the mouse or a finger and move it to tilt, or use arrow keys or WASD.
+  Space hops the rock. Low walls can be hopped as a shortcut, though the landing
+  knocks over everyone nearby. A fallen villager can be nudged back up, but only
+  if you approach slowly.
+
+
+  Ten villages cover meadow, snowfield, desert and night, and all are open from
+  the start. Ice keeps the rock sliding after you stop tilting, while sand makes
+  it slow to start. The last four villages have two rocks and two leaks on one
+  board, so tilting moves both.
+
+
+  Stars reward fewer knocked-over villagers, not speed. A flooded village simply
+  restarts, with no game over screen. A Fast water mode raises the challenge and
+  tracks its own stars. The text is in English and Korean. The creator used
+  Claude Code to write and debug the code and to run an automated playtest that
+  found two impossible stages.
+play:
+  url: https://hf-doodle-studio.itch.io/a-rock-and-a-hard-place
+  embeddable: false
+  platforms:
+    - browser
+  controls:
+    - "Mouse / finger drag: tilt the board"
+    - "Arrow keys / WASD: tilt the board"
+    - "Space: hop the rock"
+    - "Touch (mobile): jump the rock"
+    - "R: restart stage"
+    - "M: mute"
+    - "Esc: back to village list"
+creator:
+  name: hf-doodle-studio
+  handle: hf-doodle-studio
+  links:
+    - https://hf-doodle-studio.itch.io
+made:
+  models: []
+  tools: []
+  aiShare: some
+  source: AI Browser Game Jam 4 rules (most of each game AI-generated) and the
+    itch.io game page
+  evidence: creator
+tech:
+  engine: canvas
+  multiplayer: single
+genres:
+  - puzzle
+  - casual
+jam:
+  event: ai-browser-game-jam-4
+  rank: 92
+  entries: 126
+media:
+  cover: games/a-rock-and-a-hard-place/cover
+  screenshots:
+    - games/a-rock-and-a-hard-place/shot-1
+    - games/a-rock-and-a-hard-place/shot-2
+dates:
+  added: 2026-10-01
+  updated: 2026-10-01
+status: live
+provenance:
+  foundVia: scout:aibgj-4

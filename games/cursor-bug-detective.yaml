@@ -1,0 +1,58 @@
+slug: cursor-bug-detective
+title: Cursor Bug Detective
+tagline: Scan props on a 3D desk, decode cipher clues, and name the bug in 90 seconds
+description: >-
+  Each day brings one case on a 3D developer's desk, and a round lasts about 90
+  seconds. You play the Cursor mascot as a detective, scanning the props around
+  the desk to collect clues.
+
+
+  The clues arrive as ciphers, which you decode through four mini-puzzles. Once
+  the evidence adds up, you name the bug to close the case.
+
+
+  The creator modeled the loop on daily word games, which ask for one short
+  session per day, and chose a bug hunt because finding bugs is what most
+  developers do all day. The desk was built by hand, and the mascot gets a story
+  beyond serving as a logo.
+
+
+  The creator also points to a few further games with new and retro themes to
+  explore alongside the daily case.
+play:
+  url: https://bug-detective.pages.dev
+  embeddable: true
+  platforms:
+    - browser
+creator:
+  name: casper_chsieh
+  handle: casper-chsieh
+  x: casper_chsieh
+made:
+  models: []
+  tools:
+    - cursor
+  aiShare: most
+  source: Vibe Jam 2026 submission form
+  evidence: creator
+tech:
+  engine: threejs
+  multiplayer: single
+genres:
+  - puzzle
+  - action
+jam:
+  event: vibe-jam-2026
+  rank: 672
+  entries: 945
+media:
+  cover: games/cursor-bug-detective/cover
+  screenshots:
+    - games/cursor-bug-detective/shot-1
+    - games/cursor-bug-detective/shot-2
+dates:
+  added: 2026-10-01
+  updated: 2026-10-01
+status: live
+provenance:
+  foundVia: scout:vibejam-2026

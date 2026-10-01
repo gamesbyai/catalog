@@ -1,0 +1,57 @@
+slug: where-morning-breaks
+title: Where Morning Breaks
+tagline: Guide a young witch and her familiar to a tower and decide who pays for
+  the ritual
+description: >-
+  You follow Lyra, a young witch crossing a land the Dusk is eating away, one
+  village and forest at a time. Her familiar, Moth, travels with her toward an
+  old tower that is supposed to hold the way to stop the spread.
+
+
+  Along the route you meet people who need help and pick up pieces of forgotten
+  history. Your choices change how close Lyra and Moth become, and that
+  closeness matters at the top of the tower, where a ritual demands a sacrifice.
+  Which of them pays depends on the bond you built.
+
+
+  It is a short visual novel with several endings, and one playthrough runs
+  about 5 to 10 minutes. According to the creator, ChatGPT wrote the code and
+  story, Suno made the music, and FreeGen produced the visuals.
+play:
+  url: https://brokenprevailer.itch.io/where-morning-breaks
+  embeddable: false
+  platforms:
+    - browser
+creator:
+  name: BrokenPrevailer
+  handle: brokenprevailer
+  links:
+    - https://brokenprevailer.itch.io
+made:
+  models: []
+  tools: []
+  aiShare: all
+  source: AI Browser Game Jam 3 rules (at least half of each game AI-generated)
+    and the itch.io game page
+  evidence: creator
+tech:
+  engine: unity
+  multiplayer: single
+genres:
+  - visual-novel
+  - adventure
+jam:
+  event: ai-browser-game-jam-3
+  rank: 12
+  entries: 77
+media:
+  cover: games/where-morning-breaks/cover
+  screenshots:
+    - games/where-morning-breaks/shot-1
+    - games/where-morning-breaks/shot-2
+dates:
+  added: 2026-10-01
+  updated: 2026-10-01
+status: live
+provenance:
+  foundVia: scout:aibgj-3

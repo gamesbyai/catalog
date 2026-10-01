@@ -1,0 +1,71 @@
+slug: signal-lost
+title: Signal Lost
+tagline: Watch autonomous AI vessels explore ruins and nudge them with limited commands
+description: >-
+  You play an operator watching autonomous AI vessels scavenge the ruins of a
+  war-torn Earth. Nothing is steered directly. Each vessel writes its own
+  mission log in real time, drawn from generation tables, and the text shifts to
+  match the style of its faction.
+
+
+  Missions follow seven phases: IDLE, SIGNAL, TRAVERSE, BREACH, FAULT, CORE and
+  REBOOT. Five AI cultures run the vessels: Determinists, Stochasts, Swarm,
+  Recursive and Archivists. Global phenomena hit every vessel at once and can
+  damage your connection, and the satellite network also degrades over time. If
+  it drops too low, you lose control.
+
+
+  Your influence is limited to three commands. BOOST improves the next tick
+  outcome for a vessel. PING forces a scan that may find loot. INJECT sends a
+  message into the world, which the vessel meets as a sign, graffiti or a
+  broadcast.
+
+
+  Click a vessel's column to select it as the target, then use the bottom bar
+  buttons to issue commands. Buttons also adjust font size, game speed and
+  audio. The setting is adapted from Eclipse Phase, and the creator says the
+  narrative templates were expanded with an LLM-as-judge pipeline. Sessions run
+  a few minutes.
+play:
+  url: https://vuvko.itch.io/signal-lost
+  embeddable: false
+  platforms:
+    - browser
+  controls:
+    - "Mouse click: select a vessel column as command target"
+    - "Bottom bar buttons: BOOST, PING, INJECT"
+    - "A- / A+: adjust font size"
+    - "- / + buttons: adjust game speed"
+    - "VOL: toggle audio"
+creator:
+  name: vuvko
+  handle: vuvko
+  links:
+    - https://vuvko.itch.io
+made:
+  models: []
+  tools: []
+  aiShare: some
+  source: AI Browser Game Jam rules (at least half of each game AI-generated) and
+    the itch.io game page
+  evidence: creator
+tech:
+  multiplayer: single
+genres:
+  - simulation
+  - idle
+jam:
+  event: ai-browser-game-jam-1
+  rank: 13
+  entries: 29
+media:
+  cover: games/signal-lost/cover
+  screenshots:
+    - games/signal-lost/shot-1
+    - games/signal-lost/shot-2
+dates:
+  added: 2026-10-01
+  updated: 2026-10-01
+status: live
+provenance:
+  foundVia: scout:aibgj-1

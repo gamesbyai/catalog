@@ -1,0 +1,72 @@
+slug: ghostnn
+title: GhostNN
+tagline: Click through a glowing neural network maze, collect keys, and reach
+  the exit node.
+description: >-
+  A ghost is trapped inside a neural network, and you guide it out through a
+  maze of glowing nodes. Each stage is a 3D web of points joined by lines. You
+  click a node connected to your current position to move there.
+
+
+  The goal in every stage is to collect all the keys, which unlocks the exit,
+  then travel to the exit node to finish. Brighter lines show connections you
+  can use right now. Dimmer lines show secondary links that are visible but not
+  reachable from where you stand.
+
+
+  You can rotate, pan and zoom the camera to read the layout, and a double click
+  resets the view. Each level has a seed ID. Copy it, then paste it through the
+  Enter Seed button on the main menu to replay that level or hand it to someone
+  else to compare runs.
+
+
+  The creator says the code was written mostly by Claude Opus 4.5 under their
+  direction, and the ghost model was generated, then cleaned up and animated by
+  hand in Blender. Music and sound effects are AI-generated too. Mobile touch
+  controls are included but untested.
+play:
+  url: https://failedstalker.itch.io/ghostnn
+  embeddable: false
+  platforms:
+    - browser
+  controls:
+    - "Click: move to connected node"
+    - "Right drag: rotate camera"
+    - "Middle drag: pan camera"
+    - "Scroll: zoom in/out"
+    - "Double click: reset camera"
+creator:
+  name: FailedStalker
+  handle: failedstalker
+  links:
+    - https://failedstalker.itch.io
+made:
+  models: []
+  providers:
+    - openai
+  tools:
+    - chatgpt
+  aiShare: most
+  source: AI Browser Game Jam rules (at least half of each game AI-generated) and
+    the itch.io game page
+  evidence: creator
+tech:
+  engine: godot
+  multiplayer: single
+genres:
+  - puzzle
+jam:
+  event: ai-browser-game-jam-1
+  rank: 8
+  entries: 29
+media:
+  cover: games/ghostnn/cover
+  screenshots:
+    - games/ghostnn/shot-1
+    - games/ghostnn/shot-2
+dates:
+  added: 2026-10-01
+  updated: 2026-10-01
+status: live
+provenance:
+  foundVia: scout:aibgj-1

@@ -1,0 +1,68 @@
+slug: horizon-charge
+title: Horizon Charge
+tagline: Fly an ion craft fast enough to keep its capacitor charged
+description: >-
+  The aim is to cover as much distance as possible before the ion craft runs out
+  of energy. Hold the charge input to accelerate. While your speed stays above
+  the gold charge line, the capacitor refills. Drop below it and the remaining
+  energy drains away.
+
+
+  Steering costs momentum, so every sharp turn trades speed for position. You
+  thread through authored tower formations, collect open capacitor arcs, and
+  skim hazards close enough to earn near-miss bonuses. The obstacle layouts are
+  deterministic, so repeated runs let you learn them.
+
+
+  The course accelerates without end and moves through three stages: Ignition,
+  Vector, and Redline. Your best distance is saved between sessions. Settings
+  reduce flashing and camera shake, and the game accepts keyboard, gamepad,
+  mouse, and touch input.
+
+
+  Planet shaders and visual effects react to your speed. The creator lists code,
+  graphics, sounds, and text as AI assisted.
+play:
+  url: https://smallloopworks.itch.io/horizon-charge
+  embeddable: false
+  platforms:
+    - browser
+  controls:
+    - "A/D or arrow keys: steer"
+    - "Space / W / Up (hold): charge"
+    - "Mouse or touch: steer and charge"
+    - "Escape: pause"
+    - "Enter / Space: confirm and restart"
+creator:
+  name: Small Loop Works
+  handle: smallloopworks
+  links:
+    - https://smallloopworks.itch.io
+made:
+  models: []
+  tools: []
+  aiShare: some
+  source: AI Browser Game Jam 4 rules (most of each game AI-generated) and the
+    itch.io game page
+  evidence: creator
+tech:
+  engine: godot
+  multiplayer: single
+genres:
+  - arcade
+  - action
+jam:
+  event: ai-browser-game-jam-4
+  rank: 79
+  entries: 126
+media:
+  cover: games/horizon-charge/cover
+  screenshots:
+    - games/horizon-charge/shot-1
+    - games/horizon-charge/shot-2
+dates:
+  added: 2026-10-01
+  updated: 2026-10-01
+status: live
+provenance:
+  foundVia: scout:aibgj-4
