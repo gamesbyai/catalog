@@ -1,0 +1,65 @@
+slug: rimehold
+title: Rimehold
+tagline: Maze your towers to hold a frozen mountain pass, Warcraft 3 tower
+  defense style.
+description: "Rimehold: Siege of the Frozen Pass is a mazing tower defense game
+  that runs in the browser in 3D. You hold a snowbound pass against creeps by
+  placing towers so they form the maze the enemies have to walk.
+
+
+  Before a run you pick a watch, the game's word for difficulty. Recruit is
+  billed as a gentle introduction to mazing, with 60 lives, 360 starting gold,
+  half-strength creeps and bigger bounties. Warden is the intended challenge at
+  40 lives and 300 gold. Warlord and Rimebound drop to 25 and 15 lives with less
+  gold and smaller bounties, and Rimebound's own card says only the perfect maze
+  survives.
+
+
+  The mazing idea comes from Warcraft 3 custom maps, which the creator names as
+  the reference. According to the creator's submission, they left every design
+  decision to Claude and built the game with Claude Code, using Claude Opus 5.5
+  and Claude Sonnet 5.5. The title screen calls it an original game built with
+  Three.js with no external assets.
+
+
+  It's a single-player game for anyone who misses the tower defense maps of the
+  Warcraft 3 era and wants a clear difficulty ladder to climb."
+play:
+  url: https://malnourishd.itch.io/rimehold
+  platforms:
+    - browser
+  embedPermission:
+    by: submission
+    date: 2026-10-01
+  embeddable: false
+creator:
+  name: malny
+  handle: malny
+made:
+  models:
+    - claude-opus-5-5
+    - claude-sonnet-5-5
+  tools:
+    - claude-code
+  aiShare: all
+  source: "Creator's submission (issue #54)"
+  evidence: creator
+  notes: left all decisions to claude, yolo-d the whole thing referencing wc3 maps.
+tech:
+  engine: threejs
+  multiplayer: single
+genres:
+  - tower-defense
+  - strategy
+media:
+  cover: games/rimehold/cover
+  screenshots:
+    - games/rimehold/shot-1
+    - games/rimehold/shot-2
+dates:
+  added: 2026-10-01
+  updated: 2026-10-01
+status: live
+provenance:
+  foundVia: form
+  submittedBy: "#54"
