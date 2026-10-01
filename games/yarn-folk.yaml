@@ -1,0 +1,66 @@
+slug: yarn-folk
+title: Yarn Folk
+tagline: Shoot moth packs in the woods and bring spools back to relight a yarn town.
+description: >-
+  Yarn Folk is a 3D browser game set in a knit world. You inherit a farm from
+  your grandpa, along with his rifle. Moths have chewed the fiber cables that
+  power a nearby town, so you head into the wilds, lock onto moth packs, and
+  shoot them. Each one drops spools, which you carry back to a neighbor to
+  restore power to a district.
+
+
+  Power returns district by district, from the square to a final large one, and
+  each triggers a dusk cinematic as the lamps come on. Between hunts you grow
+  plants, tend animals, and knock on doors in a town with walking neighbors.
+  Movement includes a double jump, slide, dash, and air dash, with first- and
+  third-person cameras, seasons, and weather.
+
+
+  The creator lists Flux, TRELLIS.2, and Grok for art, and ACE-Step for music,
+  all used offline. Sound effects and animation come from existing libraries,
+  and the design is described as human-authored.
+play:
+  url: https://todd-dillerson.itch.io/yarn-folk
+  embeddable: false
+  platforms:
+    - browser
+  controls:
+    - WASD move
+    - Mouse look
+    - Left click or F shoot
+    - Right click lock on
+    - Space jump
+    - V switch camera
+creator:
+  name: todd_dillerson
+  handle: todd-dillerson
+  links:
+    - https://todd-dillerson.itch.io
+made:
+  models: []
+  tools: []
+  aiShare: some
+  source: AI Browser Game Jam 4 rules (most of each game AI-generated) and the
+    itch.io game page
+  evidence: creator
+tech:
+  engine: threejs
+  multiplayer: single
+genres:
+  - shooter
+  - simulation
+jam:
+  event: ai-browser-game-jam-4
+  rank: 60
+  entries: 126
+media:
+  cover: games/yarn-folk/cover
+  screenshots:
+    - games/yarn-folk/shot-1
+    - games/yarn-folk/shot-2
+dates:
+  added: 2026-10-01
+  updated: 2026-10-01
+status: live
+provenance:
+  foundVia: scout:aibgj-4

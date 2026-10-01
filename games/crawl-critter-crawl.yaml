@@ -1,0 +1,63 @@
+slug: crawl-critter-crawl
+title: Crawl, Critter, Crawl!
+tagline: Steer a tentacled critter through a micro cosmos, grabbing matter to
+  stay alive.
+description: >-
+  Crawl, Critter, Crawl! is a short survival game set in a microscopic alien
+  cosmos. You control a critter with four springy tentacles and move it around
+  to collect vital matter that keeps its lifespan ticking. A run is brief and
+  fast, and it ends when the critter's time runs out.
+
+
+  Not everything floating around helps you. Some matter adds five or ten seconds
+  to your lifespan, some paralyzes the critter for three seconds, and some
+  subtracts ten seconds or ends the run instantly, so each grab is a risk. A
+  two-critter mode turns the game into player-versus-player, played on a
+  controller, a keyboard, or a mix of both. The retro look and tentacle theme
+  fit the jam's Alien prompt.
+
+
+  The creator, addSoul, handled the concept, design, and visuals, with the
+  artwork made in Adobe Illustrator. Programming was done in collaboration with
+  Google Gemini Pro, which also produced the music, and the sound effects came
+  from Adobe Firefly. It was made for AI Browser Game Jam #2.
+play:
+  url: https://add-soul.itch.io/crawl-critter-crawl
+  embeddable: false
+  platforms:
+    - browser
+  controls:
+    - Keyboard
+    - Game controller
+creator:
+  name: addSoul play
+  handle: add-soul
+  links:
+    - https://add-soul.itch.io
+made:
+  models: []
+  tools: []
+  aiShare: some
+  source: AI Browser Game Jam 2 rules (at least half of each game AI-generated)
+    and the itch.io game page
+  evidence: creator
+tech:
+  multiplayer: single
+genres:
+  - survival
+  - action
+jam:
+  event: ai-browser-game-jam-2
+  rank: 12
+  entries: 42
+media:
+  cover: games/crawl-critter-crawl/cover
+  screenshots:
+    - games/crawl-critter-crawl/shot-1
+    - games/crawl-critter-crawl/shot-2
+dates:
+  added: 2026-10-01
+  updated: 2026-10-01
+status: live
+provenance:
+  foundVia: scout:aibgj-2

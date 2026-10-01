@@ -1,0 +1,56 @@
+slug: sevenshard
+title: sevenshard
+tagline: Fight through dungeons, raids and sea voyages as one of eight classes
+  in a browser MMO.
+description: >-
+  Sevenshard is an isometric action MMO that runs in a single browser tab,
+  modeled on the feel of Lost Ark. Players pick from eight classes and head into
+  chaos dungeons, guardian raids and a legion raid, fighting through encounters
+  in real time from a top-down angle.
+
+
+  Beyond the combat content, the game includes sailing between islands and co-op
+  play, which appears to use WebRTC for connecting players. Its scope is wide
+  for a browser project: multiple activity types, class variety and an open sea
+  to travel across.
+
+
+  Everything in the game is procedural, which the project's description applies
+  to its content overall. It is built on Three.js with Web Audio and WebGL, and
+  the creator's tooling lists Claude Code.
+play:
+  url: https://alexmorrison12.github.io/sevenshard
+  embeddable: true
+  platforms:
+    - browser
+repo: https://github.com/alexmorrison12/sevenshard
+creator:
+  name: alexmorrison12
+  handle: alexmorrison12
+made:
+  models: []
+  providers:
+    - anthropic
+  tools:
+    - claude-code
+  aiShare: unknown
+  source: GitHub repository README
+  evidence: repo
+  evidenceUrl: https://github.com/alexmorrison12/sevenshard
+tech:
+  engine: threejs
+  multiplayer: single
+genres:
+  - rpg
+  - action
+media:
+  cover: games/sevenshard/cover
+  screenshots:
+    - games/sevenshard/shot-1
+    - games/sevenshard/shot-2
+dates:
+  added: 2026-10-01
+  updated: 2026-10-01
+status: live
+provenance:
+  foundVia: scout:github
