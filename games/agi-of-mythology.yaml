@@ -2,20 +2,23 @@ slug: agi-of-mythology
 title: AGI of Mythology
 tagline: Command a research lab in a real-time fight over a central server.
 description: >-
-  In AGI of Mythology, the AI race is a real-time strategy match. You run a
-  research lab, rival labs compete for control of a single central server, and
-  whichever lab holds it long enough reaches AGI.
+  You start as a research lab with a Town Center, a stock of 500 Bio, 300 Mat
+  and 200 GPU, and two idle workers. The Town Center produces agents. A
+  first-mission card gives the order of play: build, gather, train, then take
+  the central server. It offers a "Show me" button and a "Skip" button.
 
 
-  The creator's stated goal was a strategy game friends can start playing
-  quickly in a browser, and it is built around quick multiplayer sessions that
-  also work on a phone. The creator says it was built with Codex for Vibe Jam
-  2026, where it ranked 309th of 945, and it renders in Three.js.
+  The central server sits on the map as the shared objective, and the lab that
+  holds it reaches AGI. A panel in the top right shows whether the server is
+  contested and lists each player with a timer, which starts at 5:00 for the
+  first player.
 
 
-  A match pulls you two ways: build up your own side, and contest the one
-  objective every lab wants. Holding the server is how a lab wins, so the
-  fighting keeps returning to that one location on the shared map.
+  The map is a 3D landscape of forests and pale mountains, seen from an angled
+  overhead camera. You select a unit or building and pick orders from a command
+  bar along the bottom, which also has a clear-selection button. A chat panel
+  lets you message other players in the match. The creator wanted a real-time
+  strategy game you can start quickly with friends in the browser.
 play:
   url: https://trussner.com/agi
   embeddable: true
@@ -51,7 +54,7 @@ media:
     - games/agi-of-mythology/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-09-29
+  updated: 2026-10-01
 status: live
 provenance:
   foundVia: scout:vibejam-2026

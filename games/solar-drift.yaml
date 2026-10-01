@@ -3,28 +3,33 @@ title: Solar Drift
 tagline: Fly a spacecraft between planets and slingshot around a true-scale
   solar system.
 description: >-
-  Solar Drift is space exploration at true scale. You pilot a sleek spacecraft
-  through a living solar system, traveling from world to world. Planetary
-  slingshots build your speed, and you cross the huge gaps between worlds at
-  light speed, on a course of your own choosing.
+  Solar Drift puts you at the controls of a small spacecraft in a true-scale
+  solar system, with worlds from the Sun down to tiny Pluto. A destinations
+  panel lists each body with its distance from the Sun and its light-travel
+  time. You can jump to a body, engage light-speed travel toward it, or enter a
+  size comparison view.
 
 
-  According to the creator, Codex, OpenAI's coding tool, was the main
-  development aid, with Three.js handling the 3D rendering in the browser. The
-  trip is themed around the Artemis II mission, and the game supports online
-  multiplayer in mobile and desktop browsers. It came 511th of 945 in Vibe Jam
-  2026.
+  The Earth entry opens Expedition 1, Earth Survey. You fly to a beacon near
+  Earth's observation shell and complete 3 scans. The route is marked 1 of 5 and
+  runs Earth, Moon, Mars, Jupiter, Saturn, with a points total shown beside the
+  task.
 
 
-  Every body is shown in true-scale perspective, from tiny Pluto to the blazing
-  Sun, so the distances and size differences between worlds are easy to see as
-  you fly.
+  Manual flight is active near Earth, and pressing Space boosts the ship to
+  light speed. A side panel describes the selected body, while readouts track
+  the nearest body, distance, ETA at light speed and ship speed. The theme is an
+  Artemis II mission, and a Vibe Portal marker with its distance appears in the
+  scene. The opening view shows a textured Earth with cloud cover, with the ship
+  sitting below it.
 play:
   url: https://solar.chikocorp.com
   embeddable: true
   platforms:
     - browser
     - mobile
+  controls:
+    - "Space: boost to light speed"
 creator:
   name: chikop2p
   handle: chikop2p
@@ -55,7 +60,7 @@ media:
     - games/solar-drift/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-09-29
+  updated: 2026-10-01
 status: live
 provenance:
   foundVia: scout:vibejam-2026

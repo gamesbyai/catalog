@@ -2,21 +2,20 @@ slug: rift-warden
 title: Rift Warden
 tagline: Defend a rift or attack it in asymmetric tower defense against players or bots.
 description: >-
-  Rift Warden is asymmetric tower defense in which every match lets you pick a
-  side of the rift. As the defender you place towers to stop the incoming waves.
-  As the attacker you send units to break through. Either way, the opponent is
-  another player or a bot.
+  The start screen asks for a display name, with a color swatch beside it, and a
+  choice of side. The Architect builds towers and defends the path. The Attacker
+  sends waves to break the line. Each side has a 1v1 button for a match against
+  another player and a solo button for a match against an AI.
 
 
-  Claude Code was used to make it, the creator says, with Three.js as the
-  engine, and it placed 270th of 945 in Vibe Jam 2026. The concept is
-  balloon-style tower defense crossed with chess, which gives the strategy a
-  more tactical, board-like feel than a standard wave defender.
+  A Survival mode is also listed, where the goal is to defend until the core
+  falls. Below the menu, tabs show open seats to join, live matches to spectate,
+  and a leaderboard for high scores.
 
 
-  The two roles play differently, so the same map can be approached from either
-  direction. A leaderboard tracks high scores, so a run can be replayed to climb
-  the rankings.
+  The two sides play differently: one places defenses, the other sends units
+  against them. The creator describes it as asymmetric tower defense, drawing on
+  balloon tower defense and chess, with matches against other players or bots.
 play:
   url: https://rift-warden.com
   embeddable: false
@@ -53,7 +52,7 @@ media:
     - games/rift-warden/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-09-29
+  updated: 2026-10-01
 status: live
 provenance:
   foundVia: scout:vibejam-2026

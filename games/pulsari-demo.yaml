@@ -2,25 +2,31 @@ slug: pulsari-demo
 title: PULSARI Demo
 tagline: Strike beat rings in four directions to bring hidden music out of the dark.
 description: >-
-  PULSARI is a rhythm arcade game built around a rotating nexus. Beat rings
-  converge on it from four directions, and you strike up, down, left or right as
-  each one arrives. Clean hits build a combo, while misses break it. Tracks are
-  short enough to restart instantly.
+  Beat rings rush toward a rotating center from four directions, and you strike
+  up, down, left or right as each one arrives. The song stays silent until you
+  earn it: a bass line enters at combo four, an arpeggio at sixteen, and the
+  full track opens at combo thirty-two. A miss breaks the combo and strips the
+  music back.
 
 
-  The music is layered into your performance. A bass line appears at combo four,
-  an arpeggio joins at sixteen, and the full song opens at thirty-two. There are
-  41 tracks across five sets, running from an 80 BPM tutorial to a 250 BPM
-  finale. Four difficulty modes tighten timing windows from 70 ms to 20 ms, and
-  audio and visual offsets can be calibrated separately.
+  This demo version makes three tracks playable. The full game has 40 or more
+  tracks across five sets, running from an 80 BPM tutorial through glitch-styled
+  and ambient-drift sets to a hardcore finale at 250 BPM. The demo's title
+  screen also lists an infinite mode and longer marathon tracks in the full
+  release.
 
 
-  Thirty cosmetic variants across sigil, aura, trail, hit effects and horizon
-  unlock through cleared sets, flawless runs, daily streaks and combo
-  milestones. It supports keyboard, gamepads and dance pads, offers three
-  languages, and saves progress locally. The creator's AI disclosure lists AI
-  assistance and sounds. The game uses flashing lights and beat-synced color
-  pulses.
+  Four difficulty modes tighten the timing window from plus or minus 70 ms on
+  Easy to 20 ms on Ultra. Separate audio and visual offset settings let you
+  calibrate to your hardware. Keyboard, gamepad and dance pads work, and
+  gamepads rumble on perfect hits.
+
+
+  Clearing sets, flawless runs, daily streaks and combo milestones unlock
+  cosmetic variants for sigil, aura, trail, hit effects and horizon. Progress
+  saves locally. The interface is available in English, Japanese and Simplified
+  Chinese. The game uses flashing lights and beat-synced color pulses, with
+  photosensitivity options in settings.
 play:
   url: https://critics-arcade.itch.io/pulsari
   embeddable: false
@@ -58,7 +64,7 @@ media:
     - games/pulsari-demo/shot-2
 dates:
   added: 2026-09-30
-  updated: 2026-09-30
+  updated: 2026-10-01
 status: live
 provenance:
   foundVia: scout:aibgj-3

@@ -2,26 +2,33 @@ slug: shoot-or-die
 title: Shoot or Die
 tagline: Grab a gun, shoot rival players, and be the last one standing.
 description: >-
-  In Shoot or Die, every player grabs a gun and has one job: be the last one
-  standing. It is an online multiplayer shooter where each round is about
-  staying alive while picking off everyone else, kept to quick rounds and a
-  simple win condition.
+  Type a callsign, press Enter the Arena, and pick PC or mobile. Move with WASD,
+  sprint with Shift, roll with Space, and press E to grab a gun from a weapon
+  pedestal. Then shoot the other players. The last one standing wins the round.
 
 
-  The concept started as a map the creator built in UEFN for Fortnite, and it
-  was kept deliberately small to fit a jam. The creator reports it running well
-  on phones, including an older Galaxy Note10 Lite.
+  On mobile, the controls are two joystick areas: one moves your character and
+  the other rotates it. The arena is an open grassy hill with trees and rocks
+  under a cloudy sky, and the rules are on screen before you enter: shoot, or
+  run.
 
 
-  They are an experienced UEFN and Unity developer but had never made a Three.js
-  game before. With Claude Code, they spent about a day and a half on the game,
-  server, and bug fixes, then another day and a half on polish and deployment.
+  The game is based on a map the creator had built earlier in UEFN. Claude Code
+  produced the game, the multiplayer server and bug fixes in about a day and a
+  half, followed by another day and a half of polish and deployment.
 play:
   url: https://play.fortlite.org
   embeddable: true
   platforms:
     - browser
     - mobile
+  controls:
+    - "WASD: move"
+    - "Shift: sprint"
+    - "Space: roll"
+    - "E: pick up weapon"
+    - "Left joystick area: move (mobile)"
+    - "Right joystick area: rotate (mobile)"
 creator:
   name: SuperAppGames
   handle: superappgames
@@ -52,7 +59,7 @@ media:
     - games/shoot-or-die/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-09-29
+  updated: 2026-10-01
 status: live
 provenance:
   foundVia: scout:vibejam-2026

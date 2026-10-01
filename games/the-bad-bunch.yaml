@@ -2,27 +2,31 @@ slug: the-bad-bunch
 title: The Bad Bunch
 tagline: Place monkey defenders to stop waves of bad bananas in a jungle last stand.
 description: >-
-  In The Bad Bunch the bananas have turned hostile, and a troop of jungle
-  monkeys is making its last stand. It is a tower-defense game in 3D, playable
-  on phones as well as desktop: you position monkey defenders to hold back each
-  wave of bad bananas, and the rounds move quickly.
+  You place monkey towers along a winding dirt path to stop waves of angry
+  bananas before they reach your city, which starts with 100 health and $200.
+  Each level opens with a mission card. Level 1 asks you to survive to Wave 20
+  for 3 gems.
 
 
-  It began as a father-and-son project, made together after the creator's
-  10-year-old son asked to create a game of his own. Bloons, one of the son's
-  favorites, was the inspiration, and the creator made it with Codex on
-  Three.js. Out of 945 Vibe Jam 2026 entries, it came 172nd.
+  The shop on the right lists four monkeys: Basic for $50, Ice for $75, Flame
+  for $150 and Lightning for $225. Lightning appears greyed out at the start. A
+  countdown shows when the next wave arrives and how many bananas are in it. A
+  selected tower can be sold or deselected.
 
 
-  That influence shows in the playful premise: monkeys on defense, bananas on
-  the attack. The tone stays humorous throughout, and the short, comic showdowns
-  keep sessions light.
+  Clearing a level pays out gems and unlocks the next one. Gems go toward monkey
+  upgrades, which you reach from the main menu, and levels 3 to 8 have been
+  added. During a run you can pause, switch between 1x and 2x speed, mute the
+  sound or go fullscreen. A father and his 10-year-old son made it together,
+  inspired by Bloons.
 play:
   url: https://thebadbunch.com
   embeddable: true
   platforms:
     - browser
     - mobile
+  controls:
+    - "Enter / Space: start mission"
 creator:
   name: joshua_lyon
   handle: joshua-lyon
@@ -53,7 +57,7 @@ media:
     - games/the-bad-bunch/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-09-29
+  updated: 2026-10-01
 status: live
 provenance:
   foundVia: scout:vibejam-2026

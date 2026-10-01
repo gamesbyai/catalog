@@ -2,26 +2,34 @@ slug: napless
 title: Napless
 tagline: Brawl as a toddler and race to grab the TV remote before nap time.
 description: >-
-  In Napless every player is a toddler, and there is only one TV remote. The
-  round is a race against nap time across an oversized living room, and on the
-  way to the remote you fight the other toddlers, throw toys and wreck the
-  furniture and clutter.
+  You play a toddler in a giant living room, running a 90-second sprint to hold
+  the TV remote before nap time wins. Grab cookies, bonk rival toddlers, and
+  fill the Chaos meter, which the HUD shows as a percentage.
 
 
-  The premise comes straight from parenting life: the creator has a toddler and
-  drew on that real experience. Codex was their tool, the result came 21st of
-  945 at Vibe Jam 2026, and it runs on phones as well as desktop.
+  Once Chaos reaches 100%, climb the TV toys to get to the remote. The HUD also
+  shows a Diaper meter and a snack count beside the Chaos bar. Toys can be
+  thrown, and the room is a 3D space you look around with the mouse.
 
 
-  Toys are the projectiles and the giant room is the arena, which gives the
-  chaos a playful, household flavor. Matches are fast and messy, and all of it
-  is a scramble for one object before nap time wins.
+  Click once to lock your aim, then bonk everything in reach. Before a round you
+  can type a player name, enter an optional private room code, and copy an
+  invite to share with friends.
+
+
+  Finishing runs earns badges and a toddler title. A public leaderboard ranks
+  the fastest completion times, with tabs for all time and for today. The
+  creator has a toddler and built the game from real life.
 play:
   url: https://playnapless.com
   embeddable: true
   platforms:
     - browser
     - mobile
+  controls:
+    - "WASD: move"
+    - "Mouse: look"
+    - "Click: lock aim, then bonk"
 creator:
   name: valeriogioia
   handle: valeriogioia
@@ -52,7 +60,7 @@ media:
     - games/napless/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-09-29
+  updated: 2026-10-01
 status: live
 provenance:
   foundVia: scout:vibejam-2026

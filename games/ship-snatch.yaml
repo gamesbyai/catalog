@@ -3,20 +3,22 @@ title: Ship Snatch
 tagline: Build a hex archipelago and defend your Captain's Keep from enemy ships
   and sea monsters.
 description: >-
-  In Ship Snatch you grow an archipelago one hex at a time and hold your
-  Captain's Keep against waves of enemy ships and sea monsters. The game is a
-  top-down tower defense and base builder at sea: expand the map, place
-  defenses, and upgrade them as the waves come.
+  The aim is to keep your castle standing as pirate ships and tentacled sea
+  creatures come at it in waves. You start on a top-down map of hexagonal tiles,
+  add land one hex at a time to grow an island chain, and place and upgrade
+  defenses on the ground you have claimed.
 
 
-  You can defend alone or in co-op with up to 32 players. The AI tools were
-  Cursor and the Gemini app, with Three.js handling the rendering.
+  Cannons sit on tiles around the central keep and fire at ships approaching
+  across the water, while tentacles rise from the sea nearby. Everything is
+  modeled in clay, with sand, grass and pond tiles, palm trees, coin piles and
+  barrels.
 
 
-  Growing the map and choosing where to fortify are part of the strategy, rather
-  than just placing towers along a fixed path. The pirate theme comes in a
-  claymation look, meant to be cute enough for kids while still giving adults
-  something to think about.
+  The title screen asks for a captain name, then offers Start Solo or Start
+  Multiplayer. Multiplayer is co-op, with a list of open rooms to join and a
+  global leaderboard. Play is real-time. The creator aimed for a look a
+  nine-year-old would enjoy that adults could still find worth playing.
 play:
   url: https://shipsnatch.com
   embeddable: true
@@ -54,7 +56,7 @@ media:
     - games/ship-snatch/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-09-29
+  updated: 2026-10-01
 status: live
 provenance:
   foundVia: scout:vibejam-2026

@@ -2,26 +2,32 @@ slug: hexport
 title: Hexport
 tagline: Teleport across the arena, slash enemies, and buy upgrades between runs.
 description: >-
-  Hexport is a 3D action game built around two moves: teleporting and slashing.
-  The player blinks around the arena and cuts through enemies, earning rewards
-  that feed an incremental upgrade system. Each run adds a bit more power, so
-  the next attempt starts from a stronger position.
+  You play a hexagon with a sword in a neon arena, surviving waves of enemies
+  for as long as you can. The cursor marks your teleport target, and the
+  character warps to it automatically once every second. Each warp triggers a
+  360-degree sword spin.
 
 
-  The appeal is in how the movement and the attack work together. Teleporting
-  doubles as both a way to dodge and a way to line up the next slash, and the
-  upgrades give the player reasons to keep going back for another run. The
-  creator said they wanted to make something new that nobody had seen before.
+  Two enemy types appear. Triangles chase you and die in one hit, and each kill
+  restores 1 HP. Pentagons shoot bullets, and a slash destroys them. Powerups
+  also drop in the arena, and you collect them by slashing them.
 
 
-  It was entered in Vibe Jam 2026 and runs on Three.js. According to the
-  creator, it was built with Claude Code, Anthropic's coding assistant, which
-  handled the programming work.
+  The start screen lists Warp+, Slash+ and Range+, each marked permanent, along
+  with Dual Blade, Immunity and HP +20. Before starting you can type a callsign
+  or roll a random one. A separate button leads to a portal.
+
+
+  During play a crosshair replaces the normal cursor, while the regular cursor
+  stays visible in menus. The creator describes it as a teleport and slash game
+  with incremental upgrades.
 play:
   url: https://darsaverse.github.io/HexportGame
   embeddable: true
   platforms:
     - browser
+  controls:
+    - "Mouse: set teleport target"
 creator:
   name: Damarhabibie
   handle: damarhabibie

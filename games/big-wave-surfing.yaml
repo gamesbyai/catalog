@@ -2,20 +2,20 @@ slug: big-wave-surfing
 title: Big Wave Surfing
 tagline: Paddle into big waves, carve the face, and grab stars before the foam hits.
 description: >-
-  Big Wave Surfing puts you in front of a large swell. You paddle out, catch the
-  wave and steer across its breaking face, carving past the stars scattered
-  along the ride and grabbing as many as you can.
+  Start by paddling the surfer toward a tall wave, then ride it along its
+  breaking face. Stars are placed along the ride to collect, and the foam is the
+  threat that ends the run if it catches you. The camera sits behind the surfer,
+  low over open water.
 
 
-  The feel of riding is the focus. The creator, rolznz, wanted people who have
-  never surfed, coworkers for example, to get a small taste of the joy of
-  catching a wave. That is why this 3D surfing simulation leans on simple wave
-  physics and smooth carving. Claude Code and Three.js were the creator's tools.
+  The first level is called Mellow Point. If you fail to catch the wave, the
+  round ends on a Missed the Wave screen. It lists time, top speed, average
+  speed, turns, tricks and score, with Retry and Menu buttons beneath.
 
 
-  The foam is the clock. It chases you down the wave, and if it catches up the
-  run ends, so every star is a question of whether you can grab it and still
-  stay ahead.
+  The setting is a bright daytime sea with scattered clouds and low hills along
+  the horizon. The creator built it for coworkers who have never surfed. It
+  focuses on the simple physics of being carried by a wave, not on tricks.
 play:
   url: https://bigwavesurfing.fun
   embeddable: true
@@ -52,7 +52,7 @@ media:
     - games/big-wave-surfing/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-09-29
+  updated: 2026-10-01
 status: live
 provenance:
   foundVia: scout:vibejam-2026

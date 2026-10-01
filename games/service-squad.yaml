@@ -2,21 +2,25 @@ slug: service-squad
 title: Service Squad
 tagline: Manage a repair business and fix broken things yourself in first person
 description: >-
-  In Service Squad you run a repair business from above, then switch to a
-  first-person view to fix the broken things yourself. Half of it is management
-  and half is hands-on repair, and a session is about balancing the business
-  side against the fieldwork.
+  Answer the incoming calls from customers who need something fixed. Read the
+  job on each request, then accept it or call the customer back later. You run
+  the service company as both the manager and the dispatcher, so every decision
+  is yours.
 
 
-  Tycoon-style decisions sit on one side and first-person repair work on the
-  other. Instead of only watching numbers, you step into the job itself, which
-  separates it from a typical management sim. It is built for casual sessions,
-  on a phone as well as a desktop.
+  Accepted jobs go to your technicians, and you choose who handles which one.
+  Hiring more technicians lets the crew work several jobs at once and raises how
+  much work the company can take on.
 
 
-  A solo developer made it for Vibe Jam 2026 with Flutter and Dart on the
-  frontend and a Node.js backend, using Antigravity. They say the project was a
-  way to learn how new AI tools work.
+  Management is only half of it. The game pairs the dispatching and
+  company-running side with first-person repair action. A short How To Play
+  panel opens the game and covers the call, accept and dispatch steps.
+
+
+  The art is cartoon style, with a headset-wearing dispatcher and a cap-wearing
+  technician as the main characters. The creator built it solo with Flutter and
+  Dart on the front end and a Node.js backend, to learn how the AI tools work.
 play:
   url: https://service-sim.netlify.app
   embeddable: true
@@ -52,7 +56,7 @@ media:
     - games/service-squad/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-09-29
+  updated: 2026-10-01
 status: live
 provenance:
   foundVia: scout:vibejam-2026

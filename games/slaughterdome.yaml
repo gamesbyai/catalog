@@ -2,20 +2,22 @@ slug: slaughterdome
 title: SlaughterDome
 tagline: Survive enemy waves in a shrinking dome, building walls and capturing flags.
 description: >-
-  SlaughterDome is arena survival inside a dome that keeps closing in. You fight
-  waves of enemies while the safe area contracts, pushing everyone toward the
-  center, and a run can be played solo or shared with others in co-op.
+  You fight waves of enemies inside an arena dome that shrinks with every wave.
+  Trees block both movement and bullets, so they work as cover. From wave 5,
+  toxic water pools appear and cut off escape routes, which leaves less room to
+  retreat as the dome closes in.
 
 
-  Three ideas share the arena. The shrinking circle comes from battle royales.
-  Walls go up on the fly for cover and to block enemies, and flag captures in
-  the spirit of classic arena shooters give the fighting a goal beyond staying
-  alive. The creator states it was made with Claude Code on Three.js, and it
-  came 183rd of 945 in Vibe Jam 2026.
+  You place walls to funnel enemies into narrow paths. Building combos unlocks
+  rare upgrades. Quake-style flag capture objectives sit alongside the survival
+  waves, so you have a goal to chase beyond staying alive.
 
 
-  So each wave asks two things at once: where to put up walls, and when to push
-  for a flag while the dome keeps shrinking around you.
+  Up to three fighters can team up in co-op. The title screen sets the game in
+  2089 and shows an armored, red-eyed warrior standing before a crowd of small,
+  colorful monsters. The creator combined the shrinking circle of battle royale
+  games, wall building from Fortnite, Roblox and Minecraft, and capture-the-flag
+  from Quake.
 play:
   url: https://slaughterdome.vercel.app
   embeddable: true
@@ -52,7 +54,7 @@ media:
     - games/slaughterdome/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-09-29
+  updated: 2026-10-01
 status: live
 provenance:
   foundVia: scout:vibejam-2026

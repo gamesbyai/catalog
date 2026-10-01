@@ -2,27 +2,30 @@ slug: vibe-party
 title: Vibe Party
 tagline: Race around a board and win chaotic minigames with cute AI-themed characters
 description: >-
-  Vibe Party is a multiplayer party board game with an AI theme. You move a cute
-  character around the board, jump into quick minigames, and try to come out
-  ahead of the other players, in short rounds that stay silly from start to
-  finish.
+  The title screen has three buttons: Quick Match, Online Party and Local Party.
+  Quick Match opens a board with four player cards in the corners. P1 is the
+  human player and P2 through P4 are CPU players. Each card starts with 3 tokens
+  and 0 RAM.
 
 
-  Mario Party was the main inspiration for the structure and mood. The creator
-  made it with Codex on Phaser to test how far AI-generated art and assets could
-  be pushed in a full party game, and its Vibe Jam 2026 finish was 158th of 945.
-  The look leans on AI-generated characters, backgrounds, and assets, which
-  gives the board a playful, cartoon feel.
+  The board is two connected rings of gold paths with a few crossing links.
+  Spaces are green, red or blue, and the blue ones carry a star. Small robot
+  figures stand on some spaces, and a Roll button sits in the center. A counter
+  at the top starts at Rounds 1/3, and a Hide button sits at the bottom edge.
 
 
-  Chaos is built into the design. Sudden moments can flip the standings, so a
-  player who is behind can still win.
+  Turns are played on the board, with quick minigames and chaotic moments that
+  can change who is ahead. The art is a green and gold circuit-board look with
+  cute robot characters. The creator took Mario Party as the model and wanted to
+  see how far AI-generated characters, backgrounds and assets could go.
 play:
   url: https://playvibeparty.com
   embeddable: true
   platforms:
     - browser
     - mobile
+  controls:
+    - "Roll button: roll"
 creator:
   name: simerdinger_sol
   handle: simerdinger-sol
@@ -53,7 +56,7 @@ media:
     - games/vibe-party/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-09-29
+  updated: 2026-10-01
 status: live
 provenance:
   foundVia: scout:vibejam-2026

@@ -2,22 +2,27 @@ slug: arkanoid-neon
 title: Arkanoid Neon
 tagline: Bounce a ball off a paddle to clear glowing neon brick levels.
 description: >-
-  Arkanoid Neon is a brick breaker in glowing neon. You steer a paddle along the
-  bottom of the screen, launch the ball and knock out the bricks above, where
-  silver blocks take several hits and gold ones cannot be destroyed at all.
+  Slide a paddle along the bottom of the screen to keep a ball in play and break
+  every block above it. Falling capsules marked with letters change the paddle
+  or ball: widen the paddle, slow the ball, catch it, split it into three, add a
+  life, or fire lasers.
 
 
-  Falling capsules change how the paddle and ball behave. There are seven: a
-  wider paddle, a slower ball, catch-and-aim, twin lasers, a triple ball, an
-  extra life and a portal in the right wall that skips to the next round. Eight
-  levels, from Rainbow to Fortress, loop at a faster pace afterward.
+  Eight hand-built rounds run in order, starting with Regnbågen, a rainbow of
+  colored rows under a row of silver blocks. Silver blocks take several hits,
+  and gold blocks cannot be destroyed. After the eighth round the set loops at a
+  faster tempo.
 
 
-  Particle bursts, shockwaves, screen shake and ball trails give hits weight,
-  and the synthwave soundtrack is generated live. The creator states that Claude
-  Opus 5.5, working through Claude Code, made all of the code, graphics, sound,
-  music and levels from a single one-sentence request. It is plain JavaScript
-  with Canvas 2D and Web Audio, and a fan project inspired by Taito's Arkanoid.
+  The B capsule opens a portal in the right wall. Drive the paddle into it to
+  skip to the next round for 10,000 points. An extra life arrives at every
+  30,000 points, and the high score is saved locally.
+
+
+  The look is neon: particle bursts, shockwaves, screen shake and a ball trail.
+  Sound effects and a synthwave soundtrack are generated live with Web Audio. An
+  AI-controlled demo plays on the title screen. Touch screens work by dragging
+  to move and tapping to shoot.
 play:
   url: https://jack-c3l2w.github.io/arkanoid-neon
   embeddable: true
@@ -57,7 +62,7 @@ media:
     - games/arkanoid-neon/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-09-30
+  updated: 2026-10-01
 status: live
 provenance:
   foundVia: scout:awesome-opus

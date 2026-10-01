@@ -2,27 +2,40 @@ slug: dogfight-run
 title: DogFight Run
 tagline: Fly a spaceship in fast multiplayer dogfights inspired by arena shooters.
 description: >-
-  DogFight Run is a multiplayer space shooter that takes the pace of a classic
-  arena shooter and moves it into open space. You pilot a spaceship against
-  other players in fast dogfights, chasing opponents down and shooting them
-  before they shoot you, in the browser or on a phone.
+  DogFight Run puts you in a spaceship in online space combat. You enter a
+  callsign, pick a mode and a graphics quality, and press Launch. The mouse
+  steers the ship and aims at the same time, so flying and targeting share one
+  input.
 
 
-  The creator, ElydanStudio, describes it as Quake 3 in space, with spaceships,
-  and says they had wanted to build it for a while before Vibe Jam 2026 gave
-  them the reason. It was made with Claude Code, with Three.js handling the 3D
-  space combat, and placed 145th of 945.
+  Three weapons sit on number keys: an infinite-ammo laser, a splash-damage
+  rocket and a hitscan railgun. Click fires the selected weapon. Shift
+  accelerates and Space brakes, while A/D roll, Q/E yaw and W/S act as a pitch
+  override.
 
 
-  That description shows in the emphasis on quick, competitive combat between
-  players rather than slow pacing, with every dogfight fought online against
-  another pilot in open space.
+  The launch screen offers four modes: FFA, TDM, CTF and ONS. Tab brings up the
+  scoreboard and Enter opens chat. C toggles the camera view, and F switches to
+  fullscreen. Quality can be set to low, medium or high before launch.
+
+
+  The creator describes it as Quake 3 in space with spaceships, a project wanted
+  for some time before it got built.
 play:
   url: https://dogfight.run
   embeddable: true
   platforms:
     - browser
     - mobile
+  controls:
+    - "Mouse: steer ship and aim"
+    - "A / D: roll left/right"
+    - "Q / E: yaw left/right"
+    - "Shift: accelerate"
+    - "Space: brake"
+    - "Click: fire weapon"
+    - "1 / 2 / 3: laser, rocket, railgun"
+    - "Tab: scoreboard"
 creator:
   name: ElydanStudio
   handle: elydanstudio
@@ -53,7 +66,7 @@ media:
     - games/dogfight-run/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-09-29
+  updated: 2026-10-01
 status: live
 provenance:
   foundVia: scout:vibejam-2026

@@ -2,20 +2,21 @@ slug: eurotune
 title: eurotune
 tagline: Answer Eurovision questions in a quick quiz built for phones and browsers.
 description: >-
-  In eurotune you answer questions about the Eurovision Song Contest to find out
-  how much you really know about it. It is a quick single-player quiz built for
-  phones as well as browsers, so a round works wherever you play: work through
-  the questions, pick your answers and see how you did.
+  The start screen offers three difficulty settings, Easy, Regular and Expert,
+  and a Start Playing button. Easy mode draws only from the top five grand-final
+  finishers of each year. The game plays five Eurovision song clips, one per
+  round.
 
 
-  The creator, k_vaiders, says it was made with a partner in mind, which gives
-  the project a personal touch. It is a small, focused project made for a game
-  jam, built with Cursor, and at Vibe Jam 2026 it came 156th of the 945 entries.
+  Each round opens with a clip. You then work through four questions about it:
+  the country that entered the song, the exact year it appeared in the contest,
+  the performing artist, and the song title. The game reveals the answers at the
+  end of the round.
 
 
-  The theme is clear enough that fans of the song contest can pick it up right
-  away. The core is trivia about the contest, with some puzzle elements mixed
-  in.
+  The questions come in a fixed order. You pick the country first, then the
+  year, then the artist, and you finish by choosing the title. A full game is
+  five clips, so you answer twenty questions in total.
 play:
   url: https://eurotune.net
   embeddable: true
@@ -49,7 +50,7 @@ media:
     - games/eurotune/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-09-29
+  updated: 2026-10-01
 status: live
 provenance:
   foundVia: scout:vibejam-2026

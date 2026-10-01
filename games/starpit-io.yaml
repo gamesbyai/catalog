@@ -2,21 +2,26 @@ slug: starpit-io
 title: Starpit.io
 tagline: Grow from a brown dwarf into a black hole by devouring rival bodies online.
 description: >-
-  Starpit.io starts you as a brown dwarf and asks you to eat your way up to a
-  primordial black hole. It is a real-time multiplayer .io game in space: you
-  consume rivals to gain mass and climb through larger stellar stages, where
-  bigger opponents are threats and smaller ones are food.
+  Starpit.io starts you as a brown dwarf in a real-time multiplayer space arena
+  shared with other players' stars. You grow by absorbing rivals and climb
+  through stellar stages, such as red dwarf, with the final goal of collapsing
+  into a primordial black hole.
 
 
-  The creator loves .io games and astrophysics and made this game with Claude
-  Code on Three.js to combine the two, and it finished 326th of 945 in Vibe Jam
-  2026. Movement and combat run on astrophysics: gravity follows an
-  inverse-square law, and you can slingshot around heavier bodies to gain speed.
+  Movement and combat follow physics instead of scripted rules. The simulation
+  includes inverse-square gravity, slingshots, tidal stripping, Hawking
+  radiation and spaghettification. The creator wanted to combine a love of .io
+  games with astrophysics.
 
 
-  Tidal stripping, spaghettification, Hawking radiation, and black-hole collapse
-  all shape how fights play out, so the physics drives the action instead of
-  scripted events.
+  A panel at bottom left shows your level, kills, mass and current stellar
+  stage. The top right lists the ten heaviest players by mass, plus your own
+  rank out of the players present. A feed at top left reports who absorbed,
+  crushed, overwhelmed or annihilated whom.
+
+
+  A circular minimap at bottom right marks where the other stars are. Stars
+  carry name labels, and a button on the right edge opens a webring portal.
 play:
   url: https://starpit.io
   embeddable: false
@@ -53,7 +58,7 @@ media:
     - games/starpit-io/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-09-29
+  updated: 2026-10-01
 status: live
 provenance:
   foundVia: scout:vibejam-2026
