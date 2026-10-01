@@ -1,0 +1,59 @@
+slug: gravity-golf
+title: Gravity Golf
+tagline: Guide a golf ball through solar systems using orbital pull
+description: >-
+  Gravity Golf is a puzzle game that takes golf into space. Each course is a
+  different solar system, and the player sends a ball across it toward the goal
+  while planets and stars pull on its path. Getting the ball home means reading
+  those pulls and planning the arc of each shot.
+
+
+  The idea comes from the creator's fascination with orbital mechanics after
+  playing Outer Wilds. That shows in the way the ball curves around bodies
+  instead of flying straight, so a good shot often uses a planet's gravity
+  rather than fighting it. Each system asks for a fresh read of the layout.
+
+
+  It is a 3D browser game built with Three.js and entered in Vibe Jam 2026. The
+  creator used Codex while making it. The game is playable on mobile devices as
+  well as desktop.
+play:
+  url: https://gravity-golf-olive.vercel.app
+  embeddable: true
+  platforms:
+    - browser
+    - mobile
+creator:
+  name: RichardGerum
+  handle: richardgerum
+  x: RichardGerum
+made:
+  models: []
+  providers:
+    - openai
+  tools:
+    - codex
+  aiShare: most
+  source: Vibe Jam 2026 submission form
+  evidence: creator
+tech:
+  engine: threejs
+  multiplayer: single
+genres:
+  - puzzle
+  - sports
+jam:
+  event: vibe-jam-2026
+  rank: 635
+  entries: 945
+media:
+  cover: games/gravity-golf/cover
+  screenshots:
+    - games/gravity-golf/shot-1
+    - games/gravity-golf/shot-2
+dates:
+  added: 2026-10-01
+  updated: 2026-10-01
+status: live
+provenance:
+  foundVia: scout:vibejam-2026

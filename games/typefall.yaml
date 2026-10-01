@@ -1,0 +1,56 @@
+slug: typefall
+title: Typefall
+tagline: Build your own words or race to match the target before the letters pile up.
+description: >-
+  Typefall is a fast word game that mixes action with puzzle play. Letters come
+  down the screen, and you either form words of your own or race to match a
+  target word before the board collapses. Each run is a contest between your
+  vocabulary and the clock.
+
+
+  The game combines free-form word building with a goal-driven mode, so you can
+  choose between making up your own words and chasing a specific target. That
+  pairing adds a strategic layer: you weigh speed against the value of a longer
+  word. It was a entry in Vibe Jam 2026 and runs on mobile as well.
+
+
+  The creator built it with Cursor and says the idea had been around for a
+  while, with AI making it feasible to finish. The game is rendered with PixiJS.
+play:
+  url: https://typefall.skyhighgames.com
+  embeddable: true
+  platforms:
+    - browser
+    - mobile
+creator:
+  name: skyhighgames042
+  handle: skyhighgames042
+  x: skyhighgames042
+made:
+  models: []
+  tools:
+    - cursor
+  aiShare: most
+  source: Vibe Jam 2026 submission form
+  evidence: creator
+tech:
+  engine: pixijs
+  multiplayer: single
+genres:
+  - word
+  - action
+jam:
+  event: vibe-jam-2026
+  rank: 627
+  entries: 945
+media:
+  cover: games/typefall/cover
+  screenshots:
+    - games/typefall/shot-1
+    - games/typefall/shot-2
+dates:
+  added: 2026-10-01
+  updated: 2026-10-01
+status: live
+provenance:
+  foundVia: scout:vibejam-2026

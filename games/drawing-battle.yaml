@@ -1,0 +1,56 @@
+slug: drawing-battle
+title: Drawing Battle
+tagline: Paint your way through fights in a 3D action game made for Vibe Jam.
+description: >-
+  Drawing Battle is an action game built around the idea of painting to fight.
+  The player uses paint as the way to take on opponents, turning drawing into
+  the main combat action rather than a side feature. It runs in the browser on a
+  3D scene and works on mobile devices.
+
+
+  The game was entered in Vibe Jam 2026, where it placed 655th out of 945
+  entries. Its short pitch, paint to fight, sums up the premise: color and
+  brushwork replace a typical weapon. The creator says it was made with their
+  son, which gives the project a personal, family-made feel.
+
+
+  The creator built it with Cursor, using Three.js for the 3D rendering. It is a
+  single-player experience that runs in a browser, so there is nothing to
+  install before playing.
+play:
+  url: https://drawing-battle-jam.netlify.app
+  embeddable: true
+  platforms:
+    - browser
+    - mobile
+creator:
+  name: WelkinHung
+  handle: welkinhung
+  x: WelkinHung
+made:
+  models: []
+  tools:
+    - cursor
+  aiShare: most
+  source: Vibe Jam 2026 submission form
+  evidence: creator
+tech:
+  engine: threejs
+  multiplayer: single
+genres:
+  - action
+jam:
+  event: vibe-jam-2026
+  rank: 655
+  entries: 945
+media:
+  cover: games/drawing-battle/cover
+  screenshots:
+    - games/drawing-battle/shot-1
+    - games/drawing-battle/shot-2
+dates:
+  added: 2026-10-01
+  updated: 2026-10-01
+status: live
+provenance:
+  foundVia: scout:vibejam-2026

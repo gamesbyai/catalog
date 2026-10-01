@@ -1,0 +1,59 @@
+slug: into-the-rift
+title: Into The Rift
+tagline: Draft a team of riftlings and auto-battle through the rift to defeat
+  the elite boss.
+description: >-
+  Into The Rift is an auto battler with roguelite structure. You draft a team of
+  riftlings, then send them through the rift one fight at a time. Battles play
+  out on their own, so the decisions that matter come from which creatures you
+  pick and how the squad fits together. The run ends at an elite boss.
+
+
+  The game draws on the creature-collecting appeal of Pokemon and the run-based
+  loop of roguelites, according to the creator's stated inspiration. Team
+  building is the main lever: each draft shapes how a run unfolds, which gives
+  repeat attempts a reason to try a different roster. The rough-lite framing
+  keeps the structure compact and focused on the draft and the fights.
+
+
+  It was built with Phaser and made with the help of Claude Code, as the creator
+  tells it, and it was entered in Vibe Jam 2026 with a small, focused scope.
+play:
+  url: https://intotherift.riftling.com
+  embeddable: true
+  platforms:
+    - browser
+creator:
+  name: Nolxander
+  handle: nolxander
+  x: Nolxander
+made:
+  models: []
+  providers:
+    - anthropic
+  tools:
+    - claude-code
+  aiShare: most
+  source: Vibe Jam 2026 submission form
+  evidence: creator
+tech:
+  engine: phaser
+  multiplayer: single
+genres:
+  - strategy
+  - roguelike
+jam:
+  event: vibe-jam-2026
+  rank: 607
+  entries: 945
+media:
+  cover: games/into-the-rift/cover
+  screenshots:
+    - games/into-the-rift/shot-1
+    - games/into-the-rift/shot-2
+dates:
+  added: 2026-10-01
+  updated: 2026-10-01
+status: live
+provenance:
+  foundVia: scout:vibejam-2026

@@ -1,0 +1,56 @@
+slug: wallflipper
+title: Wallflipper
+tagline: Race through a neon corridor, flipping gravity to dodge obstacles and
+  grab objects.
+description: >-
+  Wallflipper is a racing game set inside a neon corridor. The player runs along
+  the floor, the walls, and the ceiling, flipping gravity to move between
+  surfaces. Obstacles block the way, so each run is about timing the flips to
+  dodge them while picking up objects along the route.
+
+
+  The central mechanic is the gravity flip, which turns the whole corridor into
+  a track. Instead of steering left and right on one surface, the player chooses
+  which surface to use at each moment. The neon look keeps the corridor readable
+  as it rushes past.
+
+
+  Wallflipper was built with Three.js as an entry in Vibe Jam 2026, a game jam
+  that drew 945 entries in total. It placed 611th in the final ranking, and it
+  is a compact, single-player browser project.
+play:
+  url: https://expectfun.github.io/vibetools/wallflipper.html
+  embeddable: true
+  platforms:
+    - browser
+creator:
+  name: phillennium
+  handle: phillennium
+  x: phillennium
+made:
+  models: []
+  tools: []
+  aiShare: most
+  source: Vibe Jam 2026 submission form
+  evidence: inferred
+tech:
+  engine: threejs
+  multiplayer: single
+genres:
+  - racing
+  - arcade
+jam:
+  event: vibe-jam-2026
+  rank: 611
+  entries: 945
+media:
+  cover: games/wallflipper/cover
+  screenshots:
+    - games/wallflipper/shot-1
+    - games/wallflipper/shot-2
+dates:
+  added: 2026-10-01
+  updated: 2026-10-01
+status: live
+provenance:
+  foundVia: scout:vibejam-2026

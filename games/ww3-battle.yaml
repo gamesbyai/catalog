@@ -1,0 +1,59 @@
+slug: ww3-battle
+title: WW3 Battle
+tagline: Fly modern warplanes through mission scenarios set in an imagined World
+  War III.
+description: >-
+  WW3 Battle is a browser air combat game set in an imagined third world war.
+  The player takes the controls of modern military aircraft and flies missions
+  built around that conflict, with a mix of strategy and flight simulation ideas
+  shaping each sortie.
+
+
+  The design aims for a middle ground between simple button-clicking war games
+  and heavy simulators that demand a thick manual. The creator wanted players to
+  sit down quickly and get a feel for flying these aircraft, and the build lets
+  you try the basic aircraft on offer.
+
+
+  The creator started vibecoding the project in mid-April with Claude Code, then
+  finished most of it for Vibe Jam 2026 after finding the event on Twitter. The
+  creator describes the result as almost complete, and it placed 617th among 945
+  entries.
+play:
+  url: https://ww3battle.softland.tech
+  embeddable: false
+  platforms:
+    - browser
+creator:
+  name: abdallacoder
+  handle: abdallacoder
+  x: abdallacoder
+made:
+  models: []
+  providers:
+    - anthropic
+  tools:
+    - claude-code
+  aiShare: most
+  source: Vibe Jam 2026 submission form
+  evidence: creator
+tech:
+  multiplayer: single
+genres:
+  - simulation
+  - strategy
+jam:
+  event: vibe-jam-2026
+  rank: 617
+  entries: 945
+media:
+  cover: games/ww3-battle/cover
+  screenshots:
+    - games/ww3-battle/shot-1
+    - games/ww3-battle/shot-2
+dates:
+  added: 2026-10-01
+  updated: 2026-10-01
+status: live
+provenance:
+  foundVia: scout:vibejam-2026

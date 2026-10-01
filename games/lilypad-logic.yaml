@@ -1,0 +1,55 @@
+slug: lilypad-logic
+title: Lilypad Logic
+tagline: Guide a frog across a sinking pond, eating every fly before reaching home.
+description: >-
+  Lilypad Logic is a grid-based puzzle game in which you steer a frog across a
+  pond that is slowly sinking. Each level asks you to eat every fly on the
+  board, then reach the home tile. You plan your hops carefully, since the
+  surface under you does not stay put.
+
+
+  The puzzle mechanics build on each other. Logs carry the frog along, and
+  crumbling lily pads give way after use, so the order of your moves matters as
+  much as the route. Music and visual effects accompany the hopping, and the
+  game is playable on mobile devices.
+
+
+  The creator built it with Cursor for Vibe Jam 2026. The stated aim was to see
+  how quickly AI-assisted coding could turn a simple frog-on-a-grid prototype
+  into a complete puzzle game with several mechanics, music, and visual effects.
+play:
+  url: https://lilypadlogic.pages.dev
+  embeddable: true
+  platforms:
+    - browser
+    - mobile
+creator:
+  name: AnkushDutt_
+  handle: ankushdutt
+  x: AnkushDutt_
+made:
+  models: []
+  tools:
+    - cursor
+  aiShare: most
+  source: Vibe Jam 2026 submission form
+  evidence: creator
+tech:
+  multiplayer: single
+genres:
+  - puzzle
+jam:
+  event: vibe-jam-2026
+  rank: 618
+  entries: 945
+media:
+  cover: games/lilypad-logic/cover
+  screenshots:
+    - games/lilypad-logic/shot-1
+    - games/lilypad-logic/shot-2
+dates:
+  added: 2026-10-01
+  updated: 2026-10-01
+status: live
+provenance:
+  foundVia: scout:vibejam-2026

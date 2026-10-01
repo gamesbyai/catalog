@@ -1,0 +1,58 @@
+slug: hexport
+title: Hexport
+tagline: Teleport across the arena, slash enemies, and buy upgrades between runs.
+description: >-
+  Hexport is a 3D action game built around two moves: teleporting and slashing.
+  The player blinks around the arena and cuts through enemies, earning rewards
+  that feed an incremental upgrade system. Each run adds a bit more power, so
+  the next attempt starts from a stronger position.
+
+
+  The appeal is in how the movement and the attack work together. Teleporting
+  doubles as both a way to dodge and a way to line up the next slash, and the
+  upgrades give the player reasons to keep going back for another run. The
+  creator said they wanted to make something new that nobody had seen before.
+
+
+  It was entered in Vibe Jam 2026 and runs on Three.js. According to the
+  creator, it was built with Claude Code, Anthropic's coding assistant, which
+  handled the programming work.
+play:
+  url: https://darsaverse.github.io/HexportGame
+  embeddable: true
+  platforms:
+    - browser
+creator:
+  name: Damarhabibie
+  handle: damarhabibie
+  x: Damarhabibie
+made:
+  models: []
+  providers:
+    - anthropic
+  tools:
+    - claude-code
+  aiShare: most
+  source: Vibe Jam 2026 submission form
+  evidence: creator
+tech:
+  engine: threejs
+  multiplayer: single
+genres:
+  - action
+  - idle
+jam:
+  event: vibe-jam-2026
+  rank: 621
+  entries: 945
+media:
+  cover: games/hexport/cover
+  screenshots:
+    - games/hexport/shot-1
+    - games/hexport/shot-2
+dates:
+  added: 2026-10-01
+  updated: 2026-10-01
+status: live
+provenance:
+  foundVia: scout:vibejam-2026

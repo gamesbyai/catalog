@@ -1,0 +1,62 @@
+slug: anti-marathon-game
+title: Anti Marathon Game
+tagline: Play a Madrid pigeon dodging runners, energy gels, and selfie-stick
+  influencers.
+description: >-
+  Anti Marathon Game is a satirical action game set during a marathon on Calle
+  Alcalá in Madrid. You play a street pigeon whose block has been shut down and
+  filled with runners. Each run is a scramble to stay alive by dodging the
+  crowd, sticky energy gels on the pavement, and influencers filming with selfie
+  sticks.
+
+
+  The joke is the flipped perspective. Instead of running the race, you are a
+  local bird stuck in the middle of it, surrounded by runners wearing expensive
+  GPS watches and so-called runfluencers chasing content. The creators describe
+  it as a satirical love letter to running culture and the chaos of the city's
+  streets.
+
+
+  It was built for Vibe Jam 2026 with Three.js, and the creator states that
+  Claude Code was used in making it. The game is playable on mobile as well as
+  on desktop.
+play:
+  url: https://antimarathongame.sgty.es
+  embeddable: true
+  platforms:
+    - browser
+    - mobile
+creator:
+  name: soyAlvaroMarin
+  handle: soyalvaromarin
+  x: soyAlvaroMarin
+made:
+  models: []
+  providers:
+    - anthropic
+  tools:
+    - claude-code
+  aiShare: most
+  source: Vibe Jam 2026 submission form
+  evidence: creator
+tech:
+  engine: threejs
+  multiplayer: single
+genres:
+  - action
+  - arcade
+jam:
+  event: vibe-jam-2026
+  rank: 597
+  entries: 945
+media:
+  cover: games/anti-marathon-game/cover
+  screenshots:
+    - games/anti-marathon-game/shot-1
+    - games/anti-marathon-game/shot-2
+dates:
+  added: 2026-10-01
+  updated: 2026-10-01
+status: live
+provenance:
+  foundVia: scout:vibejam-2026

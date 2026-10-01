@@ -1,0 +1,59 @@
+slug: smashparty
+title: Smashparty
+tagline: Battle friends on a chaotic multiplayer board in a browser party game
+description: >-
+  Smashparty is a multiplayer party game built around a chaotic board battle.
+  Players share one arena, rush around it, and try to outlast or outscore one
+  another in short, noisy rounds. It runs in the browser in 3D and is playable
+  on mobile devices as well as desktop.
+
+
+  The game mixes action, platforming, and adventure elements, and the tone leans
+  toward party-game mayhem rather than careful strategy. It was made for Vibe
+  Jam 2026, where it was one of 945 entries, and it draws on the spirit of Pumel
+  Party, the jam project it takes its cue from.
+
+
+  The creator built it with Claude Code, using Three.js for the 3D scene. That
+  keeps the game light enough to open from a link and start a match with friends
+  without installing anything.
+play:
+  url: https://smashparty.toolbox.md
+  embeddable: true
+  platforms:
+    - browser
+    - mobile
+creator:
+  name: lukemaj_
+  handle: lukemaj
+  x: lukemaj_
+made:
+  models: []
+  providers:
+    - anthropic
+  tools:
+    - claude-code
+  aiShare: most
+  source: Vibe Jam 2026 submission form
+  evidence: creator
+tech:
+  engine: threejs
+  multiplayer: online
+genres:
+  - party
+  - action
+jam:
+  event: vibe-jam-2026
+  rank: 660
+  entries: 945
+media:
+  cover: games/smashparty/cover
+  screenshots:
+    - games/smashparty/shot-1
+    - games/smashparty/shot-2
+dates:
+  added: 2026-10-01
+  updated: 2026-10-01
+status: live
+provenance:
+  foundVia: scout:vibejam-2026

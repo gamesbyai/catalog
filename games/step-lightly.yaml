@@ -1,0 +1,57 @@
+slug: step-lightly
+title: Step Lightly
+tagline: Sneak through a dark ranch house where every footstep lights your way
+  and alerts a monster
+description: >-
+  Step Lightly is a first-person stealth horror game set in a dark ranch house.
+  The player moves through the rooms while a monster hunts nearby. Footsteps are
+  the only source of light, so each step reveals a little of the surroundings
+  and also makes noise the creature can follow.
+
+
+  Movement, visibility, and danger all hang on one mechanic. Walking lets you
+  see but gives your position away, while standing still keeps you quiet and
+  leaves you blind. That trade-off turns each room into a question of when to
+  step and when to wait, with the monster reacting to the sounds you make.
+
+
+  The creator built it with Bolt and Three.js for Vibe Jam 2026, where it placed
+  639th out of 945 entries. The creator says the aim was to tie movement,
+  visibility, and danger to a single mechanic.
+play:
+  url: https://sweetingtech.github.io/Step_Lightly
+  embeddable: true
+  platforms:
+    - browser
+creator:
+  name: DJay
+  handle: djay
+  x: DJay
+made:
+  models: []
+  tools:
+    - bolt
+  aiShare: most
+  source: Vibe Jam 2026 submission form
+  evidence: creator
+tech:
+  engine: threejs
+  multiplayer: single
+genres:
+  - horror
+  - stealth
+jam:
+  event: vibe-jam-2026
+  rank: 639
+  entries: 945
+media:
+  cover: games/step-lightly/cover
+  screenshots:
+    - games/step-lightly/shot-1
+    - games/step-lightly/shot-2
+dates:
+  added: 2026-10-01
+  updated: 2026-10-01
+status: live
+provenance:
+  foundVia: scout:vibejam-2026

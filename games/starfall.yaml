@@ -1,0 +1,59 @@
+slug: starfall
+title: Starfall
+tagline: Pilot a spaceship in a duel to the death against one opposing ship
+description: >-
+  Starfall is a one-on-one space combat game in which two spaceships fight until
+  one is destroyed. Each match is a single duel: you maneuver your ship, line up
+  shots, and try to outlast the opponent in a fight where there is no retreat
+  once the battle begins.
+
+
+  The game is an homage to the Melee mode from Star Control 2, and that lineage
+  shapes its focus on a compact arena duel rather than a long campaign. It sits
+  in the action and shooter space, built around quick, direct encounters between
+  two craft. Starfall was entered in Vibe Jam 2026 and runs on a canvas.
+
+
+  The creator built it with Codex and named the tool's ability to generate
+  images internally as the standout help, saying it saved a great deal of time.
+  That meant the visual art could come from the same tool that handled the
+  coding work, which kept the project moving during the jam.
+play:
+  url: https://sfmelee.pages.dev
+  embeddable: true
+  platforms:
+    - browser
+creator:
+  name: kashprime
+  handle: kashprime
+  x: kashprime
+made:
+  models: []
+  providers:
+    - openai
+  tools:
+    - codex
+  aiShare: most
+  source: Vibe Jam 2026 submission form
+  evidence: creator
+tech:
+  engine: canvas
+  multiplayer: single
+genres:
+  - action
+  - shooter
+jam:
+  event: vibe-jam-2026
+  rank: 638
+  entries: 945
+media:
+  cover: games/starfall/cover
+  screenshots:
+    - games/starfall/shot-1
+    - games/starfall/shot-2
+dates:
+  added: 2026-10-01
+  updated: 2026-10-01
+status: live
+provenance:
+  foundVia: scout:vibejam-2026

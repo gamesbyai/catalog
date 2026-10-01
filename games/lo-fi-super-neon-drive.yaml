@@ -1,0 +1,60 @@
+slug: lo-fi-super-neon-drive
+title: Lo-Fi Super Neon Drive
+tagline: Race neon-lit tracks against other players in a vaporwave arcade driver
+description: >-
+  Lo-Fi Super Neon Drive is a competitive arcade racer set in a vaporwave world
+  of glowing lights and synth-flavored atmosphere. Players put the pedal down on
+  neon tracks and race against other people, aiming to cross the line ahead of
+  the pack in a quick, friendly contest.
+
+
+  The appeal is in the mood. The visual style leans into pink and cyan glow, and
+  the lo-fi soundtrack gives each race a relaxed, laid-back feel rather than a
+  frantic one. Multiplayer is part of the design, so the competition comes from
+  real opponents instead of only a lap timer. It also runs on mobile, which
+  makes a short race easy to start anywhere.
+
+
+  The creator made it for Vibe Jam 2026, where it placed 636th out of 945
+  entries. It is built with the PixiJS rendering library, and the creator used
+  Antigravity, Google's AI coding tool, during development.
+play:
+  url: https://superneon.421723.xyz
+  embeddable: true
+  platforms:
+    - browser
+    - mobile
+creator:
+  name: akaktus01
+  handle: akaktus01
+  x: akaktus01
+made:
+  models: []
+  providers:
+    - google
+  tools:
+    - antigravity
+  aiShare: most
+  source: Vibe Jam 2026 submission form
+  evidence: creator
+tech:
+  engine: pixijs
+  multiplayer: online
+genres:
+  - racing
+  - arcade
+jam:
+  event: vibe-jam-2026
+  rank: 636
+  entries: 945
+media:
+  cover: games/lo-fi-super-neon-drive/cover
+  screenshots:
+    - games/lo-fi-super-neon-drive/shot-1
+    - games/lo-fi-super-neon-drive/shot-2
+dates:
+  added: 2026-10-01
+  updated: 2026-10-01
+status: live
+provenance:
+  foundVia: scout:vibejam-2026

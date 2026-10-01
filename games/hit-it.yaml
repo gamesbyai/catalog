@@ -1,0 +1,56 @@
+slug: hit-it
+title: hit-it
+tagline: Build your own setup and bonk polygons until they disappear
+description: >-
+  Hit-it is a browser action game with idle and clicker leanings. The player
+  puts together a custom build and uses it to bonk polygons out of existence.
+  Each run is about striking the shapes again and again, clearing them from the
+  screen, and seeing how well the chosen build handles them.
+
+
+  What stands out is the build system. Rather than repeating the same attack
+  every time, the player shapes their own setup, and those choices change how
+  the polygon smashing plays out. The geometric targets keep the screen simple
+  and readable, which suits short sessions of hitting, clearing, and tweaking.
+
+
+  Hit-it was entered in Vibe Jam 2026, where it placed 606th among 945 entries.
+  Codex from OpenAI is the tool associated with its creation.
+play:
+  url: https://hit-it.tatsudev.net
+  embeddable: true
+  platforms:
+    - browser
+creator:
+  name: TatsuDeveloper
+  handle: tatsudeveloper
+  x: TatsuDeveloper
+made:
+  models: []
+  providers:
+    - openai
+  tools:
+    - codex
+  aiShare: most
+  source: Vibe Jam 2026 submission form
+  evidence: creator
+tech:
+  multiplayer: single
+genres:
+  - action
+  - idle
+jam:
+  event: vibe-jam-2026
+  rank: 606
+  entries: 945
+media:
+  cover: games/hit-it/cover
+  screenshots:
+    - games/hit-it/shot-1
+    - games/hit-it/shot-2
+dates:
+  added: 2026-10-01
+  updated: 2026-10-01
+status: live
+provenance:
+  foundVia: scout:vibejam-2026

@@ -1,0 +1,59 @@
+slug: escape-from-xibalba
+title: Escape From Xibalba
+tagline: Crawl through a procedural dark maze, light torches, steal relics and
+  survive bosses.
+description: >-
+  Escape From Xibalba is a first-entry-into-darkness maze crawl set in Xibalba,
+  the Maya underworld. Each run generates a new maze. You move through its
+  corridors lighting torches, taking relics, and facing bosses, all while
+  looking for an exit that may not exist.
+
+
+  The procedural layout means the dark corridors change from run to run, and
+  light is part of the tension: torches are how you push back the gloom. Relics
+  and boss encounters give the crawl clear milestones, and the premise keeps a
+  sense of dread about whether escape is even possible.
+
+
+  The game was built in Three.js as an entry in Vibe Jam 2026. The creator used
+  Claude Code and said they had always wanted to make a game and treated the jam
+  as the push to finally do it.
+play:
+  url: https://xibalba.monkeyscript.com
+  embeddable: true
+  platforms:
+    - browser
+creator:
+  name: fmatzdorf
+  handle: fmatzdorf
+  x: fmatzdorf
+made:
+  models: []
+  providers:
+    - anthropic
+  tools:
+    - claude-code
+  aiShare: most
+  source: Vibe Jam 2026 submission form
+  evidence: creator
+tech:
+  engine: threejs
+  multiplayer: single
+genres:
+  - adventure
+  - horror
+jam:
+  event: vibe-jam-2026
+  rank: 659
+  entries: 945
+media:
+  cover: games/escape-from-xibalba/cover
+  screenshots:
+    - games/escape-from-xibalba/shot-1
+    - games/escape-from-xibalba/shot-2
+dates:
+  added: 2026-10-01
+  updated: 2026-10-01
+status: live
+provenance:
+  foundVia: scout:vibejam-2026

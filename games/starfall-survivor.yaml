@@ -1,0 +1,59 @@
+slug: starfall-survivor
+title: Starfall-Survivor
+tagline: Fight waves of enemies in a 3D arena and pick upgrades for your star blades.
+description: >-
+  Starfall-Survivor is a 3D arena survival brawler where you play a void hunter
+  fighting to be the last one standing. Attacks fire automatically, so a run is
+  about positioning against waves of enemies while your star blades do the
+  cutting. Each level-up offers a choice of upgrades.
+
+
+  The appeal is watching a build take shape. Because the weapon works on its
+  own, the decisions come from which upgrade to take at each level and how to
+  move through the arena. The stylish 3D look keeps the action readable as the
+  waves grow.
+
+
+  It was entered in Vibe Jam 2026, where it placed 625th out of 945 entries. The
+  creator lists ChatGPT as the tool behind it, and it runs on Three.js with
+  support for mobile devices.
+play:
+  url: https://bold-term-81c2.david-hsu-d53.workers.dev
+  embeddable: true
+  platforms:
+    - browser
+    - mobile
+creator:
+  name: David282213
+  handle: david282213
+  x: David282213
+made:
+  models: []
+  providers:
+    - openai
+  tools:
+    - chatgpt
+  aiShare: most
+  source: Vibe Jam 2026 submission form
+  evidence: creator
+tech:
+  engine: threejs
+  multiplayer: single
+genres:
+  - action
+  - roguelike
+jam:
+  event: vibe-jam-2026
+  rank: 625
+  entries: 945
+media:
+  cover: games/starfall-survivor/cover
+  screenshots:
+    - games/starfall-survivor/shot-1
+    - games/starfall-survivor/shot-2
+dates:
+  added: 2026-10-01
+  updated: 2026-10-01
+status: live
+provenance:
+  foundVia: scout:vibejam-2026

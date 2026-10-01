@@ -1,0 +1,54 @@
+slug: skybeam-abduct
+title: Skybeam Abduct
+tagline: Abduct people with a UFO beam while fighting off the military
+description: >-
+  Skybeam Abduct is an action game about a UFO carrying out abductions. The
+  player pilots the craft and uses its beam to pull targets up from the ground,
+  while military forces move in to stop the operation and have to be fought off.
+
+
+  The game is framed around UFO disclosure, so the abductions play out against a
+  story of secrets coming into the open. The mix of beam-based collecting and
+  combat against the military gives each session two jobs: keep grabbing targets
+  and keep the craft alive.
+
+
+  It was entered in Vibe Jam 2026, and the creator built it with Lovable. The
+  creator says it comes from a long-held wish to break into game development,
+  which they have had since age twelve.
+play:
+  url: https://sky-beam-abduct.lovable.app
+  embeddable: true
+  platforms:
+    - browser
+creator:
+  name: Infinite79Mr
+  handle: infinite79mr
+  x: Infinite79Mr
+made:
+  models: []
+  tools:
+    - lovable
+  aiShare: most
+  source: Vibe Jam 2026 submission form
+  evidence: creator
+tech:
+  multiplayer: single
+genres:
+  - action
+  - arcade
+jam:
+  event: vibe-jam-2026
+  rank: 624
+  entries: 945
+media:
+  cover: games/skybeam-abduct/cover
+  screenshots:
+    - games/skybeam-abduct/shot-1
+    - games/skybeam-abduct/shot-2
+dates:
+  added: 2026-10-01
+  updated: 2026-10-01
+status: live
+provenance:
+  foundVia: scout:vibejam-2026
