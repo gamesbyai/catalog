@@ -2,12 +2,14 @@
 // Captures a cover and two screenshots per game: node scripts/capture.mjs <slug…>
 // Game pages are untrusted code. This runs in CI's capture job, which has no secrets and a read-only token, and, for
 // games CI's software renderer can't draw, on a maintainer's machine with a GPU (`--gpu` or `--chrome`: a fresh
-// temporary profile, downloads refused, no file pickers, nothing uploaded from here).
+// temporary profile, Chrome's GPU blocklist kept, downloads refused, no file pickers, no clipboard writes, nothing
+// uploaded from here).
 // Every game gets a fresh browser context, a hard deadline kept by Node (not by Playwright), and nothing
 // from the page is ever read back except the pixels of the screenshots, and on itch.io the address of the game's
 // own frame, which must match itch's CDN pattern (itchFrame). The opt-in start step (CAPTURE_START, startGame) also
-// asks the page whether a Start or Play button or a name field is visible; those answers only decide a click and
-// are never saved or logged.
+// asks the page whether a Start or Play button or a name field is visible, and before every click or key whether its
+// target is a link or a control that isn't the game's (pressCheck); those answers only decide a press and are never
+// saved or logged.
 // Games whose creator sent screenshots with the submission (provenance.uploads) are never captured; the upload job
 // fetches those instead. node scripts/capture.mjs --split <slug-list file> prints { capture, uploads } for the workflow.
 import { mkdirSync, mkdtempSync, rmSync, rmdirSync, writeFileSync, readFileSync, existsSync, copyFileSync } from 'node:fs';
@@ -54,6 +56,9 @@ export const DEFAULTS = {
   // back to its WebGL renderer, as it does on CI.
   webgl: false,
   chrome: false, // local only (`--chrome`): the installed Google Chrome instead of Playwright's Chromium
+  // Local only (`--rooms`): the start step may join a room from a list with player counts. A public room can hold
+  // strangers whose names and chat would end up in the cover, so CI never does this.
+  rooms: false,
 };
 
 class CaptureError extends Error {
@@ -122,10 +127,11 @@ let launchedAs = null;
 /**
  * Launch options: CI's software renderer, or (gpu/headed/chrome, local only) a full browser on the machine's GPU:
  * Playwright's Chromium, or the installed Google Chrome (`chrome`), whose WebGPU draws some games that Chromium leaves
- * half blank. Both start from a fresh temporary profile.
+ * half blank. Both start from a fresh temporary profile. A local browser keeps Chrome's GPU blocklist: untrusted WebGL
+ * and WebGPU never run on a driver Chrome has blocked.
  */
 export function launchOptions({ sandbox = DEFAULTS.sandbox, gpu = false, headed = false, chrome = false } = {}) {
-  if (gpu || headed || chrome) return { headless: !headed, channel: chrome ? 'chrome' : 'chromium', chromiumSandbox: sandbox, args: ['--ignore-gpu-blocklist'] };
+  if (gpu || headed || chrome) return { headless: !headed, channel: chrome ? 'chrome' : 'chromium', chromiumSandbox: sandbox, args: [] };
   // Runners have no GPU: let WebGL fall back to SwiftShader instead of failing, so 3D games still draw a frame.
   return { headless: true, chromiumSandbox: sandbox, args: ['--use-angle=swiftshader', '--enable-unsafe-swiftshader', '--ignore-gpu-blocklist'] };
 }
@@ -236,6 +242,30 @@ export function noFilePickers(win) {
   }
 }
 
+/**
+ * Runs in the page (local captures): the page can't write to the clipboard. A real click is a user activation, and with
+ * `--headed` the clipboard is the machine's own: a page could leave a command there for someone to paste later.
+ * Self-contained, like throttleFrames; Playwright runs it in every frame and popup too.
+ */
+export function noClipboardWrites(win) {
+  const refuse = () => Promise.reject(new win.DOMException('clipboard writes are off in captures', 'NotAllowedError'));
+  for (const k of ['writeText', 'write']) {
+    try {
+      Object.defineProperty(win.Clipboard.prototype, k, { value: refuse, writable: false, configurable: false });
+    } catch {}
+  }
+  try {
+    const exec = win.Document.prototype.execCommand;
+    Object.defineProperty(win.Document.prototype, 'execCommand', {
+      value: function execCommand(command, ...rest) {
+        return /^\s*(?:copy|cut)\s*$/i.test(String(command)) ? false : exec.call(this, command, ...rest);
+      },
+      writable: false,
+      configurable: false,
+    });
+  } catch {}
+}
+
 /** Runs in the page (`webgl`): hides WebGPU, so the game picks its WebGL renderer. Self-contained. */
 export function noWebGPU(win) {
   try {
@@ -248,7 +278,8 @@ export function noWebGPU(win) {
 // near-duplicate check kept one. With `start: true` the capture presses the game's own Start or Play button, found by
 // its accessible name or its whole visible text, types a placeholder name into a name field, and plays a little
 // (movement keys, a click) between frames. Nothing the page says is saved or logged: the page is only asked whether
-// such an element is visible, and links are never followed (they can lead off the game).
+// such an element is visible, and before every press whether it may be pressed (pressCheck): links are never followed
+// (they can lead off the game), and wallet, payment, sign-in, rating and sharing controls are never pressed (DENY).
 const phrase = (words) => new RegExp(`^[\\W_]*(?:${words.join('|')})[\\W_]*$`, 'i');
 /**
  * Options that start a game alone on this machine (no server list, no strangers): pressed before any other start
@@ -282,13 +313,114 @@ export const NEXT_NAMES = phrase([
 ]);
 /**
  * A room or server in a list, shown with its player count ("Neon Corner 0/12"): the last resort, pressed once when a
- * game offers nothing to start alone and no other button. (Playwright passes the pattern inside a selector string,
- * which allows no "u" flag and no bare "/".)
+ * game offers nothing to start alone and no other button, and only on a local run that asks for it (`rooms`): a
+ * public room can hold strangers whose names and chat would end up in the cover. (Playwright passes the pattern inside
+ * a selector string, which allows no "u" flag and no bare "/".)
  */
 export const ROOM_NAMES = /^[\W_]*(?=[^\/]*[a-zÀ-ɏ])[a-zÀ-ɏ0-9][a-zÀ-ɏ0-9 '.#(-]{0,39}?\s*\d{1,3}\s*\/\s*\d{1,3}[\W_]*$/i;
+/**
+ * Controls the capture never presses, whatever name got them found: wallets and crypto, payments and shops, accounts
+ * and sign-ins, ratings and votes, sharing, downloads and installs, bets. Checked before every click and key
+ * (pressCheck) against an element's visible text, aria-label, title, alt and value, and those of the control it sits in.
+ * English and German, like the start names.
+ */
+export const DENY = /\b(?:wallets?|connect|buy|purchas|pay|donat|subscri|sign[\s_-]*(?:in|up|on)|log[\s_-]*(?:in|on|out)|regist|rat(?:e[sd]?|ings?)\b|vot(?:e[sd]?|ing)\b|shar(?:e[sd]?|ing)\b|download|install|shop|premium|check[\s_-]*out|carts?\b|mint|bets?\b|betting|deposit|withdraw|nft|crypto|airdrop|redeem|sponsor|patreon|ko-?fi|wishlist|google|facebook|discord|twitter|github|metamask|kauf|bezahl|spende|abonn|anmeld|einlogg|bewert|abstimm|teilen|herunterlad)/i;
+const DENY_ARG = { deny: DENY.source, flags: DENY.flags };
 /** A name field: its label or placeholder asks for a name. */
 export const NAME_FIELD = /\bnick(?:name)?\b|\b(?:user ?)?name\b|\bcall ?sign\b|who are you/i;
 export const PLAYER_NAME = 'Player';
+
+/**
+ * Runs in the page before every press: may the capture press this? `el` is an element found by its name; without it,
+ * the element at (x, y) for a mouse click, or the focused element for a `key`. No for a link to another page, and for a
+ * control whose text, aria-label, title, alt or value matches `deny` (DENY), or that sits in one. A focused element
+ * that fails is blurred, so the key goes to the page instead; for Enter that includes a field whose form would submit
+ * with such a button. The answer is a yes or no, never page text. Self-contained: serialized into the page.
+ */
+export function pressCheck(el, { deny, flags, x, y, key }) {
+  const re = new RegExp(deny, flags);
+  // The composed tree: through slots and out of shadow roots, so a button in a component inside a link is still in it.
+  const up = (e) => e.assignedSlot || e.parentElement || (e.parentNode && e.parentNode.host) || null;
+  const closest = (e, sel) => {
+    for (let n = e; n; n = up(n)) if (n.nodeType === 1 && n.matches(sel)) return n;
+    return null;
+  };
+  const LINK = 'a[href]:not([href^="#"]):not([href^="javascript:" i]), area[href]:not([href^="#"]):not([href^="javascript:" i])';
+  const CONTROL = 'a, area, button, input, select, textarea, summary, label, [role="button"], [role="link"], [role="menuitem"], [role="menuitemcheckbox"], [role="menuitemradio"], [role="tab"], [role="option"], [role="checkbox"], [role="radio"], [role="switch"]';
+  const said = (e) => {
+    const root = e.getRootNode();
+    const ids = (e.getAttribute('aria-labelledby') || '').split(/\s+/).filter(Boolean);
+    return [
+      e.getAttribute('aria-label'),
+      e.getAttribute('title'),
+      e.getAttribute('alt'),
+      e.tagName === 'INPUT' && /^(?:submit|button|reset|image)$/i.test(e.type) ? e.value : null, // a button's label, never typed text
+      ...ids.map((id) => (root.getElementById ? root.getElementById(id) : document.getElementById(id))?.textContent),
+    ];
+  };
+  // What a control says: its text (`text`), its labels, and the labels of what is inside it (an icon's alt).
+  const denied = (e, text) => {
+    const all = said(e);
+    if (text) {
+      all.push(e.innerText ?? e.textContent);
+      for (const d of [...e.querySelectorAll('[aria-label], [aria-labelledby], [title], img[alt], input')].slice(0, 30)) all.push(...said(d));
+    }
+    return all.some((s) => typeof s === 'string' && re.test(s.slice(0, 2000)));
+  };
+  // `self`: an element found by its name, whose own text counts even when it isn't a control (a div called "Play").
+  const bad = (e, self) => {
+    if (closest(e, LINK)) return true;
+    if (self && denied(e, true)) return true;
+    const control = closest(e, CONTROL);
+    if (control && denied(control, true)) return true;
+    // A generic element with a click handler counts by its labels only: its text can be a whole menu.
+    const handler = closest(e, '[onclick]');
+    return !!handler && handler !== control && denied(handler, false);
+  };
+  if (el) return !bad(el, true);
+  if (key) {
+    let f = document.activeElement;
+    try {
+      for (;;) {
+        if (f && f.shadowRoot && f.shadowRoot.activeElement) f = f.shadowRoot.activeElement;
+        else if (f && f.tagName === 'IFRAME' && f.contentDocument) f = f.contentDocument.activeElement;
+        else break;
+      }
+    } catch {}
+    if (!f || f === f.ownerDocument.body || f === f.ownerDocument.documentElement) return true;
+    let unsafe = bad(f, false);
+    if (!unsafe && key === 'Enter' && f.form) {
+      const submit = [...f.form.elements].find((c) => (c.tagName === 'BUTTON' && c.type === 'submit') || (c.tagName === 'INPUT' && (c.type === 'submit' || c.type === 'image')));
+      unsafe = !!submit && bad(submit, true);
+    }
+    if (unsafe) f.blur();
+    return !unsafe;
+  }
+  let e = document.elementFromPoint(x, y);
+  while (e && e.shadowRoot) {
+    const inner = e.shadowRoot.elementFromPoint(x, y);
+    if (!inner || inner === e) break;
+    e = inner;
+  }
+  return !e || !bad(e, false);
+}
+
+/**
+ * Runs in the page: the button that submits a filled name field, or null. In a form, the form's default button (its
+ * first submit button, the one Enter would press); outside any form, an explicit submit button in the field's own box
+ * (the nearest of its four closest ancestors that holds one). Never just any button beside the field. Self-contained.
+ */
+export function nameSubmit(field) {
+  const submits = (c) => (c.tagName === 'BUTTON' && c.type === 'submit') || (c.tagName === 'INPUT' && (c.type === 'submit' || c.type === 'image'));
+  let button = null;
+  if (field.form) button = [...field.form.elements].find(submits) || null;
+  else {
+    for (let n = field.parentElement, i = 0; n && i < 4 && !button; n = n.parentElement, i++) {
+      button = [...n.querySelectorAll('button[type="submit" i], input[type="submit" i], input[type="image" i]')].find((c) => !c.form) || null;
+    }
+  }
+  return button && !button.matches(':disabled') ? button : null;
+}
 
 /** Between post-start frames: hold movement keys (arrows and WASD), jump or shoot, and move the mouse. */
 const PLAY_STEPS = [
@@ -303,10 +435,41 @@ const PLAY_STEPS = [
 const PRESSED = 'data-capture-pressed';
 const NOT_PRESSED = `:not([${PRESSED}]):not([${PRESSED}] *)`;
 
+/** A mouse click at (x, y), unless pressCheck says no (or can't answer in time). True after a click. */
+async function clickAt(page, x, y, o, guard) {
+  const ok = await guard(within(page.evaluate(`(${pressCheck})(null, ${JSON.stringify({ ...DENY_ARG, x, y })})`), o.clickTimeout, false));
+  if (ok) await guard(within(page.mouse.click(x, y), o.clickTimeout));
+  return ok === true;
+}
+
+/** A key press (Enter, Space), after pressCheck has moved focus off a link or a control that isn't the game's. */
+async function pressKey(page, key, o, guard) {
+  const ok = await guard(within(page.evaluate(`(${pressCheck})(null, ${JSON.stringify({ ...DENY_ARG, key })})`), o.clickTimeout, null));
+  // No answer (a busy or navigating page): no key either, since whatever has focus may be such a control.
+  if (ok === null) return false;
+  await guard(within(page.keyboard.press(key), o.clickTimeout));
+  return true;
+}
+
 /**
- * Clicks the first visible element whose accessible name (buttons) or whole text (anything that isn't a link) matches
- * `names`. Returns true after a click. Every call is bounded by `o.clickTimeout`, the whole search by `until` (a time);
- * `guard` keeps the capture deadline. `once`: skip elements pressed before, and mark this one.
+ * Presses one element after pressCheck: a mouse click, else (`event`) the click event itself, for a button under a
+ * transparent layer (a full-screen canvas or overlay that takes the pointer) or one that never stops moving. Returns
+ * 'clicked', 'event' (dispatched: the page may have ignored it), 'denied' or false.
+ */
+async function press(el, o, guard, { event = true } = {}) {
+  // No answer (the element went away, a busy page) is no press either.
+  const allowed = await guard(within(el.evaluate(pressCheck, DENY_ARG), o.clickTimeout, null));
+  if (allowed !== true) return allowed === false ? 'denied' : false;
+  if (await guard(within(el.click({ timeout: o.clickTimeout }).then(() => true), o.clickTimeout + 500, false))) return 'clicked';
+  if (event && (await guard(within(el.dispatchEvent('click').then(() => true), o.clickTimeout, false)))) return 'event';
+  return false;
+}
+
+/**
+ * Presses the first visible element whose accessible name (buttons) or whole text matches `names` and that pressCheck
+ * allows (never a link, never a wallet, shop or sign-in). Returns how it was pressed ('clicked' or 'event'), or false.
+ * Every call is bounded by `o.clickTimeout`, the whole search by `until` (a time); `guard` keeps the capture deadline.
+ * `once`: skip elements pressed before, and mark this one.
  */
 async function clickByName(page, names, o, guard, until, { once = false, label = 'button', trace } = {}) {
   const tries = [page.getByRole('button', { name: names }), page.getByText(names)];
@@ -320,21 +483,14 @@ async function clickByName(page, names, o, guard, until, { once = false, label =
       const el = await guard(within(loc.nth(k).elementHandle({ timeout: o.clickTimeout }), o.clickTimeout + 500, null));
       if (!el) continue;
       try {
-        // Text matches can sit inside a link; a link to another page is never clicked (a "#" or script link is a button).
-        if (i === 1 && !(await guard(within(el.evaluate((e) => !e.closest('a[href]:not([href^="#"]):not([href^="javascript:"])')), o.clickTimeout, false)))) continue;
-        // A mouse click first. A button under a transparent layer (a full-screen canvas or overlay that takes the
-        // pointer) or one that never stops moving gets the click event itself instead.
-        let how = 'clicked';
-        let ok = await guard(within(el.click({ timeout: o.clickTimeout }).then(() => true), o.clickTimeout + 500, false));
-        if (!ok) {
-          how = 'click event';
-          ok = await guard(within(el.dispatchEvent('click').then(() => true), o.clickTimeout, false));
-        }
-        trace?.(`${ok ? `pressed (${how})` : 'could not press'} a ${label} (${i ? 'text' : 'button role'}, match ${k + 1} of ${n})`);
-        if (!ok) continue;
+        const how = await press(el, o, guard);
+        const match = `${i ? 'text' : 'button role'}, match ${k + 1} of ${n}`;
+        if (how === 'denied') trace?.(`skipped a ${label}: a link, or a control that isn't the game's (${match})`);
+        else trace?.(`${how ? `pressed (${how === 'clicked' ? 'clicked' : 'click event'})` : 'could not press'} a ${label} (${match})`);
+        if (how !== 'clicked' && how !== 'event') continue;
         // Marked after the press: a press that failed is tried again next round.
         if (once) await guard(within(el.evaluate((e, attr) => e.setAttribute(attr, ''), PRESSED), o.clickTimeout));
-        return true;
+        return how;
       } finally {
         el.dispose().catch(() => {});
       }
@@ -345,18 +501,19 @@ async function clickByName(page, names, o, guard, until, { once = false, label =
 
 /**
  * Gets past a title, menu or name-entry screen: fills a visible name field once, then presses a solo or offline option,
- * else a start button (each once), else a continue/join button, up to `o.startRounds` presses within `o.startBudget` ms.
- * A filled name with nothing to press gets Enter, then the button beside the field. A canvas title screen gets the
- * centre click and Enter of the plain schedule, after which a DOM menu may appear. While nothing has been pressed the
- * step keeps looking (a menu can appear after a long load); after a press it looks `o.startIdle` more times for the
- * next screen's button. Never throws except for the deadline.
+ * else a start button (each once), else a continue/join button, else (local runs with `rooms` only) a room in a list,
+ * up to `o.startRounds` presses within `o.startBudget` ms. A filled name with nothing to press gets Enter, then its
+ * form's submit button. A canvas title screen gets the centre click and Enter of the plain schedule, after which a DOM
+ * menu may appear. While nothing has been pressed the step keeps looking (a menu can appear after a long load); after a
+ * press it looks `o.startIdle` more times for the next screen's button. When every press was only a click event, which
+ * the page may have ignored, the centre click and Enter still follow. Never throws except for the deadline.
  */
 export async function startGame(page, o, guard, signal) {
   const until = Date.now() + o.startBudget;
   const pause = (ms) => guard(sleep(ms, signal));
-  const centre = async () => {
-    await guard(within(page.mouse.click(o.viewport.width / 2, o.viewport.height / 2), o.clickTimeout));
-    await guard(within(page.keyboard.press('Enter'), o.clickTimeout));
+  const centre = async (trace) => {
+    if (!(await clickAt(page, o.viewport.width / 2, o.viewport.height / 2, o, guard))) trace?.("no centre click: a link, or a control that isn't the game's");
+    await pressKey(page, 'Enter', o, guard);
   };
   const nameField = () => page.getByRole('textbox', { name: NAME_FIELD }).or(page.getByPlaceholder(NAME_FIELD)).and(page.locator('input:not([type="email"]):not([type="search"])')).filter({ visible: true }).first();
   let named = false;
@@ -364,6 +521,7 @@ export async function startGame(page, o, guard, signal) {
   let nameButtonTried = false;
   let canvasTried = false;
   let presses = 0;
+  let clicked = false; // a press landed as a real mouse click (not just a click event)
   let idle = 0; // rounds without a press since the last one
   for (let round = 0; presses < o.startRounds && Date.now() <= until; round++) {
     // Local review only: our own decisions, never anything the page says.
@@ -375,38 +533,48 @@ export async function startGame(page, o, guard, signal) {
         trace?.(named ? 'filled a name field' : 'could not fill a name field');
       }
     }
-    if (
+    const how =
       (await clickByName(page, SOLO_NAMES, o, guard, until, { once: true, label: 'solo option', trace })) ||
       (await clickByName(page, START_NAMES, o, guard, until, { once: true, label: 'start button', trace })) ||
       (await clickByName(page, NEXT_NAMES, o, guard, until, { label: 'next button', trace })) ||
-      (await clickByName(page, ROOM_NAMES, o, guard, until, { once: true, label: 'room in a list', trace }))
-    ) {
+      (o.rooms === true && (await clickByName(page, ROOM_NAMES, o, guard, until, { once: true, label: 'room in a list', trace })));
+    if (how) {
       presses++;
+      if (how === 'clicked') clicked = true;
       idle = 0;
       await pause(o.startPause);
       continue;
     }
     if (named && !presses && !enterTried) {
-      // A name field whose form submits on Enter.
+      // A name field whose form submits on Enter (pressKey first moves focus off a field whose form would submit
+      // with a wallet or sign-in button).
       enterTried = true;
       trace?.('Enter after the name');
-      await guard(within(page.keyboard.press('Enter'), o.clickTimeout));
+      await pressKey(page, 'Enter', o, guard);
       await pause(o.startPause);
       continue;
     }
     if (named && !presses && !nameButtonTried) {
-      // A name form whose button has a name of its own ("Open Café"): the last enabled button in the field's own box
-      // (the nearest of its four closest ancestors that holds one). Never a link.
+      // A name form whose submit button has a name of its own ("Open Café"): the form's default button, or outside a
+      // form an explicit submit button in the field's own box (nameSubmit). Never just the button beside the field.
       nameButtonTried = true;
-      const button = nameField()
-        .locator('xpath=ancestor::*[position() <= 4][.//button or .//input[@type="submit"]][1]')
-        .locator('button:not([disabled]), input[type="submit"]:not([disabled])')
-        .filter({ visible: true })
-        .last();
-      const ok = await guard(within(button.click({ timeout: o.clickTimeout }).then(() => true), o.clickTimeout + 500, false));
-      trace?.(ok ? "pressed the name form's button" : "no button beside the name");
-      if (ok) {
+      const field = await guard(within(nameField().elementHandle({ timeout: o.clickTimeout }), o.clickTimeout + 500, null));
+      const found = field && (await guard(within(field.evaluateHandle(nameSubmit), o.clickTimeout, null)));
+      field?.dispose().catch(() => {});
+      const button = found?.asElement() ?? null;
+      if (found && !button) found.dispose().catch(() => {});
+      let res = false;
+      if (button) {
+        try {
+          res = await press(button, o, guard, { event: false });
+        } finally {
+          button.dispose().catch(() => {});
+        }
+      }
+      trace?.(res === 'clicked' ? "pressed the name form's submit button" : res === 'denied' ? "skipped the name form's submit button: not the game's" : 'no submit button for the name');
+      if (res === 'clicked') {
         presses++;
+        clicked = true;
         idle = 0;
         await pause(o.startPause);
         continue;
@@ -423,7 +591,7 @@ export async function startGame(page, o, guard, signal) {
     if (!canvasTried) {
       canvasTried = true;
       trace?.('nothing to press: centre click and Enter');
-      await centre();
+      await centre(trace);
       await pause(o.startPause);
       continue;
     }
@@ -431,22 +599,30 @@ export async function startGame(page, o, guard, signal) {
     if (round === 2) trace?.('nothing to press yet: looking again until the start budget ends');
     await pause(o.startPause);
   }
+  const trace = typeof o.trace === 'function' ? (s) => o.trace(`start: ${s}`) : undefined;
+  if (presses && !clicked && !canvasTried) {
+    // Every press was a click event, which the page may have ignored (a bouncing "PRESS START" over a game that
+    // starts on Enter): the centre click and Enter still get their turn.
+    canvasTried = true;
+    trace?.('every press was a click event: centre click and Enter');
+    await centre(trace);
+  }
   // Focus the game for the play input that follows.
-  if (!canvasTried) await guard(within(page.mouse.click(o.viewport.width / 2, o.viewport.height / 2), o.clickTimeout));
+  if (!canvasTried) await clickAt(page, o.viewport.width / 2, o.viewport.height / 2, o, guard);
 }
 
-/** Play input between post-start frames: step i of PLAY_STEPS. */
+/** Play input between post-start frames: step i of PLAY_STEPS. Clicks and Space go through pressCheck. */
 async function playInput(page, i, o, guard, signal) {
   const step = PLAY_STEPS[i % PLAY_STEPS.length];
   const { width, height } = o.viewport;
   if (step.click) {
     await guard(within(page.mouse.move(width * step.click[0], height * step.click[1], { steps: 4 }), o.clickTimeout));
-    await guard(within(page.mouse.click(width * step.click[0], height * step.click[1]), o.clickTimeout));
+    await clickAt(page, width * step.click[0], height * step.click[1], o, guard);
   }
   for (const k of step.keys) await guard(within(page.keyboard.down(k), o.clickTimeout));
   await guard(sleep(o.holdMs, signal));
   for (const k of step.keys) await guard(within(page.keyboard.up(k), o.clickTimeout));
-  if (step.press) await guard(within(page.keyboard.press(step.press), o.clickTimeout));
+  if (step.press) await pressKey(page, step.press, o, guard);
 }
 
 /**
@@ -506,8 +682,8 @@ export async function captureOne(url, outDir, opts = {}) {
     }
     state.context = context;
     if (o.throttle) await guard(context.addInitScript(`(${throttleFrames})(window, ${Number(o.throttleGap) || 250});`));
-    // A local browser runs on someone's machine: no File System Access pickers for the page.
-    if (o.gpu || o.headed || o.chrome) await guard(context.addInitScript(`(${noFilePickers})(window);`));
+    // A local browser runs on someone's machine: no File System Access pickers and no clipboard writes for the page.
+    if (o.gpu || o.headed || o.chrome) await guard(context.addInitScript(`(${noFilePickers})(window);(${noClipboardWrites})(window);`));
     if (o.webgl) await guard(context.addInitScript(`(${noWebGPU})(window);`));
     const page = await guard(context.newPage());
     // A file input never opens a native dialog: a listener makes Playwright intercept it, and nothing is ever chosen.
@@ -608,11 +784,11 @@ export async function captureOne(url, outDir, opts = {}) {
       if (!shot) return;
       state.shots.push(shot);
       if (i === 0) {
-        // One click in the centre starts games that wait for input…
-        await guard(within(page.mouse.click(o.viewport.width / 2, o.viewport.height / 2), o.clickTimeout));
+        // One click in the centre starts games that wait for input (never on a link or a wallet button: pressCheck)…
+        await clickAt(page, o.viewport.width / 2, o.viewport.height / 2, o, guard);
       } else if (i === 1) {
         // …and Enter gets past "press any key" menus.
-        await guard(within(page.keyboard.press('Enter'), o.clickTimeout));
+        await pressKey(page, 'Enter', o, guard);
       }
     }
   };
@@ -808,8 +984,10 @@ export function playOptions(seconds) {
 /**
  * Command-line options. CI passes slugs only. A local capture on a machine with a GPU adds `--gpu` (Playwright's
  * Chromium) or `--chrome` (the installed Chrome), `--headed` to watch, `--webgl` for a game whose WebGPU path draws
- * nothing, `--play <s>` for slow games, `--trace` (the start step's decisions) and `--all-frames <dir>` (every frame, for
- * review); it may read entries from another checkout (`--root`, e.g. a seed branch's worktree) and write elsewhere (`--out`).
+ * nothing, `--play <s>` for slow games, `--rooms` (the start step may join a room from a list: look at every frame, a
+ * public room can show strangers' names and chat), `--trace` (the start step's decisions) and `--all-frames <dir>`
+ * (every frame, for review); it may read entries from another checkout (`--root`, e.g. a seed branch's worktree) and
+ * write elsewhere (`--out`).
  */
 export function cliOptions(argv) {
   const res = { slugs: [] };
@@ -818,6 +996,7 @@ export function cliOptions(argv) {
     if (a === '--gpu') res.gpu = true;
     else if (a === '--headed') res.headed = true;
     else if (a === '--trace') res.trace = true;
+    else if (a === '--rooms') res.rooms = true;
     else if (a === '--webgl') res.webgl = true;
     else if (a === '--chrome') res.chrome = true;
     else if (a === '--play') {
@@ -850,7 +1029,7 @@ if (process.argv[1] === fileURLToPath(import.meta.url)) {
     cli = null;
   }
   if (!cli?.slugs.length) {
-    console.error('usage: node scripts/capture.mjs [--gpu] [--chrome] [--headed] [--webgl] [--trace] [--play <15-120 s>] [--root <catalog checkout>] [--out <dir>] [--all-frames <dir>] <slug…>');
+    console.error('usage: node scripts/capture.mjs [--gpu] [--chrome] [--headed] [--webgl] [--rooms] [--trace] [--play <15-120 s>] [--root <catalog checkout>] [--out <dir>] [--all-frames <dir>] <slug…>');
     process.exit(2);
   }
   const { slugs, ...local } = cli;

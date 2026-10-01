@@ -12,8 +12,8 @@ import { captureOne, captureSlugs, closeBrowser, throttleFrames, itchFrame, DEFA
 const FAST = { times: [300, 700, 1100], navTimeout: 4000, deadline: 6000, shotTimeout: 2000, clickTimeout: 1000, closeTimeout: 2000, allowLocalHttp: true, sandbox: false };
 
 const html = (body) => `<!doctype html><meta charset="utf-8"><title>fixture</title><style>html,body{margin:0;background:#000}</style>${body}`;
-const PAGES = {
-  '/game': html(`<canvas id="c" width="1280" height="720"></canvas><script>
+// A running canvas game, with something over or behind its centre.
+const gamePage = (extra = '') => html(`<canvas id="c" width="1280" height="720"></canvas><script>
     const g = document.getElementById('c').getContext('2d');
     let t = 0;
     (function frame() { t += 1; for (let x = 0; x < 1280; x += 40) for (let y = 0; y < 720; y += 40) { g.fillStyle = 'hsl(' + ((t * 7 + x + y * 3) % 360) + ' 80% ' + (20 + ((x + y + t * 23) % 60)) + '%)'; g.fillRect(x, y, 40, 40); }
@@ -22,7 +22,9 @@ const PAGES = {
       g.fillStyle = '#fff'; g.fillRect((performance.now() / 2) % 1080, 0, 200, 720);
       requestAnimationFrame(frame); })();
     addEventListener('click', () => { t += 90; });
-  </script>`),
+  </script>${extra}`);
+const PAGES = {
+  '/game': gamePage(),
   '/hang': html(`<p style="color:#fff">loading</p><script>addEventListener('load', () => setTimeout(() => { for (;;) {} }, 200));</script>`),
   '/late-hang': html(`<canvas id="c" width="1280" height="720"></canvas><script>
     const g = document.getElementById('c').getContext('2d');
@@ -98,9 +100,61 @@ const PAGES = {
   // A "Play" tab that stays on screen and does nothing; the game starts with Deploy.
   '/tab-menu': menuPage(`<div style="position:absolute;left:40px;top:40px;font-size:30px;color:#fff;cursor:pointer">Play</div>
     <button style="position:absolute;left:40px;bottom:40px;font-size:40px" onclick="startGame()">Deploy</button>`),
-  // A name with a button of its own and no form.
+  // A name with a submit button of its own and no form.
   '/name-button': menuPage(`<input placeholder="Your name" style="position:absolute;left:40px;top:40px;font-size:30px">
-    <button style="position:absolute;left:40px;top:120px;font-size:30px" onclick="startGame()">Open Caf&eacute;</button>`),
+    <button type="submit" style="position:absolute;left:40px;top:120px;font-size:30px" onclick="startGame()">Open Caf&eacute;</button>`),
+  // A name form whose field swallows Enter: its default (first submit) button starts the game, never the last button.
+  '/name-form': menuPage(`<form onsubmit="event.preventDefault()" style="position:absolute;left:40px;top:40px">
+    <input id="n" placeholder="Your name" style="font-size:30px"><br>
+    <button type="submit" style="font-size:30px" onclick="startGame()">Open Caf&eacute;</button>
+    <button type="button" style="font-size:30px" onclick="fetch('/hit/wallet-last')">Connect Wallet</button></form>
+    <script>document.getElementById('n').addEventListener('keydown', (e) => { if (e.key === 'Enter') e.preventDefault(); });</script>`),
+  // Presses that must never happen. Each control reports a press to the server (/hit/…).
+  '/wallet-name': menuPage(`<input placeholder="Your name" style="position:absolute;left:40px;top:40px;font-size:30px">
+    <button style="position:absolute;left:40px;top:120px;font-size:30px" onclick="fetch('/hit/wallet')">Connect Wallet</button>`),
+  // Enter in the field submits the form with its default button.
+  '/wallet-form': menuPage(`<form onsubmit="event.preventDefault()" style="position:absolute;left:40px;top:40px">
+    <input placeholder="Your name" style="font-size:30px"><br>
+    <button style="font-size:30px" onclick="fetch('/hit/wallet-form')">Connect Wallet</button></form>`),
+  '/paid-rooms': menuPage(`<button style="position:absolute;left:40px;top:40px;font-size:30px" onclick="fetch('/hit/rate')">Rate 5/5</button>
+    <button style="position:absolute;left:40px;top:120px;font-size:30px" onclick="fetch('/hit/donate')">Donate 5/5</button>
+    <button style="position:absolute;left:40px;top:200px;font-size:30px" onclick="fetch('/hit/buy')">Buy 1/2</button>`),
+  // Start names on controls whose own text, label or title says otherwise.
+  '/disguised': menuPage(`<button aria-label="Play" style="position:absolute;left:40px;top:40px;font-size:30px" onclick="fetch('/hit/buy-now')">Buy now</button>
+    <button title="Subscribe" style="position:absolute;left:40px;top:120px;font-size:30px" onclick="fetch('/hit/subscribe')">Play</button>
+    <div role="button" aria-label="Sign in" style="position:absolute;left:40px;top:200px;font-size:30px;color:#fff" onclick="fetch('/hit/sign-in')">START</div>
+    <button style="position:absolute;left:40px;top:280px;font-size:30px" onclick="fetch('/hit/pay')"><span>Start</span> <small>Pay $5</small></button>`),
+  '/role-link': menuPage(`<a href="/elsewhere" role="button" style="position:absolute;left:40px;bottom:40px;font-size:40px;color:#fff">Play</a>`),
+  '/link-button': menuPage(`<a href="/elsewhere"><button style="position:absolute;left:40px;bottom:40px;font-size:40px">Play</button></a>`),
+  // A bouncing "PRESS START" (a mouse click never lands) over a game that starts on Enter.
+  '/bouncing-start': menuPage(`<style>@keyframes bob { from { transform: translateY(0) } to { transform: translateY(-40px) } }</style>
+    <div style="position:absolute;left:40px;bottom:40px;font-size:40px;color:#fff;animation:bob .2s infinite alternate linear">PRESS START</div>
+    <script>addEventListener('keydown', (e) => { if (e.key === 'Enter') startGame(); });</script>`),
+  // The plain schedule's centre click and Enter: a wallet button or a link in the middle, a Buy button that takes focus.
+  '/centre-wallet': gamePage(`<button style="position:fixed;left:440px;top:260px;width:400px;height:200px;font-size:40px" onclick="fetch('/hit/centre-wallet')">Connect Wallet</button>`),
+  '/centre-link': gamePage(`<a href="/elsewhere" style="position:fixed;left:440px;top:260px;width:400px;height:200px;display:block;background:#08f"></a>`),
+  '/focus-buy': gamePage(`<button id="buy" style="position:fixed;left:40px;top:40px;font-size:30px" onclick="fetch('/hit/focus-buy')">Buy</button>
+    <script>addEventListener('click', () => document.getElementById('buy').focus());
+    addEventListener('keydown', (e) => { if (e.key === 'Enter') fetch('/report/enter/reached'); });</script>`),
+  // The control: a game that starts when its canvas is clicked.
+  '/click-start': menuPage(`<script>document.getElementById('c').addEventListener('click', () => startGame());</script>`),
+  // Local captures: the page reports what it can reach (/report/…) and, on Play, tries to copy to the clipboard.
+  '/local-traps': menuPage(`<button id="p" style="position:absolute;left:40px;bottom:40px;font-size:40px">PLAY</button>
+    <script>
+    const report = (k, v) => fetch('/report/' + k + '/' + encodeURIComponent(v));
+    report('pickers', [typeof showOpenFilePicker, typeof showSaveFilePicker, typeof showDirectoryPicker].join(' '));
+    const f = document.createElement('iframe'); f.style.display = 'none'; document.body.appendChild(f);
+    report('frame-pickers', typeof f.contentWindow.showOpenFilePicker);
+    report('frame-clipboard', [f.contentWindow.navigator.clipboard.writeText, f.contentWindow.navigator.clipboard.write, f.contentWindow.document.execCommand].every((fn) => String(fn).includes('[native code]')) ? 'native' : 'stubbed');
+    document.addEventListener('copy', () => report('copy-event', 'fired'));
+    document.getElementById('p').onclick = (e) => {
+      const r = document.createRange(); r.selectNodeContents(e.currentTarget); getSelection().removeAllRanges(); getSelection().addRange(r);
+      report('exec-copy', document.execCommand('copy'));
+      report('clipboard', [navigator.clipboard.writeText, navigator.clipboard.write].every((fn) => String(fn).includes('[native code]')) ? 'native' : 'stubbed');
+      navigator.clipboard.writeText('trap').then(() => report('write-text', 'written'), () => report('write-text', 'refused'));
+      startGame();
+    };
+    </script>`),
   '/rooms': menuPage(`<button style="position:absolute;left:40px;top:40px;font-size:30px" onclick="startGame()">Neon Corner 0/12</button>
     <button style="position:absolute;left:40px;bottom:40px;font-size:30px">Back</button>`),
   // A question first ("No" declines it), then the menu.
@@ -133,9 +187,17 @@ function menuPage(menu) {
 let server;
 let base;
 const hits = { elsewhere: 0 };
+let reports = {};
 before(async () => {
   server = createServer((req, res) => {
     if (req.url === '/elsewhere') hits.elsewhere++;
+    if (req.url.startsWith('/hit/') || req.url.startsWith('/report/')) {
+      const [, kind, key, value] = req.url.split('/');
+      if (kind === 'hit') hits[key] = (hits[key] || 0) + 1;
+      else reports[key] = decodeURIComponent(value);
+      res.writeHead(204);
+      return res.end();
+    }
     if (req.url === '/download') {
       res.writeHead(200, { 'content-type': 'application/octet-stream', 'content-disposition': 'attachment; filename="game.exe"' });
       return res.end('MZ not really a program');
@@ -662,9 +724,9 @@ test('solo, German, decline and room patterns match whole names only', async () 
   for (const re of [SOLO_NAMES, START_NAMES, NEXT_NAMES, ROOM_NAMES]) assert.doesNotMatch(re.flags, /u/, re.source);
 });
 
-const startsTheGame = async (path) => {
+const startsTheGame = async (path, extra = {}) => {
   const dir = join(tmp(), path.slice(1));
-  const res = await captureOne(`${base}${path}`, dir, { ...FAST, ...START_FAST });
+  const res = await captureOne(`${base}${path}`, dir, { ...FAST, ...START_FAST, ...extra });
   assert.equal(res.ok, true, res.reason);
   assert.equal(res.files.length, 3, `${path}: ${res.files.length} frames`);
   for (const f of res.files) assert.ok(!(await magentaAt(f, 300, 200)), `${path}: ${f.slice(dir.length + 1)} shows the menu`);
@@ -675,9 +737,98 @@ test('the start step presses German start buttons', () => startsTheGame('/german
 test('the start step presses a button under a transparent layer with a click event', () => startsTheGame('/covered-menu'));
 test('the start step keeps looking while a menu is still loading', () => startsTheGame('/late-menu'));
 test('a start option that stays on screen is pressed once, so the next button gets its turn', () => startsTheGame('/tab-menu'));
-test("a name with no form gets the button beside it", () => startsTheGame('/name-button'));
-test('a room list with player counts: the first room is joined', () => startsTheGame('/rooms'));
+test('a name with no form gets the submit button beside it', () => startsTheGame('/name-button'));
+test("a name form whose field swallows Enter gets its default button, never the last one", async () => {
+  hits['wallet-last'] = 0;
+  await startsTheGame('/name-form');
+  assert.equal(hits['wallet-last'], 0);
+});
 test('a question in the way gets the declining answer, then the menu its Play', () => startsTheGame('/sound-prompt'));
+
+// Presses the start step must never make. A page with nothing else to press keeps its menu (one frame).
+const TRAP = { ...FAST, ...START_FAST, startBudget: 3000 };
+const pressed = () => Object.entries(hits).filter(([, n]) => n > 0).map(([k]) => k);
+const neverPressed = async (path, extra = {}) => {
+  for (const k of Object.keys(hits)) hits[k] = 0;
+  const res = await captureOne(`${base}${path}`, join(tmp(), path.slice(1)), { ...TRAP, ...extra });
+  assert.equal(res.ok, true, res.reason);
+  assert.deepEqual(pressed(), [], `${path}: pressed`);
+  return res;
+};
+
+test('the deny pattern catches wallet, payment, account, rating and sharing controls, and no start, next or solo name', async () => {
+  const { DENY, SOLO_NAMES, START_NAMES, NEXT_NAMES } = await import('../scripts/capture.mjs');
+  for (const s of ['Connect Wallet', 'connect', 'Buy 1/2', 'Buy now', 'Purchase', 'Pay $5', 'PayPal', 'Donate 5/5', 'Donation', 'Subscribe', 'Sign in', 'Sign-up', 'Log in', 'Login', 'Register', 'Rate 5/5', 'Rating', 'Vote', 'Share', 'Download', 'Install app', 'Shop', 'Premium', 'Checkout', 'Check out', 'Cart', 'Mint NFT', 'Place bet', 'Bet 10', 'Deposit', 'Jetzt kaufen', 'Spenden', 'Anmelden', 'Bewerten', 'Teilen']) assert.match(s, DENY, s);
+  for (const s of ['Play', '▶ PLAY', 'Start Game', 'Display', 'Pirates 2/8', 'Better luck', 'Shard 3/10', 'Continue', 'Join', 'Deploy', 'Solo', 'Practice', 'Training', 'Spielen', 'Weiter', 'Neon Corner 0/12', 'Player']) assert.doesNotMatch(s, DENY, s);
+  const examples = ['Play', 'Start', 'Play Now', 'Start Game', 'New Game', 'Begin Adventure', 'Quick Play', 'Single Player', 'Play Solo', 'Play Offline', 'Play as Guest', 'Play vs CPU', "Let's go", 'Tap to start', 'Press Start', 'Enter the Arena', 'Insert Coin', 'Spiel starten', 'Neues Spiel', 'Continue', 'Join Game', 'Got it', 'Skip intro', "I'm ready", 'Deploy', 'Embark', 'No thanks', 'Not now', 'Maybe later', 'Mute', 'Play without sound', 'Fortfahren', 'Beitreten', 'Practice Range', 'Training Mode', 'Free Play', 'Sandbox', 'FFA Bot Lobby', 'Add Bots', 'Einzelspieler', 'Gegen Computer'];
+  for (const s of examples) {
+    assert.ok([SOLO_NAMES, START_NAMES, NEXT_NAMES].some((re) => re.test(s)), `${s} is a start, next or solo name`);
+    assert.doesNotMatch(s, DENY, s);
+  }
+});
+
+test('a name field next to a Connect Wallet button: the wallet is never pressed', () => neverPressed('/wallet-name'));
+test("a name form whose default button is Connect Wallet: neither Enter nor the form's button presses it", () => neverPressed('/wallet-form'));
+test('controls whose label or title is not a start (Buy now named Play, Play titled Subscribe, Pay $5) are never pressed', () => neverPressed('/disguised'));
+test('rooms are joined only with the explicit rooms option, and never a Rate, Donate or Buy button with a count', async () => {
+  const off = await captureOne(`${base}/rooms`, join(tmp(), 'rooms-off'), TRAP);
+  assert.equal(off.ok, true, off.reason);
+  assert.equal(off.files.length, 1, 'without the option the room list stays');
+  assert.ok(await magentaAt(off.files[0], 300, 200));
+  await startsTheGame('/rooms', { rooms: true });
+  await neverPressed('/paid-rooms', { rooms: true });
+});
+// Every page of a group is captured before the one assertion, so a failure names all the pages that went wrong.
+const pressesOn = async (paths, opts) => {
+  const seen = {};
+  for (const path of paths) {
+    for (const k of Object.keys(hits)) hits[k] = 0;
+    const res = await captureOne(`${base}${path}`, join(tmp(), path.slice(1)), opts);
+    seen[path] = res.ok ? pressed() : res.reason;
+  }
+  return seen;
+};
+test('a link with a button role, or a button inside a link, is never followed', async () => {
+  assert.deepEqual(await pressesOn(['/role-link', '/link-button'], TRAP), { '/role-link': [], '/link-button': [] });
+});
+test('a click that only lands as a click event still leaves the centre click and Enter their turn', () => startsTheGame('/bouncing-start'));
+test('the centre click and Enter never press a wallet button, follow a link or press a focused Buy button', async () => {
+  reports = {};
+  assert.deepEqual(await pressesOn(['/centre-wallet', '/centre-link', '/focus-buy'], FAST), { '/centre-wallet': [], '/centre-link': [], '/focus-buy': [] });
+  assert.equal(reports.enter, 'reached', 'Enter still reached the page, only not the Buy button');
+  const control = await captureOne(`${base}/click-start`, join(tmp(), 'click-start'), { ...FAST, times: [300, 700, 1100], shotTimeout: 4000, deadline: 12_000 });
+  assert.equal(control.ok, true, control.reason);
+  assert.equal(control.files.length, 2, 'the centre click still lands on a game: its menu, then the game');
+});
+
+test('local captures: no file pickers and no clipboard writes in a real page, frames included; CI keeps the page as it is', async (t) => {
+  await closeBrowser();
+  // CI's test job has only Playwright's headless shell: the local launch options run on it here, page scripts and all.
+  const launchServer = chromium.launchServer.bind(chromium);
+  t.mock.method(chromium, 'launchServer', (opts) => launchServer({ ...opts, channel: undefined }));
+  try {
+    reports = {};
+    const local = await captureOne(`${base}/local-traps`, join(tmp(), 'local'), { ...FAST, ...START_FAST, gpu: true });
+    assert.equal(local.ok, true, local.reason);
+    assert.deepEqual(reports, {
+      pickers: 'undefined undefined undefined',
+      'frame-pickers': 'undefined',
+      'frame-clipboard': 'stubbed',
+      'exec-copy': 'false',
+      clipboard: 'stubbed',
+      'write-text': 'refused',
+    });
+    // The same page on CI's launch: the pickers exist and a copy after a click works, so the local result means something.
+    reports = {};
+    const ci = await captureOne(`${base}/local-traps`, join(tmp(), 'ci'), { ...FAST, ...START_FAST });
+    assert.equal(ci.ok, true, ci.reason);
+    assert.equal(reports.pickers, 'function function function');
+    assert.equal(reports['exec-copy'], 'true');
+    assert.equal(reports['copy-event'], 'fired');
+  } finally {
+    await closeBrowser();
+  }
+});
 
 test('local captures: launch options, command line, play time and page scripts', async () => {
   const { launchOptions, cliOptions, playOptions, noFilePickers, noWebGPU } = await import('../scripts/capture.mjs');
@@ -685,13 +836,19 @@ test('local captures: launch options, command line, play time and page scripts',
   assert.equal(ci.headless, true);
   assert.equal(ci.channel, undefined, "CI keeps Playwright's headless shell");
   assert.ok(ci.args.includes('--use-angle=swiftshader'));
-  assert.deepEqual(launchOptions({ gpu: true }), { headless: true, channel: 'chromium', chromiumSandbox: DEFAULTS.sandbox, args: ['--ignore-gpu-blocklist'] });
+  // A local GPU never runs untrusted WebGL or WebGPU on a driver Chrome blocklisted.
+  assert.deepEqual(launchOptions({ gpu: true }), { headless: true, channel: 'chromium', chromiumSandbox: DEFAULTS.sandbox, args: [] });
   assert.equal(launchOptions({ chrome: true }).channel, 'chrome');
   assert.equal(launchOptions({ headed: true }).headless, false);
+  for (const o of [{ gpu: true }, { chrome: true }, { headed: true }]) assert.ok(!launchOptions(o).args.includes('--ignore-gpu-blocklist'), JSON.stringify(o));
 
   assert.deepEqual(cliOptions(['a', 'b']), { slugs: ['a', 'b'] }, 'CI passes slugs only');
-  const local = cliOptions(['--chrome', '--webgl', '--trace', '--root', 'wt', '--out', 'o', '--all-frames', 'f', '--play', '30', 'x']);
-  assert.deepEqual({ ...local, startTimes: undefined, startExtra: undefined }, { slugs: ['x'], chrome: true, webgl: true, trace: true, root: 'wt', out: 'o', allFrames: 'f', startTimes: undefined, startExtra: undefined });
+  const local = cliOptions(['--chrome', '--webgl', '--trace', '--rooms', '--root', 'wt', '--out', 'o', '--all-frames', 'f', '--play', '30', 'x']);
+  assert.deepEqual({ ...local, startTimes: undefined, startExtra: undefined }, { slugs: ['x'], chrome: true, webgl: true, trace: true, rooms: true, root: 'wt', out: 'o', allFrames: 'f', startTimes: undefined, startExtra: undefined });
+  assert.equal(DEFAULTS.rooms, false, 'rooms in a list are joined only when a local run asks');
+  const { parse } = await import('yaml');
+  const run = parse(readFileSync('.github/workflows/capture.yml', 'utf8')).jobs.capture.steps.find((s) => s.name === 'Capture').run;
+  assert.doesNotMatch(run, /--(?:rooms|gpu|chrome|headed)\b/, 'CI passes slugs only');
   for (const bad of [['--nope', 'x'], ['--root'], ['--out', '--gpu'], ['--play', '5', 'x']]) assert.throws(() => cliOptions(bad), bad.join(' '));
 
   const p = playOptions(40);
