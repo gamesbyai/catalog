@@ -37,11 +37,10 @@ creator:
   x: phillennium
 made:
   models: []
-  tools:
-    - pi
+  tools: []
   aiShare: most
   source: Vibe Jam 2026 submission form
-  evidence: creator
+  evidence: inferred
 tech:
   engine: threejs
   multiplayer: single
