@@ -14,10 +14,10 @@ description: >-
 
 
   The art has an unusual origin. According to the creator's README, every
-  sprite, effect, song and sound started as code: skill animations drawn pixel
-  by pixel on an HTML canvas with Web Audio sound, then baked into sprite sheets
-  and rebuilt as a game in Unity 6. The README credits Claude Code for the
-  build, and the game is free to play in the browser.
+  sprite, effect, song and sound started as code. Skill animations were drawn
+  pixel by pixel on an HTML canvas with Web Audio sound, then baked into sprite
+  sheets and rebuilt as a game in Unity 6. The README credits Claude Code for
+  the build, and the game is free to play in the browser.
 play:
   url: https://rehan-remade.github.io/hollow-crown
   embeddable: true
