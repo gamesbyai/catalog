@@ -3,21 +3,24 @@ title: Game Box Arena
 tagline: Battle other players in fast multiplayer arena deathmatch and capture
   the flag matches.
 description: >-
-  Game Box Arena runs quick online arena fights in Deathmatch or Capture the
-  Flag, straight from the browser. You grab futuristic weapons, use shields to
-  survive firefights, and either chase kills or carry the enemy flag back to
-  your base while other players try to stop you.
+  Type a player name, pick a map tab, and press Create Room to start an online
+  match. You can also join a public room from the Open Rooms list, which has a
+  Refresh button. The map tabs are Deathmatch, CTF and Rocket Arena, and
+  DM-Cube2 is selected first.
 
 
-  Movement carries a lot of the design. Dodge and wall dodge moves let you
-  sidestep incoming fire and change direction fast, and sound effects give each
-  shot and each hit some weight.
+  Matches are fast arena shooter fights with futuristic weapons and shields.
+  Movement includes dodges and wall dodges, and sound effects accompany the
+  combat. Classic Deathmatch and Capture the Flag are the two named modes.
 
 
-  The creator drew on fond memories of Unreal Tournament from 1999 and its fast,
-  competitive pace. On top of that inspiration they added their own maps,
-  characters, effects and ideas, and put the game together with Codex and
-  Three.js as a Vibe Jam 2026 entry. It finished 307th of 945.
+  The lobby also has a Tutorial button under the map list. An arrow beside the
+  character name, Axiom at first, lets you switch fighters before you enter a
+  room.
+
+
+  The creator drew on Unreal Tournament 1999 for the fast movement and arena
+  combat, and added their own maps, characters and effects.
 play:
   url: https://gameboxarena.com
   embeddable: true
@@ -53,7 +56,7 @@ media:
     - games/game-box-arena/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-09-29
+  updated: 2026-10-01
 status: live
 provenance:
   foundVia: scout:vibejam-2026

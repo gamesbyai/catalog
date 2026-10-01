@@ -2,27 +2,30 @@ slug: mouse-trouble
 title: Mouse Trouble
 tagline: Sneak, grab loot, and escape as a mouse in a cartoon extraction shooter.
 description: >-
-  In Mouse Trouble you play a mouse in a cartoon extraction shooter: sneak in,
-  grab the loot and get out with it. Other players are after the same spoils,
-  and the chase-and-scramble spirit comes from golden age cartoons in the vein
-  of Tom and Jerry.
+  The goal is to steal cheese as a tiny mouse and reach a glowing mouse hole
+  once the exit opens. Press E near cheese and tasks to collect them. Contact
+  with the cat or the roomba can ruin the raid, so keep clear of both.
 
 
-  The technical goal was speed and a small footprint. It was built in Three.js
-  with Codex, with the aim of keeping the bundle as small as possible, and it
-  loads quickly and runs fast in desktop and mobile browsers. It placed 30th of
-  945 at Vibe Jam 2026.
+  Mischief counts too. Smack things with E, grab them with Q, and chain the
+  moves into combos. When an EXIT OPEN message appears, stand inside a glowing
+  mouse hole to extract.
 
 
-  The cartoon theme gives the extraction formula a lighter, slapstick tone, so
-  each match turns into a scramble for the same valuables with the other
-  players, and getting out with the loot is the goal.
+  After the escape, the game hands out grades and awards. The score counts
+  cheese, chaos, chases, tasks and the escape itself. The creator says it draws
+  on golden age cartoons and loot extraction shooters, and was built to be
+  multiplayer, fast to load and small in download size.
 play:
   url: https://mouse.ryanfitzpatrick.io
   embeddable: false
   platforms:
     - browser
     - mobile
+  controls:
+    - "E: grab cheese and tasks, smack"
+    - "Q: grab"
+    - "Stand in glowing mouse hole: extract"
 creator:
   name: rfitzpatrick_io
   handle: rfitzpatrick-io
@@ -53,7 +56,7 @@ media:
     - games/mouse-trouble/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-09-29
+  updated: 2026-10-01
 status: live
 provenance:
   foundVia: scout:vibejam-2026

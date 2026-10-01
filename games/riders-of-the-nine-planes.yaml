@@ -3,24 +3,27 @@ title: Riders Of The Nine Planes
 tagline: Ride a steed through dungeons, charging at targets to build energy and
   cast spells.
 description: >-
-  Riders Of The Nine Planes is a roguelike where you play a cavalier on
-  horseback. Charging around is your main action, and each charge builds up
-  energy. Number keys 1 through 6 commit a charge at a target, sometimes a wall,
-  and choose which spell to discharge. Standing still leaves you vulnerable, so
-  every move needs planning.
+  Ride with WASD or the arrow keys to build energy from motion, then press 1 to
+  6 to commit a charge. Your mount hurtles at a target, sometimes a wall, and
+  releases the spell you picked. Hidden spells are added to those number picks
+  later.
 
 
-  The game is meant to grow beyond its roguelike start into a fuller RPG and
-  eventually a strategy layer, where the goal is to become Emperor Of The Known
-  Multiverse. You can also ignore those layers and smash around the dungeon like
-  an old arcade or UMoria-style run. Hidden spells unlock later, and you can
-  save your journey and continue it from the title screen.
+  A stationary rider is vulnerable, so each run is a loop of riding,
+  discharging, and riding again while you plan your route. The game begins as a
+  roguelike dungeon crawl and grows toward a full RPG. Trainers can be reached
+  with T, and the title screen shows a roster of 96 mounts to look over.
 
 
-  The creator made it for AI Browser Game Jam 4 and describes it as AI assisted
-  in code, graphics, sounds, and text. The music is composed by the creator and
-  is not AI generated, while the sound effects are procedural. Some parts of the
-  wider game are still sealed off, and the interface is still being worked out.
+  You can skip the deeper systems and smash around the dungeon, or keep one
+  cavalier alive and aim for the title Emperor Of The Known Multiverse. Press J
+  to save your journey and continue it from the title screen.
+
+
+  The creator says the ordinary stairs are not working in the current build, so
+  leaving the first plane depends on finding a portal. The M key mutes music and
+  also intercepts that letter in equipment slots. The music is not AI made; only
+  the sound effects are procedural.
 play:
   url: https://exedexes1.itch.io/riders-of-the-nine-planes
   embeddable: false
@@ -59,7 +62,7 @@ media:
     - games/riders-of-the-nine-planes/shot-2
 dates:
   added: 2026-09-30
-  updated: 2026-09-30
+  updated: 2026-10-01
 status: live
 provenance:
   foundVia: scout:aibgj-4

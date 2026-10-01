@@ -3,25 +3,27 @@ title: RUNNING LATE
 tagline: Sprint and wall-jump through 30 commuter rooms while deaths add time to
   your clock
 description: >-
-  RUNNING LATE is a precision platformer about a commute that turns into one
-  long near miss. A run is 30 rooms, drawn from a pool of hand-built modules.
-  You run, control jump height, rebound off walls, and time your moves around
-  trains and gates. Each death adds twenty seconds to the clock, and the room
-  restarts almost instantly.
+  A commute becomes a run of 30 rooms against a 24-minute clock. You run,
+  control jump height by holding the button, and rebound between walls. Each
+  room has an orange validator you must land on before the exit unlocks. Rooms
+  include moving trains, timed gates, and pressure plates.
 
 
-  Between legs you pick Local, Express, or Shortcut, a choice that can't be
-  undone and sets how readable or direct the next stretch is. Difficulty climbs
-  through five tiers, from basic jumps to wall-jumps, moving platforms, timed
-  gates, pressure plates, and combinations. Jump control includes coyote time
-  and input buffering.
+  Every death adds twenty seconds to the clock, and the clock does not reset
+  when you do. Deaths are instant, and a failed room restarts in under a quarter
+  second. The game has coyote time, input buffering, wall-slide, and wall-jump.
 
 
-  Each new commute uses a fresh seed, and you can retry the same seed or copy it
-  to practice. Results show all 30 splits, route history, deaths, and an arrival
-  rating. The look is a two-ink palette with shape and pattern cues. The creator
-  states generative AI helped with code, copy, backgrounds, and the commuter
-  animation sheet, while music and effects are synthesized at runtime.
+  Between legs you pick Local, Express, or Shortcut, and the choice cannot be
+  undone. The 30 rooms are selected from 35 hand-built modules by a journey seed
+  shown on the start screen. You can edit or copy the seed, retry the same one,
+  or start a new commute with a fresh seed.
+
+
+  The game records all 30 splits, route history, deaths, and how you arrived.
+  Mechanics come in five tiers, from basic jumping up to combinations of
+  everything. Settings cover separate music and effects volume, reduced motion,
+  and fullscreen. Landscape touch controls are included.
 play:
   url: https://peppoasap.itch.io/running-late
   embeddable: false
@@ -62,7 +64,7 @@ media:
     - games/running-late/shot-2
 dates:
   added: 2026-09-30
-  updated: 2026-09-30
+  updated: 2026-10-01
 status: live
 provenance:
   foundVia: scout:aibgj-4

@@ -2,25 +2,28 @@ slug: fly-to-mars
 title: Fly To Mars
 tagline: Pilot a rocket from Earth to Mars, dodging asteroids and sealing a hull breach.
 description: >-
-  Fly To Mars puts you in the cockpit of the Ares-IX for a trip from Earth to
-  the Red Planet. A run starts with countdown and liftoff, moves through orbital
-  insertion and an asteroid belt, and finishes with atmospheric entry and a
-  landing on the Martian surface.
+  You pilot the Ares-IX from Earth to Mars from a cockpit full of dials. The run
+  starts with a countdown and liftoff, then passes through max-Q, stage
+  separation and orbital insertion before the ship heads out into the asteroid
+  belt.
 
 
-  Along the way you steer to dodge incoming rock, and close passes build up a
-  charge for a warp drive that speeds the journey. Partway through, a hull
-  breach demands a quick repair while asteroids keep arriving. Mission-control
-  voice lines, three original music tracks and views of the Moon, Phobos and
-  Deimos fill out the trip. Difficulty ranges from Easy to Hard, and a Zen mode
-  removes asteroids and failure.
+  In the belt you steer to dodge incoming rock. Shaving close to an asteroid
+  counts as a near-miss, and enough of them charge the warp drive. Once it is
+  charged you engage warp, though it can't be used during the final approach.
+  Partway past the halfway mark the hull springs a leak, and you have to seal it
+  while the rocks keep coming.
 
 
-  The creator says the game is a single-file Three.js build written mainly with
-  Claude Code using Claude Opus 4.8. Kiro CLI, Codex and OpenClaw helped with
-  features, planning and voice generation. Gemini produced the art textures,
-  ElevenLabs the voices and Suno the music. The creator reports about 18 hours
-  of work.
+  The trip ends with atmospheric entry, a descent through dust, a flare and a
+  touchdown. The Moon appears at departure, and Phobos and Deimos show up on
+  arrival. Mission control voice comms call out events, and three soundtrack
+  tracks cycle during the flight.
+
+
+  Four difficulty settings are offered. Zen has no asteroids and no fail state,
+  while Easy, Normal and Hard raise the amount of rock in the belt. The mouse
+  looks around the cockpit, and the game is meant for desktop with a keyboard.
 play:
   url: https://maxzillion.itch.io/fly-to-mars
   embeddable: false
@@ -61,7 +64,7 @@ media:
     - games/fly-to-mars/shot-2
 dates:
   added: 2026-09-30
-  updated: 2026-09-30
+  updated: 2026-10-01
 status: live
 provenance:
   foundVia: scout:aibgj-3

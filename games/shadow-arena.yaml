@@ -2,27 +2,34 @@ slug: shadow-arena
 title: Shadow Arena
 tagline: Fight off waves of monsters and bosses in a top-down arena with a friend.
 description: >-
-  Shadow Arena is a top-down arena survival game for you and a friend, played
-  together online. You fight off waves of monsters and bosses, level up in the
-  middle of combat, pick upgrades on the spot, and try to outlast whatever the
-  arena throws at you.
+  Pick a champion, press Space to ready up, and fight off waves of monsters in a
+  top-down arena. You level up in the middle of a fight and can chase unusual
+  builds. Bosses show up among the waves, and the goal is to outlast them.
 
 
-  Vampire Survivors was the inspiration, and the creator set out to make
-  something in that style, building it with Cursor and using Three.js to render
-  the arena in 3D. It came 260th of 945 entries in Vibe Jam 2026, and phones are
-  supported alongside desktop.
+  The character screen lists each class with a starting weapon, a passive and a
+  class weapon. The Mage uses a Magic Staff, gains area scaling and has Arcane
+  Runes. The Revenant fires a Soul Projectile, heals through Soul Rip when it
+  kills and has Soul Push. The Berserker swings a Heavy Cleave, gains Blood Rage
+  and has Ground Slam. HP, speed and damage bars compare the classes.
 
 
-  The pace is frantic, and the leveling system encourages experimenting with
-  unusual builds rather than settling on one setup. With two players in the
-  arena, every wave becomes a shared effort.
+  Solo play and local multiplayer share one mode, with a selector for one to
+  four players on the same keyboard. Online co-op is a separate menu entry, and
+  a note on the title screen says it may feel less smooth than solo or local
+  play. The creator modeled the game on Vampire Survivors.
 play:
   url: https://shadow-arena-five.vercel.app
   embeddable: true
   platforms:
     - browser
     - mobile
+  controls:
+    - "WASD: move (player 1)"
+    - "Arrow keys: move (player 2)"
+    - "IJKL: move (player 3)"
+    - "TFGH: move (player 4)"
+    - "Space: toggle ready on character select"
 creator:
   name: BWBlit
   handle: bwblit
@@ -51,7 +58,7 @@ media:
     - games/shadow-arena/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-09-29
+  updated: 2026-10-01
 status: live
 provenance:
   foundVia: scout:vibejam-2026

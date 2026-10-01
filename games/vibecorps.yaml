@@ -3,26 +3,38 @@ title: VibeCorps
 tagline: Type prompts, grow a startup, and guide it from solo founder to
   acquisition target.
 description: >-
-  VibeCorps is an incremental simulation about building a software startup. You
-  begin as a solo founder who types prompts, and your output grows as you bring
-  on AI agents that write the code for you. A run follows the company from a
-  one-person effort toward the point where a larger buyer wants to acquire it.
+  Type on the keyboard to fill a code buffer, and the typing earns money. The
+  first screen shows a code file and a progress bar labeled "vim main.js" that
+  counts to 60. Your cash and MRR are at $0, and a valuation bar starts at $0 of
+  $100.0K.
 
 
-  The premise draws on how programming has changed, with the player's role
-  shifting from writing code by hand to directing automated helpers. The creator
-  says the game comes from their own experience in startups, which shapes the
-  founder-to-exit arc and gives the progression a personal point of view.
+  The first purchase on the code tab is a Mechanical Keyboard for $80. It raises
+  output from 1 to 2 characters per keypress and makes prompts type 2.0 times
+  faster. Agents are hired from the F5 tab, and a panel on the right lists them.
+  It starts empty, with the account on a Free plan of 50 requests.
 
 
-  It was entered in Vibe Jam 2026, and the creator states that it was built with
-  Claude Code. The jam entry places the game among hundreds of submissions, and
-  it plays as a single-player experience without multiplayer features.
+  Five tabs run along the top: Code, Tickets, Market, GPU and Org. Sell and Test
+  percentages sit in a slider on the left. A news ticker runs along the top, and
+  a log at the bottom records events. A Next Vibe button sits in the top corner.
+
+
+  The creator frames the run as going from solo founder to AI-powered
+  acquisition target. They say it draws on the evolution of coding and their own
+  experience in startups.
 play:
   url: https://vibecorps.pages.dev
   embeddable: true
   platforms:
     - browser
+  controls:
+    - "Keyboard typing: fill the code buffer"
+    - "F1: Code tab"
+    - "F2: Tickets tab"
+    - "F3: Market tab"
+    - "F4: GPU tab"
+    - "F5: Org tab"
 creator:
   name: compnski
   handle: compnski

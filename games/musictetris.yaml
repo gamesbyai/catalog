@@ -2,28 +2,35 @@ slug: musictetris
 title: MusicTetris
 tagline: Stack falling blocks while the scenery and music shift over time.
 description: >-
-  MusicTetris is a falling-block puzzle in the Tetris tradition, where the board
-  stays familiar and everything around it keeps changing. Pieces drop into the
-  playfield, and you position them to complete lines and keep the stack from
-  reaching the top of the board.
+  Falling blocks drop into a tall, cyan-framed well, and you slide, rotate and
+  drop them to complete rows. The first piece is a straight bar of four cyan
+  blocks, and a faint outline at the bottom of the well marks where it will
+  land.
 
 
-  The creator explains that it began as a playground for experimenting with
-  Tone.js and graphics on top of a simple game mechanic. The music is generated
-  in the browser with Tone.js, the visuals are built with Three.js, and Codex
-  was used to build it.
+  A panel in the corner tracks score, high score, cleared lines and BPM, which
+  starts at 100. The background scene and the music change as the game goes on
+  and as time passes. Faceted purple crystals sit on either side of the well,
+  surrounded by drifting particles.
 
 
-  It supports multiplayer, works on phones, and came 552nd of 945 at Vibe Jam
-  2026. Because the core rules stay simple, a run is about steady placement
-  while the 3D scene and the soundtrack evolve alongside the puzzle as time
-  passes.
+  Left and right arrows move the piece, up rotates it, down soft drops it, and
+  space hard drops it. P pauses and M mutes, and an on-screen button switches
+  the music on or off. The creator wanted a playground for Tone.js audio and 3D
+  graphics on top of a simple mechanic.
 play:
   url: https://musictetris.anshuldhawan.com
   embeddable: true
   platforms:
     - browser
     - mobile
+  controls:
+    - "Left / Right arrows: move"
+    - "Up arrow: rotate"
+    - "Down arrow: soft drop"
+    - "Space: hard drop"
+    - "P: pause"
+    - "M: mute"
 creator:
   name: anshuldhawan001
   handle: anshuldhawan001
@@ -53,7 +60,7 @@ media:
     - games/musictetris/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-09-29
+  updated: 2026-10-01
 status: live
 provenance:
   foundVia: scout:vibejam-2026

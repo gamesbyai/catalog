@@ -3,25 +3,40 @@ title: Void Surge
 tagline: Steer a ship while its weapons fire on their own, then extract before
   four bosses arrive.
 description: >-
-  In Void Surge you only steer; the ship's weapons fire on their own. It is a
-  bullet-heaven survivor in which you hold Station Helix-9 for a ten-minute run
-  while the intensity keeps climbing, and the aim is to extract before four
-  bosses stack up on screen.
+  You move a lone survivor around Station Helix-9 and never aim or fire, because
+  every weapon triggers by itself. A run lasts ten minutes. Intensity steps up
+  once a minute, from 1 to 10, and spawning speeds up sharply during the last 60
+  seconds.
 
 
-  It was vibe-coded for fun with Grok Build, the creator says, as an HTML5
-  roguelike survivor that draws to a canvas. It is built for solo play. Steering
-  is the only input, which keeps it easy to pick up on a touch screen as well as
-  with a desktop pointer or keys.
+  Kills leave XP gems behind. Each level-up halts the timer and shows three
+  cards. Your loadout holds one core weapon (a Light Saber), three arms and
+  three mods, and each piece can reach Mk 5. Arms include a plasma shotgun,
+  laser beam, fire trail, orbiting orbs, drone, sentry turret, Tesla coil,
+  radiation cloud, orbital strike and cryo grenade.
 
 
-  Progression is about building Mk 5 loadouts: you stack weapon upgrades so the
-  automatic fire grows heavier as the pressure rises around the station.
+  Bosses appear at 2:00, 4:00, 6:00 and 8:00. An earlier boss stays alive when
+  the next arrives, so falling behind means fighting several together. A dead
+  boss drops a gold pickup that draws in all the gems on the map. Medkits
+  restore hull, which begins at 100.
+
+
+  Only kills count toward score, and each is worth more at higher intensity,
+  from 8 points at level 1 up to 140 at level 10. Surviving to 10:00 marks the
+  run as extracted on a scoreboard kept in your browser. The title screen
+  accepts a callsign of up to 14 characters.
 play:
   url: https://void-surge-survivor.grok.me
   embeddable: true
   platforms:
     - browser
+  controls:
+    - "WASD / arrow keys: move"
+    - "Drag on touchscreen: virtual stick"
+    - "1 / 2 / 3: pick a level-up card"
+    - "Tap a card: pick a level-up"
+    - "Esc: pause / resume"
 repo: https://github.com/NguyenMav/Project_Vibecode_GrokBuild_Game_Void_Surge
 license: MIT
 creator:
@@ -50,7 +65,7 @@ media:
     - games/void-surge/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-09-30
+  updated: 2026-10-01
 status: live
 provenance:
   foundVia: scout:github

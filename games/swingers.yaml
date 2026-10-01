@@ -2,26 +2,30 @@ slug: swingers
 title: Swingers
 tagline: Swing with friends to rack up the most damage to city infrastructure.
 description: >-
-  Swingers is a multiplayer action and party game about swinging and property
-  damage. You and your friends swing through a city full of critical
-  infrastructure, and the aim is to cause more monetary damage than everyone
-  else by the end of the round.
+  Hold left click, or Space, while aiming at a building wall to grapple onto it
+  and swing through the city. Right click performs an air dash. The goal is to
+  rack up the most dollars in property damage, shown as a running total at the
+  top center of the screen.
 
 
-  The premise is deliberately chaotic, and the creator jokes, in their own
-  words, about a love of swinging and insurance fraud. That tone earned it the
-  Most Unhinged award at Vibe Jam 2026, where it also placed 17th of 945.
+  The city is a field of tall blue towers with billboards on the rooftops and
+  green rings floating between them. A Getting Started checklist lists five
+  tasks: grapple onto a building, air dash, fly through a green speed ring,
+  smash into a billboard, and destroy part of a building.
 
 
-  The score is counted in dollars of damage, so a round becomes a contest over
-  who can wreck the most while staying in motion. It runs on Three.js and is set
-  up for groups to jump in together from different devices, phones included.
+  A speed readout in meters per second sits above the crosshair, and a timer
+  sits in the top left corner. The start menu shows a global leaderboard ranked
+  by damage total. Hints and audio can each be toggled from the start menu.
 play:
   url: https://swing.offmylawn.com
   embeddable: true
   platforms:
     - browser
     - mobile
+  controls:
+    - "Left click / Space: hold to grapple and swing"
+    - "Right click: air dash"
 creator:
   name: _offmylawn
   handle: offmylawn
@@ -50,7 +54,7 @@ media:
     - games/swingers/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-09-29
+  updated: 2026-10-01
 status: live
 provenance:
   foundVia: scout:vibejam-2026

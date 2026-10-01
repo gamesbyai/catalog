@@ -2,25 +2,36 @@ slug: simdrive
 title: SimDrive
 tagline: Race friends in a shared car game, steering with your phone as the controller.
 description: >-
-  In SimDrive your phone is the steering wheel. Each player tilts and moves
-  their phone to drive a car on a shared screen, and the phone answers with
-  haptic and sound feedback as you race.
+  Your phone is the steering wheel. Open the game on a TV or computer, create a
+  room, then scan the QR code with a phone. Tilt the phone to steer and touch
+  the on-screen Brake and Throttle buttons. The phone gives feedback through
+  sound and haptics: engine roar, tire slip, curb rumble and rain grip.
 
 
-  The format comes from couch party games like Jackbox and Gaming Couch, where a
-  group gathers around one screen. The creator applied it to racing out of a
-  love of Mario Kart and the PS3 controller's unused motion controls. The
-  physics are reasonably realistic, so smooth handling beats button mashing.
+  The host screen can run solo, in 4-way split-screen, in two 4-way split
+  screens, or with everyone on their own screen by joining with a room code.
+  Race options include the number of laps, the track, rain and ghost cars. A
+  position list in the corner shows who is ahead during the race.
 
 
-  It suits a group in one room. It can technically run on mobile, but in
-  practice that takes two phones: one to display the race and one to steer. The
-  creator calls it a first game, made with Codex and plenty of tokens.
+  The car physics include dynamic traction, downforce and rain effects. The race
+  view shows a speedometer, a mini track map and a lap counter, such as Lap 1/3.
+  The creator drew on party games like Jackbox and Gaming Couch, plus Mario
+  Kart, and wanted to use a phone's motion sensors the way the PS3 controller
+  was meant to.
+
+
+  Each player needs their own phone as a controller, so playing on a single
+  phone means using two devices.
 play:
   url: https://simdrive.xyz
   embeddable: true
   platforms:
     - browser
+  controls:
+    - "Tilt phone: steer"
+    - "Touch Throttle button: accelerate"
+    - "Touch Brake button: brake"
 creator:
   name: 1000xcat
   handle: 1000xcat
@@ -51,7 +62,7 @@ media:
     - games/simdrive/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-09-29
+  updated: 2026-10-01
 status: live
 provenance:
   foundVia: scout:vibejam-2026

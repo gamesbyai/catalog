@@ -3,25 +3,33 @@ title: NEEDLE RUN
 tagline: Fly through gates, avoid pursuers, and chase score multipliers for a
   leaderboard spot.
 description: >-
-  NEEDLE RUN has you thread a craft through a series of gates while something
-  hunts you. Every run is a scoring attempt with three parts: pass through the
-  gates, stay out of the pursuers' reach, and pick up multipliers to push the
-  total higher.
+  Steer a small arrow ship across a neon grid, flying through gates while red
+  diamond enemies close in on you. You have no weapon to shoot with. The goal is
+  to stay uncaught, pass through gates, and build a score as high as you can.
 
 
-  The game is framed as a take on the Pacifism mode from the Geometry Wars
-  series. It is a single-player arcade game, rendered in 3D with Three.js and
-  played in the browser, and it placed 98th of 945 at Vibe Jam 2026.
+  Collecting multipliers raises the number shown at the top of the screen, which
+  starts at x1. A bomb is held in reserve and the HUD shows when one is ready.
+  Your best score sits in the top left corner, and the top-ranked score to beat
+  sits in the top right.
 
 
-  That puts the emphasis on evasion and on routing a path between the gates and
-  the pursuers as they close in. The multipliers reward taking risks, and the
-  leaderboard gives every attempt a number to beat and a spot to chase.
+  Scores go to an online leaderboard, and the title screen has a profile editor
+  for your entry. Move with the mouse, WASD, a gamepad stick, or a touch virtual
+  stick. The creator took the idea from the Pacifism mode in the Geometry Wars
+  series.
 play:
   url: https://needle-run.afterimage-dev.com
   embeddable: false
   platforms:
     - browser
+  controls:
+    - "Mouse: aim and move"
+    - "WASD: move"
+    - "Gamepad left stick: move"
+    - "Touch virtual stick: move"
+    - "B / Shift: bomb"
+    - "Space / click / tap: begin"
 creator:
   name: AfterimageDev
   handle: afterimagedev
@@ -49,7 +57,7 @@ media:
     - games/needle-run/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-09-29
+  updated: 2026-10-01
 status: live
 provenance:
   foundVia: scout:vibejam-2026

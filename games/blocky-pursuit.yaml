@@ -2,27 +2,28 @@ slug: blocky-pursuit
 title: Blocky Pursuit
 tagline: Drive through a blocky city and outrun the police without getting busted.
 description: >-
-  Blocky Pursuit is a single-player arcade police chase through a city built
-  from blocks. You steer a car through the streets with police cars on your
-  tail, and the goal is to keep moving and avoid getting busted for as long as
-  you can manage.
+  Blocky Pursuit has you steering a car that drives itself through a blocky
+  city, seen from above at an angle. Your only input is turning left or right.
+  The goal is to evade the cops on your tail and avoid getting busted.
 
 
-  It is the creator's personal take on Smashy Road, a game they have played for
-  a long time. It keeps that game's chase-and-evade idea and moves it into a
-  chunky, low-poly city built on Three.js, and it finished 141st of the 945
-  entries at Vibe Jam 2026.
+  The map mixes roads with grass, trees, houses and patches of water. Cops can
+  be lured into the water, which gives you a way to shake them. The on-screen
+  instructions also tell you to stick to the roads.
 
 
-  The creator says it came together during one sleepless night, and the scope is
-  small and focused to match: drive, outrun the police cars and see how long you
-  last before they bust you.
+  Skimming close past obstacles builds a combo that multiplies your score by
+  three. The start menu also links to a garage, a leaderboard and a feedback
+  form. The creator built it in one sleepless night, inspired by long-time play
+  of Smashy Road.
 play:
   url: https://blocky-pursuit.netlify.app
   embeddable: true
   platforms:
     - browser
     - mobile
+  controls:
+    - "A / D: steer left / right"
 creator:
   name: culeeiz
   handle: culeeiz
@@ -50,7 +51,7 @@ media:
     - games/blocky-pursuit/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-09-29
+  updated: 2026-10-01
 status: live
 provenance:
   foundVia: scout:vibejam-2026

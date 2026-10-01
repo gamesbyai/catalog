@@ -3,25 +3,25 @@ title: Cube's Gravity Maze
 tagline: Flip gravity to run mazes, dodge traps, collect keys, and beat the Core
   Guardian boss
 description: >-
-  Cube's Gravity Maze is a short action-platformer set in randomly generated
-  mazes. You guide a cube with the left and right arrow keys and flip gravity
-  with the spacebar to cross traps, mechanisms, and monsters. Each run is a hunt
-  for the keys that open the way deeper, ending at the boss that controls the
-  maze.
+  Pressing Space flips gravity, so the green cube falls toward the ceiling or
+  the floor of a randomly generated maze. You move left and right with the arrow
+  keys. An on-screen hint says to find the key or exit and break obstacles along
+  the way.
 
 
-  Skills found in the maze add options: a dash that makes you invulnerable, a
-  phase ability that toggles red and blue blocks, and an energy-powered spin
-  slash. Enemies behave differently, including ghostly pursuers, turrets that
-  fire on sight, wandering walkers, and spiked wheels. Crumbling blocks and
-  spikes keep the route tense.
+  The maze holds turrets that fire on sight, ghostly pursuers, wandering
+  walkers, spiked wheels, crumbling blocks and spike traps. Red and blue phase
+  walls can be made passable with the Phase skill. Skills are found inside the
+  maze: Q dashes with invulnerability, W toggles phase walls, and E performs a
+  spin slash that uses energy.
 
 
-  Special chambers deep in the maze hold heavy hazards and a payout of gold
-  coins. Items include shields, time orbs, and a compass that points to keys and
-  exits. The Core Guardian boss has an Enraged Mode, and a results screen
-  records score, deaths, and clear time. Controls can be remapped from the pause
-  menu. The jam entry lists AI assistance with code.
+  Pickups include shields, coins that give energy and extra protection, time
+  orbs and a compass that points to keys and exits. Special chambers packed with
+  hazards pay out gold coins. Deep in the maze the Core Guardian boss waits, and
+  it has an enraged mode. A results screen records score, deaths and clear time,
+  and the top bar shows level, score, timer and death count. Controls can be
+  remapped from the pause menu.
 play:
   url: https://inkling123.itch.io/cubes-gravity-maze
   embeddable: false
@@ -62,7 +62,7 @@ media:
     - games/cube-s-gravity-maze/shot-2
 dates:
   added: 2026-09-30
-  updated: 2026-09-30
+  updated: 2026-10-01
 status: live
 provenance:
   foundVia: scout:aibgj-2

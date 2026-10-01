@@ -3,21 +3,21 @@ title: Echo-9
 tagline: Deliver packages on foot through post-apocalyptic Hanoi using a desktop
   and a phone.
 description: >-
-  Echo-9 makes you a courier in post-apocalyptic Hanoi, where the power grid has
-  failed. You carry packages on foot through the city in 3D, steering with WASD
-  on a desktop and weaving around the thousands of scooters that fill the
-  streets.
+  Deliver bowls of phở on foot through Hanoi in 2055, after the grid has gone
+  dark. Thousands of scooters fill the streets, and you steer your courier with
+  WASD on the desktop while dodging them on the way to each drop-off.
 
 
-  The creator says it draws on Another World, the 1991 game, aiming for a
-  similar mood in 3D, and added the phone pairing for novelty. It was built with
-  Claude Code on Three.js and placed 85th of the 945 entries at Vibe Jam 2026.
+  The game is built for two screens. The title screen shows a QR code and a
+  session link to open on your phone. The phone acts as your map and flashlight,
+  and as a balance sensor in your pocket that you keep steady. It also has
+  buttons and a briefing, and it reads the accelerometer. A link on the title
+  screen lets you play without a phone.
 
 
-  That pairing is the hook: the game runs across two devices at once. The
-  desktop shows the city and handles movement, while your phone becomes a
-  companion tool for the mission, with buttons, a briefing and accelerometer
-  input among other features.
+  The creator wanted the mood of Another World (1991) in 3D, and added the phone
+  as a second device for novelty. The title screen also offers Settings and
+  Highscores.
 play:
   url: https://echo9.tonnoz.com
   embeddable: false
@@ -58,7 +58,7 @@ media:
     - games/echo-9/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-09-29
+  updated: 2026-10-01
 status: live
 provenance:
   foundVia: scout:vibejam-2026

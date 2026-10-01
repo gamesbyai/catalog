@@ -3,28 +3,34 @@ title: "Sludge Corp: Origins"
 tagline: Grow an alien biomass from a petri dish into a company that buys the
   solar system.
 description: >-
-  Sludge Corp: Origins is a corporate-horror incremental game. You play Subject
-  Alpha, an alien biomass growing inside a classified underground facility. You
-  spend Biomass on biological assets that produce more Biomass on their own,
-  then push outward through the facility until you reach the surface and the
-  wider world.
+  An orange blob sits in a sealed underground lab, and you play it. As Subject
+  Alpha, you click to gather Biomass, then spend it in the Splicer on biological
+  assets, starting with wriggly hairs and acidic maws, that keep producing
+  income without clicks.
 
 
-  The game changes shape as it goes. Extracted DNA permanently mutates your
-  body, and you breed expendable Siege Spores to break down blast doors. A
-  Digester lets you feed huge amounts of Biomass into the core for a chance at
-  permanent artifacts. On the surface, a Market lets you sell your own flesh for
-  USD and buy up the planet. The tone is dark office-speak humor.
+  Extracted DNA permanently changes your body. In the Breach, you breed Siege
+  Spores, which are expendable units that attack the facility's blast doors
+  while you look after the core. Getting through those doors takes you to the
+  surface.
 
 
-  The creator states that the code, the procedural audio engine, and the design
-  logic were all built in collaboration with AI for a game jam. It runs in the
-  browser and placed 15th of 42 entries in AI Browser Game Jam 2.
+  The Digester works as a gamble: you feed large piles of spare Biomass into the
+  core and may get permanent artifacts back. On the surface, the Market lets you
+  sell your own flesh for USD and spend it on buying the planet, with the solar
+  system as the final target.
+
+
+  The tone is dark corporate humor, with office jargon applied to a monster
+  eating everything. The code, procedural audio and design logic were built in
+  collaboration with AI.
 play:
   url: https://vibeaxis.itch.io/sludge-corp-origins
   embeddable: false
   platforms:
     - browser
+  controls:
+    - "Mouse click: grow, buy upgrades, and use menus"
 creator:
   name: VibeAxis Games
   handle: vibeaxis
@@ -53,7 +59,7 @@ media:
     - games/sludge-corp-origins/shot-2
 dates:
   added: 2026-09-30
-  updated: 2026-09-30
+  updated: 2026-10-01
 status: live
 provenance:
   foundVia: scout:aibgj-2

@@ -2,26 +2,35 @@ slug: cluck-heist
 title: Cluck Heist
 tagline: Rampage as a chicken through a cartoon version of your own neighborhood.
 description: >-
-  Cluck Heist starts with a real address. Type one in and the game builds a
-  cartoon version of the surrounding neighborhood from OpenStreetMap data, then
-  turns you loose in those streets as a menacing chicken.
+  You play a chicken on a top-down map built from a real address. A start screen
+  asks for a handle and a location. Leave the location blank and you land on a
+  random suburban block. The streets come from OpenStreetMap data and are drawn
+  in a cartoon style.
 
 
-  It is a top-down sandbox, and the creator describes it as an attempt to make
-  the most ridiculous game possible, for fun. Made with Claude Code and
-  Three.js, it placed 278th of 945 at Vibe Jam 2026, and the tone is openly
-  silly, built around chicken mischief and petty theft.
+  You peck, poop, scream, and throw eggs while grabbing items and carrying them
+  to your nest. A row of wanted stars at the upper left tracks the attention you
+  draw from the humans, and a score counter sits at the upper right.
 
 
-  From there you peck, poop and steal your way around, then haul the loot back
-  to your nest before the humans catch on. Because the streets come from a place
-  you choose, the chaos can happen on your own block.
+  Under the stars are an HP bar, a food bar, and counters for carried items,
+  eggs out of three, and a cat posse out of three. An address bar at the top
+  loads a new location. Zoom buttons and a small music player with a track
+  selector are also on screen.
 play:
   url: https://cluckheist.cates.fm
   embeddable: true
   platforms:
     - browser
     - mobile
+  controls:
+    - "WASD: move"
+    - "Shift: sprint"
+    - "E / Space: grab/drop"
+    - "X: eat/peck"
+    - "Q: poop"
+    - "G: throw egg"
+    - "C: scream"
 creator:
   name: catesb
   handle: catesb
@@ -52,7 +61,7 @@ media:
     - games/cluck-heist/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-09-29
+  updated: 2026-10-01
 status: live
 provenance:
   foundVia: scout:vibejam-2026

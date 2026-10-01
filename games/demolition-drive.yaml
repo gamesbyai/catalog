@@ -2,28 +2,31 @@ slug: demolition-drive
 title: Demolition Drive
 tagline: Swing, smash, and shatter structures to climb a global leaderboard.
 description: >-
-  Demolition Drive is a 3D demolition simulator with one goal: cause as much
-  damage as you can. You swing, smash and shatter your way through destructible
-  structures, and your results feed into a global leaderboard that ranks players
-  against each other.
+  The start screen asks for a callsign, with a Play button beside the text
+  field. The preview art shows a wrecking ball hanging from a tilted arm next to
+  a row of tall orange and blue towers. The job is to knock those towers down.
 
 
-  It grew out of the creator's fatigue with building. Many of the games they
-  played or made centered on construction loops, so they wanted one where
-  knocking things down is the whole point. It was built with Google's
-  Antigravity on Three.js, runs on phones as well as desktops, and placed 74th
-  of 945 at Vibe Jam 2026.
+  Move with WASD, smash with the left mouse button, boost with E or the right
+  mouse button, and slam with Q. Rounds are fast, and targets include towers and
+  stars. Each round brings a new mix of objectives, so runs differ from one
+  another.
 
 
-  That contrast shapes every run. The focus is the satisfaction of destruction,
-  and the global leaderboard gives each round of smashing a number to beat and a
-  rank to climb.
+  Scores go to a global leaderboard, so the aim is to rank above other players.
+  The creator made it after growing tired of games built around construction
+  loops and wanting one that is only about smashing things.
 play:
   url: https://tower-crusher.vercel.app
   embeddable: true
   platforms:
     - browser
     - mobile
+  controls:
+    - "WASD: move"
+    - "Left mouse button: smash"
+    - "E / right mouse button: boost"
+    - "Q: slam"
 creator:
   name: Jinish1049533
   handle: jinish1049533
@@ -54,7 +57,7 @@ media:
     - games/demolition-drive/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-09-29
+  updated: 2026-10-01
 status: live
 provenance:
   foundVia: scout:vibejam-2026

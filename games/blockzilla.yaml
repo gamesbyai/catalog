@@ -2,27 +2,33 @@ slug: blockzilla
 title: Blockzilla
 tagline: Play a giant kaiju smashing New York while evolving new powers each run.
 description: >-
-  Blockzilla makes you the destructive force instead of humanity's defender. You
-  play a giant kaiju rampaging through a blocky New York City, stomping through
-  streets, wrecking buildings and fighting off whatever tries to stop you.
+  A giant blocky green Kaiju stands on a New York street, seen from an angled
+  overhead camera, and you drag to move it through the city. The creator pitches
+  it as Vampire Survivors meets Rampage: you wreck buildings while evolving new
+  powers.
 
 
-  The loop takes the auto-attacking, upgrade-stacking structure of Vampire
-  Survivors and points it at the city-wrecking fantasy of the arcade classic
-  Rampage. The creator says the idea came from childhood memories of playing
-  Rampage and a wish to turn that into a roguelike power fantasy. Built with
-  Claude Code on Three.js, it placed 23rd of 945 at Vibe Jam 2026.
+  A prompt at the start reads "Drag to move". The street has dashed lane
+  markings, and loose cubes in warm colors float and scatter around the monster
+  in the opening seconds.
 
 
-  It is a roguelite, so each run starts over. Along the way you pick up new
-  abilities and grow stronger, and those evolving powers are the main reward for
-  surviving longer.
+  A level bar runs across the top of the screen and starts at LVL 1. A segmented
+  health bar, shaded from red to orange, sits at the bottom center. A small
+  yellow counter in the top right reads 0, and a settings gear is in the bottom
+  right corner.
+
+
+  The creator says they loved playing Rampage as a kid and fused it with
+  roguelike mechanics. Instead of saving humanity, you destroy the city.
 play:
   url: https://blockzilla.io
   embeddable: true
   platforms:
     - browser
     - mobile
+  controls:
+    - "Drag: move"
 creator:
   name: markfersh
   handle: markfersh
@@ -53,7 +59,7 @@ media:
     - games/blockzilla/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-09-29
+  updated: 2026-10-01
 status: live
 provenance:
   foundVia: scout:vibejam-2026

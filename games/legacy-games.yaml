@@ -2,26 +2,39 @@ slug: legacy-games
 title: legacy games
 tagline: Play a collection of twelve retro pixel art games in your browser.
 description: >-
-  Twelve retro-style pixel art games make up legacy games, and all of them run
-  in the browser with nothing to install. The tags point to arcade and
-  platformer styles, with short, pick-up-and-play sessions in the classic mold.
+  You pick from a launcher menu of 12 pixel art games, each on its own card with
+  a Play button, and start whichever you like. The lineup covers a vertical
+  space shooter, a Flappy-style chicken game, an underwater diving game, a
+  twin-stick shooter and a top-down RPG, plus several side-scrolling platformers
+  and fighters.
 
 
-  The repository's topics and the creator's classification credit Claude from
-  Anthropic with generating the code, and the project is tagged as vibe coding.
-  Each game is drawn on an HTML5 Canvas in plain JavaScript, built straight on
-  the Canvas API with no game engine at all.
+  Most games use WASD to move with Z, X or C for actions. Space Shooter uses
+  WASD and Space. Flappy Chicken takes only Space to flap through obstacles and
+  defeat bosses. Underwater Diving uses WASD and Shift. Top-Down Shooter splits
+  movement and aiming, with WASD and the arrow keys.
 
 
-  The whole collection comes to more than 16,500 lines of code with no outside
-  dependencies or libraries. That keeps it small enough to read for anyone
-  curious how simple browser games are put together, and it is still twelve
-  single-player games to play.
+  The platformers and brawlers include Grotto Escape (caverns), Gothicvania
+  Swamp and Gothicvania Cemetery (fighting undead), Magic Cliffs (climbing cliff
+  faces), Warped Caves (wall-cling run-and-gun), Warped City (cyberpunk shooter)
+  and Streets of Fight (beat 'em up).
+
+
+  The art comes from Ansimuz's Legacy Collection and is drawn on an HTML5 Canvas
+  with smoothing off to keep the pixels sharp. Sound effects are generated in
+  the browser with the Web Audio API.
 play:
   url: https://humancto.github.io/legacy-games
   embeddable: true
   platforms:
     - browser
+  controls:
+    - "WASD: move"
+    - "Space: shoot / flap"
+    - "Shift: action in Underwater Diving"
+    - "Z / X / C: actions"
+    - "Arrow keys: aim in Top-Down Shooter"
 repo: https://github.com/humancto/legacy-games
 creator:
   name: humancto
@@ -49,7 +62,7 @@ media:
     - games/legacy-games/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-09-29
+  updated: 2026-10-01
 status: live
 provenance:
   foundVia: scout:github

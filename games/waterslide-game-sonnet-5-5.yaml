@@ -2,26 +2,39 @@ slug: waterslide-game-sonnet-5-5
 title: waterslide game sonnet 5.5
 tagline: Play a waterslide-themed game built in one shot by an AI model
 description: >-
-  Waterslide Game Sonnet 5.5 is a waterslide-themed arcade game that Claude
-  Sonnet 5.5 built in one shot. It comes from a personal benchmark in which the
-  creator gives the same game idea to several AI models and compares what each
-  one produces from a single attempt.
+  You sit on a banked, twisting water slide with 12 rivals, starting the race in
+  eighth place of 13. A countdown runs under a START banner, then you steer left
+  and right to hold a line down the slide. The goal is to reach the splash-pool
+  finish first.
 
 
-  This is the Sonnet 5.5 entry, run at the extra-high effort setting. The
-  creator states that the whole game was a zero-shot attempt, with no follow-up
-  rounds of fixes or added features.
+  Jumping matters. Orange ramps launch you automatically, but pressing jump in
+  the window before a ramp lip arms the hop for big air and a speed boost on a
+  clean landing. A shortcut gap needs that boosted jump, while the main route
+  has two kicker ramps and a large spiral.
 
 
-  That makes it a snapshot of what one model built from a single pass, published
-  as a GitHub repository. Because other models built their own versions of the
-  same idea, it can be set beside those sibling projects. The game itself is
-  single-player and runs in the browser.
+  Leaving the slide or missing a landing knocks you out in Race mode. Practice
+  mode removes elimination and respawns you at the last checkpoint. The HUD
+  shows your place, speed, a race timer, a progress bar and a short standings
+  list.
+
+
+  On touch screens you drag a floating joystick to steer and tap a JUMP button.
+  The menu offers a Character screen for palettes and accessories, plus settings
+  for quality, rival difficulty and handedness. Best race and practice times are
+  saved locally.
 play:
   url: https://kjlkurt.github.io/waterslide-game-sonnet-5.5
   embeddable: true
   platforms:
     - browser
+  controls:
+    - "A / D or ← / →: steer"
+    - "Space: jump"
+    - "Esc / P: pause"
+    - "Touch joystick: steer"
+    - "JUMP button: jump"
 repo: https://github.com/KJLKurt/waterslide-game-sonnet-5.5
 creator:
   name: Kurt Lietzau
@@ -48,7 +61,7 @@ media:
     - games/waterslide-game-sonnet-5-5/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-09-29
+  updated: 2026-10-01
 status: live
 provenance:
   foundVia: scout:github

@@ -2,25 +2,29 @@ slug: ekeko
 title: Ekeko
 tagline: Bargain with a corrupted Andean deity by playing cards in a horror roguelite.
 description: >-
-  Ekeko is a horror roguelite card game about bargaining with a god. You
-  negotiate ritual offerings with a corrupted deity of abundance drawn from
-  Andean tradition. Each run is a series of card-driven exchanges where you
-  weigh what to offer against what the deity grants you in return.
+  Drag miniature ceramic cards onto the altar to build an offering for the
+  Ekeko, a corrupted Andean abundance deity. He scores the tray as chips plus
+  card values, multiplied by combos and relics, and you must beat his demand in
+  each encounter.
 
 
-  A solo developer from Bolivia made it in the Godot engine, and Vibe Jam 2026
-  ranked it 89th of 945. The creator points to Balatro, Inscryption and Buckshot
-  Roulette as touchstones for this single-player game.
+  A run is split into 3 acts, each with 5 rounds, and the debt grows with every
+  act. Named combos include Ritual Pair, Full Table, Holy Trinity and Sacred
+  Altar. Perfect Offering and the Grand Rituals are left for you to discover.
+  Failing a demand has consequences the game keeps to itself.
 
 
-  The premise rests on Bolivian folklore and the Ekeko figure the game is named
-  after, and the tone is built on one idea: every wish has a price. Each card
-  you play is part of the bargain, and the deity always wants something back.
+  The setting is the Alasitas fair, where the Ekeko once handed over a house, a
+  car, a diploma and a heart, and now collects. Art is painted in a dark,
+  candlelit style. Play is mouse-only, with subtitles and color-blind friendly
+  options. Sessions are short, and the creator is a solo developer from Bolivia.
 play:
   url: https://adriver.itch.io/ekeko
   embeddable: false
   platforms:
     - browser
+  controls:
+    - "Mouse: drag cards to the altar"
 creator:
   name: AdriverBuilds
   handle: adriverbuilds
@@ -49,7 +53,7 @@ media:
     - games/ekeko/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-09-29
+  updated: 2026-10-01
 status: live
 provenance:
   foundVia: scout:vibejam-2026

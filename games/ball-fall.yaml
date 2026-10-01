@@ -2,27 +2,32 @@ slug: ball-fall
 title: Ball Fall
 tagline: Roll a ball across collapsing tiles and outlast rivals until they fall.
 description: >-
-  The floor in Ball Fall is falling apart, and the last ball still on it wins.
-  Every player rolls a ball across a platform of collapsing tiles, trying to
-  outlast the rivals until they fall, so a multiplayer round is a scramble to
-  keep moving and stay on solid ground.
+  A square floor of blue tiles sits inside a dark, round arena, and you roll a
+  ball across it while the tiles collapse. Each round opens with a 3, 2, 1
+  countdown, and an on-screen prompt tells you to start moving before the floor
+  begins to disappear.
 
 
-  Rounds are short and easy to restart, which suits quick sessions. Made by
-  figwad with Cursor, with Three.js for the 3D visuals, it finished 72nd of 945
-  at Vibe Jam 2026.
+  The goal is to dodge the gaps and outlast your rivals until someone takes the
+  plunge. You can play a solo round or join an online match. A HUD along the top
+  tracks your score, a multiplier that starts at x1, and a running timer.
 
 
-  The pace is fast and chaotic. The arena shrinks under everyone at once, which
-  forces a constant choice of where to roll next. Rivals share the same space
-  and have to be dodged too, so positioning and timing count as much as avoiding
-  the gaps.
+  The main menu also lists a top 10 high score table, a How to Play guide and an
+  About page. Menus work with keyboard or gamepad. The soundtrack is Falling In
+  Perfect Chaos by figwad, and the game is an homage to Ball Fall by Brian
+  Elting.
 play:
   url: https://ballfall.net
   embeddable: true
   platforms:
     - browser
     - mobile
+  controls:
+    - "W / S / Up / Down: navigate menu"
+    - "Enter / Space: select"
+    - "Stick / D-pad: navigate menu"
+    - "A / Cross: select"
 creator:
   name: figwad
   handle: figwad
@@ -51,7 +56,7 @@ media:
     - games/ball-fall/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-09-29
+  updated: 2026-10-01
 status: live
 provenance:
   foundVia: scout:vibejam-2026

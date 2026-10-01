@@ -2,23 +2,26 @@ slug: charge-the-coil
 title: Charge The Coil
 tagline: Tap at the right moment to wind a glowing charge around a copper coil.
 description: >-
-  Charge The Coil is a one-button timing game. A live charge spins out from a
-  core and accelerates through a copper coil. The player releases it as it
-  reaches the contact port to add a winding. Release too early and the
-  connection breaks; wait too long and the coil overloads.
+  You play with a single input. A charge leaves the center of a copper coil,
+  spirals outward, and picks up speed. Your job is to let go as it reaches the
+  contact port, which adds one more turn of winding to the coil.
 
 
-  Perfect releases grow the charge faster and build a chain, and completing the
-  whole coil cashes the stored energy into a discharge bonus. Each winding gets
-  its own neon frequency, with matching plasma bursting off the coil when it
-  locks. Every point makes the next charge faster and tighter, and the best
-  score is saved.
+  Letting go too soon severs the connection. Holding on too long sends the
+  charge into a red tail that overloads the whole coil. Perfect releases make
+  the charge grow faster and build a chain, and each new winding appears in a
+  different neon color with plasma bursting off when it locks.
 
 
-  Every new winding, successful lock, plasma burst and failure has its own sound
-  cue. The game was made for AI Browser Game Jam #4 with the theme Charge. The
-  creator states that concept and direction came from Thomas Geelens, with the
-  code and graphics built and iterated using AI-assisted coding and testing.
+  Filling the entire coil banks it, pays out a scored discharge bonus, and
+  raises the COILS FILLED count. Scoring makes each following charge quicker and
+  the timing window narrower. The top bar tracks your high score and total
+  coils, and the best score is saved.
+
+
+  Every new winding, lock, plasma burst and failure plays its own sound. The
+  browser may hold audio until your first input. The concept came from Thomas
+  Geelens, and the code was built with AI help.
 play:
   url: https://lifthillstudio.itch.io/charge-the-coil
   embeddable: false
@@ -56,7 +59,7 @@ media:
     - games/charge-the-coil/shot-2
 dates:
   added: 2026-09-30
-  updated: 2026-09-30
+  updated: 2026-10-01
 status: live
 provenance:
   foundVia: scout:aibgj-4

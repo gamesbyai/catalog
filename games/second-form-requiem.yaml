@@ -2,25 +2,39 @@ slug: second-form-requiem
 title: "Second Form: Requiem"
 tagline: Pilot a spaceship that becomes a mecha and blast through waves of enemies.
 description: >-
-  Second Form: Requiem is a fast-paced space shoot 'em up that changes shape
-  partway through. You fly a ship through relentless waves of enemies, firing to
-  survive as the screen fills with hostile fire. At some point the craft
-  transforms into a combat mecha, and the way you fight changes with it.
+  Pick a difficulty, then fly a space shooter against waves of enemies. Beginner
+  takes 50% damage and enemies have 25% less health. Normal is the standard
+  setting. Hard raises damage taken to 150% and enemy health by 50%. Beginner is
+  recommended for keyboard players, Normal for a USB controller.
 
 
-  That transformation gives the game its name. Around it, everything runs on
-  escalation: high-energy music sets the pace, power-ups change your firepower
-  as you go, and the chaos builds the longer you last.
+  Move and aim separately: WASD or the left stick moves your ship, the arrow
+  keys or right stick aim. Auto-fire is on, and holding Space or the right
+  trigger charges a heavier shot. B or the B button sets off a bomb, and holding
+  Shift or the left bumper triggers bullet time.
 
 
-  It came out of Vibe Jam 2026, where the single-player game ranked 219th of
-  945. The project, the creator says, grew from wanting to learn how to vibe
-  code and to make the kind of games they would want to play themselves.
+  Press T, or Y on a controller, to transform your fighter into a combat mecha.
+  Pickups stack: shields build up to 6 layers of armor and bombs up to 8. P
+  pauses. The creator made it to learn vibe coding and build a game they wanted
+  to play.
+
+
+  Backgrounds show a starfield with asteroids, and enemy ships fly in swarms
+  across the screen behind the menu.
 play:
   url: https://secondformrequiem.com
   embeddable: false
   platforms:
     - browser
+  controls:
+    - "WASD / left stick: move"
+    - "Arrow keys / right stick: aim"
+    - "Space / hold right trigger: charged shot"
+    - "B: bomb"
+    - "T / Y button: transform"
+    - "Shift / hold left bumper: bullet time"
+    - "P: pause"
 creator:
   name: iamchuck504
   handle: iamchuck504
@@ -47,7 +61,7 @@ media:
     - games/second-form-requiem/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-09-29
+  updated: 2026-10-01
 status: live
 provenance:
   foundVia: scout:vibejam-2026

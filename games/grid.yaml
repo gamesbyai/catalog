@@ -2,24 +2,25 @@ slug: grid
 title: GRID
 tagline: Play cards to place counters and line up three in a row on a 3×3 board
 description: >-
-  GRID is a two-player tactical card game played on a 3×3 board. Before a match,
-  you build a 30-card deck. Each turn you gain Energy, starting at 1 on the
-  first turn and rising to 5, and spend it to play cards from your hand. Every
-  card can only reach certain cells, and the first player to form three in a row
-  wins.
+  A match ends when one side lines up three counters on a 3×3 grid. Counters
+  only arrive by playing cards, so before the first move you assemble a 30-card
+  deck, then draw from it and play from your hand each turn.
 
 
-  Each card carries an ability that triggers when it lands and changes the
-  board. The Combo system lets you sacrifice one card's sequence so another card
-  can be placed in a cell it couldn't reach alone. The pool has more than 50
-  cards split between Role and Action types, which gives deck building real
-  weight.
+  Every card reaches only certain cells and costs Energy. Your supply is 1 on
+  the first turn and rises each turn until it caps at 5. Cards are either Role
+  or Action cards, over 50 in all, and each has an effect that alters the grid
+  as soon as it is placed.
 
 
-  You can play against a bot at three difficulty levels, try Draft Mode, or
-  share a screen for local two-player matches. An interactive tutorial walks new
-  players through the rules, and the game runs in the browser with mouse input.
-  The jam listing discloses AI assistance for code, graphics, sounds, and text.
+  The Combo system lets you give up one card's placement sequence so that a
+  different card can land on a cell it could not hit by itself.
+
+
+  The menu offers a bot match at three difficulty levels, an offline two-player
+  mode on one device, and Draft Mode. It also has saved decks, a rules page,
+  match history, settings and an interactive tutorial. Sessions last a few
+  minutes.
 play:
   url: https://radiantforce.itch.io/grid
   embeddable: false
@@ -55,7 +56,7 @@ media:
     - games/grid/shot-2
 dates:
   added: 2026-09-30
-  updated: 2026-09-30
+  updated: 2026-10-01
 status: live
 provenance:
   foundVia: scout:aibgj-3

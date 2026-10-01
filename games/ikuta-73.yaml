@@ -2,24 +2,28 @@ slug: ikuta-73
 title: Ikuta '73
 tagline: Mow lawns in a 1973 Tokyo summer and rest in the shade to keep your stamina up
 description: >-
-  You play a college student in the summer of 1973, mowing lawns for your
-  uncle's company in the hills west of Tokyo. The game is first-person and
-  unhurried. You push the mower across yards, watch the sun move through a day
-  cycle, and keep an eye on your stamina as the work goes on.
+  Summer, 1973, in the hills west of Tokyo: you play a college student cutting
+  lawns for your uncle's company. In first person you push a mower through
+  yards, steering it over the grass. The game centers on taking care with the
+  work when nobody would check. A session lasts about half an hour.
 
 
-  The sun drains your stamina and shade restores it, so you pick when to keep
-  cutting and when to step out of the heat. Doing the job well can earn
-  hospitality from the people you work for, such as something cold to drink,
-  which gives bonus stamina. The idea comes from a Haruki Murakami short story,
-  with Katamari Damacy and the Boku no Natsuyasumi series as further influences.
-  A two-stick mower option is available for gamepad players.
+  Heat sets the rules. Direct sun wears down your stamina quickly, and standing
+  in shade brings it back, so you step out of the light when the afternoon gets
+  heavy. Your maximum stamina also shrinks slowly over the day. Neat work can
+  earn a cold drink from someone, which gives a stamina boost.
 
 
-  It was made for AI Browser Game Jam 4 using Godot. The creator credits Claude
-  Code with the code, sound effects, modeling, and level QA, and Grok Build with
-  the title screen and lens flare code. Stuart Weiss of Plinth Games handled
-  everything else. A session runs about half an hour.
+  A moving sun and a day cycle carry time forward, and you can check the clock
+  at any point. A wheelie spins the mower around quickly. An optional two-stick
+  mode, which needs a dual-stick gamepad, can be switched on in settings. If the
+  game runs slowly, lower the grass density under Performance.
+
+
+  The look is low-poly, with Japanese houses, cicada sounds and a lens flare on
+  the title screen. It takes cues from a Murakami short story. On touchscreens,
+  the left half of the screen moves and steers, the right half turns the view,
+  and a tap grabs or uses an item.
 play:
   url: https://plinthcybernetics.itch.io/ikuta-73
   embeddable: false

@@ -3,26 +3,28 @@ title: The Great Taxi Assignment
 tagline: Drive a taxi through a 3D city, delivering passengers before the clock
   runs out.
 description: >-
-  The Great Taxi Assignment is a driving game in the spirit of Grand Theft Auto,
-  set in a three-dimensional city. You take the wheel of a taxi and ferry
-  passengers from place to place, racing a countdown timer that limits how long
-  a run can last.
+  The game opens on a welcome panel over a dusky street lined with palm trees. A
+  speedometer sits in the bottom left, a circular map in the bottom right, and
+  info, radio, music and sound buttons run along the top left. Checkboxes on the
+  panel turn music and sound effects off before you press Start playing.
 
 
-  It keeps the open city driving of its inspiration but narrows the goal to a
-  simple job: pick up fares and get them where they need to go, quickly, before
-  the clock runs out. Three.js renders the whole city as a 3D scene in the
-  browser.
+  You drive a taxi around Vibe City, a 3D city, looking for passengers to pick
+  up. Each fare has a destination marked on your map, and you take them there
+  before the timer runs out.
 
 
-  This one is single-player, and the creator says it was built with Cursor and
-  Claude 3.7 Sonnet. It took part in Vibe Jam 2025 and is described as a winner
-  of that event.
+  Steering is on the keyboard, with the space bar as a brake. Tomáš Bencko built
+  it in 60 hours. About 99 percent of the code was AI generated, the 2D art came
+  from GPT-4o, the music from Suno and the sound effects from ElevenLabs.
 play:
   url: https://great-taxi-assignment.netlify.app
   embeddable: true
   platforms:
     - browser
+  controls:
+    - "WASD / arrows: drive"
+    - "Space: brake"
 creator:
   name: Tomáš Bencko
   handle: tomasbencko
@@ -54,7 +56,7 @@ media:
     - games/the-great-taxi-assignment/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-09-29
+  updated: 2026-10-01
 status: live
 provenance:
   foundVia: scout:awesome-cc0

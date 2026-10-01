@@ -2,26 +2,35 @@ slug: drone-operator
 title: Drone Operator
 tagline: Fly a delivery drone through hazards to drop packages on time and earn cash.
 description: >-
-  Drone Operator puts you at the controls of a delivery drone over a city. You
-  fly packages to their destinations before time runs out, collecting cash for
-  every successful drop-off, while the route fills up with obstacles and threats
-  that make a simple delivery harder.
+  Flying a delivery drone over a city is the whole job here. Move with WASD,
+  look around with the mouse, rise with Space and drop with Shift. Q lowers a
+  wire and E raises it. The goal is to deliver packages on time and earn cash.
 
 
-  The creator made it with opencode and Three.js for Vibe Jam 2026, as a
-  follow-up to a project from the previous year, built to push their own limits.
-  It is multiplayer, so other pilots can share the airspace, and it ranked 392nd
-  of 945 in the jam.
+  Several things get in the way. Reckless drones share the sky, an angry driver
+  who lost his job is out to outsmart you, and eagles patrol the air. The game's
+  own pitch warns against becoming pet food. The city has roads, blocky
+  buildings, a mountain backdrop, and an HQ with a control tower.
 
 
-  The hazards give the job its personality. Other drones fly recklessly, an
-  angry driver who lost his job tries to interfere, and eagles hunt in the
-  skies, so one wrong move can leave your drone as pet food.
+  Before a run you type a username, which stays tied to that browser and can't
+  be changed later. You also pick Low, Medium or High graphics quality. Keys 1
+  to 4 switch the music, M mutes, and Esc pauses. The creator made an earlier
+  game, Dragon World, and built this one to test the limits again.
 play:
   url: https://drone-operator.cliive.com
   embeddable: true
   platforms:
     - browser
+  controls:
+    - "WASD: move"
+    - "Mouse: look around"
+    - "Space: fly up"
+    - "Shift: fly down"
+    - "Q: wire down"
+    - "E: wire up"
+    - "1 2 3 4: change music"
+    - "M: mute / unmute"
 creator:
   name: MoneOunchPan
   handle: moneounchpan
@@ -50,7 +59,7 @@ media:
     - games/drone-operator/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-09-29
+  updated: 2026-10-01
 status: live
 provenance:
   foundVia: scout:vibejam-2026

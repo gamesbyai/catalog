@@ -2,21 +2,26 @@ slug: splashpop-arena
 title: SplashPop Arena
 tagline: Shoot paint at bots or up to 8 friends and score points before time runs out.
 description: >-
-  SplashPop Arena is a fast-paced arena shooter that swaps bullets for paint.
-  Every paint hit you land earns points, and each match is a race against the
-  clock. You can take on computer-controlled bots, or bring in up to 8 friends
-  for a multiplayer round.
+  In SplashPop Arena you shoot paint at opponents, and every paint hit adds to
+  your score while a match clock counts down. You can play against bots or with
+  up to 8 friends in the same match.
 
 
-  According to the creator, the design draws on CS:GO: tense tactical duels,
-  aim-focused gunplay, and a round-based competitive rhythm. It shows in the
-  weight on accurate shooting and in matches that stay short and contained.
-  Cursor and Three.js were the creator's tools, the arena is rendered in 3D, and
-  it landed 306th of 945 in Vibe Jam 2026.
+  The menu comes first. You enter a nickname and pick a match time of 1, 5, or
+  10 minutes, with 5 selected by default. Solo starts a run against the bot.
+  Room opens a live room with a code to share, and the match kicks off once your
+  group has joined.
 
 
-  The paint keeps the tone lighter than a typical military shooter, but every
-  point still comes down to landing the hit before the clock runs out.
+  A find-players button and a leaderboard sit on the same menu. A privacy note
+  asks you to use a nickname rather than your real name, since the name and
+  match stats can appear on the public leaderboard.
+
+
+  The menu art is candy-colored: dripping neon lettering over a soft cartoon
+  landscape with a smiling character covered in pastel icing. The creator took
+  inspiration from the tense duels, aim-focused gunplay, and round-based
+  competition of CS:GO.
 play:
   url: https://splashpoparena.com
   embeddable: true
@@ -50,7 +55,7 @@ media:
     - games/splashpop-arena/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-09-29
+  updated: 2026-10-01
 status: live
 provenance:
   foundVia: scout:vibejam-2026

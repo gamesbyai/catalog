@@ -2,26 +2,34 @@ slug: dragonwake
 title: Dragonwake
 tagline: Explore dungeons in a text-character roguelike built for long replay value.
 description: >-
-  Dragonwake is a roguelike drawn entirely in ASCII characters. You guide a hero
-  through a fantasy setting, fighting monsters, gathering gear and making risky
-  choices where one mistake can end the run.
+  The whole game is drawn in text characters on a black grid. The title screen
+  offers New Game, Load Game, Options and Obituaries, with a tip below the menu
+  about bandages stopping bleeding and binding fresh wounds. You start by
+  picking a race and pairing it with a class.
 
 
-  It is also an experiment in whether AI-assisted coding, in this case Codex,
-  can produce a deep, replayable roguelike, and it placed 106th of 945 at Vibe
-  Jam 2026. It is single-player, and the text-based look follows classic dungeon
-  crawlers, a style the creator loves.
+  Races include Human, Dwarf, Elf, Half-Elf, Halfling, Gnome and Half-Orc, and
+  classes include Fighter. Every action is a turn: you move one step, attack,
+  rest or interact, and then nearby enemies act. Movement is 8-way on the
+  numpad, and Enter interacts or confirms.
 
 
-  It leans toward the hardcore end of the tradition, with an adventure and RPG
-  focus. Each attempt starts fresh, so progress depends on how well you build
-  and play the character, and the creator is aiming for long, complex
-  replayability with a large amount of content to work through.
+  The campaign opens onto a large open-world map with roads, towns, ruins,
+  towers, dungeons and blackglass sites to travel between. A footer along the
+  bottom of the grid shows the key shortcuts for the current screen. This
+  browser version is a demo, and a Steam page links to the native release.
+
+
+  The creator set out to get long, complex replayability from AI-assisted
+  coding, as a fan of ASCII roguelikes.
 play:
   url: https://kalineh.github.io/dragonwake-pages
   embeddable: true
   platforms:
     - browser
+  controls:
+    - "Numpad: 8-way movement"
+    - "Enter: interact / confirm"
 creator:
   name: kalin_t
   handle: kalin-t
@@ -51,7 +59,7 @@ media:
     - games/dragonwake/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-09-29
+  updated: 2026-10-01
 status: live
 provenance:
   foundVia: scout:vibejam-2026

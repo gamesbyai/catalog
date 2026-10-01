@@ -2,23 +2,27 @@ slug: goof-balls
 title: Goof Balls
 tagline: Switch elements and outlast rival balls in a shrinking ring
 description: >-
-  Goof Balls is a last-ball-standing brawler built on a Fire, Grass and Water
-  triangle. You start in a shrinking ring with a crowd of round opponents.
-  Switch to the element that counters the nearest rival, rush into targets you
-  beat, and raise a shield when a fight turns against you. The final ball left
-  wins.
+  Three elements decide every collision: fire burns grass, grass soaks up water,
+  and water puts out fire. Each ball in the ring carries one of them, and you
+  can change yours with a key press. After a change your element stays fixed for
+  a moment, so a late swap is a bet you can't undo.
 
 
-  Switching elements is instant but locks for a short time afterward, so each
-  change commits you to a read on your opponents. The design grows out of the
-  idea of two masters trading rock-paper-scissors at absurd speed. Rounds are
-  quick, and the cute look contrasts with the mind games underneath.
+  The round starts in a ring that gets smaller as it goes, with you and a crowd
+  of cartoon balls with smiley faces. The aim is to be the final ball left.
+  Charge at opponents your element beats, swap to counter anyone coming for you,
+  and raise a shield when you are in trouble.
 
 
-  You can play solo against bots or set up a private room with friends and trade
-  taunts through chat. It runs in the browser with no download. The author's jam
-  submission discloses AI assistance for code, graphics and text, and says the
-  game is still being tuned and improved.
+  You can play alone against bots or set up a private room for friends, with a
+  chat to talk to them. The creator took the idea from a manga scene of two
+  masters playing rock-paper-scissors at absurd speed, and mixed it with the
+  type triangle from early Pokémon games.
+
+
+  The mouse or WASD moves your ball. Keys 1, 2 and 3 choose the element, and
+  both rush and shield can be triggered with either a mouse button or a keyboard
+  key.
 play:
   url: https://tappinc.itch.io/goof-balls
   embeddable: false
@@ -57,7 +61,7 @@ media:
     - games/goof-balls/shot-2
 dates:
   added: 2026-09-30
-  updated: 2026-09-30
+  updated: 2026-10-01
 status: live
 provenance:
   foundVia: scout:aibgj-4

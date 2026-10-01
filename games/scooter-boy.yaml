@@ -2,26 +2,34 @@ slug: scooter-boy
 title: Scooter Boy
 tagline: Ride an electric scooter through traffic, grab coins, and hop through portals.
 description: >-
-  Scooter Boy puts you on an electric scooter as a cool rider threading through
-  busy traffic. You weave between vehicles, pick up coins along the way, and
-  dodge and hop to keep the ride going without running into anything.
+  Scooter Boy puts you on an electric scooter on a road with traffic. Press any
+  key or tap to start, then use the left and right arrows to change lanes, weave
+  through the cars, and pick up coins. The up arrow jumps. Arrows pressed while
+  airborne perform tricks.
 
 
-  It started with the creator's brother. They wanted to show him what is
-  possible today with the help of AI, and they made the game with Claude Code on
-  Three.js. It ranked 372nd of 945 in Vibe Jam 2026.
+  On touch screens, swipe to move and jump. A coin counter sits in the top left
+  corner next to a sound toggle, and a label at the top of the screen marks the
+  mode as Endless. The setting is a low-poly roadside with buildings, trees and
+  speed signs.
 
 
-  The movement is racing-style, while the dodging and hopping come from
-  platformers. Portals along the route add a detour: hop into one and it leads
-  to another game, so a single ride can turn into a trip across the jam's
-  connected entries.
+  A run ends on a game over screen that shows the coins you collected and your
+  best total. You can enter a name to submit the score to a leaderboard, which
+  has separate Endless and Daily tabs. Portals along the way lead to other
+  games. The creator built it to show their brother what is possible today with
+  AI.
 play:
   url: https://vibejam2026.1clickdev.com
   embeddable: true
   platforms:
     - browser
     - mobile
+  controls:
+    - "Left / Right arrows: move lanes"
+    - "Up arrow: jump"
+    - "Arrows in mid-air: tricks"
+    - "Swipe: move and jump"
 creator:
   name: Nik D
   handle: nullkita
@@ -52,7 +60,7 @@ media:
     - games/scooter-boy/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-09-29
+  updated: 2026-10-01
 status: live
 provenance:
   foundVia: scout:vibejam-2026

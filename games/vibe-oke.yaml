@@ -2,25 +2,36 @@ slug: vibe-oke
 title: Vibe-oke
 tagline: Play along with a song one lyric word at a time, in sync with the vocals.
 description: >-
-  Vibe-oke is a karaoke rhythm game in which every word of a song's lyrics
-  becomes something you play. Instead of following a generic beat track, you act
-  on the words as they arrive, timing each input to match the singer's vocals
-  through the song.
+  The game opens on a Track Ready card with Mr. Brightside by The Killers
+  loaded. The card tells you to hit words as they reach the lane and shows five
+  colored keys: A, S, D, J and K. Press Play to start the song.
 
 
-  Rhythm play usually centers on notes or a drum pattern. Here the unit of play
-  is the sung word, so the rhythm follows the phrasing of the vocal line, word
-  by word, from the first line to the last.
+  Every word in the lyrics becomes a note, so you play along with the vocals one
+  word at a time instead of following only a beat. The left panel shows elapsed
+  time out of 3:43, a progress bar, previous and next buttons, sync status,
+  level, words per minute and a word count.
 
 
-  A love of karaoke was the inspiration, the creator says, and they built it
-  with Codex on Three.js. It finished 182nd of 945 in Vibe Jam 2026, and it
-  suits players who enjoy karaoke and want a more active way to take part.
+  The right side tracks your run. A feedback panel sits above a combo counter
+  that feeds a multiplier starting at x1, and a health bar starts at 100%. Score
+  and accuracy sit on the left.
+
+
+  The Search Song button lets you pick another track, and a note on the card
+  warns that lyric timing may not match perfectly. A leaderboard has Global and
+  Song tabs.
 play:
   url: https://vibe-oke.com
   embeddable: true
   platforms:
     - browser
+  controls:
+    - "A: hit purple lane word"
+    - "S: hit pink lane word"
+    - "D: hit yellow lane word"
+    - "J: hit blue lane word"
+    - "K: hit green lane word"
 creator:
   name: roieambulo
   handle: roieambulo
@@ -50,7 +61,7 @@ media:
     - games/vibe-oke/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-09-29
+  updated: 2026-10-01
 status: live
 provenance:
   foundVia: scout:vibejam-2026

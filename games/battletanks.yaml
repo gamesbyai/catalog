@@ -2,27 +2,41 @@ slug: battletanks
 title: battletanks
 tagline: Fight other players' tanks in a 3D arena using cannons, missiles, and a laser.
 description: >-
-  Every player in battletanks drives a tank around one shared 3D map and fights
-  the other players' tanks online. Each player picks from three weapons: a spray
-  cannon, salvo missiles and a laser you can hold down to sweep across the
-  battlefield.
+  You drive a tank around a 3D arena against other players online and pick
+  between a spray cannon, salvo missiles, or a laser. The laser works
+  differently from the rest: hold fire to build a charge, then release to shoot,
+  and the damage grows with the charge.
 
 
-  The setup draws on Tanki Online, the browser tank battler known for futuristic
-  turret weapons. This one was built with Claude Code on Babylon.js, plays in
-  desktop and mobile browsers, and ranked 577th of 945 at Vibe Jam 2026.
+  The hull and turret turn separately. Steering moves the chassis, while
+  dedicated keys swing the turret left or right, with a tap for a small
+  adjustment and another key to snap it back to face forward. On touch screens a
+  left joystick drives and turns the tank, a right knob sets the turret angle,
+  and a large button fires.
 
 
-  Matches come down to positioning and to picking the right weapon for the
-  moment, since each one has its own use. The laser pays off if you can keep it
-  aimed across the battlefield for a long stretch, while the cannon and missiles
-  suit quicker exchanges.
+  A loadout panel opens mid-match, so you can change chassis, turret, mobility
+  and colors without leaving the game. The chassis list includes Colossus and
+  Vampire. A stat readout covers HP, speed, damage, fire rate and rotation. A
+  help panel with all the controls opens on H at any time.
+
+
+  The creator took the idea from Tanki Online, a browser tank game that features
+  futuristic turret weapons such as lasers and plasma cannons.
 play:
   url: https://battletanks.marcosbrendon.com
   embeddable: false
   platforms:
     - browser
     - mobile
+  controls:
+    - "WASD / arrows: drive and turn"
+    - "Z / X: turret left / right"
+    - "C: center turret"
+    - "Space / F: fire (hold to charge laser)"
+    - "Tab: change loadout"
+    - "Esc: settings"
+    - "H: help"
 creator:
   name: MarcosBren31124
   handle: marcosbren31124
@@ -53,7 +67,7 @@ media:
     - games/battletanks/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-09-29
+  updated: 2026-10-01
 status: live
 provenance:
   foundVia: scout:vibejam-2026

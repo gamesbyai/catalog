@@ -3,26 +3,34 @@ title: Wallflipper
 tagline: Race through a neon corridor, flipping gravity to dodge obstacles and
   grab objects.
 description: >-
-  Wallflipper is a racing game set inside a neon corridor. The player runs along
-  the floor, the walls, and the ceiling, flipping gravity to move between
-  surfaces. Obstacles block the way, so each run is about timing the flips to
-  dodge them while picking up objects along the route.
+  The game opens on a Launch button over a dark neon corridor with a glowing
+  grid floor. A readout in the top left shows gravity (Normal) and direction
+  (Forward). The top right tracks distance in meters and two counters, both at
+  zero, with a thin bar beneath them.
 
 
-  The central mechanic is the gravity flip, which turns the whole corridor into
-  a track. Instead of steering left and right on one surface, the player chooses
-  which surface to use at each moment. The neon look keeps the corridor readable
-  as it rushes past.
+  You race down the corridor on its floor, walls, and ceiling. Steering left or
+  right carries you up the sides, and holding the steer keeps you climbing.
+  Space flips you to the opposite surface, which is how you dodge surface traps
+  and obstacles. The goal is to stay alive at full speed and collect objects
+  along the way.
 
 
-  Wallflipper was built with Three.js as an entry in Vibe Jam 2026, a game jam
-  that drew 945 entries in total. It placed 611th in the final ranking, and it
-  is a compact, single-player browser project.
+  The on-screen text also tells you to follow fragment routes through the
+  corridor. R reverses direction, which matches the Direction readout. P pauses,
+  and music and sound each have their own toggle button and key.
 play:
   url: https://expectfun.github.io/vibetools/wallflipper.html
   embeddable: true
   platforms:
     - browser
+  controls:
+    - "A / D or Left / Right arrows: steer around walls"
+    - "Space: flip to opposite surface"
+    - "R: reverse"
+    - "P: pause"
+    - "M: toggle music"
+    - "S: toggle sound"
 creator:
   name: phillennium
   handle: phillennium

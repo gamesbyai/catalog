@@ -3,27 +3,34 @@ title: Node Control
 tagline: Fight rivals for control of nodes inside a neural network in a
   multiplayer .io arena.
 description: >-
-  Inside a neural network, players battle for control of nodes in Node Control,
-  a competitive multiplayer .io game. You fight other players for influence over
-  the network in real time by extending trails, infecting nodes and contesting
-  territory, on a computer or a phone, with Three.js rendering the network.
+  The start screen asks for a name, offers six skins (Volt, Blade, Crown, Dart,
+  Trident, Phantom) and a server picker set to Auto, then a Connect button drops
+  you into a live online match. You steer by pointing your cursor where you want
+  to go.
 
 
-  The creator's aim with Claude Code was to show that AI can already help ship a
-  commercially viable game. They also put work into the stack around it:
-  netcode, multi-region deployment, telemetry and an ad-friendly structure. It
-  finished 111th of 945 entries at Vibe Jam 2026.
+  The goal is to claim territory. Leave your own area, then draw a loop back to
+  it, and everything inside the loop becomes yours. The on-screen tips also say
+  not to cross your own trail.
 
 
-  It aims to be easy to pick up while leaving room to improve. Boost timing,
-  trail length, contested infections and the choice between extending a trail or
-  closing it all shape how a round goes.
+  Matches are competitive and shared with other players, who fight for influence
+  inside a neural network. The creator lists boost timing, trail length,
+  contested infections, and the choice between extending a trail and closing it
+  as the skills that separate players. A music player in the corner lets you
+  skip tracks, and a help button and settings sit beside it.
+
+
+  The creator built it as a demonstration of a commercially shaped .io game,
+  with multi-region servers, mobile support, and telemetry.
 play:
   url: https://nodecontrol.gg
   embeddable: true
   platforms:
     - browser
     - mobile
+  controls:
+    - "Mouse cursor: steer toward the pointer"
 creator:
   name: tiepb
   handle: tiepb
@@ -54,7 +61,7 @@ media:
     - games/node-control/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-09-29
+  updated: 2026-10-01
 status: live
 provenance:
   foundVia: scout:vibejam-2026

@@ -3,24 +3,29 @@ title: Neon Abyss Salvage
 tagline: Dive through dark seas, ping for treasure, and surface before your
   oxygen runs out.
 description: >-
-  Neon Abyss Salvage is a browser-based deep-sea salvage game. Each zone hides
-  at least three treasures, and you search for them while your oxygen drains
-  with every second and every boost. Sonar pings mark treasure, mines and larger
-  threats, and oxygen stations let you refill before you have to surface.
+  You pilot a salvage sub through dark water, collecting treasure while your
+  oxygen drains. Every second and every boost uses air, so you refill at O₂
+  stations or surface empty-handed. Each zone hides at least three treasures,
+  and a zone takes 3 to 6 minutes.
 
 
-  Mines can be set off from a distance with torpedoes, or you can lure a boss
-  into them with a holo decoy. Salvaged parts buy per-run upgrades such as
-  bigger tanks, hull armor, engines, sonar, and torpedo and decoy bays. Seven
-  biomes, from jellyfish forests to lava rifts, add currents and seafloor
-  storms.
+  Sonar pings mark treasure, mines and larger creatures on your radar. Mines
+  chain-explode, so you can fire torpedoes to detonate a minefield from a
+  distance, or drop a holo decoy to lure a boss into one. Only mines can truly
+  hurt the bosses.
 
 
-  Bosses appear from Zone 3 onward, including the Leviathan, the Kraken, the
-  Sentinel, and Erebus. Only mines can truly hurt them. A zone takes three to
-  six minutes, and defeating Erebus earns a final rank before an endless mode
-  continues the dive. It supports touch controls and both Chinese and English.
-  The jam submission lists AI assistance for the code.
+  Salvaged parts buy upgrades during a run: O₂ tanks, hull armor, engines,
+  sonar, and torpedo and decoy bays. Seven biomes include jellyfish forests,
+  shipwreck graveyards, lava rifts and whale falls, with currents and seafloor
+  storms. Bosses appear from Zone 3: the Leviathan, the Kraken, the Sentinel and
+  Erebus.
+
+
+  Defeat Erebus and extract to get a final rank, then keep descending in endless
+  mode. A full clear takes 30 to 60 minutes. A virtual joystick and buttons
+  support touch play in portrait or landscape, and the interface switches
+  between English and Chinese.
 play:
   url: https://patrickstar-gogogo.itch.io/neon-abyss-salvage
   embeddable: false
@@ -56,7 +61,7 @@ media:
     - games/neon-abyss-salvage/shot-2
 dates:
   added: 2026-09-30
-  updated: 2026-09-30
+  updated: 2026-10-01
 status: live
 provenance:
   foundVia: scout:aibgj-4

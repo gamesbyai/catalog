@@ -2,28 +2,41 @@ slug: quadron-x
 title: Quadron X
 tagline: Fly an X-wing through a 15-mission dogfight campaign with a voice-acted story.
 description: >-
-  Quadron X puts you in an X-wing fighter for a 15-mission campaign. Each
-  mission seats you in a 360° cockpit, where you dogfight enemy craft while the
-  story unfolds through voiced dialogue and short video transmissions from your
-  allies and command.
+  Quadron X puts you in an X-wing cockpit for a dogfight campaign. You fly with
+  WASD and Q/E, aim with the mouse, fire with Space, and launch a torpedo with
+  F. T cycles through targets, and R picks the nearest one. The start screen
+  describes six missions across asteroid fields, convoy lanes, and Imperial
+  trenches.
 
 
-  By the creator's account, it was built from scratch in a single Sunday with
-  Claude Code and Three.js, and it placed 41st of 945 at Vibe Jam 2026. More
-  than 200 video comms were produced with Grok, and the creator describes the
-  game as a spiritual successor to xpilot.
+  Shift boosts and Ctrl brakes. Other keys raise a barrier shield (B), switch on
+  a night-vision zoom (N), match speed with a target (X), and change the camera
+  (C). P or Esc pauses, and the bracket keys change volume while M mutes.
 
 
-  Multiplayer and phone play are both supported, and the campaign mixes action
-  with simulation. The cockpit is generated procedurally, with a full view in
-  every direction, and the briefings and in-flight chatter carry much of the
-  narrative.
+  The creator's description lists a 15-mission campaign with a voice-acted
+  story, a 360-degree procedural cockpit, and more than 200 video comms
+  generated with Grok. The menu offers Start Game, Multiplayer, Levels, Ranks,
+  and an Easy toggle. Each pilot gets a callsign, editable with Tab.
+
+
+  The creator calls it a spiritual successor to xpilot and says it was made from
+  scratch in one Sunday.
 play:
   url: https://x.danielfarina.com
   embeddable: true
   platforms:
     - browser
     - mobile
+  controls:
+    - "WASD / QE: fly"
+    - "Mouse: aim"
+    - "Space: fire"
+    - "F: torpedo"
+    - "T: cycle target"
+    - "R: nearest target"
+    - "Shift: boost"
+    - "Ctrl: brake"
 creator:
   name: daniel-farinax
   handle: daniel-farinax
@@ -54,7 +67,7 @@ media:
     - games/quadron-x/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-09-29
+  updated: 2026-10-01
 status: live
 provenance:
   foundVia: scout:vibejam-2026

@@ -3,24 +3,22 @@ title: JellyBlob
 tagline: Grow a wobbly jelly, trap rivals with your trail and go Supernova in a
   shared pond.
 description: >-
-  JellyBlob is a free multiplayer .io arena where you play a wobbly gelatin
-  jelly in a glowing night pond. You grow by eating dew, cut rivals off with
-  your trail, hop over theirs and stomp jellies smaller than you. Shedding size
-  lets you surge for a burst of speed, and a full Glow meter sets off Supernova:
-  seven seconds of swallowing anything smaller.
+  JellyBlob opens on a lobby where you type a name for your jelly, choose one of
+  several colors, and press Play to join a pond shared with other players
+  online. Behind the menu, glowing dots and other jellies move across a
+  hex-patterned floor.
 
 
-  Pond events break up each match every few minutes, from a Dew Storm to a
-  fleeing Golden Jelly. Between runs there is a long progression: endless levels
-  with rank badges, a Reward Road, daily quests and a weekly challenge, plus
-  hats, faces, trails and emotes to collect. It plays on phones as well as
-  desktops, with touch controls for both orientations.
+  Quest lists on the left are split into Daily, Weekly and Run tabs. The daily
+  list asks you to hop 40 times, vault 15 trails, and stomp 8 smaller jellies,
+  paying 201, 402 and 804 XP. Your first run of the day adds a 50% XP bonus.
 
 
-  According to its creator, AI wrote all of the code over hundreds of rounds of
-  instructions and feedback: first GPT-6 Astra in Codex, then a remake with
-  Claude Opus 5.5 in Claude Code. The remake runs on Three.js with its own game
-  server, and it renders each jelly as squashy, see-through gelatin.
+  XP raises your level, which starts at 1 with 214 XP needed for the next one.
+  The reward road lists a Party Cone hat at level 2, a Coral color at level 3,
+  and a Ribbon Bow hat at level 4. A Profile & trophies panel holds your
+  personal bests, and Color Shift is a paid unlock. The AI wrote all of the
+  code, guided by the creator through hundreds of iterations.
 play:
   url: https://jellyblob.win
   embeddable: false
@@ -70,7 +68,7 @@ media:
     - games/jellyblob/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-09-29
+  updated: 2026-10-01
 status: live
 provenance:
   foundVia: pr

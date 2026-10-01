@@ -2,21 +2,23 @@ slug: mass-chaos
 title: Mass Chaos
 tagline: Grab, carry and deliver mass across a tilting arena without falling off.
 description: >-
-  Mass Chaos is played on an arena that works like a scale. You grab objects,
-  carry them, shoot and deliver them to score, because the mass you gather is
-  your score, and every step you take shifts the balance of the platform under
-  everyone.
+  You pilot a character around an arena that works like a scale, collecting
+  cargo and delivering it to your green home zone. Mass is score, so heavier
+  cargo scores more. Heavy cargo also tilts the arena and can make you slide.
 
 
-  It was the creator's first attempt at making a game, partly to show their kids
-  that ideas can be turned into something real even without prior experience.
-  They made it with Claude Code for Vibe Jam 2026, and it runs on phones too.
+  Play comes down to four actions: grab, carry, shoot, deliver. Every step you
+  take tips the balance of the arena, and the one rule to remember is not to
+  fall off.
 
 
-  Since picking up weight and moving it tips the world, positioning becomes a
-  strategic choice and movement matters as much as aim. Falling off is the
-  constant risk, so every delivery has to be weighed against the ground under
-  you.
+  The menu asks for a pilot name before you start and offers three modes: Solo,
+  Free-for-All and Teams. It uses a black background with neon cyan and magenta
+  lettering.
+
+
+  The creator had never made a game before and built this one partly to show
+  their kids that an idea can become something playable.
 play:
   url: https://mass-chaos.com
   embeddable: true
@@ -53,7 +55,7 @@ media:
     - games/mass-chaos/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-09-29
+  updated: 2026-10-01
 status: live
 provenance:
   foundVia: scout:vibejam-2026

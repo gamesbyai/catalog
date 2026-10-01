@@ -2,27 +2,33 @@ slug: star-crusade
 title: Star Crusade
 tagline: Shoot waves of alien ships in a retro space arcade battle.
 description: >-
-  Star Crusade is a retro arcade shooter written in plain JavaScript and drawn
-  on an HTML canvas. It follows the classic Galaga-style formula: you pilot a
-  ship through a space battle, fending off enemy formations and trying to
-  survive as long as you can while racking up points.
+  A small white ship sits at the bottom of a black starfield, with pixel-art
+  aliens in pink, green, purple, magenta and tan spread across the screen above
+  it. The top-left corner shows a Score, a Record and a heart counter that reads
+  2 at the start.
 
 
-  The project leans on old-school arcade design, with simple, readable action
-  and no framework or engine underneath. Because it is plain JavaScript, the
-  source is compact and easy to read, which makes it approachable for anyone who
-  wants to see how a small arcade shooter is put together.
+  You slide the ship along the bottom with the arrow keys, fire with Space and
+  set off a bomb with B. It is a retro arcade shooter in the Galaga mold, played
+  on a single canvas, with the Score and Record readouts shown above the action.
 
 
-  The repository is tagged as vibe coding, and the project's listing names
-  ChatGPT and GitHub Copilot among the tools involved. The creator's own
-  statement about how each was used is not spelled out, so the tool credit comes
-  from the repository's metadata.
+  Three buttons under the canvas toggle sound, restart the run and pause it,
+  each tied to its own key. The README frames you as a starship captain
+  defending the galaxy against an ancient threat. The creator wrote it in plain
+  JavaScript, pair-programming with ChatGPT and Copilot.
 play:
   url: https://star-crusade.netlify.app
   embeddable: true
   platforms:
     - browser
+  controls:
+    - "Left/Right arrows: move ship"
+    - "Space: fire"
+    - "B: bomb"
+    - "S: sound"
+    - "R: restart"
+    - "P: pause"
 repo: https://github.com/markets/star-crusade
 creator:
   name: markets
@@ -51,7 +57,7 @@ media:
     - games/star-crusade/shot-2
 dates:
   added: 2026-09-30
-  updated: 2026-09-30
+  updated: 2026-10-01
 status: live
 provenance:
   foundVia: scout:github

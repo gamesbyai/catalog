@@ -2,27 +2,32 @@ slug: everest-troll-summit
 title: everest-troll-summit
 tagline: Help or sabotage a shared Everest climber alongside thousands of other players.
 description: >-
-  In everest-troll-summit, every player shares one climber on Everest, and every
-  player picks a side. Helpers boost the climber toward the summit and trolls
-  get in the way, all in real time, so the climb is one ongoing contest between
-  the two camps of players.
+  A single climber ascends a snowy peak in 3D, and everyone connected decides
+  how it goes. Each player picks a side on a prompt: boost the climber toward
+  the summit at 8,849 meters, or play troll and drag them back to the bottom.
 
 
-  The creator describes it as a spur-of-the-moment idea, built with Claude Code
-  on Three.js as a multiplayer party game. It ranked 536th of 945 at Vibe Jam
-  2026, and it plays on phones as well as in a browser, which keeps the barrier
-  to joining low.
+  When you are the chosen climber, the panel gives you a One Step button worth
+  +0.1 meters per press. A stamina bar sits over the climber's head, and a
+  vertical altitude gauge on the left tracks height, starting at 5,000 meters in
+  the opening view.
 
 
-  The crowd is the hook. You never control a character of your own. You join
-  thousands of others pushing the same figure in opposite directions, and the
-  outcome depends on which group is more active.
+  Around the mountain, a live feed lists what players do, and a leaderboard
+  splits into Helpers and Trolls. A hall of fame records climbers. A chat box
+  lets you shout messages to the crowd, an SOS Help button sends a call for aid,
+  and a Share button recruits more helpers.
 play:
   url: https://everest-troll-summit.agentmeshlab.com
   embeddable: true
   platforms:
     - browser
     - mobile
+  controls:
+    - "One Step button: step up 0.1m"
+    - "Help button: send SOS"
+    - "Share button: recruit helpers"
+    - "Chat box: shout a message"
 creator:
   name: nickpeanutai
   handle: nickpeanutai
@@ -53,7 +58,7 @@ media:
     - games/everest-troll-summit/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-09-29
+  updated: 2026-10-01
 status: live
 provenance:
   foundVia: scout:vibejam-2026

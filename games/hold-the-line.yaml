@@ -2,27 +2,37 @@ slug: hold-the-line
 title: Hold the Line
 tagline: Draw electric wires to trap and eliminate zombies in a 3D isometric arena.
 description: >-
-  In Hold the Line you fight off zombies by drawing electric wire around them.
-  Trap an enemy inside the wire and it is eliminated. A run in this isometric 3D
-  arena comes down to reading the space, planning where to lay a line and
-  staying clear of the horde while you do it.
+  Zombies swarm an isometric 3D arena, and your weapon is electric wire. Hold
+  the fire input while you move to trail a wire behind you. When your path
+  closes into a loop around zombies, the wire seals itself and electrocutes
+  everything inside.
 
 
-  The design borrows from Snake and Bomberman. The trailing wire has to be
-  routed with a Snake player's spatial awareness, and the close-quarters arena
-  fights come from Bomberman. The creator calls the wire drawing their own twist
-  on those classics.
+  A wave ends when every zombie is dead, and then the next one starts. Don't
+  loop the cage around yourself, or the survivor burns. Shift dashes to dodge.
+  Diamonds give a random effect: speed, shield or freeze, or slow and extra
+  zombies as the downside.
 
 
-  The game has three modes, single-player, local multiplayer and online
-  multiplayer, and it works on phones too. Claude Code and Three.js were its
-  tools during Vibe Jam 2026, where it ranked 377th of 945.
+  Death Lakes grow by 10% every wave, so the safe zone shrinks as you advance.
+  Combo kills raise your score multiplier, and chained zaps score more. You can
+  play alone, with local multiplayer, or online. In multiplayer, each player
+  gets 5 bombs to place after a wave is cleared.
+
+
+  The creator describes it as a mix of Snake and Bomberman. Mobile play uses an
+  on-screen joystick with fire and dash buttons.
 play:
   url: https://eramis73.github.io/htl-server
   embeddable: true
   platforms:
     - browser
     - mobile
+  controls:
+    - "WASD / arrows: move"
+    - "Space / Enter: draw electric wire"
+    - "Shift: dash and dodge"
+    - "Mobile: joystick, fire and dash buttons"
 creator:
   name: enesramisg
   handle: enesramisg
@@ -53,7 +63,7 @@ media:
     - games/hold-the-line/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-09-29
+  updated: 2026-10-01
 status: live
 provenance:
   foundVia: scout:vibejam-2026

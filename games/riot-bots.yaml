@@ -3,21 +3,23 @@ title: Riot Bots
 tagline: Fight as a robot in a Martian colony, solo or allied, against an
   invading Dark AI.
 description: >-
-  A riot has broken out on a Martian base, and the Dark AI is invading to seize
-  the energy center. In Riot Bots you control a battle robot in that fight and
-  decide whether to defend the colony alone or team up with other players
-  online.
+  The first screen is a bot selection screen with a neon city skyline behind a
+  round platform. The selected bot, Ronin, a fox-headed robot on a low pale-blue
+  chassis, sits on the platform. Four cards run along the bottom: Taichi
+  (balanced controller, weight 21), Blunt (heavy tank, 28), Ronin (mid-weight
+  striker, 20) and 2Claws (mid-weight controller, 16).
 
 
-  According to the creator, it started when a friend showed them the Vibe Jam
-  games, which made them want to try 3D game development. They enjoy building
-  hardware and watching battlebots, so a robot fighting game was a natural pick,
-  and they built it with Cursor and Codex on Three.js.
+  Each bot has a name, a class and four stat bars for speed, defense, power and
+  weight. Ronin shows 28.9 speed, 12 defense, 20 power and 20 weight, and is
+  described as a front-pressure duelist. A green P1 tag and a purple Launch
+  button sit on the left, with Mode and Setting buttons in the top corners.
 
 
-  Alliances are optional, and the story is described as having an open-ended
-  ending, so the premise leaves room for player choice. Fights are 3D robot
-  battles with RPG elements mixed into the action.
+  The story is a riot at a Martian base, where a hostile Dark AI is invading to
+  take over the energy center. Players can fight on their own or form alliances
+  to defend the colony, and the ending is left open. The creator likes
+  battlebots and hardware, and this was a first try at 3D game development.
 play:
   url: https://riotbots.up.railway.app
   embeddable: true
@@ -55,7 +57,7 @@ media:
     - games/riot-bots/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-09-29
+  updated: 2026-10-01
 status: live
 provenance:
   foundVia: scout:vibejam-2026

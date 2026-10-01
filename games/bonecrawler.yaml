@@ -3,27 +3,45 @@ title: BoneCrawler
 tagline: Explore a dark gothic world and fight through fast combat in an
   NES-style action game.
 description: >-
-  BoneCrawler looks like an NES game and fights like a character-action one. You
-  explore a dark, gothic world in the manner of classic top-down adventures,
-  then take on enemies in quick, combo-minded combat instead of slow, deliberate
-  swordplay.
+  Combat comes first: swing a blade at enemies in a pixel-art dark fantasy
+  dungeon, and press Shift to Shadow Step, a longer dodge with brief
+  invincibility. Between fights you explore, interact with objects, and search
+  for secrets. A hint on screen suggests trying breakable objects.
 
 
-  The creator, a solo developer, says the code was generated with AI while they
-  directed the scope and tested the results. Claude, ChatGPT and Codex handled
-  code generation and Gemini helped with planning, and the game was built as a
-  reusable engine with an editor that the creator plans to open-source later.
+  Chests offer three random choices each: an upgrade, a full heart, or points.
+  Upgrades are Heart (heals one heart, max five), Sword (bigger blade), Speed,
+  Step (improves the dodge), and Magic Shield, which absorbs a hit and bursts
+  into a shockwave. Upgrades stack by raising stats, and shields stack by
+  widening the shockwave.
 
 
-  It is openly a tribute to the games that shaped its author. Zelda-like
-  exploration sits alongside the faster combat of Devil May Cry and Ninja
-  Gaiden, all under a gloomy fantasy atmosphere shaped by The Lord of the Rings.
+  Pickups on the ground include half hearts, full hearts, and health potions. A
+  Master Sword adds five blade strength and a Whirlwind Slash, a 360 degree
+  attack you charge and release. A Mirror skill that reflects attacks is marked
+  as coming soon.
+
+
+  Typing certain words as the player name changes the start. One gives a buffed
+  start, others begin in a secret zone or a later zone. The scoreboard is stored
+  locally as a cookie. The design mixes Zelda-style exploration with faster
+  Devil May Cry and Ninja Gaiden combat, on an engine the creator built with
+  AI-written code.
 play:
   url: https://bonecrawler.com/vibejam/index.html
   embeddable: true
   platforms:
     - browser
     - mobile
+  controls:
+    - "WASD / arrows: move"
+    - "Space / left click: attack"
+    - "Enter / E: interact"
+    - "Shift: dodge"
+    - "Esc: pause game"
+    - "D-pad (mobile): move"
+    - "B button (mobile): attack"
+    - "A button (mobile): dodge"
 creator:
   name: immagundam
   handle: immagundam
@@ -58,7 +76,7 @@ media:
     - games/bonecrawler/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-09-29
+  updated: 2026-10-01
 status: live
 provenance:
   foundVia: scout:vibejam-2026

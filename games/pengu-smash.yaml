@@ -2,26 +2,42 @@ slug: pengu-smash
 title: Pengu Smash
 tagline: Charge and clash with penguins to knock rivals off a crumbling hex ice arena.
 description: >-
-  Pengu Smash is a penguin brawl on a floor of hexagonal ice tiles floating in
-  the ocean. Each player's penguin charges and collides with the others, trying
-  to bowl them into the water, and the last penguin standing wins.
+  Pengu Smash puts you on a crumbling hex ice arena as a penguin, charging and
+  clashing to knock rivals into the ocean before the platform gives way beneath
+  you. You pick a name and a role, then press Play, or use the Online, Create
+  Room and Join buttons to play with friends.
 
 
-  The creator treated it as an experiment in how far an AI pair-programmer could
-  take a multiplayer 3D browser game, using Claude Code and taking cues from
-  Pieter Levels' build-in-public approach. The visuals, the sparkling water, the
-  selectable themes and the chiptune music are all produced in code.
+  Five roles are on the menu. Archer fires ranged Ice Arrows and can pierce a
+  line with Power Shot. Mage casts Frost Bolt, drops a Blizzard circle and can
+  Blink. Warrior leaps in with Fish Slap and Whirlwind. Tank shoves enemies and
+  places Ice Walls. Healer mends allies and lays down a Warm Aura.
 
 
-  It runs in real time online with friends, on desktop or on a phone, and it is
-  a party game at heart. The arena crumbles as the round goes on, so the safe
-  footing shrinks and every clash risks sending you off an edge.
+  Clicking an enemy attacks it automatically from your role's range. Skills sit
+  on Q, W and E, with an ultimate on R that you aim by holding the key and
+  release to cast. Abilities cost mana, which refills slowly. A penguin is out
+  at 0 HP or when it falls in the water.
+
+
+  Parties are built around a tank, a healer and a damage dealer. In 3v3 matches
+  the ice melts after 60 seconds. The menu also lets you cycle through arena
+  themes, such as Frostbound Sanctuary. The creator says the music, water
+  sparkles and themes were all generated, with no assets and no build step.
 play:
   url: https://pengusmash.com
   embeddable: true
   platforms:
     - browser
     - mobile
+  controls:
+    - "WASD: move"
+    - "Mouse: aim"
+    - "RMB (hold): walk"
+    - "LMB: attack / click an enemy"
+    - "Q / W / E: skills"
+    - "R: ultimate (hold to aim, release to cast)"
+    - "Esc: cancel cast"
 creator:
   name: s1mphon1
   handle: s1mphon1
@@ -52,7 +68,7 @@ media:
     - games/pengu-smash/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-09-29
+  updated: 2026-10-01
 status: live
 provenance:
   foundVia: scout:vibejam-2026

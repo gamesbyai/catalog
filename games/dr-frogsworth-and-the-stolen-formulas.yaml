@@ -3,26 +3,38 @@ title: Dr. Frogsworth and the Stolen Formulas
 tagline: Hop and blast through five decaying internet realms as a frog doctor
   reclaiming memes.
 description: >-
-  Dr. Frogsworth and the Stolen Formulas is a retro pixel-art platformer about
-  getting memes back. You guide a frog scientist through five realms of internet
-  decay, jumping across hazards and shooting enemies on the way to the meme
-  formulas that were taken from him.
+  A pixel-art side-scroller in the Mario and Mega Man mold, where a frog
+  scientist in a lab coat fights through five realms of internet decay to
+  recover meme formulas from the Wojak King and Dr. Croak. The title screen asks
+  you to click Frogsworth to start.
 
 
-  The look and feel draw on Super Mario Bros. and Mega Man 2, and the creator
-  describes it as a love letter to NES-era platformers and the early internet.
-  The creator made it with Claude Code on Three.js, and Vibe Jam 2026 ranked it
-  199th of 945.
+  Before starting you pick a difficulty: Easy gives infinite lives, Normal gives
+  three hearts, and Hard gives one. In a level you run and jump across purple
+  cave ground and hop over fire spikes. Bats drift overhead and a
+  hardhat-wearing enemy patrols the ground. Green pickups sit above floating
+  platforms and blocks.
 
 
-  The villains are the Wojak King and Dr. Croak, who hoard the formulas behind
-  patents. Frogsworth wants them shared and remixed freely, a cause that sets
-  the hopping and blasting apart from typical platformer plots.
+  The Frog Blaster is your shot, and holding down then pressing up charges a
+  Super Hop for extra height. Holding Shift charges a blaster fan shot that
+  unlocks at level 2, and Frog Dash unlocks at level 4. The HUD shows a health
+  bar, hearts, a coin count, and the current level, and a controls panel can be
+  toggled with H.
 play:
   url: https://drfrogsworth.com
   embeddable: true
   platforms:
     - browser
+  controls:
+    - "Left / Right arrows: move"
+    - "Up arrow / Space: jump (hold for higher)"
+    - "Down (hold) + Up: Super Hop"
+    - "Z / J: shoot Frog Blaster"
+    - "Shift (hold): charge Blaster fan"
+    - "C: Frog Dash"
+    - "P / Esc: pause"
+    - "M: mute sound"
 creator:
   name: AIMemeCreator
   handle: aimemecreator
@@ -53,7 +65,7 @@ media:
     - games/dr-frogsworth-and-the-stolen-formulas/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-09-29
+  updated: 2026-10-01
 status: live
 provenance:
   foundVia: scout:vibejam-2026

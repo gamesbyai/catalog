@@ -2,26 +2,41 @@ slug: bichitos-rumble
 title: Bichitos Rumble
 tagline: Shove cute animal fighters off the arena in fast, chaotic 3D brawls.
 description: >-
-  Bichitos Rumble crowds small, cute animal fighters onto one platform and lets
-  them try to knock each other off the edge. It is a 3D arena brawler, and every
-  round is a fast, chaotic scramble: you push, smash and fight for position
-  until only one fighter is left on the arena.
+  Pick one of nine animal fighters, then headbutt rivals off the arena into the
+  void. The roster has an elephant, fox, gorilla, turtle, frog, mole, penguin,
+  tiger and crab. Each card shows a role label, ratings for speed, weight and
+  power, and three abilities.
 
 
-  Built with Claude Code and Three.js, it came 209th of 945 at Vibe Jam 2026 and
-  runs on phones as well as desktops. It is meant as party-style competition
-  with multiplayer support, the kind of casual rivalry that works best among
-  friends, and the playful animal cast keeps the tone light.
+  From the title screen you can play against bots, join online multiplayer for
+  up to four players, or play with friends. In a match you move, headbutt, and
+  use two abilities plus an ultimate. A restart key resets the round, and a
+  gamepad also works.
 
 
-  Rounds are quick and messy, and staying on the platform matters as much as
-  shoving others off it, since the last fighter still standing wins.
+  Trunk, the elephant, is a bruiser with top power. Its abilities are a forward
+  tusk dash, a wide area thump that knocks back and stuns, and a grip that stuns
+  a target for 2.5 seconds. That target takes four times damage from any hit.
+
+
+  The select screen lets you drag to rotate a 3D preview of each fighter, and a
+  belts screen opens from it. The creator built it as a party-style brawler for
+  friendly competition with friends.
 play:
   url: https://bichitosrumble.com
   embeddable: true
   platforms:
     - browser
     - mobile
+  controls:
+    - "WASD: move"
+    - "Space: headbutt"
+    - "J / K: abilities"
+    - "L: ultimate"
+    - "R: restart"
+    - "Left / right arrows: select"
+    - "Enter: confirm"
+    - "B: belts"
 creator:
   name: RGomezR14
   handle: rgomezr14
@@ -52,7 +67,7 @@ media:
     - games/bichitos-rumble/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-09-29
+  updated: 2026-10-01
 status: live
 provenance:
   foundVia: scout:vibejam-2026

@@ -2,25 +2,29 @@ slug: bloombound
 title: BloomBound
 tagline: Cross a bloom portal to heal four broken worlds and befriend their creatures.
 description: >-
-  BloomBound is a 3D adventure that begins in a withered valley. You step
-  through a bloom portal into four broken worlds, and the goal is to bring the
-  valley back to life.
+  Stepping through the bloom portal starts at a Bloom Passport screen. Type a
+  gardener name, pick one of six glow colors, then press Enter Portal for a new
+  run or Use Saved to load a stored profile. An opening voice note can be played
+  or skipped.
 
 
-  The creator says it grew out of a shared love of games with their three kids,
-  and it is framed as a gentle, family-friendly quest. Codex was the AI tool
-  behind it, Three.js renders it, and it came 535th of 945 at Vibe Jam 2026.
+  You arrive in Heart Grove, the central grove, and from there restore four
+  broken pocket worlds. Each world has creatures to befriend, and Bloom Charms
+  are collected along the way. The valley comes back to life once the worlds are
+  restored.
 
 
-  Restoration and friendship are the two threads. Each world needs to be
-  restored, and the creatures living there can be befriended along the way.
-  Moving between the separate worlds gives the adventure a hub-and-portal shape,
-  with the valley as the place you keep coming back to and slowly repair.
+  After the fourth world you return to Heart Grove for a festival finale.
+  On-screen buttons cover movement with a move pad, a drag-to-look camera, and
+  Use, Pulse and Guide actions. The creator built it from a shared love of games
+  with their three kids.
 play:
   url: https://bloombound-jam.vercel.app
   embeddable: true
   platforms:
     - browser
+  controls:
+    - "Drag: look around"
 creator:
   name: burconsult
   handle: burconsult
@@ -50,7 +54,7 @@ media:
     - games/bloombound/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-09-29
+  updated: 2026-10-01
 status: live
 provenance:
   foundVia: scout:vibejam-2026

@@ -2,21 +2,28 @@ slug: chess3dastra
 title: Chess3dastra
 tagline: Play chess against a computer opponent on a 3D or 2D board.
 description: >-
-  Chess3dastra is full-rules chess against a computer opponent that runs locally
-  in your browser. Castling, en passant, promotion and draws are all in, and you
-  choose one of three difficulty levels before you start.
+  The game opens on a 3D chessboard with you playing white against a computer
+  opponent set to Balanced, which looks two moves ahead. A side panel reads
+  "Your move" and holds a strength menu, a color menu, New game and Undo
+  buttons, a move entry box, and a move record that starts empty.
 
 
-  According to the repository, it was built in the GitHub Copilot app with GPT-6
-  Astra from four prompts, including a review pass by a second agent. It ships
-  as a single static HTML file with unit and browser tests, and the computer's
-  search runs in a Web Worker so the interface stays responsive.
+  Move by clicking pieces or by typing algebraic notation such as e4 or e2e4
+  into the box and pressing Play. The rules are full chess: castling, en
+  passant, promotion, and draws. Check and checkmate are detected, and the
+  computer replies after each of your moves.
 
 
-  You move by clicking, with the keyboard or by typing algebraic notation, with
-  undo, a move history and a captures list at hand. The board switches between
-  3D, with hand-made pieces and an orbiting camera, and a flat 2D view. That
-  choice survives a reload, and so does a game in progress.
+  You can pick one of three computer strengths, choose to play first or second
+  in the next game, and undo moves. A 2D view built from a grid of squares with
+  SVG pieces can replace the 3D board. Light and dark themes are available. A
+  move history and captures list track the game, and the game is saved so it
+  survives a reload.
+
+
+  The opponent is a negamax search with alpha-beta pruning running in a Web
+  Worker, so the page stays responsive while it thinks. The game was built in
+  about 41 minutes from a handful of prompts.
 play:
   url: https://yortch.github.io/chess3dastra
   embeddable: true
@@ -58,7 +65,7 @@ media:
     - games/chess3dastra/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-09-29
+  updated: 2026-10-01
 status: live
 provenance:
   foundVia: scout:awesome-opus

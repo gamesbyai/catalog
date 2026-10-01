@@ -3,26 +3,39 @@ title: Vibe Sentinel
 tagline: Fight shadow beasts through ten turn-based dungeon levels, one careful
   move at a time.
 description: >-
-  Vibe Sentinel is a turn-based dungeon roguelike on a grid: ten levels down,
-  one careful move at a time. The shadow beasts get tougher as you descend, so a
-  run comes down to managing your resources and choosing every step with care.
+  The opening screen is a green-glowing panel with a short briefing, the
+  controls, and a button to pick your Sentinel. You play the last guardian of
+  the Ancient Grove, walking a dark dungeon one grid tile at a time and
+  attacking by bumping into enemies.
 
 
-  The design draws on classic grid roguelikes such as Rogue and early Nethack,
-  where the tension comes from limited resources. It runs on PixiJS, with Claude
-  Code as the AI tool.
+  Each level hides a glowing exit star that leads to the next floor, and a run
+  is won by getting through all 10 levels. You start with 10 HP. Potions restore
+  6 HP, and crystals fuel the Sentinel Pulse, which costs 2 crystals and hits
+  every enemy within 3 tiles.
 
 
-  Each level is its own biome, from a forest grove to a volcanic maze and
-  finally a void sanctum, so the scenery changes as the danger rises. Beyond the
-  main run there is an endless mode and a set of badges to earn, and a portal
-  leads straight into the next Vibe Jam game.
+  Turns are discrete, so nothing moves until you do. Enemies step only every
+  other turn, which leaves a gap to reposition. Waiting passes your turn while
+  they keep acting. The outer border is solid wall, so there is no safe edge to
+  hide along.
+
+
+  Each of the 10 levels has its own biome, running from a forest grove through a
+  volcanic maze to a void sanctum. Beyond the main run there are an endless
+  mode, badges, and a portal into another game from the same event. The design
+  follows early Rogue and Nethack, where resource management matters more than
+  reflexes.
 play:
   url: https://flash-source.github.io/vibeSentinel
   embeddable: true
   platforms:
     - browser
     - mobile
+  controls:
+    - "Arrow keys / WASD: move one tile, bump enemies to attack"
+    - "Q: Sentinel Pulse (costs 2 crystals)"
+    - "Space / Enter: wait a turn"
 creator:
   name: Nehagoyal1407
   handle: nehagoyal1407
@@ -54,7 +67,7 @@ media:
     - games/vibe-sentinel/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-09-29
+  updated: 2026-10-01
 status: live
 provenance:
   foundVia: scout:vibejam-2026

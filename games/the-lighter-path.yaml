@@ -3,27 +3,33 @@ title: The Lighter Path
 tagline: Descend through Hell as Dante, hopping portals between minigames as
   karma sways your fate.
 description: >-
-  The Lighter Path casts you as Dante on a descent through Hell, and the way
-  down runs through other games. Portals drop you into an Archero-style
-  roguelite, a dinosaur survival shooter, a Flappy Bird-style Heaven Taxi, and a
-  swarm of smaller minigames.
+  You play Dante, who wakes in a dark place with only a lantern and walks down
+  through Hell. Portals along the way send you into separate games: a roguelite
+  in the style of Archero, a survival shooter with dinosaurs, a Heaven Taxi
+  stage modeled on Flappy Bird, and a swarm of smaller minigames.
 
 
-  The creator describes it as a collection of their many ideas, which they say
-  they could not have made without vibe coding, since they are not an engineer.
-  It was their Vibe Jam 2026 entry, built with Claude Code on Three.js, and it
-  placed 271st of 945.
+  A karma counter sits at the top of the screen. Karma decides whether Dante
+  ends in damnation or salvation. The title screen bills the game as an inferno
+  arcade with four worlds and a single soul.
 
 
-  Every stop changes the rules, so one trip mixes action, platforming, puzzles,
-  and racing. Your karma is tracked the whole way down, and it decides whether
-  the run ends in damnation or salvation, so what you do in each game counts.
+  The title screen lists WASD, the mouse, E, Shift and F as the inputs. Pressing
+  Tab opens a list of commands and tips, and a Begin button starts the descent.
+  Touch devices are supported, though the title screen recommends a desktop
+  computer.
+
+
+  The creator, who is not an engineer, says the game gathers many of their ideas
+  and could not have been built without vibe coding.
 play:
   url: https://the-lighter-path-game.vercel.app
   embeddable: true
   platforms:
     - browser
     - mobile
+  controls:
+    - "Tab: open commands and tips"
 creator:
   name: Mrkavica
   handle: mrkavica
@@ -54,7 +60,7 @@ media:
     - games/the-lighter-path/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-09-29
+  updated: 2026-10-01
 status: live
 provenance:
   foundVia: scout:vibejam-2026

@@ -2,20 +2,25 @@ slug: kicker
 title: KICKER
 tagline: Play a match of table football against another player using mouse and keyboard.
 description: >-
-  KICKER is table football, or foosball, in the browser. You work the rods with
-  the mouse and keyboard, sliding and rotating your rows of players to block,
-  pass and shoot the ball past the other side.
+  You control one side of a 3D foosball table, seen from above, with red and
+  blue figures mounted on rods. Hold A, S, D or F to pick a rod, then move the
+  mouse to work that rod. A mouse icon on the table shows arrows pointing up and
+  down.
 
 
-  The creator has a co-worker who plays in an official German kicker league and
-  is very hard to beat on a real table. The game is a way to try for a win on a
-  virtual one instead. Three.js draws the 3D table, the creator used Claude
-  Code, and the game ranked 54th of 945 at Vibe Jam 2026.
+  A match is first to 5 goals, with the score shown at the top of the screen. A
+  prompt on the table tells you to play the ball. Pressing Space shakes the
+  table.
 
 
-  It plays as a sports simulation with an action feel, one match at a time.
-  Matches come down to quick reactions and precise rod control, against an
-  opponent who can be another person online.
+  A button at the bottom of the screen reads "I am ready for multiplayer", and
+  the game is played online. A small lock icon sits near the sound and settings
+  buttons in the top right corner.
+
+
+  The creator says the idea came from a co-worker who plays in a German kicker
+  league and is too good to beat in person, so this is a chance to try
+  virtually.
 play:
   url: https://kicker.nc.hn
   embeddable: true
@@ -54,7 +59,7 @@ media:
     - games/kicker/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-09-29
+  updated: 2026-10-01
 status: live
 provenance:
   foundVia: scout:vibejam-2026

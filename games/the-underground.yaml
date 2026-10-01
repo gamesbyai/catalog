@@ -3,26 +3,31 @@ title: The Underground
 tagline: Explore generated tunnels, open locked doors, and find artifacts before
   time runs out.
 description: >-
-  The Underground is a roguelike adventure that sends you into a network of
-  dark, subway-style tunnels with a timer running. You open locked doors, track
-  down hidden artifacts, and work out where to go before the clock runs out.
+  A run starts at 03:00:00 on a clock that counts toward 05:00:00. In that
+  window you explore a procedurally generated network of underground tunnels,
+  open locked doors, and look for hidden artifacts before time runs out. Clues
+  left by other players are shared into your world.
 
 
-  The idea came from the creator's curiosity about what lies down the dark
-  tunnels you see from a subway train, such as abandoned stations or old
-  bunkers. The Vibe Jam 2026 build runs on Three.js and was made with Cursor,
-  and it ranked 408th of 945.
+  You carry three tools in numbered slots. The flashlight has a battery meter
+  and adjustable brightness. The camera is for photographing evidence. The
+  crowbar starts with five pries, shown as a count on its slot. Stamina and
+  battery bars sit on the left of the screen.
 
 
-  The layout is procedurally generated rather than hand-built, so the network is
-  endless in principle and each descent leads somewhere different. Other players
-  can leave clues for you to find, which turns the search into a loose
-  collaboration between strangers.
+  An objectives panel logs how many objectives are complete, a discoveries list
+  records recent finds, and a points counter tracks your score. A notebook opens
+  with N. The creator wanted to find out what lies down the dark tunnels seen
+  from subway trains, such as abandoned stations and old bunkers.
 play:
   url: https://mcg-urbex.web.app
   embeddable: true
   platforms:
     - browser
+  controls:
+    - "1 / 2 / 3: select flashlight, camera, crowbar"
+    - "R: change flashlight brightness"
+    - "N: open notebook"
 creator:
   name: mythcitygames
   handle: mythcitygames
@@ -51,7 +56,7 @@ media:
     - games/the-underground/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-09-29
+  updated: 2026-10-01
 status: live
 provenance:
   foundVia: scout:vibejam-2026

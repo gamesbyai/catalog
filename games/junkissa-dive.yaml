@@ -3,23 +3,26 @@ title: 純喫茶ダイヴ - JUNKISSA DIVE
 tagline: Launch cherries and sugar cubes onto dishes to finish orders at a
   late-night café.
 description: >-
-  JUNKISSA DIVE is a short action game set in a late-night retro Japanese café,
-  called a junkissa. Instead of diving yourself, you launch toppings such as
-  cherries and sugar cubes so they land on the food and complete each order. A
-  shift lasts five orders.
+  Launch cherries, sugar cubes, and other toppings onto the food to finish each
+  order at a late-night junkissa, a retro Japanese-style café. The toppings do
+  the diving here, not the player. The creator kept the controls simple and
+  spent time on how the launches feel.
 
 
-  After the fifth order, the dishes from your shift are turned into a poster,
-  and a short message arrives from your childhood friend, who owns the café. The
-  game is not built around high scores. It aims to make each day's result worth
-  enjoying, whether the toppings landed neatly or the dish came out strange.
+  A shift is five orders long. After the fifth, the results of your shift become
+  a poster, and the café owner, your childhood friend, sends a short message.
+  The childhood-friend setting comes from the jam's hidden theme, buddy.
 
 
-  The controls are kept simple so the game can be understood by playing it.
-  Effort went into the feel of the launches, the sounds, the camera movement,
-  the receipts, and the posters. The creator says ChatGPT worked as a
-  development buddy on the code, screen design, and rules. It was made for AI
-  Browser Game Jam 4.
+  The creator wanted each run to be about seeing how the day turned out, whether
+  everything landed perfectly or something odd got made, instead of mastering
+  the game or chasing a high score. Time went into the sounds, camera movement,
+  receipts, and posters.
+
+
+  The title screen shows a lit signboard on a dark night street, a JP/EN
+  language toggle in the corner, and a red button at the bottom to open the
+  shop.
 play:
   url: https://sukimastock.itch.io/junkissa-dive
   embeddable: false
@@ -56,7 +59,7 @@ media:
     - games/junkissa-dive/shot-2
 dates:
   added: 2026-09-30
-  updated: 2026-09-30
+  updated: 2026-10-01
 status: live
 provenance:
   foundVia: scout:aibgj-4

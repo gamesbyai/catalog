@@ -2,26 +2,42 @@ slug: little-flock
 title: little flock
 tagline: Tend a shared flock of sheep on a cozy farm with other players.
 description: >-
-  In little flock you share a cozy farm with other players online and look after
-  a flock of sheep together. The routine is relaxed: tend the animals and potter
-  about the pastoral space with friends, and the tone stays gentle and
-  low-pressure.
+  The start screen shows a painted valley with a stone cottage, a footbridge
+  over a stream, a produce cart and a flock of pastel sheep, with a button to
+  begin farm life. A 16-step tutorial walks you through putting up a shelter,
+  adopting a first sheep, daily care and planting a garden.
 
 
-  According to the repository, the whole game was made in one shot with GPT 6
-  Astra in Codex: a complete networked game from a single prompt to a coding
-  agent. The client uses React Three Fiber to draw the farm in the browser, and
-  a Go backend keeps everyone's view of the flock in sync.
+  Day to day, you pet, feed and shear sheep and welcome newborn lambs. Seven
+  crops can be planted, watered and harvested, and you can fill neighbor orders
+  and upgrade the farm. To graze, whistle the flock together, walk to the meadow
+  while they eat and drink, then lead them back home.
 
 
-  Because the flock is shared and kept in sync, every player sees the same
-  sheep, and looking after them is something the whole farm does together. It is
-  a casual simulation with no rush to it.
+  The flock covers 12 breeds, five rarity tiers and six personalities. Paths
+  connect the home farm to a flower meadow, a mushroom woodland and a stargazing
+  highland. Your shepherd's skin, hair, clothes and hat can be changed with a
+  live 3D preview.
+
+
+  Farms are shared. Start one or join through an invitation code, and everyone
+  on it uses the same coins, inventory, buildings and sheep, with chat and live
+  presence. Day and night, rain and seasonal colors change the scenery, and
+  sheep never die. The interface is in Simplified Chinese.
 play:
   url: https://sharpherd.song.work
   embeddable: false
   platforms:
     - browser
+  controls:
+    - "WASD / arrows: move"
+    - "Shift: run"
+    - "Space: jump"
+    - "Click ground: walk to location"
+    - "Right-drag / scroll: orbit / zoom camera"
+    - "1-6: pet, feed, shear, plant, water, harvest"
+    - "E: interact with target"
+    - "F: whistle to gather sheep"
 repo: https://github.com/songkeys/little-flock
 license: MIT
 creator:
@@ -51,7 +67,7 @@ media:
     - games/little-flock/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-09-29
+  updated: 2026-10-01
 status: live
 provenance:
   foundVia: scout:github

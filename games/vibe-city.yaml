@@ -2,26 +2,31 @@ slug: vibe-city
 title: vibe city
 tagline: Hang out in a pixel-art isometric town, chat, and play arcade games
 description: >-
-  One click is all it takes to join vibe city, a cozy isometric hangout built
-  around a pixel-art street with rooms to explore. You customize an avatar, look
-  around the rooms, and chat with whoever else is online.
+  Vibe City starts you as a small avatar on an isometric pixel-art street. Walk
+  the block past a hotel, shops with striped awnings, flower beds, trees and
+  street lamps. Doormats mark the building entrances, and you step into rooms
+  from the street.
 
 
-  The creator took inspiration from Habbo and a love of many kinds of games,
-  aiming for a warm, welcoming neighborhood feel. They built it with Cursor on
-  PixiJS as a multiplayer space, it runs on phones and on desktops alike, and it
-  placed 493rd of 945 in Vibe Jam 2026.
+  Other players share the street with you. A chat box at the bottom of the
+  screen takes messages up to 72 characters, and a Send button posts them.
+  Buttons along the top open avatar customization (ME), a room list, a home
+  button and daily goals, with a coin counter beside them.
 
 
-  The town doubles as an arcade. Inside sit several games from different genres,
-  including action, shooter, puzzle, and racing, so a visit can move from
-  chatting to a quick round of something else.
+  A neon Arcade building stands on the street and works as the game's hub for
+  play. It holds games from several genres, including action, puzzle, shooter,
+  racing and RPG, so you can leave the hangout for a round of something else.
+  The creator drew on Habbo and a liking for many kinds of games, aiming for a
+  warm place to hang out.
 play:
   url: https://isometric-social-game.vercel.app
   embeddable: true
   platforms:
     - browser
     - mobile
+  controls:
+    - "Send button: post a chat message"
 creator:
   name: vibemaxxer
   handle: vibemaxxer
@@ -51,7 +56,7 @@ media:
     - games/vibe-city/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-09-29
+  updated: 2026-10-01
 status: live
 provenance:
   foundVia: scout:vibejam-2026

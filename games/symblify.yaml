@@ -2,26 +2,36 @@ slug: symblify
 title: Symblify
 tagline: Decode a daily phrase by working out what each symbol instructs you to do.
 description: >-
-  Symblify hides a phrase behind a small invented language of symbols, and a new
-  puzzle arrives every day. Each symbol is an instruction that always means the
-  same thing, so you work out what each one does and then apply them to crack
-  the day's hidden phrase.
+  Each puzzle gives you a short line of words joined by symbols, and every
+  symbol is an instruction. You work out what the line says, type the phrase
+  into the answer box and press the Enter button. A one-line clue sits under the
+  line. You have four guesses, and four empty rows below the box hold your
+  attempts.
 
 
-  The creator says the mechanics came first and the rest of the game was built
-  around them, with Claude as the tool. It borrows from three puzzle styles at
-  once: word puzzles, cryptic crosswords, and mathematical notation.
+  The practice puzzle, numbered 0, is rated medium and carries two tags,
+  Homophone and Combine. Its line reads ~BRAKE + FAST, and the clue is "The
+  first meal of the day". A new puzzle arrives daily.
 
 
-  Solving is a matter of learning the rules of the language as you go. Once a
-  symbol's meaning is clear, it holds for the rest of the puzzle, and that is
-  what gets you to the answer.
+  A symbol keeps the same meaning from one puzzle to the next, so the game is
+  about learning a small language over time and applying it to later lines. An
+  FAQ button sits in the top corner of the page.
+
+
+  The screen is styled as neon lettering on a purple brick wall. The creator
+  describes the idea as a cross between word puzzles, cryptic crosswords and
+  maths notation, with the mechanics designed first and the game built around
+  them.
 play:
   url: https://symblify.app
   embeddable: true
   platforms:
     - browser
     - mobile
+  controls:
+    - "Keyboard: type your answer"
+    - "Enter button: submit a guess"
 creator:
   name: Symblify
   handle: symblify
@@ -51,7 +61,7 @@ media:
     - games/symblify/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-09-29
+  updated: 2026-10-01
 status: live
 provenance:
   foundVia: scout:vibejam-2026

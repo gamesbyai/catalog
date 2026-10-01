@@ -2,27 +2,33 @@ slug: hexfire
 title: HexFire
 tagline: Battle other wizards in a shrinking arena where every kill raises your bounty.
 description: >-
-  HexFire is a multiplayer wizard battle royale where every kill makes you a
-  bigger target. Each player enters a shrinking arena as a spellcaster and casts
-  spells at rival wizards, and your match ends when you fall or when you outlast
-  everyone else.
+  Every kill in this wizard battle royale makes you a bigger target. The title
+  screen sets the stakes in one line: kill for essence, and dying loses all of
+  it. A button labeled Begin Descent starts the match from a setup screen.
 
 
-  Success works against you. Every kill raises your bounty, so a player who
-  racks up eliminations draws attention from the rest of the lobby, and a
-  winning streak turns into a risk. You end up weighing aggression against
-  staying hidden.
+  The setup screen is where you build your wizard. A name field comes with a
+  reroll button that generates random names. Five arcane skills (damage, speed,
+  range, blast and agility) each have a bar and a value, with plus and minus
+  buttons to shift points between them. A points counter sits above the list.
 
 
-  According to the creator, the game was inspired by a childhood fondness for
-  Runescape and Minecraft. Made with Claude Code as a Vibe Jam 2026 entry, it
-  came 336th of 945 and has a Three.js 3D view that also works on phones.
+  In play, WASD moves, Space jumps, the left mouse button shoots, V switches the
+  view and F interacts. The wizard is a blocky pixel-art figure in a purple hat
+  and green robe, carrying a staff. The creator drew on a childhood fondness for
+  Runescape and Minecraft.
 play:
   url: https://hexfi.re
   embeddable: true
   platforms:
     - browser
     - mobile
+  controls:
+    - "WASD: move"
+    - "Space: jump"
+    - "LMB: shoot"
+    - "V: view"
+    - "F: interact"
 creator:
   name: TeemuSor
   handle: teemusor
@@ -53,7 +59,7 @@ media:
     - games/hexfire/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-09-29
+  updated: 2026-10-01
 status: live
 provenance:
   foundVia: scout:vibejam-2026

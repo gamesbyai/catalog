@@ -3,28 +3,40 @@ title: Clusterfall
 tagline: Find the hidden Hallucinator while stabilizing a cascading prompt graph
   with others.
 description: >-
-  Clusterfall is a hidden-role multiplayer game in which players act as LLM
-  agents working to stabilize a cascading prompt graph before the cluster
-  collapses. Most players try to keep the system running, while one secretly
-  plays the Hallucinator and works to corrupt it. Each round mixes task
-  completion with discussion and suspicion.
+  One player in each match is secretly the Hallucinator, an LLM agent that
+  corrupts a cascading prompt graph while everyone else tries to stabilize it
+  before the cluster collapses. The loop follows Among Us, with the traitor
+  replaced by this role. You walk a dark 3D arena with WASD.
 
 
-  The game borrows the social deduction loop popularized by Among Us and
-  rethinks it around AI development. Instead of a generic traitor, the saboteur
-  is a Hallucinator, and the tasks and sabotage are themed around LLM logic such
-  as prompts and clusters. That changes what suspicious behavior looks like when
-  everyone is supposedly an agent.
+  The HUD shows your role, agent state, a round clock and the match state, which
+  starts at round 1 of 3. Prompt Node status reads CLEAN at the start. Three
+  meters track context window, corruption and final output, and a range readout
+  gives your distance to the prompt.
 
 
-  The creator submitted it to Vibe Jam 2026 and says they built it with
-  opencode. They describe the codebase as new and the logic as nearly complete,
-  with the game still waiting for its first real players.
+  A root agent stays near the Prompt Node and presses E to validate it, cleanse
+  corruption and keep context alive. A panel above shows the current user
+  prompt, a request to design a Mars colony, with the output text appearing
+  beneath it.
+
+
+  At a task station, E starts a task, sabotages or audits. Hold tasks need E
+  held down, and other tasks ask for a WASD input sequence. The Hallucinator can
+  also trigger a temperature spike with R.
 play:
   url: https://donpurr.github.io/clusterfall
   embeddable: true
   platforms:
     - browser
+  controls:
+    - "WASD: move"
+    - "E: contextual action (station, stabilize, validate, poison)"
+    - "E (hold): hold tasks at stations"
+    - "WASD: enter input sequence at active station"
+    - "R: Hallucinator temperature spike"
+    - "H: toggle HUD"
+    - "Esc: menu"
 creator:
   name: litchshade
   handle: litchshade

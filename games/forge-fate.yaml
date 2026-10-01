@@ -3,26 +3,33 @@ title: Forge&Fate
 tagline: Fight through isometric dungeons, collect loot, and forge gear to chase
   a top score.
 description: >-
-  You fight through enemy-filled dungeons with tactical combat in Forge&Fate, an
-  isometric dungeon crawler. Defeated foes drop loot, and the aim is to survive
-  longer than last time and post a higher score on the leaderboard. It is a
-  single-player action RPG, played in the browser.
+  The aim is to post the best score on the leaderboard by fighting through an
+  isometric dungeon with a character built from loot and forged gear. Combat is
+  tactical, enemies scale as you progress, and loot drops along the way.
 
 
-  Enemies scale as you progress, so the dungeon keeps pace with you and your
-  gear. The forging system sits at the center of the design: rather than only
-  equipping what drops, you can forge your own items, which gives the
-  progression a steady sense of growth.
+  The game opens on a character screen for Shadowcaller, who starts with 100
+  health and 5 each in strength, agility and dexterity. Drag items from the
+  inventory onto the weapon, helmet, armor, shield and boots slots to equip
+  them. Armor and damage start at 0.
 
 
-  The creator named a love of role-playing games, exploration and the feeling of
-  getting stronger bit by bit as the inspiration, and built it in Phaser with
-  Claude Code during Vibe Jam 2026.
+  A side menu leads to Gathering, Forge, Materials and Leaderboard screens, plus
+  a red Enter Dungeon button and a sound toggle. The forging system lets you
+  make your own items. Inventory is split across eight bags. The first holds a
+  sword, a helmet, chest armor, boots and a purple crystal.
+
+
+  The creator drew on classic role-playing games, especially the sense of
+  exploring and growing a little at a time as you collect items and make your
+  own.
 play:
   url: https://forgeandfate-ebon.vercel.app
   embeddable: true
   platforms:
     - browser
+  controls:
+    - "Drag and drop: equip items from inventory to equipment slots"
 creator:
   name: TheGrampas
   handle: thegrampas
@@ -53,7 +60,7 @@ media:
     - games/forge-fate/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-09-29
+  updated: 2026-10-01
 status: live
 provenance:
   foundVia: scout:vibejam-2026

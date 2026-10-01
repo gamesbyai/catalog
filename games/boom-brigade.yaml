@@ -2,25 +2,44 @@ slug: boom-brigade
 title: Boom Brigade
 tagline: Blast through nine run-and-gun missions across terrain you can destroy
 description: >-
-  Boom Brigade is a run-and-gun shooter played in the browser. You move through
-  nine missions, fire at enemies, and blow holes in the landscape as you go. The
-  campaign ends with a final boss fight, and you can pick from ten different
-  heroes.
+  The ground is not solid here. Dirt, stone, and wooden crates can all be shot
+  away, explosive barrels go off when hit, and armored bunkers take enough fire
+  to collapse. You can tunnel through a wall, detonate a barrel beside a group
+  of enemies, or break open a bunker that blocks the way. Each mission is a
+  side-scrolling run-and-gun stage: rescue hostages, wreck the bunkers, and
+  reach the flag.
 
 
-  The terrain is destructible, so explosions change the ground you fight on and
-  the routes open to you. Progress is stored in a JSON save, letting you return
-  to the campaign later. The whole game sits in a single file and needs no build
-  step, so it can be opened and played directly.
+  The campaign has 9 missions set in a jungle, a desert, and a night city with
+  dynamic lighting. Levels are generated deterministically, and the last stage
+  ends with a gunship boss. Numbered buttons 1 to 9 on the start screen let you
+  choose a mission directly.
 
 
-  The project's listing names Claude Code as the tool used to build it. It runs
-  on an HTML5 canvas, and the description is written in French.
+  Every hostage you free unlocks heroes, 10 in total, and each hero has a
+  different weapon plus a special ability. The weapons range from a shotgun and
+  a minigun to a flamethrower, a sniper rifle, a holy water sprinkler, and a
+  grenade launcher. Movement includes a double jump and a wall jump, and you can
+  aim up or down while firing.
+
+
+  Progress is stored in a JSON file that you download and reload with a button
+  or by dragging it onto the page. The browser also keeps a copy automatically.
+  Key bindings can be changed in the Controls menu, with two keys per action,
+  and touch buttons appear on mobile. Sound effects are synthesized.
 play:
   url: https://boom-brigade.vercel.app
   embeddable: true
   platforms:
     - browser
+  controls:
+    - "Arrows / Q / D: move"
+    - "Space: jump, double jump, wall jump"
+    - "X / J: fire"
+    - "C / K: special ability"
+    - "Up / Z: aim up"
+    - "Down / S: aim down"
+    - "Esc / P: pause"
 repo: https://github.com/abg5f/boom-brigade
 license: MIT
 creator:
@@ -50,7 +69,7 @@ media:
     - games/boom-brigade/shot-2
 dates:
   added: 2026-09-30
-  updated: 2026-09-30
+  updated: 2026-10-01
 status: live
 provenance:
   foundVia: scout:github
