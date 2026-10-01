@@ -1,11 +1,15 @@
 #!/usr/bin/env node
 // Captures a cover and two screenshots per game: node scripts/capture.mjs <slug…>
-// Game pages are untrusted code. This runs only in CI's capture job, which has no secrets and a read-only token.
+// Game pages are untrusted code. This runs in CI's capture job, which has no secrets and a read-only token, and, for
+// games CI's software renderer can't draw, on a maintainer's machine with a GPU (`--gpu` or `--chrome`: a fresh
+// temporary profile, Chrome's GPU blocklist kept, downloads refused, no file pickers, no clipboard writes, nothing
+// uploaded from here).
 // Every game gets a fresh browser context, a hard deadline kept by Node (not by Playwright), and nothing
 // from the page is ever read back except the pixels of the screenshots, and on itch.io the address of the game's
 // own frame, which must match itch's CDN pattern (itchFrame). The opt-in start step (CAPTURE_START, startGame) also
-// asks the page whether a Start or Play button or a name field is visible; those answers only decide a click and
-// are never saved or logged.
+// asks the page whether a Start or Play button or a name field is visible, and before every click or key whether its
+// target is a link or a control that isn't the game's (pressCheck); those answers only decide a press and are never
+// saved or logged.
 // Games whose creator sent screenshots with the submission (provenance.uploads) are never captured; the upload job
 // fetches those instead. node scripts/capture.mjs --split <slug-list file> prints { capture, uploads } for the workflow.
 import { mkdirSync, mkdtempSync, rmSync, rmdirSync, writeFileSync, readFileSync, existsSync, copyFileSync } from 'node:fs';
@@ -30,19 +34,34 @@ export const DEFAULTS = {
   startTimes: [1500, 4000, 7000, 10500, 14000],
   startExtra: 25_000,
   holdMs: 700, // how long a movement key is held between frames
-  startRounds: 3, // menus behind menus: Play, then a mode, then a character
+  startRounds: 4, // presses: menus behind menus (Solo, then Play, then a mode, then a character)
+  startIdle: 2, // after a press, rounds that look for the next screen's button before the frames begin
   startPause: 1200, // after each start click, for the next screen to appear
   startBudget: 15_000, // the whole start step
   navTimeout: 20_000,
   deadline: 70_000, // per game, from start to files on disk
   shotTimeout: 15_000, // WebGL games render in software on CI runners (no GPU), so frames can be slow
   clickTimeout: 2000,
+  // The yes or no asked before every press (pressCheck) gets its own, longer budget: a busy page answers late, and a
+  // late yes still ends in the press. No answer in time is no press.
+  checkTimeout: 5000,
   closeTimeout: 5000,
   viewport: { width: 1280, height: 720 },
   allowLocalHttp: false, // tests only: http://127.0.0.1
   itchHost: /\.itch\.io$/, // pages captured the itch.io way (tests point it at 127.0.0.1)
   itchPage: false, // on itch.io: capture the page itself, toolbar hidden, instead of the game's own frame
   sandbox: process.env.CAPTURE_SANDBOX !== '0',
+  // Local captures on a machine with a GPU (`--gpu`): full Chromium in its new headless mode draws WebGL and WebGPU on
+  // the real GPU, for games CI's software renderer leaves blank. `headed: true` shows the window instead.
+  gpu: false,
+  headed: false,
+  // Local only (`--webgl`): the page sees no WebGPU, so a game whose WebGPU path draws nothing on this machine falls
+  // back to its WebGL renderer, as it does on CI.
+  webgl: false,
+  chrome: false, // local only (`--chrome`): the installed Google Chrome instead of Playwright's Chromium
+  // Local only (`--rooms`): the start step may join a room from a list with player counts. A public room can hold
+  // strangers whose names and chat would end up in the cover, so CI never does this.
+  rooms: false,
 };
 
 class CaptureError extends Error {
@@ -106,15 +125,28 @@ export function itchFrame(pageUrl, candidate) {
 // One browser per process, launched through launchServer so a hung browser can be killed outright.
 let server = null;
 let browser = null;
-let launchedSandbox = null;
+let launchedAs = null;
 
-async function getBrowser(sandbox) {
-  if (browser?.isConnected() && launchedSandbox === sandbox) return browser;
-  await killBrowser();
+/**
+ * Launch options: CI's software renderer, or (gpu/headed/chrome, local only) a full browser on the machine's GPU:
+ * Playwright's Chromium, or the installed Google Chrome (`chrome`), whose WebGPU draws some games that Chromium leaves
+ * half blank. Both start from a fresh temporary profile. A local browser keeps Chrome's GPU blocklist: untrusted WebGL
+ * and WebGPU never run on a driver Chrome has blocked.
+ */
+export function launchOptions({ sandbox = DEFAULTS.sandbox, gpu = false, headed = false, chrome = false } = {}) {
+  if (gpu || headed || chrome) return { headless: !headed, channel: chrome ? 'chrome' : 'chromium', chromiumSandbox: sandbox, args: [] };
   // Runners have no GPU: let WebGL fall back to SwiftShader instead of failing, so 3D games still draw a frame.
-  server = await chromium.launchServer({ headless: true, chromiumSandbox: sandbox, args: ['--use-angle=swiftshader', '--enable-unsafe-swiftshader', '--ignore-gpu-blocklist'] });
+  return { headless: true, chromiumSandbox: sandbox, args: ['--use-angle=swiftshader', '--enable-unsafe-swiftshader', '--ignore-gpu-blocklist'] };
+}
+
+async function getBrowser(o) {
+  const opts = launchOptions(o);
+  const key = JSON.stringify(opts);
+  if (browser?.isConnected() && launchedAs === key) return browser;
+  await killBrowser();
+  server = await chromium.launchServer(opts);
   browser = await chromium.connect(server.wsEndpoint());
-  launchedSandbox = sandbox;
+  launchedAs = key;
   return browser;
 }
 
@@ -203,26 +235,195 @@ export function throttleFrames(win, gap) {
   };
 }
 
+/** Runs in the page (local captures): removes the File System Access pickers. Self-contained, like throttleFrames. */
+export function noFilePickers(win) {
+  for (const k of ['showOpenFilePicker', 'showSaveFilePicker', 'showDirectoryPicker']) {
+    try {
+      delete win[k];
+      if (k in win) Object.defineProperty(win, k, { value: undefined, configurable: false });
+    } catch {}
+  }
+}
+
+/**
+ * Runs in the page (local captures): the page can't write to the clipboard. A real click is a user activation, and with
+ * `--headed` the clipboard is the machine's own: a page could leave a command there for someone to paste later.
+ * Self-contained, like throttleFrames; Playwright runs it in every frame and popup too.
+ */
+export function noClipboardWrites(win) {
+  const refuse = () => Promise.reject(new win.DOMException('clipboard writes are off in captures', 'NotAllowedError'));
+  for (const k of ['writeText', 'write']) {
+    try {
+      Object.defineProperty(win.Clipboard.prototype, k, { value: refuse, writable: false, configurable: false });
+    } catch {}
+  }
+  try {
+    const exec = win.Document.prototype.execCommand;
+    Object.defineProperty(win.Document.prototype, 'execCommand', {
+      value: function execCommand(command, ...rest) {
+        return /^\s*(?:copy|cut)\s*$/i.test(String(command)) ? false : exec.call(this, command, ...rest);
+      },
+      writable: false,
+      configurable: false,
+    });
+  } catch {}
+}
+
+/** Runs in the page (`webgl`): hides WebGPU, so the game picks its WebGL renderer. Self-contained. */
+export function noWebGPU(win) {
+  try {
+    delete win.Navigator.prototype.gpu;
+  } catch {}
+}
+
 // The start step. Most games that kept a single frame sat on a title, menu or name-entry screen: the centre click and
 // Enter of the plain schedule don't press a Play button off-centre, so every frame was the same menu and the
 // near-duplicate check kept one. With `start: true` the capture presses the game's own Start or Play button, found by
 // its accessible name or its whole visible text, types a placeholder name into a name field, and plays a little
 // (movement keys, a click) between frames. Nothing the page says is saved or logged: the page is only asked whether
-// such an element is visible, and links are never followed (they can lead off the game).
+// such an element is visible, and before every press whether it may be pressed (pressCheck): links are never followed
+// (they can lead off the game), and wallet, payment, sign-in, rating and sharing controls are never pressed (DENY).
 const phrase = (words) => new RegExp(`^[\\W_]*(?:${words.join('|')})[\\W_]*$`, 'i');
+/**
+ * Options that start a game alone on this machine (no server list, no strangers): pressed before any other start
+ * button, so "Play" never opens a lobby browser when "Solo" or "Bots" sits next to it. English and German.
+ */
+export const SOLO_NAMES = phrase([
+  'solo', 'play solo', 'solo play', 'single ?player', 'play single ?player', 'offline', 'play offline', 'offline mode',
+  'practi[cs]e', 'practi[cs]e mode', 'practi[cs]e (?:run|round|match|range)', 'training', 'training mode', 'free ?play', 'sandbox',
+  'play (?:vs|against|with) (?:the )?(?:cpu|ai|computer|bots?)', '(?:vs|versus) (?:cpu|ai|computer|bots?)', '(?:ffa |free for all )?bots? (?:lobby|match|game|mode)', 'add bots?',
+  'einzelspieler', 'offline spielen', 'gegen (?:den )?(?:computer|bots?|ki)', '(?:ü|ue)bung', 'trainingsmodus',
+]);
 /** Buttons that start a game, matched against the whole name or text (arrows and punctuation around it ignored). */
 export const START_NAMES = phrase([
   'play', 'start', 'play now', 'play game', 'play the game', 'start game', 'start the game', 'new game', 'start run', 'new run',
   'begin', 'begin game', 'begin run', 'begin adventure', 'begin journey', 'launch', 'launch game', 'launch mission', 'quick ?play',
   'single ?player', 'solo', 'play solo', 'play offline', 'play as guest', 'play (?:vs|against) (?:cpu|ai|computer|bots?)', 'vs (?:cpu|ai)',
   "let[\\u2019']?s (?:go|play)", '(?:click|tap|press) (?:here |anywhere )?to (?:start|play|begin)', 'press start', 'start (?:adventure|mission|playing|now|demo)',
-  'enter (?:the )?game', 'run game', 'dive in', 'drop in', 'jump in', 'insert coin',
+  'enter (?:the )?(?:game|arena|world|battle|match)', 'run game', 'dive in', 'drop in', 'jump in', 'insert coin',
+  // German
+  'spielen', 'jetzt spielen', 'spiel starten', 'starten', 'neues spiel', 'spiel beginnen', 'beginnen', 'los', "los geht[\\u2019']?s",
+  '(?:klicken|tippen|dr(?:ü|ue)cken) (?:zum|um zu) (?:starten|spielen)',
 ]);
-/** Second-screen buttons (after a name or a mode): pressed only when no start button is visible. */
-export const NEXT_NAMES = phrase(['continue', 'join', 'join game', 'enter', 'go', 'fight', 'ok', 'okay', 'got it', 'skip', 'skip intro', 'next', 'ready', "i[\\u2019']?m ready", 'deploy', 'embark']);
+/**
+ * Second-screen buttons (after a name or a mode): pressed only when no start button is visible. A question in the way
+ * ("Enable sound?", a newsletter) gets the declining answer: a capture never opts in to anything.
+ */
+export const NEXT_NAMES = phrase([
+  'continue', 'join', 'join game', 'enter', 'go', 'fight', 'ok', 'okay', 'got it', 'skip', 'skip intro', 'next', 'ready', "i[\\u2019']?m ready", 'deploy', 'embark',
+  'no', 'no thanks', 'not now', 'maybe later', 'mute', 'sound off', 'no sound', '(?:play )?without sound',
+  'weiter', 'fortfahren', 'beitreten', 'bereit', '(?:ü|ue)berspringen', 'verstanden', 'alles klar', 'nein', 'nein danke', 'sp(?:ä|ae)ter', 'ohne ton',
+]);
+/**
+ * A room or server in a list, shown with its player count ("Neon Corner 0/12"): the last resort, pressed once when a
+ * game offers nothing to start alone and no other button, and only on a local run that asks for it (`rooms`): a
+ * public room can hold strangers whose names and chat would end up in the cover. (Playwright passes the pattern inside
+ * a selector string, which allows no "u" flag and no bare "/".)
+ */
+export const ROOM_NAMES = /^[\W_]*(?=[^\/]*[a-zÀ-ɏ])[a-zÀ-ɏ0-9][a-zÀ-ɏ0-9 '.#(-]{0,39}?\s*\d{1,3}\s*\/\s*\d{1,3}[\W_]*$/i;
+/**
+ * Controls the capture never presses, whatever name got them found: wallets and crypto, payments and shops, accounts
+ * and sign-ins, ratings and votes, sharing, downloads and installs, bets. Checked before every click and key
+ * (pressCheck) against an element's visible text, aria-label, title, alt and value, and those of the control it sits in.
+ * English and German, like the start names.
+ */
+export const DENY = /\b(?:wallets?|connect|buy|purchas|pay|donat|subscri|sign[\s_-]*(?:in|up|on)|log[\s_-]*(?:in|on|out)|regist|rat(?:e[sd]?|ings?)\b|vot(?:e[sd]?|ing)\b|shar(?:e[sd]?|ing)\b|download|install|shop|premium|check[\s_-]*out|carts?\b|mint|bets?\b|betting|deposit|withdraw|nft|crypto|airdrop|redeem|sponsor|patreon|ko-?fi|wishlist|google|facebook|discord|twitter|github|metamask|kauf|bezahl|spende|abonn|anmeld|einlogg|bewert|abstimm|teilen|herunterlad)/i;
+const DENY_ARG = { deny: DENY.source, flags: DENY.flags };
 /** A name field: its label or placeholder asks for a name. */
 export const NAME_FIELD = /\bnick(?:name)?\b|\b(?:user ?)?name\b|\bcall ?sign\b|who are you/i;
 export const PLAYER_NAME = 'Player';
+
+/**
+ * Runs in the page before every press: may the capture press this? `el` is an element found by its name; without it,
+ * the element at (x, y) for a mouse click, or the focused element for a `key`. No for a link to another page, and for a
+ * control whose text, aria-label, title, alt or value matches `deny` (DENY), or that sits in one. A focused element
+ * that fails is blurred, so the key goes to the page instead; for Enter that includes a field whose form would submit
+ * with such a button. The answer is a yes or no, never page text. Self-contained: serialized into the page.
+ */
+export function pressCheck(el, { deny, flags, x, y, key }) {
+  const re = new RegExp(deny, flags);
+  // The composed tree: through slots and out of shadow roots, so a button in a component inside a link is still in it.
+  const up = (e) => e.assignedSlot || e.parentElement || (e.parentNode && e.parentNode.host) || null;
+  const closest = (e, sel) => {
+    for (let n = e; n; n = up(n)) if (n.nodeType === 1 && n.matches(sel)) return n;
+    return null;
+  };
+  const LINK = 'a[href]:not([href^="#"]):not([href^="javascript:" i]), area[href]:not([href^="#"]):not([href^="javascript:" i])';
+  const CONTROL = 'a, area, button, input, select, textarea, summary, label, [role="button"], [role="link"], [role="menuitem"], [role="menuitemcheckbox"], [role="menuitemradio"], [role="tab"], [role="option"], [role="checkbox"], [role="radio"], [role="switch"]';
+  const said = (e) => {
+    const root = e.getRootNode();
+    const ids = (e.getAttribute('aria-labelledby') || '').split(/\s+/).filter(Boolean);
+    return [
+      e.getAttribute('aria-label'),
+      e.getAttribute('title'),
+      e.getAttribute('alt'),
+      e.tagName === 'INPUT' && /^(?:submit|button|reset|image)$/i.test(e.type) ? e.value : null, // a button's label, never typed text
+      ...ids.map((id) => (root.getElementById ? root.getElementById(id) : document.getElementById(id))?.textContent),
+    ];
+  };
+  // What a control says: its text (`text`), its labels, and the labels of what is inside it (an icon's alt).
+  const denied = (e, text) => {
+    const all = said(e);
+    if (text) {
+      all.push(e.innerText ?? e.textContent);
+      for (const d of [...e.querySelectorAll('[aria-label], [aria-labelledby], [title], img[alt], input')].slice(0, 30)) all.push(...said(d));
+    }
+    return all.some((s) => typeof s === 'string' && re.test(s.slice(0, 2000)));
+  };
+  // `self`: an element found by its name, whose own text counts even when it isn't a control (a div called "Play").
+  const bad = (e, self) => {
+    if (closest(e, LINK)) return true;
+    if (self && denied(e, true)) return true;
+    const control = closest(e, CONTROL);
+    if (control && !(self && control === e) && denied(control, true)) return true;
+    // A generic element with a click handler counts by its labels only: its text can be a whole menu.
+    const handler = closest(e, '[onclick]');
+    return !!handler && handler !== control && denied(handler, false);
+  };
+  if (el) return !bad(el, true);
+  if (key) {
+    let f = document.activeElement;
+    try {
+      for (;;) {
+        if (f && f.shadowRoot && f.shadowRoot.activeElement) f = f.shadowRoot.activeElement;
+        else if (f && f.tagName === 'IFRAME' && f.contentDocument) f = f.contentDocument.activeElement;
+        else break;
+      }
+    } catch {}
+    if (!f || f === f.ownerDocument.body || f === f.ownerDocument.documentElement) return true;
+    let unsafe = bad(f, false);
+    if (!unsafe && key === 'Enter' && f.form) {
+      const submit = [...f.form.elements].find((c) => (c.tagName === 'BUTTON' && c.type === 'submit') || (c.tagName === 'INPUT' && (c.type === 'submit' || c.type === 'image')));
+      unsafe = !!submit && bad(submit, true);
+    }
+    if (unsafe) f.blur();
+    return !unsafe;
+  }
+  let e = document.elementFromPoint(x, y);
+  while (e && e.shadowRoot) {
+    const inner = e.shadowRoot.elementFromPoint(x, y);
+    if (!inner || inner === e) break;
+    e = inner;
+  }
+  return !e || !bad(e, false);
+}
+
+/**
+ * Runs in the page: the button that submits a filled name field, or null. In a form, the form's default button (its
+ * first submit button, the one Enter would press); outside any form, an explicit submit button in the field's own box
+ * (the nearest of its four closest ancestors that holds one). Never just any button beside the field. Self-contained.
+ */
+export function nameSubmit(field) {
+  const submits = (c) => (c.tagName === 'BUTTON' && c.type === 'submit') || (c.tagName === 'INPUT' && (c.type === 'submit' || c.type === 'image'));
+  let button = null;
+  if (field.form) button = [...field.form.elements].find(submits) || null;
+  else {
+    for (let n = field.parentElement, i = 0; n && i < 4 && !button; n = n.parentElement, i++) {
+      button = [...n.querySelectorAll('button[type="submit" i], input[type="submit" i], input[type="image" i]')].find((c) => !c.form) || null;
+    }
+  }
+  return button && !button.matches(':disabled') ? button : null;
+}
 
 /** Between post-start frames: hold movement keys (arrows and WASD), jump or shoot, and move the mouse. */
 const PLAY_STEPS = [
@@ -232,83 +433,208 @@ const PLAY_STEPS = [
   { keys: ['ArrowDown', 'KeyS'], press: 'Space' },
 ];
 
+// A solo or start option is pressed once: the start step marks it, so a tab called "Play" or an "Offline" toggle that
+// stays on screen never eats the rounds the next button (Deploy, Join) needs. Continue/OK buttons may be pressed again.
+const PRESSED = 'data-capture-pressed';
+const NOT_PRESSED = `:not([${PRESSED}]):not([${PRESSED}] *)`;
+
 /**
- * Clicks the first visible element whose accessible name (buttons) or whole text (anything that isn't a link) matches
- * `names`. Returns true after a click. Every call is bounded by `o.clickTimeout`, the whole search by `until` (a time);
- * `guard` keeps the capture deadline.
+ * The budget for pressCheck's answer before a press that starts the game (a named button, the centre click, Enter):
+ * its own, never shorter than a click's. Play input between frames keeps the click budget: frames never wait for it.
  */
-async function clickByName(page, names, o, guard, until) {
+const checkBudget = (o) => Math.max(o.checkTimeout, o.clickTimeout);
+
+/** A mouse click at (x, y), unless pressCheck says no (or can't answer within `budget`). True after a click. */
+async function clickAt(page, x, y, o, guard, budget = checkBudget(o)) {
+  const ok = await guard(within(page.evaluate(`(${pressCheck})(null, ${JSON.stringify({ ...DENY_ARG, x, y })})`), budget, false));
+  if (ok) await guard(within(page.mouse.click(x, y), o.clickTimeout));
+  return ok === true;
+}
+
+/** A key press (Enter, Space), after pressCheck has moved focus off a link or a control that isn't the game's. */
+async function pressKey(page, key, o, guard, budget = checkBudget(o)) {
+  const ok = await guard(within(page.evaluate(`(${pressCheck})(null, ${JSON.stringify({ ...DENY_ARG, key })})`), budget, null));
+  // No answer (a busy or navigating page): no key either, since whatever has focus may be such a control.
+  if (ok === null) return false;
+  await guard(within(page.keyboard.press(key), o.clickTimeout));
+  return true;
+}
+
+/**
+ * Presses one element after pressCheck: a mouse click, else (`event`) the click event itself, for a button under a
+ * transparent layer (a full-screen canvas or overlay that takes the pointer) or one that never stops moving. Returns
+ * 'clicked', 'event' (dispatched: the page may have ignored it), 'denied' or false.
+ */
+async function press(el, o, guard, { event = true } = {}) {
+  // No answer (the element went away, a page busy past the check's budget) is no press either.
+  const allowed = await guard(within(el.evaluate(pressCheck, DENY_ARG), checkBudget(o), null));
+  if (allowed !== true) return allowed === false ? 'denied' : false;
+  if (await guard(within(el.click({ timeout: o.clickTimeout }).then(() => true), o.clickTimeout + 500, false))) return 'clicked';
+  if (event && (await guard(within(el.dispatchEvent('click').then(() => true), o.clickTimeout, false)))) return 'event';
+  return false;
+}
+
+/**
+ * Presses the first visible element whose accessible name (buttons) or whole text matches `names` and that pressCheck
+ * allows (never a link, never a wallet, shop or sign-in). Returns how it was pressed ('clicked' or 'event'), or false.
+ * Every call is bounded by `o.clickTimeout`, the whole search by `until` (a time); `guard` keeps the capture deadline.
+ * `once`: skip elements pressed before, and mark this one.
+ */
+async function clickByName(page, names, o, guard, until, { once = false, label = 'button', trace } = {}) {
   const tries = [page.getByRole('button', { name: names }), page.getByText(names)];
   for (const [i, all] of tries.entries()) {
     if (Date.now() > until) return false;
-    const loc = all.filter({ visible: true });
+    const visible = all.filter({ visible: true });
+    const loc = once ? visible.and(page.locator(NOT_PRESSED)) : visible;
     const n = Math.min(await guard(within(loc.count(), o.clickTimeout, 0)), 3);
     for (let k = 0; k < n && Date.now() <= until; k++) {
-      const el = loc.nth(k);
-      // Text matches can sit inside a link; a link to another page is never clicked (a "#" or script link is a button).
-      if (i === 1 && !(await guard(within(el.evaluate((e) => !e.closest('a[href]:not([href^="#"]):not([href^="javascript:"])')), o.clickTimeout, false)))) continue;
-      if (await guard(within(el.click({ timeout: o.clickTimeout }).then(() => true), o.clickTimeout + 500, false))) return true;
+      // One element, held while it is pressed and marked (a locator would find whatever replaced it after the click).
+      const el = await guard(within(loc.nth(k).elementHandle({ timeout: o.clickTimeout }), o.clickTimeout + 500, null));
+      if (!el) continue;
+      try {
+        const how = await press(el, o, guard);
+        const match = `${i ? 'text' : 'button role'}, match ${k + 1} of ${n}`;
+        if (how === 'denied') trace?.(`skipped a ${label}: a link, or a control that isn't the game's (${match})`);
+        else trace?.(`${how ? `pressed (${how === 'clicked' ? 'clicked' : 'click event'})` : 'could not press'} a ${label} (${match})`);
+        if (how !== 'clicked' && how !== 'event') continue;
+        // Marked after the press: a press that failed is tried again next round.
+        if (once) await guard(within(el.evaluate((e, attr) => e.setAttribute(attr, ''), PRESSED), o.clickTimeout));
+        return how;
+      } finally {
+        el.dispose().catch(() => {});
+      }
     }
   }
   return false;
 }
 
 /**
- * Gets past a title, menu or name-entry screen: fills a visible name field once, then presses a start button (or, when
- * none is visible, a continue/join button), up to `o.startRounds` times within `o.startBudget` ms. A canvas title
- * screen gets the centre click and Enter of the plain schedule instead, after which a DOM menu may appear. Never throws
- * except for the deadline.
+ * Gets past a title, menu or name-entry screen: fills a visible name field once, then presses a solo or offline option,
+ * else a start button (each once), else a continue/join button, else (local runs with `rooms` only) a room in a list,
+ * up to `o.startRounds` presses within `o.startBudget` ms. A filled name with nothing to press gets Enter, then its
+ * form's submit button. A canvas title screen gets the centre click and Enter of the plain schedule, after which a DOM
+ * menu may appear. While nothing has been pressed the step keeps looking (a menu can appear after a long load); after a
+ * press it looks `o.startIdle` more times for the next screen's button. When every press was only a click event, which
+ * the page may have ignored, the centre click and Enter still follow. Never throws except for the deadline.
  */
 export async function startGame(page, o, guard, signal) {
   const until = Date.now() + o.startBudget;
   const pause = (ms) => guard(sleep(ms, signal));
-  const centre = async () => {
-    await guard(within(page.mouse.click(o.viewport.width / 2, o.viewport.height / 2), o.clickTimeout));
-    await guard(within(page.keyboard.press('Enter'), o.clickTimeout));
+  const centre = async (trace) => {
+    if (!(await clickAt(page, o.viewport.width / 2, o.viewport.height / 2, o, guard))) trace?.("no centre click: a link, or a control that isn't the game's");
+    await pressKey(page, 'Enter', o, guard);
   };
+  const nameField = () => page.getByRole('textbox', { name: NAME_FIELD }).or(page.getByPlaceholder(NAME_FIELD)).and(page.locator('input:not([type="email"]):not([type="search"])')).filter({ visible: true }).first();
   let named = false;
-  let clicked = false;
+  let enterTried = false;
+  let nameButtonTried = false;
   let canvasTried = false;
-  for (let round = 0; round < o.startRounds && Date.now() <= until; round++) {
+  let presses = 0;
+  let clicked = false; // a press landed as a real mouse click (not just a click event)
+  let idle = 0; // rounds without a press since the last one
+  for (let round = 0; presses < o.startRounds && Date.now() <= until; round++) {
+    // Local review only: our own decisions, never anything the page says.
+    const trace = typeof o.trace === 'function' ? (s) => o.trace(`start round ${round + 1}: ${s}`) : undefined;
     if (!named) {
-      const field = page.getByRole('textbox', { name: NAME_FIELD }).or(page.getByPlaceholder(NAME_FIELD)).and(page.locator('input:not([type="email"]):not([type="search"])')).filter({ visible: true }).first();
+      const field = nameField();
       if (await guard(within(field.count(), o.clickTimeout, 0))) {
         named = await guard(within(field.fill(PLAYER_NAME, { timeout: o.clickTimeout }).then(() => true), o.clickTimeout + 500, false));
+        trace?.(named ? 'filled a name field' : 'could not fill a name field');
       }
     }
-    if ((await clickByName(page, START_NAMES, o, guard, until)) || (await clickByName(page, NEXT_NAMES, o, guard, until))) {
-      clicked = true;
+    const how =
+      (await clickByName(page, SOLO_NAMES, o, guard, until, { once: true, label: 'solo option', trace })) ||
+      (await clickByName(page, START_NAMES, o, guard, until, { once: true, label: 'start button', trace })) ||
+      (await clickByName(page, NEXT_NAMES, o, guard, until, { label: 'next button', trace })) ||
+      (o.rooms === true && (await clickByName(page, ROOM_NAMES, o, guard, until, { once: true, label: 'room in a list', trace })));
+    if (how) {
+      presses++;
+      if (how === 'clicked') clicked = true;
+      idle = 0;
       await pause(o.startPause);
       continue;
     }
-    if (named && round === 0) {
-      // A name field whose form submits on Enter.
-      await guard(within(page.keyboard.press('Enter'), o.clickTimeout));
+    if (named && !presses && !enterTried) {
+      // A name field whose form submits on Enter (pressKey first moves focus off a field whose form would submit
+      // with a wallet or sign-in button).
+      enterTried = true;
+      trace?.('Enter after the name');
+      await pressKey(page, 'Enter', o, guard);
       await pause(o.startPause);
       continue;
     }
-    // A game already started by a button gets no Enter (in many multiplayer games it opens the chat).
-    if (clicked || canvasTried) break;
-    canvasTried = true;
-    await centre();
+    if (named && !presses && !nameButtonTried) {
+      // A name form whose submit button has a name of its own ("Open Café"): the form's default button, or outside a
+      // form an explicit submit button in the field's own box (nameSubmit). Never just the button beside the field.
+      nameButtonTried = true;
+      const field = await guard(within(nameField().elementHandle({ timeout: o.clickTimeout }), o.clickTimeout + 500, null));
+      const found = field && (await guard(within(field.evaluateHandle(nameSubmit), o.clickTimeout, null)));
+      field?.dispose().catch(() => {});
+      const button = found?.asElement() ?? null;
+      if (found && !button) found.dispose().catch(() => {});
+      let res = false;
+      if (button) {
+        try {
+          res = await press(button, o, guard, { event: false });
+        } finally {
+          button.dispose().catch(() => {});
+        }
+      }
+      trace?.(res === 'clicked' ? "pressed the name form's submit button" : res === 'denied' ? "skipped the name form's submit button: not the game's" : 'no submit button for the name');
+      if (res === 'clicked') {
+        presses++;
+        clicked = true;
+        idle = 0;
+        await pause(o.startPause);
+        continue;
+      }
+    }
+    // A game already started by a button gets no Enter (in many multiplayer games it opens the chat); it gets a short
+    // look for the next screen's button, then the frames.
+    if (presses) {
+      if (++idle > o.startIdle) break;
+      trace?.('nothing new to press yet');
+      await pause(o.startPause);
+      continue;
+    }
+    if (!canvasTried) {
+      canvasTried = true;
+      trace?.('nothing to press: centre click and Enter');
+      await centre(trace);
+      await pause(o.startPause);
+      continue;
+    }
+    // Nothing pressed yet: the menu may still be loading.
+    if (round === 2) trace?.('nothing to press yet: looking again until the start budget ends');
     await pause(o.startPause);
   }
-  // Focus the game for the play input that follows.
-  if (!canvasTried) await guard(within(page.mouse.click(o.viewport.width / 2, o.viewport.height / 2), o.clickTimeout));
+  const trace = typeof o.trace === 'function' ? (s) => o.trace(`start: ${s}`) : undefined;
+  if (presses && !clicked && !canvasTried) {
+    // Every press was a click event, which the page may have ignored (a bouncing "PRESS START" over a game that
+    // starts on Enter): the centre click and Enter still get their turn.
+    canvasTried = true;
+    trace?.('every press was a click event: centre click and Enter');
+    await centre(trace);
+  }
+  // Focus the game for the play input that follows (the click budget: nothing waits for a focus click).
+  if (!canvasTried) await clickAt(page, o.viewport.width / 2, o.viewport.height / 2, o, guard, o.clickTimeout);
 }
 
-/** Play input between post-start frames: step i of PLAY_STEPS. */
+/**
+ * Play input between post-start frames: step i of PLAY_STEPS. Clicks and Space go through pressCheck within the click
+ * budget: on a page too busy to answer in time the input is skipped, never the frame after it delayed.
+ */
 async function playInput(page, i, o, guard, signal) {
   const step = PLAY_STEPS[i % PLAY_STEPS.length];
   const { width, height } = o.viewport;
   if (step.click) {
     await guard(within(page.mouse.move(width * step.click[0], height * step.click[1], { steps: 4 }), o.clickTimeout));
-    await guard(within(page.mouse.click(width * step.click[0], height * step.click[1]), o.clickTimeout));
+    await clickAt(page, width * step.click[0], height * step.click[1], o, guard, o.clickTimeout);
   }
   for (const k of step.keys) await guard(within(page.keyboard.down(k), o.clickTimeout));
   await guard(sleep(o.holdMs, signal));
   for (const k of step.keys) await guard(within(page.keyboard.up(k), o.clickTimeout));
-  if (step.press) await guard(within(page.keyboard.press(step.press), o.clickTimeout));
+  if (step.press) await pressKey(page, step.press, o, guard, o.clickTimeout);
 }
 
 /**
@@ -337,6 +663,8 @@ export async function captureOne(url, outDir, opts = {}) {
     return Promise.race([p, failed]);
   };
   const start = o.start === true;
+  const started = Date.now();
+  const trace = typeof o.trace === 'function' ? o.trace : undefined; // local review only: our own decisions and timings
   const limit = o.deadline + (start ? o.startExtra : 0);
   const deadline = setTimeout(() => fail('deadline', `no result after ${limit} ms`), limit);
   const stop = new AbortController();
@@ -347,7 +675,7 @@ export async function captureOne(url, outDir, opts = {}) {
   const pick = () => pickFrames([...state.shots, ...state.before], { preferred: state.shots.length });
   const work = async () => {
     const b = await guard(
-      getBrowser(o.sandbox).catch((e) => {
+      getBrowser(o).catch((e) => {
         throw new CaptureError('browser', firstLine(e));
       }),
     );
@@ -368,7 +696,12 @@ export async function captureOne(url, outDir, opts = {}) {
     }
     state.context = context;
     if (o.throttle) await guard(context.addInitScript(`(${throttleFrames})(window, ${Number(o.throttleGap) || 250});`));
+    // A local browser runs on someone's machine: no File System Access pickers and no clipboard writes for the page.
+    if (o.gpu || o.headed || o.chrome) await guard(context.addInitScript(`(${noFilePickers})(window);(${noClipboardWrites})(window);`));
+    if (o.webgl) await guard(context.addInitScript(`(${noWebGPU})(window);`));
     const page = await guard(context.newPage());
+    // A file input never opens a native dialog: a listener makes Playwright intercept it, and nothing is ever chosen.
+    page.on('filechooser', () => {});
     context.on('page', (p) => p !== page && p.close().catch(() => {})); // popups
     page.on('dialog', (d) => d.dismiss().catch(() => {}));
     page.on('download', (d) => {
@@ -420,11 +753,22 @@ export async function captureOne(url, outDir, opts = {}) {
 
     // One frame. A busy renderer can miss one frame deadline; one retry before giving up on the game. Null when the
     // game stopped answering after earlier frames (those may be enough; later ones are a bonus).
+    // Local review (`--all-frames`): every frame of every pass is also written as it is taken, picked or not.
+    const pass = `${start ? 'start' : 'plain'}${o.throttle ? '-throttled' : ''}${o.itchPage ? '-itchpage' : ''}`;
+    let taken = 0;
     const snap = async () => {
       for (let attempt = 0; ; attempt++) {
+        const asked = Date.now();
         try {
-          return await guard(page.screenshot({ type: 'png', timeout: o.shotTimeout }));
+          const buf = await guard(page.screenshot({ type: 'png', timeout: o.shotTimeout }));
+          trace?.(`screenshot took ${Date.now() - asked} ms`);
+          if (o.allFrames) {
+            mkdirSync(o.allFrames, { recursive: true });
+            writeFileSync(join(o.allFrames, `${pass}-${taken++}.png`), buf);
+          }
+          return buf;
         } catch (e) {
+          trace?.(`screenshot failed after ${Date.now() - asked} ms`);
           if (e instanceof CaptureError || attempt === 1) {
             if (state.shots.length || state.before.length) {
               state.timedOut = true;
@@ -442,12 +786,19 @@ export async function captureOne(url, outDir, opts = {}) {
       state.before.push(await snap());
       await startGame(page, o, guard, stop.signal);
       const t1 = Date.now();
+      // Local review (`--trace`): when the start step ended and when each frame after it came, from the capture's start.
+      trace?.(`start step done at ${t1 - started} ms`);
       for (let i = 0; i < o.startTimes.length; i++) {
         await guard(sleep(t1 + o.startTimes[i] - Date.now(), stop.signal));
         const shot = await snap();
+        trace?.(`frame ${i + 1} of ${o.startTimes.length} ${shot ? 'taken' : 'lost'} at ${Date.now() - started} ms`);
         if (!shot) return;
         state.shots.push(shot);
-        if (i < o.startTimes.length - 1) await playInput(page, i, o, guard, stop.signal);
+        if (i < o.startTimes.length - 1) {
+          const played = Date.now();
+          await playInput(page, i, o, guard, stop.signal);
+          trace?.(`play input ${i + 1} took ${Date.now() - played} ms`);
+        }
       }
       return;
     }
@@ -457,11 +808,11 @@ export async function captureOne(url, outDir, opts = {}) {
       if (!shot) return;
       state.shots.push(shot);
       if (i === 0) {
-        // One click in the centre starts games that wait for input…
-        await guard(within(page.mouse.click(o.viewport.width / 2, o.viewport.height / 2), o.clickTimeout));
+        // One click in the centre starts games that wait for input (never on a link or a wallet button: pressCheck)…
+        await clickAt(page, o.viewport.width / 2, o.viewport.height / 2, o, guard);
       } else if (i === 1) {
         // …and Enter gets past "press any key" menus.
-        await guard(within(page.keyboard.press('Enter'), o.clickTimeout));
+        await pressKey(page, 'Enter', o, guard);
       }
     }
   };
@@ -484,6 +835,7 @@ export async function captureOne(url, outDir, opts = {}) {
     const keep = froze && (state.shots.length || state.before.length) ? await pick() : [];
     if (keep.length) {
       // The game froze or ran out of time after some good frames: keep those.
+      trace?.(`${e.reason} at ${Date.now() - started} ms: kept ${keep.length} frames`);
       mkdirSync(outDir, { recursive: true });
       keep.forEach((buf, i) => writeFileSync(files[i], buf));
       result = { ok: true, files: files.slice(0, keep.length), partial: true };
@@ -560,7 +912,11 @@ export async function captureSlugs(slugs, { root = ROOT, out = join(root, 'out')
       else if (uploadsOf(entry)) res = { ok: true, skipped: 'uploads' };
       else if (typeof url !== 'string') res = { ok: false, reason: 'bad-url' };
       else {
-        const run = (o) => captureOne(url, join(out, slug), o).catch((e) => ({ ok: false, reason: 'error', detail: firstLine(e) }));
+        const all = {
+          ...(opts.allFrames ? { allFrames: join(opts.allFrames, slug) } : {}),
+          ...(opts.trace === true ? { trace: (line) => log(`     ${slug}: ${line}`) } : {}),
+        };
+        const run = (o) => captureOne(url, join(out, slug), { ...o, ...all }).catch((e) => ({ ok: false, reason: 'error', detail: firstLine(e) }));
         res = await run(opts);
         // Screenshots that time out usually mean frames hog the main thread; one more pass with throttled frames.
         if (!res.ok && (res.reason === 'screenshot' || res.reason === 'deadline') && !opts.throttle && Date.now() - batchStart < budgetMs) {
@@ -580,7 +936,7 @@ export async function captureSlugs(slugs, { root = ROOT, out = join(root, 'out')
         if (opts.start === 'retry' && (res.ok ? kept < NAMES.length : res.reason === 'blank') && Date.now() - batchStart < budgetMs) {
           log(`     ${slug}: ${res.ok ? `${kept} of ${NAMES.length} frames` : res.reason}, retry with the start step`);
           const scratch = mkdtempSync(join(tmpdir(), 'capture-start-'));
-          const again = await captureOne(url, join(scratch, slug), { ...opts, start: true, ...(res.throttled ? { throttle: true } : {}), ...(res.itchPage ? { itchPage: true } : {}) }).catch((e) => ({ ok: false, reason: 'error', detail: firstLine(e) }));
+          const again = await captureOne(url, join(scratch, slug), { ...opts, ...all, start: true, ...(res.throttled ? { throttle: true } : {}), ...(res.itchPage ? { itchPage: true } : {}) }).catch((e) => ({ ok: false, reason: 'error', detail: firstLine(e) }));
           if (again.ok && again.files.length > kept) {
             for (const n of NAMES) rmSync(join(out, slug, `${n}.png`), { force: true });
             mkdirSync(join(out, slug), { recursive: true });
@@ -635,6 +991,53 @@ export function waitOptions(seconds) {
   return { times: DEFAULTS.times.map((t) => t + s * 1000), deadline: DEFAULTS.deadline + s * 1000 };
 }
 
+/**
+ * Seconds of play after the start step, for slow games (a management sim, a rocket on the pad) whose frames a few
+ * seconds apart look the same: the post-start frames spread evenly up to that time, and the deadline grows with it.
+ * 15 to 120; anything else is no change.
+ */
+export function playOptions(seconds) {
+  const s = Math.floor(Number(seconds));
+  if (!(s >= 15 && s <= 120)) return {};
+  const first = DEFAULTS.startTimes[0];
+  const last = s * 1000;
+  const n = DEFAULTS.startTimes.length;
+  const startTimes = Array.from({ length: n }, (_, i) => Math.round(first + ((last - first) * i) / (n - 1)));
+  return { startTimes, startExtra: DEFAULTS.startExtra + last - DEFAULTS.startTimes[n - 1] };
+}
+
+/**
+ * Command-line options. CI passes slugs only. A local capture on a machine with a GPU adds `--gpu` (Playwright's
+ * Chromium) or `--chrome` (the installed Chrome), `--headed` to watch, `--webgl` for a game whose WebGPU path draws
+ * nothing, `--play <s>` for slow games, `--rooms` (the start step may join a room from a list: look at every frame, a
+ * public room can show strangers' names and chat), `--trace` (the start step's decisions) and `--all-frames <dir>`
+ * (every frame, for review); it may read entries from another checkout (`--root`, e.g. a seed branch's worktree) and
+ * write elsewhere (`--out`).
+ */
+export function cliOptions(argv) {
+  const res = { slugs: [] };
+  for (let i = 0; i < argv.length; i++) {
+    const a = argv[i];
+    if (a === '--gpu') res.gpu = true;
+    else if (a === '--headed') res.headed = true;
+    else if (a === '--trace') res.trace = true;
+    else if (a === '--rooms') res.rooms = true;
+    else if (a === '--webgl') res.webgl = true;
+    else if (a === '--chrome') res.chrome = true;
+    else if (a === '--play') {
+      const p = playOptions(argv[++i]);
+      if (!p.startTimes) throw new Error('--play needs 15 to 120 seconds');
+      Object.assign(res, p);
+    } else if (a === '--root' || a === '--out' || a === '--all-frames') {
+      const v = argv[++i];
+      if (!v || v.startsWith('--')) throw new Error(`${a} needs a directory`);
+      res[{ '--root': 'root', '--out': 'out', '--all-frames': 'allFrames' }[a]] = v;
+    } else if (a.startsWith('--')) throw new Error(`unknown option ${a}`);
+    else res.slugs.push(a);
+  }
+  return res;
+}
+
 if (process.argv[1] === fileURLToPath(import.meta.url)) {
   if (process.argv[2] === '--split') {
     if (process.argv.length !== 4) {
@@ -644,12 +1047,18 @@ if (process.argv[1] === fileURLToPath(import.meta.url)) {
     console.log(JSON.stringify(splitUploads(readFileSync(process.argv[3], 'utf8').split(/\s+/).filter(Boolean))));
     process.exit(0);
   }
-  const slugs = process.argv.slice(2);
-  if (!slugs.length) {
-    console.error('usage: node scripts/capture.mjs <slug…>');
+  let cli;
+  try {
+    cli = cliOptions(process.argv.slice(2));
+  } catch {
+    cli = null;
+  }
+  if (!cli?.slugs.length) {
+    console.error('usage: node scripts/capture.mjs [--gpu] [--chrome] [--headed] [--webgl] [--rooms] [--trace] [--play <15-120 s>] [--root <catalog checkout>] [--out <dir>] [--all-frames <dir>] <slug…>');
     process.exit(2);
   }
-  const results = await captureSlugs(slugs, { ...waitOptions(process.env.CAPTURE_WAIT), ...startOptions(process.env.CAPTURE_START) });
+  const { slugs, ...local } = cli;
+  const results = await captureSlugs(slugs, { ...waitOptions(process.env.CAPTURE_WAIT), ...startOptions(process.env.CAPTURE_START), ...local });
   await closeBrowser();
   for (const line of summary(results)) console.log(line);
   // Failed games are expected and logged; a browser that never starts is a broken runner.
