@@ -27,10 +27,11 @@ creator:
   x: jonasfroeller
 made:
   models: []
-  tools: []
+  tools:
+    - trae
   aiShare: most
   source: Vibe Jam 2026 submission form
-  evidence: inferred
+  evidence: creator
 tech:
   multiplayer: single
 genres:
@@ -47,7 +48,7 @@ media:
     - games/news-ninja/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-09-29
+  updated: 2026-10-01
 status: live
 provenance:
   foundVia: scout:vibejam-2026

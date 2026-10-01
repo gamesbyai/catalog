@@ -43,11 +43,14 @@ creator:
     - https://critics-arcade.itch.io
 made:
   models: []
+  providers:
+    - anthropic
   tools: []
   aiShare: unknown
   source: AI Browser Game Jam 3 rules (at least half of each game AI-generated)
-    and the itch.io game page
-  evidence: inferred
+    and the creator's jam submission
+  evidence: creator
+  evidenceUrl: https://itch.io/jam/ai-game-jam-3/rate/4682631
 tech:
   multiplayer: single
 genres:

@@ -42,11 +42,15 @@ creator:
     - https://bittiai.itch.io
 made:
   models: []
-  tools: []
+  providers:
+    - anthropic
+  tools:
+    - claude-code
   aiShare: some
   source: AI Browser Game Jam 4 rules (most of each game AI-generated) and the
-    itch.io game page
+    creator's jam submission
   evidence: creator
+  evidenceUrl: https://itch.io/jam/ai-jam-4/rate/4897008
 tech:
   multiplayer: single
 genres:

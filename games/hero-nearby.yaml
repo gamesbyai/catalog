@@ -29,11 +29,16 @@ creator:
   handle: rockbiter
   x: __rockbiter
 made:
-  models: []
-  tools: []
+  models:
+    - claude-opus-4-6
+  providers:
+    - anthropic
+    - google
+  tools:
+    - github-copilot
   aiShare: most
   source: Vibe Jam 2026 submission form
-  evidence: inferred
+  evidence: creator
 tech:
   engine: threejs
   multiplayer: single
@@ -51,7 +56,7 @@ media:
     - games/hero-nearby/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-09-29
+  updated: 2026-10-01
 status: live
 provenance:
   foundVia: scout:vibejam-2026

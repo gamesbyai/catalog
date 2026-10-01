@@ -42,12 +42,20 @@ creator:
   links:
     - https://plinthcybernetics.itch.io
 made:
-  models: []
-  tools: []
+  models:
+    - claude-opus-5
+    - grok-4-5
+  providers:
+    - anthropic
+    - xai
+  tools:
+    - claude-code
+    - grok-build
   aiShare: most
   source: AI Browser Game Jam 4 rules (most of each game AI-generated) and the
-    itch.io game page
+    creator's jam submission
   evidence: creator
+  evidenceUrl: https://itch.io/jam/ai-jam-4/rate/4854332
 tech:
   engine: godot
   multiplayer: single

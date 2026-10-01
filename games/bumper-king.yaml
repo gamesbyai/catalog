@@ -31,11 +31,15 @@ creator:
   handle: xwerux
   x: xwerux
 made:
-  models: []
-  tools: []
+  models:
+    - gpt-5-4
+  providers:
+    - openai
+  tools:
+    - codex
   aiShare: most
   source: Vibe Jam 2026 submission form
-  evidence: inferred
+  evidence: creator
 tech:
   engine: threejs
   multiplayer: online

@@ -30,10 +30,12 @@ creator:
   x: Kadovat
 made:
   models: []
+  providers:
+    - deepseek
   tools: []
   aiShare: most
   source: Vibe Jam 2026 submission form
-  evidence: inferred
+  evidence: creator
 tech:
   engine: threejs
   multiplayer: online

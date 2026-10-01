@@ -29,10 +29,15 @@ creator:
   x: op__nico
 made:
   models: []
-  tools: []
+  providers:
+    - google
+    - openai
+  tools:
+    - antigravity
+    - codex
   aiShare: most
   source: Vibe Jam 2026 submission form
-  evidence: inferred
+  evidence: creator
 tech:
   engine: threejs
   multiplayer: single
@@ -50,7 +55,7 @@ media:
     - games/slay-the-spore/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-09-29
+  updated: 2026-10-01
 status: live
 provenance:
   foundVia: scout:vibejam-2026

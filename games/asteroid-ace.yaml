@@ -27,11 +27,17 @@ creator:
   name: Paul Shroom
   handle: paul-shroom
 made:
-  models: []
-  tools: []
+  models:
+    - qwen-3-5
+  providers:
+    - alibaba
+  tools:
+    - opencode
+    - openclaw
   aiShare: all
   source: Vibe Jam 2026 submission form
   evidence: creator
+  evidenceUrl: https://asteroid-ace.fractalvision.co.uk
 tech:
   multiplayer: single
 genres:
@@ -48,7 +54,7 @@ media:
     - games/asteroid-ace/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-09-29
+  updated: 2026-10-01
 status: live
 provenance:
   foundVia: scout:vibejam-2026

@@ -40,11 +40,15 @@ creator:
     - https://tappinc.itch.io
 made:
   models: []
-  tools: []
+  providers:
+    - openai
+  tools:
+    - codex
   aiShare: unknown
   source: AI Browser Game Jam 4 rules (most of each game AI-generated) and the
-    itch.io game page
+    creator's jam submission
   evidence: creator
+  evidenceUrl: https://itch.io/jam/ai-jam-4/rate/4861851
 tech:
   multiplayer: single
 genres:

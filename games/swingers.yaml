@@ -32,10 +32,13 @@ creator:
   x: _offmylawn
 made:
   models: []
-  tools: []
+  providers:
+    - anthropic
+  tools:
+    - claude-code
   aiShare: most
   source: Vibe Jam 2026 submission form
-  evidence: inferred
+  evidence: creator
 tech:
   engine: threejs
   multiplayer: online

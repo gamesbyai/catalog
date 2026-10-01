@@ -41,10 +41,13 @@ creator:
   x: iamchuck504
 made:
   models: []
-  tools: []
+  providers:
+    - anthropic
+  tools:
+    - openclaw
   aiShare: most
   source: Vibe Jam 2026 submission form
-  evidence: inferred
+  evidence: creator
 tech:
   multiplayer: single
 genres:
