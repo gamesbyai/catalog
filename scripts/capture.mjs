@@ -438,19 +438,22 @@ const PLAY_STEPS = [
 const PRESSED = 'data-capture-pressed';
 const NOT_PRESSED = `:not([${PRESSED}]):not([${PRESSED}] *)`;
 
-/** The budget for pressCheck's answer: its own, never shorter than a click's. */
+/**
+ * The budget for pressCheck's answer before a press that starts the game (a named button, the centre click, Enter):
+ * its own, never shorter than a click's. Play input between frames keeps the click budget: frames never wait for it.
+ */
 const checkBudget = (o) => Math.max(o.checkTimeout, o.clickTimeout);
 
-/** A mouse click at (x, y), unless pressCheck says no (or can't answer in time). True after a click. */
-async function clickAt(page, x, y, o, guard) {
-  const ok = await guard(within(page.evaluate(`(${pressCheck})(null, ${JSON.stringify({ ...DENY_ARG, x, y })})`), checkBudget(o), false));
+/** A mouse click at (x, y), unless pressCheck says no (or can't answer within `budget`). True after a click. */
+async function clickAt(page, x, y, o, guard, budget = checkBudget(o)) {
+  const ok = await guard(within(page.evaluate(`(${pressCheck})(null, ${JSON.stringify({ ...DENY_ARG, x, y })})`), budget, false));
   if (ok) await guard(within(page.mouse.click(x, y), o.clickTimeout));
   return ok === true;
 }
 
 /** A key press (Enter, Space), after pressCheck has moved focus off a link or a control that isn't the game's. */
-async function pressKey(page, key, o, guard) {
-  const ok = await guard(within(page.evaluate(`(${pressCheck})(null, ${JSON.stringify({ ...DENY_ARG, key })})`), checkBudget(o), null));
+async function pressKey(page, key, o, guard, budget = checkBudget(o)) {
+  const ok = await guard(within(page.evaluate(`(${pressCheck})(null, ${JSON.stringify({ ...DENY_ARG, key })})`), budget, null));
   // No answer (a busy or navigating page): no key either, since whatever has focus may be such a control.
   if (ok === null) return false;
   await guard(within(page.keyboard.press(key), o.clickTimeout));
@@ -613,22 +616,25 @@ export async function startGame(page, o, guard, signal) {
     trace?.('every press was a click event: centre click and Enter');
     await centre(trace);
   }
-  // Focus the game for the play input that follows.
-  if (!canvasTried) await clickAt(page, o.viewport.width / 2, o.viewport.height / 2, o, guard);
+  // Focus the game for the play input that follows (the click budget: nothing waits for a focus click).
+  if (!canvasTried) await clickAt(page, o.viewport.width / 2, o.viewport.height / 2, o, guard, o.clickTimeout);
 }
 
-/** Play input between post-start frames: step i of PLAY_STEPS. Clicks and Space go through pressCheck. */
+/**
+ * Play input between post-start frames: step i of PLAY_STEPS. Clicks and Space go through pressCheck within the click
+ * budget: on a page too busy to answer in time the input is skipped, never the frame after it delayed.
+ */
 async function playInput(page, i, o, guard, signal) {
   const step = PLAY_STEPS[i % PLAY_STEPS.length];
   const { width, height } = o.viewport;
   if (step.click) {
     await guard(within(page.mouse.move(width * step.click[0], height * step.click[1], { steps: 4 }), o.clickTimeout));
-    await clickAt(page, width * step.click[0], height * step.click[1], o, guard);
+    await clickAt(page, width * step.click[0], height * step.click[1], o, guard, o.clickTimeout);
   }
   for (const k of step.keys) await guard(within(page.keyboard.down(k), o.clickTimeout));
   await guard(sleep(o.holdMs, signal));
   for (const k of step.keys) await guard(within(page.keyboard.up(k), o.clickTimeout));
-  if (step.press) await pressKey(page, step.press, o, guard);
+  if (step.press) await pressKey(page, step.press, o, guard, o.clickTimeout);
 }
 
 /**
