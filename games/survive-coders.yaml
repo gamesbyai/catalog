@@ -25,6 +25,7 @@ play:
   embeddable: true
   platforms:
     - browser
+    - mobile
   controls:
     - "Hold M: voice commands"
     - "V: microphone setup"
@@ -59,7 +60,7 @@ media:
     - games/survive-coders/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-09-29
+  updated: 2026-10-01
 status: live
 provenance:
   foundVia: scout:awesome-opus

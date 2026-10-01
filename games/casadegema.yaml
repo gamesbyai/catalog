@@ -31,6 +31,7 @@ play:
   embeddable: true
   platforms:
     - browser
+    - mobile
   controls:
     - "Mouse or touch: tap and drag"
     - "Esc: put down held item"
