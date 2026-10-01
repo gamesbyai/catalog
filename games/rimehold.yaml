@@ -1,0 +1,41 @@
+slug: rimehold
+title: rimehold
+tagline: Submitted by its creator; the description is added during review.
+description: ""
+play:
+  url: https://malnourishd.itch.io/rimehold
+  platforms:
+    - browser
+  embedPermission:
+    by: submission
+    date: 2026-10-01
+creator:
+  name: malny
+  handle: malny
+made:
+  models:
+    - claude-opus-5-5
+    - claude-sonnet-5-5
+  tools:
+    - claude-code
+  aiShare: all
+  source: "Creator's submission (issue #54)"
+  evidence: creator
+  notes: left all decisions to claude, yolo-d the whole thing referencing wc3 maps.
+tech:
+  engine: threejs
+  multiplayer: single
+genres:
+  - strategy
+media:
+  cover: games/rimehold/cover
+  screenshots:
+    - games/rimehold/shot-1
+    - games/rimehold/shot-2
+dates:
+  added: 2026-10-01
+  updated: 2026-10-01
+status: live
+provenance:
+  foundVia: form
+  submittedBy: "#54"
