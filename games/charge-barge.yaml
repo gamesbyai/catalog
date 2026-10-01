@@ -1,0 +1,70 @@
+slug: charge-barge
+title: CHARGE BARGE
+tagline: Sail an ironclad up a hostile coast, shoot wrecks for loot, and buy
+  upgrades in coves.
+description: >-
+  Two currencies drive every run. Volts are stored charge, taken from wrecks and
+  trickled in by a dynamo that pays per second while you sail, so slow water
+  pays better and the throttle becomes a money decision. Surge is battle charge,
+  built by kills and spent on the spot.
+
+
+  You steer the ironclad through procedurally charted channels, aiming guns with
+  the mouse. Skiffs ram you, branders explode, towers lead their shots, and
+  mortar barges mark the water with warning rings you should stay out of. Rocks
+  damage the hull and reefs drag the keel. Each leg ends in a safe cove.
+
+
+  In a cove you spend volts on permanent upgrades such as weapons, defense,
+  speed, income, salvage magnet and surge capacity. Surge pays for abilities
+  during a run: ramming speed, boarding archers, a hired sloop, the Tempest,
+  extra gun crews and a patch crew. More abilities unlock as renown grows.
+
+
+  Sinking sends you back to the last cove with every volt, upgrade and point of
+  renown intact. Progress saves automatically at coves, purchases, unlocks and
+  sinkings, and Continue resumes the chart. The coast gets narrower and more
+  dangerous going north.
+play:
+  url: https://csaf.itch.io/charge-barge
+  embeddable: false
+  platforms:
+    - browser
+  controls:
+    - "A/D / arrows: steer"
+    - "W/S: throttle"
+    - "Mouse: aim"
+    - "Left click: fire"
+    - "1-6: use abilities"
+creator:
+  name: csaf
+  handle: csaf
+  links:
+    - https://csaf.itch.io
+made:
+  models: []
+  tools: []
+  aiShare: some
+  source: AI Browser Game Jam 4 rules (most of each game AI-generated) and the
+    itch.io game page
+  evidence: creator
+tech:
+  multiplayer: single
+genres:
+  - action
+  - roguelike
+jam:
+  event: ai-browser-game-jam-4
+  rank: 34
+  entries: 126
+media:
+  cover: games/charge-barge/cover
+  screenshots:
+    - games/charge-barge/shot-1
+    - games/charge-barge/shot-2
+dates:
+  added: 2026-10-01
+  updated: 2026-10-01
+status: live
+provenance:
+  foundVia: scout:aibgj-4

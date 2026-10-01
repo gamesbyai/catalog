@@ -1,0 +1,68 @@
+slug: faithful-or-fickle
+title: Faithful Or Fickle
+tagline: Play a black cat familiar who secretly steers a manor's fate across
+  several eras
+description: >-
+  You play a black-cat familiar to the lord or lady of a manor, in a pixel-art
+  platformer. Each era, from the 1400s to the early 1900s, has a map you cross
+  toward the far right, where the ruler fights a battle. The condition of the
+  estate decides whether they win or lose.
+
+
+  The ruler pulls you into short familiar duties quite often. In your free time
+  you roam. Press B where spies try to bribe you to switch sides, let
+  infiltrators in, or re-swear your loyalty and recruit allies. You can switch
+  as often as you like.
+
+
+  To start the battle you must first find two house-needs items. The core route
+  stays in the middle band with the ground, the road and the manor, where most
+  powerups sit. You can also climb to the heights or drop into the deeps to
+  fight large beasts such as dragons.
+
+
+  There are no extra-life pickups. You have nine lives, and when they are gone
+  the run is over. Frame-skip options let the game show more detail on faster
+  machines, though the creator says the deeps feel quite empty.
+play:
+  url: https://exedexes1.itch.io/faithful-or-fickle
+  embeddable: false
+  platforms:
+    - browser
+  controls:
+    - "B: switch sides, let infiltrators in, re-swear loyalty"
+    - "X: claw swipe"
+    - "Arrow keys: aim the claw swipe"
+    - "Up arrow + X: swipe upward to claw upward in midair"
+creator:
+  name: exedexes1
+  handle: exedexes1
+  links:
+    - https://exedexes1.itch.io
+made:
+  models: []
+  tools: []
+  aiShare: some
+  source: AI Browser Game Jam 3 rules (at least half of each game AI-generated)
+    and the itch.io game page
+  evidence: creator
+tech:
+  multiplayer: single
+genres:
+  - platformer
+  - adventure
+jam:
+  event: ai-browser-game-jam-3
+  rank: 29
+  entries: 77
+media:
+  cover: games/faithful-or-fickle/cover
+  screenshots:
+    - games/faithful-or-fickle/shot-1
+    - games/faithful-or-fickle/shot-2
+dates:
+  added: 2026-10-01
+  updated: 2026-10-01
+status: live
+provenance:
+  foundVia: scout:aibgj-3

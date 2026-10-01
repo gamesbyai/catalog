@@ -1,0 +1,69 @@
+slug: galactic-siege
+title: GALACTIC SIEGE
+tagline: Send fleets between star systems and capture the galaxy before the
+  timer runs out.
+description: >-
+  Galactic Siege starts with you selecting one of your blue Terran star systems
+  on a procedurally generated map, then clicking a connected node to launch a
+  fleet. Each launch sends half of the selected system's garrison, so every
+  attack leaves the origin weaker.
+
+
+  Fleets travel along hyperspace lanes and fight on arrival. Send more than the
+  defenders hold and the system is captured. Owned systems produce new fleets
+  over time, so early expansion feeds later attacks. The map's connections
+  decide which targets you can reach.
+
+
+  Four modes change the pace. Classic is a 3-minute war. Blitz lasts 2 minutes
+  with doubled production and faster fleets. Conquest awards production bonuses
+  for holding sector majorities. Survival sends enemy waves until the timer
+  ends, and outlasting them is the win.
+
+
+  Some nodes carry structures: fortresses reduce incoming damage, shipyards
+  produce fleets faster, and portals link distant systems. Once per match a
+  random event can hit: a solar storm cuts production, a warp surge speeds
+  fleets, or a nanite bloom raises production for every faction. In the other
+  modes you win by eliminating all alien factions or holding the highest score
+  at time's end.
+play:
+  url: https://arkantoskira.itch.io/galactic-siege
+  embeddable: false
+  platforms:
+    - browser
+  controls:
+    - "Left click blue node: select your system"
+    - "Left click connected node: send half the garrison"
+    - "Click elsewhere or same node: deselect"
+creator:
+  name: ArkantosKira
+  handle: arkantoskira
+  links:
+    - https://arkantoskira.itch.io
+made:
+  models: []
+  tools: []
+  aiShare: some
+  source: AI Browser Game Jam 2 rules (at least half of each game AI-generated)
+    and the itch.io game page
+  evidence: creator
+tech:
+  multiplayer: single
+genres:
+  - strategy
+jam:
+  event: ai-browser-game-jam-2
+  rank: 15
+  entries: 42
+media:
+  cover: games/galactic-siege/cover
+  screenshots:
+    - games/galactic-siege/shot-1
+    - games/galactic-siege/shot-2
+dates:
+  added: 2026-10-01
+  updated: 2026-10-01
+status: live
+provenance:
+  foundVia: scout:aibgj-2
