@@ -705,9 +705,10 @@ test('the start step presses a text-only menu item, and never follows a link', a
 
 test('the start step still captures a canvas game with no buttons', async () => {
   // With nothing to press the step looks for a late menu until its budget ends, while this game keeps drawing every
-  // frame; on CI's software renderer each screenshot then waits longer. A short budget leaves the frames their time.
+  // frame; on CI's software renderer each screenshot then waits longer. A short budget leaves the frames their time,
+  // and the frames get the same screenshot time as the plain canvas test (CI runs past 4 s per shot under load).
   const { trace, log } = traced();
-  const res = await captureOne(`${base}/game`, join(tmp(), 'canvas-start'), { ...FAST, ...START_FAST, startBudget: 3000, trace });
+  const res = await captureOne(`${base}/game`, join(tmp(), 'canvas-start'), { ...FAST, ...START_FAST, startBudget: 3000, shotTimeout: 6000, deadline: 20_000, trace });
   assert.equal(res.ok, true, `${res.reason}${log()}`);
   assert.ok(res.files.length >= 2, `${res.files.length} frames${log()}`);
 });
