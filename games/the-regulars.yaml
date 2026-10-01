@@ -1,0 +1,65 @@
+slug: the-regulars
+title: THE REGULARS
+tagline: Talk to diner regulars, guess their orders, and spot what doesn't fit.
+description: >-
+  You stand behind the counter at the Last Stop Diner while a handful of
+  regulars sit across from you: Walter, Mrs. Finch and Danny the paperboy among
+  them. Talk to each one and every line you learn raises your familiarity with
+  them.
+
+
+  Once you know someone well enough, you try to guess their order before they
+  say it. Then you serve them, fill the counter and record what they tell you in
+  a Memory Notebook. When things start to drift from what you know, you flag
+  whatever doesn't fit. The story has multiple endings.
+
+
+  A separate arcade mode, Refill Rush, runs for 60 seconds. You keep three
+  coffees topped off, build a combo and chase a high score.
+
+
+  Every visual and sound is generated in code on a canvas, with no image or
+  audio files. Each face is built from a seed, so a character looks the same
+  every time you return. The game was made for a jam with the theme Familiar.
+play:
+  url: https://granthaffner.itch.io/the-regulars
+  embeddable: false
+  platforms:
+    - browser
+  controls:
+    - "Up/Down arrows or mouse: choose"
+    - "Enter: select"
+    - "Space: continue"
+creator:
+  name: HAFFNERVISION
+  handle: granthaffner
+  links:
+    - https://granthaffner.itch.io
+made:
+  models: []
+  tools: []
+  aiShare: unknown
+  source: AI Browser Game Jam 3 rules (at least half of each game AI-generated)
+    and the itch.io game page
+  evidence: inferred
+tech:
+  engine: canvas
+  multiplayer: single
+genres:
+  - adventure
+  - puzzle
+jam:
+  event: ai-browser-game-jam-3
+  rank: 52
+  entries: 77
+media:
+  cover: games/the-regulars/cover
+  screenshots:
+    - games/the-regulars/shot-1
+    - games/the-regulars/shot-2
+dates:
+  added: 2026-10-01
+  updated: 2026-10-01
+status: live
+provenance:
+  foundVia: scout:aibgj-3

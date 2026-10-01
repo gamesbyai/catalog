@@ -1,0 +1,66 @@
+slug: dungeon-league
+title: Dungeon League
+tagline: Run a dungeon for sixty seconds and keep adventurers alive but nearly dead
+description: >-
+  Each raid lasts sixty seconds, and you score by keeping the adventuring party
+  alive. You open doors, spawn monsters and fire traps, but a party that dies
+  pays nothing, and neither does one that leaves early. Money comes from a party
+  still inside, in combat and badly wounded when the clock stops.
+
+
+  Once monsters are out, you can't recall them. Your one form of mercy is a
+  door: open it behind a losing party so they can retreat, heal and return. The
+  best result is a raid where the healer runs out of mana and nobody quite dies.
+
+
+  Between raids you spend the earnings on another hall, a slime pit or a chest
+  to tempt the greedy. Then the league standings update and the bottom two
+  dungeons are destroyed. You start among twenty dungeons and play ten rounds,
+  aiming to be the last one standing.
+
+
+  On the creator's account, the code and architecture were written by AI, while
+  they handled game design and balancing. The project has a test suite of 445
+  tests and a decisions log.
+play:
+  url: https://norritt42.itch.io/dungeon-league
+  embeddable: false
+  platforms:
+    - browser
+  controls:
+    - "Click / tap: use a door, spawner or trap"
+    - "Scroll / pinch: zoom"
+    - "Right-drag / two fingers: move the view"
+creator:
+  name: norritt42
+  handle: norritt42
+  links:
+    - https://norritt42.itch.io
+made:
+  models: []
+  tools: []
+  aiShare: some
+  source: AI Browser Game Jam 4 rules (most of each game AI-generated) and the
+    itch.io game page
+  evidence: creator
+tech:
+  engine: unity
+  multiplayer: single
+genres:
+  - strategy
+  - management
+jam:
+  event: ai-browser-game-jam-4
+  rank: 39
+  entries: 126
+media:
+  cover: games/dungeon-league/cover
+  screenshots:
+    - games/dungeon-league/shot-1
+    - games/dungeon-league/shot-2
+dates:
+  added: 2026-10-01
+  updated: 2026-10-01
+status: live
+provenance:
+  foundVia: scout:aibgj-4

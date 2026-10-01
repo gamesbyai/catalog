@@ -1,0 +1,69 @@
+slug: data-drop
+title: Data Drop
+tagline: Steer falling blocks and fill in missing letters to crack passwords
+description: >-
+  Blocks carrying letters fall down the board, and each level hides a password
+  with some characters missing. Steer the pieces so the right letters land in
+  the gaps, spelling four-letter user passwords or five-letter admin passwords,
+  which score higher.
+
+
+  Rows still matter. Clearing horizontal lines keeps the stack from overflowing
+  and the connection alive, but cracking the word is the actual objective, so
+  playing it like a standard falling-blocks game stalls on level 1. Fourteen
+  block shapes appear, along with virus-infected blocks and corrupted sectors
+  that you clear before they spread across the board.
+
+
+  A defrag meter charges up and removes gaps in the code. The game runs through
+  200 security levels, uses a dictionary of over 7000 words, and cycles through
+  11 board designs. Difficulty rises and eases as you play.
+
+
+  On desktop, move the mouse to position a block, and double-click to drop it.
+  On mobile, a D-Pad, cycle wheel, rotate button and drop button handle the same
+  actions.
+play:
+  url: https://awesomistgames.itch.io/datadrop
+  embeddable: false
+  platforms:
+    - browser
+  controls:
+    - "Mouse move: position falling block"
+    - "Double-click: drop block"
+    - "Scroll wheel: cycle letter positions"
+    - "Right-click: rotate block"
+    - "Left-click: increase fall speed"
+    - "Esc: pause"
+creator:
+  name: AwesomistGames
+  handle: awesomistgames
+  links:
+    - https://awesomistgames.itch.io
+made:
+  models: []
+  tools: []
+  aiShare: unknown
+  source: AI Browser Game Jam 3 rules (at least half of each game AI-generated)
+    and the itch.io game page
+  evidence: inferred
+tech:
+  multiplayer: single
+genres:
+  - puzzle
+  - word
+jam:
+  event: ai-browser-game-jam-3
+  rank: 6
+  entries: 77
+media:
+  cover: games/data-drop/cover
+  screenshots:
+    - games/data-drop/shot-1
+    - games/data-drop/shot-2
+dates:
+  added: 2026-10-01
+  updated: 2026-10-01
+status: live
+provenance:
+  foundVia: scout:aibgj-3

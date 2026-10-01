@@ -1,0 +1,57 @@
+slug: nuts-pipeline
+title: Nuts Pipeline
+tagline: Place converters on pipe nodes to sort nuts from stones and feed a hamster.
+description: >-
+  You place converters on the nodes of a pipe network to control where items
+  flow. Nuts and stones come out of the source together. Pick the right
+  combination of converters to sort them, so only nuts reach the hamster waiting
+  at the goal.
+
+
+  Selecting a node opens a dialog where you swap its converter while checking a
+  reference chart. Each level is turn-based: you clear 10 turns within a
+  3-minute time limit. An Unlock Route action frees a locked node for a single
+  turn.
+
+
+  A stone that reaches the hamster counts as a miss, and two misses end the run.
+  The hamster reacts each time a nut arrives. A built-in tutorial introduces the
+  rules, and levels range from easy stages to harder ones. Progress autosaves
+  after every placement and turn, so you can stop and resume later.
+play:
+  url: https://is-product.itch.io/nuts-pipeline
+  embeddable: false
+  platforms:
+    - browser
+creator:
+  name: IS Product
+  handle: is-product
+  links:
+    - https://is-product.itch.io
+made:
+  models: []
+  tools: []
+  aiShare: some
+  source: AI Browser Game Jam 3 rules (at least half of each game AI-generated)
+    and the itch.io game page
+  evidence: creator
+tech:
+  multiplayer: single
+genres:
+  - puzzle
+  - educational
+jam:
+  event: ai-browser-game-jam-3
+  rank: 25
+  entries: 77
+media:
+  cover: games/nuts-pipeline/cover
+  screenshots:
+    - games/nuts-pipeline/shot-1
+    - games/nuts-pipeline/shot-2
+dates:
+  added: 2026-10-01
+  updated: 2026-10-01
+status: live
+provenance:
+  foundVia: scout:aibgj-3

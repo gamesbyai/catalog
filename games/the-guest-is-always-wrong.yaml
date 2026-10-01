@@ -1,0 +1,57 @@
+slug: the-guest-is-always-wrong
+title: THE GUEST IS ALWAYS WRONG
+tagline: Handle guest complaints at Edinburgh holiday flats while guarding your
+  rating and sanity.
+description: >-
+  The job is to keep a five-star rating across a set of Edinburgh holiday
+  apartments while guests pile on complaints. Each complaint can be solved or
+  passed off to someone else. You track three things at once: your sanity, your
+  profit and the rating.
+
+
+  The game is text based and plays as satire of the holiday rental business.
+  Every complaint carries consequences, and your choices push you toward one of
+  six endings. One ending is a way of surviving peak season. Four are different
+  ways of losing control. The last is the one where you lose your conscience.
+
+
+  The setup comes from the creator's own bad stay in a tourist apartment in
+  Edinburgh, and the complaints in the game are drawn from that experience. The
+  creator states that AI helped with the code, graphics, sounds and text.
+play:
+  url: https://badfaithgames.itch.io/the-guest-is-always-wrong
+  embeddable: false
+  platforms:
+    - browser
+creator:
+  name: Bad Faith Games
+  handle: badfaithgames
+  links:
+    - https://badfaithgames.itch.io
+made:
+  models: []
+  tools: []
+  aiShare: some
+  source: AI Browser Game Jam 4 rules (most of each game AI-generated) and the
+    itch.io game page
+  evidence: creator
+tech:
+  multiplayer: single
+genres:
+  - simulation
+  - management
+jam:
+  event: ai-browser-game-jam-4
+  rank: 76
+  entries: 126
+media:
+  cover: games/the-guest-is-always-wrong/cover
+  screenshots:
+    - games/the-guest-is-always-wrong/shot-1
+    - games/the-guest-is-always-wrong/shot-2
+dates:
+  added: 2026-10-01
+  updated: 2026-10-01
+status: live
+provenance:
+  foundVia: scout:aibgj-4

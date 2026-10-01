@@ -1,0 +1,65 @@
+slug: zombie-hockey-manager
+title: Zombie Hockey Manager
+tagline: Run an undead hockey team from Division 3 up to the top league.
+description: >-
+  Zombie Hockey Manager puts you in charge of a team of reanimated players in
+  the Undead Puck League. Before each match you set a play style and an
+  aggression level, choosing between offensive and dirty or safe and clean. The
+  text-driven matches then play out from those choices.
+
+
+  Between games you run the club. Buy, sell and trade players on the transfer
+  market, each with their own stats and a body that is slowly falling apart.
+  Limited training slots go to individual players, or you can run a team-wide
+  camp for a boost across the squad.
+
+
+  Players lose limbs in fights and collisions, and higher decay means more parts
+  come off. You repair what you can and replace what you can't. Scouting the
+  next opponent lets you adjust tactics against their weaknesses.
+
+
+  Money matters too: upgrade the stadium, set ticket prices, run marketing, take
+  out loans and sell merchandise. The season ends with promotion for winning the
+  league or relegation for finishing last, and the goal is to climb from
+  Division 3 to the Necro Elite. Version 1.1 added achievements and in-match
+  options such as timeouts and pulling the goalie. It draws on the 1982 Football
+  Manager for the ZX Spectrum, and the creator credits AI assistance for code
+  and text.
+play:
+  url: https://quantumcodemonk.itch.io/zombie-hockey-manager
+  embeddable: false
+  platforms:
+    - browser
+creator:
+  name: quantumcodemonk
+  handle: quantumcodemonk
+  links:
+    - https://quantumcodemonk.itch.io
+made:
+  models: []
+  tools: []
+  aiShare: some
+  source: AI Browser Game Jam 4 rules (most of each game AI-generated) and the
+    itch.io game page
+  evidence: creator
+tech:
+  multiplayer: single
+genres:
+  - strategy
+  - management
+jam:
+  event: ai-browser-game-jam-4
+  rank: 104
+  entries: 126
+media:
+  cover: games/zombie-hockey-manager/cover
+  screenshots:
+    - games/zombie-hockey-manager/shot-1
+    - games/zombie-hockey-manager/shot-2
+dates:
+  added: 2026-10-01
+  updated: 2026-10-01
+status: live
+provenance:
+  foundVia: scout:aibgj-4

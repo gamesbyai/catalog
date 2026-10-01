@@ -1,0 +1,77 @@
+slug: volt-nomad
+title: VOLT NOMAD
+tagline: Click to damage mechanical beasts, spend charge on gear trees, and
+  steal their cores.
+description: >-
+  You control a lone automaton far below ground, facing a mechanical beast. Each
+  manual command hits the enemy and produces charge, which you spend on upgrades
+  across five gear trees. Over time, drones and automatic weapons take over the
+  clicking.
+
+
+
+  Six beasts can be fought in any order, and each follows its own combat rule.
+  Defeating one lets you inherit its core, which feeds into synergies with your
+  build. Beating any three of the six leads to a quick ending.
+
+
+
+  Players who want more can go back for the remaining beasts, a second abyssal
+  boss called ARCH SINGULARITY, and a final confrontation with three forms below
+  the world engine. The gear trees hold 86 nodes. Gatling and rail mutations are
+  among the weapon options, and five OVERLIMIT systems can run at once.
+
+
+
+  There is no game over. Losing is not punished; the task is to find a build
+  whose damage outpaces what each fight demands. Clearing everything unlocks a
+  true ending cinematic and an artwork archive. Text is in English and Japanese.
+  The creator states that Codex wrote the code, PixelLab made the pixel art, and
+  Suno produced the music.
+play:
+  url: https://tsgamestudio.itch.io/volt-nomad
+  embeddable: false
+  platforms:
+    - browser
+  controls:
+    - "Mouse / touch: select, attack, purchase, navigate"
+    - "Space / controller A: manual command"
+    - "Arrow keys / D-pad: navigate maps, menus, skill trees"
+    - "Enter / controller A: confirm"
+    - "Esc / controller Back: return"
+    - "T: open gear tree"
+    - "L: switch Japanese / English"
+    - "M: toggle music"
+creator:
+  name: tsgamestudio
+  handle: tsgamestudio
+  links:
+    - https://tsgamestudio.itch.io
+made:
+  models: []
+  tools: []
+  aiShare: most
+  source: AI Browser Game Jam 4 rules (most of each game AI-generated) and the
+    itch.io game page
+  evidence: creator
+tech:
+  engine: godot
+  multiplayer: single
+genres:
+  - strategy
+  - idle
+jam:
+  event: ai-browser-game-jam-4
+  rank: 76
+  entries: 126
+media:
+  cover: games/volt-nomad/cover
+  screenshots:
+    - games/volt-nomad/shot-1
+    - games/volt-nomad/shot-2
+dates:
+  added: 2026-10-01
+  updated: 2026-10-01
+status: live
+provenance:
+  foundVia: scout:aibgj-4

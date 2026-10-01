@@ -1,0 +1,58 @@
+slug: ghost-in-the-machine
+title: Ghost In The Machine
+tagline: Search a storm-struck computer lab for hidden ghosts with a detector
+  before time runs out.
+description: >-
+  The game starts in an abandoned computer lab while a storm rages outside.
+  Everything is told in text. You move by cardinal direction and by which way
+  you are facing, and you carry a detector that tracks the hidden entities in
+  the building.
+
+
+  Each room offers items to pick up, and terminals hold lore you can read.
+  Mapping every room is part of the goal, and a timer limits how long you have
+  to find the ghosts. When a ghost gives chase, you have to get away along
+  routes blocked by obstacles.
+
+
+  Your final score adds up the ghosts you found and how much of the game you
+  completed. Collect every tool, read all the lore, map every room and clear
+  every obstacle, and you unlock a Secret Victory ending with its own music. The
+  creator lists AI assistance for the code, graphics, sounds and text.
+play:
+  url: https://jetblackrlsh.itch.io/ghost-in-the-machine
+  embeddable: false
+  platforms:
+    - browser
+creator:
+  name: jetblackrlsh
+  handle: jetblackrlsh
+  links:
+    - https://jetblackrlsh.itch.io
+made:
+  models: []
+  tools: []
+  aiShare: most
+  source: AI Browser Game Jam rules (at least half of each game AI-generated) and
+    the itch.io game page
+  evidence: creator
+tech:
+  multiplayer: single
+genres:
+  - adventure
+  - horror
+jam:
+  event: ai-browser-game-jam-1
+  rank: 13
+  entries: 29
+media:
+  cover: games/ghost-in-the-machine/cover
+  screenshots:
+    - games/ghost-in-the-machine/shot-1
+    - games/ghost-in-the-machine/shot-2
+dates:
+  added: 2026-10-01
+  updated: 2026-10-01
+status: live
+provenance:
+  foundVia: scout:aibgj-1

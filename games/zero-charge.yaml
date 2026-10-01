@@ -1,0 +1,60 @@
+slug: zero-charge
+title: Zero Charge
+tagline: Ride a dead city on one battery, lighting windows as you pass.
+description: >-
+  You ride an endless dead city on a single battery that serves as fuel, life
+  and the only light. Steer left and right, jump obstacles, and keep moving.
+  Windows ignite as you pass, and when charge runs low you are riding blind.
+
+
+  Everything costs charge, and reaching zero ends the run. Holding Overcharge
+  burns battery to smash straight through whatever is in your path, so each use
+  trades power for passage. The goal is a high score, in a score-attack format.
+
+
+  The city is built from low-poly primitives in a neon cyberpunk look and
+  generated procedurally as you ride. The creator says the code was written with
+  Claude Opus 5, the key art made with Gemini, and the soundtrack with Suno. The
+  build is marked as a work in progress.
+play:
+  url: https://focaccai.itch.io/zero-charge
+  embeddable: false
+  platforms:
+    - browser
+  controls:
+    - "Mouse / A / D: steer"
+    - "Space: jump"
+    - "Shift: overcharge (hold)"
+creator:
+  name: Focaccai
+  handle: focaccai
+  links:
+    - https://focaccai.itch.io
+made:
+  models: []
+  tools: []
+  aiShare: most
+  source: AI Browser Game Jam 4 rules (most of each game AI-generated) and the
+    itch.io game page
+  evidence: creator
+tech:
+  engine: threejs
+  multiplayer: single
+genres:
+  - racing
+  - arcade
+jam:
+  event: ai-browser-game-jam-4
+  rank: 33
+  entries: 126
+media:
+  cover: games/zero-charge/cover
+  screenshots:
+    - games/zero-charge/shot-1
+    - games/zero-charge/shot-2
+dates:
+  added: 2026-10-01
+  updated: 2026-10-01
+status: live
+provenance:
+  foundVia: scout:aibgj-4
