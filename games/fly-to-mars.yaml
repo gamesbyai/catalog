@@ -1,0 +1,67 @@
+slug: fly-to-mars
+title: Fly To Mars
+tagline: Pilot a rocket from Earth to Mars, dodging asteroids and sealing a hull breach.
+description: >-
+  Fly To Mars puts you in the cockpit of the Ares-IX for a trip from Earth to
+  the Red Planet. A run starts with countdown and liftoff, moves through orbital
+  insertion and an asteroid belt, and finishes with atmospheric entry and a
+  landing on the Martian surface.
+
+
+  Along the way you steer to dodge incoming rock, and close passes build up a
+  charge for a warp drive that speeds the journey. Partway through, a hull
+  breach demands a quick repair while asteroids keep arriving. Mission-control
+  voice lines, three original music tracks and views of the Moon, Phobos and
+  Deimos fill out the trip. Difficulty ranges from Easy to Hard, and a Zen mode
+  removes asteroids and failure.
+
+
+  The creator says the game is a single-file Three.js build written mainly with
+  Claude Code using Claude Opus 4.8. Kiro CLI, Codex and OpenClaw helped with
+  features, planning and voice generation. Gemini produced the art textures,
+  ElevenLabs the voices and Suno the music. The creator reports about 18 hours
+  of work.
+play:
+  url: https://maxzillion.itch.io/fly-to-mars
+  embeddable: false
+  platforms:
+    - browser
+  controls:
+    - "WASD / Arrow keys: steer"
+    - "Mouse: look around cockpit"
+    - "Shift: engage warp"
+    - "P: pause"
+    - "M: mute"
+creator:
+  name: Max Z
+  handle: maxzillion
+  links:
+    - https://maxzillion.itch.io
+made:
+  models: []
+  tools: []
+  aiShare: all
+  source: AI Browser Game Jam 3 rules (at least half of each game AI-generated)
+    and the itch.io game page
+  evidence: creator
+tech:
+  engine: threejs
+  multiplayer: single
+genres:
+  - action
+  - arcade
+jam:
+  event: ai-browser-game-jam-3
+  rank: 17
+  entries: 77
+media:
+  cover: games/fly-to-mars/cover
+  screenshots:
+    - games/fly-to-mars/shot-1
+    - games/fly-to-mars/shot-2
+dates:
+  added: 2026-09-30
+  updated: 2026-09-30
+status: live
+provenance:
+  foundVia: scout:aibgj-3

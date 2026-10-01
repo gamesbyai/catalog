@@ -1,0 +1,65 @@
+slug: rogue-memory
+title: Rogue Memory
+tagline: Crawl through a deleted AI's mind, recovering memories and escaping the
+  Architect.
+description: >-
+  Rogue Memory is a first-person dungeon crawler with retro raycasting visuals.
+  You play GHOST.EXE, a deleted program surviving in a buffer overflow. Each run
+  generates new maps across five layers. You find a key fragment, reach the
+  exit, and descend toward the system kernel, where the Architect waits.
+
+
+  Combat is turn-based: attack, scan for weaknesses, or retreat. Scanning
+  exposes an enemy's vulnerability and strengthens your next strike. Nine enemy
+  types patrol, chase on sight, hit harder over time, or heal themselves, and
+  breaking line of sight can shake them off. Running is often smarter than
+  fighting.
+
+
+  The story arrives through more than 25 recovered memory logs, and three
+  endings depend on how many fragments you gather. Sound effects are generated
+  in real time. The creator says it was made entirely with Claude, and the
+  jam-version notes mention difficulty levels and a Phase Shift move.
+play:
+  url: https://quantumcodemonk.itch.io/rogue-memory
+  embeddable: false
+  platforms:
+    - browser
+  controls:
+    - WASD or arrow keys to move
+creator:
+  name: quantumcodemonk
+  handle: quantumcodemonk
+  links:
+    - https://quantumcodemonk.itch.io
+made:
+  models: []
+  providers:
+    - anthropic
+  tools:
+    - claude-ai
+  aiShare: all
+  source: AI Browser Game Jam rules (at least half of each game AI-generated) and
+    the itch.io game page
+  evidence: creator
+tech:
+  engine: canvas
+  multiplayer: single
+genres:
+  - roguelike
+  - strategy
+jam:
+  event: ai-browser-game-jam-1
+  rank: 1
+  entries: 29
+media:
+  cover: games/rogue-memory/cover
+  screenshots:
+    - games/rogue-memory/shot-1
+    - games/rogue-memory/shot-2
+dates:
+  added: 2026-09-30
+  updated: 2026-09-30
+status: live
+provenance:
+  foundVia: scout:aibgj-1

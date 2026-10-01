@@ -1,0 +1,68 @@
+slug: cube-s-gravity-maze
+title: Cube's Gravity Maze
+tagline: Flip gravity to run mazes, dodge traps, collect keys, and beat the Core
+  Guardian boss
+description: >-
+  Cube's Gravity Maze is a short action-platformer set in randomly generated
+  mazes. You guide a cube with the left and right arrow keys and flip gravity
+  with the spacebar to cross traps, mechanisms, and monsters. Each run is a hunt
+  for the keys that open the way deeper, ending at the boss that controls the
+  maze.
+
+
+  Skills found in the maze add options: a dash that makes you invulnerable, a
+  phase ability that toggles red and blue blocks, and an energy-powered spin
+  slash. Enemies behave differently, including ghostly pursuers, turrets that
+  fire on sight, wandering walkers, and spiked wheels. Crumbling blocks and
+  spikes keep the route tense.
+
+
+  Special chambers deep in the maze hold heavy hazards and a payout of gold
+  coins. Items include shields, time orbs, and a compass that points to keys and
+  exits. The Core Guardian boss has an Enraged Mode, and a results screen
+  records score, deaths, and clear time. Controls can be remapped from the pause
+  menu. The jam entry lists AI assistance with code.
+play:
+  url: https://inkling123.itch.io/cubes-gravity-maze
+  embeddable: false
+  platforms:
+    - browser
+  controls:
+    - "Left/Right Arrow: move"
+    - "Space: flip gravity"
+    - "Q: dash"
+    - "W: phase"
+    - "E: spin slash"
+creator:
+  name: Inkling123
+  handle: inkling123
+  links:
+    - https://inkling123.itch.io
+made:
+  models: []
+  tools: []
+  aiShare: some
+  source: AI Browser Game Jam 2 rules (at least half of each game AI-generated)
+    and the itch.io game page
+  evidence: creator
+tech:
+  multiplayer: single
+genres:
+  - platformer
+  - action
+  - roguelike
+jam:
+  event: ai-browser-game-jam-2
+  rank: 8
+  entries: 42
+media:
+  cover: games/cube-s-gravity-maze/cover
+  screenshots:
+    - games/cube-s-gravity-maze/shot-1
+    - games/cube-s-gravity-maze/shot-2
+dates:
+  added: 2026-09-30
+  updated: 2026-09-30
+status: live
+provenance:
+  foundVia: scout:aibgj-2

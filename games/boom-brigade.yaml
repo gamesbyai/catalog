@@ -1,0 +1,56 @@
+slug: boom-brigade
+title: Boom Brigade
+tagline: Blast through nine run-and-gun missions across terrain you can destroy
+description: >-
+  Boom Brigade is a run-and-gun shooter played in the browser. You move through
+  nine missions, fire at enemies, and blow holes in the landscape as you go. The
+  campaign ends with a final boss fight, and you can pick from ten different
+  heroes.
+
+
+  The terrain is destructible, so explosions change the ground you fight on and
+  the routes open to you. Progress is stored in a JSON save, letting you return
+  to the campaign later. The whole game sits in a single file and needs no build
+  step, so it can be opened and played directly.
+
+
+  The project's listing names Claude Code as the tool used to build it. It runs
+  on an HTML5 canvas, and the description is written in French.
+play:
+  url: https://boom-brigade.vercel.app
+  embeddable: true
+  platforms:
+    - browser
+repo: https://github.com/abg5f/boom-brigade
+license: MIT
+creator:
+  name: abg5f
+  handle: abg5f
+made:
+  models:
+    - claude-fable-5-1
+  providers:
+    - anthropic
+  tools:
+    - claude-code
+  aiShare: unknown
+  source: GitHub repository README
+  evidence: repo
+  evidenceUrl: https://github.com/abg5f/boom-brigade
+tech:
+  engine: canvas
+  multiplayer: single
+genres:
+  - shooter
+  - action
+media:
+  cover: games/boom-brigade/cover
+  screenshots:
+    - games/boom-brigade/shot-1
+    - games/boom-brigade/shot-2
+dates:
+  added: 2026-09-30
+  updated: 2026-09-30
+status: live
+provenance:
+  foundVia: scout:github

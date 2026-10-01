@@ -1,0 +1,65 @@
+slug: my-island
+title: My-Island
+tagline: Build a cozy tropical island city from a single Town Hall and collect coins.
+description: >-
+  My Island is a relaxed city-builder set on a small patch of sand. You start
+  with one Town Hall, place homes and businesses from the shop, and tap
+  buildings to collect the coins they earn over time. Those coins go back into
+  new buildings, upgrades, and decorations as the island fills in.
+
+
+  Decor raises Happiness, which multiplies all income, and upgrading the Town
+  Hall raises the island level, unlocks new buildings, and expands the land from
+  9x9 to 15x15. Driftwood, shells, and wild coconuts wash up on the shore for
+  bonus coins and rare Shells. Pip the parrot wanders the beaches, a nod to the
+  jam's Familiar theme. There are 14 buildings, a golden-hour day cycle,
+  drifting clouds, and sailboats, with progress saved in the browser.
+
+
+  The creator describes the development as heavily AI-assisted, built with
+  Phaser 3 and TypeScript. All art and the generative soundtrack are produced
+  procedurally in code, so the game uses no third-party assets. It was made for
+  AI Browser Game Jam 3.
+play:
+  url: https://maokoroku.itch.io/my-island
+  embeddable: false
+  platforms:
+    - browser
+  controls:
+    - Drag to pan
+    - Scroll or pinch to zoom
+    - Tap a building to collect or open its menu
+    - Tap the Town Hall to grow the island
+creator:
+  name: MaoKoroku
+  handle: maokoroku
+  links:
+    - https://maokoroku.itch.io
+made:
+  models: []
+  tools: []
+  aiShare: most
+  source: AI Browser Game Jam 3 rules (at least half of each game AI-generated)
+    and the itch.io game page
+  evidence: creator
+tech:
+  engine: phaser
+  multiplayer: single
+genres:
+  - simulation
+  - management
+jam:
+  event: ai-browser-game-jam-3
+  rank: 18
+  entries: 77
+media:
+  cover: games/my-island/cover
+  screenshots:
+    - games/my-island/shot-1
+    - games/my-island/shot-2
+dates:
+  added: 2026-09-30
+  updated: 2026-09-30
+status: live
+provenance:
+  foundVia: scout:aibgj-3

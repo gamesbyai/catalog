@@ -1,0 +1,62 @@
+slug: neon-abyss-salvage
+title: Neon Abyss Salvage
+tagline: Dive through dark seas, ping for treasure, and surface before your
+  oxygen runs out.
+description: >-
+  Neon Abyss Salvage is a browser-based deep-sea salvage game. Each zone hides
+  at least three treasures, and you search for them while your oxygen drains
+  with every second and every boost. Sonar pings mark treasure, mines and larger
+  threats, and oxygen stations let you refill before you have to surface.
+
+
+  Mines can be set off from a distance with torpedoes, or you can lure a boss
+  into them with a holo decoy. Salvaged parts buy per-run upgrades such as
+  bigger tanks, hull armor, engines, sonar, and torpedo and decoy bays. Seven
+  biomes, from jellyfish forests to lava rifts, add currents and seafloor
+  storms.
+
+
+  Bosses appear from Zone 3 onward, including the Leviathan, the Kraken, the
+  Sentinel, and Erebus. Only mines can truly hurt them. A zone takes three to
+  six minutes, and defeating Erebus earns a final rank before an endless mode
+  continues the dive. It supports touch controls and both Chinese and English.
+  The jam submission lists AI assistance for the code.
+play:
+  url: https://patrickstar-gogogo.itch.io/neon-abyss-salvage
+  embeddable: false
+  platforms:
+    - browser
+  controls:
+    - Virtual joystick and buttons on touch devices
+creator:
+  name: patrickstar_gogogo
+  handle: patrickstar-gogogo
+  links:
+    - https://patrickstar-gogogo.itch.io
+made:
+  models: []
+  tools: []
+  aiShare: some
+  source: AI Browser Game Jam 4 rules (most of each game AI-generated) and the
+    itch.io game page
+  evidence: creator
+tech:
+  multiplayer: single
+genres:
+  - survival
+  - action
+jam:
+  event: ai-browser-game-jam-4
+  rank: 39
+  entries: 126
+media:
+  cover: games/neon-abyss-salvage/cover
+  screenshots:
+    - games/neon-abyss-salvage/shot-1
+    - games/neon-abyss-salvage/shot-2
+dates:
+  added: 2026-09-30
+  updated: 2026-09-30
+status: live
+provenance:
+  foundVia: scout:aibgj-4

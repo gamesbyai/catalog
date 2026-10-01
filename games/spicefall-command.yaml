@@ -1,0 +1,66 @@
+slug: spicefall-command
+title: Spicefall Command
+tagline: Harvest spice, capture condensers, and defend your Command Spire in
+  desert RTS fights.
+description: >-
+  Spicefall Command is a real-time strategy game set on a desert planet. You run
+  a base, send harvesters after spice, keep the power grid stable, and expand
+  water capacity. Hostile commanders are working to destroy your Command Spire,
+  so each match is a quick contest of economy against pressure.
+
+
+  Three resources, Spice, Power, and Water, all constrain what you can build and
+  train. Capturing atmospheric condensers gives a strategic edge and turns map
+  control into part of the economy. You choose between two rival sci-fi houses,
+  and the desert map is randomized every match. Matches range from small
+  skirmishes to larger battles against AI commanders.
+
+
+  The controls follow classic RTS habits: drag to select, right-click to give
+  orders, and a command console for building and training. The game was made for
+  a game jam, and the creator's disclosure says AI assisted with the code,
+  graphics, sounds, and text.
+play:
+  url: https://bitten-heart-studio.itch.io/spicefall-command
+  embeddable: false
+  platforms:
+    - browser
+  controls:
+    - "Drag: select units"
+    - "Right click: move, attack, harvest, rally"
+    - "A: attack move"
+    - "Shift: queue orders"
+    - "1-7: train units"
+    - "Q/W/E/R/Y/T: place structures"
+creator:
+  name: Bitten Heart Studio
+  handle: bitten-heart-studio
+  links:
+    - https://bitten-heart-studio.itch.io
+made:
+  models: []
+  tools: []
+  aiShare: some
+  source: AI Browser Game Jam 3 rules (at least half of each game AI-generated)
+    and the itch.io game page
+  evidence: creator
+tech:
+  multiplayer: single
+genres:
+  - strategy
+  - simulation
+jam:
+  event: ai-browser-game-jam-3
+  rank: 38
+  entries: 77
+media:
+  cover: games/spicefall-command/cover
+  screenshots:
+    - games/spicefall-command/shot-1
+    - games/spicefall-command/shot-2
+dates:
+  added: 2026-09-30
+  updated: 2026-09-30
+status: live
+provenance:
+  foundVia: scout:aibgj-3

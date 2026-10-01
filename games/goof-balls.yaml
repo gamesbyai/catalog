@@ -1,0 +1,63 @@
+slug: goof-balls
+title: Goof Balls
+tagline: Switch elements and outlast rival balls in a shrinking ring
+description: >-
+  Goof Balls is a last-ball-standing brawler built on a Fire, Grass and Water
+  triangle. You start in a shrinking ring with a crowd of round opponents.
+  Switch to the element that counters the nearest rival, rush into targets you
+  beat, and raise a shield when a fight turns against you. The final ball left
+  wins.
+
+
+  Switching elements is instant but locks for a short time afterward, so each
+  change commits you to a read on your opponents. The design grows out of the
+  idea of two masters trading rock-paper-scissors at absurd speed. Rounds are
+  quick, and the cute look contrasts with the mind games underneath.
+
+
+  You can play solo against bots or set up a private room with friends and trade
+  taunts through chat. It runs in the browser with no download. The author's jam
+  submission discloses AI assistance for code, graphics and text, and says the
+  game is still being tuned and improved.
+play:
+  url: https://tappinc.itch.io/goof-balls
+  embeddable: false
+  platforms:
+    - browser
+  controls:
+    - "Move: mouse or WASD"
+    - "Switch element: 1 / 2 / 3"
+    - "Rush: left click or Space"
+    - "Shield: right click or Shift"
+creator:
+  name: tappInc
+  handle: tappinc
+  links:
+    - https://tappinc.itch.io
+made:
+  models: []
+  tools: []
+  aiShare: unknown
+  source: AI Browser Game Jam 4 rules (most of each game AI-generated) and the
+    itch.io game page
+  evidence: creator
+tech:
+  multiplayer: single
+genres:
+  - action
+  - strategy
+jam:
+  event: ai-browser-game-jam-4
+  rank: 8
+  entries: 126
+media:
+  cover: games/goof-balls/cover
+  screenshots:
+    - games/goof-balls/shot-1
+    - games/goof-balls/shot-2
+dates:
+  added: 2026-09-30
+  updated: 2026-09-30
+status: live
+provenance:
+  foundVia: scout:aibgj-4

@@ -1,0 +1,60 @@
+slug: black-code
+title: BLACK CODE
+tagline: Command a tactical squad in an isometric cyberpunk action-strategy prototype.
+description: >-
+  BLACK CODE is a browser prototype that mixes tactical action with real-time
+  strategy. It uses an isometric 2.5D view and a retro pixel-art look with a
+  cyberpunk, sci-fi setting. Sessions are short, lasting a few minutes, and the
+  player works with keyboard and mouse.
+
+
+  The game draws on roguelike, role-playing, and strategy ideas, so a run leans
+  on quick tactical choices rather than long campaigns. The title is provisional
+  and the build is labeled prototype 0.489, which points to an early, evolving
+  project aimed at fans of retro games, cyberpunk, and tactics.
+
+
+  The creator's disclosure says AI assisted with the graphics and sounds. The
+  game was built with Phaser and entered in the AI Browser Game Jam 1, where it
+  placed sixth among 29 entries.
+play:
+  url: https://war3d.itch.io/esquadro-brics
+  embeddable: false
+  platforms:
+    - browser
+  controls:
+    - Keyboard
+    - Mouse
+creator:
+  name: war3d
+  handle: war3d
+  links:
+    - https://war3d.itch.io
+made:
+  models: []
+  tools: []
+  aiShare: some
+  source: AI Browser Game Jam rules (at least half of each game AI-generated) and
+    the itch.io game page
+  evidence: creator
+tech:
+  engine: phaser
+  multiplayer: single
+genres:
+  - strategy
+  - action
+jam:
+  event: ai-browser-game-jam-1
+  rank: 6
+  entries: 29
+media:
+  cover: games/black-code/cover
+  screenshots:
+    - games/black-code/shot-1
+    - games/black-code/shot-2
+dates:
+  added: 2026-09-30
+  updated: 2026-09-30
+status: live
+provenance:
+  foundVia: scout:aibgj-1

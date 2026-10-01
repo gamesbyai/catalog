@@ -1,0 +1,62 @@
+slug: charge-the-coil
+title: Charge The Coil
+tagline: Tap at the right moment to wind a glowing charge around a copper coil.
+description: >-
+  Charge The Coil is a one-button timing game. A live charge spins out from a
+  core and accelerates through a copper coil. The player releases it as it
+  reaches the contact port to add a winding. Release too early and the
+  connection breaks; wait too long and the coil overloads.
+
+
+  Perfect releases grow the charge faster and build a chain, and completing the
+  whole coil cashes the stored energy into a discharge bonus. Each winding gets
+  its own neon frequency, with matching plasma bursting off the coil when it
+  locks. Every point makes the next charge faster and tighter, and the best
+  score is saved.
+
+
+  Every new winding, successful lock, plasma burst and failure has its own sound
+  cue. The game was made for AI Browser Game Jam #4 with the theme Charge. The
+  creator states that concept and direction came from Thomas Geelens, with the
+  code and graphics built and iterated using AI-assisted coding and testing.
+play:
+  url: https://lifthillstudio.itch.io/charge-the-coil
+  embeddable: false
+  platforms:
+    - browser
+  controls:
+    - Tap/click
+    - Space
+    - Enter
+creator:
+  name: LifthillStudio
+  handle: lifthillstudio
+  links:
+    - https://lifthillstudio.itch.io
+made:
+  models: []
+  tools: []
+  aiShare: some
+  source: AI Browser Game Jam 4 rules (most of each game AI-generated) and the
+    itch.io game page
+  evidence: creator
+tech:
+  multiplayer: single
+genres:
+  - arcade
+  - casual
+jam:
+  event: ai-browser-game-jam-4
+  rank: 24
+  entries: 126
+media:
+  cover: games/charge-the-coil/cover
+  screenshots:
+    - games/charge-the-coil/shot-1
+    - games/charge-the-coil/shot-2
+dates:
+  added: 2026-09-30
+  updated: 2026-09-30
+status: live
+provenance:
+  foundVia: scout:aibgj-4

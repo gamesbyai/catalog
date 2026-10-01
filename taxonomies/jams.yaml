@@ -27,3 +27,31 @@ terms:
       - "https://vibejam.com/2026/"
       - "https://vibejam.com/2026/press"
       - "https://levels.io/vibe-jam-2026-winners-quality"
+  - slug: ai-browser-game-jam-1
+    name: AI Browser Game Jam 1
+    maker: Focaccai
+    url: "https://itch.io/jam/ai-browser-game-jam"
+    sources:
+      - "https://itch.io/jam/ai-browser-game-jam"
+      - "https://itch.io/jam/ai-browser-game-jam/results"
+  - slug: ai-browser-game-jam-2
+    name: AI Browser Game Jam 2
+    maker: Focaccai
+    url: "https://itch.io/jam/ai-game-jam-2"
+    sources:
+      - "https://itch.io/jam/ai-game-jam-2"
+      - "https://itch.io/jam/ai-game-jam-2/results"
+  - slug: ai-browser-game-jam-3
+    name: AI Browser Game Jam 3
+    maker: Focaccai
+    url: "https://itch.io/jam/ai-game-jam-3"
+    sources:
+      - "https://itch.io/jam/ai-game-jam-3"
+      - "https://itch.io/jam/ai-game-jam-3/results"
+  - slug: ai-browser-game-jam-4
+    name: AI Browser Game Jam 4
+    maker: Focaccai
+    url: "https://itch.io/jam/ai-jam-4"
+    sources:
+      - "https://itch.io/jam/ai-jam-4"
+      - "https://itch.io/jam/ai-jam-4/results"

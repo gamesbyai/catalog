@@ -1,0 +1,57 @@
+slug: star-crusade
+title: Star Crusade
+tagline: Shoot waves of alien ships in a retro space arcade battle.
+description: >-
+  Star Crusade is a retro arcade shooter written in plain JavaScript and drawn
+  on an HTML canvas. It follows the classic Galaga-style formula: you pilot a
+  ship through a space battle, fending off enemy formations and trying to
+  survive as long as you can while racking up points.
+
+
+  The project leans on old-school arcade design, with simple, readable action
+  and no framework or engine underneath. Because it is plain JavaScript, the
+  source is compact and easy to read, which makes it approachable for anyone who
+  wants to see how a small arcade shooter is put together.
+
+
+  The repository is tagged as vibe coding, and the project's listing names
+  ChatGPT and GitHub Copilot among the tools involved. The creator's own
+  statement about how each was used is not spelled out, so the tool credit comes
+  from the repository's metadata.
+play:
+  url: https://star-crusade.netlify.app
+  embeddable: true
+  platforms:
+    - browser
+repo: https://github.com/markets/star-crusade
+creator:
+  name: markets
+  handle: markets
+made:
+  models: []
+  providers:
+    - openai
+  tools:
+    - chatgpt
+    - github-copilot
+  aiShare: unknown
+  source: GitHub repository README
+  evidence: repo
+  evidenceUrl: https://github.com/markets/star-crusade
+tech:
+  engine: canvas
+  multiplayer: single
+genres:
+  - arcade
+  - shooter
+media:
+  cover: games/star-crusade/cover
+  screenshots:
+    - games/star-crusade/shot-1
+    - games/star-crusade/shot-2
+dates:
+  added: 2026-09-30
+  updated: 2026-09-30
+status: live
+provenance:
+  foundVia: scout:github

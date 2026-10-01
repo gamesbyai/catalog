@@ -1,0 +1,67 @@
+slug: framefrenzy
+title: FrameFrenzy
+tagline: Rebuild a scrambled sliding puzzle made from a YouTube video that keeps
+  playing.
+description: >-
+  FrameFrenzy turns any public YouTube link into a sliding tile puzzle. Choose a
+  3×3 or 4×4 grid, press Drop In, and slide tiles until the picture is back in
+  order. The round ends when the video does, so the footage itself is the clock.
+
+
+  Every tile is a live crop of the same moving clip, so there is no still image
+  to study. The picture you are chasing keeps changing, which makes the puzzle
+  about motion as much as shape. Finishing a round produces a shareable result
+  with time, move count, and a grid of green squares, plus a link a friend can
+  use to try the same video.
+
+
+  The creator says it was built with Claude Opus 4.6 and GitHub Copilot using
+  GPT-5.4. The code is open source on GitHub and the game is hosted on
+  Cloudflare Pages.
+play:
+  url: https://kevinloeffler.itch.io/framefrenzy
+  embeddable: false
+  platforms:
+    - browser
+  controls:
+    - Touch
+    - Mouse
+    - Arrow keys
+creator:
+  name: kevinloeffler
+  handle: kevinloeffler
+  links:
+    - https://kevinloeffler.itch.io
+made:
+  models:
+    - claude-opus-4-6
+    - gpt-5-4
+  providers:
+    - anthropic
+    - openai
+  tools:
+    - github-copilot
+  aiShare: unknown
+  source: AI Browser Game Jam 2 rules (at least half of each game AI-generated)
+    and the itch.io game page
+  evidence: creator
+tech:
+  multiplayer: single
+genres:
+  - puzzle
+  - casual
+jam:
+  event: ai-browser-game-jam-2
+  rank: 23
+  entries: 42
+media:
+  cover: games/framefrenzy/cover
+  screenshots:
+    - games/framefrenzy/shot-1
+    - games/framefrenzy/shot-2
+dates:
+  added: 2026-09-30
+  updated: 2026-09-30
+status: live
+provenance:
+  foundVia: scout:aibgj-2

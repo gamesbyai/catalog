@@ -1,0 +1,66 @@
+slug: void-wake-signal-reclamation
+title: "Void Wake: Signal Reclamation"
+tagline: Pilot a spaceship through 50 top-down levels of enemies and bosses.
+description: >-
+  Void Wake: Signal Reclamation is a top-down survivor-style space shooter that
+  runs in the browser. You play a pilot sent to find the source of a mysterious
+  broadcast called The Static, accompanied by VESPER, the ship's AI. The
+  campaign spans 50 levels across five sectors, with mini-bosses, main bosses,
+  and a finale, on Normal, Hard, or Nightmare difficulty.
+
+
+  Beyond the campaign, the game offers many ways to play: Endless Survival, a
+  5-Minute Blitz score attack, Boss Rush, and a Salvage Run where you decide
+  when to extract with your loot. Ghost Duel races a recording of your best run,
+  and Daily and Weekly Challenges use the same seeded run for every player with
+  leaderboards.
+
+
+  Salvage earned in the campaign unlocks ship styles, colors, and engine trails,
+  and you can switch between a neon vector look and painted ship art. A Codex
+  logs every ship, enemy, and boss, and a Hall of Fame tracks best runs.
+  Controller support covers Xbox and PlayStation pads, with remapping and
+  accessibility options. The creator's disclosure says AI assisted with code,
+  graphics, and sound.
+play:
+  url: https://oddbit-studios.itch.io/void-wake
+  embeddable: false
+  platforms:
+    - browser
+  controls:
+    - Keyboard and mouse
+    - Xbox controller
+    - PlayStation controller
+    - Remappable controls
+creator:
+  name: Oddbit Studios
+  handle: oddbit-studios
+  links:
+    - https://oddbit-studios.itch.io
+made:
+  models: []
+  tools: []
+  aiShare: some
+  source: AI Browser Game Jam 4 rules (most of each game AI-generated) and the
+    itch.io game page
+  evidence: creator
+tech:
+  multiplayer: single
+genres:
+  - shooter
+  - roguelike
+jam:
+  event: ai-browser-game-jam-4
+  rank: 57
+  entries: 126
+media:
+  cover: games/void-wake-signal-reclamation/cover
+  screenshots:
+    - games/void-wake-signal-reclamation/shot-1
+    - games/void-wake-signal-reclamation/shot-2
+dates:
+  added: 2026-09-30
+  updated: 2026-09-30
+status: live
+provenance:
+  foundVia: scout:aibgj-4

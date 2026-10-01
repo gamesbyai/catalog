@@ -1,0 +1,59 @@
+slug: night-drop
+title: Night Drop
+tagline: Fly a tiny delivery drone through a dark apartment without waking the cat
+description: >-
+  Night Drop is a 3D courier game that runs from a single HTML file. You pilot a
+  drone about the size of a cookie through a giant apartment at night, carrying
+  deliveries from place to place while keeping quiet enough that the household
+  cat stays asleep.
+
+
+  The scale is the hook: ordinary rooms become large spaces to cross, and the
+  sleeping cat turns a simple delivery route into a stealth problem. Flying
+  carefully matters as much as flying fast, since the goal is to finish the job
+  without disturbing anything.
+
+
+  The whole game is one self-contained page on GitHub, so it needs no install.
+  According to the creator's README, the room is built at load time from simple
+  shapes and canvas textures with three.js, with no model or image files. Grok
+  4.7 supplied the ideas and prompts, and Claude wrote the code.
+play:
+  url: https://gipppp121.github.io/buzzdrop
+  embeddable: true
+  platforms:
+    - browser
+repo: https://github.com/Gipppp121/buzzdrop
+license: MIT
+creator:
+  name: Gipppp121
+  handle: gipppp121
+made:
+  models:
+    - grok-4-7
+  providers:
+    - anthropic
+    - xai
+  tools:
+    - claude-ai
+  aiShare: unknown
+  source: GitHub repository README
+  evidence: repo
+  evidenceUrl: https://github.com/Gipppp121/buzzdrop
+tech:
+  engine: threejs
+  multiplayer: single
+genres:
+  - stealth
+  - simulation
+media:
+  cover: games/night-drop/cover
+  screenshots:
+    - games/night-drop/shot-1
+    - games/night-drop/shot-2
+dates:
+  added: 2026-09-30
+  updated: 2026-09-30
+status: live
+provenance:
+  foundVia: scout:github

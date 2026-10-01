@@ -1,0 +1,64 @@
+slug: technical-debt
+title: TECHNICAL DEBT
+tagline: Juggle groceries, debt, and clutter for a family chasing a vacation,
+  then restart.
+description: >-
+  TECHNICAL DEBT is a dark-comedy resource management game presented as a
+  cheerful imitation of an old family computer. After a layoff, you keep a
+  household afloat by buying groceries, keeping promises to Deborah and DJ, and
+  charging needs to earn PALM Points toward a beach getaway. Reaching 100,000
+  points ends a run.
+
+
+  Choices carry risk: pay more for reliable goods, or buy discount items that
+  may arrive late or barely count as goods. Purchases pile up at home, so you
+  sell extras through Baylist before the boxes fill every room. Declaring
+  bankruptcy is part of the design: the first one is meant to happen, and
+  permanent lessons carry into the next attempt.
+
+
+  The creator says Codex handled programming, testing, and content drafting,
+  with OpenAI image generation for artwork, Suno for music, and ElevenLabs for
+  sound sources edited by hand. It was made for AI Browser Game Jam 4 and ranked
+  third of 126 entries.
+play:
+  url: https://oblongoolong.itch.io/technical-debt
+  embeddable: false
+  platforms:
+    - browser
+  controls:
+    - Mouse or touch to choose actions
+    - Tabs to switch screens
+    - Menu bar for music, sound, CRT strength, reduced motion
+creator:
+  name: OblongOolong
+  handle: oblongoolong
+  links:
+    - https://oblongoolong.itch.io
+made:
+  models: []
+  tools: []
+  aiShare: most
+  source: AI Browser Game Jam 4 rules (most of each game AI-generated) and the
+    itch.io game page
+  evidence: creator
+tech:
+  multiplayer: single
+genres:
+  - management
+  - simulation
+jam:
+  event: ai-browser-game-jam-4
+  rank: 3
+  entries: 126
+media:
+  cover: games/technical-debt/cover
+  screenshots:
+    - games/technical-debt/shot-1
+    - games/technical-debt/shot-2
+dates:
+  added: 2026-09-30
+  updated: 2026-09-30
+status: live
+provenance:
+  foundVia: scout:aibgj-4

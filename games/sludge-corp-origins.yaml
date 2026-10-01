@@ -1,0 +1,59 @@
+slug: sludge-corp-origins
+title: "Sludge Corp: Origins"
+tagline: Grow an alien biomass from a petri dish into a company that buys the
+  solar system.
+description: >-
+  Sludge Corp: Origins is a corporate-horror incremental game. You play Subject
+  Alpha, an alien biomass growing inside a classified underground facility. You
+  spend Biomass on biological assets that produce more Biomass on their own,
+  then push outward through the facility until you reach the surface and the
+  wider world.
+
+
+  The game changes shape as it goes. Extracted DNA permanently mutates your
+  body, and you breed expendable Siege Spores to break down blast doors. A
+  Digester lets you feed huge amounts of Biomass into the core for a chance at
+  permanent artifacts. On the surface, a Market lets you sell your own flesh for
+  USD and buy up the planet. The tone is dark office-speak humor.
+
+
+  The creator states that the code, the procedural audio engine, and the design
+  logic were all built in collaboration with AI for a game jam. It runs in the
+  browser and placed 15th of 42 entries in AI Browser Game Jam 2.
+play:
+  url: https://vibeaxis.itch.io/sludge-corp-origins
+  embeddable: false
+  platforms:
+    - browser
+creator:
+  name: VibeAxis Games
+  handle: vibeaxis
+  links:
+    - https://vibeaxis.itch.io
+made:
+  models: []
+  tools: []
+  aiShare: most
+  source: AI Browser Game Jam 2 rules (at least half of each game AI-generated)
+    and the itch.io game page
+  evidence: creator
+tech:
+  multiplayer: single
+genres:
+  - idle
+  - management
+jam:
+  event: ai-browser-game-jam-2
+  rank: 15
+  entries: 42
+media:
+  cover: games/sludge-corp-origins/cover
+  screenshots:
+    - games/sludge-corp-origins/shot-1
+    - games/sludge-corp-origins/shot-2
+dates:
+  added: 2026-09-30
+  updated: 2026-09-30
+status: live
+provenance:
+  foundVia: scout:aibgj-2

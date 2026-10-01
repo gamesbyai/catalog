@@ -1,0 +1,66 @@
+slug: chronicles-of-the-fallen-realm
+title: Chronicles of the Fallen Realm
+tagline: Lead a party of heroes through turn-based battles to defeat the Shadow Lord.
+description: >-
+  Chronicles of the Fallen Realm is a dark fantasy turn-based RPG roguelite. You
+  choose from nine Hero classes and fight through the Fallen Realm across five
+  acts, with the Shadow Lord waiting at the end. Each run pushes deeper into the
+  dungeon through tactical battles, and a typical session lasts about half an
+  hour.
+
+
+  Defeat feeds progression: when a run ends, you carry the lessons into the next
+  one by upgrading your Heroes and building on their unique skills. The nine
+  classes give the party plenty of ways to be assembled, and the tactical combat
+  rewards planning around each Hero's abilities. The story-driven structure ties
+  the five acts together.
+
+
+  It runs in the browser and on Windows, and it accepts mouse, touchscreen, and
+  controller input, including Xbox and PlayStation pads. The creator's AI
+  disclosure says AI assisted with the code, graphics, and sounds. It was
+  entered in the AI Browser Game Jam 4.
+play:
+  url: https://cinderfall-games.itch.io/chronicles-of-the-fallen-realm
+  embeddable: false
+  platforms:
+    - browser
+  controls:
+    - Mouse
+    - Touchscreen
+    - Xbox controller
+    - PlayStation controller
+    - Gamepad
+creator:
+  name: Cinderfall Games
+  handle: cinderfall-games
+  links:
+    - https://cinderfall-games.itch.io
+made:
+  models: []
+  tools: []
+  aiShare: unknown
+  source: AI Browser Game Jam 4 rules (most of each game AI-generated) and the
+    itch.io game page
+  evidence: creator
+tech:
+  multiplayer: single
+genres:
+  - rpg
+  - roguelike
+  - strategy
+jam:
+  event: ai-browser-game-jam-4
+  rank: 35
+  entries: 126
+media:
+  cover: games/chronicles-of-the-fallen-realm/cover
+  screenshots:
+    - games/chronicles-of-the-fallen-realm/shot-1
+    - games/chronicles-of-the-fallen-realm/shot-2
+dates:
+  added: 2026-09-30
+  updated: 2026-09-30
+status: live
+provenance:
+  foundVia: scout:aibgj-4
