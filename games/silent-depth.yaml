@@ -1,0 +1,64 @@
+slug: silent-depth
+title: Silent Depth
+tagline: Hunt a convoy by sonar, fire one torpedo attack, then slip away from
+  the escorts.
+description: >-
+  You command a submarine that is powerful but nearly blind. Passive sonar is
+  how you search for a convoy, and each run is a short extraction roguelite. A
+  run follows one order: find the convoy, line up a torpedo attack, then get
+  away.
+
+
+  Raising the periscope or surfacing gives you information, but it also makes
+  you easier to detect. Periscope targeting is how you line up the shot, and the
+  convoy routes are procedurally generated, so each run sends you after a
+  different path.
+
+
+  Once you fire, escorts pursue you, and you have to disappear before they lock
+  onto your position. The creator built the game around surviving the pressure
+  after the shot rather than only sinking the ship, with one-hit tension
+  throughout.
+play:
+  url: https://silent-depth.gtdstudy.com
+  embeddable: true
+  platforms:
+    - browser
+    - mobile
+creator:
+  name: yibie
+  handle: yibie
+  x: yibie
+made:
+  models: []
+  providers:
+    - openai
+    - anthropic
+  tools:
+    - codex
+    - claude-code
+    - cursor
+  aiShare: most
+  source: Vibe Jam 2026 submission form
+  evidence: creator
+tech:
+  engine: threejs
+  multiplayer: single
+genres:
+  - strategy
+  - simulation
+jam:
+  event: vibe-jam-2026
+  rank: 688
+  entries: 945
+media:
+  cover: games/silent-depth/cover
+  screenshots:
+    - games/silent-depth/shot-1
+    - games/silent-depth/shot-2
+dates:
+  added: 2026-10-01
+  updated: 2026-10-01
+status: live
+provenance:
+  foundVia: scout:vibejam-2026

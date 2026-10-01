@@ -1,0 +1,69 @@
+slug: doombreaker-carnage
+title: "DOOMBREAKER: Carnage"
+tagline: Run through ten zones of demons with four guns, then beat each zone's boss.
+description: >-
+  Move with WASD, aim with the mouse, and click to fire. Each zone asks you to
+  kill every enemy on the level, then fight that zone's boss. Clear all ten
+  zones to finish the run.
+
+
+  You carry four weapons, switched with the number keys 1 to 4: pistol, shotgun,
+  chaingun and rocket launcher. Health, armor and ammo pickups are scattered
+  through the levels, and enemies get tougher as you go deeper. Space jumps,
+  Shift sprints, and the game supports strafe-jumping.
+
+
+  Levels are generated procedurally, so layouts change between runs. Each zone
+  has its own visual theme. The look is chunky pixel art with scanlines and CRT
+  effects, backed by chiptune-style audio. Pressing R restarts the run at any
+  point.
+
+
+  The mouse is recommended, and the game uses pointer lock. The page marks it as
+  version 1.0 and still under development. The creator credits AI assistance for
+  the code, graphics, sounds and text.
+play:
+  url: https://webxos.itch.io/doombreaker-carnage
+  embeddable: false
+  platforms:
+    - browser
+  controls:
+    - "WASD: move"
+    - "Mouse: look / aim"
+    - "Left click: fire"
+    - "1-4: switch weapons"
+    - "Space: jump"
+    - "Shift: sprint"
+    - "R: restart run"
+creator:
+  name: webXOS
+  handle: webxos
+  links:
+    - https://webxos.itch.io
+made:
+  models: []
+  tools: []
+  aiShare: unknown
+  source: AI Browser Game Jam 3 rules (at least half of each game AI-generated)
+    and the itch.io game page
+  evidence: creator
+tech:
+  multiplayer: single
+genres:
+  - shooter
+  - action
+jam:
+  event: ai-browser-game-jam-3
+  rank: 20
+  entries: 77
+media:
+  cover: games/doombreaker-carnage/cover
+  screenshots:
+    - games/doombreaker-carnage/shot-1
+    - games/doombreaker-carnage/shot-2
+dates:
+  added: 2026-10-01
+  updated: 2026-10-01
+status: live
+provenance:
+  foundVia: scout:aibgj-3

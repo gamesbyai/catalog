@@ -1,0 +1,64 @@
+slug: feast-for-the-eyes
+title: Feast for the Eyes
+tagline: Fetch the food that hungry eyes ask for, add extras, and earn tips for speed.
+description: >-
+  Hungry eyes want to be fed, and you are the one bringing the food. Each order
+  has to be filled correctly, because a wrong item counts as a mistake. Walk to
+  the objects in the 3D space and pick up what the eyes asked for.
+
+
+  Payment depends on how you serve. Delivering the requested food earns money.
+  Adding a napkin, cutlery or similar extras raises the price you can charge,
+  and a quick delivery earns a tip on top.
+
+
+  Movement uses WASD, and the left mouse button interacts with objects. The up
+  and down arrow keys raise or lower mouse sensitivity.
+
+
+  The creator came up with the idea, laid out the level and edited the textures.
+  Claude wrote nearly all of the code, ChatGPT produced the textures, and
+  ElevenLabs and Suno made the sounds. Gemini gave additional help. The creator
+  plans later updates with more maps, better textures and a story.
+play:
+  url: https://n8012.itch.io/feast-for-the-eyes
+  embeddable: false
+  platforms:
+    - browser
+  controls:
+    - "WASD: walk"
+    - "Left mouse button: interact with objects"
+    - "Arrow up / down: increase or decrease mouse sensitivity"
+creator:
+  name: N8012
+  handle: n8012
+  links:
+    - https://n8012.itch.io
+made:
+  models: []
+  tools: []
+  aiShare: most
+  source: AI Browser Game Jam 4 rules (most of each game AI-generated) and the
+    itch.io game page
+  evidence: creator
+tech:
+  engine: godot
+  multiplayer: single
+genres:
+  - simulation
+  - casual
+jam:
+  event: ai-browser-game-jam-4
+  rank: 51
+  entries: 126
+media:
+  cover: games/feast-for-the-eyes/cover
+  screenshots:
+    - games/feast-for-the-eyes/shot-1
+    - games/feast-for-the-eyes/shot-2
+dates:
+  added: 2026-10-01
+  updated: 2026-10-01
+status: live
+provenance:
+  foundVia: scout:aibgj-4

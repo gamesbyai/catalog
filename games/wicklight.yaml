@@ -1,0 +1,70 @@
+slug: wicklight
+title: Wicklight
+tagline: Steer a flame through a dark room where pillar shadows shelter the
+  shades hunting you.
+description: >-
+  You play a flame, and the shades hunting you die in light but are safe in
+  shadow. Lighting is recomputed from your position every frame, so each pillar
+  throws a wedge of darkness away from you. Shades can walk up that wedge
+  untouched.
+
+
+  Keep moving with the mouse, because standing still stops your shadows from
+  sweeping and gets you killed. Your light burns down over time. Wax that
+  refuels it is scattered in the dark, usually where you can't see it. Running
+  dry doesn't kill you, but it leaves your reach small while the room fills with
+  shades.
+
+
+  Holding the left button charges the flame, pulling the light inward and giving
+  up almost half your reach. Releasing sends it all outward in a flare that
+  ignites every shade it can actually see. The flare still stops at pillars, so
+  cover works against it too.
+
+
+  The game is scored, and a run lasts a few minutes. The creator describes it as
+  one rule with everything else following from it. The code, text and graphics
+  were made with heavy AI assistance, and the audio is synthesized live.
+play:
+  url: https://csaf.itch.io/wicklight
+  embeddable: false
+  platforms:
+    - browser
+  controls:
+    - "Mouse: steer the flame"
+    - "Hold left button: charge"
+    - "Release left button: flare"
+    - "M: mute"
+creator:
+  name: csaf
+  handle: csaf
+  links:
+    - https://csaf.itch.io
+made:
+  models: []
+  tools: []
+  aiShare: most
+  source: AI Browser Game Jam 4 rules (most of each game AI-generated) and the
+    itch.io game page
+  evidence: creator
+tech:
+  engine: gamemaker
+  multiplayer: single
+genres:
+  - survival
+  - action
+jam:
+  event: ai-browser-game-jam-4
+  rank: 46
+  entries: 126
+media:
+  cover: games/wicklight/cover
+  screenshots:
+    - games/wicklight/shot-1
+    - games/wicklight/shot-2
+dates:
+  added: 2026-10-01
+  updated: 2026-10-01
+status: live
+provenance:
+  foundVia: scout:aibgj-4

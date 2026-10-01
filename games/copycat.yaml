@@ -1,0 +1,65 @@
+slug: copycat
+title: Copycat
+tagline: Race a shadow cat across short black-and-white platform maps
+description: >-
+  You jump through short, dense platforming maps in a race against your own
+  shadow. Platforms, spikes, floating ledges, and collectible echoes are seeded
+  for each race, so a map feels familiar but shifts a little every time you play
+  it.
+
+
+  Space bar or a click makes you jump, and a second press gives you a double
+  jump with a barrel-roll and particle trail. You can grab onto edges, and jump
+  buffering forgives presses that come slightly early.
+
+
+  Echoes you collect feed into your final time. Ghost data is saved between
+  sessions, and local stats track wins, losses, your streak, and your best time.
+  Restarting is instant, with no menus in between.
+
+
+  The look is strict black and white, drawn in a one-bit style with scanlines
+  and light motion. It runs as a single HTML file on a 1200x600 canvas, with
+  sound effects from Web Audio and multi-touch handling for phones. The creator
+  lists it as under development, with more modes and shadow mechanics planned.
+play:
+  url: https://webxos.itch.io/copycat
+  embeddable: false
+  platforms:
+    - browser
+  controls:
+    - "Space bar: jump (press again to double jump)"
+    - "Click / tap: jump"
+creator:
+  name: webXOS
+  handle: webxos
+  links:
+    - https://webxos.itch.io
+made:
+  models: []
+  tools: []
+  aiShare: some
+  source: AI Browser Game Jam 4 rules (most of each game AI-generated) and the
+    itch.io game page
+  evidence: creator
+tech:
+  engine: canvas
+  multiplayer: single
+genres:
+  - platformer
+  - arcade
+jam:
+  event: ai-browser-game-jam-4
+  rank: 83
+  entries: 126
+media:
+  cover: games/copycat/cover
+  screenshots:
+    - games/copycat/shot-1
+    - games/copycat/shot-2
+dates:
+  added: 2026-10-01
+  updated: 2026-10-01
+status: live
+provenance:
+  foundVia: scout:aibgj-4
