@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 // Re-encodes captured PNGs and creators' own screenshots, uploads the variants to R2 and writes out/contact-sheet.md:
 //   node scripts/upload.mjs out/ [--dry-run] [--games <dir> | --entries-ref <git ref> [--base-ref <git ref>]] [--uploads <slugs>]
+//     [--only <slugs>] [--min-frames 1-3]   (re-captures: replace live images only with at least as many)
 // Runs in CI's upload job, which holds the R2 token. Everything in out/ came from a job that ran untrusted game
 // code, so it is only ever read as bytes: PNGs are decoded by sharp and re-encoded from raw pixels (no metadata, no
 // trailing bytes survive), failed.json is parsed as JSON, and nothing from out/ is executed or uploaded as-is.
@@ -162,31 +163,41 @@ function jamCell(jam) {
   return typeof placement === 'string' ? escapeText(placement, 40) : '—';
 }
 
+// Problems that leave the live images in place on purpose (upload --min-frames): not failures.
+export const KEPT = new Set(['too-few-frames', 'fewer-frames']);
+
 /**
  * Markdown contact sheet for a PR comment. `entries` are catalog entries (third-party text, all escaped);
- * `problems` maps slug → a short reason code for games without usable captures.
+ * `problems` maps slug → a short reason code for games without usable captures; `frames` maps slug → how many images
+ * (cover and screenshots) went up, so a cover-only capture is visible at a glance.
  */
-export function contactSheet(entries, baseUrl = MEDIA_URL, { problems = {}, version = Date.now().toString(36) } = {}) {
+export function contactSheet(entries, baseUrl = MEDIA_URL, { problems = {}, frames = {}, version = Date.now().toString(36) } = {}) {
   const base = String(baseUrl).replace(/\/+$/, '');
   if (!/^https:\/\/[a-z0-9.-]+(?::\d+)?(?:\/[a-z0-9._-]+)*$/i.test(base)) throw new Error('baseUrl must be a plain https URL');
   const games = entries.filter((e) => e && typeof e === 'object' && isSlug(e.slug));
   const problemOf = (slug) => (Object.hasOwn(problems, slug) ? (CODE.test(problems[slug]) ? problems[slug] : 'failed') : null);
-  const captured = games.filter((e) => !problemOf(e.slug)).length;
+  const framesOf = (slug) => (Object.hasOwn(frames, slug) && Number.isInteger(frames[slug]) && frames[slug] >= 1 && frames[slug] <= NAMES.length ? frames[slug] : null);
+  const captured = games.filter((e) => !problemOf(e.slug));
+  const complete = captured.filter((e) => framesOf(e.slug) === NAMES.length).length;
+  const short = captured.filter((e) => (framesOf(e.slug) ?? NAMES.length) < NAMES.length).length;
   const lines = [
-    `### Contact sheet: ${captured} of ${games.length} game${games.length === 1 ? '' : 's'} captured`,
+    `### Contact sheet: ${captured.length} of ${games.length} game${games.length === 1 ? '' : 's'} captured${Object.keys(frames).length ? `, ${complete} with both screenshots` : ''}`,
     '',
     'Entry text is shown as plain text.',
+    ...(short ? ['', `**${short} without both screenshots** (Frames below 3 of 3): their pages show fewer screenshots.`] : []),
     '',
-    '| Cover | Game | Made with | Engine | Genres | Jam rank | Embeddable | Play |',
-    '| --- | --- | --- | --- | --- | --- | --- | --- |',
+    '| Cover | Frames | Game | Made with | Engine | Genres | Jam rank | Embeddable | Play |',
+    '| --- | --- | --- | --- | --- | --- | --- | --- | --- |',
   ];
   for (const e of games) {
     const problem = problemOf(e.slug);
     const made = e.made && typeof e.made === 'object' ? e.made : {};
     const models = strings(made.models);
+    const n = framesOf(e.slug);
     const cells = [
       // Versioned: the same URL may be edge-cached from an earlier capture.
-      problem ? `no capture (${problem})` : `<img src="${base}/games/${e.slug}/cover-320.webp?v=${version}" width="160">`,
+      problem ? (KEPT.has(problem) ? `live images kept (${problem})` : `no capture (${problem})`) : `<img src="${base}/games/${e.slug}/cover-320.webp?v=${version}" width="160">`,
+      problem || !n ? '—' : n === NAMES.length ? `${n} of ${NAMES.length}` : `**${n} of ${NAMES.length}**`,
       `**${escapeText(typeof e.title === 'string' ? e.title : e.slug, 80)}**<br>\`${e.slug}\``,
       list([...strings(made.tools), ...(models.length ? models : strings(made.providers))]),
       typeof e.tech?.engine === 'string' ? escapeText(e.tech.engine, 60) : '—',
@@ -345,14 +356,31 @@ async function mapLimit(items, limit, fn) {
 }
 
 /**
+ * The images a game has live: the `names` of its ready marker on our media host (an older marker without `names` means
+ * all three), or null when it has none (404). Any other answer throws, so an outage never reads as "nothing live".
+ */
+export async function liveNames(slug, { fetchImpl = fetch, mediaUrl = MEDIA_URL } = {}) {
+  if (!isSlug(slug)) throw new Error('bad slug');
+  // A query the edge has never seen: the marker as it is now, not an edge-cached copy.
+  const res = await fetchImpl(`${mediaUrl}/games/${slug}/ready.json?live=${Date.now().toString(36)}`, { signal: AbortSignal.timeout(15_000) });
+  if (res.status === 404) return null;
+  if (!res.ok) throw new Error(`HTTP ${res.status}`);
+  const body = await res.json();
+  return Array.isArray(body?.names) ? body.names.filter((n) => NAMES.includes(n)) : [...NAMES];
+}
+
+/**
  * Processes out/<slug>/{cover,shot-1,shot-2}.png for every slug that has an entry, and the creator's screenshots
  * (fetched from `notifyUrl`'s origin with `notifyToken`) for every slug in `uploads` whose entry names them: n=1 is the
  * cover, n=2 shot-1, n=3 shot-2. Puts the variants (unless dryRun) and writes out/contact-sheet.md. Returns the
  * uploaded keys and a slug → problem map.
+ * `minFrames` (re-captures of live games): a capture replaces a game's live images only when it kept at least that
+ * many images and no fewer than are live now; otherwise the live images stay (problem too-few-frames/fewer-frames).
  */
-export async function runUpload({ outDir, gamesDir = join(ROOT, 'games'), entriesRef, baseRef, only, uploads = [], notifyUrl, notifyToken, fetchImpl = fetch, fetchBackoffMs = 1000, repoDir = ROOT, dryRun = false, baseUrl = MEDIA_URL, put = defaultPut, variantsDir, concurrency = 4, log = console.log } = {}) {
+export async function runUpload({ outDir, gamesDir = join(ROOT, 'games'), entriesRef, baseRef, only, uploads = [], minFrames, notifyUrl, notifyToken, fetchImpl = fetch, fetchBackoffMs = 1000, repoDir = ROOT, dryRun = false, baseUrl = MEDIA_URL, mediaUrl = MEDIA_URL, put = defaultPut, variantsDir, concurrency = 4, log = console.log } = {}) {
   if (only !== undefined && (!Array.isArray(only) || !only.every(isSlug))) throw new Error('invalid --only');
   if (!Array.isArray(uploads) || !uploads.every(isSlug)) throw new Error('invalid --uploads');
+  if (minFrames !== undefined && !(Number.isInteger(minFrames) && minFrames >= 1 && minFrames <= NAMES.length)) throw new Error('invalid --min-frames');
   const REF = /^[A-Za-z0-9][A-Za-z0-9._/-]{0,99}$/;
   if (entriesRef !== undefined && !REF.test(entriesRef)) throw new Error('invalid --entries-ref');
   if (baseRef !== undefined && (!REF.test(baseRef) || entriesRef === undefined)) throw new Error('invalid --base-ref (needs --entries-ref)');
@@ -378,6 +406,7 @@ export async function runUpload({ outDir, gamesDir = join(ROOT, 'games'), entrie
   };
   const vdir = variantsDir ?? mkdtempSync(join(tmpdir(), 'gamesbyai-variants-'));
   const uploaded = [];
+  const frameCount = {}; // slug → images that went up
 
   for (const slug of [...new Set([...captured, ...fromCreator])].sort()) {
     delete problems[slug]; // a fresh capture replaces an earlier failure
@@ -421,6 +450,27 @@ export async function runUpload({ outDir, gamesDir = join(ROOT, 'games'), entrie
     } else {
       // The cover is required; screenshots are uploaded when the capture got them.
       frames = NAMES.filter((name) => name === 'cover' || existsSync(join(outDir, slug, `${name}.png`))).map((name) => [name, () => readRegularFile(join(outDir, slug, `${name}.png`))]);
+      if (minFrames !== undefined) {
+        // A re-capture of a live game: never trade its images for fewer.
+        if (frames.length < minFrames) {
+          problems[slug] = 'too-few-frames';
+          log(`keep ${slug}: the capture kept ${frames.length} of ${NAMES.length} images, under --min-frames ${minFrames}; the live images stay`);
+          continue;
+        }
+        let live;
+        try {
+          live = await liveNames(slug, { fetchImpl, mediaUrl });
+        } catch (e) {
+          problems[slug] = 'live-unknown';
+          log(`FAIL ${slug}: could not read the live ready.json (${String(e?.message ?? e).slice(0, 120)}); nothing replaced`);
+          continue;
+        }
+        if (live && live.length > frames.length) {
+          problems[slug] = 'fewer-frames';
+          log(`keep ${slug}: the capture kept ${frames.length} images, ${live.length} are live; the live images stay`);
+          continue;
+        }
+      }
     }
     const names = frames.map(([name]) => name);
     const variants = [];
@@ -453,22 +503,25 @@ export async function runUpload({ outDir, gamesDir = join(ROOT, 'games'), entrie
     if (failedPut) {
       problems[slug] = 'upload-failed';
       log(`FAIL ${slug}: upload failed (${String(failedPut.error?.message ?? failedPut.error).slice(0, 300)})`);
-    } else log(`${dryRun ? 'ready' : 'ok   '} ${slug} (${variants.length} files${upload ? ", the creator's screenshots" : ''})`);
+    } else {
+      frameCount[slug] = names.length;
+      log(`${dryRun ? 'ready' : 'ok   '} ${slug} (${variants.length} files, ${names.length} of ${NAMES.length} images${upload ? ", the creator's screenshots" : ''})`);
+    }
   }
 
   const slugs = [...new Set([...captured, ...fromCreator, ...Object.keys(problems)])].sort();
   const sheet = contactSheet(
     slugs.map((slug) => ({ ...(entryOf(slug) ?? {}), slug })),
     baseUrl,
-    { problems },
+    { problems, frames: frameCount },
   );
   writeFileSync(join(outDir, 'contact-sheet.md'), sheet);
-  return { uploaded, problems, variantsDir: vdir, sheet };
+  return { uploaded, problems, frames: frameCount, variantsDir: vdir, sheet };
 }
 
 if (process.argv[1] === fileURLToPath(import.meta.url)) {
   const usage = () => {
-    console.error('usage: node scripts/upload.mjs <out-dir> [--dry-run] [--games <dir> | --entries-ref <git ref>] [--uploads <slugs>]');
+    console.error('usage: node scripts/upload.mjs <out-dir> [--dry-run] [--games <dir> | --entries-ref <git ref> [--base-ref <git ref>]] [--only <slugs>] [--uploads <slugs>] [--min-frames 1-3]');
     process.exit(2);
   };
   const args = process.argv.slice(2);
@@ -481,7 +534,10 @@ if (process.argv[1] === fileURLToPath(import.meta.url)) {
     else if (args[i] === '--base-ref') opts.baseRef = args[++i] ?? usage();
     else if (args[i] === '--only') opts.only = (args[++i] ?? usage()).split(/[\s,]+/).filter(Boolean);
     else if (args[i] === '--uploads') opts.uploads = (args[++i] ?? usage()).split(/[\s,]+/).filter(Boolean);
-    else if (args[i].startsWith('--')) usage();
+    else if (args[i] === '--min-frames') {
+      const n = args[++i] ?? usage();
+      opts.minFrames = /^[1-3]$/.test(n) ? Number(n) : usage();
+    } else if (args[i].startsWith('--')) usage();
     else positional.push(args[i]);
   }
   if (positional.length !== 1) usage();
@@ -497,6 +553,9 @@ if (process.argv[1] === fileURLToPath(import.meta.url)) {
   const failed = Object.entries(res.problems);
   console.log(`${res.uploaded.length} files ${opts.dryRun ? 'ready (dry run, nothing uploaded)' : 'uploaded'}; variants in ${res.variantsDir}`);
   if (failed.length) console.log(`problems: ${failed.map(([s, p]) => `${s} (${p})`).join(', ')}`);
+  // A game that goes up without both screenshots is not a failure, but the run page says so.
+  const short = Object.entries(res.frames).filter(([, n]) => n < 3);
+  if (short.length) console.log(`::warning title=Fewer than 3 images::${short.length} games without both screenshots: ${short.map(([s, n]) => `${s} (${n})`).join(', ')}`);
   console.log(`contact sheet: ${join(positional[0], 'contact-sheet.md')}`);
   process.exit(failed.some(([, p]) => p === 'upload-failed') ? 1 : 0);
 }

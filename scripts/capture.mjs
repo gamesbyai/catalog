@@ -3,11 +3,14 @@
 // Game pages are untrusted code. This runs only in CI's capture job, which has no secrets and a read-only token.
 // Every game gets a fresh browser context, a hard deadline kept by Node (not by Playwright), and nothing
 // from the page is ever read back except the pixels of the screenshots, and on itch.io the address of the game's
-// own frame, which must match itch's CDN pattern (itchFrame).
+// own frame, which must match itch's CDN pattern (itchFrame). The opt-in start step (CAPTURE_START, startGame) also
+// asks the page whether a Start or Play button or a name field is visible; those answers only decide a click and
+// are never saved or logged.
 // Games whose creator sent screenshots with the submission (provenance.uploads) are never captured; the upload job
 // fetches those instead. node scripts/capture.mjs --split <slug-list file> prints { capture, uploads } for the workflow.
-import { mkdirSync, rmSync, rmdirSync, writeFileSync, readFileSync, existsSync } from 'node:fs';
-import { join } from 'node:path';
+import { mkdirSync, mkdtempSync, rmSync, rmdirSync, writeFileSync, readFileSync, existsSync, copyFileSync } from 'node:fs';
+import { tmpdir } from 'node:os';
+import { basename, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { parse } from 'yaml';
 import { chromium } from 'playwright';
@@ -21,6 +24,15 @@ const ROOT = fileURLToPath(new URL('..', import.meta.url));
 export const DEFAULTS = {
   // ms after load. More frames than we keep: pickFrames drops loading and black screens and keeps the best three.
   times: [2500, 5000, 8000, 11500, 15000],
+  // The start step (opt-in, `start: true`): one frame at times[0], then startGame, then these frames (ms after the
+  // start step) with a little play input between them. The deadline grows by startExtra.
+  start: false,
+  startTimes: [1500, 4000, 7000, 10500, 14000],
+  startExtra: 25_000,
+  holdMs: 700, // how long a movement key is held between frames
+  startRounds: 3, // menus behind menus: Play, then a mode, then a character
+  startPause: 1200, // after each start click, for the next screen to appear
+  startBudget: 15_000, // the whole start step
   navTimeout: 20_000,
   deadline: 70_000, // per game, from start to files on disk
   shotTimeout: 15_000, // WebGL games render in software on CI runners (no GPU), so frames can be slow
@@ -136,22 +148,25 @@ const thumbDiff = (a, b) => {
 /**
  * Picks the frames worth showing: drops near-black, near-white and flat frames (loading screens, blank canvases),
  * orders the rest by detail (entropy), and skips near-duplicates. Returns up to `max` PNG buffers, best first.
+ * The first `preferred` frames (the start step's frames after the menu) rank before the rest, whatever their detail:
+ * a busy menu full of text would otherwise win the cover over the game behind it.
  */
-export async function pickFrames(frames, { max = 3 } = {}) {
+export async function pickFrames(frames, { max = 3, preferred = frames.length } = {}) {
   const info = await Promise.all(
-    frames.map(async (buf) => {
+    frames.map(async (buf, i) => {
       const stats = await sharp(buf).stats();
       const rgb = stats.channels.slice(0, 3);
       const mean = rgb.reduce((s, c) => s + c.mean, 0) / rgb.length;
       const sd = rgb.reduce((s, c) => s + c.stdev, 0) / rgb.length;
       const thumb = await sharp(buf).resize(32, 18, { fit: 'fill' }).greyscale().raw().toBuffer();
-      return { buf, mean, sd, entropy: stats.entropy, thumb };
+      return { buf, mean, sd, entropy: stats.entropy, thumb, tier: i < preferred ? 0 : 1 };
     }),
   );
-  let usable = info.filter((f) => f.mean >= 18 && f.mean <= 245 && f.sd >= 12 && f.entropy >= 3).sort((a, b) => b.entropy - a.entropy);
+  const order = (a, b) => a.tier - b.tier || b.entropy - a.entropy;
+  let usable = info.filter((f) => f.mean >= 18 && f.mean <= 245 && f.sd >= 12 && f.entropy >= 3).sort(order);
   // Dark games: when no frame passes, one dark title screen with real content (a logo or a menu, not a spinner on
   // black) still beats no cover.
-  if (!usable.length) usable = info.filter((f) => f.mean <= 250 && f.sd >= 8 && f.entropy >= 1.5).sort((a, b) => b.entropy - a.entropy).slice(0, 1);
+  if (!usable.length) usable = info.filter((f) => f.mean <= 250 && f.sd >= 8 && f.entropy >= 1.5).sort(order).slice(0, 1);
   const kept = [];
   for (const f of usable) {
     if (kept.some((k) => thumbDiff(k.thumb, f.thumb) < 6)) continue;
@@ -188,6 +203,111 @@ export function throttleFrames(win, gap) {
   };
 }
 
+// The start step. Most games that kept a single frame sat on a title, menu or name-entry screen: the centre click and
+// Enter of the plain schedule don't press a Play button off-centre, so every frame was the same menu and the
+// near-duplicate check kept one. With `start: true` the capture presses the game's own Start or Play button, found by
+// its accessible name or its whole visible text, types a placeholder name into a name field, and plays a little
+// (movement keys, a click) between frames. Nothing the page says is saved or logged: the page is only asked whether
+// such an element is visible, and links are never followed (they can lead off the game).
+const phrase = (words) => new RegExp(`^[\\W_]*(?:${words.join('|')})[\\W_]*$`, 'i');
+/** Buttons that start a game, matched against the whole name or text (arrows and punctuation around it ignored). */
+export const START_NAMES = phrase([
+  'play', 'start', 'play now', 'play game', 'play the game', 'start game', 'start the game', 'new game', 'start run', 'new run',
+  'begin', 'begin game', 'begin run', 'begin adventure', 'begin journey', 'launch', 'launch game', 'launch mission', 'quick ?play',
+  'single ?player', 'solo', 'play solo', 'play offline', 'play as guest', 'play (?:vs|against) (?:cpu|ai|computer|bots?)', 'vs (?:cpu|ai)',
+  "let[\\u2019']?s (?:go|play)", '(?:click|tap|press) (?:here |anywhere )?to (?:start|play|begin)', 'press start', 'start (?:adventure|mission|playing|now|demo)',
+  'enter (?:the )?game', 'run game', 'dive in', 'drop in', 'jump in', 'insert coin',
+]);
+/** Second-screen buttons (after a name or a mode): pressed only when no start button is visible. */
+export const NEXT_NAMES = phrase(['continue', 'join', 'join game', 'enter', 'go', 'fight', 'ok', 'okay', 'got it', 'skip', 'skip intro', 'next', 'ready', "i[\\u2019']?m ready", 'deploy', 'embark']);
+/** A name field: its label or placeholder asks for a name. */
+export const NAME_FIELD = /\bnick(?:name)?\b|\b(?:user ?)?name\b|\bcall ?sign\b|who are you/i;
+export const PLAYER_NAME = 'Player';
+
+/** Between post-start frames: hold movement keys (arrows and WASD), jump or shoot, and move the mouse. */
+const PLAY_STEPS = [
+  { keys: ['ArrowRight', 'KeyD'] },
+  { keys: ['ArrowUp', 'KeyW'], press: 'Space' },
+  { keys: ['ArrowLeft', 'KeyA'], click: [0.62, 0.42] },
+  { keys: ['ArrowDown', 'KeyS'], press: 'Space' },
+];
+
+/**
+ * Clicks the first visible element whose accessible name (buttons) or whole text (anything that isn't a link) matches
+ * `names`. Returns true after a click. Every call is bounded by `o.clickTimeout`, the whole search by `until` (a time);
+ * `guard` keeps the capture deadline.
+ */
+async function clickByName(page, names, o, guard, until) {
+  const tries = [page.getByRole('button', { name: names }), page.getByText(names)];
+  for (const [i, all] of tries.entries()) {
+    if (Date.now() > until) return false;
+    const loc = all.filter({ visible: true });
+    const n = Math.min(await guard(within(loc.count(), o.clickTimeout, 0)), 3);
+    for (let k = 0; k < n && Date.now() <= until; k++) {
+      const el = loc.nth(k);
+      // Text matches can sit inside a link; a link to another page is never clicked (a "#" or script link is a button).
+      if (i === 1 && !(await guard(within(el.evaluate((e) => !e.closest('a[href]:not([href^="#"]):not([href^="javascript:"])')), o.clickTimeout, false)))) continue;
+      if (await guard(within(el.click({ timeout: o.clickTimeout }).then(() => true), o.clickTimeout + 500, false))) return true;
+    }
+  }
+  return false;
+}
+
+/**
+ * Gets past a title, menu or name-entry screen: fills a visible name field once, then presses a start button (or, when
+ * none is visible, a continue/join button), up to `o.startRounds` times within `o.startBudget` ms. A canvas title
+ * screen gets the centre click and Enter of the plain schedule instead, after which a DOM menu may appear. Never throws
+ * except for the deadline.
+ */
+export async function startGame(page, o, guard, signal) {
+  const until = Date.now() + o.startBudget;
+  const pause = (ms) => guard(sleep(ms, signal));
+  const centre = async () => {
+    await guard(within(page.mouse.click(o.viewport.width / 2, o.viewport.height / 2), o.clickTimeout));
+    await guard(within(page.keyboard.press('Enter'), o.clickTimeout));
+  };
+  let named = false;
+  let canvasTried = false;
+  for (let round = 0; round < o.startRounds && Date.now() <= until; round++) {
+    if (!named) {
+      const field = page.getByRole('textbox', { name: NAME_FIELD }).or(page.getByPlaceholder(NAME_FIELD)).and(page.locator('input:not([type="email"]):not([type="search"])')).filter({ visible: true }).first();
+      if (await guard(within(field.count(), o.clickTimeout, 0))) {
+        named = await guard(within(field.fill(PLAYER_NAME, { timeout: o.clickTimeout }).then(() => true), o.clickTimeout + 500, false));
+      }
+    }
+    if ((await clickByName(page, START_NAMES, o, guard, until)) || (await clickByName(page, NEXT_NAMES, o, guard, until))) {
+      await pause(o.startPause);
+      continue;
+    }
+    if (named && round === 0) {
+      // A name field whose form submits on Enter.
+      await guard(within(page.keyboard.press('Enter'), o.clickTimeout));
+      await pause(o.startPause);
+      continue;
+    }
+    if (canvasTried) break;
+    canvasTried = true;
+    await centre();
+    await pause(o.startPause);
+  }
+  // Focus the game for the play input that follows.
+  if (!canvasTried) await guard(within(page.mouse.click(o.viewport.width / 2, o.viewport.height / 2), o.clickTimeout));
+}
+
+/** Play input between post-start frames: step i of PLAY_STEPS. */
+async function playInput(page, i, o, guard, signal) {
+  const step = PLAY_STEPS[i % PLAY_STEPS.length];
+  const { width, height } = o.viewport;
+  if (step.click) {
+    await guard(within(page.mouse.move(width * step.click[0], height * step.click[1], { steps: 4 }), o.clickTimeout));
+    await guard(within(page.mouse.click(width * step.click[0], height * step.click[1]), o.clickTimeout));
+  }
+  for (const k of step.keys) await guard(within(page.keyboard.down(k), o.clickTimeout));
+  await guard(sleep(o.holdMs, signal));
+  for (const k of step.keys) await guard(within(page.keyboard.up(k), o.clickTimeout));
+  if (step.press) await guard(within(page.keyboard.press(step.press), o.clickTimeout));
+}
+
 /**
  * Captures cover.png, shot-1.png and shot-2.png of one game into outDir.
  * @returns {Promise<{ ok: true, files: string[] } | { ok: false, reason: string, detail?: string }>}
@@ -213,11 +333,15 @@ export async function captureOne(url, outDir, opts = {}) {
     if (over) return Promise.reject(new CaptureError('deadline'));
     return Promise.race([p, failed]);
   };
-  const deadline = setTimeout(() => fail('deadline', `no result after ${o.deadline} ms`), o.deadline);
+  const start = o.start === true;
+  const limit = o.deadline + (start ? o.startExtra : 0);
+  const deadline = setTimeout(() => fail('deadline', `no result after ${limit} ms`), limit);
   const stop = new AbortController();
 
   // Frames taken so far live outside `work`, so a deadline or a frozen page after the cover still keeps the cover.
-  const state = { context: null, finished: false, shots: [], timedOut: false };
+  // With the start step, `before` holds the frame taken before it (the menu), used only when nothing after it is.
+  const state = { context: null, finished: false, shots: [], before: [], timedOut: false };
+  const pick = () => pickFrames([...state.shots, ...state.before], { preferred: state.shots.length });
   const work = async () => {
     const b = await guard(
       getBrowser(o.sandbox).catch((e) => {
@@ -291,23 +415,44 @@ export async function captureOne(url, outDir, opts = {}) {
       }
     }
 
-    const t0 = Date.now();
-    const shots = state.shots;
-    for (let i = 0; i < o.times.length; i++) {
-      await guard(sleep(t0 + o.times[i] - Date.now(), stop.signal));
-      // A busy renderer can miss one frame deadline; one retry before giving up on the game.
-      let shot;
-      for (let attempt = 0; attempt < 2 && !shot; attempt++) {
+    // One frame. A busy renderer can miss one frame deadline; one retry before giving up on the game. Null when the
+    // game stopped answering after earlier frames (those may be enough; later ones are a bonus).
+    const snap = async () => {
+      for (let attempt = 0; ; attempt++) {
         try {
-          shot = await guard(page.screenshot({ type: 'png', timeout: o.shotTimeout }));
+          return await guard(page.screenshot({ type: 'png', timeout: o.shotTimeout }));
         } catch (e) {
           if (e instanceof CaptureError || attempt === 1) {
-            if (i > 0) { state.timedOut = true; return shots; } // earlier frames may be enough; later ones are a bonus
+            if (state.shots.length || state.before.length) {
+              state.timedOut = true;
+              return null;
+            }
             throw e instanceof CaptureError ? e : new CaptureError('screenshot', firstLine(e));
           }
         }
       }
-      shots.push(shot);
+    };
+
+    const t0 = Date.now();
+    if (start) {
+      await guard(sleep(t0 + o.times[0] - Date.now(), stop.signal));
+      state.before.push(await snap());
+      await startGame(page, o, guard, stop.signal);
+      const t1 = Date.now();
+      for (let i = 0; i < o.startTimes.length; i++) {
+        await guard(sleep(t1 + o.startTimes[i] - Date.now(), stop.signal));
+        const shot = await snap();
+        if (!shot) return;
+        state.shots.push(shot);
+        if (i < o.startTimes.length - 1) await playInput(page, i, o, guard, stop.signal);
+      }
+      return;
+    }
+    for (let i = 0; i < o.times.length; i++) {
+      await guard(sleep(t0 + o.times[i] - Date.now(), stop.signal));
+      const shot = await snap();
+      if (!shot) return;
+      state.shots.push(shot);
       if (i === 0) {
         // One click in the centre starts games that wait for input…
         await guard(within(page.mouse.click(o.viewport.width / 2, o.viewport.height / 2), o.clickTimeout));
@@ -316,16 +461,15 @@ export async function captureOne(url, outDir, opts = {}) {
         await guard(within(page.keyboard.press('Enter'), o.clickTimeout));
       }
     }
-    return shots;
   };
 
   let result;
   try {
     const running = work();
     running.catch(() => {});
-    const shots = await guard(running);
+    await guard(running);
     // The best frames only: a loading screen or a black canvas never becomes a cover.
-    const picked = await pickFrames(shots);
+    const picked = await pick();
     // Only black frames before a screenshot timeout: the game is slow, not blank, so the throttled pass gets a turn.
     if (!picked.length) throw state.timedOut ? new CaptureError('screenshot', 'frames timed out after a blank start') : new CaptureError('blank', 'every frame was black, blank or a loading screen');
     mkdirSync(outDir, { recursive: true });
@@ -334,7 +478,7 @@ export async function captureOne(url, outDir, opts = {}) {
   } catch (e) {
     cleanup();
     const froze = e instanceof CaptureError && (e.reason === 'deadline' || e.reason === 'screenshot');
-    const keep = froze && state.shots.length ? await pickFrames(state.shots.slice()) : [];
+    const keep = froze && (state.shots.length || state.before.length) ? await pick() : [];
     if (keep.length) {
       // The game froze or ran out of time after some good frames: keep those.
       mkdirSync(outDir, { recursive: true });
@@ -427,15 +571,55 @@ export async function captureSlugs(slugs, { root = ROOT, out = join(root, 'out')
           const again = await run({ ...opts, itchPage: true });
           if (again.ok) res = { ...again, itchPage: true };
         }
+        // start: 'retry'. A game that kept fewer than three frames (usually a menu that never changed) or only blank
+        // ones gets one more pass with the start step, in a scratch folder; the pass that kept more frames wins.
+        const kept = res.ok ? res.files.length : 0;
+        if (opts.start === 'retry' && (res.ok ? kept < NAMES.length : res.reason === 'blank') && Date.now() - batchStart < budgetMs) {
+          log(`     ${slug}: ${res.ok ? `${kept} of ${NAMES.length} frames` : res.reason}, retry with the start step`);
+          const scratch = mkdtempSync(join(tmpdir(), 'capture-start-'));
+          const again = await captureOne(url, join(scratch, slug), { ...opts, start: true, ...(res.throttled ? { throttle: true } : {}), ...(res.itchPage ? { itchPage: true } : {}) }).catch((e) => ({ ok: false, reason: 'error', detail: firstLine(e) }));
+          if (again.ok && again.files.length > kept) {
+            for (const n of NAMES) rmSync(join(out, slug, `${n}.png`), { force: true });
+            mkdirSync(join(out, slug), { recursive: true });
+            const files = again.files.map((f) => {
+              const to = join(out, slug, basename(f));
+              copyFileSync(f, to);
+              return to;
+            });
+            res = { ...again, files, started: true };
+          }
+          rmSync(scratch, { recursive: true, force: true });
+        }
       }
     }
     const name = SLUG.test(slug) ? slug : '(invalid)';
     if (!res.ok) appendFailure(out, { slug: name, reason: res.reason, ...(res.detail ? { detail: res.detail } : {}) });
     if (res.skipped) log(`skip ${name}: the creator sent screenshots`);
-    else log(`${res.ok ? 'ok  ' : 'FAIL'} ${name} (${((Date.now() - started) / 1000).toFixed(1)} s)${res.ok ? '' : `: ${res.reason}`}`);
+    else log(`${res.ok ? 'ok  ' : 'FAIL'} ${name} (${((Date.now() - started) / 1000).toFixed(1)} s${res.ok ? `, ${res.files.length} of ${NAMES.length} frames` : ''})${res.ok ? '' : `: ${res.reason}`}`);
     results.push({ slug: name, ...res });
   }
   return results;
+}
+
+/**
+ * CAPTURE_START: 'true' runs the start step for every game; 'retry' only for games whose plain capture kept fewer than
+ * three frames or only blank ones. Anything else: off.
+ */
+export function startOptions(value) {
+  const v = String(value ?? '').trim().toLowerCase();
+  if (['true', '1', 'yes'].includes(v)) return { start: true };
+  if (v === 'retry') return { start: 'retry' };
+  return {};
+}
+
+/** The run's closing lines: counts, and a GitHub warning naming every game captured with fewer than three frames. */
+export function summary(results) {
+  const captured = results.filter((r) => r.ok && !r.skipped);
+  const short = captured.filter((r) => r.files.length < NAMES.length);
+  const lines = [`captured ${captured.length} of ${results.length}, ${captured.length - short.length} with all ${NAMES.length} frames`];
+  // Partial captures go live without screenshots; the run page must say so (a short capture is not a failure).
+  if (short.length) lines.push(`::warning title=Fewer than ${NAMES.length} frames::${short.length} games: ${short.map((r) => `${r.slug} (${r.files.length})`).join(', ')}`);
+  return lines;
 }
 
 /**
@@ -462,9 +646,9 @@ if (process.argv[1] === fileURLToPath(import.meta.url)) {
     console.error('usage: node scripts/capture.mjs <slug…>');
     process.exit(2);
   }
-  const results = await captureSlugs(slugs, waitOptions(process.env.CAPTURE_WAIT));
+  const results = await captureSlugs(slugs, { ...waitOptions(process.env.CAPTURE_WAIT), ...startOptions(process.env.CAPTURE_START) });
   await closeBrowser();
-  console.log(`captured ${results.filter((r) => r.ok && !r.skipped).length} of ${results.length}`);
+  for (const line of summary(results)) console.log(line);
   // Failed games are expected and logged; a browser that never starts is a broken runner.
   process.exit(results.some((r) => r.reason === 'browser') && !results.some((r) => r.ok && !r.skipped) ? 1 : 0);
 }

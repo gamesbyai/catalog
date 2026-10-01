@@ -71,12 +71,42 @@ const PAGES = {
     addEventListener('beforeunload', (e) => { e.preventDefault(); e.returnValue = ''; });
     addEventListener('load', () => setInterval(() => { alert('hi'); confirm('ok?'); prompt('name?'); }, 10));
   </script>`),
+  // Title screens like most games that kept one frame: a still scene behind a magenta menu whose Play button sits
+  // off-centre, so the plain schedule's centre click and Enter never start the game.
+  '/menu': menuPage(`<button style="position:absolute;left:40px;bottom:40px;font-size:40px" onclick="startGame()">&#9654; PLAY</button>
+    <button style="position:absolute;left:40px;bottom:120px;font-size:30px">Settings</button>`),
+  // A name-entry screen: Join stays disabled until the name field has text.
+  '/name-entry': menuPage(`<input id="n" placeholder="Enter your nickname" style="position:absolute;left:40px;top:40px;font-size:30px">
+    <button id="j" disabled style="position:absolute;left:40px;bottom:40px;font-size:40px" onclick="startGame()">Join</button>
+    <script>document.getElementById('n').addEventListener('input', (e) => { document.getElementById('j').disabled = !e.target.value.trim(); });</script>`),
+  // A text-only menu (no button role) with a link to another page called "Play" before it: the link is never followed.
+  '/text-menu': menuPage(`<a href="/elsewhere" style="position:absolute;left:40px;top:40px;font-size:30px;color:#fff">Play</a>
+    <div style="position:absolute;left:40px;bottom:40px;font-size:40px;color:#fff;cursor:pointer" onclick="startGame()">PLAY</div>`),
+  '/link-only': menuPage(`<a href="/elsewhere" style="position:absolute;left:40px;bottom:40px;font-size:40px;color:#fff">Play</a>`),
 };
+
+// The scene behind the menus: still until startGame(); after that it scrolls only while arrow or WASD keys are held.
+function menuPage(menu) {
+  return html(`<canvas id="c" width="1280" height="720" style="position:fixed;inset:0"></canvas>
+    <div id="menu" style="position:fixed;left:60px;top:80px;width:500px;height:560px;background:#f0f">${menu}</div>
+    <script>
+    const g = document.getElementById('c').getContext('2d');
+    let x = 0, y = 0, vx = 0, vy = 0, on = false;
+    const draw = () => { for (let i = 0; i < 1280; i += 40) for (let j = 0; j < 720; j += 40) { g.fillStyle = 'hsl(' + ((i + j * 3 + x * 2 + y * 5) % 360) + ' 70% ' + (25 + ((i * j + x * 3 + y * 7) % 45)) + '%)'; g.fillRect(i, j, 40, 40); } };
+    draw();
+    const keys = { ArrowRight: [12, 0], KeyD: [12, 0], ArrowLeft: [-12, 0], KeyA: [-12, 0], ArrowUp: [0, -12], KeyW: [0, -12], ArrowDown: [0, 12], KeyS: [0, 12] };
+    addEventListener('keydown', (e) => { if (on && keys[e.code]) [vx, vy] = keys[e.code]; });
+    addEventListener('keyup', (e) => { if (keys[e.code]) vx = vy = 0; });
+    window.startGame = () => { if (on) return; on = true; document.getElementById('menu').remove(); (function frame() { x += vx; y += vy; draw(); requestAnimationFrame(frame); })(); };
+    </script>`);
+}
 
 let server;
 let base;
+const hits = { elsewhere: 0 };
 before(async () => {
   server = createServer((req, res) => {
+    if (req.url === '/elsewhere') hits.elsewhere++;
     if (req.url === '/download') {
       res.writeHead(200, { 'content-type': 'application/octet-stream', 'content-disposition': 'attachment; filename="game.exe"' });
       return res.end('MZ not really a program');
@@ -483,6 +513,26 @@ test('the capture workflow: the capture job holds no secrets and skips uploaded 
   assert.match(wf.jobs.upload.if, /needs\.capture\.outputs\.uploads != ''/);
 });
 
+test('the capture workflow: start step and min_frames inputs, parallel re-capture chunks, uploads from current main', async () => {
+  const { parse } = await import('yaml');
+  const wf = parse(readFileSync('.github/workflows/capture.yml', 'utf8'));
+  const inputs = wf.on.workflow_dispatch.inputs;
+  assert.ok(inputs.start && inputs.min_frames && inputs.slugs);
+  const capture = wf.jobs.capture.steps.find((s) => s.name === 'Capture');
+  assert.equal(capture.env.CAPTURE_START, '${{ inputs.start || vars.CAPTURE_START }}');
+  // Chunks of a re-capture must not cancel each other; PR runs still replace their earlier run.
+  assert.match(wf.concurrency.group, /github\.event\.pull_request\.number \|\| \(inputs\.slugs && github\.run_id\) \|\| inputs\.branch/);
+  assert.equal(wf.concurrency['cancel-in-progress'], true);
+  // The upload job runs main's current code, never the PR head or a stale base commit.
+  assert.equal(wf.jobs.upload.steps.find((s) => s.uses?.startsWith('actions/checkout')).with.ref, 'main');
+  const step = wf.jobs.upload.steps.find((s) => s.id === 'upload');
+  assert.equal(step.env.MIN_FRAMES, '${{ inputs.min_frames }}');
+  const [check, onlyLine, prLine] = step.run.trim().split('\n');
+  assert.match(check, /\^\[1-3\]\$/, 'min_frames is validated before use');
+  assert.match(onlyLine, /--only "\$ONLY".*\$\{MIN_FRAMES:\+--min-frames "\$MIN_FRAMES"\}/);
+  assert.doesNotMatch(prLine, /min-frames/, 'PR captures of new games never compare with live images');
+});
+
 test('a slow game can get a longer wait: every frame moves later and the deadline grows with it', async () => {
   const { waitOptions } = await import('../scripts/capture.mjs');
   assert.deepEqual(waitOptions(0), {});
@@ -491,4 +541,96 @@ test('a slow game can get a longer wait: every frame moves later and the deadlin
   assert.equal(o.deadline, DEFAULTS.deadline + 30_000);
   assert.deepEqual(waitOptions(500).times, DEFAULTS.times.map((t) => t + 90_000), 'capped at 90 seconds');
   assert.deepEqual(waitOptions('nope'), {});
+});
+
+// --- The start step (CAPTURE_START) ---
+
+const START_FAST = { start: true, startTimes: [250, 650, 1050], startExtra: 6000, startPause: 300, startBudget: 6000, holdMs: 200, shotTimeout: 4000, deadline: 12_000 };
+const magentaAt = async (file, left, top) => {
+  const { data } = await sharp(readFileSync(file)).extract({ left, top, width: 1, height: 1 }).raw().toBuffer({ resolveWithObject: true });
+  const [r, g, b] = data;
+  return r > 200 && g < 60 && b > 200;
+};
+
+test('start, next and name-field patterns match whole names only', async () => {
+  const { START_NAMES, NEXT_NAMES, NAME_FIELD } = await import('../scripts/capture.mjs');
+  for (const s of ['Play', '▶ PLAY', 'PLAY NOW!', 'Start Game', 'start', "Let's go", 'Let’s play', 'Tap to start', 'Click here to play', 'Single Player', 'singleplayer', 'New Game', 'Begin Adventure', 'Play vs CPU', 'Quick Play', '[ Launch ]']) assert.match(s, START_NAMES, s);
+  for (const s of ['Display', 'How to play', 'Play with friends', 'Playground', 'Settings', 'Leaderboard', 'Play on itch.io', 'Restart level', 'Join Discord', 'Continue']) assert.doesNotMatch(s, START_NAMES, s);
+  for (const s of ['Continue', 'JOIN', 'OK', 'Got it!', 'Skip intro', "I'm ready"]) assert.match(s, NEXT_NAMES, s);
+  for (const s of ['Join Discord', 'Next level select', 'Okay then']) assert.doesNotMatch(s, NEXT_NAMES, s);
+  for (const s of ['Enter your nickname', 'Your name', 'Username', 'Pilot name', 'Callsign', 'NAME']) assert.match(s, NAME_FIELD, s);
+  for (const s of ['Search', 'Type a message to other players', 'Email', 'Rename']) assert.doesNotMatch(s, NAME_FIELD, s);
+});
+
+test('the root cause: a menu with an off-centre Play button keeps one frame (the menu) on the plain schedule', async () => {
+  const dir = join(tmp(), 'menu-plain');
+  const res = await captureOne(`${base}/menu`, dir, { ...FAST, times: [300, 700, 1100, 1500], shotTimeout: 4000, deadline: 12_000 });
+  assert.equal(res.ok, true, res.reason);
+  assert.equal(res.partial, true);
+  assert.deepEqual(files(dir), ['cover.png'], 'every frame was the same menu');
+  assert.ok(await magentaAt(join(dir, 'cover.png'), 300, 200), 'the cover is the menu');
+});
+
+test('the start step presses Play, plays between frames, and the cover is the game, not the menu', async () => {
+  const dir = join(tmp(), 'menu-start');
+  const res = await captureOne(`${base}/menu`, dir, { ...FAST, ...START_FAST });
+  assert.equal(res.ok, true, res.reason);
+  assert.deepEqual(files(dir).sort(), ['cover.png', 'shot-1.png', 'shot-2.png']);
+  for (const f of res.files) assert.ok(!(await magentaAt(f, 300, 200)), `${f.slice(dir.length + 1)} shows the menu`);
+});
+
+test('the start step fills a name field, then presses Join', async () => {
+  const dir = join(tmp(), 'name');
+  const res = await captureOne(`${base}/name-entry`, dir, { ...FAST, ...START_FAST });
+  assert.equal(res.ok, true, res.reason);
+  assert.equal(res.files.length, 3);
+  assert.ok(!(await magentaAt(res.files[0], 300, 200)), 'the cover is past the name screen');
+});
+
+test('the start step presses a text-only menu item, and never follows a link', async () => {
+  hits.elsewhere = 0;
+  const menu = await captureOne(`${base}/text-menu`, join(tmp(), 'text'), { ...FAST, ...START_FAST });
+  assert.equal(menu.ok, true, menu.reason);
+  assert.equal(menu.files.length, 3);
+  const linkOnly = await captureOne(`${base}/link-only`, join(tmp(), 'link'), { ...FAST, ...START_FAST });
+  assert.equal(linkOnly.ok, true, linkOnly.reason);
+  assert.equal(linkOnly.files.length, 1, 'nothing to press: the menu stays');
+  assert.equal(hits.elsewhere, 0, 'a link called Play is never followed');
+});
+
+test('the start step still captures a canvas game with no buttons', async () => {
+  const res = await captureOne(`${base}/game`, join(tmp(), 'canvas-start'), { ...FAST, ...START_FAST });
+  assert.equal(res.ok, true, res.reason);
+  assert.ok(res.files.length >= 2, `${res.files.length} frames`);
+});
+
+test("start 'retry': a game that kept one frame gets a pass with the start step, and the better pass wins", async () => {
+  const root = tmp();
+  mkdirSync(join(root, 'games'));
+  writeFileSync(join(root, 'games', 'menu.yaml'), `play:\n  url: ${base}/menu\n`);
+  const lines = [];
+  const { start, ...startFast } = START_FAST;
+  const [res] = await captureSlugs(['menu'], { ...FAST, times: [300, 700, 1100], shotTimeout: 4000, ...startFast, start: 'retry', root, out: join(root, 'out'), log: (l) => lines.push(l) });
+  assert.equal(res.ok, true, JSON.stringify(res));
+  assert.equal(res.started, true);
+  assert.match(lines.join('\n'), /menu: 1 of 3 frames, retry with the start step/);
+  assert.match(lines.join('\n'), /ok {3}menu \([\d.]+ s, 3 of 3 frames\)/);
+  assert.deepEqual(files(join(root, 'out', 'menu')).sort(), ['cover.png', 'shot-1.png', 'shot-2.png']);
+  assert.ok(!(await magentaAt(join(root, 'out', 'menu', 'cover.png'), 300, 200)));
+});
+
+test('CAPTURE_START: true, retry or off; the summary warns about games with fewer than three frames', async () => {
+  const { startOptions, summary } = await import('../scripts/capture.mjs');
+  assert.deepEqual(startOptions('true'), { start: true });
+  assert.deepEqual(startOptions(' Retry '), { start: 'retry' });
+  for (const v of ['', undefined, 'false', 'nope']) assert.deepEqual(startOptions(v), {}, String(v));
+  const lines = summary([
+    { slug: 'full', ok: true, files: ['a', 'b', 'c'] },
+    { slug: 'menu', ok: true, files: ['a'], partial: true },
+    { slug: 'sent', ok: true, skipped: 'uploads' },
+    { slug: 'dead', ok: false, reason: 'navigation' },
+  ]);
+  assert.equal(lines[0], 'captured 2 of 4, 1 with all 3 frames');
+  assert.match(lines[1], /^::warning title=Fewer than 3 frames::1 games: menu \(1\)$/);
+  assert.equal(summary([{ slug: 'full', ok: true, files: ['a', 'b', 'c'] }]).length, 1, 'no warning when every game is complete');
 });

@@ -25,11 +25,20 @@ on:
         description: Optional. Extra seconds before the first frame (0-90), for games that load slowly
         required: false
         type: string
+      start:
+        description: Optional. "true" presses a visible Start or Play button (and fills a name field) and plays a few seconds before the frames; "retry" does that only for games that kept fewer than 3 frames
+        required: false
+        type: string
+      min_frames:
+        description: Optional, with slugs. Replace a game's live images only when the new capture kept at least this many (1-3) and no fewer than are live
+        required: false
+        type: string
   pull_request:
 permissions:
   contents: read
 concurrency:
-  group: capture-${{ github.event.pull_request.number || inputs.branch }}
+  # Re-captures of listed games (slugs) run side by side in chunks; a PR or branch run replaces its earlier run.
+  group: capture-${{ github.event.pull_request.number || (inputs.slugs && github.run_id) || inputs.branch }}
   cancel-in-progress: true
 jobs:
   capture:
@@ -95,6 +104,8 @@ jobs:
         if: (steps.split.outputs.count || '0') != '0'
         env:
           CAPTURE_WAIT: ${{ inputs.wait }}
+          # The repository variable CAPTURE_START sets the start step for PR captures (no inputs there), e.g. "retry".
+          CAPTURE_START: ${{ inputs.start || vars.CAPTURE_START }}
         run: xargs -a "$RUNNER_TEMP/capture.txt" node scripts/capture.mjs
       - uses: actions/upload-artifact@v5
         if: (steps.split.outputs.count || '0') != '0'
@@ -114,10 +125,12 @@ jobs:
       contents: read
       pull-requests: write
     steps:
-      # The BASE commit, not the PR head: every script in this job comes from main.
+      # main as it is now, never the PR head: every script in this job comes from main. Not the PR's base commit either:
+      # that is fixed when the run starts, and an upload that runs an hour later would use code from before a fix to
+      # this job (108 games went up without the 960 px size that way).
       - uses: actions/checkout@v5
         with:
-          ref: ${{ github.event.pull_request.base.sha || 'main' }}
+          ref: main
           persist-credentials: false
           fetch-depth: 0 # history for the merge base below
       - uses: actions/setup-node@v5
@@ -145,13 +158,16 @@ jobs:
           HEAD_SHA: ${{ github.event.pull_request.head.sha || needs.capture.outputs.sha }}
           ONLY: ${{ inputs.slugs }}
           UPLOADS: ${{ needs.capture.outputs.uploads }}
+          MIN_FRAMES: ${{ inputs.min_frames }}
         # --base-ref (the merge base, as in the capture job): only games this PR adds or changes are uploaded, whatever
         # the artifact holds; changes made only on main never count.
-        # A manual re-capture uploads exactly the slugs it was given (validated by upload.mjs).
+        # A manual re-capture uploads exactly the slugs it was given (validated by upload.mjs); with --min-frames it
+        # replaces a live game's images only with a capture that kept at least that many and no fewer than are live.
         # --uploads only narrows the choice: upload.mjs fetches a game's screenshots only when that game passes the same
         # checks and its entry (read from the PR as data) names them.
         run: |
-          if [ -n "$ONLY" ]; then node scripts/upload.mjs out/ --entries-ref "$HEAD_SHA" --only "$ONLY" --uploads "$UPLOADS"
+          [[ -z "$MIN_FRAMES" || "$MIN_FRAMES" =~ ^[1-3]$ ]] || { echo "min_frames must be 1, 2 or 3"; exit 1; }
+          if [ -n "$ONLY" ]; then node scripts/upload.mjs out/ --entries-ref "$HEAD_SHA" --only "$ONLY" --uploads "$UPLOADS" ${MIN_FRAMES:+--min-frames "$MIN_FRAMES"}
           else node scripts/upload.mjs out/ --entries-ref "$HEAD_SHA" --base-ref "$(git merge-base HEAD "$HEAD_SHA")" --uploads "$UPLOADS"; fi
       - name: Post the contact sheet
         if: always() && steps.upload.outcome != 'skipped' && github.event_name == 'pull_request' && hashFiles('out/contact-sheet.md') != ''
