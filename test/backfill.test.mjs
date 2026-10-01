@@ -40,6 +40,16 @@ test('games that already have it, or have no marker, are left alone', async () =
   assert.equal(done.puts.length + none.puts.length, 0);
 });
 
+test('a failed upload (s3Put answers ok: false) stops the game before its marker lists the new width', async () => {
+  const s = r2({ marker: { slug: 'sky', files: 13, names: ['cover', 'shot-1'] } });
+  const keys = [];
+  const put = async (key) => (keys.push(key), key.endsWith('shot-1-960.webp') ? { ok: false, error: new Error('R2 403: AccessDenied') } : { ok: true });
+  await assert.rejects(backfillGame('sky', { fetchImpl: s.fetchImpl, put }), /shot-1-960\.webp: R2 403/);
+  assert.ok(!keys.includes('games/sky/ready.json'), 'the marker is never rewritten after a failed upload');
+  const thrower = async (key) => { if (key.endsWith('cover-960.avif')) throw new Error('network'); };
+  await assert.rejects(backfillGame('sky', { fetchImpl: s.fetchImpl, put: thrower }), /network/);
+});
+
 test('a marker from before names existed covers all three images', async () => {
   const s = r2({ marker: { slug: 'old', files: 19 } });
   await backfillGame('old', { fetchImpl: s.fetchImpl, put: s.put });
