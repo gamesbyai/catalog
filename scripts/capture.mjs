@@ -42,6 +42,9 @@ export const DEFAULTS = {
   deadline: 70_000, // per game, from start to files on disk
   shotTimeout: 15_000, // WebGL games render in software on CI runners (no GPU), so frames can be slow
   clickTimeout: 2000,
+  // The yes or no asked before every press (pressCheck) gets its own, longer budget: a busy page answers late, and a
+  // late yes still ends in the press. No answer in time is no press.
+  checkTimeout: 5000,
   closeTimeout: 5000,
   viewport: { width: 1280, height: 720 },
   allowLocalHttp: false, // tests only: http://127.0.0.1
@@ -372,7 +375,7 @@ export function pressCheck(el, { deny, flags, x, y, key }) {
     if (closest(e, LINK)) return true;
     if (self && denied(e, true)) return true;
     const control = closest(e, CONTROL);
-    if (control && denied(control, true)) return true;
+    if (control && !(self && control === e) && denied(control, true)) return true;
     // A generic element with a click handler counts by its labels only: its text can be a whole menu.
     const handler = closest(e, '[onclick]');
     return !!handler && handler !== control && denied(handler, false);
@@ -435,16 +438,19 @@ const PLAY_STEPS = [
 const PRESSED = 'data-capture-pressed';
 const NOT_PRESSED = `:not([${PRESSED}]):not([${PRESSED}] *)`;
 
+/** The budget for pressCheck's answer: its own, never shorter than a click's. */
+const checkBudget = (o) => Math.max(o.checkTimeout, o.clickTimeout);
+
 /** A mouse click at (x, y), unless pressCheck says no (or can't answer in time). True after a click. */
 async function clickAt(page, x, y, o, guard) {
-  const ok = await guard(within(page.evaluate(`(${pressCheck})(null, ${JSON.stringify({ ...DENY_ARG, x, y })})`), o.clickTimeout, false));
+  const ok = await guard(within(page.evaluate(`(${pressCheck})(null, ${JSON.stringify({ ...DENY_ARG, x, y })})`), checkBudget(o), false));
   if (ok) await guard(within(page.mouse.click(x, y), o.clickTimeout));
   return ok === true;
 }
 
 /** A key press (Enter, Space), after pressCheck has moved focus off a link or a control that isn't the game's. */
 async function pressKey(page, key, o, guard) {
-  const ok = await guard(within(page.evaluate(`(${pressCheck})(null, ${JSON.stringify({ ...DENY_ARG, key })})`), o.clickTimeout, null));
+  const ok = await guard(within(page.evaluate(`(${pressCheck})(null, ${JSON.stringify({ ...DENY_ARG, key })})`), checkBudget(o), null));
   // No answer (a busy or navigating page): no key either, since whatever has focus may be such a control.
   if (ok === null) return false;
   await guard(within(page.keyboard.press(key), o.clickTimeout));
@@ -457,8 +463,8 @@ async function pressKey(page, key, o, guard) {
  * 'clicked', 'event' (dispatched: the page may have ignored it), 'denied' or false.
  */
 async function press(el, o, guard, { event = true } = {}) {
-  // No answer (the element went away, a busy page) is no press either.
-  const allowed = await guard(within(el.evaluate(pressCheck, DENY_ARG), o.clickTimeout, null));
+  // No answer (the element went away, a page busy past the check's budget) is no press either.
+  const allowed = await guard(within(el.evaluate(pressCheck, DENY_ARG), checkBudget(o), null));
   if (allowed !== true) return allowed === false ? 'denied' : false;
   if (await guard(within(el.click({ timeout: o.clickTimeout }).then(() => true), o.clickTimeout + 500, false))) return 'clicked';
   if (event && (await guard(within(el.dispatchEvent('click').then(() => true), o.clickTimeout, false)))) return 'event';

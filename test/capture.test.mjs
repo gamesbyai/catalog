@@ -127,6 +127,10 @@ const PAGES = {
   '/role-link': menuPage(`<a href="/elsewhere" role="button" style="position:absolute;left:40px;bottom:40px;font-size:40px;color:#fff">Play</a>`),
   '/link-button': menuPage(`<a href="/elsewhere"><button style="position:absolute;left:40px;bottom:40px;font-size:40px">Play</button></a>`),
   // A bouncing "PRESS START" (a mouse click never lands) over a game that starts on Enter.
+  // A Play button on a slow page: the question before the press (pressCheck reads its text) takes 1.5 s to answer,
+  // longer than a click's own budget. Only that question is slow, so the test is the same on any machine.
+  '/slow-answer': menuPage(`<button id="p" style="position:absolute;left:40px;bottom:40px;font-size:40px" onclick="startGame()">PLAY</button>
+    <script>Object.defineProperty(document.getElementById('p'), 'innerText', { get() { const end = performance.now() + 1500; while (performance.now() < end) {} return 'PLAY'; } });</script>`),
   '/bouncing-start': menuPage(`<style>@keyframes bob { from { transform: translateY(0) } to { transform: translateY(-40px) } }</style>
     <div style="position:absolute;left:40px;bottom:40px;font-size:40px;color:#fff;animation:bob .2s infinite alternate linear">PRESS START</div>
     <script>addEventListener('keydown', (e) => { if (e.key === 'Enter') startGame(); });</script>`),
@@ -180,10 +184,9 @@ function menuPage(menu) {
     const keys = { ArrowRight: [12, 0], KeyD: [12, 0], ArrowLeft: [-12, 0], KeyA: [-12, 0], ArrowUp: [0, -12], KeyW: [0, -12], ArrowDown: [0, 12], KeyS: [0, 12] };
     addEventListener('keydown', (e) => { if (on && keys[e.code]) [vx, vy] = keys[e.code]; });
     addEventListener('keyup', (e) => { if (keys[e.code]) vx = vy = 0; });
-    window.startGame = () => { if (on) return; on = true; document.getElementById('menu').remove(); (function frame() { x += vx; y += vy; draw(); frames++; const now = performance.now(); gap = Math.max(gap, now - last); last = now; requestAnimationFrame(frame); })(); };
-    // How the game runs, for a failure's message: frames drawn and the longest gap between them, every half second.
-    let frames = 0, gap = 0, last = performance.now(), n = 0;
-    setInterval(() => { if (on) { fetch('/report/fps-' + String(n++).padStart(2, '0') + '/' + frames + ' frames, longest gap ' + Math.round(gap) + ' ms'); frames = 0; gap = 0; } }, 500);
+    // The scene is redrawn only when it moves: on CI's software renderer, redrawing a still scene every frame makes each
+    // screenshot wait longer the longer the game has run (1.2 s, 2.5 s, then over the 4 s timeout).
+    window.startGame = () => { if (on) return; on = true; document.getElementById('menu').remove(); (function frame() { if (vx || vy) { x += vx; y += vy; draw(); } requestAnimationFrame(frame); })(); };
     </script>`);
 }
 
@@ -644,9 +647,7 @@ const START_FAST = { start: true, startTimes: [250, 650, 1050], startExtra: 6000
 const traced = () => {
   const t0 = Date.now();
   const lines = [];
-  reports = {};
-  const fps = () => Object.keys(reports).filter((k) => k.startsWith('fps-')).sort().map((k) => `  page ${k}: ${reports[k]}`);
-  return { trace: (s) => lines.push(`${String(Date.now() - t0).padStart(6)} ms  ${s}`), log: () => `\n${[...lines, ...fps()].join('\n')}` };
+  return { trace: (s) => lines.push(`${String(Date.now() - t0).padStart(6)} ms  ${s}`), log: () => `\n${lines.join('\n')}` };
 };
 const magentaAt = async (file, left, top) => {
   const { data } = await sharp(readFileSync(file)).extract({ left, top, width: 1, height: 1 }).raw().toBuffer({ resolveWithObject: true });
@@ -673,21 +674,19 @@ test('the root cause: a menu with an off-centre Play button keeps one frame (the
   assert.ok(await magentaAt(join(dir, 'cover.png'), 300, 200), 'the cover is the menu');
 });
 
-test('the start step presses Play, plays between frames, and the cover is the game, not the menu', async (t) => {
+test('the start step presses Play, plays between frames, and the cover is the game, not the menu', async () => {
   const dir = join(tmp(), 'menu-start');
   const { trace, log } = traced();
   const res = await captureOne(`${base}/menu`, dir, { ...FAST, ...START_FAST, trace });
-  t.diagnostic(log());
   assert.equal(res.ok, true, `${res.reason}${log()}`);
   assert.deepEqual(files(dir).sort(), ['cover.png', 'shot-1.png', 'shot-2.png'], log());
   for (const f of res.files) assert.ok(!(await magentaAt(f, 300, 200)), `${f.slice(dir.length + 1)} shows the menu${log()}`);
 });
 
-test('the start step fills a name field, then presses Join', async (t) => {
+test('the start step fills a name field, then presses Join', async () => {
   const dir = join(tmp(), 'name');
   const { trace, log } = traced();
   const res = await captureOne(`${base}/name-entry`, dir, { ...FAST, ...START_FAST, trace });
-  t.diagnostic(log());
   assert.equal(res.ok, true, `${res.reason}${log()}`);
   assert.equal(res.files.length, 3, log());
   assert.ok(!(await magentaAt(res.files[0], 300, 200)), `the cover is past the name screen${log()}`);
@@ -739,18 +738,17 @@ test('solo, German, decline and room patterns match whole names only', async () 
   for (const re of [SOLO_NAMES, START_NAMES, NEXT_NAMES, ROOM_NAMES]) assert.doesNotMatch(re.flags, /u/, re.source);
 });
 
-const startsTheGame = async (path, extra = {}, t) => {
+const startsTheGame = async (path, extra = {}) => {
   const dir = join(tmp(), path.slice(1));
   const { trace, log } = traced();
   const res = await captureOne(`${base}${path}`, dir, { ...FAST, ...START_FAST, ...extra, trace });
-  t?.diagnostic(log());
   assert.equal(res.ok, true, `${res.reason}${log()}`);
   assert.equal(res.files.length, 3, `${path}: ${res.files.length} frames${log()}`);
   for (const f of res.files) assert.ok(!(await magentaAt(f, 300, 200)), `${path}: ${f.slice(dir.length + 1)} shows the menu${log()}`);
 };
 
 test('the start step prefers Solo over a Play button that opens a server list', () => startsTheGame('/solo-menu'));
-test('the start step presses German start buttons', (t) => startsTheGame('/german-menu', {}, t));
+test('the start step presses German start buttons', () => startsTheGame('/german-menu'));
 test('the start step presses a button under a transparent layer with a click event', () => startsTheGame('/covered-menu'));
 test('the start step keeps looking while a menu is still loading', () => startsTheGame('/late-menu'));
 test('a start option that stays on screen is pressed once, so the next button gets its turn', () => startsTheGame('/tab-menu'));
@@ -808,7 +806,8 @@ const pressesOn = async (paths, opts) => {
 test('a link with a button role, or a button inside a link, is never followed', async () => {
   assert.deepEqual(await pressesOn(['/role-link', '/link-button'], TRAP), { '/role-link': [], '/link-button': [] });
 });
-test('a click that only lands as a click event still leaves the centre click and Enter their turn', (t) => startsTheGame('/bouncing-start', {}, t));
+test('a click that only lands as a click event still leaves the centre click and Enter their turn', () => startsTheGame('/bouncing-start'));
+test('a slow answer to the question before a press still ends in the press (no answer in time would mean no press)', () => startsTheGame('/slow-answer'));
 test('the centre click and Enter never press a wallet button, follow a link or press a focused Buy button', async () => {
   reports = {};
   assert.deepEqual(await pressesOn(['/centre-wallet', '/centre-link', '/focus-buy'], FAST), { '/centre-wallet': [], '/centre-link': [], '/focus-buy': [] });
@@ -827,7 +826,7 @@ test('local captures: no file pickers and no clipboard writes in a real page, fr
     reports = {};
     const local = await captureOne(`${base}/local-traps`, join(tmp(), 'local'), { ...FAST, ...START_FAST, gpu: true });
     assert.equal(local.ok, true, local.reason);
-    assert.deepEqual(Object.fromEntries(Object.entries(reports).filter(([k]) => !k.startsWith('fps-'))), {
+    assert.deepEqual(reports, {
       pickers: 'undefined undefined undefined',
       'frame-pickers': 'undefined',
       'frame-clipboard': 'stubbed',
