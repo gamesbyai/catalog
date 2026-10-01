@@ -2,27 +2,32 @@ slug: arcade-gaming
 title: Arcade Gaming
 tagline: Pick from a browser arcade for quick, casual play breaks
 description: >-
-  Arcade Gaming is a browser arcade built for short, casual breaks. A visit is
-  meant to be brief: open the page, pick something to play, and get back to
-  whatever you were doing. It pitches itself as a go-to spot for quick, fun
-  sessions.
+  Arcade Gaming puts you on a walkable 3D arcade floor filled with small browser
+  games. Walk up to a cabinet to drop straight into its game, or press the Games
+  button to browse the full list instead of walking to each one.
 
 
-  The mix is arcade and strategy, all of it solo play, with a 3D presentation
-  that Three.js draws in the browser. It works on phones as well as desktops, so
-  a break can start from either one.
+  Every score you post goes to a global leaderboard, and signing in lets you
+  claim your spot on it. You can click a cabinet to play it instantly, or click
+  the floor to auto-walk there.
 
 
-  According to the creator, parth_kadakia, it was built with Claude Code for
-  Vibe Jam 2026, where it finished 120th of 945. The creator counts two things
-  as the high points of the project: the community's passion, and reaching 150
-  users who tried it out.
+  The floor holds more than cabinets. A wardrobe changes your look, and a token
+  machine earns tickets for jukebox tracks and race avatars. New players get a
+  welcome token bonus, and returning players get a daily one. The lobby shows a
+  live count of players in the plaza and total games played.
 play:
   url: https://arcadegaming.app
   embeddable: true
   platforms:
     - browser
     - mobile
+  controls:
+    - "WASD / arrows: move"
+    - "Click-drag: look around"
+    - "E / Enter: interact with a cabinet"
+    - "Click floor: auto-walk"
+    - "Click cabinet: play instantly"
 creator:
   name: parth_kadakia
   handle: parth-kadakia
@@ -53,7 +58,7 @@ media:
     - games/arcade-gaming/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-09-29
+  updated: 2026-10-01
 status: live
 provenance:
   foundVia: scout:vibejam-2026

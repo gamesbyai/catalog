@@ -3,26 +3,38 @@ title: RelativityX
 tagline: Fly a near-light-speed spacecraft through the solar system and watch
   time stretch.
 description: >-
-  RelativityX puts you at the controls of a relativistic spacecraft and lets you
-  watch time stretch. You fly through the solar system from planet to planet,
-  and the trip ends at a black-hole portal that carries the ship out into the
-  Vibe Jam webring.
+  Fly a spacecraft through a 3D solar system with the keyboard, switching
+  between six speed modes that start at subsonic and climb toward light speed.
+  On-screen panels show velocity as a percentage of light speed, the Lorentz
+  factor, and your XYZ coordinates.
 
 
-  In the creator's telling, the project grew out of seeing Interstellar for the
-  first time and wanting Einstein's relativity to feel understandable and
-  emotional. It was built in Three.js with Codex.
+  A time dilation panel runs two clocks, one for Earth and one for the ship. At
+  low speed they read the same. Accelerate and watch them drift apart. Planets
+  can be clicked to read facts about them.
 
 
-  Time dilation is the point. As the ship nears the speed of light, time runs
-  differently for the traveler, and you see the effect firsthand instead of
-  reading about it in a textbook. Clicking a world brings up short facts about
-  it, a light educational layer on the way.
+  A solar map marks your position and the black-hole portal, with the flat
+  distance to it and your range to the black hole. Follow the cyan route to the
+  portal, or press Jump to Black Hole to skip the trip. Snap Back returns you to
+  the solar system. Reaching the portal sends you out into a webring of other
+  games.
+
+
+  Stop, Pause, Reset and Free Camera buttons sit on screen. The creator built it
+  after watching Interstellar, wanting players to experience time dilation
+  themselves.
 play:
   url: https://relativity-cng.vercel.app
   embeddable: true
   platforms:
     - browser
+  controls:
+    - "W / S: forward / back"
+    - "A / D: turn"
+    - "Space / Shift: up / down"
+    - "Q / E: roll"
+    - "1-6: speed mode"
 creator:
   name: cng13m
   handle: cng13m
@@ -53,7 +65,7 @@ media:
     - games/relativityx/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-09-29
+  updated: 2026-10-01
 status: live
 provenance:
   foundVia: scout:vibejam-2026

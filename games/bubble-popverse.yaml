@@ -2,26 +2,36 @@ slug: bubble-popverse
 title: Bubble Popverse
 tagline: Pop bubble wrap, grow an empire, and prestige for rarer rainbow bubbles.
 description: >-
-  Bubble Popverse turns bubble wrap into an idle empire. You pop bubbles to earn
-  currency, spend it on upgrades that grow your popping operation into an
-  empire, and collect rarer rainbow bubbles along the way.
+  You start by picking a bubble name or rolling a random one, then pop bubbles
+  to earn Bubcoins. The main screen shows a coin counter, the current realm
+  (Meadow), a progress bar toward the next goal, and flower petals drifting over
+  a green field.
 
 
-  A father made it with his two children, Alice and Michael, who played every
-  version and said which pops felt best. The idea came from silly simulators and
-  the appeal of bubble wrap. It was built with Cursor, with Three.js handling
-  the 3D rendering, and it plays on desktop and mobile alike.
+  A Bubble Labs panel on the right lists upgrade cards in tiers. The first card,
+  Foam Motion, unlocks bubble drift. Later tiers start locked and include Pop
+  Power, Auto-Popper and Comfortable Foam. A hint on the panel says holding a
+  card buys one more each time.
 
 
-  Feel is the focus: each pop has its own sound, with ASMR-style feedback and a
-  relaxed, absurd premise. When progress slows, you prestige and start over with
-  a boost, which is the route to the rarer rainbow bubbles.
+  The loop is idle and incremental: pop bubbles, buy upgrades, discover new
+  realms, collect rarities including rainbow ones, and prestige. Buttons for
+  Dex, Ranks, Zen, Share, Portal and Menu sit along the top. Every pop has its
+  own sound, and the title screen recommends headphones for the spatial audio.
+
+
+  The intro frames everything as a joke about a Galactic Foam Authority and an
+  intern with a clipboard. A father built it with his two kids, who played each
+  version and said which pops felt best. The build is labeled as still being
+  balanced.
 play:
   url: https://bubblepopverse.life
   embeddable: true
   platforms:
     - browser
     - mobile
+  controls:
+    - "Hold upgrade card: buy repeatedly"
 creator:
   name: thekibermaks
   handle: thekibermaks
@@ -50,7 +60,7 @@ media:
     - games/bubble-popverse/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-09-29
+  updated: 2026-10-01
 status: live
 provenance:
   foundVia: scout:vibejam-2026

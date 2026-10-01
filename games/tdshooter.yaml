@@ -2,27 +2,32 @@ slug: tdshooter
 title: TDShooter
 tagline: Shoot enemies from above, finish quests, and open up new zones.
 description: >-
-  TDShooter is a top-down shooter with somewhere to go. You shoot enemies from
-  above while moving around the map, and along the way there are quests to
-  complete. Finishing them opens up new zones to explore, so the playable area
-  grows as you go, quest by quest.
+  You control a small character on a dark green grid. Walk with W, A, S, D, aim
+  with the mouse and click to shoot. A prompt on screen says so at the start,
+  and a counter at the top reads Enemies killed: 0/40.
 
 
-  Cursor was in the creator's toolkit for this PixiJS game, and it finished
-  279th of 945 in Vibe Jam 2026. It supports online multiplayer, so the shooting
-  and the questing can be shared with other people, on a phone or tablet as well
-  as in a desktop browser.
+  A line under the counter reads Next: Zone 2, up, and yellow arrows on the
+  floor point that way. The creator describes the game as shooting enemies,
+  doing quests and unlocking new zones.
 
 
-  Zone unlocking gives the shooting a sense of progression beyond simply
-  surviving waves: a session is a loop of shooting, completing objectives, and
-  pushing into fresh areas of the map.
+  The top left shows HP at 100 out of 100, a level readout with perk points, and
+  an XP bar that starts at 0 of 100. A slide ability is labeled Space at the
+  bottom center. A column of emote buttons on the right edge offers a heart,
+  thumbs up, arrows, a question mark, an exclamation mark, a skull, a gravestone
+  and a coffin. Two icons in the top right switch between mouse and touch input.
 play:
   url: https://tdshooter.space
   embeddable: true
   platforms:
     - browser
     - mobile
+  controls:
+    - "WASD: walk"
+    - "Mouse: aim"
+    - "Left click: shoot"
+    - "Space: slide"
 creator:
   name: ok_kutas
   handle: ok-kutas
@@ -51,7 +56,7 @@ media:
     - games/tdshooter/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-09-29
+  updated: 2026-10-01
 status: live
 provenance:
   foundVia: scout:vibejam-2026

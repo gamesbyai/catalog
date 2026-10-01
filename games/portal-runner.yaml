@@ -3,21 +3,21 @@ title: Portal-Runner
 tagline: Run through five parallel worlds, dodging vanishing obstacles and
   leaping through portals.
 description: >-
-  Five parallel worlds go by at high speed in Portal-Runner, a single-player
-  endless runner. You sprint forward, dodge obstacles and leap through portals,
-  and each portal sends you into a different dimension with its own colors,
-  rules and feel.
+  The game opens on a night city street, seen from behind a blocky blue runner.
+  The score counts up in the top left, with a coin counter below it and a label
+  naming the current world, City Night. A speed bar in the top right tracks the
+  pace of the run.
 
 
-  The creator cites Subway Surfers and Temple Run as the inspiration for the
-  runner core and built the game with Kiro. It runs on Three.js, touch screens
-  are supported, and it ranked 461st of 945 at Vibe Jam 2026.
+  You sprint down the road, picking up yellow coins and avoiding striped
+  barriers. Some obstacles vanish before your eyes, so the track ahead cannot be
+  fully trusted, even on a route you have run before.
 
 
-  The catch is that some obstacles disappear as you approach, so you cannot
-  fully trust what is on screen, and runs stay unpredictable even after you
-  learn the patterns. At the end, a golden exit marked JAM EXIT pulls you into a
-  wider multiverse beyond the five worlds.
+  Portals carry you through five parallel worlds, and each one changes the
+  rules, colors and feel instead of only the scenery. A golden JAM EXIT
+  eventually pulls you into the multiverse. The creator built the endless runner
+  core on Subway Surfers and Temple Run.
 play:
   url: https://portal-runner.vercel.app
   embeddable: true
@@ -52,7 +52,7 @@ media:
     - games/portal-runner/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-09-29
+  updated: 2026-10-01
 status: live
 provenance:
   foundVia: scout:vibejam-2026

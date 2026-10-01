@@ -2,23 +2,30 @@ slug: casadegema
 title: Casadegema
 tagline: Water a bare courtyard and find hidden gems through a full watercolor year.
 description: >-
-  Casadegema is a watercolor garden game set around a whitewashed Spanish house.
-  The courtyard starts bare: you water a tree bed, then explore to find five
-  hidden gems in each of four seasons, and a full year takes about 10 to 15
-  minutes.
+  You start in a bare whitewashed courtyard with a watering can, a chalkboard
+  easel and a girl standing by the front door. Pick up the can and water the
+  tree bed to grow a bougainvillea, then tap and drag around the house to find
+  five hidden gems per season. Each gem flies to a counter in the top-left
+  corner.
 
 
-  Each season changes how the garden looks and what you can do. Spring has
-  shaking branches and a nest of chicks, summer adds a kite and a balloon,
-  autumn brings rain and a rake, and winter offers a snowman and chalk. Oli the
-  owl narrates and gives hints when tapped.
+  The year runs through spring, summer, autumn and winter, and each season has
+  its own tasks. In spring you tap a speaker, shake a tree branch until the
+  petals fall, and water pots. Later you pop a balloon with a twig, rake leaves,
+  make rain, build a snowman and write a name in chalk on the board.
 
 
-  The creator says it was built entirely through conversation with Claude Opus
-  5.5 in Cursor, as a single HTML file with Canvas 2D art, spring physics and
-  music generated live with Web Audio. Every gem flies to a counter, and the
-  last one sends a message rising from the chimney, which a link parameter can
-  personalize with a name.
+  Oli the owl sits on the tower roof and comments as you go. Tap him for a hint,
+  tap the alarm clock to send a feather toward the next gem, or catch the teddy
+  bear that peeks out now and then to reveal the remaining gems. Finishing the
+  last winter gem sends a message up from the chimney. A full year takes about
+  10 to 15 minutes.
+
+
+  The art is watercolor-style, drawn on a canvas. Music is generated live and
+  stays silent until you tap the speaker. Adding a name to the link pre-writes
+  it on the easel and in the final message, and a season setting in the link
+  starts later in the year. It works with touch on phones.
 play:
   url: https://1xaispark.com/games/casa-de-gemas
   embeddable: true
@@ -58,7 +65,7 @@ media:
     - games/casadegema/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-09-30
+  updated: 2026-10-01
 status: live
 provenance:
   foundVia: scout:awesome-opus

@@ -2,26 +2,32 @@ slug: blood-blade
 title: Blood&Blade
 tagline: Fight melee duels with directional attacks and blocks in the browser.
 description: >-
-  Blood&Blade is a browser melee dueling game built on one system: directional
-  combat in the style of Mount & Blade. You swing your weapon in a chosen
-  direction, and to stop an incoming strike you have to block in the matching
-  direction. Block the wrong way and the strike gets through.
+  Type a warrior name and press Enter the Battlefield to join a single shared
+  multiplayer world, listed for 64 warriors. Move with WASD and look around with
+  the mouse. ESC releases the cursor when you need it back.
 
 
-  The narrow focus is deliberate. The creator loves the directional combat of
-  Mount & Blade and wanted to recreate its melee fighting, using Claude and
-  Codex to build it on Three.js for the browser. It came 474th of 945 at Vibe
-  Jam 2026.
+  Combat is melee only and built on directional attacks and directional blocks.
+  Hold left click to attack, and the spot where you click on screen sets the
+  direction of the swing. Right click to block, with the block direction chosen
+  by the same on-screen position.
 
 
-  Multiplayer means duels can be fought against other people online, not only
-  scripted enemies. Every fight comes down to reading your opponent and timing
-  your own attacks, one directional swing at a time.
+  The creator loves the combat of Mount & Blade and wanted to recreate it in the
+  browser, keeping the directional attacks and blocks and limiting it to melee.
+  The menu screen uses a dark red and gold palette with a glowing title and a
+  short controls panel.
 play:
   url: https://bloodandblade.hexpandify.com
   embeddable: true
   platforms:
     - browser
+  controls:
+    - "WASD: move"
+    - "Mouse: look around"
+    - "Left click: attack (hold to aim direction)"
+    - "Right click: block"
+    - "ESC: release cursor"
 creator:
   name: zahrdaniel
   handle: zahrdaniel
@@ -54,7 +60,7 @@ media:
     - games/blood-blade/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-09-29
+  updated: 2026-10-01
 status: live
 provenance:
   foundVia: scout:vibejam-2026

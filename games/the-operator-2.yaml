@@ -2,25 +2,32 @@ slug: the-operator-2
 title: The Operator
 tagline: Inspect the output of a 1980s mainframe AI and decide what gets through.
 description: >-
-  The Operator takes the core idea of Papers, Please and moves it into a 1980s
-  mainframe room. You sit in a retro office as the operator of an LLM server.
-  Instead of checking passports, you review the unruly output of a dusty, analog
-  AI machine and decide what gets through and what does not.
+  A green-on-black terminal shows an incoming user connection, and the player
+  decides whether to press INFERENCE or REFUSE. The setup borrows from Papers,
+  Please: a request arrives, and the player checks it against the rules before
+  committing. Here the rules come from an LLM server in a 1980s mainframe
+  office.
 
 
-  The setting is cassette futurism: the AI is a bulky piece of hardware, not a
-  sleek modern service. It was built on Phaser, with GitHub Copilot among the
-  tools noted for its development, and Vibe Jam 2026 ranked it 513th of 945.
+  Cartridges sit in a storage rack, filterable by All, Agents and Skills, such
+  as Technical_Agent.md and Engineering_Skill.md. They load into Drive A for
+  agents and Drive B for skills, and each drive shows a slot count and an eject
+  button. This assembles the context for a request.
 
 
-  Each shift runs on bureaucratic pressure and careful document checking, the
-  same tense routine of inspection and judgment, with puzzle and simulation
-  elements sharing the loop, one document at a time.
+  A side terminal lists the current content policy, for example a ban on
+  discussing politics, with a prompt to check related language using the Safety
+  Filter tool. It also shows shift conditions. Tool buttons labeled SRCH, COMP
+  and SAFE sit beside an active utility selector set to Coolant Purge. Gauges
+  for HALL and THRM, a token counter and a row of connection indicators fill the
+  rest of the screen.
 play:
   url: https://the-operator-game.vercel.app
   embeddable: true
   platforms:
     - browser
+  controls:
+    - "Mouse wheel: scroll the storage rack"
 creator:
   name: CriptoCeelo
   handle: criptoceelo
@@ -49,7 +56,7 @@ media:
     - games/the-operator-2/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-09-29
+  updated: 2026-10-01
 status: live
 provenance:
   foundVia: scout:vibejam-2026

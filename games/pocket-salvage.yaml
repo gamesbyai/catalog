@@ -2,25 +2,38 @@ slug: pocket-salvage
 title: Pocket Salvage
 tagline: Swing a crane, switch tools, and sort scrap into bins before time runs out.
 description: >-
-  Pocket Salvage hands you a swinging crane and a pile of junk. Each round you
-  steer the crane over the pile, pick items up and drop them into the matching
-  bins. A countdown limits every level, and the goal is to sort as much scrap as
-  you can before it hits zero.
+  Move the crane left and right with A and D, lower and raise the hook with W
+  and S, and press Space to grip. The magnet lifts steel. For copper and rubber,
+  press E to swap to the claw, which you pick up at the tool stands.
 
 
-  Its README names Claude and Codex as the tools, and it runs in the Godot
-  engine as a single-player game.
+  Scrap pieces sit along the ground of a night-time junkyard, and three bins
+  stand on the right: copper, rubber and steel. Carry each piece to its matching
+  bin before the timer runs out. The HUD tracks score, time left, how many
+  pieces are sorted, and which tool is active.
 
 
-  The crane switches between a magnet and a claw, so each piece of scrap calls
-  for a choice of tool, and the swing turns every grab into a timing test.
-  Across five levels, each with its own weather, the conditions you work in keep
-  changing from one level to the next, on top of the clock.
+  Play is split into levels chosen from a menu of twelve, with the later ones
+  locked at the start. Level 1 is a calm night with four pieces and a
+  four-minute clock. The listing describes five weather levels. P pauses and R
+  restarts a round, and music and sound effects can be switched off from the top
+  bar.
+
+
+  The cable hanging from the crane bends as it moves, and the hook hangs below
+  it as a flat magnet plate.
 play:
   url: https://pocket-salvage.web.app
   embeddable: true
   platforms:
     - browser
+  controls:
+    - "A / D: move crane"
+    - "W / S: lift"
+    - "Space: grip"
+    - "E: swap tool"
+    - "P: pause"
+    - "R: restart"
 creator:
   name: RaresKeY & Dale Mooney
   handle: rareskey
@@ -50,7 +63,7 @@ media:
     - games/pocket-salvage/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-09-29
+  updated: 2026-10-01
 status: live
 provenance:
   foundVia: scout:awesome-cc0

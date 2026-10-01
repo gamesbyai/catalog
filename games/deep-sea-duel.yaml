@@ -2,26 +2,35 @@ slug: deep-sea-duel
 title: Deep Sea Duel
 tagline: Pilot a shrimp or axolotl in real-time underwater duels against another player.
 description: >-
-  Deep Sea Duel is an online underwater duel for two players. You pick a shrimp
-  or an axolotl, face another player in a real-time match and try to destroy
-  them before they destroy you, and quickmatch pairs you with someone new.
+  Each rider starts with 100 HP, and the last one still swimming wins. You pilot
+  a shrimp or an axolotl, each carrying a diver, and shoot your opponent
+  underwater in a real-time online match with quickmatch. Two players can also
+  share one keyboard in the 2 Player mode.
 
 
-  The creator says it grew out of childhood memories of searching for good
-  two-player games to play against a sister. It was made with Lovable, ranked
-  184th of the 945 entries at Vibe Jam 2026, and works on phones too, so
-  siblings can play from whatever device they have.
+  Catching sea creatures grants power-ups. The menu lists six: +25 HP, poison,
+  +1 stream, invisibility for 10 seconds, a 3 second spin, and a spread shot.
 
 
-  There is also a solo mode, where you play as the ocean's savior and clear out
-  floating trash on your own. The game is still built around the rivalry between
-  two players, one shrimp or axolotl each.
+  The solo mode replaces the opponent with trash. You survive 3 waves of
+  floating garbage, then face the Trash Titan. Green radioactive trash is marked
+  as something to avoid.
+
+
+  The art is pixel style, with a coral and sand seabed. The creator wanted a
+  two-player game to play against friends and siblings, after years of searching
+  for one with a sister.
 play:
   url: https://deepseaduel.life
   embeddable: true
   platforms:
     - browser
     - mobile
+  controls:
+    - "WASD: move (player 1)"
+    - "Space: shoot (player 1)"
+    - "Arrow keys: move (player 2)"
+    - "Shift: shoot (player 2)"
 creator:
   name: camryn_alvares
   handle: camryn-alvares
@@ -48,7 +57,7 @@ media:
     - games/deep-sea-duel/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-09-29
+  updated: 2026-10-01
 status: live
 provenance:
   foundVia: scout:vibejam-2026

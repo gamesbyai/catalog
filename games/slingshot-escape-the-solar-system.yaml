@@ -2,27 +2,38 @@ slug: slingshot-escape-the-solar-system
 title: "Slingshot: Escape the solar system"
 tagline: Swing past planets and use their gravity to escape the solar system.
 description: >-
-  Slingshot: Escape the solar system gives you a craft, the real solar system,
-  and one goal: get out. You fly past planets and use their gravity to gain
-  speed and bend your trajectory, building enough momentum to leave the solar
-  system behind.
+  You steer a small spacecraft through a 2D version of the real solar system,
+  and the goal is to leave it. A run starts with the ship beside a large planet.
+  Aim with the left and right arrow keys, then hold Space to launch.
 
 
-  The creator cites Outer Wilds for its contemplative mood and music, and
-  Spaceflight Simulator for its flat, physics-driven view of real planetary
-  layouts. They built this single-player game with Claude Code, it runs on touch
-  screens too, and it placed 59th of 945 entries in Vibe Jam 2026.
+  Planets give you speed when you fly close to them, so each pass is a gravity
+  slingshot. Pressing Space to burn at the nearest point of an approach gives
+  the largest boost, which means timing your burn to each planet you pass.
 
 
-  Together those influences give a quiet, exploratory tone to what is, at heart,
-  a 2D gravity puzzle. Every planet you pass can add speed or bend your path on
-  the way out of the system.
+  The start screen lists the other keys: Shift for plan, W for warp, and R to
+  restart. A logbook opens with Escape, and the start screen also links to a
+  tutorial and a wiki.
+
+
+  The creator took the space setting and contemplative mood from Outer Wilds,
+  and the 2D view of the real solar system from Spaceflight Simulator. The art
+  is pixelated.
 play:
   url: https://slingshot.indiega.me
   embeddable: true
   platforms:
     - browser
     - mobile
+  controls:
+    - "Left / Right arrows: aim"
+    - "Space (hold): launch"
+    - "Space: burn"
+    - "Shift: plan"
+    - "W: warp"
+    - "R: restart"
+    - "Esc: logbook"
 creator:
   name: romainsimon
   handle: romainsimon
@@ -52,7 +63,7 @@ media:
     - games/slingshot-escape-the-solar-system/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-09-29
+  updated: 2026-10-01
 status: live
 provenance:
   foundVia: scout:vibejam-2026

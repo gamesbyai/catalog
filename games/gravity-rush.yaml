@@ -3,27 +3,35 @@ title: Gravity Rush
 tagline: Flip gravity to run, jump, and collect crystals through endless
   generated levels.
 description: >-
-  Gravity Rush is an arcade platformer with one mechanic, and it is flipping
-  gravity. You guide a character through levels by switching between floor and
-  ceiling, which is how you cross gaps, dodge hazards and gather crystals. A run
-  lasts for as long as you can survive the obstacles ahead.
+  One button flips gravity. You steer a small teal cube left and right along
+  floating light-blue platforms, and pressing the flip key switches which way is
+  down. Yellow crystals sit on and around the platforms, and the first screen
+  shows a pink pyramid hazard floating nearby.
 
 
-  The levels are procedurally generated and endless. With only one action to
-  master, the difficulty comes from how they are laid out and from hazards that
-  grow more dangerous as the run goes on. Timing and momentum decide how far you
-  get.
+  Each level asks you to collect every crystal and dodge the hazards. A counter
+  in the top left starts at 0/5 on level 1, next to a level label. The top right
+  shows three hearts and a score counter.
 
 
-  The creator cites classic gravity-flipping games such as VVVVVV as the
-  inspiration. It was a Vibe Jam 2026 entry, made in Antigravity and rendered
-  with Three.js, and it plays on phones as well.
+  Levels are procedurally generated and continue without a stated end, with
+  hazards that escalate as you advance. A glowing ring labeled as a portal sits
+  near the start. The creator cites VVVVVV and momentum-based platformers as
+  inspiration.
+
+
+  The scene is rendered in 3D with soft, pale colors and a fogged background,
+  while movement stays on a side-view line. A short on-screen prompt at the
+  start lists the controls.
 play:
   url: https://gravity-heist.vercel.app
   embeddable: true
   platforms:
     - browser
     - mobile
+  controls:
+    - "Left / Right arrows or A / D: move"
+    - "Space: flip gravity"
 creator:
   name: TheMananJain
   handle: themananjain
@@ -54,7 +62,7 @@ media:
     - games/gravity-rush/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-09-29
+  updated: 2026-10-01
 status: live
 provenance:
   foundVia: scout:vibejam-2026

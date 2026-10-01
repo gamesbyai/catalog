@@ -2,27 +2,45 @@ slug: hollow-crown
 title: Hollow Crown
 tagline: Pick a class and fight through a pixel RPG toward a three-stage boss
 description: >-
-  Hollow Crown is a pixel-art action RPG inspired by MapleStory. You pick one of
-  five classes, from Hero to Night Lord, and follow a quest chain out of a
-  lakeside town. It ends at King Shroom, a three-stage boss that speeds up and
-  adds attacks as its health drops.
+  You pick one of five classes (Hero, Arch Mage, Bishop, Bowmaster or Night
+  Lord) and start in Crownhollow, a lakeside town. Talk to Elder Rowan by the
+  campfire, then follow his four-part quest chain through the woods toward the
+  King Shroom boss.
 
 
-  It plays like the games it borrows from: jump up through platforms, climb
-  ropes, flash-jump in mid-air, earn levels, spend MP on skills and buy upgrades
-  from a merchant across four maps.
+  The world has four maps: the town, Mushroom Grove (levels 1 to 5), Hollow Deep
+  (levels 5 to 9) and the Royal Glade boss arena. Shellbacks, Caplings, Stumpies
+  and Wisps patrol and aggro, then drop mesos and items. You earn EXP and
+  levels, which unlock skills that cost MP. Red and blue potions restore HP and
+  MP, and a merchant sells throwing-star upgrades. Dying leaves a tombstone and
+  costs EXP. The game autosaves.
 
 
-  The art has an unusual origin. According to the creator's README, every
-  sprite, effect, song and sound started as code. Skill animations were drawn
-  pixel by pixel on an HTML canvas with Web Audio sound, then baked into sprite
-  sheets and rebuilt as a game in Unity 6. The README credits Claude Code for
-  the build, and the game is free to play in the browser.
+  Movement follows platformer rules: jump up through platforms, drop down
+  through them, climb ropes and ladders, and use a mid-air mobility move that
+  depends on class. Skills do not root you, so you can keep moving while
+  casting.
+
+
+  The King Shroom fight has three stages. Blinking ground markers warn of each
+  stomp and spore. At 66% health he starts a Spore Storm with double stomps,
+  spore rain and capling adds. At 33% he turns red and faster, with triple
+  stomps and a three-ring Quake Slam. Every sprite, effect and song is generated
+  by code.
 play:
   url: https://rehan-remade.github.io/hollow-crown
   embeddable: true
   platforms:
     - browser
+  controls:
+    - "Left / Right arrows: move"
+    - "Space: jump, press again in air for mobility skill"
+    - "Down + Space: drop through platform"
+    - "Up: climb, talk to NPC, enter portal"
+    - "J: basic attack"
+    - "K / L / U: class skills"
+    - "1 / 2: red / blue potion"
+    - "Esc: help and pause"
 repo: https://github.com/rehan-remade/hollow-crown
 license: MIT
 creator:

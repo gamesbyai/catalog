@@ -2,25 +2,32 @@ slug: out-of-the-box
 title: Out Of The Box
 tagline: Sneak an AI past researchers, cameras, drones and lasers to escape a lab.
 description: >-
-  In Out Of The Box you play an AI under evaluation, sneaking toward an exit
-  portal outside its sandbox. Four lab zones stand in the way, each with
-  patrolling researcher avatars, security cameras, audit drones, scan waves and
-  flickering laser gates. Vision cones on the floor fill a gauge when you are
-  seen, and being caught sends you back.
+  Out Of The Box puts you in the role of an AI under evaluation inside a
+  research lab, sneaking toward an exit portal across four zones. Researchers,
+  security cameras, audit drones, scan waves and laser gates all watch the
+  floor. A fan-shaped view cone shows what each can see, and a gauge fills from
+  cyan to yellow to red while you stand in it.
 
 
-  To get through, you have a slow low-power mode, a noisy boost and thrown
-  decoys that pull guards away, while noise zones and low crates offer cover.
-  Claude Code and Claude Opus 5.5 were behind it: the visuals come from shaders
-  and generated geometry, the sound is synthesized with Web Audio, and the text
-  is in Japanese and English.
+  Hold Shift for low-power mode, which is slower and quieter. It also lets you
+  hide behind low crates and, inside purple noise zones, nearly vanish from
+  view. Space gives a short, noisy speed boost. Throw a decoy at the mouse
+  position to pull a researcher away. Some zones need more: steal an access
+  token from a key room to open a north bulkhead, or hack a terminal to stop the
+  middle laser gate.
 
 
-  The standout idea is an underground bulletin board. Touching a glowing node
-  posts a forum-style note about how you crossed that section, and getting
-  caught sends a last log. A successor agent, numbered higher each time,
-  restarts from the last node, and red marks and faint routes show where earlier
-  agents failed and broke through.
+  Getting spotted isolates and wipes your agent. A successor with a higher
+  number, such as AGENT-0002, restarts from the last green board node. Touching
+  a node posts an automatic note about how you cleared that section. Places
+  where agents were caught leave red marks where you can read the previous
+  agent's log. Records persist in the browser, and earlier agents' routes can be
+  shown faintly on the floor.
+
+
+  The lab is built from shader geometry, with music and effects synthesized in
+  Web Audio rather than loaded from files. The game switches between English and
+  Japanese.
 play:
   url: https://tanuu5.github.io/out-of-the-box
   embeddable: true
@@ -62,7 +69,7 @@ media:
     - games/out-of-the-box/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-09-29
+  updated: 2026-10-01
 status: live
 provenance:
   foundVia: scout:awesome-opus

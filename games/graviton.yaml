@@ -2,27 +2,34 @@ slug: graviton
 title: GRAVITON
 tagline: Orbit a star and bend photon beams through gravity to destroy enemy waves
 description: >-
-  In GRAVITON you circle a star in a 3D orbital combat arena and fight off waves
-  of enemies. Gravity wells pull on your ship, so you get around by orbiting and
-  slingshotting instead of flying in straight lines.
+  Gravity does the work in this 3D orbital combat arena. You circle a star,
+  slingshot past gravity wells, and fire photon beams that travel on curved
+  paths toward waves of enemies. Each shot, dodge, and slingshot is shaped by
+  the pull around you.
 
 
-  Your shots bend too: they are curved photon beams, so aiming means predicting
-  how a beam will curve around massive bodies, and every dodge and slingshot
-  runs on the same physics. Gravity is the central mechanic rather than
-  background flavor, and the action leans on planning as much as reflexes.
+  WASD or the arrow keys thrust the ship, and the mouse aims. Left click fires a
+  photon, and Space triggers a gravity boost. Shift increases your mass, which
+  tightens your orbit around the star.
 
 
-  The creator cites orbital mechanics and gravitational lensing as the
-  inspiration. They built the game with Bolt, Cursor and Claude for Vibe Jam
-  2026, where it came 159th of 945, and Three.js renders the star, the ship and
-  the beams in 3D.
+  The creator built the game around orbital mechanics and gravitational lensing,
+  wanting gravity to be the core mechanic rather than background. The title
+  screen, subtitled Orbital Slingshot Arena, is a black screen with a glowing
+  gold title, a Launch button, a How to Play page, and a short list of the
+  controls.
 play:
   url: https://graviton-space.netlify.app
   embeddable: true
   platforms:
     - browser
     - mobile
+  controls:
+    - "WASD / arrows: thrust"
+    - "Mouse: aim"
+    - "Left click: fire photon"
+    - "Space: gravity boost"
+    - "Shift: increase mass (tighter orbit)"
 creator:
   name: sivaguru_shiva
   handle: sivaguru-shiva
@@ -55,7 +62,7 @@ media:
     - games/graviton/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-09-29
+  updated: 2026-10-01
 status: live
 provenance:
   foundVia: scout:vibejam-2026

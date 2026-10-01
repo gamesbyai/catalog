@@ -2,24 +2,30 @@ slug: my-island
 title: My-Island
 tagline: Build a cozy tropical island city from a single Town Hall and collect coins.
 description: >-
-  My Island is a relaxed city-builder set on a small patch of sand. You start
-  with one Town Hall, place homes and businesses from the shop, and tap
-  buildings to collect the coins they earn over time. Those coins go back into
-  new buildings, upgrades, and decorations as the island fills in.
+  You begin with one Town Hall on a small isometric patch of sand and grass, and
+  a pile of coins to spend. Open the shop from the Build button, place homes,
+  businesses and decor, then tap each building to collect the coins it earns
+  over time. There are no timers and no fail states.
 
 
-  Decor raises Happiness, which multiplies all income, and upgrading the Town
-  Hall raises the island level, unlocks new buildings, and expands the land from
-  9x9 to 15x15. Driftwood, shells, and wild coconuts wash up on the shore for
-  bonus coins and rare Shells. Pip the parrot wanders the beaches, a nod to the
-  jam's Familiar theme. There are 14 buildings, a golden-hour day cycle,
-  drifting clouds, and sailboats, with progress saved in the browser.
+  Coins go back into new buildings and per-building upgrades. Decor raises
+  Happiness, which multiplies all income. The top bar tracks coins, rare Shells,
+  island level, population, joy, income per minute and the current boost. A goal
+  line under it names the next target, such as a population and coin cost for
+  growing the island.
 
 
-  The creator describes the development as heavily AI-assisted, built with
-  Phaser 3 and TypeScript. All art and the generative soundtrack are produced
-  procedurally in code, so the game uses no third-party assets. It was made for
-  AI Browser Game Jam 3.
+  Raising population lets you upgrade the Town Hall, which lifts the island
+  level, unlocks new buildings and expands the land from 9x9 to 15x15.
+  Driftwood, shells and wild coconuts wash up on the shoreline over time.
+  Clearing them pays bonus coins and rare Shells.
+
+
+  The game has 14 buildings across homes, businesses and decor, including beach
+  huts, coconut stands, tiki bars and a lighthouse. A parrot named Pip wanders
+  the beaches. The scene has a golden hour day cycle, drifting clouds and
+  sailboats. Progress auto-saves in the browser. The art and music are generated
+  in code, and development was heavily AI-assisted.
 play:
   url: https://maokoroku.itch.io/my-island
   embeddable: false
@@ -59,7 +65,7 @@ media:
     - games/my-island/shot-2
 dates:
   added: 2026-09-30
-  updated: 2026-09-30
+  updated: 2026-10-01
 status: live
 provenance:
   foundVia: scout:aibgj-3

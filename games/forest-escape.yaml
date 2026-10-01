@@ -2,26 +2,29 @@ slug: forest-escape
 title: Forest Escape
 tagline: Find seven blue flowers in a dark forest while spirits chase you.
 description: >-
-  Forest Escape drops you into a dark forest with nothing but a flashlight and
-  one job: find seven blue flowers. It plays as first-person survival horror,
-  and while you search between the trees, spirits roam the woods and hunt you as
-  you look.
+  A dark forest hides seven blue flowers, and spirits roam it while you search.
+  The goal is to collect all seven without being caught by a spirit. A counter
+  in the top left shows how many flowers you have collected out of seven.
 
 
-  The flashlight is your main tool for finding the way, which keeps the view
-  narrow and the tension high. The pursuing spirits turn every stretch of open
-  ground into a risk, so the search becomes a trade between pushing on toward
-  the next flower and staying out of their reach.
+  Move with WASD, ZQSD or the arrow keys, and look around with the mouse. Press
+  F or Space to toggle the flashlight. Flowers are only visible while the
+  flashlight is on, and spirits can't see you while it is off.
 
 
-  The creator credits Cursor and Claude for the build, with Three.js handling
-  the dark 3D forest and its flashlight lighting in the browser. It is a
-  single-player game, so the only company in the woods is the spirits.
+  A battery meter in the top left starts at 100% and tracks the flashlight's
+  charge. If the battery runs out, you lose. A pause button sits in the top
+  right corner. The title screen also has share and credits buttons, plus links
+  to app store versions.
 play:
   url: https://escape.alexandre-grisey.fr
   embeddable: true
   platforms:
     - browser
+  controls:
+    - "WASD / ZQSD / arrow keys: move"
+    - "Mouse: look around"
+    - "F / Space: toggle flashlight"
 creator:
   name: Alexandre Grisey
   handle: alexandre-grisey
@@ -50,7 +53,7 @@ media:
     - games/forest-escape/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-09-29
+  updated: 2026-10-01
 status: live
 provenance:
   foundVia: scout:awesome-cc0

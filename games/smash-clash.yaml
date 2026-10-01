@@ -3,21 +3,23 @@ title: Smash&Clash
 tagline: Battle a second player with cards on a compact 3×5 grid in short, tense
   matches.
 description: >-
-  Smash&Clash is a two-player card battle fought on a compact 3×5 grid. Players
-  take turns placing and using cards on the board, competing for control of the
-  grid. Matches are built to be short and tense, so a game plays out as a quick
-  burst of tactical decisions rather than a long session.
+  The start screen shows the Smash&Clash logo over a rating counter that begins
+  at 1000, with a large pink Play button beneath it. A rules panel labeled Pick
+  Your Rules offers two choices: Mutators, listed with chess hops, power tiles
+  and overruns, and Classic, labeled as the original game. Each has a small grid
+  icon with colored tiles.
 
 
-  It was made with Cursor, runs on canvas, and plays online against a second
-  player, on phones and desktops alike. In Vibe Jam 2026 it placed 109th of 945
-  entries.
+  Matches are two-player card battles on a 3×5 grid. Small wins build on each
+  other into momentum, and any single move can shift the balance. The creator
+  aimed for short, intense rounds of competitive strategy rather than long,
+  drawn-out games.
 
 
-  Momentum drives the design. Small wins on the board add up, and each move can
-  tip the balance toward one side or the other. The grid is compact enough to
-  keep the options readable, so every placement carries weight, and comebacks
-  stay possible.
+  Below Play, the menu lists 2 Players · Local, Play a Friend and Friends.
+  Profile and settings buttons sit in the top right corner. A cookie notice with
+  Accept and Decline buttons appears over the menu, and it states that the game
+  can be played without accepting.
 play:
   url: https://smashandclash.in
   embeddable: false
@@ -52,7 +54,7 @@ media:
     - games/smash-clash/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-09-29
+  updated: 2026-10-01
 status: live
 provenance:
   foundVia: scout:vibejam-2026

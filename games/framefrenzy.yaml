@@ -3,21 +3,21 @@ title: FrameFrenzy
 tagline: Rebuild a scrambled sliding puzzle made from a YouTube video that keeps
   playing.
 description: >-
-  FrameFrenzy turns any public YouTube link into a sliding tile puzzle. Choose a
-  3×3 or 4×4 grid, press Drop In, and slide tiles until the picture is back in
-  order. The round ends when the video does, so the footage itself is the clock.
+  The round is a race against the clip's own running time: rebuild the scrambled
+  picture before the video finishes. You enter a YouTube address, choose a 3×3
+  or 4×4 grid, press Drop In, and tap once when the countdown ends.
 
 
-  Every tile is a live crop of the same moving clip, so there is no still image
-  to study. The picture you are chasing keeps changing, which makes the puzzle
-  about motion as much as shape. Finishing a round produces a shareable result
-  with time, move count, and a grid of green squares, plus a link a friend can
-  use to try the same video.
+  Every tile shows a live crop of the same playing footage, so the target image
+  keeps moving as you work. You slide pieces into the empty space until the
+  frame lines up. Music clips, trailers, memes and lectures can all serve as the
+  source.
 
 
-  The creator says it was built with Claude Opus 4.6 and GitHub Copilot using
-  GPT-5.4. The code is open source on GitHub and the game is hosted on
-  Cloudflare Pages.
+  A finished puzzle produces a result card with your time and move count, shown
+  beside a grid of colored squares. The video and grid size are encoded in the
+  link, so a friend can open the identical puzzle and try to beat your time.
+  Input can come from a keyboard, mouse or touchscreen.
 play:
   url: https://kevinloeffler.itch.io/framefrenzy
   embeddable: false
@@ -61,7 +61,7 @@ media:
     - games/framefrenzy/shot-2
 dates:
   added: 2026-09-30
-  updated: 2026-09-30
+  updated: 2026-10-01
 status: live
 provenance:
   foundVia: scout:aibgj-2

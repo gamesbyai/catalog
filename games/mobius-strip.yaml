@@ -2,21 +2,25 @@ slug: mobius-strip
 title: Mobius Strip
 tagline: Race and fight on gravity-defying tracks until you're the last rider alive.
 description: >-
-  The last rider alive wins each round of Mobius Strip, an online combat racer
-  on twisting tracks that ignore normal gravity. You tear along surfaces that
-  bend and flip while dodging explosions and trying to take out your rivals
-  before they take you out.
+  Start on the line of a dark, neon-edged track that curves through the clouds,
+  with two rivals, Nyx Steel and Kai Blaze, beside your red craft. A countdown
+  runs, then all three race, and the last rider left alive wins.
 
 
-  Working in Claude Code, the creator describes using AI like a brush rather
-  than a shortcut: it helped with art, animation, audio and visual polish, areas
-  they say they are less strong in. The game runs on Babylon.js and finished
-  240th of 945 at Vibe Jam 2026.
+  Combat is part of the race. A tutorial pilot tells you to destroy an enforcer
+  ahead on the track to collect XP. Enemies carry a name tag with a health
+  percentage, and a level counter at the bottom fills as XP comes in.
 
 
-  The presentation leans hard into spectacle. An electric guitar soundtrack,
-  blasts and a strong sense of velocity make each race loud and chaotic, and
-  with multiplayer, the rivals you are trying to outlast can be other people.
+  The screen tracks a lot at once: a ranked list of racers showing level, hull
+  and distance, a minimap of the oval course, a speedometer in mph, and a panel
+  for bonuses earned from level-ups. A row of ability slots with a draw and
+  discard pile sits at the bottom.
+
+
+  The creator used AI for art, animation, audio and visual polish, areas they
+  say they are less strong in. The tracks bend gravity, and explosions and
+  guitar solos accompany the race.
 play:
   url: https://mobius-strip-game.com
   embeddable: true
@@ -52,7 +56,7 @@ media:
     - games/mobius-strip/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-09-29
+  updated: 2026-10-01
 status: live
 provenance:
   foundVia: scout:vibejam-2026
