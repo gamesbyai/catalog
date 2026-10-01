@@ -174,7 +174,8 @@ test('captureOne: only the game frame is read from an itch.io page, even with a 
     for (const [name, body, frame] of fixtures) await t.test(name, async () => {
       markup = PAGES['/game'].replace('<title>fixture</title>', `<title>src="${decoy}"</title>`) + body;
       navigations = [];
-      const res = await captureOne(pageUrl, join(tmp(), 'itch-frame'), { ...FAST, times: [100] });
+      // The first fixture starts a cold browser inside the deadline; 6 s was too tight on slow CI runners.
+      const res = await captureOne(pageUrl, join(tmp(), 'itch-frame'), { ...FAST, times: [100], deadline: 20_000 });
       assert.deepEqual(navigations, frame ? [pageUrl, frame] : [pageUrl]);
       assert.equal(page.content.mock.callCount(), 0, 'the whole page markup is never read');
       assert.equal(res.ok, true, JSON.stringify(res));
