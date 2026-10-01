@@ -2,25 +2,35 @@ slug: robot-royale
 title: Robot Royale
 tagline: Fight through a ruined cyber-city arena, upgrading from bare fists to RPGs.
 description: >-
-  You start Robot Royale with bare fists and finish with explosive RPGs, if you
-  survive long enough to reach them. The setting is a dying cyber-city, and the
-  format is a single-player arena shooter. You fight your way up through a
-  series of stronger weapons, and a run is a push to stay alive in the arena
-  while your firepower escalates.
+  You start with bare fists in a decaying cyber-city arena and fight toward
+  heavier weapons, with explosive RPGs at the top of the progression. Move with
+  WASD and attack with the mouse. The camera looks down at an angle on a small
+  blocky robot with a cyan eye.
 
 
-  The premise plays on how powerful robots could become in the future once they
-  are combined with AI. According to the creator, it was built with Claude Code,
-  and it ranked 357th of 945 in the final Vibe Jam 2026 standings.
+  A panel in the corner tracks the current phase, elapsed time, scrap collected,
+  your level, and the level at which the next boss appears, which reads Nv.5 at
+  the start. It also names your equipped weapon. A red health bar runs along the
+  bottom of the screen.
 
 
-  There is no waiting around. A run starts the moment the page opens, and the
-  whole game is contained in a single file built on Three.js.
+  Shift dashes, and the panel shows when the dash is ready again. Red medical
+  pickups lie scattered across the floor between tall, angular towers, and a
+  green ring labeled as a portal sits near the arena edge. Esc pauses the game.
+
+
+  The creator built it around the idea of robots growing more powerful once
+  combined with AI. The whole game is a single Three.js file.
 play:
   url: https://robot-royale.pages.dev
   embeddable: true
   platforms:
     - browser
+  controls:
+    - "WASD: move"
+    - "Mouse: attack"
+    - "Shift: dash"
+    - "Esc: pause"
 creator:
   name: marssaum
   handle: marssaum
@@ -51,7 +61,7 @@ media:
     - games/robot-royale/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-09-29
+  updated: 2026-10-01
 status: live
 provenance:
   foundVia: scout:vibejam-2026

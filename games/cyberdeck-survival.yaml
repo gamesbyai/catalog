@@ -2,27 +2,31 @@ slug: cyberdeck-survival
 title: Cyberdeck Survival
 tagline: Play cards, parry attacks, and outlast enemy waves in a cyberpunk arena.
 description: >-
-  Cyberdeck Survival mixes deck-building into a cyberpunk arena survivor. You
-  fight off waves of enemies in a closed arena by playing cards and parrying
-  incoming attacks, and a run ends when the boss goes down and a portal opens to
+  Cyberdeck Survivor drops you into a cyberpunk arena where waves of enemies
+  close in, and you survive by moving, using a Basic Attack, and playing battle
+  chips from your deck. Move with WASD or the arrow keys. Chips trigger on Q, E,
+  R and F.
+
+
+  Incoming hits can be parried with Space. Over a run you survive waves, choose
+  rewards, and work toward a boss fight. Defeating the boss opens a portal to
   the next game.
 
 
-  That portal connects it to other Vibe Jam 2026 games, so finishing a run sends
-  you on to the next one. The creator used Codex and the Phaser engine, set it
-  up to run on phones as well, and it placed 353rd of 945 in that jam.
-
-
-  The horde-survival loop is familiar from Vampire Survivors-style games, but
-  here each card and each parry carries weight. Timing your defense matters as
-  much as choosing what to play, which keeps the action from turning into simple
-  auto-fire.
+  The main menu offers Start Run, a Battle Chips screen, Settings and Credits.
+  This is version 0.0.1, an early alpha. The creator lists demo polish, clearer
+  combat tells, balance, deeper run progression, arenas, cyberware, events and a
+  branching map as next updates.
 play:
   url: https://elvlin.store/games/cyberdeck-survivor
   embeddable: true
   platforms:
     - browser
     - mobile
+  controls:
+    - "WASD / arrows: move"
+    - "Space: parry"
+    - "Q / E / R / F: battle chips"
 creator:
   name: Elvlin89
   handle: elvlin89
@@ -53,7 +57,7 @@ media:
     - games/cyberdeck-survival/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-09-29
+  updated: 2026-10-01
 status: live
 provenance:
   foundVia: scout:vibejam-2026

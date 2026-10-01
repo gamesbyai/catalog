@@ -2,27 +2,37 @@ slug: bayou-blitz
 title: Bayou Blitz
 tagline: Collect crawfish through the bayou while dodging hungry gators.
 description: >-
-  Bayou Blitz sends you through a swampy Louisiana bayou to gather crawfish,
-  with hungry gators along the route. A run comes down to three things: picking
-  a safe path through the wetland, grabbing as much food as you can and keeping
-  clear of the predators.
+  Move with WASD or the arrow keys through a mall level while a pursuer who
+  likes you far too much chases you. Keep the Loneliness meter between 20 and
+  80. Running makes you lonely, and getting caught makes her cling, so you have
+  to stay between the two.
 
 
-  The creator describes themselves as a returning Vibe Jam participant who
-  enjoys the competition. Their 2026 entry was built with Cursor, renders its 3D
-  scenes with Three.js, plays on phones as well as in a browser and finished
-  147th of 945 entries.
+  Shift dashes with invincibility frames, and Space uses a power-up picked up by
+  walking over a glowing pad. If she grabs you, alternate A and D to struggle
+  free. The HUD shows the Loneliness value, a Clingy count, a countdown timer
+  and a running score.
 
 
-  The goal is easy to read at a glance: more crawfish, no gator contact. The
-  Louisiana flavor gives the 3D action-adventure a clear identity, and online
-  multiplayer means the bayou does not have to be a solo trip.
+  The first level is a mall with an alt-fashion store, with store islands and
+  one-way escalators. Mall-walkers slow you down, and you survive for 2:00 to
+  clear it. Four more levels are locked at the start: a cemetery at midnight, a
+  goth club, a coffee shop and her apartment. Left and right arrows choose a
+  level, and Enter starts it.
 play:
   url: https://gogg.cloud
   embeddable: true
   platforms:
     - browser
     - mobile
+  controls:
+    - "WASD / arrows: move"
+    - "Shift: dash"
+    - "Space: use power-up"
+    - "A / D: alternate to struggle free"
+    - "Esc: pause"
+    - "Left / Right arrows: choose level"
+    - "Enter: start"
 creator:
   name: lanb135
   handle: lanb135
@@ -51,7 +61,7 @@ media:
     - games/bayou-blitz/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-09-29
+  updated: 2026-10-01
 status: live
 provenance:
   foundVia: scout:vibejam-2026
