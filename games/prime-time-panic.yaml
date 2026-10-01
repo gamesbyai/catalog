@@ -1,0 +1,54 @@
+slug: prime-time-panic
+title: prime time panic
+tagline: Run a TV production studio in a simulation that parodies prime-time media.
+description: >-
+  Prime Time Panic is a simulation that puts the player in charge of a
+  television operation, with a comedic take on how media gets made. It is
+  described as Game Dev Story meets MADtv, so the setup follows the
+  management-sim format of building and running a studio, with sketch-comedy
+  humor layered over it.
+
+
+  The media parody angle is the main hook. Instead of shipping software, the
+  player deals with the chaos of getting shows onto the air, and the tone leans
+  toward satire of the industry. The creator says the premise comes from lived
+  experience, which gives the jokes a personal slant.
+
+
+  The game was entered in Vibe Jam 2026, where it placed 93rd out of 945
+  entries. It is a single-player experience that runs on desktop.
+play:
+  url: https://prime-time-panic.com
+  embeddable: true
+  platforms:
+    - browser
+creator:
+  name: bimon
+  handle: bimon
+  x: bimon
+made:
+  models: []
+  tools: []
+  aiShare: most
+  source: Vibe Jam 2026 submission form
+  evidence: inferred
+tech:
+  multiplayer: single
+genres:
+  - simulation
+  - management
+jam:
+  event: vibe-jam-2026
+  rank: 93
+  entries: 945
+media:
+  cover: games/prime-time-panic/cover
+  screenshots:
+    - games/prime-time-panic/shot-1
+    - games/prime-time-panic/shot-2
+dates:
+  added: 2026-10-01
+  updated: 2026-10-01
+status: live
+provenance:
+  foundVia: scout:vibejam-2026

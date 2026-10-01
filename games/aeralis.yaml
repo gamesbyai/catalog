@@ -1,0 +1,61 @@
+slug: aeralis
+title: Aeralis
+tagline: Fly and fight other players in a fast multiplayer third-person space shooter.
+description: >-
+  Aeralis is a multiplayer third-person shooter that runs in the browser. It is
+  billed as an MMOTPS, a massively multiplayer take on the third-person shooter,
+  with a space theme. Players move quickly through the environment and fight
+  other people sharing the same session. Movement and aim decide who comes out
+  ahead.
+
+
+  The design draws on fast movement shooters such as Tribes, Destiny, and
+  Titanfall, so speed and mobility shape how fights play out. The setting
+  borrows from space games like Star Citizen, Starfield, and No Man's Sky,
+  giving the shooting a sci-fi backdrop instead of a grounded military one.
+
+
+  Aeralis was built with Three.js and entered in the 2026 Vibe Jam, where it
+  ranked 61st among 945 entries. The creator built it with GitHub Copilot,
+  using Claude Opus 4.6 and Claude Sonnet 4.6.
+play:
+  url: https://playaeralis.com
+  embeddable: true
+  platforms:
+    - browser
+creator:
+  name: duckocancode
+  handle: duckocancode
+  x: duckocancode
+made:
+  models:
+    - claude-opus-4-6
+    - claude-sonnet-4-6
+  providers:
+    - anthropic
+  tools:
+    - github-copilot
+  aiShare: most
+  source: Vibe Jam 2026 submission form
+  evidence: creator
+tech:
+  engine: threejs
+  multiplayer: online
+genres:
+  - action
+  - shooter
+jam:
+  event: vibe-jam-2026
+  rank: 61
+  entries: 945
+media:
+  cover: games/aeralis/cover
+  screenshots:
+    - games/aeralis/shot-1
+    - games/aeralis/shot-2
+dates:
+  added: 2026-10-01
+  updated: 2026-10-01
+status: live
+provenance:
+  foundVia: scout:vibejam-2026
