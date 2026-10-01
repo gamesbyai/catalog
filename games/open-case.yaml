@@ -1,0 +1,59 @@
+slug: open-case
+title: open case
+tagline: Read evidence, spot contradictions, and answer six questions to close a
+  homicide case.
+description: >-
+  Open Case is a murder mystery about a reopened homicide investigation. The
+  player goes through the case evidence, looks for statements and facts that
+  contradict each other, and fills in a Casebook made up of six answers. Once
+  the Casebook is complete, the final report goes in.
+
+
+  The structure keeps the focus on deduction. Instead of chasing action, the
+  player compares the material on hand and works out who the killer is from what
+  does not add up. The six-answer Casebook gives each run a clear checklist to
+  work toward and a defined end point.
+
+
+  The game was entered in Vibe Jam 2026. The creator's submission lists Claude
+  Code as the tool used to build it, and it is set up to work on mobile as well
+  as desktop.
+play:
+  url: https://case.stephapp.com
+  embeddable: true
+  platforms:
+    - browser
+    - mobile
+creator:
+  name: YaoLabs
+  handle: yaolabs
+  x: YaoLabs
+made:
+  models: []
+  providers:
+    - anthropic
+  tools:
+    - claude-code
+  aiShare: most
+  source: Vibe Jam 2026 submission form
+  evidence: creator
+tech:
+  multiplayer: single
+genres:
+  - puzzle
+  - adventure
+jam:
+  event: vibe-jam-2026
+  rank: 629
+  entries: 945
+media:
+  cover: games/open-case/cover
+  screenshots:
+    - games/open-case/shot-1
+    - games/open-case/shot-2
+dates:
+  added: 2026-10-01
+  updated: 2026-10-01
+status: live
+provenance:
+  foundVia: scout:vibejam-2026

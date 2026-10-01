@@ -1,0 +1,60 @@
+slug: keeper-light
+title: Keeper Light
+tagline: Upgrade your boat and lighthouse by day, then defend the light through
+  each night's waves.
+description: >-
+  Keeper Light is a survival action game built around a lighthouse. Each run
+  alternates between daytime and night. During the day you spend your resources
+  on upgrades for your boat and for the lighthouse beam. When night falls, waves
+  of enemies arrive, and you have to hold them off so the lighthouse stays
+  standing.
+
+
+  The nights grow harder as the run goes on, so the choices made in daylight
+  decide how long the light survives. The split between preparing and defending
+  gives the roguelite structure a clear rhythm, and the beam upgrades make the
+  lighthouse an active part of the defense rather than just something to
+  protect.
+
+
+  The game was entered in Vibe Jam 2026 and runs on Three.js. The creator
+  describes it as a first game made for a game jam and says it was built with
+  Cursor.
+play:
+  url: https://vibejam.peterrock.dev
+  embeddable: true
+  platforms:
+    - browser
+creator:
+  name: PetrSeifer87103
+  handle: petrseifer87103
+  x: PetrSeifer87103
+made:
+  models: []
+  tools:
+    - cursor
+  aiShare: most
+  source: Vibe Jam 2026 submission form
+  evidence: creator
+tech:
+  engine: threejs
+  multiplayer: single
+genres:
+  - action
+  - survival
+  - roguelike
+jam:
+  event: vibe-jam-2026
+  rank: 608
+  entries: 945
+media:
+  cover: games/keeper-light/cover
+  screenshots:
+    - games/keeper-light/shot-1
+    - games/keeper-light/shot-2
+dates:
+  added: 2026-10-01
+  updated: 2026-10-01
+status: live
+provenance:
+  foundVia: scout:vibejam-2026

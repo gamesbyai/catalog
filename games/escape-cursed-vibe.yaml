@@ -1,0 +1,59 @@
+slug: escape-cursed-vibe
+title: Escape cursed vibe
+tagline: Race friends through five deadly themed stages and dodge hazards to
+  escape first
+description: >-
+  Escape Cursed Vibe is a 3D dodge map for up to four players. Cursed friends
+  run through five deadly stages, each with its own theme, and try to get out
+  alive. Each round is a race: dodge what the stage throws at you, keep moving,
+  and reach the exit before the others.
+
+
+  The format is inspired by Warcraft 3 custom maps, the community-made dodge and
+  survival courses that groups of friends play together. Here that idea runs in
+  the browser as a short, competitive multiplayer session, with action and
+  platforming mixed together. Every stage changes the look and the dangers, so
+  the course stays varied from start to finish.
+
+
+  The game was a Vibe Jam 2026 entry, placing 612th out of 945 submissions. The
+  creator built it in Three.js and used Claude Code for the development work.
+play:
+  url: https://escape-cursed-vibe.pages.dev
+  embeddable: true
+  platforms:
+    - browser
+creator:
+  name: Speazed
+  handle: speazed
+  x: Speazed
+made:
+  models: []
+  providers:
+    - anthropic
+  tools:
+    - claude-code
+  aiShare: most
+  source: Vibe Jam 2026 submission form
+  evidence: creator
+tech:
+  engine: threejs
+  multiplayer: online
+genres:
+  - action
+  - platformer
+jam:
+  event: vibe-jam-2026
+  rank: 612
+  entries: 945
+media:
+  cover: games/escape-cursed-vibe/cover
+  screenshots:
+    - games/escape-cursed-vibe/shot-1
+    - games/escape-cursed-vibe/shot-2
+dates:
+  added: 2026-10-01
+  updated: 2026-10-01
+status: live
+provenance:
+  foundVia: scout:vibejam-2026

@@ -1,0 +1,56 @@
+slug: dungeonpunk-lite
+title: Dungeonpunk LITE
+tagline: Grind levels in a multiplayer online dungeon world with no level cap.
+description: >-
+  Dungeonpunk LITE is a browser-based multiplayer RPG built around level
+  grinding. Players take on an adventure in a shared online world, fighting to
+  gain levels with no ceiling on how far a character can climb. The only thing
+  that ends a climb is the character's own death.
+
+
+  The game is a lightweight take on the classic online RPGs the creator grew up
+  with, and it is directly inspired by Dungeonpunk Online. Its pitch centers on
+  the grind: keep leveling, keep pushing deeper, and decide how much risk to
+  accept. It runs in 3D and is playable on mobile as well as desktop.
+
+
+  It was entered in Vibe Jam 2026, where it placed 656th out of 945 entries. The
+  creator says it was built with Cursor, and the 3D rendering uses Three.js.
+play:
+  url: https://lite.dungeonpunk.online
+  embeddable: true
+  platforms:
+    - browser
+    - mobile
+creator:
+  name: dungeonpunk
+  handle: dungeonpunk
+  x: dungeonpunk
+made:
+  models: []
+  tools:
+    - cursor
+  aiShare: most
+  source: Vibe Jam 2026 submission form
+  evidence: creator
+tech:
+  engine: threejs
+  multiplayer: online
+genres:
+  - rpg
+  - adventure
+jam:
+  event: vibe-jam-2026
+  rank: 656
+  entries: 945
+media:
+  cover: games/dungeonpunk-lite/cover
+  screenshots:
+    - games/dungeonpunk-lite/shot-1
+    - games/dungeonpunk-lite/shot-2
+dates:
+  added: 2026-10-01
+  updated: 2026-10-01
+status: live
+provenance:
+  foundVia: scout:vibejam-2026

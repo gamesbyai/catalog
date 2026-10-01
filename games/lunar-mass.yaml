@@ -1,0 +1,56 @@
+slug: lunar-mass
+title: Lunar Mass
+tagline: Deploy bots to build a lunar mass driver while carving new craters in the Moon.
+description: >-
+  Lunar Mass is a 3D building sim set on the Moon. The player constructs a mass
+  driver, a huge launch structure, by putting an arsenal of bots to work on the
+  surface. Progress comes from managing those bots and pushing the megastructure
+  toward completion.
+
+
+  Construction leaves a mark on the terrain, since new lunar craters appear
+  while the work goes on. The mix of adventure, strategy, and simulation gives
+  the build a planning side as well as a hands-on one.
+
+
+  It was submitted to Vibe Jam 2026 and runs on Three.js. The creator built it
+  with Cursor. They describe it as a way to learn about the Lunar Mass Driver
+  project with the Terafab team, and they plan to grow it into a more realistic
+  simulation later.
+play:
+  url: https://lunar-mass.vercel.app
+  embeddable: true
+  platforms:
+    - browser
+creator:
+  name: lgvw3
+  handle: lgvw3
+  x: lgvw3
+made:
+  models: []
+  tools:
+    - cursor
+  aiShare: most
+  source: Vibe Jam 2026 submission form
+  evidence: creator
+tech:
+  engine: threejs
+  multiplayer: single
+genres:
+  - simulation
+  - strategy
+jam:
+  event: vibe-jam-2026
+  rank: 637
+  entries: 945
+media:
+  cover: games/lunar-mass/cover
+  screenshots:
+    - games/lunar-mass/shot-1
+    - games/lunar-mass/shot-2
+dates:
+  added: 2026-10-01
+  updated: 2026-10-01
+status: live
+provenance:
+  foundVia: scout:vibejam-2026

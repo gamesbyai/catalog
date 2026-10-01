@@ -1,0 +1,58 @@
+slug: vibecorps
+title: VibeCorps
+tagline: Type prompts, grow a startup, and guide it from solo founder to
+  acquisition target.
+description: >-
+  VibeCorps is an incremental simulation about building a software startup. You
+  begin as a solo founder who types prompts, and your output grows as you bring
+  on AI agents that write the code for you. A run follows the company from a
+  one-person effort toward the point where a larger buyer wants to acquire it.
+
+
+  The premise draws on how programming has changed, with the player's role
+  shifting from writing code by hand to directing automated helpers. The creator
+  says the game comes from their own experience in startups, which shapes the
+  founder-to-exit arc and gives the progression a personal point of view.
+
+
+  It was entered in Vibe Jam 2026, and the creator states that it was built with
+  Claude Code. The jam entry places the game among hundreds of submissions, and
+  it plays as a single-player experience without multiplayer features.
+play:
+  url: https://vibecorps.pages.dev
+  embeddable: true
+  platforms:
+    - browser
+creator:
+  name: compnski
+  handle: compnski
+  x: compnski
+made:
+  models: []
+  providers:
+    - anthropic
+  tools:
+    - claude-code
+  aiShare: most
+  source: Vibe Jam 2026 submission form
+  evidence: creator
+tech:
+  multiplayer: single
+genres:
+  - simulation
+  - idle
+jam:
+  event: vibe-jam-2026
+  rank: 620
+  entries: 945
+media:
+  cover: games/vibecorps/cover
+  screenshots:
+    - games/vibecorps/shot-1
+    - games/vibecorps/shot-2
+dates:
+  added: 2026-10-01
+  updated: 2026-10-01
+status: live
+provenance:
+  foundVia: scout:vibejam-2026

@@ -1,0 +1,60 @@
+slug: protect-the-sheep
+title: Protect the Sheep
+tagline: Build towers to hold off thirty-five waves of enemies and keep one sheep alive.
+description: >-
+  Protect the Sheep is a tower defense game in which the player guards a single
+  sheep against thirty-five waves of attackers. Each run is a matter of placing
+  towers along the enemy route and choosing from six tower archetypes, adjusting
+  the defense as the waves get harder. If the sheep survives to the end, the run
+  is won.
+
+
+  The game draws on the classic Warcraft III tower defense maps that its creator
+  loved as a kid, and that heritage shapes its structure: a fixed wave count, a
+  variety of tower roles, and a single thing to protect. The six archetypes give
+  the player real choices about how to spend resources and where to build.
+
+
+  It runs in the browser on Three.js and works on mobile as well as desktop. It
+  also has multiplayer support. The creator built it with Claude Code and
+  entered it in Vibe Jam 2026.
+play:
+  url: https://protect-the-sheep.henrikvilhelmberglund.com
+  embeddable: true
+  platforms:
+    - browser
+    - mobile
+creator:
+  name: henrikvberglund
+  handle: henrikvberglund
+  x: henrikvberglund
+made:
+  models: []
+  providers:
+    - anthropic
+  tools:
+    - claude-code
+  aiShare: most
+  source: Vibe Jam 2026 submission form
+  evidence: creator
+tech:
+  engine: threejs
+  multiplayer: online
+genres:
+  - tower-defense
+  - strategy
+jam:
+  event: vibe-jam-2026
+  rank: 610
+  entries: 945
+media:
+  cover: games/protect-the-sheep/cover
+  screenshots:
+    - games/protect-the-sheep/shot-1
+    - games/protect-the-sheep/shot-2
+dates:
+  added: 2026-10-01
+  updated: 2026-10-01
+status: live
+provenance:
+  foundVia: scout:vibejam-2026

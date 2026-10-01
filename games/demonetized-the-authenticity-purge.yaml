@@ -1,0 +1,62 @@
+slug: demonetized-the-authenticity-purge
+title: "DEMONETIZED: The Authenticity Purge"
+tagline: Survive waves of enemies in a cyberpunk satire, picking cards and
+  upgrades along the way.
+description: >-
+  DEMONETIZED: The Authenticity Purge is a cyberpunk roguelite survivor with
+  shooter action. You play against a corporate AI that removes human creators
+  from its platform while keeping the ads running. Each run is a short, compact
+  battle where you fight off enemies, collect upgrades, and build up your power
+  through cards.
+
+
+  The game works as satire. It takes the corporate phrase "brand safety" and
+  shows it as a cover for erasing human creators while still profiting from
+  their work. The premise draws on the recent debate over platform
+  demonetization and channel removals, and it shapes the tone of the whole game.
+
+
+  The creator wanted something small and playable right away, since they enjoy
+  progression-based games. It runs in the browser on Three.js and supports
+  mobile devices. It was entered in Vibe Jam 2026, and the creator used Codex
+  while building it.
+play:
+  url: https://demonetized.iaen.es
+  embeddable: true
+  platforms:
+    - browser
+    - mobile
+creator:
+  name: TheINAOG
+  handle: theinaog
+  x: TheINAOG
+made:
+  models: []
+  providers:
+    - openai
+  tools:
+    - codex
+  aiShare: most
+  source: Vibe Jam 2026 submission form
+  evidence: creator
+tech:
+  engine: threejs
+  multiplayer: single
+genres:
+  - shooter
+  - roguelike
+jam:
+  event: vibe-jam-2026
+  rank: 601
+  entries: 945
+media:
+  cover: games/demonetized-the-authenticity-purge/cover
+  screenshots:
+    - games/demonetized-the-authenticity-purge/shot-1
+    - games/demonetized-the-authenticity-purge/shot-2
+dates:
+  added: 2026-10-01
+  updated: 2026-10-01
+status: live
+provenance:
+  foundVia: scout:vibejam-2026

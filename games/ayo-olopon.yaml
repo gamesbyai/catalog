@@ -1,0 +1,55 @@
+slug: ayo-olopon
+title: Ayo Olopon.
+tagline: Play Ayo, the West African seed-sowing board game, in a 3D setting.
+description: >-
+  Ayo Olopon is a 3D digital version of Ayo, a traditional West African strategy
+  board game with deep roots in Nigerian culture. Players take turns on the
+  board, working through the classic strategy of the original, and the game
+  supports multiplayer so a match can be played against another person.
+
+
+  The project grew out of the creator's childhood memories of watching people
+  play Ayo. It aims to introduce the game to a new generation, treating it as a
+  way to learn about the culture as well as to have fun. The 3D presentation
+  gives a familiar heritage pastime a modern look.
+
+
+  The creator built it with Windsurf, and it runs on Three.js. It was entered in
+  Vibe Jam 2026 under the Strategy and Board Game categories.
+play:
+  url: https://ayo-game-zeta.vercel.app
+  embeddable: true
+  platforms:
+    - browser
+creator:
+  name: that_LaravelGuy
+  handle: that-laravelguy
+  x: that_LaravelGuy
+made:
+  models: []
+  tools:
+    - windsurf
+  aiShare: most
+  source: Vibe Jam 2026 submission form
+  evidence: creator
+tech:
+  engine: threejs
+  multiplayer: online
+genres:
+  - board
+  - strategy
+jam:
+  event: vibe-jam-2026
+  rank: 646
+  entries: 945
+media:
+  cover: games/ayo-olopon/cover
+  screenshots:
+    - games/ayo-olopon/shot-1
+    - games/ayo-olopon/shot-2
+dates:
+  added: 2026-10-01
+  updated: 2026-10-01
+status: live
+provenance:
+  foundVia: scout:vibejam-2026

@@ -1,0 +1,55 @@
+slug: street-brawl
+title: Street Brawl
+tagline: Fight through a back alley with friends in a side-scrolling brawler.
+description: >-
+  Street Brawl is a side-scrolling beat 'em up set in a back alley. Players push
+  forward through the street and fight their way past opponents, and friends can
+  join in thanks to the multiplayer support. The tone is rough and brutal, in
+  the spirit of classic arcade fighters.
+
+
+  The game draws on the arcade titles its creator played when they were younger,
+  and that influence shapes its straightforward, fight-first design. It runs in
+  the browser on a 3D engine and was entered in Vibe Jam 2026, where it placed
+  626th out of 945 entries.
+
+
+  The creator built it with Cursor, and the rendering is handled with Three.js,
+  which is what lets the brawler run directly in a web page.
+play:
+  url: https://crimson-hearts.vercel.app
+  embeddable: true
+  platforms:
+    - browser
+creator:
+  name: SoloDevelling
+  handle: solodevelling
+  x: SoloDevelling
+made:
+  models: []
+  tools:
+    - cursor
+  aiShare: most
+  source: Vibe Jam 2026 submission form
+  evidence: creator
+tech:
+  engine: threejs
+  multiplayer: online
+genres:
+  - action
+  - arcade
+jam:
+  event: vibe-jam-2026
+  rank: 626
+  entries: 945
+media:
+  cover: games/street-brawl/cover
+  screenshots:
+    - games/street-brawl/shot-1
+    - games/street-brawl/shot-2
+dates:
+  added: 2026-10-01
+  updated: 2026-10-01
+status: live
+provenance:
+  foundVia: scout:vibejam-2026

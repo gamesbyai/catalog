@@ -1,0 +1,59 @@
+slug: flock
+title: FLOCK
+tagline: Grow, dash and shoot your way to the top of a neon arena.
+description: >-
+  FLOCK is a neon arcade arena battler built around growing, dashing and
+  shooting. You enter the arena, fight off opponents, and work toward victory by
+  staying alive and eliminating everything in your way. Runs are fast and
+  aggressive, with movement and firepower both mattering in every encounter.
+
+
+  The look is bright neon on a dark field, and the pace leans on quick dashes
+  combined with ranged attacks. The creator cites Minishoot' Adventures and
+  Overwatch as inspirations, along with some earlier test games of their own,
+  which shows in the mix of shooter-style aiming and arena combat. It also runs
+  on mobile devices.
+
+
+  FLOCK was entered in Vibe Jam 2026, where it placed 634th out of 945 entries.
+  The creator built it with Claude Code, so AI assistance shaped the code of
+  this jam project.
+play:
+  url: https://flock.mindmatter.nl
+  embeddable: true
+  platforms:
+    - browser
+    - mobile
+creator:
+  name: jongstra
+  handle: jongstra
+  x: jongstra
+made:
+  models: []
+  providers:
+    - anthropic
+  tools:
+    - claude-code
+  aiShare: most
+  source: Vibe Jam 2026 submission form
+  evidence: creator
+tech:
+  multiplayer: single
+genres:
+  - action
+  - shooter
+jam:
+  event: vibe-jam-2026
+  rank: 634
+  entries: 945
+media:
+  cover: games/flock/cover
+  screenshots:
+    - games/flock/shot-1
+    - games/flock/shot-2
+dates:
+  added: 2026-10-01
+  updated: 2026-10-01
+status: live
+provenance:
+  foundVia: scout:vibejam-2026

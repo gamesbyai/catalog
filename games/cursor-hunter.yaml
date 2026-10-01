@@ -1,0 +1,56 @@
+slug: cursor-hunter
+title: Cursor Hunter
+tagline: Finish everyday computer tasks while enemies chase your cursor
+description: >-
+  Cursor Hunter is a puzzle game built around a familiar desktop setting. You
+  are given ordinary computer tasks to complete, and the twist is that enemies
+  are after your cursor while you work. Each run asks you to get through the
+  tasks without letting the hunters catch the pointer you are using.
+
+
+  The appeal is in the idea: the mouse pointer you normally take for granted
+  becomes the thing under threat. Routine actions turn into small problems of
+  timing and positioning, since every click has to be weighed against where the
+  enemies are. The concept is simple and doesn't rely on flashy presentation.
+
+
+  The game was an entry in Vibe Jam 2026, where it placed 632nd out of 945
+  entries. The creator's statement lists Cursor among the tools used to make it.
+play:
+  url: https://cursor-hunter.vercel.app
+  embeddable: true
+  platforms:
+    - browser
+  controls:
+    - Mouse
+creator:
+  name: JPSMDEV
+  handle: jpsmdev
+  x: JPSMDEV
+made:
+  models: []
+  tools:
+    - cursor
+  aiShare: most
+  source: Vibe Jam 2026 submission form
+  evidence: creator
+tech:
+  multiplayer: single
+genres:
+  - puzzle
+  - action
+jam:
+  event: vibe-jam-2026
+  rank: 632
+  entries: 945
+media:
+  cover: games/cursor-hunter/cover
+  screenshots:
+    - games/cursor-hunter/shot-1
+    - games/cursor-hunter/shot-2
+dates:
+  added: 2026-10-01
+  updated: 2026-10-01
+status: live
+provenance:
+  foundVia: scout:vibejam-2026

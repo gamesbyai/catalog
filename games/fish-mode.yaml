@@ -1,0 +1,59 @@
+slug: fish-mode
+title: FISH MODE
+tagline: Swim down a river as a fish, grabbing bobbers and dodging hooks for a
+  high score.
+description: >-
+  FISH MODE is a river-running arcade game where you play a fish swimming
+  downstream. Along the way you collect bobbers for points and steer clear of
+  hooks. Flipping and swerving through the current is how you push your score as
+  high as possible in a single run.
+
+
+  The game leans on its movement. Swerving and flipping are the core actions, so
+  the aim is to chain clean lines through the obstacles and keep a steady
+  rhythm. It was entered in Vibe Jam 2026 in a category for games with unusual
+  control schemes that bring on a flow state.
+
+
+  The game is built in Three.js, and the creator's statement credits
+  Antigravity, Google's AI coding tool, as the tool used to make it. It is a
+  single-player game.
+play:
+  url: https://fishmode.vercel.app
+  embeddable: true
+  platforms:
+    - browser
+creator:
+  name: thisismikev
+  handle: thisismikev
+  x: thisismikev
+made:
+  models: []
+  providers:
+    - google
+  tools:
+    - antigravity
+  aiShare: most
+  source: Vibe Jam 2026 submission form
+  evidence: creator
+tech:
+  engine: threejs
+  multiplayer: single
+genres:
+  - racing
+  - arcade
+jam:
+  event: vibe-jam-2026
+  rank: 605
+  entries: 945
+media:
+  cover: games/fish-mode/cover
+  screenshots:
+    - games/fish-mode/shot-1
+    - games/fish-mode/shot-2
+dates:
+  added: 2026-10-01
+  updated: 2026-10-01
+status: live
+provenance:
+  foundVia: scout:vibejam-2026
