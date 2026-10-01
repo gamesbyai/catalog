@@ -469,9 +469,17 @@ terms:
     name: Grok Build
     maker: SpaceXAI
     url: https://docs.x.ai/build/overview
+    intro: |-
+      Grok Build is SpaceXAI's AI coding agent. It runs in a terminal as an interactive interface or in scripts, and editors can integrate it through the Agent Client Protocol. Grok also offers building on the web and in its iOS and Android apps.
+
+      For a browser game, you can start the terminal agent in your project folder to read and edit code and run builds and tests. In Grok's web or mobile chat, describe a game and it builds a working version. You can publish it at a grok.me address, choose who can open it, or export the project to GitHub to continue in an editor.
+
+      As of October 2026, the terminal agent is available to try for free, and web and mobile building is available on every Grok plan. The CLI opens a browser for sign-in on first launch; in environments without a browser, it accepts an xAI API key.
     sources:
       - https://docs.x.ai/build/overview
       - https://github.com/xai-org/grok-build
+      - https://x.ai/build
+      - https://x.ai/news/grok-build-for-everyone
   - slug: mistral-vibe
     name: Mistral Vibe
     maker: Mistral AI
