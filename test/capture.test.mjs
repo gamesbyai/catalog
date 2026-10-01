@@ -637,6 +637,12 @@ test('a slow game can get a longer wait: every frame moves later and the deadlin
 // --- The start step (CAPTURE_START) ---
 
 const START_FAST = { start: true, startTimes: [250, 650, 1050], startExtra: 6000, startPause: 300, startBudget: 6000, holdMs: 200, shotTimeout: 4000, deadline: 12_000 };
+// The start step's trace, timed from the capture's start: a failure on a slow runner says where the time went.
+const traced = () => {
+  const t0 = Date.now();
+  const lines = [];
+  return { trace: (s) => lines.push(`${String(Date.now() - t0).padStart(6)} ms  ${s}`), log: () => `\n${lines.join('\n')}` };
+};
 const magentaAt = async (file, left, top) => {
   const { data } = await sharp(readFileSync(file)).extract({ left, top, width: 1, height: 1 }).raw().toBuffer({ resolveWithObject: true });
   const [r, g, b] = data;
@@ -664,18 +670,20 @@ test('the root cause: a menu with an off-centre Play button keeps one frame (the
 
 test('the start step presses Play, plays between frames, and the cover is the game, not the menu', async () => {
   const dir = join(tmp(), 'menu-start');
-  const res = await captureOne(`${base}/menu`, dir, { ...FAST, ...START_FAST });
-  assert.equal(res.ok, true, res.reason);
-  assert.deepEqual(files(dir).sort(), ['cover.png', 'shot-1.png', 'shot-2.png']);
-  for (const f of res.files) assert.ok(!(await magentaAt(f, 300, 200)), `${f.slice(dir.length + 1)} shows the menu`);
+  const { trace, log } = traced();
+  const res = await captureOne(`${base}/menu`, dir, { ...FAST, ...START_FAST, trace });
+  assert.equal(res.ok, true, `${res.reason}${log()}`);
+  assert.deepEqual(files(dir).sort(), ['cover.png', 'shot-1.png', 'shot-2.png'], log());
+  for (const f of res.files) assert.ok(!(await magentaAt(f, 300, 200)), `${f.slice(dir.length + 1)} shows the menu${log()}`);
 });
 
 test('the start step fills a name field, then presses Join', async () => {
   const dir = join(tmp(), 'name');
-  const res = await captureOne(`${base}/name-entry`, dir, { ...FAST, ...START_FAST });
-  assert.equal(res.ok, true, res.reason);
-  assert.equal(res.files.length, 3);
-  assert.ok(!(await magentaAt(res.files[0], 300, 200)), 'the cover is past the name screen');
+  const { trace, log } = traced();
+  const res = await captureOne(`${base}/name-entry`, dir, { ...FAST, ...START_FAST, trace });
+  assert.equal(res.ok, true, `${res.reason}${log()}`);
+  assert.equal(res.files.length, 3, log());
+  assert.ok(!(await magentaAt(res.files[0], 300, 200)), `the cover is past the name screen${log()}`);
 });
 
 test('the start step presses a text-only menu item, and never follows a link', async () => {
@@ -726,10 +734,11 @@ test('solo, German, decline and room patterns match whole names only', async () 
 
 const startsTheGame = async (path, extra = {}) => {
   const dir = join(tmp(), path.slice(1));
-  const res = await captureOne(`${base}${path}`, dir, { ...FAST, ...START_FAST, ...extra });
-  assert.equal(res.ok, true, res.reason);
-  assert.equal(res.files.length, 3, `${path}: ${res.files.length} frames`);
-  for (const f of res.files) assert.ok(!(await magentaAt(f, 300, 200)), `${path}: ${f.slice(dir.length + 1)} shows the menu`);
+  const { trace, log } = traced();
+  const res = await captureOne(`${base}${path}`, dir, { ...FAST, ...START_FAST, ...extra, trace });
+  assert.equal(res.ok, true, `${res.reason}${log()}`);
+  assert.equal(res.files.length, 3, `${path}: ${res.files.length} frames${log()}`);
+  for (const f of res.files) assert.ok(!(await magentaAt(f, 300, 200)), `${path}: ${f.slice(dir.length + 1)} shows the menu${log()}`);
 };
 
 test('the start step prefers Solo over a Play button that opens a server list', () => startsTheGame('/solo-menu'));

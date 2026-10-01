@@ -651,6 +651,8 @@ export async function captureOne(url, outDir, opts = {}) {
     return Promise.race([p, failed]);
   };
   const start = o.start === true;
+  const started = Date.now();
+  const trace = typeof o.trace === 'function' ? o.trace : undefined; // local review only: our own decisions and timings
   const limit = o.deadline + (start ? o.startExtra : 0);
   const deadline = setTimeout(() => fail('deadline', `no result after ${limit} ms`), limit);
   const stop = new AbortController();
@@ -769,9 +771,12 @@ export async function captureOne(url, outDir, opts = {}) {
       state.before.push(await snap());
       await startGame(page, o, guard, stop.signal);
       const t1 = Date.now();
+      // Local review (`--trace`): when the start step ended and when each frame after it came, from the capture's start.
+      trace?.(`start step done at ${t1 - started} ms`);
       for (let i = 0; i < o.startTimes.length; i++) {
         await guard(sleep(t1 + o.startTimes[i] - Date.now(), stop.signal));
         const shot = await snap();
+        trace?.(`frame ${i + 1} of ${o.startTimes.length} ${shot ? 'taken' : 'lost'} at ${Date.now() - started} ms`);
         if (!shot) return;
         state.shots.push(shot);
         if (i < o.startTimes.length - 1) await playInput(page, i, o, guard, stop.signal);
@@ -811,6 +816,7 @@ export async function captureOne(url, outDir, opts = {}) {
     const keep = froze && (state.shots.length || state.before.length) ? await pick() : [];
     if (keep.length) {
       // The game froze or ran out of time after some good frames: keep those.
+      trace?.(`${e.reason} at ${Date.now() - started} ms: kept ${keep.length} frames`);
       mkdirSync(outDir, { recursive: true });
       keep.forEach((buf, i) => writeFileSync(files[i], buf));
       result = { ok: true, files: files.slice(0, keep.length), partial: true };
