@@ -30,7 +30,7 @@ play:
     - "Mouse / touchpad: fly, aim and shoot"
     - "Click: shoot, start the round"
     - "Right click / Space: open menu"
-    - "Esc: unlock the cursor"
+    - "Esc: release the cursor"
 creator:
   name: RomanShalabanov
   handle: romanshalabanov
