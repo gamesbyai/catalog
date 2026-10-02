@@ -2,11 +2,15 @@ terms:
   - slug: action
     name: Action
     intro: |-
-      An action game is a video game that emphasizes physical challenges, mainly hand-eye coordination and reaction time. The core loop is short and repeated: read the screen, react, and survive the next threat, with little time for long planning. Platformers, shooters and fighting games are all action games, and Space Invaders and Pac-Man are classic examples.
+      In Eyrie you catch wandering spirits, carry them to a shrine to feed it, then turn around and fend off the obelisk, wave after wave.
 
-      The code reads input every frame, moves the player and the enemies, and tests for collisions between them, usually with simple shapes such as rectangles and circles. Many action games also track lives, health and score across a run.
+      Action games put a physical challenge in front of you, mainly hand-eye coordination and reaction time. You read the screen, react and survive the next threat, and there isn't much time for long planning.
 
-      In a browser, the frame loop runs on requestAnimationFrame, which fires once per screen refresh and pauses in background tabs. Movement has to scale with the elapsed time it reports, or the game runs faster on high refresh-rate screens.
+      Under the hood, the code reads input every frame, moves the player and the enemies, and checks whether they collide, usually with simple shapes like rectangles and circles. Many action games also track lives, health and score across a run.
+
+      In a browser that frame loop runs on requestAnimationFrame, which fires once per screen refresh and pauses in background tabs. Movement has to scale with the elapsed time it reports, or the game runs faster on high refresh-rate screens.
+
+      The genre takes in a lot, with platformers, shooters and fighting games all counted in, and Space Invaders and Pac-Man are the classic examples.
     sources:
       - "https://en.wikipedia.org/wiki/Action_game"
       - "https://developer.mozilla.org/en-US/docs/Games/Techniques/2D_collision_detection"
@@ -14,11 +18,13 @@ terms:
   - slug: adventure
     name: Adventure
     intro: |-
-      An adventure game puts the player in the role of a protagonist in an interactive story, driven by exploration and puzzle solving. The core loop is to explore a location, collect and use items, talk to characters, and solve the puzzle that opens the next area. Colossal Cave Adventure (1976) pioneered the genre, and Zork and Myst are well-known later examples.
+      HALDANE-4 sends you alone in a submersible beneath the Antarctic ice shelf, and its short horror story, drawn entirely in text characters, unfolds as you descend.
 
-      Adventure games are mostly about state rather than physics. The code tracks an inventory, unlocked areas, dialogue choices and solved puzzles. Text adventures add a parser that turns typed commands into actions, while point-and-click games map clicks to objects on screen.
+      In an adventure game you're the protagonist of a story you move through yourself, and the genre runs on exploration and puzzle solving. You explore a location, collect and use items, talk to characters and solve the puzzle that opens the next area. Colossal Cave Adventure (1976) pioneered it, and Zork and Myst came later.
 
-      Saves matter here. On the web, localStorage keeps small saves after the browser closes, while IndexedDB is built for larger amounts of structured data, such as many scenes or images.
+      For the code, it's mostly about state rather than physics. It tracks an inventory, unlocked areas, dialogue choices and solved puzzles, and saves matter a lot. On the web, localStorage keeps small saves after the browser closes, while IndexedDB is built for larger amounts of structured data, such as many scenes or images.
+
+      How you talk to the game depends on the kind. Text adventures add a parser that turns typed commands into actions, while point-and-click games map clicks to objects on screen.
     sources:
       - "https://en.wikipedia.org/wiki/Adventure_game"
       - "https://developer.mozilla.org/en-US/docs/Web/API/Web_Storage_API"
@@ -26,11 +32,11 @@ terms:
   - slug: arcade
     name: Arcade
     intro: |-
-      An arcade video game is a game played on a coin-operated cabinet, and arcade-style games keep the same short, score-driven design. The core loop is a single run: survive as levels get harder, use up your lives, and try to beat your best score. The classic formula is easy to learn and difficult to master. Pong, Space Invaders and Pac-Man are classic examples.
+      In Fat Pac every bite fills a fat meter, so clearing the maze actually slows you down. The fruit in the middle is the way out of that, since eating it lowers your fat level and sends the enemies the other way.
 
-      The design rests on multiple lives, short levels, simple controls and difficulty that rises quickly. The code needs a tight game loop, fast input handling, a difficulty curve that climbs each level, and a quick restart after game over.
+      If you're making an arcade game, the design rests on multiple lives, short levels, simple controls and difficulty that climbs quickly. That means a tight game loop, fast input handling, a difficulty curve that rises each level and a quick restart after game over. In a browser the loop runs on requestAnimationFrame, which pauses when the tab is hidden, and the high score can live in localStorage so it's still there after you close the browser.
 
-      Browser versions run that loop on requestAnimationFrame, which pauses when the tab is hidden, and can keep the high score in localStorage so it survives a closed browser.
+      The name comes from games played on coin-operated cabinets, and arcade-style games keep that short, score-driven design. A run means surviving as levels get harder, using up your lives and trying to beat your best score, and the classic formula is easy to learn and difficult to master, as Pong, Space Invaders and Pac-Man were.
     sources:
       - "https://en.wikipedia.org/wiki/Arcade_video_game"
       - "https://developer.mozilla.org/en-US/docs/Web/API/Window/requestAnimationFrame"
@@ -38,11 +44,15 @@ terms:
   - slug: card
     name: Card
     intro: |-
-      A card game is any game that uses cards as its main device, whether the cards are a standard deck or made for that game. Digital versions cover classics such as solitaire, trick-taking games like Bridge, and digital collectible card games such as Hearthstone. The core loop is to hold a hand, choose which card to play, and respond to the other side until the rules declare a winner.
+      MRR Battle turns running an indie software business into a card battle, and the threats in its deck are a funny tour of indie hacker life, from DDoS attacks to Hacker News roasts.
 
-      Card games are rules plus hidden information. The code models a deck, shuffles it, deals hands, keeps each player's cards private, and enforces turn order and legal plays. Collectible card games add deck building, resources such as mana, and card effects on the board.
+      A card game is any game that uses cards as its main device, whether that's a standard deck or one made for the game, like this one. Digital versions cover classics like solitaire, trick-taking games like Bridge and digital collectible card games like Hearthstone.
+
+      You hold a hand, choose which card to play and respond to the other side until the rules declare a winner. Underneath, that's rules plus hidden information, so the code models a deck, shuffles it, deals hands, keeps each player's cards private and enforces turn order and legal plays.
 
       On the web, pointer events handle mouse and touch with one set of events, which suits dragging cards, and the CSS touch-action property stops the page from scrolling mid-drag. Online play against people needs a server connection, such as a WebSocket.
+
+      Collectible card games pile on more, with deck building, resources such as mana and card effects on the board.
     sources:
       - "https://en.wikipedia.org/wiki/Card_game"
       - "https://en.wikipedia.org/wiki/Digital_collectible_card_game"
@@ -51,11 +61,13 @@ terms:
   - slug: casual
     name: Casual
     intro: |-
-      A casual game is a video game aimed at a mass-market audience, as opposed to a hardcore game aimed at hobbyist gamers. Casual games generally have simpler rules and shorter sessions, and need less learned skill. The core loop is a quick round you can start and stop at any time, such as matching gems or laying out a solitaire deal. Solitaire and Bejeweled are well-known examples.
+      In Pocket Sparrows you toss food to sparrows, pet them and put small hats on your favorites, and there really aren't any fail states.
 
-      Casual games are commonly played in web browsers and on phones. With simple rules, the logic is typically a small board or grid, a scoring rule and a clear win or lose state.
+      Casual games are aimed at a mass-market audience, as opposed to hardcore games made for hobbyist gamers. They generally have simpler rules and shorter sessions and need less learned skill, so a quick round is something you can start and stop any time, like matching gems or laying out a solitaire deal.
 
-      Pointer events cover mouse, pen and touch with one set of events, so one input handler serves desktop and phone players. localStorage keeps progress and best scores between visits.
+      With rules that simple, the logic is typically a small board or grid, a scoring rule and a clear win or lose state. Pointer events cover mouse, pen and touch with one set of events, so one input handler serves desktop and phone players, and localStorage keeps progress and best scores between visits.
+
+      That suits where people play them, since casual games are commonly played in web browsers and on phones. Solitaire and Bejeweled are well-known examples.
     sources:
       - "https://en.wikipedia.org/wiki/Casual_game"
       - "https://developer.mozilla.org/en-US/docs/Web/API/Pointer_events"
@@ -63,11 +75,13 @@ terms:
   - slug: educational
     name: Educational
     intro: |-
-      An educational game is a game designed with an educational purpose, or one with incidental educational value, whether a board, card or video game. The core loop is to attempt a task, get feedback on the answer or choice, and move on to the next challenge. The Oregon Trail, written in 1971 by three student teachers in Minnesota, teaches 19th-century pioneer life through supply and travel decisions.
+      Next Token Please flips the chatbot around. You're the language model, building a sentence by picking the next token one at a time, and the aim is to get a feel for how text gets predicted.
 
-      Educational games need content that is accurate and suited to the learner's age. The code usually pairs a bank of questions or scenarios with a way to check answers and give feedback, built around clear learning goals and structured rules.
+      Educational games are made with a teaching purpose, or simply have some educational value along the way, and they can be board, card or video games. You attempt a task, get feedback on your answer or choice, and move on to the next challenge.
 
-      In a browser, localStorage can remember a learner's progress between visits, and pointer events let the same activity work with a mouse, a pen or a finger.
+      The content has to be accurate and suited to the learner's age. The code usually pairs a bank of questions or scenarios with a way to check answers and give feedback, built around clear learning goals and structured rules. In a browser, localStorage can remember a learner's progress between visits, and pointer events let the same activity work with a mouse, a pen or a finger.
+
+      The Oregon Trail is a surprisingly old example. Three student teachers in Minnesota wrote it in 1971, and it teaches 19th-century pioneer life through supply and travel decisions.
     sources:
       - "https://en.wikipedia.org/wiki/Educational_game"
       - "https://en.wikipedia.org/wiki/The_Oregon_Trail_(series)"
@@ -76,11 +90,13 @@ terms:
   - slug: fighting
     name: Fighting
     intro: |-
-      A fighting game is an action game in which two or more on-screen characters fight each other, most often one-on-one in a fixed arena. The core loop is a round: read your opponent, land attacks and combos, and drain their health bar before yours empties, with a match usually decided over three rounds. Street Fighter II (1991), Mortal Kombat (1992) and Tekken (1994) are classic examples.
+      Raveswords puts you in medieval sword fights against other players, set to dance music, and the arena has a DJ panel where you paste a YouTube link to queue up a track.
 
-      Fighting games depend on precise timing. Special moves come from timed sequences of directions and buttons, so the code reads input sequences, decides when attacks connect, and keeps health, combos and rounds in sync. Online play needs netcode that copes with latency, and rollback netcode does this by returning to the last accurate game state.
+      Most fighting games are a lot more formal than that. They're action games where two or more characters fight each other on screen, most often one-on-one in a fixed arena, and you read your opponent, land attacks and combos and drain their health bar before yours empties. A match is usually decided over three rounds, and Street Fighter II (1991), Mortal Kombat (1992) and Tekken (1994) are the classics.
 
-      Browsers read controllers through the Gamepad API, polled with navigator.getGamepads() every frame rather than through button events. WebRTC data channels can carry match data peer-to-peer between two players' browsers.
+      It all depends on precise timing. Special moves come from timed sequences of directions and buttons, so the code reads input sequences, decides when attacks connect and keeps health, combos and rounds in sync. Browsers read controllers through the Gamepad API, polled with navigator.getGamepads() every frame rather than through button events.
+
+      Online play is the tricky bit. It needs netcode that copes with latency, and rollback netcode does that by returning to the last accurate game state. WebRTC data channels can carry match data peer-to-peer between two players' browsers.
     sources:
       - "https://en.wikipedia.org/wiki/Fighting_game"
       - "https://developer.mozilla.org/en-US/docs/Web/API/Gamepad_API/Using_the_Gamepad_API"
@@ -88,11 +104,13 @@ terms:
   - slug: horror
     name: Horror
     intro: |-
-      A horror game is a video game centered on horror fiction and designed to scare the player. It is defined more by tone and presentation than by one set of mechanics, so the core loop varies. In survival horror, the loop is to explore, find items and solve puzzles while avoiding or barely surviving enemies. Resident Evil (1996) and Silent Hill (1999) are well-known survival horror examples.
+      In The Operator you're stranded in a forest tower at night, and the only way out is a broken emergency phone that keeps putting you on hold. Its creator wanted powerlessness, not the monster, to be the scariest part.
 
-      Horror leans on atmosphere, which is also a code problem: dim lighting that limits what the player sees, off-screen sounds and scripted encounters. Survival horror adds limited ammunition and health, a small inventory and save points, and some games use fixed camera angles to build tension.
+      Horror leaves room for that, since it's defined more by tone and presentation than by one set of mechanics. These games are built on horror fiction and designed to scare you, so the loop varies. In survival horror you explore, find items and solve puzzles while avoiding or barely surviving enemies, as in Resident Evil (1996) and Silent Hill (1999).
 
-      Sound needs care in a browser. Browsers block audio until the player clicks or presses a key, so the first scare can't play on page load, and the Web Audio API's PannerNode places sounds in 3D space around the listener.
+      A lot of the atmosphere is code, too. It comes from dim lighting that limits what you see, off-screen sounds and scripted encounters. Survival horror adds limited ammunition and health, a small inventory and save points, and some games use fixed camera angles to build tension.
+
+      Sound needs care in a browser. Audio is blocked until the player clicks or presses a key, so the first scare can't play on page load, and the Web Audio API's PannerNode places sounds in 3D space around the listener.
     sources:
       - "https://en.wikipedia.org/wiki/Horror_game"
       - "https://en.wikipedia.org/wiki/Survival_horror"
@@ -101,11 +119,13 @@ terms:
   - slug: idle
     name: Idle
     intro: |-
-      An idle game, also called an incremental game, is built around gradual, often exponential growth of in-game resources through repetitive actions or automation. Clicker games stress active clicking, while idle games automate most of the work. The core loop is to earn currency, spend it on upgrades that earn more, and often reset for a permanent bonus called prestige. Cookie Clicker and AdVenture Capitalist are well-known examples.
+      Delete Things From Earth starts you on everyday things like a cup of coffee, and you work your way up to continents and eventually the sun itself. Its creator names Cookie Clicker as the influence on its incremental loop.
 
-      The code is mostly numbers and saved state. It needs a way to store and display very large values, with scientific notation or suffixes such as M and T, plus a timed update that adds income.
+      Idle games, also called incremental games, are built around gradual, often exponential growth of resources through repetitive actions or automation. Clicker games are about active clicking, while idle games automate most of the work. Either way you earn currency, spend it on upgrades that earn more, and often reset for a permanent bonus called prestige, as in Cookie Clicker and AdVenture Capitalist.
 
-      Browsers throttle timers and stop requestAnimationFrame in background tabs, so progress made while the tab is hidden or closed has to be worked out from the clock when the player returns. localStorage keeps the save between visits.
+      It's mostly numbers and saved state. The code has to store and display really large values, with scientific notation or suffixes like M and T, plus a timed update that adds income.
+
+      Browsers throttle timers and stop requestAnimationFrame in background tabs, so progress made while the tab was hidden or closed has to be worked out from the clock when the player comes back. localStorage keeps the save between visits.
     sources:
       - "https://en.wikipedia.org/wiki/Incremental_game"
       - "https://developer.mozilla.org/en-US/docs/Web/API/Page_Visibility_API"
@@ -113,11 +133,13 @@ terms:
   - slug: platformer
     name: Platformer
     intro: |-
-      A platformer is an action game whose core objective is to move the player character between points in an environment, over uneven terrain and suspended platforms that require jumping and climbing. The core loop is to run, time jumps across gaps, avoid hazards such as pits, and reach the end of the level. Donkey Kong (1981) and Super Mario Bros. (1985) are classic examples.
+      RUNNING LATE turns a commute into 30 rooms against a 24-minute clock, and every death adds a whole twenty seconds to it. You run, rebound between walls and hold the button to control how high you jump.
 
-      Platformers live on movement code: gravity, a jump model (a fixed arc, or one the player can steer mid-air) and collision tests against terrain and hazards. Levels are commonly built from a grid of tiles, and scrolling levels need a camera that converts world coordinates to screen coordinates.
+      Platformers are action games about getting your character from point to point over uneven terrain and suspended platforms, jumping and climbing as you go. You run, time your jumps across gaps, avoid hazards like pits and reach the end of the level. Donkey Kong (1981) and Super Mario Bros. (1985) are the classic examples.
 
-      On the web, the Gamepad API reads controllers and phones need on-screen buttons built with pointer events. Physics should use the elapsed time from requestAnimationFrame, or the game runs faster on high refresh-rate screens.
+      If you're making one, the movement code is the core of it, with gravity, a jump model (a fixed arc, or one you can steer mid-air) and collision tests against terrain and hazards. Levels are commonly built from a grid of tiles, and a scrolling level needs a camera that converts world coordinates to screen coordinates.
+
+      On the web, the Gamepad API reads controllers, and phones need on-screen buttons built with pointer events. Physics should use the elapsed time from requestAnimationFrame, or the game runs faster on high refresh-rate screens.
     sources:
       - "https://en.wikipedia.org/wiki/Platform_game"
       - "https://developer.mozilla.org/en-US/docs/Games/Techniques/Tilemaps"
@@ -128,11 +150,13 @@ terms:
   - slug: puzzle
     name: Puzzle
     intro: |-
-      A puzzle video game emphasizes puzzle solving and tests skills such as logic, pattern recognition, sequence solving and spatial awareness. The core loop is to study a board or a set of rules, make a move, and see whether it gets you closer to the solution, level after level. Tetris (1985), Bejeweled and Portal are examples.
+      Ink Side Down hands you a cube with one inked face and a grid with some squares marked, and you roll it so the ink prints on those squares and nowhere else. Every roll turns the cube, so the inked face keeps moving, and planning the route ahead helps more than reacting to the tile in front of you.
 
-      Puzzle games are defined by their rules, so the code centers on a clear model of the board or pieces and a check for win and lose conditions. Some add physics or a real-time element, as with the falling blocks in Tetris, and levels must be built or generated so that a solution exists.
+      Puzzle games are a bit of a broad family. They test skills like logic, pattern recognition, sequence solving and spatial awareness, and you study a board or a set of rules, make a move and see whether it got you closer to the solution, level after level. Tetris (1985), Bejeweled and Portal all count.
 
-      In a browser, pointer events handle mouse and touch with one set of events, and localStorage can save the board after each move so a closed tab doesn't lose progress.
+      Since they're defined by their rules, the code centers on a clear model of the board or the pieces and a check for win and lose conditions. Levels have to be built or generated so that a solution exists, and some games add physics or a real-time element, like the falling blocks in Tetris.
+
+      In a browser, pointer events handle mouse and touch with one set of events, and localStorage can save the board after each move, so closing the tab doesn't lose your progress.
     sources:
       - "https://en.wikipedia.org/wiki/Puzzle_video_game"
       - "https://developer.mozilla.org/en-US/docs/Web/API/Pointer_events"
@@ -140,11 +164,15 @@ terms:
   - slug: racing
     name: Racing
     intro: |-
-      A racing game is a video game in which the player takes part in racing competitions, ranging from realistic simulations to fantastical arcade-style racers. The core loop is to drive a circuit or a point-to-point course, manage laps and position against opponents or the clock, and improve your time. Pole Position (1982), Gran Turismo (1997) and Mario Kart are examples.
+      SimDrive turns your phone into the steering wheel. You open the game on a TV or computer, scan a QR code and tilt the phone to steer, and the phone answers back with sound and haptics like engine roar and tire slip.
 
-      Racers need a vehicle model. Simulation racers emphasize realistic handling and cornering, while arcade racers use looser physics that let players drift through turns. The code also needs track data, lap and position tracking, computer-controlled opponents and a camera view such as first-person, chase or overhead.
+      Racing games run all the way from realistic simulations to fantastical arcade-style racers. You drive a circuit or a point-to-point course, manage laps and your position against opponents or the clock, and try to improve your time.
 
-      Browsers read steering and triggers from controllers through the Gamepad API, polled every frame. 3D tracks render with WebGL or its successor, WebGPU, which some major browsers don't support yet.
+      Every racer needs a vehicle model. Simulation racers care a lot about realistic handling and cornering, while arcade racers use looser physics that let you drift through turns. On top of that, the code needs track data, lap and position tracking, computer-controlled opponents and a camera view, such as first-person, chase or overhead.
+
+      With a regular controller, browsers read steering and triggers through the Gamepad API, polled every frame. 3D tracks render with WebGL or its successor, WebGPU, which some major browsers don't support yet.
+
+      Pole Position (1982), Gran Turismo (1997) and Mario Kart are the usual examples.
     sources:
       - "https://en.wikipedia.org/wiki/Racing_video_game"
       - "https://developer.mozilla.org/en-US/docs/Web/API/Gamepad_API/Using_the_Gamepad_API"
@@ -152,11 +180,13 @@ terms:
   - slug: rhythm
     name: Rhythm
     intro: |-
-      A rhythm game is a music-themed action game that challenges the player's sense of rhythm. Players press buttons in a set sequence in time with music, and the game awards points for accuracy and for staying in sync with the beat. The core loop is a song: read the on-screen prompts, hit them on time, and raise your score. PaRappa the Rapper (1996), Dance Dance Revolution and Guitar Hero are examples.
+      In PULSARI Demo there's no music at first. You hit beat rings coming from four directions, and each combo milestone brings more of the song in, up to the full track at thirty-two. It's a neat twist, since hitting the beat is what turns the music on.
 
-      Timing is the main code problem. The game keeps note prompts in sync with the audio, judges each input against the beat and scores it, and many show upcoming notes on a scrolling note highway. Some rely on special controllers, such as guitars or dance mats.
+      That's how most rhythm games work underneath. They're action games built around music and your sense of rhythm. You press buttons in a set sequence in time with a song and score for accuracy and staying on the beat, so a round lasts one song. PaRappa the Rapper (1996), Dance Dance Revolution and Guitar Hero are the usual examples. Some even need their own controllers, like a guitar or a dance mat.
 
-      In a browser, notes are scheduled against the Web Audio API's audio clock, currentTime, which runs separately from the system clock behind Date.now(). Browsers block audio until the player interacts, so a song can only start after a click or key press.
+      If you're making one, timing is the hard part, since the notes have to stay in sync with the audio and every input gets judged against the beat. Many scroll the upcoming notes along a note highway.
+
+      In a browser, you schedule notes against the Web Audio API's audio clock, currentTime, which runs separately from the system clock behind Date.now(). Browsers also block audio until the player clicks or presses a key, so a song can't start on its own.
     sources:
       - "https://en.wikipedia.org/wiki/Rhythm_game"
       - "https://developer.mozilla.org/en-US/docs/Web/API/BaseAudioContext/currentTime"
@@ -164,22 +194,26 @@ terms:
   - slug: roguelike
     name: Roguelike
     intro: |-
-      A roguelike is a style of role-playing game traditionally built around dungeon crawls through procedurally generated levels, with turn-based play, grid-based movement and permanent death. The name comes from Rogue (1980). The core loop is a run: enter the dungeon, fight, gather items, and get as far as you can before dying and starting over. NetHack is a classic example.
+      Dragonwake draws its whole world in text characters on a black grid, and every action is a turn. You move one step, attack, rest or interact, and then nearby enemies act. Its creator is a fan of ASCII roguelikes and set out to get long, complex replayability from AI-assisted coding.
 
-      Roguelikes need procedural generation, code that builds a new, playable level each run, plus turn logic that waits for the player and then moves every monster. Games that keep some of these traits without turn-based play are often called roguelites.
+      Traditionally, roguelikes are role-playing games built around dungeon crawls through procedurally generated levels, with turn-based play, grid-based movement and permanent death. You enter the dungeon, fight, gather items and get as far as you can before you die and start over. The name comes from Rogue (1980), and NetHack is a classic example.
 
-      In the browser, Math.random() can't be seeded, because the browser picks the seed. A game that wants shareable seeds or daily runs, where every player gets the same dungeon, needs its own seeded random generator.
+      That takes procedural generation, meaning code that builds a new, playable level each run, plus turn logic that waits for the player and then moves every monster. In the browser that gets a bit awkward, because Math.random() can't be seeded. The browser picks the seed, so a game that wants shareable seeds or daily runs, where every player gets the same dungeon, needs its own seeded random generator.
+
+      Games that keep some of these traits without the turn-based play are often called roguelites.
     sources:
       - "https://en.wikipedia.org/wiki/Roguelike"
       - "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random"
   - slug: rpg
     name: RPG
     intro: |-
-      A role-playing game is a genre generally defined by a detailed story and character advancement, often through levels or other skills. The player controls a central character or a party, and the core loop is to take on quests, fight or talk through encounters, collect loot and grow stronger. The genre draws on tabletop Dungeons & Dragons, and Ultima, Dragon Quest and Final Fantasy are well-known series.
+      Reach the Relay has you lead a party across the ruins of an AI apocalypse, keeping a VIP alive in turn-based fights all the way to the Relay. Its design draws on Final Fantasy and Dragon Quest.
 
-      RPGs are data-heavy. Characters have numeric attributes such as strength that decide whether an action succeeds, and the code tracks experience, levels, equipment, an inventory and quest progress. Combat is either turn-based or real-time, and because a character can die, reloading a saved state is a core feature.
+      RPGs are generally defined by a detailed story and character advancement, often through levels or other skills. You control a central character or a party, take on quests, fight or talk your way through encounters, collect loot and grow stronger. The genre draws on tabletop Dungeons & Dragons, and Ultima is another well-known series.
 
-      On the web, localStorage holds small saves and survives a closed browser, while IndexedDB is built for larger amounts of structured data, such as a big world or many save slots.
+      It's a data-heavy genre, too. Characters have numeric attributes such as strength that decide whether an action succeeds, and the code tracks experience, levels, equipment, an inventory and quest progress. Combat is either turn-based or real-time, and since a character can die, reloading a saved state is a core feature.
+
+      That makes saves a big deal. On the web, localStorage holds small saves and survives a closed browser, while IndexedDB is built for larger amounts of structured data, like a big world or many save slots.
     sources:
       - "https://en.wikipedia.org/wiki/Role-playing_video_game"
       - "https://developer.mozilla.org/en-US/docs/Web/API/Web_Storage_API"
@@ -187,11 +221,13 @@ terms:
   - slug: sandbox
     name: Sandbox
     intro: |-
-      A sandbox game gives players a great degree of freedom to interact creatively, usually with no predetermined goal or with goals the players set themselves, such as building a house. The core loop is open-ended: gather or place material, change the world, and decide what to try next. Minecraft and Garry's Mod are well-known examples.
+      In Rubble Kings you stack physics blocks into a kingdom, and the taller it stands, the more land you control, while rivals try to knock it down. It's up to you how high you dare to build.
 
-      Sandbox games need a world the player can change and that stays changed. The code holds a persistent world state and a physics or interaction system that responds to what players do, and many use block or voxel grids. Some let players share what they make.
+      Sandbox games give you a lot of freedom to interact creatively, usually with no set goal or with goals you set yourself, like building a house. You gather or place material, change the world and decide what to try next, as in Minecraft and Garry's Mod.
 
-      In a browser, IndexedDB can store a large changed world as structured data, and 3D block worlds render with WebGL or its successor, WebGPU.
+      Building one means a world you can change that stays changed. The code holds a persistent world state and a physics or interaction system that responds to what players do, and many use block or voxel grids. In a browser, IndexedDB can store a large changed world as structured data, and 3D block worlds render with WebGL or its successor, WebGPU.
+
+      Some sandbox games also let players share what they make.
     sources:
       - "https://en.wikipedia.org/wiki/Sandbox_game"
       - "https://developer.mozilla.org/en-US/docs/Web/API/IndexedDB_API"
@@ -199,11 +235,13 @@ terms:
   - slug: shooter
     name: Shooter
     intro: |-
-      A shooter is a subgenre of action games focused on defeating enemies with ranged weapons the game gives the player. The core loop is to aim and fire, dodge incoming fire, and move on to the next wave or area, relying on spatial awareness and reflexes. Subgenres include shoot 'em ups such as Space Invaders, first-person shooters such as Doom, and third-person shooters.
+      Undersphere has you running and shooting on the inside surface of a hollow sphere, where the horizon rises into the sky above you. A grenade thrown across the map stays under the sphere's gravity, so it can even land on the far side of the world.
 
-      Shooters need projectiles and hit detection, enemies driven by code, and rules for ammunition and health. The camera depends on the subgenre: a fixed or scrolling screen for shoot 'em ups, a first-person or third-person view in 3D. Shooters played against other people also need multiplayer networking.
+      Underneath the odd geometry it's still a shooter, an action game about defeating enemies with ranged weapons the game gives you. You aim and fire, dodge incoming fire and move on to the next wave or area, relying on spatial awareness and reflexes.
 
-      First-person shooters in a browser use the Pointer Lock API, which hides the cursor and reports raw mouse movement so the view can turn without limit. It only activates after a click or another user gesture.
+      That takes projectiles and hit detection, enemies driven by code and rules for ammunition and health, and playing against other people also needs multiplayer networking. First-person shooters in a browser use the Pointer Lock API, which hides the cursor and reports raw mouse movement so the view can turn without limit, though it only kicks in after a click or another user gesture.
+
+      The camera depends on the subgenre, from a fixed or scrolling screen in shoot 'em ups like Space Invaders to a first-person view in shooters like Doom, and third-person shooters put it behind the character.
     sources:
       - "https://en.wikipedia.org/wiki/Shooter_game"
       - "https://developer.mozilla.org/en-US/docs/Games/Techniques/2D_collision_detection"
@@ -211,44 +249,48 @@ terms:
   - slug: simulation
     name: Simulation
     intro: |-
-      A simulation game is a broad category of games designed to closely simulate real-world activities, for purposes such as training, analysis, prediction or entertainment. They cover vehicles, life and social systems, farming, construction and management, and jobs. There are usually no strictly defined goals, so the loop is to change something, watch the system respond, and adjust. The Sims and SimCity are well-known examples.
+      RelativityX puts you in a spacecraft that can push toward light speed, and a panel with two clocks, one for Earth and one for the ship, shows them drifting apart as you accelerate. Its creator built it after watching Interstellar, wanting players to experience time dilation themselves.
 
-      The code models a system: rules for physics, economies or ecosystems that respond to one another. Player choices have consequences that carry forward, so these games track state over time, and managing limited resources is a common thread.
+      Simulation games try to closely copy real-world activities, for training, analysis, prediction or entertainment, and that covers a lot of ground, from vehicles, life and social systems to farming, construction, management and jobs. There usually aren't strictly defined goals, so you change something, watch the system respond and adjust. The Sims and SimCity are well-known examples.
 
-      In a browser, a common technique is to update the simulation at a constant rate and draw frames separately. When a hidden tab pauses the loop, the game can simulate the gap to catch up.
+      The code models a system, with rules for physics, economies or ecosystems that respond to one another. Your choices have consequences that carry forward, so these games track state over time, and managing limited resources is a common thread. In a browser, a common technique is to update the simulation at a constant rate and draw frames separately, and when a hidden tab pauses the loop, the game can simulate the gap to catch up.
     sources:
       - "https://en.wikipedia.org/wiki/Simulation_video_game"
       - "https://developer.mozilla.org/en-US/docs/Games/Anatomy"
   - slug: sports
     name: Sports
     intro: |-
-      A sports video game centers on simulating sports activities, including team sports, track and field, shooting sports, extreme sports and combat sports. The core loop is match play: control athletes, score within the rules of the sport, and often continue through a season or career mode. Pong, Madden NFL and Wii Sports are well-known examples.
+      Every frame of the bout in Temple Fist comes from AI-generated video. There's no 3D model at all, and you fight back with Jab, Hook and Uppercut buttons. The creator picked boxing for kind of a technical reason, because its frame-to-frame structure matched how video models behave.
 
-      Sports games need the rules of the sport in code, physics for the ball and the athletes, and athlete attributes such as speed, strength and accuracy. Teammates and opponents are often controlled by artificial intelligence, and career modes add a management layer on top of the matches.
+      Sports video games center on simulating sports, which covers team sports, track and field, shooting sports, extreme sports and combat sports like boxing. You control athletes and score within the rules of the sport, and often keep going through a season or a career mode. Pong, Madden NFL and Wii Sports all count.
 
-      For couch play in a browser, the Gamepad API reads several controllers at once, each with its own index, polled every frame.
+      The rules of the sport have to live in the code, along with physics for the ball and the athletes and attributes such as speed, strength and accuracy, and teammates and opponents are often controlled by artificial intelligence. For couch play in a browser, the Gamepad API reads several controllers at once, each with its own index, polled every frame. Career modes add a management layer on top of the matches.
     sources:
       - "https://en.wikipedia.org/wiki/Sports_video_game"
       - "https://developer.mozilla.org/en-US/docs/Web/API/Gamepad_API/Using_the_Gamepad_API"
   - slug: strategy
     name: Strategy
     intro: |-
-      A strategy video game emphasizes strategic or tactical planning and decision-making, often through indirect control of multiple units and management of limited resources. The core loop is to gather resources, turn them into units, buildings or research, and use them to gain ground on an opponent. Subgenres include real-time strategy, such as StarCraft, and turn-based strategy and 4X games such as Civilization.
+      Field of Command puts a British infantry section under your command in the fields of Kent in 1940, against an AI opponent. If you'd rather, you can take the German side, in an alternate history of an invasion that never happened.
 
-      Strategy games need AI opponents and pathfinding so units find routes around obstacles. Turn-based games need turn logic that decides who acts when, either alternating or simultaneous. Many hide information with fog of war, so the game must track what each side has seen.
+      Strategy games are about strategic or tactical planning and decision-making, often through indirect control of several units and the management of limited resources. You gather resources, turn them into units, buildings or research, and use them to gain ground on an opponent. Subgenres include real-time strategy, such as StarCraft, and turn-based strategy and 4X games, such as Civilization.
 
-      In a browser, heavy work such as pathfinding for many units or an AI opponent's planning can run in a Web Worker, a background thread that keeps the main thread free for input and drawing.
+      The code needs AI opponents and pathfinding, so units find routes around obstacles. In a browser, heavy work like pathfinding for a lot of units or an AI opponent's planning can run in a Web Worker, a background thread that keeps the main thread free for input and drawing.
+
+      Turn-based games need turn logic that decides who acts when, either alternating or simultaneous. Many hide information with fog of war, too, so the game has to track what each side has seen.
     sources:
       - "https://en.wikipedia.org/wiki/Strategy_video_game"
       - "https://developer.mozilla.org/en-US/docs/Web/API/Web_Workers_API"
   - slug: survival
     name: Survival
     intro: |-
-      A survival game is an action-game subgenre set in a hostile environment where players start with minimal equipment and must survive by finding resources to manage hunger, thirst, disease and mental state. The core loop is to gather resources, craft tools and weapons, build shelter and fend off threats. Minecraft, Don't Starve and Rust are well-known examples.
+      KÖTTBULLAR METAL gives you 15 minutes in a mosh pit and one job, which is to still be standing when the clock runs out. Fail and you turn into a meatball.
 
-      Survival games need crafting recipes, tool durability, an inventory and meters for needs such as hunger and health. They also need a persistent world that players can save and return to, and multiplayer versions run on game servers for cooperative or competitive play.
+      Survival games are an action subgenre set somewhere hostile, where you start with minimal equipment and have plenty of needs to manage, from hunger and thirst to disease and mental state, so you stay alive by finding resources. You gather them, craft tools and weapons, build shelter and fend off threats, as in Minecraft, Don't Starve and Rust.
 
-      On the web, IndexedDB can store a large persistent world, and online play with other survivors needs a server connection such as a WebSocket.
+      If you're building one, the code needs crafting recipes, tool durability, an inventory and meters for needs like hunger and health. It also needs a persistent world that players can save and come back to, and on the web IndexedDB can store a large one.
+
+      Multiplayer versions run on game servers for cooperative or competitive play, so playing with other survivors in a browser needs a server connection such as a WebSocket.
     sources:
       - "https://en.wikipedia.org/wiki/Survival_game"
       - "https://developer.mozilla.org/en-US/docs/Web/API/IndexedDB_API"
@@ -256,11 +298,13 @@ terms:
   - slug: tower-defense
     name: Tower defense
     intro: |-
-      Tower defense is a strategy subgenre where the goal is to defend territory by obstructing attackers or stopping enemies from reaching the exits. The core loop is to place defenses along an enemy path, survive a wave, earn currency for defeated enemies, and upgrade or repair before the next wave. Plants vs. Zombies (2009) and Bloons Tower Defense are well-known examples.
+      In The Bad Bunch you place monkey towers along a dirt path to stop waves of angry bananas before they reach your city. There's a nice story behind it, too. A father and his 10-year-old son made it together, inspired by Bloons.
 
-      The code is mostly wave scripting and pathfinding. Enemies follow set paths or find routes around the towers players place, and each wave defines enemy types, counts and timing. Some games let players lengthen the route by building mazes, and currency, costs and wave difficulty need balancing.
+      Tower defense is a strategy subgenre where you defend territory by blocking attackers or stopping enemies from reaching the exits. You place defenses along an enemy path, survive a wave, earn currency for the enemies you stop, and upgrade or repair before the next one. Plants vs. Zombies (2009) and Bloons Tower Defense are well-known examples.
 
-      In a browser, pointer events let players place towers with a click or a tap, and pathfinding for large waves can run in a Web Worker so the main thread isn't slowed down.
+      The code is mostly wave scripting and pathfinding. Enemies follow set paths or find routes around the towers you place, and each wave defines enemy types, counts and timing. In a browser, pointer events let you place towers with a click or a tap, and pathfinding for large waves can run in a Web Worker so the main thread isn't slowed down.
+
+      Some games let you lengthen the route by building mazes, and currency, costs and wave difficulty all need balancing.
     sources:
       - "https://en.wikipedia.org/wiki/Tower_defense"
       - "https://developer.mozilla.org/en-US/docs/Web/API/Pointer_events"
@@ -268,11 +312,13 @@ terms:
   - slug: trivia
     name: Trivia
     intro: |-
-      A trivia game asks players to answer questions on one or several topics, and a quiz is the general name for that kind of contest. The core loop is to read a question, pick or type an answer, earn points for correct ones and move to the next. Trivial Pursuit, first released in Canada in 1981, is a board game example, and You Don't Know Jack (1995) mixes trivia with comedy in a game-show format.
+      Each round of TimeCrime drops you into a 360° historical scene with one object that couldn't exist in that time, like a phone on a tripod on the Moon. You spot it, then guess where and when you are, and the creator says the aim was for players to notice anomalies, not just recall facts.
 
-      A trivia game is mostly content plus rules: a bank of questions, each with a verified answer, logic for choosing the next question, and a scoring rule. Games with several players also need a way to handle turns or simultaneous answers.
+      Trivia games ask you questions on one or several topics, and quiz is the general name for that kind of contest. You read a question, pick or type an answer, earn points for the right ones and move to the next.
 
-      For a room of players in a browser, each phone and the shared screen can hold a two-way WebSocket connection to the same server, so everyone answers on their own device.
+      Behind the screen it's basically content plus rules, meaning a bank of questions with verified answers, logic for picking the next question and a scoring rule. With several players you also need a way to handle turns or simultaneous answers. For a room of players in a browser, each phone and the shared screen can hold a two-way WebSocket connection to the same server, so everyone answers on their own device.
+
+      Trivial Pursuit, first released in Canada in 1981, is a board game example, and You Don't Know Jack (1995) mixes trivia with comedy in a game-show format.
     sources:
       - "https://en.wikipedia.org/wiki/Quiz"
       - "https://en.wikipedia.org/wiki/Trivia"
@@ -282,11 +328,13 @@ terms:
   - slug: word
     name: Word
     intro: |-
-      Word games are spoken, board, card or video games designed to test ability with language or to explore its properties. The core loop is to form or guess words from letters and clues: Scrabble arranges letters into words, Hangman and Wordle guess a hidden word, and crosswords fill a grid from clues. Wordle, made by Josh Wardle and released in October 2021, gives players six tries to find a five-letter word.
+      Symblify gives you a new puzzle every day, a short line of words joined by symbols where every symbol is an instruction. Its creator calls it a cross between word puzzles, cryptic crosswords and maths notation.
 
-      A word game needs a word list to check guesses and a rule for scoring or feedback. Wordle shows green, yellow or gray feedback after each guess, which is letter-by-letter logic, and in a daily game every player gets the same puzzle, so the game picks one word per date.
+      Word games can be spoken, board, card or video games, and they test your ability with language or explore how it works. You form or guess words from letters and clues, whether that's arranging letters into words in Scrabble, guessing a hidden word in Hangman and Wordle, or filling a crossword grid from clues.
 
-      In a browser, the Date object reads the date in the player's local time zone or in UTC, so a daily puzzle has to choose which day boundary decides when the word changes.
+      The code needs a word list to check guesses and a rule for scoring or feedback. Daily games are a bit fiddly in a browser, though. Everyone's meant to get the same puzzle, so the game picks one word per date. But the Date object reads the date in the player's local time zone or in UTC, so you have to choose which day boundary changes the word.
+
+      Josh Wardle's Wordle, released in October 2021, gives you six tries to find a five-letter word, and its green, yellow or gray feedback is letter-by-letter logic.
     sources:
       - "https://en.wikipedia.org/wiki/Word_game"
       - "https://en.wikipedia.org/wiki/Wordle"
@@ -294,11 +342,13 @@ terms:
   - slug: board
     name: Board
     intro: |-
-      A board game is a tabletop game in which small objects, called game pieces, are placed and moved in particular ways on a patterned game board. Most add a rules system, a turn order and often dice or cards for chance. The core loop is to take your turn, move or place pieces under the rules, and respond to the other players until someone wins. Chess, Go, Monopoly and Catan are well-known examples.
+      Ayo Olopon brings Ayo, a traditional West African strategy board game with deep roots in Nigerian culture, into 3D, and it's multiplayer, so you can play a match against another person. It grew out of the creator's childhood memories of watching people play, and it aims to introduce the game to a new generation.
 
-      A digital board game has to do what players do at the table: enforce the rules, track whose turn it is, roll dice or shuffle cards, and detect a win. Playing against the computer also needs an opponent AI. Virtual tabletop tools such as Tabletop Simulator work differently, leaving rule enforcement to the players.
+      Board games are tabletop games where small objects, called game pieces, are placed and moved in particular ways on a patterned board, and most add a rules system, a turn order and often dice or cards for chance. You take your turn, move or place pieces and respond to the other players until someone wins. Chess, Go, Monopoly and Catan are well-known examples.
 
-      In a browser, an opponent AI that searches many moves ahead can run in a Web Worker so the board stays responsive, and online play needs a server connection such as a WebSocket.
+      A digital version basically has to do what players do at the table. It enforces the rules, tracks whose turn it is, rolls dice or shuffles cards and spots a win. An opponent AI can search many moves ahead in a Web Worker without freezing the board, and online play needs a server connection such as a WebSocket.
+
+      Virtual tabletops like Tabletop Simulator go the other way and leave rule enforcement to the players.
     sources:
       - "https://en.wikipedia.org/wiki/Board_game"
       - "https://developer.mozilla.org/en-US/docs/Web/API/Web_Workers_API"
@@ -306,11 +356,11 @@ terms:
   - slug: io
     name: .io
     intro: |-
-      An .io game is a browser-based multiplayer game, a category often named for the .io domain. The genre took off in the mid-2010s: Agar.io launched in April 2015 and Slither.io in March 2016. The core loop is short: join a shared arena, start small, eat food or defeat other players to grow, and climb the leaderboard until someone knocks you out.
+      Starpit.io starts you as a brown dwarf in an arena full of other players' stars, and you grow by absorbing them on the way to becoming a primordial black hole. The physics even includes spaghettification.
 
-      An .io game runs one shared, real-time world with many players at once, so a server has to track every player while each browser sends input and draws the result. Browsers hold that two-way connection through the WebSocket API, which avoids polling the server for replies.
+      Strip away the astrophysics and it's the classic .io setup. These are browser-based multiplayer games, often named for the .io domain, and the genre took off in the mid-2010s, when Agar.io launched in April 2015 and Slither.io in March 2016. You join a shared arena, start small, eat food or defeat other players to grow, and climb the leaderboard until someone knocks you out.
 
-      Pointer events let one set of controls work with a mouse, a pen or a finger, so the same arena runs on desktops and phones.
+      Behind it is one shared, real-time world with many players at once, so a server tracks every player while each browser sends input and draws the result. Browsers hold that two-way connection through the WebSocket API, which avoids polling the server for replies. Pointer events let one set of controls work with a mouse, a pen or a finger, so the same arena runs on desktops and phones.
     sources:
       - "https://en.wikipedia.org/wiki/.io_game"
       - "https://en.wikipedia.org/wiki/Agar.io"
@@ -320,11 +370,13 @@ terms:
   - slug: management
     name: Management and tycoon
     intro: |-
-      Management and tycoon games are construction and management simulations, where players build, expand or manage fictional communities or projects with limited resources. Tycoon games are the subset that simulates economies and businesses. The core loop is to build or buy something, watch income and demand respond, and reinvest to grow. SimCity (1989), Railroad Tycoon (1990) and RollerCoaster Tycoon (1999) are classic examples.
+      Crazy Cat Cafe has you running a cozy cafe while the cats keep knocking your mugs off the counter, so every session is a balance between the customers and the mess.
 
-      Underneath, these games run an economy where resources are produced, consumed and exchanged. The code needs budget rules, prices and costs, and a way to lose, such as running out of money or popular opinion. Simulated agents such as citizens or guests respond to what the player builds and are seldom given direct orders.
+      Management games are construction and management simulations, where you build, expand or manage fictional communities or projects with limited resources, and tycoon games are the subset that simulates economies and businesses. You build or buy something, watch income and demand respond, and reinvest to grow, as in SimCity (1989), Railroad Tycoon (1990) and RollerCoaster Tycoon (1999).
 
-      In a browser, the economy can tick at a constant rate separate from drawing, and a Web Worker can run a large simulation in a background thread so the main thread isn't slowed down.
+      Underneath runs a whole economy, where resources are produced, consumed and exchanged. The code needs budget rules, prices and costs, and a way to lose, like running out of money or popular opinion. In a browser, the economy can tick at a constant rate separate from drawing, and a Web Worker can run a large simulation in a background thread so the main thread isn't slowed down.
+
+      The people in it, simulated agents such as citizens or guests, respond to what you build but are seldom given direct orders.
     sources:
       - "https://en.wikipedia.org/wiki/Construction_and_management_simulation"
       - "https://developer.mozilla.org/en-US/docs/Games/Anatomy"
@@ -332,11 +384,13 @@ terms:
   - slug: metroidvania
     name: Metroidvania
     intro: |-
-      Metroidvania is a subgenre of action-adventure games built on nonlinear exploration and guided progression, where the player needs key items or abilities to enter certain areas. The name combines Metroid and Castlevania. The core loop is to explore a large connected map, gain an ability, and return to earlier areas that the new ability now opens. Metroid (1986), Castlevania: Symphony of the Night (1997) and Hollow Knight (2017) are examples.
+      You find a new ability, say a double jump, and suddenly a ledge you couldn't reach earlier is worth going back for. Metroidvanias really run on that loop, where you explore a large connected map, gain an ability and return to the earlier areas it opens up.
 
-      Metroidvanias gate progress with world state: the code tracks which abilities the player has, which doors and shortcuts are open and which rooms have been visited. Save points and fast travel reduce backtracking, and unlocks such as double jumps and wall jumps tie story progress to the areas a player can reach.
+      The name combines Metroid and Castlevania, and it's a subgenre of action-adventure games built on nonlinear exploration and guided progression, where key items or abilities let you into certain areas. Metroid (1986), Castlevania: Symphony of the Night (1997) and Hollow Knight (2017) are examples.
 
-      In a browser, rooms are commonly built from tilemaps, and localStorage, which suits small amounts of data, can keep ability flags and visited rooms after the browser closes.
+      Progress is gated by world state, so the code tracks which abilities you have, which doors and shortcuts are open and which rooms you've visited. In a browser, rooms are commonly built from tilemaps, and localStorage, which suits small amounts of data, can keep ability flags and visited rooms after the browser closes.
+
+      Save points and fast travel cut down on backtracking, and unlocks like double jumps and wall jumps tie story progress to the areas you can reach.
     sources:
       - "https://en.wikipedia.org/wiki/Metroidvania"
       - "https://developer.mozilla.org/en-US/docs/Games/Techniques/Tilemaps"
@@ -345,11 +399,13 @@ terms:
   - slug: open-world
     name: Open world
     intro: |-
-      An open world game is set in a virtual world where the player can approach objectives freely, rather than following a linear, structured path. The core loop is to explore a large map, pick a mission or side activity, and choose what to do next. The Legend of Zelda (1986), Grand Theft Auto III (2001), The Elder Scrolls V: Skyrim (2011) and Breath of the Wild (2017) are examples.
+      Ride Tales lets you pick a spot anywhere on Earth, drop in and drive. Its creator describes an open world with quests, hidden treasures and legendary rides, and says it combines a love of travel with open-world driving games like GTA.
 
-      The main technical problem is size. Large maps use level streaming, which loads assets as the player approaches new areas, and procedural generation is one way to fill big worlds. The game also keeps persistent state, so what the player does has lasting consequences in the world.
+      Open world games let you approach objectives freely, so you're not following a linear, structured path. You explore a large map, pick a mission or a side activity and choose what to do next. The Legend of Zelda (1986) and Grand Theft Auto III (2001) are early examples.
 
-      In a browser, IndexedDB can cache downloaded areas and store world state, 3D worlds render with WebGL or WebGPU, and first-person mouse look uses the Pointer Lock API.
+      Later ones include The Elder Scrolls V: Skyrim (2011) and Breath of the Wild (2017), and with maps that big, you can see why size is the main technical problem. Large maps use level streaming, which loads assets as you approach new areas, and procedural generation is one way to fill a big world.
+
+      In a browser, 3D worlds render with WebGL or WebGPU, first-person mouse look uses the Pointer Lock API, and IndexedDB can cache downloaded areas and store world state. That last part matters, because the game keeps persistent state so that what you do has lasting consequences.
     sources:
       - "https://en.wikipedia.org/wiki/Open-world_video_game"
       - "https://developer.mozilla.org/en-US/docs/Web/API/IndexedDB_API"
@@ -358,11 +414,13 @@ terms:
   - slug: party
     name: Party
     intro: |-
-      A party video game is built around player-to-player interaction, with simple controls that players of any skill level can pick up. Most are collections of short minigames played in quick succession by several people in the same room. The core loop is to play a round, tally points and start another. Mario Party (1998) and the Jackbox Party Pack series (first released in 2014) are examples.
+      In superskyler everyone plays short mini-games on the phones they already carry, so you don't need controllers, and its creator says playing family games was the inspiration.
 
-      Party games need local multiplayer: several controllers on a shared screen or, as with Jackbox Games, phones used as controllers. The code has to handle several inputs at once, run many small minigames with their own rules and keep a running score across them.
+      Party games are built around players interacting with each other, with simple controls that anyone can pick up regardless of skill. Most are collections of short minigames played in quick succession by several people in the same room, so you play a round, tally points and start another. Mario Party (1998) and the Jackbox Party Pack series (first released in 2014) are examples.
 
-      In a browser, the Gamepad API reads several controllers on one machine, each with its own index, and phones can join as controllers by opening a page that talks to the game over a WebSocket.
+      That means local multiplayer, either several controllers on a shared screen or, as with Jackbox Games and superskyler, phones used as controllers. In a browser, the Gamepad API reads several controllers on one machine, each with its own index, and phones can join as controllers by opening a page that talks to the game over a WebSocket.
+
+      The code has a lot to juggle, since it handles several inputs at once, runs many small minigames with their own rules and keeps a running score across them.
     sources:
       - "https://en.wikipedia.org/wiki/Party_video_game"
       - "https://developer.mozilla.org/en-US/docs/Web/API/Gamepad_API/Using_the_Gamepad_API"
@@ -370,22 +428,26 @@ terms:
   - slug: stealth
     name: Stealth
     intro: |-
-      A stealth game is a video game in which the player primarily uses stealth to avoid or overcome opponents, and avoidance is often rewarded over direct combat. The core loop is to watch patrols, hide or move quietly, slip past or strike from concealment, and retry if spotted. Metal Gear (1987), Thief: The Dark Project (1998), Splinter Cell and Hitman are well-known examples.
+      In Step Lightly your footsteps are the only light in a dark ranch house, and every step also makes noise a monster can follow, so seeing where you're going gives you away. Its creator wanted movement, visibility and danger tied to a single mechanic, and footsteps are a clever way to get there.
 
-      The code has to model what enemies can perceive: vision cones for line of sight, sound detection tied to how the player moves, and alert states that change enemy behavior once they notice something. Light and shadow can affect visibility, and enemies usually follow regular patrol patterns.
+      Stealth games are about avoiding or overcoming opponents without being noticed, and avoiding them is often rewarded over fighting. You watch the patrols, hide or move quietly, slip past or strike from concealment, and retry if you're spotted, as in Metal Gear (1987), Thief: The Dark Project (1998), Splinter Cell and Hitman.
 
-      In a browser, the Web Audio API's PannerNode places sounds in 3D space around the listener, so players can hear where a guard's footsteps come from.
+      The code has to model what enemies can perceive, with vision cones for line of sight, sound detection tied to how you move, and alert states that change their behavior once they notice something. In a browser, the Web Audio API's PannerNode places sounds in 3D space around the listener, so you can hear where a guard's footsteps come from.
+
+      Light and shadow can affect visibility too, and enemies usually follow regular patrols.
     sources:
       - "https://en.wikipedia.org/wiki/Stealth_game"
       - "https://developer.mozilla.org/en-US/docs/Web/API/Web_Audio_API/Web_audio_spatialization_basics"
   - slug: visual-novel
     name: Visual novel
     intro: |-
-      A visual novel is a narrative-focused video game genre of Japanese origin that tells its story through text boxes, static images, background art and audio, with progress made by clicking, tapping or pressing a button. The core loop is to read, make a choice at a decision point, and follow the branch toward one of several endings. The term emerged in the mid-1990s, and Steins;Gate, Phoenix Wright: Ace Attorney and Fate/stay night are examples.
+      In The long Night you're Paul Rivers, trying to find your coworkers inside the Sterling Corporation before the system archives them, and your choices decide which of them survive. It's told as interactive fiction in the visual novel mold.
 
-      A visual novel is mostly a script plus state. The code runs branching scripts, sets flags to remember earlier choices, and offers save and load and a backlog for rereading text. Dedicated engines exist, and Ren'Py was among the most popular visual novel development kits.
+      Visual novels are a narrative-focused genre of Japanese origin. The story comes through text boxes, static images, background art and audio, and you move it along by clicking, tapping or pressing a button. You read, make a choice at a decision point and follow the branch toward one of several endings.
 
-      In a browser, save slots and choice flags fit in localStorage. Browsers block sound until the player interacts, so music and voices can only start after the first click or key press.
+      On the code side it's really a script plus state. The code runs branching scripts, sets flags to remember earlier choices, and offers save and load and a backlog for rereading, and in a browser the save slots and choice flags fit in localStorage. Sound is blocked until the player interacts, though, so music and voices only start after the first click or key press.
+
+      Dedicated engines exist, and Ren'Py was among the most popular visual novel development kits. The term itself emerged in the mid-1990s, and Steins;Gate, Phoenix Wright: Ace Attorney and Fate/stay night are examples.
     sources:
       - "https://en.wikipedia.org/wiki/Visual_novel"
       - "https://developer.mozilla.org/en-US/docs/Web/API/Web_Storage_API"

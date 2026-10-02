@@ -3,11 +3,11 @@ terms:
     name: Three.js
     url: "https://threejs.org/"
     intro: |-
-      Three.js is an open-source JavaScript library for 3D graphics in the browser, released under the MIT license and developed on GitHub under the mrdoob account. Current builds include WebGL and WebGPU renderers.
+      Null Range's cockpit dogfights and the capybara courier that won Vibe Jam 2026 both run on Three.js, which gives you 3D in the browser with nothing but JavaScript. Since there's no editor involved, the scene, the camera and the game loop are all just code, which means a coding agent can write every part of it.
 
-      A Three.js game is JavaScript from top to bottom, and no editor is required, so an agent can write the scene, camera and game loop as code. The manual offers two setups: npm with Vite, or an import map that loads Three.js from a CDN and lets a game fit in one HTML file. Both need a local web server, because features break when a page opens straight from disk.
+      It's open source under the MIT license, and it's developed on GitHub under the mrdoob account. The manual offers two ways to set it up. You can install it with npm and Vite, or load it from a CDN with an import map, which lets a whole game fit in one HTML file. Either way you'll need a local web server, because some features break when you open the page straight from disk.
 
-      WebGPURenderer falls back to WebGL 2 on devices without WebGPU. Its shaders are written in TSL, and older ShaderMaterial code has to be ported. Both Vibe Jam rulebooks allow any engine and recommend Three.js.
+      Current builds come with WebGL and WebGPU renderers, and the WebGPU one falls back to WebGL 2 on devices that don't support it. Older ShaderMaterial code has to be ported, though, since the new renderer's shaders are written in TSL. Both Vibe Jam rulebooks let you use any engine, and both recommend Three.js.
     sources:
       - "https://threejs.org/"
       - "https://github.com/mrdoob/three.js"
@@ -19,11 +19,13 @@ terms:
     name: Babylon.js
     url: "https://www.babylonjs.com/"
     intro: |-
-      Babylon.js is an open-source 3D engine for the web, written in TypeScript and released under the Apache 2.0 license. Microsoft maintains it with an open-source community. It renders with WebGL, WebGL 2 and WebGPU, and version 9.0 came out on March 26, 2026.
+      Blind Ascent's dark tower, where you and your friends shout to light up nearby platforms for a moment, is drawn with Babylon.js.
 
-      A Babylon.js game is JavaScript or TypeScript, installed from npm or loaded from Babylon's CDN, so an agent can write the whole scene as code. The Playground runs that code in the browser, and since 9.0 it handles multiple files and npm imports, which makes it a quick place to test a snippet an AI wrote.
+      Microsoft maintains this open-source 3D engine for the web together with an open-source community. It's written in TypeScript under the Apache 2.0 license and renders with WebGL, WebGL 2 and WebGPU. A game made with it is JavaScript or TypeScript, installed from npm or loaded from Babylon's CDN, so an agent can write the whole scene as code.
 
-      For visual work, the Babylon.js Editor is a desktop app for Windows, macOS and Linux with scene editing, scripting, physics and project builds. The site also lists browser node editors for materials, geometry and particles.
+      The Playground runs that code in the browser. Since version 9.0 came out on March 26, 2026, it handles multiple files and npm imports too, so it's a pretty quick place to try out a snippet an AI wrote.
+
+      For visual work there's the Babylon.js Editor, a desktop app for Windows, macOS and Linux with scene editing, scripting, physics and project builds. The site also lists browser node editors for materials, geometry and particles.
     sources:
       - "https://www.babylonjs.com/"
       - "https://github.com/BabylonJS/Babylon.js"
@@ -33,11 +35,11 @@ terms:
     name: PlayCanvas
     url: "https://playcanvas.com/"
     intro: |-
-      PlayCanvas is an open-source web game engine built on WebGL2 and WebGPU, with a browser-based, collaborative Editor. The PlayCanvas site says the entire platform is open source on GitHub under the MIT license. As of September 2026, the Editor's free plan covers unlimited public projects, 1GB of storage and hosting, and private projects need a paid plan.
+      Gaussian Splatting FPS turns a real-world 3D scan into a first-person level you can shoot your way through, and its creator wrote up how it was done on the PlayCanvas blog. The engine underneath is open source and built on WebGL2 and WebGPU, and it handles 3D Gaussian splats as well as glTF models and WebXR.
 
-      Code-first projects install the engine from npm or use its React and web-component libraries, so an agent writes JavaScript or TypeScript against the API. Editor projects can use the official PlayCanvas Editor MCP server. It lets Claude Code, Codex, Cursor and other agents create entities and scripts, edit assets and scenes, launch the game, read console logs and take screenshots.
+      There's also a browser-based, collaborative Editor, and the PlayCanvas site says the entire platform is open source on GitHub under the MIT license. As of September 2026, the Editor's free plan is fairly generous, with unlimited public projects, 1GB of storage and hosting, while private projects need a paid plan.
 
-      The engine also handles glTF models, WebXR and 3D Gaussian splats.
+      Code-first projects install the engine from npm or use its React and web-component libraries, so an agent writes JavaScript or TypeScript against the API. Editor projects can use the official PlayCanvas Editor MCP server, which lets Claude Code, Codex, Cursor and other agents create entities and scripts, edit assets and scenes, launch the game, read console logs and take screenshots.
     sources:
       - "https://playcanvas.com/"
       - "https://github.com/playcanvas/engine"
@@ -47,11 +49,11 @@ terms:
     name: React Three Fiber
     url: "https://r3f.docs.pmnd.rs/"
     intro: |-
-      React Three Fiber is a React renderer for Three.js, maintained by the Poimandres (pmndrs) open-source collective and released under the MIT license. JSX elements become Three.js objects: <mesh /> in a component creates a new THREE.Mesh.
+      In Ombres, up to 12 players steer giant birds whose shadows paint the desert sand, and the biggest territory at nightfall wins. Its 3D is drawn with React Three Fiber, a React renderer for Three.js that the Poimandres (pmndrs) open-source collective maintains under the MIT license.
 
-      Scenes are built from reusable components that react to state, and the docs say everything that works in Three.js works here. Companion packages from the same ecosystem include Drei for helpers, Rapier bindings for physics and a postprocessing package for effects. Versions pair with React, so @react-three/fiber 9 goes with React 19.
+      Here JSX elements become Three.js objects, so <mesh /> in a component creates a new THREE.Mesh. Scenes are built from reusable components that react to state, and the docs say everything that works in Three.js works here too. The same ecosystem has companion packages like Drei for helpers, Rapier bindings for physics and a postprocessing package for effects.
 
-      A game made this way is a React project installed from npm with a build step, not a single HTML file.
+      Versions pair with React, so @react-three/fiber 9 goes with React 19. A game made this way is a React project installed from npm with a build step, not a single HTML file.
     sources:
       - "https://r3f.docs.pmnd.rs/getting-started/introduction"
       - "https://github.com/pmndrs/react-three-fiber"
@@ -59,11 +61,9 @@ terms:
     name: A-Frame
     url: "https://aframe.io/"
     intro: |-
-      A-Frame is an open-source web framework for VR and 3D scenes, built on Three.js and released under the MIT license. Scenes are HTML tags such as <a-scene> and <a-box>, on top of an entity-component architecture, and the current release is 1.8.0.
+      With A-Frame you build a VR or 3D scene out of HTML tags like <a-scene> and <a-box>, and it runs in desktop and mobile browsers and on headsets including Meta Quest, Apple Vision Pro, HTC Vive and Valve Index. It's an open-source web framework built on Three.js and released under the MIT license, with the tags sitting on an entity-component architecture. The current release is 1.8.0.
 
-      The basic setup is one HTML file with a script tag and an <a-scene> element, with nothing to install and no build step. An agent can write a whole scene as markup plus JavaScript components. The docs still recommend a local server during development, because URLs can break when a page opens from file://.
-
-      Scenes run in desktop and mobile browsers and on headsets including Meta Quest, Apple Vision Pro, HTC Vive and Valve Index.
+      The basic setup is one HTML file with a script tag and an <a-scene> element, with nothing to install and no build step. That means an agent can write a whole scene as markup plus JavaScript components. The docs still recommend a local server during development, because URLs can break when a page opens from file://.
     sources:
       - "https://aframe.io/"
       - "https://aframe.io/docs/1.8.0/introduction/"
@@ -73,11 +73,13 @@ terms:
     name: Phaser
     url: "https://phaser.io/"
     intro: |-
-      Phaser is a free, open-source 2D framework for HTML5 games in desktop and mobile browsers, released under the MIT license by Phaser Studio. It renders with Canvas and WebGL. Phaser 4.0.0 came out on April 10, 2026, and rebuilt the WebGL renderer while keeping the API.
+      Wagon Bones swaps Balatro's playing cards for d12 dice and sends them down the Oregon Trail, and under the hood it's Phaser, a free, open-source framework for 2D games that run in desktop and mobile browsers.
 
-      Games are JavaScript or TypeScript, loaded from a CDN script tag or installed from npm. The repository ships a skills folder that teaches AI coding agents Phaser 4's APIs and patterns. Phaser Editor v5 has a built-in MCP server for scenes, assets and tilemaps. The Phaser Game Agent, billed by build time, lets Claude Code, Codex, Cursor and other agents build a game with code, art and sound.
+      Phaser Studio releases it under the MIT license, and it renders with Canvas and WebGL. Phaser 4.0.0 came out on April 10, 2026 and rebuilt the WebGL renderer while keeping the API. Games are JavaScript or TypeScript, loaded from a CDN script tag or installed from npm.
 
-      Even during development, a Phaser game runs from a web server, because browsers restrict pages loaded from disk.
+      There's a lot here for AI agents, too. The repository ships a skills folder that teaches them Phaser 4's APIs and patterns, and Phaser Editor v5 has a built-in MCP server for scenes, assets and tilemaps. The Phaser Game Agent, billed by build time, lets Claude Code, Codex, Cursor and other agents build a game with code, art and sound.
+
+      You'll want a web server during development as well, because browsers restrict pages loaded from disk.
     sources:
       - "https://github.com/phaserjs/phaser"
       - "https://github.com/phaserjs/phaser/releases"
@@ -89,11 +91,13 @@ terms:
     name: PixiJS
     url: "https://pixijs.com/"
     intro: |-
-      PixiJS is an open-source 2D rendering engine for the web, released under the MIT license and free to use. Version 8 renders with WebGL and WebGPU, and the PixiJS team also makes companion libraries such as PixiJS React, Sound, UI and Layout.
+      PixiJS only draws. Its docs present it as a rendering engine rather than a complete game framework, so game rules, collisions and physics come from your own code or other libraries, and there's no scene editor.
 
-      The docs present it as a rendering engine rather than a complete game framework, so game rules, collisions and physics come from your own code or other libraries. PixiJS has no scene editor: the whole game is JavaScript or TypeScript, and npm create pixi.js@latest starts a project.
+      Doodle Battle is drawn with it. You sketch something, an AI guesses what it is, and then your doodle fights the one your opponent drew.
 
-      The team publishes official skills for AI coding agents, installed with npx skills add, plus llms.txt versions of the docs, with setup notes for Claude Code, Cursor and Codex.
+      PixiJS is open source and free to use under the MIT license, and version 8 renders with WebGL and WebGPU. The team also makes companion libraries like PixiJS React, Sound, UI and Layout. A whole game is JavaScript or TypeScript, and npm create pixi.js@latest starts a project.
+
+      For AI coding agents, the team publishes official skills, installed with npx skills add, plus llms.txt versions of the docs, with setup notes for Claude Code, Cursor and Codex.
     sources:
       - "https://pixijs.com/"
       - "https://github.com/pixijs/pixijs"
@@ -103,9 +107,11 @@ terms:
     name: KAPLAY
     url: "https://kaplayjs.com/"
     intro: |-
-      KAPLAY is a free, open-source JavaScript and TypeScript library for 2D web games, released under the MIT license. It is a fork of Kaboom.js: in July 2024 the team wrote that Kaboom had been deprecated and that KAPLAY carries it on with community support. Version 3001 is the stable release, and a v4000 preview is available.
+      KAPLAY picks up where Kaboom.js left off. In July 2024 the team wrote that Kaboom had been deprecated and that KAPLAY, its fork, carries it on with community support. It's a free, open-source JavaScript and TypeScript library for 2D web games, released under the MIT license.
 
-      The API is component based: a game adds objects with calls such as add([sprite("bean"), pos(100, 100)]). You can start with npx create-kaplay, install from npm or load KAPLAY from a CDN script tag, so a game can be a single HTML file. KAPLAYGROUND at play.kaplayjs.com runs code in the browser for quick tests.
+      The API is component based, so a game adds objects with calls such as add([sprite("bean"), pos(100, 100)]). Version 3001 is the stable release, and a v4000 preview is available.
+
+      You can start with npx create-kaplay, install from npm or load KAPLAY from a CDN script tag, so a whole game can fit in a single HTML file. KAPLAYGROUND at play.kaplayjs.com runs code in the browser for quick tests.
     sources:
       - "https://kaplayjs.com/"
       - "https://github.com/kaplayjs/kaplay"
@@ -114,11 +120,11 @@ terms:
     name: Excalibur.js
     url: "https://excaliburjs.com/"
     intro: |-
-      Excalibur.js is a free, open-source 2D game engine for the web, written in TypeScript and released under the BSD 2-Clause license. The community-run Excalibur.js project maintains it and has pledged that its public projects stay BSD 2-Clause.
+      Because Excalibur.js is written in TypeScript, the compiler can flag wrong method calls in AI-written code before you ever run the game. It's a free, open-source 2D game engine for the web, released under the BSD 2-Clause license, and the community-run Excalibur.js project that maintains it has pledged that its public projects stay BSD 2-Clause.
 
-      Games are TypeScript or JavaScript. You install from npm, use a script tag or an import map from unpkg, or start from templates for Vite, Parcel, Rollup, Webpack, Electron and Capacitor. The engine includes physics and collisions, plus plugins for Tiled, LDtk and Aseprite files. Because it is typed, the compiler can flag wrong method calls in AI-written code before the game runs.
+      Games are TypeScript or JavaScript. You install from npm, use a script tag or an import map from unpkg, or start from templates for Vite, Parcel, Rollup, Webpack, Electron and Capacitor. The engine includes physics and collisions, plus plugins for Tiled, LDtk and Aseprite files.
 
-      Excalibur is still at version 0.x, and its README warns that breaking changes will occur in new releases, so AI-written code should target the version the project uses.
+      It's still at version 0.x, though, and its README warns that breaking changes will occur in new releases, so AI-written code should target the version the project uses.
     sources:
       - "https://excaliburjs.com/"
       - "https://excaliburjs.com/docs/installation/"
@@ -127,9 +133,11 @@ terms:
     name: LittleJS
     url: "https://github.com/KilledByAPixel/LittleJS"
     intro: |-
-      LittleJS is a small, open-source HTML5 game engine by Frank Force (KilledByAPixel), released under the MIT license with no dependencies. It renders with WebGL2 plus Canvas2D, has arcade physics and Box2D compiled to WebAssembly, and plays sounds through the ZzFX generator without asset files.
+      In Alien Escape Pinball you work the flippers, hit ramps and crack alien eggs to hold off an invasion, and the whole table runs on LittleJS, a small, open-source HTML5 engine by Frank Force (KilledByAPixel). It's released under the MIT license with no dependencies and renders with WebGL2 plus Canvas2D.
 
-      Small size is a stated focus. The full minified build is about 100 KB gzipped, a small 2D game about 26 KB, and a js13k branch builds to a 7 KB zip. Games are JavaScript or TypeScript, from npm or a Vite template.
+      There's arcade physics and Box2D compiled to WebAssembly, and sounds play through the ZzFX generator without any asset files. Games are JavaScript or TypeScript, from npm or a Vite template.
+
+      Small size is a stated focus, and it really shows. The full minified build is about 100 KB gzipped, a small 2D game is about 26 KB, and a js13k branch builds to a 7 KB zip.
 
       The README also calls the API small and well documented so LLMs can produce high-quality results. It links LittleJS AI Tools, with templates and prompts for AI workflows, and a LittleJS GPT that builds games inside ChatGPT.
     sources:
@@ -138,9 +146,11 @@ terms:
     name: p5.js
     url: "https://p5js.org/"
     intro: |-
-      p5.js is a free, open-source JavaScript library for creative coding, released under the LGPL 2.1 license. Lauren Lee McCarthy created it in 2013 as a web take on the Processing language, and the Processing Foundation sustains it. It draws 2D graphics and can also render with WebGL.
+      A p5.js sketch is built around two functions. setup() runs once, and draw() runs 60 times per second until the program stops, which works as a game loop. A new project has index.html, style.css and sketch.js, so a small game can live in one sketch.js file that an agent writes from top to bottom.
 
-      A sketch is built around two functions: setup() runs once, and draw() runs 60 times per second until the program stops, which works as a game loop. A new project has index.html, style.css and sketch.js, so a small game can live in one sketch.js file that an agent writes from top to bottom. The p5.js Web Editor runs and saves sketches in the browser with no setup.
+      It's a free, open-source JavaScript library for creative coding, released under the LGPL 2.1 license. Lauren Lee McCarthy created it in 2013 as a web take on the Processing language, and the Processing Foundation sustains it. It draws 2D graphics and can also render with WebGL.
+
+      You don't have to set anything up, either, because the p5.js Web Editor runs and saves sketches right in the browser.
     sources:
       - "https://p5js.org/"
       - "https://github.com/processing/p5.js"
@@ -149,20 +159,24 @@ terms:
     name: HTML5 Canvas
     url: "https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API"
     intro: |-
-      The Canvas API is a browser feature for drawing graphics with JavaScript on an HTML canvas element. MDN lists animation, game graphics, data visualization, photo manipulation and real-time video processing among its uses, and says it largely focuses on 2D graphics.
+      Casadegema's watercolor courtyard, where you grow a bougainvillea and hunt for hidden gems through all four seasons, is drawn on an HTML canvas.
 
-      Nothing has to be installed. A game can be one HTML file with a canvas element and a script that redraws the screen every frame, so an agent can write and ship it without a build step. The API only draws, so the game loop, input, collisions and sound are code you or an AI write, or come from a library.
+      The Canvas API is the browser feature behind that, for drawing graphics with JavaScript on a canvas element. MDN lists animation, game graphics, data visualization, photo manipulation and real-time video processing among its uses, and says it largely focuses on 2D graphics.
 
-      WebGL draws hardware-accelerated 2D and 3D graphics on the same canvas element, and OffscreenCanvas also works in web workers.
+      Nothing has to be installed. A game can be one HTML file with a canvas element and a script that redraws the screen every frame, so an agent can write and ship it without a build step.
+
+      The API only draws, though. The game loop, input, collisions and sound are code you or an AI write, or they come from a library. WebGL draws hardware-accelerated 2D and 3D graphics on the same canvas element, and OffscreenCanvas works in web workers too.
     sources:
       - "https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API"
   - slug: webgl
     name: WebGL
     url: "https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API"
     intro: |-
-      WebGL is a JavaScript API for drawing hardware-accelerated 2D and 3D graphics in the browser without plug-ins. It is an open web standard from the Khronos Group, renders into an HTML canvas element and is available in all modern browsers. WebGL 1 conforms to OpenGL ES 2.0, and WebGL 2 to OpenGL ES 3.0.
+      NEON VELOCITY's pseudo-3D synthwave highway, where you race eight AI cars, is drawn with WebGL, the JavaScript API browsers use for hardware-accelerated 2D and 3D graphics without plug-ins.
 
-      Raw WebGL is low level and shader driven: shaders are written in GLSL, a separate language from JavaScript. Engines such as Three.js, Babylon.js, PixiJS, Phaser and PlayCanvas handle that for you. MDN describes WebGPU as the successor to WebGL.
+      It's an open web standard from the Khronos Group, it renders into an HTML canvas element, and it's available in all modern browsers. The first WebGL conforms to OpenGL ES 2.0, and WebGL 2 to OpenGL ES 3.0.
+
+      Raw WebGL is a lot of work, though. It's low level and shader driven, with shaders written in GLSL, a separate language from JavaScript, so engines like Three.js, Babylon.js, PixiJS, Phaser and PlayCanvas handle it for you. MDN describes WebGPU as its successor.
     sources:
       - "https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API"
       - "https://www.khronos.org/webgl/"
@@ -171,11 +185,13 @@ terms:
     name: Godot
     url: "https://godotengine.org/"
     intro: |-
-      Godot is a free, open-source engine for 2D and 3D games, released under the MIT license and supported by the nonprofit Godot Foundation. The current stable series is 4.7. Scripts are written in GDScript, a language built for Godot with Python-style indentation, or in C#.
+      A Low Poly Dungeon Game builds every first-person dungeon from a seed, so the same seed always gives the same layout, boss included. Its creator made it with Claude Code in Godot.
 
-      Most of a Godot project is text an agent can edit: scripts are .gd files, and scenes are .tscn files that the docs call mostly human-readable. Community MCP servers such as Godot AI go further and connect Claude Code, Codex, Cursor and other agents to a live editor, where they build scenes, edit nodes and wire signals.
+      Godot is a free, open-source engine for 2D and 3D games, released under the MIT license and supported by the nonprofit Godot Foundation, and the current stable series is 4.7. Scripts are written in GDScript, a language built for Godot with Python-style indentation, or in C#.
 
-      Web export uses WebAssembly and WebGL 2 through the Compatibility renderer, and Godot 4 can't export C# projects to the web. Single-threaded builds are the default. Threaded builds need cross-origin isolation headers and HTTPS.
+      Most of a project turns out to be text an agent can edit, since scripts are .gd files and scenes are .tscn files that the docs call mostly human-readable. With a community MCP server like Godot AI, Claude Code, Codex, Cursor and other agents can also work in a live editor, building scenes, editing nodes and wiring signals.
+
+      Web export uses WebAssembly and WebGL 2 through the Compatibility renderer, but Godot 4 can't export C# projects to the web. Single-threaded builds are the default, and threaded builds need cross-origin isolation headers and HTTPS.
     sources:
       - "https://godotengine.org/"
       - "https://godotengine.org/license/"
@@ -188,9 +204,13 @@ terms:
     name: Unity
     url: "https://unity.com/"
     intro: |-
-      Unity is a 2D and 3D game engine and editor from Unity Technologies, with builds for more than 25 platforms, the web among them. Game logic is written in C#. As of September 2026, Unity Personal is free for individuals and small organizations with under $200K in revenue and funds raised in the last 12 months.
+      Dungeon League's creator says AI wrote the code and architecture, while they handled the game design and balancing. It's made in Unity, the 2D and 3D game engine and editor from Unity Technologies, which builds for more than 25 platforms, the web among them.
 
-      An agent can write the C# scripts as text, and Unity can also save scenes in a YAML format that tools can generate and parse. Unity's own MCP server, part of its AI tools beta, lets Claude Code, Codex, Cursor and other agents inspect scenes, read the console and trigger editor actions. It needs Unity 6, a project linked to Unity Cloud, and a Unity AI trial or plan.
+      Game logic is written in C#. As of September 2026, Unity Personal is free for individuals and small organizations with under $200K in revenue and funds raised in the last 12 months.
+
+      An agent can write the C# scripts as text, and Unity can also save scenes in a YAML format that tools can generate and parse. There's an official Unity MCP server as well, part of Unity's AI tools beta, so Claude Code, Codex, Cursor and other agents can inspect scenes, read the console and trigger editor actions.
+
+      It takes a bit of setup, though. The server needs Unity 6, a project linked to Unity Cloud, and a Unity AI trial or plan.
 
       Web builds use WebAssembly with WebGL or WebGPU. The server has to send Content-Encoding headers for gzip or Brotli files, or the build embeds a decompression fallback with a bigger, less efficient loader.
     sources:
@@ -208,11 +228,13 @@ terms:
     maker: Epic Games
     url: "https://www.unrealengine.com/"
     intro: |-
-      Unreal Engine is a 3D game engine made by Epic Games. Gameplay is written in C++ or in Blueprints, a node-based visual scripting system used inside the Unreal Editor. As of September 2026, Unreal is free for games until a product earns $1 million in lifetime gross revenue. After that Epic takes a 5 percent royalty, and Epic Games Store sales are royalty-free.
+      Unreal Engine, Epic Games' 3D game engine, gives you two ways to write gameplay, and they suit an agent very differently. C++ is the plain-text route, while Blueprints, the node-based visual scripting system, are graphs you edit inside the Unreal Editor.
 
-      C++ is the plain-text route for an agent, while Blueprints are node graphs edited in the editor. Unreal Engine 5.8 adds an experimental MCP plugin that lets agentic AI systems connect to the Unreal Editor, understand the engine and the project, and help build assets or systems.
+      As of September 2026, Unreal is free for games until a product earns $1 million in lifetime gross revenue. After that Epic takes a 5 percent royalty, and Epic Games Store sales are royalty-free.
 
-      The web isn't among Unreal's packaging targets. Pixel Streaming instead runs the game on a cloud server and streams frames and audio to browsers over WebRTC.
+      Unreal Engine 5.8 adds an experimental MCP plugin that lets agentic AI systems connect to the Unreal Editor, understand the engine and the project, and help build assets or systems.
+
+      The web isn't among Unreal's packaging targets, though. Pixel Streaming runs the game on a cloud server instead and streams frames and audio to browsers over WebRTC.
     sources:
       - "https://www.unrealengine.com/"
       - "https://dev.epicgames.com/documentation/en-us/unreal-engine/blueprints-visual-scripting-in-unreal-engine"
@@ -223,9 +245,11 @@ terms:
     name: GameMaker
     url: "https://gamemaker.io/"
     intro: |-
-      GameMaker is a 2D game engine and editor that is part of Opera. Games are written in GML, as code or as GML Visual blocks, and one project can export to Windows, Mac, Linux, Android, iOS, HTML5, Xbox Series X|S, PlayStation 5 and Nintendo Switch.
+      Paperwork in Purgatory puts you behind the intake desk of the afterlife, checking each dead soul's claims against a database. It's built in GameMaker, the 2D game engine and editor that's part of Opera.
 
-      GML code is text, so an agent can write game scripts directly, while rooms and objects are laid out in the editor. Community MCP servers such as GameMaker MCP Server go further: from Cursor, an agent can create projects, add GML scripts, define objects with events and import sprites.
+      Games are written in GML, either as code or as GML Visual blocks, and one project can export to Windows, Mac, Linux, Android, iOS, HTML5, Xbox Series X|S, PlayStation 5 and Nintendo Switch.
+
+      The code side is plain text, so an agent can write GML scripts directly, while rooms and objects get laid out in the editor. If you work in Cursor, a community server called GameMaker MCP Server lets the agent do a whole list of things, from creating projects and adding GML scripts to defining objects with events and importing sprites.
 
       As of September 2026, the free license covers non-commercial use with web, desktop and mobile exports. Commercial releases need the one-time $99.99 Professional license, and consoles need an Enterprise subscription.
     sources:
@@ -237,9 +261,9 @@ terms:
     name: Defold
     url: "https://defold.com/"
     intro: |-
-      Defold is a free game engine and editor for 2D and 3D games, run by the Defold Foundation. Its source is on GitHub under the Defold License 1.0, which allows free use and changes but bars selling the engine itself as a game engine product, and there are no fees or royalties. Game logic is written in Lua.
+      Defold's manual says its projects work well with Claude Code, Codex, Cursor or any other agent, and the reasons are pretty concrete. Resource files are text, the editor exposes an HTTP API with an OpenAPI spec for builds, console output and previews, and the docs come as llms.txt files. Those open interfaces stand in for an official MCP server, and MCP wrappers are left to the community.
 
-      Defold's manual says its projects work well with Claude Code, Codex, Cursor or any other agent. Resource files are text, the editor exposes an HTTP API with an OpenAPI spec for builds, console output and previews, and the docs come as llms.txt files. Those open interfaces stand in for an official MCP server, and MCP wrappers are left to the community.
+      It's a free game engine and editor for 2D and 3D games, run by the Defold Foundation, and game logic is written in Lua. The source is on GitHub under the Defold License 1.0, which allows free use and changes but bars selling the engine itself as a game engine product. There are no fees or royalties.
 
       HTML5 builds compile to WebAssembly with WebGL 2 by default. They need an HTTP server that sends .wasm files as application/wasm, and threaded builds also need cross-origin isolation headers over HTTPS.
     sources:
@@ -252,9 +276,9 @@ terms:
     name: Bevy
     url: "https://bevy.org/"
     intro: |-
-      Bevy is a free, open-source game engine written in Rust, dual-licensed under MIT or Apache 2.0 with no license fees or sales cuts. All engine and game logic runs on Bevy ECS, its entity component system. It has 2D and 3D renderers and runs on Windows, macOS, Linux, the web, iOS and Android.
+      With Bevy, an agent writing your game is writing Rust, because Bevy games are Rust programs. The engine is free and open source, dual-licensed under MIT or Apache 2.0 with no license fees or sales cuts, and all engine and game logic runs on Bevy ECS, its entity component system. It has 2D and 3D renderers and runs on Windows, macOS, Linux, the web, iOS and Android.
 
-      Bevy games are Rust programs, so an agent writing Bevy code is writing Rust. The README says the engine is still early in development and ships breaking changes about every three months, each with a migration guide, so code has to match the project's Bevy version.
+      The README says it's still early in development and ships breaking changes about every three months, each with a migration guide, so code has to match the project's Bevy version.
 
       The community bevy_brp_mcp server uses the Bevy Remote Protocol to let agents such as Claude Code launch an app, inspect and change entities live, take screenshots and send input. On the web, Bevy renders through WebGL2 or WebGPU.
     sources:
@@ -265,11 +289,9 @@ terms:
     name: LÖVE
     url: "https://love2d.org/"
     intro: |-
-      LÖVE is a free, open-source framework for making 2D games in Lua, released under the zlib/libpng license. It supports Windows, macOS, Linux, Android and iOS, and the current version is 11.5.
+      Making a game with LÖVE means writing Lua code that the framework runs, with no scene files or visual tools in between, so the whole game is plain text an agent can write and edit. LÖVE itself is free and open source, built for 2D games and released under the zlib/libpng license.
 
-      LÖVE is a framework rather than an editor, so a LÖVE game is Lua code that the framework runs, with no scene files or visual tools in between. The whole game is plain text an agent can write and edit.
-
-      The web is not among the platforms on the official site, so a LÖVE game normally reaches players as a desktop or mobile download rather than a browser link.
+      It supports Windows, macOS, Linux, Android and iOS, and the current version is 11.5. The web isn't among the platforms on the official site, though, so a LÖVE game normally reaches players as a desktop or mobile download rather than a browser link.
     sources:
       - "https://love2d.org/"
       - "https://github.com/love2d/love"
@@ -277,9 +299,11 @@ terms:
     name: MonoGame
     url: "https://monogame.net/"
     intro: |-
-      MonoGame is a free, open-source C# framework for cross-platform games and a re-implementation of Microsoft's discontinued XNA Framework. The MonoGame Foundation, a 501(c)(3) nonprofit, owns and develops it, with no subscriptions, royalties, licensing costs or runtime fees. The license is the Microsoft Public License, with a few exceptions.
+      MonoGame keeps Microsoft's discontinued XNA Framework going. It re-implements XNA as a free, open-source C# framework for cross-platform games, and the MonoGame Foundation, a 501(c)(3) nonprofit, owns and develops it.
 
-      Games are C# projects written in Visual Studio, VS Code or Rider, with no scene editor, so an agent works directly in the code and the .NET toolchain. MonoGame targets Windows, macOS, Linux, Android, iOS and iPadOS, plus PlayStation, Xbox and Nintendo Switch for registered developers. The web is not among the platforms MonoGame lists.
+      There are no subscriptions, royalties, licensing costs or runtime fees, and the license is the Microsoft Public License, with a few exceptions.
+
+      Games are C# projects written in Visual Studio, VS Code or Rider, and there's no scene editor, so an agent works directly in the code and the .NET toolchain. MonoGame targets Windows, macOS, Linux, Android, iOS and iPadOS, plus PlayStation, Xbox and Nintendo Switch for registered developers. The web isn't on that list, though.
     sources:
       - "https://monogame.net/"
       - "https://github.com/MonoGame/MonoGame"
@@ -287,11 +311,11 @@ terms:
     name: Cocos Creator
     url: "https://www.cocos.com/en/creator"
     intro: |-
-      Cocos Creator is a free 2D and 3D game engine and editor from Cocos. The engine's source is on GitHub under the MIT license, with copyright held by Xiamen Yaji Software. Its README says the engine is a runtime meant to be used inside Cocos Creator, not on its own.
+      In Cocos Creator, an agent can write the game scripts as plain TypeScript, while scenes and prefabs get assembled in the editor. It's a free 2D and 3D game engine and editor from Cocos. The engine's source is on GitHub under the MIT license, with copyright held by Xiamen Yaji Software, and its README says the engine is a runtime meant to be used inside Cocos Creator, not on its own.
 
-      Game scripts are TypeScript, so an agent can write them as plain text, while scenes and prefabs are assembled in the editor. Community MCP plugins such as Cocos MCP Server let Claude, Cursor and other clients control the Cocos Creator 3.8 editor, from scenes and nodes to prefabs and assets.
+      The editor can be driven by an agent as well. A community plugin, Cocos MCP Server, lets Claude, Cursor and other clients control the Cocos Creator 3.8 editor, from scenes and nodes to prefabs and assets.
 
-      Cocos Creator publishes to Web Mobile and Web Desktop, rendering with WebGL, WebGL2 or WebGPU. It also targets Windows, Mac, iOS, Android and HarmonyOS, plus WeChat and Douyin mini games and Facebook Instant Games.
+      It publishes to Web Mobile and Web Desktop, rendering with WebGL, WebGL2 or WebGPU. It also targets Windows, Mac, iOS, Android and HarmonyOS, plus WeChat and Douyin mini games and Facebook Instant Games.
     sources:
       - "https://www.cocos.com/en/creator"
       - "https://github.com/cocos/cocos-engine"
@@ -301,9 +325,11 @@ terms:
     name: Construct 3
     url: "https://www.construct.net/"
     intro: |-
-      Construct 3 is a 2D game engine from Scirra whose editor runs in the browser. Games are built with a drag-and-drop interface and an event system, and Construct also accepts JavaScript or TypeScript, either in place of events or in separate script files.
+      Scirra built Construct 3 as a 2D game engine whose editor runs in the browser, and you make a game there with drag and drop and an event system.
 
-      For an AI-assisted project, script files are the text-code path an agent can write, while layouts and event sheets live in the editor. As of September 2026, the free edition includes web publishing and Construct Arcade hosting but limits a project to 50 events, 2 layers and 2 effects. Paid plans, starting at $9.99 a month for a personal license, add desktop, Android and iOS export, Facebook Instant Games and playable ads.
+      It also accepts JavaScript or TypeScript, either in place of events or in separate script files. Those script files are the part an agent can write as text, while layouts and event sheets live in the editor.
+
+      As of September 2026, the free edition includes web publishing and Construct Arcade hosting, but it limits a project to 50 events, two layers and two effects. Paid plans start at $9.99 a month for a personal license and add desktop, Android and iOS export, Facebook Instant Games and playable ads.
     sources:
       - "https://editor.construct.net/"
       - "https://www.construct.net/en/make-games/buy-construct"
@@ -312,11 +338,11 @@ terms:
     name: GDevelop
     url: "https://gdevelop.io/"
     intro: |-
-      GDevelop is a free, open-source, no-code game engine for 2D, 3D and multiplayer games. Its README says the core library, game engines, editor and extensions are MIT licensed, and that the GDevelop name and logo belong to Florian Rival.
+      GDevelop has its own AI agent built in. Open the Ask AI panel and pick Build for me, and it plans the changes, adds or edits objects, writes the events and adjusts behaviors in your project. It runs on monthly AI credits, and paid plans get more than free ones.
 
-      Game logic is built with events, and extensions can be made with no code or with code. GDevelop also has its own AI agent: in the Ask AI panel, Build for me plans the changes, adds or edits objects, writes the events and adjusts behaviors in your project. It runs on monthly AI credits, and paid plans get more than free ones.
+      It's a free, open-source, no-code game engine for 2D, 3D and multiplayer games. Its README says the core library, game engines, editor and extensions are MIT licensed, and that the GDevelop name and logo belong to Florian Rival. Game logic is built with events, and extensions can be made with or without code.
 
-      Games export as HTML5 for the web, where the engine renders with PixiJS and Three.js. They also export to Android, iOS, Steam and desktop, and GDevelop has built-in multiplayer lobbies, leaderboards and player accounts.
+      Games export as HTML5 for the web, where the engine renders with PixiJS and Three.js. They also export to Android, iOS, Steam and desktop, and multiplayer lobbies, leaderboards and player accounts come built in.
     sources:
       - "https://gdevelop.io/"
       - "https://github.com/4ian/GDevelop"
@@ -326,7 +352,7 @@ terms:
     maker: Roblox
     url: "https://create.roblox.com/"
     intro: |-
-      Roblox Studio is Roblox's free tool for building and publishing experiences on the Roblox platform, where players reach them on consoles, desktops and mobile devices. Scripts are written in Luau, a gradually typed language derived from Lua 5.1.
+      Building for Roblox means using Roblox Studio, Roblox's free tool for making and publishing experiences, and players reach those experiences on consoles, desktops and mobile devices. Scripts are written in Luau, a gradually typed language derived from Lua 5.1.
 
       Studio has two AI routes. The built-in Roblox Assistant answers questions, creates and edits objects and scripts, inserts Creator Store assets, and generates materials and 3D meshes, with a Planning Mode that previews its steps. Studio also includes an MCP server, so Claude Code, Cursor, Codex CLI, Antigravity and other clients can explore the game, write scripts, run Luau, simulate player input, playtest and capture screenshots.
 
@@ -340,11 +366,11 @@ terms:
     name: Pygame
     url: "https://www.pygame.org/docs/"
     intro: |-
+      With pygame your game is a Python program that runs its own game loop, using modules for graphics, sound, input and sprites. There's no editor, so the whole game is Python an agent can write and run.
+
       Pygame is a free, open-source Python library for games and other multimedia programs, built on SDL and released under the LGPL 2.1 license. You can use it in any project, but changes to pygame itself must be released under a compatible license.
 
-      A pygame game is a Python program that runs its own game loop, with modules for graphics, sound, input and sprites. There is no editor, so the whole game is Python an agent can write and run.
-
-      Pygame itself runs as desktop Python. A separate community tool, pygbag, packages pygame games for the browser through WebAssembly, for hosts such as itch.io. The main script must be named main.py, its loop must call asyncio.sleep(0) every frame, audio must be OGG, and file names are case-sensitive.
+      It runs as desktop Python. A separate community tool, pygbag, packages pygame games for the browser through WebAssembly, for hosts such as itch.io, and it comes with a few small rules to keep straight. The main script has to be named main.py, its loop must call asyncio.sleep(0) every frame, audio must be OGG and file names are case-sensitive.
     sources:
       - "https://www.pygame.org/docs/"
       - "https://github.com/pygame/pygame"
@@ -353,9 +379,9 @@ terms:
     name: raylib
     url: "https://www.raylib.com/"
     intro: |-
-      raylib is a simple, open-source library for game programming, created by Ramon Santamaria (raysan5) and released under the zlib/libpng license. It is written in plain C (C99) with no external dependencies and draws with hardware-accelerated OpenGL, from 1.1 up to 4.3 and ES 3.0, with a software renderer as an option.
+      There's nothing in raylib but code. The site says it has no visual helpers, GUI tools or editors, and it teaches through a cheatsheet and a large set of examples. So a raylib project is source code an agent can write from start to finish, in C or through one of more than 60 language bindings.
 
-      The site says raylib has no visual helpers, GUI tools or editors, just code, and it teaches through a cheatsheet and a large set of examples. A raylib project is source code an agent can write from start to finish, in C or through one of more than 60 language bindings.
+      It's a simple, open-source library for game programming, created by Ramon Santamaria (raysan5) and released under the zlib/libpng license. It's written in plain C (C99) with no external dependencies and draws with hardware-accelerated OpenGL, from 1.1 up to 4.3 and ES 3.0, with a software renderer as an option.
 
       It runs on Windows, Linux, macOS, FreeBSD, Raspberry Pi, Android and the web through WebAssembly.
     sources:
@@ -366,11 +392,13 @@ terms:
     maker: Lexaloffle
     url: "https://www.lexaloffle.com/pico-8.php"
     intro: |-
-      PICO-8 is a fantasy console from Lexaloffle for making, sharing and playing tiny games. Its limits are deliberate: a 128x128 display with 16 colors, 32k cartridges saved as PNG images, 256 sprites of 8x8 pixels, four sound channels and 8,192 tokens of code.
+      PICO-8 keeps games small on purpose. Lexaloffle built it as a fantasy console for making, sharing and playing tiny games, and every cartridge fits in 32k, saved as a PNG image, with sprites of 8x8 pixels.
 
-      Games are written in PICO-8's Lua, based on Lua 5.2 without the standard library, and made in its built-in code, sprite, map and sound editors. The token cap means an AI-written PICO-8 game has to fit all its logic in 8,192 tokens, and code written for standard Lua may call library functions PICO-8 doesn't have.
+      The limits are pretty strict. You get a 128x128 display with 16 colors, 256 sprites and four sound channels.
 
-      The EXPORT command writes an HTML file and a JavaScript file for the web, and standalone Windows, Mac and Linux apps are also possible. PICO-8 costs $14.99 as of September 2026.
+      Games are written in the console's own Lua, based on Lua 5.2 without the standard library, and made in its built-in code, sprite, map and sound editors. Code is capped at 8,192 tokens, so an AI-written game has to fit all its logic into that, and code written for standard Lua may call library functions the console doesn't have.
+
+      The EXPORT command writes an HTML file and a JavaScript file for the web, and standalone Windows, Mac and Linux apps are possible too. As of September 2026, it costs $14.99.
     sources:
       - "https://www.lexaloffle.com/pico-8.php"
       - "https://www.lexaloffle.com/dl/docs/pico-8_manual.html"
@@ -378,11 +406,11 @@ terms:
     name: TIC-80
     url: "https://tic80.com/"
     intro: |-
-      TIC-80 is a free, open-source fantasy computer for making, playing and sharing tiny games, created by Nesbox and released under the MIT license. Its limits are a 240x136 display, a 16-color palette, 256 sprites of 8x8 pixels and 4-channel sound.
+      A TIC-80 cartridge's code can be Lua, Moonscript, JavaScript, Ruby, Wren, Fennel, Squirrel, Janet or Python, so an AI can write it in any of them. It's a free, open-source fantasy computer for making, playing and sharing tiny games, created by Nesbox and released under the MIT license.
 
-      It includes code, sprite, map, sound and music editors. Games can be written in Lua, Moonscript, JavaScript, Ruby, Wren, Fennel, Squirrel, Janet or Python, so an AI can write a cartridge's code in any of them. The PRO version saves cartridges in a text format, which puts the whole cart in plain text, adds memory banks and exports games without the editors.
+      Its limits are a 240x136 display, a 16-color palette and four-channel sound. It includes code, sprite, map, sound and music editors, with room for 256 sprites of 8x8 pixels.
 
-      Cartridges can be played on the tic80.com website or packed into a player for the popular platforms.
+      The PRO version saves cartridges in a text format, which puts the whole cart in plain text, and it adds memory banks and exports games without the editors. Cartridges can be played on the tic80.com website or packed into a player for the popular platforms.
     sources:
       - "https://tic80.com/"
       - "https://github.com/nesbox/TIC-80"
@@ -390,9 +418,9 @@ terms:
     name: RPG Maker
     url: "https://www.rpgmakerweb.com/"
     intro: |-
-      RPG Maker is a series of tools for making role-playing games, from Gotcha Gotcha Games and Kadokawa. RPG Maker MZ is the latest version, alongside RPG Maker MV, and games made with it, bundled assets included, can be released as freeware or commercial titles with no extra license.
+      In RPG Maker you build maps, the database and events with the editor's visual tools, and plugins are where code comes in. They're JavaScript files dropped into the project's plugin folder, and they can control every part of the game, from battles to menus, which makes them the text-code path an agent can write.
 
-      Maps, the database and events are built in the editor's visual tools. Plugins are JavaScript files dropped into the project's plugin folder, and they can control all parts of the game, from battles to menus. That makes plugins the text-code path an agent can write.
+      It's a series of tools for making role-playing games, from Gotcha Gotcha Games and Kadokawa. RPG Maker MZ is the latest version, alongside RPG Maker MV, and you can release games made with it as freeware or commercial titles with no extra license, bundled assets included.
 
       MV exports to Windows, Mac, Android, iOS and HTML5. For MZ, the help says a game runs in a browser once the exported project folder is uploaded to a web server, in browsers that support WebGL, HTML5 Canvas and the Web Audio API.
     sources:
@@ -403,11 +431,11 @@ terms:
     name: WebGPU
     url: "https://developer.mozilla.org/en-US/docs/Web/API/WebGPU_API"
     intro: |-
-      WebGPU is a browser API that lets web pages use the device's GPU for rendering and for general-purpose computation. It is the successor to WebGL, and its shaders are written in WGSL, a separate shading language. The W3C GPU for the Web Working Group develops it.
+      You'll usually get WebGPU through an engine. Three.js, Babylon.js, PlayCanvas, PixiJS and Unity all support it, and Three.js falls back to WebGL 2 where it's missing.
 
-      A web.dev post from November 25, 2025 reported WebGPU support in Chrome, Edge, Firefox and Safari, with Linux, Firefox on Android and Intel Macs still in progress, so some players still lack it. The API works only in secure contexts, so a published WebGPU game has to be served over HTTPS.
+      Underneath, it's a browser API that lets web pages use the device's GPU for rendering and for general-purpose computation. It's the successor to WebGL, its shaders are written in WGSL, a separate shading language, and the W3C GPU for the Web Working Group develops it.
 
-      Games usually get WebGPU through an engine: Three.js, Babylon.js, PlayCanvas, PixiJS and Unity all support it, and Three.js falls back to WebGL 2 where WebGPU is missing.
+      Support is close but not complete. A web.dev post from November 25, 2025 reported WebGPU support in Chrome, Edge, Firefox and Safari, with Linux, Firefox on Android and Intel Macs still in progress, so some players still lack it. The API also works only in secure contexts, so a published WebGPU game has to be served over HTTPS.
     sources:
       - "https://developer.mozilla.org/en-US/docs/Web/API/WebGPU_API"
       - "https://web.dev/blog/webgpu-supported-major-browsers"
