@@ -4,11 +4,13 @@ terms:
     maker: Pieter Levels
     url: "https://vibejam.com/2025/"
     intro: |-
-      The 2025 Vibe Coding Game Jam, called Bolt Vibe Coding Game Jam 2025 on its official page, was the first edition of Pieter Levels' online jam for AI-made web games. Bolt.new, CodeRabbit and Lambda sponsored it, and Andrej Karpathy, Tim Soret, Mr. Doob, S13K and Levels judged it.
+      The first Vibe Coding Game Jam asked for at least 80 percent of each game to be written by AI, code and assets included, and over a thousand games came in, which is a lot for a first edition. Its official page calls it Bolt Vibe Coding Game Jam 2025, and it was the start of Pieter Levels' online jam for AI-made web games.
 
-      The rules required at least 80 percent of each game to be written by AI, code and assets included. Games had to be instantly playable on the web with no logins, signups or loading screens, free to play and hosted on their own domain or subdomain. Each had to carry a snippet of code from the submit form that marked it as an entry, and any engine was allowed, with Three.js recommended.
+      Games had to be instantly playable on the web with no logins, signups or loading screens, free to play and hosted on their own domain or subdomain. Each one also had to carry a snippet of code from the submit form that marked it as an entry. It didn't matter which engine you used, though Three.js was recommended.
 
-      Levels announced the results on April 23, 2025. Over a thousand games were submitted, and The Great Taxi Assignment, Vibeware and Vector Tango won $10,000, $5,000 and $2,500. The jam's page is archived at vibejam.com/2025.
+      Bolt.new, CodeRabbit and Lambda sponsored it, and Levels judged it himself, along with Andrej Karpathy, Tim Soret, Mr. Doob and S13K. He announced the results on April 23, 2025, and the jam's page is archived at vibejam.com/2025.
+
+      The Great Taxi Assignment, Vibeware and Vector Tango won $10,000, $5,000 and $2,500.
     sources:
       - "https://vibejam.com/2025/"
       - "https://levels.io/winners-of-the-2025-vibe-code-game-jam"
@@ -18,11 +20,15 @@ terms:
     maker: Pieter Levels
     url: "https://vibejam.com/2026/"
     intro: |-
-      The 2026 Vibe Coding Game Jam, officially Cursor Vibe Jam 2026, was the second edition of Pieter Levels' jam for AI-made web games. It opened on April 1, 2026 and closed for submissions on May 1, 2026 at 13:37 UTC. Cursor was the diamond sponsor, with Bolt.new, Glif and Tripo3D also sponsoring.
+      At least 90 percent of the code had to be written by AI, and only new games made during the jam counted, one entry per person. Those were the rules of the 2026 Vibe Coding Game Jam, officially Cursor Vibe Jam 2026, which was the second edition of Pieter Levels' jam for AI-made web games.
 
-      At least 90 percent of the code had to be written by AI, and only new games made during the jam counted, one entry per person. Games had to be free on the web with no login or signup and load almost instantly, and each had to include the jam's widget script or be disqualified. Any engine was allowed and Three.js recommended, and multiplayer was preferred but optional.
+      The jam opened on April 1. Games had to be free on the web with no login or signup and load almost instantly, and each one even had to include the jam's widget script or be disqualified. Any engine was allowed and Three.js recommended, and multiplayer was preferred but wasn't required.
 
-      Prizes were $25,000, $10,000 and $5,000, plus 12 special prizes of $1,000 each. Levels' results post on June 17, 2026 names A Game About Capybaras Delivering Food, Fanto's Mega-Mart and WenWare as the top three, and all entries are playable at vibej.am.
+      Submissions closed on May 1 at 13:37 UTC. Cursor was the diamond sponsor, with Bolt.new, Glif and Tripo3D also sponsoring.
+
+      First, second and third place paid $25,000, $10,000 and $5,000.
+
+      On top of that, 12 special prizes paid $1,000 each. Levels' results post on June 17 names A Game About Capybaras Delivering Food, Fanto's Mega-Mart and WenWare as the top three, so a capybara on a scooter took first place. All the entries are playable at vibej.am.
     sources:
       - "https://vibejam.com/2026/"
       - "https://vibejam.com/2026/press"
@@ -32,11 +38,13 @@ terms:
     maker: Focaccai
     url: "https://itch.io/jam/ai-browser-game-jam"
     intro: |-
-      AI Browser Game Jam 1 was Focaccai's first itch.io jam for AI-assisted browser games. Its submission window ran from February 20 to March 10, 2026, after a deadline extension. The theme was Ghost in the Machine.
+      Rogue Memory tied for first overall at AI Browser Game Jam 1 with 6-bit Vanguard (Star Overlord 4.0), and its hero is GHOST.EXE, a deleted AI. That fits the jam's theme, Ghost in the Machine, pretty neatly.
 
-      Entries had to be free and playable in a web browser using HTML5, with 50 percent or more AI-generated. AI could be used for code, art, design, music, sound or voice, with human editing and refinement welcome. Entrants needed the right to distribute their work, had to credit third-party assets and tools, and could not submit hateful, harassing or malicious content.
+      It was Focaccai's first itch.io jam for AI-assisted browser games, and its submission window ran from February 20 to March 10, 2026, after a deadline extension.
 
-      Its results page reports 29 submissions, and the public rankings list 25 games. Rogue Memory and 6-bit Vanguard (Star Overlord 4.0) tied for first overall, and Link State ranked third.
+      Entries had to be free and playable in a web browser using HTML5, with 50 percent or more AI-generated. AI could be used for code, art, design, music, sound or voice, with human editing and refinement welcome. Entrants needed the right to distribute their work, had to credit third-party assets and tools, and couldn't submit hateful, harassing or malicious content.
+
+      Its results page reports 29 submissions, and the public rankings list 25 games, with Link State in third.
     sources:
       - "https://itch.io/jam/ai-browser-game-jam"
       - "https://itch.io/jam/ai-browser-game-jam/results"
@@ -46,11 +54,13 @@ terms:
     maker: Focaccai
     url: "https://itch.io/jam/ai-game-jam-2"
     intro: |-
-      AI Browser Game Jam 2 was the second edition of Focaccai's itch.io jam for AI-assisted browser games. Submissions opened on April 11, 2026 and closed on April 30, 2026. Its Alien theme was a suggestion that entrants could interpret freely or ignore.
+      The top two games at AI Browser Game Jam 2 both have Alien in the title. Alien Escape Pinball ranked first overall and Alien Orbital Assault second, even though the Alien theme was only a suggestion that entrants could interpret freely or ignore. Realmward Tower Defense came third.
 
-      Games had to be free and playable in a web browser using HTML5, with 50 percent or more AI-generated. AI could contribute code, art, design, music or sound, and human editing and refinement were welcome. Solo developers and teams could enter. Entrants needed distribution rights, had to credit third-party assets and tools, and could not submit hateful, harassing or malicious content.
+      It was the second edition of Focaccai's itch.io jam for AI-assisted browser games. Submissions opened on April 11, 2026 and closed on April 30.
 
-      Its results page reports 42 submissions, and the public rankings list 38 games. Alien Escape Pinball ranked first overall, Alien Orbital Assault second and Realmward Tower Defense third.
+      Games had to be free and playable in a web browser using HTML5, with 50 percent or more AI-generated. AI could contribute code, art, design, music or sound, and human editing and refinement were welcome. Solo developers and teams could enter. Entrants needed distribution rights, had to credit third-party assets and tools, and couldn't submit hateful, harassing or malicious content.
+
+      Its results page reports 42 submissions, and the public rankings list 38 games.
     sources:
       - "https://itch.io/jam/ai-game-jam-2"
       - "https://itch.io/jam/ai-game-jam-2/results"
@@ -60,9 +70,11 @@ terms:
     maker: Focaccai
     url: "https://itch.io/jam/ai-game-jam-3"
     intro: |-
-      AI Browser Game Jam 3 was the third edition of Focaccai's itch.io jam for AI-assisted browser games. Its submission window ran from June 6 to June 24, 2026. The Familiar theme was optional, and entrants could interpret it freely or ignore it.
+      In Faithful Or Fickle you play a black cat familiar who secretly steers a manor's fate, which takes the theme of AI Browser Game Jam 3, Familiar, pretty literally. The theme was optional, though, and entrants could interpret it freely or ignore it.
 
-      Entries had to be free and playable in a web browser using HTML5, with 50 percent or more AI-generated. AI could be used for code, art, design, music or sound, alongside human editing and refinement. Solo developers and teams were welcome. Entrants needed distribution rights, had to credit third-party assets and tools, and could not submit hateful, harassing or malicious content.
+      This was the third edition of Focaccai's itch.io jam for AI-assisted browser games, and its submission window ran from June 6 to June 24, 2026.
+
+      Entries had to be free and playable in a web browser using HTML5, with 50 percent or more AI-generated. AI could be used for code, art, design, music or sound, alongside human editing and refinement. Solo developers and teams were welcome. Entrants needed distribution rights, had to credit third-party assets and tools, and couldn't submit hateful, harassing or malicious content.
 
       Its results page reports 77 submissions, and the public rankings list 71 games. Pyramid Wars Demo ranked first overall, A Low Poly Dungeon Game second and Snow Bunny third.
     sources:
@@ -76,9 +88,11 @@ terms:
     maker: Focaccai
     url: "https://itch.io/jam/ai-jam-4"
     intro: |-
-      AI Browser Game Jam 4 was the fourth edition of Focaccai's itch.io jam for AI-assisted browser games. Submissions ran from August 1 to August 18, 2026. The theme was Charge, offered as a suggestion that entrants could interpret freely or ignore.
+      PLUGS has you plugging lamps into outlets, and in Charge The Coil you wind a glowing charge around a copper coil. They're two pretty different takes on the theme of AI Browser Game Jam 4, Charge, which was offered as a suggestion that entrants could interpret freely or ignore.
 
-      Games had to be free and playable in a web browser without a download, with the majority of the game AI-generated. Solo developers and teams could enter. Existing projects were allowed only when most of the submission was new content, and multiple entries had to be significantly different. Entrants needed distribution rights, had to credit third-party assets and tools, and could not submit hateful, harassing or malicious content.
+      It was the fourth edition of Focaccai's itch.io jam for AI-assisted browser games, and submissions ran from August 1 to August 18, 2026.
+
+      Games had to be free and playable in a web browser without a download, with the majority of the game AI-generated. Solo developers and teams could enter. Existing projects were allowed only when most of the submission was new content, and multiple entries had to be significantly different. Entrants needed distribution rights, had to credit third-party assets and tools, and couldn't submit hateful, harassing or malicious content.
 
       As of October 2026, its results page reports 125 entries, and the public rankings list 124 games. Plug & Prosper ranked first overall, AI2U - Guns & Girlfriends second and TECHNICAL DEBT third.
     sources:
