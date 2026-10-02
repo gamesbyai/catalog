@@ -36,8 +36,8 @@ const SHOTS = /^([1-3]) uploaded, ref ([0-9a-f]{16})$/;
 
 /**
  * The creator's screenshots named in the issue, or undefined (with a note when the section is there but unusable).
- * Only issues the site files (its GitHub App: a Bot author) can name them: anyone can write this section into an issue
- * of their own, and refs are public in the issues.
+ * Only issues the site files (through its own GitHub App, the only author submission.yml passes as Bot) can name them:
+ * anyone can write this section into an issue of their own, and refs are public in the issues.
  */
 function uploadsFrom(f, fromSite, notes) {
   const raw = String(f[SHOTS_LABEL] ?? '');
@@ -188,7 +188,8 @@ export function toEntry(f, { names, playUrls, slugs, creators = new Map(), today
 
 if (process.argv[1] === fileURLToPath(import.meta.url)) {
   const issue = Number(process.env.ISSUE_NUMBER);
-  // The site files its issues through its GitHub App, so their author is a Bot.
+  // submission.yml passes Bot only for an issue filed by the site's own GitHub App (matched by its user id). Every other
+  // author, bots included, arrives as User.
   const fromSite = process.env.ISSUE_AUTHOR_TYPE === 'Bot';
   const r = toEntry(parseIssue(process.env.ISSUE_BODY), { ...loadContext('.'), today: new Date().toISOString().slice(0, 10), issue, fromSite });
   console.log(JSON.stringify(r.error ? { error: r.error } : { slug: r.slug, yaml: stringify(r.entry), notes: r.notes }));

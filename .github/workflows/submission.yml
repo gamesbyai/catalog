@@ -27,7 +27,9 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
           AUTHOR: ${{ github.event.issue.user.login }}
-          AUTHOR_TYPE: ${{ github.event.issue.user.type }}
+          # Only the site's own GitHub App counts as a bot; any other account, bots included, is treated like a person.
+          # The App is matched by its user id, which stays the same if the App is ever renamed (test/submission.test.mjs).
+          AUTHOR_TYPE: ${{ github.event.issue.user.id == 335636269 && 'Bot' || 'User' }}
         run: |
           if [ "$AUTHOR_TYPE" = "Bot" ]; then echo "ok=true" >> "$GITHUB_OUTPUT"; exit 0; fi
           n=$(gh issue list --repo "$GITHUB_REPOSITORY" --label submission --state open --author "$AUTHOR" --json number --jq length)
@@ -42,8 +44,8 @@ jobs:
         env:
           ISSUE_BODY: ${{ github.event.issue.body }}
           ISSUE_NUMBER: ${{ github.event.issue.number }}
-          # Only issues the site files (a Bot author) can name the creator's uploaded screenshots.
-          ISSUE_AUTHOR_TYPE: ${{ github.event.issue.user.type }}
+          # Only issues filed by the site's own GitHub App can name the creator's uploaded screenshots.
+          ISSUE_AUTHOR_TYPE: ${{ github.event.issue.user.id == 335636269 && 'Bot' || 'User' }}
         run: node scripts/issue-to-entry.mjs > "$RUNNER_TEMP/entry.json"
       - uses: actions/create-github-app-token@v2
         if: steps.limit.outputs.ok == 'true'
