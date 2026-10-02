@@ -36,11 +36,11 @@ terms:
     name: Claude Opus 5.5
     provider: anthropic
     intro: |-
-      Claude Opus 5.5 designed and built Ombres from a single brief, according to the game's repository, with Brieuc Crosson supervising.
+      Arkanoid Neon's eight hand-built brick rounds start with Regnbågen, a rainbow of colored rows, and an AI-controlled demo plays on the title screen. It was made with Claude Code on Claude Opus 5.5.
 
       Opus 5.5 is Anthropic's model for long-running agentic coding and knowledge work, released September 22, 2026 as the first of the Claude 5.5 family. Anthropic says it performs at the level of Claude Fable 5.1 on most work, at $4 per million input tokens and $20 per million output tokens, a bit below Opus 5's $5 and $25.
 
-      For games, it runs in Claude Code, Anthropic's coding agent, and in the Claude apps on paid plans. It's also in GitHub Copilot and Cursor and on the Claude API, Amazon Bedrock, Google Cloud and Microsoft Foundry. It reads text and images and writes text, with a 1M-token context window and adaptive thinking that's always on.
+      It runs in Claude Code and in the Claude apps on paid plans, and it's also in GitHub Copilot and Cursor and on the Claude API, Amazon Bedrock, Google Cloud and Microsoft Foundry. It reads text and images and writes text, with a 1M-token context window and adaptive thinking that's always on.
 
       Anthropic's announcement quotes a tester who had several Claude models build a game from one prompt, and in that test Opus 5.5 scored highest on graphics and polish. As of September 2026 it's the newest Opus model, with retirement not sooner than September 22, 2027.
     sources:
