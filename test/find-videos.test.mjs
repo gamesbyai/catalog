@@ -250,12 +250,21 @@ test('usable publication/status/link gate excludes restricted, draft and many-ga
 
 test('body has defanged escaped text, ID links, Found by, and compatible offered pair parsing', () => {
   const body = prBody([row('a', vid('a'), { title: 'https://example.com www.example.com <b> @channel | **title**', channel: 'http://example.com' })], { many: [{ video: vid('m'), n: 4 }] });
-  assert.match(body, /Found by/); assert.match(body, /hxxps/); assert.match(body, /www\\\[\.\\\]/);
-  assert.doesNotMatch(body, /<img|https:\/\/example\.com|http:\/\/example\.com|(?<!\\)@channel|(?<!\\)\*\*title/);
+  assert.match(body, /Found by/); assert.match(body, /hxxps/); assert.match(body, /www\[\.\]/);
+  assert.match(body, /`hxxps\[:\]\/\/example\.com www\[\.\]example\.com <b> @channel \\\| \*\*title\*\*`/);
+  assert.doesNotMatch(body, /<img|https:\/\/example\.com|http:\/\/example\.com|<mailto:/);
   const old = `| [b](${link('b')}) | <img src="https://i.ytimg.com/vi/${vid('b')}/mqdefault.jpg" width="160"> | title | channel |`;
   const pairs = offeredPairs([pr(1, { body: `${body}\r\n${old}\nNote: ${old}\n${prBody([row('c', vid('c'))]).replace(`[${vid('c')}]`, `[${vid('d')}]`)}` }), pr(2, { isCrossRepository: true, body: prBody([row('z', vid('z'))]) })], ['a', 'b']);
   assert.deepEqual([...pairs].sort(), [pairKey(vid('a'), 'a'), pairKey(vid('b'), 'b')].sort());
   assert.deepEqual(waitingFor([pr(1), pr(2, { state: 'MERGED' }), pr(3, { isCrossRepository: true })]), [1]);
+});
+
+test('table titles and channels use safe code spans while retaining escaped pipes', () => {
+  const body = prBody([row('a', vid('a'), { title: 'Back`tick | @channel #issue mailto:me@example.test', channel: 'Name | @here' })]);
+  assert.match(body, /`Back'tick \\\| @channel #issue mailto:me@example\.test`/);
+  assert.match(body, /`Name \\\| @here`/);
+  assert.match(body, /\| `Back'tick \\\| @channel #issue mailto:me@example\.test` \| `Name \\\| @here` \| site search/);
+  assert.doesNotMatch(body, /<mailto:/);
 });
 
 test('closed PR review outcomes compare pairs against main and ignore old/fork PRs', () => {
@@ -297,6 +306,29 @@ test('dedupe is per pair, so an offered video can still be proposed for another 
   const v = video(vid('a'), `${link('a')} ${link('b')}`);
   const r = await dryRun([entry('a'), entry('b')], fakeYouTube({ search: [v.id], details: [v] }), { prs: [pr(1, { state: 'CLOSED', closedAt: '2026-10-01T10:00:00Z', body: prBody([row('a', v.id)]) })] });
   assert.equal(r.count, 1); assert.deepEqual(r.report.offered, [[v.id, 'b']]);
+});
+
+test('manual dispatch still respects existing offers and reports recent PR history', async () => {
+  const v = video(vid('a'), link('game'));
+  for (const ageDays of [5, 60]) {
+    const closed = new Date(NOW.getTime() - ageDays * 86_400_000).toISOString();
+    const prs = [pr(1, { state: 'CLOSED', closedAt: closed, body: prBody([row('game', v.id)]) })];
+    const r = await dryRun([entry('game')], fakeYouTube({ search: [v.id], details: [v] }), { manual: true, searches: 1, prs });
+    assert.deepEqual(r.report.offered, [], `${ageDays} day prior offer`);
+    assert.deepEqual(r.report.reviews, ageDays === 5 ? [{ video: v.id, slug: 'game', state: 'declined', pr: 1 }] : [], `${ageDays} day review history`);
+  }
+});
+
+test('manual queue rows bypass prior offers and declines at 5 and 60 days', async () => {
+  const v = video(vid('a'), link('game'));
+  for (const ageDays of [5, 60]) {
+    const closedAt = new Date(NOW.getTime() - ageDays * 86_400_000).toISOString();
+    const oldPr = pr(1, { state: 'CLOSED', closedAt, body: prBody([row('game', v.id)], { many: [{ video: v.id, n: 4 }] }) });
+    const r = await dryRun([entry('game')], fakeYouTube({ details: [v] }), { prs: [oldPr],
+      siteState: state({ queue: [{ video: v.id, slug: 'game', source: 'manual', seen: false }] }) });
+    assert.deepEqual(r.report.offered, [[v.id, 'game']], `${ageDays} day explicit queue offer`);
+    assert.deepEqual(r.report.reviews, [], `${ageDays} day manual row history`);
+  }
 });
 
 test('queue outcomes distinguish final, temporary, full, declined, gone and offered', async () => {
@@ -498,6 +530,60 @@ test('workflow scopes credentials, passes inputs through env, and posts only aft
   const persist = steps.findIndex((s) => s.uses === 'actions/upload-artifact@v4');
   assert.ok(recover < find && open < seal && seal < persist && persist < post);
   assert.match(steps[persist].with.path, /report\.enc$/);
+  assert.match(steps.find((s) => s.name === 'Restore pending report').run, /head_repository_id == \.workflow_run\.repository_id/);
+  assert.match(steps.find((s) => s.name === 'Restore pending report').run, /head_branch/);
+  assert.match(steps.find((s) => s.name === 'Restore pending report').run, /--paginate/);
+  assert.match(steps.find((s) => s.name === 'Restore pending report').run, /sort_by\(\.created_at\) \| reverse/);
+  assert.match(steps.find((s) => s.name === 'Restore pending report').run, /gh run download "\$run_id" --name videos-outbox/);
+  assert.doesNotMatch(steps.find((s) => s.name === 'Restore pending report').run, /conclusion.*success/);
+  assert.match(steps[recover].run, /--recover/);
+  assert.doesNotMatch(steps[recover].run, /\|\|/);
+  assert.match(readFileSync(new URL('../scripts/videos-post.mjs', import.meta.url), 'utf8'), /catch \{ console\.error\('videos: recovery failed'\); \}/);
+});
+
+test('restore selects the newest owned main artifact, downloads only it by name, and writes report.enc', () => {
+  const root = mkdtempSync(join(tmpdir(), 'videos-restore-'));
+  tempDirs.push(root);
+  const artifacts = [
+    { name: 'videos-outbox', created_at: '2026-10-03T12:00:00Z', workflow_run: { id: 20, repository_id: 7, head_repository_id: 8, head_branch: 'main', conclusion: 'failure' } },
+    { name: 'videos-outbox', created_at: '2026-10-03T11:00:00Z', workflow_run: { id: 19, repository_id: 7, head_repository_id: 7, head_branch: 'feature/test', conclusion: 'success' } },
+    { name: 'videos-outbox', created_at: '2026-10-03T10:00:00Z', workflow_run: { id: 18, repository_id: 7, head_repository_id: 7, head_branch: 'main', conclusion: 'failure' } },
+    { name: 'videos-outbox', created_at: '2026-10-03T09:00:00Z', workflow_run: { id: 17, repository_id: 7, head_repository_id: 7, head_branch: 'main', conclusion: 'success' } },
+  ];
+  const fixtureFile = join(root, 'artifacts.json'), stubFile = join(root, 'gh-stub.cjs'), logFile = join(root, 'calls.json');
+  writeFileSync(fixtureFile, JSON.stringify(artifacts));
+  writeFileSync(stubFile, `
+    const fs = require('node:fs');
+    const args = process.argv.slice(2);
+    const log = JSON.parse(fs.readFileSync(process.env.GH_LOG, 'utf8'));
+    if (args[0] === 'api') {
+      const query = args[args.indexOf('--jq') + 1] ?? '';
+      if (!args.includes('--paginate') || !args.includes('--slurp') || !query.includes('head_repository_id == .workflow_run.repository_id') || !query.includes('head_branch == "main"') || !query.includes('sort_by(.created_at)')) process.exit(2);
+      const rows = JSON.parse(fs.readFileSync(process.env.GH_FIXTURE, 'utf8'));
+      const selected = rows.filter((a) => a.name === 'videos-outbox' && a.workflow_run.head_repository_id === a.workflow_run.repository_id && a.workflow_run.head_branch === 'main').sort((a,b) => b.created_at.localeCompare(a.created_at))[0];
+      log.query = query; log.runId = selected?.workflow_run.id ?? null;
+      fs.writeFileSync(process.env.GH_LOG, JSON.stringify(log));
+      if (selected) process.stdout.write(String(selected.workflow_run.id));
+    } else if (args[0] === 'run' && args[1] === 'download') {
+      const runId = Number(args[2]), name = args[args.indexOf('--name') + 1], dir = args[args.indexOf('--dir') + 1];
+      if (runId !== Number(log.runId) || name !== 'videos-outbox') process.exit(3);
+      fs.mkdirSync(dir, { recursive: true }); fs.writeFileSync(require('node:path').join(dir, 'report.enc'), 'selected recovery');
+      log.download = { runId, name, dir }; fs.writeFileSync(process.env.GH_LOG, JSON.stringify(log));
+    } else process.exit(4);
+  `);
+  writeFileSync(logFile, '{}');
+  const wf = parse(readFileSync(new URL('../.github/workflows/videos.yml', import.meta.url), 'utf8'));
+  const restore = wf.jobs.find.steps.find((s) => s.name === 'Restore pending report').run;
+  const runnerTemp = process.platform === 'win32' ? '$(cygpath -u "$RUNNER_TEMP_WINDOWS")' : '"$RUNNER_TEMP_WINDOWS"';
+  const result = spawnSync('bash', ['-e', '-c', `gh() { node "$GH_STUB" "$@"; }\nexport RUNNER_TEMP="${runnerTemp}"\n${restore}`], {
+    encoding: 'utf8', env: { ...process.env, GH_STUB: stubFile, GH_FIXTURE: fixtureFile, GH_LOG: logFile,
+      RUNNER_TEMP_WINDOWS: root, GITHUB_REPOSITORY: 'owner/repo' },
+  });
+  assert.equal(result.status, 0, result.stderr);
+  const log = JSON.parse(readFileSync(logFile, 'utf8'));
+  assert.equal(log.runId, 18, 'the newest matching artifact is restored even though its run failed');
+  assert.deepEqual({ runId: log.download.runId, name: log.download.name }, { runId: 18, name: 'videos-outbox' });
+  assert.equal(readFileSync(join(root, 'recovery', 'report.enc'), 'utf8'), 'selected recovery');
 });
 
 test('durable recovery encrypts private state and resumes stable batches after process loss', async () => {
@@ -516,6 +602,19 @@ test('durable recovery encrypts private state and resumes stable batches after p
   await assert.rejects(recoverReport(options));
 });
 
+test('recovery CLI reports failures with a fixed line and exits successfully', () => {
+  const root = mkdtempSync(join(tmpdir(), 'videos-recovery-'));
+  tempDirs.push(root);
+  const recoveryFile = join(root, 'broken-report.enc');
+  writeFileSync(recoveryFile, 'not ciphertext');
+  const result = spawnSync(process.execPath, ['scripts/videos-post.mjs', '--recover', recoveryFile], {
+    cwd: fileURLToPath(new URL('..', import.meta.url)), encoding: 'utf8',
+    env: { ...process.env, NOTIFY_URL: 'https://example.test', INTERNAL_VIDEOS_TOKEN: 'token' },
+  });
+  assert.equal(result.status, 0, result.stderr);
+  assert.equal(result.stderr.trim(), 'videos: recovery failed');
+});
+
 test('reservation response loss retries the same identity before each charged call', async () => {
   const ids = [], calls = [];
   let lost = true;
@@ -524,4 +623,13 @@ test('reservation response loss retries the same identity before each charged ca
   await youtubeGet('videos', {}, { key: 'test-key', reserveQuota, fetchImpl: async () => { calls.push('youtube'); return Response.json({ items: [] }); } });
   assert.deepEqual(ids, ['run-test:0', 'run-test:0']); assert.equal(calls.length, 1);
   await assert.rejects(youtubeGet('videos', {}, { key: 'test-key', fetchImpl: () => assert.fail('unreserved call') }));
+});
+
+test('quota reservation assigns the Pacific day when the reservation is sent', async () => {
+  const days = [], now = () => new Date(days.length ? '2026-10-03T07:00:00Z' : '2026-10-03T06:59:59Z');
+  const reserve = reserveRunQuota({ runId: 'midnight', now, notifyUrl: 'https://example.test', token: 'test-token', sleep: async () => {},
+    fetchImpl: async (_url, init) => { days.push(JSON.parse(init.body).day); return Response.json({ reserved: true }); } });
+  await reserve({ units: 1, searches: 0 });
+  await reserve({ units: 1, searches: 0 });
+  assert.deepEqual(days, ['2026-10-02', '2026-10-03']);
 });

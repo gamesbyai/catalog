@@ -32,15 +32,16 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
-          count=$(gh api "repos/$GITHUB_REPOSITORY/actions/artifacts?name=videos-outbox&per_page=1" --jq '.total_count' 2>/dev/null) || { echo "videos: restore failed"; exit 1; }
-          if [ "$count" != "0" ]; then
-            gh run download --repo "$GITHUB_REPOSITORY" --name videos-outbox --dir "$RUNNER_TEMP/recovery" > /dev/null 2>&1 || { echo "videos: restore failed"; exit 1; }
+          run_id=$(gh api --paginate --slurp "repos/$GITHUB_REPOSITORY/actions/artifacts?name=videos-outbox&per_page=100" --jq '[.[] | .artifacts[] | select(.workflow_run.head_repository_id == .workflow_run.repository_id and .workflow_run.head_branch == "main")] | sort_by(.created_at) | reverse | .[0].workflow_run.id // empty' 2>/dev/null) || { echo "videos: restore failed"; exit 0; }
+          if [ -n "$run_id" ]; then
+            gh run download "$run_id" --name videos-outbox --repo "$GITHUB_REPOSITORY" --dir "$RUNNER_TEMP/recovery" > /dev/null 2>&1 || { echo "videos: restore failed"; exit 0; }
           fi
       - name: Recover pending report
         env:
           NOTIFY_URL: ${{ secrets.NOTIFY_URL }}
           INTERNAL_VIDEOS_TOKEN: ${{ secrets.INTERNAL_VIDEOS_TOKEN }}
-        run: node scripts/videos-post.mjs --recover "$RUNNER_TEMP/recovery/report.enc"
+        run: |
+          node scripts/videos-post.mjs --recover "$RUNNER_TEMP/recovery/report.enc"
       - name: List the pull requests
         env:
           GH_TOKEN: ${{ github.token }}

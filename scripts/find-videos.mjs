@@ -42,7 +42,7 @@ export const errorCode = (err) => ERROR_CODES.has(err?.code) ? err.code : 'catal
 export const clean = (s, max) => String(s ?? '').replace(/[\u0000-\u001f\u007f\u200b-\u200f\u202a-\u202e\u2066-\u2069]/g, ' ').replace(/\s+/g, ' ').trim().slice(0, max).trim();
 export const esc = (s) => String(s).replace(/[\\`*_{}[\]()#+!|<>~@&]/g, (c) => `\\${c}`);
 export const defang = (s) => String(s).replace(/https:\/\//gi, 'hxxps[:]//').replace(/http:\/\//gi, 'hxxp[:]//').replace(/www\./gi, 'www[.]');
-const bodyText = (s, max) => esc(defang(clean(s, max)));
+const bodyText = (s, max) => `\`${defang(clean(s, max)).replace(/`/g, "'").replace(/\|/g, '\\|')}\``;
 
 export function slugsIn(text) {
   const out = new Set();
@@ -392,12 +392,13 @@ export async function run({ key, root = ROOT, prs = [], bodyFile, reportFile, fe
   else state = await loadSiteState({ notifyUrl, token, fetchImpl, now });
   if (!state) log('videos: site state unavailable');
   if (!state) { log(`videos: open ${waitingFor(prs).length}; searched 0`); return 0; }
-  const report = { day: pacificDay(now), run: today, runId, checkedAt: now.getTime(), siteComplete: false, units: 0, searches: 0, searched: [], offered: [], enqueue: [], drop: [], seen: [], reviews: reviewOutcomes(prs, entries, now), confirmed: [], forget: [], channels: [], channelsGone: [], counts: {} };
+  const manualQueuePairs = new Set((state?.queue ?? []).filter((r) => r.source === 'manual').map((r) => pairKey(r.video, r.slug)));
+  const report = { day: pacificDay(now), run: today, runId, checkedAt: now.getTime(), siteComplete: false, units: 0, searches: 0, searched: [], offered: [], enqueue: [], drop: [], seen: [], reviews: reviewOutcomes(prs, entries, now).filter((r) => !manualQueuePairs.has(pairKey(r.video, r.slug))), confirmed: [], forget: [], channels: [], channelsGone: [], counts: {} };
   const quota = state?.day === report.day ? state.quota : { workerUnits: 0, jobUnits: 0, jobSearches: 0 };
   const budget = { units: 0, searches: 0, baseUnits: quota.workerUnits + quota.jobUnits, baseSearches: quota.jobSearches, searchLimit: manual ? 100 : 92 };
   if (!reserveQuota) {
     const { reserveRunQuota } = await import('./videos-post.mjs');
-    reserveQuota = reserveRunQuota({ notifyUrl, token, fetchImpl, now, runId, searchLimit: budget.searchLimit });
+    reserveQuota = reserveRunQuota({ notifyUrl, token, fetchImpl, runId, searchLimit: budget.searchLimit });
   }
   const ctx = { key, fetchImpl, budget, reserveQuota };
   const cache = new Map();
@@ -407,7 +408,7 @@ export async function run({ key, root = ROOT, prs = [], bodyFile, reportFile, fe
   const offered = offeredPairs(prs);
   const excludedVideos = offeredVideos(prs);
   for (const k of offered) explained.add(k.split(':')[1]);
-  const declined = new Set((state?.reviews ?? []).filter((r) => r[2] === 'declined').map(([v, s]) => pairKey(v, s)));
+  const declined = new Set((state?.reviews ?? []).filter((r) => r[2] === 'declined' && !manualQueuePairs.has(pairKey(r[0], r[1]))).map(([v, s]) => pairKey(v, s)));
   for (const r of report.reviews) if (r.state === 'declined') declined.add(pairKey(r.video, r.slug));
   const queued = new Map((state?.queue ?? []).map((r, i) => [pairKey(r.video, r.slug), { ...r, index: i }]));
   const positiveIds = new Set();
@@ -577,7 +578,8 @@ export async function run({ key, root = ROOT, prs = [], bodyFile, reportFile, fe
   if (!prOpen) for (const c of changes) if (c.kind === 'Removed') counts.set(c.slug, counts.get(c.slug) - 1);
   const rejectPair = (id, slug) => {
     const e = entries.get(slug), k = pairKey(id, slug);
-    if (!e || e.status !== 'live' || e.videos?.some((v) => v.youtube === id) || offered.has(k) || excludedVideos.has(id) || declined.has(k)) return 'final';
+    if (!e || e.status !== 'live' || e.videos?.some((v) => v.youtube === id) ||
+        (!manualQueuePairs.has(k) && (offered.has(k) || excludedVideos.has(id) || declined.has(k)))) return 'final';
     if (!cache.has(id)) return 'temporary';
     const result = usable(cache.get(id), entries);
     if (['not-public', 'live', 'many-games'].includes(result.reason)) return 'temporary';

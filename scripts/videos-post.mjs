@@ -49,10 +49,11 @@ async function postJson(payload, { notifyUrl, token, fetchImpl = fetch, sleep = 
   throw fixedError('post');
 }
 
-export function reserveRunQuota({ now = new Date(), runId, searchLimit = 92, ...options }) {
+export function reserveRunQuota({ now = () => new Date(), runId, searchLimit = 92, ...options }) {
   let sequence = 0;
   return async ({ units, searches }) => {
-    const result = await postJson({ action: 'reserve', id: `${runId}:${sequence++}`, day: pacificDay(now), units, searches, searchLimit }, options);
+    const reservedAt = typeof now === 'function' ? now() : now;
+    const result = await postJson({ action: 'reserve', id: `${runId}:${sequence++}`, day: pacificDay(reservedAt), units, searches, searchLimit }, options);
     if (typeof result?.reserved !== 'boolean') throw fixedError('response');
     return result.reserved;
   };
@@ -109,7 +110,10 @@ if (process.argv[1] === fileURLToPath(import.meta.url)) {
   try {
     const options = { notifyUrl: process.env.NOTIFY_URL, token: process.env.INTERNAL_VIDEOS_TOKEN };
     if (process.argv[2] === '--seal') sealReport({ reportFile: process.argv[3], recoveryFile: process.argv[4], token: options.token });
-    else if (process.argv[2] === '--recover') await recoverReport({ recoveryFile: process.argv[3], ...options });
+    else if (process.argv[2] === '--recover') {
+      try { await recoverReport({ recoveryFile: process.argv[3], ...options }); }
+      catch { console.error('videos: recovery failed'); }
+    }
     else if (process.argv[2]) await postReport({ reportFile: process.argv[2], ...options });
     else throw fixedError('input');
   } catch (error) { console.error(`videos: report failed (${errorCode(error)})`); process.exitCode = 1; }
