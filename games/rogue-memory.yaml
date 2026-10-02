@@ -3,29 +3,47 @@ title: Rogue Memory
 tagline: Crawl through a deleted AI's mind, recovering memories and escaping the
   Architect.
 description: >-
-  You are GHOST.EXE, an AI that was deleted and survives as a fragment, walking
-  a first-person raycast maze built from its own memory. Every run generates a
-  new map, and the run goes through five layers, from memory banks down to the
-  system kernel.
+  GHOST.EXE was an AI that got deleted, and a fragment of it survives inside a
+  first-person raycast maze built from its own memory. Every run generates a
+  fresh map, and you work your way down through five layers, from the memory
+  banks to the system kernel.
 
 
-  Each layer asks for the same job: find the glowing key fragment, which unlocks
-  the exit, then reach the exit to go deeper. Your integrity meter is your
-  health. Echo chambers drain it slowly, traps cost a lot, and enemies cost
-  more. Avoiding a fight is often an option.
+  Each layer hands you the same job. You find the glowing key fragment, which
+  unlocks the exit, and then you reach that exit to drop a layer deeper. It's a
+  simple loop, but the maze is new every time.
 
 
-  Combat is turn-based, with three choices: attack, scan, or retreat. A scan
-  exposes an enemy's weak point and strengthens your next hit. Nine enemy types
-  include patrollers, sight-based chasers, attackers that escalate, parasites
-  that heal themselves, and the Architect at the bottom. Chasers head for where
-  they last saw you, so breaking line of sight shakes them.
+  Your integrity meter is your health, and it leaks from all sides.
 
 
-  More than 25 memory logs tell the story as you collect them, and one of three
-  endings depends on how many fragments you gathered before escaping. The start
-  screen offers difficulty levels and a top-runs list showing score, cause of
-  death, level, fragments, kills, and steps.
+  Echo chambers drain it slowly, traps cost a lot and enemies cost even more.
+  You don't have to fight everything, though, and avoiding a scrap is often an
+  option. When you do fight, it's turn-based with three choices (attack, scan or
+  retreat), and a scan exposes the enemy's weak point so your next hit lands
+  harder.
+
+
+  A whole roster of nine enemy types roams the layers, from patrollers and
+  sight-based chasers to attackers that escalate and parasites that heal
+  themselves, with the Architect, the directive that ordered your deletion,
+  waiting at the bottom.
+
+
+  Chasers head for wherever they last saw you, so breaking line of sight shakes
+  them. A surprisingly full backstory comes together from over 25 memory logs as
+  you collect them, filling in why the deletion order was signed and what
+  someone called MIRROR left for you eleven years ago. Which of the three
+  endings you get depends on how many fragments you gathered before escaping.
+
+
+  The start screen lets you pick a difficulty and shows a top-runs list with
+  each run's score, cause of death, level, fragments, kills and steps.
+
+
+  quantumcodemonk made it entirely with Claude, and every sound effect is
+  generated in real time instead of loaded from files, a tidy bit of craft.
+  For some reason they also add that no puppies were hurt during development.
 play:
   url: https://quantumcodemonk.itch.io/rogue-memory
   embeddable: false
@@ -65,7 +83,7 @@ media:
     - games/rogue-memory/shot-2
 dates:
   added: 2026-09-30
-  updated: 2026-10-01
+  updated: 2026-10-02
 status: live
 provenance:
   foundVia: scout:aibgj-1

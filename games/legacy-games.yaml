@@ -2,28 +2,39 @@ slug: legacy-games
 title: legacy games
 tagline: Play a collection of twelve retro pixel art games in your browser.
 description: >-
-  You pick from a launcher menu of 12 pixel art games, each on its own card with
-  a Play button, and start whichever you like. The lineup covers a vertical
-  space shooter, a Flappy-style chicken game, an underwater diving game, a
-  twin-stick shooter and a top-down RPG, plus several side-scrolling platformers
-  and fighters.
+  You start at a launcher that lays out 12 pixel art games on colored cards,
+  each with its own Play button, and you open whichever one you like. Every card
+  names the genre and gives a one-line pitch. Those pitches cover a whole spread
+  of ideas, from defending the galaxy against alien waves to clearing sci-fi
+  dungeon floors.
 
 
-  Most games use WASD to move with Z, X or C for actions. Space Shooter uses
-  WASD and Space. Flappy Chicken takes only Space to flap through obstacles and
-  defeat bosses. Underwater Diving uses WASD and Shift. Top-Down Shooter splits
-  movement and aiming, with WASD and the arrow keys.
+  The arcade corner has a vertical space shooter you fly with WASD and Space,
+  plus Flappy Chicken, where Space is the only key and you flap past
+  obstacles. A flapping chicken that also has to defeat bosses is a good joke
+  on its own.
 
 
-  The platformers and brawlers include Grotto Escape (caverns), Gothicvania
-  Swamp and Gothicvania Cemetery (fighting undead), Magic Cliffs (climbing cliff
-  faces), Warped Caves (wall-cling run-and-gun), Warped City (cyberpunk shooter)
-  and Streets of Fight (beat 'em up).
+  Underwater Diving sends you deep to survive the ocean on WASD and Shift, while
+  Top-Down Shooter is a twin-stick game that puts moving on WASD and aiming on
+  the arrow keys.
 
 
-  The art comes from Ansimuz's Legacy Collection and is drawn on an HTML5 Canvas
-  with smoothing off to keep the pixels sharp. Sound effects are generated in
-  the browser with the Web Audio API.
+  Most of the rest are side-scrolling platformers and fighters, played with WASD
+  to move and Z, X or C for actions. Grotto Escape has you exploring caverns,
+  the two Gothicvania games cover a haunted swamp and a graveyard of undead, and
+  Magic Cliffs is about climbing cliff faces. Warped Caves adds wall-clinging to
+  its run-and-gun, Warped City is a cyberpunk shooter on neon-lit rooftops, and
+  Streets of Fight is a beat 'em up brawl through city streets.
+
+
+  Tiny RPG Forest breaks from the side view entirely, since it's a top-down RPG
+  through enchanted woods.
+
+
+  All the art comes from Ansimuz's Legacy Collection, and it's drawn on an HTML5
+  Canvas with image smoothing switched off to keep those pixels sharp. Sound
+  effects are generated in the browser with the Web Audio API.
 play:
   url: https://humancto.github.io/legacy-games
   embeddable: true
@@ -62,7 +73,7 @@ media:
     - games/legacy-games/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-10-01
+  updated: 2026-10-02
 status: live
 provenance:
   foundVia: scout:github

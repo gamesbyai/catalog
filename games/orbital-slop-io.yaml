@@ -3,21 +3,37 @@ title: ORBITAL-SLOP.io
 tagline: Pilot air and ground vehicles through a shared asteroid belt in a space
   shooter.
 description: >-
-  ORBITAL-SLOP.io puts air and ground vehicles into the same asteroid belt and
-  lets players fight it out in space. It is a multiplayer space shooter and
-  flight simulation, and you move through the field and join the combat
-  alongside whoever else is in the session.
+  ORBITAL-SLOP.io drops air and ground vehicles into the same asteroid belt, and
+  you move through the field joining the combat alongside whoever else is in the
+  session. It's both a multiplayer space shooter and a flight simulation, but
+  you aren't stuck flying the whole time.
 
 
   The creator calls it a High Slop adventure, and the tone is deliberately loose
-  and messy. It is framed as a love letter to the flight sims the creator played
-  in their youth. It came together in Cursor and Three.js during Vibe Jam 2026,
-  where it ranked 445th of 945.
+  and messy.
 
 
-  It runs on phones too, and having both air and ground vehicles in one asteroid
-  setting gives it a different feel from a pure flight game, where you only ever
-  fly.
+  The opening screen looks like a console pulled from some retro mission
+  control, with a glowing particle map of the solar system where Earth and
+  Mercury sit inside a swirling ring of dust. There's a surprising amount
+  crammed around it, since green terminal text, status readouts and a scrolling
+  news ticker crowd every edge.
+
+
+  From there you can jump into a quick run or open the Phobos Ledger to see the
+  top runs. One mode card is labeled Ares and promises war games with live-fire
+  PvP across six satellites. Another warns of priority ops with a blight on the
+  way, while a contamination meter in the corner tracks that blight as a
+  percentage, oddly precise down to three decimal places.
+
+
+  Your pilot gets an operator card with a portrait and a call sign, a nice bit
+  of dressing for a menu.
+
+
+  sidriff framed it as a love letter to the flight sims they played in their
+  youth. The menus lean hard on old cockpit displays and terminal readouts, so
+  that affection shows up before you've launched.
 play:
   url: https://orbital-slop.io
   embeddable: true
@@ -52,7 +68,7 @@ media:
     - games/orbital-slop-io/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-09-29
+  updated: 2026-10-02
 status: live
 provenance:
   foundVia: scout:vibejam-2026

@@ -2,21 +2,27 @@ slug: tdshooter
 title: TDShooter
 tagline: Shoot enemies from above, finish quests, and open up new zones.
 description: >-
-  You control a small character on a dark green grid. Walk with W, A, S, D, aim
-  with the mouse and click to shoot. A prompt on screen says so at the start,
-  and a counter at the top reads Enemies killed: 0/40.
+  You're a small character standing on a dark green grid, and a prompt on screen
+  spells out the basics right away. You walk with W, A, S, D, aim with the mouse
+  and click to shoot. Up top, a counter reads Enemies killed: 0/40.
 
 
-  A line under the counter reads Next: Zone 2, up, and yellow arrows on the
-  floor point that way. The creator describes the game as shooting enemies,
-  doing quests and unlocking new zones.
+  Just below it, a line points you toward Zone 2, which is up, and yellow arrows
+  on the floor helpfully lead the same way.
 
 
-  The top left shows HP at 100 out of 100, a level readout with perk points, and
-  an XP bar that starts at 0 of 100. A slide ability is labeled Space at the
-  bottom center. A column of emote buttons on the right edge offers a heart,
-  thumbs up, arrows, a question mark, an exclamation mark, a skull, a gravestone
-  and a coffin. Two icons in the top right switch between mouse and touch input.
+  According to ok_kutas, the game is about shooting enemies, doing quests and
+  unlocking new zones. Your stats sit in the top left, where HP shows 100 out of
+  100, a level readout lists your perk points and an XP bar starts at 0 of 100.
+
+
+  A slide ability sits on Space, labeled at the bottom center of the screen.
+  On the right edge there's a column of emote buttons with a grim back half.
+  Next to a heart, a thumbs up, arrows, a question mark and an exclamation
+  mark, you'll find a skull, a gravestone and a coffin.
+
+
+  Two icons in the top right switch between mouse and touch input.
 play:
   url: https://tdshooter.space
   embeddable: true
@@ -56,7 +62,7 @@ media:
     - games/tdshooter/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-10-01
+  updated: 2026-10-02
 status: live
 provenance:
   foundVia: scout:vibejam-2026

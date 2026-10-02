@@ -2,21 +2,37 @@ slug: out-of-office-european-business-simulator
 title: "OUT OF OFFICE: European Business Simulator"
 tagline: Run a European business while doing as little actual work as possible.
 description: >-
-  OUT OF OFFICE: European Business Simulator is a satirical, casual management
-  sim about running a company in Europe during the summer. You play the owner,
-  whose main trait is laziness, and the aim is to get by with as little actual
-  work as possible.
+  You own a company somewhere in Europe, it's summer, and your main personality
+  trait is laziness. This satirical, casual management sim asks you to keep the
+  company limping along, technically still alive, while doing as close to
+  nothing as you can get away with.
 
 
-  It presents itself, tongue in cheek, as a completely realistic portrait of
-  European business life in summer. It is a single-player game, made with Claude
-  Code, that ranked 401st of 945 at Vibe Jam 2026 and works on phones as well as
-  desktop.
+  Out of office replies are the whole strategy. You farm them, then spend them
+  on smarter ways of firing off even more of them, a loop the game lays out
+  with a perfectly straight face. One purchase in the side panel adds a modest
+  0.4 a second.
 
 
-  The joke lives in the gap between the serious title and an owner with no
-  interest in working. That gap is what turns the management sim into a comedy,
-  since doing less is the whole plan for your company.
+  On the left, a vacation ladder lists your time off, starting with the
+  specific "a cheeky fortnight" at a passive multiplier of x1 and a long
+  weekend extension at x1.8, with "a proper month off" further up.
+
+
+  Some upgrades start out locked, with their names hidden behind question marks.
+  Even the news ticker plays along, since it carries a notice about something in
+  the 9th arrondissement being closed.
+
+
+  It bills itself, tongue firmly in cheek, as a completely realistic picture of
+  European business life in the summer months.
+
+
+  The satire comes from the serious title sitting on top of an owner with zero
+  interest in working, so doing less is literally the plan. It's drawn in chunky
+  retro pixel lettering on navy and cream panels. The opening screen is styled
+  as a summer cash flow notice, and you start by pressing a big green button
+  that says to keep the company alive.
 play:
   url: https://business-tycoon-european-summer-edi.vercel.app
   embeddable: true
@@ -52,7 +68,7 @@ media:
     - games/out-of-office-european-business-simulator/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-09-29
+  updated: 2026-10-02
 status: live
 provenance:
   foundVia: scout:vibejam-2026

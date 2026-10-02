@@ -2,22 +2,34 @@ slug: leviathan
 title: Leviathan
 tagline: Play a vengeful whale smashing whaling ships and snapping harpoon lines.
 description: >-
-  Leviathan puts you in the body of the whale in a reverse Moby-Dick hunt. You
-  rise from the dark water to smash whaling ships, snap harpoon lines, and free
-  other whales before the hunters close in. The tagline reads, "Take your
-  revenge on the whalers."
+  Leviathan turns the Moby-Dick hunt around and puts you in the whale's body.
+  You come up out of the black deep to wreck whaling ships, and the title screen
+  sums up the mood with its tagline, "Take your revenge on the whalers."
 
 
-  The screen shows a whale health bar and an air bar at the top right. A score,
-  a timer, and a ships-sunk count sit at the bottom left. Along the bottom are
-  key prompts for WASD, Shift, Space, and F, each paired with an icon of a
-  diving, rising, or splashing whale.
+  Your jobs are to smash the fleets, snap their harpoon lines and free the other
+  whales, all before the hunters close in on you. Two bars in the top right
+  corner track your whale's health and its air. The air bar makes sense for an
+  animal that has to come up to breathe between attacks.
 
 
-  The game opens from the other side. You row a small lantern-lit boat past a
-  large wooden ship while a line of text warns that something is moving in the
-  deeps and tells you to row for open water. The fog and dark sea set the mood
-  for the hunt. The creator cites the imagery of Moby-Dick as the inspiration.
+  Down in the bottom left there's a running score, a timer and a count of the
+  ships you've sunk.
+
+
+  The controls sit along the bottom of the screen as WASD, Shift, Space and F.
+  Each key gets its own little whale icon, diving, rising or splashing, and it's
+  a nicer touch than a plain key list.
+
+
+  The odd part is that the game doesn't start you as the whale at all, because
+  you're rowing a little lantern-lit boat past a big wooden ship.
+
+
+  A line of text tells you something's moving in the deeps and that you'd better
+  row for open water. The fog and the dark sea around that little boat set the
+  mood for the hunt. baumant points to the imagery of Moby-Dick as the
+  inspiration.
 play:
   url: https://leviathan.timothybauman.com
   embeddable: true
@@ -57,7 +69,7 @@ media:
     - games/leviathan/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-10-01
+  updated: 2026-10-02
 status: live
 provenance:
   foundVia: scout:vibejam-2026

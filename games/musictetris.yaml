@@ -2,22 +2,34 @@ slug: musictetris
 title: MusicTetris
 tagline: Stack falling blocks while the scenery and music shift over time.
 description: >-
-  Falling blocks drop into a tall, cyan-framed well, and you slide, rotate and
-  drop them to complete rows. The first piece is a straight bar of four cyan
-  blocks, and a faint outline at the bottom of the well marks where it will
-  land.
+  In MusicTetris, both the background scene and the music change as your game
+  goes on and as time passes. Underneath that is the familiar part, a tall
+  well framed in glowing cyan where you slide, spin and drop pieces to fill
+  complete rows.
 
 
-  A panel in the corner tracks score, high score, cleared lines and BPM, which
-  starts at 100. The background scene and the music change as the game goes on
-  and as time passes. Faceted purple crystals sit on either side of the well,
-  surrounded by drifting particles.
+  A small panel in the corner keeps your score, high score and cleared lines,
+  and it also has a BPM readout starting at 100.
 
 
-  Left and right arrows move the piece, up rotates it, down soft drops it, and
-  space hard drops it. P pauses and M mutes, and an on-screen button switches
-  the music on or off. The creator wanted a playground for Tone.js audio and 3D
-  graphics on top of a simple mechanic.
+  Your first piece is a straight bar of four cyan blocks. A faint ghost of it
+  sits at the bottom of the well, showing you where it'll land.
+
+
+  Most of the work happens on the arrow keys, with left and right sliding the
+  piece, up rotating it and down easing it lower faster. Space slams it straight
+  to the bottom. P pauses and M mutes, and there's an on-screen button for
+  switching the music off or back on.
+
+
+  Off to either side of the well hang big faceted purple crystals wrapped in
+  drifting specks of light, a large helping of 3D scenery to put around a
+  stacking game.
+
+
+  anshuldhawan001 made it as a playground for experimenting with Tone.js audio
+  and 3D graphics. The plan was to put all of that on top of a simple game
+  mechanic.
 play:
   url: https://musictetris.anshuldhawan.com
   embeddable: true
@@ -60,7 +72,7 @@ media:
     - games/musictetris/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-10-01
+  updated: 2026-10-02
 status: live
 provenance:
   foundVia: scout:vibejam-2026

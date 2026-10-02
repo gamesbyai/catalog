@@ -2,21 +2,34 @@ slug: ai-space-agency
 title: AI Space Agency
 tagline: Build and launch an AI data center into orbit in a space-agency simulation.
 description: >-
-  A launch begins on a pad beside a red wireframe gantry, with a slim rocket
-  standing on an orange grid under a black sky. A vertical throttle slider on
-  the left reads 100%, and the top bar tracks sea-level altitude, vertical
-  speed, surface speed and G load as the rocket climbs.
+  The main button does double duty here. It stages your rocket, and once you've
+  reached the second stage it turns into a fairing button instead.
 
 
-  A navball at bottom center shows attitude, with heading, pitch and roll
-  readouts beside it. SAS and RCS toggles sit on the ball, and an auto row
-  offers off, up and orbit settings. The main button stages the rocket and
-  becomes a fairing button on the second stage. Reset restarts the flight, and a
-  time warp bar sits at top left.
+  Every flight starts on a pad next to a red wireframe gantry, with a slim
+  rocket standing on a glowing orange grid under a black sky.
 
 
-  The creator pitches it as Kerbal Space Program for building an AI data center
-  in space. A small music player in the corner plays a track titled Orbit Bloom.
+  On the left there's a tall throttle slider that reads 100%. As you climb, the
+  bar along the top tracks your altitude above sea level, your vertical speed,
+  your surface speed and the G load. It's a real flight-deck spread of numbers
+  for a scene drawn in such spare wireframe lines.
+
+
+  Down at the bottom center, a busy navball shows your attitude, with heading,
+  pitch and roll readouts beside it and SAS and RCS toggles sitting right on
+  the ball.
+
+
+  There's also an auto row where you can switch between off, up and orbit. Reset
+  puts you back at the start of the flight, while a time warp bar waits in the
+  top left.
+
+
+  dom_scholz describes it as Kerbal Space Program, except what you're building
+  up there is your own AI data center, and slips in a specific joke about
+  Cursor making a deal with SpaceX. A small music player in the corner plays a
+  track called Orbit Bloom.
 play:
   url: https://aispaceagency.com
   embeddable: true

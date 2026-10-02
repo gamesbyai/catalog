@@ -2,25 +2,37 @@ slug: beetlejump
 title: BeetleJump
 tagline: Jump your beetle up a towering course and try to reach the top.
 description: >-
-  Type a name, press Start, and a black beetle with red eyes appears on a
-  lily-pad-like platform at the foot of a giant beanstalk rising out of a pond.
-  You jump from leaf to leaf up the stalk, and a timer near the top of the
-  screen counts up from 0.0 while you climb. The goal is to reach the top.
+  In BeetleJump you're a black beetle with red eyes, hopping from leaf to leaf
+  up a giant beanstalk that rises out of a pond. You type a name and press
+  Start, and then you're standing on a lily-pad-like platform at the very foot
+  of the stalk.
 
 
-  Some leaves carry extras. A coiled spring pad sits on one leaf, and a
-  crate-like object rests on another. Pressing E throws a fireball. Other
-  beetles can join the climb, a message announces each arrival, and a chat box
-  in the lower left corner takes text.
+  The goal is to reach the top, and the start screen promises you'll be crowned
+  when you get there. A timer near the top of the screen counts up from 0.0
+  while you climb. Off to the right, a leaderboard with All-Time and Today tabs
+  lists players' times, and it stays on screen during play, so plenty of rival
+  times keep you company all the way up.
 
 
-  The start screen also offers a Private Race button as an alternative to the
-  public climb. A leaderboard with All-Time and Today tabs lists players' times
-  and stays visible during play.
+  Some of the leaves carry extras, like a coiled spring pad sitting on one and a
+  crate-like object resting on another.
 
 
-  The creator says the stalk is modeled on kz_giantbean, a Counter-Strike map,
-  and that other people's entries made this look like a good challenge.
+  Pressing E throws a fireball, which is an unexpected bit of firepower for a
+  bug on a beanstalk. Other beetles can join your climb too, and a message pops
+  up to announce each arrival.
+
+
+  There's a chat box in the lower left corner that takes text, and its
+  placeholder politely asks you to say something nice.
+
+
+  If you'd rather skip the public climb, the start screen also has a Private
+  Race button. According to assentorp, the stalk is modeled on kz_giantbean, a
+  Counter-Strike map, with a cheeky "if you know, you know" for anyone who's
+  jumped it. They say seeing other people's entries made this look like a good
+  challenge.
 play:
   url: https://beetlejump.com
   embeddable: true
@@ -62,7 +74,7 @@ media:
     - games/beetlejump/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-10-01
+  updated: 2026-10-02
 status: live
 provenance:
   foundVia: scout:vibejam-2026

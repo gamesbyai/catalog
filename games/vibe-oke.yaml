@@ -2,25 +2,35 @@ slug: vibe-oke
 title: Vibe-oke
 tagline: Play along with a song one lyric word at a time, in sync with the vocals.
 description: >-
-  The game opens on a Track Ready card with Mr. Brightside by The Killers
-  loaded. The card tells you to hit words as they reach the lane and shows five
-  colored keys: A, S, D, J and K. Press Play to start the song.
+  When the game starts, Mr. Brightside by The Killers is already loaded on a
+  Track Ready card.
 
 
-  Every word in the lyrics becomes a note, so you play along with the vocals one
-  word at a time instead of following only a beat. The left panel shows elapsed
-  time out of 3:43, a progress bar, previous and next buttons, sync status,
-  level, words per minute and a word count.
+  Five colored keys, A, S, D, J and K, sit under a prompt to strike each word
+  when it arrives at the lane. Every word in the lyrics becomes a note, so
+  you're playing along with the singer one word at a time instead of just
+  chasing a beat. roieambulo loves karaoke, and that's where the idea of
+  playable lyrics came from.
 
 
-  The right side tracks your run. A feedback panel sits above a combo counter
-  that feeds a multiplier starting at x1, and a health bar starts at 100%. Score
-  and accuracy sit on the left.
+  The panel on the left is a busy one, counting the song's time against its
+  3:43 length and filling a progress bar as it goes. It also has previous and
+  next buttons, plus readouts for sync status, level, words per minute and a
+  word count. Your score and accuracy get their own box just below it.
 
 
-  The Search Song button lets you pick another track, and a note on the card
-  warns that lyric timing may not match perfectly. A leaderboard has Global and
-  Song tabs.
+  The right side keeps a close eye on your run, with a feedback panel over a
+  combo counter that feeds a multiplier starting at x1, and a health bar that
+  begins at 100%.
+
+
+  Press Play to start whatever's loaded. If The Killers aren't your thing, the
+  Search Song button lets you pick another track. A small note on the card warns
+  that lyric timing may not match perfectly, an honest admission to put right
+  beside the start button.
+
+
+  There's also a leaderboard, split into Global and Song tabs.
 play:
   url: https://vibe-oke.com
   embeddable: true
@@ -61,7 +71,7 @@ media:
     - games/vibe-oke/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-10-01
+  updated: 2026-10-02
 status: live
 provenance:
   foundVia: scout:vibejam-2026

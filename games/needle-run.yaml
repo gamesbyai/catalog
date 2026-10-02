@@ -3,21 +3,34 @@ title: NEEDLE RUN
 tagline: Fly through gates, avoid pursuers, and chase score multipliers for a
   leaderboard spot.
 description: >-
-  Steer a small arrow ship across a neon grid, flying through gates while red
-  diamond enemies close in on you. You have no weapon to shoot with. The goal is
-  to stay uncaught, pass through gates, and build a score as high as you can.
+  Red diamond enemies keep closing in on your little arrow ship as it zips
+  across a neon grid, and you don't have a single weapon to fight them off
+  with.
 
 
-  Collecting multipliers raises the number shown at the top of the screen, which
-  starts at x1. A bomb is held in reserve and the HUD shows when one is ready.
-  Your best score sits in the top left corner, and the top-ranked score to beat
-  sits in the top right.
+  Instead, your job is to fly through gates without getting caught while you
+  push your score as high as it'll go. AfterimageDev took the idea from the
+  Pacifism mode in the Geometry Wars series, so the missing gun is the premise
+  rather than an oversight.
 
 
-  Scores go to an online leaderboard, and the title screen has a profile editor
-  for your entry. Move with the mouse, WASD, a gamepad stick, or a touch virtual
-  stick. The creator took the idea from the Pacifism mode in the Geometry Wars
-  series.
+  Grabbing multipliers bumps up the number at the top of the screen, which
+  starts at a humble x1. You've also got a bomb held back in reserve. A small
+  note in the HUD tells you when it's ready, and B or Shift sets it off.
+
+
+  Your own best score sits in the top left corner, while the top-ranked score
+  you're chasing stares back at you from the top right.
+
+
+  Scores go up to an online leaderboard, and it's right there on the title
+  screen beside a big glowing orange logo. There's even a profile editor on that
+  screen for tidying up how your entry looks. Space, a click or a tap starts the
+  run.
+
+
+  You can move with the mouse, WASD, a gamepad's left stick or a virtual stick
+  on a touchscreen, and the mouse pulls double duty by aiming the ship as well.
 play:
   url: https://needle-run.afterimage-dev.com
   embeddable: false
@@ -60,7 +73,7 @@ media:
     - games/needle-run/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-10-01
+  updated: 2026-10-02
 status: live
 provenance:
   foundVia: scout:vibejam-2026

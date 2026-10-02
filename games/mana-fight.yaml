@@ -2,27 +2,36 @@ slug: mana-fight
 title: MANA FIGHT
 tagline: Pick a spellcasting class and fight through fast third-person arena battles.
 description: >-
-  Pick one of four classes on the start screen, then fight in a third-person
-  arena with spells and melee weapons. Each class card shows attack, defense and
-  speed bars, plus two attacks bound to the 1 and 2 keys and a passive trait.
+  Pick one of four classes on the start screen, then take them into a
+  third-person arena where you fight with spells and melee weapons. Each class
+  card shows bars for attack, defense and speed. It's also got two attacks, one
+  on the 1 key and one on the 2 key, plus a passive trait.
 
 
-  Tank is the frontline class. Fireball deals 28 area damage, Sword deals 35 in
-  melee, and Heavy Plate cuts damage taken by 20%. Ranger fires a magic green
-  arrow for 40 damage or stabs with a 20-damage dagger, and Hawk's Eye adds 25%
-  range.
+  Tank is the frontline pick, hurling a Fireball that does 28 damage across an
+  area or swinging a Sword for 35 up close, while Heavy Plate shaves 20% off the
+  damage you're taking. Ranger fires a magic green arrow worth 40 damage, or
+  stabs with a 20-damage dagger instead. Hawk's Eye stretches its range by 25%,
+  which suits a class that's tagged for kiting on its own card.
 
 
-  Esq is the area-damage class. Shadow Bolt is homing dark magic worth 30
-  damage, Staff Whack is a 15-damage melee hit, and Arcane Focus raises mana
-  regeneration by 50%. Phantom is the assassin: Spirit Daggers throw twin blue
-  daggers for 15 each, Twin Daggers hit for 25 in melee, and Backstab adds 50%
-  damage from behind.
+  Esq's the area-damage class, and its Shadow Bolt is homing dark magic that
+  hits for 30. Its Staff Whack is a modest 15-damage melee swing. Arcane Focus
+  raises mana regeneration by 50%, and oddly enough it's the one trait on the
+  menu that touches mana in a game named after the stuff.
 
 
-  The menu bar also links to Map 1, Movement, Model Lab, Aim and Game Logs. The
-  creator wanted the familiar core of shooters, usually built on guns and
-  grenades, in a fantasy setting.
+  Phantom plays the assassin, throwing twin blue Spirit Daggers for 15 damage
+  each or cutting with Twin Daggers for 25 in melee, while Backstab adds 50%
+  damage when you're hitting from behind.
+
+
+  Next to Play, the menu bar also links to Map 1, Movement, Model Lab, Aim and
+  Game Logs.
+
+
+  NinoGreeno wanted the familiar core of shooters, usually built around guns and
+  grenades, carried into a fantasy setting.
 play:
   url: https://manafight.vercel.app
   embeddable: true

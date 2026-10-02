@@ -2,26 +2,46 @@ slug: deckrunner
 title: DECKRUNNER
 tagline: Shoot through a derelict space station deck by deck and reach the escape pod.
 description: >-
-  Fight through a derelict space station one deck at a time from a first-person
-  view. Each run has you scavenge weapons and perks, kill whatever is still
-  moving, and try to reach the escape pod before the station finishes you.
+  Pick New Mission and you're dropped into a derelict space station, seen in
+  first person, which you fight through one deck at a time. Each run has you
+  scavenging weapons and perks and killing anything that's still moving. The
+  goal is the escape pod, and you're racing the station itself to get there
+  before it gets you.
 
 
-  The main menu offers more than the mission mode. Multiplayer is marked live,
-  and a PvP arena lets you pick the number of bots, the difficulty, and the
-  score target before you start a match. A firing range is there for practice.
-  Customize, bestiary and leaderboard screens sit alongside them.
+  The main menu holds plenty of extra modes beyond the mission, though.
+  Multiplayer carries a little live tag, while a whole PvP arena fills the room
+  with bots and lets you set how many there are, their difficulty and the score
+  that wins the match.
 
 
-  A menu tip points out that shooting barrels near enemies sets off chain
-  explosions. The creator wanted to blend roguelike structure with first-person
-  shooting, with customization as part of the mix.
+  If you'd rather warm up first, there's a firing range for practice.
+
+
+  Customize, bestiary and leaderboard screens fill out the rest of the menu. A
+  bestiary fits nicely in a game built around whatever's still crawling through
+  a dead station. Most menu entries also show a shortcut key beside them.
+
+
+  A tip on the menu suggests shooting barrels near enemies to set off chain
+  explosions.
+
+
+  paledustgames says they love roguelikes and shooters, and they wanted to blend
+  roguelike structure with first-person shooting. Customization was part of the
+  mix as well.
 play:
   url: https://deckrunner.paledust.com
   embeddable: true
   platforms:
     - browser
     - mobile
+  controls:
+    - "1: new mission"
+    - "2: multiplayer"
+    - "3: PvP arena"
+    - "B: bestiary"
+    - "L: leaderboards"
 creator:
   name: paledustgames
   handle: paledustgames
@@ -52,7 +72,7 @@ media:
     - games/deckrunner/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-10-01
+  updated: 2026-10-02
 status: live
 provenance:
   foundVia: scout:vibejam-2026

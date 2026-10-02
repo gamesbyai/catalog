@@ -3,26 +3,45 @@ title: "Tharsis: Martian Combat"
 tagline: Build a base on Mars, harvest crystals, and destroy the enemy base in
   real time.
 description: >-
-  The setting is Mars, and the goal is to wipe out the enemy base. You start by
-  building a base and sending harvesters after crystals, then spend those
-  resources on an army. Fog of war hides the map until your units scout it.
+  In Tharsis: Martian Combat, you build a base on Mars and send harvesters out
+  after crystals, then spend what they haul back on an army that has to wipe out
+  the enemy base. It's real-time strategy with a design that draws on classic
+  Command & Conquer.
 
 
-  The roster has more than 12 unit types: riflemen, snipers, tanks, APCs, rocket
-  artillery, the Behemoth super-tank and the Manticore gunship, along with VTOL
-  gunships. Support powers add extra options during a fight.
+  Fog of war keeps the map dark until your own units walk out and scout it.
 
 
-  Skirmish mode pits you 1v1 against an AI set to Easy, Normal, Hard or Brutal.
-  Matches can be customized by starting resources, map seed and starter units.
-  An AI vs AI spectator mode lets you watch instead of play. Online 1v1 through
-  Wavedash lobbies is still in progress.
+  There are more than 12 unit types to build, including riflemen, snipers,
+  tanks, APCs and rocket artillery. Two of them get grand names of their own,
+  the Behemoth super-tank and the Manticore gunship, and VTOL gunships are on
+  the list too.
 
 
-  Select units with the left mouse button or drag a box, then right-click to
-  move or attack. The design draws on classic Command & Conquer. It is written
-  in vanilla JavaScript on an HTML5 canvas, with a sci-fi soundtrack and sound
-  effects.
+  Support powers give you extra options once a fight is underway. They get
+  their own tab on the sidebar, right beside the Build and Units tabs. Sell
+  and Repair buttons sit just above them, in a layout that'll look familiar to
+  anyone raised on Command & Conquer.
+
+
+  Skirmish puts you 1v1 against an AI, with difficulty running from Easy and
+  Normal through Hard up to a setting bluntly named Brutal.
+
+
+  Before a match starts, you can tune the starting resources, the map seed and
+  the units you begin with. If you'd rather sit back, a whole AI vs AI mode lets
+  you watch two computer opponents fight it out instead. Online 1v1 through
+  Wavedash lobbies is still being built, with lobby chat and invite links
+  planned as part of it.
+
+
+  You pick units with a left click or by dragging a box, then right-click to
+  move or attack. Pressing A gives you an attack-move, WASD scrolls the map and
+  Esc cancels whatever you were doing.
+
+
+  Chaotic Envoy - Cyberpunk 1644 Studios wrote the whole thing in vanilla
+  JavaScript. It comes with a sci-fi soundtrack and its own sound effects.
 play:
   url: https://cheesyerwin.itch.io/tharsis-martian-combat
   embeddable: false
@@ -63,7 +82,7 @@ media:
     - games/tharsis-martian-combat/shot-2
 dates:
   added: 2026-10-01
-  updated: 2026-10-01
+  updated: 2026-10-02
 status: live
 provenance:
   foundVia: scout:aibgj-2

@@ -2,21 +2,33 @@ slug: eurotune
 title: eurotune
 tagline: Answer Eurovision questions in a quick quiz built for phones and browsers.
 description: >-
-  The start screen offers three difficulty settings, Easy, Regular and Expert,
-  and a Start Playing button. Easy mode draws only from the top five grand-final
-  finishers of each year. The game plays five Eurovision song clips, one per
-  round.
+  A big headline promises five Eurovision songs, and below it there's a Start
+  Playing button next to a picker with three difficulty settings, Easy, Regular
+  and Expert. Easy narrows the pool to the top five grand-final finishers from
+  each year. That cuts out a whole lot of half-forgotten entries before you've
+  heard a note.
 
 
-  Each round opens with a clip. You then work through four questions about it:
-  the country that entered the song, the exact year it appeared in the contest,
-  the performing artist, and the song title. The game reveals the answers at the
-  end of the round.
+  Every one of the five rounds kicks off with a clip of a song. Then you've got
+  four questions about it, covering the country that sent it, the exact year it
+  was in the contest, the artist singing it and the song's title.
 
 
-  The questions come in a fixed order. You pick the country first, then the
-  year, then the artist, and you finish by choosing the title. A full game is
-  five clips, so you answer twenty questions in total.
+  The order never changes, with the country always first and the title saved for
+  the end.
+
+
+  The year question wants the exact one, not a rough era. You pick the artist
+  after that, and you close the round by choosing the title. Only then does the
+  game reveal the answers.
+
+
+  Five clips with four questions apiece adds up to twenty answers in a full
+  game.
+
+
+  The screen stays tidy, with dark panels and orange buttons. A How It Works
+  panel on the right lays out all four steps before you press start.
 play:
   url: https://eurotune.net
   embeddable: true
@@ -50,7 +62,7 @@ media:
     - games/eurotune/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-10-01
+  updated: 2026-10-02
 status: live
 provenance:
   foundVia: scout:vibejam-2026

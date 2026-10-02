@@ -2,24 +2,34 @@ slug: chain-puzzle
 title: Chain Puzzle
 tagline: Link words into chains and use bonuses to push your score higher.
 description: >-
-  Press Play, then pick one of three modes. Easy works like hangman: you guess
-  any letters, and each one is marked green for the right place, yellow for the
-  wrong place, or grey for not in the word. Easy starts at 5-letter words.
+  Hit Play, then pick one of three modes, each marked with one, two or three
+  stars.
 
 
-  Medium plays crossword style, and every guess must be a real word from the
-  dictionary. It also starts with 5-letter words. Hard keeps the dictionary-only
-  rule and lets you begin at Level 6 or Level 7, so the words are longer from
-  the first move.
+  Easy plays a lot like hangman, where you can guess any letters you like and
+  each one lights up green for the right spot, yellow for the wrong spot, or
+  grey when it isn't in the word at all. The words start at five letters.
 
 
-  The goal is to chain as many words together as you can, use bonuses along the
-  way, and reach the highest score. Scores go to a High Scores list, and a How
-  to Play screen explains the rules.
+  Medium switches to a crossword style. Every guess there has to be a real word
+  from the dictionary, though you're still starting on five-letter words. Hard
+  keeps that dictionary rule but lets you jump straight in at Level 6 or Level
+  7, so the words are longer from your very first move.
 
 
-  The main menu also has a Suggest a Word button for sending in words. The game
-  uses a neon purple and green look with a glowing grid floor.
+  Across all three, your aim is to chain together as many words as you can,
+  picking up bonuses along the way while you chase the highest score.
+
+
+  Your scores go onto a High Scores list, and there's a How to Play screen if
+  you'd like the rules laid out. The main menu also has a Suggest a Word
+  button for sending in words of your own, a friendly touch in a game built
+  around a dictionary. It all sits on a neon purple and green backdrop with a
+  glowing grid floor straight off a synthwave album cover.
+
+
+  seanchk made it to learn how gameplay logic works and to build something
+  people would enjoy playing.
 play:
   url: https://cwpuzzle2.purpleprawn.com
   embeddable: true
@@ -55,7 +65,7 @@ media:
     - games/chain-puzzle/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-10-01
+  updated: 2026-10-02
 status: live
 provenance:
   foundVia: scout:vibejam-2026

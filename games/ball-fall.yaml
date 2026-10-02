@@ -2,21 +2,35 @@ slug: ball-fall
 title: Ball Fall
 tagline: Roll a ball across collapsing tiles and outlast rivals until they fall.
 description: >-
-  A square floor of blue tiles sits inside a dark, round arena, and you roll a
-  ball across it while the tiles collapse. Each round opens with a 3, 2, 1
-  countdown, and an on-screen prompt tells you to start moving before the floor
-  begins to disappear.
+  A square floor of blue tiles sits in the middle of a dark, round arena, and
+  you roll a ball across it while the tiles collapse. Your job is to steer
+  around the gaps and outlast your rivals until someone takes the plunge.
 
 
-  The goal is to dodge the gaps and outlast your rivals until someone takes the
-  plunge. You can play a solo round or join an online match. A HUD along the top
-  tracks your score, a multiplier that starts at x1, and a running timer.
+  Every round gives you a polite 3, 2, 1 countdown first, and then a prompt down
+  in the corner warns you to get moving before the floor starts disappearing
+  under you.
 
 
-  The main menu also lists a top 10 high score table, a How to Play guide and an
-  About page. Menus work with keyboard or gamepad. The soundtrack is Falling In
-  Perfect Chaos by figwad, and the game is an homage to Ball Fall by Brian
-  Elting.
+  A strip along the top tracks your score, a multiplier that starts at x1, and a
+  running timer. The title screen sells it, a bit grandly, as tactical
+  floor-collapse action. It's a fair pitch for a game where the ground itself is
+  what you're fighting.
+
+
+  You can take on a round solo, or jump into an online match where your rivals
+  are other players.
+
+
+  The main menu also holds a top 10 high score table, a How to Play guide and an
+  About page. You get around those menus with a keyboard or a gamepad, and the
+  controls for both are helpfully printed right under the buttons.
+
+
+  figwad made the soundtrack as well, a track called Falling In Perfect Chaos,
+  played over a crumbling floor. The game is an homage to Ball Fall by Brian
+  Elting. figwad names the indie 2D Game Maker games of the early 2000s as its
+  inspiration.
 play:
   url: https://ballfall.net
   embeddable: true
@@ -56,7 +70,7 @@ media:
     - games/ball-fall/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-10-01
+  updated: 2026-10-02
 status: live
 provenance:
   foundVia: scout:vibejam-2026

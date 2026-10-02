@@ -2,21 +2,34 @@ slug: codex-usage-game
 title: codex usage game
 tagline: Play a one-minute arcade round tucked inside a usage chart.
 description: >-
-  In codex usage game, the playing field is a chart of Codex usage. It is a
-  short arcade game tucked inside that graph, and each round lasts about one
-  minute: you try to get through it and do as well as possible before the timer
-  runs out.
+  Hop between the lines of a Codex usage chart with the up and down arrows or W
+  and S. The graph itself is the playing field, so a dry dashboard of usage
+  lines turns into a little arcade track.
 
 
-  The joke is the disguise. Instead of a typical game screen you get a familiar
-  usage graph, and a dry dashboard turns into something you can play. The
-  project's GitHub README names Codex as the tool involved, and the code is
-  released under the MIT license.
+  There are broken signals to dodge along the way, and echoes to collect.
 
 
-  The scope stays small: one idea, one short round and a joke that fits the
-  chart it hides in. The one-minute length keeps rounds tight and makes it easy
-  to jump straight back in for another try.
+  When there's nowhere left to go, Space or a tap fires a phase pulse that
+  carries you straight through the danger. A pulse meter sits at the top
+  starting at 60 percent, next to readouts for clarity, a phrase multiplier
+  and three diamonds of signal. It's a committed bit of dressing, since every
+  label sounds like it belongs on a dashboard for a failing transmission.
+
+
+  Each round lasts about a minute, and you're trying to get through it and do as
+  well as you can before the timer runs out. Make it through the full 60 seconds
+  and the transmission is restored.
+
+
+  You can also drag to pick a contour. P pauses, M toggles the sound, and
+  there's a Restart button right under the chart for another try.
+
+
+  According to petergpt's GitHub README, the AI designed, built and polished it
+  in a surprisingly short 30 minutes, starting from a screenshot. petergpt
+  credits the idea to an original post by @thsottiaux. The code is released
+  under the MIT license.
 play:
   url: https://petergpt.github.io/codex-usage-game
   embeddable: true
@@ -49,7 +62,7 @@ media:
     - games/codex-usage-game/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-09-29
+  updated: 2026-10-02
 status: live
 provenance:
   foundVia: scout:github

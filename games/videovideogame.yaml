@@ -2,21 +2,34 @@ slug: videovideogame
 title: VideoVideoGame
 tagline: Choose your path through 100+ video scenes and short minigames as Levelsio.
 description: >-
-  Story mode plays as a choose-your-own-adventure told through short video
-  scenes. Each scene stops on a prompt with text buttons, such as "Pet the dog"
-  or "Storm is coming", and the option you pick decides which clip plays next.
-  Levelsio is the main character.
+  Each scene in story mode is a short video that stops on a prompt with text
+  buttons, like "Pet the dog" or "Storm is coming". Whichever one you pick
+  decides which clip plays next, so the whole choose-your-own-adventure is told
+  through footage instead of text.
 
 
-  The opening scenes are set on a boat on a lake, with a dog aboard and hills
-  along the shore. The story runs through more than 100 videos and scenes, so
-  different choices lead to different clips. A separate minigames mode holds a
-  few games, including racing and puzzle types.
+  Levelsio is the main character, and the title screen makes the dedication
+  plain with a big "for @levelsio" right under the name.
 
 
-  The menu also has a How to Play screen and a leaderboard. The video plays in a
-  frame beside the menu, with a fullscreen button on the frame and a sound
-  toggle in the top corner. The clips were generated with Seedance.
+  It opens on a boat out on a lake, with a dog aboard and hills rising along
+  the shore. From there the story branches across more than 100 videos and
+  scenes. Different choices lead you to different clips, which adds up to a
+  large stack of generated video for one story.
+
+
+  There's also a separate minigames mode with a few games in it, including
+  racing and puzzle types.
+
+
+  Next to the two modes, the menu has a How to Play screen and, a bit
+  unexpectedly for a story game, a leaderboard. The video plays in a frame
+  beside the menu, and you get a fullscreen button on that frame plus a sound
+  toggle up in the top corner.
+
+
+  javitoshi generated the clips with Seedance. According to javitoshi, making
+  those videos was the fun part.
 play:
   url: https://videovideogame.com
   embeddable: true

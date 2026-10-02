@@ -2,21 +2,30 @@ slug: storybook-sword-adventure
 title: Storybook Sword adventure
 tagline: Swing your arms in front of a webcam to slash through fairy-tale worlds.
 description: >-
-  Storybook Sword Adventure is a body-tracking action game in which your own arm
-  is the sword. The webcam follows your arms and turns every real swing into a
-  sword strike on screen, so you play by physically moving around and slashing.
-  The controller is your own body.
+  The Story-Eater has stolen the fairy tales, and it's your job to win them back
+  by slashing your way through one storybook world after another. Each level is
+  its own storybook world. The title screen promises mixed-up monsters to fight
+  along the way, which sounds about right for a villain that eats stories.
 
 
-  The creator's stated aim is to make games that use your body as the
-  controller, and this was their Vibe Jam 2026 entry, built with Claude Code on
-  Three.js. The result is more physical than a typical action game: you move,
-  you swing, and the sword follows.
+  It's a body-tracking action game where your own arm is the sword, and your
+  body is the whole controller. The webcam follows how your arms move, and every
+  real swing becomes a sword strike on screen, so playing means moving around
+  and cutting through the air yourself.
 
 
-  Each level is a storybook world, and you are there to take back the fairy
-  tales that the Story-Eater has stolen. The setting gives all that swinging a
-  light fairy-tale frame.
+  The title screen keeps its instructions short and just asks you to wave your
+  hands whenever you want the sword to move. Little tags mark it as suitable
+  from age 6 and note that it uses your arms. Pastel skies, sparkles and big
+  outlined lettering give all that flailing a gentle picture-book look.
+
+
+  The body tracking runs on BodyLink, a tool meant for playing games with your
+  whole body in place of a gamepad.
+
+
+  RebuffReality wanted to build games where your body does the job of a
+  controller. They were after something they could play while moving around.
 play:
   url: https://storybook-adventure.netlify.app
   embeddable: true
@@ -55,7 +64,7 @@ media:
     - games/storybook-sword-adventure/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-09-29
+  updated: 2026-10-02
 status: live
 provenance:
   foundVia: scout:vibejam-2026

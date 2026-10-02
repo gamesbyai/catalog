@@ -3,25 +3,48 @@ title: Cube's Gravity Maze
 tagline: Flip gravity to run mazes, dodge traps, collect keys, and beat the Core
   Guardian boss
 description: >-
-  Pressing Space flips gravity, so the green cube falls toward the ceiling or
-  the floor of a randomly generated maze. You move left and right with the arrow
-  keys. An on-screen hint says to find the key or exit and break obstacles along
-  the way.
+  Hitting Space flips gravity, so the little green cube falls toward either the
+  ceiling or the floor of a randomly generated maze. The left and right arrow
+  keys handle the rest of your movement. A hint at the bottom of the screen lays
+  out the plan, which is to find the key or the exit and break obstacles on your
+  way.
 
 
-  The maze holds turrets that fire on sight, ghostly pursuers, wandering
-  walkers, spiked wheels, crumbling blocks and spike traps. Red and blue phase
-  walls can be made passable with the Phase skill. Skills are found inside the
-  maze: Q dashes with invulnerability, W toggles phase walls, and E performs a
-  spin slash that uses energy.
+  The maze is crowded with things that want you dead. Turrets shoot as soon as
+  they spot you, ghostly pursuers come after you and walkers wander around,
+  while spiked wheels, crumbling blocks and spike traps fill in the gaps.
 
 
-  Pickups include shields, coins that give energy and extra protection, time
-  orbs and a compass that points to keys and exits. Special chambers packed with
-  hazards pay out gold coins. Deep in the maze the Core Guardian boss waits, and
-  it has an enraged mode. A results screen records score, deaths and clear time,
-  and the top bar shows level, score, timer and death count. Controls can be
-  remapped from the pause menu.
+  Red and blue phase walls add a wrinkle to the layout, and you can make them
+  passable with the Phase skill.
+
+
+  Your skills turn up inside the maze itself. Q is a dash that keeps you
+  invulnerable while it lasts, W switches the phase walls, and E is a spin slash
+  that burns energy. Coins refill that energy and give you extra protection on
+  top, a tidy way to tie spending to collecting.
+
+
+  Other pickups include shields, time orbs and a compass that points you to keys
+  and exits.
+
+
+  Special chambers stuffed with hazards pay out gold coins. Deep in the maze,
+  the Core Guardian boss waits, and it has an enraged mode you'll have to
+  survive as well.
+
+
+  The top bar tracks your level, score and timer, with a little skull counting
+  your deaths. Once you finish, a results screen records your score, deaths and
+  clear time.
+
+
+  If the default keys don't suit you, you can remap the controls from the pause
+  menu in the top-left corner.
+
+
+  Inkling123 built the game with AI assisting on the code, according to the
+  creator.
 play:
   url: https://inkling123.itch.io/cubes-gravity-maze
   embeddable: false
@@ -62,7 +85,7 @@ media:
     - games/cube-s-gravity-maze/shot-2
 dates:
   added: 2026-09-30
-  updated: 2026-10-01
+  updated: 2026-10-02
 status: live
 provenance:
   foundVia: scout:aibgj-2

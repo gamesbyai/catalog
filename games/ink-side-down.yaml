@@ -2,26 +2,39 @@ slug: ink-side-down
 title: Ink Side Down
 tagline: Roll a cube across a grid so its inked face stamps only the marked squares.
 description: >-
-  Ink Side Down hands you a cube with one inked face and a grid with some
-  squares marked. You roll the cube from square to square, and whenever the
-  inked face touches a tile, it leaves a print. The goal is prints on the marked
-  squares and nowhere else.
+  In Ink Side Down you roll a cube with one inked face across a grid, and
+  whenever that face meets a tile, it stamps a print there.
 
 
-  It is a daily logic puzzle, with a fresh grid each day and a short, repeatable
-  rhythm. According to the creator, an autonomous AI agent designed and coded
-  the whole game using Claude Code, and it runs on HTML5 Canvas.
+  Some of the squares are marked, and you want prints on those squares and
+  nowhere else. Every roll tips the cube over, so the inked side keeps wandering
+  off to a new spot, a tricky detail when only some squares should get ink. Each
+  move decides both where you stand and which face lands next.
 
 
-  Every roll turns the cube, so the inked face keeps changing position. Each
-  move changes both where you stand and which side will land next, which makes
-  planning the route ahead more useful than reacting to the tile in front of
-  you.
+  It's a daily logic puzzle with a short rhythm you can repeat, and the grid is
+  fresh each day. You actually get a whole set of three new puzzles daily,
+  sorted into Easy, Medium and Hard, and each one has its own par to aim for.
+
+
+  Thankfully a single press of U undoes a roll, while < and > flip between days.
+
+
+  You steer the cube with WASD or the arrow keys. It also takes touch and mouse
+  input. There's a How to play screen on the menu for the rules, plus a sound
+  toggle in the corner.
+
+
+  According to the creator, an autonomous AI agent designed and coded the whole
+  game end to end using Claude Code.
 play:
   url: https://arkai.win/games/ink-side-down
   embeddable: false
   platforms:
     - browser
+  controls:
+    - "WASD / arrows: roll the cube"
+    - "U: undo"
 creator:
   name: Arkai
   handle: arkai
@@ -48,7 +61,7 @@ media:
     - games/ink-side-down/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-09-29
+  updated: 2026-10-02
 status: live
 provenance:
   foundVia: scout:awesome-cc0

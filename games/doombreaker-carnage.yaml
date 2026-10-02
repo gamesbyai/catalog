@@ -2,26 +2,39 @@ slug: doombreaker-carnage
 title: "DOOMBREAKER: Carnage"
 tagline: Run through ten zones of demons with four guns, then beat each zone's boss.
 description: >-
-  Move with WASD, aim with the mouse, and click to fire. Each zone asks you to
-  kill every enemy on the level, then fight that zone's boss. Clear all ten
-  zones to finish the run.
+  Every zone makes you hunt down every last enemy on the level before you get to
+  fight that zone's boss.
 
 
-  You carry four weapons, switched with the number keys 1 to 4: pistol, shotgun,
-  chaingun and rocket launcher. Health, armor and ammo pickups are scattered
-  through the levels, and enemies get tougher as you go deeper. Space jumps,
-  Shift sprints, and the game supports strafe-jumping.
+  A whole run is ten zones long, and clearing all of them finishes it. The
+  enemies get tougher the deeper you go, while each zone has its own visual
+  theme, starting with a place called Hell's Antechamber, a grim name for the
+  front door.
 
 
-  Levels are generated procedurally, so layouts change between runs. Each zone
-  has its own visual theme. The look is chunky pixel art with scanlines and CRT
-  effects, backed by chiptune-style audio. Pressing R restarts the run at any
-  point.
+  You've got four guns on the number keys 1 to 4, a pistol, a shotgun, a
+  chaingun and a rocket launcher. At least the pistol's ammo readout shows an
+  infinity sign at the start of a run. For everything else, health, armor and
+  ammo pickups are scattered around the levels.
 
 
-  The mouse is recommended, and the game uses pointer lock. The page marks it as
-  version 1.0 and still under development. The creator credits AI assistance for
-  the code, graphics, sounds and text.
+  Levels are generated procedurally, so the layout changes between runs.
+
+
+  It looks the part, with chunky pixel art seen through scanlines and CRT
+  effects over chiptune-style audio. A little map in the corner, tidy for such
+  dark halls, traces the corridors around you, while a timer ticks at the top
+  of the screen beside a kill counter. Pressing R restarts the run at any
+  point, a sensible button for a game pitched around speed runs.
+
+
+  You move with WASD, aim with the mouse and left-click to fire, while Space
+  jumps and Shift sprints. Strafe-jumping is in there too. The mouse is
+  recommended, and the game uses pointer lock.
+
+
+  webXOS credits AI with assisting on the code, graphics, sounds and text. The
+  game is labeled version 1.0 and still under development.
 play:
   url: https://webxos.itch.io/doombreaker-carnage
   embeddable: false
@@ -63,7 +76,7 @@ media:
     - games/doombreaker-carnage/shot-2
 dates:
   added: 2026-10-01
-  updated: 2026-10-01
+  updated: 2026-10-02
 status: live
 provenance:
   foundVia: scout:aibgj-3

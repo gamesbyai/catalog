@@ -2,22 +2,31 @@ slug: effective-immediately
 title: Effective Immediately
 tagline: Shoot your way out of a collapsing office nightmare as a burned-out worker.
 description: >-
-  You start in a narrow teal office corridor, seen in first person, holding a
-  stapler gun with 30 staples loaded and 100 health. A panel in the top corner
-  gives the objective: find a way out. Scrawled writing on the far wall appears
-  to read "No escape."
+  You're a burned-out office worker with a stapler for a gun, and you have to
+  fight your way out of a workplace that's falling apart before the company
+  swallows you whole.
 
 
-  Enemies are 2D animated characters placed in 3D office spaces. Desks,
-  furniture and other props can be smashed. The weapon art is inked and
-  hand-drawn in black and white, set against flat teal walls with orange edge
-  highlights, which gives it a comic-book horror look.
+  It all starts in first person, in a narrow teal corridor, with 30 staples
+  loaded and 100 health. A panel in the top corner gives you a single
+  objective, find a way out. Scrawled on the far wall is something that
+  appears to read "No escape," a rude welcome from your own office.
 
 
-  You play a burned-out worker fighting through a workplace that is falling
-  apart, and the aim is to get out before the company swallows him. The creator
-  describes the intent as a quick, violent, surreal shooter in the vein of older
-  browser FPS games.
+  The things standing in your way are 2D animated characters dropped into 3D
+  office spaces. The office itself takes a bit of a beating too, with desks,
+  furniture and other props all open to smashing.
+
+
+  Your stapler gun is inked by hand in black and white, a detailed drawing
+  that sits against flat teal walls traced with orange edges for a comic-book
+  horror look.
+
+
+  Lucas Teixeira set out to make a quick, violent and surreal shooter about
+  losing your mind inside a controlling workplace. Turning office supplies into
+  ammo fits that brief neatly, and they pointed to older browser FPS games as
+  the energy they were after.
 play:
   url: https://vibejam2026.vercel.app
   embeddable: true
@@ -53,7 +62,7 @@ media:
     - games/effective-immediately/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-10-01
+  updated: 2026-10-02
 status: live
 provenance:
   foundVia: scout:vibejam-2026

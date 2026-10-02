@@ -3,26 +3,40 @@ title: Plunder
 tagline: Sail a pirate ship, collect resources, and sink rival captains on
   chaotic islands.
 description: >-
-  You captain a pirate ship on a top-down ocean arena, sailing against nineteen
-  rival captains listed on a top-ten board. Each match opens with a 12-second
-  grace period with no damage taken. You start in the Sloop, with 120 hull and
-  16 cannons, and cargo space for 50.
+  You captain a pirate ship in a top-down ocean arena, trading cannon fire with
+  nineteen rival captains while you haul wood and gold home to spend on
+  upgrades.
 
 
-  Head to Wood Islands and Gold islands to gather resources. Both have red
-  gather rings, and you stay inside the ring rather than on the island core.
-  Cargo only counts once you bring it to the green city ring and bank it, so
-  unbanked loot is at risk if another captain sinks you.
+  You get resources from Wood Islands and Gold Islands, and each one has a red
+  ring around it. You gather by staying inside that ring instead of sitting on
+  the island itself. None of it counts until you sail back to the green city
+  ring and bank it, so a full hold out at sea is never safe.
 
 
-  Spend banked wood and gold in the city ring on four upgrades: Cannon, Sail,
-  Hull and Cargo. Level 1 costs range from 15 wood and 25 gold for cannons to 28
-  wood and 12 gold for the hull. The HUD tracks match phase, a countdown timer,
-  storm radius, a boss status, kills and prestige.
+  If another captain sinks you before you get home, your unbanked cargo is at
+  risk. The game clearly wants that rule remembered, because it's spelled out in
+  a box at the bottom of the screen right under the gathering tip.
 
 
-  Before a match you can pick a ship from the fleet screen. The Galleon and Brig
-  are shown locked, and the Sloop is the starter.
+  The city ring is also where you spend what you've banked, with four upgrades
+  for Cannon, Sail, Hull and Cargo. Level 1 prices run from 15 wood and 25
+  gold for cannons to 28 wood and 12 gold for the hull, and a considerate
+  banner at the top tells you how much more wood you still need.
+
+
+  Each match opens with a 12-second grace period where you can't take damage.
+
+
+  WASD steers the ship, while Q and E fire broadsides. The HUD shows the match
+  phase, a countdown timer, the storm's radius and whether the boss is still
+  dormant. It also counts your kills and prestige, and a whole top-ten board
+  ranks the captains.
+
+
+  You pick a ship on the fleet screen before you set sail. You start in the
+  Sloop, with 120 hull, 16 cannons and room for 50 cargo, while the Galleon and
+  Brig show up as locked silhouettes.
 play:
   url: https://plunder.magnificentgames.com
   embeddable: true

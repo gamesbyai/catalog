@@ -2,30 +2,47 @@ slug: casadegema
 title: Casadegema
 tagline: Water a bare courtyard and find hidden gems through a full watercolor year.
 description: >-
-  You start in a bare whitewashed courtyard with a watering can, a chalkboard
-  easel and a girl standing by the front door. Pick up the can and water the
-  tree bed to grow a bougainvillea, then tap and drag around the house to find
-  five hidden gems per season. Each gem flies to a counter in the top-left
+  You're the one who wakes up a sleepy garden, starting in a bare whitewashed
+  courtyard with a watering can, a chalkboard easel and a girl standing by the
+  front door.
+
+
+  Grab the can and water the tree bed, and a bougainvillea grows out of it.
+  After that you tap and drag your way around the house to find five hidden gems
+  each season, and every gem you find flies up to a counter in the top-left
   corner.
 
 
-  The year runs through spring, summer, autumn and winter, and each season has
-  its own tasks. In spring you tap a speaker, shake a tree branch until the
-  petals fall, and water pots. Later you pop a balloon with a twig, rake leaves,
-  make rain, build a snowman and write a name in chalk on the board.
+  The year moves from spring to summer, autumn and winter, and every season
+  has its own tasks. In spring you tap a speaker, shake a tree branch until
+  its petals fall and water the pots. Later you'll pop a balloon with a twig,
+  rake leaves, make it rain, build a snowman and write a name in chalk.
 
 
-  Oli the owl sits on the tower roof and comments as you go. Tap him for a hint,
-  tap the alarm clock to send a feather toward the next gem, or catch the teddy
-  bear that peeks out now and then to reveal the remaining gems. Finishing the
-  last winter gem sends a message up from the chimney. A full year takes about
-  10 to 15 minutes.
+  Oli the owl sits on the tower roof and comments on what you're doing, and you
+  can tap him for a hint.
 
 
-  The art is watercolor-style, drawn on a canvas. Music is generated live and
-  stays silent until you tap the speaker. Adding a name to the link pre-writes
-  it on the easel and in the final message, and a season setting in the link
-  starts later in the year. It works with touch on phones.
+  If you need more help, tap the alarm clock and a feather heads toward your
+  next gem. A teddy bear also peeks out from behind the house now and then,
+  and if you catch him he reveals every gem you haven't found yet. When you
+  find the last winter gem, a message floats up from the chimney, a fitting
+  finish for a game made as a Daughter's Day gift.
+
+
+  A full year takes about 10 to 15 minutes. All the watercolor art is drawn in
+  code on a canvas without a single image file, and the music is generated live
+  but stays silent until you tap the speaker.
+
+
+  Adding a name to the link writes it on the easel and in the final message
+  ahead of time, while a season setting starts you later in the year. On a
+  phone it works with touch, and your taps snap to the nearest thing you can
+  use.
+
+
+  Deepak Jain built the whole thing by talking with an AI, and none of the code
+  was written by hand.
 play:
   url: https://1xaispark.com/games/casa-de-gemas
   embeddable: true
@@ -66,7 +83,7 @@ media:
     - games/casadegema/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-10-01
+  updated: 2026-10-02
 status: live
 provenance:
   foundVia: scout:awesome-opus

@@ -2,25 +2,34 @@ slug: fishing
 title: Fishing
 tagline: Sail the open sea, cast lures for fish and spend coins on new lures.
 description: >-
-  Steer a boat across open water with WASD or the arrow keys, then hold Space to
-  charge a cast and release it to throw the lure. Longer holds send the lure
-  farther. Hold R to reel it back toward the boat, and cast again once it
-  arrives.
+  Hold Space to charge up a cast and let go to fling the lure out from your
+  boat, and the longer you hold it, the farther the lure flies.
 
 
-  A radar in the top left marks nearby fish as yellow dots, and the HUD beside
-  it shows speed in knots, heading, and the number of fish left. The tips panel
-  notes that fish are attracted to moving lures.
+  Once it's in the water, hold R to wind it back toward the boat. When it gets
+  there, you're free to cast again. The on-screen tips also point out that fish
+  are drawn to a lure that's moving.
 
 
-  Catches earn coins, shown in a counter at the top of the screen. Spend them at
-  the lure shop on new lures, and press 1 to 4 to switch between the lures you
-  own. You start with a soft lure.
+  Between casts you steer across open water with WASD or the arrow keys, with S
+  working as the brake. The camera rides behind the boat in third person.
 
 
-  The camera follows behind the boat in third person. Floating platforms with
-  large signs sit on the water, and a controls panel on screen lists the keys
-  and fishing tips.
+  A little radar in the top left marks nearby fish as yellow dots, and the
+  readout beside it shows speed in knots, heading and fish left, which gives a
+  casual fishing trip a charter boat's instruments.
+
+
+  Every catch pays out coins, and they pile up in a counter at the top of the
+  screen. You start with nothing but a soft lure, but the lure shop sells others
+  for those coins. The 1 to 4 keys then swap between the lures you own, so each
+  catch feeds straight back into your tackle box.
+
+
+  For some reason, big round signs stand on floating platforms around the water,
+  a couple of them cheerfully announcing a "Vibe Code Zone". A panel on the
+  right side of the screen keeps the key list and the fishing tips in view the
+  whole time.
 play:
   url: https://fishing.lureconcept.com
   embeddable: true
@@ -63,7 +72,7 @@ media:
     - games/fishing/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-10-01
+  updated: 2026-10-02
 status: live
 provenance:
   foundVia: scout:awesome-cc0

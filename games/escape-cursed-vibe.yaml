@@ -3,20 +3,35 @@ title: Escape cursed vibe
 tagline: Race friends through five deadly themed stages and dodge hazards to
   escape first
 description: >-
-  You run a cursed path in 3D alongside up to three other players in one lobby.
-  Traps kill you, and the edges of the path drop you into the void. The goal is
-  to complete all five stages and be the one who escapes.
+  You're racing along a cursed 3D path with up to three other players in the
+  same lobby, where the traps kill you and stepping off an edge drops you into
+  the void.
 
 
-  In the lobby you type a name of up to 16 characters, which other players can
-  see. The host picks the starting stage, and more players can still drop in
-  before the run starts. The stages are Star Gauntlet, Playtime Is Over, The
-  Chaos Divide, Polar Escape and Infernal Arena.
+  There are five stages, and your goal is to clear all of them and be the one
+  who escapes. They're called Star Gauntlet, Playtime Is Over, The Chaos
+  Divide, Polar Escape and Infernal Arena, and those names alone promise a
+  wild tour of themes.
 
 
-  You move and jump with the keyboard and look around with the mouse. The
-  creator describes it as a dodge map where cursed friends race and only the
-  swift escape, and says it is based on a Warcraft 3 custom map.
+  Before a run you type in a name of up to 16 characters, which the other
+  players can see. The host chooses the stage the run starts on, so a group
+  doesn't have to begin with the first one every time. More players can still
+  drop in right up until the run begins.
+
+
+  WASD or the arrow keys move you, Space jumps and the mouse looks around, which
+  keeps the controls about as lean as a dodging game can get.
+
+
+  The lobby is a bit of a neon show, with pink and cyan glowing against a dark
+  backdrop. Four player slots run across the top, with the empty ones marked as
+  waiting while the first one shows you as host. Each stage gets its own
+  numbered tile underneath.
+
+
+  Speazed describes it as a dodge map where cursed friends race and only the
+  swift escape, and they say it's based on a Warcraft 3 custom map.
 play:
   url: https://escape-cursed-vibe.pages.dev
   embeddable: true
@@ -56,7 +71,7 @@ media:
     - games/escape-cursed-vibe/shot-2
 dates:
   added: 2026-10-01
-  updated: 2026-10-01
+  updated: 2026-10-02
 status: live
 provenance:
   foundVia: scout:vibejam-2026

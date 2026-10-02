@@ -2,26 +2,44 @@ slug: bomber-guys
 title: Bomber Guys
 tagline: Blast the floor away and knock seven rivals off the arena.
 description: >-
-  Bomber Guys is an eight-player bomb arena on a floor that breaks apart as the
-  match goes on. You drop bombs to blow holes in the ground and shove opponents
-  toward the edge, and you win by being the last one standing once the other
-  seven are gone.
+  You're a googly-eyed bean dropped into an eight-player arena where the floor
+  itself is the thing you're fighting over. You plant bombs to blow holes in the
+  ground and shove the other beans toward the edge, and the last one still
+  standing once the other seven are gone takes the round.
 
 
-  Its creator says it draws on the kind of simple games they used to work on at
-  Voodoo.io, and matches stay short and readable in that arcade style. It was
-  made with Claude Code on Three.js and came 296th of 945 at Vibe Jam 2026.
+  Every explosion eats away footing, so a well-placed bomb can trap a rival
+  while a careless one can leave you nowhere to run, which makes the arena your
+  best weapon and your worst hazard.
 
 
-  The arena is both the main weapon and the main hazard. Every explosion removes
-  footing, so a well-placed bomb can trap a rival, while a careless one can
-  leave you with nowhere to run.
+  You move with WASD, jump with Space and drop a bomb with E. A jump button only
+  seems fair on a floor that keeps losing pieces.
+
+
+  Before a match you name your bean and pick one of eight colors, and with the
+  blue one picked, your bean even shows up labeled Pool. Quick Play throws you
+  in with other beans, or you can set up a private room instead. The beans are
+  chunky, rounded figures with big wobbly eyes, and they look goofy against
+  the soft glowing purple menu.
+
+
+  Even the title screen swaps "last one standing" for "last bean bouncing", a
+  fair trade for a cast this round.
+
+
+  sergebocancea says it draws on the kind of simple games they used to work on
+  at Voodoo.io. Matches stay short and easy to read in that same arcade style.
 play:
   url: https://bomber-guys.vercel.app
   embeddable: true
   platforms:
     - browser
     - mobile
+  controls:
+    - "WASD: move"
+    - "Space: jump"
+    - "E: drop bomb"
 creator:
   name: sergebocancea
   handle: sergebocancea
@@ -52,7 +70,7 @@ media:
     - games/bomber-guys/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-09-29
+  updated: 2026-10-02
 status: live
 provenance:
   foundVia: scout:vibejam-2026

@@ -2,25 +2,35 @@ slug: mobius-strip
 title: Mobius Strip
 tagline: Race and fight on gravity-defying tracks until you're the last rider alive.
 description: >-
-  Start on the line of a dark, neon-edged track that curves through the clouds,
-  with two rivals, Nyx Steel and Kai Blaze, beside your red craft. A countdown
-  runs, then all three race, and the last rider left alive wins.
+  Wait out the countdown, then go. Your red craft starts on a dark, neon-edged
+  track that curves through the clouds, with two rivals, Nyx Steel and Kai
+  Blaze, lined up beside you. All three of you race, but only the last rider
+  still alive gets the win.
 
 
-  Combat is part of the race. A tutorial pilot tells you to destroy an enforcer
-  ahead on the track to collect XP. Enemies carry a name tag with a health
-  percentage, and a level counter at the bottom fills as XP comes in.
+  The tracks bend gravity, and the soundtrack to all of it is explosions and
+  guitar solos.
 
 
-  The screen tracks a lot at once: a ranked list of racers showing level, hull
-  and distance, a minimap of the oval course, a speedometer in mph, and a panel
-  for bonuses earned from level-ups. A row of ability slots with a draw and
-  discard pile sits at the bottom.
+  Fighting is part of the race itself. A tutorial pilot chimes in early with an
+  order to take out an enforcer further up the track, because wrecking it earns
+  you XP. Each enemy wears a name tag with its health as a percentage.
 
 
-  The creator used AI for art, animation, audio and visual polish, areas they
-  say they are less strong in. The tracks bend gravity, and explosions and
-  guitar solos accompany the race.
+  Meanwhile, a level counter along the bottom fills up as your XP comes in.
+
+
+  There's a lot on the screen at once. A ranked list keeps each racer's level,
+  hull and distance, and there's a minimap of the oval course plus a speedometer
+  reading in mph. A side panel holds the bonuses you earn when you level up.
+
+
+  There's also a row of ability slots with a draw pile and a discard pile,
+  like a hand of cards on the dashboard.
+
+
+  yaworsw used AI for the art, animation, audio and visual polish. Those are the
+  areas they say they're less strong in.
 play:
   url: https://mobius-strip-game.com
   embeddable: true
@@ -56,7 +66,7 @@ media:
     - games/mobius-strip/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-10-01
+  updated: 2026-10-02
 status: live
 provenance:
   foundVia: scout:vibejam-2026

@@ -3,21 +3,32 @@ title: Space Blast
 tagline: Dodge and shoot through asteroid fields, alone or with a friend on the
   same screen.
 description: >-
-  Space Blast puts a pilot in a 3D asteroid field with one job: survive as long
-  as possible while shooting rocks apart. Before launching, you enter a required
-  pilot call sign, which is used for the leaderboard, and pick a ship color from
-  a dropdown.
+  Space Blast drops you into a 3D asteroid field where the only goal is to stay
+  alive as long as you can while shooting the rocks apart. Your ship thrusts and
+  aims in full 3D while the field closes in around you.
 
 
-  Three control schemes are offered on the start screen: touch, mouse, and
-  keyboard. A daily run checkbox makes every player face the same asteroid
-  sequence that day. Two pilots can share one screen by pressing 2 at the start.
+  Shields, rapid fire and drones turn up as pickups during a run, and grabbing
+  them changes your loadout on the fly. Ship color palettes unlock too. It's a
+  small cosmetic reward for anyone who cares how they look while dodging
+  boulders.
 
 
-  During a run you pick up shields, rapid fire, and drones to change your
-  loadout as the rocks close in. Ship color palettes can be unlocked. Scores are
-  kept locally, and a top 10 list of world runs is shown on a separate scores
-  page. The menu also has features, briefing, and settings pages.
+  Before launching you have to enter a pilot call sign, a bit of paperwork that
+  becomes your name on the leaderboard.
+
+
+  The start screen lets you choose touch, mouse or keyboard controls, plus a
+  dropdown for your ship's color that starts on a Classic scheme. Two pilots can
+  also share one screen if you press 2 at the start.
+
+
+  Tick the daily run box and every player gets the same asteroid sequence that
+  day, a neat way to line your run up against everyone else's.
+
+
+  Your own scores are kept locally. A separate scores page lists the top 10
+  world runs. The menu also has pages for features, a briefing and settings.
 play:
   url: https://space-blast.vercel.app
   embeddable: true

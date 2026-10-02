@@ -2,24 +2,34 @@ slug: echo-ohce
 title: ECHO|OHCE
 tagline: Find your way through a dark dungeon using echolocation pings
 description: >-
-  ECHO|OHCE puts you in a dark dungeon where you cannot see. A ping fires
-  automatically and lights up whatever it reaches in one of three colors: blue
-  for safe, amber for near, and red for danger. Those color labels sit on the
-  title screen as a legend.
+  ECHO|OHCE drops you into a dark dungeon where you can't see a thing, and you
+  find your way by echolocation instead. A ping goes out on its own and lights
+  up whatever it reaches in one of three colors, with blue meaning safe, amber
+  meaning near and red meaning danger.
 
 
-  Each level has you reach the exit, and a run covers 10 levels. Staying silent
-  is a second goal that runs alongside it. The title screen describes the game
-  as a horror roguelite, and a Top Echoes board there tracks results.
+  The title screen lays out that color key as a legend, sitting just under a
+  slightly unsettling tagline that tells you you're blind and it isn't.
 
 
-  You move with WASD, look with the mouse, and hold Shift to sprint. The
-  echolocation is modeled on the Odradek scanner from Death Stranding, according
-  to the creator.
+  Every level asks you to reach the exit, and a full run strings 10 levels
+  together. Staying silent is a second goal that runs alongside it, which fits a
+  game whose title screen calls it a horror roguelite.
 
 
-  The art is minimal: glowing blue, amber and red lettering and markers against
-  a black screen, with a single button to enter the dark.
+  You move with WASD and look around with the mouse. Holding Shift lets you
+  sprint. There's also a Top Echoes board on the title screen for your results,
+  a bit of bragging room in a game that's all about keeping quiet.
+
+
+  According to the creator, the echolocation is modeled on the Odradek scanner
+  from Death Stranding, the source for a tool that maps what you can't see.
+
+
+  The look is stripped way back. Glowing blue, amber and red lettering and
+  markers sit against a black screen, and even the title is split across those
+  same three colors. There's just one button on the title screen, and it's
+  labeled Enter the Dark.
 play:
   url: https://project-kqtw7.vercel.app
   embeddable: true

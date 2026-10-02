@@ -2,27 +2,39 @@ slug: prime-time-panic
 title: prime time panic
 tagline: Run a TV production studio in a simulation that parodies prime-time media.
 description: >-
-  You run a small TV station that starts with $50,000 and zero viewers. A
-  checklist on the overview screen lays out the first week: hire at least one
-  host or technician, commission a show from the catalog, place a finished show
-  in the schedule, then advance the week.
+  You're running a small TV station that starts with $50,000 in the bank and
+  nobody watching. A checklist on the overview screen walks you through your
+  first week, asking you to hire at least one host or technician, commission a
+  show from the catalog, put a finished show into the schedule, then advance
+  the week. Even before anything's on air, the overview shows $500 in weekly
+  expenses against zero income.
 
 
-  The schedule is a grid of seven days with morning, afternoon and primetime
-  slots. Each slot has a viewer multiplier: x0.6 in the morning, x0.8 in the
-  afternoon and x2 in primetime. Cash, viewer count and a star rating stay in
-  the top bar.
+  There's a grid of seven days in the schedule, each split into morning,
+  afternoon and primetime slots with their own viewer multiplier. Mornings get
+  x0.6 and afternoons x0.8, while primetime jumps all the way to x2.
 
 
-  The talent agency screen is where you search for staff. It also has a morale
-  meter with team-building options, such as a pizza party, a company outing or a
-  bonus payment, each with a price and a mood boost. Goals start at 100 viewers
-  and go up to 1,000 and 10,000.
+  Your cash, viewer count and star rating don't leave the top bar, and the side
+  menu also has tabs for shows and events.
 
 
-  A news ticker runs parody headlines along the top of the screen. The menu also
-  has tabs for shows and events, and the interface text is in German. The
-  creator describes it as Game Dev Story meets MADtv.
+  Staff come from the talent agency screen, where you're able to search for new
+  hires. It's also got a morale meter, and you can push the team's mood back up
+  with things like a pizza party, a company outing or a bonus for everyone, each
+  with its own price and boost. The pizza party costs €800 for +12% and the
+  bonus runs €8,000 for +35%, while a mandatory motivational talk buys a measly
+  3% for €200.
+
+
+  Goals start at your first 100 viewers, and they'll climb to 1,000 and then
+  10,000.
+
+
+  There's a news ticker scrolling silly parody headlines across the top, like
+  one about a magician whose assistant keeps vanishing at 8:15 pm. The
+  interface text is in German. bimon describes it as Game Dev Story meets
+  MADtv.
 play:
   url: https://prime-time-panic.com
   embeddable: true

@@ -3,20 +3,35 @@ title: Rainy Day Sort
 tagline: Pour and sort colored water between glasses in a calm, tactile puzzle.
 description: >-
   Rows of glass tubes hold stacked bands of pink, blue, green, orange, purple
-  and teal liquid. Select a tube, then select another to pour into it. The first
-  screen shows a move counter at zero and two rows of tubes, most with empty
-  space at the top.
+  and teal liquid that need sorting. You pick a tube, then pick a second one to
+  pour into, while a move counter under the buttons starts you off at zero.
 
 
-  Some tubes start frozen and show a padlock. A line under the board reads "4
-  neighboring moves unlocks", so a frozen tube opens after moves are made in the
-  tubes beside it. Undo and SOS buttons sit under the title.
+  A few tubes start out frozen behind a little padlock, though. The line under
+  the board says four neighboring moves unlock one, which means a frozen tube
+  opens up once you've made moves in the tubes beside it. It's a nice wrinkle on
+  the usual pouring puzzle.
 
 
-  Along the top are a Choose Level menu, a New Game button and a settings icon.
-  The screen has a pale gray-blue background, a serif title and a small blue
-  rabbit in the corner. The creator aimed for a cozy, tactile puzzle as an
-  alternative to ad-heavy phone games.
+  When a pour goes wrong there's an Undo button just under the title, and an SOS
+  button sits right next to it.
+
+
+  Along the top you can choose a level from a menu, start a new game or open the
+  settings. The first board lays out two rows of tubes, and most of them have
+  some empty room at the top.
+
+
+  It all sits on a pale gray-blue background under a serif title that calls
+  itself a gentle little puzzle, with a small blue rabbit keeping you company in
+  the corner.
+
+
+  JoysomeStudios built it with Claude Code and Gemini, plus a computer science
+  degree that's about 25 years old. They were teaching themselves to vibe code
+  by actually doing it, after not writing code since around 2001. They also
+  wanted a cozy, tactile puzzle as an alternative to the ad-heavy,
+  clunky-looking games in app stores.
 play:
   url: https://rainy-day-sort.pages.dev
   embeddable: true
@@ -57,7 +72,7 @@ media:
     - games/rainy-day-sort/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-10-01
+  updated: 2026-10-02
 status: live
 provenance:
   foundVia: scout:vibejam-2026

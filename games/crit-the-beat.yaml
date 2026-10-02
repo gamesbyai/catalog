@@ -2,26 +2,40 @@ slug: crit-the-beat
 title: Crit The Beat
 tagline: Hit notes in time with the music while fighting with RPG-style combat.
 description: >-
-  Crit The Beat is a browser rhythm game with an RPG twist, in the Guitar Hero
-  mold. You follow the music and hit notes in time with it while the fight plays
-  out as RPG-style combat, and the title's play on critical hits points at that
-  side of it.
+  In Crit The Beat you follow the music and hit notes in time with it, while the
+  fight plays out as RPG-style combat. It's a rhythm game in the Guitar Hero
+  mold that pairs the timing test of a rhythm track with the progression and
+  combat of an RPG. The name is a pun on critical hits, and it points right at
+  that combat side.
 
 
-  The creator, mxvdl, says they always loved Guitar Hero and wanted to add an
-  RPG twist to it. It was made with Cursor for Vibe Jam 2026, which ranked it
-  284th of 945, with Three.js drawing the 3D scene.
+  You play on four keys, S, D, K and L, and swapping any of them is painless,
+  since you just press a new letter on the title screen. Arcade mode is the
+  way in, with settings, a music toggle and a feedback button close by.
 
 
-  The premise pairs two genres that rarely share a screen: the timing test of a
-  rhythm track, and the sense of progression and combat from an RPG. It is
-  single-player, so it comes down to you, the song and the fight.
+  It's set in a purple graveyard full of ghosts, where a grumpy cat in a green
+  jacket grips a glowing weapon and nags you for lingering on the menu.
+
+
+  Signing in with Discord or Google tracks your progress and lets you submit
+  scores. You don't need an account, though, since visitors get every bit of
+  content. The title screen is also refreshingly honest that this is an alpha
+  build that may have bugs, that players can cheat, and that progress might get
+  reset at some point.
+
+
+  mxvdl says they've always loved Guitar Hero and wanted to add an RPG twist to
+  it.
 play:
   url: https://critthebeat.com
   embeddable: true
   platforms:
     - browser
     - mobile
+  controls:
+    - "S / D / K / L: strike in time with the music"
+    - "Any letter key on the title screen: change a key binding"
 creator:
   name: mxvdl
   handle: mxvdl
@@ -50,7 +64,7 @@ media:
     - games/crit-the-beat/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-09-29
+  updated: 2026-10-02
 status: live
 provenance:
   foundVia: scout:vibejam-2026

@@ -3,26 +3,38 @@ title: Node Control
 tagline: Fight rivals for control of nodes inside a neural network in a
   multiplayer .io arena.
 description: >-
-  The start screen asks for a name, offers six skins (Volt, Blade, Crown, Dart,
-  Trident, Phantom) and a server picker set to Auto, then a Connect button drops
-  you into a live online match. You steer by pointing your cursor where you want
-  to go.
+  A glowing cyan panel greets you with a name field, six skins (Volt, Blade,
+  Crown, Dart, Trident and Phantom) and a server picker that starts on Auto. Hit
+  Connect and you're dropped straight into a live match with other people.
+  There's even a track called Neural Ambient already playing in the corner, a
+  fitting name for a game set inside a neural network.
 
 
-  The goal is to claim territory. Leave your own area, then draw a loop back to
-  it, and everything inside the loop becomes yours. The on-screen tips also say
-  not to cross your own trail.
+  Steering couldn't ask much less of you, because you just point your cursor
+  where you want to go.
 
 
-  Matches are competitive and shared with other players, who fight for influence
-  inside a neural network. The creator lists boost timing, trail length,
-  contested infections, and the choice between extending a trail and closing it
-  as the skills that separate players. A music player in the corner lets you
-  skip tracks, and a help button and settings sit beside it.
+  Your job is to grab territory. You head out of your own area and draw a loop
+  back into it, and everything inside that loop becomes yours.
 
 
-  The creator built it as a demonstration of a commercially shaped .io game,
-  with multi-region servers, mobile support, and telemetry.
+  Just don't cross your own trail, as the on-screen tips warn in bright orange.
+  Everyone else in the match is after the same ground, all of them fighting for
+  influence inside a neural network. It's a shared, competitive space rather
+  than a solo board.
+
+
+  According to tiepb, what separates players is boost timing, how long you let
+  your trail get, contested infections, and knowing when to keep extending a
+  trail versus closing it. The instructions are three lines long.
+
+
+  A small music player sits in the top-left corner and lets you skip tracks. A
+  help button and the settings are right next to it.
+
+
+  Node Control was built by tiepb as a demonstration of a commercially shaped
+  .io game, with servers in multiple regions, mobile support and telemetry.
 play:
   url: https://nodecontrol.gg
   embeddable: true
@@ -61,7 +73,7 @@ media:
     - games/node-control/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-10-01
+  updated: 2026-10-02
 status: live
 provenance:
   foundVia: scout:vibejam-2026

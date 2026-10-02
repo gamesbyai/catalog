@@ -2,26 +2,35 @@ slug: flock
 title: FLOCK
 tagline: Grow, dash and shoot your way to the top of a neon arena.
 description: >-
-  The arena is a neon synthwave scene with a glowing sun on the horizon and a
-  magenta grid floor. Each fighter is a swarm of glowing dots, and yours is
-  cyan. You move the swarm around, aim a reticle, hold fire, and dash away from
-  rivals. Small brown clusters of dots drift around the arena.
+  A glowing sun sits on the horizon over a magenta grid floor, and scattered
+  across this synthwave arena are fighters made entirely of glowing dots. Yours
+  is the cyan swarm. Small brown clusters of dots drift loose between them, like
+  scraps nobody has claimed yet.
 
 
-  A match is a free-for-all against seven computer-controlled swarms, named by
-  type: three Hunters, a Berserker, two Snipers and a Farmer. The first fighter
-  to reach 10 kills wins. A scoreboard line under the arena tracks every
-  fighter's kills and deaths, and Tab opens a full score view.
+  You move your swarm around, aim a reticle, hold down fire and dash away when a
+  rival gets too close.
 
 
-  Two meters sit at the bottom of the screen: dash charges and shotgun charges,
-  each in five segments. Right-click fires the shotgun as a secondary attack
-  alongside the held-down regular fire. Escape or P pauses, and gamepad input
-  works as well as keyboard and mouse.
+  Every match is a free-for-all against seven computer-controlled swarms, and
+  their names are upfront about how they'll fight, with three Hunters, a
+  Berserker, two Snipers and a Farmer. The first fighter to reach 10 kills
+  wins.
 
 
-  The creator names Minishoot' Adventures and Overwatch as inspirations, along
-  with some earlier test games made on Scratch.
+  Two meters along the bottom of the screen count your dash charges and shotgun
+  charges, each split into five segments. The shotgun is a secondary attack on
+  right-click, while your regular fire stays on the held left button. Under the
+  arena, a scoreboard line keeps every fighter's kills and deaths in view, and
+  Tab opens the full score table.
+
+
+  Escape or P pauses, and there's a complete gamepad layout alongside keyboard
+  and mouse, with every action given its own stick, trigger or button.
+
+
+  jongstra names Minishoot' Adventures and Overwatch as inspirations. Some
+  earlier test games made on Scratch are on that list too.
 play:
   url: https://flock.mindmatter.nl
   embeddable: true

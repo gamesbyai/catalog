@@ -2,24 +2,38 @@ slug: feast-for-the-eyes
 title: Feast for the Eyes
 tagline: Fetch the food that hungry eyes ask for, add extras, and earn tips for speed.
 description: >-
-  Hungry eyes want to be fed, and you are the one bringing the food. Each order
-  has to be filled correctly, because a wrong item counts as a mistake. Walk to
-  the objects in the 3D space and pick up what the eyes asked for.
+  You're serving a dining room where the customers are hungry eyes, and they
+  want to be fed. You walk around the 3D space, find the objects they asked for
+  and carry them over to fill each order.
 
 
-  Payment depends on how you serve. Delivering the requested food earns money.
-  Adding a napkin, cutlery or similar extras raises the price you can charge,
-  and a quick delivery earns a tip on top.
+  Getting the order right matters, because a wrong item counts as a mistake.
+  Three red eyes stare up from the bottom of the screen the whole time. A gold
+  coin counter in the top corner keeps track of what you've earned.
 
 
-  Movement uses WASD, and the left mouse button interacts with objects. The up
-  and down arrow keys raise or lower mouse sensitivity.
+  Bring them the food they asked for and you get paid for your trouble.
 
 
-  The creator came up with the idea, laid out the level and edited the textures.
-  Claude wrote nearly all of the code, ChatGPT produced the textures, and
-  ElevenLabs and Suno made the sounds. Gemini gave additional help. The creator
-  plans later updates with more maps, better textures and a story.
+  Throwing in a napkin, some cutlery or a similar extra lets you charge more, a
+  funny upsell when your customers are eyeballs. Speed pays too. A quick
+  delivery gets you a tip on top.
+
+
+  Down a side hallway, past ornate carved dark wood and glowing green lattice
+  windows, there's a door marked "End Shift".
+
+
+  WASD walks you around, the left mouse button works on objects, and the up and
+  down arrow keys nudge the mouse sensitivity, a thoughtful extra for a
+  first-person view.
+
+
+  N8012 came up with the idea, laid out the level and edited the textures.
+  According to the creator, Claude wrote nearly all of the code, ChatGPT made
+  the textures, ElevenLabs and Suno produced the sounds, and Gemini gave
+  additional help. They plan later updates with more maps, better textures and a
+  story.
 play:
   url: https://n8012.itch.io/feast-for-the-eyes
   embeddable: false
@@ -58,7 +72,7 @@ media:
     - games/feast-for-the-eyes/shot-2
 dates:
   added: 2026-10-01
-  updated: 2026-10-01
+  updated: 2026-10-02
 status: live
 provenance:
   foundVia: scout:aibgj-4

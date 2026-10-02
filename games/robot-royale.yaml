@@ -2,25 +2,34 @@ slug: robot-royale
 title: Robot Royale
 tagline: Fight through a ruined cyber-city arena, upgrading from bare fists to RPGs.
 description: >-
-  You start with bare fists in a decaying cyber-city arena and fight toward
-  heavier weapons, with explosive RPGs at the top of the progression. Move with
-  WASD and attack with the mouse. The camera looks down at an angle on a small
-  blocky robot with a cyan eye.
+  Your robot starts out with nothing but its fists, and from there you fight
+  your way up through heavier weapons, with explosive RPGs at the very top,
+  across a crumbling cyber-city arena.
 
 
-  A panel in the corner tracks the current phase, elapsed time, scrap collected,
-  your level, and the level at which the next boss appears, which reads Nv.5 at
-  the start. It also names your equipped weapon. A red bar runs along the bottom
-  of the screen.
+  The camera hangs at an angle above a small, blocky robot with a single cyan
+  eye. You steer it with WASD and attack with the mouse. Shift sends you into a
+  dash, and Esc pauses.
 
 
-  Shift dashes, and the panel shows when the dash is ready again. Red medical
-  pickups lie scattered across the floor between tall, angular towers, and a
-  green ring labeled as a portal sits near the arena edge. Esc pauses the game.
+  A panel in the corner keeps track of the phase, the clock, the scrap you've
+  collected and your level, plus the level where the next boss turns up, which
+  starts at Nv.5. It also names your current weapon, humbly listed as Basic
+  Punches at first, and shows when your dash is ready again.
 
 
-  The creator built it around the idea of robots growing more powerful once
-  combined with AI. The whole game is a single Three.js file.
+  Below all that, a long red bar stretches across the bottom of the screen.
+
+
+  Red medical pickups are scattered across the floor between tall, angular
+  towers. Near the edge of the arena there's a glowing green ring with a
+  portal label on it. Long slanting light cuts across the ground and throws
+  dramatic shadows off those towers.
+
+
+  According to marssaum, the idea behind it is robots growing more powerful
+  once they're combined with AI, and a robot punching its way up to rocket
+  launchers fits that nicely. The whole game lives in a single file.
 play:
   url: https://robot-royale.pages.dev
   embeddable: true
@@ -61,7 +70,7 @@ media:
     - games/robot-royale/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-10-01
+  updated: 2026-10-02
 status: live
 provenance:
   foundVia: scout:vibejam-2026

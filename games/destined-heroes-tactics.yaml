@@ -2,20 +2,36 @@ slug: destined-heroes-tactics
 title: Destined Heroes Tactics
 tagline: Command a squad of unique heroes in turn-based battles won by tactics alone.
 description: >-
-  Destined Heroes Tactics is a single-player lite tactical RPG where battles are
-  won by planning, not luck. You lead a squad of unique heroes across the
-  battlefield turn by turn, positioning each unit and choosing its actions to
-  defeat the other side.
+  Pick a battle format, then lead your squad of heroes across the battlefield
+  one turn at a time, placing each unit and choosing its action to beat the
+  other side.
 
 
-  The design draws on a love of chess and on tactical RPGs like Fire Emblem. It
-  was built with Cursor in Unity and ranked 484th of the 945 entries at Vibe Jam
-  2026, and the battles fit on a phone screen as well as a desktop one.
+  Battles are won by planning instead of luck, since the whole game is pitched
+  as pure strategy and tactics. It's a lighter take on the tactical RPG, where
+  careful positioning and reading your opponent count for more than random
+  rolls, so every move is something you can reason through.
 
 
-  Because each hero is unique, the team you build shapes how you approach a
-  fight. Careful positioning and reading your opponent count for more than
-  random rolls, so every move is a decision you can reason about.
+  Each hero is unique, so the team you build shapes how you approach a battle.
+  The title screen lines up a whole cast of eight in anime-style art, from spear
+  carriers to an armored knight in red.
+
+
+  There are many ways to size a fight, from two 8v8 matchups down to a 6v6
+  Rapid mode with smaller teams and a 4v4 Blitz that strips your options right
+  back.
+
+
+  Classic keeps both sides symmetrical. The Chess format is the odd one out,
+  because it puts a row of pawns into the battle and turns the whole thing into
+  a chess variant. That twist makes sense once you know WillifordBlake drew on a
+  love of chess alongside tactical RPGs like Fire Emblem.
+
+
+  Fights play out on a pretty isometric pixel-art field of grass, stone paths
+  and small pools of water. WillifordBlake invites feedback, bug reports and
+  suggestions through a Discord community.
 play:
   url: https://destinedstudio.com/destined-heroes-tactics
   embeddable: true
@@ -50,7 +66,7 @@ media:
     - games/destined-heroes-tactics/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-09-29
+  updated: 2026-10-02
 status: live
 provenance:
   foundVia: scout:vibejam-2026

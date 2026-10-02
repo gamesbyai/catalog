@@ -2,25 +2,45 @@ slug: local-news-hero
 title: Local News Hero
 tagline: Drive a news van through your own city and race rivals to breaking stories.
 description: >-
-  Local News Hero lets you pick a real city, then puts you behind the wheel of a
-  news van in a 3D version of it. Breaking stories pop up as you drive, and you
-  steer through the streets to beat rival stations to each one.
+  Each round is a two-minute live broadcast, and whoever has the most points
+  when the clock runs out wins. You drive a news van around a city, racing rival
+  stations to each breaking story as it pops up.
 
 
-  The creator traces it to wanting to play something like Simpsons Hit and Run
-  in their own city, and built it with Claude Code on Three.js. The look is
-  photorealistic rather than a made-up map, so the streets may be ones you
-  actually know, and the game supports multiplayer on desktop and phones.
+  You get to pick the city yourself, by sharing your location or typing in a
+  name.
 
 
-  Each round lasts two minutes and is framed as a live broadcast, so the short
-  timer keeps rounds fast and every story you chase is against the clock.
+  It's built in photorealistic 3D from Google's 3D Tiles, so you might end up on
+  streets you actually know. The title screen warns you up front that it works
+  best in big cities, since rural areas may look sparse.
+
+
+  Stories show up as glowing markers on the map, and you steer through the
+  city's streets to get to them. When you're close enough, you hit the spacebar
+  to go live.
+
+
+  Shift fires off a NOS boost that green pickups refill, while the white pickups
+  are health packs.
+
+
+  There's also a scrolling news ticker along the bottom of the menu that suits a
+  game about chasing headlines.
+
+
+  supleezy says the idea came from wanting to play something like Simpsons Hit
+  and Run in their own city. A news van loose in your own neighborhood is a
+  direct answer to that wish. Kevin MacLeod made the music.
 play:
   url: https://localnewshero.com
   embeddable: false
   platforms:
     - browser
     - mobile
+  controls:
+    - "Spacebar: go live when close to a story"
+    - "Shift: NOS boost"
 creator:
   name: supleezy
   handle: supleezy
@@ -51,7 +71,7 @@ media:
     - games/local-news-hero/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-09-29
+  updated: 2026-10-02
 status: live
 provenance:
   foundVia: scout:vibejam-2026

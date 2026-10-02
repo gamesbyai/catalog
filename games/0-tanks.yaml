@@ -3,27 +3,41 @@ title: 0 Tanks
 tagline: Fight through procedural floors in a tank, buying upgrades and beating
   armored bosses.
 description: >-
-  0 Tanks is a roguelite tank shooter played one floor at a time. You drive an
-  armored tank through procedurally generated floors and fight your way down,
-  shooting the enemies in your path as you go. Each run pushes deeper, and when
-  you start over the layout is new.
+  Each run sends your armored tank down through procedurally generated floors,
+  one at a time, shooting whatever gets in the way. It's a roguelite that pushes
+  deeper with every floor, and when you start over, the layout's new. The main
+  menu even keeps a little operator dossier on you, tracking your deepest floor,
+  your high score and how many enemies you've taken out.
 
 
-  The top-down tank combat nods to Battle City, the classic arcade tank game,
-  with the floors drawn in 3D. The creator used Claude Code, and the Vibe Jam
-  2026 entry came 312th of 945.
+  It's a top-down tank shooter that tips its helmet to Battle City, the old
+  arcade classic, except here the floors are drawn in 3D.
+
+
+  You drive with WASD and aim with the mouse while clicking to fire. Shift gives
+  you a boost, and pressing Enter on the menu sends you out.
 
 
   Upgrades carry the progression. You buy them on the way down, and the ones you
-  choose shape the tank, so each run builds toward a different setup. Armored
-  bosses guard the way forward and test whatever build you have put together by
-  then.
+  pick shape the tank, so each run builds toward a different setup. Two
+  currencies, credits and alloy, sit in the corner of the screen, and the Armory
+  gets its own tab next to Intel and Settings.
+
+
+  Armored bosses guard the way forward, and they're where whatever build you've
+  scraped together by then gets tested.
 play:
   url: https://0tanks.com
   embeddable: true
   platforms:
     - browser
     - mobile
+  controls:
+    - "WASD: drive"
+    - "Mouse: aim"
+    - "Click: fire"
+    - "Shift: boost"
+    - "Enter: deploy"
 creator:
   name: Dhin
   handle: zerodhin
@@ -54,7 +68,7 @@ media:
     - games/0-tanks/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-09-29
+  updated: 2026-10-02
 status: live
 provenance:
   foundVia: scout:vibejam-2026

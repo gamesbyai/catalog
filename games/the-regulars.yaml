@@ -2,25 +2,34 @@ slug: the-regulars
 title: THE REGULARS
 tagline: Talk to diner regulars, guess their orders, and spot what doesn't fit.
 description: >-
-  You stand behind the counter at the Last Stop Diner while a handful of
-  regulars sit across from you: Walter, Mrs. Finch and Danny the paperboy among
-  them. Talk to each one and every line you learn raises your familiarity with
-  them.
+  Every line you learn while chatting with a regular at the Last Stop Diner
+  raises how familiar they are to you, and you're the one working the counter.
+
+
+  Across from you sits a handful of regulars, among them Walter, who for some
+  reason needs two newspapers, Mrs. Finch with her secret peppermints and Danny
+  the paperboy.
 
 
   Once you know someone well enough, you try to guess their order before they
-  say it. Then you serve them, fill the counter and record what they tell you in
-  a Memory Notebook. When things start to drift from what you know, you flag
-  whatever doesn't fit. The story has multiple endings.
+  say it. Then you serve them, fill up the counter and jot down their stories in
+  a Memory Notebook. When things start drifting from what you know, it's on you
+  to flag whatever doesn't fit. There's more than one ending to reach.
 
 
-  A separate arcade mode, Refill Rush, runs for 60 seconds. You keep three
-  coffees topped off, build a combo and chase a high score.
+  Refill Rush is a separate arcade mode that sits apart from the story. You
+  get 60 seconds to keep three cups of coffee full while you build a combo.
+  It's pure score-attack, with a high score to chase and nothing else.
 
 
-  Every visual and sound is generated in code on a canvas, with no image or
-  audio files. Each face is built from a seed, so a character looks the same
-  every time you return.
+  Every picture and every sound in the game comes out of code drawn onto a
+  canvas.
+
+
+  The faces, the rainy window, the neon glow and the music are all produced
+  that way, without a single image or audio file behind them. Each face grows
+  out of a seed, so a regular looks the same every time you come back.
+  According to HAFFNERVISION, the game is AI-generated.
 play:
   url: https://granthaffner.itch.io/the-regulars
   embeddable: false
@@ -59,7 +68,7 @@ media:
     - games/the-regulars/shot-2
 dates:
   added: 2026-10-01
-  updated: 2026-10-01
+  updated: 2026-10-02
 status: live
 provenance:
   foundVia: scout:aibgj-3

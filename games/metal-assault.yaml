@@ -3,31 +3,52 @@ title: Metal Assault
 tagline: Run, jump, and shoot through side-scrolling levels in a Metal
   Slug-style action game.
 description: >-
-  The run starts on a desert street at sunset with a red-bandana soldier, a
-  pistol with infinite ammo, ten grenades and three lives. Rifle soldiers walk
-  in from the right, wooden crates sit along the ground, and a bound prisoner
-  calls for help. The screen reads Mission 1 before the shooting begins.
+  A red-bandana soldier starts out on a desert street at sunset with a pistol
+  that never runs dry, ten grenades and three lives, while rifle soldiers march
+  in from the right.
 
 
-  Two modes sit on the main menu. Arcade Mission is a single long mission that
-  ends with General Morden's armored fortress, which enrages below 35% health
-  and, under 60%, loses its armor and fires mortar rains marked by blinking
-  ground spots. Survival is an endless run of arena waves with its own high
-  score.
+  Wooden crates sit along the ground, a tied-up prisoner off to the side shouts
+  for help, and Mission 1 flashes across the screen before the first shot. It's
+  a Metal Slug-style run and gun, and the title screen even spells out the
+  controls in Italian.
 
 
-  Shoot, jump, crouch and aim upward, and a knife strikes automatically at close
-  range. Crates drop weapons, grenades or points. Pickups include a heavy
-  machine gun, spread, rocket and flame shot. Red barrels explode in chains and
-  hurt everyone nearby, so you can lure enemies next to them.
+  You get two modes on the main menu. Arcade Mission is one long stage that ends
+  at General Morden's armored fortress, and that fight has some real thought
+  behind it. Below 60% health the fortress sheds its armor and calls down mortar
+  rain, but blinking spots on the ground warn you where the shells will land,
+  and under 35% it enrages.
 
 
-  Rescuing prisoners earns points and weapon crates. Close-range kills build a
-  score multiplier up to x3, and getting hit breaks the chain. A parked SLUG
-  tank can be boarded by touching it, with 3 armor points, a turret gun and a
-  cannon, and it crushes infantry. Enemies include grenadiers, bazooka troops,
-  turrets, helicopters, tanks and a gunship mini-boss. Controls can be rebound
-  in settings, and high scores are saved in the browser.
+  Survival is the other choice, an endless string of waves in an arena that
+  keeps its own high score.
+
+
+  You can shoot, jump, crouch and aim straight up, and when an enemy gets close
+  your soldier pulls a knife automatically. Smashing crates turns up weapons,
+  grenades or points, with a heavy machine gun, spread shot, rockets and a flame
+  shot among the pickups. Red barrels blow up in chains and hurt everyone
+  nearby, so you can lure enemies over to them.
+
+
+  Freeing prisoners pays out points and weapon crates, while close-range kills
+  push a score multiplier up to x3 until taking a hit breaks the chain.
+
+
+  There's also a parked SLUG tank you board just by touching it. It carries 3
+  armor points, a turret gun and a cannon, and it flattens infantry under its
+  treads. There are plenty of targets for it, with grenadiers, bazooka troops,
+  turrets, helicopters, tanks and a gunship mini-boss in the mix.
+
+
+  Each action gets two rebindable slots in the settings, and high scores stay
+  saved in your browser.
+
+
+  Andrea Vitolo had Claude build the whole game in plain JavaScript, and
+  nothing is loaded from files, since the pixel-art sprites, the level, the
+  sound effects and the music are all generated in code.
 play:
   url: https://m-assault-fable.netlify.app
   embeddable: true
@@ -69,7 +90,7 @@ media:
     - games/metal-assault/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-10-01
+  updated: 2026-10-02
 status: live
 provenance:
   foundVia: scout:github

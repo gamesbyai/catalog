@@ -2,23 +2,35 @@ slug: blizzard-brawl
 title: BLIZZARD BRAWL
 tagline: Build snow defenses and throw gadgets at rivals in a shrinking frozen arena.
 description: >-
-  Move with WASD, aim with the cursor, and click to throw snowballs. You start
-  in a local solo arena against a bot, and the solo round keeps running until
-  you choose to queue for a duel. When matchmaking finds a rival, you can jump
-  into a live 1v1.
+  Move with WASD, aim with your cursor and click to throw snowballs. The game
+  drops you straight into a local solo arena against a bot, and that round keeps
+  going until you decide to queue for a duel.
 
 
-  The controls panel lists three build keys: 1 for a wall, 2 for a turret, and 3
-  for a heater. Left click throws a snowball or places the selected item, and
-  Escape or right click cancels. The creator describes the duel as building
-  defenses, deploying gadgets, and outplaying rivals as the frozen arena
-  shrinks.
+  When matchmaking finds a rival, you can jump into a live 1v1. seanDDari
+  describes those duels as building defenses, deploying gadgets and outplaying
+  the other player while the frozen arena shrinks around you.
 
 
-  The arena is a round sheet of ice seen from an angled overhead view, with
-  snow-covered rocks and pine trees scattered across it. A round ends on a
-  result screen, such as Defeat by elimination, with buttons to restart the
-  round or queue for a duel.
+  The on-screen controls panel lists three build keys, 1 for a wall, 2 for a
+  turret and 3 for a heater. Left click throws a snowball, but it places your
+  selected item instead when you've picked one. If you change your mind,
+  Escape or right click cancels it.
+
+
+  Every fight happens on a round sheet of ice under an angled overhead camera.
+
+
+  Snow-capped rocks and pine trees are scattered across it. The little blocky
+  fighters look a bit like they wandered out of a toy box.
+
+
+  When a round ends, a result screen such as a defeat by elimination lets you
+  restart the round or queue for a duel.
+
+
+  seanDDari made it after reading an article about levelsio earning money from a
+  game he'd built in just three hours.
 play:
   url: https://jenemia.github.io/SnowBattle
   embeddable: true

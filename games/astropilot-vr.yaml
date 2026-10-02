@@ -2,20 +2,31 @@ slug: astropilot-vr
 title: Astropilot VR
 tagline: Race through space in a phone-based VR view that responds to how you move
 description: >-
-  Astropilot VR has you steer a spaceship by moving your phone, held in
-  landscape mode, with the view set up as a 3D VR scene. The goal is to fly
-  through as many rings as you can. Miss a ring and the game is over.
+  Astropilot VR has you steer a spaceship by moving your phone around, held
+  sideways in landscape mode, while the screen lays the flight out as a 3D VR
+  scene. Getting that out of a phone browser is a neat trick.
 
 
-  The start screen offers a tutorial and three difficulty buttons: easy, medium
-  and hard. The game needs motion sensor permission and works on iOS and on
-  Chrome for Android. On a desktop, the page shows a QR code that opens the game
-  on your phone.
+  The goal couldn't be much simpler. You fly through as many rings as you can.
+  Miss even one, though, and the game is over.
 
 
-  The backdrop is a neon space scene with a striped orange planet and large
-  purple and teal rings drifting past. The creator built it to test whether
-  phone browser APIs could produce an immersive, VR-like experience.
+  Before you launch, you can run through a tutorial or go straight to easy,
+  medium or hard.
+
+
+  The game needs permission to use your phone's motion sensors. It works on iOS
+  and on Chrome for Android. Open it on a desktop and you get a QR code that
+  sends the game to your phone instead.
+
+
+  Behind the menus sits a neon space scene with a striped orange planet and big
+  purple and teal rings drifting past.
+
+
+  mike_kasberg built it to find out whether phone browser APIs could pull off an
+  immersive, VR-like experience. It started as a proof of concept and came out
+  better than mike_kasberg had imagined. More features are planned.
 play:
   url: https://astropilot.mikekasberg.com
   embeddable: true
@@ -52,7 +63,7 @@ media:
     - games/astropilot-vr/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-10-01
+  updated: 2026-10-02
 status: live
 provenance:
   foundVia: scout:vibejam-2026

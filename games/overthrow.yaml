@@ -3,25 +3,45 @@ title: Overthrow
 tagline: Battle other players in a physics-driven king of the hill arena to hold
   the top score.
 description: >-
-  Overthrow is king of the hill with physics. You fight other players in an
-  arena to take the top spot and hold it, knocking rivals around while defending
-  your position, and the player with the highest score comes out ahead.
+  You're a little round player on a crowded hill, and staying near the peak is
+  how you earn points. Everyone else in the arena wants that same spot, so it
+  turns into a physics-driven king of the hill where you bump rivals off while
+  guarding the ground you've taken.
 
 
-  The creator drew on Super Mario Party and aimed for a similar charming feel,
-  so the tone is casual and whimsical rather than grim. Using Cursor and
-  Three.js, they turned an idea they had carried for a while into a finished
-  Vibe Jam 2026 game, and it plays on phones as well as desktop.
+  Your main tool is a boost on Space, and the game is refreshingly blunt that
+  it's there for shoving other players off the slope. Powerups are scattered
+  around to give you an edge.
 
 
-  The action is fast, with a bit of strategy on top: the question in every round
-  is when to hold your ground and when to push the challengers out of the way.
+  The action is fast, with a bit of strategy on top, because every round keeps
+  asking when to dig in at the top and when to push the challengers out of your
+  way. Each round runs on a clock, and whoever leads the scoreboard when it runs
+  out comes out ahead.
+
+
+  When someone gets knocked from the top, a banner announces they've been
+  overthrown, a nice payoff for the title.
+
+
+  The hill itself changes between rounds, from the grassy green mound of Bliss
+  to the dusty red slopes of Olympus, and the corner of the screen tells you
+  which map is up next.
+
+
+  forkexecwait had carried the idea around for a while before turning it into a
+  finished game. They drew on Super Mario Party and went for a similar charming
+  feel, casual and whimsical rather than grim.
 play:
   url: https://overthrow.gg
   embeddable: true
   platforms:
     - browser
     - mobile
+  controls:
+    - "WASD / arrows: move"
+    - "Space: boost to knock others off"
+    - "Click: focus mouse and look around"
 creator:
   name: forkexecwait
   handle: forkexecwait
@@ -50,7 +70,7 @@ media:
     - games/overthrow/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-09-29
+  updated: 2026-10-02
 status: live
 provenance:
   foundVia: scout:vibejam-2026

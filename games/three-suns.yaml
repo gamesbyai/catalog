@@ -2,21 +2,40 @@ slug: three-suns
 title: Three Suns
 tagline: Place gravity anchors to keep a world alive under three unpredictable suns.
 description: >-
-  Three Suns is a physics survival game that puts you in charge of the last
-  living world in a chaotic three-sun system. You place gravity anchors to steer
-  the planet's path and switch between survival modes as conditions change,
-  trying to last through one punishing dawn after another.
+  Three Suns hands you the last living world in a system where three suns tug
+  every which way, and this physics survival game has you protect it by dropping
+  gravity anchors with a click or tap.
+
+
+  Each anchor bends the planet's path, but a signal limit caps how many you can
+  place. With no stable orbit to rely on, staying alive comes down to watching
+  how the suns drag at the planet and answering with anchors placed at the right
+  moment.
+
+
+  Touching a sun ends things on the spot, while the auras around them chip
+  away at your health. A health bar and a day counter sit in the corner,
+  keeping a blunt tally of how many punishing dawns you've lasted against your
+  best.
+
+
+  Survival modes are there to help you adapt as conditions shift, and you swap
+  between Shield, Sleep and Observe on three numbered buttons.
+
+
+  Shield, for example, toughens the planet against a red sun's heat aura, though
+  that protection has a price, since the risk from cold and chaos goes up. Space
+  triggers a focus ability that slows time, and there's a considerate
+  low-effects toggle on P too.
+
+
+  A quick survival lesson greets you at the start, and it's even kind enough to
+  offer a skip button.
 
 
   The setup draws on the three-body problem from orbital mechanics and on Liu
-  Cixin's novel The Three-Body Problem, though the story, mechanics, and world
-  are the creator's own. ChatGPT and Three.js were the tools behind it, and it
-  finished 217th of 945 in Vibe Jam 2026. Phones are supported too.
-
-
-  There is no steady orbit to settle into. Survival depends on reading how the
-  suns pull on the planet and answering with well-timed anchor placement, dawn
-  after dawn.
+  Cixin's novel of the same name, though the story, the mechanics and the world
+  are all Danil38138190's own.
 play:
   url: https://threesuns.xyz
   embeddable: true
@@ -53,7 +72,7 @@ media:
     - games/three-suns/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-09-29
+  updated: 2026-10-02
 status: live
 provenance:
   foundVia: scout:vibejam-2026

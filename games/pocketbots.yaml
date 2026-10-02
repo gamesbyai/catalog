@@ -2,21 +2,34 @@ slug: pocketbots
 title: PocketBots
 tagline: Assemble a toy battle robot from scavenged parts and fight arena duels.
 description: >-
-  Choose a unit in the hangar, or press Build-a-Bot to put together a new one
-  from salvaged pieces. Then deploy it into short arena duels. Each limb adds to
-  the loadout, and winning a fight earns an upgrade for the next.
+  Pick a robot in the hangar, or hit Build-a-Bot to put a new one together out
+  of salvaged parts.
 
 
-  The built-in Base Unit shows how a loadout reads. Its head has a scan pulse,
-  its torso is a core, and its legs give a boost dash. Left mouse fires a
-  revolver and right mouse fires a repeater. The panel also lists core mass,
-  height, detailing and optics.
+  Then you send it into short duels in an arena. Every limb you bolt on adds
+  something to your loadout. Win a fight and you earn an upgrade to carry into
+  the next one.
 
 
-  To play against others, host a 1v1 and share the room code, or enter a
-  friend's code and join. An Open Circuit Battles button leads to open matches.
-  A portal in the hangar exits to the jam hub. The creator wanted a Western
-  counterpart to Medabots Dual and Girls Mission.
+  The built-in Base Unit gives you a clear picture of how a loadout reads. Its
+  head carries a scan pulse, its torso holds a core and its legs give you a
+  boost dash.
+
+
+  Left mouse fires a revolver, while right mouse handles a repeater.
+
+
+  Its stat panel lists core mass, height, detailing and optics.
+
+
+  If you'd rather fight people, you can host a 1v1 and pass the room code along,
+  or type in a friend's code and join theirs. There's also an Open Circuit
+  Battles button that takes you to open matches, plus a glowing exit portal in
+  the hangar.
+
+
+  circa90x set out to make a Western take on Medabots Dual and Girls Mission.
+  They wanted one you could play without a Japanese translator.
 play:
   url: https://pokebots-vibejamv.netlify.app
   embeddable: true

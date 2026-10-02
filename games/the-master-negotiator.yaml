@@ -2,32 +2,39 @@ slug: the-master-negotiator
 title: The Master Negotiator
 tagline: Haggle with AI characters who remember past deals, buying low and selling high.
 description: >-
-  A retro CRT monitor frames the screen. One screen asks "What do they call
-  you?" and takes a name or alias that is shown on your profile. Another is a
-  demo-mode tutorial hosted by Victor Hale, an arrogant CEO character in a
-  monogrammed hoodie.
+  A chunky retro CRT monitor frames everything, and one of its screens asks what
+  they should call you, taking a name or alias that shows up on your profile.
 
 
-  The tutorial is split into four chapters and runs on the actual game
-  interface. Victor invites you to click the action buttons, starting with "Show
-  me the buy flow", and explains what each one does. A back button lets you
-  retry a step, and a separate option skips the tutorial.
+  Another screen belongs to Victor Hale, an arrogant CEO in a monogrammed
+  hoodie, who hosts a demo-mode tutorial split into four chapters. It's
+  hands-on because it runs on the actual game interface, and Victor invites
+  you to click the action buttons, starting with "Show me the buy flow", while
+  he explains each one. A back button lets you retry a step, and if his
+  smugness wears thin there's a separate option to skip the tutorial.
 
 
-  The game itself is haggling: buy low, sell high, and talk your way to a better
-  price against AI-driven characters. Those characters remember how you treated
-  them in earlier deals. A voice mode lets you speak during negotiations, and
-  multiplayer adds PvP betrayal contracts.
+  The game itself is haggling, where you buy low, sell high and talk your way
+  into better prices against AI-driven characters. Those characters remember how
+  you treated them in earlier deals, so the trader you fleeced last time hasn't
+  forgotten about it.
 
 
-  The creator built it to gamify negotiation, so that people who find social
-  situations hard can practice the skill before facing a real deal.
+  A voice mode lets you speak your side out loud during negotiations, while
+  multiplayer brings in PvP betrayal contracts, which fits a cast that holds
+  grudges.
+
+
+  prathampunmiya built it to turn negotiation into a game, so people who find
+  social situations hard can practice the skill before facing a real deal.
 play:
   url: https://the-master-negotiator.vercel.app
   embeddable: true
   platforms:
     - browser
     - mobile
+  controls:
+    - "Mouse: click action buttons"
 creator:
   name: prathampunmiya
   handle: prathampunmiya

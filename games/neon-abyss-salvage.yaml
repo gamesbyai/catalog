@@ -3,29 +3,42 @@ title: Neon Abyss Salvage
 tagline: Dive through dark seas, ping for treasure, and surface before your
   oxygen runs out.
 description: >-
-  You pilot a salvage sub through dark water, collecting treasure while your
-  oxygen drains. Every second and every boost uses air, so you refill at O₂
-  stations or surface empty-handed. Each zone hides at least three treasures,
-  and a zone takes 3 to 6 minutes.
+  You're piloting a salvage sub through lightless water, grabbing treasure while
+  your oxygen tank runs down. Every second costs air and so does every boost, so
+  you either reach an O₂ station to refill or surface with nothing to show for
+  the trip. There are at least three treasures tucked into every zone, and
+  getting through one takes 3 to 6 minutes.
 
 
-  Sonar pings mark treasure, mines and larger creatures on your radar. Mines
-  chain-explode, so you can fire torpedoes to detonate a minefield from a
-  distance, or drop a holo decoy to lure a boss into one. Only mines can truly
-  hurt the bosses.
+  Your sonar does the seeing for you, since each ping marks treasure, mines and
+  larger creatures on the radar. Mines chain-explode, so you can fire torpedoes
+  to set off a minefield from a distance.
 
 
-  Salvaged parts buy upgrades during a run: O₂ tanks, hull armor, engines,
-  sonar, and torpedo and decoy bays. Seven biomes include jellyfish forests,
-  shipwreck graveyards, lava rifts and whale falls, with currents and seafloor
-  storms. Bosses appear from Zone 3: the Leviathan, the Kraken, the Sentinel and
-  Erebus.
+  Salvaged parts are pretty much your currency during a run, buying engines,
+  hull armor, bigger O₂ tanks, better sonar, and bays for torpedoes and decoys.
 
 
-  Defeat Erebus and extract to get a final rank, then keep descending in endless
-  mode. A full clear takes 30 to 60 minutes. A virtual joystick and buttons
-  support touch play in portrait or landscape, and the interface switches
-  between English and Chinese.
+  From Zone 3 on, you'll run into bosses, namely the Kraken, the Leviathan,
+  the Sentinel and finally Erebus, who gets the grand title Lord of the Abyss.
+  Nothing but mines does them any real damage. Given that rule, you drop the
+  holo decoy to lure a boss straight into a minefield.
+
+
+  There's a surprising amount of seafloor to cover, with seven biomes like whale
+  falls, lava rifts, shipwreck graveyards and jellyfish forests, plus currents
+  and seafloor storms.
+
+
+  Beat Erebus and extract to earn a final rank, after which endless mode lets
+  you keep descending as deep as you can go. A full clear takes 30 to 60
+  minutes.
+
+
+  On a touchscreen there's a virtual joystick with buttons, and it works in
+  portrait or landscape. The interface switches between English and Chinese, and
+  the title menu thoughtfully includes a Reduce Motion toggle next to sound and
+  music.
 play:
   url: https://patrickstar-gogogo.itch.io/neon-abyss-salvage
   embeddable: false
@@ -66,7 +79,7 @@ media:
     - games/neon-abyss-salvage/shot-2
 dates:
   added: 2026-09-30
-  updated: 2026-10-01
+  updated: 2026-10-02
 status: live
 provenance:
   foundVia: scout:aibgj-4

@@ -3,25 +3,36 @@ title: The Princess and the Mech
 tagline: Click through an underground complex to wake an ancient mech and stop a
   cyber dragon.
 description: >-
-  You play a princess who has to rescue both herself and her kingdom from a
-  cyber dragon. It is a point-and-click adventure: you track down an ancient
-  mech, then work your way through an underground complex to charge it up.
+  As a princess, you have to save yourself and your whole kingdom from a cyber
+  dragon, and an ancient mech is part of the plan. First you track the thing
+  down. Then you work your way through an underground complex to get it
+  charged back up.
 
 
-  The game uses only the mouse. Left click walks to a spot or uses an item,
-  right click examines what is under the cursor, and the mouse wheel opens and
-  closes the inventory.
+  It's a classic point-and-click adventure, and everything happens with the
+  mouse. Left click walks you somewhere or uses an item, right click looks at
+  whatever's under the cursor, and the scroll wheel opens and closes the
+  inventory.
 
 
-  The visuals are still images and animated clips, and characters have spoken
-  voice lines. The music is by Loyzbeats. The creator took inspiration from Neon
-  Genesis Evangelion, and Stellar Blade informed the character concept art.
+  One bedroom scene is a funny clash of fairy tale and bunker, with an ornate
+  mirror, bookshelves and a tufted bed sitting under neon tubes beside a riveted
+  metal door with a keypad.
 
 
-  According to the creator, most of the work used locally run open-weight
-  models, with Google AI handling story and code. Images came from Krea 2 with a
-  self-trained style LoRA, animation from Wan 2.2, and voices from a TTS model.
-  The only sound effect, a moving plate, came from a video model.
+  Scenes are built from still images and animated clips, and the characters
+  speak their lines out loud. Loyzbeats made the music.
+
+
+  morozig took inspiration from Neon Genesis Evangelion, while Stellar Blade fed
+  into the character concept art.
+
+
+  According to the creator, most of it came from open-weight models run locally,
+  with Google AI handling the story and code. Krea 2 and a self-trained style
+  LoRA made the images, Flux Klein handled edits, Wan 2.2 did the animation and
+  a TTS model voiced the lines. They also say the game's only sound effect, a
+  moving plate, came out of a video model of all things.
 play:
   url: https://morozig.itch.io/princess-and-mech
   embeddable: false
@@ -60,7 +71,7 @@ media:
     - games/the-princess-and-the-mech/shot-2
 dates:
   added: 2026-10-01
-  updated: 2026-10-01
+  updated: 2026-10-02
 status: live
 provenance:
   foundVia: scout:aibgj-4

@@ -2,20 +2,39 @@ slug: zombow
 title: Zombow
 tagline: Shoot arrows at an endless zombie horde and keep moving to survive.
 description: >-
-  Zombow is a browser-based 3D archery survival game. Zombies spawn without end,
-  and the only weapon is a bow. A run comes down to staying alive: you move
-  around the arena, line up shots, and thin out the horde before it closes in.
+  You're a hooded archer in a low-poly stretch of acacia trees and banana palms,
+  and the zombies just keep spawning. The bow is your only weapon, and a run
+  comes down to staying alive while you move around the arena, line up shots and
+  thin out the horde before it closes in.
 
 
-  The game leans on atmosphere. Thick fog limits how far you can see, and
-  spatial audio helps place threats around you, so the tension comes as much
-  from what you can't see as from the zombies on screen. The pacing takes cues
-  from classic arcade survival shooters, with quick, high-pressure rounds.
+  So it's 3D archery survival with nothing but a bow against an endless horde,
+  though at least you can jump.
 
 
-  The creator built it with Cursor and Three.js, describing the process as vibe
-  coding. The audio is described as AI-generated, and the stated goal was a
-  frightening horde experience that runs entirely in the browser.
+  Thick fog cuts down how far you can see, and that's where the spatial audio
+  earns its place, because it helps you work out where threats are coming
+  from. A lot of the dread is meant to come from whatever's out in the haze,
+  not just from the zombies you can see. You start under a bright blue sky,
+  with bananas hanging off a tree nearby.
+
+
+  A wave number sits at the top of the screen, while your kill count stays in
+  the corner and your health bar starts at 100.
+
+
+  The pacing borrows from classic arcade survival shooters, with rounds that are
+  quick and high-pressure.
+
+
+  The controls are printed along the bottom of the screen, a kind touch when
+  you're about to be swarmed. Scrolling zooms the camera in and out behind your
+  archer.
+
+
+  It was built through what sandman_sh calls vibe coding, and the audio is
+  described as AI-generated. The stated goal was a frightening horde experience
+  that runs entirely in the browser.
 play:
   url: https://zombow-game.vercel.app
   embeddable: true
@@ -50,7 +69,7 @@ media:
     - games/zombow/shot-2
 dates:
   added: 2026-10-01
-  updated: 2026-10-01
+  updated: 2026-10-02
 status: live
 provenance:
   foundVia: scout:vibejam-2026

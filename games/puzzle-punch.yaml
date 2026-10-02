@@ -2,27 +2,48 @@ slug: puzzle-punch
 title: Puzzle-Punch
 tagline: Stack falling blocks in a 1v1 duel and use abilities to sabotage your rival.
 description: >-
-  Puzzle-Punch turns falling-block puzzles into a one-on-one duel. Two players
-  clear lines in their own wells and race to outscore each other over the course
-  of a match, which pushes you to stack cleanly and act quickly while your rival
-  does the same.
+  Puzzle-Punch has you stacking falling blocks and clearing lines in your own
+  well while another player works theirs. You're both racing to post the
+  bigger score by the end of the match. It's Tetris turned into a straight
+  one-on-one fight, and the name fits it well.
 
 
-  According to the creator, the team set out to combine a competitive game with
-  a puzzle game, using Tetris as the starting point, and they worked in Claude
-  Code for Vibe Jam 2026. It is an online game, played in the browser, and it
-  placed 397th of 945.
+  On top of the familiar stacking, there are abilities the game calls spells.
+  Some of them get in your opponent's way and others help you push your own
+  score higher, so each match mixes clean stacking with choosing when to strike
+  at the other player and when to boost yourself instead.
 
 
-  Abilities sit on top of the classic formula. Some hinder your opponent and
-  others help you build a higher score, so each match mixes stacking skill with
-  decisions about when to strike at the other player and when to boost yourself
-  instead.
+  The spells even get their own how-to-play page on the menu, and a game built
+  around them needs one.
+
+
+  You don't need a live rival to get going, since there's a practice mode and a
+  match against a bot. When you want a real person across from you, you can
+  search for a game or send an invite to a friend. You type in a name before any
+  of it.
+
+
+  The keys sit in small print right on the menu, with arrows to move, Up or X
+  and Z to rotate each way, Space to hard drop, C or Shift to hold, and Esc to
+  return to the lobby.
+
+
+  El_Perforator's team wanted a game that was both competitive and a puzzle,
+  according to the creator. They picked Tetris as the classic to start from and
+  added their own twists to make it a duel.
 play:
   url: https://puzzle-punch.com
   embeddable: true
   platforms:
     - browser
+  controls:
+    - "Arrow keys: move"
+    - "Up / X: rotate clockwise"
+    - "Z: rotate counterclockwise"
+    - "Space: hard drop"
+    - "C / Shift: hold"
+    - "Esc: return to lobby"
 creator:
   name: El_Perforator
   handle: el-perforator
@@ -52,7 +73,7 @@ media:
     - games/puzzle-punch/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-09-29
+  updated: 2026-10-02
 status: live
 provenance:
   foundVia: scout:vibejam-2026

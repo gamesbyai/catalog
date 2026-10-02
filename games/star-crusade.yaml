@@ -2,21 +2,34 @@ slug: star-crusade
 title: Star Crusade
 tagline: Shoot waves of alien ships in a retro space arcade battle.
 description: >-
-  A small white ship sits at the bottom of a black starfield, with pixel-art
-  aliens in pink, green, purple, magenta and tan spread across the screen above
-  it. The top-left corner shows a Score, a Record and a heart counter that reads
-  2 at the start.
+  When it loads, a tiny white ship waits at the bottom of a black starfield.
+  Pixel-art aliens in pink, green, purple, magenta and tan are spread across the
+  space above it. Score and Record sit in the top-left corner, with a heart
+  counter under them that starts at 2.
 
 
-  You slide the ship along the bottom with the arrow keys, fire with Space and
-  set off a bomb with B. It is a retro arcade shooter in the Galaga mold, played
-  on a single canvas, with the Score and Record readouts shown above the action.
+  You slide the ship along the bottom with the arrow keys and shoot with Space,
+  while a bomb waits on the B key as well.
 
 
-  Three buttons under the canvas toggle sound, restart the run and pause it,
-  each tied to its own key. The README frames you as a starship captain
-  defending the galaxy against an ancient threat. The creator wrote it in plain
-  JavaScript, pair-programming with ChatGPT and Copilot.
+  It's a retro arcade shooter that wears its Galaga roots openly, and the whole
+  thing plays out on a single canvas. Your best Record stays right beside the
+  current Score the entire time.
+
+
+  Under the canvas you'll find three buttons for turning sound on or off,
+  restarting the run and pausing it. Each one has its own key too, S, R and P,
+  and it's a kind touch when your hands never have to leave the keyboard. The
+  movement, fire and bomb keys are printed there as well, each with a little
+  icon.
+
+
+  The README pitches all this as a grand space epic, casting you as a starship
+  captain saving the galaxy from an ancient evil.
+
+
+  markets wrote it in plain JavaScript, pair-programming with ChatGPT and
+  Copilot. You can also clone the repo and run it locally with npm.
 play:
   url: https://star-crusade.netlify.app
   embeddable: true
@@ -57,7 +70,7 @@ media:
     - games/star-crusade/shot-2
 dates:
   added: 2026-09-30
-  updated: 2026-10-01
+  updated: 2026-10-02
 status: live
 provenance:
   foundVia: scout:github

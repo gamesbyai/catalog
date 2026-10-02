@@ -2,21 +2,34 @@ slug: swingers
 title: Swingers
 tagline: Swing with friends to rack up the most damage to city infrastructure.
 description: >-
-  Hold left click, or Space, while aiming at a building wall to grapple onto it
-  and swing through the city. Right click performs an air dash. The goal is to
-  rack up the most dollars in property damage, shown as a running total at the
-  top center of the screen.
+  Hold left click or Space while you're aiming at a building wall, and you'll
+  grapple onto it and swing off through the city.
 
 
-  The city is a field of tall blue towers with billboards on the rooftops and
-  green rings floating between them. A Getting Started checklist lists five
-  tasks: grapple onto a building, air dash, fly through a green speed ring,
-  smash into a billboard, and destroy part of a building.
+  Your goal is to rack up the most dollars in property damage. The bill climbs
+  in a running total at the top center of the screen, where it's hard to miss.
+  _offmylawn's idea is that you swing with your friends to see who causes more
+  damage to critical infrastructure.
 
 
-  A speed readout in meters per second sits above the crosshair, and a timer
-  sits in the top left corner. The start menu shows a global leaderboard ranked
-  by damage total. Hints and audio can each be toggled from the start menu.
+  Right click does an air dash. The city itself is a whole field of tall blue
+  towers, with billboards perched on the rooftops and green rings floating in
+  the gaps.
+
+
+  A Getting Started checklist eases you in with five jobs to tick off, asking
+  you to grapple onto a building, air dash, fly through a green speed ring,
+  smash into a billboard and destroy part of a building.
+
+
+  There's a speed readout in meters per second sitting just above the crosshair,
+  a nice touch for a game built on momentum. A timer sits in the top left
+  corner. Back on the start menu, a global leaderboard ranks everyone by their
+  damage total.
+
+
+  _offmylawn made it, and they say they simply love swinging and insurance
+  fraud. Hints and audio can each be switched on or off from the start menu.
 play:
   url: https://swing.offmylawn.com
   embeddable: true
@@ -57,7 +70,7 @@ media:
     - games/swingers/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-10-01
+  updated: 2026-10-02
 status: live
 provenance:
   foundVia: scout:vibejam-2026

@@ -2,26 +2,38 @@ slug: dungeon-league
 title: Dungeon League
 tagline: Run a dungeon for sixty seconds and keep adventurers alive but nearly dead
 description: >-
-  Each raid lasts sixty seconds, and you score by keeping the adventuring party
-  alive. You open doors, spawn monsters and fire traps, but a party that dies
-  pays nothing, and neither does one that leaves early. Money comes from a party
-  still inside, in combat and badly wounded when the clock stops.
+  You score by keeping the adventurers alive, even though you're playing the
+  dungeon they've come to raid. A dead party pays you nothing, and neither
+  does one that walks out early. Your money comes from a group that's still
+  inside, still fighting and badly hurt when the sixty-second raid timer runs
+  out.
 
 
-  Once monsters are out, you can't recall them. Your one form of mercy is a
-  door: open it behind a losing party so they can retreat, heal and return. The
-  best result is a raid where the healer runs out of mana and nobody quite dies.
+  You've got three ways to meddle with them, opening a door, spawning a monster
+  or firing a trap, and each one takes a single click or tap. The on-screen
+  hints tell you to tap a door to stall, a spawner to ambush and a trap to
+  wound.
 
 
-  Between raids you spend the earnings on another hall, a slime pit or a chest
-  to tempt the greedy. Then the league standings update and the bottom two
-  dungeons are destroyed. You start among twenty dungeons and play ten rounds,
-  aiming to be the last one standing.
+  Once your monsters are out you can't call them back, and your one form of
+  mercy is a door, which you open behind a losing party so they can retreat,
+  heal and return.
 
 
-  On the creator's account, the code and architecture were written by AI, while
-  they handled game design and balancing. The project has a test suite of 445
-  tests and a decisions log.
+  By the game's own twisted logic, the perfect raid ends with the healer out of
+  mana and nobody quite dead. Between raids you spend your earnings on another
+  hall, a slime pit or a chest to tempt the greedy ones. Then the league
+  standings update, and the bottom two dungeons get destroyed.
+
+
+  It's a ruthless little league, with a whole twenty dungeons at the start and
+  ten rounds to end up as the last one standing.
+
+
+  norritt42 handled the game design and balancing, while according to them the
+  code and architecture were written by AI. The project comes with a test suite
+  of 445 tests and a decisions log where each design call is dated and
+  explained.
 play:
   url: https://norritt42.itch.io/dungeon-league
   embeddable: false
@@ -60,7 +72,7 @@ media:
     - games/dungeon-league/shot-2
 dates:
   added: 2026-10-01
-  updated: 2026-10-01
+  updated: 2026-10-02
 status: live
 provenance:
   foundVia: scout:aibgj-4

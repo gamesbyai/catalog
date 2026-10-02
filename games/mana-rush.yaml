@@ -2,24 +2,40 @@ slug: mana-rush
 title: Mana Rush
 tagline: Fly a broom through collapsing crystal caves before your mana runs out.
 description: >-
-  Steer a broom with WASD or the arrow keys and move the camera with the mouse.
-  Fly from seal to seal through a procedural crystal cavern, skim past hazards,
-  and break through the final portal before your mana runs out.
+  You're a witch on a borrowed broom, racing through a crystal cavern that's
+  falling apart around you. You fly from seal to seal, skim past hazards and
+  break through a final portal before your magic gives out. The cavern is
+  procedurally generated, and the one on screen asks you to light four seals
+  along the way.
 
 
-  Mana drains as you fly and boost, so each run is a trade between speed and
-  charge. Crystals restore mana, and sanctuaries refill it and anchor your
-  progress. Branching routes, boost gates, and pickups fill the caves.
+  Mana works as your clock, because flying, boosting and crashing all burn
+  through it, so each run becomes a trade between speed and charge. Crystals top
+  it back up, while sanctuaries refill it and anchor your progress.
 
 
-  Runs are timed, with medals, personal bests, splits, and stats for collisions,
-  top speed, and boost time. Finishing a depth sends you into a harder cave and
-  earns Crystal Charge, which pays for permanent upgrades and unlockable hats
-  and brooms with different stat tradeoffs.
+  The caves split into branching routes, and alongside the hazards you'll find
+  boost gates and pickups scattered through them.
 
 
-  Gamepad play is supported. The creator credits Codex for programming, GPT
-  Image 2 for 2D images, Meshy for 3D models, and Suno for music.
+  Every run is timed, with medals, personal bests and splits to chase. It also
+  keeps track of your collisions, respawns, top speed and how long you spent
+  boosting. Finishing a depth sends you into a harder cave and earns you
+  Crystal Charge.
+
+
+  That Crystal Charge pays for permanent upgrades, along with unlockable hats
+  and brooms that each come with their own stat tradeoffs, so even the witch's
+  hat counts as gear.
+
+
+  You steer with WASD or the arrow keys and move the camera with the mouse.
+  Space or E climbs, Q drops you lower and Left Shift boosts, and a gamepad
+  works too.
+
+
+  netravelr credits Codex for the programming, GPT Image 2 for the 2D images,
+  Meshy for the 3D models and Suno for the music.
 play:
   url: https://netravelr.itch.io/mana-rush
   embeddable: false
@@ -63,7 +79,7 @@ media:
     - games/mana-rush/shot-2
 dates:
   added: 2026-10-01
-  updated: 2026-10-01
+  updated: 2026-10-02
 status: live
 provenance:
   foundVia: scout:aibgj-4

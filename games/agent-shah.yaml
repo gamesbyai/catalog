@@ -3,28 +3,33 @@ title: Agent Shah
 tagline: Sneak through a warehouse, shoot hostiles, and decrypt a developer's
   career dossier.
 description: >-
-  The game opens in a dark 3D corridor labeled Sector 01, Briefing Room. A
-  suited agent is seen from above and behind, standing on a road lined with
-  glowing dashes. A neon AS logo hangs on a panel at the far end. The HUD shows
-  a health bar, the current weapon with its ammo count (pistol, 6/6), and a
-  target counter that starts at 3.
+  A suited agent stands on a dark road lined with glowing dashes, seen from
+  above and behind, while a neon AS logo glows on a panel at the far end of a
+  corridor labeled Sector 01, Briefing Room.
 
 
-  You move through a warehouse and take down hostile agents from a top-down
-  view. Four weapons are available: a pistol, a machine gun, a pencil and bare
-  fists. Number keys switch between them, a separate pair of keys throws
-  punches, and F triggers stealth. Shooting works from the mouse or the space
-  bar.
+  The HUD shows a health bar, your current weapon with its ammo (a pistol at 6
+  of 6) and a target counter that starts at 3. There's a music button up in the
+  corner too, and the M key does the same job.
 
 
-  The level doubles as the creator's developer portfolio. Besides the combat,
-  the mission includes decrypting a career dossier, so the résumé content is
-  part of the play instead of a static page. A music button in the corner, also
-  bound to M, controls the soundtrack.
+  You make your way through a warehouse from that top-down view, taking down
+  hostile agents as you go. Your arsenal has four options, a pistol, a machine
+  gun, a pencil and your bare fists, with the pencil sitting at home next to
+  the guns. You can shoot with the mouse or the space bar.
 
 
-  The creator cited Bruno Simon's interactive portfolio and Hotline Miami's
-  top-down combat as influences, with a Mission Impossible look.
+  Number keys switch between the four weapons, V and B throw punches, and F
+  slips you into stealth.
+
+
+  The whole level is secretly the creator's developer portfolio. Besides the
+  fighting, the mission has you decrypt a career dossier. So the résumé turns
+  into something you play through instead of a static page you scroll past.
+
+
+  fahaddoc600 named Bruno Simon's interactive portfolio and Hotline Miami's
+  top-down combat as influences, all wrapped in a Mission Impossible look.
 play:
   url: https://agentshah.shahfahad.dev
   embeddable: true

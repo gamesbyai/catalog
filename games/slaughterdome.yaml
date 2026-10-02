@@ -2,22 +2,35 @@ slug: slaughterdome
 title: SlaughterDome
 tagline: Survive enemy waves in a shrinking dome, building walls and capturing flags.
 description: >-
-  You fight waves of enemies inside an arena dome that shrinks with every wave.
-  Trees block both movement and bullets, so they work as cover. From wave 5,
-  toxic water pools appear and cut off escape routes, which leaves less room to
-  retreat as the dome closes in.
+  You're trapped inside an arena dome, fighting off waves of enemies while the
+  dome pulls in tighter after every wave. Trees stop both your movement and
+  bullets, so they work as cover. Even the scenery pulls its weight here.
 
 
-  You place walls to funnel enemies into narrow paths. Building combos unlocks
-  rare upgrades. Quake-style flag capture objectives sit alongside the survival
-  waves, so you have a goal to chase beyond staying alive.
+  Starting at wave 5, toxic water pools cut off escape routes, leaving you less
+  room to back away as the dome closes.
 
 
-  Up to three fighters can team up in co-op. The title screen sets the game in
-  2089 and shows an armored, red-eyed warrior standing before a crowd of small,
-  colorful monsters. The creator combined the shrinking circle of battle royale
-  games, wall building from Fortnite, Roblox and Minecraft, and capture-the-flag
-  from Quake.
+  You get to place walls yourself, and their job is to herd enemies into narrow
+  paths. Chain together combos and you'll unlock rare upgrades.
+
+
+  Staying alive isn't the whole job, though. Quake-style flag capture objectives
+  run right alongside the survival waves, giving you something to chase besides
+  the next wave.
+
+
+  Up to three fighters can team up in co-op and take on the dome together.
+
+
+  The title screen sets it all in 2089 and puts an armored, red-eyed warrior in
+  front of a crowd of small, colorful monsters that look far cuddlier than the
+  name SlaughterDome suggests.
+
+
+  3xhuman built it by mixing three ideas from other games. The shrinking circle
+  comes from battle royale games, the wall building from Fortnite, Roblox and
+  Minecraft, and capture-the-flag from Quake.
 play:
   url: https://slaughterdome.vercel.app
   embeddable: true
@@ -54,7 +67,7 @@ media:
     - games/slaughterdome/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-10-01
+  updated: 2026-10-02
 status: live
 provenance:
   foundVia: scout:vibejam-2026

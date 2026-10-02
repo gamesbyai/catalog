@@ -2,25 +2,37 @@ slug: save-the-laddoo
 title: Save The Laddoo
 tagline: Defend a single laddoo on the table from waves of ants at Nani's house.
 description: >-
-  You guard a single laddoo on a table in Nani's house during summer vacation
-  while ants head for it. The goal is to hold them off for 3 minutes. An intro
-  scene shows the laddoo on a metal plate with ants walking along the table
-  edge, and it has a Skip Intro button.
+  You're guarding one laddoo on a table at Nani's house over summer vacation,
+  and the ants already know exactly where it is. All you have to do is keep them
+  off it for 3 minutes.
 
 
-  You have five ways to stop them. Protective Rekha lets you draw a line ants
-  cannot cross, blocking whole pathways, with 2 uses. Water drops a pool that
-  blocks and drowns nearby ants, also 2 uses. Sugar places a decoy to lure ants
-  away from the laddoo, recurring, with a maximum of 3 at a time.
+  An intro scene sets things up with the laddoo sitting on a metal plate while a
+  tidy little line of ants marches along the table's edge, though a Skip Intro
+  button lets you get straight to the defending.
 
 
-  Chappal smashes a whole cluster in one hit and is marked as spawning. Tap
-  squashes ants one by one, which is precise but slow.
+  Five tools stand between the ants and your sweet. Protective Rekha lets you
+  draw a line they can't cross, so you can shut off entire pathways, but you
+  only get 2 uses. Water comes with the same 2-use limit and drops a pool that
+  blocks nearby ants and drowns them, a grim end for a sugar craving.
 
 
-  The creator built it from memories of 90s Indian summers: Nani's house, the
-  ceiling fan and load-shedding. The start card shows a photo of a child and a
-  handwritten note reading Save the Laddoo.
+  Sugar is the sneaky option, a recurring decoy that pulls ants away from the
+  laddoo, though you can only have 3 of them down at a time.
+
+
+  Then there's the chappal, a sandal that flattens a whole cluster in one hit
+  and is tagged as spawning. Tap is the plain fallback, letting you squash ants
+  one at a time, precise but slow.
+
+
+  akarshmanas built it from memories of 90s Indian summers, with Nani's house,
+  the ceiling fan and load-shedding all in the mix, plus recently spotting
+  ants on a window sill. According to akarshmanas, it's meant to take people
+  back to their childhood rather than chase a score, and to the grandmother
+  who cared, be it Abuela, Grandma or Nani. The start card shows a photo of a
+  child beside a handwritten note reading "Save the Laddoo".
 play:
   url: https://savetheladdoo.vercel.app
   embeddable: true

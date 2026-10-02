@@ -3,22 +3,34 @@ title: terrastrike/terra
 tagline: Purify a toxic world from the deep sea up to a surface garden as an
   evolving guardian.
 description: >-
-  The game opens underwater in a level called The Deep, seen from above. A diver
-  in an armored suit stands among seaweed, rocks and sunken wreckage, lit by
-  pale shafts of light. A panel on the left tracks a purification percentage, a
-  timer, ammo (40 of 40), the equipped Standard Blaster and an inventory that
-  starts empty.
+  The first level, called The Deep, puts you on the seafloor in an armored
+  diving suit, seen from above while pale shafts of light cut down through the
+  water. Seaweed, rocks and pieces of sunken wreckage lie scattered around you
+  in a murky teal gloom.
 
 
-  You move with WASD and fire with Space. A hull integrity bar sits at the
-  bottom of the screen. An RP counter in the top right corner links to a shop on
-  U, the armory opens on C, and keys 1 to 4 trigger emotes.
+  Your job is to purify a toxic world, working your way from the deep sea up to
+  a surface garden while your diver evolves into a guardian protecting the last
+  sanctuary of life.
 
 
-  The goal is to purify a toxic world, working from the deep sea up to a surface
-  garden, while the character evolves into a guardian protecting the last
-  sanctuary of life. The creator drew on the contrast of a dark industrial
-  wasteland turning back into a colorful, living ecosystem.
+  A panel on the left keeps score of that cleanup with a purification
+  percentage, which starts at a bleak 0.0%, sitting next to a timer. It also
+  shows your ammo at 40 of 40, the Standard Blaster you're carrying and an
+  inventory that's still empty.
+
+
+  You move with WASD and fire with Space. A hull integrity bar runs along the
+  bottom of the screen. There's an RP counter in the top right corner that ties
+  into a shop on U, while the armory opens on C.
+
+
+  For some reason keys 1 to 4 trigger emotes, a bit of a luxury for a diver
+  whose only company is seaweed.
+
+
+  Srikanth built the game around nature's resilience. They drew on the contrast
+  of a dark industrial wasteland turning back into a colorful, living ecosystem.
 play:
   url: https://terrastrike.pages.dev
   embeddable: true

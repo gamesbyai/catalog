@@ -2,26 +2,35 @@ slug: asteroid-ace
 title: Asteroid Ace
 tagline: Blast drifting asteroids and dodge hunter drones in escalating waves.
 description: >-
-  You fly a ship in a classic asteroid shooter, aiming with the mouse or
-  rotating with the keys, thrusting forward, strafing, reversing and firing.
-  Slow-drifting asteroid clusters shatter into fragments when hit, so each shot
-  can leave more rocks to dodge.
+  Every slow-drifting asteroid cluster you hit breaks into fragments, so one
+  good shot can leave more rocks in your way than there were before it.
 
 
-  Agile hunter drones join the asteroids as waves escalate. The creator
-  describes each enemy type as having its own movement pattern and attack style,
-  which pushes you to change tactics between waves.
+  It's a classic asteroid shooter where you're flying a ship that you can steer
+  two ways. You can aim with the mouse and thrust with the left button, or
+  rotate with Q and E while W thrusts, S reverses, A and D strafe and Space
+  fires.
 
 
-  The start screen has a Graphics button for quality settings and a Touch button
-  for on-screen controls. Two sliders adjust game speed and scale, both set to
-  1.0x by default. A right-click toggles auto mode, Shift boosts, and Esc
-  pauses.
+  The rocks don't stay alone for long. As the waves escalate, agile hunter
+  drones show up alongside them. Paul Shroom describes each enemy type as having
+  its own way of moving and attacking, which pushes you to change tactics
+  between waves.
 
 
-  The creator built it with a local model on a laptop GPU, to test what that
-  hardware could produce. The title screen labels this version Asteroid Ace 3
-  Beta.
+  There's even an auto mode you can toggle with a right-click, while Shift gives
+  you a boost and Esc pauses.
+
+
+  The title screen calls this version Asteroid Ace 3 Beta, and it lets you tune
+  a few things before you launch. A Graphics button opens the quality settings,
+  and a Touch button turns on on-screen controls. Two sliders change the game's
+  speed and scale, and both start at 1.0x.
+
+
+  Paul Shroom built it with a local model running on an RTX 5090 laptop GPU with
+  24GB of VRAM and 32GB of system RAM, just to see what that hardware could
+  produce.
 play:
   url: https://asteroid-ace.fractalvision.co.uk
   embeddable: true

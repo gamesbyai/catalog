@@ -2,27 +2,44 @@ slug: bubble-popverse
 title: Bubble Popverse
 tagline: Pop bubble wrap, grow an empire, and prestige for rarer rainbow bubbles.
 description: >-
-  You start by picking a bubble name or rolling a random one, then pop bubbles
-  to earn Bubcoins. The main screen shows a coin counter, the current realm
-  (Meadow), a progress bar toward the next goal, and flower petals drifting over
-  a green field.
+  You're the newest name on an incident report for the Galactic Foam
+  Authority, set in a bleak year when Earth is gone and all that's left is
+  foam, a pile of paperwork and a single clipboard-carrying intern. First you
+  pick a bubble name, or you hit the dice button to roll a random one.
 
 
-  A Bubble Labs panel on the right lists upgrade cards in tiers. The first card,
-  Foam Motion, unlocks bubble drift. Later tiers start locked and include Pop
-  Power, Auto-Popper and Comfortable Foam. A hint on the panel says holding a
-  card buys one more each time.
+  After that you tap the bubbles floating across the screen, and every pop earns
+  you Bubcoins. A corner panel tracks your coins next to the current realm,
+  which starts as Meadow, plus a progress bar toward your next goal. Behind all
+  that, flower petals drift across a green field.
 
 
-  The loop is idle and incremental: pop bubbles, buy upgrades, discover new
-  realms, collect rarities including rainbow ones, and prestige. Buttons for
-  Dex, Ranks, Zen, Share, Portal and Menu sit along the top. Every pop has its
-  own sound, and the title screen recommends headphones for the spatial audio.
+  You spend your coins in Bubble Labs, a panel on the right that lays out
+  upgrades as cards in tiers. The first one, Foam Motion, does nothing more
+  than let the bubbles drift, and it comes with an official note that Form 7-A
+  has been approved.
 
 
-  The intro frames everything as a joke about a Galactic Foam Authority and an
-  intern with a clipboard. A father built it with his two kids, who played each
-  version and said which pops felt best. The build is labeled as still being
+  Later tiers start out locked, and they hold upgrades like Pop Power,
+  Auto-Popper and Comfortable Foam, where the Auto-Popper gets billed as an
+  intern with exactly one skill. You can also hold a card to keep buying one
+  more of it, which saves a lot of tapping.
+
+
+  The bigger loop is a classic idle climb, where you pop, upgrade, discover new
+  realms, collect rarities that include rainbow ones, and then prestige.
+
+
+  Every pop has its own sound, which fits a game that started out as bubble
+  wrap, and the title screen suggests headphones for the spatial audio. A full
+  row of buttons for Dex, Ranks, Zen, Share, Portal and Menu runs along the
+  top.
+
+
+  thekibermaks made it with their two kids, Alice and Michael, who are obsessed
+  with goofy simulators such as Untitled Goose Game and Plastic Duck Simulator.
+  Together they settled on bubble wrap, and the kids played every version and
+  said which pops felt best. The current build is still labeled as being
   balanced.
 play:
   url: https://bubblepopverse.life
@@ -60,7 +77,7 @@ media:
     - games/bubble-popverse/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-10-01
+  updated: 2026-10-02
 status: live
 provenance:
   foundVia: scout:vibejam-2026

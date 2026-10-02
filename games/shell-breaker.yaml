@@ -2,25 +2,39 @@ slug: shell-breaker
 title: Shell breaker
 tagline: Bounce a ball off a paddle to smash data nodes across eight cyberpunk levels
 description: >-
-  The screen shows a neon, rain-soaked city under green digital rain, with CRT
-  scanlines and a green-and-amber palette. You slide a paddle, called the deck,
-  along the bottom and launch a ball, called the ghost, into a field of data
-  nodes.
+  Slide the paddle along the bottom with the arrow keys, A and D, or the
+  mouse, then press Space or click to launch the ball. Here the paddle goes by
+  the deck and the ball goes by the ghost. You're out to wipe every node off
+  the board across 8 levels, and each one's harder than the last.
 
 
-  The goal is to destroy every node across 8 levels, each harder than the last.
-  Some nodes are reinforced and take two hits. Others are explosive and set off
-  chain reactions in the nodes around them.
+  Some nodes are reinforced and take two hits, while the explosive ones are a
+  bit more generous, setting off chain reactions through the nodes around them.
 
 
-  Power-ups add extra balls, widen the paddle or slow the ball. Chaining hits
-  builds a combo, and the game tracks your score and a high score. Impacts bring
-  particles, screen shake and ball trails, with sound effects synthesized in the
-  game.
+  Power-ups hand you extra balls, a wider paddle or a slower ball. Stringing
+  hits together builds a combo, and the game keeps your score next to a high
+  score.
 
 
-  The creator describes the look as inspired by the 1995 Ghost in the Shell
-  film, and lists the AI disclosure as AI assisted, covering code.
+  It's all set in a rainy neon city under falling green digital rain, with CRT
+  scanlines over a green and amber palette. gunz101 points to the 1995 Ghost in
+  the Shell film as the inspiration for that look, pixel skyline glowing behind
+  the bricks and all. Even the HUD speaks Portuguese, with PONTOS for your
+  points and FASE 1/8 for the level.
+
+
+  Every impact gets a surprising amount of polish, throwing particles, shaking
+  the screen and leaving trails behind the ball, while the sound effects are
+  synthesized right inside the game.
+
+
+  Space or a click also starts and restarts a game. P pauses, M switches the
+  sound off and on, and H on the menu explains how to play.
+
+
+  gunz101 made the game with some help from AI, which according to the creator
+  was used on the code.
 play:
   url: https://gunz101.itch.io/shell-breaker
   embeddable: false
@@ -60,7 +74,7 @@ media:
     - games/shell-breaker/shot-2
 dates:
   added: 2026-10-01
-  updated: 2026-10-01
+  updated: 2026-10-02
 status: live
 provenance:
   foundVia: scout:aibgj-3

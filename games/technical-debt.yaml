@@ -3,28 +3,50 @@ title: TECHNICAL DEBT
 tagline: Juggle groceries, debt, and clutter for a family chasing a vacation,
   then restart.
 description: >-
-  The aim is to collect 100,000 PALM Points before the family's debt catches up.
-  You play a parent laid off after an employer automated the job. Putting
-  household needs on credit earns points toward a vacation package, and hitting
-  the total shows who actually goes on the trip.
+  The goal is to rack up 100,000 PALM Points before the family's debt closes
+  in, and reaching that number reveals who actually gets to go on the trip,
+  and whether anyone comes back.
 
 
-  Each purchase is a choice between costly goods that show up reliably and cheap
-  ones that might be late or barely count as goods. Orders accumulate as boxes,
-  so you resell what you don't need on Baylist before storage runs out. Cash,
-  credit, storage, and your standing with Deborah and DJ all need watching.
+  You're a parent whose employer, in a bitter twist, automated your job away
+  using work you helped train it to do. Unemployment won't cover the
+  household, but Vantage One is happy to step in, and every household need you
+  put on credit earns points toward a beach vacation package.
 
 
-  Bankruptcy is built into the loop. You declare it, carry over permanent
-  lessons, and restart knowing more about how the system works. According to the
-  creator, the first bankruptcy is intended and shows how progression works.
+  Each purchase comes down to paying more for goods that show up reliably or
+  saving money on discount stuff that might arrive late, or might only barely
+  count as goods at all. Orders pile up around the house as boxes, so you'll be
+  reselling what you don't need on Baylist before storage runs out. Meanwhile
+  you're keeping an eye on cash, credit, storage and how things stand with
+  Deborah and DJ, all while a vacation obsession grows more persuasive.
 
 
-  The screen imitates an old family computer with a CRT filter and 1-bit art,
-  with dark comedy throughout. Tabs cover MailBox, BUYMORE, Haulu, Baylist,
-  Vantage One, and Lessons. Red blinking badges flag unread mail and actions
-  waiting on you. A movable jukebox plays music, and the menu bar adjusts sound,
-  CRT strength, and reduced motion, and offers a full reset.
+  Going broke is part of the loop too, and declaring bankruptcy means carrying
+  permanent lessons over and starting again knowing more about how the system
+  works.
+
+
+  According to the creator, the first bankruptcy is meant to happen, and it's
+  there to show you how progression works. Hearing that up front softens things
+  a little in a game this bleak about money.
+
+
+  Everything plays out on a cheerful imitation of an old family computer, with a
+  CRT filter, 1-bit art and dark comedy running through all of it. You click or
+  tap between tabs for MailBox, BUYMORE, Haulu, Baylist, Vantage One and
+  Lessons. Red badges blink whenever mail is unread or an action is waiting on
+  you.
+
+
+  For some reason the music comes from DEBTAMP, a jukebox that lives in its own
+  window you can drag around the screen. The menu bar handles music, sound
+  effects, CRT strength and reduced motion, and it also offers a full reset.
+
+
+  OblongOolong directed the design, did the editing and made the final calls,
+  while Codex handled programming, testing and balance simulation, and the sound
+  effects were edited and reworked by hand in Bitwig Studio.
 play:
   url: https://oblongoolong.itch.io/technical-debt
   embeddable: false
@@ -67,7 +89,7 @@ media:
     - games/technical-debt/shot-2
 dates:
   added: 2026-09-30
-  updated: 2026-10-01
+  updated: 2026-10-02
 status: live
 provenance:
   foundVia: scout:aibgj-4

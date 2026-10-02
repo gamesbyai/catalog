@@ -2,21 +2,37 @@ slug: cannon-clash
 title: Cannon Clash
 tagline: Aim a cannon and outshoot a rival in a physics-driven puzzle duel.
 description: >-
-  Cannon Clash is a physics puzzle duel between two cannons, and the goal is to
-  outshoot your rival. You aim yours, they aim theirs, and the shots bounce and
-  tumble through the playfield, so whoever reads the physics better and lines up
-  a shot comes out ahead.
+  Aim your cannon, fire, and watch the shot bounce and tumble its way through a
+  board full of pegs. Your rival has a cannon of their own, and the two of you
+  take turns trying to outshoot each other, so whoever reads the physics better
+  and lines up the smarter shot comes out ahead.
 
 
-  The design comes from Peggle and, before that, the Plinko board from The Price
-  Is Right. The creator wanted something simple and fast that plays well on
-  mobile, so it was built with touch screens in mind, using Codex and Three.js.
-  It came 544th of 945 at Vibe Jam 2026.
+  Spent pucks don't vanish after they land, so every old shot stays on the
+  board as one more thing for the next one to hit.
 
 
-  Rounds are quick and easy to pick up. Ricochets and chain reactions matter
-  more than reflexes, so the skill is in reading where a shot will bounce before
-  you fire it.
+  Clearing the pegs is part of the job on every board. A turn doesn't pass the
+  moment your puck drops out of sight, though, since it only ends once
+  everything on the board has stopped moving. Ricochets and chain reactions
+  count for more than quick reflexes here, so the real skill is picturing where
+  a shot will bounce before you let it go.
+
+
+  Rounds are short and easy to learn, and there's a one-player mode next to a
+  two-player one.
+
+
+  Before a match you pick a level, and the Prism level shows a tidy little
+  note about its layout. It sets its pegs in diamond lanes locked to a grid,
+  evenly spaced, with openings that mirror each other.
+
+
+  swiftfoxsw wanted a simple, quick game that works well on a phone, so it was
+  built with touch screens in mind. The design comes from Peggle and, before
+  that, from the Plinko board on The Price Is Right, of all places. This browser
+  version rebuilds their iPhone build for the web while keeping the same
+  turn-based ricochet board.
 play:
   url: https://cannonclash.com
   embeddable: true
@@ -53,7 +69,7 @@ media:
     - games/cannon-clash/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-09-29
+  updated: 2026-10-02
 status: live
 provenance:
   foundVia: scout:vibejam-2026

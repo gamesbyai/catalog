@@ -2,31 +2,45 @@ slug: boom-brigade
 title: Boom Brigade
 tagline: Blast through nine run-and-gun missions across terrain you can destroy
 description: >-
-  The ground is not solid here. Dirt, stone, and wooden crates can all be shot
-  away, explosive barrels go off when hit, and armored bunkers take enough fire
-  to collapse. You can tunnel through a wall, detonate a barrel beside a group
-  of enemies, or break open a bunker that blocks the way. Each mission is a
-  side-scrolling run-and-gun stage: rescue hostages, wreck the bunkers, and
-  reach the flag.
+  Almost nothing in the ground here stays put once you start shooting. Dirt,
+  stone and wooden crates can all be blasted away, explosive barrels go off when
+  they're hit, and even armored bunkers collapse if you pour enough fire into
+  them.
 
 
-  The campaign has 9 missions set in a jungle, a desert, and a night city with
-  dynamic lighting. Levels are generated deterministically, and the last stage
-  ends with a gunship boss. Numbered buttons 1 to 9 on the start screen let you
-  choose a mission directly.
+  You can tunnel straight through a wall, set off a barrel beside a cluster of
+  enemies, or crack open the bunker that's blocking your path, which makes the
+  terrain an extra weapon.
 
 
-  Every hostage you free unlocks heroes, 10 in total, and each hero has a
-  different weapon plus a special ability. The weapons range from a shotgun and
-  a minigun to a flamethrower, a sniper rifle, a holy water sprinkler, and a
-  grenade launcher. Movement includes a double jump and a wall jump, and you can
-  aim up or down while firing.
+  Each mission is a side-scrolling run-and-gun stage where you free hostages,
+  wreck the bunkers and make it to the flag. There are 9 of them spread across a
+  jungle, a desert and a night city with dynamic lighting, and the last one ends
+  with a gunship boss.
 
 
-  Progress is stored in a JSON file that you download and reload with a button
-  or by dragging it onto the page. The browser also keeps a copy automatically.
-  Key bindings can be changed in the Controls menu, with two keys per action,
-  and touch buttons appear on mobile. Sound effects are synthesized.
+  Freeing hostages is how you unlock heroes, and there are 10 of them in total.
+  Each of them carries a different weapon plus a special ability, with an
+  arsenal that runs from a shotgun and a minigun to a flamethrower, a sniper
+  rifle and a grenade launcher. Somebody also decided a holy water sprinkler
+  belonged on that list, and it's there.
+
+
+  Getting around takes a double jump and a wall jump, and you can aim up or down
+  while you're firing.
+
+
+  The levels are generated deterministically. A row of numbered buttons from 1
+  to 9 on the start screen lets you jump straight to any mission. Your
+  progress lives in a JSON file that you download, then load back with a
+  button or by dragging it onto the page, while the browser keeps its own copy
+  automatically too.
+
+
+  If the default keys don't suit you, the Controls menu lets you rebind every
+  action with two keys each, and on mobile there are touch buttons on screen.
+  The whole game fits into a single HTML file. Its sound effects are
+  synthesized rather than recorded.
 play:
   url: https://boom-brigade.vercel.app
   embeddable: true
@@ -69,7 +83,7 @@ media:
     - games/boom-brigade/shot-2
 dates:
   added: 2026-09-30
-  updated: 2026-10-01
+  updated: 2026-10-02
 status: live
 provenance:
   foundVia: scout:github

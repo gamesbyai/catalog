@@ -2,23 +2,33 @@ slug: emojibeats
 title: EmojiBeats
 tagline: Guess pop song titles from emoji clues in a pixel-art arcade music quiz.
 description: >-
-  Each puzzle shows emojis standing in for a pop song title, and you guess the
-  song. The game forgives small spelling mistakes, so an answer doesn't have to
-  be typed perfectly. The song list draws on pop music the creator grew up with.
+  A string of emojis stands in for a pop song title, and your job is to work out
+  which song it is. The songs come from the pop music Lab_YmK grew up with.
 
 
-  Players who would rather talk than type can switch on voice mode and solve any
-  puzzle by saying the answer out loud.
+  Typos won't sink you either, because the game forgives small spelling mistakes
+  and your answer doesn't have to be typed perfectly.
 
 
-  The mode select screen lists Free Practice, labeled casual with no pressure.
-  The leaderboard at the top of the start screen has separate Speed Run and
-  Combo Run tabs. Each ranks players by points and finishing time, and a link
-  opens the full list.
+  You can type your guess, but players who'd rather talk than type can switch
+  on voice mode and solve any puzzle by saying the answer out loud. Speaking a
+  song title fits a music quiz naturally.
 
 
-  The look is 8-bit arcade: a pixel font, a neon grid backdrop, a row of retro
-  game icons, and an insert-coin prompt above the start button.
+  If you just want to poke at puzzles, the mode select screen offers Free
+  Practice, tagged as casual with no pressure. Competitive players get a
+  leaderboard at the very top of the start screen, split into Speed Run and
+  Combo Run tabs. Both rank people by points and by finishing time, while a link
+  underneath opens the full list.
+
+
+  Tracking the clock next to the score makes a lot of sense on a board where one
+  tab is called Speed Run.
+
+
+  The screen goes all in on 8-bit arcade, with a pixel font over a neon grid
+  backdrop, a row of retro game icons and an insert-coin prompt sitting above
+  the start button.
 play:
   url: https://emoji-beats.vercel.app
   embeddable: true
@@ -55,7 +65,7 @@ media:
     - games/emojibeats/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-10-01
+  updated: 2026-10-02
 status: live
 provenance:
   foundVia: scout:vibejam-2026

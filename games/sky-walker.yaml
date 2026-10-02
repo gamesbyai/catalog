@@ -3,26 +3,36 @@ title: SKY WALKER
 tagline: Keep your balance on a tightrope above a neon city while storms and
   wind push you off.
 description: >-
-  A tightrope stretches over a neon-lit cyberpunk city, and a walker crosses it
-  while you keep a balancing pole centered. Press W or Up once to start. After
-  that the walker moves forward on his own, so the only job left is staying
-  upright.
+  A tightrope hangs high above a neon-lit cyberpunk city, and a walker is out on
+  it with a balancing pole. You press W or Up just once to get him going, and
+  from then on he keeps walking forward by himself. All that's left for you is
+  holding that pole centered so he stays upright, and it's hard to imagine a job
+  more stripped-down than that.
 
 
-  Use A and D or the left and right arrows to correct your balance. Storms and
-  unpredictable winds push against you, and the weather turns more violent as
-  you advance. The first stage is labeled Level 1: Calm.
+  A and D or the left and right arrows correct the balance, while storms and
+  winds you can't predict keep pushing against you. The weather gets more
+  violent the farther you advance, so the first stage's label, Level 1: Calm,
+  sounds a bit hopeful.
 
 
-  The screen tracks distance walked in meters along with your best distance, a
-  heart icon, the current stage, and a live wind speed reading. A leaderboard
-  button sits beside the start button. The city behind the rope is generated
-  procedurally, with dark towers and red and cyan lighting.
+  Along the top, the screen counts the meters you've walked next to your best
+  distance, with a heart icon, the current stage and a live wind speed reading
+  alongside.
 
 
-  The creator drew on the tension of real high-wire walkers and built the game
-  around one simple mechanic, keeping the pole centered, with a deliberate lean
-  toward frustrating difficulty.
+  Behind the rope, the city is generated procedurally. Its dark towers are lit
+  in red and cyan, and plenty of small specks dot the air in front of them. Next
+  to the start button on the title screen there's also a leaderboard button.
+
+
+  iboualissouf took inspiration from the tension of real high-wire walkers and
+  built the whole game around that single job of keeping the pole centered.
+
+
+  They're also refreshingly open about loving games that are extremely
+  challenging and frustrating. This one leans toward frustrating difficulty on
+  purpose.
 play:
   url: https://sky-walker.xyz
   embeddable: true
@@ -62,7 +72,7 @@ media:
     - games/sky-walker/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-10-01
+  updated: 2026-10-02
 status: live
 provenance:
   foundVia: scout:vibejam-2026

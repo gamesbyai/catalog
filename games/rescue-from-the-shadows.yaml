@@ -2,20 +2,39 @@ slug: rescue-from-the-shadows
 title: RESCUE FROM THE SHADOWS
 tagline: Explore a dark world and learn digital security and Web3 along the way.
 description: >-
-  Someone needs bringing back out of the darkness, and in Rescue From the
-  Shadows that is your job. As a narrative puzzle game, it has you explore a
-  dark world step by step and move the story forward by working through the
-  situations it puts in front of you.
+  Someone has to be brought back out of the darkness, and that job is yours,
+  inside a hidden house a living darkness swallowed long ago where guardians of
+  knowledge sit sealed away. It's a narrative puzzle game, so you explore its
+  dark rooms step by step while the story moves forward with each situation you
+  work through.
 
 
-  ChatGPT is the tool the creator lists for making it, and the game is set up
-  for multiplayer. In Vibe Jam 2026 it ranked 529th of the 945 entries.
+  You play as Suiken, a cheerful hero for such a gloomy place, a grinning
+  monkey in a battered trench coat and hat who has to cross every chamber and
+  break every seal along the way.
 
 
-  The puzzles double as lessons. Ideas from digital security and Web3 are woven
-  into the exploration and the puzzles, so understanding them is part of how you
-  progress. The creator's aim was a game that adds real value instead of being
-  pure entertainment.
+  The puzzles double as lessons. In one attic room, a bit jarringly, an arcane
+  terminal asks you what a seed phrase is and offers four answers while a
+  chained captive kneels in front of a glowing green barrier. Ideas from digital
+  security and Web3 run through both the exploring and the puzzles, so
+  understanding them is part of how you get further.
+
+
+  Suiken has a life bar and a barrier meter that both start at 100%, and the
+  Shadow feeds on failure, fear and forgetting. The game tests what you
+  remember.
+
+
+  An Omen box at the bottom of the screen narrates each scene, from the heavy
+  attic air to the barrier pulsing in front of you. The title screen lets you
+  switch the text between English and Portuguese.
+
+
+  The hero's name sits close to the handle of xsuikem, who made the game.
+  Their aim was a game that adds real value instead of being pure
+  entertainment. They set out to build something immersive that also teaches
+  you about digital security and Web3 while you play.
 play:
   url: https://o-resgate-das-sombras.vercel.app
   embeddable: true
@@ -52,7 +71,7 @@ media:
     - games/rescue-from-the-shadows/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-09-29
+  updated: 2026-10-02
 status: live
 provenance:
   foundVia: scout:vibejam-2026

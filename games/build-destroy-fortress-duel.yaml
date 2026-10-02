@@ -2,23 +2,34 @@ slug: build-destroy-fortress-duel
 title: Build & Destroy - Fortress Duel
 tagline: Build a fragile fortress, then smash it apart in a physics sandbox.
 description: >-
-  The game has two halves: you build a fortress, then you knock one down. In
-  Builder Mode you stack stone, wood, and glass around a flag, working within a
-  budget of 30 points. The goal is a structure that can protect that flag.
+  The ammo you get against a rival fortress is unlocked by the choices its
+  builder made, tying the two halves of this physics sandbox together.
 
 
-  In Destroyer Mode you attack fortresses with a siege launcher. You choose your
-  ammo, aim the launcher, and fire to capture the flag. The ammo available
-  depends on the choices made in the fortress you are attacking.
+  Building comes first, in Builder Mode. You stack stone, wood and glass around
+  a flag, and you've only got 30 points to spend on the whole structure. The
+  goal is a fortress that keeps that flag safe, though it's a bit funny that the
+  game openly calls these fortresses fragile.
 
 
-  A leaderboard tab ranks the best defenses and the cleanest captures. The menu
-  shows a fantasy castle backdrop, with separate buttons for building,
-  attacking, and checking ranks.
+  Then you switch sides in Destroyer Mode and go after rival fortresses with a
+  siege launcher. You pick your ammo, line up the shot and fire, and the aim is
+  to capture the flag.
 
 
-  The creator wanted to let players make their own levels in a physics sandbox
-  after years of playing Angry Birds-style games.
+  A leaderboard covers both jobs by ranking the best defenses next to the
+  cleanest captures.
+
+
+  The menu sits over a painted fantasy castle on a green hillside, with
+  mountains and clouds behind it. It gives you three big illustrated cards, one
+  to start building, one to start an attack and one to check the ranks. There's
+  a sound toggle tucked in the corner too.
+
+
+  domenicodd wanted to let players make their own levels in a physics sandbox,
+  an idea that came after years of playing Angry Birds-style games. They'd been
+  carrying it around for a whole decade before this game came out of it.
 play:
   url: https://launchingdock.com
   embeddable: true
@@ -54,7 +65,7 @@ media:
     - games/build-destroy-fortress-duel/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-10-01
+  updated: 2026-10-02
 status: live
 provenance:
   foundVia: scout:vibejam-2026

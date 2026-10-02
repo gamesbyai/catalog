@@ -2,23 +2,33 @@ slug: bees-vs-wasps
 title: Bees vs Wasps
 tagline: Gather flowers as a bee and get back to the hive before angry wasps catch you.
 description: >-
-  A blocky pixel-art forest meadow fills the start screen, with flowers, trees
-  and a tall sunflower, and a bee hovering behind the title. You type a name
-  before starting. A sound toggle sits in the top corner.
+  A blocky pixel-art meadow fills the start screen, crowded with flowers and
+  trees and one towering sunflower, while a bee hovers behind the title. You
+  type in a name before you start, and a sound toggle sits up in the top corner.
 
 
-  You play a bee. The goal is to gather flowers and carry them back to the hive
-  without dying to the angry wasps. The creator wanted something you can jump
-  into right away.
+  You're the bee here, and your job is to gather flowers and carry them back to
+  the hive without getting killed by the angry wasps.
 
 
-  Levels add new elements as you climb. Honeycomb and extra lives appear, and
-  deadlier wasps arrive: the Tarantula Hawk at level 12 and the Executioner at
-  level 15. Both were inspired by Brave Wilderness videos of getting stung.
+  The title screen sums up the whole plan in three quick commands right under
+  the logo. alexismediaco wanted something you could jump into right away, and a
+  goal that short suits that.
 
 
-  Wasp spawns first followed the Fibonacci sequence, the idea the game grew
-  from, but that produced too many wasps, so the creator capped the numbers.
+  As you climb levels, new things keep getting added. Honeycomb and extra
+  lives show up, but so do deadlier wasps, with the Tarantula Hawk arriving at
+  level 12 and the Executioner at level 15. Both were inspired by Brave
+  Wilderness videos of getting stung.
+
+
+  The whole game grew out of the Fibonacci sequence, the idea alexismediaco
+  started from.
+
+
+  At first the wasps spawned following that sequence. Fibonacci numbers grow
+  quickly, though, and it ended up producing too many wasps. So alexismediaco
+  put a cap on the numbers.
 play:
   url: https://beesvswasps.com
   embeddable: true
@@ -55,7 +65,7 @@ media:
     - games/bees-vs-wasps/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-10-01
+  updated: 2026-10-02
 status: live
 provenance:
   foundVia: scout:vibejam-2026

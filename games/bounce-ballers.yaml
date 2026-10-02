@@ -3,25 +3,34 @@ title: Bounce Ballers
 tagline: Score goals in a networked, platform-hopping soccer match against other
   players.
 description: >-
-  The game opens on a lobby with four arena cards: Classic Arena, Neon Foundry,
-  Plinko and Glitch Garden. Each preview shows platforms stacked over a flat
-  floor, with a goal zone at each end. Plinko fills the middle with pegs and
-  slanted ramps. A guest name is pre-filled, and the header shows a Players
-  counter that reads 0/2.
+  When the game loads, the lobby lays out four arena cards called Classic Arena,
+  Neon Foundry, Plinko and Glitch Garden.
 
 
-  Before a match you set the rules. Score limit reads First to 10, round time
-  starts at No Limit, and AI difficulty starts at Normal. Three map event cards
-  can be toggled: Low Gravity, Reverse Ball Gravity and Infinimap, which wraps
-  the arena. Five ability pickups can also be switched on or off: Speed Boost,
-  Burst Boost, Throw Boost, Magnet and Invisibility.
+  Each preview shows platforms stacked over a flat floor, with a goal zone at
+  either end of the field. Plinko is the odd one out, with pegs and slanted
+  ramps crammed into the middle under the label RNG Madness.
 
 
-  Three buttons start play: Matchmake, vs Bot and Private Match. A room code
-  field takes a pasted room ID, with Join, Copy Code and Copy Invite buttons
-  beside it. A My Arenas section holds saved custom maps. The creator is a
-  longtime fan of IDARB and wanted a networked soccer platformer with
-  progression.
+  Before a match, you get to set the rules yourself. The score limit reads First
+  to 10, round time starts at No Limit, and the bot difficulty sits at Normal.
+  There are three map event cards to toggle, and Reverse Ball Gravity sounds a
+  bit wild next to plain Low Gravity and Infinimap, which wraps the arena around
+  on itself.
+
+
+  A whole column of five ability pickups can be switched on or off one by one,
+  covering Speed Boost, Burst Boost, Throw Boost, Magnet and Invisibility.
+
+
+  The three buttons that get you into a game are Matchmake, vs Bot and Private
+  Match. There's also a field where you paste a room ID, with Join, Copy Code
+  and Copy Invite buttons sitting beside it. A My Arenas section holds saved
+  custom maps, and you get a guest name before you've typed anything.
+
+
+  matthayes13 is a longtime fan of IDARB and wanted to build a networked soccer
+  platformer with progression.
 play:
   url: https://bounceballers.com
   embeddable: true
@@ -57,7 +66,7 @@ media:
     - games/bounce-ballers/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-10-01
+  updated: 2026-10-02
 status: live
 provenance:
   foundVia: scout:vibejam-2026

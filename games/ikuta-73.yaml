@@ -2,28 +2,45 @@ slug: ikuta-73
 title: Ikuta '73
 tagline: Mow lawns in a 1973 Tokyo summer and rest in the shade to keep your stamina up
 description: >-
-  Summer, 1973, in the hills west of Tokyo: you play a college student cutting
-  lawns for your uncle's company. In first person you push a mower through
-  yards, steering it over the grass. The game centers on taking care with the
-  work when nobody would check. A session lasts about half an hour.
+  It's the summer of 1973, out in the hilly country west of Tokyo, and you're a
+  college kid cutting grass for a company your uncle runs.
 
 
-  Heat sets the rules. Direct sun wears down your stamina quickly, and standing
-  in shade brings it back, so you step out of the light when the afternoon gets
-  heavy. Your maximum stamina also shrinks slowly over the day. Neat work can
-  earn a cold drink from someone, which gives a stamina boost.
+  You see it all in first person while you push a mower through people's yards
+  and steer it across the grass. The game is about taking care with the work
+  even when nobody would check, and it takes its cues from a Murakami short
+  story. A session runs about half an hour.
 
 
-  A moving sun and a day cycle carry time forward, and you can check the clock
-  at any point. A wheelie spins the mower around quickly. An optional two-stick
-  mode, which needs a dual-stick gamepad, can be switched on in settings. If the
-  game runs slowly, lower the grass density under Performance.
+  The heat sets the rules here. Direct sun drains your stamina fast while shade
+  gives it back, so when the afternoon gets heavy you step out of the light,
+  your own body working like a solar panel in reverse. Your maximum stamina also
+  shrinks a little as the day wears on.
 
 
-  The look is low-poly, with Japanese houses, cicada sounds and a lens flare on
-  the title screen. It takes cues from a Murakami short story. On touchscreens,
-  the left half of the screen moves and steers, the right half turns the view,
-  and a tap grabs or uses an item.
+  Do neat enough work and someone might hand you a cold drink, a kind bit of
+  hospitality that gives your stamina a boost.
+
+
+  Time keeps moving too, with a day cycle and a sun that crosses the sky, and
+  you can check the clock whenever you like. A wheelie spins the mower around in
+  a hurry when you need a quick pivot. There's also an optional two-stick mode
+  you can switch on in settings, but it needs a dual-stick gamepad.
+
+
+  Low-poly Japanese houses line the yards, and the cicadas shift through the
+  day, with the morning and late-afternoon calls built from a single noon
+  recording.
+
+
+  On a touchscreen, the left half of the screen walks and steers, the right half
+  turns the view, and a tap grabs or uses an item. Grass density can be turned
+  down under Performance in the settings.
+
+
+  Claude Code wrote the code, made the sound effects and models, and handled
+  level testing, while Grok Build made the title screen and its lens flare.
+  plinth did everything else.
 play:
   url: https://plinthcybernetics.itch.io/ikuta-73
   embeddable: false
@@ -73,7 +90,7 @@ media:
     - games/ikuta-73/shot-2
 dates:
   added: 2026-10-01
-  updated: 2026-10-01
+  updated: 2026-10-02
 status: live
 provenance:
   foundVia: scout:aibgj-4

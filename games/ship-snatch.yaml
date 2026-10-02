@@ -3,22 +3,40 @@ title: Ship Snatch
 tagline: Build a hex archipelago and defend your Captain's Keep from enemy ships
   and sea monsters.
 description: >-
-  The aim is to keep your castle standing as pirate ships and tentacled sea
-  creatures come at it in waves. You start on a top-down map of hexagonal tiles,
-  add land one hex at a time to grow an island chain, and place and upgrade
-  defenses on the ground you have claimed.
+  Pirate ships and tentacled sea creatures come at your castle in waves, and
+  your job is to keep the Captain's Keep standing through all of them.
+  Everything plays out in real time on a top-down map made of hexagonal tiles. A
+  three-line motto on the title screen tells you to build your island, defend
+  the Keep and hold back the waves.
 
 
-  Cannons sit on tiles around the central keep and fire at ships approaching
-  across the water, while tentacles rise from the sea nearby. Everything is
-  modeled in clay, with sand, grass and pond tiles, palm trees, coin piles and
-  barrels.
+  Your island grows one hex at a time, so you're slowly stretching it out into a
+  little chain of islands. You place defenses and upgrade them, but only on
+  ground you've already claimed, which means your coastline decides where your
+  cannons can stand.
 
 
-  The title screen asks for a captain name, then offers Start Solo or Start
-  Multiplayer. Multiplayer is co-op, with a list of open rooms to join and a
-  global leaderboard. Play is real-time. The creator aimed for a look a
-  nine-year-old would enjoy that adults could still find worth playing.
+  Those cannons sit on the tiles around the central keep and fire at ships
+  sailing in across the water, while purple tentacles rise out of the sea close
+  by.
+
+
+  It's all modeled to look like clay, from the sand and grass tiles to the small
+  ponds tucked into the land. Palm trees, piles of gold coins and wooden barrels
+  are dotted around the island. Even the pirate flags on the ships and the
+  castle tower get the same soft, handmade treatment.
+
+
+  Before anything starts, the game asks you for a captain name and then lets you
+  pick Start Solo or Start Multiplayer.
+
+
+  Multiplayer is co-op, and there's a list of open rooms you can join if someone
+  has already set sail. It comes with a global leaderboard as well.
+
+
+  radomir_3 aimed for a look a nine-year-old would enjoy that adults could still
+  find worth playing.
 play:
   url: https://shipsnatch.com
   embeddable: true
@@ -56,7 +74,7 @@ media:
     - games/ship-snatch/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-10-01
+  updated: 2026-10-02
 status: live
 provenance:
   foundVia: scout:vibejam-2026

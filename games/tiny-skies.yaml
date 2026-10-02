@@ -2,26 +2,37 @@ slug: tiny-skies
 title: Tiny Skies
 tagline: Explore a small shared world and relax together while an apocalypse looms.
 description: >-
-  You start in a green biplane above a small round planet, with a river,
-  forested hills, white cottages and a smoking volcano in view. A prompt in the
-  corner tells you to climb with the Up Arrow. A hot air balloon drifts nearby,
-  and another player's plane crosses the sky.
+  A green biplane hangs over a tiny round planet when the game loads, with a
+  river winding between forested hills, a cluster of white cottages and a
+  smoking volcano in view. A prompt in the corner tells you to climb with the Up
+  Arrow. Meanwhile a striped hot air balloon drifts nearby, and somebody else's
+  plane cuts across the sky.
 
 
-  Villagers talk to you in speech bubbles. One hands you a parcel for a named
-  village, and the top of the screen then shows the distance left to the
-  drop-off. The sidebar lists two collectible counts, 0/7 and 0/3, and a goal to
-  finish a race.
+  Villagers chat with you in speech bubbles, and one of them hands you a parcel
+  for a village they name, like a fisherman's package for Mossglen that's
+  apparently stuffed with jam. Once you're carrying it, the top of the screen
+  shows how far you still have to fly to drop it off.
 
 
-  A level and XP bar sits at the bottom of the screen. Other players share the
-  same world, and the room name and player count appear in the top corner. The
-  creator wanted a cozy place to hang out rather than fight, with an apocalypse
-  looming in the background.
+  Over in the sidebar there are two collectible counters, starting at 0/7 and
+  0/3, plus a goal to finish a race, a slightly surprising entry for a game
+  built around hanging out.
 
 
-  The sky appears as daytime blue in one moment and dusky purple with auroras in
-  another. A fullscreen button and a sound toggle sit in the top corner.
+  A level and XP bar runs along the bottom of the screen. Other players fly
+  around the same world with you, and the room's name and head count show up
+  in the top corner. dannylimanseta wanted a cozy multiplayer game where
+  people hang out instead of trying to kill each other, which makes the
+  apocalypse looming in the background an ominous neighbor.
+
+
+  The sky doesn't stay put either, showing daytime blue at one moment and a
+  dusky purple streaked with auroras at another.
+
+
+  Up in the top corner you'll find a fullscreen button. A sound toggle sits
+  right beside it.
 play:
   url: https://tinyskies.vercel.app
   embeddable: true

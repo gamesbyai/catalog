@@ -2,25 +2,33 @@ slug: kicker
 title: KICKER
 tagline: Play a match of table football against another player using mouse and keyboard.
 description: >-
-  You control one side of a 3D foosball table, seen from above, with red and
-  blue figures mounted on rods. Hold A, S, D or F to pick a rod, then move the
-  mouse to work that rod. A mouse icon on the table shows arrows pointing up and
-  down.
+  You're running one side of a 3D foosball table, looking down on it from above
+  with red and blue figures skewered on their rods. Each rod answers to its own
+  key, and you hold A, S, D or F to grab one and then move the mouse to work it.
 
 
-  A match is first to 5 goals, with the score shown at the top of the screen. A
-  prompt on the table tells you to play the ball. Pressing Space shakes the
-  table.
+  There's even a little mouse icon sitting on the table itself, with arrows
+  pointing up and down.
 
 
-  A button at the bottom of the screen reads "I am ready for multiplayer", and
-  the game is played online. A small lock icon sits near the sound and settings
-  buttons in the top right corner.
+  Matches go to whoever scores 5 goals first, and the score sits at the top of
+  the screen. A big prompt across the table tells you to play the ball.
+  Pressing Space shakes the whole table (the old bar-table move, built right
+  in).
 
 
-  The creator says the idea came from a co-worker who plays in a German kicker
-  league and is too good to beat in person, so this is a chance to try
-  virtually.
+  At the bottom of the screen there's a button that reads "I am ready for
+  multiplayer."
+
+
+  Up in the top right corner, the sound and settings buttons share space with a
+  small lock icon. The players themselves are chunky 3D figures standing on
+  bright green turf with painted field lines.
+
+
+  peterustinox says the idea came from a co-worker who plays in a German kicker
+  league and is too good to beat in person. Kicker is simply what Germans call
+  foosball. So this game is their chance to try beating him virtually.
 play:
   url: https://kicker.nc.hn
   embeddable: true
@@ -59,7 +67,7 @@ media:
     - games/kicker/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-10-01
+  updated: 2026-10-02
 status: live
 provenance:
   foundVia: scout:vibejam-2026

@@ -2,26 +2,35 @@ slug: eco-guardian
 title: ECO Guardian
 tagline: Fight garbage monsters and answer sustainability quizzes to earn power-ups.
 description: >-
-  Garbage monsters swarm you in this 2.5D survivor game, and the way to get
-  stronger is to answer sustainability quiz questions. Correct answers become
-  power-ups during the fight. The first stage, The Plastic Woods, is a forest
-  with plastic waste choking its roots and bottles, cans and food trays
-  scattered across the grass.
+  Garbage monsters swarm you, and you power up by answering quiz questions
+  about sustainability. Every right answer turns into a power-up you use in
+  the fight. It's a 2.5D survivor game with a pop quiz built into its upgrade
+  system.
 
 
-  The title screen has a Start Mission button, a Co-op or Solo play mode toggle,
-  a Guide, and a Ranks board. After you start, a stage intro describes the
-  setting. In the opening clearing, large YES and NO pads stand in the lower
-  corners, which fits the quiz format.
+  The first stage, The Plastic Woods, is an old forest where plastic waste has
+  choked the roots, and bottles, cans and food trays lie scattered across the
+  grass.
 
 
-  An Eco-Mart in the clearing lets you spend carbon to upgrade and unlock
-  eco-abilities. A portal there leads to other worlds. The art pairs pixel-art
-  ground and props with blocky 3D models.
+  From the title screen you can start a mission, switch between co-op and solo,
+  open a guide or look at the ranks board. Once you start, an intro sets up the
+  stage's setting.
 
 
-  The creator is a father of four daughters. He built the game to teach children
-  about sustainability while keeping it fun to play.
+  Big YES and NO pads sit in the lower corners of the opening clearing, which
+  fits a game where answering questions is how you get stronger. Nearby there's
+  an Eco-Mart where you spend carbon to upgrade and unlock eco-abilities. For
+  some reason the currency is carbon, a bit of a wink in a game about cleaning
+  up the planet.
+
+
+  There's also a portal in the clearing that takes you off to other worlds.
+
+
+  The art puts blocky 3D models on top of pixel-art ground and props. VibeCreAI,
+  a father of four daughters, made the game to teach kids about sustainability
+  while keeping it fun to play.
 play:
   url: https://eco-guardian-delta.vercel.app
   embeddable: true

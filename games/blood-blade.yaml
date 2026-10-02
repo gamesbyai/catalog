@@ -2,21 +2,34 @@ slug: blood-blade
 title: Blood&Blade
 tagline: Fight melee duels with directional attacks and blocks in the browser.
 description: >-
-  Type a warrior name and press Enter the Battlefield to join a single shared
-  multiplayer world, listed for 64 warriors. Move with WASD and look around with
-  the mouse. ESC releases the cursor when you need it back.
+  Type a warrior name, then press Enter the Battlefield to join. There's one
+  shared multiplayer world to drop into, and the menu lists room for a whole 64
+  warriors in it.
 
 
-  Combat is melee only and built on directional attacks and directional blocks.
-  Hold left click to attack, and the spot where you click on screen sets the
-  direction of the swing. Right click to block, with the block direction chosen
-  by the same on-screen position.
+  Every fight here is melee, so it always comes down to blade against blade.
 
 
-  The creator loves the combat of Mount & Blade and wanted to recreate it in the
-  browser, keeping the directional attacks and blocks and limiting it to melee.
-  The menu screen uses a dark red and gold palette with a glowing title and a
-  short controls panel.
+  To swing, you hold left click, and the spot on screen where you click decides
+  which direction the blow comes from. Right click blocks, and it reads your
+  click position the same way, which gives your guard a direction just like your
+  attacks.
+
+
+  You move with WASD while the mouse turns your view. When you want your cursor
+  back, ESC lets it go. Handily, all of this sits in a small controls panel
+  right under the name box, along with a note explaining how the click sets your
+  direction.
+
+
+  The battlefield itself is a dim, grassy arena ringed by dark walls, with a
+  few blocky trees standing around.
+
+
+  zahrdaniel loves the combat in Mount & Blade and wanted to rebuild it in the
+  browser. The plan was to keep its directional attacks and blocks while
+  limiting the fighting to melee. The menu screen goes heavy on a dark red and
+  gold palette, with a glowing title and that short controls panel.
 play:
   url: https://bloodandblade.hexpandify.com
   embeddable: true
@@ -60,7 +73,7 @@ media:
     - games/blood-blade/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-10-01
+  updated: 2026-10-02
 status: live
 provenance:
   foundVia: scout:vibejam-2026

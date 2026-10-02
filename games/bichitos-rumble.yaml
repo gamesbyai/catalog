@@ -2,26 +2,35 @@ slug: bichitos-rumble
 title: Bichitos Rumble
 tagline: Shove cute animal fighters off the arena in fast, chaotic 3D brawls.
 description: >-
-  Pick one of nine animal fighters, then headbutt rivals off the arena into the
-  void. The roster has an elephant, fox, gorilla, turtle, frog, mole, penguin,
-  tiger and crab. Each card shows a role label, ratings for speed, weight and
-  power, and three abilities.
+  Pick one of nine cute animal fighters, then headbutt your rivals off the arena
+  and into the void.
 
 
-  From the title screen you can play against bots, join online multiplayer for
-  up to four players, or play with friends. In a match you move, headbutt, and
-  use two abilities plus an ultimate. A restart key resets the round, and a
-  gamepad also works.
+  The lineup runs from an elephant, a fox, a gorilla, a turtle and a frog to a
+  mole, a penguin, a tiger and a crab. Each one gets a card showing its role
+  label, dot ratings for speed, weight and power, and three abilities of its
+  own. For some reason the frog is named Kermit and the tiger goes by Cheeto.
 
 
-  Trunk, the elephant, is a bruiser with top power. Its abilities are a forward
-  tusk dash, a wide area thump that knocks back and stuns, and a grip that stuns
-  a target for 2.5 seconds. That target takes four times damage from any hit.
+  From the title screen you can fight bots, join online matches for up to four
+  players, or set up a game with friends. Once you're in a match, you move
+  around, headbutt, use two abilities and have an ultimate on top.
 
 
-  The select screen lets you drag to rotate a 3D preview of each fighter, and a
-  belts screen opens from it. The creator built it as a party-style brawler for
-  friendly competition with friends.
+  There's a key that restarts the round, and you can plug in a gamepad if you'd
+  rather not use the keyboard.
+
+
+  Trunk, the elephant, shows that each kit packs in a surprising amount. It's
+  a bruiser with maxed-out power, and its tusks carry it forward in a dash
+  while a wide thump knocks back and stuns whatever's around it. The grip is
+  mean, because it stuns a target for 2.5 seconds and that target takes four
+  times the damage from any hit.
+
+
+  On the select screen you can drag to spin a 3D model of each fighter, and a
+  belts screen opens from there too. RGomezR14 made it as a party-style brawler
+  for friendly competition between friends.
 play:
   url: https://bichitosrumble.com
   embeddable: true
@@ -67,7 +76,7 @@ media:
     - games/bichitos-rumble/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-10-01
+  updated: 2026-10-02
 status: live
 provenance:
   foundVia: scout:vibejam-2026

@@ -2,25 +2,35 @@ slug: one-last-surf
 title: One Last Surf
 tagline: Ride waves through a surf session that runs from daylight into a starry night.
 description: >-
-  You start on a surfboard in first person, looking out at the swell. Find the
-  tallest point along it, since that is where the wave will begin to break. Then
-  paddle toward it, holding Shift to build speed while a stamina bar drains.
+  You're sitting on a surfboard in first person, looking out at the swell. Your
+  first job is a bit of wave-reading, finding its tallest point, because that's
+  where the wave will start to break. From there you paddle toward it, holding
+  Shift to pick up speed while a stamina bar shrinks.
 
 
-  Press Space when you think you have enough speed to catch the wave. Once you
-  are up, stay steady as the barrel curls over you and keep yourself inside it.
-  W and S move you deeper into the wave or further ahead on it, and WASD also
-  lets you carve and turn. Press Space again to bail out.
+  When you think you're moving fast enough, you press Space to try to catch the
+  wave. It usually takes a few attempts, though the in-game guide reassuringly
+  promises you'll know the instant you've got one.
 
 
-  Catching a wave usually takes a few attempts, and the in-game guide says you
-  will know right away when you have caught one. A guide screen opens with G.
-  The setting is a sunny ocean, and the creator describes a day of surfing that
-  moves on to sunset and then a night sky full of stars.
+  Pressing G opens that guide, and it's a polished three-step card with its
+  own pictures of the peak, the paddle and the barrel.
 
 
-  The creator built it after a year of surfing lessons and two years away from
-  the water, with barreling waves as the main draw.
+  Once you're up, the aim is to stay steady as the barrel curls over you and
+  keep yourself tucked inside it, the part all that paddling has been building
+  toward. W and S move you deeper into the wave or further ahead on it, while
+  WASD also handles carves and turns. Press Space again and you bail out.
+
+
+  It all happens on a sunny ocean, and sweriko describes a whole day of surfing
+  that drifts into sunset and ends under a night sky full of stars.
+
+
+  sweriko made it after spending a year learning to surf and then going two
+  years without getting back in the water. Barreling waves are the main draw
+  here. They found getting barreled an intriguing idea because it's so hard to
+  pull off.
 play:
   url: https://onelast.surf
   embeddable: true

@@ -2,27 +2,42 @@ slug: data-drop
 title: Data Drop
 tagline: Steer falling blocks and fill in missing letters to crack passwords
 description: >-
-  Blocks carrying letters fall down the board, and each level hides a password
-  with some characters missing. Steer the pieces so the right letters land in
-  the gaps, spelling four-letter user passwords or five-letter admin passwords,
-  which score higher.
+  The first screen is a glowing green terminal, and beside the instructions
+  there's a demo board where a word scanner shows H, a plus-marked slot, M and
+  E, meaning HOME is one letter short.
 
 
-  Rows still matter. Clearing horizontal lines keeps the stack from overflowing
-  and the connection alive, but cracking the word is the actual objective, so
-  playing it like a standard falling-blocks game stalls on level 1. Fourteen
-  block shapes appear, along with virus-infected blocks and corrupted sectors
-  that you clear before they spread across the board.
+  It's the real game in miniature. Letter-carrying blocks fall down the board
+  while each level hides a password with some characters missing, and you steer
+  the pieces so the right letters drop into the gaps. Four-letter user passwords
+  score points, but five-letter admin passwords are worth more.
 
 
-  A defrag meter charges up and removes gaps in the code. The game runs through
-  200 security levels, uses a dictionary of over 7000 words, and cycles through
-  11 board designs. Difficulty rises and eases as you play.
+  Rows still count, because clearing lines stops the stack from overflowing and
+  keeps your connection alive. Cracking the word is the actual objective,
+  though, so if you treat it like any other falling-blocks game you'll stall on
+  level 1.
 
 
-  On desktop, move the mouse to position a block, and double-click to drop it.
-  On mobile, a D-Pad, cycle wheel, rotate button and drop button handle the same
-  actions.
+  You get fourteen block shapes, plus virus-infected blocks and corrupted
+  sectors that you have to clear before they spread across the board.
+
+
+  A defrag meter charges up and wipes out gaps in the code when it's ready.
+  There are 200 security levels, and the intro screen says every 10 unique
+  passwords you crack raises the level, with faster falls and bigger payouts
+  higher up. Behind it sit a large dictionary of over 7000 words and 11 board
+  designs that cycle as you go.
+
+
+  On desktop, you move the mouse to line up a block and double-click to drop it.
+  On mobile, a D-Pad, a cycle wheel, a rotate button and a drop button take care
+  of the same actions.
+
+
+  The story casts you as part of a human resistance hacking into the servers of
+  its AI overlords, and it's funny to see that in a game the creator says was
+  built with AI help. Difficulty rises and eases as you play.
 play:
   url: https://awesomistgames.itch.io/datadrop
   embeddable: false
@@ -63,7 +78,7 @@ media:
     - games/data-drop/shot-2
 dates:
   added: 2026-10-01
-  updated: 2026-10-01
+  updated: 2026-10-02
 status: live
 provenance:
   foundVia: scout:aibgj-3

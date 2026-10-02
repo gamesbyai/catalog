@@ -2,20 +2,28 @@ slug: big-wave-surfing
 title: Big Wave Surfing
 tagline: Paddle into big waves, carve the face, and grab stars before the foam hits.
 description: >-
-  Start by paddling the surfer toward a tall wave, then ride it along its
-  breaking face. Stars are placed along the ride to collect, and the foam is the
-  threat that ends the run if it catches you. The camera sits behind the surfer,
-  low over open water.
+  Paddle your surfer toward the tall wave, then ride along its breaking face
+  once you've caught it. Stars are scattered along the ride for you to grab, and
+  the foam is the thing that ends your run if it swallows you.
 
 
-  The first level is called Mellow Point. If you fail to catch the wave, the
-  round ends on a Missed the Wave screen. It lists time, top speed, average
-  speed, turns, tricks and score, with Retry and Menu buttons beneath.
+  The camera sits low behind your surfer out on open water, with a wall of
+  turquoise rising up ahead.
 
 
-  The setting is a bright daytime sea with scattered clouds and low hills along
-  the horizon. The creator built it for coworkers who have never surfed. It
-  focuses on the simple physics of being carried by a wave, not on tricks.
+  The first level goes by Mellow Point, a gentle name for a wave that size. If
+  you don't manage to catch the wave, the round ends on a Missed the Wave
+  screen. It breaks down your time, top speed, average speed, turns, tricks
+  and score, and the Retry and Menu buttons sit right underneath.
+
+
+  It's all set on a bright daytime sea, with scattered clouds overhead and low
+  hills along the horizon.
+
+
+  rolznz built it for coworkers who have never surfed. The focus is the simple
+  physics of being carried by a wave rather than tricks, even though the results
+  screen still keeps a count of them.
 play:
   url: https://bigwavesurfing.fun
   embeddable: true
@@ -52,7 +60,7 @@ media:
     - games/big-wave-surfing/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-10-01
+  updated: 2026-10-02
 status: live
 provenance:
   foundVia: scout:vibejam-2026

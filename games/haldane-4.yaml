@@ -2,22 +2,34 @@ slug: haldane-4
 title: HALDANE-4
 tagline: Descend alone beneath the Antarctic ice and uncover what waits below in ASCII.
 description: >-
-  The screen opens on a gray terminal panel labeled Operator Terminal v2.1.4. A
-  boxed briefing names HALDANE-4, a submersible exploration platform of the
-  United States Antarctic Survey, unit H4-ANT-72, dated 1972. Everything behind
-  the briefing is drawn in text characters.
+  When it loads, a gray panel titled Operator Terminal v2.1.4 fills the screen,
+  and everything behind its boxed briefing is drawn in text characters.
 
 
-  You pilot the submersible alone on a descent beneath the Antarctic ice shelf.
-  Thrust with WASD, rotate the view with the mouse, cut the engine with Shift,
-  and switch on the light with Space. The key labels sit along the edges of the
-  terminal frame.
+  That briefing introduces HALDANE-4, a submersible exploration platform run by
+  the United States Antarctic Survey. It's unit H4-ANT-72, and the 1972 date
+  gives the whole thing the feel of an old government file.
 
 
-  It is a short horror story told through that descent, with AI voice-over
-  narration. The sound is generated procedurally, and the voice is the only
-  audio made another way. The whole game fits in under 5 MB, with no assets
-  beyond the code.
+  You're piloting that submersible alone, heading down beneath the Antarctic ice
+  shelf. WASD gives you thrust while the mouse rotates your view, Shift cuts the
+  engine and Space switches on the light. The key labels are printed along the
+  edges of the terminal frame itself, so even the controls look like part of the
+  machine.
+
+
+  It's a short horror story, and it unfolds through that descent with an AI
+  voice narrating over it.
+
+
+  Every sound in it is generated procedurally, apart from that voice. The whole
+  game comes in under 5 MB, with nothing beyond the code. Fitting a narrated
+  horror story into that budget is no small trick.
+
+
+  For denisbondare, the challenge was keeping to those strict limits, with ASCII
+  graphics and vibe coding only, while still making something atmospheric that
+  tells a story.
 play:
   url: https://haldane4.denisbondare.com
   embeddable: true

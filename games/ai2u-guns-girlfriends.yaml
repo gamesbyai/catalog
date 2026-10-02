@@ -3,29 +3,44 @@ title: AI2U - Guns & Girlfriends
 tagline: Build a base, launch nukes and outfight three rival factions in a
   real-time strategy game.
 description: >-
-  The start screen shows a nuclear blast over a battlefield of tanks and bases,
-  with a pink-haired catgirl in the corner and a Run game button. In play, you
-  build a base, harvest ore, train tank columns and watch for nuclear
-  superweapon countdowns, in the manner of a '90s Red Alert skirmish.
+  A nuclear mushroom cloud fills the start screen above a battlefield of tanks
+  and bases, while a pink-haired catgirl clutches her head in the corner next to
+  the Run game button.
 
 
-  You pick one of three factions. Catgirls field conscript soldiers, tanks,
-  rocket launchers and a commando who plants C4 on buildings. Witches have fast
-  units, healing cauldrons, suicide potion runners and a Grand Cannon with the
-  longest range. Sirens use bubble-shielded guards, chain-lightning platforms
-  and a siege crab.
+  Once it loads, you're in a '90s Red Alert style skirmish where you build a
+  base, harvest ore, roll out tank columns and watch the countdowns on nuclear
+  superweapons. You pick one of three factions, and all three of them are in
+  love with you, which the game treats as the real problem.
 
 
-  There are 5 maps (islands, deserts, glaciers and a volcano crater) and 3
-  difficulties, with AI opponents that rush, build turrets or wait for an
-  opening. Units counter each other through abilities such as healing auras and
-  hero infiltration. Watch your power supply, and when a nuclear launch warning
-  appears in the top-left corner, expect the strike. An in-game wiki lists live
-  stats for every unit, and victories are saved as local records.
+  Catgirls send out conscript soldiers, tanks and rocket launchers, backed by a
+  commando hero who blows up buildings with C4. Witches move fast and bring
+  healing cauldrons, a bit of chaos in the form of potions that run at the enemy
+  and explode, and a Grand Cannon with the longest range of anything. Sirens
+  hide their guards behind bubble shields and also field chain-lightning
+  platforms plus a siege crab.
 
 
-  The creator built the 3D units almost entirely from procedural geometry, which
-  keeps the download near 10 MB.
+  You get 5 maps of islands, deserts, glaciers and a volcano crater, plus 3
+  difficulties where AI opponents rush you, build turrets or wait for an
+  opening, and the menu labels Hard simply "They never stop."
+
+
+  Units counter each other through abilities like healing auras and hero
+  infiltration, and there's a full in-game wiki showing live stats for every
+  unit. There's a power supply to manage as well. When NUCLEAR LAUNCH DETECTED
+  appears in the top-left corner, the game's own advice is to believe it,
+  because the strike is coming.
+
+
+  Your wins get saved as local victory records, split by difficulty for each
+  faction.
+
+
+  DGSpitzer built the 3D units almost entirely from procedural geometry, which
+  keeps the whole thing at a surprisingly small download near 10 MB, while Suno
+  AI made the soundtrack and Nano Banana drew the character art.
 play:
   url: https://helixngc7293.itch.io/gandg
   embeddable: false
@@ -69,7 +84,7 @@ media:
     - games/ai2u-guns-girlfriends/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-10-01
+  updated: 2026-10-02
 status: live
 provenance:
   foundVia: scout:awesome-cc0

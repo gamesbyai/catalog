@@ -3,25 +3,34 @@ title: floom
 tagline: Drift through a shared canvas, plant seeds, and grow flowers alongside
   strangers.
 description: >-
-  Press play to enter a shared green field where white seeds float past. You
-  appear as a small dot with a generated name label, such as Swift Camellia, and
-  other players appear in the same space. The game describes itself as a place
-  where strangers meet by chance and produce flowers, sound and brief
-  connections.
+  Press play and you're dropped into a shared green field with white seeds
+  floating past. You show up as a small dot with a generated name tag, something
+  like Swift Camellia, and other players turn up in that same space.
 
 
-  Two lines of text in the top right corner show how many of the 49 flowers you
-  have seen so far and how long remains until the meadow resets. A help button
-  sits in the top left corner.
+  It pitches itself as a place where strangers run into each other by chance
+  and leave flowers, sound and brief connections behind.
 
 
-  Press spacebar to open a memento, a snapshot of the field stamped with the
-  date and time. The dialog has a download button. The bar along the bottom
-  holds three buttons: share, snapshot and sound.
+  Two lines of text in the top right corner count how many of the 49 flowers
+  you've seen and show how long it'll be until the meadow resets. Forty-nine
+  is a specific number of flowers to keep track of. A help button sits quietly
+  in the top left.
 
 
-  The creator cites the effect people have on their surroundings, and the effect
-  those surroundings have back on them, as the starting idea.
+  Pressing spacebar opens a memento, a snapshot of the field with the date and
+  time stamped in the corner like an old film photo. There's a download button
+  right in that window. Since the meadow resets anyway, it makes sense that you
+  can save a picture of it.
+
+
+  The bar along the bottom is minimal, with one button each for sharing,
+  taking a snapshot and toggling the sound.
+
+
+  jeremiespoken started from the effect people have on the world around them.
+  The other half of that idea is the effect their surroundings have on them in
+  return.
 play:
   url: https://floom-game.vercel.app
   embeddable: true

@@ -3,27 +3,39 @@ title: Duality
 tagline: Guide two linked entities across parallel dimensions to their portals,
   dodging Void Agents
 description: >-
-  You steer two glowing orbs at once, a cyan one that is you and a magenta one
-  that is your Echo. The arena is split down the middle, with one side per orb.
-  Each side has its own escape portal at the far end, and the goal is to get
-  both orbs into their portals.
+  Two glowing orbs move under your control at the same time, but only one of
+  them is really you. The cyan orb is yours, while the magenta one is your Echo,
+  and it copies every move you make in its own bent way.
 
 
-  The Echo copies your moves, but not directly. The HUD labels the current rule,
-  such as Mirror X on the first dimension, and later levels twist the mirroring
-  further. Red Void Agents patrol both sides, so each move has to be safe in two
-  places at once.
+  Those copies aren't direct. The HUD names the rule in play, and on the first
+  dimension it reads Mirror X. Later levels twist the mirroring further, so the
+  partner you thought you understood keeps learning new ways to disagree with
+  you.
 
 
-  Small crosshair-marked pickups sit around the field, some white and some
-  yellow. A streak multiplier starts at x1, a score and best score sit in the
-  corner, and you have three hearts. A run begins when you first move. Sound can
-  be toggled on screen.
+  The arena is cut down the middle with one side per orb, and each side has its
+  own escape portal at the far end where its orb needs to end up.
 
 
-  The creator designed each level as a small physics puzzle disguised as a
-  survival game, drawing on an interest in quantum physics and parallel
-  dimensions.
+  Red Void Agents patrol both halves of the field. A move that's safe for you
+  also has to be safe for your Echo at the same moment.
+
+
+  Small pickups marked with crosshairs are scattered around both sides, split
+  between white ones and yellow ones.
+
+
+  A streak multiplier starts at x1 in the middle of the HUD, with your score and
+  best score up in the corner. You've got three hearts to work with. Nothing
+  starts until you first move, and there's a button on screen to turn the sound
+  on or off.
+
+
+  alessio_cagnin_ built it around a fascination with quantum physics and
+  parallel dimensions, and the idea of an echo with its own rules came up while
+  brainstorming with AI. They shaped each level as a small physics puzzle
+  dressed up as a survival game.
 play:
   url: https://duality-game-vibejam.vercel.app
   embeddable: true

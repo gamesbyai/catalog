@@ -3,21 +3,39 @@ title: "Tankz: Arena"
 tagline: Drive a tank through waves of enemies, pick upgrades, and fight bosses
   until you die.
 description: >-
-  You drive a tank in a 2D top-down arena and fight wave after wave until your
-  tank is destroyed. Aim with the mouse, fire the main gun with left-click,
-  launch rockets with right-click, press Shift to boost, and press E to trigger
-  Multi-Burst.
+  A glowing white tank sits in the middle of a dark, 2D top-down arena when it
+  loads.
 
 
-  A boss arrives every five waves. Each level-up offers three random upgrades,
-  and you choose one of them. Chain lightning bolts also drop as pickups, and
-  the creator says each one powers up the next thirty seconds of play.
+  Pink enemy tanks are already rolling in around scattered blue wall blocks, and
+  your job is to keep that tank alive through wave after wave until it's finally
+  destroyed. The creator cheerfully admits you'll die eventually, ideally
+  somewhere after wave one. A small timer under the wave counter ticks down to
+  the next wave.
 
 
-  The game is a fast-paced arcade roguelite tagged Action and Survival. Runs are
-  built around the loop of surviving waves, collecting upgrades, and facing the
-  next boss. The creator's AI disclosure covers code, graphics, sounds and text,
-  with AI used as an assistant.
+  You steer with WASD and aim with the mouse, firing the main gun on left-click
+  and rockets on right-click. Shift gives you a boost, and E sets off
+  Multi-Burst, which gets its own glowing button at the bottom of the screen.
+
+
+  At least the bosses keep a schedule, since one shows up every five waves.
+
+
+  Each time you level up, you're offered three random upgrades and you take
+  one of them. There's a tidy stats panel in the corner tracking damage, fire
+  rate, speed, bullet and shot count.
+
+
+  Now and then you'll find chain lightning lying around as a pickup, and
+  according to the creator each one charges up your next thirty seconds, with
+  the bold promise that those seconds become your favorite memory.
+
+
+  Durian Arcade made it as a fast arcade roguelite tagged Action and Survival,
+  with each run looping between outlasting waves, grabbing upgrades and taking
+  on whichever boss comes next. According to the creator, AI worked as an
+  assistant on the code, graphics, sounds and text.
 play:
   url: https://durian-arcade.itch.io/tankz-arena
   embeddable: false
@@ -58,7 +76,7 @@ media:
     - games/tankz-arena/shot-2
 dates:
   added: 2026-10-01
-  updated: 2026-10-01
+  updated: 2026-10-02
 status: live
 provenance:
   foundVia: scout:aibgj-2

@@ -2,23 +2,36 @@ slug: scooter-boy
 title: Scooter Boy
 tagline: Ride an electric scooter through traffic, grab coins, and hop through portals.
 description: >-
-  Scooter Boy puts you on an electric scooter on a road with traffic. Press any
-  key or tap to start, then use the left and right arrows to change lanes, weave
-  through the cars, and pick up coins. The up arrow jumps. Arrows pressed while
-  airborne perform tricks.
+  Scooter Boy has you riding an electric scooter down a road full of traffic,
+  switching lanes to slip between the cars while you scoop up coins. The
+  roadside is low-poly and blocky, with buildings, trees and speed signs lining
+  the way.
 
 
-  On touch screens, swipe to move and jump. A coin counter sits in the top left
-  corner next to a sound toggle, and a label at the top of the screen marks the
-  mode as Endless. The setting is a low-poly roadside with buildings, trees and
-  speed signs.
+  The left and right arrows move you over a lane, and the up arrow launches you
+  into a jump.
 
 
-  A run ends on a game over screen that shows the coins you collected and your
-  best total. You can enter a name to submit the score to a leaderboard, which
-  has separate Endless and Daily tabs. Portals along the way lead to other
-  games. The creator built it to show their brother what is possible today with
-  AI.
+  Once you're in the air, pressing arrows makes the rider pull off tricks, a
+  neat bit of extra mileage from keys you're already using. On a touch screen
+  you swipe to move and jump instead. Any key or a tap gets things rolling.
+
+
+  The screen stays clean while you ride, with a coin counter and a sound
+  toggle in the top left corner and a small label up top marking the mode as
+  Endless.
+
+
+  When a run ends, the game over screen shows the coins you collected next to
+  your best total. You can type in a name and submit your score to a
+  leaderboard, and it keeps separate Endless and Daily tabs.
+
+
+  Portals also turn up along the road, and they don't lead to bonus areas at all
+  but carry you off to other games entirely.
+
+
+  Nik D made Scooter Boy to show their brother what's possible with AI today.
 play:
   url: https://vibejam2026.1clickdev.com
   embeddable: true
@@ -60,7 +73,7 @@ media:
     - games/scooter-boy/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-10-01
+  updated: 2026-10-02
 status: live
 provenance:
   foundVia: scout:vibejam-2026

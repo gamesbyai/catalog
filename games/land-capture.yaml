@@ -3,23 +3,36 @@ title: Land Capture
 tagline: Fight alongside your team to claim more of a shared island than four
   rival teams.
 description: >-
-  You play a small blocky character on an island seen from above, on one of five
-  color teams: red, blue, green, yellow, or purple. The teams compete for the
-  island's land, and each starts with an equal 20% share. A timer sits in the
-  top left corner.
+  You're a small blocky character on an island seen from above, fighting for
+  one of five color teams (red, blue, green, yellow or purple). Every team
+  wants the same land, and each one starts out with an even 20% slice of it.
 
 
-  On the title screen you enter a name, then pick Solo, Online, or Private Room.
-  Each team holds six players. As you move, a strip of your team's color trails
-  behind you. Brown blocks sit scattered across the island and the surrounding
-  water.
+  Wherever you walk, a strip in your team's color follows along behind you like
+  a line of fresh paint.
 
 
-  A factions panel lists each team's player count and land percentage. A
-  leaderboard shows every player's score, kills, and capture percentage. A
-  circular minimap shows the island as a pie split by team color. A bar at the
-  bottom shows your score, your kills, and your rank within your team. The
-  creator wanted to make a fun multiplayer game.
+  Before any of that, the title screen asks for your name and then lets you pick
+  Solo, Online or Private Room. Each team holds six players.
+
+
+  Brown blocks sit scattered around the island and out in the surrounding
+  water too.
+
+
+  A timer ticks away in the top left corner while a factions panel keeps track
+  of each team's player count and land percentage. The circular minimap turns
+  the whole island into a pie chart split by team color, showing the standings
+  at a glance.
+
+
+  There's also a leaderboard listing every player's score, kills and capture
+  percentage. A bar along the bottom shows your own score, your kills and where
+  you rank inside your team. Kills get counted right next to territory, so land
+  isn't the only number on the board.
+
+
+  civaxo, who made Land Capture, wanted to make a fun multiplayer game.
 play:
   url: https://landcapture.up.railway.app
   embeddable: true
@@ -55,7 +68,7 @@ media:
     - games/land-capture/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-10-01
+  updated: 2026-10-02
 status: live
 provenance:
   foundVia: scout:vibejam-2026

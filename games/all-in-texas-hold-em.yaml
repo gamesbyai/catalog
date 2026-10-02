@@ -2,22 +2,34 @@ slug: all-in-texas-hold-em
 title: All In Texas Hold'em
 tagline: Play free, uninterrupted Texas Hold'em poker in your browser or on mobile.
 description: >-
-  You sit as Guest at a green felt table with six other seats, each showing a
-  name and a chip count. You start with 100 chips and the other seats start at
-  500. Press Play Now to deal, and your two hole cards appear face up at the
-  bottom of the table.
+  You're the Guest at a green felt poker table, sharing it with six other
+  seats that each show a name and a chip count. Everyone else sits down with
+  500 chips while you get a modest 100, which leaves you as the smallest stack
+  before a single card is dealt.
 
 
-  A panel on the left names the current stage, such as pre-flop, and shows the
-  total pot. On your turn you choose Fold, Call (the button shows the amount to
-  match), Raise, or All In. Minus and plus buttons beside Raise change the raise
-  amount.
+  Hit Play Now and the deal begins, with your two hole cards landing face up at
+  the bottom of the table.
 
 
-  Five empty slots in the middle of the table are for the community cards.
-  Opponents' cards stay face down, and small labels under their seats, such as
-  Call and Fold, show what each seat did. The creator made it to play Texas
-  Hold'em online without ads.
+  A panel on the left keeps track of the hand by naming the current stage, such
+  as pre-flop, and showing the total pot. When it's your turn you can fold,
+  call, raise or push everything in with All In. The Call button helpfully
+  spells out the exact amount you'd have to match, and small minus and plus
+  buttons beside Raise let you nudge your bet up or down.
+
+
+  Five empty slots sit in the middle of the felt, waiting for the community
+  cards.
+
+
+  Your opponents keep their cards face down, but they don't leave you completely
+  in the dark. A little tag under each seat, like Call or Fold, shows what that
+  player just did, and a seat that folds fades out.
+
+
+  sebastianhox made it because they wanted to play Texas Hold'em online without
+  ads getting in the way.
 play:
   url: https://allintexasholdem.com
   embeddable: true

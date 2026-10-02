@@ -2,21 +2,29 @@ slug: starfall-survivor
 title: Starfall-Survivor
 tagline: Fight waves of enemies in a 3D arena and pick upgrades for your star blades.
 description: >-
-  The start screen is a cream card over a blurred arena, listing three hints:
-  WASD or arrow keys to move, a touch joystick on mobile, and an Auto note
-  saying attacks and skills fire themselves. A green Enter the Arena button
-  starts the run.
+  A cream-colored card sits over a blurred arena when the game loads, with the
+  line "Void hunters enter. One survives." under the title. It lists three
+  hints, WASD or the arrow keys to move, a touch joystick for phones, and an
+  Auto tag saying your attacks and skills fire on their own. Press the big
+  green Enter the Arena button and the run begins.
 
 
-  Inside is a 3D survival arena where you play a void hunter fighting waves of
-  enemies with star blades. You only steer your character. Attacks fire
-  automatically, so your input is movement through the arena as enemies arrive.
+  Inside, you're a void hunter in a 3D survival arena, holding off waves of
+  enemies with star blades.
 
 
-  Each level-up lets you choose one upgrade from a set of powerful options, so
-  the picks you make shape the build. The creator describes it as a fast-paced
-  survival brawler, inspired by the satisfaction of watching a build tear
-  through waves.
+  Steering is your whole job here, since the attacks go off without you. All
+  you're doing is moving around the arena as the enemies arrive.
+
+
+  Leveling up is where the real choices happen. Each time you level, you get to
+  take one upgrade from a set of strong options, and those picks add up to the
+  build you're running with. With the fighting automated, those upgrades are
+  pretty much the only thing you decide besides where you go.
+
+
+  David282213 calls it a fast-paced survival brawler, inspired by the
+  satisfaction of watching a build tear through waves.
 play:
   url: https://bold-term-81c2.david-hsu-d53.workers.dev
   embeddable: true

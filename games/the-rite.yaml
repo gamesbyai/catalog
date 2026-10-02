@@ -2,25 +2,36 @@ slug: the-rite
 title: The Rite
 tagline: Fight other players in a fast multiplayer arena shooter in your browser.
 description: >-
-  The Rite drops you into a first-person arena match against other online
-  players. You shoot your way around the map, and the first player to reach 20
-  kills wins. A 10-minute countdown sits at the bottom of the screen, and a
-  banner at the top names the current leader.
+  The Rite puts you in a first-person arena with other online players, and you
+  shoot your way around the map until someone reaches 20 kills and wins.
 
 
-  The loadout panel lists two weapons at a time, such as pistols and a
-  machinegun or a machinegun and a shotgun. The selected weapon is highlighted.
-  A vitals panel tracks health and a separate shield meter, and distance markers
-  float over other players.
+  A 10-minute countdown ticks away at the bottom of the screen. Up top, a banner
+  names whoever's currently in the lead, which keeps the race to 20 out in the
+  open for everyone. Other players have distance markers floating over them that
+  count off the meters between you.
 
 
-  The screens show different maps. One is a round icy chamber with a pool at its
-  center and glowing pink and blue walls. Another is a dark corridor of brick
-  and stone. A live chat feed lists players joining and trading messages, and
-  the corner shows your ping to a US server.
+  Your loadout panel holds two weapons at a time, like a pair of pistols with a
+  machinegun, or a machinegun with a shotgun. Whichever one you've got selected
+  is highlighted, and you'll see it in your hands, dual pistols and all.
 
 
-  The creator's stated inspiration is Unreal Tournament, which Epic no longer
+  There's a vitals panel too, and it tracks your health alongside a separate
+  shield meter.
+
+
+  The maps look different from each other. One is a round, icy chamber with a
+  pool in the middle and walls glowing pink and blue. Another is a dark
+  corridor built from brick and stone.
+
+
+  A live chat feed runs down the right side, listing players as they join and
+  the messages they trade back and forth. In the corner, there's even your ping
+  to a US server.
+
+
+  MyMoonEnt names Unreal Tournament as the inspiration, a series Epic no longer
   releases alongside each new Unreal Engine version.
 play:
   url: https://therite.magooney.org

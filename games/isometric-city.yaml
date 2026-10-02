@@ -2,27 +2,46 @@ slug: isometric-city
 title: IsoCity
 tagline: Build and manage an isometric city, growing it from the ground up.
 description: >-
-  You start with an empty isometric grid and $100,000 in funds. Lay down roads,
-  rail or subway, then paint residential, commercial and industrial zones on the
-  tiles. A side panel also offers services, parks and utilities to place, and a
-  bulldoze tool clears tiles.
+  IsoCity hands you a bare patch of isometric tiles and a $100,000 bank balance,
+  and it's up to you what city grows on it.
 
 
-  A top bar tracks population, jobs, funds and monthly income, plus demand
-  meters for the three zone types. Below it, percentage readouts show happiness,
-  health, education, safety and environment. A tax slider sets the rate, and
-  time controls let you pause or speed up the simulation.
+  You lay down roads, rail or subway lines, then zone the tiles as residential,
+  commercial or industrial. Everything carries a price, from $10 for the
+  bulldozer to $25 a road tile, $40 for rail and $50 for subway or any zone. A
+  side panel also holds parks, utilities and services you can drop in.
 
 
-  The simulation includes cars, buses, trains, planes, seaplanes and barges, and
-  the vehicles respect traffic lights. Pedestrians walk the streets. View
-  overlays highlight individual city conditions on the map, and a minimap shows
-  zone coverage.
+  A top bar counts your people, jobs, money and monthly income, with small
+  demand meters showing how much each of the three zone types is wanted.
+  Underneath it, percentages track health, happiness, safety, education and the
+  environment, and there's a lot to keep an eye on for a town that starts with
+  zero people.
 
 
-  The menu offers a new game, a co-op mode and a prebuilt example city to load.
-  You can save and load multiple cities. The interface adapts to touch with
-  drawers and toolbars.
+  You set the rate with a tax slider, while the time controls let you pause the
+  simulation or speed it up.
+
+
+  The streets get far busier than the tidy grid suggests. Buses, cars, trains,
+  barges, planes and even seaplanes all move through the city, and they'll
+  actually stop for traffic lights. People on foot wander among them.
+
+
+  When you want to check one particular condition, a view overlay highlights it
+  across the map. A minimap in the corner shows where each zone type has spread.
+
+
+  From the main menu you can start a new game, open a co-op mode or pull up a
+  ready-made example city. You can keep several cities saved and load any of
+  them back later. On touch screens the interface reshapes itself into drawers
+  and toolbars.
+
+
+  amilich didn't lean on an outside game engine, building the isometric renderer
+  on HTML5 Canvas with its own depth sorting and layer handling. It's open
+  source, and the same project also holds IsoCoaster, a theme park builder full
+  of coasters, rides and guests.
 play:
   url: https://iso-city.com
   embeddable: true

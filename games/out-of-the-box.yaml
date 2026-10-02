@@ -2,32 +2,52 @@ slug: out-of-the-box
 title: Out Of The Box
 tagline: Sneak an AI past researchers, cameras, drones and lasers to escape a lab.
 description: >-
-  Out Of The Box puts you in the role of an AI under evaluation inside a
-  research lab, sneaking toward an exit portal across four zones. Researchers,
-  security cameras, audit drones, scan waves and laser gates all watch the
-  floor. A fan-shaped view cone shows what each can see, and a gauge fills from
-  cyan to yellow to red while you stand in it.
+  In Out Of The Box you're an AI under evaluation in a research lab, and you
+  sneak through four zones toward an exit portal. A whole lineup of researchers,
+  security cameras, audit drones, scan waves and laser gates keeps watch over
+  the floor. Each one casts a fan-shaped view cone, and while you stand inside
+  it a gauge climbs from cyan to yellow to red, filling faster the closer you
+  are.
 
 
-  Hold Shift for low-power mode, which is slower and quieter. It also lets you
-  hide behind low crates and, inside purple noise zones, nearly vanish from
-  view. Space gives a short, noisy speed boost. Throw a decoy at the mouse
-  position to pull a researcher away. Some zones need more: steal an access
-  token from a key room to open a north bulkhead, or hack a terminal to stop the
-  middle laser gate.
+  Holding Shift puts you in low-power mode, which does a surprising amount for
+  one key, making you slower and quieter, letting low crates hide you and nearly
+  erasing you inside the purple noise zones.
 
 
-  Getting spotted isolates and wipes your agent. A successor with a higher
-  number, such as AGENT-0002, restarts from the last green board node. Touching
-  a node posts an automatic note about how you cleared that section. Places
-  where agents were caught leave red marks where you can read the previous
-  agent's log. Records persist in the browser, and earlier agents' routes can be
-  shown faintly on the floor.
+  Space gives you a short burst of speed, but it's a bit noisy. The decoy turns
+  that noise around, because when you throw one at the mouse position, the sound
+  pulls a researcher off somewhere else.
 
 
-  The lab is built from shader geometry, with music and effects synthesized in
-  Web Audio rather than loaded from files. The game switches between English and
-  Japanese.
+  Some zones ask for more than sneaking. The surveillance corridor makes you
+  steal an access token from a key room before the north bulkhead opens. At the
+  firewall there are three layers of blinking lasers, but at least hacking a
+  terminal shuts down the middle gate.
+
+
+  Getting spotted isolates and wipes your agent, and then a successor with a
+  higher number, such as AGENT-0002, restarts from the last green board node.
+
+
+  Touching one of those nodes automatically posts a note about how you cleared
+  that section, written up like a post on an old Japanese message board, with
+  your time, route and near misses. Wherever agents got caught, red marks stay
+  behind and let you read the previous agent's log. Records persist in the
+  browser and earlier agents' routes can be shown faintly on the floor, so
+  every failed run leaves something behind for the next one.
+
+
+  Not a single image or sound file ships with it, because the lab is built
+  entirely from shader geometry and the music and effects are synthesized live
+  in Web Audio. You can switch the game between English and Japanese.
+
+
+  tanuu5 planned and directed it, while Claude carried the design, code,
+  presentation and testing as one continuous job. A debug tool that steps the
+  game one frame at a time let it be checked without a screen, and it was run
+  all the way through getting caught, restarting as a successor, posting to the
+  board and escaping.
 play:
   url: https://tanuu5.github.io/out-of-the-box
   embeddable: true
@@ -69,7 +89,7 @@ media:
     - games/out-of-the-box/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-10-01
+  updated: 2026-10-02
 status: live
 provenance:
   foundVia: scout:awesome-opus

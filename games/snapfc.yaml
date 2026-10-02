@@ -2,27 +2,44 @@ slug: snapfc
 title: SnapFC
 tagline: Drag, aim, and snap your players to score in quick physics soccer matches.
 description: >-
-  SnapFC is physics soccer you play by dragging, aiming, and snapping. Instead
-  of running a player around a pitch, you drag one of your pieces, aim it, and
-  snap it toward the ball, then let momentum and collisions decide what happens
-  next. Each turn is a quick decision about angle and power.
+  SnapFC opens on a dark, floodlit stadium with a glowing green shield badge,
+  and it's refreshing that none of the menu buttons asks you to sign up first.
+  Solo Play, Find an Opponent and Online Lobby are all right there, with a
+  leaderboard underneath.
 
 
-  The design draws on tabletop games, and the rules are easy to pick up within
-  seconds. Matches are short, competitive, and played online from a phone or a
-  desktop, and the creator made the game with Lovable. Its final spot in Vibe
-  Jam 2026 was 178th of 945.
+  Once a match starts, you never run a player around. Instead you drag one of
+  your pieces, aim it and snap it toward the ball, and then momentum and
+  collisions take over. Each turn comes down to picking an angle and how much
+  power goes behind it.
+
+
+  Tabletop games inspired it, and the rules are simple enough that you'll have
+  them down within seconds.
 
 
   The depth comes from positioning and timing. A careless shot leaves your side
-  exposed, while a well-placed snap can set up a scoring chance, which gives the
-  matches a strategic edge.
+  exposed, while a well-placed snap can set up a scoring chance, so each snap
+  ends up a bit of an attacking move and a defensive one at once.
+
+
+  Matches are short and competitive, and you can stay available for an online
+  opponent while you keep playing solo.
+
+
+  ivancorreces wanted a tiny soccer game you could start instantly and enjoy
+  within seconds, built on physics mechanics. They aimed for something easy to
+  learn but competitive enough to replay, where each move feels intentional and
+  depends on skill. If you start on a desktop, there's even a QR code on the
+  menu you can scan to carry on from your phone.
 play:
   url: https://snapfc.com
   embeddable: true
   platforms:
     - browser
     - mobile
+  controls:
+    - "Drag: aim and snap a piece toward the ball"
 creator:
   name: ivancorreces
   handle: ivancorreces
@@ -50,7 +67,7 @@ media:
     - games/snapfc/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-09-29
+  updated: 2026-10-02
 status: live
 provenance:
   foundVia: scout:vibejam-2026

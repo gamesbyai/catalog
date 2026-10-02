@@ -2,25 +2,35 @@ slug: service-squad
 title: Service Squad
 tagline: Manage a repair business and fix broken things yourself in first person
 description: >-
-  Answer the incoming calls from customers who need something fixed. Read the
-  job on each request, then accept it or call the customer back later. You run
-  the service company as both the manager and the dispatcher, so every decision
-  is yours.
+  Pick up the phone when a customer rings in, look over the job they need done,
+  and either take it or tell them you'll call back later. You're running the
+  whole service company, so you're the manager and the dispatcher at once and
+  every decision falls to you.
 
 
-  Accepted jobs go to your technicians, and you choose who handles which one.
-  Hiring more technicians lets the crew work several jobs at once and raises how
-  much work the company can take on.
+  Once you've said yes, the job goes to your technicians, and you're the one who
+  decides who gets sent where.
 
 
-  Management is only half of it. The game pairs the dispatching and
-  company-running side with first-person repair action. A short How To Play
-  panel opens the game and covers the call, accept and dispatch steps.
+  Hiring is how the company grows. Each technician you add lets the crew work on
+  more jobs at the same time, which raises how much work the business can take
+  on. The phone and the payroll end up feeding the same question of how much
+  your crew can carry.
 
 
-  The art is cartoon style, with a headset-wearing dispatcher and a cap-wearing
-  technician as the main characters. The creator built it solo with Flutter and
-  Dart on the front end and a Node.js backend, to learn how the AI tools work.
+  The desk work is only half the game, with first-person repair action paired
+  alongside the dispatching and company management.
+
+
+  A short How To Play panel greets you at the start and walks through
+  answering calls, accepting jobs and dispatching your crew. The cartoon art
+  stars a grinning dispatcher in a headset and a technician in a cap holding a
+  wrench, a cheerful pair for a game about fixing broken things.
+
+
+  ralphcanapa built it alone with Flutter and Dart on the front end. There's a
+  Node.js backend behind it too, and that's a lot of ground for one person to
+  cover. They made the game to learn how the new AI tools work.
 play:
   url: https://service-sim.netlify.app
   embeddable: true
@@ -56,7 +66,7 @@ media:
     - games/service-squad/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-10-01
+  updated: 2026-10-02
 status: live
 provenance:
   foundVia: scout:vibejam-2026

@@ -2,27 +2,36 @@ slug: sea-control-cold-war-arena
 title: Sea Control - Cold War Arena
 tagline: Command missile-armed warships in online Cold War naval battles.
 description: >-
-  Sea Control puts you in command of a missile-armed warship in a Cold War naval
-  arena, described as World of Warships with missiles. You type a name, then
-  join a room where online players share the sea with bot captains such as
-  Nelson, Nimitz, Yamamoto, Togo and Yi Sun-sin.
+  It's the Cold War at sea, and you're in command of a missile-armed warship in
+  an online naval arena. Think of it as World of Warships, only with missiles.
+  You type in a name and land in a room where online players share the water
+  with bot captains like Nelson, Nimitz, Yamamoto, Togo and Yi Sun-sin.
 
 
-  The view looks straight down on the water at your ship, which starts as a fast
-  attack craft (FAC). A throttle slider runs from full ahead through stop to
-  full astern, and a second slider sets the rudder from hard to port to hard to
-  starboard. A round radar scope sits top right with a toggle for the search
-  radar.
+  Even the bots get personalities, since the join messages tag Nimitz and
+  Yamamoto as aggressive, Togo as cautious and Nelson as going for the
+  objective.
 
 
-  To attack, click an enemy hull to lock it. The anti-ship missile load readout
-  shows loaded missiles for the port and starboard sides, and a bar tracks your
-  hull HP.
+  The camera looks straight down on the water at your ship, which starts out as
+  a small fast attack craft. The steering is laid out a bit like a real ship's
+  bridge, with one slider for the throttle running from full ahead through stop
+  to full astern and another swinging the rudder from hard to port to hard to
+  starboard.
 
 
-  A match timer, score, XP bar and rank (you begin as Ensign) sit in the top
-  left. A comms log announces who joins the room, and a Help button opens the
-  full briefing.
+  To attack, you click an enemy hull to lock onto it. A panel in the top right
+  counts the anti-ship missiles loaded on your port and starboard sides, with a
+  bar for your hull's HP just above. There's a round radar scope up there too,
+  and R switches the search radar on and off.
+
+
+  Over in the top left you'll find the match timer, your score, an XP bar and
+  your rank, which begins at a humble Ensign.
+
+
+  A comms log calls out everyone who joins the room. When you want the full
+  briefing, the Help button opens it.
 play:
   url: https://coldwararena.seacontrol.net
   embeddable: true
@@ -61,7 +70,7 @@ media:
     - games/sea-control-cold-war-arena/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-10-01
+  updated: 2026-10-02
 status: live
 provenance:
   foundVia: scout:vibejam-2026

@@ -3,26 +3,42 @@ title: Sato Denki — Akihabara Tech Shop
 tagline: Chain fast combo shifts to keep your hospitalized dad's Akihabara tech
   shop afloat.
 description: >-
-  Your father is in the hospital, and the family's 40-year-old electronics store
-  in Akihabara is in danger of being taken by the bank. Sato Denki is a shop
-  simulation where you run the counter in quick rounds, chaining rapid, Street
-  Fighter-style combo shifts to bring in enough money before the bank wins.
+  This shop simulation has you chaining rapid combo shifts in the style of
+  Street Fighter while you run the counter in quick rounds. A shift is a
+  30-second loop where you click your inventory to hand each customer whatever
+  they're asking for.
 
 
-  The loop borrows from casino machines: short rounds, loud combo feedback, and
-  global stakes meant to pull you into one more run. Every sprite came from the
-  creator's own AI pixel art tool, which keeps the shop's look consistent.
+  Your dad's in Keio Hospital, which leaves you in charge of a family
+  electronics store in Akihabara that's been open for 40 years. The bank wants
+  it, so each round is about bringing in enough money before the bank wins. You
+  even get to type in a name for the shop before you open the doors.
 
 
-  The creator says Claude Code wrote 99% of the code and calls the project 100%
-  vibe coded. They made it for the jam to test that pixel art generator and the
-  coding workflow together, from start to finish.
+  SYSTEMCRASH92 designed it to work like a casino machine, with short rounds,
+  loud combo feedback and global stakes meant to pull you back for one more run.
+
+
+  Every sprite came out of DogSprite, an AI pixel art tool they were building on
+  their own. Having one generator make all of it is a clever way to keep the
+  shop's look consistent.
+
+
+  The title screen sets the mood nicely with a glowing yellow sign, a dark
+  purple backdrop and the shop's name in Japanese, 佐藤電気.
+
+
+  SYSTEMCRASH92 made the game to test that pixel art generator and their coding
+  workflow together, from start to finish. According to them, Claude Code wrote
+  99% of the code. They call the project 100% vibe coded.
 play:
   url: https://sato-denki-eight.vercel.app
   embeddable: true
   platforms:
     - browser
     - mobile
+  controls:
+    - "Click inventory: serve what the customer wants"
 creator:
   name: SYSTEMCRASH92
   handle: systemcrash92
@@ -52,7 +68,7 @@ media:
     - games/sato-denki-akihabara-tech-shop/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-09-29
+  updated: 2026-10-02
 status: live
 provenance:
   foundVia: scout:vibejam-2026

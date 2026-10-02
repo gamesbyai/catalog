@@ -2,21 +2,34 @@ slug: cyberdeck-survival
 title: Cyberdeck Survival
 tagline: Play cards, parry attacks, and outlast enemy waves in a cyberpunk arena.
 description: >-
-  Cyberdeck Survivor drops you into a cyberpunk arena where waves of enemies
-  close in, and you survive by moving, using a Basic Attack, and playing battle
-  chips from your deck. Move with WASD or the arrow keys. Chips trigger on Q, E,
-  R and F.
+  Cyberdeck Survivor drops you into a cyberpunk arena where enemies keep closing
+  in wave after wave, and you stay alive by moving, swinging a Basic Attack and
+  firing battle chips out of your deck. It's an arena survivor in the Vampire
+  Survivors mold, but with a deck of cards doing a lot of the fighting.
 
 
-  Incoming hits can be parried with Space. Over a run you survive waves, choose
-  rewards, and work toward a boss fight. Defeating the boss opens a portal to
-  the next game.
+  You move with WASD or the arrow keys, while your chips go off on Q, E, R and
+  F.
 
 
-  The main menu offers Start Run, a Battle Chips screen, Settings and Credits.
-  This is version 0.0.1, an early alpha. The creator lists demo polish, clearer
-  combat tells, balance, deeper run progression, arenas, cyberware, events and a
-  branching map as next updates.
+  Space parries incoming hits, so the deck isn't your only answer when something
+  swings at you. The chips even get their own Battle Chips screen on the main
+  menu, sitting next to Start Run, Settings and Credits.
+
+
+  A run means surviving the waves, picking rewards along the way and working
+  toward a boss. Up top there's a wave counter and a timer with a level and XP
+  bar under them, and your health and energy gauges sit in the bottom corner.
+  Beat the boss and a portal opens that sends you on to the next game.
+
+
+  Fall, and the game declares "Runner down" before showing your final score and
+  offering a fresh run.
+
+
+  Elvlin89 has marked this as version 0.0.1, an early alpha. Next on their list
+  are demo polish, clearer combat tells, balance and deeper run progression. The
+  same list also names arenas, cyberware, events and a branching map.
 play:
   url: https://elvlin.store/games/cyberdeck-survivor
   embeddable: true
@@ -57,7 +70,7 @@ media:
     - games/cyberdeck-survival/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-10-01
+  updated: 2026-10-02
 status: live
 provenance:
   foundVia: scout:vibejam-2026

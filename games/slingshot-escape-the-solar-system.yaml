@@ -2,24 +2,34 @@ slug: slingshot-escape-the-solar-system
 title: "Slingshot: Escape the solar system"
 tagline: Swing past planets and use their gravity to escape the solar system.
 description: >-
-  You steer a small spacecraft through a 2D version of the real solar system,
-  and the goal is to leave it. A run starts with the ship beside a large planet.
-  Aim with the left and right arrow keys, then hold Space to launch.
+  You pilot a small spacecraft through a flat, 2D take on the real solar system,
+  and all you're trying to do is get out of it. Each run starts with your ship
+  sitting right next to a big planet.
 
 
-  Planets give you speed when you fly close to them, so each pass is a gravity
-  slingshot. Pressing Space to burn at the nearest point of an approach gives
-  the largest boost, which means timing your burn to each planet you pass.
+  Planets give you extra speed when you swing in close, so every flyby works
+  as a gravity slingshot. The biggest kick comes when you press Space to burn
+  at the nearest point of the approach. It turns each planet you pass into a
+  timing problem, folding real orbital physics into a single button.
 
 
-  The start screen lists the other keys: Shift for plan, W for warp, and R to
-  restart. A logbook opens with Escape, and the start screen also links to a
-  tutorial and a wiki.
+  To get off the ground, you aim with the left and right arrow keys and then
+  hold Space to launch.
 
 
-  The creator took the space setting and contemplative mood from Outer Wilds,
-  and the 2D view of the real solar system from Spaceflight Simulator. The art
-  is pixelated.
+  The start screen lays out the rest of the keys too, with Shift to plan, W to
+  warp and R to restart. Escape opens a logbook, and it's considerate that a
+  game this physics-heavy puts a tutorial and a wiki one click away on that same
+  screen.
+
+
+  Everything's drawn in chunky pixels, right down to the planet that fills a
+  whole half of your view when you begin.
+
+
+  romainsimon took the space setting and its contemplative mood from Outer
+  Wilds. Keeping things in 2D with the real solar system came from Spaceflight
+  Simulator instead.
 play:
   url: https://slingshot.indiega.me
   embeddable: true
@@ -63,7 +73,7 @@ media:
     - games/slingshot-escape-the-solar-system/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-10-01
+  updated: 2026-10-02
 status: live
 provenance:
   foundVia: scout:vibejam-2026

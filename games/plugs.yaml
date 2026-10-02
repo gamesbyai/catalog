@@ -2,30 +2,53 @@ slug: plugs
 title: PLUGS
 tagline: Plug in lamps and mix colored light to brighten seven rooms in a dark house.
 description: >-
-  The game opens on a dark title screen with a single lamp, a wall outlet and a
-  cord, and a click starts it. From there you drag plugs into outlets, carry
-  lamps around, open drawers and flip switches, all with the mouse, to light
-  each room of a dark house.
+  PLUGS starts with almost nothing, a dark room, a single lamp, a wall outlet
+  and a cord. Click once and you're in.
 
 
-  There are seven rooms, each with its own puzzle logic, color palette and era.
-  The puzzles turn on telling colored light apart, since pools of colored light
-  mix on the wall. Lighting is computed per pixel, with cast shadows and dust
-  that shows only where light falls.
+  From there, the whole game is basically about messing with electricity. You
+  drag plugs into outlets, move lamps around, open drawers, flip switches and
+  figure out, room by room, how to light up the house. Everything is controlled
+  with the mouse, and it's all very hands-on.
 
 
-  Cords are simulated as ropes. They sag and tangle, and heavy-gauge ones resist
-  being dragged. Outlets are scarce, and a breaker has to be kept in mind.
-  Sixty-five secrets are hidden in the walls, paint and plaster, along with
-  easter eggs.
+  There are seven rooms, and they're all noticeably different. Different
+  colors, different eras, different puzzle ideas. A lot of the puzzles are
+  built around colored light and how those colors mix when they overlap on the
+  walls, so you're not just trying to turn lights on, you're trying to
+  understand what the light is actually doing.
 
 
-  A 59-page in-game owner's manual holds wiring diagrams, an appliance register
-  and a plug annex. Each room has a hint option that nudges without solving. An
-  optional bulb marks setting stamps a letter on each lit lamp so no puzzle
-  depends on hue alone. Progress saves in the browser. Design is by Grant
-  Haffner, with the code and pixel art written by Claude and drawn at runtime,
-  with synthesized sound.
+  The lighting itself is detailed. It's calculated per pixel, objects cast
+  shadows, and even the dust only shows up where the light hits it.
+
+
+  The cords are a whole thing too. They behave like actual ropes, so they sag,
+  get tangled and pull against you. Thicker cables are even heavier and are
+  harder to drag around. You also don't have unlimited outlets, and there's a
+  breaker to worry about, so it's less about "where does this plug go?" and more
+  about managing the whole setup.
+
+
+  There are 65 secrets hidden around the house, tucked into walls, paint and
+  plaster, plus a bunch of easter eggs.
+
+
+  For some reason there's also a 59-page owner's manual inside the game,
+  complete with wiring diagrams, an appliance register and a plug annex. It's
+  way more elaborate than it has any right to be, but it fits the game
+  perfectly. Each room also has an optional hint that gives you a push in the
+  right direction without just handing you the answer.
+
+
+  There's a nice accessibility touch too. You can turn on bulb markings that
+  put a letter on each lit lamp, so none of the puzzles rely entirely on being
+  able to tell colors apart.
+
+
+  Progress saves in the browser. The game was designed by Grant Haffner, while
+  Claude handled the code and pixel art, with everything drawn at runtime and
+  the sound synthesized in-game.
 play:
   url: https://granthaffner.itch.io/plugs
   embeddable: false
@@ -71,7 +94,7 @@ media:
     - games/plugs/shot-2
 dates:
   added: 2026-09-30
-  updated: 2026-10-01
+  updated: 2026-10-02
 status: live
 provenance:
   foundVia: scout:aibgj-4

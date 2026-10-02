@@ -2,25 +2,36 @@ slug: field-of-command
 title: Field of Command
 tagline: Command British or German forces in a real-time battle across 1940 Kent.
 description: >-
-  You command a British infantry section from the BEF Infantry Command in a
-  real-time strategy game set in the fields of Kent in 1940s England. A squad of
-  soldiers stands on an isometric field beside a Union Jack, each with a small
-  health bar, and a card labeled No. 1 Section shows the squad's status.
+  You command a British infantry section from the BEF Infantry Command, holding
+  the fields of Kent in 1940s England in a real-time strategy game. Your squad
+  starts out on an isometric field next to a Union Jack, every soldier carrying
+  a tiny health bar, while a card marked No. 1 Section keeps track of how the
+  squad's doing.
 
 
-  An AI opponent, Blitzkrieg Infantry, holds the far side of the map. The top
-  bar shows a bar for each side, both starting at 2000. You can also take the
-  German side and lead the assault instead of the defense, in an alternate
-  history of an invasion that never happened.
+  Across the map sits an AI opponent called Blitzkrieg Infantry, and the bar
+  along the top gives each side its own meter, yours and theirs both starting at
+  an even 2000.
 
 
-  Two counters sit at the screen edges. Deploy reads 0 / 0 with an income of
-  +0.2 per second, and Tactical reads 0 / 500. Pause and speed buttons let you
-  run the game at 1x, 2x or 4x, and a delegate button sits below them.
+  Defending isn't your only option. You can also flip to the German side and
+  lead the assault instead of holding it back, in an alternate history built
+  around an invasion that never actually happened.
+
+
+  Two counters sit at the edges of the screen. Deploy shows 0 / 0 with an income
+  of +0.2 per second, while Tactical shows 0 / 500. They're drawn as little
+  paper cards, just like the No. 1 Section tag, which gives the whole interface
+  a field-office look.
+
+
+  A considerate set of pause and speed buttons lets you run things at 1x, 2x or
+  4x, with a delegate button tucked just below them.
 
 
   A minimap in the corner marks your units in blue and the enemy line in red.
-  The build is labeled v0.2.7 prototype and links to a bug report form.
+  It's still early days for this one, with the build labeled v0.2.7 prototype.
+  Clicking that label takes you to a bug report form.
 play:
   url: https://play.fieldofcommand.com
   embeddable: false

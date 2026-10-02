@@ -2,26 +2,43 @@ slug: copycat
 title: Copycat
 tagline: Race a shadow cat across short black-and-white platform maps
 description: >-
-  You jump through short, dense platforming maps in a race against your own
-  shadow. Platforms, spikes, floating ledges, and collectible echoes are seeded
-  for each race, so a map feels familiar but shifts a little every time you play
+  Hit Space or click to jump, then press again in midair for a double jump that
+  sends your little pixel cat into a barrel-roll with a particle trail behind
   it.
 
 
-  Space bar or a click makes you jump, and a second press gives you a double
-  jump with a barrel-roll and particle trail. You can grab onto edges, and jump
-  buffering forgives presses that come slightly early.
+  You're racing your own shadow, a gray copy of the cat that runs beside you
+  with SHADOW printed over its head in case there's any doubt. The maps are
+  short and dense. Platforms, spikes, floating ledges and collectible echoes
+  are seeded for each race, so a map stays familiar while shifting a little
+  every time you play it.
 
 
-  Echoes you collect feed into your final time. Ghost data is saved between
-  sessions, and local stats track wins, losses, your streak, and your best time.
-  Restarting is instant, with no menus in between.
+  Echoes are more than decoration, because the ones you grab feed into your
+  final time. The jump comes with a considerate pair of safety nets too, since
+  you can grab onto edges and jump buffering catches presses that land slightly
+  early.
 
 
-  The look is strict black and white, drawn in a one-bit style with scanlines
-  and light motion. It runs as a single HTML file on a 1200x600 canvas, with
-  sound effects from Web Audio and multi-touch handling for phones. The creator
-  lists it as under development, with more modes and shadow mechanics planned.
+  When a race goes wrong, restarting is instant and skips the menus entirely,
+  with R shown on screen as the reset key.
+
+
+  The game keeps a thorough record of you between sessions. Your ghost data is
+  saved, and local stats track wins, losses, your current streak and your best
+  time. Between the stored shadow and that running tally, every race you
+  finish leaves something behind to beat.
+
+
+  It's all strict black and white, drawn in a one-bit style with scanlines and
+  some gentle motion. Under the hood it's a single HTML file running on a
+  1200x600 canvas, with Web Audio sound effects and multi-touch handling for
+  phones.
+
+
+  webXOS lists it as under development, with more modes and new shadow mechanics
+  planned. According to the creator, AI assisted with the code, graphics, sounds
+  and text.
 play:
   url: https://webxos.itch.io/copycat
   embeddable: false
@@ -59,7 +76,7 @@ media:
     - games/copycat/shot-2
 dates:
   added: 2026-10-01
-  updated: 2026-10-01
+  updated: 2026-10-02
 status: live
 provenance:
   foundVia: scout:aibgj-4

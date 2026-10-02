@@ -3,25 +3,38 @@ title: Ombres
 tagline: Steer a giant bird whose shadow paints the desert; biggest territory at
   nightfall wins.
 description: >-
-  In Ombres, each player steers a giant bird whose shadow paints the desert sand
-  in their color, and the biggest territory at nightfall wins. It is a local
-  party game for 1 to 12 players: the game runs in a browser on a computer
-  connected to a screen, and everyone flies from a phone after scanning a QR
-  code. Bots fill empty seats, so one phone is enough.
+  The title screen opens on a giant bird with a little rider on its back,
+  dragging a pink smear of shadow across pastel sand. In the corner sit a QR
+  code and a four-letter room code, because the main game runs on one shared
+  screen while everyone flies from their own phone. Bots take any empty seats,
+  so a single phone is plenty to start a match for up to 12.
 
 
-  The look follows the ink outlines and flat colors of Moebius. According to the
-  repository, Claude Opus 5.5 designed and built it from a single brief, with
-  Brieuc Crosson supervising. The model wrote all of the code, in multi-agent
-  workflows in Claude Code.
+  Your bird's shadow paints the desert in your color, and whoever owns the most
+  sand at nightfall wins. Altitude is where the real decisions live. Hold dive
+  and you skim low with a small, strong shadow, while letting go lifts you into
+  a wide, pale one that can't repaint strong sand.
 
 
-  Altitude is the tactic: diving low gives a small, strong shadow, and climbing
-  gives a wide, pale one that cannot repaint strong sand. You can strike a lower
-  bird by diving onto it, though it can dodge with a wingbeat. A match is three
-  rounds of about two minutes, the last counting double, and as the sun sets the
-  shadows stretch until night sweeps across the map and locks everything in
-  place.
+  Towers pull a bit of a double act, freezing any sand their shadows cover and
+  hiding a bird whose shadow slips inside.
+
+
+  The other birds are targets too. Dive while you're above a lower bird to
+  strike it, and a hit stalls it and turns its trail your color. Miss and you're
+  the one stalling, though at least the target gets a fair warning in the form
+  of a clack before it can dodge with a wingbeat.
+
+
+  A match runs three rounds of about two minutes, the last counting double, and
+  as the sun sinks the shadows stretch until, for the final 12 seconds, night
+  rolls off the cliff and freezes the desert west to east.
+
+
+  According to the repository, Claude Opus 5.5 designed and built Ombres from a
+  single brief with Brieuc Crosson supervising, borrowing the ink outlines and
+  flat colors of Moebius for its look. The project also says the model wrote
+  every line of the code through multi-agent workflows.
 play:
   url: https://ombres.deploy.breizhware.com
   embeddable: true
@@ -63,7 +76,7 @@ media:
     - games/ombres/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-09-30
+  updated: 2026-10-02
 status: live
 provenance:
   foundVia: scout:awesome-opus

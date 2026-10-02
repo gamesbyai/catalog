@@ -2,20 +2,34 @@ slug: demolition-drive
 title: Demolition Drive
 tagline: Swing, smash, and shatter structures to climb a global leaderboard.
 description: >-
-  The start screen asks for a callsign, with a Play button beside the text
-  field. The preview art shows a wrecking ball hanging from a tilted arm next to
-  a row of tall orange and blue towers. The job is to knock those towers down.
+  The start screen asks for a callsign, with a Play button right beside the text
+  field. The preview art shows a wrecking ball dangling from a tilted arm beside
+  a row of tall orange and blue towers, and your job is to knock those towers
+  down.
 
 
-  Move with WASD, smash with the left mouse button, boost with E or the right
-  mouse button, and slam with Q. Rounds are fast, and targets include towers and
-  stars. Each round brings a new mix of objectives, so runs differ from one
-  another.
+  Once you're in, you're behind a stubby yellow truck with a tall red boom,
+  and a black wrecking ball swings on a chain off the top of it, all in a
+  low-poly park ringed by pastel skyscrapers.
 
 
-  Scores go to a global leaderboard, so the aim is to rank above other players.
-  The creator made it after growing tired of games built around construction
-  loops and wanting one that is only about smashing things.
+  WASD drives and the left mouse button smashes. E or the right mouse button is
+  your boost, while Q slams, and the on-screen buttons give them livelier names,
+  Turbo Swing and Ball Drop.
+
+
+  Rounds are fast, and you're after towers and stars. Because each round hands
+  you a fresh mix of objectives, one run doesn't play out like the last. The
+  first round asks you to wreck 80% of the towers in 45 seconds and clear it
+  under 45 seconds without using abilities.
+
+
+  Your scores land on a global leaderboard, so the goal is climbing above
+  everyone else.
+
+
+  Jinish1049533 had grown tired of games built around construction loops and
+  wanted one that's only about smashing things.
 play:
   url: https://tower-crusher.vercel.app
   embeddable: true
@@ -57,7 +71,7 @@ media:
     - games/demolition-drive/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-10-01
+  updated: 2026-10-02
 status: live
 provenance:
   foundVia: scout:vibejam-2026

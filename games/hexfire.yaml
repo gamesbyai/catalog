@@ -2,21 +2,33 @@ slug: hexfire
 title: HexFire
 tagline: Battle other wizards in a shrinking arena where every kill raises your bounty.
 description: >-
-  Every kill in this wizard battle royale makes you a bigger target. The title
-  screen sets the stakes in one line: kill for essence, and dying loses all of
-  it. A button labeled Begin Descent starts the match from a setup screen.
+  Every wizard you take down in this battle royale earns you essence, and if you
+  die, you lose every bit of it.
 
 
-  The setup screen is where you build your wizard. A name field comes with a
-  reroll button that generates random names. Five arcane skills (damage, speed,
-  range, blast and agility) each have a bar and a value, with plus and minus
-  buttons to shift points between them. A points counter sits above the list.
+  The title screen doesn't bother softening that deal, and the blunt rule sits
+  in small letters right under the gold logo.
 
 
-  In play, WASD moves, Space jumps, the left mouse button shoots, V switches the
-  view and F interacts. The wizard is a blocky pixel-art figure in a purple hat
-  and green robe, carrying a staff. The creator drew on a childhood fondness for
-  Runescape and Minecraft.
+  Before the match even starts, you build your wizard on a setup screen.
+
+
+  You can type a name or hit the reroll button for a random one, which is how
+  you end up called something like xx_Marksman40%. Five arcane skills (damage,
+  speed, range, blast and agility) each get a bar and a number. Plus and minus
+  buttons shift points between them, while a counter above the list shows what's
+  left to spend.
+
+
+  Once you're out there, WASD moves you, Space jumps and the left mouse button
+  shoots. V switches the view, while F interacts. All of it is laid out along
+  the bottom of the setup screen, right above the Begin Descent button that
+  starts the match.
+
+
+  Your wizard is a blocky pixel-art figure in a purple hat and green robe,
+  carrying a staff, a look with plenty of Minecraft in it. TeemuSor made the
+  game out of a childhood crush on Runescape and Minecraft.
 play:
   url: https://hexfi.re
   embeddable: true
@@ -59,7 +71,7 @@ media:
     - games/hexfire/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-10-01
+  updated: 2026-10-02
 status: live
 provenance:
   foundVia: scout:vibejam-2026

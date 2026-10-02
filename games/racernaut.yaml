@@ -3,25 +3,34 @@ title: Racernaut
 tagline: Drive through an endless generated city, choosing turns at every
   junction to stay alive.
 description: >-
-  Press Space to start driving through a city that generates itself as you go.
-  Each junction is a bet on which way to turn, and the wrong turn costs you the
-  run. The streets stream in ahead of the car as you drive.
+  A single wrong turn ends your run in Racernaut, so every junction counts. The
+  city isn't waiting for you either, since it generates itself as you drive and
+  the streets stream in just ahead of the car.
 
 
-  Steer with A and D, hold W to boost and S to brake. C switches the camera. The
-  default view looks straight down on the car, with crosswalks, traffic lights,
-  rooftops, trees and parked vehicles laid out around each intersection.
+  Press Space and you're off, steering with A and D while you hold W to boost
+  and S to brake.
 
 
-  Two columns of icon buttons sit on the left edge. The top column has four
-  buttons with sun and moon symbols, and the bottom column has five with cloud
-  and rain symbols. A loading bar tracks the first rows of city being built
-  before you can drive.
+  The default camera looks straight down on the car, and it's a busy view for
+  something built on the fly. Crosswalks, traffic lights, rooftops, trees and
+  parked vehicles crowd in around each intersection. If you want a different
+  angle, C switches the camera.
 
 
-  The creator had only experimented with procedural generation before and wanted
-  to build something serious with it. An audio toggle sits in the top corner,
-  with credits for the music and ambient sound shown beside it.
+  Down the left edge there are two columns of icon buttons, four marked with
+  suns and moons on top and five with clouds and rain underneath.
+
+
+  Before you can drive, a loading bar counts off the first rows of city while
+  they're built. An audio toggle sits in the top corner, with the music credited
+  to StudioKolomna from Pixabay and the ambient sound to ZapSplat.
+
+
+  rameshvel had toyed with procedural generation over the years but never built
+  anything serious with it. According to them, AI is what changed that. Their
+  view is that imagination is now most of what you need, and development
+  experience on top of it helps even more.
 play:
   url: https://racernaut.com
   embeddable: true

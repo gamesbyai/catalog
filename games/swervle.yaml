@@ -2,25 +2,54 @@ slug: swervle
 title: Swervle
 tagline: Race a fresh procedurally generated 90-second route that changes every day.
 description: >-
-  Swervle is an arcade racing game built on the daily format that Wordle
-  popularized. Each day brings one fresh, procedurally generated route, and a
-  run lasts 90 seconds: steer through that day's course as well as you can
-  before the clock runs out. Tomorrow's route will be different.
+  You're behind the wheel of a boxy yellow car that looks like it was snapped
+  together from toy blocks, and every day there's a brand-new route to race.
 
 
-  The creator states it was built with GPT-5.6 and Claude Opus 5, and the
-  single-player game renders in the browser with Three.js.
+  This arcade racer takes the daily idea that Wordle made famous and puts it on
+  a racetrack, so there's exactly one procedurally generated course each day.
+  Everyone drives the same one on a given day, which means you aren't facing an
+  endless stream of random tracks but coming back to a single road and trying to
+  do better on it. Tomorrow's route will be a different one.
 
 
-  The daily structure is the hook. Everyone gets the same route on a given day,
-  so instead of facing an endless stream of random tracks, you can return to one
-  course and try to improve on it. The 90-second length keeps each attempt
-  quick, so trying again costs little before the day's route is gone.
+  Each run gives you 90 seconds to get through that day's course as well as you
+  can before the clock runs out. Because attempts are that short, another try
+  costs you little before the day's route is gone.
+
+
+  A countdown gets you off the line, and then a surprisingly precise timer
+  counts in thousandths of a second while small readouts in the corners track
+  your checkpoints, gear and speed.
+
+
+  Beyond throttle and steering, you get a handbrake, a key to recover the car
+  and another to restart the run. You can also cycle the camera. Ghosts switch
+  on and off with G, which fits nicely in a game where everybody's driving the
+  identical road.
+
+
+  Off the track, the menu lets you edit your vehicle, look back at past races
+  and check a leaderboard that shows each driver's time beside their car. It's
+  all drawn in a chunky low-poly style, with a dark road running between blue
+  water and blocky green hills.
+
+
+  The game was built with GPT-5.6 and Claude Opus 5, according to its creator.
 play:
   url: https://swervle.com
   embeddable: false
   platforms:
     - browser
+  controls:
+    - "W / Up arrow: throttle"
+    - "A / D: steer"
+    - "Space: handbrake"
+    - "R: recover"
+    - "F: restart"
+    - "C: camera"
+    - "G: ghosts"
+    - "Esc: menu"
 creator:
   name: Swervle
   handle: swervle
@@ -50,7 +79,7 @@ media:
     - games/swervle/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-09-29
+  updated: 2026-10-02
 status: live
 provenance:
   foundVia: scout:awesome-cc0

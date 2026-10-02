@@ -3,22 +3,35 @@ title: The Underground
 tagline: Explore generated tunnels, open locked doors, and find artifacts before
   time runs out.
 description: >-
-  A run starts at 03:00:00 on a clock that counts toward 05:00:00. In that
-  window you explore a procedurally generated network of underground tunnels,
-  open locked doors, and look for hidden artifacts before time runs out. Clues
-  left by other players are shared into your world.
+  Each run starts with the clock at a specific 03:00:00, and you've got until
+  it ticks over to 05:00:00 to find what's hidden underground before time runs
+  out.
 
 
-  You carry three tools in numbered slots. The flashlight has a battery meter
-  and adjustable brightness. The camera is for photographing evidence. The
-  crowbar starts with five pries, shown as a count on its slot. Stamina and
-  battery bars sit on the left of the screen.
+  The tunnel network is procedurally generated, and the creator describes the
+  system as endless. You explore it, get through locked doors and hunt for
+  artifacts tucked out of sight. Clues that other players leave behind get
+  shared into your world too.
 
 
-  An objectives panel logs how many objectives are complete, a discoveries list
-  records recent finds, and a points counter tracks your score. A notebook opens
-  with N. The creator wanted to find out what lies down the dark tunnels seen
-  from subway trains, such as abandoned stations and old bunkers.
+  You carry three tools in numbered slots along the bottom of the screen. The
+  flashlight runs on a battery meter and its brightness changes with R, while
+  the camera is there for photographing evidence.
+
+
+  The crowbar starts with five pries, and the count of what's left sits right on
+  its slot.
+
+
+  Stamina and battery bars stay pinned to the left side of the screen, just
+  above the counter that tallies your points. Across from them, an objectives
+  panel logs how many objectives you've completed while a discoveries list keeps
+  your most recent finds. Pressing N pulls up a notebook.
+
+
+  mythcitygames made it after riding subway trains around the world and always
+  wondering what's down those dark tunnels they passed. They wanted to find
+  out what lies down there, such as abandoned stations and old bunkers.
 play:
   url: https://mcg-urbex.web.app
   embeddable: true
@@ -56,7 +69,7 @@ media:
     - games/the-underground/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-10-01
+  updated: 2026-10-02
 status: live
 provenance:
   foundVia: scout:vibejam-2026

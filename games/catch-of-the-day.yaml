@@ -2,22 +2,32 @@ slug: catch-of-the-day
 title: Catch of The Day
 tagline: Catch fish in swarming schools while dodging a hunting shark.
 description: >-
-  Catch the fish before the shark catches you. You swim underwater in first
-  person with a harpoon gun and hunt the fish named in the catch panel at the
-  top right, such as a mackerel or a grouper. The shark cannot be killed, but
-  two harpoons stun it.
+  The goal is to catch the right fish before the shark catches you. You're
+  underwater in first person with a harpoon gun, and the catch panel in the top
+  right works like a shopping list, naming the species you're after, such as a
+  mackerel or a grouper.
 
 
-  Swim with WASD, rise with Space, sink with Shift, and double-tap W to sprint.
-  A sprint bar runs along the bottom of the screen. Aim with the mouse, fire
-  with left click, and zoom with right click. A harpoon gauge in the lower right
-  corner shows a number, which starts at 1.
+  The shark's a bit of a problem because there's no killing it, but landing two
+  harpoons on it will stun it.
 
 
-  Low-poly fish move around you in flocking groups. The creator built the game
-  to see how boids behave in Three.js. The screen shows a score with a
-  multiplier at the top center and a high score at the top left. A two-step
-  tutorial prompts your first moves, and Esc pauses.
+  WASD swims you around, Space takes you up and Shift takes you down. A double
+  tap of W sends you into a sprint, and a bar along the bottom of the screen
+  tracks it. The mouse aims, left click fires and right click zooms in.
+
+
+  Down in the lower right corner there's a harpoon gauge showing a number,
+  which starts at a modest 1.
+
+
+  Your score sits at the top center with a multiplier beside it, and your best
+  score stays in the top left. A two-step tutorial walks you through your first
+  moves, starting with swimming, and Esc pauses the game.
+
+
+  0xPufferFish built the game to see how boids behave in Three.js, using a
+  fish hunt as the test. The low-poly fish move around you in flocking groups.
 play:
   url: https://cotd.graywhite.cloud
   embeddable: true
@@ -63,7 +73,7 @@ media:
     - games/catch-of-the-day/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-10-01
+  updated: 2026-10-02
 status: live
 provenance:
   foundVia: scout:vibejam-2026

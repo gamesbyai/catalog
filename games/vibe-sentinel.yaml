@@ -3,29 +3,33 @@ title: Vibe Sentinel
 tagline: Fight shadow beasts through ten turn-based dungeon levels, one careful
   move at a time.
 description: >-
-  The opening screen is a green-glowing panel with a short briefing, the
-  controls, and a button to pick your Sentinel. You play the last guardian of
-  the Ancient Grove, walking a dark dungeon one grid tile at a time and
-  attacking by bumping into enemies.
+  A green-glowing panel greets you first, with a short briefing, the controls
+  and a button to choose your Sentinel. You're the last guardian of the Ancient
+  Grove, walking a dark dungeon one grid tile at a time and fighting shadow
+  beasts by simply bumping into them.
 
 
-  Each level hides a glowing exit star that leads to the next floor, and a run
-  is won by getting through all 10 levels. You start with 10 HP. Potions restore
-  6 HP, and crystals fuel the Sentinel Pulse, which costs 2 crystals and hits
-  every enemy within 3 tiles.
+  Somewhere on every level there's a glowing exit star that takes you down to
+  the next floor. Get through all 10 levels and the run is won. You begin with
+  only 10 HP, though potions put 6 back, and crystals pay for the Sentinel
+  Pulse, which spends 2 of them to hit every enemy within 3 tiles.
 
 
-  Turns are discrete, so nothing moves until you do. Enemies step only every
-  other turn, which leaves a gap to reposition. Waiting passes your turn while
-  they keep acting. The outer border is solid wall, so there is no safe edge to
-  hide along.
+  Turns are discrete, so nothing moves until you do, and the enemies only take a
+  step every other turn, which hands you a little gap to reposition.
 
 
-  Each of the 10 levels has its own biome, running from a forest grove through a
-  volcanic maze to a void sanctum. Beyond the main run there are an endless
-  mode, badges, and a portal into another game from the same event. The design
-  follows early Rogue and Nethack, where resource management matters more than
-  reflexes.
+  Waiting passes your turn, but the enemies keep acting while you stand there.
+  The outer border is solid wall too.
+
+
+  Each of the 10 levels gets its own biome, and the spread is wide, from a
+  forest grove through a volcanic maze all the way to a void sanctum.
+
+
+  Past the main run there's an endless mode, plus badges to earn. There's also a
+  portal that leads into another game. The design follows early Rogue and
+  Nethack, where managing your resources matters more than fast reflexes.
 play:
   url: https://flash-source.github.io/vibeSentinel
   embeddable: true
@@ -67,7 +71,7 @@ media:
     - games/vibe-sentinel/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-10-01
+  updated: 2026-10-02
 status: live
 provenance:
   foundVia: scout:vibejam-2026

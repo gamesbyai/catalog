@@ -2,24 +2,40 @@ slug: napless
 title: Napless
 tagline: Brawl as a toddler and race to grab the TV remote before nap time.
 description: >-
-  You play a toddler in a giant living room, running a 90-second sprint to hold
-  the TV remote before nap time wins. Grab cookies, bonk rival toddlers, and
-  fill the Chaos meter, which the HUD shows as a percentage.
+  You're a toddler loose in a giant living room, and you've got 90 seconds to
+  get your hands on the TV remote and hold it before nap time wins.
 
 
-  Once Chaos reaches 100%, climb the TV toys to get to the remote. The HUD also
-  shows a Diaper meter and a snack count beside the Chaos bar. Toys can be
-  thrown, and the room is a 3D space you look around with the mouse.
+  To get there you grab cookies, bonk the rival toddlers and fill a Chaos
+  meter shown as a percentage, and once it hits 100% you can climb the TV toys
+  up to the remote. The game's own tip tells you to spend the opening seconds
+  on snacks and easy bonks.
 
 
-  Click once to lock your aim, then bonk everything in reach. Before a round you
-  can type a player name, enter an optional private room code, and copy an
-  invite to share with friends.
+  Toys double as your weapons, and there are three of them to swap between. A
+  plushie gets thrown for a soft, squeaky knockback, while the Block Shotgun
+  is a chunky blast for close range. The Diaper Bomb runs on your Diaper
+  meter, so it only works when that meter's full and resets it after letting
+  out a stink cloud.
 
 
-  Finishing runs earns badges and a toddler title. A public leaderboard ranks
-  the fastest completion times, with tabs for all time and for today. The
-  creator has a toddler and built the game from real life.
+  Alongside Chaos and Diaper, the screen tracks your snacks, the clock and your
+  health, and events like Roomba Rampage can pop up, where the robot vacuum,
+  billed as a tiny tank, doubles its speed for 8 seconds.
+
+
+  The room is a whole 3D space you look around with the mouse while WASD moves
+  you. Click once to lock your aim, and from there it's bonking anything in
+  reach. Before a round you can pick a player name, type an optional private
+  room code and copy an invite to send to friends.
+
+
+  Finishing runs earns you badges and a toddler title. A public leaderboard
+  ranks the fastest completion times, with one tab for all time and one for
+  today.
+
+
+  valeriogioia has a toddler at home and built the game from real life.
 play:
   url: https://playnapless.com
   embeddable: true
@@ -60,7 +76,7 @@ media:
     - games/napless/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-10-01
+  updated: 2026-10-02
 status: live
 provenance:
   foundVia: scout:vibejam-2026

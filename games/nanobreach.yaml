@@ -3,22 +3,33 @@ title: NanoBreach
 tagline: Plan and execute tactical hacks in a 3D roguelike where action unfolds
   as you move.
 description: >-
-  You plan tactical hacks in NanoBreach, a 3D roguelike where the action unfolds
-  as you move. The creator describes it as a mix of Superhot, Commandos and a
-  hack-style roguelike, so a run asks you to think through positioning and
-  timing before you commit to a move.
+  In NanoBreach, a 3D roguelike that blends action and strategy, you plan out
+  tactical hacks while the action unfolds as you move.
 
 
-  It is presented as a next-generation take on a classic roguelike the creator
-  admires. They say many things were changed, and the original serves as
-  inspiration rather than a blueprint. Claude Code and Three.js are behind it,
-  and it ranked 570th of 945 at Vibe Jam 2026.
+  Josepho calls it a mix of Superhot, Commandos and a hack-style roguelike, and
+  you can spot each piece. The hacking theme comes from that older roguelike,
+  while the careful, squad-style planning comes from Commandos, so positioning
+  and timing get thought through before you commit to a move.
 
 
-  The hacking theme comes from that older roguelike, and the tactical,
-  squad-style planning comes from the Commandos side, so moves are planned first
-  and executed second. It is a single-player game that mixes action, strategy
-  and roguelike runs.
+  It opens with a tutorial where you follow a mentor around a plain gray floor
+  as a little green capsule. The mentor's first line admits you've got a
+  reputation and aren't a rookie, then makes you practice anyway.
+
+
+  Your starting kit is slim, with two hit points, room for five hacks and a
+  mode that begins on stealth.
+
+
+  You move with WASD and fire with J. R is your hack key. Space moves the
+  mentor's dialogue along, and a counter at the top keeps track of where you are
+  in the tutorial's steps.
+
+
+  Josepho is a fan of an old roguelike and set out to build a next-gen version
+  of it. They say it isn't a 3D port and that a lot was changed, with the
+  original working as inspiration rather than a blueprint.
 play:
   url: https://nanobreach.questtracers.com
   embeddable: true
@@ -55,7 +66,7 @@ media:
     - games/nanobreach/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-09-29
+  updated: 2026-10-02
 status: live
 provenance:
   foundVia: scout:vibejam-2026

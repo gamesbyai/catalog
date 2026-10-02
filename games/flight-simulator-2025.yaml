@@ -2,23 +2,36 @@ slug: flight-simulator-2025
 title: Flight Simulator 2025
 tagline: Take off, fly over a shared world and dogfight other pilots online.
 description: >-
-  Type a name and join to spawn on an airport runway with the throttle at 0%.
-  Raise it with W, roll and pitch with the arrow keys, and use A and D for the
-  rudder. Take off into a world shared with other players, who can be dogfighted
-  in the air. Space shoots missiles.
+  Type a name and join, and you'll start on an airport runway with the throttle
+  sitting at 0%. Push it up with W and ease it back with S, then roll and pitch
+  with the arrow keys while A and D work the rudder.
 
 
-  An on-screen mission list gives three goals: shoot down all the balloons,
-  shoot down other planes, and fly to space. The HUD tracks health, score,
-  altitude, speed, throttle and vertical speed. A radar sits in the lower right,
-  and a small inset view shows the scene ahead.
+  Once you're off the ground you're sharing the sky with other players, and you
+  can take them on in a dogfight, firing missiles with Space.
 
 
-  The world is low-poly. It has an airport with a control tower, houses, pine
-  trees, a snowy mountain, a castle, blimps, a flying saucer and birds. A
-  scrolling airport weather report runs along the top of the screen. Landing
-  gear, engine, sound and camera view can be toggled, and chat and a leaderboard
-  are available.
+  A mission list on screen gives you three goals, which are to shoot down all
+  the balloons, shoot down other planes and fly to space. The plane-hunting one
+  even ends with a cheeky ":D" in the HUD.
+
+
+  Your health, score, altitude, speed, throttle and vertical speed all stay on
+  screen. There's a radar in the lower right and a small inset view of what's
+  ahead of you. Shift switches on something called SuperTURBO XXL, a name nobody
+  could accuse of modesty.
+
+
+  Across the top scrolls a detailed weather report styled like a real airport
+  broadcast for Pieter International Airport, right down to Runway 42 being in
+  use.
+
+
+  The world is built from chunky low-poly shapes, with a control tower, houses,
+  pine trees, a snowy mountain and, for some reason, a castle on the ground.
+  Blimps, a flying saucer and birds share the air with you. You can toggle the
+  landing gear, engine, sound and camera view, and chat and a leaderboard are
+  there too.
 play:
   url: https://fly.pieter.com
   embeddable: true
@@ -63,7 +76,7 @@ media:
     - games/flight-simulator-2025/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-10-01
+  updated: 2026-10-02
 status: live
 provenance:
   foundVia: scout:awesome-cc0

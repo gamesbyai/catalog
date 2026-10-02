@@ -2,24 +2,37 @@ slug: undersphere
 title: Undersphere
 tagline: Run and shoot opponents on the inside surface of a hollow sphere.
 description: >-
-  You run and shoot on the inside surface of a hollow sphere, where gravity
-  pulls you toward the curved ground and the horizon rises into the sky above
-  you. Matches are multiplayer first-person deathmatch. A scoreboard in the
-  corner ranks the top three players and shows your own rank and kill count.
+  Every match is a first-person deathmatch about racking up kills, with a
+  scoreboard in the corner ranking the top three players beside your own place
+  and kill tally.
 
 
-  You carry three slots: an assault rifle with a 30-round magazine, a second
-  long gun, and a grenade. A grenade thrown across the map stays under the
-  sphere's gravity and travels with proper proportions, so it can land on the
-  far side of the world. A health counter and a coin counter sit in the HUD.
+  All of it happens on the inside of a hollow sphere. Gravity pulls you down
+  onto the curved ground under your feet, while the horizon climbs upward
+  until the rest of the map hangs in the sky above you. Everything's drawn in
+  black-and-white cartoon outlines, with tall grass, pine trees and dark
+  crates scattered over terrain that curls up and away from you.
 
 
-  A banner at the top of the screen shows when a lobby is waiting for another
-  player. Bots appear on the scoreboard, and a banner announces each new kill
-  leader. The world is drawn in black-and-white cartoon outlines, with tall
-  grass, pine trees and dark crates scattered across the curved terrain. The
-  creator built the movement mechanics to feel fair and conventional despite the
-  shifting gravity.
+  You've got three slots to switch between, holding an assault rifle with a
+  30-round magazine, a second long gun and a grenade. The grenade is where the
+  setting really shows off, because it stays under the sphere's pull and flies
+  with proper proportions, so a long throw can come down on the opposite side
+  of the world.
+
+
+  Your health sits in the bottom corner of the screen, and a coin counter tucks
+  in just under the scoreboard.
+
+
+  When a lobby's still short of people, a banner across the top tells you it's
+  waiting for one more player. Bots show up on the scoreboard as well. Whenever
+  someone new pulls ahead, a big yellow banner gives the new kill leader their
+  moment.
+
+
+  _NoahWhiteson came up with the movement mechanics and built them to feel fair
+  and conventional, even with the gravity shifting around you.
 play:
   url: https://playundersphere.com
   embeddable: true

@@ -2,22 +2,31 @@ slug: temple-fist
 title: Temple Fist
 tagline: Box in a photoreal ring where every frame comes from AI-generated video.
 description: >-
-  The game opens on a first-person view across a rope-bound ring with a stone
-  floor, set in a bamboo grove. Brown leather gloves fill the bottom of the
-  screen. A shirtless fighter sits cross-legged at the far side, and a START
-  button sits between the gloves.
+  The opening view puts you in first person behind a pair of worn brown leather
+  gloves, looking across a rope-bound ring with a stone floor in the middle of a
+  bamboo grove. A shirtless fighter sits cross-legged at the far side, hands
+  resting on his knees, while a START button waits between your gloves.
 
 
-  After you press START, the opponent rises into a guard, wrapped fists raised,
-  with a jade pendant at his chest. Three buttons sit across the lower screen:
-  Jab, Hook and Uppercut. A thin white bar runs just above them, over the
-  opponent's belt.
+  Press it and he rises into a guard with his wrapped fists up.
 
 
-  Every frame of the bout comes from AI-generated video, not a 3D model. The
-  creator chose boxing because its frame-to-frame structure matched how video
-  models behave, and wanted something playable with the photoreal look that AI
-  trailers had shown without being playable.
+  Three buttons line up across the lower screen, labeled Jab, Hook and Uppercut.
+  Just above them, a thin white bar stretches across his belt line.
+
+
+  None of what you're looking at is a 3D scene. Every frame of the bout comes
+  from AI-generated video rather than a 3D model, right down to the fighter
+  rising from his seat. Even the jade pendant hanging at his chest is part of
+  the footage.
+
+
+  Boxing wasn't a random pick, because vamonke saw that its frame-to-frame
+  structure lines up cleanly with how video models behave.
+
+
+  vamonke had watched AI trailers show off a photoreal look without any of them
+  being playable. They wanted that same look in a game you can actually play.
 play:
   url: https://templefist.vamonke.com
   embeddable: true

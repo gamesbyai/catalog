@@ -2,29 +2,53 @@ slug: void-wake-signal-reclamation
 title: "Void Wake: Signal Reclamation"
 tagline: Pilot a spaceship through 50 top-down levels of enemies and bosses.
 description: >-
-  A signal called The Static has been broadcasting from deep space, and you
-  pilot a ship sent to trace it, with the ship's AI, VESPER, narrating the trip.
-  It is a top-down shooter where you fight swarms of enemies across fifty levels
-  split into five sectors, each with its own hazards and enemy types.
+  Something in deep space has been sending out a signal for longer than anyone
+  can explain, and people have started calling it The Static. You fly the ship
+  sent to find its source, and your ship's AI, VESPER, narrates the trip as the
+  only voice you've got out there, which makes for a fairly lonely setup across
+  fifty levels.
 
 
-  The campaign runs on Normal, Hard, or Nightmare difficulty and includes
-  mini-bosses, main bosses, and a finale. Salvage earned in the campaign unlocks
-  ship styles, colors, and engine trails, and you can switch between a neon
-  vector look and painted ship art at any time.
+  It plays as a top-down shooter where enemies swarm you across those fifty
+  levels, split into five sectors. Each sector has its own hazards and its own
+  lineup of enemies. Mini-bosses and main bosses turn up along the way, and a
+  finale ties together everything you've fought.
 
 
-  Besides the campaign, the launch menu offers other modes. Endless Survival
-  keeps the swarm coming with rising difficulty. 5-Minute Blitz is a timed score
-  attack. Boss Rush chains every boss together. Salvage Run Extraction asks you
-  to decide when to leave with your loot while mini-boss signal spikes escalate.
+  You can run the campaign on Normal, Hard or Nightmare, and that last name
+  sets expectations clearly.
 
 
-  Ghost Duel races a recording of your own best run, and Daily and Weekly
-  Challenges use the same seeded run for everyone. A Codex logs each ship,
-  enemy, and boss you meet, and a free 20-level story addon, Point of Origin, is
-  on the main menu. Play with keyboard and mouse or an Xbox or PlayStation
-  controller, with full remapping.
+  Salvage you earn in the campaign unlocks ship styles, colors and engine
+  trails. You can also swap between a neon vector look and painted ship art
+  whenever you want, so the cosmetics you unlock never tie you to one art style.
+
+
+  Outside the campaign, the launch menu holds a surprising spread of other
+  modes.
+
+
+  Endless Survival keeps the swarm coming as the difficulty climbs, while
+  5-Minute Blitz squeezes things into a timed score attack. Boss Rush chains
+  every boss together, back to back, with no gap to catch your breath. Salvage
+  Run Extraction pays out richer loot while mini-boss signal spikes escalate,
+  and you're the one deciding when to leave with what you've grabbed.
+
+
+  Ghost Duel has you racing a recording of your own best run, a personal kind
+  of rivalry, while Daily and Weekly Challenges hand everyone the same seeded
+  run.
+
+
+  A Codex in the Terminal logs every ship, enemy and boss you meet, with lore,
+  attack patterns and art for each. On top of all that, there's a whole free
+  20-level story addon called Point of Origin sitting right on the main menu.
+
+
+  You can play with keyboard and mouse or an Xbox or PlayStation controller. Pad
+  players get real care here, since the remapping is full, the on-screen prompts
+  match whichever controller you plug in, and the menus can be driven from the
+  pad too.
 play:
   url: https://oddbit-studios.itch.io/void-wake
   embeddable: false

@@ -3,28 +3,56 @@ title: STARCHART
 tagline: Fly routes between generated stars and keep each route as a permanent
   constellation
 description: >-
-  You pilot a ship from star to star, spending flux and hull on each jump. Every
-  star's shape shows what it does: a forge repairs the hull, a shrine takes
-  flux, a nebula is a gamble, and a twin wreck offers a choice.
+  You fly a ship from star to star, and every jump eats into your flux and your
+  hull.
 
 
-  Each voyage starts at one of three gates in the sector. You pick how far to
-  jump, then decide when to stop. Setting anchor ends the run and banks your
-  route. Closing the route into a loop seals the constellation and doubles its
-  grant, but pushing on risks going adrift.
+  Each star's shape tells you what it does, so the real skill here is reading
+  the whole sky with one quick look. There are a surprising 48 star forms spread
+  across six families, and every form comes in eight color palettes. A forge
+  repairs your hull, a shrine takes a cut of your flux, a nebula is a gamble and
+  a twin wreck hands you a choice between risky and safe salvage.
 
 
-  Every voyage, even a failed one, becomes a named constellation in your atlas.
-  Its dominant family gives a permanent bonus: extra hull, starting flux, jump
-  range, better salvage, a hazard ward, or more flux from shrines. Nothing
-  resets. Re-flying a charted route deepens its line instead of copying it.
+  You set off from one of three gates, and since they sit far apart and each
+  opens a different region, picking one is really picking where your next figure
+  lands on the chart. After that you pick how far to jump, either a cheap safe
+  hop or a long haul that puts heavy strain on your hull to get to the star
+  you're after. Then you decide when to stop.
 
 
-  Four sectors open as the atlas fills: The Verge from the start, The Drift at 5
-  inscriptions, The Hollow Crown at 12, and The Long Dark at 21. Stars, charts
-  and names are all drawn by code, with synthesized sound that can be switched
-  off. Progress saves on every arrival, so closing the tab mid-voyage resumes
-  where you left off. A run takes about half an hour.
+  Dropping anchor lets you finish when you choose and banks the route. Bending
+  your path back into a loop locks the constellation in and pays out twice the
+  bonus, but chasing that loop means you could end up adrift before you close
+  it.
+
+
+  Whatever happens, even a voyage that goes badly gets a name and a permanent
+  spot in your atlas as a constellation. Its dominant family gives you a
+  permanent bonus like extra hull, more starting flux, longer jump range, better
+  salvage, a ward that soaks up a hazard, or more flux from every shrine.
+  Nothing resets, and because the bonuses stack, a bit more range can put stars
+  in reach that you couldn't afford before.
+
+
+  Retrace a route that's already on your chart and the atlas won't copy it, so
+  the line just gets deeper.
+
+
+  The atlas doubles as your save file, and it also opens up new sectors as it
+  fills. The Verge is there from the start, and The Drift needs 5
+  inscriptions, The Hollow Crown 12 and The Long Dark 21.
+
+
+  There isn't one image file in the whole game, since every star, chart and
+  name is drawn by code, and flying an identical voyage gives you an identical
+  picture and name every time. The sound is synthesized, and you can switch it
+  off. Progress saves on every arrival, so closing the tab mid-voyage drops
+  you right back where you were.
+
+
+  A run takes about half an hour. According to the creator, csaf, AI helped with
+  the code, graphics and text.
 play:
   url: https://csaf.itch.io/starchart
   embeddable: false
@@ -60,7 +88,7 @@ media:
     - games/starchart/shot-2
 dates:
   added: 2026-10-01
-  updated: 2026-10-01
+  updated: 2026-10-02
 status: live
 provenance:
   foundVia: scout:aibgj-4

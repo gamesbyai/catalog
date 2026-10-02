@@ -2,23 +2,37 @@ slug: life-is-binary
 title: Life is Binary
 tagline: Farm, hack, and hustle with other players in a pixelated multiplayer life sim.
 description: >-
-  You start in a cramped isometric apartment lined with bookshelves, monitors
-  and neon posters, where a sarcastic floating toaster named GL1TCH is your only
-  roommate. An intro slideshow of six steps sets the scene before you take
-  control of a pixel-art character.
+  Missions pop up from characters such as Nova, and each one comes with a title,
+  a short brief and a reward in Bits that you can accept, decline or just
+  ignore. It suits a game whose tagline says every choice comes down to a 1 or a
+  0. Every prompt also has a button to open a chat with whoever sent it.
 
 
-  Missions arrive as pop-ups from characters such as Nova, with a title, a short
-  brief, a reward in Bits, and buttons to accept, decline or ignore. The first
-  one asks you to install a starter fuse: open the Fuse Panel, pick an empty
-  slot, and seat it to earn 25 Bits.
+  Your first job is a humble one. You're asked to fit a starter fuse by
+  opening the Fuse Panel, picking an empty slot and seating it for 25 Bits,
+  though the brief cheerfully admits you could pocket the fuse instead.
 
 
-  The screen shows a day and clock readout, a level counter, a coin balance, a
-  log-in button, and an item hotbar that holds things like a wooden stick. It is
-  a multiplayer life sim with farming, hacking and hustling, and the world is
-  shared with other players online. Each mission prompt also offers a chat with
-  the character who sent it.
+  All of this starts in a cramped isometric apartment, 14 by 10 feet, packed
+  with bookshelves, monitors and neon posters of long-dead memes that flicker on
+  the walls.
+
+
+  Your only roommate is GL1TCH, a sarcastic toaster that hovers in midair with a
+  single glowing red eye. The intro says its voice sounds like a chain-smoking
+  dial-up modem, and for some reason the place smells of burnt RAM. A six-step
+  slideshow sets all this up before you take over a pixel-art character, and you
+  can skip it or tick a box so it never shows again.
+
+
+  Around the edges of the screen you'll find the day and time, your level, a
+  coin balance and a log-in button, plus a hotbar holding items like a wooden
+  stick.
+
+
+  Beyond that first room, it's a multiplayer life sim about farming, hacking and
+  hustling across a pixel-art world. Other players share that world with you
+  online.
 play:
   url: https://lifeisbinary.com
   embeddable: true

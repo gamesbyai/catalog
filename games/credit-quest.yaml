@@ -3,22 +3,32 @@ title: Credit Quest
 tagline: Collect API credits and finish terminal-themed quests in a
   Zelda-inspired adventure.
 description: >-
-  Credit Quest has you walk a pixel-art hero around a top-down overworld of dirt
-  paths, grass, stone walls and wooden signposts. The first prompt tells you to
-  talk to PIP, a character west of the plaza path, and dialogue boxes at the
-  bottom of the screen carry the instructions.
+  Credit Quest has you walking a small pixel-art hero around a top-down
+  overworld of dirt paths, grassy patches, stone walls and wooden signposts.
+  Your first job shows up in a dialogue box at the bottom of the screen, telling
+  you to go talk to PIP just west of the plaza path. Those boxes do a lot of the
+  talking, since they're where the game hands you its instructions.
 
 
-  The header calls it a fantasy-tech action RPG. You fight Glitches with an
-  attack button, wake sleeping shrines, and work to restore the route. The title
-  screen gives the aim as carrying the last clean signal home. The creator cited
-  Zelda as the inspiration.
+  It calls itself a fantasy-tech action RPG, set in a land where terminals are
+  king, and you collect API Credits to finish tasks and quests.
 
 
-  The HUD shows a row of hearts for health, a Vibe counter, and a Credits
-  counter that starts at zero. You collect API Credits to finish tasks and
-  quests. A field guide and a help screen open in game, and sound can be muted.
-  It is a desktop browser build, and you click the game window to give it focus.
+  Along the way you swing at Glitches with an attack button, wake up shrines
+  that have fallen asleep and work to restore the route. The title screen sums
+  up the goal as carrying the last clean signal home, a poetic line for a game
+  whose currency is API Credits.
+
+
+  A row of hearts across the top tracks your health. Beside it sit a Vibe
+  counter and a Credits counter that starts at zero. You can open a field
+  guide and a help screen in the middle of play, and the sound can be muted.
+
+
+  It's built for desktop browsers. You click the game window to give it focus.
+
+
+  packetloss cited Zelda as the inspiration behind Credit Quest.
 play:
   url: https://creditquest.packetloss404.com
   embeddable: true

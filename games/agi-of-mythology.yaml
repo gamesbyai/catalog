@@ -2,23 +2,35 @@ slug: agi-of-mythology
 title: AGI of Mythology
 tagline: Command a research lab in a real-time fight over a central server.
 description: >-
-  You start as a research lab with a Town Center, a stock of 500 Bio, 300 Mat
-  and 200 GPU, and two idle workers. The Town Center produces agents. A
-  first-mission card gives the order of play: build, gather, train, then take
-  the central server. It offers a "Show me" button and a "Skip" button.
+  Every research lab on the map wants the same central server, and whoever
+  holds it reaches AGI. The armies in this real-time strategy game are rival
+  AI labs.
 
 
-  The central server sits on the map as the shared objective, and the lab that
-  holds it reaches AGI. A panel in the top right shows whether the server is
-  contested and lists each player with a timer, which starts at 5:00 for the
-  first player.
+  You start out with a Town Center, two idle workers and a stock of 500 Bio, 300
+  Mat and 200 GPU. The Town Center is where your agents come from. Making
+  graphics cards one of the three resources fits the theme nicely.
 
 
-  The map is a 3D landscape of forests and pale mountains, seen from an angled
-  overhead camera. You select a unit or building and pick orders from a command
-  bar along the bottom, which also has a clear-selection button. A chat panel
-  lets you message other players in the match. The creator wanted a real-time
-  strategy game you can start quickly with friends in the browser.
+  A first-mission card lays out the plan in four steps (build, gather, train,
+  then take the central server), and it gives you a "Show me" button alongside a
+  "Skip" button.
+
+
+  A panel in the top right keeps score of the fight by showing whether the
+  server is contested and listing every player with a timer. The first player's
+  timer starts at 5:00.
+
+
+  The battlefield is a 3D landscape of forests and pale mountains, seen from an
+  angled camera overhead.
+
+
+  When you select a unit or building, its orders show up in a command bar along
+  the bottom, which also has a button for clearing your selection. There's a
+  chat panel too, so you can message the other players in your match. TTrussner
+  wanted a real-time strategy game you can start quickly with friends in the
+  browser.
 play:
   url: https://trussner.com/agi
   embeddable: true
@@ -54,7 +66,7 @@ media:
     - games/agi-of-mythology/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-10-01
+  updated: 2026-10-02
 status: live
 provenance:
   foundVia: scout:vibejam-2026

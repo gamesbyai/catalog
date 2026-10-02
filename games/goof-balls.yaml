@@ -2,27 +2,40 @@ slug: goof-balls
 title: Goof Balls
 tagline: Switch elements and outlast rival balls in a shrinking ring
 description: >-
-  Three elements decide every collision: fire burns grass, grass soaks up water,
-  and water puts out fire. Each ball in the ring carries one of them, and you
-  can change yours with a key press. After a change your element stays fixed for
-  a moment, so a late swap is a bet you can't undo.
+  Every ball in the ring is fire, grass or water, and you can change yours with
+  a single key press. The swap happens instantly, but your new element locks in
+  for a moment afterward, so a last-second switch is a bet you can't take back.
 
 
-  The round starts in a ring that gets smaller as it goes, with you and a crowd
-  of cartoon balls with smiley faces. The aim is to be the final ball left.
-  Charge at opponents your element beats, swap to counter anyone coming for you,
-  and raise a shield when you are in trouble.
+  Three matchups decide every collision, and the whole rulebook fits on a
+  sticky note. Fire burns grass, grass soaks up water, and water puts out
+  fire.
 
 
-  You can play alone against bots or set up a private room for friends, with a
-  chat to talk to them. The creator took the idea from a manga scene of two
-  masters playing rock-paper-scissors at absurd speed, and mixed it with the
-  type triangle from early Pokémon games.
+  A round drops you into a ring that keeps shrinking, alongside a crowd of
+  cartoon balls whose smiley faces look cheerful for a fight to the finish.
+  The goal is to be the final ball left, or as the title screen puts it, the
+  last goof standing.
 
 
-  The mouse or WASD moves your ball. Keys 1, 2 and 3 choose the element, and
-  both rush and shield can be triggered with either a mouse button or a keyboard
-  key.
+  You charge at the opponents your element beats. When someone comes for you,
+  you swap to counter them, and if things go badly you can throw up a shield.
+  The creator calls it a game about reading people, which is pretty much what a
+  well-timed counter-swap asks of you.
+
+
+  You can play alone against bots or set up a private room for friends, and
+  there's even a built-in chat for a bit of trash talk.
+
+
+  Your ball follows the mouse or WASD, while keys 1, 2 and 3 pick the element.
+  Rush sits on left click or Space, and the shield goes on right click or Shift.
+
+
+  tappInc got the idea from a scene in a martial-arts manga, where two masters
+  threw rock-paper-scissors at ridiculous speed and switched hands only at the
+  final instant. Years later they mixed it with the type triangle from the early
+  Pokémon games. They're still tuning it and want to hear what players think.
 play:
   url: https://tappinc.itch.io/goof-balls
   embeddable: false
@@ -65,7 +78,7 @@ media:
     - games/goof-balls/shot-2
 dates:
   added: 2026-09-30
-  updated: 2026-10-01
+  updated: 2026-10-02
 status: live
 provenance:
   foundVia: scout:aibgj-4

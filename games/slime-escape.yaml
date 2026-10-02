@@ -3,23 +3,35 @@ title: Slime Escape
 tagline: Survive ten waves of mutant slimes, beat the boss, and flee through a
   suspicious portal.
 description: >-
-  The game opens on grid-paper ground. A hand-drawn character in a blue striped
-  shirt and purple pants stands in the middle, with green one-eyed slimes close
-  by. A black portal with a colored rim sits at the right edge. A counter at top
-  right reads Wave 1/10, with ten dots leading to a checkered flag.
+  Grid paper covers the screen when the game loads, a bit like a page torn from
+  a math notebook. A hand-drawn guy in a blue striped shirt and purple pants
+  stands in the middle, and there are green one-eyed slimes close by.
 
 
-  You move with WASD and shoot with the left mouse button. Five weapon slots run
-  along the bottom of the screen, numbered 1 to 5. The icons show a pointed
-  yellow shot, a pink blob, a green dart, a thin pink and green needle, and a
-  green grenade.
+  Up in the top right corner, a counter reads Wave 1/10, with ten dots running
+  out to a checkered flag.
 
 
-  The goal is to survive ten waves of mutant slimes, beat the boss, and escape
-  through the portal. The portal's rim changes color from one moment to the
-  next. A small purple spiky creature lies on the field with sleeping z marks
-  beside it. The scribbled look comes from the creator's son's hand-drawn worlds
-  of strange creatures and machines.
+  You move with WASD and shoot with the left mouse button. Five weapon slots
+  numbered 1 to 5 line the bottom of the screen. Their doodled icons make for
+  a mixed arsenal, from a pointed yellow shot and a pink blob to a green dart,
+  a thin pink-and-green needle and a green grenade.
+
+
+  Your goal is to get through ten waves of mutant slimes, take down the boss and
+  then leave through the portal. It's the black oval at the right edge, and its
+  rim keeps switching colors from one moment to the next. By the game's own
+  admission, it's an exit that definitely shouldn't be trusted.
+
+
+  For some reason there's also a small purple spiky creature lying on the field
+  with little z marks drifting beside it, apparently sleeping through the whole
+  slime situation.
+
+
+  alxdos_ took the scribbled look from their son's hand-drawn fantastic worlds.
+  Those drawings were full of strange creatures and weird machines. According to
+  alxdos_, the tiny stories in them looked like they wanted to become a game.
 play:
   url: https://slimeescape.com/portal
   embeddable: true

@@ -3,21 +3,34 @@ title: Void Claim
 tagline: Mine asteroids, upgrade your ship, and fight rivals in dangerous space zones.
 description: >-
   The start screen asks for a callsign and a ship color from eight swatches,
-  then a Launch button connects you to a shared multiplayer space. The tagline
-  reads Mine. Steal. Survive. You fly a ship armed with drills and guns among
-  asteroids that hold colored crystals and gold.
+  then the Launch button connects you to a space you share with other players.
 
 
-  You begin in a safe area, mine, and spend what you earn on ship upgrades.
-  Further out, the zones turn into PvP territory, and the richest asteroids sit
-  there. Other players can attack you, and cargo you jettison scatters as
-  individual loot objects that can be picked up.
+  Out there, you fly a ship fitted with drills and guns through asteroids
+  studded with colored crystals and gold. The tagline, Mine. Steal. Survive.,
+  sums up the whole plan in three words. You start in a safe area, mine, and put
+  what you earn into ship upgrades.
 
 
-  Combat has shields, and damage beyond what the shield absorbs carries over to
-  the hull. NPC ships also share the space. A story thread runs under the
-  mining: something ancient stirs in the deepest void, and it hunts players too.
-  The creator built it with no technical background and little time.
+  Further out, the zones turn into PvP territory, and of course that's where the
+  richest asteroids are waiting. Other players can attack you there, and when
+  you jettison cargo it scatters into individual pieces of loot that can be
+  picked up.
+
+
+  Shields take incoming fire first, but any damage beyond what they absorb
+  carries over to the hull.
+
+
+  NPC ships share the space too. A changelog on the start screen lists a
+  specific fix that stops NPCs from instantly grabbing back their own
+  jettisoned cargo. Under all the mining runs a story thread about something
+  ancient stirring in the deepest void, and it hunts players as well.
+
+
+  SigGravitas built it with no technical background and little time. According
+  to SigGravitas, they made it on the AutoGPT Platform to see what was possible
+  to build that way.
 play:
   url: https://torantulino.github.io/void-claim
   embeddable: true

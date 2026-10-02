@@ -2,20 +2,34 @@ slug: vibe-racer
 title: Vibe Racer
 tagline: Race neon tracks against adaptive AI rivals in a fast arcade driver.
 description: >-
-  Vibe Racer is a fast arcade racing game built around speed and competition.
-  Every race runs on a procedurally generated track, where you drive against AI
-  rivals and try to cross the finish line ahead of them. The job is to get in
-  front of the pack and stay there.
+  Built around speed and competition, this fast arcade racer puts every race on
+  a track it has just generated, then lines you up against AI rivals for a
+  sprint to the finish.
 
 
-  Glowing neon color and sleek vehicles give the tracks a nightlife feel. It was
-  put together in Antigravity on Three.js, it plays on a phone or a desktop
-  computer, and it placed 494th of 945 in Vibe Jam 2026.
+  The Quick Race on the menu spells it out as a 4.5 km run against five AI
+  rivals, pitched as instant action. Your job is to get in front of that pack
+  and stay there until you cross the line. The rivals don't follow a fixed
+  pattern either, because they adapt as you drive.
 
 
-  The rivals adapt as you drive instead of following a fixed pattern, and
-  because the courses are generated, the layout changes between runs. One race
-  does not play quite like the last.
+  Since every course is generated, the layout changes between runs. One race
+  won't play quite like the last, a sensible match for a mode built to drop
+  you straight into the action.
+
+
+  Before the start you can paint your chunky, almost toy-like car in one of six
+  colors, and the menu pegs its top speed at 200 km/h.
+
+
+  Glowing neon and sleek vehicles give the tracks a nightlife feel. The menu
+  leans the same way, with a dark backdrop and hot red accents around a really
+  big play button. There's also a leaderboard you can open from the main screen
+  to see where you stand.
+
+
+  You drive with WASD and brake with Space. If your run goes sideways, R
+  resets the car.
 play:
   url: https://vibe-racer-d3h.pages.dev
   embeddable: true
@@ -52,7 +66,7 @@ media:
     - games/vibe-racer/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-09-29
+  updated: 2026-10-02
 status: live
 provenance:
   foundVia: scout:vibejam-2026

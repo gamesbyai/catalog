@@ -3,23 +3,34 @@ title: Smash&Clash
 tagline: Battle a second player with cards on a compact 3×5 grid in short, tense
   matches.
 description: >-
-  The start screen shows the Smash&Clash logo over a rating counter that begins
-  at 1000, with a large pink Play button beneath it. A rules panel labeled Pick
-  Your Rules offers two choices: Mutators, listed with chess hops, power tiles
-  and overruns, and Classic, labeled as the original game. Each has a small grid
-  icon with colored tiles.
+  When the game opens, you get the Smash&Clash logo up top, a rating counter
+  starting at 1000 and a big pink Play button right under it.
 
 
-  Matches are two-player card battles on a 3×5 grid. Small wins build on each
-  other into momentum, and any single move can shift the balance. The creator
-  aimed for short, intense rounds of competitive strategy rather than long,
-  drawn-out games.
+  Every match is a card battle between two players, played on a grid only three
+  tiles by five. Small wins pile onto each other until they turn into momentum,
+  and any single move can swing the balance back. HarshitKhemani wanted short,
+  intense bursts of competitive strategy instead of long, drawn-out games, and a
+  board that tiny suits the idea.
+
+
+  Before you start, a panel called Pick Your Rules has you choose between two
+  rulesets. Mutators adds chess hops, power tiles and overruns, while Classic is
+  labeled as the original game, and each one gets its own little grid icon
+  dotted with colored tiles.
+
+
+  Chess hops are a specific thing to find in a card battle, and they're the
+  very first twist the Mutators option names.
 
 
   Below Play, the menu lists 2 Players · Local, Play a Friend and Friends.
-  Profile and settings buttons sit in the top right corner. A cookie notice with
-  Accept and Decline buttons appears over the menu, and it states that the game
-  can be played without accepting.
+  Profile and settings buttons sit up in the top right corner.
+
+
+  A cookie notice with Accept and Decline buttons pops up over the menu. It's
+  a polite one, too, because it says plainly that you can play the game
+  without accepting.
 play:
   url: https://smashandclash.in
   embeddable: false
@@ -54,7 +65,7 @@ media:
     - games/smash-clash/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-10-01
+  updated: 2026-10-02
 status: live
 provenance:
   foundVia: scout:vibejam-2026

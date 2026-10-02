@@ -2,26 +2,34 @@ slug: brew-boss
 title: Brew Boss
 tagline: Build up a cafe from a small start into a thriving business.
 description: >-
-  Brew Boss puts you behind the counter of an isometric cafe, Player's Downtown
-  Brew, on Day 1 with $50.00 in cash. Customers gather at the wooden bar, and
-  you click one to take their order. A hint at the bottom of the screen says
-  this.
+  Brew Boss puts you behind the counter of Player's Downtown Brew, a small
+  isometric cafe, on Day 1 with $50.00 to your name. Customers gather around
+  the wooden bar, and you click one of them to take their order. A hint at the
+  bottom of the screen tells you exactly that.
 
 
-  Each order appears in a list on the left with the customer's name and the
-  drink. Espresso, cappuccino and caffè latte show up, and some orders read only
-  "Something creamy". Every card has a colored bar and a face. Green cards show
-  a smile, orange ones a neutral face, and red ones an angry face.
+  Every order lands in a list on the left, showing the customer's name and the
+  drink they're after. You'll see espresso, cappuccino and caffè latte, but some
+  customers, a bit unhelpfully, only say "Something creamy" and leave it there.
 
 
-  The top bar shows the cafe name, the day number, a timer in seconds and your
-  cash. The creator describes the goal as building a cafe empire, with Sims 2
-  and Dave the Diver named as partial influences.
+  Each card also has a colored bar and a little face, and the faces are easy
+  to read, with green getting a smile, orange a flat neutral look and red an
+  outright angry glare.
 
 
-  The cafe is drawn in a low-poly 3D style. A barista stands at an espresso
-  machine, stools sit along the bar, and a striped awning runs along the roof
-  edge.
+  A strip across the top shows the cafe's name and the day number. Your cash
+  sits at the far right, next to a timer that counts in seconds. It's a tidy
+  layout that puts the whole shift in a single line.
+
+
+  lukeswissman describes the goal as building a cafe empire, with Sims 2 and
+  Dave the Diver named as partial influences.
+
+
+  Everything's drawn in chunky low-poly 3D, with a barista posted at the
+  espresso machine and stools lined up along the bar. A red-and-white striped
+  awning runs along the edge of the roof.
 play:
   url: https://lukeswissman.github.io/brewboss
   embeddable: true

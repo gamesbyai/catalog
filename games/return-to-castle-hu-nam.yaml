@@ -3,34 +3,50 @@ title: Return To Castle Hu-Nam
 tagline: Beam office workers off Earth while shooting bureaucrats in a
   first-person retro shooter.
 description: >-
-  You play the alien invader, and the goal is to rescue office workers by
-  walking close to them. Get within range and a worker is beamed up to your
-  cruiser, with a short "Thank you!" sound. The view and movement follow the
-  earliest Wolfenstein-style first-person shooters.
+  Walk close to an office worker and they're beamed straight up to your space
+  cruiser, letting out a cheerfully primitive little "Thank you!" on the way.
+  You're the alien invader this time, and you're rescuing Earth's
+  red-tape-choked Hu-Nams from a first-person view that moves like the very
+  earliest Wolfenstein shooters.
 
 
-  A worker cannot beam out while their office manager stands too near, and the
-  manager shouts "Not so fast!" until all managers are out of range. Rescuing a
-  worker while managers wait just outside that range earns a danger bonus, and
-  several managers just beyond it stack the bonus higher.
+  Office managers get in the way, because a worker can't beam out while one of
+  them stands too close. They'll keep yelling "Not so fast!" until every manager
+  is out of range. Pull off a rescue while managers hover just past that range,
+  though, and you earn a danger bonus that climbs higher when several of them
+  are lurking right there.
 
 
-  Each office building runs through multiple floors filled with corporate and
-  government bureaucrat enemies, with mid-bosses and bosses along the way.
-  Between buildings is an outdoor military battle. There you reach the far end,
-  and the door opens once every enemy soldier on the map is defeated. Larger
-  fighters clash in the background and can be ignored.
+  The same managers who block your rescues are also what makes a rescue pay
+  more.
 
 
-  The stated end goal is to liberate all of Earth, though that ending is less
-  developed than the rest. The creator made it with Claude after starting in a
-  game-focused AI tool, and describes it as the project that got the most
-  effort.
+  Each office building climbs through multiple floors packed with a satirical
+  mix of corporate and government bureaucrats. There are mid-bosses and bosses
+  waiting along the way.
+
+
+  Between buildings comes an outdoor military battle where you head for the far
+  door, and it won't open until every enemy soldier on the map is down, while
+  bigger fighters you can ignore slug it out in the background.
+
+
+  The stated end goal is freeing all of Earth, although that ending isn't as
+  fleshed out as the rest. exedexes1 started the game in a game-focused AI tool
+  and then carried it on in Claude once it was mostly stable. According to the
+  creator, it's the project that got the most effort.
 play:
   url: https://exedexes1.itch.io/return-to-castle-hu-nam
   embeddable: false
   platforms:
     - browser
+  controls:
+    - "WASD: move"
+    - "Mouse: aim"
+    - "Space: fire"
+    - "R: call an ally"
+    - "Tab: map"
+    - "Esc: pause"
 creator:
   name: exedexes1
   handle: exedexes1
@@ -59,7 +75,7 @@ media:
     - games/return-to-castle-hu-nam/shot-2
 dates:
   added: 2026-10-01
-  updated: 2026-10-01
+  updated: 2026-10-02
 status: live
 provenance:
   foundVia: scout:aibgj-2

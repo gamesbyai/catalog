@@ -3,26 +3,37 @@ title: VibeCorps
 tagline: Type prompts, grow a startup, and guide it from solo founder to
   acquisition target.
 description: >-
-  Type on the keyboard to fill a code buffer, and the typing earns money. The
-  first screen shows a code file and a progress bar labeled "vim main.js" that
-  counts to 60. Your cash and MRR are at $0, and a valuation bar starts at $0 of
-  $100.0K.
+  A valuation bar at the top starts at $0 of $100.0K. Typing on the keyboard
+  fills a code buffer, and that typing earns you money. Under the code file, a
+  "vim main.js" progress bar counts up to 60.
 
 
-  The first purchase on the code tab is a Mechanical Keyboard for $80. It raises
-  output from 1 to 2 characters per keypress and makes prompts type 2.0 times
-  faster. Agents are hired from the F5 tab, and a panel on the right lists them.
-  It starts empty, with the account on a Free plan of 50 requests.
+  Your cash and monthly recurring revenue both start at a humbling flat $0.
 
 
-  Five tabs run along the top: Code, Tickets, Market, GPU and Org. Sell and Test
-  percentages sit in a slider on the left. A news ticker runs along the top, and
-  a log at the bottom records events. A Next Vibe button sits in the top corner.
+  Your first purchase on the code tab is a Mechanical Keyboard for $80. It
+  takes you from 1 to 2 characters per keypress, and it makes prompts type 2.0
+  times faster. A founder's first real money goes on a fancier keyboard.
 
 
-  The creator frames the run as going from solo founder to AI-powered
-  acquisition target. They say it draws on the evolution of coding and their own
-  experience in startups.
+  Agents get hired from the F5 tab, and they show up in a panel on the right
+  that starts out empty, with your account on a Free plan capped at a modest 50
+  requests.
+
+
+  Five tabs run along the top, covering Code, Tickets, Market, GPU and Org.
+  Off to the left there's a slider that sets your Sell and Test percentages.
+  Above it all, a news ticker scrolls along, and its opening gag about Stack
+  Overflow traffic staying flat quarter after quarter sets the tone well.
+
+
+  A log at the bottom records what happens, and a cheekily named Next Vibe
+  button waits up in the top corner.
+
+
+  compnski pitches the whole run as going from solo founder to AI-powered
+  acquisition target. They say it draws on how coding has evolved and on their
+  own experience working in startups.
 play:
   url: https://vibecorps.pages.dev
   embeddable: true
@@ -64,7 +75,7 @@ media:
     - games/vibecorps/shot-2
 dates:
   added: 2026-10-01
-  updated: 2026-10-01
+  updated: 2026-10-02
 status: live
 provenance:
   foundVia: scout:vibejam-2026

@@ -2,28 +2,47 @@ slug: protect-the-sheep
 title: Protect the Sheep
 tagline: Build towers to hold off thirty-five waves of enemies and keep one sheep alive.
 description: >-
-  Build towers with gold to stop monsters before they reach the sheep in its
-  fenced pen. You start with 100 gold, and the first tower in the bottom bar is
-  the Archer at 25 gold. A countdown launches each wave, or you can press Start
-  wave to call it early.
+  Spend your gold on towers and stop the monsters before they reach the sheep
+  sitting in its little fenced pen.
 
 
-  The sheep has 100 HP, shown at the top left, and the goal is to keep it alive
-  through all thirty-five waves. There are six tower archetypes. An Upgrades
-  menu sits beside the gold counter, and plus and minus buttons change the game
-  speed. Music and sound effects each have a volume slider.
+  You've got 100 gold to start with, and the first tower in the bar along the
+  bottom is the Archer at 25. Six tower archetypes are in the game, plenty of
+  options for guarding a single sheep. Each wave starts when a countdown runs
+  out, but you can press Start wave if you'd rather call it in early.
 
 
-  The main menu offers Play Solo, Play vs AI, Host Game and Join Game, so you
-  can also play against another player online. A short tutorial introduces the
-  sheep and the basics on first load. The creator based it on old Warcraft III
-  tower defense maps loved in childhood.
+  The sheep has 100 HP, tracked in the top left corner, and your job is to
+  keep it alive through a whole thirty-five waves. The cheerful tutorial
+  greets you with the news that the monsters want mutton.
+
+
+  That short tutorial covers the sheep and the basics the first time the game
+  loads.
+
+
+  An Upgrades menu sits right next to your gold counter. Plus and minus buttons
+  let you speed the game up or slow it back down. Music and sound effects even
+  get their own separate volume sliders, more audio control than you'd expect
+  for a game about one sheep.
+
+
+  Play Solo is only one of the options on the main menu, because there's also
+  Play vs AI, Host Game and Join Game. Those last two let you take on another
+  player online.
+
+
+  henrikvberglund based it on the old Warcraft III tower defense maps they loved
+  as a kid.
 play:
   url: https://protect-the-sheep.henrikvilhelmberglund.com
   embeddable: true
   platforms:
     - browser
     - mobile
+  controls:
+    - "Start wave button: call the next wave early"
+    - "+ / − buttons: change game speed"
 creator:
   name: henrikvberglund
   handle: henrikvberglund
@@ -54,7 +73,7 @@ media:
     - games/protect-the-sheep/shot-2
 dates:
   added: 2026-10-01
-  updated: 2026-10-01
+  updated: 2026-10-02
 status: live
 provenance:
   foundVia: scout:vibejam-2026

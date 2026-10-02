@@ -3,27 +3,44 @@ title: Charge! AutoBattler
 tagline: Draft units from a shop, set their deployment, and watch the armies
   fight on their own.
 description: >-
-  You build an army by drafting from a pool of 30 different units, then set
-  where each one is deployed. Once the battle starts, the fighting runs by
-  itself and you watch it play out.
+  In this cavalry auto battler, you draft an army from a pool of 30 different
+  units, decide where each one deploys, and then watch the battle play out
+  without you.
 
 
-  Units pick targets automatically and use abilities whenever they come off
-  cooldown. Melee units advance and charge once enemies are in range. Ranged
-  units fire at targets in range and try to kite away until their ammo runs out,
-  then charge in. Morale matters: low morale makes a unit retreat, and none at
-  all makes it rout.
+  The unit cards are more detailed than you'd expect, with each one listing its
+  weapon, armor, mount, formation and grade on top of stats like morale, mass
+  and agility. The Silver Lancers, for some reason, ride a unicorn of mythic
+  grade, and their ability forces nearby melee allies to charge.
 
 
-  Between fights, the shop offers rarer units more often the further you get.
-  Armies built around shared culture and weapon traits earn synergy bonuses. You
-  also earn interest that scales with the lives you have lost. Several other
-  stat mechanics sit underneath these systems.
+  When the fighting starts, units choose their own targets and use their
+  abilities as soon as they're off cooldown. Melee troops advance and then
+  charge once enemies come within range. Ranged troops shoot at whatever's in
+  reach and try to kite away, but when their ammo runs out they charge in too.
 
 
-  The creator says items and formations were cut before the jam deadline. The
-  code was written by Claude, the music was made with Suno, and the pictures
-  were made with Civitai. The soundtrack does not loop.
+  Morale counts here, with a unit that's low on it retreating and one that has
+  none left breaking into a full rout.
+
+
+  Between fights you're back in the shop, where rarer units turn up more often
+  the further you get. Armies whose units share culture and weapon traits earn
+  bonuses for it. Strangely enough, you also collect interest that grows with
+  the lives you've lost.
+
+
+  There's also a box you can tick to challenge a battle, giving the enemy 25%
+  more budget in exchange for 4 extra gold in the next shop and a challenge
+  counter if you win.
+
+
+  On top of that, a bunch of more obscure stat mechanics run in the background.
+
+
+  ID107 built it in TypeScript, with Claude writing the code, Suno making the
+  music and Civitai producing the pictures. According to ID107, items and
+  formations got cut before the deadline. The soundtrack doesn't loop.
 play:
   url: https://id107.itch.io/charge-autobattler
   embeddable: false
@@ -59,7 +76,7 @@ media:
     - games/charge-autobattler/shot-2
 dates:
   added: 2026-10-01
-  updated: 2026-10-01
+  updated: 2026-10-02
 status: live
 provenance:
   foundVia: scout:aibgj-4

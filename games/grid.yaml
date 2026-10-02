@@ -2,25 +2,38 @@ slug: grid
 title: GRID
 tagline: Play cards to place counters and line up three in a row on a 3×3 board
 description: >-
-  A match ends when one side lines up three counters on a 3×3 grid. Counters
-  only arrive by playing cards, so before the first move you assemble a 30-card
-  deck, then draw from it and play from your hand each turn.
+  Get three of your counters in a row on a 3×3 grid and the match is yours, so
+  yes, it's Tic-Tac-Toe underneath. Here, though, counters only show up when you
+  play cards. Before your first move you put together a 30-card deck, and then
+  each turn you draw from it and play from your hand.
 
 
-  Every card reaches only certain cells and costs Energy. Your supply is 1 on
-  the first turn and rises each turn until it caps at 5. Cards are either Role
-  or Action cards, over 50 in all, and each has an effect that alters the grid
-  as soon as it is placed.
+  Every card can only reach certain cells, which turns those nine squares into a
+  puzzle about where each card is even allowed to go.
 
 
-  The Combo system lets you give up one card's placement sequence so that a
-  different card can land on a cell it could not hit by itself.
+  Cards also cost Energy, and you start with just 1 of it on the first turn.
+  Your supply climbs every turn after that until it stops at 5.
 
 
-  The menu offers a bot match at three difficulty levels, an offline two-player
-  mode on one device, and Draft Mode. It also has saved decks, a rules page,
-  match history, settings and an interactive tutorial. Sessions last a few
-  minutes.
+  There are over 50 cards, split between Role and Action types. Each one carries
+  an effect that changes the grid the moment it's placed. Then there's the Combo
+  system, where you give up one card's placement sequence so a different card
+  can land on a cell it couldn't hit by itself.
+
+
+  For a game built on nine squares, the menu is surprisingly full, with bot
+  matches at three difficulty levels, offline two-player on one device, and
+  Draft Mode.
+
+
+  Saved decks, a rules page, match history and settings sit next to an
+  interactive tutorial, all framed by painted anime-style knights clashing on
+  the title screen. Sessions last a few minutes.
+
+
+  According to radiantforce, AI assisted with the code, graphics, sounds and
+  text.
 play:
   url: https://radiantforce.itch.io/grid
   embeddable: false
@@ -60,7 +73,7 @@ media:
     - games/grid/shot-2
 dates:
   added: 2026-09-30
-  updated: 2026-10-01
+  updated: 2026-10-02
 status: live
 provenance:
   foundVia: scout:aibgj-3

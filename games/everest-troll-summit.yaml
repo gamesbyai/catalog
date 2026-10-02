@@ -2,21 +2,36 @@ slug: everest-troll-summit
 title: everest-troll-summit
 tagline: Help or sabotage a shared Everest climber alongside thousands of other players.
 description: >-
-  A single climber ascends a snowy peak in 3D, and everyone connected decides
-  how it goes. Each player picks a side on a prompt: boost the climber toward
-  the summit at 8,849 meters, or play troll and drag them back to the bottom.
+  One climber is inching up a snowy 3D mountain, and everyone connected gets a
+  say in how it goes. Each player gets a prompt asking them to pick a side,
+  either boosting the climber toward the 8,849-meter summit or playing troll
+  and dragging them back to the bottom. One prompt even pins a made-up crime
+  on the climber, a one-star review left because the waiter looked unfriendly.
 
 
-  When you are the chosen climber, the panel gives you a One Step button worth
-  +0.1 meters per press. A stamina bar sits over the climber's head, and a
-  vertical altitude gauge on the left tracks height, starting at 5,000 meters in
-  the opening view.
+  If you're the chosen climber, your panel hands you a One Step button that
+  adds 0.1 meters every time you press it. The altitude gauge on the left
+  starts you at 5,000 meters in the opening view, and at a tenth of a meter
+  per press, the summit is a long way off.
 
 
-  Around the mountain, a live feed lists what players do, and a leaderboard
-  splits into Helpers and Trolls. A hall of fame records climbers. A chat box
-  lets you shout messages to the crowd, an SOS Help button sends a call for aid,
-  and a Share button recruits more helpers.
+  Meanwhile a stamina bar sits over the climber's head, and it starts out full
+  at 100%.
+
+
+  Around the mountain, a live feed shows what players are doing, and the
+  leaderboard is split into Helpers and Trolls. Giving the saboteurs their own
+  ranking treats trolling as a real side rather than just noise. There's also
+  a hall of fame that keeps a record of climbers.
+
+
+  To get the crowd's attention, you can shout into a chat box, hit an SOS Help
+  button to call for aid, or press Share to recruit more helpers.
+
+
+  nickpeanutai made it on a spur-of-the-moment idea, according to the creator.
+  It's built around one open question, whether the helpers or the trolls come
+  out on top.
 play:
   url: https://everest-troll-summit.agentmeshlab.com
   embeddable: true
@@ -58,7 +73,7 @@ media:
     - games/everest-troll-summit/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-10-01
+  updated: 2026-10-02
 status: live
 provenance:
   foundVia: scout:vibejam-2026

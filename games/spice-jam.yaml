@@ -2,25 +2,34 @@ slug: spice-jam
 title: Spice Jam
 tagline: Harvest spice in the desert, hunt rival harvesters, and outlast the worm.
 description: >-
-  Spice Jam puts you in a third-person desert as a hooded harvester armed with a
-  knife, with a crosshair at screen center. You gather spice from open sand, up
-  to a carry limit of 10, then bring it back to a base marked by a tall beam of
-  light.
+  Spice Jam sends you across a third-person desert as a hooded harvester armed
+  with a knife, aiming with a crosshair in the middle of the screen. You scoop
+  spice off the open sand until you're holding 10, the most you can carry, then
+  haul it home to a base you can spot by its tall beam of light.
 
 
-  Other players are rival harvesters. Killing one steals their spice, and a
-  glowing pack on a harvester shows who is carrying. The base signage notes that
-  spice drops on death.
+  The other people out there are harvesters too, and killing one hands you
+  whatever spice they were carrying, so every rival on the dunes doubles as a
+  walking stash.
 
 
-  Depositing at the base adds to a banked total and restores health and shield.
-  The on-screen panel tracks your weapon, spice carried, bank, HP, shield and a
-  worm meter that starts at 0%. A worm threatens harvesters out on the sand, and
-  a status line marks the rock as safe.
+  A glowing pack is a clear tell that someone's loaded. Signs at the base give
+  you fair warning about the flip side, since your own spice drops when you
+  die.
 
 
-  The base also has stands for gear, including one surrounded by a shield
-  bubble. The panel shows a player count out of 20, and the setting draws on
+  Dropping your haul at the base adds it to your bank and patches up your health
+  and shield, which turns every trip home into a refill as well as a payout. A
+  panel in the corner keeps track of your weapon, the spice you're holding, your
+  bank, HP and shield. There's also a worm meter that sits at 0% when you start.
+
+
+  Out on the open sand there's a worm to worry about, though a status line
+  under your bars offers the calm reminder that the rock is safe ground.
+
+
+  Back at base, a few stands hold gear, and one of them sits inside a shield
+  bubble. The panel counts players against a cap of 20. The setting borrows from
   Dune, with lasgun and holtzman themes.
 play:
   url: https://spice.bananatriangles.com

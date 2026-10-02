@@ -3,21 +3,33 @@ title: FrameFrenzy
 tagline: Rebuild a scrambled sliding puzzle made from a YouTube video that keeps
   playing.
 description: >-
-  The round is a race against the clip's own running time: rebuild the scrambled
-  picture before the video finishes. You enter a YouTube address, choose a 3×3
-  or 4×4 grid, press Drop In, and tap once when the countdown ends.
+  The timer in this sliding puzzle is the video itself, since you have to
+  rebuild the scrambled picture before the YouTube clip you picked finishes
+  playing.
 
 
-  Every tile shows a live crop of the same playing footage, so the target image
-  keeps moving as you work. You slide pieces into the empty space until the
-  frame lines up. Music clips, trailers, memes and lectures can all serve as the
-  source.
+  There are a few steps before a round starts. You paste in a YouTube address,
+  pick a 3×3 or 4×4 grid and hit Drop In, then tap once when the countdown ends.
 
 
-  A finished puzzle produces a result card with your time and move count, shown
-  beside a grid of colored squares. The video and grid size are encoded in the
-  link, so a friend can open the identical puzzle and try to beat your time.
-  Input can come from a keyboard, mouse or touchscreen.
+  Every tile shows a live crop of that same clip while it keeps running, so the
+  image you're chasing never holds still. There's no freeze frame to study,
+  which means you're matching motion as much as shapes. You slide pieces into
+  the empty gap until the whole frame lines up again.
+
+
+  Music clips, trailers, memes and lectures can all serve as the source of your
+  puzzle.
+
+
+  Finishing gets you a result card with your time and move count, set beside a
+  little grid of colored squares. The video and grid size are packed into the
+  link, so a friend who opens it gets the identical puzzle and can try to beat
+  your time. Tucking the whole challenge into a URL is a tidy way to make a solo
+  puzzle something you pass around.
+
+
+  You can play it with a keyboard, a mouse or a touchscreen, whichever is handy.
 play:
   url: https://kevinloeffler.itch.io/framefrenzy
   embeddable: false
@@ -62,7 +74,7 @@ media:
     - games/framefrenzy/shot-2
 dates:
   added: 2026-09-30
-  updated: 2026-10-01
+  updated: 2026-10-02
 status: live
 provenance:
   foundVia: scout:aibgj-2

@@ -3,21 +3,36 @@ title: Portal-Runner
 tagline: Run through five parallel worlds, dodging vanishing obstacles and
   leaping through portals.
 description: >-
-  The game opens on a night city street, seen from behind a blocky blue runner.
-  The score counts up in the top left, with a coin counter below it and a label
-  naming the current world, City Night. A speed bar in the top right tracks the
-  pace of the run.
+  A blocky blue runner stands on a night city street when the game starts, with
+  the camera sitting right behind them. The score ticks upward in the top left,
+  and your coin count sits under it next to a small label naming the world
+  you're in, City Night. Over in the top right, a thin speed bar keeps track of
+  how fast the run is going.
 
 
-  You sprint down the road, picking up yellow coins and avoiding striped
-  barriers. Some obstacles vanish before your eyes, so the track ahead cannot be
-  fully trusted, even on a route you have run before.
+  You sprint down the middle of a lit road, scooping up glowing yellow coins
+  and steering around striped barriers stacked in your path. Tall dark towers
+  and lampposts line the street, all built from chunky low-poly blocks that
+  give the whole city a toy-like look.
 
 
-  Portals carry you through five parallel worlds, and each one changes the
-  rules, colors and feel instead of only the scenery. A golden JAM EXIT
-  eventually pulls you into the multiverse. The creator built the endless runner
-  core on Subway Surfers and Temple Run.
+  Some of those obstacles disappear right in front of you, a sneaky twist that
+  means you can't fully trust the road ahead, even on a stretch you've already
+  run.
+
+
+  Portals are your way out of the city. They carry you across five parallel
+  worlds, and each one swaps out the rules, colors and feel rather than just
+  repainting the background, a big ambition for an endless runner. Between the
+  vanishing barriers and the shifting rules, the road keeps changing what it
+  asks of you.
+
+
+  Eventually a golden exit shows up and pulls you out into the multiverse.
+
+
+  tempest_4754 modeled the endless-runner core after Temple Run and Subway
+  Surfers.
 play:
   url: https://portal-runner.vercel.app
   embeddable: true
@@ -52,7 +67,7 @@ media:
     - games/portal-runner/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-10-01
+  updated: 2026-10-02
 status: live
 provenance:
   foundVia: scout:vibejam-2026

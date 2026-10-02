@@ -2,20 +2,29 @@ slug: ride-tales
 title: Ride Tales
 tagline: Choose any place on Earth and drive through quests and hidden treasures.
 description: >-
-  The first screen shows a low-poly white hatchback parked on a coastal road,
-  with blue sea on one side and pale apartment blocks and rounded trees on the
-  other. A row of buttons sets the time of day: morning, day, sunset, night or
-  now. A Next button moves on.
+  A low-poly white hatchback waits on a coastal road when the game opens, with
+  blue sea stretching off to one side. Pale apartment blocks and round, chunky
+  trees line the other side, so the first screen looks like a quiet seaside
+  postcard.
 
 
-  Before driving, you pick a spot anywhere on Earth and drop in. The tagline on
-  the title screen describes the game as driving, playing and exploring the real
-  world, and the arrow keys steer the car.
+  Above the car there's a row of buttons for the time of day, with morning, day,
+  sunset and night, plus a "now" option, and a Next button takes you onward.
 
 
-  The creator describes an open world with quests, hidden treasures and
-  legendary rides. They say it combines their love of travel with open-world
-  driving games like GTA, so you can roam and discover places from home.
+  From there you choose a spot anywhere on Earth and drop in, which leaves a lot
+  of planet for one small hatchback to cover. The title screen's tagline sells
+  it as driving, playing and exploring the real world. You steer with the arrow
+  keys.
+
+
+  Aurelien_Gz describes it as an open world full of quests and hidden treasures,
+  with legendary rides to find along the way.
+
+
+  Aurelien_Gz says the game combines their love of travel with open-world
+  driving games like GTA. According to them, it's meant to let you roam and
+  discover places from home.
 play:
   url: https://ridetales.lumaris.works
   embeddable: true
@@ -55,7 +64,7 @@ media:
     - games/ride-tales/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-10-01
+  updated: 2026-10-02
 status: live
 provenance:
   foundVia: scout:vibejam-2026

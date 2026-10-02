@@ -3,22 +3,34 @@ title: Wallflipper
 tagline: Race through a neon corridor, flipping gravity to dodge obstacles and
   grab objects.
 description: >-
-  The game opens on a Launch button over a dark neon corridor with a glowing
-  grid floor. A readout in the top left shows gravity (Normal) and direction
-  (Forward). The top right tracks distance in meters and two counters, both at
-  zero, with a thin bar beneath them.
+  When it starts, a Launch button sits over a dark neon corridor with a glowing
+  cyan grid floor. In the top left there's a readout showing gravity set to
+  Normal and direction set to Forward, while the top right counts distance in
+  meters above two counters at zero and a thin bar.
 
 
-  You race down the corridor on its floor, walls, and ceiling. Steering left or
-  right carries you up the sides, and holding the steer keeps you climbing.
-  Space flips you to the opposite surface, which is how you dodge surface traps
-  and obstacles. The goal is to stay alive at full speed and collect objects
-  along the way.
+  Once you're off, you race down that corridor on the floor, the walls and the
+  ceiling, which turns pretty much the whole tube into road.
 
 
-  The on-screen text also tells you to follow fragment routes through the
-  corridor. R reverses direction, which matches the Direction readout. P pauses,
-  and music and sound each have their own toggle button and key.
+  Steering left or right carries you up the sides, and if you keep holding the
+  steer you keep climbing. Space throws you over to the opposite surface, and
+  that flip is how you get past the traps and obstacles sitting on the surfaces.
+
+
+  The goal is to stay alive at full speed while picking up objects along the
+  way. Text on the screen also points you toward following fragment routes
+  through the corridor. Oddly enough, R turns you around entirely, and that's
+  what the Direction readout in the corner keeps track of.
+
+
+  P pauses, a small mercy in a game that wants you going full speed.
+
+
+  Music and sound sensibly get their own toggles instead of sharing one mute.
+  Both have buttons in the bottom-left corner, and M and S switch them from the
+  keyboard too. The full list of keys runs along the bottom of the screen as
+  well.
 play:
   url: https://expectfun.github.io/vibetools/wallflipper.html
   embeddable: true
@@ -58,7 +70,7 @@ media:
     - games/wallflipper/shot-2
 dates:
   added: 2026-10-01
-  updated: 2026-10-01
+  updated: 2026-10-02
 status: live
 provenance:
   foundVia: scout:vibejam-2026

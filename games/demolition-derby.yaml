@@ -2,22 +2,34 @@ slug: demolition-derby
 title: Demolition Derby
 tagline: Ram other players' cars in a dusty arena until one is left running
 description: >-
-  You drive a car around a dusty, fenced arena and ram other drivers until their
-  cars are wrecked. Each round runs on a countdown timer that starts near four
-  minutes, and you share the arena with other players online.
+  Your job here is to ram other cars until they're wrecked, all inside a dusty
+  arena ringed by a chain-link fence. Each round runs on a countdown that starts
+  close to four minutes. Shield-shaped pickups lie out on the dirt, which is
+  scribbled all over with tire tracks.
 
 
-  Your score sits in the top corner, and a standings board lists the leaders by
-  points. Holding Tab brings up the full board. A feed under it announces who
-  wrecked whom. Your hull percentage shows inside a speedometer, and a critical
-  warning appears when the hull is nearly gone.
+  The lineup has muscle cars and vans, plus a wreck built to look like a dog's
+  face, floppy ears and lolling tongue included.
 
 
-  A boost meter recharges over time and is spent with Shift. Space works the
-  handbrake. Shield-shaped pickups lie on the arena floor. The cars include
-  muscle cars, vans and a dog-faced wreck, and tire tracks mark the dirt. The
-  creators cite FlatOut 2 demolition derby sessions at LAN parties as the
-  inspiration.
+  Your hull percentage sits right inside the speedometer, ticking down as the
+  dents pile up. When it's nearly gone, a critical warning shows up under the
+  gauge.
+
+
+  Your score lives in the top corner, with a standings board under it ranking
+  the leaders by points. Hold Tab and you'll get the full board. Below that, a
+  feed calls out who just wrecked whom, the closest thing this arena has to a
+  derby announcer.
+
+
+  Boost refills on its own over time and you burn it with Shift, while Space
+  pulls the handbrake.
+
+
+  The creators describe it as dumb fun, smashing cars with a bunch of strangers
+  online. They point to FlatOut 2's demolition derby, a favorite at their old
+  LAN parties, as the inspiration.
 play:
   url: https://demolition-derby.xyz
   embeddable: false

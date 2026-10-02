@@ -2,24 +2,37 @@ slug: lunar-mass
 title: Lunar Mass
 tagline: Deploy bots to build a lunar mass driver while carving new craters in the Moon.
 description: >-
-  Lunar Mass starts with you in a spacesuit on a lunar pad beside a hab dome
-  that has no power. Mission Control sends text prompts, and the first job is to
-  head to a waypoint, mine regolith with F, and place a solar kit that connects
-  the dome to the grid.
+  Lunar Mass puts you in a spacesuit on a moon landing pad, right next to a hab
+  dome that's sitting there with no power.
 
 
-  A cargo panel lists what you carry: regolith, ice, ore and metal, each with a
-  carry limit, and these resources are spent on buildings. Depots, including a
-  hab depot and a railend depot, hold stored materials. Tabs for Ops, Launch,
-  Power and Tips sit beside the cargo view, and the mission panel shows a
-  Launches count.
+  Mission Control talks you through it with text messages, and the opening one
+  calls the dome alive but hungry for power, a charming way to hand you a chore.
+  Your first job is to walk to a waypoint, dig up regolith with F and set down a
+  solar kit that hooks the dome into the grid. The camera follows your astronaut
+  from behind in third person.
 
 
-  The larger goal is to build a lunar mass driver, with a set of bots helping
-  construct the megastructure, and the creator describes creating new lunar
-  craters along the way. You view the astronaut from behind in third person. A
-  leaderboard is reachable from the title screen. The creator made it to learn
-  about the mass driver and plans a more realistic simulation later.
+  A cargo panel keeps track of what you're hauling, split into regolith, ice,
+  ore and metal, and each of those has a carry limit. Everything you collect
+  gets spent on buildings, while depots such as a hab depot and a railend depot
+  hold whatever's stored.
+
+
+  Tabs for Ops, Launch, Power and Tips sit next to the cargo view, and the
+  mission panel keeps a launch counter that starts out at a lonely zero.
+
+
+  The bigger aim is a full lunar mass driver, and thankfully a whole set of bots
+  helps put the megastructure together. The creator describes creating new lunar
+  craters along the way, too. There's also a leaderboard you can open from the
+  title screen.
+
+
+  Making it was the creator's way to learn about the mass driver, which they
+  hope to build with the Terafab team one day, and they plan a more realistic
+  simulation later. According to a note on the title screen, the game is still
+  over 90 percent AI-written even as they keep working on its mechanics.
 play:
   url: https://lunar-mass.vercel.app
   embeddable: true

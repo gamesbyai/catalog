@@ -2,27 +2,38 @@ slug: paperwork-in-purgatory
 title: Paperwork in Purgatory
 tagline: Check each dead soul's claims against the database and accept or reject them.
 description: >-
-  Paperwork in Purgatory puts you behind the intake desk of the afterlife. Each
-  dead soul slides over a list of claimed sins, virtues, last rites and excuses.
-  You cross-reference those claims against the database, then accept or reject
-  the soul.
+  You're a damned soul who's finally been offered a job in the afterlife, though
+  it's a promotion to the intake desk rather than salvation. Each dead person
+  slides over a list of their claimed sins, virtues, last rites and excuses, and
+  you check all of it against the database before you accept or reject them.
 
 
-  A run lasts seven days at the window. Mistakes are tracked: three errors cost
-  one life, and you have three lives. Losing all of them means you get processed
-  instead of fired. Surviving the full week earns you parole and a place in the
-  line you were working.
+  The database is the one thing here you can trust, and the souls' own claims
+  can't be. A saint hiding a murder should be turned away, while a thief who fed
+  the poor may get through. It's a game about reading documents and applying the
+  rules, wrapped in a creepy office-bureaucracy tone that suits, a bit too well,
+  a Purgatory where Hell is overcrowded and Heaven's HR department won't leave
+  you alone.
 
 
-  The database is the source of truth, and the souls' claims can't be trusted. A
-  saint with a hidden murder should be denied, while a thief who fed the poor
-  may pass. The game is built around reading documents and applying the rules,
-  with a creepy, office-bureaucracy tone.
+  Your booth is a grimy green pixel-art window with a monitor up top, buttons to
+  process a soul or check the database, a chalkboard holding the instruction
+  manual and, for some reason, a coffee maker.
 
 
-  It was made for mobile screens. The creator suggests playing the browser
-  version at about 50% screen size. The creator notes that AI assisted with the
-  graphics.
+  A run lasts seven days at the window, and the chalkboard keeps count of your
+  daily quota, starting at ten souls on day one. Make it through the whole week
+  and you're paroled, with the grim reward of a spot in the very line you've
+  been working.
+
+
+  Mistakes are tracked, and every three errors cost you one of your three lives,
+  while losing all of them means you don't get fired, you get processed.
+
+
+  Morpheus Code made it for mobile screens. If you're playing in a browser, they
+  suggest setting it to about 50% screen size. According to the creator, AI
+  assisted with the graphics.
 play:
   url: https://morpheus-code.itch.io/paperwork-in-purgatory
   embeddable: false
@@ -57,7 +68,7 @@ media:
     - games/paperwork-in-purgatory/shot-2
 dates:
   added: 2026-10-01
-  updated: 2026-10-01
+  updated: 2026-10-02
 status: live
 provenance:
   foundVia: scout:aibgj-4

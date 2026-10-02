@@ -2,22 +2,38 @@ slug: emoji-survivors
 title: Emoji Survivors
 tagline: Fight endless waves of emoji monsters as a mage and stack chaotic upgrades.
 description: >-
-  Emoji Survivors starts on a mage select screen. You pick a caster from a row
-  of emoji-faced portraits, and the panel above shows that mage's three skills.
-  The Wind Mage comes first, with Gale Ring, a point-blank knockback burst,
-  Crosswind Strip, a moving wind lane that shreds packs, and Tempest Mode, a
-  storm core that chains displacement.
+  Emoji Survivors sends wave after wave of emoji monsters at you, with no end
+  in sight, and hands you a mage to fight them off. As the run goes on, you
+  grab chaotic upgrades that grow your caster's build into something new. The
+  goal, put bluntly, is to clear out the horde with your spells before the
+  horde clears you out.
 
 
-  In a run you survive endless waves of emoji monsters and take chaotic upgrades
-  that evolve your mage's build. The goal is to wipe out the horde with
-  spellcraft before it wipes you out.
+  It all starts on a mage select screen, where a row of emoji-faced portraits
+  lets you choose your caster while the panel up top lists the three skills each
+  one brings.
 
 
-  An archive panel on the menu tracks progress across 22 trials and 6
-  achievements, all starting at zero. Two of the trials are surviving 5 minutes
-  in a single run and reaching level 10 in a single run. A sound button sits in
-  the top corner.
+  The Wind Mage comes first, and the whole kit seems built around shoving
+  monsters where they don't want to go. Gale Ring is a knockback burst right
+  around you, Crosswind Strip sends a moving lane of wind through packs to shred
+  them, and Tempest Mode drops a storm core that keeps chaining displacement.
+
+
+  Next to the mage picker there's an archive panel that tracks 22 trials and 6
+  achievements, all sitting at zero when you begin. Two of the trials ask you
+  to last 5 minutes within one run and to hit level 10 within one run. For a
+  game about outlasting a swarm, it's a long checklist.
+
+
+  There's a sound toggle up in the top corner, above chunky pixel lettering and
+  a dark forest backdrop.
+
+
+  swisnotjan made it after long wanting to try making games and finish a whole
+  project from nothing. According to swisnotjan, game development is the most
+  exciting kind of art, and AI is what finally made it possible for swisnotjan
+  to pull it off.
 play:
   url: https://emoji-survivors.fun
   embeddable: true

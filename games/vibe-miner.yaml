@@ -2,20 +2,34 @@ slug: vibe-miner
 title: Vibe-Miner
 tagline: Dig deeper, fight enemies, and return to the surface to upgrade.
 description: >-
-  The run starts on the surface at 0 m depth. A pixel-art miner stands on a
-  strip of dirt next to a gap, and a shop building sits at the left edge. The
-  HUD shows a health bar at 100, a fuel bar at 30, a points counter, a money
-  total and a backpack with 0 of 10 slots used.
+  A pixel-art miner stands on a strip of dirt at 0 m depth, right beside a gap
+  in the ground. Off at the left edge of the surface there's a shop building
+  with its name in big letters. Your HUD starts with a health bar at 100, fuel
+  at 30, a points counter, a money total and a backpack with 0 of its 10 slots
+  filled.
 
 
-  The goal is to dig down through a side-view 2D map, fight the enemies you meet
-  and collect resources. Then you return to the surface to upgrade and head
-  deeper. A depth meter tracks how far down you have gone.
+  The plan is to dig down through a side-view 2D map, fighting the enemies you
+  run into and grabbing resources along the way. Then you haul it all back up to
+  the surface, upgrade and push deeper than last time.
 
 
-  A six-slot hotbar runs along the bottom of the screen. It holds a pickaxe in
-  slot 1 and a grapple tool in slot 2, and the other four slots start empty. The
-  main menu also has a leaderboards button.
+  A depth meter in the top right corner keeps track of how far down you've
+  gotten.
+
+
+  Along the bottom runs a six-slot hotbar. Your pickaxe sits in slot 1, and a
+  grapple tool in slot 2 makes sense for someone who keeps climbing back out of
+  their own hole. The other four slots start out empty.
+
+
+  danbuildsstuff points to Miner Dig Deep and Minecraft as the games it's
+  closest to.
+
+
+  The main menu doesn't waste your time, with just a play button and a
+  leaderboards button. A little pixel miner with a pack on his back stands next
+  to them.
 play:
   url: https://vibe-miner.xyz
   embeddable: true

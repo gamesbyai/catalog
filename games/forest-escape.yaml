@@ -2,20 +2,34 @@ slug: forest-escape
 title: Forest Escape
 tagline: Find seven blue flowers in a dark forest while spirits chase you.
 description: >-
-  A dark forest hides seven blue flowers, and spirits roam it while you search.
-  The goal is to collect all seven without being caught by a spirit. A counter
-  in the top left shows how many flowers you have collected out of seven.
+  Somewhere in a pitch-dark forest there are seven blue flowers, and spirits
+  drift between the trees while you hunt for them. You win by picking up all
+  seven without a spirit catching you.
 
 
-  Move with WASD, ZQSD or the arrow keys, and look around with the mouse. Press
-  F or Space to toggle the flashlight. Flowers are only visible while the
-  flashlight is on, and spirits can't see you while it is off.
+  Your flashlight is the whole problem, because the flowers only show up while
+  it's on. Switch it off and the spirits can't see you, but you also lose sight
+  of what you came for. It's a neat bind, since the darkness that keeps you
+  hidden is the same darkness that hides the flowers.
 
 
-  A battery meter in the top left starts at 100% and tracks the flashlight's
-  charge. If the battery runs out, you lose. A pause button sits in the top
-  right corner. The title screen also has share and credits buttons, plus links
-  to app store versions.
+  Then there's the flashlight's charge, tracked by a battery meter in the top
+  left that starts at 100% and ends your game outright if it drains to nothing.
+
+
+  You move with WASD, ZQSD or the arrow keys and look around with the mouse,
+  while F or Space flicks the flashlight on and off. Supporting ZQSD next to
+  WASD is a thoughtful touch for anyone on an AZERTY keyboard.
+
+
+  The top left of the screen shows the battery meter and a counter of your
+  flowers out of seven, and a pause button sits in the top right corner.
+
+
+  On the title screen the game goes by Floral Escape: Ghost Forest, a name that
+  sounds a lot gentler than being hunted by spirits in the dark. You'll find
+  share and credits buttons there too. Below them are links to app versions on
+  the App Store and Google Play.
 play:
   url: https://escape.alexandre-grisey.fr
   embeddable: true
@@ -53,7 +67,7 @@ media:
     - games/forest-escape/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-10-01
+  updated: 2026-10-02
 status: live
 provenance:
   foundVia: scout:awesome-cc0

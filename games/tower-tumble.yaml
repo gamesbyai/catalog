@@ -2,21 +2,34 @@ slug: tower-tumble
 title: Tower Tumble
 tagline: Bounce off walls and backflip your way up an endless pixelated tower.
 description: >-
-  Climb an endless tower by jumping from one green platform to the next,
-  starting from the ground floor. A counter in the corner shows your current
-  floor and your points. Build speed by running, and a faster run gives a bigger
-  jump.
+  Start running along the ground floor, then jump for the first green platform
+  and keep going up an endless tower.
 
 
-  Hold the jump button to charge a higher leap. Bounce off the tower walls to
-  gain momentum, and skip platforms to earn combo points. Backflips in the air
-  add style points. Some platforms are red, set apart from the green ones.
+  Speed is what gets you higher, because the faster you're running when you
+  leave the ledge, the bigger your jump. On top of that, you can hold the jump
+  button to charge an even taller leap.
 
 
-  The tower is drawn in chunky pixel art with a 3D look and a grainy, retro
-  screen filter. A small orange character climbs between two brown walls. Scores
-  go to an online leaderboard, so you can compare climbs with other players. The
-  creator based it on Icy Tower, a childhood favorite.
+  The two side walls do a bit more than keep you in, since bouncing off them
+  builds momentum. Skipping platforms on the way up earns you combo points.
+  Throwing a backflip in midair adds style points, so the game rewards showing
+  off along with plain height.
+
+
+  Mixed in with the green steps are some red platforms, and their color makes
+  them stand out sharply from the rest.
+
+
+  It's all chunky pixel art with a 3D look, and a grainy filter over the screen
+  gives it the feel of an old TV. A small orange climber hops between two brown
+  walls against a pale backdrop. In the corner, a counter keeps track of the
+  floor you've reached and your points.
+
+
+  andreaskruszaki based it on Icy Tower, a childhood favorite of theirs that
+  sadly no longer exists, giving it a new 3D look and an online leaderboard
+  where you can compare climbs with other players.
 play:
   url: https://tower-tumble.vercel.app
   embeddable: true

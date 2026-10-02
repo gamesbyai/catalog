@@ -2,23 +2,34 @@ slug: mass-chaos
 title: Mass Chaos
 tagline: Grab, carry and deliver mass across a tilting arena without falling off.
 description: >-
-  You pilot a character around an arena that works like a scale, collecting
-  cargo and delivering it to your green home zone. Mass is score, so heavier
-  cargo scores more. Heavy cargo also tilts the arena and can make you slide.
+  You're piloting a character around an arena that works like a giant scale,
+  picking up cargo and hauling it back to your green home zone. Mass is your
+  score, so the heavier the load, the more it's worth.
 
 
-  Play comes down to four actions: grab, carry, shoot, deliver. Every step you
-  take tips the balance of the arena, and the one rule to remember is not to
-  fall off.
+  But heavy cargo also tilts the arena, and that can send you sliding. Every
+  step you take tips the arena's balance too, not just the cargo you're holding.
+  The menu's slogan, carry more and risk more, sums up that bargain in four
+  words.
 
 
-  The menu asks for a pilot name before you start and offers three modes: Solo,
-  Free-for-All and Teams. It uses a black background with neon cyan and magenta
-  lettering.
+  Along with grabbing, carrying and delivering, you can shoot, while the one
+  rule to keep in mind is a blunt don't fall off.
 
 
-  The creator had never made a game before and built this one partly to show
-  their kids that an idea can become something playable.
+  Before you start, you type in a pilot name and choose Solo, Free-for-All or
+  Teams. The menu is all neon cyan and magenta lettering glowing on a black
+  background.
+
+
+  The default pilot name is ANONYMOUS.
+
+
+  vahagn_bbjnyan had wanted to make a game for a long time, and this is the
+  first one they've built. Part of the reason was a sweet one, since they wanted
+  to show their kids that an idea can become something playable even without any
+  prior experience. They also hoped it would encourage the kids to build things
+  of their own.
 play:
   url: https://mass-chaos.com
   embeddable: true
@@ -55,7 +66,7 @@ media:
     - games/mass-chaos/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-10-01
+  updated: 2026-10-02
 status: live
 provenance:
   foundVia: scout:vibejam-2026
