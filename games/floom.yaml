@@ -3,27 +3,33 @@ title: floom
 tagline: Drift through a shared canvas, plant seeds, and grow flowers alongside
   strangers.
 description: >-
-  In floom, a quiet online game, you drift around a shared canvas and plant
-  seeds. The other people drifting past are strangers doing the same, and play
-  is open-ended: a session is about wandering, placing seeds and watching what
-  grows from the actions of everyone present.
+  Press play to enter a shared green field where white seeds float past. You
+  appear as a small dot with a generated name label, such as Swift Camellia, and
+  other players appear in the same space. The game describes itself as a place
+  where strangers meet by chance and produce flowers, sound and brief
+  connections.
 
 
-  Seeds from different players can meet, and when they do, the result is sound
-  and flowers appearing on the canvas. Those small, unplanned connections
-  between strangers are what the game is about, and the mood stays cozy and
-  unhurried.
+  Two lines of text in the top right corner show how many of the 49 flowers you
+  have seen so far and how long remains until the meadow resets. A help button
+  sits in the top left corner.
 
 
-  The idea came from how people shape the world around them, and how that world
-  changes in response. PixiJS draws the canvas, and the creator put it together
-  with Claude Code as a Vibe Jam 2026 entry, which finished 587th of 945.
+  Press spacebar to open a memento, a snapshot of the field stamped with the
+  date and time. The dialog has a download button. The bar along the bottom
+  holds three buttons: share, snapshot and sound.
+
+
+  The creator cites the effect people have on their surroundings, and the effect
+  those surroundings have back on them, as the starting idea.
 play:
   url: https://floom-game.vercel.app
   embeddable: true
   platforms:
     - browser
     - mobile
+  controls:
+    - "Spacebar: take a memento snapshot"
 creator:
   name: jeremiespoken
   handle: jeremiespoken
@@ -54,7 +60,7 @@ media:
     - games/floom/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-09-29
+  updated: 2026-10-02
 status: live
 provenance:
   foundVia: scout:vibejam-2026

@@ -3,22 +3,21 @@ title: Captain Curveball's Cruise
 tagline: Drive a speedboat around Maldivian islands, picking up tourists and
   dodging disasters.
 description: >-
-  Captain Curveball's Cruise hands you a speedboat in a playful version of the
-  Maldives and a clock to race. You pick up tourists, steer past absurd
-  disasters and deliver your passengers safely, earning as much money as you
-  can, alone or with a second player.
+  The title screen shows a Maldives lagoon with a speedboat beside a wooden
+  jetty and overwater huts. The menu offers Set Sail, How to Play, Leaderboards,
+  Garage, Captain's Log and Settings.
 
 
-  The game grew out of the creator's Maldivian background. It takes the
-  beautiful, chaotic, unpredictable work of excursion crews and exaggerates it
-  into something lighthearted, built around speedboats, islands, resorts and
-  reefs. It was made with Claude Code on Three.js, plays on phones too, and came
-  345th of 945 at Vibe Jam 2026.
+  A run is a timed excursion shift. You drive a speedboat between islands, pick
+  up tourists, and deliver them safely to earn money while disasters get in the
+  way. The aim is the highest earnings before the clock runs out. One or two
+  players can take part, and the tagline frames it as a race against a rival.
 
 
-  The score chase gives each run a goal, but the game is meant to be enjoyable
-  without it too. Simply sailing around the islands and banking around the
-  resorts is part of the appeal.
+  The setting is a playful version of the Maldives, with islands, resorts, reefs
+  and docks, plus a repair sign at one pier. The creator is Maldivian and based
+  the game on what excursion crews deal with. They also wanted sailing around
+  the islands and banking past resorts to be fun apart from the score chase.
 play:
   url: https://captain-curveballs-cruise.netlify.app
   embeddable: true
@@ -54,7 +53,7 @@ media:
     - games/captain-curveball-s-cruise/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-09-29
+  updated: 2026-10-02
 status: live
 provenance:
   foundVia: scout:vibejam-2026

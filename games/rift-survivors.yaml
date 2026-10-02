@@ -2,27 +2,37 @@ slug: rift-survivors
 title: Rift Survivors
 tagline: Fight through 100 neon floors with combos, parries, and stamina management.
 description: >-
-  Rift Survivors is a cyber-neon hack-and-slash roguelike built around a
-  100-floor cycle. You fight your way up through the floors, and the fights get
-  tougher as you climb. Combat borrows from Demons' Souls: you chain combos and
-  time parries, and every swing and dodge draws stamina from the same pool.
+  The game opens in a neon lobby: a magenta grid floor with a cyan border, a
+  blocky character in the middle, and a prompt to press any key or tap to start.
+  A hint at the top says to enter the purple portal marked MISSION to descend.
+  Skill slots F, X and H sit along the bottom, and an inventory panel in the
+  corner holds 10 arrows.
 
 
-  Bosses come in three types, each with five to six attack patterns to learn.
-  Gear climbs an MMO-style rarity ladder from Common to Legendary, and skills
-  link into chains. The interface switches between Japanese and English on its
-  own.
+  Combat is a hack-and-slash with Demon's Souls-style handling. You attack,
+  guard and parry, dodge, and manage a stamina meter, and you can chain skills
+  together. The dungeon runs as a 100-floor cycle, with three boss types that
+  each use five to six attack patterns.
 
 
-  The creator started out making games for feature phones. This one was built
-  with Claude Code under a 1MB size limit, a constraint that recalled that early
-  work, and it ranked 430th of 945 in Vibe Jam 2026.
+  Gear comes in rarities from Common to Legendary, and an equipment screen lets
+  you manage what you wear. The interface switches between Japanese and English
+  automatically. The creator, who once made feature phone games under a 1MB
+  limit, kept to a similar size constraint here.
 play:
   url: https://rift-survivors.pages.dev
   embeddable: true
   platforms:
     - browser
     - mobile
+  controls:
+    - "WASD: move"
+    - "Space: attack"
+    - "V: guard / parry"
+    - "Shift: dodge"
+    - "Q / E: skill"
+    - "I: equipment"
+    - "F: pickup (key mode)"
 creator:
   name: otani_ai_memo
   handle: otani-ai-memo
@@ -52,7 +62,7 @@ media:
     - games/rift-survivors/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-09-29
+  updated: 2026-10-02
 status: live
 provenance:
   foundVia: scout:vibejam-2026

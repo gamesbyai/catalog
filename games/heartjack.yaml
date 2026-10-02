@@ -2,27 +2,34 @@ slug: heartjack
 title: Heartjack
 tagline: Fight other players in stylized melee duels that reward positioning and timing
 description: >-
-  Heartjack is a stylized melee PvP game that runs in the browser and pits
-  players against each other in close-quarters combat. It sits between action
-  and strategy, so a match is about swinging at the right moment as much as it
-  is about choosing where to stand and how to answer an opponent.
+  Heartjack puts you behind a boxer with red gloves on oversized mechanical
+  arms, standing on a pink-sand beach. You fight other fighters in melee: chain
+  a punch combo, kick, stab, dodge, or jump into an attack. The creator aimed to
+  push what AI could do with models, animations and art direction.
 
 
-  The creator says the project was an attempt to push what AI can produce, and
-  that ambition covers the character models, the animations, the art direction
-  and the overall attitude of the presentation. The look is deliberately
-  stylized rather than realistic, and the visual identity is a central part of
-  what the game offers.
+  A health bar and a second bar sit above a portrait card in the lower left. A
+  bot's health bar spans the top of the screen, with Rush and Idle buttons
+  beneath it that switch what the bot does. The beach has an umbrella, a wooden
+  table with chairs, tall grass and open water.
 
 
-  It was entered in Vibe Jam 2026, where it placed 96th out of 945 entries. The
-  creator built it in Three.js using Codex, and the multiplayer focus means
-  every encounter is against another person instead of scripted enemies.
+  A panel in the upper left switches your outfit between pants and shorts, and
+  shows the Beach map and a surface toggle labeled RM Map On. A move list in the
+  lower right corner shows the keys, and Tab opens the leaderboard during a
+  match.
 play:
   url: https://demov001.vercel.app
   embeddable: true
   platforms:
     - browser
+  controls:
+    - "LMB: punch combo"
+    - "F: kick"
+    - "Scroll up: stab"
+    - "D: dodge"
+    - "Jump + F: jump attack"
+    - "Tab: leaderboard"
 creator:
   name: DaraChaww
   handle: darachaww
@@ -53,7 +60,7 @@ media:
     - games/heartjack/shot-2
 dates:
   added: 2026-10-01
-  updated: 2026-10-01
+  updated: 2026-10-02
 status: live
 provenance:
   foundVia: scout:vibejam-2026

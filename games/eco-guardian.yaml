@@ -2,21 +2,26 @@ slug: eco-guardian
 title: ECO Guardian
 tagline: Fight garbage monsters and answer sustainability quizzes to earn power-ups.
 description: >-
-  ECO Guardian is a 2.5D survivor game where the horde is made of garbage
-  monsters. You fight off wave after wave, and sustainability quiz questions
-  appear during play. Answer them, and the knowledge turns into power-ups that
-  help you hold out against the growing horde.
+  Garbage monsters swarm you in this 2.5D survivor game, and the way to get
+  stronger is to answer sustainability quiz questions. Correct answers become
+  power-ups during the fight. The first stage, The Plastic Woods, is a forest
+  with plastic waste choking its roots and bottles, cans and food trays
+  scattered across the grass.
 
 
-  The creator, a father of four daughters, wanted to make something fun that
-  also has a positive influence on children. It was built with Codex on
-  Three.js, supports online multiplayer, runs on phones as well as desktops, and
-  placed 121st of 945 at Vibe Jam 2026.
+  The title screen has a Start Mission button, a Co-op or Solo play mode toggle,
+  a Guide, and a Ranks board. After you start, a stage intro describes the
+  setting. In the opening clearing, large YES and NO pads stand in the lower
+  corners, which fits the quiz format.
 
 
-  Learning is tied directly to progression, since the quizzes are part of how
-  your character gets stronger. The environmental theme runs through everything:
-  trash is the enemy, and sustainability is how you fight back.
+  An Eco-Mart in the clearing lets you spend carbon to upgrade and unlock
+  eco-abilities. A portal there leads to other worlds. The art pairs pixel-art
+  ground and props with blocky 3D models.
+
+
+  The creator is a father of four daughters. He built the game to teach children
+  about sustainability while keeping it fun to play.
 play:
   url: https://eco-guardian-delta.vercel.app
   embeddable: true
@@ -53,7 +58,7 @@ media:
     - games/eco-guardian/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-09-29
+  updated: 2026-10-02
 status: live
 provenance:
   foundVia: scout:vibejam-2026

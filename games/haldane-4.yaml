@@ -2,27 +2,33 @@ slug: haldane-4
 title: HALDANE-4
 tagline: Descend alone beneath the Antarctic ice and uncover what waits below in ASCII.
 description: >-
-  HALDANE-4 is a short horror story told entirely in ASCII characters. You play
-  a lone figure descending beneath the Antarctic ice shelf, moving deeper
-  through cold, dark spaces as the story unfolds around you. It is a
-  single-player game that plays on phones and desktops alike.
+  The screen opens on a gray terminal panel labeled Operator Terminal v2.1.4. A
+  boxed briefing names HALDANE-4, a submersible exploration platform of the
+  United States Antarctic Survey, unit H4-ANT-72, dated 1972. Everything behind
+  the briefing is drawn in text characters.
 
 
-  A single run is brief and built around atmosphere and discovery. The game was
-  made under tight rules, with ASCII graphics and a download under 5MB. All of
-  its sound is generated procedurally, except for an AI-generated voice-over
-  that carries part of the story, so text characters and synthesized audio do
-  the work of building dread.
+  You pilot the submersible alone on a descent beneath the Antarctic ice shelf.
+  Thrust with WASD, rotate the view with the mouse, cut the engine with Shift,
+  and switch on the light with Space. The key labels sit along the edges of the
+  terminal frame.
 
 
-  It placed fifth of 945 entries at Vibe Jam 2026 and received the Most Original
-  award from Cursor, the tool it was made with.
+  It is a short horror story told through that descent, with AI voice-over
+  narration. The sound is generated procedurally, and the voice is the only
+  audio made another way. The whole game fits in under 5 MB, with no assets
+  beyond the code.
 play:
   url: https://haldane4.denisbondare.com
   embeddable: true
   platforms:
     - browser
     - mobile
+  controls:
+    - "WASD: thrust"
+    - "Mouse: rotate"
+    - "Shift: engine off"
+    - "Space: light"
 creator:
   name: denisbondare
   handle: denisbondare
@@ -51,7 +57,7 @@ media:
     - games/haldane-4/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-09-29
+  updated: 2026-10-02
 status: live
 provenance:
   foundVia: scout:vibejam-2026

@@ -2,27 +2,35 @@ slug: grand-quack-auto
 title: Grand Quack Auto
 tagline: Honk your way through a city as a rubber duck and escalate the chaos.
 description: >-
-  You are a rubber duck loose in a city, and your main tool is a honk button. In
-  Grand Quack Auto, the more havoc you cause, the further the duck climbs from
-  its humble start as Lil' Quacker, and each stage of the climb raises the
-  stakes.
+  You play a rubber duck loose in a 3D city, and the main tool is the quack.
+  Walk the streets, honk at pedestrians to scare them, and build up chaos. The
+  first on-screen objective is to scare 3 pedestrians, and a brood counter at
+  the top tracks ducklings, starting at 0 of 6.
 
 
-  It borrows the antics of open-city crime games and the mischievous animal
-  energy of a goose prank sim. At the top of the climb waits a gun-wielding
-  persona called Duck Norris, so a tiny noisemaker ends up a full-blown menace.
-  The joke keeps escalating, and the tone stays silly throughout.
+  The duck levels up as the chaos grows. It starts as Lil' Quacker and
+  eventually becomes the gun-wielding Duck Norris. A panel in the corner shows
+  your current rank, chaos, combo and brood. A red news ticker along the bottom
+  reports on the mayhem, and a timer runs in the top corner.
 
 
-  According to the creator, the code for this Vibe Jam 2026 entry was written
-  entirely by AI with Claude Code, and the city is built in Three.js. It also
-  runs on phones.
+  Beyond walking, you can get into cars, ragdoll the duck, and take photos.
+  Pedestrians wander the streets with name labels such as Sir Honks-a-Ton and El
+  Pato Magnifico. The camera follows the duck from behind, between blocky
+  buildings in flat, low-poly color.
 play:
   url: https://grand-quack-auto.pages.dev
   embeddable: true
   platforms:
     - browser
     - mobile
+  controls:
+    - "WASD: move"
+    - "Space: quack"
+    - "E: enter car"
+    - "R: ragdoll"
+    - "P: photo"
+    - "M: mute"
 creator:
   name: UdayMydam
   handle: udaymydam
@@ -53,7 +61,7 @@ media:
     - games/grand-quack-auto/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-09-29
+  updated: 2026-10-02
 status: live
 provenance:
   foundVia: scout:vibejam-2026

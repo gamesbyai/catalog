@@ -2,26 +2,33 @@ slug: ai-space-agency
 title: AI Space Agency
 tagline: Build and launch an AI data center into orbit in a space-agency simulation.
 description: >-
-  AI Space Agency is a browser simulation about putting an AI data center into
-  space. The creator compares it to Kerbal Space Program, so a run centers on
-  assembling space hardware and sending it beyond the atmosphere, with the
-  orbiting data center as the goal of the mission.
+  A launch begins on a pad beside a red wireframe gantry, with a slim rocket
+  standing on an orange grid under a black sky. A vertical throttle slider on
+  the left reads 100%, and the top bar tracks sea-level altitude, vertical
+  speed, surface speed and G load as the rocket climbs.
 
 
-  The premise ties spaceflight to the computing infrastructure behind modern AI,
-  which gives the familiar rocket-building idea a different purpose than
-  exploring planets. It is rendered in 3D with Three.js and is set up to work on
-  mobile devices as well as desktop browsers, so it opens without an install.
+  A navball at bottom center shows attitude, with heading, pitch and roll
+  readouts beside it. SAS and RCS toggles sit on the ball, and an auto row
+  offers off, up and orbit settings. The main button stages the rocket and
+  becomes a fairing button on the second stage. Reset restarts the flight, and a
+  time warp bar sits at top left.
 
 
-  It was entered in Vibe Jam 2026, where it placed 64th out of 945 entries. The
-  creator built it with Cursor.
+  The creator pitches it as Kerbal Space Program for building an AI data center
+  in space. A small music player in the corner plays a track titled Orbit Bloom.
 play:
   url: https://aispaceagency.com
   embeddable: true
   platforms:
     - browser
     - mobile
+  controls:
+    - "Stage button: fire the next stage"
+    - "Fairing button: drop the fairing on stage 2"
+    - "Reset button: restart the flight"
+    - "SAS / RCS buttons: toggle stability and thrusters"
+    - "Throttle slider: set engine power"
 creator:
   name: dom_scholz
   handle: dom-scholz
@@ -49,7 +56,7 @@ media:
     - games/ai-space-agency/shot-2
 dates:
   added: 2026-10-01
-  updated: 2026-10-01
+  updated: 2026-10-02
 status: live
 provenance:
   foundVia: scout:vibejam-2026

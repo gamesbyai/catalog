@@ -3,25 +3,32 @@ title: Slime Escape
 tagline: Survive ten waves of mutant slimes, beat the boss, and flee through a
   suspicious portal.
 description: >-
-  Slime Escape is a 3D action shooter built around ten waves of mutant slimes.
-  You fend them off wave after wave until a boss appears, and beating the boss
-  opens a portal out of the arena.
+  The game opens on grid-paper ground. A hand-drawn character in a blue striped
+  shirt and purple pants stands in the middle, with green one-eyed slimes close
+  by. A black portal with a colored rim sits at the right edge. A counter at top
+  right reads Wave 1/10, with ten dots leading to a checkered flag.
 
 
-  The premise comes from a child's hand-drawn fantasy worlds, full of odd
-  creatures, strange machines, and tiny stories. That origin sets the tone: the
-  slimes and machinery read like sketchbook inventions grown into a playable
-  arena. The build uses Three.js and was made with Cursor, and the game came
-  83rd of 945 entries in Vibe Jam 2026.
+  You move with WASD and shoot with the left mouse button. Five weapon slots run
+  along the bottom of the screen, numbered 1 to 5. The icons show a pointed
+  yellow shot, a pink blob, a green dart, a thin pink and green needle, and a
+  green grenade.
 
 
-  The portal is the last joke. Stepping through it is the way out, even though
-  the game itself warns that the portal is not to be trusted.
+  The goal is to survive ten waves of mutant slimes, beat the boss, and escape
+  through the portal. The portal's rim changes color from one moment to the
+  next. A small purple spiky creature lies on the field with sleeping z marks
+  beside it. The scribbled look comes from the creator's son's hand-drawn worlds
+  of strange creatures and machines.
 play:
   url: https://slimeescape.com/portal
   embeddable: true
   platforms:
     - browser
+  controls:
+    - "WASD: move"
+    - "Left click: shoot"
+    - "1-5: weapon slots"
 creator:
   name: alxdos_
   handle: alxdos
@@ -50,7 +57,7 @@ media:
     - games/slime-escape/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-09-29
+  updated: 2026-10-02
 status: live
 provenance:
   foundVia: scout:vibejam-2026

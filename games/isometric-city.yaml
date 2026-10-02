@@ -2,21 +2,27 @@ slug: isometric-city
 title: IsoCity
 tagline: Build and manage an isometric city, growing it from the ground up.
 description: >-
-  IsoCity is a city-building simulation shown from an isometric viewpoint. The
-  player lays out a city on a tiled map and manages it as it grows, in the
-  tradition of classic urban planning games. The project lives in a public
-  GitHub repository.
+  You start with an empty isometric grid and $100,000 in funds. Lay down roads,
+  rail or subway, then paint residential, commercial and industrial zones on the
+  tiles. A side panel also offers services, parks and utilities to place, and a
+  bulldoze tool clears tiles.
 
 
-  The isometric presentation gives the city a clear, readable look, so the
-  layout of the map is easy to follow as it fills in. The focus stays on
-  planning and managing a city rather than on combat or fast reflexes, which
-  suits players who like to take their time.
+  A top bar tracks population, jobs, funds and monthly income, plus demand
+  meters for the three zone types. Below it, percentage readouts show happiness,
+  health, education, safety and environment. A tax slider sets the rate, and
+  time controls let you pause or speed up the simulation.
 
 
-  The creator's listing names Cursor as a tool used in building the project. The
-  repository hosts the source code, so the game can be read, run, and studied by
-  anyone curious about how a browser-style city builder is put together.
+  The simulation includes cars, buses, trains, planes, seaplanes and barges, and
+  the vehicles respect traffic lights. Pedestrians walk the streets. View
+  overlays highlight individual city conditions on the map, and a minimap shows
+  zone coverage.
+
+
+  The menu offers a new game, a co-op mode and a prebuilt example city to load.
+  You can save and load multiple cities. The interface adapts to touch with
+  drawers and toolbars.
 play:
   url: https://iso-city.com
   embeddable: true
@@ -47,7 +53,7 @@ media:
     - games/isometric-city/shot-2
 dates:
   added: 2026-09-30
-  updated: 2026-09-30
+  updated: 2026-10-02
 status: live
 provenance:
   foundVia: scout:github

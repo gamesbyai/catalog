@@ -2,22 +2,21 @@ slug: videovideogame
 title: VideoVideoGame
 tagline: Choose your path through 100+ video scenes and short minigames as Levelsio.
 description: >-
-  VideoVideoGame is a choose-your-own-adventure told in video, with Levelsio as
-  the main character. You follow Levelsio through more than 100 video scenes,
-  pick a direction at each branch, and watch the story continue from your
-  choice.
+  Story mode plays as a choose-your-own-adventure told through short video
+  scenes. Each scene stops on a prompt with text buttons, such as "Pet the dog"
+  or "Storm is coming", and the option you pick decides which clip plays next.
+  Levelsio is the main character.
 
 
-  The scenes were generated with Seedance, and the creator built the game around
-  them with Claude Code. Images came from experiments with the new GPT image
-  model and Nano Banana 2, and the creator says the fun was in making videos
-  with Seedance and trying out these tools. Its Vibe Jam 2026 result was 60th of
-  945.
+  The opening scenes are set on a boat on a lake, with a dog aboard and hills
+  along the shore. The story runs through more than 100 videos and scenes, so
+  different choices lead to different clips. A separate minigames mode holds a
+  few games, including racing and puzzle types.
 
 
-  A few minigames sit between the story scenes and add puzzle and racing
-  moments, so the whole single-player game plays like a branching film with
-  detours, on phones as well as desktop.
+  The menu also has a How to Play screen and a leaderboard. The video plays in a
+  frame beside the menu, with a fullscreen button on the frame and a sound
+  toggle in the top corner. The clips were generated with Seedance.
 play:
   url: https://videovideogame.com
   embeddable: true
@@ -53,7 +52,7 @@ media:
     - games/videovideogame/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-09-29
+  updated: 2026-10-02
 status: live
 provenance:
   foundVia: scout:vibejam-2026

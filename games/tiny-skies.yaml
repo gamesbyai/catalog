@@ -2,27 +2,34 @@ slug: tiny-skies
 title: Tiny Skies
 tagline: Explore a small shared world and relax together while an apocalypse looms.
 description: >-
-  Tiny Skies is a cozy multiplayer adventure set in a little world with an
-  apocalypse hanging over it. Players wander the small map and explore alongside
-  others. The focus is on relaxed company rather than combat, so nobody is
-  trying to eliminate anyone else.
+  You start in a green biplane above a small round planet, with a river,
+  forested hills, white cottages and a smoking volcano in view. A prompt in the
+  corner tells you to climb with the Up Arrow. A hot air balloon drifts nearby,
+  and another player's plane crosses the sky.
 
 
-  The creator wanted a multiplayer game built around hanging out and having fun
-  instead of competition, and that intent shapes the whole experience. The
-  looming end of the world adds a quiet sense of stakes to an otherwise gentle
-  setting. It also runs on mobile, and it placed seventh out of 945 entries at
-  Vibe Jam 2026, where it received the Most Polished award.
+  Villagers talk to you in speech bubbles. One hands you a parcel for a named
+  village, and the top of the screen then shows the distance left to the
+  drop-off. The sidebar lists two collectible counts, 0/7 and 0/3, and a goal to
+  finish a race.
 
 
-  The creator built it with Cursor, using Three.js for the 3D world. The creator
-  describes it as one of the first ideas that really clicked.
+  A level and XP bar sits at the bottom of the screen. Other players share the
+  same world, and the room name and player count appear in the top corner. The
+  creator wanted a cozy place to hang out rather than fight, with an apocalypse
+  looming in the background.
+
+
+  The sky appears as daytime blue in one moment and dusky purple with auroras in
+  another. A fullscreen button and a sound toggle sit in the top corner.
 play:
   url: https://tinyskies.vercel.app
   embeddable: true
   platforms:
     - browser
     - mobile
+  controls:
+    - "Up Arrow: climb"
 creator:
   name: dannylimanseta
   handle: dannylimanseta
@@ -52,7 +59,7 @@ media:
     - games/tiny-skies/shot-2
 dates:
   added: 2026-10-01
-  updated: 2026-10-01
+  updated: 2026-10-02
 status: live
 provenance:
   foundVia: scout:vibejam-2026

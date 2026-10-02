@@ -2,27 +2,34 @@ slug: echo-ohce
 title: ECHO|OHCE
 tagline: Find your way through a dark dungeon using echolocation pings
 description: >-
-  ECHO|OHCE is a dungeon crawler played without seeing the surroundings
-  directly. A scanner sends out sound pulses that reveal nearby walls and
-  objects for a moment, and you move through the dark rooms by reading the
-  returning signals and finding a way forward.
+  ECHO|OHCE puts you in a dark dungeon where you cannot see. A ping fires
+  automatically and lights up whatever it reaches in one of three colors: blue
+  for safe, amber for near, and red for danger. Those color labels sit on the
+  title screen as a legend.
 
 
-  The scanner draws on the Odradek device from Death Stranding, and the whole
-  game leans on that idea of sensing a space rather than looking at it. The
-  creator made it with Codex on Three.js, and it ranked 414th of 945 at Vibe Jam
-  2026. It also plays on phones.
+  Each level has you reach the exit, and a run covers 10 levels. Staying silent
+  is a second goal that runs alongside it. The title screen describes the game
+  as a horror roguelite, and a Top Echoes board there tracks results.
 
 
-  Action, puzzle and strategy all come into it. Timing your pings and choosing
-  your route both matter, since each pulse only shows the room for a moment
-  before it goes dark again.
+  You move with WASD, look with the mouse, and hold Shift to sprint. The
+  echolocation is modeled on the Odradek scanner from Death Stranding, according
+  to the creator.
+
+
+  The art is minimal: glowing blue, amber and red lettering and markers against
+  a black screen, with a single button to enter the dark.
 play:
   url: https://project-kqtw7.vercel.app
   embeddable: true
   platforms:
     - browser
     - mobile
+  controls:
+    - "WASD: move"
+    - "Mouse: look"
+    - "Shift: sprint"
 creator:
   name: JayShugito
   handle: jayshugito
@@ -53,7 +60,7 @@ media:
     - games/echo-ohce/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-09-29
+  updated: 2026-10-02
 status: live
 provenance:
   foundVia: scout:vibejam-2026

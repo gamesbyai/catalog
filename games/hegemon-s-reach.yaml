@@ -2,26 +2,43 @@ slug: hegemon-s-reach
 title: Hegemon's Reach
 tagline: Build a colony with production chains, then raise an army to crush a rival.
 description: >-
-  Grow a colony, then take it to war: Hegemon's Reach, a single-player strategy
-  game, follows the pattern of classic settlers titles. The colony runs on
-  production chains in which one workplace supplies the next, and you guide the
-  settlement indirectly rather than ordering each worker around.
+  The aim is an optimized colony and, once your war machine is ready, a win over
+  a rival colony that is doing the same. You start at a headquarters on a
+  low-poly island with 40 planks, 24 stone, and stocks of hammers, shovels,
+  axes, pickaxes and saws, with small figures moving around it.
 
 
-  Optimizing is the point. Deep chains of goods reward careful planning, and the
-  payoff is watching a well-tuned colony hum along. Meanwhile a rival is
-  building up the same way, so the late game turns into a race to have the
-  stronger army ready first.
+  Buildings come from a side panel with four tabs: Industry, Food, Civil and
+  Military. Industry lists the woodcutter's hut, sawmill, forester's hut,
+  stonecutter's hut, coal mine and iron mine, each with a plank and stone cost.
+  Woodcutters and stonecutters work inside an area you can retarget with a Move
+  Area button. Foresters replant saplings on empty grass.
 
 
-  It comes from the creator's childhood affection for the games that first drew
-  them to technology. It runs on Three.js in the browser, with Claude Code as
-  the creator's AI tool, and it was a Vibe Jam 2026 entry.
+  Control is indirect. You place buildings and steer their work areas, and the
+  colony does the rest. Mines must sit next to a surveyed deposit and mine
+  faster when fed bread, meat or fish, with more variety speeding them up
+  further.
+
+
+  Clicking the headquarters opens a storage panel that lists held goods. A
+  minimap sits in the top left, and the clock runs at 1x, 2x or 4x. A population
+  screen and a debug view each have a button along the bottom. The creator
+  describes it as modeled on classic settlers games.
 play:
   url: https://hegemon.max.vodka
   embeddable: true
   platforms:
     - browser
+  controls:
+    - "WASD: pan camera"
+    - "Scroll: zoom"
+    - "Right-drag: rotate camera"
+    - "Click: select"
+    - "Esc: cancel"
+    - "P: population"
+    - "G: debug"
+    - "Q / E / R / M: switch build tabs"
 creator:
   name: maxgeithe
   handle: maxgeithe
@@ -52,7 +69,7 @@ media:
     - games/hegemon-s-reach/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-09-29
+  updated: 2026-10-02
 status: live
 provenance:
   foundVia: scout:vibejam-2026

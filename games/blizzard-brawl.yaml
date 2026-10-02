@@ -2,26 +2,36 @@ slug: blizzard-brawl
 title: BLIZZARD BRAWL
 tagline: Build snow defenses and throw gadgets at rivals in a shrinking frozen arena.
 description: >-
-  BLIZZARD BRAWL is an online multiplayer snow duel in a frozen arena that keeps
-  shrinking. Each round mixes three jobs: build snow defenses, deploy gadgets
-  and attack your rivals, all while the space to maneuver gets tighter and
-  tighter.
+  Move with WASD, aim with the cursor, and click to throw snowballs. You start
+  in a local solo arena against a bot, and the solo round keeps running until
+  you choose to queue for a duel. When matchmaking finds a rival, you can jump
+  into a live 1v1.
 
 
-  The creator says the spark was an article about a game made in about three
-  hours. The build uses Codex and Three.js for the frozen arena, and at Vibe Jam
-  2026 it came 323rd of 945.
+  The controls panel lists three build keys: 1 for a wall, 2 for a turret, and 3
+  for a heater. Left click throws a snowball or places the selected item, and
+  Escape or right click cancels. The creator describes the duel as building
+  defenses, deploying gadgets, and outplaying rivals as the frozen arena
+  shrinks.
 
 
-  Pacing and positioning are the focus, and rounds are quick. Because the arena
-  closes in, nobody can sit behind cover forever, so every defense you build has
-  to be weighed against pushing forward to outplay the other side. Gadgets,
-  thrown at rivals, give you more options than a plain snowball exchange.
+  The arena is a round sheet of ice seen from an angled overhead view, with
+  snow-covered rocks and pine trees scattered across it. A round ends on a
+  result screen, such as Defeat by elimination, with buttons to restart the
+  round or queue for a duel.
 play:
   url: https://jenemia.github.io/SnowBattle
   embeddable: true
   platforms:
     - browser
+  controls:
+    - "WASD: move"
+    - "Mouse: aim"
+    - "LMB: throw / place"
+    - "1: wall"
+    - "2: turret"
+    - "3: heater"
+    - "ESC / RMB: cancel"
 creator:
   name: seanDDari
   handle: seanddari
@@ -52,7 +62,7 @@ media:
     - games/blizzard-brawl/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-09-29
+  updated: 2026-10-02
 status: live
 provenance:
   foundVia: scout:vibejam-2026

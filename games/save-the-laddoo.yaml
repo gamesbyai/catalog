@@ -2,26 +2,34 @@ slug: save-the-laddoo
 title: Save The Laddoo
 tagline: Defend a single laddoo on the table from waves of ants at Nani's house.
 description: >-
-  One laddoo sits on the table at Nani's house, and the ants want it. Save The
-  Laddoo is a casual strategy and tower-defense game set during a 90s Indian
-  summer vacation, where you stop the ants before they reach the sweet and hold
-  out as long as you can.
+  You guard a single laddoo on a table in Nani's house during summer vacation
+  while ants head for it. The goal is to hold them off for 3 minutes. An intro
+  scene shows the laddoo on a metal plate with ants walking along the table
+  edge, and it has a Skip Intro button.
 
 
-  The creator says the idea came from childhood memories and from spotting ants
-  on a window sill, and that the game is meant to bring back the feeling of
-  being cared for by a grandmother. It was made with Antigravity and ranked
-  542nd of 945 entries in Vibe Jam 2026.
+  You have five ways to stop them. Protective Rekha lets you draw a line ants
+  cannot cross, blocking whole pathways, with 2 uses. Water drops a pool that
+  blocks and drowns nearby ants, also 2 uses. Sugar places a decoy to lure ants
+  away from the laddoo, recurring, with a maximum of 3 at a time.
 
 
-  Nostalgia matters more here than score. The setting is built from ceiling
-  fans, load-shedding, and the quiet war between a child and the ants.
+  Chappal smashes a whole cluster in one hit and is marked as spawning. Tap
+  squashes ants one by one, which is precise but slow.
+
+
+  The creator built it from memories of 90s Indian summers: Nani's house, the
+  ceiling fan and load-shedding. The start card shows a photo of a child and a
+  handwritten note reading Save the Laddoo.
 play:
   url: https://savetheladdoo.vercel.app
   embeddable: true
   platforms:
     - browser
     - mobile
+  controls:
+    - "Tap / click: squash an ant"
+    - "Draw: place a Protective Rekha line"
 creator:
   name: akarshmanas
   handle: akarshmanas
@@ -51,7 +59,7 @@ media:
     - games/save-the-laddoo/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-09-29
+  updated: 2026-10-02
 status: live
 provenance:
   foundVia: scout:vibejam-2026

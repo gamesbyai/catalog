@@ -3,26 +3,33 @@ title: BeatPaws
 tagline: Guide bouncing cats through neon lanes, hitting notes and dodging
   hazards to the beat.
 description: >-
-  BeatPaws is part rhythm game, part arcade dodger, and it starts the moment the
-  page opens. Cats bounce along neon beat lanes in 3D, and your job is to guide
-  them. You hit the musical notes as they arrive and steer clear of the hazards
-  on the track, all in time with the beat.
+  Pick a song, difficulty, map and cat on the start screen, then press Play. The
+  Players menu is set to 1P Solo on the ASDF keys, and a nickname field and a
+  country selector sit alongside the track choices.
 
 
-  Its design was shaped by the idea of connected games that players can jump
-  between instantly. Built with Codex, it came 468th of 945 at Vibe Jam 2026.
-  Three.js renders the 3D stage, and the cats themselves are AI-generated.
+  On the 3D stage, cats bounce along neon beat lanes. You hit musical notes as
+  they arrive and dodge hazards between them. A round starts as soon as you tap
+  Play, with no login in the way.
 
 
-  The look draws on arcade rhythm games and retro neon worlds, and the cats, the
-  music and the motion all aim for an upbeat feel from the first second of a
-  run.
+  The start screen defaults to the track Neon Alley Sprint on Easy. The SF Bay
+  Stage map shows a night waterfront with a cat on a keytar at the left and a
+  cat on a guitar at the right. A row of character portraits lets you choose
+  your cat, starting with Mint DJ. A trophy button sits in the top corner.
+
+
+  The cats are AI-generated. The creator took cues from arcade rhythm games and
+  retro neon scenery, and from the idea of linking games so players can hop
+  between them.
 play:
   url: https://beatpaws.vercel.app
   embeddable: true
   platforms:
     - browser
     - mobile
+  controls:
+    - "A / S / D / F: hit notes (1P Solo)"
 creator:
   name: swhan0329
   handle: swhan0329
@@ -53,7 +60,7 @@ media:
     - games/beatpaws/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-09-29
+  updated: 2026-10-02
 status: live
 provenance:
   foundVia: scout:vibejam-2026

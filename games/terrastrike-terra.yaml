@@ -3,27 +3,33 @@ title: terrastrike/terra
 tagline: Purify a toxic world from the deep sea up to a surface garden as an
   evolving guardian.
 description: >-
-  In terrastrike/terra you start in the deep sea and work your way up to a
-  surface garden, purifying a toxic world as you climb. It is an
-  action-adventure with shooter and RPG elements, and your character evolves
-  into a stronger guardian on the way, with the last sanctuary of life to
-  protect.
+  The game opens underwater in a level called The Deep, seen from above. A diver
+  in an armored suit stands among seaweed, rocks and sunken wreckage, lit by
+  pale shafts of light. A panel on the left tracks a purification percentage, a
+  timer, ammo (40 of 40), the equipped Standard Blaster and an inventory that
+  starts empty.
 
 
-  Nature's resilience is the theme. Google's Antigravity and Three.js were the
-  tools, and it ended up 540th of 945 in Vibe Jam 2026. The game runs in the
-  browser as a single-player adventure.
+  You move with WASD and fire with Space. A hull integrity bar sits at the
+  bottom of the screen. An RP counter in the top right corner links to a shop on
+  U, the armory opens on C, and keys 1 to 4 trigger emotes.
 
 
-  Contrast carries the idea. Dark, industrial wasteland gives way to a colorful,
-  thriving ecosystem as each area is cleansed, so your progress shows up
-  directly in the scenery, from the deep sea up to the surface garden. The
-  guardian's growing power mirrors the world's recovery.
+  The goal is to purify a toxic world, working from the deep sea up to a surface
+  garden, while the character evolves into a guardian protecting the last
+  sanctuary of life. The creator drew on the contrast of a dark industrial
+  wasteland turning back into a colorful, living ecosystem.
 play:
   url: https://terrastrike.pages.dev
   embeddable: true
   platforms:
     - browser
+  controls:
+    - "WASD: move"
+    - "Space: fire"
+    - "C: armory"
+    - "U: shop"
+    - "1-4: emotes"
 creator:
   name: Srikanth
   handle: srikanth
@@ -55,7 +61,7 @@ media:
     - games/terrastrike-terra/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-09-29
+  updated: 2026-10-02
 status: live
 provenance:
   foundVia: scout:vibejam-2026

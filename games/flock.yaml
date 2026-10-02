@@ -2,28 +2,41 @@ slug: flock
 title: FLOCK
 tagline: Grow, dash and shoot your way to the top of a neon arena.
 description: >-
-  FLOCK is a neon arcade arena battler built around growing, dashing and
-  shooting. You enter the arena, fight off opponents, and work toward victory by
-  staying alive and eliminating everything in your way. Runs are fast and
-  aggressive, with movement and firepower both mattering in every encounter.
+  The arena is a neon synthwave scene with a glowing sun on the horizon and a
+  magenta grid floor. Each fighter is a swarm of glowing dots, and yours is
+  cyan. You move the swarm around, aim a reticle, hold fire, and dash away from
+  rivals. Small brown clusters of dots drift around the arena.
 
 
-  The look is bright neon on a dark field, and the pace leans on quick dashes
-  combined with ranged attacks. The creator cites Minishoot' Adventures and
-  Overwatch as inspirations, along with some earlier test games of their own,
-  which shows in the mix of shooter-style aiming and arena combat. It also runs
-  on mobile devices.
+  A match is a free-for-all against seven computer-controlled swarms, named by
+  type: three Hunters, a Berserker, two Snipers and a Farmer. The first fighter
+  to reach 10 kills wins. A scoreboard line under the arena tracks every
+  fighter's kills and deaths, and Tab opens a full score view.
 
 
-  FLOCK was entered in Vibe Jam 2026, where it placed 634th out of 945 entries.
-  The creator built it with Claude Code, so AI assistance shaped the code of
-  this jam project.
+  Two meters sit at the bottom of the screen: dash charges and shotgun charges,
+  each in five segments. Right-click fires the shotgun as a secondary attack
+  alongside the held-down regular fire. Escape or P pauses, and gamepad input
+  works as well as keyboard and mouse.
+
+
+  The creator names Minishoot' Adventures and Overwatch as inspirations, along
+  with some earlier test games made on Scratch.
 play:
   url: https://flock.mindmatter.nl
   embeddable: true
   platforms:
     - browser
     - mobile
+  controls:
+    - "WASD: move"
+    - "Mouse: aim"
+    - "Left mouse (hold): fire"
+    - "Space: dash"
+    - "Right click: shotgun"
+    - "Tab: scores"
+    - "Esc / P: pause"
+    - "Gamepad sticks: move and aim"
 creator:
   name: jongstra
   handle: jongstra
@@ -53,7 +66,7 @@ media:
     - games/flock/shot-2
 dates:
   added: 2026-10-01
-  updated: 2026-10-01
+  updated: 2026-10-02
 status: live
 provenance:
   foundVia: scout:vibejam-2026

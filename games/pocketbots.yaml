@@ -2,26 +2,29 @@ slug: pocketbots
 title: PocketBots
 tagline: Assemble a toy battle robot from scavenged parts and fight arena duels.
 description: >-
-  In PocketBots you assemble a small toy battle robot from scavenged parts and
-  take it into online arena duels against other players. Each limb works as part
-  of your loadout, so the build you choose shapes how you fight and how you
-  shoot.
+  Choose a unit in the hangar, or press Build-a-Bot to put together a new one
+  from salvaged pieces. Then deploy it into short arena duels. Each limb adds to
+  the loadout, and winning a fight earns an upgrade for the next.
 
 
-  The creator wanted a western take on Medabots-style robot battle games. It
-  runs on Three.js in the browser, the creator used Codex, and it came 347th of
-  945 at Vibe Jam 2026. The scrappy toy-robot theme keeps the tone light.
+  The built-in Base Unit shows how a loadout reads. Its head has a scan pulse,
+  its torso is a core, and its legs give a boost dash. Left mouse fires a
+  revolver and right mouse fires a repeater. The panel also lists core mass,
+  height, detailing and optics.
 
 
-  Matches are quick duels where you shoot and maneuver against one opponent.
-  Every fight pays out something toward your next upgrade, and swapping parts
-  between rounds is the main way to change your playstyle, which gives the loop
-  a steady build, battle, improve rhythm.
+  To play against others, host a 1v1 and share the room code, or enter a
+  friend's code and join. An Open Circuit Battles button leads to open matches.
+  A portal in the hangar exits to the jam hub. The creator wanted a Western
+  counterpart to Medabots Dual and Girls Mission.
 play:
   url: https://pokebots-vibejamv.netlify.app
   embeddable: true
   platforms:
     - browser
+  controls:
+    - "Left mouse button: fire left weapon (revolver)"
+    - "Right mouse button: fire right weapon (repeater)"
 creator:
   name: circa90x
   handle: circa90x
@@ -52,7 +55,7 @@ media:
     - games/pocketbots/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-09-29
+  updated: 2026-10-02
 status: live
 provenance:
   foundVia: scout:vibejam-2026

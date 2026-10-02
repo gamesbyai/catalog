@@ -3,25 +3,35 @@ title: Plunder
 tagline: Sail a pirate ship, collect resources, and sink rival captains on
   chaotic islands.
 description: >-
-  Plunder gives you a pirate ship, a chaotic island map and rival captains to
-  sink, all in a single-player action game. Matches are short and fast: you sail
-  around gathering resources and spend them to strengthen your ship, and every
-  match turns into a scramble between collecting and fighting.
+  You captain a pirate ship on a top-down ocean arena, sailing against nineteen
+  rival captains listed on a top-ten board. Each match opens with a 12-second
+  grace period with no damage taken. You start in the Sloop, with 120 hull and
+  16 cannons, and cargo space for 50.
 
 
-  The pirate theme comes from the creator's personal love of pirates. According
-  to the creator, Codex, OpenAI's coding tool, handled the development work, and
-  it runs on Three.js as a Vibe Jam 2026 entry, placing 277th of 945.
+  Head to Wood Islands and Gold islands to gather resources. Both have red
+  gather rings, and you stay inside the ring rather than on the island core.
+  Cargo only counts once you bring it to the green city ring and bank it, so
+  unbanked loot is at risk if another captain sinks you.
 
 
-  The naval combat is quick and chaotic, and upgrades matter as much as aim.
-  Growing your ship during a match is how you turn the tables on opponents who
-  started out stronger, so collecting pays off in the fighting.
+  Spend banked wood and gold in the city ring on four upgrades: Cannon, Sail,
+  Hull and Cargo. Level 1 costs range from 15 wood and 25 gold for cannons to 28
+  wood and 12 gold for the hull. The HUD tracks match phase, a countdown timer,
+  storm radius, a boss status, kills and prestige.
+
+
+  Before a match you can pick a ship from the fleet screen. The Galleon and Brig
+  are shown locked, and the Sloop is the starter.
 play:
   url: https://plunder.magnificentgames.com
   embeddable: true
   platforms:
     - browser
+  controls:
+    - "WASD: sail"
+    - "Q / E: fire broadsides"
+    - "1-4: buy upgrades in the city ring"
 creator:
   name: wade_owen_watts
   handle: wade-owen-watts
@@ -51,7 +61,7 @@ media:
     - games/plunder/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-09-29
+  updated: 2026-10-02
 status: live
 provenance:
   foundVia: scout:vibejam-2026

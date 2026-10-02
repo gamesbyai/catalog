@@ -3,21 +3,28 @@ title: Lantern Isle
 tagline: Help island residents earn back crystal shards and restore shrines in a
   cozy adventure.
 description: >-
-  Lantern Isle is a cozy 3D adventure across six islands, each home to charming
-  characters who need a hand. You explore, help the residents and earn back the
-  crystal shards that belong to them, and every shard brings a shrine closer to
-  being restored. Kindness is how you move forward, one resident at a time.
+  Walk a small character around an isometric island and talk to the residents.
+  Speech bubbles float over characters who have something to say, and their
+  lines appear in a text box along the bottom of the screen, headed by the
+  speaker's name.
 
 
-  The gentle, friendly tone comes from the creator's fondness for Animal
-  Crossing and Poptropica, which they played growing up. It is a single-player
-  Three.js game from Vibe Jam 2026, where it ranked 585th of 945, and it runs on
-  phones too.
+  On the first island, Elder Moss explains the task: reunite a lost firefly with
+  its friend, and a crystal shard appears. Pick it up and bring all shards to
+  the shrine in the center. Sprite, another resident, adds that glowing shards
+  are scattered through the forest.
 
 
-  A story runs underneath the errands. As the shrines come back to life, you
-  piece together a bittersweet mystery about why the Guardian Star went dark, so
-  every favor you do feeds the story.
+  A shard counter at the top left starts at 0 / 5, and a Map button sits at the
+  top center. The full game spans six islands. Each character you help earns
+  back a crystal shard, and restoring the ancient shrines gradually reveals why
+  the Guardian Star went dark.
+
+
+  The title screen offers Begin Adventure and a separate Explore Mode. Islands
+  float against a soft purple sky, with small trees, glowing orbs and a sound
+  toggle in the top right corner. The creator drew on childhood memories of
+  Animal Crossing and Poptropica.
 play:
   url: https://ktaing.com/lantern-isle
   embeddable: true
@@ -51,7 +58,7 @@ media:
     - games/lantern-isle/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-09-29
+  updated: 2026-10-02
 status: live
 provenance:
   foundVia: scout:vibejam-2026

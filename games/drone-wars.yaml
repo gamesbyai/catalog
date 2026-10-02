@@ -2,27 +2,41 @@ slug: drone-wars
 title: Drone Wars
 tagline: Pilot a combat drone and fight through shooter missions with a full arsenal.
 description: >-
-  Drone Wars puts you in control of a combat drone and sends it into battle,
-  mission after mission. It is a 3D action shooter built around aerial combat:
-  you fly through shooter missions and take on enemies with a full arsenal of
-  weapons at your disposal.
+  Drone Wars has you pick a callsign, choose one of two maps, and launch a run
+  in which you fly a drone through escalating waves of enemies. The goal is to
+  survive each wave and earn salvage, which you spend on permanent upgrades
+  between runs.
 
 
-  The idea comes from the creator's own enthusiasm for drones. The creator,
-  shrimalmadhur, has flown several of them, and that firsthand interest shapes
-  the game's focus on drone piloting and drone warfare.
+  The hangar keeps those upgrades, so each relaunch starts from a stronger
+  drone. Your callsign, preferred battlefield, and current build are remembered
+  in the browser. The menu also tracks best score, best wave, achievements, and
+  your salvage total.
 
 
-  Action and adventure elements sit alongside the shooting in this single-player
-  game. It was built with Codex on Three.js, plays on phones as well as
-  desktops, and placed 91st of 945 at Vibe Jam 2026. The drone is both your
-  vehicle and your weapon platform in every fight.
+  The build includes unlockable abilities you trigger with a key, run mutators,
+  boss waves, wave directives, and missions. Flight uses separate keys for
+  thrust, yaw, pitch, strafe, and altitude, with other keys for firing, pausing,
+  and restarting.
+
+
+  The creator has flown several drones and built the game around that interest,
+  aiming for fast combat in quick runs.
 play:
   url: https://dronewars.madhurshrimal.com
   embeddable: true
   platforms:
     - browser
     - mobile
+  controls:
+    - "W/S: thrust"
+    - "A/D: yaw"
+    - "Arrow keys: strafe and pitch"
+    - "Q/E: altitude"
+    - "Space: fire"
+    - "F: active ability"
+    - "P: pause"
+    - "R: restart"
 creator:
   name: shrimalmadhur
   handle: shrimalmadhur
@@ -53,7 +67,7 @@ media:
     - games/drone-wars/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-09-29
+  updated: 2026-10-02
 status: live
 provenance:
   foundVia: scout:vibejam-2026

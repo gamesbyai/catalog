@@ -3,26 +3,34 @@ title: Credit Quest
 tagline: Collect API credits and finish terminal-themed quests in a
   Zelda-inspired adventure.
 description: >-
-  Credit Quest is a Zelda-inspired 3D adventure, and in its world the terminals
-  hold the power. You explore, collect API credits and spend that progress on
-  the tasks and quests along the way, with puzzles mixed into the exploring.
+  Credit Quest has you walk a pixel-art hero around a top-down overworld of dirt
+  paths, grass, stone walls and wooden signposts. The first prompt tells you to
+  talk to PIP, a character west of the plaza path, and dialogue boxes at the
+  bottom of the screen carry the instructions.
 
 
-  The creator grew up loving the Zelda series, and this is their take on that
-  kind of classic adventure, built for the browser. It is a single-player game,
-  built with Claude Code on Three.js, and at Vibe Jam 2026 it ranked 289 of the
-  945 entries.
+  The header calls it a fantasy-tech action RPG. You fight Glitches with an
+  attack button, wake sleeping shrines, and work to restore the route. The title
+  screen gives the aim as carrying the last clean signal home. The creator cited
+  Zelda as the inspiration.
 
 
-  The setting turns computing culture into the backdrop for a fantasy adventure.
-  Credits are the currency of the world, terminals are its centers of authority,
-  and the quests you finish are themed around them, so collecting credits is how
-  you move forward.
+  The HUD shows a row of hearts for health, a Vibe counter, and a Credits
+  counter that starts at zero. You collect API Credits to finish tasks and
+  quests. A field guide and a help screen open in game, and sound can be muted.
+  It is a desktop browser build, and you click the game window to give it focus.
 play:
   url: https://creditquest.packetloss404.com
   embeddable: true
   platforms:
     - browser
+  controls:
+    - "WASD / arrows: move"
+    - "Z: attack"
+    - "X / Enter: interact and talk"
+    - "M: mute"
+    - "I: field guide"
+    - "F1: help"
 creator:
   name: packetloss
   handle: packetloss
@@ -53,7 +61,7 @@ media:
     - games/credit-quest/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-09-29
+  updated: 2026-10-02
 status: live
 provenance:
   foundVia: scout:vibejam-2026
