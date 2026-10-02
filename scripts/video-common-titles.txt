@@ -1,0 +1,7 @@
+# Common titles also receive a game context in their search query.
+snake
+tetris
+pong
+grid
+cupid
+echo-9

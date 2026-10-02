@@ -1,59 +1,99 @@
 name: videos
-# Daily: YouTube videos whose description links a listed game's page on gamesbyai.win become one PR (videos/<date>)
-# that adds them to those games' `videos`. Candidates come from YouTube search and from the recent uploads of the
-# GamesByAI channel and of channels the catalog already knows, because search alone misses new channels and URLs in
-# descriptions. Titles and channel names are the channels' own, untrusted text: stored as data, escaped in the PR body,
-# rendered as text on the site. Nothing goes live without review; merging is the approval. So the script does nothing
-# while a videos/* PR from this repo is still open (it warns once that PR is more than two days old, and the first
-# search after it closes reaches back over the days it paused), and it leaves out videos an earlier videos/* PR already
-# offered, the ones dropped in review included. It reads the PR list from the file written below (pull-requests: read
-# is all this job needs). The PR is opened with the GitHub App's token so validate runs on it.
+# Find YouTube videos that link listed game pages, open one review PR, then record the run privately.
 on:
   schedule:
-    - cron: '23 6 * * *'
+    - cron: '17 9 * * *'
   workflow_dispatch:
+    inputs:
+      searches:
+        description: Maximum title searches for this run (0-90)
+        required: false
+        default: '5'
+        type: number
 permissions:
   contents: read
   pull-requests: read
+  actions: read
 concurrency:
   group: videos
   cancel-in-progress: false
 jobs:
   find:
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    timeout-minutes: 45
     steps:
       - uses: actions/checkout@v5
         with: { ref: main, persist-credentials: false }
       - uses: actions/setup-node@v5
         with: { node-version: 22 }
-      - run: npm ci --ignore-scripts --no-audit --no-fund
+      - run: |
+          npm ci --ignore-scripts --no-audit --no-fund > /dev/null 2>&1 || { echo "videos: setup failed"; exit 1; }
+      - name: Restore pending report
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          count=$(gh api "repos/$GITHUB_REPOSITORY/actions/artifacts?name=videos-outbox&per_page=1" --jq '.total_count' 2>/dev/null) || { echo "videos: restore failed"; exit 1; }
+          if [ "$count" != "0" ]; then
+            gh run download --repo "$GITHUB_REPOSITORY" --name videos-outbox --dir "$RUNNER_TEMP/recovery" > /dev/null 2>&1 || { echo "videos: restore failed"; exit 1; }
+          fi
+      - name: Recover pending report
+        env:
+          NOTIFY_URL: ${{ secrets.NOTIFY_URL }}
+          INTERNAL_VIDEOS_TOKEN: ${{ secrets.INTERNAL_VIDEOS_TOKEN }}
+        run: node scripts/videos-post.mjs --recover "$RUNNER_TEMP/recovery/report.enc"
       - name: List the pull requests
         env:
           GH_TOKEN: ${{ github.token }}
-        run: gh pr list --repo "$GITHUB_REPOSITORY" --state all --limit 1000 --json number,state,headRefName,isCrossRepository,body,createdAt,closedAt > "$RUNNER_TEMP/prs.json"
+        run: |
+          gh pr list --repo "$GITHUB_REPOSITORY" --state all --limit 1000 --json number,state,headRefName,isCrossRepository,body,createdAt,closedAt,mergedAt > "$RUNNER_TEMP/prs.json" 2>/dev/null || { echo "videos: PR list failed"; exit 1; }
       - name: Find videos that link game pages
         id: find
         env:
           YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
-        run: node scripts/find-videos.mjs --prs "$RUNNER_TEMP/prs.json" --body "$RUNNER_TEMP/body.md"
+          NOTIFY_URL: ${{ secrets.NOTIFY_URL }}
+          INTERNAL_VIDEOS_TOKEN: ${{ secrets.INTERNAL_VIDEOS_TOKEN }}
+          EVENT_NAME: ${{ github.event_name }}
+          SEARCHES: ${{ inputs.searches }}
+        run: node scripts/find-videos.mjs --prs "$RUNNER_TEMP/prs.json" --body "$RUNNER_TEMP/body.md" --report "$RUNNER_TEMP/report.json"
       - uses: actions/create-github-app-token@v2
         if: steps.find.outputs.count != '0'
         id: app
         with:
           app-id: ${{ secrets.GH_APP_ID }}
           private-key: ${{ secrets.GH_APP_PRIVATE_KEY }}
+          permission-contents: write
+          permission-pull-requests: write
       - name: Open the pull request
         if: steps.find.outputs.count != '0'
         env:
           GH_TOKEN: ${{ steps.app.outputs.token }}
         run: |
           day=$(date -u +%F)
-          branch="videos/$day"
-          git config user.name "gamesbyai-bot[bot]"
-          git config user.email "gamesbyai-bot[bot]@users.noreply.github.com"
-          git checkout -b "$branch"
-          git add games/
-          git commit -m "Videos that link game pages ($day)"
-          git push "https://x-access-token:${GH_TOKEN}@github.com/${GITHUB_REPOSITORY}.git" "$branch"
-          gh pr create --repo "$GITHUB_REPOSITORY" --base main --head "$branch" --title "Videos: $day" --body-file "$RUNNER_TEMP/body.md"
+          branch="videos/$day-$GITHUB_RUN_ID-$GITHUB_RUN_ATTEMPT"
+          [ "$(wc -c < "$RUNNER_TEMP/body.md")" -le 60000 ] || { echo "videos: PR body exceeds limit"; exit 1; }
+          quiet() { "$@" > /dev/null 2>&1 || { echo "videos: PR step failed"; exit 1; }; }
+          quiet git config user.name "gamesbyai-bot[bot]"
+          quiet git config user.email "gamesbyai-bot[bot]@users.noreply.github.com"
+          quiet git checkout -b "$branch"
+          quiet git add games/
+          quiet git commit --allow-empty -m "Videos that link game pages ($day)"
+          quiet git push "https://x-access-token:${GH_TOKEN}@github.com/${GITHUB_REPOSITORY}.git" "$branch"
+          quiet gh pr create --repo "$GITHUB_REPOSITORY" --base main --head "$branch" --title "Videos: $day" --body-file "$RUNNER_TEMP/body.md"
+          echo "videos: PRs opened 1"
+      - name: Seal video discovery report
+        if: success()
+        env:
+          INTERNAL_VIDEOS_TOKEN: ${{ secrets.INTERNAL_VIDEOS_TOKEN }}
+        run: node scripts/videos-post.mjs --seal "$RUNNER_TEMP/report.json" "$RUNNER_TEMP/outbox/report.enc"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: videos-outbox
+          path: ${{ runner.temp }}/outbox/report.enc
+          retention-days: 30
+          if-no-files-found: ignore
+      - name: Record video discovery report
+        if: success()
+        env:
+          NOTIFY_URL: ${{ secrets.NOTIFY_URL }}
+          INTERNAL_VIDEOS_TOKEN: ${{ secrets.INTERNAL_VIDEOS_TOKEN }}
+        run: node scripts/videos-post.mjs "$RUNNER_TEMP/report.json"
