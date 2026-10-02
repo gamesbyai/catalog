@@ -1,14 +1,20 @@
 name: videos
-# Weekly: YouTube videos whose description links a listed game's page on gamesbyai.win become one PR (videos/<date>)
-# that adds them to those games' `videos`. Titles and channel names are the channels' own, untrusted text: stored as
-# data, escaped in the PR body, rendered as text on the site. Nothing goes live without review; merging is the approval.
-# The PR is opened with the GitHub App's token so validate runs on it.
+# Daily: YouTube videos whose description links a listed game's page on gamesbyai.win become one PR (videos/<date>)
+# that adds them to those games' `videos`. Candidates come from YouTube search and from the recent uploads of the
+# GamesByAI channel and of channels the catalog already knows, because search alone misses new channels and URLs in
+# descriptions. Titles and channel names are the channels' own, untrusted text: stored as data, escaped in the PR body,
+# rendered as text on the site. Nothing goes live without review; merging is the approval. So the script does nothing
+# while a videos/* PR from this repo is still open (it warns once that PR is more than two days old, and the first
+# search after it closes reaches back over the days it paused), and it leaves out videos an earlier videos/* PR already
+# offered, the ones dropped in review included. It reads the PR list from the file written below (pull-requests: read
+# is all this job needs). The PR is opened with the GitHub App's token so validate runs on it.
 on:
   schedule:
-    - cron: '23 6 * * 1'
+    - cron: '23 6 * * *'
   workflow_dispatch:
 permissions:
   contents: read
+  pull-requests: read
 concurrency:
   group: videos
   cancel-in-progress: false
@@ -22,11 +28,15 @@ jobs:
       - uses: actions/setup-node@v5
         with: { node-version: 22 }
       - run: npm ci --ignore-scripts --no-audit --no-fund
+      - name: List the pull requests
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh pr list --repo "$GITHUB_REPOSITORY" --state all --limit 1000 --json number,state,headRefName,isCrossRepository,body,createdAt,closedAt > "$RUNNER_TEMP/prs.json"
       - name: Find videos that link game pages
         id: find
         env:
           YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
-        run: node scripts/find-videos.mjs --body "$RUNNER_TEMP/body.md"
+        run: node scripts/find-videos.mjs --prs "$RUNNER_TEMP/prs.json" --body "$RUNNER_TEMP/body.md"
       - uses: actions/create-github-app-token@v2
         if: steps.find.outputs.count != '0'
         id: app
