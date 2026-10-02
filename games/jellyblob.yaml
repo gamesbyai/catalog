@@ -72,3 +72,9 @@ dates:
 status: live
 provenance:
   foundVia: pr
+videos:
+  - youtube: Jtoj-fG2GzM
+    title: I made a multiplayer game with AI. Then I needed players
+    channel: GamesByAI
+    channelId: UCZQ9z0_JDA8PA3qW4B8CMsQ
+    added: 2026-10-02
