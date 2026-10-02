@@ -1,0 +1,61 @@
+slug: plush-rush
+title: Plush Rush
+tagline: Steer a plushie through three lanes of a real stock chart and chase P&L.
+description: >-
+  Plush Rush is a three-lane endless runner where the track is built from real
+  market prices. You pick any ticker and guide a 3D plushie through the course.
+  Two modes are available: Morning Bell, which covers the first trading hour,
+  and a live replay that plays the latest hour of price action at 60 times
+  speed.
+
+
+  The idea came from watching kids play a Subway Surfer-style runner next to
+  other videos, which brought to mind traders watching many charts at once.
+  Price movement maps onto lanes, and an hour of data compresses into about a
+  minute of play. Results feed a profit-and-loss leaderboard, with figures
+  modeled on a $1 million account. The creator notes it is not perfectly
+  accurate and slippage is likely.
+
+
+  The game runs on canvas and works on mobile. The creator says it was built
+  with Claude Code, and it was entered in Vibe Jam 2026.
+play:
+  url: https://plush-rush.netlify.app/game_001.html
+  embeddable: true
+  platforms:
+    - browser
+    - mobile
+creator:
+  name: lazy__lazers
+  handle: lazy-lazers
+  x: lazy__lazers
+made:
+  models: []
+  providers:
+    - anthropic
+  tools:
+    - claude-code
+  aiShare: most
+  source: Vibe Jam 2026 submission form
+  evidence: creator
+tech:
+  engine: canvas
+  multiplayer: single
+genres:
+  - arcade
+  - simulation
+jam:
+  event: vibe-jam-2026
+  rank: 609
+  entries: 945
+media:
+  cover: games/plush-rush/cover
+  screenshots:
+    - games/plush-rush/shot-1
+    - games/plush-rush/shot-2
+dates:
+  added: 2026-10-01
+  updated: 2026-10-01
+status: live
+provenance:
+  foundVia: scout:vibejam-2026

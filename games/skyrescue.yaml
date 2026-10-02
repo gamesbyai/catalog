@@ -1,0 +1,61 @@
+slug: skyrescue
+title: SkyRescue
+tagline: Pilot a rescue helicopter to pull trapped survivors out of disasters
+  before time runs out
+description: >-
+  SkyRescue is a helicopter flight game built around emergency extractions. You
+  take the controls of a rescue chopper and fly into a series of disaster
+  scenes, reaching trapped survivors and bringing them out before the clock
+  expires. Each mission is a race between careful flying and the time limit.
+
+
+  The scenarios change the setting from level to level: burning buildings,
+  mountain cliffs, flooded suburbs, highway pileups, and arctic blizzards. Each
+  location asks for a different approach to getting close to the people who need
+  help, which keeps the flying from settling into one routine.
+
+
+  The game was made for Vibe Jam 2026 and runs in 3D in the browser with
+  Three.js. The creator says it was built with Cursor and Claude, and it is
+  playable on mobile as well as desktop.
+play:
+  url: https://skyrescue.vercel.app
+  embeddable: true
+  platforms:
+    - browser
+    - mobile
+creator:
+  name: marscole76
+  handle: marscole76
+  x: marscole76
+made:
+  models: []
+  providers:
+    - anthropic
+  tools:
+    - cursor
+    - claude-ai
+  aiShare: most
+  source: Vibe Jam 2026 submission form
+  evidence: creator
+tech:
+  engine: threejs
+  multiplayer: single
+genres:
+  - action
+  - simulation
+jam:
+  event: vibe-jam-2026
+  rank: 603
+  entries: 945
+media:
+  cover: games/skyrescue/cover
+  screenshots:
+    - games/skyrescue/shot-1
+    - games/skyrescue/shot-2
+dates:
+  added: 2026-10-01
+  updated: 2026-10-01
+status: live
+provenance:
+  foundVia: scout:vibejam-2026

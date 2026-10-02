@@ -1,0 +1,58 @@
+slug: maze-duel
+title: maze duel
+tagline: Build a labyrinth to trap your opponent, then use items to escape theirs.
+description: >-
+  Maze Duel is a turn-based 3D labyrinth game for two players. Each side first
+  designs a maze meant to confuse the other, then both take turns walking
+  through the opponent's creation from a first-person view. Items are available
+  to help get past the traps placed along the way.
+
+
+  The game pairs two different jobs: planning a layout that misleads, and
+  exploring one you have never seen. Design choices matter because the opponent
+  has to work through them in real time, while item use adds a tactical layer to
+  each turn. The puzzle and simulation elements sit side by side in a single
+  duel.
+
+
+  It was entered in Vibe Jam 2026 and runs in the browser on Three.js. The
+  creator's submission lists the Gemini app as the tool used to build it.
+play:
+  url: https://maze-duel.pages.dev
+  embeddable: true
+  platforms:
+    - browser
+creator:
+  name: happy
+  handle: happy
+  x: happy
+made:
+  models: []
+  providers:
+    - google
+  tools:
+    - gemini-app
+  aiShare: most
+  source: Vibe Jam 2026 submission form
+  evidence: creator
+tech:
+  engine: threejs
+  multiplayer: online
+genres:
+  - puzzle
+  - strategy
+jam:
+  event: vibe-jam-2026
+  rank: 602
+  entries: 945
+media:
+  cover: games/maze-duel/cover
+  screenshots:
+    - games/maze-duel/shot-1
+    - games/maze-duel/shot-2
+dates:
+  added: 2026-10-01
+  updated: 2026-10-01
+status: live
+provenance:
+  foundVia: scout:vibejam-2026
