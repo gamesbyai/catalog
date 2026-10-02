@@ -2,27 +2,35 @@ slug: mana-fight
 title: MANA FIGHT
 tagline: Pick a spellcasting class and fight through fast third-person arena battles.
 description: >-
-  MANA FIGHT is a fantasy arena shooter where the guns are spells. You pick a
-  spellcasting class, learn what its spells do and fight opponents in quick,
-  action-heavy rounds, all from a third-person view. It is a single-player
-  shooter set in a fantasy world.
+  Pick one of four classes on the start screen, then fight in a third-person
+  arena with spells and melee weapons. Each class card shows attack, defense and
+  speed bars, plus two attacks bound to the 1 and 2 keys and a passive trait.
 
 
-  The creator is a fan of first-person and third-person shooters and wanted to
-  keep their core principles while swapping the weapons for a fantasy setting.
-  Cursor was their tool, and the Vibe Jam 2026 entry, which placed 455th of 945,
-  runs on Three.js.
+  Tank is the frontline class. Fireball deals 28 area damage, Sword deals 35 in
+  melee, and Heavy Plate cuts damage taken by 20%. Ranger fires a magic green
+  arrow for 40 damage or stabs with a 20-damage dagger, and Hawk's Eye adds 25%
+  range.
 
 
-  So the core loop of aiming, moving and out-fighting rivals stays familiar, but
-  magic takes the place of the usual guns and grenades. Class choice and spell
-  mastery are the main ways to gain an edge, so getting better means knowing
-  your class.
+  Esq is the area-damage class. Shadow Bolt is homing dark magic worth 30
+  damage, Staff Whack is a 15-damage melee hit, and Arcane Focus raises mana
+  regeneration by 50%. Phantom is the assassin: Spirit Daggers throw twin blue
+  daggers for 15 each, Twin Daggers hit for 25 in melee, and Backstab adds 50%
+  damage from behind.
+
+
+  The menu bar also links to Map 1, Movement, Model Lab, Aim and Game Logs. The
+  creator wanted the familiar core of shooters, usually built on guns and
+  grenades, in a fantasy setting.
 play:
   url: https://manafight.vercel.app
   embeddable: true
   platforms:
     - browser
+  controls:
+    - "1: first attack"
+    - "2: second attack"
 creator:
   name: NinoGreeno
   handle: ninogreeno
@@ -51,7 +59,7 @@ media:
     - games/mana-fight/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-09-29
+  updated: 2026-10-02
 status: live
 provenance:
   foundVia: scout:vibejam-2026

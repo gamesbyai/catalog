@@ -2,26 +2,35 @@ slug: fairy-arena
 title: Fairy Arena
 tagline: Fly around an arena and shoot the enemy team off onto a cloud.
 description: >-
-  Fairy Arena is a team shooter where the goal is to shoot the enemy team off
-  the arena and onto a cloud. You fly a fairy around a 3D arena, firing at the
-  opposing side and trying to push its members out.
+  You fly and aim with the mouse or touchpad in a 3D arena, and you shoot the
+  opposing team to push them onto a cloud. A click fires and also starts the
+  round. Each side begins with four teammates, shown as 4 vs 4.
 
 
-  The creator says it grew from an old ambition. Over 20 years ago they started
-  web development intending to make a web-based indie game and began one, then
-  moved on to other programming work. This project is another attempt at
-  something other people could appreciate, and it placed 470th of 945 at Vibe
-  Jam 2026.
+  A counter at the top of the screen tracks how many teammates each team has
+  left, with cyan dots for one side and orange dots for the other. At the
+  bottom, a row of five round-attempt markers sits above a running total.
 
 
-  Each round is about staying airborne, lining up shots and forcing rivals out
-  of position. Pushing is the objective, so positioning matters as much as
-  damage, which gives the shooting a spatial, puzzle-like angle.
+  The arena is a curved purple floor ringed by glowing lines, with large glossy
+  magenta, green, yellow and purple blobs rising around you and a dark floating
+  platform overhead. Right click or Space opens the menu, and Esc releases the
+  cursor from the game.
+
+
+  The creator is a web developer of more than 20 years who once planned a
+  browser game as a first indie project, and describes this as another attempt
+  at making something other people could appreciate.
 play:
   url: https://arena.nidmo.com
   embeddable: true
   platforms:
     - browser
+  controls:
+    - "Mouse / touchpad: fly, aim and shoot"
+    - "Click: shoot, start the round"
+    - "Right click / Space: open menu"
+    - "Esc: unlock the cursor"
 creator:
   name: RomanShalabanov
   handle: romanshalabanov
@@ -50,7 +59,7 @@ media:
     - games/fairy-arena/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-10-01
+  updated: 2026-10-02
 status: live
 provenance:
   foundVia: scout:vibejam-2026

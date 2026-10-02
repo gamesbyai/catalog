@@ -2,26 +2,30 @@ slug: panic-push-cosmic-arena
 title: "Panic Push: Cosmic Arena"
 tagline: Shove rivals off a cosmic arena platform in chaotic multiplayer brawls.
 description: >-
-  Panic Push: Cosmic Arena is a multiplayer party brawler, and every fight is a
-  shoving match in space. You and the other players share a floating arena, and
-  the goal is to push everyone else out of the ring while staying in it
-  yourself, until the last player standing takes the round.
+  Type a nickname, then create a room or enter a five-letter code to join one.
+  An open-rooms panel on the same screen shows public lobbies you can join. A
+  host can fill empty slots with bots, so a match can start without a full room
+  of people.
 
 
-  The Phaser framework runs it, and the creator states that Codex was part of
-  the build process for Vibe Jam 2026. It placed 580th of 945 in the jam, and
-  matches are online.
+  Rounds are played on a collapsing space platform. Move with WASD or the arrow
+  keys, dash with Space, and push with a mouse click, J or K. The goal is to
+  stay on the platform while shoving rivals toward the shrinking edge and off
+  it.
 
 
-  The creator describes it as a mix of sumo and Beyblade-style games, and that
-  shows in the pushing and collision-driven fights. Each round is a short,
-  chaotic scramble, the bright cosmic setting keeps the mood light, and the fast
-  pace suits quick sessions with other people.
+  The creator describes it as a multiplayer party brawler in the vein of sumo
+  circle and Beyblade games, played against other people online in short rounds
+  inside a cosmic arena.
 play:
   url: https://panic-push-cosmic-arena.vercel.app
   embeddable: true
   platforms:
     - browser
+  controls:
+    - "WASD / arrows: move"
+    - "Space: dash"
+    - "Click / J / K: push"
 creator:
   name: summerlilac___
   handle: summerlilac
@@ -52,7 +56,7 @@ media:
     - games/panic-push-cosmic-arena/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-09-29
+  updated: 2026-10-02
 status: live
 provenance:
   foundVia: scout:vibejam-2026

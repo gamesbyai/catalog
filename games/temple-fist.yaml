@@ -2,26 +2,32 @@ slug: temple-fist
 title: Temple Fist
 tagline: Box in a photoreal ring where every frame comes from AI-generated video.
 description: >-
-  Temple Fist is a boxing game in which every frame comes from AI-generated
-  video, playable in the browser and on phones. You step into the ring and trade
-  punches with an opponent, and the fight runs as a series of short exchanges.
+  The game opens on a first-person view across a rope-bound ring with a stone
+  floor, set in a bamboo grove. Brown leather gloves fill the bottom of the
+  screen. A shirtless fighter sits cross-legged at the far side, and a START
+  button sits between the gloves.
 
 
-  The creator says the idea came after a wave of AI-made game trailers that
-  could not be played. They wanted photoreal visuals of that kind in something
-  you can actually play, and built it with Claude Code to get there. Vibe Jam
-  2026 ranked the game 88th of 945.
+  After you press START, the opponent rises into a guard, wrapped fists raised,
+  with a jade pendant at his chest. Three buttons sit across the lower screen:
+  Jab, Hook and Uppercut. A thin white bar runs just above them, over the
+  opponent's belt.
 
 
-  Boxing suits the approach, because the action breaks into clear moments, which
-  fits how video models produce footage. The result is fighters and a ring with
-  a photographic quality instead of the usual stylized game art.
+  Every frame of the bout comes from AI-generated video, not a 3D model. The
+  creator chose boxing because its frame-to-frame structure matched how video
+  models behave, and wanted something playable with the photoreal look that AI
+  trailers had shown without being playable.
 play:
   url: https://templefist.vamonke.com
   embeddable: true
   platforms:
     - browser
     - mobile
+  controls:
+    - "Jab button: throw a jab"
+    - "Hook button: throw a hook"
+    - "Uppercut button: throw an uppercut"
 creator:
   name: vamonke
   handle: vamonke
@@ -51,7 +57,7 @@ media:
     - games/temple-fist/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-09-29
+  updated: 2026-10-02
 status: live
 provenance:
   foundVia: scout:vibejam-2026

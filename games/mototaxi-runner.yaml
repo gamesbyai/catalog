@@ -3,26 +3,35 @@ title: Mototaxi Runner
 tagline: Drive a mototaxi against the clock to get each passenger to their
   destination on time.
 description: >-
-  Every fare in Mototaxi Runner is a race against the clock. You take the wheel
-  of a mototaxi in a 3D driving game, pick up a customer and try to get them to
-  their destination before time runs out.
+  Press W or the up arrow to accelerate, S or the down arrow to brake, and A/D
+  or the left and right arrows to steer a mototaxi through a neon city. Each
+  trip is a race against the clock, modeled on the daily routine of mototaxi
+  drivers who hurry to get passengers there on time.
 
 
-  The game draws on the daily routine of mototaxi drivers, who work under time
-  pressure to get their customers somewhere punctually. That everyday setting
-  gives the mix of racing and simulation a grounded, human angle instead of a
-  purely competitive one. It ranked 466th of 945 at Vibe Jam 2026.
+  The start screen offers two buttons: Iniciar carrera to begin a race and
+  Taller / Mejoras, a workshop for upgrades. A free mode keeps a lap-time table
+  where your own entry sits among reference pilots, with times around 1:42 to
+  1:47 listed to beat. Your nickname and best free-mode run are saved locally.
 
 
-  Made in Cursor with Three.js for Vibe Jam 2026, it supports multiplayer and
-  runs on phones and desktop browsers alike. Each trip ends in one of two ways:
-  the passenger arrives on time, or the clock wins.
+  A speedometer and a ping readout sit beside the leaderboard. Press R to
+  restart a run. On a phone, hold the device with two hands: steer with the left
+  side of the screen, and use the right side for gas and brake. Steering by
+  tilting the phone is also available on mobile.
 play:
   url: https://moto-taxi-runner.vercel.app
   embeddable: true
   platforms:
     - browser
     - mobile
+  controls:
+    - "W / Up arrow: accelerate"
+    - "S / Down arrow: brake"
+    - "A / D / Left / Right arrows: steer"
+    - "R: restart"
+    - "Mobile left side: steer"
+    - "Mobile right side: gas and brake"
 creator:
   name: frank203_0
   handle: frank203-0
@@ -51,7 +60,7 @@ media:
     - games/mototaxi-runner/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-09-29
+  updated: 2026-10-02
 status: live
 provenance:
   foundVia: scout:vibejam-2026

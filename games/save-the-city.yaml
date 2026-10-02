@@ -3,21 +3,22 @@ title: save the city
 tagline: Play a tourist turned hero fighting rogue AI and giant robots across
   Seoul and Waikiki.
 description: >-
-  A tourist on vacation turns out to be the only person who can defend two
-  cities. Save the City is a 3D action game that sends that unlikely hero
-  through Seoul and Waikiki to stop rogue AI forces, corrupted E.R.A. heroes,
-  and giant robots.
+  An eight-panel comic opens the game. A tourist in Seoul sees the city's AI and
+  its five color-coded E.R.A. heroes taken over by a hacker. A soldier asks him
+  to help, and the last panel shows a huge robot above the skyline. A Game Start
+  button then opens the setup screen.
 
 
-  The creator describes it as a childhood game, so it reads as a personal
-  project. It was made with Codex and Three.js as a single-player browser game,
-  and it went into Vibe Jam 2026, where it came 378th of 945.
+  On the setup screen you type a username, choose a language, and pick the Seoul
+  or Wai-kiki stage. You can use a camera or upload a photo to put your own face
+  on the character. Four outfits are available, Bao Soldier, Bao Fighter, Bao
+  Spy and Bao Superhuman, along with a hair toggle.
 
 
-  The setting is the draw: both battlegrounds are real-world locations, and the
-  hero starts as an ordinary vacationer rather than a trained fighter. The enemy
-  list pairs former heroes who have gone bad with oversized machines, which
-  gives the story a comic-book feel.
+  Each stage runs on a 300-second countdown in a blocky 3D city, with the goal
+  shown as saving the city. A P1 panel shows five hearts and two bars. Your
+  opponents are a rogue AI, E.R.A. heroes that have been corrupted, and giant
+  robots. The creator drew on a game from their childhood.
 play:
   url: https://savecity.vizuo.work
   embeddable: true
@@ -52,7 +53,7 @@ media:
     - games/save-the-city/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-09-29
+  updated: 2026-10-02
 status: live
 provenance:
   foundVia: scout:vibejam-2026

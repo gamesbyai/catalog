@@ -2,25 +2,36 @@ slug: one-last-surf
 title: One Last Surf
 tagline: Ride waves through a surf session that runs from daylight into a starry night.
 description: >-
-  You paddle out, catch waves and ride them while the day moves on in One Last
-  Surf, a relaxed surfing game on the open ocean. Sessions are unhurried,
-  centered on getting into the next wave and then staying up on your board.
+  You start on a surfboard in first person, looking out at the swell. Find the
+  tallest point along it, since that is where the wave will begin to break. Then
+  paddle toward it, holding Shift to build speed while a stamina bar drains.
 
 
-  The creator drew on a year of surf lessons after school. After two years away
-  from surfing, they wanted to capture how hard barreling waves are to ride.
-  Claude Code and Three.js were used for the build, and it came 181st of 945 at
-  Vibe Jam 2026.
+  Press Space when you think you have enough speed to catch the wave. Once you
+  are up, stay steady as the barrel curls over you and keep yourself inside it.
+  W and S move you deeper into the wave or further ahead on it, and WASD also
+  lets you carve and turn. Press Space again to bail out.
 
 
-  The sky does a lot of the work. The light shifts through the day into a
-  sunset, and once night falls you can look up at the stars, so one session runs
-  from daylight into a starry night.
+  Catching a wave usually takes a few attempts, and the in-game guide says you
+  will know right away when you have caught one. A guide screen opens with G.
+  The setting is a sunny ocean, and the creator describes a day of surfing that
+  moves on to sunset and then a night sky full of stars.
+
+
+  The creator built it after a year of surfing lessons and two years away from
+  the water, with barreling waves as the main draw.
 play:
   url: https://onelast.surf
   embeddable: true
   platforms:
     - browser
+  controls:
+    - "Shift: paddle"
+    - "Space: catch the wave / bail out"
+    - "W / S: move deeper or further ahead on the wave"
+    - "WASD: carve and turn"
+    - "G: open or close guide"
 creator:
   name: sweriko
   handle: sweriko
@@ -51,7 +62,7 @@ media:
     - games/one-last-surf/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-09-29
+  updated: 2026-10-02
 status: live
 provenance:
   foundVia: scout:vibejam-2026

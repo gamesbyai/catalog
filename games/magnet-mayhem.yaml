@@ -3,27 +3,37 @@ title: Magnet Mayhem
 tagline: Pull and push floating junk to knock rival UFOs around while dodging
   laser beams.
 description: >-
-  In Magnet Mayhem you pilot a UFO armed with a magnetic pull. You attract or
-  repel the scattered junk floating around the arena, turning the debris into
-  weapons against rival saucers, and you compete against friends for points in
-  the same arena.
+  Press Space to flip your UFO's magnetic polarity, pulling space junk toward
+  you or pushing it away. Absorbing junk raises your score. You steer with WASD
+  around a neon grid arena floating in space, with a curved glowing boundary
+  along its edge.
 
 
-  The hazard layer has a joke built in: the laser beams that sweep in during a
-  fight are themed as coming from the Vibe Jam judges. Antigravity, Google's AI
-  coding tool, was used to build it for that jam, where it came 329th of 945,
-  and phones are supported too.
+  The top of the screen shows your score, a countdown timer and the current
+  polarity. Repel mode drains 5 points per second while it is active. A
+  leaderboard ranks you against bot-controlled UFOs, so you can see where you
+  stand during the round.
 
 
-  That leaves you watching two things at once: your opponents and the incoming
-  fire. The playful alien setup keeps the rivalry among friends lighthearted,
-  even when a well-aimed piece of junk knocks someone around.
+  Laser beams from the judges cross the arena, so you dodge them while you
+  collect. Shift fires a grapple hook, and E fires an EMP blast that costs 20
+  points. A green portal marked to stop near it to enter sits at the arena's
+  edge.
+
+
+  Floating heads with handle labels drift above the field. The creator drew on
+  news talk about UFOs and on the fun of fighting friends for points.
 play:
   url: https://magnet-mayhem.vercel.app
   embeddable: true
   platforms:
     - browser
     - mobile
+  controls:
+    - "WASD: move"
+    - "Space: toggle polarity"
+    - "Shift: grapple hook"
+    - "E: EMP blast"
 creator:
   name: yazanbruv
   handle: yazanbruv
@@ -54,7 +64,7 @@ media:
     - games/magnet-mayhem/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-09-29
+  updated: 2026-10-02
 status: live
 provenance:
   foundVia: scout:vibejam-2026

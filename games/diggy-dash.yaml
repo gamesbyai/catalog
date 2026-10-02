@@ -2,21 +2,20 @@ slug: diggy-dash
 title: Diggy Dash
 tagline: Tap popping Diglett in 3D holes before the timer runs out.
 description: >-
-  Diggy Dash is a 3D take on whack-a-mole, built around Diglett, the Pokémon
-  that pops out of holes in the ground. Each round runs against a clock. Diglett
-  pop up from the holes, and you tap them as fast as you can to rack up points
-  before time expires.
+  The field is a 3x3 grid of stone-ringed holes set in a floor of green blocks,
+  with trees, mushrooms and flowers around the edges. Brown Diglett heads rise
+  out of the holes, and you tap them to score. The camera looks down at the grid
+  at an angle, in a soft cartoon 3D style.
 
 
-  The pairing is the hook: a burrowing Pokémon that appears from holes suits the
-  whack-a-mole format, so the premise reads at a glance. The creator,
-  IlaneLopez, built it with Cursor on Three.js, and at Vibe Jam 2026 it placed
-  432 of 945.
+  A wooden score counter sits in the top left corner and a countdown timer in
+  the top right. The clock starts at 45 seconds, and the goal is to tap as many
+  Digletts as you can before it reaches zero.
 
 
-  Scores feed into a leaderboard, so each round becomes an attempt to beat the
-  totals other players have posted. The tapping works on a phone as well as with
-  a mouse on a desktop.
+  Scores go onto a leaderboard that you try to climb. The main menu offers Play,
+  Dashboard, Sound and About buttons. The creator chose Diglett because a
+  creature popping out of holes suits the whack-a-mole format.
 play:
   url: https://diggy-dash.vercel.app
   embeddable: true
@@ -53,7 +52,7 @@ media:
     - games/diggy-dash/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-09-29
+  updated: 2026-10-02
 status: live
 provenance:
   foundVia: scout:vibejam-2026

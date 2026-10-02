@@ -3,27 +3,37 @@ title: Racernaut
 tagline: Drive through an endless generated city, choosing turns at every
   junction to stay alive.
 description: >-
-  Racernaut is a driving game in a city that builds itself as you go. The
-  streets are procedurally generated, so the route ahead is different every
-  time, and every junction forces a quick decision about which way to turn.
+  Press Space to start driving through a city that generates itself as you go.
+  Each junction is a bet on which way to turn, and the wrong turn costs you the
+  run. The streets stream in ahead of the car as you drive.
 
 
-  The creator describes a long interest in procedural generation that they had
-  never turned into a serious project, and says AI made it possible to try.
-  Their Vibe Jam 2026 build used Claude Code and Three.js, and it runs on phones
-  as well.
+  Steer with A and D, hold W to boost and S to brake. C switches the camera. The
+  default view looks straight down on the car, with crosswalks, traffic lights,
+  rooftops, trees and parked vehicles laid out around each intersection.
 
 
-  A wrong turn ends the run. Because the layout appears around the car as you
-  drive, you have to read each intersection the moment it shows up, and the
-  pressure of those choices is the appeal. It is a single-player arcade racer,
-  and the city never ends.
+  Two columns of icon buttons sit on the left edge. The top column has four
+  buttons with sun and moon symbols, and the bottom column has five with cloud
+  and rain symbols. A loading bar tracks the first rows of city being built
+  before you can drive.
+
+
+  The creator had only experimented with procedural generation before and wanted
+  to build something serious with it. An audio toggle sits in the top corner,
+  with credits for the music and ambient sound shown beside it.
 play:
   url: https://racernaut.com
   embeddable: true
   platforms:
     - browser
     - mobile
+  controls:
+    - "Space: start driving"
+    - "A / D: steer"
+    - "W: boost"
+    - "S: brake"
+    - "C: switch camera"
 creator:
   name: rameshvel
   handle: rameshvel
@@ -54,7 +64,7 @@ media:
     - games/racernaut/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-09-29
+  updated: 2026-10-02
 status: live
 provenance:
   foundVia: scout:vibejam-2026

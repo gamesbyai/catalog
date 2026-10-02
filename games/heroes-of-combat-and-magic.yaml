@@ -2,21 +2,23 @@ slug: heroes-of-combat-and-magic
 title: Heroes of Combat and Magic
 tagline: Command factions in turn-based isometric battles against other players online.
 description: >-
-  Heroes of Combat and Magic is a turn-based strategy game made as a tribute to
-  Heroes of Might and Magic 3. You pick one of several factions and take turns
-  moving and commanding your units across an isometric battlefield, against
-  another player online.
+  The game opens on a battle setup screen over a painted wheat-field backdrop. A
+  faction carousel across the top starts on Knights, shown as an armored
+  crossbow-wielding hero. A second carousel on the right picks the battleground,
+  set to a map called City IV.
 
 
-  The tribute shows in the tactical, unit-based combat and the variety of
-  factions, both borrowed from the older series, and in the turn-based rhythm of
-  every battle. Matches are live against other people in real time, and because
-  the game runs entirely in the browser, you can start one right from the page.
+  A toggle switches between VS AI and PvP. The settings panel offers Easy,
+  Medium and Hard difficulty and an army points budget, set to 1,000 points. It
+  also shows your faction and the opposing AI faction, which starts on Random.
+  Start Battle begins the fight, and an Advanced Settings button opens more
+  options.
 
 
-  It is a solo project: one developer made it from start to finish, using Claude
-  Code according to the creator. The Vibe Jam 2026 ranking put it at 405th of
-  945 entries.
+  Battles are turn-based and isometric, with several factions to choose from.
+  PvP matches run in real time against other players online. The creator, a solo
+  developer, modeled it on Heroes of Might and Magic 3 and built it to run
+  entirely in the browser.
 play:
   url: https://heroescm-jam.fly.dev
   embeddable: true
@@ -50,7 +52,7 @@ media:
     - games/heroes-of-combat-and-magic/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-09-29
+  updated: 2026-10-02
 status: live
 provenance:
   foundVia: scout:vibejam-2026

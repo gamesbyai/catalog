@@ -2,27 +2,34 @@ slug: all-in-texas-hold-em
 title: All In Texas Hold'em
 tagline: Play free, uninterrupted Texas Hold'em poker in your browser or on mobile.
 description: >-
-  All In Texas Hold'em is free Texas Hold'em poker, played the classic way. You
-  take a seat, receive your hole cards and choose to bet, call, raise or fold as
-  the community cards are revealed, weighing your hand against what the table
-  shows. The session keeps going for as long as you have chips left in your
-  stack.
+  You sit as Guest at a green felt table with six other seats, each showing a
+  name and a chip count. You start with 100 chips and the other seats start at
+  500. Press Play Now to deal, and your two hole cards appear face up at the
+  bottom of the table.
 
 
-  It works on a phone as well, which makes a quick hand easy to pick up. The
-  game is single-player and was coded with Claude Code, and it finished 311th of
-  the 945 entries at Vibe Jam 2026.
+  A panel on the left names the current stage, such as pre-flop, and shows the
+  total pot. On your turn you choose Fold, Call (the button shows the amount to
+  match), Raise, or All In. Minus and plus buttons beside Raise change the raise
+  amount.
 
 
-  Uninterrupted play is the point. Its creator, sebastianhox, wanted a way to
-  play poker online that keeps the table and the betting action in view the
-  whole time, hand after hand.
+  Five empty slots in the middle of the table are for the community cards.
+  Opponents' cards stay face down, and small labels under their seats, such as
+  Call and Fold, show what each seat did. The creator made it to play Texas
+  Hold'em online without ads.
 play:
   url: https://allintexasholdem.com
   embeddable: true
   platforms:
     - browser
     - mobile
+  controls:
+    - "Play Now: deal the first hand"
+    - "Fold: give up the hand"
+    - "Call: match the current bet"
+    - "Raise (minus / plus): set and make a raise"
+    - "All In: bet all your chips"
 creator:
   name: sebastianhox
   handle: sebastianhox
@@ -51,7 +58,7 @@ media:
     - games/all-in-texas-hold-em/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-09-29
+  updated: 2026-10-02
 status: live
 provenance:
   foundVia: scout:vibejam-2026

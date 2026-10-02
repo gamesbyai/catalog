@@ -3,26 +3,30 @@ title: Into The Rift
 tagline: Draft a team of riftlings and auto-battle through the rift to defeat
   the elite boss.
 description: >-
-  Into The Rift is an auto battler with roguelite structure. You draft a team of
-  riftlings, then send them through the rift one fight at a time. Battles play
-  out on their own, so the decisions that matter come from which creatures you
-  pick and how the squad fits together. The run ends at an elite boss.
+  You begin in a dark pixel-art forest clearing and walk your character up to
+  one of three creatures to pick your starter riftling. A timer in the top left
+  corner starts at 0:00, and a volume slider sits in the top right next to the
+  control hints.
 
 
-  The game draws on the creature-collecting appeal of Pokemon and the run-based
-  loop of roguelites, according to the creator's stated inspiration. Team
-  building is the main lever: each draft shapes how a run unfolds, which gives
-  repeat attempts a reason to try a different roster. The rough-lite framing
-  keeps the structure compact and focused on the draft and the fights.
+  From there you draft a team of riftlings and send them through the rift in
+  auto battles, where the creatures fight on their own rather than taking direct
+  commands. Your job is to build a team strong enough to reach the elite boss at
+  the end and defeat it.
 
 
-  It was built with Phaser and made with the help of Claude Code, as the creator
-  tells it, and it was entered in Vibe Jam 2026 with a small, focused scope.
+  Movement uses WASD, Tab opens your bag, and Q and E rotate. The creator names
+  Pokémon and roguelites as the inspiration, and the result is a strategy
+  roguelite built around choosing which creatures to bring along.
 play:
   url: https://intotherift.riftling.com
   embeddable: true
   platforms:
     - browser
+  controls:
+    - "WASD: move"
+    - "Tab: open bag"
+    - "Q / E: rotate"
 creator:
   name: Nolxander
   handle: nolxander
@@ -53,7 +57,7 @@ media:
     - games/into-the-rift/shot-2
 dates:
   added: 2026-10-01
-  updated: 2026-10-01
+  updated: 2026-10-02
 status: live
 provenance:
   foundVia: scout:vibejam-2026

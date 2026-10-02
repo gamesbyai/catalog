@@ -2,22 +2,24 @@ slug: undersphere
 title: Undersphere
 tagline: Run and shoot opponents on the inside surface of a hollow sphere.
 description: >-
-  Undersphere is a multiplayer first-person shooter set on the inner surface of
-  a spherical world. Players run across the curved interior, fight each other,
-  and try to outmaneuver opponents while gravity pulls them toward the sphere's
-  shell instead of a flat floor.
+  You run and shoot on the inside surface of a hollow sphere, where gravity
+  pulls you toward the curved ground and the horizon rises into the sky above
+  you. Matches are multiplayer first-person deathmatch. A scoreboard in the
+  corner ranks the top three players and shows your own rank and kill count.
 
 
-  The setting shapes everything. A grenade thrown toward the far side of the map
-  stays under the sphere's gravity and travels with believable proportions, so
-  distant targets and overhead arcs become part of the fight. The creator also
-  designed its own movement mechanics, aiming to keep them fair and conventional
-  enough for shooter players.
+  You carry three slots: an assault rifle with a 30-round magazine, a second
+  long gun, and a grenade. A grenade thrown across the map stays under the
+  sphere's gravity and travels with proper proportions, so it can land on the
+  far side of the world. A health counter and a coin counter sit in the HUD.
 
 
-  The game placed 14th of 945 entries at Vibe Jam 2026 and received the Unique
-  Concept award. It runs in the browser on Three.js, and the creator says it was
-  built with Cursor.
+  A banner at the top of the screen shows when a lobby is waiting for another
+  player. Bots appear on the scoreboard, and a banner announces each new kill
+  leader. The world is drawn in black-and-white cartoon outlines, with tall
+  grass, pine trees and dark crates scattered across the curved terrain. The
+  creator built the movement mechanics to feel fair and conventional despite the
+  shifting gravity.
 play:
   url: https://playundersphere.com
   embeddable: true
@@ -52,7 +54,7 @@ media:
     - games/undersphere/shot-2
 dates:
   added: 2026-10-01
-  updated: 2026-10-01
+  updated: 2026-10-02
 status: live
 provenance:
   foundVia: scout:vibejam-2026

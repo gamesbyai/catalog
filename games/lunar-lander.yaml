@@ -2,25 +2,35 @@ slug: lunar-lander
 title: Lunar Lander
 tagline: Steer a lunar module with thrust and tilt to land softly on rough terrain.
 description: >-
-  Lunar Lander is a retro-style landing game with one task: get the module down
-  in one piece. You pilot it over a jagged moonscape, using thrusters and tilt
-  to control the descent, and every attempt ends at the surface, either with a
-  gentle touchdown or with a crash.
+  Rotate the lander and fire the main thruster to set it down on a jagged lunar
+  landscape. A soft touchdown counts as a landing, and a crash ends the attempt.
+  The look is retro arcade, modeled on the old Lunar Lander cabinets the creator
+  liked.
 
 
-  It follows the old Lunar Lander arcade cabinets and keeps the format tight,
-  focused on that single task. The creator reached for Cursor during Vibe Jam
-  2026, wanting a compact version that was easy to tweak and share with friends.
+  A destination screen opens the game with five worlds to deploy to: Moon, Mars,
+  Europa, Venus and Kepler-452b. The Moon is the low-gravity world for learning
+  the basics. Mars has heavier pull and rough terrain, and Europa has ultra-low
+  gravity over fractured ice.
 
 
-  The uneven terrain makes the landing spot matter as much as your speed. Every
-  approach is a careful judgment of angle and thrust, and coming in too hard
-  ends the attempt. It is a single-player game in the browser.
+  Venus brings dense clouds and crushing gravity, and its card says it unlocks
+  after you complete the mission on Europa. Kepler-452b is an Earth-like world
+  with a forgiving descent.
+
+
+  A small panel on the destination screen lists the controls and names three
+  landing pad types: Easy, Hard and Extreme. A sound toggle sits in the top
+  corner, and P pauses the descent.
 play:
   url: https://lunarlanderv5.netlify.app
   embeddable: true
   platforms:
     - browser
+  controls:
+    - "Left / Right arrows: rotate"
+    - "Up arrow / Space: main thruster"
+    - "P: pause"
 creator:
   name: bobmute2
   handle: bobmute2
@@ -48,7 +58,7 @@ media:
     - games/lunar-lander/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-09-29
+  updated: 2026-10-02
 status: live
 provenance:
   foundVia: scout:vibejam-2026

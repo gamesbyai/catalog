@@ -3,21 +3,21 @@ title: Set Hunter
 tagline: Open card packs, trade singles, and finish animal card sets before time
   runs out.
 description: >-
-  Set Hunter is a short roguelike about completing an animal-themed card set as
-  quickly as you can, before time runs out. You open packs, buy single cards,
-  and sell your duplicates to keep money moving, all while keeping an eye on how
-  much cash is left.
+  The goal is to complete a set of animal-themed cards in as little time as you
+  can. You open packs, buy single cards, and sell duplicates for money. Quirky
+  NPCs show up with events you have to handle, and perks change how a run plays
+  out.
 
 
-  Rare finds are also a community chase. Global discoveries are shared across
-  everyone who plays, so players hunt the rare cards together. Cursor and
-  Three.js went into this Vibe Jam 2026 entry, which placed 562nd of 945.
+  The title screen shows four sets: Home & Farm, Aquatic World, Desert, and
+  African Savanna. Each set has 5 cards. Start Collecting begins a run, and the
+  other buttons lead to a Skill Tree, a Codex, and a Leaderboard.
 
 
-  The game is after the feeling of ripping open a pack and hoping the missing
-  card is inside, the one that completes the set. Perks change your strategy
-  from run to run, and quirky NPCs bring events that can help your plans or get
-  in their way.
+  A Worldwide Ace Discoveries panel lists a row of hidden slots for each set,
+  all marked with question marks. It tracks the rare finds that players share
+  across the community. The creator built the game to capture the tension of
+  opening trading card packs and to turn it into a short roguelike loop.
 play:
   url: https://set-hunter-game.vercel.app
   embeddable: true
@@ -53,7 +53,7 @@ media:
     - games/set-hunter/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-09-29
+  updated: 2026-10-02
 status: live
 provenance:
   foundVia: scout:vibejam-2026

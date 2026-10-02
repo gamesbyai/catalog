@@ -3,27 +3,38 @@ title: ZOMBIE DEFENSE PROTOCOL
 tagline: Place towers to build a killbox that stops waves of zombies and
   exploding bosses.
 description: >-
-  Zombie Defense Protocol is tower defense that asks you to build a killbox. You
-  position towers along the zombies' route and try to hold out through
-  escalating waves, and each wave tests whether your setup can handle what it
-  brings.
+  A welcome panel opens over an isometric map and asks for a difficulty before
+  you press Deploy. Easy gives 30 lives and 50% more rewards, Medium gives 20
+  lives, and Hard gives 15 lives and 30% less reward. The goal is to hold the
+  line through 30 waves of zombies.
 
 
-  It takes cues from World of Warcraft-style tower defense maps and renders in
-  3D with Three.js. Claude Code is the tool the creator used, and Vibe Jam 2026
-  put it 467th of 945.
+  Pick a tower from the bar at the bottom and click open ground to place it.
+  Each card shows its price, and a panel lists damage, range and fire rate. The
+  Gunner costs $50 and can hit umbrellas. Other towers are Sniper, Mortar,
+  Minigun, Laser, Frost, Flamer, Tesla, Recon and Cannon.
 
 
-  Enemy variety drives the strategy. Shielded zombies, zombies carrying
-  umbrellas, and invisible ones each get past the wrong kind of tower, so a
-  single favorite build will not carry you far. Every fifth wave arrives by car,
-  and bosses burst into swarms when they die, so a boss kill is not the end of
-  the threat.
+  Not every tower hits every threat. Some zombies carry shields or umbrellas,
+  some are invisible, and some crawl. The Recon tower buffs nearby towers,
+  bypasses shields and umbrellas, and spots invisible enemies, so mixing tower
+  types matters.
+
+
+  Every fifth wave arrives by car, and each boss bursts into a swarm when it
+  dies. You can call the next wave early and set the game speed from 1x to 10x.
+  Clicking a placed tower lets you inspect, upgrade or sell it.
 play:
   url: https://vibejgame.vercel.app
   embeddable: true
   platforms:
     - browser
+  controls:
+    - "Click ground: place tower"
+    - "Click tower: inspect / sell / upgrade"
+    - "Space: next wave now"
+    - "1-9, 0: pick tower"
+    - "Q / W / E / R / T: speed 1x / 2x / 3x / 5x / 10x"
 creator:
   name: yspede0000
   handle: yspede0000
@@ -54,7 +65,7 @@ media:
     - games/zombie-defense-protocol/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-09-29
+  updated: 2026-10-02
 status: live
 provenance:
   foundVia: scout:vibejam-2026

@@ -2,26 +2,32 @@ slug: lunar-mass
 title: Lunar Mass
 tagline: Deploy bots to build a lunar mass driver while carving new craters in the Moon.
 description: >-
-  Lunar Mass is a 3D building sim set on the Moon. The player constructs a mass
-  driver, a huge launch structure, by putting an arsenal of bots to work on the
-  surface. Progress comes from managing those bots and pushing the megastructure
-  toward completion.
+  Lunar Mass starts with you in a spacesuit on a lunar pad beside a hab dome
+  that has no power. Mission Control sends text prompts, and the first job is to
+  head to a waypoint, mine regolith with F, and place a solar kit that connects
+  the dome to the grid.
 
 
-  Construction leaves a mark on the terrain, since new lunar craters appear
-  while the work goes on. The mix of adventure, strategy, and simulation gives
-  the build a planning side as well as a hands-on one.
+  A cargo panel lists what you carry: regolith, ice, ore and metal, each with a
+  carry limit, and these resources are spent on buildings. Depots, including a
+  hab depot and a railend depot, hold stored materials. Tabs for Ops, Launch,
+  Power and Tips sit beside the cargo view, and the mission panel shows a
+  Launches count.
 
 
-  It was submitted to Vibe Jam 2026 and runs on Three.js. The creator built it
-  with Cursor. They describe it as a way to learn about the Lunar Mass Driver
-  project with the Terafab team, and they plan to grow it into a more realistic
-  simulation later.
+  The larger goal is to build a lunar mass driver, with a set of bots helping
+  construct the megastructure, and the creator describes creating new lunar
+  craters along the way. You view the astronaut from behind in third person. A
+  leaderboard is reachable from the title screen. The creator made it to learn
+  about the mass driver and plans a more realistic simulation later.
 play:
   url: https://lunar-mass.vercel.app
   embeddable: true
   platforms:
     - browser
+  controls:
+    - "F: mine regolith"
+    - "M: open slate"
 creator:
   name: lgvw3
   handle: lgvw3
@@ -50,7 +56,7 @@ media:
     - games/lunar-mass/shot-2
 dates:
   added: 2026-10-01
-  updated: 2026-10-01
+  updated: 2026-10-02
 status: live
 provenance:
   foundVia: scout:vibejam-2026

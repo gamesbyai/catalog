@@ -2,26 +2,32 @@ slug: rogue-lith
 title: Rogue Lith
 tagline: Sneak downward through hostile levels, stealing and shooting your way deeper.
 description: >-
-  You play a thief sneaking down through hostile levels in Rogue Lith, stealing
-  and shooting your way deeper one level at a time. The descent is a 3D
-  roguelike that mixes action and shooting with stealth.
+  The first objective sends you down through a dark, riveted-metal base to find
+  the entrance to the lower base. You see it from a first-person cockpit view,
+  and a briefing screen with text over an asteroid-like rock comes before the
+  level starts.
 
 
-  According to the creator, it was built with Cursor, using Three.js for the 3D
-  rendering so the whole game runs directly in a web browser. It supports online
-  multiplayer, and it came 34th of 945 in Vibe Jam 2026.
+  Left mouse fires a laser and right mouse launches a flare. Both sit in
+  numbered slots on the dashboard. Hull, shield and energy bars track your
+  condition, and a light gauge in the center reads LIT or not, which ties into
+  the stealth side of the game. A flashlight is also on the panel.
 
 
-  Stealth inside a roguelike structure is the hook. Every descent asks whether
-  to stay quiet or open fire: you can slip past threats unseen, or fight your
-  way through when a plan falls apart. Each choice carries into the next level
-  down, so how you handle one floor shapes the one below it.
+  Tab opens a wireframe sector map in the corner of the screen. A level and XP
+  counter at the top starts at level 1 with 0 of 40 XP. Objectives appear as
+  prompts, and Space opens them for a closer look.
 play:
   url: https://roguelith.com
   embeddable: true
   platforms:
     - browser
     - mobile
+  controls:
+    - "Left mouse button: fire laser"
+    - "Right mouse button: launch flare"
+    - "Tab: sector map"
+    - "Space: view objective"
 creator:
   name: ickack1
   handle: ickack1
@@ -51,7 +57,7 @@ media:
     - games/rogue-lith/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-09-29
+  updated: 2026-10-02
 status: live
 provenance:
   foundVia: scout:vibejam-2026

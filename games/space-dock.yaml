@@ -2,27 +2,29 @@ slug: space-dock
 title: Space Dock
 tagline: Stack and balance pieces to build a structure that reaches space.
 description: >-
-  Space Dock is a stacking puzzle with one destination: space. You place pieces
-  one on top of another, keep the growing structure balanced so it does not
-  topple, and try to connect the build to space at the top.
+  A numbered module hangs from a cable above a dock platform, and the aim is to
+  drop it onto the structure below. Click, tap, or press Space to launch the
+  first one. After that, press Space to drop each module as it hangs in place.
 
 
-  Three ideas run through this casual game at once: stacking, balance, and
-  connection. Each placement carries a bit of risk, because a shaky base makes
-  the later pieces harder to set down, so planning ahead matters as much as
-  steady timing.
+  Each run is a tower of 15 modules, and a counter in the corner panel tracks
+  how many you have placed. Every placed module adds 10 km to the altitude
+  readout, and the score goes up with each one. Three hearts sit in the same
+  panel.
 
 
-  According to the creator, it was built with Claude Code, Anthropic's coding
-  assistant, on Three.js, and phones can run it too. Its Vibe Jam 2026 result
-  was 507th of 945. As the tower gets taller, every run turns into a matter of
-  careful placement.
+  A wind gauge with a direction arrow shows which way the air is pushing and how
+  strongly. The backdrop is a daytime sky with clouds and a city skyline.
+  Buttons at the top corner open pause, a leaderboard, sound, help, and
+  settings.
 play:
   url: https://space-dock.gollysoda.com
   embeddable: true
   platforms:
     - browser
     - mobile
+  controls:
+    - "Click / tap / Space: launch and drop the module"
 creator:
   name: princeyesuraj
   handle: princeyesuraj
@@ -53,7 +55,7 @@ media:
     - games/space-dock/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-09-29
+  updated: 2026-10-02
 status: live
 provenance:
   foundVia: scout:vibejam-2026

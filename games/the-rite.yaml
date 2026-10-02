@@ -2,26 +2,35 @@ slug: the-rite
 title: The Rite
 tagline: Fight other players in a fast multiplayer arena shooter in your browser.
 description: >-
-  The Rite is a player-versus-player arena shooter that runs in the browser.
-  Players join a match, move around the arena, and fight each other in fast,
-  close-range firefights. It supports multiplayer and also works on mobile
-  devices, so a round can start from a phone or a desktop.
+  The Rite drops you into a first-person arena match against other online
+  players. You shoot your way around the map, and the first player to reach 20
+  kills wins. A 10-minute countdown sits at the bottom of the screen, and a
+  banner at the top names the current leader.
 
 
-  The game is inspired by classic arena shooters in the vein of Unreal
-  Tournament, a series the creator points out no longer gets a new release
-  alongside each Unreal Engine version. It aims to bring that fast, competitive
-  deathmatch style back in a lightweight web form.
+  The loadout panel lists two weapons at a time, such as pistols and a
+  machinegun or a machinegun and a shotgun. The selected weapon is highlighted.
+  A vitals panel tracks health and a separate shield meter, and distance markers
+  float over other players.
 
 
-  It was entered in Vibe Jam 2026, where it placed 16th out of 945 entries. The
-  creator built it with Claude Code, and it renders with Three.js.
+  The screens show different maps. One is a round icy chamber with a pool at its
+  center and glowing pink and blue walls. Another is a dark corridor of brick
+  and stone. A live chat feed lists players joining and trading messages, and
+  the corner shows your ping to a US server.
+
+
+  The creator's stated inspiration is Unreal Tournament, which Epic no longer
+  releases alongside each new Unreal Engine version.
 play:
   url: https://therite.magooney.org
   embeddable: true
   platforms:
     - browser
     - mobile
+  controls:
+    - "P: chat"
+    - "Q / E: select weapon"
 creator:
   name: MyMoonEnt
   handle: mymoonent
@@ -52,7 +61,7 @@ media:
     - games/the-rite/shot-2
 dates:
   added: 2026-10-01
-  updated: 2026-10-01
+  updated: 2026-10-02
 status: live
 provenance:
   foundVia: scout:vibejam-2026

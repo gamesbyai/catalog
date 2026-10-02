@@ -2,27 +2,37 @@ slug: aeralis
 title: Aeralis
 tagline: Fly and fight other players in a fast multiplayer third-person space shooter.
 description: >-
-  Aeralis is a multiplayer third-person shooter that runs in the browser. It is
-  billed as an MMOTPS, a massively multiplayer take on the third-person shooter,
-  with a space theme. Players move quickly through the environment and fight
-  other people sharing the same session. Movement and aim decide who comes out
-  ahead.
+  You control a hooded character seen from behind, running across a glowing blue
+  plain dotted with crystals under a dark purple sky. Aiming is third person
+  with a hexagonal reticle. Left mouse fires the Nullifier, which shows 28
+  rounds with an unlimited reserve, and right mouse aims down sights.
 
 
-  The design draws on fast movement shooters such as Tribes, Destiny, and
-  Titanfall, so speed and mobility shape how fights play out. The setting
-  borrows from space games like Star Citizen, Starfield, and No Man's Sky,
-  giving the shooting a sci-fi backdrop instead of a grounded military one.
+  Movement goes beyond running: you can jump, crouch and slide. A timer sits at
+  the top center between two kill counters and a rank marker, and a leaderboard
+  panel in the corner lists you as Player. Health starts at 100. A banner
+  announces an upcoming wave, such as Damage, which deals 60 damage.
 
 
-  Aeralis was built with Three.js and entered in the 2026 Vibe Jam, where it
-  ranked 61st among 945 entries. The creator built it with GitHub Copilot,
-  using Claude Opus 4.6 and Claude Sonnet 4.6.
+  A compass strip shows your heading in degrees, and a circular minimap marks an
+  exit point. A separate lightning ability sits on the F key, and reload and map
+  each have their own key. The creator describes it as a fast multiplayer
+  third-person shooter, drawing on movement shooters like Tribes, Destiny and
+  Titanfall and on space games like Star Citizen, Starfield and No Man's Sky.
 play:
   url: https://playaeralis.com
   embeddable: true
   platforms:
     - browser
+  controls:
+    - "W / A / S / D: move"
+    - "Space: jump"
+    - "Shift: slide"
+    - "C: crouch"
+    - "LMB: fire"
+    - "RMB: aim down sights"
+    - "R: reload"
+    - "F: tactical ability"
 creator:
   name: duckocancode
   handle: duckocancode
@@ -55,7 +65,7 @@ media:
     - games/aeralis/shot-2
 dates:
   added: 2026-10-01
-  updated: 2026-10-01
+  updated: 2026-10-02
 status: live
 provenance:
   foundVia: scout:vibejam-2026

@@ -2,27 +2,36 @@ slug: gun-ladder
 title: Gun Ladder
 tagline: Fight in a first-person arena and score the most kills in five minutes.
 description: >-
-  Rounds of Gun Ladder last five minutes, and when the timer runs out, the
-  player with the most kills wins. It is a first-person arena shooter played
-  online in desktop and phone browsers, and every player spawns into the arena
-  with a randomly assigned weapon and tries to rack up eliminations.
+  Whoever scores the most kills before the 5-minute clock runs out wins the
+  round. You enter a name, press Play, and spawn in a first-person arena where
+  every other player is a target.
 
 
-  Because the weapon is random on every spawn, each life plays differently and
-  there is no favorite loadout to fall back on. You adapt to whatever weapon you
-  are handed. Short rounds and a simple goal make it a game of quick matches
-  against other players.
+  Each spawn hands you a random weapon. The roster has 11: pistol, shotgun, SMG,
+  assault rifle, sniper, rocket launcher, rail gun, minigun, flamethrower,
+  grenade launcher and katana. The start screen lists them, each tagged in its
+  own color.
 
 
-  It grew out of the creator's fond childhood memories of classic arena
-  shooters. Made with Cursor on Three.js, it finished 137th of 945 entries at
-  Vibe Jam 2026.
+  Move with WASD, jump, slide, aim with the mouse and fire with the left button.
+  R reloads. Click inside the game to lock the mouse for aiming, and press Esc
+  to release it. A Copy Link button on the start screen copies the game's link.
+  The creator built the format from fond childhood memories of shooters like
+  this.
 play:
   url: https://gun.doppelshift.de
   embeddable: true
   platforms:
     - browser
     - mobile
+  controls:
+    - "WASD: move"
+    - "Space: jump"
+    - "Shift: slide"
+    - "Mouse: aim"
+    - "LMB: shoot"
+    - "R: reload"
+    - "Esc: unlock mouse"
 creator:
   name: merlinshabaj
   handle: merlinshabaj
@@ -51,7 +60,7 @@ media:
     - games/gun-ladder/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-09-29
+  updated: 2026-10-02
 status: live
 provenance:
   foundVia: scout:vibejam-2026

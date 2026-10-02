@@ -2,26 +2,35 @@ slug: shadow-monarch
 title: shadow monarch
 tagline: Explore a first-person memory from a 90s childhood and uncover what was buried.
 description: >-
-  A childhood memory resurfaces in Shadow Monarch, and you walk back into it
-  from a first-person view. The space is drawn from the creator's own childhood
-  in the 1990s. As you explore it, you piece together why something there was
-  left forgotten, and what was buried with it.
+  A forgotten childhood memory resurfaces in this first-person game, and the
+  tagline warns that some things were buried for a reason. You play in the
+  Dungeon of the Ninth Gate, a cathedral haunted by shadows. The goal is to
+  awaken your dominion and slay the shadows.
 
 
-  The creator used Lovable, with Three.js rendering the 3D scene, and it came
-  265th of 945 entries in Vibe Jam 2026. Phones can run it too.
+  You pick between Magic and a Shadow Blade with the 1, 2 and Q keys, and click
+  to cast. The game opens on a title card with an Enter the Gate button, and a
+  sound toggle sits in the top corner.
 
 
-  The game leans on nostalgia with an uneasy edge, somewhere between adventure
-  and horror. The memory comes back, but the setup hints that some things were
-  buried for a reason, and uncovering them is the job. That tension between
-  familiar, personal surroundings and a growing sense of dread is the main draw.
+  On desktop, move with WASD or the arrow keys and look around with the mouse.
+  On a touch screen, a joystick moves you, dragging on the right side turns your
+  view, and tapping the orb casts. The creator based the story on their
+  childhood in the 1990s.
 play:
   url: https://shadowmonarch.app
   embeddable: true
   platforms:
     - browser
     - mobile
+  controls:
+    - "WASD / arrows: move (desktop)"
+    - "Mouse: look"
+    - "Click: cast"
+    - "1 / 2 / Q: switch Magic / Shadow Blade"
+    - "Touch joystick: move"
+    - "Drag right side: look"
+    - "Tap orb: cast"
 creator:
   name: thetrueisout218
   handle: thetrueisout218
@@ -50,7 +59,7 @@ media:
     - games/shadow-monarch/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-09-29
+  updated: 2026-10-02
 status: live
 provenance:
   foundVia: scout:vibejam-2026

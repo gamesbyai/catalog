@@ -2,21 +2,23 @@ slug: bungr-inc
 title: BUNGR INC.
 tagline: Cook burgers in a cursed kitchen to earn your way to freedom.
 description: >-
-  BUNGR INC. is a kitchen simulator set in a cursed workplace. The goal is to
-  make burgers and, through that work, earn your freedom. Each shift puts you
-  behind the counter, assembling orders and keeping production moving so you can
-  work your way toward getting out for good.
+  You work a burger line from a first-person view inside a dim kitchen of
+  exposed pipes and fluorescent tubes, making burgers to earn your freedom.
+  Orders arrive as tickets on a brown board on the wall, which reads as waiting
+  for the next ticket between orders. A small crosshair marks what you point at.
 
 
-  The game pairs the familiar rhythm of a cooking sim with an eerie, atmospheric
-  setting. The cursed world and its dark aesthetic give ordinary burger assembly
-  an unsettling tone, so the kitchen feels like a place you are trapped in
-  rather than a cheerful restaurant where you happen to work.
+  Each day runs on a countdown clock, and the board tracks your cash against a
+  quota. Day 1 sets the quota at $70. Ingredients start at a counter tray
+  holding buns, patties, cheese, tomato slices and other toppings, and a card on
+  the wall shows ingredient icons.
 
 
-  It was an entry in Vibe Jam 2026, where it placed 11th among 945 entries. The
-  game is built with Three.js and runs in the browser, and the creator's
-  submission names OpenCode as the tool used to make it.
+  A radio on the wall interrupts your shift, and a prompt tells you to listen
+  when it does. Text banners on screen greet you at the start and label the
+  ingredient counter and the radio. The cursed setting shows in the grainy,
+  dithered look and the grimy kitchen, where warm signage stands out against the
+  gray.
 play:
   url: https://bungr.net
   embeddable: true
@@ -50,7 +52,7 @@ media:
     - games/bungr-inc/shot-2
 dates:
   added: 2026-10-01
-  updated: 2026-10-01
+  updated: 2026-10-02
 status: live
 provenance:
   foundVia: scout:vibejam-2026

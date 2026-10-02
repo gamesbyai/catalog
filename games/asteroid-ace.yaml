@@ -2,27 +2,41 @@ slug: asteroid-ace
 title: Asteroid Ace
 tagline: Blast drifting asteroids and dodge hunter drones in escalating waves.
 description: >-
-  Asteroid Ace is a classic asteroid shooter played in escalating waves. You
-  pilot a ship through slow-drifting asteroid clusters that break into dangerous
-  fragments when hit, so every hit adds to the debris you then have to stay
-  clear of.
+  You fly a ship in a classic asteroid shooter, aiming with the mouse or
+  rotating with the keys, thrusting forward, strafing, reversing and firing.
+  Slow-drifting asteroid clusters shatter into fragments when hit, so each shot
+  can leave more rocks to dodge.
 
 
-  The creator says the whole game was made with a local LLM. The experiment was
-  to see what one laptop could do: a 5090 GPU, 24 GB of video memory and 32 GB
-  of RAM. It finished 404th of the 945 entries at Vibe Jam 2026.
+  Agile hunter drones join the asteroids as waves escalate. The creator
+  describes each enemy type as having its own movement pattern and attack style,
+  which pushes you to change tactics between waves.
 
 
-  Agile hunter drones join the rocks and force quick changes of course. Each
-  enemy type has its own movement pattern and attack style, and the danger
-  climbs from wave to wave, with passive obstacles and active pursuers on screen
-  together.
+  The start screen has a Graphics button for quality settings and a Touch button
+  for on-screen controls. Two sliders adjust game speed and scale, both set to
+  1.0x by default. A right-click toggles auto mode, Shift boosts, and Esc
+  pauses.
+
+
+  The creator built it with a local model on a laptop GPU, to test what that
+  hardware could produce. The title screen labels this version Asteroid Ace 3
+  Beta.
 play:
   url: https://asteroid-ace.fractalvision.co.uk
   embeddable: true
   platforms:
     - browser
     - mobile
+  controls:
+    - "Mouse: aim"
+    - "W / left mouse button: thrust"
+    - "S: reverse"
+    - "A / D: strafe"
+    - "Q / E: rotate"
+    - "Space: fire"
+    - "Shift: boost"
+    - "Right-click: auto; Esc: pause"
 creator:
   name: Paul Shroom
   handle: paul-shroom
@@ -54,7 +68,7 @@ media:
     - games/asteroid-ace/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-10-01
+  updated: 2026-10-02
 status: live
 provenance:
   foundVia: scout:vibejam-2026

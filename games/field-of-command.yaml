@@ -2,21 +2,25 @@ slug: field-of-command
 title: Field of Command
 tagline: Command British or German forces in a real-time battle across 1940 Kent.
 description: >-
-  Field of Command is a real-time strategy game set in an alternate 1940s
-  England, where a German invasion of Kent actually happens. Players pick a
-  side: organize the desperate British defense or lead the German assault across
-  the fields. Each match is a contest for ground between the two armies.
+  You command a British infantry section from the BEF Infantry Command in a
+  real-time strategy game set in the fields of Kent in 1940s England. A squad of
+  soldiers stands on an isometric field beside a Union Jack, each with a small
+  health bar, and a card labeled No. 1 Section shows the squad's status.
 
 
-  The setting is the hook. Instead of retelling a known campaign, the game
-  imagines the invasion that never took place and lets either side try to change
-  how it ends. Playing as defender or attacker gives the same battlefield two
-  different goals.
+  An AI opponent, Blitzkrieg Infantry, holds the far side of the map. The top
+  bar shows a bar for each side, both starting at 2000. You can also take the
+  German side and lead the assault instead of the defense, in an alternate
+  history of an invasion that never happened.
 
 
-  It runs in the browser on a 3D engine, supports multiplayer, and works on
-  mobile devices. It placed tenth out of 945 entries in Vibe Jam 2026. The
-  creator built it with Cursor.
+  Two counters sit at the screen edges. Deploy reads 0 / 0 with an income of
+  +0.2 per second, and Tactical reads 0 / 500. Pause and speed buttons let you
+  run the game at 1x, 2x or 4x, and a delegate button sits below them.
+
+
+  A minimap in the corner marks your units in blue and the enemy line in red.
+  The build is labeled v0.2.7 prototype and links to a bug report form.
 play:
   url: https://play.fieldofcommand.com
   embeddable: false
@@ -50,7 +54,7 @@ media:
     - games/field-of-command/shot-2
 dates:
   added: 2026-10-01
-  updated: 2026-10-01
+  updated: 2026-10-02
 status: live
 provenance:
   foundVia: scout:vibejam-2026

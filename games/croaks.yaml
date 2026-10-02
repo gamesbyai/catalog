@@ -2,27 +2,36 @@ slug: croaks
 title: CROAKS
 tagline: Aim and fire at rival frogs in a turn-based artillery battle.
 description: >-
-  CROAKS is a turn-based artillery game: Worms, with frogs. Players take turns
-  aiming and firing at the opposing frogs, working out the angle and power it
-  takes to land a shot across the terrain. The match goes on until one side is
-  left standing.
+  The title screen shows a pixel-art swamp with armed frogs and a menu: Find
+  Opponent, Vs AI, Survival, a Daily challenge with a countdown, and Customize.
+  A banner advertises 21 weapons. First-time players get an offer of a short
+  tutorial with a passive AI opponent and unlimited ammo.
 
 
-  The creator built the game around memories of playing Worms when they were
-  young, and it keeps that formula of tactical positioning mixed with shooting.
-  It was made with Claude Code, renders with PixiJS and ranked 338th of the 945
-  entries at Vibe Jam 2026.
+  Matches are turn-based artillery between two frog teams on a side-view
+  landscape of dirt hills. You take turns blowing up the other side, and the
+  last frogs standing win. A round timer runs at the top, with a health bar for
+  each team.
 
 
-  Multiplayer works online and on phones, so a match with friends does not need
-  everyone in one room. Each turn is a small physics problem: the angle, the
-  power and the terrain between you and the target.
+  Number keys 1 to 9 pick a weapon, and Tab swaps to another frog on your team.
+  A Skip button ends your turn. After you fire, a short retreat phase lets you
+  move your frog clear. The weapon bar groups the arsenal into Direct, Fuse /
+  Cluster, Special and Utility.
+
+
+  The creator played Worms as a kid and wanted to bring those memories back with
+  frogs in place of worms.
 play:
   url: https://croaks.cc
   embeddable: true
   platforms:
     - browser
     - mobile
+  controls:
+    - "1-9: pick weapon"
+    - "Tab: swap frog"
+    - "Enter: continue tutorial"
 creator:
   name: thomaskanze
   handle: thomaskanze
@@ -53,7 +62,7 @@ media:
     - games/croaks/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-09-29
+  updated: 2026-10-02
 status: live
 provenance:
   foundVia: scout:vibejam-2026

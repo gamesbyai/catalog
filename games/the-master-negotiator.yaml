@@ -2,21 +2,26 @@ slug: the-master-negotiator
 title: The Master Negotiator
 tagline: Haggle with AI characters who remember past deals, buying low and selling high.
 description: >-
-  The Master Negotiator is a haggling game with a retro CRT look. You buy low,
-  sell high, and talk your way through haggling sessions with AI-driven
-  characters, typing your offers or speaking them in voice mode, and every deal
-  turns on how persuasive you are.
+  A retro CRT monitor frames the screen. One screen asks "What do they call
+  you?" and takes a name or alias that is shown on your profile. Another is a
+  demo-mode tutorial hosted by Victor Hale, an arrogant CEO character in a
+  monogrammed hoodie.
 
 
-  The creator wanted to turn a real-life skill into a game, so that shy,
-  introverted people can practice negotiating and avoid getting scammed. The
-  creator used Claude Code, and the game came 382nd of 945 entries in Vibe Jam
-  2026.
+  The tutorial is split into four chapters and runs on the actual game
+  interface. Victor invites you to click the action buttons, starting with "Show
+  me the buy flow", and explains what each one does. A back button lets you
+  retry a step, and a separate option skips the tutorial.
 
 
-  The characters remember how earlier deals went, so burning someone once can
-  come back at you later. A multiplayer mode adds PvP betrayal contracts, where
-  other players can double-cross you, and all of it works on a phone too.
+  The game itself is haggling: buy low, sell high, and talk your way to a better
+  price against AI-driven characters. Those characters remember how you treated
+  them in earlier deals. A voice mode lets you speak during negotiations, and
+  multiplayer adds PvP betrayal contracts.
+
+
+  The creator built it to gamify negotiation, so that people who find social
+  situations hard can practice the skill before facing a real deal.
 play:
   url: https://the-master-negotiator.vercel.app
   embeddable: true
@@ -52,7 +57,7 @@ media:
     - games/the-master-negotiator/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-09-29
+  updated: 2026-10-02
 status: live
 provenance:
   foundVia: scout:vibejam-2026

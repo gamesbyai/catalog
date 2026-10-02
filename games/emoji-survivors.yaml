@@ -2,21 +2,22 @@ slug: emoji-survivors
 title: Emoji Survivors
 tagline: Fight endless waves of emoji monsters as a mage and stack chaotic upgrades.
 description: >-
-  Emoji Survivors is a survival shooter that makes you a mage facing endless
-  waves of emoji monsters. Each run is a fight to stay alive as the horde grows,
-  collecting upgrades that reshape your build and help you clear the screen
-  before the crowd overwhelms you.
+  Emoji Survivors starts on a mage select screen. You pick a caster from a row
+  of emoji-faced portraits, and the panel above shows that mage's three skills.
+  The Wind Mage comes first, with Gale Ring, a point-blank knockback burst,
+  Crosswind Strip, a moving wind lane that shreds packs, and Tempest Mode, a
+  storm core that chains displacement.
 
 
-  The creator says they had long wanted to build a complete game from scratch,
-  and that AI made it possible. Codex was the AI in question, and the game
-  ranked 196th of 945 at Vibe Jam 2026.
+  In a run you survive endless waves of emoji monsters and take chaotic upgrades
+  that evolve your mage's build. The goal is to wipe out the horde with
+  spellcraft before it wipes you out.
 
 
-  The upgrades are the focus, and they stack. Your choices push the mage in
-  chaotic directions, so each run can end up with a different set of powers, and
-  the playful emoji enemies sit in contrast with the escalating pressure of the
-  waves.
+  An archive panel on the menu tracks progress across 22 trials and 6
+  achievements, all starting at zero. Two of the trials are surviving 5 minutes
+  in a single run and reaching level 10 in a single run. A sound button sits in
+  the top corner.
 play:
   url: https://emoji-survivors.fun
   embeddable: true
@@ -52,7 +53,7 @@ media:
     - games/emoji-survivors/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-09-29
+  updated: 2026-10-02
 status: live
 provenance:
   foundVia: scout:vibejam-2026

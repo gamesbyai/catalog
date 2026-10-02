@@ -2,25 +2,31 @@ slug: tower-tumble
 title: Tower Tumble
 tagline: Bounce off walls and backflip your way up an endless pixelated tower.
 description: >-
-  Tower Tumble is an endless climb up a pixelated 3D tower. You go up platform
-  after platform, bouncing off the walls to gain height and speed. The run
-  continues until you fall, so the whole point is to climb as high as you can.
+  Climb an endless tower by jumping from one green platform to the next,
+  starting from the ground floor. A counter in the corner shows your current
+  floor and your points. Build speed by running, and a faster run gives a bigger
+  jump.
 
 
-  It is a 3D reimagining of Icy Tower, a childhood favorite of the creator, and
-  it aims to keep the feel of the original. Claude Code and Three.js went into
-  the build, along with multiplayer. Its Vibe Jam 2026 result was 483rd of 945.
+  Hold the jump button to charge a higher leap. Bounce off the tower walls to
+  gain momentum, and skip platforms to earn combo points. Backflips in the air
+  add style points. Some platforms are red, set apart from the green ones.
 
 
-  Height is not the only score. Backflips earn style points, which rewards
-  flashy movement over cautious hopping on the way up, and a leaderboard lets
-  you compare your climbs with other players.
+  The tower is drawn in chunky pixel art with a 3D look and a grainy, retro
+  screen filter. A small orange character climbs between two brown walls. Scores
+  go to an online leaderboard, so you can compare climbs with other players. The
+  creator based it on Icy Tower, a childhood favorite.
 play:
   url: https://tower-tumble.vercel.app
   embeddable: true
   platforms:
     - browser
     - mobile
+  controls:
+    - "Arrow keys: move"
+    - "Space: jump (hold to charge)"
+    - "Tap left/right side of screen: jump (mobile)"
 creator:
   name: andreaskruszaki
   handle: andreaskruszaki
@@ -51,7 +57,7 @@ media:
     - games/tower-tumble/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-09-29
+  updated: 2026-10-02
 status: live
 provenance:
   foundVia: scout:vibejam-2026

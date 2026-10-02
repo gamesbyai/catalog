@@ -2,22 +2,24 @@ slug: wgronalds
 title: WgRonalds
 tagline: Survive a fast-food job application full of ever-stranger HR rules.
 description: >-
-  WgRonalds turns a fast-food job application into a single-player puzzle game.
-  You apply for a crew position, and the process hands you form after form and
-  requirement after requirement, with every round adding to the pile of
-  ever-stranger policies you have to follow.
+  WgRonalds turns a fast-food crew application into a puzzle. The first step
+  asks for your full name in a single text field. A sidebar titled Active
+  Requirements lists what the form currently wants, with a counter of how many
+  are met. Save & Continue stays greyed out until every listed requirement is
+  checked.
 
 
-  The rules are the joke: familiar HR and workplace policies exaggerated well
-  past reason, yet phrased in calm, courteous corporate language. Claude Code is
-  what the creator used, the game works on a phone, and its Vibe Jam 2026 finish
-  was 423rd of 945.
+  The application runs twelve steps, tracked by a progress bar at the top that
+  shows a time estimate of about four minutes. A red HR notice sits under the
+  field and tells you in polite wording what the form still needs, such as
+  entering your name.
 
 
-  The escalating rules drive the difficulty, since every new condition has to be
-  kept in mind alongside the old ones, so a run comes down to following the
-  growing list without slipping up. Whether you get hired at the end is left
-  uncertain.
+  The creator built it to take escalating-rules chaos and apply it to a
+  fast-food job application, with absurd HR policies written in courteous
+  corporate language. The page looks like an official document, with a red and
+  yellow header, a form number, and a line asking you to complete every field
+  with patience.
 play:
   url: https://wgronalds.vercel.app
   embeddable: true
@@ -52,7 +54,7 @@ media:
     - games/wgronalds/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-09-29
+  updated: 2026-10-02
 status: live
 provenance:
   foundVia: scout:vibejam-2026

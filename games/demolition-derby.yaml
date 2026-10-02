@@ -2,25 +2,31 @@ slug: demolition-derby
 title: Demolition Derby
 tagline: Ram other players' cars in a dusty arena until one is left running
 description: >-
-  Demolition Derby is a multiplayer browser game where you drive a car into a
-  dusty arena alongside other players and try to wreck their vehicles with your
-  own. Each round is a chaotic free-for-all of collisions, with everyone bumping
-  and smashing around the same enclosed space.
+  You drive a car around a dusty, fenced arena and ram other drivers until their
+  cars are wrecked. Each round runs on a countdown timer that starts near four
+  minutes, and you share the arena with other players online.
 
 
-  The game is built around simple, loud fun rather than complicated rules. It
-  draws on the creator's memories of playing FlatOut 2's demolition derby mode
-  at LAN parties, and that spirit of casual, friendly mayhem with strangers
-  carries through. It runs in a web browser and is built on Three.js.
+  Your score sits in the top corner, and a standings board lists the leaders by
+  points. Holding Tab brings up the full board. A feed under it announces who
+  wrecked whom. Your hull percentage shows inside a speedometer, and a critical
+  warning appears when the hull is nearly gone.
 
 
-  It was entered in Vibe Jam 2026, where it placed 26th out of 945 entries. The
-  creator says they built it with Cursor, an AI-assisted code editor.
+  A boost meter recharges over time and is spent with Shift. Space works the
+  handbrake. Shield-shaped pickups lie on the arena floor. The cars include
+  muscle cars, vans and a dog-faced wreck, and tire tracks mark the dirt. The
+  creators cite FlatOut 2 demolition derby sessions at LAN parties as the
+  inspiration.
 play:
   url: https://demolition-derby.xyz
   embeddable: false
   platforms:
     - browser
+  controls:
+    - "Space: handbrake"
+    - "Shift: boost"
+    - "Tab (hold): standings"
 creator:
   name: merijnvanes
   handle: merijnvanes
@@ -49,7 +55,7 @@ media:
     - games/demolition-derby/shot-2
 dates:
   added: 2026-10-01
-  updated: 2026-10-01
+  updated: 2026-10-02
 status: live
 provenance:
   foundVia: scout:vibejam-2026

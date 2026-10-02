@@ -2,22 +2,25 @@ slug: 3-second-memory-maze
 title: 3-Second Memory Maze
 tagline: Memorize a maze route in three seconds, then find the exit in the dark.
 description: >-
-  3-Second Memory Maze is a short browser puzzle game about memory under
-  pressure. Each level shows the maze for a few seconds, then it fades to
-  darkness and leaves only a small glow around your character. You steer from
-  memory to the exit, aiming to finish quickly and with few moves.
+  A neon maze sits on screen for a few seconds, then fades to darkness, leaving
+  only a small glow around your position. Study the yellow route and its turn
+  anchors during the preview, then walk to the exit from memory.
 
 
-  The game has 30 bite-sized levels, each scored from one to three stars based
-  on speed and move count. A single route peek per level reveals the path once
-  if you get lost. A Daily Challenge gives everyone the same maze each day, and
-  local best records and daily streaks track your progress. The neon look suits
-  the dark play, and touch swipes, keyboard, and on-screen buttons all work.
+  The campaign has 30 short maze levels, each opened from a level map. Every
+  level lets you use one route peek to reveal the path again, and a replay
+  preview button is also on the screen. Pause and stop buttons let you freeze or
+  end a run. A header tracks the level, the preview countdown and your move
+  count.
 
 
-  According to the jam submission, AI assisted with the code, graphics, and
-  text. The game runs directly in the browser as HTML5 and is built to be
-  friendly to mobile devices.
+  Each level is scored from 1 to 3 stars based on speed and number of moves, and
+  the campaign tracks stars out of 90. A Daily Challenge serves one shared maze
+  to everyone each day, with a streak counter. Best records are stored locally.
+
+
+  You can move with the arrow keys, WASD, swipes on touch screens, or the
+  on-screen buttons, so the game works on both keyboard and phone.
 play:
   url: https://cravveo-lab.itch.io/3-second-memory-maze
   embeddable: false
@@ -62,7 +65,7 @@ media:
     - games/3-second-memory-maze/shot-2
 dates:
   added: 2026-09-30
-  updated: 2026-10-01
+  updated: 2026-10-02
 status: live
 provenance:
   foundVia: scout:aibgj-4

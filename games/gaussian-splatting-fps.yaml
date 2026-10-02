@@ -2,27 +2,32 @@ slug: gaussian-splatting-fps
 title: Gaussian Splatting FPS
 tagline: Shoot your way through a first-person level built from a real-world 3D scan.
 description: >-
-  Gaussian Splatting FPS sets a single-player first-person shooter inside a
-  Gaussian Splat scan of a real place. Instead of a hand-modeled level, you move
-  through a photographic space and fight among its walls, corridors and open
-  areas, on a computer or a phone.
+  You move through a first-person view of a real place captured as a Gaussian
+  Splat scan. Move with WASD, crouch with C, and fire a carbine with the mouse
+  button. A crosshair sits at screen center, and a red health bar and a 30 / 30
+  ammo counter show in the corners.
 
 
-  Getting there took work. Gaussian Splats are static, so the project had to
-  solve collision, dynamic objects, navigation and rendering compatibility on
-  its own, and the creator says Cursor got them past most of those technical
-  obstacles. It finished 103rd of 945 at Vibe Jam 2026.
+  Splat scans are static and carry no geometry, so the game has to supply
+  collision, dynamic objects, navigation and rendering compatibility itself. The
+  creator worked through these with an AI code editor and says most of them were
+  solved. The scan renders as soft, blurred surfaces with smeared detail up
+  close, and the screen edges have a curved, vignetted look.
 
 
-  Making games has long been a hobby for the creator, and they credit AI with
-  helping them finally finish a project. It is built on PlayCanvas, and a full
-  writeup of the project is on the PlayCanvas blog.
+  The carbine model is by DJMaesen on Sketchfab, and the splat environment is by
+  Christoph Schindelar. The creator also published a writeup on the PlayCanvas
+  blog covering how the scan was turned into a playable level.
 play:
   url: https://aez.one/gs-fps
   embeddable: true
   platforms:
     - browser
     - mobile
+  controls:
+    - "WASD: move"
+    - "C: crouch"
+    - "Mouse button: shoot"
 creator:
   name: yak32
   handle: yak32
@@ -50,7 +55,7 @@ media:
     - games/gaussian-splatting-fps/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-09-29
+  updated: 2026-10-02
 status: live
 provenance:
   foundVia: scout:vibejam-2026

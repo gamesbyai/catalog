@@ -2,27 +2,34 @@ slug: rooftop-rumble
 title: Rooftop Rumble
 tagline: Blast rival neighbors off flooded rooftops into shark-filled water.
 description: >-
-  A suburban leaf-blower arms race went too far, and now the streets are
-  underwater. Rooftop Rumble is a multiplayer battle royale on the roofs that
-  are left. You fight for position and use leaf blowers to push rival neighbors
-  off the edge until one player stands as King of the Street.
+  The start screen asks for a name and offers Singleplayer, Host Private Match
+  and Find Public Match. After that you pick a mode and a cosmetic hat, then
+  drop onto a low-poly neighborhood of red and teal rooftops. You fight with a
+  leaf blower, and the aim is to blast rivals off the roofs into the water.
 
 
-  It is designed to be understood quickly and easy to jump into, on a phone or a
-  desktop. In the creator's words, they used Cursor to build it on Three.js.
-  Vibe Jam 2026 put it 164th of 945.
+  Battle Royale lasts until everyone else has taken a swim, so the last player
+  standing wins. Deathmatch runs on a timer, with respawning enabled, and the
+  most kills when time runs out takes it. King of the Ridge, where you hold the
+  center ridge to score points, is marked as frozen for multiplayer.
 
 
-  The water below is the punchline. Escaped pet goldfish mutated into Gutter
-  Sharks after the drains clogged with leaf mulch, so property disputes end with
-  a neighbor shoved into shark-filled water. The tone stays silly from start to
-  finish.
+  Besides the leaf blower, you can jump between roofs, trigger a bird attack and
+  use emotes. The water is patrolled by mutated goldfish called Gutter Sharks. A
+  stats bar tracks your wins and kills. Hats unlock through them: Top Hat after
+  1 win, Propeller at 10 kills, Pilon at 20 and Crown at 50.
 play:
   url: https://rooftop-rumble.fun
   embeddable: false
   platforms:
     - browser
     - mobile
+  controls:
+    - "WASD: move"
+    - "Space: jump"
+    - "Click: leaf blower"
+    - "E: bird attack"
+    - "F: emotes"
 creator:
   name: JordanHeightsX
   handle: jordanheightsx
@@ -51,7 +58,7 @@ media:
     - games/rooftop-rumble/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-09-29
+  updated: 2026-10-02
 status: live
 provenance:
   foundVia: scout:vibejam-2026

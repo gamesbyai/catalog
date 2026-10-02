@@ -2,26 +2,43 @@ slug: turbo-kart-rally
 title: turbo kart rally
 tagline: Race colorful karts around tracks in a Mario Kart-style arcade racer.
 description: >-
-  Turbo Kart Rally is an arcade kart racer in the spirit of Mario Kart, with
-  colorful karts and short, fast races around the track. You drive around a
-  course and compete for position, and the handling favors quick reactions over
-  realistic driving physics.
+  A demo race plays behind the title, with karts lined up on a starting grid
+  between grandstands and sponsor banners. Press Enter or click to begin, then
+  choose one of eight racers, an engine class of 50cc, 100cc or 150cc, and how
+  many laps to run.
 
 
-  According to its repository, it was built by five Claude Opus 5.5 sub-agents
-  working from a single prompt. The repository is tagged as AI-generated and
-  lists kart racing, procedural generation, and WebGL among its topics. It is a
-  single-player game that runs in the browser.
+  The race is against seven computer drivers on Palm Cove Circuit, about 2.1 km
+  long. The course has sweeping turns, an S-bend, a bridge across a lagoon, a
+  hairpin, 8 boost pads and 2 jump ramps. Hop into a drift and hold it through a
+  corner. The sparks shift from blue to orange to purple, and releasing gives a
+  bigger boost the longer you held.
 
 
-  Nothing on screen comes from an art or model file. Everything is generated
-  procedurally, the code is plain JavaScript on Three.js, and there is no build
-  step, so the game opens and runs straight from the repository without setup.
+  Item boxes hand out mushrooms, bananas, green and red shells, a star,
+  lightning or a blue shell, with the odds set by your place in the pack. Rivals
+  use items too, and they close the gap if you pull ahead. Revving as the
+  countdown ends gives a rocket start.
+
+
+  Racers differ in speed, acceleration, handling and weight. The screen shows
+  your position, lap, item roulette, minimap and speedometer, plus banners for
+  the final lap and for driving the wrong way. Music speeds up on the last lap.
+  Keyboard and gamepad both work.
 play:
   url: https://bridge-mind.github.io/turbo-kart-rally
   embeddable: true
   platforms:
     - browser
+  controls:
+    - "W / Up: accelerate"
+    - "S / Down: brake or reverse"
+    - "A, D / Left, Right: steer"
+    - "Space: hop and drift"
+    - "E / X / Left Shift: use item"
+    - "C: look back"
+    - "Esc / P: pause"
+    - "M: mute"
 repo: https://github.com/bridge-mind/turbo-kart-rally
 license: MIT
 creator:
@@ -52,7 +69,7 @@ media:
     - games/turbo-kart-rally/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-09-29
+  updated: 2026-10-02
 status: live
 provenance:
   foundVia: scout:github

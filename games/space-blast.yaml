@@ -3,26 +3,29 @@ title: Space Blast
 tagline: Dodge and shoot through asteroid fields, alone or with a friend on the
   same screen.
 description: >-
-  Space Blast is a 3D survival shooter set in outer space, played solo or as a
-  couch co-op pair sharing one screen. You pilot a ship through dense fields of
-  asteroids, shooting what you can and steering around the rest to stay alive
-  while the pressure builds.
+  Space Blast puts a pilot in a 3D asteroid field with one job: survive as long
+  as possible while shooting rocks apart. Before launching, you enter a required
+  pilot call sign, which is used for the leaderboard, and pick a ship color from
+  a dropdown.
 
 
-  Between the shooting and the dodging, you upgrade your loadout on the fly, so
-  the ship you are flying keeps changing as a run goes on. Its creator credits
-  the Cursor editor, with Three.js as the engine, and it also runs on phones.
+  Three control schemes are offered on the start screen: touch, mouse, and
+  keyboard. A daily run checkbox makes every player face the same asteroid
+  sequence that day. Two pilots can share one screen by pressing 2 at the start.
 
 
-  A run ends when the asteroids close in. Your score then goes to a leaderboard,
-  which gives the next attempt a target to beat, whether you flew alone or with
-  a friend on the couch.
+  During a run you pick up shields, rapid fire, and drones to change your
+  loadout as the rocks close in. Ship color palettes can be unlocked. Scores are
+  kept locally, and a top 10 list of world runs is shown on a separate scores
+  page. The menu also has features, briefing, and settings pages.
 play:
   url: https://space-blast.vercel.app
   embeddable: true
   platforms:
     - browser
     - mobile
+  controls:
+    - "2: start two-pilot couch co-op"
 creator:
   name: Emanuellson7
   handle: emanuellson7
@@ -51,7 +54,7 @@ media:
     - games/space-blast/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-09-29
+  updated: 2026-10-02
 status: live
 provenance:
   foundVia: scout:vibejam-2026

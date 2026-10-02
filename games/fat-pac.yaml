@@ -2,26 +2,35 @@ slug: fat-pac
 title: Fat Pac
 tagline: Eat everything in a maze while growing fatter and slower with every bite.
 description: >-
-  Fat Pac is a maze game in the Pac-Man tradition, with one change: eating has a
-  cost. You guide a hungry character through the board and eat everything in
-  sight. Every bite makes it fatter and slower, so a run is a race between
-  hunger on one side and obesity on the other.
+  Every bite fills a fat meter, and when it reaches 100% the board breaks. You
+  steer through a maze eating all the food to clear each stage, while the meter
+  climbs and the character gets slower. Food items add different amounts, from
+  +1% for fries up to +12% for the largest item.
 
 
-  Built with Claude Code, it draws its graphics on an HTML canvas and ranked
-  500th of the 945 entries at Vibe Jam 2026. The result is a chaotic take on a
-  familiar maze chase.
+  Four enemies patrol the maze, each with its own behavior. Treadmill chases you
+  directly, Dumbbell patrols at random, Rope intercepts your path, and Personal,
+  the boss, is described as very aggressive. Touching any of them costs a life.
 
 
-  Your body becomes part of the challenge. As you swell, you get closer to
-  literally breaking the board, which turns the usual pellet-clearing into a
-  balancing act between eating enough to survive and staying small enough to
-  keep moving.
+  A fruit sits in the center of the maze. Eating it lowers your fat level and
+  reverses the enemies, so it works as both a way to slim down and a way to turn
+  the chase around. Hunger is the other way a run ends. The interface is in
+  Portuguese, with a language toggle, music and sound switches, and a settings
+  menu.
+
+
+  The title screen explains the rules before you start. Press Space to begin,
+  and use R to restart a run.
 play:
   url: https://fatpac.vercel.app
   embeddable: true
   platforms:
     - browser
+  controls:
+    - "WASD / arrows: move"
+    - "Space: pause"
+    - "R: restart"
 creator:
   name: AnaRozeno
   handle: anarozeno
@@ -52,7 +61,7 @@ media:
     - games/fat-pac/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-09-29
+  updated: 2026-10-02
 status: live
 provenance:
   foundVia: scout:vibejam-2026

@@ -2,21 +2,20 @@ slug: vibe-miner
 title: Vibe-Miner
 tagline: Dig deeper, fight enemies, and return to the surface to upgrade.
 description: >-
-  Vibe-Miner is a 2D vertical mining game that goes straight down. You dig
-  through the ground, collect resources, and fight the enemies that show up
-  underground, then head back to the surface to spend the haul on upgrades
-  before digging deeper on the next trip.
+  The run starts on the surface at 0 m depth. A pixel-art miner stands on a
+  strip of dirt next to a gap, and a shop building sits at the left edge. The
+  HUD shows a health bar at 100, a fuel bar at 30, a points counter, a money
+  total and a backpack with 0 of 10 slots used.
 
 
-  Its style follows the dig-deep mining games that inspired it, down to
-  Minecraft-like block digging. It was drawn with Three.js and built with
-  Cursor's help, ending up 129th of 945 in Vibe Jam 2026. It is a single-player
-  game, and it runs on phones too.
+  The goal is to dig down through a side-view 2D map, fight the enemies you meet
+  and collect resources. Then you return to the surface to upgrade and head
+  deeper. A depth meter tracks how far down you have gone.
 
 
-  Every trip is about pushing a little further. Better gear lets the miner
-  survive longer and reach greater depths, so one trip feeds the next, and the
-  combat mixed into the digging keeps each descent risky.
+  A six-slot hotbar runs along the bottom of the screen. It holds a pickaxe in
+  slot 1 and a grapple tool in slot 2, and the other four slots start empty. The
+  main menu also has a leaderboards button.
 play:
   url: https://vibe-miner.xyz
   embeddable: true
@@ -50,7 +49,7 @@ media:
     - games/vibe-miner/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-09-29
+  updated: 2026-10-02
 status: live
 provenance:
   foundVia: scout:vibejam-2026

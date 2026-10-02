@@ -3,22 +3,27 @@ title: Duality
 tagline: Guide two linked entities across parallel dimensions to their portals,
   dodging Void Agents
 description: >-
-  Duality gives you two characters to move with one set of inputs. You control
-  two quantum entities at once, each in its own parallel dimension, and every
-  level asks you to bring both to their escape portals while Void Agents hunt
-  them.
+  You steer two glowing orbs at once, a cyan one that is you and a magenta one
+  that is your Echo. The arena is split down the middle, with one side per orb.
+  Each side has its own escape portal at the far end, and the goal is to get
+  both orbs into their portals.
 
 
-  The creator says the idea came from brainstorming with AI, mixing a love of
-  games that split your attention with an interest in quantum physics and
-  parallel dimensions. It came together in Claude Code and Three.js and placed
-  119th of 945 at Vibe Jam 2026.
+  The Echo copies your moves, but not directly. The HUD labels the current rule,
+  such as Mirror X on the first dimension, and later levels twist the mirroring
+  further. Red Void Agents patrol both sides, so each move has to be safe in two
+  places at once.
 
 
-  The hook is the Echo, a mirror of your character that follows your inputs
-  under its own rules, and those rules get more twisted as the levels go on.
-  Each stage plays like a small physics puzzle dressed as survival, where one
-  move changes things in both dimensions.
+  Small crosshair-marked pickups sit around the field, some white and some
+  yellow. A streak multiplier starts at x1, a score and best score sit in the
+  corner, and you have three hearts. A run begins when you first move. Sound can
+  be toggled on screen.
+
+
+  The creator designed each level as a small physics puzzle disguised as a
+  survival game, drawing on an interest in quantum physics and parallel
+  dimensions.
 play:
   url: https://duality-game-vibejam.vercel.app
   embeddable: true
@@ -55,7 +60,7 @@ media:
     - games/duality/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-09-29
+  updated: 2026-10-02
 status: live
 provenance:
   foundVia: scout:vibejam-2026

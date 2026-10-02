@@ -2,26 +2,29 @@ slug: void-wake-signal-reclamation
 title: "Void Wake: Signal Reclamation"
 tagline: Pilot a spaceship through 50 top-down levels of enemies and bosses.
 description: >-
-  Void Wake: Signal Reclamation is a top-down survivor-style space shooter that
-  runs in the browser. You play a pilot sent to find the source of a mysterious
-  broadcast called The Static, accompanied by VESPER, the ship's AI. The
-  campaign spans 50 levels across five sectors, with mini-bosses, main bosses,
-  and a finale, on Normal, Hard, or Nightmare difficulty.
+  A signal called The Static has been broadcasting from deep space, and you
+  pilot a ship sent to trace it, with the ship's AI, VESPER, narrating the trip.
+  It is a top-down shooter where you fight swarms of enemies across fifty levels
+  split into five sectors, each with its own hazards and enemy types.
 
 
-  Beyond the campaign, the game offers many ways to play: Endless Survival, a
-  5-Minute Blitz score attack, Boss Rush, and a Salvage Run where you decide
-  when to extract with your loot. Ghost Duel races a recording of your best run,
-  and Daily and Weekly Challenges use the same seeded run for every player with
-  leaderboards.
+  The campaign runs on Normal, Hard, or Nightmare difficulty and includes
+  mini-bosses, main bosses, and a finale. Salvage earned in the campaign unlocks
+  ship styles, colors, and engine trails, and you can switch between a neon
+  vector look and painted ship art at any time.
 
 
-  Salvage earned in the campaign unlocks ship styles, colors, and engine trails,
-  and you can switch between a neon vector look and painted ship art. A Codex
-  logs every ship, enemy, and boss, and a Hall of Fame tracks best runs.
-  Controller support covers Xbox and PlayStation pads, with remapping and
-  accessibility options. The creator's disclosure says AI assisted with code,
-  graphics, and sound.
+  Besides the campaign, the launch menu offers other modes. Endless Survival
+  keeps the swarm coming with rising difficulty. 5-Minute Blitz is a timed score
+  attack. Boss Rush chains every boss together. Salvage Run Extraction asks you
+  to decide when to leave with your loot while mini-boss signal spikes escalate.
+
+
+  Ghost Duel races a recording of your own best run, and Daily and Weekly
+  Challenges use the same seeded run for everyone. A Codex logs each ship,
+  enemy, and boss you meet, and a free 20-level story addon, Point of Origin, is
+  on the main menu. Play with keyboard and mouse or an Xbox or PlayStation
+  controller, with full remapping.
 play:
   url: https://oddbit-studios.itch.io/void-wake
   embeddable: false
@@ -65,7 +68,7 @@ media:
     - games/void-wake-signal-reclamation/shot-2
 dates:
   added: 2026-09-30
-  updated: 2026-10-01
+  updated: 2026-10-02
 status: live
 provenance:
   foundVia: scout:aibgj-4
