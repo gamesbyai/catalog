@@ -3,42 +3,38 @@ title: NanoBreach
 tagline: Plan and execute tactical hacks in a 3D roguelike where action unfolds
   as you move.
 description: >-
-  You start in stealth mode, with a tutorial where a mentor talks you through
-  the basics.
+  In NanoBreach, a 3D roguelike that blends action and strategy, you plan out
+  tactical hacks while the action unfolds as you move.
 
 
-  The mentor's first line tells you you've got a reputation and you're no
-  rookie, but a little practice never hurts. You press Space to move through the
-  dialogue, and the tutorial runs 25 steps, so it's a proper walkthrough instead
-  of a single tooltip.
+  Josepho calls it a mix of Superhot, Commandos and a hack-style roguelike, and
+  you can spot each piece. The hacking theme comes from that older roguelike,
+  while the careful, squad-style planning comes from Commandos, so positioning
+  and timing get thought through before you commit to a move.
 
 
-  Your hacker is a green capsule on a plain gray floor. The corner panel tracks
-  your health, which starts at 2, and a hack counter that goes up to 5.
+  It opens with a tutorial where you follow a mentor around a plain gray floor
+  as a little green capsule. The mentor's first line admits you've got a
+  reputation and aren't a rookie, then makes you practice anyway.
 
 
-  There's also a shot indicator that shows when you're ready to fire.
+  Your starting kit is slim: two hit points, room for five hacks and a mode that
+  begins on stealth.
 
 
-  Moving, shooting and hacking each get their own key, so you can use all three
-  without a menu. A debug view is on Tab too, which is a handy thing to leave in
-  a jam build.
+  You move with WASD and fire with J. R is your hack key. Space moves the
+  mentor's dialogue along, and a counter at the top keeps track of where you are
+  in the tutorial's steps.
 
 
-  The creator describes it as a mix of Superhot, Commandos and a hacking
-  roguelike. It's inspired by an old roguelike they're a fan of, but it isn't a
-  3D port, and plenty of things were changed.
+  Josepho is a fan of an old roguelike and set out to build a next-gen version
+  of it. They say it isn't a 3D port and that a lot was changed, with the
+  original working as inspiration rather than a blueprint.
 play:
   url: https://nanobreach.questtracers.com
   embeddable: true
   platforms:
     - browser
-  controls:
-    - "WASD: move"
-    - "J: shoot"
-    - "R: hack"
-    - "Tab: debug"
-    - "Space: continue dialogue"
 creator:
   name: Josepho
   handle: josepho

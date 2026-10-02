@@ -3,33 +3,33 @@ title: Credit Quest
 tagline: Collect API credits and finish terminal-themed quests in a
   Zelda-inspired adventure.
 description: >-
-  Credit Quest drops you into a top-down pixel world where you collect API
-  credits to complete tasks and quests. Glitches roam the overworld, so you
-  fight them, and you wake sleeping shrines to restore the route. The whole
-  place is ruled by terminals, which is a funny fit for something that looks
-  like an old Zelda map.
+  Credit Quest has you walking a small pixel-art hero around a top-down
+  overworld of dirt paths, grassy patches, stone walls and wooden signposts.
+  Your first job shows up in a dialogue box at the bottom of the screen, telling
+  you to go talk to PIP just west of the plaza path. Those boxes do a lot of the
+  talking, since they're where the game hands you its instructions.
 
 
-  The title screen gives you a line about carrying the last clean signal home.
+  It calls itself a fantasy-tech action RPG, set in a land where terminals are
+  king, and you collect API Credits to finish tasks and quests.
 
 
-  Your first prompt tells you to talk to PIP, who's west of the plaza path. A
-  small text box at the bottom of the screen keeps the current instruction in
-  view, so you don't have to remember it.
+  Along the way you swing at Glitches with an attack button, wake up shrines
+  that have fallen asleep and work to restore the route. The title screen sums
+  up the goal as carrying the last clean signal home, a surprisingly poetic line
+  for a game whose currency is API Credits.
 
 
-  Hearts sit in the top corner, with a Vibe counter in the middle and a credits
-  count on the right. That puts your health and your haul in one glance, which
-  matters when credits are what the quests run on.
+  A row of hearts across the top tracks your health. Beside it sit an oddly
+  named Vibe counter and a Credits counter that starts at zero. You can open a
+  field guide and a help screen in the middle of play, and the sound can be
+  muted.
 
 
-  The creator grew up loving Zelda and wanted an adventure with an API and vibe
-  flavor.
+  It's built for desktop browsers. You click the game window to give it focus.
 
 
-  You'll cross dirt paths, grass patches, stone walls and wooden signposts, all
-  drawn in chunky pixels. Small terminal-like machines stand around the plaza
-  too.
+  packetloss cited Zelda as the inspiration behind Credit Quest.
 play:
   url: https://creditquest.packetloss404.com
   embeddable: true

@@ -2,39 +2,40 @@ slug: napless
 title: Napless
 tagline: Brawl as a toddler and race to grab the TV remote before nap time.
 description: >-
-  You're a toddler in a giant living room, running around in first person and
-  bonking rival toddlers with whatever you can throw. Your weapons are a
-  plushie, a block shotgun and a diaper bomb, and you switch between them with
-  the number keys.
+  You're a toddler loose in a giant living room, and you've got 90 seconds to
+  get your hands on the TV remote and hold it before nap time wins.
 
 
-  Each round is a 90-second sprint. You grab cookies and snacks, hit other
-  players to fill a Chaos meter, and keep an eye on your health, which starts at
-  100.
+  To get there you grab cookies, bonk the rival toddlers and fill a Chaos meter
+  shown as a percentage, and once it hits 100% you can climb the TV toys up to
+  the remote. The game's own tip tells you to spend the opening seconds on
+  snacks and easy bonks, which is about as honest as toddler planning gets.
 
 
-  Once Chaos hits 100%, you climb the TV toys and hold the remote before nap
-  time wins. That's the whole goal, and it's a funny one for a shooter, because
-  the prize is a TV remote.
+  Toys double as your weapons, and there are three of them to swap between. A
+  plushie gets thrown for a soft, squeaky knockback, while the Block Shotgun is
+  a chunky blast for close range. The Diaper Bomb, oddly enough, runs on your
+  Diaper meter, so it only works when that meter's full and resets it after
+  letting out a stink cloud.
 
 
-  The plushie is a soft toss with squeaky knockback, and the block shotgun is a
-  close-range chunky blast with its own ammo count. The diaper bomb only works
-  when your Diaper meter is completely full, and it leaves a stink cloud behind,
-  which is a pretty gross way to settle an argument.
+  Alongside Chaos and Diaper, the screen tracks your snacks, the clock and your
+  health, and events like Roomba Rampage can pop up, where the robot vacuum,
+  billed as a tiny tank, doubles its speed for 8 seconds.
 
 
-  Random events shake things up too. One screen announces a Roomba rampage that
-  doubles the tiny tank's speed for 8 seconds.
+  The room is a whole 3D space you look around with the mouse while WASD moves
+  you. Click once to lock your aim, and from there it's bonking anything in
+  reach. Before a round you can pick a player name, type an optional private
+  room code and copy an invite to send to friends.
 
 
-  Before you jump in, you can type a player name, or enter a private room code
-  and copy an invite to play with friends. There's also a leaderboard of fastest
-  runs, all time or today, and finishing runs earns you badges and a toddler
-  title.
+  Finishing runs earns you badges and a toddler title. A public leaderboard
+  ranks the fastest completion times, with one tab for all time and one for
+  today.
 
 
-  The creator has a toddler at home and built the game from real life.
+  valeriogioia has a toddler at home and built the game from real life.
 play:
   url: https://playnapless.com
   embeddable: true

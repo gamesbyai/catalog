@@ -2,32 +2,34 @@ slug: splashpop-arena
 title: SplashPop Arena
 tagline: Shoot paint at bots or up to 8 friends and score points before time runs out.
 description: >-
-  In SplashPop Arena you shoot paint at your opponents, and every hit that lands
-  scores you points. You're racing the clock the whole time, so the match is a
-  points race rather than a last-one-standing fight.
+  In SplashPop Arena you shoot paint at your opponents, and every hit puts
+  points on your score while a match clock runs down. You can take on bots, or
+  bring up to 8 friends into the same match. It's paint instead of bullets,
+  which suits the candy look of the place.
 
 
-  Before a match you pick how long it runs: one, five or ten minutes.
+  Everything starts on a menu where you type a nickname and choose a match
+  length of 1, 5 or 10 minutes, with 5 already picked for you.
 
 
-  You can jump into a solo run against a bot, which is handy if nobody's around.
-  Or you can open a room, which gives you a code to share, and start once your
-  crew shows up.
+  Solo drops you into a run against the bot. Room opens a live room with a code
+  you can share, and the match starts once your group has joined.
 
 
-  Rooms hold up to 8 friends. There's also a find-players button if you'd rather
-  get matched than hand out codes, and a leaderboard for the results.
+  There's also a button for finding players and another for the leaderboard. A
+  privacy note asks you to go by a nickname rather than your real name, since
+  your name and match stats can show up on the public leaderboard. Putting that
+  warning right under the name box is a thoughtful touch.
 
 
-  The creator took inspiration from CS:GO, specifically its tense duels,
-  aim-focused gunplay and round-based competitive energy. It's a funny contrast
-  with the look, since the menu is all dripping candy-colored lettering and a
-  cartoon scoop of ice cream peeking over the panel.
+  The menu art looks like a pretty elaborate dessert, with dripping neon letters
+  over a soft cartoon landscape and a grinning character smothered in pastel
+  icing.
 
 
-  You enter a nickname before playing, and the game asks you not to use your
-  real name because your chosen name and match stats can show up on the public
-  leaderboard.
+  For a game covered in frosting, the inspiration comes as a bit of a surprise.
+  heyitsshantanu drew on CS:GO's tense duels, aim-focused gunplay and
+  round-based competition.
 play:
   url: https://splashpoparena.com
   embeddable: true

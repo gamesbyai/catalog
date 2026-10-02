@@ -2,37 +2,38 @@ slug: starfall
 title: Starfall
 tagline: Pilot a spaceship in a duel to the death against one opposing ship
 description: >-
-  Starfall Melee has you flying one ship against another around a glowing sun,
-  and the only goal is to destroy the other one. You turn, thrust and brake,
-  with one key for your main weapon and another for the secondary. It's an
-  homage to the Melee mode in Star Control 2, so the duel is the whole show,
-  apart from a few asteroids drifting through.
+  In Starfall Melee, you and one opponent each fly a spaceship around a sun
+  parked in the middle of a single screen, and the fight lasts until one crew is
+  wiped out. You thrust, turn and brake, with a primary and a secondary weapon
+  to throw at the other ship. Asteroids drift through the arena as well,
+  cluttering the space around the sun.
 
 
-  You get sixteen ships to pick from, which is pretty generous for a fight on
-  one screen.
+  It's an homage to the Melee mode of Star Control 2, and the title screen sums
+  the whole thing up as two ships, one screen, no escape.
 
 
-  Each one comes with its own pilot portrait, crew count and pair of weapons.
-  The Asterion Patrol starts with 30 crew, ion bolts and a seeker missile, while
-  the Terran Vanguard has 38 crew, a missile and a point defense weapon.
+  Before each round you pick from a roster of about sixteen races, among them
+  Asterion Patrol, Terran Vanguard, Helix Nomad and Hive Carrier, or take the
+  question mark for a random one. Every ship has its own crew count, battery
+  meter and weapon pair, so Asterion Patrol starts with 30 crew, Ion Bolts and a
+  Seeker Missile while Terran Vanguard brings 38 crew and a Vanguard Missile.
 
 
-  Crew and battery meters sit beside each portrait, and every weapon gets its
-  own bar underneath, so you can see what your opponent has left to throw at
-  you. Tick the AI box and the computer flies the second ship. Clear it and a
-  friend can share your keyboard, which works because both sets of keys are
-  printed right under the arena.
+  If nobody's around to play against, a checkbox hands the second ship to an AI,
+  which even chooses its own next ship. Leave it off and two people share one
+  keyboard, with Player 1 on WASD and Player 2 on the arrow keys. Each player
+  flips through the races with their own pair of keys.
 
 
-  If you can't decide on a ship, there's a random pick on the select screen that
-  chooses for you.
+  Matches run in rounds with a running score, and every new round asks you for a
+  ship you haven't flown yet, which keeps you moving through the roster instead
+  of sticking with one favorite.
 
 
-  The match is scored in rounds, with a running tally up in the header. When a
-  ship goes down you choose one you haven't used yet for the next melee.
-  @kashprime made it, and Codex's built-in image generation produced the ship
-  art, which saved a ton of time.
+  kashprime made the ship portraits and artwork with Codex's built-in image
+  generation. According to kashprime, generating them that way saved a lot of
+  time.
 play:
   url: https://sfmelee.pages.dev
   embeddable: true

@@ -2,37 +2,35 @@ slug: agi-of-mythology
 title: AGI of Mythology
 tagline: Command a research lab in a real-time fight over a central server.
 description: >-
-  You start with one Town Center on a wide, tree-covered map, and the whole
-  match is a fight over a single spot, the central server. You play a research
-  lab racing to reach AGI, so holding that server is what you're after.
+  Every research lab on the map wants the same central server, and whoever holds
+  it reaches AGI. Casting rival AI labs as the armies of a real-time strategy
+  game is a pretty funny premise.
 
 
-  Your stock has three resources: bio, materials and GPU. You begin with 500,
-  300 and 200, and the Town Center turns them into agents. The price sits right
-  on the agent button in the bottom panel, which saves you a trip to any menu.
+  You start out with a Town Center, two idle workers and a stock of 500 Bio, 300
+  Mat and 200 GPU. The Town Center is where your agents come from. Making
+  graphics cards one of the three resources fits the theme nicely.
 
 
-  A short first mission walks you through the order: build, gather, train, then
-  take the central server. There's a Show me button if you want the walkthrough
-  and a Skip button if you'd rather work it out yourself.
+  A first-mission card lays out the plan in four steps (build, gather, train,
+  then take the central server), and it gives you a "Show me" button alongside a
+  "Skip" button.
 
 
-  The central server gets its own panel in the top corner. It lists players in
-  ranked order with a clock beside each name and tells you whether the server is
-  contested, so you can read the standoff at a glance. It's a neat way to turn
-  one map spot into a scoreboard.
+  A panel in the top right keeps score of the fight by showing whether the
+  server is contested and listing every player with a timer. The first player's
+  timer starts at 5:00.
 
 
-  Matches are multiplayer, and while you're alone the panel just says it's
-  waiting for other players. A chat window lets you talk to whoever joins.
+  The battlefield is a 3D landscape of forests and pale mountains, seen from an
+  angled camera overhead.
 
 
-  The creator wanted a real-time strategy game you could play quickly with
-  friends in a browser.
-
-
-  Down in the bottom bar there's a counter of idle units, so you can spot anyone
-  standing around, plus a Clear button that drops your current selection.
+  When you select a unit or building, its orders show up in a command bar along
+  the bottom, which also has a button for clearing your selection. There's a
+  chat panel too, so you can message the other players in your match. TTrussner
+  wanted a real-time strategy game you can start quickly with friends in the
+  browser.
 play:
   url: https://trussner.com/agi
   embeddable: true

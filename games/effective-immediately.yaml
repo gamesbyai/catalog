@@ -2,31 +2,31 @@ slug: effective-immediately
 title: Effective Immediately
 tagline: Shoot your way out of a collapsing office nightmare as a burned-out worker.
 description: >-
-  You're a burned-out office worker walking a plain teal corridor in first
-  person, and the only thing in your hand is a stapler that's been turned into a
-  gun.
+  You're a burned-out office worker with a stapler for a gun, and you have to
+  fight your way out of a workplace that's falling apart before the company
+  swallows you whole.
 
 
-  The objective on screen tells you to find a way out, because the workplace is
-  collapsing into a corporate nightmare that's trying to consume you before you
-  escape. Your health starts at 100 and the stapler gun is loaded with 30
-  rounds, both shown in the corners of the screen. The hand holding it is inked
-  in black and white, so it looks like it was cut out of a comic page.
+  It all starts in first person, in a narrow teal corridor, with 30 staples
+  loaded and 100 health. A panel in the top corner gives you a single objective,
+  find a way out. Scrawled on the far wall is something that appears to read "No
+  escape," a pretty rude welcome from your own office.
 
 
-  The characters you fight are 2D animated figures, while the office props
-  around them are 3D and can be broken. That's an odd pairing, but it suits the
-  comic-book horror look the creator was going for.
+  The things standing in your way are 2D animated characters dropped into 3D
+  office spaces. The office itself takes a bit of a beating too, with desks,
+  furniture and other props all open to smashing.
 
 
-  Shooting your way out of an office with stationery is a pretty funny kind of
-  revenge.
+  Your stapler gun is inked by hand in black and white, a surprisingly detailed
+  drawing that sits against flat teal walls traced with orange edges for a
+  comic-book horror look.
 
 
-  The creator wanted something fast, violent and surreal about losing your mind
-  inside a controlling workplace. They also wanted the feel of an old-school
-  browser shooter, which explains the straight-ahead first-person setup and the
-  ammo counter in the corner.
+  Lucas Teixeira set out to make a quick, violent and surreal shooter about
+  losing your mind inside a controlling workplace. Turning office supplies into
+  ammo fits that brief neatly, and they pointed to older browser FPS games as
+  the energy they were after.
 play:
   url: https://vibejam2026.vercel.app
   embeddable: true

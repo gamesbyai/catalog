@@ -2,37 +2,33 @@ slug: arcade-gaming
 title: Arcade Gaming
 tagline: Pick from a browser arcade for quick, casual play breaks
 description: >-
-  Arcade Gaming has you walk around a 3D arcade floor and step up to cabinets,
-  each one holding a tiny browser game. You wander until one catches your eye,
-  then you walk up and drop straight into it.
+  In Arcade Gaming, you walk around a 3D arcade floor and step up to cabinets,
+  and each one holds its own small browser game.
 
 
-  If you'd rather not hunt around, there's a Games button that lets you browse
-  every game in one place, so you don't have to find the right machine on foot.
+  When you reach a cabinet and press E or Enter, you drop straight into its
+  game. If you'd rather not stroll over to every machine, there's a Games button
+  that pulls up the full list. Clicking a cabinet starts it instantly, and
+  clicking an empty patch of floor sends your character walking there on its
+  own.
 
 
-  You don't need to sign up to play, and that's pretty handy because you can
-  start right away.
+  Every score you post lands on a global leaderboard. You can start playing
+  without signing up, but signing in is how you claim your spot on that board.
 
 
-  Every score you post goes to a global leaderboard, though, and signing in is
-  how you claim your spot there. So you can jump in first and still end up with
-  a name on the board.
+  The floor holds more than cabinets, with a wardrobe for changing your look and
+  a token machine that, in true arcade fashion, pays out tickets you can spend
+  on jukebox tracks and race avatars.
 
 
-  The mouse works as well as the keyboard. Click the floor and your character
-  auto-walks there, and clicking a cabinet starts its game right away. Dragging
-  with the mouse lets you look around, which matters because the place is a full
-  3D space.
+  Tokens show up before you've even touched a cabinet. New players get a welcome
+  bonus of 50, and anyone who comes back gets 20 more each day. It's a generous
+  touch for something parth_kadakia pitches as a go-to arcade for quick breaks.
 
 
-  There's a little economy on the side. A wardrobe changes how your character
-  looks, and a token machine earns you tickets for jukebox tracks and race
-  avatars.
-
-
-  You also get a welcome bonus of 50 tokens, plus 20 more each day you come
-  back, which gives the token machine something to work with from the start.
+  Up top, the lobby runs a live count of who's in the plaza. Next to it sits a
+  running total of games played across the arcade.
 play:
   url: https://arcadegaming.app
   embeddable: true

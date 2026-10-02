@@ -3,28 +3,35 @@ title: SkyRescue
 tagline: Pilot a rescue helicopter to pull trapped survivors out of disasters
   before time runs out
 description: >-
-  You fly a rescue helicopter out to a disaster and pick up the people stranded
-  there before the countdown hits zero. The settings run from a blazing tower to
-  a mountain cliff face, a flooded suburb, a wrecked highway and an arctic
-  blizzard. So you're not circling the same city block every time.
+  Take a rescue chopper into a disaster zone and get the trapped people out
+  before the clock runs down. Each mission comes down to how carefully you can
+  fly against how much time you've got left. In the city level you start on a
+  glowing yellow helipad on a rooftop, with a green beam of light shooting up
+  into the sky beside you.
 
 
-  Up top you've got a counter for survivors saved out of five and a timer
-  ticking down. A bar in the corner tracks how much damage the helicopter can
-  still take.
+  The setting changes from level to level, taking you from towers on fire to the
+  edges of mountain cliffs, then suburbs under floodwater, a highway full of
+  crashed cars and a blizzard in the arctic. Every place asks you to reach the
+  survivors in its own way, so the flying doesn't settle into one routine.
 
 
-  There are only three seats onboard, which is a pretty tight number.
+  Five different kinds of disaster make for a pretty busy shift in one small
+  chopper.
 
 
-  Because of that limit and the timer, you have to decide how many people to
-  carry on each trip. A small radar map sits in the corner and shows what's
-  nearby, so you can pick where to head next.
+  The screen packs a surprisingly full dashboard around the action. A counter in
+  the top left tracks rescued survivors out of five, while the middle shows the
+  seconds remaining, a little over two minutes in the night city. Over on the
+  right there's an integrity bar for the helicopter and an onboard row with
+  three empty boxes, and a small radar map sits in the bottom corner.
 
 
-  You begin on a helipad marked with a glowing yellow H, with a green beam
-  shooting up from it. Around you is a night city with lit windows in the towers
-  and a red glow on the burning ones, which makes the beam easy to spot.
+  That city is a skyline of blocky towers full of warm yellow windows at dusk,
+  though a few windows on one building glow an ominous red instead.
+
+
+  marscole76 made it out of a plain fondness for helicopter rescue games.
 play:
   url: https://skyrescue.vercel.app
   embeddable: true

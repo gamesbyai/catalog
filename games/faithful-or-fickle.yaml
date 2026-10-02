@@ -3,41 +3,45 @@ title: Faithful Or Fickle
 tagline: Play a black cat familiar who secretly steers a manor's fate across
   several eras
 description: >-
-  Faithful Or Fickle has you playing a black cat who serves as the familiar of a
-  manor's lord or lady, running and clawing through a side-scrolling castle. You
-  can help the household or quietly sabotage it, and you're free to switch sides
-  as often as you like with the B key.
+  Faithful Or Fickle puts you in the paws of a black-cat familiar serving a
+  manor's lord or lady, in a pixel-art platformer spanning eras from the 1400s
+  to the early 1900s. Each era has its own map, and you cross it toward the far
+  right, where the ruler fights a big battle. Whether they win or lose depends
+  on the state of the estate, and that state is what you get to meddle with.
 
 
-  The ruler is a bit inept, so when you let infiltrators in, the manor slowly
-  runs down. They sense something's off but can't tell why, and they burn their
-  own energy trying to fix it, while your service record still looks great.
+  Your master grabs you for short stretches of familiar duties quite often, but
+  you're free to roam the rest of the time. Press B where spies show up to take
+  their bribe and switch sides, let infiltrators into the house, or re-swear
+  your loyalty and recruit allies instead.
 
 
-  Spies who try to bribe you are your way to the dark side, and swearing your
-  loyalty again is how you come back to the good one.
+  You can flip sides as often as you like, and the somewhat inept ruler never
+  really works out who's behind the decline, so they could lose the battle oddly
+  convinced you're a lovely little companion.
 
 
-  Each era ends with a battle at the far right of the map, and the shape your
-  estate is in decides whether the ruler wins. Before the fight can start you
-  have to find two of the house-needs items, so the screen keeps a counter for
-  them. After the battle you move on to the next era, somewhere between the
-  1400s and the early 1900s.
+  The battle won't start until you've tracked down two house-needs items. The
+  core route keeps you in the middle band with the ground, the road and the
+  manor, where most of the powerups sit clumped together. You can also climb to
+  the heights or drop into the deeps to fight large beasts such as dragons.
 
 
-  You get nine lives and no extra-life pickups, because there are already so
-  many ways to build up offensive power.
+  There are no extra-life pickups. You have nine lives, and when they're gone,
+  the run is over.
 
 
-  You can keep to the middle strip where the ground, the road and the manor
-  house sit, which plays a lot like Rastan and holds most of the powerups. Or
-  you can head far up into the heights or deep below to fight bigger beasts like
-  dragons. The creator admits the deeps feel pretty empty, which is an honest
-  thing to say upfront.
+  X is the claw swipe, and holding an arrow key aims it. Swipe upward in midair
+  and you can sort of hold off gravity, which is a pretty cat-like way to haul
+  yourself slowly back toward the surface.
 
 
-  Your lord or lady will also grab you mentally and order you around on witchy
-  chores for short stretches, but the rest of the time is yours.
+  Frame-skip settings let faster machines show more detail, though the creator
+  admits the deeps still feel quite empty.
+
+
+  According to the creator, AI assisted with the code, graphics, sounds and
+  text.
 play:
   url: https://exedexes1.itch.io/faithful-or-fickle
   embeddable: false

@@ -2,31 +2,31 @@ slug: ink-side-down
 title: Ink Side Down
 tagline: Roll a cube across a grid so its inked face stamps only the marked squares.
 description: >-
-  In Ink Side Down you roll a cube around a grid, and the face with ink on it
-  prints onto whichever square it lands on.
+  In Ink Side Down you roll a cube with one inked face across a grid, and
+  whenever that face meets a tile, it stamps a print there.
 
 
-  The goal is to leave prints only on the marked squares. So you're always
-  thinking a few rolls ahead, because the face that ends up underneath depends
-  on every turn before it. It's a small rule that makes the cube's orientation
-  the whole puzzle.
+  Some of the squares are marked, and you want prints on those squares and
+  nowhere else. Every roll tips the cube over, so the inked side keeps wandering
+  off to a new spot, a tricky detail when only some squares should get ink. Each
+  move decides both where you stand and which face lands next.
 
 
-  Each day brings three new puzzles, labeled Easy, Medium and Hard. Every one
-  shows a par number before you start, and those numbers change from day to day.
+  It's a daily logic puzzle with a short rhythm you can repeat, and the grid is
+  fresh each day. You actually get a whole set of three new puzzles daily,
+  sorted into Easy, Medium and Hard, and each one has its own par to aim for.
 
 
-  If you'd like the rules first, there's a how to play button on the start
-  screen.
+  Thankfully a single press of U undoes a roll, while < and > flip between days.
 
 
-  You roll the cube with WASD or the arrow keys, and U takes back a roll when
-  you've turned it the wrong way. The < and > buttons step between days, so
-  earlier puzzles stay within reach.
+  You steer the cube with WASD or the arrow keys. It also takes touch and mouse
+  input. There's a How to play screen on the menu for the rules, plus a sound
+  toggle in the corner.
 
 
-  An autonomous AI agent designed and coded the whole game from start to finish,
-  which is a funny job for something that never has to roll the cube itself.
+  According to the creator, an autonomous AI agent designed and coded the whole
+  game end to end using Claude Code.
 play:
   url: https://arkai.win/games/ink-side-down
   embeddable: false
@@ -35,7 +35,6 @@ play:
   controls:
     - "WASD / arrows: roll the cube"
     - "U: undo"
-    - "< >: change day"
 creator:
   name: Arkai
   handle: arkai

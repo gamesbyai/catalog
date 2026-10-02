@@ -2,32 +2,39 @@ slug: metrocalypse
 title: Metrocalypse
 tagline: Shoot zombies and run across rooftops in a shared, persistent city.
 description: >-
-  Metrocalypse has you shooting zombies and running across the rooftops of a
-  brick-built city, and the creator says they love Dying Light. You've got a gun
-  on left click, a knife on V and a grenade on E. The mouse wheel swaps weapons,
-  and F or right click throws a stone.
+  Metrocalypse drops you into a first-person view high over a packed city of
+  brick rooftops, where you gun down zombies and race from building to building.
+  Down in the streets, a surprisingly big crowd of small figures fills the gaps
+  between the blocks. The whole place is one map, 952 meters across, generated
+  from a fixed seed.
 
 
-  The whole city is one map about 952 meters across, so there's a lot of rooftop
-  to cover. Shift sprints, space jumps and ctrl crouches, while P switches you
-  to a tactical view.
+  Click the start panel to get in, then steer with the mouse and WASD. Space
+  jumps the gaps and holding shift sprints, which fits a game Tim_Damasc pitches
+  as zombie shooting with parkour.
 
 
-  It's a multiplayer game, and the world is persistent, so the city keeps going
-  between visits.
+  Left click fires your gun, V pulls out a knife and E throws a grenade, while
+  the mouse wheel flips between them for a pretty full kit to carry across
+  rooftops.
 
 
-  The creator had wanted to build something multiplayer on SpacetimeDB for a
-  while, and this is the game that came out of it. Along the bottom of the
-  screen you get a green health bar, a level counter that starts at 0 and an
-  experience bar.
+  There's also a plain stone you can throw with F or right click, a nicely
+  low-tech option sitting next to the grenades. Ctrl crouches. P flips you over
+  to a tactical map view, a sensible extra for a city nearly a kilometer across.
 
 
-  Before you play, the game loads a 16 MB pre-baked navigation file.
+  The city sticks around between visits and it's multiplayer, so you're sharing
+  those rooftops with other players.
 
 
-  Once that's done you click the screen to step in, and little figures are
-  already scattered through the streets below the rooftops.
+  Along the bottom of your screen sit a health bar, an experience bar and a
+  level number that begins at 0. A small status word down there reads "quiet"
+  until the fighting kicks off, an oddly calm label for a zombie apocalypse.
+
+
+  Tim_Damasc had been hoping to build a multiplayer game on SpacetimeDB for some
+  time, and they point to Dying Light as the inspiration.
 play:
   url: https://metrocalypse.online
   embeddable: true

@@ -2,35 +2,40 @@ slug: rift-survivors
 title: Rift Survivors
 tagline: Fight through 100 neon floors with combos, parries, and stamina management.
 description: >-
-  You start in a neon lobby with a magenta grid floor, cyan walls and a small
-  blocky fighter standing in the middle. A prompt at the top tells you to walk
-  into the purple portal marked MISSION to descend, and skill buttons F, X and H
-  sit along the bottom.
+  When it loads, you're looking at a neon lobby with a magenta grid floor and a
+  cyan border, plus a blocky little hero standing in the middle and a prompt to
+  press any key or tap to start. Up top, a hint tells you to step into the
+  purple portal labeled MISSION if you want to head down.
 
 
-  It's a hack-and-slash roguelike with a Demon's Souls flavor, so combos,
-  parries and stamina all matter.
+  Skill slots marked F, X and H line the bottom of the screen, and oddly enough
+  the inventory panel in the corner already holds 10 arrows before you've swung
+  at anything.
 
 
-  The run is a 100-floor cycle. Three types of boss wait along the way, each
-  with five or six attack patterns, so you have to learn what's coming instead
-  of just swinging.
+  Once you're down there, it's hack-and-slash combat with handling modeled on
+  Demon's Souls. You attack, guard, parry and dodge while keeping an eye on a
+  stamina meter, and you can link your skills together into chains.
 
 
-  Gear comes in rarities from Common up to Legendary, the way it does in an MMO.
-  You can chain skills together as well. The corner of the screen shows an
-  inventory count and a storage count, with a stack of ten arrows already
-  listed.
+  The dungeon is laid out as a whole cycle of 100 floors. Three kinds of boss
+  wait for you along the way. Each of them has plenty of variety, working
+  through five or six different attack patterns.
 
 
-  Guard and parry share the V key, while Shift is your dodge, which makes sense
-  for a game built around stamina.
+  The interface switches itself between Japanese and English without you
+  touching a setting.
 
 
-  The creator's first job was at a small game company making games for feature
-  phones, and this one works under the same 1MB limit, which brought back
-  nostalgic memories. That's a lot of roguelike to squeeze into so little space.
-  The text switches between Japanese and English on its own.
+  Gear borrows its rarity ladder from MMOs, running from Common all the way up
+  to Legendary. There's also an equipment screen where you sort out what you're
+  wearing.
+
+
+  otani_ai_memo once made games for feature phones, where each one had to stay
+  under 1MB. They kept this game to a similar size limit. According to
+  otani_ai_memo, working under that constraint again brought back nostalgic
+  memories.
 play:
   url: https://rift-survivors.pages.dev
   embeddable: true

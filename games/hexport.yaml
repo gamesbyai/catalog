@@ -2,31 +2,38 @@ slug: hexport
 title: Hexport
 tagline: Teleport across the arena, slash enemies, and buy upgrades between runs.
 description: >-
-  You steer a blade through a neon arena by moving the cursor, because wherever
-  the cursor sits is where you'll teleport next.
+  A hexagon with a sword gets dropped into a neon arena, and the job is to
+  outlast waves of enemies for as long as you can.
 
 
-  The warp fires by itself once every second, so all you decide is where to
-  leave the crosshair. Each warp also spins your sword a full 360 degrees, and
-  that spin is what slashes things around you.
+  Instead of steering, you point, and the cursor marks the spot you'll teleport
+  to next. Once every second the hexagon warps there on its own, and each jump
+  ends in a full 360-degree sword spin, which makes for a clever setup where
+  moving and attacking end up being the same move.
 
 
-  Enemies come at you in waves, and there are two kinds. Triangles chase you and
-  die in one hit, and each one you kill gives you 1 HP back. Pentagons shoot
-  bullets, but a slash destroys those too.
+  Two kinds of enemies come at you. Triangles chase you down and fall to a
+  single hit, and every kill hands you back 1 HP — a pretty tidy way to turn the
+  weakest enemy into a snack. Pentagons shoot bullets instead, but a slash
+  destroys them.
 
 
-  Powerups work the same way, so you just slash them to pick them up.
+  Powerups drop into the arena as well, and it's a bit fitting that you collect
+  them by slashing them too.
 
 
-  Warp+, Slash+ and Range+ are tagged as permanent on the start screen, while
-  Dual Blade, Immunity and a +20 HP heal carry no such tag. It's a neat fit that
-  the same spin that clears enemies also collects the upgrades. The creator
-  describes it as a teleport and slash game with incremental upgrades.
+  The start screen lists Warp+, Slash+ and Range+, each marked as permanent,
+  which lines up with Damarhabibie calling this a teleport-and-slash game with
+  incremental upgrades. Dual Blade, Immunity and HP +20 sit right alongside
+  them.
 
 
-  Before you begin, you can type a callsign or roll a random one with the dice
-  button, and then you survive as long as you can.
+  Before a run you can type in your own callsign or roll a random one with the
+  dice button. A separate button on the same screen leads off to a portal.
+
+
+  Once you're playing, a crosshair takes over from the normal cursor, while the
+  regular pointer stays visible in the menus.
 play:
   url: https://darsaverse.github.io/HexportGame
   embeddable: true

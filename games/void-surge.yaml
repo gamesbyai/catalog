@@ -3,46 +3,38 @@ title: Void Surge
 tagline: Steer a ship while its weapons fire on their own, then extract before
   four bosses arrive.
 description: >-
-  You only steer. The weapons fire on their own, so your whole job is to keep
-  moving through a swarm on Station Helix-9 while you wait for the last shuttle
-  to warm up.
+  You're the lone survivor holding the extract pad on Station Helix-9, and all
+  you ever do is steer, because every weapon you carry aims and fires by itself.
 
 
-  You need to last ten minutes. Intensity climbs every minute, and in the final
-  minute the spawn rate doubles every ten seconds, which is a rude way to say
-  goodbye.
+  A run lasts ten minutes, with intensity climbing one step each minute from 1
+  up to 10. In the final 60 seconds, enemies start showing up twice as fast with
+  each ten-second stretch, so the swarm gets a lot thicker right before the
+  shuttle leaves.
 
 
-  Kills drop XP gems, and every level-up freezes the clock and hands you three
-  cards to choose from. You can carry one core, three weapons and three passive
-  mods, each ranked up to Mk 5, so upgrading something you already own usually
-  beats grabbing a fourth weapon you've got no slot for.
+  Every kill leaves an XP gem, and each new level stops the timer while you pick
+  one of three cards. The Light Saber is always your core weapon, with room for
+  three arms and three mods, and every piece ranks up to Mk 5. The arms run
+  surprisingly wide, covering a plasma shotgun, laser beam, fire trail, orbiting
+  orbs, drone, sentry turret, Tesla coil, radiation cloud, orbital strike and
+  cryo grenade.
 
 
-  You always begin with a Light Saber that swings itself at anything in reach.
+  A boss shows up at the 2:00, 4:00, 6:00 and 8:00 marks, and since none of them
+  leaves when the next one arrives, falling behind on a kill means fighting
+  several of them together.
 
 
-  The weapon pool is bigger than you'd guess: a plasma shotgun, a laser that
-  pierces the swarm, a Tesla coil whose lightning hops between clustered
-  enemies, orbiting energy spheres and cryo grenades that slow whatever they
-  hit. One mod, Bait Signal, deliberately spawns more enemies, which makes sense
-  because more targets means more XP.
+  Each dead boss drops a gold pickup that drags all the gems across the map
+  straight to you, which is a generous reward for the trouble. Medkits patch
+  your hull back up by 28, and it starts at 100. Score comes from kills alone,
+  with each one worth 8 points at intensity 1 but 140 by intensity 10.
 
 
-  A titan lands at 2:00, 4:00, 6:00 and 8:00, and none of them leave when the
-  next one arrives. Fall behind and you're fighting two, three, then four at
-  once. Killing one drops a gold pickup that pulls every gem on the map toward
-  you.
-
-
-  Score counts kills only, and a kill is worth 8 at the start but 140 by the top
-  intensity. So surviving longer pays better than farming early, which fits a
-  game about getting out.
-
-
-  Scores stay in your browser, and a run that reaches 10:00 is marked as an
-  extraction. On the title screen you can type a callsign and open a field
-  manual that lists the gear and bosses.
+  Survive to 10:00 and the run is marked as extracted on a scoreboard saved in
+  your browser, under a callsign of up to 14 characters that you type on the
+  title screen.
 play:
   url: https://void-surge-survivor.grok.me
   embeddable: true

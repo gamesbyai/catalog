@@ -3,35 +3,50 @@ title: TECHNICAL DEBT
 tagline: Juggle groceries, debt, and clutter for a family chasing a vacation,
   then restart.
 description: >-
-  You're trying to reach 100,000 PALM Points, and once you do, you find out who
-  actually makes the trip to the beach and whether anyone comes back.
+  The goal is to rack up 100,000 PALM Points before the family's debt closes in,
+  and reaching that number reveals who actually gets to go on the trip — and
+  whether anyone comes back.
 
 
-  You earn those points by charging what the household needs, groceries
-  included, while you keep your promises to Deborah and DJ. Your old employer
-  automated your job with work you helped train it to do, so the family leans on
-  credit.
+  You're a parent whose employer, in a pretty bitter twist, automated your job
+  away using work you helped train it to do. Unemployment won't cover the
+  household, but Vantage One is happy to step in, and every household need you
+  put on credit earns points toward a beach vacation package.
 
 
-  Shopping is a choice between paying more for reliable goods and grabbing
-  discount ones that might arrive late, or might only technically be goods,
-  which is a grim joke about cheap delivery. Whatever you buy piles up at home.
-  So you sell the extras through Baylist before the boxes fill every room.
+  Each purchase comes down to paying more for goods that show up reliably or
+  saving money on discount stuff that might arrive late, or might only barely
+  count as goods at all. Orders pile up around the house as boxes, so you'll be
+  reselling what you don't need on Baylist before storage runs out. Meanwhile
+  you're keeping an eye on cash, credit, storage and how things stand with
+  Deborah and DJ, all while a vacation obsession grows more persuasive.
 
 
-  Cash, credit, storage, family relationships and a vacation obsession that gets
-  more persuasive all need balancing at once.
+  Going broke is part of the loop too, and declaring bankruptcy means carrying
+  permanent lessons over and starting again knowing more about how the system
+  works.
 
 
-  When the debt closes in, you declare bankruptcy, keep some permanent lessons,
-  and start over knowing the system better. The first bankruptcy is designed to
-  happen, because it reveals how progression works instead of punishing you.
-  That's a kind choice for a game about money trouble.
+  According to the creator, the first bankruptcy is meant to happen, and it's
+  there to show you how progression works. Hearing that up front softens things
+  a little in a game this bleak about money.
 
 
-  It's a dark comedy dressed as a cheerful old family computer, with tabs for
-  MailBox, BUYMORE, Haulu, Baylist, Vantage One and Lessons, and blinking red
-  badges when something needs you.
+  Everything plays out on a cheerful imitation of an old family computer, with a
+  CRT filter, 1-bit art and dark comedy running through all of it. You click or
+  tap between tabs for MailBox, BUYMORE, Haulu, Baylist, Vantage One and
+  Lessons. Red badges blink whenever mail is unread or an action is waiting on
+  you.
+
+
+  For some reason the music comes from DEBTAMP, a jukebox that lives in its own
+  window you can drag around the screen. The menu bar handles music, sound
+  effects, CRT strength and reduced motion, and it also offers a full reset.
+
+
+  OblongOolong directed the design, did the editing and made the final calls,
+  while Codex handled programming, testing and balance simulation, and the sound
+  effects were edited and reworked by hand in Bitwig Studio.
 play:
   url: https://oblongoolong.itch.io/technical-debt
   embeddable: false

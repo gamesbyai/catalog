@@ -2,36 +2,40 @@ slug: swervle
 title: Swervle
 tagline: Race a fresh procedurally generated 90-second route that changes every day.
 description: >-
-  You drive a blocky yellow car down a 90-second route, and you're racing the
-  clock from the moment the countdown ends.
+  You're behind the wheel of a boxy yellow car that looks like it was snapped
+  together from toy blocks, and every day there's a brand-new route to race.
 
 
-  The route is procedurally generated and it's new every day, which is where the
-  Wordle comparison comes from. Because it's one fresh course per date, there's
-  a Past Races button in the menu for days you missed, so you can still go back
-  to them.
+  This arcade racer takes the daily idea that Wordle made famous and puts it on
+  a racetrack, so there's exactly one procedurally generated course each day.
+  Everyone drives the same one on a given day, which means you aren't facing an
+  endless stream of random tracks but coming back to a single road and trying to
+  do better on it. Tomorrow's route will be a different one.
 
 
-  Before the start, a timer runs across the top of the screen. A speed readout
-  sits in the bottom right corner, and a small panel in the bottom left tracks
-  your checkpoint count and current gear.
+  Each run gives you 90 seconds to get through that day's course as well as you
+  can before the clock runs out. Because attempts are that short, another try
+  costs you little before the day's route is gone.
 
 
-  You steer with the keys, and there's a handbrake for when a corner gets tight.
+  A countdown gets you off the line, and then a surprisingly precise timer
+  counts in thousandths of a second while small readouts in the corners track
+  your checkpoints, gear and speed.
 
 
-  If a turn goes wrong, R recovers you and F restarts the run, which is handy
-  when a run is only 90 seconds long. C switches the camera, and G toggles
-  ghosts. Esc brings up the menu.
+  Beyond throttle and steering, you get a handbrake, a key to recover the car
+  and another to restart the run. You can also cycle the camera. Ghosts switch
+  on and off with G, which fits nicely in a game where everybody's driving the
+  identical road.
 
 
-  The menu has a leaderboard of the day's fastest times, each with a little
-  picture of that player's car. Some entries are marked as live on Twitch with a
-  watcher count, so you can see who's streaming a run.
+  Off the track, the menu lets you edit your vehicle, look back at past races
+  and check a leaderboard that shows each driver's time beside their car. It's
+  all drawn in a pretty chunky low-poly style, with a dark road running between
+  blue water and blocky green hills.
 
 
-  There's also an Edit Vehicle option, both on the title screen and in the menu,
-  if you'd like to change the car before you race.
+  The game was built with GPT-5.6 and Claude Opus 5, according to its creator.
 play:
   url: https://swervle.com
   embeddable: false

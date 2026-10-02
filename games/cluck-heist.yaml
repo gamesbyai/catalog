@@ -2,37 +2,37 @@ slug: cluck-heist
 title: Cluck Heist
 tagline: Rampage as a chicken through a cartoon version of your own neighborhood.
 description: >-
-  You're a menacing chicken seen from above, loose in a cartoon neighborhood.
-  You peck, poop, steal stuff and haul the loot back to your nest before the
-  humans catch on.
+  You're a menacing chicken loose on a top-down map of a real neighborhood. You
+  peck, poop, scream and lob eggs while you grab items and carry them back to
+  your nest.
 
 
-  The map comes from somewhere real. Type in your address and OpenStreetMap data
-  gets rebuilt as a cartoon version of your area, so you can rampage through a
-  street you actually know. Leave it blank and you get a random suburban block
-  instead.
+  A start screen asks for your handle and a location. Type in an address and
+  OpenStreetMap data rebuilds those streets as a cartoon world, but if you leave
+  it blank you get dropped on a random suburban block. Oddly, the sign-up card
+  insists a pigeon needs a name, even though you're very much a chicken.
 
 
-  Before you start, you pick a handle. It can be up to 24 characters of letters,
-  numbers, spaces, underscores, hyphens or periods.
+  A row of wanted stars in the upper left tracks how much attention you're
+  pulling from the humans, while your score sits at the upper right.
 
 
-  You've got more moves than a chicken should. You can peck, eat, grab and drop
-  things, throw eggs, scream, and sprint when you need to get away.
+  Under the stars there's an HP bar and a food bar, plus a counter for the items
+  you're carrying and one for your eggs out of three. There's even a cat posse
+  tracked out of three, which seems like a lot of backup for one bird.
 
 
-  The panel on the left keeps track of your bird. There's a wanted rating in
-  stars, which fits a chicken that steals, plus a health bar, a food bar, two
-  item counters and a cat posse count that starts at 0 of 3. Your score sits in
-  the top corner next to zoom and view buttons.
+  An address bar along the top loads a new location, so your crime spree doesn't
+  have to stay on one street.
 
 
-  A little music player in the lower corner has track buttons and a link to the
-  soundtrack on Spotify.
+  Zoom buttons sit in the top corner. A small music player with a track selector
+  hangs in the lower left. The keys for every move are printed along the bottom
+  edge of the screen.
 
 
-  The creator made it for the fun of it, aiming for the most ridiculous game
-  they could think of. A wanted level on a chicken shows they meant it.
+  catesb made it with nothing particular in mind, setting out to build the most
+  ridiculous game possible just for fun.
 play:
   url: https://cluckheist.cates.fm
   embeddable: true

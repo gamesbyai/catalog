@@ -3,34 +3,32 @@ title: Space Blast
 tagline: Dodge and shoot through asteroid fields, alone or with a friend on the
   same screen.
 description: >-
-  You pilot a ship through a field of asteroids in 3D, thrusting around and
-  aiming at the rocks while they close in on you. Your goal is to survive and
-  get a score onto the leaderboard.
+  Space Blast drops you into a 3D asteroid field where the only goal is to stay
+  alive as long as you can while shooting the rocks apart. Your ship thrusts and
+  aims in full 3D while the field closes in around you.
 
 
-  Before you launch, you type in a call sign, which the game requires. Then you
-  pick how you'll steer: touch, mouse or keyboard. That's a handy spread if
-  you're not sure what device you'll be on.
+  Shields, rapid fire and drones turn up as pickups during a run, and grabbing
+  them changes your loadout on the fly. Ship color palettes unlock too. It's a
+  small cosmetic reward for anyone who cares how they look while dodging
+  boulders.
 
 
-  There's also a ship color menu, plus unlockable palettes for your ship.
+  Before launching you have to enter a pilot call sign, a bit of paperwork that
+  becomes your name on the leaderboard.
 
 
-  Two people can share one screen, because pressing 2 at the start brings in a
-  second pilot. So a friend on the couch can fly next to you instead of waiting
-  for a turn.
+  The start screen lets you choose touch, mouse or keyboard controls, plus a
+  dropdown for your ship's color that starts on a Classic scheme. Two pilots can
+  also share one screen if you press 2 at the start.
 
 
-  Along the way you upgrade your loadout with shields, rapid fire and drones,
-  which means you can change how your ship fights in the middle of a run.
+  Tick the daily run box and every player gets the same asteroid sequence that
+  day, a neat way to line your run up against everyone else's.
 
 
-  You can tick a daily run option, and it gives everyone the same asteroid
-  layout that day. That makes it a fair way to compare scores, since nobody gets
-  luckier rocks than you.
-
-
-  Scores are kept locally, and the game also lists the top 10 world runs.
+  Your own scores are kept locally. A separate scores page lists the top 10
+  world runs. The menu also has pages for features, a briefing and settings.
 play:
   url: https://space-blast.vercel.app
   embeddable: true

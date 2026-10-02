@@ -2,44 +2,42 @@ slug: arkanoid-neon
 title: Arkanoid Neon
 tagline: Bounce a ball off a paddle to clear glowing neon brick levels.
 description: >-
-  You bounce a ball off a paddle into rows of glossy neon bricks, and some of
-  the bricks drop lettered capsules you can catch. Silver bricks take several
-  hits, and the gold ones can't be destroyed at all, so you end up playing
-  around them.
+  One of the falling capsules, marked B, opens a portal in the right wall, and
+  driving your paddle into it skips you to the next round with 10,000 points as
+  a bonus. It's a cheeky shortcut in an otherwise classic brick-breaker. You
+  slide a paddle along the bottom of the screen, keep the ball in play and break
+  every block above it.
 
 
-  Each capsule does its own thing. E widens the paddle, S slows the ball, and C
-  makes the ball stick so you can aim before you shoot. L gives you twin lasers
-  you fire by holding the button, D splits the ball into three, and P is an
-  extra life.
+  The other capsules carry letters too, and they widen the paddle, slow the
+  ball, let you catch it and aim, split it into three, give you an extra life or
+  mount twin lasers on the paddle.
 
 
-  B is the odd one. It opens a portal in the right wall, and if you drive the
-  paddle into it you skip straight to the next round and collect 10,000 points,
-  which is a generous payout for a detour.
+  Eight hand-built rounds come in a fixed order, starting with Regnbågen, where
+  rows of rainbow colors sit under a line of silver blocks. The later rounds get
+  Swedish names too, like Trappan, Pyramiden, Hjärtat and Fästningen. Silver
+  takes several hits, but gold blocks can't be destroyed at all.
 
 
-  There are eight handmade rounds, from Rainbow through Pyramid and Heart to
-  Fortress. After the last one they loop again at a faster tempo.
+  Once you clear the eighth round, the set loops back around at a faster tempo.
+  An extra life arrives every 30,000 points, and your high score is saved
+  locally.
 
 
-  You earn an extra life every 30,000 points, and your best score is saved on
-  your own device.
+  The neon look gets backup from particle bursts, shockwaves, screen shake and a
+  glowing trail behind the ball.
 
 
-  The soundtrack is synthwave that's generated live while you play, and the
-  effects are synthesized too, which is a lot of sound for a game with no
-  dependencies. Bricks burst into particles, the screen shakes, and the ball
-  leaves a trail. Leave the title screen alone and an AI player runs a demo.
+  Sound effects and a synthwave soundtrack are generated live with Web Audio.
+  While you sit on the title screen, an AI player runs a demo game in the
+  background. Touch screens work too, since you can drag to move and tap to
+  shoot.
 
 
-  Claude Opus 5.5 built all of it through Claude Code, from code to levels,
-  starting from a single sentence asking for a good-looking Arkanoid. It's a fan
-  project inspired by Taito's 1986 original, and the physics run in small steps
-  so the ball can't slip through a brick at any speed.
-
-
-  On a touch screen you drag to move the paddle and tap to shoot.
+  Jack-c3l2w asked for a really nice-looking Arkanoid in a single sentence, and
+  the AI built all of it, from the code, graphics and sound to the music and the
+  levels. It's a fan project inspired by Taito's Arkanoid from 1986.
 play:
   url: https://jack-c3l2w.github.io/arkanoid-neon
   embeddable: true

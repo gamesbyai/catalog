@@ -2,35 +2,35 @@ slug: mobius-strip
 title: Mobius Strip
 tagline: Race and fight on gravity-defying tracks until you're the last rider alive.
 description: >-
-  You pilot a small red craft around a looping track hanging in the clouds, and
-  you're shooting as much as you're racing. The last rider alive wins, so
-  staying ahead isn't enough if the others are still flying.
+  Wait out the countdown, then go. Your red craft starts on a dark, neon-edged
+  track that curves through the clouds, with two rivals, Nyx Steel and Kai
+  Blaze, lined up beside you. All three of you race, but only the last rider
+  still alive gets the win.
 
 
-  A countdown starts you off against two rivals, and a board in the corner
-  tracks each racer's level, hull percentage and distance covered. Your own hull
-  shows up in a pilot comms panel, where a tutorial pilot talks you through the
-  first steps.
+  The tracks bend gravity, and the soundtrack to all of it is explosions and
+  guitar solos.
 
 
-  Enforcers float over the track too, and they're worth chasing down.
+  Fighting is part of the race itself. A tutorial pilot chimes in early with an
+  order to take out an enforcer further up the track, because wrecking it earns
+  you XP. Each enemy wears a name tag with its health as a percentage.
 
 
-  Destroying one, like the small enforcer the tutorial points at first, earns
-  XP. That fills a level bar along the bottom of the screen, and each level-up
-  adds a bonus that gets listed on the left, which is a pretty tidy way to make
-  combat feed the racing.
+  Meanwhile, a level counter along the bottom fills up as your XP comes in.
 
 
-  Along the bottom there's a row of ability slots next to a draw and discard
-  count, so your abilities seem to cycle like a hand of cards.
+  There's a lot on the screen at once. A ranked list keeps each racer's level,
+  hull and distance, and there's a minimap of the oval course plus a speedometer
+  reading in mph. A side panel holds the bonuses you earn when you level up.
 
 
-  The track bends through gravity-defying loops, and a small minimap shows the
-  whole circuit with every racer on it. Your speed in miles per hour sits beside
-  it. The creator says the guitar solos and explosions were part of the plan,
-  and they leaned on AI for the art, animation and audio they don't usually do
-  themselves.
+  Oddly for a racer, there's also a row of ability slots with a draw pile and a
+  discard pile, like a hand of cards on the dashboard.
+
+
+  yaworsw used AI for the art, animation, audio and visual polish. Those are the
+  areas they say they're less strong in.
 play:
   url: https://mobius-strip-game.com
   embeddable: true

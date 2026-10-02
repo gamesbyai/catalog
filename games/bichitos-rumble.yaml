@@ -2,36 +2,35 @@ slug: bichitos-rumble
 title: Bichitos Rumble
 tagline: Shove cute animal fighters off the arena in fast, chaotic 3D brawls.
 description: >-
-  Pick a fighter, then use WASD and Space to headbutt your rivals off the arena
-  and into the void. That's the whole fight, so you're shoving the other
-  critters over the edge before they get you.
+  Pick one of nine cute animal fighters, then headbutt your rivals off the arena
+  and into the void.
 
 
-  There are nine animals to choose from: an elephant, a fox, a gorilla, a
-  turtle, a frog, a mole in sunglasses, a penguin, a tiger and a crab. Each one
-  gets a role label, a one-line tagline and dot ratings for speed, weight and
-  power, so you can tell the quick ones from the heavy hitters before you
-  commit. You can drag to spin the model around, too.
+  The lineup runs from an elephant, a fox, a gorilla, a turtle and a frog to a
+  mole, a penguin, a tiger and a crab. Each one gets a card showing its role
+  label, dot ratings for speed, weight and power, and three abilities of its
+  own. For some reason the frog is named Kermit and the tiger goes by Cheeto.
 
 
-  Abilities sit on J and K, with L as your ultimate. Take Trunk the elephant,
-  who's labeled a bruiser. His J is a forward tusk dash nothing interrupts, and
-  his K is a wide thump that knocks rivals back and stuns them.
+  From the title screen you can fight bots, join online matches for up to four
+  players, or set up a game with friends. Once you're in a match, you move
+  around, headbutt, use two abilities and have an ultimate on top.
 
 
-  His ultimate grabs a target and stuns it for 2.5 seconds, and while it's held
-  it takes four times damage from any hit. That's a pretty nasty setup if a
-  friend is standing nearby.
+  There's a key that restarts the round, and you can plug in a gamepad if you'd
+  rather not use the keyboard.
 
 
-  You can start against bots, jump into online multiplayer for up to four
-  players, or play with friends. A gamepad works as well, and R restarts the
-  round.
+  Trunk, the elephant, shows that each kit packs in a surprising amount. It's a
+  bruiser with maxed-out power, and its tusks carry it forward in a dash while a
+  wide thump knocks back and stuns whatever's around it. The grip is pretty
+  mean, because it stuns a target for 2.5 seconds and that target takes four
+  times the damage from any hit.
 
 
-  The creator, who goes by RGomezR14, likes party games for the friendly
-  competition and wanted a way to escape and have fun with friends. The cute
-  animals and the chaos fit that.
+  On the select screen you can drag to spin a 3D model of each fighter, and a
+  belts screen opens from there too. RGomezR14 made it as a party-style brawler
+  for friendly competition between friends.
 play:
   url: https://bichitosrumble.com
   embeddable: true

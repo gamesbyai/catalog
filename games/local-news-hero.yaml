@@ -2,32 +2,36 @@ slug: local-news-hero
 title: Local News Hero
 tagline: Drive a news van through your own city and race rivals to breaking stories.
 description: >-
-  You've got two minutes to score more points than anyone else, and you do it by
-  driving a news van through a 3D version of your own city. Glowing markers on
-  the map mark the stories, so you head straight for them.
+  Each round is a two-minute live broadcast, and whoever has the most points
+  when the clock runs out wins. You drive a news van around a city, racing rival
+  stations to each breaking story as it pops up.
 
 
-  When you're close enough to one, hit the spacebar to go live.
+  You get to pick the city yourself, by sharing your location or typing in a
+  name.
 
 
-  Before you start, you pick where you're playing, either by letting the game
-  use your location or by typing in a city name. That puts you on streets you
-  might actually know. The map comes from Google's 3D tiles, so big cities work
-  best while rural areas can look sparse.
+  It's built in photorealistic 3D from Google's 3D Tiles, so you might end up on
+  streets you actually know. The title screen warns you up front that it works
+  best in big cities, since rural areas may look sparse.
 
 
-  Hold Shift when you need a burst of nitro to reach a story before the clock
-  runs out.
+  Stories show up as glowing markers on the map, and you steer through the
+  city's streets to get to them. When you're close enough, you hit the spacebar
+  to go live.
 
 
-  Green pickups refill that nitro, and white ones restore your health, so
-  they're worth steering toward between stories.
+  Shift fires off a NOS boost that green pickups refill, while the white pickups
+  are health packs.
 
 
-  The creator wanted to play Simpsons Hit and Run in their own city, and this is
-  how that idea turned out, with rival stations to out-scoop. The title screen
-  has a scrolling news ticker along the bottom, which suits a game about
-  broadcasting. Kevin MacLeod made the music, and it's licensed under CC BY.
+  There's also a scrolling news ticker along the bottom of the menu that suits a
+  game about chasing headlines.
+
+
+  supleezy says the idea came from wanting to play something like Simpsons Hit
+  and Run in their own city. A news van loose in your own neighborhood is a
+  pretty direct answer to that wish. Kevin MacLeod made the music.
 play:
   url: https://localnewshero.com
   embeddable: false
@@ -35,8 +39,8 @@ play:
     - browser
     - mobile
   controls:
-    - "Spacebar: go live near a marker"
-    - "Shift: nitro boost"
+    - "Spacebar: go live when close to a story"
+    - "Shift: NOS boost"
 creator:
   name: supleezy
   handle: supleezy

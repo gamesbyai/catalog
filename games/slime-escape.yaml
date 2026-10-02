@@ -3,33 +3,35 @@ title: Slime Escape
 tagline: Survive ten waves of mutant slimes, beat the boss, and flee through a
   suspicious portal.
 description: >-
-  You start on grid paper, playing a scribbled guy in a blue shirt and purple
-  pants. Green one-eyed slimes are already crowding around you, and a black
-  portal sits off to the right.
+  Grid paper covers the screen when the game loads, a bit like a page torn from
+  a math notebook. A hand-drawn guy in a blue striped shirt and purple pants
+  stands in the middle, and there are green one-eyed slimes close by.
 
 
-  A small purple creature is asleep nearby with zzz's floating over it, which is
-  a pretty calm sight with all those slimes about.
+  Up in the top right corner, a counter reads Wave 1/10, with ten dots running
+  out to a checkered flag.
 
 
-  You move with WASD and shoot with a left click. Five numbered weapon slots run
-  along the bottom of the screen, each with its own drawn icon, from a pointed
-  shard to a pink blob to a green grenade.
+  You move with WASD and shoot with the left mouse button. Five weapon slots
+  numbered 1 to 5 line the bottom of the screen. Their doodled icons make for an
+  oddly mixed arsenal, from a pointed yellow shot and a pink blob to a green
+  dart, a thin pink-and-green needle and a green grenade.
 
 
-  Your job is to survive ten waves of mutant slime. A row of ten dots in the top
-  corner shows which wave you're on, and a checkered flag sits after the last
-  dot, so you can see the finish line from the very start. A boss waits after
-  the final wave, and you have to beat it before you can leave.
+  Your goal is to get through ten waves of mutant slimes, take down the boss and
+  then leave through the portal. It's the black oval at the right edge, and its
+  rim keeps switching colors from one moment to the next. By the game's own
+  admission, it's an exit that definitely shouldn't be trusted.
 
 
-  That portal's ring keeps changing color, pink one moment and blue or pale
-  purple the next, which is an odd habit for an exit.
+  For some reason there's also a small purple spiky creature lying on the field
+  with little z marks drifting beside it, apparently sleeping through the whole
+  slime situation.
 
 
-  The portal is your way out, though the creator warns it shouldn't be trusted.
-  The game grew out of the creator's son's drawings of strange creatures, weird
-  machines and tiny stories, so the scribbled look is where it all started.
+  alxdos_ took the scribbled look from their son's hand-drawn fantastic worlds.
+  Those drawings were full of strange creatures and weird machines. According to
+  alxdos_, the tiny stories in them looked like they wanted to become a game.
 play:
   url: https://slimeescape.com/portal
   embeddable: true

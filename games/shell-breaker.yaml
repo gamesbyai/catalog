@@ -2,37 +2,40 @@ slug: shell-breaker
 title: Shell breaker
 tagline: Bounce a ball off a paddle to smash data nodes across eight cyberpunk levels
 description: >-
-  Slide your paddle left and right with the arrow keys, A and D, or the mouse,
-  then press Space or click to launch the ball. It's a brick breaker in the
-  Breakout and Arkanoid mold, and the paddle is called a deck while the ball is
-  called a ghost.
+  Slide the paddle along the bottom with the arrow keys, A and D, or the mouse,
+  then press Space or click to launch the ball. Here the paddle goes by the deck
+  and the ball goes by the ghost, a fitting name for something smashing through
+  a field of data nodes. You're out to wipe every node off the board across 8
+  levels, and each one's harder than the last.
 
 
-  Your job is to wipe out every data node across eight stages. The rows of
-  blocks in the first stage are teal, green and amber, and they sit over falling
-  green code and a rainy neon skyline.
+  Some nodes are reinforced and take two hits, while the explosive ones are a
+  bit more generous, setting off chain reactions through the nodes around them.
 
 
-  The look comes from the 1995 Ghost in the Shell film, so you get a
-  phosphor-green and amber palette with CRT scanlines on top. Particles, screen
-  shake and ball trails sit on top of that, and the sound effects are
-  synthesized.
+  Power-ups hand you extra balls, a wider paddle or a slower ball. Stringing
+  hits together builds a combo, and the game keeps your score next to a high
+  score.
 
 
-  Not every node goes down in one hit. Reinforced ones need two hits, and
-  explosive ones set off a chain reaction, which makes them handy for clearing a
-  clump in one go.
+  It's all set in a rainy neon city under falling green digital rain, with CRT
+  scanlines over a green and amber palette. gunz101 points to the 1995 Ghost in
+  the Shell film as the inspiration for that look, pixel skyline glowing behind
+  the bricks and all. Even the HUD speaks Portuguese, with PONTOS for your
+  points and FASE 1/8 for the level.
 
 
-  Power-ups come in three kinds: multi-ball, a bigger paddle and a slower ball.
+  Every impact gets a surprising amount of polish, throwing particles, shaking
+  the screen and leaving trails behind the ball, while the sound effects are
+  synthesized right inside the game.
 
 
-  A combo system feeds the score, and the game keeps a high score for you to
-  chase. The eight stages get harder as you go.
+  Space or a click also starts and restarts a game. P pauses, M switches the
+  sound off and on, and H on the menu explains how to play.
 
 
-  Press P to pause and M to turn the sound on or off. From the menu, H opens the
-  how-to-play screen, and Space or a click restarts after a run ends.
+  gunz101 made the game with some help from AI, which according to the creator
+  was used on the code.
 play:
   url: https://gunz101.itch.io/shell-breaker
   embeddable: false

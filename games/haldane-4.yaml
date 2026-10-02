@@ -2,33 +2,34 @@ slug: haldane-4
 title: HALDANE-4
 tagline: Descend alone beneath the Antarctic ice and uncover what waits below in ASCII.
 description: >-
-  You start at a dim operator terminal, a dark screen of percent signs, dots and
-  hash marks with a boxed header that names a submersible exploration platform
-  from a 1972 United States Antarctic survey.
+  When it loads, a gray panel titled Operator Terminal v2.1.4 fills the screen,
+  and everything behind its boxed briefing is drawn in text characters.
 
 
-  Everything is drawn in text characters, so the whole game is a grid of ASCII.
-  It's a short horror story, and you go down alone beneath the Antarctic ice
-  shelf.
+  That briefing introduces HALDANE-4, a submersible exploration platform run by
+  the United States Antarctic Survey. It's unit H4-ANT-72, and the 1972 date
+  gives the whole thing the feel of an old government file.
 
 
-  You steer with WASD for thrust and turn with the mouse. Space works your
-  light, and Shift cuts the engine, while the control hints are printed along
-  the sides of the screen so you don't have to hunt for them.
+  You're piloting that submersible alone, heading down beneath the Antarctic ice
+  shelf. WASD gives you thrust while the mouse rotates your view, Shift cuts the
+  engine and Space switches on the light. The key labels are printed along the
+  edges of the terminal frame itself, so even the controls look like part of the
+  machine.
 
 
-  The unit is labeled H4-ANT-72, which is a nicely specific bit of fake
-  paperwork.
+  It's a short horror story, and it unfolds through that descent with an AI
+  voice narrating over it.
 
 
-  The sound is generated procedurally, and the one exception is an AI
-  voice-over. The creator set strict limits for this one: vibe coding only,
-  ASCII graphics, under 5MB and no other assets. Because the characters and
-  audio are all there is, they have to build the atmosphere and tell the story.
+  Every sound in it is generated procedurally, apart from that voice. The whole
+  game comes in under 5 MB, with nothing beyond the code. Fitting a narrated
+  horror story into that budget is no small trick.
 
 
-  The frame around the screen, with its version label on top and the unit label
-  below, makes it look like old equipment you're operating.
+  For denisbondare, the challenge was keeping to those strict limits, with ASCII
+  graphics and vibe coding only, while still making something atmospheric that
+  tells a story.
 play:
   url: https://haldane4.denisbondare.com
   embeddable: true

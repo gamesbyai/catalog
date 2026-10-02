@@ -2,39 +2,38 @@ slug: the-list-s-champion
 title: The List's Champion
 tagline: Ride down the lists in first person and land your lance on rival knights
 description: >-
-  You're working your way up from unknown contender to tournament champion by
-  beating a string of computer-controlled knights in a first-person joust. You
-  watch it all from behind the visor, with your lance slanting across the screen
-  and a gray horse's ears poking up at the bottom.
+  The goal is to work your way up from an unknown name on the tournament list to
+  its champion, one jousting pass at a time. It's all played in first person
+  from behind a knight's visor, with your horse's gray ears and a long lance
+  taking up the bottom of the screen.
 
 
-  Your opponent waits at the far end of a long grass lane, with a wooden rail
-  running between you. Crowds in pastel robes line the fences on both sides, and
-  tents and trees sit behind them, which makes for a pretty tidy field to settle
-  a fight on.
+  Each pass starts when the marshal lifts his flag. You charge down the course
+  alongside the wooden barrier, aim your lance at your opponent's armor and
+  brace for the moment the two of you meet. Rows of spectators in colored robes
+  line both fences, and there are tents and trees off in the distance.
 
 
-  You have to aim at your rival's armor as they thunder toward you.
+  The rivals get tougher as the tournament goes on, and none of them is a copy
+  of the last, since each one rides in its own style, wears its own armor setup
+  and fights with its own tactics.
 
 
-  The knights get tougher as the tournament goes on. Each one rides in a
-  different style, wears a different armor setup and goes at you with its own
-  tactics, so you can't treat every pass the same way.
+  There's a Training Mode for practicing your timing, balance and aim before you
+  take on the real field. The lance itself comes with a surprisingly big set of
+  seven heads you can swap between.
 
 
-  If you'd rather not learn in front of the crowd, there's a training mode for
-  working on your timing, balance and aim.
+  A lance can fail in four distinct ways, and somebody went to the trouble of
+  giving each one its own sound.
 
 
-  A marshal stands across the course and lifts his flag to start every pass. You
-  can swap between seven lance heads, and a lance can fail in four distinct
-  ways, which is an oddly precise menu of disasters.
-
-
-  The creator set the lance's weight, the length of the timing window and the
-  scoring weights by playtesting them personally. Every sound, from hooves to
-  horn to the five music loops, is built from oscillators, filters and noise by
-  a Python program, so there are no recordings in it.
+  Felmeric settled the lance's weight, the length of the timing window and the
+  scoring weights by playtesting. All of the sprite art came from text prompts,
+  including the crowd, the field details and the knight and horse as separate
+  posed pieces. Every sound is synthesized by an AI-generated Python program, a
+  whole soundtrack of fourteen effects and five music loops built from
+  oscillators, filters and noise, while the game has no voice acting.
 play:
   url: https://felmeric.itch.io/the-lists-champion
   embeddable: false

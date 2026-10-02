@@ -3,29 +3,34 @@ title: towershot
 tagline: Fire shots with a single button and place each one with careful spatial
   judgment.
 description: >-
-  Click or press Enter to shoot a block at the tower, and use the left and right
-  arrows to slide your aim. Each shot pushes the tower, so you're shoving the
-  stack around. Match three colors and they clear.
+  Hit Start, nudge your aim with the left and right arrow keys, then click or
+  press Enter to fire. Each shot shoves blocks around a tall tower built from
+  colored cubes. Get three blocks of one color lined up and they clear away,
+  which means this shooter is quietly a color-matching game as well.
 
 
-  The creator names Puyo Puyo as the inspiration, which fits the color matching.
+  Blocks you push into the red zone cost you an out, and your third out ends the
+  run.
 
 
-  There's a red zone you're meant to avoid. The screen counts your outs out of
-  three, and three outs mean game over.
+  There's a pretty tidy readout in the corner, with your score next to a color
+  count of 4 and an out counter that starts at 0 of 3. Underneath it, the keys
+  are spelled out along with a note saying the player view turns by itself.
 
 
-  The camera doesn't wait for you. The player view rotates around the tower on
-  its own, and you can only fire from that view, so you have to wait for the
-  right angle instead of shooting whenever you like. A Switch View button flips
-  to an orbit camera for looking the tower over.
+  The camera orbits the tower, and the player view swings around without any
+  input from you, an odd thing to hand over in a game about aiming. You can only
+  shoot from that player view, but an info line tells you when a shot isn't
+  possible. A Switch View button changes the view, while another readout shows
+  which direction you're facing and the current state.
 
 
-  Up top you'll see a score shown against a color count of four.
+  On a phone, surprisingly large arrow buttons and a Shoot button sit on the
+  screen in place of the keys.
 
 
-  On a phone, on-screen arrow buttons and a big Shoot button stand in for the
-  keys, so the one-button idea carries over to touch.
+  gtmkprn calls it a one-button shooter where your sense of space and your focus
+  decide each move. They name Puyo Puyo as the inspiration.
 play:
   url: https://lucky-wave-e666.soft-glade-15f8.workers.dev
   embeddable: true

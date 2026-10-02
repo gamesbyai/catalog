@@ -2,35 +2,35 @@ slug: slingshot-escape-the-solar-system
 title: "Slingshot: Escape the solar system"
 tagline: Swing past planets and use their gravity to escape the solar system.
 description: >-
-  You're piloting a small spacecraft through a 2D version of the real solar
-  system, and the goal is to escape it. You do that by flying close to planets
-  and letting their gravity throw you faster.
+  You pilot a small spacecraft through a flat, 2D take on the real solar system,
+  and all you're trying to do is get out of it. Each run starts with your ship
+  sitting right next to a big planet.
 
 
-  The trick is when you fire your engine, because the boost is biggest at your
-  closest point to a planet. So you wait for that moment and burn, which gives
-  you a proper slingshot instead of a lazy drift past.
+  Planets give you extra speed when you swing in close, so every flyby works as
+  a gravity slingshot. The biggest kick comes when you press Space to burn at
+  the nearest point of the approach. It turns each planet you pass into a timing
+  problem, which is a clever way to fold real orbital physics into a single
+  button.
 
 
-  You start a run by holding Space to launch the ship from the start screen.
+  To get off the ground, you aim with the left and right arrow keys and then
+  hold Space to launch.
 
 
-  Before you go, the left and right arrows turn the direction you're pointing.
-  Once you're moving, Space fires the burn, Shift brings up a plan view, W
-  warps, and R restarts.
+  The start screen lays out the rest of the keys too, with Shift to plan, W to
+  warp and R to restart. Escape opens a logbook, and it's considerate that a
+  game this physics-heavy puts a tutorial and a wiki one click away on that same
+  screen.
 
 
-  A logbook tab sits in the top corner of the screen, and Esc opens it up.
+  Everything's drawn in chunky pixels, right down to the planet that fills a
+  whole half of your view when you begin.
 
 
-  The start screen also links to a tutorial and a wiki, which makes sense for a
-  game built on orbital mechanics. The art is chunky pixel work, with a big blue
-  planet filling the screen behind the ship.
-
-
-  The creator took inspiration from Outer Wilds, with its contemplative music
-  and a real story wrapped around space. This one flattens that into 2D and uses
-  the actual solar system, so it sits closer to Spaceflight Simulator.
+  romainsimon took the space setting and its contemplative mood from Outer
+  Wilds. Keeping things in 2D with the real solar system came from Spaceflight
+  Simulator instead.
 play:
   url: https://slingshot.indiega.me
   embeddable: true

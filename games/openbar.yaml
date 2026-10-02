@@ -2,34 +2,38 @@ slug: openbar
 title: OpenBar
 tagline: Chat, flirt and play games with AI patrons in a 3D dive bar.
 description: >-
-  Walk around a 3D dive bar with WASD, then press E to talk to whoever's nearby.
-  The patrons are AI-driven, so they gossip, flirt and challenge you to games,
-  and they remember how you treated them.
+  Walk into the dive bar with WASD, pick someone to bother and press E to start
+  talking. Every patron is run by AI, and they trade gossip, flirt, dare you
+  into games and keep track of how you've treated them.
 
 
-  You start by making your own character, or you can keep the default look.
-  There's also an AI settings panel where you pick the provider, endpoint and
-  model that answer back, which is handy because the bar's conversations run on
-  it.
+  When you'd rather settle in, F lets you take a seat. Enter puts you in the
+  chat box so you can type your side of things, while holding the left mouse
+  button orbits the camera and holding the right one steers. Esc walks you out
+  of a conversation.
 
 
-  When you want to stay put for a while, press F to sit down at the bar.
+  The start screen, oddly titled TheNeighborhood, pitches a persistent social
+  sim set on a single street with a single bar, where the gossip doesn't fade
+  and old grudges keep quietly simmering.
 
 
-  A panel on the right lists tonight's threads, like a chill between two
-  regulars or someone who keeps finding excuses to cross the room. They work as
-  hints about who to get closer to, and a feed of recent beats keeps track of
-  what's been going on.
+  Before you head in, you can customize your own character or just keep the
+  default look. There's also a surprisingly hands-on AI settings panel where you
+  set the provider, endpoint and model.
 
 
-  Up top you can see the night number, the phase of the evening, the mood of the
-  room and a read on how the place sees you.
+  Up top, a little weather report for the bar tracks the night number, the phase
+  and the room's mood.
 
 
-  The idea is a cast that holds onto things, so gossip sticks and grudges
-  simmer. The bartender, Rosa, keeps score, which is a pretty fitting job for
-  the person behind the bar. The creator wanted a place where AI characters
-  share a 3D space with you, and a dive bar seemed like the right fit.
+  Off to the side, the night's threads read like a gossip column, with hints
+  such as a chill between two regulars that it nudges you to get closer to and
+  figure out. Below that sits a feed of recent beats from around the room.
+
+
+  kingcyruscrypto wanted a space where AI characters can interact in a 3D world,
+  and a dive bar is the setting they chose for it.
 play:
   url: https://openbar.live
   embeddable: true

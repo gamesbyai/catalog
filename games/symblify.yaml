@@ -2,33 +2,35 @@ slug: symblify
 title: Symblify
 tagline: Decode a daily phrase by working out what each symbol instructs you to do.
 description: >-
-  You're cracking a hidden phrase from a line of symbols and words plus a short
-  clue. Every symbol is an instruction that means the same thing each time it
-  shows up, so you pick up a small language as you go. The puzzle on screen at
-  the start was a practice one, rated medium.
+  Each puzzle asks you to crack a short phrase, and you've got four guesses to
+  do it. The phrase comes written as a line of words strung together with
+  symbols, and every symbol is an instruction for what to do with the words next
+  to it. A one-line clue sits underneath to point you in the right direction.
 
 
-  It showed a tilde in front of BRAKE, a plus sign, and then FAST. Two tags
-  above the line name what those symbols do, with the tilde meaning homophone
-  and the plus meaning combine. The clue read as a description of the first meal
-  of the day.
+  When you think you've got it, you type the phrase into the answer box and hit
+  the Enter button. Four empty rows under the box fill up with your attempts as
+  you go.
 
 
-  So you swap BRAKE for a word that sounds like it, then attach FAST.
+  Puzzle 0 is a practice round rated medium, with the line ~BRAKE + FAST, the
+  clue "The first meal of the day" and two tags, Homophone and Combine, that
+  pretty much spell out how to read it.
 
 
-  You type your answer into a box and press Enter, and you get four guesses.
-  Each guess lands in a row underneath, so you can see what you've already
-  tried. A few small counters sit in the corner, and there's an FAQ button if
-  the symbols leave you stuck.
+  A symbol keeps the same meaning from one puzzle to the next, a clever bit of
+  consistency, so you're slowly picking up a small language and using it on
+  later lines. A new puzzle shows up every day. The tagline at the top of the
+  screen asks whether you can decode them all.
 
 
-  It's a daily puzzle, so the phrase changes from one day to the next.
+  The whole screen is drawn as glowing neon lettering on a purple brick wall,
+  and there's an FAQ button tucked into the top corner.
 
 
-  The creator wanted something original, a cross between word puzzles, cryptic
-  crosswords and maths notation. The mechanics came first, and the game grew
-  around them afterward.
+  Symblify describes the idea as a cross between word puzzles, cryptic
+  crosswords and maths notation, with the mechanics designed first and the game
+  built around them.
 play:
   url: https://symblify.app
   embeddable: true

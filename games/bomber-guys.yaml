@@ -2,26 +2,34 @@ slug: bomber-guys
 title: Bomber Guys
 tagline: Blast the floor away and knock seven rivals off the arena.
 description: >-
-  You're a round little bean in an eight-player arena, and your bombs blow holes
-  in the floor under everyone's feet. The goal is to knock every other bean off
-  the edge.
+  You're a googly-eyed bean dropped into an eight-player arena where the floor
+  itself is the thing you're fighting over. You plant bombs to blow holes in the
+  ground and shove the other beans toward the edge, and the last one still
+  standing once the other seven are gone takes the round.
 
 
-  Whichever bean is still bouncing after everyone else has fallen wins the
-  match.
+  Every explosion eats away footing, so a well-placed bomb can trap a rival
+  while a careless one can leave you nowhere to run, which makes the arena your
+  best weapon and your worst hazard.
 
 
-  You move with WASD, jump with Space and drop a bomb with E. Because the bombs
-  go after the floor, the ground you're standing on is part of the fight, which
-  is a funny twist on a bomb arena.
+  You move with WASD, jump with Space and drop a bomb with E. A jump button only
+  seems fair on a floor that keeps losing pieces.
 
 
-  Before a match you type in a name and pick one of eight bean colors. Quick
-  Play matches you with other beans, so you can get straight into an arena.
-  There's also a private room if you want a match of your own.
+  Before a match you name your bean and pick one of eight colors, and with the
+  blue one picked, your bean even shows up labeled Pool. Quick Play throws you
+  in with other beans, or you can set up a private room instead. The beans are
+  chunky, rounded figures with big wobbly eyes, and they look pretty goofy
+  against the soft glowing purple menu.
 
 
-  The creator built it after working on simple games at Voodoo.io.
+  Even the title screen swaps "last one standing" for "last bean bouncing" — a
+  fair trade for a cast this round.
+
+
+  sergebocancea says it draws on the kind of simple games they used to work on
+  at Voodoo.io. Matches stay short and easy to read in that same arcade style.
 play:
   url: https://bomber-guys.vercel.app
   embeddable: true

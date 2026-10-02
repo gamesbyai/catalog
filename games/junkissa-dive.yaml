@@ -3,38 +3,37 @@ title: 純喫茶ダイヴ - JUNKISSA DIVE
 tagline: Launch cherries and sugar cubes onto dishes to finish orders at a
   late-night café.
 description: >-
-  You launch toppings like cherries and sugar cubes onto the food to finish each
-  order, all inside a late-night retro Japanese café called a junkissa. The idea
-  came from the jam's "dive" theme, so the toppings do the diving instead of
-  you.
+  Fling cherries, sugar cubes and other toppings onto the dish to finish each
+  order at a junkissa, a retro Japanese-style café that opens late at night. The
+  toppings do the diving here instead of you, which is a sweet little twist on
+  the idea. SukimaStock kept the controls simple and spent the extra effort on
+  how each launch feels.
 
 
-  The setting comes from a second, hidden theme, buddy. You're working in a café
-  opened by your childhood friend, which is a cozy excuse for flinging garnish
-  at dinner plates.
+  A shift lasts five orders. When the fifth one's done, your whole shift gets
+  turned into a poster, and then the café's owner, your childhood friend, sends
+  you a short message.
 
 
-  A shift is five orders long, and that's the whole night's work.
+  That childhood-friend setup comes from a hidden theme, the word buddy, and
+  SukimaStock turned it into a café your old friend opened.
 
 
-  When the fifth one is done, what you made that day gets turned into a poster.
-  Then your friend, the café owner, sends a short message, so the night ends
-  with a little note from them.
+  SukimaStock didn't build this around mastering it or chasing a high score.
+  They wanted each run to be about seeing how your day turned out, whether every
+  topping landed perfectly or something strange ended up on the plate. Getting
+  your shift back as a poster suits that idea, since even a weird dessert still
+  gets its moment.
 
 
-  The creator says it isn't about mastering the game or chasing a high score.
-  They wanted each playthrough to be about how that day turned out, whether
-  everything landed perfectly or something strange ended up on the plate.
+  The title screen sets a pretty moody scene with a lit signboard on a dark
+  night street, a JP/EN language toggle up in the corner and a red button along
+  the bottom that opens the shop.
 
 
-  The controls are kept simple so you can get it just by playing. Most of the
-  polish went into how the launches feel, the sounds, the camera movement, the
-  receipts and the posters, which is a sensible place to put the effort in a
-  game this short.
-
-
-  The title screen has a JP and EN switch, so you can read it in Japanese or
-  English.
+  SukimaStock also put plenty of time into the sounds, the camera movement, the
+  receipts and the posters. They worked with ChatGPT as a development buddy on
+  the code, the screen design and the game rules.
 play:
   url: https://sukimastock.itch.io/junkissa-dive
   embeddable: false

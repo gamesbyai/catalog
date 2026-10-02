@@ -2,32 +2,33 @@ slug: catch-of-the-day
 title: Catch of The Day
 tagline: Catch fish in swarming schools while dodging a hunting shark.
 description: >-
-  You swim around underwater in first person with a harpoon gun, picking out the
-  right fish from a school and spearing it before the shark gets to you. A card
-  in the corner names the fish you're after, like mackerel or grouper, with a
-  multiplier next to it.
+  The goal is to catch the right fish before the shark catches you. You're
+  underwater in first person with a harpoon gun, and the catch panel in the top
+  right works like a shopping list, naming the species you're after, such as a
+  mackerel or a grouper.
 
 
-  You can't kill the shark, and that's the catch, so don't waste time trying.
+  The shark's a bit of a problem because there's no killing it, but landing two
+  harpoons on it will stun it.
 
 
-  Two harpoon hits will stun it though, which buys you a moment to keep hunting.
-  The harpoon has a small counter in the bottom corner, so you can see how many
-  shots you've got before you line up the next one.
+  WASD swims you around, Space takes you up and Shift takes you down. A double
+  tap of W sends you into a sprint, and a bar along the bottom of the screen
+  tracks it. The mouse aims, left click fires and right click zooms in.
 
 
-  The fish move as flocking schools, because the creator wanted to see how boids
-  would behave in Three.js and then build a game around them.
+  Down in the lower right corner there's a harpoon gauge showing a number, which
+  starts at a pretty modest 1.
 
 
-  Your score sits at the top with a multiplier beside it, and a high score is
-  kept in the corner. A short two-step tutorial pops up when you start and asks
-  you to swim first.
+  Your score sits at the top center with a multiplier beside it, and your best
+  score stays in the top left. A two-step tutorial walks you through your first
+  moves, starting with swimming, and Esc pauses the game.
 
 
-  You can sprint, and a bar at the bottom drains as you use it, so you can't
-  just rush everything. The art is low-poly, with dark murky water, drifting
-  specks, and a chunky harpoon gun filling the lower right of the screen.
+  0xPufferFish built the game to see how boids behave in Three.js, and a fish
+  hunt makes a fitting test for that. The low-poly fish move around you in
+  flocking groups.
 play:
   url: https://cotd.graywhite.cloud
   embeddable: true

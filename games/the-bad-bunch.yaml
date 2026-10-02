@@ -2,36 +2,37 @@ slug: the-bad-bunch
 title: The Bad Bunch
 tagline: Place monkey defenders to stop waves of bad bananas in a jungle last stand.
 description: >-
-  You're in charge of a troop of jungle monkeys, and you start with $200 to
-  spend on towers along a winding dirt path. The bad bananas come down that path
-  in waves, and a countdown tells you when the next one shows up.
+  You're in charge of a troop of jungle monkeys, and your job is to line them up
+  along a winding dirt path so the waves of oddly furious bananas never make it
+  to your city. The city starts on 100 health and your wallet starts at $200,
+  which covers four of the cheapest monkeys and not much else.
 
 
-  The shop on the right has four monkeys: Basic for $50, Ice for $75, Flame for
-  $150 and Lightning for $225. Pick one, put it down beside the path, and if you
-  change your mind you can cancel the placement or sell a tower you've already
-  built.
+  The shop down the right side holds four monkeys. Basic costs $50, Ice is $75,
+  Flame is $150 and Lightning is a pretty steep $225, though Lightning shows up
+  greyed out at the start. If you pick a monkey that's already on the path, you
+  can sell it or just deselect it.
 
 
-  Your city has 100 health, and that's what you're protecting.
+  Every level opens on a mission card, and the first one wants you to hold out
+  until Wave 20 in exchange for 3 gems and access to Level 2.
 
 
-  Level 1 asks you to last until wave 20. If you make it, you get 3 gems and
-  level 2 opens up, which is a pretty clear reason to keep going.
+  At least you can see trouble coming, since a countdown up top shows when the
+  next wave arrives and how many bananas are in it. During a run you can pause
+  or flip between 1x and 2x speed. There are also buttons to mute the sound or
+  go fullscreen.
 
 
-  The gems pay for monkey upgrades from the main menu, so what you earn in one
-  level makes the next one easier to handle. Levels 3 through 8 were added after
-  the first release.
+  Beating any level pays out gems and opens up the next one in line.
 
 
-  You can pause, switch between normal and double speed, mute the sound or go
-  fullscreen from the buttons on the left.
+  Those gems go toward monkey upgrades on the main menu, so every cleared
+  mission feeds back into a stronger troop. Levels 3 to 8 have been added since.
 
 
-  A father and his 10-year-old son made it together, because the boy asked to
-  build a game with him and he loves Bloons. You can see that in the angry-faced
-  bananas, which are a funny bunch of villains for a tower defense.
+  A father and his 10-year-old son made it together, and it takes its
+  inspiration from Bloons.
 play:
   url: https://thebadbunch.com
   embeddable: true

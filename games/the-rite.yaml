@@ -2,32 +2,37 @@ slug: the-rite
 title: The Rite
 tagline: Fight other players in a fast multiplayer arena shooter in your browser.
 description: >-
-  The Rite puts you in a first-person arena match against other players online,
-  and whoever reaches 20 kills first takes it.
+  The Rite puts you in a first-person arena with other online players, and you
+  shoot your way around the map until someone reaches 20 kills and wins.
 
 
-  A countdown clock sits at the bottom center of the screen, and a banner at the
-  top tells you who's leading, or that nobody is yet. Your health and shield are
-  in the lower left. You begin with 100 health and an empty shield.
+  A 10-minute countdown ticks away at the bottom of the screen. Up top, a banner
+  names whoever's currently in the lead, which keeps the race to 20 out in the
+  open for everyone. Other players have distance markers floating over them that
+  count off the meters between you.
 
 
-  You carry two weapons, and a loadout panel in the lower right lists them with
-  the one in your hands highlighted. The pairs on screen are pistols with a
-  machinegun, and a machinegun with a shotgun.
+  Your loadout panel holds two weapons at a time, like a pair of pistols with a
+  machinegun, or a machinegun with a shotgun. Whichever one you've got selected
+  is highlighted, and you'll see it in your hands, dual pistols and all.
 
 
-  Other players get a distance in meters floating over their heads.
+  There's a vitals panel too, and it tracks your health alongside a separate
+  shield meter.
 
 
-  The arenas look pretty different from each other. One is a pale stone hall
-  with a round pool in the middle, and another is a dim room of rough red brick,
-  and both use chunky, pixelated textures.
+  The maps look surprisingly different from each other. One is a round, icy
+  chamber with a pool in the middle and walls glowing pink and blue. Another is
+  a dark corridor built from brick and stone.
 
 
-  A chat feed runs down the right side, showing players joining and trading
-  quick taunts, and you press P to type your own. The creator says the idea came
-  from Epic no longer releasing a new Unreal Tournament alongside each Unreal
-  Engine release.
+  A live chat feed runs down the right side, listing players as they join and
+  the messages they trade back and forth. In the corner, there's even your ping
+  to a US server.
+
+
+  MyMoonEnt names Unreal Tournament as the inspiration, a series Epic no longer
+  releases alongside each new Unreal Engine version.
 play:
   url: https://therite.magooney.org
   embeddable: true

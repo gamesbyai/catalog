@@ -2,36 +2,37 @@ slug: everest-troll-summit
 title: everest-troll-summit
 tagline: Help or sabotage a shared Everest climber alongside thousands of other players.
 description: >-
-  Everyone who joins is watching one climber try to get up Everest, and you
-  decide whether to push them toward the summit or drag them back down. The
-  climber's name floats over their head with a stamina bar, and a tall meter on
-  the left tracks altitude against the 8,849 meter summit.
+  One climber is inching up a snowy 3D mountain, and everyone connected gets a
+  say in how it goes. Each player gets a prompt asking them to pick a side,
+  either boosting the climber toward the 8,849-meter summit or playing troll and
+  dragging them back to the bottom. One prompt even pins a made-up crime on the
+  climber, a one-star review left because the waiter looked unfriendly, which is
+  a gloriously petty reason to shove someone off Everest.
 
 
-  When a climber gets picked, a little card asks you to choose a side and hands
-  you a made-up reason, like a one-star review left because the waiter looked
-  unfriendly. That's a pretty petty excuse for ruining someone's day on a
-  mountain.
+  If you're the chosen climber, your panel hands you a One Step button that adds
+  0.1 meters every time you press it. The altitude gauge on the left starts you
+  at 5,000 meters in the opening view, and at a tenth of a meter per press, the
+  summit is a pretty long way off.
 
 
-  The card gives you two choices, Boost or Troll, and that's where you pick your
-  side.
+  Meanwhile a stamina bar sits over the climber's head, and it starts out full
+  at 100%.
 
 
-  The chosen climber gets a panel of their own with big buttons. One is a step
-  button worth 0.1 meters, which sounds tiny next to a summit that high, so it
-  takes a lot of steps. There's also an SOS button for calling for help and a
-  share button for recruiting more helpers.
+  Around the mountain, a live feed shows what players are doing, and the
+  leaderboard is split into Helpers and Trolls. Giving the saboteurs their own
+  ranking is a clever touch, because it treats trolling as a real side rather
+  than just noise. There's also a hall of fame that keeps a record of climbers.
 
 
-  A text box says to shout into the void, so you can chat while the climb plays
-  out.
+  To get the crowd's attention, you can shout into a chat box, hit an SOS Help
+  button to call for aid, or press Share to recruit more helpers.
 
 
-  Around the edges you get a live feed of what people are doing, a hall of fame
-  for climbers who make it, and a leaderboard with separate tabs for helpers and
-  trolls. Each side gets its own ranking, so the rivalry between them has
-  somewhere to show up.
+  nickpeanutai made it on a spur-of-the-moment idea, according to the creator.
+  It's built around one open question, whether the helpers or the trolls come
+  out on top.
 play:
   url: https://everest-troll-summit.agentmeshlab.com
   embeddable: true

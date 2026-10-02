@@ -2,29 +2,33 @@ slug: typeit-hero
 title: TypeIt Hero
 tagline: Practice touch typing by playing, so kids learn to type without looking down.
 description: >-
-  TypeIt Hero has letters drifting across the screen, and you press the matching
-  key right when each one crosses the line. You start with a small set of keys,
-  and each new level unlocks more of them.
+  In TypeIt Hero, you type each letter right as it crosses a line on the screen.
+  The start card calls this Hero Mode, a pretty grand title for typing practice,
+  and it asks for your name before you press Play.
 
 
-  So you're learning the whole keyboard a few letters at a time, instead of all
-  at once.
+  New levels unlock more keys, so the set of letters you have to find keeps
+  growing as you go, which suits a game built to teach the keyboard bit by bit.
 
 
-  A row of counters up top tracks your score, level, combo, and misses, plus
-  your best score. The misses counter reads out of five, because five misses in
-  a row sends you back to the start.
+  There's a bar across the top tracking your score, level, combo and best score,
+  along with a miss counter out of five. That little counter carries a bit more
+  weight than the rest, because five misses in a row restarts the run.
 
 
-  Before you begin, you can type in a name, pick a difficulty from the dropdown
-  (it's set to Casual at first), and choose a keyboard layout. QWERTY in English
-  is the default, which is a considerate option for anyone who types on
-  something else.
+  A dropdown lets you set the difficulty, and it starts on 3 — Casual when the
+  game loads. Another one switches the keyboard layout away from QWERTY
+  (English), a considerate touch for anyone learning on a different board. Play
+  and Stop buttons start and end a run, while a fullscreen button sits in the
+  corner of the playfield.
 
 
-  The creator has four kids, and watching the oldest, who's nine, hunt for keys
-  was painful. So the aim is to get her typing without looking down at the
-  keyboard, and to make that practice fun enough that she'll want to do it.
+  Up in the top left, there's a link that leads to more typing games.
+
+
+  _AnnaCates is a parent of four who wanted their oldest child, age 9, to learn
+  to type without looking at the keyboard. According to _AnnaCates, watching her
+  type is painful. They built the game to make that practice more fun.
 play:
   url: https://typeithero.cates.fm/rhythm.html
   embeddable: true

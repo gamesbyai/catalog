@@ -2,45 +2,41 @@ slug: waterslide-game-sonnet-5-5
 title: waterslide game sonnet 5.5
 tagline: Play a waterslide-themed game built in one shot by an AI model
 description: >-
-  You're one of 13 riders sitting on a water slide, and you steer left and right
-  while everyone races down a banked, twisting track. There are kicker ramps
-  along the way, a big spiral, and a splash pool at the bottom where the race
-  ends.
+  You're one of 13 cartoon riders lined up on a banked, twisting water slide,
+  and you start the race in eighth place. A countdown ticks away under a big
+  START banner, then you steer left and right to hold your line all the way down
+  to the splash pool, where the first one in wins.
 
 
-  Only the first rider across the line wins, so you're racing twelve rivals for
-  one spot.
+  The orange ramps launch you on their own, but if you press jump in the short
+  window before the lip, the hop gets armed for big air and a speed boost when
+  you land cleanly.
 
 
-  The ramps are where the jumping comes in, because you can tap jump any time
-  for a small hop, but a press just before an orange ramp's lip gets held and
-  fires right at the edge. Land it cleanly and you get big air plus a speed
-  boost. The ramps on the main route launch you on their own, so those are safe,
-  but the shortcut has a gap that you can only clear with the boosted jump.
+  The main route has two kicker ramps and a large spiral. A shortcut across a
+  gap needs that boosted jump, though, and the rivals gamble on it too. The ones
+  who botch the jump really do fall short and drop into the gap.
 
 
-  That shortcut is a real gamble, and the rivals make the same choice. They
-  decide whether to take it based on how risky it is, how good they are at
-  jumping, and where they're currently placed, so a failed jump really does drop
-  them into the gap.
+  Slip off the edge or miss a landing in Race mode and you're out, but Practice
+  mode skips elimination and puts you back at the last checkpoint.
 
 
-  Falling off the slide, or missing a landing, knocks you out of a race.
-  Practice mode is the gentler version: there's no elimination, and you respawn
-  at the last checkpoint instead.
+  Up on the screen you get your place, your speed, a race timer, a progress bar
+  and a short standings list. Your best race and practice times stay saved on
+  your device.
 
 
-  On screen you get your place out of 13, your speed, a running timer with a
-  progress bar, and a small standings list in the corner. The riders are cartoon
-  figures in different colors, hats and goggles, and you can pick your own look
-  from the Character screen. Settings let you adjust rival difficulty, steering
-  sensitivity, and a left-handed layout.
+  On a touch screen you drag a floating joystick to steer and tap a JUMP button.
+  The menu has a Character screen for picking palettes and accessories. Settings
+  cover quality, rival difficulty and handedness, and that last one is a
+  thoughtful touch because it swaps which side the touch controls sit on.
 
 
-  It was made as a one-shot test of how Claude Sonnet 5.5 at extra-high effort
-  handles a game, and the whole thing took a little over an hour. It also runs
-  on touch screens, with a floating joystick and a jump button, and it works
-  offline after your first visit.
+  Kurt Lietzau made it as a test of how AI models handle building a game in one
+  shot, and this version took a little over an hour of processing. Every shape,
+  texture, icon and sound in it is generated in code rather than loaded from
+  files.
 play:
   url: https://kjlkurt.github.io/waterslide-game-sonnet-5.5
   embeddable: true

@@ -3,33 +3,34 @@ title: Agent Shah
 tagline: Sneak through a warehouse, shoot hostiles, and decrypt a developer's
   career dossier.
 description: >-
-  You start on a dark runway marked with glowing cyan dashes, looking down at a
-  suited agent from behind. A screen at the far end shows a neon AS logo, and
-  the display across the top names the agent Shah Fahad in sector 01, the
-  Briefing Room.
+  A suited agent stands on a dark road lined with glowing dashes, seen from
+  above and behind, while a neon AS logo glows on a panel at the far end of a
+  corridor labeled Sector 01, Briefing Room.
 
 
-  It's a 3D top-down shooter where you infiltrate a warehouse and take down
-  hostiles. You've got four ways to do it: a pistol, a machine gun, a pencil and
-  your fists. The pencil is a funny thing to bring to a firefight.
+  The HUD shows a health bar, your current weapon with its ammo (a pistol at 6
+  of 6) and a target counter that starts at 3. There's a music button up in the
+  corner too, and the M key does the same job.
 
 
-  The pistol starts with six rounds loaded, and a health bar sits in the bottom
-  corner. A strip along the bottom lists the controls and keeps a count of
-  targets, which reads three in the first sector.
+  You make your way through a warehouse from that top-down view, taking down
+  hostile agents as you go. Your arsenal has four options, a pistol, a machine
+  gun, a pencil and your bare fists, with the pencil sitting oddly at home next
+  to the guns. You can shoot with the mouse or the space bar.
 
 
-  The mission is to decrypt a career dossier, because the whole game doubles as
-  the developer's portfolio. That's an odd way to hand over a résumé, but it
-  means the shooting is how you get to it.
+  Number keys switch between the four weapons, V and B throw punches, and F
+  slips you into stealth.
 
 
-  There's also a stealth key on F, and a music button in the top corner.
+  The whole level is secretly the creator's developer portfolio, a pretty clever
+  disguise for a spy mission. Besides the fighting, the mission has you decrypt
+  a career dossier. So the résumé turns into something you play through instead
+  of a static page you scroll past.
 
 
-  The creator mixed three influences: Bruno Simon's interactive portfolio,
-  Hotline Miami's top-down combat and a Mission Impossible look. They wanted a
-  portfolio that actually plays instead of sitting there as a static page.
+  fahaddoc600 named Bruno Simon's interactive portfolio and Hotline Miami's
+  top-down combat as influences, all wrapped in a Mission Impossible look.
 play:
   url: https://agentshah.shahfahad.dev
   embeddable: true

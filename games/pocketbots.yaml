@@ -2,33 +2,35 @@ slug: pocketbots
 title: PocketBots
 tagline: Assemble a toy battle robot from scavenged parts and fight arena duels.
 description: >-
-  Pick a unit in the hangar, or hit Build-A-Bot to put one together yourself.
+  Pick a robot in the hangar, or hit Build-a-Bot to put a new one together out
+  of salvaged parts.
 
 
-  You build a toy battle robot out of scavenged parts, and every limb counts as
-  part of your loadout. The default Base Unit shows how it works: a scan pulse
-  in the head, a core in the torso, and a boost dash in the legs.
+  Then you send it into short duels in an arena. Every limb you bolt on adds
+  something to your loadout. Win a fight and you earn an upgrade to carry into
+  the next one.
 
 
-  The arms carry the weapons. Left click fires a revolver and right click fires
-  a repeater, so each hand does its own job.
+  The built-in Base Unit gives you a pretty clear picture of how a loadout
+  reads. Its head carries a scan pulse, its torso holds a core and its legs give
+  you a boost dash.
 
 
-  Then you take the robot into scrappy arena duels, which are fast ones.
+  Left mouse fires a revolver, while right mouse handles a repeater.
 
 
-  Each fight earns you your next upgrade, which feeds back into what you build.
-  The hangar also lists the unit's mass, height, detailing and optics, so you
-  can see what you've put together before you deploy.
+  Its stat panel lists core mass, height, detailing and optics, which is a
+  surprisingly thorough spec sheet for a pocket-sized robot.
 
 
-  For a human opponent there's a 1v1 link room. You host a match and share the
-  room code, or type in someone else's code to join, and there's a separate
-  button for open circuit battles.
+  If you'd rather fight people, you can host a 1v1 and pass the room code along,
+  or type in a friend's code and join theirs. There's also an Open Circuit
+  Battles button that takes you to open matches, plus a glowing exit portal in
+  the hangar.
 
 
-  The creator wanted a western take on Medabots Dual and Girls Mission, one that
-  doesn't need a Japanese translator to play.
+  circa90x set out to make a Western take on Medabots Dual and Girls Mission.
+  They wanted one you could play without a Japanese translator.
 play:
   url: https://pokebots-vibejamv.netlify.app
   embeddable: true

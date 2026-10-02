@@ -2,35 +2,35 @@ slug: asteroid-ace
 title: Asteroid Ace
 tagline: Blast drifting asteroids and dodge hunter drones in escalating waves.
 description: >-
-  You fly a ship in a classic asteroid shooter, and you aim with the mouse while
-  thrusting, strafing and firing. Rocks drift in clusters, and when you shoot
-  one it shatters into fragments that are dangerous too, so a single shot can
-  leave you with more to deal with.
+  Every slow-drifting asteroid cluster you hit breaks into fragments, so one
+  good shot can leave more rocks in your way than there were before it.
 
 
-  Asteroids aren't the only thing out there. Agile hunter drones come after you,
-  and each new kind of enemy has its own way of moving and attacking. The waves
-  keep coming, so you have to change how you fly as the threats change.
+  It's a classic asteroid shooter where you're flying a ship that you can steer
+  two ways. You can aim with the mouse and thrust with the left button, or
+  rotate with Q and E while W thrusts, S reverses, A and D strafe and Space
+  fires.
 
 
-  The title screen shows a good spread of controls. You can thrust with W or the
-  left mouse button, reverse with S, strafe with A and D, rotate with Q and E,
-  and fire with Space. Shift boosts, right-click turns on auto, and Escape
-  pauses.
+  The rocks don't stay alone for long. As the waves escalate, agile hunter
+  drones show up alongside them. Paul Shroom describes each enemy type as having
+  its own way of moving and attacking, which pushes you to change tactics
+  between waves.
 
 
-  Two sliders on the start screen set speed and scale, both starting at 1.0x.
-  There's also a graphics quality menu, which is handy if your machine
-  struggles.
+  There's even an auto mode you can toggle with a right-click, while Shift gives
+  you a boost and Esc pauses.
 
 
-  Touch controls are on offer too, so you can play it on a phone with on-screen
-  buttons.
+  The title screen calls this version Asteroid Ace 3 Beta, and it lets you tune
+  a few things before you launch. A Graphics button opens the quality settings,
+  and a Touch button turns on on-screen controls. Two sliders change the game's
+  speed and scale, and both start at 1.0x.
 
 
-  The creator built it entirely with a local model running on a laptop, because
-  they wanted to see what that hardware could produce. The screen calls this
-  version Asteroid Ace 3 Beta, which tells you it's an early build.
+  Paul Shroom built it with a local model running on an RTX 5090 laptop GPU with
+  24GB of VRAM and 32GB of system RAM, just to see what that hardware could
+  produce.
 play:
   url: https://asteroid-ace.fractalvision.co.uk
   embeddable: true

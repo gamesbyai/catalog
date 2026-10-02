@@ -2,32 +2,36 @@ slug: puzzle-punch
 title: Puzzle-Punch
 tagline: Stack falling blocks in a 1v1 duel and use abilities to sabotage your rival.
 description: >-
-  Puzzle-Punch takes the falling-block stacking you know from Tetris and turns
-  it into a one-on-one duel. You've got abilities that either hinder your
-  opponent or help you rack up a higher score. The creators wanted something
-  both competitive and puzzly, so they started from Tetris and added their own
-  twists.
+  Puzzle-Punch has you stacking falling blocks and clearing lines in your own
+  well while another player works theirs. You're both racing to post the bigger
+  score by the end of the match. It's Tetris turned into a straight one-on-one
+  fight, and the name fits it pretty well.
 
 
-  You can play alone in a practice mode or against a bot, which means you don't
-  need another person around to try it. For real opponents, you can find a game
-  or invite a friend.
+  On top of the familiar stacking, there are abilities the game calls spells.
+  Some of them get in your opponent's way and others help you push your own
+  score higher, so each match mixes clean stacking with choosing when to strike
+  at the other player and when to boost yourself instead.
 
 
-  The abilities are called spells, and they're explained on a how-to-play screen
-  from the menu.
+  The spells even get their own how-to-play page on the menu, and a game built
+  around them needs one.
 
 
-  Pieces move with the arrow keys, and Up or X rotates clockwise while Z turns
-  them the other way. Space hard drops, and C or Shift holds a piece for later.
-  Esc sends you back to the lobby.
+  You don't need a live rival to get going, since there's a practice mode and a
+  match against a bot. When you want a real person across from you, you can
+  search for a game or send an invite to a friend. You type in a name before any
+  of it.
 
 
-  You type in a name on the title screen before you pick any of the modes.
+  The keys sit in small print right on the menu, with arrows to move, Up or X
+  and Z to rotate each way, Space to hard drop, C or Shift to hold, and Esc to
+  return to the lobby.
 
 
-  A bot mode is a considerate thing to include in a duel game, because it lets
-  you learn the spells before you put them on a real person.
+  El_Perforator's team wanted a game that was both competitive and a puzzle,
+  according to the creator. They picked Tetris as the classic to start from and
+  added their own twists to make it a duel.
 play:
   url: https://puzzle-punch.com
   embeddable: true
@@ -38,8 +42,8 @@ play:
     - "Up / X: rotate clockwise"
     - "Z: rotate counterclockwise"
     - "Space: hard drop"
-    - "C / Shift: hold piece"
-    - "Esc: back to lobby"
+    - "C / Shift: hold"
+    - "Esc: return to lobby"
 creator:
   name: El_Perforator
   handle: el-perforator

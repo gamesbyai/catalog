@@ -3,39 +3,40 @@ title: Clusterfall
 tagline: Find the hidden Hallucinator while stabilizing a cascading prompt graph
   with others.
 description: >-
-  You're an agent in a cluster of LLM agents, and one of you is secretly a
-  Hallucinator who's trying to corrupt the prompt everyone else is trying to
-  stabilize. It's the Among Us loop, reskinned with AI themes, so the traitor
-  and the sabotage both come from the world of language models.
+  One player in every match is secretly the Hallucinator, an LLM agent quietly
+  poisoning a graph of prompts that cascades, while everyone else races to
+  steady it before the whole cluster falls apart.
 
 
-  Each round starts from a user prompt, like a request to design a sustainable
-  Mars colony, and a output slowly materializes on screen as the group works.
+  The loop comes straight from Among Us, with the traitor swapped out for this
+  role. You walk a dark 3D arena with WASD, past glowing green rings and
+  floating crystal shapes.
 
 
-  If you're honest, you walk to task stations and use them. Some tasks are a
-  quick press, some need you to hold the key, and some ask you to enter a
-  sequence of directions. The Root agent has its own job, which is to stay near
-  the Prompt Node, validate it, and clear corruption so the context stays alive.
+  Above the arena hangs a panel with the current user prompt, which opens on a
+  request to design a sustainable Mars colony. The answer types itself out
+  underneath, and it's hard not to grin when it starts listing algae bioreactors
+  and democratic civic protocols.
 
 
-  The Hallucinator does the opposite, poisoning the prompt and sabotaging
-  stations, and can trigger a temperature spike.
+  The HUD on the left is surprisingly busy, showing your role, your agent state,
+  a round clock and the match state, which starts at round 1 of 3. The Prompt
+  Node reads CLEAN when things begin. Under that sit three meters for context
+  window, corruption and final output, plus a readout of how far you are from
+  the prompt.
 
 
-  Your side panel keeps the round in view. You'll see your role, the round
-  clock, whether the prompt node is clean, and three meters for context window,
-  corruption and final output. That's a handy way to tell whether the cluster is
-  holding together.
+  A root agent stays close to the Prompt Node, pressing E there to validate it,
+  cleanse corruption and keep the context alive.
 
 
-  A match runs across several rounds, and a round is a race between the output
-  finishing and the cluster collapsing. It's a social deduction game, so it
-  needs other people in the room with you online.
+  Task stations are where E really earns its keep, because pressing it there
+  starts a task, sabotages one or runs an audit. Hold tasks want E held down.
+  Other tasks ask you to punch in a sequence on WASD instead.
 
 
-  The creator describes the code as freshly written and is still waiting on its
-  first real players.
+  The Hallucinator also gets an oddly fitting extra move for an AI saboteur, a
+  temperature spike triggered with R.
 play:
   url: https://donpurr.github.io/clusterfall
   embeddable: true

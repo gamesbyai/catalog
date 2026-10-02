@@ -2,35 +2,35 @@ slug: eco-guardian
 title: ECO Guardian
 tagline: Fight garbage monsters and answer sustainability quizzes to earn power-ups.
 description: >-
-  You fight off garbage monsters in a 2.5D survivor game, and the way you get
-  stronger is by answering sustainability quizzes, because each one turns into a
-  power-up. So the learning sits inside your upgrades instead of off in some
-  separate menu. It starts in the Plastic Woods, where plastic waste has choked
-  the ancient roots.
+  Garbage monsters swarm you, and you power up by answering quiz questions about
+  sustainability. Every right answer turns into a power-up you use in the fight.
+  It's a 2.5D survivor game with a pop quiz built into its upgrade system, a
+  pretty clever way to sneak the lesson into the brawl.
 
 
-  The starting clearing has big yes and no pads sitting on the grass, and
-  they're clearly meant for answering.
+  The first stage, The Plastic Woods, is an old forest where plastic waste has
+  choked the roots, and bottles, cans and food trays lie scattered across the
+  grass.
 
 
-  Those pads fit a quiz nicely, since a true-or-false question is something you
-  can walk up to and answer. The same clearing also holds an Eco-Mart where you
-  spend carbon on upgrades and eco-abilities.
+  From the title screen you can start a mission, switch between co-op and solo,
+  open a guide or look at the ranks board. Once you start, an intro sets up the
+  stage's setting.
 
 
-  Paying in carbon is a neat touch for a game about cleaning up. There's a
-  portal in the clearing too, and it sends you off to other worlds.
+  Big YES and NO pads sit in the lower corners of the opening clearing, which
+  fits a game where answering questions is how you get stronger. Nearby there's
+  an Eco-Mart where you spend carbon to upgrade and unlock eco-abilities. For
+  some reason the currency is carbon, a bit of a wink in a game about cleaning
+  up the planet.
 
 
-  Before any of that, the title menu lets you pick co-op or solo and then press
-  Start Mission, with a guide and a ranks screen sitting right beside the
-  button.
+  There's also a portal in the clearing that takes you off to other worlds.
 
 
-  The creator is a father of four daughters, and he wanted something fun that
-  would also be good for them. He believes the earlier you learn about
-  sustainability, the more you can shape the future, so he built the lesson into
-  the fighting.
+  The art puts blocky 3D models on top of pixel-art ground and props. VibeCreAI,
+  a father of four daughters, made the game to teach kids about sustainability
+  while keeping it fun to play.
 play:
   url: https://eco-guardian-delta.vercel.app
   embeddable: true

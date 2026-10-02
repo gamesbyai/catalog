@@ -2,52 +2,48 @@ slug: casadegema
 title: Casadegema
 tagline: Water a bare courtyard and find hidden gems through a full watercolor year.
 description: >-
-  You start in a bare, whitewashed Spanish courtyard with a watering can at your
-  feet, and you tap, shake and sweep things until hidden gems pop out. Water the
-  tree bed first and a bougainvillea grows, which gets the garden going.
+  You're the one who wakes up a sleepy garden, starting in a bare whitewashed
+  courtyard with a watering can, a chalkboard easel and a girl standing by the
+  front door.
 
 
-  Every season hides five gems, and each one flies to the counter in the
-  top-left when you find it. In spring you shake a branch until the petals fall,
-  water every pot, and tap the paint palette to recolor your butterfly cursor.
-  Summer has you pop a girl's balloon with a twig and shake a kite loose from
-  the tree.
+  Grab the can and water the tree bed, and a bougainvillea grows out of it.
+  After that you tap and drag your way around the house to find five hidden gems
+  each season, and every gem you find flies up to a counter in the top-left
+  corner.
 
 
-  Autumn hands you a rake for the fallen leaves, and if you turn both lanterns
-  off, night comes and Oli the owl flies a loop around the tree. Winter has you
-  roll a snowman, tap the cold chimney so smoke rises, and chalk a name onto the
-  board.
+  The year moves from spring to summer, autumn and winter, and every season has
+  its own tasks. In spring you tap a speaker, shake a tree branch until its
+  petals fall and water the pots. Later you'll pop a balloon with a twig, rake
+  leaves, make it rain, build a snowman and write a name in chalk, which is a
+  lot of business for one small courtyard.
 
 
-  One gem each season is a little visitor hiding in a blue flower pot on the
-  tower wall, and it's a different pot every time. Tapping a pot only puffs out
-  petals, so you have to find that season's particular action.
+  Oli the owl sits on the tower roof and comments on what you're doing, and you
+  can tap him for a hint.
 
 
-  Oli narrates from the tower roof, and tapping him gets you a hint.
+  If you need more help, tap the alarm clock and a feather heads toward your
+  next gem. Oddly enough, a teddy bear also peeks out from behind the house now
+  and then, and if you catch him he reveals every gem you haven't found yet.
+  When you find the last winter gem, a message floats up from the chimney, a
+  fitting finish for a game made as a Daughter's Day gift.
 
 
-  If you're really stuck, there are two more helpers. An alarm clock at the
-  corner of the house rings every so often and sends a feather flying toward
-  your next gem, and you can tap the clock to ring it early.
+  A full year takes about 10 to 15 minutes. All the watercolor art is drawn in
+  code on a canvas without a single image file, and the music is generated live
+  but stays silent until you tap the speaker.
 
 
-  A teddy bear also peeks out from behind the house now and then. If you catch
-  him before he ducks away, he shows you every gem still hidden that season,
-  which is a considerate way to keep a gem hunt from stalling.
+  There's a clever personal touch in the link too, because adding a name there
+  writes it on the easel and in the final message ahead of time, while a season
+  setting starts you later in the year. On a phone it works with touch, and your
+  taps snap to the nearest thing you can use.
 
 
-  When a season's five gems are in, Oli says goodbye and the next one rolls in
-  on its own element: a rising sun, a gust of leaves, a snowfall. Find the last
-  winter gem and a message floats up out of the chimney letter by letter, hearts
-  and all.
-
-
-  It began as a Happy Daughter's Day gift, so a name added to the link shows up
-  on the easel and in that final message. Claude Opus 5.5 built the whole thing
-  through conversation, with no code written by hand, and the music is generated
-  live, silent until you tap the little pink speaker on the table.
+  Deepak Jain built the whole thing by talking with an AI, and none of the code
+  was written by hand.
 play:
   url: https://1xaispark.com/games/casa-de-gemas
   embeddable: true

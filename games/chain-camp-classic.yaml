@@ -3,36 +3,44 @@ title: Chain Camp Classic
 tagline: Charge and release disc throws across nine top-down holes of pixel-art
   disc golf.
 description: >-
-  You're trying to get a disc into the basket in as few throws as you can across
-  nine holes, and each hole has a par to beat. It's top-down disc golf, so you
-  watch the disc sail across the course from above.
+  A full round is nine holes of top-down disc golf on a single course, and
+  you're trying to reach the basket on each one in as few throws as you can.
+  Your scorecard and your best scores stay saved in the browser, a small
+  kindness for anyone chasing a better round.
 
 
-  A throw takes two steps, which catches people off guard. You hold to charge
-  the power and let go to lock it in. Then you tap or press again to set the
-  angle the disc comes off your hand at.
+  Every throw asks for two separate presses. You aim by clicking or dragging on
+  the course, then hold to charge power and let go to lock it in. A second tap
+  sets the angle of release, while a bar along the bottom of the screen follows
+  the whole thing.
 
 
-  There's a practice field if you'd rather work on that away from the scorecard.
+  Once you're near the basket, putting becomes a separate little test of its
+  own, with a timing meter you tap when it sits in the center.
 
 
-  Your bag holds a driver, a midrange and a putter, and you can throw any of
-  them backhand or forehand. Every hole has its own wind, which the top bar
-  shows as an arrow and a speed beside the distance left and your shot count.
+  You pick a driver, midrange or putter and throw it backhand or forehand, while
+  the wind changes from hole to hole. The holes also mix in risky routes,
+  ricochets, rough, water and out-of-bounds penalties, so there's plenty more to
+  read than the distance.
 
 
-  Ricochets, rough, water and out-of-bounds penalties all push back, though
-  there are risky routes if you'd rather gamble on a shorter line.
+  The HUD keeps the hole, par, distance in feet, shot count and wind speed along
+  the top, and for some reason a raccoon named Rally in an orange bandana
+  watches from the corner.
 
 
-  Near the basket, putting switches to a timing meter instead of a charged
-  throw, and on a touch screen you tap PUTT when the meter is centered. The
-  first hole is Trailhead Toss, a par 3 of 521 feet. A raccoon named Rally
-  watches from the corner of the screen, which is a friendly touch.
+  The opening hole gets the pretty cheerful name Trailhead Toss and plays as a
+  521-foot par 3. A Practice Field mode sits on the main menu, and the minimap
+  toggle helps a bit when you want to see the layout. Sessions run a few
+  minutes, and touch controls work alongside keyboard and mouse.
 
 
-  Your scorecards and best scores are saved in the browser, and the pixel art
-  has a CRT-era look with music that adapts as you play.
+  joeydoorbell drew heavily on games they played as a kid. The look is CRT-era
+  pixel art, and the procedural music adapts as you play. The art was generated
+  with OpenAI image generation and then prepared by the Chain Camp team. It's
+  built with TypeScript and Bun, and the pixel font is Fibberish by Nathan Scott
+  / Caffinate.
 play:
   url: https://joeydoorbell.itch.io/chain-camp-classic
   embeddable: false

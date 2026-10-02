@@ -2,34 +2,34 @@ slug: all-in-texas-hold-em
 title: All In Texas Hold'em
 tagline: Play free, uninterrupted Texas Hold'em poker in your browser or on mobile.
 description: >-
-  You play Texas Hold'em as Guest at a green felt table, looking at your two
-  face-up cards while six named opponents keep theirs face down. Five empty
-  slots sit in the middle, waiting for the community cards.
+  You're the Guest at a green felt poker table, sharing it with six other seats
+  that each show a name and a chip count. Everyone else sits down with 500 chips
+  while you get a pretty modest 100, which leaves you as the smallest stack
+  before a single card is dealt.
 
 
-  Everything you do happens in one panel on the left, so the table itself stays
-  clear.
+  Hit Play Now and the deal begins, with your two hole cards landing face up at
+  the bottom of the table.
 
 
-  It names the stage of the hand, like pre-flop, and shows the total pot, with
-  four buttons under that: fold, call, raise and All In. The call button has its
-  price printed right on it, so you know what staying in costs before you
-  commit.
+  A panel on the left keeps track of the hand by naming the current stage, such
+  as pre-flop, and showing the total pot. When it's your turn you can fold,
+  call, raise or push everything in with All In. The Call button helpfully
+  spells out the exact amount you'd have to match, and small minus and plus
+  buttons beside Raise let you nudge your bet up or down.
 
 
-  Raise comes with minus and plus buttons, so you can set the amount first.
+  Five empty slots sit in the middle of the felt, waiting for the community
+  cards.
 
 
-  Each opponent has a chip count beside their name, and a small tag pops up over
-  them when they call or fold. A folded player's seat fades out, which makes it
-  easy to see who's still in the hand.
+  Your opponents keep their cards face down, but they don't leave you completely
+  in the dark. A little tag under each seat, like Call or Fold, shows what that
+  player just did, and a seat that folds fades out.
 
 
-  You start with 100 chips while everyone else starts with 500, so you're the
-  short stack from the first deal.
-
-
-  The creator built it because they wanted to play poker online without ads.
+  sebastianhox made it because they wanted to play Texas Hold'em online without
+  ads getting in the way.
 play:
   url: https://allintexasholdem.com
   embeddable: true

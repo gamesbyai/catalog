@@ -2,41 +2,43 @@ slug: neon-velocity
 title: NEON VELOCITY
 tagline: Race eight AI cars over three laps of a synthwave highway.
 description: >-
-  You start on a dark highway under a pink sunset, in a cyan car at the back of
-  a nine-car grid, with the other eight cars sitting in neon colors up the road
-  ahead. The top of the screen shows your position, the lap, a timer, your best
-  lap and your speed.
+  Your cyan car starts at the very back of the grid in ninth place, looking down
+  a pseudo-3D highway toward a huge striped sun that sinks behind dark
+  mountains.
 
 
-  The goal is to pass the pack and cross the line first after three laps. The
-  track twists through S-bends, a chicane, hairpins, hills and a valley dip, and
-  the curves shove your car toward the outside edge, so you have to steer
-  against that pull. The faster you go, the harder it pushes.
+  Eight AI rivals fill the road ahead of you, each painted its own neon color,
+  from magenta to spring green. The race runs three laps, and your place updates
+  live from 1st to 9th as you pass them or they pass you. You only win by
+  crossing the line first, so you'll have to work your way past the whole field.
 
 
-  Drift too far to either side and you hit the dirt, which slows you down a lot.
-  That's a harsh price for a small mistake.
+  The circuit is a pretty long chain of hand-built sections, opening with a
+  start straight and gentle S-curves before a hill climb, a long sweeping right
+  and a descent. After that come a tight chicane, a straight up on a plateau,
+  hairpins, a valley dip, fast esses and the final straight home.
 
 
-  The rival cars weave between lanes and each has its own speed and favorite
-  lane. If you clip one from behind you lose speed and it gets nudged forward,
-  so slipping through the gaps pays better than ramming.
+  Curves shove your car toward the outside of the bend, so you have to
+  counter-steer, and the shove gets stronger the faster you're going.
 
 
-  There's a boost bar in the corner that drains while you burn it and slowly
-  refills when you let off. Golden pads on the road top it up for free, and
-  they're spread around the circuit. Boosting through a curve will fling you off
-  the road, so it suits the straights better.
+  Your boost bar fills on its own over time and empties while you burn it for
+  extra speed. Golden pads spread evenly around the track top it back up for
+  free. If you leave the tarmac the car slows hard, while rear-ending a rival
+  costs you speed and, a bit rudely, gives them a small shove forward.
 
 
-  Your lap times are recorded with the best one highlighted, and a results
-  screen at the end shows your finishing place, total time and each lap split.
-  The soundtrack is synthwave generated in the browser, and the engine pitch
-  climbs with your speed.
+  Across the top of the screen you get your position, lap count, a race timer,
+  your best lap and your speed, which flips between KMH and MPH with a single
+  key for anyone who thinks in miles. Once you finish, a results screen lays out
+  your place, total time and every lap split. On phones, touch buttons show up
+  on screen to drive with.
 
 
-  A tap on the speed readout switches between KMH and MPH, and touch buttons
-  appear on phones, so you don't need a keyboard.
+  INTJT2 packed it all into one HTML file, and even the synthwave soundtrack and
+  the engine sound are generated right in the browser. According to the creator,
+  AI helped with the code and the sounds.
 play:
   url: https://intjt2.itch.io/neon-velocity
   embeddable: false

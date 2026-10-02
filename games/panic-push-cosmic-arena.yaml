@@ -2,32 +2,31 @@ slug: panic-push-cosmic-arena
 title: "Panic Push: Cosmic Arena"
 tagline: Shove rivals off a cosmic arena platform in chaotic multiplayer brawls.
 description: >-
-  Move with WASD or the arrow keys, dash with Space, and shove rivals with a
-  click, J or K. You're on a platform floating in space, and the idea is to stay
-  on it while you knock the other players off. The platform is collapsing, so
-  the ground you're standing on is part of the problem.
+  Type a nickname, then start your own room or punch in a five-letter code to
+  join someone else's. There's also a panel of public lobbies on the same
+  screen, and it fills in on its own as new rooms appear. When a room's short on
+  people, the host can fill the empty slots with bots, which means a match can
+  start without a full room of humans.
 
 
-  The rounds are quick, and everyone you're up against is in the same
-  multiplayer match.
+  Every round takes place on a space platform that's falling apart under
+  everyone's feet.
 
 
-  You start by typing a nickname. From there you can create a room, which fills
-  any empty slots with bots, so a lobby doesn't need a full crowd before it gets
-  going.
+  Your job is to stay on it while shoving rivals toward the shrinking edge until
+  they go over. It's basically sumo, except the ring is collapsing and it's
+  floating in space.
 
 
-  If a friend gave you a room code, type it into the code box and you jump
-  straight into their lobby. That's handy when you'd rather play with people you
-  know than with whoever's online.
+  WASD or the arrow keys move you around, and Space gives you a dash. Pushing
+  works with a mouse click or with J or K, a nice touch for anyone who'd rather
+  keep both hands on the keyboard. The quick rules sit right below the lobby
+  menu, so the controls are on screen before your first match.
 
 
-  There's also a list of public lobbies with a refresh button, and new rooms
-  show up there on their own.
-
-
-  The creator describes the game as a cross between a sumo ring and a Beyblade
-  match, which fits a game about bumping people out of a circle.
+  summerlilac___ describes it as a multiplayer party brawler in the vein of
+  sumo-circle and Beyblade games, played against other people online in short
+  rounds inside a cosmic arena.
 play:
   url: https://panic-push-cosmic-arena.vercel.app
   embeddable: true

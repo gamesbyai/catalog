@@ -3,31 +3,34 @@ title: Smash&Clash
 tagline: Battle a second player with cards on a compact 3×5 grid in short, tense
   matches.
 description: >-
-  The first thing you do is pick your rules, because the menu asks before a
-  match starts.
+  When the game opens, you get the Smash&Clash logo up top, a rating counter
+  starting at 1000 and a big pink Play button right under it.
 
 
-  Classic is the original version, and Mutators adds chess hops, power tiles and
-  overruns. Both are a two-player card battle on a 3×5 grid. That's a small
-  board, so each card you place changes what your opponent can do next.
+  Every match is a card battle between two players, played on a grid only three
+  tiles by five. Small wins pile onto each other until they turn into momentum,
+  and any single move can swing the balance back. HarshitKhemani wanted short,
+  intense bursts of competitive strategy instead of long, drawn-out games, and a
+  board that tiny suits the idea.
 
 
-  The idea is that small wins stack up into momentum, which keeps the lead
-  swinging back and forth. The creator wanted competitive strategy in short
-  bursts instead of long, drawn-out games.
+  Before you start, a panel called Pick Your Rules has you choose between two
+  rulesets. Mutators adds chess hops, power tiles and overruns, while Classic is
+  labeled as the original game, and each one gets its own little grid icon
+  dotted with colored tiles.
 
 
-  There's more than one way to find an opponent, whether that's someone sitting
-  next to you or a friend online.
+  Chess hops are an oddly specific thing to find in a card battle, and they're
+  the very first twist the Mutators option names.
 
 
-  Play is the big pink button at the top. Below it you can start a local
-  two-player game on one device, challenge a friend, or open a friends list, and
-  the menu also shows a rating of 1000.
+  Below Play, the menu lists 2 Players · Local, Play a Friend and Friends.
+  Profile and settings buttons sit up in the top right corner.
 
 
-  Mutators is the highlighted choice when the rules picker opens, which suits a
-  game so keen on shake-ups.
+  A cookie notice with Accept and Decline buttons pops up over the menu. It's a
+  surprisingly polite one, too, because it says plainly that you can play the
+  game without accepting.
 play:
   url: https://smashandclash.in
   embeddable: false

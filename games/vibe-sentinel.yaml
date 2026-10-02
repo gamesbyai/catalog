@@ -3,40 +3,33 @@ title: Vibe Sentinel
 tagline: Fight shadow beasts through ten turn-based dungeon levels, one careful
   move at a time.
 description: >-
-  The first thing you see is a glowing green title card that casts you as a
-  Sentinel of the Ancient Grove, the last guardian between your home and an army
-  of shadow beasts. A button under the intro lets you choose your Sentinel
-  before you head into the dungeon.
+  A green-glowing panel greets you first, with a short briefing, the controls
+  and a button to choose your Sentinel. You're the last guardian of the Ancient
+  Grove, walking a dark dungeon one grid tile at a time and fighting shadow
+  beasts by simply bumping into them.
 
 
-  You move one tile at a time, and you attack by bumping into an enemy. Crystals
-  and potions are scattered around each level, and you're looking for the
-  glowing exit star that leads to the next one. Clear all 10 levels and the
-  bloodline is saved.
+  Somewhere on every level there's a glowing exit star that takes you down to
+  the next floor. Get through all 10 levels and the run is won. You begin with
+  only 10 HP, though potions put 6 back, and crystals pay for the Sentinel
+  Pulse, which spends 2 of them to hit every enemy within 3 tiles.
 
 
-  Enemies only move every other turn, and that gap is what you play around.
+  Turns are discrete, so nothing moves until you do, and the enemies only take a
+  step every other turn, which hands you a little gap to reposition.
 
 
-  You start with 10 HP and every hit hurts, so the off turn is your chance to
-  reposition. The border is a solid wall, which means there's no safe lane along
-  the edge to hide in.
+  Waiting passes your turn, but the enemies keep acting while you stand there.
+  The outer border is solid wall too.
 
 
-  Crystals feed your Sentinel Pulse, which hits every enemy within 3 tiles for 2
-  crystals. Potions bring back 6 HP, and if you'd rather hold still while the
-  enemies keep moving, you can wait a turn.
+  Each of the 10 levels gets its own biome, and the spread is pretty wide, from
+  a forest grove through a volcanic maze all the way to a void sanctum.
 
 
-  The creator took inspiration from classic grid roguelikes like Rogue and early
-  NetHack, where every move matters and the pressure comes from managing
-  resources instead of reflexes. Each of the 10 levels gets its own look, from a
-  forest grove through a volcanic maze to a void sanctum, which is a lot of
-  scenery change for a compact dungeon crawl.
-
-
-  Past the main run there's an endless mode and badges to earn. There's also a
-  portal that drops you straight into another game.
+  Past the main run there's an endless mode, plus badges to earn. There's also a
+  portal that leads into another game. The design follows early Rogue and
+  Nethack, where managing your resources matters more than fast reflexes.
 play:
   url: https://flash-source.github.io/vibeSentinel
   embeddable: true

@@ -2,39 +2,35 @@ slug: vibe-oke
 title: Vibe-oke
 tagline: Play along with a song one lyric word at a time, in sync with the vocals.
 description: >-
-  The first thing you see is a dark neon screen with Mr. Brightside by The
-  Killers already queued up and a Play button sitting in the middle, so you can
-  start right away.
+  When the game starts, Mr. Brightside by The Killers is already loaded on a
+  Track Ready card.
 
 
-  Every word of the lyrics becomes something you hit. Instead of tapping along
-  to a beat, you follow the vocals one word at a time, which is a neat way to
-  make karaoke feel like a rhythm game.
+  Five colored keys, A, S, D, J and K, sit under a prompt to strike each word
+  when it arrives at the lane. Every word in the lyrics becomes a note, so
+  you're playing along with the singer one word at a time instead of just
+  chasing a beat. roieambulo loves karaoke, and that's where the idea of
+  playable lyrics came from.
 
 
-  Words travel toward a lane, and you hit them as they reach it using five
-  colored keys: A, S, D, J and K.
+  The panel on the left is a pretty busy one, counting the song's time against
+  its 3:43 length and filling a progress bar as it goes. It also has previous
+  and next buttons, plus readouts for sync status, level, words per minute and a
+  word count. Your score and accuracy get their own box just below it.
 
 
-  If the starting track isn't your pick, there's a Search Song button, and a
-  search button also sits in the left panel next to settings.
+  The right side keeps a surprisingly close eye on your run, with a feedback
+  panel over a combo counter that feeds a multiplier starting at x1, and a
+  health bar that begins at 100%.
 
 
-  That left panel shows the song's progress with skip and play buttons, plus a
-  words-per-minute reading and a word count for the track. Your score and
-  accuracy sit just below, which is handy because accuracy is tracked as a
-  percentage.
+  Press Play to start whatever's loaded. If The Killers aren't your thing, the
+  Search Song button lets you pick another track. A small note on the card warns
+  that lyric timing may not match perfectly, an honest admission to put right
+  beside the start button.
 
 
-  On the right, a feedback panel keeps your combo and a multiplier that starts
-  at x1, along with a health bar that begins full. Under it, a leaderboard
-  switches between global and per-song views, so you can see how you stack up on
-  the song you're playing.
-
-
-  The creator loves karaoke, and that's where the idea of making each lyric word
-  playable came from. A small note on the start screen admits lyric timing may
-  not match perfectly, which is an honest thing to say up front.
+  There's also a leaderboard, split into Global and Song tabs.
 play:
   url: https://vibe-oke.com
   embeddable: true

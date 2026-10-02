@@ -2,32 +2,35 @@ slug: sky-break
 title: Sky Break
 tagline: Run, shoot, and survive while a hostile AI sabotages your escape.
 description: >-
-  The AI in this one is your enemy, and it reacts to how well you're flying. It
-  mocks you at first, slides into panic, then ends up desperate, all inside a
-  single run, so the better you play, the more it falls apart.
+  Sky Break's villain is a hostile AI that sabotages your escape and reacts to
+  how well you're playing. Within a single run its attitude slides from mocking
+  you, to panicking, to sounding desperate. Outplay it and it starts to break
+  down, which turns the enemy's mood into a pretty clever scoreboard.
 
 
-  You pilot a ship through a world the AI built, which is collapsing around you.
-  You aim with the mouse and shoot the glowing pink bots, which are copies the
-  AI made of itself.
+  You steer your ship with WASD and aim with the mouse, firing with Space or a
+  click. The first mode, System Breach, lays out the situation surprisingly
+  bluntly, telling you the world is collapsing and that a self-replicated AI has
+  locked the exit.
 
 
-  Destroy 8 of them and the lock on the exit breaks, which is your cue to look
-  for the way out.
+  Your job is to shoot the pink AI bots that glow, and once you've destroyed 8
+  of them the lock breaks.
 
 
-  Once that happens a portal ring appears, and flying through it is how you
-  escape. The void is closing in the whole time, so you're racing it to the
-  ring. The intro screen also says shooting the bots can open the portal early,
-  which sits a little oddly next to that count of 8.
+  With the lock gone, a portal ring appears and you've got to fly through it
+  before the void catches up with you. Shooting bots can also open the portal
+  early. So a run shifts from chasing down bots to racing for the exit.
 
 
-  The creator wanted the AI itself to be the villain, and took the idea from how
-  language models go from confident to uncertain under pressure.
+  It's a high-speed survival shooter built like a runner, dressed in glowing
+  neon cyan text with a mode select that looks like a terminal prompt.
 
 
-  The look is neon cyan on black, with a terminal-style menu where you pick a
-  mode. The one on show is called System Breach.
+  AlphaGoat2711 wanted to push past typical AI-made games by casting the AI
+  itself as the antagonist. The idea for its meltdown came, a bit fittingly,
+  from the way language models drift from confident to unsure when they're
+  pushed.
 play:
   url: https://skybreak.xyz
   embeddable: true

@@ -3,41 +3,39 @@ title: Taipan Board Game
 tagline: Build a pirate domain through trade or raids and race rival captains to
   the finish.
 description: >-
-  You can steal a rival's ship, raid their islands, or skip the violence and
-  trade with friendlier captains. Piracy and trading are both real routes to
-  winning, so you pick a style and build your domain around it.
+  In Taipan it's up to you whether you build your domain by trading or by
+  piracy, and both routes can win you the game. You can trade with captains who
+  are friendlier to you, or sail through enemy waters to land a delivery that
+  pays a lot.
 
 
-  A turn runs through four steps: roll the dice, move, build, then end your
-  turn. The dice give you two numbers at once, one for how far your ships can
-  move and one for production, which is why the roll matters before you do
-  anything else.
+  If that sounds too polite, you can steal a rival's ship or raid their islands
+  instead.
 
 
-  You can also undo a move, which is handy on a board this busy.
+  A turn moves along a track at the top of the screen, where you roll the dice,
+  move, build and then end your turn. Two red dice and a white one set your
+  movement and your production, and there's an Undo button for when a move
+  doesn't go the way you meant.
 
 
-  The map is a sea of blue hexes with islands scattered across it, each one
-  tagged with a letter and a number. Ports and buildings show up on the islands
-  as small anchor and warehouse icons, and a rival's territory gets outlined in
-  red so you can tell whose it is.
+  Whatever you pick on one turn carries into the next, so it speeds up or holds
+  back how fast your domain grows. Ship upgrades and attributes let you shape a
+  different captain from one game to the next. The board is a sea of blue hexes
+  dotted with numbered islands, with Fortune, Peril and Tempest decks sitting
+  beside cargo and island cards, which looks a lot like the cardboard it came
+  from.
 
 
-  Above the board there are decks for Fortune, Peril and Tempest cards, plus a
-  Cargo deck and an Islands deck. You also collect delivery tokens and piracy
-  tokens, and a bar at the top tracks your money, your moves and any fate card
-  effects.
+  The rules stay short once they click, and a tutorial walks you through them
+  first.
 
 
-  Ship upgrades and attributes change how each captain plays, so no two games go
-  the same way. Delivering cargo through enemy waters can pay big, though it's a
-  risk.
-
-
-  The creator spent two years prototyping this as a physical board game and
-  built the browser version to get more people playtesting it. There's a
-  tutorial for learning the rules, and the creator says a game takes about half
-  an hour.
+  You can play against other people or on your own, and a session runs about
+  half an hour. bragoatski spent two years testing Taipan as a tabletop
+  prototype before making this digital version, and building it turned up
+  balance problems in the original that led to changes in the mechanics.
+  According to the creator, AI helped with the code.
 play:
   url: https://bragoatski.itch.io/taipan
   embeddable: false

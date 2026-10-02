@@ -2,38 +2,38 @@ slug: emoji-survivors
 title: Emoji Survivors
 tagline: Fight endless waves of emoji monsters as a mage and stack chaotic upgrades.
 description: >-
-  Emoji Survivors has you play a mage against an endless stream of emoji
-  monsters, and you pick which mage from a row of portraits before the run
-  starts. Each one brings its own set of skills, so the choice shapes how you
-  fight. Upgrades then reshape that build as the waves keep coming.
+  Emoji Survivors sends wave after wave of emoji monsters at you, with no end in
+  sight, and hands you a mage to fight them off. As the run goes on, you grab
+  chaotic upgrades that grow your caster's build into something new. The goal,
+  put pretty bluntly, is to clear out the horde with your spells before the
+  horde clears you out.
 
 
-  The Wind Mage shows how a whole kit can hang on a single idea.
+  It all starts on a mage select screen, where a row of emoji-faced portraits
+  lets you choose your caster while the panel up top lists the three skills each
+  one brings.
 
 
-  Gale Ring is a point-blank burst that knocks enemies back, and Crosswind Strip
-  is a wind lane that travels with you and shreds packs. Tempest Mode adds a
-  storm core that chains displacement, so this mage spends its time shoving the
-  horde around instead of just shooting it.
+  The Wind Mage comes first, and the whole kit seems built around shoving
+  monsters where they don't want to go. Gale Ring is a knockback burst right
+  around you, Crosswind Strip sends a moving lane of wind through packs to shred
+  them, and Tempest Mode drops a storm core that keeps chaining displacement.
 
 
-  The goal is right there under the logo: survive the horde, evolve your build
-  and erase the map with spellcraft. The creator calls the upgrades chaotic,
-  which suits a horde made of tiny faces.
+  Next to the mage picker there's an archive panel that tracks 22 trials and 6
+  achievements, all sitting at zero when you begin. Two of the trials ask you to
+  last 5 minutes within one run and to hit level 10 within one run. For a game
+  about outlasting a swarm, it's a surprisingly long checklist.
 
 
-  There's also a progress panel on the title screen, so your runs count for
-  something.
+  There's a sound toggle up in the top corner, above chunky pixel lettering and
+  a dark forest backdrop.
 
 
-  It tracks 22 trials and six achievements, all sitting at zero until you start.
-  Early ones ask you to survive five minutes in a single run, reach level 10, or
-  unlock every active class skill in one go, which is a pretty clear nudge to
-  build with a plan.
-
-
-  The creator had always wanted to make a complete game from scratch, and AI is
-  what finally let them do it.
+  swisnotjan made it after long wanting to try making games and finish a whole
+  project from nothing. According to swisnotjan, game development is the most
+  exciting kind of art, and AI is what finally made it possible for swisnotjan
+  to pull it off.
 play:
   url: https://emoji-survivors.fun
   embeddable: true

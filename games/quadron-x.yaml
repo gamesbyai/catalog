@@ -2,34 +2,38 @@ slug: quadron-x
 title: Quadron X
 tagline: Fly an X-wing through a 15-mission dogfight campaign with a voice-acted story.
 description: >-
-  Quadron X puts you in an X-wing, flying dogfights over asteroid fields, convoy
-  lanes and Imperial trenches while the Empire hunts your squadron. You steer
-  with the keyboard and aim with the mouse, and the cockpit is procedural and
-  wraps 360 degrees around you.
+  Quadron X puts you in an X-wing cockpit and sends you through a dogfight
+  campaign. The start screen promises six missions across asteroid fields,
+  convoy lanes and Imperial trenches, while the creator's own pitch describes a
+  full 15-mission campaign with a voice-acted story.
 
 
-  The campaign is carried by a voice-acted story, so there's someone talking to
-  you while you fly.
+  You fly with WASD plus Q and E, aim with the mouse and fire with Space, and F
+  sends off a torpedo.
 
 
-  More than 200 video comms were generated with Grok, which is a pretty big cast
-  of faces for something the creator made from scratch in one Sunday. A little
-  droid portrait sits at the bottom of the start screen.
+  Targeting gets two keys of its own, with T cycling through targets and R
+  snapping to whichever one's nearest. X matches your speed to the target you've
+  picked.
 
 
-  You can boost, brake, or match speed with whatever you're chasing. For
-  targeting, you can cycle through targets one at a time or jump to the nearest
-  one, and a barrier shield is there when a fight turns ugly.
+  The rest of the keyboard is pretty busy as well. Shift boosts and Ctrl brakes,
+  B raises a barrier shield, and N switches on a night-vision zoom. C changes
+  the camera, P or Esc pauses, the bracket keys adjust volume and M mutes.
 
 
-  Night-vision zoom and a camera switch each get their own key, so you can use
-  them mid-flight.
+  According to the creator, the cockpit wraps a full 360 degrees and is built
+  procedurally, and it's backed by more than 200 video comms generated with
+  Grok, which is a lot of radio chatter for one dogfighter.
 
 
-  The start screen lets you edit your pilot name, switch on an easy mode, check
-  the ranks and pick a level. There's a multiplayer mode as well, with a
-  scoreboard you can pull up in flight, and the creator describes the whole
-  thing as a spiritual successor to xpilot.
+  From the menu you can start the campaign, jump into multiplayer, or browse
+  levels and ranks. An Easy toggle sits right there too. Every pilot gets a
+  callsign like Comet-982, and you can rename yours with Tab.
+
+
+  daniel-farinax calls it a spiritual successor to xpilot. They say it was made
+  from scratch in one Sunday.
 play:
   url: https://x.danielfarina.com
   embeddable: true

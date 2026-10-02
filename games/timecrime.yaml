@@ -3,26 +3,33 @@ title: TimeCrime
 tagline: Spot the impossible object in a 360° historical scene, then guess where
   and when.
 description: >-
-  You look around a 360° historical scene for the one object that shouldn't be
-  there, because a time traveler has planted a single impossible thing in each
-  one. Once you spot it, you guess where and when the scene is set, which is how
-  you repair the timeline. So it's part hidden-object search and part history
-  quiz.
+  Each round drops you inside a 360° scene from history with one object that
+  couldn't have existed in that time. The story goes that a time traveler left
+  it there. You look around the panorama, find the culprit, then guess where and
+  when you are to set the timeline right.
 
 
-  A run is five rounds, and each round gives you 45 seconds. You can start the
-  Daily Rift or choose a Random Run, and there's no login in the way, so you
-  just press start.
+  The first scene puts you on the Moon, with a lunar lander parked in the dust
+  and Earth hanging in the black sky. Someone has also left a phone on a tripod
+  out there, about as blatant as a time crime gets.
 
 
-  The title screen sits over a moon scene with a lunar lander and Earth hanging
-  in the black sky. A phone on a tripod stands in the dust off to the right,
-  which looks pretty odd beside a lander and shows the kind of mismatch you're
-  hunting for.
+  A full run is five rounds, and you only get 45 seconds for each one.
 
 
-  The creator wanted you to scan a scene and notice what feels wrong, instead of
-  only guessing facts from a question.
+  There are two ways in from the start screen. The Daily Rift is labeled with
+  the date, while the other button starts a Random Run. You don't even have to
+  log in for either.
+
+
+  It's a clever pairing of a hidden-object hunt with history trivia, and the
+  order matters, since you have to notice what feels wrong in the scene before
+  you get to guess the place and era.
+
+
+  Peter TP says the spark was blending curiosity about history with a quick,
+  simple hunt for hidden objects. They also say the aim was for players to scan
+  each scene and spot anomalies rather than only recall facts.
 play:
   url: https://timecrime.vercel.app
   embeddable: true

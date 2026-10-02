@@ -3,37 +3,36 @@ title: ZOMBIE DEFENSE PROTOCOL
 tagline: Place towers to build a killbox that stops waves of zombies and
   exploding bosses.
 description: >-
-  You land on an isometric map with a winding dirt road, and a welcome panel
-  asks you to pick Easy, Medium or Hard.
+  A welcome panel sits over a dark isometric map when the game loads, and it
+  wants a difficulty from you before you press Deploy.
 
 
-  Easy gives you 30 lives and 50% bigger rewards, while Hard drops you to 15
-  lives and cuts payouts by 30%. Medium sits in the middle at 20 lives.
+  Easy hands you 30 lives and 50% more rewards, Medium settles on 20 lives, and
+  Hard cuts you to 15 lives while paying 30% less. Whichever you pick, your job
+  is holding the line through 30 waves of zombies.
 
 
-  Zombies walk the road and you stop them by picking a tower card and clicking
-  open ground. There are ten towers, from a $50 gunner up to a $550 cannon, and
-  a few cards like the tesla and cannon are dimmed until you've got the cash.
+  Towers sit in a bar along the bottom, so you choose one and click open ground
+  to drop it. Every card carries its price, while a side panel spells out
+  damage, range and fire rate. The Gunner is the $50 bargain that can hit
+  umbrellas, and Sniper, Mortar, Minigun, Laser, Frost, Flamer, Tesla, Recon and
+  Cannon round out a surprisingly wide roster of ten.
 
 
-  The catch is that shields, umbrellas, invisibility and crawling each change
-  which towers can hurt a zombie. So a tower that handles one kind can be
-  useless against the next, and the gunner's card even says it hits umbrellas,
-  which is a hint about the others.
+  Not every tower hits every threat, and the horde keeps you honest about it,
+  with some zombies carrying shields or umbrellas, some showing up invisible,
+  and some crawling.
 
 
-  That's where recon towers come in, since they buff nearby towers, let them get
-  past shields and umbrellas, and spot invisible zombies.
+  Recon is the odd support piece in the bunch. It buffs the towers around it,
+  gets past shields and umbrellas, and spots invisible enemies, so mixing tower
+  types matters. Every fifth wave pulls up by car, which is a funny touch for a
+  zombie horde, and each boss bursts into a swarm when it dies, so a boss kill
+  isn't quite the end of the fight.
 
 
-  You're holding the line for 30 waves, and every fifth one rolls in by car.
-  Bosses burst into a swarm when they die, so celebrating a kill too early can
-  leave you facing a fresh crowd. Click any tower you've placed to inspect,
-  upgrade or sell it, or call the next wave early whenever you like.
-
-
-  Cash, wave, lives and score sit across the top, next to speed buttons that run
-  from 1x up to 10x.
+  You can call the next wave early, set the speed anywhere from 1x to 10x, and
+  click any tower you've placed to inspect, upgrade or sell it.
 play:
   url: https://vibejgame.vercel.app
   embeddable: true

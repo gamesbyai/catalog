@@ -2,33 +2,44 @@ slug: snapfc
 title: SnapFC
 tagline: Drag, aim, and snap your players to score in quick physics soccer matches.
 description: >-
-  The title screen gives you four big buttons: Solo Play, Find an Opponent,
-  Online Lobby and Leaderboard. You don't have to sign up to start, so you can
-  go straight into a match.
+  SnapFC opens on a dark, floodlit stadium with a glowing green shield badge,
+  and it's pretty refreshing that none of the menu buttons asks you to sign up
+  first. Solo Play, Find an Opponent and Online Lobby are all right there, with
+  a leaderboard underneath.
 
 
-  It's soccer run on physics, and you move your players by dragging, aiming and
-  snapping them at the ball. The creator took inspiration from tabletop games,
-  and wanted something that's easy to learn but competitive, where every move is
-  a deliberate choice.
+  Once a match starts, you never run a player around. Instead you drag one of
+  your pieces, aim it and snap it toward the ball, and then momentum and
+  collisions take over. Each turn comes down to picking an angle and how much
+  power goes behind it.
 
 
-  Matches are quick, but they get more strategic than they first look.
+  Tabletop games inspired it, and the rules are simple enough that you'll have
+  them down within seconds.
 
 
-  Find an Opponent comes with a considerate touch, because it lets you stay
-  available for a match while you practice in solo play. So you're not sitting
-  around in a queue waiting.
+  The depth comes from positioning and timing. A careless shot leaves your side
+  exposed, while a well-placed snap can set up a scoring chance, so each snap
+  ends up a bit of an attacking move and a defensive one at once.
 
 
-  The Online Lobby is there for playing against other people, and the
-  Leaderboard sits right beside it.
+  Matches are short and competitive, and you can stay available for an online
+  opponent while you keep playing solo.
+
+
+  ivancorreces wanted a tiny soccer game you could start instantly and enjoy
+  within seconds, built on physics mechanics. They aimed for something easy to
+  learn but competitive enough to replay, where each move feels intentional and
+  depends on skill. If you start on a desktop, there's even a QR code on the
+  menu you can scan to carry on from your phone.
 play:
   url: https://snapfc.com
   embeddable: true
   platforms:
     - browser
     - mobile
+  controls:
+    - "Drag: aim and snap a piece toward the ball"
 creator:
   name: ivancorreces
   handle: ivancorreces

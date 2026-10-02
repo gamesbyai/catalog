@@ -2,41 +2,41 @@ slug: goal-locked-the-crucible
 title: "Goal-Locked: The Crucible"
 tagline: Score goals and outlast rivals in a shrinking cyber-sport arena.
 description: >-
-  The start screen shows a dark, neon-lit arena with glowing rings circling a
-  football pitch, and a short instruction card sits over it. You're a sphere,
-  and the goal is to be the last one standing.
+  A dark, round arena glows behind the title screen, with neon goals in red and
+  purple around its edge and the instructions laid right over the top. You're a
+  sphere, and the objective spelled out there is pretty blunt: be the last one
+  still standing.
 
 
-  Scoring is how you knock rivals out, so the football part isn't decoration.
-  The arena is also a shrinking tactical space, which means the room to play in
-  gets smaller as the round goes on.
+  It puts battle royale rules on a sport, where every goal you score counts as a
+  way to knock one of your opponents out. Survival and scoring end up being the
+  same job, which is a tidy twist on the sport. Meanwhile the tactical arena
+  keeps shrinking, pushing everyone toward the same spot as the match goes on.
 
 
-  Everything runs on chaotic physics, so it's a brawler as much as a sports
-  game.
+  Chaotic physics drive the brawling, so collisions and momentum shape each
+  match instead of fixed animations.
 
 
-  You move with WASD or the arrow keys, and Shift gives you a dash. Space sends
-  out a pulse, which the instructions list under tactics.
+  You roll around with WASD or the arrow keys and tap Shift to dash. Spacebar
+  fires off a pulse, oddly the one move the game files under tactics.
 
 
-  Under the instructions there are three counters for your best score, your
-  kills and a tier that starts at T1.
+  Before you even hit Play Now, the menu is already keeping a little scorecard
+  with your best result, your kills and a tier that starts at T1.
 
 
-  The creator wanted to shake up sports games by giving them battle royale
-  stakes and chaotic physics, which is a pretty odd pairing for a football
-  match. It's a one-player game.
+  whinhosa_exe wanted to shake up how predictable sports games tend to be. Tying
+  survival to scoring, which puts elimination stakes into a sports format, is
+  the main idea behind the design. The presentation leans into a high-tech,
+  cyber-sport look. Glowing rings and lit-up goal mouths sit against a nearly
+  black floor.
 play:
   url: https://goal-locked.vercel.app
   embeddable: true
   platforms:
     - browser
     - mobile
-  controls:
-    - "WASD / arrows: move"
-    - "Shift: dash"
-    - "Space: pulse"
 creator:
   name: whinhosa_exe
   handle: whinhosa-exe

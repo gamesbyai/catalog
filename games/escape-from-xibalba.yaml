@@ -3,30 +3,31 @@ title: Escape From Xibalba
 tagline: Crawl through a procedural dark maze, light torches, steal relics and
   survive bosses.
 description: >-
-  You crawl through a dark, procedurally generated maze beneath Xibalba,
-  lighting torches, stealing relics and surviving bosses as you go. Every one of
-  those gets you a step closer to a way out, which may not exist at all. That's
-  a bleak promise to start with.
+  You crawl through a dark maze in Xibalba, and the maze is procedurally
+  generated. Along the way you light torches, take relics and survive boss
+  fights. Each of those is supposed to bring you one step closer to a way out,
+  though the game's own blurb admits that exit may not exist, a bit of a bleak
+  hedge for something with Escape in its title.
 
 
-  You walk with the arrow keys and swing with Z or X. Hold the attack button
-  instead of tapping it and you get a strong attack.
+  You move with the arrow keys, and Z or X attacks. Tap it for a quick hit, but
+  hold it down and you get a strong attack instead.
 
 
-  Signs can be read with E, and that same key is what opens the chests you find.
+  E reads a sign or opens a chest, ESC pauses, and the camera's yours to fiddle
+  with too, with R rotating it while plus and minus zoom in and out.
 
 
-  The camera isn't fixed, so you can turn it with R and zoom in or out with plus
-  and minus, which makes sense in a maze where you'll want to see what's around
-  you. Escape pauses whenever you need a break.
+  The title screen is surprisingly ornate, with dark brick walls and rows of
+  carved face glyphs framing the key list. Under the name sits the line "The
+  lords of death are waiting." A single click gets you in.
 
 
-  The creator had always wanted to make a game and used the jam as the excuse to
-  finally do it.
+  If you're curious how it's put together, the source code is linked on GitHub.
 
 
-  The title screen sets the mood with brick walls, carved faces and a line
-  saying the Lords of Death are waiting.
+  fmatzdorf made it after always wanting to make a game. According to them, this
+  was the excuse they needed to finally just do it.
 play:
   url: https://xibalba.monkeyscript.com
   embeddable: true

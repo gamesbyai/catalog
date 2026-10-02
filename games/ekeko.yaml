@@ -2,34 +2,42 @@ slug: ekeko
 title: Ekeko
 tagline: Bargain with a corrupted Andean deity by playing cards in a horror roguelite.
 description: >-
-  You drag little ceramic miniature cards onto an altar, and the Ekeko, a
-  corrupted Andean abundance deity, tallies up your offering. His math
-  multiplies chips and card values by your combos and your relics.
+  Little ceramic miniature cards are what you drag onto an altar tray, building
+  an offering for the Ekeko, an Andean god of abundance who's gone rotten. He
+  adds it up as chips plus card values, multiplied by your combos and relics,
+  and in each encounter you have to beat the amount he demands.
 
 
-  Every wish has a price, and he's keeping the receipts, which is a pretty grim
-  way to run a card game.
+  The setting is the Alasitas fair, where the Ekeko once handed over a house, a
+  car, a diploma and a heart, which makes it pretty unsettling that he's now
+  come to collect.
 
 
-  Each encounter sets a demand, and you've got 5 rounds to beat it. Come up
-  short and you face whatever the Ekeko has in store, which is where the horror
-  comes in.
+  A run stretches over 3 acts with 5 rounds in each, and the debt keeps climbing
+  with every act, a fitting rule for a god who's calling in what you owe. What
+  happens when you come up short on a demand is something the game won't tell
+  you.
 
 
-  Combos are what drive your score. Ritual Pair, Full Table, Holy Trinity and
-  Sacred Altar are the ones named up front, while Perfect Offering and the Grand
-  Rituals are left for you to discover. There's also a Dried Lamb somewhere in
-  the game, and you're told only that you'll understand once you find it.
+  Some combos are named right up front, like Ritual Pair, Full Table, Holy
+  Trinity and Sacred Altar. Others, including Perfect Offering and the Grand
+  Rituals, are left for you to discover. There's also an oddly cryptic thing
+  called the Dried Lamb hidden somewhere, and the only hint is that you'll
+  understand once you find it.
 
 
-  A full run lasts three acts, and the debt grows with each one, so the demands
-  keep climbing as you go.
+  The art is painted dark and lit by candles, with the Ekeko shown as a grinning
+  ceramic figure piled high with tiny houses, banknotes, bread and a diploma.
 
 
-  The setting is the Alasitas fair, where the Ekeko already gave you a house, a
-  car, a diploma and a heart, and now he wants payment. It's rooted in Bolivian
-  folklore, and the creator, a 20-year-old solo developer from Bolivia, calls it
-  a first game that mixes Balatro, Inscryption and Buckshot Roulette.
+  It's played with the mouse alone, and sessions are meant to be short.
+  Subtitles and color-blind friendly options are included, a considerate touch
+  for a debut.
+
+
+  Ekeko is the first game from AdriverBuilds, a 20-year-old solo developer from
+  Bolivia. According to the creator, AI assisted with both the code and the
+  graphics.
 play:
   url: https://adriver.itch.io/ekeko
   embeddable: false

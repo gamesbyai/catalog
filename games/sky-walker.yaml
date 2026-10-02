@@ -3,35 +3,36 @@ title: SKY WALKER
 tagline: Keep your balance on a tightrope above a neon city while storms and
   wind push you off.
 description: >-
-  You're a high-wire walker out over a neon cyberpunk city, and the only thing
-  you do is keep the balancing pole centered while storms and gusts shove you
-  sideways. Tap W or Up once to set off, because after that he keeps walking on
-  his own. That leaves your hands free for steering the balance with A and D or
-  the left and right arrows.
+  A tightrope hangs high above a neon-lit cyberpunk city, and a walker is out on
+  it with a balancing pole. You press W or Up just once to get him going, and
+  from then on he keeps walking forward by himself. All that's left for you is
+  holding that pole centered so he stays upright, and it's hard to imagine a job
+  more stripped-down than that.
 
 
-  The walking itself isn't your job, which is a neat trick, since all your
-  attention goes to the one thing that matters.
+  A and D or the left and right arrows correct the balance, while storms and
+  winds you can't predict keep pushing against you. The weather gets more
+  violent the farther you advance, so the first stage's label, Level 1: Calm,
+  sounds a bit hopeful.
 
 
-  Up top you'll see the stage name, and it starts at Level 1: Calm. The storms
-  get more violent as you go, so that name reads like a polite warning that the
-  wind won't stay friendly.
+  Along the top, the screen counts the meters you've walked next to your best
+  distance, with a heart icon, the current stage and a live wind speed reading
+  alongside.
 
 
-  A wind speed readout sits in the corner so you can see what the weather is
-  doing. Next to it, the distance counter keeps your current run and your best
-  so far, and there's a heart beside it.
+  Behind the rope, the city is generated procedurally. Its dark towers are lit
+  in red and cyan, and plenty of small specks dot the air in front of them. Next
+  to the start button on the title screen there's also a leaderboard button.
 
 
-  The city behind the wire is generated procedurally, a dark skyline lit in red
-  and teal.
+  iboualissouf took inspiration from the tension of real high-wire walkers and
+  built the whole game around that single job of keeping the pole centered.
 
 
-  The creator was chasing the nerve-racking feel of real high-wire walkers and
-  says they like extremely challenging, frustrating games, which makes the whole
-  setup make sense. There's a leaderboard too, so you can compare your distance
-  with other players.
+  They're also refreshingly open about loving games that are extremely
+  challenging and frustrating. This one leans toward frustrating difficulty on
+  purpose.
 play:
   url: https://sky-walker.xyz
   embeddable: true

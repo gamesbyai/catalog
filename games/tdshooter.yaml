@@ -2,33 +2,27 @@ slug: tdshooter
 title: TDShooter
 tagline: Shoot enemies from above, finish quests, and open up new zones.
 description: >-
-  You walk a small character around a top-down arena with W, A, S and D, aim
-  with the mouse, and click to shoot. A hint in the middle of the screen says
-  exactly that, so you're not left guessing. Your health starts at 100 out of
-  100 in the top left.
+  You're a small character standing on a dark green grid, and a prompt on screen
+  spells out the basics right away. You walk with W, A, S, D, aim with the mouse
+  and click to shoot. Up top, a counter reads Enemies killed: 0/40.
 
 
-  Space makes you slide, and a small bar at the bottom of the screen carries a
-  label for it.
+  Just below it, a line points you toward Zone 2, which is up, and yellow arrows
+  on the floor helpfully lead the same way.
 
 
-  Under the health there's a level counter, a count of perk points, and an XP
-  bar that starts at 0 out of 100. That's a lot of progression to see before
-  you've fired a shot.
+  According to ok_kutas, the game is about shooting enemies, doing quests and
+  unlocking new zones. Your stats sit in the top left, where HP shows 100 out of
+  100, a level readout lists your perk points and an XP bar starts at 0 of 100.
 
 
-  At the top, a kill counter reads 0 out of 40, and a line under it names Zone 2
-  as the next area, up from where you stand. Big arrows on the floor point the
-  same way, so you know which direction to head. The creator describes the game
-  as shooting enemies, doing quests and unlocking new zones.
+  A slide ability sits on Space, labeled at the bottom center of the screen. On
+  the right edge there's a column of emote buttons with a surprisingly grim back
+  half. Next to a heart, a thumbs up, arrows, a question mark and an exclamation
+  mark, you'll find a skull, a gravestone and a coffin.
 
 
-  Down the right edge runs a column of emoji buttons, with a heart, a thumbs up,
-  a skull and a tombstone among them, which is a funny set to find in a shooter.
-
-
-  Up in the corner you can switch between mouse controls and touch controls. A
-  menu button sits right beside that switch.
+  Two icons in the top right switch between mouse and touch input.
 play:
   url: https://tdshooter.space
   embeddable: true

@@ -3,37 +3,34 @@ title: terrastrike/terra
 tagline: Purify a toxic world from the deep sea up to a surface garden as an
   evolving guardian.
 description: >-
-  You start on a dark teal seabed called The Deep, looking down on a diver in a
-  heavy suit. Wide beams of light cut through the water, and wreckage and dark,
-  branching plants are scattered around you.
+  The first level, called The Deep, puts you on the seafloor in an armored
+  diving suit, seen from above while pale shafts of light cut down through the
+  water. Seaweed, rocks and pieces of sunken wreckage lie scattered around you
+  in a murky teal gloom.
 
 
-  The panel in the top corner lays out what you're working with.
+  Your job is to purify a toxic world, working your way from the deep sea up to
+  a surface garden while your diver evolves into a guardian protecting the last
+  sanctuary of life.
 
 
-  Purification sits at 0.0% next to a timer at 00:00, and your ammo reads 40 out
-  of 40 for the Standard Blaster. Your inventory says nothing yet, while a red
-  hull integrity bar runs along the bottom of the screen.
+  A panel on the left keeps score of that cleanup with a purification
+  percentage, which starts at a pretty bleak 0.0%, sitting next to a timer. It
+  also shows your ammo at 40 of 40, the Standard Blaster you're carrying and an
+  inventory that's still empty.
 
 
-  The goal is to purify a toxic world, starting in the deep sea and working up
-  to a surface garden that holds the last sanctuary of life. Along the way you
-  evolve into a stronger guardian, which is why it's tagged as an RPG as well as
-  a shooter.
+  You move with WASD and fire with Space. A hull integrity bar runs along the
+  bottom of the screen. There's an RP counter in the top right corner that ties
+  into a shop on U, while the armory opens on C.
 
 
-  There's also an RP counter in the other top corner, right beside a shop you
-  open with U.
+  For some reason keys 1 to 4 trigger emotes, a bit of a luxury for a diver
+  whose only company is seaweed.
 
 
-  C opens an armory, and the number keys 1 to 4 trigger emotes, which is a funny
-  thing to find in a toxic wasteland.
-
-
-  The creator wanted the payoff to be contrast, with a dark industrial wasteland
-  turning back into a colorful, thriving ecosystem. So it makes sense that the
-  route climbs from the ocean floor to a garden, because that's the whole trip
-  from gloom to color.
+  Srikanth built the game around nature's resilience. They drew on the contrast
+  of a dark industrial wasteland turning back into a colorful, living ecosystem.
 play:
   url: https://terrastrike.pages.dev
   embeddable: true

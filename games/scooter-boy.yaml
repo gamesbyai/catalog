@@ -2,33 +2,36 @@ slug: scooter-boy
 title: Scooter Boy
 tagline: Ride an electric scooter through traffic, grab coins, and hop through portals.
 description: >-
-  In Scooter Boy you ride an electric scooter down a road, switching lanes to
-  weave through traffic and scoop up coins. Portals show up along the way, and
-  they hop you over to other games.
+  Scooter Boy has you riding an electric scooter down a road full of traffic,
+  switching lanes to slip between the cars while you scoop up coins. The
+  roadside is low-poly and blocky, with buildings, trees and speed signs lining
+  the way.
 
 
-  You can jump too, and the rider pulls off tricks if you press the arrows while
-  you're in the air.
+  The left and right arrows move you over a lane, and the up arrow launches you
+  into a jump.
 
 
-  On a keyboard the left and right arrows change lanes and the up arrow jumps.
-  On a phone you swipe to move and jump instead. Because the arrows double as
-  the trick input, you don't need any extra keys.
+  Once you're in the air, pressing arrows makes the rider pull off tricks, a
+  neat bit of extra mileage from keys you're already using. On a touch screen
+  you swipe to move and jump instead. Any key or a tap gets things rolling.
 
 
-  Your score is just the number of coins you've picked up, nothing more
-  complicated than that.
+  The screen stays pretty clean while you ride, with a coin counter and a sound
+  toggle in the top left corner and a small label up top marking the mode as
+  Endless.
 
 
-  When a run ends, the game over screen shows your coin total next to your best.
-  You can type a name there and submit the score to a leaderboard, which has
-  separate Endless and Daily tabs.
+  When a run ends, the game over screen shows the coins you collected next to
+  your best total. You can type in a name and submit your score to a
+  leaderboard, and it keeps separate Endless and Daily tabs.
 
 
-  Along the roadside you'll pass tall buildings with rows of windows, trees,
-  clouds and speed-limit signs, while a coin counter sits in the top corner as
-  you ride. The creator made it to show their brother what's possible with AI
-  today.
+  Portals also turn up along the road, and they don't lead to bonus areas at all
+  but carry you off to other games entirely.
+
+
+  Nik D made Scooter Boy to show their brother what's possible with AI today.
 play:
   url: https://vibejam2026.1clickdev.com
   embeddable: true

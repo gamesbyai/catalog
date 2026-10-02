@@ -2,34 +2,35 @@ slug: aeralis
 title: Aeralis
 tagline: Fly and fight other players in a fast multiplayer third-person space shooter.
 description: >-
-  You're a hooded character running across a glowing blue alien landscape dotted
-  with crystals, and the camera floats behind your shoulder while you shoot.
+  You're a hooded figure seen over the shoulder, running across a glowing blue
+  plain studded with crystals under a dark purple sky.
 
 
-  On top of running and jumping, you can crouch and slide, which fits the
-  creator's aim of a fast movement shooter in the spirit of Tribes, Destiny and
-  Titanfall. Space games like Star Citizen, Starfield and No Man's Sky are the
-  other influence.
+  Your gun is the Nullifier, fired with the left mouse button through a
+  hexagonal reticle in the middle of the screen. Its counter shows 28 rounds
+  backed by an unlimited reserve, while the right mouse button aims down the
+  sights.
 
 
-  Your weapon is the Nullifier, and its counter shows 28 rounds with an infinity
-  sign where the reserve would be. Hold the right mouse button to aim down
-  sights and tap R to reload. F fires a lightning ability that the HUD calls
-  your tactical.
+  Getting around isn't limited to running, with jump, crouch and slide all
+  mapped to the keyboard. There's a whole lightning ability sitting on the F
+  key, separate from the gun. Reload and the map each have a key of their own
+  too.
 
 
-  A banner at the top announces the upcoming wave, and the one on screen says it
-  deals 60 damage.
+  A banner warns you about the next wave, and this one is bluntly named Damage,
+  dealing 60 damage against the 100 health you start with.
 
 
-  Your kill count sits beside a rival's, with a countdown clock between them
-  that starts a little under five minutes. A leaderboard on the right and an
-  alive counter show who else is in the match, because it's built as an online
-  shooter.
+  There's a lot of HUD packed onto one screen. A timer sits at the top center
+  between two kill counters and a rank marker, while a leaderboard panel in the
+  corner lists you as Player. For finding your way, a compass strip reads your
+  heading in degrees and a round minimap marks an exit point.
 
 
-  The round minimap has a compass and marks an exit, and pressing M opens a full
-  map.
+  duckocancode describes it as a fast multiplayer third-person shooter that
+  draws on movement shooters like Tribes, Destiny and Titanfall, along with
+  space games like Star Citizen, Starfield and No Man's Sky.
 play:
   url: https://playaeralis.com
   embeddable: true

@@ -3,53 +3,52 @@ title: Metal Assault
 tagline: Run, jump, and shoot through side-scrolling levels in a Metal
   Slug-style action game.
 description: >-
-  Mission 1 opens at sunset on a dusty street, where your red-bandana soldier
-  has an endless pistol, ten grenades, two rifle soldiers walking toward you and
-  a bound prisoner yelling for help down the road.
+  A red-bandana soldier starts out on a desert street at sunset with a pistol
+  that never runs dry, ten grenades and three lives, while rifle soldiers march
+  in from the right.
 
 
-  It's a run-and-gun in the Metal Slug mold, so you shoot your way across the
-  level. Up aims, down crouches, and when an enemy gets close the game switches
-  you to a knife on its own.
+  Wooden crates sit along the ground, a tied-up prisoner off to the side shouts
+  for help, and Mission 1 flashes across the screen before the first shot. It's
+  a Metal Slug-style run and gun, and the title screen even spells out the
+  controls in Italian.
 
 
-  Rifle soldiers, grenadiers, melee attackers, bazooka troops, sandbag turrets,
-  helicopters and tanks all stand between you and the end. Wooden crates drop
-  weapons, grenades or points, while the red barrels blow up in chains that hurt
-  everyone nearby, which makes them handy bait. Freeing prisoners pays out
-  points and weapon crates.
+  You get two modes on the main menu. Arcade Mission is one long stage that ends
+  at General Morden's armored fortress, and that fight has some real thought
+  behind it. Below 60% health the fortress sheds its armor and calls down mortar
+  rain, but blinking spots on the ground warn you where the shells will land,
+  and under 35% it enrages.
 
 
-  The weapon pickups are a heavy machine gun, spread shot, rockets and flame
-  shot.
+  Survival is the other choice, an endless string of waves in an arena that
+  keeps its own high score.
 
 
-  You can also climb into the SLUG, a tank you board just by touching it. It has
-  three armor points, crushes infantry and blocks light bullets, and the turret
-  fires with your shoot key while the cannon uses the grenade key. When the
-  armor runs out it explodes and throws you clear, which is a fair way to lose a
-  tank.
+  You can shoot, jump, crouch and aim straight up, and when an enemy gets close
+  your soldier pulls a knife automatically. Smashing crates turns up weapons,
+  grenades or points, with a heavy machine gun, spread shot, rockets and a flame
+  shot among the pickups. Red barrels blow up in chains and hurt everyone
+  nearby, so you can lure enemies over to them.
 
 
-  Close-range kills build a score multiplier up to x3, but one hit breaks the
-  chain. You get three lives, you're briefly invincible after a respawn, and any
-  lives left at the end of the mission turn into bonus score.
+  Freeing prisoners pays out points and weapon crates, while close-range kills
+  push a score multiplier up to x3 until taking a hit breaks the chain.
 
 
-  Arcade Mission finishes with a gunship mini-boss, then General Morden's
-  armored fortress, which has an arc cannon, a machine gun and infantry
-  reinforcements. Once it drops below 60% health it loses its armor plating and
-  starts mortar rains, so you watch the blinking ground markers to see where
-  shells will land. Below 35% it enrages.
+  There's also a parked SLUG tank you board just by touching it. It carries 3
+  armor points, a turret gun and a cannon, and it flattens infantry under its
+  treads. There are plenty of targets for it, with grenadiers, bazooka troops,
+  turrets, helicopters, tanks and a gunship mini-boss in the mix.
 
 
-  Survival is the other mode, with endless waves in an arena and a high score of
-  its own.
+  Each action gets two rebindable slots in the settings, and high scores stay
+  saved in your browser.
 
 
-  A settings menu lets you rebind every action to two keys and set the volumes.
-  The sprites, level, sound effects and music are all generated in code, so
-  there are no outside files.
+  Andrea Vitolo had Claude build the whole game in plain JavaScript, and
+  surprisingly nothing is loaded from files, since the pixel-art sprites, the
+  level, the sound effects and the music are all generated in code.
 play:
   url: https://m-assault-fable.netlify.app
   embeddable: true

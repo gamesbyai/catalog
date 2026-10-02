@@ -3,38 +3,43 @@ title: JellyBlob
 tagline: Grow a wobbly jelly, trap rivals with your trail and go Supernova in a
   shared pond.
 description: >-
-  JellyBlob drops you into a hexagon-tiled pond crowded with other jellies and
-  glowing orbs. Before you press play, you can type a name for your jelly and
-  pick its color from a row of swatches.
+  JellyBlob has you type a name for your jelly, pick one of several colors and
+  press Play, which drops you into a pond you share with other players online.
+  Even the menu is pretty busy, with glowing dots and other jellies drifting
+  over a hex-patterned floor behind it.
 
 
-  The daily quest list on the menu shows what the game cares about. You hop 40
-  times, vault 15 trails, or stomp 8 smaller jellies, and the stomping quest
-  pays the most at 804 XP, which says a lot about how it wants you to treat the
-  little ones.
+  Once you're in, your score sits in the top corner, a round minimap fills the
+  bottom-left and a bar labeled Glow runs along the bottom. Four numbered emote
+  buttons wait in the other corner, and they're a bit sweet, running from a
+  cheerful Hi and a GG to a smiley and a heart.
 
 
-  Your first run of the day also gets a 50 percent XP bonus, so the quests start
-  paying out sooner.
+  Quests on the left are split into Daily, Weekly and Run tabs, and the daily
+  set reads like a blob's chore list, asking you to hop 40 times, vault 15
+  trails and stomp 8 smaller jellies.
 
 
-  Once you're in the pond, a leaderboard in the top corner ranks eight jellies
-  by score, and a round minimap sits in the bottom corner. A bar labeled Glow
-  runs along the bottom of the screen.
+  Those pay 201, 402 and 804 XP, a tidy little ladder where each reward doubles
+  the one before it. Your first run of the day also earns a 50% XP bonus on top.
 
 
-  You can also send four quick emotes: a hi, a gg, a smiley and a heart, which
-  is a friendly thing to say to someone you might stomp a minute later.
+  XP raises your level, which starts at 1 and needs 214 XP before you reach the
+  next one.
 
 
-  You start at Level 1 as a Droplet, and a reward road lists what's coming: a
-  Party Cone hat at level 2, a Coral color at level 3 and a Ribbon Bow hat at
-  level 4. There's a button to save your progress, too.
+  The reward road shows what's ahead for your increasingly well-dressed blob,
+  starting with a Party Cone hat at level 2. A Coral color follows at level 3.
+  Then a Ribbon Bow hat waits at level 4.
 
 
-  The creator says AI wrote all of the code, shaped by hundreds of rounds of
-  their own instructions. The game was built once, then remade with a different
-  model.
+  A Profile & trophies panel keeps your personal bests, and if you want Color
+  Shift, that one's a paid unlock.
+
+
+  All of the code came from the AI, steered by Kvickan through hundreds of
+  iterations of input and instructions. The game was built with one model first
+  and then remade with another.
 play:
   url: https://jellyblob.win
   embeddable: false

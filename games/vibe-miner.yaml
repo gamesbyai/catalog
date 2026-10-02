@@ -2,31 +2,34 @@ slug: vibe-miner
 title: Vibe-Miner
 tagline: Dig deeper, fight enemies, and return to the surface to upgrade.
 description: >-
-  You start on the surface at 0 meters, standing on a strip of dirt with a
-  little shop on the left. Your health bar reads 100, and beside it there's an
-  orange gauge with a fuel icon, set at 30. Below you is a stretch of dark
-  pixel-art soil waiting to be dug.
+  A pixel-art miner stands on a strip of dirt at 0 m depth, right beside a gap
+  in the ground. Off at the left edge of the surface there's a shop building
+  with its name in big letters. Your HUD starts with a health bar at 100, fuel
+  at 30, a points counter, a money total and a backpack with 0 of its 10 slots
+  filled.
 
 
-  A hotbar along the bottom has six slots, and you begin with a pickaxe and a
-  grapple. The other four are empty, so there's room to carry more as you go.
+  The plan is to dig down through a side-view 2D map, fighting the enemies you
+  run into and grabbing resources along the way. Then you haul it all back up to
+  the surface, upgrade and push deeper than last time.
 
 
-  Your backpack only holds ten items, so you'll be coming back up often.
+  A depth meter in the top right corner keeps track of how far down you've
+  gotten.
 
 
-  The loop is simple: dig down, fight the enemies you meet, and pick up
-  resources, which is why the pack counter sits right next to your money. Then
-  you head back up to the surface and spend what you found at the shop on
-  upgrades, so the next trip can go deeper.
+  Along the bottom runs a six-slot hotbar. Your pickaxe sits in slot 1, and a
+  grapple tool in slot 2 makes sense for someone who keeps climbing back out of
+  their own hole. The other four slots start out empty.
 
 
-  A depth readout and a points counter sit at the top of the screen, and the
-  title menu has a leaderboard.
+  danbuildsstuff points to Miner Dig Deep and Minecraft as the games it's
+  closest to.
 
 
-  The creator describes it as a 2D vertical mining game, in the spirit of miner
-  games and Minecraft.
+  The main menu doesn't waste your time, with just a play button and a
+  leaderboards button. A little pixel miner with a pack on his back stands next
+  to them.
 play:
   url: https://vibe-miner.xyz
   embeddable: true

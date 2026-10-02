@@ -3,32 +3,40 @@ title: Ship Snatch
 tagline: Build a hex archipelago and defend your Captain's Keep from enemy ships
   and sea monsters.
 description: >-
-  You're trying to keep the Captain's Keep standing while waves of enemy ships
-  and sea monsters close in on it. You grow your archipelago one hex at a time,
-  and you place defenses on it and upgrade them as you go. Cannons are what
-  you'll see lined up around the castle.
+  Pirate ships and tentacled sea creatures come at your castle in waves, and
+  your job is to keep the Captain's Keep standing through all of them.
+  Everything plays out in real time on a top-down map made of hexagonal tiles. A
+  three-line motto on the title screen tells you to build your island, defend
+  the Keep and hold back the waves.
 
 
-  It's a top-down tower defense with a base builder folded in, so the island
-  you're defending is something you keep adding to.
+  Your island grows one hex at a time, so you're slowly stretching it out into a
+  little chain of islands. You place defenses and upgrade them, but only on
+  ground you've already claimed, which means your coastline decides where your
+  cannons can stand.
 
 
-  Everything looks sculpted from modeling clay, from the boats to the palm
-  trees.
+  Those cannons sit on the tiles around the central keep and fire at ships
+  sailing in across the water, while purple tentacles rise out of the sea close
+  by.
 
 
-  Before you start, you type in a captain name and pick Start Solo or Start
-  Multiplayer. Co-op lets several captains defend together, and the menu lists
-  any open rooms you can join. A global leaderboard sits on the same screen.
+  It's all modeled to look like clay, from the sand and grass tiles to the small
+  ponds tucked into the land. Palm trees, piles of gold coins and wooden barrels
+  are dotted around the island. Even the pirate flags on the ships and the
+  castle tower get the same soft, handmade treatment.
 
 
-  Kraken tentacles curl up out of the water around the island, which is a cute
-  way to threaten a pirate fort.
+  Before anything starts, the game asks you for a captain name and then lets you
+  pick Start Solo or Start Multiplayer.
 
 
-  The creator made it with a 9-year-old nephew in mind, but wanted adults to
-  find it interesting too. It runs in real time in the browser, so there's
-  nothing to install.
+  Multiplayer is co-op, and there's a list of open rooms you can join if someone
+  has already set sail. It comes with a global leaderboard as well.
+
+
+  radomir_3 aimed for a look a nine-year-old would enjoy that adults could still
+  find worth playing.
 play:
   url: https://shipsnatch.com
   embeddable: true

@@ -3,30 +3,34 @@ title: Echo-9
 tagline: Deliver packages on foot through post-apocalyptic Hanoi using a desktop
   and a phone.
 description: >-
-  You're a delivery courier on foot in Hanoi in 2055, carrying bowls of phở
-  across a city where the grid is out. Thousands of scooters share the streets
-  with you, so every delivery means staying out of their way.
+  Bowls of phở need to get across Hanoi on foot in 2055, after the grid's gone
+  dark, and you're the courier carrying them. Thousands of scooters still crowd
+  the streets, and you steer around them with WASD on your computer while you
+  head for each drop-off.
 
 
-  You walk your courier with WASD on the desktop, and the phone handles the rest
-  of the job.
+  It's built for two screens at once, and your phone ends up doing a
+  surprisingly large share of the work.
 
 
-  That's the odd part, because the phone isn't just a second screen. You scan a
-  QR code or paste a link into your phone to pair it, and then it becomes your
-  map and your flashlight, which is a sensible kit for a blacked-out city.
+  On the phone you get your map and your flashlight. It also goes in your pocket
+  as a balance sensor that you're supposed to keep steady, which is a bit of a
+  funny thing to ask of someone weaving through scooter traffic. Beyond that, it
+  gives you buttons and a mission briefing, and it reads the accelerometer.
 
 
-  It's also a balance sensor in your pocket, so you're asked to keep it steady,
-  and it carries buttons and a mission briefing too.
+  To pair the two, you scan the QR code on the title screen or copy its session
+  link over to your phone, though a small link there also lets you play without
+  a phone at all.
 
 
-  The creator grew up loving Another World from 1991 and wanted that same mood
-  in 3D. Using the phone alongside the desktop was the twist added on top.
+  Settings and Highscores sit on that same title screen. Behind them is pretty
+  moody art of a ruined, overgrown city block, lit by a few red signs.
 
 
-  If you don't have a phone handy, the title screen has a play-without-a-phone
-  link. The menu also offers settings and a highscores page.
+  tonnoz loved Another World (1991) as a kid and set out to recreate that game's
+  mood in 3D. The dark, abandoned Hanoi fits that goal. They also added the
+  phone as a second device, for novelty.
 play:
   url: https://echo9.tonnoz.com
   embeddable: false

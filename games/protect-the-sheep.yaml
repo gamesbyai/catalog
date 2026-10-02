@@ -2,37 +2,48 @@ slug: protect-the-sheep
 title: Protect the Sheep
 tagline: Build towers to hold off thirty-five waves of enemies and keep one sheep alive.
 description: >-
-  You spend gold on towers to hold off monsters that are heading for one sheep
-  in a fenced pen. The sheep has a health bar that starts at 100, and the goal
-  is to keep it alive through every wave.
+  Spend your gold on towers and stop the monsters before they reach the sheep
+  sitting in its little fenced pen.
 
 
-  There are six kinds of towers and thirty-five waves, which is a decent amount
-  of ground for a game about a single sheep. You start with 100 gold, and the
-  archer, the tower shown first in the build bar, costs 25.
+  You've got 100 gold to start with, and the first tower in the bar along the
+  bottom is the Archer at 25. Six tower archetypes are in the game, plenty of
+  options for guarding a single sheep. Each wave starts when a countdown runs
+  out, but you can press Start wave if you'd rather call it in early.
 
 
-  A countdown ticks toward the next wave, but you can hit Start wave if you'd
-  rather not wait. There's also an Upgrades button, and a speed control with
-  plus and minus buttons that starts at 1x.
+  The sheep has 100 HP, tracked in the top left corner, and your job is to keep
+  it alive through a whole thirty-five waves. The cheerful tutorial greets you
+  with the news that the monsters want mutton, which is a grim thing to hear
+  while you're saying hi to your sheep.
 
 
-  The creator grew up loving the old Warcraft 3 tower defense maps, and that's
-  where the idea came from.
+  That short tutorial covers the sheep and the basics the first time the game
+  loads.
 
 
-  From the main menu you can play solo or play against an AI. You can also host
-  a game or join one, so the sheep doesn't have to be a one-person job.
+  An Upgrades menu sits right next to your gold counter. Plus and minus buttons
+  let you speed the game up or slow it back down. Music and sound effects even
+  get their own separate volume sliders, more audio control than you'd expect
+  for a game about one sheep.
 
 
-  A short tutorial introduces the sheep first, and you can skip it. Music and
-  sound effects have their own volume sliders in the corner.
+  Play Solo is only one of the options on the main menu, because there's also
+  Play vs AI, Host Game and Join Game. Those last two let you take on another
+  player online.
+
+
+  henrikvberglund based it on the old Warcraft III tower defense maps they loved
+  as a kid.
 play:
   url: https://protect-the-sheep.henrikvilhelmberglund.com
   embeddable: true
   platforms:
     - browser
     - mobile
+  controls:
+    - "Start wave button: call the next wave early"
+    - "+ / − buttons: change game speed"
 creator:
   name: henrikvberglund
   handle: henrikvberglund

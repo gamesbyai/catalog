@@ -2,32 +2,35 @@ slug: blizzard-brawl
 title: BLIZZARD BRAWL
 tagline: Build snow defenses and throw gadgets at rivals in a shrinking frozen arena.
 description: >-
-  Move with WASD, aim with the cursor and click to throw snowballs. You're a
-  blocky little fighter on a round frozen arena with snowy pines and rocks
-  scattered around, and the rival is another fighter in the same ring.
+  Move with WASD, aim with your cursor and click to throw snowballs. The game
+  drops you straight into a local solo arena against a bot, and that round keeps
+  going until you decide to queue for a duel.
 
 
-  Pressing 1, 2 or 3 picks a wall, a turret or a heater, and a click places it.
-  If you change your mind, Escape or a right click cancels the placement. So
-  you're building your side of the arena as well as throwing.
+  When matchmaking finds a rival, you can jump into a live 1v1. seanDDari
+  describes those duels as building defenses, deploying gadgets and outplaying
+  the other player while the frozen arena shrinks around you.
 
 
-  The arena shrinks while the round runs, which is a good reason to think about
-  where you put things.
+  The on-screen controls panel lists three build keys: 1 for a wall, 2 for a
+  turret and, oddly enough for a snowball fight, 3 for a heater. Left click
+  throws a snowball, but it places your selected item instead when you've picked
+  one. If you change your mind, Escape or right click cancels it.
 
 
-  When the page loads you're already in a solo sandbox against a bot, so there's
-  nothing to wait for. A duel queue sits idle until you press the button to join
-  it, and the practice keeps going until you do. Once matchmaking finds a rival,
-  you're in a live one-on-one.
+  Every fight happens on a round sheet of ice under an angled overhead camera.
 
 
-  Lose and a defeat screen tells you that you were eliminated. From there you
-  can restart the round or go straight back into the queue.
+  Snow-capped rocks and pine trees are scattered across it. The little blocky
+  fighters look a bit like they wandered out of a toy box.
 
 
-  The creator got the idea from an article about levelsio making money from a
-  game he built in three hours.
+  When a round ends, a result screen such as a defeat by elimination lets you
+  restart the round or queue for a duel.
+
+
+  seanDDari made it after reading an article about levelsio earning money from a
+  game he'd built in just three hours.
 play:
   url: https://jenemia.github.io/SnowBattle
   embeddable: true

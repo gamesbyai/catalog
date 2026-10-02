@@ -3,39 +3,53 @@ title: "Star Conquest - Era I: The Cradle"
 tagline: Run a colony economy across the solar system in pausable real time,
   then face the Swarm.
 description: >-
-  Drag to pan the map, scroll to zoom, and click any planet, station or ship to
-  inspect it. The planets move along real orbits, so freighters follow curved
-  flight paths and the windows for transfers open and close as worlds line up.
+  Drag to pan the map, scroll to zoom, and click any planet, moon, station,
+  fleet or freighter to inspect it. It's a pausable real-time 4X that covers our
+  whole solar system from Mercury to Pluto, and the planets follow real orbits
+  while freighters fly actual trajectories between them.
 
 
-  Space pauses the clock, and you can run time anywhere from a tenth of normal
-  speed up to 120 times.
+  Your colonies produce into stockpiles, but goods only count once a convoy
+  hauls them home and they land.
 
 
-  Colonies build up stockpiles and convoys carry them home, and a shipment only
-  adds to your treasury after it arrives. Populations grow toward a cap on each
-  world, research takes real time, and no two worlds are worth the same.
+  Transfer windows and planetary alignment matter a lot because of that,
+  especially when a delivery from Callisto has to make it across half the system
+  first. Each world's population climbs toward the cap its habitat allows, and
+  research takes real time. A surprisingly thorough colony list in the corner
+  keeps track of each world's stock, daily output and when its next window
+  opens.
 
 
-  Three pirate clans raid every faction's shipping from armed havens. You can
-  hire escorts, commission corvettes, put up orbital defense platforms, or
-  destroy a haven and finish that clan permanently. Two rival factions run an
-  economy like yours, so you can sign pacts, pay for a ceasefire mid-fight, or
-  team up against the pirates.
+  Three named pirate clans prey on shipping from every faction while working out
+  of armed havens. You can pay for escorts, order corvettes or put up orbital
+  defense platforms.
 
 
-  Conquest is allowed too, but reputation acts as money, so protecting civilians
-  earns it, mercenaries and settlers spend it, and taking worlds burns it.
+  You can also burn a haven out, which ends that clan for good.
 
 
-  In year five the probes beyond Pluto go quiet and the Swarm shows up, a wave
-  of ships stronger than anything you can field. It attacks everyone, so every
-  human war stops at once, which is a neat way to force a truce. You can win
-  through Dominion, Endurance or Swarm Broken, and there's only one way to lose.
+  Both rival factions run on the same economy as you, and you can sign
+  non-aggression pacts with them, buy peace in the middle of a war, join strikes
+  on the pirates, or raid and conquer their worlds.
 
 
-  Difficulty runs from a forgiving Cadet to Admiral, where the Swarm has 25
-  vessels. Saving uses a single slot kept in your browser.
+  Reputation doubles as money here, a clever bit of bookkeeping. Protecting
+  civilians earns it, mercenaries and settlers cost it, and conquest drains it.
+  Every world you take eats into the standing you'd otherwise spend on settlers.
+
+
+  Then year five comes and the Swarm arrives, a wave of vessels that attacks
+  everyone and outguns anything humans can build. Every human war falls silent
+  the moment it shows up. You can win through Dominion before it lands, through
+  Endurance by holding Earth, or through Swarm Broken by destroying the wave,
+  while Defeat is the only way to lose.
+
+
+  Three difficulty levels run from Cadet up to Admiral, which brings a 25-vessel
+  Swarm. Time compression stretches from 0.1x all the way to 120x. There's one
+  save slot that persists in your browser, along with an event log and a
+  synthesized ambient score.
 play:
   url: https://kenjamingames.itch.io/star-conquest
   embeddable: false

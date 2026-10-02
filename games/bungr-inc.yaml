@@ -2,33 +2,36 @@ slug: bungr-inc
 title: BUNGR INC.
 tagline: Cook burgers in a cursed kitchen to earn your way to freedom.
 description: >-
-  You're a worker in a dim kitchen full of pipes, looking around in first person
-  with a small crosshair in the middle of the screen. The deal is simple: make
-  burgers until you've earned your freedom, which is a grim arrangement for a
-  fast food job.
+  You're the cook on a burger line in a dim kitchen of exposed pipes, making
+  burgers to earn your freedom.
 
 
-  Day one asks for $70, so you know the target before you've touched a bun.
+  Orders come in as tickets on a brown board on the wall, and between orders the
+  board sits there a bit forlornly, saying it's waiting for the next ticket. You
+  see it all in first person, with a small crosshair in the middle of the screen
+  marking whatever you're pointing at.
 
 
-  A brown board on the wall shows that quota next to the cash you've made so
-  far. Orders show up on it as tickets, and when nothing's waiting it tells you
-  it's holding for the next one. A clock in the top corner counts the day down
-  from just over three minutes.
+  Each day runs on a countdown clock. The board also keeps your cash next to a
+  quota, and on Day 1 that quota is $70. It's a blunt way for a company to
+  measure you, especially after a welcome banner has already told you to produce
+  value.
 
 
-  The ingredients start at a counter with a separate tray for each one. You can
-  see a bun, a tomato, a slice of cheese and a few other toppings laid out in a
-  row, and a picture chart hangs on the wall nearby.
+  Ingredients start on a pretty well-stocked counter tray of buns, patties,
+  cheese, tomato slices and other toppings, with a card of matching icons on the
+  wall.
 
 
-  There's also a radio on the wall that interrupts you while you work. A message
-  tells you to listen when it does, which is an odd instruction to get in a
-  burger kitchen where you're working off your freedom.
+  There's also a radio on the wall, and it interrupts your shift. When it does,
+  a prompt tells you to listen. The same black-and-gold banners that greet you
+  at the start also label the ingredient counter and the radio, which is
+  considerate onboarding for such an unfriendly workplace.
 
 
-  The creator liked pairing kitchen simulation with a cursed world and its look,
-  and the gloomy lighting and pipes overhead carry that.
+  The cursed setting comes through in the grainy, dithered look and the grimy
+  kitchen under fluorescent tubes, where the warm signage stands out sharply
+  against all that gray.
 play:
   url: https://bungr.net
   embeddable: true

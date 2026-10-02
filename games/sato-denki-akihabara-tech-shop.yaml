@@ -3,33 +3,34 @@ title: Sato Denki — Akihabara Tech Shop
 tagline: Chain fast combo shifts to keep your hospitalized dad's Akihabara tech
   shop afloat.
 description: >-
-  You click an item from your inventory to hand each customer whatever they're
-  asking for, and the whole round runs on a 30-second loop. The pace comes from
-  rapid-fire combo shifts borrowed from Street Fighter, which is a funny thing
-  to build a shop counter around.
+  Oddly enough, this shop simulation has you chaining rapid combo shifts in the
+  style of Street Fighter while you run the counter in quick rounds. A shift is
+  a 30-second loop where you click your inventory to hand each customer whatever
+  they're asking for.
 
 
-  You're running Sato Denki, an Akihabara electronics shop your dad has kept
-  going for 40 years. He's in Keio Hospital now, so the shop's yours, and you
-  have to stock smart and serve fast or the bank wins. Hiroshi-san sits at
-  ¥8800, and that's the number you're trying to out-sell.
+  Your dad's in Keio Hospital, which leaves you in charge of a family
+  electronics store in Akihabara that's been open for 40 years. The bank wants
+  it, so each round is about bringing in enough money before the bank wins. You
+  even get to type in a name for the shop before you open the doors.
 
 
-  That's a pretty heavy reason to be selling gadgets, when you think about it.
+  SYSTEMCRASH92 designed it to work like a casino machine, with short rounds,
+  loud combo feedback and global stakes meant to pull you back for one more run.
 
 
-  Before you open, you can type a name for your shop, and it stays Sato-kun if
-  you leave it alone. Then you hit the big orange button to open the doors.
+  Every sprite came out of DogSprite, an AI pixel art tool they were building on
+  their own. Having one generator make all of it is a clever way to keep the
+  shop's look consistent.
 
 
-  The creator wanted the whole thing to feel like a casino machine, which
-  explains the speed.
+  The title screen sets the mood nicely with a glowing yellow sign, a dark
+  purple backdrop and the shop's name in Japanese, 佐藤電気.
 
 
-  So you get fast rounds, loud combos and global stakes meant to pull you back
-  for one more run. Claude Code wrote about 99% of the code, and every sprite
-  came from DogSprite, the creator's own pixel art tool, which started working
-  the same day the jam was announced.
+  SYSTEMCRASH92 made the game to test that pixel art generator and their coding
+  workflow together, from start to finish. According to them, Claude Code wrote
+  99% of the code. They call the project 100% vibe coded.
 play:
   url: https://sato-denki-eight.vercel.app
   embeddable: true
@@ -37,7 +38,7 @@ play:
     - browser
     - mobile
   controls:
-    - "Click: pick inventory item and serve the customer"
+    - "Click inventory: serve what the customer wants"
 creator:
   name: SYSTEMCRASH92
   handle: systemcrash92

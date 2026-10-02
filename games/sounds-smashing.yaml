@@ -2,32 +2,36 @@ slug: sounds-smashing
 title: Sounds Smashing!
 tagline: Smash blocks in time with the beat to build melodies and earn coins.
 description: >-
-  You smash blocks in time with the music in Sounds Smashing!, and each hit adds
-  a note to the melody you're building. It's physics based, so wrecking things
-  is how you play the tune.
+  Sounds Smashing! has you breaking blocks in time with the music, and every
+  smash adds another note to the melody. The things you're wrecking are
+  physics-driven, voxel-style structures set in an isometric pixel-art world.
 
 
-  The better your timing on each smash, the more coins you earn for it.
+  The closer your hit lands to the beat, the more coins you earn, which is a
+  neat way to make sloppy timing cost you something.
 
 
-  There's also an online mode for up to 4 players, where you create a room and
-  send friends the link. You pick whether the winner is whoever racks up the
-  most smashes or the most coins. Then you choose an arena, like Gauntlet, Ten
-  Tall Towers, Giraffe Jamboree or Iron Giants, which are pretty funny names for
-  places to wreck.
+  Solo play is split into numbered worlds, but there's also a whole online mode
+  for up to four players. One person creates a room and shares the link, and
+  everyone else joins through it. The host then decides whether the win goes to
+  the most smashes or the most coins.
 
 
-  Before a multiplayer match starts, you also pick which gloves you're wearing.
+  The host also picks the arena from seven options (Gauntlet, Grand Finale, Ten
+  Tall Towers, Towering Ascent, Sandstone Kingdom, Giraffe Jamboree and Iron
+  Giants), and it's hard not to wonder what a jamboree of giraffes looks like
+  mid-smash.
 
 
-  The choices are Dual Spring, Dual Rocket, Spring + Rocket and Bare Fists.
-  Rhythm Assist and Aim Assist can each be turned on or off.
+  Before a match you pick your gloves from Dual Spring, Dual Rocket, Spring +
+  Rocket or Bare Fists. Rhythm Assist and Aim Assist each switch on or off, but
+  rhythm help is set for the whole room while aim help only touches your own
+  game, a clever split when friends play together.
 
 
-  The rhythm one is the same for everyone in the room, so nobody gets a timing
-  edge over the others, while aim assist only affects you. The music is
-  microtonal, and the creator says the game came together over two days of
-  constant vibing.
+  ocorich built it over two days of nonstop work, drawing inspiration from
+  Donkey Kong Bonanza and Minecraft. Rhythm Heaven and microtonal music fed into
+  it as well.
 play:
   url: https://soundssmashing.com
   embeddable: true

@@ -2,27 +2,33 @@ slug: deer-diplomacy
 title: Deer Diplomacy
 tagline: Bow to deer and feed them crackers without letting the herd charge you.
 description: >-
-  You're a tourist wandering Nara Deer Park, and your whole approach is to bow
-  at wild deer until they warm up to you. Once they trust you, you can feed them
-  senbei, which are rice crackers.
+  The setting is Nara Deer Park in Japan, where you're a tourist carrying senbei
+  rice crackers through a herd that notices more than you'd like. Bow to a deer
+  and it starts to trust you, and once it does, you get to feed it a cracker.
 
 
-  The catch is the herd, because if they spot that you're holding food, they
-  charge.
+  Oddly enough, the bowing comes straight from real life, since the actual deer
+  in Nara bow back at visitors who bow to them.
 
 
-  The bowing comes from real life, where Nara's deer return the gesture when a
-  visitor bows first. The game turns that polite exchange into a stealth puzzle,
-  which is a funny fate for such a friendly habit.
+  The rest of the herd is a bit of a problem. If they notice you've got food on
+  you, they charge, and every bow leaves you exposed for about a second and a
+  half.
 
 
-  Each bow leaves you exposed for 1.5 seconds, so you have to weigh every
-  greeting against the herd around you. That short gap is what makes a courteous
-  gesture risky. Your aim is to escape before the herd turns on you.
+  So each bow comes down to timing and to which deer happen to be close enough
+  to notice. It's a funny thing to build a stealth game around, given that the
+  whole visit is about feeding animals. The aim is to hand out your crackers and
+  get away before the herd turns on you.
 
 
-  There's also a daily challenge, and you can start it from the title screen,
-  right beside the regular Play button.
+  Next to the regular Play button there's a daily challenge too.
+
+
+  imshubham31 took that pretty gentle back-and-forth between tourists and deer
+  and turned it into a tense stealth puzzle. It's a clever flip, because the
+  polite little bow is how you win a deer over. It's also the moment you're most
+  exposed to the rest of the herd.
 play:
   url: https://deer-diplomacy.vercel.app
   embeddable: true

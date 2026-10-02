@@ -2,34 +2,35 @@ slug: graviton
 title: GRAVITON
 tagline: Orbit a star and bend photon beams through gravity to destroy enemy waves
 description: >-
-  Your photon beams curve as they pass through gravity wells, so a straight line
-  to an enemy isn't always the shot you want. You orbit a star in a 3D arena,
-  which means every aim is a small orbital puzzle.
+  Your photon beams don't fly straight in this 3D orbital arena, because they
+  travel on curved paths through the gravity around a star. You circle that star
+  and slingshot past gravity wells while waves of enemies come at you.
 
 
-  You thrust around with the keyboard and aim with the mouse, then click to fire
-  at the enemies coming at you in waves. Because the beam bends, you have to
-  think about where the wells sit before you pull the trigger, and the dodging
-  works the same way.
+  It's the pull that shapes every shot you fire. Your dodges bend with it as
+  well, and so do your slingshot maneuvers. With the physics doing that much of
+  the steering, aiming means thinking about where the curve carries the beam
+  rather than where the enemy is right now.
 
 
-  You can also slingshot through the gravity wells, which the title screen puts
-  right in its name for the arena.
+  You thrust the ship with WASD or the arrow keys while the mouse handles
+  aiming, and a left click sends out a photon, which is a fitting name for a
+  shot that gravity bends like light.
 
 
-  Space gives you a gravity boost, and holding Shift raises your mass so you
-  settle into a tighter orbit around the star. That's a neat trade, since you
-  pick how close you hang to the thing that's pulling on everything.
+  Space kicks in a gravity boost. Shift is the odd one out, since it raises your
+  ship's mass, which tightens your orbit around the star.
 
 
-  The creator built it around orbital mechanics and gravitational lensing. They
-  wanted gravity to shape every shot, dodge and slingshot instead of sitting in
-  the background.
+  sivaguru_shiva built the game around orbital mechanics and gravitational
+  lensing, wanting gravity to be the core mechanic instead of something sitting
+  in the background.
 
 
-  Your goal is to destroy the waves of enemies that keep arriving. There's a
-  how-to-play screen next to the launch button if you'd like the rules before
-  you start, which is handy for a game with this many gravity tricks.
+  The title screen is pretty much all black, with GRAVITON glowing in gold above
+  the subtitle Orbital Slingshot Arena. Under that sit a Launch button and a How
+  to Play page. A short list of the controls is printed in small type at the
+  bottom, and you can read the keys before you've even pressed Launch.
 play:
   url: https://graviton-space.netlify.app
   embeddable: true

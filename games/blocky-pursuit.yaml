@@ -2,30 +2,32 @@ slug: blocky-pursuit
 title: Blocky Pursuit
 tagline: Drive through a blocky city and outrun the police without getting busted.
 description: >-
-  In Blocky Pursuit the car drives itself, so your only job is steering it left
-  or right while cops chase you through a blocky city. You see it from an angled
-  overhead view, with roads cutting between houses, trees and patches of water.
+  Blocky Pursuit puts you behind the wheel of a car that drives itself through a
+  blocky city, seen from above at an angle, while the cops chase you and you try
+  not to get busted.
 
 
-  You win by evading the cops and not getting busted, so every turn you take is
-  about staying out of their reach.
+  The only thing you control is turning left or right. You don't have to think
+  about the gas pedal at all, since the car takes care of that part itself.
 
 
-  You can lure the cops into water, which makes sense on a map where blue pools
-  sit right up against the roads. You're also told to stick to the roads, so
-  staying on the pavement matters.
+  The map mixes roads with grass, trees, houses and patches of water. That
+  water's handy for you, because you can lure the cops into it to shake them
+  off. Even so, the on-screen tips tell you to stick to the roads.
 
 
-  Scoring has a twist, because skimming builds a combo that gives you ×3 score.
-  That gives you a reason to cut things close instead of just running away.
+  When you skim close past obstacles, you build a combo that triples your score,
+  so the game rewards you for cutting it fine.
 
 
-  The start menu also has a garage, a leaderboard and a feedback button, plus a
-  small link to star the project on GitHub.
+  Before you start, the menu gives you a garage, a leaderboard and a feedback
+  form. There's a small GitHub link tucked under the buttons too. It all has a
+  chunky low-poly look, with yellow pixel-font headings over a dimmed view of
+  the town.
 
 
-  The creator had played Smashy Road for a long time and made this version of it
-  during one sleepless night.
+  culeeiz built it in one sleepless night, inspired by a long stretch of playing
+  Smashy Road.
 play:
   url: https://blocky-pursuit.netlify.app
   embeddable: true

@@ -3,35 +3,37 @@ title: Solar Drift
 tagline: Fly a spacecraft between planets and slingshot around a true-scale
   solar system.
 description: >-
-  Solar Drift has you flying a small spacecraft around a solar system, and you
-  can pick any body from a destinations list and jump straight to it. Each entry
-  shows its distance and how long light would take to cross it, so you can see
-  how far apart the worlds are.
+  Solar Drift puts you at the controls of a small spacecraft inside a true-scale
+  solar system, with worlds ranging from the Sun down to tiny Pluto. Near Earth
+  you're flying it by hand, but pressing Space boosts the ship all the way to
+  light speed.
 
 
-  When you want to cover real ground, you press Space and the ship boosts to
-  light speed, which is the quick way across all that empty space.
+  A destinations panel lists each body with its distance from the Sun and how
+  long light takes to get there, and each entry gets a pretty vivid one-line
+  sketch, like Mercury being scorched and full of craters.
 
 
-  There's also an expedition to work through, which starts with an Earth survey.
-  You fly to a beacon near Earth's observation shell and finish three scans
-  before a bonus timer runs out, earning points as you go. The route has five
-  stops: Earth, the Moon, Mars, Jupiter and Saturn.
+  From that panel you can jump straight to a body or engage light-speed travel
+  toward it. There's also a size comparison view, which fits a game this focused
+  on real scale. When you pick a world, a side panel fills in with a description
+  of it.
 
 
-  A size comparison mode lines everything up at true scale, from tiny Pluto to
-  the blazing Sun, which is a neat way to see how the planets stack against each
-  other.
+  Choosing Earth starts Expedition 1, the Earth Survey, where you fly out to a
+  beacon near the planet's observation shell and finish 3 scans.
 
 
-  A readout panel shows your nearest body, your distance from it, your ETA at
-  light speed, your ship speed and your flight mode. That's handy when you're
-  crossing this much space.
+  It's only stop 1 of 5 on a whole route that runs Earth, Moon, Mars, Jupiter
+  and Saturn. A points total sits right beside the task, while a bonus timer
+  ticks down next to your scan count.
 
 
-  Selecting a body also brings up a short description, like Earth's weather,
-  cloud cover and blue limb glow. A Show Controls button lists the keys, and the
-  creator built the whole thing around the Artemis II mission.
+  Readouts keep track of the nearest body, how far away it is, your ETA at light
+  speed and the ship's speed. The trip is themed around the Artemis II mission,
+  and oddly enough a Vibe Portal marker hangs in the scene with its own distance
+  attached. The opening shot shows a textured Earth wrapped in clouds, with your
+  ship sitting just below it.
 play:
   url: https://solar.chikocorp.com
   embeddable: true

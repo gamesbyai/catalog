@@ -2,34 +2,34 @@ slug: robot-royale
 title: Robot Royale
 tagline: Fight through a ruined cyber-city arena, upgrading from bare fists to RPGs.
 description: >-
-  You begin with nothing but basic punches and fight your way up to explosive
-  RPGs, crossing a dying cyber-city as a small black robot.
+  Your robot starts out with nothing but its fists, and from there you fight
+  your way up through heavier weapons, with explosive RPGs at the very top,
+  across a crumbling cyber-city arena.
 
 
-  A panel in the top corner tracks your phase, a running timer, your scrap and
-  your level. It also names the weapon you're holding and says a boss is coming
-  at level 5, so you know what you're building toward.
+  The camera hangs at an angle above a small, blocky robot with a single cyan
+  eye. You steer it with WASD and attack with the mouse. Shift sends you into a
+  dash, and Esc pauses.
 
 
-  Dash gets its own line there, which tells you when it's ready again. There's
-  also a button to switch the audio on or off, and another to pause.
+  A panel in the corner keeps track of the phase, the clock, the scrap you've
+  collected and your level, plus the level where the next boss turns up, which
+  starts at Nv.5. It also names your current weapon, humbly listed as Basic
+  Punches at first, and shows when your dash is ready again.
 
 
-  Red pickups with a white cross are lying around on the ground.
+  Below all that, a long red bar stretches across the bottom of the screen.
 
 
-  Tall blocky buildings wall in the arena, and red lines mark the edges of the
-  map. Light cuts across the floor in long, hard shadows, so the whole place
-  looks dark and ruined.
+  Red medical pickups are scattered across the floor between tall, angular
+  towers. Near the edge of the arena there's a glowing green ring with a portal
+  label on it. Long slanting light cuts across the ground and throws pretty
+  dramatic shadows off those towers.
 
 
-  Small dark robots are scattered over the ground, and a green portal labeled as
-  a jam portal glows near the far side of the map.
-
-
-  The creator was thinking about how powerful robots might get once they're
-  combined with AI, which suits a game where you're a robot in a city full of
-  them.
+  According to marssaum, the idea behind it is robots growing more powerful once
+  they're combined with AI, and a robot punching its way up to rocket launchers
+  fits that nicely. Surprisingly, the whole game lives in a single file.
 play:
   url: https://robot-royale.pages.dev
   embeddable: true

@@ -2,34 +2,37 @@ slug: tiny-skies
 title: Tiny Skies
 tagline: Explore a small shared world and relax together while an apocalypse looms.
 description: >-
-  You start in a little green biplane above a small round planet, with a volcano
-  smoking on the horizon and a hot air balloon drifting past. Cobbler Pip pops
-  up with a joke about saving some sky for everyone else, and the first prompt
-  tells you to climb with the Up Arrow.
+  A green biplane hangs over a tiny round planet when the game loads, with a
+  river winding between forested hills, a cluster of white cottages and a
+  smoking volcano in view. A prompt in the corner tells you to climb with the Up
+  Arrow. Meanwhile a striped hot air balloon drifts nearby, and somebody else's
+  plane cuts across the sky.
 
 
-  Other pilots share the sky with you, and their planes carry name tags like
-  Bold Sparrow. The creator wanted a multiplayer game where people just hang out
-  instead of trying to kill each other.
+  Villagers chat with you in speech bubbles, and one of them hands you a parcel
+  for a village they name, like a fisherman's package for Mossglen that's
+  apparently stuffed with jam. Once you're carrying it, the top of the screen
+  shows how far you still have to fly to drop it off.
 
 
-  There's an apocalypse looming over all this, which is an odd shadow for such a
-  cozy place.
+  Over in the sidebar there are two collectible counters, starting at 0/7 and
+  0/3, plus a goal to finish a race, a slightly surprising entry for a game
+  built around hanging out.
 
 
-  Villagers hand you jobs while you fly. Fisherman Cork gives you a parcel full
-  of jam for Mossglen, and a counter at the top shows how many meters you have
-  left to go.
+  A level and XP bar runs along the bottom of the screen. Other players fly
+  around the same world with you, and the room's name and head count show up in
+  the top corner. dannylimanseta wanted a cozy multiplayer game where people
+  hang out instead of trying to kill each other, which makes the apocalypse
+  looming in the background an oddly ominous neighbor.
 
 
-  A level bar at the bottom shows your XP, and in the corner you'll see two
-  counters, 0/7 and 0/3, plus a line telling you to finish a race.
+  The sky doesn't stay put either, showing daytime blue at one moment and a
+  pretty dusky purple streaked with auroras at another.
 
 
-  Pull the camera back and you can see the whole planet, with rivers, forested
-  hills, little white houses with blue roofs, and a map arrow showing where you
-  are. The sky also shifts from bright day to a dusky, starry evening, so it's
-  worth looking up now and then.
+  Up in the top corner you'll find a fullscreen button. A sound toggle sits
+  right beside it.
 play:
   url: https://tinyskies.vercel.app
   embeddable: true

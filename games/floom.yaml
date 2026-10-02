@@ -3,31 +3,35 @@ title: floom
 tagline: Drift through a shared canvas, plant seeds, and grow flowers alongside
   strangers.
 description: >-
-  Press spacebar and a "Keep a memento" window opens with a picture of the
-  meadow and a Download button, so you can save it. A date and time are printed
-  in the corner of the picture.
+  Press play and you're dropped into a shared green field with white seeds
+  floating past. You show up as a small dot with a generated name tag, something
+  like Swift Camellia, and other players turn up in that same space.
 
 
-  It's a quiet multiplayer canvas, so you're sharing it with strangers.
+  It pitches itself as a place where strangers run into each other by chance and
+  leave flowers, sound and brief connections behind, which is a gentle goal for
+  an online game.
 
 
-  You drift through seeds, and the flowers, sounds and moments of connection
-  come about by accident. That fits the creator's inspiration, which was how
-  people shape the world around them and the effect that has on it.
+  Two lines of text in the top right corner count how many of the 49 flowers
+  you've seen and show how long it'll be until the meadow resets. Forty-nine is
+  a surprisingly specific number of flowers to keep track of. A help button sits
+  quietly in the top left.
 
 
-  In the top corner a counter tracks how many of the 49 flowers you've seen, so
-  you've got something to look for besides wandering. Right under it a countdown
-  shows when the meadow resets, which means what you find now won't stay put. A
-  small name tag like Swift Camellia floats beside your dot.
+  Pressing spacebar opens a memento, a snapshot of the field with the date and
+  time stamped in the corner like an old film photo. There's a download button
+  right in that window. Since the meadow resets anyway, it makes sense that you
+  can save a picture of it.
 
 
-  Pretty gentle names for a crowd of strangers, which suits a place this quiet.
+  The bar along the bottom is pretty minimal, with one button each for sharing,
+  taking a snapshot and toggling the sound.
 
 
-  Along the bottom there's a share button, the snapshot button with its spacebar
-  label, and a sound toggle. The title screen is a painted hillside of pink and
-  orange blooms under soft clouds, with a single play button in the middle.
+  jeremiespoken started from the effect people have on the world around them.
+  The other half of that idea is the effect their surroundings have on them in
+  return.
 play:
   url: https://floom-game.vercel.app
   embeddable: true

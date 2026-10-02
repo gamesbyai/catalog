@@ -2,32 +2,34 @@ slug: fishing
 title: Fishing
 tagline: Sail the open sea, cast lures for fish and spend coins on new lures.
 description: >-
-  Hold Space to charge a cast, then hold R to reel the lure back to the boat.
+  Hold Space to charge up a cast and let go to fling the lure out from your
+  boat, and the longer you hold it, the farther the lure flies.
 
 
-  You steer a small boat across open water with the arrow keys or WASD, and the
-  fish are out there with you. A round radar in the corner shows yellow dots for
-  nearby fish, so you can point the boat toward them instead of sailing blind.
-  The readout above it tracks your speed, your heading and how many fish are
-  around.
+  Once it's in the water, hold R to wind it back toward the boat. When it gets
+  there, you're free to cast again. The on-screen tips also point out that fish
+  are drawn to a lure that's moving.
 
 
-  The longer you hold Space, the farther the lure flies. Once it's back at the
-  boat, you cast again.
+  Between casts you steer across open water with WASD or the arrow keys, with S
+  working as the brake. The camera rides behind the boat in third person.
 
 
-  Fish are drawn to moving lures, so reeling is more than a way to get your lure
-  home.
+  A little radar in the top left marks nearby fish as yellow dots, and the
+  readout beside it shows speed in knots, heading and fish left, which gives a
+  casual fishing trip a charter boat's instruments.
 
 
-  A coin counter sits at the top of the screen, and you spend those coins on new
-  lures at the shop button next to your lure slot in the bottom left. You start
-  with a fish-shaped soft lure in slot one, and the number keys 1 to 4 switch
-  between lures.
+  Every catch pays out coins, and they pile up in a counter at the top of the
+  screen. You start with nothing but a soft lure, but the lure shop sells others
+  for those coins. The 1 to 4 keys then swap between the lures you own, so each
+  catch feeds straight back into your tackle box.
 
 
-  Big signs reading Vibe Code Zone sit on platforms out on the water, which is a
-  funny thing to run into at sea.
+  For some reason, big round signs stand on floating platforms around the water,
+  a couple of them cheerfully announcing a "Vibe Code Zone". A panel on the
+  right side of the screen keeps the key list and the fishing tips in view the
+  whole time.
 play:
   url: https://fishing.lureconcept.com
   embeddable: true

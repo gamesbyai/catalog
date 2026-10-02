@@ -2,40 +2,38 @@ slug: dungeon-league
 title: Dungeon League
 tagline: Run a dungeon for sixty seconds and keep adventurers alive but nearly dead
 description: >-
-  You're the dungeon, and the twist is that wiping out the adventurers is the
-  wrong move. You only earn from a party that's still alive, still fighting and
-  badly hurt when the sixty-second timer ends, so you're aiming to leave them
-  hanging on by a sliver.
+  Oddly enough, you score by keeping the adventurers alive, even though you're
+  playing the dungeon they've come to raid. A dead party pays you nothing, and
+  neither does one that walks out early. Your money comes from a group that's
+  still inside, still fighting and badly hurt when the sixty-second raid timer
+  runs out.
 
 
-  You've got three actions: open a door, spawn a monster, or set off a trap.
-  Once a monster is out, you can't recall it, which is why the slime pit on
-  screen warns that holding a party in place works until you add too many and
-  they die.
+  You've got three ways to meddle with them, opening a door, spawning a monster
+  or firing a trap, and each one takes a single click or tap. The on-screen
+  hints tell you to tap a door to stall, a spawner to ambush and a trap to
+  wound.
 
 
-  A door is the only way you get to ease off, and it's a handy one.
+  Once your monsters are out you can't call them back, and your one form of
+  mercy is a door, which you open behind a losing party so they can retreat,
+  heal and return.
 
 
-  Open one behind a party that's losing and they'll retreat, heal and come back
-  for another go, which is an odd way to protect your income. A party that
-  simply walks out early pays nothing either, so you're stalling them without
-  finishing them.
+  By the game's own twisted logic, the perfect raid ends with the healer out of
+  mana and nobody quite dead. Between raids you spend your earnings on another
+  hall, a slime pit or a chest to tempt the greedy ones. Then the league
+  standings update, and the bottom two dungeons get destroyed.
 
 
-  Between raids you spend your earnings on new halls, a slime pit, or a chest
-  that makes the adventurers greedy.
+  It's a ruthless little league, with a whole twenty dungeons at the start and
+  ten rounds to end up as the last one standing.
 
 
-  After that the standings update and the two bottom dungeons get destroyed. You
-  begin in a league of twenty dungeons and have ten rounds to be the one still
-  standing.
-
-
-  On screen you've got a torch-lit pixel-art stone hall, a clock, an energy rate
-  readout and a short standings list showing where your dungeon sits. The
-  creator says AI wrote the code and architecture while they handled the design
-  and balancing, and they kept a dated log explaining each design call.
+  norritt42 handled the game design and balancing, while according to them the
+  code and architecture were written by AI. The project comes with a test suite
+  of 445 tests and a decisions log where each design call is dated and
+  explained.
 play:
   url: https://norritt42.itch.io/dungeon-league
   embeddable: false

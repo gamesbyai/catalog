@@ -2,32 +2,34 @@ slug: gravity-golf
 title: Gravity Golf
 tagline: Guide a golf ball through solar systems using orbital pull
 description: >-
-  In Gravity Golf you drag and release to launch a golf ball through a solar
-  system, where the pull of the bodies out there bends its path.
+  Gravity Golf has you drag back and let go to send a white ball out across a
+  dark field of stars, and then watch everything nearby tug at it.
 
 
-  The first level, Open Lane, puts a glowing sun in the middle with a thin orbit
-  ring around it. A teal planet with a small moon sits off to the right, and
-  farther out there's a dark hole with a purple rim. The background grid bends
-  around the sun, which is a neat way to show where the gravity is.
+  A grid covers the whole board, and it sags around every body sitting on it.
+  Because of that pull, the ball's path bends as it slips past each one. It's a
+  neat way of drawing gravity right onto the playfield, where you can see the
+  dips before you shoot.
 
 
-  There are 160 levels in all, so the map button beside the level name is handy
-  for looking over the whole set. If a shot goes wrong, you can retry the level
-  or undo your last move.
+  Open Lane, the first level, already puts a yellow sun in the middle of things,
+  wrapped in a thin orbit ring. There's also a teal planet with a small moon
+  tucked against it, plus a dark purple ring off on the right, while a gold ring
+  waits down in the lower left corner.
 
 
-  Retry and undo sit in the top corner with their keys printed right on the
-  buttons.
+  The header counts Level 1 of 160, a surprising amount of space to cover, with
+  a map icon sitting right beside it.
 
 
-  The creator had just played Outer Wilds and got fascinated by orbital
-  mechanics, so they built a puzzle around that theme. Golf gives it one simple
-  verb, which leaves the interesting part to reading how the planets will bend
-  your ball.
+  There's a considerate safety net for bad shots. Retry and Undo buttons sit in
+  the top right corner, and they're tied to the R and Z keys. A small how-to
+  card also walks you through the drag-and-release launch.
 
 
-  A small how-to card on the first level shows the drag-and-release launch.
+  RichardGerum says the idea came from playing Outer Wilds and wanting to
+  explore orbital mechanics further. The levels carry the ball through different
+  solar systems, with gravity itself as the puzzle.
 play:
   url: https://gravity-golf-olive.vercel.app
   embeddable: true

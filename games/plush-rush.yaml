@@ -2,40 +2,40 @@ slug: plush-rush
 title: Plush Rush
 tagline: Steer a plushie through three lanes of a real stock chart and chase P&L.
 description: >-
-  You're a fluffy plush bear running down a three-lane track, and the screen
-  around you looks like a trading desk. A trade log sits on the left and a MACD
-  histogram on the right, while your balance and a big ticker price hang at the
-  top.
+  A fuzzy plush bear jogs down a peach-colored three-lane track lined with
+  coins, while a trade log scrolls on the left and a MACD chart fills the right
+  side. It's an endless runner, except the course is built from real market
+  prices, so the price moves decide how the lanes play out. You pick any ticker
+  you like, then guide the 3D plushie along a course whose numbers come from
+  Alpaca and Yahoo Finance.
 
 
-  Coins and green orbs come toward you along the lanes, and a small orange label
-  tells you when to jump. The price readout shows a bar count, like 61/61 for
-  SPY, so you can see how much of the session is left.
+  A big counter at the top tracks your account, which starts from $1 million,
+  and a tag under it shows if you're short or flat at the moment. The left panel
+  fills up with buys, sells, shorts and covers as you run, each one showing its
+  price and what it gained or lost — a trading floor dressed up in stuffed
+  animals.
 
 
-  Your current position shows as a tag, such as Short or Flat, right under the
-  balance.
+  There are two ways to play, with Morning Bell sending you through the first
+  hour of trading while the live replay grabs the latest hour and runs it back
+  at 60 times speed.
 
 
-  Every buy, sell, short and cover lands in the log with its price, and the
-  closed trades show a profit or loss in red or green. Next to your balance
-  there's a percentage telling you how far you are from the best possible
-  result, which is a pretty blunt way to be graded.
+  Either way, an hour of price action gets squeezed into about a minute of
+  running. Your profit and loss lands on a leaderboard. The score also shows how
+  far off you are from an "optimal" figure in the corner, which is a pretty
+  humbling number to keep on screen.
 
 
-  You pick any ticker you like, so you're not stuck with one stock.
+  lazy__lazers notes that the game isn't perfectly accurate and that slippage is
+  likely.
 
 
-  Then you choose between Morning Bell, which covers the first hour of the
-  market day, and a live replay mode running at 60 times speed. Either way an
-  hour gets squeezed into about a minute, and your profit and loss goes onto a
-  leaderboard.
-
-
-  The price data comes from Alpaca and Yahoo Finance, so the moves are real. The
-  creator admits it isn't perfectly accurate and slippage is likely, but the
-  idea came from watching kids play Subway Surfer with other videos running
-  beside it, which reminded them of traders with eight monitors.
+  Watching kids play a Subway Surfers-style runner with TikTok or a couple of
+  picture-in-picture videos going at once gave lazy__lazers the idea. It brought
+  to mind traders keeping an eye on lots of charts at once, and they figured
+  stock data would fit three lanes really well.
 play:
   url: https://plush-rush.netlify.app/game_001.html
   embeddable: true

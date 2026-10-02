@@ -2,33 +2,33 @@ slug: bumper-king
 title: Bumper King
 tagline: Ram rival bumper cars, grab powerups, and fight to hold the crown.
 description: >-
-  You steer a little car around a tiled arena and ram rival cars to knock them
-  out. Every colored orb you pick up makes you bigger and stronger, which is the
-  growth loop the creator borrowed from Snake.io and blended with bumper cars.
+  Every glowing pickup you scoop up makes your bumper car bigger and stronger,
+  while you steer it around a tiled arena looking for someone to hit. Ramming
+  the rival cars is how you knock them out.
 
 
-  The goal is to become King and hold the crown. A scoreboard in the corner
-  ranks the top ten, and once you're in that group your own name and score sit
-  in the list, so you can see how far you are from first. The rivals wear name
-  tags like Bot Zap Wagon, and the scoreboard is packed with bot names too.
+  All that ramming is aimed at the scoreboard. A ten-row list on the left ranks
+  you against rival cars with names like Bot Turbo Toast and Bot Bonkzilla, and
+  the goal is to reach the top spot, become King and then hold on to the crown.
 
 
-  Four powerups are laid out in a side panel, so you don't have to guess what
-  they do.
+  Four powerups turn up around the arena, and a side panel lists them: Speed
+  gives a boost, Mega Bump makes your hits stronger, Shield protects you, and
+  Magnet, oddly enough, blasts nearby cars away instead of pulling them in.
 
 
-  Speed gives you a boost, Mega Bump makes your hits stronger, Shield protects
-  you, and Magnet blasts cars away from you. The creator also describes hazards
-  to dodge while you fight for the crown.
+  Hazards sit on the arena floor too, and they're there to be dodged. The same
+  panel squeezes the whole game into four words (drive, bump, grow, survive),
+  which covers it pretty neatly.
 
 
-  A how-to-play panel stays on the left edge while you drive, which is
-  considerate because you never have to memorize the rules.
+  You drive with WASD or the arrow keys, and there's a touch joystick as well.
 
 
-  Before you start, you type a username, and the start screen shows your best
-  score. The floor is a tiled stage lit in purple and blue, with small glowing
-  orbs scattered across it. The menu also has a sound toggle and an info button.
+  It all starts on a title screen where you type a username and can see your
+  best score. Pressing Enter Arena puts you out on the floor with the rival
+  cars. xwerux describes the idea as bumper cars mixed with the
+  grow-and-take-over pattern of Snake.io.
 play:
   url: https://bumper-king.vercel.app
   embeddable: true

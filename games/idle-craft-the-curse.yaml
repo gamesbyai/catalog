@@ -3,34 +3,35 @@ title: "IDLE-CRAFT: The Curse"
 tagline: Gather, forge card decks, and fight through permadeath runs solo or
   with friends.
 description: >-
-  You gather materials, forge them into a deck of cards, and send your character
-  out to survive, with the fighting running idle-style. Death is permanent, so
-  when your character falls the run is over. Then you start the climb again,
-  which means every deck you build only serves one life.
+  Every run is an idle survival expedition that loops through three jobs: you
+  gather resources, forge them into a deck of cards, then fight with the deck
+  you've built. Permadeath ends it. When it does, the next attempt starts the
+  climb over from the very beginning.
 
 
-  Before anything else, you type in a survivor name, and a button checks whether
-  somebody already has it.
+  Before any of that, you pick a survivor name and run it through an
+  availability check, a surprisingly formal bit of ceremony given the game says
+  that name carries through every expedition you take.
 
 
-  Going solo gives you a whole expedition by yourself in the browser. If you'd
-  rather have company, you pick a co-op caravan, a 1v1 Hunter duel or a 3v3
-  Forge clash, and each one sets up a short online lobby.
+  Then you choose how you're going in. Solo sends you on a full expedition
+  against the wilds, while Co-op caravan, Hunter duel (1v1) and Forge clash
+  (3v3) open a quick online lobby where the host launches and everyone plays the
+  same survival loop.
 
 
-  Once the host launches, everybody is playing the same survival loop, so the
-  duels and the team clash run on the same gathering and deck forging as a solo
-  run. The dock you start in is built entirely from code, with layered shapes
-  and physically based lighting instead of imported models, which is a neat
-  trick for a browser game. The interface has a dark, metallic forged-iron look.
+  An illustrated intro shows a bearded wizard in blue robes with a glowing hand
+  and a moon hanging over the mountains behind him. "Once, the rivers obeyed
+  me," he tells you, and it's a pretty gloomy, grand way to open a game about
+  crafting cards. You can skip it with the button or with Esc, Space or Enter.
 
 
-  The game opens on a short story scene with a bearded sorcerer in blue robes,
-  magic glowing in his hands, remembering that the rivers once obeyed him.
+  The run plays out on a procedural dock built from layered code geometry, and
+  the game makes a whole point of using no imported meshes at all.
 
 
-  You can skip it with a key press or the button in the corner. The creator says
-  they just wanted to make something they'd want to play themselves.
+  The interface is dressed up as forged iron. Setup happens on a dark panel, and
+  a progress bar fills while the scene builds its lights and shadows.
 play:
   url: https://idle-craft1.netlify.app
   embeddable: true

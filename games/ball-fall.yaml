@@ -2,28 +2,35 @@ slug: ball-fall
 title: Ball Fall
 tagline: Roll a ball across collapsing tiles and outlast rivals until they fall.
 description: >-
-  You roll a ball across a grid of floor tiles inside a dark arena ringed with
-  stands, and the tiles start vanishing under you. Staying on solid ground is
-  the whole job.
+  A square floor of blue tiles sits in the middle of a dark, round arena, and
+  you roll a ball across it while the tiles collapse. Your job is to steer
+  around the gaps and outlast your rivals until someone takes the plunge.
 
 
-  Each round opens with a 3, 2, 1 countdown, and the hint on screen tells you to
-  start moving before the floor begins to go, which makes sense because standing
-  still is what gets you dropped. A small panel in the corner tracks your score,
-  a multiplier and a running timer.
+  Every round gives you a polite 3, 2, 1 countdown first, and then a prompt down
+  in the corner warns you to get moving before the floor starts disappearing
+  under you.
 
 
-  On your own, you're chasing a score, and there's a top ten list to climb. The
-  online multiplayer mode puts you on the same collapsing floor as rivals, so
-  the last one still rolling wins.
+  A strip along the top tracks your score, a multiplier that starts at x1, and a
+  running timer. The title screen sells it, a bit grandly, as tactical
+  floor-collapse action. It's a fair pitch for a game where the ground itself is
+  what you're fighting.
 
 
-  The main menu also holds a how-to-play guide and an About page.
+  You can take on a round solo, or jump into an online match where your rivals
+  are other players.
 
 
-  It's an homage to the original Ball Fall by Brian Elting. A track called
-  Falling In Perfect Chaos by figwad plays during the round, which is a pretty
-  good name for a floor that keeps falling apart.
+  The main menu also holds a top 10 high score table, a How to Play guide and an
+  About page. You get around those menus with a keyboard or a gamepad, and the
+  controls for both are helpfully printed right under the buttons.
+
+
+  figwad made the soundtrack as well, a track called Falling In Perfect Chaos,
+  which is a pretty fitting name for music played over a crumbling floor. The
+  game is an homage to Ball Fall by Brian Elting. figwad names the indie 2D Game
+  Maker games of the early 2000s as its inspiration.
 play:
   url: https://ballfall.net
   embeddable: true

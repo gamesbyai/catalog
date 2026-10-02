@@ -2,28 +2,34 @@ slug: blood-blade
 title: Blood&Blade
 tagline: Fight melee duels with directional attacks and blocks in the browser.
 description: >-
-  Left click to attack, and hold the button to aim the direction of the swing.
-  Right click blocks. Where you click on the screen decides the direction of
-  both, so you pick which side you're striking or guarding.
+  Type a warrior name, then press Enter the Battlefield to join. There's one
+  shared multiplayer world to drop into, and the menu lists room for a whole 64
+  warriors in it.
 
 
-  The creator loves the combat in Mount & Blade, with its directional attacks
-  and directional blocks, and wanted to rebuild just the melee side in a
-  browser. That's why there are no horses here, only you and a blade.
+  Every fight here is melee, so it always comes down to blade against blade.
 
 
-  You type a warrior name, press the button to enter the battlefield, and land
-  in one shared multiplayer world. The lobby says it holds 64 warriors, which is
-  a lot of people to share a single field with.
+  To swing, you hold left click, and the spot on screen where you click decides
+  which direction the blow comes from. Right click blocks, and it reads your
+  click position the same way, which gives your guard a direction just like your
+  attacks.
 
 
-  You walk with WASD and look around with the mouse. Escape gives your cursor
-  back when you need it.
+  You move with WASD while the mouse turns your view. When you want your cursor
+  back, ESC lets it go. Handily, all of this sits in a small controls panel
+  right under the name box, along with a note explaining how the click sets your
+  direction.
 
 
-  The arena is a dark, grassy field ringed by walls, with a few blocky trees
-  under a gray sky. If the connection drops, a prompt sends you back to the
-  lobby.
+  The battlefield itself is a dim, grassy arena ringed by dark walls, with a few
+  oddly blocky trees standing around.
+
+
+  zahrdaniel loves the combat in Mount & Blade and wanted to rebuild it in the
+  browser. The plan was to keep its directional attacks and blocks while
+  limiting the fighting to melee. The menu screen goes pretty heavy on a dark
+  red and gold palette, with a glowing title and that short controls panel.
 play:
   url: https://bloodandblade.hexpandify.com
   embeddable: true

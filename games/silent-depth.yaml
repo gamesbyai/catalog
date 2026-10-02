@@ -3,48 +3,44 @@ title: Silent Depth
 tagline: Hunt a convoy by sonar, fire one torpedo attack, then slip away from
   the escorts.
 description: >-
-  You're in a submarine that's powerful but almost blind, and every look around
-  has a price. Raising the periscope or surfacing tells you more about what's
-  out there, but it also makes the escorts more likely to spot you.
+  Every time you raise the periscope or come up to the surface, you learn more
+  about what's out there, but you also get easier to spot. Your submarine
+  carries plenty of firepower but sees surprisingly little, while passive sonar
+  is how you search for the convoy.
 
 
-  That trade is the whole game, and it's a neat thing to build a short run
-  around.
+  Each run is a short extraction roguelite with a tidy three-step order to it:
+  you find a convoy, set up a torpedo attack and then slip away.
 
 
-  A round sonar sweep sits in the top corner, with a ping button next to the
-  depth controls. When you're at periscope depth, a bearing readout under the
-  lens shows which way you're facing, so you turn the scope around the horizon
-  looking for the convoy. The convoy routes are procedurally generated, so each
-  run sends you after a different one.
+  The convoy routes are procedurally generated, so you're chasing a different
+  path every time. You line up the shot through the periscope, where a bearing
+  readout counts around the full 360 degrees as the view turns. Down in the
+  corner, small panels show your depth, a danger level that shifts from Quiet to
+  Search, and how many tubes you have.
 
 
-  Three depth buttons run along the bottom: surface, scope and deep.
+  Switching between surfacing, periscope depth and running deep takes one
+  numbered button each, and the Ping and Fire buttons sit right beside them.
 
 
-  Once you've found the convoy, you line up a torpedo shot and fire. A tube
-  counter in the corner starts at four and goes down as you launch, which means
-  every shot is one you've spent.
+  The opening order on screen tells you to find the convoy and keep the wake
+  small, which is a nice bit of submariner shorthand for not giving yourself
+  away.
 
 
-  The danger readout moves from quiet to search once the escorts start hunting
-  you. Sinking the ship doesn't end the run, because you still have to slip away
-  before they lock onto your position, and a single hit finishes you.
+  The escorts come after you as soon as a torpedo's in the water, and from then
+  on your job is to vanish before they pin down where you are.
 
 
-  The creator built it as a short extraction roguelite around that gap between
-  knowing and hiding, so the pressure after the shot is meant to be the real
-  test.
+  The creator, yibie, built the game around surviving that pressure after the
+  shot rather than only sinking the ship, with one-hit tension throughout.
 play:
   url: https://silent-depth.gtdstudy.com
   embeddable: true
   platforms:
     - browser
     - mobile
-  controls:
-    - "1: surface"
-    - "2: periscope"
-    - "3: deep"
 creator:
   name: yibie
   handle: yibie

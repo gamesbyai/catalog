@@ -2,35 +2,35 @@ slug: hero-nearby
 title: Hero Nearby
 tagline: Run through a neighborhood as a developer and fix people's tech problems.
 description: >-
-  You play a developer running down a neighborhood street with a laptop in hand,
-  and the run keeps going as the distance counter climbs in meters. Your job is
-  to help the locals with their tech troubles as you pass them.
+  A developer with a laptop runs down a pixel-art Italian street in this 2D
+  endless runner, helping the neighbors with whatever tech trouble they've got.
+  Your score climbs in points, labeled pti, with a meter count for distance
+  tucked just under it, and both begin at zero and tick upward as you run.
 
 
-  It's a 2D endless runner, so the street just keeps scrolling.
+  Across the top sits a row of seven counters starting at x0, and the icons are
+  an oddly specific bunch: a printer, a person, two camper vans for some reason,
+  tangled cables, a purple bug and someone lying flat.
 
 
-  Up in the top corner there's a points score next to that distance, which gives
-  you two ways to measure a run. Across the top of the screen sits a row of
-  counters, each with a little icon: a printer, a person, a camper van, a tangle
-  of cables and a few others. They all start at zero, so they seem to tally what
-  you meet along the way.
+  The humor goes after programmer stereotypes, like the old assumption that a
+  developer can fix anything, printers very much included.
 
 
-  The setting is a sunny pixel-art Italian town with orange rooftops, a church
-  tower and olive trees. A signpost reading "help this way" stands by the road.
+  Then there's cable management, which the game treats as the enemy every
+  developer eventually has to face.
 
 
-  The idea comes from Informatici di Quartiere, an Italian non-profit that helps
-  people in local communities handle everyday digital problems through workshops
-  and educational games. The game tells the story of that work in a playful
-  tone.
+  Orange-roofed pastel houses slide by as the street scrolls, along with a bell
+  tower, olive trees and a signpost cheerfully pointing toward Help This Way.
+  Everything starts from a big green Play button set right into that scenery,
+  and pressing it sends the little developer off at a run.
 
 
-  It also pokes fun at programmer stereotypes, like being expected to fix
-  everything, printers included. Cable management gets cast as the developer's
-  inevitable enemy, which is a funny thing to pin on a street full of people who
-  need help.
+  __rockbiter took the idea from Informatici di Quartiere, an Italian non-profit
+  that helps local communities with everyday digital problems. With a light,
+  joking touch, the game retells what the association does. The group itself
+  runs technology workshops and has even made educational video games.
 play:
   url: https://hero-nearby.vercel.app
   embeddable: true

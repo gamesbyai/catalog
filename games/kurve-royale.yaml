@@ -2,28 +2,32 @@ slug: kurve-royale
 title: Kurve Royale
 tagline: Fly a trail-leaving craft and outlast rival pilots inside a shrinking dome.
 description: >-
-  You fly a small glowing orb that paints a thick colored trail behind it, and
-  you steer it in three dimensions. A and D turn you left and right, while W and
-  S climb and dive.
+  Behind your pilot runs a solid colored trail, and you're flying it inside a
+  dome that shrinks over time.
 
 
-  Everyone plays inside a dome that shrinks as the match goes on, so the space
-  you have to fly in keeps getting tighter. The lobby has room for 64 pilots,
-  and the corner of the screen shows how many are in, how many are still alive,
-  and how wide the dome is.
+  Getting into a round is about as quick as it gets. You type a nickname and hit
+  Drop In, the drop starts right away, and once you've landed a countdown runs
+  out before you're allowed to move.
 
 
-  You type a nickname, press Drop In, and the drop starts right away with no
-  menu in between. Once you land, an in-game countdown finishes and then your
-  movement starts.
+  The flight is fully three-dimensional, so height matters as much as heading. A
+  and D turn you, while W and S climb and dive. The camera hangs just behind
+  your pilot, which means you get a pretty clear view of your own trail
+  stretching back into the dome.
 
 
-  The camera sits behind your orb and follows the trail as it curves away across
-  the dark, starry dome.
+  Along the top of the screen, three readouts count the players in the lobby out
+  of 64, how many are still alive, and the dome's current size in units.
 
 
-  Getting eliminated doesn't kick you out of the session. You can stay and
-  spectate the pilots still flying, or jump into a fresh lobby and drop again.
+  Each match is a survival round. Getting knocked out doesn't strand you,
+  either. You can stick around and spectate the rest of the round or jump
+  straight into a fresh lobby.
+
+
+  The look is dark and a bit spare, with faint grid lines curving across the
+  dome under a starry sky.
 play:
   url: https://kurveroyale.com
   embeddable: false

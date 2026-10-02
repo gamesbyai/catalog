@@ -2,39 +2,35 @@ slug: drone-wars
 title: Drone Wars
 tagline: Pilot a combat drone and fight through shooter missions with a full arsenal.
 description: >-
-  In Drone Wars you fly a drone in full 3D, pushing forward and back with
-  thrust, turning with yaw, and using separate keys to climb and drop. Strafing
-  and pitching are on their own keys too, so you're never stuck sliding along a
-  flat plane.
+  Drone Wars puts you in control of a combat drone, flying it through waves of
+  enemies that keep escalating. Before each run you pick a callsign and one of
+  two maps, then launch and try to survive every wave while you rack up salvage.
 
 
-  Before a run you pick a callsign, a battlefield and a build.
+  That salvage is what carries over, because you spend it on permanent upgrades
+  between runs and the hangar keeps them, so every relaunch starts from a drone
+  that's a bit stronger than the last one.
 
 
-  Then the waves start coming, and they get harder as you go, with boss waves
-  mixed in. Wave directives and run mutators change the rules for a given run,
-  which means two launches don't have to look alike. You shoot with one key and
-  trigger an active ability with another, and more abilities can be unlocked
-  over time.
+  There are plenty of keys to learn, since thrust, yaw, pitch, strafe and
+  altitude each get their own. W and S handle thrust while A and D yaw, Q and E
+  change altitude, and the arrow keys cover strafing and pitch. Space fires, F
+  triggers the active ability you've unlocked, and P and R pause or restart.
 
 
-  When a run ends, you take the salvage you picked up to the hangar.
+  For a game built around quick runs, there's a surprising amount layered on top
+  of the basic loop, with run mutators, boss waves, wave directives and missions
+  all part of this build.
 
 
-  Upgrades bought there are permanent, so every new launch starts with a
-  stronger drone than the last one, which is a neat way to make a loss still
-  count for something. The game also remembers your callsign, preferred
-  battlefield and current build in the browser, so you don't have to set them up
-  again.
+  The menu tracks your best score, your best wave, your achievements and how
+  much salvage you've banked. Your callsign, preferred battlefield and current
+  build are remembered in the browser, which is a small kindness when you come
+  back for another go.
 
 
-  There are two maps to fly in. Missions and achievements give you extra goals
-  beyond a high score, and the menu keeps track of your best score, best wave,
-  achievements and salvage.
-
-
-  The creator loves drones and has flown several of them, and that's the reason
-  the whole game is built around them.
+  shrimalmadhur has flown several drones and built the game around that
+  interest, aiming for fast combat in quick runs.
 play:
   url: https://dronewars.madhurshrimal.com
   embeddable: true

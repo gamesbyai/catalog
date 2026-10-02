@@ -2,47 +2,50 @@ slug: last-charge
 title: Last Charge
 tagline: Play or charge cards to build a deck while a Trace meter draws Sentinels.
 description: >-
-  Look at your hand and decide, card by card, whether to play it or charge it.
-  Playing costs the number printed on the card and does its thing right now,
-  while charging costs the card's current level and bumps it up for the rest of
-  the fight.
+  Each turn you get a pool of Amps, and for every card in your hand you choose
+  to play it or charge it. Playing costs the printed price, while charging costs
+  the card's current level and upgrades it for the rest of the fight.
 
 
-  Charging also locks that card until the turn ends, so you're giving up tempo
-  for a stronger card later.
+  Charging also locks that card until your next turn, so building up a card
+  means giving up its tempo right now.
 
 
-  Every charge adds Trace, and when the meter reaches 6 a Sentinel drops into
-  your fight. The meter resets but never to zero, so a greedy deck keeps pulling
-  the Machines toward you.
+  Every charge feeds a Trace track, and when it reaches 6 a Sentinel drops into
+  the fight. The track resets after that. It never goes all the way back to
+  zero, though, which is a neat way of making greed follow you around.
 
 
-  Nothing is hidden, which is a nice fit for a game about counting power. Each
-  Machine shows its next move and damage above its head, and every route node
-  tells you its exact threat rating before you pick it. Armored Crawlers shrug
-  off weak hits, Scanners grow stronger based on how much you charged last turn,
-  and Agents copy your best cards.
+  At least nothing is hidden. Each machine shows its next action and damage
+  above its head, and every node on the route reveals its threat rating before
+  you pick it. The game skips random rolls entirely, so every gamble you take is
+  on numbers you can see.
 
 
-  The 34 cards are organized around four keywords: Grounded, Discharge, Feedback
-  and Conduit. Six bosses are waiting out there.
+  There are 34 cards to build a deck from, plus a pretty compact set of four
+  keywords to build around.
 
 
-  Each trip out is a numbered Charge, and between them you spend Salvage to
-  light up Citadel districts such as Reactor, Archive, Foundry, Shielding and
-  Beacon. Making a district stronger also raises the difficulty across the whole
-  game, so every upgrade costs you something. Fail three Charges and the
-  Sentinels break through the wall, switching off districts on your permanent
-  map.
+  Grounded covers utility that never needs charging, Discharge cashes out every
+  level at once, Feedback turns the charge itself into the attack, and Conduit
+  lets you charge for free.
 
 
-  Once you've gathered 50 Salvage, the final Citadel battle opens up. Trace has
-  no ceiling there, the waves keep coming, and whatever districts you still have
-  turn into cards in your deck.
+  The machines push back against how you play. Armored Crawlers ignore weak
+  hits, Scanners scale with how many charges you made last turn, and Agents
+  rather cheekily copy your best cards. Six different bosses can show up, from
+  the Harvester and Arbiter to the Flywheel and Redactor.
 
 
-  You can play with a mouse, keyboard, touchscreen or gamepad. There's also a
-  reduced-motion mode that still keeps all the visual cues.
+  Each trip out into the dark is a numbered Charge, and between them you spend
+  Salvage to light up Citadel districts like the Reactor, Foundry and Beacon.
+  Lighting them also raises the global difficulty. Fail three Charges and the
+  Sentinels breach the wall and knock districts offline.
+
+
+  Once you've collected 50 Salvage, the final battle opens up with uncapped
+  Trace and waves that never end, while your districts act as cards in a clever
+  twist on the whole meta map. A session runs about an hour.
 play:
   url: https://bittiai.itch.io/last-charge
   embeddable: false

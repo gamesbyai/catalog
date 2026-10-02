@@ -2,35 +2,36 @@ slug: sea-control-cold-war-arena
 title: Sea Control - Cold War Arena
 tagline: Command missile-armed warships in online Cold War naval battles.
 description: >-
-  You steer a small missile-armed warship across open water, seen from straight
-  above, and you start by typing in a name. The creator describes it as a Cold
-  War arena battle where missiles do the damage instead of shells. Other
-  captains share the sea with you, so it's multiplayer.
+  It's the Cold War at sea, and you're in command of a missile-armed warship in
+  an online naval arena. Think of it as World of Warships, only with missiles.
+  You type in a name and land in a room where online players share the water
+  with bot captains like Nelson, Nimitz, Yamamoto, Togo and Yi Sun-sin.
 
 
-  There are no keys for driving, just two brass-framed sliders on the screen.
+  Even the bots get personalities, since the join messages tag Nimitz and
+  Yamamoto as aggressive, Togo as cautious and Nelson as going for the
+  objective.
 
 
-  One is a throttle with notches from full ahead through stop to full astern.
-  The other is a rudder you slide from hard port to hard starboard, which suits
-  a ship that shouldn't turn on a dime.
+  The camera looks straight down on the water at your ship, which starts out as
+  a small fast attack craft. The steering is laid out a bit like a real ship's
+  bridge, with one slider for the throttle running from full ahead through stop
+  to full astern and another swinging the rudder from hard to port to hard to
+  starboard.
 
 
-  To attack, you click an enemy hull to lock onto it. A panel in the corner
-  tracks your anti-ship missiles in two launcher groups, labeled BB and STB,
-  with a pair of lights under each, so you can see what's loaded before you
-  fire. Press R to switch the search radar on and off, and the round green scope
-  above that panel shows what's around you, with a health bar beneath it.
+  To attack, you click an enemy hull to lock onto it. A panel in the top right
+  counts the anti-ship missiles loaded on your port and starboard sides, with a
+  bar for your hull's HP just above. There's a round radar scope up there too,
+  and R switches the search radar on and off.
 
 
-  The comms log announces each captain who joins, and the roll call is a funny
-  one: Nelson, Nimitz, Yamamoto and Togo, each tagged with a temperament like
-  aggressive, cautious or objective.
+  Over in the top left you'll find the match timer, your score, an XP bar and
+  your rank, which begins at a humble Ensign.
 
 
-  A side panel lists your class as FAC, your rank as Ensign and your experience
-  out of 100, while a score and a match clock sit next to it. If you get stuck,
-  the Help button opens the full briefing.
+  A comms log calls out everyone who joins the room. When you want the full
+  briefing, the Help button opens it.
 play:
   url: https://coldwararena.seacontrol.net
   embeddable: true

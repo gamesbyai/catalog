@@ -2,33 +2,33 @@ slug: emojibeats
 title: EmojiBeats
 tagline: Guess pop song titles from emoji clues in a pixel-art arcade music quiz.
 description: >-
-  You get a string of emojis and have to work out which pop song title they
-  stand for. The songs are the pop the creator grew up with, so the game leans
-  on nostalgia. It's dressed like an old arcade cabinet, with chunky pixel
-  lettering and a neon grid behind the menu.
+  A string of emojis stands in for a pop song title, and your job is to work out
+  which song it is. The songs come from the pop music Lab_YmK grew up with.
 
 
-  Typos won't sink you, which is a kind touch in a quiz about song titles.
+  Typos won't sink you either, because the game forgives small spelling mistakes
+  and your answer doesn't have to be typed perfectly.
 
 
-  The creator isn't a native English speaker, so small spelling slips get
-  forgiven instead of marked wrong. And if you'd rather sing than type, a voice
-  mode lets you solve any puzzle by saying the answer out loud.
+  You can type your guess, but players who'd rather talk than type can switch on
+  voice mode and solve any puzzle by saying the answer out loud. Speaking a song
+  title fits a music quiz pretty naturally.
 
 
-  The menu starts with Free Practice, labeled casual and no pressure. Above the
-  mode picker sits a leaderboard panel with Speed Run and Combo Run tabs, and
-  the rows show rank, name, points and finishing time. A button under the rows
-  opens the full leaderboard.
+  If you just want to poke at puzzles, the mode select screen offers Free
+  Practice, tagged as casual with no pressure. Competitive players get a
+  leaderboard at the very top of the start screen, split into Speed Run and
+  Combo Run tabs. Both rank people by points and by finishing time, while a link
+  underneath opens the full list.
 
 
-  The title screen even says insert coin and press start, which is a funny bit
-  of cabinet theater for a browser game.
+  Tracking the clock next to the score makes a lot of sense on a board where one
+  tab is called Speed Run.
 
 
-  Since answers are normally typed, saying them aloud opens the game to people
-  who'd rather skip the keyboard. Paired with the forgiving spelling, it keeps
-  the puzzle about knowing the song.
+  The screen goes all in on 8-bit arcade, with a pixel font over a neon grid
+  backdrop, a row of retro game icons and an insert-coin prompt sitting above
+  the start button.
 play:
   url: https://emoji-beats.vercel.app
   embeddable: true

@@ -2,39 +2,43 @@ slug: hegemon-s-reach
 title: Hegemon's Reach
 tagline: Build a colony with production chains, then raise an army to crush a rival.
 description: >-
-  You grow a colony out of a single headquarters, and when your war machine is
-  ready you go after a rival who's been building up the same way. You steer the
-  economy indirectly by placing buildings instead of ordering each settler
-  around. The creator built it as a love letter to the old settlers-style games.
+  The long game here is a colony that runs like clockwork, and then, once your
+  war machine is ready, a win over a rival colony that's been building toward
+  the same thing. You start at a headquarters on a low-poly island with 40
+  planks and 24 stone, plus a surprisingly well-stocked tool shed of 8 hammers,
+  8 shovels, 6 pickaxes, 4 axes and 2 saws. Little figures are already wandering
+  around it before you've placed a thing.
 
 
-  Wood runs on a small loop. A woodcutter chops mature trees inside his work
-  area, a forester replants saplings on empty grass, and a sawmill cuts the logs
-  into planks. Stonecutters work outcrops the same way, and when the rock runs
-  out the hut sits idle until you move its area.
+  Control is indirect, so you don't order individual workers around. You place
+  buildings and steer where they work, and the colony takes it from there.
 
 
-  Mines are where food comes in, because coal and iron mines eat bread, meat or
-  fish to work faster.
+  Everything you can build lives in a side panel split into four tabs for
+  industry, food, civil and military.
 
 
-  They go on stone next to a revealed deposit, and a mix of those foods speeds
-  them up more than a single kind does, which gives your food buildings a real
-  reason to exist.
+  The industry tab alone covers the woodcutter's hut, sawmill, forester's hut,
+  stonecutter's hut, coal mine and iron mine, each priced in planks and stone.
+  Woodcutters and stonecutters work inside an area you can retarget with a Move
+  Area button, and it earns its place because a stonecutter that runs out of
+  outcrops warns you and sits idle until you move it. Foresters, meanwhile,
+  replant saplings on empty grass.
 
 
-  Buildings sit in four tabs for industry, food, civil and military, and each
-  one lists its cost in planks and stone.
+  Mines are a bit pickier than the huts, needing a spot next to a surveyed
+  deposit and digging faster on bread, meat or fish, with a more varied diet
+  speeding them up even more.
 
 
-  You begin with 40 planks, 24 stone and a stock of hammers, shovels, axes,
-  pickaxes and saws. Those tools sit in the headquarters and show along the top,
-  so you can see what's left before you place the next hut.
+  Clicking the headquarters opens a storage panel listing everything it holds. A
+  minimap sits in the top left, and the clock runs at 1x, 2x or 4x. Buttons
+  along the bottom open a population screen and, for some reason, a debug view.
 
 
-  You can run the game at 1x, 2x or 4x, and a minimap sits in the corner.
-  Clicking the headquarters opens a panel with its held goods, and a population
-  screen is a button away in the bottom bar.
+  maxgeithe describes it as modeled on classic settlers games. They say games
+  like this were a childhood love and their entry into tech. They also put part
+  of it down to peer pressure from other developers in their X bubble.
 play:
   url: https://hegemon.max.vodka
   embeddable: true

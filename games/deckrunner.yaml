@@ -2,32 +2,34 @@ slug: deckrunner
 title: DECKRUNNER
 tagline: Shoot through a derelict space station deck by deck and reach the escape pod.
 description: >-
-  Pick New Mission and you're looking down the barrel in first person, working
-  through a derelict space station one deck at a time. You scavenge weapons and
-  perks as you go and shoot whatever's still moving. The goal is to reach the
-  escape pod before the station gets you.
+  Pick New Mission and you're dropped into a derelict space station, seen in
+  first person, which you fight through one deck at a time. Each run has you
+  scavenging weapons and perks and killing anything that's still moving. The
+  goal is the escape pod, and you're racing the station itself to get there
+  before it gets you.
 
 
-  The creator loves roguelikes and shooters and wanted to blend the two, with
-  customization in the mix, which is why Customize gets its own spot in the main
-  menu.
+  The main menu holds plenty of extra modes beyond the mission, though.
+  Multiplayer carries a little live tag, while a whole PvP arena fills the room
+  with bots and lets you set how many there are, their difficulty and the score
+  that wins the match.
 
 
-  There's a PvP arena too, and your opponents in it are all bots.
+  If you'd rather warm up first, there's a firing range for practice.
 
 
-  Before a match you choose how many bots you face, a difficulty and the score
-  you're playing to. The menu already has three bots, Normal and a score of 10
-  filled in, so you can hit Start Match without touching anything, which is a
-  nice courtesy.
+  Customize, bestiary and leaderboard screens fill out the rest of the menu. A
+  bestiary fits nicely in a game built around whatever's still crawling through
+  a dead station. Most menu entries also show a shortcut key beside them.
 
 
-  One tip on the menu says to shoot barrels near enemies to set off chain
-  explosions.
+  A tip on the menu suggests shooting barrels near enemies to set off chain
+  explosions, which is a pretty clear invitation to start blowing things up.
 
 
-  Alongside those, the menu lists Multiplayer, a Firing Range, a Bestiary,
-  Leaderboards and Options, each with its own key.
+  paledustgames says they love roguelikes and shooters, and they wanted to blend
+  roguelike structure with first-person shooting. Customization was part of the
+  mix as well.
 play:
   url: https://deckrunner.paledust.com
   embeddable: true
@@ -35,12 +37,11 @@ play:
     - browser
     - mobile
   controls:
-    - "1: New Mission"
-    - "2: Multiplayer"
-    - "3: PvP Arena"
-    - "B: Bestiary"
-    - "L: Leaderboards"
-    - "5: Options"
+    - "1: new mission"
+    - "2: multiplayer"
+    - "3: PvP arena"
+    - "B: bestiary"
+    - "L: leaderboards"
 creator:
   name: paledustgames
   handle: paledustgames

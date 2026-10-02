@@ -2,33 +2,36 @@ slug: grand-quack-auto
 title: Grand Quack Auto
 tagline: Honk your way through a city as a rubber duck and escalate the chaos.
 description: >-
-  You scare pedestrians as a rubber duck, and your main tool is a honk. Your
-  duck starts out as a "Lil' Quacker" and works its way up to a gun-wielding
-  "Duck Norris" as the chaos adds up.
+  The hero here is a rubber duck loose in a 3D city, and its main weapon is a
+  quack you aim at passing pedestrians to scare them.
 
 
-  The first objective is simple. You waddle around the blocky city streets, and
-  the opening goal is to frighten three pedestrians, who wander around with
-  silly names floating over their heads, like Sir Honks-a-Ton and El Pato
-  Magnifico.
+  Out on the streets, all that honking builds up chaos. The opening objective
+  only asks you to frighten 3 pedestrians, a pretty modest start for something
+  the title screen calls a duck crime simulator. Up top, a brood counter tracks
+  your ducklings, starting at 0 of 6.
 
 
-  A panel in the corner tracks your level, your chaos, your combo and a brood
-  counter that goes up to six. There's also a running timer up top.
+  As the chaos grows, the duck levels up. It starts out as Lil' Quacker and
+  eventually becomes the gun-wielding Duck Norris, a whole career path nobody
+  expects from a bath toy. A panel in the corner keeps your current rank, chaos,
+  combo and brood in view.
 
 
-  Cars are part of it too, because you can climb into one and drive instead of
-  waddling.
+  Oddly enough, the duck gets its own press coverage, with a red Quack News
+  Network ticker along the bottom reporting on the mayhem.
 
 
-  Along the bottom runs a red news ticker from the Quack News Network, which is
-  a nice touch for a game about a duck committing crimes. The title screen even
-  jokes that no ducks were harmed, though the pedestrians might be another
-  story.
+  Walking isn't your only option, since you can climb into cars, ragdoll the
+  duck or take photos. The people you're terrorizing wander around with name
+  labels like Sir Honks-a-Ton and El Pato Magnifico. Whoever named them clearly
+  committed to the bit.
 
 
-  The creator pitches it as GTA meets Untitled Goose Game, and says the whole
-  thing was coded by AI.
+  The camera follows the duck from behind, between blocky buildings in flat,
+  low-poly color, while a timer runs in the top corner. UdayMydam pitches it as
+  GTA meets Untitled Goose Game, and according to them, AI wrote 100% of the
+  code.
 play:
   url: https://grand-quack-auto.pages.dev
   embeddable: true

@@ -2,30 +2,34 @@ slug: forest-escape
 title: Forest Escape
 tagline: Find seven blue flowers in a dark forest while spirits chase you.
 description: >-
-  You're alone in a dark forest with nothing but a flashlight, looking for seven
-  blue flowers while spirits hunt you down.
+  Somewhere in a pitch-dark forest there are seven blue flowers, and spirits
+  drift between the trees while you hunt for them. You win by picking up all
+  seven without a spirit catching you.
 
 
-  The flashlight is the whole game, because the flowers only show up when it's
-  on. But the spirits can't see you when it's off, so you keep switching between
-  searching and hiding.
+  Your flashlight is the whole problem, because the flowers only show up while
+  it's on. Switch it off and the spirits can't see you, but you also lose sight
+  of what you came for. It's a neat bind, since the darkness that keeps you
+  hidden is the same darkness that hides the flowers.
 
 
-  The flashlight runs on a battery, and that's a problem you can't ignore.
+  Then there's the flashlight's charge, tracked by a battery meter in the top
+  left that starts at 100% and ends your game outright if it drains to nothing.
 
 
-  If it runs out, you lose, which means you can't just sit in the dark forever
-  waiting for the spirits to wander off. The battery meter sits in the top
-  corner next to a counter that tracks how many flowers you've picked, out of
-  seven.
+  You move with WASD, ZQSD or the arrow keys and look around with the mouse,
+  while F or Space flicks the flashlight on and off. Supporting ZQSD next to
+  WASD is a thoughtful touch for anyone on an AZERTY keyboard.
 
 
-  You win by collecting all seven without a spirit catching you.
+  The top left of the screen shows the battery meter and a counter of your
+  flowers out of seven, and a pause button sits in the top right corner.
 
 
-  You walk with WASD, ZQSD or the arrow keys and look around with the mouse. F
-  or Space toggles the flashlight, so one hand stays on the movement keys while
-  you decide whether to light up or go dark.
+  On the title screen the game goes by Floral Escape: Ghost Forest, a name that
+  sounds a lot gentler than being hunted by spirits in the dark. You'll find
+  share and credits buttons there too. Below them are links to app versions on
+  the App Store and Google Play.
 play:
   url: https://escape.alexandre-grisey.fr
   embeddable: true

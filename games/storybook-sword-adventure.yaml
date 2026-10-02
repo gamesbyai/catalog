@@ -2,25 +2,31 @@ slug: storybook-sword-adventure
 title: Storybook Sword adventure
 tagline: Swing your arms in front of a webcam to slash through fairy-tale worlds.
 description: >-
-  You swing the sword by waving your arms in front of your webcam, so your body
-  is the controller. The goal is to slash through storybook worlds and take back
-  the fairy tales the Story-Eater stole. The monsters standing in your way are
-  mixed-up ones.
+  The Story-Eater has stolen the fairy tales, and it's your job to win them back
+  by slashing your way through one storybook world after another. Each level is
+  its own storybook world. The title screen promises mixed-up monsters to fight
+  along the way, which sounds about right for a villain that eats stories.
 
 
-  The title screen says it's for one player and rates it age 6+. It also tells
-  you the game uses your arms, so you'll want a little space around you.
+  It's a body-tracking action game where your own arm is the sword, and your
+  body is the whole controller. The webcam follows how your arms move, and every
+  real swing becomes a sword strike on screen, so playing means moving around
+  and cutting through the air yourself.
 
 
-  A thief who eats whole stories is a pretty funny villain to be chasing down.
+  The title screen keeps its instructions pretty short and just asks you to wave
+  your hands whenever you want the sword to move. Little tags mark it as
+  suitable from age 6 and note that it uses your arms. Pastel skies, sparkles
+  and big outlined lettering give all that flailing a surprisingly gentle
+  picture-book look.
 
 
-  The creator wanted to make games where you move around to play instead of
-  sitting still with a keyboard. That's why the sword follows your hands, and
-  why the whole adventure starts with a camera and a wave.
+  The body tracking runs on BodyLink, a tool meant for playing games with your
+  whole body in place of a gamepad.
 
 
-  The body tracking comes from BodyLink, which the title screen credits.
+  RebuffReality wanted to build games where your body does the job of a
+  controller. They were after something they could play while moving around.
 play:
   url: https://storybook-adventure.netlify.app
   embeddable: true

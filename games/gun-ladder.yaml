@@ -2,31 +2,32 @@ slug: gun-ladder
 title: Gun Ladder
 tagline: Fight in a first-person arena and score the most kills in five minutes.
 description: >-
-  A round lasts five minutes, and whoever has the most kills when the clock runs
-  out wins.
+  Rack up more kills than anyone else before the 5-minute clock runs out, and
+  the round is yours.
 
 
-  You run around a first-person arena shooting other players, and each time you
-  spawn the game hands you a random weapon. So you can't settle into a favorite
-  gun, which keeps every respawn a bit of a gamble.
+  Type a name, hit Play and you drop into a first-person arena where every other
+  player is a target. A Copy Link button on that same screen copies the game's
+  link.
 
 
-  The pool is wide: pistol, shotgun, SMG, assault rifle and sniper, plus a
-  rocket launcher, rail gun, minigun, flamethrower, grenade launcher and even a
-  katana. Whatever you draw is what you fight with until you respawn.
+  What you're holding comes down to luck, because each spawn hands you a random
+  weapon from a roster of 11. It runs from a pistol, shotgun, SMG and assault
+  rifle through a sniper, rocket launcher, rail gun, minigun, flamethrower and
+  grenade launcher. Then, for some reason, there's also a katana.
 
 
-  Besides running and shooting, you can jump and slide around the arena.
+  The start screen lays out the whole lineup as little tags, each in its own
+  color, a tidy preview of the spawn lottery.
 
 
-  You type a name and press play, then click the screen to lock the mouse for
-  aiming. Press Escape whenever you want the cursor back. There's also a
-  copy-link button on the title screen, which makes it easy to send the game to
-  a friend.
+  WASD moves you, Space jumps and Shift drops you into a slide. You aim with the
+  mouse, fire with the left button and reload with R. Clicking inside the game
+  locks the mouse for aiming, while Esc lets it go again.
 
 
-  The creator built it because of good childhood memories of this kind of
-  shooter.
+  merlinshabaj built the format out of fond childhood memories of shooters like
+  this one.
 play:
   url: https://gun.doppelshift.de
   embeddable: true

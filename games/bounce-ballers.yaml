@@ -3,39 +3,35 @@ title: Bounce Ballers
 tagline: Score goals in a networked, platform-hopping soccer match against other
   players.
 description: >-
-  You start on a lobby with four arena cards, a set of match rules and three
-  ways to get into a game. The status panel counts players out of two, so it's a
-  head-to-head match.
+  When the game loads, the lobby lays out four arena cards called Classic Arena,
+  Neon Foundry, Plinko and Glitch Garden.
 
 
-  The official arenas are Classic Arena, Neon Foundry, Plinko and Glitch Garden.
-  Plinko is tagged "RNG madness" and fills its field with pegs, which suits the
-  label. Below them there's a spot for your own saved custom maps.
+  Each preview shows platforms stacked over a flat floor, with a goal zone at
+  either end of the field. Plinko is the odd one out, with pegs and slanted
+  ramps crammed into the middle under the label RNG Madness, which is a pretty
+  fair warning.
 
 
-  Hit Matchmake to look for an opponent online, or pick vs Bot to play the
-  computer. Private Match gives you a room code, so you can copy the code or an
-  invite link, and a friend pastes it in to join. The arena you've selected is
-  used for local matches.
+  Before a match, you get to set the rules yourself. The score limit reads First
+  to 10, round time starts at No Limit, and the bot difficulty sits at Normal.
+  There are three map event cards to toggle, and Reverse Ball Gravity sounds a
+  bit wild next to plain Low Gravity and Infinimap, which wraps the arena around
+  on itself.
 
 
-  You get to set the rules before anything starts, which is handy.
+  A whole column of five ability pickups can be switched on or off one by one,
+  covering Speed Boost, Burst Boost, Throw Boost, Magnet and Invisibility.
 
 
-  Score limit begins at first to 10, round time begins at no limit, and the
-  bot's difficulty begins at normal. Map event cards can bend the arena with low
-  gravity, reversed ball gravity or a wrapping map, and each has a checkbox so
-  you pick which ones can turn up.
+  Three buttons get you into a game: Matchmake, vs Bot and Private Match.
+  There's also a field where you paste a room ID, with Join, Copy Code and Copy
+  Invite buttons sitting beside it. A My Arenas section holds saved custom maps,
+  and you get a guest name before you've typed anything.
 
 
-  Ability pickups get the same treatment, with checkboxes for speed boost, burst
-  boost, throw boost, magnet and invisibility. You can switch off anything you
-  don't want in the match.
-
-
-  The creator spent college playing IDARB, which was built mostly around a
-  shared screen. This is a modern take that works properly over the internet,
-  adds progression for replay value and carries the creator's own style.
+  matthayes13 is a longtime fan of IDARB and wanted to build a networked soccer
+  platformer with progression.
 play:
   url: https://bounceballers.com
   embeddable: true

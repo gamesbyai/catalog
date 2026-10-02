@@ -2,26 +2,31 @@ slug: ziwziw
 title: ZiwZiw
 tagline: Race your piece across the board to reach your opponent's starting point first.
 description: >-
-  You win by getting a piece to the opponent's starting point before they get to
-  yours. That's the whole goal, and it's meant to be something you can grasp the
-  second you see it.
+  Whoever gets their piece onto the other player's starting point first wins,
+  while your opponent races the opposite way toward yours. You take turns, and
+  each move comes down to weighing whether to push ahead or get in their way.
 
 
-  Landing on an opponent sends them back to their start, so a good move can undo
-  a lot of someone else's progress. Overshoot the goal and you don't win,
-  because you bounce back instead.
+  Land on the opponent's piece and it goes all the way back to its start, a
+  harsh reset for such a short rulebook. Overshooting has its own sting, because
+  moving past the goal bounces you back. The title screen sums the game up as no
+  luck, just skill, which is a pretty bold promise to make before the first
+  move.
 
 
-  That bounce rule is a nice little trap for anyone rushing the finish.
+  There are plenty of ways to get a match going, since you can jump into ranked
+  online games, practice against a bot or set up a game with a friend.
 
 
-  The creator loves chess and wanted something simpler that anyone could
-  understand right away, but that still asks for focus and strategic thinking.
-  The title screen says there's no luck involved, just skill.
+  The rules are built so you get them at a glance, so a match starts quickly. It
+  still asks for focus and strategic thinking, though.
 
 
-  You can play a ranked match online, practice against a bot, or set up a game
-  with a friend.
+  There's room to improve as you start spotting better plans, move by move.
+
+
+  lordahmed3d made it out of a fondness for chess. The aim was a game with
+  simpler rules that anyone can pick up right away.
 play:
   url: https://ziwziw.com
   embeddable: true

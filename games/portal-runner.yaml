@@ -3,29 +3,36 @@ title: Portal-Runner
 tagline: Run through five parallel worlds, dodging vanishing obstacles and
   leaping through portals.
 description: >-
-  You begin on a dark city street at night, seen from behind a blocky blue
-  runner. Yellow dashes mark the road ahead, glowing coins are scattered along
-  it, and striped yellow-and-gray barriers sit farther up. A score counter and
-  coin count sit in the top left under the area name, City Night, and a speed
-  meter fills the top right.
+  A blocky blue runner stands on a night city street when the game starts, with
+  the camera sitting right behind them. The score ticks upward in the top left,
+  and your coin count sits under it next to a small label naming the world
+  you're in, City Night. Over in the top right, a thin speed bar keeps track of
+  how fast the run is going.
 
 
-  It's an endless runner, and the run is spread over five parallel worlds. Each
-  portal doesn't just repaint the background, because it drops you into a
-  different dimension with its own colors, rules and mood.
+  You sprint down the middle of a lit road, scooping up glowing yellow coins and
+  steering around striped barriers stacked in your path. Tall dark towers and
+  lampposts line the street, all built from chunky low-poly blocks that give the
+  whole city a pretty toy-like look.
 
 
-  The obstacles are the odd part, because some of them disappear right in front
-  of you.
+  Some of those obstacles disappear right in front of you, a sneaky twist that
+  means you can't fully trust the road ahead, even on a stretch you've already
+  run.
 
 
-  The creator wanted a psychological twist so that your eyes become a
-  questionable guide, which means a run stays unpredictable even once you've
-  learned the patterns.
+  Portals are your way out of the city. They carry you across five parallel
+  worlds, and each one swaps out the rules, colors and feel rather than just
+  repainting the background, a surprisingly big ambition for an endless runner.
+  Between the vanishing barriers and the shifting rules, the road keeps changing
+  what it asks of you.
 
 
-  Keep running and jumping through portals until a golden JAM EXIT shows up and
-  takes you on into the multiverse.
+  Eventually a golden exit shows up and pulls you out into the multiverse.
+
+
+  tempest_4754 modeled the endless-runner core after Temple Run and Subway
+  Surfers.
 play:
   url: https://portal-runner.vercel.app
   embeddable: true

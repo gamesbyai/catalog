@@ -2,32 +2,34 @@ slug: tower-tumble
 title: Tower Tumble
 tagline: Bounce off walls and backflip your way up an endless pixelated tower.
 description: >-
-  Tap left or right to jump, and keep climbing. You're a little pixelated guy
-  scrambling up a tower of green platforms, and the floor counter in the corner
-  goes up as you get higher.
+  Start running along the ground floor, then jump for the first green platform
+  and keep going up an endless tower.
 
 
-  The trick is momentum. The faster you run, the bigger your jumps get, and if
-  you hold the jump button you charge up for an even higher leap.
+  Speed is what gets you higher, because the faster you're running when you
+  leave the ledge, the bigger your jump. On top of that, you can hold the jump
+  button to charge an even taller leap.
 
 
-  Walls aren't a boundary here, they're a tool, because bouncing off them gives
-  you extra speed. You can also skip past platforms to build combo points, which
-  is a nice reason to go for the risky jump instead of the safe one.
+  The two side walls do a bit more than keep you in, since bouncing off them
+  builds momentum. Skipping platforms on the way up earns you combo points.
+  Throwing a backflip in midair adds style points, so the game rewards showing
+  off along with plain height.
 
 
-  The creator also mentions backflips for style points, so it's worth showing
-  off a little on the way up.
+  Mixed in with the green steps are some red platforms, and their color makes
+  them stand out pretty sharply from the rest.
 
 
-  It's a 3D take on Icy Tower, a childhood favorite of the creator Andreas
-  Kruszakin-Lidoska that doesn't exist anymore. The look is chunky pixel art,
-  with brown walls on both sides and a warm, grainy, old-screen glow over
-  everything, which suits the nostalgia pretty well.
+  It's all chunky pixel art with a 3D look, and a grainy filter over the screen
+  gives it the feel of an old TV. A small orange climber hops between two brown
+  walls against a pale backdrop. In the corner, a counter keeps track of the
+  floor you've reached and your points.
 
 
-  There's a leaderboard too, so you're climbing against other players and not
-  just your own best floor.
+  andreaskruszaki based it on Icy Tower, a childhood favorite of theirs that
+  sadly no longer exists, giving it a new 3D look and an online leaderboard
+  where you can compare climbs with other players.
 play:
   url: https://tower-tumble.vercel.app
   embeddable: true

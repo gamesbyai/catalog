@@ -2,24 +2,36 @@ slug: destined-heroes-tactics
 title: Destined Heroes Tactics
 tagline: Command a squad of unique heroes in turn-based battles won by tactics alone.
 description: >-
-  Pick a format first, because the choice sets how big the battle is. 8v8
-  Classic is a symmetrical fight between two full teams, 6v6 Rapid shrinks the
-  teams, and 4v4 Blitz trims your options down even further.
+  Pick a battle format, then lead your squad of heroes across the battlefield
+  one turn at a time, placing each unit and choosing its action to beat the
+  other side.
 
 
-  8v8 Chess is the odd one out. You start with a row of pawns lined up in front
-  of your heroes, so the battle plays like a chess variant with a tactical RPG's
-  cast.
+  Battles are won by planning instead of luck, since the whole game is pitched
+  as pure strategy and tactics. It's a lighter take on the tactical RPG, where
+  careful positioning and reading your opponent count for more than random
+  rolls, so every move is something you can reason through.
 
 
-  The fights happen on an isometric grid of grass, stone and water, drawn in
-  pixel art. Each side fields heroes who look and play differently, and the
-  title screen lines up a group of eight of them.
+  Each hero is unique, so the team you build shapes how you approach a battle.
+  The title screen lines up a whole cast of eight in anime-style art, from spear
+  carriers to an armored knight in red.
 
 
-  Nothing in it is left to luck. It's a lite tactical RPG built on pure
-  strategy, and the creator says it comes from a love of chess and Fire
-  Emblem-style tactics, which explains the pawns.
+  There are surprisingly many ways to size a fight, from two 8v8 matchups down
+  to a 6v6 Rapid mode with smaller teams and a 4v4 Blitz that strips your
+  options right back.
+
+
+  Classic keeps both sides symmetrical. The Chess format is the odd one out,
+  because it puts a row of pawns into the battle and turns the whole thing into
+  a chess variant. That twist makes sense once you know WillifordBlake drew on a
+  love of chess alongside tactical RPGs like Fire Emblem.
+
+
+  Fights play out on a pretty isometric pixel-art field of grass, stone paths
+  and small pools of water. WillifordBlake invites feedback, bug reports and
+  suggestions through a Discord community.
 play:
   url: https://destinedstudio.com/destined-heroes-tactics
   embeddable: true

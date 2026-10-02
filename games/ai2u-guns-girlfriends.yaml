@@ -3,45 +3,44 @@ title: AI2U - Guns & Girlfriends
 tagline: Build a base, launch nukes and outfight three rival factions in a
   real-time strategy game.
 description: >-
-  The first screen asks you to choose a commander: a pink-haired catgirl, a
-  witch, or a siren. Below them you pick one of five battlefields and one of
-  three difficulties, then hit start. It's a real-time strategy game in the old
-  Red Alert mold, with base building, harvesting, tank columns and nuclear
-  silos.
+  A nuclear mushroom cloud fills the start screen above a battlefield of tanks
+  and bases, while a pink-haired catgirl clutches her head in the corner next to
+  the Run game button.
 
 
-  Each commander leads a different army. The catgirls field soldiers, tanks and
-  rocket launchers, plus a commando who plants C4 on buildings. The witches have
-  fast movers, healing cauldrons, running potions that blow up, and a Grand
-  Cannon with the longest range. The sirens bring bubble-shielded guards,
-  chain-lightning platforms and a siege crab.
+  Once it loads, you're in a '90s Red Alert style skirmish where you build a
+  base, harvest ore, roll out tank columns and watch the countdowns on nuclear
+  superweapons. You pick one of three factions, and oddly enough all three of
+  them are in love with you, which the game treats as the real problem.
 
 
-  The maps are an island, a set of sand-bridged straits, a volcano crater, a
-  desert and a glacier shelf. On the island, three armies share the land and
-  nobody can escape.
+  Catgirls send out conscript soldiers, tanks and rocket launchers, backed by a
+  commando hero who blows up buildings with C4. Witches move fast and bring
+  healing cauldrons, a bit of chaos in the form of potions that run at the enemy
+  and explode, and a Grand Cannon with the longest range of anything. Sirens
+  hide their guards behind bubble shields and also field chain-lightning
+  platforms plus a siege crab.
 
 
-  You pick Easy, Normal or Hard, and the computer opponents behave differently
-  from each other: some rush you, some pile up turrets, and some wait for an
-  opening.
+  You get 5 maps of islands, deserts, glaciers and a volcano crater, plus 3
+  difficulties where AI opponents rush you, build turrets or wait for an
+  opening, and the menu labels Hard simply "They never stop."
 
 
-  Every unit has a counter, so healers and hero infiltrators matter as much as
-  raw tank numbers. Defensive buildings help a lot, though specialized
-  counter-units can crack them, and you have to keep an eye on your power
-  supply. The ore behind your base is safe, but the ore in the middle is where
-  the fighting happens.
+  Units counter each other through abilities like healing auras and hero
+  infiltration, and there's a full in-game wiki showing live stats for every
+  unit. There's a power supply to manage as well. When NUCLEAR LAUNCH DETECTED
+  appears in the top-left corner, the game's own advice is to believe it,
+  because the strike is coming.
 
 
-  When the top-left corner announces a nuclear launch, it means it. Your results
-  are saved locally in a victory record for each commander and difficulty, and
-  there's an in-game wiki with live stats for every unit.
+  Your wins get saved as local victory records, split by difficulty for each
+  faction.
 
 
-  The creator built the 3D units almost entirely from procedural geometry, which
-  keeps the whole thing around 10 MB. The music and character art were made with
-  AI tools too.
+  DGSpitzer built the 3D units almost entirely from procedural geometry, which
+  keeps the whole thing at a surprisingly small download near 10 MB, while Suno
+  AI made the soundtrack and Nano Banana drew the character art.
 play:
   url: https://helixngc7293.itch.io/gandg
   embeddable: false

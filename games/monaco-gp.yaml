@@ -2,34 +2,36 @@ slug: monaco-gp
 title: Monaco GP
 tagline: Race F1-style cars against other players on 3D tracks with arcade handling.
 description: >-
-  You're chasing the fastest lap around a Monaco-style circuit, and your time
-  goes onto a global leaderboard. It's a time trial, so the point is to shave
-  your best lap down rather than to win a race.
+  The fastest lap is what you're after on this Monaco-style circuit, where every
+  run is a time trial and your best time gets posted to a global leaderboard.
 
 
-  Other drivers who are online at the same moment share the track with you in
-  real time. That means your hot lap happens alongside everyone else's, which is
-  a nice touch for a mode built around solo times.
+  First you type in a driver name, and the example it offers is LEC16, a pretty
+  fitting tag for anyone picturing themselves on an F1 timing screen. Then you
+  hit Drive and you're out on the track.
 
 
-  The creator says the focus was on race mechanics and physics, and the handling
-  has an F1 flavor but stays arcade. There's a handbrake for drifting, so you
-  can throw the car into corners instead of only braking for them.
+  Every other driver who's online shares the same track with you in real time, a
+  clever twist on what's usually a solo time trial, so you're running your laps
+  alongside live players. The handling is arcade with an F1 flavor, and
+  according to the creator, race mechanics and physics got most of their
+  attention. Space pulls a handbrake so you can drift, while R drops you back on
+  the track.
 
 
-  If you spin out or end up somewhere bad, you can respawn on the track with one
-  key.
+  Oddly, customizing your car gets a whole key combo of its own, and another one
+  is set aside just for orbiting the camera around it.
 
 
-  The track curves along a hillside above the sea. Low-poly mountains, clusters
-  of tall buildings and a harbor full of tiny boats sit around it, and clouds
-  hang in the sky. You can open a customize screen to change your car before you
-  drive. The car model was made with GPT Image 2 and Tripo3D, and the music
-  comes from Suno.
+  The road snakes along a coastline lined with low-poly buildings, with green
+  mountains rising up behind it. Out on the water sits a harbor crowded with a
+  surprising number of boats, which gives the hairpins a proper Riviera
+  backdrop. From up high you can trace the winding course between the hills and
+  the sea.
 
 
-  You type a name first, something like a driver's three-letter code, and then
-  you press Drive.
+  The car model came out of GPT Image 2 and Tripo3D, while the music was made
+  with Suno.
 play:
   url: https://monaco-gp.vercel.app
   embeddable: true

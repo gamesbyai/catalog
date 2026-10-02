@@ -2,32 +2,29 @@ slug: starfall-survivor
 title: Starfall-Survivor
 tagline: Fight waves of enemies in a 3D arena and pick upgrades for your star blades.
 description: >-
-  The first thing you see is a small card over a blurred, beige arena with the
-  title and a big green Enter the Arena button. It lists three controls, so you
-  know how to move before you start, and it tells you your attacks and skills
-  fire on their own.
+  A cream-colored card sits over a blurred arena when the game loads, with the
+  line "Void hunters enter. One survives." under the title. It lists three
+  hints: WASD or the arrow keys to move, a touch joystick for phones, and an
+  Auto tag saying your attacks and skills fire on their own. Press the big green
+  Enter the Arena button and the run begins.
 
 
-  You steer a void hunter around a 3D arena while your star blades do the
-  hitting.
+  Inside, you're a void hunter in a 3D survival arena, holding off waves of
+  enemies with star blades.
 
 
-  Since the attacking is automatic, your job is movement. You're positioning
-  yourself while waves of enemies close in, and you're not aiming or pressing a
-  fire button.
+  Steering is your whole job here, since the attacks go off without you. All
+  you're doing is moving around the arena as the enemies arrive.
 
 
-  Every time you level up, you get to choose an upgrade. That's how a build
-  takes shape, because the upgrades you pick decide how your blades tear through
-  the next wave, which is the satisfaction the creator says they were chasing.
+  Leveling up is where the real choices happen. Each time you level, you get to
+  take one upgrade from a set of strong options, and those picks add up to the
+  build you're running with. With the fighting automated, those upgrades are
+  pretty much the only thing you decide besides where you go.
 
 
-  The goal is to be the one hunter left standing in the arena.
-
-
-  On a keyboard you move with WASD or the arrow keys, and on a phone there's a
-  touch joystick. It's a nice touch that the start card spells out both before
-  you press anything.
+  David282213 calls it a fast-paced survival brawler, inspired by the
+  satisfaction of watching a build tear through waves.
 play:
   url: https://bold-term-81c2.david-hsu-d53.workers.dev
   embeddable: true

@@ -3,31 +3,33 @@ title: FrameFrenzy
 tagline: Rebuild a scrambled sliding puzzle made from a YouTube video that keeps
   playing.
 description: >-
-  You win by putting a scrambled picture back together before the YouTube clip
-  it came from finishes playing.
+  The timer in this sliding puzzle is the video itself, since you have to
+  rebuild the scrambled picture before the YouTube clip you picked finishes
+  playing.
 
 
-  Each tile shows its own slice of the video as it plays, so nothing holds still
-  for you to memorize. You're matching motion as much as shape, which is an odd
-  twist on a sliding puzzle.
+  There are a few steps before a round starts. You paste in a YouTube address,
+  pick a 3×3 or 4×4 grid and hit Drop In, then tap once when the countdown ends.
 
 
-  Paste a public YouTube link, choose a 3×3 or 4×4 grid, and press Drop In.
-  After a short countdown you tap once and the round begins. Music videos,
-  trailers, memes and lectures all work, since any public link turns into a
+  Every tile shows a live crop of that same clip while it keeps running, so the
+  image you're chasing never holds still. There's no freeze frame to study,
+  which means you're matching motion as much as shapes. You slide pieces into
+  the empty gap until the whole frame lines up again.
+
+
+  Music clips, trailers, memes and lectures can all serve as the source of your
   puzzle.
 
 
-  Whatever you're playing on, the tiles move with a mouse, a touchscreen or the
-  arrow keys.
+  Finishing gets you a result card with your time and move count, set beside a
+  little grid of colored squares. The video and grid size are packed into the
+  link, so a friend who opens it gets the identical puzzle and can try to beat
+  your time. Tucking the whole challenge into a URL is a tidy way to make a solo
+  puzzle something you pass around.
 
 
-  When you finish, you get a result to share with your time, your move count and
-  a small grid of green squares. The video is baked into the link, so a friend
-  lands on the very same puzzle. That makes it an easy dare to send.
-
-
-  The code is open source on GitHub if you want to see how it's put together.
+  You can play it with a keyboard, a mouse or a touchscreen, whichever is handy.
 play:
   url: https://kevinloeffler.itch.io/framefrenzy
   embeddable: false

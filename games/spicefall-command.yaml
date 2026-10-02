@@ -3,36 +3,38 @@ title: Spicefall Command
 tagline: Harvest spice, capture condensers, and defend your Command Spire in
   desert RTS fights.
 description: >-
-  You command a base on a desert planet, harvesting spice and keeping your power
-  grid steady while hostile commanders try to wreck your Command Spire. It's a
-  real-time strategy skirmish built around the economy.
+  A desert base is yours to run in this real-time strategy skirmish, while
+  hostile commanders try to tear it down. You harvest spice, keep the power grid
+  stable and grow your water capacity, all while guarding your Command Spire
+  from destruction.
 
 
-  The map is randomized every match, so you never fight over the same ground
-  twice.
+  Capturing atmospheric condensers gives you a strategic edge over the opposing
+  houses, so there's a bit more on the map worth fighting over than spice alone.
 
 
-  Before you deploy, you pick your house, the map size, how many AI players you
-  face and which team you're on. Players who share a team number are allies and
-  every other command center is hostile, so you can set up lopsided fights if
-  you want. Each AI opponent gets its own house and team setting too.
+  Before any shooting starts, a setup screen has you pick your house, the map
+  size, how many AI players join and which team you're on. Each AI opponent gets
+  its own house and team setting too. Alliances are settled by number, so anyone
+  sharing your team number fights on your side while every other command center
+  is hostile, and an AI can be your partner just as easily as your enemy.
 
 
-  Spice, power and water are the three things you juggle, and the pressure comes
-  from keeping all of them healthy at once. Atmospheric condensers sit out on
-  the map and you can capture them for an edge, which is a good reason to push
-  out instead of sitting at home.
+  Bitten Heart Studio drew on classic desert strategy games. Two sci-fi houses
+  compete, one of them carrying the rather grand name Sunforge Compact. Each
+  match randomizes the map, anywhere from a small skirmish up to a large AI
+  battle.
 
 
-  Two sci-fi houses compete, and matches range from small skirmishes to large AI
-  battles.
+  The controls are the classic RTS kind, with a drag to select units and a
+  right-click to move, attack, harvest or set a rally point. Hotkeys handle
+  production, since 1 through 7 train units and Q, W, E, R, Y and T place
+  structures. A attack-moves, Shift queues orders and a command console
+  interface covers the rest.
 
 
-  You drag to select units, then right-click to move, attack, harvest or set a
-  rally point. A gives an attack move and Shift lets you line up a queue of
-  orders. Number keys train units and letter keys place structures, so building
-  doesn't send you hunting through menus. Escape or Space pauses, which is handy
-  when a fight gets messy.
+  A match only runs a few minutes, which makes all that base management pretty
+  compact. Fullscreen at 1280x720 or higher is recommended.
 play:
   url: https://bitten-heart-studio.itch.io/spicefall-command
   embeddable: false

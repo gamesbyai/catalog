@@ -3,40 +3,47 @@ title: RUNNING LATE
 tagline: Sprint and wall-jump through 30 commuter rooms while deaths add time to
   your clock
 description: >-
-  You run, jump and wall-jump through a string of short rooms that make up one
-  commute, and you hold the jump button longer to go higher. Moving trains,
-  timed gates and pressure plates get in your way, so you're reading the room as
-  much as steering through it.
+  An ordinary commute gets stretched into 30 rooms with a 24-minute clock
+  running the whole way. You run, hold the jump button longer when you want more
+  height, and bounce back and forth between walls. Each room has an orange
+  validator you have to land on before the exit unlocks.
 
 
-  Every room has an orange validator you have to land on before the exit opens.
-  That's what forces you onto the intended jumps, walls and moving-platform
-  landings instead of letting you skip past them.
+  The rooms bring in moving trains, timed gates and pressure plates, and the
+  mechanics arrive in five tiers that start with plain jumping and end with a
+  whole stack of everything combined. Coyote time and input buffering are both
+  in there, along with a wall-slide and the wall-jump.
 
 
-  Dying is instant, and the room restarts in under a quarter of a second.
+  Dying is instant and a failed room comes back in under a quarter of a second,
+  but each death still adds twenty seconds to a clock that, a bit cruelly,
+  doesn't reset when you do.
 
 
-  Each death adds twenty seconds to the clock, and the clock doesn't reset when
-  you do. A run is 30 rooms against a 24-minute limit, which makes every mistake
-  cost you something even though retrying is so quick.
+  Between legs of the trip you pick Local, Express or Shortcut, and there's no
+  going back on that choice. The 30 rooms themselves get pulled from 35
+  hand-built modules by a journey seed printed on the start screen, right beside
+  a start button that pretty fittingly says "Catch the 08:36" in big letters.
+  You can edit or copy that seed, rerun the same one, or start a new commute
+  with a fresh seed.
 
 
-  Between legs you pick Local, Express or Shortcut, and you can't take the
-  choice back.
+  Afterward the game keeps all 30 splits, your route history, your deaths and a
+  record of how you arrived, and paired with same-seed retries that turns each
+  commute into something you can come back and shave down.
 
 
-  The 30 rooms come from 35 hand-built modules, picked from a journey seed
-  that's fresh each time you start a commute. You can copy the seed to replay
-  the same route, which suits retrying a run you nearly nailed. Afterward you
-  get all 30 splits, your route history, your deaths and a classification of how
-  you arrived.
+  Settings give music and sound effects their own volume controls, plus reduced
+  motion and fullscreen. Landscape touch controls are included too. It's a
+  thoughtful touch that the important surfaces also stand out by silhouette,
+  pattern, motion and shape instead of leaning only on the two-color palette.
 
 
-  The difficulty climbs through five tiers, from plain jumping to wall-jumps,
-  moving platforms, timed gates and pressure plates, then rooms that combine
-  them. Touch controls show up in landscape, and the settings let you set music
-  and effects separately, turn on reduced motion or go fullscreen.
+  0x00000000 used generative AI to help with the code, the copy, three transit
+  backgrounds, the commuter's animation sheet and the base cover art. The
+  layout, typography, gameplay surfaces, effects and final asset prep were done
+  and reviewed for this release. The music and sound effects are synthesized
+  live as you play. It's episode 002 of a series called Better Than Scrolling.
 play:
   url: https://peppoasap.itch.io/running-late
   embeddable: false

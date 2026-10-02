@@ -2,29 +2,34 @@ slug: cyberdeck-survival
 title: Cyberdeck Survival
 tagline: Play cards, parry attacks, and outlast enemy waves in a cyberpunk arena.
 description: >-
-  Cyberdeck Survivor puts you in a walled neon arena where armored cyberpunk
-  enemies close in on you in waves. You fight back with a basic attack and
-  battle chips, and the chips are the deck-building part, so the ones you've
-  equipped decide what you can throw at them.
+  Cyberdeck Survivor drops you into a cyberpunk arena where enemies keep closing
+  in wave after wave, and you stay alive by moving, swinging a Basic Attack and
+  firing battle chips out of your deck. It's an arena survivor in the Vampire
+  Survivors mold, but with a deck of cards doing a lot of the fighting.
 
 
-  You can parry, too. Timing it against incoming hits matters as much as the
-  chips do, because the game is built around every card play and every parry
-  counting.
+  You move with WASD or the arrow keys, while your chips go off on Q, E, R and
+  F.
 
 
-  Along the top you'll see the current wave, a countdown timer, and your level
-  with an XP bar. Down in the corner, a health bar sits above an energy bar that
-  reads 4 out of 4.
+  Space parries incoming hits, so the deck isn't your only answer when something
+  swings at you. The chips even get their own Battle Chips screen on the main
+  menu, sitting next to Start Run, Settings and Credits.
 
 
-  You choose rewards as you go, and the goal is to survive the waves, reach the
-  boss and defeat it. Beating the boss opens a portal to the next game, which
-  makes sense for something made for a jam.
+  A run means surviving the waves, picking rewards along the way and working
+  toward a boss. Up top there's a wave counter and a timer with a level and XP
+  bar under them, and your health and energy gauges sit in the bottom corner.
+  Beat the boss and a portal opens that sends you on to the next game.
 
 
-  If you go down, a Runner down screen shows your final score and a button to
-  restart the run. The menu labels this version an early alpha.
+  Fall, and the game declares "Runner down" before showing your final score and
+  offering a fresh run.
+
+
+  Elvlin89 has marked this as version 0.0.1, an early alpha. Next on their list
+  are demo polish, clearer combat tells, balance and deeper run progression. The
+  same list also names arenas, cyberware, events and a branching map.
 play:
   url: https://elvlin.store/games/cyberdeck-survivor
   embeddable: true

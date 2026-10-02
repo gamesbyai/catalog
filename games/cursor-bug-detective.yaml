@@ -2,48 +2,43 @@ slug: cursor-bug-detective
 title: Cursor Bug Detective
 tagline: Scan props on a 3D desk, decode cipher clues, and name the bug in 90 seconds
 description: >-
-  You're trying to name the bug, and to do that you have to collect four cipher
-  clues from a 3D developer's desk. You play a Cursor mascot turned detective,
-  and you hover the pointer over the desk while a tooltip tells you what each
-  prop is.
+  Every day there's one new case waiting, and a round lasts about 90 seconds.
+  You play the Cursor mascot as a tiny detective, scanning the props on a 3D
+  developer's desk for clues.
 
 
-  The monitor, the evidence envelope, the agents tray and the lamp are the four
-  spots that matter. Each one opens a small puzzle, and a row of four dashed
-  evidence slots in the corner is where the clues go.
+  The desk looks a bit like somebody's real workstation, with code glowing on
+  the monitor, a sealed evidence envelope, an agents tray, a desk lamp and a
+  white mug with steam rising off it.
 
 
-  The desk was built by hand, with a monitor full of code, a keyboard, a
-  steaming mug, a calendar page and a glowing orange portal sign next to the
-  lamp. So you're poking around a workspace instead of a menu.
+  Hover across the desk to spot whatever looks off, then open the monitor, the
+  envelope, the agents tray and the lamp. Each one gives you a clue in cipher
+  form, and the four evidence slots at the top fill in as you go.
 
 
-  One puzzle looks like a code editor with a file called case_file.md open. A
-  sentence starts, "The case file sheet was," and you pick an ending from a
-  short list, the same way you would with an autocomplete popup, which is a neat
-  use of something developers already know.
+  You crack those ciphers through four mini-puzzles. One of them is a case file
+  cleverly styled like an editor's autocomplete, which fits this mascot, so you
+  finish a sentence like "The case file sheet was" by picking between a plain
+  "floating" and a pretty theatrical "levitating dramatically". The prompt under
+  the choices tells you to read the clue first.
 
 
-  Tab cycles through the suggestions and Enter accepts one. The popup also
-  nudges you to read the clue first.
+  Once the evidence adds up, you make the call and name the bug to close the
+  case.
 
 
-  Once you've gathered what you can, you press the Make the call button to name
-  the bug. A small scoreboard under the evidence slots has four lines labeled
-  run, word, def and eye.
-
-
-  The creator wanted a daily puzzle in the spirit of Wordle, but in 3D and about
-  hunting bugs, so a round is meant to last 90 seconds.
+  casper_chsieh modeled the loop on daily word games like Wordle, which ask for
+  one short session a day, and picked a bug hunt because, fairly enough, finding
+  bugs is what most developers spend their days doing. The desk was built by
+  hand, and the idea was to give the mascot a story bigger than a logo.
+  casper_chsieh also points to a few further games with new and retro themes to
+  explore alongside the daily case.
 play:
   url: https://bug-detective.pages.dev
   embeddable: true
   platforms:
     - browser
-  controls:
-    - "Mouse: hover over desk props"
-    - "Tab: cycle suggestions"
-    - "Enter: accept suggestion"
 creator:
   name: casper_chsieh
   handle: casper-chsieh

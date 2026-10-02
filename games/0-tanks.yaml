@@ -3,34 +3,29 @@ title: 0 Tanks
 tagline: Fight through procedural floors in a tank, buying upgrades and beating
   armored bosses.
 description: >-
-  Every run is about getting deeper than the last one, as you drive a tank
-  through procedurally generated floors. You pick up upgrades along the way, so
-  the tank you're driving later isn't quite the one you rolled out in. There are
-  armored bosses in the mix too, which gives each push a bigger obstacle than
-  the regular enemies.
+  Each run sends your armored tank down through procedurally generated floors,
+  one at a time, shooting whatever gets in the way. It's a roguelite that pushes
+  deeper with every floor, and when you start over, the layout's new. The main
+  menu even keeps a little operator dossier on you, tracking your deepest floor,
+  your high score and how many enemies you've taken out.
 
 
-  Press Enter on the start screen and you deploy into the opening mission,
-  Gauntlet-01.
+  It's a top-down tank shooter that tips its helmet to Battle City, the old
+  arcade classic, except here the floors are drawn in 3D.
 
 
-  You steer with WASD and aim with the mouse, then click to fire. Shift is your
-  boost.
+  You drive with WASD and aim with the mouse while clicking to fire. Shift gives
+  you a boost, and pressing Enter on the menu sends you out.
 
 
-  Up top you'll find Play, Armory, Intel and Settings tabs, so there's more to
-  the game than the mission itself. A bar in the corner tracks your score,
-  credits and alloy. It's a roguelite shooter, and the creator named Battle City
-  as the inspiration.
+  Upgrades carry the progression. You buy them on the way down, and the ones you
+  pick shape the tank, so each run builds toward a different setup. Two
+  currencies, credits and alloy, sit in the corner of the screen, and the Armory
+  gets its own tab next to Intel and Settings.
 
 
-  The look is a dark military command screen with amber lettering, which suits
-  the whole tactical-briefing idea.
-
-
-  An operator dossier on the main screen records your deepest floor, your high
-  score and your eliminations. That gives you three records to beat each time
-  you deploy.
+  Armored bosses guard the way forward, and they're where whatever build you've
+  scraped together by then gets tested.
 play:
   url: https://0tanks.com
   embeddable: true

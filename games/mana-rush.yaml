@@ -2,38 +2,40 @@ slug: mana-rush
 title: Mana Rush
 tagline: Fly a broom through collapsing crystal caves before your mana runs out.
 description: >-
-  You're a witch on a borrowed broom, flying through a crystal cavern that's
-  losing its light, and your mana is what's running out. Every boost, every
-  crash and every second in the dark burns it down, so a burst of speed always
-  costs you something. Crystals you harvest put charge back, which is why the
-  on-screen tip tells you to collect along the main route before spending it
-  through a gold boost ring.
+  You're a witch on a borrowed broom, racing through a crystal cavern that's
+  falling apart around you. You fly from seal to seal, skim past hazards and
+  break through a final portal before your magic gives out. The cavern is
+  procedurally generated, and the one on screen asks you to light four seals
+  along the way.
 
 
-  You fly from seal to seal, with a counter showing how many of the four are lit
-  and how far the next one is. Sanctuaries refill your mana and anchor your run,
-  so reaching one matters before you push for the final portal.
+  Mana works as your clock, because flying, boosting and crashing all burn
+  through it, so each run becomes a trade between speed and charge. Crystals top
+  it back up, while sanctuaries refill it and anchor your progress.
 
 
-  If the broom scrapes or stalls, hold Space to lift clear and steer back onto
-  the route.
+  The caves split into branching routes, and alongside the hazards you'll find
+  boost gates and pickups scattered through them.
 
 
-  The caves are procedural, with branching routes, hazards, boost gates and
-  pickups, so you're choosing a path as well as flying one. A timer runs the
-  whole way, which means a detour costs you something you can watch. If things
-  go badly wrong, R respawns you.
+  Every run is timed, with medals, personal bests and splits to chase. It also
+  keeps track of your collisions, respawns, top speed and how long you spent
+  boosting, which is a surprisingly thorough set of numbers for a broom race.
+  Finishing a depth sends you into a harder cave and earns you Crystal Charge.
 
 
-  Finishing earns time medals, personal bests and splits, plus stats on
-  collisions, top speed and boost time.
+  That Crystal Charge pays for permanent upgrades, along with unlockable hats
+  and brooms that each come with their own stat tradeoffs, so even the witch's
+  hat counts as gear.
 
 
-  Each completed depth drops you into harder caves, and the Crystal Charge you
-  earn pays for permanent upgrades, plus hats and brooms that trade one stat for
-  another, which gives you a neat reason to go back down. John P. Doran handled
-  the design and creative direction, with AI tools helping on the art, code,
-  sound and music.
+  You steer with WASD or the arrow keys and move the camera with the mouse.
+  Space or E climbs, Q drops you lower and Left Shift boosts, and a gamepad
+  works too.
+
+
+  netravelr credits Codex for the programming, GPT Image 2 for the 2D images,
+  Meshy for the 3D models and Suno for the music.
 play:
   url: https://netravelr.itch.io/mana-rush
   embeddable: false

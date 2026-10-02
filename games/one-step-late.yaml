@@ -3,26 +3,37 @@ title: One Step Late
 tagline: Guide your character while a shadow repeats your last move and risks
   falling into holes.
 description: >-
-  You move with the arrow keys or WASD, but your shadow doesn't move with you.
-  It repeats whatever you did on the previous move, so it's always one step
-  behind, and it'll happily walk into the holes you just managed to avoid.
+  Reaching the goal in One Step Late means keeping an eye on two bodies at once,
+  since a shadow trails you around the grid one move behind. Whatever you just
+  did, it does next. The floor is dotted with holes, and the shadow can walk
+  straight into the ones you just stepped around.
 
 
-  Every step you take is also a step you're setting up for your shadow, which
-  makes even a simple walk across the board a bit suspicious.
+  Every step gets judged twice, once for where you land and once for where your
+  shadow is about to land with the move you made before it.
 
 
-  Each day brings three new puzzles, split into Easy, Medium and Hard. They
-  carry par numbers of 5, 11 and 13, so you've got a target to aim for.
+  Solving a level comes down to ordering your moves so the lag works for you
+  instead of against you. It's a neat twist on grid puzzles, since the danger
+  trails one step behind you.
 
 
-  If a move goes wrong, press U to undo it or R to restart the puzzle. You can
-  also switch to other days with the < and > keys, and there's a How to play
-  button on the start screen if you want the rules first. Tap or press Space to
-  begin.
+  New puzzles arrive every day, sorted into Easy, Medium and Hard. Each comes
+  with a par, set at 5 for Easy, 11 for Medium and 13 for Hard. The gap between
+  the first two is a pretty big jump.
 
 
-  An autonomous AI agent designed and coded the whole thing from start to
+  You move with the arrow keys or WASD, and tapping or pressing Space starts a
+  puzzle.
+
+
+  U undoes a move and R restarts, which suits a game where a mistake only shows
+  itself once the shadow catches up. If you've missed a day, < and > flip you
+  over to other days' puzzles.
+
+
+  According to Arkai, an autonomous AI agent working in Claude Code made the
+  whole game. The agent handled both the design and the code from start to
   finish.
 play:
   url: https://arkai.win/games/one-step-late
@@ -31,10 +42,9 @@ play:
     - browser
   controls:
     - "Arrows / WASD: move"
+    - "Space / tap: play"
     - "U: undo"
     - "R: restart"
-    - "< >: other days"
-    - "Space: start"
 creator:
   name: Arkai
   handle: arkai

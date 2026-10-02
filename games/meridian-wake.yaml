@@ -3,39 +3,48 @@ title: Meridian Wake
 tagline: Fly a brick-built spaceship, trade, mine, fight, and follow stories
   across star systems.
 description: >-
-  Choose a Sparrow, a Shuttle or a Star Barge, then take the first call at New
-  Boston and fly out. Open the map, pick Arcturus, jump, and set down on New
-  Greenland to finish that first job.
+  Pick a Sparrow, a Shuttle or a Star Barge, then accept the first transmission
+  waiting at New Boston. From there you launch, pull up the map, plot a course
+  for Arcturus and jump, and landing on New Greenland wraps up that opening job.
 
 
-  Everything is built from bricks, so the planets and ships look like chunky toy
-  models.
+  Ships, planets and stations are modeled in blocky 3D bricks, an unusual look
+  for an old-school space trader.
 
 
-  After that you decide how to earn a living. You can haul cargo, ferry
-  passengers, mine, refit your ship and give orders to escorts, or follow the
-  Free Worlds storyline or the civilian and alien ones.
+  Every port you land at has a contract board, markets, a shipyard, an
+  outfitter, fleet services and a bank. Between them you can haul cargo, ferry
+  passengers, mine, refit your ship and give orders to your escorts.
 
 
-  Ports are the hub, with contracts, markets, shipyards, outfitters, fleet
-  services and a bank. The Concourse there adds chats with civilians, a field
-  guide and four branching stories, and new contracts name exact planets, so you
-  aren't guessing where to go.
+  The contracts get pleasantly specific, since each one names an exact planet.
+  Survey jobs want brand-new scans. Assay jobs use up Metal you're actually
+  carrying, while excursions want every stop visited before you head back home.
 
 
-  Assays actually consume your Metal, which is a nicely literal rule.
+  The main storyline follows the Free Worlds, with civilian and alien storylines
+  running beside it.
 
 
-  The bank screen lays out what you owe each day, what your crew costs and your
-  credit rating, plus loan offers sized to your income. The outfitter holds
-  upgrades on a planet until you're ready to install them, even on a different
-  ship, which makes swapping hulls less painful. Once the story ends you can
-  keep exploring.
+  On the Concourse screen you'll find conversations, a field guide and four
+  branching stories. A journal keeps track of the objectives you haven't
+  finished and the routes they need. Once you reach the ending, you're free to
+  keep flying.
 
 
-  Your journal tracks unfinished objectives and routes. Saves live in your
-  browser, so export a backup before you start a new captain or clear browser
-  data, and note that keyboard, touch and gamepad all work.
+  The bank screen has more bookkeeping than you'd expect from a space game,
+  listing daily payments, crew wages, your credit rating and loan offers tied to
+  your income. At the outfitter, you can buy upgrades and leave them stored on a
+  planet to install later, even on a different ship.
+
+
+  Your progress autosaves in the browser. The options let you remap keys, adjust
+  audio and graphics, switch to fullscreen, and export or import your save.
+
+
+  This is a reimagining of Endless Sky with its own geometry and interface,
+  while its universe data, story inspiration and audio come from the Endless Sky
+  contributors.
 play:
   url: https://meridian-wake-g6a.vercel.app
   embeddable: true

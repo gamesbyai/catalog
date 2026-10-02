@@ -3,30 +3,38 @@ title: Keeper Light
 tagline: Upgrade your boat and lighthouse by day, then defend the light through
   each night's waves.
 description: >-
-  You start on a small green island in daylight, with a red-and-white lighthouse
-  behind you and a wooden boat tied up just off the shore.
+  Day 1 starts on a small green island, with a red-and-white lighthouse, a
+  wooden boat tied up at the shore and your keeper waiting beside a ring marker,
+  with an F prompt for the Boat Yard.
 
 
-  The top of the screen shows Day 1 marked as Planning, with a clock reading 8h,
-  so the daylight is a limited budget. Your job in those hours is to upgrade
-  both the boat and the lighthouse beam. Right now the beam is set to Sweep.
+  The clock at the top says Planning with 8h on it, and those daylight hours are
+  for upgrading your boat and the lighthouse beam. The panel on the right keeps
+  track of which beam you've got, and it starts out as Sweep. Two more glowing
+  rings sit by the trees on the left, one yellow and one blue, tucked in pretty
+  close to the pines.
 
 
-  A panel on the right tracks your stores of scrap, fuel, glass, copper and
-  relics, and you begin with 2 fuel. Under those there's a kill counter, a
-  blueprint counter, and bars for fuel and boat health, with the boat at 100.
+  That same panel tracks your scrap, fuel, glass, copper and relics, a
+  surprising number of materials for one little island. Below those you'll find
+  your kills, a BPs counter, a fuel gauge and the boat's condition, which starts
+  at 100, while the gauge oddly reads 0 even though your stores already hold 2
+  fuel.
 
 
-  When you stand near the dock, a prompt offers the Boat Yard.
+  When night comes, the enemies arrive in waves that keep escalating, and your
+  job is to keep the lighthouse from falling.
 
 
-  Once night comes, the enemy waves get tougher as they go. You're trying to
-  keep the lighthouse from falling, and its health bar in the top left starts at
-  1000.
+  A Keeper Light bar at the top left starts full, at 1000 out of 1000. A round
+  minimap in the bottom right shows the lighthouse and the markers close to it.
+  The bar shares its name with the game itself, a fitting touch for a title
+  built around one tower.
 
 
-  A small circular radar sits in the bottom right corner. The creator has said
-  this was a first game made to finish for a jam.
+  The art is chunky low-poly, with cone-shaped pines and a striped tower.
+  PetrSeifer87103 made it with a refreshingly modest goal in mind, and that goal
+  was to get a first game finished.
 play:
   url: https://vibejam.peterrock.dev
   embeddable: true

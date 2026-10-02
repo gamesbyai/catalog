@@ -2,36 +2,34 @@ slug: chain-puzzle
 title: Chain Puzzle
 tagline: Link words into chains and use bonuses to push your score higher.
 description: >-
-  Pick a mode first, because it decides how strict the guessing is. Easy is
-  hangman style, so you can guess any letters you like, and each one shows green
-  when it's in the right place, yellow when it's in the word but misplaced, and
-  grey when it's not there.
+  Hit Play, then pick one of three modes, each marked with one, two or three
+  stars.
 
 
-  Easy also starts you off on 5-letter words, so the first word is a short one.
+  Easy plays a lot like hangman, where you can guess any letters you like and
+  each one lights up green for the right spot, yellow for the wrong spot, or
+  grey when it isn't in the word at all. The words start at five letters.
 
 
-  Medium is crossword style, which means every guess has to be a real word from
-  the dictionary. You can't just throw letters at the board to see what sticks.
-  It starts at 5-letter words too.
+  Medium switches to a crossword style. Every guess there has to be a real word
+  from the dictionary, though you're still starting on five-letter words. Hard
+  keeps that dictionary rule but lets you jump straight in at Level 6 or Level
+  7, so the words are longer from your very first move.
 
 
-  Hard keeps the dictionary rule but skips the warm-up. You choose Level 6 or
-  Level 7 as your starting point, so the words are longer from your very first
-  move.
+  Across all three, your aim is to chain together as many words as you can,
+  picking up bonuses along the way while you chase the highest score.
 
 
-  The goal is to chain as many words together as you can, use bonuses along the
-  way, and finish with the highest score.
+  Your scores go onto a High Scores list, and there's a How to Play screen if
+  you'd like the rules laid out. The main menu also has a Suggest a Word button
+  for sending in words of your own, a surprisingly friendly touch in a game
+  built around a dictionary. It all sits on a neon purple and green backdrop
+  with a glowing grid floor straight off a synthwave album cover.
 
 
-  Since a dictionary decides what counts in Medium and Hard, it makes sense that
-  there's a suggest-a-word button on the main menu. A high scores screen and a
-  how-to-play page sit right beside it.
-
-
-  The creator wanted to learn about gameplay logic and make something people
-  would enjoy playing.
+  seanchk made it to learn how gameplay logic works and to build something
+  people would enjoy playing.
 play:
   url: https://cwpuzzle2.purpleprawn.com
   embeddable: true

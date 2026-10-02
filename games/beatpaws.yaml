@@ -3,33 +3,33 @@ title: BeatPaws
 tagline: Guide bouncing cats through neon lanes, hitting notes and dodging
   hazards to the beat.
 description: >-
-  Pick a song, a difficulty and a cat, then tap Play. You can preview the beat
-  first, so you know what the track sounds like before you commit to it.
+  Pick a song, a difficulty, a map and a cat on the start screen, then press
+  Play and you're straight into a round with no login standing in the way.
 
 
-  Once you're in, your cat bounces down neon lanes on a 3D stage, hits the
-  musical notes as they reach it, and dodges the hazards sitting in the way.
+  Once it starts, cats bounce along neon beat lanes on a 3D stage. You hit the
+  musical notes as they reach you, while also dodging the hazards that sit
+  between them.
 
 
-  The setup screen has more choices than you'd expect for a game that wants you
-  playing right away. There's a nickname already filled in, a song list that
-  includes Neon Alley Sprint, a difficulty setting that starts on Easy, and a
-  country picker.
+  The Players menu comes set to 1P Solo on the ASDF keys. There's a nickname
+  field too, and it shows up already filled with a pretty goofy name like Turbo
+  Pouncer 17 or Midnight Nap 43. A country selector sits right next to the track
+  choices.
 
 
-  The map is its own pick too. SF Bay Stage shows a dusk skyline over the water,
-  with a keytar cat on one side and a guitar cat on the other, which is a pretty
-  good reason to browse before you play.
+  Out of the box you get the track Neon Alley Sprint on Easy, and the line under
+  the title invites you to preview the beat before you jump in.
 
 
-  Solo play is set up for the A, S, D and F keys. A trophy button sits in the
-  top corner of the screen.
+  The SF Bay Stage map is a surprisingly detailed waterfront at night, with one
+  cat playing a keytar on the left and another on guitar to the right. Below it,
+  a row of character portraits lets you choose your cat, starting with Mint DJ.
+  There's also a trophy button tucked into the top corner.
 
 
-  The cats are AI-generated, and you choose between several of them, like the
-  Mint DJ. The creator wanted it to feel joyful as soon as it opens, drawing on
-  arcade rhythm games, retro neon worlds and the idea of connected games you can
-  jump between.
+  The cats are AI-generated. swhan0329 took cues from arcade rhythm games, retro
+  neon scenery and the idea of linking games so players can hop between them.
 play:
   url: https://beatpaws.vercel.app
   embeddable: true

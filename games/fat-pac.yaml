@@ -2,36 +2,37 @@ slug: fat-pac
 title: Fat Pac
 tagline: Eat everything in a maze while growing fatter and slower with every bite.
 description: >-
-  You clear a maze of food Pac-Man style, but every bite pushes a fatness meter
-  up, and when it reaches 100% the board itself breaks. So the thing you're
-  collecting is the thing that's wrecking you, which is a pretty funny way to
-  flip the old chase.
+  Every bite pushes a fat meter higher, and when it reaches 100% the board
+  itself breaks. You steer through a maze trying to eat all the food to clear
+  the stage, while that meter keeps climbing and your character keeps getting
+  slower. Hunger is the other way a run ends, which leaves you stuck between
+  eating too much and not eating enough.
 
 
-  Eating slows you down too, and hunger can also end your run.
+  Each food adds its own amount, from a measly +1% for fries up to +12% for the
+  biggest item on the menu.
 
 
-  Not every snack costs the same. Fries add 1%, a hot dog 2%, a burger 3%, pizza
-  4% and a shake 5%, while ice cream adds 8% and a cake adds 12%, so you get to
-  decide which ones are worth the risk.
+  Four enemies patrol the maze, and touching any of them costs you a life. In an
+  oddly fitting touch for a game about piling on weight, they're mostly workout
+  gear. The Treadmill chases you directly, the Dumbbell wanders at random, the
+  Rope moves to cut you off and the boss, Personal, is billed as very
+  aggressive.
 
 
-  Four gym machines chase you around the maze, which is a fair bit of irony for
-  a game about getting fat. The treadmill heads straight for you, the dumbbell
-  patrols at random, and the jump rope tries to cut you off. The personal
-  trainer is the boss, and it's very aggressive.
+  A single fruit sits in the center of the maze. Eating it lowers your fat level
+  and turns the enemies around. It's a neat bit of double duty, so the fruit
+  works both as a way to slim down and as a way to flip the chase.
 
 
-  Touch any of them and you lose a life, so you can't just plow through.
+  Before you start, a pretty thorough title screen lays out the rules, the
+  enemies and what every food is worth. The whole interface is in Portuguese,
+  though there's a language toggle up top.
 
 
-  There's a piece of fruit in the middle of the maze, and eating it slims you
-  down. It also reverses the enemies, so one bite works as a diet and an escape
-  at once.
-
-
-  The start screen is in Portuguese, but there's a language toggle, and music
-  and sound effects each have their own button.
+  Press Space to begin, then move with the arrow keys or WASD, and Space pauses
+  once you're playing. R restarts a run, and the top bar has music and sound
+  switches next to a settings menu.
 play:
   url: https://fatpac.vercel.app
   embeddable: true

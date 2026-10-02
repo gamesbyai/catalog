@@ -2,33 +2,39 @@ slug: croaks
 title: CROAKS
 tagline: Aim and fire at rival frogs in a turn-based artillery battle.
 description: >-
-  The first screen is a swampy pixel-art pond with a big green CROAKS logo, and
-  you pick how to play from there. You can find an opponent, play against an AI,
-  try survival, take the daily challenge, or customize your frogs.
+  A pixel-art swamp full of armed frogs greets you on the title screen, with one
+  of them mid-leap and looking a bit panicked about the grenade it's clutching
+  under a banner that promises 21 weapons. From the menu you can find an online
+  opponent, play against the AI, try Survival, take on a daily challenge with
+  its own countdown or head into Customize.
 
 
-  The creator grew up on Worms and wanted those memories back, so this is the
-  same idea with frogs.
+  On your first visit there's a kind offer of a roughly 90-second tutorial,
+  where the AI opponent stays passive and your ammo never runs out.
 
 
-  Your team of frogs faces theirs, and you take turns blowing up the other side
-  until only one team has frogs left standing. After you fire, a short retreat
-  lets you move clear, which is handy when whatever you just launched is about
-  to go off. You can swap which frog you control, and you can end your turn
-  early with the skip button.
+  The matches are turn-based artillery between two teams of frogs on a side-view
+  landscape of dirt hills. You and the other side take turns blowing each other
+  up, and whoever still has frogs standing at the end wins. A round timer ticks
+  at the top of the screen while each team's health sits in its own bar.
 
 
-  There are 21 weapons, sorted into direct, fuse and cluster, special, and
-  utility groups in a tray along the bottom of the screen. You pick one with the
-  number keys.
+  Number keys 1 to 9 pick your weapon, and Tab hands control to a different frog
+  on your team.
 
 
-  A health bar for each team sits at the top next to a countdown clock.
+  When you're done, the Skip button ends your turn. Firing doesn't end things
+  right away, though, because a short retreat phase follows that lets you hop
+  your frog clear.
 
 
-  If it's your first visit, a short tutorial promises you'll learn the basics in
-  about 90 seconds. Your opponent is passive and your ammo is unlimited there,
-  so you can try things out without anyone fighting back.
+  Along the bottom sits the weapon bar, which splits the arsenal into Direct,
+  Fuse / Cluster, Special and Utility groups. It's a pretty tidy way to fit 21
+  weapons on a single strip.
+
+
+  thomaskanze grew up playing Worms and made CROAKS to bring those memories
+  back, this time with frogs instead of worms.
 play:
   url: https://croaks.cc
   embeddable: true

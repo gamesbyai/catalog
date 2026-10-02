@@ -2,32 +2,37 @@ slug: debt-witch-blood-interest
 title: "Debt Witch: Blood Interest"
 tagline: Survive 60 seconds as a witch, casting spells against a swarm of vampiric debt.
 description: >-
-  You start on a dark, grid-lined page with a black blob of a witch and small
-  colored monsters drifting toward her. Each one wears a name tag like Rent
-  Ghoul, Interest Bat or Subscription Leech, and a Time box at the top counts
-  down from 60.
+  A dark purple grid fills the screen, with your witch as a small black blob and
+  colored blobs carrying surprisingly literal labels like Rent Ghoul, Interest
+  Bat and Subscription Leech drifting in around her. You're trapped inside a
+  cursed ledger, and that swarm is vampiric debt crawling out of its margins.
 
 
-  You're a witch trapped in a cursed ledger, and the debt has turned vampiric.
+  Your job is to last 60 seconds against it, while a timer counts down in the
+  corner beside your score, your debt and your hearts.
 
 
-  You move with WASD or the arrow keys, aim with the mouse, and cast spells at
-  the swarm. The top of the screen shows your time, score, debt and hearts,
-  which is a tidy way to make money trouble stand in for health.
+  You steer with WASD or the arrow keys and aim with the mouse. Casting works on
+  a click, Space or Q. The bar along the bottom calls that basic spell the
+  Receipt Bolt, which is a fitting thing to throw at a bill.
 
 
-  Your goal is to make it through the full 60 seconds without the debt swarm
-  getting you.
+  Two more abilities sit on the keyboard, both named after accounting terms.
 
 
-  Besides the basic cast, which the bar at the bottom calls Receipt Bolt, you
-  get two more tricks. Grace Period slows the debt down, and Write-Off is a
-  blast you set off on its own key. Naming a panic button after clearing a bill
-  is a pretty good joke.
+  E slows the debt down through a spell called Grace Period, a clever name for
+  buying time. R sets off the Write-Off blast. A run means casting, dodging and
+  slowing the swarm inside one short window, and when the 60 seconds are up, a
+  cursed accountant hands you a grade for how you did.
 
 
-  When the minute runs out, a cursed accountant hands you a grade for how you
-  did. The creator credits AI help with the code, graphics and text.
+  The whole thing is played as gothic comedy in an arcade survival format, where
+  unpaid bills and interest are monsters with teeth. Even the enemy names stay
+  on theme, turning your rent into a ghoul and a subscription into a leech.
+
+
+  Bad Omen Games built it with AI assistance on the code, graphics and text,
+  according to their own disclosure.
 play:
   url: https://bad-omen-games.itch.io/debt-witch-blood-interest
   embeddable: false

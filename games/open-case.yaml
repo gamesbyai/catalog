@@ -3,50 +3,44 @@ title: open case
 tagline: Read evidence, spot contradictions, and answer six questions to close a
   homicide case.
 description: >-
-  You play an investigator who's been handed a reopened homicide file. Cole
-  Vance washed up on the Sonoma Coast in dive gear, the sheriff called it an
-  accident, and you're there to confirm that ruling or overturn it.
+  You're an investigator handed a homicide file that's been reopened six months
+  after the sheriff closed it. Cole Vance, a winemaker's brother, washed up on
+  the Sonoma Coast in dive gear, and the sheriff ruled it an accidental
+  free-diving drowning.
 
 
-  The evidence sits in a dock on the left, split into persons of interest, the
-  coast, the cellar, sale and alibi papers, and witness statements. That's 18
-  files, and the briefing warns that every source tells part of the truth but
-  none tells all of it, so you can't just trust one.
+  Your job is to confirm or overturn that ruling, and everything you need sits
+  in 18 files along a side dock. There's a case briefing, a list of persons of
+  interest, coast photos, cellar logs, sale and alibi documents, and witness
+  messages. Each source only holds part of the story, so you cross-check the
+  timeline and hunt for the places where they contradict each other.
 
 
-  Marcus Vance, Cole's half-brother and the estate operator, is named as the
-  prime suspect.
+  The briefing points you to the coast first, a fair place to begin when the
+  official story blames the water.
 
 
-  A timeline strip runs along the bottom, from Cole arriving at the estate on
-  April 14 to the body turning up on April 19, with a signing date on April 22
-  after that. It's handy because you can hold each statement up against actual
-  dates.
+  A strip of dates under the files lays out the key stretch, from Cole arriving
+  at the Vance estate on April 14 to his body turning up on April 19 and a
+  signing date on April 22. Someone's even left a scribbled sticky note on the
+  desk with "HVAC anomaly", "service gate" and "ask Tom" on it.
 
 
-  There's even a sticky note on the desk that says to ask Tom, which is a funny
-  little nudge.
+  Marcus Vance, Cole's half-brother who runs the estate, is named as the prime
+  suspect from the start.
 
 
-  On the right is the Casebook, a paper notepad with six dropdown answers. You
-  choose the cause of death, the real death location, what the beach scene was,
-  the fatal tell, who lied for Marcus, and Marcus's motive. Then you press Send
-  Report, which forces you to commit to one theory instead of just piling up
-  clues.
-
-
-  The whole thing looks like a case file left on a dark wooden desk, with amber
-  type and a paper notepad, and there's a difficulty setting in the dock too.
+  The Casebook beside the files is where you finally have to commit, with six
+  dropdown answers split into physical and proof sections. They ask what Cole
+  died from, where he really died, what the beach scene was, the fatal tell, who
+  lied for Marcus and what Marcus's motive was. Once every answer is filled in,
+  you send off your final report.
 play:
   url: https://case.stephapp.com
   embeddable: true
   platforms:
     - browser
     - mobile
-  controls:
-    - "Click: open an evidence file"
-    - "Dropdowns: choose Casebook answers"
-    - "Send Report button: submit your final report"
 creator:
   name: YaoLabs
   handle: yaolabs

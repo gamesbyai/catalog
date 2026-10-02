@@ -4,34 +4,33 @@ tagline: Drive capybaras around a cozy open world delivering food without
   toppling the fruit stack.
 description: >-
   You're a capybara on a scooter with a red delivery box strapped to the back,
-  and every order you pick up adds fruit and other food to a stack that rises
-  above you like a tower.
+  working as a food courier in a cozy open world. The job is to accept orders
+  and get them where they're going as fast as you can. On the title screen your
+  capybara does it in sunglasses, which suits the job.
 
 
-  You accept orders the way a delivery app hands them out, then race to drop
-  them off as fast as you can. The stack is the catch, because if you let it
-  fall, the food goes with it. It's an open world, so you pick your own route
-  between pickups and customers.
+  Whatever food you pick up stacks above the box. The title screen shows the
+  kind of tower this builds, with noodle cups, milk cartons, bubble tea and a
+  few other items piled into a surprisingly tall column.
 
 
-  The title screen shows how silly the stack gets: a noodle cup, a milk carton,
-  a slab of meat and a boba-style drink, all balanced on top of each other.
-  That's a lot of lunch for one rodent.
+  Your goal is to keep that tower standing so nothing falls off before the order
+  arrives.
 
 
-  The setting is cozy and a bit odd, with a hill covered in greenery, street
-  lamps, white apartment buildings, and a giant orange gate in the distance.
+  The city you ride through has hills, trees, street lamps and apartment
+  buildings. leocooout, a former developer on a food delivery app, says the
+  buildings, the apps and the outdoor areas all carry the capybara theme — the
+  joke reaches well past the main character.
 
 
-  The creator used to work as a developer on a real food delivery app, so the
-  idea was to recreate that familiar experience with capybaras in every part of
-  it. Buildings, apps and outdoors all follow the theme, which is a funny amount
-  of commitment to one joke.
+  From the menu you can play online or offline, change the settings or check a
+  stats screen.
 
 
-  From the start screen you can play online or offline, and there's also a stats
-  page and a settings menu. Claude Code wrote the code, while other AI tools
-  handled the music, sound effects and 3D rigging.
+  The music, sound effects and 3D rigging each came from a separate AI tool, a
+  bit of a crew for one scooter-riding rodent. Suno made the music, ElevenLabs
+  supplied the sound effects and Tripo3D handled the rigging.
 play:
   url: https://capybara-vibejam26.leocoout.dev
   embeddable: true

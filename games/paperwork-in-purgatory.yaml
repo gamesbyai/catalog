@@ -2,39 +2,38 @@ slug: paperwork-in-purgatory
 title: Paperwork in Purgatory
 tagline: Check each dead soul's claims against the database and accept or reject them.
 description: >-
-  You're a damned soul who just got promoted to the intake window of the
-  afterlife. Each dead person slides over the sins, virtues, last rites and
-  excuses they say apply to them, and you compare all of it against the
-  database.
+  You're a damned soul who's finally been offered a job in the afterlife, though
+  it's a promotion to the intake desk rather than salvation. Each dead person
+  slides over a list of their claimed sins, virtues, last rites and excuses, and
+  you check all of it against the database before you accept or reject them.
 
 
-  Then you accept or reject. Someone who looks like a saint but has a murder on
-  file gets turned away, while a thief who really did feed the poor can pass, so
-  the records outrank whatever a soul tells you. The dead fib constantly, and
-  the database is the more honest of the two.
+  The database is the one thing here you can trust, and the souls' own claims
+  can't be. A saint hiding a murder should be turned away, while a thief who fed
+  the poor may get through. It's a game about reading documents and applying the
+  rules, wrapped in a creepy office-bureaucracy tone that suits, a bit too well,
+  a Purgatory where Hell is overcrowded and Heaven's HR department won't leave
+  you alone.
 
 
-  Mistakes pile up, and every one of them gets counted against you.
+  Your booth is a grimy green pixel-art window with a monitor up top, buttons to
+  process a soul or check the database, a chalkboard holding the instruction
+  manual and, for some reason, a coffee maker.
 
 
-  Every three errors cost you one life, and you have three lives total. Lose
-  them all and you won't be fired, you'll be processed, which is a grim kind of
-  severance.
+  A run lasts seven days at the window, and the chalkboard keeps count of your
+  daily quota, starting at ten souls on day one. Make it through the whole week
+  and you're paroled, with the grim reward of a spot in the very line you've
+  been working.
 
 
-  Get through seven days at the window and you're paroled, which means you take
-  a spot in the very line you've been running.
+  Mistakes are tracked, and every three errors cost you one of your three lives,
+  while losing all of them means you don't get fired, you get processed.
 
 
-  The booth is a cramped metal cabin with a green monitor on top that has tabs
-  for sins, projects and the database, plus a pause option. Under it sit a lever
-  and three colored buttons. A chalkboard beside the window tracks the day, your
-  quota and your errors, and a coffee maker on the counter fits the whole
-  bureaucracy joke.
-
-
-  Levi Rose built it with mobile in mind, so on a desktop the page recommends
-  shrinking your browser window to about half size.
+  Morpheus Code made it for mobile screens. If you're playing in a browser, they
+  suggest setting it to about 50% screen size. According to the creator, AI
+  assisted with the graphics.
 play:
   url: https://morpheus-code.itch.io/paperwork-in-purgatory
   embeddable: false

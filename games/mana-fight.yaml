@@ -2,34 +2,36 @@ slug: mana-fight
 title: MANA FIGHT
 tagline: Pick a spellcasting class and fight through fast third-person arena battles.
 description: >-
-  You start by picking one of four classes, and each one comes with its own pair
-  of attacks and a passive perk. It's a third-person shooter, but the guns are
-  swapped for spells, bows and blades.
+  Pick one of four classes on the start screen, then take them into a
+  third-person arena where you fight with spells and melee weapons. Each class
+  card shows bars for attack, defense and speed. It's also got two attacks, one
+  on the 1 key and one on the 2 key, plus a passive trait.
 
 
-  The Tank is the frontline pick, with a Fireball that does area damage and a
-  melee Sword, plus Heavy Plate, which cuts the damage you take by a fifth. The
-  Ranger kites from a distance with a magic green arrow and a Dagger, and Hawk's
-  Eye adds range.
+  Tank is the frontline pick, hurling a Fireball that does 28 damage across an
+  area or swinging a Sword for 35 up close, while Heavy Plate shaves 20% off the
+  damage you're taking. Ranger fires a magic green arrow worth 40 damage, or
+  stabs with a 20-damage dagger instead. Hawk's Eye stretches its range by 25%,
+  which suits a class that's tagged for kiting on its own card.
 
 
-  The Esq class is the area damage caster. It throws a homing Shadow Bolt,
-  swings a Staff Whack up close, and regains mana faster thanks to Arcane Focus.
+  Esq's the area-damage class, and its Shadow Bolt is homing dark magic that
+  hits for 30. Its Staff Whack is a pretty modest 15-damage melee swing. Arcane
+  Focus raises mana regeneration by 50%, and oddly enough it's the one trait on
+  the menu that touches mana in a game named after the stuff.
 
 
-  Then there's the Phantom, an assassin who throws blue Spirit Daggers and
-  slashes with Twin Daggers. Backstab gives it extra damage when you hit from
-  behind, which is a nice reason to go around your target.
+  Phantom plays the assassin, throwing twin blue Spirit Daggers for 15 damage
+  each or cutting with Twin Daggers for 25 in melee, while Backstab adds 50%
+  damage when you're hitting from behind.
 
 
-  Each class card shows attack, defense and speed bars, so you can compare them
-  before you commit. The Tank maxes out defense, while the Phantom leans on
-  speed.
+  Next to Play, the menu bar also links to Map 1, Movement, Model Lab, Aim and
+  Game Logs.
 
 
-  The menu also has tabs for Map 1, Movement, Model Lab, Aim and Game Logs. The
-  creator wanted the usual gun-and-grenade shooter formula but in a fantasy
-  world with a fresher spirit, and the goal is to dominate the arena.
+  NinoGreeno wanted the familiar core of shooters, usually built around guns and
+  grenades, carried into a fantasy setting.
 play:
   url: https://manafight.vercel.app
   embeddable: true

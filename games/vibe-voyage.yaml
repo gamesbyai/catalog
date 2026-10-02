@@ -2,28 +2,37 @@ slug: vibe-voyage
 title: Vibe Voyage
 tagline: Haul cargo across the planet by ship and spend your earnings on better vessels.
 description: >-
-  Vibe Voyage has you captain a cargo ship, sailing loads from port to port
-  around a planet to earn money.
+  Vibe Voyage puts you at the helm of a cargo ship that sails around an entire
+  planet, hauling freight from port to port and getting paid for every load you
+  deliver.
 
 
-  You start by sailing to Whitepier and docking there to pick up your first
-  cargo. Arrows on the water point toward the harbor, so you don't have to hunt
-  for it.
+  The money you earn goes toward buying better ships. It's a pretty simple loop
+  to hang on a shipping game that wraps its whole map around one round world.
 
 
-  Steering works off a throttle instead of a plain gas pedal, so you raise it to
-  build speed and lower it past zero to back up. There's a separate key that
-  snaps the throttle straight to zero. Left and right thrusters sit on their own
-  keys too.
+  Your first job is waiting at Whitepier. You sail over and dock there to load
+  your opening cargo. Instead of leaving you to hunt for the port, the game
+  draws arrows right on the water to point the way.
 
 
-  Everything you earn goes toward buying better ships, which gives the hauling
-  its purpose.
+  Speed works a bit differently here, since you drive the ship with a throttle
+  rather than setting how fast it goes directly.
 
 
-  The creator took the basic idea from a Roblox game called Shipping Lanes and
-  wanted to put their own spin on it. A welcome card lists every control before
-  you set off, which saves you from guessing which key does what.
+  W or the up arrow raises the throttle to push you ahead, while S or the down
+  arrow lowers it, and if you keep going past zero you start backing up. When
+  you'd rather just stop pushing, X drops it straight to zero in one press.
+  Turning sits on A and D or the left and right arrows, and Q and E fire the
+  left and right thrusters.
+
+
+  Helpfully, all of these keys are laid out on a welcome card that greets you
+  before you set sail.
+
+
+  jallen_dev based the idea on Shipping Lanes, a Roblox game, keeping the same
+  basic premise while putting their own spin on it.
 play:
   url: https://vibe.voyage
   embeddable: true

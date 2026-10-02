@@ -2,38 +2,44 @@ slug: nuts-pipeline
 title: Nuts Pipeline
 tagline: Place converters on pipe nodes to sort nuts from stones and feed a hamster.
 description: >-
-  Nuts Pipeline has you placing converters on nodes along a set of pipes, so the
-  right mix of nuts and stones reaches a hamster waiting at the end. Nuts and
-  stones flow in from the source, and your job is to sort them with combinations
-  of converters, because only nuts should get through.
+  Nuts Pipeline has you placing converters on the nodes of a pipe network to
+  decide where everything flows. Nuts and stones leave the source together, and
+  you need the right combination of converters to sort them so only nuts reach
+  the hamster waiting at the goal. The converters are drawn like tiny circuit
+  gates on graph paper, a pretty fitting look for a puzzle about wiring up a
+  snack delivery.
 
 
-  Letting a stone through counts as a miss, and two misses end the run. In the
-  first level's screenshot you can see the setup: three inputs on the left,
-  gate-like converters in the middle, and the hamster on the right.
+  Selecting a node opens a dialog where you swap its converter, with a reference
+  chart right there to check against. The creator pitches it as easy for
+  beginners to pick up, since swapping converters is the main thing you do.
 
 
-  You pick a converter by selecting a node, which opens a dialog where you
-  switch converters while checking a reference chart.
+  Any stone that slips through to the hamster counts as a miss, and a second
+  miss ends the run.
 
 
-  A level runs for 10 turns, with a 3-minute limit on each level. There's also
-  an Unlock Route button that frees a locked node for one turn, which is handy
-  since some nodes start with a padlock on them.
+  Each level plays out in turns, and you have to get through 10 of them inside a
+  3-minute limit. When a node is locked, an Unlock Route action frees it for a
+  single turn, though the button for some reason reads Unlock Root. The level
+  and turn counter sit on the right side of the screen next to a Transport
+  button.
 
 
-  The hamster reacts with obvious delight whenever a nut arrives, which is a
-  nice reward for getting the sorting right.
+  The hamster at the end of the line reacts every time a nut arrives, giving all
+  that careful sorting a small audience.
 
 
-  Progress saves automatically after every placement and turn, so you can quit
-  and come back to the same spot. A tutorial is built in, and the main menu has
-  its own entry for it.
+  A built-in tutorial walks you through the rules, and the levels run from easy
+  stages up to harder ones. Progress autosaves after every placement and every
+  turn, so you can stop and pick it back up later.
 
 
-  When you press Start Game you choose a mode. Casual removes the time and miss
-  limits, though saving and ranking aren't available there, while Challenge,
-  with its limits and ranked records, is marked as part of the full version.
+  There's also a Casual mode that drops the time and miss limits entirely. It's
+  a gentler way in, though it doesn't save or submit rankings.
+
+
+  According to IS Product, AI helped with the game's code, graphics and text.
 play:
   url: https://is-product.itch.io/nuts-pipeline
   embeddable: false

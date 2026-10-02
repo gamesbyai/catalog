@@ -2,32 +2,32 @@ slug: shadow-monarch
 title: shadow monarch
 tagline: Explore a first-person memory from a 90s childhood and uncover what was buried.
 description: >-
-  You wander a dark cathedral in first person, slaying the shadows that haunt
-  it, and the whole thing is framed as a memory you'd rather have left alone.
+  A forgotten childhood memory resurfaces, and the tagline warns that some
+  things were buried for a reason.
 
 
-  On a computer you move with WASD or the arrow keys and look around with the
-  mouse. Clicking casts a spell.
+  You see it all in first person, inside the Dungeon of the Ninth Gate, a
+  cathedral that shadows have made their home. Your job is to awaken your
+  dominion and cut those shadows down, a pretty grand goal for something that
+  started as a kid's memory.
 
 
-  The keys 1, 2 and Q are tied to your magic and to a Shadow Blade, so there's
-  more to your arsenal than a single click. On a phone, a joystick moves you,
-  dragging on the right side turns your view, and you tap an orb to cast, which
-  is a sensible way to get spellcasting onto a touchscreen.
+  You've got two ways to fight. The 1, 2 and Q keys switch between Magic and a
+  Shadow Blade, and a click casts. There's a certain neatness to fighting
+  shadows with a blade named after them.
 
 
-  The place is called the Dungeon of the Ninth Gate, which is where all of this
-  takes place.
+  It all opens on a glowing title card with an Enter the Gate button, and
+  there's a sound toggle tucked into the top corner.
 
 
-  The story hook is a forgotten childhood memory from the 90s that surfaces
-  again, and the tagline warns that whatever got buried was buried on purpose.
-  Your job, according to the title screen, is to awaken your dominion by slaying
-  those shadows.
+  On a computer, you walk with WASD or the arrow keys and look around with the
+  mouse. Touch screens get a layout of their own, where a joystick moves you and
+  dragging on the right side turns your view. When you want to cast, you tap the
+  orb.
 
 
-  You begin from a glowing blue panel over a dim, blurred cathedral, with a
-  sound button in the corner and an Enter the Gate button to start.
+  thetrueisout218 based the story on their own childhood in the 1990s.
 play:
   url: https://shadowmonarch.app
   embeddable: true

@@ -3,34 +3,39 @@ title: "Tankz: Arena"
 tagline: Drive a tank through waves of enemies, pick upgrades, and fight bosses
   until you die.
 description: >-
-  You start in a dark arena as a glowing white tank, with pink enemy tanks
-  already closing in and thin blue walls scattered across the floor.
+  A glowing white tank sits in the middle of a dark, 2D top-down arena when it
+  loads.
 
 
-  Moving and aiming are separate, so you can slide one way while the barrel
-  points another. Left-click shoots, right-click sends out a rocket, and Shift
-  boosts you away when things get crowded. The panel in the top left keeps track
-  of health, boost, level, score, rocket count and your gun stats.
+  Pink enemy tanks are already rolling in around scattered blue wall blocks, and
+  your job is to keep that tank alive through wave after wave until it's finally
+  destroyed. The creator cheerfully admits you'll die eventually, ideally
+  somewhere after wave one. A small timer under the wave counter ticks down to
+  the next wave.
 
 
-  Enemies arrive in waves, and a countdown at the top tells you how many seconds
-  are left before the next one. After every fifth wave a boss turns up.
+  You steer with WASD and aim with the mouse, firing the main gun on left-click
+  and rockets on right-click. Shift gives you a boost, and E sets off
+  Multi-Burst, which gets its own glowing button at the bottom of the screen.
 
 
-  A purple Multi-Burst pickup is sitting near the bottom edge, and E sets it
-  off.
+  At least the bosses keep a schedule, since one shows up every five waves.
 
 
-  When you level up, the game deals out three random upgrades and you take one
-  of them, so the tank you end up with depends on the draw. The stat readout
-  lists damage, fire rate, speed, bullet speed and shots, which makes it easy to
-  check what a pick actually changed.
+  Each time you level up, you're offered three random upgrades and you take one
+  of them. There's a surprisingly tidy stats panel in the corner tracking
+  damage, fire rate, speed, bullet and shot count.
 
 
-  Now and then a chain lightning pickup shows up, and the creator calls its
-  thirty-second effect a highlight, which is a big promise for one power-up. The
-  same description admits you'll die eventually, and hopes it isn't in the first
-  wave.
+  Now and then you'll find chain lightning lying around as a pickup, and
+  according to the creator each one charges up your next thirty seconds, with
+  the pretty bold promise that those seconds become your favorite memory.
+
+
+  Durian Arcade made it as a fast arcade roguelite tagged Action and Survival,
+  with each run looping between outlasting waves, grabbing upgrades and taking
+  on whichever boss comes next. According to the creator, AI worked as an
+  assistant on the code, graphics, sounds and text.
 play:
   url: https://durian-arcade.itch.io/tankz-arena
   embeddable: false

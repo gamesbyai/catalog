@@ -3,33 +3,34 @@ title: Wallflipper
 tagline: Race through a neon corridor, flipping gravity to dodge obstacles and
   grab objects.
 description: >-
-  You start in a dark neon corridor with a glowing title, a launch button and a
-  small blue craft waiting on a grid floor. Press launch and you're racing down
-  it.
+  When it starts, a Launch button sits over a dark neon corridor with a glowing
+  cyan grid floor. In the top left there's a readout showing gravity set to
+  Normal and direction set to Forward, while the top right counts distance in
+  meters above two counters at zero and a thin bar.
 
 
-  The track isn't only the floor, because the walls and the ceiling are all part
-  of the course.
+  Once you're off, you race down that corridor on the floor, the walls and the
+  ceiling, which turns pretty much the whole tube into road.
 
 
-  You steer left and right to climb around the walls and onto the ceiling, and
-  you hit space to flip to the opposite surface. That flip is how you get out of
-  the way of traps stuck to whatever surface you're on.
+  Steering left or right carries you up the sides, and if you keep holding the
+  steer you keep climbing. Space throws you over to the opposite surface, and
+  that flip is how you get past the traps and obstacles sitting on the surfaces.
 
 
-  The route breaks into fragments, so you follow the pieces that are still there
-  while you dodge those traps and collect objects. Two readouts in the top left
-  show your gravity, which starts on normal, and your direction, which starts on
-  forward. Up top right, a distance counter in meters sits over two pickup
-  counters, which is a handy way to see how far you've gotten.
+  The goal is to stay alive at full speed while picking up objects along the
+  way. Text on the screen also points you toward following fragment routes
+  through the corridor. Oddly enough, R turns you around entirely, and that's
+  what the Direction readout in the corner keeps track of.
 
 
-  Your whole job is to stay alive while you keep moving at full speed.
+  P pauses, a small mercy in a game that wants you going full speed.
 
 
-  Beyond steering and flipping, you can reverse with R, pause with P, and switch
-  the music or sound off with M and S. Both audio toggles also sit as buttons in
-  the bottom left, so you can silence everything before you even launch.
+  Music and sound sensibly get their own toggles instead of sharing one mute.
+  Both have buttons in the bottom-left corner, and M and S switch them from the
+  keyboard too. The full list of keys runs along the bottom of the screen as
+  well.
 play:
   url: https://expectfun.github.io/vibetools/wallflipper.html
   embeddable: true

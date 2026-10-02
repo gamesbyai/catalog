@@ -2,31 +2,32 @@ slug: pocket-salvage
 title: Pocket Salvage
 tagline: Swing a crane, switch tools, and sort scrap into bins before time runs out.
 description: >-
-  Slide the crane along its rail with A and D, drop the line with W and S, and
-  press Space to grab whatever's underneath. The crane swings while you move it,
-  so the load doesn't hang still.
+  Move the crane left and right with A and D, and use W and S to drop and lift
+  the hook. Press Space to grip, and the magnet will lift steel.
 
 
-  Your first job is steel, and the magnet on the crane handles it.
+  For copper and rubber you'll want the claw, which you pick up at the tool
+  stands and switch to with E.
 
 
-  The magnet only lifts steel, which means copper and rubber need the claw. You
-  swap to it with E at the tool stands that sit along the left side of the yard,
-  which is a neat reason to make you walk the crane back and forth.
+  Scrap lies along the ground of a junkyard at night, with three bins on the
+  right for copper, rubber and steel. Your job is to get every piece into its
+  matching bin before the timer runs out. Up top, the HUD shows your score, time
+  left, how many pieces you've sorted and which tool you're holding.
 
 
-  Then you carry each piece over to the bin that matches its metal.
+  There's some nice craft in the crane itself, since its cable bends as it moves
+  and the hook hangs below as a flat magnet plate.
 
 
-  There are three bins, labeled copper, rubber and steel, and a counter up top
-  shows how many pieces you've sorted. A clock runs the whole time, so the round
-  ends when you've sorted everything or time runs out.
+  You choose rounds from a menu of twelve levels, and the later ones start out
+  locked. Level 1 is a pretty calm night with just four pieces to sort and four
+  minutes on the clock.
 
 
-  The first level is a calm night with four pieces of scrap, including a washing
-  machine and a gear. Later levels bring weather, and the picker shows twelve
-  slots with the rest locked until you get there. You can pause with P, restart
-  with R, and turn the music and sound effects off from the top bar.
+  The game's own blurb describes five weather levels. P pauses and R restarts a
+  round. If you'd rather sort scrap in silence, music and sound effects each
+  have their own switch in the top bar.
 play:
   url: https://pocket-salvage.web.app
   embeddable: true

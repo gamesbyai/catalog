@@ -2,35 +2,35 @@ slug: void-claim
 title: Void Claim
 tagline: Mine asteroids, upgrade your ship, and fight rivals in dangerous space zones.
 description: >-
-  Before you launch, you type in a callsign and pick one of eight ship colors,
-  with a big ship surrounded by glowing crystals and asteroids behind the menu.
+  The start screen asks for a callsign and a ship color from eight swatches,
+  then the Launch button connects you to a space you share with other players.
 
 
-  You begin somewhere safe, mining and upgrading your ship, and then you push
-  out into zones where other players can shoot you. The deeper you go, the
-  richer the asteroids get, which is exactly why everyone wants them.
+  Out there, you fly a ship fitted with drills and guns through asteroids
+  studded with colored crystals and gold. The tagline, Mine. Steal. Survive.,
+  sums up the whole plan in three words. You start in a safe area, mine, and put
+  what you earn into ship upgrades.
 
 
-  The tagline says mine, steal and survive, so taking from other pilots is
-  clearly part of the plan. It's a shared online space, which means those pilots
-  are real.
+  Further out, the zones turn into PvP territory, and of course that's where the
+  richest asteroids are waiting. Other players can attack you there, and when
+  you jettison cargo it scatters into individual pieces of loot that can be
+  picked up.
 
 
-  Greed isn't the only danger, though, because something ancient is stirring in
-  the deepest part of the void.
+  Shields take incoming fire first, but any damage beyond what they absorb
+  carries over to the hull.
 
 
-  The update notes on the start screen show some of the combat rules. Shields
-  let extra damage bleed through to your hull, and cargo you jettison scatters
-  out as separate pieces of loot that anyone can grab.
+  NPC ships share the space too. A changelog on the start screen lists an oddly
+  specific fix that stops NPCs from instantly grabbing back their own jettisoned
+  cargo. Under all the mining runs a story thread about something ancient
+  stirring in the deepest void, and it hunts players as well.
 
 
-  Computer-controlled ships share the space too, and the notes mention a trade
-  ship they leave alone.
-
-
-  Its creator built it on the AutoGPT Platform with no technical background and
-  very little time.
+  SigGravitas built it with no technical background and little time. According
+  to SigGravitas, they made it on the AutoGPT Platform to see what was possible
+  to build that way.
 play:
   url: https://torantulino.github.io/void-claim
   embeddable: true

@@ -2,43 +2,44 @@ slug: zombow
 title: Zombow
 tagline: Shoot arrows at an endless zombie horde and keep moving to survive.
 description: >-
-  You're an archer seen from behind, standing in a low-poly grassland dotted
-  with trees, bushes, rocks and a banana palm. The bow is all you've got, and
-  zombies keep heading your way, so you shoot while you keep moving.
+  You're a hooded archer in a low-poly stretch of acacia trees and banana palms,
+  and the zombies just keep spawning. The bow is your only weapon, and a run
+  comes down to staying alive while you move around the arena, line up shots and
+  thin out the horde before it closes in.
 
 
-  The mouse aims and the left button looses the arrow, so every shot is
-  something you line up yourself.
+  So it's 3D archery survival with nothing but a bow against an endless horde,
+  which is a bold call, though at least you can jump.
 
 
-  WASD walks you around and Space jumps. The scroll wheel zooms the camera,
-  which is a sensible thing to have when you'd rather pull back and see what's
-  coming, or move in tight to line up one shot.
+  Thick fog cuts down how far you can see, and that's where the spatial audio
+  earns its place, because it helps you work out where threats are coming from.
+  A lot of the dread is meant to come from whatever's out in the haze, not just
+  from the zombies you can see. Oddly enough, you start under a bright blue sky,
+  with bananas hanging off a tree nearby.
 
 
-  The zombies don't stop spawning, so there's never a moment where the field is
-  truly clear.
+  A wave number sits at the top of the screen, while your kill count stays in
+  the corner and your health bar starts at 100.
 
 
-  Your health bar sits in the top left and starts at 100. The current wave
-  number is at the top center, while your kill count sits in the top right.
+  The pacing borrows from classic arcade survival shooters, with rounds that are
+  quick and high-pressure.
 
 
-  The creator took inspiration from old-school arcade shooters about surviving a
-  crowd, and wanted to see that rush work in a browser. Most of the effort went
-  into fog and sound made with AI, so threats are meant to be placed around you
-  in space. They vibe coded the whole thing from scratch.
+  The controls are printed along the bottom of the screen, a kind touch when
+  you're about to be swarmed. Scrolling zooms the camera in and out behind your
+  archer.
+
+
+  It was built through what sandman_sh calls vibe coding, and the audio is
+  described as AI-generated. The stated goal was a frightening horde experience
+  that runs entirely in the browser.
 play:
   url: https://zombow-game.vercel.app
   embeddable: true
   platforms:
     - browser
-  controls:
-    - "WASD: move"
-    - "Space: jump"
-    - "Mouse: aim"
-    - "Left mouse button: shoot"
-    - "Scroll wheel: zoom camera"
 creator:
   name: sandman_sh
   handle: sandman-sh

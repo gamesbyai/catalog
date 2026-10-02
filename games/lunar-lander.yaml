@@ -2,32 +2,38 @@ slug: lunar-lander
 title: Lunar Lander
 tagline: Steer a lunar module with thrust and tilt to land softly on rough terrain.
 description: >-
-  You steer a lunar module down onto a jagged surface with a main thruster and
-  left-right rotation, and you have to touch down softly or the lander crashes.
-  Before each descent you pick a destination from a row of five worlds, so
-  you're not always landing on the Moon.
+  The same little lander gets sent to five different worlds, and most of them
+  pull on it in their own way. On each one you tilt the craft and burn the main
+  thruster to ease it onto a jagged stretch of ground. Come down soft and it
+  counts as a landing, but crash and that attempt's over.
 
 
-  The Moon is the starting point, and it's low gravity for learning the basics.
-  Mars pulls harder over rougher terrain, while Europa has ultra-low gravity
-  over fractured ice. Venus has dense clouds and crushing gravity, and
-  Kepler-452b is an Earth-like world with a forgiving descent.
+  The Moon is the low-gravity starter world, meant for learning the basics.
+  Oddly enough, the Earth-like Kepler-452b gets a forgiving descent of its own,
+  so the Moon isn't the only gentle stop on the list.
 
 
-  Not everything is open right away, and Venus stays locked until you complete
-  the mission on Europa.
+  Mars pulls harder and has rough terrain, while Europa barely has any gravity
+  at all over a surface of fractured ice.
 
 
-  The landing pads come in three kinds: easy, hard and extreme. The selection
-  screen lists them in a small legend next to the controls.
+  Venus is the heavy one, with dense clouds and crushing gravity. Its card says
+  it opens up only after you complete the mission on Europa. It's a neat bit of
+  ordering, with that crushing gravity waiting behind Europa's ultra-low pull.
 
 
-  Pressing P pauses mid-descent, and there's a speaker button in the corner for
-  sound. The look is retro arcade, with glowing planets on a dark starfield.
+  A tidy little panel on the destination screen that opens the game lays out the
+  keys and names three landing pad types, called Easy, Hard and Extreme.
 
 
-  The creator grew up loving the old Lunar Lander cabinets and wanted a tight
-  version for the browser that they could tweak and share with friends.
+  The left and right arrows rotate the lander, while up or Space fires the
+  thruster. P pauses the descent, and there's a sound toggle tucked in the top
+  corner.
+
+
+  The retro arcade look is modeled on the old Lunar Lander cabinets bobmute2
+  liked. They wanted a tight version of their own to tweak and share with
+  friends.
 play:
   url: https://lunarlanderv5.netlify.app
   embeddable: true

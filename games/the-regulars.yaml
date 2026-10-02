@@ -2,34 +2,35 @@ slug: the-regulars
 title: THE REGULARS
 tagline: Talk to diner regulars, guess their orders, and spot what doesn't fit.
 description: >-
-  Every line you pick up from a regular at the counter raises your familiarity
-  with them. Once you know someone well enough, you get to guess their order
-  before they say it.
+  Every line you learn while chatting with a regular at the Last Stop Diner
+  raises how familiar they are to you, and you're the one working the counter.
 
 
-  After that you serve them, fill the counter, and file their stories away in
-  your Memory Notebook.
+  Across from you sits a handful of regulars, among them Walter, who for some
+  reason needs two newspapers, Mrs. Finch with her secret peppermints and Danny
+  the paperboy.
 
 
-  Walter reads two newspapers at once, Mrs. Finch hides peppermints, and Danny
-  the paperboy has the town's porches memorized. That's a funny crew for the
-  Last Stop Diner, which stays open all night with rain on the window and a red
-  neon sign.
+  Once you know someone well enough, you try to guess their order before they
+  say it. Then you serve them, fill up the counter and jot down their stories in
+  a Memory Notebook. When things start drifting from what you know, it's on you
+  to flag whatever doesn't fit. There's more than one ending to reach.
 
 
-  When things start to drift, you flag whatever doesn't fit. That makes sense
-  for a memory game, because you can only spot what's off in people you've
-  actually come to know. The game has multiple endings.
+  Refill Rush is a separate arcade mode that sits apart from the story. You get
+  60 seconds to keep three cups of coffee full while you build a combo. It's
+  pretty pure score-attack, with a high score to chase and nothing else.
 
 
-  There's also Refill Rush, which is a separate arcade mode on its own.
+  Every picture and every sound in the game comes out of code drawn onto a
+  canvas.
 
 
-  In it you keep three coffees topped off for a minute while you build a combo
-  and chase a high score. The whole game is made in code, with no image or sound
-  files, so the faces, rain, neon and music are all generated, and a given seed
-  always produces the same face, which suits a story about familiarity. The
-  pixel art shows a skyline behind the diner and a checkered counter.
+  The faces, the rainy window, the neon glow and the music are all produced that
+  way, without a single image or audio file behind them. Each face grows out of
+  a seed, so a regular looks the same every time you come back, a clever fit for
+  a game about people becoming familiar. According to HAFFNERVISION, the game is
+  AI-generated.
 play:
   url: https://granthaffner.itch.io/the-regulars
   embeddable: false

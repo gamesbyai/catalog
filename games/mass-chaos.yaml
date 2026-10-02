@@ -2,35 +2,35 @@ slug: mass-chaos
 title: Mass Chaos
 tagline: Grab, carry and deliver mass across a tilting arena without falling off.
 description: >-
-  You're a pilot collecting cargo around an arena and carrying it back to your
-  green home zone. The arena works like a scale, so what you haul changes the
-  footing for everyone.
+  You're piloting a character around an arena that works like a giant scale,
+  picking up cargo and hauling it back to your green home zone. Mass is your
+  score, so the heavier the load, the more it's worth.
 
 
-  Heavier cargo scores more, but it also tilts the arena and can make you slide.
-  That ties the reward to the danger, because the pieces worth the most are the
-  ones that push you toward the edge, and falling off is the thing you're trying
-  to avoid.
+  But heavy cargo also tilts the arena, and that can send you sliding. Every
+  step you take tips the arena's balance too, not just the cargo you're holding.
+  The menu's slogan, carry more and risk more, sums up that bargain in four
+  words.
 
 
-  The creator boils the loop down to grab, carry, shoot, deliver.
+  Along with grabbing, carrying and delivering, you can shoot, while the one
+  rule to keep in mind is a pretty blunt don't fall off.
 
 
-  Mass is your score, so the more you carry, the better you do. The tagline says
-  to carry more and risk more, which fits.
+  Before you start, you type in a pilot name and choose Solo, Free-for-All or
+  Teams. The menu is all neon cyan and magenta lettering glowing on a black
+  background.
 
 
-  Before a round you can type in a pilot name, or you can just stay anonymous.
+  The default pilot name is ANONYMOUS, which is a fittingly mysterious way to
+  show up at a cargo fight.
 
 
-  Then you pick how to play: solo, free-for-all, or teams. The glowing cyan and
-  magenta menu sits on a black background, and there's a small counter at the
-  bottom showing how many people have played today.
-
-
-  The creator had always wanted to try making a game and used this as the chance
-  to do it. They also wanted to show their kids that you can turn an idea into
-  something real even if you've never built anything before.
+  vahagn_bbjnyan had wanted to make a game for a long time, and this is the
+  first one they've built. Part of the reason was a sweet one, since they wanted
+  to show their kids that an idea can become something playable even without any
+  prior experience. They also hoped it would encourage the kids to build things
+  of their own.
 play:
   url: https://mass-chaos.com
   embeddable: true

@@ -2,32 +2,37 @@ slug: beetlejump
 title: BeetleJump
 tagline: Jump your beetle up a towering course and try to reach the top.
 description: >-
-  BeetleJump has you playing a beetle that hops up a giant beanstalk, platform
-  by platform, from leaf to leaf above a body of water. A timer runs while you
-  climb, and the goal is to reach the top and be crowned.
+  In BeetleJump you're a black beetle with red eyes, hopping from leaf to leaf
+  up a giant beanstalk that rises out of a pond. You type a name and press
+  Start, and then you're standing on a lily-pad-like platform at the very foot
+  of the stalk.
 
 
-  You steer with WASD and jump with Space. There's also a fireball on E, so the
-  beetle isn't limited to just hopping.
+  The goal is to reach the top, and the start screen promises you'll be crowned
+  when you get there. A timer near the top of the screen counts up from 0.0
+  while you climb. Off to the right, a leaderboard with All-Time and Today tabs
+  lists players' times, and it stays on screen during play, so plenty of rival
+  times keep you company all the way up.
 
 
-  The leaves sit at different heights and angles around the stalk, and some have
-  extras on them. One has a coiled spring sitting on it, and another has a
-  little crate.
+  Some of the leaves carry extras, like a coiled spring pad sitting on one and a
+  crate-like object resting on another.
 
 
-  You can type a name and jump straight in, or start a private race instead. A
-  chat box at the bottom lets you send messages, and a note appears when another
-  player joins the climb, so you're not up there alone.
+  Pressing E throws a fireball, which is an unexpected bit of firepower for a
+  bug on a beanstalk. Other beetles can join your climb too, and a message pops
+  up to announce each arrival.
 
 
-  A leaderboard stays on screen the whole time, with tabs for all-time and
-  today, so you can see the times you're chasing while you climb.
+  There's a chat box in the lower left corner that takes text, and its
+  placeholder pretty politely asks you to say something nice.
 
 
-  The creator, assentorp, took the idea from a Counter-Strike map called
-  kz_giantbean. They also said that seeing other people's jam games made this
-  feel like a good challenge to try.
+  If you'd rather skip the public climb, the start screen also has a Private
+  Race button. According to assentorp, the stalk is modeled on kz_giantbean, a
+  Counter-Strike map, with a cheeky "if you know, you know" for anyone who's
+  jumped it. They say seeing other people's entries made this look like a good
+  challenge.
 play:
   url: https://beetlejump.com
   embeddable: true

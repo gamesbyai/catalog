@@ -3,32 +3,39 @@ title: "Sludge Corp: Origins"
 tagline: Grow an alien biomass from a petri dish into a company that buys the
   solar system.
 description: >-
-  You play an alien blob called Subject Alpha, escaping a classified underground
-  facility by feeding on everything around you. It starts as a clicker where you
-  spend Biomass on wriggly hairs and acidic maws, which then bring in Biomass on
-  their own.
+  An orange blob sits sealed in an underground lab, and that blob is you,
+  Subject Alpha. You click to gather Biomass, then spend it in the Splicer on
+  biological assets, starting with wriggly hairs and acidic maws. Those keep
+  producing income without any clicking, and that's how a lone blob starts
+  building a passive economy.
 
 
-  The jokes are pure office-speak, so eating the world gets described as
-  aggressively synergizing.
+  Extracted DNA reshapes your body for good, which is a pretty literal spin on
+  dressing for the role you'd like.
 
 
-  Spend DNA to mutate your body for good, which is how you get closer to apex
-  predator. You can also breed expendable Siege Spores and send them at the
-  facility's blast doors while you look after the core.
+  The facility's blast doors stand between you and the surface, and getting
+  through them is how you get out. In the Breach you breed Siege Spores,
+  expendable units that attack those doors while you keep looking after the
+  core.
 
 
-  Then there's the Digester, which works like a gambling machine. You shove
-  millions of spare Biomass into the core and hope it gives back a permanent
-  artifact, and the game says those artifacts can break it wide open.
+  The Digester turns your spare Biomass into a gamble. You feed huge piles of it
+  into the core and may get permanent artifacts back. The creator calls those
+  prizes game-breaking, and the piles you're asked to shove in run into the
+  millions.
 
 
-  Once you reach the surface, the Market lets you sell off your own flesh for
-  USD. That money goes toward buying the planet.
+  Once you reach the surface, the Market turns your own flesh into USD, a grim
+  kind of fundraising, and that money goes toward buying the planet and finally
+  the whole solar system.
 
 
-  The creator describes the whole thing as escalating from a petri dish to a
-  hostile takeover of the solar system, and it's played in the browser.
+  All of it runs on dark corporate humor, with a monster eating everything while
+  the game talks in office jargon about growing its market share, and the title
+  screen promises you'll eat the world and then buy it. According to VibeAxis
+  Games, the code, procedural audio and design logic were built in collaboration
+  with AI.
 play:
   url: https://vibeaxis.itch.io/sludge-corp-origins
   embeddable: false

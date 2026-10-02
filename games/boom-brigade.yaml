@@ -2,44 +2,45 @@ slug: boom-brigade
 title: Boom Brigade
 tagline: Blast through nine run-and-gun missions across terrain you can destroy
 description: >-
-  Almost everything in Boom Brigade can be blown apart. Dirt, stone, crates,
-  explosive barrels and armored bunkers all break, so you can shoot straight
-  through a wall instead of hunting for the door.
+  Almost nothing in the ground here stays put once you start shooting. Dirt,
+  stone and wooden crates can all be blasted away, explosive barrels go off when
+  they're hit, and even armored bunkers collapse if you pour enough fire into
+  them.
 
 
-  It's a 2D run-and-gun, and you can double jump and kick off walls, which is a
-  generous set of moves for the genre. You aim up and down, and each hero's
-  special ability sits on its own button.
+  You can tunnel straight through a wall, set off a barrel beside a cluster of
+  enemies, or crack open the bunker that's blocking your path, which makes the
+  terrain a clever extra weapon.
 
 
-  Each mission asks you to free the hostages, blow up the bunkers and reach the
-  flag.
+  Each mission is a side-scrolling run-and-gun stage where you free hostages,
+  wreck the bunkers and make it to the flag. There are 9 of them spread across a
+  jungle, a desert and a night city with dynamic lighting, and the last one ends
+  with a gunship boss.
 
 
-  The hostages matter beyond the level, because rescuing them is how you unlock
-  new heroes. There are ten, and each carries its own weapon: an assault rifle,
-  shotgun, plasma cannon, minigun, flamethrower, sniper rifle, twin pistols, arc
-  rifle or grenade launcher. One of them sprinkles holy water, which is a funny
-  thing to find in a shooter.
+  Freeing hostages is how you unlock heroes, and there are 10 of them in total.
+  Each of them carries a different weapon plus a special ability, with an
+  arsenal that runs from a shotgun and a minigun to a flamethrower, a sniper
+  rifle and a grenade launcher. Somebody also decided a holy water sprinkler
+  belonged on that list, and it's there.
 
 
-  The nine missions are generated the same way every time, so they're identical
-  for everyone. They're spread over a jungle, a desert and a night city with
-  dynamic lighting, and a gunship waits at the end as the final boss.
+  Getting around takes a double jump and a wall jump, and you can aim up or down
+  while you're firing.
 
 
-  You can remap the controls, with two keys per action, so you can rebuild the
-  layout if the defaults don't suit you. Touch buttons show up on mobile.
+  The levels are generated deterministically. A row of numbered buttons from 1
+  to 9 on the start screen lets you jump straight to any mission, which is a
+  kind thing to put right up front. Your progress lives in a JSON file that you
+  download, then load back with a button or by dragging it onto the page, while
+  the browser keeps its own copy automatically too.
 
 
-  Your progress lives in a save file you can download and load back with a
-  button or by dragging it in. That makes it easy to carry to another device,
-  and a copy also stays in the browser on its own.
-
-
-  The whole game is one HTML file with no dependencies, and the sound effects
-  are synthesized in the game instead of loaded from audio files. That's pretty
-  tidy for something with ten heroes and a boss.
+  If the default keys don't suit you, the Controls menu lets you rebind every
+  action with two keys each, and on mobile there are touch buttons on screen.
+  Oddly enough, the whole game fits into a single HTML file. Its sound effects
+  are synthesized rather than recorded.
 play:
   url: https://boom-brigade.vercel.app
   embeddable: true

@@ -2,32 +2,35 @@ slug: service-squad
 title: Service Squad
 tagline: Manage a repair business and fix broken things yourself in first person
 description: >-
-  You run a service company and you're both the manager and the dispatcher, so
-  every decision lands on you. Customers ring in with service requests, and you
-  answer the call, look over the job, and decide whether to accept it.
+  Pick up the phone when a customer rings in, look over the job they need done,
+  and either take it or tell them you'll call back later. You're running the
+  whole service company, so you're the manager and the dispatcher at once and
+  every decision falls to you.
 
 
-  If you'd rather not take a job right away, you can call the customer back
-  later.
+  Once you've said yes, the job goes to your technicians, and you're the one who
+  decides who gets sent where.
 
 
-  Once you've accepted work, you assign your technicians to handle it. You can
-  hire more of them to tackle several jobs at once, which is how you grow what
-  the company can take on.
+  Hiring is how the company grows. Each technician you add lets the crew work on
+  more jobs at the same time, which raises how much work the business can take
+  on. The phone and the payroll end up feeding the same question of how much
+  your crew can carry.
 
 
-  The creator describes it as a hybrid, with management strategy on one side and
-  first-person repair action on the other.
+  The desk work is surprisingly only half the game, with first-person repair
+  action paired alongside the dispatching and company management.
 
 
-  The cast is drawn in a cartoon style, with a headset-wearing dispatcher and a
-  technician in a blue cap holding a wrench. A short How To Play card walks
-  through the three steps when you start, and you can tick a box so it doesn't
-  show again.
+  A short How To Play panel greets you at the start and walks through answering
+  calls, accepting jobs and dispatching your crew. The cartoon art stars a
+  grinning dispatcher in a headset and a technician in a cap holding a wrench, a
+  pretty cheerful pair for a game about fixing broken things.
 
 
-  It was built by one developer using Flutter and Dart on the front end with a
-  Node.js backend, as a way to learn how the AI tools work.
+  ralphcanapa built it alone with Flutter and Dart on the front end. There's a
+  Node.js backend behind it too, and that's a lot of ground for one person to
+  cover. They made the game to learn how the new AI tools work.
 play:
   url: https://service-sim.netlify.app
   embeddable: true

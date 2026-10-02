@@ -2,34 +2,38 @@ slug: battletanks
 title: battletanks
 tagline: Fight other players' tanks in a 3D arena using cannons, missiles, and a laser.
 description: >-
-  You hold the fire key to charge the laser and let go to shoot, so the damage
-  grows the longer you wait. That's what sets it apart from the other two turret
-  weapons, a spray cannon and salvo missiles.
+  The laser won't fire the moment you press the button, and that's the twist
+  that sets it apart from the other guns. You hold fire to build up a charge and
+  let go to shoot, and the damage grows with the charge.
 
 
-  Your tank has two things to steer. A and D turn the chassis, while Z and X
-  swing the turret on its own, and a quick tap nudges it a tiny amount.
+  It all happens in a 3D arena where you drive a tank against other players
+  online. Your other two options are a spray cannon and salvo missiles. It's a
+  pretty short list, and the laser is the odd one out.
 
 
-  C snaps the turret back to face the front, which helps when you've lost track
-  of where it's pointing.
+  Hull and turret turn independently, so steering points the chassis while Z and
+  X swing the gun left or right, a quick tap nudges it a bit, and C snaps it
+  back to face forward.
 
 
-  Tab opens a loadout panel where you swap chassis, turret, mobility and colors
-  without leaving the match. That makes sense in a multiplayer arena, because
-  you don't have to sit out to change your build. Chassis such as Colossus and
-  Vampire come with their own stats for HP, speed, damage, fire rate and
-  rotation.
+  Touch screens get a surprisingly complete layout of their own. A left joystick
+  drives and turns the tank, a right knob sets the turret's angle, and a big
+  fire button handles shooting, including the hold-and-release laser.
 
 
-  On a phone, the left joystick drives and turns the tank. The right knob sets
-  the turret's angle directly, and a big fire button handles shooting, including
-  the hold-and-release laser.
+  Tab opens a loadout panel mid-match, letting you swap chassis, turret,
+  mobility and colors without leaving the game.
 
 
-  The creator was inspired by Tanki Online, the browser tank game with
-  futuristic turret weapons. Press H any time to open the controls reference, or
-  Esc for settings, where you can remap keys.
+  Colossus and Vampire are among the chassis on offer. A readout lists HP,
+  speed, damage, fire rate and rotation for your build. With this many keys it's
+  a kind touch that H brings up a full controls reference at any time, and Esc
+  opens settings where you can remap keys.
+
+
+  MarcosBren31124 took the idea from Tanki Online, a browser game built around
+  tank battles with futuristic turret weapons such as lasers and plasma cannons.
 play:
   url: https://battletanks.marcosbrendon.com
   embeddable: false

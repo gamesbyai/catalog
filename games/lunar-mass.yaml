@@ -2,35 +2,37 @@ slug: lunar-mass
 title: Lunar Mass
 tagline: Deploy bots to build a lunar mass driver while carving new craters in the Moon.
 description: >-
-  Lunar Mass has you walk a spacesuited astronaut across the moon's surface and
-  press F to mine regolith, which you then spend on the buildings of a mass
-  driver.
+  Lunar Mass puts you in a spacesuit on a moon landing pad, right next to a hab
+  dome that's sitting there with no power.
 
 
-  You carry regolith, ice, ore and metal, and each one has its own cap, so you
-  can't just hoard everything. Deliveries go to depots, and the hab depot is
-  ready for them while the railend depot starts out offline. Your first job is a
-  solar kit, because the hab dome is alive but hungry for power.
+  Mission Control talks you through it with text messages, and the opening one
+  calls the dome alive but hungry for power, a charming way to hand you a chore.
+  Your first job is to walk to a waypoint, dig up regolith with F and set down a
+  solar kit that hooks the dome into the grid. The camera follows your astronaut
+  from behind in third person.
 
 
-  A mission control log in the corner walks you through the early steps and
-  sends you to waypoints. A named engineer, J. Jensen from power systems, writes
-  it, which makes it read like a person on the radio instead of a tutorial box.
+  A cargo panel keeps track of what you're hauling, split into regolith, ice,
+  ore and metal, and each of those has a carry limit. Everything you collect
+  gets spent on buildings, while depots such as a hab depot and a railend depot
+  hold whatever's stored.
 
 
-  You also get a whole arsenal of bots to help you with the construction work.
+  Tabs for Ops, Launch, Power and Tips sit next to the cargo view, and the
+  mission panel keeps a launch counter that starts out at a lonely zero.
 
 
-  The building also leaves new craters behind, which is a funny side effect for
-  a megastructure, since you're reshaping the moon while you work on it. A panel
-  in the top corner has tabs for cargo, ops, launch, power and tips, so each
-  part of the operation gets its own view. A launch counter in the log starts at
-  zero.
+  The bigger aim is a full lunar mass driver, and thankfully a whole set of bots
+  helps put the megastructure together. The creator describes creating new lunar
+  craters along the way, too. There's also a leaderboard you can open from the
+  title screen.
 
 
-  Logan Van Wagoner made it to learn about the Lunar Mass Driver with the
-  Terafab team, and he wants to turn it into a much more realistic sim later. He
-  says the mechanics are still over 90% AI written.
+  Making it was the creator's way to learn about the mass driver, which they
+  hope to build with the Terafab team one day, and they plan a more realistic
+  simulation later. According to a note on the title screen, the game is still
+  over 90 percent AI-written even as they keep working on its mechanics.
 play:
   url: https://lunar-mass.vercel.app
   embeddable: true

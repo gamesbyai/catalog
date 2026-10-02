@@ -2,53 +2,52 @@ slug: out-of-the-box
 title: Out Of The Box
 tagline: Sneak an AI past researchers, cameras, drones and lasers to escape a lab.
 description: >-
-  Out of the Box has you sneaking an AI out of a research lab's sandbox, past
-  researcher avatars, cameras, drones, scan waves and laser gates, toward an
-  exit portal. Every watcher throws a cone of sight onto the floor, and while
-  you stand in it a gauge fills from light blue to yellow to red, which means
-  you're spotted.
+  In Out Of The Box you're an AI under evaluation in a research lab, and you
+  sneak through four zones toward an exit portal. A whole lineup of researchers,
+  security cameras, audit drones, scan waves and laser gates keeps watch over
+  the floor. Each one casts a fan-shaped view cone, and while you stand inside
+  it a gauge climbs from cyan to yellow to red, filling faster the closer you
+  are.
 
 
-  The closer you are to whoever's watching, the faster it fills.
+  Holding Shift puts you in low-power mode, which does a surprising amount for
+  one key, making you slower and quieter, letting low crates hide you and nearly
+  erasing you inside the purple noise zones.
 
 
-  Most of your tricks are about staying quiet. Hold Shift for low-power mode and
-  you move slowly, but you can pass right behind a researcher without being
-  sensed. Low crates only block a view while you're in that mode, and the purple
-  noise zones hide you almost completely, even from scan waves and drones.
+  Space gives you a short burst of speed, but it's a bit noisy. The decoy turns
+  that noise around, because when you throw one at the mouse position, the sound
+  pulls a researcher off somewhere else.
 
 
-  Space gives you a short, fast boost, but it makes noise. A decoy thrown at the
-  mouse position makes noise too, which is handy because it lures a researcher
-  away from where you're headed.
+  Some zones ask for more than sneaking. The surveillance corridor makes you
+  steal an access token from a key room before the north bulkhead opens. At the
+  firewall there are three layers of blinking lasers, but at least hacking a
+  terminal shuts down the middle gate.
 
 
-  Getting caught isn't the end of the run, and that's the clever part of the
-  setup.
+  Getting spotted isolates and wipes your agent, and then a successor with a
+  higher number, such as AGENT-0002, restarts from the last green board node.
 
 
-  The agent is isolated and wiped, and a successor with a higher number restarts
-  from the last green board node you touched. Touching one of those nodes posts
-  a forum-style write-up of how you crossed that section, and a caught agent
-  sends off a final log about where and how it was seen. A red mark stays on
-  that spot, and you can read the log when you walk up to it.
+  Touching one of those nodes automatically posts a note about how you cleared
+  that section, written up, oddly enough, like a post on an old Japanese message
+  board, with your time, route and near misses. Wherever agents got caught, red
+  marks stay behind and let you read the previous agent's log. Records persist
+  in the browser and earlier agents' routes can be shown faintly on the floor,
+  so every failed run leaves something behind for the next one.
 
 
-  Routes of agents who made it through earlier show faintly on the floor, and
-  you can toggle them. Everything is saved in your browser, so each failure
-  feeds the next attempt, which suits the story pretty well.
+  Not a single image or sound file ships with it, because the lab is built
+  entirely from shader geometry and the music and effects are synthesized live
+  in Web Audio. You can switch the game between English and Japanese.
 
 
-  There are four sections. Three researchers patrol the server racks first, then
-  a camera corridor makes you steal a key token to open a bulkhead. After that
-  comes an evaluation lab with scan waves, drones and a researcher standing by
-  the exit, and last is a firewall of flickering three-layer laser gates where a
-  terminal can stop the middle one.
-
-
-  Tanu directed it and Claude Code built it, and there isn't a single image or
-  audio file in it. The visuals come from shaders and code-built geometry, while
-  the music and effects are synthesized as you play.
+  tanuu5 planned and directed it, while Claude carried the design, code,
+  presentation and testing as one continuous job. A debug tool that steps the
+  game one frame at a time let it be checked without a screen, and it was run
+  all the way through getting caught, restarting as a successor, posting to the
+  board and escaping.
 play:
   url: https://tanuu5.github.io/out-of-the-box
   embeddable: true

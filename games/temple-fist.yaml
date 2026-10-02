@@ -2,28 +2,31 @@ slug: temple-fist
 title: Temple Fist
 tagline: Box in a photoreal ring where every frame comes from AI-generated video.
 description: >-
-  You start in a stone boxing ring in the middle of a bamboo grove, looking down
-  at your own leather gloves. Your opponent sits cross-legged at the far end,
-  meditating, with a Start button floating between you.
+  The opening view puts you in first person behind a pair of worn brown leather
+  gloves, looking across a rope-bound ring with a stone floor in the middle of a
+  bamboo grove. A shirtless fighter sits cross-legged at the far side, hands
+  resting on his knees, while a START button waits between your gloves.
 
 
-  Once the fight begins he's up in a guard with his fists raised and a jade
-  pendant on his chest.
+  Press it and he rises into a guard with his wrapped fists up.
 
 
-  Three buttons sit across the lower part of the screen: Jab, Hook and Uppercut.
-  Those are your punches, and you throw them from a first-person view over the
-  gloves, so you never see yourself.
+  Three buttons line up across the lower screen, labeled Jab, Hook and Uppercut.
+  Just above them, a thin white bar stretches across his belt line.
 
 
-  Everything on screen is video that AI models generated, not a 3D scene, which
-  is why it looks photographic. Varick made it after seeing a run of photoreal
-  AI game trailers that nobody could actually play, and he wanted that same look
-  in something you could press buttons on.
+  None of what you're looking at is a 3D scene. Every frame of the bout comes
+  from AI-generated video rather than a 3D model, right down to the fighter
+  rising from his seat. Even the jade pendant hanging at his chest is part of
+  the footage, which is a lot of costume detail for a sparring partner.
 
 
-  Boxing was the pick because its back-and-forth of strike and answer fits how
-  video models behave, which is a sensible match of subject and tool.
+  Boxing wasn't a random pick, because vamonke saw that its frame-to-frame
+  structure lines up cleanly with how video models behave.
+
+
+  vamonke had watched AI trailers show off a photoreal look without any of them
+  being playable. They wanted that same look in a game you can actually play.
 play:
   url: https://templefist.vamonke.com
   embeddable: true

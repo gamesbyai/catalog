@@ -2,31 +2,33 @@ slug: eurotune
 title: eurotune
 tagline: Answer Eurovision questions in a quick quiz built for phones and browsers.
 description: >-
-  You land on a dark screen with a big headline about hearing five Eurovision
-  songs and proving you know the stage. A numbered list on the right shows how a
-  round goes. Under the headline there's a difficulty switch with an orange
-  Start Playing button beside it.
+  A big headline promises five Eurovision songs, and below it there's a Start
+  Playing button next to a picker with three difficulty settings, Easy, Regular
+  and Expert. Easy narrows the pool to the top five grand-final finishers from
+  each year. That cuts out a whole lot of half-forgotten entries before you've
+  heard a note.
 
 
-  Each round starts with a song clip. Your job is to pin down the country, the
-  year it entered the contest, the artist and the song title before the reveal.
+  Every one of the five rounds kicks off with a clip of a song. Then you've got
+  four questions about it, covering the country that sent it, the exact year it
+  was in the contest, the artist singing it and the song's title.
 
 
-  So that's four separate guesses per song, with no coasting on a catchy chorus.
+  The order never changes, with the country always first and the title saved for
+  the end.
 
 
-  The steps run in a set order. You match the country first, then pick the exact
-  year, then name the performer, and you finish by choosing the right song
-  title, which makes a game five songs long.
+  The year question wants the exact one, not a rough era. You pick the artist
+  after that, and you close the round by choosing the title. Only then does the
+  game reveal the answers.
 
 
-  Easy is already selected when you arrive, so you can hit Start Playing right
-  away.
+  Five clips with four questions apiece adds up to twenty answers in a full
+  game.
 
 
-  The switch also offers Regular and Expert. On Easy you only hear entries that
-  finished in the grand-final top five of their year, so the songs come from the
-  contest's biggest results rather than the obscure corners.
+  The screen stays tidy, with dark panels and orange buttons. A How It Works
+  panel on the right lays out all four steps before you press start.
 play:
   url: https://eurotune.net
   embeddable: true

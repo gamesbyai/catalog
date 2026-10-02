@@ -2,44 +2,35 @@ slug: demolition-drive
 title: Demolition Drive
 tagline: Swing, smash, and shatter structures to climb a global leaderboard.
 description: >-
-  You start behind a little yellow truck on a green field, with a tall red crane
-  arm rising from it and a black wrecking ball swinging on a chain. Low-poly
-  towers in pale blues and pinks stand all around, and your job is to knock them
+  The start screen asks for a callsign, with a Play button right beside the text
+  field. The preview art shows a wrecking ball dangling from a tilted arm beside
+  a row of tall orange and blue towers, and your job is to knock those towers
   down.
 
 
-  You drive the truck with the keyboard and swing the ball with the left mouse
-  button. Right-click or E gives you a turbo swing, and Q drops the ball for a
-  slam. Those two abilities sit in little slots at the bottom of the screen,
-  next to a purple bar that starts at 100 out of 100.
+  Once you're in, you're behind a stubby yellow truck with a surprisingly tall
+  red boom, and a black wrecking ball swings on a chain off the top of it, all
+  in a low-poly park ringed by pastel skyscrapers.
 
 
-  A panel in the corner tracks the round and the percentage of towers still
-  standing, so you always know how much is left to flatten. Round one asks you
-  to bring down 80% of them within 45 seconds, and you can earn up to three
-  stars.
+  WASD drives and the left mouse button smashes. E or the right mouse button is
+  your boost, while Q slams, and the on-screen buttons give them livelier names,
+  Turbo Swing and Ball Drop.
 
 
-  The other two goals are to clear the round in under 45 seconds and to finish
-  without using any abilities. That second one is a funny twist, because the
-  abilities are sitting right there begging to be used.
+  Rounds are fast, and you're after towers and stars. Because each round hands
+  you a fresh mix of objectives, one run doesn't play out like the last. The
+  first round asks you to wreck 80% of the towers in 45 seconds and clear it
+  under 45 seconds without using abilities, which is a bit cheeky right after
+  giving you two of them.
 
 
-  The objectives change from round to round, so you don't get the same checklist
-  every time.
+  Your scores land on a global leaderboard, so the goal is climbing above
+  everyone else.
 
 
-  There's a score multiplier in the top left, and a leaderboard button when you
-  want to see how you stack up against everyone else.
-
-
-  The creator got tired of games built around construction loops and wanted
-  something where you just smash things. Demolition Drive is that idea, short
-  rounds of tower-smashing with star goals to chase.
-
-
-  Out in the field there's a purple portal labeled as a way to leave the game,
-  so steer around it unless you mean to go.
+  Jinish1049533 had grown tired of games built around construction loops and
+  wanted one that's only about smashing things.
 play:
   url: https://tower-crusher.vercel.app
   embeddable: true

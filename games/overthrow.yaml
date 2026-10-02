@@ -3,32 +3,35 @@ title: Overthrow
 tagline: Battle other players in a physics-driven king of the hill arena to hold
   the top score.
 description: >-
-  You steer a small round character up a hill alongside other players, and the
-  closer you stay to the peak, the more points you pick up. A scoreboard in the
-  corner lists everyone's points, with a crown beside whoever is ahead.
+  You're a little round player on a crowded hill, and staying near the peak is
+  how you earn points. Everyone else in the arena wants that same spot, so it
+  turns into a physics-driven king of the hill where you bump rivals off while
+  guarding the ground you've taken.
 
 
-  Space gives you a boost, and that's how you shove rivals off the slope.
+  Your main tool is a boost on Space, and the game is refreshingly blunt that
+  it's there for shoving other players off the slope. Powerups are scattered
+  around to give you an edge.
 
 
-  A boost bar near the bottom of the screen tells you when it's ready again, so
-  you're not guessing. Powerups are scattered around for you to grab, and
-  they're there to give you an edge.
+  The action is fast, with a bit of strategy on top, because every round keeps
+  asking when to dig in at the top and when to push the challengers out of your
+  way. Each round runs on a clock, and whoever leads the scoreboard when it runs
+  out comes out ahead.
 
 
-  A countdown under the scoreboard title shows how much of the round is left.
-  When somebody loses the top spot, a banner announces that they've been
-  overthrown, which is a grand word for getting bumped down a hill. The top left
-  names the current map and the one coming next.
+  When someone gets knocked from the top, a banner announces they've been
+  overthrown — a nice payoff for the title.
 
 
-  Those maps are Bliss, a green hill, and Olympus, a red desert slope.
+  The hill itself changes between rounds, from the grassy green mound of Bliss
+  to the dusty red slopes of Olympus, and the corner of the screen tells you
+  which map is up next.
 
 
-  Wins are tallied on a separate leaderboard, so there's a reason to come back
-  after a single round. You can type a name before you join or leave it blank.
-  The creator had wanted to build something casual and charming ever since
-  playing Super Mario Party, and describes the battles as physically accurate.
+  forkexecwait had carried the idea around for a while before turning it into a
+  finished game. They drew on Super Mario Party and went for a similar charming
+  feel, casual and whimsical rather than grim.
 play:
   url: https://overthrow.gg
   embeddable: true
@@ -37,7 +40,7 @@ play:
     - mobile
   controls:
     - "WASD / arrows: move"
-    - "Space: boost and knock others off"
+    - "Space: boost to knock others off"
     - "Click: focus mouse and look around"
 creator:
   name: forkexecwait

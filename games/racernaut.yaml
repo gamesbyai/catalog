@@ -3,29 +3,35 @@ title: Racernaut
 tagline: Drive through an endless generated city, choosing turns at every
   junction to stay alive.
 description: >-
-  You're racing a car through a city that keeps building itself ahead of you,
-  and every junction forces a guess about which turn keeps you alive. The goal
-  is to survive as the streets stream past, because a wrong choice ends the run.
+  A single wrong turn ends your run in Racernaut, so every junction counts. The
+  city isn't waiting for you either, since it generates itself as you drive and
+  the streets stream in just ahead of the car.
 
 
-  The view starts from high above, looking straight down at crosswalks, rooftops
-  and parked clutter.
+  Press Space and you're off, steering with A and D while you hold W to boost
+  and S to brake.
 
 
-  Press Space to start driving. You steer left and right, hit the boost when you
-  want speed, and brake when a junction comes up too fast, which is handy
-  because the city isn't laid out ahead of time. There's a camera switch too, if
-  the top-down view isn't what you want.
+  The default camera looks straight down on the car, and it's a surprisingly
+  busy view for something built on the fly. Crosswalks, traffic lights,
+  rooftops, trees and parked vehicles crowd in around each intersection. If you
+  want a different angle, C switches the camera.
 
 
-  A small panel on the left lets you change the time of day, from sunrise
-  through full daylight to night. A second set of buttons below it changes the
-  weather, with several kinds to pick from.
+  Down the left edge there are two columns of icon buttons, four marked with
+  suns and moons on top and five with clouds and rain underneath, which is a
+  generous amount of sky for a car game.
 
 
-  The creator has long been curious about procedural generation and had only
-  ever toyed with it. Building this with AI was how they finally made something
-  serious out of it, and the endless city shows that.
+  Before you can drive, a loading bar counts off the first rows of city while
+  they're built. An audio toggle sits in the top corner, with the music credited
+  to StudioKolomna from Pixabay and the ambient sound to ZapSplat.
+
+
+  rameshvel had toyed with procedural generation over the years but never built
+  anything serious with it. According to them, AI is what changed that. Their
+  view is that imagination is now most of what you need, and development
+  experience on top of it helps even more.
 play:
   url: https://racernaut.com
   embeddable: true

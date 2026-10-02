@@ -2,35 +2,35 @@ slug: spice-jam
 title: Spice Jam
 tagline: Harvest spice in the desert, hunt rival harvesters, and outlast the worm.
 description: >-
-  Spice Jam puts you in open desert sand, where you gather spice and shoot rival
-  harvesters to take theirs. Your pack tops out at 10, so you're hauling it back
-  to base before long.
+  Spice Jam sends you across a third-person desert as a hooded harvester armed
+  with a knife, aiming with a crosshair in the middle of the screen. You scoop
+  spice off the open sand until you're holding 10, the most you can carry, then
+  haul it home to a base you can spot by its tall beam of light.
 
 
-  Spice only counts once you deposit it at the base, and a tall beam of light
-  shows you where that is.
+  The other people out there are harvesters too, and killing one hands you
+  whatever spice they were carrying, so every rival on the dunes doubles as a
+  walking stash.
 
 
-  A bank counter keeps what you've deposited separate from what you're carrying.
-  The sign at the base says depositing restores your health, which gives you a
-  reason to come home even with a half-empty pack.
+  A glowing pack is a pretty clear tell that someone's loaded. Signs at the base
+  give you fair warning about the flip side, since your own spice drops when you
+  die.
 
 
-  The base has another sign explaining that a glowing pack means someone's
-  carrying spice, and that the spice drops when they die. That's the whole
-  reason killing a rival harvester pays off, since their haul ends up on the
-  sand. You start out with a knife.
+  Dropping your haul at the base adds it to your bank and patches up your health
+  and shield, which turns every trip home into a refill as well as a payout. A
+  panel in the corner keeps track of your weapon, the spice you're holding, your
+  bank, HP and shield. There's also a worm meter that sits at 0% when you start.
 
 
-  Then there's the worm, which you have to survive out there while you work the
-  sand.
+  Out on the open sand there's a worm to worry about, though a status line under
+  your bars offers the oddly calm reminder that the rock is safe ground.
 
 
-  A worm meter sits under your health and shield bars, and a status line tells
-  you when you're standing on rock that's safe. Near the base there's a station
-  with a shield bubble around it, and the creator wanted more lasgun and
-  Holtzman interactions, so it reads like a nod to Dune's shield. You see it all
-  from behind a hooded character, with a crosshair in the middle of the screen.
+  Back at base, a few stands hold gear, and one of them sits inside a shield
+  bubble. The panel counts players against a cap of 20. The setting borrows from
+  Dune, with lasgun and holtzman themes.
 play:
   url: https://spice.bananatriangles.com
   embeddable: true

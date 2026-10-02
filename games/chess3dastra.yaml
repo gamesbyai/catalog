@@ -2,49 +2,38 @@ slug: chess3dastra
 title: Chess3dastra
 tagline: Play chess against a computer opponent on a 3D or 2D board.
 description: >-
-  You start on a 3D chessboard with your white pieces closest to you and the
-  computer's black pieces on the far side. A panel on the right says it's your
-  move, and it holds the settings for the next game.
+  A 3D chessboard is already set up when the game loads, and you're playing
+  white against a computer opponent set to Balanced, which looks two moves
+  ahead. The side panel says "Your move" and holds a strength menu, a color
+  menu, New game and Undo buttons, a move box, and an empty move record that
+  announces, a bit grandly, that your first move starts the story.
 
 
-  You move by clicking a piece and then its square, or you can stay on the
-  keyboard. There's also a small box where you type a move like e4 or e2e4 and
-  press Play, so you never have to touch the mouse.
+  You can click pieces to move them. If you'd rather type, enter algebraic
+  notation like e4 or e2e4 in the box and hit Play. Either way, the computer
+  answers after each of your moves.
 
 
-  The computer has three strengths, and it starts on Balanced, which looks two
-  moves ahead. You can play black instead, but that only takes effect when you
-  start a new game.
+  None of the rules got trimmed: castling, en passant, promotion and draws are
+  all in, and the game spots check and checkmate on its own.
 
 
-  All the standard rules are in, including castling, en passant, promotion and
-  draws. When a pawn reaches the far rank, a dialog asks what you want it to
-  become.
+  Three computer strengths are on offer, and you can choose whether you move
+  first or second in the next game. Undo takes moves back, while a move history
+  and a captures list keep a pretty thorough record of a game that's saved and
+  survives a reload.
 
 
-  Undo takes back a move if you slip, so one mistake doesn't have to end the
-  game.
+  When the 3D board isn't what you want, a flat 2D view built from a grid of
+  squares with SVG pieces can replace it, and there are light and dark themes on
+  top of that.
 
 
-  A move record and a captured-pieces list keep track of what's happened. Your
-  game is saved, so it's still there after you reload the page. If the 3D view
-  gets in your way, you can flip to a flat 2D board that plays the same game,
-  and the page remembers which view you picked.
-
-
-  Light and dark themes are there too, and in 3D you can orbit the camera around
-  the board.
-
-
-  Every 3D piece is shaped from code instead of loaded from model files, which
-  is a neat trick for one self-contained page. The computer thinks in the
-  background, so the page doesn't freeze while it picks a reply.
-
-
-  GPT-6 Astra built it from a one-line prompt in about 41 minutes, then added
-  the 2D view and fixed three problems a second reviewing agent found. A person
-  who tried it afterward noticed the 3D knights weren't turned sideways like the
-  2D ones.
+  The opponent runs a negamax search with alpha-beta pruning inside a Web
+  Worker, so the page stays responsive while it thinks. Every piece on the 3D
+  board is modeled as its own geometry rather than a sprite, which is a nice
+  touch for a project this quick. Jorge Balderas had it built in about 41
+  minutes from a handful of prompts.
 play:
   url: https://yortch.github.io/chess3dastra
   embeddable: true

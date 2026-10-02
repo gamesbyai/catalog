@@ -2,42 +2,46 @@ slug: three-suns
 title: Three Suns
 tagline: Place gravity anchors to keep a world alive under three unpredictable suns.
 description: >-
-  Three Suns has you click or tap to drop gravity anchors around a system with
-  three suns, because you're trying to keep the last living world alive.
-  Touching a sun is fatal. The aura around each one drains your health while
-  you're inside it.
+  Three Suns hands you the last living world in a system where three suns tug
+  every which way, and this physics survival game has you protect it by dropping
+  gravity anchors with a click or tap.
 
 
-  A signal meter limits how many anchors you can place, so you can't just cover
-  the sky with them. Holding Space slows time whenever your focus is ready.
+  Each anchor bends the planet's path, but a signal limit caps how many you can
+  place. With no stable orbit to rely on, staying alive comes down to watching
+  how the suns drag at the planet and answering with anchors placed at the right
+  moment.
 
 
-  You also switch between three survival modes with the 1, 2 and 3 keys.
+  Touching a sun ends things on the spot, while the auras around them chip away
+  at your health. A health bar and a day counter sit in the corner, keeping a
+  pretty blunt tally of how many punishing dawns you've lasted against your
+  best.
 
 
-  They're called Shield, Sleep and Observe, and you start in Shield. It raises
-  your resistance to the red heat aura and keeps the cold and chaos risks
-  modest, which tells you the dangers here come in more than one kind.
+  Survival modes are there to help you adapt as conditions shift, and you swap
+  between Shield, Sleep and Observe on three numbered buttons.
 
 
-  The goal is to get through one impossible dawn after another.
+  Shield, for example, toughens the planet against a red sun's heat aura, though
+  that protection has a price, since the risk from cold and chaos goes up. Space
+  triggers a focus ability that slows time, and there's a considerate
+  low-effects toggle on P too.
 
 
-  A panel in the corner shows your health, the day count, your mode and your
-  best result, and a short opening lesson can be skipped. Liu Cixin's The
-  Three-Body Problem and the real orbital mechanics puzzle inspired it, though
-  the story, mechanics and world are original.
+  A quick survival lesson greets you at the start, and it's even kind enough to
+  offer a skip button.
+
+
+  The setup draws on the three-body problem from orbital mechanics and on Liu
+  Cixin's novel of the same name, though the story, the mechanics and the world
+  are all Danil38138190's own.
 play:
   url: https://threesuns.xyz
   embeddable: true
   platforms:
     - browser
     - mobile
-  controls:
-    - "Click / tap: place gravity anchor"
-    - "Space: slow time (focus)"
-    - "1 / 2 / 3: switch mode (Shield, Sleep, Observe)"
-    - "P: low effects"
 creator:
   name: Danil38138190
   handle: danil38138190

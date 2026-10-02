@@ -3,29 +3,34 @@ title: NEEDLE RUN
 tagline: Fly through gates, avoid pursuers, and chase score multipliers for a
   leaderboard spot.
 description: >-
-  You fly a small glowing arrow through gates and try not to get caught, picking
-  up score multipliers along the way to climb the leaderboard.
+  Red diamond enemies keep closing in on your little arrow ship as it zips
+  across a neon grid, and, oddly for a ship, you don't have a single weapon to
+  fight them off with.
 
 
-  It's modeled on the Pacifism mode from the Geometry Wars series. The title
-  screen shows a cluster of red diamonds trailing the arrow across a neon grid.
+  Instead, your job is to fly through gates without getting caught while you
+  push your score as high as it'll go. AfterimageDev took the idea from the
+  Pacifism mode in the Geometry Wars series, so the missing gun is the premise
+  rather than an oversight.
 
 
-  A small x count at the top center shows your current multiplier, and the label
-  under it tells you when the bomb is ready. Your own best score sits in the top
-  left, while the top right shows the score to beat, so there's always a number
-  to chase.
+  Grabbing multipliers bumps up the number at the top of the screen, which
+  starts at a humble x1. You've also got a bomb held back in reserve. A small
+  note in the HUD tells you when it's ready, and B or Shift sets it off.
 
 
-  When that label says the bomb is ready, press B or Shift to set it off.
+  Your own best score sits in the top left corner, while the top-ranked score
+  you're chasing stares back at you from the top right.
 
 
-  On a computer you can aim and move with the mouse, or steer with WASD if you'd
-  rather use the keyboard. A gamepad's left stick works too, and on a phone you
-  get a virtual stick, which is a thoughtful extra for a game about steering.
+  Scores go up to an online leaderboard, and it's right there on the title
+  screen beside a big glowing orange logo. There's even a profile editor on that
+  screen for tidying up how your entry looks. Space, a click or a tap starts the
+  run.
 
 
-  A press of Space, a click or a tap on the title screen is what starts a run.
+  You can move with the mouse, WASD, a gamepad's left stick or a virtual stick
+  on a touchscreen, and the mouse pulls double duty by aiming the ship as well.
 play:
   url: https://needle-run.afterimage-dev.com
   embeddable: false

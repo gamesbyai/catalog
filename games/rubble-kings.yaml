@@ -2,37 +2,35 @@ slug: rubble-kings
 title: Rubble Kings
 tagline: Stack physics blocks into a tall kingdom and knock down your rivals' towers.
 description: >-
-  You build your kingdom out of physics-based blocks, and the taller you stack
-  them, the more land you control. That's a neat trade, because height is also
-  what makes you easy to hurt. One good hit from an enemy can bring the whole
-  thing down.
+  Land comes from height in this one. You stack physics-driven blocks into a
+  kingdom, and the taller your structure stands, the more territory you control.
+  Building upward is how you expand.
 
 
-  So every tower is both your claim on the map and your biggest risk.
+  The height that wins you land also makes the tower easier to topple, and one
+  well-placed hit from a rival can bring the whole thing down in a heap of
+  rubble.
 
 
-  It's billed as a real-time strategy game built from blocks, and the creator
-  says it came from a half-remembered game they saw more than twenty years ago.
-  They couldn't find it again, so they made something similar.
+  Your rivals are trying to knock your tower over while you go after theirs, so
+  stability matters as much as size. It's a neat tug-of-war to get out of one
+  rule about how tall you build.
 
 
-  You can play with other people online. The host opens a waiting room with a
-  room code and a share link, so friends can join by code or by link instead of
-  having to be matched up.
+  Before a match you land in a waiting room with a four-letter room code and a
+  share link for friends. You pick a name, a color and a crest from a grid of
+  thirty heraldic emblems, anything from a stag to a thistle to a harp. For a
+  game about piling up blocks, it's a surprisingly generous coat-of-arms
+  cabinet.
 
 
-  Before the match starts, you pick your name, a color, and a heraldry emblem
-  from a grid of about thirty crests, which is a lot of ways to fly a flag over
-  a pile of rubble.
+  The host sets how many human players and AI opponents take part, and there's a
+  control style option with an easy mode labeled snap.
 
 
-  The host sets how many human players there are and how many AI opponents fill
-  the rest, and each AI slot can be left random or set by hand. There's also a
-  control style setting, which defaults to an easy snapping mode.
-
-
-  The menu has a How to Play screen and an Options screen if you want to look
-  things over first.
+  eric_j_sexton made it after remembering a game a little like this from more
+  than twenty years ago. They could never recall its name or track it down, so
+  they built something similar themselves.
 play:
   url: https://pixelcrowngames.com/games/rubblekings
   embeddable: true

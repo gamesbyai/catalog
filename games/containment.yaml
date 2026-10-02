@@ -2,28 +2,38 @@ slug: containment
 title: Containment
 tagline: Fight a shared boss alongside strangers, each in your own solo instance.
 description: >-
-  You're fighting a boss on a dark neon grid, and you're doing it alone, but not
-  really. Everyone who loads the game is in their own separate instance, yet
-  they all chip away at the same shared health bar.
+  You're one of a crowd of strangers shooting at the same boss, though you'll
+  never see a single one of them. Your instance belongs to you alone, and you
+  aim a cyan crosshair across a dark grid floor while blue wireframe shapes and
+  red and blue fragments hang around the arena.
 
 
-  There's no lobby, no party and no voice chat, so nobody ever coordinates. The
-  creator wanted to find out whether strangers across the internet could beat
-  something together without talking, which is a pretty odd experiment to build
-  an action game around.
+  Every hit you land, along with every hit anyone else lands, counts against one
+  shared bar called Boss Integrity, which tracks progress with a counter out of
+  24.
 
 
-  You move, jump and fire at a wireframe boss while red shards drift across the
-  floor. A boss integrity bar sits at the top with a count under it, and a row
-  of HP boxes in the corner shows how much damage you can still take.
+  There's no lobby, no party and no voice chat. People across the internet wear
+  down the same boss in separate runs without ever saying a word to each other.
+  It's a strangely quiet kind of teamwork, with everyone fighting alone toward
+  the same number.
 
 
-  When the boss dies, it comes back stronger. The screen labels each phase, so
-  one lucky crowd doesn't end things for good.
+  When the boss dies, it comes back stronger, while a phase counter in the top
+  left corner tells you which round you've reached.
 
 
-  There's a story behind it too, and the creator says you'll notice why the AI
-  needs containing as you play.
+  Your own health sits in three boxes at the bottom left, and four weapon pips
+  run along the top. Green and gray rings glow in the far distance of the arena.
+
+
+  The title turns out to be literal, because a story runs through the game and
+  explains why the AI has to be contained.
+
+
+  daicandev built Containment around a single question. They wanted to find out
+  whether people across the internet could beat something together without
+  talking.
 play:
   url: https://containment.daican.dev
   embeddable: true

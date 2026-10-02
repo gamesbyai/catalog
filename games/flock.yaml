@@ -2,34 +2,35 @@ slug: flock
 title: FLOCK
 tagline: Grow, dash and shoot your way to the top of a neon arena.
 description: >-
-  The game opens on a dark synthwave field, with a glowing sun on the horizon
-  and a magenta grid running toward it. Every fighter is a swarm of glowing
-  dots, and yours is the cyan one. The others drift around in their own colors,
-  and small tan clusters are scattered between them.
+  A glowing sun sits on the horizon over a magenta grid floor, and scattered
+  across this synthwave arena are fighters made entirely of glowing dots. Yours
+  is the cyan swarm. Small brown clusters of dots drift loose between them, like
+  scraps nobody has claimed yet.
 
 
-  You aim with a crosshair and hold the button down to fire at the other swarms.
+  You move your swarm around, aim a reticle, hold down fire and dash away when a
+  rival gets too close.
 
 
-  You also get a dash and a separate shotgun blast. Two segmented bars at the
-  bottom of the screen, one orange and one blue, show what you've got ready.
+  Every match is a free-for-all against seven computer-controlled swarms, and
+  their names are pretty upfront about how they'll fight: three Hunters, a
+  Berserker, two Snipers and a Farmer. The first fighter to reach 10 kills wins.
 
 
-  Seven rivals share the arena with you: three Hunters, a Berserker, two Snipers
-  and a Farmer. The names suggest they each fight differently, which is a fun
-  label to hang on a cloud of dots. A banner under the arena says the first to
-  reach 10 kills wins.
+  Two meters along the bottom of the screen count your dash charges and shotgun
+  charges, each split into five segments. The shotgun is a secondary attack on
+  right-click, while your regular fire stays on the held left button. Under the
+  arena, a scoreboard line keeps every fighter's kills and deaths in view, and
+  Tab opens the full score table.
 
 
-  The strip under the arena lists every fighter's kills and deaths, so you can
-  see who's ahead.
+  Escape or P pauses, and there's a surprisingly complete gamepad layout
+  alongside keyboard and mouse, with every action given its own stick, trigger
+  or button.
 
 
-  Tab pulls up the scores whenever you want them, and Escape or P pauses. A
-  gamepad works too, with sticks for moving and aiming plus shoulder and trigger
-  buttons for firing, dashing and the shotgun. There's a fullscreen button in
-  the corner, and the creator took ideas from Minishoot' Adventures and
-  Overwatch.
+  jongstra names Minishoot' Adventures and Overwatch as inspirations. Some
+  earlier test games made on Scratch are on that list too.
 play:
   url: https://flock.mindmatter.nl
   embeddable: true

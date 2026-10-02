@@ -2,28 +2,35 @@ slug: ironclash
 title: ironclash
 tagline: Fight multiplayer battles from tanks, helicopters, and FPV drones.
 description: >-
-  The round comes down to sectors. One side leads an armored push with a tank
-  and infantry, capturing sectors to reach a point target before the timer runs
-  out. The other side flies FPV drones out of cover to break that advance and
-  hold out until time expires.
+  Every round comes down to a sector, which one side has to capture or
+  neutralize. The armor team pushes forward with a tank and infantry, taking
+  sectors to hit a point target before time runs out. The drone team only has to
+  hold out until the timer expires, so the clock works for one side and against
+  the other.
 
 
-  You don't choose which job you get, because your team and role are assigned
-  when you join.
+  It's a first-person shooter built on combined arms, where armor breaks through
+  the line while drones hit it from above.
 
 
-  All you need to get in is a callsign of up to 16 characters. Helicopters are
-  part of the vehicle mix too, alongside the tanks and drones.
+  You don't get to pick a side, because the game hands out your team and role
+  when you join a match. All it asks first is a callsign of 1 to 16 characters,
+  and it'll take letters, numbers, spaces, dashes and the _ character.
 
 
-  The round goal on the title screen is to capture or neutralize a sector, which
-  tells you the fight is about holding ground and not just racking up kills.
-  There's also a repeatable training option you can run before you join a match,
-  which is a kind thing to offer in a game with this many vehicle types.
+  The roles vary a lot. You might end up driving a tank, flying a helicopter or
+  steering an FPV drone from cover. It's a bit funny that the smallest machine
+  out there is the one meant to stall the advance and look for openings in the
+  enemy line.
 
 
-  The creator grew up playing Black Ops and built this to recreate that kind of
-  combat.
+  If you'd like to warm up first, the title screen has a training option, along
+  with a share link.
+
+
+  The title screen looks like a mission briefing, with simple line icons of a
+  tank and a drone. xaitoshi_ made the game because they loved playing Black Ops
+  when they were young and wanted to recreate it themselves.
 play:
   url: https://ironclash.xyz
   embeddable: true

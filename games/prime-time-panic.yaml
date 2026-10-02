@@ -2,44 +2,43 @@ slug: prime-time-panic
 title: prime time panic
 tagline: Run a TV production studio in a simulation that parodies prime-time media.
 description: >-
-  You're running a small TV station that starts with $50,000 and no viewers, so
-  you hire a host or technician, order a show from the catalog, and drop a
-  finished one into a slot in the weekly schedule. A news ticker across the top
-  runs made-up broadcasts that poke fun at television. The menus are in German,
-  which is worth knowing before you start clicking.
+  You're running a small TV station that starts with $50,000 in the bank and
+  nobody watching. A checklist on the overview screen walks you through your
+  first week: hire at least one host or technician, commission a show from the
+  catalog, put a finished show into the schedule, then advance the week. Even
+  before anything's on air, the overview shows $500 in weekly expenses against
+  zero income, which is a bit of a cold welcome.
 
 
-  A short checklist on the overview screen walks you through your first week,
-  and the last step is pressing the week-forward button to see what happens. The
-  creator pitched it as Game Dev Story meets MADtv.
+  There's a grid of seven days in the schedule, each split into morning,
+  afternoon and primetime slots with their own viewer multiplier. Mornings get
+  x0.6 and afternoons x0.8, while primetime jumps all the way to x2.
 
 
-  The schedule is a grid of days against time slots, and mornings multiply by
-  0.6, afternoons by 0.8 and primetime by 2, so it's pretty clear where your
-  best shows belong.
+  Your cash, viewer count and star rating don't leave the top bar, and the side
+  menu also has tabs for shows and events.
 
 
-  The talent agency is where you hire people, and a mood meter there shows how
-  your staff is holding up. It sat at 70% when the game opened. You can pay to
-  lift it, and each option has its own price: a pizza party costs 800 for 12%
-  more mood, a company outing costs 3,500 for 25%, and a bonus for everyone
-  costs 8,000 for 35%.
+  Staff come from the talent agency screen, where you're able to search for new
+  hires. It's also got a morale meter, and you can push the team's mood back up
+  with things like a pizza party, a company outing or a bonus for everyone, each
+  with its own price and boost. The pizza party costs €800 for +12% and the
+  bonus runs €8,000 for +35%, while a mandatory motivational talk buys a measly
+  3% for €200.
 
 
-  Some of those options are plainly jokes, like the premium weekly fruit basket
-  that only three people ever eat from.
+  Goals start at your first 100 viewers, and they'll climb to 1,000 and then
+  10,000.
 
 
-  Your goals are about audience size, starting with your first 100 viewers, then
-  1,000, then 10,000. A rating figure and an intern rank bar with an XP count
-  track how you're doing along the way.
+  There's a news ticker scrolling pretty silly parody headlines across the top,
+  like one about a magician whose assistant keeps vanishing at 8:15 pm. The
+  interface text is in German. bimon describes it as Game Dev Story meets MADtv.
 play:
   url: https://prime-time-panic.com
   embeddable: true
   platforms:
     - browser
-  controls:
-    - "Week forward button: advance one week"
 creator:
   name: bimon
   handle: bimon

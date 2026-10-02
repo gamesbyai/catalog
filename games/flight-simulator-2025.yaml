@@ -2,40 +2,36 @@ slug: flight-simulator-2025
 title: Flight Simulator 2025
 tagline: Take off, fly over a shared world and dogfight other pilots online.
 description: >-
-  Type a name, hit the join button, and you start on a striped runway in a white
-  biplane with the throttle at zero. Other pilots share the same world, and you
-  can shoot at them.
+  Type a name and join, and you'll start on an airport runway with the throttle
+  sitting at 0%. Push it up with W and ease it back with S, then roll and pitch
+  with the arrow keys while A and D work the rudder.
 
 
-  A list of missions sits on screen: shoot down all the balloons, shoot down
-  other planes, and fly up into space.
+  Once you're off the ground you're sharing the sky with other players, and you
+  can take them on in a dogfight, firing missiles with Space.
 
 
-  The airfield is blocky and low-poly, with a control tower, pine trees, a snowy
-  mountain, a castle far off and a blimp floating overhead. It's a pretty odd
-  mix of scenery for a flight sim, and there's even a flying saucer hanging
-  around near the runway.
+  A mission list on screen gives you three goals, which are to shoot down all
+  the balloons, shoot down other planes and fly to space. The plane-hunting one
+  even ends with a cheeky ":D" in the HUD.
 
 
-  Your readout tracks altitude, speed, throttle and vertical speed, plus health
-  and score. A small camera view sits in one corner and a round radar in
-  another.
+  Your health, score, altitude, speed, throttle and vertical speed all stay on
+  screen. There's a radar in the lower right and a small inset view of what's
+  ahead of you. Shift switches on something called SuperTURBO XXL, a name nobody
+  could accuse of modesty.
 
 
-  The ticker across the top reads like a real airport weather report, with wind,
-  visibility, temperature and which runway is in use, which is a funny thing to
-  read right before you go hunting balloons with missiles.
+  Across the top scrolls a surprisingly detailed weather report styled like a
+  real airport broadcast for Pieter International Airport, right down to Runway
+  42 being in use.
 
 
-  Besides firing missiles, you can raise and lower the landing gear, switch the
-  engine off and on, flip the camera view, mute the sound, chat with other
-  pilots and pull up a leaderboard. Holding the turbo key gets you a boost
-  called SuperTURBO XXL, a name that suits a speed button.
-
-
-  The creator, levelsio, made it with AI and built it so you can open it and fly
-  without loading screens or big updates, which is a considerate thing for a
-  game you might only want for a few minutes.
+  The world is built from chunky low-poly shapes, with a control tower, houses,
+  pine trees, a snowy mountain and, for some reason, a castle on the ground.
+  Blimps, a flying saucer and birds share the air with you. You can toggle the
+  landing gear, engine, sound and camera view, and chat and a leaderboard are
+  there too.
 play:
   url: https://fly.pieter.com
   embeddable: true

@@ -2,46 +2,53 @@ slug: void-wake-signal-reclamation
 title: "Void Wake: Signal Reclamation"
 tagline: Pilot a spaceship through 50 top-down levels of enemies and bosses.
 description: >-
-  Something has been broadcasting a signal nobody can explain, called The
-  Static, and you're the pilot sent to find where it comes from. It's a top-down
-  space shooter where you fly through swarms of hostile ships, with VESPER, your
-  ship's AI, talking to you the whole way.
+  Something in deep space has been sending out a signal for longer than anyone
+  can explain, and people have started calling it The Static. You fly the ship
+  sent to find its source, and your ship's AI, VESPER, narrates the trip as the
+  only voice you've got out there, which makes for a fairly lonely setup across
+  fifty levels.
 
 
-  The main campaign runs fifty handcrafted levels across five sectors, and each
-  sector has its own look, hazards and enemies. You'll meet mini-bosses and main
-  bosses along the way, then a finale that pulls together what you've fought
-  before. You can play it on Normal, Hard or Nightmare.
+  It plays as a top-down shooter where enemies swarm you across those fifty
+  levels, split into five sectors. Each sector has its own hazards and its own
+  lineup of enemies. Mini-bosses and main bosses turn up along the way, and a
+  finale ties together everything you've fought.
 
 
-  The story comes out through VESPER's voice as you go, so the campaign has a
-  thread running through it instead of just levels stacked up.
+  You can run the campaign on Normal, Hard or Nightmare, and that last name sets
+  expectations pretty clearly.
 
 
-  If you'd rather skip the campaign, there are plenty of other ways in. Endless
-  Survival never stops sending the swarm, a 5-Minute Blitz is a score attack,
-  and Boss Rush throws every boss at you back to back.
+  Salvage you earn in the campaign unlocks ship styles, colors and engine
+  trails. You can also swap between a neon vector look and painted ship art
+  whenever you want, so the cosmetics you unlock never tie you to one art style.
 
 
-  Salvage Run is the odd one, because you decide when to extract. The loot is
-  richer and mini-boss "signal spikes" keep escalating, so greed has a price.
+  Outside the campaign, the launch menu holds a surprising spread of other
+  modes.
 
 
-  Ghost Duel has you race a recording of your own best run. Daily and weekly
-  challenges give everyone the same seeded run until the timer resets, with a
-  leaderboard on top.
+  Endless Survival keeps the swarm coming as the difficulty climbs, while
+  5-Minute Blitz squeezes things into a timed score attack. Boss Rush chains
+  every boss together, back to back, with no gap to catch your breath. Salvage
+  Run Extraction pays out richer loot while mini-boss signal spikes escalate,
+  and you're the one deciding when to leave with what you've grabbed.
 
 
-  Salvage from campaign play buys ship styles, colors and engine trails, and you
-  can switch between a neon vector look and painted ship art whenever you like.
-  Everything you meet gets logged in a Codex with lore and attack patterns,
-  which is a nice way to learn what a boss does before it does it.
+  Ghost Duel has you racing a recording of your own best run, an oddly personal
+  kind of rivalry, while Daily and Weekly Challenges hand everyone the same
+  seeded run.
 
 
-  Keyboard and mouse work, and so do Xbox and PlayStation pads, which are
-  detected automatically with matching button prompts. Controls can be remapped,
-  there are color-blind friendly options, and there's an interactive tutorial. A
-  free 20-level story addon, Point of Origin, sits on the main menu too.
+  A Codex in the Terminal logs every ship, enemy and boss you meet, with lore,
+  attack patterns and art for each. On top of all that, there's a whole free
+  20-level story addon called Point of Origin sitting right on the main menu.
+
+
+  You can play with keyboard and mouse or an Xbox or PlayStation controller. Pad
+  players get real care here, since the remapping is full, the on-screen prompts
+  match whichever controller you plug in, and the menus can be driven from the
+  pad too.
 play:
   url: https://oddbit-studios.itch.io/void-wake
   embeddable: false
