@@ -36,13 +36,13 @@ terms:
     name: Claude Opus 5.5
     provider: anthropic
     intro: |-
-      According to its repository, Ombres, a party game where giant birds' shadows paint the desert, was designed and built by Claude Opus 5.5 from a single brief, with Brieuc Crosson supervising.
+      Claude Opus 5.5 designed and built Ombres from a single brief, according to the game's repository, with Brieuc Crosson supervising.
 
-      Opus 5.5 is Anthropic's model for long-running agentic coding and knowledge work, released September 22, 2026 as the first of the Claude 5.5 family. Anthropic says it performs at the level of Claude Fable 5.1 on most work, at $4 per million input tokens and $20 per million output tokens, below Opus 5's $5 and $25.
+      Opus 5.5 is Anthropic's model for long-running agentic coding and knowledge work, released September 22, 2026 as the first of the Claude 5.5 family. Anthropic says it performs at the level of Claude Fable 5.1 on most work, at $4 per million input tokens and $20 per million output tokens, a bit below Opus 5's $5 and $25.
 
-      For games, it runs in Claude Code, Anthropic's agent that reads a project, edits files and runs commands, and in the Claude apps on paid plans. It's also in GitHub Copilot and Cursor and on the Claude API, Amazon Bedrock, Google Cloud and Microsoft Foundry. It reads text and images and writes text, with a 1M-token context window and adaptive thinking that's always on.
+      For games, it runs in Claude Code, Anthropic's coding agent, and in the Claude apps on paid plans. It's also in GitHub Copilot and Cursor and on the Claude API, Amazon Bedrock, Google Cloud and Microsoft Foundry. It reads text and images and writes text, with a 1M-token context window and adaptive thinking that's always on.
 
-      Anthropic's announcement even quotes a tester who had several Claude models build a game from one prompt, and Opus 5.5 scored highest on graphics and polish. As of September 2026 it's the newest Opus model, with retirement not sooner than September 22, 2027.
+      Anthropic's announcement quotes a tester who had several Claude models build a game from one prompt, and in that test Opus 5.5 scored highest on graphics and polish. As of September 2026 it's the newest Opus model, with retirement not sooner than September 22, 2027.
     sources:
       - "https://platform.claude.com/docs/en/models/opus-5-5/overview"
       - "https://www.anthropic.com/claude-opus-5-5"
@@ -52,9 +52,9 @@ terms:
     name: Claude Opus 5
     provider: anthropic
     intro: |-
-      The List's Champion puts you behind a knight's visor for a first-person jousting tournament, and it was made with Claude Code on Claude Opus 5. Anthropic released that model on July 24, 2026 and introduced it as a thoughtful and proactive model that comes close to the frontier intelligence of Claude Fable 5 at half the price.
+      The List's Champion puts you behind a knight's visor for a first-person jousting tournament, built with Claude Code on Claude Opus 5.
 
-      A customer quoted in the announcement even called its animations, games and 3D work the best they'd seen from an Opus model.
+      Anthropic released Opus 5 on July 24, 2026 and introduced it as a thoughtful and proactive model that comes close to the frontier intelligence of Claude Fable 5 at half the price. A customer quoted in the announcement even called its animations, games and 3D work the best they'd seen from an Opus model.
 
       It launched on claude.ai, in Claude Code and on the Claude API. It reads text and images, writes text, and has a 1M-token context window, up to 128K tokens of output and adaptive thinking, and the list price is $5 per million input tokens and $25 per million output tokens.
 
@@ -70,7 +70,7 @@ terms:
 
       Sonnet 5.5 came out on September 28, 2026 as the second model in the Claude 5.5 family, and Anthropic's docs call it the best combination of speed and intelligence. The announcement says it generates output faster than Claude Sonnet 5 and can cost less per task, at the same list price of $2 per million input tokens and $10 per million output tokens.
 
-      Its launch demos are single HTML files, like a murmuration of 400 starlings, wind shaping sand dunes and even a clock made of 24 small clocks. It's in the Claude apps, in Claude Code, on the Claude API and on Amazon Bedrock, Google Cloud and Microsoft Foundry, and it reads text and images, writes text, and has a 1M-token context window.
+      Its launch demos are single HTML files, like a murmuration of 400 starlings, wind shaping sand dunes and, for some reason, a clock made of 24 small clocks. It's in the Claude apps, in Claude Code, on the Claude API and on Amazon Bedrock, Google Cloud and Microsoft Foundry, and it reads text and images, writes text, and has a 1M-token context window.
 
       As of September 2026 it's the newest Sonnet model, with retirement not sooner than September 28, 2027, and in the current lineup only Claude Haiku 4.5 is faster.
     sources:
@@ -80,11 +80,11 @@ terms:
     name: Claude Sonnet 5
     provider: anthropic
     intro: |-
-      Chess3dastra, a full chess game with a computer opponent, was built in about 41 minutes from a handful of prompts, which is surprisingly quick, and Claude Sonnet 5 and GPT-6 Astra are the models behind it.
+      Chess3dastra, a full chess game with a computer opponent, was built in a surprisingly quick 41 minutes or so, from a handful of prompts. Claude Sonnet 5 and GPT-6 Astra are the models behind it.
 
       Sonnet 5 came out on June 30, 2026, and Anthropic built it to be its most agentic Sonnet model at the time, one that can make plans, use tools such as browsers and terminals, and work autonomously. At launch it became the default model for Free and Pro users of the Claude apps.
 
-      It reads text and images, writes text, and has a 1M-token context window, adaptive thinking and training data that runs to January 2026. It works in Claude Code and through the Claude API, Amazon Bedrock, Google Cloud and Microsoft Foundry, at $2 per million input tokens and $10 per million output tokens.
+      It reads text and images, writes text, and has a 1M-token context window and adaptive thinking, and Anthropic says its training data and its reliable knowledge both run to January 2026. It works in Claude Code and through the Claude API, Amazon Bedrock, Google Cloud and Microsoft Foundry, at $2 per million input tokens and $10 per million output tokens.
 
       As of September 2026 it's a legacy model that's still available, and Anthropic suggests moving to Claude Sonnet 5.5, released September 28, 2026 at the same price. Retirement is listed as not sooner than June 30, 2027.
     sources:
@@ -99,7 +99,7 @@ terms:
 
       Anthropic released Opus 4.8 on May 28, 2026 and said it builds on Claude Opus 4.7 with improvements across benchmarks and is a more effective collaborator. The price stayed at $5 per million input tokens and $25 per million output tokens.
 
-      It launched on claude.ai, in Claude Code and on the Claude API, with Amazon Bedrock and Google Cloud among the cloud platforms. It reads text and images, writes text, and has a 1M-token context window, up to 128K tokens of output, adaptive thinking and training data that runs to January 2026.
+      It launched on claude.ai, in Claude Code and on the Claude API, with Amazon Bedrock and Google Cloud among the cloud platforms. It reads text and images, writes text, and has a 1M-token context window, up to 128K tokens of output and adaptive thinking. Anthropic says its training data and its reliable knowledge both run to January 2026.
 
       As of September 2026 it's a legacy model, followed by Claude Opus 5 on July 24 and Claude Opus 5.5 on September 22. It's still available, with retirement not sooner than May 28, 2027, and Anthropic names it as the replacement for the retired Claude Opus 4 and Opus 4.1.
     sources:
@@ -110,7 +110,7 @@ terms:
     name: Claude Opus 4.7
     provider: anthropic
     intro: |-
-      Claude Opus 4.7 added an xhigh effort level. Its new tokenizer can also turn the same input into roughly 1.0 to 1.35 times as many tokens, so the same prompt can cost a little more at the same price.
+      Claude Opus 4.7 added an xhigh effort level. Its new tokenizer can also turn the same input into roughly 1.0 to 1.35 times as many tokens, so the same prompt can cost up to about a third more at the same price.
 
       Anthropic released it on April 16, 2026 and pointed to gains on the hardest software engineering tasks, sharper vision for images up to 2,576 pixels on the long edge, and better instruction following and creative output for design work.
 
@@ -125,11 +125,11 @@ terms:
     name: Claude Opus 4.6
     provider: anthropic
     intro: |-
-      Wagon Bones, a dice roguelike that runs down the Oregon Trail, was made with Claude Opus 4.6 and GPT-5.5, working in GitHub Copilot and Cursor.
+      Hero Nearby sends a developer running down a pixel-art Italian street to fix the neighbors' tech problems, printers included, of course, and its creator made it in GitHub Copilot with Claude Opus 4.6.
 
       Anthropic released Opus 4.6 on February 5, 2026 as an upgrade to its smartest model, with better coding than Opus 4.5. It brought a 1M-token context window to Opus, in beta at launch, and Anthropic named research, financial analysis and document, spreadsheet and presentation work as other target uses.
 
-      Claude Code even gained agent teams with it, a research preview in which several agents work in parallel and coordinate on their own. The model launched on claude.ai, the Claude API and major cloud platforms at $5 per million input tokens and $25 per million output tokens, with higher rates for prompts over 200,000 tokens.
+      Claude Code gained agent teams alongside it, a research preview in which several agents work in parallel and coordinate on their own. The model launched on claude.ai, the Claude API and major cloud platforms at $5 per million input tokens and $25 per million output tokens, with higher rates for prompts over 200,000 tokens.
 
       As of September 2026 it's a legacy model, followed by Opus 4.7, 4.8, 5 and 5.5. It's still available, with retirement not sooner than February 5, 2027.
     sources:
@@ -144,7 +144,7 @@ terms:
 
       Anthropic released Sonnet 4.6 on February 17, 2026 as its most capable Sonnet model at the time and called it a full upgrade across coding, computer use, long-context reasoning, agent planning, knowledge work and design. It said customers found its visual output more polished, with better layouts and animations.
 
-      It even became the default model for Free and Pro users on claude.ai. It was also in Claude Code, on the API and on major cloud platforms at $3 per million input tokens and $15 per million output tokens. It brought a 1M-token context window, in beta at launch.
+      It actually became the default model for Free and Pro users on claude.ai, too. It was also in Claude Code, on the API and on major cloud platforms at $3 per million input tokens and $15 per million output tokens, and it brought a 1M-token context window, in beta at launch.
 
       As of September 2026 it's a legacy model, followed by Claude Sonnet 5 and Sonnet 5.5. It's still available, with retirement not sooner than February 17, 2027, and Anthropic names it as the replacement for the retired Claude Sonnet 4, 3.7 Sonnet and 3.5 Sonnet.
     sources:
@@ -155,11 +155,13 @@ terms:
     name: Claude Opus 4.5
     provider: anthropic
     intro: |-
-      Anthropic set Claude Opus 4.5's price at $5 per million input tokens and $25 per million output tokens to bring Opus-level capability to more users. It called the model the best in the world for coding, agents and computer use at the time.
+      Fly To Mars ends with atmospheric entry, a descent through dust and a touchdown, with Phobos and Deimos showing up on arrival, and Claude Opus 4.5 is one of the models behind the trip.
+
+      Anthropic set Opus 4.5's price at $5 per million input tokens and $25 per million output tokens to bring Opus-level capability to more users. It also called the model, pretty boldly, the best in the world for coding, agents and computer use at the time.
 
       It came out on November 24, 2025 on claude.ai, in Claude Code, which gained desktop app support at the same time, and on the API and major cloud platforms. Its API model ID is claude-opus-4-5-20251101, and it led the Opus line until Claude Opus 4.6 arrived on February 5, 2026.
 
-      Fly To Mars lists it among the models behind its trip from Earth to Mars. As of September 2026 it's a legacy model that's still available, followed by Opus releases up to Claude Opus 5.5, and retirement is listed as not sooner than November 24, 2026.
+      As of September 2026 it's a legacy model that's still available, followed by Opus releases up to Claude Opus 5.5, and retirement is listed as not sooner than November 24, 2026.
     sources:
       - "https://www.anthropic.com/news/claude-opus-4-5"
       - "https://platform.claude.com/docs/en/about-claude/model-deprecations"
@@ -230,11 +232,11 @@ terms:
     name: Claude 3.7 Sonnet
     provider: anthropic
     intro: |-
-      Tomáš Bencko built The Great Taxi Assignment in 60 hours with Cursor and Claude 3.7 Sonnet, and it won the first Vibe Coding Game Jam. About 99 percent of its code was AI generated, which is pretty much all of it.
+      Tomáš Bencko built The Great Taxi Assignment in 60 hours with Cursor and Claude 3.7 Sonnet, and it won the first Vibe Coding Game Jam. About 99 percent of its code was AI generated.
 
       Claude 3.7 Sonnet came out on February 24, 2025, and Anthropic called it its most intelligent model to date and the first hybrid reasoning model on the market. It could answer almost at once or think step by step, with the thinking shown to the user.
 
-      Anthropic pointed to strong gains in coding and front-end web development. The model was on the Free, Pro, Team and Enterprise plans and on the API, Amazon Bedrock and Google Cloud's Vertex AI, at $3 per million input tokens and $15 per million output tokens. Claude Code launched alongside it as a limited research preview for the terminal.
+      Anthropic pointed to strong gains in coding and front-end web development. The model was on the Free, Pro, Team and Enterprise plans and on the API, Amazon Bedrock and Google Cloud's Vertex AI, at $3 per million input tokens and $15 per million output tokens. There's a nice bit of history here, too, since Claude Code launched alongside it as a limited research preview for the terminal.
 
       It's since been retired. Anthropic announced its deprecation on October 28, 2025 and retired it from the Claude API on February 19, 2026, with Claude Sonnet 4.6 as the recommended replacement.
     sources:
@@ -265,7 +267,7 @@ terms:
     name: GPT-6 Astra
     provider: openai
     intro: |-
-      In little flock you share a farm and a flock of sheep with other players, and the sheep never die, which is a nice touch. It was made with Codex on GPT-6 Astra.
+      In little flock you share a farm and a flock of sheep with other players, and luckily the sheep never die. It was made with Codex on GPT-6 Astra.
 
       OpenAI released GPT-6 Astra on September 3, 2026, and as of September 2026 it's OpenAI's most capable model. The API docs describe it as built for the hardest end-to-end work, from complex reasoning and coding to computer use, research and document creation. It reads text and images, writes text, and has a 1,050,000-token context window.
 
@@ -411,7 +413,7 @@ terms:
     name: GPT-5
     provider: openai
     intro: |-
-      DOOMscroll turns a Doom-style shooter into something you play with nothing but the scroll input, which is a pretty good joke about how people scroll through their feeds, and according to its README it was built with GPT-5.
+      DOOMscroll lets you play a Doom-style shooter with nothing but the scroll input, so the title is a pretty good pun. According to its README, it was built with GPT-5.
 
       OpenAI released GPT-5 on August 7, 2025 together with GPT-5 mini and GPT-5 nano. It's a reasoning model for coding and agentic tasks, with adjustable reasoning effort, text and image input and a 400,000-token context window.
 
@@ -598,7 +600,7 @@ terms:
     name: Gemini 3 Flash
     provider: google
     intro: |-
-      Google pitched Gemini 3 Flash for building interactive games and for in-game assistants that need quick answers, and a launch demo even gives near real-time help in a hand-tracked ball-launching puzzle game.
+      Google pitched Gemini 3 Flash for building interactive games and for in-game assistants that need quick answers, and one launch demo gives near real-time help in a hand-tracked ball-launching puzzle game.
 
       It came out in preview on December 17, 2025, and Google called it frontier intelligence built for speed at a fraction of the cost, saying it outperforms Gemini 2.5 Pro while running three times faster. It became the default model in the Gemini app and AI Mode in Search.
 
@@ -630,7 +632,7 @@ terms:
     name: Gemini 2.5 Flash
     provider: google
     intro: |-
-      The model nicknamed Nano Banana is Gemini 2.5 Flash's image sibling, Gemini 2.5 Flash Image, launched on August 26, 2025. It keeps a character consistent across images and edits them from plain-language instructions, which is pretty handy for game art.
+      The model with the funny nickname, Nano Banana, is Gemini 2.5 Flash's image sibling, Gemini 2.5 Flash Image, launched on August 26, 2025. It keeps a character consistent across images and edits them from plain-language instructions, so a game's hero can look the same from one picture to the next.
 
       Gemini 2.5 Flash itself has been generally available since June 17, 2025. Google's docs describe it as a price-performance model for large-scale processing, low-latency and high-volume tasks that need thinking, and agentic use cases. It reads text, images, video and audio, writes text, and takes up to 1,048,576 input tokens with a 65,536-token output limit.
 
@@ -655,11 +657,11 @@ terms:
     intro: |-
       In Night Drop you fly a drone the size of a cookie through a dark apartment at 3 a.m., trying not to wake the cat, and it was made with the Claude app and Grok 4.7.
 
-      xAI released Grok 4.7 on September 21, 2026 and calls it its most capable model for coding and knowledge work, one that works longer on difficult tasks and checks its own work more carefully. It's even the default model of Grok Build, xAI's coding agent.
+      xAI released Grok 4.7 on September 21, 2026 and calls it its most capable model for coding and knowledge work, one that works longer on difficult tasks and checks its own work more carefully. It's actually the default model of Grok Build, xAI's coding agent.
 
       It's also in Cursor on all plans, in the xAI API as grok-4.7 and on gateways such as OpenRouter, Vercel and Cloudflare. It reads text and images, writes text and has a 500,000-token context window, at $2 per million input tokens and $6 per million output tokens for shorter prompts.
 
-      Reasoning effort runs from low to xhigh, and Grok 4.7 Fast, the same model on faster infrastructure, costs twice as much in Cursor and Grok Build. Its training data runs to May 2026, and as of September 2026 it's xAI's newest Grok model.
+      Reasoning effort runs from low to xhigh, and Grok 4.7 Fast, the same model on faster infrastructure, costs twice as much in Cursor and Grok Build. What it knows runs to May 2026, according to xAI, and as of September 2026 it's xAI's newest Grok model.
     sources:
       - "https://x.ai/news/grok-4-7"
       - "https://docs.x.ai/developers/grok-4-7"
@@ -681,7 +683,7 @@ terms:
     name: Grok 4.5
     provider: xai
     intro: |-
-      Grok 4.5's launch post even shows a Three.js simulation of the universe and solar system built with it. On this page, Ikuta '73, a game about mowing lawns west of Tokyo, was made with it and Claude Opus 5.
+      Ikuta '73, where you mow lawns in the hills west of Tokyo in the summer of 1973, was made with Grok 4.5 and Claude Opus 5. xAI's own launch post for the model shows a whole Three.js simulation of the universe and solar system built with it.
 
       xAI released Grok 4.5 on July 16, 2026 and introduced it as its smartest model at the time for coding, agentic tasks and knowledge work, trained alongside Cursor.
 
@@ -696,7 +698,7 @@ terms:
     name: Grok Build 0.1
     provider: xai
     intro: |-
-      xAI says Grok Build 0.1 works best in harnesses such as Grok Build, Cursor, Kilo Code and OpenCode, which makes sense, since it's the coding model built for Grok Build, xAI's own coding agent.
+      xAI built Grok Build 0.1 as the coding model for Grok Build, its own coding agent, so it's no wonder xAI says the model works best in harnesses such as Grok Build, Cursor, Kilo Code and OpenCode.
 
       The agent launched in early beta on May 25, 2026 for SuperGrok and X Premium+ subscribers, and xAI open-sourced it under Apache 2.0 on July 15, 2026. It runs in a terminal, headless in scripts or inside editors through the Agent Client Protocol, and it supports MCP servers.
 
@@ -852,13 +854,13 @@ terms:
     name: Qwen3.8
     provider: alibaba
     intro: |-
-      Alibaba lists building interactive games from natural-language requests among Qwen3.8-Max's abilities, and you can even try Qwen3.8 for free in Qwen Studio at chat.qwen.ai.
+      Alibaba lists building interactive games from natural-language requests among Qwen3.8-Max's abilities, and you can try Qwen3.8 for free in Qwen Studio at chat.qwen.ai.
 
       It's a model generation from Alibaba's Qwen team, and its flagship, Qwen3.8-Max, was announced on August 3, 2026 as Alibaba's largest and most capable model. It's a sparse mixture-of-experts design with 2.4 trillion total parameters, 95 billion active and a context window of up to 1 million tokens.
 
       Qwen3.8-Max runs in the API on Alibaba Cloud Model Studio and in QwenWork, Alibaba's AI work platform. Open weights followed for Qwen3.8-2.4T-A95B on August 12 and for Qwen3.8-27B on August 14, 2026.
 
-      Qwen3.8-27B is a dense model that reads text, images and video, with 262,144 tokens of context that can stretch to 1 million, under the Apache 2.0 license. Qwen Code runs the models as a terminal coding agent.
+      Qwen3.8-27B is a lot smaller, a dense model that reads text, images and video, with 262,144 tokens of context that can stretch to 1 million, under the Apache 2.0 license. Qwen Code runs the models as a terminal coding agent.
     sources:
       - "https://github.com/QwenLM/Qwen3.8"
       - "https://www.alibabacloud.com/blog/alibaba-unveils-qwen3-8-max-its-largest-and-most-capable-flagship-model-to-date_603420"
@@ -924,7 +926,7 @@ terms:
 
       Moonshot AI announced K3 in July 2026 and calls it the first open 3T-class model. It's a mixture-of-experts model with 2.8 trillion total parameters and 104 billion active, native vision and a 1-million-token context window, built for long-horizon coding, agentic knowledge work and reasoning.
 
-      Moonshot even says K3 turns concepts, images and videos into playable interactive experiences, and that it uses screenshots and visuals to improve game development, front-end work and CAD. It's available on Kimi.ai, in the Kimi apps, in Kimi Work on the desktop, in Kimi Code and through the Kimi API.
+      Moonshot pitches K3 pretty directly at games, too. It says the model turns concepts, images and videos into playable interactive experiences, and that it uses screenshots and visuals to improve game development, front-end work and CAD. It's available on Kimi.ai, in the Kimi apps, in Kimi Work on the desktop, in Kimi Code and through the Kimi API.
 
       Moonshot published the full weights on Hugging Face under the Kimi K3 License, and as of September 2026 its API docs list K3 as the most capable Kimi model.
     sources:

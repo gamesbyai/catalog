@@ -4,7 +4,7 @@ terms:
     maker: Pieter Levels
     url: "https://vibejam.com/2025/"
     intro: |-
-      The first Vibe Coding Game Jam asked for at least 80 percent of each game to be written by AI, code and assets included, and over a thousand games came in, which is a lot for a first edition. Its official page calls it Bolt Vibe Coding Game Jam 2025, and it was the start of Pieter Levels' online jam for AI-made web games.
+      For a first edition, the Vibe Coding Game Jam pulled in a lot of games, more than a thousand, and each one had to be at least 80 percent written by AI, code and assets included. Its official page calls it Bolt Vibe Coding Game Jam 2025, and it was the start of Pieter Levels' online jam for AI-made web games.
 
       Games had to be instantly playable on the web with no logins, signups or loading screens, free to play and hosted on their own domain or subdomain. Each one also had to carry a snippet of code from the submit form that marked it as an entry. It didn't matter which engine you used, though Three.js was recommended.
 
@@ -22,13 +22,13 @@ terms:
     intro: |-
       At least 90 percent of the code had to be written by AI, and only new games made during the jam counted, one entry per person. Those were the rules of the 2026 Vibe Coding Game Jam, officially Cursor Vibe Jam 2026, which was the second edition of Pieter Levels' jam for AI-made web games.
 
-      The jam opened on April 1. Games had to be free on the web with no login or signup and load almost instantly, and each one even had to include the jam's widget script or be disqualified. Any engine was allowed and Three.js recommended, and multiplayer was preferred but wasn't required.
+      The jam opened on April 1. Games had to be free on the web with no login or signup and load almost instantly, and each one had to include the jam's widget script or be disqualified. Any engine was allowed and Three.js recommended, and multiplayer was preferred but wasn't required.
 
       Submissions closed on May 1 at 13:37 UTC. Cursor was the diamond sponsor, with Bolt.new, Glif and Tripo3D also sponsoring.
 
-      First, second and third place paid $25,000, $10,000 and $5,000.
+      The prize money added up to a lot. First, second and third place paid $25,000, $10,000 and $5,000, and on top of that, 12 special prizes paid $1,000 each.
 
-      On top of that, 12 special prizes paid $1,000 each. Levels' results post on June 17 names A Game About Capybaras Delivering Food, Fanto's Mega-Mart and WenWare as the top three, so a capybara on a scooter took first place. All the entries are playable at vibej.am.
+      Levels' results post on June 17 names A Game About Capybaras Delivering Food, Fanto's Mega-Mart and WenWare as the top three, so a capybara on a scooter took first place. All the entries are playable at vibej.am.
     sources:
       - "https://vibejam.com/2026/"
       - "https://vibejam.com/2026/press"
@@ -38,7 +38,7 @@ terms:
     maker: Focaccai
     url: "https://itch.io/jam/ai-browser-game-jam"
     intro: |-
-      Rogue Memory tied for first overall at AI Browser Game Jam 1 with 6-bit Vanguard (Star Overlord 4.0), and its hero is GHOST.EXE, a deleted AI. That fits the jam's theme, Ghost in the Machine, pretty neatly.
+      Rogue Memory tied for first overall at AI Browser Game Jam 1 with 6-bit Vanguard (Star Overlord 4.0). Its hero is GHOST.EXE, a deleted AI, so the jam's theme, Ghost in the Machine, is right there in the main character.
 
       It was Focaccai's first itch.io jam for AI-assisted browser games, and its submission window ran from February 20 to March 10, 2026, after a deadline extension.
 
@@ -88,7 +88,9 @@ terms:
     maker: Focaccai
     url: "https://itch.io/jam/ai-jam-4"
     intro: |-
-      PLUGS has you plugging lamps into outlets, and in Charge The Coil you wind a glowing charge around a copper coil. They're two pretty different takes on the theme of AI Browser Game Jam 4, Charge, which was offered as a suggestion that entrants could interpret freely or ignore.
+      In Charge The Coil you let go at just the right moment to wind a glowing charge around a copper coil, so it took the theme of AI Browser Game Jam 4, Charge, very much at its word. The theme was only a suggestion, though, and entrants could interpret it freely or ignore it.
+
+      PLUGS, which came sixth, is actually about electricity too, since you light a dark house by plugging lamps into outlets.
 
       It was the fourth edition of Focaccai's itch.io jam for AI-assisted browser games, and submissions ran from August 1 to August 18, 2026.
 

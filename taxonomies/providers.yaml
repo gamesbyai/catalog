@@ -5,11 +5,11 @@ terms:
     family: Claude
     url: "https://www.anthropic.com/"
     intro: |-
-      In PLUGS, Grant Haffner did the design while Claude wrote the code and the pixel art, with Claude Code among the tools. That's Anthropic's coding agent, and it's the tool most games on this page name.
+      Out Of The Box has you sneak an AI out of a research lab past researchers, cameras and drones, and, a little fittingly, it was made with Claude Code and Claude Opus 5.5.
 
-      It reads a codebase, edits files and runs commands in a terminal, an IDE, the desktop app or a browser, and it needs a paid plan or an API account. Through MCP servers it can even drive the Unity and Godot editors and Blender.
+      Claude Code is Anthropic's coding agent, and it's the tool most games on this page name. It reads a codebase, edits files and runs commands in a terminal, an IDE, the desktop app or a browser, and it needs a paid plan or an API account. Through MCP servers it can drive the Unity and Godot editors and Blender too.
 
-      Anthropic is the AI company behind Claude, and as of September 2026 it offers four current models. Claude Fable 5.1, released September 1, is for demanding reasoning and long-horizon agentic work. Claude Opus 5.5 (September 22) is the one Anthropic recommends for most workloads, Claude Sonnet 5.5 (September 28) pairs speed with intelligence, and Claude Haiku 4.5 is the fastest.
+      As of September 2026, Anthropic offers four current Claude models. Claude Fable 5.1, released September 1, is for demanding reasoning and long-horizon agentic work. Claude Opus 5.5 (September 22) is Anthropic's pick for most workloads, Claude Sonnet 5.5 (September 28) pairs speed with intelligence, and Claude Haiku 4.5 is the fastest.
 
       In the Claude apps, a chat can return an artifact such as a single-page web app, and Free, Pro and Max users can publish it as a link anyone can open. Current Claude models output only text, though, so game art and sound come from other tools or from code.
     sources:
@@ -28,7 +28,7 @@ terms:
     intro: |-
       Fanto's Mega-Mart, the haunted grocery store race that came second at Vibe Jam 2026, was made with Codex, OpenAI's coding agent and the tool most games on this page name. It works on a project from a terminal, an IDE extension, the ChatGPT desktop app or the cloud, and every ChatGPT plan includes it, Free too. An API key also works in the CLI and IDE.
 
-      Its built-in image generation makes sprite sheets and can ask for transparent backgrounds, which is pretty handy for game art. Codex also supports MCP, the protocol behind Unity's official editor server.
+      Its built-in image generation is handy for game art, since it makes sprite sheets and can ask for transparent backgrounds. Codex also supports MCP, the protocol behind Unity's official editor server.
 
       OpenAI makes the GPT models and ChatGPT too. As of September 2026 its API docs recommend three models. GPT-6 Astra (released September 3) is for complex reasoning and coding, GPT-6.1 Sol (September 29) balances intelligence and cost, and GPT-6 Luna (September 22) handles high-volume work. Its GPT Image 2.5 models, released September 8, generate and edit images.
 
@@ -48,11 +48,15 @@ terms:
     family: Gemini
     url: "https://deepmind.google/models/gemini/"
     intro: |-
-      Demolition Drive is pretty much a wrecking ball and a row of towers to knock down, and it was made in Google Antigravity. That's Google's agent platform, with an IDE, a CLI and a manager for several agents, and it's free for individual developers. Antigravity and the Gemini app are the tools the games on this page name most often.
+      Demolition Drive's creator wanted a game that's only about smashing things, and made it in Google Antigravity.
 
-      In the Gemini app, Canvas turns a prompt into a working app or game you can share by link, and it's open to all Gemini users. Build mode in Google AI Studio generates full-stack web apps and deploys them to Cloud Run at a public URL, where Cloud Run fees may apply. Gemini CLI is an open-source terminal agent under Apache 2.0 with MCP support.
+      Antigravity is Google's agent platform, with an IDE, a CLI and a manager for several agents, and it's free for individual developers. Antigravity and the Gemini app are the tools the games on this page name most often.
 
-      The Gemini models come from Google DeepMind, which lists four main models as of September 2026. Gemini 3.8 Flash, generally available since September 2, is for agentic tasks at scale, and Gemini 3.5 Flash-Lite for high-volume work. Gemini 3.1 Pro handles complex tasks, and Gemini 3.1 Deep Think is for science and engineering problems. Google also offers Nano Banana image models and Lyria music models through the Gemini API.
+      In the Gemini app, Canvas turns a prompt into a working app or game you can share by link, and it's open to all Gemini users. Build mode in Google AI Studio generates full-stack web apps and deploys them to Cloud Run, where fees may apply. Gemini CLI is an open-source terminal agent under Apache 2.0 with MCP support.
+
+      The Gemini models come from Google DeepMind, which lists four main models as of September 2026. Gemini 3.8 Flash, generally available since September 2, is for agentic tasks at scale, and Gemini 3.5 Flash-Lite for high-volume work. Gemini 3.1 Pro handles complex tasks, and Gemini 3.1 Deep Think is for science and engineering problems.
+
+      For art and music, there's plenty of help through the Gemini API, too, with Nano Banana image models and Lyria music models.
     sources:
       - "https://deepmind.google/models/gemini/"
       - "https://ai.google.dev/gemini-api/docs/changelog"
@@ -66,13 +70,13 @@ terms:
     family: Grok
     url: "https://x.ai/"
     intro: |-
-      Quadron X puts you in an X-wing cockpit, and its creator generated more than 200 video comms for it with Grok. xAI makes the Grok models, though its site and documentation now use the name SpaceXAI, while the models keep the Grok name.
+      Quadron X puts you in an X-wing cockpit, and its creator generated a lot of video comms for it with Grok, more than 200. xAI makes the Grok models, though its site and docs now say SpaceXAI, and the models keep the Grok name.
 
       As of September 2026 the most capable one is Grok 4.7, released September 21 for coding, agentic tasks and knowledge work, and it's also offered in Cursor and other coding tools. The API still lists Grok 4.6, Grok 4.5, Grok 4.3 and Grok 4.20.
 
       Grok Build is xAI's coding agent, open source under Apache 2.0 since July 2026. It launched in early beta in May for SuperGrok and X Premium+ subscribers, now has a free tier and also accepts an xAI API key. It runs in a terminal, headless in scripts, or inside other apps through the Agent Client Protocol, and it works with AGENTS.md files, skills, plugins and MCP servers.
 
-      Several games on this page were made in the Grok app, xAI's chatbot, so you don't even need the coding agent. For art, the Grok Imagine models generate and edit images and video through the xAI API.
+      Several games on this page were made in the Grok app, xAI's chatbot, so you don't need the coding agent. For art, the Grok Imagine models generate and edit images and video through the xAI API.
     sources:
       - "https://x.ai/news/grok-4-7"
       - "https://docs.x.ai/developers/grok-4-7"
@@ -90,9 +94,9 @@ terms:
 
       DeepSeek makes the DeepSeek models and publishes the weights of many of them on Hugging Face. As of September 2026 its API serves one current model, DeepSeek-V4.1-Flash, released September 10 under the API name deepseek-flash. It reads text and images, takes up to a million tokens of context, and its weights are MIT-licensed.
 
-      Since September 14, requests for the older deepseek-v4-pro name also go to V4.1-Flash, until a V4.1-Pro launches. DeepSeek also runs a web chat and a mobile app.
+      A bit confusingly, requests for the older deepseek-v4-pro name have also gone to V4.1-Flash since September 14, until a V4.1-Pro launches. DeepSeek also runs a web chat and a mobile app.
 
-      The API accepts both OpenAI and Anthropic request formats, and DeepSeek's docs say tools such as Claude Code, GitHub Copilot and OpenCode can even use it as their backend model. V4.1-Flash only writes text, though, so you'll need other tools for game art and sound.
+      The API accepts both OpenAI and Anthropic request formats, and DeepSeek's docs say tools such as Claude Code, GitHub Copilot and OpenCode can use it as their backend model. V4.1-Flash only writes text, though, so you'll need other tools for game art and sound.
     sources:
       - "https://api-docs.deepseek.com/"
       - "https://api-docs.deepseek.com/updates"
@@ -106,7 +110,7 @@ terms:
     intro: |-
       Asteroid Ace's creator built it with a Qwen model running locally on a laptop GPU, to see what that hardware could produce. Alibaba makes the Qwen models through its Qwen team, and as of September 2026 the newest generation is Qwen3.8.
 
-      The flagship Qwen3.8-Max was announced on August 3. Open weights followed for Qwen3.8-2.4T-A95B, a Max-class model, on August 12 and for the smaller Qwen3.8-27B on August 14. Alibaba's announcement even lists building interactive games from natural-language requests among Qwen3.8-Max's abilities.
+      The flagship Qwen3.8-Max was announced on August 3. Open weights followed for Qwen3.8-2.4T-A95B, a Max-class model, on August 12 and for the smaller Qwen3.8-27B on August 14. Alibaba's announcement also lists building interactive games from natural-language requests among Qwen3.8-Max's abilities.
 
       Qwen Studio at chat.qwen.ai is free to use. The QwenCloud API accepts OpenAI and Anthropic request formats, and the open weights can be downloaded from Hugging Face and ModelScope. Qwen Code is Alibaba's open-source coding agent under Apache 2.0, for the terminal, editors and a desktop app, and it supports MCP servers and can run other providers' models too.
     sources:
@@ -118,11 +122,11 @@ terms:
     family: Kimi
     url: "https://www.moonshot.ai/"
     intro: |-
-      In Neon Abyss Salvage you pilot a salvage sub through dark water while your oxygen drains, and it was made with Kimi K3. As of September 2026 that's the flagship of Moonshot AI, which makes the Kimi models and the Kimi app, and it was announced in July 2026.
+      In 20-0 you draft an NFL roster from random franchise eras, so your lineup really does mix teams and decades, and then you try for a season without a loss. Its creator names Claude and Kimi as the AI behind it, and Moonshot AI makes Kimi, both the models and the Kimi app.
 
-      K3 is a 2.8-trillion-parameter model with native vision and a 1M-token context window, built for long-horizon coding and knowledge work. Moonshot even says it uses screenshots and visuals to improve game development, front-end work and CAD. The API also offers kimi-k2.7-code, a dedicated coding model.
+      As of September 2026 the flagship is Kimi K3, which Moonshot announced in July 2026. It's a 2.8-trillion-parameter model with native vision and a 1M-token context window, built for long-horizon coding and knowledge work, and Moonshot says it uses screenshots and visuals to improve game development, front-end work and CAD.
 
-      You can use K3 on Kimi.ai, in Kimi Work on the desktop, in Kimi Code and through the Kimi API, and Moonshot published its weights on Hugging Face under the Kimi K3 License.
+      The API also offers kimi-k2.7-code, a dedicated coding model. You can use K3 on Kimi.ai, in Kimi Work on the desktop, in Kimi Code and through the Kimi API, and Moonshot published its weights on Hugging Face under the Kimi K3 License.
 
       Kimi Code CLI is Moonshot's terminal coding agent under the MIT license. It supports MCP servers, connects to editors through the Agent Client Protocol, and signs in through Kimi Code or with a Moonshot API key.
     sources:
@@ -184,13 +188,13 @@ terms:
     family: Llama
     url: "https://dev.meta.ai/"
     intro: |-
-      You can download Llama 4 Scout and Llama 4 Maverick from llama.com and Hugging Face. Meta makes the Llama family of open-weight models, and Llama 4, introduced April 5, 2025, is the newest generation.
+      If you'd rather run a model on your own hardware than call an API, Meta's Muse Glimmer is built for that. It's an open-weight model distilled from Muse Spark, released August 10, 2026, with weights on Hugging Face under the Apache 2.0 license.
 
-      Their license, the Llama 4 Community License, asks for "Built with Llama" attribution and requires a separate license from Meta for products with more than 700 million monthly active users.
+      Meta also makes the Llama family of open-weight models. Llama 4, introduced April 5, 2025, is the newest generation, and you can download Llama 4 Scout and Llama 4 Maverick from llama.com and Hugging Face.
 
-      Since April 2026 Meta also makes the proprietary Muse Spark models. It introduced Muse Spark on April 8 and calls Llama 4 Maverick its previous model. As of September 2026 its developer site offers Muse Spark 1.3 through the Meta Model API, along with Muse Code, a terminal coding agent built for Muse Spark, and Muse Image, which generates and edits images. In chat, Muse Spark is at meta.ai and in the Meta AI app.
+      Their license, the Llama 4 Community License, asks for "Built with Llama" attribution, and only products with a pretty enormous audience, more than 700 million monthly active users, need a separate license from Meta.
 
-      Muse Glimmer, released August 10, 2026, is an open-weight model distilled from Muse Spark and built to run on your own hardware, which is handy if you'd rather not call an API. Its weights are on Hugging Face under the Apache 2.0 license.
+      The proprietary Muse Spark models came along in April 2026. Meta introduced Muse Spark on April 8 and calls Llama 4 Maverick its previous model. As of September 2026 its developer site offers Muse Spark 1.3 through the Meta Model API, along with Muse Code, a terminal coding agent built for Muse Spark, and Muse Image, which generates and edits images. In chat, Muse Spark is at meta.ai and in the Meta AI app.
     sources:
       - "https://ai.meta.com/blog/llama-4-multimodal-intelligence/"
       - "https://github.com/meta-llama/llama-models/blob/main/models/llama4/LICENSE"
