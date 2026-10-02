@@ -14,14 +14,14 @@ description: >-
   answers after each of your moves.
 
 
-  None of the rules got trimmed: castling, en passant, promotion and draws are
+  None of the rules got trimmed. Castling, en passant, promotion and draws are
   all in, and the game spots check and checkmate on its own.
 
 
   Three computer strengths are on offer, and you can choose whether you move
-  first or second in the next game. Undo takes moves back, while a move history
-  and a captures list keep a pretty thorough record of a game that's saved and
-  survives a reload.
+  first or second in the next game. Undo takes moves back, while a move
+  history and a captures list keep a thorough record of a game that's saved
+  and survives a reload.
 
 
   When the 3D board isn't what you want, a flat 2D view built from a grid of
@@ -31,9 +31,8 @@ description: >-
 
   The opponent runs a negamax search with alpha-beta pruning inside a Web
   Worker, so the page stays responsive while it thinks. Every piece on the 3D
-  board is modeled as its own geometry rather than a sprite, which is a nice
-  touch for a project this quick. Jorge Balderas had it built in about 41
-  minutes from a handful of prompts.
+  board is modeled as its own geometry rather than a sprite. Jorge Balderas
+  had it built in about 41 minutes from a handful of prompts.
 play:
   url: https://yortch.github.io/chess3dastra
   embeddable: true

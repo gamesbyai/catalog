@@ -3,9 +3,9 @@ title: The Underground
 tagline: Explore generated tunnels, open locked doors, and find artifacts before
   time runs out.
 description: >-
-  Each run starts with the clock at an oddly specific 03:00:00, and you've got
-  until it ticks over to 05:00:00 to find what's hidden underground before time
-  runs out.
+  Each run starts with the clock at a specific 03:00:00, and you've got until
+  it ticks over to 05:00:00 to find what's hidden underground before time runs
+  out.
 
 
   The tunnel network is procedurally generated, and the creator describes the
@@ -30,9 +30,8 @@ description: >-
 
 
   mythcitygames made it after riding subway trains around the world and always
-  wondering what's down those dark tunnels they passed, which is a pretty
-  relatable itch. They wanted to find out what lies down there, such as
-  abandoned stations and old bunkers.
+  wondering what's down those dark tunnels they passed. They wanted to find
+  out what lies down there, such as abandoned stations and old bunkers.
 play:
   url: https://mcg-urbex.web.app
   embeddable: true

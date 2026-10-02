@@ -42,9 +42,8 @@ description: >-
 
 
   quantumcodemonk made it entirely with Claude, and every sound effect is
-  generated in real time instead of loaded from files, a pretty tidy bit of
-  craft. For some reason they also add that no puppies were hurt during
-  development.
+  generated in real time instead of loaded from files, a tidy bit of craft.
+  For some reason they also add that no puppies were hurt during development.
 play:
   url: https://quantumcodemonk.itch.io/rogue-memory
   embeddable: false

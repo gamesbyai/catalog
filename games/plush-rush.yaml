@@ -11,10 +11,10 @@ description: >-
 
 
   A big counter at the top tracks your account, which starts from $1 million,
-  and a tag under it shows if you're short or flat at the moment. The left panel
-  fills up with buys, sells, shorts and covers as you run, each one showing its
-  price and what it gained or lost — a trading floor dressed up in stuffed
-  animals.
+  and a tag under it shows if you're short or flat at the moment. The left
+  panel fills up with buys, sells, shorts and covers as you run, each one
+  showing its price and what it gained or lost. It's a trading floor dressed
+  up in stuffed animals.
 
 
   There are two ways to play, with Morning Bell sending you through the first
@@ -23,9 +23,8 @@ description: >-
 
 
   Either way, an hour of price action gets squeezed into about a minute of
-  running. Your profit and loss lands on a leaderboard. The score also shows how
-  far off you are from an "optimal" figure in the corner, which is a pretty
-  humbling number to keep on screen.
+  running. Your profit and loss lands on a leaderboard. The score also shows
+  how far off you are from an "optimal" figure in the corner.
 
 
   lazy__lazers notes that the game isn't perfectly accurate and that slippage is

@@ -47,8 +47,8 @@ description: >-
 
 
   Andrea Vitolo had Claude build the whole game in plain JavaScript, and
-  surprisingly nothing is loaded from files, since the pixel-art sprites, the
-  level, the sound effects and the music are all generated in code.
+  nothing is loaded from files, since the pixel-art sprites, the level, the
+  sound effects and the music are all generated in code.
 play:
   url: https://m-assault-fable.netlify.app
   embeddable: true

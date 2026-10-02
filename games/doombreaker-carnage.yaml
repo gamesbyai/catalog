@@ -8,11 +8,11 @@ description: >-
 
   A whole run is ten zones long, and clearing all of them finishes it. The
   enemies get tougher the deeper you go, while each zone has its own visual
-  theme, starting with a place called Hell's Antechamber, a pretty grim name for
-  the front door.
+  theme, starting with a place called Hell's Antechamber, a grim name for the
+  front door.
 
 
-  You've got four guns on the number keys 1 to 4: a pistol, a shotgun, a
+  You've got four guns on the number keys 1 to 4, a pistol, a shotgun, a
   chaingun and a rocket launcher. At least the pistol's ammo readout shows an
   infinity sign at the start of a run. For everything else, health, armor and
   ammo pickups are scattered around the levels.
@@ -22,9 +22,9 @@ description: >-
 
 
   It looks the part, with chunky pixel art seen through scanlines and CRT
-  effects over chiptune-style audio. A little map in the corner, oddly tidy for
-  such dark halls, traces the corridors around you, while a timer ticks at the
-  top of the screen beside a kill counter. Pressing R restarts the run at any
+  effects over chiptune-style audio. A little map in the corner, tidy for such
+  dark halls, traces the corridors around you, while a timer ticks at the top
+  of the screen beside a kill counter. Pressing R restarts the run at any
   point, a sensible button for a game pitched around speed runs.
 
 

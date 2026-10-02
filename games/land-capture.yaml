@@ -3,9 +3,9 @@ title: Land Capture
 tagline: Fight alongside your team to claim more of a shared island than four
   rival teams.
 description: >-
-  You're a small blocky character on an island seen from above, fighting for one
-  of five color teams: red, blue, green, yellow or purple. Every team wants the
-  same land, and each one starts out with an even 20% slice of it.
+  You're a small blocky character on an island seen from above, fighting for
+  one of five color teams (red, blue, green, yellow or purple). Every team
+  wants the same land, and each one starts out with an even 20% slice of it.
 
 
   Wherever you walk, a strip in your team's color follows along behind you like
@@ -16,14 +16,14 @@ description: >-
   Solo, Online or Private Room. Each team holds six players.
 
 
-  Brown blocks sit scattered around the island and, oddly enough, out in the
-  surrounding water too.
+  Brown blocks sit scattered around the island and out in the surrounding
+  water too.
 
 
   A timer ticks away in the top left corner while a factions panel keeps track
   of each team's player count and land percentage. The circular minimap turns
-  the whole island into a pie chart split by team color, which is a tidy way to
-  read the standings at a glance.
+  the whole island into a pie chart split by team color, showing the standings
+  at a glance.
 
 
   There's also a leaderboard listing every player's score, kills and capture

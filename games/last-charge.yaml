@@ -11,9 +11,9 @@ description: >-
   means giving up its tempo right now.
 
 
-  Every charge feeds a Trace track, and when it reaches 6 a Sentinel drops into
-  the fight. The track resets after that. It never goes all the way back to
-  zero, though, which is a neat way of making greed follow you around.
+  Every charge feeds a Trace track, and when it reaches 6 a Sentinel drops
+  into the fight. The track resets after that. It never goes all the way back
+  to zero, though.
 
 
   At least nothing is hidden. Each machine shows its next action and damage
@@ -22,8 +22,8 @@ description: >-
   on numbers you can see.
 
 
-  There are 34 cards to build a deck from, plus a pretty compact set of four
-  keywords to build around.
+  There are 34 cards to build a deck from, plus a compact set of four keywords
+  to build around.
 
 
   Grounded covers utility that never needs charging, Discharge cashes out every
@@ -44,8 +44,8 @@ description: >-
 
 
   Once you've collected 50 Salvage, the final battle opens up with uncapped
-  Trace and waves that never end, while your districts act as cards in a clever
-  twist on the whole meta map. A session runs about an hour.
+  Trace and waves that never end, while your districts on the meta map act as
+  cards. A session runs about an hour.
 play:
   url: https://bittiai.itch.io/last-charge
   embeddable: false

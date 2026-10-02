@@ -10,7 +10,7 @@ description: >-
 
   You can tunnel straight through a wall, set off a barrel beside a cluster of
   enemies, or crack open the bunker that's blocking your path, which makes the
-  terrain a clever extra weapon.
+  terrain an extra weapon.
 
 
   Each mission is a side-scrolling run-and-gun stage where you free hostages,
@@ -31,16 +31,16 @@ description: >-
 
 
   The levels are generated deterministically. A row of numbered buttons from 1
-  to 9 on the start screen lets you jump straight to any mission, which is a
-  kind thing to put right up front. Your progress lives in a JSON file that you
-  download, then load back with a button or by dragging it onto the page, while
-  the browser keeps its own copy automatically too.
+  to 9 on the start screen lets you jump straight to any mission. Your
+  progress lives in a JSON file that you download, then load back with a
+  button or by dragging it onto the page, while the browser keeps its own copy
+  automatically too.
 
 
   If the default keys don't suit you, the Controls menu lets you rebind every
   action with two keys each, and on mobile there are touch buttons on screen.
-  Oddly enough, the whole game fits into a single HTML file. Its sound effects
-  are synthesized rather than recorded.
+  The whole game fits into a single HTML file. Its sound effects are
+  synthesized rather than recorded.
 play:
   url: https://boom-brigade.vercel.app
   embeddable: true

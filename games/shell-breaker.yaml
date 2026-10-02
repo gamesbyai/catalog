@@ -2,11 +2,10 @@ slug: shell-breaker
 title: Shell breaker
 tagline: Bounce a ball off a paddle to smash data nodes across eight cyberpunk levels
 description: >-
-  Slide the paddle along the bottom with the arrow keys, A and D, or the mouse,
-  then press Space or click to launch the ball. Here the paddle goes by the deck
-  and the ball goes by the ghost, a fitting name for something smashing through
-  a field of data nodes. You're out to wipe every node off the board across 8
-  levels, and each one's harder than the last.
+  Slide the paddle along the bottom with the arrow keys, A and D, or the
+  mouse, then press Space or click to launch the ball. Here the paddle goes by
+  the deck and the ball goes by the ghost. You're out to wipe every node off
+  the board across 8 levels, and each one's harder than the last.
 
 
   Some nodes are reinforced and take two hits, while the explosive ones are a

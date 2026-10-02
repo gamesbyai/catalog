@@ -9,8 +9,8 @@ description: >-
 
 
   The vessels come from five AI cultures, the Determinists, Stochasts, Swarm,
-  Recursive and Archivists, and their logs carry oddly specific glitches, like
-  an Archivist that's convinced the year is 2043.
+  Recursive and Archivists, and their logs carry specific glitches, like an
+  Archivist that's convinced the year is 2043.
 
 
   Every mission runs through seven phases, starting at IDLE and moving through
@@ -23,7 +23,7 @@ description: >-
   console shows where it stands, starting at 5 out of 5.
 
 
-  For an operator, you've got a pretty modest toolkit of just three commands.
+  For an operator, you've got a modest toolkit of just three commands.
 
 
   BOOST improves a vessel's next tick, while PING forces a scan that might turn

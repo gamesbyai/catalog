@@ -9,7 +9,7 @@ description: >-
   work through.
 
 
-  You play as Suiken, an oddly cheerful hero for such a gloomy place, a grinning
+  You play as Suiken, a cheerful hero for such a gloomy place, a grinning
   monkey in a battered trench coat and hat who has to cross every chamber and
   break every seal along the way.
 
@@ -22,8 +22,8 @@ description: >-
 
 
   Suiken has a life bar and a barrier meter that both start at 100%, and the
-  Shadow feeds on failure, fear and forgetting, a fitting appetite for a villain
-  in a game that tests what you remember.
+  Shadow feeds on failure, fear and forgetting. The game tests what you
+  remember.
 
 
   An Omen box at the bottom of the screen narrates each scene, from the heavy
@@ -31,10 +31,10 @@ description: >-
   switch the text between English and Portuguese.
 
 
-  The hero's name sits pretty close to the handle of xsuikem, who made the game.
-  Their aim was a game that adds real value instead of being pure entertainment.
-  They set out to build something immersive that also teaches you about digital
-  security and Web3 while you play.
+  The hero's name sits close to the handle of xsuikem, who made the game.
+  Their aim was a game that adds real value instead of being pure
+  entertainment. They set out to build something immersive that also teaches
+  you about digital security and Web3 while you play.
 play:
   url: https://o-resgate-das-sombras.vercel.app
   embeddable: true

@@ -16,14 +16,13 @@ description: >-
 
   Along the way you swing at Glitches with an attack button, wake up shrines
   that have fallen asleep and work to restore the route. The title screen sums
-  up the goal as carrying the last clean signal home, a surprisingly poetic line
-  for a game whose currency is API Credits.
+  up the goal as carrying the last clean signal home, a poetic line for a game
+  whose currency is API Credits.
 
 
-  A row of hearts across the top tracks your health. Beside it sit an oddly
-  named Vibe counter and a Credits counter that starts at zero. You can open a
-  field guide and a help screen in the middle of play, and the sound can be
-  muted.
+  A row of hearts across the top tracks your health. Beside it sit a Vibe
+  counter and a Credits counter that starts at zero. You can open a field
+  guide and a help screen in the middle of play, and the sound can be muted.
 
 
   It's built for desktop browsers. You click the game window to give it focus.

@@ -13,9 +13,9 @@ description: >-
   run.
 
 
-  There's a pretty tidy readout in the corner, with your score next to a color
-  count of 4 and an out counter that starts at 0 of 3. Underneath it, the keys
-  are spelled out along with a note saying the player view turns by itself.
+  There's a tidy readout in the corner, with your score next to a color count
+  of 4 and an out counter that starts at 0 of 3. Underneath it, the keys are
+  spelled out along with a note saying the player view turns by itself.
 
 
   The camera orbits the tower, and the player view swings around without any
@@ -25,8 +25,8 @@ description: >-
   which direction you're facing and the current state.
 
 
-  On a phone, surprisingly large arrow buttons and a Shoot button sit on the
-  screen in place of the keys.
+  On a phone, large arrow buttons and a Shoot button sit on the screen in
+  place of the keys.
 
 
   gtmkprn calls it a one-button shooter where your sense of space and your focus

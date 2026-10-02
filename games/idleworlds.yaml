@@ -5,8 +5,8 @@ tagline: Train a character in a text-based online RPG that keeps progressing
 description: >-
   A green dashboard of text and buttons greets you, with a guest character
   already standing in Greenwake Den, Zone 1, at Combat level 1. You start with
-  120 coins and a pretty modest ATK 4, DEF 2 and HP 41. Each skill gets its own
-  row with a button and a level bar, where Fight Rats is worth 4 XP while Mine
+  120 coins and a modest ATK 4, DEF 2 and HP 41. Each skill gets its own row
+  with a button and a level bar, where Fight Rats is worth 4 XP while Mine
   Copper is worth 8.
 
 
@@ -27,11 +27,11 @@ description: >-
 
 
   Further down, the dashboard turns out to hold a lot more than it first lets
-  on. Quests ask for things like a surprisingly hefty 100 Rat Tails from
-  Greenwake Den, and smithing work orders want crafted gear such as Copper
-  Boots. There's a whole ladder of shared world bosses, from a solo Ancient
-  Treant to a raid-sized Abyssal Behemoth and a mythic World Eater, and the
-  bigger the boss, the bigger and longer the XP buff it leaves behind.
+  on. Quests ask for things like a hefty 100 Rat Tails from Greenwake Den, and
+  smithing work orders want crafted gear such as Copper Boots. There's a whole
+  ladder of shared world bosses, from a solo Ancient Treant to a raid-sized
+  Abyssal Behemoth and a mythic World Eater, and the bigger the boss, the
+  bigger and longer the XP buff it leaves behind.
 
 
   Your character keeps progressing while you're offline, so the game is built

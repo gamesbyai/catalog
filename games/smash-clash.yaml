@@ -20,17 +20,17 @@ description: >-
   dotted with colored tiles.
 
 
-  Chess hops are an oddly specific thing to find in a card battle, and they're
-  the very first twist the Mutators option names.
+  Chess hops are a specific thing to find in a card battle, and they're the
+  very first twist the Mutators option names.
 
 
   Below Play, the menu lists 2 Players · Local, Play a Friend and Friends.
   Profile and settings buttons sit up in the top right corner.
 
 
-  A cookie notice with Accept and Decline buttons pops up over the menu. It's a
-  surprisingly polite one, too, because it says plainly that you can play the
-  game without accepting.
+  A cookie notice with Accept and Decline buttons pops up over the menu. It's
+  a polite one, too, because it says plainly that you can play the game
+  without accepting.
 play:
   url: https://smashandclash.in
   embeddable: false

@@ -3,11 +3,10 @@ title: Nuts Pipeline
 tagline: Place converters on pipe nodes to sort nuts from stones and feed a hamster.
 description: >-
   Nuts Pipeline has you placing converters on the nodes of a pipe network to
-  decide where everything flows. Nuts and stones leave the source together, and
-  you need the right combination of converters to sort them so only nuts reach
-  the hamster waiting at the goal. The converters are drawn like tiny circuit
-  gates on graph paper, a pretty fitting look for a puzzle about wiring up a
-  snack delivery.
+  decide where everything flows. Nuts and stones leave the source together,
+  and you need the right combination of converters to sort them so only nuts
+  reach the hamster waiting at the goal. The converters are drawn like tiny
+  circuit gates on graph paper.
 
 
   Selecting a node opens a dialog where you swap its converter, with a reference

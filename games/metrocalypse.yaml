@@ -3,8 +3,8 @@ title: Metrocalypse
 tagline: Shoot zombies and run across rooftops in a shared, persistent city.
 description: >-
   Metrocalypse drops you into a first-person view high over a packed city of
-  brick rooftops, where you gun down zombies and race from building to building.
-  Down in the streets, a surprisingly big crowd of small figures fills the gaps
+  brick rooftops, where you gun down zombies and race from building to
+  building. Down in the streets, a big crowd of small figures fills the gaps
   between the blocks. The whole place is one map, 952 meters across, generated
   from a fixed seed.
 
@@ -15,8 +15,7 @@ description: >-
 
 
   Left click fires your gun, V pulls out a knife and E throws a grenade, while
-  the mouse wheel flips between them for a pretty full kit to carry across
-  rooftops.
+  the mouse wheel flips between them for a full kit to carry across rooftops.
 
 
   There's also a plain stone you can throw with F or right click, a nicely
@@ -30,7 +29,7 @@ description: >-
 
   Along the bottom of your screen sit a health bar, an experience bar and a
   level number that begins at 0. A small status word down there reads "quiet"
-  until the fighting kicks off, an oddly calm label for a zombie apocalypse.
+  until the fighting kicks off, a calm label for a zombie apocalypse.
 
 
   Tim_Damasc had been hoping to build a multiplayer game on SpacetimeDB for some

@@ -17,8 +17,8 @@ description: >-
   tracks it. The mouse aims, left click fires and right click zooms in.
 
 
-  Down in the lower right corner there's a harpoon gauge showing a number, which
-  starts at a pretty modest 1.
+  Down in the lower right corner there's a harpoon gauge showing a number,
+  which starts at a modest 1.
 
 
   Your score sits at the top center with a multiplier beside it, and your best
@@ -26,9 +26,8 @@ description: >-
   moves, starting with swimming, and Esc pauses the game.
 
 
-  0xPufferFish built the game to see how boids behave in Three.js, and a fish
-  hunt makes a fitting test for that. The low-poly fish move around you in
-  flocking groups.
+  0xPufferFish built the game to see how boids behave in Three.js, using a
+  fish hunt as the test. The low-poly fish move around you in flocking groups.
 play:
   url: https://cotd.graywhite.cloud
   embeddable: true

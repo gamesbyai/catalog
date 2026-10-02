@@ -6,20 +6,20 @@ description: >-
   outlast waves of enemies for as long as you can.
 
 
-  Instead of steering, you point, and the cursor marks the spot you'll teleport
-  to next. Once every second the hexagon warps there on its own, and each jump
-  ends in a full 360-degree sword spin, which makes for a clever setup where
-  moving and attacking end up being the same move.
+  Instead of steering, you point, and the cursor marks the spot you'll
+  teleport to next. Once every second the hexagon warps there on its own, and
+  each jump ends in a full 360-degree sword spin, so moving and attacking end
+  up being the same move.
 
 
   Two kinds of enemies come at you. Triangles chase you down and fall to a
-  single hit, and every kill hands you back 1 HP — a pretty tidy way to turn the
+  single hit, and every kill hands you back 1 HP, a tidy way to turn the
   weakest enemy into a snack. Pentagons shoot bullets instead, but a slash
   destroys them.
 
 
-  Powerups drop into the arena as well, and it's a bit fitting that you collect
-  them by slashing them too.
+  Powerups drop into the arena as well, and you collect them by slashing them
+  too.
 
 
   The start screen lists Warp+, Slash+ and Range+, each marked as permanent,

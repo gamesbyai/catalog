@@ -13,15 +13,15 @@ description: >-
   playable lyrics came from.
 
 
-  The panel on the left is a pretty busy one, counting the song's time against
-  its 3:43 length and filling a progress bar as it goes. It also has previous
-  and next buttons, plus readouts for sync status, level, words per minute and a
+  The panel on the left is a busy one, counting the song's time against its
+  3:43 length and filling a progress bar as it goes. It also has previous and
+  next buttons, plus readouts for sync status, level, words per minute and a
   word count. Your score and accuracy get their own box just below it.
 
 
-  The right side keeps a surprisingly close eye on your run, with a feedback
-  panel over a combo counter that feeds a multiplier starting at x1, and a
-  health bar that begins at 100%.
+  The right side keeps a close eye on your run, with a feedback panel over a
+  combo counter that feeds a multiplier starting at x1, and a health bar that
+  begins at 100%.
 
 
   Press Play to start whatever's loaded. If The Killers aren't your thing, the

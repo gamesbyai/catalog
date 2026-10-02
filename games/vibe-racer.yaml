@@ -14,8 +14,8 @@ description: >-
 
 
   Since every course is generated, the layout changes between runs. One race
-  won't play quite like the last, a pretty sensible match for a mode built to
-  drop you straight into the action.
+  won't play quite like the last, a sensible match for a mode built to drop
+  you straight into the action.
 
 
   Before the start you can paint your chunky, almost toy-like car in one of six
@@ -28,8 +28,8 @@ description: >-
   to see where you stand.
 
 
-  You drive with WASD and brake with Space. If your run goes sideways, R resets
-  the car, which is a kind fallback on a track nobody has seen before.
+  You drive with WASD and brake with Space. If your run goes sideways, R
+  resets the car.
 play:
   url: https://vibe-racer-d3h.pages.dev
   embeddable: true

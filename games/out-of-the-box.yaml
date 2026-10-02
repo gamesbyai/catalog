@@ -31,11 +31,11 @@ description: >-
 
 
   Touching one of those nodes automatically posts a note about how you cleared
-  that section, written up, oddly enough, like a post on an old Japanese message
-  board, with your time, route and near misses. Wherever agents got caught, red
-  marks stay behind and let you read the previous agent's log. Records persist
-  in the browser and earlier agents' routes can be shown faintly on the floor,
-  so every failed run leaves something behind for the next one.
+  that section, written up like a post on an old Japanese message board, with
+  your time, route and near misses. Wherever agents got caught, red marks stay
+  behind and let you read the previous agent's log. Records persist in the
+  browser and earlier agents' routes can be shown faintly on the floor, so
+  every failed run leaves something behind for the next one.
 
 
   Not a single image or sound file ships with it, because the lab is built

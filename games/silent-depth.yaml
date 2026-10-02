@@ -5,12 +5,12 @@ tagline: Hunt a convoy by sonar, fire one torpedo attack, then slip away from
 description: >-
   Every time you raise the periscope or come up to the surface, you learn more
   about what's out there, but you also get easier to spot. Your submarine
-  carries plenty of firepower but sees surprisingly little, while passive sonar
-  is how you search for the convoy.
+  carries plenty of firepower but sees little, while passive sonar is how you
+  search for the convoy.
 
 
-  Each run is a short extraction roguelite with a tidy three-step order to it:
-  you find a convoy, set up a torpedo attack and then slip away.
+  Each run is a short extraction roguelite with a tidy three-step order to it.
+  You find a convoy, set up a torpedo attack and then slip away.
 
 
   The convoy routes are procedurally generated, so you're chasing a different
@@ -25,8 +25,7 @@ description: >-
 
 
   The opening order on screen tells you to find the convoy and keep the wake
-  small, which is a nice bit of submariner shorthand for not giving yourself
-  away.
+  small, shorthand for not giving yourself away.
 
 
   The escorts come after you as soon as a torpedo's in the water, and from then

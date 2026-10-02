@@ -19,9 +19,9 @@ description: >-
   and democratic civic protocols.
 
 
-  The HUD on the left is surprisingly busy, showing your role, your agent state,
-  a round clock and the match state, which starts at round 1 of 3. The Prompt
-  Node reads CLEAN when things begin. Under that sit three meters for context
+  The HUD on the left is busy, showing your role, your agent state, a round
+  clock and the match state, which starts at round 1 of 3. The Prompt Node
+  reads CLEAN when things begin. Under that sit three meters for context
   window, corruption and final output, plus a readout of how far you are from
   the prompt.
 
@@ -35,8 +35,8 @@ description: >-
   Other tasks ask you to punch in a sequence on WASD instead.
 
 
-  The Hallucinator also gets an oddly fitting extra move for an AI saboteur, a
-  temperature spike triggered with R.
+  The Hallucinator also gets an extra move for an AI saboteur, a temperature
+  spike triggered with R.
 play:
   url: https://donpurr.github.io/clusterfall
   embeddable: true

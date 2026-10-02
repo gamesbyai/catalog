@@ -22,14 +22,14 @@ description: >-
   direction.
 
 
-  The battlefield itself is a dim, grassy arena ringed by dark walls, with a few
-  oddly blocky trees standing around.
+  The battlefield itself is a dim, grassy arena ringed by dark walls, with a
+  few blocky trees standing around.
 
 
   zahrdaniel loves the combat in Mount & Blade and wanted to rebuild it in the
   browser. The plan was to keep its directional attacks and blocks while
-  limiting the fighting to melee. The menu screen goes pretty heavy on a dark
-  red and gold palette, with a glowing title and that short controls panel.
+  limiting the fighting to melee. The menu screen goes heavy on a dark red and
+  gold palette, with a glowing title and that short controls panel.
 play:
   url: https://bloodandblade.hexpandify.com
   embeddable: true

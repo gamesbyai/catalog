@@ -4,16 +4,15 @@ tagline: Help or sabotage a shared Everest climber alongside thousands of other 
 description: >-
   One climber is inching up a snowy 3D mountain, and everyone connected gets a
   say in how it goes. Each player gets a prompt asking them to pick a side,
-  either boosting the climber toward the 8,849-meter summit or playing troll and
-  dragging them back to the bottom. One prompt even pins a made-up crime on the
-  climber, a one-star review left because the waiter looked unfriendly, which is
-  a gloriously petty reason to shove someone off Everest.
+  either boosting the climber toward the 8,849-meter summit or playing troll
+  and dragging them back to the bottom. One prompt even pins a made-up crime
+  on the climber, a one-star review left because the waiter looked unfriendly.
 
 
-  If you're the chosen climber, your panel hands you a One Step button that adds
-  0.1 meters every time you press it. The altitude gauge on the left starts you
-  at 5,000 meters in the opening view, and at a tenth of a meter per press, the
-  summit is a pretty long way off.
+  If you're the chosen climber, your panel hands you a One Step button that
+  adds 0.1 meters every time you press it. The altitude gauge on the left
+  starts you at 5,000 meters in the opening view, and at a tenth of a meter
+  per press, the summit is a long way off.
 
 
   Meanwhile a stamina bar sits over the climber's head, and it starts out full
@@ -22,8 +21,8 @@ description: >-
 
   Around the mountain, a live feed shows what players are doing, and the
   leaderboard is split into Helpers and Trolls. Giving the saboteurs their own
-  ranking is a clever touch, because it treats trolling as a real side rather
-  than just noise. There's also a hall of fame that keeps a record of climbers.
+  ranking treats trolling as a real side rather than just noise. There's also
+  a hall of fame that keeps a record of climbers.
 
 
   To get the crowd's attention, you can shout into a chat box, hit an SOS Help

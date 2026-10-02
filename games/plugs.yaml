@@ -2,7 +2,7 @@ slug: plugs
 title: PLUGS
 tagline: Plug in lamps and mix colored light to brighten seven rooms in a dark house.
 description: >-
-  PLUGS starts with almost nothing: a dark room, a single lamp, a wall outlet
+  PLUGS starts with almost nothing, a dark room, a single lamp, a wall outlet
   and a cord. Click once and you're in.
 
 
@@ -12,15 +12,15 @@ description: >-
   with the mouse, and it's all very hands-on.
 
 
-  There are seven rooms, and they're all noticeably different. Different colors,
-  different eras, different puzzle ideas. A lot of the puzzles are built around
-  colored light and how those colors mix when they overlap on the walls, so
-  you're not just trying to turn lights on — you're trying to understand what
-  the light is actually doing.
+  There are seven rooms, and they're all noticeably different. Different
+  colors, different eras, different puzzle ideas. A lot of the puzzles are
+  built around colored light and how those colors mix when they overlap on the
+  walls, so you're not just trying to turn lights on, you're trying to
+  understand what the light is actually doing.
 
 
-  The lighting itself is surprisingly detailed. It's calculated per pixel,
-  objects cast shadows, and even the dust only shows up where the light hits it.
+  The lighting itself is detailed. It's calculated per pixel, objects cast
+  shadows, and even the dust only shows up where the light hits it.
 
 
   The cords are a whole thing too. They behave like actual ropes, so they sag,
@@ -41,9 +41,9 @@ description: >-
   right direction without just handing you the answer.
 
 
-  There's a nice accessibility touch too: you can turn on bulb markings that put
-  a letter on each lit lamp, so none of the puzzles rely entirely on being able
-  to tell colors apart.
+  There's a nice accessibility touch too. You can turn on bulb markings that
+  put a letter on each lit lamp, so none of the puzzles rely entirely on being
+  able to tell colors apart.
 
 
   Progress saves in the browser. The game was designed by Grant Haffner, while

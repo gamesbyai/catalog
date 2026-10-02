@@ -22,14 +22,14 @@ description: >-
 
 
   Red medical pickups are scattered across the floor between tall, angular
-  towers. Near the edge of the arena there's a glowing green ring with a portal
-  label on it. Long slanting light cuts across the ground and throws pretty
+  towers. Near the edge of the arena there's a glowing green ring with a
+  portal label on it. Long slanting light cuts across the ground and throws
   dramatic shadows off those towers.
 
 
-  According to marssaum, the idea behind it is robots growing more powerful once
-  they're combined with AI, and a robot punching its way up to rocket launchers
-  fits that nicely. Surprisingly, the whole game lives in a single file.
+  According to marssaum, the idea behind it is robots growing more powerful
+  once they're combined with AI, and a robot punching its way up to rocket
+  launchers fits that nicely. The whole game lives in a single file.
 play:
   url: https://robot-royale.pages.dev
   embeddable: true

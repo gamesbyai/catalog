@@ -16,9 +16,9 @@ description: >-
   for a scene drawn in such spare wireframe lines.
 
 
-  Down at the bottom center, a surprisingly busy navball shows your attitude,
-  with heading, pitch and roll readouts beside it and SAS and RCS toggles
-  sitting right on the ball.
+  Down at the bottom center, a busy navball shows your attitude, with heading,
+  pitch and roll readouts beside it and SAS and RCS toggles sitting right on
+  the ball.
 
 
   There's also an auto row where you can switch between off, up and orbit. Reset
@@ -27,7 +27,7 @@ description: >-
 
 
   dom_scholz describes it as Kerbal Space Program, except what you're building
-  up there is your own AI data center, and slips in an oddly specific joke about
+  up there is your own AI data center, and slips in a specific joke about
   Cursor making a deal with SpaceX. A small music player in the corner plays a
   track called Orbit Bloom.
 play:

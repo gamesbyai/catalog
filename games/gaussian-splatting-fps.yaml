@@ -10,14 +10,14 @@ description: >-
 
 
   Up close, the scan melts into soft, blurry surfaces with smeared detail, and
-  the screen edges curve inward behind a vignette, so the place looks
-  surprisingly like a half-remembered photo rather than a modeled map.
+  the screen edges curve inward behind a vignette, so the place looks like a
+  half-remembered photo rather than a modeled map.
 
 
-  All that softness hides a pretty big headache, because splat scans are static
-  and there's no geometry in them at all. The game has to bring its own
-  collision, moving objects, navigation and rendering fixes, since the scan
-  doesn't come with any of it.
+  All that softness hides a big headache, because splat scans are static and
+  there's no geometry in them at all. The game has to bring its own collision,
+  moving objects, navigation and rendering fixes, since the scan doesn't come
+  with any of it.
 
 
   yak32 got the idea while scrolling through SuperSplat and spotting spaces that

@@ -3,14 +3,13 @@ title: MusicTetris
 tagline: Stack falling blocks while the scenery and music shift over time.
 description: >-
   In MusicTetris, both the background scene and the music change as your game
-  goes on and as time passes. Underneath that is the pretty familiar part, a
-  tall well framed in glowing cyan where you slide, spin and drop pieces to fill
+  goes on and as time passes. Underneath that is the familiar part, a tall
+  well framed in glowing cyan where you slide, spin and drop pieces to fill
   complete rows.
 
 
   A small panel in the corner keeps your score, high score and cleared lines,
-  and it also has a BPM readout starting at 100, a clever touch for a game built
-  around its music.
+  and it also has a BPM readout starting at 100.
 
 
   Your first piece is a straight bar of four cyan blocks. A faint ghost of it
@@ -24,8 +23,8 @@ description: >-
 
 
   Off to either side of the well hang big faceted purple crystals wrapped in
-  drifting specks of light, a surprisingly large helping of 3D scenery to put
-  around a stacking game.
+  drifting specks of light, a large helping of 3D scenery to put around a
+  stacking game.
 
 
   anshuldhawan001 made it as a playground for experimenting with Tone.js audio
