@@ -2,27 +2,39 @@ slug: goof-balls
 title: Goof Balls
 tagline: Switch elements and outlast rival balls in a shrinking ring
 description: >-
-  Three elements decide every collision: fire burns grass, grass soaks up water,
-  and water puts out fire. Each ball in the ring carries one of them, and you
-  can change yours with a key press. After a change your element stays fixed for
-  a moment, so a late swap is a bet you can't undo.
+  You can flip your ball between fire, grass and water whenever you want, and
+  that flip is what the whole game turns on. It happens instantly, but it locks
+  for a moment afterward, so a change made at the last second is one you're
+  stuck with.
 
 
-  The round starts in a ring that gets smaller as it goes, with you and a crowd
-  of cartoon balls with smiley faces. The aim is to be the final ball left.
-  Charge at opponents your element beats, swap to counter anyone coming for you,
-  and raise a shield when you are in trouble.
+  Each element beats one of the others in a loop. Fire burns grass, grass soaks
+  up water, and water puts out fire.
 
 
-  You can play alone against bots or set up a private room for friends, with a
-  chat to talk to them. The creator took the idea from a manga scene of two
-  masters playing rock-paper-scissors at absurd speed, and mixed it with the
-  type triangle from early Pokémon games.
+  You start in a ring packed with cheerful little balls, and the ring shrinks as
+  you go. Change to whatever counters the ball near you, rush at the ones your
+  element beats, and put up a shield when something's closing in.
 
 
-  The mouse or WASD moves your ball. Keys 1, 2 and 3 choose the element, and
-  both rush and shield can be triggered with either a mouse button or a keyboard
-  key.
+  Your goal is to be the last ball left in the ring. Because the rules are so
+  small, the game comes down to guessing what the other balls will pick and
+  committing before they do.
+
+
+  You can play alone against bots, or open a private room for friends. There's a
+  chat in there too, so you can trash talk a little.
+
+
+  The creator got the idea from a martial-arts manga they read in high school,
+  where two masters battled at rock-paper-scissors so quickly that each one
+  altered the hand shape right at the final instant. Years later they paired
+  that with the fire, grass and water triangle from the original Pokémon games,
+  which is a funny path to a ball brawl.
+
+
+  It's still being tuned and improved, and the creator is asking players for
+  feedback.
 play:
   url: https://tappinc.itch.io/goof-balls
   embeddable: false
@@ -65,7 +77,7 @@ media:
     - games/goof-balls/shot-2
 dates:
   added: 2026-09-30
-  updated: 2026-10-01
+  updated: 2026-10-02
 status: live
 provenance:
   foundVia: scout:aibgj-4

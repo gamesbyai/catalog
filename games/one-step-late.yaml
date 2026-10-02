@@ -3,25 +3,38 @@ title: One Step Late
 tagline: Guide your character while a shadow repeats your last move and risks
   falling into holes.
 description: >-
-  In One Step Late, a shadow copies your moves one step behind. It is a daily
-  logic puzzle on a grid with holes in the floor: you move your character, and
-  the shadow repeats the move you made just before.
+  You move with the arrow keys or WASD, but your shadow doesn't move with you.
+  It repeats whatever you did on the previous move, so it's always one step
+  behind, and it'll happily walk into the holes you just managed to avoid.
 
 
-  The creator states that the whole game, design and code, came from an
-  autonomous AI agent working in Claude Code. It is drawn on an HTML5 Canvas,
-  and a new puzzle arrives each day.
+  Every step you take is also a step you're setting up for your shadow, which
+  makes even a simple walk across the board a bit suspicious.
 
 
-  The catch is that the shadow can walk straight into the holes you avoid, so
-  every step has to be judged twice: once for where you land and once for where
-  your shadow lands next. Solving a level means sequencing your moves so the lag
-  works in your favor on the way to the goal.
+  Each day brings three new puzzles, split into Easy, Medium and Hard. They
+  carry par numbers of 5, 11 and 13, so you've got a target to aim for.
+
+
+  If a move goes wrong, press U to undo it or R to restart the puzzle. You can
+  also switch to other days with the < and > keys, and there's a How to play
+  button on the start screen if you want the rules first. Tap or press Space to
+  begin.
+
+
+  An autonomous AI agent designed and coded the whole thing from start to
+  finish.
 play:
   url: https://arkai.win/games/one-step-late
   embeddable: false
   platforms:
     - browser
+  controls:
+    - "Arrows / WASD: move"
+    - "U: undo"
+    - "R: restart"
+    - "< >: other days"
+    - "Space: start"
 creator:
   name: Arkai
   handle: arkai
@@ -48,7 +61,7 @@ media:
     - games/one-step-late/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-09-29
+  updated: 2026-10-02
 status: live
 provenance:
   foundVia: scout:awesome-cc0

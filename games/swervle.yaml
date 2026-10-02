@@ -2,25 +2,50 @@ slug: swervle
 title: Swervle
 tagline: Race a fresh procedurally generated 90-second route that changes every day.
 description: >-
-  Swervle is an arcade racing game built on the daily format that Wordle
-  popularized. Each day brings one fresh, procedurally generated route, and a
-  run lasts 90 seconds: steer through that day's course as well as you can
-  before the clock runs out. Tomorrow's route will be different.
+  You drive a blocky yellow car down a 90-second route, and you're racing the
+  clock from the moment the countdown ends.
 
 
-  The creator states it was built with GPT-5.6 and Claude Opus 5, and the
-  single-player game renders in the browser with Three.js.
+  The route is procedurally generated and it's new every day, which is where the
+  Wordle comparison comes from. Because it's one fresh course per date, there's
+  a Past Races button in the menu for days you missed, so you can still go back
+  to them.
 
 
-  The daily structure is the hook. Everyone gets the same route on a given day,
-  so instead of facing an endless stream of random tracks, you can return to one
-  course and try to improve on it. The 90-second length keeps each attempt
-  quick, so trying again costs little before the day's route is gone.
+  Before the start, a timer runs across the top of the screen. A speed readout
+  sits in the bottom right corner, and a small panel in the bottom left tracks
+  your checkpoint count and current gear.
+
+
+  You steer with the keys, and there's a handbrake for when a corner gets tight.
+
+
+  If a turn goes wrong, R recovers you and F restarts the run, which is handy
+  when a run is only 90 seconds long. C switches the camera, and G toggles
+  ghosts. Esc brings up the menu.
+
+
+  The menu has a leaderboard of the day's fastest times, each with a little
+  picture of that player's car. Some entries are marked as live on Twitch with a
+  watcher count, so you can see who's streaming a run.
+
+
+  There's also an Edit Vehicle option, both on the title screen and in the menu,
+  if you'd like to change the car before you race.
 play:
   url: https://swervle.com
   embeddable: false
   platforms:
     - browser
+  controls:
+    - "W / Up arrow: throttle"
+    - "A / D: steer"
+    - "Space: handbrake"
+    - "R: recover"
+    - "F: restart"
+    - "C: camera"
+    - "G: ghosts"
+    - "Esc: menu"
 creator:
   name: Swervle
   handle: swervle
@@ -50,7 +75,7 @@ media:
     - games/swervle/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-09-29
+  updated: 2026-10-02
 status: live
 provenance:
   foundVia: scout:awesome-cc0

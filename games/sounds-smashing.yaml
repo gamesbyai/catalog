@@ -2,27 +2,32 @@ slug: sounds-smashing
 title: Sounds Smashing!
 tagline: Smash blocks in time with the beat to build melodies and earn coins.
 description: >-
-  Sounds Smashing! has you break blocks in time with the music. Each smash adds
-  a note to the melody, and the closer your hit lands to the beat, the more
-  coins you earn. The blocks are voxel-style structures in an isometric
-  pixel-art setting.
+  You smash blocks in time with the music in Sounds Smashing!, and each hit adds
+  a note to the melody you're building. It's physics based, so wrecking things
+  is how you play the tune.
 
 
-  A multiplayer mode supports up to 4 players. One player creates a room and
-  shares the link, and the others join. The host picks a goal, either most
-  smashes or most coins, and one of seven arenas: Gauntlet, Grand Finale, Ten
-  Tall Towers, Towering Ascent, Sandstone Kingdom, Giraffe Jamboree or Iron
-  Giants.
+  The better your timing on each smash, the more coins you earn for it.
 
 
-  Before a match you choose a glove setup: Dual Spring, Dual Rocket, Spring +
-  Rocket or Bare Fists. Rhythm Assist and Aim Assist can each be switched on or
-  off. Rhythm Assist applies to everyone in the room, while Aim Assist applies
-  only to you. Solo play is organized into numbered worlds.
+  There's also an online mode for up to 4 players, where you create a room and
+  send friends the link. You pick whether the winner is whoever racks up the
+  most smashes or the most coins. Then you choose an arena, like Gauntlet, Ten
+  Tall Towers, Giraffe Jamboree or Iron Giants, which are pretty funny names for
+  places to wreck.
 
 
-  The creator built it over two days of nonstop work, drawing inspiration from
-  Donkey Kong Bonanza and Minecraft.
+  Before a multiplayer match starts, you also pick which gloves you're wearing.
+
+
+  The choices are Dual Spring, Dual Rocket, Spring + Rocket and Bare Fists.
+  Rhythm Assist and Aim Assist can each be turned on or off.
+
+
+  The rhythm one is the same for everyone in the room, so nobody gets a timing
+  edge over the others, while aim assist only affects you. The music is
+  microtonal, and the creator says the game came together over two days of
+  constant vibing.
 play:
   url: https://soundssmashing.com
   embeddable: true
@@ -58,7 +63,7 @@ media:
     - games/sounds-smashing/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-10-01
+  updated: 2026-10-02
 status: live
 provenance:
   foundVia: scout:vibejam-2026

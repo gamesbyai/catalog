@@ -2,22 +2,29 @@ slug: musictetris
 title: MusicTetris
 tagline: Stack falling blocks while the scenery and music shift over time.
 description: >-
-  Falling blocks drop into a tall, cyan-framed well, and you slide, rotate and
-  drop them to complete rows. The first piece is a straight bar of four cyan
-  blocks, and a faint outline at the bottom of the well marks where it will
-  land.
+  It's classic falling-block Tetris in a tall, teal-framed well, but the scene
+  and the music are meant to shift as the game goes on and time passes. A BPM
+  counter sits in the corner beside your score, and it starts at 100.
 
 
-  A panel in the corner tracks score, high score, cleared lines and BPM, which
-  starts at 100. The background scene and the music change as the game goes on
-  and as time passes. Faceted purple crystals sit on either side of the well,
-  surrounded by drifting particles.
+  You stack the pieces as they fall and clear lines, same as ever, so there's
+  nothing new to learn.
 
 
-  Left and right arrows move the piece, up rotates it, down soft drops it, and
-  space hard drops it. P pauses and M mutes, and an on-screen button switches
-  the music on or off. The creator wanted a playground for Tone.js audio and 3D
-  graphics on top of a simple mechanic.
+  Left and right arrows slide a piece, up rotates it, and down drops it slowly.
+  Space slams it straight to the bottom, and a faint outline along the floor of
+  the well shows where it's headed.
+
+
+  Two purple crystal shapes hover on either side of the well, shimmering with
+  glowing particles, and the dark backdrop behind them looks different from one
+  moment to the next. The panel up top keeps your score, your high score and
+  your lines cleared, which is handy. There's also a music button, plus P to
+  pause and M to mute.
+
+
+  The creator wanted a playground for Tone JS and 3D graphics, so they kept the
+  puzzle itself simple and familiar.
 play:
   url: https://musictetris.anshuldhawan.com
   embeddable: true
@@ -60,7 +67,7 @@ media:
     - games/musictetris/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-10-01
+  updated: 2026-10-02
 status: live
 provenance:
   foundVia: scout:vibejam-2026

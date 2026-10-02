@@ -2,27 +2,34 @@ slug: battletanks
 title: battletanks
 tagline: Fight other players' tanks in a 3D arena using cannons, missiles, and a laser.
 description: >-
-  You drive a tank around a 3D arena against other players online and pick
-  between a spray cannon, salvo missiles, or a laser. The laser works
-  differently from the rest: hold fire to build a charge, then release to shoot,
-  and the damage grows with the charge.
+  You hold the fire key to charge the laser and let go to shoot, so the damage
+  grows the longer you wait. That's what sets it apart from the other two turret
+  weapons, a spray cannon and salvo missiles.
 
 
-  The hull and turret turn separately. Steering moves the chassis, while
-  dedicated keys swing the turret left or right, with a tap for a small
-  adjustment and another key to snap it back to face forward. On touch screens a
-  left joystick drives and turns the tank, a right knob sets the turret angle,
-  and a large button fires.
+  Your tank has two things to steer. A and D turn the chassis, while Z and X
+  swing the turret on its own, and a quick tap nudges it a tiny amount.
 
 
-  A loadout panel opens mid-match, so you can change chassis, turret, mobility
-  and colors without leaving the game. The chassis list includes Colossus and
-  Vampire. A stat readout covers HP, speed, damage, fire rate and rotation. A
-  help panel with all the controls opens on H at any time.
+  C snaps the turret back to face the front, which helps when you've lost track
+  of where it's pointing.
 
 
-  The creator took the idea from Tanki Online, a browser tank game that features
-  futuristic turret weapons such as lasers and plasma cannons.
+  Tab opens a loadout panel where you swap chassis, turret, mobility and colors
+  without leaving the match. That makes sense in a multiplayer arena, because
+  you don't have to sit out to change your build. Chassis such as Colossus and
+  Vampire come with their own stats for HP, speed, damage, fire rate and
+  rotation.
+
+
+  On a phone, the left joystick drives and turns the tank. The right knob sets
+  the turret's angle directly, and a big fire button handles shooting, including
+  the hold-and-release laser.
+
+
+  The creator was inspired by Tanki Online, the browser tank game with
+  futuristic turret weapons. Press H any time to open the controls reference, or
+  Esc for settings, where you can remap keys.
 play:
   url: https://battletanks.marcosbrendon.com
   embeddable: false
@@ -67,7 +74,7 @@ media:
     - games/battletanks/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-10-01
+  updated: 2026-10-02
 status: live
 provenance:
   foundVia: scout:vibejam-2026

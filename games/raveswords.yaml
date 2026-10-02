@@ -2,25 +2,27 @@ slug: raveswords
 title: Raveswords
 tagline: Duel other players online in medieval sword combat set to dance music
 description: >-
-  Click the left mouse button to swing your sword. A nine-step tutorial runs
-  when the game opens, with prompts such as "Swing your sword" and a step that
-  asks you to press Space. A Tab button in the corner skips the tutorial.
+  Swing your sword with the left mouse button. You control a fighter in third
+  person, blade in hand, in a multiplayer sword fighting game that the creator
+  describes as Chivalry in the browser.
 
 
-  You control a sword-carrying fighter seen from behind, with a crosshair at
-  screen center and a health bar in the bottom left. A counter at the top left
-  shows how many players are in the room, and other fighters share the space. T
-  opens chat.
+  A tutorial of nine steps teaches the basics first, and you can skip it with
+  Tab if you'd rather jump in.
 
 
-  The arena is a pink, dithered room with walls covered in dense blocks of text.
-  A video screen hangs on one wall. A DJ panel on the left lets you paste a
-  YouTube link, then queue it, play it now, skip, or stop. Audio needs a click
-  to enable. A dropdown sets what the wall screen shows.
+  The music is the odd part. A Room DJ panel lets you paste a YouTube link, then
+  queue it, play it right now, skip ahead or stop it, and the video shows up on
+  a screen mounted on the wall. That suits the dance music the creator paired
+  with medieval combat.
 
 
-  The creator describes it as a multiplayer sword fighting game in the style of
-  Chivalry: Medieval Warfare, set to dance music.
+  Press T whenever you want to chat with the other players in the room, which is
+  handy because the fights are all multiplayer.
+
+
+  The arena is a pink room with walls covered in dense, scrolling blocks of
+  text, and a health bar sits in the bottom left corner.
 play:
   url: https://fight.neets.fun
   embeddable: true

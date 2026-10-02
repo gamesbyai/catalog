@@ -3,25 +3,31 @@ title: floom
 tagline: Drift through a shared canvas, plant seeds, and grow flowers alongside
   strangers.
 description: >-
-  Press play to enter a shared green field where white seeds float past. You
-  appear as a small dot with a generated name label, such as Swift Camellia, and
-  other players appear in the same space. The game describes itself as a place
-  where strangers meet by chance and produce flowers, sound and brief
-  connections.
+  Press spacebar and a "Keep a memento" window opens with a picture of the
+  meadow and a Download button, so you can save it. A date and time are printed
+  in the corner of the picture.
 
 
-  Two lines of text in the top right corner show how many of the 49 flowers you
-  have seen so far and how long remains until the meadow resets. A help button
-  sits in the top left corner.
+  It's a quiet multiplayer canvas, so you're sharing it with strangers.
 
 
-  Press spacebar to open a memento, a snapshot of the field stamped with the
-  date and time. The dialog has a download button. The bar along the bottom
-  holds three buttons: share, snapshot and sound.
+  You drift through seeds, and the flowers, sounds and moments of connection
+  come about by accident. That fits the creator's inspiration, which was how
+  people shape the world around them and the effect that has on it.
 
 
-  The creator cites the effect people have on their surroundings, and the effect
-  those surroundings have back on them, as the starting idea.
+  In the top corner a counter tracks how many of the 49 flowers you've seen, so
+  you've got something to look for besides wandering. Right under it a countdown
+  shows when the meadow resets, which means what you find now won't stay put. A
+  small name tag like Swift Camellia floats beside your dot.
+
+
+  Pretty gentle names for a crowd of strangers, which suits a place this quiet.
+
+
+  Along the bottom there's a share button, the snapshot button with its spacebar
+  label, and a sound toggle. The title screen is a painted hillside of pink and
+  orange blooms under soft clouds, with a single play button in the middle.
 play:
   url: https://floom-game.vercel.app
   embeddable: true

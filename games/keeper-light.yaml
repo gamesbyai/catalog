@@ -3,22 +3,30 @@ title: Keeper Light
 tagline: Upgrade your boat and lighthouse by day, then defend the light through
   each night's waves.
 description: >-
-  The game opens on a small green island on Day 1, in a Planning phase with an
-  8h timer at the top. A red-and-white lighthouse stands on the island, a wooden
-  boat is moored at the shore, and a keeper character waits beside a ring marker
-  with an F prompt for the Boat Yard.
+  You start on a small green island in daylight, with a red-and-white lighthouse
+  behind you and a wooden boat tied up just off the shore.
 
 
-  Daylight hours go to upgrading your boat and the lighthouse beam. A panel on
-  the right tracks stores of scrap, fuel, glass, copper and relics, along with
-  kills, a BPs counter, fuel, boat condition and the current beam type, which
-  starts as Sweep.
+  The top of the screen shows Day 1 marked as Planning, with a clock reading 8h,
+  so the daylight is a limited budget. Your job in those hours is to upgrade
+  both the boat and the lighthouse beam. Right now the beam is set to Sweep.
 
 
-  Once night falls, enemy waves escalate and the goal is to keep the lighthouse
-  from falling. A Keeper Light bar at top left starts at 1000 of 1000, and a
-  circular minimap in the bottom right corner shows the lighthouse and nearby
-  markers.
+  A panel on the right tracks your stores of scrap, fuel, glass, copper and
+  relics, and you begin with 2 fuel. Under those there's a kill counter, a
+  blueprint counter, and bars for fuel and boat health, with the boat at 100.
+
+
+  When you stand near the dock, a prompt offers the Boat Yard.
+
+
+  Once night comes, the enemy waves get tougher as they go. You're trying to
+  keep the lighthouse from falling, and its health bar in the top left starts at
+  1000.
+
+
+  A small circular radar sits in the bottom right corner. The creator has said
+  this was a first game made to finish for a jam.
 play:
   url: https://vibejam.peterrock.dev
   embeddable: true
@@ -55,7 +63,7 @@ media:
     - games/keeper-light/shot-2
 dates:
   added: 2026-10-01
-  updated: 2026-10-01
+  updated: 2026-10-02
 status: live
 provenance:
   foundVia: scout:vibejam-2026

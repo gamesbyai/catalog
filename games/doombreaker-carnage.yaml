@@ -2,26 +2,38 @@ slug: doombreaker-carnage
 title: "DOOMBREAKER: Carnage"
 tagline: Run through ten zones of demons with four guns, then beat each zone's boss.
 description: >-
-  Move with WASD, aim with the mouse, and click to fire. Each zone asks you to
-  kill every enemy on the level, then fight that zone's boss. Clear all ten
-  zones to finish the run.
+  You run through ten zones of demon-filled corridors with a timer ticking at
+  the top of the screen, so every room is a race as much as a firefight. Each
+  zone has a kill count to hit, and once you've cleared everything you face that
+  zone's boss.
 
 
-  You carry four weapons, switched with the number keys 1 to 4: pistol, shotgun,
-  chaingun and rocket launcher. Health, armor and ammo pickups are scattered
-  through the levels, and enemies get tougher as you go deeper. Space jumps,
-  Shift sprints, and the game supports strafe-jumping.
+  The levels are generated procedurally, so the layout changes from run to run.
+  A small map sits in the lower left corner, which comes in handy because the
+  screen around you is mostly shadow.
 
 
-  Levels are generated procedurally, so layouts change between runs. Each zone
-  has its own visual theme. The look is chunky pixel art with scanlines and CRT
-  effects, backed by chiptune-style audio. Pressing R restarts the run at any
-  point.
+  You start with a pistol that has infinite ammo, so you're never stuck
+  empty-handed. Three more guns wait behind it: a shotgun, a chaingun and a
+  rocket launcher, and the number keys swap between them.
 
 
-  The mouse is recommended, and the game uses pointer lock. The page marks it as
-  version 1.0 and still under development. The creator credits AI assistance for
-  the code, graphics, sounds and text.
+  Health, armor and ammo pickups are scattered around, so grab them as you go to
+  stay alive.
+
+
+  Each zone has its own look and gets harder than the last, and the bosses are
+  giant demonic monstrosities. The first zone is Hell's Antechamber, a dark, red
+  place where the demons stare at you with glowing red eyes.
+
+
+  Everything is drawn in chunky pixels with scanlines and CRT effects, and the
+  audio is chiptune-style. Movement is the classic kind, with strafing, jumping
+  and sprinting, so you can circle around enemies while you fire.
+
+
+  A mouse is recommended, and the game supports pointer lock so the cursor stays
+  put while you aim. If a run goes badly, one key restarts it.
 play:
   url: https://webxos.itch.io/doombreaker-carnage
   embeddable: false
@@ -63,7 +75,7 @@ media:
     - games/doombreaker-carnage/shot-2
 dates:
   added: 2026-10-01
-  updated: 2026-10-01
+  updated: 2026-10-02
 status: live
 provenance:
   foundVia: scout:aibgj-3

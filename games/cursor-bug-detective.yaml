@@ -2,28 +2,48 @@ slug: cursor-bug-detective
 title: Cursor Bug Detective
 tagline: Scan props on a 3D desk, decode cipher clues, and name the bug in 90 seconds
 description: >-
-  Each day brings one case on a 3D developer's desk, and a round lasts about 90
-  seconds. You play the Cursor mascot as a detective, scanning the props around
-  the desk to collect clues.
+  You're trying to name the bug, and to do that you have to collect four cipher
+  clues from a 3D developer's desk. You play a Cursor mascot turned detective,
+  and you hover the pointer over the desk while a tooltip tells you what each
+  prop is.
 
 
-  The clues arrive as ciphers, which you decode through four mini-puzzles. Once
-  the evidence adds up, you name the bug to close the case.
+  The monitor, the evidence envelope, the agents tray and the lamp are the four
+  spots that matter. Each one opens a small puzzle, and a row of four dashed
+  evidence slots in the corner is where the clues go.
 
 
-  The creator modeled the loop on daily word games, which ask for one short
-  session per day, and chose a bug hunt because finding bugs is what most
-  developers do all day. The desk was built by hand, and the mascot gets a story
-  beyond serving as a logo.
+  The desk was built by hand, with a monitor full of code, a keyboard, a
+  steaming mug, a calendar page and a glowing orange portal sign next to the
+  lamp. So you're poking around a workspace instead of a menu.
 
 
-  The creator also points to a few further games with new and retro themes to
-  explore alongside the daily case.
+  One puzzle looks like a code editor with a file called case_file.md open. A
+  sentence starts, "The case file sheet was," and you pick an ending from a
+  short list, the same way you would with an autocomplete popup, which is a neat
+  use of something developers already know.
+
+
+  Tab cycles through the suggestions and Enter accepts one. The popup also
+  nudges you to read the clue first.
+
+
+  Once you've gathered what you can, you press the Make the call button to name
+  the bug. A small scoreboard under the evidence slots has four lines labeled
+  run, word, def and eye.
+
+
+  The creator wanted a daily puzzle in the spirit of Wordle, but in 3D and about
+  hunting bugs, so a round is meant to last 90 seconds.
 play:
   url: https://bug-detective.pages.dev
   embeddable: true
   platforms:
     - browser
+  controls:
+    - "Mouse: hover over desk props"
+    - "Tab: cycle suggestions"
+    - "Enter: accept suggestion"
 creator:
   name: casper_chsieh
   handle: casper-chsieh
@@ -52,7 +72,7 @@ media:
     - games/cursor-bug-detective/shot-2
 dates:
   added: 2026-10-01
-  updated: 2026-10-01
+  updated: 2026-10-02
 status: live
 provenance:
   foundVia: scout:vibejam-2026

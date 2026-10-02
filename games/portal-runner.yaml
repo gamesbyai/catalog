@@ -3,21 +3,29 @@ title: Portal-Runner
 tagline: Run through five parallel worlds, dodging vanishing obstacles and
   leaping through portals.
 description: >-
-  The game opens on a night city street, seen from behind a blocky blue runner.
-  The score counts up in the top left, with a coin counter below it and a label
-  naming the current world, City Night. A speed bar in the top right tracks the
-  pace of the run.
+  You begin on a dark city street at night, seen from behind a blocky blue
+  runner. Yellow dashes mark the road ahead, glowing coins are scattered along
+  it, and striped yellow-and-gray barriers sit farther up. A score counter and
+  coin count sit in the top left under the area name, City Night, and a speed
+  meter fills the top right.
 
 
-  You sprint down the road, picking up yellow coins and avoiding striped
-  barriers. Some obstacles vanish before your eyes, so the track ahead cannot be
-  fully trusted, even on a route you have run before.
+  It's an endless runner, and the run is spread over five parallel worlds. Each
+  portal doesn't just repaint the background, because it drops you into a
+  different dimension with its own colors, rules and mood.
 
 
-  Portals carry you through five parallel worlds, and each one changes the
-  rules, colors and feel instead of only the scenery. A golden JAM EXIT
-  eventually pulls you into the multiverse. The creator built the endless runner
-  core on Subway Surfers and Temple Run.
+  The obstacles are the odd part, because some of them disappear right in front
+  of you.
+
+
+  The creator wanted a psychological twist so that your eyes become a
+  questionable guide, which means a run stays unpredictable even once you've
+  learned the patterns.
+
+
+  Keep running and jumping through portals until a golden JAM EXIT shows up and
+  takes you on into the multiverse.
 play:
   url: https://portal-runner.vercel.app
   embeddable: true
@@ -52,7 +60,7 @@ media:
     - games/portal-runner/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-10-01
+  updated: 2026-10-02
 status: live
 provenance:
   foundVia: scout:vibejam-2026

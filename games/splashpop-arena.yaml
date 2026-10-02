@@ -2,26 +2,32 @@ slug: splashpop-arena
 title: SplashPop Arena
 tagline: Shoot paint at bots or up to 8 friends and score points before time runs out.
 description: >-
-  In SplashPop Arena you shoot paint at opponents, and every paint hit adds to
-  your score while a match clock counts down. You can play against bots or with
-  up to 8 friends in the same match.
+  In SplashPop Arena you shoot paint at your opponents, and every hit that lands
+  scores you points. You're racing the clock the whole time, so the match is a
+  points race rather than a last-one-standing fight.
 
 
-  The menu comes first. You enter a nickname and pick a match time of 1, 5, or
-  10 minutes, with 5 selected by default. Solo starts a run against the bot.
-  Room opens a live room with a code to share, and the match kicks off once your
-  group has joined.
+  Before a match you pick how long it runs: one, five or ten minutes.
 
 
-  A find-players button and a leaderboard sit on the same menu. A privacy note
-  asks you to use a nickname rather than your real name, since the name and
-  match stats can appear on the public leaderboard.
+  You can jump into a solo run against a bot, which is handy if nobody's around.
+  Or you can open a room, which gives you a code to share, and start once your
+  crew shows up.
 
 
-  The menu art is candy-colored: dripping neon lettering over a soft cartoon
-  landscape with a smiling character covered in pastel icing. The creator took
-  inspiration from the tense duels, aim-focused gunplay, and round-based
-  competition of CS:GO.
+  Rooms hold up to 8 friends. There's also a find-players button if you'd rather
+  get matched than hand out codes, and a leaderboard for the results.
+
+
+  The creator took inspiration from CS:GO, specifically its tense duels,
+  aim-focused gunplay and round-based competitive energy. It's a funny contrast
+  with the look, since the menu is all dripping candy-colored lettering and a
+  cartoon scoop of ice cream peeking over the panel.
+
+
+  You enter a nickname before playing, and the game asks you not to use your
+  real name because your chosen name and match stats can show up on the public
+  leaderboard.
 play:
   url: https://splashpoparena.com
   embeddable: true
@@ -55,7 +61,7 @@ media:
     - games/splashpop-arena/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-10-01
+  updated: 2026-10-02
 status: live
 provenance:
   foundVia: scout:vibejam-2026

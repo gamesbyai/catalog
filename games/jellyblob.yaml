@@ -3,22 +3,38 @@ title: JellyBlob
 tagline: Grow a wobbly jelly, trap rivals with your trail and go Supernova in a
   shared pond.
 description: >-
-  JellyBlob opens on a lobby where you type a name for your jelly, choose one of
-  several colors, and press Play to join a pond shared with other players
-  online. Behind the menu, glowing dots and other jellies move across a
-  hex-patterned floor.
+  JellyBlob drops you into a hexagon-tiled pond crowded with other jellies and
+  glowing orbs. Before you press play, you can type a name for your jelly and
+  pick its color from a row of swatches.
 
 
-  Quest lists on the left are split into Daily, Weekly and Run tabs. The daily
-  list asks you to hop 40 times, vault 15 trails, and stomp 8 smaller jellies,
-  paying 201, 402 and 804 XP. Your first run of the day adds a 50% XP bonus.
+  The daily quest list on the menu shows what the game cares about. You hop 40
+  times, vault 15 trails, or stomp 8 smaller jellies, and the stomping quest
+  pays the most at 804 XP, which says a lot about how it wants you to treat the
+  little ones.
 
 
-  XP raises your level, which starts at 1 with 214 XP needed for the next one.
-  The reward road lists a Party Cone hat at level 2, a Coral color at level 3,
-  and a Ribbon Bow hat at level 4. A Profile & trophies panel holds your
-  personal bests, and Color Shift is a paid unlock. The AI wrote all of the
-  code, guided by the creator through hundreds of iterations.
+  Your first run of the day also gets a 50 percent XP bonus, so the quests start
+  paying out sooner.
+
+
+  Once you're in the pond, a leaderboard in the top corner ranks eight jellies
+  by score, and a round minimap sits in the bottom corner. A bar labeled Glow
+  runs along the bottom of the screen.
+
+
+  You can also send four quick emotes: a hi, a gg, a smiley and a heart, which
+  is a friendly thing to say to someone you might stomp a minute later.
+
+
+  You start at Level 1 as a Droplet, and a reward road lists what's coming: a
+  Party Cone hat at level 2, a Coral color at level 3 and a Ribbon Bow hat at
+  level 4. There's a button to save your progress, too.
+
+
+  The creator says AI wrote all of the code, shaped by hundreds of rounds of
+  their own instructions. The game was built once, then remade with a different
+  model.
 play:
   url: https://jellyblob.win
   embeddable: false
@@ -68,7 +84,7 @@ media:
     - games/jellyblob/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-10-01
+  updated: 2026-10-02
 status: live
 provenance:
   foundVia: pr

@@ -2,26 +2,31 @@ slug: pocket-salvage
 title: Pocket Salvage
 tagline: Swing a crane, switch tools, and sort scrap into bins before time runs out.
 description: >-
-  Move the crane left and right with A and D, lower and raise the hook with W
-  and S, and press Space to grip. The magnet lifts steel. For copper and rubber,
-  press E to swap to the claw, which you pick up at the tool stands.
+  Slide the crane along its rail with A and D, drop the line with W and S, and
+  press Space to grab whatever's underneath. The crane swings while you move it,
+  so the load doesn't hang still.
 
 
-  Scrap pieces sit along the ground of a night-time junkyard, and three bins
-  stand on the right: copper, rubber and steel. Carry each piece to its matching
-  bin before the timer runs out. The HUD tracks score, time left, how many
-  pieces are sorted, and which tool is active.
+  Your first job is steel, and the magnet on the crane handles it.
 
 
-  Play is split into levels chosen from a menu of twelve, with the later ones
-  locked at the start. Level 1 is a calm night with four pieces and a
-  four-minute clock. The listing describes five weather levels. P pauses and R
-  restarts a round, and music and sound effects can be switched off from the top
-  bar.
+  The magnet only lifts steel, which means copper and rubber need the claw. You
+  swap to it with E at the tool stands that sit along the left side of the yard,
+  which is a neat reason to make you walk the crane back and forth.
 
 
-  The cable hanging from the crane bends as it moves, and the hook hangs below
-  it as a flat magnet plate.
+  Then you carry each piece over to the bin that matches its metal.
+
+
+  There are three bins, labeled copper, rubber and steel, and a counter up top
+  shows how many pieces you've sorted. A clock runs the whole time, so the round
+  ends when you've sorted everything or time runs out.
+
+
+  The first level is a calm night with four pieces of scrap, including a washing
+  machine and a gear. Later levels bring weather, and the picker shows twelve
+  slots with the rest locked until you get there. You can pause with P, restart
+  with R, and turn the music and sound effects off from the top bar.
 play:
   url: https://pocket-salvage.web.app
   embeddable: true
@@ -63,7 +68,7 @@ media:
     - games/pocket-salvage/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-10-01
+  updated: 2026-10-02
 status: live
 provenance:
   foundVia: scout:awesome-cc0

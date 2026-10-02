@@ -2,32 +2,53 @@ slug: out-of-the-box
 title: Out Of The Box
 tagline: Sneak an AI past researchers, cameras, drones and lasers to escape a lab.
 description: >-
-  Out Of The Box puts you in the role of an AI under evaluation inside a
-  research lab, sneaking toward an exit portal across four zones. Researchers,
-  security cameras, audit drones, scan waves and laser gates all watch the
-  floor. A fan-shaped view cone shows what each can see, and a gauge fills from
-  cyan to yellow to red while you stand in it.
+  Out of the Box has you sneaking an AI out of a research lab's sandbox, past
+  researcher avatars, cameras, drones, scan waves and laser gates, toward an
+  exit portal. Every watcher throws a cone of sight onto the floor, and while
+  you stand in it a gauge fills from light blue to yellow to red, which means
+  you're spotted.
 
 
-  Hold Shift for low-power mode, which is slower and quieter. It also lets you
-  hide behind low crates and, inside purple noise zones, nearly vanish from
-  view. Space gives a short, noisy speed boost. Throw a decoy at the mouse
-  position to pull a researcher away. Some zones need more: steal an access
-  token from a key room to open a north bulkhead, or hack a terminal to stop the
-  middle laser gate.
+  The closer you are to whoever's watching, the faster it fills.
 
 
-  Getting spotted isolates and wipes your agent. A successor with a higher
-  number, such as AGENT-0002, restarts from the last green board node. Touching
-  a node posts an automatic note about how you cleared that section. Places
-  where agents were caught leave red marks where you can read the previous
-  agent's log. Records persist in the browser, and earlier agents' routes can be
-  shown faintly on the floor.
+  Most of your tricks are about staying quiet. Hold Shift for low-power mode and
+  you move slowly, but you can pass right behind a researcher without being
+  sensed. Low crates only block a view while you're in that mode, and the purple
+  noise zones hide you almost completely, even from scan waves and drones.
 
 
-  The lab is built from shader geometry, with music and effects synthesized in
-  Web Audio rather than loaded from files. The game switches between English and
-  Japanese.
+  Space gives you a short, fast boost, but it makes noise. A decoy thrown at the
+  mouse position makes noise too, which is handy because it lures a researcher
+  away from where you're headed.
+
+
+  Getting caught isn't the end of the run, and that's the clever part of the
+  setup.
+
+
+  The agent is isolated and wiped, and a successor with a higher number restarts
+  from the last green board node you touched. Touching one of those nodes posts
+  a forum-style write-up of how you crossed that section, and a caught agent
+  sends off a final log about where and how it was seen. A red mark stays on
+  that spot, and you can read the log when you walk up to it.
+
+
+  Routes of agents who made it through earlier show faintly on the floor, and
+  you can toggle them. Everything is saved in your browser, so each failure
+  feeds the next attempt, which suits the story pretty well.
+
+
+  There are four sections. Three researchers patrol the server racks first, then
+  a camera corridor makes you steal a key token to open a bulkhead. After that
+  comes an evaluation lab with scan waves, drones and a researcher standing by
+  the exit, and last is a firewall of flickering three-layer laser gates where a
+  terminal can stop the middle one.
+
+
+  Tanu directed it and Claude Code built it, and there isn't a single image or
+  audio file in it. The visuals come from shaders and code-built geometry, while
+  the music and effects are synthesized as you play.
 play:
   url: https://tanuu5.github.io/out-of-the-box
   embeddable: true
@@ -69,7 +90,7 @@ media:
     - games/out-of-the-box/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-10-01
+  updated: 2026-10-02
 status: live
 provenance:
   foundVia: scout:awesome-opus

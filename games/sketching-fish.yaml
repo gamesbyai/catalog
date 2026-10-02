@@ -2,30 +2,44 @@ slug: sketching-fish
 title: Sketching Fish
 tagline: Tap to the beat of each fish and fill a crayon sketchbook with 75 catches.
 description: >-
-  The start screen shows a crayon-drawn pond on a spiral sketchbook page, with a
-  small angler on the bank, a sun, clouds and green hills. Press Start, then
-  cast with one input. Each catch takes about 10 seconds: a ring shrinks, and
-  you click or press Space in time with the fish's beat.
+  You start on a crayon drawing of a lake in a spiral-bound sketchbook, with a
+  little angler on the bank and a big yellow Start button over the water. Below
+  it you'll find menus for your collection, a shop, achievements and personal
+  records.
 
 
-  Every fish is set to one of 11 beat patterns, and each fights in its own way.
-  Slippery ones slow the shrinking ring while the drawn line shivers. Others
-  dash, are picky, or show ghostly rings. The 75 species are stationery puns,
-  such as the Pencil Eel, Eraser Shark and Clip Anchovy.
+  There's only one button, and every fish bites to its own rhythm.
 
 
-  Flipping the sketchbook page leads from the lake to the sea and then a foggy
-  swamp. The lake holds 30 species, the sea opens after 15 lake species, and the
-  swamp opens after 18 sea species. Three legendary fish come with a pity
-  system, so they will turn up. Coins go toward rods and baits, and a golden
-  crown can be earned. There are 36 achievements, 3 collections and personal
-  records. Filling all 75 slots triggers an ending.
+  You cast, then tap along with the beat so you can hit the shrinking ring at
+  the right moment. Eleven beat patterns exist, and each fish is tied to one of
+  them, so you learn the tap-tap, tap-ta-dap feel of a fish before you land it.
 
 
-  All the art is drawn by code during play rather than loaded from image files,
-  and each of the three regions has its own music. The interface can be switched
-  between Korean, English, Japanese and Chinese. Landscape orientation is
-  recommended on phones.
+  The fish aren't all the same kind of fight, either. Some are slippery, some
+  dash, some are picky, and a few show up as ghostly rings. Slippery ones
+  deliberately slow the ring down, which is why the crayon line shivers while it
+  crawls, so you can tell it from lag.
+
+
+  All 75 fish are made from stationery, like the Pencil Eel, the Eraser Shark
+  and the Clip Anchovy, and each comes with its own joke.
+
+
+  The book fills up page by page. You start on the lake with 30 fish, then flip
+  to the sea once you've logged 15 lake species, and the foggy swamp opens after
+  18 sea species. Three legendary fish are in there too, and a pity system makes
+  sure you'll meet them.
+
+
+  Along the way you earn coins for rods and baits, plus a golden crown, 36
+  achievements and three collections. Fill every slot and there's an ending
+  waiting on the last page.
+
+
+  There are no image files at all, because the wobbly crayon lines are drawn by
+  code as you play. The creator designed it and wrote the code with Claude,
+  while Google Gemini composed the three region themes.
 play:
   url: https://hf-doodle-studio.itch.io/sketching-fish
   embeddable: false
@@ -65,7 +79,7 @@ media:
     - games/sketching-fish/shot-2
 dates:
   added: 2026-09-30
-  updated: 2026-10-01
+  updated: 2026-10-02
 status: live
 provenance:
   foundVia: scout:aibgj-4

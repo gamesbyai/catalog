@@ -3,27 +3,46 @@ title: 0 Tanks
 tagline: Fight through procedural floors in a tank, buying upgrades and beating
   armored bosses.
 description: >-
-  0 Tanks is a roguelite tank shooter played one floor at a time. You drive an
-  armored tank through procedurally generated floors and fight your way down,
-  shooting the enemies in your path as you go. Each run pushes deeper, and when
-  you start over the layout is new.
+  Every run is about getting deeper than the last one, as you drive a tank
+  through procedurally generated floors. You pick up upgrades along the way, so
+  the tank you're driving later isn't quite the one you rolled out in. There are
+  armored bosses in the mix too, which gives each push a bigger obstacle than
+  the regular enemies.
 
 
-  The top-down tank combat nods to Battle City, the classic arcade tank game,
-  with the floors drawn in 3D. The creator used Claude Code, and the Vibe Jam
-  2026 entry came 312th of 945.
+  Press Enter on the start screen and you deploy into the opening mission,
+  Gauntlet-01.
 
 
-  Upgrades carry the progression. You buy them on the way down, and the ones you
-  choose shape the tank, so each run builds toward a different setup. Armored
-  bosses guard the way forward and test whatever build you have put together by
-  then.
+  You steer with WASD and aim with the mouse, then click to fire. Shift is your
+  boost.
+
+
+  Up top you'll find Play, Armory, Intel and Settings tabs, so there's more to
+  the game than the mission itself. A bar in the corner tracks your score,
+  credits and alloy. It's a roguelite shooter, and the creator named Battle City
+  as the inspiration.
+
+
+  The look is a dark military command screen with amber lettering, which suits
+  the whole tactical-briefing idea.
+
+
+  An operator dossier on the main screen records your deepest floor, your high
+  score and your eliminations. That gives you three records to beat each time
+  you deploy.
 play:
   url: https://0tanks.com
   embeddable: true
   platforms:
     - browser
     - mobile
+  controls:
+    - "WASD: drive"
+    - "Mouse: aim"
+    - "Click: fire"
+    - "Shift: boost"
+    - "Enter: deploy"
 creator:
   name: Dhin
   handle: zerodhin
@@ -54,7 +73,7 @@ media:
     - games/0-tanks/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-09-29
+  updated: 2026-10-02
 status: live
 provenance:
   foundVia: scout:vibejam-2026

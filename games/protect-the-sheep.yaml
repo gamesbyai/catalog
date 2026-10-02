@@ -2,22 +2,31 @@ slug: protect-the-sheep
 title: Protect the Sheep
 tagline: Build towers to hold off thirty-five waves of enemies and keep one sheep alive.
 description: >-
-  Build towers with gold to stop monsters before they reach the sheep in its
-  fenced pen. You start with 100 gold, and the first tower in the bottom bar is
-  the Archer at 25 gold. A countdown launches each wave, or you can press Start
-  wave to call it early.
+  You spend gold on towers to hold off monsters that are heading for one sheep
+  in a fenced pen. The sheep has a health bar that starts at 100, and the goal
+  is to keep it alive through every wave.
 
 
-  The sheep has 100 HP, shown at the top left, and the goal is to keep it alive
-  through all thirty-five waves. There are six tower archetypes. An Upgrades
-  menu sits beside the gold counter, and plus and minus buttons change the game
-  speed. Music and sound effects each have a volume slider.
+  There are six kinds of towers and thirty-five waves, which is a decent amount
+  of ground for a game about a single sheep. You start with 100 gold, and the
+  archer, the tower shown first in the build bar, costs 25.
 
 
-  The main menu offers Play Solo, Play vs AI, Host Game and Join Game, so you
-  can also play against another player online. A short tutorial introduces the
-  sheep and the basics on first load. The creator based it on old Warcraft III
-  tower defense maps loved in childhood.
+  A countdown ticks toward the next wave, but you can hit Start wave if you'd
+  rather not wait. There's also an Upgrades button, and a speed control with
+  plus and minus buttons that starts at 1x.
+
+
+  The creator grew up loving the old Warcraft 3 tower defense maps, and that's
+  where the idea came from.
+
+
+  From the main menu you can play solo or play against an AI. You can also host
+  a game or join one, so the sheep doesn't have to be a one-person job.
+
+
+  A short tutorial introduces the sheep first, and you can skip it. Music and
+  sound effects have their own volume sliders in the corner.
 play:
   url: https://protect-the-sheep.henrikvilhelmberglund.com
   embeddable: true
@@ -54,7 +63,7 @@ media:
     - games/protect-the-sheep/shot-2
 dates:
   added: 2026-10-01
-  updated: 2026-10-01
+  updated: 2026-10-02
 status: live
 provenance:
   foundVia: scout:vibejam-2026

@@ -2,23 +2,33 @@ slug: life-is-binary
 title: Life is Binary
 tagline: Farm, hack, and hustle with other players in a pixelated multiplayer life sim.
 description: >-
-  You start in a cramped isometric apartment lined with bookshelves, monitors
-  and neon posters, where a sarcastic floating toaster named GL1TCH is your only
-  roommate. An intro slideshow of six steps sets the scene before you take
-  control of a pixel-art character.
+  You start in a cramped 14x10 foot apartment, and a short intro walks you
+  through it before you get control. The walls are covered in neon posters of
+  dead memes, and your only roommate is GL1TCH, a sarcastic floating toaster
+  with one red eye. It's an isometric pixel room packed with bookshelves,
+  monitors and a potted plant.
 
 
-  Missions arrive as pop-ups from characters such as Nova, with a title, a short
-  brief, a reward in Bits, and buttons to accept, decline or ignore. The first
-  one asks you to install a starter fuse: open the Fuse Panel, pick an empty
-  slot, and seat it to earn 25 Bits.
+  Once you're in, characters hand you missions through a pop-up. Nova's first
+  one asks you to install a starter fuse in the apartment's Fuse Panel.
 
 
-  The screen shows a day and clock readout, a level counter, a coin balance, a
-  log-in button, and an item hotbar that holds things like a wooden stick. It is
-  a multiplayer life sim with farming, hacking and hustling, and the world is
-  shared with other players online. Each mission prompt also offers a chat with
-  the character who sent it.
+  You can accept it, decline it, ignore it, or open a chat with Nova first.
+
+
+  The fuse job is pretty specific. You open the Fuse Panel, pick an empty slot,
+  and seat the fuse, and 25 Bits land in your account once the meter logs the
+  install. Nova also says you can just pocket the fuse if you'd rather keep it,
+  which is a polite way to run a tutorial.
+
+
+  Items sit in a hotbar along the bottom of the screen, and the top corner shows
+  a day and clock readout.
+
+
+  The creator describes it as a life sim where you farm, hack and hustle, with
+  every choice being a 1 or a 0. Those are the three things the game says you'll
+  be doing.
 play:
   url: https://lifeisbinary.com
   embeddable: true

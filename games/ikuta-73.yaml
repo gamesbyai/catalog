@@ -2,28 +2,34 @@ slug: ikuta-73
 title: Ikuta '73
 tagline: Mow lawns in a 1973 Tokyo summer and rest in the shade to keep your stamina up
 description: >-
-  Summer, 1973, in the hills west of Tokyo: you play a college student cutting
-  lawns for your uncle's company. In first person you push a mower through
-  yards, steering it over the grass. The game centers on taking care with the
-  work when nobody would check. A session lasts about half an hour.
+  It's summer 1973 and you're a college student pushing a lawn mower through
+  yards in the hills west of Tokyo, working for your uncle's company. You see it
+  all in first person, in a low-poly neighborhood of small houses.
 
 
-  Heat sets the rules. Direct sun wears down your stamina quickly, and standing
-  in shade brings it back, so you step out of the light when the afternoon gets
-  heavy. Your maximum stamina also shrinks slowly over the day. Neat work can
-  earn a cold drink from someone, which gives a stamina boost.
+  The sun is what you're fighting. It drains your stamina while you're out in
+  it, and shade fills it back up, so you end up planning your mowing around
+  where the shadows fall.
 
 
-  A moving sun and a day cycle carry time forward, and you can check the clock
-  at any point. A wheelie spins the mower around quickly. An optional two-stick
-  mode, which needs a dual-stick gamepad, can be switched on in settings. If the
-  game runs slowly, lower the grass density under Performance.
+  Your maximum stamina slowly shrinks as the day goes on, which means a rest in
+  the shade only gets you so far. Do a good enough job on a lawn and someone may
+  hand you something cold to drink, and that hospitality gives you stamina back.
+  It's a nice reason to mow carefully when nobody's forcing you to.
 
 
-  The look is low-poly, with Japanese houses, cicada sounds and a lens flare on
-  the title screen. It takes cues from a Murakami short story. On touchscreens,
-  the left half of the screen moves and steers, the right half turns the view,
-  and a tap grabs or uses an item.
+  The day has a clock, and the sun moves across the sky as time passes. You can
+  check the time whenever you want.
+
+
+  You walk, push and pull the mower, and steer it left or right, plus a wheelie
+  that lets you pivot fast. You also pick things up, use them and put them down
+  again. If you have a dual-stick gamepad, there's an optional two-stick mower
+  mode in the settings that works a bit like steering a Katamari.
+
+
+  If the grass makes it run slowly, you can turn down the grass density in the
+  performance settings.
 play:
   url: https://plinthcybernetics.itch.io/ikuta-73
   embeddable: false
@@ -73,7 +79,7 @@ media:
     - games/ikuta-73/shot-2
 dates:
   added: 2026-10-01
-  updated: 2026-10-01
+  updated: 2026-10-02
 status: live
 provenance:
   foundVia: scout:aibgj-4

@@ -2,22 +2,33 @@ slug: haldane-4
 title: HALDANE-4
 tagline: Descend alone beneath the Antarctic ice and uncover what waits below in ASCII.
 description: >-
-  The screen opens on a gray terminal panel labeled Operator Terminal v2.1.4. A
-  boxed briefing names HALDANE-4, a submersible exploration platform of the
-  United States Antarctic Survey, unit H4-ANT-72, dated 1972. Everything behind
-  the briefing is drawn in text characters.
+  You start at a dim operator terminal, a dark screen of percent signs, dots and
+  hash marks with a boxed header that names a submersible exploration platform
+  from a 1972 United States Antarctic survey.
 
 
-  You pilot the submersible alone on a descent beneath the Antarctic ice shelf.
-  Thrust with WASD, rotate the view with the mouse, cut the engine with Shift,
-  and switch on the light with Space. The key labels sit along the edges of the
-  terminal frame.
+  Everything is drawn in text characters, so the whole game is a grid of ASCII.
+  It's a short horror story, and you go down alone beneath the Antarctic ice
+  shelf.
 
 
-  It is a short horror story told through that descent, with AI voice-over
-  narration. The sound is generated procedurally, and the voice is the only
-  audio made another way. The whole game fits in under 5 MB, with no assets
-  beyond the code.
+  You steer with WASD for thrust and turn with the mouse. Space works your
+  light, and Shift cuts the engine, while the control hints are printed along
+  the sides of the screen so you don't have to hunt for them.
+
+
+  The unit is labeled H4-ANT-72, which is a nicely specific bit of fake
+  paperwork.
+
+
+  The sound is generated procedurally, and the one exception is an AI
+  voice-over. The creator set strict limits for this one: vibe coding only,
+  ASCII graphics, under 5MB and no other assets. Because the characters and
+  audio are all there is, they have to build the atmosphere and tell the story.
+
+
+  The frame around the screen, with its version label on top and the unit label
+  below, makes it look like old equipment you're operating.
 play:
   url: https://haldane4.denisbondare.com
   embeddable: true

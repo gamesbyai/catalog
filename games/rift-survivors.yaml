@@ -2,23 +2,35 @@ slug: rift-survivors
 title: Rift Survivors
 tagline: Fight through 100 neon floors with combos, parries, and stamina management.
 description: >-
-  The game opens in a neon lobby: a magenta grid floor with a cyan border, a
-  blocky character in the middle, and a prompt to press any key or tap to start.
-  A hint at the top says to enter the purple portal marked MISSION to descend.
-  Skill slots F, X and H sit along the bottom, and an inventory panel in the
-  corner holds 10 arrows.
+  You start in a neon lobby with a magenta grid floor, cyan walls and a small
+  blocky fighter standing in the middle. A prompt at the top tells you to walk
+  into the purple portal marked MISSION to descend, and skill buttons F, X and H
+  sit along the bottom.
 
 
-  Combat is a hack-and-slash with Demon's Souls-style handling. You attack,
-  guard and parry, dodge, and manage a stamina meter, and you can chain skills
-  together. The dungeon runs as a 100-floor cycle, with three boss types that
-  each use five to six attack patterns.
+  It's a hack-and-slash roguelike with a Demon's Souls flavor, so combos,
+  parries and stamina all matter.
 
 
-  Gear comes in rarities from Common to Legendary, and an equipment screen lets
-  you manage what you wear. The interface switches between Japanese and English
-  automatically. The creator, who once made feature phone games under a 1MB
-  limit, kept to a similar size constraint here.
+  The run is a 100-floor cycle. Three types of boss wait along the way, each
+  with five or six attack patterns, so you have to learn what's coming instead
+  of just swinging.
+
+
+  Gear comes in rarities from Common up to Legendary, the way it does in an MMO.
+  You can chain skills together as well. The corner of the screen shows an
+  inventory count and a storage count, with a stack of ten arrows already
+  listed.
+
+
+  Guard and parry share the V key, while Shift is your dodge, which makes sense
+  for a game built around stamina.
+
+
+  The creator's first job was at a small game company making games for feature
+  phones, and this one works under the same 1MB limit, which brought back
+  nostalgic memories. That's a lot of roguelike to squeeze into so little space.
+  The text switches between Japanese and English on its own.
 play:
   url: https://rift-survivors.pages.dev
   embeddable: true

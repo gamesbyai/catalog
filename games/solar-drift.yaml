@@ -3,25 +3,35 @@ title: Solar Drift
 tagline: Fly a spacecraft between planets and slingshot around a true-scale
   solar system.
 description: >-
-  Solar Drift puts you at the controls of a small spacecraft in a true-scale
-  solar system, with worlds from the Sun down to tiny Pluto. A destinations
-  panel lists each body with its distance from the Sun and its light-travel
-  time. You can jump to a body, engage light-speed travel toward it, or enter a
-  size comparison view.
+  Solar Drift has you flying a small spacecraft around a solar system, and you
+  can pick any body from a destinations list and jump straight to it. Each entry
+  shows its distance and how long light would take to cross it, so you can see
+  how far apart the worlds are.
 
 
-  The Earth entry opens Expedition 1, Earth Survey. You fly to a beacon near
-  Earth's observation shell and complete 3 scans. The route is marked 1 of 5 and
-  runs Earth, Moon, Mars, Jupiter, Saturn, with a points total shown beside the
-  task.
+  When you want to cover real ground, you press Space and the ship boosts to
+  light speed, which is the quick way across all that empty space.
 
 
-  Manual flight is active near Earth, and pressing Space boosts the ship to
-  light speed. A side panel describes the selected body, while readouts track
-  the nearest body, distance, ETA at light speed and ship speed. The theme is an
-  Artemis II mission, and a Vibe Portal marker with its distance appears in the
-  scene. The opening view shows a textured Earth with cloud cover, with the ship
-  sitting below it.
+  There's also an expedition to work through, which starts with an Earth survey.
+  You fly to a beacon near Earth's observation shell and finish three scans
+  before a bonus timer runs out, earning points as you go. The route has five
+  stops: Earth, the Moon, Mars, Jupiter and Saturn.
+
+
+  A size comparison mode lines everything up at true scale, from tiny Pluto to
+  the blazing Sun, which is a neat way to see how the planets stack against each
+  other.
+
+
+  A readout panel shows your nearest body, your distance from it, your ETA at
+  light speed, your ship speed and your flight mode. That's handy when you're
+  crossing this much space.
+
+
+  Selecting a body also brings up a short description, like Earth's weather,
+  cloud cover and blue limb glow. A Show Controls button lists the keys, and the
+  creator built the whole thing around the Artemis II mission.
 play:
   url: https://solar.chikocorp.com
   embeddable: true
@@ -60,7 +70,7 @@ media:
     - games/solar-drift/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-10-01
+  updated: 2026-10-02
 status: live
 provenance:
   foundVia: scout:vibejam-2026

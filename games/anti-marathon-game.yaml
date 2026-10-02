@@ -3,24 +3,32 @@ title: Anti Marathon Game
 tagline: Play a Madrid pigeon dodging runners, energy gels, and selfie-stick
   influencers.
 description: >-
-  Push the on-screen joystick to steer a pigeon down a closed-off Madrid street.
-  A red Jump button sits at the bottom right. The aim is to survive the marathon
-  while runners, splattered energy gels and influencers with selfie sticks fill
-  the street.
+  Drag the on-screen stick to steer, and tap the red Jump button to hop. You're
+  a street pigeon in Madrid, and a marathon has just taken over your road.
 
 
-  The view is tilted top-down over a low-poly avenue with a yellow center line
-  and red barriers along both edges. Spectators stand on the grass verges, and
-  parked cars sit beside the buildings. A distance counter in the top left
-  starts at 0.0 KM and rises as you move, with a segmented bar beneath it. A red
-  number in the top right also climbs. Pause and M buttons sit at the right
-  edge.
+  Runners, energy gels and influencers waving selfie sticks are all in your way,
+  so the whole job is staying alive while they pour down the street. It flips
+  the usual race, because you're the one in the way of everybody who's running.
 
 
-  The creator says the idea was to flip the viewpoint of an urban marathon, with
-  its runners wearing expensive GPS watches and its runfluencers, and to play as
-  an ordinary pigeon on Calle Alcalá. The creator calls it satire aimed
-  affectionately at running culture.
+  The camera looks down from above at an angle, so you can see the wide road
+  ahead of you. A yellow dashed line runs down the middle, red barriers sit
+  along both edges, and spectators crowd the grass beyond them.
+
+
+  Trees, parked cars and flat-colored rooftops fill the sides, which gives the
+  street a toy-town look.
+
+
+  A counter in the top left shows the kilometers you've covered, starting from
+  zero at the start line. That's a fitting score for a marathon. A red number in
+  the top right climbs as you go, and a pause button sits under it.
+
+
+  The creators set it on Calle Alcalá and call it a satirical love letter to
+  running culture. They poke fun at the €800 GPS watches, the runfluencers
+  filming themselves and the gels splattered across the pavement.
 play:
   url: https://antimarathongame.sgty.es
   embeddable: true
@@ -60,7 +68,7 @@ media:
     - games/anti-marathon-game/shot-2
 dates:
   added: 2026-10-01
-  updated: 2026-10-01
+  updated: 2026-10-02
 status: live
 provenance:
   foundVia: scout:vibejam-2026

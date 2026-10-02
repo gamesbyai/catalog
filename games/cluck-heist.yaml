@@ -2,21 +2,37 @@ slug: cluck-heist
 title: Cluck Heist
 tagline: Rampage as a chicken through a cartoon version of your own neighborhood.
 description: >-
-  You play a chicken on a top-down map built from a real address. A start screen
-  asks for a handle and a location. Leave the location blank and you land on a
-  random suburban block. The streets come from OpenStreetMap data and are drawn
-  in a cartoon style.
+  You're a menacing chicken seen from above, loose in a cartoon neighborhood.
+  You peck, poop, steal stuff and haul the loot back to your nest before the
+  humans catch on.
 
 
-  You peck, poop, scream, and throw eggs while grabbing items and carrying them
-  to your nest. A row of wanted stars at the upper left tracks the attention you
-  draw from the humans, and a score counter sits at the upper right.
+  The map comes from somewhere real. Type in your address and OpenStreetMap data
+  gets rebuilt as a cartoon version of your area, so you can rampage through a
+  street you actually know. Leave it blank and you get a random suburban block
+  instead.
 
 
-  Under the stars are an HP bar, a food bar, and counters for carried items,
-  eggs out of three, and a cat posse out of three. An address bar at the top
-  loads a new location. Zoom buttons and a small music player with a track
-  selector are also on screen.
+  Before you start, you pick a handle. It can be up to 24 characters of letters,
+  numbers, spaces, underscores, hyphens or periods.
+
+
+  You've got more moves than a chicken should. You can peck, eat, grab and drop
+  things, throw eggs, scream, and sprint when you need to get away.
+
+
+  The panel on the left keeps track of your bird. There's a wanted rating in
+  stars, which fits a chicken that steals, plus a health bar, a food bar, two
+  item counters and a cat posse count that starts at 0 of 3. Your score sits in
+  the top corner next to zoom and view buttons.
+
+
+  A little music player in the lower corner has track buttons and a link to the
+  soundtrack on Spotify.
+
+
+  The creator made it for the fun of it, aiming for the most ridiculous game
+  they could think of. A wanted level on a chicken shows they meant it.
 play:
   url: https://cluckheist.cates.fm
   embeddable: true
@@ -61,7 +77,7 @@ media:
     - games/cluck-heist/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-10-01
+  updated: 2026-10-02
 status: live
 provenance:
   foundVia: scout:vibejam-2026

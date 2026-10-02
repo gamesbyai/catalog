@@ -2,22 +2,40 @@ slug: rooftop-rumble
 title: Rooftop Rumble
 tagline: Blast rival neighbors off flooded rooftops into shark-filled water.
 description: >-
-  The start screen asks for a name and offers Singleplayer, Host Private Match
-  and Find Public Match. After that you pick a mode and a cosmetic hat, then
-  drop onto a low-poly neighborhood of red and teal rooftops. You fight with a
-  leaf blower, and the aim is to blast rivals off the roofs into the water.
+  You land on a title screen over a blurry view of tilted red and teal rooftops,
+  with a short story about a leaf blower war that clogged the drains and flooded
+  the streets. You type a name, then pick singleplayer, hosting a private match,
+  or finding a public one.
 
 
-  Battle Royale lasts until everyone else has taken a swim, so the last player
-  standing wins. Deathmatch runs on a timer, with respawning enabled, and the
-  most kills when time runs out takes it. King of the Ridge, where you hold the
-  center ridge to score points, is marked as frozen for multiplayer.
+  After that you get a mode screen with just three choices on it.
 
 
-  Besides the leaf blower, you can jump between roofs, trigger a bird attack and
-  use emotes. The water is patrolled by mutated goldfish called Gutter Sharks. A
-  stats bar tracks your wins and kills. Hats unlock through them: Top Hat after
-  1 win, Propeller at 10 kills, Pilon at 20 and Crown at 50.
+  Battle Royale has you surviving until everyone else has taken a swim, while
+  Deathmatch goes by most kills when the timer runs out, and you respawn along
+  the way. King of the Ridge, where you hold the center ridge for points, is
+  marked frozen for multiplayer, so you can't pick it right now.
+
+
+  Your weapon is a leaf blower, and the whole idea is shoving rivals off the
+  roofs into water patrolled by mutated goldfish the creator calls Gutter
+  Sharks. That's a funny way to settle a property dispute.
+
+
+  On top of blowing people around, you can jump, send a bird to attack, and use
+  emotes.
+
+
+  There's a row of hats above the modes, and your record decides which ones you
+  get. Green Cap is yours from the start, Top Hat comes after one win, Propeller
+  after 10 kills, Pilon after 20, and Crown after 50, which gives the kill count
+  a purpose beyond bragging. Your wins and kills sit at the top of the screen so
+  you can see how close you are.
+
+
+  The creator wanted something instantly funny and easy to jump into, and a
+  flooded neighborhood where you settle a dispute by blasting your neighbor into
+  the water fits that.
 play:
   url: https://rooftop-rumble.fun
   embeddable: false

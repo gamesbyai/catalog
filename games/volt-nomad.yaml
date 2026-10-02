@@ -3,31 +3,42 @@ title: VOLT NOMAD
 tagline: Click to damage mechanical beasts, spend charge on gear trees, and
   steal their cores.
 description: >-
-  You control a lone automaton far below ground, facing a mechanical beast. Each
-  manual command hits the enemy and produces charge, which you spend on upgrades
-  across five gear trees. Over time, drones and automatic weapons take over the
-  clicking.
+  Click, or tap Space, to give a manual command. Every one hits the machine in
+  front of you and also earns CHARGE, which you spend on upgrades.
 
 
-
-  Six beasts can be fought in any order, and each follows its own combat rule.
-  Defeating one lets you inherit its core, which feeds into synergies with your
-  build. Beating any three of the six leads to a quick ending.
-
-
-
-  Players who want more can go back for the remaining beasts, a second abyssal
-  boss called ARCH SINGULARITY, and a final confrontation with three forms below
-  the world engine. The gear trees hold 86 nodes. Gatling and rail mutations are
-  among the weapon options, and five OVERLIMIT systems can run at once.
+  You play a lone recovery robot heading down into a world engine, and you hunt
+  mechanical beasts one at a time. There are six, and each has its own rule, so
+  the build that beats one won't automatically beat the next. Gearmaw breaks its
+  armor on every twelfth click, for example, while Vaultback opens its shell as
+  your CHARGE hits milestones.
 
 
+  Your upgrades live in five connected gear trees. They cover manual damage,
+  drones, gatling and rail weapons, and the cores you take from fallen beasts,
+  which is a lot of nodes to chew through since there are 86 of them.
 
-  There is no game over. Losing is not punished; the task is to find a build
-  whose damage outpaces what each fight demands. Clearing everything unlocks a
-  true ending cinematic and an artwork archive. Text is in English and Japanese.
-  The creator states that Codex wrote the code, PixelLab made the pixel art, and
-  Suno produced the music.
+
+  You pick the order of the hunts yourself, and nothing forces a sequence on
+  you.
+
+
+  Beat any three beasts and you can challenge a normal boss for the quick
+  ending. If you want more, the other beasts are still there, along with a
+  second abyssal boss called Arch Singularity and a final signal below the
+  engine. The world engine fights in three phases, and the last confrontation is
+  optional and has three forms.
+
+
+  There's no game over, which is a kind choice for a game about damage races. If
+  you lose ground, you just rework your build until it can outpace what the boss
+  demands.
+
+
+  Your weapons, CHARGE and cores carry across every hunt, and the game
+  autosaves. Takahiro Saeki directed it with OpenAI Codex handling the code and
+  balancing, and it supports mouse, touch, keyboard and gamepad, in English or
+  Japanese.
 play:
   url: https://tsgamestudio.itch.io/volt-nomad
   embeddable: false
@@ -71,7 +82,7 @@ media:
     - games/volt-nomad/shot-2
 dates:
   added: 2026-10-01
-  updated: 2026-10-01
+  updated: 2026-10-02
 status: live
 provenance:
   foundVia: scout:aibgj-4

@@ -3,27 +3,32 @@ title: "Sludge Corp: Origins"
 tagline: Grow an alien biomass from a petri dish into a company that buys the
   solar system.
 description: >-
-  An orange blob sits in a sealed underground lab, and you play it. As Subject
-  Alpha, you click to gather Biomass, then spend it in the Splicer on biological
-  assets, starting with wriggly hairs and acidic maws, that keep producing
-  income without clicks.
+  You play an alien blob called Subject Alpha, escaping a classified underground
+  facility by feeding on everything around you. It starts as a clicker where you
+  spend Biomass on wriggly hairs and acidic maws, which then bring in Biomass on
+  their own.
 
 
-  Extracted DNA permanently changes your body. In the Breach, you breed Siege
-  Spores, which are expendable units that attack the facility's blast doors
-  while you look after the core. Getting through those doors takes you to the
-  surface.
+  The jokes are pure office-speak, so eating the world gets described as
+  aggressively synergizing.
 
 
-  The Digester works as a gamble: you feed large piles of spare Biomass into the
-  core and may get permanent artifacts back. On the surface, the Market lets you
-  sell your own flesh for USD and spend it on buying the planet, with the solar
-  system as the final target.
+  Spend DNA to mutate your body for good, which is how you get closer to apex
+  predator. You can also breed expendable Siege Spores and send them at the
+  facility's blast doors while you look after the core.
 
 
-  The tone is dark corporate humor, with office jargon applied to a monster
-  eating everything. The code, procedural audio and design logic were built in
-  collaboration with AI.
+  Then there's the Digester, which works like a gambling machine. You shove
+  millions of spare Biomass into the core and hope it gives back a permanent
+  artifact, and the game says those artifacts can break it wide open.
+
+
+  Once you reach the surface, the Market lets you sell off your own flesh for
+  USD. That money goes toward buying the planet.
+
+
+  The creator describes the whole thing as escalating from a petri dish to a
+  hostile takeover of the solar system, and it's played in the browser.
 play:
   url: https://vibeaxis.itch.io/sludge-corp-origins
   embeddable: false
@@ -62,7 +67,7 @@ media:
     - games/sludge-corp-origins/shot-2
 dates:
   added: 2026-09-30
-  updated: 2026-10-01
+  updated: 2026-10-02
 status: live
 provenance:
   foundVia: scout:aibgj-2

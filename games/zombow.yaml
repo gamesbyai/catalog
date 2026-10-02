@@ -2,25 +2,43 @@ slug: zombow
 title: Zombow
 tagline: Shoot arrows at an endless zombie horde and keep moving to survive.
 description: >-
-  Zombow is a browser-based 3D archery survival game. Zombies spawn without end,
-  and the only weapon is a bow. A run comes down to staying alive: you move
-  around the arena, line up shots, and thin out the horde before it closes in.
+  You're an archer seen from behind, standing in a low-poly grassland dotted
+  with trees, bushes, rocks and a banana palm. The bow is all you've got, and
+  zombies keep heading your way, so you shoot while you keep moving.
 
 
-  The game leans on atmosphere. Thick fog limits how far you can see, and
-  spatial audio helps place threats around you, so the tension comes as much
-  from what you can't see as from the zombies on screen. The pacing takes cues
-  from classic arcade survival shooters, with quick, high-pressure rounds.
+  The mouse aims and the left button looses the arrow, so every shot is
+  something you line up yourself.
 
 
-  The creator built it with Cursor and Three.js, describing the process as vibe
-  coding. The audio is described as AI-generated, and the stated goal was a
-  frightening horde experience that runs entirely in the browser.
+  WASD walks you around and Space jumps. The scroll wheel zooms the camera,
+  which is a sensible thing to have when you'd rather pull back and see what's
+  coming, or move in tight to line up one shot.
+
+
+  The zombies don't stop spawning, so there's never a moment where the field is
+  truly clear.
+
+
+  Your health bar sits in the top left and starts at 100. The current wave
+  number is at the top center, while your kill count sits in the top right.
+
+
+  The creator took inspiration from old-school arcade shooters about surviving a
+  crowd, and wanted to see that rush work in a browser. Most of the effort went
+  into fog and sound made with AI, so threats are meant to be placed around you
+  in space. They vibe coded the whole thing from scratch.
 play:
   url: https://zombow-game.vercel.app
   embeddable: true
   platforms:
     - browser
+  controls:
+    - "WASD: move"
+    - "Space: jump"
+    - "Mouse: aim"
+    - "Left mouse button: shoot"
+    - "Scroll wheel: zoom camera"
 creator:
   name: sandman_sh
   handle: sandman-sh
@@ -50,7 +68,7 @@ media:
     - games/zombow/shot-2
 dates:
   added: 2026-10-01
-  updated: 2026-10-01
+  updated: 2026-10-02
 status: live
 provenance:
   foundVia: scout:vibejam-2026

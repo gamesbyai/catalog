@@ -2,25 +2,32 @@ slug: fishing
 title: Fishing
 tagline: Sail the open sea, cast lures for fish and spend coins on new lures.
 description: >-
-  Steer a boat across open water with WASD or the arrow keys, then hold Space to
-  charge a cast and release it to throw the lure. Longer holds send the lure
-  farther. Hold R to reel it back toward the boat, and cast again once it
-  arrives.
+  Hold Space to charge a cast, then hold R to reel the lure back to the boat.
 
 
-  A radar in the top left marks nearby fish as yellow dots, and the HUD beside
-  it shows speed in knots, heading, and the number of fish left. The tips panel
-  notes that fish are attracted to moving lures.
+  You steer a small boat across open water with the arrow keys or WASD, and the
+  fish are out there with you. A round radar in the corner shows yellow dots for
+  nearby fish, so you can point the boat toward them instead of sailing blind.
+  The readout above it tracks your speed, your heading and how many fish are
+  around.
 
 
-  Catches earn coins, shown in a counter at the top of the screen. Spend them at
-  the lure shop on new lures, and press 1 to 4 to switch between the lures you
-  own. You start with a soft lure.
+  The longer you hold Space, the farther the lure flies. Once it's back at the
+  boat, you cast again.
 
 
-  The camera follows behind the boat in third person. Floating platforms with
-  large signs sit on the water, and a controls panel on screen lists the keys
-  and fishing tips.
+  Fish are drawn to moving lures, so reeling is more than a way to get your lure
+  home.
+
+
+  A coin counter sits at the top of the screen, and you spend those coins on new
+  lures at the shop button next to your lure slot in the bottom left. You start
+  with a fish-shaped soft lure in slot one, and the number keys 1 to 4 switch
+  between lures.
+
+
+  Big signs reading Vibe Code Zone sit on platforms out on the water, which is a
+  funny thing to run into at sea.
 play:
   url: https://fishing.lureconcept.com
   embeddable: true
@@ -63,7 +70,7 @@ media:
     - games/fishing/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-10-01
+  updated: 2026-10-02
 status: live
 provenance:
   foundVia: scout:awesome-cc0

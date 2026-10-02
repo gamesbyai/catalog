@@ -2,23 +2,33 @@ slug: emojibeats
 title: EmojiBeats
 tagline: Guess pop song titles from emoji clues in a pixel-art arcade music quiz.
 description: >-
-  Each puzzle shows emojis standing in for a pop song title, and you guess the
-  song. The game forgives small spelling mistakes, so an answer doesn't have to
-  be typed perfectly. The song list draws on pop music the creator grew up with.
+  You get a string of emojis and have to work out which pop song title they
+  stand for. The songs are the pop the creator grew up with, so the game leans
+  on nostalgia. It's dressed like an old arcade cabinet, with chunky pixel
+  lettering and a neon grid behind the menu.
 
 
-  Players who would rather talk than type can switch on voice mode and solve any
-  puzzle by saying the answer out loud.
+  Typos won't sink you, which is a kind touch in a quiz about song titles.
 
 
-  The mode select screen lists Free Practice, labeled casual with no pressure.
-  The leaderboard at the top of the start screen has separate Speed Run and
-  Combo Run tabs. Each ranks players by points and finishing time, and a link
-  opens the full list.
+  The creator isn't a native English speaker, so small spelling slips get
+  forgiven instead of marked wrong. And if you'd rather sing than type, a voice
+  mode lets you solve any puzzle by saying the answer out loud.
 
 
-  The look is 8-bit arcade: a pixel font, a neon grid backdrop, a row of retro
-  game icons, and an insert-coin prompt above the start button.
+  The menu starts with Free Practice, labeled casual and no pressure. Above the
+  mode picker sits a leaderboard panel with Speed Run and Combo Run tabs, and
+  the rows show rank, name, points and finishing time. A button under the rows
+  opens the full leaderboard.
+
+
+  The title screen even says insert coin and press start, which is a funny bit
+  of cabinet theater for a browser game.
+
+
+  Since answers are normally typed, saying them aloud opens the game to people
+  who'd rather skip the keyboard. Paired with the forgiving spelling, it keeps
+  the puzzle about knowing the song.
 play:
   url: https://emoji-beats.vercel.app
   embeddable: true
@@ -55,7 +65,7 @@ media:
     - games/emojibeats/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-10-01
+  updated: 2026-10-02
 status: live
 provenance:
   foundVia: scout:vibejam-2026

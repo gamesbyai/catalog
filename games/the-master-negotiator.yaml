@@ -2,32 +2,43 @@ slug: the-master-negotiator
 title: The Master Negotiator
 tagline: Haggle with AI characters who remember past deals, buying low and selling high.
 description: >-
-  A retro CRT monitor frames the screen. One screen asks "What do they call
-  you?" and takes a name or alias that is shown on your profile. Another is a
-  demo-mode tutorial hosted by Victor Hale, an arrogant CEO character in a
-  monogrammed hoodie.
+  You start on a pixel-art CRT monitor, where an arrogant CEO named Victor Hale
+  offers to walk you through buying and selling.
 
 
-  The tutorial is split into four chapters and runs on the actual game
-  interface. Victor invites you to click the action buttons, starting with "Show
-  me the buy flow", and explains what each one does. A back button lets you
-  retry a step, and a separate option skips the tutorial.
+  The tutorial runs four chapters in a demo mode that uses the real game screen.
+  You click the action buttons to try them, he explains what each one does, and
+  a back button lets you redo a step. You can also skip it if you'd rather
+  figure things out yourself.
 
 
-  The game itself is haggling: buy low, sell high, and talk your way to a better
-  price against AI-driven characters. Those characters remember how you treated
-  them in earlier deals. A voice mode lets you speak during negotiations, and
-  multiplayer adds PvP betrayal contracts.
+  After that it's a haggling sim where you buy cheap and sell high by talking
+  your way into good deals. An AI plays the people across the table, so you're
+  negotiating in conversation instead of picking from fixed offers.
 
 
-  The creator built it to gamify negotiation, so that people who find social
-  situations hard can practice the skill before facing a real deal.
+  There's a voice mode too, so you can do your haggling by talking out loud
+  instead of typing.
+
+
+  The characters hold grudges, which is a funny thing to build into a trading
+  game. If you burn one of them, they remember it next time you meet. There's
+  also a multiplayer mode with betrayal contracts, where you're up against other
+  players.
+
+
+  The creator made it so shy people could practice negotiating without getting
+  scammed in real life. Before you begin, it asks what name you want on your
+  profile.
 play:
   url: https://the-master-negotiator.vercel.app
   embeddable: true
   platforms:
     - browser
     - mobile
+  controls:
+    - "Mouse click: choose action buttons and replies"
+    - "Back button: retry a tutorial step"
 creator:
   name: prathampunmiya
   handle: prathampunmiya

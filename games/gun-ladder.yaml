@@ -2,22 +2,31 @@ slug: gun-ladder
 title: Gun Ladder
 tagline: Fight in a first-person arena and score the most kills in five minutes.
 description: >-
-  Whoever scores the most kills before the 5-minute clock runs out wins the
-  round. You enter a name, press Play, and spawn in a first-person arena where
-  every other player is a target.
+  A round lasts five minutes, and whoever has the most kills when the clock runs
+  out wins.
 
 
-  Each spawn hands you a random weapon. The roster has 11: pistol, shotgun, SMG,
-  assault rifle, sniper, rocket launcher, rail gun, minigun, flamethrower,
-  grenade launcher and katana. The start screen lists them, each tagged in its
-  own color.
+  You run around a first-person arena shooting other players, and each time you
+  spawn the game hands you a random weapon. So you can't settle into a favorite
+  gun, which keeps every respawn a bit of a gamble.
 
 
-  Move with WASD, jump, slide, aim with the mouse and fire with the left button.
-  R reloads. Click inside the game to lock the mouse for aiming, and press Esc
-  to release it. A Copy Link button on the start screen copies the game's link.
-  The creator built the format from fond childhood memories of shooters like
-  this.
+  The pool is wide: pistol, shotgun, SMG, assault rifle and sniper, plus a
+  rocket launcher, rail gun, minigun, flamethrower, grenade launcher and even a
+  katana. Whatever you draw is what you fight with until you respawn.
+
+
+  Besides running and shooting, you can jump and slide around the arena.
+
+
+  You type a name and press play, then click the screen to lock the mouse for
+  aiming. Press Escape whenever you want the cursor back. There's also a
+  copy-link button on the title screen, which makes it easy to send the game to
+  a friend.
+
+
+  The creator built it because of good childhood memories of this kind of
+  shooter.
 play:
   url: https://gun.doppelshift.de
   embeddable: true

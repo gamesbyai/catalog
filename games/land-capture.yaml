@@ -3,23 +3,32 @@ title: Land Capture
 tagline: Fight alongside your team to claim more of a shared island than four
   rival teams.
 description: >-
-  You play a small blocky character on an island seen from above, on one of five
-  color teams: red, blue, green, yellow, or purple. The teams compete for the
-  island's land, and each starts with an equal 20% share. A timer sits in the
-  top left corner.
+  You play a blocky little character on a round island that's split between five
+  color teams: green, red, purple, blue and yellow. Your team's color covers the
+  ground it holds, and the idea is to take more of the island than anyone else.
 
 
-  On the title screen you enter a name, then pick Solo, Online, or Private Room.
-  Each team holds six players. As you move, a strip of your team's color trails
-  behind you. Brown blocks sit scattered across the island and the surrounding
-  water.
+  You pick a name and then choose Solo, Online, or a Private Room, which is
+  handy when you'd rather play with a specific group.
 
 
-  A factions panel lists each team's player count and land percentage. A
-  leaderboard shows every player's score, kills, and capture percentage. A
-  circular minimap shows the island as a pie split by team color. A bar at the
-  bottom shows your score, your kills, and your rank within your team. The
-  creator wanted to make a fun multiplayer game.
+  Every team starts with six players, and every team starts with an equal 20
+  percent of the land. A faction panel in the corner tracks each team's share as
+  it changes, while a pie-chart minimap in the lower left shows the whole island
+  at once.
+
+
+  The tagline says claim, hold, dominate, which sums up the job pretty well.
+
+
+  A leaderboard lists every player with a score, a kill count and a capture
+  percentage, so you can see who's taking ground and who's taking out other
+  players. A strip at the bottom keeps your own score, kills and rank within
+  your team in view.
+
+
+  A countdown clock sits in the top corner, and winning the island is what feeds
+  the leaderboard. Civax made it, and the stated aim was a fun multiplayer game.
 play:
   url: https://landcapture.up.railway.app
   embeddable: true
@@ -55,7 +64,7 @@ media:
     - games/land-capture/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-10-01
+  updated: 2026-10-02
 status: live
 provenance:
   foundVia: scout:vibejam-2026

@@ -2,26 +2,33 @@ slug: croaks
 title: CROAKS
 tagline: Aim and fire at rival frogs in a turn-based artillery battle.
 description: >-
-  The title screen shows a pixel-art swamp with armed frogs and a menu: Find
-  Opponent, Vs AI, Survival, a Daily challenge with a countdown, and Customize.
-  A banner advertises 21 weapons. First-time players get an offer of a short
-  tutorial with a passive AI opponent and unlimited ammo.
+  The first screen is a swampy pixel-art pond with a big green CROAKS logo, and
+  you pick how to play from there. You can find an opponent, play against an AI,
+  try survival, take the daily challenge, or customize your frogs.
 
 
-  Matches are turn-based artillery between two frog teams on a side-view
-  landscape of dirt hills. You take turns blowing up the other side, and the
-  last frogs standing win. A round timer runs at the top, with a health bar for
-  each team.
+  The creator grew up on Worms and wanted those memories back, so this is the
+  same idea with frogs.
 
 
-  Number keys 1 to 9 pick a weapon, and Tab swaps to another frog on your team.
-  A Skip button ends your turn. After you fire, a short retreat phase lets you
-  move your frog clear. The weapon bar groups the arsenal into Direct, Fuse /
-  Cluster, Special and Utility.
+  Your team of frogs faces theirs, and you take turns blowing up the other side
+  until only one team has frogs left standing. After you fire, a short retreat
+  lets you move clear, which is handy when whatever you just launched is about
+  to go off. You can swap which frog you control, and you can end your turn
+  early with the skip button.
 
 
-  The creator played Worms as a kid and wanted to bring those memories back with
-  frogs in place of worms.
+  There are 21 weapons, sorted into direct, fuse and cluster, special, and
+  utility groups in a tray along the bottom of the screen. You pick one with the
+  number keys.
+
+
+  A health bar for each team sits at the top next to a countdown clock.
+
+
+  If it's your first visit, a short tutorial promises you'll learn the basics in
+  about 90 seconds. Your opponent is passive and your ammo is unlimited there,
+  so you can try things out without anyone fighting back.
 play:
   url: https://croaks.cc
   embeddable: true

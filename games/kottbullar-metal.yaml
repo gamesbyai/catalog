@@ -3,22 +3,31 @@ title: KÖTTBULLAR METAL
 tagline: Survive a 15-minute mosh pit fueled by death metal versions of IKEA
   product names.
 description: >-
-  KÖTTBULLAR METAL gives you 15 minutes in a mosh pit and one job: still be
-  standing when the clock runs out. It is survival action with a clock, and
-  failure has a specific outcome: you become a Köttbullar, the meatball of the
-  title.
+  Köttbullar Metal puts you in the middle of a death-metal show, where you
+  control the singer and the goal is to last 15 minutes in the mosh pit. If you
+  don't, you become Köttbullar, which is a funny fate to threaten someone with.
 
 
-  The joke sits at the center: odd Swedish-style furniture names from a
-  home-goods catalog, treated as brutal death metal lyrics. Made with Claude
-  Code, it came 22nd of 945 entries at Vibe Jam 2026 and took home the jam's
-  Funniest Game award.
+  The whole joke is the lyrics, and the game commits to it completely.
 
 
-  The mix is loud and absurd, flat-pack humor over heavy music, with action,
-  RPG, simulation and musical elements all thrown into the pit. It is
-  multiplayer online, and friends can join the pit from a phone or a desktop
-  browser.
+  They're built from odd IKEA-style product names, because those names sound
+  brutal enough for death metal. The title screen even bills it as NOTIKEA
+  presenting.
+
+
+  Besides surviving, you can dance with the moshers, who fill the screen as a
+  pixel-art crowd packed below a stage with a band and colored lights. There's
+  also a mastery journal on the title screen that tracks 33 secrets, all of them
+  still locked when you start.
+
+
+  Those secrets are about the band, so the journal gives you something to chase
+  besides the clock.
+
+
+  The game asks for a quick sound check before you start, and it suggests
+  headphones. That makes sense for something where the music is the point.
 play:
   url: https://kottbullar-metal.vercel.app
   embeddable: true
@@ -55,7 +64,7 @@ media:
     - games/kottbullar-metal/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-09-29
+  updated: 2026-10-02
 status: live
 provenance:
   foundVia: scout:vibejam-2026

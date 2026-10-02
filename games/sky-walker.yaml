@@ -3,26 +3,35 @@ title: SKY WALKER
 tagline: Keep your balance on a tightrope above a neon city while storms and
   wind push you off.
 description: >-
-  A tightrope stretches over a neon-lit cyberpunk city, and a walker crosses it
-  while you keep a balancing pole centered. Press W or Up once to start. After
-  that the walker moves forward on his own, so the only job left is staying
-  upright.
+  You're a high-wire walker out over a neon cyberpunk city, and the only thing
+  you do is keep the balancing pole centered while storms and gusts shove you
+  sideways. Tap W or Up once to set off, because after that he keeps walking on
+  his own. That leaves your hands free for steering the balance with A and D or
+  the left and right arrows.
 
 
-  Use A and D or the left and right arrows to correct your balance. Storms and
-  unpredictable winds push against you, and the weather turns more violent as
-  you advance. The first stage is labeled Level 1: Calm.
+  The walking itself isn't your job, which is a neat trick, since all your
+  attention goes to the one thing that matters.
 
 
-  The screen tracks distance walked in meters along with your best distance, a
-  heart icon, the current stage, and a live wind speed reading. A leaderboard
-  button sits beside the start button. The city behind the rope is generated
-  procedurally, with dark towers and red and cyan lighting.
+  Up top you'll see the stage name, and it starts at Level 1: Calm. The storms
+  get more violent as you go, so that name reads like a polite warning that the
+  wind won't stay friendly.
 
 
-  The creator drew on the tension of real high-wire walkers and built the game
-  around one simple mechanic, keeping the pole centered, with a deliberate lean
-  toward frustrating difficulty.
+  A wind speed readout sits in the corner so you can see what the weather is
+  doing. Next to it, the distance counter keeps your current run and your best
+  so far, and there's a heart beside it.
+
+
+  The city behind the wire is generated procedurally, a dark skyline lit in red
+  and teal.
+
+
+  The creator was chasing the nerve-racking feel of real high-wire walkers and
+  says they like extremely challenging, frustrating games, which makes the whole
+  setup make sense. There's a leaderboard too, so you can compare your distance
+  with other players.
 play:
   url: https://sky-walker.xyz
   embeddable: true
@@ -62,7 +71,7 @@ media:
     - games/sky-walker/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-10-01
+  updated: 2026-10-02
 status: live
 provenance:
   foundVia: scout:vibejam-2026

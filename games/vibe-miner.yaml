@@ -2,20 +2,31 @@ slug: vibe-miner
 title: Vibe-Miner
 tagline: Dig deeper, fight enemies, and return to the surface to upgrade.
 description: >-
-  The run starts on the surface at 0 m depth. A pixel-art miner stands on a
-  strip of dirt next to a gap, and a shop building sits at the left edge. The
-  HUD shows a health bar at 100, a fuel bar at 30, a points counter, a money
-  total and a backpack with 0 of 10 slots used.
+  You start on the surface at 0 meters, standing on a strip of dirt with a
+  little shop on the left. Your health bar reads 100, and beside it there's an
+  orange gauge with a fuel icon, set at 30. Below you is a stretch of dark
+  pixel-art soil waiting to be dug.
 
 
-  The goal is to dig down through a side-view 2D map, fight the enemies you meet
-  and collect resources. Then you return to the surface to upgrade and head
-  deeper. A depth meter tracks how far down you have gone.
+  A hotbar along the bottom has six slots, and you begin with a pickaxe and a
+  grapple. The other four are empty, so there's room to carry more as you go.
 
 
-  A six-slot hotbar runs along the bottom of the screen. It holds a pickaxe in
-  slot 1 and a grapple tool in slot 2, and the other four slots start empty. The
-  main menu also has a leaderboards button.
+  Your backpack only holds ten items, so you'll be coming back up often.
+
+
+  The loop is simple: dig down, fight the enemies you meet, and pick up
+  resources, which is why the pack counter sits right next to your money. Then
+  you head back up to the surface and spend what you found at the shop on
+  upgrades, so the next trip can go deeper.
+
+
+  A depth readout and a points counter sit at the top of the screen, and the
+  title menu has a leaderboard.
+
+
+  The creator describes it as a 2D vertical mining game, in the spirit of miner
+  games and Minecraft.
 play:
   url: https://vibe-miner.xyz
   embeddable: true

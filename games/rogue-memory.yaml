@@ -3,29 +3,41 @@ title: Rogue Memory
 tagline: Crawl through a deleted AI's mind, recovering memories and escaping the
   Architect.
 description: >-
-  You are GHOST.EXE, an AI that was deleted and survives as a fragment, walking
-  a first-person raycast maze built from its own memory. Every run generates a
-  new map, and the run goes through five layers, from memory banks down to the
-  system kernel.
+  You play GHOST.EXE, an AI that got deleted and survived as a fragment, and you
+  creep through the ruins of your own mind in a first-person view with retro
+  raycast graphics. Every run builds a new map, so you can't memorize the
+  corridors.
 
 
-  Each layer asks for the same job: find the glowing key fragment, which unlocks
-  the exit, then reach the exit to go deeper. Your integrity meter is your
-  health. Echo chambers drain it slowly, traps cost a lot, and enemies cost
-  more. Avoiding a fight is often an option.
+  Each level hides a glowing key fragment, and grabbing it unlocks the exit that
+  takes you down to the next layer. There are five layers, going from broken
+  memory banks to the system kernel, where the Architect who ordered your
+  deletion is waiting.
 
 
-  Combat is turn-based, with three choices: attack, scan, or retreat. A scan
-  exposes an enemy's weak point and strengthens your next hit. Nine enemy types
-  include patrollers, sight-based chasers, attackers that escalate, parasites
-  that heal themselves, and the Architect at the bottom. Chasers head for where
-  they last saw you, so breaking line of sight shakes them.
+  You don't have to fight everything. Running is often smarter.
 
 
-  More than 25 memory logs tell the story as you collect them, and one of three
-  endings depends on how many fragments you gathered before escaping. The start
-  screen offers difficulty levels and a top-runs list showing score, cause of
-  death, level, fragments, kills, and steps.
+  When you do fight, it's turn-based: you can attack, scan, or retreat. Scanning
+  shows an enemy's weak spot and makes your next hit stronger, which gives you a
+  reason to spend a turn looking before swinging.
+
+
+  Nine enemy types behave differently, from patrollers to ones that chase on
+  sight and ones that heal themselves. Enemies spot you by line of sight and
+  head for the last place they saw you, so breaking that line is how you shake
+  them.
+
+
+  Your integrity is the thing to watch, because echo chambers drain it slowly,
+  traps hit hard, and enemies hit harder.
+
+
+  The story comes in recovered memory logs, more than 25 of them, which explain
+  who you were and why the deletion was signed. How many you've collected by the
+  time you escape decides which of three endings you get. There are also
+  difficulty levels, and the see-through view only works on Easy, which is a
+  neat way to tie help to the easier setting.
 play:
   url: https://quantumcodemonk.itch.io/rogue-memory
   embeddable: false
@@ -65,7 +77,7 @@ media:
     - games/rogue-memory/shot-2
 dates:
   added: 2026-09-30
-  updated: 2026-10-01
+  updated: 2026-10-02
 status: live
 provenance:
   foundVia: scout:aibgj-1

@@ -2,25 +2,37 @@ slug: shell-breaker
 title: Shell breaker
 tagline: Bounce a ball off a paddle to smash data nodes across eight cyberpunk levels
 description: >-
-  The screen shows a neon, rain-soaked city under green digital rain, with CRT
-  scanlines and a green-and-amber palette. You slide a paddle, called the deck,
-  along the bottom and launch a ball, called the ghost, into a field of data
-  nodes.
+  Slide your paddle left and right with the arrow keys, A and D, or the mouse,
+  then press Space or click to launch the ball. It's a brick breaker in the
+  Breakout and Arkanoid mold, and the paddle is called a deck while the ball is
+  called a ghost.
 
 
-  The goal is to destroy every node across 8 levels, each harder than the last.
-  Some nodes are reinforced and take two hits. Others are explosive and set off
-  chain reactions in the nodes around them.
+  Your job is to wipe out every data node across eight stages. The rows of
+  blocks in the first stage are teal, green and amber, and they sit over falling
+  green code and a rainy neon skyline.
 
 
-  Power-ups add extra balls, widen the paddle or slow the ball. Chaining hits
-  builds a combo, and the game tracks your score and a high score. Impacts bring
-  particles, screen shake and ball trails, with sound effects synthesized in the
-  game.
+  The look comes from the 1995 Ghost in the Shell film, so you get a
+  phosphor-green and amber palette with CRT scanlines on top. Particles, screen
+  shake and ball trails sit on top of that, and the sound effects are
+  synthesized.
 
 
-  The creator describes the look as inspired by the 1995 Ghost in the Shell
-  film, and lists the AI disclosure as AI assisted, covering code.
+  Not every node goes down in one hit. Reinforced ones need two hits, and
+  explosive ones set off a chain reaction, which makes them handy for clearing a
+  clump in one go.
+
+
+  Power-ups come in three kinds: multi-ball, a bigger paddle and a slower ball.
+
+
+  A combo system feeds the score, and the game keeps a high score for you to
+  chase. The eight stages get harder as you go.
+
+
+  Press P to pause and M to turn the sound on or off. From the menu, H opens the
+  how-to-play screen, and Space or a click restarts after a run ends.
 play:
   url: https://gunz101.itch.io/shell-breaker
   embeddable: false
@@ -60,7 +72,7 @@ media:
     - games/shell-breaker/shot-2
 dates:
   added: 2026-10-01
-  updated: 2026-10-01
+  updated: 2026-10-02
 status: live
 provenance:
   foundVia: scout:aibgj-3

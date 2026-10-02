@@ -3,27 +3,43 @@ title: IdleWorlds
 tagline: Train a character in a text-based online RPG that keeps progressing
   while you're away.
 description: >-
-  The game opens on a green text-and-button dashboard. A guest character starts
-  at Combat level 1 in Zone 1, Greenwake Den, with 120 coins and stats of ATK 4,
-  DEF 2 and HP 41. Under Skill Actions, each skill has its own button and level
-  bar. Fight Rats gives 4 XP and Mine Copper gives 8 XP.
+  You start on a dark green dashboard as a guest character in Zone 1, Greenwake
+  Den, with skill rows stacked down the left: Combat, Mining, Alchemy and more.
+  Each row has a big button, like Fight or Mine, and an inventory with filter
+  tabs sits on the right.
 
 
-  Fight Rats lists a recommended ATK 7 and DEF 3 and suggests crafting a sword
-  first. The zone panel states the target for the next zone: ATK 14 and DEF 8,
-  or level 5 in any skill. Zones and Next Zone buttons sit beside it.
+  It's a text-based MMORPG meant for checking in now and then.
 
 
-  Gear, materials, consumables and drops go into an inventory with category tabs
-  and a search option. Market, Leaderboards and Village tabs sit beside the main
-  Game tab. The header tracks XP, attack and defense potions, and a daily boost
-  adds 20% XP to Alchemy, Jewelcrafting and Mining.
+  Your character keeps progressing even when you're offline, which is the whole
+  point. Each skill has its own level and XP bar, so you pick what to train and
+  come back later.
 
 
-  The character keeps progressing while you are offline, so play is built around
-  short check-ins. Loot can be rare, and the economy runs on players trading
-  with each other. A guest account can be converted in Settings to unlock mail,
-  the forum and permanent sign-in.
+  The rows tell you what you're missing. Fighting rats lists a recommended
+  attack and defense and nudges you to craft a sword, while the potion row says
+  which materials you still lack. Potion slots for XP, attack and defense sit at
+  the top, and a daily XP boost covers a few skills.
+
+
+  There's a Next Zone button too, with a target shown right beside it.
+
+
+  The target is a set of attack and defense numbers, or level 5 in any skill, so
+  one well-trained skill gets you there.
+
+
+  Other players are a big part of it. Market and Leaderboards tabs sit beside
+  the main screen, the economy is player-driven, and there's rare loot. World
+  chat scrolls by, and shared world bosses, some solo and some raids, give a
+  timed XP buff when they're beaten.
+
+
+  Work orders ask you to turn in things like rat tails or copper boots for gold
+  and XP. The creator built it out of frustration with idle games that got
+  paywalled, bloated or abandoned, and it's free in the browser. A guest account
+  can be converted in Settings to unlock mail, a forum and permanent sign-in.
 play:
   url: https://idleworlds.com
   embeddable: false
@@ -62,7 +78,7 @@ media:
     - games/idleworlds/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-10-01
+  updated: 2026-10-02
 status: live
 provenance:
   foundVia: scout:vibejam-2026

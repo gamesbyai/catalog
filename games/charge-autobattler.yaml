@@ -3,32 +3,50 @@ title: Charge! AutoBattler
 tagline: Draft units from a shop, set their deployment, and watch the armies
   fight on their own.
 description: >-
-  You build an army by drafting from a pool of 30 different units, then set
-  where each one is deployed. Once the battle starts, the fighting runs by
-  itself and you watch it play out.
+  You build a cavalry army from a shop of five units, then watch it fight the
+  enemy on its own. Nothing gets steered once the battle starts, so every real
+  decision happens before the first charge.
 
 
-  Units pick targets automatically and use abilities whenever they come off
-  cooldown. Melee units advance and charge once enemies are in range. Ranged
-  units fire at targets in range and try to kite away until their ammo runs out,
-  then charge in. Morale matters: low morale makes a unit retreat, and none at
-  all makes it rout.
+  You begin with 17 gold and 3 lives. Click a unit and a side panel lays out its
+  stats, like troop count, health, morale and speed, plus its weapon, armor,
+  mount, formation, rarity and a special ability. That's a lot of detail for one
+  little card.
 
 
-  Between fights, the shop offers rarer units more often the further you get.
-  Armies built around shared culture and weapon traits earn synergy bonuses. You
-  also earn interest that scales with the lives you have lost. Several other
-  stat mechanics sit underneath these systems.
+  If nothing in the shop suits you, you can reroll it. There's also a checkbox
+  to challenge the battle, which gives the enemy a 25% bigger budget but pays
+  you 4 extra gold and a challenge counter if you win.
 
 
-  The creator says items and formations were cut before the jam deadline. The
-  code was written by Claude, the music was made with Suno, and the pictures
-  were made with Civitai. The soundtrack does not loop.
+  Once the fight begins, units pick their own targets and use abilities whenever
+  they're off cooldown. Melee units advance and charge when they get in range.
+  Ranged units shoot and try to kite away until their ammo runs out, and then
+  they charge in too.
+
+
+  Morale matters because a unit with low morale retreats, and one with none
+  routes. So a strong-looking army can still fall apart.
+
+
+  Armies that share culture and weapon traits get synergy bonuses, which gives
+  you a reason to plan a build instead of grabbing whatever's strongest. The
+  shop also offers rarer units more often the further you get.
+
+
+  Losing lives earns you interest that scales with how many you've lost, so a
+  bad round doesn't leave you with nothing.
+
+
+  Claude wrote the code in TypeScript, the music came from Suno and the pictures
+  from Civitai. Items and formations didn't make it in before the deadline.
 play:
   url: https://id107.itch.io/charge-autobattler
   embeddable: false
   platforms:
     - browser
+  controls:
+    - "Mouse: draft, buy and place units"
 creator:
   name: ID107
   handle: id107
@@ -59,7 +77,7 @@ media:
     - games/charge-autobattler/shot-2
 dates:
   added: 2026-10-01
-  updated: 2026-10-01
+  updated: 2026-10-02
 status: live
 provenance:
   foundVia: scout:aibgj-4

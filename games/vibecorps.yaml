@@ -3,26 +3,38 @@ title: VibeCorps
 tagline: Type prompts, grow a startup, and guide it from solo founder to
   acquisition target.
 description: >-
-  Type on the keyboard to fill a code buffer, and the typing earns money. The
-  first screen shows a code file and a progress bar labeled "vim main.js" that
-  counts to 60. Your cash and MRR are at $0, and a valuation bar starts at $0 of
-  $100.0K.
+  You're working your way from solo founder to acquisition target, and the
+  valuation bar at the top shows how far you've got, from $0 toward $100.0K. You
+  start with a stock laptop and a code editor that wants you to type.
 
 
-  The first purchase on the code tab is a Mechanical Keyboard for $80. It raises
-  output from 1 to 2 characters per keypress and makes prompts type 2.0 times
-  faster. Agents are hired from the F5 tab, and a panel on the right lists them.
-  It starts empty, with the account on a Free plan of 50 requests.
+  Mash the keys and fake source code fills the buffer, so it doesn't matter what
+  you type.
 
 
-  Five tabs run along the top: Code, Tickets, Market, GPU and Org. Sell and Test
-  percentages sit in a slider on the left. A news ticker runs along the top, and
-  a log at the bottom records events. A Next Vibe button sits in the top corner.
+  The money goes into upgrades. The first one is a mechanical keyboard for $80,
+  which doubles the characters per key, so your prompts land twice as fast.
+  That's a pretty satisfying first purchase for a game about typing.
 
 
-  The creator frames the run as going from solo founder to AI-powered
-  acquisition target. They say it draws on the evolution of coding and their own
-  experience in startups.
+  Next you hire agents, because the panel on the right tells you to head to the
+  F5 tab to buy your first one. The tagline sums up the idea: you type the
+  prompts and the agents type the code.
+
+
+  Your plan starts out as Free with 50 requests, which is a funny limit for
+  someone chasing a buyout.
+
+
+  Around the editor there's a lot going on. A monthly revenue readout sits
+  beside the valuation, sell and test sliders on the left start at 100% and 0%,
+  and tabs cover code, tickets, market, GPU and org. A few are greyed out at the
+  start.
+
+
+  A news ticker runs startup-world headlines along the top, and a log at the
+  bottom reports what the system is up to. The creator drew on the evolution of
+  coding and their own time in startups.
 play:
   url: https://vibecorps.pages.dev
   embeddable: true
@@ -64,7 +76,7 @@ media:
     - games/vibecorps/shot-2
 dates:
   added: 2026-10-01
-  updated: 2026-10-01
+  updated: 2026-10-02
 status: live
 provenance:
   foundVia: scout:vibejam-2026

@@ -3,21 +3,26 @@ title: TimeCrime
 tagline: Spot the impossible object in a 360° historical scene, then guess where
   and when.
 description: >-
-  Each round places you inside a 360° historical scene with one object that
-  could not exist in that time. Look around the panorama, spot the out-of-place
-  item, then guess where and when you are to repair the timeline. The opening
-  scene is the Moon, with a lunar lander, Earth in the sky and a phone on a
-  tripod.
+  You look around a 360° historical scene for the one object that shouldn't be
+  there, because a time traveler has planted a single impossible thing in each
+  one. Once you spot it, you guess where and when the scene is set, which is how
+  you repair the timeline. So it's part hidden-object search and part history
+  quiz.
 
 
-  A run is five rounds with 45 seconds on each. The start screen offers a Daily
-  Rift, labeled with the date, and a Random Run. No login is needed.
+  A run is five rounds, and each round gives you 45 seconds. You can start the
+  Daily Rift or choose a Random Run, and there's no login in the way, so you
+  just press start.
 
 
-  The game combines hidden-object scanning with history trivia. You have to
-  notice what feels wrong in the scene before you guess the place and era. The
-  creator says the aim was for players to scan a scene and notice anomalies, not
-  just recall facts.
+  The title screen sits over a moon scene with a lunar lander and Earth hanging
+  in the black sky. A phone on a tripod stands in the dust off to the right,
+  which looks pretty odd beside a lander and shows the kind of mismatch you're
+  hunting for.
+
+
+  The creator wanted you to scan a scene and notice what feels wrong, instead of
+  only guessing facts from a question.
 play:
   url: https://timecrime.vercel.app
   embeddable: true
@@ -53,7 +58,7 @@ media:
     - games/timecrime/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-10-01
+  updated: 2026-10-02
 status: live
 provenance:
   foundVia: scout:vibejam-2026

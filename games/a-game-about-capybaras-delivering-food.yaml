@@ -3,21 +3,35 @@ title: A Game About Capybaras Delivering Food
 tagline: Drive capybaras around a cozy open world delivering food without
   toppling the fruit stack.
 description: >-
-  You play a capybara on a scooter with a red delivery box strapped to the back,
-  working as a food courier in a cozy open world. The job is to accept orders
-  and deliver them as fast as you can.
+  You're a capybara on a scooter with a red delivery box strapped to the back,
+  and every order you pick up adds fruit and other food to a stack that rises
+  above you like a tower.
 
 
-  Food stacks up above the box as you collect it. The title screen shows a tower
-  of noodle cups, milk cartons, bubble tea and other items, and the goal is to
-  keep that tower standing so nothing falls before the order arrives.
+  You accept orders the way a delivery app hands them out, then race to drop
+  them off as fast as you can. The stack is the catch, because if you let it
+  fall, the food goes with it. It's an open world, so you pick your own route
+  between pickups and customers.
 
 
-  The setting is a city with hills, trees, street lamps and apartment buildings.
-  The creator, a former developer on a food delivery app, says the buildings,
-  apps and outdoor areas all carry the capybara theme. The menu offers online
-  and offline play, settings and a stats screen. Music, sound effects and 3D
-  rigging came from separate AI tools.
+  The title screen shows how silly the stack gets: a noodle cup, a milk carton,
+  a slab of meat and a boba-style drink, all balanced on top of each other.
+  That's a lot of lunch for one rodent.
+
+
+  The setting is cozy and a bit odd, with a hill covered in greenery, street
+  lamps, white apartment buildings, and a giant orange gate in the distance.
+
+
+  The creator used to work as a developer on a real food delivery app, so the
+  idea was to recreate that familiar experience with capybaras in every part of
+  it. Buildings, apps and outdoors all follow the theme, which is a funny amount
+  of commitment to one joke.
+
+
+  From the start screen you can play online or offline, and there's also a stats
+  page and a settings menu. Claude Code wrote the code, while other AI tools
+  handled the music, sound effects and 3D rigging.
 play:
   url: https://capybara-vibejam26.leocoout.dev
   embeddable: true
@@ -55,7 +69,7 @@ media:
     - games/a-game-about-capybaras-delivering-food/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-10-01
+  updated: 2026-10-02
 status: live
 provenance:
   foundVia: scout:vibejam-2026

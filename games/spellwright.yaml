@@ -3,21 +3,35 @@ title: Spellwright
 tagline: Type spell ideas and fight rival wizards in a multiplayer arena with
   physics-driven magic.
 description: >-
-  In Spellwright you write your own spells. It is a multiplayer wizard arena
-  where, instead of picking from a fixed list, you type a prompt describing what
-  you want to cast, and an AI model generates the spell on the spot. Then you
-  fight rival wizards with it.
+  You fight in a wizard arena, and instead of choosing spells from a list, you
+  write a prompt and an AI builds the spell for you. The magic is
+  physics-driven, so things get chaotic when spells hit each other and the
+  arena.
 
 
-  The creator's goal was a game powered fully by language model inference at run
-  time, built with Claude Code on Three.js to run in mobile browsers too. In
-  Vibe Jam 2026 it came 117th of 945. Because spells come from whatever players
-  type, the results are chaotic and hard to predict.
+  The title screen calls it "Infinite Spells", and that's a fair name for a game
+  where you write every spell.
 
 
-  Then the physics takes over. Each spell plays out in a physics-driven arena
-  fight, and when effects collide, the simulation adds its own disorder to
-  whatever the model produced.
+  The creator wanted to see whether a game could run entirely on language model
+  inference while it's being played. That's why every spell begins as a sentence
+  you typed yourself.
+
+
+  Before a match you pick a map from four. Desert has mesa-strewn dunes, and
+  Grassland is a forested arena with hills and props, so both give you terrain
+  to work with.
+
+
+  The two flat maps are open, empty ground meant for sandbox and craft testing,
+  which is a considerate place to see what a new prompt does before you take it
+  into a fight.
+
+
+  The menu also has a saved spells screen, a community section and a settings
+  page. Saved spells makes sense when each one came from your own wording,
+  because you'd want to keep the good ones, and there's a Discord link on the
+  title screen too.
 play:
   url: https://spellwright.xyz
   embeddable: true
@@ -54,7 +68,7 @@ media:
     - games/spellwright/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-09-29
+  updated: 2026-10-02
 status: live
 provenance:
   foundVia: scout:vibejam-2026

@@ -2,20 +2,31 @@ slug: ride-tales
 title: Ride Tales
 tagline: Choose any place on Earth and drive through quests and hidden treasures.
 description: >-
-  The first screen shows a low-poly white hatchback parked on a coastal road,
-  with blue sea on one side and pale apartment blocks and rounded trees on the
-  other. A row of buttons sets the time of day: morning, day, sunset, night or
-  now. A Next button moves on.
+  You start on a road running past the sea, with a small white hatchback parked
+  in front of you. Before driving anywhere you choose a time of day, either
+  morning, day, sunset, night or now, and then press Next.
 
 
-  Before driving, you pick a spot anywhere on Earth and drop in. The tagline on
-  the title screen describes the game as driving, playing and exploring the real
-  world, and the arrow keys steer the car.
+  The trees are round and chunky, and apartment blocks climb a green hill, all
+  in a low-poly look.
 
 
-  The creator describes an open world with quests, hidden treasures and
-  legendary rides. They say it combines their love of travel with open-world
-  driving games like GTA, so you can roam and discover places from home.
+  You can drop yourself onto any place on the planet and drive around from
+  there. Quests are scattered across the map, treasures are tucked away for you
+  to find, and there are famous vehicles to track down, so the driving has
+  reasons behind it.
+
+
+  The creator loves travel and has a soft spot for open-world driving games.
+
+
+  They name GTA as the kind of game they enjoy, so this one aims to bring that
+  kind of roaming to real locations, right from your own home.
+
+
+  Before the drive begins, a screen shows the four arrow keys and tells you
+  they're for driving. That's all you need to get moving, which is handy when
+  the map is this big.
 play:
   url: https://ridetales.lumaris.works
   embeddable: true
@@ -55,7 +66,7 @@ media:
     - games/ride-tales/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-10-01
+  updated: 2026-10-02
 status: live
 provenance:
   foundVia: scout:vibejam-2026

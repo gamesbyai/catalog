@@ -2,20 +2,30 @@ slug: forest-escape
 title: Forest Escape
 tagline: Find seven blue flowers in a dark forest while spirits chase you.
 description: >-
-  A dark forest hides seven blue flowers, and spirits roam it while you search.
-  The goal is to collect all seven without being caught by a spirit. A counter
-  in the top left shows how many flowers you have collected out of seven.
+  You're alone in a dark forest with nothing but a flashlight, looking for seven
+  blue flowers while spirits hunt you down.
 
 
-  Move with WASD, ZQSD or the arrow keys, and look around with the mouse. Press
-  F or Space to toggle the flashlight. Flowers are only visible while the
-  flashlight is on, and spirits can't see you while it is off.
+  The flashlight is the whole game, because the flowers only show up when it's
+  on. But the spirits can't see you when it's off, so you keep switching between
+  searching and hiding.
 
 
-  A battery meter in the top left starts at 100% and tracks the flashlight's
-  charge. If the battery runs out, you lose. A pause button sits in the top
-  right corner. The title screen also has share and credits buttons, plus links
-  to app store versions.
+  The flashlight runs on a battery, and that's a problem you can't ignore.
+
+
+  If it runs out, you lose, which means you can't just sit in the dark forever
+  waiting for the spirits to wander off. The battery meter sits in the top
+  corner next to a counter that tracks how many flowers you've picked, out of
+  seven.
+
+
+  You win by collecting all seven without a spirit catching you.
+
+
+  You walk with WASD, ZQSD or the arrow keys and look around with the mouse. F
+  or Space toggles the flashlight, so one hand stays on the movement keys while
+  you decide whether to light up or go dark.
 play:
   url: https://escape.alexandre-grisey.fr
   embeddable: true
@@ -53,7 +63,7 @@ media:
     - games/forest-escape/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-10-01
+  updated: 2026-10-02
 status: live
 provenance:
   foundVia: scout:awesome-cc0

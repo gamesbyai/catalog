@@ -3,25 +3,42 @@ title: Overthrow
 tagline: Battle other players in a physics-driven king of the hill arena to hold
   the top score.
 description: >-
-  Overthrow is king of the hill with physics. You fight other players in an
-  arena to take the top spot and hold it, knocking rivals around while defending
-  your position, and the player with the highest score comes out ahead.
+  You steer a small round character up a hill alongside other players, and the
+  closer you stay to the peak, the more points you pick up. A scoreboard in the
+  corner lists everyone's points, with a crown beside whoever is ahead.
 
 
-  The creator drew on Super Mario Party and aimed for a similar charming feel,
-  so the tone is casual and whimsical rather than grim. Using Cursor and
-  Three.js, they turned an idea they had carried for a while into a finished
-  Vibe Jam 2026 game, and it plays on phones as well as desktop.
+  Space gives you a boost, and that's how you shove rivals off the slope.
 
 
-  The action is fast, with a bit of strategy on top: the question in every round
-  is when to hold your ground and when to push the challengers out of the way.
+  A boost bar near the bottom of the screen tells you when it's ready again, so
+  you're not guessing. Powerups are scattered around for you to grab, and
+  they're there to give you an edge.
+
+
+  A countdown under the scoreboard title shows how much of the round is left.
+  When somebody loses the top spot, a banner announces that they've been
+  overthrown, which is a grand word for getting bumped down a hill. The top left
+  names the current map and the one coming next.
+
+
+  Those maps are Bliss, a green hill, and Olympus, a red desert slope.
+
+
+  Wins are tallied on a separate leaderboard, so there's a reason to come back
+  after a single round. You can type a name before you join or leave it blank.
+  The creator had wanted to build something casual and charming ever since
+  playing Super Mario Party, and describes the battles as physically accurate.
 play:
   url: https://overthrow.gg
   embeddable: true
   platforms:
     - browser
     - mobile
+  controls:
+    - "WASD / arrows: move"
+    - "Space: boost and knock others off"
+    - "Click: focus mouse and look around"
 creator:
   name: forkexecwait
   handle: forkexecwait
@@ -50,7 +67,7 @@ media:
     - games/overthrow/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-09-29
+  updated: 2026-10-02
 status: live
 provenance:
   foundVia: scout:vibejam-2026

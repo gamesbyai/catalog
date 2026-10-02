@@ -3,21 +3,28 @@ title: SkyRescue
 tagline: Pilot a rescue helicopter to pull trapped survivors out of disasters
   before time runs out
 description: >-
-  SkyRescue is a helicopter flight game built around emergency extractions. You
-  take the controls of a rescue chopper and fly into a series of disaster
-  scenes, reaching trapped survivors and bringing them out before the clock
-  expires. Each mission is a race between careful flying and the time limit.
+  You fly a rescue helicopter out to a disaster and pick up the people stranded
+  there before the countdown hits zero. The settings run from a blazing tower to
+  a mountain cliff face, a flooded suburb, a wrecked highway and an arctic
+  blizzard. So you're not circling the same city block every time.
 
 
-  The scenarios change the setting from level to level: burning buildings,
-  mountain cliffs, flooded suburbs, highway pileups, and arctic blizzards. Each
-  location asks for a different approach to getting close to the people who need
-  help, which keeps the flying from settling into one routine.
+  Up top you've got a counter for survivors saved out of five and a timer
+  ticking down. A bar in the corner tracks how much damage the helicopter can
+  still take.
 
 
-  The game was made for Vibe Jam 2026 and runs in 3D in the browser with
-  Three.js. The creator says it was built with Cursor and Claude, and it is
-  playable on mobile as well as desktop.
+  There are only three seats onboard, which is a pretty tight number.
+
+
+  Because of that limit and the timer, you have to decide how many people to
+  carry on each trip. A small radar map sits in the corner and shows what's
+  nearby, so you can pick where to head next.
+
+
+  You begin on a helipad marked with a glowing yellow H, with a green beam
+  shooting up from it. Around you is a night city with lit windows in the towers
+  and a red glow on the burning ones, which makes the beam easy to spot.
 play:
   url: https://skyrescue.vercel.app
   embeddable: true
@@ -55,7 +62,7 @@ media:
     - games/skyrescue/shot-2
 dates:
   added: 2026-10-01
-  updated: 2026-10-01
+  updated: 2026-10-02
 status: live
 provenance:
   foundVia: scout:vibejam-2026

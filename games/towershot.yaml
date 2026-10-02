@@ -3,21 +3,29 @@ title: towershot
 tagline: Fire shots with a single button and place each one with careful spatial
   judgment.
 description: >-
-  Press Start, then move the aim with the left and right arrow keys and click or
-  press Enter to shoot. Each shot pushes blocks in a tall tower of colored
-  cubes. Line up three blocks of the same color and they clear.
+  Click or press Enter to shoot a block at the tower, and use the left and right
+  arrows to slide your aim. Each shot pushes the tower, so you're shoving the
+  stack around. Match three colors and they clear.
 
 
-  The HUD shows a score counter next to a color count of 4, plus an out counter
-  that starts at 0 of 3. Pushing blocks into the red zone costs an out, and the
-  third out ends the run.
+  The creator names Puyo Puyo as the inspiration, which fits the color matching.
 
 
-  The camera orbits the tower, and the player view rotates on its own. Shooting
-  works only in the player view, and an info line says when a shot is not
-  possible. A Switch View button changes the view, and a readout lists the
-  current direction and state. On-screen arrow and Shoot buttons cover touch
-  play. The creator describes it as a one-button shooter inspired by Puyo Puyo.
+  There's a red zone you're meant to avoid. The screen counts your outs out of
+  three, and three outs mean game over.
+
+
+  The camera doesn't wait for you. The player view rotates around the tower on
+  its own, and you can only fire from that view, so you have to wait for the
+  right angle instead of shooting whenever you like. A Switch View button flips
+  to an orbit camera for looking the tower over.
+
+
+  Up top you'll see a score shown against a color count of four.
+
+
+  On a phone, on-screen arrow buttons and a big Shoot button stand in for the
+  keys, so the one-button idea carries over to touch.
 play:
   url: https://lucky-wave-e666.soft-glade-15f8.workers.dev
   embeddable: true
@@ -58,7 +66,7 @@ media:
     - games/towershot/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-10-01
+  updated: 2026-10-02
 status: live
 provenance:
   foundVia: scout:vibejam-2026

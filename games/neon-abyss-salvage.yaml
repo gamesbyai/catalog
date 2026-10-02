@@ -3,29 +3,43 @@ title: Neon Abyss Salvage
 tagline: Dive through dark seas, ping for treasure, and surface before your
   oxygen runs out.
 description: >-
-  You pilot a salvage sub through dark water, collecting treasure while your
-  oxygen drains. Every second and every boost uses air, so you refill at O₂
-  stations or surface empty-handed. Each zone hides at least three treasures,
-  and a zone takes 3 to 6 minutes.
+  You pilot a salvage sub down into the dark, hunting for treasure before your
+  oxygen runs out. Every zone hides at least three treasures, and the tank
+  drains with every second you spend down there and every time you use your
+  boost.
 
 
-  Sonar pings mark treasure, mines and larger creatures on your radar. Mines
-  chain-explode, so you can fire torpedoes to detonate a minefield from a
-  distance, or drop a holo decoy to lure a boss into one. Only mines can truly
-  hurt the bosses.
+  Sonar is how you find things. You ping the darkness and it marks treasure,
+  mines and the bigger shapes that you probably don't want to meet.
 
 
-  Salvaged parts buy upgrades during a run: O₂ tanks, hull armor, engines,
-  sonar, and torpedo and decoy bays. Seven biomes include jellyfish forests,
-  shipwreck graveyards, lava rifts and whale falls, with currents and seafloor
-  storms. Bosses appear from Zone 3: the Leviathan, the Kraken, the Sentinel and
-  Erebus.
+  If the tank runs low, you head for an O₂ station or surface empty-handed.
 
 
-  Defeat Erebus and extract to get a final rank, then keep descending in endless
-  mode. A full clear takes 30 to 60 minutes. A virtual joystick and buttons
-  support touch play in portrait or landscape, and the interface switches
-  between English and Chinese.
+  Mines chain-explode, so you can fire torpedoes to set off a minefield from a
+  distance. You can also drop a holo decoy, which is how you lure a boss into
+  one, and that matters because only mines can really hurt the bosses.
+
+
+  The bosses start showing up in Zone 3: the Leviathan, the Kraken, the Sentinel
+  and finally Erebus, Lord of the Abyss.
+
+
+  Salvaged parts pay for upgrades during a run, covering bigger O₂ tanks, hull
+  armor, engines, sonar, and bays for torpedoes and decoys. The zones themselves
+  vary across seven biomes, including jellyfish forests, shipwreck graveyards,
+  lava rifts and whale falls, with currents and seafloor storms pushing you
+  around.
+
+
+  Beat Erebus and extract, and you get a final rank. After that you can keep
+  diving deeper in endless mode, which is a generous amount of ocean for a
+  browser game.
+
+
+  It works on touch screens too, with a virtual joystick and buttons in portrait
+  or landscape. The game picks English or Chinese on its own, and you can switch
+  in settings.
 play:
   url: https://patrickstar-gogogo.itch.io/neon-abyss-salvage
   embeddable: false
@@ -66,7 +80,7 @@ media:
     - games/neon-abyss-salvage/shot-2
 dates:
   added: 2026-09-30
-  updated: 2026-10-01
+  updated: 2026-10-02
 status: live
 provenance:
   foundVia: scout:aibgj-4

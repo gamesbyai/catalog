@@ -2,25 +2,35 @@ slug: 3-second-memory-maze
 title: 3-Second Memory Maze
 tagline: Memorize a maze route in three seconds, then find the exit in the dark.
 description: >-
-  A neon maze sits on screen for a few seconds, then fades to darkness, leaving
-  only a small glow around your position. Study the yellow route and its turn
-  anchors during the preview, then walk to the exit from memory.
+  You get a few seconds to study a maze, then it fades to black and leaves only
+  a small glow around you. You have to walk to the exit from memory, which is a
+  neat way to turn a simple maze into a memory test.
 
 
-  The campaign has 30 short maze levels, each opened from a level map. Every
-  level lets you use one route peek to reveal the path again, and a replay
-  preview button is also on the screen. Pause and stop buttons let you freeze or
-  end a run. A header tracks the level, the preview countdown and your move
-  count.
+  The preview shows a yellow route with markers at the turns, so you know what
+  to hold onto before the lights go out. Each level starts when you press Start,
+  and the first one is a warmup called First forks.
 
 
-  Each level is scored from 1 to 3 stars based on speed and number of moves, and
-  the campaign tracks stars out of 90. A Daily Challenge serves one shared maze
-  to everyone each day, with a streak counter. Best records are stored locally.
+  If you blank halfway through, each level gives you one route peek that reveals
+  the path once, so save it for when you really need it.
 
 
-  You can move with the arrow keys, WASD, swipes on touch screens, or the
-  on-screen buttons, so the game works on both keyboard and phone.
+  The campaign has 30 short levels, and you can open the map to jump to any
+  level you've unlocked. Each level scores one to three stars based on how fast
+  you finish and how many moves you take, so a wandering, lucky run earns less
+  than a clean one.
+
+
+  There's also a Daily button for a maze that's the same for everyone that day.
+
+
+  The game keeps your daily streak and your best records on your own device.
+  That makes it easy to compare notes with friends about the same maze.
+
+
+  On a keyboard you move with the arrow keys or WASD, and on a touch screen you
+  swipe. There are on-screen buttons too, plus pause and sound toggles.
 play:
   url: https://cravveo-lab.itch.io/3-second-memory-maze
   embeddable: false

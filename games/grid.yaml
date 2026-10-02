@@ -2,25 +2,36 @@ slug: grid
 title: GRID
 tagline: Play cards to place counters and line up three in a row on a 3×3 board
 description: >-
-  A match ends when one side lines up three counters on a 3×3 grid. Counters
-  only arrive by playing cards, so before the first move you assemble a 30-card
-  deck, then draw from it and play from your hand each turn.
+  You win by getting three of your counters in a row on a 3×3 board, just like
+  Tic-Tac-Toe, except every counter has to come from a card. Before a match you
+  build a 30-card deck, so part of the game is settled before anyone places
+  anything. Each card can only reach certain cells, which means you can't drop a
+  counter wherever you like.
 
 
-  Every card reaches only certain cells and costs Energy. Your supply is 1 on
-  the first turn and rises each turn until it caps at 5. Cards are either Role
-  or Action cards, over 50 in all, and each has an effect that alters the grid
-  as soon as it is placed.
+  Playing a card costs Energy, and that cost is part of every decision you make.
 
 
-  The Combo system lets you give up one card's placement sequence so that a
-  different card can land on a cell it could not hit by itself.
+  You get 1 Energy on the first turn and a little more each turn after that, up
+  to 5, so what you can afford shapes your early choices.
 
 
-  The menu offers a bot match at three difficulty levels, an offline two-player
-  mode on one device, and Draft Mode. It also has saved decks, a rules page,
-  match history, settings and an interactive tutorial. Sessions last a few
-  minutes.
+  There are more than 50 cards, split into Role and Action types. Many have a
+  deploy ability that changes the board the moment the card lands, so a single
+  placement can break up a line your opponent was building. That's a lot of
+  rule-bending for a grid with nine cells.
+
+
+  The Combo system is the odd one out among all of those rules.
+
+
+  You sacrifice one card's sequence so that another card can go somewhere it
+  couldn't reach alone, which is a sensible way around the cell limits.
+
+
+  You can play a bot at one of three difficulty levels, or share the screen with
+  a friend in the offline two-player mode. Draft Mode is there too, along with a
+  full tutorial, and everything runs with the mouse.
 play:
   url: https://radiantforce.itch.io/grid
   embeddable: false
@@ -60,7 +71,7 @@ media:
     - games/grid/shot-2
 dates:
   added: 2026-09-30
-  updated: 2026-10-01
+  updated: 2026-10-02
 status: live
 provenance:
   foundVia: scout:aibgj-3

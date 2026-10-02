@@ -3,20 +3,32 @@ title: The Great Taxi Assignment
 tagline: Drive a taxi through a 3D city, delivering passengers before the clock
   runs out.
 description: >-
-  The game opens on a welcome panel over a dusky street lined with palm trees. A
-  speedometer sits in the bottom left, a circular map in the bottom right, and
-  info, radio, music and sound buttons run along the top left. Checkboxes on the
-  panel turn music and sound effects off before you press Start playing.
+  When it loads, you're looking at a dim, sunset-colored street lined with
+  pixel-art palm trees, with a speedometer in the corner and a little round map
+  on the right. A welcome card sits over all of it, and you press Start playing
+  to get going.
 
 
-  You drive a taxi around Vibe City, a 3D city, looking for passengers to pick
-  up. Each fare has a destination marked on your map, and you take them there
-  before the timer runs out.
+  Music and sound effects each have a checkbox on that card, so you can switch
+  either off before you begin.
 
 
-  Steering is on the keyboard, with the space bar as a brake. Tomáš Bencko built
-  it in 60 hours. About 99 percent of the code was AI generated, the 2D art came
-  from GPT-4o, the music from Suno and the sound effects from ElevenLabs.
+  You drive a taxi around Vibe City looking for passengers. Once someone's in
+  the car, you take them to the destination marked on your map.
+
+
+  There's a timer running the whole time, so the job is getting each fare there
+  before it hits zero. That's what ends a run, and it's why the map matters as
+  much as the wheel.
+
+
+  Up in the top corner there are buttons for info, a radio, music and sound,
+  which is a nice touch for a taxi.
+
+
+  Tomáš Bencko made it in 60 hours, and 99 percent of the code was written by
+  AI. The 2D art came from GPT-4o, the music from Suno, and the sound effects
+  from ElevenLabs.
 play:
   url: https://great-taxi-assignment.netlify.app
   embeddable: true
@@ -56,7 +68,7 @@ media:
     - games/the-great-taxi-assignment/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-10-01
+  updated: 2026-10-02
 status: live
 provenance:
   foundVia: scout:awesome-cc0

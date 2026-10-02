@@ -2,26 +2,29 @@ slug: brew-boss
 title: Brew Boss
 tagline: Build up a cafe from a small start into a thriving business.
 description: >-
-  Brew Boss puts you behind the counter of an isometric cafe, Player's Downtown
-  Brew, on Day 1 with $50.00 in cash. Customers gather at the wooden bar, and
-  you click one to take their order. A hint at the bottom of the screen says
-  this.
+  Brew Boss has you click a customer in a small cafe to take their order. The
+  view is isometric, so you look down on the counter, the espresso machine, the
+  barista and a line of customers who gather near the bar.
 
 
-  Each order appears in a list on the left with the customer's name and the
-  drink. Espresso, cappuccino and caffè latte show up, and some orders read only
-  "Something creamy". Every card has a colored bar and a face. Green cards show
-  a smile, orange ones a neutral face, and red ones an angry face.
+  Every customer carries a bubble over their head with the drink they want and a
+  thin bar. Espresso, cappuccino and caffè latte show up, and some people only
+  ask for something creamy.
 
 
-  The top bar shows the cafe name, the day number, a timer in seconds and your
-  cash. The creator describes the goal as building a cafe empire, with Sims 2
-  and Dave the Diver named as partial influences.
+  The same orders also stack up in a list on the left, headed by a count of how
+  many are open. Each card has the customer's name, the drink, a mood face and a
+  bar that shifts from green to orange to red, so you can see who's running out
+  of patience. The face goes from smiling to scowling as the bar drains.
 
 
-  The cafe is drawn in a low-poly 3D style. A barista stands at an espresso
-  machine, stools sit along the bar, and a striped awning runs along the roof
-  edge.
+  Up top you get the cafe's name, Player's Downtown Brew, then the day number, a
+  timer counting seconds and your cash, which reads $50.00 on Day 1. A hint at
+  the bottom of the screen tells you to click a customer.
+
+
+  The creator's pitch is building a cafe empire, and they name The Sims 2 and
+  Dave the Diver as partial inspirations.
 play:
   url: https://lukeswissman.github.io/brewboss
   embeddable: true

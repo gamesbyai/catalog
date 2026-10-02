@@ -2,20 +2,30 @@ slug: blocky-pursuit
 title: Blocky Pursuit
 tagline: Drive through a blocky city and outrun the police without getting busted.
 description: >-
-  Blocky Pursuit has you steering a car that drives itself through a blocky
-  city, seen from above at an angle. Your only input is turning left or right.
-  The goal is to evade the cops on your tail and avoid getting busted.
+  In Blocky Pursuit the car drives itself, so your only job is steering it left
+  or right while cops chase you through a blocky city. You see it from an angled
+  overhead view, with roads cutting between houses, trees and patches of water.
 
 
-  The map mixes roads with grass, trees, houses and patches of water. Cops can
-  be lured into the water, which gives you a way to shake them. The on-screen
-  instructions also tell you to stick to the roads.
+  You win by evading the cops and not getting busted, so every turn you take is
+  about staying out of their reach.
 
 
-  Skimming close past obstacles builds a combo that multiplies your score by
-  three. The start menu also links to a garage, a leaderboard and a feedback
-  form. The creator built it in one sleepless night, inspired by long-time play
-  of Smashy Road.
+  You can lure the cops into water, which makes sense on a map where blue pools
+  sit right up against the roads. You're also told to stick to the roads, so
+  staying on the pavement matters.
+
+
+  Scoring has a twist, because skimming builds a combo that gives you ×3 score.
+  That gives you a reason to cut things close instead of just running away.
+
+
+  The start menu also has a garage, a leaderboard and a feedback button, plus a
+  small link to star the project on GitHub.
+
+
+  The creator had played Smashy Road for a long time and made this version of it
+  during one sleepless night.
 play:
   url: https://blocky-pursuit.netlify.app
   embeddable: true
@@ -51,7 +61,7 @@ media:
     - games/blocky-pursuit/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-10-01
+  updated: 2026-10-02
 status: live
 provenance:
   foundVia: scout:vibejam-2026

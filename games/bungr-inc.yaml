@@ -2,23 +2,33 @@ slug: bungr-inc
 title: BUNGR INC.
 tagline: Cook burgers in a cursed kitchen to earn your way to freedom.
 description: >-
-  You work a burger line from a first-person view inside a dim kitchen of
-  exposed pipes and fluorescent tubes, making burgers to earn your freedom.
-  Orders arrive as tickets on a brown board on the wall, which reads as waiting
-  for the next ticket between orders. A small crosshair marks what you point at.
+  You're a worker in a dim kitchen full of pipes, looking around in first person
+  with a small crosshair in the middle of the screen. The deal is simple: make
+  burgers until you've earned your freedom, which is a grim arrangement for a
+  fast food job.
 
 
-  Each day runs on a countdown clock, and the board tracks your cash against a
-  quota. Day 1 sets the quota at $70. Ingredients start at a counter tray
-  holding buns, patties, cheese, tomato slices and other toppings, and a card on
-  the wall shows ingredient icons.
+  Day one asks for $70, so you know the target before you've touched a bun.
 
 
-  A radio on the wall interrupts your shift, and a prompt tells you to listen
-  when it does. Text banners on screen greet you at the start and label the
-  ingredient counter and the radio. The cursed setting shows in the grainy,
-  dithered look and the grimy kitchen, where warm signage stands out against the
-  gray.
+  A brown board on the wall shows that quota next to the cash you've made so
+  far. Orders show up on it as tickets, and when nothing's waiting it tells you
+  it's holding for the next one. A clock in the top corner counts the day down
+  from just over three minutes.
+
+
+  The ingredients start at a counter with a separate tray for each one. You can
+  see a bun, a tomato, a slice of cheese and a few other toppings laid out in a
+  row, and a picture chart hangs on the wall nearby.
+
+
+  There's also a radio on the wall that interrupts you while you work. A message
+  tells you to listen when it does, which is an odd instruction to get in a
+  burger kitchen where you're working off your freedom.
+
+
+  The creator liked pairing kitchen simulation with a cursed world and its look,
+  and the gloomy lighting and pipes overhead carry that.
 play:
   url: https://bungr.net
   embeddable: true

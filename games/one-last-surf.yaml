@@ -2,25 +2,37 @@ slug: one-last-surf
 title: One Last Surf
 tagline: Ride waves through a surf session that runs from daylight into a starry night.
 description: >-
-  You start on a surfboard in first person, looking out at the swell. Find the
-  tallest point along it, since that is where the wave will begin to break. Then
-  paddle toward it, holding Shift to build speed while a stamina bar drains.
+  You're a surfer lying on a board, looking out over the water from first
+  person, with the tip of the board and your own arm stretched out in front of
+  you. Your job is to paddle into a swell and catch a wave, then stay inside the
+  barrel while it curls over your head.
 
 
-  Press Space when you think you have enough speed to catch the wave. Once you
-  are up, stay steady as the barrel curls over you and keep yourself inside it.
-  W and S move you deeper into the wave or further ahead on it, and WASD also
-  lets you carve and turn. Press Space again to bail out.
+  Start by scanning the swell for its tallest point, because that's where the
+  wave will begin to break. Then hold Shift to paddle, which drains a stamina
+  bar as you go, and tap Space when you reckon you've got enough speed.
 
 
-  Catching a wave usually takes a few attempts, and the in-game guide says you
-  will know right away when you have caught one. A guide screen opens with G.
-  The setting is a sunny ocean, and the creator describes a day of surfing that
-  moves on to sunset and then a night sky full of stars.
+  You'll know right away whether you caught the wave or missed it, no guessing
+  involved.
 
 
-  The creator built it after a year of surfing lessons and two years away from
-  the water, with barreling waves as the main draw.
+  Once you're on the wave, the trick is staying steady while the barrel forms,
+  so you stay tucked inside it. W and S slide you deeper into the wave or
+  further ahead on it, and after that you can carve and turn with the WASD keys.
+  Press Space again if you want to bail out.
+
+
+  A guide screen walks through all of this in three steps with little pictures,
+  and you can open it with G whenever you like. It's a pretty kind touch that it
+  admits a catch usually takes a couple of tries.
+
+
+  The creator took surfing lessons for a year after school and hadn't surfed for
+  two years, so the itch to get back on a board is what started it. Barreling
+  waves are famously hard to get, which made them the thing to build around.
+  Past the riding, the game wants you to watch the sunset and then look up at
+  the stars.
 play:
   url: https://onelast.surf
   embeddable: true

@@ -2,27 +2,44 @@ slug: puzzle-punch
 title: Puzzle-Punch
 tagline: Stack falling blocks in a 1v1 duel and use abilities to sabotage your rival.
 description: >-
-  Puzzle-Punch turns falling-block puzzles into a one-on-one duel. Two players
-  clear lines in their own wells and race to outscore each other over the course
-  of a match, which pushes you to stack cleanly and act quickly while your rival
-  does the same.
+  Puzzle-Punch takes the falling-block stacking you know from Tetris and turns
+  it into a one-on-one duel. You've got abilities that either hinder your
+  opponent or help you rack up a higher score. The creators wanted something
+  both competitive and puzzly, so they started from Tetris and added their own
+  twists.
 
 
-  According to the creator, the team set out to combine a competitive game with
-  a puzzle game, using Tetris as the starting point, and they worked in Claude
-  Code for Vibe Jam 2026. It is an online game, played in the browser, and it
-  placed 397th of 945.
+  You can play alone in a practice mode or against a bot, which means you don't
+  need another person around to try it. For real opponents, you can find a game
+  or invite a friend.
 
 
-  Abilities sit on top of the classic formula. Some hinder your opponent and
-  others help you build a higher score, so each match mixes stacking skill with
-  decisions about when to strike at the other player and when to boost yourself
-  instead.
+  The abilities are called spells, and they're explained on a how-to-play screen
+  from the menu.
+
+
+  Pieces move with the arrow keys, and Up or X rotates clockwise while Z turns
+  them the other way. Space hard drops, and C or Shift holds a piece for later.
+  Esc sends you back to the lobby.
+
+
+  You type in a name on the title screen before you pick any of the modes.
+
+
+  A bot mode is a considerate thing to include in a duel game, because it lets
+  you learn the spells before you put them on a real person.
 play:
   url: https://puzzle-punch.com
   embeddable: true
   platforms:
     - browser
+  controls:
+    - "Arrow keys: move"
+    - "Up / X: rotate clockwise"
+    - "Z: rotate counterclockwise"
+    - "Space: hard drop"
+    - "C / Shift: hold piece"
+    - "Esc: back to lobby"
 creator:
   name: El_Perforator
   handle: el-perforator
@@ -52,7 +69,7 @@ media:
     - games/puzzle-punch/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-09-29
+  updated: 2026-10-02
 status: live
 provenance:
   foundVia: scout:vibejam-2026

@@ -3,26 +3,41 @@ title: Sato Denki — Akihabara Tech Shop
 tagline: Chain fast combo shifts to keep your hospitalized dad's Akihabara tech
   shop afloat.
 description: >-
-  Your father is in the hospital, and the family's 40-year-old electronics store
-  in Akihabara is in danger of being taken by the bank. Sato Denki is a shop
-  simulation where you run the counter in quick rounds, chaining rapid, Street
-  Fighter-style combo shifts to bring in enough money before the bank wins.
+  You click an item from your inventory to hand each customer whatever they're
+  asking for, and the whole round runs on a 30-second loop. The pace comes from
+  rapid-fire combo shifts borrowed from Street Fighter, which is a funny thing
+  to build a shop counter around.
 
 
-  The loop borrows from casino machines: short rounds, loud combo feedback, and
-  global stakes meant to pull you into one more run. Every sprite came from the
-  creator's own AI pixel art tool, which keeps the shop's look consistent.
+  You're running Sato Denki, an Akihabara electronics shop your dad has kept
+  going for 40 years. He's in Keio Hospital now, so the shop's yours, and you
+  have to stock smart and serve fast or the bank wins. Hiroshi-san sits at
+  ¥8800, and that's the number you're trying to out-sell.
 
 
-  The creator says Claude Code wrote 99% of the code and calls the project 100%
-  vibe coded. They made it for the jam to test that pixel art generator and the
-  coding workflow together, from start to finish.
+  That's a pretty heavy reason to be selling gadgets, when you think about it.
+
+
+  Before you open, you can type a name for your shop, and it stays Sato-kun if
+  you leave it alone. Then you hit the big orange button to open the doors.
+
+
+  The creator wanted the whole thing to feel like a casino machine, which
+  explains the speed.
+
+
+  So you get fast rounds, loud combos and global stakes meant to pull you back
+  for one more run. Claude Code wrote about 99% of the code, and every sprite
+  came from DogSprite, the creator's own pixel art tool, which started working
+  the same day the jam was announced.
 play:
   url: https://sato-denki-eight.vercel.app
   embeddable: true
   platforms:
     - browser
     - mobile
+  controls:
+    - "Click: pick inventory item and serve the customer"
 creator:
   name: SYSTEMCRASH92
   handle: systemcrash92
@@ -52,7 +67,7 @@ media:
     - games/sato-denki-akihabara-tech-shop/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-09-29
+  updated: 2026-10-02
 status: live
 provenance:
   foundVia: scout:vibejam-2026

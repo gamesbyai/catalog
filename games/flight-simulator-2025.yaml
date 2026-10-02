@@ -2,23 +2,40 @@ slug: flight-simulator-2025
 title: Flight Simulator 2025
 tagline: Take off, fly over a shared world and dogfight other pilots online.
 description: >-
-  Type a name and join to spawn on an airport runway with the throttle at 0%.
-  Raise it with W, roll and pitch with the arrow keys, and use A and D for the
-  rudder. Take off into a world shared with other players, who can be dogfighted
-  in the air. Space shoots missiles.
+  Type a name, hit the join button, and you start on a striped runway in a white
+  biplane with the throttle at zero. Other pilots share the same world, and you
+  can shoot at them.
 
 
-  An on-screen mission list gives three goals: shoot down all the balloons,
-  shoot down other planes, and fly to space. The HUD tracks health, score,
-  altitude, speed, throttle and vertical speed. A radar sits in the lower right,
-  and a small inset view shows the scene ahead.
+  A list of missions sits on screen: shoot down all the balloons, shoot down
+  other planes, and fly up into space.
 
 
-  The world is low-poly. It has an airport with a control tower, houses, pine
-  trees, a snowy mountain, a castle, blimps, a flying saucer and birds. A
-  scrolling airport weather report runs along the top of the screen. Landing
-  gear, engine, sound and camera view can be toggled, and chat and a leaderboard
-  are available.
+  The airfield is blocky and low-poly, with a control tower, pine trees, a snowy
+  mountain, a castle far off and a blimp floating overhead. It's a pretty odd
+  mix of scenery for a flight sim, and there's even a flying saucer hanging
+  around near the runway.
+
+
+  Your readout tracks altitude, speed, throttle and vertical speed, plus health
+  and score. A small camera view sits in one corner and a round radar in
+  another.
+
+
+  The ticker across the top reads like a real airport weather report, with wind,
+  visibility, temperature and which runway is in use, which is a funny thing to
+  read right before you go hunting balloons with missiles.
+
+
+  Besides firing missiles, you can raise and lower the landing gear, switch the
+  engine off and on, flip the camera view, mute the sound, chat with other
+  pilots and pull up a leaderboard. Holding the turbo key gets you a boost
+  called SuperTURBO XXL, a name that suits a speed button.
+
+
+  The creator, levelsio, made it with AI and built it so you can open it and fly
+  without loading screens or big updates, which is a considerate thing for a
+  game you might only want for a few minutes.
 play:
   url: https://fly.pieter.com
   embeddable: true
@@ -63,7 +80,7 @@ media:
     - games/flight-simulator-2025/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-10-01
+  updated: 2026-10-02
 status: live
 provenance:
   foundVia: scout:awesome-cc0

@@ -3,22 +3,36 @@ title: The Underground
 tagline: Explore generated tunnels, open locked doors, and find artifacts before
   time runs out.
 description: >-
-  A run starts at 03:00:00 on a clock that counts toward 05:00:00. In that
-  window you explore a procedurally generated network of underground tunnels,
-  open locked doors, and look for hidden artifacts before time runs out. Clues
-  left by other players are shared into your world.
+  You're hunting for hidden artifacts in a generated network of underground
+  tunnels before the clock runs out, and the timer on screen is set up as a
+  window running from three o'clock to five.
 
 
-  You carry three tools in numbered slots. The flashlight has a battery meter
-  and adjustable brightness. The camera is for photographing evidence. The
-  crowbar starts with five pries, shown as a count on its slot. Stamina and
-  battery bars sit on the left of the screen.
+  Locked doors block the way, and the crowbar is what gets you through them. It
+  holds five pries, so you'll want to think about which doors are worth it.
 
 
-  An objectives panel logs how many objectives are complete, a discoveries list
-  records recent finds, and a points counter tracks your score. A notebook opens
-  with N. The creator wanted to find out what lies down the dark tunnels seen
-  from subway trains, such as abandoned stations and old bunkers.
+  Other players leave clues in the tunnels too, which means a trip through the
+  dark isn't only your own.
+
+
+  Your gear sits in three slots along the bottom of the screen. The flashlight
+  has a battery that drains and a brightness you can switch, the camera is for
+  photographing evidence, and the crowbar handles the doors.
+
+
+  Stamina and battery each get their own meter on the left, so you can see what
+  you've got left of both. Below them a points counter tracks completed
+  objectives.
+
+
+  In the top corner, a panel lists your objectives and your most recent
+  discoveries, and a notebook opens with a key press.
+
+
+  The creator got the idea from riding subway trains past dark tunnels and
+  wondering about abandoned stations and old war bunkers. The generator is their
+  way of finding out what's down there.
 play:
   url: https://mcg-urbex.web.app
   embeddable: true
@@ -56,7 +70,7 @@ media:
     - games/the-underground/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-10-01
+  updated: 2026-10-02
 status: live
 provenance:
   foundVia: scout:vibejam-2026

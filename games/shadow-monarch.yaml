@@ -2,21 +2,32 @@ slug: shadow-monarch
 title: shadow monarch
 tagline: Explore a first-person memory from a 90s childhood and uncover what was buried.
 description: >-
-  A forgotten childhood memory resurfaces in this first-person game, and the
-  tagline warns that some things were buried for a reason. You play in the
-  Dungeon of the Ninth Gate, a cathedral haunted by shadows. The goal is to
-  awaken your dominion and slay the shadows.
+  You wander a dark cathedral in first person, slaying the shadows that haunt
+  it, and the whole thing is framed as a memory you'd rather have left alone.
 
 
-  You pick between Magic and a Shadow Blade with the 1, 2 and Q keys, and click
-  to cast. The game opens on a title card with an Enter the Gate button, and a
-  sound toggle sits in the top corner.
+  On a computer you move with WASD or the arrow keys and look around with the
+  mouse. Clicking casts a spell.
 
 
-  On desktop, move with WASD or the arrow keys and look around with the mouse.
-  On a touch screen, a joystick moves you, dragging on the right side turns your
-  view, and tapping the orb casts. The creator based the story on their
-  childhood in the 1990s.
+  The keys 1, 2 and Q are tied to your magic and to a Shadow Blade, so there's
+  more to your arsenal than a single click. On a phone, a joystick moves you,
+  dragging on the right side turns your view, and you tap an orb to cast, which
+  is a sensible way to get spellcasting onto a touchscreen.
+
+
+  The place is called the Dungeon of the Ninth Gate, which is where all of this
+  takes place.
+
+
+  The story hook is a forgotten childhood memory from the 90s that surfaces
+  again, and the tagline warns that whatever got buried was buried on purpose.
+  Your job, according to the title screen, is to awaken your dominion by slaying
+  those shadows.
+
+
+  You begin from a glowing blue panel over a dim, blurred cathedral, with a
+  sound button in the corner and an Enter the Gate button to start.
 play:
   url: https://shadowmonarch.app
   embeddable: true

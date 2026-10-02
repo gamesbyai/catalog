@@ -2,25 +2,34 @@ slug: the-regulars
 title: THE REGULARS
 tagline: Talk to diner regulars, guess their orders, and spot what doesn't fit.
 description: >-
-  You stand behind the counter at the Last Stop Diner while a handful of
-  regulars sit across from you: Walter, Mrs. Finch and Danny the paperboy among
-  them. Talk to each one and every line you learn raises your familiarity with
-  them.
+  Every line you pick up from a regular at the counter raises your familiarity
+  with them. Once you know someone well enough, you get to guess their order
+  before they say it.
 
 
-  Once you know someone well enough, you try to guess their order before they
-  say it. Then you serve them, fill the counter and record what they tell you in
-  a Memory Notebook. When things start to drift from what you know, you flag
-  whatever doesn't fit. The story has multiple endings.
+  After that you serve them, fill the counter, and file their stories away in
+  your Memory Notebook.
 
 
-  A separate arcade mode, Refill Rush, runs for 60 seconds. You keep three
-  coffees topped off, build a combo and chase a high score.
+  Walter reads two newspapers at once, Mrs. Finch hides peppermints, and Danny
+  the paperboy has the town's porches memorized. That's a funny crew for the
+  Last Stop Diner, which stays open all night with rain on the window and a red
+  neon sign.
 
 
-  Every visual and sound is generated in code on a canvas, with no image or
-  audio files. Each face is built from a seed, so a character looks the same
-  every time you return.
+  When things start to drift, you flag whatever doesn't fit. That makes sense
+  for a memory game, because you can only spot what's off in people you've
+  actually come to know. The game has multiple endings.
+
+
+  There's also Refill Rush, which is a separate arcade mode on its own.
+
+
+  In it you keep three coffees topped off for a minute while you build a combo
+  and chase a high score. The whole game is made in code, with no image or sound
+  files, so the faces, rain, neon and music are all generated, and a given seed
+  always produces the same face, which suits a story about familiarity. The
+  pixel art shows a skyline behind the diner and a checkered counter.
 play:
   url: https://granthaffner.itch.io/the-regulars
   embeddable: false
@@ -59,7 +68,7 @@ media:
     - games/the-regulars/shot-2
 dates:
   added: 2026-10-01
-  updated: 2026-10-01
+  updated: 2026-10-02
 status: live
 provenance:
   foundVia: scout:aibgj-3

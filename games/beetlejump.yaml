@@ -2,25 +2,32 @@ slug: beetlejump
 title: BeetleJump
 tagline: Jump your beetle up a towering course and try to reach the top.
 description: >-
-  Type a name, press Start, and a black beetle with red eyes appears on a
-  lily-pad-like platform at the foot of a giant beanstalk rising out of a pond.
-  You jump from leaf to leaf up the stalk, and a timer near the top of the
-  screen counts up from 0.0 while you climb. The goal is to reach the top.
+  BeetleJump has you playing a beetle that hops up a giant beanstalk, platform
+  by platform, from leaf to leaf above a body of water. A timer runs while you
+  climb, and the goal is to reach the top and be crowned.
 
 
-  Some leaves carry extras. A coiled spring pad sits on one leaf, and a
-  crate-like object rests on another. Pressing E throws a fireball. Other
-  beetles can join the climb, a message announces each arrival, and a chat box
-  in the lower left corner takes text.
+  You steer with WASD and jump with Space. There's also a fireball on E, so the
+  beetle isn't limited to just hopping.
 
 
-  The start screen also offers a Private Race button as an alternative to the
-  public climb. A leaderboard with All-Time and Today tabs lists players' times
-  and stays visible during play.
+  The leaves sit at different heights and angles around the stalk, and some have
+  extras on them. One has a coiled spring sitting on it, and another has a
+  little crate.
 
 
-  The creator says the stalk is modeled on kz_giantbean, a Counter-Strike map,
-  and that other people's entries made this look like a good challenge.
+  You can type a name and jump straight in, or start a private race instead. A
+  chat box at the bottom lets you send messages, and a note appears when another
+  player joins the climb, so you're not up there alone.
+
+
+  A leaderboard stays on screen the whole time, with tabs for all-time and
+  today, so you can see the times you're chasing while you climb.
+
+
+  The creator, assentorp, took the idea from a Counter-Strike map called
+  kz_giantbean. They also said that seeing other people's jam games made this
+  feel like a good challenge to try.
 play:
   url: https://beetlejump.com
   embeddable: true
@@ -62,7 +69,7 @@ media:
     - games/beetlejump/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-10-01
+  updated: 2026-10-02
 status: live
 provenance:
   foundVia: scout:vibejam-2026

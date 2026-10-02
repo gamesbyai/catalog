@@ -3,27 +3,32 @@ title: Duality
 tagline: Guide two linked entities across parallel dimensions to their portals,
   dodging Void Agents
 description: >-
-  You steer two glowing orbs at once, a cyan one that is you and a magenta one
-  that is your Echo. The arena is split down the middle, with one side per orb.
-  Each side has its own escape portal at the far end, and the goal is to get
-  both orbs into their portals.
+  You're steering two things at once. One is yours, on the cyan half of the
+  screen, and the other is your Echo on the magenta half, which copies your
+  moves in a parallel dimension.
 
 
-  The Echo copies your moves, but not directly. The HUD labels the current rule,
-  such as Mirror X on the first dimension, and later levels twist the mirroring
-  further. Red Void Agents patrol both sides, so each move has to be safe in two
-  places at once.
+  The goal is to get both of them into their escape portals, and each side has
+  its own glowing ring waiting. Red Void Agents are in the way on both halves,
+  so you're watching two spaces while you move, which is a clever way to make
+  one set of inputs do double duty.
 
 
-  Small crosshair-marked pickups sit around the field, some white and some
-  yellow. A streak multiplier starts at x1, a score and best score sit in the
-  corner, and you have three hearts. A run begins when you first move. Sound can
-  be toggled on screen.
+  Level one is called Dim 1 and it's tagged Mirror X right in the header.
 
 
-  The creator designed each level as a small physics puzzle disguised as a
-  survival game, drawing on an interest in quantum physics and parallel
-  dimensions.
+  The Echo doesn't stay a plain mirror, because its copying gets twisted in new
+  ways as you go. White and yellow diamond markers are scattered across both
+  halves, and the top of the screen tracks a streak multiplier and three hearts.
+
+
+  The creator wanted a game that makes you think in two places at once, so each
+  level works like a little physics puzzle dressed up as a survival game.
+
+
+  Nothing starts until you make your first move. Your score and a best score sit
+  in the top left corner, and there's a sound toggle in the bottom corner if
+  you'd rather play quietly.
 play:
   url: https://duality-game-vibejam.vercel.app
   embeddable: true

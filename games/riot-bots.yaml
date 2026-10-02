@@ -3,29 +3,45 @@ title: Riot Bots
 tagline: Fight as a robot in a Martian colony, solo or allied, against an
   invading Dark AI.
 description: >-
-  The first screen is a bot selection screen with a neon city skyline behind a
-  round platform. The selected bot, Ronin, a fox-headed robot on a low pale-blue
-  chassis, sits on the platform. Four cards run along the bottom: Taichi
-  (balanced controller, weight 21), Blunt (heavy tank, 28), Ronin (mid-weight
-  striker, 20) and 2Claws (mid-weight controller, 16).
+  You start on a neon pick screen where one robot turns on a round black pad,
+  with a dark glowing city skyline behind it. Four bots wait in cards along the
+  bottom: Taichi, Blunt, Ronin and 2Claws. Ronin is already up on the pad, a
+  blocky blue and orange machine topped with a big orange animal head, which is
+  a pretty cheerful face for something built to fight.
 
 
-  Each bot has a name, a class and four stat bars for speed, defense, power and
-  weight. Ronin shows 28.9 speed, 12 defense, 20 power and 20 weight, and is
-  described as a front-pressure duelist. A green P1 tag and a purple Launch
-  button sit on the left, with Mode and Setting buttons in the top corners.
+  Every card has a class and a weight number. Blunt is the heavy tank at 28,
+  Taichi is a balanced controller at 21, and 2Claws is a mid-weight controller
+  at 16.
 
 
-  The story is a riot at a Martian base, where a hostile Dark AI is invading to
-  take over the energy center. Players can fight on their own or form alliances
-  to defend the colony, and the ending is left open. The creator likes
-  battlebots and hardware, and this was a first try at 3D game development.
+  Ronin sits in the middle of that range as a mid-weight striker at 20.
+
+
+  Bars on the right break each bot into speed, defense, power and weight.
+  Ronin's speed reads 28.9 and its power 20, but its defense is only 12, so it's
+  clearly meant to land hits rather than soak them up. When you've picked your
+  bot, you hit Launch.
+
+
+  A P1 tag sits on the left side of the pick screen, next to the Launch button.
+
+
+  The story is set on a Mars colony, where a rogue Dark AI is invading and
+  trying to take over the energy center. You can fight on your own or team up
+  with other players to defend the base, and the ending is left open.
+
+
+  The creator loves battlebots and building hardware, and wanted a first try at
+  3D, so a robot brawler made sense.
 play:
   url: https://riotbots.up.railway.app
   embeddable: true
   platforms:
     - browser
     - mobile
+  controls:
+    - "Launch button: start with the chosen bot"
 creator:
   name: PanPiller
   handle: panpiller
@@ -57,7 +73,7 @@ media:
     - games/riot-bots/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-10-01
+  updated: 2026-10-02
 status: live
 provenance:
   foundVia: scout:vibejam-2026

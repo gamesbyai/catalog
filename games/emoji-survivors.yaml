@@ -2,22 +2,38 @@ slug: emoji-survivors
 title: Emoji Survivors
 tagline: Fight endless waves of emoji monsters as a mage and stack chaotic upgrades.
 description: >-
-  Emoji Survivors starts on a mage select screen. You pick a caster from a row
-  of emoji-faced portraits, and the panel above shows that mage's three skills.
-  The Wind Mage comes first, with Gale Ring, a point-blank knockback burst,
-  Crosswind Strip, a moving wind lane that shreds packs, and Tempest Mode, a
-  storm core that chains displacement.
+  Emoji Survivors has you play a mage against an endless stream of emoji
+  monsters, and you pick which mage from a row of portraits before the run
+  starts. Each one brings its own set of skills, so the choice shapes how you
+  fight. Upgrades then reshape that build as the waves keep coming.
 
 
-  In a run you survive endless waves of emoji monsters and take chaotic upgrades
-  that evolve your mage's build. The goal is to wipe out the horde with
-  spellcraft before it wipes you out.
+  The Wind Mage shows how a whole kit can hang on a single idea.
 
 
-  An archive panel on the menu tracks progress across 22 trials and 6
-  achievements, all starting at zero. Two of the trials are surviving 5 minutes
-  in a single run and reaching level 10 in a single run. A sound button sits in
-  the top corner.
+  Gale Ring is a point-blank burst that knocks enemies back, and Crosswind Strip
+  is a wind lane that travels with you and shreds packs. Tempest Mode adds a
+  storm core that chains displacement, so this mage spends its time shoving the
+  horde around instead of just shooting it.
+
+
+  The goal is right there under the logo: survive the horde, evolve your build
+  and erase the map with spellcraft. The creator calls the upgrades chaotic,
+  which suits a horde made of tiny faces.
+
+
+  There's also a progress panel on the title screen, so your runs count for
+  something.
+
+
+  It tracks 22 trials and six achievements, all sitting at zero until you start.
+  Early ones ask you to survive five minutes in a single run, reach level 10, or
+  unlock every active class skill in one go, which is a pretty clear nudge to
+  build with a plan.
+
+
+  The creator had always wanted to make a complete game from scratch, and AI is
+  what finally let them do it.
 play:
   url: https://emoji-survivors.fun
   embeddable: true

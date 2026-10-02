@@ -2,23 +2,34 @@ slug: aeralis
 title: Aeralis
 tagline: Fly and fight other players in a fast multiplayer third-person space shooter.
 description: >-
-  You control a hooded character seen from behind, running across a glowing blue
-  plain dotted with crystals under a dark purple sky. Aiming is third person
-  with a hexagonal reticle. Left mouse fires the Nullifier, which shows 28
-  rounds with an unlimited reserve, and right mouse aims down sights.
+  You're a hooded character running across a glowing blue alien landscape dotted
+  with crystals, and the camera floats behind your shoulder while you shoot.
 
 
-  Movement goes beyond running: you can jump, crouch and slide. A timer sits at
-  the top center between two kill counters and a rank marker, and a leaderboard
-  panel in the corner lists you as Player. Health starts at 100. A banner
-  announces an upcoming wave, such as Damage, which deals 60 damage.
+  On top of running and jumping, you can crouch and slide, which fits the
+  creator's aim of a fast movement shooter in the spirit of Tribes, Destiny and
+  Titanfall. Space games like Star Citizen, Starfield and No Man's Sky are the
+  other influence.
 
 
-  A compass strip shows your heading in degrees, and a circular minimap marks an
-  exit point. A separate lightning ability sits on the F key, and reload and map
-  each have their own key. The creator describes it as a fast multiplayer
-  third-person shooter, drawing on movement shooters like Tribes, Destiny and
-  Titanfall and on space games like Star Citizen, Starfield and No Man's Sky.
+  Your weapon is the Nullifier, and its counter shows 28 rounds with an infinity
+  sign where the reserve would be. Hold the right mouse button to aim down
+  sights and tap R to reload. F fires a lightning ability that the HUD calls
+  your tactical.
+
+
+  A banner at the top announces the upcoming wave, and the one on screen says it
+  deals 60 damage.
+
+
+  Your kill count sits beside a rival's, with a countdown clock between them
+  that starts a little under five minutes. A leaderboard on the right and an
+  alive counter show who else is in the match, because it's built as an online
+  shooter.
+
+
+  The round minimap has a compass and marks an exit, and pressing M opens a full
+  map.
 play:
   url: https://playaeralis.com
   embeddable: true

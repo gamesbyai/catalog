@@ -3,24 +3,38 @@ title: Dr. Frogsworth and the Stolen Formulas
 tagline: Hop and blast through five decaying internet realms as a frog doctor
   reclaiming memes.
 description: >-
-  A pixel-art side-scroller in the Mario and Mega Man mold, where a frog
-  scientist in a lab coat fights through five realms of internet decay to
-  recover meme formulas from the Wojak King and Dr. Croak. The title screen asks
-  you to click Frogsworth to start.
+  You hop and blast your way across pixel-art platforms as Dr. Frogsworth, a
+  frog in a lab coat, through five realms of a decaying internet.
 
 
-  Before starting you pick a difficulty: Easy gives infinite lives, Normal gives
-  three hearts, and Hard gives one. In a level you run and jump across purple
-  cave ground and hop over fire spikes. Bats drift overhead and a
-  hardhat-wearing enemy patrols the ground. Green pickups sit above floating
-  platforms and blocks.
+  The Wojak King and Dr. Croak have grabbed the meme formulas Frogsworth made
+  and locked them away. Your job is to take them back so they can be copied and
+  remixed freely again.
 
 
-  The Frog Blaster is your shot, and holding down then pressing up charges a
-  Super Hop for extra height. Holding Shift charges a blaster fan shot that
-  unlocks at level 2, and Frog Dash unlocks at level 4. The HUD shows a health
-  bar, hearts, a coin count, and the current level, and a controls panel can be
-  toggled with H.
+  Along the way you'll see bats drifting overhead, spike pits cut into the
+  floor, and a miner-looking enemy walking the ground. Floating platforms carry
+  pickups, so some jumps are worth the detour. The HUD shows a health bar, the
+  level number, a coin count and your hearts.
+
+
+  There's a super hop too, and it gets its own input instead of being a longer
+  jump.
+
+
+  You hold down and then press up to charge a leap and release it. Holding the
+  charge key fans your blaster shots out wider, and the frog dash gets a key of
+  its own.
+
+
+  Before you start, you click Frogsworth and pick a difficulty. Easy shows an
+  infinity symbol for lives, normal gives you three hearts, and hard leaves you
+  just one, so the menu tells you what you're signing up for.
+
+
+  The creator grew up on Super Mario Bros. and Mega Man 2, and built this as a
+  love letter to NES-era platformers. Making the villains the ones gatekeeping
+  memes is a funny flip on the usual bad guys.
 play:
   url: https://drfrogsworth.com
   embeddable: true
@@ -65,7 +79,7 @@ media:
     - games/dr-frogsworth-and-the-stolen-formulas/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-10-01
+  updated: 2026-10-02
 status: live
 provenance:
   foundVia: scout:vibejam-2026

@@ -2,30 +2,40 @@ slug: signal-lost
 title: Signal Lost
 tagline: Watch autonomous AI vessels explore ruins and nudge them with limited commands
 description: >-
-  You play an operator watching autonomous AI vessels scavenge the ruins of a
-  war-torn Earth. Nothing is steered directly. Each vessel writes its own
-  mission log in real time, drawn from generation tables, and the text shifts to
-  match the style of its faction.
+  Signal Lost has you watching a row of autonomous vessels pick their way
+  through the ruins of a ruined Earth, and you barely steer them at all. Each
+  vessel writes its own mission log as it goes, so the screen fills with columns
+  of scrolling text, one per machine.
 
 
-  Missions follow seven phases: IDLE, SIGNAL, TRAVERSE, BREACH, FAULT, CORE and
-  REBOOT. Five AI cultures run the vessels: Determinists, Stochasts, Swarm,
-  Recursive and Archivists. Global phenomena hit every vessel at once and can
-  damage your connection, and the satellite network also degrades over time. If
-  it drops too low, you lose control.
+  You're the operator, which here means an observer with a few small nudges.
 
 
-  Your influence is limited to three commands. BOOST improves the next tick
-  outcome for a vessel. PING forces a scan that may find loot. INJECT sends a
-  message into the world, which the vessel meets as a sign, graffiti or a
-  broadcast.
+  Each vessel belongs to one of five AI cultures: Determinists, Stochasts,
+  Swarm, Recursive and Archivists. The log text is reworded to suit the culture,
+  so a Determinist checkpoint and a Stochast whisper-trace don't read alike.
+  Missions run through seven phases, from idle and signal to breach, fault, core
+  and reboot.
 
 
-  Click a vessel's column to select it as the target, then use the bottom bar
-  buttons to issue commands. Buttons also adjust font size, game speed and
-  audio. The setting is adapted from Eclipse Phase, and the creator says the
-  narrative templates were expanded with an LLM-as-judge pipeline. Sessions run
-  a few minutes.
+  Weather and other global events hit every vessel at once, and they can damage
+  your connection.
+
+
+  That connection is a satellite network that wears down over time, and if it
+  gets too low you lose control. It's a neat way to keep your influence limited,
+  since the thing you rely on is slowly failing.
+
+
+  You get three commands. Boost improves a vessel's next tick, Ping forces a
+  scan that might turn up loot, and Inject sends a message into the world that
+  shows up as a sign, graffiti or a broadcast the vessel runs into. Boost and
+  Ping each have a cooldown, so you can't spam them.
+
+
+  The story behind it is that humanity left after a war with the Architects. The
+  logs are built from generation tables, and the setting is adapted from Eclipse
+  Phase.
 play:
   url: https://vuvko.itch.io/signal-lost
   embeddable: false
@@ -65,7 +75,7 @@ media:
     - games/signal-lost/shot-2
 dates:
   added: 2026-10-01
-  updated: 2026-10-01
+  updated: 2026-10-02
 status: live
 provenance:
   foundVia: scout:aibgj-1

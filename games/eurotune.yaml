@@ -2,21 +2,31 @@ slug: eurotune
 title: eurotune
 tagline: Answer Eurovision questions in a quick quiz built for phones and browsers.
 description: >-
-  The start screen offers three difficulty settings, Easy, Regular and Expert,
-  and a Start Playing button. Easy mode draws only from the top five grand-final
-  finishers of each year. The game plays five Eurovision song clips, one per
-  round.
+  You land on a dark screen with a big headline about hearing five Eurovision
+  songs and proving you know the stage. A numbered list on the right shows how a
+  round goes. Under the headline there's a difficulty switch with an orange
+  Start Playing button beside it.
 
 
-  Each round opens with a clip. You then work through four questions about it:
-  the country that entered the song, the exact year it appeared in the contest,
-  the performing artist, and the song title. The game reveals the answers at the
-  end of the round.
+  Each round starts with a song clip. Your job is to pin down the country, the
+  year it entered the contest, the artist and the song title before the reveal.
 
 
-  The questions come in a fixed order. You pick the country first, then the
-  year, then the artist, and you finish by choosing the title. A full game is
-  five clips, so you answer twenty questions in total.
+  So that's four separate guesses per song, with no coasting on a catchy chorus.
+
+
+  The steps run in a set order. You match the country first, then pick the exact
+  year, then name the performer, and you finish by choosing the right song
+  title, which makes a game five songs long.
+
+
+  Easy is already selected when you arrive, so you can hit Start Playing right
+  away.
+
+
+  The switch also offers Regular and Expert. On Easy you only hear entries that
+  finished in the grand-final top five of their year, so the songs come from the
+  contest's biggest results rather than the obscure corners.
 play:
   url: https://eurotune.net
   embeddable: true
@@ -50,7 +60,7 @@ media:
     - games/eurotune/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-10-01
+  updated: 2026-10-02
 status: live
 provenance:
   foundVia: scout:vibejam-2026

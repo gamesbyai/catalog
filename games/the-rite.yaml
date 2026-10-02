@@ -2,26 +2,32 @@ slug: the-rite
 title: The Rite
 tagline: Fight other players in a fast multiplayer arena shooter in your browser.
 description: >-
-  The Rite drops you into a first-person arena match against other online
-  players. You shoot your way around the map, and the first player to reach 20
-  kills wins. A 10-minute countdown sits at the bottom of the screen, and a
-  banner at the top names the current leader.
+  The Rite puts you in a first-person arena match against other players online,
+  and whoever reaches 20 kills first takes it.
 
 
-  The loadout panel lists two weapons at a time, such as pistols and a
-  machinegun or a machinegun and a shotgun. The selected weapon is highlighted.
-  A vitals panel tracks health and a separate shield meter, and distance markers
-  float over other players.
+  A countdown clock sits at the bottom center of the screen, and a banner at the
+  top tells you who's leading, or that nobody is yet. Your health and shield are
+  in the lower left. You begin with 100 health and an empty shield.
 
 
-  The screens show different maps. One is a round icy chamber with a pool at its
-  center and glowing pink and blue walls. Another is a dark corridor of brick
-  and stone. A live chat feed lists players joining and trading messages, and
-  the corner shows your ping to a US server.
+  You carry two weapons, and a loadout panel in the lower right lists them with
+  the one in your hands highlighted. The pairs on screen are pistols with a
+  machinegun, and a machinegun with a shotgun.
 
 
-  The creator's stated inspiration is Unreal Tournament, which Epic no longer
-  releases alongside each new Unreal Engine version.
+  Other players get a distance in meters floating over their heads.
+
+
+  The arenas look pretty different from each other. One is a pale stone hall
+  with a round pool in the middle, and another is a dim room of rough red brick,
+  and both use chunky, pixelated textures.
+
+
+  A chat feed runs down the right side, showing players joining and trading
+  quick taunts, and you press P to type your own. The creator says the idea came
+  from Epic no longer releasing a new Unreal Tournament alongside each Unreal
+  Engine release.
 play:
   url: https://therite.magooney.org
   embeddable: true

@@ -3,27 +3,35 @@ title: Alien Escape Pinball
 tagline: Work the flippers, hit ramps, and crack alien eggs to survive an
   invasion in pinball.
 description: >-
-  Hold Space to pull the plunger and launch the ball, then work the flippers to
-  keep it in play. Each fresh ball starts with a skill shot: a strobing rollover
-  lane that pays a bonus if you hit it. Drain every ball and the aliens win.
+  Pull the plunger to launch the ball, then work the flippers to keep it alive.
+  It's a pinball table under alien attack, so you're hitting ramps, poking eyes,
+  breaking eggs and knocking down targets while the invasion goes on around you.
 
 
-  The table has slingshots, bumpers, drop targets, a spinner and two ramps. Hit
-  each ramp three times to start multiball. Smash the egg and capture it for
-  repeatable jackpots; it also hatches an alien that appears in one of four
-  forms. Killing aliens refreshes the ball saver.
+  Each ramp needs three hits, and once both are done you get multiball. The egg
+  is the other big target, because smashing and capturing it sets up jackpots
+  you can repeat. Whatever hatches from it comes in four different forms, and
+  killing those aliens refreshes your ball saver, which is a nice reason to go
+  after them.
 
 
-  Spelling A-L-I-E-N raises the end-of-ball bonus multiplier up to 5x and
-  briefly lights an extra ball. Alternating target and lock hits within five
-  seconds scores combo points. Wizard mode combines the 5x multiplier with
-  multiball, and breaking the egg then spawns a boss alien.
+  There's a strobing rollover lane on every fresh ball for a skill shot bonus.
+  Spelling ALIEN raises your end-of-ball multiplier up to 5x, and an extra ball
+  lights up briefly right after you finish the word. Alternate between target
+  and lock hits within five seconds and you get combo points.
 
 
-  You can nudge the table by swiping or with keys, and the game plays with
-  mouse, keyboard, gamepad or touch. Text-to-speech voice lines are spoken in
-  real time, and the game includes three songs. The creator says the code, art
-  and sound were made with heavy AI use.
+  Wizard mode stacks the 5x multiplier with multiball, and breaking the egg then
+  spawns a boss alien. That's a pretty big payoff for finishing the word.
+
+
+  The table runs on Box2D physics, with slingshots, bumpers, drop targets and a
+  spinner. You lose when every ball drains and the aliens win.
+
+
+  Claude Opus wrote the code in VS Code, GPT Image 2 made the artwork and title
+  screen, and Suno made the three songs. The voice you hear is real-time text to
+  speech through the browser.
 play:
   url: https://focaccai.itch.io/alien-pinball
   embeddable: false
@@ -71,7 +79,7 @@ media:
     - games/alien-escape-pinball/shot-2
 dates:
   added: 2026-09-30
-  updated: 2026-10-01
+  updated: 2026-10-02
 status: live
 provenance:
   foundVia: scout:aibgj-2

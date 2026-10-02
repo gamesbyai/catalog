@@ -3,26 +3,36 @@ title: "Tharsis: Martian Combat"
 tagline: Build a base on Mars, harvest crystals, and destroy the enemy base in
   real time.
 description: >-
-  The setting is Mars, and the goal is to wipe out the enemy base. You start by
-  building a base and sending harvesters after crystals, then spend those
-  resources on an army. Fog of war hides the map until your units scout it.
+  Tharsis: Martian Combat has you drag a box around your troops and right-click
+  to send them across the Martian surface. You harvest green crystals to pay for
+  your base and your army, in the spirit of the classic Command & Conquer games.
 
 
-  The roster has more than 12 unit types: riflemen, snipers, tanks, APCs, rocket
-  artillery, the Behemoth super-tank and the Manticore gunship, along with VTOL
-  gunships. Support powers add extra options during a fight.
+  You win by destroying the enemy base, so everything you build is there to get
+  your army to that point.
 
 
-  Skirmish mode pits you 1v1 against an AI set to Easy, Normal, Hard or Brutal.
-  Matches can be customized by starting resources, map seed and starter units.
-  An AI vs AI spectator mode lets you watch instead of play. Online 1v1 through
-  Wavedash lobbies is still in progress.
+  In a skirmish you face one AI opponent on Easy, Normal, Hard or Brutal, so you
+  pick how tough a fight you want. You can also change the starting resources,
+  the map seed and the starter units before the match begins.
 
 
-  Select units with the left mouse button or drag a box, then right-click to
-  move or attack. The design draws on classic Command & Conquer. It is written
-  in vanilla JavaScript on an HTML5 canvas, with a sci-fi soundtrack and sound
-  effects.
+  There are more than twelve unit types, including riflemen, snipers, tanks,
+  APCs and rocket artillery. The Behemoth super-tank and the Manticore gunship
+  are in the roster too, and VTOL gunships mean some of the fighting happens in
+  the air. Fog of war hides the map until your units scout it, and you can call
+  on support powers as well.
+
+
+  If you'd rather just watch, there's an AI vs AI spectator mode that lets the
+  computer play both sides.
+
+
+  A sidebar on the right shows your money and supply count, a minimap, sell and
+  repair buttons, and tabs for building, units and support. Online 1v1 through
+  Wavedash lobbies is still a work in progress, so skirmish is the mode that's
+  ready. Pressing A sends a group attack-moving, which is handy when you don't
+  want to micromanage every shot.
 play:
   url: https://cheesyerwin.itch.io/tharsis-martian-combat
   embeddable: false
@@ -63,7 +73,7 @@ media:
     - games/tharsis-martian-combat/shot-2
 dates:
   added: 2026-10-01
-  updated: 2026-10-01
+  updated: 2026-10-02
 status: live
 provenance:
   foundVia: scout:aibgj-2

@@ -2,23 +2,32 @@ slug: bees-vs-wasps
 title: Bees vs Wasps
 tagline: Gather flowers as a bee and get back to the hive before angry wasps catch you.
 description: >-
-  A blocky pixel-art forest meadow fills the start screen, with flowers, trees
-  and a tall sunflower, and a bee hovering behind the title. You type a name
-  before starting. A sound toggle sits in the top corner.
+  You start on a blocky pixel-art forest floor, with sunflowers and pink
+  blossoms scattered between the trees and a bee hovering behind the title.
+  There's a box for your name before you head in.
 
 
-  You play a bee. The goal is to gather flowers and carry them back to the hive
-  without dying to the angry wasps. The creator wanted something you can jump
-  into right away.
+  The job is to collect flowers and then get yourself back to the hive.
 
 
-  Levels add new elements as you climb. Honeycomb and extra lives appear, and
-  deadlier wasps arrive: the Tarantula Hawk at level 12 and the Executioner at
-  level 15. Both were inspired by Brave Wilderness videos of getting stung.
+  Angry wasps are out there hunting you, so you can't just drift from bloom to
+  bloom. Getting home in one piece is the other half of the job.
 
 
-  Wasp spawns first followed the Fibonacci sequence, the idea the game grew
-  from, but that produced too many wasps, so the creator capped the numbers.
+  As you climb through levels, the game starts adding things, like honeycomb and
+  extra lives, while more lethal wasps show up too. The Tarantula Hawk arrives
+  at level 12 and the Executioner at level 15, and the creator took both from
+  watching Brave Wilderness get stung by them on YouTube. That's a funny place
+  to find your bosses.
+
+
+  Extra lives arriving alongside nastier wasps seems like a fair trade.
+
+
+  The whole idea began with the creator's interest in the Fibonacci sequence,
+  which led to sunflowers and then to bees. The wasps first spawned in Fibonacci
+  numbers, but that turned into too many, so the count is capped now. The aim
+  was something you can jump into right away.
 play:
   url: https://beesvswasps.com
   embeddable: true
@@ -55,7 +64,7 @@ media:
     - games/bees-vs-wasps/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-10-01
+  updated: 2026-10-02
 status: live
 provenance:
   foundVia: scout:vibejam-2026

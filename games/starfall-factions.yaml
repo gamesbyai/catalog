@@ -3,21 +3,31 @@ title: Starfall Factions
 tagline: Mine pastel planets, take risky contracts, and upgrade your ship as a
   broke rookie pirate.
 description: >-
-  You start Starfall Factions as a broke rookie pirate, and the money has to
-  come from somewhere. It is a cozy open-world space adventure in which you fly
-  between pastel planets, mine resources, and take on risky contracts to earn
-  it.
+  When the game loads, you get a menu with two cards: a Singleplayer one with a
+  Begin button, and a Cooperative one that's dimmed behind a coming soon lock.
 
 
-  The earnings go into ship upgrades, and the upgrades let you handle bigger
-  jobs, so the loop runs from exploring to gathering to spending and back out
-  again. Factions, salvage, and trouble in this strange, living star system
-  shape what you find along the way.
+  Starting solo, you choose a faction and paint your ship, which sets you up as
+  a rookie pirate with nothing in your pockets. Then you head out into a pastel
+  star system that's open for you to roam.
 
 
-  The creator, working with Claude Code, aimed for a smaller, more focused take
-  on the feeling of getting lost in a beautiful sci-fi world. That is why the
-  look is soft and pastel rather than gritty.
+  You land on planets and mine them for resources, and those resources go into
+  upgrading your ship. Contracts are another way to make money, though they're
+  risky. Salvage gives a pirate on a budget one more thing to chase.
+
+
+  The system around you is described as alive, which is a funny thing to read
+  about a place crowded with rival factions and trouble.
+
+
+  The creator was inspired by the feeling of losing yourself in a gorgeous
+  science fiction setting. They wanted to shrink that idea into something cozier
+  and tighter, so the draw is slowly figuring out what the system is hiding
+  rather than crossing a giant map.
+
+
+  The menu tags the build you start with as version 0.5.0, called Pirate Cut.
 play:
   url: https://starfallfactions.vercel.app
   embeddable: true
@@ -53,7 +63,7 @@ media:
     - games/starfall-factions/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-09-29
+  updated: 2026-10-02
 status: live
 provenance:
   foundVia: scout:vibejam-2026

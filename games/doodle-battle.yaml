@@ -2,21 +2,29 @@ slug: doodle-battle
 title: Doodle Battle
 tagline: Sketch a picture, let AI name it, then watch it fight your opponent's drawing.
 description: >-
-  The start screen offers three big buttons. Quick Play joins a game
-  automatically, Create Room sets up a room for inviting friends, and Join Room
-  takes a room code or lets you browse open rooms. A Tutorial button and a
-  profile icon sit in the top corner.
+  When the game loads you get three big glossy buttons under the chunky Doodle
+  Battle logo. Quick Play puts you into a game automatically, Create Room sets
+  one up so you can invite friends, and Join Room lets you enter a code or
+  browse rooms. A Tutorial button sits in the top corner next to a small profile
+  icon.
 
 
-  Each match is built around drawing. You sketch something, an AI guesses what
-  the drawing is, and then your doodle battles the one your opponent drew.
-  Matches run over several rounds, and a room can hold several players at once
-  online.
+  You draw something, and then that drawing has to go fight for you.
 
 
-  The room creator picks the maximum number of players, a round limit, the
-  drawing time and whether the room is private or public. The setup screen shows
-  4 players, 5 rounds and a 60 second drawing timer as its starting values.
+  A match starts with you sketching something. Then an AI guesses what your
+  drawing is, and that drawing battles the one your opponent made. It's a funny
+  chain, because your scribble has to be recognized by an AI before it gets to
+  fight.
+
+
+  If you make a room, you choose the maximum number of players and the round
+  limit from two dropdowns, which start at 4 players and 5 rounds.
+
+
+  Drawing time is a slider that starts at 60 seconds, so you can give everyone
+  more or less time to sketch. Right below it, a visibility switch lets you pick
+  Private or Public, and Public is already selected when you open the screen.
 play:
   url: https://doodlebattle.online
   embeddable: true
@@ -52,7 +60,7 @@ media:
     - games/doodle-battle/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-10-01
+  updated: 2026-10-02
 status: live
 provenance:
   foundVia: scout:vibejam-2026

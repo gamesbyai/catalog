@@ -3,26 +3,35 @@ title: Forge&Fate
 tagline: Fight through isometric dungeons, collect loot, and forge gear to chase
   a top score.
 description: >-
-  The aim is to post the best score on the leaderboard by fighting through an
-  isometric dungeon with a character built from loot and forged gear. Combat is
-  tactical, enemies scale as you progress, and loot drops along the way.
+  You're playing for the best score on the leaderboard, and you get there by
+  fighting through an isometric dungeon, picking up loot, and building a
+  stronger hero between trips. The combat is tactical, and the enemies scale up,
+  so what you wear and carry matters. A red Enter Dungeon button on the side
+  menu sends you in.
 
 
-  The game opens on a character screen for Shadowcaller, who starts with 100
-  health and 5 each in strength, agility and dexterity. Drag items from the
-  inventory onto the weapon, helmet, armor, shield and boots slots to equip
-  them. Armor and damage start at 0.
+  Everything else happens in a menu hub with tabs for Character, Gathering,
+  Forge, Materials and Leaderboard. There's also a sound toggle at the bottom,
+  which is handy to have right there.
 
 
-  A side menu leads to Gathering, Forge, Materials and Leaderboard screens, plus
-  a red Enter Dungeon button and a sound toggle. The forging system lets you
-  make your own items. Inventory is split across eight bags. The first holds a
-  sword, a helmet, chest armor, boots and a purple crystal.
+  The forge is there so you can make your own gear instead of only finding it.
 
 
-  The creator drew on classic role-playing games, especially the sense of
-  exploring and growing a little at a time as you collect items and make your
-  own.
+  On the Character tab you see your hooded pixel-art hero with stats for health,
+  strength, agility, dexterity, armor and damage. Around the portrait are slots
+  for helmet, weapon, armor, shield and boots, and you drag items from your
+  inventory onto them. A Change Name button lets you rename the hero, and names
+  like Shadowcaller and Venomhand show up, which are pretty good ones.
+
+
+  The inventory is spread over eight bags, which is a lot of room for a
+  character who starts with five items.
+
+
+  Those starting items in the first bag are a sword, a helmet, a chest piece,
+  boots and a purple crystal. The creator was inspired by that RPG feeling of
+  exploring and growing little by little as you collect items and make your own.
 play:
   url: https://forgeandfate-ebon.vercel.app
   embeddable: true
@@ -60,7 +69,7 @@ media:
     - games/forge-fate/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-10-01
+  updated: 2026-10-02
 status: live
 provenance:
   foundVia: scout:vibejam-2026

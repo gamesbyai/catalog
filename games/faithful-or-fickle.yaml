@@ -3,27 +3,41 @@ title: Faithful Or Fickle
 tagline: Play a black cat familiar who secretly steers a manor's fate across
   several eras
 description: >-
-  You play a black-cat familiar to the lord or lady of a manor, in a pixel-art
-  platformer. Each era, from the 1400s to the early 1900s, has a map you cross
-  toward the far right, where the ruler fights a battle. The condition of the
-  estate decides whether they win or lose.
+  Faithful Or Fickle has you playing a black cat who serves as the familiar of a
+  manor's lord or lady, running and clawing through a side-scrolling castle. You
+  can help the household or quietly sabotage it, and you're free to switch sides
+  as often as you like with the B key.
 
 
-  The ruler pulls you into short familiar duties quite often. In your free time
-  you roam. Press B where spies try to bribe you to switch sides, let
-  infiltrators in, or re-swear your loyalty and recruit allies. You can switch
-  as often as you like.
+  The ruler is a bit inept, so when you let infiltrators in, the manor slowly
+  runs down. They sense something's off but can't tell why, and they burn their
+  own energy trying to fix it, while your service record still looks great.
 
 
-  To start the battle you must first find two house-needs items. The core route
-  stays in the middle band with the ground, the road and the manor, where most
-  powerups sit. You can also climb to the heights or drop into the deeps to
-  fight large beasts such as dragons.
+  Spies who try to bribe you are your way to the dark side, and swearing your
+  loyalty again is how you come back to the good one.
 
 
-  There are no extra-life pickups. You have nine lives, and when they are gone
-  the run is over. Frame-skip options let the game show more detail on faster
-  machines, though the creator says the deeps feel quite empty.
+  Each era ends with a battle at the far right of the map, and the shape your
+  estate is in decides whether the ruler wins. Before the fight can start you
+  have to find two of the house-needs items, so the screen keeps a counter for
+  them. After the battle you move on to the next era, somewhere between the
+  1400s and the early 1900s.
+
+
+  You get nine lives and no extra-life pickups, because there are already so
+  many ways to build up offensive power.
+
+
+  You can keep to the middle strip where the ground, the road and the manor
+  house sit, which plays a lot like Rastan and holds most of the powerups. Or
+  you can head far up into the heights or deep below to fight bigger beasts like
+  dragons. The creator admits the deeps feel pretty empty, which is an honest
+  thing to say upfront.
+
+
+  Your lord or lady will also grab you mentally and order you around on witchy
+  chores for short stretches, but the rest of the time is yours.
 play:
   url: https://exedexes1.itch.io/faithful-or-fickle
   embeddable: false
@@ -62,7 +76,7 @@ media:
     - games/faithful-or-fickle/shot-2
 dates:
   added: 2026-10-01
-  updated: 2026-10-01
+  updated: 2026-10-02
 status: live
 provenance:
   foundVia: scout:aibgj-3

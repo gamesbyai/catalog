@@ -2,23 +2,36 @@ slug: the-bad-bunch
 title: The Bad Bunch
 tagline: Place monkey defenders to stop waves of bad bananas in a jungle last stand.
 description: >-
-  You place monkey towers along a winding dirt path to stop waves of angry
-  bananas before they reach your city, which starts with 100 health and $200.
-  Each level opens with a mission card. Level 1 asks you to survive to Wave 20
-  for 3 gems.
+  You're in charge of a troop of jungle monkeys, and you start with $200 to
+  spend on towers along a winding dirt path. The bad bananas come down that path
+  in waves, and a countdown tells you when the next one shows up.
 
 
-  The shop on the right lists four monkeys: Basic for $50, Ice for $75, Flame
-  for $150 and Lightning for $225. Lightning appears greyed out at the start. A
-  countdown shows when the next wave arrives and how many bananas are in it. A
-  selected tower can be sold or deselected.
+  The shop on the right has four monkeys: Basic for $50, Ice for $75, Flame for
+  $150 and Lightning for $225. Pick one, put it down beside the path, and if you
+  change your mind you can cancel the placement or sell a tower you've already
+  built.
 
 
-  Clearing a level pays out gems and unlocks the next one. Gems go toward monkey
-  upgrades, which you reach from the main menu, and levels 3 to 8 have been
-  added. During a run you can pause, switch between 1x and 2x speed, mute the
-  sound or go fullscreen. A father and his 10-year-old son made it together,
-  inspired by Bloons.
+  Your city has 100 health, and that's what you're protecting.
+
+
+  Level 1 asks you to last until wave 20. If you make it, you get 3 gems and
+  level 2 opens up, which is a pretty clear reason to keep going.
+
+
+  The gems pay for monkey upgrades from the main menu, so what you earn in one
+  level makes the next one easier to handle. Levels 3 through 8 were added after
+  the first release.
+
+
+  You can pause, switch between normal and double speed, mute the sound or go
+  fullscreen from the buttons on the left.
+
+
+  A father and his 10-year-old son made it together, because the boy asked to
+  build a game with him and he loves Bloons. You can see that in the angry-faced
+  bananas, which are a funny bunch of villains for a tower defense.
 play:
   url: https://thebadbunch.com
   embeddable: true
@@ -57,7 +70,7 @@ media:
     - games/the-bad-bunch/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-10-01
+  updated: 2026-10-02
 status: live
 provenance:
   foundVia: scout:vibejam-2026

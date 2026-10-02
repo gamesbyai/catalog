@@ -2,22 +2,28 @@ slug: ironclash
 title: ironclash
 tagline: Fight multiplayer battles from tanks, helicopters, and FPV drones.
 description: >-
-  The round goal is to capture or neutralize a sector. Two sides fight over the
-  objectives: the armor side advances with a tank and infantry, capturing
-  sectors to reach a point target before time runs out. The drone side holds out
-  until the timer expires.
+  The round comes down to sectors. One side leads an armored push with a tank
+  and infantry, capturing sectors to reach a point target before the timer runs
+  out. The other side flies FPV drones out of cover to break that advance and
+  hold out until time expires.
 
 
-  You enter a callsign of 1 to 16 characters, then join an online match where
-  your team and role are assigned for you. Roles include driving a tank, flying
-  a helicopter, or piloting an FPV drone from cover to stop the advance and find
-  openings in the enemy line.
+  You don't choose which job you get, because your team and role are assigned
+  when you join.
 
 
-  It is a multiplayer first-person shooter built around combined arms, with
-  armor breaking the line while drones strike from above. The creator took
-  inspiration from playing Black Ops when young. The title screen also offers a
-  training option and a share link.
+  All you need to get in is a callsign of up to 16 characters. Helicopters are
+  part of the vehicle mix too, alongside the tanks and drones.
+
+
+  The round goal on the title screen is to capture or neutralize a sector, which
+  tells you the fight is about holding ground and not just racking up kills.
+  There's also a repeatable training option you can run before you join a match,
+  which is a kind thing to offer in a game with this many vehicle types.
+
+
+  The creator grew up playing Black Ops and built this to recreate that kind of
+  combat.
 play:
   url: https://ironclash.xyz
   embeddable: true
@@ -54,7 +60,7 @@ media:
     - games/ironclash/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-10-01
+  updated: 2026-10-02
 status: live
 provenance:
   foundVia: scout:vibejam-2026

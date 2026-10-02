@@ -2,23 +2,37 @@ slug: build-destroy-fortress-duel
 title: Build & Destroy - Fortress Duel
 tagline: Build a fragile fortress, then smash it apart in a physics sandbox.
 description: >-
-  The game has two halves: you build a fortress, then you knock one down. In
-  Builder Mode you stack stone, wood, and glass around a flag, working within a
-  budget of 30 points. The goal is a structure that can protect that flag.
+  You stack stone, wood and glass into a fortress, and then you go knock down
+  other people's fortresses with a siege launcher. The game is split into two
+  modes, so what you build in one is the kind of thing you're smashing in the
+  other.
 
 
-  In Destroyer Mode you attack fortresses with a siege launcher. You choose your
-  ammo, aim the launcher, and fire to capture the flag. The ammo available
-  depends on the choices made in the fortress you are attacking.
+  In Builder Mode you get 30 points to spend, and everything has to be arranged
+  around your flag. Because the budget is fixed, you have to decide which
+  materials are worth putting between the flag and an incoming boulder.
 
 
-  A leaderboard tab ranks the best defenses and the cleanest captures. The menu
-  shows a fantasy castle backdrop, with separate buttons for building,
-  attacking, and checking ranks.
+  Destroyer Mode flips it around. You pick your ammo, aim the launcher at a
+  rival fortress and try to capture its flag.
 
 
-  The creator wanted to let players make their own levels in a physics sandbox
-  after years of playing Angry Birds-style games.
+  The ammo you can choose comes from the choices other builders made, which is a
+  neat way to tie the two sides together.
+
+
+  There's also a leaderboard that ranks the best defenses and the cleanest
+  captures, so building well and attacking well each get their own place to show
+  up.
+
+
+  The creator carried the idea around for about ten years, ever since playing a
+  lot of Angry Birds and wondering why games like that never let players make
+  their own levels. This is their answer to that question.
+
+
+  The look is painted medieval fantasy, with castles on green hills, blue and
+  red banners, and a boulder streaking across an orange sky.
 play:
   url: https://launchingdock.com
   embeddable: true
@@ -54,7 +68,7 @@ media:
     - games/build-destroy-fortress-duel/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-10-01
+  updated: 2026-10-02
 status: live
 provenance:
   foundVia: scout:vibejam-2026

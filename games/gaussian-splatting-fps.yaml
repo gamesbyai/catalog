@@ -2,22 +2,35 @@ slug: gaussian-splatting-fps
 title: Gaussian Splatting FPS
 tagline: Shoot your way through a first-person level built from a real-world 3D scan.
 description: >-
-  You move through a first-person view of a real place captured as a Gaussian
-  Splat scan. Move with WASD, crouch with C, and fire a carbine with the mouse
-  button. A crosshair sits at screen center, and a red health bar and a 30 / 30
-  ammo counter show in the corners.
+  You move through a real place that someone scanned into a Gaussian splat, and
+  you shoot with a carbine that starts on a full 30-round magazine. Up close the
+  walls and floors break into soft, smeared shapes, because a splat is a cloud
+  of points instead of modeled surfaces. A red health bar sits in the bottom
+  corner.
 
 
-  Splat scans are static and carry no geometry, so the game has to supply
-  collision, dynamic objects, navigation and rendering compatibility itself. The
-  creator worked through these with an AI code editor and says most of them were
-  solved. The scan renders as soft, blurred surfaces with smeared detail up
-  close, and the screen edges have a curved, vignetted look.
+  The blurry scan makes a funny contrast with the sharp, detailed gun in your
+  hands.
 
 
-  The carbine model is by DJMaesen on Sketchfab, and the splat environment is by
-  Christoph Schindelar. The creator also published a writeup on the PlayCanvas
-  blog covering how the scan was turned into a playable level.
+  A splat is a static capture with nothing solid inside it, which is a strange
+  base for a shooter. Yak32 kept finding scans that looked like perfect shooter
+  or horror levels, so he tried dropping a player into one.
+
+
+  With no geometry underneath, collision, moving objects, navigation and
+  rendering compatibility all had to be worked out from scratch. He tackled them
+  with Cursor and says he cracked most of them, which is a pretty long list for
+  a hobby project.
+
+
+  Making games has been his favorite hobby for years, but he rarely finished
+  anything until AI changed that.
+
+
+  DJMaesen made the carbine model, shared on Sketchfab, and Christoph Schindelar
+  made the scanned environment you're standing in. Yak32 also wrote up the full
+  process of turning a splat into a playable level.
 play:
   url: https://aez.one/gs-fps
   embeddable: true

@@ -2,21 +2,36 @@ slug: videovideogame
 title: VideoVideoGame
 tagline: Choose your path through 100+ video scenes and short minigames as Levelsio.
 description: >-
-  Story mode plays as a choose-your-own-adventure told through short video
-  scenes. Each scene stops on a prompt with text buttons, such as "Pet the dog"
-  or "Storm is coming", and the option you pick decides which clip plays next.
-  Levelsio is the main character.
+  You watch a video, and text buttons pop up over the picture so you can pick
+  what happens next. On a boat scene, for example, you get a choice between
+  petting the dog and warning that a storm is coming.
 
 
-  The opening scenes are set on a boat on a lake, with a dog aboard and hills
-  along the shore. The story runs through more than 100 videos and scenes, so
-  different choices lead to different clips. A separate minigames mode holds a
-  few games, including racing and puzzle types.
+  Levelsio is the main character, and the title screen says the whole thing is
+  made for him.
 
 
-  The menu also has a How to Play screen and a leaderboard. The video plays in a
-  frame beside the menu, with a fullscreen button on the frame and a sound
-  toggle in the top corner. The clips were generated with Seedance.
+  The story runs through more than 100 videos and scenes, which is a lot of
+  footage for a choose-your-own-adventure. Seedance made the clips, and a few
+  minigames sit alongside the story.
+
+
+  The title screen gives you two big buttons, one for Story Mode and one for the
+  minigames.
+
+
+  Under them there's a how-to-play page, so you can check the rules before you
+  start, and a leaderboard.
+
+
+  The creator, javitoshi, says making videos with Seedance was the fun part.
+  They also used the project to try out the new GPT image and Nano Banana 2
+  tools.
+
+
+  Since the clips carry the story, the video player has a fullscreen button. A
+  sound toggle sits in the top corner of the page, so you can mute it whenever
+  you like.
 play:
   url: https://videovideogame.com
   embeddable: true

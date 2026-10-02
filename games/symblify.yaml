@@ -2,27 +2,33 @@ slug: symblify
 title: Symblify
 tagline: Decode a daily phrase by working out what each symbol instructs you to do.
 description: >-
-  Each puzzle gives you a short line of words joined by symbols, and every
-  symbol is an instruction. You work out what the line says, type the phrase
-  into the answer box and press the Enter button. A one-line clue sits under the
-  line. You have four guesses, and four empty rows below the box hold your
-  attempts.
+  You're cracking a hidden phrase from a line of symbols and words plus a short
+  clue. Every symbol is an instruction that means the same thing each time it
+  shows up, so you pick up a small language as you go. The puzzle on screen at
+  the start was a practice one, rated medium.
 
 
-  The practice puzzle, numbered 0, is rated medium and carries two tags,
-  Homophone and Combine. Its line reads ~BRAKE + FAST, and the clue is "The
-  first meal of the day". A new puzzle arrives daily.
+  It showed a tilde in front of BRAKE, a plus sign, and then FAST. Two tags
+  above the line name what those symbols do, with the tilde meaning homophone
+  and the plus meaning combine. The clue read as a description of the first meal
+  of the day.
 
 
-  A symbol keeps the same meaning from one puzzle to the next, so the game is
-  about learning a small language over time and applying it to later lines. An
-  FAQ button sits in the top corner of the page.
+  So you swap BRAKE for a word that sounds like it, then attach FAST.
 
 
-  The screen is styled as neon lettering on a purple brick wall. The creator
-  describes the idea as a cross between word puzzles, cryptic crosswords and
-  maths notation, with the mechanics designed first and the game built around
-  them.
+  You type your answer into a box and press Enter, and you get four guesses.
+  Each guess lands in a row underneath, so you can see what you've already
+  tried. A few small counters sit in the corner, and there's an FAQ button if
+  the symbols leave you stuck.
+
+
+  It's a daily puzzle, so the phrase changes from one day to the next.
+
+
+  The creator wanted something original, a cross between word puzzles, cryptic
+  crosswords and maths notation. The mechanics came first, and the game grew
+  around them afterward.
 play:
   url: https://symblify.app
   embeddable: true
@@ -61,7 +67,7 @@ media:
     - games/symblify/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-10-01
+  updated: 2026-10-02
 status: live
 provenance:
   foundVia: scout:vibejam-2026

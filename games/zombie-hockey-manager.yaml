@@ -2,30 +2,40 @@ slug: zombie-hockey-manager
 title: Zombie Hockey Manager
 tagline: Run an undead hockey team from Division 3 up to the top league.
 description: >-
-  Zombie Hockey Manager puts you in charge of a team of reanimated players in
-  the Undead Puck League. Before each match you set a play style and an
-  aggression level, choosing between offensive and dirty or safe and clean. The
-  text-driven matches then play out from those choices.
+  You're the manager of a team of reanimated hockey players, and you run
+  everything from a set of text screens down the left side of the page. You
+  start in Division 3 with a team called the Frostbite Fiends, 2000 coins and a
+  rating of 54, and the aim is to climb to the top league.
 
 
-  Between games you run the club. Buy, sell and trade players on the transfer
-  market, each with their own stats and a body that is slowly falling apart.
-  Limited training slots go to individual players, or you can run a team-wide
-  camp for a boost across the squad.
+  Before each match you choose a play style and how aggressive the team should
+  be, so you can play dirty and offensive or safe and clean. You can scout the
+  next opponent first and bend your tactics around their weak spots.
 
 
-  Players lose limbs in fights and collisions, and higher decay means more parts
-  come off. You repair what you can and replace what you can't. Scouting the
-  next opponent lets you adjust tactics against their weaknesses.
+  Once a match is running, you get play-by-play calls like a timeout or pulling
+  the goalie.
 
 
-  Money matters too: upgrade the stadium, set ticket prices, run marketing, take
-  out loans and sell merchandise. The season ends with promotion for winning the
-  league or relegation for finishing last, and the goal is to climb from
-  Division 3 to the Necro Elite. Version 1.1 added achievements and in-match
-  options such as timeouts and pulling the goalie. It draws on the 1982 Football
-  Manager for the ZX Spectrum, and the creator credits AI assistance for code
-  and text.
+  Bodies are the odd part here. Players lose limbs in fights and collisions, and
+  the more decayed someone is, the more parts fly off, so you repair what you
+  can and replace what you can't. That makes the goalie's head a real budget
+  item, which is a funny thing to worry about.
+
+
+  You build the squad by buying, selling and trading on the transfer market, and
+  every player has their own stats. Training slots are limited, so you either
+  boost one player or run a whole-team camp for a stat surge.
+
+
+  Money is its own side of the job. You upgrade the stadium, set ticket prices,
+  run marketing campaigns, sell merchandise and take out loans, while a sponsor
+  called Rotting Rick's Spare Parts pays 50 coins a match from the start.
+
+
+  The season runs 18 matches. Win the league and you're promoted, finish last
+  and you face relegation, and it's all modeled on a 1982 Spectrum football
+  management game, with achievements added in the later version.
 play:
   url: https://quantumcodemonk.itch.io/zombie-hockey-manager
   embeddable: false
@@ -59,7 +69,7 @@ media:
     - games/zombie-hockey-manager/shot-2
 dates:
   added: 2026-10-01
-  updated: 2026-10-01
+  updated: 2026-10-02
 status: live
 provenance:
   foundVia: scout:aibgj-4

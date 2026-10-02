@@ -2,22 +2,34 @@ slug: all-in-texas-hold-em
 title: All In Texas Hold'em
 tagline: Play free, uninterrupted Texas Hold'em poker in your browser or on mobile.
 description: >-
-  You sit as Guest at a green felt table with six other seats, each showing a
-  name and a chip count. You start with 100 chips and the other seats start at
-  500. Press Play Now to deal, and your two hole cards appear face up at the
-  bottom of the table.
+  You play Texas Hold'em as Guest at a green felt table, looking at your two
+  face-up cards while six named opponents keep theirs face down. Five empty
+  slots sit in the middle, waiting for the community cards.
 
 
-  A panel on the left names the current stage, such as pre-flop, and shows the
-  total pot. On your turn you choose Fold, Call (the button shows the amount to
-  match), Raise, or All In. Minus and plus buttons beside Raise change the raise
-  amount.
+  Everything you do happens in one panel on the left, so the table itself stays
+  clear.
 
 
-  Five empty slots in the middle of the table are for the community cards.
-  Opponents' cards stay face down, and small labels under their seats, such as
-  Call and Fold, show what each seat did. The creator made it to play Texas
-  Hold'em online without ads.
+  It names the stage of the hand, like pre-flop, and shows the total pot, with
+  four buttons under that: fold, call, raise and All In. The call button has its
+  price printed right on it, so you know what staying in costs before you
+  commit.
+
+
+  Raise comes with minus and plus buttons, so you can set the amount first.
+
+
+  Each opponent has a chip count beside their name, and a small tag pops up over
+  them when they call or fold. A folded player's seat fades out, which makes it
+  easy to see who's still in the hand.
+
+
+  You start with 100 chips while everyone else starts with 500, so you're the
+  short stack from the first deal.
+
+
+  The creator built it because they wanted to play poker online without ads.
 play:
   url: https://allintexasholdem.com
   embeddable: true

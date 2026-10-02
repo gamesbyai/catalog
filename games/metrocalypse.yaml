@@ -2,22 +2,32 @@ slug: metrocalypse
 title: Metrocalypse
 tagline: Shoot zombies and run across rooftops in a shared, persistent city.
 description: >-
-  Metrocalypse puts you in a first-person view over a dense city of brick
-  rooftops, where you shoot zombies and run across the buildings. Click the
-  start panel to enter, then move with the mouse and WASD, jump gaps with space,
-  and hold shift to sprint.
+  Metrocalypse has you shooting zombies and running across the rooftops of a
+  brick-built city, and the creator says they love Dying Light. You've got a gun
+  on left click, a knife on V and a grenade on E. The mouse wheel swaps weapons,
+  and F or right click throws a stone.
 
 
-  You have a gun on left click, a knife on V, grenades on E, and a mouse wheel
-  to switch weapons. F or right click throws a stone. Ctrl crouches, and P
-  switches to a tactical view of the map.
+  The whole city is one map about 952 meters across, so there's a lot of rooftop
+  to cover. Shift sprints, space jumps and ctrl crouches, while P switches you
+  to a tactical view.
 
 
-  The world is persistent and multiplayer, so other players share the city with
-  you. The screen shows a health bar, a level counter that starts at 0, and an
-  experience bar. A status line at the bottom reads quiet before any fighting
-  starts. The city is a single 952 meter map with a fixed seed, and the creator
-  cites Dying Light as inspiration.
+  It's a multiplayer game, and the world is persistent, so the city keeps going
+  between visits.
+
+
+  The creator had wanted to build something multiplayer on SpacetimeDB for a
+  while, and this is the game that came out of it. Along the bottom of the
+  screen you get a green health bar, a level counter that starts at 0 and an
+  experience bar.
+
+
+  Before you play, the game loads a 16 MB pre-baked navigation file.
+
+
+  Once that's done you click the screen to step in, and little figures are
+  already scattered through the streets below the rooftops.
 play:
   url: https://metrocalypse.online
   embeddable: true
@@ -62,7 +72,7 @@ media:
     - games/metrocalypse/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-10-01
+  updated: 2026-10-02
 status: live
 provenance:
   foundVia: scout:vibejam-2026

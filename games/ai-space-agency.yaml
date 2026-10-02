@@ -2,21 +2,33 @@ slug: ai-space-agency
 title: AI Space Agency
 tagline: Build and launch an AI data center into orbit in a space-agency simulation.
 description: >-
-  A launch begins on a pad beside a red wireframe gantry, with a slim rocket
-  standing on an orange grid under a black sky. A vertical throttle slider on
-  the left reads 100%, and the top bar tracks sea-level altitude, vertical
-  speed, surface speed and G load as the rocket climbs.
-
-
-  A navball at bottom center shows attitude, with heading, pitch and roll
-  readouts beside it. SAS and RCS toggles sit on the ball, and an auto row
-  offers off, up and orbit settings. The main button stages the rocket and
-  becomes a fairing button on the second stage. Reset restarts the flight, and a
-  time warp bar sits at top left.
+  You fly a rocket off a launch pad beside a tall red gantry tower, with the
+  throttle bar on the left already reading 100%. Along the top, readouts show
+  your altitude above sea level, vertical speed, surface speed and G load while
+  you climb.
 
 
   The creator pitches it as Kerbal Space Program for building an AI data center
-  in space. A small music player in the corner plays a track titled Orbit Bloom.
+  in space.
+
+
+  The big button at the bottom center says Stage while you're on the first
+  stage. Once the second stage is up, the same button is labeled Fairing, so one
+  spot on the screen does two jobs, which keeps the layout tidy.
+
+
+  A Reset button sits right beside it, in easy reach of the staging button.
+
+
+  Under the round attitude ball there are SAS and RCS toggles, and a row of
+  autopilot options marked Off, Up and Orbit. Heading, pitch and roll numbers
+  sit next to the ball.
+
+
+  Everything is drawn like a mission console, with glowing orange wireframe on
+  black, a gridded ground and the tower in red outlines. A time-warp control at
+  the top left starts at x1, and a little music player in the corner is playing
+  a track called Orbit Bloom, which is a nice touch for a launch screen.
 play:
   url: https://aispaceagency.com
   embeddable: true

@@ -3,26 +3,36 @@ title: Plunder
 tagline: Sail a pirate ship, collect resources, and sink rival captains on
   chaotic islands.
 description: >-
-  You captain a pirate ship on a top-down ocean arena, sailing against nineteen
-  rival captains listed on a top-ten board. Each match opens with a 12-second
-  grace period with no damage taken. You start in the Sloop, with 120 hull and
-  16 cannons, and cargo space for 50.
+  You're a pirate captain sailing a little sloop around an ocean arena, steering
+  with WASD and firing broadsides off either side of the ship with Q and E.
+  Nineteen rival captains are out there with you, and a top-ten board tracks
+  who's ahead.
 
 
-  Head to Wood Islands and Gold islands to gather resources. Both have red
-  gather rings, and you stay inside the ring rather than on the island core.
-  Cargo only counts once you bring it to the green city ring and bank it, so
-  unbanked loot is at risk if another captain sinks you.
+  The loop is gather, bank, upgrade. You sail to wood and gold islands, park
+  inside the red ring around each one instead of on the island core, and fill
+  your cargo hold. Then you carry it home to the green city ring, because cargo
+  you haven't banked is at risk if another captain sinks you.
 
 
-  Spend banked wood and gold in the city ring on four upgrades: Cannon, Sail,
-  Hull and Cargo. Level 1 costs range from 15 wood and 25 gold for cannons to 28
-  wood and 12 gold for the hull. The HUD tracks match phase, a countdown timer,
-  storm radius, a boss status, kills and prestige.
+  Inside the city ring, the 1 to 4 keys buy upgrades for cannons, sail, hull and
+  cargo. Level one of each costs wood and gold, and the hull asks for the most
+  wood while cannons ask for the most gold.
 
 
-  Before a match you can pick a ship from the fleet screen. The Galleon and Brig
-  are shown locked, and the Sloop is the starter.
+  A hint bar at the top tells you what you're missing, like how much more wood
+  the sail needs and where to go for it.
+
+
+  Each match opens with a short grace period where you take no damage, and the
+  city is a safe zone. A storm ring is tracked by its radius, there's a
+  countdown timer, and a boss that sits dormant at the start, so the arena
+  clearly changes as the match goes on.
+
+
+  Before you launch, you pick a ship from a fleet screen. The sloop is the
+  starter, with 120 hull, 16 cannons and 50 cargo, while the galleon and brig
+  sit locked as silhouettes, which makes you curious what it takes to open them.
 play:
   url: https://plunder.magnificentgames.com
   embeddable: true

@@ -3,25 +3,39 @@ title: Bounce Ballers
 tagline: Score goals in a networked, platform-hopping soccer match against other
   players.
 description: >-
-  The game opens on a lobby with four arena cards: Classic Arena, Neon Foundry,
-  Plinko and Glitch Garden. Each preview shows platforms stacked over a flat
-  floor, with a goal zone at each end. Plinko fills the middle with pegs and
-  slanted ramps. A guest name is pre-filled, and the header shows a Players
-  counter that reads 0/2.
+  You start on a lobby with four arena cards, a set of match rules and three
+  ways to get into a game. The status panel counts players out of two, so it's a
+  head-to-head match.
 
 
-  Before a match you set the rules. Score limit reads First to 10, round time
-  starts at No Limit, and AI difficulty starts at Normal. Three map event cards
-  can be toggled: Low Gravity, Reverse Ball Gravity and Infinimap, which wraps
-  the arena. Five ability pickups can also be switched on or off: Speed Boost,
-  Burst Boost, Throw Boost, Magnet and Invisibility.
+  The official arenas are Classic Arena, Neon Foundry, Plinko and Glitch Garden.
+  Plinko is tagged "RNG madness" and fills its field with pegs, which suits the
+  label. Below them there's a spot for your own saved custom maps.
 
 
-  Three buttons start play: Matchmake, vs Bot and Private Match. A room code
-  field takes a pasted room ID, with Join, Copy Code and Copy Invite buttons
-  beside it. A My Arenas section holds saved custom maps. The creator is a
-  longtime fan of IDARB and wanted a networked soccer platformer with
-  progression.
+  Hit Matchmake to look for an opponent online, or pick vs Bot to play the
+  computer. Private Match gives you a room code, so you can copy the code or an
+  invite link, and a friend pastes it in to join. The arena you've selected is
+  used for local matches.
+
+
+  You get to set the rules before anything starts, which is handy.
+
+
+  Score limit begins at first to 10, round time begins at no limit, and the
+  bot's difficulty begins at normal. Map event cards can bend the arena with low
+  gravity, reversed ball gravity or a wrapping map, and each has a checkbox so
+  you pick which ones can turn up.
+
+
+  Ability pickups get the same treatment, with checkboxes for speed boost, burst
+  boost, throw boost, magnet and invisibility. You can switch off anything you
+  don't want in the match.
+
+
+  The creator spent college playing IDARB, which was built mostly around a
+  shared screen. This is a modern take that works properly over the internet,
+  adds progression for replay value and carries the creator's own style.
 play:
   url: https://bounceballers.com
   embeddable: true
@@ -57,7 +71,7 @@ media:
     - games/bounce-ballers/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-10-01
+  updated: 2026-10-02
 status: live
 provenance:
   foundVia: scout:vibejam-2026

@@ -2,20 +2,25 @@ slug: big-wave-surfing
 title: Big Wave Surfing
 tagline: Paddle into big waves, carve the face, and grab stars before the foam hits.
 description: >-
-  Start by paddling the surfer toward a tall wave, then ride it along its
-  breaking face. Stars are placed along the ride to collect, and the foam is the
-  threat that ends the run if it catches you. The camera sits behind the surfer,
-  low over open water.
+  Paddle out toward a big wave, catch it, then carve across its breaking face
+  and grab stars before the foam swallows you. The camera sits right behind your
+  surfer, so the wave looms ahead of you as a tall wall of water.
 
 
-  The first level is called Mellow Point. If you fail to catch the wave, the
-  round ends on a Missed the Wave screen. It lists time, top speed, average
-  speed, turns, tricks and score, with Retry and Menu buttons beneath.
+  If you don't get onto the wave, the round ends on a "Missed the wave" screen.
+  It adds up your time, top speed, average speed, turns, tricks and a score, and
+  you can hit Retry or go back to the menu.
 
 
-  The setting is a bright daytime sea with scattered clouds and low hills along
-  the horizon. The creator built it for coworkers who have never surfed. It
-  focuses on the simple physics of being carried by a wave, not on tricks.
+  The first level is called Mellow Point, which is a gentle name for something
+  that's trying to swallow you. Sunlight glitters across the open water in front
+  of the swell.
+
+
+  The creator built it for workmates who've never surfed, hoping to give them a
+  small taste of the joy of riding a wave. Tricks weren't the point, because the
+  idea is the simple physics of the ride itself, which makes sense for people
+  who've never stood on a board.
 play:
   url: https://bigwavesurfing.fun
   embeddable: true
@@ -52,7 +57,7 @@ media:
     - games/big-wave-surfing/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-10-01
+  updated: 2026-10-02
 status: live
 provenance:
   foundVia: scout:vibejam-2026

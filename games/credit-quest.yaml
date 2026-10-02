@@ -3,22 +3,33 @@ title: Credit Quest
 tagline: Collect API credits and finish terminal-themed quests in a
   Zelda-inspired adventure.
 description: >-
-  Credit Quest has you walk a pixel-art hero around a top-down overworld of dirt
-  paths, grass, stone walls and wooden signposts. The first prompt tells you to
-  talk to PIP, a character west of the plaza path, and dialogue boxes at the
-  bottom of the screen carry the instructions.
+  Credit Quest drops you into a top-down pixel world where you collect API
+  credits to complete tasks and quests. Glitches roam the overworld, so you
+  fight them, and you wake sleeping shrines to restore the route. The whole
+  place is ruled by terminals, which is a funny fit for something that looks
+  like an old Zelda map.
 
 
-  The header calls it a fantasy-tech action RPG. You fight Glitches with an
-  attack button, wake sleeping shrines, and work to restore the route. The title
-  screen gives the aim as carrying the last clean signal home. The creator cited
-  Zelda as the inspiration.
+  The title screen gives you a line about carrying the last clean signal home.
 
 
-  The HUD shows a row of hearts for health, a Vibe counter, and a Credits
-  counter that starts at zero. You collect API Credits to finish tasks and
-  quests. A field guide and a help screen open in game, and sound can be muted.
-  It is a desktop browser build, and you click the game window to give it focus.
+  Your first prompt tells you to talk to PIP, who's west of the plaza path. A
+  small text box at the bottom of the screen keeps the current instruction in
+  view, so you don't have to remember it.
+
+
+  Hearts sit in the top corner, with a Vibe counter in the middle and a credits
+  count on the right. That puts your health and your haul in one glance, which
+  matters when credits are what the quests run on.
+
+
+  The creator grew up loving Zelda and wanted an adventure with an API and vibe
+  flavor.
+
+
+  You'll cross dirt paths, grass patches, stone walls and wooden signposts, all
+  drawn in chunky pixels. Small terminal-like machines stand around the plaza
+  too.
 play:
   url: https://creditquest.packetloss404.com
   embeddable: true

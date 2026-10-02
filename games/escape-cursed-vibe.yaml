@@ -3,20 +3,30 @@ title: Escape cursed vibe
 tagline: Race friends through five deadly themed stages and dodge hazards to
   escape first
 description: >-
-  You run a cursed path in 3D alongside up to three other players in one lobby.
-  Traps kill you, and the edges of the path drop you into the void. The goal is
-  to complete all five stages and be the one who escapes.
+  You're one of up to four cursed friends running a 3D course where traps kill
+  you and the edges drop you into the void. Everyone races through the same
+  stages, and only the swift make it out.
 
 
-  In the lobby you type a name of up to 16 characters, which other players can
-  see. The host picks the starting stage, and more players can still drop in
-  before the run starts. The stages are Star Gauntlet, Playtime Is Over, The
-  Chaos Divide, Polar Escape and Infernal Arena.
+  There are five themed stages: Star Gauntlet, Playtime Is Over, The Chaos
+  Divide, Polar Escape and Infernal Arena. Clear all five and you're the one who
+  escapes.
 
 
-  You move and jump with the keyboard and look around with the mouse. The
-  creator describes it as a dodge map where cursed friends race and only the
-  swift escape, and says it is based on a Warcraft 3 custom map.
+  A lobby comes first, with four player slots and you in the first one as host.
+  You type a name of up to 16 characters, which other players can see, and since
+  more people can still drop in, you can also just start without waiting for
+  them.
+
+
+  As host, you also pick which of the five stages the run begins on.
+
+
+  The idea comes from a Warcraft 3 custom map, and this version rebuilds it as a
+  3D browser game.
+
+
+  You move, jump and look around with the keyboard and the mouse.
 play:
   url: https://escape-cursed-vibe.pages.dev
   embeddable: true
@@ -56,7 +66,7 @@ media:
     - games/escape-cursed-vibe/shot-2
 dates:
   added: 2026-10-01
-  updated: 2026-10-01
+  updated: 2026-10-02
 status: live
 provenance:
   foundVia: scout:vibejam-2026

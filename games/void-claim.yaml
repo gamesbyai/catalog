@@ -2,22 +2,35 @@ slug: void-claim
 title: Void Claim
 tagline: Mine asteroids, upgrade your ship, and fight rivals in dangerous space zones.
 description: >-
-  The start screen asks for a callsign and a ship color from eight swatches,
-  then a Launch button connects you to a shared multiplayer space. The tagline
-  reads Mine. Steal. Survive. You fly a ship armed with drills and guns among
-  asteroids that hold colored crystals and gold.
+  Before you launch, you type in a callsign and pick one of eight ship colors,
+  with a big ship surrounded by glowing crystals and asteroids behind the menu.
 
 
-  You begin in a safe area, mine, and spend what you earn on ship upgrades.
-  Further out, the zones turn into PvP territory, and the richest asteroids sit
-  there. Other players can attack you, and cargo you jettison scatters as
-  individual loot objects that can be picked up.
+  You begin somewhere safe, mining and upgrading your ship, and then you push
+  out into zones where other players can shoot you. The deeper you go, the
+  richer the asteroids get, which is exactly why everyone wants them.
 
 
-  Combat has shields, and damage beyond what the shield absorbs carries over to
-  the hull. NPC ships also share the space. A story thread runs under the
-  mining: something ancient stirs in the deepest void, and it hunts players too.
-  The creator built it with no technical background and little time.
+  The tagline says mine, steal and survive, so taking from other pilots is
+  clearly part of the plan. It's a shared online space, which means those pilots
+  are real.
+
+
+  Greed isn't the only danger, though, because something ancient is stirring in
+  the deepest part of the void.
+
+
+  The update notes on the start screen show some of the combat rules. Shields
+  let extra damage bleed through to your hull, and cargo you jettison scatters
+  out as separate pieces of loot that anyone can grab.
+
+
+  Computer-controlled ships share the space too, and the notes mention a trade
+  ship they leave alone.
+
+
+  Its creator built it on the AutoGPT Platform with no technical background and
+  very little time.
 play:
   url: https://torantulino.github.io/void-claim
   embeddable: true

@@ -2,20 +2,28 @@ slug: vibe-voyage
 title: Vibe Voyage
 tagline: Haul cargo across the planet by ship and spend your earnings on better vessels.
 description: >-
-  You pilot a cargo ship around a planet, hauling freight between ports to earn
-  money. The first job starts at Whitepier: sail there and dock to load your
-  first cargo, following the arrows drawn on the water to find the way.
+  Vibe Voyage has you captain a cargo ship, sailing loads from port to port
+  around a planet to earn money.
 
 
-  Money from deliveries goes toward buying better ships. The ship is driven with
-  a throttle rather than direct speed. Raise it to move ahead, lower it past
-  zero to reverse, and press X to cut it back to zero in one step.
+  You start by sailing to Whitepier and docking there to pick up your first
+  cargo. Arrows on the water point toward the harbor, so you don't have to hunt
+  for it.
 
 
-  Turning uses A and D or the left and right arrow keys, while Q and E fire the
-  left and right thrusters. A welcome card at the start lists these controls
-  before you set sail. The creator based the idea on the Roblox game Shipping
-  Lanes and added their own changes.
+  Steering works off a throttle instead of a plain gas pedal, so you raise it to
+  build speed and lower it past zero to back up. There's a separate key that
+  snaps the throttle straight to zero. Left and right thrusters sit on their own
+  keys too.
+
+
+  Everything you earn goes toward buying better ships, which gives the hauling
+  its purpose.
+
+
+  The creator took the basic idea from a Roblox game called Shipping Lanes and
+  wanted to put their own spin on it. A welcome card lists every control before
+  you set off, which saves you from guessing which key does what.
 play:
   url: https://vibe.voyage
   embeddable: true
@@ -59,7 +67,7 @@ media:
     - games/vibe-voyage/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-10-01
+  updated: 2026-10-02
 status: live
 provenance:
   foundVia: scout:vibejam-2026

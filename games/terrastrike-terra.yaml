@@ -3,22 +3,37 @@ title: terrastrike/terra
 tagline: Purify a toxic world from the deep sea up to a surface garden as an
   evolving guardian.
 description: >-
-  The game opens underwater in a level called The Deep, seen from above. A diver
-  in an armored suit stands among seaweed, rocks and sunken wreckage, lit by
-  pale shafts of light. A panel on the left tracks a purification percentage, a
-  timer, ammo (40 of 40), the equipped Standard Blaster and an inventory that
-  starts empty.
+  You start on a dark teal seabed called The Deep, looking down on a diver in a
+  heavy suit. Wide beams of light cut through the water, and wreckage and dark,
+  branching plants are scattered around you.
 
 
-  You move with WASD and fire with Space. A hull integrity bar sits at the
-  bottom of the screen. An RP counter in the top right corner links to a shop on
-  U, the armory opens on C, and keys 1 to 4 trigger emotes.
+  The panel in the top corner lays out what you're working with.
 
 
-  The goal is to purify a toxic world, working from the deep sea up to a surface
-  garden, while the character evolves into a guardian protecting the last
-  sanctuary of life. The creator drew on the contrast of a dark industrial
-  wasteland turning back into a colorful, living ecosystem.
+  Purification sits at 0.0% next to a timer at 00:00, and your ammo reads 40 out
+  of 40 for the Standard Blaster. Your inventory says nothing yet, while a red
+  hull integrity bar runs along the bottom of the screen.
+
+
+  The goal is to purify a toxic world, starting in the deep sea and working up
+  to a surface garden that holds the last sanctuary of life. Along the way you
+  evolve into a stronger guardian, which is why it's tagged as an RPG as well as
+  a shooter.
+
+
+  There's also an RP counter in the other top corner, right beside a shop you
+  open with U.
+
+
+  C opens an armory, and the number keys 1 to 4 trigger emotes, which is a funny
+  thing to find in a toxic wasteland.
+
+
+  The creator wanted the payoff to be contrast, with a dark industrial wasteland
+  turning back into a colorful, thriving ecosystem. So it makes sense that the
+  route climbs from the ocean floor to a garden, because that's the whole trip
+  from gloom to color.
 play:
   url: https://terrastrike.pages.dev
   embeddable: true

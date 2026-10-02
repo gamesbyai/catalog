@@ -3,21 +3,33 @@ title: ORBITAL-SLOP.io
 tagline: Pilot air and ground vehicles through a shared asteroid belt in a space
   shooter.
 description: >-
-  ORBITAL-SLOP.io puts air and ground vehicles into the same asteroid belt and
-  lets players fight it out in space. It is a multiplayer space shooter and
-  flight simulation, and you move through the field and join the combat
-  alongside whoever else is in the session.
+  ORBITAL-SLOP.io has you operating both air and ground vehicles as you work
+  through an asteroid belt, and it's built as a shooter mixed with a flight sim.
+  The creator calls it a love letter to the flight sims of their youth.
 
 
-  The creator calls it a High Slop adventure, and the tone is deliberately loose
-  and messy. It is framed as a love letter to the flight sims the creator played
-  in their youth. It came together in Cursor and Three.js during Vibe Jam 2026,
-  where it ranked 445th of 945.
+  The opening screen is a map of the belt, drawn as a swirl of cyan dots around
+  the sun.
 
 
-  It runs on phones too, and having both air and ground vehicles in one asteroid
-  setting gives it a different feel from a pure flight game, where you only ever
-  fly.
+  You pick a job from the map. Quick Run drops you onto a numbered asteroid, and
+  a Phobos Ledger panel next to it lists top runs.
+
+
+  Two other cards sit on the map. One is Ares, a live-fire PvP arena called War
+  Games, with satellites and racked barrels listed for it. The other is a
+  priority ops mission where blight is inbound, and it shows a run integrity
+  percentage.
+
+
+  Blight is a running theme, because a contamination meter in the corner tracks
+  it as a percentage with a tier label.
+
+
+  The screen is dressed up like a bureau terminal, with a scrolling news ticker
+  along the bottom, a dispatch panel and an operator portrait. That's a lot of
+  fake paperwork for a game that bills itself as High Slop, which seems to be
+  the joke.
 play:
   url: https://orbital-slop.io
   embeddable: true
@@ -52,7 +64,7 @@ media:
     - games/orbital-slop-io/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-09-29
+  updated: 2026-10-02
 status: live
 provenance:
   foundVia: scout:vibejam-2026

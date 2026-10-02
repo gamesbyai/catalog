@@ -2,22 +2,37 @@ slug: astroxite
 title: Astroxite
 tagline: Take jobs between alien settlements and build a life in a shared frontier.
 description: >-
-  You start as a blocky figure seen from above, standing in an open desert-toned
-  wilderness where dark four-legged animals wander nearby. The setting is a
-  frontier shared with other players online, with alien settlements spread
-  across it. You take jobs between those settlements and build reputation as you
-  go.
+  You start as a blocky character out in a frontier wilderness, with alien
+  settlements scattered across it and jobs that send you between them.
 
 
-  The HUD tracks a health bar that starts at 200, a CRD balance that starts at
-  0, and an RVT counter that starts at 500. A clock and weather readout sits in
-  the top corner, along with ping and map coordinates. A guide button marked
-  Start here sits on the right edge.
+  It's a multiplayer sandbox, so other people share that land with you. Taking
+  jobs builds your reputation, and the idea is that you use it to carve out a
+  life of your own.
 
 
-  The bottom left holds a comms panel with a chat tab and a combat log tab. You
-  can enter as a guest, but sending chat messages requires registering with an
-  email. The creator cited Silkroad Online and similar MMOs as the inspiration.
+  The creator has wanted to make something in the spirit of Silkroad Online, the
+  old MMO, for a long time.
+
+
+  You can start as a guest, with a Log In button right there. Your health bar
+  begins at 200, and next to it sit two counters, one for credits that starts at
+  zero and one marked RVT that starts at 500.
+
+
+  Small animals wander the ground around you, which is a nice touch for a
+  wilderness that's supposed to be alive. A clock in the corner shows the time
+  of day along with the current weather.
+
+
+  A comms panel in the corner has a chat tab and a combat log tab. Chat stays
+  locked until you register with an email, so guests can read it but not send
+  anything.
+
+
+  If you don't know where to begin, a guide book sits on the right edge of the
+  screen with a Start Here arrow pointing at it, which is considerate for a
+  sandbox with this many moving parts.
 play:
   url: https://astroxite.com
   embeddable: true

@@ -3,30 +3,50 @@ title: Wagon Bones
 tagline: Roll d12 dice, build scoring hands, and travel the Oregon Trail one leg
   at a time.
 description: >-
-  Wagon Bones swaps the playing cards of Balatro for d12 dice. Each travel day,
-  the pouch deals 8 dice and you roll them. You then lock in one to five as your
-  hand. Their pips count as miles, and multipliers scale that total.
+  Wagon Bones swaps Balatro's playing cards for d12 dice and sends them down the
+  Oregon Trail, one leg at a time.
 
 
-  The route starts in Independence, Missouri and runs 8 legs to Oregon City.
-  Each leg has two trail rounds and a boss round. A round gives you 4 days and 4
-  rerolls by default, and the run ends if the days run out before you reach the
-  mile target. Hands are built from pairs, straights, and n-of-a-kind. You can't
-  discard.
+  Each travel day, the pouch deals you eight dice, and once you've rolled them
+  you lock in one to five as your hand. The pips on those dice count as miles,
+  which ties the scoring to the trip pretty nicely, and multipliers scale the
+  total from there.
 
 
-  A run opens with a choice of profession, which changes things like rerolls,
-  money, and slots, and a difficulty, which can add cursed equipment or remove
-  rerolls. Each cleared round brings a trail event with choices. After that you
-  visit a shop for equipment, consumables, permits, and booster packs. Equipment
-  effects apply left to right, so order matters.
+  Hands come from pairs, straights and n-of-a-kind, and there's no discarding at
+  all.
 
 
-  Each boss adds a rule for one fight. The Inspector shrinks your hand size, The
-  Marathon quadruples the target, and The River counts only straights and high
-  values. You can see the boss ahead of time and skip a round for a tag reward.
-  After Oregon City, endless mode continues up to leg 39. The creator made it
-  with heavy AI help, including the dice sprites and card art.
+  You get four days and four rerolls a round by default, and if the days run out
+  before you've covered the mile target, the run's over. The trail itself goes
+  from Independence, Missouri to Oregon City in eight legs, each with two trail
+  rounds and a boss round. Oregon City isn't even the end, because an endless
+  mode keeps going all the way to leg 39.
+
+
+  Before you set off, you pick a profession and a difficulty. The profession
+  changes things like your rerolls, money and slots, while the difficulty can
+  saddle you with cursed equipment or take rerolls away.
+
+
+  Every round you clear brings a trail event with choices to make, and after
+  that a shop with equipment, consumables, permits and booster packs. Equipment
+  effects kick in from left to right, so the order you drag your pieces into
+  actually matters.
+
+
+  Each boss bends the rules for a single fight. The Inspector shrinks your hand
+  size and The Marathon quadruples the target, while The River is pickier and
+  only counts straights and high values. At least you can see each boss coming,
+  and you can skip a round for a tag reward.
+
+
+  So between the profession, the trail events, the shop and the bosses, there's
+  a lot more to a run than what you roll.
+
+
+  The creator, voltron2112, leaned heavily on AI to make it, and that includes
+  the dice sprites and the card art.
 play:
   url: https://voltron2112.itch.io/wagon-bones
   embeddable: false
@@ -71,7 +91,7 @@ media:
     - games/wagon-bones/shot-2
 dates:
   added: 2026-09-30
-  updated: 2026-10-01
+  updated: 2026-10-02
 status: live
 provenance:
   foundVia: scout:aibgj-3

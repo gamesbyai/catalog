@@ -3,26 +3,46 @@ title: Cupid
 tagline: Shoot magic arrows to pair people with matching traits and restore love
   in a garden.
 description: >-
-  Cupid Garden is a roguelike first-person shooter built around matchmaking. You
-  play Cupid, aiming magical arrows at people in the garden to pair those who
-  share matching traits. Each stage grows more chaotic, and a run continues as
-  long as Cupid can keep restoring love.
+  Cupid puts you in a blocky green meadow with a bow, and your job is to shoot
+  people who share a trait with the person you're matching them to. Every person
+  has three traits, which are hair, T-shirt and pants. A match means one of
+  those lines up.
 
 
-  The matchmaking twist turns the shooting into a light puzzle: choosing who to
-  pair matters as much as hitting the target. Between stages you upgrade your
-  arrows, so each run builds toward a different set of magical abilities.
-  Multiplayer is part of the design.
+  A goddess named Venus walks you through the first stage with a text box. She
+  points out a person to shoot first, then says the next one counts as a match
+  because their T-shirt color is the same.
 
 
-  The creator built it with Codex for the Vibe Jam 2026 and describes wanting a
-  simple roguelike FPS with multiplayer. They also say the project was a chance
-  to explore vibe coding in a playful way. It runs on Three.js.
+  A round scope view in the corner shows whoever you're aiming at, so you can
+  check their clothes up close before you let an arrow go. That's handy, because
+  the people are small and scattered across a big field of trees.
+
+
+  The top of the screen tracks the stage and how many people you've saved. The
+  first stage asks for ten.
+
+
+  It's a roguelike, so you gain experience as you go and upgrade your magical
+  arrows. The stages get more chaotic as you move through them. A row of five
+  arrow slots sits along the bottom, which suggests you'll be switching between
+  arrow types.
+
+
+  A blue orb in the corner counts down from 20 as you fire, so it looks like
+  you're working with a limited supply.
+
+
+  The creator wanted a simple roguelike first-person shooter with multiplayer,
+  built around matchmaking as the central idea. The whole thing came out of vibe
+  coding.
 play:
   url: https://cupid-sigma.vercel.app
   embeddable: true
   platforms:
     - browser
+  controls:
+    - "Left click: shoot"
 creator:
   name: DWowmuch
   handle: dwowmuch
@@ -54,7 +74,7 @@ media:
     - games/cupid/shot-2
 dates:
   added: 2026-10-01
-  updated: 2026-10-01
+  updated: 2026-10-02
 status: live
 provenance:
   foundVia: scout:vibejam-2026

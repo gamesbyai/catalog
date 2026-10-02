@@ -3,27 +3,55 @@ title: Ghost In The Machine
 tagline: Search a storm-struck computer lab for hidden ghosts with a detector
   before time runs out.
 description: >-
-  The game starts in an abandoned computer lab while a storm rages outside.
-  Everything is told in text. You move by cardinal direction and by which way
-  you are facing, and you carry a detector that tracks the hidden entities in
-  the building.
+  You've got until the timer runs out to find the ghosts haunting an abandoned
+  computer lab, and a storm is hammering the windows the whole time.
 
 
-  Each room offers items to pick up, and terminals hold lore you can read.
-  Mapping every room is part of the goal, and a timer limits how long you have
-  to find the ghosts. When a ghost gives chase, you have to get away along
-  routes blocked by obstacles.
+  Your detector does the warning, and it reports in words, like a screaming
+  alert when a ghost is very close. You type commands to move, either by compass
+  direction or by turning and walking forward, so you always have to keep track
+  of which way you're facing.
 
 
-  Your final score adds up the ghosts you found and how much of the game you
-  completed. Collect every tool, read all the lore, map every room and clear
-  every obstacle, and you unlock a Secret Victory ending with its own music. The
-  creator lists AI assistance for the code, graphics, sounds and text.
+  Look, scan, search, inspect, inventory, map and status are all commands, and
+  there are buttons under the command line if you'd rather click than type.
+  Along the way you collect tools, read terminal entries that tell the lab's
+  story, and try to map every room.
+
+
+  There are nine rooms, nine lore entries, four tools and four obstacles, which
+  is a surprisingly tidy checklist for a text game.
+
+
+  A side panel tracks which rooms you've explored, which tools you hold, which
+  terminals you've read and which obstacles you've cleared. Obstacles stay
+  blocked unless you carry the matching tool, so the panel tells you what you're
+  still missing.
+
+
+  When a ghost catches up, a chase starts and you have to get back to the Lab
+  Entrance before it gets you. That makes the map useful, since you'll want a
+  route you already know.
+
+
+  Your final score combines the ghosts you found with how much of the lab you
+  completed, and there's a high score to beat. Clear every tool, lore entry,
+  room and obstacle and you unlock a secret victory ending with its own music,
+  plus a mute button if you'd rather play quietly.
 play:
   url: https://jetblackrlsh.itch.io/ghost-in-the-machine
   embeddable: false
   platforms:
     - browser
+  controls:
+    - "north/east/south/west: move"
+    - "move forward/backward/left/right: move relative to facing"
+    - "turn left/right: change facing"
+    - "face north/east/south/west: set facing"
+    - "look, scan, search, inspect: examine surroundings"
+    - "inventory, status, map: check progress"
+    - "Enter: send command"
+    - "restart: start over"
 creator:
   name: jetblackrlsh
   handle: jetblackrlsh
@@ -52,7 +80,7 @@ media:
     - games/ghost-in-the-machine/shot-2
 dates:
   added: 2026-10-01
-  updated: 2026-10-01
+  updated: 2026-10-02
 status: live
 provenance:
   foundVia: scout:aibgj-1

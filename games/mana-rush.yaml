@@ -2,24 +2,38 @@ slug: mana-rush
 title: Mana Rush
 tagline: Fly a broom through collapsing crystal caves before your mana runs out.
 description: >-
-  Steer a broom with WASD or the arrow keys and move the camera with the mouse.
-  Fly from seal to seal through a procedural crystal cavern, skim past hazards,
-  and break through the final portal before your mana runs out.
+  You're a witch on a borrowed broom, flying through a crystal cavern that's
+  losing its light, and your mana is what's running out. Every boost, every
+  crash and every second in the dark burns it down, so a burst of speed always
+  costs you something. Crystals you harvest put charge back, which is why the
+  on-screen tip tells you to collect along the main route before spending it
+  through a gold boost ring.
 
 
-  Mana drains as you fly and boost, so each run is a trade between speed and
-  charge. Crystals restore mana, and sanctuaries refill it and anchor your
-  progress. Branching routes, boost gates, and pickups fill the caves.
+  You fly from seal to seal, with a counter showing how many of the four are lit
+  and how far the next one is. Sanctuaries refill your mana and anchor your run,
+  so reaching one matters before you push for the final portal.
 
 
-  Runs are timed, with medals, personal bests, splits, and stats for collisions,
-  top speed, and boost time. Finishing a depth sends you into a harder cave and
-  earns Crystal Charge, which pays for permanent upgrades and unlockable hats
-  and brooms with different stat tradeoffs.
+  If the broom scrapes or stalls, hold Space to lift clear and steer back onto
+  the route.
 
 
-  Gamepad play is supported. The creator credits Codex for programming, GPT
-  Image 2 for 2D images, Meshy for 3D models, and Suno for music.
+  The caves are procedural, with branching routes, hazards, boost gates and
+  pickups, so you're choosing a path as well as flying one. A timer runs the
+  whole way, which means a detour costs you something you can watch. If things
+  go badly wrong, R respawns you.
+
+
+  Finishing earns time medals, personal bests and splits, plus stats on
+  collisions, top speed and boost time.
+
+
+  Each completed depth drops you into harder caves, and the Crystal Charge you
+  earn pays for permanent upgrades, plus hats and brooms that trade one stat for
+  another, which gives you a neat reason to go back down. John P. Doran handled
+  the design and creative direction, with AI tools helping on the art, code,
+  sound and music.
 play:
   url: https://netravelr.itch.io/mana-rush
   embeddable: false
@@ -63,7 +77,7 @@ media:
     - games/mana-rush/shot-2
 dates:
   added: 2026-10-01
-  updated: 2026-10-01
+  updated: 2026-10-02
 status: live
 provenance:
   foundVia: scout:aibgj-4

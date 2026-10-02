@@ -3,24 +3,36 @@ title: Spicefall Command
 tagline: Harvest spice, capture condensers, and defend your Command Spire in
   desert RTS fights.
 description: >-
-  You command a desert base in a real-time strategy skirmish against hostile
-  commanders. Harvest spice, keep your power grid stable, and expand water
-  capacity while defending your Command Spire from destruction. Capturing
-  atmospheric condensers gives you a strategic advantage over the opposing
-  houses.
+  You command a base on a desert planet, harvesting spice and keeping your power
+  grid steady while hostile commanders try to wreck your Command Spire. It's a
+  real-time strategy skirmish built around the economy.
 
 
-  A setup screen comes first. You pick your house, the map size, the number of
-  AI players, and your team, and each AI opponent gets its own house and team
-  setting. Players who share a team number are allied, and every other command
-  center is hostile. Every match uses a randomized map, from small skirmishes to
-  large AI battles.
+  The map is randomized every match, so you never fight over the same ground
+  twice.
 
 
-  Drag to select units, right click to give orders, and use number and letter
-  hotkeys to train units and place structures. Shift queues orders, and a
-  command console interface handles the rest. Two sci-fi houses compete, and a
-  match runs a few minutes. Fullscreen at 1280x720 or higher is recommended.
+  Before you deploy, you pick your house, the map size, how many AI players you
+  face and which team you're on. Players who share a team number are allies and
+  every other command center is hostile, so you can set up lopsided fights if
+  you want. Each AI opponent gets its own house and team setting too.
+
+
+  Spice, power and water are the three things you juggle, and the pressure comes
+  from keeping all of them healthy at once. Atmospheric condensers sit out on
+  the map and you can capture them for an edge, which is a good reason to push
+  out instead of sitting at home.
+
+
+  Two sci-fi houses compete, and matches range from small skirmishes to large AI
+  battles.
+
+
+  You drag to select units, then right-click to move, attack, harvest or set a
+  rally point. A gives an attack move and Shift lets you line up a queue of
+  orders. Number keys train units and letter keys place structures, so building
+  doesn't send you hunting through menus. Escape or Space pauses, which is handy
+  when a fight gets messy.
 play:
   url: https://bitten-heart-studio.itch.io/spicefall-command
   embeddable: false
@@ -65,7 +77,7 @@ media:
     - games/spicefall-command/shot-2
 dates:
   added: 2026-09-30
-  updated: 2026-10-01
+  updated: 2026-10-02
 status: live
 provenance:
   foundVia: scout:aibgj-3

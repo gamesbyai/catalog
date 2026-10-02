@@ -2,23 +2,40 @@ slug: plush-rush
 title: Plush Rush
 tagline: Steer a plushie through three lanes of a real stock chart and chase P&L.
 description: >-
-  Plush Rush is a three-lane endless runner where the track is built from real
-  market prices. You pick any ticker and guide a 3D plushie through the course.
-  Two modes are available: Morning Bell, which covers the first trading hour,
-  and a live replay that plays the latest hour of price action at 60 times
-  speed.
+  You're a fluffy plush bear running down a three-lane track, and the screen
+  around you looks like a trading desk. A trade log sits on the left and a MACD
+  histogram on the right, while your balance and a big ticker price hang at the
+  top.
 
 
-  The idea came from watching kids play a Subway Surfer-style runner next to
-  other videos, which brought to mind traders watching many charts at once.
-  Price movement maps onto lanes, and an hour of data compresses into about a
-  minute of play. Results feed a profit-and-loss leaderboard, with figures
-  modeled on a $1 million account. The creator notes it is not perfectly
-  accurate and slippage is likely.
+  Coins and green orbs come toward you along the lanes, and a small orange label
+  tells you when to jump. The price readout shows a bar count, like 61/61 for
+  SPY, so you can see how much of the session is left.
 
 
-  The game runs on canvas and works on mobile. The creator says it was built
-  with Claude Code, and it was entered in Vibe Jam 2026.
+  Your current position shows as a tag, such as Short or Flat, right under the
+  balance.
+
+
+  Every buy, sell, short and cover lands in the log with its price, and the
+  closed trades show a profit or loss in red or green. Next to your balance
+  there's a percentage telling you how far you are from the best possible
+  result, which is a pretty blunt way to be graded.
+
+
+  You pick any ticker you like, so you're not stuck with one stock.
+
+
+  Then you choose between Morning Bell, which covers the first hour of the
+  market day, and a live replay mode running at 60 times speed. Either way an
+  hour gets squeezed into about a minute, and your profit and loss goes onto a
+  leaderboard.
+
+
+  The price data comes from Alpaca and Yahoo Finance, so the moves are real. The
+  creator admits it isn't perfectly accurate and slippage is likely, but the
+  idea came from watching kids play Subway Surfer with other videos running
+  beside it, which reminded them of traders with eight monitors.
 play:
   url: https://plush-rush.netlify.app/game_001.html
   embeddable: true
@@ -55,7 +72,7 @@ media:
     - games/plush-rush/shot-2
 dates:
   added: 2026-10-01
-  updated: 2026-10-01
+  updated: 2026-10-02
 status: live
 provenance:
   foundVia: scout:vibejam-2026

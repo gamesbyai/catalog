@@ -2,22 +2,28 @@ slug: temple-fist
 title: Temple Fist
 tagline: Box in a photoreal ring where every frame comes from AI-generated video.
 description: >-
-  The game opens on a first-person view across a rope-bound ring with a stone
-  floor, set in a bamboo grove. Brown leather gloves fill the bottom of the
-  screen. A shirtless fighter sits cross-legged at the far side, and a START
-  button sits between the gloves.
+  You start in a stone boxing ring in the middle of a bamboo grove, looking down
+  at your own leather gloves. Your opponent sits cross-legged at the far end,
+  meditating, with a Start button floating between you.
 
 
-  After you press START, the opponent rises into a guard, wrapped fists raised,
-  with a jade pendant at his chest. Three buttons sit across the lower screen:
-  Jab, Hook and Uppercut. A thin white bar runs just above them, over the
-  opponent's belt.
+  Once the fight begins he's up in a guard with his fists raised and a jade
+  pendant on his chest.
 
 
-  Every frame of the bout comes from AI-generated video, not a 3D model. The
-  creator chose boxing because its frame-to-frame structure matched how video
-  models behave, and wanted something playable with the photoreal look that AI
-  trailers had shown without being playable.
+  Three buttons sit across the lower part of the screen: Jab, Hook and Uppercut.
+  Those are your punches, and you throw them from a first-person view over the
+  gloves, so you never see yourself.
+
+
+  Everything on screen is video that AI models generated, not a 3D scene, which
+  is why it looks photographic. Varick made it after seeing a run of photoreal
+  AI game trailers that nobody could actually play, and he wanted that same look
+  in something you could press buttons on.
+
+
+  Boxing was the pick because its back-and-forth of strike and answer fits how
+  video models behave, which is a sensible match of subject and tool.
 play:
   url: https://templefist.vamonke.com
   embeddable: true

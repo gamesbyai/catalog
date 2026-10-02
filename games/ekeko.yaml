@@ -2,22 +2,34 @@ slug: ekeko
 title: Ekeko
 tagline: Bargain with a corrupted Andean deity by playing cards in a horror roguelite.
 description: >-
-  Drag miniature ceramic cards onto the altar to build an offering for the
-  Ekeko, a corrupted Andean abundance deity. He scores the tray as chips plus
-  card values, multiplied by combos and relics, and you must beat his demand in
-  each encounter.
+  You drag little ceramic miniature cards onto an altar, and the Ekeko, a
+  corrupted Andean abundance deity, tallies up your offering. His math
+  multiplies chips and card values by your combos and your relics.
 
 
-  A run is split into 3 acts, each with 5 rounds, and the debt grows with every
-  act. Named combos include Ritual Pair, Full Table, Holy Trinity and Sacred
-  Altar. Perfect Offering and the Grand Rituals are left for you to discover.
-  Failing a demand has consequences the game keeps to itself.
+  Every wish has a price, and he's keeping the receipts, which is a pretty grim
+  way to run a card game.
 
 
-  The setting is the Alasitas fair, where the Ekeko once handed over a house, a
-  car, a diploma and a heart, and now collects. Art is painted in a dark,
-  candlelit style. Play is mouse-only, with subtitles and color-blind friendly
-  options. Sessions are short, and the creator is a solo developer from Bolivia.
+  Each encounter sets a demand, and you've got 5 rounds to beat it. Come up
+  short and you face whatever the Ekeko has in store, which is where the horror
+  comes in.
+
+
+  Combos are what drive your score. Ritual Pair, Full Table, Holy Trinity and
+  Sacred Altar are the ones named up front, while Perfect Offering and the Grand
+  Rituals are left for you to discover. There's also a Dried Lamb somewhere in
+  the game, and you're told only that you'll understand once you find it.
+
+
+  A full run lasts three acts, and the debt grows with each one, so the demands
+  keep climbing as you go.
+
+
+  The setting is the Alasitas fair, where the Ekeko already gave you a house, a
+  car, a diploma and a heart, and now he wants payment. It's rooted in Bolivian
+  folklore, and the creator, a 20-year-old solo developer from Bolivia, calls it
+  a first game that mixes Balatro, Inscryption and Buckshot Roulette.
 play:
   url: https://adriver.itch.io/ekeko
   embeddable: false
@@ -53,7 +65,7 @@ media:
     - games/ekeko/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-10-01
+  updated: 2026-10-02
 status: live
 provenance:
   foundVia: scout:vibejam-2026

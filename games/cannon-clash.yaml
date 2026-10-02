@@ -2,21 +2,30 @@ slug: cannon-clash
 title: Cannon Clash
 tagline: Aim a cannon and outshoot a rival in a physics-driven puzzle duel.
 description: >-
-  Cannon Clash is a physics puzzle duel between two cannons, and the goal is to
-  outshoot your rival. You aim yours, they aim theirs, and the shots bounce and
-  tumble through the playfield, so whoever reads the physics better and lines up
-  a shot comes out ahead.
+  Choose 1 Player or 2 Player, then fire pucks at the pegs and try to clear
+  every one. It's turn-based, so you take a shot and let the ricochets play out.
 
 
-  The design comes from Peggle and, before that, the Plinko board from The Price
-  Is Right. The creator wanted something simple and fast that plays well on
-  mobile, so it was built with touch screens in mind, using Codex and Three.js.
-  It came 544th of 945 at Vibe Jam 2026.
+  Your turn only ends once everything has stopped moving, so a shot isn't
+  finished until the last bounce.
 
 
-  Rounds are quick and easy to pick up. Ricochets and chain reactions matter
-  more than reflexes, so the skill is in reading where a shot will bounce before
-  you fire it.
+  Pucks you've already fired stay on the board after they land, which means your
+  earlier shots don't just vanish. The level menu lists Prism, a layout of
+  diamond-shaped lanes locked to a grid, with clean spacing and mirrored
+  openings.
+
+
+  The menu also has a sound effects switch and a volume slider.
+
+
+  The creator wanted something simple and quick that worked well on a phone.
+  Peggle was the childhood memory behind it, and before that the Plinko game
+  from The Price Is Right.
+
+
+  This browser version is a rebuild of the current iPhone build, made to keep
+  the same turn-based ricochet board feel.
 play:
   url: https://cannonclash.com
   embeddable: true
@@ -53,7 +62,7 @@ media:
     - games/cannon-clash/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-09-29
+  updated: 2026-10-02
 status: live
 provenance:
   foundVia: scout:vibejam-2026

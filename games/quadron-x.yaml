@@ -2,26 +2,34 @@ slug: quadron-x
 title: Quadron X
 tagline: Fly an X-wing through a 15-mission dogfight campaign with a voice-acted story.
 description: >-
-  Quadron X puts you in an X-wing cockpit for a dogfight campaign. You fly with
-  WASD and Q/E, aim with the mouse, fire with Space, and launch a torpedo with
-  F. T cycles through targets, and R picks the nearest one. The start screen
-  describes six missions across asteroid fields, convoy lanes, and Imperial
-  trenches.
+  Quadron X puts you in an X-wing, flying dogfights over asteroid fields, convoy
+  lanes and Imperial trenches while the Empire hunts your squadron. You steer
+  with the keyboard and aim with the mouse, and the cockpit is procedural and
+  wraps 360 degrees around you.
 
 
-  Shift boosts and Ctrl brakes. Other keys raise a barrier shield (B), switch on
-  a night-vision zoom (N), match speed with a target (X), and change the camera
-  (C). P or Esc pauses, and the bracket keys change volume while M mutes.
+  The campaign is carried by a voice-acted story, so there's someone talking to
+  you while you fly.
 
 
-  The creator's description lists a 15-mission campaign with a voice-acted
-  story, a 360-degree procedural cockpit, and more than 200 video comms
-  generated with Grok. The menu offers Start Game, Multiplayer, Levels, Ranks,
-  and an Easy toggle. Each pilot gets a callsign, editable with Tab.
+  More than 200 video comms were generated with Grok, which is a pretty big cast
+  of faces for something the creator made from scratch in one Sunday. A little
+  droid portrait sits at the bottom of the start screen.
 
 
-  The creator calls it a spiritual successor to xpilot and says it was made from
-  scratch in one Sunday.
+  You can boost, brake, or match speed with whatever you're chasing. For
+  targeting, you can cycle through targets one at a time or jump to the nearest
+  one, and a barrier shield is there when a fight turns ugly.
+
+
+  Night-vision zoom and a camera switch each get their own key, so you can use
+  them mid-flight.
+
+
+  The start screen lets you edit your pilot name, switch on an easy mode, check
+  the ranks and pick a level. There's a multiplayer mode as well, with a
+  scoreboard you can pull up in flight, and the creator describes the whole
+  thing as a spiritual successor to xpilot.
 play:
   url: https://x.danielfarina.com
   embeddable: true
@@ -67,7 +75,7 @@ media:
     - games/quadron-x/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-10-01
+  updated: 2026-10-02
 status: live
 provenance:
   foundVia: scout:vibejam-2026

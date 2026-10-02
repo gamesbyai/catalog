@@ -2,25 +2,29 @@ slug: kicker
 title: KICKER
 tagline: Play a match of table football against another player using mouse and keyboard.
 description: >-
-  You control one side of a 3D foosball table, seen from above, with red and
-  blue figures mounted on rods. Hold A, S, D or F to pick a rod, then move the
-  mouse to work that rod. A mouse icon on the table shows arrows pointing up and
-  down.
+  You're playing red at a foosball table, and you pick which rod to grab by
+  holding a key, then move the mouse to slide and turn it. The camera looks down
+  on the table in 3D, so every little player on every rod is in view.
 
 
-  A match is first to 5 goals, with the score shown at the top of the screen. A
-  prompt on the table tells you to play the ball. Pressing Space shakes the
-  table.
+  There's also a space bar shortcut that shakes the whole table, which is a
+  funny thing to be allowed to do to a foosball table.
 
 
-  A button at the bottom of the screen reads "I am ready for multiplayer", and
-  the game is played online. A small lock icon sits near the sound and settings
-  buttons in the top right corner.
+  The first side to score 5 goals wins, and the score sits at the top of the
+  screen while a faded prompt tells you to play the ball. Four keys, A, S, D and
+  F, each match one of the rods you control, and they're marked on the table's
+  front edge so you don't have to guess which is which.
 
 
-  The creator says the idea came from a co-worker who plays in a German kicker
-  league and is too good to beat in person, so this is a chance to try
-  virtually.
+  There's a button at the bottom that says you're ready for multiplayer, so you
+  can take the table against another person online.
+
+
+  The idea came from the creator's co-worker, who is a seriously good kicker
+  player with an entry in a German league. The creator can't beat him in real
+  life, so the game is an attempt to get a shot at him virtually, which is a
+  fair reason to build a whole foosball table.
 play:
   url: https://kicker.nc.hn
   embeddable: true
@@ -59,7 +63,7 @@ media:
     - games/kicker/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-10-01
+  updated: 2026-10-02
 status: live
 provenance:
   foundVia: scout:vibejam-2026

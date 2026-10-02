@@ -2,20 +2,37 @@ slug: arcade-gaming
 title: Arcade Gaming
 tagline: Pick from a browser arcade for quick, casual play breaks
 description: >-
-  Arcade Gaming puts you on a walkable 3D arcade floor filled with small browser
-  games. Walk up to a cabinet to drop straight into its game, or press the Games
-  button to browse the full list instead of walking to each one.
+  Arcade Gaming has you walk around a 3D arcade floor and step up to cabinets,
+  each one holding a tiny browser game. You wander until one catches your eye,
+  then you walk up and drop straight into it.
 
 
-  Every score you post goes to a global leaderboard, and signing in lets you
-  claim your spot on it. You can click a cabinet to play it instantly, or click
-  the floor to auto-walk there.
+  If you'd rather not hunt around, there's a Games button that lets you browse
+  every game in one place, so you don't have to find the right machine on foot.
 
 
-  The floor holds more than cabinets. A wardrobe changes your look, and a token
-  machine earns tickets for jukebox tracks and race avatars. New players get a
-  welcome token bonus, and returning players get a daily one. The lobby shows a
-  live count of players in the plaza and total games played.
+  You don't need to sign up to play, and that's pretty handy because you can
+  start right away.
+
+
+  Every score you post goes to a global leaderboard, though, and signing in is
+  how you claim your spot there. So you can jump in first and still end up with
+  a name on the board.
+
+
+  The mouse works as well as the keyboard. Click the floor and your character
+  auto-walks there, and clicking a cabinet starts its game right away. Dragging
+  with the mouse lets you look around, which matters because the place is a full
+  3D space.
+
+
+  There's a little economy on the side. A wardrobe changes how your character
+  looks, and a token machine earns you tickets for jukebox tracks and race
+  avatars.
+
+
+  You also get a welcome bonus of 50 tokens, plus 20 more each day you come
+  back, which gives the token machine something to work with from the start.
 play:
   url: https://arcadegaming.app
   embeddable: true
@@ -58,7 +75,7 @@ media:
     - games/arcade-gaming/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-10-01
+  updated: 2026-10-02
 status: live
 provenance:
   foundVia: scout:vibejam-2026

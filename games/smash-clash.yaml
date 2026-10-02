@@ -3,23 +3,31 @@ title: Smash&Clash
 tagline: Battle a second player with cards on a compact 3×5 grid in short, tense
   matches.
 description: >-
-  The start screen shows the Smash&Clash logo over a rating counter that begins
-  at 1000, with a large pink Play button beneath it. A rules panel labeled Pick
-  Your Rules offers two choices: Mutators, listed with chess hops, power tiles
-  and overruns, and Classic, labeled as the original game. Each has a small grid
-  icon with colored tiles.
+  The first thing you do is pick your rules, because the menu asks before a
+  match starts.
 
 
-  Matches are two-player card battles on a 3×5 grid. Small wins build on each
-  other into momentum, and any single move can shift the balance. The creator
-  aimed for short, intense rounds of competitive strategy rather than long,
-  drawn-out games.
+  Classic is the original version, and Mutators adds chess hops, power tiles and
+  overruns. Both are a two-player card battle on a 3×5 grid. That's a small
+  board, so each card you place changes what your opponent can do next.
 
 
-  Below Play, the menu lists 2 Players · Local, Play a Friend and Friends.
-  Profile and settings buttons sit in the top right corner. A cookie notice with
-  Accept and Decline buttons appears over the menu, and it states that the game
-  can be played without accepting.
+  The idea is that small wins stack up into momentum, which keeps the lead
+  swinging back and forth. The creator wanted competitive strategy in short
+  bursts instead of long, drawn-out games.
+
+
+  There's more than one way to find an opponent, whether that's someone sitting
+  next to you or a friend online.
+
+
+  Play is the big pink button at the top. Below it you can start a local
+  two-player game on one device, challenge a friend, or open a friends list, and
+  the menu also shows a rating of 1000.
+
+
+  Mutators is the highlighted choice when the rules picker opens, which suits a
+  game so keen on shake-ups.
 play:
   url: https://smashandclash.in
   embeddable: false
@@ -54,7 +62,7 @@ media:
     - games/smash-clash/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-10-01
+  updated: 2026-10-02
 status: live
 provenance:
   foundVia: scout:vibejam-2026

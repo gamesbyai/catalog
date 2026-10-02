@@ -3,21 +3,34 @@ title: Space Blast
 tagline: Dodge and shoot through asteroid fields, alone or with a friend on the
   same screen.
 description: >-
-  Space Blast puts a pilot in a 3D asteroid field with one job: survive as long
-  as possible while shooting rocks apart. Before launching, you enter a required
-  pilot call sign, which is used for the leaderboard, and pick a ship color from
-  a dropdown.
+  You pilot a ship through a field of asteroids in 3D, thrusting around and
+  aiming at the rocks while they close in on you. Your goal is to survive and
+  get a score onto the leaderboard.
 
 
-  Three control schemes are offered on the start screen: touch, mouse, and
-  keyboard. A daily run checkbox makes every player face the same asteroid
-  sequence that day. Two pilots can share one screen by pressing 2 at the start.
+  Before you launch, you type in a call sign, which the game requires. Then you
+  pick how you'll steer: touch, mouse or keyboard. That's a handy spread if
+  you're not sure what device you'll be on.
 
 
-  During a run you pick up shields, rapid fire, and drones to change your
-  loadout as the rocks close in. Ship color palettes can be unlocked. Scores are
-  kept locally, and a top 10 list of world runs is shown on a separate scores
-  page. The menu also has features, briefing, and settings pages.
+  There's also a ship color menu, plus unlockable palettes for your ship.
+
+
+  Two people can share one screen, because pressing 2 at the start brings in a
+  second pilot. So a friend on the couch can fly next to you instead of waiting
+  for a turn.
+
+
+  Along the way you upgrade your loadout with shields, rapid fire and drones,
+  which means you can change how your ship fights in the middle of a run.
+
+
+  You can tick a daily run option, and it gives everyone the same asteroid
+  layout that day. That makes it a fair way to compare scores, since nobody gets
+  luckier rocks than you.
+
+
+  Scores are kept locally, and the game also lists the top 10 world runs.
 play:
   url: https://space-blast.vercel.app
   embeddable: true

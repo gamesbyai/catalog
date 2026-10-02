@@ -2,24 +2,39 @@ slug: feast-for-the-eyes
 title: Feast for the Eyes
 tagline: Fetch the food that hungry eyes ask for, add extras, and earn tips for speed.
 description: >-
-  Hungry eyes want to be fed, and you are the one bringing the food. Each order
-  has to be filled correctly, because a wrong item counts as a mistake. Walk to
-  the objects in the 3D space and pick up what the eyes asked for.
+  You're a waiter walking around a dim, carved-wood teahouse in first person,
+  carrying food to customers who turn out to be a crowd of hungry eyes. Every
+  delivery earns you coins, and the counter in the top corner keeps your total.
 
 
-  Payment depends on how you serve. Delivering the requested food earns money.
-  Adding a napkin, cutlery or similar extras raises the price you can charge,
-  and a quick delivery earns a tip on top.
+  Bring the dish they asked for and you can charge big money. Add a napkin or
+  some cutlery and you can charge even more, which is a cheeky way to upsell a
+  pair of eyeballs.
 
 
-  Movement uses WASD, and the left mouse button interacts with objects. The up
-  and down arrow keys raise or lower mouse sensitivity.
+  Be quick about it and you'll get a tip on top, so speed pays too.
 
 
-  The creator came up with the idea, laid out the level and edited the textures.
-  Claude wrote nearly all of the code, ChatGPT produced the textures, and
-  ElevenLabs and Suno made the sounds. Gemini gave additional help. The creator
-  plans later updates with more maps, better textures and a story.
+  The catch is that you can mess up your order, so you'll want to get it right
+  before you set anything down.
+
+
+  The main dining room has a round table with four carved chairs in front of
+  lattice windows that glow an odd acid green. Off to the side, a narrow earthen
+  hallway passes a small chest of drawers and ends at a door marked End Shift.
+
+
+  Three small red eyes sit at the bottom of the screen while you walk around,
+  and they look like they're watching you back.
+
+
+  You can raise or lower the mouse sensitivity with the arrow keys, which is a
+  considerate thing to have in a first-person game.
+
+
+  N8012 came up with the idea, laid out the level and edited the textures, while
+  Claude wrote nearly all the code. More maps, better textures and a story are
+  on the creator's list for later updates.
 play:
   url: https://n8012.itch.io/feast-for-the-eyes
   embeddable: false
@@ -58,7 +73,7 @@ media:
     - games/feast-for-the-eyes/shot-2
 dates:
   added: 2026-10-01
-  updated: 2026-10-01
+  updated: 2026-10-02
 status: live
 provenance:
   foundVia: scout:aibgj-4

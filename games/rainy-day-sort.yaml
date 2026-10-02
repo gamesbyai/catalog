@@ -2,21 +2,33 @@ slug: rainy-day-sort
 title: Rainy Day Sort
 tagline: Pour and sort colored water between glasses in a calm, tactile puzzle.
 description: >-
-  Rows of glass tubes hold stacked bands of pink, blue, green, orange, purple
-  and teal liquid. Select a tube, then select another to pour into it. The first
-  screen shows a move counter at zero and two rows of tubes, most with empty
-  space at the top.
+  You pour colored liquid from one tube into another, across two rows of tubes
+  layered in soft pastels on a pale background. It's a cozy water sort puzzle
+  that the creator built to feel meditative and tactile.
 
 
-  Some tubes start frozen and show a padlock. A line under the board reads "4
-  neighboring moves unlocks", so a frozen tube opens after moves are made in the
-  tubes beside it. Undo and SOS buttons sit under the title.
+  Some tubes are frozen and wear a little padlock, so you can't use them right
+  away. The note at the bottom says four moves on the tubes next to a frozen one
+  will unlock it, which means what you do next door decides when it opens.
+  That's a neat wrinkle for a sorting puzzle.
 
 
-  Along the top are a Choose Level menu, a New Game button and a settings icon.
-  The screen has a pale gray-blue background, a serif title and a small blue
-  rabbit in the corner. The creator aimed for a cozy, tactile puzzle as an
-  alternative to ad-heavy phone games.
+  If a pour goes wrong, there's an Undo button right at the top of the screen.
+
+
+  An SOS button sits right beside Undo, and a moves counter under the buttons
+  tracks your pours. You can also pick a level from a menu, start a new game, or
+  open the settings.
+
+
+  A small blue bunny with a flower sits in the bottom corner, keeping you
+  company.
+
+
+  The creator hadn't written code since around 2001, so this was a way to learn
+  vibe coding by making something real. They also wanted an alternative to the
+  ad-heavy, clunky puzzle games on the app stores, and they leaned on an old
+  computer science degree along the way.
 play:
   url: https://rainy-day-sort.pages.dev
   embeddable: true
@@ -57,7 +69,7 @@ media:
     - games/rainy-day-sort/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-10-01
+  updated: 2026-10-02
 status: live
 provenance:
   foundVia: scout:vibejam-2026

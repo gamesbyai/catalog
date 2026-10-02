@@ -2,20 +2,34 @@ slug: rescue-from-the-shadows
 title: RESCUE FROM THE SHADOWS
 tagline: Explore a dark world and learn digital security and Web3 along the way.
 description: >-
-  Someone needs bringing back out of the darkness, and in Rescue From the
-  Shadows that is your job. As a narrative puzzle game, it has you explore a
-  dark world step by step and move the story forward by working through the
-  situations it puts in front of you.
+  You're trying to free the guardians of knowledge, who are trapped behind magic
+  barriers in a hidden house that a living darkness has taken over. Suiken, a
+  monkey in a trench coat and hat, has to cross every chamber and break each
+  seal before facing the Shadow.
 
 
-  ChatGPT is the tool the creator lists for making it, and the game is set up
-  for multiplayer. In Vibe Jam 2026 it ranked 529th of the 945 entries.
+  The Shadow is a creature that feeds on failure, forgetting and fear, so it's
+  the one waiting at the end.
 
 
-  The puzzles double as lessons. Ideas from digital security and Web3 are woven
-  into the exploration and the puzzles, so understanding them is part of how you
-  progress. The creator's aim was a game that adds real value instead of being
-  pure entertainment.
+  At a barrier, an arcane terminal asks you a question about Web3 security. One
+  screen wants to know what a seed phrase is and gives you four lettered
+  answers, which is a sneaky way to tuck a lesson inside a spell lock.
+
+
+  Life and Barrier show as percentages beside Suiken's portrait, which is a
+  useful thing to keep an eye on.
+
+
+  A caption labeled Omen sits under the question and sets the scene, so the
+  attic air and the pulsing barrier get a line of their own. The art is dark and
+  gritty, with a red moon outside and green magic glowing inside.
+
+
+  The creator was bothered that most games are pure entertainment, so they built
+  one where you pick up digital security and Web3 along the way. You can switch
+  the text between English and Portuguese on the title screen, which is handy
+  for a game meant to teach.
 play:
   url: https://o-resgate-das-sombras.vercel.app
   embeddable: true
@@ -52,7 +66,7 @@ media:
     - games/rescue-from-the-shadows/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-09-29
+  updated: 2026-10-02
 status: live
 provenance:
   foundVia: scout:vibejam-2026

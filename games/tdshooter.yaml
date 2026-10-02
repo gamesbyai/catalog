@@ -2,21 +2,33 @@ slug: tdshooter
 title: TDShooter
 tagline: Shoot enemies from above, finish quests, and open up new zones.
 description: >-
-  You control a small character on a dark green grid. Walk with W, A, S, D, aim
-  with the mouse and click to shoot. A prompt on screen says so at the start,
-  and a counter at the top reads Enemies killed: 0/40.
+  You walk a small character around a top-down arena with W, A, S and D, aim
+  with the mouse, and click to shoot. A hint in the middle of the screen says
+  exactly that, so you're not left guessing. Your health starts at 100 out of
+  100 in the top left.
 
 
-  A line under the counter reads Next: Zone 2, up, and yellow arrows on the
-  floor point that way. The creator describes the game as shooting enemies,
-  doing quests and unlocking new zones.
+  Space makes you slide, and a small bar at the bottom of the screen carries a
+  label for it.
 
 
-  The top left shows HP at 100 out of 100, a level readout with perk points, and
-  an XP bar that starts at 0 of 100. A slide ability is labeled Space at the
-  bottom center. A column of emote buttons on the right edge offers a heart,
-  thumbs up, arrows, a question mark, an exclamation mark, a skull, a gravestone
-  and a coffin. Two icons in the top right switch between mouse and touch input.
+  Under the health there's a level counter, a count of perk points, and an XP
+  bar that starts at 0 out of 100. That's a lot of progression to see before
+  you've fired a shot.
+
+
+  At the top, a kill counter reads 0 out of 40, and a line under it names Zone 2
+  as the next area, up from where you stand. Big arrows on the floor point the
+  same way, so you know which direction to head. The creator describes the game
+  as shooting enemies, doing quests and unlocking new zones.
+
+
+  Down the right edge runs a column of emoji buttons, with a heart, a thumbs up,
+  a skull and a tombstone among them, which is a funny set to find in a shooter.
+
+
+  Up in the corner you can switch between mouse controls and touch controls. A
+  menu button sits right beside that switch.
 play:
   url: https://tdshooter.space
   embeddable: true
@@ -56,7 +68,7 @@ media:
     - games/tdshooter/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-10-01
+  updated: 2026-10-02
 status: live
 provenance:
   foundVia: scout:vibejam-2026

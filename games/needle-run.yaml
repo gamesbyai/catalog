@@ -3,21 +3,29 @@ title: NEEDLE RUN
 tagline: Fly through gates, avoid pursuers, and chase score multipliers for a
   leaderboard spot.
 description: >-
-  Steer a small arrow ship across a neon grid, flying through gates while red
-  diamond enemies close in on you. You have no weapon to shoot with. The goal is
-  to stay uncaught, pass through gates, and build a score as high as you can.
+  You fly a small glowing arrow through gates and try not to get caught, picking
+  up score multipliers along the way to climb the leaderboard.
 
 
-  Collecting multipliers raises the number shown at the top of the screen, which
-  starts at x1. A bomb is held in reserve and the HUD shows when one is ready.
-  Your best score sits in the top left corner, and the top-ranked score to beat
-  sits in the top right.
+  It's modeled on the Pacifism mode from the Geometry Wars series. The title
+  screen shows a cluster of red diamonds trailing the arrow across a neon grid.
 
 
-  Scores go to an online leaderboard, and the title screen has a profile editor
-  for your entry. Move with the mouse, WASD, a gamepad stick, or a touch virtual
-  stick. The creator took the idea from the Pacifism mode in the Geometry Wars
-  series.
+  A small x count at the top center shows your current multiplier, and the label
+  under it tells you when the bomb is ready. Your own best score sits in the top
+  left, while the top right shows the score to beat, so there's always a number
+  to chase.
+
+
+  When that label says the bomb is ready, press B or Shift to set it off.
+
+
+  On a computer you can aim and move with the mouse, or steer with WASD if you'd
+  rather use the keyboard. A gamepad's left stick works too, and on a phone you
+  get a virtual stick, which is a thoughtful extra for a game about steering.
+
+
+  A press of Space, a click or a tap on the title screen is what starts a run.
 play:
   url: https://needle-run.afterimage-dev.com
   embeddable: false
@@ -60,7 +68,7 @@ media:
     - games/needle-run/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-10-01
+  updated: 2026-10-02
 status: live
 provenance:
   foundVia: scout:vibejam-2026

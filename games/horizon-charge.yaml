@@ -2,26 +2,34 @@ slug: horizon-charge
 title: Horizon Charge
 tagline: Fly an ion craft fast enough to keep its capacitor charged
 description: >-
-  The aim is to cover as much distance as possible before the ion craft runs out
-  of energy. Hold the charge input to accelerate. While your speed stays above
-  the gold charge line, the capacitor refills. Drop below it and the remaining
-  energy drains away.
+  Your ship runs on its own speed. Hold the charge button and it accelerates,
+  and as long as you stay above the gold charge line the capacitor refills, but
+  if you drop below it your remaining energy drains away.
 
 
-  Steering costs momentum, so every sharp turn trades speed for position. You
-  thread through authored tower formations, collect open capacitor arcs, and
-  skim hazards close enough to earn near-miss bonuses. The obstacle layouts are
-  deterministic, so repeated runs let you learn them.
+  Steering isn't free, and hard turns cost you momentum, so every sharp swerve
+  around an obstacle is a trade between keeping speed up and getting out of the
+  way. That's a neat tension for a game where slowing down is what kills you.
 
 
-  The course accelerates without end and moves through three stages: Ignition,
-  Vector, and Redline. Your best distance is saved between sessions. Settings
-  reduce flashing and camera shake, and the game accepts keyboard, gamepad,
-  mouse, and touch input.
+  You're flying over a curved planet surface between tall tower formations.
+  They're authored rather than random, which means the layouts stay the same and
+  you can learn them. You also collect open capacitor arcs, and skimming close
+  to hazards earns near-miss bonuses.
 
 
-  Planet shaders and visual effects react to your speed. The creator lists code,
-  graphics, sounds, and text as AI assisted.
+  The course keeps accelerating and there's no finish line, so you're chasing a
+  longer distance. Your best distance is saved between runs.
+
+
+  There are three stages, called Ignition, Vector and Redline. The screen shows
+  a charge meter, your distance, a near-miss counter and a speed dial, and the
+  planet's look reacts to how fast you're going.
+
+
+  If flashing or camera shake bothers you, there are settings to reduce both,
+  which is a considerate touch for a game built around speed. Steering and
+  charging work with keyboard, gamepad, mouse or touch.
 play:
   url: https://smallloopworks.itch.io/horizon-charge
   embeddable: false
@@ -62,7 +70,7 @@ media:
     - games/horizon-charge/shot-2
 dates:
   added: 2026-10-01
-  updated: 2026-10-01
+  updated: 2026-10-02
 status: live
 provenance:
   foundVia: scout:aibgj-4

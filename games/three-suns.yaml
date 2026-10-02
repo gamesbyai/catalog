@@ -2,27 +2,42 @@ slug: three-suns
 title: Three Suns
 tagline: Place gravity anchors to keep a world alive under three unpredictable suns.
 description: >-
-  Three Suns is a physics survival game that puts you in charge of the last
-  living world in a chaotic three-sun system. You place gravity anchors to steer
-  the planet's path and switch between survival modes as conditions change,
-  trying to last through one punishing dawn after another.
+  Three Suns has you click or tap to drop gravity anchors around a system with
+  three suns, because you're trying to keep the last living world alive.
+  Touching a sun is fatal. The aura around each one drains your health while
+  you're inside it.
 
 
-  The setup draws on the three-body problem from orbital mechanics and on Liu
-  Cixin's novel The Three-Body Problem, though the story, mechanics, and world
-  are the creator's own. ChatGPT and Three.js were the tools behind it, and it
-  finished 217th of 945 in Vibe Jam 2026. Phones are supported too.
+  A signal meter limits how many anchors you can place, so you can't just cover
+  the sky with them. Holding Space slows time whenever your focus is ready.
 
 
-  There is no steady orbit to settle into. Survival depends on reading how the
-  suns pull on the planet and answering with well-timed anchor placement, dawn
-  after dawn.
+  You also switch between three survival modes with the 1, 2 and 3 keys.
+
+
+  They're called Shield, Sleep and Observe, and you start in Shield. It raises
+  your resistance to the red heat aura and keeps the cold and chaos risks
+  modest, which tells you the dangers here come in more than one kind.
+
+
+  The goal is to get through one impossible dawn after another.
+
+
+  A panel in the corner shows your health, the day count, your mode and your
+  best result, and a short opening lesson can be skipped. Liu Cixin's The
+  Three-Body Problem and the real orbital mechanics puzzle inspired it, though
+  the story, mechanics and world are original.
 play:
   url: https://threesuns.xyz
   embeddable: true
   platforms:
     - browser
     - mobile
+  controls:
+    - "Click / tap: place gravity anchor"
+    - "Space: slow time (focus)"
+    - "1 / 2 / 3: switch mode (Shield, Sleep, Observe)"
+    - "P: low effects"
 creator:
   name: Danil38138190
   handle: danil38138190
@@ -53,7 +68,7 @@ media:
     - games/three-suns/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-09-29
+  updated: 2026-10-02
 status: live
 provenance:
   foundVia: scout:vibejam-2026

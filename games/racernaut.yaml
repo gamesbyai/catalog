@@ -3,25 +3,29 @@ title: Racernaut
 tagline: Drive through an endless generated city, choosing turns at every
   junction to stay alive.
 description: >-
-  Press Space to start driving through a city that generates itself as you go.
-  Each junction is a bet on which way to turn, and the wrong turn costs you the
-  run. The streets stream in ahead of the car as you drive.
+  You're racing a car through a city that keeps building itself ahead of you,
+  and every junction forces a guess about which turn keeps you alive. The goal
+  is to survive as the streets stream past, because a wrong choice ends the run.
 
 
-  Steer with A and D, hold W to boost and S to brake. C switches the camera. The
-  default view looks straight down on the car, with crosswalks, traffic lights,
-  rooftops, trees and parked vehicles laid out around each intersection.
+  The view starts from high above, looking straight down at crosswalks, rooftops
+  and parked clutter.
 
 
-  Two columns of icon buttons sit on the left edge. The top column has four
-  buttons with sun and moon symbols, and the bottom column has five with cloud
-  and rain symbols. A loading bar tracks the first rows of city being built
-  before you can drive.
+  Press Space to start driving. You steer left and right, hit the boost when you
+  want speed, and brake when a junction comes up too fast, which is handy
+  because the city isn't laid out ahead of time. There's a camera switch too, if
+  the top-down view isn't what you want.
 
 
-  The creator had only experimented with procedural generation before and wanted
-  to build something serious with it. An audio toggle sits in the top corner,
-  with credits for the music and ambient sound shown beside it.
+  A small panel on the left lets you change the time of day, from sunrise
+  through full daylight to night. A second set of buttons below it changes the
+  weather, with several kinds to pick from.
+
+
+  The creator has long been curious about procedural generation and had only
+  ever toyed with it. Building this with AI was how they finally made something
+  serious out of it, and the endless city shows that.
 play:
   url: https://racernaut.com
   embeddable: true

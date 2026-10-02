@@ -2,21 +2,33 @@ slug: bumper-king
 title: Bumper King
 tagline: Ram rival bumper cars, grab powerups, and fight to hold the crown.
 description: >-
-  You drive a bumper car around a tiled arena, ramming rival cars to knock them
-  out and collecting glowing pickups to grow bigger and stronger. The goal is to
-  climb the scoreboard, become King, and hold the crown.
+  You steer a little car around a tiled arena and ram rival cars to knock them
+  out. Every colored orb you pick up makes you bigger and stronger, which is the
+  growth loop the creator borrowed from Snake.io and blended with bumper cars.
 
 
-  Four powerups appear in the arena. Speed gives a boost, Mega Bump makes your
-  hits stronger, Shield protects you, and Magnet blasts nearby cars away.
-  Hazards also sit in the arena and have to be dodged. The creator describes the
-  loop as bumper cars mixed with the growth-and-domination pattern of Snake.io.
+  The goal is to become King and hold the crown. A scoreboard in the corner
+  ranks the top ten, and once you're in that group your own name and score sit
+  in the list, so you can see how far you are from first. The rivals wear name
+  tags like Bot Zap Wagon, and the scoreboard is packed with bot names too.
 
 
-  You start from a title screen where you enter a username and press Enter
-  Arena. The screen also shows your best score. In the arena, a ten-row
-  scoreboard on the left ranks you against named rival cars, and a side panel
-  lists the powerups and the four basics: drive, bump, grow, survive.
+  Four powerups are laid out in a side panel, so you don't have to guess what
+  they do.
+
+
+  Speed gives you a boost, Mega Bump makes your hits stronger, Shield protects
+  you, and Magnet blasts cars away from you. The creator also describes hazards
+  to dodge while you fight for the crown.
+
+
+  A how-to-play panel stays on the left edge while you drive, which is
+  considerate because you never have to memorize the rules.
+
+
+  Before you start, you type a username, and the start screen shows your best
+  score. The floor is a tiled stage lit in purple and blue, with small glowing
+  orbs scattered across it. The menu also has a sound toggle and an info button.
 play:
   url: https://bumper-king.vercel.app
   embeddable: true
@@ -58,7 +70,7 @@ media:
     - games/bumper-king/shot-2
 dates:
   added: 2026-10-01
-  updated: 2026-10-01
+  updated: 2026-10-02
 status: live
 provenance:
   foundVia: scout:vibejam-2026

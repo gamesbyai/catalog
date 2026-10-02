@@ -2,23 +2,34 @@ slug: vibe-city
 title: vibe city
 tagline: Hang out in a pixel-art isometric town, chat, and play arcade games
 description: >-
-  Vibe City starts you as a small avatar on an isometric pixel-art street. Walk
-  the block past a hotel, shops with striped awnings, flower beds, trees and
-  street lamps. Doormats mark the building entrances, and you step into rooms
-  from the street.
+  You wander an isometric pixel-art street as your own avatar, stepping into
+  rooms and talking with whoever else is around.
 
 
-  Other players share the street with you. A chat box at the bottom of the
-  screen takes messages up to 72 characters, and a Send button posts them.
-  Buttons along the top open avatar customization (ME), a room list, a home
-  button and daily goals, with a coin counter beside them.
+  Chat goes through a box at the bottom of the screen that caps each message at
+  72 characters, so everything stays short. Along the top you get buttons for
+  your avatar, a list of rooms, a home shortcut and daily goals, plus a coin
+  counter.
 
 
-  A neon Arcade building stands on the street and works as the game's hub for
-  play. It holds games from several genres, including action, puzzle, shooter,
-  racing and RPG, so you can leave the hangout for a round of something else.
-  The creator drew on Habbo and a liking for many kinds of games, aiming for a
-  warm place to hang out.
+  The big neon building on the street is the arcade, with a space invader and a
+  pink ghost painted on its walls, which tells you pretty clearly what's inside.
+  Behind those doors there are games from several genres, including action,
+  puzzle, shooter, racing and RPG. It's a funny thing to tuck inside a hangout,
+  but it means the place has more to do than talk.
+
+
+  You don't need an account to join in, and there's nothing to install.
+
+
+  Habbo was the starting point, along with the creator's love of playing lots of
+  different kinds of games. The idea was a warm spot you can step into with one
+  click, like a cozy neighborhood. You can customize your avatar, which starts
+  out as a plain figure in a white outfit.
+
+
+  Next to the arcade you'll find hotel-style storefronts with doormats out
+  front, cherry trees and flower beds along the sidewalk.
 play:
   url: https://isometric-social-game.vercel.app
   embeddable: true
@@ -56,7 +67,7 @@ media:
     - games/vibe-city/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-10-01
+  updated: 2026-10-02
 status: live
 provenance:
   foundVia: scout:vibejam-2026

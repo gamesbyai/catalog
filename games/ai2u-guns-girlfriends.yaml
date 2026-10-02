@@ -3,29 +3,45 @@ title: AI2U - Guns & Girlfriends
 tagline: Build a base, launch nukes and outfight three rival factions in a
   real-time strategy game.
 description: >-
-  The start screen shows a nuclear blast over a battlefield of tanks and bases,
-  with a pink-haired catgirl in the corner and a Run game button. In play, you
-  build a base, harvest ore, train tank columns and watch for nuclear
-  superweapon countdowns, in the manner of a '90s Red Alert skirmish.
+  The first screen asks you to choose a commander: a pink-haired catgirl, a
+  witch, or a siren. Below them you pick one of five battlefields and one of
+  three difficulties, then hit start. It's a real-time strategy game in the old
+  Red Alert mold, with base building, harvesting, tank columns and nuclear
+  silos.
 
 
-  You pick one of three factions. Catgirls field conscript soldiers, tanks,
-  rocket launchers and a commando who plants C4 on buildings. Witches have fast
-  units, healing cauldrons, suicide potion runners and a Grand Cannon with the
-  longest range. Sirens use bubble-shielded guards, chain-lightning platforms
-  and a siege crab.
+  Each commander leads a different army. The catgirls field soldiers, tanks and
+  rocket launchers, plus a commando who plants C4 on buildings. The witches have
+  fast movers, healing cauldrons, running potions that blow up, and a Grand
+  Cannon with the longest range. The sirens bring bubble-shielded guards,
+  chain-lightning platforms and a siege crab.
 
 
-  There are 5 maps (islands, deserts, glaciers and a volcano crater) and 3
-  difficulties, with AI opponents that rush, build turrets or wait for an
-  opening. Units counter each other through abilities such as healing auras and
-  hero infiltration. Watch your power supply, and when a nuclear launch warning
-  appears in the top-left corner, expect the strike. An in-game wiki lists live
-  stats for every unit, and victories are saved as local records.
+  The maps are an island, a set of sand-bridged straits, a volcano crater, a
+  desert and a glacier shelf. On the island, three armies share the land and
+  nobody can escape.
+
+
+  You pick Easy, Normal or Hard, and the computer opponents behave differently
+  from each other: some rush you, some pile up turrets, and some wait for an
+  opening.
+
+
+  Every unit has a counter, so healers and hero infiltrators matter as much as
+  raw tank numbers. Defensive buildings help a lot, though specialized
+  counter-units can crack them, and you have to keep an eye on your power
+  supply. The ore behind your base is safe, but the ore in the middle is where
+  the fighting happens.
+
+
+  When the top-left corner announces a nuclear launch, it means it. Your results
+  are saved locally in a victory record for each commander and difficulty, and
+  there's an in-game wiki with live stats for every unit.
 
 
   The creator built the 3D units almost entirely from procedural geometry, which
-  keeps the download near 10 MB.
+  keeps the whole thing around 10 MB. The music and character art were made with
+  AI tools too.
 play:
   url: https://helixngc7293.itch.io/gandg
   embeddable: false
@@ -69,7 +85,7 @@ media:
     - games/ai2u-guns-girlfriends/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-10-01
+  updated: 2026-10-02
 status: live
 provenance:
   foundVia: scout:awesome-cc0

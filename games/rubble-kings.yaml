@@ -2,21 +2,37 @@ slug: rubble-kings
 title: Rubble Kings
 tagline: Stack physics blocks into a tall kingdom and knock down your rivals' towers.
 description: >-
-  In Rubble Kings, land comes from height. You stack physics-based blocks into a
-  kingdom, and the taller your structure stands, the more territory you control.
-  Building upward is the way to expand, so a match comes down to how ambitious
-  you are willing to be with your tower.
+  You build your kingdom out of physics-based blocks, and the taller you stack
+  them, the more land you control. That's a neat trade, because height is also
+  what makes you easy to hurt. One good hit from an enemy can bring the whole
+  thing down.
 
 
-  The creator remembered a similar game from more than twenty years ago but
-  could never recall its name or track it down, so they built their own with
-  Claude Code and Three.js.
+  So every tower is both your claim on the map and your biggest risk.
 
 
-  The physics is where the strategy lives. A tall tower claims more land but is
-  easier to topple, and one well-placed hit from a rival can bring the whole
-  thing down. Rivals try to knock your tower over while you go after theirs, so
-  stability matters as much as size.
+  It's billed as a real-time strategy game built from blocks, and the creator
+  says it came from a half-remembered game they saw more than twenty years ago.
+  They couldn't find it again, so they made something similar.
+
+
+  You can play with other people online. The host opens a waiting room with a
+  room code and a share link, so friends can join by code or by link instead of
+  having to be matched up.
+
+
+  Before the match starts, you pick your name, a color, and a heraldry emblem
+  from a grid of about thirty crests, which is a lot of ways to fly a flag over
+  a pile of rubble.
+
+
+  The host sets how many human players there are and how many AI opponents fill
+  the rest, and each AI slot can be left random or set by hand. There's also a
+  control style setting, which defaults to an easy snapping mode.
+
+
+  The menu has a How to Play screen and an Options screen if you want to look
+  things over first.
 play:
   url: https://pixelcrowngames.com/games/rubblekings
   embeddable: true
@@ -52,7 +68,7 @@ media:
     - games/rubble-kings/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-09-29
+  updated: 2026-10-02
 status: live
 provenance:
   foundVia: scout:vibejam-2026

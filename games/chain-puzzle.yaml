@@ -2,24 +2,36 @@ slug: chain-puzzle
 title: Chain Puzzle
 tagline: Link words into chains and use bonuses to push your score higher.
 description: >-
-  Press Play, then pick one of three modes. Easy works like hangman: you guess
-  any letters, and each one is marked green for the right place, yellow for the
-  wrong place, or grey for not in the word. Easy starts at 5-letter words.
+  Pick a mode first, because it decides how strict the guessing is. Easy is
+  hangman style, so you can guess any letters you like, and each one shows green
+  when it's in the right place, yellow when it's in the word but misplaced, and
+  grey when it's not there.
 
 
-  Medium plays crossword style, and every guess must be a real word from the
-  dictionary. It also starts with 5-letter words. Hard keeps the dictionary-only
-  rule and lets you begin at Level 6 or Level 7, so the words are longer from
-  the first move.
+  Easy also starts you off on 5-letter words, so the first word is a short one.
+
+
+  Medium is crossword style, which means every guess has to be a real word from
+  the dictionary. You can't just throw letters at the board to see what sticks.
+  It starts at 5-letter words too.
+
+
+  Hard keeps the dictionary rule but skips the warm-up. You choose Level 6 or
+  Level 7 as your starting point, so the words are longer from your very first
+  move.
 
 
   The goal is to chain as many words together as you can, use bonuses along the
-  way, and reach the highest score. Scores go to a High Scores list, and a How
-  to Play screen explains the rules.
+  way, and finish with the highest score.
 
 
-  The main menu also has a Suggest a Word button for sending in words. The game
-  uses a neon purple and green look with a glowing grid floor.
+  Since a dictionary decides what counts in Medium and Hard, it makes sense that
+  there's a suggest-a-word button on the main menu. A high scores screen and a
+  how-to-play page sit right beside it.
+
+
+  The creator wanted to learn about gameplay logic and make something people
+  would enjoy playing.
 play:
   url: https://cwpuzzle2.purpleprawn.com
   embeddable: true
@@ -55,7 +67,7 @@ media:
     - games/chain-puzzle/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-10-01
+  updated: 2026-10-02
 status: live
 provenance:
   foundVia: scout:vibejam-2026

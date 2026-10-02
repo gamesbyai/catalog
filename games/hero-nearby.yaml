@@ -2,24 +2,35 @@ slug: hero-nearby
 title: Hero Nearby
 tagline: Run through a neighborhood as a developer and fix people's tech problems.
 description: >-
-  The player runs a developer along a pixel-art Italian street, helping
-  neighbors with their tech problems in a 2D endless runner. The run is scored
-  in points, labeled pti, with a distance counter in meters beneath it. Both
-  start at zero and climb as the character runs.
+  You play a developer running down a neighborhood street with a laptop in hand,
+  and the run keeps going as the distance counter climbs in meters. Your job is
+  to help the locals with their tech troubles as you pass them.
 
 
-  A row of counters across the top tracks seven kinds of things, each starting
-  at x0. The icons include a printer, a person, two camper vans, a tangle of
-  cables, a purple bug and a figure lying down. The jokes aim at programmer
-  stereotypes: being asked to fix everything, printers included, and the cable
-  management every developer has to face.
+  It's a 2D endless runner, so the street just keeps scrolling.
 
 
-  The street scrolls past pastel houses with orange roofs, a bell tower, olive
-  trees and a signpost reading Help This Way. The game opens on a Play button,
-  and the developer carries a laptop. The creator took the idea from Informatici
-  di Quartiere, an Italian non-profit that helps local communities with everyday
-  digital problems.
+  Up in the top corner there's a points score next to that distance, which gives
+  you two ways to measure a run. Across the top of the screen sits a row of
+  counters, each with a little icon: a printer, a person, a camper van, a tangle
+  of cables and a few others. They all start at zero, so they seem to tally what
+  you meet along the way.
+
+
+  The setting is a sunny pixel-art Italian town with orange rooftops, a church
+  tower and olive trees. A signpost reading "help this way" stands by the road.
+
+
+  The idea comes from Informatici di Quartiere, an Italian non-profit that helps
+  people in local communities handle everyday digital problems through workshops
+  and educational games. The game tells the story of that work in a playful
+  tone.
+
+
+  It also pokes fun at programmer stereotypes, like being expected to fix
+  everything, printers included. Cable management gets cast as the developer's
+  inevitable enemy, which is a funny thing to pin on a street full of people who
+  need help.
 play:
   url: https://hero-nearby.vercel.app
   embeddable: true

@@ -2,24 +2,30 @@ slug: starjam
 title: StarJam
 tagline: Place defenses and click for income in a tower defense idler hybrid.
 description: >-
-  StarJam starts with an astronaut standing in a field of blue and red crystal
-  clusters, beside a refinery. Counters under the character read 0/5 for each
-  color. The refinery combines one blue and one red crystal into currency, which
-  pays for upgrades.
+  StarJam has you walking an astronaut through a field of blue and red crystals,
+  picking them up and hauling them back to a refinery. You carry up to five of
+  each color at a time, so you'll be making trips constantly.
 
 
-  The goal is to collect 7,000 crystals as quickly as possible. A timer runs at
-  the top of the screen, and a purple crystal counter in the top left tracks
-  progress toward that target.
+  The refinery needs one blue and one red crystal to make its currency, which
+  means grabbing only one color gets you nowhere. That currency pays for
+  upgrades, and you're racing to reach 7,000 while a timer runs at the top of
+  the screen.
 
 
-  Each time the refinery processes crystals, it attracts aliens that try to
-  destroy it, so the game mixes tower defense with clicker and idle play.
+  Every time the refinery processes crystals, it attracts aliens who want to
+  tear it down, and that's where the tower defense half comes in.
 
 
-  A text tutorial explains these rules at the start. You step through it with a
-  Next button or skip it with a button in the top left. Space pauses the game,
-  and F toggles fullscreen.
+  So the very thing that makes you richer also puts your base in danger, which
+  is a neat way to tie a clicker-style grind to a defense game.
+
+
+  The game opens with a short tutorial that walks you through the mission one
+  message at a time. You can skip it if you'd rather work things out yourself.
+
+
+  You can pause whenever you need to, and there's a fullscreen toggle too.
 play:
   url: https://star-jam.vercel.app
   embeddable: true
@@ -59,7 +65,7 @@ media:
     - games/starjam/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-10-01
+  updated: 2026-10-02
 status: live
 provenance:
   foundVia: scout:vibejam-2026

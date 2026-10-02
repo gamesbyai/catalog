@@ -3,28 +3,48 @@ title: Silent Depth
 tagline: Hunt a convoy by sonar, fire one torpedo attack, then slip away from
   the escorts.
 description: >-
-  You command a submarine that is powerful but nearly blind. Passive sonar is
-  how you search for a convoy, and each run is a short extraction roguelite. A
-  run follows one order: find the convoy, line up a torpedo attack, then get
-  away.
+  You're in a submarine that's powerful but almost blind, and every look around
+  has a price. Raising the periscope or surfacing tells you more about what's
+  out there, but it also makes the escorts more likely to spot you.
 
 
-  Raising the periscope or surfacing gives you information, but it also makes
-  you easier to detect. Periscope targeting is how you line up the shot, and the
-  convoy routes are procedurally generated, so each run sends you after a
-  different path.
+  That trade is the whole game, and it's a neat thing to build a short run
+  around.
 
 
-  Once you fire, escorts pursue you, and you have to disappear before they lock
-  onto your position. The creator built the game around surviving the pressure
-  after the shot rather than only sinking the ship, with one-hit tension
-  throughout.
+  A round sonar sweep sits in the top corner, with a ping button next to the
+  depth controls. When you're at periscope depth, a bearing readout under the
+  lens shows which way you're facing, so you turn the scope around the horizon
+  looking for the convoy. The convoy routes are procedurally generated, so each
+  run sends you after a different one.
+
+
+  Three depth buttons run along the bottom: surface, scope and deep.
+
+
+  Once you've found the convoy, you line up a torpedo shot and fire. A tube
+  counter in the corner starts at four and goes down as you launch, which means
+  every shot is one you've spent.
+
+
+  The danger readout moves from quiet to search once the escorts start hunting
+  you. Sinking the ship doesn't end the run, because you still have to slip away
+  before they lock onto your position, and a single hit finishes you.
+
+
+  The creator built it as a short extraction roguelite around that gap between
+  knowing and hiding, so the pressure after the shot is meant to be the real
+  test.
 play:
   url: https://silent-depth.gtdstudy.com
   embeddable: true
   platforms:
     - browser
     - mobile
+  controls:
+    - "1: surface"
+    - "2: periscope"
+    - "3: deep"
 creator:
   name: yibie
   handle: yibie
@@ -58,7 +78,7 @@ media:
     - games/silent-depth/shot-2
 dates:
   added: 2026-10-01
-  updated: 2026-10-01
+  updated: 2026-10-02
 status: live
 provenance:
   foundVia: scout:vibejam-2026

@@ -2,26 +2,35 @@ slug: spice-jam
 title: Spice Jam
 tagline: Harvest spice in the desert, hunt rival harvesters, and outlast the worm.
 description: >-
-  Spice Jam puts you in a third-person desert as a hooded harvester armed with a
-  knife, with a crosshair at screen center. You gather spice from open sand, up
-  to a carry limit of 10, then bring it back to a base marked by a tall beam of
-  light.
+  Spice Jam puts you in open desert sand, where you gather spice and shoot rival
+  harvesters to take theirs. Your pack tops out at 10, so you're hauling it back
+  to base before long.
 
 
-  Other players are rival harvesters. Killing one steals their spice, and a
-  glowing pack on a harvester shows who is carrying. The base signage notes that
-  spice drops on death.
+  Spice only counts once you deposit it at the base, and a tall beam of light
+  shows you where that is.
 
 
-  Depositing at the base adds to a banked total and restores health and shield.
-  The on-screen panel tracks your weapon, spice carried, bank, HP, shield and a
-  worm meter that starts at 0%. A worm threatens harvesters out on the sand, and
-  a status line marks the rock as safe.
+  A bank counter keeps what you've deposited separate from what you're carrying.
+  The sign at the base says depositing restores your health, which gives you a
+  reason to come home even with a half-empty pack.
 
 
-  The base also has stands for gear, including one surrounded by a shield
-  bubble. The panel shows a player count out of 20, and the setting draws on
-  Dune, with lasgun and holtzman themes.
+  The base has another sign explaining that a glowing pack means someone's
+  carrying spice, and that the spice drops when they die. That's the whole
+  reason killing a rival harvester pays off, since their haul ends up on the
+  sand. You start out with a knife.
+
+
+  Then there's the worm, which you have to survive out there while you work the
+  sand.
+
+
+  A worm meter sits under your health and shield bars, and a status line tells
+  you when you're standing on rock that's safe. Near the base there's a station
+  with a shield bubble around it, and the creator wanted more lasgun and
+  Holtzman interactions, so it reads like a nod to Dune's shield. You see it all
+  from behind a hooded character, with a crosshair in the middle of the screen.
 play:
   url: https://spice.bananatriangles.com
   embeddable: true

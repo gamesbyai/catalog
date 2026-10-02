@@ -2,25 +2,35 @@ slug: typefall
 title: Typefall
 tagline: Build your own words or race to match the target before the letters pile up.
 description: >-
-  Letters fall into columns one tile at a time, and you steer each dropping tile
-  left or right before it lands. The bottom row of the stack is your working
-  word. If tiles pile up to the top of the screen, the run ends.
+  Letters drop into columns like falling blocks, and you steer each tile left or
+  right before it lands. The bottom row is where the words get built, so every
+  tile you place is a choice about what that row will spell.
 
 
-  Three modes change what that bottom row has to do. In Freestyle, you build any
-  valid dictionary word of 4 to 6 letters on the bottom row to advance a level.
-  Wordmatch turns the row into a guess at a hidden target word, with
-  Wordle-style feedback on every letter.
+  If tiles pile up to the top of the screen, the game is over.
 
 
-  Geoquest works the same way but the answer is the name of a place. The
-  category changes by run and includes countries, world cities, US states and US
-  state subdivisions. The menu also has a high scores list, an instructions
-  panel, a language selector and sound toggles.
+  Freestyle mode lets you build any valid dictionary word on the bottom row,
+  four to six letters long, and that moves you up a level. Nothing is hidden
+  there, so you decide your own target as the letters arrive.
 
 
-  On the making of it, the creator says they had the idea for a long time and
-  that AI made it feasible to build.
+  Wordmatch turns the same setup into a guessing game. There's a hidden target
+  word, and your bottom row acts as your current guess, with Wordle-style
+  feedback on every letter in it. Getting the word right advances you to the
+  next level.
+
+
+  Geoquest keeps that guessing but asks for the name of a place.
+
+
+  The category changes from run to run, and it can be countries, world cities or
+  US states. A language picker sits on the main menu, which makes sense given
+  the tiles scattered around it show letters from several alphabets.
+
+
+  There's also a high scores screen and an instructions page, both reachable
+  from the menu.
 play:
   url: https://typefall.skyhighgames.com
   embeddable: true
@@ -55,7 +65,7 @@ media:
     - games/typefall/shot-2
 dates:
   added: 2026-10-01
-  updated: 2026-10-01
+  updated: 2026-10-02
 status: live
 provenance:
   foundVia: scout:vibejam-2026

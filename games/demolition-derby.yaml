@@ -2,22 +2,33 @@ slug: demolition-derby
 title: Demolition Derby
 tagline: Ram other players' cars in a dusty arena until one is left running
 description: >-
-  You drive a car around a dusty, fenced arena and ram other drivers until their
-  cars are wrecked. Each round runs on a countdown timer that starts near four
-  minutes, and you share the arena with other players online.
+  You drive a car into other people's cars inside a dusty round arena, with a
+  chain-link fence overhead and strings of pennants hanging along it. The other
+  drivers are strangers sharing the arena with you online. Each round runs
+  against a countdown clock at the top of the screen.
 
 
-  Your score sits in the top corner, and a standings board lists the leaders by
-  points. Holding Tab brings up the full board. A feed under it announces who
-  wrecked whom. Your hull percentage shows inside a speedometer, and a critical
-  warning appears when the hull is nearly gone.
+  Space works as a handbrake, and a prompt at the bottom of the screen reminds
+  you of it.
 
 
-  A boost meter recharges over time and is spent with Shift. Space works the
-  handbrake. Shield-shaped pickups lie on the arena floor. The cars include
-  muscle cars, vans and a dog-faced wreck, and tire tracks mark the dirt. The
-  creators cite FlatOut 2 demolition derby sessions at LAN parties as the
-  inspiration.
+  Your score sits in the top corner, while a standings board next to it lists
+  the drivers with their points. Hold Tab and you get the full standings.
+
+
+  The dashboard in the bottom corner shows your speed in km/h and a hull
+  percentage, so you can watch how much damage you've taken. When the hull is
+  nearly gone, the gauge labels it critical. Shift fires your boost, and a meter
+  beside the gauge shows it charging.
+
+
+  The cars are a funny mix, and one of them looks like a dog's head with its
+  tongue hanging out.
+
+
+  A feed under the standings calls out who just got wrecked. The creators took
+  the idea from the demolition derby in FlatOut 2, which they played at LAN
+  parties back in the day.
 play:
   url: https://demolition-derby.xyz
   embeddable: false

@@ -2,22 +2,31 @@ slug: effective-immediately
 title: Effective Immediately
 tagline: Shoot your way out of a collapsing office nightmare as a burned-out worker.
 description: >-
-  You start in a narrow teal office corridor, seen in first person, holding a
-  stapler gun with 30 staples loaded and 100 health. A panel in the top corner
-  gives the objective: find a way out. Scrawled writing on the far wall appears
-  to read "No escape."
+  You're a burned-out office worker walking a plain teal corridor in first
+  person, and the only thing in your hand is a stapler that's been turned into a
+  gun.
 
 
-  Enemies are 2D animated characters placed in 3D office spaces. Desks,
-  furniture and other props can be smashed. The weapon art is inked and
-  hand-drawn in black and white, set against flat teal walls with orange edge
-  highlights, which gives it a comic-book horror look.
+  The objective on screen tells you to find a way out, because the workplace is
+  collapsing into a corporate nightmare that's trying to consume you before you
+  escape. Your health starts at 100 and the stapler gun is loaded with 30
+  rounds, both shown in the corners of the screen. The hand holding it is inked
+  in black and white, so it looks like it was cut out of a comic page.
 
 
-  You play a burned-out worker fighting through a workplace that is falling
-  apart, and the aim is to get out before the company swallows him. The creator
-  describes the intent as a quick, violent, surreal shooter in the vein of older
-  browser FPS games.
+  The characters you fight are 2D animated figures, while the office props
+  around them are 3D and can be broken. That's an odd pairing, but it suits the
+  comic-book horror look the creator was going for.
+
+
+  Shooting your way out of an office with stationery is a pretty funny kind of
+  revenge.
+
+
+  The creator wanted something fast, violent and surreal about losing your mind
+  inside a controlling workplace. They also wanted the feel of an old-school
+  browser shooter, which explains the straight-ahead first-person setup and the
+  ammo counter in the corner.
 play:
   url: https://vibejam2026.vercel.app
   embeddable: true
@@ -53,7 +62,7 @@ media:
     - games/effective-immediately/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-10-01
+  updated: 2026-10-02
 status: live
 provenance:
   foundVia: scout:vibejam-2026

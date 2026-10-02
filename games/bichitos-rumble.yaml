@@ -2,26 +2,36 @@ slug: bichitos-rumble
 title: Bichitos Rumble
 tagline: Shove cute animal fighters off the arena in fast, chaotic 3D brawls.
 description: >-
-  Pick one of nine animal fighters, then headbutt rivals off the arena into the
-  void. The roster has an elephant, fox, gorilla, turtle, frog, mole, penguin,
-  tiger and crab. Each card shows a role label, ratings for speed, weight and
-  power, and three abilities.
+  Pick a fighter, then use WASD and Space to headbutt your rivals off the arena
+  and into the void. That's the whole fight, so you're shoving the other
+  critters over the edge before they get you.
 
 
-  From the title screen you can play against bots, join online multiplayer for
-  up to four players, or play with friends. In a match you move, headbutt, and
-  use two abilities plus an ultimate. A restart key resets the round, and a
-  gamepad also works.
+  There are nine animals to choose from: an elephant, a fox, a gorilla, a
+  turtle, a frog, a mole in sunglasses, a penguin, a tiger and a crab. Each one
+  gets a role label, a one-line tagline and dot ratings for speed, weight and
+  power, so you can tell the quick ones from the heavy hitters before you
+  commit. You can drag to spin the model around, too.
 
 
-  Trunk, the elephant, is a bruiser with top power. Its abilities are a forward
-  tusk dash, a wide area thump that knocks back and stuns, and a grip that stuns
-  a target for 2.5 seconds. That target takes four times damage from any hit.
+  Abilities sit on J and K, with L as your ultimate. Take Trunk the elephant,
+  who's labeled a bruiser. His J is a forward tusk dash nothing interrupts, and
+  his K is a wide thump that knocks rivals back and stuns them.
 
 
-  The select screen lets you drag to rotate a 3D preview of each fighter, and a
-  belts screen opens from it. The creator built it as a party-style brawler for
-  friendly competition with friends.
+  His ultimate grabs a target and stuns it for 2.5 seconds, and while it's held
+  it takes four times damage from any hit. That's a pretty nasty setup if a
+  friend is standing nearby.
+
+
+  You can start against bots, jump into online multiplayer for up to four
+  players, or play with friends. A gamepad works as well, and R restarts the
+  round.
+
+
+  The creator, who goes by RGomezR14, likes party games for the friendly
+  competition and wanted a way to escape and have fun with friends. The cute
+  animals and the chaos fit that.
 play:
   url: https://bichitosrumble.com
   embeddable: true
@@ -67,7 +77,7 @@ media:
     - games/bichitos-rumble/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-10-01
+  updated: 2026-10-02
 status: live
 provenance:
   foundVia: scout:vibejam-2026

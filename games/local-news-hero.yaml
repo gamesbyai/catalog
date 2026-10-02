@@ -2,25 +2,41 @@ slug: local-news-hero
 title: Local News Hero
 tagline: Drive a news van through your own city and race rivals to breaking stories.
 description: >-
-  Local News Hero lets you pick a real city, then puts you behind the wheel of a
-  news van in a 3D version of it. Breaking stories pop up as you drive, and you
-  steer through the streets to beat rival stations to each one.
+  You've got two minutes to score more points than anyone else, and you do it by
+  driving a news van through a 3D version of your own city. Glowing markers on
+  the map mark the stories, so you head straight for them.
 
 
-  The creator traces it to wanting to play something like Simpsons Hit and Run
-  in their own city, and built it with Claude Code on Three.js. The look is
-  photorealistic rather than a made-up map, so the streets may be ones you
-  actually know, and the game supports multiplayer on desktop and phones.
+  When you're close enough to one, hit the spacebar to go live.
 
 
-  Each round lasts two minutes and is framed as a live broadcast, so the short
-  timer keeps rounds fast and every story you chase is against the clock.
+  Before you start, you pick where you're playing, either by letting the game
+  use your location or by typing in a city name. That puts you on streets you
+  might actually know. The map comes from Google's 3D tiles, so big cities work
+  best while rural areas can look sparse.
+
+
+  Hold Shift when you need a burst of nitro to reach a story before the clock
+  runs out.
+
+
+  Green pickups refill that nitro, and white ones restore your health, so
+  they're worth steering toward between stories.
+
+
+  The creator wanted to play Simpsons Hit and Run in their own city, and this is
+  how that idea turned out, with rival stations to out-scoop. The title screen
+  has a scrolling news ticker along the bottom, which suits a game about
+  broadcasting. Kevin MacLeod made the music, and it's licensed under CC BY.
 play:
   url: https://localnewshero.com
   embeddable: false
   platforms:
     - browser
     - mobile
+  controls:
+    - "Spacebar: go live near a marker"
+    - "Shift: nitro boost"
 creator:
   name: supleezy
   handle: supleezy
@@ -51,7 +67,7 @@ media:
     - games/local-news-hero/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-09-29
+  updated: 2026-10-02
 status: live
 provenance:
   foundVia: scout:vibejam-2026

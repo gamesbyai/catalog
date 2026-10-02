@@ -2,28 +2,45 @@ slug: little-flock
 title: little flock
 tagline: Tend a shared flock of sheep on a cozy farm with other players.
 description: >-
-  The start screen shows a painted valley with a stone cottage, a footbridge
-  over a stream, a produce cart and a flock of pastel sheep, with a button to
-  begin farm life. A 16-step tutorial walks you through putting up a shelter,
-  adopting a first sheep, daily care and planting a garden.
+  You start on a painted title screen of a sunny valley: a cottage, a windmill,
+  a stream with a wooden bridge, a fruit cart, and a flock of pastel sheep in
+  pink, mint and lavender. A big button starts your farm life, and the interface
+  is in Simplified Chinese.
 
 
-  Day to day, you pet, feed and shear sheep and welcome newborn lambs. Seven
-  crops can be planted, watered and harvested, and you can fill neighbor orders
-  and upgrade the farm. To graze, whistle the flock together, walk to the meadow
-  while they eat and drink, then lead them back home.
+  Once you're in, a 16-step introduction walks you through building a shelter,
+  adopting your first sheep, learning the daily care, and planting a garden.
+  After that you pet, feed and shear the sheep, and you can name them and
+  welcome newborn lambs.
 
 
-  The flock covers 12 breeds, five rarity tiers and six personalities. Paths
-  connect the home farm to a flower meadow, a mushroom woodland and a stargazing
-  highland. Your shepherd's skin, hair, clothes and hat can be changed with a
-  live 3D preview.
+  There are 12 breeds, five rarity tiers and six personalities to collect.
 
 
-  Farms are shared. Start one or join through an invitation code, and everyone
-  on it uses the same coins, inventory, buildings and sheep, with chat and live
-  presence. Day and night, rain and seasonal colors change the scenery, and
-  sheep never die. The interface is in Simplified Chinese.
+  Grazing is a little routine of its own. You whistle the flock together, walk
+  them to the meadow, let them eat and drink, then lead them home. Back at the
+  farm you grow seven crops, water and harvest them, fill neighbor orders, and
+  upgrade the place.
+
+
+  The valley is connected by paths that run from the home farm to a flower
+  meadow, a mushroom woodland and a stargazing highland.
+
+
+  You can also dress your shepherd, with a live 3D preview for skin, hair,
+  clothes and hat. Day and night, rain, seasonal colors, firefly glow and warm
+  window lights change the scenery, which is a lot of atmosphere for a farm this
+  size.
+
+
+  It's multiplayer, so you create a farm or join one with an invitation code.
+  Friends share the same coins, inventory, buildings and sheep, and you can see
+  each other and chat live. Sheep don't die and ripe crops don't rot, which
+  makes it a forgiving place to leave things.
+
+
+  Codex wrote the whole thing from a single goal run: the 3D world, the server,
+  the art, the audio and the deployment.
 play:
   url: https://sharpherd.song.work
   embeddable: false
@@ -67,7 +84,7 @@ media:
     - games/little-flock/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-10-01
+  updated: 2026-10-02
 status: live
 provenance:
   foundVia: scout:github

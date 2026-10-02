@@ -2,21 +2,32 @@ slug: hexfire
 title: HexFire
 tagline: Battle other wizards in a shrinking arena where every kill raises your bounty.
 description: >-
-  Every kill in this wizard battle royale makes you a bigger target. The title
-  screen sets the stakes in one line: kill for essence, and dying loses all of
-  it. A button labeled Begin Descent starts the match from a setup screen.
+  Every kill you land in HexFire makes you a bigger target, so winning a fight
+  is exactly what draws more trouble your way.
 
 
-  The setup screen is where you build your wizard. A name field comes with a
-  reroll button that generates random names. Five arcane skills (damage, speed,
-  range, blast and agility) each have a bar and a value, with plus and minus
-  buttons to shift points between them. A points counter sits above the list.
+  You're a wizard in a battle royale, and you kill for essence. If you die, you
+  lose all of it, which means whatever you've gathered is always something you
+  could be robbing yourself of in the next fight.
 
 
-  In play, WASD moves, Space jumps, the left mouse button shoots, V switches the
-  view and F interacts. The wizard is a blocky pixel-art figure in a purple hat
-  and green robe, carrying a staff. The creator drew on a childhood fondness for
-  Runescape and Minecraft.
+  Before you drop in, you spend points on five arcane skills: damage, speed,
+  range, blast and agility. Each has its own bar with plus and minus buttons, so
+  you can move points around until the build looks right.
+
+
+  Your wizard is a little pixel-art figure in a pointed hat, which is a cute
+  look for a fighter.
+
+
+  The game gives you a random name like xx_Marksman40$, and you can reroll it
+  until you get one you can live with. You steer with WASD and jump with Space,
+  while the left mouse button fires your spells.
+
+
+  There's also a key to switch your view and another to interact, though nothing
+  on the start screen says what you'd interact with. The creator built it out of
+  a childhood crush on Runescape and Minecraft, and then you hit Begin Descent.
 play:
   url: https://hexfi.re
   embeddable: true
@@ -59,7 +70,7 @@ media:
     - games/hexfire/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-10-01
+  updated: 2026-10-02
 status: live
 provenance:
   foundVia: scout:vibejam-2026

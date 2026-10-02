@@ -2,24 +2,38 @@ slug: undersphere
 title: Undersphere
 tagline: Run and shoot opponents on the inside surface of a hollow sphere.
 description: >-
-  You run and shoot on the inside surface of a hollow sphere, where gravity
-  pulls you toward the curved ground and the horizon rises into the sky above
-  you. Matches are multiplayer first-person deathmatch. A scoreboard in the
-  corner ranks the top three players and shows your own rank and kill count.
+  You run and shoot on the inside of a hollow sphere, so the ground curls up all
+  around you and the far side of the map hangs over your head. Gravity follows
+  the surface wherever you go, which is the whole point of the game.
 
 
-  You carry three slots: an assault rifle with a 30-round magazine, a second
-  long gun, and a grenade. A grenade thrown across the map stays under the
-  sphere's gravity and travels with proper proportions, so it can land on the
-  far side of the world. A health counter and a coin counter sit in the HUD.
+  The creator has always been drawn to gravity-based shooters, and the grenade
+  shows why. Throw one toward the other side of the map and it keeps obeying the
+  sphere's gravity, so it travels in proper proportion across the whole world.
+  That's a pretty wild distance for a grenade to cover.
 
 
-  A banner at the top of the screen shows when a lobby is waiting for another
-  player. Bots appear on the scoreboard, and a banner announces each new kill
-  leader. The world is drawn in black-and-white cartoon outlines, with tall
-  grass, pine trees and dark crates scattered across the curved terrain. The
-  creator built the movement mechanics to feel fair and conventional despite the
-  shifting gravity.
+  You switch between three items from slots at the bottom of the screen: an
+  assault rifle, a longer second gun and a grenade.
+
+
+  Your health starts at 100 and the rifle holds 30 rounds. A counter in the
+  corner shows your ammo, and a coin counter under your name starts at zero.
+
+
+  It's a multiplayer match, and a small scoreboard in the corner tracks the top
+  three players by kills. When someone new takes the lead, a big yellow banner
+  flashes across the screen, which makes a lead change hard to miss. Bots can
+  show up on the scoreboard too, and the match waits at the top of the screen
+  until one more player joins.
+
+
+  Everything is drawn in black, white and gray with thick ink outlines, so the
+  grass blades and pine trees look like a pen sketch.
+
+
+  The creator came up with their own movement mechanics and kept them fair and
+  conventional, so the odd gravity is the strange part and not the controls.
 play:
   url: https://playundersphere.com
   embeddable: true

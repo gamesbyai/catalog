@@ -2,27 +2,38 @@ slug: vibe-farm
 title: Vibe Farm
 tagline: Level up and build a growing colony, playing solo or with others online.
 description: >-
-  You start beside your house on an isometric map and build a colony from
-  scratch. Till soil, water and plant seeds, harvest with the scythe, chop
-  trees, mine rocks, and fight enemies with a sword. Gold, wood, stone and food
-  totals sit in a settlement panel.
+  You start next to your house with a plot of land and a plan to turn it into a
+  colony. You farm, gather wood and stone, put up buildings and fight enemies,
+  either on your own or alongside other people online.
 
 
-  A calendar bar shows the year, season and day, and an XP bar tracks your
-  level. Daily quests set small targets: defeat 7 mine enemies, mine 3 rocks,
-  harvest 3 crops. Each pays gold and materials. Achievements pop up at
-  milestones, such as mining your first rock.
+  Eight tools sit on a hotbar, and you switch between them with the number keys.
 
 
-  You can play alone or with other players online. A minimap in the corner shows
-  the terrain, and other named characters walk around the map. A four-page
-  tutorial opens the game and covers movement and the tool hotbar. You read each
-  page to move on to the next.
+  The hoe, watering can, seeds, scythe, hammer, axe, pickaxe and sword each get
+  a slot, so one row covers farming, building, chopping, mining and fighting.
+  Till a tile and the game suggests the watering can next, which is a kind nudge
+  for anyone still learning the keys.
 
 
-  Tools sit on an eight-slot hotbar: hoe, watering can, seeds, scythe, hammer,
-  axe, pickaxe and sword. A prompt at the bottom of the screen tells you what
-  the current tool does on the tile you face, for example pressing E to till it.
+  A calendar runs along the top of the screen, starting on day 1 of spring in
+  year 1.
+
+
+  Under it an XP bar fills as you level up. A panel on the left tallies your
+  settlement, including population, gold, wood, stone, food and how many colony
+  buildings you've built.
+
+
+  Daily quests hand you small jobs with rewards, like defeating mine enemies,
+  mining a few rocks or harvesting three crops. Achievements pop up as you go,
+  and a minimap in the corner shows the whole island, which is handy since the
+  mine sits inside a walled area of its own.
+
+
+  The map is a tilted top-down patchwork of forest, sand and rocky ground. Other
+  players wander around with name tags over their heads, and a short tutorial at
+  the start walks you through the basics one page at a time.
 play:
   url: https://vibefarm.vercel.app
   embeddable: true

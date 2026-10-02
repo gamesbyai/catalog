@@ -2,27 +2,34 @@ slug: spell-cascade
 title: Spell Cascade
 tagline: Move a tower, aim spells, and survive 10 minutes of waves to earn a build name.
 description: >-
-  Every run ends with a title for your build, such as Phantom Executioner, Chain
-  Annihilator or Perfect Cascade. You steer a tower with WASD, aim attacks with
-  the mouse, and hold out against waves of enemies for 10 minutes. The game has
-  15 build names in total.
+  Move your tower with WASD, aim with the mouse, and click to choose upgrades
+  whenever the game puts them in front of you. You're holding off waves of
+  enemies from above, and the goal is to survive 10 minutes.
 
 
-  Builds come from stacking parts when upgrades are offered, which you pick by
-  clicking. There are 10 skills, including Fireball, Meteor and Void Bolt, plus
-  8 supports like Chain, Fork and Pierce. 40 attribute mods, split into 20
-  prefixes and 20 suffixes, change how a build behaves. Ten synergies trigger
-  when the right pieces combine.
+  The build is where it gets interesting. You choose from ten skills like
+  Fireball, Meteor and Poison Nova, then attach supports such as Chain, Fork,
+  Pierce or Orbit, and forty prefix and suffix mods twist the result even
+  further.
 
 
-  Enemies come in seven types: Swarmer, Shooter, Tank, Splitter, Healer, Boss
-  and Phantom. Survive long enough and a three-phase boss appears. Clear Wave 20
-  to unlock Endless Mode and keep playing for a higher score.
+  Ten named synergies reward certain combinations, so you can go hunting for
+  them.
 
 
-  Nine automation chips are kept in a Chip Vault and carry over between runs.
-  The game is marked as early development. The creator is a non-engineer who
-  worked with Claude Code over 235 commits.
+  Every run ends with a title for your build, and there are fifteen of them,
+  including Phantom Executioner, Chain Annihilator and Perfect Cascade. So even
+  a loss tells you something about how you played. Seven enemy types come at
+  you: swarmers, shooters, tanks, splitters, healers, phantoms and a boss.
+
+
+  That boss fights in three phases, so it isn't one fight start to finish.
+
+
+  Clear wave 20 and you move into Endless Mode, where you keep going for a
+  higher score. Nine behavior chips sit in a vault and carry over between runs,
+  which means something sticks around after you die, and you press R to start
+  over.
 play:
   url: https://yurukusa.itch.io/spell-cascade
   embeddable: false
@@ -64,7 +71,7 @@ media:
     - games/spell-cascade/shot-2
 dates:
   added: 2026-10-01
-  updated: 2026-10-01
+  updated: 2026-10-02
 status: live
 provenance:
   foundVia: scout:aibgj-1

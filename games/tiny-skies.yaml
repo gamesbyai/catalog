@@ -2,26 +2,34 @@ slug: tiny-skies
 title: Tiny Skies
 tagline: Explore a small shared world and relax together while an apocalypse looms.
 description: >-
-  You start in a green biplane above a small round planet, with a river,
-  forested hills, white cottages and a smoking volcano in view. A prompt in the
-  corner tells you to climb with the Up Arrow. A hot air balloon drifts nearby,
-  and another player's plane crosses the sky.
+  You start in a little green biplane above a small round planet, with a volcano
+  smoking on the horizon and a hot air balloon drifting past. Cobbler Pip pops
+  up with a joke about saving some sky for everyone else, and the first prompt
+  tells you to climb with the Up Arrow.
 
 
-  Villagers talk to you in speech bubbles. One hands you a parcel for a named
-  village, and the top of the screen then shows the distance left to the
-  drop-off. The sidebar lists two collectible counts, 0/7 and 0/3, and a goal to
-  finish a race.
+  Other pilots share the sky with you, and their planes carry name tags like
+  Bold Sparrow. The creator wanted a multiplayer game where people just hang out
+  instead of trying to kill each other.
 
 
-  A level and XP bar sits at the bottom of the screen. Other players share the
-  same world, and the room name and player count appear in the top corner. The
-  creator wanted a cozy place to hang out rather than fight, with an apocalypse
-  looming in the background.
+  There's an apocalypse looming over all this, which is an odd shadow for such a
+  cozy place.
 
 
-  The sky appears as daytime blue in one moment and dusky purple with auroras in
-  another. A fullscreen button and a sound toggle sit in the top corner.
+  Villagers hand you jobs while you fly. Fisherman Cork gives you a parcel full
+  of jam for Mossglen, and a counter at the top shows how many meters you have
+  left to go.
+
+
+  A level bar at the bottom shows your XP, and in the corner you'll see two
+  counters, 0/7 and 0/3, plus a line telling you to finish a race.
+
+
+  Pull the camera back and you can see the whole planet, with rivers, forested
+  hills, little white houses with blue roofs, and a map arrow showing where you
+  are. The sky also shifts from bright day to a dusky, starry evening, so it's
+  worth looking up now and then.
 play:
   url: https://tinyskies.vercel.app
   embeddable: true

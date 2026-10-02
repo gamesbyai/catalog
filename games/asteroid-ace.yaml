@@ -2,26 +2,35 @@ slug: asteroid-ace
 title: Asteroid Ace
 tagline: Blast drifting asteroids and dodge hunter drones in escalating waves.
 description: >-
-  You fly a ship in a classic asteroid shooter, aiming with the mouse or
-  rotating with the keys, thrusting forward, strafing, reversing and firing.
-  Slow-drifting asteroid clusters shatter into fragments when hit, so each shot
-  can leave more rocks to dodge.
+  You fly a ship in a classic asteroid shooter, and you aim with the mouse while
+  thrusting, strafing and firing. Rocks drift in clusters, and when you shoot
+  one it shatters into fragments that are dangerous too, so a single shot can
+  leave you with more to deal with.
 
 
-  Agile hunter drones join the asteroids as waves escalate. The creator
-  describes each enemy type as having its own movement pattern and attack style,
-  which pushes you to change tactics between waves.
+  Asteroids aren't the only thing out there. Agile hunter drones come after you,
+  and each new kind of enemy has its own way of moving and attacking. The waves
+  keep coming, so you have to change how you fly as the threats change.
 
 
-  The start screen has a Graphics button for quality settings and a Touch button
-  for on-screen controls. Two sliders adjust game speed and scale, both set to
-  1.0x by default. A right-click toggles auto mode, Shift boosts, and Esc
+  The title screen shows a good spread of controls. You can thrust with W or the
+  left mouse button, reverse with S, strafe with A and D, rotate with Q and E,
+  and fire with Space. Shift boosts, right-click turns on auto, and Escape
   pauses.
 
 
-  The creator built it with a local model on a laptop GPU, to test what that
-  hardware could produce. The title screen labels this version Asteroid Ace 3
-  Beta.
+  Two sliders on the start screen set speed and scale, both starting at 1.0x.
+  There's also a graphics quality menu, which is handy if your machine
+  struggles.
+
+
+  Touch controls are on offer too, so you can play it on a phone with on-screen
+  buttons.
+
+
+  The creator built it entirely with a local model running on a laptop, because
+  they wanted to see what that hardware could produce. The screen calls this
+  version Asteroid Ace 3 Beta, which tells you it's an early build.
 play:
   url: https://asteroid-ace.fractalvision.co.uk
   embeddable: true

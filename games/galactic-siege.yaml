@@ -3,30 +3,42 @@ title: GALACTIC SIEGE
 tagline: Send fleets between star systems and capture the galaxy before the
   timer runs out.
 description: >-
-  Galactic Siege starts with you selecting one of your blue Terran star systems
-  on a procedurally generated map, then clicking a connected node to launch a
-  fleet. Each launch sends half of the selected system's garrison, so every
-  attack leaves the origin weaker.
+  You're a Terran commander on a map of star systems joined by hyperspace lanes,
+  and you win by sending fleets out from your blue node to take over neutral and
+  alien ones. Every match gets a freshly generated map, so the lanes you work
+  with change each time.
 
 
-  Fleets travel along hyperspace lanes and fight on arrival. Send more than the
-  defenders hold and the system is captured. Owned systems produce new fleets
-  over time, so early expansion feeds later attacks. The map's connections
-  decide which targets you can reach.
+  Click one of your systems, then click a connected node to launch.
 
 
-  Four modes change the pace. Classic is a 3-minute war. Blitz lasts 2 minutes
-  with doubled production and faster fleets. Conquest awards production bonuses
-  for holding sector majorities. Survival sends enemy waves until the timer
-  ends, and outlasting them is the win.
+  Every launch sends half of the garrison you picked, which makes each attack a
+  trade-off. A bigger strike takes a system more easily, but it also drains the
+  node it came from. When fleets arrive they fight, and if you brought more than
+  the defenders had, you capture the system.
 
 
-  Some nodes carry structures: fortresses reduce incoming damage, shipyards
-  produce fleets faster, and portals link distant systems. Once per match a
-  random event can hit: a solar storm cuts production, a warp surge speeds
-  fleets, or a nanite bloom raises production for every faction. In the other
-  modes you win by eliminating all alien factions or holding the highest score
-  at time's end.
+  Once you own a system, it keeps producing fleets on its own, so grabbing nodes
+  early feeds everything after.
+
+
+  Three structures change how a node behaves. A fortress cuts the damage it
+  takes, a shipyard builds fleets faster than a normal system, and a portal
+  gives you a long jump lane between distant systems. A legend in the corner
+  reminds you which is which, which is handy when the map fills up with icons.
+
+
+  There are four modes. Classic is a 3-minute war, Blitz is 2 minutes with
+  double production and faster fleets, Conquest pays production bonuses for
+  holding sector majorities, and Survival sends waves of enemies until the timer
+  runs out. In the other three you win by wiping out every alien faction or by
+  holding the highest score when time expires.
+
+
+  Once per match a random event can hit: a solar storm slows production, a warp
+  surge speeds up fleets, or a nanite bloom boosts production for everyone. The
+  screen also shows a running count of systems and fleets for each side, plus
+  toggles for sound effects and music. The text comes in English and Portuguese.
 play:
   url: https://arkantoskira.itch.io/galactic-siege
   embeddable: false
@@ -63,7 +75,7 @@ media:
     - games/galactic-siege/shot-2
 dates:
   added: 2026-10-01
-  updated: 2026-10-01
+  updated: 2026-10-02
 status: live
 provenance:
   foundVia: scout:aibgj-2

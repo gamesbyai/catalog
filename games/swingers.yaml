@@ -2,21 +2,37 @@ slug: swingers
 title: Swingers
 tagline: Swing with friends to rack up the most damage to city infrastructure.
 description: >-
-  Hold left click, or Space, while aiming at a building wall to grapple onto it
-  and swing through the city. Right click performs an air dash. The goal is to
-  rack up the most dollars in property damage, shown as a running total at the
-  top center of the screen.
+  You grab onto a skyscraper wall and swing from it, and everything you smash
+  along the way adds dollars to your property damage total. Aim at a wall and
+  hold left click or Space to attach.
 
 
-  The city is a field of tall blue towers with billboards on the rooftops and
-  green rings floating between them. A Getting Started checklist lists five
-  tasks: grapple onto a building, air dash, fly through a green speed ring,
-  smash into a billboard, and destroy part of a building.
+  Right click sends you into an air dash. A speed readout floats just above the
+  crosshair, so you can see how fast you're moving at any moment.
 
 
-  A speed readout in meters per second sits above the crosshair, and a timer
-  sits in the top left corner. The start menu shows a global leaderboard ranked
-  by damage total. Hints and audio can each be toggled from the start menu.
+  Green speed rings hang in the air around the city, and you can fly through
+  them. Billboards sit on the rooftops, and you can smash into those too.
+
+
+  The goal is to cause more damage than your friends do, and the winner is
+  whoever racks up the biggest bill.
+
+
+  Your running total sits at the top center of the screen, a clock ticks in the
+  top left, and a counter in the top right shows how many players are in the
+  city with you. The title screen also lists a global leaderboard for the most
+  damage, which gives you something to chase.
+
+
+  A getting-started checklist walks you through grappling a building, air
+  dashing, flying through a ring, smashing a billboard and destroying part of a
+  building. If you'd rather skip it, there's a hints switch on the title screen,
+  plus an audio switch right below it.
+
+
+  The creator says it came from loving swinging and insurance fraud, which is a
+  funny reason to build a game about wrecking critical infrastructure.
 play:
   url: https://swing.offmylawn.com
   embeddable: true
@@ -57,7 +73,7 @@ media:
     - games/swingers/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-10-01
+  updated: 2026-10-02
 status: live
 provenance:
   foundVia: scout:vibejam-2026

@@ -2,28 +2,44 @@ slug: bubble-popverse
 title: Bubble Popverse
 tagline: Pop bubble wrap, grow an empire, and prestige for rarer rainbow bubbles.
 description: >-
-  You start by picking a bubble name or rolling a random one, then pop bubbles
-  to earn Bubcoins. The main screen shows a coin counter, the current realm
-  (Meadow), a progress bar toward the next goal, and flower petals drifting over
-  a green field.
+  You tap the floaty bubbles drifting across the screen to earn Bubcoins, and
+  every pop makes its own ASMR sound, so the title screen suggests headphones.
+  The coins then go into Bubble Labs, a panel of upgrades down the right side.
 
 
-  A Bubble Labs panel on the right lists upgrade cards in tiers. The first card,
-  Foam Motion, unlocks bubble drift. Later tiers start locked and include Pop
-  Power, Auto-Popper and Comfortable Foam. A hint on the panel says holding a
-  card buys one more each time.
+  Foam Motion is the first one you can buy, and it's what lets the bubbles start
+  to drift. Pop Power and an Auto-Popper sit locked below it, and the
+  Auto-Popper is described as an intern who only knows one job, which is a
+  pretty good joke for a button.
 
 
-  The loop is idle and incremental: pop bubbles, buy upgrades, discover new
-  realms, collect rarities including rainbow ones, and prestige. Buttons for
-  Dex, Ranks, Zen, Share, Portal and Menu sit along the top. Every pop has its
-  own sound, and the title screen recommends headphones for the spatial audio.
+  If you hold an upgrade card, you keep buying it, so you don't have to tap it
+  over and over.
 
 
-  The intro frames everything as a joke about a Galactic Foam Authority and an
-  intern with a clipboard. A father built it with his two kids, who played each
-  version and said which pops felt best. The build is labeled as still being
-  balanced.
+  The setup is goofy. It's the year 14,000,003, Earth is gone, and foam and
+  paperwork have taken its place.
+
+
+  Before you start, the Galactic Foam Authority wants a name for its incident
+  report, so a printer coughs up a random bubble name for you. If you don't like
+  it, a dice button rerolls it.
+
+
+  Past the popping, you build an empire, discover new realms, collect rainbow
+  rarities and prestige. A progress bar in the corner shows how far you are from
+  being ready to do that, which is handy because you can see the goal without
+  opening anything.
+
+
+  Buttons along the top open the Dex, Ranks, Zen, Share, Portal and Menu. That's
+  a surprising amount of stuff for a game about bubble wrap.
+
+
+  Maksym Grigorash made it with his kids Alice and Michael, who love silly
+  simulators about ducks and geese. They settled on bubble wrap, and the kids
+  played every version and said which pops felt best. The title screen admits
+  the balance is still a work in progress.
 play:
   url: https://bubblepopverse.life
   embeddable: true
@@ -60,7 +76,7 @@ media:
     - games/bubble-popverse/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-10-01
+  updated: 2026-10-02
 status: live
 provenance:
   foundVia: scout:vibejam-2026

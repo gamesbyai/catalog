@@ -2,25 +2,32 @@ slug: field-of-command
 title: Field of Command
 tagline: Command British or German forces in a real-time battle across 1940 Kent.
 description: >-
-  You command a British infantry section from the BEF Infantry Command in a
-  real-time strategy game set in the fields of Kent in 1940s England. A squad of
-  soldiers stands on an isometric field beside a Union Jack, each with a small
-  health bar, and a card labeled No. 1 Section shows the squad's status.
+  You command infantry across a flat, isometric field in Kent, either as the
+  desperate British defenders or as the Germans spearheading the assault. It's
+  an invasion that never happened, so the 1940s England here is rewritten
+  history.
 
 
-  An AI opponent, Blitzkrieg Infantry, holds the far side of the map. The top
-  bar shows a bar for each side, both starting at 2000. You can also take the
-  German side and lead the assault instead of the defense, in an alternate
-  history of an invasion that never happened.
+  You start with a single squad, No. 1 Section, and a strength bar under its
+  name shows how it's holding up.
 
 
-  Two counters sit at the screen edges. Deploy reads 0 / 0 with an income of
-  +0.2 per second, and Tactical reads 0 / 500. Pause and speed buttons let you
-  run the game at 1x, 2x or 4x, and a delegate button sits below them.
+  A top bar shows your force against an AI commander, with a bar and a figure of
+  2000 for each side. Two more counters sit in the corners: Deploy, which
+  trickles up at 0.2 a second, and Tactical, which tops out at 500.
 
 
-  A minimap in the corner marks your units in blue and the enemy line in red.
-  The build is labeled v0.2.7 prototype and links to a bug report form.
+  The minimap in the corner is where you see the whole field. Your blue troops
+  sit on one side and the red enemy is lined up on the other, while a dashed box
+  marks the part of the field your camera is looking at.
+
+
+  There's a pause button, and you can run the battle at 1x, 2x or 4x.
+
+
+  A delegate button lets you hand some of the control over, which is handy in a
+  real-time game where one commander can't watch everything. The build is marked
+  as an early prototype, and a link in the corner lets you send in bug reports.
 play:
   url: https://play.fieldofcommand.com
   embeddable: false

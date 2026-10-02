@@ -2,21 +2,34 @@ slug: out-of-office-european-business-simulator
 title: "OUT OF OFFICE: European Business Simulator"
 tagline: Run a European business while doing as little actual work as possible.
 description: >-
-  OUT OF OFFICE: European Business Simulator is a satirical, casual management
-  sim about running a company in Europe during the summer. You play the owner,
-  whose main trait is laziness, and the aim is to get by with as little actual
-  work as possible.
+  You run a business somewhere in Europe, and it's summer, so the whole job is
+  sending out-of-office replies. You farm those replies to find more efficient
+  ways of sending even more of them.
 
 
-  It presents itself, tongue in cheek, as a completely realistic portrait of
-  European business life in summer. It is a single-player game, made with Claude
-  Code, that ranked 401st of 945 at Vibe Jam 2026 and works on phones as well as
-  desktop.
+  The goal is to keep the company technically alive while you do nothing, which
+  is a funny ambition for a boss. Upgrades sit on the right, and each one has a
+  buy button, a price in replies, and a bonus in replies per second. Spend what
+  you've collected and the automatic income grows.
 
 
-  The joke lives in the gap between the serious title and an owner with no
-  interest in working. That gap is what turns the management sim into a comedy,
-  since doing less is the whole plan for your company.
+  One upgrade is still hidden behind a row of question marks, so there's
+  something left to work toward.
+
+
+  On the left there's a vacation ladder, which is where your time off gets
+  longer. It starts at a cheeky fortnight, moves up to a long weekend extension,
+  and ends at a proper month off.
+
+
+  Each rung has its own passive multiplier, so a longer break means a bigger
+  number.
+
+
+  A news strip runs across the top with local headlines, including one about the
+  9th arrondissement being closed. It's all chunky blue pixel art, and a cream
+  notice greets you first to explain the premise, which you dismiss with a green
+  button telling you to keep the company alive.
 play:
   url: https://business-tycoon-european-summer-edi.vercel.app
   embeddable: true
@@ -52,7 +65,7 @@ media:
     - games/out-of-office-european-business-simulator/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-09-29
+  updated: 2026-10-02
 status: live
 provenance:
   foundVia: scout:vibejam-2026

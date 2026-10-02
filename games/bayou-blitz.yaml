@@ -2,23 +2,36 @@ slug: bayou-blitz
 title: Bayou Blitz
 tagline: Collect crawfish through the bayou while dodging hungry gators.
 description: >-
-  Move with WASD or the arrow keys through a mall level while a pursuer who
-  likes you far too much chases you. Keep the Loneliness meter between 20 and
-  80. Running makes you lonely, and getting caught makes her cling, so you have
-  to stay between the two.
+  Alternate A and D when the struggle prompt appears. It shows up once a clingy
+  someone latches onto you, and a bar fills as you mash the two keys to shake
+  them off.
 
 
-  Shift dashes with invincibility frames, and Space uses a power-up picked up by
-  walking over a glowing pad. If she grabs you, alternate A and D to struggle
-  free. The HUD shows the Loneliness value, a Clingy count, a countdown timer
-  and a running score.
+  A swirl of hearts circles your character while it's happening, which is a
+  pretty sweet way to be held up.
 
 
-  The first level is a mall with an alt-fashion store, with store islands and
-  one-way escalators. Mall-walkers slow you down, and you survive for 2:00 to
-  clear it. Four more levels are locked at the start: a cemetery at midnight, a
-  goth club, a coffee shop and her apartment. Left and right arrows choose a
-  level, and Enter starts it.
+  Along the top there's a meter that runs from a broken heart on the left to a
+  full heart on the right. A loneliness reading sits under it, so you can see
+  where you stand. Right below that, a clingy marker tells you when someone has
+  hold of you.
+
+
+  There's also a dash button sitting in the bottom corner of the screen.
+
+
+  Next to it is a power-up slot that starts empty, and its hint says you fill it
+  by walking over a glowing pad.
+
+
+  You move around a purple 3D room seen from above, with crates, a bench, and
+  two conveyor belts, one with yellow arrows pointing up and one pointing down.
+  Purple rings are drawn on the floor.
+
+
+  The game is split into five levels, and each one has its own countdown. You
+  also get a running score and a total time, so you can track your whole run as
+  well as the current level.
 play:
   url: https://gogg.cloud
   embeddable: true
@@ -61,7 +74,7 @@ media:
     - games/bayou-blitz/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-10-01
+  updated: 2026-10-02
 status: live
 provenance:
   foundVia: scout:vibejam-2026

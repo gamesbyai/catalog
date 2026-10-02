@@ -2,27 +2,37 @@ slug: cybertaxi
 title: Cybertaxi
 tagline: Hijack a robo-taxi and fly through a neon city to earn your freedom.
 description: >-
-  You hijack a robo-taxi and fly it through a rainy neon city at night, with a
-  goal of 10,000 credits by sunrise. A third-person view follows the car between
-  skyscrapers, and glowing markers hover over waiting passengers, each showing a
-  fare such as 139 cr.
+  You're a hijacker in a stolen robo-taxi, flying through a rainy neon city at
+  night and picking up passengers for their fares.
 
 
-  A circular navigator in the corner tracks nearby fares and the distance to the
-  closest one. The HUD shows current fare, credits, district, heat and rival
-  count. Thrust, boost and energy bars sit in the lower left, next to counters
-  for EMP and Super Boost charges.
+  The target is 10,000 credits by sunrise, which is how you earn your freedom.
+  Each fare shows up as a glowing marker with its payout floating above it, and
+  you pick a passenger to lock in the fare.
 
 
-  The car can rise and descend as well as steer and strafe, so you move through
-  the city in three dimensions. The run is set against rival AI taxis, storms
-  and other obstacles.
+  Because the taxi flies, you rise and descend between the towers as well as
+  steer and strafe. A boost, EMP charges and Super Boost charges are there when
+  you need them, and an energy bar keeps track of what you've got left. Rival AI
+  taxis, storms and other obstacles try to get in your way.
 
 
-  A character portrait delivers story lines in a text box at the top, and a
-  music track plays that you can mute or switch. The creator wanted a taxi game
-  in the spirit of Simpsons: Hit and Run, set in a cyberpunk city, and made the
-  music and dialog with Suno and ElevenLabs.
+  A radar in the corner tells you how many fares are live and how far the
+  nearest one is, which is handy in a city this crowded with towers.
+
+
+  The top corner counts your credits, your heat and the rivals nearby. A
+  character with a portrait drops short lines of text in the other corner, and
+  the opening ones set up the debt and the sunrise deadline.
+
+
+  Todd Goates built it after years of playing Simpsons: Hit and Run with a
+  friend, and he wanted a taxi game in that spirit with a cyberpunk setting. He
+  also used Suno for the music and ElevenLabs for the spoken dialog, to see how
+  cinematic an AI-made game could get.
+
+
+  You can pause, mute the music or flip between tracks while you drive.
 play:
   url: https://cybertaxi.toddgoates.com
   embeddable: true

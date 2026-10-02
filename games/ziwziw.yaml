@@ -2,20 +2,26 @@ slug: ziwziw
 title: ZiwZiw
 tagline: Race your piece across the board to reach your opponent's starting point first.
 description: >-
-  ZiwZiw is a two-player race across a board: get your piece to your opponent's
-  starting point before they get theirs to yours. You take turns moving, and
-  each turn is a balance between advancing and blocking the other side.
+  You win by getting a piece to the opponent's starting point before they get to
+  yours. That's the whole goal, and it's meant to be something you can grasp the
+  second you see it.
 
 
-  The game grew out of the creator's fondness for chess, with the aim of a
-  simpler ruleset that anyone can pick up right away. Cursor is the tool the
-  creator names. Out of 945 Vibe Jam 2026 entries, it came 150th. It supports
-  online multiplayer on phones as well as desktop.
+  Landing on an opponent sends them back to their start, so a good move can undo
+  a lot of someone else's progress. Overshoot the goal and you don't win,
+  because you bounce back instead.
 
 
-  The rules are meant to be understood at a glance, so a match starts quickly,
-  but it still asks for focus and strategic thinking. There is room to improve
-  as you start spotting better plans, move by move.
+  That bounce rule is a nice little trap for anyone rushing the finish.
+
+
+  The creator loves chess and wanted something simpler that anyone could
+  understand right away, but that still asks for focus and strategic thinking.
+  The title screen says there's no luck involved, just skill.
+
+
+  You can play a ranked match online, practice against a bot, or set up a game
+  with a friend.
 play:
   url: https://ziwziw.com
   embeddable: true
@@ -49,7 +55,7 @@ media:
     - games/ziwziw/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-09-29
+  updated: 2026-10-02
 status: live
 provenance:
   foundVia: scout:vibejam-2026

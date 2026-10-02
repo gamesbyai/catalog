@@ -2,26 +2,35 @@ slug: eco-guardian
 title: ECO Guardian
 tagline: Fight garbage monsters and answer sustainability quizzes to earn power-ups.
 description: >-
-  Garbage monsters swarm you in this 2.5D survivor game, and the way to get
-  stronger is to answer sustainability quiz questions. Correct answers become
-  power-ups during the fight. The first stage, The Plastic Woods, is a forest
-  with plastic waste choking its roots and bottles, cans and food trays
-  scattered across the grass.
+  You fight off garbage monsters in a 2.5D survivor game, and the way you get
+  stronger is by answering sustainability quizzes, because each one turns into a
+  power-up. So the learning sits inside your upgrades instead of off in some
+  separate menu. It starts in the Plastic Woods, where plastic waste has choked
+  the ancient roots.
 
 
-  The title screen has a Start Mission button, a Co-op or Solo play mode toggle,
-  a Guide, and a Ranks board. After you start, a stage intro describes the
-  setting. In the opening clearing, large YES and NO pads stand in the lower
-  corners, which fits the quiz format.
+  The starting clearing has big yes and no pads sitting on the grass, and
+  they're clearly meant for answering.
 
 
-  An Eco-Mart in the clearing lets you spend carbon to upgrade and unlock
-  eco-abilities. A portal there leads to other worlds. The art pairs pixel-art
-  ground and props with blocky 3D models.
+  Those pads fit a quiz nicely, since a true-or-false question is something you
+  can walk up to and answer. The same clearing also holds an Eco-Mart where you
+  spend carbon on upgrades and eco-abilities.
 
 
-  The creator is a father of four daughters. He built the game to teach children
-  about sustainability while keeping it fun to play.
+  Paying in carbon is a neat touch for a game about cleaning up. There's a
+  portal in the clearing too, and it sends you off to other worlds.
+
+
+  Before any of that, the title menu lets you pick co-op or solo and then press
+  Start Mission, with a guide and a ranks screen sitting right beside the
+  button.
+
+
+  The creator is a father of four daughters, and he wanted something fun that
+  would also be good for them. He believes the earlier you learn about
+  sustainability, the more you can shape the future, so he built the lesson into
+  the fighting.
 play:
   url: https://eco-guardian-delta.vercel.app
   embeddable: true

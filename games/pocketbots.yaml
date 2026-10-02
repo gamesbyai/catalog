@@ -2,21 +2,33 @@ slug: pocketbots
 title: PocketBots
 tagline: Assemble a toy battle robot from scavenged parts and fight arena duels.
 description: >-
-  Choose a unit in the hangar, or press Build-a-Bot to put together a new one
-  from salvaged pieces. Then deploy it into short arena duels. Each limb adds to
-  the loadout, and winning a fight earns an upgrade for the next.
+  Pick a unit in the hangar, or hit Build-A-Bot to put one together yourself.
 
 
-  The built-in Base Unit shows how a loadout reads. Its head has a scan pulse,
-  its torso is a core, and its legs give a boost dash. Left mouse fires a
-  revolver and right mouse fires a repeater. The panel also lists core mass,
-  height, detailing and optics.
+  You build a toy battle robot out of scavenged parts, and every limb counts as
+  part of your loadout. The default Base Unit shows how it works: a scan pulse
+  in the head, a core in the torso, and a boost dash in the legs.
 
 
-  To play against others, host a 1v1 and share the room code, or enter a
-  friend's code and join. An Open Circuit Battles button leads to open matches.
-  A portal in the hangar exits to the jam hub. The creator wanted a Western
-  counterpart to Medabots Dual and Girls Mission.
+  The arms carry the weapons. Left click fires a revolver and right click fires
+  a repeater, so each hand does its own job.
+
+
+  Then you take the robot into scrappy arena duels, which are fast ones.
+
+
+  Each fight earns you your next upgrade, which feeds back into what you build.
+  The hangar also lists the unit's mass, height, detailing and optics, so you
+  can see what you've put together before you deploy.
+
+
+  For a human opponent there's a 1v1 link room. You host a match and share the
+  room code, or type in someone else's code to join, and there's a separate
+  button for open circuit battles.
+
+
+  The creator wanted a western take on Medabots Dual and Girls Mission, one that
+  doesn't need a Japanese translator to play.
 play:
   url: https://pokebots-vibejamv.netlify.app
   embeddable: true

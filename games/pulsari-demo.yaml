@@ -2,31 +2,41 @@ slug: pulsari-demo
 title: PULSARI Demo
 tagline: Strike beat rings in four directions to bring hidden music out of the dark.
 description: >-
-  Beat rings rush toward a rotating center from four directions, and you strike
-  up, down, left or right as each one arrives. The song stays silent until you
-  earn it: a bass line enters at combo four, an arpeggio at sixteen, and the
-  full track opens at combo thirty-two. A miss breaks the combo and strips the
-  music back.
+  You're trying to keep a combo alive while beat rings rush at a rotating center
+  from four directions. You hit up, down, left or right as each one arrives, and
+  the song only builds if you stay clean.
 
 
-  This demo version makes three tracks playable. The full game has 40 or more
-  tracks across five sets, running from an 80 BPM tutorial through glitch-styled
-  and ambient-drift sets to a hardcore finale at 250 BPM. The demo's title
-  screen also lists an infinite mode and longer marathon tracks in the full
-  release.
+  The music is hidden at first, so there's just a pulse. A bass line comes in at
+  combo four, an arpeggio joins at sixteen, and by thirty-two the whole track
+  opens up. That's a neat way to make your accuracy the thing you hear, because
+  a miss strips it back.
 
 
-  Four difficulty modes tighten the timing window from plus or minus 70 ms on
-  Easy to 20 ms on Ultra. Separate audio and visual offset settings let you
-  calibrate to your hardware. Keyboard, gamepad and dance pads work, and
-  gamepads rumble on perfect hits.
+  Four difficulty modes set how tight the timing is, from a window of 70 ms on
+  Easy to 20 ms on Ultra. Audio and visual offsets can be calibrated separately,
+  so the windows can match your setup.
+
+
+  This demo build keeps most of the game behind a lock, which is a bit of a
+  tease.
+
+
+  Three tracks are playable, and the tracklist shows the rest locked behind the
+  full game. The playable ones sit in the first set, Void, where each track
+  unlocks after you clear the one before it. The full game is described as
+  having dozens of tracks across five sets, running from an 80 BPM tutorial to a
+  250 BPM finale.
 
 
   Clearing sets, flawless runs, daily streaks and combo milestones unlock
-  cosmetic variants for sigil, aura, trail, hit effects and horizon. Progress
-  saves locally. The interface is available in English, Japanese and Simplified
-  Chinese. The game uses flashing lights and beat-synced color pulses, with
-  photosensitivity options in settings.
+  cosmetics. There are 30 variants across sigil, aura, trail, hit effects and
+  horizon. Progress saves locally, and the game is available in English,
+  Japanese and Simplified Chinese.
+
+
+  It flashes, pulses with the beat and uses high-contrast converging shapes, so
+  the start screen points you to photosensitivity options in the settings.
 play:
   url: https://critics-arcade.itch.io/pulsari
   embeddable: false
@@ -67,7 +77,7 @@ media:
     - games/pulsari-demo/shot-2
 dates:
   added: 2026-09-30
-  updated: 2026-10-01
+  updated: 2026-10-02
 status: live
 provenance:
   foundVia: scout:aibgj-3

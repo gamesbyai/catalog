@@ -3,21 +3,34 @@ title: "Tankz: Arena"
 tagline: Drive a tank through waves of enemies, pick upgrades, and fight bosses
   until you die.
 description: >-
-  You drive a tank in a 2D top-down arena and fight wave after wave until your
-  tank is destroyed. Aim with the mouse, fire the main gun with left-click,
-  launch rockets with right-click, press Shift to boost, and press E to trigger
-  Multi-Burst.
+  You start in a dark arena as a glowing white tank, with pink enemy tanks
+  already closing in and thin blue walls scattered across the floor.
 
 
-  A boss arrives every five waves. Each level-up offers three random upgrades,
-  and you choose one of them. Chain lightning bolts also drop as pickups, and
-  the creator says each one powers up the next thirty seconds of play.
+  Moving and aiming are separate, so you can slide one way while the barrel
+  points another. Left-click shoots, right-click sends out a rocket, and Shift
+  boosts you away when things get crowded. The panel in the top left keeps track
+  of health, boost, level, score, rocket count and your gun stats.
 
 
-  The game is a fast-paced arcade roguelite tagged Action and Survival. Runs are
-  built around the loop of surviving waves, collecting upgrades, and facing the
-  next boss. The creator's AI disclosure covers code, graphics, sounds and text,
-  with AI used as an assistant.
+  Enemies arrive in waves, and a countdown at the top tells you how many seconds
+  are left before the next one. After every fifth wave a boss turns up.
+
+
+  A purple Multi-Burst pickup is sitting near the bottom edge, and E sets it
+  off.
+
+
+  When you level up, the game deals out three random upgrades and you take one
+  of them, so the tank you end up with depends on the draw. The stat readout
+  lists damage, fire rate, speed, bullet speed and shots, which makes it easy to
+  check what a pick actually changed.
+
+
+  Now and then a chain lightning pickup shows up, and the creator calls its
+  thirty-second effect a highlight, which is a big promise for one power-up. The
+  same description admits you'll die eventually, and hopes it isn't in the first
+  wave.
 play:
   url: https://durian-arcade.itch.io/tankz-arena
   embeddable: false
@@ -58,7 +71,7 @@ media:
     - games/tankz-arena/shot-2
 dates:
   added: 2026-10-01
-  updated: 2026-10-01
+  updated: 2026-10-02
 status: live
 provenance:
   foundVia: scout:aibgj-2

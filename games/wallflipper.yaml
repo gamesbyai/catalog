@@ -3,22 +3,33 @@ title: Wallflipper
 tagline: Race through a neon corridor, flipping gravity to dodge obstacles and
   grab objects.
 description: >-
-  The game opens on a Launch button over a dark neon corridor with a glowing
-  grid floor. A readout in the top left shows gravity (Normal) and direction
-  (Forward). The top right tracks distance in meters and two counters, both at
-  zero, with a thin bar beneath them.
+  You start in a dark neon corridor with a glowing title, a launch button and a
+  small blue craft waiting on a grid floor. Press launch and you're racing down
+  it.
 
 
-  You race down the corridor on its floor, walls, and ceiling. Steering left or
-  right carries you up the sides, and holding the steer keeps you climbing.
-  Space flips you to the opposite surface, which is how you dodge surface traps
-  and obstacles. The goal is to stay alive at full speed and collect objects
-  along the way.
+  The track isn't only the floor, because the walls and the ceiling are all part
+  of the course.
 
 
-  The on-screen text also tells you to follow fragment routes through the
-  corridor. R reverses direction, which matches the Direction readout. P pauses,
-  and music and sound each have their own toggle button and key.
+  You steer left and right to climb around the walls and onto the ceiling, and
+  you hit space to flip to the opposite surface. That flip is how you get out of
+  the way of traps stuck to whatever surface you're on.
+
+
+  The route breaks into fragments, so you follow the pieces that are still there
+  while you dodge those traps and collect objects. Two readouts in the top left
+  show your gravity, which starts on normal, and your direction, which starts on
+  forward. Up top right, a distance counter in meters sits over two pickup
+  counters, which is a handy way to see how far you've gotten.
+
+
+  Your whole job is to stay alive while you keep moving at full speed.
+
+
+  Beyond steering and flipping, you can reverse with R, pause with P, and switch
+  the music or sound off with M and S. Both audio toggles also sit as buttons in
+  the bottom left, so you can silence everything before you even launch.
 play:
   url: https://expectfun.github.io/vibetools/wallflipper.html
   embeddable: true
@@ -58,7 +69,7 @@ media:
     - games/wallflipper/shot-2
 dates:
   added: 2026-10-01
-  updated: 2026-10-01
+  updated: 2026-10-02
 status: live
 provenance:
   foundVia: scout:vibejam-2026

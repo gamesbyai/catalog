@@ -2,25 +2,37 @@ slug: black-code
 title: BLACK CODE
 tagline: Command a tactical squad in an isometric cyberpunk action-strategy prototype.
 description: >-
-  You command a squad of armed operatives in a rain-soaked cyberpunk city, seen
-  from an isometric pixel-art view. Left click shoots or selects, and right
-  click moves or interacts. Q and E cycle through squad members, and T selects
-  everyone at once.
+  You command a squad of operatives in a rain-soaked cyberpunk city, seen from
+  an isometric angle. Left click shoots or selects, and right click sends the
+  selected unit where you point or has it interact with whatever's there.
 
 
-  Each operative can hold position, dash, or blink. Two stances change how the
-  squad acts: a normal/aggressive mode and a stealth mode. Number keys 1 to 4
-  use items, and a gear key opens equipment.
+  Because it mixes real-time strategy with tactical action, you're running a
+  whole team instead of one soldier. Q and E cycle through your operatives, T
+  grabs all of them at once, and the number keys 1 to 4 pick items.
 
 
-  Tactical overlays include a map, a status panel, an objectives list, and a
-  grid view, plus zoom and pause. The options menu switches between classic
-  mouse control and WASD movement. Sessions run a few minutes, and the tags list
-  roguelike elements.
+  Each operative can hold position with Shift, dash with Ctrl, blink with B or
+  go stealthy with F. Pressing I flips the squad between a normal stance and an
+  aggressive one, which is a neat way to change how they fight without issuing
+  new orders. G opens gear.
 
 
-  The subtitle on the title screen is Ghost in the Ledger, and the creators
-  label this build a prototype.
+  The title screen keeps a tactical guide on the left, so you don't have to hunt
+  for the keys.
+
+
+  Beyond the basics you get M for the map, C for status, O for objectives, H for
+  a grid, plus and minus to zoom, P to pause and Esc for the menu.
+
+
+  If clicking everything isn't your style, the options let you swap the classic
+  mouse scheme for a WASD one. That's a considerate extra for a game with this
+  many hotkeys.
+
+
+  The full title is Black Code: Ghost in the Ledger, and MartincicBros / WAR3D
+  made it. It's still labeled a prototype with a provisional name.
 play:
   url: https://war3d.itch.io/esquadro-brics
   embeddable: false
@@ -58,7 +70,7 @@ media:
     - games/black-code/shot-2
 dates:
   added: 2026-09-30
-  updated: 2026-10-01
+  updated: 2026-10-02
 status: live
 provenance:
   foundVia: scout:aibgj-1

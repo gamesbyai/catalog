@@ -2,22 +2,38 @@ slug: nuts-pipeline
 title: Nuts Pipeline
 tagline: Place converters on pipe nodes to sort nuts from stones and feed a hamster.
 description: >-
-  You place converters on the nodes of a pipe network to control where items
-  flow. Nuts and stones come out of the source together. Pick the right
-  combination of converters to sort them, so only nuts reach the hamster waiting
-  at the goal.
+  Nuts Pipeline has you placing converters on nodes along a set of pipes, so the
+  right mix of nuts and stones reaches a hamster waiting at the end. Nuts and
+  stones flow in from the source, and your job is to sort them with combinations
+  of converters, because only nuts should get through.
 
 
-  Selecting a node opens a dialog where you swap its converter while checking a
-  reference chart. Each level is turn-based: you clear 10 turns within a
-  3-minute time limit. An Unlock Route action frees a locked node for a single
-  turn.
+  Letting a stone through counts as a miss, and two misses end the run. In the
+  first level's screenshot you can see the setup: three inputs on the left,
+  gate-like converters in the middle, and the hamster on the right.
 
 
-  A stone that reaches the hamster counts as a miss, and two misses end the run.
-  The hamster reacts each time a nut arrives. A built-in tutorial introduces the
-  rules, and levels range from easy stages to harder ones. Progress autosaves
-  after every placement and turn, so you can stop and resume later.
+  You pick a converter by selecting a node, which opens a dialog where you
+  switch converters while checking a reference chart.
+
+
+  A level runs for 10 turns, with a 3-minute limit on each level. There's also
+  an Unlock Route button that frees a locked node for one turn, which is handy
+  since some nodes start with a padlock on them.
+
+
+  The hamster reacts with obvious delight whenever a nut arrives, which is a
+  nice reward for getting the sorting right.
+
+
+  Progress saves automatically after every placement and turn, so you can quit
+  and come back to the same spot. A tutorial is built in, and the main menu has
+  its own entry for it.
+
+
+  When you press Start Game you choose a mode. Casual removes the time and miss
+  limits, though saving and ranking aren't available there, while Challenge,
+  with its limits and ranked records, is marked as part of the full version.
 play:
   url: https://is-product.itch.io/nuts-pipeline
   embeddable: false
@@ -51,7 +67,7 @@ media:
     - games/nuts-pipeline/shot-2
 dates:
   added: 2026-10-01
-  updated: 2026-10-01
+  updated: 2026-10-02
 status: live
 provenance:
   foundVia: scout:aibgj-3

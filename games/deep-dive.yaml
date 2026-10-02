@@ -3,29 +3,52 @@ title: Deep Dive
 tagline: Walk a diver through an undersea lab and play mini games that explain
   how chatbots work.
 description: >-
-  You guide a diver across the sea floor, through an airlock and into a lobby,
-  then along a corridor of lab rooms. Each room holds a glowing console. Stand
-  next to it and press E, and Pip the robot gives a short explanation before a
-  mini game applies the idea.
+  You're a diver walking through an underwater research station, and every lab
+  room teaches you one thing about how chatbots work. Pip the robot gives a
+  short explanation first, then you play a mini game built on the real
+  mechanism.
 
 
-  Five core labs cover tokens, next-word guessing, a 60-token context window,
-  writing a precise prompt for Robot Chef, and catching false facts that Pip
-  states with confidence. Finishing all five earns a Diver's License listing
-  each rule. Three optional labs cover tools, bias from reading material, and
-  private information.
+  You start on the sandy sea floor, step through an airlock into a lobby where
+  Pip says hi and there are beach balls to kick, then head down a corridor with
+  four lab rooms on each side. Each room is built around its lesson, so there's
+  a reef tank of token blocks and a kitchen for Robot Chef. Walk up to a glowing
+  console and press E to begin.
 
 
-  Two rooms use 3D physics. In the Next Word Machine, balls fall into five tubes
-  labeled with a small language model's top guesses, and the likeliest word
-  fills first. In the Backpack, each chat message becomes a block sized by token
-  count, and the oldest block drops off once the trough is full.
+  Five core labs come first, and then three bonus labs follow after them.
 
 
-  Press T to put on token goggles. Signs, doors and console screens then appear
-  as colored chunks, split the way the tokenizer reads them. A Map mode offers
-  the same lessons as a plain list with no 3D. A full playthrough takes about 20
-  minutes.
+  Finish the core five and you get a Diver's License listing every rule you
+  picked up. It waits on the Captain's Deck at the end.
+
+
+  Nothing here is faked, which is a pretty considerate thing for a kids' game to
+  do. The first lab uses the same tokenizer GPT-4o does, so "strawberry" splits
+  into st, raw and berry, and you can type your own name to see where it gets
+  cut. The guessing lab trains a tiny language model in your browser from three
+  public-domain books.
+
+
+  Later, the Library retrains that model on whichever books you choose. Pick
+  only Aesop and Pip starts talking about foxes and lions, which is a funny way
+  to learn about bias.
+
+
+  Two rooms turn the lessons into physics. In the Next Word Machine, balls drop
+  into five tubes labeled with the model's top guesses, and the likeliest word's
+  tube fills fastest. On the Backpack belt, chat messages become blocks that
+  slide into a 60-token trough, and the oldest one falls off when it's full.
+
+
+  Press T for the token goggles and every sign, door and console screen gets
+  repainted into the colored chunks a chatbot reads, so "Toolbox" becomes "Tool"
+  and "box". It means the whole station turns into a lab you can walk around in.
+
+
+  If the 3D station is too heavy for your computer, Map mode gives you the same
+  lessons as a plain list. It works with a keyboard alone, and nothing you type
+  leaves the page.
 play:
   url: https://deep-dive-rosy.vercel.app
   embeddable: true
@@ -61,7 +84,7 @@ media:
     - games/deep-dive/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-10-01
+  updated: 2026-10-02
 status: live
 provenance:
   foundVia: scout:awesome-opus

@@ -3,25 +3,48 @@ title: Ombres
 tagline: Steer a giant bird whose shadow paints the desert; biggest territory at
   nightfall wins.
 description: >-
-  In Ombres, each player steers a giant bird whose shadow paints the desert sand
-  in their color, and the biggest territory at nightfall wins. It is a local
-  party game for 1 to 12 players: the game runs in a browser on a computer
-  connected to a screen, and everyone flies from a phone after scanning a QR
-  code. Bots fill empty seats, so one phone is enough.
+  The first thing on screen is a white bird gliding over pale sand, with a wide
+  pink streak stretching out behind its shadow. That streak is the whole idea,
+  because wherever your shadow lands, the sand takes your color. A QR code sits
+  in the lower corner so your phone can steer the bird.
 
 
-  The look follows the ink outlines and flat colors of Moebius. According to the
-  repository, Claude Opus 5.5 designed and built it from a single brief, with
-  Brieuc Crosson supervising. The model wrote all of the code, in multi-agent
-  workflows in Claude Code.
+  A match is three rounds of roughly two minutes each, and the final one is
+  worth double. After that you get a podium, some end-of-match titles and a vote
+  on a rematch.
 
 
-  Altitude is the tactic: diving low gives a small, strong shadow, and climbing
-  gives a wide, pale one that cannot repaint strong sand. You can strike a lower
-  bird by diving onto it, though it can dodge with a wingbeat. A match is three
-  rounds of about two minutes, the last counting double, and as the sun sets the
-  shadows stretch until night sweeps across the map and locks everything in
-  place.
+  If you're alone, one phone is plenty, since computer-controlled birds take the
+  other seats.
+
+
+  Hold dive and you skim low, casting a small, strong shadow. Let go and you
+  climb, which spreads a wide but faint shadow, and a faint one can't overwrite
+  sand that's already held firmly. That's a sensible trade, since the big shadow
+  covers more ground but loses the fights. You can also drop onto a bird below
+  you to strike it: a hit stalls it and turns its trail to your color, while a
+  miss stalls you.
+
+
+  Once the clack sounds, the bird being struck can dodge with a wingbeat.
+
+
+  Towers cast shadows that freeze the sand, and a bird whose shadow slips inside
+  one is hidden. As the sun sinks, shadows stretch until they sweep huge areas
+  in seconds. For the last 12 seconds, darkness rolls from the cliff across the
+  desert, west to east, and locks the map, which is a tidy way to settle the
+  score.
+
+
+  If a player's phone drops out, a bot picks up their color and territory, then
+  gives the bird back when they reconnect. That's a kind touch for a living
+  room. There are four maps, and the arena grows as more birds join.
+
+
+  Claude Opus 5.5 built the whole thing from one brief, over about 35 hours of
+  agent work, with Brieuc Crosson supervising. The narrator has 722 recorded
+  clips, split evenly between French and English, which is plenty of talking for
+  someone who speaks rarely.
 play:
   url: https://ombres.deploy.breizhware.com
   embeddable: true
@@ -63,7 +86,7 @@ media:
     - games/ombres/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-09-30
+  updated: 2026-10-02
 status: live
 provenance:
   foundVia: scout:awesome-opus

@@ -2,21 +2,32 @@ slug: debt-witch-blood-interest
 title: "Debt Witch: Blood Interest"
 tagline: Survive 60 seconds as a witch, casting spells against a swarm of vampiric debt.
 description: >-
-  You are a witch trapped inside a cursed ledger, and vampiric debt is crawling
-  out of its margins. Your job is to last 60 seconds against the swarm. Steer
-  with WASD or the arrow keys, aim with the mouse, and cast spells with a click,
-  Space, or Q.
+  You start on a dark, grid-lined page with a black blob of a witch and small
+  colored monsters drifting toward her. Each one wears a name tag like Rent
+  Ghoul, Interest Bat or Subscription Leech, and a Time box at the top counts
+  down from 60.
 
 
-  Two more abilities sit on the keyboard. E slows the debt, and R sets off the
-  Write-Off blast. You cast, dodge, and slow the swarm within one short run.
-  Once the 60 seconds are up, a cursed accountant hands you a grade for how you
-  did.
+  You're a witch trapped in a cursed ledger, and the debt has turned vampiric.
 
 
-  The setting treats unpaid bills and interest as monsters that bite, played as
-  gothic comedy in an arcade survival format. The creator's disclosure lists AI
-  assistance for the code, graphics, and text.
+  You move with WASD or the arrow keys, aim with the mouse, and cast spells at
+  the swarm. The top of the screen shows your time, score, debt and hearts,
+  which is a tidy way to make money trouble stand in for health.
+
+
+  Your goal is to make it through the full 60 seconds without the debt swarm
+  getting you.
+
+
+  Besides the basic cast, which the bar at the bottom calls Receipt Bolt, you
+  get two more tricks. Grace Period slows the debt down, and Write-Off is a
+  blast you set off on its own key. Naming a panic button after clearing a bill
+  is a pretty good joke.
+
+
+  When the minute runs out, a cursed accountant hands you a grade for how you
+  did. The creator credits AI help with the code, graphics and text.
 play:
   url: https://bad-omen-games.itch.io/debt-witch-blood-interest
   embeddable: false
@@ -56,7 +67,7 @@ media:
     - games/debt-witch-blood-interest/shot-2
 dates:
   added: 2026-10-01
-  updated: 2026-10-01
+  updated: 2026-10-02
 status: live
 provenance:
   foundVia: scout:aibgj-3

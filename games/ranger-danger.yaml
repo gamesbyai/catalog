@@ -3,21 +3,31 @@ title: Ranger Danger
 tagline: Defend your base by placing defenses and fighting enemies yourself in
   pixel-art combat.
 description: >-
-  Ranger Danger is tower defense where you do not just place things and sit back
-  to watch. You set up defenses around your base and then step into the
-  pixel-art fight yourself, holding off incoming enemies with real-time action
-  combat and strategic planning at once.
+  You play a ranger who builds towers and walls to block the paths the enemies
+  take, and you also fight them yourself. So you're not just placing defenses
+  and watching, because your ranger attacks directly. That makes where you stand
+  matter about as much as where you build.
 
 
-  The creator picked this loop as the most fun among several one-shot ideas they
-  tried. Claude Code and Phaser were the tools, the result ranked 389th of 945
-  at Vibe Jam 2026, and it plays on phones too.
+  The enemies come at you wave after wave, and the waves run through different
+  biomes, from lush forests to volcanic wastes and beyond. Epic bosses are in
+  the mix too.
 
 
-  Tower defense usually leaves you waiting between decisions, while action games
-  lean on reflexes. Here the two are combined, so you are always choosing
-  between building up the defense and stepping in to fight yourself. It is a
-  single-player game, drawn in pixel art.
+  You earn gold along the way, and it's what pays for upgrades that make your
+  ranger stronger.
+
+
+  It's all pixel art, with a small green-clad ranger and a stone tower with a
+  red flag on the title screen. The intro says position and timing both matter,
+  which makes sense when you're building and brawling at the same time.
+
+
+  Building and fighting share the same job here, which is a neat trick.
+
+
+  The creator tried a few one-shot prompts before settling on this one, because
+  its mix of tower defense and action had the most fun game loop of the bunch.
 play:
   url: https://rangerdanger.xyz
   embeddable: true
@@ -55,7 +65,7 @@ media:
     - games/ranger-danger/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-09-29
+  updated: 2026-10-02
 status: live
 provenance:
   foundVia: scout:vibejam-2026

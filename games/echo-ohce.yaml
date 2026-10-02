@@ -2,24 +2,27 @@ slug: echo-ohce
 title: ECHO|OHCE
 tagline: Find your way through a dark dungeon using echolocation pings
 description: >-
-  ECHO|OHCE puts you in a dark dungeon where you cannot see. A ping fires
-  automatically and lights up whatever it reaches in one of three colors: blue
-  for safe, amber for near, and red for danger. Those color labels sit on the
-  title screen as a legend.
+  ECHO|OHCE drops you into a dungeon you can't see, so you find your way by the
+  pings that light up what's around you. They fire on their own, which means you
+  spend your effort on where you walk instead of aiming a scanner.
 
 
-  Each level has you reach the exit, and a run covers 10 levels. Staying silent
-  is a second goal that runs alongside it. The title screen describes the game
-  as a horror roguelite, and a Top Echoes board there tracks results.
+  Everything a ping reveals gets a color: blue for safe, amber for near, and red
+  for danger.
 
 
-  You move with WASD, look with the mouse, and hold Shift to sprint. The
-  echolocation is modeled on the Odradek scanner from Death Stranding, according
-  to the creator.
+  Your goal is to reach the exit on each level, and there are 10 of them to get
+  through. The game also lists staying silent as one of its aims, which sits
+  oddly beside a scanner that keeps calling out by itself.
 
 
-  The art is minimal: glowing blue, amber and red lettering and markers against
-  a black screen, with a single button to enter the dark.
+  It's built as a horror roguelite, and the creator took the scanning idea from
+  the Odradek scanner in Death Stranding. A Top Echoes board on the title screen
+  keeps track of how other players have done.
+
+
+  You can sprint when you need to get moving, but the pings still do the looking
+  for you.
 play:
   url: https://project-kqtw7.vercel.app
   embeddable: true

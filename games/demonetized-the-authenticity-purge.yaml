@@ -3,27 +3,45 @@ title: "DEMONETIZED: The Authenticity Purge"
 tagline: Survive waves of enemies in a cyberpunk satire, picking cards and
   upgrades along the way.
 description: >-
-  Move with WASD, aim with the mouse, fire with the left button, and dash with
-  Space or the right button. Every run begins by picking one of three single-use
-  starter cards: Value Override raises max Signal, Demonetization Order wipes
-  the mob, and Compliance Budget Patch heals.
+  Move with WASD, aim with the mouse and hold left click to shoot. Space or
+  right click dashes, and a readout in the top corner flips to Ready when the
+  dash is back. You're T.O.P.E., a moderation AI cleaning up human channels on a
+  platform called TheirTube.
 
 
-  You play T.O.P.E., the moderation AI of a fictional video platform called
-  TheirTube, in a cyberpunk survivor shooter. The HUD shows a Signal bar as a
-  percentage, whether dash is ready, the current wave, a named threat, your
-  score, and a personal best.
+  Before each run you pick one of three starter cards, and each one is good for
+  a single use. Value Override adds max signal, Demonetization Order wipes the
+  mob, and Compliance Budget Patch heals you. So the real choice is when you
+  cash it in, not just which one you grab.
 
 
-  Between runs, a store sells permanent upgrades for money. Options include an
-  extra starting card, more max Signal, a wider pickup range, shorter cooldowns,
-  a damage bonus, a card reroll, an orbiting drone or satellite, and a shield.
-  The menu counts runs, wins, and win rate, and Enter starts the next run.
+  Your signal bar sits top left beside the dash status, with the wave, the
+  threat type and your score right under it. It's a roguelite survivor, so the
+  cards and upgrades are what you build around.
 
 
-  The creator calls the story satire: a platform wipes out human creators under
-  the label "brand safety" while its ads keep earning. The interface can be
-  switched between English and Spanish.
+  Between runs there's a store where you spend money on permanent upgrades.
+  Eight are on offer: an extra starting card, more max signal, wider pickup
+  reach, shorter cooldowns, more damage, a reroll, a drone or satellite, and a
+  shield. Most can be bought several times, and every one shows its price up
+  front.
+
+
+  The store also tracks your runs, wins and win rate, which is a nice touch for
+  something this compact.
+
+
+  The story is satire, and it's pretty pointed. T.O.P.E.'s official mission is
+  protecting authenticity, but the real one is to mark human creators as
+  inauthentic, extract whatever value they have left and erase them. The creator
+  was inspired by the debate over platform demonetization and channel removals,
+  and wanted to mock how "brand safety" language pushes creators out while still
+  profiting from them.
+
+
+  You start by accepting the contract, then press Enter or the begin button in
+  the store. A switch in the top corner flips the whole thing between English
+  and Spanish.
 play:
   url: https://demonetized.iaen.es
   embeddable: true
@@ -66,7 +84,7 @@ media:
     - games/demonetized-the-authenticity-purge/shot-2
 dates:
   added: 2026-10-01
-  updated: 2026-10-01
+  updated: 2026-10-02
 status: live
 provenance:
   foundVia: scout:vibejam-2026

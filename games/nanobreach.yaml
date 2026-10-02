@@ -3,27 +3,42 @@ title: NanoBreach
 tagline: Plan and execute tactical hacks in a 3D roguelike where action unfolds
   as you move.
 description: >-
-  You plan tactical hacks in NanoBreach, a 3D roguelike where the action unfolds
-  as you move. The creator describes it as a mix of Superhot, Commandos and a
-  hack-style roguelike, so a run asks you to think through positioning and
-  timing before you commit to a move.
+  You start in stealth mode, with a tutorial where a mentor talks you through
+  the basics.
 
 
-  It is presented as a next-generation take on a classic roguelike the creator
-  admires. They say many things were changed, and the original serves as
-  inspiration rather than a blueprint. Claude Code and Three.js are behind it,
-  and it ranked 570th of 945 at Vibe Jam 2026.
+  The mentor's first line tells you you've got a reputation and you're no
+  rookie, but a little practice never hurts. You press Space to move through the
+  dialogue, and the tutorial runs 25 steps, so it's a proper walkthrough instead
+  of a single tooltip.
 
 
-  The hacking theme comes from that older roguelike, and the tactical,
-  squad-style planning comes from the Commandos side, so moves are planned first
-  and executed second. It is a single-player game that mixes action, strategy
-  and roguelike runs.
+  Your hacker is a green capsule on a plain gray floor. The corner panel tracks
+  your health, which starts at 2, and a hack counter that goes up to 5.
+
+
+  There's also a shot indicator that shows when you're ready to fire.
+
+
+  Moving, shooting and hacking each get their own key, so you can use all three
+  without a menu. A debug view is on Tab too, which is a handy thing to leave in
+  a jam build.
+
+
+  The creator describes it as a mix of Superhot, Commandos and a hacking
+  roguelike. It's inspired by an old roguelike they're a fan of, but it isn't a
+  3D port, and plenty of things were changed.
 play:
   url: https://nanobreach.questtracers.com
   embeddable: true
   platforms:
     - browser
+  controls:
+    - "WASD: move"
+    - "J: shoot"
+    - "R: hack"
+    - "Tab: debug"
+    - "Space: continue dialogue"
 creator:
   name: Josepho
   handle: josepho
@@ -55,7 +70,7 @@ media:
     - games/nanobreach/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-09-29
+  updated: 2026-10-02
 status: live
 provenance:
   foundVia: scout:vibejam-2026

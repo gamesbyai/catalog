@@ -2,27 +2,36 @@ slug: isometric-city
 title: IsoCity
 tagline: Build and manage an isometric city, growing it from the ground up.
 description: >-
-  You start with an empty isometric grid and $100,000 in funds. Lay down roads,
-  rail or subway, then paint residential, commercial and industrial zones on the
-  tiles. A side panel also offers services, parks and utilities to place, and a
-  bulldoze tool clears tiles.
+  You start with an empty green isometric grid, $100,000 in funds, and a sidebar
+  full of tools for laying down roads, rail, subway lines and zones for a city
+  that doesn't exist yet.
 
 
-  A top bar tracks population, jobs, funds and monthly income, plus demand
-  meters for the three zone types. Below it, percentage readouts show happiness,
-  health, education, safety and environment. A tax slider sets the rate, and
-  time controls let you pause or speed up the simulation.
+  You paint residential, commercial and industrial zones onto the grid, then
+  connect them with roads and rail. The city grows from there, and a small meter
+  in the top bar tracks demand for each zone type, so you can see what it wants
+  next. Parks, services and other buildings sit in their own menus.
 
 
-  The simulation includes cars, buses, trains, planes, seaplanes and barges, and
-  the vehicles respect traffic lights. Pedestrians walk the streets. View
-  overlays highlight individual city conditions on the map, and a minimap shows
-  zone coverage.
+  Money is the thing you keep an eye on, because the top bar shows your funds,
+  your monthly balance and a tax slider. Population and jobs sit beside them,
+  which is handy when you're trying to balance homes against workplaces.
 
 
-  The menu offers a new game, a co-op mode and a prebuilt example city to load.
-  You can save and load multiple cities. The interface adapts to touch with
-  drawers and toolbars.
+  Happiness, health, education, safety and environment each get a percentage
+  too.
+
+
+  Once things are running, the city fills with traffic. Cars, buses, trains,
+  planes and seaplanes get around on their own and stop at traffic lights, and
+  pedestrians find their own paths through the streets. That's a lot of moving
+  parts for a game drawn on plain canvas, with no engine behind it.
+
+
+  A row of view overlays lets you look at the map through a single lens, and a
+  minimap in the corner color-codes the zones. You can save several cities and
+  load them later, and there's a co-op mode on the start screen as well as a
+  ready-made example city you can open.
 play:
   url: https://iso-city.com
   embeddable: true

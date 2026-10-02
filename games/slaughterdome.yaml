@@ -2,22 +2,32 @@ slug: slaughterdome
 title: SlaughterDome
 tagline: Survive enemy waves in a shrinking dome, building walls and capturing flags.
 description: >-
-  You fight waves of enemies inside an arena dome that shrinks with every wave.
-  Trees block both movement and bullets, so they work as cover. From wave 5,
-  toxic water pools appear and cut off escape routes, which leaves less room to
-  retreat as the dome closes in.
+  You're a fighter inside an arena dome, holding out against waves of enemies
+  while the dome closes in a little more with every wave. Trees block both your
+  movement and bullets, so they work as cover. The room you have to fight in
+  keeps getting smaller.
 
 
-  You place walls to funnel enemies into narrow paths. Building combos unlocks
-  rare upgrades. Quake-style flag capture objectives sit alongside the survival
-  waves, so you have a goal to chase beyond staying alive.
+  You aren't stuck with the arena as it comes, though, because you can build
+  walls wherever you like.
 
 
-  Up to three fighters can team up in co-op. The title screen sets the game in
-  2089 and shows an armored, red-eyed warrior standing before a crowd of small,
-  colorful monsters. The creator combined the shrinking circle of battle royale
-  games, wall building from Fortnite, Roblox and Minecraft, and capture-the-flag
-  from Quake.
+  The idea is to funnel enemies down the paths you want, much like building in
+  Fortnite or Minecraft. Chain together combos and you unlock rare upgrades.
+
+
+  From wave 5, pools of toxic water show up and cut off routes you might have
+  been counting on to escape. There are Quake-style capture-the-flag objectives
+  as well, so you're not only waiting out the shrinking circle. That's a lot of
+  borrowed ideas in one arena.
+
+
+  The title art sets a grim armored warrior against a crowd of cartoon monsters,
+  including bees, bats and a rabbit, which is a funny mix for a game set in
+  2089.
+
+
+  Up to three fighters can team up, so you can play co-op or go in alone.
 play:
   url: https://slaughterdome.vercel.app
   embeddable: true
@@ -54,7 +64,7 @@ media:
     - games/slaughterdome/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-10-01
+  updated: 2026-10-02
 status: live
 provenance:
   foundVia: scout:vibejam-2026

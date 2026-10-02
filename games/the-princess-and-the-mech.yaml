@@ -3,25 +3,34 @@ title: The Princess and the Mech
 tagline: Click through an underground complex to wake an ancient mech and stop a
   cyber dragon.
 description: >-
-  You play a princess who has to rescue both herself and her kingdom from a
-  cyber dragon. It is a point-and-click adventure: you track down an ancient
-  mech, then work your way through an underground complex to charge it up.
+  You play the whole thing with the mouse, like the old point-and-click
+  adventures. Left click walks your princess somewhere or uses whatever you
+  clicked on, and right click gives you a closer look at it, so you never need
+  the keyboard.
 
 
-  The game uses only the mouse. Left click walks to a spot or uses an item,
-  right click examines what is under the cursor, and the mouse wheel opens and
-  closes the inventory.
+  The mouse wheel opens and closes your inventory. There's an inventory bar
+  sitting at the bottom of the screen too.
 
 
-  The visuals are still images and animated clips, and characters have spoken
-  voice lines. The music is by Loyzbeats. The creator took inspiration from Neon
-  Genesis Evangelion, and Stellar Blade informed the character concept art.
+  You're a princess who has to save herself and her kingdom from a cyber dragon.
 
 
-  According to the creator, most of the work used locally run open-weight
-  models, with Google AI handling story and code. Images came from Krea 2 with a
-  self-trained style LoRA, animation from Wan 2.2, and voices from a TTS model.
-  The only sound effect, a moving plate, came from a video model.
+  To do it, you find an ancient Mech and make your way through an underground
+  complex to charge him up, which is a pretty big job for someone starting out
+  in a bedroom.
+
+
+  That bedroom has cracked stone walls, a heavy sci-fi door with a glowing
+  panel, and neon tubes along the ceiling. A tall wardrobe mirror holds a purple
+  crystal, and a yellow sticky note is stuck to the wall, which is a funny thing
+  to find in a fairy-tale room.
+
+
+  The creator took inspiration from Neon Genesis Evangelion, with a little
+  Stellar Blade in the character concept art. Almost everything was made with
+  local open-weight models, while Google AI helped with the story and code, and
+  Loyzbeats wrote the music.
 play:
   url: https://morozig.itch.io/princess-and-mech
   embeddable: false
@@ -60,7 +69,7 @@ media:
     - games/the-princess-and-the-mech/shot-2
 dates:
   added: 2026-10-01
-  updated: 2026-10-01
+  updated: 2026-10-02
 status: live
 provenance:
   foundVia: scout:aibgj-4

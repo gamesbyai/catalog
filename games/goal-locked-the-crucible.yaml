@@ -2,28 +2,41 @@ slug: goal-locked-the-crucible
 title: "Goal-Locked: The Crucible"
 tagline: Score goals and outlast rivals in a shrinking cyber-sport arena.
 description: >-
-  Goal-Locked: The Crucible puts battle royale rules on a sport. You compete
-  against rivals inside a tactical arena that keeps shrinking, and the aim is to
-  be the last one standing. Each goal you score counts as a way to knock out an
-  opponent.
+  The start screen shows a dark, neon-lit arena with glowing rings circling a
+  football pitch, and a short instruction card sits over it. You're a sphere,
+  and the goal is to be the last one standing.
 
 
-  That ties survival to scoring and puts elimination stakes into a sports
-  format, the main idea behind the design. Chaotic physics drive the brawling,
-  so collisions and momentum shape each match instead of fixed animations, and
-  the shrinking play space pushes everyone toward the same spot as the match
-  goes on.
+  Scoring is how you knock rivals out, so the football part isn't decoration.
+  The arena is also a shrinking tactical space, which means the room to play in
+  gets smaller as the round goes on.
 
 
-  The presentation leans into a high-tech, cyber-sport look, and the arena is
-  rendered in Three.js. It is a Vibe Jam 2026 entry built in Antigravity that
-  also runs on phones.
+  Everything runs on chaotic physics, so it's a brawler as much as a sports
+  game.
+
+
+  You move with WASD or the arrow keys, and Shift gives you a dash. Space sends
+  out a pulse, which the instructions list under tactics.
+
+
+  Under the instructions there are three counters for your best score, your
+  kills and a tier that starts at T1.
+
+
+  The creator wanted to shake up sports games by giving them battle royale
+  stakes and chaotic physics, which is a pretty odd pairing for a football
+  match. It's a one-player game.
 play:
   url: https://goal-locked.vercel.app
   embeddable: true
   platforms:
     - browser
     - mobile
+  controls:
+    - "WASD / arrows: move"
+    - "Shift: dash"
+    - "Space: pulse"
 creator:
   name: whinhosa_exe
   handle: whinhosa-exe
@@ -54,7 +67,7 @@ media:
     - games/goal-locked-the-crucible/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-09-29
+  updated: 2026-10-02
 status: live
 provenance:
   foundVia: scout:vibejam-2026

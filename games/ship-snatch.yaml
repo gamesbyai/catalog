@@ -3,22 +3,32 @@ title: Ship Snatch
 tagline: Build a hex archipelago and defend your Captain's Keep from enemy ships
   and sea monsters.
 description: >-
-  The aim is to keep your castle standing as pirate ships and tentacled sea
-  creatures come at it in waves. You start on a top-down map of hexagonal tiles,
-  add land one hex at a time to grow an island chain, and place and upgrade
-  defenses on the ground you have claimed.
+  You're trying to keep the Captain's Keep standing while waves of enemy ships
+  and sea monsters close in on it. You grow your archipelago one hex at a time,
+  and you place defenses on it and upgrade them as you go. Cannons are what
+  you'll see lined up around the castle.
 
 
-  Cannons sit on tiles around the central keep and fire at ships approaching
-  across the water, while tentacles rise from the sea nearby. Everything is
-  modeled in clay, with sand, grass and pond tiles, palm trees, coin piles and
-  barrels.
+  It's a top-down tower defense with a base builder folded in, so the island
+  you're defending is something you keep adding to.
 
 
-  The title screen asks for a captain name, then offers Start Solo or Start
-  Multiplayer. Multiplayer is co-op, with a list of open rooms to join and a
-  global leaderboard. Play is real-time. The creator aimed for a look a
-  nine-year-old would enjoy that adults could still find worth playing.
+  Everything looks sculpted from modeling clay, from the boats to the palm
+  trees.
+
+
+  Before you start, you type in a captain name and pick Start Solo or Start
+  Multiplayer. Co-op lets several captains defend together, and the menu lists
+  any open rooms you can join. A global leaderboard sits on the same screen.
+
+
+  Kraken tentacles curl up out of the water around the island, which is a cute
+  way to threaten a pirate fort.
+
+
+  The creator made it with a 9-year-old nephew in mind, but wanted adults to
+  find it interesting too. It runs in real time in the browser, so there's
+  nothing to install.
 play:
   url: https://shipsnatch.com
   embeddable: true
@@ -56,7 +66,7 @@ media:
     - games/ship-snatch/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-10-01
+  updated: 2026-10-02
 status: live
 provenance:
   foundVia: scout:vibejam-2026

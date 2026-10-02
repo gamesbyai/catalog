@@ -2,22 +2,34 @@ slug: graviton
 title: GRAVITON
 tagline: Orbit a star and bend photon beams through gravity to destroy enemy waves
 description: >-
-  Gravity does the work in this 3D orbital combat arena. You circle a star,
-  slingshot past gravity wells, and fire photon beams that travel on curved
-  paths toward waves of enemies. Each shot, dodge, and slingshot is shaped by
-  the pull around you.
+  Your photon beams curve as they pass through gravity wells, so a straight line
+  to an enemy isn't always the shot you want. You orbit a star in a 3D arena,
+  which means every aim is a small orbital puzzle.
 
 
-  WASD or the arrow keys thrust the ship, and the mouse aims. Left click fires a
-  photon, and Space triggers a gravity boost. Shift increases your mass, which
-  tightens your orbit around the star.
+  You thrust around with the keyboard and aim with the mouse, then click to fire
+  at the enemies coming at you in waves. Because the beam bends, you have to
+  think about where the wells sit before you pull the trigger, and the dodging
+  works the same way.
 
 
-  The creator built the game around orbital mechanics and gravitational lensing,
-  wanting gravity to be the core mechanic rather than background. The title
-  screen, subtitled Orbital Slingshot Arena, is a black screen with a glowing
-  gold title, a Launch button, a How to Play page, and a short list of the
-  controls.
+  You can also slingshot through the gravity wells, which the title screen puts
+  right in its name for the arena.
+
+
+  Space gives you a gravity boost, and holding Shift raises your mass so you
+  settle into a tighter orbit around the star. That's a neat trade, since you
+  pick how close you hang to the thing that's pulling on everything.
+
+
+  The creator built it around orbital mechanics and gravitational lensing. They
+  wanted gravity to shape every shot, dodge and slingshot instead of sitting in
+  the background.
+
+
+  Your goal is to destroy the waves of enemies that keep arriving. There's a
+  how-to-play screen next to the launch button if you'd like the rules before
+  you start, which is handy for a game with this many gravity tricks.
 play:
   url: https://graviton-space.netlify.app
   embeddable: true
@@ -62,7 +74,7 @@ media:
     - games/graviton/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-10-01
+  updated: 2026-10-02
 status: live
 provenance:
   foundVia: scout:vibejam-2026

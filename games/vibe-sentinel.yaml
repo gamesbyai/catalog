@@ -3,29 +3,40 @@ title: Vibe Sentinel
 tagline: Fight shadow beasts through ten turn-based dungeon levels, one careful
   move at a time.
 description: >-
-  The opening screen is a green-glowing panel with a short briefing, the
-  controls, and a button to pick your Sentinel. You play the last guardian of
-  the Ancient Grove, walking a dark dungeon one grid tile at a time and
-  attacking by bumping into enemies.
+  The first thing you see is a glowing green title card that casts you as a
+  Sentinel of the Ancient Grove, the last guardian between your home and an army
+  of shadow beasts. A button under the intro lets you choose your Sentinel
+  before you head into the dungeon.
 
 
-  Each level hides a glowing exit star that leads to the next floor, and a run
-  is won by getting through all 10 levels. You start with 10 HP. Potions restore
-  6 HP, and crystals fuel the Sentinel Pulse, which costs 2 crystals and hits
-  every enemy within 3 tiles.
+  You move one tile at a time, and you attack by bumping into an enemy. Crystals
+  and potions are scattered around each level, and you're looking for the
+  glowing exit star that leads to the next one. Clear all 10 levels and the
+  bloodline is saved.
 
 
-  Turns are discrete, so nothing moves until you do. Enemies step only every
-  other turn, which leaves a gap to reposition. Waiting passes your turn while
-  they keep acting. The outer border is solid wall, so there is no safe edge to
-  hide along.
+  Enemies only move every other turn, and that gap is what you play around.
 
 
-  Each of the 10 levels has its own biome, running from a forest grove through a
-  volcanic maze to a void sanctum. Beyond the main run there are an endless
-  mode, badges, and a portal into another game from the same event. The design
-  follows early Rogue and Nethack, where resource management matters more than
-  reflexes.
+  You start with 10 HP and every hit hurts, so the off turn is your chance to
+  reposition. The border is a solid wall, which means there's no safe lane along
+  the edge to hide in.
+
+
+  Crystals feed your Sentinel Pulse, which hits every enemy within 3 tiles for 2
+  crystals. Potions bring back 6 HP, and if you'd rather hold still while the
+  enemies keep moving, you can wait a turn.
+
+
+  The creator took inspiration from classic grid roguelikes like Rogue and early
+  NetHack, where every move matters and the pressure comes from managing
+  resources instead of reflexes. Each of the 10 levels gets its own look, from a
+  forest grove through a volcanic maze to a void sanctum, which is a lot of
+  scenery change for a compact dungeon crawl.
+
+
+  Past the main run there's an endless mode and badges to earn. There's also a
+  portal that drops you straight into another game.
 play:
   url: https://flash-source.github.io/vibeSentinel
   embeddable: true
@@ -67,7 +78,7 @@ media:
     - games/vibe-sentinel/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-10-01
+  updated: 2026-10-02
 status: live
 provenance:
   foundVia: scout:vibejam-2026

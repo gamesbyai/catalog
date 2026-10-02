@@ -2,26 +2,32 @@ slug: lunar-lander
 title: Lunar Lander
 tagline: Steer a lunar module with thrust and tilt to land softly on rough terrain.
 description: >-
-  Rotate the lander and fire the main thruster to set it down on a jagged lunar
-  landscape. A soft touchdown counts as a landing, and a crash ends the attempt.
-  The look is retro arcade, modeled on the old Lunar Lander cabinets the creator
-  liked.
+  You steer a lunar module down onto a jagged surface with a main thruster and
+  left-right rotation, and you have to touch down softly or the lander crashes.
+  Before each descent you pick a destination from a row of five worlds, so
+  you're not always landing on the Moon.
 
 
-  A destination screen opens the game with five worlds to deploy to: Moon, Mars,
-  Europa, Venus and Kepler-452b. The Moon is the low-gravity world for learning
-  the basics. Mars has heavier pull and rough terrain, and Europa has ultra-low
-  gravity over fractured ice.
+  The Moon is the starting point, and it's low gravity for learning the basics.
+  Mars pulls harder over rougher terrain, while Europa has ultra-low gravity
+  over fractured ice. Venus has dense clouds and crushing gravity, and
+  Kepler-452b is an Earth-like world with a forgiving descent.
 
 
-  Venus brings dense clouds and crushing gravity, and its card says it unlocks
-  after you complete the mission on Europa. Kepler-452b is an Earth-like world
-  with a forgiving descent.
+  Not everything is open right away, and Venus stays locked until you complete
+  the mission on Europa.
 
 
-  A small panel on the destination screen lists the controls and names three
-  landing pad types: Easy, Hard and Extreme. A sound toggle sits in the top
-  corner, and P pauses the descent.
+  The landing pads come in three kinds: easy, hard and extreme. The selection
+  screen lists them in a small legend next to the controls.
+
+
+  Pressing P pauses mid-descent, and there's a speaker button in the corner for
+  sound. The look is retro arcade, with glowing planets on a dark starfield.
+
+
+  The creator grew up loving the old Lunar Lander cabinets and wanted a tight
+  version for the browser that they could tweak and share with friends.
 play:
   url: https://lunarlanderv5.netlify.app
   embeddable: true

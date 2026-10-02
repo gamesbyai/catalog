@@ -3,25 +3,32 @@ title: The Lighter Path
 tagline: Descend through Hell as Dante, hopping portals between minigames as
   karma sways your fate.
 description: >-
-  You play Dante, who wakes in a dark place with only a lantern and walks down
-  through Hell. Portals along the way send you into separate games: a roguelite
-  in the style of Archero, a survival shooter with dinosaurs, a Heaven Taxi
-  stage modeled on Flappy Bird, and a swarm of smaller minigames.
+  The Lighter Path has you playing Dante, walking down through Hell with a
+  lantern and hopping between portals that drop you into completely different
+  games. One portal leads to an Archero-style roguelite, another to a dino
+  survival shooter, and another to a Flappy Bird-style Heaven Taxi.
 
 
-  A karma counter sits at the top of the screen. Karma decides whether Dante
-  ends in damnation or salvation. The title screen bills the game as an inferno
-  arcade with four worlds and a single soul.
+  Between those, you get a swarm of smaller minigames, so the genre keeps
+  changing on you. That's a pretty wild range for one browser game, and the
+  red-lit title screen even calls itself an unhinged inferno arcade.
 
 
-  The title screen lists WASD, the mouse, E, Shift and F as the inputs. Pressing
-  Tab opens a list of commands and tips, and a Begin button starts the descent.
-  Touch devices are supported, though the title screen recommends a desktop
-  computer.
+  Your karma is what ties all of those detours together into one trip.
 
 
-  The creator, who is not an engineer, says the game gathers many of their ideas
-  and could not have been built without vibe coding.
+  A karma counter sits at the top of the screen, and it decides whether you end
+  in damnation or salvation. The story opens with you waking in a dark place
+  with only your lantern and your questions, while a light flickers somewhere
+  ahead.
+
+
+  If a level isn't working for you, a button at the bottom of the screen skips
+  it, with a cheeky line teasing you for using it.
+
+
+  You can press Tab at any time to see commands and tips. The title screen lists
+  WASD and the mouse among its keys, and it says mobile works too.
 play:
   url: https://the-lighter-path-game.vercel.app
   embeddable: true
@@ -60,7 +67,7 @@ media:
     - games/the-lighter-path/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-10-01
+  updated: 2026-10-02
 status: live
 provenance:
   foundVia: scout:vibejam-2026

@@ -2,20 +2,26 @@ slug: rift-warden
 title: Rift Warden
 tagline: Defend a rift or attack it in asymmetric tower defense against players or bots.
 description: >-
-  The start screen asks for a display name, with a color swatch beside it, and a
-  choice of side. The Architect builds towers and defends the path. The Attacker
-  sends waves to break the line. Each side has a 1v1 button for a match against
-  another player and a solo button for a match against an AI.
+  The first screen asks you to pick a side. As the Architect you build towers
+  and defend the path, while the Attacker sends waves out to break the line.
 
 
-  A Survival mode is also listed, where the goal is to defend until the core
-  falls. Below the menu, tabs show open seats to join, live matches to spectate,
-  and a leaderboard for high scores.
+  Both roles are playable, which makes this an asymmetric take on tower defense.
 
 
-  The two sides play differently: one places defenses, the other sends units
-  against them. The creator describes it as asymmetric tower defense, drawing on
-  balloon tower defense and chess, with matches against other players or bots.
+  You can take either side in a 1v1 against another person, or go solo against
+  an AI opponent. There's also a survival mode where you defend until the core
+  falls. Before you start you can type a name and pick a color for yourself.
+
+
+  The creator describes it as Balloon Tower Defense crossed with chess, which is
+  an odd pairing.
+
+
+  The lobby has tabs for open seats where someone is waiting for an opponent,
+  live matches you can spectate, and a leaderboard for anyone chasing high
+  scores. Spectating is handy because you can watch a match before you sit down
+  in one.
 play:
   url: https://rift-warden.com
   embeddable: false
@@ -52,7 +58,7 @@ media:
     - games/rift-warden/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-10-01
+  updated: 2026-10-02
 status: live
 provenance:
   foundVia: scout:vibejam-2026

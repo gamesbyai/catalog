@@ -3,28 +3,35 @@ title: Lantern Isle
 tagline: Help island residents earn back crystal shards and restore shrines in a
   cozy adventure.
 description: >-
-  Walk a small character around an isometric island and talk to the residents.
-  Speech bubbles float over characters who have something to say, and their
-  lines appear in a text box along the bottom of the screen, headed by the
-  speaker's name.
+  Walk up to the characters with speech bubbles over their heads, because
+  they're the ones who tell you what's wrong. On the forest island Sprite is
+  looking for glowing crystal shards, and Elder Moss says that reuniting a lost
+  firefly with its friends makes a shard appear. Then you pick it up.
 
 
-  On the first island, Elder Moss explains the task: reunite a lost firefly with
-  its friend, and a crystal shard appears. Pick it up and bring all shards to
-  the shrine in the center. Sprite, another resident, adds that glowing shards
-  are scattered through the forest.
+  Every shard you find goes back to the shrine in the middle of the island. A
+  counter in the top corner starts at zero out of five, so you can see how far
+  along you are.
 
 
-  A shard counter at the top left starts at 0 / 5, and a Map button sits at the
-  top center. The full game spans six islands. Each character you help earns
-  back a crystal shard, and restoring the ancient shrines gradually reveals why
-  the Guardian Star went dark.
+  That's only the first island, though, and there are more waiting after it.
 
 
-  The title screen offers Begin Adventure and a separate Explore Mode. Islands
-  float against a soft purple sky, with small trees, glowing orbs and a sound
-  toggle in the top right corner. The creator drew on childhood memories of
-  Animal Crossing and Poptropica.
+  There are six in total, each with its own residents who need a hand, and
+  helping them is how you earn the crystal shards back and restore the ancient
+  shrines. Kindness is what moves things forward here, which is a nice change
+  from fighting your way through.
+
+
+  Behind all that sits a bittersweet mystery about why the Guardian Star went
+  dark.
+
+
+  The islands are small isometric patches of tiles and trees floating under a
+  soft purple sky, and a Map button at the top helps you keep your bearings. The
+  start screen also offers an Explore mode next to the main adventure, and the
+  creator built the whole thing out of nostalgia for Animal Crossing and
+  Poptropica.
 play:
   url: https://ktaing.com/lantern-isle
   embeddable: true

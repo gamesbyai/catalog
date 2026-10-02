@@ -3,28 +3,35 @@ title: TECHNICAL DEBT
 tagline: Juggle groceries, debt, and clutter for a family chasing a vacation,
   then restart.
 description: >-
-  The aim is to collect 100,000 PALM Points before the family's debt catches up.
-  You play a parent laid off after an employer automated the job. Putting
-  household needs on credit earns points toward a vacation package, and hitting
-  the total shows who actually goes on the trip.
+  You're trying to reach 100,000 PALM Points, and once you do, you find out who
+  actually makes the trip to the beach and whether anyone comes back.
 
 
-  Each purchase is a choice between costly goods that show up reliably and cheap
-  ones that might be late or barely count as goods. Orders accumulate as boxes,
-  so you resell what you don't need on Baylist before storage runs out. Cash,
-  credit, storage, and your standing with Deborah and DJ all need watching.
+  You earn those points by charging what the household needs, groceries
+  included, while you keep your promises to Deborah and DJ. Your old employer
+  automated your job with work you helped train it to do, so the family leans on
+  credit.
 
 
-  Bankruptcy is built into the loop. You declare it, carry over permanent
-  lessons, and restart knowing more about how the system works. According to the
-  creator, the first bankruptcy is intended and shows how progression works.
+  Shopping is a choice between paying more for reliable goods and grabbing
+  discount ones that might arrive late, or might only technically be goods,
+  which is a grim joke about cheap delivery. Whatever you buy piles up at home.
+  So you sell the extras through Baylist before the boxes fill every room.
 
 
-  The screen imitates an old family computer with a CRT filter and 1-bit art,
-  with dark comedy throughout. Tabs cover MailBox, BUYMORE, Haulu, Baylist,
-  Vantage One, and Lessons. Red blinking badges flag unread mail and actions
-  waiting on you. A movable jukebox plays music, and the menu bar adjusts sound,
-  CRT strength, and reduced motion, and offers a full reset.
+  Cash, credit, storage, family relationships and a vacation obsession that gets
+  more persuasive all need balancing at once.
+
+
+  When the debt closes in, you declare bankruptcy, keep some permanent lessons,
+  and start over knowing the system better. The first bankruptcy is designed to
+  happen, because it reveals how progression works instead of punishing you.
+  That's a kind choice for a game about money trouble.
+
+
+  It's a dark comedy dressed as a cheerful old family computer, with tabs for
+  MailBox, BUYMORE, Haulu, Baylist, Vantage One and Lessons, and blinking red
+  badges when something needs you.
 play:
   url: https://oblongoolong.itch.io/technical-debt
   embeddable: false
@@ -67,7 +74,7 @@ media:
     - games/technical-debt/shot-2
 dates:
   added: 2026-09-30
-  updated: 2026-10-01
+  updated: 2026-10-02
 status: live
 provenance:
   foundVia: scout:aibgj-4

@@ -2,25 +2,39 @@ slug: save-the-laddoo
 title: Save The Laddoo
 tagline: Defend a single laddoo on the table from waves of ants at Nani's house.
 description: >-
-  You guard a single laddoo on a table in Nani's house during summer vacation
-  while ants head for it. The goal is to hold them off for 3 minutes. An intro
-  scene shows the laddoo on a metal plate with ants walking along the table
-  edge, and it has a Skip Intro button.
+  You're a kid at Nani's house with one laddoo on the table and a line of ants
+  heading straight for it. Your job is to hold them off for 3 minutes, using a
+  handful of household tricks instead of towers.
 
 
-  You have five ways to stop them. Protective Rekha lets you draw a line ants
-  cannot cross, blocking whole pathways, with 2 uses. Water drops a pool that
-  blocks and drowns nearby ants, also 2 uses. Sugar places a decoy to lure ants
-  away from the laddoo, recurring, with a maximum of 3 at a time.
+  Every trick does something different, so you'll want to mix them up.
 
 
-  Chappal smashes a whole cluster in one hit and is marked as spawning. Tap
-  squashes ants one by one, which is precise but slow.
+  You can draw a protective rekha, a line the ants won't cross, to shut off a
+  whole pathway, though you only get two of them. Sugar works as a decoy that
+  pulls ants away from the laddoo, and it keeps coming back, with up to three
+  out at a time. Water drops a pool that blocks and drowns the ants nearby, also
+  with two uses.
 
 
-  The creator built it from memories of 90s Indian summers: Nani's house, the
-  ceiling fan and load-shedding. The start card shows a photo of a child and a
-  handwritten note reading Save the Laddoo.
+  Then there's the chappal, which is the big hitter in this whole setup.
+
+
+  It smashes a whole cluster of ants in one hit, which is a very
+  Indian-household answer to a pest problem. The chappal shows up on its own as
+  you play, so you don't have to save it up. If you'd rather be precise, you can
+  tap ants one at a time, though that's the slow way.
+
+
+  The creator built it from memories of 90s summers at Nani's house, with the
+  ceiling fan and load-shedding, and from seeing ants crawl along a window sill
+  recently. They say it isn't really about the score. It's meant to take you
+  back to being a kid who felt looked after by a grandmother.
+
+
+  The art matches that, with a warm, storybook look: a metal plate, a wooden
+  table, a checkered cloth and a photo of a smiling child. A short intro shows
+  the ants creeping toward the laddoo, and you can skip it.
 play:
   url: https://savetheladdoo.vercel.app
   embeddable: true

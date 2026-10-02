@@ -2,28 +2,31 @@ slug: fly-to-mars
 title: Fly To Mars
 tagline: Pilot a rocket from Earth to Mars, dodging asteroids and sealing a hull breach.
 description: >-
-  You pilot the Ares-IX from Earth to Mars from a cockpit full of dials. The run
-  starts with a countdown and liftoff, then passes through max-Q, stage
-  separation and orbital insertion before the ship heads out into the asteroid
-  belt.
+  You're the pilot of the Ares-IX, flying from Earth to Mars with WASD or the
+  arrow keys while the mouse lets you look around the cockpit. It starts with
+  countdown and liftoff, then you climb through the clouds and break orbit.
 
 
-  In the belt you steer to dodge incoming rock. Shaving close to an asteroid
-  counts as a near-miss, and enough of them charge the warp drive. Once it is
-  charged you engage warp, though it can't be used during the final approach.
-  Partway past the halfway mark the hull springs a leak, and you have to seal it
-  while the rocks keep coming.
+  Out in the asteroid belt, you steer around incoming rocks. Skim one close and
+  it counts as a near-miss, and enough of those strung together charge your warp
+  drive. Shift fires it once it's ready.
 
 
-  The trip ends with atmospheric entry, a descent through dust, a flare and a
-  touchdown. The Moon appears at departure, and Phobos and Deimos show up on
-  arrival. Mission control voice comms call out events, and three soundtrack
-  tracks cycle during the flight.
+  Warp won't work on the final approach though, so don't hold it too long.
 
 
-  Four difficulty settings are offered. Zen has no asteroids and no fail state,
-  while Easy, Normal and Hard raise the amount of rock in the belt. The mouse
-  looks around the cockpit, and the game is meant for desktop with a keyboard.
+  Past the halfway mark the hull springs a leak, and you have to seal it while
+  the rocks keep coming. After that you ride out the heat of atmospheric entry,
+  drop through the dust, flare, and set the ship down.
+
+
+  The Moon shows up as you leave, and Phobos and Deimos as you arrive.
+
+
+  You pick a difficulty before launch: easy, normal or hard. Zen removes the
+  asteroids and any way to fail, so you just fly to Mars. Mission control talks
+  to you through voiced callouts, three original tracks cycle along the way, and
+  Max Zillion spent about 18 hours putting it together.
 play:
   url: https://maxzillion.itch.io/fly-to-mars
   embeddable: false
@@ -79,7 +82,7 @@ media:
     - games/fly-to-mars/shot-2
 dates:
   added: 2026-09-30
-  updated: 2026-10-01
+  updated: 2026-10-02
 status: live
 provenance:
   foundVia: scout:aibgj-3

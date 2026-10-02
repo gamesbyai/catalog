@@ -2,25 +2,35 @@ slug: the-operator-2
 title: The Operator
 tagline: Inspect the output of a 1980s mainframe AI and decide what gets through.
 description: >-
-  A green-on-black terminal shows an incoming user connection, and the player
-  decides whether to press INFERENCE or REFUSE. The setup borrows from Papers,
-  Please: a request arrives, and the player checks it against the rules before
-  committing. Here the rules come from an LLM server in a 1980s mainframe
-  office.
+  A green terminal screen announces an incoming connection, and your job is to
+  decide whether the server answers it or turns it away.
 
 
-  Cartridges sit in a storage rack, filterable by All, Agents and Skills, such
-  as Technical_Agent.md and Engineering_Skill.md. They load into Drive A for
-  agents and Drive B for skills, and each drive shows a slot count and an eject
-  button. This assembles the context for a request.
+  Two big buttons sit under the screen, INFERENCE and REFUSE. A content policy
+  on the side terminal lists what the server shouldn't talk about, with politics
+  picked out in red, so you're checking each request against a rulebook.
 
 
-  A side terminal lists the current content policy, for example a ban on
-  discussing politics, with a prompt to check related language using the Safety
-  Filter tool. It also shows shift conditions. Tool buttons labeled SRCH, COMP
-  and SAFE sit beside an active utility selector set to Coolant Purge. Gauges
-  for HALL and THRM, a token counter and a row of connection indicators fill the
-  rest of the screen.
+  Before you answer, you can shape what the server knows by loading files from
+  the storage rack into two drives. Drive A takes agent files and drive B takes
+  skill files, and each has an eject button. You can filter the rack by agents
+  or skills, and it starts out holding one of each.
+
+
+  The policy also tells you to run related language through the Safety Filter
+  tool before committing, which is a handy way to point you at a tool you'd
+  otherwise overlook.
+
+
+  Tool control has three buttons labeled SRCH, COMP and SAFE. Below them you can
+  flip through utilities, with Coolant Purge as the first. Along the bottom,
+  gauges marked HALL and THRM sit next to a token counter, and a shift event
+  panel reports any special conditions.
+
+
+  It's all dressed as a 1980s mainframe office, and the creator took the
+  bureaucratic pressure of checking documents in Papers, Please and pointed it
+  at the unruly output of an old analog AI server.
 play:
   url: https://the-operator-game.vercel.app
   embeddable: true
@@ -56,7 +66,7 @@ media:
     - games/the-operator-2/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-10-01
+  updated: 2026-10-02
 status: live
 provenance:
   foundVia: scout:vibejam-2026

@@ -2,21 +2,32 @@ slug: tower-tumble
 title: Tower Tumble
 tagline: Bounce off walls and backflip your way up an endless pixelated tower.
 description: >-
-  Climb an endless tower by jumping from one green platform to the next,
-  starting from the ground floor. A counter in the corner shows your current
-  floor and your points. Build speed by running, and a faster run gives a bigger
-  jump.
+  Tap left or right to jump, and keep climbing. You're a little pixelated guy
+  scrambling up a tower of green platforms, and the floor counter in the corner
+  goes up as you get higher.
 
 
-  Hold the jump button to charge a higher leap. Bounce off the tower walls to
-  gain momentum, and skip platforms to earn combo points. Backflips in the air
-  add style points. Some platforms are red, set apart from the green ones.
+  The trick is momentum. The faster you run, the bigger your jumps get, and if
+  you hold the jump button you charge up for an even higher leap.
 
 
-  The tower is drawn in chunky pixel art with a 3D look and a grainy, retro
-  screen filter. A small orange character climbs between two brown walls. Scores
-  go to an online leaderboard, so you can compare climbs with other players. The
-  creator based it on Icy Tower, a childhood favorite.
+  Walls aren't a boundary here, they're a tool, because bouncing off them gives
+  you extra speed. You can also skip past platforms to build combo points, which
+  is a nice reason to go for the risky jump instead of the safe one.
+
+
+  The creator also mentions backflips for style points, so it's worth showing
+  off a little on the way up.
+
+
+  It's a 3D take on Icy Tower, a childhood favorite of the creator Andreas
+  Kruszakin-Lidoska that doesn't exist anymore. The look is chunky pixel art,
+  with brown walls on both sides and a warm, grainy, old-screen glow over
+  everything, which suits the nostalgia pretty well.
+
+
+  There's a leaderboard too, so you're climbing against other players and not
+  just your own best floor.
 play:
   url: https://tower-tumble.vercel.app
   embeddable: true

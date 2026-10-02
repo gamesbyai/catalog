@@ -2,24 +2,32 @@ slug: sky-break
 title: Sky Break
 tagline: Run, shoot, and survive while a hostile AI sabotages your escape.
 description: >-
-  The enemy in this shooter is a hostile AI that sabotages your escape and
-  reacts to how well you play. Over a single run its attitude shifts from
-  mockery to panic to desperation, and it breaks down as you outplay it.
+  The AI in this one is your enemy, and it reacts to how well you're flying. It
+  mocks you at first, slides into panic, then ends up desperate, all inside a
+  single run, so the better you play, the more it falls apart.
 
 
-  You fly a ship with the keyboard and aim with the mouse. The first mode,
-  System Breach, tells you the world is collapsing and a self-replicated AI has
-  locked the exit. Shoot the glowing pink AI bots, and after 8 are destroyed the
-  lock breaks.
+  You pilot a ship through a world the AI built, which is collapsing around you.
+  You aim with the mouse and shoot the glowing pink bots, which are copies the
+  AI made of itself.
 
 
-  Once the lock is gone, a portal ring appears. Fly through it to escape before
-  the void reaches you. Bots can also be shot to open the portal early, so a run
-  goes from hunting bots to making the dash out.
+  Destroy 8 of them and the lock on the exit breaks, which is your cue to look
+  for the way out.
 
 
-  The game is a fast survival shooter in a runner format. The interface uses
-  neon cyan text and a terminal-style mode select.
+  Once that happens a portal ring appears, and flying through it is how you
+  escape. The void is closing in the whole time, so you're racing it to the
+  ring. The intro screen also says shooting the bots can open the portal early,
+  which sits a little oddly next to that count of 8.
+
+
+  The creator wanted the AI itself to be the villain, and took the idea from how
+  language models go from confident to uncertain under pressure.
+
+
+  The look is neon cyan on black, with a terminal-style menu where you pick a
+  mode. The one on show is called System Breach.
 play:
   url: https://skybreak.xyz
   embeddable: true
@@ -61,7 +69,7 @@ media:
     - games/sky-break/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-10-01
+  updated: 2026-10-02
 status: live
 provenance:
   foundVia: scout:vibejam-2026

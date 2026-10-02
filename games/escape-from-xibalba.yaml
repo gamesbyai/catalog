@@ -3,20 +3,30 @@ title: Escape From Xibalba
 tagline: Crawl through a procedural dark maze, light torches, steal relics and
   survive bosses.
 description: >-
-  You crawl through a procedurally generated dark maze in Xibalba, lighting
-  torches, taking relics and surviving boss fights. The game's blurb frames each
-  of these as one step toward a way out that may not exist.
+  You crawl through a dark, procedurally generated maze beneath Xibalba,
+  lighting torches, stealing relics and surviving bosses as you go. Every one of
+  those gets you a step closer to a way out, which may not exist at all. That's
+  a bleak promise to start with.
 
 
-  Move with the arrow keys. Z or X attacks, and holding the button down gives a
-  strong attack instead of a quick one. Press E to read a sign or open a chest,
-  and ESC to pause. R rotates the camera, and plus and minus zoom in and out.
+  You walk with the arrow keys and swing with Z or X. Hold the attack button
+  instead of tapping it and you get a strong attack.
 
 
-  The title screen lists these keys over dark brick walls and rows of carved
-  face glyphs, with the line "The lords of death are waiting." A click starts
-  the game. The creator says they had always wanted to make a game and treated
-  the jam as the excuse to finally do it. The source code is linked on GitHub.
+  Signs can be read with E, and that same key is what opens the chests you find.
+
+
+  The camera isn't fixed, so you can turn it with R and zoom in or out with plus
+  and minus, which makes sense in a maze where you'll want to see what's around
+  you. Escape pauses whenever you need a break.
+
+
+  The creator had always wanted to make a game and used the jam as the excuse to
+  finally do it.
+
+
+  The title screen sets the mood with brick walls, carved faces and a line
+  saying the Lords of Death are waiting.
 play:
   url: https://xibalba.monkeyscript.com
   embeddable: true
@@ -59,7 +69,7 @@ media:
     - games/escape-from-xibalba/shot-2
 dates:
   added: 2026-10-01
-  updated: 2026-10-01
+  updated: 2026-10-02
 status: live
 provenance:
   foundVia: scout:vibejam-2026

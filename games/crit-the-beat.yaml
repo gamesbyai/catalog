@@ -2,26 +2,38 @@ slug: crit-the-beat
 title: Crit The Beat
 tagline: Hit notes in time with the music while fighting with RPG-style combat.
 description: >-
-  Crit The Beat is a browser rhythm game with an RPG twist, in the Guitar Hero
-  mold. You follow the music and hit notes in time with it while the fight plays
-  out as RPG-style combat, and the title's play on critical hits points at that
-  side of it.
+  You strike monsters by pressing S, D, K and L in sync with the music. It's
+  Guitar Hero crossed with an RPG, which is the twist the creator was after
+  because they've always loved Guitar Hero. The four keys are shown right on the
+  title screen, so you know your inputs before you start.
 
 
-  The creator, mxvdl, says they always loved Guitar Hero and wanted to add an
-  RPG twist to it. It was made with Cursor for Vibe Jam 2026, which ranked it
-  284th of 945, with Three.js drawing the 3D scene.
+  Press any of the four letters there to rebind it, which is a considerate thing
+  to offer up front.
 
 
-  The premise pairs two genres that rarely share a screen: the timing test of a
-  rhythm track, and the sense of progression and combat from an RPG. It is
-  single-player, so it comes down to you, the song and the fight.
+  The menu has Arcade and Settings, and it sits over a moonlit graveyard full of
+  ghosts and a skeleton. A cat in a yellow jacket stands in the corner holding a
+  huge weapon. It keeps muttering sarcastic remarks about how every second you
+  spend on the menu is wasted, which is a funny touch.
+
+
+  You can sign in with Discord or Google so your progress is tracked and your
+  scores get submitted. If you'd rather skip that, you can play as a visitor,
+  and all the content is open to you either way.
+
+
+  It's an alpha build, so mxvdl warns that it can be buggy and that players can
+  cheat. Progress might get reset at some point.
 play:
   url: https://critthebeat.com
   embeddable: true
   platforms:
     - browser
     - mobile
+  controls:
+    - "S / D / K / L: strike monsters on the beat"
+    - "Letter on title screen: change key binding"
 creator:
   name: mxvdl
   handle: mxvdl
@@ -50,7 +62,7 @@ media:
     - games/crit-the-beat/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-09-29
+  updated: 2026-10-02
 status: live
 provenance:
   foundVia: scout:vibejam-2026

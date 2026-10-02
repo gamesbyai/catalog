@@ -2,21 +2,34 @@ slug: up-with-a-stranger
 title: UP! with a stranger
 tagline: Climb from a backyard to space as two blobs tied together by a string.
 description: >-
-  Two plasticine blobs, one string, and a stranger on the other end. UP! with a
-  stranger is a cooperative climbing game for two players: each of you controls
-  a blob, and together you work your way up from a backyard toward space and
-  beyond. The one rule is that the string must not break.
+  The first screen is a clay title with a purple U and a brown P, both with
+  googly eyes, and a lumpy purple blob underneath. Two buttons sit below it, one
+  for playing with a stranger and one for playing with a friend.
 
 
-  The creator comes from an art direction background and describes the mix as a
-  cross between Purple & Brown, It Takes Two, and Flappy Bird. The look draws on
-  childhood games, with a clay-like art style and small odd details. It is their
-  first shipped game, built with Claude Code and, they say, 99% vibe coded.
+  Pick the stranger button and it pairs you up, then a card names your partner,
+  something goofy like Cheeky Blob.
 
 
-  One goal was to see whether AI-built work could still feel handmade and full
-  of personality. The pairing is meant for strangers, so the climb leans on
-  quick, shared trouble and a height to beat.
+  Once you're matched, you're a plasticine blob tied to your partner by a
+  string, and you climb from a backyard up to space and beyond. The one rule is
+  that the string mustn't break, so running off alone isn't an option.
+
+
+  That's a funny rule to hand two people who've never met, because the whole
+  thing only works if they stay together. The aim is to see how high the pair of
+  you can get. A high scores button sits in the top corner if you want to
+  compare.
+
+
+  Even the clouds and the wooden signposts look sculpted from modeling clay.
+
+
+  The creator is an art director who wanted to find out whether AI-built work
+  could still feel charming and full of odd little details. The look nods to
+  their childhood games, and they pictured it as Flappy Bird crossed with It
+  Takes Two and Purple & Brown. It's their first shipped game, and they call it
+  99% vibe coded.
 play:
   url: https://upwithastranger.com
   embeddable: true
@@ -53,7 +66,7 @@ media:
     - games/up-with-a-stranger/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-09-29
+  updated: 2026-10-02
 status: live
 provenance:
   foundVia: scout:vibejam-2026

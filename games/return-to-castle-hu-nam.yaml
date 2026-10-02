@@ -3,34 +3,51 @@ title: Return To Castle Hu-Nam
 tagline: Beam office workers off Earth while shooting bureaucrats in a
   first-person retro shooter.
 description: >-
-  You play the alien invader, and the goal is to rescue office workers by
-  walking close to them. Get within range and a worker is beamed up to your
-  cruiser, with a short "Thank you!" sound. The view and movement follow the
-  earliest Wolfenstein-style first-person shooters.
+  Walk through office floors in a first-person view and shoot the bureaucrats in
+  your way, then get close to the office workers so they beam up to your
+  cruiser. It's modeled on the very first Wolfenstein, and you're the aliens,
+  sent to free humans from Red Tape.
 
 
-  A worker cannot beam out while their office manager stands too near, and the
-  manager shouts "Not so fast!" until all managers are out of range. Rescuing a
-  worker while managers wait just outside that range earns a danger bonus, and
-  several managers just beyond it stack the bonus higher.
+  Rescuing has a catch. If a worker's manager is standing too close, the beam
+  won't work and the manager keeps shouting "Not so fast!" until everyone has
+  moved away. But you earn a danger bonus when managers are just outside that
+  range as the worker beams out, and it stacks with more of them.
 
 
-  Each office building runs through multiple floors filled with corporate and
-  government bureaucrat enemies, with mid-bosses and bosses along the way.
-  Between buildings is an outdoor military battle. There you reach the far end,
-  and the door opens once every enemy soldier on the map is defeated. Larger
-  fighters clash in the background and can be ignored.
+  Each rescued worker thanks you in a primitive little voice, which is a funny
+  nod to old Choplifter.
 
 
-  The stated end goal is to liberate all of Earth, though that ending is less
-  developed than the rest. The creator made it with Claude after starting in a
-  game-focused AI tool, and describes it as the project that got the most
-  effort.
+  Buildings are split into floors, with corporate and government bureaucrats,
+  mid-bosses and bosses inside. Between buildings you cross an outdoor
+  battlefield, where the exit door opens once every enemy soldier on the map is
+  down. Bigger things fight in the background, but you only need to reach that
+  door.
+
+
+  The screen keeps a lot in view: a minimap, a counter of civilians liberated
+  out of the level's total, vitality, plasma ammo, score and floor number. A
+  synergy meter sits in the middle, and you can call an ally. Wall notes poke
+  fun at office life, like a boiler room where they send people who ask
+  questions.
+
+
+  The creator says the goal is to liberate all of Earth, though that ending is
+  less developed than the rest. The game was built through many rounds with
+  Claude, after starting in a game-focused AI tool.
 play:
   url: https://exedexes1.itch.io/return-to-castle-hu-nam
   embeddable: false
   platforms:
     - browser
+  controls:
+    - "WASD / arrows: move"
+    - "Mouse: aim"
+    - "Space: fire"
+    - "R: call ally"
+    - "Tab: map"
+    - "Esc: pause"
 creator:
   name: exedexes1
   handle: exedexes1
@@ -59,7 +76,7 @@ media:
     - games/return-to-castle-hu-nam/shot-2
 dates:
   added: 2026-10-01
-  updated: 2026-10-01
+  updated: 2026-10-02
 status: live
 provenance:
   foundVia: scout:aibgj-2

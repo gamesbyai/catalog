@@ -2,21 +2,32 @@ slug: star-crusade
 title: Star Crusade
 tagline: Shoot waves of alien ships in a retro space arcade battle.
 description: >-
-  A small white ship sits at the bottom of a black starfield, with pixel-art
-  aliens in pink, green, purple, magenta and tan spread across the screen above
-  it. The top-left corner shows a Score, a Record and a heart counter that reads
-  2 at the start.
+  When it loads, you're a tiny white ship at the bottom of a starfield, and
+  pixel-art aliens in pink, green, purple, magenta and tan are already drifting
+  around the screen. Your score and a record sit in the top corner. Right under
+  them is a heart counter that starts at 2.
 
 
-  You slide the ship along the bottom with the arrow keys, fire with Space and
-  set off a bomb with B. It is a retro arcade shooter in the Galaga mold, played
-  on a single canvas, with the Score and Record readouts shown above the action.
+  The aliens all look different from each other, which is a nice touch for
+  something this small.
 
 
-  Three buttons under the canvas toggle sound, restart the run and pause it,
-  each tied to its own key. The README frames you as a starship captain
-  defending the galaxy against an ancient threat. The creator wrote it in plain
-  JavaScript, pair-programming with ChatGPT and Copilot.
+  Arrows slide your ship left and right, and Space fires your gun. There's also
+  a bomb on B, so you've got something extra besides the regular shots.
+
+
+  The story has you as a starship captain leading a crew against an ancient evil
+  that threatens the galaxy. That's a big setup for a single-screen arcade
+  shooter, and the repo tags it as a nod to Galaga.
+
+
+  The housekeeping lives on the keyboard too, which is considerate for a game
+  this small.
+
+
+  S toggles the sound, R restarts, and P pauses, so you can step away or start
+  over without touching the page. The creator built it in plain JavaScript and
+  pair-programmed it with ChatGPT and Copilot.
 play:
   url: https://star-crusade.netlify.app
   embeddable: true
@@ -57,7 +68,7 @@ media:
     - games/star-crusade/shot-2
 dates:
   added: 2026-09-30
-  updated: 2026-10-01
+  updated: 2026-10-02
 status: live
 provenance:
   foundVia: scout:github

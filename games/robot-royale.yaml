@@ -2,25 +2,34 @@ slug: robot-royale
 title: Robot Royale
 tagline: Fight through a ruined cyber-city arena, upgrading from bare fists to RPGs.
 description: >-
-  You start with bare fists in a decaying cyber-city arena and fight toward
-  heavier weapons, with explosive RPGs at the top of the progression. Move with
-  WASD and attack with the mouse. The camera looks down at an angle on a small
-  blocky robot with a cyan eye.
+  You begin with nothing but basic punches and fight your way up to explosive
+  RPGs, crossing a dying cyber-city as a small black robot.
 
 
-  A panel in the corner tracks the current phase, elapsed time, scrap collected,
-  your level, and the level at which the next boss appears, which reads Nv.5 at
-  the start. It also names your equipped weapon. A red bar runs along the bottom
-  of the screen.
+  A panel in the top corner tracks your phase, a running timer, your scrap and
+  your level. It also names the weapon you're holding and says a boss is coming
+  at level 5, so you know what you're building toward.
 
 
-  Shift dashes, and the panel shows when the dash is ready again. Red medical
-  pickups lie scattered across the floor between tall, angular towers, and a
-  green ring labeled as a portal sits near the arena edge. Esc pauses the game.
+  Dash gets its own line there, which tells you when it's ready again. There's
+  also a button to switch the audio on or off, and another to pause.
 
 
-  The creator built it around the idea of robots growing more powerful once
-  combined with AI. The whole game is a single Three.js file.
+  Red pickups with a white cross are lying around on the ground.
+
+
+  Tall blocky buildings wall in the arena, and red lines mark the edges of the
+  map. Light cuts across the floor in long, hard shadows, so the whole place
+  looks dark and ruined.
+
+
+  Small dark robots are scattered over the ground, and a green portal labeled as
+  a jam portal glows near the far side of the map.
+
+
+  The creator was thinking about how powerful robots might get once they're
+  combined with AI, which suits a game where you're a robot in a city full of
+  them.
 play:
   url: https://robot-royale.pages.dev
   embeddable: true
@@ -61,7 +70,7 @@ media:
     - games/robot-royale/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-10-01
+  updated: 2026-10-02
 status: live
 provenance:
   foundVia: scout:vibejam-2026
