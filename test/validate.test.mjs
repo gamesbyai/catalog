@@ -70,10 +70,13 @@ test('a jam rank above the number of entries is rejected', () => {
   assert.ok(validate(repo({ 'sky-hop.yaml': bad })).problems.some((p) => p.includes('jam.rank')));
 });
 
-test('one creator gets one page: the same name under two handles is rejected, placeholder names are not', () => {
-  const second = (name, handle) => draft.replaceAll('sky-hop', 'sea-hop').replace('creator: { name: Ada, handle: ada }', `creator: { name: ${name}, handle: ${handle} }`);
-  const split = validate(repo({ 'sky-hop.yaml': draft, 'sea-hop.yaml': second('ada', 'ada-dev') })).problems;
+test('one creator gets one page: a two-word name under two handles is rejected unless their accounts tell two people apart', () => {
+  const game = (slug, creator) => draft.replaceAll('sky-hop', slug).replace('creator: { name: Ada, handle: ada }', `creator: ${creator}`);
+  const two = (a, b) => validate(repo({ 'sky-hop.yaml': game('sky-hop', a), 'sea-hop.yaml': game('sea-hop', b) })).problems;
+  const split = two('{ name: Ada Lovelace, handle: ada }', '{ name: ada  lovelace, handle: ada-dev }');
   assert.ok(split.some((p) => /has two pages, .*\/creators\/ada\//.test(p) && p.includes('/creators/ada-dev/')), split.join('\n'));
-  const nameless = (h) => draft.replaceAll('sky-hop', h).replace('creator: { name: Ada, handle: ada }', `creator: { name: Unknown creator, handle: ${h} }`);
-  assert.deepEqual(validate(repo({ 'sky-hop.yaml': nameless('sky-hop'), 'sea-hop.yaml': nameless('sea-hop') })).problems, []);
+  assert.ok(two('{ name: Ada Lovelace, handle: ada, x: adal }', '{ name: Ada Lovelace, handle: ada-dev }').some((p) => p.includes('has two pages')), 'one side naming an account is no proof of two people');
+  assert.deepEqual(two('{ name: Ada Lovelace, handle: ada, x: adal }', '{ name: Ada Lovelace, handle: ada-dev, x: otherada }'), [], 'different X accounts: two people');
+  assert.deepEqual(two('{ name: Ada, handle: ada }', '{ name: Ada, handle: ada-dev }'), [], 'a one-word name is too common to judge');
+  assert.deepEqual(two('{ name: Unknown creator, handle: sky-hop }', '{ name: Unknown creator, handle: sea-hop }'), []);
 });

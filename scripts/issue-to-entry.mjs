@@ -81,7 +81,28 @@ export function loadContext(dir = '.') {
     slugs: new Set(games.map((g) => g.slug)),
     // Each creator page's handle and the name its games spell (the validator requires one spelling per handle).
     creators: new Map(games.filter((g) => g.creator?.handle).map((g) => [g.creator.handle, g.creator.name])),
+    // The X and YouTube accounts each creator page's games name, to tell two people with one name apart.
+    accounts: accountsOf(games),
   };
+}
+
+/** handle → { x: Set, youtube: Set } of the accounts its entries name (lowercase). Shared with scripts/validate.mjs. */
+export function accountsOf(games) {
+  const accounts = new Map();
+  for (const g of games) {
+    const c = g.creator;
+    if (!c?.handle) continue;
+    const a = accounts.get(c.handle) ?? { x: new Set(), youtube: new Set() };
+    if (typeof c.x === 'string') a.x.add(c.x.toLowerCase());
+    if (typeof c.youtube === 'string') a.youtube.add(c.youtube.toLowerCase());
+    accounts.set(c.handle, a);
+  }
+  return accounts;
+}
+
+/** Two sets of accounts belong to different people when they name different accounts of the same kind. */
+export function differentAccounts(a, b) {
+  return ['x', 'youtube'].some((k) => a?.[k]?.size && b?.[k]?.size && ![...a[k]].some((v) => b[k].has(v)));
 }
 
 /** The creator page slug from a profile's username. A YouTube channel ID or a Bluesky DID names no one: no slug. */
@@ -102,19 +123,26 @@ function creatorOf(f, creatorName, issue, notes) {
 }
 
 // Placeholder names that identify no one: never a reason to share a page (scripts/validate.mjs has the same list).
-const NAMELESS = new Set(['unknown creator', 'unknown', 'anonymous']);
-const nameKey = (name) => name.trim().replace(/\s+/g, ' ').toLowerCase();
+export const NAMELESS = new Set(['unknown creator', 'unknown', 'anonymous']);
+export const nameKey = (name) => name.trim().replace(/\s+/g, ' ').toLowerCase();
+/** A name that is likely one person: at least two words ("Kevin MacLeod", not "Alvin") and not a placeholder. */
+export const tellingName = (key) => !NAMELESS.has(key) && key.split(' ').length >= 2;
 
 /** A handle already in the catalog: the same name in other letter case is the same creator (keep their spelling); a
- * different name gets its own page, and the reviewer merges them by hand if it's the same person. A name that already
- * has exactly one page joins it, whatever handle the profile link or the name would give: one person submitting with
- * and without a profile link got two pages (kevin-macleod and kmacleod, 2026-10-03). */
-function sameCreator(creator, creators, issue, notes) {
+ * different name gets its own page, and the reviewer merges them by hand if it's the same person. A name of two or
+ * more words that already has exactly one page joins it, unless the submission names an X or YouTube account that
+ * page doesn't: one person submitting with and without a profile link got two pages (kevin-macleod and kmacleod,
+ * 2026-10-03). A shorter name, or conflicting accounts, only gets a note: a name alone doesn't prove one person. */
+function sameCreator(creator, creators, issue, notes, accounts = new Map()) {
   const key = nameKey(creator.name);
   const named = NAMELESS.has(key) ? [] : [...creators].filter(([, name]) => nameKey(name) === key).map(([handle]) => handle);
   if (named.length === 1 && named[0] !== creator.handle) {
-    notes.push(`"${creators.get(named[0])}" already has the page /creators/${named[0]}/, so this entry joins it. Change the handle if they are different people.`);
-    return { ...creator, name: creators.get(named[0]), handle: named[0] };
+    const own = { x: new Set(creator.x ? [creator.x.toLowerCase()] : []), youtube: new Set(creator.youtube ? [creator.youtube.toLowerCase()] : []) };
+    if (tellingName(key) && !differentAccounts(own, accounts.get(named[0]))) {
+      notes.push(`"${creators.get(named[0])}" already has the page /creators/${named[0]}/, so this entry joins it. Change the handle if they are different people.`);
+      return { ...creator, name: creators.get(named[0]), handle: named[0] };
+    }
+    notes.push(`"${creators.get(named[0])}" also has the page /creators/${named[0]}/. If this is the same person, change the handle to ${named[0]}.`);
   }
   const known = creators.get(creator.handle);
   if (known === undefined || known === creator.name) return creator;
@@ -133,7 +161,7 @@ const PLAYERS = { 'single player': 'single', 'local multiplayer': 'local', 'onli
 const SHARE = { 'all of it': 'all', 'most of it': 'most', 'some of it': 'some' };
 const EMBED_CONSENT = /^- \[[xX]\] I made this game or have the creator's permission\. GamesByAI may show it in its player, and I agree to the editorial policy\.[ \t]*$/m;
 
-export function toEntry(f, { names, playUrls, slugs, creators = new Map(), today, issue, fromSite = false }) {
+export function toEntry(f, { names, playUrls, slugs, creators = new Map(), accounts = new Map(), today, issue, fromSite = false }) {
   const notes = [];
   const playUrl = safePlayUrl(f['Play URL']);
   if (!playUrl) return { error: 'The Play URL must be a public https link to where the game runs (not gamesbyai.win).' };
@@ -174,7 +202,7 @@ export function toEntry(f, { names, playUrls, slugs, creators = new Map(), today
     // The consent box (since 2026-09-30) also allows our player; older issues give no such permission.
     play: { url: playUrl, platforms: ['browser'], ...(EMBED_CONSENT.test(f.Permission ?? '') ? { embedPermission: { by: 'submission', date: today } } : {}) },
     ...(repo ? { repo } : {}),
-    creator: sameCreator(creatorOf(f, creatorName, issue, notes), creators, issue, notes),
+    creator: sameCreator(creatorOf(f, creatorName, issue, notes), creators, issue, notes, accounts),
     made: {
       models: pick('models', f['AI models used']),
       tools: pick('tools', f['AI tools used']),
