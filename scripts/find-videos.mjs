@@ -655,4 +655,6 @@ export async function main({ argv = process.argv, env = process.env, log = conso
     output(count); return 0;
   } catch (err) { log(`videos: run failed (${errorCode(err)})`); return 1; }
 }
-if (process.argv[1] === fileURLToPath(import.meta.url)) process.exitCode = await main();
+// No top-level await: run() imports videos-post.mjs, which imports this module, and a module still awaiting at the top
+// level can't be imported, so the run would stop with an unsettled await (exit code 13).
+if (process.argv[1] === fileURLToPath(import.meta.url)) main().then((code) => { process.exitCode = code; });
