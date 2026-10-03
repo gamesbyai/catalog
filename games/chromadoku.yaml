@@ -1,0 +1,66 @@
+slug: chromadoku
+title: Chromadoku
+tagline: Fill a 9x9 Sudoku grid with colors instead of numbers.
+description: "A puzzle's done when the 9×9 grid is full and no row, column or 3×3 box holds the same color twice. It's straight Sudoku, just with hues standing in for the digits. You pick a color from the strip under the board, then tap the square where it belongs.
+
+
+  There are Easy, Medium and Hard puzzles, along with undo, redo, a clear button and a hint when you're stuck. Finishing one throws a bit of a party, with a shower of confetti and a congratulations card showing your time.
+
+
+  There's a lot more in settings than you'd expect from one small puzzle. Number badges put a 1 to 9 on every color, meant for when two shades blur together or for color-blind players. You can also switch between Default, Neon and Candy palettes and choose a light, dark or system theme.
+
+
+  A mistake warning can flash any square the solution disagrees with, though your move stays put.
+
+
+  Statistics count your solves on each difficulty. Best times only include puzzles finished without a hint, which keeps those records honest. Everything you've done and every setting you've picked stays in your own browser.
+
+
+  According to the creator, the first version was written with GPT-3 and then revised with Claude Sonnet 5 for the interface. It all lives in a single HTML file, released into the public domain under CC0."
+play:
+  url: https://danger.academy/chromadoku/
+  platforms:
+    - browser
+  embedPermission:
+    by: submission
+    date: 2026-10-03
+  embeddable: true
+  controls:
+    - "Tap a color: select it"
+    - "Tap a square: place the selected color"
+repo: https://github.com/dangeracademy/chromadoku
+creator:
+  name: Kevin MacLeod
+  handle: kmacleod
+  links:
+    - https://kmacleod.itch.io
+made:
+  models:
+    - claude-sonnet-5
+  tools:
+    - claude-code
+    - chatgpt
+  aiShare: all
+  source: "Creator's submission (issue #88)"
+  evidence: creator
+  notes: The first version was written with GPT-3, then revised with Claude Sonnet 5 for UI.  It's one self-contained HTML file. CC0.
+tech:
+  multiplayer: single
+genres:
+  - casual
+  - puzzle
+media:
+  cover: games/chromadoku/cover
+  screenshots:
+    - games/chromadoku/shot-1
+    - games/chromadoku/shot-2
+dates:
+  added: 2026-10-03
+  updated: 2026-10-03
+status: live
+provenance:
+  foundVia: form
+  submittedBy: "#88"
+  uploads:
+    ref: 518c9dcd61b25801
+    count: 3
