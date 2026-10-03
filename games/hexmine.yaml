@@ -4,16 +4,13 @@ tagline: Minesweeper on a hex grid, with a safe first click and three board size
 description: "Every tile in this Minesweeper variant is a hexagon, so each number tells you how many mines sit among the six tiles touching it.
 
 
-  You switch between a pick tool and a flag tool at the bottom left, one for opening tiles and the other for marking mines. A label down the left side says to hold to flag, and the mine counter sits in the top right corner. Settings cover sound, animations, the timer and the language.
+  You switch between a pick tool and a flag tool at the bottom left, one for opening tiles and the other for marking mines. A label down the left side says to hold to flag, and the mine counter sits in the top right corner. You can pick a small, medium or large board, and settings cover sound, animations, the timer and the language.
 
 
-  Your first click is always safe. Small, medium and large boards are on offer.
+  Your first click is always safe. Blank areas open up in rolling waves, which lets older machines keep up.
 
 
-  Blank areas open up in rolling waves, which lets older machines keep up.
-
-
-  Win a board and fireworks burst over it, a surprisingly festive payoff for a game drawn in dark, glowing reds. Lose, and the mines show up as bomb icons on red tiles. The game also tallies your games played and personal bests, and it has 20 achievements to earn.
+  Win a board and fireworks burst over it, a pretty festive payoff for a game drawn in dark, glowing reds. Lose, and the mines show up as bomb icons on red tiles. The game also tallies your games played and personal bests, and it has 20 achievements to earn.
 
 
   According to the creator, GPT-3 wrote the first version and Claude Opus 5 then did a technical revision that added the board solver and auto-sweep. It's released as CC0."
