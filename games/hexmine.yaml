@@ -1,7 +1,22 @@
 slug: hexmine
 title: HexMine
-tagline: Submitted by its creator; the description is added during review.
-description: ""
+tagline: Minesweeper on a hex grid, with a safe first click and three board sizes.
+description: "Every tile in this Minesweeper variant is a hexagon, so each number tells you how many mines sit among the six tiles touching it.
+
+
+  You switch between a pick tool and a flag tool at the bottom left, one for opening tiles and the other for marking mines. A label down the left side says to hold to flag, and the mine counter sits in the top right corner. Settings cover sound, animations, the timer and the language.
+
+
+  Your first click is always safe. Small, medium and large boards are on offer.
+
+
+  Blank areas open up in rolling waves, which lets older machines keep up.
+
+
+  Win a board and fireworks burst over it, a surprisingly festive payoff for a game drawn in dark, glowing reds. Lose, and the mines show up as bomb icons on red tiles. The game also tallies your games played and personal bests, and it has 20 achievements to earn.
+
+
+  According to the creator, GPT-3 wrote the first version and Claude Opus 5 then did a technical revision that added the board solver and auto-sweep. It's released as CC0."
 play:
   url: https://danger.academy/HexMine/
   platforms:
@@ -9,6 +24,11 @@ play:
   embedPermission:
     by: submission
     date: 2026-10-03
+  embeddable: true
+  controls:
+    - "Pick tool: reveal a tile"
+    - "Flag tool: mark a mine"
+    - "Hold a tile: flag it"
 creator:
   name: Kevin MacLeod
   handle: kmacleod
@@ -23,11 +43,7 @@ made:
   aiShare: all
   source: "Creator's submission (issue #90)"
   evidence: creator
-  notes: "HexMine is Minesweeper on a hex grid. The first version was written with
-    GPT-3, then Claude Opus 5 did a technical revision: cascades that reveal in
-    waves so old hardware keeps up, a board solver, auto-sweep. Three board
-    sizes, a safe first click, and a firework win. It runs from one HTML file
-    plus a small solver script. CC0."
+  notes: "HexMine is Minesweeper on a hex grid. The first version was written with GPT-3, then Claude Opus 5 did a technical revision: cascades that reveal in waves so old hardware keeps up, a board solver, auto-sweep. Three board sizes, a safe first click, and a firework win. It runs from one HTML file plus a small solver script. CC0."
 tech:
   multiplayer: single
 genres:
