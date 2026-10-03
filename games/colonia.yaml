@@ -1,0 +1,49 @@
+slug: colonia
+title: Colonia
+tagline: Submitted by its creator; the description is added during review.
+description: ""
+play:
+  url: https://er2oneousbit.github.io/Colonia/
+  platforms:
+    - browser
+  embedPermission:
+    by: submission
+    date: 2026-10-03
+repo: https://github.com/Er2oneousbit/Colonia/
+creator:
+  name: Er2oneousbit
+  handle: er2oneousbit
+  links:
+    - https://github.com/Er2oneousbit
+made:
+  models:
+    - claude-opus-5-5
+  tools:
+    - claude-code
+  aiShare: all
+  source: "Creator's submission (issue #104)"
+  evidence: creator
+  notes: I asked claude to make a Caeser 3 clone, based on the original but do not
+    use any of its code or art.
+tech:
+  engine: canvas
+  multiplayer: single
+genres:
+  - sandbox
+  - strategy
+  - management
+media:
+  cover: games/colonia/cover
+  screenshots:
+    - games/colonia/shot-1
+    - games/colonia/shot-2
+dates:
+  added: 2026-10-03
+  updated: 2026-10-03
+status: live
+provenance:
+  foundVia: form
+  submittedBy: "#104"
+  uploads:
+    ref: 701eda8d73b59fa7
+    count: 1
