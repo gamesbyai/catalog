@@ -1,0 +1,68 @@
+slug: talos-a-modern-ancient-game
+title: "Talos: A Modern Ancient Game"
+tagline: Wall in the white stone on a hex board before it slides off the edge.
+description: "The goal is to wall in a white stone before it slides off the edge of a hex board. Each turn you drop a dark stone onto any open hex, and then the white stone slides one space. It's a trap-the-cat style puzzle where a pale stone plays a pretty dignified cat.
+
+
+  Scoring counts the empty hexes you leave once the white stone is boxed in, so spending fewer stones scores higher.
+
+
+  There are six boards in a run, and they're generated fresh rather than drawn by hand. Three escapes and the game's over.
+
+
+  You pick Easy, Medium or Hard, and the harder settings multiply your score by two or three. You can also turn on suggestions, which make every equally strong placement glow on the board. The settings menu warns you, a bit ominously, with a \"Beware\" that those hints aren't always reliable.
+
+
+  For some reason the menu also offers a mock ancient proverb about doorways being more tempting than open space, signed \"Ancient Proverb... probably.\"
+
+
+  You can play on a light or dark board, or let it follow your system, and switch the music and stone sounds on or off. Leaving for the title screen keeps your session saved, so you can pick it back up later.
+
+
+  Kevin MacLeod worked out the design by talking it through with Claude, and Claude Code wrote it as one HTML file, including the board generator and the solver. They played each version and described what felt off so Claude could revise it, and Claude even wrote a script that made the store art with the game's own renderer.
+
+
+  They recorded the sound effects, hand-tuned the colors and released it as CC0."
+play:
+  url: https://danger.academy/Talos/
+  platforms:
+    - browser
+  embedPermission:
+    by: submission
+    date: 2026-10-03
+  embeddable: true
+creator:
+  name: Kevin MacLeod
+  handle: kevin-macleod
+  links:
+    - https://www.youtube.com/channel/UCSZXFhRIx6b0dFX3xS8L1yQ
+made:
+  models:
+    - claude-opus-5
+  tools: []
+  aiShare: most
+  source: "Creator's submission (issue #82)"
+  evidence: creator
+  notes: "I designed it in conversation with Claude: a trap-the-cat style hex puzzle with procedural boards, scoring by empty hexes left, and a hint that shows every optimal move. Claude Code built it as a single HTML file (generator, solver, rendering, settings). I'd play, describe what felt off, and Claude would revise - stone look, night theme, UI. Claude also scripted the store art from the game's own renderer. I recorded audio effects, hand-tuned the colours, and playtested. CC0."
+tech:
+  engine: webgl
+  multiplayer: single
+genres:
+  - casual
+  - puzzle
+  - board
+media:
+  cover: games/talos-a-modern-ancient-game/cover
+  screenshots:
+    - games/talos-a-modern-ancient-game/shot-1
+    - games/talos-a-modern-ancient-game/shot-2
+dates:
+  added: 2026-10-03
+  updated: 2026-10-03
+status: live
+provenance:
+  foundVia: form
+  submittedBy: "#82"
+  uploads:
+    ref: 18e2bc538d09718b
+    count: 3
