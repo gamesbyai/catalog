@@ -1,0 +1,55 @@
+slug: star-hop-endless-galaxy
+title: "Star Hop: Endless Galaxy"
+tagline: Submitted by its creator; the description is added during review.
+description: ""
+play:
+  url: https://star-hop.app/
+  platforms:
+    - browser
+  embedPermission:
+    by: submission
+    date: 2026-10-03
+creator:
+  name: Dušan Schnelly
+  handle: star-hop-endless-galaxy
+  links:
+    - https://instagram.com/star_hop_endless_galaxy
+made:
+  models:
+    - claude-opus-5-5
+    - gemini-3-8-flash
+  tools:
+    - claude-code
+  aiShare: all
+  source: "Creator's submission (issue #86)"
+  evidence: creator
+  notes: "I wrote the design brief and an AI agent built the first playable
+    prototype overnight. Since then I've worked with Claude Code: several
+    sessions in parallel, each on its own branch, writing the TypeScript,
+    three.js rendering and Supabase backend. There are no image or sound files:
+    planets, ships, cards and the logo are drawn in code, sounds are
+    synthesized. By hand I playtest on my phone, decide what goes in and tune
+    the feel. Telemetry and Reddit feedback show where players struggle, and
+    Claude turns that into fixes."
+tech:
+  engine: threejs
+  multiplayer: single
+genres:
+  - action
+  - arcade
+  - simulation
+media:
+  cover: games/star-hop-endless-galaxy/cover
+  screenshots:
+    - games/star-hop-endless-galaxy/shot-1
+    - games/star-hop-endless-galaxy/shot-2
+dates:
+  added: 2026-10-03
+  updated: 2026-10-03
+status: live
+provenance:
+  foundVia: form
+  submittedBy: "#86"
+  uploads:
+    ref: 7b8faa40db00e5c9
+    count: 3
