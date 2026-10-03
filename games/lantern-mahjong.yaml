@@ -1,0 +1,48 @@
+slug: lantern-mahjong
+title: Lantern Mahjong
+tagline: Submitted by its creator; the description is added during review.
+description: ""
+play:
+  url: https://danger.academy/Mahjong/
+  platforms:
+    - browser
+  embedPermission:
+    by: submission
+    date: 2026-10-03
+creator:
+  name: Kevin MacLeod
+  handle: kevin-macleod
+made:
+  models:
+    - claude-opus-5
+  tools: []
+  aiShare: most
+  source: "Creator's submission (issue #84)"
+  evidence: creator
+  notes: I started from an open-source Angular mahjong app and asked Claude to
+    audit every asset's license. Too many were GPL or share-alike, so we rewrote
+    it from scratch as one offline HTML file, all CC0. Claude found public
+    domain tile art, drew the nine missing flower, season and dragon faces, and
+    wrote a deal algorithm that guarantees every board is solvable. I chose the
+    12 layouts and recorded the tile clacks and win harp.
+tech:
+  multiplayer: single
+genres:
+  - casual
+  - puzzle
+  - board
+media:
+  cover: games/lantern-mahjong/cover
+  screenshots:
+    - games/lantern-mahjong/shot-1
+    - games/lantern-mahjong/shot-2
+dates:
+  added: 2026-10-03
+  updated: 2026-10-03
+status: live
+provenance:
+  foundVia: form
+  submittedBy: "#84"
+  uploads:
+    ref: 8f818debb037196a
+    count: 3
