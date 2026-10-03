@@ -7,7 +7,7 @@ description: "A puzzle's done when the 9×9 grid is full and no row, column or 3
   There are Easy, Medium and Hard puzzles, along with undo, redo, a clear button and a hint when you're stuck. Finishing one throws a bit of a party, with a shower of confetti and a congratulations card showing your time.
 
 
-  The settings are surprisingly thoughtful for one small puzzle. Number badges put a 1 to 9 on every color, meant for when two shades blur together or for color-blind players. You can also switch between Default, Neon and Candy palettes and choose a light, dark or system theme.
+  There's a lot more in settings than you'd expect from one small puzzle. Number badges put a 1 to 9 on every color, meant for when two shades blur together or for color-blind players. You can also switch between Default, Neon and Candy palettes and choose a light, dark or system theme.
 
 
   A mistake warning can flash any square the solution disagrees with, though your move stays put.
