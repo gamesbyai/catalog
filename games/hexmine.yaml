@@ -29,10 +29,12 @@ play:
 creator:
   name: Kevin MacLeod
   handle: kmacleod
+  youtube: "@incompetech_kmac"
   links:
     - https://kmacleod.itch.io
 made:
   models:
+    - gpt-3
     - claude-opus-5
   tools:
     - claude-code
