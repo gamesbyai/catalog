@@ -1,0 +1,75 @@
+slug: nudots
+title: NuDots
+tagline: Link same-color dots into chains, and close a loop to clear a color from the board.
+description: "You drag across neighboring dots of the same color, side to side or up and down but never diagonally, and when you let go the whole chain clears.
+
+
+  The real payoff comes from closing a loop, which means ending your chain on a dot that's already in it to make a ring of four or more. Doing that wipes every dot of that color off the board. Anything trapped inside the ring goes too, along with every dot elsewhere that shares its color, so one tidy square can set off a lot more than it looks like.
+
+
+  Scoring leans hard toward long chains. Each dot pays 10 more than the one before it, and closing a loop doubles the whole chain. On top of that, every dot circled inside the ring is worth a hefty 500 points, while the other dots a loop clears add 10 each.
+
+
+  There are four ways to play, and Timed gives you 60 seconds on a clock that waits for your first touch before it starts ticking. Moves hands you 30 connections instead, while Zen drops the clock and the limit entirely and lets you end the game whenever you've had enough.
+
+
+  Endless is the odd one out, since a rock lands every 10 connections and you break one by circling it for 1,000 points.
+
+
+  When the board locks up, two power-ups can help. Shrink removes a single dot you tap, while Sweep clears a whole color at once. In Moves they cost one or two moves, in Timed they cost one or three seconds, and in Zen they're free, while Endless has none.
+
+
+  You can pick from five board shapes, including an oddly long, skinny 4 by 16, and best scores are kept separately for every mode and board along with achievements and lifetime stats. There's also a light or dark theme and a choice between neon and earthy colors.
+
+
+  NuDots is a remake of Dots, the classic iPhone game. According to Kevin MacLeod, it was made with Claude, which already knew how Dots worked, so most of the effort went into making it entertaining without the money and ad mechanics. It's dedicated to the public domain under CC0."
+play:
+  url: https://danger.academy/NuDots/
+  platforms:
+    - browser
+  embedPermission:
+    by: submission
+    date: 2026-10-03
+  embeddable: true
+  controls:
+    - "Drag: connect same-color dots"
+    - "Arrow keys: move between dots"
+    - "Space / Enter: start and finish a chain"
+    - "Esc: cancel chain"
+    - "1: Shrink power-up"
+    - "2: Sweep power-up"
+creator:
+  name: Kevin MacLeod
+  handle: kmacleod
+  links:
+    - https://kmacleod.itch.io
+made:
+  models:
+    - claude-opus-5
+  tools:
+    - claude-code
+    - claude-ai
+  aiShare: all
+  source: "Creator's submission (issue #92)"
+  evidence: creator
+  notes: NuDots is a new version of the classic iPhone game Dots, made with Claude Opus 5.  Claude knew how the game worked, so we mostly just had to figure out how to make it entertaining without the money/ad mechanics.
+tech:
+  multiplayer: single
+genres:
+  - casual
+  - puzzle
+media:
+  cover: games/nudots/cover
+  screenshots:
+    - games/nudots/shot-1
+    - games/nudots/shot-2
+dates:
+  added: 2026-10-03
+  updated: 2026-10-03
+status: live
+provenance:
+  foundVia: form
+  submittedBy: "#92"
+  uploads:
+    ref: 49f9f9b089d8fa72
+    count: 3
