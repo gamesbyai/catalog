@@ -22,10 +22,17 @@ function host(markers, { gone = [], down = [] } = {}) {
 }
 
 test('a complete game: every variant of every image is checked and nothing is missing', async () => {
-  const h = host({ full: { names: ['cover', 'shot-1', 'shot-2'], widths: [320, 640, 960, 1280] } });
+  const complete = { names: ['cover', 'shot-1', 'shot-2'], widths: [320, 640, 960, 1280] };
+  const h = host({ full: { ...complete, engine: 'threejs', engineEvidence: ['detected from trusted code'] }, plain: complete });
   const row = await auditGame(entry('full'), { fetchImpl: h.fetchImpl });
+  const withoutEngine = await auditGame(entry('plain'), { fetchImpl: h.fetchImpl });
   assert.deepEqual([row.marker, row.broken, row.missingShots, row.missingWidths], ['ok', [], [], []]);
-  assert.equal(h.calls.filter((c) => c.startsWith('HEAD')).length, 3 * 8 + 1);
+  const { slug: fullSlug, ...fullData } = row;
+  const { slug: plainSlug, ...plainData } = withoutEngine;
+  assert.equal(fullSlug, 'full');
+  assert.equal(plainSlug, 'plain');
+  assert.deepEqual(fullData, plainData, 'engine metadata does not affect audit results');
+  assert.equal(h.calls.filter((c) => c.startsWith('HEAD') && c.includes('/games/full/')).length, 3 * 8 + 1);
   assert.ok(h.calls.includes(`HEAD ${MEDIA}/games/full/cover-og.jpg`));
   assert.match(h.calls[0], /^GET https:\/\/media\.gamesbyai\.win\/games\/full\/ready\.json\?audit=[a-z0-9]+$/, 'the marker as it is now, not an edge copy');
 });

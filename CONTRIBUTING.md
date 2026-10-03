@@ -48,6 +48,7 @@ provenance:
 ```
 
 If your model version, tool or engine isn't in the taxonomy files, add it in the same pull request with its official URL.
+A new engine needs no code change: until the screenshot job's engine detection (`scripts/engine.mjs`) has a rule for it, the tests print a warning and still pass.
 
 ## Rules
 

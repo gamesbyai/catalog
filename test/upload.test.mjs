@@ -1,6 +1,6 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
-import { mkdtempSync, mkdirSync, writeFileSync, readFileSync, existsSync } from 'node:fs';
+import { mkdtempSync, mkdirSync, writeFileSync, readFileSync, existsSync, unlinkSync } from 'node:fs';
 import { tmpdir } from 'node:os';
 import { join } from 'node:path';
 import { crc32 } from 'node:zlib';
@@ -185,6 +185,19 @@ test('runUpload --dry-run processes captures, never calls put, and writes our ow
   assert.ok(existsSync(join(res.variantsDir, 'good', 'cover-og.jpg')));
 });
 
+test('metadata-only failed capture preserves its original failure without trying to upload', async () => {
+  const { out, games } = await fixtureOut();
+  writeFileSync(join(games, 'empty.yaml'), 'slug: empty\ntitle: Empty\nplay: { url: "https://empty.example/" }\n');
+  mkdirSync(join(out, 'empty'));
+  writeFileSync(join(out, 'empty', 'engine.json'), JSON.stringify({ engine: 'threejs', evidence: [] }));
+  writeFileSync(join(out, 'failed.json'), JSON.stringify([{ slug: 'empty', reason: 'no-screenshots' }]));
+  const puts = [];
+  const result = await runUpload({ outDir: out, gamesDir: games, put: (key) => puts.push(key), log: () => {} });
+  assert.equal(result.problems.empty, 'no-screenshots');
+  assert.ok(!puts.some((key) => key.startsWith('games/empty/')));
+  assert.ok(readFileSync(join(out, 'contact-sheet.md'), 'utf8').includes('no capture (no-screenshots)'));
+});
+
 test('runUpload puts every variant under games/<slug>/ with its content type', async () => {
   const { out, games } = await fixtureOut();
   const calls = [];
@@ -313,6 +326,81 @@ test('a partial capture (cover only) is uploaded, and ready.json lists what exis
   const marker = puts.find((p) => p.key === 'games/part/ready.json');
   assert.deepEqual(JSON.parse(readFileSync(marker.file, 'utf8')).names, ['cover']);
   assert.deepEqual(JSON.parse(readFileSync(marker.file, 'utf8')).widths, [320, 640, 960, 1280]);
+});
+
+test('ready marker includes only trusted engine data and bounded printable evidence', async () => {
+  const { out, games } = await fixtureOut();
+  writeFileSync(join(out, 'good', 'engine.json'), JSON.stringify({
+    engine: 'threejs',
+    evidence: [' Three.js from code ', 'line\nfeed', 'non-ASCII café', 'x'.repeat(100), {}, 'fifth', 'sixth'],
+    files: ['attacker.js'],
+    command: 'must not escape the artifact',
+  }));
+  const puts = [];
+  await runUpload({ outDir: out, gamesDir: games, only: ['good'], put: (key, file) => puts.push({ key, file }), log: () => {} });
+  const markerFile = puts.find((p) => p.key === 'games/good/ready.json').file;
+  const marker = JSON.parse(readFileSync(markerFile, 'utf8'));
+  assert.equal(marker.engine, 'threejs');
+  assert.deepEqual(marker.engineEvidence, ['Three.js from code', 'line feed', 'non-ASCII caf', 'x'.repeat(80), 'fifth']);
+  assert.deepEqual(Object.keys(marker).sort(), ['engine', 'engineEvidence', 'files', 'names', 'slug', 'widths']);
+});
+
+test('invalid engine artifacts leave ready markers unchanged; a valid slug with non-array evidence gets an empty list', async () => {
+  const { out, games } = await fixtureOut();
+  const cases = [
+    { label: 'unknown slug', raw: JSON.stringify({ engine: 'attacker-engine', evidence: ['text'] }) },
+    { label: 'oversized', raw: ' '.repeat(64 * 1024 + 1) },
+    { label: 'malformed JSON', raw: '{not json' },
+    { label: 'null root', raw: 'null' },
+    { label: 'array root', raw: JSON.stringify([{ engine: 'threejs' }]) },
+    { label: 'missing engine', raw: JSON.stringify({ evidence: ['text'] }) },
+  ];
+  for (const { label, raw } of cases) {
+    writeFileSync(join(out, 'good', 'engine.json'), raw);
+    const puts = [];
+    await runUpload({ outDir: out, gamesDir: games, only: ['good'], put: (key, file) => puts.push({ key, file }), log: () => {} });
+    const marker = JSON.parse(readFileSync(puts.find((p) => p.key === 'games/good/ready.json').file, 'utf8'));
+    assert.equal(Object.hasOwn(marker, 'engine'), false, label);
+    assert.equal(Object.hasOwn(marker, 'engineEvidence'), false, label);
+  }
+  writeFileSync(join(out, 'good', 'engine.json'), JSON.stringify({ engine: 'threejs', evidence: 'not an array' }));
+  const nonArrayPuts = [];
+  await runUpload({ outDir: out, gamesDir: games, only: ['good'], put: (key, file) => nonArrayPuts.push({ key, file }), log: () => {} });
+  const nonArrayMarker = JSON.parse(readFileSync(nonArrayPuts.find((p) => p.key === 'games/good/ready.json').file, 'utf8'));
+  assert.equal(nonArrayMarker.engine, 'threejs');
+  assert.deepEqual(nonArrayMarker.engineEvidence, []);
+
+  // No artifact at all is the common case and has the same backwards-compatible marker shape.
+  unlinkSync(join(out, 'good', 'engine.json'));
+  const puts = [];
+  await runUpload({ outDir: out, gamesDir: games, only: ['good'], put: (key, file) => puts.push({ key, file }), log: () => {} });
+  const marker = JSON.parse(readFileSync(puts.find((p) => p.key === 'games/good/ready.json').file, 'utf8'));
+  assert.equal(Object.hasOwn(marker, 'engine'), false);
+  assert.equal(Object.hasOwn(marker, 'engineEvidence'), false);
+});
+
+test('a renderer goes into its own marker key and is never accepted as the engine', async () => {
+  const { out, games } = await fixtureOut();
+  const markerFor = async (artifact) => {
+    writeFileSync(join(out, 'good', 'engine.json'), JSON.stringify(artifact));
+    const puts = [];
+    await runUpload({ outDir: out, gamesDir: games, only: ['good'], put: (key, file) => puts.push({ key, file }), log: () => {} });
+    return JSON.parse(readFileSync(puts.find((p) => p.key === 'games/good/ready.json').file, 'utf8'));
+  };
+  const both = await markerFor({ engine: 'threejs', renderer: 'webgl', evidence: ['window.THREE'] });
+  assert.deepEqual([both.engine, both.engineEvidence, both.renderer], ['threejs', ['window.THREE'], 'webgl']);
+  // webgl, webgpu and canvas are taxonomy slugs, but a detection of one is how the page draws, not the engine.
+  for (const slug of ['webgl', 'webgpu', 'canvas']) {
+    const marker = await markerFor({ engine: slug, renderer: slug, evidence: ['canvas with live WebGL context'] });
+    assert.equal(Object.hasOwn(marker, 'engine'), false, slug);
+    assert.equal(Object.hasOwn(marker, 'engineEvidence'), false, slug);
+    assert.equal(marker.renderer, slug);
+  }
+  for (const renderer of ['WebGL', 'webgl2', 'threejs', ['webgl'], { webgl: true }, 7, null]) {
+    const marker = await markerFor({ engine: 'threejs', renderer, evidence: [] });
+    assert.equal(marker.engine, 'threejs');
+    assert.equal(Object.hasOwn(marker, 'renderer'), false, JSON.stringify(renderer));
+  }
 });
 
 // --- Creators' own screenshots (sent with the site's submit form) ---
@@ -465,6 +553,7 @@ async function sentFixture(count = 3, uploads = { ref: REF, count }) {
 
 test("the creator's screenshots are fetched with the token and go through the capture pipeline: n=1 cover, n=2 shot-1, n=3 shot-2", async () => {
   const { out, games } = await sentFixture(3);
+  writeFileSync(join(out, 'sent', 'engine.json'), JSON.stringify({ engine: 'threejs', evidence: ['artifact data'] }));
   const images = [await creatorShot('jpeg'), await creatorShot('webp', 1600, 900), await creatorShot('png', 1280, 720)];
   const calls = [];
   const puts = [];
@@ -480,7 +569,9 @@ test("the creator's screenshots are fetched with the token and go through the ca
   assert.equal(sent.length, 3 * 8 + 1 + 1);
   for (const key of ['games/sent/cover-og.jpg', 'games/sent/cover-320.avif', 'games/sent/shot-1-1280.webp', 'games/sent/shot-2-640.avif']) assert.ok(sent.some((p) => p.key === key), key);
   assert.equal(sent.at(-1).key, 'games/sent/ready.json', 'the ready marker goes up last');
-  assert.deepEqual(JSON.parse(readFileSync(sent.at(-1).file, 'utf8')).names, ['cover', 'shot-1', 'shot-2']);
+  const marker = JSON.parse(readFileSync(sent.at(-1).file, 'utf8'));
+  assert.deepEqual(marker.names, ['cover', 'shot-1', 'shot-2']);
+  assert.equal(Object.hasOwn(marker, 'engine'), false, 'creator-supplied screenshots do not read engine metadata');
   for (const p of sent) if (!p.key.endsWith('.json')) assert.ok(!readFileSync(p.file).includes(MARK), `${p.key} carries the creator's metadata`);
   // The other games of the run are handled as before.
   assert.ok(puts.some((p) => p.key === 'games/good/ready.json'));
@@ -659,7 +750,7 @@ test('without --min-frames nothing asks what is live (PR captures of new games)'
 
 test('liveNames reads the live marker: names, all three for an old marker, null for none, and throws otherwise', async () => {
   const { liveNames } = await import('../scripts/upload.mjs');
-  const fetchImpl = media({ a: { names: ['cover', 'shot-1', 'evil'] }, b: { files: 19 }, c: 500 });
+  const fetchImpl = media({ a: { names: ['cover', 'shot-1', 'evil'], engine: 'threejs', engineEvidence: ['capture metadata'] }, b: { files: 19 }, c: 500 });
   assert.deepEqual(await liveNames('a', { fetchImpl }), ['cover', 'shot-1']);
   assert.deepEqual(await liveNames('b', { fetchImpl }), ['cover', 'shot-1', 'shot-2']);
   assert.equal(await liveNames('none', { fetchImpl }), null);
