@@ -1,0 +1,43 @@
+slug: rucksy
+title: Rucksy
+tagline: Submitted by its creator; the description is added during review.
+description: ""
+play:
+  url: https://rucksy.fun/
+  platforms:
+    - browser
+  embedPermission:
+    by: submission
+    date: 2026-10-03
+creator:
+  name: Alvin
+  handle: alvin
+made:
+  models:
+    - claude-opus-5-5
+    - gpt-6-astra
+    - gpt-6-sol
+  tools:
+    - claude-code
+    - codex
+  aiShare: all
+  source: "Creator's submission (issue #100)"
+  evidence: creator
+  notes: I have board games in mind I want to implement and asked AI to do it
+tech:
+  engine: threejs
+  multiplayer: online
+genres:
+  - board
+media:
+  cover: games/rucksy/cover
+  screenshots:
+    - games/rucksy/shot-1
+    - games/rucksy/shot-2
+dates:
+  added: 2026-10-03
+  updated: 2026-10-03
+status: live
+provenance:
+  foundVia: form
+  submittedBy: "#100"
