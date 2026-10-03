@@ -363,3 +363,16 @@ for (const [label, base, taken, expected] of [
     assert.ok(r.notes.some((n) => n.includes(`uses ${expected}.`)));
   });
 }
+
+test('a name that already has one page joins it, whatever handle the profile link gives; placeholder names never do', () => {
+  const creators = new Map([['kmacleod', 'Kevin MacLeod'], ['solo', 'Unknown creator']]);
+  const ctx = { ...loadContext(repo()), creators, today: '2026-10-01', issue: 44 };
+  const noLink = toEntry(parseIssue(body({ 'Creator name': 'kevin  macleod', 'Profile link (optional)': '_No response_' })), ctx);
+  assert.equal(noLink.entry.creator.handle, 'kmacleod');
+  assert.equal(noLink.entry.creator.name, 'Kevin MacLeod');
+  assert.ok(noLink.notes.some((n) => n.includes('/creators/kmacleod/')));
+  const otherLink = toEntry(parseIssue(body({ 'Creator name': 'Kevin MacLeod', 'Profile link (optional)': 'https://github.com/kevin-m' })), ctx);
+  assert.equal(otherLink.entry.creator.handle, 'kmacleod');
+  const nameless = toEntry(parseIssue(body({ 'Creator name': 'Unknown creator', 'Profile link (optional)': 'https://github.com/someone' })), ctx);
+  assert.equal(nameless.entry.creator.handle, 'someone');
+});
