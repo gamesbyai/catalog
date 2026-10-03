@@ -1,0 +1,74 @@
+slug: dustlight
+title: Dustlight
+tagline: Carry a paper lantern and pull a sky island back together out of glowing dust.
+description: "Dustlight is a short exploration game played in the browser, set on a
+  sky island at night that has crumbled into drifting dust. You're a small
+  paper-lantern spirit, and colour comes back wherever your warm light falls.
+  Each ember you find sends a spark to a landmark, a lighthouse, a keeper's
+  cottage, a blossom tree or a mossy shrine arch, and it pulls itself back
+  together out of swirling motes.
+
+
+  With all four standing, a fifth ember turns up on the lighthouse gallery and
+  an updraft lifts you to it. Lighting the lamp floods the island with colour,
+  and a whale gathers itself out of the stars. An old lighthouse keeper speaks a
+  few quiet lines along the way. You can play with keyboard and mouse or with
+  touch controls.
+
+
+  Everything you see is drawn with about 1.7 million Gaussian splats rather
+  than triangles. We built the models from Codex drawings in Blender 5.3, turned
+  them into splats with Geometry Nodes, and the game draws them with Three.js and
+  the Spark library. The sound effects are synthesised in code."
+play:
+  url: https://gamesbyai.github.io/dustlight/
+  platforms:
+    - browser
+  controls:
+    - WASD or arrow keys to move
+    - Drag the mouse to look
+    - Space to hop
+    - "Touch: left thumb to move, drag to look"
+  embedPermission:
+    by: submission
+    date: 2026-10-03
+  embeddable: true
+repo: https://github.com/gamesbyai/dustlight
+license: MIT
+creator:
+  name: GamesByAI
+  handle: gamesbyai
+  links:
+    - https://gamesbyai.win/
+  x: GamesByAI
+  youtube: "@GamesByAI-win"
+made:
+  models:
+    - claude-opus-5-5
+    - gpt-6-1-sol
+  tools:
+    - claude-code
+    - codex
+  aiShare: all
+  source: "GamesByAI's own build notes: we made the game"
+  evidence: creator
+  notes: >-
+    Codex (GPT-6.1 Sol) drew a front and a side view of every model. Claude Code
+    (Claude Opus 5.5) wrote the Blender Python that rebuilt them as painted
+    models, the Geometry Nodes group that turned them into Blender 5.3's native
+    Gaussian splats, the exporter, the game code and the sound synthesis.
+    VoxCPM2 performed the keeper's voice.
+tech:
+  engine: threejs
+  multiplayer: single
+genres:
+  - adventure
+  - casual
+media:
+  cover: games/dustlight/cover
+dates:
+  added: 2026-10-03
+  updated: 2026-10-03
+status: live
+provenance:
+  foundVia: pr
