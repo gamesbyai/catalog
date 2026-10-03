@@ -766,7 +766,7 @@ export async function captureOne(url, outDir, opts = {}) {
     }
 
     // Scan all frames after finding itch's game, while the screenshot schedule proceeds. A final short scan also
-    // catches engines loaded by Play or a late iframe. The two scans share at most 750 ms of waiting per pass.
+    // catches engines loaded by Play or a late iframe (given more time: a slow runner answered too late at 350 ms).
     engineTask = detectPageEngine(page, 400).then(detected);
 
     // One frame. A busy renderer can miss one frame deadline; one retry before giving up on the game. Null when the
@@ -866,7 +866,7 @@ export async function captureOne(url, outDir, opts = {}) {
     clearTimeout(deadline);
     stop.abort();
     await engineTask;
-    if (state.opened) detected(await detectPageEngine(state.page, 350));
+    if (state.opened) detected(await detectPageEngine(state.page, 750));
     await closeContext(state.context, o.closeTimeout);
     if (state.opened) {
       mkdirSync(outDir, { recursive: true });
