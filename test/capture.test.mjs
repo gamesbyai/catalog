@@ -36,6 +36,7 @@ const PAGES = {
     // CI's software renderer may offer WebGL 1 only.
     const canvas = document.getElementById('gl');
     const gl = canvas.getContext('webgl2') || canvas.getContext('webgl');
+    if (gl) fetch('/hit/engine-gl-ok');
     gl.clearColor(1, 0, 0, 1); gl.clear(gl.COLOR_BUFFER_BIT);
     HTMLCanvasElement.prototype.getContext = () => { fetch('/hit/engine-context'); throw new Error('do not probe'); };
   </script>`),
@@ -274,12 +275,14 @@ test('engine.json detects the game inside an itch-style iframe, ahead of the wra
 test('engine inspection skips page getters; drawn canvases give only a renderer, never the engine', async () => {
   hits['engine-getter'] = 0;
   hits['engine-context'] = 0;
+  hits['engine-gl-ok'] = 0;
   for (const [path, expected, renderer] of [['/engine-getter', 'pixijs', 'canvas'], ['/engine-webgl', null, 'webgl'], ['/engine-late', 'phaser', 'canvas'], ['/game', null, 'canvas'], ['/black', null, null]]) {
     const dir = join(tmp(), 'engine');
     await captureOne(`${base}${path}`, dir, FAST);
     const detected = JSON.parse(readFileSync(join(dir, 'engine.json'), 'utf8'));
     assert.equal(detected.engine, expected, path);
-    assert.equal(detected.renderer, renderer, path);
+    // A browser without WebGL (some CI runners) leaves the fixture only the page's 2D canvas.
+    assert.equal(detected.renderer, renderer === 'webgl' && !hits['engine-gl-ok'] ? 'canvas' : renderer, path);
   }
   assert.equal(hits['engine-getter'], 0);
   assert.equal(hits['engine-context'], 0, 'inspection uses the observed context, never a page getContext override');
