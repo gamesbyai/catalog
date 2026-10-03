@@ -502,6 +502,12 @@ terms:
       - "https://developers.openai.com/api/docs/deprecations"
       - "https://help.openai.com/en/articles/20001051-retiring-gpt-4o-and-other-chatgpt-models"
       - "https://openai.com/index/introducing-4o-image-generation/"
+  - slug: gpt-3
+    name: GPT-3
+    provider: openai
+    sources:
+      - "https://openai.com/index/language-models-are-few-shot-learners/"
+      - "https://arxiv.org/abs/2005.14165"
   # Google
   - slug: gemini-3-8-flash
     name: Gemini 3.8 Flash
