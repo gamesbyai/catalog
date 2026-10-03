@@ -1,0 +1,48 @@
+slug: nudots
+title: NuDots
+tagline: Submitted by its creator; the description is added during review.
+description: ""
+play:
+  url: https://danger.academy/NuDots/
+  platforms:
+    - browser
+  embedPermission:
+    by: submission
+    date: 2026-10-03
+creator:
+  name: Kevin MacLeod
+  handle: kmacleod
+  links:
+    - https://kmacleod.itch.io
+made:
+  models:
+    - claude-opus-5
+  tools:
+    - claude-code
+    - claude-ai
+  aiShare: all
+  source: "Creator's submission (issue #92)"
+  evidence: creator
+  notes: NuDots is a new version of the classic iPhone game Dots, made with Claude
+    Opus 5.  Claude knew how the game worked, so we mostly just had to figure
+    out how to make it entertaining without the money/ad mechanics.
+tech:
+  multiplayer: single
+genres:
+  - casual
+  - puzzle
+media:
+  cover: games/nudots/cover
+  screenshots:
+    - games/nudots/shot-1
+    - games/nudots/shot-2
+dates:
+  added: 2026-10-03
+  updated: 2026-10-03
+status: live
+provenance:
+  foundVia: form
+  submittedBy: "#92"
+  uploads:
+    ref: 49f9f9b089d8fa72
+    count: 3
