@@ -70,6 +70,15 @@ export function validate(dir = '.') {
     if (prev !== undefined && prev !== g.creator.name) problems.push(`${rel}: creator handle "${g.creator.handle}" already belongs to "${prev}"`);
     else handles.set(g.creator.handle, g.creator.name);
   }
+  // And one page per creator: the same name under two handles splits their games over two pages (kevin-macleod and
+  // kmacleod, 2026-10-03). Placeholder names identify no one (scripts/issue-to-entry.mjs has the same list).
+  const pages = new Map();
+  for (const [handle, name] of handles) {
+    const key = name.trim().replace(/\s+/g, ' ').toLowerCase();
+    if (['unknown creator', 'unknown', 'anonymous'].includes(key)) continue;
+    if (pages.has(key)) problems.push(`creator "${name}" has two pages, /creators/${pages.get(key)}/ and /creators/${handle}/: give their games one handle`);
+    else pages.set(key, handle);
+  }
   return { problems, files: files.length };
 }
 

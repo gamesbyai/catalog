@@ -69,3 +69,11 @@ test('a jam rank above the number of entries is rejected', () => {
   const bad = draft + 'jam: { event: vibe-jam-2026, rank: 30, entries: 10 }\n';
   assert.ok(validate(repo({ 'sky-hop.yaml': bad })).problems.some((p) => p.includes('jam.rank')));
 });
+
+test('one creator gets one page: the same name under two handles is rejected, placeholder names are not', () => {
+  const second = (name, handle) => draft.replaceAll('sky-hop', 'sea-hop').replace('creator: { name: Ada, handle: ada }', `creator: { name: ${name}, handle: ${handle} }`);
+  const split = validate(repo({ 'sky-hop.yaml': draft, 'sea-hop.yaml': second('ada', 'ada-dev') })).problems;
+  assert.ok(split.some((p) => /has two pages, .*\/creators\/ada\//.test(p) && p.includes('/creators/ada-dev/')), split.join('\n'));
+  const nameless = (h) => draft.replaceAll('sky-hop', h).replace('creator: { name: Ada, handle: ada }', `creator: { name: Unknown creator, handle: ${h} }`);
+  assert.deepEqual(validate(repo({ 'sky-hop.yaml': nameless('sky-hop'), 'sea-hop.yaml': nameless('sea-hop') })).problems, []);
+});

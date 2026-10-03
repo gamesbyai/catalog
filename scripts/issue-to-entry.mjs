@@ -101,9 +101,21 @@ function creatorOf(f, creatorName, issue, notes) {
   return creator;
 }
 
+// Placeholder names that identify no one: never a reason to share a page (scripts/validate.mjs has the same list).
+const NAMELESS = new Set(['unknown creator', 'unknown', 'anonymous']);
+const nameKey = (name) => name.trim().replace(/\s+/g, ' ').toLowerCase();
+
 /** A handle already in the catalog: the same name in other letter case is the same creator (keep their spelling); a
- * different name gets its own page, and the reviewer merges them by hand if it's the same person. */
+ * different name gets its own page, and the reviewer merges them by hand if it's the same person. A name that already
+ * has exactly one page joins it, whatever handle the profile link or the name would give: one person submitting with
+ * and without a profile link got two pages (kevin-macleod and kmacleod, 2026-10-03). */
 function sameCreator(creator, creators, issue, notes) {
+  const key = nameKey(creator.name);
+  const named = NAMELESS.has(key) ? [] : [...creators].filter(([, name]) => nameKey(name) === key).map(([handle]) => handle);
+  if (named.length === 1 && named[0] !== creator.handle) {
+    notes.push(`"${creators.get(named[0])}" already has the page /creators/${named[0]}/, so this entry joins it. Change the handle if they are different people.`);
+    return { ...creator, name: creators.get(named[0]), handle: named[0] };
+  }
   const known = creators.get(creator.handle);
   if (known === undefined || known === creator.name) return creator;
   if (known.toLowerCase() === creator.name.toLowerCase()) return { ...creator, name: known };
