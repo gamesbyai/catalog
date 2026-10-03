@@ -7,13 +7,13 @@ description: "Your ship circles a planet until you tap, then it launches toward 
   Some catches flash a PERFECT bonus on screen while a combo counter sits at the top, and a Hyperdrive burst doubles the points you're earning.
 
 
-  Space between the planets isn't always clear. Rocks drift through the gaps, and the game kindly flashes a note telling you to hold off until the way is open. Golden crates float along the route too.
+  Space between the planets isn't always clear. Rocks drift through the gaps, and the game flashes a note telling you to hold off until the way is open. Golden crates float along the route too.
 
 
   As you climb you pass through named sectors and the sky changes with them, so Sector 3 gets the pretty name Emerald Fields and washes the screen in green.
 
 
-  Past the score there's a surprisingly big collection to fill, with 100 pilot cards to gather. There are also ships to collect that take their cue from famous spacecraft.
+  Past the score there's a collection to fill, with 100 pilot cards to gather. There are also ships to collect that take their cue from famous spacecraft.
 
 
   Dušan Schnelly wrote the design brief, and an AI agent turned it into a playable prototype overnight. Since then they've built it with several Claude Code sessions running side by side, each on its own branch, while handling the phone playtesting and the tuning by hand. Every planet, ship and card, even the logo, is drawn in code, and the sounds are synthesized."
