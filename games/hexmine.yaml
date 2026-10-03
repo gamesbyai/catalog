@@ -1,0 +1,50 @@
+slug: hexmine
+title: HexMine
+tagline: Submitted by its creator; the description is added during review.
+description: ""
+play:
+  url: https://danger.academy/HexMine/
+  platforms:
+    - browser
+  embedPermission:
+    by: submission
+    date: 2026-10-03
+creator:
+  name: Kevin MacLeod
+  handle: kmacleod
+  links:
+    - https://kmacleod.itch.io
+made:
+  models:
+    - claude-opus-5
+  tools:
+    - claude-code
+    - chatgpt
+  aiShare: all
+  source: "Creator's submission (issue #90)"
+  evidence: creator
+  notes: "HexMine is Minesweeper on a hex grid. The first version was written with
+    GPT-3, then Claude Opus 5 did a technical revision: cascades that reveal in
+    waves so old hardware keeps up, a board solver, auto-sweep. Three board
+    sizes, a safe first click, and a firework win. It runs from one HTML file
+    plus a small solver script. CC0."
+tech:
+  multiplayer: single
+genres:
+  - casual
+  - puzzle
+media:
+  cover: games/hexmine/cover
+  screenshots:
+    - games/hexmine/shot-1
+    - games/hexmine/shot-2
+dates:
+  added: 2026-10-03
+  updated: 2026-10-03
+status: live
+provenance:
+  foundVia: form
+  submittedBy: "#90"
+  uploads:
+    ref: 4e22dea0bdf8763a
+    count: 3
