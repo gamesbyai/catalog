@@ -66,6 +66,9 @@ genres:
   - casual
 media:
   cover: games/dustlight/cover
+  screenshots:
+    - games/dustlight/shot-1
+    - games/dustlight/shot-2
 dates:
   added: 2026-10-03
   updated: 2026-10-03
