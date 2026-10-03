@@ -19,7 +19,10 @@ description: "The goal is to wall in a white stone before it slides off the edge
   You can play on a light or dark board, or let it follow your system, and switch the music and stone sounds on or off. Leaving for the title screen keeps your session saved, so you can pick it back up later.
 
 
-  Kevin MacLeod worked out the design by talking it through with Claude, and Claude Code built the whole thing as one HTML file, including the board generator and the solver. They played each version and described what felt off so Claude could revise it, and Claude even wrote a script that made the store art with the game's own renderer. They recorded the sound effects, hand-tuned the colors and released it as CC0."
+  Kevin MacLeod worked out the design by talking it through with Claude, and Claude Code wrote it as one HTML file, including the board generator and the solver. They played each version and described what felt off so Claude could revise it, and Claude even wrote a script that made the store art with the game's own renderer.
+
+
+  They recorded the sound effects, hand-tuned the colors and released it as CC0."
 play:
   url: https://danger.academy/Talos/
   platforms:
