@@ -1,0 +1,48 @@
+slug: sumo-boulders
+title: Sumo Boulders
+tagline: Submitted by its creator; the description is added during review.
+description: ""
+play:
+  url: https://danger.academy/Sumo-Boulders/
+  platforms:
+    - browser
+  embedPermission:
+    by: submission
+    date: 2026-10-03
+creator:
+  name: Kevin MacLeod
+  handle: kmacleod
+  links:
+    - https://kmacleod.itch.io
+made:
+  models: []
+  tools:
+    - claude-code
+  aiShare: all
+  source: "Creator's submission (issue #94)"
+  evidence: creator
+  notes: "Sumo Boulders is a physics brawl: shove rival boulders out of the ring.
+    Built with Claude Code in Three.js. Each of the eight arenas changes the
+    physics - a raft tipping on ocean swells, a basalt raft on a boiling lake,
+    black ice under an aurora, half gravity in low orbit, lightning, wind and
+    sand. Six AI personalities, a Ladder gauntlet, Battle for up to 8 boulders,
+    a boulder builder, peer-to-peer online play and gamepad support."
+tech:
+  engine: threejs
+  multiplayer: online
+genres:
+  - arcade
+  - sports
+  - fighting
+media:
+  cover: games/sumo-boulders/cover
+  screenshots:
+    - games/sumo-boulders/shot-1
+    - games/sumo-boulders/shot-2
+dates:
+  added: 2026-10-03
+  updated: 2026-10-03
+status: live
+provenance:
+  foundVia: form
+  submittedBy: "#94"
