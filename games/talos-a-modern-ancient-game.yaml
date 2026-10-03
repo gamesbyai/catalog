@@ -34,9 +34,9 @@ play:
 creator:
   name: Kevin MacLeod
   handle: kmacleod
+  youtube: "@incompetech_kmac"
   links:
     - https://kmacleod.itch.io
-    - https://www.youtube.com/channel/UCSZXFhRIx6b0dFX3xS8L1yQ
 made:
   models:
     - claude-opus-5
