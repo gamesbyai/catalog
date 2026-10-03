@@ -1,0 +1,48 @@
+slug: chromadoku
+title: Chromadoku
+tagline: Submitted by its creator; the description is added during review.
+description: ""
+play:
+  url: https://danger.academy/chromadoku/
+  platforms:
+    - browser
+  embedPermission:
+    by: submission
+    date: 2026-10-03
+repo: https://github.com/dangeracademy/chromadoku
+creator:
+  name: Kevin MacLeod
+  handle: kmacleod
+  links:
+    - https://kmacleod.itch.io
+made:
+  models:
+    - claude-sonnet-5
+  tools:
+    - claude-code
+    - chatgpt
+  aiShare: all
+  source: "Creator's submission (issue #88)"
+  evidence: creator
+  notes: The first version was written with GPT-3, then revised with Claude Sonnet
+    5 for UI.  It's one self-contained HTML file. CC0.
+tech:
+  multiplayer: single
+genres:
+  - casual
+  - puzzle
+media:
+  cover: games/chromadoku/cover
+  screenshots:
+    - games/chromadoku/shot-1
+    - games/chromadoku/shot-2
+dates:
+  added: 2026-10-03
+  updated: 2026-10-03
+status: live
+provenance:
+  foundVia: form
+  submittedBy: "#88"
+  uploads:
+    ref: 518c9dcd61b25801
+    count: 3
