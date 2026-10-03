@@ -1,0 +1,62 @@
+slug: sumo-boulders
+title: Sumo Boulders
+tagline: Shove rival boulders out of the ring across eight arenas with odd physics.
+description: "You win a round by knocking rival boulders out of the ring. It's a physics brawl, so everything comes down to shoving and not getting shoved.
+
+
+  What keeps it interesting is that each of the eight arenas bends the physics in its own way. One is a raft tipping on ocean swells, another a basalt raft floating on a boiling lake, and there's black ice under an aurora.
+
+
+  Low orbit even cuts gravity in half, which sounds like a very different kind of shove.
+
+
+  Other arenas throw in lightning, wind and sand, so a ring you've figured out in one place won't behave the same in the next.
+
+
+  Six AI personalities play the rivals. You can take them on in a Ladder gauntlet, or pick Battle mode and have up to eight boulders crowd into one ring.
+
+
+  There's also a boulder builder, which lets you make your own fighter before you go in. Online play runs peer-to-peer, and a gamepad works too.
+
+
+  The creator says they built it with Claude Code in Three.js."
+play:
+  url: https://danger.academy/Sumo-Boulders/
+  platforms:
+    - browser
+  embedPermission:
+    by: submission
+    date: 2026-10-03
+  embeddable: true
+creator:
+  name: Kevin MacLeod
+  handle: kmacleod
+  links:
+    - https://kmacleod.itch.io
+made:
+  models: []
+  tools:
+    - claude-code
+  aiShare: all
+  source: "Creator's submission (issue #94)"
+  evidence: creator
+  notes: "Sumo Boulders is a physics brawl: shove rival boulders out of the ring. Built with Claude Code in Three.js. Each of the eight arenas changes the physics - a raft tipping on ocean swells, a basalt raft on a boiling lake, black ice under an aurora, half gravity in low orbit, lightning, wind and sand. Six AI personalities, a Ladder gauntlet, Battle for up to 8 boulders, a boulder builder, peer-to-peer online play and gamepad support."
+tech:
+  engine: threejs
+  multiplayer: online
+genres:
+  - arcade
+  - sports
+  - fighting
+media:
+  cover: games/sumo-boulders/cover
+  screenshots:
+    - games/sumo-boulders/shot-1
+    - games/sumo-boulders/shot-2
+dates:
+  added: 2026-10-03
+  updated: 2026-10-03
+status: live
+provenance:
+  foundVia: form
+  submittedBy: "#94"
