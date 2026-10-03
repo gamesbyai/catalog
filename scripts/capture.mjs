@@ -5,7 +5,7 @@
 // temporary profile, Chrome's GPU blocklist kept, downloads refused, no file pickers, no clipboard writes, nothing
 // uploaded from here).
 // Every game gets a fresh browser context, a hard deadline kept by Node (not by Playwright), and nothing
-// from the page is ever read back except the pixels of the screenshots, and on itch.io the address of the game's
+// from the page is read back except screenshot pixels, bounded engine hints, and on itch.io the address of the game's
 // own frame, which must match itch's CDN pattern (itchFrame). The opt-in start step (CAPTURE_START, startGame) also
 // asks the page whether a Start or Play button or a name field is visible, and before every click or key whether its
 // target is a link or a control that isn't the game's (pressCheck); those answers only decide a press and are never
@@ -20,6 +20,7 @@ import { parse } from 'yaml';
 import { chromium } from 'playwright';
 import sharp from 'sharp';
 import { uploadsOf } from './upload.mjs';
+import { ENGINE_GLOBALS, ENGINE_PRIORITY, RENDERERS, installEngineProbe, detectPageEngine } from './engine.mjs';
 
 export const SLUG = /^[a-z0-9]+(?:-[a-z0-9]+)*$/;
 export const NAMES = ['cover', 'shot-1', 'shot-2'];
@@ -638,18 +639,20 @@ async function playInput(page, i, o, guard, signal) {
 }
 
 /**
- * Captures cover.png, shot-1.png and shot-2.png of one game into outDir.
+ * Captures cover.png, shot-1.png and shot-2.png and writes engine.json for an opened game into outDir.
  * @returns {Promise<{ ok: true, files: string[] } | { ok: false, reason: string, detail?: string }>}
  */
 export async function captureOne(url, outDir, opts = {}) {
   const o = { ...DEFAULTS, ...opts };
   const files = NAMES.map((n) => join(outDir, `${n}.png`));
+  const engineFile = join(outDir, 'engine.json');
   const cleanup = () => {
     for (const f of files) rmSync(f, { force: true });
     try {
       rmdirSync(outDir); // only if empty
     } catch {}
   };
+  rmSync(engineFile, { force: true });
   cleanup();
   if (!checkUrl(url, o)) return { ok: false, reason: 'bad-url' };
 
@@ -671,7 +674,15 @@ export async function captureOne(url, outDir, opts = {}) {
 
   // Frames taken so far live outside `work`, so a deadline or a frozen page after the cover still keeps the cover.
   // With the start step, `before` holds the frame taken before it (the menu), used only when nothing after it is.
-  const state = { context: null, finished: false, shots: [], before: [], timedOut: false };
+  const state = { context: null, page: null, opened: false, finished: false, shots: [], before: [], timedOut: false };
+  // The best engine and the best renderer across both scans, each by its own priority.
+  let engine = { engine: null, renderer: null, evidence: [] };
+  let engineTask;
+  const better = (order, next, current) => next && (!current || order.indexOf(next) < order.indexOf(current));
+  const detected = (next) => {
+    if (better(ENGINE_PRIORITY, next.engine, engine.engine)) engine = { ...engine, engine: next.engine, evidence: next.evidence };
+    if (better(RENDERERS, next.renderer, engine.renderer)) engine = { ...engine, renderer: next.renderer };
+  };
   const pick = () => pickFrames([...state.shots, ...state.before], { preferred: state.shots.length });
   const work = async () => {
     const b = await guard(
@@ -695,11 +706,13 @@ export async function captureOne(url, outDir, opts = {}) {
       throw new CaptureError('deadline');
     }
     state.context = context;
+    await guard(context.addInitScript(installEngineProbe, ENGINE_GLOBALS));
     if (o.throttle) await guard(context.addInitScript(`(${throttleFrames})(window, ${Number(o.throttleGap) || 250});`));
     // A local browser runs on someone's machine: no File System Access pickers and no clipboard writes for the page.
     if (o.gpu || o.headed || o.chrome) await guard(context.addInitScript(`(${noFilePickers})(window);(${noClipboardWrites})(window);`));
     if (o.webgl) await guard(context.addInitScript(`(${noWebGPU})(window);`));
     const page = await guard(context.newPage());
+    state.page = page;
     // A file input never opens a native dialog: a listener makes Playwright intercept it, and nothing is ever chosen.
     page.on('filechooser', () => {});
     context.on('page', (p) => p !== page && p.close().catch(() => {})); // popups
@@ -711,6 +724,7 @@ export async function captureOne(url, outDir, opts = {}) {
     page.on('crash', () => fail('crash'));
 
     const open = async (target) => {
+      state.opened = true;
       const navStart = Date.now();
       let res;
       try {
@@ -750,6 +764,10 @@ export async function captureOne(url, outDir, opts = {}) {
         if (frame) await open(frame);
       }
     }
+
+    // Scan all frames after finding itch's game, while the screenshot schedule proceeds. A final short scan also
+    // catches engines loaded by Play or a late iframe. The two scans share at most 750 ms of waiting per pass.
+    engineTask = detectPageEngine(page, 400).then(detected);
 
     // One frame. A busy renderer can miss one frame deadline; one retry before giving up on the game. Null when the
     // game stopped answering after earlier frames (those may be enough; later ones are a bonus).
@@ -847,7 +865,13 @@ export async function captureOne(url, outDir, opts = {}) {
     state.finished = true;
     clearTimeout(deadline);
     stop.abort();
+    await engineTask;
+    if (state.opened) detected(await detectPageEngine(state.page, 350));
     await closeContext(state.context, o.closeTimeout);
+    if (state.opened) {
+      mkdirSync(outDir, { recursive: true });
+      writeFileSync(engineFile, JSON.stringify(engine) + '\n');
+    }
   }
   return result;
 }
@@ -945,6 +969,7 @@ export async function captureSlugs(slugs, { root = ROOT, out = join(root, 'out')
               copyFileSync(f, to);
               return to;
             });
+            copyFileSync(join(scratch, slug, 'engine.json'), join(out, slug, 'engine.json'));
             res = { ...again, files, started: true };
           }
           rmSync(scratch, { recursive: true, force: true });

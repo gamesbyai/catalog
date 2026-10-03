@@ -25,6 +25,36 @@ const gamePage = (extra = '') => html(`<canvas id="c" width="1280" height="720">
   </script>${extra}`);
 const PAGES = {
   '/game': gamePage(),
+  '/engine-phaser': gamePage(`<script>window.Phaser = { VERSION: '3.80.1' };</script>`),
+  '/engine-frame': html(`<script>window.THREE = {};</script><iframe id="game_drop" src="/engine-phaser" style="width:1280px;height:720px;border:0"></iframe>`),
+  '/engine-getter': gamePage(`<script>
+    Object.defineProperty(window, 'Phaser', { get() { fetch('/hit/engine-getter'); throw new Error('do not call'); } });
+    Object.defineProperty(window, 'GODOT_CONFIG', { get() { fetch('/hit/engine-getter'); throw new Error('do not call'); } });
+    window.PIXI = { VERSION: '8.0.0' };
+  </script>`),
+  '/engine-webgl': gamePage(`<canvas id="gl" width="64" height="64"></canvas><script>
+    const gl = document.getElementById('gl').getContext('webgl2');
+    gl.clearColor(1, 0, 0, 1); gl.clear(gl.COLOR_BUFFER_BIT);
+    HTMLCanvasElement.prototype.getContext = () => { fetch('/hit/engine-context'); throw new Error('do not probe'); };
+  </script>`),
+  '/engine-late': gamePage(`<script>addEventListener('click', () => { window.Phaser = { VERSION: '3.80.1' }; });</script>`),
+  // A page that rewrites the built-ins a reader might use, so that each returns a huge string or list, and lies about
+  // NodeList lengths. Paths of repeated "/@react-three/fiber" made the old reader's URL rule quadratic.
+  '/engine-tamper': gamePage(`<script src="/engine-lib/helper.js"></script><script>
+    window.Phaser = { VERSION: '3.80.1' };
+    const big = '/@react-three/fiber'.repeat(50000);
+    const push = Array.prototype.push;
+    String.prototype.split = function () { return [big]; };
+    String.prototype.slice = function () { return big; };
+    String.prototype.replace = function () { return big; };
+    String.prototype.charCodeAt = function () { return 65; };
+    String.fromCharCode = function () { return big; };
+    RegExp.prototype.test = function () { return true; };
+    RegExp.prototype.exec = function () { return [big]; };
+    Array.prototype.push = function (...items) { for (let i = 0; i < 1000; i++) push.apply(this, items); return this.length; };
+    JSON.stringify = function () { return big; };
+    Object.defineProperty(NodeList.prototype, 'length', { get() { return 1e6; } });
+  </script>`),
   '/hang': html(`<p style="color:#fff">loading</p><script>addEventListener('load', () => setTimeout(() => { for (;;) {} }, 200));</script>`),
   '/late-hang': html(`<canvas id="c" width="1280" height="720"></canvas><script>
     const g = document.getElementById('c').getContext('2d');
@@ -227,8 +257,51 @@ after(async () => {
 });
 
 const tmp = () => mkdtempSync(join(tmpdir(), 'capture-'));
-const files = (dir) => (existsSync(dir) ? readdirSync(dir) : []);
+// engine.json is present even when an opened game yields no usable screenshots.
+const files = (dir) => (existsSync(dir) ? readdirSync(dir).filter((f) => f !== 'engine.json') : []);
 const pngSize = (buf) => ({ width: buf.readUInt32BE(16), height: buf.readUInt32BE(20) });
+
+test('engine.json detects the game inside an itch-style iframe, ahead of the wrapper renderer', async () => {
+  const dir = join(tmp(), 'engine');
+  const result = await captureOne(`${base}/engine-frame`, dir, { ...FAST, itchPage: true, itchHost: /^127\.0\.0\.1$/ });
+  assert.equal(result.ok, true, result.reason);
+  assert.deepEqual(JSON.parse(readFileSync(join(dir, 'engine.json'), 'utf8')), { engine: 'phaser', renderer: 'canvas', evidence: ['window.Phaser.VERSION 3.80.1'] });
+  assert.ok(result.files.every((file) => file.endsWith('.png')), 'the screenshot return contract stays intact');
+});
+
+test('engine inspection skips page getters; drawn canvases give only a renderer, never the engine', async () => {
+  hits['engine-getter'] = 0;
+  hits['engine-context'] = 0;
+  for (const [path, expected, renderer] of [['/engine-getter', 'pixijs', 'canvas'], ['/engine-webgl', null, 'webgl'], ['/engine-late', 'phaser', 'canvas'], ['/game', null, 'canvas'], ['/black', null, null]]) {
+    const dir = join(tmp(), 'engine');
+    await captureOne(`${base}${path}`, dir, FAST);
+    const detected = JSON.parse(readFileSync(join(dir, 'engine.json'), 'utf8'));
+    assert.equal(detected.engine, expected, path);
+    assert.equal(detected.renderer, renderer, path);
+  }
+  assert.equal(hits['engine-getter'], 0);
+  assert.equal(hits['engine-context'], 0, 'inspection uses the observed context, never a page getContext override');
+});
+
+test('a page that rewrites String, Array, RegExp, JSON and NodeList built-ins gets the same bounded reading, quickly', async () => {
+  const dir = join(tmp(), 'engine');
+  const started = Date.now();
+  const result = await captureOne(`${base}/engine-tamper`, dir, FAST);
+  const took = Date.now() - started;
+  assert.equal(result.ok, true, result.reason);
+  assert.ok(took < 20_000, `capture took ${took} ms`);
+  const raw = readFileSync(join(dir, 'engine.json'), 'utf8');
+  assert.ok(raw.length < 1024, `engine.json is ${raw.length} bytes`);
+  assert.deepEqual(JSON.parse(raw), { engine: 'phaser', renderer: 'canvas', evidence: ['window.Phaser.VERSION 3.80.1'] });
+});
+
+test('an invalid URL clears stale detection without opening a game', async () => {
+  const dir = join(tmp(), 'stale');
+  mkdirSync(dir);
+  writeFileSync(join(dir, 'engine.json'), JSON.stringify({ engine: 'phaser', evidence: [] }));
+  assert.deepEqual(await captureOne('file:///game.html', dir, FAST), { ok: false, reason: 'bad-url' });
+  assert.equal(existsSync(dir), false);
+});
 
 test("itchFrame: an itch.io game page gives the game's own frame on itch's CDN, nothing else does", () => {
   const src = 'https://html-classic.itch.zone/html/18045891/index.html?v=1782553893';
@@ -725,6 +798,7 @@ test("start 'retry': a game that kept one frame gets a pass with the start step,
   assert.match(lines.join('\n'), /menu: 1 of 3 frames, retry with the start step/);
   assert.match(lines.join('\n'), /ok {3}menu \([\d.]+ s, 3 of 3 frames\)/);
   assert.deepEqual(files(join(root, 'out', 'menu')).sort(), ['cover.png', 'shot-1.png', 'shot-2.png']);
+  assert.equal(JSON.parse(readFileSync(join(root, 'out', 'menu', 'engine.json'), 'utf8')).renderer, 'canvas', 'the winning pass keeps its engine artifact');
   assert.ok(!(await magentaAt(join(root, 'out', 'menu', 'cover.png'), 300, 200)));
 });
 
@@ -838,6 +912,9 @@ test('local captures: no file pickers and no clipboard writes in a real page, fr
       clipboard: 'stubbed',
       'write-text': 'refused',
     });
+    // Close gracefully before switching launch options: Playwright's force-kill uses taskkill on Windows,
+    // which a restricted test runner may refuse, leaving a browser process alive after the test.
+    await closeBrowser();
     // The same page on CI's launch: the pickers exist and a copy after a click works, so the local result means something.
     reports = {};
     const ci = await captureOne(`${base}/local-traps`, join(tmp(), 'ci'), { ...FAST, ...START_FAST });

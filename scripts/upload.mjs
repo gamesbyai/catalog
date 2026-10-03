@@ -4,7 +4,7 @@
 //     [--only <slugs>] [--min-frames 1-3]   (re-captures: replace live images only with at least as many)
 // Runs in CI's upload job, which holds the R2 token. Everything in out/ came from a job that ran untrusted game
 // code, so it is only ever read as bytes: PNGs are decoded by sharp and re-encoded from raw pixels (no metadata, no
-// trailing bytes survive), failed.json is parsed as JSON, and nothing from out/ is executed or uploaded as-is.
+// trailing bytes survive), failed.json and engine.json are parsed as JSON, and nothing from out/ is executed or uploaded as-is.
 // Games in --uploads whose entry names the creator's screenshots (provenance.uploads, from the site's submit form) get
 // those instead: fetched from the site's internal route (NOTIFY_URL's origin, INTERNAL_NOTIFY_TOKEN), held in memory
 // only, and decoded and re-encoded the same way.
@@ -17,6 +17,7 @@ import { parse } from 'yaml';
 import sharp from 'sharp';
 import { AwsClient } from 'aws4fetch';
 import { createHash } from 'node:crypto';
+import { RENDERERS } from './engine.mjs';
 
 export const MEDIA_URL = 'https://media.gamesbyai.win';
 const ROOT = fileURLToPath(new URL('..', import.meta.url));
@@ -228,6 +229,41 @@ function readFailed(outDir) {
   }
 }
 
+// engine.json is an untrusted detector artifact. Its engine slug is accepted only when it appears in
+// the checked-out taxonomy and is not a renderer; its renderer only as one of the fixed RENDERERS (a separate key,
+// never the engine); its other fields are never copied into the public marker.
+const ENGINE_ARTIFACT_MAX = 64 * 1024;
+let trustedEngineSlugs;
+function engineSlugs() {
+  if (trustedEngineSlugs) return trustedEngineSlugs;
+  try {
+    const taxonomy = parse(readRegularFile(join(ROOT, 'taxonomies', 'engines.yaml'), 1 << 20).toString('utf8'));
+    trustedEngineSlugs = new Set(Array.isArray(taxonomy?.terms) ? taxonomy.terms.map((term) => term?.slug).filter(isSlug) : []);
+  } catch {
+    trustedEngineSlugs = new Set();
+  }
+  return trustedEngineSlugs;
+}
+
+function readEngine(outDir, slug) {
+  try {
+    const artifact = JSON.parse(readRegularFile(join(outDir, slug, 'engine.json'), ENGINE_ARTIFACT_MAX).toString('utf8'));
+    if (!artifact || typeof artifact !== 'object' || Array.isArray(artifact)) return null;
+    const renderer = RENDERERS.includes(artifact.renderer) ? { renderer: artifact.renderer } : {};
+    if (!isSlug(artifact.engine) || RENDERERS.includes(artifact.engine) || !engineSlugs().has(artifact.engine)) return renderer;
+    const evidence = Array.isArray(artifact.evidence)
+      ? artifact.evidence
+          .filter((item) => typeof item === 'string')
+          .map((item) => item.replace(/[^\x20-\x7e]/g, ' ').replace(/\s+/g, ' ').trim().slice(0, 80))
+          .filter(Boolean)
+          .slice(0, 5)
+      : [];
+    return { engine: artifact.engine, engineEvidence: evidence, ...renderer };
+  } catch {
+    return null;
+  }
+}
+
 function loadEntry(slug, { gamesDir, entriesRef, repoDir }) {
   try {
     const text = entriesRef
@@ -409,12 +445,21 @@ export async function runUpload({ outDir, gamesDir = join(ROOT, 'games'), entrie
   const frameCount = {}; // slug → images that went up
 
   for (const slug of [...new Set([...captured, ...fromCreator])].sort()) {
-    delete problems[slug]; // a fresh capture replaces an earlier failure
     if (inPr && !inPr.has(slug)) {
       problems[slug] = 'not-in-pr';
       log(`skip ${slug}: not added or changed by this PR`);
       continue;
     }
+    // The capture step can leave only engine.json when it opened a game but got no usable screenshots.
+    // Keep the capture failure recorded in failed.json instead of treating the metadata file as an image.
+    if (!fromCreator.has(slug) && problems[slug]) {
+      const files = readdirSync(join(outDir, slug));
+      if (files.length === 1 && files[0] === 'engine.json') {
+        log(`skip ${slug}: capture failed (${problems[slug]})`);
+        continue;
+      }
+    }
+    delete problems[slug]; // a fresh capture replaces an earlier failure
     if (!entryOf(slug)) {
       problems[slug] = 'no-entry';
       log(`skip ${slug}: no entry`);
@@ -494,7 +539,7 @@ export async function runUpload({ outDir, gamesDir = join(ROOT, 'games'), entrie
     // The ready marker goes up last and only after every variant: the site links a game's images only when it exists.
     if (results.every((r) => r.ok)) {
       const marker = { key: `games/${slug}/ready.json`, file: join(vdir, slug, 'ready.json'), type: 'application/json' };
-      writeFileSync(marker.file, JSON.stringify({ slug, files: variants.length, names, widths: WIDTHS }));
+      writeFileSync(marker.file, JSON.stringify({ slug, files: variants.length, names, widths: WIDTHS, ...(upload ? {} : readEngine(outDir, slug) ?? {}) }));
       const [res] = dryRun ? [{ ok: true }] : await mapLimit([marker], 1, (v) => put(v.key, v.file, v.type));
       if (res.ok) uploaded.push(marker.key);
       else results.push(res);

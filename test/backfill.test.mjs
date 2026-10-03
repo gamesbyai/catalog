@@ -20,7 +20,7 @@ function r2({ marker, lastModified = 'Tue, 29 Sep 2026 18:00:00 GMT' }) {
 }
 
 test('a game without the 960 size gets it for every image, then a marker that lists it', async () => {
-  const s = r2({ marker: { slug: 'sky', files: 13, names: ['cover', 'shot-1'] } });
+  const s = r2({ marker: { slug: 'sky', files: 13, names: ['cover', 'shot-1'], engine: 'threejs', engineEvidence: ['checked against trusted code'] } });
   assert.equal(await backfillGame('sky', { fetchImpl: s.fetchImpl, put: s.put }), 'added');
   assert.deepEqual(s.puts.map((p) => p.key), ['games/sky/cover-960.avif', 'games/sky/cover-960.webp', 'games/sky/shot-1-960.avif', 'games/sky/shot-1-960.webp', 'games/sky/ready.json']);
   assert.equal((await sharp(s.puts[1].data).metadata()).width, 960);
@@ -28,6 +28,8 @@ test('a game without the 960 size gets it for every image, then a marker that li
   const marker = JSON.parse(s.puts.at(-1).data.toString());
   assert.deepEqual(marker.widths, [320, 640, 960, 1280]);
   assert.deepEqual(marker.names, ['cover', 'shot-1']);
+  assert.equal(marker.engine, 'threejs');
+  assert.deepEqual(marker.engineEvidence, ['checked against trusted code']);
   // The source image is read at the marker's version, never a stale edge-cached copy.
   assert.ok(s.fetched.some((u) => /cover-1280\.webp\?v=[a-z0-9]+$/.test(u)));
 });

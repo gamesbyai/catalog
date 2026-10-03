@@ -4,7 +4,8 @@ name: capture
 # Game pages are untrusted code. They only ever run in the `capture` job, which has no secrets and a read-only token.
 # The `upload` job holds the R2 token and must NEVER execute files from the `shots` artifact (or anything else from
 # the PR): it checks out the base commit, installs dependencies without install scripts, reads the PNGs as bytes and
-# re-encodes them with sharp, and reads the PR's entries with `git show` as data. The PR comment is our own
+# re-encodes them with sharp, validates engine.json as bounded JSON against its trusted taxonomy, and reads the PR's
+# entries with `git show` as data. The PR comment is our own
 # contact sheet, with every entry string escaped.
 #
 # A game whose creator sent screenshots with the submission (provenance.uploads) is never opened in the browser: the
