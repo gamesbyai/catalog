@@ -1,0 +1,43 @@
+{
+  "slugsIn": [
+    ["https://gamesbyai.win/games/jellyblob/", ["jellyblob"]],
+    ["Play it: gamesbyai.win/games/plugs.", ["plugs"]],
+    ["(www.gamesbyai.win/games/a-b)", ["a-b"]],
+    ["HTTPS://GAMESBYAI.WIN/GAMES/X/", ["x"]],
+    ["http://gamesbyai.win/games/a?x=1 gamesbyai.win/games/b#play gamesbyai.win/games/a", ["a", "b"]],
+    ["<gamesbyai.win/games/a> [gamesbyai.win/games/b] \"gamesbyai.win/games/c\" 'gamesbyai.win/games/d'", ["a", "b", "c", "d"]],
+    ["https://scam.example/?u=gamesbyai.win/games/jellyblob", []],
+    ["https://bit.ly/gamesbyai.win/games/plugs", []],
+    ["notgamesbyai.win/games/x", []],
+    ["gamesbyai.win/games/x-", []],
+    ["gamesbyai.win/games/xy_z", []],
+    ["https://gamesbyai.win.evil/games/x gamesbyai.win:443/games/x", []]
+  ],
+  "youtubeId": [
+    ["Jtoj-fG2GzM", "Jtoj-fG2GzM"],
+    ["https://youtube.com/watch?v=Jtoj-fG2GzM", "Jtoj-fG2GzM"],
+    ["www.youtube.com/watch?v=Jtoj-fG2GzM&t=20", "Jtoj-fG2GzM"],
+    ["https://m.youtube.com/watch?v=Jtoj-fG2GzM", "Jtoj-fG2GzM"],
+    ["https://youtube.com/shorts/Jtoj-fG2GzM", "Jtoj-fG2GzM"],
+    ["https://www.youtube.com/live/Jtoj-fG2GzM/", "Jtoj-fG2GzM"],
+    ["youtube.com/embed/Jtoj-fG2GzM", "Jtoj-fG2GzM"],
+    ["https://youtu.be/Jtoj-fG2GzM?si=share", "Jtoj-fG2GzM"],
+    ["youtu.be/Jtoj-fG2GzM", "Jtoj-fG2GzM"],
+    ["https://youtube.com.evil.example/watch?v=Jtoj-fG2GzM", null],
+    ["https://youtube.com@evil.example/watch?v=Jtoj-fG2GzM", null],
+    ["https://user@youtube.com/watch?v=Jtoj-fG2GzM", null],
+    ["https://youtube.com:443/watch?v=Jtoj-fG2GzM", null],
+    ["https://youtube.com:444/watch?v=Jtoj-fG2GzM", null],
+    ["javascript:Jtoj-fG2GzM", null],
+    ["http://youtube.com/watch?v=Jtoj-fG2GzM", null],
+    ["ftp://youtu.be/Jtoj-fG2GzM", null],
+    ["Jtoj-fG2Gz", null],
+    ["Jtoj-fG2GzMM", null],
+    ["Jtoj.fG2GzM", null],
+    ["https://youtu.be/Jtoj-fG2GzM/extra", null],
+    ["https://youtube.com/watch?v=Jtoj-fG2GzM&v=AbCdEfGhIjK", null],
+    ["https://youtube.com./watch?v=Jtoj-fG2GzM", null],
+    ["https://%79outube.com/watch?v=Jtoj-fG2GzM", null],
+    ["https://youtube.com\\@evil.example/watch?v=Jtoj-fG2GzM", null]
+  ]
+}
