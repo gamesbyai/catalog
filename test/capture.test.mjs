@@ -33,7 +33,9 @@ const PAGES = {
     window.PIXI = { VERSION: '8.0.0' };
   </script>`),
   '/engine-webgl': gamePage(`<canvas id="gl" width="64" height="64"></canvas><script>
-    const gl = document.getElementById('gl').getContext('webgl2');
+    // CI's software renderer may offer WebGL 1 only.
+    const canvas = document.getElementById('gl');
+    const gl = canvas.getContext('webgl2') || canvas.getContext('webgl');
     gl.clearColor(1, 0, 0, 1); gl.clear(gl.COLOR_BUFFER_BIT);
     HTMLCanvasElement.prototype.getContext = () => { fetch('/hit/engine-context'); throw new Error('do not probe'); };
   </script>`),
