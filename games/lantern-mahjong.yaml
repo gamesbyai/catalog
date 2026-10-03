@@ -27,7 +27,9 @@ play:
   embeddable: true
 creator:
   name: Kevin MacLeod
-  handle: kevin-macleod
+  handle: kmacleod
+  links:
+    - https://kmacleod.itch.io
 made:
   models:
     - claude-opus-5

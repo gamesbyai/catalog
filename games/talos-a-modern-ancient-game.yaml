@@ -33,8 +33,9 @@ play:
   embeddable: true
 creator:
   name: Kevin MacLeod
-  handle: kevin-macleod
+  handle: kmacleod
   links:
+    - https://kmacleod.itch.io
     - https://www.youtube.com/channel/UCSZXFhRIx6b0dFX3xS8L1yQ
 made:
   models:
