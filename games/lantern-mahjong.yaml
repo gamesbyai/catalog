@@ -1,0 +1,59 @@
+slug: lantern-mahjong
+title: Lantern Mahjong
+tagline: Clear mahjong boards by matching tiles, on 12 layouts with every deal solvable.
+description: "When it loads you're looking at a full pile of 144 mahjong tiles on a dark starry backdrop. Along the top there are buttons for undo, a hint, board choice, achievements and settings.
+
+
+  You clear a board by matching tiles and working down through the layers until nothing's left. There are 12 layouts to pick from, and fewer layers means an easier board, though every one of them uses all 144 tiles.
+
+
+  Luckily, you'll never start on a hopeless board, because Claude wrote a deal algorithm that guarantees every deal can be solved.
+
+
+  The tile art is public domain, and Claude drew the nine faces that were missing: the flowers, the seasons and the dragons. In settings you can swap the background and the tiles, and you can dim any tile that can't be played yet, which is a nice touch. Sound, the clock and a board state readout are all optional.
+
+
+  There's also a statistics screen with best times, plus a list of achievements, and once you clear a board you can play it again or jump to another one.
+
+
+  Kevin MacLeod started from an open-source mahjong app, but too many of its assets were GPL or share-alike. So they rewrote it from scratch as one offline file, all CC0, and recorded the tile clacks and the win harp themselves."
+play:
+  url: https://danger.academy/Mahjong/
+  platforms:
+    - browser
+  embedPermission:
+    by: submission
+    date: 2026-10-03
+  embeddable: true
+creator:
+  name: Kevin MacLeod
+  handle: kevin-macleod
+made:
+  models:
+    - claude-opus-5
+  tools: []
+  aiShare: most
+  source: "Creator's submission (issue #84)"
+  evidence: creator
+  notes: I started from an open-source Angular mahjong app and asked Claude to audit every asset's license. Too many were GPL or share-alike, so we rewrote it from scratch as one offline HTML file, all CC0. Claude found public domain tile art, drew the nine missing flower, season and dragon faces, and wrote a deal algorithm that guarantees every board is solvable. I chose the 12 layouts and recorded the tile clacks and win harp.
+tech:
+  multiplayer: single
+genres:
+  - casual
+  - puzzle
+  - board
+media:
+  cover: games/lantern-mahjong/cover
+  screenshots:
+    - games/lantern-mahjong/shot-1
+    - games/lantern-mahjong/shot-2
+dates:
+  added: 2026-10-03
+  updated: 2026-10-03
+status: live
+provenance:
+  foundVia: form
+  submittedBy: "#84"
+  uploads:
+    ref: 8f818debb037196a
+    count: 3
