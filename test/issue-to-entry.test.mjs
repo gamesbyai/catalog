@@ -376,3 +376,17 @@ test('a name that already has one page joins it, whatever handle the profile lin
   const nameless = toEntry(parseIssue(body({ 'Creator name': 'Unknown creator', 'Profile link (optional)': 'https://github.com/someone' })), ctx);
   assert.equal(nameless.entry.creator.handle, 'someone');
 });
+
+test('a one-word name, or an X account the page does not name, only gets a note: a name alone proves no one', () => {
+  const creators = new Map([['alvin', 'Alvin'], ['adal', 'Ada Lovelace']]);
+  const accounts = new Map([['adal', { x: new Set(['adal']), youtube: new Set() }]]);
+  const ctx = { ...loadContext(repo()), creators, accounts, today: '2026-10-01', issue: 44 };
+  const short = toEntry(parseIssue(body({ 'Creator name': 'Alvin', 'Profile link (optional)': 'https://github.com/alvin-b' })), ctx);
+  assert.equal(short.entry.creator.handle, 'alvin-b');
+  assert.ok(short.notes.some((n) => n.includes('If this is the same person, change the handle to alvin')));
+  const otherX = toEntry(parseIssue(body({ 'Creator name': 'Ada Lovelace', 'Profile link (optional)': 'https://x.com/someone_else' })), ctx);
+  assert.equal(otherX.entry.creator.handle, 'someone-else');
+  assert.ok(otherX.notes.some((n) => n.includes('change the handle to adal')));
+  const sameX = toEntry(parseIssue(body({ 'Creator name': 'Ada Lovelace', 'Profile link (optional)': 'https://x.com/AdaL' })), ctx);
+  assert.equal(sameX.entry.creator.handle, 'adal');
+});

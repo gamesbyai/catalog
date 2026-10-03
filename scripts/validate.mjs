@@ -6,6 +6,7 @@ import { fileURLToPath } from 'node:url';
 import { parse } from 'yaml';
 import Ajv2020 from 'ajv/dist/2020.js';
 import addFormats from 'ajv-formats';
+import { accountsOf, differentAccounts, nameKey, tellingName } from './issue-to-entry.mjs';
 
 const KINDS = ['providers', 'models', 'tools', 'engines', 'genres', 'jams'];
 
@@ -43,10 +44,12 @@ export function validate(dir = '.') {
   const files = existsSync(gamesDir) ? readdirSync(gamesDir).filter((f) => f.endsWith('.yaml')).sort() : [];
   const playUrls = new Map();
   const handles = new Map();
+  const games = [];
   for (const f of files) {
     const rel = `games/${f}`;
     const g = read(rel);
     if (g === undefined) continue;
+    games.push(g);
     if (!vGame(g)) {
       problems.push(...fmt(rel, vGame.errors));
       continue;
@@ -71,13 +74,16 @@ export function validate(dir = '.') {
     else handles.set(g.creator.handle, g.creator.name);
   }
   // And one page per creator: the same name under two handles splits their games over two pages (kevin-macleod and
-  // kmacleod, 2026-10-03). Placeholder names identify no one (scripts/issue-to-entry.mjs has the same list).
+  // kmacleod, 2026-10-03). Only for names that likely mean one person (two or more words) and pages whose X or YouTube
+  // accounts don't tell two people apart, the same test submissions use to join a page (scripts/issue-to-entry.mjs).
+  const accounts = accountsOf(games);
   const pages = new Map();
   for (const [handle, name] of handles) {
-    const key = name.trim().replace(/\s+/g, ' ').toLowerCase();
-    if (['unknown creator', 'unknown', 'anonymous'].includes(key)) continue;
-    if (pages.has(key)) problems.push(`creator "${name}" has two pages, /creators/${pages.get(key)}/ and /creators/${handle}/: give their games one handle`);
-    else pages.set(key, handle);
+    const key = nameKey(name);
+    if (!tellingName(key)) continue;
+    const same = (pages.get(key) ?? []).find((h) => !differentAccounts(accounts.get(h), accounts.get(handle)));
+    if (same) problems.push(`creator "${name}" has two pages, /creators/${same}/ and /creators/${handle}/: give their games one handle (or, for two different people, name their X or YouTube accounts)`);
+    pages.set(key, [...(pages.get(key) ?? []), handle]);
   }
   return { problems, files: files.length };
 }
