@@ -18,6 +18,7 @@ jobs:
           private-key: ${{ secrets.GH_APP_PRIVATE_KEY }}
           owner: gamesbyai
           repositories: gamesbyai-site
+          permission-contents: write # repository_dispatch, nothing else
       - name: Rebuild the site
         env:
           GH_TOKEN: ${{ steps.app.outputs.token }}

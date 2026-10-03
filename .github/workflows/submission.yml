@@ -53,6 +53,10 @@ jobs:
         with:
           app-id: ${{ secrets.GH_APP_ID }}
           private-key: ${{ secrets.GH_APP_PRIVATE_KEY }}
+          # This repository only: the submission branch and entry, the PR, and comments and labels on the issue.
+          permission-contents: write
+          permission-pull-requests: write
+          permission-issues: write
       - name: Open or update the pull request
         if: steps.limit.outputs.ok == 'true'
         env:

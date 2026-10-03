@@ -33,6 +33,10 @@ jobs:
         with:
           app-id: ${{ secrets.GH_APP_ID }}
           private-key: ${{ secrets.GH_APP_PRIVATE_KEY }}
+          # This repository only: push to the PR branch, comment on, label and close the PR.
+          permission-contents: write
+          permission-pull-requests: write
+          permission-issues: write
       - name: Check the PR branch
         id: pr
         env:

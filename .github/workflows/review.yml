@@ -1,68 +1,48 @@
 name: review
-# Posts the review card on a submission PR after its capture run. The review tools live in a private repository and
-# run from main; nothing from the PR is checked out or executed here.
+# After each capture run of a submission PR, hands the PR number and the captured head commit to the site repository
+# (repository_dispatch through the GitHub App, which is installed there). Nothing from the PR is checked out or run
+# here, no other secret is used, and this log never shows how a submission fared.
 on:
   workflow_run:
     workflows: [capture]
     types: [completed]
-permissions:
-  contents: read
+permissions: {}
 jobs:
-  card:
+  dispatch:
     # Same-repository submission branches only: a fork can name a branch submission/* too.
     if: >-
       startsWith(github.event.workflow_run.head_branch, 'submission/') &&
       github.event.workflow_run.head_repository.full_name == github.repository &&
       github.event.workflow_run.conclusion != 'cancelled'
     runs-on: ubuntu-latest
-    # The review tools end their own work well inside this limit, so the card always posts.
-    timeout-minutes: 30
+    timeout-minutes: 5
     permissions:
-      contents: read
-      pull-requests: write
-    concurrency:
-      group: review-${{ github.event.workflow_run.head_branch }}
-      cancel-in-progress: true
+      pull-requests: read
     steps:
-      - uses: actions/checkout@v5
-        with: { ref: main, persist-credentials: false }
-      - uses: actions/create-github-app-token@v2
-        id: tools
-        with:
-          app-id: ${{ secrets.GH_APP_ID }}
-          private-key: ${{ secrets.GH_APP_PRIVATE_KEY }}
-          owner: gamesbyai
-          repositories: gamesbyai-site
-          permission-contents: read
-          permission-issues: write
-      - uses: actions/checkout@v5
-        with:
-          repository: gamesbyai/gamesbyai-site
-          ref: main
-          token: ${{ steps.tools.outputs.token }}
-          path: tools
-          sparse-checkout: review
-          persist-credentials: false
-      - uses: actions/setup-node@v5
-        with: { node-version: 22 }
-      - run: npm ci --ignore-scripts --no-audit --no-fund --prefix tools/review
       - uses: actions/create-github-app-token@v2
         id: app
         with:
           app-id: ${{ secrets.GH_APP_ID }}
           private-key: ${{ secrets.GH_APP_PRIVATE_KEY }}
+          owner: gamesbyai
+          repositories: gamesbyai-site
           permission-contents: write
-      - name: Post the review card
+      - name: Hand the PR over
         env:
-          GITHUB_TOKEN: ${{ github.token }}
+          GH_TOKEN: ${{ github.token }}
           APP_TOKEN: ${{ steps.app.outputs.token }}
-          HEAD_BRANCH: ${{ github.event.workflow_run.head_branch }}
-          HEAD_SHA: ${{ github.event.workflow_run.head_sha }}
-          CLAUDE_CODE_OAUTH_TOKEN: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
-          URLSCAN_TOKEN: ${{ secrets.URLSCAN_TOKEN }}
-          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-          CATALOG_DIR: ${{ github.workspace }}
-          # The full review card is saved as an issue in the private repository; the PR gets a neutral status.
-          PRIVATE_TOKEN: ${{ steps.tools.outputs.token }}
-          PRIVATE_REPO: gamesbyai/gamesbyai-site
-        run: node tools/review/review-card.mjs
+          BRANCH: ${{ github.event.workflow_run.head_branch }}
+          SHA: ${{ github.event.workflow_run.head_sha }}
+          PR: ${{ github.event.workflow_run.pull_requests[0].number }}
+          PR_REF: ${{ github.event.workflow_run.pull_requests[0].head.ref }}
+        run: |
+          [[ "$BRANCH" =~ ^submission/[a-z0-9]+(-[a-z0-9]+)*$ ]] || exit 0
+          [[ "$SHA" =~ ^[0-9a-f]{40}$ ]] || { echo "::error::unexpected head SHA"; exit 1; }
+          [ "$PR_REF" = "$BRANCH" ] || PR=""
+          if [ -z "$PR" ]; then
+            PR=$(gh pr list --repo "$GITHUB_REPOSITORY" --head "$BRANCH" --state open --json number,isCrossRepository \
+              --jq '[.[] | select(.isCrossRepository | not) | .number][0] // empty')
+          fi
+          [[ "$PR" =~ ^[1-9][0-9]*$ ]] || { echo "no open pull request for this branch"; exit 0; }
+          GH_TOKEN="$APP_TOKEN" gh api repos/gamesbyai/gamesbyai-site/dispatches --silent \
+            -f event_type=catalog-pr -F "client_payload[pr]=$PR" -f "client_payload[head_sha]=$SHA"

@@ -60,7 +60,7 @@ test('a valid submission becomes a live entry (the merge is the approval) that f
   assert.deepEqual(r.entry.provenance, { foundVia: 'form', submittedBy: '#12' });
   assert.deepEqual(r.entry.creator, { name: 'Ada', handle: 'ada-makes', x: 'ada_makes' });
   writeFileSync(join(dir, 'games', 'sky-hop.yaml'), stringify(r.entry));
-  // The intended gate: the review card commits the drafted description; until then validate fails on it alone.
+  // The intended gate: the description is added during review; until then validate fails on it alone.
   const problems = validate(dir).problems;
   assert.ok(problems.length > 0);
   assert.ok(problems.every((p) => /description|"then"/.test(p)), problems.join('\n'));
