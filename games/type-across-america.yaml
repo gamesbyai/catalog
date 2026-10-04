@@ -1,0 +1,47 @@
+slug: type-across-america
+title: Type Across America
+tagline: Submitted by its creator; the description is added during review.
+description: ""
+play:
+  url: https://sleepyowl108.itch.io/type-across-america
+  platforms:
+    - browser
+  embedPermission:
+    by: submission
+    date: 2026-10-04
+creator:
+  name: Sleepyowl108
+  handle: sleepyowl108
+made:
+  models:
+    - claude-opus-5-5
+    - gpt-6-astra
+  tools:
+    - claude-code
+    - codex
+  aiShare: most
+  source: "Creator's submission (issue #107)"
+  evidence: creator
+  notes: Claude did the coding, ChatGPT generated the images, and I wrote the text.
+tech:
+  engine: godot
+  multiplayer: single
+genres:
+  - casual
+  - educational
+  - puzzle
+media:
+  cover: games/type-across-america/cover
+  screenshots:
+    - games/type-across-america/shot-1
+    - games/type-across-america/shot-2
+dates:
+  added: 2026-10-04
+  updated: 2026-10-04
+status: live
+provenance:
+  foundVia: form
+  submittedBy: "#107"
+  uploads:
+    ref: fc2c21e727134911
+    count: 1
