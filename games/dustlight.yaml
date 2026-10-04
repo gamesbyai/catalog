@@ -1,8 +1,8 @@
 slug: dustlight
 title: Dustlight
 tagline: Carry a paper lantern and pull a sky island back together out of glowing dust.
-description: "Dustlight is a short exploration game played in the browser, set on a
-  sky island at night that has crumbled into drifting dust. You're a small
+description: "Dustlight is a short exploration game played in the browser, set
+  on a sky island at night that has crumbled into drifting dust. You're a small
   paper-lantern spirit, and colour comes back wherever your warm light falls.
   Each ember you find sends a spark to a landmark, a lighthouse, a keeper's
   cottage, a blossom tree or a mossy shrine arch, and it pulls itself back
@@ -16,10 +16,10 @@ description: "Dustlight is a short exploration game played in the browser, set o
   touch controls.
 
 
-  Everything you see is drawn with about 1.7 million Gaussian splats rather
-  than triangles. We built the models from Codex drawings in Blender 5.3, turned
-  them into splats with Geometry Nodes, and the game draws them with Three.js and
-  the Spark library. The sound effects are synthesised in code."
+  Everything you see is drawn with about 1.7 million Gaussian splats rather than
+  triangles. We built the models from Codex drawings in Blender 5.3, turned them
+  into splats with Geometry Nodes, and the game draws them with Three.js and the
+  Spark library. The sound effects are synthesised in code."
 play:
   url: https://gamesbyai.github.io/dustlight/
   platforms:
@@ -75,3 +75,9 @@ dates:
 status: live
 provenance:
   foundVia: pr
+videos:
+  - youtube: DJry6rS9bsA
+    title: Blender 5.3 got Gaussian splats, so we made a game with AI
+    channel: GamesByAI
+    channelId: UCZQ9z0_JDA8PA3qW4B8CMsQ
+    added: 2026-10-04
