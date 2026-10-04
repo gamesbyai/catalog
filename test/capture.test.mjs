@@ -216,6 +216,18 @@ const PAGES = {
   '/ad-late': gamePage(`<script>addEventListener('load', () => setTimeout(() => document.body.insertAdjacentHTML('beforeend', ${JSON.stringify(adFrame('position:fixed;left:276px;bottom:0;width:728px;height:90px'))}), 1500));</script>`),
   '/ad-nested': html(`<iframe src="/ad-banner" style="position:fixed;inset:0;width:1280px;height:720px;border:0"></iframe>`),
   // A game that asks for pointer lock, fullscreen and keyboard lock on Play, in its own page and in a frame.
+  // A menu whose game, once started, blocks the main thread for 2 s every frame (heavy 3D in software after a light
+  // menu): every screenshot after Play times out.
+  '/stall-after-start': menuPage(`<button style="position:absolute;left:40px;bottom:40px;font-size:40px" onclick="hog()">PLAY</button>
+    <script>window.hog = () => {
+      document.getElementById('menu').remove();
+      let t = 0;
+      (function frame() {
+        t += 1; x += 37; y += 11; draw();
+        const end = performance.now() + 2000; while (performance.now() < end) {}
+        requestAnimationFrame(frame);
+      })();
+    };</script>`),
   '/lock-traps': menuPage(`<button id="p" style="position:absolute;left:40px;bottom:40px;font-size:40px">PLAY</button>
     <script>
     const report = (k, v) => fetch('/report/' + k + '/' + encodeURIComponent(v));
@@ -1149,6 +1161,33 @@ test('pickFrames: the frame with detail across the screen comes first, ahead of 
   assert.deepEqual(await pickFrames([patch, tiles]), [tiles, patch]);
   // The start step's frames still come first, whatever their detail: a busy menu never wins the cover over the game.
   assert.deepEqual(await pickFrames([patch, tiles], { preferred: 1 }), [patch, tiles]);
+});
+
+test('pickFrames: a flat-shaded game (few grey levels, detail across the frame) is a game; a progress bar on black is not', async () => {
+  const { pickFrames, frameScore } = await import('../scripts/capture.mjs');
+  // A board of 10 px tiles in three flat colours: about 1.6 bits of grey levels, under the old gate's 3.
+  const board = (shift) => picture(320, 180, (x, y) => [[70, 120, 60], [150, 150, 160], [210, 190, 90]][(Math.floor(x / 10) + 2 * Math.floor(y / 10) + shift) % 3]);
+  const a = await board(0);
+  const b = await board(1);
+  assert.ok((await sharp(a).stats()).entropy < 3);
+  assert.ok((await frameScore(a)).score >= 25, `board ${(await frameScore(a)).score}`);
+  assert.deepEqual(await pickFrames([a, b]), [a, b], 'both boards, not one through the dark-game fallback');
+  const loading = await picture(320, 180, (x, y) => (y >= 120 && y < 130 && x >= 60 && x < 200 ? 230 : 12));
+  assert.deepEqual(await pickFrames([loading, a]), [a]);
+});
+
+test('frames that stop coming after the start step (heavy 3D after a light menu) get a throttled pass; the pass with more frames wins', async () => {
+  const root = tmp();
+  mkdirSync(join(root, 'games'));
+  writeFileSync(join(root, 'games', 'stall.yaml'), `play:\n  url: ${base}/stall-after-start\n`);
+  const lines = [];
+  const [res] = await captureSlugs(['stall'], { ...FAST, ...START_FAST, shotTimeout: 1900, deadline: 20_000, navTimeout: 15_000, root, out: join(root, 'out'), log: (l) => lines.push(l) });
+  assert.equal(res.ok, true, JSON.stringify(res));
+  assert.match(lines.join('\n'), /stall: frames stopped after 1, retry throttled/);
+  assert.equal(res.throttled, true, lines.join('\n'));
+  assert.ok(res.files.length > 1, `${res.files.length} frames\n${lines.join('\n')}`);
+  assert.ok(files(join(root, 'out', 'stall')).length > 1);
+  assert.ok(!(await magentaAt(join(root, 'out', 'stall', 'cover.png'), 300, 200)), 'the cover is the game, not the menu');
 });
 
 // --- Ads (adInView) ---

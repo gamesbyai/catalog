@@ -255,9 +255,14 @@ export async function frameScore(buf) {
   return { score: Math.round(score * 10) / 10, coverage: Math.round(coverage * 1000) / 1000, entropy: Math.round(entropy * 100) / 100, edges: Math.round(edges * 10) / 10, colour: Math.round(colour * 10) / 10 };
 }
 
+/** A frame with this much detail (frameScore) is never a loading screen or a blank canvas, whatever its grey levels. */
+export const MIN_SCORE = 25;
+
 /**
  * Picks the frames worth showing: drops near-black, near-white and flat frames (loading screens, blank canvases),
  * orders the rest by detail (frameScore), and skips near-duplicates. Returns up to `max` PNG buffers, best first.
+ * A frame passes with enough brightness, spread and grey levels, or with a detail score of MIN_SCORE: a flat-shaded game
+ * (a board, low-poly 3D, a dark map) has few grey levels but detail across the whole frame.
  * The first `preferred` frames (the start step's frames after the menu) rank before the rest, whatever their detail:
  * a busy menu full of text would otherwise win the cover over the game behind it.
  */
@@ -274,7 +279,8 @@ export async function pickFrames(frames, { max = 3, preferred = frames.length } 
     }),
   );
   const order = (a, b) => a.tier - b.tier || b.score - a.score;
-  let usable = info.filter((f) => f.mean >= 18 && f.mean <= 245 && f.sd >= 12 && f.entropy >= 3).sort(order);
+  const passes = (f) => f.mean <= 245 && f.sd >= 12 && ((f.mean >= 18 && f.entropy >= 3) || (f.mean >= 8 && f.score >= MIN_SCORE));
+  let usable = info.filter(passes).sort(order);
   // Dark games: when no frame passes, one dark title screen with real content (a logo or a menu, not a spinner on
   // black) still beats no cover.
   if (!usable.length) usable = info.filter((f) => f.mean <= 250 && f.sd >= 8 && f.entropy >= 1.5).sort(order).slice(0, 1);
@@ -1059,7 +1065,8 @@ export async function captureOne(url, outDir, opts = {}) {
     }
     mkdirSync(outDir, { recursive: true });
     picked.forEach((buf, i) => writeFileSync(files[i], buf));
-    result = { ok: true, files: files.slice(0, picked.length), ...(picked.length < files.length ? { partial: true } : {}) };
+    // `stalled`: frames stopped coming after these (a screenshot timed out), so a throttled pass may get more.
+    result = { ok: true, files: files.slice(0, picked.length), ...(picked.length < files.length ? { partial: true } : {}), ...(state.timedOut ? { stalled: true } : {}) };
   } catch (e) {
     cleanup();
     const froze = e instanceof CaptureError && (e.reason === 'deadline' || e.reason === 'screenshot');
@@ -1069,7 +1076,7 @@ export async function captureOne(url, outDir, opts = {}) {
       trace?.(`${e.reason} at ${Date.now() - started} ms: kept ${keep.length} frames`);
       mkdirSync(outDir, { recursive: true });
       keep.forEach((buf, i) => writeFileSync(files[i], buf));
-      result = { ok: true, files: files.slice(0, keep.length), partial: true };
+      result = { ok: true, files: files.slice(0, keep.length), partial: true, stalled: true };
     } else {
       result = e instanceof CaptureError ? { ok: false, reason: e.reason, detail: e.message } : { ok: false, reason: 'error', detail: firstLine(e) };
     }
@@ -1171,14 +1178,13 @@ export async function captureSlugs(slugs, { root = ROOT, out = join(root, 'out')
           const again = await run({ ...opts, itchPage: true });
           if (again.ok) res = { ...again, itchPage: true };
         }
-        // start: 'retry'. A game that kept fewer than three frames (usually a menu that never changed) or only blank
-        // ones gets one more pass with the start step, in a scratch folder; the pass that kept more frames wins.
-        const kept = res.ok ? res.files.length : 0;
-        if (opts.start === 'retry' && (res.ok ? kept < NAMES.length : res.reason === 'blank') && Date.now() - batchStart < budgetMs) {
-          log(`     ${slug}: ${res.ok ? `${kept} of ${NAMES.length} frames` : res.reason}, retry with the start step`);
-          const scratch = mkdtempSync(join(tmpdir(), 'capture-start-'));
-          const again = await captureOne(url, join(scratch, slug), { ...opts, ...all, start: true, ...(res.throttled ? { throttle: true } : {}), ...(res.itchPage ? { itchPage: true } : {}) }).catch((e) => ({ ok: false, reason: 'error', detail: firstLine(e) }));
-          if (again.ok && again.files.length > kept) {
+        // One more pass in a scratch folder, so a worse pass never removes a better one: it replaces this game's files
+        // only when it kept more than `kept` frames. Returns its result with the files in place, or null.
+        const betterPass = async (o, kept) => {
+          const scratch = mkdtempSync(join(tmpdir(), 'capture-pass-'));
+          try {
+            const again = await captureOne(url, join(scratch, slug), { ...o, ...all }).catch((e) => ({ ok: false, reason: 'error', detail: firstLine(e) }));
+            if (!again.ok || again.files.length <= kept) return null;
             for (const n of NAMES) rmSync(join(out, slug, `${n}.png`), { force: true });
             mkdirSync(join(out, slug), { recursive: true });
             const files = again.files.map((f) => {
@@ -1187,9 +1193,26 @@ export async function captureSlugs(slugs, { root = ROOT, out = join(root, 'out')
               return to;
             });
             copyFileSync(join(scratch, slug, 'engine.json'), join(out, slug, 'engine.json'));
-            res = { ...again, files, started: true };
+            return { ...again, files };
+          } finally {
+            rmSync(scratch, { recursive: true, force: true });
           }
-          rmSync(scratch, { recursive: true, force: true });
+        };
+        // start: 'retry'. A game that kept fewer than three frames (usually a menu that never changed) or only blank
+        // ones gets one more pass with the start step; the pass that kept more frames wins.
+        const kept = res.ok ? res.files.length : 0;
+        if (opts.start === 'retry' && (res.ok ? kept < NAMES.length : res.reason === 'blank') && Date.now() - batchStart < budgetMs) {
+          log(`     ${slug}: ${res.ok ? `${kept} of ${NAMES.length} frames` : res.reason}, retry with the start step`);
+          const again = await betterPass({ ...opts, start: true, ...(res.throttled ? { throttle: true } : {}), ...(res.itchPage ? { itchPage: true } : {}) }, kept);
+          if (again) res = { ...again, started: true };
+        }
+        // Frames that stopped coming (every later screenshot timed out, as when heavy 3D starts after a light menu) leave
+        // only what came before: one more pass with throttled frames; the pass that kept more frames wins.
+        if (res.ok && res.stalled && !res.throttled && !opts.throttle && res.files.length < NAMES.length && Date.now() - batchStart < budgetMs) {
+          log(`     ${slug}: frames stopped after ${res.files.length}, retry throttled`);
+          const started = res.started || opts.start === true;
+          const again = await betterPass({ ...opts, throttle: true, ...(started ? { start: true } : {}), ...(res.itchPage ? { itchPage: true } : {}) }, res.files.length);
+          if (again) res = { ...again, throttled: true, ...(res.started ? { started: true } : {}), ...(res.itchPage ? { itchPage: true } : {}) };
         }
       }
     }
