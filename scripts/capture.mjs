@@ -638,6 +638,9 @@ async function playInput(page, i, o, guard, signal) {
   if (step.press) await pressKey(page, step.press, o, guard, o.clickTimeout);
 }
 
+/** How long the end of a capture waits for engine answers still out, its own last scan's among them. */
+const ENGINE_WAIT = 750;
+
 /**
  * Captures cover.png, shot-1.png and shot-2.png and writes engine.json for an opened game into outDir.
  * @returns {Promise<{ ok: true, files: string[] } | { ok: false, reason: string, detail?: string }>}
@@ -675,14 +678,19 @@ export async function captureOne(url, outDir, opts = {}) {
   // Frames taken so far live outside `work`, so a deadline or a frozen page after the cover still keeps the cover.
   // With the start step, `before` holds the frame taken before it (the menu), used only when nothing after it is.
   const state = { context: null, page: null, opened: false, finished: false, shots: [], before: [], timedOut: false };
-  // The best engine and the best renderer across both scans, each by its own priority.
+  // The best engine and the best renderer across all scans, each by its own priority.
   let engine = { engine: null, renderer: null, evidence: [] };
-  let engineTask;
   const better = (order, next, current) => next && (!current || order.indexOf(next) < order.indexOf(current));
   const detected = (next) => {
     if (better(ENGINE_PRIORITY, next.engine, engine.engine)) engine = { ...engine, engine: next.engine, evidence: next.evidence };
     if (better(RENDERERS, next.renderer, engine.renderer)) engine = { ...engine, renderer: next.renderer };
   };
+  // Engine scans: when the game is found, after each input that can start it, and at the end. An answer counts whenever
+  // it comes before the capture stops reading (`scanning`): a page busy drawing on a loaded runner can take longer than
+  // any fixed wait to answer, and a scan at the end alone missed engines that the first click started.
+  const scanning = new AbortController();
+  const scans = [];
+  const scan = () => scans.push(detectPageEngine(state.page, limit + ENGINE_WAIT, scanning.signal).then(detected));
   const pick = () => pickFrames([...state.shots, ...state.before], { preferred: state.shots.length });
   const work = async () => {
     const b = await guard(
@@ -765,9 +773,9 @@ export async function captureOne(url, outDir, opts = {}) {
       }
     }
 
-    // Scan all frames after finding itch's game, while the screenshot schedule proceeds. A final short scan also
-    // catches engines loaded by Play or a late iframe (given more time: a slow runner answered too late at 350 ms).
-    engineTask = detectPageEngine(page, 400).then(detected);
+    // Scan all frames after finding itch's game, while the screenshot schedule proceeds. Later scans catch engines
+    // loaded by the first click, Play or a late iframe.
+    scan();
 
     // One frame. A busy renderer can miss one frame deadline; one retry before giving up on the game. Null when the
     // game stopped answering after earlier frames (those may be enough; later ones are a bonus).
@@ -803,6 +811,7 @@ export async function captureOne(url, outDir, opts = {}) {
       await guard(sleep(t0 + o.times[0] - Date.now(), stop.signal));
       state.before.push(await snap());
       await startGame(page, o, guard, stop.signal);
+      scan();
       const t1 = Date.now();
       // Local review (`--trace`): when the start step ended and when each frame after it came, from the capture's start.
       trace?.(`start step done at ${t1 - started} ms`);
@@ -828,9 +837,11 @@ export async function captureOne(url, outDir, opts = {}) {
       if (i === 0) {
         // One click in the centre starts games that wait for input (never on a link or a wallet button: pressCheck)…
         await clickAt(page, o.viewport.width / 2, o.viewport.height / 2, o, guard);
+        scan();
       } else if (i === 1) {
         // …and Enter gets past "press any key" menus.
         await pressKey(page, 'Enter', o, guard);
+        scan();
       }
     }
   };
@@ -865,8 +876,11 @@ export async function captureOne(url, outDir, opts = {}) {
     state.finished = true;
     clearTimeout(deadline);
     stop.abort();
-    await engineTask;
-    if (state.opened) detected(await detectPageEngine(state.page, 750));
+    // The last scan, then at most ENGINE_WAIT ms for its answer and any other still out; what answered by then counts.
+    if (state.opened) scan();
+    await within(Promise.all(scans), ENGINE_WAIT);
+    scanning.abort();
+    await Promise.all(scans);
     await closeContext(state.context, o.closeTimeout);
     if (state.opened) {
       mkdirSync(outDir, { recursive: true });

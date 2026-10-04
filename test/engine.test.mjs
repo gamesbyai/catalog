@@ -146,6 +146,20 @@ test('every frame is checked under one budget, even if another frame hangs or de
   assert.deepEqual(await detectPageEngine({ frames: () => { throw new Error('closed'); } }), { engine: null, renderer: null, evidence: [] });
 });
 
+test('a scan with a long budget ends when its signal does, with the frames that answered by then', async () => {
+  const phaser = JSON.stringify(globals({ 'Phaser.VERSION': '3.80.1' }));
+  const page = { frames: () => [{ evaluate: () => new Promise(() => {}) }, { evaluate: async () => phaser }] };
+  const end = new AbortController();
+  const started = performance.now();
+  const scan = detectPageEngine(page, 60_000, end.signal);
+  setTimeout(() => end.abort(), 50);
+  assert.equal((await scan).engine, 'phaser');
+  assert.ok(performance.now() - started < 1000, `took ${Math.round(performance.now() - started)} ms`);
+  const late = performance.now();
+  await detectPageEngine(page, 60_000, end.signal);
+  assert.ok(performance.now() - late < 1000, 'a scan started after the end returns at once');
+});
+
 test("itch.io's own page around the game frame is never read (it loads React for its site)", async () => {
   const frame = (url, answer) => ({ url: () => url, evaluate: async () => answer });
   const react = JSON.stringify(globals({ React: true }));

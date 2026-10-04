@@ -40,6 +40,12 @@ const PAGES = {
     HTMLCanvasElement.prototype.getContext = () => { fetch('/hit/engine-context'); throw new Error('do not probe'); };
   </script>`),
   '/engine-late': gamePage(`<script>addEventListener('click', () => { window.Phaser = { VERSION: '3.80.1' }; });</script>`),
+  // The engine appears on the start click, the page then answers nothing for 1.5 s and locks up on Enter: the look at
+  // the end of the capture gets no answer, so only the late answer to a look taken after the click can name the engine.
+  '/engine-late-hang': gamePage(`<script>
+    addEventListener('click', () => { window.Phaser = { VERSION: '3.80.1' }; setTimeout(() => { const end = performance.now() + 1500; while (performance.now() < end) {} }); });
+    addEventListener('keydown', (e) => { if (e.key === 'Enter') setTimeout(() => { for (;;) {} }); });
+  </script>`),
   // A page that rewrites the built-ins a reader might use, so that each returns a huge string or list, and lies about
   // NodeList lengths. Paths of repeated "/@react-three/fiber" made the old reader's URL rule quadratic.
   '/engine-tamper': gamePage(`<script src="/engine-lib/helper.js"></script><script>
@@ -286,6 +292,13 @@ test('engine inspection skips page getters; drawn canvases give only a renderer,
   }
   assert.equal(hits['engine-getter'], 0);
   assert.equal(hits['engine-context'], 0, 'inspection uses the observed context, never a page getContext override');
+});
+
+test('an engine that appears on the start click is found even when the page answers late and then stops answering', async () => {
+  const dir = join(tmp(), 'engine');
+  // Two frames: the capture ends right after Enter locks the page up. The second frame waits out the busy page.
+  await captureOne(`${base}/engine-late-hang`, dir, { ...FAST, times: [300, 700], shotTimeout: 6000, deadline: 20_000 });
+  assert.deepEqual(JSON.parse(readFileSync(join(dir, 'engine.json'), 'utf8')), { engine: 'phaser', renderer: 'canvas', evidence: ['window.Phaser.VERSION 3.80.1'] });
 });
 
 test('a page that rewrites String, Array, RegExp, JSON and NodeList built-ins gets the same bounded reading, quickly', async () => {

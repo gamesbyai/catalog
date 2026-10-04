@@ -279,7 +279,8 @@ export function readEngineEvidence() {
 
 /**
  * Every frame (up to MAX_FRAMES) gets a chance; one hung/detached frame cannot delay the others or capture by more than
- * the budget. Only a JSON string within MAX_EVIDENCE_JSON is parsed, and detectEngine bounds what it holds.
+ * the budget. The wait also ends when `signal` aborts (capture uses it to stop reading at its end), with the frames
+ * that answered by then. Only a JSON string within MAX_EVIDENCE_JSON is parsed, and detectEngine bounds what it holds.
  */
 // itch.io's own game page (around the game's itch.zone frame) loads its site scripts, React among them: reading it
 // would credit every itch.io game to React. Only the game's frames count.
@@ -290,17 +291,26 @@ const hostPage = (frame) => {
   } catch { return false; }
 };
 
-export async function detectPageEngine(page, budget = 750) {
+export async function detectPageEngine(page, budget = 750, signal) {
   const frames = [];
   let timer;
+  let end;
   try {
     await Promise.race([
       Promise.all(page.frames().filter((frame) => !hostPage(frame)).slice(0, MAX_FRAMES).map((frame) => frame.evaluate(readEngineEvidence).then((data) => {
         if (typeof data === 'string' && data.length <= MAX_EVIDENCE_JSON) frames.push(data);
       }).catch(() => {}))),
-      new Promise((resolve) => { timer = setTimeout(resolve, budget); }),
+      new Promise((resolve) => {
+        timer = setTimeout(resolve, budget);
+        end = resolve;
+        if (signal?.aborted) resolve();
+        else signal?.addEventListener('abort', end, { once: true });
+      }),
     ]);
     return detectEngine(frames.slice(0, MAX_FRAMES).map((data) => { try { return JSON.parse(data); } catch { return {}; } }));
   } catch { return { engine: null, renderer: null, evidence: [] }; }
-  finally { clearTimeout(timer); }
+  finally {
+    clearTimeout(timer);
+    if (end) signal?.removeEventListener('abort', end);
+  }
 }
