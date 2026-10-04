@@ -239,6 +239,8 @@ const PAGES = {
     Element.prototype.requestPointerLock = f.contentWindow.Element.prototype.requestPointerLock;
     report('restored', native(Element.prototype.requestPointerLock));
     const settle = (p) => Promise.resolve(p).then(() => 'resolved', () => 'rejected');
+    report('lock-getter', native(Object.getOwnPropertyDescriptor(Document.prototype, 'pointerLockElement').get));
+    document.addEventListener('pointerlockchange', () => report('lock-change', document.pointerLockElement === document.getElementById('c') ? 'canvas' : 'other'));
     document.getElementById('p').onclick = async () => {
       const c = document.getElementById('c');
       report('pointer-lock', await settle(c.requestPointerLock()));
@@ -1063,17 +1065,28 @@ test('noLocks: pointer lock, fullscreen and keyboard lock never reach the browse
       this.name = name;
     }
   }
-  const win = { Element: function () {}, Document: function () {}, HTMLVideoElement: function () {}, Keyboard: function () {}, DOMException };
+  const win = { Element: function () {}, Document: function () {}, HTMLVideoElement: function () {}, Keyboard: function () {}, DOMException, Event: class { constructor(type) { this.type = type; } }, queueMicrotask };
   const calls = [];
   for (const k of ['requestPointerLock', 'requestFullscreen', 'webkitRequestFullscreen', 'webkitRequestFullScreen']) win.Element.prototype[k] = () => calls.push(k);
   win.Document.prototype.exitPointerLock = () => calls.push('exitPointerLock');
+  Object.defineProperty(win.Document.prototype, 'pointerLockElement', { get: () => calls.push('pointerLockElement'), configurable: true });
   win.HTMLVideoElement.prototype.webkitEnterFullscreen = () => calls.push('webkitEnterFullscreen');
   win.Keyboard.prototype.lock = () => calls.push('lock');
+  const events = [];
+  win.document = Object.assign(Object.create(win.Document.prototype), { dispatchEvent: (e) => events.push(e.type) });
   noLocks(win);
   const el = new win.Element();
+  assert.equal(win.document.pointerLockElement, null);
+  // The game sees its lock (the element and the change event), so it plays on; the pointer itself is never touched.
   assert.equal(await el.requestPointerLock(), undefined);
+  assert.equal(win.document.pointerLockElement, el);
+  await new Promise((r) => setTimeout(r, 0));
+  assert.deepEqual(events, ['pointerlockchange']);
+  assert.equal(win.document.exitPointerLock(), undefined);
+  assert.equal(win.document.pointerLockElement, null);
+  await new Promise((r) => setTimeout(r, 0));
+  assert.deepEqual(events, ['pointerlockchange', 'pointerlockchange']);
   for (const k of ['requestFullscreen', 'webkitRequestFullscreen', 'webkitRequestFullScreen']) await assert.rejects(el[k](), { name: 'NotAllowedError' }, k);
-  assert.equal(new win.Document().exitPointerLock(), undefined);
   assert.equal(new win.HTMLVideoElement().webkitEnterFullscreen(), undefined);
   assert.equal(await new win.Keyboard().lock(), undefined);
   assert.deepEqual(calls, [], 'none of the browser functions ran');
@@ -1084,7 +1097,9 @@ test('noLocks: pointer lock, fullscreen and keyboard lock never reach the browse
 });
 
 test('every capture, CI and local launch alike: a game asking for pointer lock, fullscreen or keyboard lock gets none of them', async (t) => {
-  const expected = { 'lock-api': /^false false false (?:false|absent)$/, 'frame-lock-api': /^false false$/, restored: /^false$/, 'pointer-lock': /^resolved$/, fullscreen: /^rejected$/, 'keyboard-lock': /^(?:resolved|absent)$/, held: /^no no$/ };
+  // The page sees a pointer lock (so a shooter plays instead of pausing) that never reaches the browser; fullscreen and
+  // keyboard lock never happen.
+  const expected = { 'lock-api': /^false false false (?:false|absent)$/, 'frame-lock-api': /^false false$/, restored: /^false$/, 'lock-getter': /^false$/, 'pointer-lock': /^resolved$/, 'lock-change': /^canvas$/, fullscreen: /^rejected$/, 'keyboard-lock': /^(?:resolved|absent)$/, held: /^yes no$/ };
   const check = async (label, opts) => {
     reports = {};
     const res = await captureOne(`${base}/lock-traps`, join(tmp(), `locks-${label}`), { ...FAST, ...START_FAST, ...opts });

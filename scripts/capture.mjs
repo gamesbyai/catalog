@@ -364,9 +364,11 @@ export function noWebGPU(win) {
 /**
  * Runs in the page, in every capture (CI and local, every launch): the game can never lock or hide the pointer, go
  * fullscreen or lock the keyboard, before any of its own code runs. A local browser shares the machine's mouse and
- * keyboard, and nothing a capture opens may hold them; a screenshot never needs them. Pointer lock and keyboard lock
- * answer as if granted (a game waits on, never retries), fullscreen is refused. Fixed in place, so the page can't put
- * the browser's own functions back. Self-contained, like throttleFrames; Playwright runs it in every frame and popup.
+ * keyboard, and nothing a capture opens may hold them; a screenshot never needs them. The browser's own functions are
+ * replaced and fixed in place, so the page can't put them back. A pointer lock happens only inside the page: the game
+ * sees its element in pointerLockElement and gets pointerlockchange, so a shooter plays on instead of pausing on "Click
+ * to resume", while the pointer itself is never touched. Keyboard lock answers as if granted; fullscreen is refused.
+ * Self-contained, like throttleFrames; Playwright runs it in every frame and popup.
  */
 export function noLocks(win) {
   const fix = (proto, key, value) => {
@@ -375,15 +377,37 @@ export function noLocks(win) {
       Object.defineProperty(proto, key, { value, writable: false, configurable: false });
     } catch {}
   };
-  const refuse = function requestFullscreen() {
-    return Promise.reject(new win.DOMException('fullscreen is off in captures', 'NotAllowedError'));
+  let locked = null;
+  const changed = () => {
+    const fire = () => win.document?.dispatchEvent(new win.Event('pointerlockchange'));
+    if (typeof win.queueMicrotask === 'function') win.queueMicrotask(fire);
+    else fire();
   };
   const element = win.Element?.prototype;
   fix(element, 'requestPointerLock', function requestPointerLock() {
+    locked = this;
+    changed();
     return Promise.resolve();
   });
+  fix(win.Document?.prototype, 'exitPointerLock', function exitPointerLock() {
+    if (!locked) return;
+    locked = null;
+    changed();
+  });
+  if (win.Document?.prototype) {
+    try {
+      Object.defineProperty(win.Document.prototype, 'pointerLockElement', {
+        get() {
+          return locked && locked.isConnected !== false ? locked : null;
+        },
+        configurable: false,
+      });
+    } catch {}
+  }
+  const refuse = function requestFullscreen() {
+    return Promise.reject(new win.DOMException('fullscreen is off in captures', 'NotAllowedError'));
+  };
   for (const key of ['requestFullscreen', 'webkitRequestFullscreen', 'webkitRequestFullScreen']) fix(element, key, refuse);
-  fix(win.Document?.prototype, 'exitPointerLock', function exitPointerLock() {});
   for (const key of ['webkitEnterFullscreen', 'webkitEnterFullScreen']) fix(win.HTMLVideoElement?.prototype, key, function webkitEnterFullscreen() {});
   fix(win.Keyboard?.prototype, 'lock', function lock() {
     return Promise.resolve();
