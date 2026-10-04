@@ -208,7 +208,18 @@ const PAGES = {
       const b = document.createElement('button'); b.textContent = 'PLAY'; b.style.cssText = 'position:absolute;left:40px;bottom:40px;font-size:40px';
       b.onclick = () => startGame(); m.appendChild(b);
     };</script>`),
+  // Ads: a yellow AdSense-style frame (Google names them aswift_0, aswift_1, …) over the bottom of the game, below the
+  // fold, hidden in three ways, added a while after load, and inside the frame of a page that frames the game.
+  '/ad-banner': gamePage(adFrame('position:fixed;left:276px;bottom:0;width:728px;height:90px')),
+  '/ad-below': gamePage(adFrame('position:absolute;left:276px;top:1500px;width:728px;height:90px')),
+  '/ad-hidden': gamePage(adFrame('position:fixed;left:0;top:0;width:1280px;height:720px;opacity:0') + adFrame('position:fixed;left:0;bottom:0;width:1px;height:1px', 1) + adFrame('display:none', 2)),
+  '/ad-late': gamePage(`<script>addEventListener('load', () => setTimeout(() => document.body.insertAdjacentHTML('beforeend', ${JSON.stringify(adFrame('position:fixed;left:276px;bottom:0;width:728px;height:90px'))}), 1500));</script>`),
+  '/ad-nested': html(`<iframe src="/ad-banner" style="position:fixed;inset:0;width:1280px;height:720px;border:0"></iframe>`),
 };
+
+function adFrame(style, n = 0) {
+  return `<iframe name="aswift_${n}" srcdoc="<body style='margin:0;background:#ff0'></body>" style="border:0;${style}"></iframe>`;
+}
 
 // The scene behind the menus: still until startGame(); after that it scrolls only while arrow or WASD keys are held.
 function menuPage(menu) {
@@ -870,6 +881,8 @@ const neverPressed = async (path, extra = {}) => {
 test('the deny pattern catches wallet, payment, account, rating and sharing controls, and no start, next or solo name', async () => {
   const { DENY, SOLO_NAMES, START_NAMES, NEXT_NAMES } = await import('../scripts/capture.mjs');
   for (const s of ['Connect Wallet', 'connect', 'Buy 1/2', 'Buy now', 'Purchase', 'Pay $5', 'PayPal', 'Donate 5/5', 'Donation', 'Subscribe', 'Sign in', 'Sign-up', 'Log in', 'Login', 'Register', 'Rate 5/5', 'Rating', 'Vote', 'Share', 'Download', 'Install app', 'Shop', 'Premium', 'Checkout', 'Check out', 'Cart', 'Mint NFT', 'Place bet', 'Bet 10', 'Deposit', 'Jetzt kaufen', 'Spenden', 'Anmelden', 'Bewerten', 'Teilen']) assert.match(s, DENY, s);
+  // A capture never accepts or allows anything: cookie and consent banners, terms, browser permissions.
+  for (const s of ['Accept all', 'Accept cookies', 'I agree', 'Agree and continue', 'Allow', 'Allow notifications', 'Consent', 'Cookie settings', 'Terms of Service', 'Privacy policy', 'GDPR', 'Alle akzeptieren', 'Zustimmen', 'Einverstanden', 'Erlauben', 'Datenschutz']) assert.match(s, DENY, s);
   for (const s of ['Play', '▶ PLAY', 'Start Game', 'Display', 'Pirates 2/8', 'Better luck', 'Shard 3/10', 'Continue', 'Join', 'Deploy', 'Solo', 'Practice', 'Training', 'Spielen', 'Weiter', 'Neon Corner 0/12', 'Player']) assert.doesNotMatch(s, DENY, s);
   const examples = ['Play', 'Start', 'Play Now', 'Start Game', 'New Game', 'Begin Adventure', 'Quick Play', 'Single Player', 'Play Solo', 'Play Offline', 'Play as Guest', 'Play vs CPU', "Let's go", 'Tap to start', 'Press Start', 'Enter the Arena', 'Insert Coin', 'Spiel starten', 'Neues Spiel', 'Continue', 'Join Game', 'Got it', 'Skip intro', "I'm ready", 'Deploy', 'Embark', 'No thanks', 'Not now', 'Maybe later', 'Mute', 'Play without sound', 'Fortfahren', 'Beitreten', 'Practice Range', 'Training Mode', 'Free Play', 'Sandbox', 'FFA Bot Lobby', 'Add Bots', 'Einzelspieler', 'Gegen Computer'];
   for (const s of examples) {
@@ -1005,4 +1018,144 @@ test('CAPTURE_START: true, retry or off; the summary warns about games with fewe
   assert.equal(lines[0], 'captured 2 of 4, 1 with all 3 frames');
   assert.match(lines[1], /^::warning title=Fewer than 3 frames::1 games: menu \(1\)$/);
   assert.equal(summary([{ slug: 'full', ok: true, files: ['a', 'b', 'c'] }]).length, 1, 'no warning when every game is complete');
+});
+
+// --- Frame detail (frameScore) ---
+
+// Deterministic test pictures, w × h RGB: `draw(x, y)` gives a grey level or [r, g, b].
+const picture = (w, h, draw) => {
+  const px = Buffer.alloc(w * h * 3);
+  for (let y = 0; y < h; y++) for (let x = 0; x < w; x++) {
+    const v = draw(x, y);
+    const [r, g, b] = Array.isArray(v) ? v : [v, v, v];
+    px[(y * w + x) * 3] = r;
+    px[(y * w + x) * 3 + 1] = g;
+    px[(y * w + x) * 3 + 2] = b;
+  }
+  return sharp(px, { raw: { width: w, height: h, channels: 3 } }).png().toBuffer();
+};
+// Pseudo-random but repeatable noise: the same picture on every run.
+const noise = (x, y) => Math.imul((x * 73_856_093) ^ (y * 19_349_663), 2_654_435_761) >>> 24;
+// A scene: coloured detail across the whole frame (a level full of things), in cells of 8 px at 1280 px.
+const scene = (w, h) => picture(w, h, (x, y) => {
+  const n = noise(Math.floor((x * 160) / w), Math.floor((y * 90) / h));
+  return [n, (n * 3 + 60) % 256, 255 - n];
+});
+// A title card: a busy logo over 30 % of a flat dark background.
+const titleCard = (w, h) => picture(w, h, (x, y) => (x > w * 0.25 && x < w * 0.75 && y > h * 0.3 && y < h * 0.9 ? noise(x, y) : 30));
+
+test('frameScore: a flat frame scores lowest, a title card on a flat background below a scene with detail everywhere', async () => {
+  const { frameScore } = await import('../scripts/capture.mjs');
+  const flat = await frameScore(await picture(1280, 720, () => 90));
+  const title = await frameScore(await titleCard(1280, 720));
+  const busy = await frameScore(await scene(1280, 720));
+  for (const s of [flat, title, busy]) assert.ok(s.score >= 0 && s.score <= 100, JSON.stringify(s));
+  assert.ok(flat.score < 5, `flat ${flat.score}`);
+  assert.ok(flat.score < title.score && title.score < busy.score, `flat ${flat.score}, title ${title.score}, busy ${busy.score}`);
+  assert.ok(title.coverage < 0.5 && busy.coverage > 0.9, `coverage: title ${title.coverage}, busy ${busy.coverage}`);
+});
+
+test("frameScore: a live cover (320 px) and a 1280 px capture of the same picture score alike, so before and after compare", async () => {
+  const { frameScore } = await import('../scripts/capture.mjs');
+  for (const make of [scene, titleCard]) {
+    const big = await frameScore(await make(1280, 720));
+    const small = await frameScore(await sharp(await make(1280, 720)).resize(320, 180).webp({ quality: 80 }).toBuffer());
+    assert.ok(Math.abs(big.score - small.score) < 6, `${make.name}: ${big.score} vs ${small.score}`);
+  }
+});
+
+test('pickFrames: the frame with detail across the screen comes first, ahead of a busy patch on a flat background with a richer histogram', async () => {
+  const { pickFrames, frameScore } = await import('../scripts/capture.mjs');
+  // The patch: uniform noise over 40 % of a flat frame (about 4.2 bits of entropy). The scene: 12 grey levels in 10 px
+  // tiles over the whole frame (about 3.6 bits). Entropy alone would put the patch first.
+  const patch = await picture(320, 180, (x, y) => (x < 200 && y < 115 ? noise(x, y) : 60));
+  const tiles = await picture(320, 180, (x, y) => 40 + 15 * ((Math.floor(x / 10) * 5 + Math.floor(y / 10) * 7) % 12));
+  const [p, t] = [await sharp(patch).stats(), await sharp(tiles).stats()];
+  assert.ok(p.entropy > t.entropy, `the patch has the richer histogram (${p.entropy} vs ${t.entropy})`);
+  assert.ok((await frameScore(tiles)).score > (await frameScore(patch)).score);
+  assert.deepEqual(await pickFrames([patch, tiles]), [tiles, patch]);
+  // The start step's frames still come first, whatever their detail: a busy menu never wins the cover over the game.
+  assert.deepEqual(await pickFrames([patch, tiles], { preferred: 1 }), [patch, tiles]);
+});
+
+// --- Ads (adInView) ---
+
+const yellowAt = async (file, left, top) => {
+  const { data } = await sharp(readFileSync(file)).extract({ left, top, width: 1, height: 1 }).raw().toBuffer({ resolveWithObject: true });
+  const [r, g, b] = data;
+  return r > 200 && g > 200 && b < 60;
+};
+
+test("isAdFrame: Google's ad frames by name, ad servers by host (whole labels only), never the game's own frames", async () => {
+  const { isAdFrame } = await import('../scripts/capture.mjs');
+  for (const [url, name] of [
+    ['about:blank', 'aswift_0'],
+    ['', 'google_ads_iframe_/1234/site/slot_0'],
+    ['https://googleads.g.doubleclick.net/pagead/ads?client=ca-pub-1&format=728x90', ''],
+    ['https://tpc.googlesyndication.com/safeframe/1-0-40/html/container.html', ''],
+    ['https://imasdk.googleapis.com/js/core/bridge3.620.0_en.html#goog_1', ''],
+    ['https://ads.adinplay.com/x', ''],
+    ['https://aax.amazon-adsystem.com/e/dtb/admi', ''],
+    ['HTTPS://SECUREPUBADS.G.DOUBLECLICK.NET/gampad/ads', ''],
+  ]) assert.equal(isAdFrame(url, name), true, `${url} ${name}`);
+  for (const [url, name] of [
+    ['https://html.itch.zone/html/123/index.html', 'game_drop'],
+    ['about:blank', ''],
+    ['about:srcdoc', 'game'],
+    ['https://www.google.com/recaptcha/api2/anchor', ''],
+    ['https://notdoubleclick.net/', ''],
+    ['https://doubleclick.net.example.com/', ''],
+    ['https://adventure.example/', 'adventure'],
+    ['javascript:void(0)', ''],
+    ['not a url', 'my_aswift'],
+    [undefined, undefined],
+  ]) assert.equal(isAdFrame(url, name), false, `${url} ${name}`);
+});
+
+test('a frame with an ad in view is dropped: a game whose every frame shows one fails with "ads" and leaves no images', async () => {
+  const dir = join(tmp(), 'ad-banner');
+  const all = join(tmp(), 'ad-all');
+  const { trace, log } = traced();
+  const res = await captureOne(`${base}/ad-banner`, dir, { ...FAST, allFrames: all, trace });
+  assert.deepEqual([res.ok, res.reason], [false, 'ads'], log());
+  assert.deepEqual(files(dir), []);
+  // Review copies of every frame say which ones had an ad.
+  assert.deepEqual(files(all).sort(), ['plain-0-ad.png', 'plain-1-ad.png', 'plain-2-ad.png']);
+  assert.match(log(), /ad in view/);
+});
+
+test('an ad inside a framed page counts too; ads below the fold, hidden or a pixel in size do not', async () => {
+  const nested = await captureOne(`${base}/ad-nested`, join(tmp(), 'ad-nested'), FAST);
+  assert.deepEqual([nested.ok, nested.reason], [false, 'ads']);
+  for (const path of ['/ad-below', '/ad-hidden']) {
+    const dir = join(tmp(), path.slice(1));
+    const res = await captureOne(`${base}${path}`, dir, { ...FAST, times: [400, 1200, 2000], shotTimeout: 6000, deadline: 20_000 });
+    assert.equal(res.ok, true, `${path}: ${res.reason}`);
+    assert.equal(res.files.length, 3, path);
+    assert.equal(res.adFrames, undefined, path);
+  }
+});
+
+test('frames taken before an ad appears are kept; the ones after it are dropped', async () => {
+  const dir = join(tmp(), 'ad-late');
+  const { trace, log } = traced();
+  const res = await captureOne(`${base}/ad-late`, dir, { ...FAST, times: [300, 700, 3000], shotTimeout: 6000, deadline: 20_000, trace });
+  assert.equal(res.ok, true, `${res.reason}${log()}`);
+  assert.ok(res.files.length >= 1 && res.files.length < 3, `${res.files.length} frames${log()}`);
+  assert.ok(res.adFrames >= 1, log());
+  for (const f of res.files) assert.ok(!(await yellowAt(f, 640, 700)), `${f.slice(dir.length + 1)} shows the ad${log()}`);
+});
+
+test('the CLI log says how many frames an ad cost', async () => {
+  const root = tmp();
+  mkdirSync(join(root, 'games'));
+  writeFileSync(join(root, 'games', 'late.yaml'), `play:\n  url: ${base}/ad-late\n`);
+  writeFileSync(join(root, 'games', 'banner.yaml'), `play:\n  url: ${base}/ad-banner\n`);
+  const lines = [];
+  const results = await captureSlugs(['late', 'banner'], { ...FAST, times: [300, 700, 3000], shotTimeout: 6000, deadline: 20_000, root, out: join(root, 'out'), log: (l) => lines.push(l) });
+  assert.deepEqual(results.map((r) => r.ok), [true, false]);
+  assert.match(lines.join('\n'), /ok {3}late \([\d.]+ s, [12] of 3 frames, [12] dropped for an ad in view\)/);
+  assert.match(lines.join('\n'), /FAIL banner \([\d.]+ s\): ads/);
+  const failed = JSON.parse(readFileSync(join(root, 'out', 'failed.json'), 'utf8'));
+  assert.deepEqual(failed.map((f) => [f.slug, f.reason]), [['banner', 'ads']]);
 });

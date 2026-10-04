@@ -9,7 +9,8 @@
 // own frame, which must match itch's CDN pattern (itchFrame). The opt-in start step (CAPTURE_START, startGame) also
 // asks the page whether a Start or Play button or a name field is visible, and before every click or key whether its
 // target is a link or a control that isn't the game's (pressCheck); those answers only decide a press and are never
-// saved or logged.
+// saved or logged. After every screenshot the capture asks whether an ad frame was in view (adInView: frame addresses
+// and names matched against fixed lists, a box and a visible yes or no); the answer only drops that frame.
 // Games whose creator sent screenshots with the submission (provenance.uploads) are never captured; the upload job
 // fetches those instead. node scripts/capture.mjs --split <slug-list file> prints { capture, uploads } for the workflow.
 import { mkdirSync, mkdtempSync, rmSync, rmdirSync, writeFileSync, readFileSync, existsSync, copyFileSync } from 'node:fs';
@@ -178,9 +179,84 @@ const thumbDiff = (a, b) => {
   return d / a.length;
 };
 
+// Frame detail, measured the same way on every picture at one size (320×180), so a 1280 px capture and a live 320 px
+// cover compare. A block of 20×20 px has detail when its grey levels spread by 6 or more (one standard deviation).
+const SCORE_W = 320;
+const SCORE_H = 180;
+const BLOCK = 20;
+const BLOCK_SD = 6;
+const unit = (v) => Math.max(0, Math.min(1, v));
+
+/**
+ * How much a frame shows, 0 to 100. Mostly `coverage`, the share of the frame with detail in it: a level full of things
+ * has detail everywhere, while a title card, a menu box or a lone sprite on a flat background has it in a part. Then
+ * the spread of grey levels (`entropy`, bits), how much structure there is (`edges`, the mean grey step between
+ * neighbouring pixels) and colour (`colour`, Hasler and Süsstrunk's colourfulness). Pixels only; nothing else is read.
+ */
+export async function frameScore(buf) {
+  const { data, info } = await sharp(buf).resize(SCORE_W, SCORE_H, { fit: 'fill' }).removeAlpha().toColourspace('srgb').raw().toBuffer({ resolveWithObject: true });
+  const { width: w, height: h, channels: ch } = info;
+  const n = w * h;
+  const grey = new Uint8Array(n);
+  const hist = new Uint32Array(256);
+  let mrg = 0;
+  let myb = 0;
+  let qrg = 0;
+  let qyb = 0;
+  for (let i = 0; i < n; i++) {
+    const r = data[i * ch];
+    const g = data[i * ch + 1];
+    const b = data[i * ch + 2];
+    const v = Math.round(0.299 * r + 0.587 * g + 0.114 * b);
+    grey[i] = v;
+    hist[v]++;
+    const rg = r - g;
+    const yb = (r + g) / 2 - b;
+    mrg += rg;
+    myb += yb;
+    qrg += rg * rg;
+    qyb += yb * yb;
+  }
+  mrg /= n;
+  myb /= n;
+  const colour = Math.sqrt(Math.max(0, qrg / n - mrg * mrg) + Math.max(0, qyb / n - myb * myb)) + 0.3 * Math.hypot(mrg, myb);
+  let entropy = 0;
+  for (const c of hist) if (c) entropy -= (c / n) * Math.log2(c / n);
+  let steps = 0;
+  for (let y = 0; y < h; y++) {
+    for (let x = 0; x < w; x++) {
+      const i = y * w + x;
+      if (x + 1 < w) steps += Math.abs(grey[i + 1] - grey[i]);
+      if (y + 1 < h) steps += Math.abs(grey[i + w] - grey[i]);
+    }
+  }
+  const edges = steps / n;
+  let blocks = 0;
+  let detailed = 0;
+  for (let by = 0; by + BLOCK <= h; by += BLOCK) {
+    for (let bx = 0; bx + BLOCK <= w; bx += BLOCK) {
+      let s = 0;
+      let q = 0;
+      for (let y = by; y < by + BLOCK; y++) {
+        for (let x = bx; x < bx + BLOCK; x++) {
+          const v = grey[y * w + x];
+          s += v;
+          q += v * v;
+        }
+      }
+      const m = s / (BLOCK * BLOCK);
+      blocks++;
+      if (q / (BLOCK * BLOCK) - m * m >= BLOCK_SD * BLOCK_SD) detailed++;
+    }
+  }
+  const coverage = detailed / blocks;
+  const score = 100 * (0.45 * coverage + 0.2 * unit(entropy / 7.5) + 0.2 * unit(edges / 20) + 0.15 * unit(colour / 80));
+  return { score: Math.round(score * 10) / 10, coverage: Math.round(coverage * 1000) / 1000, entropy: Math.round(entropy * 100) / 100, edges: Math.round(edges * 10) / 10, colour: Math.round(colour * 10) / 10 };
+}
+
 /**
  * Picks the frames worth showing: drops near-black, near-white and flat frames (loading screens, blank canvases),
- * orders the rest by detail (entropy), and skips near-duplicates. Returns up to `max` PNG buffers, best first.
+ * orders the rest by detail (frameScore), and skips near-duplicates. Returns up to `max` PNG buffers, best first.
  * The first `preferred` frames (the start step's frames after the menu) rank before the rest, whatever their detail:
  * a busy menu full of text would otherwise win the cover over the game behind it.
  */
@@ -192,10 +268,11 @@ export async function pickFrames(frames, { max = 3, preferred = frames.length } 
       const mean = rgb.reduce((s, c) => s + c.mean, 0) / rgb.length;
       const sd = rgb.reduce((s, c) => s + c.stdev, 0) / rgb.length;
       const thumb = await sharp(buf).resize(32, 18, { fit: 'fill' }).greyscale().raw().toBuffer();
-      return { buf, mean, sd, entropy: stats.entropy, thumb, tier: i < preferred ? 0 : 1 };
+      const { score } = await frameScore(buf);
+      return { buf, mean, sd, entropy: stats.entropy, score, thumb, tier: i < preferred ? 0 : 1 };
     }),
   );
-  const order = (a, b) => a.tier - b.tier || b.entropy - a.entropy;
+  const order = (a, b) => a.tier - b.tier || b.score - a.score;
   let usable = info.filter((f) => f.mean >= 18 && f.mean <= 245 && f.sd >= 12 && f.entropy >= 3).sort(order);
   // Dark games: when no frame passes, one dark title screen with real content (a logo or a menu, not a spinner on
   // black) still beats no cover.
@@ -277,6 +354,84 @@ export function noWebGPU(win) {
   } catch {}
 }
 
+// Ads. A cover feeds every card, the player poster and the share image, so a frame with someone's ad in view is never
+// kept (one cover once showed a banner from the game's own page). Ads come in frames: a frame counts as an ad when its
+// host is one of these ad servers or a subdomain of one (Google's AdSense, Ad Manager and IMA video ads, the big
+// exchanges, and the networks web games use; add one when a capture shows it), or when it has the name Google's ad
+// tags give their frames. Hosts that also serve games (GameDistribution, GameMonetize) are not on the list: their ads
+// come through IMA.
+export const AD_HOSTS = [
+  'doubleclick.net', 'googlesyndication.com', 'googleadservices.com', 'adservice.google.com', 'imasdk.googleapis.com', 'googletagservices.com',
+  'amazon-adsystem.com', 'adnxs.com', 'rubiconproject.com', 'pubmatic.com', 'openx.net', 'criteo.com', 'criteo.net', 'casalemedia.com',
+  'adform.net', 'smartadserver.com', 'yieldmo.com', 'sharethrough.com', 'teads.tv', '33across.com', 'media.net', 'sovrn.com', 'lijit.com',
+  'taboola.com', 'outbrain.com', 'revcontent.com', 'mgid.com', 'adskeeper.com',
+  'adinplay.com', 'cpmstar.com', 'applixir.com', 'vntsm.com', 'nitropay.com', 'pub.network', 'snigelweb.com', 'playwire.com', 'aniview.com',
+  'ezoic.net', 'ezodn.com', 'adthrive.com', 'mediavine.com',
+  'adsterra.com', 'propellerads.com', 'popads.net', 'a-ads.com', 'coinzilla.io', 'bitmedia.io', 'adcash.com', 'exoclick.com', 'juicyads.com',
+  'hilltopads.net', 'infolinks.com', 'buysellads.com', 'carbonads.net',
+];
+// AdSense names its frames aswift_0, aswift_1, …; Ad Manager google_ads_iframe_<slot>. Both start out as about:blank.
+const AD_FRAME_NAME = /^(?:aswift_\d|google_ads_i?frame)/i;
+
+/** Whether a frame is an ad, from its address and name: both read as data, bounded, and matched against fixed lists. */
+export function isAdFrame(url, name, hosts = AD_HOSTS) {
+  if (typeof name === 'string' && AD_FRAME_NAME.test(name.slice(0, 64))) return true;
+  if (typeof url !== 'string') return false;
+  let host;
+  try {
+    const u = new URL(url.slice(0, 4096));
+    if (u.protocol !== 'https:' && u.protocol !== 'http:') return false;
+    host = u.hostname.toLowerCase();
+  } catch {
+    return false;
+  }
+  return hosts.some((h) => host === h || host.endsWith(`.${h}`));
+}
+
+/** How much of the viewport an ad frame must cover to count: a share of its area and a side (never a tracking pixel). */
+const AD_MIN = { share: 0.01, side: 20 };
+
+/**
+ * After every screenshot: was an ad frame in view? Frames are found by address and name (isAdFrame, any depth). One
+ * counts when its box overlaps the viewport by at least AD_MIN and nothing hides it (display, visibility, opacity: an
+ * IMA frame waits at opacity 0 over the game until an ad plays). The page is only asked yes or no; a frame whose box or
+ * visibility can't be read in time counts as in view. Never throws.
+ */
+export async function adInView(page, o) {
+  const { width, height } = o.viewport;
+  const main = page.mainFrame();
+  for (const frame of page.frames()) {
+    if (frame === main || frame.isDetached()) continue;
+    let ad = false;
+    try {
+      ad = isAdFrame(frame.url(), frame.name());
+    } catch {}
+    if (!ad) continue;
+    const el = await within(frame.frameElement(), o.clickTimeout, null);
+    if (!el) {
+      if (frame.isDetached()) continue;
+      return true;
+    }
+    try {
+      const box = await within(el.boundingBox(), o.clickTimeout, undefined);
+      if (box === undefined) {
+        if (frame.isDetached()) continue;
+        return true;
+      }
+      if (!box) continue; // not rendered (display: none, or gone)
+      const w = Math.min(box.x + box.width, width) - Math.max(box.x, 0);
+      const h = Math.min(box.y + box.height, height) - Math.max(box.y, 0);
+      if (w < AD_MIN.side || h < AD_MIN.side || w * h < AD_MIN.share * width * height) continue;
+      const shown = await within(el.evaluate((e) => (typeof e.checkVisibility === 'function' ? e.checkVisibility({ opacityProperty: true, visibilityProperty: true }) : true)), o.clickTimeout, null);
+      if (shown === false || (shown === null && frame.isDetached())) continue;
+      return true;
+    } finally {
+      el.dispose().catch(() => {});
+    }
+  }
+  return false;
+}
+
 // The start step. Most games that kept a single frame sat on a title, menu or name-entry screen: the centre click and
 // Enter of the plain schedule don't press a Play button off-centre, so every frame was the same menu and the
 // near-duplicate check kept one. With `start: true` the capture presses the game's own Start or Play button, found by
@@ -324,11 +479,11 @@ export const NEXT_NAMES = phrase([
 export const ROOM_NAMES = /^[\W_]*(?=[^\/]*[a-zÀ-ɏ])[a-zÀ-ɏ0-9][a-zÀ-ɏ0-9 '.#(-]{0,39}?\s*\d{1,3}\s*\/\s*\d{1,3}[\W_]*$/i;
 /**
  * Controls the capture never presses, whatever name got them found: wallets and crypto, payments and shops, accounts
- * and sign-ins, ratings and votes, sharing, downloads and installs, bets. Checked before every click and key
- * (pressCheck) against an element's visible text, aria-label, title, alt and value, and those of the control it sits in.
- * English and German, like the start names.
+ * and sign-ins, ratings and votes, sharing, downloads and installs, bets, and anything that accepts or allows (cookies,
+ * consent, terms, permissions). Checked before every click and key (pressCheck) against an element's visible text,
+ * aria-label, title, alt and value, and those of the control it sits in. English and German, like the start names.
  */
-export const DENY = /\b(?:wallets?|connect|buy|purchas|pay|donat|subscri|sign[\s_-]*(?:in|up|on)|log[\s_-]*(?:in|on|out)|regist|rat(?:e[sd]?|ings?)\b|vot(?:e[sd]?|ing)\b|shar(?:e[sd]?|ing)\b|download|install|shop|premium|check[\s_-]*out|carts?\b|mint|bets?\b|betting|deposit|withdraw|nft|crypto|airdrop|redeem|sponsor|patreon|ko-?fi|wishlist|google|facebook|discord|twitter|github|metamask|kauf|bezahl|spende|abonn|anmeld|einlogg|bewert|abstimm|teilen|herunterlad)/i;
+export const DENY = /\b(?:wallets?|connect|buy|purchas|pay|donat|subscri|sign[\s_-]*(?:in|up|on)|log[\s_-]*(?:in|on|out)|regist|rat(?:e[sd]?|ings?)\b|vot(?:e[sd]?|ing)\b|shar(?:e[sd]?|ing)\b|download|install|shop|premium|check[\s_-]*out|carts?\b|mint|bets?\b|betting|deposit|withdraw|nft|crypto|airdrop|redeem|sponsor|patreon|ko-?fi|wishlist|google|facebook|discord|twitter|github|metamask|accept|agree|consent|cookie|allow|terms\b|privacy|gdpr|kauf|bezahl|spende|abonn|anmeld|einlogg|bewert|abstimm|teilen|herunterlad|akzeptier|zustimm|einverstanden|erlaub|datenschutz)/i;
 const DENY_ARG = { deny: DENY.source, flags: DENY.flags };
 /** A name field: its label or placeholder asks for a name. */
 export const NAME_FIELD = /\bnick(?:name)?\b|\b(?:user ?)?name\b|\bcall ?sign\b|who are you/i;
@@ -677,7 +832,8 @@ export async function captureOne(url, outDir, opts = {}) {
 
   // Frames taken so far live outside `work`, so a deadline or a frozen page after the cover still keeps the cover.
   // With the start step, `before` holds the frame taken before it (the menu), used only when nothing after it is.
-  const state = { context: null, page: null, opened: false, finished: false, shots: [], before: [], timedOut: false };
+  // `ads` counts frames dropped because an ad was in view.
+  const state = { context: null, page: null, opened: false, finished: false, shots: [], before: [], timedOut: false, ads: 0 };
   // The best engine and the best renderer across all scans, each by its own priority.
   let engine = { engine: null, renderer: null, evidence: [] };
   const better = (order, next, current) => next && (!current || order.indexOf(next) < order.indexOf(current));
@@ -778,21 +934,18 @@ export async function captureOne(url, outDir, opts = {}) {
     scan();
 
     // One frame. A busy renderer can miss one frame deadline; one retry before giving up on the game. Null when the
-    // game stopped answering after earlier frames (those may be enough; later ones are a bonus).
-    // Local review (`--all-frames`): every frame of every pass is also written as it is taken, picked or not.
+    // game stopped answering after earlier frames (those may be enough; later ones are a bonus); false when an ad was
+    // in view (adInView): that frame is dropped and the schedule goes on.
+    // Local review (`--all-frames`): every frame of every pass is also written as it is taken, picked or not, and a
+    // frame dropped for an ad ends in `-ad`.
     const pass = `${start ? 'start' : 'plain'}${o.throttle ? '-throttled' : ''}${o.itchPage ? '-itchpage' : ''}`;
     let taken = 0;
     const snap = async () => {
       for (let attempt = 0; ; attempt++) {
         const asked = Date.now();
+        let buf;
         try {
-          const buf = await guard(page.screenshot({ type: 'png', timeout: o.shotTimeout }));
-          trace?.(`screenshot took ${Date.now() - asked} ms`);
-          if (o.allFrames) {
-            mkdirSync(o.allFrames, { recursive: true });
-            writeFileSync(join(o.allFrames, `${pass}-${taken++}.png`), buf);
-          }
-          return buf;
+          buf = await guard(page.screenshot({ type: 'png', timeout: o.shotTimeout }));
         } catch (e) {
           trace?.(`screenshot failed after ${Date.now() - asked} ms`);
           if (e instanceof CaptureError || attempt === 1) {
@@ -802,14 +955,26 @@ export async function captureOne(url, outDir, opts = {}) {
             }
             throw e instanceof CaptureError ? e : new CaptureError('screenshot', firstLine(e));
           }
+          continue;
         }
+        trace?.(`screenshot took ${Date.now() - asked} ms`);
+        const ad = await guard(adInView(page, o));
+        if (o.allFrames) {
+          mkdirSync(o.allFrames, { recursive: true });
+          writeFileSync(join(o.allFrames, `${pass}-${taken++}${ad ? '-ad' : ''}.png`), buf);
+        }
+        if (!ad) return buf;
+        state.ads++;
+        trace?.('ad in view: frame dropped');
+        return false;
       }
     };
 
     const t0 = Date.now();
     if (start) {
       await guard(sleep(t0 + o.times[0] - Date.now(), stop.signal));
-      state.before.push(await snap());
+      const menu = await snap();
+      if (menu) state.before.push(menu);
       await startGame(page, o, guard, stop.signal);
       scan();
       const t1 = Date.now();
@@ -818,9 +983,9 @@ export async function captureOne(url, outDir, opts = {}) {
       for (let i = 0; i < o.startTimes.length; i++) {
         await guard(sleep(t1 + o.startTimes[i] - Date.now(), stop.signal));
         const shot = await snap();
-        trace?.(`frame ${i + 1} of ${o.startTimes.length} ${shot ? 'taken' : 'lost'} at ${Date.now() - started} ms`);
-        if (!shot) return;
-        state.shots.push(shot);
+        trace?.(`frame ${i + 1} of ${o.startTimes.length} ${shot ? 'taken' : shot === false ? 'dropped' : 'lost'} at ${Date.now() - started} ms`);
+        if (shot === null) return;
+        if (shot) state.shots.push(shot);
         if (i < o.startTimes.length - 1) {
           const played = Date.now();
           await playInput(page, i, o, guard, stop.signal);
@@ -832,8 +997,8 @@ export async function captureOne(url, outDir, opts = {}) {
     for (let i = 0; i < o.times.length; i++) {
       await guard(sleep(t0 + o.times[i] - Date.now(), stop.signal));
       const shot = await snap();
-      if (!shot) return;
-      state.shots.push(shot);
+      if (shot === null) return;
+      if (shot) state.shots.push(shot);
       if (i === 0) {
         // One click in the centre starts games that wait for input (never on a link or a wallet button: pressCheck)…
         await clickAt(page, o.viewport.width / 2, o.viewport.height / 2, o, guard);
@@ -854,7 +1019,12 @@ export async function captureOne(url, outDir, opts = {}) {
     // The best frames only: a loading screen or a black canvas never becomes a cover.
     const picked = await pick();
     // Only black frames before a screenshot timeout: the game is slow, not blank, so the throttled pass gets a turn.
-    if (!picked.length) throw state.timedOut ? new CaptureError('screenshot', 'frames timed out after a blank start') : new CaptureError('blank', 'every frame was black, blank or a loading screen');
+    // No frame without an ad: the live images stay, and the run says why ("ads").
+    if (!picked.length) {
+      if (state.timedOut) throw new CaptureError('screenshot', 'frames timed out after a blank start');
+      if (state.ads) throw new CaptureError('ads', `${state.ads} frames had an ad in view, and no other frame was usable`);
+      throw new CaptureError('blank', 'every frame was black, blank or a loading screen');
+    }
     mkdirSync(outDir, { recursive: true });
     picked.forEach((buf, i) => writeFileSync(files[i], buf));
     result = { ok: true, files: files.slice(0, picked.length), ...(picked.length < files.length ? { partial: true } : {}) };
@@ -887,7 +1057,8 @@ export async function captureOne(url, outDir, opts = {}) {
       writeFileSync(engineFile, JSON.stringify(engine) + '\n');
     }
   }
-  return result;
+  // How many frames an ad cost: the run log says so.
+  return state.ads ? { ...result, adFrames: state.ads } : result;
 }
 
 function firstLine(e) {
@@ -993,7 +1164,7 @@ export async function captureSlugs(slugs, { root = ROOT, out = join(root, 'out')
     const name = SLUG.test(slug) ? slug : '(invalid)';
     if (!res.ok) appendFailure(out, { slug: name, reason: res.reason, ...(res.detail ? { detail: res.detail } : {}) });
     if (res.skipped) log(`skip ${name}: the creator sent screenshots`);
-    else log(`${res.ok ? 'ok  ' : 'FAIL'} ${name} (${((Date.now() - started) / 1000).toFixed(1)} s${res.ok ? `, ${res.files.length} of ${NAMES.length} frames` : ''})${res.ok ? '' : `: ${res.reason}`}`);
+    else log(`${res.ok ? 'ok  ' : 'FAIL'} ${name} (${((Date.now() - started) / 1000).toFixed(1)} s${res.ok ? `, ${res.files.length} of ${NAMES.length} frames` : ''}${res.ok && res.adFrames ? `, ${res.adFrames} dropped for an ad in view` : ''})${res.ok ? '' : `: ${res.reason}`}`);
     results.push({ slug: name, ...res });
   }
   return results;
