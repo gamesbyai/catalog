@@ -4,7 +4,8 @@
 // games CI's software renderer can't draw, on a maintainer's machine with a GPU (`--gpu` or `--chrome`: a fresh
 // temporary profile, Chrome's GPU blocklist kept, downloads refused, no file pickers, no clipboard writes, nothing
 // uploaded from here).
-// Every game gets a fresh browser context, a hard deadline kept by Node (not by Playwright), and nothing
+// Every game gets a fresh browser context, a hard deadline kept by Node (not by Playwright), a page that can never lock
+// the pointer, go fullscreen or lock the keyboard (noLocks, in every mode), and nothing
 // from the page is read back except screenshot pixels, bounded engine hints, and on itch.io the address of the game's
 // own frame, which must match itch's CDN pattern (itchFrame). The opt-in start step (CAPTURE_START, startGame) also
 // asks the page whether a Start or Play button or a name field is visible, and before every click or key whether its
@@ -352,6 +353,35 @@ export function noWebGPU(win) {
   try {
     delete win.Navigator.prototype.gpu;
   } catch {}
+}
+
+/**
+ * Runs in the page, in every capture (CI and local, every launch): the game can never lock or hide the pointer, go
+ * fullscreen or lock the keyboard, before any of its own code runs. A local browser shares the machine's mouse and
+ * keyboard, and nothing a capture opens may hold them; a screenshot never needs them. Pointer lock and keyboard lock
+ * answer as if granted (a game waits on, never retries), fullscreen is refused. Fixed in place, so the page can't put
+ * the browser's own functions back. Self-contained, like throttleFrames; Playwright runs it in every frame and popup.
+ */
+export function noLocks(win) {
+  const fix = (proto, key, value) => {
+    if (!proto) return;
+    try {
+      Object.defineProperty(proto, key, { value, writable: false, configurable: false });
+    } catch {}
+  };
+  const refuse = function requestFullscreen() {
+    return Promise.reject(new win.DOMException('fullscreen is off in captures', 'NotAllowedError'));
+  };
+  const element = win.Element?.prototype;
+  fix(element, 'requestPointerLock', function requestPointerLock() {
+    return Promise.resolve();
+  });
+  for (const key of ['requestFullscreen', 'webkitRequestFullscreen', 'webkitRequestFullScreen']) fix(element, key, refuse);
+  fix(win.Document?.prototype, 'exitPointerLock', function exitPointerLock() {});
+  for (const key of ['webkitEnterFullscreen', 'webkitEnterFullScreen']) fix(win.HTMLVideoElement?.prototype, key, function webkitEnterFullscreen() {});
+  fix(win.Keyboard?.prototype, 'lock', function lock() {
+    return Promise.resolve();
+  });
 }
 
 // Ads. A cover feeds every card, the player poster and the share image, so a frame with someone's ad in view is never
@@ -870,6 +900,8 @@ export async function captureOne(url, outDir, opts = {}) {
       throw new CaptureError('deadline');
     }
     state.context = context;
+    // Every capture, first: no pointer lock, fullscreen or keyboard lock for anything the page runs.
+    await guard(context.addInitScript(`(${noLocks})(window);`));
     await guard(context.addInitScript(installEngineProbe, ENGINE_GLOBALS));
     if (o.throttle) await guard(context.addInitScript(`(${throttleFrames})(window, ${Number(o.throttleGap) || 250});`));
     // A local browser runs on someone's machine: no File System Access pickers and no clipboard writes for the page.

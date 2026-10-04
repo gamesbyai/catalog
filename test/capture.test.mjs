@@ -215,6 +215,27 @@ const PAGES = {
   '/ad-hidden': gamePage(adFrame('position:fixed;left:0;top:0;width:1280px;height:720px;opacity:0') + adFrame('position:fixed;left:0;bottom:0;width:1px;height:1px', 1) + adFrame('display:none', 2)),
   '/ad-late': gamePage(`<script>addEventListener('load', () => setTimeout(() => document.body.insertAdjacentHTML('beforeend', ${JSON.stringify(adFrame('position:fixed;left:276px;bottom:0;width:728px;height:90px'))}), 1500));</script>`),
   '/ad-nested': html(`<iframe src="/ad-banner" style="position:fixed;inset:0;width:1280px;height:720px;border:0"></iframe>`),
+  // A game that asks for pointer lock, fullscreen and keyboard lock on Play, in its own page and in a frame.
+  '/lock-traps': menuPage(`<button id="p" style="position:absolute;left:40px;bottom:40px;font-size:40px">PLAY</button>
+    <script>
+    const report = (k, v) => fetch('/report/' + k + '/' + encodeURIComponent(v));
+    const native = (fn) => typeof fn === 'function' && String(fn).includes('[native code]');
+    report('lock-api', [native(Element.prototype.requestPointerLock), native(Element.prototype.requestFullscreen), native(Document.prototype.exitPointerLock), navigator.keyboard ? native(navigator.keyboard.lock) : 'absent'].join(' '));
+    const f = document.createElement('iframe'); f.style.display = 'none'; document.body.appendChild(f);
+    report('frame-lock-api', [native(f.contentWindow.Element.prototype.requestPointerLock), native(f.contentWindow.Element.prototype.requestFullscreen)].join(' '));
+    // The page tries to put the browser's own functions back.
+    Element.prototype.requestPointerLock = f.contentWindow.Element.prototype.requestPointerLock;
+    report('restored', native(Element.prototype.requestPointerLock));
+    const settle = (p) => Promise.resolve(p).then(() => 'resolved', () => 'rejected');
+    document.getElementById('p').onclick = async () => {
+      const c = document.getElementById('c');
+      report('pointer-lock', await settle(c.requestPointerLock()));
+      report('fullscreen', await settle(c.requestFullscreen()));
+      report('keyboard-lock', navigator.keyboard ? await settle(navigator.keyboard.lock()) : 'absent');
+      setTimeout(() => report('held', [document.pointerLockElement, document.fullscreenElement].map((e) => (e ? 'yes' : 'no')).join(' ')), 300);
+      startGame();
+    };
+    </script>`),
 };
 
 function adFrame(style, n = 0) {
@@ -1018,6 +1039,58 @@ test('CAPTURE_START: true, retry or off; the summary warns about games with fewe
   assert.equal(lines[0], 'captured 2 of 4, 1 with all 3 frames');
   assert.match(lines[1], /^::warning title=Fewer than 3 frames::1 games: menu \(1\)$/);
   assert.equal(summary([{ slug: 'full', ok: true, files: ['a', 'b', 'c'] }]).length, 1, 'no warning when every game is complete');
+});
+
+// --- No pointer lock, fullscreen or keyboard lock (noLocks), in every mode ---
+
+test('noLocks: pointer lock, fullscreen and keyboard lock never reach the browser, and the page cannot put them back', async () => {
+  const { noLocks } = await import('../scripts/capture.mjs');
+  class DOMException extends Error {
+    constructor(message, name) {
+      super(message);
+      this.name = name;
+    }
+  }
+  const win = { Element: function () {}, Document: function () {}, HTMLVideoElement: function () {}, Keyboard: function () {}, DOMException };
+  const calls = [];
+  for (const k of ['requestPointerLock', 'requestFullscreen', 'webkitRequestFullscreen', 'webkitRequestFullScreen']) win.Element.prototype[k] = () => calls.push(k);
+  win.Document.prototype.exitPointerLock = () => calls.push('exitPointerLock');
+  win.HTMLVideoElement.prototype.webkitEnterFullscreen = () => calls.push('webkitEnterFullscreen');
+  win.Keyboard.prototype.lock = () => calls.push('lock');
+  noLocks(win);
+  const el = new win.Element();
+  assert.equal(await el.requestPointerLock(), undefined);
+  for (const k of ['requestFullscreen', 'webkitRequestFullscreen', 'webkitRequestFullScreen']) await assert.rejects(el[k](), { name: 'NotAllowedError' }, k);
+  assert.equal(new win.Document().exitPointerLock(), undefined);
+  assert.equal(new win.HTMLVideoElement().webkitEnterFullscreen(), undefined);
+  assert.equal(await new win.Keyboard().lock(), undefined);
+  assert.deepEqual(calls, [], 'none of the browser functions ran');
+  assert.equal(Reflect.set(win.Element.prototype, 'requestPointerLock', () => calls.push('restored')), false, 'the page cannot put one back');
+  await new win.Element().requestPointerLock();
+  assert.deepEqual(calls, []);
+  assert.doesNotThrow(() => noLocks({ DOMException }), 'a window without these APIs is fine');
+});
+
+test('every capture, CI and local launch alike: a game asking for pointer lock, fullscreen or keyboard lock gets none of them', async (t) => {
+  const expected = { 'lock-api': /^false false false (?:false|absent)$/, 'frame-lock-api': /^false false$/, restored: /^false$/, 'pointer-lock': /^resolved$/, fullscreen: /^rejected$/, 'keyboard-lock': /^(?:resolved|absent)$/, held: /^no no$/ };
+  const check = async (label, opts) => {
+    reports = {};
+    const res = await captureOne(`${base}/lock-traps`, join(tmp(), `locks-${label}`), { ...FAST, ...START_FAST, ...opts });
+    assert.equal(res.ok, true, `${label}: ${res.reason}`);
+    for (let i = 0; i < 20 && !reports.held; i++) await new Promise((r) => setTimeout(r, 100));
+    for (const [k, re] of Object.entries(expected)) assert.match(String(reports[k]), re, `${label}: ${k} = ${reports[k]}`);
+  };
+  await closeBrowser();
+  try {
+    await check('ci', {});
+    await closeBrowser();
+    // The local launch (a GPU or the installed Chrome) on CI's headless shell, page scripts and all, as in the test above.
+    const launchServer = chromium.launchServer.bind(chromium);
+    t.mock.method(chromium, 'launchServer', (opts) => launchServer({ ...opts, channel: undefined }));
+    await check('local', { gpu: true });
+  } finally {
+    await closeBrowser();
+  }
 });
 
 // --- Frame detail (frameScore) ---
