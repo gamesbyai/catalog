@@ -353,6 +353,39 @@
         }
       }
     },
+    "updates": {
+      "type": "array",
+      "maxItems": 10,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "date",
+          "text"
+        ],
+        "properties": {
+          "date": {
+            "type": "string",
+            "format": "date"
+          },
+          "text": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 140
+          },
+          "url": {
+            "type": "string",
+            "pattern": "^https://",
+            "maxLength": 300
+          }
+        }
+      }
+    },
+    "basedOn": {
+      "type": "string",
+      "pattern": "^(?=[a-z0-9-]*[a-z])[a-z0-9]+(?:-[a-z0-9]+)*$",
+      "maxLength": 60
+    },
     "editor": {
       "type": "object",
       "additionalProperties": false,
