@@ -11,7 +11,9 @@
 // asks the page whether a Start or Play button or a name field is visible, and before every click or key whether its
 // target is a link or a control that isn't the game's (pressCheck); those answers only decide a press and are never
 // saved or logged. After every screenshot the capture asks whether an ad frame was in view (adInView: frame addresses
-// and names matched against fixed lists, a box and a visible yes or no); the answer only drops that frame.
+// and names matched against fixed lists, a box and a visible yes or no); the answer only drops that frame. The top
+// frame's host is compared with the one the game ran on at the first frame: a navigation to another host (a jam
+// game's exit portal) ends all input, and no frame from then on is kept ("left the game").
 // Games whose creator sent screenshots with the submission (provenance.uploads) are never captured; the upload job
 // fetches those instead. node scripts/capture.mjs --split <slug-list file> prints { capture, uploads } for the workflow.
 import { mkdirSync, mkdtempSync, rmSync, rmdirSync, writeFileSync, readFileSync, existsSync, copyFileSync } from 'node:fs';
@@ -694,16 +696,16 @@ async function press(el, o, guard, { event = true } = {}) {
  * Presses the first visible element whose accessible name (buttons) or whole text matches `names` and that pressCheck
  * allows (never a link, never a wallet, shop or sign-in). Returns how it was pressed ('clicked' or 'event'), or false.
  * Every call is bounded by `o.clickTimeout`, the whole search by `until` (a time); `guard` keeps the capture deadline.
- * `once`: skip elements pressed before, and mark this one.
+ * `once`: skip elements pressed before, and mark this one. Nothing more is pressed once `signal` is aborted.
  */
-async function clickByName(page, names, o, guard, until, { once = false, label = 'button', trace } = {}) {
+async function clickByName(page, names, o, guard, until, { once = false, label = 'button', trace, signal } = {}) {
   const tries = [page.getByRole('button', { name: names }), page.getByText(names)];
   for (const [i, all] of tries.entries()) {
-    if (Date.now() > until) return false;
+    if (Date.now() > until || signal?.aborted) return false;
     const visible = all.filter({ visible: true });
     const loc = once ? visible.and(page.locator(NOT_PRESSED)) : visible;
     const n = Math.min(await guard(within(loc.count(), o.clickTimeout, 0)), 3);
-    for (let k = 0; k < n && Date.now() <= until; k++) {
+    for (let k = 0; k < n && Date.now() <= until && !signal?.aborted; k++) {
       // One element, held while it is pressed and marked (a locator would find whatever replaced it after the click).
       const el = await guard(within(loc.nth(k).elementHandle({ timeout: o.clickTimeout }), o.clickTimeout + 500, null));
       if (!el) continue;
@@ -731,7 +733,8 @@ async function clickByName(page, names, o, guard, until, { once = false, label =
  * form's submit button. A canvas title screen gets the centre click and Enter of the plain schedule, after which a DOM
  * menu may appear. While nothing has been pressed the step keeps looking (a menu can appear after a long load); after a
  * press it looks `o.startIdle` more times for the next screen's button. When every press was only a click event, which
- * the page may have ignored, the centre click and Enter still follow. Never throws except for the deadline.
+ * the page may have ignored, the centre click and Enter still follow. Nothing more is pressed once `signal` is aborted
+ * (the page left the game). Never throws except for the deadline.
  */
 export async function startGame(page, o, guard, signal) {
   const until = Date.now() + o.startBudget;
@@ -748,7 +751,7 @@ export async function startGame(page, o, guard, signal) {
   let presses = 0;
   let clicked = false; // a press landed as a real mouse click (not just a click event)
   let idle = 0; // rounds without a press since the last one
-  for (let round = 0; presses < o.startRounds && Date.now() <= until; round++) {
+  for (let round = 0; presses < o.startRounds && Date.now() <= until && !signal?.aborted; round++) {
     // Local review only: our own decisions, never anything the page says.
     const trace = typeof o.trace === 'function' ? (s) => o.trace(`start round ${round + 1}: ${s}`) : undefined;
     if (!named) {
@@ -759,10 +762,11 @@ export async function startGame(page, o, guard, signal) {
       }
     }
     const how =
-      (await clickByName(page, SOLO_NAMES, o, guard, until, { once: true, label: 'solo option', trace })) ||
-      (await clickByName(page, START_NAMES, o, guard, until, { once: true, label: 'start button', trace })) ||
-      (await clickByName(page, NEXT_NAMES, o, guard, until, { label: 'next button', trace })) ||
-      (o.rooms === true && (await clickByName(page, ROOM_NAMES, o, guard, until, { once: true, label: 'room in a list', trace })));
+      (await clickByName(page, SOLO_NAMES, o, guard, until, { once: true, label: 'solo option', trace, signal })) ||
+      (await clickByName(page, START_NAMES, o, guard, until, { once: true, label: 'start button', trace, signal })) ||
+      (await clickByName(page, NEXT_NAMES, o, guard, until, { label: 'next button', trace, signal })) ||
+      (o.rooms === true && (await clickByName(page, ROOM_NAMES, o, guard, until, { once: true, label: 'room in a list', trace, signal })));
+    if (signal?.aborted) break;
     if (how) {
       presses++;
       if (how === 'clicked') clicked = true;
@@ -825,6 +829,7 @@ export async function startGame(page, o, guard, signal) {
     await pause(o.startPause);
   }
   const trace = typeof o.trace === 'function' ? (s) => o.trace(`start: ${s}`) : undefined;
+  if (signal?.aborted) return;
   if (presses && !clicked && !canvasTried) {
     // Every press was a click event, which the page may have ignored (a bouncing "PRESS START" over a game that
     // starts on Enter): the centre click and Enter still get their turn.
@@ -838,19 +843,23 @@ export async function startGame(page, o, guard, signal) {
 
 /**
  * Play input between post-start frames: step i of PLAY_STEPS. Clicks and Space go through pressCheck within the click
- * budget: on a page too busy to answer in time the input is skipped, never the frame after it delayed.
+ * budget: on a page too busy to answer in time the input is skipped, never the frame after it delayed. Once `signal`
+ * is aborted (the page left the game) nothing more is pressed; held keys are let go at once.
  */
 async function playInput(page, i, o, guard, signal) {
+  if (signal?.aborted) return;
   const step = PLAY_STEPS[i % PLAY_STEPS.length];
   const { width, height } = o.viewport;
   if (step.click) {
     await guard(within(page.mouse.move(width * step.click[0], height * step.click[1], { steps: 4 }), o.clickTimeout));
+    if (signal?.aborted) return;
     await clickAt(page, width * step.click[0], height * step.click[1], o, guard, o.clickTimeout);
   }
+  if (signal?.aborted) return;
   for (const k of step.keys) await guard(within(page.keyboard.down(k), o.clickTimeout));
   await guard(sleep(o.holdMs, signal));
   for (const k of step.keys) await guard(within(page.keyboard.up(k), o.clickTimeout));
-  if (step.press) await pressKey(page, step.press, o, guard, o.clickTimeout);
+  if (step.press && !signal?.aborted) await pressKey(page, step.press, o, guard, o.clickTimeout);
 }
 
 /** How long the end of a capture waits for engine answers still out, its own last scan's among them. */
@@ -892,12 +901,15 @@ export async function captureOne(url, outDir, opts = {}) {
 
   // Frames taken so far live outside `work`, so a deadline or a frozen page after the cover still keeps the cover.
   // With the start step, `before` holds the frame taken before it (the menu), used only when nothing after it is.
-  // `ads` counts frames dropped because an ad was in view.
-  const state = { context: null, page: null, opened: false, finished: false, shots: [], before: [], timedOut: false, ads: 0 };
+  // `ads` counts frames dropped because an ad was in view. `home` is the host the game runs on, fixed at the first frame
+  // (an address that sends the browser on to the game's real site before then is part of opening it); `left` is set when
+  // the top frame then heads for another host (a jam game's exit portal, a link out of the game).
+  const state = { context: null, page: null, opened: false, finished: false, shots: [], before: [], timedOut: false, ads: 0, home: null, left: false };
   // The best engine and the best renderer across all scans, each by its own priority.
   let engine = { engine: null, renderer: null, evidence: [] };
   const better = (order, next, current) => next && (!current || order.indexOf(next) < order.indexOf(current));
   const detected = (next) => {
+    if (state.left) return; // possibly the other site's engine
     if (better(ENGINE_PRIORITY, next.engine, engine.engine)) engine = { ...engine, engine: next.engine, evidence: next.evidence };
     if (better(RENDERERS, next.renderer, engine.renderer)) engine = { ...engine, renderer: next.renderer };
   };
@@ -906,7 +918,20 @@ export async function captureOne(url, outDir, opts = {}) {
   // any fixed wait to answer, and a scan at the end alone missed engines that the first click started.
   const scanning = new AbortController();
   const scans = [];
-  const scan = () => scans.push(detectPageEngine(state.page, limit + ENGINE_WAIT, scanning.signal).then(detected));
+  const scan = () => state.left || scans.push(detectPageEngine(state.page, limit + ENGINE_WAIT, scanning.signal).then(detected));
+  // The page left the game: no more input (everything that presses keys or clicks watches `stop`), no more frames.
+  // Only the host of the address is compared, read as data; nothing else about it is kept or logged.
+  const leave = (address) => {
+    if (state.left || state.home === null) return;
+    let host = '';
+    try {
+      host = new URL(String(address).slice(0, 4096)).host;
+    } catch {}
+    if (host === state.home) return;
+    state.left = true;
+    trace?.('left the game: the page went to another site; no more input, and no frame from here on is kept');
+    stop.abort();
+  };
   const pick = () => pickFrames([...state.shots, ...state.before], { preferred: state.shots.length });
   const work = async () => {
     const b = await guard(
@@ -948,6 +973,16 @@ export async function captureOne(url, outDir, opts = {}) {
       fail('download');
     });
     page.on('crash', () => fail('crash'));
+    // Another host for the top frame, when the navigation starts and when it lands (a click or a key can send the game
+    // through a portal to the next jam game; the screenshots after it would show that game).
+    page.on('request', (req) => {
+      try {
+        if (req.isNavigationRequest() && req.frame() === page.mainFrame()) leave(req.url());
+      } catch {}
+    });
+    page.on('framenavigated', (frame) => {
+      if (frame === page.mainFrame()) leave(frame.url());
+    });
 
     const open = async (target) => {
       state.opened = true;
@@ -996,13 +1031,22 @@ export async function captureOne(url, outDir, opts = {}) {
     scan();
 
     // One frame. A busy renderer can miss one frame deadline; one retry before giving up on the game. Null when the
-    // game stopped answering after earlier frames (those may be enough; later ones are a bonus); false when an ad was
-    // in view (adInView): that frame is dropped and the schedule goes on.
-    // Local review (`--all-frames`): every frame of every pass is also written as it is taken, picked or not, and a
-    // frame dropped for an ad ends in `-ad`.
+    // game stopped answering after earlier frames (those may be enough; later ones are a bonus), or when the page left
+    // the game (the schedule ends, and a frame taken as it left is dropped); false when an ad was in view (adInView):
+    // that frame is dropped and the schedule goes on. The first frame fixes the game's host (`home`).
+    // Local review (`--all-frames`): every frame of every pass is also written as it is taken, picked or not; a frame
+    // dropped for an ad ends in `-ad`, one taken after the page left the game in `-left`.
     const pass = `${start ? 'start' : 'plain'}${o.throttle ? '-throttled' : ''}${o.itchPage ? '-itchpage' : ''}`;
     let taken = 0;
     const snap = async () => {
+      if (state.left) return null;
+      if (state.home === null) {
+        try {
+          state.home = new URL(page.url()).host;
+        } catch {
+          state.home = '';
+        }
+      }
       for (let attempt = 0; ; attempt++) {
         const asked = Date.now();
         let buf;
@@ -1010,6 +1054,7 @@ export async function captureOne(url, outDir, opts = {}) {
           buf = await guard(page.screenshot({ type: 'png', timeout: o.shotTimeout }));
         } catch (e) {
           trace?.(`screenshot failed after ${Date.now() - asked} ms`);
+          if (state.left) return null;
           if (e instanceof CaptureError || attempt === 1) {
             if (state.shots.length || state.before.length) {
               state.timedOut = true;
@@ -1020,6 +1065,15 @@ export async function captureOne(url, outDir, opts = {}) {
           continue;
         }
         trace?.(`screenshot took ${Date.now() - asked} ms`);
+        if (state.left) {
+          // Taken while the page was on its way to the other site: never kept.
+          if (o.allFrames) {
+            mkdirSync(o.allFrames, { recursive: true });
+            writeFileSync(join(o.allFrames, `${pass}-${taken++}-left.png`), buf);
+          }
+          trace?.('frame dropped: the page had left the game');
+          return null;
+        }
         const ad = await guard(adInView(page, o));
         if (o.allFrames) {
           mkdirSync(o.allFrames, { recursive: true });
@@ -1037,6 +1091,7 @@ export async function captureOne(url, outDir, opts = {}) {
       await guard(sleep(t0 + o.times[0] - Date.now(), stop.signal));
       const menu = await snap();
       if (menu) state.before.push(menu);
+      if (state.left) return;
       await startGame(page, o, guard, stop.signal);
       scan();
       const t1 = Date.now();
@@ -1045,7 +1100,7 @@ export async function captureOne(url, outDir, opts = {}) {
       for (let i = 0; i < o.startTimes.length; i++) {
         await guard(sleep(t1 + o.startTimes[i] - Date.now(), stop.signal));
         const shot = await snap();
-        trace?.(`frame ${i + 1} of ${o.startTimes.length} ${shot ? 'taken' : shot === false ? 'dropped' : 'lost'} at ${Date.now() - started} ms`);
+        trace?.(`frame ${i + 1} of ${o.startTimes.length} ${shot ? 'taken' : shot === false ? 'dropped' : state.left ? 'not taken (left the game)' : 'lost'} at ${Date.now() - started} ms`);
         if (shot === null) return;
         if (shot) state.shots.push(shot);
         if (i < o.startTimes.length - 1) {
@@ -1120,8 +1175,8 @@ export async function captureOne(url, outDir, opts = {}) {
       writeFileSync(engineFile, JSON.stringify(engine) + '\n');
     }
   }
-  // How many frames an ad cost: the run log says so.
-  return state.ads ? { ...result, adFrames: state.ads } : result;
+  // How many frames an ad cost, and whether the page left the game: the run log says so.
+  return { ...result, ...(state.ads ? { adFrames: state.ads } : {}), ...(state.left ? { left: true } : {}) };
 }
 
 function firstLine(e) {
@@ -1243,7 +1298,11 @@ export async function captureSlugs(slugs, { root = ROOT, out = join(root, 'out')
     const name = SLUG.test(slug) ? slug : '(invalid)';
     if (!res.ok) appendFailure(out, { slug: name, reason: res.reason, ...(res.detail ? { detail: res.detail } : {}) });
     if (res.skipped) log(`skip ${name}: the creator sent screenshots`);
-    else log(`${res.ok ? 'ok  ' : 'FAIL'} ${name} (${((Date.now() - started) / 1000).toFixed(1)} s${res.ok ? `, ${res.files.length} of ${NAMES.length} frames` : ''}${res.ok && res.adFrames ? `, ${res.adFrames} dropped for an ad in view` : ''})${res.ok ? '' : `: ${res.reason}`}`);
+    else {
+      const notes = res.ok ? [`${res.files.length} of ${NAMES.length} frames`, ...(res.adFrames ? [`${res.adFrames} dropped for an ad in view`] : [])] : [];
+      if (res.left) notes.push('left the game');
+      log(`${res.ok ? 'ok  ' : 'FAIL'} ${name} (${[`${((Date.now() - started) / 1000).toFixed(1)} s`, ...notes].join(', ')})${res.ok ? '' : `: ${res.reason}`}`);
+    }
     results.push({ slug: name, ...res });
   }
   return results;

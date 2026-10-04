@@ -228,6 +228,14 @@ const PAGES = {
         requestAnimationFrame(frame);
       })();
     };</script>`),
+  // A level with an exit portal (jam games link to each other this way): once the game runs, walking right takes the
+  // page to another site, given in ?to=. The same walk on '/same-site-hop' only goes to another page of this site.
+  '/portal': menuPage(`<button style="position:absolute;left:40px;bottom:40px;font-size:40px" onclick="startGame()">PLAY</button>
+    <script>addEventListener('keydown', (e) => { if (on && (e.code === 'ArrowRight' || e.code === 'KeyD')) location.href = new URLSearchParams(location.search).get('to'); });</script>`),
+  '/same-site-hop': menuPage(`<button style="position:absolute;left:40px;bottom:40px;font-size:40px" onclick="startGame()">PLAY</button>
+    <script>addEventListener('keydown', (e) => { if (on && (e.code === 'ArrowRight' || e.code === 'KeyD')) location.href = '/game'; });</script>`),
+  // A short address that sends the browser on to where the game really runs, right after it loads.
+  '/hop-on-load': html(`<script>addEventListener('load', () => setTimeout(() => { location.href = new URLSearchParams(location.search).get('to'); }, 100));</script>`),
   '/lock-traps': menuPage(`<button id="p" style="position:absolute;left:40px;bottom:40px;font-size:40px">PLAY</button>
     <script>
     const report = (k, v) => fetch('/report/' + k + '/' + encodeURIComponent(v));
@@ -292,7 +300,7 @@ before(async () => {
       res.writeHead(200, { 'content-type': 'application/octet-stream', 'content-disposition': 'attachment; filename="game.exe"' });
       return res.end('MZ not really a program');
     }
-    const page = PAGES[req.url];
+    const page = PAGES[req.url.split('?')[0]];
     if (!page) {
       res.writeHead(404, { 'content-type': 'text/html' });
       return res.end(html('<p>not found</p>'));
@@ -1203,6 +1211,81 @@ test('frames that stop coming after the start step (heavy 3D after a light menu)
   assert.ok(res.files.length > 1, `${res.files.length} frames\n${lines.join('\n')}`);
   assert.ok(files(join(root, 'out', 'stall')).length > 1);
   assert.ok(!(await magentaAt(join(root, 'out', 'stall', 'cover.png'), 300, 200)), 'the cover is the game, not the menu');
+});
+
+// --- Leaving the game ---
+
+// Another site on a port of its own, so another host to the capture: a game at /the-game, and elsewhere a flat green
+// page that counts the keys and clicks it gets.
+const otherHits = { key: 0, click: 0 };
+let otherSite = null;
+const otherBase = async () => {
+  if (!otherSite) {
+    otherSite = createServer((req, res) => {
+      if (req.url === '/key' || req.url === '/click') {
+        otherHits[req.url.slice(1)]++;
+        res.writeHead(204);
+        return res.end();
+      }
+      res.writeHead(200, { 'content-type': 'text/html; charset=utf-8' });
+      res.end(req.url === '/the-game' ? gamePage() : html(`<div style="position:fixed;inset:0;background:#0f0"></div><script>
+        addEventListener('keydown', () => fetch('/key')); addEventListener('mousedown', () => fetch('/click'));
+      </script>`));
+    });
+    await new Promise((resolve) => otherSite.listen(0, '127.0.0.1', resolve));
+  }
+  return `http://127.0.0.1:${otherSite.address().port}`;
+};
+after(async () => {
+  if (!otherSite) return;
+  otherSite.closeAllConnections();
+  await new Promise((resolve) => otherSite.close(resolve));
+});
+const greenAt = async (file, left, top) => {
+  const { data } = await sharp(readFileSync(file)).extract({ left, top, width: 1, height: 1 }).raw().toBuffer({ resolveWithObject: true });
+  const [r, g, b] = data;
+  return r < 60 && g > 200 && b < 60;
+};
+
+test('a game whose portal takes the player to another site: input stops there, and only frames from before are kept', async () => {
+  const to = `${await otherBase()}/next-game`;
+  otherHits.key = otherHits.click = 0;
+  const dir = join(tmp(), 'portal');
+  const { trace, log } = traced();
+  const res = await captureOne(`${base}/portal?to=${encodeURIComponent(to)}`, dir, { ...FAST, ...START_FAST, trace });
+  assert.equal(res.ok, true, `${res.reason}${log()}`);
+  assert.equal(res.left, true, log());
+  assert.match(log(), /left the game/);
+  assert.ok(res.files.length >= 1, log());
+  for (const f of res.files) assert.ok(!(await greenAt(f, 640, 360)), `${f.slice(dir.length + 1)} shows the other site${log()}`);
+  await new Promise((r) => setTimeout(r, 300));
+  assert.deepEqual(otherHits, { key: 0, click: 0 }, `nothing was pressed on the other site${log()}`);
+});
+
+test('the run log says "left the game"', async () => {
+  const root = tmp();
+  mkdirSync(join(root, 'games'));
+  writeFileSync(join(root, 'games', 'portal.yaml'), `play:\n  url: "${base}/portal?to=${encodeURIComponent(`${await otherBase()}/next-game`)}"\n`);
+  const lines = [];
+  const [res] = await captureSlugs(['portal'], { ...FAST, ...START_FAST, root, out: join(root, 'out'), log: (l) => lines.push(l) });
+  assert.equal(res.left, true, lines.join('\n'));
+  assert.match(lines.join('\n'), /ok {3}portal \([\d.]+ s, \d of 3 frames, left the game\)/);
+});
+
+test('a game that moves to another page of its own site is still the game: the frames go on', async () => {
+  const { trace, log } = traced();
+  const res = await captureOne(`${base}/same-site-hop`, join(tmp(), 'same-site'), { ...FAST, ...START_FAST, shotTimeout: 6000, deadline: 20_000, trace });
+  assert.equal(res.ok, true, `${res.reason}${log()}`);
+  assert.equal(res.left, undefined, log());
+  assert.doesNotMatch(log(), /left the game/);
+});
+
+test("an address that sends the browser on to the game's real site before the first frame is not leaving it", async () => {
+  const to = `${await otherBase()}/the-game`;
+  const res = await captureOne(`${base}/hop-on-load?to=${encodeURIComponent(to)}`, join(tmp(), 'hop-on-load'), { ...FAST, times: [1500, 1900, 2300], shotTimeout: 6000, deadline: 20_000 });
+  assert.equal(res.ok, true, res.reason);
+  assert.equal(res.left, undefined);
+  assert.ok(res.files.length >= 2, `${res.files.length} frames`);
 });
 
 // --- Ads (adInView) ---
