@@ -552,9 +552,25 @@ terms:
     name: OpenClaw
     maker: OpenClaw Foundation
     url: https://openclaw.ai/
+    intro: |-
+      In Second Form: Requiem you blast through waves of enemies in space, and pressing T turns your fighter into a combat mecha. Its creator made it with OpenClaw to learn vibe coding and build a game they wanted to play.
+
+      OpenClaw is basically a free AI assistant that runs on your own computer, and you talk to it through chat apps like WhatsApp, Telegram or Discord. Peter Steinberger created it, and it was called Clawdbot, then very briefly Moltbot, before it settled on OpenClaw in January 2026.
+
+      The OpenClaw Foundation, a US non-profit introduced on July 8, 2026, now looks after the MIT-licensed project.
+
+      Ask it for a game and its agent works in a workspace folder, reading and editing files and running shell commands. From the same chat it can even run coding agents you've installed and signed in to, like Claude Code, Codex, OpenCode and Gemini CLI.
+
+      It works with hosted models from Anthropic, OpenAI, Google, xAI and others, which still need their own plan or API key, and with local ones. Paul Shroom built Asteroid Ace with OpenClaw and OpenCode on a local Qwen3.5 model running on an RTX 5090 laptop GPU.
     sources:
       - https://openclaw.ai/
       - https://github.com/openclaw/openclaw
+      - https://docs.openclaw.ai/concepts/agent
+      - https://docs.openclaw.ai/tools/acp-agents
+      - https://docs.openclaw.ai/concepts/agent-runtimes
+      - https://docs.openclaw.ai/concepts/model-providers
+      - https://openclaw.ai/blog/introducing-openclaw-foundation
+      - https://docs.openclaw.ai/start/lore
   - slug: astrocade
     name: Astrocade
     url: https://www.astrocade.com/

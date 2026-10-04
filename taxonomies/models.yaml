@@ -333,9 +333,18 @@ terms:
   - slug: gpt-5-5
     name: GPT-5.5
     provider: openai
+    intro: |-
+      Cue Club 2 sends you on a ten-stop tour of British pub 8-ball pool, from Leeds to Crystal Palace, against opponents who even chalk their cues and sometimes bottle a shot. Its creator built it with GPT-5.5, working across Codex, ChatGPT and Cursor.
+
+      OpenAI released GPT-5.5 to the API on April 24, 2026 and pitches it at coding and complex professional work. It reads text and images, so you can show it a screenshot of what's broken, and its context window of just over a million tokens fits a lot of code at once.
+
+      In the API it costs $5 per million input tokens and $30 per million output tokens, and a prompt past 272K tokens costs double for input and half again as much for output. Through the Responses API it can also call OpenAI's built-in tools, image generation and computer use included.
+
+      It had a pretty short run at the top, since the GPT-5.6 family arrived in July and GPT-6 Astra in September. OpenAI scheduled its retirement from ChatGPT, ChatGPT Work and Codex on every plan for October 14, and that retirement doesn't cover the API.
     sources:
       - https://developers.openai.com/api/docs/models/gpt-5.5
       - https://developers.openai.com/api/docs/changelog
+      - https://learn.chatgpt.com/docs/models
   - slug: gpt-5-4
     name: GPT-5.4
     provider: openai
