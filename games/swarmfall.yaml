@@ -1,7 +1,28 @@
 slug: swarmfall
 title: Swarmfall
-tagline: Submitted by its creator; the description is added during review.
-description: ""
+tagline: Steer through a glowing alien landscape while your weapons shoot swarms on their own.
+description: "The title screen shows a mossy, glowing alien hillside behind a big Play button, with a Daily World button, a custom seed box and an Upgrades shop underneath. The goal is to survive one alien day.
+
+
+  Once a run starts, you only steer. Your weapons fire by themselves, so you move through the landscape, jump and dodge, and let them do the killing.
+
+
+  The screen fills up with orange and green bugs and blue winged things, and damage numbers pop over all of them, which makes for a surprisingly noisy swarm. You get a health bar, a clock at the top, a kill counter, a level indicator and a small minimap in the corner.
+
+
+  A row of weapon and upgrade icons sits at the top left, and one of them is marked MAX.
+
+
+  Shrines turn up in the world too. One of them offers a gift of a chest and some stars, and it comes with a countdown timer, so it won't wait around.
+
+
+  You pick a starting weapon before you go in, and Pollen Halo is one of the choices. Shards are what you spend in the Upgrades shop, and a codex tracks what you've discovered. There's also an autopilot toggle that steers and picks upgrades for you, a clever option for watching a run unfold.
+
+
+  Besides the regular Play button, there's a Daily World tied to the current date, while the seed box lets you type in your own seed or roll a random one with the dice button.
+
+
+  It began as buak's test game for a Gaussian splat engine, which fits the soft, painterly look of the terrain."
 play:
   url: https://splatworlds.vercel.app/survivors
   platforms:
@@ -9,6 +30,7 @@ play:
   embedPermission:
     by: submission
     date: 2026-10-05
+  embeddable: true
 creator:
   name: buak
   handle: buak
