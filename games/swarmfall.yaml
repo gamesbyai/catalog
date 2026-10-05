@@ -1,0 +1,45 @@
+slug: swarmfall
+title: Swarmfall
+tagline: Submitted by its creator; the description is added during review.
+description: ""
+play:
+  url: https://splatworlds.vercel.app/survivors
+  platforms:
+    - browser
+  embedPermission:
+    by: submission
+    date: 2026-10-05
+creator:
+  name: buak
+  handle: buak
+made:
+  models:
+    - claude-opus-5-5
+  tools:
+    - claude-code
+  aiShare: most
+  source: "Creator's submission (issue #115)"
+  evidence: creator
+  notes: This was a test game for a gaussian splat engine.
+tech:
+  engine: threejs
+  multiplayer: single
+genres:
+  - action
+  - shooter
+  - casual
+media:
+  cover: games/swarmfall/cover
+  screenshots:
+    - games/swarmfall/shot-1
+    - games/swarmfall/shot-2
+dates:
+  added: 2026-10-05
+  updated: 2026-10-05
+status: live
+provenance:
+  foundVia: form
+  submittedBy: "#115"
+  uploads:
+    ref: dc59086d07cc4ea6
+    count: 2
