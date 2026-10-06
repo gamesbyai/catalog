@@ -1,0 +1,51 @@
+slug: vybeciv
+title: VybeCiv
+tagline: Submitted by its creator; the description is added during review.
+description: ""
+play:
+  url: https://vaigames.com/vybeciv/
+  platforms:
+    - browser
+  embedPermission:
+    by: submission
+    date: 2026-10-06
+creator:
+  name: Albert Simon
+  handle: albertsimondev
+  x: AlbertSimonDev
+made:
+  models:
+    - claude-sonnet-5-5
+    - grok-4
+  tools:
+    - claude-code
+    - grok-app
+  aiShare: most
+  source: "Creator's submission (issue #117)"
+  evidence: creator
+  notes: "Browser 4X: Earth → Solar System → Galaxy. Built with Claude Code /
+    Sonnet plus Grok and other AIs for coding and iteration; music with Suno. I
+    directed design, balance, and polish by hand. Free at vaigames.com/vybeciv —
+    no download. First public build; late-game AI and onboarding still rough."
+tech:
+  engine: pixijs
+  multiplayer: single
+genres:
+  - simulation
+  - strategy
+  - sandbox
+media:
+  cover: games/vybeciv/cover
+  screenshots:
+    - games/vybeciv/shot-1
+    - games/vybeciv/shot-2
+dates:
+  added: 2026-10-06
+  updated: 2026-10-06
+status: live
+provenance:
+  foundVia: form
+  submittedBy: "#117"
+  uploads:
+    ref: 4cfb5e26c2293ea8
+    count: 3
