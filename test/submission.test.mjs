@@ -21,6 +21,12 @@ test('only an issue filed by the site\'s GitHub App can name uploaded screenshot
   assert.equal(step((s) => s.name === 'Convert the issue to an entry').env.ISSUE_AUTHOR_TYPE, PIN);
 });
 
+test('a maintainer\'s submission label starts an issue filed without it; other labels never rerun one', () => {
+  const wf = parse(text());
+  assert.deepEqual(wf.on.issues.types, ['opened', 'edited', 'labeled']);
+  assert.equal(wf.jobs['to-pr'].if, "contains(github.event.issue.labels.*.name, 'submission') && github.event.issue.state == 'open' && (github.event.action != 'labeled' || github.event.label.name == 'submission')");
+});
+
 test('the workflow never decides by the author type or by a login', () => {
   const wf = text();
   assert.doesNotMatch(wf, /user\.type/);

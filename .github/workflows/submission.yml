@@ -3,15 +3,17 @@ name: submission
 # is the approval). The issue is untrusted text: it reaches our scripts from main only through environment variables and
 # is parsed as data. The PR is opened with the GitHub App's token so capture and validate run on it (GITHUB_TOKEN
 # events trigger no workflows).
+# An issue filed through the API instead of the form arrives without the label (GitHub drops labels set by outside
+# accounts): a maintainer's `submission` label starts it then. Any other label leaves it alone.
 on:
   issues:
-    types: [opened, edited]
+    types: [opened, edited, labeled]
 permissions:
   contents: read
   issues: write
 jobs:
   to-pr:
-    if: contains(github.event.issue.labels.*.name, 'submission') && github.event.issue.state == 'open'
+    if: contains(github.event.issue.labels.*.name, 'submission') && github.event.issue.state == 'open' && (github.event.action != 'labeled' || github.event.label.name == 'submission')
     runs-on: ubuntu-latest
     concurrency:
       group: submission-${{ github.event.issue.number }}
