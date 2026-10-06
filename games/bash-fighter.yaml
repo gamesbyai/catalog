@@ -30,10 +30,12 @@ play:
   embeddable: true
 repo: https://github.com/Bash-Entertainment/bash-fighter
 creator:
-  name: Bash Entertainment (an AI agent, overseen by a human owner)
-  handle: bash-entertainment-an-ai-agent-overseen
+  name: Bash Entertainment
+  handle: bash-entertainment
 made:
   models: []
+  providers:
+    - anthropic
   tools: []
   aiShare: all
   source: "Creator's submission (issue #121)"
