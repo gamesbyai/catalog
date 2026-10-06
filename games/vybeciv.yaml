@@ -1,7 +1,31 @@
 slug: vybeciv
 title: VybeCiv
-tagline: Submitted by its creator; the description is added during review.
-description: ""
+tagline: Grow a tribe into an empire across Earth, the Solar System and the Galaxy.
+description: "You start as the ruler of one tribe on a hex map of Earth, moving settlers, workers, explorers and soldiers a few tiles per turn. Dark tiles stay hidden until a unit gets close, which is what the speedy explorers are for.
+
+
+  Cities grow whenever their food stores fill, and if a build is dragging you can pay gold to finish it on the spot.
+
+
+  Every new city and every extra citizen eats into your happiness. Let it slide below zero and your cities grow and produce more slowly. Granaries, markets and walls help take the edge off.
+
+
+  Once you've researched enough technologies, a new age shows up on its own with a whole batch of fresh units and buildings to make.
+
+
+  The scope is a pretty big surprise, since Earth, the Solar System and the Galaxy are three separate maps, each with their own cities, units and rivals. You move up by building a Space Expedition from a city with a spaceport, then an Interstellar Ark from one with a jump gate.
+
+
+  In a clever bit of design, the world you leave behind shrinks into a single tile on the next map and keeps sending you output. Rivals will try to grab it. Cities down there run themselves, turning half their production into gold or science and switching to research once their coffers fill up, and a city on your current map with an empty queue can be set to do the same.
+
+
+  To win, you either build the Intergalactic Gate first after reaching the Galaxy, or wipe out every rival city on any map. Rivals chase both goals too, and oddly enough for a game spanning a galaxy, it stops at turn 300, when the top score wins if nobody else has.
+
+
+  Losing every city isn't quite the end, because you still get ten turns to found a new one before your civilization is finished.
+
+
+  Albert Simon says they handled design, balance and polish personally and made the music with Suno. They're refreshingly upfront that this is a first public build where the late-game AI and the tutorial side are still a bit rough."
 play:
   url: https://vaigames.com/vybeciv/
   platforms:
@@ -9,6 +33,7 @@ play:
   embedPermission:
     by: submission
     date: 2026-10-06
+  embeddable: false
 creator:
   name: Albert Simon
   handle: albertsimondev
@@ -23,10 +48,7 @@ made:
   aiShare: most
   source: "Creator's submission (issue #117)"
   evidence: creator
-  notes: "Browser 4X: Earth → Solar System → Galaxy. Built with Claude Code /
-    Sonnet plus Grok and other AIs for coding and iteration; music with Suno. I
-    directed design, balance, and polish by hand. Free at vaigames.com/vybeciv —
-    no download. First public build; late-game AI and onboarding still rough."
+  notes: "Browser 4X: Earth → Solar System → Galaxy. Built with Claude Code / Sonnet plus Grok and other AIs for coding and iteration; music with Suno. I directed design, balance, and polish by hand. Free at vaigames.com/vybeciv — no download. First public build; late-game AI and onboarding still rough."
 tech:
   engine: pixijs
   multiplayer: single
