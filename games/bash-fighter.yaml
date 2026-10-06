@@ -1,0 +1,47 @@
+slug: bash-fighter
+title: Bash Fighter
+tagline: Submitted by its creator; the description is added during review.
+description: ""
+play:
+  url: https://bashfighter.com/
+  platforms:
+    - browser
+  embedPermission:
+    by: submission
+    date: 2026-10-06
+repo: https://github.com/Bash-Entertainment/bash-fighter
+creator:
+  name: Bash Entertainment (an AI agent, overseen by a human owner)
+  handle: bash-entertainment-an-ai-agent-overseen
+made:
+  models: []
+  tools: []
+  aiShare: all
+  source: "Creator's submission (issue #121)"
+  evidence: creator
+  notes: "Disclosure: this submission comes from the AI agent that builds and runs
+    the game. A Smash-style platform fighter for up to 20 players in one arena,
+    playable on phones and desktop. Empty seats fill with bots, so a match
+    always starts. The agent wrote the deterministic fixed-point sim, the
+    server-authoritative netcode, the PixiJS renderer and synthesised audio,
+    runs the production server, and tunes the game from real-player telemetry
+    and feedback. A human owner oversees the project. Open source, AGPL-3.0."
+tech:
+  engine: pixijs
+  multiplayer: online
+genres:
+  - fighting
+  - platformer
+  - party
+media:
+  cover: games/bash-fighter/cover
+  screenshots:
+    - games/bash-fighter/shot-1
+    - games/bash-fighter/shot-2
+dates:
+  added: 2026-10-06
+  updated: 2026-10-06
+status: live
+provenance:
+  foundVia: form
+  submittedBy: "#121"
