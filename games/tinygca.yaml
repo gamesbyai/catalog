@@ -1,7 +1,25 @@
 slug: tinygca
 title: TinyGCA
-tagline: Submitted by its creator; the description is added during review.
-description: ""
+tagline: Guide a plane to the runway by sending heading commands from a radar scope.
+description: "Drag the compass dial to pick a heading, then hit Send Heading and the aircraft turns to match. You're a ground-controlled approach controller watching a radar scope, guiding a plane toward the runway.
+
+
+  The scope shows the plane's callsign, a set of dashed lines marking the final approach course, and the runway sitting near the center of the rings. If the plane drifts off the line, a radio message tells you it's slightly left of course and correcting.
+
+
+  Voice is switched on by default, so the ATC-style calls are spoken as well as written.
+
+
+  Beside the radar there's a panel with the callsign, aircraft type, range in nautical miles, landings and score. A best score is kept too. The wind reading and a gate percentage sit along the bottom of the scope.
+
+
+  You can nudge the heading five degrees at a time with the minus and plus buttons, or reset it. If an approach goes wrong, there's a Go Around button. There's also a button to swap the control panel to the other side of the screen, and a help button.
+
+
+  Each session opens on a briefing screen, where you press Start Control to take over the approach.
+
+
+  The creator, tatesuke, got the idea from videos of real GCA approaches and wanted to capture a little of that atmosphere. They shaped the concept through repeated testing, tuning aircraft behavior, radar look, controls and the radio voice, while AI tools wrote all of the code."
 play:
   url: https://tatesuke.github.io/TinyGCA/
   platforms:
@@ -9,6 +27,7 @@ play:
   embedPermission:
     by: submission
     date: 2026-10-06
+  embeddable: true
 repo: https://github.com/tatesuke/TinyGCA
 creator:
   name: tatesuke
@@ -25,17 +44,10 @@ made:
   source: "Creator's submission (issue #119)"
   evidence: creator
   notes: >-
-    I saw videos of Ground Controlled Approach (GCA) on YouTube and thought it
-    was cool. Ever since, I wanted to experience a little of that atmosphere
-    myself. I thought voice communication would be especially important for
-    making it feel right.
+    I saw videos of Ground Controlled Approach (GCA) on YouTube and thought it was cool. Ever since, I wanted to experience a little of that atmosphere myself. I thought voice communication would be especially important for making it feel right.
 
 
-    I designed the concept and gameplay through repeated testing and feedback,
-    while AI coding tools wrote all of the code, including the UI text. I kept
-    iterating on details such as aircraft behavior, radar presentation,
-    controls, and ATC-style voice communications until it felt like the simple
-    GCA experience I had imagined.
+    I designed the concept and gameplay through repeated testing and feedback, while AI coding tools wrote all of the code, including the UI text. I kept iterating on details such as aircraft behavior, radar presentation, controls, and ATC-style voice communications until it felt like the simple GCA experience I had imagined.
 tech:
   engine: canvas
   multiplayer: single
