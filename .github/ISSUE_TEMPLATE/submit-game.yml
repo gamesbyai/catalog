@@ -306,6 +306,10 @@ body:
         - Pi
         - OpenClaw
         - Astrocade
+        - Tesana
+        - Remix
+        - Spawn
+        - Bitmagic
         - Verse8
         - Base44
     validations:

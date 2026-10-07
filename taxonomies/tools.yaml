@@ -476,14 +476,16 @@ terms:
     intro: |-
       In Rosebud AI you describe a game in plain English, and it builds the code, art and sound. It's a browser-based game maker from Rosebud AI, Inc.
 
-      Games run as WebGL in the browser, with Three.js for 3D, and you can view and edit the generated JavaScript. Rosebud covers 2D games, 3D games and voxel worlds.
+      Games run as WebGL in the browser, with Three.js for 3D, and Indie Dev and higher plans let you view and edit the generated JavaScript. Rosebud covers 2D games, 3D games and voxel worlds.
 
-      Its asset tools include a sprite sheet generator, PixelVibe for 2D assets, a skybox generator and AI audio. You refine the game by chatting and publish it with one click to a shareable link, and a Windows export makes desktop builds.
+      Its asset tools include a sprite sheet generator, a 2D asset generator, a skybox generator and AI audio. You refine the game by chatting and publish it with one click to a shareable link, and Pro and higher plans add Windows export for desktop builds.
 
-      There's a free tier, and paid plans add commercial rights. The site doesn't name the AI models behind it, though.
+      As of October 2026, there's a free tier, and commercial rights start with 10x Dev. The pricing page calls its default AI Rosie.
     sources:
       - "https://rosebud.ai/ai-game-creator"
       - "https://rosebud.ai/"
+      - "https://rosebud.ai/ai-game-assets"
+      - "https://rosebud.ai/pricing"
   - slug: websim
     name: WebSim
     url: "https://websim.com/"
@@ -574,9 +576,81 @@ terms:
   - slug: astrocade
     name: Astrocade
     url: https://www.astrocade.com/
+    intro: |-
+      Describe the game you want to make in Astrocade, then keep asking for changes as you try the result. You don't need to write code, and those follow-up requests can change something as small as a hitbox or how a character turns.
+
+      Art and sound come from the same place, so you can ask for a new background or music while you work on the game. Astrocade supports 2D and 3D browser games, and publishing puts them on a platform where players browse a feed and share what they find.
+
+      As of October 2026, Astrocade says its creation tools and asset generators are free.
     sources:
       - https://www.astrocade.com/
       - https://www.astrocade.com/create
+      - https://www.astrocade.com/blog/how-to-make-your-games-shine-on-astrocade
+      - https://www.astrocade.com/blog/why-should-you-create-games-on-astrocade
+      - https://www.astrocade.com/blog/beyond-flat-simple-3d-games-that-are-taking-over-astrocade
+  - slug: tesana
+    name: Tesana
+    maker: Dreamsands, Inc.
+    url: https://tesana.com/
+    intro: |-
+      Start with a game idea in Tesana's chat, and the live preview sits beside the conversation while the AI builds it. You can try a change, ask for another, and roll back a build if it's gone in the wrong direction.
+
+      The games run in a browser, in either 2D or 3D, and you don't need to write code to make one. A published game gets its own store page and appears in the marketplace, where other people can find it and play.
+
+      As of October 2026, you can start on a free plan with daily credits, capped each month. Pro adds public publishing and downloads of your original game's source code, plus Windows and macOS exports.
+    sources:
+      - https://tesana.com/
+      - https://tesana.com/help
+      - https://tesana.com/pricing
+      - https://docs.tesana.ai/credits/plans-and-topups
+      - https://docs.tesana.ai/publishing/publishing-your-game
+  - slug: remix
+    name: Remix
+    maker: Farworld Labs, Inc.
+    url: https://remix.gg/
+    intro: |-
+      Describe a game in Remix Desktop and its built-in agent writes it with a preview you can try before publishing. If you've already made an HTML5 game elsewhere, you can bring that in too.
+
+      Remix hosts the game on its website and apps, with leaderboards and saved progress supplied by the platform. Mobile games can appear on the web, in the iOS and Android apps, and in Remix Desktop, while desktop games show a preview on phones instead of running there.
+
+      As of October 2026, the free plan includes game hosting, publishing and the Remix Low AI model. You can also bring your own AI coding tools, while paid plans add credits for Remix AI.
+    sources:
+      - https://remix.gg/
+      - https://remix.gg/docs/introduction
+      - https://remix.gg/docs/publishing
+      - https://remix.gg/plans
+      - https://remix.gg/legal/terms
+  - slug: spawn
+    name: Spawn
+    maker: AI Tools, Inc.
+    url: https://www.spawn.co/
+    intro: |-
+      In Spawn you build a game by talking to Savi, then keep the conversation going as you change the terrain, characters or rules. You can also fly around in God Mode and move objects yourself, so a chat message isn't your only way to adjust the world.
+
+      You can make 2D or 3D games, and friends can even try an unfinished version while you keep building. Games run in a browser, including on phones, though ones marked Desktop only need a computer.
+
+      Publishing puts a game in the homepage's New section, and you can send people its link to play.
+
+      As of October 2026, creating and playing are free, with Savi included and no separate AI subscription needed. Spawn says Savi runs on Claude Opus 5.5 by default.
+    sources:
+      - https://www.spawn.co/
+      - https://www.spawn.co/privacy-policy
+  - slug: bitmagic
+    name: Bitmagic
+    maker: Bitmagic Oy
+    url: https://bitmagic.ai/
+    intro: |-
+      Describe a 3D game in Bitmagic's browser Creator and change it through prompts as the scene takes shape. If you'd like to work in code, its GDK gives your coding agent a project with the engine included as editable TypeScript.
+
+      The two routes share an account and publishing system, so either can lead to a game people play in their browser. Each game gets a page with cover art and a play button, and public releases can appear in Bitmagic's discovery feed. GDK uploads start private until you choose to list them publicly.
+
+      As of October 2026, the browser Creator is free to start, but the GDK requires Bitmagic Pro. Free Creator sessions can have a queue when too many people are editing at once.
+    sources:
+      - https://bitmagic.ai/
+      - https://bitmagic.ai/about/
+      - https://bitmagic.ai/gdk/
+      - https://bitmagic.ai/pro/
+      - https://bitmagic.ai/terms-of-service/
   - slug: verse8
     name: Verse8
     url: https://verse8.io/
