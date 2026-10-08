@@ -20,10 +20,9 @@ description: >-
   the lanes counts as much as the numbers.
 
 
-  Some nodes carry a structure, and a considerate little legend in the corner
-  spells them out. Fortresses take less damage from incoming fleets, shipyards
-  build fleets faster, and portals open a long jump lane between distant
-  systems.
+  Some nodes carry a structure. Fortresses take less damage from incoming
+  fleets, shipyards build fleets faster, and portals open a long jump lane
+  between distant systems.
 
 
   Once per match, a random event can hit. It might be a solar storm that cuts
@@ -31,18 +30,17 @@ description: >-
   blessing since it raises production for every faction, the aliens included.
 
 
-  Four modes change how long the war runs and what winning means. Classic
-  lasts 3 minutes, Blitz gives you 2 with doubled production and quicker
-  fleets, and Conquest hands out production bonuses for holding sector
-  majorities. In those you win by wiping out every alien faction or by holding
-  the top score when time's up. Survival flips it around by sending enemy
-  waves at you, and outlasting them until the timer ends is the win.
+  Four modes change how long the war runs and what winning means. Classic lasts
+  3 minutes, Blitz gives you 2 with doubled production and quicker fleets, and
+  Conquest hands out production bonuses for holding sector majorities. In those
+  you win by wiping out every alien faction or by holding the top score when
+  time's up. Survival flips it around by sending enemy waves at you, and
+  outlasting them until the timer ends is the win.
 
 
-  The maps get randomized every match, and for some reason the alien opponents'
-  names do too. There's plenty of room to tweak things before a match, with
-  difficulty settings and map sizes to choose from. It's playable in English and
-  Portuguese.
+  The maps get randomized every match, and the alien opponents' names do too.
+  Before a match you can pick a difficulty setting and a map size. It's playable
+  in English and Portuguese.
 
 
   According to ArkantosKira, AI assisted with the game's code and text.
@@ -82,7 +80,7 @@ media:
     - games/galactic-siege/shot-2
 dates:
   added: 2026-10-01
-  updated: 2026-10-02
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:aibgj-2

@@ -7,19 +7,16 @@ description: >-
   the flippers while you try to survive an alien invasion.
 
 
-  Every fresh ball opens with a skill shot, a strobing rollover lane that pays a
-  bonus if you land the ball in it. The table has a whole spread of slingshots,
-  bumpers, drop targets, a spinner and two ramps, all running on real Box2D
-  physics. Drain every ball you've got and the aliens win.
+  Every fresh ball opens with a skill shot, a rollover lane that pays a bonus if
+  you land the ball in it. The table has slingshots, bumpers, drop targets, a
+  spinner and two ramps, all running on Box2D physics. Drain every ball you've
+  got and the aliens win.
 
 
   Hit each ramp three times and multiball kicks off. There's also an egg you can
   smash and capture for jackpots that pay out again and again, and it hatches an
-  alien that shows up in one of four forms.
-
-
-  Killing those aliens refreshes your ball saver, a neat way of turning the
-  invaders into your safety net.
+  alien that shows up in one of four forms. Killing those aliens refreshes your
+  ball saver.
 
 
   Spelling A-L-I-E-N cranks the end-of-ball bonus multiplier up as far as 5x,
@@ -30,21 +27,16 @@ description: >-
 
 
   You can nudge the table by swiping or with keys, and the game works with
-  mouse, keyboard, gamepad or touch. On a phone, swiping across the top half of
-  the screen does the nudging.
+  mouse, keyboard, gamepad or touch. On a phone, swipe across the top half of
+  the screen to nudge the table.
 
 
   Voice lines get spoken aloud in real time through text-to-speech. Three songs
   come with it.
 
 
-  The title screen goes all in on a giant purple eye and tentacles, plus a
-  neon sign with the smug claim that they came for our high scores.
-
-
   Focaccai says the code, art and sound were all made with heavy AI use. Suno
-  made the music, and GPT Image 2 painted all the artwork, title screen
-  included.
+  made the music, and GPT Image 2 painted all the artwork.
 play:
   url: https://focaccai.itch.io/alien-pinball
   embeddable: false
@@ -92,7 +84,7 @@ media:
     - games/alien-escape-pinball/shot-2
 dates:
   added: 2026-09-30
-  updated: 2026-10-02
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:aibgj-2

@@ -2,27 +2,18 @@ slug: flock
 title: FLOCK
 tagline: Grow, dash and shoot your way to the top of a neon arena.
 description: >-
-  A glowing sun sits on the horizon over a magenta grid floor, and scattered
-  across this synthwave arena are fighters made entirely of glowing dots. Yours
-  is the cyan swarm. Small brown clusters of dots drift loose between them, like
-  scraps nobody has claimed yet.
-
-
-  You move your swarm around, aim a reticle, hold down fire and dash away when a
-  rival gets too close.
+  You control one of these swarms. You move your swarm around, aim a reticle,
+  hold down fire and dash away when a rival gets too close.
 
 
   Every match is a free-for-all against seven computer-controlled swarms, and
   their names are upfront about how they'll fight, with three Hunters, a
-  Berserker, two Snipers and a Farmer. The first fighter to reach 10 kills
-  wins.
+  Berserker, two Snipers and a Farmer. The first fighter to reach 10 kills wins.
 
 
-  Two meters along the bottom of the screen count your dash charges and shotgun
-  charges, each split into five segments. The shotgun is a secondary attack on
-  right-click, while your regular fire stays on the held left button. Under the
-  arena, a scoreboard line keeps every fighter's kills and deaths in view, and
-  Tab opens the full score table.
+  Dashing and the shotgun each run on charges, and each one has five segments.
+  The shotgun is a secondary attack on right-click, while your regular fire
+  stays on the held left button. Tab opens the full score table.
 
 
   Escape or P pauses, and there's a complete gamepad layout alongside keyboard
@@ -75,7 +66,7 @@ media:
     - games/flock/shot-2
 dates:
   added: 2026-10-01
-  updated: 2026-10-02
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:vibejam-2026

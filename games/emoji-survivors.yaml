@@ -2,16 +2,14 @@ slug: emoji-survivors
 title: Emoji Survivors
 tagline: Fight endless waves of emoji monsters as a mage and stack chaotic upgrades.
 description: >-
-  Emoji Survivors sends wave after wave of emoji monsters at you, with no end
-  in sight, and hands you a mage to fight them off. As the run goes on, you
-  grab chaotic upgrades that grow your caster's build into something new. The
-  goal, put bluntly, is to clear out the horde with your spells before the
-  horde clears you out.
+  Emoji Survivors sends wave after wave of emoji monsters at you, with no end in
+  sight, and hands you a mage to fight them off. As the run goes on, you grab
+  chaotic upgrades that grow your caster's build into something new. The goal,
+  put bluntly, is to clear out the horde with your spells before the horde
+  clears you out.
 
 
-  It all starts on a mage select screen, where a row of emoji-faced portraits
-  lets you choose your caster while the panel up top lists the three skills each
-  one brings.
+  Start by picking your caster, and each mage comes with three skills.
 
 
   The Wind Mage comes first, and the whole kit seems built around shoving
@@ -20,14 +18,8 @@ description: >-
   them, and Tempest Mode drops a storm core that keeps chaining displacement.
 
 
-  Next to the mage picker there's an archive panel that tracks 22 trials and 6
-  achievements, all sitting at zero when you begin. Two of the trials ask you
-  to last 5 minutes within one run and to hit level 10 within one run. For a
-  game about outlasting a swarm, it's a long checklist.
-
-
-  There's a sound toggle up in the top corner, above chunky pixel lettering and
-  a dark forest backdrop.
+  The game also has 22 trials and 6 achievements to complete. Two of the trials
+  ask you to last 5 minutes within one run and to hit level 10 within one run.
 
 
   swisnotjan made it after long wanting to try making games and finish a whole
@@ -69,7 +61,7 @@ media:
     - games/emoji-survivors/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-10-02
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:vibejam-2026

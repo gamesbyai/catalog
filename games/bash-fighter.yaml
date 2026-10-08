@@ -1,25 +1,42 @@
 slug: bash-fighter
 title: Bash Fighter
 tagline: Knock up to twenty fighters off a shrinking arena in a Smash-style brawl.
-description: "Run with A and D, jump with Space, attack with F, use a special with G and put up a shield with Shift. Up to twenty fighters cram into one arena, a whole crowd next to the usual one-on-one, and you win by knocking the rest off the edge.
+description: "Run with A and D, jump with Space, attack with F, use a special
+  with G and put up a shield with Shift. Up to twenty fighters can share one
+  arena alongside the usual one-on-one, and you win by knocking the rest off the
+  edge.
 
 
-  The more damage you've taken, the farther a hit sends you flying, so a badly beaten fighter is one clean hit from gone.
+  The more damage you've taken, the farther a hit sends you flying, so a badly
+  beaten fighter is one clean hit from gone.
 
 
-  Early matches are short 90-second brawls where you come back after being knocked out, and the fighter with the most knockouts wins. A rules readout stays up on the HUD, which helps because the game has other modes too.
+  Early matches are short 90-second brawls where you come back after being
+  knocked out, and the fighter with the most knockouts wins. The game has other
+  modes too.
 
 
-  The default mode, Last Fighter Standing, is a battle royale where nobody comes back. The arena's blast-zone boundary closes in as the match goes, driven by the tick count and the match seed instead of a clock, so survivors get squeezed into tighter fights. Once you're out, you can fly a spectator camera around freely.
+  The default mode, Last Fighter Standing, is a battle royale where nobody comes
+  back. The arena's blast-zone boundary closes in as the match goes, driven by
+  the tick count and the match seed instead of a clock, so survivors get
+  squeezed into tighter fights. Once you're out, you can keep watching the match
+  as a spectator.
 
 
   Bots take any empty seat, so a match starts even when nobody else turns up.
 
 
-  If you'd rather play with people you know, the Play with a friend button writes a short four-character code into the page address. Anyone who opens that link lands in your lobby. Bots wait a full minute before filling a private lobby, though Start now skips the wait. Changing join to watch in the link lets a friend spectate without taking a seat.
+  If you'd rather play with people you know, the Play with a friend button
+  writes a short four-character code into the page address. Anyone who opens
+  that link lands in your lobby. Bots wait a full minute before filling a
+  private lobby, though Start now skips the wait. Changing join to watch in the
+  link lets a friend spectate without taking a seat.
 
 
-  According to the creator, an AI agent wrote the simulation, the server networking, the renderer and the synthesized audio. Surprisingly, that same agent also runs the live server and tunes the game from player feedback, with a human owner overseeing the project."
+  According to the creator, an AI agent wrote the simulation, the server
+  networking, the renderer and the synthesized audio. That same agent also runs
+  the live server and tunes the game from player feedback, with a human owner
+  overseeing the project."
 play:
   url: https://bashfighter.com/
   platforms:
@@ -40,7 +57,13 @@ made:
   aiShare: all
   source: "Creator's submission (issue #121)"
   evidence: creator
-  notes: "Disclosure: this submission comes from the AI agent that builds and runs the game. A Smash-style platform fighter for up to 20 players in one arena, playable on phones and desktop. Empty seats fill with bots, so a match always starts. The agent wrote the deterministic fixed-point sim, the server-authoritative netcode, the PixiJS renderer and synthesised audio, runs the production server, and tunes the game from real-player telemetry and feedback. A human owner oversees the project. Open source, AGPL-3.0."
+  notes: "Disclosure: this submission comes from the AI agent that builds and runs
+    the game. A Smash-style platform fighter for up to 20 players in one arena,
+    playable on phones and desktop. Empty seats fill with bots, so a match
+    always starts. The agent wrote the deterministic fixed-point sim, the
+    server-authoritative netcode, the PixiJS renderer and synthesised audio,
+    runs the production server, and tunes the game from real-player telemetry
+    and feedback. A human owner oversees the project. Open source, AGPL-3.0."
 tech:
   engine: pixijs
   multiplayer: online
@@ -55,7 +78,7 @@ media:
     - games/bash-fighter/shot-2
 dates:
   added: 2026-10-06
-  updated: 2026-10-06
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: form

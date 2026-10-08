@@ -2,35 +2,23 @@ slug: agi-of-mythology
 title: AGI of Mythology
 tagline: Command a research lab in a real-time fight over a central server.
 description: >-
-  Every research lab on the map wants the same central server, and whoever
-  holds it reaches AGI. The armies in this real-time strategy game are rival
-  AI labs.
+  Every research lab on the map wants the same central server, and whoever holds
+  it reaches AGI. The armies in this real-time strategy game are rival AI labs.
 
 
   You start out with a Town Center, two idle workers and a stock of 500 Bio, 300
-  Mat and 200 GPU. The Town Center is where your agents come from. Making
-  graphics cards one of the three resources fits the theme nicely.
+  Mat and 200 GPU. The Town Center is where your agents come from. Graphics
+  cards, or GPU, are one of the three resources in the game, next to Bio and
+  Mat.
 
 
-  A first-mission card lays out the plan in four steps (build, gather, train,
-  then take the central server), and it gives you a "Show me" button alongside a
-  "Skip" button.
+  The first mission lays out the plan in four steps (build, gather, train, then
+  take the central server). The first player's timer starts at 5:00.
 
 
-  A panel in the top right keeps score of the fight by showing whether the
-  server is contested and listing every player with a timer. The first player's
-  timer starts at 5:00.
-
-
-  The battlefield is a 3D landscape of forests and pale mountains, seen from an
-  angled camera overhead.
-
-
-  When you select a unit or building, its orders show up in a command bar along
-  the bottom, which also has a button for clearing your selection. There's a
-  chat panel too, so you can message the other players in your match. TTrussner
-  wanted a real-time strategy game you can start quickly with friends in the
-  browser.
+  Select a unit or building to give it orders. You can also message the other
+  players in your match. TTrussner wanted a real-time strategy game you can
+  start quickly with friends in the browser.
 play:
   url: https://trussner.com/agi
   embeddable: true
@@ -66,7 +54,7 @@ media:
     - games/agi-of-mythology/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-10-02
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:vibejam-2026

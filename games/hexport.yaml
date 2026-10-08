@@ -2,38 +2,31 @@ slug: hexport
 title: Hexport
 tagline: Teleport across the arena, slash enemies, and buy upgrades between runs.
 description: >-
-  A hexagon with a sword gets dropped into a neon arena, and the job is to
-  outlast waves of enemies for as long as you can.
+  A hexagon with a sword is dropped into an arena, and the job is to outlast
+  waves of enemies for as long as you can.
 
 
-  Instead of steering, you point, and the cursor marks the spot you'll
-  teleport to next. Once every second the hexagon warps there on its own, and
-  each jump ends in a full 360-degree sword spin, so moving and attacking end
-  up being the same move.
+  Instead of steering, you point, and the cursor marks the spot you'll teleport
+  to next. Once every second the hexagon warps there on its own, and each jump
+  ends in a full 360-degree sword spin, so moving and attacking end up being the
+  same move.
 
 
   Two kinds of enemies come at you. Triangles chase you down and fall to a
-  single hit, and every kill hands you back 1 HP, a tidy way to turn the
-  weakest enemy into a snack. Pentagons shoot bullets instead, but a slash
-  destroys them.
+  single hit, and every kill hands you back 1 HP. Pentagons shoot bullets
+  instead, but a slash destroys them.
 
 
   Powerups drop into the arena as well, and you collect them by slashing them
   too.
 
 
-  The start screen lists Warp+, Slash+ and Range+, each marked as permanent,
-  which lines up with Damarhabibie calling this a teleport-and-slash game with
-  incremental upgrades. Dual Blade, Immunity and HP +20 sit right alongside
-  them.
+  Warp+, Slash+ and Range+ are upgrades that are permanent, and Damarhabibie
+  calls this a teleport-and-slash game with incremental upgrades. The game also
+  has Dual Blade, Immunity and HP +20.
 
 
-  Before a run you can type in your own callsign or roll a random one with the
-  dice button. A separate button on the same screen leads off to a portal.
-
-
-  Once you're playing, a crosshair takes over from the normal cursor, while the
-  regular pointer stays visible in the menus.
+  Before a run you can type in your own callsign or roll a random one.
 play:
   url: https://darsaverse.github.io/HexportGame
   embeddable: true
@@ -71,7 +64,7 @@ media:
     - games/hexport/shot-2
 dates:
   added: 2026-10-01
-  updated: 2026-10-02
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:vibejam-2026

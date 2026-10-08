@@ -2,28 +2,18 @@ slug: typeit-hero
 title: TypeIt Hero
 tagline: Practice touch typing by playing, so kids learn to type without looking down.
 description: >-
-  In TypeIt Hero, you type each letter right as it crosses a line on the
-  screen. The start card calls this Hero Mode, a grand title for typing
-  practice, and it asks for your name before you press Play.
+  In TypeIt Hero, you type each letter right as it crosses a line on the screen.
+  The game calls this Hero Mode, and you enter your name before you press Play.
 
 
   New levels unlock more keys, so the set of letters you have to find keeps
   growing as you go, which suits a game built to teach the keyboard bit by bit.
-
-
-  There's a bar across the top tracking your score, level, combo and best score,
-  along with a miss counter out of five. That little counter carries a bit more
-  weight than the rest, because five misses in a row restarts the run.
+  Five misses in a row restarts the run.
 
 
   A dropdown lets you set the difficulty, and it starts on 3 (Casual) when the
   game loads. Another one switches the keyboard layout away from QWERTY
-  (English), a considerate touch for anyone learning on a different board.
-  Play and Stop buttons start and end a run, while a fullscreen button sits in
-  the corner of the playfield.
-
-
-  Up in the top left, there's a link that leads to more typing games.
+  (English). Play and Stop buttons start and end a run.
 
 
   _AnnaCates is a parent of four who wanted their oldest child, age 9, to learn
@@ -65,7 +55,7 @@ media:
     - games/typeit-hero/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-10-02
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:vibejam-2026

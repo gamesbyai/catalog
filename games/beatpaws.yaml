@@ -3,33 +3,28 @@ title: BeatPaws
 tagline: Guide bouncing cats through neon lanes, hitting notes and dodging
   hazards to the beat.
 description: >-
-  Pick a song, a difficulty, a map and a cat on the start screen, then press
-  Play and you're straight into a round with no login standing in the way.
+  Choose a song, a difficulty, a map and a cat, then press Play to jump straight
+  into a round. No login is needed.
 
 
-  Once it starts, cats bounce along neon beat lanes on a 3D stage. You hit the
-  musical notes as they reach you, while also dodging the hazards that sit
-  between them.
+  Once a round starts, cats bounce along beat lanes. You hit the musical notes
+  as they reach you, while also dodging the hazards that sit between them.
 
 
-  The Players menu comes set to 1P Solo on the ASDF keys. There's a nickname
-  field too, and it shows up already filled with a goofy name like Turbo
-  Pouncer 17 or Midnight Nap 43. A country selector sits right next to the
-  track choices.
+  The 1P Solo mode uses the ASDF keys. Players can set a nickname, and the field
+  starts out filled with a name like Turbo Pouncer 17 or Midnight Nap 43.
+  There's also a country selector.
 
 
-  Out of the box you get the track Neon Alley Sprint on Easy, and the line under
-  the title invites you to preview the beat before you jump in.
+  The included track is Neon Alley Sprint, set to Easy by default.
 
 
-  The SF Bay Stage map is a detailed waterfront at night, with one cat playing
-  a keytar on the left and another on guitar to the right. Below it, a row of
-  character portraits lets you choose your cat, starting with Mint DJ. There's
-  also a trophy button tucked into the top corner.
+  The SF Bay Stage is one of the playable maps. Players choose their cat from a
+  set of characters, starting with Mint DJ.
 
 
-  The cats are AI-generated. swhan0329 took cues from arcade rhythm games, retro
-  neon scenery and the idea of linking games so players can hop between them.
+  The cats are AI-generated. swhan0329 took cues from arcade rhythm games and
+  the idea of linking games so players can hop between them.
 play:
   url: https://beatpaws.vercel.app
   embeddable: true
@@ -68,7 +63,7 @@ media:
     - games/beatpaws/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-10-02
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:vibejam-2026

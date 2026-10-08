@@ -3,22 +3,18 @@ title: Metal Assault
 tagline: Run, jump, and shoot through side-scrolling levels in a Metal
   Slug-style action game.
 description: >-
-  A red-bandana soldier starts out on a desert street at sunset with a pistol
-  that never runs dry, ten grenades and three lives, while rifle soldiers march
-  in from the right.
+  Your soldier starts with a pistol that never runs dry, ten grenades and three
+  lives, while rifle soldiers march in.
 
 
-  Wooden crates sit along the ground, a tied-up prisoner off to the side shouts
-  for help, and Mission 1 flashes across the screen before the first shot. It's
-  a Metal Slug-style run and gun, and the title screen even spells out the
-  controls in Italian.
+  A tied-up prisoner shouts for help, and you can smash the crates for pickups.
+  It's a Metal Slug-style run and gun.
 
 
-  You get two modes on the main menu. Arcade Mission is one long stage that ends
-  at General Morden's armored fortress, and that fight has some real thought
-  behind it. Below 60% health the fortress sheds its armor and calls down mortar
-  rain, but blinking spots on the ground warn you where the shells will land,
-  and under 35% it enrages.
+  The game has two modes. Arcade Mission is one long stage that ends at General
+  Morden's armored fortress. Below 60% health the fortress sheds its armor and
+  calls down mortar rain, with marked spots that warn you where the shells will
+  land, and under 35% it enrages.
 
 
   Survival is the other choice, an endless string of waves in an arena that
@@ -42,13 +38,13 @@ description: >-
   turrets, helicopters, tanks and a gunship mini-boss in the mix.
 
 
-  Each action gets two rebindable slots in the settings, and high scores stay
-  saved in your browser.
+  Each action gets two rebindable slots, and high scores stay saved in your
+  browser.
 
 
-  Andrea Vitolo had Claude build the whole game in plain JavaScript, and
-  nothing is loaded from files, since the pixel-art sprites, the level, the
-  sound effects and the music are all generated in code.
+  Andrea Vitolo had Claude build the whole game in plain JavaScript, and nothing
+  is loaded from files, since the sprites, the level, the sound effects and the
+  music are all generated in code.
 play:
   url: https://m-assault-fable.netlify.app
   embeddable: true
@@ -90,7 +86,7 @@ media:
     - games/metal-assault/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-10-02
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:github

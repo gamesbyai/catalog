@@ -3,20 +3,10 @@ title: Agent Shah
 tagline: Sneak through a warehouse, shoot hostiles, and decrypt a developer's
   career dossier.
 description: >-
-  A suited agent stands on a dark road lined with glowing dashes, seen from
-  above and behind, while a neon AS logo glows on a panel at the far end of a
-  corridor labeled Sector 01, Briefing Room.
-
-
-  The HUD shows a health bar, your current weapon with its ammo (a pistol at 6
-  of 6) and a target counter that starts at 3. There's a music button up in the
-  corner too, and the M key does the same job.
-
-
-  You make your way through a warehouse from that top-down view, taking down
-  hostile agents as you go. Your arsenal has four options, a pistol, a machine
-  gun, a pencil and your bare fists, with the pencil sitting at home next to
-  the guns. You can shoot with the mouse or the space bar.
+  You make your way through a warehouse, taking down hostile agents as you go.
+  Your arsenal has four options, a pistol, a machine gun, a pencil and your bare
+  fists, with the pencil sitting at home next to the guns. You can shoot with
+  the mouse or the space bar.
 
 
   Number keys switch between the four weapons, V and B throw punches, and F
@@ -29,7 +19,7 @@ description: >-
 
 
   fahaddoc600 named Bruno Simon's interactive portfolio and Hotline Miami's
-  top-down combat as influences, all wrapped in a Mission Impossible look.
+  top-down combat as influences.
 play:
   url: https://agentshah.shahfahad.dev
   embeddable: true
@@ -74,7 +64,7 @@ media:
     - games/agent-shah/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-10-02
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:vibejam-2026

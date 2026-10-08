@@ -18,19 +18,14 @@ description: >-
   and it'll take letters, numbers, spaces, dashes and the _ character.
 
 
-  The roles vary a lot. You might end up driving a tank, flying a helicopter or
-  steering an FPV drone from cover. It's a bit funny that the smallest machine
-  out there is the one meant to stall the advance and look for openings in the
-  enemy line.
+  Each role plays very differently. You might end up driving a tank, flying a
+  helicopter or steering an FPV drone from cover. The smallest machine is the
+  one meant to stall the advance and look for openings in the enemy line. If you
+  want to warm up first, there's a training option.
 
 
-  If you'd like to warm up first, the title screen has a training option, along
-  with a share link.
-
-
-  The title screen looks like a mission briefing, with simple line icons of a
-  tank and a drone. xaitoshi_ made the game because they loved playing Black Ops
-  when they were young and wanted to recreate it themselves.
+  xaitoshi_ made the game because they loved playing Black Ops when they were
+  young and wanted to recreate it themselves.
 play:
   url: https://ironclash.xyz
   embeddable: true
@@ -67,7 +62,7 @@ media:
     - games/ironclash/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-10-02
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:vibejam-2026

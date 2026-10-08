@@ -9,33 +9,26 @@ description: >-
   once.
 
 
-  Value Override raises your max Signal, Compliance Budget Patch heals you,
-  and Demonetization Order wipes out the whole mob, with names that sound like
-  they were lifted from a legal memo.
+  Value Override raises your max Signal, Compliance Budget Patch heals you, and
+  Demonetization Order wipes out every enemy.
 
 
   You're T.O.P.E., the moderation AI working for a made-up video platform called
-  TheirTube, in a cyberpunk survivor shooter. Your HUD shows Signal as a
-  percentage, whether your dash is ready, the current wave and a named threat,
-  plus your score and personal best.
+  TheirTube, in a cyberpunk survivor shooter.
 
 
-  Between runs, you spend money in a store full of permanent upgrades. You can
-  buy an extra starting card, more max Signal, a wider pickup range, shorter
-  cooldowns or a damage bonus. There's also a card reroll, an orbiting drone
-  or satellite, and a shield, all filed under dry office-speak titles like
-  Legal Armor and Reputation Insurance.
-
-
-  The menu keeps count of your runs, wins and win rate, and pressing Enter
-  starts the next run.
+  Between runs, you spend money on permanent upgrades in the store. You can buy
+  an extra starting card, more max Signal, a wider pickup range, shorter
+  cooldowns or a damage bonus. The store also has a card reroll, an orbiting
+  drone or satellite, and a shield, named things like Legal Armor and Reputation
+  Insurance. Pressing Enter starts the next run.
 
 
   TheINAOG calls the story satire, in which a platform erases human creators in
   the name of "brand safety" while its ads keep making money. They drew on the
   recent debate over demonetization and channel removals, and because they love
   progression-based games, they set out to make something compact you can play
-  right away. The interface switches between English and Spanish.
+  right away. The interface can be switched between English and Spanish.
 play:
   url: https://demonetized.iaen.es
   embeddable: true
@@ -78,7 +71,7 @@ media:
     - games/demonetized-the-authenticity-purge/shot-2
 dates:
   added: 2026-10-01
-  updated: 2026-10-02
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:vibejam-2026

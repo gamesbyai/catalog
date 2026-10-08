@@ -2,38 +2,35 @@ slug: vibe-farm
 title: Vibe Farm
 tagline: Level up and build a growing colony, playing solo or with others online.
 description: >-
-  Your goal is to grow a whole colony out of one house on an isometric map. You
-  farm, chop trees, mine and fight to get there, while a settlement panel keeps
-  count of your gold, wood, stone and food.
+  Your goal is to grow a colony out of one house. You farm, chop trees, mine and
+  fight to get there.
 
 
   The farming runs through every step, from tilling and watering a patch of soil
   to planting seeds and bringing the crop in with the scythe.
 
 
-  All eight tools sit on a hotbar you switch between with the number keys.
-  They are the hoe, watering can, seeds, scythe, hammer, axe, pickaxe and
-  sword. Away from the fields, the axe takes down trees and the pickaxe breaks
-  rocks, while the sword handles enemies. A considerate prompt at the bottom
-  of the screen spells out what your current tool will do to the tile you're
-  facing, like pressing E to till it.
+  You switch between all eight tools with the number keys. They are the hoe,
+  watering can, seeds, scythe, hammer, axe, pickaxe and sword. Away from the
+  fields, the axe takes down trees and the pickaxe breaks rocks, while the sword
+  handles enemies. Your current tool tells you what it will do to the tile
+  you're facing, like pressing E to till it.
 
 
-  A calendar across the top tracks the year, season and day, starting on Day 1
-  of 28 in spring, and an XP bar underneath it fills as you level up.
+  The game tracks the year, season and day, starting on Day 1 of 28 in spring,
+  and you level up as you gain XP.
 
 
   Daily quests hand you small jobs like beating 7 enemies in the mine, mining 3
   rocks or harvesting 3 crops. Each one pays out gold and materials, and
-  achievements pop up at milestones, a bit generously including one just for
-  mining your very first rock.
+  achievements pop up at milestones, including one just for mining your very
+  first rock.
 
 
   You can play alone or online with other people, and named characters are
-  already wandering the map while a minimap in the corner shows the terrain.
-  Before any of that, a four-page tutorial covers movement and the hotbar, and
-  you have to read each page before the next one opens. In all caps,
-  charliegkoch-design asks every player to read that tutorial.
+  already wandering the map. Before any of that, a four-page tutorial covers
+  movement and tool switching, and you have to read each page before the next
+  one opens. charliegkoch-design asks every player to read that tutorial.
 play:
   url: https://vibefarm.vercel.app
   embeddable: true
@@ -72,7 +69,7 @@ media:
     - games/vibe-farm/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-10-02
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:vibejam-2026

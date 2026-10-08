@@ -2,36 +2,25 @@ slug: grand-quack-auto
 title: Grand Quack Auto
 tagline: Honk your way through a city as a rubber duck and escalate the chaos.
 description: >-
-  The hero here is a rubber duck loose in a 3D city, and its main weapon is a
-  quack you aim at passing pedestrians to scare them.
+  The hero here is a rubber duck loose in a city, and its main weapon is a quack
+  you aim at passing pedestrians to scare them.
 
 
-  Out on the streets, all that honking builds up chaos. The opening objective
-  only asks you to frighten 3 pedestrians, a modest start for something the
-  title screen calls a duck crime simulator. Up top, a brood counter tracks
-  your ducklings, starting at 0 of 6.
+  Out on the streets, all that honking builds up chaos. The opening objective is
+  to frighten 3 pedestrians.
 
 
   As the chaos grows, the duck levels up. It starts out as Lil' Quacker and
-  eventually becomes the gun-wielding Duck Norris, a whole career path nobody
-  expects from a bath toy. A panel in the corner keeps your current rank, chaos,
-  combo and brood in view.
-
-
-  The duck gets its own press coverage, with a red Quack News Network ticker
-  along the bottom reporting on the mayhem.
+  eventually becomes the gun-wielding Duck Norris.
 
 
   Walking isn't your only option, since you can climb into cars, ragdoll the
-  duck or take photos. The people you're terrorizing wander around with name
-  labels like Sir Honks-a-Ton and El Pato Magnifico. Whoever named them clearly
-  committed to the bit.
+  duck or take photos. The people you're terrorizing go by names like Sir
+  Honks-a-Ton and El Pato Magnifico.
 
 
-  The camera follows the duck from behind, between blocky buildings in flat,
-  low-poly color, while a timer runs in the top corner. UdayMydam pitches it as
-  GTA meets Untitled Goose Game, and according to them, AI wrote 100% of the
-  code.
+  UdayMydam pitches it as GTA meets Untitled Goose Game, and according to them,
+  AI wrote 100% of the code.
 play:
   url: https://grand-quack-auto.pages.dev
   embeddable: true
@@ -75,7 +64,7 @@ media:
     - games/grand-quack-auto/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-10-02
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:vibejam-2026

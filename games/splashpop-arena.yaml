@@ -2,32 +2,23 @@ slug: splashpop-arena
 title: SplashPop Arena
 tagline: Shoot paint at bots or up to 8 friends and score points before time runs out.
 description: >-
-  In SplashPop Arena you shoot paint at your opponents, and every hit puts
-  points on your score while a match clock runs down. You can take on bots, or
-  bring up to 8 friends into the same match. It's paint instead of bullets,
-  which suits the candy look of the place.
+  In SplashPop Arena you shoot paint at your opponents, and every hit earns you
+  points while the match clock runs down. You can take on bots, or bring up to 8
+  friends into the same match. It's paint instead of bullets.
 
 
-  Everything starts on a menu where you type a nickname and choose a match
-  length of 1, 5 or 10 minutes, with 5 already picked for you.
+  You type a nickname and pick a match length of 1, 5 or 10 minutes.
 
 
   Solo drops you into a run against the bot. Room opens a live room with a code
   you can share, and the match starts once your group has joined.
 
 
-  There's also a button for finding players and another for the leaderboard. A
-  privacy note asks you to go by a nickname rather than your real name, since
-  your name and match stats can show up on the public leaderboard. Putting that
-  warning right under the name box is a thoughtful touch.
+  You can also search for players to play with, and there's a leaderboard. Go by
+  a nickname rather than your real name, since your name and match stats can
+  show up on the public leaderboard.
 
 
-  The menu art looks like an elaborate dessert, with dripping neon letters
-  over a soft cartoon landscape and a grinning character smothered in pastel
-  icing.
-
-
-  For a game covered in frosting, the inspiration comes as a bit of a surprise.
   heyitsshantanu drew on CS:GO's tense duels, aim-focused gunplay and
   round-based competition.
 play:
@@ -63,7 +54,7 @@ media:
     - games/splashpop-arena/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-10-02
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:vibejam-2026

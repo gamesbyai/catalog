@@ -7,29 +7,17 @@ description: >-
 
 
   Once it's in the water, hold R to wind it back toward the boat. When it gets
-  there, you're free to cast again. The on-screen tips also point out that fish
-  are drawn to a lure that's moving.
+  there, you're free to cast again. The tips also mention that fish are drawn to
+  a lure that's moving.
 
 
   Between casts you steer across open water with WASD or the arrow keys, with S
-  working as the brake. The camera rides behind the boat in third person.
+  working as the brake. A radar marks nearby fish as yellow dots.
 
 
-  A little radar in the top left marks nearby fish as yellow dots, and the
-  readout beside it shows speed in knots, heading and fish left, which gives a
-  casual fishing trip a charter boat's instruments.
-
-
-  Every catch pays out coins, and they pile up in a counter at the top of the
-  screen. You start with nothing but a soft lure, but the lure shop sells others
-  for those coins. The 1 to 4 keys then swap between the lures you own, so each
-  catch feeds straight back into your tackle box.
-
-
-  For some reason, big round signs stand on floating platforms around the water,
-  a couple of them cheerfully announcing a "Vibe Code Zone". A panel on the
-  right side of the screen keeps the key list and the fishing tips in view the
-  whole time.
+  Every catch pays out coins. You start with nothing but a soft lure, but the
+  lure shop sells others for those coins. The 1 to 4 keys then swap between the
+  lures you own, so each catch feeds straight back into your tackle box.
 play:
   url: https://fishing.lureconcept.com
   embeddable: true
@@ -72,7 +60,7 @@ media:
     - games/fishing/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-10-02
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:awesome-cc0

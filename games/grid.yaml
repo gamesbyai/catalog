@@ -3,9 +3,9 @@ title: GRID
 tagline: Play cards to place counters and line up three in a row on a 3×3 board
 description: >-
   Get three of your counters in a row on a 3×3 grid and the match is yours, so
-  yes, it's Tic-Tac-Toe underneath. Here, though, counters only show up when you
-  play cards. Before your first move you put together a 30-card deck, and then
-  each turn you draw from it and play from your hand.
+  yes, it's Tic-Tac-Toe underneath. Counters only get placed when you play
+  cards. Before your first move you put together a 30-card deck, and then each
+  turn you draw from it and play from your hand.
 
 
   Every card can only reach certain cells, which turns those nine squares into a
@@ -22,14 +22,12 @@ description: >-
   can land on a cell it couldn't hit by itself.
 
 
-  For a game built on nine squares, the menu is surprisingly full, with bot
-  matches at three difficulty levels, offline two-player on one device, and
-  Draft Mode.
+  The game has bot matches at three difficulty levels, offline two-player on one
+  device, and Draft Mode.
 
 
-  Saved decks, a rules page, match history and settings sit next to an
-  interactive tutorial, all framed by painted anime-style knights clashing on
-  the title screen. Sessions last a few minutes.
+  You can save your decks, and an interactive tutorial walks you through the
+  game. Sessions last a few minutes.
 
 
   According to radiantforce, AI assisted with the code, graphics, sounds and
@@ -73,7 +71,7 @@ media:
     - games/grid/shot-2
 dates:
   added: 2026-09-30
-  updated: 2026-10-02
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:aibgj-3

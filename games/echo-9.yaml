@@ -4,32 +4,25 @@ tagline: Deliver packages on foot through post-apocalyptic Hanoi using a desktop
   and a phone.
 description: >-
   Bowls of phở need to get across Hanoi on foot in 2055, after the grid's gone
-  dark, and you're the courier carrying them. Thousands of scooters still crowd
-  the streets, and you steer around them with WASD on your computer while you
-  head for each drop-off.
+  dark, and you're the courier carrying them. Thousands of scooters crowd the
+  streets, and you steer around them with WASD on your computer while you head
+  for each drop-off.
 
 
-  It's built for two screens at once, and your phone ends up doing a large
-  share of the work.
+  It's built for two screens at once, and your phone ends up doing a large share
+  of the work.
 
 
-  On the phone you get your map and your flashlight. It also goes in your
-  pocket as a balance sensor that you're supposed to keep steady. Beyond that,
-  it gives you buttons and a mission briefing, and it reads the accelerometer.
+  It also goes in your pocket as a balance sensor that you're supposed to keep
+  steady. The phone also reads its accelerometer.
 
 
-  To pair the two, you scan the QR code on the title screen or copy its session
-  link over to your phone, though a small link there also lets you play without
-  a phone at all.
-
-
-  Settings and Highscores sit on that same title screen. Behind them is moody
-  art of a ruined, overgrown city block, lit by a few red signs.
+  To pair the two, you scan the QR code or copy the session link over to your
+  phone, though a small link also lets you play without a phone at all.
 
 
   tonnoz loved Another World (1991) as a kid and set out to recreate that game's
-  mood in 3D. The dark, abandoned Hanoi fits that goal. They also added the
-  phone as a second device, for novelty.
+  mood in 3D. They also added the phone as a second device, for novelty.
 play:
   url: https://echo9.tonnoz.com
   embeddable: false
@@ -70,7 +63,7 @@ media:
     - games/echo-9/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-10-02
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:vibejam-2026

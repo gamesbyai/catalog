@@ -13,8 +13,7 @@ description: >-
 
 
   You steer with A and D, lower or raise the sails with W and S, and handle the
-  trim with Q and E. A wind from behind gives you speed, and the gauge in the
-  corner shows where the wind's blowing from, a neat bit of design.
+  trim with Q and E. A wind from behind gives you speed.
 
 
   Holes can open up in the hull, and once they do, the hold fills with water.
@@ -23,17 +22,14 @@ description: >-
   got to look after as well as steer.
 
 
-  There's a cutlass, a pistol, and a shovel in the kit you cycle through, plus
-  bananas and a concertina, which is a funny mix for a pirate.
+  The kit you cycle through holds a cutlass, a pistol, a shovel, plus bananas
+  and a concertina.
 
 
   Once you're off the ship, walking, sprinting, jumping, and swimming are all
   open to you. A click uses whichever item you've got out, and right-click is
   for aiming or blocking. E is for interacting, picking things up, and taking a
-  post aboard the ship.
-
-
-  When you're planning your next voyage, reach for the world map with M.
+  post aboard the ship. M opens the world map, where you plan your next voyage.
 play:
   url: https://tesana.com/play/11f278cc-aeb3-4e2b-b384-65918371b957
   embeddable: false

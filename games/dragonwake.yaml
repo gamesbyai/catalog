@@ -2,10 +2,8 @@ slug: dragonwake
 title: Dragonwake
 tagline: Explore dungeons in a text-character roguelike built for long replay value.
 description: >-
-  The whole game is drawn in text characters on a black grid. The title screen
-  offers New Game, Load Game, Options and Obituaries, with a tip below the menu
-  about bandages stopping bleeding and binding fresh wounds. You start by
-  picking a race and pairing it with a class.
+  Bandages stop bleeding and bind fresh wounds. You start by picking a race and
+  pairing it with a class.
 
 
   Races include Human, Dwarf, Elf, Half-Elf, Halfling, Gnome and Half-Orc, and
@@ -14,10 +12,9 @@ description: >-
   numpad, and Enter interacts or confirms.
 
 
-  The campaign opens onto a large open-world map with roads, towns, ruins,
-  towers, dungeons and blackglass sites to travel between. A footer along the
-  bottom of the grid shows the key shortcuts for the current screen. This
-  browser version is a demo, and a Steam page links to the native release.
+  The campaign is played on an open-world map where you travel between towns,
+  ruins, towers, dungeons and blackglass sites. This browser version is a demo,
+  and a Steam page links to the native release.
 
 
   The creator set out to get long, complex replayability from AI-assisted
@@ -59,7 +56,7 @@ media:
     - games/dragonwake/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-10-01
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:vibejam-2026

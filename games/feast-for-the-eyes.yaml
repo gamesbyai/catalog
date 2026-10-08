@@ -3,30 +3,22 @@ title: Feast for the Eyes
 tagline: Fetch the food that hungry eyes ask for, add extras, and earn tips for speed.
 description: >-
   You're serving a dining room where the customers are hungry eyes, and they
-  want to be fed. You walk around the 3D space, find the objects they asked for
-  and carry them over to fill each order.
+  want to be fed. You walk around, find the objects they asked for and carry
+  them over to fill each order.
 
 
-  Getting the order right matters, because a wrong item counts as a mistake.
-  Three red eyes stare up from the bottom of the screen the whole time. A gold
-  coin counter in the top corner keeps track of what you've earned.
+  Getting the order right matters, because a wrong item counts as a mistake. A
+  gold coin counter keeps track of what you've earned. Bring them the food they
+  asked for and you get paid.
 
 
-  Bring them the food they asked for and you get paid for your trouble.
-
-
-  Throwing in a napkin, some cutlery or a similar extra lets you charge more, a
-  funny upsell when your customers are eyeballs. Speed pays too. A quick
-  delivery gets you a tip on top.
-
-
-  Down a side hallway, past ornate carved dark wood and glowing green lattice
-  windows, there's a door marked "End Shift".
+  Throwing in a napkin, some cutlery or a similar extra lets you charge more.
+  Speed pays too. A quick delivery gets you a tip on top. A door marked "End
+  Shift" is where you end your shift.
 
 
   WASD walks you around, the left mouse button works on objects, and the up and
-  down arrow keys nudge the mouse sensitivity, a thoughtful extra for a
-  first-person view.
+  down arrow keys nudge the mouse sensitivity.
 
 
   N8012 came up with the idea, laid out the level and edited the textures.
@@ -72,7 +64,7 @@ media:
     - games/feast-for-the-eyes/shot-2
 dates:
   added: 2026-10-01
-  updated: 2026-10-02
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:aibgj-4

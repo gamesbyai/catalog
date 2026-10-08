@@ -4,26 +4,22 @@ tagline: Build a colony with production chains, then raise an army to crush a ri
 description: >-
   The long game here is a colony that runs like clockwork, and then, once your
   war machine is ready, a win over a rival colony that's been building toward
-  the same thing. You start at a headquarters on a low-poly island with 40
-  planks and 24 stone, plus a well-stocked tool shed of 8 hammers, 8 shovels,
-  6 pickaxes, 4 axes and 2 saws. Little figures are already wandering around
-  it before you've placed a thing.
+  the same thing. You start at a headquarters with 40 planks and 24 stone, plus
+  8 hammers, 8 shovels, 6 pickaxes, 4 axes and 2 saws.
 
 
   Control is indirect, so you don't order individual workers around. You place
   buildings and steer where they work, and the colony takes it from there.
 
 
-  Everything you can build lives in a side panel split into four tabs for
-  industry, food, civil and military.
+  You can build in four categories: industry, food, civil and military.
 
 
-  The industry tab alone covers the woodcutter's hut, sawmill, forester's hut,
-  stonecutter's hut, coal mine and iron mine, each priced in planks and stone.
-  Woodcutters and stonecutters work inside an area you can retarget with a Move
-  Area button, and it earns its place because a stonecutter that runs out of
-  outcrops warns you and sits idle until you move it. Foresters, meanwhile,
-  replant saplings on empty grass.
+  Industry covers the woodcutter's hut, sawmill, forester's hut, stonecutter's
+  hut, coal mine and iron mine, each priced in planks and stone. Woodcutters and
+  stonecutters work inside an area you can retarget with a Move Area button, and
+  a stonecutter that runs out of outcrops warns you and sits idle until you move
+  it. Foresters, meanwhile, replant saplings on empty grass.
 
 
   Mines are a bit pickier than the huts, needing a spot next to a surveyed
@@ -31,9 +27,8 @@ description: >-
   speeding them up even more.
 
 
-  Clicking the headquarters opens a storage panel listing everything it holds. A
-  minimap sits in the top left, and the clock runs at 1x, 2x or 4x. Buttons
-  along the bottom open a population screen and, for some reason, a debug view.
+  Clicking the headquarters shows everything it stores. The clock runs at 1x, 2x
+  or 4x.
 
 
   maxgeithe describes it as modeled on classic settlers games. They say games
@@ -83,7 +78,7 @@ media:
     - games/hegemon-s-reach/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-10-02
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:vibejam-2026

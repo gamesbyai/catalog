@@ -4,14 +4,7 @@ tagline: Sail the seas and sink enemy ships with broadside cannon fire.
 description: >-
   Steer a wooden galleon across open water with the arrow keys and fire the
   cannons with F or G. The goal is to sink the other sailing ships. A kills
-  table in the top left lists each player's sinkings, next to a counter of
-  players and pirates at sea.
-
-
-  The view sits behind and above your ship, looking out over rolling waves
-  toward a few low, green islands on the horizon. A health bar over the ship
-  starts at 100 out of 100. A wooden panel at the bottom shows hull points, a
-  pair of cannon icons and a speed readout in knots.
+  table tracks each player's sinkings. Your ship starts with 100 health.
 
 
   The creator is a fan of Uncharted Waters and Port Royale and built this
@@ -53,7 +46,7 @@ media:
     - games/cannon-rush/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-10-01
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:vibejam-2026

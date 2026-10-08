@@ -4,9 +4,9 @@ tagline: Fight skeletons and find three keys in a seeded first-person dungeon to
   claim the crown.
 description: >-
   Every dungeon is built from a seed, and the same seed always produces the same
-  layout, boss included. Type one on the title screen or hit Randomize, then
-  enter a first-person labyrinth of rooms, locked gates, and skeletons, drawn in
-  a PSX style with low-poly models and posterized light.
+  layout, boss included. You can enter your own seed or let the game generate
+  one, then explore a first-person labyrinth of rooms, locked gates, and
+  skeletons.
 
 
   The dungeon has three zones, each sealed by a gate. Bronze, Silver, and Gold
@@ -16,14 +16,14 @@ description: >-
 
 
   Combat uses stamina. A tap is a quick slash, holding the attack button charges
-  a heavy chop, and a guard raised at the right moment parries. Armored
+  a heavy chop, and raising a guard at the right moment parries. Armored
   skeletons hit harder, and some throw a slow crush that breaks through a guard,
   so you step out of the way. Health potions restore health, and scrolls fuel a
-  fireball in your left hand.
+  fireball.
 
 
-  Difficulty can be changed mid-run, and all keys can be remapped in settings.
-  Touch controls add a virtual stick, drag-to-look, and on-screen attack and
+  Difficulty can be changed mid-run, and all keys can be remapped. Touch
+  controls give you a virtual stick, drag-to-look, and on-screen attack and
   guard buttons. The creator lists the average session as a few minutes.
 play:
   url: https://fynbosexplorer.itch.io/a-low-poly-dungeon-game
@@ -70,7 +70,7 @@ media:
     - games/a-low-poly-dungeon-game/shot-2
 dates:
   added: 2026-10-01
-  updated: 2026-10-01
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:aibgj-3

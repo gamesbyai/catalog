@@ -10,25 +10,13 @@ description: >-
   and your answer doesn't have to be typed perfectly.
 
 
-  You can type your guess, but players who'd rather talk than type can switch
-  on voice mode and solve any puzzle by saying the answer out loud. Speaking a
-  song title fits a music quiz naturally.
+  You can type your guess, but players who'd rather talk than type can switch on
+  voice mode and solve any puzzle by saying the answer out loud.
 
 
-  If you just want to poke at puzzles, the mode select screen offers Free
-  Practice, tagged as casual with no pressure. Competitive players get a
-  leaderboard at the very top of the start screen, split into Speed Run and
-  Combo Run tabs. Both rank people by points and by finishing time, while a link
-  underneath opens the full list.
-
-
-  Tracking the clock next to the score makes a lot of sense on a board where one
-  tab is called Speed Run.
-
-
-  The screen goes all in on 8-bit arcade, with a pixel font over a neon grid
-  backdrop, a row of retro game icons and an insert-coin prompt sitting above
-  the start button.
+  There's also a Free Practice mode for playing puzzles casually, with no
+  pressure. Competitive players can compare scores on leaderboards for Speed Run
+  and Combo Run. Both boards rank players by points and by finishing time.
 play:
   url: https://emoji-beats.vercel.app
   embeddable: true
@@ -65,7 +53,7 @@ media:
     - games/emojibeats/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-10-02
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:vibejam-2026

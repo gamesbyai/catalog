@@ -2,37 +2,28 @@ slug: up-with-a-stranger
 title: UP! with a stranger
 tagline: Climb from a backyard to space as two blobs tied together by a string.
 description: >-
-  Everything on the title screen looks molded from clay, down to the lumpy UP
-  letters that for some reason have googly eyes, a grinning purple blob and a
-  sign warning you to go up together or die. Below them you choose to play with
-  a stranger or with a friend, and the stranger route pairs you with a partner
-  given a name as silly as Cheeky Blob before telling you to get ready.
+  A sign warns you to go up together or die. You can play with a stranger or
+  with a friend, and the stranger route pairs you with a partner given a name as
+  silly as Cheeky Blob.
 
 
-  Each of you controls one plasticine blob, and since the two of you are tied
-  together by a string, the game's only rule is that the string mustn't break.
+  Each of you controls one blob, and since the two of you are tied together by a
+  string, the game's only rule is that the string mustn't break.
 
 
-  The climb starts in a backyard and keeps heading up toward space and beyond,
-  a long trip for two lumps of clay on one string. Your goal is to see how
-  high the pair of you can get, while a high scores board waits in the corner
-  of the menu.
+  The climb starts in a backyard and keeps heading up toward space and beyond, a
+  long trip for two blobs on one string. Your goal is to see how high the pair
+  of you can get.
 
 
   ilyxxxa comes from an art director background, and they pitch it as the
-  offspring of Purple & Brown, It Takes Two and Flappy Bird. The look is their
-  love letter to the games they played as a child. They also call it dumb by
-  design, and the welcome sign calling you both idiots backs that up.
-
-
-  It's pitched as the first co-op game made for strangers, so it fits that the
-  menu gives that button the top spot.
+  offspring of Purple & Brown, It Takes Two and Flappy Bird. They also call it
+  dumb by design. It's pitched as the first co-op game made for strangers.
 
 
   This is the first game ilyxxxa has ever shipped, and by their account it's 99%
   vibe coded. They'd wanted to make a game their whole life. Part of the point
-  was seeing if a game made with AI could still come across as handmade, with
-  plenty of charm and odd little details.
+  was seeing if a game made with AI could still come across as handmade.
 play:
   url: https://upwithastranger.com
   embeddable: true
@@ -69,7 +60,7 @@ media:
     - games/up-with-a-stranger/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-10-02
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:vibejam-2026

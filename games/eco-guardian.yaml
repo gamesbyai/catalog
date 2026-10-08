@@ -2,35 +2,27 @@ slug: eco-guardian
 title: ECO Guardian
 tagline: Fight garbage monsters and answer sustainability quizzes to earn power-ups.
 description: >-
-  Garbage monsters swarm you, and you power up by answering quiz questions
-  about sustainability. Every right answer turns into a power-up you use in
-  the fight. It's a 2.5D survivor game with a pop quiz built into its upgrade
-  system.
+  Garbage monsters swarm you, and you power up by answering quiz questions about
+  sustainability. Every right answer turns into a power-up you use in the fight.
+  It's a survivor game with a pop quiz built into its upgrade system.
 
 
-  The first stage, The Plastic Woods, is an old forest where plastic waste has
-  choked the roots, and bottles, cans and food trays lie scattered across the
-  grass.
+  The first stage, The Plastic Woods, is set in an old forest where plastic
+  waste has taken over.
 
 
-  From the title screen you can start a mission, switch between co-op and solo,
-  open a guide or look at the ranks board. Once you start, an intro sets up the
-  stage's setting.
+  From the title screen you can play solo or in co-op, and there's a guide and a
+  ranks board. Once you start, an intro sets up the stage's setting.
 
 
-  Big YES and NO pads sit in the lower corners of the opening clearing, which
-  fits a game where answering questions is how you get stronger. Nearby there's
-  an Eco-Mart where you spend carbon to upgrade and unlock eco-abilities. For
-  some reason the currency is carbon, a bit of a wink in a game about cleaning
-  up the planet.
+  The opening clearing has big YES and NO pads, and answering questions is how
+  you get stronger. Nearby there's an Eco-Mart where you spend carbon to upgrade
+  and unlock eco-abilities. The currency is carbon. There's also a portal that
+  takes you off to other worlds.
 
 
-  There's also a portal in the clearing that takes you off to other worlds.
-
-
-  The art puts blocky 3D models on top of pixel-art ground and props. VibeCreAI,
-  a father of four daughters, made the game to teach kids about sustainability
-  while keeping it fun to play.
+  VibeCreAI, a father of four daughters, made the game to teach kids about
+  sustainability while keeping it fun to play.
 play:
   url: https://eco-guardian-delta.vercel.app
   embeddable: true
@@ -67,7 +59,7 @@ media:
     - games/eco-guardian/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-10-02
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:vibejam-2026

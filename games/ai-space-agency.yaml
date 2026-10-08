@@ -2,34 +2,19 @@ slug: ai-space-agency
 title: AI Space Agency
 tagline: Build and launch an AI data center into orbit in a space-agency simulation.
 description: >-
-  The main button does double duty here. It stages your rocket, and once you've
-  reached the second stage it turns into a fairing button instead.
-
-
-  Every flight starts on a pad next to a red wireframe gantry, with a slim
-  rocket standing on a glowing orange grid under a black sky.
-
-
-  On the left there's a tall throttle slider that reads 100%. As you climb, the
-  bar along the top tracks your altitude above sea level, your vertical speed,
-  your surface speed and the G load. It's a real flight-deck spread of numbers
-  for a scene drawn in such spare wireframe lines.
-
-
-  Down at the bottom center, a busy navball shows your attitude, with heading,
-  pitch and roll readouts beside it and SAS and RCS toggles sitting right on
-  the ball.
+  The main button has two jobs. It stages your rocket, and once you've reached
+  the second stage it turns into a fairing button instead. A throttle slider
+  controls your engine's thrust. SAS and RCS are toggles you can switch on and
+  off.
 
 
   There's also an auto row where you can switch between off, up and orbit. Reset
-  puts you back at the start of the flight, while a time warp bar waits in the
-  top left.
+  puts you back at the start of the flight.
 
 
   dom_scholz describes it as Kerbal Space Program, except what you're building
-  up there is your own AI data center, and slips in a specific joke about
-  Cursor making a deal with SpaceX. A small music player in the corner plays a
-  track called Orbit Bloom.
+  up there is your own AI data center, and slips in a specific joke about Cursor
+  making a deal with SpaceX.
 play:
   url: https://aispaceagency.com
   embeddable: true
@@ -69,7 +54,7 @@ media:
     - games/ai-space-agency/shot-2
 dates:
   added: 2026-10-01
-  updated: 2026-10-02
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:vibejam-2026

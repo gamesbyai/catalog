@@ -4,21 +4,19 @@ tagline: Drive a mototaxi against the clock to get each passenger to their
   destination on time.
 description: >-
   Press W or the up arrow to accelerate, S or the down arrow to brake, and A/D
-  or the left and right arrows to steer a mototaxi through a neon city. Each
-  trip is a race against the clock, modeled on the daily routine of mototaxi
-  drivers who hurry to get passengers there on time.
+  or the left and right arrows to steer a mototaxi through a city. Each trip is
+  a race against the clock, modeled on the daily routine of mototaxi drivers who
+  hurry to get passengers there on time.
 
 
-  The start screen offers two buttons: Iniciar carrera to begin a race and
-  Taller / Mejoras, a workshop for upgrades. A free mode keeps a lap-time table
-  where your own entry sits among reference pilots, with times around 1:42 to
-  1:47 listed to beat. Your nickname and best free-mode run are saved locally.
+  You can start a race with Iniciar carrera, or head to the Taller / Mejoras
+  workshop for upgrades. There is also a free mode, where you can race for lap
+  times. Your nickname and best free-mode run are saved locally.
 
 
-  A speedometer and a ping readout sit beside the leaderboard. Press R to
-  restart a run. On a phone, hold the device with two hands: steer with the left
-  side of the screen, and use the right side for gas and brake. Steering by
-  tilting the phone is also available on mobile.
+  Press R to restart a run. On a phone, hold the device with two hands: steer
+  with the left side of the screen, and use the right side for gas and brake.
+  Steering by tilting the phone is also available on mobile.
 play:
   url: https://moto-taxi-runner.vercel.app
   embeddable: true
@@ -60,7 +58,7 @@ media:
     - games/mototaxi-runner/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-10-02
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:vibejam-2026

@@ -2,37 +2,25 @@ slug: beetlejump
 title: BeetleJump
 tagline: Jump your beetle up a towering course and try to reach the top.
 description: >-
-  In BeetleJump you're a black beetle with red eyes, hopping from leaf to leaf
-  up a giant beanstalk that rises out of a pond. You type a name and press
-  Start, and then you're standing on a lily-pad-like platform at the very foot
-  of the stalk.
+  In BeetleJump you hop from leaf to leaf up a giant beanstalk. You type a name
+  and press Start, and the climb begins at the foot of the stalk.
 
 
-  The goal is to reach the top, and the start screen promises you'll be crowned
-  when you get there. A timer near the top of the screen counts up from 0.0
-  while you climb. Off to the right, a leaderboard with All-Time and Today tabs
-  lists players' times, and it stays on screen during play, so plenty of rival
-  times keep you company all the way up.
+  The goal is to reach the top of the stalk. Your time starts at 0.0 and counts
+  up as you climb. A leaderboard with All-Time and Today tabs lists players'
+  times.
 
 
-  Some of the leaves carry extras, like a coiled spring pad sitting on one and a
-  crate-like object resting on another.
+  Some leaves carry extras, like a coiled spring pad and a crate-like object.
 
 
-  Pressing E throws a fireball, which is an unexpected bit of firepower for a
-  bug on a beanstalk. Other beetles can join your climb too, and a message pops
-  up to announce each arrival.
+  Pressing E throws a fireball. Other beetles can join your climb, and a message
+  announces each arrival. A chat box lets you type text.
 
 
-  There's a chat box in the lower left corner that takes text, and its
-  placeholder politely asks you to say something nice.
-
-
-  If you'd rather skip the public climb, the start screen also has a Private
-  Race button. According to assentorp, the stalk is modeled on kz_giantbean, a
-  Counter-Strike map, with a cheeky "if you know, you know" for anyone who's
-  jumped it. They say seeing other people's entries made this look like a good
-  challenge.
+  If you'd rather skip the public climb, you can pick Private Race. According to
+  assentorp, the stalk is modeled on kz_giantbean, a Counter-Strike map. They
+  say seeing other people's entries made this look like a good challenge.
 play:
   url: https://beetlejump.com
   embeddable: true
@@ -74,7 +62,7 @@ media:
     - games/beetlejump/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-10-02
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:vibejam-2026

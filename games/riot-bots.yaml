@@ -3,30 +3,21 @@ title: Riot Bots
 tagline: Fight as a robot in a Martian colony, solo or allied, against an
   invading Dark AI.
 description: >-
-  A fox-headed robot sits on a round platform when the game opens, with a neon
-  city skyline glowing behind it. That's Ronin, the bot selected from the
-  start, and it rides on a low pale-blue chassis that makes it look cute for a
-  battle machine. Four cards run along the bottom of the screen, one for each
-  bot on offer.
+  Ronin is the bot selected from the start. You can choose from four bots.
 
 
   Blunt is the heavy tank at 28 weight, while Taichi is a balanced controller at
-  21. Ronin counts as a mid-weight striker at 20, and for some reason 2Claws is
-  called a mid-weight controller even though it's the lightest of the four at
-  16.
+  21. Ronin is a mid-weight striker at 20, while 2Claws is a mid-weight
+  controller at 16, the lightest of the four.
 
 
-  Every bot comes with a name, a class and four stat bars for speed, defense,
-  power and weight, which lays the differences out plainly before you commit.
+  Every bot has a name, a class and stats for speed, defense, power and weight,
+  so you can compare them before you commit.
 
 
-  Ronin shows 28.9 speed, 12 defense, 20 power and 20 weight. Its card calls it
-  a duelist that applies pressure from the front. The thin defense next to that
+  Ronin has 28.9 speed, 12 defense, 20 power and 20 weight. Its card calls it a
+  duelist that applies pressure from the front. The thin defense next to that
   high speed fits a bot meant to keep pushing forward.
-
-
-  On the left there's a green P1 tag and a purple Launch button, while Mode and
-  Setting buttons sit up in the top corners.
 
 
   The story puts you in a riot at a Martian base, where a hostile Dark AI is
@@ -73,7 +64,7 @@ media:
     - games/riot-bots/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-10-02
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:vibejam-2026

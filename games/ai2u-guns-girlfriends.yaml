@@ -3,15 +3,10 @@ title: AI2U - Guns & Girlfriends
 tagline: Build a base, launch nukes and outfight three rival factions in a
   real-time strategy game.
 description: >-
-  A nuclear mushroom cloud fills the start screen above a battlefield of tanks
-  and bases, while a pink-haired catgirl clutches her head in the corner next to
-  the Run game button.
-
-
-  Once it loads, you're in a '90s Red Alert style skirmish where you build a
-  base, harvest ore, roll out tank columns and watch the countdowns on nuclear
-  superweapons. You pick one of three factions, and all three of them are in
-  love with you, which the game treats as the real problem.
+  You're in a '90s Red Alert style skirmish where you build a base, harvest ore,
+  roll out tank columns and deal with nuclear superweapons. You pick one of
+  three factions, and all three of them are in love with you, which the game
+  treats as the real problem.
 
 
   Catgirls send out conscript soldiers, tanks and rocket launchers, backed by a
@@ -24,14 +19,12 @@ description: >-
 
   You get 5 maps of islands, deserts, glaciers and a volcano crater, plus 3
   difficulties where AI opponents rush you, build turrets or wait for an
-  opening, and the menu labels Hard simply "They never stop."
+  opening.
 
 
   Units counter each other through abilities like healing auras and hero
-  infiltration, and there's a full in-game wiki showing live stats for every
-  unit. There's a power supply to manage as well. When NUCLEAR LAUNCH DETECTED
-  appears in the top-left corner, the game's own advice is to believe it,
-  because the strike is coming.
+  infiltration, and there's an in-game wiki with stats for every unit. There's a
+  power supply to manage as well.
 
 
   Your wins get saved as local victory records, split by difficulty for each
@@ -39,8 +32,8 @@ description: >-
 
 
   DGSpitzer built the 3D units almost entirely from procedural geometry, which
-  keeps the whole thing at a surprisingly small download near 10 MB, while Suno
-  AI made the soundtrack and Nano Banana drew the character art.
+  keeps the download small, near 10 MB, while Suno AI made the soundtrack and
+  Nano Banana drew the character art.
 play:
   url: https://helixngc7293.itch.io/gandg
   embeddable: false
@@ -84,7 +77,7 @@ media:
     - games/ai2u-guns-girlfriends/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-10-02
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:awesome-cc0

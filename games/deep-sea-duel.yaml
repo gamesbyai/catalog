@@ -8,18 +8,17 @@ description: >-
   share one keyboard in the 2 Player mode.
 
 
-  Catching sea creatures grants power-ups. The menu lists six: +25 HP, poison,
-  +1 stream, invisibility for 10 seconds, a 3 second spin, and a spread shot.
+  Catching sea creatures grants power-ups. The power-ups are +25 HP, poison, +1
+  stream, invisibility for 10 seconds, a 3 second spin, and a spread shot.
 
 
   The solo mode replaces the opponent with trash. You survive 3 waves of
-  floating garbage, then face the Trash Titan. Green radioactive trash is marked
-  as something to avoid.
+  floating garbage, then face the Trash Titan. Avoid the green radioactive
+  trash.
 
 
-  The art is pixel style, with a coral and sand seabed. The creator wanted a
-  two-player game to play against friends and siblings, after years of searching
-  for one with a sister.
+  The creator wanted a two-player game to play against friends and siblings,
+  after years of searching for one with a sister.
 play:
   url: https://deepseaduel.life
   embeddable: true
@@ -57,7 +56,7 @@ media:
     - games/deep-sea-duel/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-10-01
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:vibejam-2026

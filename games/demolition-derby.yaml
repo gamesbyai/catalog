@@ -2,25 +2,17 @@ slug: demolition-derby
 title: Demolition Derby
 tagline: Ram other players' cars in a dusty arena until one is left running
 description: >-
-  Your job here is to ram other cars until they're wrecked, all inside a dusty
-  arena ringed by a chain-link fence. Each round runs on a countdown that starts
-  close to four minutes. Shield-shaped pickups lie out on the dirt, which is
-  scribbled all over with tire tracks.
+  Your job here is to ram other cars until they're wrecked. Each round runs on a
+  countdown that starts close to four minutes. Shield-shaped pickups are
+  scattered around the arena.
 
 
   The lineup has muscle cars and vans, plus a wreck built to look like a dog's
-  face, floppy ears and lolling tongue included.
+  face. Your hull wears down as the dents pile up.
 
 
-  Your hull percentage sits right inside the speedometer, ticking down as the
-  dents pile up. When it's nearly gone, a critical warning shows up under the
-  gauge.
-
-
-  Your score lives in the top corner, with a standings board under it ranking
-  the leaders by points. Hold Tab and you'll get the full board. Below that, a
-  feed calls out who just wrecked whom, the closest thing this arena has to a
-  derby announcer.
+  Points are tracked on a standings board that ranks the leaders. Hold Tab to
+  see the full board. A feed calls out who just wrecked whom.
 
 
   Boost refills on its own over time and you burn it with Shift, while Space
@@ -67,7 +59,7 @@ media:
     - games/demolition-derby/shot-2
 dates:
   added: 2026-10-01
-  updated: 2026-10-02
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:vibejam-2026

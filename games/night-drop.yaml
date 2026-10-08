@@ -2,9 +2,9 @@ slug: night-drop
 title: Night Drop
 tagline: Fly a tiny delivery drone through a dark apartment without waking the cat
 description: >-
-  A shift is a run of timed courier jobs, flown as a drone the size of a cookie
-  through a dark apartment at 3 a.m. Touch the honey beam to pick up a parcel,
-  then carry it to the mint beam. The countdown begins when you grab the parcel.
+  A shift is a run of timed courier jobs, where you fly a drone through an
+  apartment. Touch the pickup beam to grab a parcel, then carry it to the
+  drop-off beam. The countdown begins when you grab the parcel.
 
 
   Faster drop-offs pay bigger tips. A late one pays half and resets your streak.
@@ -14,14 +14,13 @@ description: >-
 
 
   Hot burners push the drone around and the ceiling fan knocks it down. The cat
-  sleeps on the sofa, and a status label and noise meter in the corner track
-  whether it is awake. Keep away for a few seconds and it dozes off again. On
-  long shifts it relocates to the table and the counter.
+  sleeps on the sofa, and you need to keep track of whether it wakes up. Keep
+  away for a few seconds and it dozes off again. On long shifts it relocates to
+  the table and the counter.
 
 
-  The screen shows your money, deliveries, streak, speed, altitude, a minimap
-  and the distance to the current target. Your best shift is saved in the
-  browser. All the furniture is generated from basic shapes when the page loads.
+  Your best shift is saved in the browser. All the furniture is generated from
+  basic shapes when the page loads.
 play:
   url: https://gipppp121.github.io/buzzdrop
   embeddable: true
@@ -63,7 +62,7 @@ media:
     - games/night-drop/shot-2
 dates:
   added: 2026-09-30
-  updated: 2026-10-01
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:github

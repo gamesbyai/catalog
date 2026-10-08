@@ -7,30 +7,29 @@ description: >-
 
 
   The lineup runs from an elephant, a fox, a gorilla, a turtle and a frog to a
-  mole, a penguin, a tiger and a crab. Each one gets a card showing its role
-  label, dot ratings for speed, weight and power, and three abilities of its
-  own. For some reason the frog is named Kermit and the tiger goes by Cheeto.
+  mole, a penguin, a tiger and a crab. Each fighter has a role, stats for speed,
+  weight and power, and three abilities of its own. The frog is named Kermit and
+  the tiger goes by Cheeto.
 
 
-  From the title screen you can fight bots, join online matches for up to four
-  players, or set up a game with friends. Once you're in a match, you move
-  around, headbutt, use two abilities and have an ultimate on top.
+  You can fight bots, join online matches for up to four players, or set up a
+  game with friends. Once you're in a match, you move around, headbutt, use two
+  abilities and have an ultimate on top.
 
 
   There's a key that restarts the round, and you can plug in a gamepad if you'd
   rather not use the keyboard.
 
 
-  Trunk, the elephant, shows that each kit packs in a surprising amount. It's
-  a bruiser with maxed-out power, and its tusks carry it forward in a dash
-  while a wide thump knocks back and stuns whatever's around it. The grip is
-  mean, because it stuns a target for 2.5 seconds and that target takes four
-  times the damage from any hit.
+  Trunk, the elephant, shows how much each kit packs in. It's a bruiser with
+  maxed-out power, and its tusks carry it forward in a dash while a wide thump
+  knocks back and stuns whatever's around it. The grip is mean, because it stuns
+  a target for 2.5 seconds and that target takes four times the damage from any
+  hit.
 
 
-  On the select screen you can drag to spin a 3D model of each fighter, and a
-  belts screen opens from there too. RGomezR14 made it as a party-style brawler
-  for friendly competition between friends.
+  The game also has belts. RGomezR14 made it as a party-style brawler for
+  friendly competition between friends.
 play:
   url: https://bichitosrumble.com
   embeddable: true
@@ -76,7 +75,7 @@ media:
     - games/bichitos-rumble/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-10-02
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:vibejam-2026

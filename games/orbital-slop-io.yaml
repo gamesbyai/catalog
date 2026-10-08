@@ -13,27 +13,13 @@ description: >-
   and messy.
 
 
-  The opening screen looks like a console pulled from some retro mission
-  control, with a glowing particle map of the solar system where Earth and
-  Mercury sit inside a swirling ring of dust. There's a surprising amount
-  crammed around it, since green terminal text, status readouts and a scrolling
-  news ticker crowd every edge.
-
-
   From there you can jump into a quick run or open the Phobos Ledger to see the
-  top runs. One mode card is labeled Ares and promises war games with live-fire
-  PvP across six satellites. Another warns of priority ops with a blight on the
-  way, while a contamination meter in the corner tracks that blight as a
-  percentage, oddly precise down to three decimal places.
-
-
-  Your pilot gets an operator card with a portrait and a call sign, a nice bit
-  of dressing for a menu.
+  top runs. One mode, Ares, promises war games with live-fire PvP across six
+  satellites. Another card warns of priority ops with a blight on the way.
 
 
   sidriff framed it as a love letter to the flight sims they played in their
-  youth. The menus lean hard on old cockpit displays and terminal readouts, so
-  that affection shows up before you've launched.
+  youth.
 play:
   url: https://orbital-slop.io
   embeddable: true
@@ -68,7 +54,7 @@ media:
     - games/orbital-slop-io/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-10-02
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:vibejam-2026

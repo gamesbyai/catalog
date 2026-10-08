@@ -2,37 +2,30 @@ slug: lunar-mass
 title: Lunar Mass
 tagline: Deploy bots to build a lunar mass driver while carving new craters in the Moon.
 description: >-
-  Lunar Mass puts you in a spacesuit on a moon landing pad, right next to a hab
-  dome that's sitting there with no power.
+  Lunar Mass puts you in a spacesuit on a moon landing pad beside a hab dome
+  that has no power.
 
 
   Mission Control talks you through it with text messages, and the opening one
-  calls the dome alive but hungry for power, a charming way to hand you a chore.
-  Your first job is to walk to a waypoint, dig up regolith with F and set down a
-  solar kit that hooks the dome into the grid. The camera follows your astronaut
-  from behind in third person.
+  says the dome is alive but hungry for power. Your first job is to walk to a
+  waypoint, dig up regolith with F and set down a solar kit that hooks the dome
+  into the grid.
 
 
-  A cargo panel keeps track of what you're hauling, split into regolith, ice,
-  ore and metal, and each of those has a carry limit. Everything you collect
-  gets spent on buildings, while depots such as a hab depot and a railend depot
-  hold whatever's stored.
+  You haul four kinds of material, regolith, ice, ore and metal, and each one
+  has a carry limit. Everything you collect gets spent on buildings, while
+  depots such as a hab depot and a railend depot hold whatever's stored.
 
 
-  Tabs for Ops, Launch, Power and Tips sit next to the cargo view, and the
-  mission panel keeps a launch counter that starts out at a lonely zero.
-
-
-  The bigger aim is a full lunar mass driver, and thankfully a whole set of bots
-  helps put the megastructure together. The creator describes creating new lunar
-  craters along the way, too. There's also a leaderboard you can open from the
-  title screen.
+  The bigger aim is a full lunar mass driver, and a set of bots helps put the
+  megastructure together. The creator describes creating new lunar craters along
+  the way, too. The game also has a leaderboard.
 
 
   Making it was the creator's way to learn about the mass driver, which they
   hope to build with the Terafab team one day, and they plan a more realistic
-  simulation later. According to a note on the title screen, the game is still
-  over 90 percent AI-written even as they keep working on its mechanics.
+  simulation later. According to a note in the game, it is still over 90 percent
+  AI-written.
 play:
   url: https://lunar-mass.vercel.app
   embeddable: true
@@ -69,7 +62,7 @@ media:
     - games/lunar-mass/shot-2
 dates:
   added: 2026-10-01
-  updated: 2026-10-02
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:vibejam-2026
