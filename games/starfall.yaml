@@ -2,33 +2,28 @@ slug: starfall
 title: Starfall
 tagline: Pilot a spaceship in a duel to the death against one opposing ship
 description: >-
-  In Starfall Melee, you and one opponent each fly a spaceship around a sun
-  parked in the middle of a single screen, and the fight lasts until one crew is
-  wiped out. You thrust, turn and brake, with a primary and a secondary weapon
-  to throw at the other ship. Asteroids drift through the arena as well,
-  cluttering the space around the sun.
-
-
-  It's an homage to the Melee mode of Star Control 2, and the title screen sums
-  the whole thing up as two ships, one screen, no escape.
+  In Starfall Melee, you and one opponent each fly a spaceship around a sun in a
+  single arena, and the fight lasts until one crew is wiped out. You thrust,
+  turn and brake, with a primary and a secondary weapon to throw at the other
+  ship. Asteroids also drift through the arena. It's an homage to the Melee mode
+  of Star Control 2.
 
 
   Before each round you pick from a roster of about sixteen races, among them
-  Asterion Patrol, Terran Vanguard, Helix Nomad and Hive Carrier, or take the
-  question mark for a random one. Every ship has its own crew count, battery
-  meter and weapon pair, so Asterion Patrol starts with 30 crew, Ion Bolts and a
-  Seeker Missile while Terran Vanguard brings 38 crew and a Vanguard Missile.
+  Asterion Patrol, Terran Vanguard, Helix Nomad and Hive Carrier, or pick a
+  random one. Every ship has its own crew count, battery and weapon pair, so
+  Asterion Patrol starts with 30 crew, Ion Bolts and a Seeker Missile while
+  Terran Vanguard brings 38 crew and a Vanguard Missile.
 
 
-  If nobody's around to play against, a checkbox hands the second ship to an AI,
-  which even chooses its own next ship. Leave it off and two people share one
+  If nobody's around to play against, you can hand the second ship to an AI,
+  which chooses its own next ship. Leave it off and two people share one
   keyboard, with Player 1 on WASD and Player 2 on the arrow keys. Each player
   flips through the races with their own pair of keys.
 
 
   Matches run in rounds with a running score, and every new round asks you for a
-  ship you haven't flown yet, which keeps you moving through the roster instead
-  of sticking with one favorite.
+  ship you haven't flown yet.
 
 
   kashprime made the ship portraits and artwork with Codex's built-in image
@@ -78,7 +73,7 @@ media:
     - games/starfall/shot-2
 dates:
   added: 2026-10-01
-  updated: 2026-10-02
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:vibejam-2026

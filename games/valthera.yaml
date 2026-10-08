@@ -3,15 +3,14 @@ title: Valthera
 tagline: Explore a fantasy world, fight bosses, gather resources and craft gear
   with other players.
 description: >-
-  Valthera is a free 2D multiplayer RPG set in a fantasy world. You explore the
-  map, fight bosses, gather resources, and craft items, building up your
-  character over time while sharing the world with other adventurers online.
+  Roam a fantasy world with other players in this free role-playing game. You
+  explore the map, fight bosses, gather resources, and craft items, building up
+  your character over time while sharing the world with other adventurers
+  online.
 
 
   It comes, the creator says, from a long-held passion for AI and a dream of
-  making a game, and they built it with Codex. It placed 231st of 945 in Vibe
-  Jam 2026, and it also runs on phones, so the world is there away from a
-  desktop too.
+  making a game, and they built it with Codex.
 
 
   The loops are familiar from MMOs, pressed into 2D: gathering feeds crafting,
@@ -52,7 +51,7 @@ media:
     - games/valthera/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-09-29
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:vibejam-2026

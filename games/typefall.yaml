@@ -4,27 +4,24 @@ tagline: Build your own words or race to match the target before the letters pil
 description: >-
   Letters drop into columns one tile at a time, and you nudge each falling tile
   left or right before it settles. Whatever lands on the bottom row is the word
-  you're working on, so where a tile ends up counts as much as which letter it
-  is. Let the stack climb to the top of the screen and your run's over.
+  you're working on, so each tile's position matters as well as its letter. If
+  the stack reaches the top, your run is over.
 
 
   Three modes change what that bottom row actually has to spell.
 
 
-  Freestyle is the loosest of them, because any real dictionary word of 4 to 6
-  letters on the bottom row moves you up a level. Wordmatch turns that same row
-  into a guess at a hidden word, and you get Wordle-style feedback on each
-  letter.
+  In Freestyle, any real dictionary word of 4 to 6 letters on the bottom row
+  moves you up a level. Wordmatch turns that same row into a guess at a hidden
+  word, and you get Wordle-style feedback on each letter.
 
 
   Geoquest works like Wordmatch, but the answer is the name of a place. The
-  category changes from run to run and covers countries, world cities, US
-  states and US state subdivisions. That last one is a deep cut for a game
-  about falling letters.
+  category changes from run to run and covers countries, world cities, US states
+  and US state subdivisions.
 
 
-  Around the menu you'll find a high scores list, an instructions panel, a
-  language picker and sound toggles.
+  There's a high scores list, and you can pick the game's language.
 
 
   skyhighgames042 says the idea had been with them for a long time. According to
@@ -63,7 +60,7 @@ media:
     - games/typefall/shot-2
 dates:
   added: 2026-10-01
-  updated: 2026-10-02
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:vibejam-2026

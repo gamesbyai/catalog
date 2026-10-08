@@ -1,18 +1,17 @@
 slug: type-across-america
 title: Type Across America
-tagline: Spell your way from Colorado to Maine by typing the name of each state next door.
+tagline: Spell your way from Colorado to Maine by typing the name of each state
+  next door.
 description: |-
   The road trip starts in Colorado, and the only way to get anywhere is to type. You enter the name of a state that borders the one you're in, and a green arrow carries you over to it.
 
-  Every neighbor gets a card with the first few letters of its name and a few clues about what it's known for. Some are wonderfully specific, like Snoopy for Minnesota or tax-free shopping for Delaware.
+  Every neighbor shows the first few letters of its name and a few clues about what it's known for. Some are wonderfully specific, like Snoopy for Minnesota or tax-free shopping for Delaware.
 
   Even Arizona counts as one of Colorado's neighbors, though the two only touch at the Four Corners.
 
-  The longer you wait, the more letters and clues fill in on the cards, but the percentage beside your score, which starts at 500%, keeps sliding down the whole time.
+  The longer you wait, the more letters and clues fill in, but the score percentage, which starts at 500%, keeps sliding down the whole time.
 
-  There are only a couple of rules on the travel guide. You can visit each state once, and the journey ends when every state around you has already been visited, which turns the route northeast to Maine into a little puzzle of its own.
-
-  Each state you reach fills in with a painted postcard scene, from aspens around a mountain lake in Colorado to a cornfield and silo in Iowa. The ones behind you fade to sepia, and a small map in the corner traces your route. It's all laid out on old parchment with a brass compass and a fountain pen at the edges, so the whole thing looks like someone's travel journal.
+  There are only a couple of rules. You can visit each state once, and the journey ends when every state around you has already been visited, which turns the route northeast to Maine into a little puzzle of its own.
 
   Sleepyowl108 wrote the text themselves and says Claude did the coding while ChatGPT made the images.
 play:
@@ -50,7 +49,7 @@ media:
     - games/type-across-america/shot-2
 dates:
   added: 2026-10-04
-  updated: 2026-10-04
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: form

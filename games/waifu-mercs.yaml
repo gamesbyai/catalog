@@ -2,21 +2,19 @@ slug: waifu-mercs
 title: Waifu Mercs
 tagline: Shoot waves of zombies from behind the shoulder in split-screen co-op.
 description: >-
-  Waifu Mercs is a third-person zombie shooter built for two people sharing one
-  screen. Each of you plays a mercenary with your own half of a split-screen
-  view, and together you fight off crowds of undead from behind the shoulder as
-  the pressure builds.
+  Two players share one screen and fight off zombie hordes from behind the
+  shoulder. Each of you plays a mercenary, and together you push back the undead
+  as the pressure builds.
 
 
-  The split screen is the core idea. The creator wanted a couch-style co-op game
-  to play with their wife, and that goal shapes the whole design, down to each
-  player having their own view of the fight. It was built in Three.js with
-  Claude Code, and it finished 36th of 945 in Vibe Jam 2026.
+  The creator wanted a couch-style co-op game to play with their wife, and that
+  goal shaped the design, down to each player having their own view of the
+  fight. It was built in Three.js with Claude Code.
 
 
-  The combat pairs the tense over-the-shoulder aiming of survival horror with
-  the horde-clearing loop of survivor-style games, and the waves keep the pace
-  fast and casual for both players.
+  The combat blends the over-the-shoulder aiming of survival horror with the
+  horde-clearing loop of survivor-style games, and the waves keep the pace fast
+  and casual for both players.
 play:
   url: https://waifumercs.com
   embeddable: true
@@ -52,7 +50,7 @@ media:
     - games/waifu-mercs/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-09-29
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:vibejam-2026

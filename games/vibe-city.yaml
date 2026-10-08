@@ -2,32 +2,24 @@ slug: vibe-city
 title: vibe city
 tagline: Hang out in a pixel-art isometric town, chat, and play arcade games
 description: >-
-  Vibe City puts you on an isometric pixel-art street as a small avatar. The
-  street has a hotel, shops under striped awnings, flower beds, trees and street
-  lamps.
-
-
-  Doormats sit outside the building entrances, showing where you can step off
-  the street and into a room.
+  You play as a small avatar on a city street. Building entrances let you step
+  off the street and into a room.
 
 
   You're not out there alone, because other players share the street with you.
-  The chat box along the bottom takes messages of up to 72 characters, and you
-  post them with the Send button. It's a tight limit, closer to a speech bubble
-  than a letter.
+  You chat with other players in messages of up to 72 characters, and you post
+  them with the Send button. It's a tight limit, closer to a speech bubble than
+  a letter.
 
 
-  Then there's the big neon Arcade, a whole building that's the game's hub for
-  play in the middle of what's otherwise a chat hangout. Inside it there's a
-  wide spread of genres, including action, puzzle, shooter, racing and RPG, so
-  when you want a break from hanging out, you can head in for a round of
-  something else.
+  The Arcade is the building where you go to play games, the hub for play in a
+  place that's otherwise mostly for chatting. Inside it there's a wide spread of
+  genres, including action, puzzle, shooter, racing and RPG, so when you want a
+  break from hanging out, you can head in for a round of something else.
 
 
-  A row of buttons across the top handles everything else. ME is where you
-  customize your avatar, ROOMS brings up a list of rooms, and a little house
-  button takes you home. Daily goals sit beside those, with a coin counter next
-  to them.
+  You can customize your avatar, browse the list of rooms, and head back to your
+  home. There are also daily goals.
 
 
   vibemaxxer drew on Habbo and a love of many kinds of games, wanting a warm
@@ -70,7 +62,7 @@ media:
     - games/vibe-city/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-10-02
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:vibejam-2026

@@ -3,32 +3,31 @@ title: Space Blast
 tagline: Dodge and shoot through asteroid fields, alone or with a friend on the
   same screen.
 description: >-
-  Space Blast drops you into a 3D asteroid field where the only goal is to stay
-  alive as long as you can while shooting the rocks apart. Your ship thrusts and
-  aims in full 3D while the field closes in around you.
+  Space Blast puts you in a 3D asteroid field, and your goal is to stay alive as
+  long as you can while shooting the rocks apart. Your ship thrusts and aims in
+  full 3D while the field closes in around you.
 
 
   Shields, rapid fire and drones turn up as pickups during a run, and grabbing
-  them changes your loadout on the fly. Ship color palettes unlock too. It's a
-  small cosmetic reward for anyone who cares how they look while dodging
-  boulders.
+  them changes your loadout on the fly. You can also unlock ship color palettes.
+  The palettes are cosmetic and only change how your ship looks.
 
 
-  Before launching you have to enter a pilot call sign, a bit of paperwork that
-  becomes your name on the leaderboard.
+  You enter a pilot call sign before launching, and it becomes your name on the
+  leaderboard.
 
 
-  The start screen lets you choose touch, mouse or keyboard controls, plus a
-  dropdown for your ship's color that starts on a Classic scheme. Two pilots can
-  also share one screen if you press 2 at the start.
+  You can play with touch, mouse or keyboard controls, and pick your ship's
+  color from a list that starts on the Classic scheme. Two pilots can also share
+  one screen if you press 2 at the start.
 
 
-  Tick the daily run box and every player gets the same asteroid sequence that
-  day, a neat way to line your run up against everyone else's.
+  A daily run mode gives every player the same asteroid sequence that day, so
+  your run can be lined up against everyone else's.
 
 
-  Your own scores are kept locally. A separate scores page lists the top 10
-  world runs. The menu also has pages for features, a briefing and settings.
+  Your own scores are kept locally. The top 10 world runs make up the world
+  leaderboard.
 play:
   url: https://space-blast.vercel.app
   embeddable: true
@@ -65,7 +64,7 @@ media:
     - games/space-blast/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-10-02
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:vibejam-2026

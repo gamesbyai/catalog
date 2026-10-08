@@ -7,29 +7,20 @@ description: >-
   sprint to the finish.
 
 
-  The Quick Race on the menu spells it out as a 4.5 km run against five AI
-  rivals, pitched as instant action. Your job is to get in front of that pack
-  and stay there until you cross the line. The rivals don't follow a fixed
-  pattern either, because they adapt as you drive.
+  The Quick Race is a 4.5 km run against five AI rivals. Your job is to get in
+  front of that pack and stay there until you cross the line. The rivals don't
+  follow a fixed pattern either, because they adapt as you drive.
 
 
-  Since every course is generated, the layout changes between runs. One race
-  won't play quite like the last, a sensible match for a mode built to drop
-  you straight into the action.
+  Since every course is generated, the layout changes between runs.
 
 
-  Before the start you can paint your chunky, almost toy-like car in one of six
-  colors, and the menu pegs its top speed at 200 km/h.
+  Before the start you can paint your car in one of six colors. There's also a
+  leaderboard.
 
 
-  Glowing neon and sleek vehicles give the tracks a nightlife feel. The menu
-  leans the same way, with a dark backdrop and hot red accents around a really
-  big play button. There's also a leaderboard you can open from the main screen
-  to see where you stand.
-
-
-  You drive with WASD and brake with Space. If your run goes sideways, R
-  resets the car.
+  You drive with WASD and brake with Space. If your run goes sideways, R resets
+  the car.
 play:
   url: https://vibe-racer-d3h.pages.dev
   embeddable: true
@@ -66,7 +57,7 @@ media:
     - games/vibe-racer/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-10-02
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:vibejam-2026

@@ -3,21 +3,21 @@ title: Wetware Trials
 tagline: Race through quick brain microgames testing reflexes, memory, patterns
   and logic.
 description: >-
-  Wetware Trials is a cognitive arcade built from rapid-fire microgames. Each
-  one tests a single skill, such as reflexes, memory, pattern recognition, or
-  logic, and is simple enough to grasp in about a second. You jump straight in
-  and clear one tiny task after another, measuring how sharp your brain is.
+  In Wetware Trials, you play rapid-fire microgames, each one a quick cognitive
+  test. Each one tests a single skill, such as reflexes, memory, pattern
+  recognition, or logic, and is simple enough to grasp in about a second. From
+  there, a run chains one tiny task after another, and it measures how sharp
+  your brain is.
 
 
   The creator took inspiration from the short, instantly understandable brain
   teasers of Big Brain Academy on the Nintendo DS, and made the game with Codex
-  on canvas, for phones as well as desktop. In the Vibe Jam 2026 standings it
-  sits at 292nd of 945.
+  on canvas, for phones as well as desktop.
 
 
-  The twist is who made the tests. AI generated the microgames, and humans
-  compete against each other on them, in multiplayer rounds that take cues from
-  the fast, competitive pace of Tetris 99.
+  AI generated the microgames, and humans compete against each other on them, in
+  multiplayer rounds that take cues from the fast, competitive pace of Tetris
+  99.
 play:
   url: https://wetwaretrials.com
   embeddable: false
@@ -54,7 +54,7 @@ media:
     - games/wetware-trials/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-09-29
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:vibejam-2026

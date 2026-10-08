@@ -3,14 +3,11 @@ title: "Sludge Corp: Origins"
 tagline: Grow an alien biomass from a petri dish into a company that buys the
   solar system.
 description: >-
-  An orange blob sits sealed in an underground lab, and that blob is you,
-  Subject Alpha. You click to gather Biomass, then spend it in the Splicer on
-  biological assets, starting with wriggly hairs and acidic maws. Those keep
-  producing income without any clicking, and that's how a lone blob starts
-  building a passive economy.
-
-
-  Extracted DNA reshapes your body for good.
+  A blob sits sealed in an underground lab, and that blob is you, Subject Alpha.
+  You click to gather Biomass, then spend it in the Splicer on biological
+  assets, starting with wriggly hairs and acidic maws. Those keep producing
+  income without any clicking, and that's how a lone blob starts building a
+  passive economy. Extracted DNA reshapes your body for good.
 
 
   The facility's blast doors stand between you and the surface, and getting
@@ -31,10 +28,9 @@ description: >-
 
 
   All of it runs on dark corporate humor, with a monster eating everything while
-  the game talks in office jargon about growing its market share, and the title
-  screen promises you'll eat the world and then buy it. According to VibeAxis
-  Games, the code, procedural audio and design logic were built in collaboration
-  with AI.
+  the game talks in office jargon about growing its market share. According to
+  VibeAxis Games, the code, procedural audio and design logic were built in
+  collaboration with AI.
 play:
   url: https://vibeaxis.itch.io/sludge-corp-origins
   embeddable: false
@@ -73,7 +69,7 @@ media:
     - games/sludge-corp-origins/shot-2
 dates:
   added: 2026-09-30
-  updated: 2026-10-02
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:aibgj-2

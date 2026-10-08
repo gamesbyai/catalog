@@ -14,11 +14,10 @@ description: >-
 
 
   Transfer windows and planetary alignment matter a lot because of that,
-  especially when a delivery from Callisto has to make it across half the
-  system first. Each world's population climbs toward the cap its habitat
-  allows, and research takes real time. A thorough colony list in the corner
-  keeps track of each world's stock, daily output and when its next window
-  opens.
+  especially when a delivery from Callisto has to make it across half the system
+  first. Each world's population climbs toward the cap its habitat allows, and
+  research takes real time. You can keep an eye on each world's stock, daily
+  output and when its next transfer window opens.
 
 
   Three named pirate clans prey on shipping from every faction while working out
@@ -30,13 +29,13 @@ description: >-
 
 
   Both rival factions run on the same economy as you, and you can sign
-  non-aggression pacts with them, buy peace in the middle of a war, join strikes
-  on the pirates, or raid and conquer their worlds.
+  non-aggression pacts with them, buy peace mid-war, join strikes against the
+  pirates, or raid and conquer their worlds.
 
 
   Reputation doubles as money here. Protecting civilians earns it, mercenaries
-  and settlers cost it, and conquest drains it. Every world you take eats into
-  the standing you'd otherwise spend on settlers.
+  and settlers cost it, and conquest drains it. Each world you take also lowers
+  the standing you could have spent on settlers.
 
 
   Then year five comes and the Swarm arrives, a wave of vessels that attacks
@@ -48,8 +47,7 @@ description: >-
 
   Three difficulty levels run from Cadet up to Admiral, which brings a 25-vessel
   Swarm. Time compression stretches from 0.1x all the way to 120x. There's one
-  save slot that persists in your browser, along with an event log and a
-  synthesized ambient score.
+  save slot, along with an event log and a synthesized ambient score.
 play:
   url: https://kenjamingames.itch.io/star-conquest
   embeddable: false
@@ -92,7 +90,7 @@ media:
     - games/star-conquest-era-i-the-cradle/shot-2
 dates:
   added: 2026-10-01
-  updated: 2026-10-02
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:aibgj-3

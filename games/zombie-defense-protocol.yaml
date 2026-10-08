@@ -3,20 +3,15 @@ title: ZOMBIE DEFENSE PROTOCOL
 tagline: Place towers to build a killbox that stops waves of zombies and
   exploding bosses.
 description: >-
-  A welcome panel sits over a dark isometric map when the game loads, and it
-  wants a difficulty from you before you press Deploy.
+  You pick a difficulty first, then press Deploy to start. Easy hands you 30
+  lives and 50% more rewards, Medium settles on 20 lives, and Hard cuts you to
+  15 lives while paying 30% less. Whichever you pick, your job is holding the
+  line through 30 waves of zombies.
 
 
-  Easy hands you 30 lives and 50% more rewards, Medium settles on 20 lives, and
-  Hard cuts you to 15 lives while paying 30% less. Whichever you pick, your job
-  is holding the line through 30 waves of zombies.
-
-
-  Towers sit in a bar along the bottom, so you choose one and click open
-  ground to drop it. Every card carries its price, while a side panel spells
-  out damage, range and fire rate. The Gunner is the $50 bargain that can hit
-  umbrellas, and Sniper, Mortar, Minigun, Laser, Frost, Flamer, Tesla, Recon
-  and Cannon round out a wide roster of ten.
+  You pick a tower and click open ground to place it. The Gunner is the $50
+  bargain that can hit umbrellas, and Sniper, Mortar, Minigun, Laser, Frost,
+  Flamer, Tesla, Recon and Cannon round out a wide roster of ten.
 
 
   Not every tower hits every threat, and the horde keeps you honest about it,
@@ -25,9 +20,9 @@ description: >-
 
 
   Recon is the odd support piece in the bunch. It buffs the towers around it,
-  gets past shields and umbrellas, and spots invisible enemies, so mixing
-  tower types matters. Every fifth wave pulls up by car, and each boss bursts
-  into a swarm when it dies, so a boss kill isn't quite the end of the fight.
+  gets past shields and umbrellas, and spots invisible enemies, so mixing tower
+  types matters. Every fifth wave pulls up by car, and each boss bursts into a
+  swarm when it dies, so a boss kill isn't quite the end of the fight.
 
 
   You can call the next wave early, set the speed anywhere from 1x to 10x, and
@@ -73,7 +68,7 @@ media:
     - games/zombie-defense-protocol/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-10-02
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:vibejam-2026

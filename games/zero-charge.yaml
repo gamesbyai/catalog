@@ -2,9 +2,9 @@ slug: zero-charge
 title: Zero Charge
 tagline: Ride a dead city on one battery, lighting windows as you pass.
 description: >-
-  You ride an endless dead city on a single battery that serves as fuel, life
-  and the only light. Steer left and right, jump obstacles, and keep moving.
-  Windows ignite as you pass, and when charge runs low you are riding blind.
+  You ride an endless dead city on a single battery that serves as fuel and
+  life. Steer left and right, jump obstacles, and keep moving. When charge runs
+  low, you are riding blind.
 
 
   Everything costs charge, and reaching zero ends the run. Holding Overcharge
@@ -12,10 +12,9 @@ description: >-
   trades power for passage. The goal is a high score, in a score-attack format.
 
 
-  The city is built from low-poly primitives in a neon cyberpunk look and
-  generated procedurally as you ride. The creator says the code was written with
-  Claude Opus 5, the key art made with Gemini, and the soundtrack with Suno. The
-  build is marked as a work in progress.
+  The city is generated procedurally as you ride. The creator says the code was
+  written with Claude Opus 5, the key art made with Gemini, and the soundtrack
+  with Suno. The build is marked as a work in progress.
 play:
   url: https://focaccai.itch.io/zero-charge
   embeddable: false
@@ -54,7 +53,7 @@ media:
     - games/zero-charge/shot-2
 dates:
   added: 2026-10-01
-  updated: 2026-10-01
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:aibgj-4

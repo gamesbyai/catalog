@@ -4,9 +4,8 @@ tagline: Play office worker Paul Rivers and find your trapped team inside a
   horror corporation.
 description: >-
   The Long Night puts you in the role of Paul Rivers, who wakes up inside the
-  Sterling Corporation, an industrial complex of rusty shredders and white
-  office floors. Your goal is to find your coworkers before the system archives
-  them.
+  Sterling Corporation, an industrial complex. Your goal is to find your
+  coworkers before the system archives them.
 
 
   The tower has four levels, running from the basements up to the executive
@@ -19,9 +18,9 @@ description: >-
   Between battles you build a refuge to serve as a safe place for the team.
 
 
-  The story is told in a dark American comic style, as interactive fiction in
-  the visual novel mold. A session runs about an hour. The creator says AI
-  served as a digital brush for the visuals and atmosphere.
+  The story is told as interactive fiction in the visual novel mold. A session
+  runs about an hour. The creator says AI was used as a tool for the game's
+  visuals and atmosphere.
 play:
   url: https://edorg-games.itch.io/the-long-night
   embeddable: false
@@ -56,7 +55,7 @@ media:
     - games/the-long-night/shot-2
 dates:
   added: 2026-10-01
-  updated: 2026-10-01
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:aibgj-1

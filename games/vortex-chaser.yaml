@@ -11,12 +11,11 @@ description: >-
 
   The idea came from the creator's son, who loves tornado chasing games. The
   creator enjoys the movies but wanted to build something to the son's taste,
-  and made it with Antigravity on Three.js. It supports multiplayer and the Vibe
-  Jam portal system.
+  and made it with Antigravity on Three.js. It supports multiplayer.
 
 
   The garage is always a key away. Press G at any time to open it and customize
-  the rig on the fly rather than only between runs, so the setup can change
+  the rig on the fly rather than only between runs, so you can change your setup
   mid-chase.
 play:
   url: https://vortex-chaser.waterschie.com?portal=true
@@ -56,7 +55,7 @@ media:
     - games/vortex-chaser/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-09-29
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:vibejam-2026

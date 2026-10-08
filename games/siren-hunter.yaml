@@ -2,21 +2,19 @@ slug: siren-hunter
 title: Siren Hunter
 tagline: Search the Seven Wonders in Street View to find hidden sirens.
 description: >-
-  Siren Hunter is a hide-and-seek hunt across the Seven Wonders of the World,
-  played in Google Street View. At each site you pan the view and scan the
+  Search the Seven Wonders of the World in Google Street View for hidden sirens
+  in a game of hide-and-seek. At each site you pan the view and scan the
   surroundings for hidden sirens and anything out of place, then move on to the
   next wonder.
 
 
   The creator says they had been learning to code and vibe coding for about six
-  months, with a couple of web tools already released, and joined Vibe Jam 2026
-  late. They handled the idea, design, images, and audio themselves and built
-  the game with Claude Code.
+  months, with a couple of web tools already released. They handled the idea,
+  design, images, and audio themselves and built the game with Claude Code.
 
 
-  The places are real. Instead of a made-up map, every stop is real-world
-  imagery of a famous landmark, which turns each one into a small search through
-  a place that actually exists.
+  Every stop uses real-world imagery of a famous landmark, so each one is a
+  search through a place that actually exists.
 play:
   url: https://sirenhunter-game.vercel.app
   embeddable: true
@@ -52,7 +50,7 @@ media:
     - games/siren-hunter/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-09-29
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:vibejam-2026

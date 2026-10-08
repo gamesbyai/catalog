@@ -29,10 +29,10 @@ description: >-
   weak spots.
 
 
-  The club's money is your job too. You can upgrade the stadium, set ticket
+  You also handle the club's finances. You can upgrade the stadium, set ticket
   prices, run marketing, take out loans and sell merchandise. A fresh save
   starts you with 2000 coins and a first sponsor called Rotting Rick's Spare
-  Parts, paying 50 coins a match, and the name fits this league perfectly.
+  Parts, paying 50 coins a match.
 
 
   Your goal is to climb from Division 3 all the way up to the Necro Elite. Win
@@ -78,7 +78,7 @@ media:
     - games/zombie-hockey-manager/shot-2
 dates:
   added: 2026-10-01
-  updated: 2026-10-02
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:aibgj-4

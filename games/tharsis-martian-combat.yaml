@@ -18,10 +18,7 @@ description: >-
   the list too.
 
 
-  Support powers give you extra options once a fight is underway. They get
-  their own tab on the sidebar, right beside the Build and Units tabs. Sell
-  and Repair buttons sit just above them, in a layout that'll look familiar to
-  anyone raised on Command & Conquer.
+  Support powers add more options to a fight once it's started.
 
 
   Skirmish puts you 1v1 against an AI, with difficulty running from Easy and
@@ -29,10 +26,9 @@ description: >-
 
 
   Before a match starts, you can tune the starting resources, the map seed and
-  the units you begin with. If you'd rather sit back, a whole AI vs AI mode lets
-  you watch two computer opponents fight it out instead. Online 1v1 through
-  Wavedash lobbies is still being built, with lobby chat and invite links
-  planned as part of it.
+  the units you begin with. There's also an AI vs AI mode, where you watch two
+  computer opponents fight it out. Online 1v1 through Wavedash lobbies is still
+  being built, with lobby chat and invite links planned as part of it.
 
 
   You pick units with a left click or by dragging a box, then right-click to
@@ -82,7 +78,7 @@ media:
     - games/tharsis-martian-combat/shot-2
 dates:
   added: 2026-10-01
-  updated: 2026-10-02
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:aibgj-2

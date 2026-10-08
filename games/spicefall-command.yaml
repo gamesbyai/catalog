@@ -13,28 +13,26 @@ description: >-
   houses, so there's a bit more on the map worth fighting over than spice alone.
 
 
-  Before any shooting starts, a setup screen has you pick your house, the map
-  size, how many AI players join and which team you're on. Each AI opponent gets
-  its own house and team setting too. Alliances are settled by number, so anyone
-  sharing your team number fights on your side while every other command center
-  is hostile, and an AI can be your partner just as easily as your enemy.
+  Before any shooting starts, you choose your house, the map size, how many AI
+  players join and which team you're on. Each AI opponent gets its own house and
+  team setting too. Alliances are settled by number, so anyone sharing your team
+  number fights on your side while every other command center is hostile, and an
+  AI can be your partner just as easily as your enemy.
 
 
   Bitten Heart Studio drew on classic desert strategy games. Two sci-fi houses
-  compete, one of them carrying the rather grand name Sunforge Compact. Each
-  match randomizes the map, anywhere from a small skirmish up to a large AI
-  battle.
+  compete, and one of them is the Sunforge Compact. Each match randomizes the
+  map, anywhere from a small skirmish up to a large AI battle.
 
 
   The controls are the classic RTS kind, with a drag to select units and a
   right-click to move, attack, harvest or set a rally point. Hotkeys handle
   production, since 1 through 7 train units and Q, W, E, R, Y and T place
-  structures. A attack-moves, Shift queues orders and a command console
-  interface covers the rest.
+  structures. A attack-moves and Shift queues orders.
 
 
-  A match only runs a few minutes, which makes all that base management
-  compact. Fullscreen at 1280x720 or higher is recommended.
+  A match only runs a few minutes. Fullscreen at 1280x720 or higher is
+  recommended.
 play:
   url: https://bitten-heart-studio.itch.io/spicefall-command
   embeddable: false
@@ -79,7 +77,7 @@ media:
     - games/spicefall-command/shot-2
 dates:
   added: 2026-09-30
-  updated: 2026-10-02
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:aibgj-3

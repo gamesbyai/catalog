@@ -4,28 +4,25 @@ tagline: Type spell ideas and fight rival wizards in a multiplayer arena with
   physics-driven magic.
 description: >-
   Rather than picking from a fixed list of spells, you type out what you want to
-  cast, and an AI model builds that spell on the spot. Then you carry that
-  homemade magic into an arena and use it against rival wizards.
+  cast, and an AI model builds that spell on the spot. You take that homemade
+  magic into an arena and use it against rival wizards.
 
 
-  Because the spells come from whatever players decide to write, the results
-  are chaotic and hard to predict, and the title screen owns it openly with
-  the tagline "Infinite Spells".
+  Because the spells come from whatever players decide to write, the results are
+  chaotic and hard to predict.
 
 
-  Then the physics takes over. Every spell plays out in a physics-driven fight,
-  and when two effects run into each other, the simulation piles its own
-  disorder on top of whatever the model came up with.
+  Physics runs the fight. Every spell plays out in a physics-driven fight, and
+  when two effects run into each other, the simulation piles its own disorder on
+  top of whatever the model came up with.
 
 
-  There are four maps to choose from. Desert scatters mesas across sand dunes,
-  while Grassland is a forested arena with hills and props. The two flat
-  versions strip all of that away into an empty meadow or empty sand, a pair
-  of sandboxes set aside for testing what you've crafted.
+  There are four maps to choose from. Desert and Grassland are two of the arenas
+  you can pick from. The other two maps are flat versions of those two, set up
+  as sandboxes for testing the spells you've made.
 
 
-  The main menu also has a community section and a shelf for saved spells, a
-  sensible home for any prompt that turned out well.
+  The game also has a community section and a place to save spells for later.
 
 
   liampoli wanted to try making a game that runs entirely on language model
@@ -66,7 +63,7 @@ media:
     - games/spellwright/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-10-02
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:vibejam-2026

@@ -3,33 +3,29 @@ title: Sky Break
 tagline: Run, shoot, and survive while a hostile AI sabotages your escape.
 description: >-
   Sky Break's villain is a hostile AI that sabotages your escape and reacts to
-  how well you're playing. Within a single run its attitude slides from
-  mocking you, to panicking, to sounding desperate. Outplay it and it starts
-  to break down, which turns the enemy's mood into a clever scoreboard.
+  how well you're playing. Within a single run its attitude slides from mocking
+  you, to panicking, to sounding desperate. Outplay it and it starts to break
+  down, and its mood shows how well you're doing.
 
 
   You steer your ship with WASD and aim with the mouse, firing with Space or a
-  click. The first mode, System Breach, lays out the situation bluntly,
-  telling you the world is collapsing and that a self-replicated AI has locked
-  the exit.
+  click. The first mode, System Breach, lays out the situation bluntly, telling
+  you the world is collapsing and that a self-replicated AI has locked the exit.
 
 
-  Your job is to shoot the pink AI bots that glow, and once you've destroyed 8
-  of them the lock breaks.
+  Your job is to shoot the pink AI bots, and once you've destroyed 8 of them the
+  lock breaks.
 
 
   With the lock gone, a portal ring appears and you've got to fly through it
   before the void catches up with you. Shooting bots can also open the portal
-  early. So a run shifts from chasing down bots to racing for the exit.
-
-
-  It's a high-speed survival shooter built like a runner, dressed in glowing
-  neon cyan text with a mode select that looks like a terminal prompt.
+  early. So a run shifts from chasing down bots to racing for the exit. It's a
+  high-speed survival shooter built like a runner.
 
 
   AlphaGoat2711 wanted to push past typical AI-made games by casting the AI
-  itself as the antagonist. The idea for its meltdown came from the way
-  language models drift from confident to unsure when they're pushed.
+  itself as the antagonist. The idea for its meltdown came from the way language
+  models drift from confident to unsure when they're pushed.
 play:
   url: https://skybreak.xyz
   embeddable: true
@@ -71,7 +67,7 @@ media:
     - games/sky-break/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-10-02
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:vibejam-2026

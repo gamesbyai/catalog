@@ -1,25 +1,33 @@
 slug: tinygca
 title: TinyGCA
 tagline: Guide a plane to the runway by sending heading commands from a radar scope.
-description: "Drag the compass dial to pick a heading, then hit Send Heading and the aircraft turns to match. You're a ground-controlled approach controller watching a radar scope, guiding a plane toward the runway.
+description: "Drag the compass dial to pick a heading, then hit Send Heading and
+  the aircraft turns to match. You're a ground-controlled approach controller
+  guiding a plane toward the runway.
 
 
-  The scope shows the plane's callsign, a set of dashed lines marking the final approach course, and the runway sitting near the center of the rings. If the plane drifts off the line, a radio message tells you it's slightly left of course and correcting.
+  Keep the plane on the line that leads to the runway. If the plane drifts off
+  the line, a radio message tells you it's slightly left of course and
+  correcting.
 
 
-  Voice is switched on by default, so the ATC-style calls are spoken as well as written.
+  Voice is on by default, and the ATC-style calls are spoken aloud as well as
+  written. A best score is kept too.
 
 
-  Beside the radar there's a panel with the callsign, aircraft type, range in nautical miles, landings and score. A best score is kept too. The wind reading and a gate percentage sit along the bottom of the scope.
+  You can nudge the heading five degrees at a time with the minus and plus
+  buttons, or reset it. If an approach goes wrong, you can use the Go Around
+  button.
 
 
-  You can nudge the heading five degrees at a time with the minus and plus buttons, or reset it. If an approach goes wrong, there's a Go Around button. There's also a button to swap the control panel to the other side of the screen, and a help button.
+  Each session begins with a briefing, and you press Start Control to take over
+  the approach.
 
 
-  Each session opens on a briefing screen, where you press Start Control to take over the approach.
-
-
-  The creator, tatesuke, got the idea from videos of real GCA approaches and wanted to capture a little of that atmosphere. They shaped the concept through repeated testing, tuning aircraft behavior, radar look, controls and the radio voice, while AI tools wrote all of the code."
+  The creator, tatesuke, got the idea from videos of real GCA approaches and
+  wanted to capture a little of that atmosphere. They shaped the concept through
+  repeated testing, tuning aircraft behavior, radar look, controls and the radio
+  voice, while AI tools wrote all of the code."
 play:
   url: https://tatesuke.github.io/TinyGCA/
   platforms:
@@ -44,10 +52,17 @@ made:
   source: "Creator's submission (issue #119)"
   evidence: creator
   notes: >-
-    I saw videos of Ground Controlled Approach (GCA) on YouTube and thought it was cool. Ever since, I wanted to experience a little of that atmosphere myself. I thought voice communication would be especially important for making it feel right.
+    I saw videos of Ground Controlled Approach (GCA) on YouTube and thought it
+    was cool. Ever since, I wanted to experience a little of that atmosphere
+    myself. I thought voice communication would be especially important for
+    making it feel right.
 
 
-    I designed the concept and gameplay through repeated testing and feedback, while AI coding tools wrote all of the code, including the UI text. I kept iterating on details such as aircraft behavior, radar presentation, controls, and ATC-style voice communications until it felt like the simple GCA experience I had imagined.
+    I designed the concept and gameplay through repeated testing and feedback,
+    while AI coding tools wrote all of the code, including the UI text. I kept
+    iterating on details such as aircraft behavior, radar presentation,
+    controls, and ATC-style voice communications until it felt like the simple
+    GCA experience I had imagined.
 tech:
   engine: canvas
   multiplayer: single
@@ -62,7 +77,7 @@ media:
     - games/tinygca/shot-2
 dates:
   added: 2026-10-06
-  updated: 2026-10-06
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: form

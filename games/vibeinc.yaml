@@ -9,8 +9,7 @@ description: >-
 
 
   The creator is a longtime tycoon fan who made it with Cursor on Three.js, and
-  the economy systems are built around the chaos of the AI startup scene. It
-  finished 130th of 945 in Vibe Jam 2026.
+  the economy systems are built around the chaos of the AI startup scene.
 
 
   The messier side of that scene is the joke. Founders treat a working demo as a
@@ -50,7 +49,7 @@ media:
     - games/vibeinc/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-09-29
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:vibejam-2026

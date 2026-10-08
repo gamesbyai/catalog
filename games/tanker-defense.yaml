@@ -9,9 +9,8 @@ description: >-
 
 
   The creator says it was their first game, taken on as a fun small challenge,
-  and describes RPG and simulation elements mixed in with the action. It is
-  single-player, runs on Three.js, plays on a phone or a PC, and placed 508th of
-  945 in Vibe Jam 2026.
+  and describes RPG and simulation elements mixed in with the action. It was
+  built with Three.js.
 
 
   Shooting and ship handling compete for your attention the whole way. You aim
@@ -50,7 +49,7 @@ media:
     - games/tanker-defense/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-09-29
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:vibejam-2026

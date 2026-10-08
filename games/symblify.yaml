@@ -5,27 +5,20 @@ description: >-
   Each puzzle asks you to crack a short phrase, and you've got four guesses to
   do it. The phrase comes written as a line of words strung together with
   symbols, and every symbol is an instruction for what to do with the words next
-  to it. A one-line clue sits underneath to point you in the right direction.
+  to it. Each puzzle also comes with a one-line clue to steer you toward the
+  answer.
 
 
-  When you think you've got it, you type the phrase into the answer box and hit
-  the Enter button. Four empty rows under the box fill up with your attempts as
-  you go.
+  When you think you've got it, type the phrase in and hit the Enter button.
 
 
-  Puzzle 0 is a practice round rated medium, with the line ~BRAKE + FAST, the
-  clue "The first meal of the day" and two tags, Homophone and Combine, that
-  pretty much spell out how to read it.
+  Puzzle 0 is a practice round rated medium, using the line ~BRAKE + FAST and
+  the clue "The first meal of the day," and its two tags, Homophone and Combine.
 
 
-  A symbol keeps the same meaning from one puzzle to the next, so you're
-  slowly picking up a small language and using it on later lines. A new puzzle
-  shows up every day. The tagline at the top of the screen asks whether you
-  can decode them all.
-
-
-  The whole screen is drawn as glowing neon lettering on a purple brick wall,
-  and there's an FAQ button tucked into the top corner.
+  A symbol keeps the same meaning from one puzzle to the next, so you're slowly
+  picking up a small language and using it on later lines. A new puzzle shows up
+  every day.
 
 
   Symblify describes the idea as a cross between word puzzles, cryptic
@@ -69,7 +62,7 @@ media:
     - games/symblify/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-10-02
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:vibejam-2026

@@ -3,15 +3,12 @@ title: The List's Champion
 tagline: Ride down the lists in first person and land your lance on rival knights
 description: >-
   The goal is to work your way up from an unknown name on the tournament list to
-  its champion, one jousting pass at a time. It's all played in first person
-  from behind a knight's visor, with your horse's gray ears and a long lance
-  taking up the bottom of the screen.
+  its champion, one jousting pass at a time.
 
 
-  Each pass starts when the marshal lifts his flag. You charge down the course
-  alongside the wooden barrier, aim your lance at your opponent's armor and
-  brace for the moment the two of you meet. Rows of spectators in colored robes
-  line both fences, and there are tents and trees off in the distance.
+  Each pass starts when the marshal lifts his flag. You charge down the course,
+  aim your lance at your opponent's armor and brace for the moment the two of
+  you meet.
 
 
   The rivals get tougher as the tournament goes on, and none of them is a copy
@@ -19,21 +16,19 @@ description: >-
   and fights with its own tactics.
 
 
-  There's a Training Mode for practicing your timing, balance and aim before
-  you take on the real field. The lance itself comes with a big set of seven
-  heads you can swap between.
+  There's a Training Mode for practicing your timing, balance and aim before you
+  take on the real field. The lance itself comes with a big set of seven heads
+  you can swap between.
 
 
-  A lance can fail in four distinct ways, and somebody went to the trouble of
-  giving each one its own sound.
+  A lance can fail in four distinct ways, and each one has its own sound.
 
 
   Felmeric settled the lance's weight, the length of the timing window and the
-  scoring weights by playtesting. All of the sprite art came from text prompts,
-  including the crowd, the field details and the knight and horse as separate
-  posed pieces. Every sound is synthesized by an AI-generated Python program, a
-  whole soundtrack of fourteen effects and five music loops built from
-  oscillators, filters and noise, while the game has no voice acting.
+  scoring weights by playtesting. All of the sprite art came from text prompts.
+  Every sound is synthesized by an AI-generated Python program, with fourteen
+  effects and five music loops built from oscillators, filters and noise, while
+  the game has no voice acting.
 play:
   url: https://felmeric.itch.io/the-lists-champion
   embeddable: false
@@ -71,7 +66,7 @@ media:
     - games/the-list-s-champion/shot-2
 dates:
   added: 2026-10-01
-  updated: 2026-10-02
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:aibgj-4

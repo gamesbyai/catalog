@@ -9,10 +9,10 @@ description: >-
   profit and the rating.
 
 
-  The game is text based and plays as satire of the holiday rental business.
-  Every complaint carries consequences, and your choices push you toward one of
-  six endings. One ending is a way of surviving peak season. Four are different
-  ways of losing control. The last is the one where you lose your conscience.
+  It's a text game that satirizes the holiday rental business. Every complaint
+  carries consequences, and your choices push you toward one of six endings. One
+  ending is a way of surviving peak season. Four are different ways of losing
+  control. The last is the one where you lose your conscience.
 
 
   The setup comes from the creator's own bad stay in a tourist apartment in
@@ -51,7 +51,7 @@ media:
     - games/the-guest-is-always-wrong/shot-2
 dates:
   added: 2026-10-01
-  updated: 2026-10-01
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:aibgj-4

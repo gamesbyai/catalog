@@ -3,32 +3,25 @@ title: The Lighter Path
 tagline: Descend through Hell as Dante, hopping portals between minigames as
   karma sways your fate.
 description: >-
-  The Lighter Path casts you as Dante, waking somewhere dark with only a lantern
-  and then walking down through Hell. Along the way, portals pull you out of the
-  descent and drop you into entirely different games. One is an Archero-style
-  roguelite, another is a survival shooter full of dinosaurs, there's a Heaven
-  Taxi stage modeled on Flappy Bird, and a whole swarm of smaller minigames sits
-  on top of those.
+  The Lighter Path casts you as Dante, who wakes with only a lantern and then
+  walks down through Hell. Along the way, portals pull you out of the descent
+  and drop you into entirely different games. One is an Archero-style roguelite,
+  another is a survival shooter full of dinosaurs, there's a Heaven Taxi stage
+  modeled on Flappy Bird, and a crowd of smaller minigames sits on top of those.
 
 
-  Between those detours you follow a dark path cut through glowing red lava,
-  while a line of narration shows up near the top of the screen. The opening
-  stretch even offers a skip button that mocks your attention span on the way
-  out.
-
-
-  A karma counter stays at the top of the screen, and that number is what
+  Between those detours you keep walking the descent, and you get lines of
+  narration along the way. The opening stretch also has a skip button. Karma
   decides whether Dante ends up damned or saved.
 
 
-  The title screen sells it as an unhinged inferno arcade with four worlds, one
-  soul and zero rules. It lists WASD, the mouse, E, Shift and F as your inputs.
-  Tab opens a list of commands and tips, and the Begin button starts the
-  descent.
+  It bills itself as an unhinged inferno arcade with four worlds, one soul and
+  zero rules. Controls use WASD, the mouse, E, Shift and F. Tab opens a list of
+  commands and tips.
 
 
-  Touch screens work, but the title screen recommends sitting down at a desktop
-  computer for it.
+  Touch screens work, but it recommends sitting down at a desktop computer for
+  it.
 
 
   Mrkavica says the game pulls together many of their ideas. They say they're no
@@ -71,7 +64,7 @@ media:
     - games/the-lighter-path/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-10-02
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:vibejam-2026

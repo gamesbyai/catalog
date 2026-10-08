@@ -4,9 +4,8 @@ tagline: Steer a flame through a dark room where pillar shadows shelter the
   shades hunting you.
 description: >-
   You play a flame, and the shades hunting you die in light but are safe in
-  shadow. Lighting is recomputed from your position every frame, so each pillar
-  throws a wedge of darkness away from you. Shades can walk up that wedge
-  untouched.
+  shadow. Each pillar blocks your light and leaves a wedge of darkness behind
+  it, and the wedge shifts as you move. Shades can walk up that wedge untouched.
 
 
   Keep moving with the mouse, because standing still stops your shadows from
@@ -64,7 +63,7 @@ media:
     - games/wicklight/shot-2
 dates:
   added: 2026-10-01
-  updated: 2026-10-01
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:aibgj-4

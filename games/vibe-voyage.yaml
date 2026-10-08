@@ -7,13 +7,12 @@ description: >-
   deliver.
 
 
-  The money you earn goes toward buying better ships. It's a simple loop to
-  hang on a shipping game that wraps its whole map around one round world.
+  The money you earn goes toward buying better ships. It's a simple loop to hang
+  on a shipping game that wraps its whole map around one round world.
 
 
   Your first job is waiting at Whitepier. You sail over and dock there to load
-  your opening cargo. Instead of leaving you to hunt for the port, the game
-  draws arrows right on the water to point the way.
+  your opening cargo. Arrows on the water point you toward the port.
 
 
   Speed works a bit differently here, since you drive the ship with a throttle
@@ -25,10 +24,6 @@ description: >-
   you'd rather just stop pushing, X drops it straight to zero in one press.
   Turning sits on A and D or the left and right arrows, and Q and E fire the
   left and right thrusters.
-
-
-  Helpfully, all of these keys are laid out on a welcome card that greets you
-  before you set sail.
 
 
   jallen_dev based the idea on Shipping Lanes, a Roblox game, keeping the same
@@ -76,7 +71,7 @@ media:
     - games/vibe-voyage/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-10-02
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:vibejam-2026

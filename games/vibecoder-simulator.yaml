@@ -10,8 +10,7 @@ description: >-
 
 
   It mixes action, puzzle, strategy, and simulation in a space shared with other
-  players, on phones as well as desktop. The tools were Codex and Three.js. In
-  the Vibe Jam 2026 standings it sits at 223rd of 945.
+  players, on phones as well as desktop. The tools were Codex and Three.js.
 
 
   The game plays with the everyday habits of vibecoding. You can whip your AI
@@ -53,7 +52,7 @@ media:
     - games/vibecoder-simulator/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-09-29
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:vibejam-2026

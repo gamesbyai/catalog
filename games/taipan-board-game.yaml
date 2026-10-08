@@ -13,18 +13,15 @@ description: >-
   instead.
 
 
-  A turn moves along a track at the top of the screen, where you roll the dice,
-  move, build and then end your turn. Two red dice and a white one set your
-  movement and your production, and there's an Undo button for when a move
-  doesn't go the way you meant.
+  On your turn you roll the dice, move, build and then end your turn. Two red
+  dice and a white one set your movement and your production, and you can undo a
+  move if it doesn't go the way you meant.
 
 
   Whatever you pick on one turn carries into the next, so it speeds up or holds
   back how fast your domain grows. Ship upgrades and attributes let you shape a
-  different captain from one game to the next. The board is a sea of blue hexes
-  dotted with numbered islands, with Fortune, Peril and Tempest decks sitting
-  beside cargo and island cards, which looks a lot like the cardboard it came
-  from.
+  different captain from one game to the next. Islands are numbered, and the
+  game uses Fortune, Peril and Tempest decks along with cargo and island cards.
 
 
   The rules stay short once they click, and a tutorial walks you through them
@@ -69,7 +66,7 @@ media:
     - games/taipan-board-game/shot-2
 dates:
   added: 2026-10-01
-  updated: 2026-10-02
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:aibgj-4

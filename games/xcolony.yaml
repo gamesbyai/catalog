@@ -3,19 +3,19 @@ title: xColony
 tagline: Mine the Moon, research tech, launch cargo to orbit, and prestige to
   new worlds.
 description: >-
-  xColony starts you mining the Moon and ends each cycle on a new world. It is a
-  3D idle colony sim: the resources you gather feed a growing settlement, you
-  spend them on upgrades and research, and then you send cargo up to orbit.
+  xColony starts you mining the Moon and ends each cycle on a new world. Gather
+  resources to feed a growing settlement, spend them on upgrades and research,
+  and then send cargo up to orbit.
 
 
   Two separate tech trees give the colony more than one direction to grow, so
   what you research shapes how quickly each cycle moves. Claude Code and
-  Three.js are behind this one, and it ended up 586th of 945 in Vibe Jam 2026.
+  Three.js are behind this one.
 
 
   When progress slows, you prestige and begin again somewhere new. That loop
   carries the colony from the Moon out to other worlds, with mining, launches,
-  and expansion all tied together in one 3D view.
+  and expansion all tied together.
 play:
   url: https://x-colony.vercel.app
   embeddable: true
@@ -52,7 +52,7 @@ media:
     - games/xcolony/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-09-29
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:vibejam-2026

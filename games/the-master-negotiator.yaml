@@ -2,16 +2,12 @@ slug: the-master-negotiator
 title: The Master Negotiator
 tagline: Haggle with AI characters who remember past deals, buying low and selling high.
 description: >-
-  A chunky retro CRT monitor frames everything, and one of its screens asks what
-  they should call you, taking a name or alias that shows up on your profile.
-
-
-  Another screen belongs to Victor Hale, an arrogant CEO in a monogrammed
-  hoodie, who hosts a demo-mode tutorial split into four chapters. It's
-  hands-on because it runs on the actual game interface, and Victor invites
+  You pick a name or alias that shows up on your profile. Victor Hale, an
+  arrogant CEO, hosts a demo-mode tutorial split into four chapters. The
+  tutorial is hands-on and runs on the actual game interface, and Victor invites
   you to click the action buttons, starting with "Show me the buy flow", while
-  he explains each one. A back button lets you retry a step, and if his
-  smugness wears thin there's a separate option to skip the tutorial.
+  he explains each one. You can retry a step, and if his smugness wears thin
+  there's a separate option to skip the tutorial.
 
 
   The game itself is haggling, where you buy low, sell high and talk your way
@@ -21,8 +17,7 @@ description: >-
 
 
   A voice mode lets you speak your side out loud during negotiations, while
-  multiplayer brings in PvP betrayal contracts, which fits a cast that holds
-  grudges.
+  multiplayer brings in PvP betrayal contracts.
 
 
   prathampunmiya built it to turn negotiation into a game, so people who find
@@ -64,7 +59,7 @@ media:
     - games/the-master-negotiator/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-10-02
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:vibejam-2026
