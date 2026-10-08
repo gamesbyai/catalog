@@ -2,21 +2,18 @@ slug: emojibeats
 title: EmojiBeats
 tagline: Guess pop song titles from emoji clues in a pixel-art arcade music quiz.
 description: >-
-  A string of emojis stands in for a pop song title, and your job is to work out
-  which song it is. The songs come from the pop music Lab_YmK grew up with.
+  Each puzzle is a string of emojis that stands in for a pop song title. Work
+  out which song it is.
 
 
-  Typos won't sink you either, because the game forgives small spelling mistakes
-  and your answer doesn't have to be typed perfectly.
+  Pop songs from the music Lab_YmK grew up with. Forgiveness for small spelling
+  mistakes. Free Practice mode, for playing puzzles casually with no pressure.
+  Speed Run and Combo Run leaderboards for competitive players, ranked by points
+  and by finishing time.
 
 
-  You can type your guess, but players who'd rather talk than type can switch on
-  voice mode and solve any puzzle by saying the answer out loud.
-
-
-  There's also a Free Practice mode for playing puzzles casually, with no
-  pressure. Competitive players can compare scores on leaderboards for Speed Run
-  and Combo Run. Both boards rank players by points and by finishing time.
+  Type your guess. If you'd rather talk than type, switch on voice mode and say
+  the answer out loud on any puzzle.
 play:
   url: https://emoji-beats.vercel.app
   embeddable: true

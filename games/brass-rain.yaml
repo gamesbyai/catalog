@@ -2,17 +2,16 @@ slug: brass-rain
 title: Brass Rain
 tagline: Run and shoot across a sun-baked desert, with a friend able to drop in.
 description: >-
-  You play a soldier pushing through a desert. Your standard ammo is unlimited,
-  and you start with 10 bombs.
+  Standard ammo is unlimited in this run-and-gun, where you control a soldier
+  pushing through a desert. You start with 10 bombs.
 
 
-  A friend can join at any moment by pressing Enter. Each of you racks up your
-  own points, but you share one HI score. This is a run-and-gun you can play
-  solo or with a friend.
+  A string of missions, the first set in the desert. Boss fights mixed in among
+  the missions. Separate point totals for each player. One shared HI score for
+  both players. Controller support.
 
 
-  You move through a string of missions that starts in this desert, with boss
-  fights in the mix. You can also play with a controller.
+  Play alone, or press Enter at any moment to let a friend join.
 play:
   url: https://tesana.com/play/44cfa8db-49e5-4ad1-89b1-7068aa55b70a
   embeddable: false

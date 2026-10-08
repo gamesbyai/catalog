@@ -2,26 +2,23 @@ slug: gun-ladder
 title: Gun Ladder
 tagline: Fight in a first-person arena and score the most kills in five minutes.
 description: >-
-  Rack up more kills than anyone else before the 5-minute clock runs out, and
-  the round is yours.
+  Rack up kills over a five-minute round, and whoever has the most when time
+  runs out wins. You drop into a first-person arena where every other player is
+  a target.
 
 
-  You drop into a first-person arena where every other player is a target.
+  Random weapon handed out on every spawn. Pistol, shotgun, SMG and assault
+  rifle, plus a sniper. Rocket launcher, rail gun, minigun and flamethrower.
+  Grenade launcher and katana. A roster of eleven weapons in total.
 
 
-  What you're holding comes down to luck, because each spawn hands you a random
-  weapon from a roster of 11. It runs from a pistol, shotgun, SMG and assault
-  rifle through a sniper, rocket launcher, rail gun, minigun, flamethrower and
-  grenade launcher. The roster also includes a katana.
+  Move with WASD. Jump with Space and slide with Shift. Aim with the mouse, fire
+  with the left mouse button and reload with R. Click inside the game to lock
+  the mouse for aiming, and press Esc to release it.
 
 
-  WASD moves you, Space jumps and Shift drops you into a slide. You aim with the
-  mouse, fire with the left button and reload with R. Clicking inside the game
-  locks the mouse for aiming, while Esc lets it go again.
-
-
-  merlinshabaj built the format out of fond childhood memories of shooters like
-  this one.
+  merlinshabaj built the format from fond childhood memories of shooters of this
+  kind.
 play:
   url: https://gun.doppelshift.de
   embeddable: true

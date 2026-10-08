@@ -2,18 +2,17 @@ slug: astroxite
 title: Astroxite
 tagline: Take jobs between alien settlements and build a life in a shared frontier.
 description: >-
-  Astroxite is played in a frontier wilderness shared with other players online,
-  with alien settlements scattered across it. You pick up jobs that run between
-  those settlements and build a reputation along the way, while making a life of
-  your own out in the wild.
+  Alien settlements are scattered across a frontier wilderness shared with other
+  players. You pick up jobs that run between those settlements while you make a
+  life of your own out in the wild.
 
 
-  A comms panel lets you switch between chat and the combat log.
+  Reputation built up along the way. Guest entry, without an account. Email
+  registration for sending chat messages. A comms panel for switching between
+  chat and the combat log.
 
 
-  You can jump in as a guest without signing up. Sending chat messages, though,
-  requires registering with an email. AndreBaltazar cited Silkroad Online and
-  similar MMOs as the inspiration.
+  AndreBaltazar cites Silkroad Online and similar MMOs as the inspiration.
 play:
   url: https://astroxite.com
   embeddable: true

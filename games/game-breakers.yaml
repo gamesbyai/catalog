@@ -2,20 +2,18 @@ slug: game-breakers
 title: Game Breakers
 tagline: Invent fighters and attacks, then watch them battle other players' creations.
 description: >-
-  You invent the fighters in Game Breakers, and an AI writes the code that makes
-  them work. For each creation it writes JavaScript covering the visuals,
-  attacks and behavior, that code runs on the game server, and the finished
-  fighter goes into battle against other players' creations.
+  Invent a fighter, and an AI writes the JavaScript for its visuals, attacks and
+  behavior. It is an auto-battler, and once your fighter exists you watch it
+  rather than steer it.
 
 
-  It is a multiplayer auto-battler for desktop and phone browsers, so once a
-  fighter exists you watch rather than steer. Creation is open-ended: how a
-  fighter looks and fights depends on what you asked for, and every opponent
-  grew out of someone else's idea.
+  Fighters that battle creations other players made. Opponents that each grew
+  out of someone else's idea. Open-ended creation, with looks and fights that
+  depend on your request. Generated code running directly in the simulation on
+  the game server.
 
 
-  The creator invites players to try to break the game, and the generated code
-  runs directly in the simulation.
+  Nevsved made the game and invites players to try to break it.
 play:
   url: https://gamebreakers.gg
   embeddable: true

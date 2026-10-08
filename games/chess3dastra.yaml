@@ -2,31 +2,25 @@ slug: chess3dastra
 title: Chess3dastra
 tagline: Play chess against a computer opponent on a 3D or 2D board.
 description: >-
-  You play white against a computer opponent set to Balanced, which looks two
-  moves ahead.
+  Alone against a computer opponent set to Balanced, you play white. The
+  computer looks two moves ahead.
 
 
-  You can click pieces to move them. If you'd rather type, enter moves in
-  algebraic notation like e4 or e2e4 and hit Play. Either way, the computer
-  answers after each of your moves.
+  Full chess rules, including castling, en passant, promotion and draws. Check
+  and checkmate spotted automatically. Three computer strengths, and a choice of
+  moving first or second in the next game. Undo, with a move history and
+  captures list. Saved games that survive a page reload. 3D board with a flat 2D
+  view as an alternative, plus light and dark themes. Negamax search with
+  alpha-beta pruning, run in a Web Worker so the page stays responsive while it
+  thinks.
 
 
-  None of the rules got trimmed. Castling, en passant, promotion and draws are
-  all in, and the game spots check and checkmate on its own.
+  Click a piece to move it. Type a move such as e4 or e2e4 and press Play. The
+  computer answers after each of your moves.
 
 
-  Three computer strengths are on offer, and you can choose whether you move
-  first or second in the next game. Undo takes moves back, and a move history
-  and captures list track the game, which is saved and survives a reload.
-
-
-  When the 3D board isn't what you want, you can switch to a flat 2D view, and
-  there are light and dark themes as well.
-
-
-  The opponent runs a negamax search with alpha-beta pruning inside a Web
-  Worker, so the page stays responsive while it thinks. Jorge Balderas had it
-  built in about 41 minutes from a handful of prompts.
+  Jorge Balderas had it built in about 41 minutes from a handful of prompts. The
+  first one asked for a 3D chess game to play against the computer.
 play:
   url: https://yortch.github.io/chess3dastra
   embeddable: true

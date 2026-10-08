@@ -3,26 +3,23 @@ title: Echo-9
 tagline: Deliver packages on foot through post-apocalyptic Hanoi using a desktop
   and a phone.
 description: >-
-  Bowls of phở need to get across Hanoi on foot in 2055, after the grid's gone
-  dark, and you're the courier carrying them. Thousands of scooters crowd the
-  streets, and you steer around them with WASD on your computer while you head
-  for each drop-off.
+  In 2055, Hanoi's grid has gone dark, and you're a courier carrying bowls of
+  phở across the city on foot.
 
 
-  It's built for two screens at once, and your phone ends up doing a large share
-  of the work.
+  Thousands of scooters to dodge. Your phone as a balance sensor, read by its
+  accelerometer. Two screens, the phone doing a large share of the work. A
+  mission briefing and buttons on the phone.
 
 
-  It also goes in your pocket as a balance sensor that you're supposed to keep
-  steady. The phone also reads its accelerometer.
+  Steer around the scooters with WASD on your computer while you head for each
+  drop-off. Scan the QR code or copy the session link to your phone. Pocket the
+  phone and keep it steady. A small link also lets you play without a phone at
+  all.
 
 
-  To pair the two, you scan the QR code or copy the session link over to your
-  phone, though a small link also lets you play without a phone at all.
-
-
-  tonnoz loved Another World (1991) as a kid and set out to recreate that game's
-  mood in 3D. They also added the phone as a second device, for novelty.
+  tonnoz loved Another World (1991) as a kid and set out to recreate its mood in
+  3D. They added the phone as a second device, for novelty.
 play:
   url: https://echo9.tonnoz.com
   embeddable: false

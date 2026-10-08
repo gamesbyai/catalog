@@ -2,25 +2,24 @@ slug: dogfight-run
 title: DogFight Run
 tagline: Fly a spaceship in fast multiplayer dogfights inspired by arena shooters.
 description: >-
-  DogFight Run puts you in a spaceship in online space combat. You enter a
-  callsign, pick a mode and a graphics quality, and press Launch. The mouse
-  steers the ship and aims at the same time, so flying and targeting share one
-  input.
+  DogFight Run puts you in a spaceship for online space combat. Enter a
+  callsign, pick a mode and a graphics quality (low, medium or high), and press
+  Launch.
 
 
-  Three weapons sit on number keys: an infinite-ammo laser, a splash-damage
-  rocket and a hitscan railgun. Click fires the selected weapon. Shift
-  accelerates and Space brakes, while A/D roll, Q/E yaw and W/S act as a pitch
-  override.
+  FFA, TDM, CTF and ONS modes. Laser with unlimited ammo. Rocket with splash
+  damage. Railgun that hits where you aim.
 
 
-  The launch screen offers four modes: FFA, TDM, CTF and ONS. Tab brings up the
-  scoreboard and Enter opens chat. C toggles the camera view, and F switches to
-  fullscreen. Quality can be set to low, medium or high before launch.
+  Steer and aim with the mouse, and click to fire the selected weapon. Press the
+  number keys to switch weapons. Use Shift to accelerate and Space to brake. Use
+  A and D to roll, Q and E to yaw, and W and S for pitch override. Press Tab for
+  the scoreboard, Enter to open chat, and C to toggle the camera view. Press F
+  to switch to fullscreen.
 
 
-  The creator describes it as Quake 3 in space with spaceships, a project wanted
-  for some time before it got built.
+  ElydanStudio had wanted to build this for some time before making it. They
+  describe it as Quake 3 in space with spaceships.
 play:
   url: https://dogfight.run
   embeddable: true
@@ -66,7 +65,7 @@ media:
     - games/dogfight-run/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-10-01
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:vibejam-2026

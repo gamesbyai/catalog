@@ -2,18 +2,16 @@ slug: bramblewick-farm
 title: Bramblewick Farm
 tagline: Name your farmer, start a farm in a pixel-art village, and craft new items.
 description: >-
-  You move your farmer with WASD or the arrow keys. Space or a click both use
-  your tools and let you talk. The number keys run from 1 across to the equals
-  sign, and the mouse wheel also switches tools.
+  You play a farmer in a village, then set up a new farm at its edge.
 
 
-  You'll name your farmer, pick a shirt, and settle on a hair color before
-  setting up a new farm at the edge of the village.
+  Your farmer's name, plus a shirt and hair color to pick. Bag on I, for keeping
+  track of whatever you carry. Crafting on C, for making new items. Journal on
+  J, checked as you go.
 
 
-  Pressing I opens your bag, which is where you keep track of whatever you're
-  carrying. C opens crafting, where you make new items, while J brings up the
-  journal you can check as you go. Each of the three gets its own key.
+  Move with WASD or the arrow keys. Press Space or click to use tools and talk.
+  Switch tools with the number keys, 1 through =, or the mouse wheel.
 play:
   url: https://tesana.com/play/7b22e5fb-ba94-4e33-abc9-0b482cb35a96
   embeddable: false

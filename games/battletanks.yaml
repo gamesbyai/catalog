@@ -2,37 +2,26 @@ slug: battletanks
 title: battletanks
 tagline: Fight other players' tanks in a 3D arena using cannons, missiles, and a laser.
 description: >-
-  The laser won't fire the moment you press the button, and that's the twist
-  that sets it apart from the other guns. You hold fire to build up a charge and
-  let go to shoot, and the damage grows with the charge.
+  The laser doesn't fire the moment you press the button. Hold fire to build up
+  a charge, then let go to shoot, and the damage grows with the charge. You
+  drive a tank against other players online in arena matches.
 
 
-  You drive a tank against other players online in arena matches. Your other two
-  options are a spray cannon and salvo missiles. It's a short list, and the
-  laser is the odd one out.
+  Salvo missiles and a spray cannon as the other weapons. Independent hull and
+  turret rotation. Colossus and Vampire, among the chassis on offer.
 
 
-  Hull and turret turn independently, so steering points the chassis while Z and
-  X swing the gun left or right, a quick tap nudges it a bit, and C snaps it
-  back to face forward.
+  Steer to turn the chassis. Press Z or X to swing the turret left or right, and
+  tap either briefly to nudge it. Press C to snap the turret back forward. Press
+  Tab to swap chassis, turret, mobility and colors mid-match, without leaving
+  the game. Touch screens have their own full layout: a joystick drives and
+  turns, a knob aims the turret, and the fire button shoots, the laser included.
+  Press H at any time for a full controls reference.
 
 
-  Touch screens get a full control layout of their own. A joystick drives and
-  turns the tank, a knob sets the turret's angle, and a fire button handles
-  shooting, including the hold-and-release laser.
-
-
-  Tab lets you swap chassis, turret, mobility and colors mid-match without
-  leaving the game.
-
-
-  Colossus and Vampire are among the chassis on offer. Press H at any time to
-  bring up a full controls reference, and Esc opens settings where you can remap
-  keys.
-
-
-  MarcosBren31124 took the idea from Tanki Online, a browser game built around
-  tank battles with futuristic turret weapons such as lasers and plasma cannons.
+  MarcosBren31124 drew the idea from Tanki Online, a browser-based multiplayer
+  game with tank battles and futuristic turret weapons such as lasers and plasma
+  cannons.
 play:
   url: https://battletanks.marcosbrendon.com
   embeddable: false

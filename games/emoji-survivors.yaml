@@ -2,30 +2,25 @@ slug: emoji-survivors
 title: Emoji Survivors
 tagline: Fight endless waves of emoji monsters as a mage and stack chaotic upgrades.
 description: >-
-  Emoji Survivors sends wave after wave of emoji monsters at you, with no end in
-  sight, and hands you a mage to fight them off. As the run goes on, you grab
-  chaotic upgrades that grow your caster's build into something new. The goal,
-  put bluntly, is to clear out the horde with your spells before the horde
-  clears you out.
+  Emoji Survivors puts a mage against endless waves of emoji monsters. Chaotic
+  upgrades grow your caster's build mid-run. Clear the horde with your spells
+  before it clears you.
 
 
-  Start by picking your caster, and each mage comes with three skills.
+  The Wind Mage, a caster whose skills push monsters around. Gale Ring, a
+  knockback burst around you. Crosswind Strip, a moving wind lane for shredding
+  packs. Tempest Mode, a storm core for chaining displacement. 22 trials,
+  including one to last 5 minutes within a run and one to hit level 10 within a
+  run. 6 achievements.
 
 
-  The Wind Mage comes first, and the whole kit seems built around shoving
-  monsters where they don't want to go. Gale Ring is a knockback burst right
-  around you, Crosswind Strip sends a moving lane of wind through packs to shred
-  them, and Tempest Mode drops a storm core that keeps chaining displacement.
+  Pick a caster before you start. Each caster has three skills.
 
 
-  The game also has 22 trials and 6 achievements to complete. Two of the trials
-  ask you to last 5 minutes within one run and to hit level 10 within one run.
-
-
-  swisnotjan made it after long wanting to try making games and finish a whole
-  project from nothing. According to swisnotjan, game development is the most
-  exciting kind of art, and AI is what finally made it possible for swisnotjan
-  to pull it off.
+  swisnotjan had long wanted to try game development and finish a whole project
+  from nothing. According to swisnotjan, game development is the most exciting
+  kind of art, and AI is what finally made it possible for swisnotjan to pull it
+  off.
 play:
   url: https://emoji-survivors.fun
   embeddable: true

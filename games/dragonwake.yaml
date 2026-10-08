@@ -2,23 +2,23 @@ slug: dragonwake
 title: Dragonwake
 tagline: Explore dungeons in a text-character roguelike built for long replay value.
 description: >-
-  Bandages stop bleeding and bind fresh wounds. You start by picking a race and
-  pairing it with a class.
+  This ASCII roguelike has a campaign on an open-world map, where you travel
+  between towns, ruins, towers, dungeons and blackglass sites.
 
 
-  Races include Human, Dwarf, Elf, Half-Elf, Halfling, Gnome and Half-Orc, and
-  classes include Fighter. Every action is a turn: you move one step, attack,
-  rest or interact, and then nearby enemies act. Movement is 8-way on the
-  numpad, and Enter interacts or confirms.
+  Races including Human, Dwarf, Elf, Half-Elf, Halfling, Gnome and Half-Orc.
+  Classes, with Fighter among them. Bandages that stop bleeding and bind fresh
+  wounds.
 
 
-  The campaign is played on an open-world map where you travel between towns,
-  ruins, towers, dungeons and blackglass sites. This browser version is a demo,
-  and a Steam page links to the native release.
+  Pick a race, then pair it with a class. On each turn, move one step, attack,
+  rest or interact. Nearby enemies act after you. Use the numpad to move in
+  eight directions, and press Enter to interact or confirm.
 
 
-  The creator set out to get long, complex replayability from AI-assisted
-  coding, as a fan of ASCII roguelikes.
+  kalin_t set out to get long, complex replayability from AI-assisted coding, as
+  a fan of ASCII roguelikes. The browser version is a demo, and a Steam page
+  links to the native release.
 play:
   url: https://kalineh.github.io/dragonwake-pages
   embeddable: true

@@ -2,16 +2,16 @@ slug: gloamreach
 title: Gloamreach
 tagline: Carry a lantern's last ember down through a dark kingdom under the ground.
 description: >-
-  Move with the arrow keys. Space is the one you press when it's time to choose.
+  You play the Wick, a wanderer in a dark-fantasy side-scrolling
+  action-adventure. The descent takes you under the ground, into a
+  long-forgotten kingdom.
 
 
-  It's a side-scrolling dark-fantasy action-adventure with puzzle solving mixed
-  in.
+  A lantern on the Wick's back, holding the last living ember. The Great
+  Lantern, no longer lit. Puzzle solving mixed into the action.
 
 
-  You play as the Wick, a wanderer who carries the last living ember in a
-  lantern on its back. The descent takes you into a long-forgotten kingdom under
-  the ground, where the Great Lantern no longer burns.
+  Move with the arrow keys. Press Space when it's time to choose.
 play:
   url: https://tesana.com/play/e51ceb4f-cc6a-47be-99f4-15fca5a6ce47
   embeddable: false

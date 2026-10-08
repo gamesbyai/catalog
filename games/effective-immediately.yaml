@@ -2,23 +2,19 @@ slug: effective-immediately
 title: Effective Immediately
 tagline: Shoot your way out of a collapsing office nightmare as a burned-out worker.
 description: >-
-  You're a burned-out office worker with a stapler for a gun, and you have to
-  fight your way out of a workplace that's falling apart before the company
-  swallows you whole.
+  You're a burned-out office worker with a stapler for a gun. Fight your way out
+  of a workplace falling apart before the company can swallow you entirely. You
+  start with 30 staples loaded and 100 health.
 
 
-  You start with 30 staples loaded and 100 health. Your one objective is to find
-  a way out.
-
-
-  The things standing in your way are 2D animated characters. Desks, furniture
-  and other props can all be smashed.
+  Desks, furniture and other props that can be smashed. 2D animated characters
+  in your way. The single objective of finding a way out.
 
 
   Lucas Teixeira set out to make a quick, violent and surreal shooter about
-  losing your mind inside a controlling workplace. Turning office supplies into
-  ammo fits that brief neatly, and they pointed to older browser FPS games as
-  the energy they were after.
+  losing your mind inside a controlling workplace. Office supplies as ammo fit
+  that brief, and they pointed to older browser FPS games as the energy they
+  were after.
 play:
   url: https://vibejam2026.vercel.app
   embeddable: true

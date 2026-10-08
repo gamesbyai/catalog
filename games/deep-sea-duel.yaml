@@ -4,21 +4,19 @@ tagline: Pilot a shrimp or axolotl in real-time underwater duels against another
 description: >-
   Each rider starts with 100 HP, and the last one still swimming wins. You pilot
   a shrimp or an axolotl, each carrying a diver, and shoot your opponent
-  underwater in a real-time online match with quickmatch. Two players can also
-  share one keyboard in the 2 Player mode.
+  underwater. Quickmatch starts a real-time online match against another player.
 
 
-  Catching sea creatures grants power-ups. The power-ups are +25 HP, poison, +1
-  stream, invisibility for 10 seconds, a 3 second spin, and a spread shot.
+  Shared-keyboard play for two people in the 2 Player mode. Power-ups from
+  catching sea creatures, including +25 HP, poison, +1 stream, invisibility for
+  10 seconds, a 3 second spin, and a spread shot. Solo mode, with trash in place
+  of the opponent. 3 waves of floating garbage to survive, then the Trash Titan.
+  Green radioactive trash to avoid.
 
 
-  The solo mode replaces the opponent with trash. You survive 3 waves of
-  floating garbage, then face the Trash Titan. Avoid the green radioactive
-  trash.
-
-
-  The creator wanted a two-player game to play against friends and siblings,
-  after years of searching for one with a sister.
+  camryn_alvares wanted a two-player game to play against friends and siblings,
+  after years of searching for one with a sister. "I hope this game can reach
+  other kids and their siblings/friends," camryn_alvares writes.
 play:
   url: https://deepseaduel.life
   embeddable: true

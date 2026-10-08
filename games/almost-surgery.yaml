@@ -2,18 +2,18 @@ slug: almost-surgery
 title: Almost Surgery
 tagline: Perform shady operations on patients with saws and shocks to earn money.
 description: >-
-  You're put to work as an unlicensed surgeon, and the goal is money. Patients
-  arrive, you operate on them with a saw, a blade or an electric shock, and you
-  collect cash for each result. The operations are shady by design.
+  Playing solo, you work as an unlicensed surgeon, and the goal is money.
+  Patients arrive, and you operate on them in a simulation about horror-tinged
+  surgery, played as a paperwork-style job game.
 
 
-  It was made in the Godot engine with Codex as the AI coding tool.
+  Operations done with a saw, a blade or an electric shock. Payment for each
+  result of an operation. Shady operations, by design. A grim and absurd tone,
+  kept on purpose.
 
 
-  The creator, RagimMusakaev, names Papers, Please and the developer Mike
-  Klubnika as inspirations. The result sits between simulation and horror: a
-  paperwork-style job game about horror-tinged surgery, with a tone that stays
-  grim and absurd on purpose.
+  RagimMusakaev names Papers, Please and developer Mike Klubnika as
+  inspirations.
 play:
   url: https://almostsurgery.ragim.dev
   embeddable: true

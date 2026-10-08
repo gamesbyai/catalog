@@ -2,20 +2,17 @@ slug: anomaly-arcade
 title: ANOMALY ARCADE
 tagline: Shoot every asteroid as your run keeps shifting between classic arcade genres.
 description: >-
-  ANOMALY ARCADE gives you one job for the whole run: destroy every last
-  asteroid. The game around that job refuses to stay in one form, and as the run
-  goes on the rules change and the action moves through classic arcade styles
-  such as racers, maze chases and shooters.
+  Within one run, the game keeps mutating and moves between classic arcade
+  genres. Throughout, your one objective stays the same: destroy every last
+  asteroid.
 
 
-  The creator says it grew out of a love for straightforward arcade games and a
-  wish to update them with a modern twist. It was put together in Lovable, is
-  played solo, and finished 152nd of 945 at Vibe Jam 2026.
+  Asteroids-style play. Racers, maze chases and shooters. New rules to adapt to
+  with each shift.
 
 
-  The asteroid objective is the fixed point. Everything else keeps mutating, so
-  each shift makes you adapt to new rules while chasing the same goal, in a game
-  that treats the arcade tradition as a collapsing universe.
+  clarke_pete1971 says the game grew out of a fondness for uncluttered arcade
+  games and a wish to give them a contemporary spin.
 play:
   url: https://anomalyarcade.com
   embeddable: true
@@ -48,7 +45,7 @@ media:
     - games/anomaly-arcade/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-09-29
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:vibejam-2026

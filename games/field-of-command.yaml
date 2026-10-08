@@ -4,22 +4,14 @@ tagline: Command British or German forces in a real-time battle across 1940 Kent
 description: >-
   You command a British infantry section from the BEF Infantry Command, holding
   the fields of Kent in 1940s England in a real-time strategy game. Your squad
-  starts out on a field in Kent.
+  starts out on a field in Kent, and your opponent is an AI side called
+  Blitzkrieg Infantry, across the map from you. The game is still in its early
+  days, and the build is labeled v0.2.7 prototype.
 
 
-  Your opponent is an AI side called Blitzkrieg Infantry, across the map from
-  you.
-
-
-  Defending isn't your only option. You can also flip to the German side and
-  lead the assault instead of holding it back, in an alternate history built
-  around an invasion that never actually happened.
-
-
-  You can run the game at 1x, 2x or 4x speed, and there's a delegate button too.
-
-
-  It's still early days for this one, with the build labeled v0.2.7 prototype.
+  Switching to the German side, to lead the assault instead of holding it back.
+  An alternate history around an invasion that never happened. Game speeds of
+  1x, 2x and 4x. A delegate button.
 play:
   url: https://play.fieldofcommand.com
   embeddable: false

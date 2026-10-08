@@ -1,22 +1,26 @@
 slug: chromadoku
 title: Chromadoku
 tagline: Fill a 9x9 Sudoku grid with colors instead of numbers.
-description: "A puzzle's done when the 9×9 grid is full and no row, column or 3×3 box holds the same color twice. It's straight Sudoku, just with hues standing in for the digits. You pick a color from the strip under the board, then tap the square where it belongs.
+description: "Fill the 9×9 grid so that no row, column or 3×3 box holds the same
+  color twice. It's Sudoku with hues standing in for the digits.
 
 
-  There are Easy, Medium and Hard puzzles, along with undo, redo, a clear button and a hint when you're stuck. Finishing one throws a bit of a party, with a shower of confetti and a congratulations card showing your time.
+  Easy, Medium and Hard puzzles. Undo, redo, clear, and a hint when you're
+  stuck. Number badges, 1 to 9 on each color, for shades that blur together or
+  for color-blind players. Mistake warning for squares that disagree with the
+  solution. Solve counts per difficulty, plus best times for puzzles solved
+  without a hint. A confetti burst and congratulations card showing your time.
+  Your progress and settings, kept only in your own browser.
 
 
-  There's a lot more in settings than you'd expect from one small puzzle. Number badges put a 1 to 9 on every color, meant for when two shades blur together or for color-blind players. You can also switch between Default, Neon and Candy palettes and choose a light, dark or system theme.
+  Pick a color from the strip under the board, then tap a square to place it. If
+  the mistake warning flashes a square, your move stays put. Set the theme to
+  light, dark or system in settings.
 
 
-  A mistake warning can flash any square the solution disagrees with, though your move stays put.
-
-
-  Statistics count your solves on each difficulty. Best times only include puzzles finished without a hint, which keeps those records honest. Everything you've done and every setting you've picked stays in your own browser.
-
-
-  According to the creator, the first version was written with GPT-3 and then revised with Claude Sonnet 5 for the interface. It all lives in a single HTML file, released into the public domain under CC0."
+  According to the creator, an early version was written by one AI model and
+  then revised with a second one for the interface. Kevin MacLeod released the
+  whole game as one self-contained HTML file into the public domain under CC0."
 play:
   url: https://danger.academy/chromadoku/
   platforms:
@@ -45,7 +49,8 @@ made:
   aiShare: all
   source: "Creator's submission (issue #88)"
   evidence: creator
-  notes: The first version was written with GPT-3, then revised with Claude Sonnet 5 for UI.  It's one self-contained HTML file. CC0.
+  notes: The first version was written with GPT-3, then revised with Claude Sonnet
+    5 for UI.  It's one self-contained HTML file. CC0.
 tech:
   multiplayer: single
 genres:
@@ -58,7 +63,7 @@ media:
     - games/chromadoku/shot-2
 dates:
   added: 2026-10-03
-  updated: 2026-10-03
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: form

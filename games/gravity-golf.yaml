@@ -2,25 +2,21 @@ slug: gravity-golf
 title: Gravity Golf
 tagline: Guide a golf ball through solar systems using orbital pull
 description: >-
-  Gravity Golf has you drag back and let go to send the ball out, then watch
-  everything nearby tug at it.
+  Gravity Golf has you shoot a golf ball through solar systems, where gravity is
+  the puzzle.
 
 
-  Because of that pull, the ball's path bends as it slips past each one. The
-  pull shows up right on the playfield, so you can see it before you shoot.
+  160 levels in total. Open Lane, the first level, with a sun and a planet with
+  a small moon. Nearby objects whose pull bends the ball's path. Gravity's pull
+  shown on the playfield before each shot.
 
 
-  Open Lane, the first level, starts you off with a sun in the middle of the
-  field. There's also a planet with a small moon tucked against it. The game has
-  160 levels in total.
+  Drag back, then let go to shoot the ball. Press R to retry and Z to undo a bad
+  shot.
 
 
-  Retry and Undo, on the R and Z keys, take back a bad shot.
-
-
-  RichardGerum says the idea came from playing Outer Wilds and wanting to
-  explore orbital mechanics further. Levels take the ball through different
-  solar systems, and gravity itself is the puzzle.
+  According to RichardGerum, the idea came from playing Outer Wilds and wanting
+  to explore orbital mechanics further.
 play:
   url: https://gravity-golf-olive.vercel.app
   embeddable: true

@@ -2,24 +2,24 @@ slug: charge-the-coil
 title: Charge The Coil
 tagline: Tap at the right moment to wind a glowing charge around a copper coil.
 description: >-
-  You play with a single input. A charge leaves the center of the coil, spirals
-  outward, and picks up speed. Your job is to let go as it reaches the contact
-  port, which adds one more turn of winding to the coil.
+  You time one-button releases to fill a coil with charge. Each charge starts at
+  the center and spirals outward, and a release at the contact port adds one
+  more turn of winding.
 
 
-  Letting go too soon severs the connection. Holding on too long sends the
-  charge into a tail that overloads the whole coil. Perfect releases make the
-  charge grow faster and build a chain.
+  Charges that keep gaining speed. Perfect releases that make the charge grow
+  faster and build a chain. A tail that overloads the whole coil when you hold
+  on too long. Severed connections from letting go too soon. Banking a full coil
+  for a scored discharge bonus. Quicker follow-up charges and a narrower timing
+  window after scoring. Your best score, saved as you play.
 
 
-  Filling the entire coil banks it and pays out a scored discharge bonus.
-  Scoring makes each following charge quicker and the timing window narrower.
-  The best score is saved.
+  Tap, click, Space, or Enter to release the charge. The browser may hold audio
+  until your first input, and each winding, lock, plasma burst and failure plays
+  its own sound.
 
 
-  Every new winding, lock, plasma burst and failure plays its own sound. The
-  browser may hold audio until your first input. The concept came from Thomas
-  Geelens, and the code was built with AI help.
+  Thomas Geelens originated the concept, and AI helped build the code.
 play:
   url: https://lifthillstudio.itch.io/charge-the-coil
   embeddable: false

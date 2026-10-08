@@ -3,45 +3,36 @@ title: Charge! AutoBattler
 tagline: Draft units from a shop, set their deployment, and watch the armies
   fight on their own.
 description: >-
-  In this cavalry auto battler, you draft an army from a pool of 30 different
-  units, decide where each one deploys, and then watch the battle play out
-  without you.
+  Assemble a cavalry army in this auto battler, then watch it fight without you.
 
 
-  Each unit has a weapon, armor, mount, formation and grade, along with stats
-  like morale, mass and agility. The Silver Lancers ride a unicorn of mythic
-  grade, and their ability forces nearby melee allies to charge.
+  30 different units, each with a weapon, armor, mount, formation, grade and
+  stats like morale, mass and agility. Silver Lancers riding a mythic-grade
+  unicorn, whose ability forces nearby melee allies to charge. Shop between
+  fights, rarer units turning up more often the further you get. Bonuses for
+  armies whose units share culture and weapon traits. Optional challenge
+  battles, with 25% more enemy budget for 4 extra gold in the next shop and a
+  challenge counter if you win.
 
 
-  When the fighting starts, units choose their own targets and use their
-  abilities as soon as they're off cooldown. Melee troops advance and then
-  charge once enemies come within range. Ranged troops shoot at whatever's in
-  reach and try to kite away, but when their ammo runs out they charge in too.
-
-
-  A unit that's low on morale retreats, and one with none left breaks into a
-  full rout.
-
-
-  Between fights you're back in the shop, where rarer units turn up more often
-  the further you get. Armies whose units share culture and weapon traits earn
-  bonuses for it. You also collect interest that grows with the lives you've
-  lost.
-
-
-  You can also choose to challenge a battle, which gives the enemy 25% more
-  budget in exchange for 4 extra gold in the next shop and a challenge counter
-  if you win.
+  Set each unit's deployment before the fight. Units pick their own targets and
+  use abilities as soon as they're off cooldown. Melee troops advance and charge
+  once enemies come within range. Ranged troops shoot what's in reach and try to
+  kite away, charging in too once their ammo runs out. A unit low on morale
+  retreats, and one with none left breaks into a full rout. You also collect
+  interest that grows with the lives you've lost.
 
 
   ID107 built it in TypeScript, with Claude writing the code, Suno making the
-  music and Civitai producing the pictures. According to ID107, items and
-  formations got cut before the deadline. The soundtrack doesn't loop.
+  music and Civitai producing the pictures. The soundtrack doesn't loop.
+  According to ID107, items and formations got cut before the deadline.
 play:
   url: https://id107.itch.io/charge-autobattler
   embeddable: false
   platforms:
     - browser
+  controls:
+    - "Mouse: draft units and set deployment"
 creator:
   name: ID107
   handle: id107

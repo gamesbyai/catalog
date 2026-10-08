@@ -2,24 +2,18 @@ slug: doodle-battle
 title: Doodle Battle
 tagline: Sketch a picture, let AI name it, then watch it fight your opponent's drawing.
 description: >-
-  Quick Play throws you into a game automatically, while Create Room sets one up
-  that you can invite friends into. Join Room takes a room code, or if you'd
-  rather, you can browse the open rooms instead.
+  Every match starts with a sketch. An AI guesses your scribble first, then your
+  opponent's drawing.
 
 
-  Every match starts with a sketch, and it's an AI that has to work out what
-  your scribble's meant to be before it goes up against the drawing your
-  opponent made.
+  Several rounds in every match. Rooms for several players, private or public. A
+  room creator who sets the player cap, the round limit and the drawing time.
 
 
-  Matches play out over several rounds, and a room can hold several players at
-  once. Whoever creates a room picks the maximum number of players and a round
-  limit, and they'll also choose how long everyone gets to draw and whether the
-  room's private or public. Unless they change anything, the setup screen starts
-  at 4 players, 5 rounds and a 60-second drawing timer.
-
-
-  The room creator can nudge the drawing time up or down with a slider.
+  Pick Quick Play for an automatic match, or Create Room to set up one to invite
+  friends. Enter a room code or browse open rooms. Unless the room creator
+  changes anything, setup starts at 4 players, 5 rounds and a 60-second drawing
+  timer.
 play:
   url: https://doodlebattle.online
   embeddable: true

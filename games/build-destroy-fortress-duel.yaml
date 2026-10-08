@@ -2,27 +2,22 @@ slug: build-destroy-fortress-duel
 title: Build & Destroy - Fortress Duel
 tagline: Build a fragile fortress, then smash it apart in a physics sandbox.
 description: >-
-  The ammo you get against a rival fortress is unlocked by the choices its
-  builder made, tying the two halves of this physics sandbox together.
+  Ammo against a rival fortress is unlocked by its builder's choices. In this
+  physics sandbox, you stack stone, wood and glass around a flag, then attack
+  rivals.
 
 
-  Building comes first, in Builder Mode. You stack stone, wood and glass around
-  a flag, and you've only got 30 points to spend on the whole structure. The
-  goal is a fortress that keeps that flag safe.
+  Builder Mode. A 30-point budget for the whole structure. Keeping the flag safe
+  as the goal. Destroyer Mode, with a siege launcher. Leaderboard rankings of
+  the best defenses and cleanest captures.
 
 
-  Then you switch sides in Destroyer Mode and go after rival fortresses with a
-  siege launcher. You pick your ammo, line up the shot and fire, and the aim is
-  to capture the flag.
+  Switch sides, pick your ammo, aim and fire to capture the flag.
 
 
-  A leaderboard covers both jobs by ranking the best defenses next to the
-  cleanest captures.
-
-
-  domenicodd wanted to let players make their own levels in a physics sandbox,
-  an idea that came after years of playing Angry Birds-style games. They'd
-  carried the idea for a decade before it became this game.
+  domenicodd wanted players to make their own levels, an idea from years of
+  playing Angry Birds-style games that they carried for a decade before it
+  became this game.
 play:
   url: https://launchingdock.com
   embeddable: true

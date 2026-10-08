@@ -2,26 +2,19 @@ slug: forest-escape
 title: Forest Escape
 tagline: Find seven blue flowers in a dark forest while spirits chase you.
 description: >-
-  You hunt for seven blue flowers in a forest full of spirits. You win by
-  picking up all seven without a spirit catching you.
+  A forest full of spirits is where you hunt for seven blue flowers. You win by
+  picking up all seven without a spirit catching you. It also goes by Floral
+  Escape: Ghost Forest, and app versions are on the App Store and on Google
+  Play.
 
 
-  Your flashlight is the whole problem, because the flowers only show up while
-  it's on. Switch it off and the spirits can't see you, but you also lose sight
-  of what you came for.
+  Flowers visible only with the flashlight on. Spirits blind to you with the
+  flashlight off. A flashlight charge, with an empty battery ending the game.
 
 
-  The flashlight runs on a charge, though, and the game ends if the battery
-  drains to nothing.
-
-
-  You move with WASD, ZQSD or the arrow keys and look around with the mouse,
-  while F or Space flicks the flashlight on and off. ZQSD works alongside WASD,
-  which suits AZERTY keyboards.
-
-
-  The game also goes by Floral Escape: Ghost Forest. App versions are also
-  available on the App Store and Google Play.
+  Move with WASD, ZQSD or the arrow keys. Look around with the mouse. Press F or
+  Space to switch the flashlight on and off. Use ZQSD with WASD on AZERTY
+  keyboards.
 play:
   url: https://escape.alexandre-grisey.fr
   embeddable: true

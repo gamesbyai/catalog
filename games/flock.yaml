@@ -2,26 +2,23 @@ slug: flock
 title: FLOCK
 tagline: Grow, dash and shoot your way to the top of a neon arena.
 description: >-
-  You control one of these swarms. You move your swarm around, aim a reticle,
-  hold down fire and dash away when a rival gets too close.
+  Against seven computer-controlled swarms, you control one swarm in a
+  free-for-all. You move, aim a reticle and dash away when a rival gets too
+  close.
 
 
-  Every match is a free-for-all against seven computer-controlled swarms, and
-  their names are upfront about how they'll fight, with three Hunters, a
-  Berserker, two Snipers and a Farmer. The first fighter to reach 10 kills wins.
+  Three Hunters, a Berserker, two Snipers and a Farmer as rivals, with names
+  that show how they fight. First-to-10-kills finish for each match. Dash and
+  shotgun, each on a five-segment charge. Complete gamepad layout alongside
+  keyboard and mouse, each action on its own stick, trigger or button.
 
 
-  Dashing and the shotgun each run on charges, and each one has five segments.
-  The shotgun is a secondary attack on right-click, while your regular fire
-  stays on the held left button. Tab opens the full score table.
+  Hold left click to fire. Right-click for the shotgun, a secondary attack.
+  Press Tab to open the full score table.
 
 
-  Escape or P pauses, and there's a complete gamepad layout alongside keyboard
-  and mouse, with every action given its own stick, trigger or button.
-
-
-  jongstra names Minishoot' Adventures and Overwatch as inspirations. Some
-  earlier test games made on Scratch are on that list too.
+  jongstra names Minishoot' Adventures and Overwatch as inspirations, plus some
+  earlier Scratch test games.
 play:
   url: https://flock.mindmatter.nl
   embeddable: true

@@ -3,27 +3,22 @@ title: floom
 tagline: Drift through a shared canvas, plant seeds, and grow flowers alongside
   strangers.
 description: >-
-  Press play and you're dropped into a shared field. You show up with a
-  generated name, something like Swift Camellia, and other players turn up in
-  that same space.
+  Press play to join other players in a shared meadow. It presents itself as a
+  place where strangers meet by chance and leave flowers, sound and brief
+  connections.
 
 
-  It pitches itself as a place where strangers run into each other by chance and
-  leave flowers, sound and brief connections behind.
+  A generated name, something like Swift Camellia. 49 flowers in all. Timed
+  meadow resets. Mementos, snapshots stamped with date and time. Sharing the
+  meadow, or a snapshot.
 
 
-  The meadow holds 49 flowers in all, and it resets on a timer.
+  Press spacebar to open a memento, then download it. Since the meadow resets
+  anyway, you can save a picture of it.
 
 
-  Pressing spacebar opens a memento, a snapshot of the field with the date and
-  time stamped on it. You can download the memento. Since the meadow resets
-  anyway, you can save a picture of it. You can share the meadow or take a
-  snapshot of it.
-
-
-  jeremiespoken started from the effect people have on the world around them. It
-  also works the other way, with the space around people affecting them in
-  return.
+  jeremiespoken started with the impact people have on their surroundings. The
+  effect also runs the other way, with space around people affecting them.
 play:
   url: https://floom-game.vercel.app
   embeddable: true

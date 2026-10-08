@@ -2,27 +2,17 @@ slug: eurotune
 title: eurotune
 tagline: Answer Eurovision questions in a quick quiz built for phones and browsers.
 description: >-
-  Each game uses five Eurovision songs, and you choose from three difficulty
-  levels, Easy, Regular or Expert. Easy narrows the pool to the top five
-  grand-final finishers from each year. Any entry that missed the top five in
-  its year's grand final is left out.
+  Each game is a quiz on five Eurovision songs, and you answer questions about
+  each one.
 
 
-  Every one of the five rounds kicks off with a clip of a song. Then you've got
-  four questions about it, covering the country that sent it, the exact year it
-  was in the contest, the artist singing it and the song's title.
+  Three difficulty levels, Easy, Regular and Expert. Easy pool limited to each
+  year's top five grand-final finishers. Twenty answers in a full game.
 
 
-  The order never changes, with the country always first and the title saved for
-  the end.
-
-
-  The year question wants the exact one, not a rough era. You pick the artist
-  after that, and you close the round by choosing the title. Only then does the
-  game reveal the answers.
-
-
-  A full game asks four questions on each of five clips, twenty answers in all.
+  Start each round with the clip. Answer the country, the exact year, the artist
+  and the title, in that order. Name the year itself, not a rough era. The game
+  reveals the answers only after you pick the title.
 play:
   url: https://eurotune.net
   embeddable: true

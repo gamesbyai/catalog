@@ -2,19 +2,21 @@ slug: ai-space-agency
 title: AI Space Agency
 tagline: Build and launch an AI data center into orbit in a space-agency simulation.
 description: >-
-  The main button has two jobs. It stages your rocket, and once you've reached
-  the second stage it turns into a fairing button instead. A throttle slider
-  controls your engine's thrust. SAS and RCS are toggles you can switch on and
-  off.
+  Build your own AI data center in space, with a rocket you fly.
 
 
-  There's also an auto row where you can switch between off, up and orbit. Reset
-  puts you back at the start of the flight.
+  Rocket stages, with a fairing button that takes over at the second stage.
+  Engine thrust, set on a throttle slider. SAS and RCS toggles. Off, up and
+  orbit auto modes.
 
 
-  dom_scholz describes it as Kerbal Space Program, except what you're building
-  up there is your own AI data center, and slips in a specific joke about Cursor
-  making a deal with SpaceX.
+  Use the main button to stage your rocket. Press Reset to go back to the start
+  of the flight.
+
+
+  dom_scholz describes it as Kerbal Space Program, except for what you build up
+  there. The creator also slips in a joke about Cursor making a deal with
+  SpaceX.
 play:
   url: https://aispaceagency.com
   embeddable: true

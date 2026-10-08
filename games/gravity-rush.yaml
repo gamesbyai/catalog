@@ -3,18 +3,17 @@ title: Gravity Rush
 tagline: Flip gravity to run, jump, and collect crystals through endless
   generated levels.
 description: >-
-  One button flips gravity. You steer the cube left and right along the
-  platforms, and pressing the flip key switches which way is down. Yellow
-  crystals are what you collect, and pink pyramids are hazards to dodge.
+  One button flips gravity, and each press switches which way is down. You guide
+  a cube across platforms, collecting yellow crystals and avoiding pink
+  pyramids.
 
 
-  Each level asks you to collect every crystal and dodge the hazards. Level 1
-  asks you to collect 5 crystals.
+  Collecting every crystal in each level, five of them on Level 1. Procedurally
+  generated levels that continue without a stated end, and hazards that escalate
+  as you advance. Movement along a side-view line.
 
 
-  Levels are procedurally generated and continue without a stated end, with
-  hazards that escalate as you advance. The creator cites VVVVVV and
-  momentum-based platformers as inspiration. Movement stays on a side-view line.
+  TheMananJain cites VVVVVV and momentum-based platformers as inspiration.
 play:
   url: https://gravity-heist.vercel.app
   embeddable: true

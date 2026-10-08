@@ -3,18 +3,18 @@ title: APU
 tagline: Climb a voxel Andean mountain, surviving cold, wind, and cliffs to
   reach the summit.
 description: >-
-  You start in a mountain town in the Andes and climb toward the summit. The
-  climb is a voxel survival game where cold, strong wind and sheer cliffs stand
-  between you and the top, and the goal is to get there alive.
+  APU has you leave a warm Andean town and climb a voxel mountain toward its
+  summit. The climb itself is a voxel survival game.
 
 
-  The creator brought three interests together here: game development, mountain
-  climbing and Peruvian roots. It was made with Codex as an experiment in vibe
-  coding. The setting draws on Peruvian mountain mythology.
+  Cold, strong wind and sheer cliffs as the obstacles on the way up. Managing
+  conditions and picking a safe way up on each stretch. A setting drawn from
+  Peruvian mountain mythology. Reaching the summit alive as the goal.
 
 
-  Each stretch of the ascent is about managing the conditions and picking a safe
-  way up.
+  asalinasmark combined three interests in this game: game development, mountain
+  climbing and Peruvian roots. The game was made as an experiment in vibe
+  coding.
 play:
   url: https://apu-1ts.pages.dev
   embeddable: true

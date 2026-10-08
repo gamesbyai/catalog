@@ -3,20 +3,17 @@ title: AniKombat
 tagline: Fight in 3D duels against the CPU or other players, casually or on a
   ranked ladder.
 description: >-
-  AniKombat is a one-on-one 3D fighting game in the Mortal Kombat mold. There
-  are three ways to play: jump in right away as a guest against CPU opponents,
-  take on other people in casual online matches, or climb the ranked ladder.
+  Fight one-on-one in 3D in the Mortal Kombat mold. There are three ways to
+  play, and you can jump in right away as a guest against CPU opponents.
 
 
-  The creator says the project comes from a long-standing love of fighting games
-  and their combos, matchups and competitive feel. Cursor and Three.js are the
-  tools behind it, it runs on phones as well as desktops, and it finished 226th
-  of 945 at Vibe Jam 2026.
+  Casual online matches against other people, with the stakes kept low. A ranked
+  ladder for players who want competitive tension. Combos, special moves and
+  character matchups, against the CPU or another person.
 
 
-  Each bout is a duel built around combos, special moves and character matchups,
-  whether the opponent is the CPU or another person. Casual matches keep the
-  stakes low, and the ladder is there for players who want competitive tension.
+  adrscott says the project comes from a long-standing love of fighting games
+  and their combos, matchups and competitive feel.
 play:
   url: https://anikombat.com
   embeddable: true
@@ -51,7 +48,7 @@ media:
     - games/anikombat/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-09-29
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:vibejam-2026

@@ -3,21 +3,17 @@ title: Gravitrix
 tagline: Stack wobbly physics blocks against other players in a chaotic
   multiplayer match.
 description: >-
-  Gravitrix is a stacking game where the blocks refuse to sit still. You build
-  structures from Tetris-style pieces, but the handling is awkward and
-  physics-driven in the manner of QWOP, so every block you place can wobble,
-  slide or topple while the simulation pushes back.
+  Stack Tetris-style pieces into structures in Gravitrix, a casual puzzle game.
+  Every block you place can wobble, slide or topple while the simulation pushes
+  back.
 
 
-  It sets two familiar ideas against each other: the tidy planning of a stacking
-  puzzle and the unpredictable behavior of physical objects. You stack against
-  other players online, and having them in the match adds to the chaos. It is a
-  casual puzzle game that runs on Three.js in desktop and phone browsers.
+  Online matches against other players. Extra chaos from players sharing the
+  match. Awkward, physics-driven handling in the manner of QWOP.
 
 
-  The creator describes recently starting to make the games they had long wanted
-  to make. This one, put together with Claude Code, came 216th of the 945 Vibe
-  Jam 2026 entries.
+  According to the creator, they recently started making the games they had long
+  wanted to make. Gravitrix is one of those games.
 play:
   url: https://playgravitrix.com
   embeddable: true
@@ -54,7 +50,7 @@ media:
     - games/gravitrix/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-09-29
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:vibejam-2026

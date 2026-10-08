@@ -2,13 +2,16 @@ slug: cannon-rush
 title: Cannon Rush
 tagline: Sail the seas and sink enemy ships with broadside cannon fire.
 description: >-
-  Steer a wooden galleon across open water with the arrow keys and fire the
-  cannons with F or G. The goal is to sink the other sailing ships. A kills
-  table tracks each player's sinkings. Your ship starts with 100 health.
+  Sink other sailing ships with cannons from the deck of a wooden galleon. Your
+  ship starts with 100 health. The kills table counts how many ships each player
+  has sunk.
 
 
-  The creator is a fan of Uncharted Waters and Port Royale and built this
-  sailboat game as a tribute, wanting to blast sailing ships with cannons.
+  You sail with the arrow keys and fire the cannons with F or G.
+
+
+  Kadovat is a fan of Uncharted Waters and Port Royale, and made this sailboat
+  game as a tribute where you blast sailing ships with cannons.
 play:
   url: https://kadfun.com/cannon-rush
   embeddable: true

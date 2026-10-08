@@ -2,22 +2,20 @@ slug: fishing
 title: Fishing
 tagline: Sail the open sea, cast lures for fish and spend coins on new lures.
 description: >-
-  Hold Space to charge up a cast and let go to fling the lure out from your
-  boat, and the longer you hold it, the farther the lure flies.
+  Hold Space to charge a cast from your boat, then let go to fling the lure. The
+  longer you hold, the farther it flies.
 
 
-  Once it's in the water, hold R to wind it back toward the boat. When it gets
-  there, you're free to cast again. The tips also mention that fish are drawn to
-  a lure that's moving.
+  Open water to sail across. Yellow-dot radar for nearby fish. Coins from each
+  catch, spent on lures for your tackle box. A soft lure as your only starting
+  tackle. Every lure you buy, kept in your collection. Lure shop selling the
+  other lures for those coins.
 
 
-  Between casts you steer across open water with WASD or the arrow keys, with S
-  working as the brake. A radar marks nearby fish as yellow dots.
-
-
-  Every catch pays out coins. You start with nothing but a soft lure, but the
-  lure shop sells others for those coins. The 1 to 4 keys then swap between the
-  lures you own, so each catch feeds straight back into your tackle box.
+  Once the lure is in the water, hold R to wind it back toward the boat. Once it
+  arrives, you can cast again. Between casts, steer with WASD or the arrow keys.
+  Press S to brake the boat. Use keys 1 to 4 to swap lures. The tips mention
+  fish are drawn to a moving lure.
 play:
   url: https://fishing.lureconcept.com
   embeddable: true

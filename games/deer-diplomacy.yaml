@@ -2,33 +2,21 @@ slug: deer-diplomacy
 title: Deer Diplomacy
 tagline: Bow to deer and feed them crackers without letting the herd charge you.
 description: >-
-  The setting is Nara Deer Park in Japan, where you're a tourist carrying senbei
-  rice crackers through a herd that notices more than you'd like. Bow to a deer
-  and it starts to trust you, and once it does, you get to feed it a cracker.
+  Nara Deer Park in Japan is the setting. You're a tourist carrying senbei
+  crackers, and the aim is to hand them out and leave before the herd turns on
+  you.
 
 
-  The bowing comes straight from real life, since the actual deer in Nara bow
-  back at visitors who bow to them.
+  Herd that charges once it notices food on you. Bow timing, and which deer can
+  spot you. About a second and a half of exposure after each bow. Daily
+  challenge beside the regular game.
 
 
-  The rest of the herd is a bit of a problem. If they notice you've got food on
-  you, they charge, and every bow leaves you exposed for about a second and a
-  half.
+  Bow to a deer to earn its trust. Once it trusts you, feed it a cracker.
 
 
-  So each bow comes down to timing and to which deer happen to be close enough
-  to notice. It's a funny thing to build a stealth game around, given that the
-  whole visit is about feeding animals. The aim is to hand out your crackers and
-  get away before the herd turns on you.
-
-
-  Next to the regular Play button there's a daily challenge too.
-
-
-  imshubham31 took that gentle back-and-forth between tourists and deer and
-  turned it into a tense stealth puzzle. The polite little bow is how you win
-  a deer over. It's also the moment you're most exposed to the rest of the
-  herd.
+  Real deer in Nara bow back to visitors who bow to them, and imshubham31 built
+  a stealth puzzle around that exchange.
 play:
   url: https://deer-diplomacy.vercel.app
   embeddable: true
@@ -65,7 +53,7 @@ media:
     - games/deer-diplomacy/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-10-02
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:vibejam-2026

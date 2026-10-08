@@ -2,32 +2,26 @@ slug: cyberdeck-survival
 title: Cyberdeck Survival
 tagline: Play cards, parry attacks, and outlast enemy waves in a cyberpunk arena.
 description: >-
-  Cyberdeck Survivor drops you into an arena where enemies keep closing in wave
-  after wave, and you stay alive by moving, swinging a Basic Attack and firing
-  battle chips out of your deck. It's an arena survivor in the Vampire Survivors
-  mold, but with a deck of cards doing a lot of the fighting.
+  Cyberdeck Survivor drops you into an arena where enemies keep closing in, one
+  wave after another. You stay alive by moving and fighting back. It's an arena
+  survivor in the Vampire Survivors mold, where your card deck handles much of
+  the combat.
 
 
-  You move with WASD or the arrow keys, while your chips go off on Q, E, R and
-  F.
+  A Basic Attack swing. Battle chips from your deck. Rewards picked up along the
+  way. Waves to survive, then a boss to work toward. Portal to the next game,
+  opened by beating the boss. A "Runner down" message after a fall, with your
+  final score and a fresh run.
 
 
-  Space parries incoming hits, so the deck isn't your only answer when something
-  swings at you.
+  Move with WASD or the arrow keys. Press Q, E, R or F to fire your battle
+  chips. Press Space to parry incoming hits.
 
 
-  A run means surviving the waves, picking rewards along the way and working
-  toward a boss. Beat the boss and a portal opens that sends you on to the next
-  game.
-
-
-  Fall, and the game declares "Runner down" before showing your final score and
-  offering a fresh run.
-
-
-  Elvlin89 has marked this as version 0.0.1, an early alpha. Next on their list
-  are demo polish, clearer combat tells, balance and deeper run progression. The
-  same list also names arenas, cyberware, events and a branching map.
+  Elvlin89 calls this version 0.0.1, an early alpha. The next items on their
+  list are a more polished demo, clearer combat tells, balance tuning and deeper
+  run progression. Arenas, cyberware, events and a branching map also appear on
+  that list.
 play:
   url: https://elvlin.store/games/cyberdeck-survivor
   embeddable: true

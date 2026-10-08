@@ -3,28 +3,23 @@ title: BeatPaws
 tagline: Guide bouncing cats through neon lanes, hitting notes and dodging
   hazards to the beat.
 description: >-
+  Hit musical notes as they reach you while dodging the hazards between them.
+  Cats bounce along beat lanes in this instant-play 3D rhythm game.
+
+
+  Neon Alley Sprint, the included track, set to Easy by default. The SF Bay
+  Stage, one of the playable maps. Cat characters to choose from, starting with
+  Mint DJ. Nickname field, pre-filled with a name like Turbo Pouncer 17 or
+  Midnight Nap 43. Country selector.
+
+
   Choose a song, a difficulty, a map and a cat, then press Play to jump straight
-  into a round. No login is needed.
+  into a round. Use the ASDF keys in 1P Solo mode. No login is needed, and there
+  are no loading screens.
 
 
-  Once a round starts, cats bounce along beat lanes. You hit the musical notes
-  as they reach you, while also dodging the hazards that sit between them.
-
-
-  The 1P Solo mode uses the ASDF keys. Players can set a nickname, and the field
-  starts out filled with a name like Turbo Pouncer 17 or Midnight Nap 43.
-  There's also a country selector.
-
-
-  The included track is Neon Alley Sprint, set to Easy by default.
-
-
-  The SF Bay Stage is one of the playable maps. Players choose their cat from a
-  set of characters, starting with Mint DJ.
-
-
-  The cats are AI-generated. swhan0329 took cues from arcade rhythm games and
-  the idea of linking games so players can hop between them.
+  The cats were made with AI. swhan0329 took cues from arcade rhythm games and
+  the idea of linking games that players can jump between.
 play:
   url: https://beatpaws.vercel.app
   embeddable: true

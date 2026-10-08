@@ -2,21 +2,18 @@ slug: arcanum
 title: Arcanum
 tagline: Cast elemental spells as a wizard through biomes and face three Archmagi.
 description: >-
-  Arcanum is a single-player wizard roguelike built around elemental spells. You
-  cast your way through six biomes as a wizard, drawing on four elements as your
-  main source of offense in combat, and each run builds toward encounters with
-  three Archmagi.
+  You play a wizard working through six biomes in Arcanum, a roguelike built
+  around elemental spells.
 
 
-  Characters and environments are built from composite geometry, assembled out
-  of simple 3D shapes instead of imported models. The creator made it for Vibe
-  Jam 2026 with Claude Code and Three.js, out of a love of spells, magic and
-  roguelikes, and it ranked 384th of 945 there.
+  Four elements as your main source of offense in combat. Three boss-level
+  Archmagi, the encounters each run builds toward. Dangers from the regions
+  themselves, answered with your spells in every run.
 
 
-  Runs have a clear shape: four elements to draw on, six biomes to cross and
-  three boss-level Archmagi to face. The danger comes from the regions
-  themselves, and your spells are how you answer it, run after run.
+  Characters and environments are assembled from simple 3D shapes instead of
+  imported models. shazly_9000 made it out of a love of spells, magic and
+  roguelikes.
 play:
   url: https://arcanum-delve.vercel.app
   embeddable: true
@@ -52,7 +49,7 @@ media:
     - games/arcanum/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-09-29
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:vibejam-2026

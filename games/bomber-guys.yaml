@@ -2,27 +2,23 @@ slug: bomber-guys
 title: Bomber Guys
 tagline: Blast the floor away and knock seven rivals off the arena.
 description: >-
-  You're a bean in an eight-player arena where the floor itself is the thing
-  you're fighting over. You plant bombs to blow holes in the ground and shove
-  the other beans toward the edge, and the last one still standing once the
-  other seven are gone takes the round.
+  You play a bean in an eight-player arena where the floor itself is the thing
+  you fight over. A well-placed bomb can trap a rival, while a careless one can
+  leave you nowhere to run.
 
 
-  Every explosion eats away footing, so a well-placed bomb can trap a rival
-  while a careless one can leave you nowhere to run, which makes the arena your
-  best weapon and your worst hazard.
+  Bombs that blow holes in the ground and shove rivals toward the edge.
+  Explosions that eat away at the footing. A round won by the last bean
+  standing. Quick Play matches that throw you in with other beans. Private rooms
+  for matches you set up yourself. Matches that stay short.
 
 
-  You move with WASD, jump with Space and drop a bomb with E. A jump button only
-  seems fair on a floor that keeps losing pieces.
+  Move with WASD and jump with Space. Press E to drop a bomb. Before a match,
+  name your bean and pick one of eight colors.
 
 
-  Before a match you name your bean and pick one of eight colors. Quick Play
-  throws you in with other beans, or you can set up a private room instead.
-
-
-  sergebocancea says it draws on the kind of simple games they used to work on
-  at Voodoo.io. Matches stay short.
+  sergebocancea says the game draws on the kind of simple games they used to
+  work on at Voodoo.io.
 play:
   url: https://bomber-guys.vercel.app
   embeddable: true

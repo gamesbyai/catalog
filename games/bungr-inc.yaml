@@ -2,20 +2,14 @@ slug: bungr-inc
 title: BUNGR INC.
 tagline: Cook burgers in a cursed kitchen to earn your way to freedom.
 description: >-
-  You're the cook on a burger line, making burgers to earn your freedom. Orders
-  come in as tickets.
+  You're the cook on a burger line, making burgers to earn your freedom. The
+  setting is cursed.
 
 
-  Each day runs on a countdown clock. Your cash is tracked against a quota, and
-  on Day 1 that quota is $70.
-
-
-  Ingredients start on the counter tray, which holds buns, patties, cheese,
-  tomato slices and other toppings.
-
-
-  There's also a radio that interrupts your shift. When it does, you're told to
-  listen. The setting is cursed.
+  Orders that arrive as tickets. Countdown clock for every day. Cash quota of
+  $70 on Day 1. Starting ingredients on the counter tray, including buns,
+  patties, cheese, tomato slices and other toppings. Radio interruptions in the
+  middle of your shift, when you're told to listen.
 play:
   url: https://bungr.net
   embeddable: true

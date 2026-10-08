@@ -2,23 +2,20 @@ slug: agi-of-mythology
 title: AGI of Mythology
 tagline: Command a research lab in a real-time fight over a central server.
 description: >-
-  Every research lab on the map wants the same central server, and whoever holds
-  it reaches AGI. The armies in this real-time strategy game are rival AI labs.
+  In this real-time strategy game, each army is a rival AI lab after the same
+  central server, and whoever holds it reaches AGI. You play one, starting with
+  a Town Center, two idle workers, 500 Bio, 300 Mat and 200 GPU.
 
 
-  You start out with a Town Center, two idle workers and a stock of 500 Bio, 300
-  Mat and 200 GPU. The Town Center is where your agents come from. Graphics
-  cards, or GPU, are one of the three resources in the game, next to Bio and
-  Mat.
+  Bio, Mat and GPU (graphics cards), three resources. Agents from the Town
+  Center. Four-step first mission covering build, gather, train and taking the
+  central server, with a 5:00 timer for player one.
 
 
-  The first mission lays out the plan in four steps (build, gather, train, then
-  take the central server). The first player's timer starts at 5:00.
+  Select a unit or building to give orders. Message other players in your match.
 
 
-  Select a unit or building to give it orders. You can also message the other
-  players in your match. TTrussner wanted a real-time strategy game you can
-  start quickly with friends in the browser.
+  TTrussner wanted an RTS you can start quickly with friends in the browser.
 play:
   url: https://trussner.com/agi
   embeddable: true

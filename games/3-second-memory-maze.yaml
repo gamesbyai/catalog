@@ -2,29 +2,21 @@ slug: 3-second-memory-maze
 title: 3-Second Memory Maze
 tagline: Memorize a maze route in three seconds, then find the exit in the dark.
 description: >-
-  The maze shows for a few seconds, then goes dark. During that preview your job
-  is to study the route and its turn anchors. After that, you walk to the exit
-  from memory alone.
+  The maze shows for a few seconds, then goes dark. Study the route and its key
+  turns during that preview, then walk to the exit from memory alone.
 
 
-  The first level, First forks, gives you a 3.2-second preview. The campaign has
-  30 short levels.
+  Thirty short campaign levels, the first called First forks. The 3.2-second
+  preview on that opening level. One route peek per level, a single forgiving
+  look at the path once the maze goes dark. Stars from one to three per level,
+  based on speed and moves. Daily Challenge, one shared maze for everyone each
+  day. Best records saved locally, plus daily streaks. Unlocked levels picked
+  from a map.
 
 
-  Every level hands you one route peek, a single forgiving look at the path once
-  the lights are out. You can also replay the preview. Stop ends a run.
-
-
-  You earn one to three stars per level depending on your speed and how many
-  moves you took.
-
-
-  The Daily Challenge puts the same maze in front of everyone each day. Your
-  best records are saved locally.
-
-
-  You can move with the arrow keys or WASD, swipe on a touch screen, or tap the
-  on-screen buttons.
+  Move with the arrow keys or WASD, swipe on a touch screen, or tap the
+  on-screen buttons. Replay the preview if you want to see the route again. Use
+  Stop to end a run.
 play:
   url: https://cravveo-lab.itch.io/3-second-memory-maze
   embeddable: false

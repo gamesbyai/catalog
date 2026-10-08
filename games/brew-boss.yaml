@@ -3,17 +3,19 @@ title: Brew Boss
 tagline: Build up a cafe from a small start into a thriving business.
 description: >-
   Brew Boss puts you behind the counter of Player's Downtown Brew, a small cafe,
-  on Day 1 with $50.00 to your name. Customers gather at the bar, and you click
-  one of them to take their order.
+  on Day 1 with $50.00 to your name.
 
 
-  Every order goes into a list with the customer's name and the drink they're
-  after. You'll see espresso, cappuccino and caffè latte, but some customers
-  only say "Something creamy" and leave it there.
+  Customers at the bar. Espresso, cappuccino and caffè latte as drink orders.
+  Orders that only say something creamy.
 
 
-  lukeswissman describes the goal as building a cafe empire, with Sims 2 and
-  Dave the Diver named as partial influences.
+  Click a customer to take their order. Each order goes into the list with the
+  customer's name and drink.
+
+
+  According to lukeswissman, the goal is building a cafe empire. Sims 2 and Dave
+  the Diver are named as partial influences.
 play:
   url: https://lukeswissman.github.io/brewboss
   embeddable: true

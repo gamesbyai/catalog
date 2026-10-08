@@ -2,22 +2,20 @@ slug: echo-ohce
 title: ECHO|OHCE
 tagline: Find your way through a dark dungeon using echolocation pings
 description: >-
-  ECHO|OHCE drops you into a dark dungeon where you can't see a thing, and you
-  find your way by echolocation instead. A ping goes out on its own and lights
-  up whatever it reaches in one of three colors, with blue meaning safe, amber
-  meaning near and red meaning danger.
+  In ECHO|OHCE, you find your way through a dark dungeon by echolocation, since
+  you can't see anything. In each level, you need to reach the exit.
 
 
-  Every level asks you to reach the exit, and a full run strings 10 levels
-  together. Staying silent is a second goal that runs alongside it.
+  Automatic pings that light up whatever they reach, in blue for safe, amber for
+  near and red for danger. A full run of ten levels strung together. Staying
+  silent as a second goal beside the exit. Your results on the Top Echoes board.
 
 
-  You move with WASD and look around with the mouse. Holding Shift lets you
-  sprint. Your results go on a Top Echoes board.
+  Move with WASD and look around with the mouse. Hold Shift to sprint.
 
 
-  According to the creator, the echolocation is modeled on the Odradek scanner
-  from Death Stranding, the source for a tool that maps what you can't see.
+  According to JayShugito, the echolocation is modeled on the Odradek scanner
+  from Death Stranding, which maps what you can't see.
 play:
   url: https://project-kqtw7.vercel.app
   embeddable: true

@@ -2,27 +2,22 @@ slug: cluck-heist
 title: Cluck Heist
 tagline: Rampage as a chicken through a cartoon version of your own neighborhood.
 description: >-
-  You're a menacing chicken loose in a real neighborhood. You peck, poop, scream
-  and lob eggs while you grab items and carry them back to your nest.
+  You're a menacing chicken loose in a real neighborhood, pecking, pooping,
+  screaming and lobbing eggs, grabbing items to haul back to your nest.
 
 
-  You pick a handle and a location before you start. Type in an address and
-  OpenStreetMap data rebuilds those streets as a cartoon world, but if you leave
-  it blank you get dropped on a random suburban block.
+  Cartoon streets rebuilt from OpenStreetMap for your entered address. Wanted
+  stars tracking how much the humans notice you. Health and food, both in the
+  game, plus a cat posse in the mix. Loading a new location beyond one street.
+  Music player with track selector.
 
 
-  Wanted stars track how much attention you're pulling from the humans.
+  Pick a handle and location first. Enter an address, or leave it blank for a
+  random suburban block.
 
 
-  HP and food are both part of the game. A cat posse is in the mix too.
-
-
-  You can also load a new location, so your crime spree doesn't have to stay on
-  one street. The game has a music player with a track selector.
-
-
-  catesb made it with nothing particular in mind, setting out to build the most
-  ridiculous game possible just for fun.
+  catesb made it with nothing particular in mind, aiming to build the most
+  ridiculous game possible for fun.
 play:
   url: https://cluckheist.cates.fm
   embeddable: true

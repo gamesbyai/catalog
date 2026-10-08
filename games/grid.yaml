@@ -2,36 +2,25 @@ slug: grid
 title: GRID
 tagline: Play cards to place counters and line up three in a row on a 3×3 board
 description: >-
-  Get three of your counters in a row on a 3×3 grid and the match is yours, so
-  yes, it's Tic-Tac-Toe underneath. Counters only get placed when you play
-  cards. Before your first move you put together a 30-card deck, and then each
-  turn you draw from it and play from your hand.
+  Get three of your counters in a row on a 3×3 grid to win, the same goal as
+  Tic-Tac-Toe. Counters land on the board only when you play a card. Sessions
+  last a few minutes.
 
 
-  Every card can only reach certain cells, which turns those nine squares into a
-  puzzle about where each card is even allowed to go.
+  A 30-card deck, built before your first move. Over 50 cards across Role and
+  Action types. An effect on each card that changes the grid the moment it's
+  placed. Certain cells that each card can reach, and no others. The Combo
+  system, giving up one card's placement to let another card reach a cell it
+  couldn't. Bot matches at three difficulty levels, offline two-player on one
+  device, and Draft Mode. Saved decks and an interactive tutorial.
 
 
-  Cards also cost Energy, and you start with just 1 of it on the first turn.
-  Your supply climbs every turn after that until it stops at 5.
+  Draw from your deck each turn, then play cards from your hand. Spend Energy to
+  pay each card's cost. Energy starts at 1 on the first turn and climbs each
+  turn until it reaches 5.
 
 
-  There are over 50 cards, split between Role and Action types. Each one carries
-  an effect that changes the grid the moment it's placed. Then there's the Combo
-  system, where you give up one card's placement sequence so a different card
-  can land on a cell it couldn't hit by itself.
-
-
-  The game has bot matches at three difficulty levels, offline two-player on one
-  device, and Draft Mode.
-
-
-  You can save your decks, and an interactive tutorial walks you through the
-  game. Sessions last a few minutes.
-
-
-  According to radiantforce, AI assisted with the code, graphics, sounds and
-  text.
+  According to radiantforce, AI helped with the code, art, sound and text.
 play:
   url: https://radiantforce.itch.io/grid
   embeddable: false

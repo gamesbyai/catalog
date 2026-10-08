@@ -2,25 +2,22 @@ slug: catch-of-the-day
 title: Catch of The Day
 tagline: Catch fish in swarming schools while dodging a hunting shark.
 description: >-
-  The goal is to catch the right fish before the shark catches you. You're
-  underwater with a harpoon gun, and your catch list names the species you're
-  after, such as a mackerel or a grouper.
+  Catch the right fish before the shark catches you. You're underwater with a
+  harpoon gun, hunting species such as mackerel or grouper.
 
 
-  You can't kill the shark, but landing two harpoons on it will stun it.
+  A catch list of the species you're after. Two harpoon hits to stun the shark,
+  which can't be killed. Flocking schools of fish around you. Double-tap W
+  sprint with a tracking bar.
 
 
-  WASD swims you around, Space takes you up and Shift takes you down. A double
-  tap of W sends you into a sprint, and a bar tracks it. The mouse aims, left
-  click fires and right click zooms in.
+  Follow the two-step tutorial, which begins with swimming. Swim with WASD, and
+  use Space and Shift to go up and down. Aim with the mouse, fire with left
+  click, and zoom in with right click.
 
 
-  A two-step tutorial walks you through your first moves, starting with
-  swimming, and Esc pauses the game.
-
-
-  0xPufferFish built the game to see how boids behave in Three.js, using a fish
-  hunt as the test. The fish move around you in flocking groups.
+  0xPufferFish built the game to see how boids behave, with a fish hunt as the
+  test.
 play:
   url: https://cotd.graywhite.cloud
   embeddable: true
