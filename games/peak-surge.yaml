@@ -31,7 +31,7 @@ description: >-
 
   There's a leaderboard too. Every run is a chance to beat your best score.
 play:
-  url: https://tesana.com/game/peak-surge
+  url: https://tesana.com/play/cf9ea13d-8805-4919-83a1-b58945a29120
   embeddable: false
   platforms:
     - browser

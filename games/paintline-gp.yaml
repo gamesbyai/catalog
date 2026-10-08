@@ -29,7 +29,7 @@ description: >-
   sky. For a racer, that's a pretty restrained palette. The karts and drivers
   share that same style.
 play:
-  url: https://tesana.com/game/paintline-gp
+  url: https://tesana.com/play/e389ce0f-69f2-4a17-89da-9797bee85247
   embeddable: false
   platforms:
     - browser

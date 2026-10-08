@@ -28,7 +28,7 @@ description: >-
   the art looks. The Web Audio API generates the sounds and the music, so there
   aren't any picture or sound files to fetch.
 play:
-  url: https://tesana.com/game/cozy-paws-clinic
+  url: https://tesana.com/play/d402c697-5327-492c-a1b9-e77e749f92e5
   embeddable: false
   platforms:
     - browser

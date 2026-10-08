@@ -28,7 +28,7 @@ description: >-
   moving. Hold right click and let go to throw, although the ticket politely
   asks you, once again, to leave the knives out of it.
 play:
-  url: https://tesana.com/game/let-him-cook
+  url: https://tesana.com/play/576c9db9-d16a-4479-88d2-a99183fe1596
   embeddable: false
   platforms:
     - browser

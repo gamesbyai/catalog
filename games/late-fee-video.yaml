@@ -31,7 +31,7 @@ description: >-
   Progress is saved when each day ends, a smart call that lets the shop carry
   over from one shift to the next.
 play:
-  url: https://tesana.com/game/late-fee-video
+  url: https://tesana.com/play/d1ca2478-fe2b-448e-ab24-038e3ce5efdd
   embeddable: false
   platforms:
     - browser

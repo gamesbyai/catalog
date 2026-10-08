@@ -27,7 +27,7 @@ description: >-
   Sandbox mode makes sense for anyone who wants to try out layouts, since
   money's no object in it. The cash readout up top says Unlimited.
 play:
-  url: https://tesana.com/game/brass-ring-park
+  url: https://tesana.com/play/10ee5d63-e49b-46d2-a8b3-1774c0f0a061
   embeddable: false
   platforms:
     - browser

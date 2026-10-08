@@ -35,7 +35,7 @@ description: >-
 
   When you're planning your next voyage, reach for the world map with M.
 play:
-  url: https://tesana.com/game/brinewake
+  url: https://tesana.com/play/11f278cc-aeb3-4e2b-b384-65918371b957
   embeddable: false
   platforms:
     - browser

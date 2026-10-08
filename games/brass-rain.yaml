@@ -31,7 +31,7 @@ description: >-
   fights in the mix. There's a leaderboard too. You can also play with a
   controller.
 play:
-  url: https://tesana.com/game/brass-rain
+  url: https://tesana.com/play/44cfa8db-49e5-4ad1-89b1-7068aa55b70a
   embeddable: false
   platforms:
     - browser

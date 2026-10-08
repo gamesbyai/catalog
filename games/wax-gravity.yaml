@@ -28,7 +28,7 @@ description: >-
   Land with the board beneath you and aimed where you're headed. Touch down
   sideways or in the middle of a flip and you slam.
 play:
-  url: https://tesana.com/game/wax-gravity
+  url: https://tesana.com/play/93454d32-7dd6-4670-add7-a05c15bcb33c
   embeddable: false
   platforms:
     - browser

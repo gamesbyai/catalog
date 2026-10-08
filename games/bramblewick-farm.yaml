@@ -27,7 +27,7 @@ description: >-
 
   There's a clock and a money counter in the top right corner of the screen.
 play:
-  url: https://tesana.com/game/bramblewick-farm
+  url: https://tesana.com/play/7b22e5fb-ba94-4e33-abc9-0b482cb35a96
   embeddable: false
   platforms:
     - browser

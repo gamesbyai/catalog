@@ -34,7 +34,7 @@ description: >-
   both sides in view. The countdown's in the middle, between the two teams.
   Pause and sound buttons sit in the top-left corner.
 play:
-  url: https://tesana.com/game/inkwharf
+  url: https://tesana.com/play/6429b41d-e4e1-4cd5-ab8e-8a35484cefbd
   embeddable: false
   platforms:
     - browser

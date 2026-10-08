@@ -35,7 +35,7 @@ description: >-
 
   The fishing itself happens down at the water.
 play:
-  url: https://tesana.com/game/cozy-cove-6d2dab35
+  url: https://tesana.com/play/8d052fdd-93a3-4466-a908-083f5f263a80
   embeddable: false
   platforms:
     - browser

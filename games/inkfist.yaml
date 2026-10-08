@@ -35,7 +35,7 @@ description: >-
   A and D walk, W jumps, and S drops you into a crouch. Blocking's done by
   holding away from your opponent.
 play:
-  url: https://tesana.com/game/inkfist-dc958164
+  url: https://tesana.com/play/adeff6a7-0e2b-4c1b-b698-c1d7171eab63
   embeddable: false
   platforms:
     - browser
