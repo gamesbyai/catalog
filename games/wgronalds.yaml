@@ -2,18 +2,18 @@ slug: wgronalds
 title: WgRonalds
 tagline: Survive a fast-food job application full of ever-stranger HR rules.
 description: >-
-  WgRonalds turns a fast-food crew application into a puzzle. The first step
-  asks for your full name. The form won't let you continue until every
-  requirement is checked.
+  WgRonalds turns a fast-food crew job application into a puzzle, and you fill
+  it out step by step. The form won't let you continue until every requirement
+  is checked.
 
 
-  The application runs twelve steps. A red HR notice tells you in polite wording
-  what the form still needs, such as entering your name.
+  Escalating rules across twelve application steps. Politely worded red HR
+  notices for whatever the form still needs. Your full name as the opening step.
 
 
-  The creator built it to take escalating-rules chaos and apply it to a
-  fast-food job application, with absurd HR policies written in courteous
-  corporate language.
+  acetaminofenol explains the idea this way. "Every absurd HR policy you've ever
+  seen, but turned up to 11 and wrapped in polite corporate language," the
+  creator writes.
 play:
   url: https://wgronalds.vercel.app
   embeddable: true

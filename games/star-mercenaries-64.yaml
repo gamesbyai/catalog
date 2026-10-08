@@ -3,21 +3,16 @@ title: Star Mercenaries 64
 tagline: Fly a rail shooter route as space-faring animal mercenaries and blast
   enemy markets.
 description: >-
-  Star Mercenaries 64 is an arcade rail shooter in the style of Star Fox 64,
-  with the AI industry as its target. You pilot a ship along a fixed path
-  through space, shooting down enemies and hazards as the route unfolds.
+  Fly a fixed route through space in an arcade rail shooter in the style of Star
+  Fox 64, with the AI industry as the target.
 
 
-  The pilots are space-faring animal mercenaries who weaponize capitalism. They
-  bicker like tech billionaires while blowing up markets, and the tone comes
-  from the creator's fascination with AI lore and its founding figures. Codex
-  was the tool and Three.js the renderer, and touch screens are supported. Vibe
-  Jam 2026 ranked it 482nd of 945.
+  Space-faring animal mercenaries who weaponize capitalism. Pilots who bicker
+  like tech billionaires while blowing up markets. Enemies and hazards along the
+  route.
 
 
-  That satire is the main thing that separates it from its inspiration.
-  Underneath, the flying and shooting follow the classic rail shooter form, with
-  enemies and hazards coming at you along the route.
+  The creator's fascination with AI lore and its founding figures sets the tone.
 play:
   url: https://star-mercenaries-64.pages.dev
   embeddable: true
@@ -54,7 +49,7 @@ media:
     - games/star-mercenaries-64/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-09-29
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:vibejam-2026

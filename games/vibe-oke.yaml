@@ -2,24 +2,21 @@ slug: vibe-oke
 title: Vibe-oke
 tagline: Play along with a song one lyric word at a time, in sync with the vocals.
 description: >-
-  The game starts with Mr. Brightside by The Killers already loaded.
+  Every lyric word is a playable note. You play along with the singer word by
+  word, not just chasing a beat.
 
 
-  Play with five keys, A, S, D, J and K, and strike each word as it reaches the
-  lane. Every word in the lyrics becomes a note, so you're playing along with
-  the singer one word at a time instead of just chasing a beat. roieambulo loves
-  karaoke, and that's where the idea of playable lyrics came from.
+  Mr. Brightside by The Killers, loaded from the start. Score and accuracy
+  tracked during play. A combo multiplier starting at x1. Global and song
+  leaderboard rankings.
 
 
-  The song runs 3:43 long. Your score and accuracy are tracked as you play.
+  Press Play to start what's loaded. If The Killers aren't your thing, search
+  for and pick another track. Hit words as they reach the lane with five keys:
+  A, S, D, J and K. Lyric timing may not match perfectly.
 
 
-  A combo feeds a multiplier that starts at x1, and your health starts at 100%.
-
-
-  Press Play to start whatever's loaded. If The Killers aren't your thing, you
-  can search for and pick another track. Lyric timing may not match perfectly.
-  There's also a leaderboard with Global and Song rankings.
+  roieambulo loves karaoke, which is where the playable lyrics idea came from.
 play:
   url: https://vibe-oke.com
   embeddable: true

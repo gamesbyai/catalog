@@ -2,21 +2,15 @@ slug: vibe-rush
 title: Vibe Rush
 tagline: Lead a growing squad through zombie hordes, traps, and boss fights in a runner.
 description: >-
-  Vibe Rush is a nonstop single-player runner in which you lead a squad through
-  streets full of zombies. You keep moving forward, steer around deadly traps,
-  shoot into the zombie crowds, and pick up survivors on the way, and every
-  recruit you pick up joins the group.
+  Lead a squad through streets full of zombies in this nonstop runner. It mixes
+  lane-style running with shooting and squad management. You keep moving
+  forward.
 
 
-  It mixes lane-style running with shooting and squad management, and it was
-  made with Claude Code on Three.js. The size of your team is the central
-  tension: more survivors mean more firepower against the crowds, while the
-  traps threaten to thin the group. Vibe Jam 2026 ranked it 220th of 945.
-
-
-  Everything builds toward giant bosses, which test whatever squad your choices
-  have assembled by the end of the run, whether it grew or got thinned out along
-  the way.
+  Deadly traps to steer around, threatening to thin your group. Zombie crowds to
+  shoot into. Survivors to recruit, each one joining the group. Firepower
+  against the crowds that grows with your squad. Giant bosses at the end,
+  testing the squad you assembled.
 play:
   url: https://vibe-rush.pages.dev
   embeddable: true
@@ -53,7 +47,7 @@ media:
     - games/vibe-rush/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-09-29
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:vibejam-2026

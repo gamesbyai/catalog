@@ -3,21 +3,19 @@ title: Wetware Trials
 tagline: Race through quick brain microgames testing reflexes, memory, patterns
   and logic.
 description: >-
-  In Wetware Trials, you play rapid-fire microgames, each one a quick cognitive
-  test. Each one tests a single skill, such as reflexes, memory, pattern
-  recognition, or logic, and is simple enough to grasp in about a second. From
-  there, a run chains one tiny task after another, and it measures how sharp
-  your brain is.
+  Play rapid-fire microgames, each a quick cognitive test you can grasp in about
+  a second. A run chains them together and measures how sharp your brain is.
 
 
-  The creator took inspiration from the short, instantly understandable brain
-  teasers of Big Brain Academy on the Nintendo DS, and made the game with Codex
-  on canvas, for phones as well as desktop.
+  Skill tests such as reflexes, memory, pattern recognition, or logic. A single
+  skill in each microgame. Multiplayer rounds where humans compete on the
+  microgames.
 
 
-  AI generated the microgames, and humans compete against each other on them, in
-  multiplayer rounds that take cues from the fast, competitive pace of Tetris
-  99.
+  mfontcada took inspiration from the short brain teasers of Big Brain Academy
+  on the Nintendo DS, which you understand right away. AI generated the
+  microgames. The multiplayer rounds take their quick, competitive pace from
+  Tetris 99.
 play:
   url: https://wetwaretrials.com
   embeddable: false

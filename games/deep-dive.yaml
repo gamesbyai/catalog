@@ -3,39 +3,22 @@ title: Deep Dive
 tagline: Walk a diver through an undersea lab and play mini games that explain
   how chatbots work.
 description: >-
-  You steer a diver past Pip the robot and down a row of lab rooms.
+  Steer a diver past Pip the robot through an undersea lab where each room
+  teaches how chatbots work.
 
 
-  Each room is built around its own lesson. Press E at a room's console and Pip
-  gives a short explanation before a mini game puts the idea to work. The five
-  core labs cover tokens, guessing the next word, a context window that holds 60
-  tokens, writing Robot Chef an exact prompt and spotting wrong facts Pip calls
-  99% sure.
+  Five core labs on tokens, next-word guessing, a 60-token context window, exact
+  prompts for Robot Chef and spotting wrong facts. Three optional labs on tools,
+  bias and privacy. The Next Word Machine, with balls falling into tubes for a
+  model's top guesses. The Backpack, where old chat blocks tumble off as the
+  context fills. A Diver's License at the end.
 
 
-  Clear all five and you get a Diver's License with every rule written on it.
-  Three optional labs go further, into tools, the bias a model picks up from
-  what it reads, and the things you should keep private.
+  Press E at a console for Pip's explanation and a mini game. Press T for token
+  goggles that split signs into tokens. Use map mode for a keyboard-only list.
 
 
-  Two of the rooms turn the lesson's actual logic into hands-on 3D physics.
-
-
-  In the Next Word Machine, balls fall into five tubes, each tagged with one of
-  a tiny language model's top guesses, and the likeliest word's tube fills
-  first. The Backpack turns each chat message into a block as long as its token
-  count. Once the trough is full, the oldest block tumbles off the end, and you
-  can actually watch a chat get forgotten.
-
-
-  Press T to put on token goggles, which cut the station's signs, doors and
-  console screens into the pieces a tokenizer would read. With the goggles on,
-  the Toolbox sign splits into two pieces, "Tool" and "box".
-
-
-  Map mode lays the same lessons out as a simple list and works with just a
-  keyboard, if you'd rather skip the 3D. Getting through everything takes about
-  20 minutes.
+  Getting through everything takes about 20 minutes.
 play:
   url: https://deep-dive-rosy.vercel.app
   embeddable: true

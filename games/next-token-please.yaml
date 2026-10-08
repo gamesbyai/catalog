@@ -2,20 +2,18 @@ slug: next-token-please
 title: Next Token Please
 tagline: Pick the next word one token at a time and play the part of a language model.
 description: >-
-  In Next Token Please you play the language model. Instead of typing prompts
-  and reading replies, you sit on the model's side and build text by choosing
-  the next token, one at a time, until a whole sentence takes shape.
+  In Next Token Please, you're the one being prompted. Pick tokens one by one
+  until a sentence forms.
 
 
-  The appeal is the role swap. Most people have spent time prompting chatbots,
-  and this puts them in the position of the thing being prompted. Claude Code
-  was used to make it for Vibe Jam 2026, where it placed 112th of 945, and it
-  works on phones too.
+  The chatbot's job, from the inside. A single token per pick. Puzzle,
+  simulation and a short lesson about prediction.
 
 
-  Each pick is the same kind of decision a model makes at every step of
-  generating a sentence. The game sits between a puzzle, a simulation and a
-  small educational lesson, and the aim is a feel for how text gets predicted.
+  Pick, then pick again.
+
+
+  Most people have only ever done the prompting. Here the roles swap.
 play:
   url: https://next-token-please.abacatogames.com
   embeddable: false
@@ -51,7 +49,7 @@ media:
     - games/next-token-please/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-09-29
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:vibejam-2026

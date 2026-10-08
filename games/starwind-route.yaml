@@ -2,21 +2,16 @@ slug: starwind-route
 title: Starwind Route
 tagline: Sail a Mediterranean trade route, recruit tavern companions, and dodge pirates.
 description: >-
-  Sail a Mediterranean trade route in this 3D adventure. You sail between ports,
-  buy and sell goods, and choose which stretches of sea to cross. Some routes
-  are riskier than others, and pirate waters threaten both the ship and its
-  cargo.
+  Sail a Mediterranean trade route between ports, buying and selling goods and
+  choosing which stretches of sea to cross.
 
 
-  Taverns add the people. That is where you meet companions and build bonds with
-  them, a character-driven layer on top of the trading and route planning that
-  draws on older sailing RPGs. What you buy, the risks you take, and the bonds
-  you build all shape the journey. The creator made it with ChatGPT and
-  Three.js.
+  Riskier routes and pirate waters that threaten ship and cargo. Taverns where
+  you meet companions and build bonds. Old sailing RPGs as the model. A portal
+  that leads on to the next game once unlocked.
 
 
-  The game also has a portal. Once unlocked, it turns the voyage into a stepping
-  stone that leads on to the next game.
+  The creator made it with ChatGPT.
 play:
   url: https://sailing-sim-rpg.kumastudio.app
   embeddable: true

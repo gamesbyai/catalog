@@ -3,38 +3,20 @@ title: Return To Castle Hu-Nam
 tagline: Beam office workers off Earth while shooting bureaucrats in a
   first-person retro shooter.
 description: >-
-  Walk close to an office worker and they're beamed straight up to your space
-  cruiser, letting out a cheerfully primitive little "Thank you!" on the way.
-  You're the alien invader this time, and you're rescuing Earth's
-  red-tape-choked Hu-Nams from a first-person view that moves like the very
-  earliest Wolfenstein shooters.
+  Walk close to an office worker and beam them up to your space cruiser. You're
+  the alien invader, rescuing Earth's red-tape-choked Hu-Nams in a first-person
+  shooter that moves like the earliest Wolfenstein games.
 
 
-  Office managers get in the way, because a worker can't beam out while one of
-  them stands too close. They'll keep yelling "Not so fast!" until every manager
-  is out of range. Pull off a rescue while managers hover just past that range,
-  though, and you earn a danger bonus that climbs higher when several of them
-  are lurking right there.
+  Office managers who block rescues while they stand too close. A danger bonus
+  for rescues with managers lurking just out of range. Multi-floor office
+  buildings full of corporate and government bureaucrats, with mid-bosses and
+  bosses. Outdoor battles between buildings. Freeing all of Earth as the end
+  goal.
 
 
-  The same managers who block your rescues are also what makes a rescue pay
-  more.
-
-
-  Each office building climbs through multiple floors packed with a satirical
-  mix of corporate and government bureaucrats. There are mid-bosses and bosses
-  waiting along the way.
-
-
-  Between buildings comes an outdoor military battle where you head for the far
-  door, and it won't open until every enemy soldier on the map is down, while
-  bigger fighters you can ignore slug it out in the background.
-
-
-  The stated end goal is freeing all of Earth, although that ending isn't as
-  fleshed out as the rest. exedexes1 started the game in a game-focused AI tool
-  and then carried it on in Claude once it was mostly stable. According to the
-  creator, it's the project that got the most effort.
+  exedexes1 started it in a game-focused AI tool and carried it on in Claude
+  once it was mostly stable.
 play:
   url: https://exedexes1.itch.io/return-to-castle-hu-nam
   embeddable: false
@@ -75,7 +57,7 @@ media:
     - games/return-to-castle-hu-nam/shot-2
 dates:
   added: 2026-10-01
-  updated: 2026-10-02
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:aibgj-2

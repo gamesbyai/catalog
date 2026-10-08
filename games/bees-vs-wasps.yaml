@@ -2,28 +2,17 @@ slug: bees-vs-wasps
 title: Bees vs Wasps
 tagline: Gather flowers as a bee and get back to the hive before angry wasps catch you.
 description: >-
-  You type in a name before you start. You're the bee here, and your job is to
-  gather flowers and carry them back to the hive without getting killed by the
-  angry wasps.
+  You're a bee. Gather flowers and carry them back to the hive before the angry
+  wasps get you.
 
 
-  The whole plan comes down to three quick commands. alexismediaco wanted
-  something you could jump into right away, and a goal that short suits that.
+  Honeycomb and extra lives as you climb levels. Deadlier wasps too, with the
+  Tarantula Hawk at level 12 and the Executioner at level 15. Wasp spawns built
+  on the Fibonacci sequence, capped when the numbers grew too fast.
 
 
-  As you climb levels, new things keep getting added. Honeycomb and extra lives
-  show up, but so do deadlier wasps, with the Tarantula Hawk arriving at level
-  12 and the Executioner at level 15. Both were inspired by Brave Wilderness
-  videos of getting stung.
-
-
-  The whole game grew out of the Fibonacci sequence, the idea alexismediaco
-  started from.
-
-
-  At first the wasps spawned following that sequence. Fibonacci numbers grow
-  quickly, though, and it ended up producing too many wasps. So alexismediaco
-  put a cap on the numbers.
+  alexismediaco wanted something you could jump into right away. The deadliest
+  wasps were inspired by Brave Wilderness videos of getting stung.
 play:
   url: https://beesvswasps.com
   embeddable: true

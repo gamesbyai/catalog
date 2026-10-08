@@ -2,35 +2,17 @@ slug: rescue-from-the-shadows
 title: RESCUE FROM THE SHADOWS
 tagline: Explore a dark world and learn digital security and Web3 along the way.
 description: >-
-  Someone has to be brought back out of the darkness, and that job is yours,
-  inside a hidden house a living darkness swallowed long ago where guardians of
-  knowledge sit sealed away. It's a narrative puzzle game, so you explore its
-  dark rooms step by step while the story moves forward with each situation you
-  work through.
+  Explore a hidden house swallowed by a living darkness and free the guardians
+  of knowledge sealed inside.
 
 
-  You play as Suiken, a cheerful monkey hero who has to cross every chamber and
-  break every seal along the way.
+  Suiken, a cheerful monkey hero. Puzzles that double as lessons in digital
+  security and Web3, like a terminal asking what a seed phrase is. Narration in
+  every scene. The Shadow, which feeds on failure, fear and forgetting. English
+  and Portuguese text.
 
 
-  The puzzles double as lessons. In one attic room, an arcane terminal asks you
-  what a seed phrase is and offers four answers. Ideas from digital security and
-  Web3 run through both the exploring and the puzzles, so understanding them is
-  part of how you get further.
-
-
-  The Shadow feeds on failure, fear and forgetting. The game tests what you
-  remember.
-
-
-  Each scene comes with narration as you go. The text can be switched between
-  English and Portuguese.
-
-
-  The hero's name sits close to the handle of xsuikem, who made the game. Their
-  aim was a game that adds real value instead of being pure entertainment. They
-  set out to build something immersive that also teaches you about digital
-  security and Web3 while you play.
+  xsuikem wanted a game that teaches while you play, not pure entertainment.
 play:
   url: https://o-resgate-das-sombras.vercel.app
   embeddable: true

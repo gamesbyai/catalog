@@ -2,19 +2,15 @@ slug: delete-things-from-earth
 title: Delete Things From Earth
 tagline: Click to erase everything from coffee cups to the sun itself.
 description: >-
-  In this darkly comic clicker, you erase the planet one thing at a time. You
-  start with small everyday objects, such as a cup of coffee, and work your way
-  up to continents and eventually the sun itself.
+  Erase the planet one click at a time, from a cup of coffee up to continents
+  and the sun itself.
 
 
-  The creator names Plague Inc. as an influence on the style and Cookie Clicker
-  on the incremental loop, though the premise differs from both. Made with
-  Claude Code and rendered in 3D with Three.js.
+  Dark humor that escalates from the mundane to the cosmic. A race to wipe out
+  civilization in as few clicks as possible. Incremental clicker play.
 
 
-  The humor is dark, and it comes from the escalation from mundane items to
-  cosmic ones. Each click removes a little more, and a run is a race to see how
-  few clicks it takes to wipe out civilization.
+  The creator names Plague Inc. and Cookie Clicker as influences.
 play:
   url: https://delete-things-from-earth.vercel.app
   embeddable: true

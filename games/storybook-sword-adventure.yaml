@@ -2,30 +2,20 @@ slug: storybook-sword-adventure
 title: Storybook Sword adventure
 tagline: Swing your arms in front of a webcam to slash through fairy-tale worlds.
 description: >-
-  The Story-Eater has stolen the fairy tales, and it's your job to win them back
-  by slashing your way through one storybook world after another. Each level is
-  its own storybook world. The title screen promises mixed-up monsters to fight
-  along the way, which sounds about right for a villain that eats stories.
+  Win back the fairy tales the Story-Eater stole by slashing your way through
+  them. In this body-tracking action game, your own arm is the sword.
 
 
-  It's a body-tracking action game where your own arm is the sword, and your
-  body is the whole controller. The webcam follows how your arms move, and every
-  real swing becomes a sword strike on screen, so playing means moving around
-  and cutting through the air yourself.
+  A separate storybook world for each level. Mixed-up monsters to fight along
+  the way. Arm tracking through your webcam. Suitable from age 6.
 
 
-  The title screen keeps its instructions short and just asks you to wave your
-  hands whenever you want the sword to move. Little tags mark it as suitable
-  from age 6 and note that it uses your arms. Pastel skies, sparkles and big
-  outlined lettering give all that flailing a gentle picture-book look.
+  Wave your hands to move the sword. Each real swing becomes a sword strike.
 
 
-  The body tracking runs on BodyLink, a tool meant for playing games with your
-  whole body in place of a gamepad.
-
-
-  RebuffReality wanted to build games where your body does the job of a
-  controller. They were after something they could play while moving around.
+  RebuffReality wanted games where your body is the controller, to play while
+  moving around. The body tracking runs on BodyLink, a tool for playing games
+  with your whole body in place of a gamepad.
 play:
   url: https://storybook-adventure.netlify.app
   embeddable: true
@@ -64,7 +54,7 @@ media:
     - games/storybook-sword-adventure/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-10-02
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:vibejam-2026

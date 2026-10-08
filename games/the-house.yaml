@@ -3,20 +3,15 @@ title: The House
 tagline: Explore an unsettling house and solve its puzzles as the place seems to
   watch you.
 description: >-
-  The House is a browser-based horror adventure with puzzle elements, set in a
-  strange house that seems to know you are there. You explore it room by room
-  and solve what each room presents, while the game keeps hinting that the house
-  is aware of whoever walks through it.
+  Explore a strange house room by room and solve its puzzles while it seems to
+  watch you.
 
 
-  It is based on the novel House of Leaves, and the creator says it grew out of
-  a longtime admiration for that book. They made it with Codex and the PixiJS
-  rendering library, it plays on a phone or a computer, and it placed 512th of
-  945 in Vibe Jam 2026.
+  Horror adventure with puzzles. A house that feels like the main presence. A
+  tone that leans toward quiet dread.
 
 
-  That source shapes the unsettling premise. The house itself feels like the
-  main presence, and the tone leans toward quiet dread.
+  Based on the novel House of Leaves, a book the creator has long admired.
 play:
   url: https://house-of-leaves-antigravity.vercel.app
   embeddable: true
@@ -54,7 +49,7 @@ media:
     - games/the-house/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-09-29
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:vibejam-2026

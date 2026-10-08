@@ -3,19 +3,17 @@ title: Vibecoder Simulator
 tagline: Craft items, fight rival players, and race to the portal to escape a
   digital hell.
 description: >-
-  Vibecoder Simulator traps you, a programmer, in a hostile matrix with one way
-  out: the portal. You prompt your AI companion to craft the items you need,
-  fend off rival players racing for the same portal, and fight your way toward
-  that exit.
+  Vibecoder Simulator traps you, a programmer, in a hostile matrix. The portal
+  is the only way out. The game mixes action, puzzle, strategy and simulation in
+  a space shared with other players.
 
 
-  It mixes action, puzzle, strategy, and simulation in a space shared with other
-  players, on phones as well as desktop. The tools were Codex and Three.js.
+  Items crafted by prompting your AI companion. Fights with rival players racing
+  for the same portal. Token mining for resources. A blue screen of death to
+  survive on the way out. Whipping your AI into working harder.
 
 
-  The game plays with the everyday habits of vibecoding. You can whip your AI
-  into working harder, mine tokens for resources, and survive a blue screen of
-  death on the way to the portal, the only exit from this digital hell.
+  tulayha0 describes the game as "My mental state-of-mind when vibecoding."
 play:
   url: https://vibe-bot-jam.pages.dev
   embeddable: true

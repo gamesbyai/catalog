@@ -2,35 +2,23 @@ slug: one-last-surf
 title: One Last Surf
 tagline: Ride waves through a surf session that runs from daylight into a starry night.
 description: >-
-  You're sitting on a surfboard in first person, looking out at the swell. Your
-  first job is a bit of wave-reading, finding its tallest point, because that's
-  where the wave will start to break. From there you paddle toward it, holding
-  Shift to pick up speed while a stamina bar shrinks.
+  Sit on a surfboard in first person, read the swell for its tallest point, and
+  paddle hard enough to catch the wave as it breaks.
 
 
-  When you think you're moving fast enough, you press Space to try to catch the
-  wave. It usually takes a few attempts, though the in-game guide reassuringly
-  promises you'll know the instant you've got one.
+  Stamina that drains while you sprint-paddle. A few attempts, usually, before
+  you catch one. The barrel as the goal, with the wave curling over you. A day
+  of surfing that drifts into sunset and ends under a starry sky. A three-step
+  guide card on G.
 
 
-  Pressing G opens that guide, and it's a polished three-step card with its
-  own pictures of the peak, the paddle and the barrel.
+  Hold Shift to paddle faster and press Space to catch the wave. Use W and S to
+  move deeper into the wave or ahead on it, and WASD to carve. Press Space again
+  to bail.
 
 
-  Once you're up, the aim is to stay steady as the barrel curls over you and
-  keep yourself tucked inside it, the part all that paddling has been building
-  toward. W and S move you deeper into the wave or further ahead on it, while
-  WASD also handles carves and turns. Press Space again and you bail out.
-
-
-  It all happens on a sunny ocean, and sweriko describes a whole day of surfing
-  that drifts into sunset and ends under a night sky full of stars.
-
-
-  sweriko made it after spending a year learning to surf and then going two
-  years without getting back in the water. Barreling waves are the main draw
-  here. They found getting barreled an intriguing idea because it's so hard to
-  pull off.
+  sweriko made it after a year of learning to surf and two years out of the
+  water, drawn to getting barreled because it's so hard to pull off.
 play:
   url: https://onelast.surf
   embeddable: true
@@ -72,7 +60,7 @@ media:
     - games/one-last-surf/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-10-02
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:vibejam-2026

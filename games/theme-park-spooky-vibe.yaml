@@ -2,21 +2,16 @@ slug: theme-park-spooky-vibe
 title: Theme Park Spooky Vibe
 tagline: Build and run a spooky theme park while keeping visitors entertained.
 description: >-
-  Theme Park Spooky Vibe is a park builder with a haunted look. You design the
-  park, place attractions, and manage the grounds so visitors stay entertained,
-  and the building choices you make shape how the park runs over time.
+  In this park-building simulation, you run a spooky theme park.
 
 
-  The inspiration is Theme Park World, the 90s PC game the creator played as a
-  child and now considers nearly impossible to play. Their stated aim is to draw
-  attention back to the park-building genre, and they made this one with Claude
-  Code, using Three.js for the 3D graphics. It is playable on mobile and placed
-  486th of 945 in Vibe Jam 2026.
+  Attractions to design and build. Park grounds to manage. Visitors to keep
+  entertained. Building choices that shape how the park runs over time.
 
 
-  The eerie look carries through everything you build: rides and attractions fit
-  a ghostly setting, which gives the classic park-building idea a
-  Halloween-style twist.
+  Inspired by Theme Park World, the 1990s PC game the creator played as a child.
+  According to the creator, the original is now nearly impossible to play, and
+  this game aims to draw attention back to the park-building genre.
 play:
   url: https://theme-park-spooky-vibejam.vercel.app
   embeddable: true
@@ -53,7 +48,7 @@ media:
     - games/theme-park-spooky-vibe/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-09-29
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:vibejam-2026

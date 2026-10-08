@@ -3,20 +3,17 @@ title: Reach the Relay
 tagline: Pick a route through AI-ravaged ruins and keep your VIP alive in
   turn-based fights.
 description: >-
-  You lead a party across the ruins of an AI apocalypse, and the VIP in your
-  care has to survive the whole trip. Reach the Relay is a turn-based RPG that
-  opens every run with a choice of three routes, then takes you through the
-  encounters on that path until the VIP reaches the Relay.
+  Lead a party across the ruins of an AI apocalypse and keep your VIP alive all
+  the way to the Relay.
 
 
-  The design draws on Final Fantasy, Dragon Quest, and the Temple Trekking
-  activity from OSRS. It was made with Claude Code on Phaser.
+  A choice of three routes at the start of every run. Encounters shaped by the
+  route you pick. Active time battles in the style of SNES-era role-playing
+  games.
 
 
-  Fights use the active time battle style of SNES-era role-playing games, so
-  turns carry a real-time flavor instead of strict alternation. Because the
-  route you pick shapes what you face along the way, the strategy starts before
-  the first fight.
+  The design draws on Final Fantasy, Dragon Quest and the Temple Trekking
+  activity from OSRS.
 play:
   url: https://reach-the-relay.pages.dev
   embeddable: true

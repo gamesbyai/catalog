@@ -3,21 +3,22 @@ title: Vampire Strider
 tagline: Run through a haunted castle as a vampire prince, slashing monsters
   along the way.
 description: >-
-  A vampire prince sprints through a castle without stopping, and you cut down
-  the monsters in his way while trying to last as long as possible. The castle
-  has no finish line.
+  A vampire prince sprints through a castle without stopping, with no finish
+  line. You cut down monsters in his way, trying to last as long as possible.
 
 
-  Leveling up gives you a choice of cards. Each card either adds something new
-  to your kit or upgrades something you already carry. They come in four groups:
-  weapons, passives that raise stats and survivability, summons that bring
-  allies into the fight, and magic spells. Examples are Holy Water, Thorn Whip,
-  Battle Axe, Holy Cross and Blaze.
+  Weapon, passive, summon and magic spell cards. Passives for stats and
+  survivability. Summoned allies joining the fight. Cards like Holy Water, Thorn
+  Whip, Battle Axe, Holy Cross and Blaze. Separate hunters, each a different
+  character to build a run around.
 
 
-  The game also lists separate hunters, so a run can be built around a different
-  character. The creator drew on classic gothic action games and paired that
-  mood with the quick rhythm of an auto-runner.
+  Choose a card when you level up. Each card adds something new or upgrades an
+  existing one.
+
+
+  mkronyak drew on classic gothic action games and paired that mood with an
+  auto-runner's quick rhythm.
 play:
   url: https://vampirestrider.com?instant=
   embeddable: true

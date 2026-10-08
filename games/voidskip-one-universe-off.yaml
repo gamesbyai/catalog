@@ -2,20 +2,16 @@ slug: voidskip-one-universe-off
 title: "Voidskip: One Universe Off"
 tagline: Pilot a spaceship through shifting universes to find the one you came from
 description: >-
-  Voidskip: One Universe Off is a retro-styled space shooter. You fly a ship
-  that jumps from one universe to the next, searching for the universe it
-  originally came from. Each jump drops you into a new setting, so a run is a
-  chain of encounters with the goal of finding home.
+  Jumping from one universe to the next, the spaceship you fly searches for the
+  universe it originally came from.
 
 
-  The game mixes action, adventure, and shooting, and its creator drew on retro
-  games in general, with Star Fox as a particular influence. The premise of
-  hopping between universes gives the journey a clear structure, and the
-  ship-based combat follows the arcade tradition that inspired it.
+  New settings with every jump. Each run, a chain of encounters. Arcade-style
+  ship combat. A mix of action, adventure and shooting.
 
 
-  It was made as an entry in Vibe Jam 2026 and runs in the browser on Three.js.
-  The creator used ChatGPT while building it. The game is single-player.
+  andresmujica drew on retro games in general, with Star Fox as a particular
+  influence.
 play:
   url: https://voidskip.vercel.app
   embeddable: true
@@ -51,7 +47,7 @@ media:
     - games/voidskip-one-universe-off/shot-2
 dates:
   added: 2026-10-01
-  updated: 2026-10-01
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:vibejam-2026

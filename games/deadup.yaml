@@ -2,21 +2,18 @@ slug: deadup
 title: DEADUP
 tagline: Shoot endless zombie waves while the arena closes in around you.
 description: >-
-  DEADUP is a zombie survival shooter in an arena that keeps closing in. The
-  waves never stop coming, and as time passes the space you have to move in
-  shrinks, so each run tests how long you can stay alive while both problems get
-  worse.
+  Survive endless zombie waves in an arena that keeps closing in.
 
 
-  The creator, AbelSanzDev, draws on two sources. The nonstop wave survival
-  comes from Call of Duty Zombies, and the sense of climbing through rising
-  pressure comes from Tower of God. It was built with Cursor on Three.js, plays
-  on phones as well as desktops, and placed 239th of 945 at Vibe Jam 2026.
+  Waves that never stop. Shrinking space to move in. Chaos that escalates the
+  longer you last.
 
 
-  Together they give each run an upward push. The chaos escalates the longer you
-  last, the horde keeps pressing, and the room to get away from it keeps
-  shrinking.
+  Keep moving, keep shooting, and see how long you last.
+
+
+  AbelSanzDev drew the nonstop waves from Call of Duty Zombies and the rising
+  pressure from Tower of God.
 play:
   url: https://deadup.abel.social
   embeddable: false
@@ -52,7 +49,7 @@ media:
     - games/deadup/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-09-29
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:vibejam-2026

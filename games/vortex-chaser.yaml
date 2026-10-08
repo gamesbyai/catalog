@@ -3,20 +3,20 @@ title: Vortex Chaser
 tagline: Drive a storm-chasing rig, boost and drift after tornadoes, and tune
   your vehicle.
 description: >-
-  Vortex Chaser puts you behind the wheel of a storm-chasing rig and points you
-  at violent supercells rated EF3 and above. It is an arcade driving game: you
-  boost and drift to close the distance to a storm, and the run is about staying
-  on the tornado's trail.
+  This arcade driving game puts you behind the wheel of a storm-chasing rig
+  aimed at violent supercells rated EF3 and above.
+
+
+  Boosting and drifting to close the gap on a storm. Staying on the tornado's
+  trail as the point of a run. Multiplayer support.
+
+
+  Press G at any time to open the garage and customize your rig during a run,
+  not only between runs.
 
 
   The idea came from the creator's son, who loves tornado chasing games. The
-  creator enjoys the movies but wanted to build something to the son's taste,
-  and made it with Antigravity on Three.js. It supports multiplayer.
-
-
-  The garage is always a key away. Press G at any time to open it and customize
-  the rig on the fly rather than only between runs, so you can change your setup
-  mid-chase.
+  creator likes the movies but wanted to build something to the son's taste.
 play:
   url: https://vortex-chaser.waterschie.com?portal=true
   embeddable: true

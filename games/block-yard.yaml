@@ -2,21 +2,15 @@ slug: block-yard
 title: Block Yard
 tagline: Place factories on a grid to build shapes, then design levels to stump friends.
 description: >-
-  Block Yard is a grid puzzle about factories. You place them on the board so
-  they manufacture a target shape, and each level is a question of where every
-  piece should go.
+  Place factories on a grid so they build a target shape. Each level is a
+  question of where every piece goes.
 
 
-  It was built mobile first, so the interface is made for touch, but the puzzles
-  are meant to have real difficulty. The creator started it for the gamedev.js
-  jam after seeing the YouTube Playables sponsor, later entered it in Vibe Jam
-  2026, and says it was built with Claude Code in Phaser.
+  Touch-first puzzles with real difficulty. A level design mode for building
+  your own puzzles. Shared levels that friends have to solve.
 
 
-  Once you understand how the factories work, a level design mode lets you build
-  your own puzzles and share them, so friends have to solve what you made. That
-  shifts the game from solving to setting traps, and it gives the puzzles a
-  social side.
+  Work out how the factories behave, then set traps of your own.
 play:
   url: https://block-yard.com
   embeddable: true
@@ -52,7 +46,7 @@ media:
     - games/block-yard/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-09-29
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:vibejam-2026

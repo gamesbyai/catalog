@@ -2,31 +2,20 @@ slug: temple-fist
 title: Temple Fist
 tagline: Box in a photoreal ring where every frame comes from AI-generated video.
 description: >-
-  The opening view puts you in first person behind a pair of worn brown leather
-  gloves, looking across a rope-bound ring with a stone floor in the middle of a
-  bamboo grove. A shirtless fighter sits cross-legged at the far side, hands
-  resting on his knees, while a START button waits between your gloves.
+  Box a fighter in a ring in a bamboo grove, where every frame comes from
+  AI-generated video instead of a 3D scene.
 
 
-  Press it and he rises into a guard with his wrapped fists up.
+  Jab, Hook and Uppercut buttons. A fighter who rises into his guard when the
+  bout starts. Footage instead of models, down to his rising from his seat.
 
 
-  Three buttons line up across the lower screen, labeled Jab, Hook and Uppercut.
-  Just above them, a thin white bar stretches across his belt line.
+  Press START, then throw your punches.
 
 
-  None of what you're looking at is a 3D scene. Every frame of the bout comes
-  from AI-generated video rather than a 3D model, right down to the fighter
-  rising from his seat. Even the jade pendant hanging at his chest is part of
-  the footage.
-
-
-  Boxing wasn't a random pick, because vamonke saw that its frame-to-frame
-  structure lines up cleanly with how video models behave.
-
-
-  vamonke had watched AI trailers show off a photoreal look without any of them
-  being playable. They wanted that same look in a game you can actually play.
+  vamonke saw that boxing's frame-to-frame structure lines up with how video
+  models behave, and wanted the photoreal look of AI trailers in a game you can
+  actually play.
 play:
   url: https://templefist.vamonke.com
   embeddable: true
@@ -66,7 +55,7 @@ media:
     - games/temple-fist/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-10-02
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:vibejam-2026

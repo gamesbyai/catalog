@@ -2,21 +2,16 @@ slug: the-far-colony
 title: The Far Colony
 tagline: Grow an alien organism across the Moon while human machines try to burn it out.
 description: >-
-  The Far Colony is a strategy simulation that tells the moon colonization story
-  from the other side. You control an alien organism that starts from a damaged
-  seed and spreads across the lunar dust, growing organs as it expands, while
-  human machines work to burn it out.
+  Control an alien organism that grows from a damaged seed across the lunar dust
+  while human machines try to burn it out.
 
 
-  The creator had wanted to try making a strategy game, and a separate jam with
-  an alien theme prompted the idea of seeing colonization through alien eyes. It
-  was coded with Codex and rendered in 3D with Three.js, and it ranked 49th of
-  945 in Vibe Jam 2026.
+  Organs grown as you expand. Colonization of the Moon told from the alien side.
+  Growth against defense in every run. Humans as the threat.
 
 
-  Instead of managing human outposts, you tend something invasive and living,
-  and the humans become the threat. A run is a contest between growth and
-  defense: keep growing, and keep the machines from burning you out.
+  The creator wanted to try making a strategy game, and to see colonization
+  through alien eyes.
 play:
   url: https://the-far-colony.netlify.app
   embeddable: true
@@ -52,7 +47,7 @@ media:
     - games/the-far-colony/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-09-29
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:vibejam-2026

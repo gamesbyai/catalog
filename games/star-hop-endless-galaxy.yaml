@@ -1,22 +1,28 @@
 slug: star-hop-endless-galaxy
 title: "Star Hop: Endless Galaxy"
 tagline: Tap to launch your ship from planet to planet and climb through named sectors.
-description: "Your ship circles a planet until you tap, then it launches toward the next one and has to get caught in that planet's orbit. It's a one-tap space arcade game, so that single input carries you up a column of planets that keeps on going.
+description: "Your ship circles a planet, then flies toward the next one and has
+  to be caught in its orbit. In this space arcade game, the planets form a
+  column that keeps going.
 
 
-  Some catches flash a PERFECT bonus on screen while a combo counter sits at the top, and a Hyperdrive burst doubles the points you're earning.
+  PERFECT bonuses on some catches, with a combo counter. Hyperdrive bursts that
+  double the points you earn. Rocks drifting through the gaps, and warning notes
+  to hold off until the way is open. Golden crates floating along the route.
+  Named sectors along the climb, with Sector 3 called Emerald Fields. A
+  collection past the score, with 100 pilot cards to gather. Collectible ships
+  that take their cue from famous spacecraft.
 
 
-  Space between the planets isn't always clear. Rocks drift through the gaps, and the game flashes a note telling you to hold off until the way is open. Golden crates float along the route too.
+  Tap to launch. Until you tap, your ship keeps circling its planet. The game
+  uses one tap as its only input.
 
 
-  As you climb you pass through named sectors and the sky changes with them, so Sector 3 gets the pretty name Emerald Fields and washes the screen in green.
-
-
-  Past the score there's a collection to fill, with 100 pilot cards to gather. There are also ships to collect that take their cue from famous spacecraft.
-
-
-  Dušan Schnelly wrote the design brief, and an AI agent turned it into a playable prototype overnight. Since then they've built it with several Claude Code sessions running side by side, each on its own branch, while handling the phone playtesting and the tuning by hand. Every planet, ship and card, even the logo, is drawn in code, and the sounds are synthesized."
+  Dušan Schnelly drafted the design brief, and an AI agent turned it into a
+  playable prototype overnight. Since then they've built it with several coding
+  sessions running side by side, each on its own branch, while doing the phone
+  playtesting and tuning by hand. Every planet, ship and card, even the logo, is
+  drawn in code, and the sounds are synthesized."
 play:
   url: https://star-hop.app/
   platforms:
@@ -25,6 +31,8 @@ play:
     by: submission
     date: 2026-10-03
   embeddable: true
+  controls:
+    - "Tap: launch from the planet your ship is circling"
 creator:
   name: Dušan Schnelly
   handle: star-hop-endless-galaxy
@@ -39,7 +47,14 @@ made:
   aiShare: all
   source: "Creator's submission (issue #86)"
   evidence: creator
-  notes: "I wrote the design brief and an AI agent built the first playable prototype overnight. Since then I've worked with Claude Code: several sessions in parallel, each on its own branch, writing the TypeScript, three.js rendering and Supabase backend. There are no image or sound files: planets, ships, cards and the logo are drawn in code, sounds are synthesized. By hand I playtest on my phone, decide what goes in and tune the feel. Telemetry and Reddit feedback show where players struggle, and Claude turns that into fixes."
+  notes: "I wrote the design brief and an AI agent built the first playable
+    prototype overnight. Since then I've worked with Claude Code: several
+    sessions in parallel, each on its own branch, writing the TypeScript,
+    three.js rendering and Supabase backend. There are no image or sound files:
+    planets, ships, cards and the logo are drawn in code, sounds are
+    synthesized. By hand I playtest on my phone, decide what goes in and tune
+    the feel. Telemetry and Reddit feedback show where players struggle, and
+    Claude turns that into fixes."
 tech:
   engine: threejs
   multiplayer: single
@@ -54,7 +69,7 @@ media:
     - games/star-hop-endless-galaxy/shot-2
 dates:
   added: 2026-10-03
-  updated: 2026-10-03
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: form

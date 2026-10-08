@@ -3,21 +3,20 @@ title: Beat World 2.0
 tagline: Make beats in pixel-art cities, win critic reviews, and collect each
   city's soundsystem.
 description: >-
-  Beat World 2.0 has you produce beats in cities around the world. Each city has
-  hometown critics who review what you make, and earning their approval wins you
-  that city's iconic soundsystem rig.
+  Produce beats in cities around the world and win over each city's hometown
+  critics.
 
 
-  The rigs come from local music cultures: the boombox of the Bronx, the picó of
-  Puerto Rico and the sonidero of Mexico City. The goal is to collect rigs city
-  by city. The beats are real ones, made with an arcade-style approach rather
-  than a full production program.
+  Real beats, made the arcade way rather than with a full production program.
+  Iconic soundsystem rigs to collect, like the Bronx boombox, the picó of Puerto
+  Rico and the sonidero of Mexico City. Producer styles, starting with Boombap.
 
 
-  You pick a producer style with the arrow buttons, starting with Boombap,
-  choose M or F, type a producer name, and can optionally enter a home city. The
-  creator, an architect-turned-DJ from Bogotá, aimed it at beginners and kids,
-  drawing on DOS games like Commander Keen.
+  Pick a style, type a producer name and, if you like, a home city.
+
+
+  The creator, an architect-turned-DJ from Bogotá, aimed it at beginners and
+  kids, drawing on DOS games like Commander Keen.
 play:
   url: https://beatworld.nicoborja.com
   embeddable: true

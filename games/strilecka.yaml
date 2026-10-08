@@ -2,22 +2,16 @@ slug: strilecka
 title: Strilecka
 tagline: Draw your own plane, then fly it in multiplayer dogfights.
 description: >-
-  Strilecka is an online multiplayer dogfighter with a simple loop: draw a
-  plane, then take it into the air against other players, on a phone or a
-  desktop. The aircraft you sketch is the one you pilot, so every match starts
-  with your own drawing and ends with it in combat against other players'
-  drawings.
+  Sketch a plane, take it into the air and dogfight other players' drawings
+  online.
 
 
-  The creator made it together with their 6-year-old son, who loves drawing
-  planes, and built it with Claude Code. In Vibe Jam 2026 it placed 15th out of
-  945 entries.
+  Your own drawing as your aircraft. Matches that start at the drawing board. A
+  style taken from a 6-year-old's airplane sketches. Planes that are yours down
+  to every line.
 
 
-  The whole visual style looks like a notebook doodle, taken from the boy's real
-  airplane sketches. That look gives every plane a personal, hand-made feel, and
-  the design step makes each player's aircraft their own, down to the lines they
-  drew.
+  The creator built it with their son, who loves drawing planes.
 play:
   url: https://strilecka.xprao04.partykit.dev
   embeddable: false
@@ -53,7 +47,7 @@ media:
     - games/strilecka/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-09-29
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:vibejam-2026

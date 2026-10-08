@@ -3,48 +3,23 @@ title: Meridian Wake
 tagline: Fly a brick-built spaceship, trade, mine, fight, and follow stories
   across star systems.
 description: >-
-  Pick a Sparrow, a Shuttle or a Star Barge, then accept the first transmission
-  waiting at New Boston. From there you launch, pull up the map, plot a course
-  for Arcturus and jump, and landing on New Greenland wraps up that opening job.
+  Fly your ship across star systems, trading, mining, fighting and following
+  stories in an old-school space trader.
 
 
-  Ships, planets and stations are modeled in blocky 3D bricks, an unusual look
-  for an old-school space trader.
+  A contract board, markets, a shipyard, an outfitter, fleet services and a bank
+  at every port. Cargo, passengers, mining and escorts to command. Survey, assay
+  and excursion contracts, each naming an exact planet. The Free Worlds
+  storyline, with civilian and alien stories beside it. Loans, wages and a
+  credit rating at the bank.
 
 
-  Every port you land at has a contract board, markets, a shipyard, an
-  outfitter, fleet services and a bank. Between them you can haul cargo, ferry
-  passengers, mine, refit your ship and give orders to your escorts.
+  Pick a Sparrow, a Shuttle or a Star Barge, accept the first transmission at
+  New Boston, and plot a course for Arcturus.
 
 
-  The contracts get pleasantly specific, since each one names an exact planet.
-  Survey jobs want brand-new scans. Assay jobs use up Metal you're actually
-  carrying, while excursions want every stop visited before you head back home.
-
-
-  The main storyline follows the Free Worlds, with civilian and alien storylines
-  running beside it.
-
-
-  On the Concourse screen you'll find conversations, a field guide and four
-  branching stories. A journal keeps track of the objectives you haven't
-  finished and the routes they need. Once you reach the ending, you're free to
-  keep flying.
-
-
-  The bank screen has more bookkeeping than you'd expect from a space game,
-  listing daily payments, crew wages, your credit rating and loan offers tied to
-  your income. At the outfitter, you can buy upgrades and leave them stored on a
-  planet to install later, even on a different ship.
-
-
-  Your progress autosaves in the browser. The options let you remap keys, adjust
-  audio and graphics, switch to fullscreen, and export or import your save.
-
-
-  This is a reimagining of Endless Sky with its own geometry and interface,
-  while its universe data, story inspiration and audio come from the Endless Sky
-  contributors.
+  A reimagining of Endless Sky with its own geometry and interface, using
+  universe data, story inspiration and audio from the Endless Sky contributors.
 play:
   url: https://meridian-wake-g6a.vercel.app
   embeddable: true
@@ -85,7 +60,7 @@ media:
     - games/meridian-wake/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-10-02
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:awesome-opus

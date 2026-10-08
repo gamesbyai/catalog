@@ -2,36 +2,20 @@ slug: snapfc
 title: SnapFC
 tagline: Drag, aim, and snap your players to score in quick physics soccer matches.
 description: >-
-  SnapFC opens on a dark, floodlit stadium with a glowing green shield badge,
-  and it's refreshing that none of the menu buttons asks you to sign up first.
-  Solo Play, Find an Opponent and Online Lobby are all right there, with a
-  leaderboard underneath.
+  Drag one of your players, aim, and snap it toward the ball. Momentum and
+  collisions do the rest.
 
 
-  Once a match starts, you never run a player around. Instead you drag one of
-  your pieces, aim it and snap it toward the ball, and then momentum and
-  collisions take over. Each turn comes down to picking an angle and how much
-  power goes behind it.
+  Physics soccer inspired by tabletop games. Angle and power as every turn's
+  decision. Shots that attack and leave you exposed at once. Solo play, opponent
+  matchmaking and an online lobby. A leaderboard.
 
 
-  Tabletop games inspired it, and the rules are simple enough that you'll have
-  them down within seconds.
+  Stay available for an online opponent while you keep playing solo.
 
 
-  The depth comes from positioning and timing. A careless shot leaves your side
-  exposed, while a well-placed snap can set up a scoring chance, so each snap
-  ends up a bit of an attacking move and a defensive one at once.
-
-
-  Matches are short and competitive, and you can stay available for an online
-  opponent while you keep playing solo.
-
-
-  ivancorreces wanted a tiny soccer game you could start instantly and enjoy
-  within seconds, built on physics mechanics. They aimed for something easy to
-  learn but competitive enough to replay, where each move feels intentional and
-  depends on skill. If you start on a desktop, there's even a QR code on the
-  menu you can scan to carry on from your phone.
+  ivancorreces wanted a tiny soccer game you could start instantly, easy to
+  learn but competitive enough to replay.
 play:
   url: https://snapfc.com
   embeddable: true
@@ -67,7 +51,7 @@ media:
     - games/snapfc/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-10-02
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:vibejam-2026

@@ -1,33 +1,25 @@
 slug: tinygca
 title: TinyGCA
 tagline: Guide a plane to the runway by sending heading commands from a radar scope.
-description: "Drag the compass dial to pick a heading, then hit Send Heading and
-  the aircraft turns to match. You're a ground-controlled approach controller
-  guiding a plane toward the runway.
+description: "Read the briefing that opens each session, then press Start
+  Control to take charge of the approach. You play a ground-controlled approach
+  controller, bringing a plane in to the runway over the radio.
 
 
-  Keep the plane on the line that leads to the runway. If the plane drifts off
-  the line, a radio message tells you it's slightly left of course and
-  correcting.
+  Spoken ATC-style radio calls, also written out, like slightly left of course,
+  correcting. A best score to beat.
 
 
-  Voice is on by default, and the ATC-style calls are spoken aloud as well as
-  written. A best score is kept too.
+  Pick a heading by dragging the compass dial. Press Send Heading and the plane
+  turns to match. Keep the plane on the path to the runway. Adjust the heading
+  in five-degree steps with minus and plus buttons, or hit Reset. Press the Go
+  Around button if the approach goes wrong.
 
 
-  You can nudge the heading five degrees at a time with the minus and plus
-  buttons, or reset it. If an approach goes wrong, you can use the Go Around
-  button.
-
-
-  Each session begins with a briefing, and you press Start Control to take over
-  the approach.
-
-
-  The creator, tatesuke, got the idea from videos of real GCA approaches and
-  wanted to capture a little of that atmosphere. They shaped the concept through
-  repeated testing, tuning aircraft behavior, radar look, controls and the radio
-  voice, while AI tools wrote all of the code."
+  tatesuke got the idea from footage of real GCA approaches and wanted to bring
+  a little of that mood into a game. Through repeated testing, tatesuke shaped
+  the concept and tuned how the aircraft behaves, the radar look, the controls,
+  and the radio voice. AI tools wrote all of the code."
 play:
   url: https://tatesuke.github.io/TinyGCA/
   platforms:
@@ -36,6 +28,13 @@ play:
     by: submission
     date: 2026-10-06
   embeddable: true
+  controls:
+    - "Compass dial drag: pick a heading"
+    - "Send Heading button: turn the plane to the chosen heading"
+    - "Minus and plus buttons: change the heading by five degrees"
+    - "Reset button: reset the heading"
+    - "Start Control button: take over the approach"
+    - "Go Around button: go around when an approach goes wrong"
 repo: https://github.com/tatesuke/TinyGCA
 creator:
   name: tatesuke

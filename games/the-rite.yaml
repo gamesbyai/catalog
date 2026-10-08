@@ -2,22 +2,18 @@ slug: the-rite
 title: The Rite
 tagline: Fight other players in a fast multiplayer arena shooter in your browser.
 description: >-
-  You shoot your way around an arena map against other online players, and the
-  first one to reach 20 kills wins.
+  The Rite lets you shoot around an arena against other players online. The
+  first to reach 20 kills wins.
 
 
-  Each match also runs on a 10-minute clock. The current leader is named for
-  everyone, so the race to 20 is always in view.
+  A 10-minute clock on each match, with the current leader named to everyone.
+  Two-weapon loadouts, like a pair of pistols with a machinegun, or a machinegun
+  with a shotgun, switched at any moment. Health and a separate shield meter.
+  More than one map to fight on. Live chat between players.
 
 
-  You carry two weapons at a time, like a pair of pistols with a machinegun, or
-  a machinegun with a shotgun. You select which of the two you're using at any
-  moment. Your character has health and a separate shield meter. The game has
-  more than one map. Players can chat with each other live.
-
-
-  MyMoonEnt names Unreal Tournament as the inspiration, a series Epic no longer
-  releases alongside each new Unreal Engine version.
+  MyMoonEnt names Unreal Tournament as the inspiration. Epic no longer releases
+  a new Unreal Tournament with each Unreal Engine version.
 play:
   url: https://therite.magooney.org
   embeddable: true

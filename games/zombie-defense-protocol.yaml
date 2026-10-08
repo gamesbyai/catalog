@@ -3,30 +3,23 @@ title: ZOMBIE DEFENSE PROTOCOL
 tagline: Place towers to build a killbox that stops waves of zombies and
   exploding bosses.
 description: >-
-  You pick a difficulty first, then press Deploy to start. Easy hands you 30
-  lives and 50% more rewards, Medium settles on 20 lives, and Hard cuts you to
-  15 lives while paying 30% less. Whichever you pick, your job is holding the
-  line through 30 waves of zombies.
+  Hold back 30 waves of zombies with towers you build yourself. Easy comes with
+  30 lives and 50% extra rewards, Medium has 20 lives, and Hard gives 15 lives
+  and pays 30% less in rewards. Not every tower hits every threat, and mixing
+  tower types matters.
 
 
-  You pick a tower and click open ground to place it. The Gunner is the $50
-  bargain that can hit umbrellas, and Sniper, Mortar, Minigun, Laser, Frost,
-  Flamer, Tesla, Recon and Cannon round out a wide roster of ten.
+  Ten towers, including Gunner, Sniper, Mortar, Minigun, Laser, Frost, Flamer,
+  Tesla, Recon and Cannon. A $50 Gunner that can hit umbrellas. Recon, a support
+  tower that buffs the towers around it, spots invisible enemies, and gets past
+  shields and umbrellas. Zombies with shields or umbrellas, invisible zombies,
+  and crawlers. Every fifth wave, zombies that arrive by car. Bosses that split
+  into swarms on death, so a kill doesn't quite end the fight.
 
 
-  Not every tower hits every threat, and the horde keeps you honest about it,
-  with some zombies carrying shields or umbrellas, some showing up invisible,
-  and some crawling.
-
-
-  Recon is the odd support piece in the bunch. It buffs the towers around it,
-  gets past shields and umbrellas, and spots invisible enemies, so mixing tower
-  types matters. Every fifth wave pulls up by car, and each boss bursts into a
-  swarm when it dies, so a boss kill isn't quite the end of the fight.
-
-
-  You can call the next wave early, set the speed anywhere from 1x to 10x, and
-  click any tower you've placed to inspect, upgrade or sell it.
+  Choose a difficulty, then press Deploy to start. Pick a tower and click open
+  ground to place it. Click a placed tower to inspect, upgrade or sell it. Call
+  the next wave early, and set the speed anywhere from 1x to 10x.
 play:
   url: https://vibejgame.vercel.app
   embeddable: true

@@ -2,27 +2,23 @@ slug: spice-jam
 title: Spice Jam
 tagline: Harvest spice in the desert, hunt rival harvesters, and outlast the worm.
 description: >-
-  Spice Jam sends you across a desert as a hooded harvester armed with a knife.
-  You scoop spice off the open sand until you're holding 10, the most you can
-  carry, then haul it home to the base.
+  Spice Jam puts you in a desert as a hooded harvester armed with a knife.
 
 
-  The other people out there are harvesters too, and killing one hands you
-  whatever spice they were carrying, so every rival on the dunes doubles as a
-  walking stash.
+  Other players, each one a rival harvester. A glowing pack that tells you
+  someone is carrying spice. Spice that falls to the sand when you die. The worm
+  out on the open sand. Gear at a few stands back at base. Room for up to 20
+  players.
 
 
-  A glowing pack tells you that someone is carrying spice. Your own spice drops
-  when you die.
+  Scoop spice off the open sand until you're holding 10, the most you can carry.
+  Kill a rival harvester to take the spice they carry. Drop your haul at base to
+  add it to your bank and restore health and shield.
 
 
-  Dropping your haul at the base adds it to your bank and patches up your health
-  and shield, which turns every trip home into a refill as well as a payout. Out
-  on the open sand there's a worm to worry about.
-
-
-  Back at base, you can find gear at a few stands. There's a cap of 20 players.
-  The setting borrows from Dune, with lasgun and holtzman themes.
+  ltfawg built it as a multiplayer prototype inspired by Dune, with lasgun and
+  holtzman themes. "Wanted more lasgun/holtzman interactions in my life," the
+  creator writes.
 play:
   url: https://spice.bananatriangles.com
   embeddable: true

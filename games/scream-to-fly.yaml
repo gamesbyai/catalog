@@ -2,20 +2,15 @@ slug: scream-to-fly
 title: Scream To Fly
 tagline: Scream to make your character fly through a platformer with life lessons.
 description: >-
-  Scream To Fly is a casual platformer where your voice is the way you get
-  around. Instead of only pressing buttons, you scream out loud to send your
-  character into the air and work through the stage. A run is a loose mix of
-  flying, landing, and picking up small pieces of advice along the way.
+  Scream out loud to send your character flying through a casual platformer.
 
 
-  According to the creator, it was built with Claude Code, Anthropic's coding
-  tool. In Vibe Jam 2026 it ranked 257th of 945 entries.
+  Your voice as the main control. Flying, landing and small pieces of life
+  advice along the way. Stress relief built into the core action. A light,
+  tongue-in-cheek tone.
 
 
-  The advice is part of the point. The idea behind the game is stress relief
-  paired with gentle life lessons: letting out a shout is the core action, and
-  the lessons show up as you play. The tone stays light and a little
-  tongue-in-cheek.
+  Let out a shout whenever you need to get airborne.
 play:
   url: https://screamtofly.com
   embeddable: true
@@ -51,7 +46,7 @@ media:
     - games/scream-to-fly/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-09-29
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:vibejam-2026

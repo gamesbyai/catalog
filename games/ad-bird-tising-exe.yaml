@@ -2,19 +2,18 @@ slug: ad-bird-tising-exe
 title: AD_BIRD_TISING.EXE
 tagline: Flap through obstacles in a Flappy Bird-style run with an ad-agency twist.
 description: >-
-  AD_BIRD_TISING.EXE is Flappy Bird dressed up as marketing satire. You tap to
-  flap, keep a bird airborne along a side-scrolling course and steer clear of
-  obstacles, and the first collision ends the run.
+  Flappy Bird as marketing satire. Tap to flap, keep the bird in the air and
+  steer clear of the obstacles.
 
 
-  The theme is a send-up of marketing, and the slogan promises high-performance
-  marketing delivered one flap at a time. The game was made with Google's
-  Antigravity.
+  One-button play. A run that ends at the first collision. A slogan promising
+  high-performance marketing, one flap at a time.
 
 
-  Under the theme sits the familiar one-button loop: tap, dodge and see how far
-  you get. A single tap is the whole control scheme, and a run lasts as long as
-  you keep clear of the obstacles.
+  Tap, dodge, and see how far you get.
+
+
+  Built with Google's Antigravity.
 play:
   url: https://stockout.studio
   embeddable: true

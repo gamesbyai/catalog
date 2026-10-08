@@ -2,21 +2,18 @@ slug: toxic-boss-cards
 title: Toxic Boss Cards
 tagline: Beat 50 terrible bosses in card battles, alone or with a friend.
 description: >-
-  Toxic Boss Cards pits you against 50 of the worst bosses imaginable, one card
-  duel at a time. You play cards from your hand against a nightmare manager and
-  try to wear them down before they do the same to you, working through the
-  campaign solo or with a friend.
+  Play solo or with a friend against nightmare bosses, one card duel at a time.
+  Your opponent is a nightmare manager. Try to wear each boss down before it
+  does the same to you.
 
 
-  The premise comes from the creator's own background as a developer who went
-  back to a corporate job, and the bosses lean into that workplace frustration.
-  According to the creator, it was built with Replit and drawn on a canvas,
-  which keeps it light enough to open and start playing quickly. Vibe Jam 2026
-  ranked it 453rd of 945.
+  A campaign of 50 of the worst bosses imaginable. Cards played from your hand.
+  Workplace frustration as the theme of the bosses.
 
 
-  Bring a second player and the office grind becomes a shared fight instead of a
-  lonely one.
+  VIII drew the premise from a background as a developer who went back to a
+  corporate job. According to the creator, the build keeps it light enough to
+  open and start playing quickly.
 play:
   url: https://toxicbosscards.com
   embeddable: true
@@ -51,7 +48,7 @@ media:
     - games/toxic-boss-cards/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-09-29
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:vibejam-2026

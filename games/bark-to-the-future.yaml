@@ -2,19 +2,16 @@ slug: bark-to-the-future
 title: Bark to the Future
 tagline: Flap with one button and bounce off walls to fill the screen with bullets.
 description: >-
-  Flap with one button through a side-scrolling shoot-'em-up. Taps keep your
-  character airborne while you dodge incoming threats and fire back, trying to
-  survive and score.
+  Flap with one button through a side-scrolling shoot-'em-up, dodging threats
+  and firing back.
 
 
-  The creator cites Gradius, Flappy Bird and pinball as influences, and each one
-  maps to a piece of the game: flap-style control, shmup pacing and ricochet
-  timing. Codex and the Phaser engine were the tools used to make it.
+  Walls that count as part of your arsenal. Bounces that chain into bullet-hell
+  chaos. A score that climbs with every shot you land.
 
 
-  Walls count as part of your arsenal. Chaining bounces off them builds toward
-  bullet-hell chaos, and the score climbs as you make the most of every shot you
-  land.
+  The creator cites Gradius, Flappy Bird and pinball, for flap-style control,
+  shmup pacing and ricochet timing.
 play:
   url: https://bttfgame.vercel.app
   embeddable: true

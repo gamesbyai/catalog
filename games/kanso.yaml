@@ -2,22 +2,16 @@ slug: kanso
 title: Kanso
 tagline: Grow and tend digital bonsai trees in calm, pretty scenes.
 description: >-
-  Kanso is a cozy bonsai game about finding calm. You cultivate living digital
-  bonsai trees inside softly lit scenes and shape them at an unhurried pace. A
-  session is simply tending a tree and settling into the quiet mood of the
-  space.
+  Grow and tend living digital bonsai trees in calm scenes, at an unhurried
+  pace.
 
 
-  The creator built it in about a week during the jam's time crunch, using
-  Codex, with the aim of making something that brings people joy. It placed
-  ninth of 945 entries at Vibe Jam 2026 and received the Most Zen award, and it
-  works on phones too.
+  A cozy game about finding calm. No hurry and no pressure. Light puzzle and
+  simulation elements. The tree you're tending at the center of every scene.
 
 
-  Nothing hurries you, and taking your time is the point. Atmosphere and
-  relaxation matter more than difficulty, the light puzzle and simulation
-  elements stay casual, and the tree you are tending remains the focus of every
-  scene.
+  The creator built it in about a week with Codex, to make something that brings
+  people joy.
 play:
   url: https://kansogame.com
   embeddable: true
@@ -56,7 +50,7 @@ media:
     - games/kanso/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-09-29
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:vibejam-2026

@@ -2,20 +2,15 @@ slug: stoke-slopes
 title: Stoke Slopes
 tagline: Ski downhill from a mountain lodge, collect tokens, and climb the leaderboards.
 description: >-
-  Stoke Slopes is a multiplayer arcade skiing game that starts every run in a
-  mountain lodge. Players spawn there, pick a slope, and race downhill
-  collecting tokens along the way, every run a dash to the bottom.
+  Ski downhill from a mountain lodge, collect tokens on the way down, and post a
+  time that stays on the leaderboard.
 
 
-  The lodge doubles as a shared hub where players gather before choosing a run.
-  The creator cites a love of skiing as the inspiration and wrote the game in
-  vanilla JavaScript with Claude Code, and it is hosted on Cloudflare. Out of
-  945 Vibe Jam 2026 entries, it came 38th.
+  Players gathering in the lodge before every run. Slopes to choose from.
+  Persistent leaderboards across sessions. Arcade skiing with other people.
 
 
-  What you post at the bottom matters. Results are saved to persistent
-  leaderboards, so every descent counts toward a standing that carries over
-  between sessions, and a strong run keeps its place against other players.
+  A love of skiing inspired the creator, who wrote it in vanilla JavaScript.
 play:
   url: https://stokeslopes.com
   embeddable: true
@@ -52,7 +47,7 @@ media:
     - games/stoke-slopes/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-09-29
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:vibejam-2026

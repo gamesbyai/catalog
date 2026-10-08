@@ -3,21 +3,19 @@ title: The Lost Colors
 tagline: Guide a young painter through a colorless kingdom, fighting creatures
   and restoring color.
 description: >-
-  The Lost Colors casts you as Hue, a young painter traveling through Canvaria,
-  a ruined kingdom drained of all color. You move through the world, fight the
-  color-hungry creatures that stole its hues, and bring the land back to life
-  before Hue fades away and the kingdom's last spark goes out.
+  Restore the colors stolen from Canvaria, a ruined kingdom drained of all
+  color. You play Hue, a young painter traveling through Canvaria, fighting the
+  color-hungry creatures that took its hues. You move through the world to bring
+  life back before Hue fades and the kingdom's last spark goes out.
 
 
-  The game mixes action, adventure, and platforming in 3D. The creator points to
-  Stardew Valley and Graveyard Keeper as influences on its tone, built it with
-  Cursor on Three.js, and describes the graphics as AI-generated. It ranked 99th
-  of 945 in Vibe Jam 2026.
+  Action, adventure, and platforming in 3D. Color as the goal and the stake.
+  Progress meant to show as the gray landscape fills back in. Hue fading with
+  the land on failure.
 
 
-  Restoration is the central idea. Color is both the goal and the stake, so your
-  progress is meant to show as the gray landscape fills back in, and failing
-  means Hue fades with it.
+  PatrykKarw6413 points to Stardew Valley and Graveyard Keeper as influences on
+  the tone and describes the graphics as AI-generated.
 play:
   url: https://thelostcolors.com
   embeddable: true
@@ -52,7 +50,7 @@ media:
     - games/the-lost-colors/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-09-29
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:vibejam-2026

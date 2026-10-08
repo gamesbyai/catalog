@@ -2,30 +2,24 @@ slug: typefall
 title: Typefall
 tagline: Build your own words or race to match the target before the letters pile up.
 description: >-
-  Letters drop into columns one tile at a time, and you nudge each falling tile
-  left or right before it settles. Whatever lands on the bottom row is the word
-  you're working on, so each tile's position matters as well as its letter. If
-  the stack reaches the top, your run is over.
+  Letters drop into columns one tile at a time, and whatever lands on the bottom
+  row is the word you're working on.
 
 
-  Three modes change what that bottom row actually has to spell.
+  Freestyle mode, with a level-up for any real 4 to 6 letter dictionary word on
+  the bottom row. Wordmatch mode, with the bottom row as your guess at a hidden
+  word. Wordle-style feedback on each letter of your guess. Geoquest mode,
+  Wordmatch with a place name as the hidden answer. Run-to-run Geoquest
+  categories of countries, world cities, US states and US state subdivisions. A
+  high scores list. Your choice of game language.
 
 
-  In Freestyle, any real dictionary word of 4 to 6 letters on the bottom row
-  moves you up a level. Wordmatch turns that same row into a guess at a hidden
-  word, and you get Wordle-style feedback on each letter.
+  Nudge each falling tile left or right before it settles. Each tile's position
+  matters as well as its letter. The run ends if the stack reaches the top.
 
 
-  Geoquest works like Wordmatch, but the answer is the name of a place. The
-  category changes from run to run and covers countries, world cities, US states
-  and US state subdivisions.
-
-
-  There's a high scores list, and you can pick the game's language.
-
-
-  skyhighgames042 says the idea had been with them for a long time. According to
-  them, AI is what made it feasible to build.
+  According to skyhighgames042, the idea had been with them for a long time, and
+  AI is what made it feasible to build.
 play:
   url: https://typefall.skyhighgames.com
   embeddable: true

@@ -1,30 +1,17 @@
 slug: sumo-boulders
 title: Sumo Boulders
 tagline: Shove rival boulders out of the ring across eight arenas with odd physics.
-description: "You win a round by knocking rival boulders out of the ring. It's a
-  physics brawl, so everything comes down to shoving and not getting shoved.
+description: "Knock rival boulders out of the ring to win a round in this
+  physics brawl, where you can be shoved out too. Each of the eight arenas bends
+  the physics in its own way. Six AI personalities play the rivals you face.
 
 
-  What keeps it interesting is that each of the eight arenas bends the physics
-  in its own way. One is a raft that tips on ocean swells, another a basalt raft
-  floating on a boiling lake, and one is black ice. Low orbit even cuts gravity
-  in half.
-
-
-  Other arenas throw in lightning, wind and sand, so a ring you've figured out
-  in one place won't behave the same in the next.
-
-
-  Six AI personalities play the rivals. You can take them on in a Ladder
-  gauntlet, or pick Battle mode and have up to eight boulders crowd into one
-  ring.
-
-
-  There's also a boulder builder, which lets you make your own fighter before
-  you go in. Online play runs peer-to-peer, and a gamepad works too.
-
-
-  The creator says they built it with Claude Code in Three.js."
+  Arenas from black ice under an aurora to half gravity in low orbit. A tipping
+  raft on ocean swells, and a basalt raft floating on a boiling lake. Lightning,
+  wind and sand in the other arenas. Ladder gauntlet for taking the rivals on.
+  Battle mode, with up to eight boulders crowding into one ring. Boulder builder
+  for making your own fighter before you go in. Peer-to-peer online play with
+  other players, and gamepad support too."
 play:
   url: https://danger.academy/Sumo-Boulders/
   platforms:

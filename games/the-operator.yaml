@@ -2,18 +2,19 @@ slug: the-operator
 title: The Operator
 tagline: Survive a night in a forest tower by working a broken emergency phone.
 description: >-
-  Your only way out of an abandoned forest tower at night is a broken emergency
-  phone. The Operator is a psychological horror puzzle game in which every call
-  for help runs into a line that keeps putting you on hold.
+  Stranded at night, your only way out is a broken emergency phone. The Operator
+  is a psychological horror puzzle game.
 
 
-  The horror comes from helplessness. The creator cites Coldline as an
-  inspiration and wanted the scariest element to be powerlessness instead of the
-  monster itself. It was put together in Antigravity on Three.js.
+  The abandoned forest tower you need to get out of. Hold lines on every call
+  for help. Siren Head outside the tower walls.
 
 
-  Siren Head lurks beyond the walls, and the tension builds as you wait, retry,
-  and figure out the phone system while the threat closes in.
+  Wait, retry, and work out the phone system while the threat closes in.
+
+
+  itscoleblake cites Coldline as an inspiration and wanted powerlessness, not
+  the monster itself, to be the scariest element.
 play:
   url: https://playtheoperator.vercel.app
   embeddable: true

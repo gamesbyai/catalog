@@ -3,17 +3,13 @@ title: Type Across America
 tagline: Spell your way from Colorado to Maine by typing the name of each state
   next door.
 description: |-
-  The road trip starts in Colorado, and the only way to get anywhere is to type. You enter the name of a state that borders the one you're in, and a green arrow carries you over to it.
+  The road trip across America starts in Colorado, and typing is the only way to move from state to state.
 
-  Every neighbor shows the first few letters of its name and a few clues about what it's known for. Some are wonderfully specific, like Snoopy for Minnesota or tax-free shopping for Delaware.
+  First few letters of each neighbor's name, plus clues on what it's known for. Clues like Snoopy for Minnesota and tax-free shopping for Delaware. Arizona, a Colorado neighbor that meets it only at the Four Corners. Score percentage that starts at 500% and keeps sliding down the whole time. One visit per state, and an ending once every neighbor has been visited. The northeast route to Maine, a little puzzle of its own.
 
-  Even Arizona counts as one of Colorado's neighbors, though the two only touch at the Four Corners.
+  Type the name of a state that borders yours. A green arrow carries you over to it. Wait longer, and more letters and clues fill in.
 
-  The longer you wait, the more letters and clues fill in, but the score percentage, which starts at 500%, keeps sliding down the whole time.
-
-  There are only a couple of rules. You can visit each state once, and the journey ends when every state around you has already been visited, which turns the route northeast to Maine into a little puzzle of its own.
-
-  Sleepyowl108 wrote the text themselves and says Claude did the coding while ChatGPT made the images.
+  According to Sleepyowl108, AI tools did the coding and the images, and they wrote the text themselves.
 play:
   url: https://sleepyowl108.itch.io/type-across-america
   platforms:
@@ -21,6 +17,8 @@ play:
   embedPermission:
     by: submission
     date: 2026-10-04
+  controls:
+    - "Keyboard: type the name of a neighboring state"
 creator:
   name: Sleepyowl108
   handle: sleepyowl108

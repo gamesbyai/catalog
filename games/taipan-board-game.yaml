@@ -3,36 +3,28 @@ title: Taipan Board Game
 tagline: Build a pirate domain through trade or raids and race rival captains to
   the finish.
 description: >-
-  In Taipan it's up to you whether you build your domain by trading or by
-  piracy, and both routes can win you the game. You can trade with captains who
-  are friendlier to you, or sail through enemy waters to land a delivery that
-  pays a lot.
+  Build your domain by trading or by piracy in Taipan, a strategy board game
+  where either route can win. You can play against other people or on your own.
 
 
-  If that sounds too polite, you can steal a rival's ship or raid their islands
-  instead.
+  Friendlier captains to trade with. Big-money deliveries through enemy waters.
+  Rival ships to steal and islands to raid. Ship upgrades and attributes for
+  shaping a different captain from one game to the next. Numbered islands, with
+  cargo and island cards. Fortune, Peril and Tempest decks. A session of about
+  half an hour.
 
 
-  On your turn you roll the dice, move, build and then end your turn. Two red
-  dice and a white one set your movement and your production, and you can undo a
-  move if it doesn't go the way you meant.
+  Roll two red dice and a white one. They set your movement and production.
+  Move, build, then end your turn. Undo a move if it isn't what you meant. Your
+  choices carry into the next turn and can speed up or slow how fast your domain
+  grows. A tutorial covers the rules first, and they're short once you know
+  them.
 
 
-  Whatever you pick on one turn carries into the next, so it speeds up or holds
-  back how fast your domain grows. Ship upgrades and attributes let you shape a
-  different captain from one game to the next. Islands are numbered, and the
-  game uses Fortune, Peril and Tempest decks along with cargo and island cards.
-
-
-  The rules stay short once they click, and a tutorial walks you through them
-  first.
-
-
-  You can play against other people or on your own, and a session runs about
-  half an hour. bragoatski spent two years testing Taipan as a tabletop
-  prototype before making this digital version, and building it turned up
-  balance problems in the original that led to changes in the mechanics.
-  According to the creator, AI helped with the code.
+  bragoatski spent two years testing Taipan as a tabletop prototype before
+  making this digital version. Building it showed balance problems in the
+  original, and those problems led to changes in the mechanics. According to the
+  creator, AI helped with the code.
 play:
   url: https://bragoatski.itch.io/taipan
   embeddable: false

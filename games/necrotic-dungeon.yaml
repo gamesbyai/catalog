@@ -3,21 +3,16 @@ title: Necrotic Dungeon
 tagline: Explore a dark fantasy dungeon in an old-school crawler with puzzles
   and RPG battles.
 description: >-
-  Necrotic Dungeon sends you down into a haunted, dark fantasy dungeon in the
-  manner of 1980s role-playing games and tabletop Dungeons and Dragons. You work
-  through its halls, solve the puzzles that block the way and fight RPG battles
+  Descend into a haunted dark fantasy dungeon, solving puzzles and fighting RPG
+  battles hall by hall.
+
+
+  Old-school crawling in the manner of 1980s role-playing games and tabletop
+  Dungeons and Dragons. Puzzles that open more of the dungeon. RPG battles
   against whatever lurks inside.
 
 
-  It is framed as a love letter to old-school crawlers, blending adventure,
-  puzzle solving and RPG elements. Lovable, the AI app builder, was the
-  creator's choice of tool, and it landed at 57th of 945 at Vibe Jam 2026.
-
-
-  It is a single-player game, and phones work as well as desktop. The setting
-  stays gloomy dark fantasy all the way down, and every puzzle you solve opens
-  more of the dungeon to explore. The crawl is played in the browser, one hall
-  at a time.
+  A love letter to old-school crawlers, built with Lovable.
 play:
   url: https://necroticdungeon.com
   embeddable: true
@@ -52,7 +47,7 @@ media:
     - games/necrotic-dungeon/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-09-29
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:vibejam-2026

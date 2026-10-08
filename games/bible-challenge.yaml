@@ -2,18 +2,16 @@ slug: bible-challenge
 title: Bible Challenge
 tagline: Answer Bible questions and see how your knowledge compares with friends.
 description: >-
-  Answer trivia questions from the Bible and play against friends online. You
-  answer to test how much scripture you actually know, then see how your
-  knowledge compares with theirs, so a round turns into a friendly contest over
-  who knows the text best.
+  Answer trivia questions from the Bible and see how your knowledge compares
+  with your friends'.
 
 
-  According to the creator, it was built with Lovable, an AI app-building tool,
-  rather than a traditional game engine.
+  Online play against friends. Scripture questions in every round. A friendly
+  contest over who knows the text best.
 
 
-  The tone is reflective rather than purely competitive. The creator describes
-  the idea as a way to see how real Christian beliefs remain to us.
+  The creator describes it as a way to see how real Christian beliefs remain to
+  us, and built it with Lovable rather than a game engine.
 play:
   url: https://scripturama-challenge.lovable.app
   embeddable: true

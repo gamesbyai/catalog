@@ -3,22 +3,15 @@ title: Orbital Breach
 tagline: Fight other players in a zero-gravity arena, floating and shooting in
   every direction.
 description: >-
-  Orbital Breach is a multiplayer shooter with no floor to stand on. You drift
-  through a zero-gravity arena instead of running along the ground, aiming and
-  firing at other players from any angle. It is fast action, with matches played
-  online.
+  Drift through a zero-gravity arena and fire at other players from every angle.
 
 
-  The creator points to Orson Scott Card's Ender's Game as the inspiration,
-  which suggests the weightless battle-room style of combat. Its toolkit was
-  Claude Code and Three.js, and the game finished 160th of 945 at Vibe Jam 2026
-  and plays on desktop and phones.
+  No floor to stand on. Weightless movement instead of running. Position in
+  three dimensions as important as aim. Fast online matches, with shots coming
+  from above, below and every side.
 
 
-  The zero-G setting changes how a firefight works, since there is no ground to
-  hold. With every direction open, position in three dimensions matters as much
-  as aim, and each match becomes a fast exchange of movement and shots from
-  above, below and every side.
+  Inspired by Orson Scott Card's Ender's Game.
 play:
   url: https://orbital-breach.vercel.app
   embeddable: true
@@ -55,7 +48,7 @@ media:
     - games/orbital-breach/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-09-29
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:vibejam-2026

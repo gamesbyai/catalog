@@ -2,21 +2,15 @@ slug: dungeon-cast
 title: Dungeon Cast
 tagline: Explore a raycast dungeon in first person, right in your browser.
 description: >-
-  Dungeon Cast is a 2.5D dungeon crawler drawn the old-school way, with
-  raycasting. That is the technique behind 90s corridor games like Wolfenstein
-  3D: walls are drawn as pseudo-3D slices, and you move through the dungeon from
-  a first-person view.
+  Explore a dungeon in first person, drawn the old-school way with raycasting
+  like 90s corridor games such as Wolfenstein 3D.
 
 
-  The engine is a deliberate choice. For Vibe Jam 2026, the creator, GraslT,
-  built a 2.5D game in Phaser, a 2D engine. That meant skipping a dedicated 3D
-  library, which is the more common route for a game like this. It was built
-  with Claude Code and placed 245th of 945 entries in the jam's ranking.
+  Walls drawn as pseudo-3D slices. A 2.5D look made in a 2D engine. A dungeon
+  adventure that loads instantly.
 
 
-  What you get is a retro look produced by a 2D engine, and a single-player
-  dungeon adventure to explore and work through in first person that loads
-  instantly, right in the browser.
+  GraslT built it in Phaser on purpose, skipping a 3D library.
 play:
   url: https://playdungeoncast.online
   embeddable: false
@@ -52,7 +46,7 @@ media:
     - games/dungeon-cast/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-09-29
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:vibejam-2026

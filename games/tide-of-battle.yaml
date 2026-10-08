@@ -2,21 +2,17 @@ slug: tide-of-battle
 title: Tide of Battle
 tagline: Command a warship and sink AI enemies with cannons and torpedoes.
 description: >-
-  Tide of Battle is a 3D naval combat game in which you command a warship on
-  open water and fight AI-controlled enemy vessels. Cannons handle direct fire
-  and torpedoes are your second weapon, so each encounter comes down to your
-  ship against the hostile fleet.
+  Command a warship on open water and sink AI-controlled enemy vessels with
+  cannons and torpedoes.
 
 
-  It draws on classic naval warfare and on the unpredictable feel of the open
-  ocean. The creator describes it as an attempt to push what AI can build for
-  web games, made with Antigravity on Three.js, and it ended up 342nd of 945 in
-  Vibe Jam 2026.
+  Direct fire from the cannons. Torpedoes as a second weapon. Your ship against
+  a hostile fleet. Classic naval warfare and the unpredictable open ocean as the
+  inspiration.
 
 
-  A portal connected to the Vibe Jam lets you leave the battle and travel on to
-  other games in the jam, tying the sea fight to the wider event it was entered
-  in.
+  The creator describes it as an attempt to push what AI can build for web
+  games.
 play:
   url: https://gotutech.xyz
   embeddable: true
@@ -52,7 +48,7 @@ media:
     - games/tide-of-battle/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-09-29
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:vibejam-2026

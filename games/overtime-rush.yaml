@@ -3,25 +3,16 @@ title: Overtime Rush
 tagline: Race your coworkers down an office track, dodging obstacles and
   dismissing phone calls.
 description: >-
-  The two characters you play as are Daniel and Derek. Everyone in the group is
-  racing for the finish line, and you're trying to outrun your coworkers.
+  Race your coworkers down an office track as Daniel or Derek, dodging obstacles
+  and dismissing phone calls.
 
 
-  Along the way you've got obstacles to avoid while dismissing phone calls.
+  Obstacles along the track. Phone calls to dismiss as you run. An ending for
+  whoever wins the race. Track walls you can pass through, so follow the track.
 
 
-  You can go through the track walls, because the creator ran into problems
-  adding collisions to them. Their answer is simply to follow the track, which
-  they think is all you need to be fine. They swear there's nothing past the
-  office walls.
-
-
-  If you win the race, the game's ending is there for you to reach.
-
-
-  The whole game was made from scratch, according to the creator. The AI they
-  used likes to troll now and then, which is why their advice is to reload if
-  the game won't load properly or runs into trouble.
+  The creator made it from scratch, and advises a reload if the game won't load
+  properly.
 play:
   url: https://rosebud.ai/play/d4d555db-b085-4260-8b45-725a4ad94e33
   embeddable: true

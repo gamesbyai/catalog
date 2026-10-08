@@ -2,26 +2,22 @@ slug: the-master-negotiator
 title: The Master Negotiator
 tagline: Haggle with AI characters who remember past deals, buying low and selling high.
 description: >-
-  You pick a name or alias that shows up on your profile. Victor Hale, an
-  arrogant CEO, hosts a demo-mode tutorial split into four chapters. The
-  tutorial is hands-on and runs on the actual game interface, and Victor invites
-  you to click the action buttons, starting with "Show me the buy flow", while
-  he explains each one. You can retry a step, and if his smugness wears thin
-  there's a separate option to skip the tutorial.
+  AI-driven characters haggle with you, and you buy low, sell high and talk your
+  way into better prices.
 
 
-  The game itself is haggling, where you buy low, sell high and talk your way
-  into better prices against AI-driven characters. Those characters remember how
-  you treated them in earlier deals, so the trader you fleeced last time hasn't
-  forgotten about it.
+  A demo-mode tutorial hosted by Victor Hale, an arrogant CEO. Traders who
+  remember how you treated them in earlier deals. Voice mode for speaking your
+  side of a negotiation out loud. Multiplayer PvP betrayal contracts.
 
 
-  A voice mode lets you speak your side out loud during negotiations, while
-  multiplayer brings in PvP betrayal contracts.
+  The four-chapter tutorial is hands-on and runs on the real game interface.
+  Click the action buttons Victor explains, starting with the buy flow.
 
 
   prathampunmiya built it to turn negotiation into a game, so people who find
-  social situations hard can practice the skill before facing a real deal.
+  social situations hard can practice the skill before facing a real deal. The
+  creator writes, "Just wanted to gamify a skill required in real life."
 play:
   url: https://the-master-negotiator.vercel.app
   embeddable: true

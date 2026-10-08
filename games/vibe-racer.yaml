@@ -2,31 +2,29 @@ slug: vibe-racer
 title: Vibe Racer
 tagline: Race neon tracks against adaptive AI rivals in a fast arcade driver.
 description: >-
-  Built around speed and competition, this fast arcade racer puts every race on
-  a track it has just generated, then lines you up against AI rivals for a
-  sprint to the finish.
+  This arcade racer runs every race on a track the game generates, so the layout
+  changes between runs. You start lined up against AI rivals for a sprint to the
+  finish. Your goal is to get in front of the pack and stay there until you
+  cross the line.
 
 
-  The Quick Race is a 4.5 km run against five AI rivals. Your job is to get in
-  front of that pack and stay there until you cross the line. The rivals don't
-  follow a fixed pattern either, because they adapt as you drive.
+  The Quick Race, 4.5 km long, against five AI rivals. Rivals with no fixed
+  pattern, adapting as you drive. Six paint colors for your car, chosen before
+  the start. A leaderboard.
 
 
-  Since every course is generated, the layout changes between runs.
-
-
-  Before the start you can paint your car in one of six colors. There's also a
-  leaderboard.
-
-
-  You drive with WASD and brake with Space. If your run goes sideways, R resets
-  the car.
+  Drive with WASD and brake with Space. If your run goes sideways, press R to
+  reset the car.
 play:
   url: https://vibe-racer-d3h.pages.dev
   embeddable: true
   platforms:
     - browser
     - mobile
+  controls:
+    - "WASD: drive"
+    - "Space: brake"
+    - "R: reset the car"
 creator:
   name: NMiles21221
   handle: nmiles21221

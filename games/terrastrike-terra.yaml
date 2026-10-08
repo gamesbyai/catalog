@@ -4,24 +4,20 @@ tagline: Purify a toxic world from the deep sea up to a surface garden as an
   evolving guardian.
 description: >-
   The first level, The Deep, starts you on the seafloor in an armored diving
-  suit.
+  suit. You purify a toxic world, rising from the deep sea to a surface garden.
+  Your diver evolves into a guardian of the last sanctuary of life.
 
 
-  Your job is to purify a toxic world, working your way from the deep sea up to
-  a surface garden while your diver evolves into a guardian protecting the last
-  sanctuary of life.
+  Cleanup measured as a purification percentage. A Standard Blaster for your
+  diver. RP to spend in the shop.
 
 
-  Your cleanup progress is measured as a purification percentage. You're
-  carrying a Standard Blaster.
+  Move with WASD and fire with Space. Press U for the shop and C for the armory.
+  Press 1 to 4 for emotes.
 
 
-  You move with WASD and fire with Space. RP ties into the shop, which opens on
-  U, while the armory opens on C. Keys 1 to 4 trigger emotes.
-
-
-  Srikanth built the game around nature's resilience. The contrast they drew on
-  is a dark industrial wasteland turning back into a living ecosystem.
+  Srikanth built the game around nature's resilience. Its contrast is a dark
+  industrial wasteland becoming a living ecosystem again.
 play:
   url: https://terrastrike.pages.dev
   embeddable: true

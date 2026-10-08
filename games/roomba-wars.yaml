@@ -2,20 +2,15 @@ slug: roomba-wars
 title: Roomba Wars
 tagline: Play a roomba that cleans up dirt and fights off enemies in a top-down arena.
 description: >-
-  In Roomba Wars you are the robot vacuum, and the room is full of dirt and
-  hostile enemies. Played top-down in an arena, it is an action shooter with a
-  simple brief: clean up the mess, and shoot whatever gets in your way while you
-  do it.
+  Be the robot vacuum in a top-down arena full of dirt and hostile enemies.
+  Clean up the mess and shoot whatever gets in your way.
 
 
-  It supports online multiplayer and is meant to be quick to pick up in a
-  browser. Per the creator, it was built with Cursor, an AI coding tool, on
-  Three.js, and it ranked 39th of 945 in Vibe Jam 2026.
+  Dirt to collect as the objective. Enemies to fight off as the obstacle. Online
+  multiplayer. A joke about household robots gone rogue.
 
 
-  The mess is the objective and the enemies are the obstacle, so a run splits
-  your attention between collecting dirt and fighting off threats. The premise
-  is a joke about household robots gone rogue, and the game plays it for humor.
+  Split your attention between the mess and the threats.
 play:
   url: https://roomba-wars.com
   embeddable: true
@@ -50,7 +45,7 @@ media:
     - games/roomba-wars/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-09-29
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:vibejam-2026

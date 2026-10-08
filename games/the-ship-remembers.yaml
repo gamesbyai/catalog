@@ -3,27 +3,27 @@ title: The Ship Remembers
 tagline: Run a ship's crew, fight fires and breaches, and pick risky routes on a
   galaxy map.
 description: >-
-  You steer a crew member around the inside of a small pixel-art ship from a
-  top-down view. Walk up to a system and press E to use it. The ship has a
-  reactor, shields, weapons, engines, a med device, a processor and a research
-  station, and you route power between them as things go wrong.
+  Playing alone, you take direct control of a crew member inside a small ship.
+  Trouble arrives in real time, and you route power between systems as things go
+  wrong. After the High Sovereign's death, your crew carries an old Lane Warrant
+  they use to keep dying routes open.
 
 
-  Trouble arrives in real time. Hull breaches open, fires spread, oxygen drains
-  and systems take damage, so you run to the problem and make emergency repairs.
-  In combat, Space fires the weapon. Tab opens the inventory, and Esc pauses.
+  Reactor, shields, weapons, engines, a med device, a processor and a research
+  station. Hull breaches, spreading fires, draining oxygen and damaged systems.
+  Galaxy map routes chosen between fights, with stops for events, wrecks, shops,
+  ambush fights and a boss path. Salvage to process, plus Scrap, Metal, Patch
+  Kits and Accord Research Data collected along the way. Ship upgrades to spend
+  resources on. Old signals through static, offering home, debt, betrayal or
+  rescue.
 
 
-  Between fights you pick routes on a galaxy map. Stops include events, shops,
-  wrecks, ambushes and a boss path. Along the way you collect Scrap, Metal,
-  Patch Kits and Accord Research Data, process salvage, and spend resources on
-  ship upgrades.
+  Move with WASD or the arrow keys. Stand next to a system and tap E to operate
+  it. In combat, press Space to fire. Press Tab for the inventory. Head to
+  trouble spots and carry out emergency repairs.
 
 
-  The story is set after the High Sovereign's death, with your crew holding an
-  old Lane Warrant to keep dying routes open. Old signals come back through
-  static as rescue, debt, betrayal or home. The creator states that code,
-  graphics, sounds and text were AI assisted.
+  According to Divine950, AI assisted with the code, art, sounds and writing.
 play:
   url: https://divine950.itch.io/the-ship-remembers
   embeddable: false
@@ -63,7 +63,7 @@ media:
     - games/the-ship-remembers/shot-2
 dates:
   added: 2026-10-01
-  updated: 2026-10-01
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:aibgj-3

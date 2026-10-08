@@ -3,41 +3,22 @@ title: "Tharsis: Martian Combat"
 tagline: Build a base on Mars, harvest crystals, and destroy the enemy base in
   real time.
 description: >-
-  In Tharsis: Martian Combat, you build a base on Mars and send harvesters out
-  after crystals, then spend what they haul back on an army that has to wipe out
-  the enemy base. It's real-time strategy with a design that draws on classic
-  Command & Conquer.
+  Build a base on Mars, send harvesters after crystals, and spend them on an
+  army that wipes out the enemy base.
 
 
-  Fog of war keeps the map dark until your own units walk out and scout it.
+  More than 12 unit types, from riflemen and snipers to the Behemoth super-tank
+  and the Manticore gunship. Fog of war until your units scout the map. Support
+  powers mid-fight. Skirmish against an AI from Easy to Brutal. An AI vs AI mode
+  to watch.
 
 
-  There are more than 12 unit types to build, including riflemen, snipers,
-  tanks, APCs and rocket artillery. Two of them get grand names of their own,
-  the Behemoth super-tank and the Manticore gunship, and VTOL gunships are on
-  the list too.
+  Select with a left click or a drag box, then right-click to move or attack.
+  Press A to attack-move and WASD to scroll.
 
 
-  Support powers add more options to a fight once it's started.
-
-
-  Skirmish puts you 1v1 against an AI, with difficulty running from Easy and
-  Normal through Hard up to a setting bluntly named Brutal.
-
-
-  Before a match starts, you can tune the starting resources, the map seed and
-  the units you begin with. There's also an AI vs AI mode, where you watch two
-  computer opponents fight it out. Online 1v1 through Wavedash lobbies is still
-  being built, with lobby chat and invite links planned as part of it.
-
-
-  You pick units with a left click or by dragging a box, then right-click to
-  move or attack. Pressing A gives you an attack-move, WASD scrolls the map and
-  Esc cancels whatever you were doing.
-
-
-  Chaotic Envoy - Cyberpunk 1644 Studios wrote the whole thing in vanilla
-  JavaScript. It comes with a sci-fi soundtrack and its own sound effects.
+  The design draws on classic Command & Conquer. The creator wrote it all in
+  vanilla JavaScript, with its own soundtrack and sound effects.
 play:
   url: https://cheesyerwin.itch.io/tharsis-martian-combat
   embeddable: false

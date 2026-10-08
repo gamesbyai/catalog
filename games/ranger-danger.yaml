@@ -3,32 +3,17 @@ title: Ranger Danger
 tagline: Defend your base by placing defenses and fighting enemies yourself in
   pixel-art combat.
 description: >-
-  Your ranger in Ranger Danger doesn't just stand behind the towers and watch.
-  You set up defenses around your base, then walk the ranger straight into the
-  pixel-art fight and attack enemies yourself. It's tower defense and real-time
-  action combat at the same time, with the planning and the fighting happening
-  together.
+  Set up defenses around your base, then walk your ranger into the fight and
+  attack the enemies yourself.
 
 
-  Building covers more than towers, with walls you can put down to block the
-  paths the horde takes. The game is blunt about what counts (where you stand
-  and when you act).
+  Tower defense and real-time combat at once. Walls for blocking the horde's
+  paths. Waves of enemies, some with bosses. Gold for unlocking upgrades. Biomes
+  from lush forests to volcanic wastes and beyond.
 
 
-  Tower defense usually leaves you waiting between decisions while action games
-  lean on reflexes, but here you're always choosing between building up the
-  defense and wading in with your own weapon.
-
-
-  The enemies keep coming in wave after wave, and some of those fights bring
-  bosses. Along the way you earn gold that goes toward unlocking upgrades and
-  making yourself stronger. The setting moves through several biomes too,
-  starting in lush forests and stretching out to volcanic wastes and beyond.
-
-
-  ZakAgain tried a handful of one-shot idea prompts before settling on this one.
-  Out of all of them, this was the loop they found most fun, so they stuck with
-  it.
+  ZakAgain tried a handful of one-shot idea prompts and kept the loop they found
+  most fun.
 play:
   url: https://rangerdanger.xyz
   embeddable: true
@@ -66,7 +51,7 @@ media:
     - games/ranger-danger/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-10-02
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:vibejam-2026

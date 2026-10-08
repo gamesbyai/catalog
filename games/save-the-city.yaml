@@ -3,20 +3,17 @@ title: save the city
 tagline: Play a tourist turned hero fighting rogue AI and giant robots across
   Seoul and Waikiki.
 description: >-
-  An eight-panel comic opens the game. A tourist in Seoul sees the city's AI and
-  its five color-coded E.R.A. heroes taken over by a hacker. A soldier asks him
-  to help.
+  A hacker has taken over Seoul's AI and its five color-coded E.R.A. heroes, and
+  a tourist gets pulled in to save the city.
 
 
-  You type a username, choose a language, and pick the Seoul or Wai-kiki stage.
-  You can put your own face on the character with a camera or an uploaded photo.
-  You can dress your character in one of four outfits (Bao Soldier, Bao Fighter,
-  Bao Spy or Bao Superhuman), and there's a hair toggle too.
+  An eight-panel comic opening. Seoul and Waikiki stages, each on a 300-second
+  countdown. A rogue AI, corrupted heroes and giant robots to fight. Your own
+  face on the character, from a camera or a photo. Four outfits, from Bao
+  Soldier to Bao Superhuman.
 
 
-  Each stage is set in a city and runs on a 300-second countdown, and your goal
-  is to save it. Your opponents are a rogue AI, E.R.A. heroes that have been
-  corrupted, and giant robots. The creator drew on a game from their childhood.
+  The creator drew on a game from their childhood.
 play:
   url: https://savecity.vizuo.work
   embeddable: true

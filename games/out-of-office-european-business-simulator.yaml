@@ -2,33 +2,21 @@ slug: out-of-office-european-business-simulator
 title: "OUT OF OFFICE: European Business Simulator"
 tagline: Run a European business while doing as little actual work as possible.
 description: >-
-  You own a company somewhere in Europe, it's summer, and your main personality
-  trait is laziness. This satirical, casual management sim asks you to keep the
-  company limping along, technically still alive, while doing as close to
-  nothing as you can get away with.
+  Own a European company in the summer and keep it technically alive while doing
+  as close to nothing as you can.
 
 
-  Out of office replies are the whole strategy. You farm them, then spend them
-  on smarter ways of firing off even more of them, a loop the game lays out with
-  a perfectly straight face. One purchase adds a modest 0.4 a second.
+  Out of office replies to farm, then spend on ways of sending even more. Time
+  off in steps, from a cheeky fortnight to a long weekend extension and a proper
+  month off. Locked upgrades to open. News headlines, like one about something
+  closed in the 9th arrondissement.
 
 
-  Your time off comes in steps, starting with "a cheeky fortnight" at a passive
-  multiplier of x1 and a long weekend extension at x1.8, with "a proper month
-  off" as a later step.
+  Press the green button to keep the company alive.
 
 
-  Some upgrades start out locked. The in-game news reports that something in the
-  9th arrondissement is closed.
-
-
-  It bills itself, tongue firmly in cheek, as a completely realistic picture of
-  European business life in the summer months.
-
-
-  The satire comes from the serious title sitting on top of an owner with zero
-  interest in working, so doing less is literally the plan. You start by
-  pressing a green button that says to keep the company alive.
+  It bills itself, tongue in cheek, as a completely realistic picture of
+  European business in the summer months.
 play:
   url: https://business-tycoon-european-summer-edi.vercel.app
   embeddable: true

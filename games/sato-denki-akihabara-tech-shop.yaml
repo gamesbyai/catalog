@@ -3,30 +3,21 @@ title: Sato Denki — Akihabara Tech Shop
 tagline: Chain fast combo shifts to keep your hospitalized dad's Akihabara tech
   shop afloat.
 description: >-
-  This shop simulation has you chaining rapid combo shifts in the style of
-  Street Fighter while you run the counter in quick rounds. A shift is a
-  30-second loop where you click your inventory to hand each customer whatever
-  they're asking for.
+  Your dad is in Keio Hospital, and his 40-year-old electronics shop in
+  Akihabara is yours to run before the bank takes it.
 
 
-  Your dad's in Keio Hospital, which leaves you in charge of a family
-  electronics store in Akihabara that's been open for 40 years. The bank wants
-  it, so each round is about bringing in enough money before the bank wins. You
-  even get to type in a name for the shop before you open the doors.
+  30-second shifts of handing each customer what they ask for. Street
+  Fighter-style combo chains. Short rounds with loud combo feedback, built like
+  a casino machine. A name for the shop, typed in before you open.
 
 
-  SYSTEMCRASH92 designed it to work like a casino machine, with short rounds,
-  loud combo feedback and global stakes meant to pull you back for one more run.
+  Click your inventory to serve each customer.
 
 
-  Every sprite was made with DogSprite, an AI pixel art tool they were building
-  on their own. Having one generator make all of it helps keep the shop's look
-  consistent.
-
-
-  SYSTEMCRASH92 made the game to test that pixel art generator and their coding
-  workflow together, from start to finish. According to them, Claude Code wrote
-  99% of the code. They call the project 100% vibe coded.
+  SYSTEMCRASH92 made every sprite with DogSprite, their own AI pixel art tool,
+  and built the game to test it and their coding workflow together. According to
+  them, Claude Code wrote 99% of the code.
 play:
   url: https://sato-denki-eight.vercel.app
   embeddable: true
