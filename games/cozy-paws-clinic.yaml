@@ -2,17 +2,17 @@ slug: cozy-paws-clinic
 title: Cozy Paws Clinic
 tagline: Wash and brush muddy little animal patients in your own vet clinic.
 description: >-
-  Each patient has a thought bubble that shows what they need, like a bath, some
-  brushing or a look at the teeth. Many of them arrive caked in mud and dotted
-  with burrs. You're the one washing, brushing and looking after each of them.
+  Wash, brush and look after each patient. Many of them arrive caked in mud and
+  dotted with burrs.
 
 
-  Biscuit the puppy and Honey the bear are among the patients you'll meet on
-  that bench. There's a collection of nine entries to fill.
+  Thought bubbles showing what each patient needs, such as a bath, some brushing
+  or a look at the teeth. Biscuit the puppy and Honey the bear, among the
+  patients on the bench. A collection of nine entries to fill.
 
 
-  goldiedev drew everything in code. The Web Audio API generates the sounds and
-  the music, so there aren't any picture or sound files to fetch.
+  goldiedev drew it all in code. The Web Audio API generates the sounds and
+  music, so there are no picture or sound files to fetch.
 play:
   url: https://tesana.com/play/d402c697-5327-492c-a1b9-e77e749f92e5
   embeddable: false

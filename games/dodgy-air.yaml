@@ -2,21 +2,18 @@ slug: dodgy-air
 title: Dodgy Air
 tagline: Manage a struggling budget airline with a moody captain and a shady CFO.
 description: >-
-  Dodgy Air hands you a third-rate airline and the staff to go with it. You make
-  the business decisions, and each session is about keeping the operation flying
-  despite the crew's odd habits and some questionable paperwork.
+  Run a third-rate airline, staff included, and make its business decisions.
+  Each session is about keeping the operation flying despite the crew's odd
+  habits and some questionable paperwork.
 
 
-  The creator, a games industry veteran, built it for Vibe Jam 2026 with Claude
-  Code and says AI handled the full production pipeline, which let them ship a
-  comedy built around its characters. It supports online multiplayer, runs on
-  Three.js and ranked 324th of 945 in the jam.
+  Altitude changes requested by your captain, based on feelings. A CFO with
+  unusual views on what a receipt is. Strategy and simulation built on absurd
+  workplace problems.
 
 
-  Those characters are the point. Your captain asks for altitude changes based
-  on feelings, and your CFO insists the receipts aren't really receipts. Running
-  the airline becomes a series of absurd workplace problems that the strategy
-  and simulation are built around.
+  gilbo852, a games industry veteran, says AI handled the full production
+  pipeline, which let them ship a comedy built around its characters.
 play:
   url: https://dodgyair.com/play
   embeddable: true
@@ -52,7 +49,7 @@ media:
     - games/dodgy-air/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-09-29
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:vibejam-2026

@@ -2,35 +2,26 @@ slug: asteroid-ace
 title: Asteroid Ace
 tagline: Blast drifting asteroids and dodge hunter drones in escalating waves.
 description: >-
-  Every slow-drifting asteroid cluster you hit breaks into fragments, so one
-  good shot can leave more rocks in your way than there were before it.
+  Each slow-drifting asteroid cluster you hit breaks into fragments, and one
+  good shot can leave you with more rocks than before. This is a classic
+  asteroid shooter where you fly a ship and shoot through the rocks.
 
 
-  It's a classic asteroid shooter where you're flying a ship that you can steer
-  two ways. You can aim with the mouse and thrust with the left button, or
-  rotate with Q and E while W thrusts, S reverses, A and D strafe and Space
-  fires.
+  Waves of asteroids and enemies that grow more dangerous. Agile hunter drones
+  that show up alongside the rocks. Each enemy type with its own way of moving
+  and attacking, which pushes you to change tactics between waves, according to
+  Paul Shroom.
 
 
-  The rocks don't stay alone for long. As the waves escalate, agile hunter
-  drones show up alongside them. Paul Shroom describes each enemy type as having
-  its own way of moving and attacking, which pushes you to change tactics
-  between waves.
+  Steer one of two ways. Aim with the mouse and thrust with the left button, or
+  rotate with Q and E. Use W to thrust, S to reverse, A and D to strafe, and
+  Space to fire. Right-click to toggle auto mode, and press Shift to boost.
+  Press Esc to pause. For touch play, turn on the on-screen controls.
 
 
-  There's even an auto mode you can toggle with a right-click, while Shift gives
-  you a boost and Esc pauses.
-
-
-  This version is called Asteroid Ace 3 Beta, and you can tune a few things
-  before you launch. You can set the graphics quality and turn on on-screen
-  controls for touch play. You can change the game's speed and scale, and both
-  start at 1.0x.
-
-
-  Paul Shroom built it with a local model running on an RTX 5090 laptop GPU with
-  24GB of VRAM and 32GB of system RAM, just to see what that hardware could
-  produce.
+  This version is called Asteroid Ace 3 Beta. Paul Shroom built it with a local
+  model running on an RTX 5090 laptop GPU with 24GB of VRAM and 32GB of system
+  RAM, just to see what that hardware could produce.
 play:
   url: https://asteroid-ace.fractalvision.co.uk
   embeddable: true

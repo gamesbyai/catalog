@@ -3,21 +3,20 @@ title: HexFire
 tagline: Battle other wizards in a shrinking arena where every kill raises your bounty.
 description: >-
   Every wizard you take down in this battle royale earns you essence, and if you
-  die, you lose every bit of it. You build your wizard before the match starts.
+  die, you lose all of it.
 
 
-  You can type a name or have the game roll a random one, which can come out as
-  something like xx_Marksman40%. You split points across five arcane skills:
-  damage, speed, range, blast and agility. Plus and minus buttons shift points
-  between them.
+  Five arcane skills (damage, speed, range, blast and agility) to split points
+  across. Your wizard, built before the match.
 
 
-  Once you're out there, WASD moves you, Space jumps and the left mouse button
-  shoots. V switches the view, while F interacts. Begin Descent starts the
-  match.
+  Shift points between skills with the plus and minus buttons. Choose Begin
+  Descent to start the match. Move with WASD, jump with Space and shoot with the
+  left mouse button. Press V to switch view and F to interact.
 
 
-  TeemuSor made the game out of a childhood crush on Runescape and Minecraft.
+  HexFire came from TeemuSor's childhood infatuation with Runescape and
+  Minecraft.
 play:
   url: https://hexfi.re
   embeddable: true

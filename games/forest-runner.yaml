@@ -3,20 +3,18 @@ title: Forest Runner
 tagline: Skate through a blocky forest, dodge obstacles, grab power-ups, and
   outrun rivals.
 description: >-
-  Forest Runner puts an endless arcade runner on a skateboard. You ride at high
-  speed, steering around obstacles and taking sharp turns while trying to stay
-  ahead of the rivals chasing you.
+  You skate fast through a dangerous forest inspired by Minecraft and try to
+  stay ahead of the rivals behind you. Most endless runners have you running on
+  foot, but this one puts you on a skateboard. A run lasts until you crash or
+  get caught.
 
 
-  A run lasts until you crash or get caught. Power-ups appear along the path,
-  and the chasers add pressure on top of the hazards, so dodging is only half
-  the job. Riding a skateboard also gives the movement a different feel from the
-  usual on-foot endless runner.
+  Steer your board through sharp turns and around obstacles. Power-ups to
+  collect along the path. Rival chasers on top of the hazards.
 
 
-  The creator explains that they have long enjoyed endless running games and
-  wanted to reimagine that fast pace in a new setting. Claude Code was their
-  tool.
+  mercurianranger explains they have long enjoyed endless runners and hoped to
+  bring that fast pace to a new setting.
 play:
   url: https://forest-runner-vibejam26.netlify.app
   embeddable: true

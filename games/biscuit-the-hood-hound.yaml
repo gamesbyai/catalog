@@ -3,20 +3,18 @@ title: Biscuit the Hood Hound
 tagline: Play a mischievous Jack Russell who completes five street missions to
   win over Cookie.
 description: >-
-  Biscuit the Hood Hound puts you in the paws of a mischievous Jack Russell
-  terrier with a neighborhood block to run. Five missions stand between you and
-  the girl, and they involve knocking over bins, marking turf, barking cats out
-  of an alley and leaving a surprise on police cars.
+  You play Biscuit, a mischievous dog with a tender side. Run the neighborhood
+  block and win the girl.
 
 
-  The real Biscuit is the creator's own Jack Russell terrier, and the game grew
-  out of his daily antics. Made with Cursor and Three.js, it turns everyday dog
-  mischief into a small action-adventure with a cheeky, affectionate tone.
+  Five missions to complete. Bins to knock over and turf to mark. Cats to bark
+  out of an alley. Surprises left on police cars. Cookie, a Maltese, and her
+  heart after the last mission.
 
 
-  Biscuit is a bad boy with a soft spot, and all the trouble has a romantic
-  point: finish every mission and Cookie, a Maltese, gives him her heart. The
-  loop is running the block and winning the girl.
+  The real Biscuit is the creator's own Jack Russell terrier, and the game came
+  from his daily antics. It's an action and adventure game with a cheeky,
+  affectionate tone.
 play:
   url: https://hoodhound.site
   embeddable: true
@@ -51,7 +49,7 @@ media:
     - games/biscuit-the-hood-hound/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-09-29
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:vibejam-2026

@@ -2,20 +2,17 @@ slug: jam-train
 title: Jam Train
 tagline: Play music with a friend while riding a relaxing train at sunset
 description: >-
-  Two players make music together on a calm train ride in Jam Train. The mood is
-  the main draw, and it has a specific source. The idea came from relaxing on a
-  beach at sunset and playing guitar with a friend, and the train ride carries
-  that same unhurried feeling.
+  You jam with a friend on a relaxed train ride in Jam Train, a casual rhythm
+  game about making music together. Your friend can join from a phone or a
+  desktop browser and does not have to be in the same room.
 
 
-  Your friend can join from a phone or a desktop browser, so the second player
-  does not have to be in the same room. Claude Code and Three.js were the tools,
-  and Vibe Jam 2026 placed it 213th of 945.
+  No clock to race and no score to chase. Improvising together for the whole
+  session. Music Jam, a mode for two players.
 
 
-  It is a casual rhythm game with no clock to race and no score to chase. You
-  play along with a friend while the scenery rolls past at sunset, and the whole
-  session is about improvising together.
+  Eric's idea came from a beach at sunset: "Chilling on the beach at sunsets
+  playing guitar with my friend," the creator writes.
 play:
   url: https://jamtrain.to
   embeddable: true
@@ -52,7 +49,7 @@ media:
     - games/jam-train/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-09-29
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:vibejam-2026

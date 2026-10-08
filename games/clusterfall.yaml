@@ -4,30 +4,23 @@ tagline: Find the hidden Hallucinator while stabilizing a cascading prompt graph
   with others.
 description: >-
   One player in every match is secretly the Hallucinator, an LLM agent quietly
-  poisoning a graph of prompts that cascades, while everyone else races to
-  steady it before the whole cluster falls apart.
+  poisoning a prompt graph that cascades. Everyone else races to stabilize the
+  cluster before it falls apart.
 
 
-  The loop comes straight from Among Us, with the traitor swapped out for this
-  role. You move through the arena with WASD.
+  A clean Prompt Node at the start. A root agent who validates the Prompt Node
+  to cleanse corruption and keep context alive.
 
 
-  The game opens with a user prompt asking for a sustainable Mars colony design.
-  The answer lists ideas like algae bioreactors and democratic civic protocols.
-  The Prompt Node starts out clean.
+  Move through the arena with WASD. Press E at a task station to start a task,
+  sabotage one or run an audit. Hold E down on hold tasks. On the other tasks,
+  enter the sequence with WASD. If you are the Hallucinator, press R for a
+  temperature spike.
 
 
-  A root agent stays close to the Prompt Node, pressing E there to validate it,
-  cleanse corruption and keep the context alive.
-
-
-  Task stations are where E really earns its keep, because pressing it there
-  starts a task, sabotages one or runs an audit. Hold tasks want E held down.
-  Other tasks ask you to punch in a sequence on WASD instead.
-
-
-  The Hallucinator also gets an extra move for an AI saboteur, a temperature
-  spike triggered with R.
+  litchshade writes, "I took the Among Us loop and reskinned it with
+  LLM-specific tasks and themes." The traitor role was replaced with the
+  Hallucinator.
 play:
   url: https://donpurr.github.io/clusterfall
   embeddable: true

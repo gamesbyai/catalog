@@ -3,28 +3,28 @@ title: Alien Orbital Assault
 tagline: Shoot down drone escorts, crack open a boss, and spend the salvage to
   stay alive.
 description: >-
-  You pilot a Gaia-attuned ship in a vertical shoot-'em-up that is one long boss
-  fight. The boss sits behind a ring of orbiting drones and cannot be hurt until
-  you destroy every one of them. That opens a short vulnerability window, so you
-  hit it hard before the window closes.
+  You pilot a Gaia-attuned ship in a vertical shoot-'em-up built around one long
+  boss fight. The boss sits behind a ring of orbiting drones.
 
 
-  Wrecks leave Substrate, reclaimed Earth matter that works as your ammunition
-  and fuel, so shooting also refills what you spend. One orbiter always carries
-  a weapon drop. You choose between grabbing the upgrade first or rushing the
-  window with a thinner supply.
+  Substrate, reclaimed Earth matter used as ammunition and fuel. Vulcan Cannon,
+  a fast straight-firing gun you start with. Shotgun Blaster, an unlockable wide
+  spread for close range. Latch Beam Projector, an unlockable lock-on weapon
+  that burns. Three upgrade tiers per weapon, with an unlock order that changes
+  from run to run. Harder cycles, with more and tougher drones after each missed
+  window. Five lives and no continues.
 
 
-  You start with the Vulcan Cannon, a fast, straight-firing gun. Unlockable
-  weapons are the Shotgun Blaster, a wide close-range spread, and the Latch Beam
-  Projector, which locks on and burns. Each weapon has three upgrade tiers, and
-  the unlock order changes from run to run.
+  Work through the interactive tutorial. Configure the controls to suit you.
+  Destroy every drone in the ring to open a brief vulnerability window, and the
+  boss can't be hurt before that. Hit it hard before the window closes. Shoot
+  wrecks to collect Substrate, which refills what you spend. Hunt down the
+  orbiter that always carries a weapon drop. Choose between grabbing the upgrade
+  first or rushing the window with a thinner supply.
 
 
-  If you miss the window, the drones return in greater numbers and tougher, so
-  each failed cycle gets harder. You have five lives and no continues. The
-  creator describes a run as one sitting, and the page lists about half an hour
-  per session. An interactive tutorial and configurable controls are included.
+  Fifth Layer Studio describes a run as one sitting, and the page lists about
+  half an hour per session.
 play:
   url: https://kc00l.itch.io/alien-orbital-assault
   embeddable: false

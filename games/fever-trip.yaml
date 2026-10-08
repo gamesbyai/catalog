@@ -2,20 +2,21 @@ slug: fever-trip
 title: Fever Trip
 tagline: Fight aliens and your own inner demons in a story-driven first-person shooter.
 description: >-
-  You play an agent sent to look into a strange occurrence who ends up in the
-  middle of a war with aliens. The campaign is first-person: choose Story Mode,
-  press New Game, and start shooting. Free Play sits right below it in the menu.
+  Investigating a strange occurrence, an agent ends up in the middle of a war
+  with aliens. You play the agent through a first-person campaign.
 
 
-  Gunplay is where the creator focused. You aim down sights, reload, sprint,
-  crouch, and lean around cover. Up to three weapons are switched with the
-  number keys, and you can throw grenades or hit enemies in melee.
+  Aiming down sights, reloading, sprinting, crouching and leaning around cover.
+  Up to three weapons, switched with the number keys. Grenades and melee
+  attacks. A second fight against the agent's inner demons, shown literally, to
+  keep his sanity from breaking. Free Play mode as another option.
 
 
-  The story adds a second fight against the agent's inner demons, shown quite
-  literally, as he tries to keep his sanity from breaking. The menu also holds
-  an achievements list, a settings screen, and credits. The title screen is dark
-  and red-lit.
+  Choose Story Mode, press New Game to begin, and start shooting.
+
+
+  cr42yd09 focused on the gunplay. "Always wanted to make video games, and I
+  like storytelling," the creator writes.
 play:
   url: https://fevertrip-game.vercel.app
   embeddable: true
@@ -58,7 +59,7 @@ media:
     - games/fever-trip/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-10-01
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:vibejam-2026

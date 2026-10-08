@@ -2,19 +2,17 @@ slug: bumper-stream
 title: Bumper Stream
 tagline: Outlast seven AI rivals on a neon arena that cracks apart with every collision.
 description: >-
-  You go up against seven AI rivals, and the goal is to stay on the stage longer
-  than any of them. Each run is a battle of survival, fought by bumping into the
-  others until only one is left.
+  You face seven AI rivals on a shared stage. Each run is a survival fight, and
+  your goal is to stay on the stage longer than any of them.
 
 
-  The game is described as a mix of Mario Kart and Fall Guys: kart-style bumping
-  with last-one-standing elimination. The game was built with Claude Code.
+  Kart-style bumping between vehicles. Last-one-standing elimination in each
+  run. Floor that cracks beneath every collision. Arena that shrinks and grows
+  riskier as the match goes on. Collapse that you have to survive, sped up by
+  each hit you land.
 
 
-  The arena floor is a hazard in its own right. Every collision cracks the
-  ground beneath the vehicles, so the arena gets smaller and riskier as the
-  match goes on, and each hit you land speeds up a collapse you also have to
-  survive yourself.
+  The game is described as a mix of two games, Mario Kart and Fall Guys.
 play:
   url: https://bumperstream.georgekal.com
   embeddable: true

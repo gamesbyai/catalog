@@ -2,31 +2,21 @@ slug: lug-nuts
 title: Lug Nuts
 tagline: Fix cars in first person to hit daily quotas, or the landlord takes your shop.
 description: >-
-  A small-town garage is yours to run, and the customers want their cars fixed
-  before they blow their top. You work the shop floor.
+  Fix cars on the shop floor of a small-town garage you run. Customers want
+  their cars fixed before their temper gives out.
 
 
-  Your goal's to hit the daily quota three days in a row, or the landlord ends
-  up with the garage.
+  A daily quota, three days running, as the goal. The landlord taking the garage
+  as the downside. Coveralls with your name and a chosen color, set before
+  clocking in. Six hats, including a traffic cone and a top hat. Parts you can
+  pick up and hold.
 
 
-  Before you clock in, you put your name on the coveralls and pick a color for
-  them. Then you pick a hat from six options, with a traffic cone on the same
-  list as a top hat.
-
-
-  Holding down the left mouse button uses whatever tool's in your hand, and the
-  number keys 1 through 4 flip between your four tool slots. The right mouse
-  button grabs a part, and pressing it again throws it, which keeps the number
-  of buttons down. Q drops whatever you're holding, and it's a separate key from
-  the throw.
-
-
-  E handles interacting with things and hopping into a car to drive.
-
-
-  F honks or flips on the flashlight. Shift lets you sprint, and Space gets you
-  off the ground.
+  Hold the left mouse button to use your tool, and press 1 to 4 to switch slots.
+  Right-click to grab a part, and right-click again to throw it. Press Q to drop
+  what you're holding, a separate key from the throw. Press E to interact or hop
+  into a car to drive. Press F to honk or turn on the flashlight. Hold Shift to
+  sprint, and press Space to jump.
 play:
   url: https://tesana.com/play/dc4ebebd-6b72-4bb4-96a4-895b38237238
   embeddable: false

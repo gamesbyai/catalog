@@ -3,20 +3,20 @@ title: Joe Must Drive
 tagline: Ride a sidecar motorcycle as driver or gunner and fight through zombie
   waves and bosses.
 description: >-
-  The goal is to survive a zombie-filled ride past obstacles, through waves of
-  the undead, and into boss fights. You travel on a motorcycle with a sidecar,
-  and before the run you choose whether to be the driver or the gunner.
+  Survive a zombie-filled ride down a city highway on a motorcycle with a
+  sidecar. Before the run, you pick whether to be the driver or the gunner.
 
 
-  You ride down a city highway, and a barricade waits ahead. You fight back with
-  a handgun. You reload the handgun by pressing R.
+  Road obstacles, including a barricade. Waves of the undead. Boss fights along
+  the ride. A chain multiplier.
 
 
-  Your health starts at 100 HP. The game also has a chain multiplier.
+  Fight back with the handgun during the ride. Press R to reload it.
 
 
-  The creator drew on survival horror like Resident Evil and mobile apocalypse
-  games, and built the game in 3D as a first project.
+  michelin_dude drew on survival horror such as Resident Evil and on mobile
+  apocalypse games played when they were younger. It was their first project,
+  built in 3D.
 play:
   url: https://joe-must-drive.vercel.app
   embeddable: true

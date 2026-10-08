@@ -2,28 +2,23 @@ slug: demolition-drive
 title: Demolition Drive
 tagline: Swing, smash, and shatter structures to climb a global leaderboard.
 description: >-
-  You enter a callsign before you start. Your job is to knock the towers down.
+  Behind the wheel of a truck, you knock towers down with a wrecking ball on a
+  chain swinging from its boom. Every round has different objectives.
 
 
-  You drive a truck with a wrecking ball on a chain swinging from its boom.
+  Fast rounds with towers and stars to go after. An opening round with 80% of
+  the towers to wreck in 45 seconds. Clearing that round under 45 seconds
+  without using abilities. Your scores go on a global leaderboard, and you try
+  to climb above everyone else.
 
 
-  WASD drives and the left mouse button smashes. E or the right mouse button is
-  your boost, and Q slams.
-
-
-  Rounds are fast, and you're after towers and stars. Because each round hands
-  you a fresh mix of objectives, one run doesn't play out like the last. The
-  first round asks you to wreck 80% of the towers in 45 seconds and clear it
-  under 45 seconds without using abilities.
-
-
-  Your scores land on a global leaderboard, so the goal is climbing above
-  everyone else.
+  You enter a callsign before you start. Drive with WASD. Smash with the left
+  mouse button. Boost with E or the right mouse button, and slam with Q.
 
 
   Jinish1049533 had grown tired of games built around construction loops and
-  wanted one that's only about smashing things.
+  wanted one only about smashing things. The creator says the game is their own
+  idea, made into a playable game.
 play:
   url: https://tower-crusher.vercel.app
   embeddable: true

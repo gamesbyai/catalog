@@ -2,30 +2,27 @@ slug: gaussian-splatting-fps
 title: Gaussian Splatting FPS
 tagline: Shoot your way through a first-person level built from a real-world 3D scan.
 description: >-
-  The level here is a real place, captured as a Gaussian Splat scan, and you're
-  walking through it with a carbine in your hands. WASD moves you, C drops you
-  into a crouch, and the mouse button fires.
+  Carbine in hand, you walk through a real place captured as a Gaussian Splat.
+  Splat scans are static and have no geometry at all. The scan has no game
+  systems, so the game makes its own.
 
 
-  All that softness hides a big headache, because splat scans are static and
-  there's no geometry in them at all. The game has to bring its own collision,
-  moving objects, navigation and rendering fixes, since the scan doesn't come
-  with any of it.
+  Collision for the scan. Moving objects in the level. Navigation and rendering
+  fixes.
 
 
-  yak32 got the idea while scrolling through SuperSplat and spotting spaces that
-  already looked like FPS or horror levels. They tackled those problems with an
-  AI code editor and say they've cracked most of them. Making games has been
-  their favorite hobby for years, though they'd rarely finished one, and they
-  credit AI with finally changing that.
+  Move with WASD, crouch with C, and fire with the mouse button.
+
+
+  yak32 got the idea while browsing SuperSplat and seeing spaces that already
+  looked like FPS or horror levels. They've made games as a hobby for years, but
+  they hardly ever finished one, and they say AI finally changed that. They say
+  they've solved most problems with an AI code editor.
 
 
   The carbine model comes from DJMaesen on Sketchfab, and Christoph Schindelar
-  made the splat environment.
-
-
-  yak32 also wrote up the whole process for the PlayCanvas blog. It's a
-  walkthrough of how the scan was turned into a level you can actually play.
+  made the splat environment. yak32 also wrote a walkthrough for the PlayCanvas
+  blog on how the scan became a playable level.
 play:
   url: https://aez.one/gs-fps
   embeddable: true

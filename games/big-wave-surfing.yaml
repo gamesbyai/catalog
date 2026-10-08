@@ -3,15 +3,15 @@ title: Big Wave Surfing
 tagline: Paddle into big waves, carve the face, and grab stars before the foam hits.
 description: >-
   Paddle your surfer toward the tall wave, then ride along its breaking face
-  once you've caught it. Stars are scattered along the ride for you to grab, and
-  the foam is the thing that ends your run if it swallows you.
+  once you've caught it.
 
 
-  The first level goes by Mellow Point, a gentle name for a wave that size. If
-  you don't manage to catch the wave, the round ends.
+  Mellow Point, the first level. Stars scattered along the ride to grab. Foam
+  that ends your run if it swallows you. A round that ends if you don't catch
+  the wave.
 
 
-  rolznz built it for coworkers who have never surfed. The focus is the simple
+  rolznz made it for coworkers who have never surfed. The focus is the simple
   physics of being carried by a wave rather than tricks.
 play:
   url: https://bigwavesurfing.fun

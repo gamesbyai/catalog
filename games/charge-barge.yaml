@@ -3,28 +3,30 @@ title: CHARGE BARGE
 tagline: Sail an ironclad up a hostile coast, shoot wrecks for loot, and buy
   upgrades in coves.
 description: >-
-  Two currencies drive every run. Volts are stored charge, taken from wrecks and
-  trickled in by a dynamo that pays per second while you sail, so slow water
-  pays better and the throttle becomes a money decision. Surge is battle charge,
-  built by kills and spent on the spot.
+  Steer a storm-powered ironclad along a coastline that gets narrower and more
+  dangerous going north, one procedurally charted channel at a time. Volts are
+  stored charge from wrecks and from a dynamo that pays per second while you
+  sail, so slow water pays better and the throttle becomes a money decision.
+  Each leg ends in a safe cove, and a sinking sends you back to the last one
+  with every volt, upgrade and point of renown intact.
 
 
-  You steer the ironclad through procedurally charted channels, aiming guns with
-  the mouse. Skiffs ram you, branders explode, towers lead their shots, and
-  mortar barges mark areas of water you should stay out of. Rocks damage the
-  hull and reefs drag the keel. Each leg ends in a safe cove.
+  Surge, battle charge from kills, spent instantly. Permanent upgrades for
+  weapons, defense, speed, income, salvage magnet and surge capacity, bought
+  with volts in coves. Ramming speed, boarding archers, a hired sloop, the
+  Tempest, extra gun crews and patch crew, bought with surge, more unlocking as
+  renown grows. Skiffs that ram, branders that explode, towers leading their
+  shots, mortar barges marking water to avoid. Rocks damaging the hull, reefs
+  dragging the keel. Automatic saves at coves, purchases, unlocks and sinkings.
 
 
-  In a cove you spend volts on permanent upgrades such as weapons, defense,
-  speed, income, salvage magnet and surge capacity. Surge pays for abilities
-  during a run: ramming speed, boarding archers, a hired sloop, the Tempest,
-  extra gun crews and a patch crew. More abilities unlock as renown grows.
+  Steer with A/D or arrows, and throttle with W/S. Aim with the mouse and click
+  to fire. Press 1 to 6 to use abilities during a run. Choose Continue to resume
+  the chart.
 
 
-  Sinking sends you back to the last cove with every volt, upgrade and point of
-  renown intact. Progress saves automatically at coves, purchases, unlocks and
-  sinkings, and Continue resumes the chart. The coast gets narrower and more
-  dangerous going north.
+  According to CSAF, AI assisted with the code, graphics and text. "Everything
+  in this game is charge," CSAF writes.
 play:
   url: https://csaf.itch.io/charge-barge
   embeddable: false

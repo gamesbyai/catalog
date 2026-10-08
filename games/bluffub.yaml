@@ -3,20 +3,17 @@ title: Bluffub
 tagline: Match cards, claim hidden poker bonuses, and bluff opponents in a game
   of Pişti.
 description: >-
-  Your moves are built on Pişti, the Turkish table-capture game. Players put
-  cards onto a shared pile and try to match the top card to take the table.
-  Hidden poker bonuses can be claimed along the way, so each round mixes
-  matching with deciding what to announce.
+  Claim hidden poker bonuses as you go, whether or not you hold them, in a game
+  built on Pişti, the Turkish table-capture game. eddynurf built it.
 
 
-  Bluffing is central to the game. A player can claim a bonus they may or may
-  not hold, and a wrong call hands the whole table to the opponent. That makes
-  every challenge a risk, and a careful read of the other player matters as much
-  as the cards in hand.
+  Every challenge a risk. Bluffing as a central part of play. Wrong calls that
+  hand the whole table to the opponent. Matching cards mixed with deciding what
+  to announce. Careful reads of the other player, as much as the cards in hand.
+  Multiplayer support.
 
 
-  It supports multiplayer. The creator built it with Claude Code, using PixiJS
-  for the graphics.
+  Put cards on the shared pile. Aim to match its top card and take the table.
 play:
   url: https://bluff-4vz.pages.dev
   embeddable: true

@@ -2,29 +2,20 @@ slug: rubble-kings
 title: Rubble Kings
 tagline: Stack physics blocks into a tall kingdom and knock down your rivals' towers.
 description: >-
-  Land comes from height in this one. You stack physics-driven blocks into a
-  kingdom, and the taller your structure stands, the more territory you control.
-  Building upward is how you expand.
+  Build a kingdom from physics-based blocks, where the taller your structure
+  stands, the more land you control. The height that wins you land also makes
+  the tower easier to topple. One well-placed hit from a rival can bring the
+  whole thing down in a heap of rubble.
 
 
-  The height that wins you land also makes the tower easier to topple, and one
-  well-placed hit from a rival can bring the whole thing down in a heap of
-  rubble.
+  Rival towers as both targets and threats. Equal weight on stability and size.
+  Host-set counts of human players and AI opponents. An easy control style
+  called snap.
 
 
-  Your rivals are trying to knock your tower over while you go after theirs, so
-  stability matters as much as size. It's a neat tug-of-war to get out of one
-  rule about how tall you build.
-
-
-  Before a match you land in a waiting room with a four-letter room code and a
-  share link for friends. You pick a name, a color and a crest from a grid of
-  thirty heraldic emblems, anything from a stag to a thistle to a harp. For a
-  game about piling up blocks, it's a generous coat-of-arms cabinet.
-
-
-  The host sets how many human players and AI opponents take part, and there's a
-  control style option with an easy mode labeled snap.
+  Before a match, you land in a waiting room. Send friends the four-letter room
+  code or the share link. Pick a name, a color and a crest from a grid of thirty
+  heraldic emblems, anything from a stag to a thistle to a harp.
 
 
   eric_j_sexton made it after remembering a game a little like this from more
@@ -65,7 +56,7 @@ media:
     - games/rubble-kings/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-10-02
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:vibejam-2026

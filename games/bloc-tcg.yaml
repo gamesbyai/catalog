@@ -2,19 +2,18 @@ slug: bloc-tcg
 title: Bloc TCG
 tagline: Build a deck and battle rivals in an urban-themed trading card game.
 description: >-
-  You collect cards and build a deck for a trading card game set on the street,
-  and its creator calls it the GTA of trading card games. You collect cards,
-  build a deck and take on rivals online in strategic matches that mix
-  puzzle-style planning with role-playing elements, on a phone or in a browser.
+  Take on rivals online in an urban trading card game set on the street.
 
 
-  The creator taught themselves to code and built the game with Claude Code.
-  They and their partners grew up in poverty and struggle, and wanted to make
-  something that represents the people around them.
+  Card collecting and deck building. Strategy matches with puzzle-style
+  planning. Role-playing elements alongside the card matches.
 
 
-  The street-level setting, the tone of the cards and the world they belong to
-  all draw on that background.
+  bloctcg taught themselves to code and built the game with AI tools. They and
+  their partners grew up in poverty and struggle, and wanted to make something
+  that represents the people around them. The street setting, the tone of the
+  cards and the world the cards belong to all draw on that background. bloctcg
+  calls it "The GTA of TCG."
 play:
   url: https://bloctcg.netlify.app
   embeddable: true

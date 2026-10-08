@@ -2,26 +2,18 @@ slug: inkfist
 title: Inkfist
 tagline: Throw punches, kicks and ink orbs in best-of-three brawls on a rainy pier.
 description: >-
-  You throw punches and kicks in fights on a waterfront pier. You can also
-  launch an ink orb. You can cash in a super once your ink fills up.
+  Throw punches and kicks in fights on a waterfront pier. Launch ink orbs, and
+  cash in a super once your ink fills.
 
 
-  Each match is best of three rounds. You'll win a round by putting your
-  opponent down, or by still being on your feet when time runs out.
+  Riva, a fast debt runner with 95 health and nothing to lose. Brask, a slow
+  dock enforcer with 112 health and heavier strikes balancing the slowness.
+  Best-of-three rounds, won by putting your opponent down or standing when time
+  runs out. Solo against the CPU, or versus a friend on the same keyboard.
 
 
-  Before the first punch, you pick one of two fighters. Riva's a debt runner who
-  moves fast and has nothing to lose, with 95 health, while Brask is a slow dock
-  enforcer with 112 health and more power behind each strike, which balances out
-  the slowness.
-
-
-  You're free to take on the CPU alone, or bench it for a friend on the same
-  keyboard.
-
-
-  A and D walk, W jumps, and S drops you into a crouch. Blocking's done by
-  holding away from your opponent.
+  Pick one of two fighters before the first punch. Walk with A and D, jump with
+  W, crouch with S. Hold away from your opponent to block.
 play:
   url: https://tesana.com/play/adeff6a7-0e2b-4c1b-b698-c1d7171eab63
   embeddable: false

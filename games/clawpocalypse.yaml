@@ -2,19 +2,18 @@ slug: clawpocalypse
 title: Clawpocalypse
 tagline: Blast waves of rogue robots and upgrade your weapons in a neon arena shooter.
 description: >-
-  Shoot through endless hordes of rogue Clawbots in a fast-paced roguelite
-  shooter. Each run is a fight for survival: keep shooting, stay ahead of the
-  swarm and collect upgrades that make your weapons stronger as the chaos
-  builds.
+  Shoot your way through a fast-paced roguelite shooter. Each run is a fight for
+  survival: keep shooting and stay ahead of the swarm.
 
 
-  The main inspiration is Boxhead, the old browser game, and the creator says a
-  love of roguelikes shaped the rest of the design. It was built in 3D with
-  Three.js, using Google's Antigravity as the AI tool.
+  Endless hordes of rogue Clawbots. Arcade-style crowd shooting. Weapon upgrades
+  collected during a run, making your guns stronger as the chaos builds and
+  changing how each run plays out.
 
 
-  That mix shows in the loop, which pairs arcade-style crowd shooting with
-  weapon upgrades that change how each run plays out.
+  According to Marc_Cyc, Boxhead, an old browser game, was the biggest
+  inspiration. Marc_Cyc says a love of roguelikes shaped the rest of the design.
+  The game is built in 3D.
 play:
   url: https://clawpocalypse.vercel.app
   embeddable: true

@@ -2,20 +2,18 @@ slug: clayhistoric
 title: Clayhistoric
 tagline: Fight rival clay cavemen and haul resources back to your cave first.
 description: >-
-  Clayhistoric is a race to haul resources home, played by clay cavemen. Each
-  side gathers what is scattered around a prehistoric arena and carries it back
-  to its own cave, and the goal is to get it home before the opponents do.
+  Clay cavemen race to haul scattered resources back to their own caves in a
+  prehistoric arena. Each side's goal is to get its haul home before the
+  opponents do.
 
 
-  The look is the main draw. The creator missed the handmade charm of The
-  Neverhood, a 1990s clay game, and built this as a nostalgic nod to that style,
-  using Codex and Three.js. It placed 43rd of 945 at Vibe Jam 2026.
+  Fights between characters to disrupt each other along the way. A mild
+  strategic edge in each round from those fights. Choices between grabbing
+  resources and fighting. Exploration as part of gathering resources.
 
 
-  Characters can fight to disrupt each other along the way, which gives each
-  round a mild strategic edge. Combat, exploration and the race for resources
-  all feed into it, so choosing what to grab, and when to fight instead of
-  carrying, matters.
+  eylamkeshet missed the handmade charm of The Neverhood, a clay game from the
+  1990s, and built this as a nostalgic nod to that style.
 play:
   url: https://clayhistoric.com
   embeddable: true
@@ -52,7 +50,7 @@ media:
     - games/clayhistoric/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-09-29
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:vibejam-2026

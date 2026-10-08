@@ -2,31 +2,24 @@ slug: bumper-king
 title: Bumper King
 tagline: Ram rival bumper cars, grab powerups, and fight to hold the crown.
 description: >-
-  Every pickup you scoop up makes your bumper car bigger and stronger, while you
-  steer it around the arena looking for someone to hit. Ramming the rival cars
-  is how you knock them out.
+  Every pickup you collect makes your bumper car bigger and stronger. Steer
+  around the arena and ram rival cars to knock them out. Four verbs cover play:
+  drive, bump, grow and survive.
 
 
-  All that ramming is aimed at the scoreboard. You're ranked against rival cars
-  with names like Bot Turbo Toast and Bot Bonkzilla, and the goal is to reach
-  the top spot, become King and then hold on to the crown.
+  Rival cars with names like Bot Turbo Toast and Bot Bonkzilla. Ramming aimed at
+  a scoreboard ranking you against them. Reaching the top spot, the King title
+  and keeping the crown. Four powerups found around the arena. Speed boosts,
+  Mega Bump for stronger hits, Shields that protect you, and Magnets that blast
+  nearby cars away, never pulling them in. Hazards on the arena floor to dodge.
 
 
-  Four powerups turn up around the arena. Speed gives a boost, Mega Bump makes
-  your hits stronger, Shield protects you, and Magnet blasts nearby cars away
-  instead of pulling them in.
+  Drive with WASD or the arrow keys, or use the touch joystick. Type a username
+  to begin, then head out onto the arena with the rival cars.
 
 
-  Hazards also sit on the arena floor that you have to dodge. The whole game
-  comes down to four words: drive, bump, grow, survive.
-
-
-  You drive with WASD or the arrow keys, and there's a touch joystick as well.
-
-
-  You type in a username to begin and can see your best score. You then head out
-  onto the arena floor with the rival cars. xwerux describes the idea as bumper
-  cars mixed with the grow-and-take-over pattern of Snake.io.
+  xwerux describes the idea as bumper cars mixed with the grow-and-take-over
+  pattern of Snake.io.
 play:
   url: https://bumper-king.vercel.app
   embeddable: true

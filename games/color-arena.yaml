@@ -2,22 +2,19 @@ slug: color-arena
 title: Color Arena
 tagline: Build, expand, and outmaneuver rival players to cover the map in your color.
 description: >-
-  Color Arena is a real-time multiplayer strategy game about covering a shared
-  map in your color. Each player controls a faction, builds up, expands their
-  territory and outmaneuvers rivals, with action and shooter elements mixed into
-  the strategy, until one color dominates.
+  Build up your faction and expand across a shared map in your color.
+  Outmaneuver rivals in this real-time multiplayer strategy game until one color
+  dominates. An AI bot steps in when no opponent is free, so there is always
+  someone to play against.
 
 
-  The idea is an old one that the creator sketched long ago and never saw
-  realized the way they imagined it. It runs on Phaser, ranked 262nd of 945 at
-  Vibe Jam 2026, and the creator says tournaments with real prizes are planned
-  for after the jam.
+  Action and shooter elements mixed in with the strategy. One battlefield for
+  every device, phones and desktops alike. Matchmaking with random players.
+  Real-prize tournaments planned, according to the creator.
 
 
-  There is one battlefield for every device, so players on phones and desktops
-  meet in the same match. Matchmaking pairs random players, and when no opponent
-  is available, an AI bot steps in to fight, so there is always someone to play
-  against.
+  The creator sketched this idea long ago. Similar games were made later, but
+  they were not the version the creator had imagined.
 play:
   url: https://colorarena.app
   embeddable: true
@@ -52,7 +49,7 @@ media:
     - games/color-arena/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-10-01
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:vibejam-2026

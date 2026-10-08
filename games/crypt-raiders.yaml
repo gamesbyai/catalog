@@ -2,21 +2,17 @@ slug: crypt-raiders
 title: Crypt Raiders
 tagline: Shoot your way through a zombie graveyard, collecting loot and upgrades
 description: >-
-  You shoot your way through a graveyard overrun by zombies in this 3D action
-  shooter. You shoot your way through the undead, pick up loot, and buy or find
-  upgrades as you go, and every level is procedurally generated, so a run keeps
-  moving into new layouts.
+  Zombies overrun a graveyard, and you shoot your way through the undead in this
+  3D action shooter. Your strength grows while the pressure from the zombies
+  builds. Every level is procedurally generated, so a run keeps moving into new
+  layouts.
 
 
-  The creator, maybe_im_sam, wondered whether they could make a game too after
-  seeing others take a shot at one, and this is the result, built with Cursor on
-  Three.js.
+  Loot to pick up along the way. Upgrades to buy or find as you go.
 
 
-  The loop is about getting stronger while the pressure from the zombies builds.
-  Loot and upgrades feed into the next fight against the undead, and because the
-  levels are procedurally generated, the ground you cover changes from one run
-  to the next.
+  maybe_im_sam wondered whether they could make a game too after watching others
+  try their hand at one, and Crypt Raiders is the result.
 play:
   url: https://cryptraiders.xyz
   embeddable: true

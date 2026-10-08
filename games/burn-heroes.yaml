@@ -2,21 +2,15 @@ slug: burn-heroes
 title: Burn Heroes
 tagline: Fight off swarms of enemies with fellow players in a multiplayer bullet heaven.
 description: >-
-  Burn Heroes is a bullet heaven built for playing with other people. Each
-  player controls a hero in a shared 3D arena, fending off swarms of enemies
-  that keep coming. Attacks fire on their own, so you steer the hero while the
-  weapons do the shooting.
+  Burn Heroes lets you fight alongside other players in a shared 3D arena. Each
+  player steers one hero in this multiplayer bullet heaven.
 
 
-  The creator, MartinTale, describes it as an attempt at the feel of Vampire
-  Survivors, with light RPG progression on top of the action and shooting. It is
-  a Cursor-built Three.js game that also runs on phones, and it came 125th of
-  the 945 entries at Vibe Jam 2026.
+  Swarms of enemies that keep coming. Automatic weapon fire. Light RPG
+  progression on top of the action and shooting, as the creator describes it.
 
 
-  Playing together is the main draw. The arena is shared, so fellow players
-  fight the same swarms beside you, and every run is a group effort against
-  enemies that do not stop coming.
+  MartinTale describes it as an attempt at the feel of Vampire Survivors.
 play:
   url: https://burnheroes.com
   embeddable: true
@@ -51,7 +45,7 @@ media:
     - games/burn-heroes/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-09-29
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:vibejam-2026

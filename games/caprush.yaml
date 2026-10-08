@@ -3,14 +3,17 @@ title: CapRush
 tagline: Race toy-sized cars over homemade dirt tracks built from holes, rock
   ramps and bottle caps
 description: >-
-  Race toy-sized cars against other players online on the kind of dirt track
-  kids build outdoors. The course is made of hand-dug holes, rock ramps and
-  soil, and you race other players online in the spirit of Hot Wheels.
+  Race toy-sized cars against other players online on a dirt track.
 
 
-  The idea is a personal memory from the creator's childhood: kids shaping a
-  track with a small shovel, earth and stones, then playing on it for hours. The
-  creator says it was built with Claude Code.
+  Hand-dug holes along the course. Rock ramps built into the track. Soil as the
+  course material.
+
+
+  The idea comes from the creator's childhood, when kids shaped a dirt track
+  with a small shovel, earth and stones, then played on it for hours. Inspired
+  by Hot Wheels miniatures. According to the creator, the game was built with an
+  AI coding assistant.
 play:
   url: https://caprush.vercel.app/index.html
   embeddable: true

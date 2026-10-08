@@ -2,20 +2,20 @@ slug: buzz-bingo
 title: Buzz Bingo
 tagline: Fill a bingo card with your own predictions and play along as events unfold.
 description: >-
-  You write your own predictions into a bingo card in place of the numbers, and
-  play it with other players. You write them in, then watch a moment, a crowd or
-  a community to see which ones come true, marking squares as things happen and
-  racing to complete a line.
+  Your card has predictions where the numbers would be. You watch a live moment,
+  crowd or community to see if they come true.
 
 
-  The idea comes from the familiar line about something not being on your bingo
-  card, turned into a format where any live event can become a game. Players can
-  join from a phone, and the creator says it was built with Codex.
+  A light puzzle in guessing what others will say or do. Strategy in the card
+  you build. Faster line fills from better predictions.
 
 
-  The strategy is in the card you build. Guessing what other people will say or
-  do is a light puzzle of its own, and the better your predictions, the faster
-  your line fills.
+  You mark a square when the thing you predicted happens. Race other players to
+  complete a line.
+
+
+  The idea came from a common saying that something is not on your bingo card.
+  It was turned into a format where any live event can become a game.
 play:
   url: https://buzzbingo.fun
   embeddable: true

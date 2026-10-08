@@ -2,41 +2,35 @@ slug: three-suns
 title: Three Suns
 tagline: Place gravity anchors to keep a world alive under three unpredictable suns.
 description: >-
-  Three Suns hands you the last living world in a system where three suns tug
-  every which way, and this physics survival game has you protect it by dropping
-  gravity anchors with a click or tap.
+  Three Suns has you protect the last living world in a physics survival game
+  set in a system where three suns tug at its path in every direction. With no
+  stable orbit to rely on, you watch how the suns pull at the planet.
 
 
-  Each anchor bends the planet's path, but a signal limit caps how many you can
-  place. Without a stable orbit to rely on, you have to watch how the suns pull
-  at the planet and place anchors at the right moment.
+  Gravity anchors, each one bending the planet's path. Signal limit capping how
+  many anchors you can place. Survival modes you swap between to adapt as
+  conditions shift, named Shield, Sleep and Observe. Shield mode, toughening the
+  planet against a red sun's heat aura but raising cold and chaos risk. Focus
+  ability that slows time. Sudden loss on contact with a sun. Health drained by
+  sun auras.
 
 
-  Touching a sun ends things on the spot, while the auras around them chip away
-  at your health.
+  Click or tap to drop an anchor at the right moment. Press Space to focus.
 
 
-  Shield, Sleep and Observe are survival modes that help you adapt as conditions
-  shift, and you swap between them.
-
-
-  Shield, for example, toughens the planet against a red sun's heat aura, though
-  that protection has a price, since the risk from cold and chaos goes up. Space
-  triggers a focus ability that slows time, and P toggles a low-effects option.
-
-
-  A quick survival lesson plays at the start, and you can skip it.
-
-
-  The setup draws on the three-body problem from orbital mechanics and on Liu
-  Cixin's novel of the same name, though the story, the mechanics and the world
-  are all Danil38138190's own.
+  Inspired by Liu Cixin's novel The Three-Body Problem and by the three-body
+  problem in orbital mechanics. The story, mechanics and world are all
+  Danil38138190's own.
 play:
   url: https://threesuns.xyz
   embeddable: true
   platforms:
     - browser
     - mobile
+  controls:
+    - "Click or tap: drop a gravity anchor"
+    - "Space: use the focus ability"
+    - "P: toggle the low-effects option"
 creator:
   name: Danil38138190
   handle: danil38138190

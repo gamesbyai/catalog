@@ -2,19 +2,17 @@ slug: kill-9
 title: KILL-9
 tagline: Play turn-based cards against a rogue AI in a retro terminal.
 description: >-
-  In KILL-9 you play cards against a rogue AI, and the AI is also the dealer.
-  You and the AI trade plays turn by turn until one side is beaten. It is a
-  strategy card game.
+  In this strategy card duel, a rogue AI deals your hand and plays against you.
+  You and the AI take turns playing cards until one side is beaten.
 
 
-  The creator has worked in IT throughout their career and wanted a tech- and
-  AI-flavored take on the turn-based card game. The IT theme is built around the
-  idea of a machine turning on its user.
+  Choosing which dealt card to play on each turn. The AI's narration of your
+  defeat, as the match goes on. An IT theme built around a machine turning on
+  its user.
 
 
-  Your opponent controls what you are given, so the strategy is in choosing
-  which of those cards to play. As the match goes on, the AI narrates your
-  defeat.
+  thhoj has worked in IT for their entire working career, and a tech and AI take
+  on a turn-based card game seemed like fun to them.
 play:
   url: https://kill9.unfinished-works.com
   embeddable: true

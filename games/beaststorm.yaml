@@ -2,21 +2,14 @@ slug: beaststorm
 title: Beaststorm
 tagline: Scout, expand, and command beast armies to destroy the enemy sanctuary.
 description: >-
-  A match of Beaststorm ends when one side's sanctuary falls. To get there, you
-  scout the map, expand your territory, harvest resources and build up an army
-  of beasts, then command it against the other commander.
+  Beaststorm pits you against another commander in a fast, lightweight fantasy
+  real-time strategy match. A match ends when one side's sanctuary falls.
 
 
-  Built with Codex, it's a lightweight fantasy real-time strategy game with
-  online multiplayer support. The factions are beasts, so your forces are
-  creatures instead of the usual soldiers, and each match is a contest between
-  commanders.
-
-
-  The scouting, expansion and economy loop is the one associated with Age of
-  Empires II, in a smaller package with a quick, stripped-down pace. All of it
-  builds toward one target: the enemy sanctuary, destroyed before yours goes
-  down.
+  Beast factions, with creatures rather than soldiers as your forces. An army of
+  beasts you build up and command. Online multiplayer support. Scouting,
+  expansion and resource harvesting, the economy loop associated with Age of
+  Empires II in a smaller package with a quick, stripped-down pace.
 play:
   url: https://beaststorm.xyz
   embeddable: true

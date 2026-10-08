@@ -2,27 +2,21 @@ slug: haldane-4
 title: HALDANE-4
 tagline: Descend alone beneath the Antarctic ice and uncover what waits below in ASCII.
 description: >-
-  That briefing introduces HALDANE-4, a submersible exploration platform run by
-  the United States Antarctic Survey. It's unit H4-ANT-72, and the 1972 date
-  gives the whole thing the feel of an old government file.
+  Alone in HALDANE-4, a submersible exploration platform run by the United
+  States Antarctic Survey, you descend beneath the Antarctic ice shelf. A short
+  horror story unfolds through the descent, with an AI voice narrating.
 
 
-  You're piloting that submersible alone, heading down beneath the Antarctic ice
-  shelf. WASD gives you thrust while the mouse rotates your view, Shift cuts the
-  engine and Space switches on the light.
+  A 1972 briefing on unit H4-ANT-72. Procedural sound, apart from the voice.
+  Under 5 MB in total, with nothing beyond the code.
 
 
-  It's a short horror story, and it unfolds through that descent with an AI
-  voice narrating over it.
+  Use WASD to thrust and the mouse to rotate your view. Press Shift to cut the
+  engine and Space to switch on the light.
 
 
-  Every sound in it is generated procedurally, apart from that voice. The whole
-  game comes in under 5 MB, with nothing beyond the code.
-
-
-  For denisbondare, the challenge was keeping to strict limits, with ASCII
-  graphics and vibe coding only, while still making something atmospheric that
-  tells a story.
+  denisbondare kept to strict limits: ASCII graphics and vibe coding only, while
+  still making something atmospheric that tells a story.
 play:
   url: https://haldane4.denisbondare.com
   embeddable: true

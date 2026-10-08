@@ -2,25 +2,25 @@ slug: hold-the-line
 title: Hold the Line
 tagline: Draw electric wires to trap and eliminate zombies in a 3D isometric arena.
 description: >-
-  Zombies swarm the arena, and your weapon is electric wire. Hold the fire input
-  while you move to trail a wire behind you. When your path closes into a loop
-  around zombies, the wire seals itself and electrocutes everything inside.
+  Zombies swarm the arena, and electric wire is your weapon against them.
 
 
-  A wave ends when every zombie is dead, and then the next one starts. Don't
-  loop the cage around yourself, or the survivor burns. Shift dashes to dodge.
-  Diamonds give a random effect: speed, shield or freeze, or slow and extra
-  zombies as the downside.
+  Back-to-back waves, each ending once the last zombie is dead. Death Lakes that
+  grow 10% every wave, shrinking the safe zone. Random diamond effects of speed,
+  shield or freeze, or a downside of slow and extra zombies. Score multiplier
+  raised by combo kills, and extra points for chained zaps. Solo play, local
+  multiplayer, and online matches. Five bombs per player to place after each
+  cleared wave in multiplayer.
 
 
-  Death Lakes grow by 10% every wave, so the safe zone shrinks as you advance.
-  Combo kills raise your score multiplier, and chained zaps score more. You can
-  play alone, with local multiplayer, or online. In multiplayer, each player
-  gets 5 bombs to place after a wave is cleared.
+  Hold fire while you move to trail a wire behind you. Close the path into a
+  loop around zombies, and the wire seals and electrocutes everything inside.
+  Don't loop it around yourself, or your survivor burns. Press Shift to dash and
+  dodge. On mobile, move with the joystick and use the separate fire and dash
+  buttons.
 
 
-  The creator describes it as a mix of Snake and Bomberman. On mobile, you move
-  with a joystick and use separate fire and dash buttons.
+  According to enesramisg, the game is a mix of Snake and Bomberman.
 play:
   url: https://eramis73.github.io/htl-server
   embeddable: true

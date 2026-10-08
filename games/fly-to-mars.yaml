@@ -2,35 +2,27 @@ slug: fly-to-mars
 title: Fly To Mars
 tagline: Pilot a rocket from Earth to Mars, dodging asteroids and sealing a hull breach.
 description: >-
-  You're the pilot of the Ares-IX, flying it from Earth to Mars. It opens with a
-  countdown and liftoff, then carries you through max-Q, stage separation and
-  orbital insertion before the ship heads out into the asteroid belt.
+  You're the pilot of the Ares-IX, flying it from Earth to Mars.
 
 
-  Once you're in the belt, you steer around the rock flying at you. Skimming
-  close past an asteroid counts as a near-miss, and enough of those near-misses
-  charge the warp drive. When it's charged you can punch into warp, but it's
-  off-limits during the final approach.
+  Countdown, liftoff, max-Q, stage separation and orbital insertion. Asteroid
+  belt, after orbital insertion. Warp drive, charged by enough near-misses. Hull
+  leak past the halfway mark. Atmospheric entry, with a descent through dust, a
+  flare and touchdown. Four difficulty modes, Zen with no asteroids and no fail
+  state at all, plus Easy, Normal and Hard with more rock in the belt. Mission
+  control callouts, with the music ducking under them.
 
 
-  Somewhere past the halfway mark the hull springs a leak, and you're stuck
-  sealing it while the rocks keep coming.
+  Play on a desktop with a keyboard, the setup it's meant for. Steer around the
+  incoming rock with W, A, S and D or the arrow keys, and look around the
+  cockpit with the mouse. Skim close past an asteroid to count a near-miss.
+  Press Shift to warp once it's charged, but not during the final approach. Seal
+  the leak while the rocks keep coming.
 
 
-  The last leg is atmospheric entry, a descent through the dust, a flare and a
-  touchdown.
-
-
-  There are four difficulty settings. Zen has no asteroids and no fail state at
-  all, while Easy, Normal and Hard put more rock into the belt. It's meant for a
-  desktop with a keyboard, and the mouse lets you look around.
-
-
-  Max Z built the whole thing as a single HTML file with no build step, over
-  roughly 18 hours of work. AI tools handled the code, the art, the
-  mission-control voices and the three soundtrack tracks that cycle through the
-  flight. The mix even ducks the music whenever mission control calls out an
-  event.
+  Max Z built the whole thing as one HTML file with no build step, over roughly
+  18 hours of work. AI tools handled the code, the art, the mission-control
+  voices and the three soundtrack tracks that cycle through the flight.
 play:
   url: https://maxzillion.itch.io/fly-to-mars
   embeddable: false

@@ -3,27 +3,20 @@ title: Credit Quest
 tagline: Collect API credits and finish terminal-themed quests in a
   Zelda-inspired adventure.
 description: >-
-  You walk a hero around an overworld. Your first job is to go talk to PIP, just
-  west of the plaza path. The game gives you its instructions through dialogue
-  boxes.
+  Credit Quest has you walk a hero around an overworld in a land where terminals
+  are king. The game calls itself a fantasy-tech action RPG. You swing at
+  Glitches with an attack button, and you collect API Credits to finish tasks
+  and quests.
 
 
-  It calls itself a fantasy-tech action RPG, set in a land where terminals are
-  king, and you collect API Credits to finish tasks and quests.
+  Fallen-asleep shrines to wake and restore the route. The last clean signal to
+  carry home. Instructions delivered through dialogue boxes.
 
 
-  Along the way you swing at Glitches with an attack button, wake up shrines
-  that have fallen asleep and work to restore the route. The goal is to carry
-  the last clean signal home.
+  Go talk to PIP first, just west of the plaza path.
 
 
-  You can open a field guide and a help screen in the middle of play.
-
-
-  It's built for desktop browsers. You click the game window to give it focus.
-
-
-  packetloss cited Zelda as the inspiration behind Credit Quest.
+  packetloss cited Zelda as the inspiration, and grew up loving the series.
 play:
   url: https://creditquest.packetloss404.com
   embeddable: true

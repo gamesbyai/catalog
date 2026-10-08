@@ -2,21 +2,22 @@ slug: drone-operator
 title: Drone Operator
 tagline: Fly a delivery drone through hazards to drop packages on time and earn cash.
 description: >-
-  Flying a delivery drone over a city is the whole job here. Move with WASD,
-  look around with the mouse, rise with Space and drop with Shift. Q lowers a
-  wire and E raises it. The goal is to deliver packages on time and earn cash.
+  Drone Operator puts you at the controls of a delivery drone over a city. Your
+  goal is to deliver packages on time and earn cash.
 
 
-  Several things get in the way. Reckless drones share the sky, an angry driver
-  who lost his job is out to outsmart you, and eagles patrol the air. The game's
-  own pitch warns against becoming pet food. The job plays out in a city with an
-  HQ in it.
+  Reckless drones in the shared sky. Angry driver who lost his job, out to
+  outsmart you. Eagles on patrol in the air. Pet food as a fate to avoid.
+  Headquarters inside the city.
 
 
-  Before a run you type a username, which stays tied to that browser and can't
-  be changed later. You can also set graphics quality to Low, Medium or High.
-  Keys 1 to 4 switch the music, M mutes, and Esc pauses. The creator made an
-  earlier game, Dragon World, and built this one to test the limits again.
+  Move with WASD and look around with the mouse. Use Space to rise and Shift to
+  drop. Press Q to lower the wire and E to raise it. Press keys 1 to 4 to switch
+  the music.
+
+
+  MoneOunchPan made an earlier game, Dragon World, and built this one to test
+  the limits again.
 play:
   url: https://drone-operator.cliive.com
   embeddable: true

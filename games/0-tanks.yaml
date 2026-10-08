@@ -3,27 +3,22 @@ title: 0 Tanks
 tagline: Fight through procedural floors in a tank, buying upgrades and beating
   armored bosses.
 description: >-
-  Each run sends your armored tank down through procedurally generated floors,
-  one at a time, shooting whatever gets in the way. It's a roguelite that pushes
-  deeper with every floor, and when you start over, the layout's new. The game
-  also tracks your deepest floor, your high score and how many enemies you've
-  taken out.
+  Each run, you steer your armored tank through procedurally generated floors,
+  one at a time, shooting whatever gets in the way. This roguelite gets deeper
+  with each floor, and starting over gives you a new layout.
 
 
-  It's a tank shooter that nods to Battle City, the old arcade classic.
+  Progression from upgrades bought on the way down, shaping the tank. A
+  different build each run. Armored bosses guarding the way forward, testing
+  your build. Two currencies, credits and alloy. Records for deepest floor, high
+  score and enemy kills.
 
 
-  You drive with WASD and aim with the mouse while clicking to fire. Shift gives
-  you a boost, and Enter sends you out on a run.
+  Drive with WASD and aim with the mouse. Click to fire. Press Shift to boost,
+  Enter to start a run.
 
 
-  Upgrades carry the progression. You buy them on the way down, and the ones you
-  pick shape the tank, so each run builds toward a different setup. The game has
-  two currencies, credits and alloy.
-
-
-  Armored bosses guard the way forward, and they're where whatever build you've
-  scraped together by then gets tested.
+  The tank shooting pays a nod to Battle City, an old arcade classic.
 play:
   url: https://0tanks.com
   embeddable: true

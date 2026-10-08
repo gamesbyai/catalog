@@ -3,55 +3,35 @@ title: STARCHART
 tagline: Fly routes between generated stars and keep each route as a permanent
   constellation
 description: >-
-  You fly a ship from star to star, and every jump eats into your flux and your
-  hull.
+  You fly a ship from star to star, and each jump wears down your flux and hull.
+  Each star's shape shows what it does: forges repair hull, shrines take a cut
+  of flux, nebulae are gambles, and twin wrecks offer risky or safe salvage.
+  Nothing resets, and even a failed run leaves a named, permanent constellation
+  in your atlas, which doubles as your save file.
 
 
-  Each star's shape tells you what it does, so the real skill here is reading
-  the whole sky with one quick look. There are 48 star forms spread across six
-  families, and every form comes in eight color palettes. A forge repairs your
-  hull, a shrine takes a cut of your flux, a nebula is a gamble and a twin wreck
-  hands you a choice between risky and safe salvage.
+  Forty-eight star forms, six families, eight palettes each. Re-flown routes
+  that deepen their line, never duplicated. Permanent grants by dominant family,
+  stacking. Bulwark's +1 max hull, Reserve's +14 starting flux, Farsight's +9%
+  jump range. Fortune's better salvage, Ward's hazard absorption, Covenant's +10
+  flux at every shrine. Four sectors, The Verge from the start, The Drift, The
+  Hollow Crown and The Long Dark, unlocked at 5, 12 and 21 inscriptions. Voyages
+  of about half an hour.
 
 
-  You set off from one of three gates, and since they sit far apart and each
-  opens a different region, picking one is really picking where your next figure
-  lands on the chart. After that you pick how far to jump, either a cheap safe
-  hop or a long haul that puts heavy strain on your hull to get to the star
-  you're after. Then you decide when to stop.
+  Read each star's form at a glance. Pick one of three far-apart gates, each
+  opening its own region. Your gate sets where the next figure lands on your
+  chart. Choose a cheap, safe hop or a long haul that strains your hull. Use
+  jump range to reach stars that were unaffordable. Set anchor when you choose
+  to stop, banking the route. Turn your route into a loop to seal it for twice
+  the bonus, but you could drift first.
 
 
-  Dropping anchor lets you finish when you choose and banks the route. Bending
-  your path back into a loop locks the constellation in and pays out twice the
-  bonus, but chasing that loop means you could end up adrift before you close
-  it.
-
-
-  Whatever happens, even a voyage that goes badly gets a name and a permanent
-  spot in your atlas as a constellation. Its dominant family gives you a
-  permanent bonus like extra hull, more starting flux, longer jump range, better
-  salvage, a ward that soaks up a hazard, or more flux from every shrine.
-  Nothing resets, and because the bonuses stack, a bit more range can put stars
-  in reach that you couldn't afford before.
-
-
-  Retrace a route that's already on your chart and the atlas won't copy it, so
-  the line just gets deeper.
-
-
-  The atlas doubles as your save file, and it also opens up new sectors as it
-  fills. The Verge is there from the start, and The Drift needs 5 inscriptions,
-  The Hollow Crown 12 and The Long Dark 21.
-
-
-  Every star, chart and name is drawn by code, and flying an identical voyage
-  gives you an identical chart and name every time. The sound is synthesized,
-  and you can switch it off. Progress saves on every arrival, so closing the tab
-  mid-voyage drops you right back where you were.
-
-
-  A run takes about half an hour. According to the creator, csaf, AI helped with
-  the code, graphics and text.
+  Code draws every star, chart and name, and an identical voyage always gives
+  the same chart and name. Sound is synthesized. Progress is saved in your
+  browser at every arrival, and a tab closed mid-voyage resumes right where you
+  left off. According to the creator, csaf, AI helped with the code, graphics
+  and text.
 play:
   url: https://csaf.itch.io/starchart
   embeddable: false

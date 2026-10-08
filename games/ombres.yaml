@@ -3,35 +3,31 @@ title: Ombres
 tagline: Steer a giant bird whose shadow paints the desert; biggest territory at
   nightfall wins.
 description: >-
-  The main game runs on one shared screen while everyone flies from their own
-  phone. Bots take any empty seats, so a single phone is plenty to start a match
-  for up to 12.
+  Up to 12 players steer giant birds from their phones while the game itself
+  runs on a shared screen. Each bird's shadow paints sand in its player's color,
+  and at nightfall whoever holds the most sand wins. Bots fill any empty seats,
+  so one phone is enough to start a match.
 
 
-  Your bird's shadow paints the desert in your color, and whoever owns the most
-  sand at nightfall wins. Altitude is where the real decisions live. Hold dive
-  and you skim low with a small, strong shadow, while letting go lifts you into
-  a wide, pale one that can't repaint strong sand.
+  Four maps, from The Parasols to The Sundial. Towers, with sand frozen and
+  birds hidden inside their shadows. Shadows stretched by the setting sun. The
+  Great Shadow, the final 12 seconds of night rolling off the cliff, freezing
+  the desert from west to east. Three rounds, each about two minutes long, with
+  the last one counting double. Stand-in bots for disconnected players, keeping
+  their color and territory until they return.
 
 
-  Towers freeze any sand their shadows cover and hide a bird whose shadow slips
-  inside.
+  Scan the QR code, then pick a name and a color. Steer with the phone joystick
+  or WASD. Hold dive to skim low under a small, strong shadow. Let go to climb
+  into a wide, pale shadow. Pale shadows can't repaint strong sand. Dive from
+  above a bird lower than yours to strike it. A hit stalls that bird and gives
+  its trail your color. A miss stalls you. When a clack warns you, press
+  wingbeat to dodge.
 
 
-  The other birds are targets too. Dive while you're above a lower bird to
-  strike it, and a hit stalls it and turns its trail your color. Miss and you're
-  the one stalling, though at least the target gets a fair warning in the form
-  of a clack before it can dodge with a wingbeat.
-
-
-  A match runs three rounds of about two minutes, the last counting double, and
-  as the sun sinks the shadows stretch until, for the final 12 seconds, night
-  rolls off the cliff and freezes the desert west to east.
-
-
-  According to the repository, Claude Opus 5.5 designed and built Ombres from a
-  single brief with Brieuc Crosson supervising. The project also says the model
-  wrote every line of the code through multi-agent workflows.
+  An AI model designed and built Ombres from one brief, with Brieuc Crosson
+  supervising. The AI wrote every line of code, using multi-agent workflows,
+  over about 35 hours of agent time.
 play:
   url: https://ombres.deploy.breizhware.com
   embeddable: true

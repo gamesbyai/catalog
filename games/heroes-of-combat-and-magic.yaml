@@ -2,23 +2,19 @@ slug: heroes-of-combat-and-magic
 title: Heroes of Combat and Magic
 tagline: Command factions in turn-based isometric battles against other players online.
 description: >-
-  The game opens on a battle setup screen over a painted wheat-field backdrop. A
-  faction carousel across the top starts on Knights, shown as an armored
-  crossbow-wielding hero. A second carousel on the right picks the battleground,
-  set to a map called City IV.
+  Lead the faction you pick in turn-based battles against the AI or in real-time
+  matches against other players.
 
 
-  A toggle switches between VS AI and PvP. The settings panel offers Easy,
-  Medium and Hard difficulty and an army points budget, set to 1,000 points. It
-  also shows your faction and the opposing AI faction, which starts on Random.
-  Start Battle begins the fight, and an Advanced Settings button opens more
-  options.
+  Several factions to choose from. An AI-controlled opposing faction. Easy,
+  Medium and Hard AI difficulty levels. Armies built from a points budget, set
+  to 1,000 points.
 
 
-  Battles are turn-based and isometric, with several factions to choose from.
-  PvP matches run in real time against other players online. The creator, a solo
-  developer, modeled it on Heroes of Might and Magic 3 and built it to run
-  entirely in the browser.
+  Choose VS AI or PvP, then press Start Battle to begin the fight.
+
+
+  kingofheroesCM, a solo developer, modeled it on Heroes of Might and Magic 3.
 play:
   url: https://heroescm-jam.fly.dev
   embeddable: true
@@ -52,7 +48,7 @@ media:
     - games/heroes-of-combat-and-magic/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-10-02
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:vibejam-2026

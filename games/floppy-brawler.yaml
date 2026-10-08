@@ -2,21 +2,21 @@ slug: floppy-brawler
 title: Floppy Brawler
 tagline: Fight ragdoll-style opponents in a wobbly, physics-driven brawler.
 description: >-
-  Land hits and stay upright: that is the whole scramble in Floppy Brawler, an
-  online physics brawler with loose-limbed, ragdoll-style fighters. In every
-  match, your own fighter flails and wobbles under the physics simulation, just
-  like theirs. Fights happen in the browser, on a desktop or a phone.
+  You control a fighter in Floppy Brawler, a physics-based brawler where every
+  match pits you against other players. Land hits and keep your fighter upright.
 
 
-  The floppy movement makes every exchange unpredictable, so fights come out
-  messy and funny rather than precisely choreographed. The style draws on
-  existing physics-based brawlers the creator enjoys playing, and Three.js
-  renders the fights.
+  Loose-limbed, ragdoll-style fighters. Wobbly physics for every fighter in a
+  match, yours included. Unpredictable exchanges, thanks to the floppy movement.
+  Messy, funny fights from those exchanges, rather than precisely choreographed
+  ones.
 
 
-  The creator is a web developer who uses AI daily at work. Their Vibe Jam 2026
-  entry, made with Claude Code, finished 13th of 945. The very first output from
-  Claude on day one inspired the project, though they now think that early
+  The style draws on existing physics-based brawlers the creator enjoys playing.
+
+
+  MrCollison is a web developer who uses AI daily at work. The very first output
+  from Claude on day one inspired the project, though they now think that early
   version looks terrible.
 play:
   url: https://floppybrawler.vercel.app
@@ -54,7 +54,7 @@ media:
     - games/floppy-brawler/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-09-29
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:vibejam-2026

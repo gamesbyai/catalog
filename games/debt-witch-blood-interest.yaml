@@ -2,37 +2,26 @@ slug: debt-witch-blood-interest
 title: "Debt Witch: Blood Interest"
 tagline: Survive 60 seconds as a witch, casting spells against a swarm of vampiric debt.
 description: >-
-  A dark purple grid fills the screen, with your witch as a small black blob
-  and colored blobs carrying literal labels like Rent Ghoul, Interest Bat and
-  Subscription Leech drifting in around her. You're trapped inside a cursed
-  ledger, and that swarm is vampiric debt crawling out of its margins.
+  A lone witch is trapped inside a cursed ledger, where vampiric debt crawls out
+  of the margins. Unpaid bills and interest are monsters with teeth. Your job is
+  to survive 60 seconds against the swarm, casting, dodging and slowing it
+  within one short window.
 
 
-  Your job is to last 60 seconds against it, while a timer counts down in the
-  corner beside your score, your debt and your hearts.
+  Bill-themed enemies, such as the Rent Ghoul, Interest Bat and Subscription
+  Leech. The Receipt Bolt, your basic spell. Grace Period and Write-Off, two
+  abilities named after accounting terms. A grade for how you did, from the
+  cursed accountant when the 60 seconds are up. Gothic comedy in an arcade
+  survival format.
 
 
-  You steer with WASD or the arrow keys and aim with the mouse. Casting works
-  on a click, Space or Q. The bar along the bottom calls that basic spell the
-  Receipt Bolt.
+  Steer with WASD or the arrow keys, and aim with the mouse. Cast with a click,
+  Space or Q. Press E to slow the debt with Grace Period. Press R to set off the
+  Write-Off blast.
 
 
-  Two more abilities sit on the keyboard, both named after accounting terms.
-
-
-  E slows the debt down through a spell called Grace Period, a clever name for
-  buying time. R sets off the Write-Off blast. A run means casting, dodging and
-  slowing the swarm inside one short window, and when the 60 seconds are up, a
-  cursed accountant hands you a grade for how you did.
-
-
-  The whole thing is played as gothic comedy in an arcade survival format, where
-  unpaid bills and interest are monsters with teeth. Even the enemy names stay
-  on theme, turning your rent into a ghoul and a subscription into a leech.
-
-
-  Bad Omen Games built it with AI assistance on the code, graphics and text,
-  according to their own disclosure.
+  According to Bad Omen Games, the game was built with AI assistance on the
+  code, graphics and text.
 play:
   url: https://bad-omen-games.itch.io/debt-witch-blood-interest
   embeddable: false
@@ -72,7 +61,7 @@ media:
     - games/debt-witch-blood-interest/shot-2
 dates:
   added: 2026-10-01
-  updated: 2026-10-02
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:aibgj-3

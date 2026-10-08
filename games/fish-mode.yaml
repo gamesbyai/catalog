@@ -3,19 +3,13 @@ title: FISH MODE
 tagline: Swim down a river as a fish, grabbing bobbers and dodging hooks for a
   high score.
 description: >-
-  You play a fish swimming downstream through a river in this arcade game. Along
-  the way you collect bobbers for points and steer clear of hooks. Flipping and
-  swerving through the current is how you push your score as high as possible in
-  a single run.
+  Push your score as high as possible in a single run of this arcade game. Swim
+  a fish downstream through a river. Your aim is to chain clean lines through
+  the obstacles and keep a steady rhythm.
 
 
-  The game leans on its movement. Swerving and flipping are the core actions, so
-  the aim is to chain clean lines through the obstacles and keep a steady
-  rhythm.
-
-
-  The game is built in Three.js, and the creator's statement credits
-  Antigravity, Google's AI coding tool, as the tool used to make it.
+  Bobbers to collect for points. Hooks to steer clear of. Flipping and swerving
+  through the current, the two core actions.
 play:
   url: https://fishmode.vercel.app
   embeddable: true

@@ -2,27 +2,21 @@ slug: blizzard-brawl
 title: BLIZZARD BRAWL
 tagline: Build snow defenses and throw gadgets at rivals in a shrinking frozen arena.
 description: >-
-  Move with WASD, aim with your cursor and click to throw snowballs. The game
-  drops you straight into a local solo arena against a bot, and that round keeps
-  going until you decide to queue for a duel.
+  Start straight away in a local solo arena against a bot, and the round keeps
+  going until you decide to queue for a duel. When matchmaking finds a rival,
+  you can jump into a live 1v1. seanDDari describes those duels in terms of
+  defenses and gadgets, where you outplay the other player while the frozen
+  arena shrinks around you.
 
 
-  When matchmaking finds a rival, you can jump into a live 1v1. seanDDari
-  describes those duels as building defenses, deploying gadgets and outplaying
-  the other player while the frozen arena shrinks around you.
-
-
-  Press 1 to build a wall, 2 for a turret or 3 for a heater. Left click throws a
-  snowball, but it places your selected item instead when you've picked one. If
-  you change your mind, Escape or right click cancels it.
-
-
-  When a round ends, such as with a defeat by elimination, you can restart the
-  round or queue for a duel.
+  Move with WASD, aim with your cursor. Left click to throw a snowball, or place
+  a picked item. Press 1 to build a wall, 2 for a turret, 3 for a heater. Press
+  Escape or right click to cancel. When a round ends, such as by elimination,
+  restart or queue for a duel.
 
 
   seanDDari made it after reading an article about levelsio earning money from a
-  game he'd built in just three hours.
+  game built in just three hours.
 play:
   url: https://jenemia.github.io/SnowBattle
   embeddable: true

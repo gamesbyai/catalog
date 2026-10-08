@@ -3,32 +3,25 @@ title: Bounce Ballers
 tagline: Score goals in a networked, platform-hopping soccer match against other
   players.
 description: >-
-  There are four arenas to pick from, called Classic Arena, Neon Foundry, Plinko
-  and Glitch Garden.
+  Against a bot, in a private match, or against other players found through
+  matchmaking, you play competitive soccer on platforms.
 
 
-  Each arena has two goal zones. Plinko has pegs and slanted ramps. It's tagged
-  RNG Madness.
+  Four arenas, Classic Arena, Neon Foundry, Plinko and Glitch Garden. Two goal
+  zones in each arena. Plinko, with pegs and slanted ramps and an RNG Madness
+  tag. Three map events, Reverse Ball Gravity, Low Gravity and Infinimap.
+  Infinimap, where the arena circles back on itself. Five ability pickups,
+  including Speed Boost, Burst Boost, Throw Boost, Magnet and Invisibility.
+  Saved custom maps, kept under My Arenas.
 
 
-  Before a match, you get to set the rules yourself. You can set the score
-  limit, round time and bot difficulty yourself, starting from First to 10, No
-  Limit and Normal. You can toggle three map events, Reverse Ball Gravity, Low
-  Gravity and Infinimap, which wraps the arena around on itself.
+  Before a match, set the score limit, round time and bot difficulty. Toggle map
+  events, and switch ability pickups one by one. Paste a room ID to join a room.
+  Type a name to stop playing as a guest.
 
 
-  You can switch five ability pickups on or off one at a time, including Speed
-  Boost, Burst Boost, Throw Boost, Magnet and Invisibility.
-
-
-  You can start a match with Matchmake, vs Bot or Private Match. You can also
-  join a room by pasting its room ID, and Copy Code and Copy Invite are
-  available as well. Your saved custom maps are kept under My Arenas, and until
-  you type a name you play as a guest.
-
-
-  matthayes13 is a longtime fan of IDARB and wanted to build a networked soccer
-  platformer with progression.
+  matthayes13 has been a fan of IDARB for years and set out to make a networked
+  soccer platformer with progression.
 play:
   url: https://bounceballers.com
   embeddable: true
