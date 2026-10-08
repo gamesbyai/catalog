@@ -2,15 +2,12 @@ slug: goal-locked-the-crucible
 title: "Goal-Locked: The Crucible"
 tagline: Score goals and outlast rivals in a shrinking cyber-sport arena.
 description: >-
-  A dark, round arena glows behind the title screen, with neon goals in red
-  and purple around its edge and the instructions laid right over the top.
-  You're a sphere, and the objective spelled out there is blunt (be the last
-  one still standing).
+  You're a sphere, and your goal is to be the last one still standing.
 
 
-  It puts battle royale rules on a sport, where every goal you score counts as
-  a way to knock one of your opponents out. Survival and scoring end up being
-  the same job. Meanwhile the tactical arena keeps shrinking, pushing everyone
+  It puts battle royale rules on a sport, where every goal you score counts as a
+  way to knock one of your opponents out. Survival and scoring end up being the
+  same job. Meanwhile the tactical arena keeps shrinking, pushing everyone
   toward the same spot as the match goes on.
 
 
@@ -22,15 +19,12 @@ description: >-
   fires off a pulse, the one move the game files under tactics.
 
 
-  Before you even hit Play Now, the menu is already keeping a little scorecard
-  with your best result, your kills and a tier that starts at T1.
+  The game tracks your best result, your kills and a tier that starts at T1.
 
 
   whinhosa_exe wanted to shake up how predictable sports games tend to be. Tying
   survival to scoring, which puts elimination stakes into a sports format, is
-  the main idea behind the design. The presentation leans into a high-tech,
-  cyber-sport look. Glowing rings and lit-up goal mouths sit against a nearly
-  black floor.
+  the main idea behind the design.
 play:
   url: https://goal-locked.vercel.app
   embeddable: true
@@ -67,7 +61,7 @@ media:
     - games/goal-locked-the-crucible/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-10-02
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:vibejam-2026

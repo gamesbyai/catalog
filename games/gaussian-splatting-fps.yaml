@@ -3,15 +3,8 @@ title: Gaussian Splatting FPS
 tagline: Shoot your way through a first-person level built from a real-world 3D scan.
 description: >-
   The level here is a real place, captured as a Gaussian Splat scan, and you're
-  walking through it in first person with a carbine in your hands. WASD moves
-  you, C drops you into a crouch, and the mouse button fires. A crosshair sits
-  dead center while a red health bar and a 30 / 30 ammo counter show in the
-  corners.
-
-
-  Up close, the scan melts into soft, blurry surfaces with smeared detail, and
-  the screen edges curve inward behind a vignette, so the place looks like a
-  half-remembered photo rather than a modeled map.
+  walking through it with a carbine in your hands. WASD moves you, C drops you
+  into a crouch, and the mouse button fires.
 
 
   All that softness hides a big headache, because splat scans are static and
@@ -28,8 +21,7 @@ description: >-
 
 
   The carbine model comes from DJMaesen on Sketchfab, and Christoph Schindelar
-  made the splat environment, with both credits printed right at the top of the
-  screen.
+  made the splat environment.
 
 
   yak32 also wrote up the whole process for the PlayCanvas blog. It's a
@@ -71,7 +63,7 @@ media:
     - games/gaussian-splatting-fps/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-10-02
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:vibejam-2026

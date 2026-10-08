@@ -3,25 +3,19 @@ title: Cursor Bug Detective
 tagline: Scan props on a 3D desk, decode cipher clues, and name the bug in 90 seconds
 description: >-
   Every day there's one new case waiting, and a round lasts about 90 seconds.
-  You play the Cursor mascot as a tiny detective, scanning the props on a 3D
-  developer's desk for clues.
-
-
-  The desk looks a bit like somebody's real workstation, with code glowing on
-  the monitor, a sealed evidence envelope, an agents tray, a desk lamp and a
-  white mug with steam rising off it.
+  You play the Cursor mascot as a tiny detective, searching a developer's desk
+  for clues.
 
 
   Hover across the desk to spot whatever looks off, then open the monitor, the
-  envelope, the agents tray and the lamp. Each one gives you a clue in cipher
-  form, and the four evidence slots at the top fill in as you go.
+  envelope, the agents tray and the lamp. Each one gives you a clue written in
+  cipher.
 
 
-  You crack those ciphers through four mini-puzzles. One of them is a case
-  file styled like an editor's autocomplete, which fits this mascot, so you
-  finish a sentence like "The case file sheet was" by picking between a plain
-  "floating" and a theatrical "levitating dramatically". The prompt under the
-  choices tells you to read the clue first.
+  You crack those ciphers through four mini-puzzles. One of them is a case file
+  styled like an editor's autocomplete, and you finish a sentence like "The case
+  file sheet was" by picking between a plain "floating" and a theatrical
+  "levitating dramatically". Read the clue before you choose an answer.
 
 
   Once the evidence adds up, you make the call and name the bug to close the
@@ -29,11 +23,11 @@ description: >-
 
 
   casper_chsieh modeled the loop on daily word games like Wordle, which ask for
-  one short session a day, and picked a bug hunt because, fairly enough, finding
-  bugs is what most developers spend their days doing. The desk was built by
-  hand, and the idea was to give the mascot a story bigger than a logo.
-  casper_chsieh also points to a few further games with new and retro themes to
-  explore alongside the daily case.
+  one short session a day, and picked a bug hunt because finding bugs is what
+  most developers spend their days doing. The desk was built by hand, and the
+  idea was to give the mascot a story bigger than a logo. casper_chsieh also
+  points to a few further games with new and retro themes to explore alongside
+  the daily case.
 play:
   url: https://bug-detective.pages.dev
   embeddable: true
@@ -67,7 +61,7 @@ media:
     - games/cursor-bug-detective/shot-2
 dates:
   added: 2026-10-01
-  updated: 2026-10-02
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:vibejam-2026

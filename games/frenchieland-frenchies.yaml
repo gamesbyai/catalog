@@ -9,10 +9,8 @@ description: >-
   layers change the shape of the course as you go.
 
 
-  Clearing challenges unlocks a growing roster of rare and exotic pups. The look
-  is a wild cosmic universe built around angelic-looking Frenchies, which were
-  inspired by the creator's own dogs and their personalities. It was a Vibe Jam
-  2026 entry, placing 212th of 945 in the final ranking.
+  Clearing challenges unlocks a growing roster of rare and exotic pups. The
+  Frenchies were inspired by the creator's own dogs and their personalities.
 
 
   The creator thought about the idea for more than three years, then built it
@@ -52,7 +50,7 @@ media:
     - games/frenchieland-frenchies/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-09-29
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:vibejam-2026

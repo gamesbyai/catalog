@@ -11,8 +11,8 @@ description: >-
 
   You steer the ironclad through procedurally charted channels, aiming guns with
   the mouse. Skiffs ram you, branders explode, towers lead their shots, and
-  mortar barges mark the water with warning rings you should stay out of. Rocks
-  damage the hull and reefs drag the keel. Each leg ends in a safe cove.
+  mortar barges mark areas of water you should stay out of. Rocks damage the
+  hull and reefs drag the keel. Each leg ends in a safe cove.
 
 
   In a cove you spend volts on permanent upgrades such as weapons, defense,
@@ -64,7 +64,7 @@ media:
     - games/charge-barge/shot-2
 dates:
   added: 2026-10-01
-  updated: 2026-10-01
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:aibgj-4

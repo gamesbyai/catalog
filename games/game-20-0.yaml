@@ -9,8 +9,8 @@ description: >-
 
 
   The strategy lives in the roster-building decisions. Because the eras come up
-  at random, you weigh star names against positional needs and adapt as the pool
-  changes from one pick to the next, which makes it as much strategy as sports.
+  at random, you have to weigh star names against positional needs and adjust as
+  the pool changes from one pick to the next.
 
 
   A perfect season is the target, which gives every draft a clear measure of
@@ -49,7 +49,7 @@ media:
     - games/game-20-0/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-09-29
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:awesome-cc0

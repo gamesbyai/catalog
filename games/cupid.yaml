@@ -4,7 +4,7 @@ tagline: Shoot magic arrows to pair people with matching traits and restore love
   in a garden.
 description: >-
   In Cupid Garden you play Cupid, firing magic arrows at people wandering a
-  blocky garden to pair up the ones who share a matching trait.
+  garden to pair up the ones who share a matching trait.
 
 
   Everyone you meet has three traits (hair, T-shirt and pants), and the goddess
@@ -17,21 +17,12 @@ description: >-
 
 
   A run keeps going for as long as Cupid can keep restoring love, while each
-  stage gets more chaotic than the last. The first one gives you ten people to
-  save, with a counter at the top of the screen tracking them. There's also an
-  XP bar along the bottom that levels you up.
+  stage gets more chaotic than the last. The first stage gives you ten people to
+  save. You also gain XP that levels you up.
 
 
   Between stages you upgrade your arrows, so each run builds toward its own mix
-  of magical abilities, and the hotbar's five arrow slots start out with only
-  the first one filled, leaving a whole row to grow into.
-
-
-  The look is cheerful and chunky, with voxel trees scattered across rolling
-  green fields and pixel-faced people standing around in red shirts. A round
-  zoomed-in window in the corner shows whoever's under your crosshair, helping
-  you compare pants colors from across a meadow. Your guide is a
-  flower-crowned anime Venus, polished next to all those blocky passersby.
+  of magical abilities. The goddess Venus acts as your guide.
 
 
   DWowmuch wanted to make a simple roguelike FPS with multiplayer, with
@@ -73,7 +64,7 @@ media:
     - games/cupid/shot-2
 dates:
   added: 2026-10-01
-  updated: 2026-10-02
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:vibejam-2026

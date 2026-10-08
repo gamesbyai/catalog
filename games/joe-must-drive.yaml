@@ -8,15 +8,11 @@ description: >-
   and before the run you choose whether to be the driver or the gunner.
 
 
-  The view is first person on a dark city highway under a moon, with a barricade
-  waiting down the road. You hold a handgun with a green crosshair at the center
-  of the screen. The ammo panel shows 12 rounds loaded and an infinite reserve,
-  and a prompt tells you to press R to reload.
+  You ride down a city highway, and a barricade waits ahead. You fight back with
+  a handgun. You reload the handgun by pressing R.
 
 
-  The screen tracks health, which starts at 100 HP, along with score, distance
-  in meters, and elapsed time. A chain multiplier begins at x1.00 beside a chain
-  ready indicator, and a bar across the top holds a small marker.
+  Your health starts at 100 HP. The game also has a chain multiplier.
 
 
   The creator drew on survival horror like Resident Evil and mobile apocalypse
@@ -59,7 +55,7 @@ media:
     - games/joe-must-drive/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-10-01
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:vibejam-2026

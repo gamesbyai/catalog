@@ -2,10 +2,9 @@ slug: hold-the-line
 title: Hold the Line
 tagline: Draw electric wires to trap and eliminate zombies in a 3D isometric arena.
 description: >-
-  Zombies swarm an isometric 3D arena, and your weapon is electric wire. Hold
-  the fire input while you move to trail a wire behind you. When your path
-  closes into a loop around zombies, the wire seals itself and electrocutes
-  everything inside.
+  Zombies swarm the arena, and your weapon is electric wire. Hold the fire input
+  while you move to trail a wire behind you. When your path closes into a loop
+  around zombies, the wire seals itself and electrocutes everything inside.
 
 
   A wave ends when every zombie is dead, and then the next one starts. Don't
@@ -20,8 +19,8 @@ description: >-
   gets 5 bombs to place after a wave is cleared.
 
 
-  The creator describes it as a mix of Snake and Bomberman. Mobile play uses an
-  on-screen joystick with fire and dash buttons.
+  The creator describes it as a mix of Snake and Bomberman. On mobile, you move
+  with a joystick and use separate fire and dash buttons.
 play:
   url: https://eramis73.github.io/htl-server
   embeddable: true
@@ -63,7 +62,7 @@ media:
     - games/hold-the-line/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-10-01
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:vibejam-2026

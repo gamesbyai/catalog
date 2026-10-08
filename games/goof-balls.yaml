@@ -7,21 +7,19 @@ description: >-
   for a moment afterward, so a last-second switch is a bet you can't take back.
 
 
-  Three matchups decide every collision, and the whole rulebook fits on a
-  sticky note. Fire burns grass, grass soaks up water, and water puts out
-  fire.
+  Three matchups decide every collision, and the whole rulebook fits on a sticky
+  note. Fire burns grass, grass soaks up water, and water puts out fire.
 
 
-  A round drops you into a ring that keeps shrinking, alongside a crowd of
-  cartoon balls whose smiley faces look cheerful for a fight to the finish.
-  The goal is to be the final ball left, or as the title screen puts it, the
-  last goof standing.
+  A round drops you into a ring that keeps shrinking, along with a crowd of
+  other balls, all fighting to the finish. The goal is to be the final ball
+  left, or the last goof standing.
 
 
   You charge at the opponents your element beats. When someone comes for you,
   you swap to counter them, and if things go badly you can throw up a shield.
-  The creator calls it a game about reading people, which is pretty much what a
-  well-timed counter-swap asks of you.
+  The creator calls it a game about reading people, and a well-timed
+  counter-swap asks you to do just that.
 
 
   You can play alone against bots or set up a private room for friends, and
@@ -78,7 +76,7 @@ media:
     - games/goof-balls/shot-2
 dates:
   added: 2026-09-30
-  updated: 2026-10-02
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:aibgj-4

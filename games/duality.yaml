@@ -3,33 +3,27 @@ title: Duality
 tagline: Guide two linked entities across parallel dimensions to their portals,
   dodging Void Agents
 description: >-
-  Two glowing orbs move under your control at the same time, but only one of
-  them is really you. The cyan orb is yours, while the magenta one is your Echo,
-  and it copies every move you make in its own bent way.
+  You control two orbs at the same time. One orb is yours, and the other is your
+  Echo, which copies every move you make in its own bent way.
 
 
-  Those copies aren't direct. The HUD names the rule in play, and on the first
-  dimension it reads Mirror X. Later levels twist the mirroring further, so the
-  partner you thought you understood keeps learning new ways to disagree with
-  you.
+  Those copies aren't direct. The first dimension uses the Mirror X rule. Later
+  levels twist the mirroring further.
 
 
-  The arena is cut down the middle with one side per orb, and each side has its
-  own escape portal at the far end where its orb needs to end up.
+  The arena is split down the middle, with one side for each orb, and each side
+  has its own escape portal at the far end where its orb needs to reach.
 
 
-  Red Void Agents patrol both halves of the field. A move that's safe for you
-  also has to be safe for your Echo at the same moment.
+  Void Agents patrol both halves of the field. A move that's safe for you also
+  has to be safe for your Echo at the same moment.
 
 
-  Small pickups marked with crosshairs are scattered around both sides, split
-  between white ones and yellow ones.
+  Small pickups are scattered around both sides, in two types.
 
 
-  A streak multiplier starts at x1 in the middle of the HUD, with your score and
-  best score up in the corner. You've got three hearts to work with. Nothing
-  starts until you first move, and there's a button on screen to turn the sound
-  on or off.
+  The game has a streak multiplier. You have three hearts. Nothing starts until
+  you first move.
 
 
   alessio_cagnin_ built it around a fascination with quantum physics and
@@ -72,7 +66,7 @@ media:
     - games/duality/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-10-02
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:vibejam-2026

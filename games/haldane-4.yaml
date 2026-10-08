@@ -2,10 +2,6 @@ slug: haldane-4
 title: HALDANE-4
 tagline: Descend alone beneath the Antarctic ice and uncover what waits below in ASCII.
 description: >-
-  When it loads, a gray panel titled Operator Terminal v2.1.4 fills the screen,
-  and everything behind its boxed briefing is drawn in text characters.
-
-
   That briefing introduces HALDANE-4, a submersible exploration platform run by
   the United States Antarctic Survey. It's unit H4-ANT-72, and the 1972 date
   gives the whole thing the feel of an old government file.
@@ -13,9 +9,7 @@ description: >-
 
   You're piloting that submersible alone, heading down beneath the Antarctic ice
   shelf. WASD gives you thrust while the mouse rotates your view, Shift cuts the
-  engine and Space switches on the light. The key labels are printed along the
-  edges of the terminal frame itself, so even the controls look like part of the
-  machine.
+  engine and Space switches on the light.
 
 
   It's a short horror story, and it unfolds through that descent with an AI
@@ -23,11 +17,10 @@ description: >-
 
 
   Every sound in it is generated procedurally, apart from that voice. The whole
-  game comes in under 5 MB, with nothing beyond the code. Fitting a narrated
-  horror story into that budget is no small trick.
+  game comes in under 5 MB, with nothing beyond the code.
 
 
-  For denisbondare, the challenge was keeping to those strict limits, with ASCII
+  For denisbondare, the challenge was keeping to strict limits, with ASCII
   graphics and vibe coding only, while still making something atmospheric that
   tells a story.
 play:
@@ -69,7 +62,7 @@ media:
     - games/haldane-4/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-10-02
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:vibejam-2026

@@ -2,31 +2,17 @@ slug: cozy-paws-clinic
 title: Cozy Paws Clinic
 tagline: Wash and brush muddy little animal patients in your own vet clinic.
 description: >-
-  Each patient on your waiting room bench has a thought bubble that tells you
-  what they need, like a bath, some brushing or a look at the teeth. Many of
-  them arrive caked in mud and dotted with burrs, a very specific kind of mess
-  for a vet. You're the one washing, brushing and looking after each of them.
+  Each patient has a thought bubble that shows what they need, like a bath, some
+  brushing or a look at the teeth. Many of them arrive caked in mud and dotted
+  with burrs. You're the one washing, brushing and looking after each of them.
 
 
   Biscuit the puppy and Honey the bear are among the patients you'll meet on
-  that bench.
+  that bench. There's a collection of nine entries to fill.
 
 
-  On the wall, a paw-print board keeps track of the day's patients. Along the
-  bottom bar sits a collection of nine entries to fill, plus a gift button.
-
-
-  A sunny window lets light into the clinic. A pink rug and potted plants are in
-  there too. The art is rounded and friendly, which suits this gentle game.
-
-
-  There's a sound toggle in a corner for switching the sound on or off, and in a
-  game made for kids, it's a sensible thing to have.
-
-
-  goldiedev drew everything in code, and you'd never guess it from how rounded
-  the art looks. The Web Audio API generates the sounds and the music, so there
-  aren't any picture or sound files to fetch.
+  goldiedev drew everything in code. The Web Audio API generates the sounds and
+  the music, so there aren't any picture or sound files to fetch.
 play:
   url: https://tesana.com/play/d402c697-5327-492c-a1b9-e77e749f92e5
   embeddable: false

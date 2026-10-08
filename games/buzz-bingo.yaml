@@ -2,10 +2,10 @@ slug: buzz-bingo
 title: Buzz Bingo
 tagline: Fill a bingo card with your own predictions and play along as events unfold.
 description: >-
-  Buzz Bingo is a multiplayer social prediction game that swaps the numbers on a
-  bingo card for your own predictions. You write them in, then watch a moment, a
-  crowd or a community to see which ones come true, marking squares as things
-  happen and racing to complete a line.
+  You write your own predictions into a bingo card in place of the numbers, and
+  play it with other players. You write them in, then watch a moment, a crowd or
+  a community to see which ones come true, marking squares as things happen and
+  racing to complete a line.
 
 
   The idea comes from the familiar line about something not being on your bingo
@@ -51,7 +51,7 @@ media:
     - games/buzz-bingo/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-09-29
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:vibejam-2026

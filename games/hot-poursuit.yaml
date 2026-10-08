@@ -9,8 +9,8 @@ description: >-
 
 
   A round centers on the chase itself, played online with other people from a
-  desktop browser or a phone. It was put together in the Cursor code editor
-  during Vibe Jam 2026, according to the creator.
+  desktop browser or a phone. According to the creator, it was put together in
+  the Cursor code editor.
 
 
   The hunt is for a hidden target. As a pursuer, you have to work out where the
@@ -49,7 +49,7 @@ media:
     - games/hot-poursuit/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-09-29
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:vibejam-2026

@@ -6,41 +6,37 @@ description: >-
   college kid cutting grass for a company your uncle runs.
 
 
-  You see it all in first person while you push a mower through people's yards
-  and steer it across the grass. The game is about taking care with the work
-  even when nobody would check, and it takes its cues from a Murakami short
-  story. A session runs about half an hour.
+  You push a mower through people's yards and steer it across the grass. The
+  game is about taking care with the work even when nobody would check, and it
+  takes its cues from a Murakami short story. A session runs about half an hour.
 
 
-  The heat sets the rules here. Direct sun drains your stamina fast while shade
-  gives it back, so when the afternoon gets heavy you step out of the light,
-  your own body working like a solar panel in reverse. Your maximum stamina also
-  shrinks a little as the day wears on.
+  Direct sun drains your stamina fast while shade gives it back, so when the
+  afternoon gets heavy you step out of the light, your own body working like a
+  solar panel in reverse. Your maximum stamina also shrinks a little as the day
+  wears on.
 
 
   Do neat enough work and someone might hand you a cold drink, a kind bit of
   hospitality that gives your stamina a boost.
 
 
-  Time keeps moving too, with a day cycle and a sun that crosses the sky, and
-  you can check the clock whenever you like. A wheelie spins the mower around in
-  a hurry when you need a quick pivot. There's also an optional two-stick mode
-  you can switch on in settings, but it needs a dual-stick gamepad.
+  Time keeps moving too, with a day cycle and a sun that crosses the sky. A
+  wheelie spins the mower around in a hurry when you need a quick pivot. There's
+  also an optional two-stick mode, but it needs a dual-stick gamepad.
 
 
-  Low-poly Japanese houses line the yards, and the cicadas shift through the
-  day, with the morning and late-afternoon calls built from a single noon
-  recording.
+  The cicadas shift through the day, with the morning and late-afternoon calls
+  built from a single noon recording.
 
 
-  On a touchscreen, the left half of the screen walks and steers, the right half
-  turns the view, and a tap grabs or uses an item. Grass density can be turned
-  down under Performance in the settings.
+  On a touchscreen, one side walks and steers, the other side turns the view,
+  and a tap grabs or uses an item. Grass density can be turned down.
 
 
   Claude Code wrote the code, made the sound effects and models, and handled
-  level testing, while Grok Build made the title screen and its lens flare.
-  plinth did everything else.
+  level testing, while Grok Build made the title screen. plinth did everything
+  else.
 play:
   url: https://plinthcybernetics.itch.io/ikuta-73
   embeddable: false
@@ -90,7 +86,7 @@ media:
     - games/ikuta-73/shot-2
 dates:
   added: 2026-10-01
-  updated: 2026-10-02
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:aibgj-4

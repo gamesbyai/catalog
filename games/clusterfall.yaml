@@ -9,21 +9,12 @@ description: >-
 
 
   The loop comes straight from Among Us, with the traitor swapped out for this
-  role. You walk a dark 3D arena with WASD, past glowing green rings and
-  floating crystal shapes.
+  role. You move through the arena with WASD.
 
 
-  Above the arena hangs a panel with the current user prompt, which opens on a
-  request to design a sustainable Mars colony. The answer types itself out
-  underneath, and it's hard not to grin when it starts listing algae bioreactors
-  and democratic civic protocols.
-
-
-  The HUD on the left is busy, showing your role, your agent state, a round
-  clock and the match state, which starts at round 1 of 3. The Prompt Node
-  reads CLEAN when things begin. Under that sit three meters for context
-  window, corruption and final output, plus a readout of how far you are from
-  the prompt.
+  The game opens with a user prompt asking for a sustainable Mars colony design.
+  The answer lists ideas like algae bioreactors and democratic civic protocols.
+  The Prompt Node starts out clean.
 
 
   A root agent stays close to the Prompt Node, pressing E there to validate it,
@@ -79,7 +70,7 @@ media:
     - games/clusterfall/shot-2
 dates:
   added: 2026-10-01
-  updated: 2026-10-02
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:vibejam-2026

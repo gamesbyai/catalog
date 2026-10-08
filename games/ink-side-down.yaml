@@ -13,16 +13,15 @@ description: >-
 
 
   It's a daily logic puzzle with a short rhythm you can repeat, and the grid is
-  fresh each day. You actually get a whole set of three new puzzles daily,
-  sorted into Easy, Medium and Hard, and each one has its own par to aim for.
+  fresh each day. Each day you get three new puzzles, sorted into Easy, Medium
+  and Hard, and each one has its own par to aim for.
 
 
-  Thankfully a single press of U undoes a roll, while < and > flip between days.
+  A single press of U undoes a roll, while < and > flip between days.
 
 
   You steer the cube with WASD or the arrow keys. It also takes touch and mouse
-  input. There's a How to play screen on the menu for the rules, plus a sound
-  toggle in the corner.
+  input.
 
 
   According to the creator, an autonomous AI agent designed and coded the whole
@@ -61,7 +60,7 @@ media:
     - games/ink-side-down/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-10-02
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:awesome-cc0

@@ -3,9 +3,9 @@ title: Hell Chess
 tagline: Summon armies and curse your opponent in a hellish twist on chess.
 description: >-
   Hell Chess takes the familiar chess board and fills it with infernal powers.
-  It is a strategy board game with a hellish twist. You summon armies, reshape
-  the battlefield and place curses on your enemy, all while trying to
-  outmaneuver the person on the other side of the board, one turn at a time.
+  It is a strategy board game built on the rules of chess. You summon armies,
+  reshape the battlefield and place curses on your enemy to outmaneuver the
+  player across the board, turn by turn.
 
 
   Summoning, terrain changes and curses give every turn more options than
@@ -15,8 +15,7 @@ description: >-
 
 
   Matches are played online against another person, on desktop or on a phone.
-  Claude Code was used to build it, and it came 439th of 945 entries at Vibe Jam
-  2026.
+  Claude Code was used to build it.
 play:
   url: https://hellchess.korajos.de
   embeddable: false
@@ -52,7 +51,7 @@ media:
     - games/hell-chess/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-09-29
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:vibejam-2026

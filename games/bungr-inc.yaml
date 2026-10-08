@@ -2,34 +2,20 @@ slug: bungr-inc
 title: BUNGR INC.
 tagline: Cook burgers in a cursed kitchen to earn your way to freedom.
 description: >-
-  You're the cook on a burger line in a dim kitchen of exposed pipes, making
-  burgers to earn your freedom.
+  You're the cook on a burger line, making burgers to earn your freedom. Orders
+  come in as tickets.
 
 
-  Orders come in as tickets on a brown board on the wall, and between orders the
-  board sits there a bit forlornly, saying it's waiting for the next ticket. You
-  see it all in first person, with a small crosshair in the middle of the screen
-  marking whatever you're pointing at.
+  Each day runs on a countdown clock. Your cash is tracked against a quota, and
+  on Day 1 that quota is $70.
 
 
-  Each day runs on a countdown clock. The board also keeps your cash next to a
-  quota, and on Day 1 that quota is $70. It's a blunt way for a company to
-  measure you, especially after a welcome banner has already told you to produce
-  value.
+  Ingredients start on the counter tray, which holds buns, patties, cheese,
+  tomato slices and other toppings.
 
 
-  Ingredients start on a well-stocked counter tray of buns, patties, cheese,
-  tomato slices and other toppings, with a card of matching icons on the wall.
-
-
-  There's also a radio on the wall, and it interrupts your shift. When it
-  does, a prompt tells you to listen. The same black-and-gold banners that
-  greet you at the start also label the ingredient counter and the radio.
-
-
-  The cursed setting comes through in the grainy, dithered look and the grimy
-  kitchen under fluorescent tubes, where the warm signage stands out sharply
-  against all that gray.
+  There's also a radio that interrupts your shift. When it does, you're told to
+  listen. The setting is cursed.
 play:
   url: https://bungr.net
   embeddable: true
@@ -63,7 +49,7 @@ media:
     - games/bungr-inc/shot-2
 dates:
   added: 2026-10-01
-  updated: 2026-10-02
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:vibejam-2026

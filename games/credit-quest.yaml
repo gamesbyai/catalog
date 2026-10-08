@@ -3,11 +3,9 @@ title: Credit Quest
 tagline: Collect API credits and finish terminal-themed quests in a
   Zelda-inspired adventure.
 description: >-
-  Credit Quest has you walking a small pixel-art hero around a top-down
-  overworld of dirt paths, grassy patches, stone walls and wooden signposts.
-  Your first job shows up in a dialogue box at the bottom of the screen, telling
-  you to go talk to PIP just west of the plaza path. Those boxes do a lot of the
-  talking, since they're where the game hands you its instructions.
+  You walk a hero around an overworld. Your first job is to go talk to PIP, just
+  west of the plaza path. The game gives you its instructions through dialogue
+  boxes.
 
 
   It calls itself a fantasy-tech action RPG, set in a land where terminals are
@@ -15,14 +13,11 @@ description: >-
 
 
   Along the way you swing at Glitches with an attack button, wake up shrines
-  that have fallen asleep and work to restore the route. The title screen sums
-  up the goal as carrying the last clean signal home, a poetic line for a game
-  whose currency is API Credits.
+  that have fallen asleep and work to restore the route. The goal is to carry
+  the last clean signal home.
 
 
-  A row of hearts across the top tracks your health. Beside it sit a Vibe
-  counter and a Credits counter that starts at zero. You can open a field
-  guide and a help screen in the middle of play, and the sound can be muted.
+  You can open a field guide and a help screen in the middle of play.
 
 
   It's built for desktop browsers. You click the game window to give it focus.
@@ -71,7 +66,7 @@ media:
     - games/credit-quest/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-10-02
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:vibejam-2026

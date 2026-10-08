@@ -2,10 +2,10 @@ slug: hard-road
 title: Hard Road
 tagline: Drive a scavenger's Lada down an endless road, towing wrecks for scrap.
 description: >-
-  Hard Road puts you behind the wheel of a scavenger's Lada on an endless
-  wasteland highway. You hook up wrecks along the route, tow them for scrap, and
-  spend the scrap on a better engine and tougher tires, all to keep rolling as
-  far as the road allows.
+  You take the wheel of a scavenger's Lada on an endless wasteland highway. You
+  hook up wrecks along the route, tow them for scrap, and spend the scrap on a
+  better engine and tougher tires, all to keep rolling as far as the road
+  allows.
 
 
   The pressure comes from the car and the weather. Fuel can run dry, the battery
@@ -50,7 +50,7 @@ media:
     - games/hard-road/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-09-29
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:vibejam-2026

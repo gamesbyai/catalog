@@ -2,20 +2,14 @@ slug: demolition-drive
 title: Demolition Drive
 tagline: Swing, smash, and shatter structures to climb a global leaderboard.
 description: >-
-  The start screen asks for a callsign, with a Play button right beside the text
-  field. The preview art shows a wrecking ball dangling from a tilted arm beside
-  a row of tall orange and blue towers, and your job is to knock those towers
-  down.
+  You enter a callsign before you start. Your job is to knock the towers down.
 
 
-  Once you're in, you're behind a stubby yellow truck with a tall red boom,
-  and a black wrecking ball swings on a chain off the top of it, all in a
-  low-poly park ringed by pastel skyscrapers.
+  You drive a truck with a wrecking ball on a chain swinging from its boom.
 
 
   WASD drives and the left mouse button smashes. E or the right mouse button is
-  your boost, while Q slams, and the on-screen buttons give them livelier names,
-  Turbo Swing and Ball Drop.
+  your boost, and Q slams.
 
 
   Rounds are fast, and you're after towers and stars. Because each round hands
@@ -71,7 +65,7 @@ media:
     - games/demolition-drive/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-10-02
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:vibejam-2026

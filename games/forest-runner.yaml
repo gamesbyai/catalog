@@ -4,9 +4,8 @@ tagline: Skate through a blocky forest, dodge obstacles, grab power-ups, and
   outrun rivals.
 description: >-
   Forest Runner puts an endless arcade runner on a skateboard. You ride at high
-  speed through a blocky, Minecraft-inspired forest, steering around obstacles,
-  taking sharp turns and trying to stay ahead of the rivals chasing you through
-  the trees.
+  speed, steering around obstacles and taking sharp turns while trying to stay
+  ahead of the rivals chasing you.
 
 
   A run lasts until you crash or get caught. Power-ups appear along the path,
@@ -16,9 +15,8 @@ description: >-
 
 
   The creator explains that they have long enjoyed endless running games and
-  wanted to reimagine that fast pace in a Minecraft-style setting. Claude Code
-  was their tool, and the game went into Vibe Jam 2026, where it finished 340th
-  of 945.
+  wanted to reimagine that fast pace in a new setting. Claude Code was their
+  tool.
 play:
   url: https://forest-runner-vibejam26.netlify.app
   embeddable: true
@@ -55,7 +53,7 @@ media:
     - games/forest-runner/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-09-29
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:vibejam-2026

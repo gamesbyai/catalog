@@ -9,13 +9,12 @@ description: >-
 
   The premise comes from a familiar frustration: AI-coded projects that ship
   with odd glitches, where it is hard to tell a bug from an intended feature.
-  The creator made this single-player shooter with Claude Code on Three.js, and
-  it ranked 380th of 945 at Vibe Jam 2026.
+  The creator built this shooter with Claude Code on Three.js.
 
 
-  That confusion is the core loop. In the middle of a fight, you decide which
-  corruption is worth fixing and which you can live with while the waves keep
-  coming. The longer you last, the more corrupted the arena gets.
+  That confusion is the core loop. Mid-fight, you choose which corruptions to
+  fix and which to leave alone while the waves keep coming. Staying alive longer
+  leaves the arena more corrupted.
 play:
   url: https://code-rage.pages.dev
   embeddable: true
@@ -51,7 +50,7 @@ media:
     - games/code-rage/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-09-29
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:vibejam-2026

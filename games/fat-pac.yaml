@@ -2,36 +2,34 @@ slug: fat-pac
 title: Fat Pac
 tagline: Eat everything in a maze while growing fatter and slower with every bite.
 description: >-
-  Every bite pushes a fat meter higher, and when it reaches 100% the board
-  itself breaks. You steer through a maze trying to eat all the food to clear
-  the stage, while that meter keeps climbing and your character keeps getting
+  Every bite raises your fat level, and when it hits 100% the board itself
+  breaks. You steer through a maze trying to eat all the food to clear the
+  stage, while your fat level keeps climbing and your character keeps getting
   slower. Hunger is the other way a run ends, which leaves you stuck between
   eating too much and not eating enough.
 
 
-  Each food adds its own amount, from a measly +1% for fries up to +12% for the
-  biggest item on the menu.
+  Each food adds its own amount, from +1% for fries up to +12% for the biggest
+  item on the menu.
 
 
   Four enemies patrol the maze, and touching any of them costs you a life.
-  They're mostly workout gear in this game about piling on weight. The
-  Treadmill chases you directly, the Dumbbell wanders at random, the Rope
-  moves to cut you off and the boss, Personal, is billed as very aggressive.
+  They're mostly workout gear, and the game is about piling on weight. The
+  Treadmill chases you directly, the Dumbbell wanders at random, the Rope moves
+  to cut you off and the boss, Personal, is billed as very aggressive.
 
 
-  A single fruit sits in the center of the maze. Eating it lowers your fat level
-  and turns the enemies around. It's a neat bit of double duty, so the fruit
-  works both as a way to slim down and as a way to flip the chase.
+  The maze holds a single fruit. Eating it lowers your fat level and turns the
+  enemies around. The fruit works both as a way to slim down and as a way to
+  flip the chase.
 
 
-  Before you start, a thorough title screen lays out the rules, the enemies
-  and what every food is worth. The whole interface is in Portuguese, though
-  there's a language toggle up top.
+  Before you start, the game explains the rules, the enemies and what every food
+  is worth. The interface is in Portuguese, and there's a language toggle.
 
 
   Press Space to begin, then move with the arrow keys or WASD, and Space pauses
-  once you're playing. R restarts a run, and the top bar has music and sound
-  switches next to a settings menu.
+  once you're playing. R restarts a run.
 play:
   url: https://fatpac.vercel.app
   embeddable: true
@@ -71,7 +69,7 @@ media:
     - games/fat-pac/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-10-02
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:vibejam-2026

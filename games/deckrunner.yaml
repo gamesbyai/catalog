@@ -2,29 +2,25 @@ slug: deckrunner
 title: DECKRUNNER
 tagline: Shoot through a derelict space station deck by deck and reach the escape pod.
 description: >-
-  Pick New Mission and you're dropped into a derelict space station, seen in
-  first person, which you fight through one deck at a time. Each run has you
-  scavenging weapons and perks and killing anything that's still moving. The
-  goal is the escape pod, and you're racing the station itself to get there
-  before it gets you.
+  You're dropped into a derelict space station and fight your way through it one
+  deck at a time. Each run has you scavenging weapons and perks and killing
+  anything that's still moving. The goal is the escape pod, and you're racing
+  the station itself to get there before it gets you.
 
 
-  The main menu holds plenty of extra modes beyond the mission, though.
-  Multiplayer carries a little live tag, while a whole PvP arena fills the room
-  with bots and lets you set how many there are, their difficulty and the score
-  that wins the match.
+  Beyond the mission, there are plenty of extra modes. There's a PvP arena
+  filled with bots, where you set how many there are, their difficulty and the
+  score that wins the match.
 
 
   If you'd rather warm up first, there's a firing range for practice.
 
 
-  Customize, bestiary and leaderboard screens fill out the rest of the menu. A
-  bestiary fits nicely in a game built around whatever's still crawling through
-  a dead station. Most menu entries also show a shortcut key beside them.
+  There's also customization, a bestiary and a leaderboard. The game is built
+  around whatever's still crawling through a dead station.
 
 
-  A tip on the menu suggests shooting barrels near enemies to set off chain
-  explosions.
+  The game suggests shooting barrels near enemies to set off chain explosions.
 
 
   paledustgames says they love roguelikes and shooters, and they wanted to blend
@@ -72,7 +68,7 @@ media:
     - games/deckrunner/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-10-02
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:vibejam-2026

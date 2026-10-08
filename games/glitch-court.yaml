@@ -5,7 +5,7 @@ tagline: Judge absurd disputes between digital objects and chain combo streaks
 description: >-
   In GLITCH COURT you are the judge, and the parties before you are everyday
   digital objects with unhinged disputes. Cases like a Toaster suing a Microwave
-  arrive one after another in an endless 3D tribunal, and you rule on each at a
+  arrive one after another in an endless tribunal, and you rule on each at a
   fast pace.
 
 
@@ -53,7 +53,7 @@ media:
     - games/glitch-court/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-09-29
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:vibejam-2026

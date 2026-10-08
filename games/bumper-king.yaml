@@ -2,33 +2,31 @@ slug: bumper-king
 title: Bumper King
 tagline: Ram rival bumper cars, grab powerups, and fight to hold the crown.
 description: >-
-  Every glowing pickup you scoop up makes your bumper car bigger and stronger,
-  while you steer it around a tiled arena looking for someone to hit. Ramming
-  the rival cars is how you knock them out.
+  Every pickup you scoop up makes your bumper car bigger and stronger, while you
+  steer it around the arena looking for someone to hit. Ramming the rival cars
+  is how you knock them out.
 
 
-  All that ramming is aimed at the scoreboard. A ten-row list on the left ranks
-  you against rival cars with names like Bot Turbo Toast and Bot Bonkzilla, and
-  the goal is to reach the top spot, become King and then hold on to the crown.
+  All that ramming is aimed at the scoreboard. You're ranked against rival cars
+  with names like Bot Turbo Toast and Bot Bonkzilla, and the goal is to reach
+  the top spot, become King and then hold on to the crown.
 
 
-  Four powerups turn up around the arena, and a side panel lists them. Speed
-  gives a boost, Mega Bump makes your hits stronger, Shield protects you, and
-  Magnet blasts nearby cars away instead of pulling them in.
+  Four powerups turn up around the arena. Speed gives a boost, Mega Bump makes
+  your hits stronger, Shield protects you, and Magnet blasts nearby cars away
+  instead of pulling them in.
 
 
-  Hazards sit on the arena floor too, and they're there to be dodged. The same
-  panel squeezes the whole game into four words (drive, bump, grow, survive),
-  which covers it neatly.
+  Hazards also sit on the arena floor that you have to dodge. The whole game
+  comes down to four words: drive, bump, grow, survive.
 
 
   You drive with WASD or the arrow keys, and there's a touch joystick as well.
 
 
-  It all starts on a title screen where you type a username and can see your
-  best score. Pressing Enter Arena puts you out on the floor with the rival
-  cars. xwerux describes the idea as bumper cars mixed with the
-  grow-and-take-over pattern of Snake.io.
+  You type in a username to begin and can see your best score. You then head out
+  onto the arena floor with the rival cars. xwerux describes the idea as bumper
+  cars mixed with the grow-and-take-over pattern of Snake.io.
 play:
   url: https://bumper-king.vercel.app
   embeddable: true
@@ -70,7 +68,7 @@ media:
     - games/bumper-king/shot-2
 dates:
   added: 2026-10-01
-  updated: 2026-10-02
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:vibejam-2026

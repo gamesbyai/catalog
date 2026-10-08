@@ -3,32 +3,21 @@ title: HexFire
 tagline: Battle other wizards in a shrinking arena where every kill raises your bounty.
 description: >-
   Every wizard you take down in this battle royale earns you essence, and if you
-  die, you lose every bit of it.
+  die, you lose every bit of it. You build your wizard before the match starts.
 
 
-  The title screen doesn't bother softening that deal, and the blunt rule sits
-  in small letters right under the gold logo.
-
-
-  Before the match even starts, you build your wizard on a setup screen.
-
-
-  You can type a name or hit the reroll button for a random one, which is how
-  you end up called something like xx_Marksman40%. Five arcane skills (damage,
-  speed, range, blast and agility) each get a bar and a number. Plus and minus
-  buttons shift points between them, while a counter above the list shows what's
-  left to spend.
+  You can type a name or have the game roll a random one, which can come out as
+  something like xx_Marksman40%. You split points across five arcane skills:
+  damage, speed, range, blast and agility. Plus and minus buttons shift points
+  between them.
 
 
   Once you're out there, WASD moves you, Space jumps and the left mouse button
-  shoots. V switches the view, while F interacts. All of it is laid out along
-  the bottom of the setup screen, right above the Begin Descent button that
-  starts the match.
+  shoots. V switches the view, while F interacts. Begin Descent starts the
+  match.
 
 
-  Your wizard is a blocky pixel-art figure in a purple hat and green robe,
-  carrying a staff, a look with plenty of Minecraft in it. TeemuSor made the
-  game out of a childhood crush on Runescape and Minecraft.
+  TeemuSor made the game out of a childhood crush on Runescape and Minecraft.
 play:
   url: https://hexfi.re
   embeddable: true
@@ -71,7 +60,7 @@ media:
     - games/hexfire/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-10-02
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:vibejam-2026

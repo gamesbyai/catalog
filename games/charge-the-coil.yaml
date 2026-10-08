@@ -2,21 +2,19 @@ slug: charge-the-coil
 title: Charge The Coil
 tagline: Tap at the right moment to wind a glowing charge around a copper coil.
 description: >-
-  You play with a single input. A charge leaves the center of a copper coil,
-  spirals outward, and picks up speed. Your job is to let go as it reaches the
-  contact port, which adds one more turn of winding to the coil.
+  You play with a single input. A charge leaves the center of the coil, spirals
+  outward, and picks up speed. Your job is to let go as it reaches the contact
+  port, which adds one more turn of winding to the coil.
 
 
   Letting go too soon severs the connection. Holding on too long sends the
-  charge into a red tail that overloads the whole coil. Perfect releases make
-  the charge grow faster and build a chain, and each new winding appears in a
-  different neon color with plasma bursting off when it locks.
+  charge into a tail that overloads the whole coil. Perfect releases make the
+  charge grow faster and build a chain.
 
 
-  Filling the entire coil banks it, pays out a scored discharge bonus, and
-  raises the COILS FILLED count. Scoring makes each following charge quicker and
-  the timing window narrower. The top bar tracks your high score and total
-  coils, and the best score is saved.
+  Filling the entire coil banks it and pays out a scored discharge bonus.
+  Scoring makes each following charge quicker and the timing window narrower.
+  The best score is saved.
 
 
   Every new winding, lock, plasma burst and failure plays its own sound. The
@@ -65,7 +63,7 @@ media:
     - games/charge-the-coil/shot-2
 dates:
   added: 2026-09-30
-  updated: 2026-10-01
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:aibgj-4

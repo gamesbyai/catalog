@@ -2,21 +2,17 @@ slug: eyrie
 title: Eyrie
 tagline: Catch spirits, feed the shrine, and fend off the obelisk in co-op waves.
 description: >-
-  Eyrie is a drop-in co-op action roguelike built around waves of enemies.
-  Players catch wandering spirits, carry them to a shrine and feed it, then turn
-  to face the obelisk that threatens the area. Each run alternates between
-  gathering and fighting, and other players can join a session in progress.
+  Fight off waves of enemies in this drop-in co-op action roguelike. Players
+  catch wandering spirits, carry them to a shrine and feed it, then turn to face
+  the obelisk that threatens the area. Each run alternates between gathering and
+  fighting, and other players can join a session in progress.
 
 
-  The game placed sixth of 945 entries at Vibe Jam 2026 and received the Most
-  Atmospheric award. Its mood is the main draw, with a look and feel compared to
-  Sable and a party-style structure that recalls Guild Wars. It mixes action,
-  adventure, and shooter elements, and it runs in the browser with support for
-  mobile devices.
+  It uses a party-style structure that recalls Guild Wars. It mixes action,
+  adventure, and shooter elements.
 
 
-  The creator built it with Claude Code, and the 3D scenes are rendered with
-  Three.js. It was made as an entry for the Vibe Jam 2026 game jam.
+  The creator built it with Claude Code, and it uses Three.js for rendering.
 play:
   url: https://playeyrie.com
   embeddable: true
@@ -54,7 +50,7 @@ media:
     - games/eyrie/shot-2
 dates:
   added: 2026-10-01
-  updated: 2026-10-01
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:vibejam-2026

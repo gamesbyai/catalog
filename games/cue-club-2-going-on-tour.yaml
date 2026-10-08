@@ -2,18 +2,18 @@ slug: cue-club-2-going-on-tour
 title: Cue Club 2 — Going on Tour
 tagline: Play British pub 8-ball pool through a ten-stop tour of first-to-two sets.
 description: >-
-  Cue Club 2 is a top-down pixel-art game of British pub-rules 8-ball pool. You
-  start in Leeds and play ten first-to-two sets against a different opponent at
-  each stop, finishing at Crystal Palace. Clear your seven balls, then pot the
-  black. Pot it early and you lose. Win a set and the tour moves on; lose and
-  you drop back a stop.
+  Cue Club 2 is a game of British pub-rules 8-ball pool. You start in Leeds and
+  play ten first-to-two sets against a different opponent at each stop,
+  finishing at Crystal Palace. Clear your seven balls, then pot the black. Pot
+  it early and you lose. Win a set and the tour moves on; lose and you drop back
+  a stop.
 
 
   Each opponent plays in their own style, from fast and cautious to showy and
   methodical. They weigh up safeties, chalk their cues, and sometimes bottle a
-  shot. Chalk matters for you too, since low chalk hurts accuracy. A 30-second
-  shot clock runs each visit and can be adjusted in settings. Fouls hand the
-  opponent two visits, and the table is open after the break.
+  shot. Chalk matters for you too, since low chalk hurts accuracy. Each visit
+  runs on a 30-second shot clock, and you can adjust it. Fouls hand the opponent
+  two visits, and the table is open after the break.
 
 
   The game saves up to three separate tours, along with statistics, trophies,
@@ -68,7 +68,7 @@ media:
     - games/cue-club-2-going-on-tour/shot-2
 dates:
   added: 2026-09-30
-  updated: 2026-10-01
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:aibgj-4

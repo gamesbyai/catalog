@@ -8,32 +8,26 @@ description: >-
   Wojak King and Dr. Croak.
 
 
-  It's a pixel-art side-scroller built as a nod to Mario and Mega Man, and the
-  villains are patent hoarders sitting on the formulas. AIMemeCreator grew up on
-  Super Mario Bros. and Mega Man 2 and wanted a game where the bad guys are the
-  ones trying to stop memes from being freely stolen and remixed.
+  It's a side-scroller built as a nod to Mario and Mega Man, and the villains
+  are patent hoarders sitting on the formulas. AIMemeCreator grew up on Super
+  Mario Bros. and Mega Man 2 and wanted a game where the bad guys are the ones
+  trying to stop memes from being freely stolen and remixed.
 
 
-  The title screen asks you to click on Frogsworth himself to start, a cute
-  stand-in for a plain start button. Before you do, you pick how forgiving it'll
-  be. Easy hands you infinite lives, Normal gives you three hearts, and Hard
-  leaves you with just one.
+  Click on Frogsworth himself to start. Before you do, you pick how forgiving
+  it'll be. Easy hands you infinite lives, Normal gives you three hearts, and
+  Hard leaves you with just one.
 
 
-  In a level you run and jump across purple cave ground, hopping over fire
-  spikes while bats drift overhead, a hardhat-wearing enemy patrols the floor
-  and green pickups float above platforms and blocks.
+  In a level you run and jump, hopping over fire spikes while an enemy patrols
+  the floor.
 
 
   Your main weapon is the Frog Blaster, and holding the jump button gets you
   more height. If you hold down and then press up, you charge a Super Hop for an
   even bigger leap. Holding Shift charges a fanned-out blaster shot from level 2
   and Frog Dash opens up at level 4, so you pick up new moves as you go, the way
-  Mega Man does it.
-
-
-  Up top, the HUD tracks your health bar, hearts, coins and current level, and
-  pressing H shows or hides a controls panel.
+  Mega Man does it. Press H to show or hide the controls panel.
 play:
   url: https://drfrogsworth.com
   embeddable: true
@@ -78,7 +72,7 @@ media:
     - games/dr-frogsworth-and-the-stolen-formulas/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-10-02
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:vibejam-2026

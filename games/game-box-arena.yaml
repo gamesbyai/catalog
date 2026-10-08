@@ -3,10 +3,9 @@ title: Game Box Arena
 tagline: Battle other players in fast multiplayer arena deathmatch and capture
   the flag matches.
 description: >-
-  Type a player name, pick a map tab, and press Create Room to start an online
-  match. You can also join a public room from the Open Rooms list, which has a
-  Refresh button. The map tabs are Deathmatch, CTF and Rocket Arena, and
-  DM-Cube2 is selected first.
+  You start an online match by creating a room, after entering a player name and
+  choosing a map. You can also join a public room that's already open. You can
+  pick from Deathmatch, CTF and Rocket Arena maps.
 
 
   Matches are fast arena shooter fights with futuristic weapons and shields.
@@ -14,9 +13,8 @@ description: >-
   combat. Classic Deathmatch and Capture the Flag are the two named modes.
 
 
-  The lobby also has a Tutorial button under the map list. An arrow beside the
-  character name, Axiom at first, lets you switch fighters before you enter a
-  room.
+  The game also includes a tutorial. You can switch between fighters before you
+  enter a room, and Axiom is the one you start with.
 
 
   The creator drew on Unreal Tournament 1999 for the fast movement and arena
@@ -56,7 +54,7 @@ media:
     - games/game-box-arena/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-10-01
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:vibejam-2026

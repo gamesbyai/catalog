@@ -3,26 +3,24 @@ title: Death Arena
 tagline: Fight rival players and three bosses in a 3D arena to reach 10,000
   points first.
 description: >-
-  You pick a rig from a loadout of eight, then drive it into a 3D combat arena
+  You pick a rig from a loadout of eight, then drive it into a combat arena
   where you fight other players and three bosses at the same time. The goal is
   to reach 10,000 points before anyone else.
 
 
-  The rig on the first screen, Reaper, is a balanced all-rounder that adds 30%
-  to gem pickup radius. It fires plasma orbs, rolling green spheres with a wide
-  bloom that travel in a stable arc. Arrow buttons cycle through the other rigs
-  in a 3D preview.
+  The Reaper rig is a balanced all-rounder that adds 30% to gem pickup radius.
+  It fires plasma orbs that travel in a stable arc. You can browse the other
+  rigs before you pick one.
 
 
-  Before you deploy, choose a public or private match and type a pilot call
-  sign, or leave it empty for a random one. You drive with WASD, and the camera
-  stays in third person so you can read the arena.
+  You choose a public or private match and can type a pilot call sign, or leave
+  it empty for a random one. You drive with WASD.
 
 
-  A field manual on the same screen has sections on combat and vehicles,
-  terrain, sessions and players, power-ups and gems, boss threats and the win
-  condition. Match state is kept in sync by an authoritative server. The creator
-  built it in 4 hours, then spent 4 weeks debugging.
+  A field manual covers combat and vehicles, terrain, sessions and players,
+  power-ups and gems, boss threats and the win condition. Match state is kept in
+  sync by an authoritative server. The creator built it in 4 hours, then spent 4
+  weeks debugging.
 play:
   url: https://deatharena.fun
   embeddable: true
@@ -61,7 +59,7 @@ media:
     - games/death-arena/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-10-01
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:vibejam-2026

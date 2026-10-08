@@ -2,15 +2,12 @@ slug: chess3dastra
 title: Chess3dastra
 tagline: Play chess against a computer opponent on a 3D or 2D board.
 description: >-
-  A 3D chessboard is already set up when the game loads, and you're playing
-  white against a computer opponent set to Balanced, which looks two moves
-  ahead. The side panel says "Your move" and holds a strength menu, a color
-  menu, New game and Undo buttons, a move box, and an empty move record that
-  announces, a bit grandly, that your first move starts the story.
+  You play white against a computer opponent set to Balanced, which looks two
+  moves ahead.
 
 
-  You can click pieces to move them. If you'd rather type, enter algebraic
-  notation like e4 or e2e4 in the box and hit Play. Either way, the computer
+  You can click pieces to move them. If you'd rather type, enter moves in
+  algebraic notation like e4 or e2e4 and hit Play. Either way, the computer
   answers after each of your moves.
 
 
@@ -19,20 +16,17 @@ description: >-
 
 
   Three computer strengths are on offer, and you can choose whether you move
-  first or second in the next game. Undo takes moves back, while a move
-  history and a captures list keep a thorough record of a game that's saved
-  and survives a reload.
+  first or second in the next game. Undo takes moves back, and a move history
+  and captures list track the game, which is saved and survives a reload.
 
 
-  When the 3D board isn't what you want, a flat 2D view built from a grid of
-  squares with SVG pieces can replace it, and there are light and dark themes on
-  top of that.
+  When the 3D board isn't what you want, you can switch to a flat 2D view, and
+  there are light and dark themes as well.
 
 
   The opponent runs a negamax search with alpha-beta pruning inside a Web
-  Worker, so the page stays responsive while it thinks. Every piece on the 3D
-  board is modeled as its own geometry rather than a sprite. Jorge Balderas
-  had it built in about 41 minutes from a handful of prompts.
+  Worker, so the page stays responsive while it thinks. Jorge Balderas had it
+  built in about 41 minutes from a handful of prompts.
 play:
   url: https://yortch.github.io/chess3dastra
   embeddable: true
@@ -74,7 +68,7 @@ media:
     - games/chess3dastra/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-10-02
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:awesome-opus

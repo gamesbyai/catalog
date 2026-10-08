@@ -4,29 +4,27 @@ tagline: Fight through isometric dungeons, collect loot, and forge gear to chase
   a top score.
 description: >-
   The goal is the best score on the leaderboard, and you go after it by fighting
-  through an isometric dungeon with a character built from loot and gear you
-  forge yourself. Enemies scale up as you progress, while loot keeps dropping
-  along the way. The fights are tactical, too.
+  through a dungeon with a character built from loot and gear you forge
+  yourself. Enemies scale up as you progress, while loot keeps dropping along
+  the way. The fights are tactical, too.
 
 
-  The welcome line flips the title around to Fate & Forge before it shows you
-  a hooded hero called Shadowcaller, who starts with 100 health and 5 points
-  each in strength, agility and dexterity. Armor and damage both read 0 at the
-  start, with every equipment slot still empty.
+  The hero is called Shadowcaller, and starts with 100 health and 5 points each
+  in strength, agility and dexterity.
 
 
-  The name isn't set in stone, because there's a Change Name button and the same
-  hero can also turn up as Venomhand.
+  You can change the hero's name, and the same hero can also turn up as
+  Venomhand.
 
 
-  Gearing up means dragging items from your inventory onto the weapon, helmet,
+  You gear up by dragging items from your inventory onto the weapon, helmet,
   armor, shield and boots slots. Eight bags of inventory space is a lot of room
   for someone who starts out carrying five things. The first bag already holds a
   sword, a helmet, chest armor, boots and a purple crystal.
 
 
-  A side menu leads to Gathering, Materials and a Forge where you make your own
-  items, plus the Leaderboard, a red Enter Dungeon button and a sound toggle.
+  The game includes Gathering, Materials and a Forge where you make your own
+  items.
 
 
   TheGrampas drew on classic role-playing games for this one. What they were
@@ -69,7 +67,7 @@ media:
     - games/forge-fate/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-10-02
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:vibejam-2026
