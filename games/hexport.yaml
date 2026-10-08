@@ -2,31 +2,24 @@ slug: hexport
 title: Hexport
 tagline: Teleport across the arena, slash enemies, and buy upgrades between runs.
 description: >-
-  A hexagon with a sword is dropped into an arena, and the job is to outlast
-  waves of enemies for as long as you can.
+  A hexagon with a sword is dropped into an arena, and you have to outlast waves
+  of enemies for as long as you can.
 
 
-  Instead of steering, you point, and the cursor marks the spot you'll teleport
-  to next. Once every second the hexagon warps there on its own, and each jump
-  ends in a full 360-degree sword spin, so moving and attacking end up being the
-  same move.
+  Triangle chasers, one hit each, with 1 HP back per kill. Pentagon bullet
+  shooters, destroyed by a slash. Powerups dropped into the arena, collected by
+  slashing them. Warp+, Slash+ and Range+ as permanent upgrades. Dual Blade,
+  Immunity and HP +20, also in the game.
 
 
-  Two kinds of enemies come at you. Triangles chase you down and fall to a
-  single hit, and every kill hands you back 1 HP. Pentagons shoot bullets
-  instead, but a slash destroys them.
+  Before a run, enter your own callsign or roll a random one. You don't steer.
+  Point the cursor at the spot you want to teleport to next. Once every second
+  the hexagon teleports there on its own, and each teleport ends in a full
+  360-degree sword spin, so moving and attacking are one move.
 
 
-  Powerups drop into the arena as well, and you collect them by slashing them
-  too.
-
-
-  Warp+, Slash+ and Range+ are upgrades that are permanent, and Damarhabibie
-  calls this a teleport-and-slash game with incremental upgrades. The game also
-  has Dual Blade, Immunity and HP +20.
-
-
-  Before a run you can type in your own callsign or roll a random one.
+  Damarhabibie calls it a teleport-and-slash game with incremental upgrades. The
+  creator writes, "I like to create something new, no one ever see before."
 play:
   url: https://darsaverse.github.io/HexportGame
   embeddable: true

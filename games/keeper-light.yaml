@@ -3,19 +3,19 @@ title: Keeper Light
 tagline: Upgrade your boat and lighthouse by day, then defend the light through
   each night's waves.
 description: >-
-  Day 1 starts on a small island with your keeper beside a ring marker, where an
-  F prompt opens the Boat Yard.
+  Your keeper starts on a small island. When night comes, your job is to keep
+  the lighthouse from falling.
 
 
-  Daylight hours are for upgrading your boat and the lighthouse beam. You start
-  out with the Sweep beam. You gather scrap, fuel, glass, copper and relics.
+  Daylight upgrades for your boat and the lighthouse beam. The Sweep beam, your
+  starting beam. Scrap, fuel, glass, copper and relics to collect. Night waves
+  of enemies that keep escalating.
 
 
-  When night comes, the enemies arrive in waves that keep escalating, and your
-  job is to keep the lighthouse from falling.
+  On the first day, stand by the ring marker and press F to open the Boat Yard.
 
 
-  PetrSeifer87103 made it with a modest goal, which was to finish a first game.
+  PetrSeifer87103 made it with a modest goal, to finish a first game.
 play:
   url: https://vibejam.peterrock.dev
   embeddable: true

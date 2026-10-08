@@ -2,25 +2,21 @@ slug: splashpop-arena
 title: SplashPop Arena
 tagline: Shoot paint at bots or up to 8 friends and score points before time runs out.
 description: >-
-  In SplashPop Arena you shoot paint at your opponents, and every hit earns you
-  points while the match clock runs down. You can take on bots, or bring up to 8
-  friends into the same match. It's paint instead of bullets.
+  SplashPop Arena has you shooting paint at opponents, and every hit earns
+  points as the match clock runs down. Face bots, or bring up to 8 friends into
+  the same match.
 
 
-  You type a nickname and pick a match length of 1, 5 or 10 minutes.
+  Matches of 1, 5 or 10 minutes. Player search for a group. A leaderboard.
 
 
-  Solo drops you into a run against the bot. Room opens a live room with a code
-  you can share, and the match starts once your group has joined.
+  Type a nickname, not your real name. Your name and match stats can show up on
+  the public leaderboard. Pick Solo to face the bot, or Room to open a live room
+  with a share code. The match starts once your group joins.
 
 
-  You can also search for players to play with, and there's a leaderboard. Go by
-  a nickname rather than your real name, since your name and match stats can
-  show up on the public leaderboard.
-
-
-  heyitsshantanu drew on CS:GO's tense duels, aim-focused gunplay and
-  round-based competition.
+  heyitsshantanu named CS:GO as the inspiration for tense duels, aim-focused
+  gunplay and round-based competition.
 play:
   url: https://splashpoparena.com
   embeddable: true

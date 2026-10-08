@@ -2,18 +2,17 @@ slug: tdshooter
 title: TDShooter
 tagline: Shoot enemies from above, finish quests, and open up new zones.
 description: >-
-  You play as a single character. You walk with W, A, S, D, aim with the mouse
-  and click to shoot. Zone 2 is up.
+  You play as a single character. According to ok_kutas, the game is about
+  shooting enemies, doing quests and unlocking new zones.
 
 
-  According to ok_kutas, the game is about shooting enemies, doing quests and
-  unlocking new zones. Your character has HP, XP and perk points.
+  Zone 2, open to play. HP, XP and perk points for your character. Emotes,
+  including a heart, a thumbs up, arrows, a question mark, an exclamation mark,
+  a skull, a gravestone and a coffin.
 
 
-  Your character can slide with Space. The game also has a set of emotes you can
-  use. The emotes include a heart, a thumbs up, arrows, a question mark, an
-  exclamation mark, a skull, a gravestone and a coffin. You can switch between
-  mouse and touch input.
+  Walk with W, A, S and D. Aim with the mouse and click to shoot. Press Space to
+  slide. Switch between mouse and touch input.
 play:
   url: https://tdshooter.space
   embeddable: true

@@ -2,27 +2,22 @@ slug: undersphere
 title: Undersphere
 tagline: Run and shoot opponents on the inside surface of a hollow sphere.
 description: >-
-  Every match is a first-person deathmatch about racking up kills.
+  In each multiplayer first-person deathmatch, you run, fight and outmaneuver
+  other players to rack up kills. The action takes place on the inside of a
+  hollow sphere, where gravity pulls you toward the curved ground under your
+  feet.
 
 
-  The action happens on the inside of a hollow sphere. Gravity pulls you toward
-  the curved ground under your feet.
+  Assault rifle with a 30-round magazine, one of three slots you switch between.
+  Second long gun, carried alongside the rifle and the grenade. Grenades that
+  stay under the sphere's pull and fly with proper proportions, including long
+  throws to the far side. Bots that play in matches as well. Kill-leader
+  call-outs whenever someone new pulls ahead. Lobbies that wait for one more
+  player when they're short of people.
 
 
-  You've got three slots to switch between, holding an assault rifle with a
-  30-round magazine, a second long gun and a grenade. The grenade is where the
-  setting really shows off, because it stays under the sphere's pull and flies
-  with proper proportions, so a long throw can come down on the opposite side of
-  the world.
-
-
-  When a lobby's still short of people, it waits for one more player. Bots play
-  in matches as well. Whenever someone new pulls ahead, the game calls out the
-  new kill leader.
-
-
-  _NoahWhiteson came up with the movement mechanics and built them to feel fair
-  and conventional, even with the gravity shifting around you.
+  The movement mechanics are _NoahWhiteson's own design, built to feel fair and
+  conventional even as gravity shifts around you.
 play:
   url: https://playundersphere.com
   embeddable: true

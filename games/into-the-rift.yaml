@@ -3,19 +3,20 @@ title: Into The Rift
 tagline: Draft a team of riftlings and auto-battle through the rift to defeat
   the elite boss.
 description: >-
-  You start by walking your character up to one of three creatures to pick your
-  starter riftling.
+  Your riftlings fight on their own in auto battles, with no direct commands
+  from you. You draft a team and send it through the rift.
 
 
-  From there you draft a team of riftlings and send them through the rift in
-  auto battles, where the creatures fight on their own rather than taking direct
-  commands. Your job is to build a team strong enough to reach the elite boss at
-  the end and defeat it.
+  Three starter riftlings to choose from. Strategy roguelite runs built around
+  which riftlings you bring along. A team strong enough to reach the elite boss
+  at the end of the rift and defeat it.
 
 
-  Movement uses WASD, Tab opens your bag, and Q and E rotate. The creator names
-  Pokémon and roguelites as the inspiration, and the result is a strategy
-  roguelite built around choosing which creatures to bring along.
+  Walk up to the riftling you want as your starter. Move with WASD, open your
+  bag with Tab, and rotate with Q and E.
+
+
+  The creator names Pokémon and roguelites as the inspiration for the game.
 play:
   url: https://intotherift.riftling.com
   embeddable: true

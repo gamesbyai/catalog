@@ -2,23 +2,20 @@ slug: star-crusade
 title: Star Crusade
 tagline: Shoot waves of alien ships in a retro space arcade battle.
 description: >-
-  You slide the ship along the bottom with the arrow keys and shoot with Space,
-  while a bomb waits on the B key as well.
+  Playing alone, you take the controls of a starship in a retro arcade shooter.
 
 
-  It's a retro arcade shooter that takes its cues from Galaga.
+  Galaga-style arcade shooting. A space epic about a starship captain defending
+  the galaxy against an ancient evil.
 
 
-  Buttons handle turning sound on or off, restarting the run and pausing it.
-  Each one has its own key too, S, R and P.
+  Use the arrow keys to slide the ship across the bottom. Press Space to shoot
+  and B to use the bomb. Press S for sound on or off, R to restart the run, or P
+  to pause. Buttons do the same.
 
 
-  The README pitches all this as a grand space epic, casting you as a starship
-  captain saving the galaxy from an ancient evil.
-
-
-  markets wrote it in plain JavaScript, pair-programming with ChatGPT and
-  Copilot. You can also clone the repo and run it locally with npm.
+  Written in plain JavaScript by markets, pair-programmed with AI. The repo can
+  be cloned and started locally with npm.
 play:
   url: https://star-crusade.netlify.app
   embeddable: true

@@ -3,16 +3,17 @@ title: Smash&Clash
 tagline: Battle a second player with cards on a compact 3×5 grid in short, tense
   matches.
 description: >-
-  Your rating starts at 1000. Every match is a card battle between two players,
-  played on a grid just three tiles by five. Small wins pile onto each other
-  until they turn into momentum, and any single move can swing the balance back.
-  HarshitKhemani wanted short, intense bursts of competitive strategy instead of
-  long, drawn-out games.
+  Each match is a card battle between two players on a 3×5 grid. Small wins
+  stack into momentum, and any single move can swing the balance back.
 
 
-  Before you start, you choose between two rulesets. Mutators adds chess hops,
-  power tiles and overruns, while Classic is labeled as the original game. Modes
-  include 2 Players · Local, Play a Friend and Friends.
+  Starting rating of 1000. A choice of ruleset before you start. Classic,
+  labeled as the original game. Mutators, with chess hops, power tiles and
+  overruns. Local two-player mode. Play a Friend and Friends modes.
+
+
+  HarshitKhemani wanted short, intense bursts of competitive strategy, not long,
+  drawn-out games.
 play:
   url: https://smashandclash.in
   embeddable: false

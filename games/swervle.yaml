@@ -2,40 +2,21 @@ slug: swervle
 title: Swervle
 tagline: Race a fresh procedurally generated 90-second route that changes every day.
 description: >-
-  You're behind the wheel of a boxy yellow car that looks like it was snapped
-  together from toy blocks, and every day there's a brand-new route to race.
+  You drive a car around a racecourse that is generated fresh each day, in a
+  Wordle-style daily format. Everyone drives that same course on a given day,
+  and you keep coming back to one road to do better on it. Each run gives you 90
+  seconds to get through that day's course as well as you can before the clock
+  runs out.
 
 
-  This arcade racer takes the daily idea that Wordle made famous and puts it on
-  a racetrack, so there's exactly one procedurally generated course each day.
-  Everyone drives the same one on a given day, which means you aren't facing an
-  endless stream of random tracks but coming back to a single road and trying to
-  do better on it. Tomorrow's route will be a different one.
+  Low-cost retries while the day's route lasts. Vehicle editing. A record of
+  past races. Leaderboard with each driver's time beside their car.
 
 
-  Each run gives you 90 seconds to get through that day's course as well as you
-  can before the clock runs out. Because attempts are that short, another try
-  costs you little before the day's route is gone.
-
-
-  A countdown gets you off the line, and then a surprisingly precise timer
-  counts in thousandths of a second while small readouts in the corners track
-  your checkpoints, gear and speed.
-
-
-  Beyond throttle and steering, you get a handbrake, a key to recover the car
-  and another to restart the run. You can also cycle the camera. Ghosts switch
-  on and off with G, which fits nicely in a game where everybody's driving the
-  identical road.
-
-
-  Off the track, the menu lets you edit your vehicle, look back at past races
-  and check a leaderboard that shows each driver's time beside their car. It's
-  all drawn in a chunky low-poly style, with a dark road running between blue
-  water and blocky green hills.
-
-
-  The game was built with GPT-5.6 and Claude Opus 5, according to its creator.
+  Wait out the countdown at the start of each run. Steer and use the throttle to
+  drive. Use the handbrake and cycle the camera. Press G to switch ghosts on or
+  off. Use the recover key to get the car back, or the restart key for another
+  try.
 play:
   url: https://swervle.com
   embeddable: false
@@ -79,7 +60,7 @@ media:
     - games/swervle/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-10-02
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:awesome-cc0

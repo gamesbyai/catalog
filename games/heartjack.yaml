@@ -2,14 +2,17 @@ slug: heartjack
 title: Heartjack
 tagline: Fight other players in stylized melee duels that reward positioning and timing
 description: >-
-  You play as a boxer with oversized mechanical arms. You fight other fighters
-  in melee: chain a punch combo, kick, stab, dodge, or jump into an attack. The
-  creator aimed to push what AI could do with models, animations and art
-  direction. You can switch the bot between Rush and Idle.
+  Heartjack lets you fight as a boxer with oversized mechanical arms. In
+  matches, you face other fighters in melee.
 
 
-  You can switch your outfit between pants and shorts, and the game has a Beach
-  map. Tab opens the leaderboard during a match.
+  Punch combos, kicks, stabs, dodges and jump-in attacks. Swapping between Rush
+  and Idle bot behaviors. Pants or shorts outfits, swappable. A Beach map. The
+  leaderboard, opened with Tab during a match.
+
+
+  DaraChaww aimed to push what AI could do with models, animations and art
+  direction.
 play:
   url: https://demov001.vercel.app
   embeddable: true

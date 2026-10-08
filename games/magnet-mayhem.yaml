@@ -3,22 +3,21 @@ title: Magnet Mayhem
 tagline: Pull and push floating junk to knock rival UFOs around while dodging
   laser beams.
 description: >-
-  Press Space to flip your UFO's magnetic polarity, pulling space junk toward
-  you or pushing it away. Absorbing junk raises your score. You steer with WASD
-  around an arena floating in space.
+  Your UFO pulls space junk in or pushes it away. Absorbing junk raises your
+  score as you float in a space arena. Judges' lasers cross the arena, so you
+  dodge them while collecting.
 
 
-  Repel mode drains 5 points per second while it is active. You go up against
-  bot-controlled UFOs during the round.
+  Repel mode, costing 5 points per second while active. Bot-controlled rival
+  UFOs during the round. EMP blast with a 20-point cost.
 
 
-  Laser beams from the judges cross the arena, so you dodge them while you
-  collect. Shift fires a grapple hook, and E fires an EMP blast that costs 20
-  points. Stop near the portal at the arena's edge to enter it.
+  Steer with WASD. Press Space to flip your magnetic polarity. Press Shift for
+  the grapple hook. Press E for the EMP blast. Stop by the portal at the arena's
+  edge to enter.
 
 
-  The creator drew on news talk about UFOs and on the fun of fighting friends
-  for points.
+  yazanbruv drew on UFO news talk and the fun of fighting friends for points.
 play:
   url: https://magnet-mayhem.vercel.app
   embeddable: true

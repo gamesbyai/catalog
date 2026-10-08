@@ -3,43 +3,29 @@ title: IdleWorlds
 tagline: Train a character in a text-based online RPG that keeps progressing
   while you're away.
 description: >-
-  You start as a guest character standing in Greenwake Den, Zone 1, at Combat
-  level 1. You start with 120 coins and a modest ATK 4, DEF 2 and HP 41. Fight
-  Rats is worth 4 XP while Mine Copper is worth 8.
+  Play this old-school, text-based MMORPG for free in your browser, alongside
+  other players in one shared world. Your character keeps progressing while
+  you're offline, and the game is built around short check-ins. Loot can be
+  rare, and the economy runs on players trading with each other.
 
 
-  Even the rats come with a warning, since the game recommends ATK 7 and DEF 3
-  for them and nudges you to craft a sword first.
+  Rat fights (4 XP) and copper mining (8 XP). Quests for 100 Rat Tails from
+  Greenwake Den, and smithing orders for Copper Boots. Searchable inventory for
+  gear, materials, consumables and drops. A Market, Leaderboards and a Village.
+  Shared world bosses, from solo Ancient Treant to raid-sized Abyssal Behemoth
+  and mythic World Eater, with bigger, longer XP buffs left behind. Daily 20% XP
+  boost to Alchemy, Jewelcrafting and Mining.
 
 
-  Moving on to the next zone takes either ATK 14 and DEF 8 or level 5 in any
-  single skill, which leaves a route open for anyone who'd rather mine than
-  fight.
+  Begin as a guest character in Greenwake Den, Zone 1, at Combat level 1, with
+  120 coins, ATK 4, DEF 2 and HP 41. Move on to the next zone with ATK 14 and
+  DEF 8, or level 5 in any one skill if you'd rather mine than fight. Craft a
+  sword first, as the game suggests, since it recommends ATK 7 and DEF 3 for
+  rats. Convert your guest account for mail, the forum and permanent sign-in.
 
 
-  Everything you collect goes into your inventory, which you can search, and it
-  covers gear, materials, consumables and drops. The game also has a Market,
-  Leaderboards and a Village. There's also a daily boost that adds 20% XP to
-  Alchemy, Jewelcrafting and Mining.
-
-
-  Quests ask for things like a hefty 100 Rat Tails from Greenwake Den, and
-  smithing work orders want crafted gear such as Copper Boots. There's a ladder
-  of shared world bosses, from a solo Ancient Treant to a raid-sized Abyssal
-  Behemoth and a mythic World Eater, and the bigger the boss, the bigger and
-  longer the XP buff it leaves behind.
-
-
-  Your character keeps progressing while you're offline, so the game is built
-  around short check-ins.
-
-
-  Loot can be rare, and the economy runs on players trading with each other. If
-  you convert your guest account, you get mail, the forum and permanent sign-in.
-
-
-  matduke built it out of frustration with idle and MMO games that got
-  paywalled, bloated or simply died, aiming for a simple long-term game that
+  matduke made it out of frustration with idle and MMO games that became
+  paywalled, bloated or simply died. It aims to be a simple, long-term game that
   respects your time.
 play:
   url: https://idleworlds.com

@@ -4,30 +4,22 @@ tagline: Sail a pirate ship, collect resources, and sink rival captains on
   chaotic islands.
 description: >-
   You captain a pirate ship in an ocean arena, trading cannon fire with nineteen
-  rival captains while you haul wood and gold home to spend on upgrades.
+  rival captains and hauling wood and gold home from the islands.
 
 
-  You get resources from Wood Islands and Gold Islands. You gather by staying
-  inside that ring instead of sitting on the island itself. None of it counts
-  until you sail back to the city ring and bank it, so a full hold out at sea is
-  never safe.
+  Wood Islands and Gold Islands to gather from. Four upgrades for Cannon, Sail,
+  Hull and Cargo, bought with banked wood and gold at the city ring. Level 1
+  prices from 15 wood and 25 gold for cannons to 28 wood and 12 gold for the
+  hull. Sloop, the starting ship, with 120 hull, 16 cannons and room for 50
+  cargo. Galleon and Brig, both locked. A 12-second grace period at each match
+  start, when you can't take damage.
 
 
-  If another captain sinks you before you get home, your unbanked cargo is at
-  risk.
-
-
-  The city ring is also where you spend what you've banked, with four upgrades
-  for Cannon, Sail, Hull and Cargo. Level 1 prices run from 15 wood and 25 gold
-  for cannons to 28 wood and 12 gold for the hull.
-
-
-  Each match opens with a 12-second grace period where you can't take damage.
-  WASD steers the ship, while Q and E fire broadsides.
-
-
-  You choose your ship before you set sail. You start in the Sloop, with 120
-  hull, 16 cannons and room for 50 cargo, while the Galleon and Brig are locked.
+  Choose your ship before you set sail. Stay inside the ring around an island to
+  gather, not on the island itself. Gathered cargo doesn't count until you
+  return to the city ring and bank it. Unbanked cargo is at risk if another
+  captain sinks you before you get home. A full hold out at sea is never safe.
+  Steer with WASD. Fire broadsides with Q and E.
 play:
   url: https://plunder.magnificentgames.com
   embeddable: true

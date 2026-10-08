@@ -2,27 +2,21 @@ slug: monaco-gp
 title: Monaco GP
 tagline: Race F1-style cars against other players on 3D tracks with arcade handling.
 description: >-
-  The fastest lap is what you're after on this Monaco-style circuit, where every
-  run is a time trial and your best time gets posted to a global leaderboard.
+  Chase the fastest lap on a Monaco-style circuit. Each run is a time trial,
+  with your best time on a global leaderboard.
 
 
-  First you type in a driver name. Then you hit Drive and you're out on the
-  track.
+  Other online drivers sharing your track live, usually solo time trials.
+  F1-flavored arcade handling. Camera orbit around your car, on its own key
+  combo.
 
 
-  Every other driver who's online shares the same track with you in real time,
-  in what's usually a solo time trial, so you're running your laps alongside
-  live players. The handling is arcade with an F1 flavor, and according to the
-  creator, race mechanics and physics got most of their attention. Space pulls a
-  handbrake so you can drift, while R drops you back on the track.
+  Enter a driver name, press Drive to get on track. Press Space to handbrake and
+  drift. Press R to rejoin the track. Customize your car with its own key combo.
 
 
-  Customizing your car has a key combo of its own, and another one is set aside
-  just for orbiting the camera around it.
-
-
-  The car model came out of GPT Image 2 and Tripo3D, while the music was made
-  with Suno.
+  GPT Image 2 and Tripo3D built the car model. Suno made the music. According to
+  the creator, race mechanics and physics got most attention.
 play:
   url: https://monaco-gp.vercel.app
   embeddable: true

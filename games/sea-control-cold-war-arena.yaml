@@ -2,32 +2,23 @@ slug: sea-control-cold-war-arena
 title: Sea Control - Cold War Arena
 tagline: Command missile-armed warships in online Cold War naval battles.
 description: >-
-  It's the Cold War at sea, and you're in command of a missile-armed warship in
-  an online naval arena. Think of it as World of Warships, only with missiles.
-  You type in a name and land in a room where online players share the water
-  with bot captains like Nelson, Nimitz, Yamamoto, Togo and Yi Sun-sin.
+  It's the Cold War at sea, and you command a missile-armed warship in an online
+  naval arena. Think of it as World of Warships, only with missiles. Pick a name
+  and enter a room shared with other online players.
 
 
-  Even the bots get personalities, since the join messages tag Nimitz and
-  Yamamoto as aggressive, Togo as cautious and Nelson as going for the
-  objective.
+  Bot captains such as Nelson, Nimitz, Yamamoto, Togo and Yi Sun-sin. Nimitz and
+  Yamamoto tagged aggressive in join messages, Togo cautious, Nelson going for
+  the objective. A small, fast attack craft to begin with. Anti-ship missiles on
+  both port and starboard sides, and a hull with HP. Timed, scored matches.
+  Ensign as the starting rank. Join announcements for everyone who enters the
+  room.
 
 
-  Your ship starts out as a small fast attack craft. You steer with a throttle
-  slider that runs from full ahead through stop to full astern, and a rudder
-  slider that swings from hard to port to hard to starboard.
-
-
-  To attack, you click an enemy hull to lock onto it. Your ship carries
-  anti-ship missiles on both its port and starboard sides, and its hull has HP.
-  R switches the search radar on and off.
-
-
-  Matches are timed and scored, and your rank starts out as a humble Ensign.
-
-
-  The game announces everyone who joins the room. The game includes a full
-  briefing for when you want more detail.
+  Set speed with the throttle slider, from full ahead through stop to full
+  astern. Steer with the rudder slider, from hard to port to hard to starboard.
+  To attack, click an enemy hull to lock onto it. Press R to switch the search
+  radar on and off. A full briefing is included if you want more detail.
 play:
   url: https://coldwararena.seacontrol.net
   embeddable: true

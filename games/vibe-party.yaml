@@ -2,18 +2,20 @@ slug: vibe-party
 title: Vibe Party
 tagline: Race around a board and win chaotic minigames with cute AI-themed characters
 description: >-
-  The game has Quick Match, Online Party and Local Party modes. A match is
-  played on one board with four players. P1 is the human player and P2 through
-  P4 are CPU players. Each player starts with 3 tokens and 0 RAM.
+  Three CPU players share one board with you in Vibe Party, an AI-themed party
+  board game.
 
 
-  Spaces are green, red or blue, and the blue ones carry a star. You roll with
-  the Roll button. A match lasts 3 rounds.
+  Quick Match, Online Party and Local Party modes. Green, red and blue spaces,
+  with a star on each blue one. Board turns with quick minigames. Chaotic
+  moments that can change who is ahead. Three rounds per match.
 
 
-  Turns are played on the board, with quick minigames and chaotic moments that
-  can change who is ahead. The creator took Mario Party as the model and wanted
-  to see how far AI-generated characters, backgrounds and assets could go.
+  Roll with the Roll button. Each player begins with 3 tokens and 0 RAM.
+
+
+  simerdinger_sol took Mario Party as the model and wanted to see how far
+  AI-generated characters, backgrounds and assets could go.
 play:
   url: https://playvibeparty.com
   embeddable: true

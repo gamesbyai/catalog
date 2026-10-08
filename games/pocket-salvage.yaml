@@ -2,24 +2,17 @@ slug: pocket-salvage
 title: Pocket Salvage
 tagline: Swing a crane, switch tools, and sort scrap into bins before time runs out.
 description: >-
-  Move the crane left and right with A and D, and use W and S to drop and lift
-  the hook. Press Space to grip, and the magnet will lift steel.
+  Sort every piece into its matching bin before time runs out.
 
 
-  For copper and rubber you'll want the claw, which you pick up at the tool
-  stands and switch to with E.
+  A magnet for steel, a claw for copper and rubber. Three bins for copper,
+  rubber and steel. Twelve levels, the later ones starting out locked. Level 1
+  with four pieces and four minutes on the clock. Five weather levels.
 
 
-  There are three bins, one each for copper, rubber and steel. Your job is to
-  get every piece into its matching bin before the timer runs out.
-
-
-  You choose rounds from a menu of twelve levels, and the later ones start out
-  locked. Level 1 has just four pieces to sort and four minutes on the clock.
-
-
-  The game's own blurb describes five weather levels. P pauses and R restarts a
-  round.
+  Use A and D to move the crane sideways, and W and S to drop and lift the hook.
+  Press Space to grip. Take the claw from the tool stands and switch with E.
+  Press P to pause and R to restart a round.
 play:
   url: https://pocket-salvage.web.app
   embeddable: true

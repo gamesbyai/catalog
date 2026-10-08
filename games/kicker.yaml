@@ -2,17 +2,19 @@ slug: kicker
 title: KICKER
 tagline: Play a match of table football against another player using mouse and keyboard.
 description: >-
-  You're running one side of a 3D foosball table. Each rod answers to its own
-  key, and you hold A, S, D or F to grab one and then move the mouse to work it.
+  You run one side of a 3D foosball table and try to score goals.
 
 
-  Matches go to whoever scores 5 goals first. Pressing Space shakes the whole
-  table (the old bar-table move, built right in).
+  Each rod on its own key. Matches won by the first side to five goals. Table
+  shaking on Space, the old bar-table move built right in.
+
+
+  Hold A, S, D or F to grab a rod. Then move the mouse to work it.
 
 
   peterustinox says the idea came from a co-worker who plays in a German kicker
-  league and is too good to beat in person. Kicker is simply what Germans call
-  foosball. So this game is their chance to try beating him virtually.
+  league and is too good to beat in person. Kicker is what Germans call
+  foosball. peterustinox hopes to beat that co-worker virtually.
 play:
   url: https://kicker.nc.hn
   embeddable: true

@@ -2,27 +2,21 @@ slug: slingshot-escape-the-solar-system
 title: "Slingshot: Escape the solar system"
 tagline: Swing past planets and use their gravity to escape the solar system.
 description: >-
-  You pilot a small spacecraft through a 2D version of the real solar system,
-  and your goal is to get out of it. Each run starts with your ship sitting
-  right next to a big planet.
+  You pilot a spacecraft through the 2D real solar system. Your ship starts each
+  run beside a big planet.
 
 
-  Planets give you extra speed when you swing in close, so every flyby works as
-  a gravity slingshot, and pressing Space burns your engine at the closest point
-  of the approach.
+  Gravity slingshots. Extra speed from swinging in close to planets. The goal of
+  escaping the solar system.
 
 
-  To get off the ground, you aim with the left and right arrow keys and then
-  hold Space to launch.
+  Aim with the left and right arrow keys, then hold Space to launch. Press Space
+  to burn your engine at closest approach. Press Shift to plan, W to warp and R
+  to restart. Escape opens a logbook. A tutorial and a wiki are available.
 
 
-  You also use Shift to plan, W to warp and R to restart. Escape opens a
-  logbook, and a tutorial and a wiki are also available.
-
-
-  romainsimon took the space setting and its contemplative mood from Outer
-  Wilds. Keeping things in 2D with the real solar system came from Spaceflight
-  Simulator instead.
+  romainsimon took the space setting and contemplative mood from Outer Wilds,
+  and the 2D layout from Spaceflight Simulator.
 play:
   url: https://slingshot.indiega.me
   embeddable: true

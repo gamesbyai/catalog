@@ -3,17 +3,17 @@ title: Inkwharf
 tagline: Splash lime ink over a harbor pier and paint more of it than four bots
   in three minutes
 description: >-
-  You're one of four lime fighters on a harbor pier, with three teammates going
-  up against four magenta bots. Each blast of lime ink lands on both the floor
-  and the walls, which gradually shows who holds which spots.
+  You're one of four lime fighters on a harbor pier, with three teammates
+  against four magenta bots. Each blast of lime ink lands on the floor and the
+  walls, and over time the paint shows which team holds each spot.
 
 
-  Each match runs on a three-minute clock, and when it hits zero, whichever team
-  has painted more of the pier wins.
+  Three-minute matches. Victory for the team with more of the pier painted at
+  time-up. A minimap for spotting unpainted ground and the magenta team's
+  advance.
 
 
-  The minimap in the corner helps you see the unpainted ground and the magenta
-  team's advance. Hit TAB to bring up the full map.
+  Press TAB to bring up the full map of the pier during a match.
 play:
   url: https://tesana.com/play/6429b41d-e4e1-4cd5-ab8e-8a35484cefbd
   embeddable: false

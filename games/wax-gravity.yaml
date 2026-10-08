@@ -2,27 +2,21 @@ slug: wax-gravity
 title: Wax & Gravity
 tagline: Land skateboard tricks and string them into combos before the clock runs out.
 description: >-
-  Each session starts with a minute and a half on the clock, and once it runs
-  out, that's the end. Landing tricks, linking them into combos and clearing
-  goals is what keeps the session going. It's a 3D skateboarding game.
+  Each session starts with a minute and a half on the clock, and it ends when
+  that runs out. In this 3D skateboarding game, you keep the session going by
+  landing tricks, linking them into combos and clearing goals.
 
 
-  The physics run deep, with gravity at 9.81 meters per second squared, urethane
-  grip, air drag and rolling resistance.
+  Physics with urethane grip, air drag and rolling resistance. Gravity at 9.81
+  meters per second squared. A goal of grinding along a rail or ledge for a full
+  second.
 
 
-  Everything runs off the keyboard, and W's the one that pushes you along and
-  pumps on ramps. S brakes, while A and D pull triple duty, carving on the
-  ground, spinning in the air and balancing on rails.
-
-
-  Hold Space to crouch, then let go to ollie. J gives you a kickflip, K a
-  heelflip and L a shove-it. There's a goal that asks you to grind along a rail
-  or a ledge for a full second, using A and D to keep your balance.
-
-
-  Land with the board beneath you and aimed where you're headed. Touch down
-  sideways or in the middle of a flip and you slam.
+  Every control is on the keyboard. Use W to push along and pump on ramps. Use S
+  to brake. Use A and D to carve on the ground, spin midair and balance on
+  rails. Hold Space to crouch, then let go to ollie. Use J for a kickflip, K for
+  a heelflip and L for a shove-it. Land with the board beneath you and aimed
+  where you're headed. Touch down sideways or mid-flip and you slam.
 play:
   url: https://tesana.com/play/93454d32-7dd6-4670-add7-a05c15bcb33c
   embeddable: false

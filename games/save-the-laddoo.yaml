@@ -2,33 +2,23 @@ slug: save-the-laddoo
 title: Save The Laddoo
 tagline: Defend a single laddoo on the table from waves of ants at Nani's house.
 description: >-
-  You're guarding one laddoo on a table at Nani's house over summer vacation,
-  and the ants already know exactly where it is. All you have to do is keep them
-  off it for 3 minutes.
+  You guard one laddoo on a table at Nani's house over summer vacation. The ants
+  already know exactly where it is, and you have to keep them off it for 3
+  minutes.
 
 
-  The game opens with an intro scene that sets up the situation.
+  Five tools against the ants. Protective Rekha, a two-use line ants can't cross
+  to shut off whole pathways. A two-use water pool that blocks and drowns nearby
+  ants. Sugar, a recurring decoy that pulls ants off the laddoo, three at a time
+  at most. The chappal, a sandal that flattens a whole cluster of ants in one
+  hit. Tap, the plain fallback for squashing ants one at a time.
 
 
-  Five tools stand between the ants and your sweet. Protective Rekha lets you
-  draw a line they can't cross, so you can shut off entire pathways, but you
-  only get 2 uses. Water comes with the same 2-use limit and drops a pool that
-  blocks nearby ants and drowns them.
-
-
-  Sugar is a recurring decoy that pulls ants away from the laddoo, though you
-  can only have 3 of them down at a time.
-
-
-  Then there's the chappal, a sandal that flattens a whole cluster of ants in
-  one hit. Tap is the plain fallback, letting you squash ants one at a time.
-
-
-  akarshmanas built it from memories of 90s Indian summers, drawing on Nani's
-  house and load-shedding, plus recently spotting ants on a window sill.
-  According to akarshmanas, it's meant to take people back to their childhood
-  rather than chase a score, and to the grandmother who cared, be it Abuela,
-  Grandma or Nani.
+  akarshmanas made the game from memories of Indian summers in the 90s, Nani's
+  house and load-shedding included, plus a recent sight of ants on a window
+  sill. According to akarshmanas, the game is meant to take people back to their
+  childhood rather than chase a score, and back to the grandmother who cared,
+  whether Abuela, Grandma or Nani.
 play:
   url: https://savetheladdoo.vercel.app
   embeddable: true

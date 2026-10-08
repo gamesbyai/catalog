@@ -2,20 +2,19 @@ slug: word-find-boggle-challenge
 title: "Word Find: Boggle Challenge"
 tagline: Trace neighboring letters on a grid to spell words before the timer runs out.
 description: >-
-  Once you start, you trace paths through a grid of letters to spell words,
-  dragging or tapping from one letter to the next. A neighbor is any letter in
-  one of eight directions, diagonals included, which gives each letter more ways
-  to build a word than a grid that only connects up, down and sideways would.
-  When a finished word is in the game's dictionary, it's accepted and scored by
-  how long it is. Words you've already found won't score again.
+  Spell words by tracing paths through a grid of letters. Each round is short
+  and timed.
 
 
-  Reaching the goal is how you level up. Words found in quick succession build
-  combos. Tracking down the DW and TW tiles brings big bonuses, the game says.
+  Eight-way links, diagonals included, giving each letter more ways to build a
+  word than up, down and sideways links alone. Finished words in the game's
+  dictionary, accepted and scored by length. Combos for words found in quick
+  succession. Big bonuses from DW and TW tiles. Level-ups for reaching the goal.
+  No points for words you've already found.
 
 
-  Each round is short and timed, and it's over once the clock hits zero. Your
-  score shows up at that point, and then you can start another round.
+  Drag or tap from one letter to the next. When the clock hits zero, your score
+  shows. Then start another round.
 play:
   url: https://rosebud.ai/play/7027d6e3-4516-4311-9da6-a964e5c9524b
   embeddable: true

@@ -2,21 +2,20 @@ slug: tiny-skies
 title: Tiny Skies
 tagline: Explore a small shared world and relax together while an apocalypse looms.
 description: >-
-  You fly a biplane around a tiny round planet. You climb with the Up Arrow.
+  Other players fly around the same world with you. You pilot a biplane around a
+  tiny round planet, and an apocalypse looms in the background.
 
 
-  Villagers talk with you, and one of them hands you a parcel for a village they
-  name, like a fisherman's package for Mossglen that's apparently stuffed with
-  jam. Once you're carrying it, you fly to the village and drop it off.
+  A race to finish, and collectibles to hunt down. XP and a level system.
 
 
-  There's also a race you can finish, and collectibles to hunt down.
+  Climb with the Up Arrow. Villagers talk with you, and one hands you a parcel,
+  such as a fisherman's package for Mossglen, apparently stuffed with jam. Once
+  you're carrying it, fly to the village it names and drop it off.
 
 
-  There's a level and XP system as well. Other players fly around the same world
-  with you. dannylimanseta wanted a cozy multiplayer game where people hang out
-  instead of trying to kill each other, with an apocalypse looming in the
-  background.
+  dannylimanseta wanted a cozy multiplayer game where players hang out rather
+  than try to kill each other.
 play:
   url: https://tinyskies.vercel.app
   embeddable: true

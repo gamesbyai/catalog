@@ -3,20 +3,21 @@ title: The Great Taxi Assignment
 tagline: Drive a taxi through a 3D city, delivering passengers before the clock
   runs out.
 description: >-
-  The job is classic GTA-style taxi work, set in a city called Vibe City. You
-  drive around looking for passengers to pick up, and each fare's destination
-  gets marked on your map.
+  In this GTA-style taxi game, you drive around a 3D city called Vibe City. Your
+  job is to take each fare where they're going.
 
 
-  From there you have to get them where they're going before your timer runs
-  out. You drive with WASD or the arrow keys. The space bar is your brake, and
-  it's the only other key the game asks you to remember. Tomáš Bencko built the
-  whole thing in 60 hours.
+  Destinations marked on your map for each fare. A timer running on every trip.
+  Passengers to pick up around the city.
 
 
-  According to the creator, about 99 percent of the code was AI generated.
-  GPT-4o drew the 2D art, the music came from Suno and ElevenLabs produced the
-  sound effects.
+  Drive with WASD or the arrow keys. Space is your brake, and the only other key
+  to remember.
+
+
+  Tomáš Bencko built it in 60 hours. According to the creator, about 99 percent
+  of the code was AI generated. GPT-4o drew the 2D art, Suno made the music and
+  ElevenLabs produced the sound effects.
 play:
   url: https://great-taxi-assignment.netlify.app
   embeddable: true

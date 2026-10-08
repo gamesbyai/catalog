@@ -3,20 +3,18 @@ title: Wallflipper
 tagline: Race through a neon corridor, flipping gravity to dodge obstacles and
   grab objects.
 description: >-
-  A Launch button starts the game. Once you're off, you race down that corridor
-  on the floor, the walls and the ceiling, which turns pretty much the whole
-  tube into road.
+  Alone, you race down a corridor on its floor, walls and ceiling, which turns
+  pretty much the whole tube into road.
 
 
-  Steering left or right carries you up the sides, and if you keep holding the
-  steer you keep climbing. Space throws you over to the opposite surface, and
-  that flip is how you get past the traps and obstacles sitting on the surfaces.
+  Traps and obstacles sitting on the surfaces. Objects to collect along the way.
+  Fragment routes through the corridor, hinted by on-screen text. Staying alive
+  at full speed as the goal.
 
 
-  The goal is to stay alive at full speed while picking up objects along the
-  way. On-screen text also points you toward following fragment routes through
-  the corridor. R turns you around entirely. P pauses. M and S switch music and
-  sound from the keyboard too.
+  Steer left or right to climb up the sides, and hold the steer to keep
+  climbing. Press Space to flip to the opposite surface and slip past traps and
+  obstacles. Press R to turn around completely.
 play:
   url: https://expectfun.github.io/vibetools/wallflipper.html
   embeddable: true

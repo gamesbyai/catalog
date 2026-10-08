@@ -2,49 +2,33 @@ slug: vybeciv
 title: VybeCiv
 tagline: Grow a tribe into an empire across Earth, the Solar System and the Galaxy.
 description: "You start as the ruler of one tribe on a hex map of Earth, moving
-  settlers, workers, explorers and soldiers a few tiles per turn. Dark tiles
-  stay hidden until a unit gets close, which is what the speedy explorers are
-  for.
+  settlers, workers, explorers and soldiers a few tiles per turn. Unexplored
+  tiles stay hidden until a unit gets close, and speedy explorers are there for
+  that. The world you leave behind shrinks to a single tile on the next map,
+  keeps sending you output, and rivals try to grab it.
 
 
-  Cities grow whenever their food stores fill, and if a build is dragging you
-  can pay gold to finish it on the spot.
+  Growth waiting on full food stores. Happiness cost per new city and citizen,
+  with slower growth and output below zero. Automatic new ages, with fresh units
+  and buildings, after enough research. Three maps, Earth, Solar System and
+  Galaxy, each with its own cities, units and rivals. Two wins, Intergalactic
+  Gate built first after reaching Galaxy, or every rival city wiped out on any
+  map, with rivals chasing both. Turn 300 limit, where top score wins if nobody
+  else has.
 
 
-  Every new city and every extra citizen eats into your happiness. Let it slide
-  below zero and your cities grow and produce more slowly. Granaries, markets
-  and walls help take the edge off.
-
-
-  Once you've researched enough technologies, a new age arrives on its own with
-  fresh units and buildings to build.
-
-
-  Earth, the Solar System and the Galaxy are three separate maps, each with
-  their own cities, units and rivals. You move up by building a Space Expedition
-  from a city with a spaceport, then an Interstellar Ark from one with a jump
-  gate.
-
-
-  The world you leave behind shrinks into a single tile on the next map and
-  keeps sending you output. Rivals will try to grab it. Cities down there run
-  themselves, turning half their production into gold or science and switching
-  to research once their coffers fill up, and a city on your current map with an
-  empty queue can be set to do the same.
-
-
-  To win, you either build the Intergalactic Gate first after reaching the
-  Galaxy, or wipe out every rival city on any map. Rivals chase both goals too,
-  and the game stops at turn 300, when the top score wins if nobody else has.
-
-
-  Losing every city isn't quite the end, because you still get ten turns to
-  found a new one before your civilization is finished.
+  Move up with a Space Expedition from a spaceport, then an Interstellar Ark
+  from a jump-gate city. Pay gold to finish a slow build instantly. Add
+  granaries, markets and walls to ease unhappiness. Earlier-map cities run
+  themselves, turning half their output into gold or science, then research once
+  coffers fill. Set an empty-queue city on your current map to do the same.
+  Losing every city isn't quite the end, and you get ten turns to found one
+  before civilization ends.
 
 
   Albert Simon says they handled design, balance and polish personally and made
-  the music with Suno. They say this is a first public build where the late-game
-  AI and the tutorial side are still a bit rough."
+  the music with Suno. They call this a first public build where the late-game
+  AI and tutorial side are still a bit rough."
 play:
   url: https://vaigames.com/vybeciv/
   platforms:

@@ -3,40 +3,33 @@ title: Silent Depth
 tagline: Hunt a convoy by sonar, fire one torpedo attack, then slip away from
   the escorts.
 description: >-
-  Every time you raise the periscope or come up to the surface, you learn more
-  about what's out there, but you also get easier to spot. Your submarine
-  carries plenty of firepower but sees little, while passive sonar is how you
-  search for the convoy.
+  Every time you raise the periscope or surface, you learn more about what's out
+  there, but you also become easier to spot. Your submarine carries plenty of
+  firepower but sees little.
 
 
-  Each run is a short extraction roguelite played in three steps. You find a
-  convoy, set up a torpedo attack and then slip away.
+  Passive sonar for searching out the convoy. Procedurally generated convoy
+  routes, with a different path each run. Escort ships that pursue you as soon
+  as a torpedo is in the water. Short extraction roguelite runs in three steps.
 
 
-  The convoy routes are procedurally generated, so you're chasing a different
-  path every time. You line up the shot through the periscope.
+  Find the convoy and keep your wake small, which means not giving yourself
+  away. Line up a torpedo attack through the periscope, then vanish before the
+  escorts pin down where you are. Switch between surfacing, periscope depth and
+  running deep with a numbered button for each.
 
 
-  Switching between surfacing, periscope depth and running deep takes one
-  numbered button each.
-
-
-  Your opening order is to find the convoy and keep your wake small, which means
-  not giving yourself away.
-
-
-  The escorts come after you as soon as a torpedo's in the water, and from then
-  on your job is to vanish before they pin down where you are.
-
-
-  The creator, yibie, built the game around surviving that pressure after the
-  shot rather than only sinking the ship, with one-hit tension throughout.
+  yibie built the game around surviving the pressure after the shot rather than
+  only sinking the ship, with one-hit tension throughout.
 play:
   url: https://silent-depth.gtdstudy.com
   embeddable: true
   platforms:
     - browser
     - mobile
+  controls:
+    - "Numbered buttons: switch between surfacing, periscope depth and running
+      deep."
 creator:
   name: yibie
   handle: yibie

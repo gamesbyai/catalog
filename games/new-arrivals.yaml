@@ -2,20 +2,16 @@ slug: new-arrivals
 title: New Arrivals
 tagline: Sort VHS tapes into categories on the shelves of a retro rental store.
 description: >-
-  Tapes are waiting to be put away in New Arrivals, a sorting puzzle set in a
-  retro video rental store. You place each VHS on the shelf that matches its
-  category, and the job is done when the whole store is tidy.
+  Sort VHS tapes in a retro video rental store. Each tape goes on the shelf for
+  its category.
 
 
-  The premise comes from real hobby experience: the creator runs and visits
-  local VHS swaps and enjoys arranging tapes into quirky collections. Claude
-  Code went into the build, the 3D store runs on Three.js in a desktop browser
-  or on a phone, and the game finished 251st of 945 at Vibe Jam 2026.
+  Tapes waiting to be put away. A shelf for every category. The whole store tidy
+  at the end.
 
 
-  That affection for the format shapes the store setting, down to the VHS on
-  every shelf. It is a casual puzzle, and the reward for getting every category
-  right is a well-organized shelf.
+  clarklab runs and visits local VHS swaps and enjoys arranging tapes into
+  quirky collections.
 play:
   url: https://game.vhsgarage.com
   embeddable: true
@@ -52,7 +48,7 @@ media:
     - games/new-arrivals/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-09-29
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:vibejam-2026

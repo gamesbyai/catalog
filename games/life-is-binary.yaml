@@ -2,25 +2,21 @@ slug: life-is-binary
 title: Life is Binary
 tagline: Farm, hack, and hustle with other players in a pixelated multiplayer life sim.
 description: >-
-  Missions pop up from characters such as Nova, and each one comes with a title,
-  a short brief and a reward in Bits that you can accept, decline or just
-  ignore. It suits a game whose tagline says every choice comes down to a 1 or a
-  0. You can also open a chat with whoever sent each mission.
+  This multiplayer life sim is about farming, hacking and hustling. Its tagline
+  reduces every choice to binary. It all starts in a 14 by 10 foot apartment
+  that smells of burnt RAM, according to the intro.
 
 
-  Your first job is seating a starter fuse. You're asked to seat a starter fuse
-  for 25 Bits, though the brief admits you could pocket the fuse instead. All of
-  this starts in a 14 by 10 foot apartment.
+  Missions from characters such as Nova, each with a title, a short brief and a
+  Bits reward. Your first job, seating a starter fuse for 25 Bits, where the
+  brief admits you could pocket the fuse instead. GL1TCH, your only roommate, a
+  sarcastic toaster whose voice the intro says sounds like a chain-smoking
+  dial-up modem. Online play with other players in one shared world.
 
 
-  Your only roommate is GL1TCH, a sarcastic toaster. The intro says its voice
-  sounds like a chain-smoking dial-up modem, and the place smells of burnt RAM.
-  A six-step slideshow sets all this up before you take control of a character,
-  and you can skip it or tick a box so it never shows again.
-
-
-  Beyond that first room, it's a multiplayer life sim about farming, hacking and
-  hustling. Other players share that world with you online.
+  Accept, decline or ignore each mission. Open a chat with whoever sent it. A
+  six-step slideshow sets all this up before you take control of a character.
+  Skip it, or tick the box so it never shows again.
 play:
   url: https://lifeisbinary.com
   embeddable: true

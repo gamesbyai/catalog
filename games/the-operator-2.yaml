@@ -2,27 +2,22 @@ slug: the-operator-2
 title: The Operator
 tagline: Inspect the output of a 1980s mainframe AI and decide what gets through.
 description: >-
-  Each incoming user connection waits for your call, and you either INFERENCE it
-  or REFUSE it.
+  Each incoming user connection waits for your call. An LLM server in a
+  cassette-futurist, 1980s mainframe office sets the rules.
 
 
-  The setup borrows from Papers, Please, where a request comes in and you check
-  it against the rules before you commit, but here an LLM server in a 1980s
-  mainframe office sets the rules. CriptoCeelo's idea was that you'd be handling
-  the chaos spilling out of a dusty old analog AI instead of passports.
+  Storage rack filtered to all, agents only, or skills only. Physical agent
+  cartridges with markdown file names. Drive A for agents, Drive B for skills.
+  Current content policy, a blunt ban on discussing politics. Safety Filter tool
+  suggested for checking related wording.
 
 
-  Cartridges are how you assemble the context for a request. They're kept in a
-  storage rack where you can filter to see all of them, only agents, or only
-  skills. Agents slot into Drive A and skills into Drive B.
+  Assemble a request's context from cartridges, then INFERENCE or REFUSE it.
 
 
-  The game puts AI agents on physical cartridges with markdown file names, set
-  in a cassette-futurist office.
-
-
-  The current content policy is a blunt ban on discussing politics, plus a nudge
-  to check related wording with the Safety Filter tool.
+  The setup borrows from Papers, Please, where you check each incoming request
+  against the rules before committing. CriptoCeelo's idea was handling dusty
+  analog AI chaos, not passports.
 play:
   url: https://the-operator-game.vercel.app
   embeddable: true

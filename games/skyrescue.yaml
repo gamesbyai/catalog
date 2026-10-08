@@ -3,22 +3,18 @@ title: SkyRescue
 tagline: Pilot a rescue helicopter to pull trapped survivors out of disasters
   before time runs out
 description: >-
-  Take a rescue chopper into a disaster zone and get the trapped people out
-  before the clock runs down. Each mission comes down to how carefully you can
-  fly against how much time you've got left.
+  Fly a rescue helicopter into a disaster zone and pull trapped people out
+  before the clock runs down. Each mission weighs how carefully you fly against
+  the time you have left.
 
 
-  The levels move from towers on fire to mountain cliffs, flooded suburbs, a
-  highway full of crashed cars and an arctic blizzard. Every place asks you to
-  reach the survivors in its own way, so the flying doesn't settle into one
-  routine.
+  Levels from burning towers to an arctic blizzard. Mountain cliffs, flooded
+  suburbs and a highway full of crashed cars. Five survivors to rescue in the
+  night city, with a little over two minutes. A different way to reach the
+  survivors in each place, with no single flying routine.
 
 
-  You need to rescue five survivors before the clock runs out, and the night
-  city gives you a little over two minutes.
-
-
-  marscole76 made it out of a plain fondness for helicopter rescue games.
+  marscole76 made it out of a plain liking for helicopter rescue games.
 play:
   url: https://skyrescue.vercel.app
   embeddable: true

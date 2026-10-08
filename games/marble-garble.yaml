@@ -2,20 +2,23 @@ slug: marble-garble
 title: MARBLE GARBLE
 tagline: Roll a marble across hazardous terrain and collect all the money in each level.
 description: >-
-  You guide a marble around walled grids that hold coins, blocks and open pits,
-  rolling it with the keyboard and building momentum to collect every coin on
-  the board.
+  Guide a marble through walled grids holding coins, blocks and open pits. Build
+  momentum to gather every coin on the board. Sessions run a few minutes.
 
 
-  The game has 50 procedurally generated levels across five worlds. Surfaces
-  change how the marble moves: ice is slippery, while desert sand adds heavy
-  friction. Bottomless pits, lava and cacti end a run on contact, and enemies
-  such as hovering UFOs and forest snakes patrol the levels.
+  50 procedurally generated levels of increasing difficulty across five worlds.
+  Arctic ice with little grip, and desert sand with heavy friction. Run-ending
+  contact with bottomless pits, lava and cacti. Patrolling enemies such as
+  hovering UFOs and forest snakes. On-off switch for enemies. A total game timer
+  for speedrunning, and a high score list.
 
 
-  You can switch enemies on or off, add a total game timer for speedrunning, and
-  check a high score list. Press R to restart a level after a fall or when you
-  get stuck. Sessions run a few minutes.
+  Roll the marble with the arrow keys or WASD. Press R to start the level over
+  after a fall or when you get stuck.
+
+
+  Daniel__BK designed and directed it, working with AI assistants on the code.
+  Music and sound effects are royalty free or Creative Commons.
 play:
   url: https://daniel-bk.itch.io/marble-garble
   embeddable: false

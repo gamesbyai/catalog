@@ -2,20 +2,19 @@ slug: vibe-miner
 title: Vibe-Miner
 tagline: Dig deeper, fight enemies, and return to the surface to upgrade.
 description: >-
-  You play as a miner who starts at the surface. There's a shop on the surface.
-  You have health and fuel to manage, and a backpack with 10 slots.
+  A miner works a vertical 2D mine, with a shop on the surface.
 
 
-  You dig down through the map, fighting the enemies you run into and grabbing
-  resources along the way. Then you haul it all back up to the surface, upgrade
-  and push deeper than last time.
+  Health and fuel to manage. A backpack with 10 slots. Enemies to fight on the
+  way down. Resources to collect. Leaderboards.
 
 
-  You start with a pickaxe and a grapple tool.
+  Start at the surface with a pickaxe and a grapple tool, then dig down. Haul
+  everything back up, then upgrade and push deeper than last time.
 
 
-  danbuildsstuff points to Miner Dig Deep and Minecraft as the games it's
-  closest to. The game has leaderboards.
+  danbuildsstuff names Miner Dig Deep and Minecraft as the games Vibe-Miner is
+  closest to.
 play:
   url: https://vibe-miner.xyz
   embeddable: true

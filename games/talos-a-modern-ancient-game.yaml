@@ -1,40 +1,29 @@
 slug: talos-a-modern-ancient-game
 title: "Talos: A Modern Ancient Game"
 tagline: Wall in the white stone on a hex board before it slides off the edge.
-description: "The goal is to wall in a white stone before it slides off the edge
-  of a hex board. Each turn you drop a dark stone onto any open hex, and then
-  the white stone slides one space. It's a trap-the-cat style puzzle where a
-  pale stone plays a pretty dignified cat.
+description: "Wall in the white stone before it slides off the edge of a hex
+  board. It's a trap-the-cat style puzzle, and the white stone plays the cat.
 
 
-  Scoring counts the empty hexes you leave once the white stone is boxed in, so
-  spending fewer stones scores higher.
+  Six generated boards per run, none drawn by hand. Three escapes by the white
+  stone ending a run. Easy, Medium and Hard, with score multipliers of two or
+  three on harder settings. Scoring by empty hexes left once it's boxed in,
+  higher with fewer stones spent. Optional suggestions highlighting every
+  equally strong placement, with a warning they aren't always reliable. A mock
+  proverb about doorways being more tempting than open space, signed probably
+  ancient. Saved sessions to resume later.
 
 
-  There are six boards in a run, and they're generated fresh rather than drawn
-  by hand. Three escapes and the game's over.
+  Drop a dark stone onto any open hex each turn. After that, the white stone
+  slides one space. Pick a light or dark board, or let it follow your system.
 
 
-  You can pick Easy, Medium or Hard, and the harder settings multiply your score
-  by two or three. You can also turn on suggestions, which highlight every
-  equally strong placement on the board. The game also warns that those hints
-  aren't always reliable.
-
-
-  The game also includes a mock ancient proverb about doorways being more
-  tempting than open space, signed \"Ancient Proverb... probably.\"
-
-
-  You can play on a light or dark board, or let it follow your system. Leaving
-  for the title screen keeps your session saved, so you can pick it back up
-  later.
-
-
-  Kevin MacLeod worked out the design by talking it through with Claude, and
-  Claude Code wrote it as one HTML file, including the board generator and the
-  solver. They played each version and described what felt off so Claude could
-  revise it, and Claude also wrote a script that made the store art with the
-  game's own renderer. They recorded the sound effects and released it as CC0."
+  Kevin MacLeod worked out the design in conversation with an AI model. They
+  played each version and described what felt off so the AI could revise it. An
+  AI coding tool wrote the game as one HTML file, including the board generator
+  and the solver. The AI also wrote a script that produced the store art from
+  the game's own renderer. Kevin MacLeod recorded the sound effects, hand-tuned
+  the colors and playtested, and released it as CC0."
 play:
   url: https://danger.academy/Talos/
   platforms:

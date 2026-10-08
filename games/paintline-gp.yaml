@@ -2,17 +2,19 @@ slug: paintline-gp
 title: Paintline GP
 tagline: Race five rivals over three laps of a seaside circuit, drifting through corners
 description: >-
-  The race is three laps around a circuit, with five rivals lined up against
-  you, Taro and Vex among them. You're at the wheel of Pip.
+  You drive Pip in a race against five rivals, Taro and Vex among them.
 
 
-  Hold Space while you steer and you'll drift around the corners. A small map
-  shows what's coming up on the track. Press E to use whatever item you're
-  carrying.
+  Three laps around a circuit. A small map of the track ahead. Items to carry
+  and use.
 
 
-  According to @pitlanepixel, the entire game is made in code. The music and
-  sound effects are part of that, along with the textures.
+  Hold Space while you steer to drift around corners. Press E to use the item
+  you're carrying.
+
+
+  According to @pitlanepixel, the entire game is made in code, including its
+  music, sound effects and textures.
 play:
   url: https://tesana.com/play/e389ce0f-69f2-4a17-89da-9797bee85247
   embeddable: false

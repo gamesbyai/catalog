@@ -3,27 +3,19 @@ title: Starfall Factions
 tagline: Mine pastel planets, take risky contracts, and upgrade your ship as a
   broke rookie pirate.
 description: >-
-  Solo play is what's available right now. Co-op play is still coming, so for
-  now you fly alone. You play a broke rookie pirate.
+  Solo play is available for now, with co-op still coming. You start as a broke
+  rookie pirate with nothing, in an open-world star system you can roam around.
 
 
-  You really do start with nothing, and that money has to come from somewhere.
-  You earn it by flying between planets, mining resources and taking on risky
-  contracts. Whatever you make goes into ship upgrades, and a better ship lets
-  you handle bigger jobs.
+  Mining resources on the planets you fly between. Risky contracts as another
+  way to earn. Ship upgrades, funded by whatever you make, and bigger jobs a
+  better ship can take. Factions, salvage and trouble shaping what you run into
+  along the way. You explore, gather, spend what you earn, and then head back
+  out.
 
 
-  The adventure runs on a loop where you explore, gather and spend, then head
-  back out again.
-
-
-  The star system you're working in is strange and alive. It's full of factions,
-  salvage and trouble, and they shape what you run into along the way. It's an
-  open world, and a cozy one.
-
-
-  BrunoOBunito wanted to capture what it's like to lose yourself in a sci-fi
-  setting, only scaled down into something cozier and tighter.
+  BrunoOBunito wanted a smaller, cozier and more focused take on the feeling of
+  getting lost in a sci-fi setting.
 play:
   url: https://starfallfactions.vercel.app
   embeddable: true

@@ -2,27 +2,20 @@ slug: videovideogame
 title: VideoVideoGame
 tagline: Choose your path through 100+ video scenes and short minigames as Levelsio.
 description: >-
-  Each scene in story mode is a short video that ends on a prompt with text
-  choices, like "Pet the dog" or "Storm is coming". Whichever one you pick
-  decides which clip plays next, so the whole choose-your-own-adventure is told
-  through footage instead of text.
+  Each scene in story mode is a short video that ends on text choices, and the
+  one you pick decides which clip plays next. Choices include petting a dog or a
+  storm coming. The story is told through footage rather than text, and a large
+  amount of it is generated video.
 
 
-  Levelsio is the main character, and the game carries the dedication "for
-  @levelsio."
+  The opening scene, a dog aboard a boat. Levelsio as the main character, with a
+  dedication to @levelsio. Branching paths across more than 100 videos and
+  scenes. Minigames mode with a few games, including racing and puzzle types. A
+  leaderboard.
 
 
-  The story opens with a dog aboard a boat. From there the story branches across
-  more than 100 videos and scenes. Different choices lead you to different
-  clips, and the one story is made up of a large amount of generated video.
-
-
-  There's also a separate minigames mode with a few games in it, including
-  racing and puzzle types. There's also a How to Play screen and a leaderboard.
-
-
-  javitoshi generated the clips with Seedance. According to javitoshi, making
-  those videos was the fun part.
+  javitoshi made the clips with Seedance. According to javitoshi, making them
+  was the fun part.
 play:
   url: https://videovideogame.com
   embeddable: true

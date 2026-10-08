@@ -3,25 +3,18 @@ title: Late Fee Video
 tagline: Rewind returns, reshelve tapes and keep the line moving in Uncle Ray's
   video store.
 description: >-
-  Tapes have been left behind since Uncle Ray's last day. Uncle Ray has retired
-  and passed his video store on to you, which this first-person simulator asks
-  you to take over.
+  In this first-person simulator, you take over Uncle Ray's video store after
+  his retirement. Tapes have been left behind since his last day.
 
 
-  Running the place is hands-on, from rewinding returns to sorting the shelves
-  alphabetically by genre and keeping the candy wall topped up. You grab, place,
-  rotate and toss items, and you can flip your pose too. Hold Tab to get a close
-  look at a tape before it heads back to the shelf, since every tape here is one
-  of a kind.
+  Returned tapes to rewind. Day-end saves. Shelves to sort alphabetically by
+  genre. Candy wall to keep stocked. Shop carryover between shifts.
 
 
-  WASD gets you up and down the aisles, the mouse changes where you're looking,
-  Shift lets you run, and C drops you low to reach the bottom shelves. The line
-  has to be moving before the regulars walk out.
-
-
-  Progress is saved when each day ends, and the shop carries over from one shift
-  to the next.
+  Grab, place, rotate, toss items and flip your pose. Hold Tab to inspect a tape
+  before it returns to the shelf, since each is unique. Run with Shift. Move up
+  and down the aisles with WASD. Look around with the mouse. Drop low with C to
+  reach bottom shelves. Keep the line moving before regulars leave.
 play:
   url: https://tesana.com/play/d1ca2478-fe2b-448e-ab24-038e3ce5efdd
   embeddable: false

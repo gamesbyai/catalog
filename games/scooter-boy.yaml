@@ -2,29 +2,23 @@ slug: scooter-boy
 title: Scooter Boy
 tagline: Ride an electric scooter through traffic, grab coins, and hop through portals.
 description: >-
-  Scooter Boy has you riding an electric scooter down a road full of traffic,
-  switching lanes to slip between the cars while you scoop up coins.
+  Scooter Boy puts you on an electric scooter on a road full of traffic, where
+  you weave between the cars.
 
 
-  The left and right arrows move you over a lane, and the up arrow launches you
-  into a jump.
+  Coins to scoop up while you ride. Portals to other games, not to bonus areas.
+  Endless and Daily scores, kept apart on one leaderboard.
 
 
-  Once you're in the air, pressing arrows makes the rider pull off tricks. On a
-  touch screen you swipe to move and jump instead. Any key or a tap gets things
-  rolling.
+  Press left or right to change lanes. Press up to launch into a jump. Once
+  you're in the air, press the arrow keys to pull off tricks. On a touch screen,
+  swipe to move and jump. Press any key or tap to start. When a run ends, your
+  coins are measured against your best total. You can type a name and submit
+  your score to the leaderboard.
 
 
-  When a run ends, your coins collected are measured against your best total.
-  You can type in a name and submit your score to a leaderboard, which keeps
-  Endless and Daily scores separate.
-
-
-  Portals also turn up along the road, and they don't lead to bonus areas at all
-  but carry you off to other games entirely.
-
-
-  Nik D made Scooter Boy to show their brother what's possible with AI today.
+  The game was made by Nik D to show their brother what's possible with AI
+  today.
 play:
   url: https://vibejam2026.1clickdev.com
   embeddable: true

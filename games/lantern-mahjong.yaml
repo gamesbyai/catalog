@@ -1,31 +1,23 @@
 slug: lantern-mahjong
 title: Lantern Mahjong
 tagline: Clear mahjong boards by matching tiles, on 12 layouts with every deal solvable.
-description: "Each board is built from a full set of 144 mahjong tiles. You can
-  undo a move or ask for a hint.
+description: "On your own, you clear mahjong boards by matching tiles, moving
+  down through the layers until no tiles remain.
 
 
-  You clear a board by matching tiles and working down through the layers until
-  nothing's left. There are 12 layouts to pick from, and fewer layers means an
-  easier board, though every one of them uses all 144 tiles.
+  A full set of 144 tiles on every board. Twelve layouts, with fewer layers for
+  easier boards. Guaranteed solvable deals. Undo, hints, and dimmed tiles that
+  can't be played yet. Swappable backgrounds and tiles. Best times kept in the
+  statistics, and a list of achievements. Replays of cleared boards, and jumps
+  to another board.
 
 
-  Claude wrote a deal algorithm that guarantees every deal can be solved, so
-  you'll never start on a hopeless board.
-
-
-  The tile art is public domain, and Claude drew the nine faces that were
-  missing, which covered the flowers, the seasons and the dragons. You can swap
-  the background and the tiles, and dim any tile that can't be played yet.
-
-
-  Your best times are kept in the statistics, there's a list of achievements,
-  and once you clear a board you can play it again or jump to another one.
-
-
-  Kevin MacLeod started from an open-source mahjong app, but too many of its
-  assets were GPL or share-alike. So they rewrote it from scratch as one offline
-  file, all CC0, and recorded the tile clacks and the win harp themselves."
+  Kevin MacLeod started from an open-source mahjong app. Too many of its assets
+  carried GPL or share-alike terms, so they rewrote it from scratch as a single
+  offline HTML file, with everything under CC0. The AI found public domain tile
+  art, then drew the nine missing faces for the flowers, seasons and dragons,
+  and also wrote the deal algorithm. They recorded the tile clacks and the win
+  harp themselves."
 play:
   url: https://danger.academy/Mahjong/
   platforms:

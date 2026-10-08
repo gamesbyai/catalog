@@ -2,34 +2,24 @@ slug: lunar-lander
 title: Lunar Lander
 tagline: Steer a lunar module with thrust and tilt to land softly on rough terrain.
 description: >-
-  The same little lander gets sent to five different worlds, and most of them
-  pull on it in their own way. On each one you tilt the craft and burn the main
-  thruster to ease it onto a jagged stretch of ground. Come down soft and it
-  counts as a landing, but crash and that attempt's over.
+  Tilt the lander and burn its thruster to ease it onto jagged ground on five
+  different worlds. Most of the worlds pull on the lander in their own way. A
+  soft touchdown counts as a landing, and a crash ends that attempt.
 
 
-  The Moon is the low-gravity starter world, meant for learning the basics. The
-  Earth-like Kepler-452b gets a forgiving descent of its own, so the Moon isn't
-  the only gentle stop on the list.
+  The Moon, a low-gravity starter world meant for learning the basics.
+  Kepler-452b, an Earth-like world with a forgiving descent of its own. Mars,
+  with stronger gravity and rough terrain. Europa, with almost no gravity over
+  fractured ice. Venus, the crushing-gravity one, unlocked after the Europa
+  mission. Three landing pad types, Easy, Hard and Extreme.
 
 
-  Mars has stronger gravity and rough terrain, while Europa has almost no
-  gravity at all over fractured ice.
+  Use the left and right arrows to rotate. Press Up or Space to fire the
+  thruster. Press P to pause the descent.
 
 
-  Venus is the heavy one, with crushing gravity. Venus only opens up after you
-  complete the mission on Europa.
-
-
-  There are three landing pad types, called Easy, Hard and Extreme.
-
-
-  The left and right arrows rotate the lander, while up or Space fires the
-  thruster. P pauses the descent.
-
-
-  bobmute2 liked the old Lunar Lander cabinets. They wanted a tight version of
-  their own to tweak and share with friends.
+  bobmute2 liked the old Lunar Lander cabinets. They wanted a browser version
+  they could tweak and share with friends.
 play:
   url: https://lunarlanderv5.netlify.app
   embeddable: true

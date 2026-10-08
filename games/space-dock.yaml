@@ -2,17 +2,16 @@ slug: space-dock
 title: Space Dock
 tagline: Stack and balance pieces to build a structure that reaches space.
 description: >-
-  Your aim is to stack modules into a tower by dropping each one onto the
-  structure below. Click, tap, or press Space to launch the first one. After
-  that, press Space to drop each module as it hangs in place.
+  Space Dock lets you build a tower of modules, setting each one on the
+  structure below it.
 
 
-  Each run is a tower of 15 modules. The score goes up with each module you
-  place.
+  Runs of 15 modules each. Score that rises with each module you place. Wind
+  pushing on the module. A gauge for the wind's direction and strength.
 
 
-  Wind pushes on the module, and a gauge shows which way it's blowing and how
-  strongly.
+  Launch the first module by clicking, tapping, or pressing Space. Then press
+  Space to drop each module from where it hangs.
 play:
   url: https://space-dock.gollysoda.com
   embeddable: true

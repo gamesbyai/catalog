@@ -2,25 +2,20 @@ slug: leviathan
 title: Leviathan
 tagline: Play a vengeful whale smashing whaling ships and snapping harpoon lines.
 description: >-
-  Leviathan turns the Moby-Dick hunt around and puts you in the whale's body.
-  You come up out of the deep to wreck whaling ships.
+  Leviathan turns the Moby-Dick hunt around and has you play the whale, rising
+  from the deep. The opening has you rowing a small boat past a large wooden
+  ship. Your jobs must finish before the hunters move in on you.
 
 
-  Your jobs are to smash the fleets, snap their harpoon lines and free the other
-  whales, all before the hunters close in on you. Your whale has health and air.
-  Your whale has to come up to breathe between attacks.
+  Whaling fleets to smash and harpoon lines to snap. Other whales to free.
+  Health and air for the whale.
 
 
-  The controls are WASD, Shift, Space and F. The keys cover diving, rising and
-  splashing.
+  Dive, rise and splash using WASD, Shift, Space and F. Surface to breathe
+  between attacks. Row for open water when something stirs in the deeps.
 
 
-  The game doesn't start you as the whale at all; you're rowing a little boat
-  past a big wooden ship.
-
-
-  Something is moving in the deeps, and you'd better row for open water. baumant
-  points to the imagery of Moby-Dick as the inspiration.
+  According to baumant, the imagery of Moby-Dick is the inspiration.
 play:
   url: https://leviathan.timothybauman.com
   embeddable: true

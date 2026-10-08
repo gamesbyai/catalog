@@ -2,23 +2,19 @@ slug: kurve-royale
 title: Kurve Royale
 tagline: Fly a trail-leaving craft and outlast rival pilots inside a shrinking dome.
 description: >-
-  Your pilot leaves a trail behind it, and you're flying inside a dome that
-  shrinks over time.
+  Pilots leave a trail behind them as they fly. The dome they fly in shrinks
+  over time. You can fly in full 3D, so you have to watch your height as well as
+  your direction.
 
 
-  Getting into a round is about as quick as it gets. You type a nickname and hit
-  Drop In, the drop starts right away, and once you've landed a countdown runs
-  out before you're allowed to move.
+  Survival rounds for each match. Lobbies of up to 64 players. Spectating the
+  rest of the round for knocked-out players. A fresh lobby to jump straight
+  into.
 
 
-  The flight is fully three-dimensional, so height matters as much as heading. A
-  and D turn you, while W and S climb and dive. Each lobby holds up to 64
-  players.
-
-
-  Each match is a survival round. Getting knocked out doesn't strand you,
-  either. You can stick around and spectate the rest of the round or jump
-  straight into a fresh lobby.
+  Type a nickname and drop in. You start the drop right away. After you land,
+  wait for the countdown to finish before you move. Turn with A and D, and use W
+  to climb and S to dive.
 play:
   url: https://kurveroyale.com
   embeddable: false

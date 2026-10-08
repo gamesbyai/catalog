@@ -2,37 +2,28 @@ slug: waterslide-game-sonnet-5-5
 title: waterslide game sonnet 5.5
 tagline: Play a waterslide-themed game built in one shot by an AI model
 description: >-
-  You're one of 13 riders lined up on a water slide, and you start the race in
-  eighth place. A countdown ticks down, then you steer left and right to hold
-  your line all the way down to the splash pool, where the first one in wins.
+  You're one of 13 riders on a water slide, starting in eighth place. After the
+  countdown, steer left and right to hold your line down to the splash pool,
+  where the first rider into the pool wins.
 
 
-  The ramps launch you on their own, but if you press jump in the short window
-  before the lip, the hop gets armed for big air and a speed boost when you land
-  cleanly.
+  Two kicker ramps and a large spiral on the main route. A gap shortcut that
+  needs the boosted jump, with failed jumps dropping into the gap. Rivals who
+  gamble on the shortcut too. Race mode, where a slip-off or missed landing
+  eliminates you. Practice mode, with no elimination and respawns at the last
+  checkpoint. Palettes and accessories for your rider, plus adjustable rival
+  difficulty. Best race and practice times kept on your device.
 
 
-  The main route has two kicker ramps and a large spiral. A shortcut across a
-  gap needs that boosted jump, though, and the rivals gamble on it too. The ones
-  who botch the jump really do fall short and drop into the gap.
-
-
-  Slip off the edge or miss a landing in Race mode and you're out, but Practice
-  mode skips elimination and puts you back at the last checkpoint.
-
-
-  Your best race and practice times stay saved on your device.
-
-
-  On a touch screen you drag a floating joystick to steer and tap a JUMP button.
-  You can choose palettes and accessories for your rider. Settings cover
-  quality, rival difficulty and handedness, which swaps which side the touch
-  controls sit on.
+  Ramps launch you on their own. Press jump in the short window before a lip to
+  arm a hop for big air and a speed boost on a clean landing. On a touch screen,
+  drag the floating joystick to steer and tap the JUMP button. Set handedness to
+  move the touch controls to the other side.
 
 
   Kurt Lietzau made it as a test of how AI models handle building a game in one
-  shot, and this version took a little over an hour of processing. The art and
-  sound are generated in code rather than loaded from files.
+  shot. The art and sound are generated in code, not loaded from files, and this
+  version took a little over an hour of processing.
 play:
   url: https://kjlkurt.github.io/waterslide-game-sonnet-5.5
   embeddable: true

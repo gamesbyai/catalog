@@ -3,21 +3,18 @@ title: Set Hunter
 tagline: Open card packs, trade singles, and finish animal card sets before time
   runs out.
 description: >-
-  The goal is to complete a set of animal-themed cards in as little time as you
-  can. You open packs, buy single cards, and sell duplicates for money. Quirky
-  NPCs show up with events you have to handle, and perks change how a run plays
-  out.
+  Complete a set of animal-themed cards in as little time as you can. You open
+  packs, buy single cards, and sell duplicates for money.
 
 
-  The game includes four sets: Home & Farm, Aquatic World, Desert, and African
-  Savanna. Each set has 5 cards. A run starts from the menu, and the game also
-  has a Skill Tree, a Codex, and a Leaderboard.
+  Four sets, from Home & Farm to African Savanna, with five animal cards each.
+  Quirky NPCs with events to handle. Perks that change how a run plays out.
+  Worldwide Ace Discoveries, hidden slots per set for rare finds shared across
+  the community. A Skill Tree, a Codex, and a Leaderboard.
 
 
-  Worldwide Ace Discoveries has a row of hidden slots for each set. It tracks
-  the rare finds that players share across the community. The creator built the
-  game to capture the tension of opening trading card packs and to turn it into
-  a short roguelike loop.
+  GuyGir1 built it to capture the tension of opening trading card packs and turn
+  that into a short roguelike loop.
 play:
   url: https://set-hunter-game.vercel.app
   embeddable: true
