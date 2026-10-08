@@ -4,13 +4,9 @@ tagline: Prep, cook, and serve through dinner rushes in a blocky diner, then pay
   the rent.
 description: >-
   Each night comes down to readying the kitchen, getting through the dinner
-  crowd, and covering the rent without the critic cooking you. The whole diner's
-  built from blocks, right down to the red booths and the timber floors. You
-  settle on a chef name and a color, then punch in for the shift.
-
-
-  In a game with this many jobs, it makes sense that the day-one lobby screen
-  hands you a checklist that's headed by ringing the bell.
+  crowd, and covering the rent without the critic cooking you. You settle on a
+  chef name and a color, then punch in for the shift. On day one, the first task
+  is ringing the bell.
 
 
   Before the doors open, prep, a word that really undersells the work, comes
@@ -20,13 +16,8 @@ description: >-
 
 
   Service kicks off once the doors open. Then you're reading tickets, cooking,
-  plating, and carrying the food out to the tables. Somewhere in the middle of
-  all that, there's the critic.
-
-
-  The controls are printed on the kitchen ticket itself, starting with WASD for
-  moving. Hold right click and let go to throw, although the ticket politely
-  asks you, once again, to leave the knives out of it.
+  plating, and carrying the food out to the tables. The critic shows up during
+  service. You move with WASD. Hold right click and let go to throw.
 play:
   url: https://tesana.com/play/576c9db9-d16a-4479-88d2-a99183fe1596
   embeddable: false

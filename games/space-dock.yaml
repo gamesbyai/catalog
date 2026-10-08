@@ -2,21 +2,17 @@ slug: space-dock
 title: Space Dock
 tagline: Stack and balance pieces to build a structure that reaches space.
 description: >-
-  A numbered module hangs from a cable above a dock platform, and the aim is to
-  drop it onto the structure below. Click, tap, or press Space to launch the
-  first one. After that, press Space to drop each module as it hangs in place.
+  Your aim is to stack modules into a tower by dropping each one onto the
+  structure below. Click, tap, or press Space to launch the first one. After
+  that, press Space to drop each module as it hangs in place.
 
 
-  Each run is a tower of 15 modules, and a counter in the corner panel tracks
-  how many you have placed. Every placed module adds 10 km to the altitude
-  readout, and the score goes up with each one. Three hearts sit in the same
-  panel.
+  Each run is a tower of 15 modules. The score goes up with each module you
+  place.
 
 
-  A wind gauge with a direction arrow shows which way the air is pushing and how
-  strongly. The backdrop is a daytime sky with clouds and a city skyline.
-  Buttons at the top corner open pause, a leaderboard, sound, help, and
-  settings.
+  Wind pushes on the module, and a gauge shows which way it's blowing and how
+  strongly.
 play:
   url: https://space-dock.gollysoda.com
   embeddable: true
@@ -55,7 +51,7 @@ media:
     - games/space-dock/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-10-02
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:vibejam-2026

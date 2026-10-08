@@ -3,9 +3,8 @@ title: The Underground
 tagline: Explore generated tunnels, open locked doors, and find artifacts before
   time runs out.
 description: >-
-  Each run starts with the clock at a specific 03:00:00, and you've got until
-  it ticks over to 05:00:00 to find what's hidden underground before time runs
-  out.
+  Each run starts with the clock at a specific 03:00:00, and you've got until it
+  ticks over to 05:00:00 to find what's hidden underground before time runs out.
 
 
   The tunnel network is procedurally generated, and the creator describes the
@@ -14,24 +13,14 @@ description: >-
   shared into your world too.
 
 
-  You carry three tools in numbered slots along the bottom of the screen. The
-  flashlight runs on a battery meter and its brightness changes with R, while
-  the camera is there for photographing evidence.
-
-
-  The crowbar starts with five pries, and the count of what's left sits right on
-  its slot.
-
-
-  Stamina and battery bars stay pinned to the left side of the screen, just
-  above the counter that tallies your points. Across from them, an objectives
-  panel logs how many objectives you've completed while a discoveries list keeps
-  your most recent finds. Pressing N pulls up a notebook.
+  You carry three tools. The flashlight runs on battery and its brightness
+  changes with R, while the camera is there for photographing evidence. The
+  crowbar starts with five pries. Pressing N pulls up a notebook.
 
 
   mythcitygames made it after riding subway trains around the world and always
-  wondering what's down those dark tunnels they passed. They wanted to find
-  out what lies down there, such as abandoned stations and old bunkers.
+  wondering what's down those dark tunnels they passed. They wanted to find out
+  what lies down there, such as abandoned stations and old bunkers.
 play:
   url: https://mcg-urbex.web.app
   embeddable: true
@@ -69,7 +58,7 @@ media:
     - games/the-underground/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-10-02
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:vibejam-2026

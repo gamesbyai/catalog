@@ -2,33 +2,26 @@ slug: the-bad-bunch
 title: The Bad Bunch
 tagline: Place monkey defenders to stop waves of bad bananas in a jungle last stand.
 description: >-
-  You're in charge of a troop of jungle monkeys, and your job is to line them
-  up along a winding dirt path so the waves of furious bananas never make it
-  to your city. The city starts on 100 health and your wallet starts at $200,
-  which covers four of the cheapest monkeys and not much else.
+  You're in charge of a troop of jungle monkeys, and your job is to line them up
+  along the path so the waves of furious bananas never make it to your city. The
+  city starts on 100 health and your wallet starts at $200, enough for four of
+  the cheapest monkeys.
 
 
-  The shop down the right side holds four monkeys. Basic costs $50, Ice is
-  $75, Flame is $150 and Lightning is a steep $225, though Lightning shows up
-  greyed out at the start. If you pick a monkey that's already on the path,
-  you can sell it or just deselect it.
+  The shop holds four monkeys. Basic costs $50, Ice is $75, Flame is $150 and
+  Lightning costs $225, and it is unavailable at the start. If you pick a monkey
+  that's already on the path, you can sell it or just deselect it.
 
 
-  Every level opens on a mission card, and the first one wants you to hold out
-  until Wave 20 in exchange for 3 gems and access to Level 2.
-
-
-  At least you can see trouble coming, since a countdown up top shows when the
-  next wave arrives and how many bananas are in it. During a run you can pause
-  or flip between 1x and 2x speed. There are also buttons to mute the sound or
-  go fullscreen.
+  Each level has a mission, and the first one asks you to hold out until Wave 20
+  for 3 gems and access to Level 2. During a run you can flip between 1x and 2x
+  speed.
 
 
   Beating any level pays out gems and opens up the next one in line.
 
 
-  Those gems go toward monkey upgrades on the main menu, so every cleared
-  mission feeds back into a stronger troop. Levels 3 to 8 have been added since.
+  Those gems go toward monkey upgrades. Levels 3 to 8 have been added since.
 
 
   A father and his 10-year-old son made it together, and it takes its
@@ -71,7 +64,7 @@ media:
     - games/the-bad-bunch/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-10-02
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:vibejam-2026

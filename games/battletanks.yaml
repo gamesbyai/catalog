@@ -7,9 +7,9 @@ description: >-
   let go to shoot, and the damage grows with the charge.
 
 
-  It all happens in a 3D arena where you drive a tank against other players
-  online. Your other two options are a spray cannon and salvo missiles. It's a
-  short list, and the laser is the odd one out.
+  You drive a tank against other players online in arena matches. Your other two
+  options are a spray cannon and salvo missiles. It's a short list, and the
+  laser is the odd one out.
 
 
   Hull and turret turn independently, so steering points the chassis while Z and
@@ -17,19 +17,18 @@ description: >-
   back to face forward.
 
 
-  Touch screens get a complete layout of their own. A left joystick drives and
-  turns the tank, a right knob sets the turret's angle, and a big fire button
-  handles shooting, including the hold-and-release laser.
+  Touch screens get a full control layout of their own. A joystick drives and
+  turns the tank, a knob sets the turret's angle, and a fire button handles
+  shooting, including the hold-and-release laser.
 
 
-  Tab opens a loadout panel mid-match, letting you swap chassis, turret,
-  mobility and colors without leaving the game.
+  Tab lets you swap chassis, turret, mobility and colors mid-match without
+  leaving the game.
 
 
-  Colossus and Vampire are among the chassis on offer. A readout lists HP,
-  speed, damage, fire rate and rotation for your build. With this many keys it's
-  a kind touch that H brings up a full controls reference at any time, and Esc
-  opens settings where you can remap keys.
+  Colossus and Vampire are among the chassis on offer. Press H at any time to
+  bring up a full controls reference, and Esc opens settings where you can remap
+  keys.
 
 
   MarcosBren31124 took the idea from Tanki Online, a browser game built around
@@ -78,7 +77,7 @@ media:
     - games/battletanks/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-10-02
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:vibejam-2026

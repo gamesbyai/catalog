@@ -3,16 +3,14 @@ title: Dungeon League
 tagline: Run a dungeon for sixty seconds and keep adventurers alive but nearly dead
 description: >-
   You score by keeping the adventurers alive, even though you're playing the
-  dungeon they've come to raid. A dead party pays you nothing, and neither
-  does one that walks out early. Your money comes from a group that's still
-  inside, still fighting and badly hurt when the sixty-second raid timer runs
-  out.
+  dungeon they've come to raid. A dead party pays you nothing, and neither does
+  one that walks out early. Your money comes from a group that's still inside,
+  still fighting and badly hurt when the sixty-second raid is over.
 
 
   You've got three ways to meddle with them, opening a door, spawning a monster
-  or firing a trap, and each one takes a single click or tap. The on-screen
-  hints tell you to tap a door to stall, a spawner to ambush and a trap to
-  wound.
+  or firing a trap, and each one takes a single click or tap. Tap a door to
+  stall, a spawner to ambush and a trap to wound.
 
 
   Once your monsters are out you can't call them back, and your one form of
@@ -26,8 +24,8 @@ description: >-
   standings update, and the bottom two dungeons get destroyed.
 
 
-  It's a ruthless little league, with a whole twenty dungeons at the start and
-  ten rounds to end up as the last one standing.
+  It's a ruthless little league, starting with twenty dungeons and ten rounds to
+  end up as the last one standing.
 
 
   norritt42 handled the game design and balancing, while according to them the
@@ -72,7 +70,7 @@ media:
     - games/dungeon-league/shot-2
 dates:
   added: 2026-10-01
-  updated: 2026-10-02
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:aibgj-4

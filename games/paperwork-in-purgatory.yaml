@@ -11,28 +11,24 @@ description: >-
   The database is the one thing here you can trust, and the souls' own claims
   can't be. A saint hiding a murder should be turned away, while a thief who fed
   the poor may get through. It's a game about reading documents and applying the
-  rules, wrapped in a creepy office-bureaucracy tone that suits, a bit too well,
-  a Purgatory where Hell is overcrowded and Heaven's HR department won't leave
-  you alone.
+  rules, set in a creepy office-bureaucracy version of Purgatory where Hell is
+  overcrowded and Heaven's HR department won't leave you alone.
 
 
-  Your booth is a grimy green pixel-art window with a monitor up top, buttons to
-  process a soul or check the database, a chalkboard holding the instruction
-  manual and, for some reason, a coffee maker.
+  You can process a soul or check the database, and the instruction manual is
+  there to read.
 
 
-  A run lasts seven days at the window, and the chalkboard keeps count of your
-  daily quota, starting at ten souls on day one. Make it through the whole week
-  and you're paroled, with the grim reward of a spot in the very line you've
-  been working.
+  A run lasts seven days at the window, with a daily quota that starts at ten
+  souls on day one. Make it through the whole week and you're paroled, with the
+  grim reward of a spot in the very line you've been working.
 
 
   Mistakes are tracked, and every three errors cost you one of your three lives,
   while losing all of them means you don't get fired, you get processed.
 
 
-  Morpheus Code made it for mobile screens. If you're playing in a browser, they
-  suggest setting it to about 50% screen size. According to the creator, AI
+  Morpheus Code made it for mobile screens. According to the creator, AI
   assisted with the graphics.
 play:
   url: https://morpheus-code.itch.io/paperwork-in-purgatory
@@ -68,7 +64,7 @@ media:
     - games/paperwork-in-purgatory/shot-2
 dates:
   added: 2026-10-01
-  updated: 2026-10-02
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:aibgj-4

@@ -9,23 +9,20 @@ description: >-
   search for the convoy.
 
 
-  Each run is a short extraction roguelite with a tidy three-step order to it.
-  You find a convoy, set up a torpedo attack and then slip away.
+  Each run is a short extraction roguelite played in three steps. You find a
+  convoy, set up a torpedo attack and then slip away.
 
 
   The convoy routes are procedurally generated, so you're chasing a different
-  path every time. You line up the shot through the periscope, where a bearing
-  readout counts around the full 360 degrees as the view turns. Down in the
-  corner, small panels show your depth, a danger level that shifts from Quiet to
-  Search, and how many tubes you have.
+  path every time. You line up the shot through the periscope.
 
 
   Switching between surfacing, periscope depth and running deep takes one
-  numbered button each, and the Ping and Fire buttons sit right beside them.
+  numbered button each.
 
 
-  The opening order on screen tells you to find the convoy and keep the wake
-  small, shorthand for not giving yourself away.
+  Your opening order is to find the convoy and keep your wake small, which means
+  not giving yourself away.
 
 
   The escorts come after you as soon as a torpedo's in the water, and from then
@@ -73,7 +70,7 @@ media:
     - games/silent-depth/shot-2
 dates:
   added: 2026-10-01
-  updated: 2026-10-02
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:vibejam-2026

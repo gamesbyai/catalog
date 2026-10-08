@@ -3,32 +3,17 @@ title: VibeCorps
 tagline: Type prompts, grow a startup, and guide it from solo founder to
   acquisition target.
 description: >-
-  A valuation bar at the top starts at $0 of $100.0K. Typing on the keyboard
-  fills a code buffer, and that typing earns you money. Under the code file, a
-  "vim main.js" progress bar counts up to 60.
+  Typing on the keyboard fills a code buffer, and that typing earns you money.
+  Your cash and monthly recurring revenue both start at $0.
 
 
-  Your cash and monthly recurring revenue both start at a humbling flat $0.
+  Your first purchase on the code tab is a Mechanical Keyboard for $80. It takes
+  you from 1 to 2 characters per keypress, and it makes prompts type 2.0 times
+  faster. A founder's first real money goes on a fancier keyboard.
 
 
-  Your first purchase on the code tab is a Mechanical Keyboard for $80. It
-  takes you from 1 to 2 characters per keypress, and it makes prompts type 2.0
-  times faster. A founder's first real money goes on a fancier keyboard.
-
-
-  Agents get hired from the F5 tab, and they show up in a panel on the right
-  that starts out empty, with your account on a Free plan capped at a modest 50
-  requests.
-
-
-  Five tabs run along the top, covering Code, Tickets, Market, GPU and Org.
-  Off to the left there's a slider that sets your Sell and Test percentages.
-  Above it all, a news ticker scrolls along, and its opening gag about Stack
-  Overflow traffic staying flat quarter after quarter sets the tone well.
-
-
-  A log at the bottom records what happens, and a cheekily named Next Vibe
-  button waits up in the top corner.
+  Agents get hired from the F5 tab, and your account starts on a Free plan
+  capped at 50 requests. A slider sets your Sell and Test percentages.
 
 
   compnski pitches the whole run as going from solo founder to AI-powered
@@ -75,7 +60,7 @@ media:
     - games/vibecorps/shot-2
 dates:
   added: 2026-10-01
-  updated: 2026-10-02
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:vibejam-2026

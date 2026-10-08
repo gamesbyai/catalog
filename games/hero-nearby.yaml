@@ -2,15 +2,9 @@ slug: hero-nearby
 title: Hero Nearby
 tagline: Run through a neighborhood as a developer and fix people's tech problems.
 description: >-
-  A developer with a laptop runs down a pixel-art Italian street in this 2D
-  endless runner, helping the neighbors with whatever tech trouble they've got.
-  Your score climbs in points, labeled pti, with a meter count for distance
-  tucked just under it, and both begin at zero and tick upward as you run.
-
-
-  Across the top sits a row of seven counters starting at x0, and the icons
-  show a printer, a person, two camper vans for some reason, tangled cables, a
-  purple bug and someone lying flat.
+  In this endless runner, you play a developer who runs around helping neighbors
+  with whatever tech trouble they've got. Your score climbs in points as you
+  run, and the distance you cover counts up alongside it.
 
 
   The humor goes after programmer stereotypes, like the old assumption that a
@@ -18,13 +12,8 @@ description: >-
 
 
   Then there's cable management, which the game treats as the enemy every
-  developer eventually has to face.
-
-
-  Orange-roofed pastel houses slide by as the street scrolls, along with a bell
-  tower, olive trees and a signpost cheerfully pointing toward Help This Way.
-  Everything starts from a big green Play button set right into that scenery,
-  and pressing it sends the little developer off at a run.
+  developer eventually has to face. Pressing Play sends the little developer off
+  at a run.
 
 
   __rockbiter took the idea from Informatici di Quartiere, an Italian non-profit
@@ -69,7 +58,7 @@ media:
     - games/hero-nearby/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-10-02
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:vibejam-2026

@@ -2,33 +2,25 @@ slug: 3-second-memory-maze
 title: 3-Second Memory Maze
 tagline: Memorize a maze route in three seconds, then find the exit in the dark.
 description: >-
-  A neon maze lights up for a few seconds, then sinks into darkness with only a
-  small glow left around where you're standing. During that preview your job is
-  to study the yellow route and its turn anchors. After that, you walk to the
-  exit from memory alone.
+  The maze shows for a few seconds, then goes dark. During that preview your job
+  is to study the route and its turn anchors. After that, you walk to the exit
+  from memory alone.
 
 
-  The first level, First forks, gives you a 3.2-second preview, which is oddly
-  generous for a game with three seconds in its name. A header up top counts
-  that preview down while also showing the level you're on and how many moves
-  you've made.
-
-
-  The campaign runs to 30 short levels, and you open each one from a level map.
+  The first level, First forks, gives you a 3.2-second preview. The campaign has
+  30 short levels.
 
 
   Every level hands you one route peek, a single forgiving look at the path once
-  the lights are out. There's also a button that replays the preview. Pause
-  freezes a run, Stop ends it, and a sound toggle sits beside them.
+  the lights are out. You can also replay the preview. Stop ends a run.
 
 
   You earn one to three stars per level depending on your speed and how many
-  moves you took, and the campaign keeps a running tally out of 90.
+  moves you took.
 
 
-  The Daily Challenge puts the same maze in front of everyone each day, with a
-  streak counter tracking how many days you've kept it going. Your best records
-  are saved locally.
+  The Daily Challenge puts the same maze in front of everyone each day. Your
+  best records are saved locally.
 
 
   You can move with the arrow keys or WASD, swipe on a touch screen, or tap the
@@ -77,7 +69,7 @@ media:
     - games/3-second-memory-maze/shot-2
 dates:
   added: 2026-09-30
-  updated: 2026-10-02
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:aibgj-4

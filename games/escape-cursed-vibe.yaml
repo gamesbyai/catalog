@@ -9,9 +9,8 @@ description: >-
 
 
   There are five stages, and your goal is to clear all of them and be the one
-  who escapes. They're called Star Gauntlet, Playtime Is Over, The Chaos
-  Divide, Polar Escape and Infernal Arena, and those names alone promise a
-  wild tour of themes.
+  who escapes. They're called Star Gauntlet, Playtime Is Over, The Chaos Divide,
+  Polar Escape and Infernal Arena.
 
 
   Before a run you type in a name of up to 16 characters, which the other
@@ -20,14 +19,7 @@ description: >-
   drop in right up until the run begins.
 
 
-  WASD or the arrow keys move you, Space jumps and the mouse looks around, which
-  keeps the controls about as lean as a dodging game can get.
-
-
-  The lobby is a bit of a neon show, with pink and cyan glowing against a dark
-  backdrop. Four player slots run across the top, with the empty ones marked as
-  waiting while the first one shows you as host. Each stage gets its own
-  numbered tile underneath.
+  WASD or the arrow keys move you, Space jumps and the mouse looks around.
 
 
   Speazed describes it as a dodge map where cursed friends race and only the
@@ -71,7 +63,7 @@ media:
     - games/escape-cursed-vibe/shot-2
 dates:
   added: 2026-10-01
-  updated: 2026-10-02
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:vibejam-2026

@@ -2,17 +2,15 @@ slug: turbo-kart-rally
 title: turbo kart rally
 tagline: Race colorful karts around tracks in a Mario Kart-style arcade racer.
 description: >-
-  A demo race plays behind the title, with karts lined up on a starting grid
-  between grandstands and sponsor banners. Press Enter or click to begin, then
-  choose one of eight racers, an engine class of 50cc, 100cc or 150cc, and how
-  many laps to run.
+  Press Enter or click to begin, then choose one of eight racers, an engine
+  class of 50cc, 100cc or 150cc, and how many laps to run.
 
 
   The race is against seven computer drivers on Palm Cove Circuit, about 2.1 km
-  long. The course has sweeping turns, an S-bend, a bridge across a lagoon, a
-  hairpin, 8 boost pads and 2 jump ramps. Hop into a drift and hold it through a
-  corner. The sparks shift from blue to orange to purple, and releasing gives a
-  bigger boost the longer you held.
+  long. The course has sweeping turns, an S-bend, a bridge across a lagoon and a
+  hairpin, plus 8 boost pads and 2 jump ramps. Hop into a drift and hold it
+  through a corner. Releasing the drift gives a bigger boost the longer you held
+  it.
 
 
   Item boxes hand out mushrooms, bananas, green and red shells, a star,
@@ -21,10 +19,8 @@ description: >-
   countdown ends gives a rocket start.
 
 
-  Racers differ in speed, acceleration, handling and weight. The screen shows
-  your position, lap, item roulette, minimap and speedometer, plus banners for
-  the final lap and for driving the wrong way. Music speeds up on the last lap.
-  Keyboard and gamepad both work.
+  Racers differ in speed, acceleration, handling and weight. Music speeds up on
+  the last lap. Keyboard and gamepad both work.
 play:
   url: https://bridge-mind.github.io/turbo-kart-rally
   embeddable: true
@@ -69,7 +65,7 @@ media:
     - games/turbo-kart-rally/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-10-02
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:github

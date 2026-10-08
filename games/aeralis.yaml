@@ -2,30 +2,17 @@ slug: aeralis
 title: Aeralis
 tagline: Fly and fight other players in a fast multiplayer third-person space shooter.
 description: >-
-  You're a hooded figure seen over the shoulder, running across a glowing blue
-  plain studded with crystals under a dark purple sky.
-
-
-  Your gun is the Nullifier, fired with the left mouse button through a
-  hexagonal reticle in the middle of the screen. Its counter shows 28 rounds
-  backed by an unlimited reserve, while the right mouse button aims down the
-  sights.
+  Your gun is the Nullifier, fired with the left mouse button. Its ammo has an
+  unlimited reserve, and the right mouse button aims down the sights.
 
 
   Getting around isn't limited to running, with jump, crouch and slide all
-  mapped to the keyboard. There's a whole lightning ability sitting on the F
-  key, separate from the gun. Reload and the map each have a key of their own
-  too.
+  mapped to the keyboard. A lightning ability is bound to the F key, separate
+  from the gun. Reload and the map each have a key of their own too.
 
 
-  A banner warns you about the next wave, and this one is bluntly named Damage,
-  dealing 60 damage against the 100 health you start with.
-
-
-  There's a lot of HUD packed onto one screen. A timer sits at the top center
-  between two kill counters and a rank marker, while a leaderboard panel in the
-  corner lists you as Player. For finding your way, a compass strip reads your
-  heading in degrees and a round minimap marks an exit point.
+  The next wave is named Damage, and it deals 60 damage against the 100 health
+  you start with. A minimap marks an exit point.
 
 
   duckocancode describes it as a fast multiplayer third-person shooter that
@@ -77,7 +64,7 @@ media:
     - games/aeralis/shot-2
 dates:
   added: 2026-10-01
-  updated: 2026-10-02
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:vibejam-2026

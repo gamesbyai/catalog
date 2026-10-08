@@ -9,25 +9,10 @@ description: >-
   You steer and aim with the mouse or touchpad, and your shots are there to
   shove rather than simply hit, because the goal is getting enemies onto that
   cloud. A click fires, and it's also what starts the round. Both sides begin
-  with four teammates, which is why the screen opens on 4 vs 4.
+  with four teammates.
 
 
-  A counter up top keeps track of how many teammates each team has left, with
-  cyan dots for one side and orange dots for the other. Down at the bottom, a
-  row of five round-attempt markers sits above a running total.
-
-
-  The arena itself looks like a candy shop exploded in it.
-
-
-  Big glossy blobs in magenta, green, yellow and purple rise all around you.
-  Underneath there's a curved purple floor ringed by glowing lines, while a dark
-  platform floats overhead.
-
-
-  Right click or Space brings up the menu. Esc lets the cursor out of the
-  game, a considerate escape hatch when your mouse is busy doing all the
-  flying. Both reminders stay printed in the corner of the screen.
+  Right click or Space brings up the menu. Esc lets the cursor out of the game.
 
 
   RomanShalabanov has been a web developer for more than 20 years and once
@@ -72,7 +57,7 @@ media:
     - games/fairy-arena/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-10-02
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:vibejam-2026

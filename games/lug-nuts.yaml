@@ -3,17 +3,16 @@ title: Lug Nuts
 tagline: Fix cars in first person to hit daily quotas, or the landlord takes your shop.
 description: >-
   A small-town garage is yours to run, and the customers want their cars fixed
-  before they blow their top. You work the shop floor in first person, with a
-  car hoisted onto the lift. Your tool kit's within easy reach.
+  before they blow their top. You work the shop floor.
 
 
   Your goal's to hit the daily quota three days in a row, or the landlord ends
   up with the garage.
 
 
-  Before you clock in, you put your name on the coveralls and settle on a color
-  for them. Then you pick a silly hat from six options, and somehow there's a
-  traffic cone on the same list as a top hat.
+  Before you clock in, you put your name on the coveralls and pick a color for
+  them. Then you pick a hat from six options, with a traffic cone on the same
+  list as a top hat.
 
 
   Holding down the left mouse button uses whatever tool's in your hand, and the
@@ -23,16 +22,11 @@ description: >-
   the throw.
 
 
-  E handles interacting with things and hopping into a car to drive, which is a
-  surprising amount for one key to cover.
+  E handles interacting with things and hopping into a car to drive.
 
 
   F honks or flips on the flashlight. Shift lets you sprint, and Space gets you
   off the ground.
-
-
-  Oddly enough, the hand-outlined 3D look keeps the mood light, even with the
-  rent looming.
 play:
   url: https://tesana.com/play/dc4ebebd-6b72-4bb4-96a4-895b38237238
   embeddable: false

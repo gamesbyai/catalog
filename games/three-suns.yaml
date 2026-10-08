@@ -8,29 +8,24 @@ description: >-
 
 
   Each anchor bends the planet's path, but a signal limit caps how many you can
-  place. With no stable orbit to rely on, staying alive comes down to watching
-  how the suns drag at the planet and answering with anchors placed at the right
-  moment.
+  place. Without a stable orbit to rely on, you have to watch how the suns pull
+  at the planet and place anchors at the right moment.
 
 
-  Touching a sun ends things on the spot, while the auras around them chip
-  away at your health. A health bar and a day counter sit in the corner,
-  keeping a blunt tally of how many punishing dawns you've lasted against your
-  best.
+  Touching a sun ends things on the spot, while the auras around them chip away
+  at your health.
 
 
-  Survival modes are there to help you adapt as conditions shift, and you swap
-  between Shield, Sleep and Observe on three numbered buttons.
+  Shield, Sleep and Observe are survival modes that help you adapt as conditions
+  shift, and you swap between them.
 
 
   Shield, for example, toughens the planet against a red sun's heat aura, though
   that protection has a price, since the risk from cold and chaos goes up. Space
-  triggers a focus ability that slows time, and there's a considerate
-  low-effects toggle on P too.
+  triggers a focus ability that slows time, and P toggles a low-effects option.
 
 
-  A quick survival lesson greets you at the start, and it's even kind enough to
-  offer a skip button.
+  A quick survival lesson plays at the start, and you can skip it.
 
 
   The setup draws on the three-body problem from orbital mechanics and on Liu
@@ -72,7 +67,7 @@ media:
     - games/three-suns/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-10-02
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:vibejam-2026

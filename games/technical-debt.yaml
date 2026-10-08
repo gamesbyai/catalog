@@ -3,15 +3,15 @@ title: TECHNICAL DEBT
 tagline: Juggle groceries, debt, and clutter for a family chasing a vacation,
   then restart.
 description: >-
-  The goal is to rack up 100,000 PALM Points before the family's debt closes
-  in, and reaching that number reveals who actually gets to go on the trip,
-  and whether anyone comes back.
+  The goal is to rack up 100,000 PALM Points before the family's debt closes in,
+  and reaching that number reveals who actually gets to go on the trip, and
+  whether anyone comes back.
 
 
   You're a parent whose employer, in a bitter twist, automated your job away
-  using work you helped train it to do. Unemployment won't cover the
-  household, but Vantage One is happy to step in, and every household need you
-  put on credit earns points toward a beach vacation package.
+  using work you helped train it to do. Unemployment won't cover the household,
+  but Vantage One is happy to step in, and every household need you put on
+  credit earns points toward a beach vacation package.
 
 
   Each purchase comes down to paying more for goods that show up reliably or
@@ -28,20 +28,15 @@ description: >-
 
 
   According to the creator, the first bankruptcy is meant to happen, and it's
-  there to show you how progression works. Hearing that up front softens things
-  a little in a game this bleak about money.
+  there to show you how progression works. It's a bleak game about money.
 
 
-  Everything plays out on a cheerful imitation of an old family computer, with a
-  CRT filter, 1-bit art and dark comedy running through all of it. You click or
-  tap between tabs for MailBox, BUYMORE, Haulu, Baylist, Vantage One and
-  Lessons. Red badges blink whenever mail is unread or an action is waiting on
-  you.
+  The game is dark comedy throughout. You click or tap between tabs.
 
 
-  For some reason the music comes from DEBTAMP, a jukebox that lives in its own
-  window you can drag around the screen. The menu bar handles music, sound
-  effects, CRT strength and reduced motion, and it also offers a full reset.
+  The music comes from DEBTAMP, a jukebox that lives in its own window. The
+  options cover music, sound effects, CRT strength and reduced motion, and
+  there's also a full reset.
 
 
   OblongOolong directed the design, did the editing and made the final calls,
@@ -89,7 +84,7 @@ media:
     - games/technical-debt/shot-2
 dates:
   added: 2026-09-30
-  updated: 2026-10-02
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:aibgj-4

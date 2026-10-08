@@ -2,27 +2,25 @@ slug: rift-warden
 title: Rift Warden
 tagline: Defend a rift or attack it in asymmetric tower defense against players or bots.
 description: >-
-  A starfield sits behind the start screen, where you type in a display name and
-  set your color with the little swatch next to it. Then you pick which side of
-  the fight you're on.
+  You type in a display name and pick a color before you play. Then you pick
+  which side of the fight you're on.
 
 
   As the Architect you build towers and hold the path, while the Attacker sends
   waves at those defenses to break the line.
 
 
-  Both roles get the same pair of buttons. Play 1v1 puts you in a match against
-  another person, and solo matches you against an AI instead. With a bot ready
-  on either side, you can try both roles even when nobody else is around.
+  Play 1v1 puts you in a match against another person, and solo matches you
+  against an AI instead. With a bot ready on either side, you can try both roles
+  even when nobody else is around.
 
 
   The menu also lists a Survival mode, and the goal there is to defend until the
   core falls.
 
 
-  Three tabs under the menu list open seats you can join, live matches you can
-  spectate and a leaderboard of high scores. Watching other people's matches is
-  a nice extra in a game built around two opponents.
+  You can join open seats, spectate live matches and check a leaderboard of high
+  scores. You can also watch other people's matches.
 
 
   taylordoubleu calls it asymmetric tower defense. They drew on balloon tower
@@ -63,7 +61,7 @@ media:
     - games/rift-warden/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-10-02
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:vibejam-2026

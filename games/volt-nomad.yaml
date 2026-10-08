@@ -8,17 +8,16 @@ description: >-
   spend.
 
 
-  That charge goes into five linked gear trees with 86 nodes between them, a
-  surprising amount of branching to fit into something this compact. Over time,
-  drones and automatic weapons start doing the clicking for you, with gatling
-  and rail mutations among the weapon options. Eventually you can have five
-  OVERLIMIT systems running at the same time.
+  That charge goes into five linked gear trees with 86 nodes between them. Over
+  time, drones and automatic weapons start doing the clicking for you, with
+  gatling and rail mutations among the weapon options. Eventually you can have
+  five OVERLIMIT systems running at the same time.
 
 
   Six beasts sit on the hunt map, and you can take them in whatever order you
-  like, while each one fights by its own rule. The cards spell those rules out
-  plainly (Gearmaw cracks its armor on every 12th click for a 4× hit) and even
-  name the kind of build each beast rewards.
+  like, while each one fights by its own rule. Each beast's rule is spelled out
+  (Gearmaw cracks its armor on every 12th click for a 4× hit), and each one
+  names the kind of build it rewards.
 
 
   Beat a beast and you inherit its core, which combines with the rest of your
@@ -87,7 +86,7 @@ media:
     - games/volt-nomad/shot-2
 dates:
   added: 2026-10-01
-  updated: 2026-10-02
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:aibgj-4

@@ -8,8 +8,8 @@ description: >-
   and lines up the smarter shot comes out ahead.
 
 
-  Spent pucks don't vanish after they land, so every old shot stays on the
-  board as one more thing for the next one to hit.
+  Spent pucks don't vanish after they land, so every old shot stays on the board
+  as one more thing for the next one to hit.
 
 
   Clearing the pegs is part of the job on every board. A turn doesn't pass the
@@ -23,16 +23,16 @@ description: >-
   two-player one.
 
 
-  Before a match you pick a level, and the Prism level shows a tidy little
-  note about its layout. It sets its pegs in diamond lanes locked to a grid,
-  evenly spaced, with openings that mirror each other.
+  Before a match you pick a level, and the Prism level comes with a short note
+  describing its layout. The Prism level sets its pegs in diamond lanes locked
+  to a grid, evenly spaced, with openings that mirror each other.
 
 
   swiftfoxsw wanted a simple, quick game that works well on a phone, so it was
   built with touch screens in mind. The design comes from Peggle and, before
-  that, from the Plinko board on The Price Is Right, of all places. This browser
-  version rebuilds their iPhone build for the web while keeping the same
-  turn-based ricochet board.
+  that, from the Plinko board on The Price Is Right. This browser version
+  rebuilds their iPhone build for the web while keeping the same turn-based
+  ricochet board.
 play:
   url: https://cannonclash.com
   embeddable: true
@@ -69,7 +69,7 @@ media:
     - games/cannon-clash/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-10-02
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:vibejam-2026

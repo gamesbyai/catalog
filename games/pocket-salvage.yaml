@@ -10,24 +10,16 @@ description: >-
   stands and switch to with E.
 
 
-  Scrap lies along the ground of a junkyard at night, with three bins on the
-  right for copper, rubber and steel. Your job is to get every piece into its
-  matching bin before the timer runs out. Up top, the HUD shows your score, time
-  left, how many pieces you've sorted and which tool you're holding.
-
-
-  There's some nice craft in the crane itself, since its cable bends as it moves
-  and the hook hangs below as a flat magnet plate.
+  There are three bins, one each for copper, rubber and steel. Your job is to
+  get every piece into its matching bin before the timer runs out.
 
 
   You choose rounds from a menu of twelve levels, and the later ones start out
-  locked. Level 1 is a calm night with just four pieces to sort and four
-  minutes on the clock.
+  locked. Level 1 has just four pieces to sort and four minutes on the clock.
 
 
   The game's own blurb describes five weather levels. P pauses and R restarts a
-  round. If you'd rather sort scrap in silence, music and sound effects each
-  have their own switch in the top bar.
+  round.
 play:
   url: https://pocket-salvage.web.app
   embeddable: true
@@ -69,7 +61,7 @@ media:
     - games/pocket-salvage/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-10-02
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:awesome-cc0

@@ -13,12 +13,11 @@ description: >-
   shuttle leaves.
 
 
-  Every kill leaves an XP gem, and each new level stops the timer while you
-  pick one of three cards. The Light Saber is always your core weapon, with
-  room for three arms and three mods, and every piece ranks up to Mk 5. The
-  arms run wide, covering a plasma shotgun, laser beam, fire trail, orbiting
-  orbs, drone, sentry turret, Tesla coil, radiation cloud, orbital strike and
-  cryo grenade.
+  Every kill drops an XP gem, and each new level stops the timer while you pick
+  one of three cards. The Light Saber is always your core weapon, with room for
+  three arms and three mods, and every piece ranks up to Mk 5. The arms run
+  wide, covering a plasma shotgun, laser beam, fire trail, orbiting orbs, drone,
+  sentry turret, Tesla coil, radiation cloud, orbital strike and cryo grenade.
 
 
   A boss shows up at the 2:00, 4:00, 6:00 and 8:00 marks, and since none of them
@@ -27,14 +26,13 @@ description: >-
 
 
   Each dead boss drops a gold pickup that drags all the gems across the map
-  straight to you. Medkits patch your hull back up by 28, and it starts at
-  100. Score comes from kills alone, with each one worth 8 points at intensity
-  1 but 140 by intensity 10.
+  straight to you. Medkits patch your hull back up by 28, and it starts at 100.
+  Score comes from kills alone, with each one worth 8 points at intensity 1 but
+  140 by intensity 10.
 
 
   Survive to 10:00 and the run is marked as extracted on a scoreboard saved in
-  your browser, under a callsign of up to 14 characters that you type on the
-  title screen.
+  your browser, under a callsign of up to 14 characters that you type.
 play:
   url: https://void-surge-survivor.grok.me
   embeddable: true
@@ -74,7 +72,7 @@ media:
     - games/void-surge/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-10-02
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:github

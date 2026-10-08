@@ -3,31 +3,29 @@ title: Escape From Xibalba
 tagline: Crawl through a procedural dark maze, light torches, steal relics and
   survive bosses.
 description: >-
-  You crawl through a dark maze in Xibalba, and the maze is procedurally
-  generated. Along the way you light torches, take relics and survive boss
-  fights. Each of those is supposed to bring you one step closer to a way out,
-  though the game's own blurb admits that exit may not exist, a bit of a bleak
-  hedge for something with Escape in its title.
+  You crawl through a maze in Xibalba, and the maze is procedurally generated.
+  Along the way you light torches, take relics and survive boss fights. Each of
+  those is supposed to bring you one step closer to a way out, though the game's
+  own blurb admits that the exit may not exist.
 
 
   You move with the arrow keys, and Z or X attacks. Tap it for a quick hit, but
   hold it down and you get a strong attack instead.
 
 
-  E reads a sign or opens a chest, ESC pauses, and the camera's yours to fiddle
-  with too, with R rotating it while plus and minus zoom in and out.
+  E reads a sign or opens a chest, and R rotates the camera while plus and minus
+  zoom in and out.
 
 
-  The title screen is ornate, with dark brick walls and rows of carved face
-  glyphs framing the key list. Under the name sits the line "The lords of
-  death are waiting." A single click gets you in.
+  The game's line is "The lords of death are waiting." A single click gets you
+  in.
 
 
   If you're curious how it's put together, the source code is linked on GitHub.
 
 
   fmatzdorf made it after always wanting to make a game. According to them, this
-  was the excuse they needed to finally just do it.
+  was the push they needed to finally go for it.
 play:
   url: https://xibalba.monkeyscript.com
   embeddable: true
@@ -70,7 +68,7 @@ media:
     - games/escape-from-xibalba/shot-2
 dates:
   added: 2026-10-01
-  updated: 2026-10-02
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:vibejam-2026

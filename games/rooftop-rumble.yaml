@@ -2,20 +2,17 @@ slug: rooftop-rumble
 title: Rooftop Rumble
 tagline: Blast rival neighbors off flooded rooftops into shark-filled water.
 description: >-
-  The title screen sits over a blurred, flooded suburb, where you type in a name
-  and choose Singleplayer, Host Private Match or Find Public Match. Next you
-  pick a mode and a cosmetic hat, then drop onto a low-poly neighborhood of red
-  and teal rooftops.
+  You can play Singleplayer, Host Private Match or Find Public Match. You pick a
+  mode and a cosmetic hat, then drop into the fight.
 
 
-  You fight with a leaf blower, of all things, and the goal is to blast your
-  rivals off the roofs and into the water below.
+  You fight with a leaf blower, and the goal is to blast your rivals off the
+  roofs and into the water below.
 
 
-  Down there, Gutter Sharks patrol the flood, and they're actually mutated
-  goldfish, an unlikely kind of predator. JordanHeightsX wanted the game to
-  feel instantly funny, and in the backstory those sharks started out as
-  escaped pets before leaf mulch clogged the drains.
+  Down there, Gutter Sharks patrol the flood, and they're mutated goldfish.
+  JordanHeightsX wanted the game to feel funny right away, and in the backstory
+  those sharks started out as escaped pets before leaf mulch clogged the drains.
 
 
   Besides the blower, you can hop from roof to roof, call in a bird attack and
@@ -31,10 +28,9 @@ description: >-
   points, though it's marked as frozen for multiplayer.
 
 
-  A stats bar tracks your wins and kills, and the hats unlock through those same
-  numbers. You start with a Green Cap, while the Top Hat takes a single win. The
-  Propeller and Pilon open up at 10 and 20 kills, while the Crown wants a whole
-  50.
+  Hats unlock through your wins and kills. You start with a Green Cap, while the
+  Top Hat takes a single win. The Propeller and Pilon open up at 10 and 20
+  kills, while the Crown needs 50.
 play:
   url: https://rooftop-rumble.fun
   embeddable: false
@@ -75,7 +71,7 @@ media:
     - games/rooftop-rumble/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-10-02
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:vibejam-2026

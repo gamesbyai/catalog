@@ -10,24 +10,24 @@ description: >-
   getting through one takes 3 to 6 minutes.
 
 
-  Your sonar does the seeing for you, since each ping marks treasure, mines and
-  larger creatures on the radar. Mines chain-explode, so you can fire torpedoes
-  to set off a minefield from a distance.
+  Each sonar ping reveals treasure, mines and larger creatures. Mines
+  chain-explode, and you can fire torpedoes to set off a minefield from a
+  distance.
 
 
   Salvaged parts are pretty much your currency during a run, buying engines,
   hull armor, bigger O₂ tanks, better sonar, and bays for torpedoes and decoys.
 
 
-  From Zone 3 on, you'll run into bosses, namely the Kraken, the Leviathan,
-  the Sentinel and finally Erebus, who gets the grand title Lord of the Abyss.
+  From Zone 3 on, you'll run into bosses, namely the Kraken, the Leviathan, the
+  Sentinel and finally Erebus, who gets the grand title Lord of the Abyss.
   Nothing but mines does them any real damage. Given that rule, you drop the
   holo decoy to lure a boss straight into a minefield.
 
 
-  There's a surprising amount of seafloor to cover, with seven biomes like whale
-  falls, lava rifts, shipwreck graveyards and jellyfish forests, plus currents
-  and seafloor storms.
+  There's a lot of seafloor to cover, with seven biomes like whale falls, lava
+  rifts, shipwreck graveyards and jellyfish forests, plus currents and seafloor
+  storms.
 
 
   Beat Erebus and extract to earn a final rank, after which endless mode lets
@@ -35,10 +35,9 @@ description: >-
   minutes.
 
 
-  On a touchscreen there's a virtual joystick with buttons, and it works in
-  portrait or landscape. The interface switches between English and Chinese, and
-  the title menu thoughtfully includes a Reduce Motion toggle next to sound and
-  music.
+  On touchscreens, you control it with a virtual joystick and buttons, and it
+  works in portrait or landscape. The game is available in English and Chinese,
+  and there's a Reduce Motion option alongside the sound and music settings.
 play:
   url: https://patrickstar-gogogo.itch.io/neon-abyss-salvage
   embeddable: false
@@ -79,7 +78,7 @@ media:
     - games/neon-abyss-salvage/shot-2
 dates:
   added: 2026-09-30
-  updated: 2026-10-02
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:aibgj-4

@@ -9,22 +9,11 @@ description: >-
 
 
   Press Space and you're off, steering with A and D while you hold W to boost
-  and S to brake.
+  and S to brake. C switches the camera.
 
 
-  The default camera looks straight down on the car, and it's a busy view for
-  something built on the fly. Crosswalks, traffic lights, rooftops, trees and
-  parked vehicles crowd in around each intersection. If you want a different
-  angle, C switches the camera.
-
-
-  Down the left edge there are two columns of icon buttons, four marked with
-  suns and moons on top and five with clouds and rain underneath.
-
-
-  Before you can drive, a loading bar counts off the first rows of city while
-  they're built. An audio toggle sits in the top corner, with the music credited
-  to StudioKolomna from Pixabay and the ambient sound to ZapSplat.
+  Before you can drive, the first rows of city get built. The music is credited
+  to StudioKolomna from Pixabay, and the ambient sound to ZapSplat.
 
 
   rameshvel had toyed with procedural generation over the years but never built
@@ -73,7 +62,7 @@ media:
     - games/racernaut/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-10-02
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:vibejam-2026

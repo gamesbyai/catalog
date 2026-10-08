@@ -9,15 +9,15 @@ description: >-
   out.
 
 
-  The title screen shows four sets: Home & Farm, Aquatic World, Desert, and
-  African Savanna. Each set has 5 cards. Start Collecting begins a run, and the
-  other buttons lead to a Skill Tree, a Codex, and a Leaderboard.
+  The game includes four sets: Home & Farm, Aquatic World, Desert, and African
+  Savanna. Each set has 5 cards. A run starts from the menu, and the game also
+  has a Skill Tree, a Codex, and a Leaderboard.
 
 
-  A Worldwide Ace Discoveries panel lists a row of hidden slots for each set,
-  all marked with question marks. It tracks the rare finds that players share
-  across the community. The creator built the game to capture the tension of
-  opening trading card packs and to turn it into a short roguelike loop.
+  Worldwide Ace Discoveries has a row of hidden slots for each set. It tracks
+  the rare finds that players share across the community. The creator built the
+  game to capture the tension of opening trading card packs and to turn it into
+  a short roguelike loop.
 play:
   url: https://set-hunter-game.vercel.app
   embeddable: true
@@ -53,7 +53,7 @@ media:
     - games/set-hunter/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-10-02
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:vibejam-2026

@@ -2,27 +2,16 @@ slug: word-find-boggle-challenge
 title: "Word Find: Boggle Challenge"
 tagline: Trace neighboring letters on a grid to spell words before the timer runs out.
 description: >-
-  The start screen shows the Word Find title and the Boggle Challenge subtitle
-  against a dark, blurry backdrop, with a best score and best level box above a
-  gold START GAME button.
-
-
   Once you start, you trace paths through a grid of letters to spell words,
   dragging or tapping from one letter to the next. A neighbor is any letter in
   one of eight directions, diagonals included, which gives each letter more ways
   to build a word than a grid that only connects up, down and sideways would.
   When a finished word is in the game's dictionary, it's accepted and scored by
-  how long it is.
-
-
-  Words you've already found won't score again, which is a sensible guard
-  against repeats padding your total.
+  how long it is. Words you've already found won't score again.
 
 
   Reaching the goal is how you level up. Words found in quick succession build
-  combos, and that's the only tip on the screen with an exclamation point, a bit
-  of drama for a word game. Tracking down the DW and TW tiles brings big
-  bonuses, the game says.
+  combos. Tracking down the DW and TW tiles brings big bonuses, the game says.
 
 
   Each round is short and timed, and it's over once the clock hits zero. Your

@@ -2,36 +2,30 @@ slug: ekeko
 title: Ekeko
 tagline: Bargain with a corrupted Andean deity by playing cards in a horror roguelite.
 description: >-
-  Little ceramic miniature cards are what you drag onto an altar tray, building
-  an offering for the Ekeko, an Andean god of abundance who's gone rotten. He
-  adds it up as chips plus card values, multiplied by your combos and relics,
-  and in each encounter you have to beat the amount he demands.
+  You drag cards onto an altar tray, building an offering for the Ekeko, an
+  Andean god of abundance who's gone rotten. He adds it up as chips plus card
+  values, multiplied by your combos and relics, and in each encounter you have
+  to beat the amount he demands.
 
 
-  The setting is the Alasitas fair, where the Ekeko once handed over a house,
-  a car, a diploma and a heart, which makes it unsettling that he's now come
-  to collect.
+  The setting is the Alasitas fair, where the Ekeko once handed over a house, a
+  car, a diploma and a heart, and now he's come to collect.
 
 
-  A run stretches over 3 acts with 5 rounds in each, and the debt keeps
-  climbing with every act. What happens when you come up short on a demand is
-  something the game won't tell you.
+  A run stretches over 3 acts with 5 rounds in each, and the debt keeps climbing
+  with every act. What happens when you come up short on a demand is something
+  the game won't tell you.
 
 
   Some combos are named right up front, like Ritual Pair, Full Table, Holy
   Trinity and Sacred Altar. Others, including Perfect Offering and the Grand
-  Rituals, are left for you to discover. There's also a cryptic thing called
-  the Dried Lamb hidden somewhere, and the only hint is that you'll understand
-  once you find it.
-
-
-  The art is painted dark and lit by candles, with the Ekeko shown as a grinning
-  ceramic figure piled high with tiny houses, banknotes, bread and a diploma.
+  Rituals, are left for you to discover. There's also a cryptic thing called the
+  Dried Lamb hidden somewhere, and the only hint is that you'll understand once
+  you find it.
 
 
   It's played with the mouse alone, and sessions are meant to be short.
-  Subtitles and color-blind friendly options are included, a considerate touch
-  for a debut.
+  Subtitles and color-blind friendly options are included.
 
 
   Ekeko is the first game from AdriverBuilds, a 20-year-old solo developer from
@@ -72,7 +66,7 @@ media:
     - games/ekeko/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-10-02
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:vibejam-2026

@@ -4,29 +4,21 @@ tagline: Fire shots with a single button and place each one with careful spatial
   judgment.
 description: >-
   Hit Start, nudge your aim with the left and right arrow keys, then click or
-  press Enter to fire. Each shot shoves blocks around a tall tower built from
-  colored cubes. Get three blocks of one color lined up and they clear away,
-  which means this shooter is quietly a color-matching game as well.
+  press Enter to fire. Each shot shoves blocks around the tower. Get three
+  blocks of one color lined up and they clear away, which means this shooter is
+  quietly a color-matching game as well.
 
 
   Blocks you push into the red zone cost you an out, and your third out ends the
   run.
 
 
-  There's a tidy readout in the corner, with your score next to a color count
-  of 4 and an out counter that starts at 0 of 3. Underneath it, the keys are
-  spelled out along with a note saying the player view turns by itself.
+  The player view swings around without any input from you. You can only shoot
+  from that player view, and an info line tells you when a shot isn't possible.
+  A Switch View button changes the view.
 
 
-  The camera orbits the tower, and the player view swings around without any
-  input from you, an odd thing to hand over in a game about aiming. You can only
-  shoot from that player view, but an info line tells you when a shot isn't
-  possible. A Switch View button changes the view, while another readout shows
-  which direction you're facing and the current state.
-
-
-  On a phone, large arrow buttons and a Shoot button sit on the screen in
-  place of the keys.
+  On a phone, large arrow buttons and a Shoot button take the place of the keys.
 
 
   gtmkprn calls it a one-button shooter where your sense of space and your focus
@@ -71,7 +63,7 @@ media:
     - games/towershot/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-10-02
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:vibejam-2026

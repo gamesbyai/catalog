@@ -2,29 +2,27 @@ slug: void-claim
 title: Void Claim
 tagline: Mine asteroids, upgrade your ship, and fight rivals in dangerous space zones.
 description: >-
-  The start screen asks for a callsign and a ship color from eight swatches,
-  then the Launch button connects you to a space you share with other players.
+  You pick a callsign and one of eight ship colors, then drop into a space you
+  share with other players.
 
 
-  Out there, you fly a ship fitted with drills and guns through asteroids
-  studded with colored crystals and gold. The tagline, Mine. Steal. Survive.,
-  sums up the whole plan in three words. You start in a safe area, mine, and put
-  what you earn into ship upgrades.
+  You fly a ship fitted with drills and guns through asteroids that hold
+  crystals and gold. The tagline, Mine. Steal. Survive., sums up the whole plan
+  in three words. You start in a safe area, mine, and put what you earn into
+  ship upgrades.
 
 
-  Further out, the zones turn into PvP territory, and of course that's where the
-  richest asteroids are waiting. Other players can attack you there, and when
-  you jettison cargo it scatters into individual pieces of loot that can be
-  picked up.
+  Further out, the zones turn into PvP territory, where the richest asteroids
+  are waiting. Other players can attack you there, and when you jettison cargo
+  it scatters into individual pieces of loot that can be picked up.
 
 
   Shields take incoming fire first, but any damage beyond what they absorb
   carries over to the hull.
 
 
-  NPC ships share the space too. A changelog on the start screen lists a
-  specific fix that stops NPCs from instantly grabbing back their own
-  jettisoned cargo. Under all the mining runs a story thread about something
+  NPC ships share the space too. NPC ships won't instantly grab back the cargo
+  they jettison. Under all the mining runs a story thread about something
   ancient stirring in the deepest void, and it hunts players as well.
 
 
@@ -63,7 +61,7 @@ media:
     - games/void-claim/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-10-02
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:vibejam-2026

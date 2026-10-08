@@ -7,28 +7,23 @@ description: >-
   buildings bring in.
 
 
-  You start with a single Town Hall on a small isometric patch of sand and
-  grass, plus a pile of coins to spend. The Build button opens the shop, where
-  you pick out homes, businesses and decor to place. Each building earns coins
-  over time, and you tap it when you want to collect them.
+  You start with a single Town Hall and a pile of coins to spend. You can pick
+  out homes, businesses and decor to place. Each building earns coins over time,
+  and you tap it when you want to collect them.
 
 
   Those coins go back into new buildings and into upgrades for each one you've
-  already got. Tapping a building also opens a small menu to check its info,
-  upgrade it, move it or sell it, so a badly placed tiki bar can get a second
-  chance.
+  already got. Tapping a building also lets you check its info, upgrade it, move
+  it or sell it.
 
 
-  Nothing on this island runs on a timer, and there's no way to fail at all, a
-  considerate choice for a game about building your own paradise.
+  Nothing on this island runs on a timer, and there's no way to fail at all.
 
 
-  A busy bar across the top keeps count of your coins, rare Shells, island
-  level, population, joy, income per minute and the current boost. Under it, a
-  goal line spells out your next target, such as a population number and a
-  coin cost for growing the island. Once your population is high enough, you
-  can upgrade the Town Hall, which lifts the island level, unlocks new
-  buildings and stretches the land from 9x9 out to 15x15.
+  Your next target is something like a population number and a coin cost for
+  growing the island. Once your population is high enough, you can upgrade the
+  Town Hall, which lifts the island level, unlocks new buildings and stretches
+  the land from 9x9 out to 15x15.
 
 
   Driftwood, shells and wild coconuts wash up along the shoreline over time.
@@ -36,12 +31,9 @@ description: >-
 
 
   There are 14 buildings across homes, businesses and decor, including beach
-  huts, coconut stands, tiki bars and a lighthouse, while a blue parrot named
-  Pip, cast as your island's familiar, wanders the beaches cheering you on.
-
-
-  The scene gets a warm golden hour day cycle, with clouds drifting overhead and
-  sailboats out at sea. Your progress saves automatically in the browser.
+  huts, coconut stands, tiki bars and a lighthouse, and a blue parrot named Pip,
+  cast as your island's familiar, wanders the beaches cheering you on. Your
+  progress saves automatically in the browser.
 
 
   Both the art and the music are generated in code. According to the creator,
@@ -90,7 +82,7 @@ media:
     - games/my-island/shot-2
 dates:
   added: 2026-09-30
-  updated: 2026-10-02
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:aibgj-3

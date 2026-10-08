@@ -1,22 +1,30 @@
 slug: rucksy
 title: Rucksy
-tagline: Explore a self-building haunted mansion with friends until one of you turns traitor.
-description: "When the house turns in Candlewake, you find out who at the table has secretly been working against you. Until then, you're all exploring a haunted mansion together.
+tagline: Explore a self-building haunted mansion with friends until one of you
+  turns traitor.
+description: "When the house turns in Candlewake, you find out who at the table
+  has secretly been working against you. Until then, you're all exploring a
+  haunted mansion together.
 
 
-  The mansion builds itself one room at a time as you explore, so the map grows under your feet. Along the way you draw Events, Items and Relics. You also roll bone dice, which is a fittingly creepy touch for a haunted house.
+  The mansion builds itself one room at a time as you explore, so the map grows
+  under your feet. Along the way you draw Events, Items and Relics. You also
+  roll bone dice.
 
 
-  You don't have to download anything or sign up for an account before the haunting starts.
+  You don't have to download anything or sign up for an account before the
+  haunting starts.
 
 
-  Everyone plays from their own phone, a sensible setup for a game built on secrets. The host opens a room, the others join with a code, and a TV can show the house to the whole table.
+  Everyone plays from their own phone. The host opens a room, the others join
+  with a code, and a TV can show the house to the whole table.
 
 
   If you're a few people short, AI investigators take the empty seats.
 
 
-  Alvin had board games in mind and asked AI to build them. Candlewake is the haunted-house one, an original game from Rucksy. It shares the site with a whole lineup of other worlds."
+  Alvin had board games in mind and asked AI to build them. Candlewake is the
+  haunted-house one, an original game from Rucksy."
 play:
   url: https://rucksy.fun/
   platforms:
@@ -52,7 +60,7 @@ media:
     - games/rucksy/shot-2
 dates:
   added: 2026-10-03
-  updated: 2026-10-03
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: form

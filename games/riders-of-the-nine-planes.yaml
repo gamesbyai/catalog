@@ -12,7 +12,7 @@ description: >-
   A stationary rider is vulnerable, so each run is a loop of riding,
   discharging, and riding again while you plan your route. The game begins as a
   roguelike dungeon crawl and grows toward a full RPG. Trainers can be reached
-  with T, and the title screen shows a roster of 96 mounts to look over.
+  with T.
 
 
   You can skip the deeper systems and smash around the dungeon, or keep one
@@ -68,7 +68,7 @@ media:
     - games/riders-of-the-nine-planes/shot-2
 dates:
   added: 2026-09-30
-  updated: 2026-10-01
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:aibgj-4

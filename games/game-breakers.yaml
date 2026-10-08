@@ -10,13 +10,12 @@ description: >-
 
   It is a multiplayer auto-battler for desktop and phone browsers, so once a
   fighter exists you watch rather than steer. Creation is open-ended: how a
-  fighter looks and fights depends on what you asked for, and since every
-  opponent grew out of someone else's idea, matches can turn out surprising.
+  fighter looks and fights depends on what you asked for, and every opponent
+  grew out of someone else's idea.
 
 
-  The creator invites players to try to break the game, which fits a design that
-  runs generated code directly in the simulation. The title makes the same
-  promise.
+  The creator invites players to try to break the game, and the generated code
+  runs directly in the simulation.
 play:
   url: https://gamebreakers.gg
   embeddable: true
@@ -50,7 +49,7 @@ media:
     - games/game-breakers/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-09-29
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:vibejam-2026
