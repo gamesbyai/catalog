@@ -2,19 +2,18 @@ slug: perihelion-arc
 title: Perihelion Arc
 tagline: Fly custom drones through time trial courses and upgrade them after every run.
 description: >-
-  You fly a custom drone around a time trial racing course set in the void. Each
-  flight is a race against the clock, and the goal is to beat your last time
-  while keeping control of a machine built for speed.
+  Race a custom drone around a time trial course set in the void. Each flight is
+  a race against the clock. Your goal is to beat your last time while keeping
+  control of a machine built for speed.
 
 
-  The creator says they enjoy the pairing of time trial racing and gear upgrades
-  in other games, and built this one around it with Three.js. It supports
-  multiplayer in desktop and phone browsers.
+  Upgrades after every run, for both the machine and your own flying. Collected
+  gear and your flying, feeding into each other. Progression as the focus, with
+  an RPG streak. Multiplayer support.
 
 
-  Progression is the focus, with an RPG streak. You upgrade the drone after
-  every run, and each one improves both the machine and your own flying, so the
-  gear you collect and the way you fly feed into each other.
+  CosminSerban10 says they enjoy the pairing of time trial racing and gear
+  upgrades in other games, and built this one around it.
 play:
   url: https://0x1b6f9003f7b31c9f127a77951c70bae228da7b6b-1776030150984.verse8.games
   embeddable: true

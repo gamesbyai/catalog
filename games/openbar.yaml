@@ -2,27 +2,23 @@ slug: openbar
 title: OpenBar
 tagline: Chat, flirt and play games with AI patrons in a 3D dive bar.
 description: >-
-  Walk into the dive bar with WASD, pick someone to bother and press E to start
-  talking. Every patron is run by AI, and they trade gossip, flirt, dare you
-  into games and keep track of how you've treated them.
+  Pick a patron at the dive bar and strike up a conversation. AI runs every
+  regular in the bar. TheNeighborhood is a persistent social sim set on a single
+  street with a single bar.
 
 
-  When you'd rather settle in, F lets you take a seat. Press Enter to type your
-  side of the conversation, hold the left mouse button to orbit the camera, and
-  hold the right one to steer. Esc walks you out of a conversation.
+  Regulars who trade gossip. Patrons who remember how you treated them. Flirting
+  and dares from the regulars. Games the regulars challenge you to. The night's
+  threads that come as gossip-style hints, such as a chill between two regulars
+  you're nudged to get closer to and figure out. Gossip that doesn't fade, with
+  old grudges quietly simmering. Character customization, or the default look.
 
 
-  TheNeighborhood is a persistent social sim set on a single street with a
-  single bar, where the gossip doesn't fade and old grudges keep quietly
-  simmering.
-
-
-  You can customize your own character or just stick with the default look. You
-  can also set the AI provider, endpoint and model yourself.
-
-
-  The night's threads come as gossip-style hints, such as a chill between two
-  regulars that it nudges you to get closer to and figure out.
+  Walk over with WASD and press E to start talking to a patron. Press Enter to
+  type your side of the conversation. Press F to take a seat. Hold the left
+  mouse button to orbit the camera and the right one to steer. Press Esc to walk
+  out of a conversation. Choose the AI provider, endpoint and model you want to
+  use.
 
 
   kingcyruscrypto wanted a space where AI characters can interact, and they

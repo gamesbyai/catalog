@@ -2,20 +2,16 @@ slug: claude-of-duty-vibezone
 title: "Claude of Duty : VibeZone"
 tagline: Fight other players in a battle royale shooter that runs in the browser.
 description: >-
-  Claude of Duty : VibeZone is a battle royale that plays in the browser. You
-  drop into a shared match with other players, fight them in a first-person
-  arena and try to be the last one standing.
+  A battle royale where you share the match with other players. You drop in and
+  fight the others.
 
 
-  It is described as a vibe-coded homage to Call of Duty Warzone, built with
-  Cursor and with Three.js for the 3D graphics, and it placed 131st of 945 at
-  Vibe Jam 2026. Matches work on desktop and on phones, so a round can start
-  from whichever device is nearby.
+  First-person fights in an arena. Winning by being the last player standing. A
+  playful tone throughout.
 
 
-  The whole thing is built around the idea that life is a battle royale, and it
-  keeps the tone playful rather than serious. It is a lighthearted take on the
-  Warzone style of combat, where the last player standing takes the match.
+  LouisLsvr describes it as a vibe-coded homage to Call of Duty Warzone. "Life
+  is a battle royale, let's have fun playing it," the creator writes.
 play:
   url: https://claudeofduty.xyz
   embeddable: true
@@ -50,7 +46,7 @@ media:
     - games/claude-of-duty-vibezone/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-09-29
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:vibejam-2026

@@ -2,24 +2,19 @@ slug: hero-nearby
 title: Hero Nearby
 tagline: Run through a neighborhood as a developer and fix people's tech problems.
 description: >-
-  In this endless runner, you play a developer who runs around helping neighbors
-  with whatever tech trouble they've got. Your score climbs in points as you
-  run, and the distance you cover counts up alongside it.
+  In this 2D endless runner, you play a developer who helps neighbors with their
+  tech trouble. Press Play to send the developer off at a run.
 
 
-  The humor goes after programmer stereotypes, like the old assumption that a
-  developer can fix anything, printers very much included.
+  Being expected to fix everything, printers included. Cable management, the
+  inevitable enemy of every developer. Programmer stereotypes, played for
+  laughs. Points that climb as you run, with distance counted alongside.
 
 
-  Then there's cable management, which the game treats as the enemy every
-  developer eventually has to face. Pressing Play sends the little developer off
-  at a run.
-
-
-  __rockbiter took the idea from Informatici di Quartiere, an Italian non-profit
-  that helps local communities with everyday digital problems. With a light,
-  joking touch, the game retells what the association does. The group itself
-  runs technology workshops and has even made educational video games.
+  __rockbiter got the idea from Informatici di Quartiere, an Italian non-profit
+  that helps local people with everyday tech problems. The group runs tech
+  workshops and has also made educational video games. The game retells that
+  work in a light, funny way.
 play:
   url: https://hero-nearby.vercel.app
   embeddable: true

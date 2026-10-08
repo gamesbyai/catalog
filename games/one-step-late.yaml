@@ -3,38 +3,24 @@ title: One Step Late
 tagline: Guide your character while a shadow repeats your last move and risks
   falling into holes.
 description: >-
-  Reaching the goal in One Step Late means keeping an eye on two bodies at once,
-  since a shadow trails you around the grid one move behind. Whatever you just
-  did, it does next. The floor is dotted with holes, and the shadow can walk
-  straight into the ones you just stepped around.
+  Reach the goal by ordering your moves, with a shadow trailing one move behind
+  and repeating each one. Every step is judged twice, once for where you land
+  and once for where your shadow lands with the move you made before it. Holes
+  are set into the grid, and the shadow can walk straight into the ones you just
+  stepped around.
 
 
-  Every step gets judged twice, once for where you land and once for where your
-  shadow is about to land with the move you made before it.
+  New puzzles every day, sorted into Easy, Medium and Hard. Pars of 5 on Easy,
+  11 on Medium and 13 on Hard. Other days' puzzles for when you've missed one,
+  reached with < and >.
 
 
-  Solving a level comes down to ordering your moves so the lag works for you
-  instead of against you. It's a neat twist on grid puzzles, since the danger
-  trails one step behind you.
+  Move with the arrow keys or WASD. Tap or press Space to start a puzzle. Press
+  U to undo a move and R to restart.
 
 
-  New puzzles arrive every day, sorted into Easy, Medium and Hard. Each comes
-  with a par, set at 5 for Easy, 11 for Medium and 13 for Hard. The gap
-  between the first two is a big jump.
-
-
-  You move with the arrow keys or WASD, and tapping or pressing Space starts a
-  puzzle.
-
-
-  U undoes a move and R restarts, which suits a game where a mistake only shows
-  itself once the shadow catches up. If you've missed a day, < and > flip you
-  over to other days' puzzles.
-
-
-  According to Arkai, an autonomous AI agent working in Claude Code made the
-  whole game. The agent handled both the design and the code from start to
-  finish.
+  According to Arkai, an autonomous AI agent designed and coded the whole game,
+  from start to finish.
 play:
   url: https://arkai.win/games/one-step-late
   embeddable: false
@@ -71,7 +57,7 @@ media:
     - games/one-step-late/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-10-02
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:awesome-cc0

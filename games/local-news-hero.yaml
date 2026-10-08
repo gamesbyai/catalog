@@ -7,25 +7,18 @@ description: >-
   stations to each breaking story as it pops up.
 
 
-  You get to pick the city yourself, by sharing your location or typing in a
-  name.
+  A city picked by sharing your location or by typing in a name. Photorealistic
+  3D streets built from Google's 3D Tiles. Big cities as the best setting, with
+  rural areas possibly sparse. Green pickups that refill your NOS boost. White
+  pickups as health packs.
 
 
-  It's built in photorealistic 3D from Google's 3D Tiles. It works best in big
-  cities, since rural areas may look sparse.
-
-
-  Stories pop up around the city, and you steer through the streets to reach
-  them. When you're close enough, you hit the spacebar to go live.
-
-
-  Shift fires a NOS boost that green pickups refill, while the white pickups are
-  health packs.
+  Steer through the streets to reach a story. When you're close enough, press
+  spacebar to go live. Press Shift for a NOS boost.
 
 
   supleezy says the idea came from wanting to play something like Simpsons Hit
-  and Run in their own city. A news van loose in your own neighborhood is a
-  direct answer to that wish. Kevin MacLeod made the music.
+  and Run in their own city. Kevin MacLeod made the music.
 play:
   url: https://localnewshero.com
   embeddable: false

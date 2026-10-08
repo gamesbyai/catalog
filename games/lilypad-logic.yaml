@@ -2,25 +2,20 @@ slug: lilypad-logic
 title: Lilypad Logic
 tagline: Guide a frog across a sinking pond, eating every fly before reaching home.
 description: >-
-  Hop a frog across a grid of tiles, eat every fly, then land on the gold home
-  tile. Home only counts after all the flies are eaten. A HUD above the grid
-  tracks hops and flies, and stage 2 starts at 0 hops and 0 of 2 flies.
+  Hop a frog across a pond where each tile type behaves differently. Eat every
+  fly, then land on the gold home tile. The gold home tile counts only after
+  every fly is eaten.
 
 
-  Tile types change how a move works. A plain lilypad sinks when you leave it. A
-  lotus pad holds for two landings before it sinks. A crumbling pad turns into a
-  rock wall after you step on it. Logs slide the frog in the direction of their
-  arrow, and rock blocks movement.
+  Ten stages with names and short hints, such as Double Back on stage 2. Plain
+  lilypads that sink when you leave them, and lotus pads that hold for two
+  landings before they sink. Crumbling pads that turn into rock walls after you
+  step on them. Logs that carry the frog along their arrows, and rock blocks
+  that stop movement. Field guide to every tile type.
 
 
-  The game has 10 stages. Each shows its name and a short hint above the board,
-  such as Double Back on stage 2. A field guide beside the grid lists every tile
-  type. Buttons toggle the music, switch the palette, and reset the stage.
-
-
-  The look is pixel art with bright green and gold tiles on a dark navy board.
-  The creator says the project started as a frog on a grid and grew into a
-  puzzle game with several mechanics, music and visual effects.
+  According to the creator, it started as a frog on a grid and grew into a
+  puzzle game with several mechanics, plus music and visual effects.
 play:
   url: https://lilypadlogic.pages.dev
   embeddable: true
@@ -53,7 +48,7 @@ media:
     - games/lilypad-logic/shot-2
 dates:
   added: 2026-10-01
-  updated: 2026-10-01
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:vibejam-2026

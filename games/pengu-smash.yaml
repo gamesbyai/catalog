@@ -2,28 +2,27 @@ slug: pengu-smash
 title: Pengu Smash
 tagline: Charge and clash with penguins to knock rivals off a crumbling hex ice arena.
 description: >-
-  Pengu Smash puts you on a crumbling hex ice arena as a penguin, charging and
-  clashing to knock rivals into the ocean before the platform gives way beneath
-  you. You pick a name and a role, then press Play, or use the Online, Create
-  Room and Join buttons to play with friends.
+  Pengu Smash has you play a penguin on a crumbling hex ice arena. You charge
+  and clash to knock rivals into the ocean before the platform gives way beneath
+  you.
 
 
-  Five roles are on the menu. Archer fires ranged Ice Arrows and can pierce a
-  line with Power Shot. Mage casts Frost Bolt, drops a Blizzard circle and can
-  Blink. Warrior leaps in with Fish Slap and Whirlwind. Tank shoves enemies and
-  places Ice Walls. Healer mends allies and lays down a Warm Aura.
+  Archer's ranged Ice Arrows and line-piercing Power Shot. Mage's Frost Bolt,
+  Blizzard circle and Blink. Warrior's leap-in Fish Slap and Whirlwind. Tank's
+  enemy shoves and Ice Walls. Healer's ally mending and Warm Aura. Parties built
+  around a tank, a healer and a damage dealer. 3v3 matches with the ice melting
+  after 60 seconds.
 
 
-  Clicking an enemy attacks it automatically from your role's range. Skills sit
-  on Q, W and E, with an ultimate on R that you aim by holding the key and
-  release to cast. Abilities cost mana, which refills slowly. A penguin is out
-  at 0 HP or when it falls in the water.
+  Pick a name and a role, then press Play. To play with friends, press Online,
+  then Create Room or Join. Click an enemy to attack it automatically from your
+  role's range. Use Q, W and E for skills, and hold R to aim your ultimate, then
+  release to cast it. Abilities cost mana, which refills slowly. A penguin is
+  out at 0 HP or when it falls into the water.
 
 
-  Parties are built around a tank, a healer and a damage dealer. In 3v3 matches
-  the ice melts after 60 seconds. The menu also lets you cycle through arena
-  themes, such as Frostbound Sanctuary. The creator says the music, water
-  sparkles and themes were all generated, with no assets and no build step.
+  Chiptune music, water sparkles and arena themes were all generated, according
+  to the creator, with no assets and no build step.
 play:
   url: https://pengusmash.com
   embeddable: true
@@ -68,7 +67,7 @@ media:
     - games/pengu-smash/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-10-01
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:vibejam-2026

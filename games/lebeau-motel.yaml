@@ -2,20 +2,18 @@ slug: lebeau-motel
 title: LeBeau Motel
 tagline: Race rivals to $10,000 in a shared motel by stealing, hustling, or gambling.
 description: >-
-  LeBeau Motel is a multiplayer action shooter about a race to $10,000 inside a
-  run-down motel. How you get there is up to you: steal from the other players,
-  hustle for cash or take a chance at gambling, as long as you get there first.
+  Reach $10,000 first to win the round in LeBeau Motel, a multiplayer action
+  shooter set in a run-down motel. Each round is a race against the other people
+  sharing the building. How you get there is up to you.
 
 
-  The creator, who built it with Claude Code in Three.js, describes it as a
-  blend of Habbo Hotel, Hotline Miami and GTA. That means the social hangout
-  feel of a virtual hotel, top-down-style violence and the crime-driven freedom
-  of an open city sandbox, all under one roof.
+  Theft from other players as one route to money. Hustles for cash as another
+  route. Gambling as a way to earn. Risky fights and quieter schemes.
 
 
-  Phones work too, and each round is a race against the other people sharing the
-  building. The money race has several routes, from risky fights to quieter
-  schemes, and whoever reaches the target first wins the round.
+  According to the creator, it blends the social hangout feel of Habbo Hotel,
+  the top-down-style violence of Hotline Miami and the crime-driven freedom of
+  an open city sandbox like GTA.
 play:
   url: https://motel.floorsjs.com
   embeddable: false
@@ -52,7 +50,7 @@ media:
     - games/lebeau-motel/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-09-29
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:vibejam-2026

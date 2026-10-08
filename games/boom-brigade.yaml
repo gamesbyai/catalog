@@ -2,42 +2,28 @@ slug: boom-brigade
 title: Boom Brigade
 tagline: Blast through nine run-and-gun missions across terrain you can destroy
 description: >-
-  Almost nothing in the ground here stays put once you start shooting. Dirt,
-  stone and wooden crates can all be blasted away, explosive barrels go off when
-  they're hit, and even armored bunkers collapse if you pour enough fire into
-  them.
+  Almost nothing in the ground stays put once you start shooting in this 2D
+  run-and-gun. Tunnel straight through a wall, set off an explosive barrel
+  beside a cluster of enemies, or crack open the armored bunker blocking your
+  path.
 
 
-  You can tunnel straight through a wall, set off a barrel beside a cluster of
-  enemies, or crack open the bunker that's blocking your path.
+  Destructible dirt, stone and crates. Explosive barrels that go off when hit.
+  Armored bunkers that collapse under enough fire. Nine run-and-gun missions
+  with hostages to free, bunkers to wreck and a flag to reach. A gunship boss at
+  the end of the ninth mission. Ten heroes, each with a different weapon and
+  special ability. Weapons from a shotgun and minigun to a flamethrower, sniper
+  rifle, grenade launcher and holy water sprinkler.
 
 
-  Each mission is a run-and-gun stage where you free hostages, wreck the bunkers
-  and make it to the flag. There are 9 of them, and the last one ends with a
-  gunship boss.
+  Free hostages to unlock heroes. Jump straight to any of the nine missions from
+  the start screen. Use the double jump and wall jump, and aim up or down while
+  firing. On mobile, use the on-screen touch buttons. Progress saves in the
+  browser, and you can download it as a file.
 
 
-  Freeing hostages is how you unlock heroes, and there are 10 of them in total.
-  Each of them carries a different weapon plus a special ability, with an
-  arsenal that runs from a shotgun and a minigun to a flamethrower, a sniper
-  rifle and a grenade launcher. The arsenal also includes a holy water
-  sprinkler.
-
-
-  Getting around takes a double jump and a wall jump, and you can aim up or down
-  while you're firing.
-
-
-  The levels are generated deterministically. You can jump straight to any of
-  the 9 missions from the start screen. Your progress is saved to a JSON file
-  you download, which you can load back with a button or by dragging it onto the
-  page, and the browser keeps its own copy automatically too.
-
-
-  If the default keys don't suit you, the Controls menu lets you rebind every
-  action with two keys each, and on mobile you can use the touch buttons on
-  screen. The whole game fits into a single HTML file. Its sound effects are
-  synthesized rather than recorded.
+  The whole game fits in one HTML file, and its sound effects are synthesized
+  rather than recorded. Levels are generated deterministically.
 play:
   url: https://boom-brigade.vercel.app
   embeddable: true

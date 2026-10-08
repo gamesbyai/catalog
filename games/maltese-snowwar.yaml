@@ -2,41 +2,29 @@ slug: maltese-snowwar
 title: maltese snowwar
 tagline: Fight snowball battles in a Maltese-themed remake of a classic Flash game
 description: >-
-  You press and drag one of your three Maltese to move it, then release to fling
-  a snowball at the nearest opponent.
+  Three Maltese take on a team of golden retrievers in a snowball fight. You
+  steer one Maltese at a time, and you can switch the dogs to an alternate Chibi
+  Pups cast. The game is offered in five languages.
 
 
-  A quick tap gives you a short toss, while holding longer charges up a long
-  throw. If nobody's in a clear shot, though, letting go throws nothing at all.
+  Retrievers, stunned by one hit and buried by a second. Snow forts that catch
+  balls, and snow piles where a dog can't be hit. Mid-match big snowballs that
+  give your team three big throws within ten seconds. Slower big balls that
+  shrink when a small ball hits them and shatter against each other. Solo
+  matches against Easy or Hard AI. Two-device matches with a friend. Teammates
+  you don't steer, set to Manual, Defend or Attack.
 
 
-  Your opponents are a team of golden retrievers. One hit stuns a dog and a
-  second one buries it, so the round ends once you've cleared every retriever.
-  After each shot your dog also has to stop and pack more snow before it can
-  throw again.
+  Press and drag a Maltese to move it. Release to throw at the nearest opponent.
+  Tap for a short toss. Hold longer for a long throw. If nobody's in a clear
+  shot, releasing throws nothing. After each shot, let your dog pack snow before
+  throwing again. Step out to a pile's rim before throwing. Walk onto or tap the
+  big snowball to grab it. The round ends once you've cleared every retriever.
+  Share the six-letter or QR code.
 
 
-  Snow forts block the balls that pass through them. A dog can even hide inside
-  a pile where it can't be hit, though it has to step out to the rim before it
-  can throw.
-
-
-  A big snowball turns up during a match, and you grab it by walking onto it or
-  tapping it. That gives your team three big throws within ten seconds. Big
-  balls fly slower, shrink when a small ball hits them and shatter against
-  another big one.
-
-
-  You can fight the AI on Easy or Hard, or play a friend on a second device by
-  sharing a six-letter code or a QR code.
-
-
-  Teammates you aren't steering can be set to Manual, Defend or Attack. The game
-  speaks five languages, and pressing M mutes the sound.
-
-
-  The game is a fan tribute to the 1998 Flash game SnowCraft. There's also an
-  alternate Chibi Pups cast you can switch to.
+  This is an unofficial fan tribute to SnowCraft, the 1998 Flash game. It is not
+  affiliated with the original authors.
 play:
   url: https://maltese-snowwar.grok.me
   embeddable: true

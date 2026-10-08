@@ -3,31 +3,22 @@ title: Cupid
 tagline: Shoot magic arrows to pair people with matching traits and restore love
   in a garden.
 description: >-
-  In Cupid Garden you play Cupid, firing magic arrows at people wandering a
-  garden to pair up the ones who share a matching trait.
+  You play Cupid and shoot magic arrows at people walking around a garden,
+  pairing up the ones who share a trait. Who you pair matters as much as where
+  your arrow lands, turning the shooter into a light puzzle.
 
 
-  Everyone you meet has three traits (hair, T-shirt and pants), and the goddess
-  Venus walks you through it at the start, pointing out that two people in the
-  same shirt color count as a match.
+  Hair, T-shirt and pants as three traits per person. Venus as your guide,
+  walking you through it at the start and noting that two people in the same
+  shirt color match. In the first stage, you have to save ten people. Stages
+  that get more chaotic than the one before. Runs last as long as you keep
+  restoring love. Arrow upgrades between stages, with each run building its own
+  mix of magical abilities. Experience points for leveling up.
 
 
-  Picking who to pair matters as much as landing the shot, turning a
-  first-person shooter into a light puzzle.
-
-
-  A run keeps going for as long as Cupid can keep restoring love, while each
-  stage gets more chaotic than the last. The first stage gives you ten people to
-  save. You also gain XP that levels you up.
-
-
-  Between stages you upgrade your arrows, so each run builds toward its own mix
-  of magical abilities. The goddess Venus acts as your guide.
-
-
-  DWowmuch wanted to make a simple roguelike FPS with multiplayer, with
-  matchmaking as its core mechanic, and says the project was also a chance to
-  explore vibe coding in a playful way.
+  DWowmuch wanted to make a simple roguelike first-person shooter with
+  multiplayer, built around matchmaking. According to DWowmuch, the project was
+  also a way to explore vibe coding in a playful way.
 play:
   url: https://cupid-sigma.vercel.app
   embeddable: true

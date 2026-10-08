@@ -3,36 +3,27 @@ title: open case
 tagline: Read evidence, spot contradictions, and answer six questions to close a
   homicide case.
 description: >-
-  You're an investigator handed a homicide file that's been reopened six months
+  You're an investigator handed a homicide file that was reopened six months
   after the sheriff closed it. Cole Vance, a winemaker's brother, washed up on
-  the Sonoma Coast in dive gear, and the sheriff ruled it an accidental
-  free-diving drowning.
+  the Sonoma Coast in dive gear, and the sheriff ruled his death an accidental
+  free-diving drowning. Your job is to confirm or overturn that ruling.
 
 
-  Your job is to confirm or overturn that ruling, and the 18 files hold
-  everything you need. There's a case briefing, a list of persons of interest,
-  coast photos, cellar logs, sale and alibi documents, and witness messages.
-  Each source only holds part of the story, so you cross-check the timeline and
-  hunt for the places where they contradict each other.
+  Marcus Vance, Cole's half-brother who runs the estate, named as prime suspect
+  from the start. The key stretch, from Cole's April 14 arrival at the Vance
+  estate to his body turning up on April 19. A signing date on April 22. Sticky
+  note with an HVAC anomaly, a service gate and a note to ask Tom. Casebook of
+  six questions, split between physical evidence and proof. Coast-first lead in
+  the briefing, against an official story blaming the water.
 
 
-  The briefing points you to the coast first, and the official story blames the
-  water.
-
-
-  The key stretch runs from Cole arriving at the Vance estate on April 14 to his
-  body turning up on April 19, with a signing date on April 22. A sticky note
-  has "HVAC anomaly", "service gate" and "ask Tom" written on it.
-
-
-  Marcus Vance, Cole's half-brother who runs the estate, is named as the prime
-  suspect from the start.
-
-
-  You commit your answers in the Casebook, six questions split between physical
-  evidence and proof. They ask what Cole died from, where he really died, what
-  the beach scene was, the fatal tell, who lied for Marcus and what Marcus's
-  motive was. Once every answer is filled in, you send off your final report.
+  Read all eighteen files: the briefing, the persons-of-interest list, coast
+  photos, cellar logs, sale and alibi documents, and witness messages. Each
+  source holds only part of the story, so cross-check the timeline and look for
+  places where they contradict each other. Answer the Casebook's questions on
+  what Cole died from, where he really died, what the beach scene was, the fatal
+  tell, who lied for Marcus and Marcus's motive. Once every answer is filled in,
+  send your final report.
 play:
   url: https://case.stephapp.com
   embeddable: true

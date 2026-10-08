@@ -2,21 +2,13 @@ slug: ophidian
 title: Ophidian
 tagline: Guide a growing snake around the board, eating food and avoiding your own tail.
 description: >-
-  Ophidian is Snake with the extras stripped away. You steer a snake around the
-  playfield, eat food to grow longer and avoid obstacles and your own body. A
-  run lasts until you make a mistake, whether that is an obstacle or your own
-  tail.
+  Ophidian takes Snake down to the basics and keeps the familiar mechanic. You
+  steer a snake around the playfield, and the run ends when you make a mistake.
 
 
-  Its README credits Claude with the build, and it is rendered with PixiJS. The
-  scope is small: one familiar mechanic, kept simple and easy to pick up in a
-  short session. It is a single-player arcade game in the browser.
-
-
-  Its main touch is a set of on-screen arrow keys built for mobile play, so
-  phones and tablets get a direct way to steer. The stripped-down presentation
-  keeps attention on movement and timing, and the snake gets harder to manage
-  the longer it grows.
+  Growth from each piece of food eaten. Obstacles and your own tail as the
+  hazards. On-screen arrow keys on mobile. Steering that gets harder as the
+  snake grows longer.
 play:
   url: https://ophidian.vercel.app
   embeddable: true
@@ -52,7 +44,7 @@ media:
     - games/ophidian/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-10-01
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:awesome-cc0

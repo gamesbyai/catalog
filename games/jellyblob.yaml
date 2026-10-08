@@ -3,38 +3,30 @@ title: JellyBlob
 tagline: Grow a wobbly jelly, trap rivals with your trail and go Supernova in a
   shared pond.
 description: >-
-  You start as a small jelly in a pond you share with other players online, and
-  you grow by eating glowing dew.
+  Start as a small jelly in a pond you share with other players online, and grow
+  by eating glowing dew. Every jelly leaves a trail behind it, and the game's
+  own advice is to cut other jellies off.
 
 
-  Every jelly leaves a glowing trail behind it, and touching someone else's
-  trail splats you. The game's own advice is to cut other jellies off.
+  Splats from touching someone else's trail. Supernova, seven seconds of extra
+  speed and pull, set off by a full Glow meter. Immunity to trails, and smaller
+  jellies swallowed on contact, during Supernova. Blue currents, faster when
+  ridden the right way and slower against them. Power bubbles for a magnet, a
+  shield or a turbo. Daily, weekly and run quests between rounds, plus a level
+  track and a cosmetics locker. The paid color unlock Color Shift.
 
 
-  When you're boxed in, you hop. A hop carries you over a trail, and vaulting
-  trails fills your Glow meter, along with close calls, splats and combos. Land
-  a hop on a much smaller jelly and it bursts flat.
+  Steer with the mouse, WASD, the arrow keys or a thumbstick. Hop with a click,
+  Space or the on-screen button. Hop over a trail when you're boxed in. Vaulting
+  a trail fills the Glow meter, as do close calls, splats and combos. Land a hop
+  on a much smaller jelly to burst it flat. Hold Shift or the right mouse button
+  to surge. Surging costs size, and the goo you shed becomes food for everyone
+  else.
 
 
-  A full Glow meter sets off Supernova, seven seconds of extra speed and pull in
-  which trails can't touch you and smaller jellies get swallowed on contact.
-
-
-  You can surge by holding Shift or the right mouse button, but it costs you
-  size, and the goo you shed is food for everyone else. Blue currents speed you
-  up when you ride them the right way and slow you down against them, and power
-  bubbles hand out a magnet, a shield or a turbo.
-
-
-  You steer with the mouse, WASD, the arrow keys or a thumbstick, and hop with a
-  click, Space or the on-screen button. Between rounds there are daily, weekly
-  and run quests, a locker of cosmetics and a level track, and one color, Color
-  Shift, is a paid unlock.
-
-
-  All of the code came from AI, steered by its creator through hundreds of
-  rounds of input and instructions. The game was built with one model first and
-  then rebuilt with another.
+  Its creator steered AI to write all of the code over hundreds of rounds,
+  feeding it input and instructions. The game was first built with one AI model
+  and then remade with another.
 play:
   url: https://jellyblob.win
   embeddable: false

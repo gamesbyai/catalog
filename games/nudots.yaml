@@ -2,49 +2,36 @@ slug: nudots
 title: NuDots
 tagline: Link same-color dots into chains, and close a loop to clear a color
   from the board.
-description: "You drag across neighboring dots of the same color, side to side
-  or up and down but never diagonally, and when you let go the whole chain
-  clears.
+description: "A puzzle game about clearing colored dots off a board. The real
+  payoff comes from closing a loop. Doing so wipes every dot of that color off
+  the board, and anything trapped inside the ring goes too.
 
 
-  The real payoff comes from closing a loop, which means ending your chain on a
-  dot that's already in it to make a ring of four or more. Doing that wipes
-  every dot of that color off the board. Anything trapped inside the ring goes
-  too, along with every dot elsewhere that shares its color.
+  Timed, Moves, Zen and Endless modes. Chain scoring, each dot worth 10 more
+  than the last. Loop scoring that doubles the whole chain, 500 points per dot
+  circled inside and 10 per other dot cleared. Shrink and Sweep power-ups,
+  costing one or two moves in Moves, one or three seconds in Timed, free in Zen
+  and none in Endless. Five board shapes, including a long, narrow 4 by 16. Best
+  scores per mode and board, achievements and lifetime stats.
 
 
-  Scoring leans hard toward long chains. Each dot pays 10 more than the one
-  before it, and closing a loop doubles the whole chain. On top of that, every
-  dot circled inside the ring is worth 500 points, while the other dots a loop
-  clears add 10 each.
+  Drag across neighboring dots of one color, side to side or up and down, never
+  diagonally. Let go to clear the chain. End your chain on a dot already in it
+  to close a ring of four or more. When the board locks up, use Shrink to remove
+  a dot you tap, or Sweep to clear every dot of one color.
 
 
-  There are four ways to play, and Timed gives you 60 seconds on a clock that
-  waits for your first touch before it starts ticking. Moves hands you 30
-  connections instead, while Zen drops the clock and the limit entirely and lets
-  you end the game whenever you've had enough.
-
-
-  In Endless, a rock lands every 10 connections and you break one by circling it
-  for 1,000 points.
-
-
-  When the board locks up, two power-ups can help. Shrink removes a single dot
-  you tap, while Sweep clears every dot of one color at once. In Moves they cost
-  one or two moves, in Timed they cost one or three seconds, and in Zen they're
-  free, while Endless has none.
-
-
-  You can pick from five board shapes, including a long, skinny 4 by 16, and
-  best scores are kept separately for every mode and board along with
-  achievements and lifetime stats. You can choose between a light and dark
-  theme.
+  Pick Timed for 60 seconds on a clock that waits for your first touch before it
+  starts ticking. Pick Moves for 30 connections. Pick Zen to drop the clock and
+  the limit entirely, then end the game whenever you've had enough. Pick Endless
+  for a rock every 10 connections, and circle a rock to break it for 1,000
+  points.
 
 
   NuDots is a remake of Dots, the classic iPhone game. According to Kevin
-  MacLeod, it was made with Claude, which already knew how Dots worked, so most
-  of the effort went into making it entertaining without the money and ad
-  mechanics. It's dedicated to the public domain under CC0."
+  MacLeod, the AI already knew how Dots worked, so most of the effort went into
+  making it entertaining without the money and ad mechanics. It is dedicated to
+  the public domain under CC0."
 play:
   url: https://danger.academy/NuDots/
   platforms:

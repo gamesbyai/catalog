@@ -3,20 +3,18 @@ title: Draw the Life
 tagline: Draw cards and steer a cartoon character through the ups and downs of a
   lifetime.
 description: >-
-  Draw the Life is a life-sim card game about one cartoon character's whole
-  lifetime. You draw cards that shape the character's journey and make choices
-  as events unfold, and the story of a life takes form one card at a time.
+  Draw the Life, a life-sim card game, has you guide one cartoon character
+  through their entire life. You draw cards that shape the character's journey,
+  one card at a time. You make choices as events unfold.
 
 
-  Its inspirations come from the tabletop: the character-building feel of D&D,
-  the card play of Magic the Gathering and the milestone-driven path of the Game
-  of LIFE. The creator says it was built with three AI tools, Codex, Claude Code
-  and Antigravity, on Three.js, and it ranked 188th of 945 at Vibe Jam 2026.
+  Good and bad turns, steered by the cards. A lighthearted take on life's
+  decisions, led by humor and charm. Cute, funny tone with a strategy bent
+  underneath.
 
 
-  The tone is cute and funny, with a strategy bent underneath. It is a
-  lighthearted take on life's decisions, where humor and charm lead and the
-  cards steer the character through the ups and downs of a lifetime.
+  Inspired by D&D's character building, Magic the Gathering's card play and the
+  milestone-driven path of the Game of LIFE.
 play:
   url: https://drawlife.eastfever.com
   embeddable: false
@@ -56,7 +54,7 @@ media:
     - games/draw-the-life/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-09-29
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:vibejam-2026

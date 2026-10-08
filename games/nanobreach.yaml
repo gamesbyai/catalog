@@ -3,37 +3,33 @@ title: NanoBreach
 tagline: Plan and execute tactical hacks in a 3D roguelike where action unfolds
   as you move.
 description: >-
-  In NanoBreach, a 3D roguelike that blends action and strategy, you plan out
-  tactical hacks while the action unfolds as you move.
+  Plan tactical hacks while the action unfolds as you move in NanoBreach, a 3D
+  roguelike blending action and strategy.
 
 
-  Josepho calls it a mix of Superhot, Commandos and a hack-style roguelike, and
-  you can spot each piece. The hacking theme comes from that older roguelike,
-  while the careful, squad-style planning comes from Commandos, so positioning
-  and timing get thought through before you commit to a move.
+  A mentor who walks you through the basics. Positioning and timing, weighed
+  before you commit to a move. Hacking from an older roguelike, with careful
+  squad-style planning from Commandos.
 
 
-  It opens with a tutorial where you follow a mentor around. The mentor's first
-  line admits you've got a reputation and aren't a rookie, then makes you
-  practice anyway.
+  Move with WASD and fire with J. Press R to hack and Space to advance the
+  mentor's dialogue.
 
 
-  Your starting kit is slim, with two hit points, room for five hacks and a mode
-  that begins on stealth.
-
-
-  You move with WASD and fire with J. R is your hack key. Space moves the
-  mentor's dialogue along.
-
-
-  Josepho is a fan of an old roguelike and set out to build a next-gen version
-  of it. They say it isn't a 3D port and that a lot was changed, with the
-  original working as inspiration rather than a blueprint.
+  Josepho calls it a mix of Superhot, Commandos and a hack-style roguelike. A
+  fan of an old roguelike, they set out to build a next-gen version. They say it
+  isn't a 3D port, that a lot has changed, and that the original works as
+  inspiration rather than a blueprint.
 play:
   url: https://nanobreach.questtracers.com
   embeddable: true
   platforms:
     - browser
+  controls:
+    - "WASD: move"
+    - "J: fire"
+    - "R: hack"
+    - "Space: advance dialogue"
 creator:
   name: Josepho
   handle: josepho

@@ -2,30 +2,23 @@ slug: mass-chaos
 title: Mass Chaos
 tagline: Grab, carry and deliver mass across a tilting arena without falling off.
 description: >-
-  You're piloting a character around an arena that works like a giant scale,
-  picking up cargo and hauling it back to your green home zone. Mass is your
-  score, so the heavier the load, the more it's worth.
+  You pilot a character around an arena that works like a giant scale, picking
+  up cargo and hauling it back to your green home zone. Your score is your mass,
+  and a heavier load is worth more. Heavy cargo tilts the arena and can make you
+  slide.
 
 
-  But heavy cargo also tilts the arena, and that can send you sliding. Every
-  step you take tips the arena's balance too, not just the cargo you're holding.
-  The game's slogan is "carry more and risk more," which describes that
-  trade-off.
+  Arena balance tipped by every step you take, as well as by the cargo you hold.
+  Solo, Free-for-All and Teams modes.
 
 
-  Along with grabbing, carrying and delivering, you can shoot, while the one
-  rule to keep in mind is a blunt don't fall off.
+  Shoot as you go, and keep the one rule in mind: don't fall off the arena.
 
 
-  Before you start, you type in a pilot name and choose Solo, Free-for-All or
-  Teams.
-
-
-  vahagn_bbjnyan had wanted to make a game for a long time, and this is the
-  first one they've built. Part of the reason was a sweet one, since they wanted
-  to show their kids that an idea can become something playable even without any
-  prior experience. They also hoped it would encourage the kids to build things
-  of their own.
+  vahagn_bbjnyan has wanted to make a game for a long time, and Mass Chaos is
+  the first one they've built. Part of the motivation was to show their kids
+  that an idea can become something playable, even without any prior experience.
+  They also hoped to encourage the kids to build their own things.
 play:
   url: https://mass-chaos.com
   embeddable: true

@@ -2,22 +2,17 @@ slug: camo-chameleon
 title: Camo Chameleon
 tagline: Blend into your surroundings with paint and stay hidden from the hunter.
 description: >-
-  If you're a survivor, the hunter is after you, and your job is to find a spot
-  and blend into it. You sample the colors nearby and paint yourself to match
-  them, so the spot you pick feeds into the paint you end up with.
+  If you're a survivor, the hunter goes after you, and your job is to choose a
+  spot and blend in. Surviving the hunt is the goal in this horror game, and the
+  hunter is the reason painting matters.
 
 
-  It's a horror game with a hunter at its center. Surviving the hunt is the
-  goal, and the hunter's the reason all that painting matters.
+  Your paint, matched to nearby colors you sample, based on the spot you pick.
+  Online play with others through Join Online Game, held until someone else
+  joins. Solo Practice, for going it alone, starting with the hunter right away.
 
 
-  Join Online Game is for playing with others, and it waits until someone else
-  joins. Solo Practice is for going it alone. It's the one that starts right
-  away with the hunter.
-
-
-  Survivors look around by dragging, while hunters lock the mouse with a click.
-  The two roles handle the mouse differently.
+  As a survivor, drag to look around.
 play:
   url: https://rosebud.ai/play/c5fa1ce2-c188-4ca1-9cb5-6fff46c19e1d
   embeddable: true

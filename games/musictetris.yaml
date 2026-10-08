@@ -2,23 +2,19 @@ slug: musictetris
 title: MusicTetris
 tagline: Stack falling blocks while the scenery and music shift over time.
 description: >-
-  In MusicTetris, the music and the background both change as your game goes on
-  and as time passes. Underneath that, you slide, spin and drop pieces into a
-  tall well to fill complete rows.
+  The music and background change as the game goes on and as time passes. In
+  this Tetris-style puzzle, you fill complete rows with falling pieces.
 
 
-  Your first piece is a straight bar of four blocks. A ghost preview shows where
-  the piece will land.
+  A tall well as the playing area. Ghost preview of where the piece will land.
 
 
-  Most of the work happens on the arrow keys, with left and right sliding the
-  piece, up rotating it and down easing it lower faster. Space slams it straight
-  to the bottom.
+  Press left and right arrows to slide the piece. Press up to rotate it. Press
+  down to move it lower faster. Press space to slam it straight to the bottom.
 
 
-  anshuldhawan001 made it as a playground for experimenting with Tone.js audio
-  and 3D graphics. The plan was to put all of that on top of a simple game
-  mechanic.
+  anshuldhawan001 built it to play with Tone.js audio and 3D graphics, layered
+  over a simple core mechanic.
 play:
   url: https://musictetris.anshuldhawan.com
   embeddable: true

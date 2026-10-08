@@ -2,18 +2,16 @@ slug: oyster-arcade
 title: Oyster Arcade
 tagline: Play four arcade games in a CRT cabinet and chase shared high scores
 description: >-
-  Play one of four arcade games packed into a single collection. Pick any game,
-  including Invaders and Carrier Defense, and each run is a short score chase:
-  play until it ends and see how your result compares.
+  Oyster Arcade lets you pick any of its arcade games and chase a score. Each
+  run is short: you play until it ends and see how your result compares.
 
 
-  The creator states it was built with Claude Code on an HTML5 Canvas, not a
-  separate game engine.
+  Invaders, a classic shooter-style game. Carrier Defense, a defense-themed
+  game. Four arcade games in one collection. Shared leaderboards for scores from
+  every game.
 
 
-  Leaderboards are shared, so scores from every game land in a common place. A
-  classic shooter-style title next to a defense-themed one gives the cabinet
-  some variety from game to game.
+  According to Oyster, the game was built without a separate game engine.
 play:
   url: https://arcade.oyster.to
   embeddable: true

@@ -2,23 +2,23 @@ slug: aero-frog-skybound
 title: Aero Frog Skybound
 tagline: Leap between floating islands as a frog and rescue stolen tadpoles from aliens.
 description: >-
-  The game starts on a sky level. You play a frog whose tadpoles were taken by a
-  UFO. Move with the keyboard, look with the mouse, and jump to reach islands
-  above and across the gaps.
+  Jump to islands above and across the gaps as a frog whose tadpoles were taken
+  by a UFO. The game starts on a sky level.
 
 
-  Each jump goes higher than the last, so levels use vertical space. Holding the
-  jump key gives a taller leap. Every level hides 4 tadpoles to collect, and the
-  game has 2 levels followed by a boss fight.
+  Vertical levels where each jump reaches higher than the last. Four hidden
+  tadpoles to collect in every level. Two levels, followed by a boss fight.
+  Destroying everything in your path, a push toward becoming something closer to
+  a machine. Your ending, decided through play by how you act across the levels.
 
 
-  How you act through the levels decides your ending. Destroying everything in
-  your path pushes the frog toward becoming something closer to a machine. The
-  choice is made through play.
+  Use the keyboard to steer the frog and the mouse to turn your view. Hold the
+  jump key to make a leap taller.
 
 
-  The design draws on Jumping Flash! 2 from the PS1. The creator lists Claude
-  (Sonnet 4.6) for code, and AI tools for art, music and sound effects.
+  The design draws on Jumping Flash 2, a PS1 game from 1996. According to the
+  creator, AI tools were used for the code, the art, the music and the sound
+  effects.
 play:
   url: https://devandreakira.itch.io/aero-frog-skybound
   embeddable: false

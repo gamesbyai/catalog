@@ -2,20 +2,17 @@ slug: jianghu
 title: jianghu
 tagline: Fight wuxia duels by building a deck and playing cards each turn.
 description: >-
-  In jianghu you fight wuxia duels with a deck of cards. The creator sums it up
-  as Slay the Spire meets wuxia, and that pairing is the draw. The structure is
-  a deck-building card battler, and the setting is the martial arts world of
-  wuxia and its wandering swordfighters.
+  You fight wuxia duels with a deck of cards. The creator says, "slay the spire
+  meets wuxia." This is a strategy game for one player.
 
 
-  It is a single-player strategy game that plays in a desktop browser or on a
-  phone, with Three.js rendering the duels. Codex, OpenAI's coding tool, was
-  used to make it, and it came 246th of 945 at Vibe Jam 2026.
+  Duels set in the martial arts world of wuxia. Wandering swordfighters as part
+  of the setting. A deck-building card battler.
 
 
-  You build the deck, then play cards from it each turn against your opponent.
-  That makes each duel a question of what went into the deck beforehand, and
-  which cards you choose to play and when.
+  Build your deck. Play cards from it on each turn against your opponent. The
+  deck you build beforehand and the timing of the cards you play both shape each
+  duel.
 play:
   url: https://jianghu-ascendant.pages.dev
   embeddable: true
@@ -52,7 +49,7 @@ media:
     - games/jianghu/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-09-29
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:vibejam-2026

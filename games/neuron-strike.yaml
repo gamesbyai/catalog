@@ -2,21 +2,16 @@ slug: neuron-strike
 title: Neuron Strike
 tagline: Shoot down enemies in space while answering quick mental quiz challenges.
 description: >-
-  Neuron Strike is a space shooter that also quizzes you. You pilot a ship and
-  fight off enemies while answering quick mental quizzes. You have to keep your
-  mind sharp in the middle of a fight, because reflexes and quick thinking both
-  count toward the final score.
+  A classic arcade-style space shooter where you pilot a ship and answer quick
+  mental quizzes in the middle of a fight.
 
 
-  The concept draws on airline pilot recruitment tests and psychomotor
-  assessments. The creator used Claude from Anthropic to build it, and the
-  single-player game ranked 359th of 945 at Vibe Jam 2026. It plays in the
-  browser as a classic arcade-style shooter.
+  Enemies to fight off. Reflexes and quick thinking both counting toward the
+  final score. A global leaderboard of scores from players around the world.
 
 
-  That makes it a relaxed way to practice coordination and attention, and a
-  different take on the shoot 'em up. Scores go to a global leaderboard, so you
-  can compare results with other players around the world.
+  Koarat Studios drew on airline pilot recruitment tests and psychomotor
+  assessments.
 play:
   url: https://neuronstrike.net
   embeddable: true
@@ -50,7 +45,7 @@ media:
     - games/neuron-strike/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-09-29
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:vibejam-2026

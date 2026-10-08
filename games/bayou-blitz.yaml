@@ -2,32 +2,23 @@ slug: bayou-blitz
 title: Bayou Blitz
 tagline: Collect crawfish through the bayou while dodging hungry gators.
 description: >-
-  Move with WASD or the arrow keys through a mall while a pursuer who likes you
-  far too much chases you around it. Escaping her isn't really the goal, because
-  you have to keep a Loneliness meter somewhere between 20 and 80.
+  Keep a Loneliness meter between 20 and 80 while a pursuer who is very attached
+  to you chases you around a mall. Escaping her isn't really the goal. Running
+  away makes you lonely, while getting caught makes her cling, so the chase is a
+  balance of staying close enough to her.
 
 
-  Running away makes you lonely, while getting caught makes her cling, so the
-  whole chase becomes a strange balancing act of staying just close enough.
+  Invincibility during a dash. Two minutes of survival to clear the mall. A
+  first level with an alt-fashion store, store islands and one-way escalators.
+  Ordinary mall-walkers as a hazard, since they get in your way and slow you
+  down. Four more levels, locked at the start, including a cemetery at midnight,
+  a goth club, a coffee shop and her apartment.
 
 
-  Shift sends you into a dash with invincibility frames. Space fires off a
-  power-up, which you pick up by walking over one of the pads on the floor.
-
-
-  If she does grab you, a STRUGGLE prompt appears, and you alternate A and D to
-  wriggle free.
-
-
-  The first level takes place in a mall, with an alt-fashion store, store
-  islands and one-way escalators. The ordinary mall-walkers count as a hazard
-  too, since they get in your way and slow you down, and you clear the level by
-  surviving for 2:00.
-
-
-  Four more levels start out locked. They're a cemetery at midnight, a goth
-  club, a coffee shop and her apartment. You pick a level with the left and
-  right arrows and press Enter to start it.
+  Move with WASD or the arrow keys. Press Shift to dash. Walk over a pad on the
+  floor to pick up a power-up, then press Space to fire it. If she catches you,
+  a struggle prompt appears. Alternate A and D to wriggle free. Choose a level
+  with the left and right arrows, then press Enter to start it.
 play:
   url: https://gogg.cloud
   embeddable: true

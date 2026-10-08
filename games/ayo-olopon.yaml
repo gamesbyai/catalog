@@ -2,18 +2,18 @@ slug: ayo-olopon
 title: Ayo Olopon.
 tagline: Play Ayo, the West African seed-sowing board game, in a 3D setting.
 description: >-
-  Ayo Olopon is a 3D digital version of Ayo, a traditional West African strategy
-  board game with deep roots in Nigerian culture. Players take turns on the
-  board, working through the classic strategy of the original, and the game
-  supports multiplayer so a match can be played against another person.
+  Ayo Olopon brings the board game Ayo into 3D as a digital version. Players
+  take turns on the board, one move at a time.
 
 
-  The project grew out of the creator's childhood memories of watching people
-  play Ayo. It aims to introduce the game to a new generation, treating it as a
-  way to learn about the culture as well as to have fun.
+  Multiplayer support for matches against another person. Classic strategy
+  carried over from the original game. A West African strategy board game with
+  deep roots in Nigerian culture.
 
 
-  The creator built it with Windsurf, and it runs on Three.js.
+  that_LaravelGuy grew this out of childhood memories of watching people play
+  Ayo. The aim is to bring the game to a new generation, as a way to learn about
+  the culture as well as to have fun.
 play:
   url: https://ayo-game-zeta.vercel.app
   embeddable: true

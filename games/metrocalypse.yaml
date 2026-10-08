@@ -2,29 +2,26 @@ slug: metrocalypse
 title: Metrocalypse
 tagline: Shoot zombies and run across rooftops in a shared, persistent city.
 description: >-
-  You gun down zombies and race from building to building across a packed city's
-  rooftops. The whole place is one map, 952 meters across, generated from a
-  fixed seed.
+  Metrocalypse puts you on the rooftops of a packed city, where you gun down
+  zombies and race from building to building. The whole city is one map, 952
+  meters across, generated from a fixed seed.
 
 
-  Steer with the mouse and WASD. Space jumps the gaps and holding shift sprints,
-  which fits a game Tim_Damasc pitches as zombie shooting with parkour.
+  Gaps to jump across between rooftops. A gun, a knife, grenades and a plain
+  stone to throw. Other players sharing the same rooftops. Persistent city, kept
+  between visits.
 
 
-  Left click fires your gun, V pulls out a knife and E throws a grenade, while
-  the mouse wheel flips between them for a full kit to carry across rooftops.
+  Steer with the mouse and WASD. Press Space to jump the gaps, and hold Shift to
+  sprint. Press left click to fire your gun. Press E to throw a grenade, and V
+  to pull out your knife. Use the mouse wheel to flip between them. Press F or
+  right click to throw a plain stone. Use Ctrl to crouch, and press P to open
+  the tactical map of the city.
 
 
-  You can also throw a plain stone with F or right click, alongside the
-  grenades. Ctrl crouches. P switches to a tactical map view of the city.
-
-
-  The city sticks around between visits and it's multiplayer, so you're sharing
-  those rooftops with other players.
-
-
-  Tim_Damasc had been hoping to build a multiplayer game on SpacetimeDB for some
-  time, and they point to Dying Light as the inspiration.
+  Tim_Damasc pitches it as zombie shooting with parkour, and had been hoping to
+  build a multiplayer game on SpacetimeDB for some time. They point to Dying
+  Light as the inspiration.
 play:
   url: https://metrocalypse.online
   embeddable: true

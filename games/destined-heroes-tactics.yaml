@@ -3,32 +3,23 @@ title: Destined Heroes Tactics
 tagline: Command a squad of unique heroes in turn-based battles won by tactics alone.
 description: >-
   Pick a battle format, then lead your squad of heroes across the battlefield
-  one turn at a time, placing each unit and choosing its action to beat the
-  other side.
+  one turn at a time. Place each unit and choose its action to beat the other
+  side, where every move is something you can reason through. Battles are won by
+  planning, not luck, since this lighter take on the tactical RPG is pitched as
+  pure strategy and tactics.
 
 
-  Battles are won by planning instead of luck, since the whole game is pitched
-  as pure strategy and tactics. It's a lighter take on the tactical RPG, where
-  careful positioning and reading your opponent count for more than random
-  rolls, so every move is something you can reason through.
+  Eight unique heroes, from spear carriers to an armored knight. Team building,
+  with each hero shaping your approach to a battle. Formats from two 8v8
+  matchups down to a 6v6 Rapid mode with smaller teams. A 4v4 Blitz with your
+  options cut right down. Classic, with both sides kept symmetrical. Chess, the
+  odd one out, a chess variant with a row of pawns in the battle. Careful
+  positioning and reading your opponent.
 
 
-  Each hero is unique, and the team you build changes how you approach a battle.
-  There are eight heroes, from spear carriers to an armored knight.
-
-
-  There are many ways to size a fight, from two 8v8 matchups down to a 6v6 Rapid
-  mode with smaller teams and a 4v4 Blitz that strips your options right back.
-
-
-  Classic keeps both sides symmetrical. The Chess format is the odd one out,
-  because it puts a row of pawns into the battle and turns the whole thing into
-  a chess variant. WillifordBlake drew on a love of chess alongside tactical
-  RPGs like Fire Emblem.
-
-
-  WillifordBlake invites feedback, bug reports and suggestions through a Discord
-  community.
+  WillifordBlake drew on a love of chess alongside tactical RPGs like Fire
+  Emblem. Through a Discord community, WillifordBlake welcomes feedback, bug
+  reports and suggestions.
 play:
   url: https://destinedstudio.com/destined-heroes-tactics
   embeddable: true

@@ -2,22 +2,23 @@ slug: mrr-battle
 title: MRR Battle
 tagline: Play cards as an indie hacker, fending off DDoS attacks and Hacker News roasts.
 description: >-
-  Press Quick Play to start a card battle themed on running an indie software
-  business. Each card shows a cost in R, a small lightning number, and a type
-  label such as Growth or Defense. You play cards to build revenue and fend off
-  attacks.
+  Play cards to build revenue and fend off attacks in a battle about running an
+  indie software business. Cards cost R and carry a type, such as Growth or
+  Defense.
 
 
-  Card text spells out the effects. Enterprise Deal adds 300 MRR immediately.
-  Multi-Cloud Setup stops DDoS and outage cards for 3 turns. Legal Team reflects
-  the next attack back at the opponent. AI Hype Cycle gives all players +2
-  hustle for the turn.
+  Enterprise Deal, an immediate 300 MRR. Multi-Cloud Setup, a 3-turn block on
+  DDoS and outage cards. Legal Team, a card that reflects the next attack back
+  at the opponent. AI Hype Cycle, +2 hustle for all players that turn. Threats
+  like Paid Ads, DDoS attacks and Hacker News roasts, all from indie hacker
+  life.
 
 
-  Threats in the deck include Paid Ads, DDoS attacks and Hacker News roasts, all
-  drawn from indie hacker life. Matches are played online against other people.
-  The menu also offers a Training Center, a leaderboard, and a sign-in. The
-  creator, an indie hacker for about ten years, made it so friends and family
+  Press Quick Play to start an online card battle against other players. Read
+  the card text to see what each card does.
+
+
+  MRRBattle, an indie hacker for about ten years, made it so friends and family
   could get that experience without the money.
 play:
   url: https://mrrbattle.com
@@ -52,7 +53,7 @@ media:
     - games/mrr-battle/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-10-01
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:vibejam-2026

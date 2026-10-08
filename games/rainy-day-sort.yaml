@@ -2,25 +2,20 @@ slug: rainy-day-sort
 title: Rainy Day Sort
 tagline: Pour and sort colored water between glasses in a calm, tactile puzzle.
 description: >-
-  Tubes hold stacked bands of liquid that need sorting. You pick a tube, then
-  pick a second one to pour into.
+  A set of tubes holds stacked bands of liquid that need sorting.
 
 
-  A few tubes start out frozen, though. Four neighboring moves unlock a frozen
-  tube, so it opens up once you've made moves in the tubes beside it.
+  A few frozen tubes at the start, each opened by four moves in the tubes beside
+  it. Undo for a pour that goes wrong. An SOS button. Level choice.
 
 
-  When a pour goes wrong, you can use Undo, and there's an SOS button too.
+  Start by picking a tube, then pick a second tube to pour into.
 
 
-  You can choose a level, start a new game or open the settings.
-
-
-  JoysomeStudios built it with Claude Code and Gemini, plus a computer science
-  degree that's about 25 years old. They were teaching themselves to vibe code
-  by actually doing it, after not writing code since around 2001. They also
-  wanted a cozy, tactile puzzle as an alternative to the ad-heavy,
-  clunky-looking games in app stores.
+  JoysomeStudios built it with AI coding tools and a computer science degree
+  about 25 years old. They had not coded since around 2001 and taught themselves
+  to vibe code by doing it. They wanted a cozy, tactile puzzle as an alternative
+  to ad-heavy app store games.
 play:
   url: https://rainy-day-sort.pages.dev
   embeddable: true

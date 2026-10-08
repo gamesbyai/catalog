@@ -2,30 +2,24 @@ slug: the-bad-bunch
 title: The Bad Bunch
 tagline: Place monkey defenders to stop waves of bad bananas in a jungle last stand.
 description: >-
-  You're in charge of a troop of jungle monkeys, and your job is to line them up
-  along the path so the waves of furious bananas never make it to your city. The
-  city starts on 100 health and your wallet starts at $200, enough for four of
-  the cheapest monkeys.
+  You lead a troop of jungle monkeys and place them along a path to stop waves
+  of furious bananas before they reach your city. Your city starts at 100
+  health, and your wallet starts at $200, enough for four of the cheapest
+  monkeys.
 
 
-  The shop holds four monkeys. Basic costs $50, Ice is $75, Flame is $150 and
-  Lightning costs $225, and it is unavailable at the start. If you pick a monkey
-  that's already on the path, you can sell it or just deselect it.
+  Basic, Ice, Flame and Lightning monkeys. A mission in each level, the first
+  one holding out until Wave 20 for 3 gems and access to Level 2. Gems from any
+  beaten level, spent on monkey upgrades. Each beaten level opening the next
+  one. Additional levels 3 to 8, added later.
 
 
-  Each level has a mission, and the first one asks you to hold out until Wave 20
-  for 3 gems and access to Level 2. During a run you can flip between 1x and 2x
-  speed.
+  Buy one of the four monkeys in the shop and place it on the path. Lightning is
+  unavailable at the start. Pick a monkey already on the path, then sell it or
+  deselect it. Switch between 1x and 2x speed during a run.
 
 
-  Beating any level pays out gems and opens up the next one in line.
-
-
-  Those gems go toward monkey upgrades. Levels 3 to 8 have been added since.
-
-
-  A father and his 10-year-old son made it together, and it takes its
-  inspiration from Bloons.
+  A father and his 10-year-old son made it together, and Bloons inspired it.
 play:
   url: https://thebadbunch.com
   embeddable: true

@@ -2,20 +2,21 @@ slug: pop-tiles
 title: Pop Tiles
 tagline: Find and pop sets of three matching tiles to chase a high score.
 description: >-
-  Pop identical tiles in a match-3 puzzler built around speed. Players scan the
-  board for sets of three identical tiles and pop them, one match after another,
-  trying to stay ahead of the line. Play continues without a fixed end, so each
-  run is about how long you can keep up.
+  Stay ahead of the line in this match-3 puzzler built around speed. Each run is
+  about how long you can keep up.
 
 
-  The pace is quick and the focus is on reflexes as much as pattern spotting.
-  Spotting a match fast matters more than planning many moves ahead, which gives
-  the familiar match-3 idea a score-attack feel.
+  Endless play with no fixed end. A quick pace, with reflexes as much a focus as
+  pattern spotting. Fast spotting of matches over planning moves ahead.
+  Score-attack feel on the familiar match-3 idea.
 
 
-  The creator saw an ad for a similar game, liked the concept, and built this
-  version from scratch so it would be free for everyone to play. It was made
-  with Cursor and Phaser.
+  Scan the board for sets of three identical tiles. Pop them one match after
+  another.
+
+
+  mazino213 saw an ad for a similar game, liked the concept, and built this
+  version from scratch so it would be free for everyone to play.
 play:
   url: https://pop-tiles.vercel.app
   embeddable: true

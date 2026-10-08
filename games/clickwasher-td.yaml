@@ -2,22 +2,20 @@ slug: clickwasher-td
 title: Clickwasher TD
 tagline: Place towers to defend a citadel and grow stronger through a research tree.
 description: >-
-  Clickwasher TD crosses tower defense with an incremental game, and the thing
-  you are defending is a citadel. You place towers to hold off incoming enemies,
-  decide where to build, hold the line against the attackers and spend what you
-  earn to strengthen your defenses.
+  You defend a citadel against incoming enemies. Clickwasher TD mixes tower
+  defense with an incremental game.
 
 
-  The creator, hamsteroforion, had recently discovered incremental games and
-  wanted to combine that interest with tower defense. They built it with Claude
-  Code, and mention also experimenting with Codex and Cursor along the way. The
-  single-player 3D result plays on phones as well as desktops and ranked 225th
-  of 945 at Vibe Jam 2026.
+  A research tree of long-term upgrades, unlocked over time. Small boost to the
+  citadel's defense from each unlock. Earnings to spend on stronger defenses.
 
 
-  The incremental side is a research tree. It holds long-term upgrades to
-  unlock, so progress builds over time, and each unlock makes the defense of the
-  citadel a little stronger.
+  Place towers where you want them, then hold the line against attackers.
+
+
+  hamsteroforion had recently found the incremental game genre and wanted to
+  combine that interest with tower defense. They also mention experimenting with
+  Codex and Cursor along the way.
 play:
   url: https://clickwasher-td.vercel.app
   embeddable: true
@@ -54,7 +52,7 @@ media:
     - games/clickwasher-td/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-09-29
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:vibejam-2026

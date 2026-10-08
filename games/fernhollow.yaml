@@ -2,33 +2,19 @@ slug: fernhollow
 title: Fernhollow
 tagline: Chop trees, smith at the anvil and level up in a low-poly village.
 description: >-
-  Click a tree to start chopping, which is your first task. Everything you do
-  earns XP, so even a single log pushes your total up, which seems like a smart
-  way to start small. After that, there's a golden arrow pointing you to your
-  next stop.
+  Gathering and crafting drive this game, set in a village by the sea.
 
 
-  The village square is stocked with things you can use, like a smithing anvil
-  and furnace, a chest for storage, market stalls and barrels. There's a
-  blacksmith hammering beside a glowing forge while the elder waits near the old
-  well, which seems like a sweet deal.
+  Smithing at the village anvil and furnace. A blacksmith and an elder in the
+  village. Storage in a chest, plus market stalls and barrels to use.
 
 
-  Health and your other stats sit in orbs tucked into the corner of the screen.
+  You start by clicking a tree to chop it down. You earn XP for everything you
+  do, even for a single log. A golden arrow then marks where to go next.
 
 
-  Your inventory lives in a tabbed panel on the side. Combat, skills, quests,
-  gear and settings each get a tab. For a game that starts you off chopping one
-  tree, that's a lot of tabs.
-
-
-  Put the chopping, smithing and XP together and you've got a game about
-  gathering and crafting.
-
-
-  Fernwisegames built it as a RuneScape-inspired skilling RPG you point, click
-  and grind through at your own pace. It's drawn in a low-poly, isometric style,
-  with the village set by the sea.
+  Fernwisegames made this skilling RPG. RuneScape inspired it. You play by
+  pointing and clicking, and you go at your own pace.
 play:
   url: https://tesana.com/play/b5cb0674-7ab5-407b-8fe3-244cb0f1a9b0
   embeddable: false

@@ -2,19 +2,13 @@ slug: pixel-assassin
 title: Pixel Assassin
 tagline: Kill enemies to take their weapons and survive endless pixelated levels.
 description: >-
-  In Pixel Assassin, every enemy you take down hands you a weapon. You face a
-  steady stream of enemies in this 3D action shooter, and the goal is to survive
-  endless levels as they keep coming.
+  Take down enemies and each one hands you a weapon. You are a pixel assassin in
+  this 3D action shooter, and the goal is to survive endless levels.
 
 
-  That makes your loadout depend on who you have taken down. Claude Code and
-  Three.js were the building blocks.
-
-
-  The pickup loop ties offense to progress: you cannot just wait out a fight,
-  because kills are how you get better gear to fight with. There is a strategic
-  side too, since choosing which enemies to go after, and when, affects how long
-  you survive the levels.
+  Enemies that keep coming in a steady stream. Better gear from kills, not from
+  waiting out a fight. Loadouts shaped by which enemies you have taken down.
+  Target choice and timing, a factor in how long you survive.
 play:
   url: https://pixel-assassin.vercel.app
   embeddable: true

@@ -2,37 +2,24 @@ slug: napless
 title: Napless
 tagline: Brawl as a toddler and race to grab the TV remote before nap time.
 description: >-
-  You're a toddler loose in a giant living room, and you've got 90 seconds to
-  get your hands on the TV remote and hold it before nap time wins.
+  You are a toddler loose in a giant living room with 90 seconds to grab the TV
+  remote and hold it before nap time arrives. Napless is a fast multiplayer
+  chaos game.
 
 
-  To get there you grab cookies, bonk the rival toddlers and fill a Chaos
-  meter shown as a percentage, and once it hits 100% you can climb the TV toys
-  up to the remote. The game's own tip tells you to spend the opening seconds
-  on snacks and easy bonks.
+  Plushie, a thrown toy with soft, squeaky knockback. Block Shotgun, a chunky
+  blast for close range. Diaper Bomb, usable only on a full Diaper meter, reset
+  after its stink cloud. Pop-up events like Roomba Rampage, with a robot vacuum
+  billed as a tiny tank at double speed for 8 seconds. Badges and a toddler
+  title for finished runs. A public leaderboard of fastest completion times, all
+  time and today. Private rooms with an optional room code and friend invites.
 
 
-  Toys double as your weapons, and there are three of them to swap between. A
-  plushie gets thrown for a soft, squeaky knockback, while the Block Shotgun
-  is a chunky blast for close range. The Diaper Bomb runs on your Diaper
-  meter, so it only works when that meter's full and resets it after letting
-  out a stink cloud.
-
-
-  Alongside Chaos and Diaper, the screen tracks your snacks, the clock and your
-  health, and events like Roomba Rampage can pop up, where the robot vacuum,
-  billed as a tiny tank, doubles its speed for 8 seconds.
-
-
-  The room is a whole 3D space you look around with the mouse while WASD moves
-  you. Click once to lock your aim, and from there it's bonking anything in
-  reach. Before a round you can pick a player name, type an optional private
-  room code and copy an invite to send to friends.
-
-
-  Finishing runs earns you badges and a toddler title. A public leaderboard
-  ranks the fastest completion times, with one tab for all time and one for
-  today.
+  Grab cookies, bonk rival toddlers and fill the Chaos meter. Once it hits 100%,
+  climb the TV toys up to the remote. The game's own tip says to spend the
+  opening seconds on snacks and easy bonks. Your toys double as weapons. Swap
+  between the three of them. Use WASD to move and the mouse to look around.
+  Click once to lock your aim, then bonk anything in reach.
 
 
   valeriogioia has a toddler at home and built the game from real life.
@@ -76,7 +63,7 @@ media:
     - games/napless/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-10-02
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:vibejam-2026

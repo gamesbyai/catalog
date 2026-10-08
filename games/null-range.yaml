@@ -3,16 +3,14 @@ title: Null Range
 tagline: Fly a first-person spacecraft and dogfight other pilots online
 description: >-
   In Null Range you dogfight other pilots online. You fly your ship through open
-  space and try to get enemy craft in your sights while staying out of theirs.
+  space and try to get enemy craft in your sights before they get you in theirs.
 
 
-  The creator points to Elite: Dangerous as a reference. Built with Cursor and
-  Three.js.
+  First-person flight. Action-oriented combat. Shooter-style aiming paired with
+  flight simulator handling.
 
 
-  The combat is action-oriented, pairing a shooter's aiming with a flight
-  simulator's handling, and every exchange comes down to putting the other ship
-  in your sights before it puts you in its own.
+  taylor_sntx points to Elite: Dangerous as a reference for this game.
 play:
   url: https://nullrange.com
   embeddable: false

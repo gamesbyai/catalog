@@ -2,17 +2,17 @@ slug: eyrie
 title: Eyrie
 tagline: Catch spirits, feed the shrine, and fend off the obelisk in co-op waves.
 description: >-
-  Fight off waves of enemies in this drop-in co-op action roguelike. Players
-  catch wandering spirits, carry them to a shrine and feed it, then turn to face
-  the obelisk that threatens the area. Each run alternates between gathering and
-  fighting, and other players can join a session in progress.
+  Fight off waves of enemies in this co-op action roguelike, where an obelisk
+  threatens the area.
 
 
-  It uses a party-style structure that recalls Guild Wars. It mixes action,
-  adventure, and shooter elements.
+  Runs split between gathering and fighting. Other players joining a session
+  already in progress. Party-style structure, reminiscent of Guild Wars. Action,
+  adventure and shooter elements.
 
 
-  The creator built it with Claude Code, and it uses Three.js for rendering.
+  Catch the wandering spirits and carry them to the shrine. Feed the shrine,
+  then turn to face the obelisk.
 play:
   url: https://playeyrie.com
   embeddable: true

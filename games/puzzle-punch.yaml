@@ -2,31 +2,25 @@ slug: puzzle-punch
 title: Puzzle-Punch
 tagline: Stack falling blocks in a 1v1 duel and use abilities to sabotage your rival.
 description: >-
-  Puzzle-Punch has you stacking falling blocks and clearing lines in your own
-  well while another player works theirs. You're both racing to post the bigger
-  score by the end of the match. It's Tetris turned into a straight one-on-one
-  fight, and the name fits it well.
+  Puzzle-Punch has you stack falling blocks and clear lines in your own well
+  while another player works theirs. Tetris turned into a one-on-one fight, with
+  both of you racing to post the bigger score by the end of the match. Each
+  match mixes clean stacking with choosing when to strike at the other player
+  and when to boost your own score.
 
 
-  On top of the familiar stacking, there are abilities the game calls spells.
-  Some of them get in your opponent's way and others help you push your own
-  score higher, so each match mixes clean stacking with choosing when to strike
-  at the other player and when to boost yourself instead. The spells get their
-  own how-to-play page.
+  Abilities called spells, some aimed at your opponent. Boost spells for your
+  own score. Practice mode for playing without a live rival. Matches against a
+  bot. Game search or friend invites.
 
 
-  You don't need a live rival to get going, since there's a practice mode and a
-  match against a bot. When you want a real person across from you, you can
-  search for a game or send an invite to a friend. You type in a name before any
-  of it.
+  Use the arrows to move, Up or X to rotate one way, and Z to rotate the other
+  way. Press Space to hard drop, C or Shift to hold, and Esc to return to the
+  lobby.
 
 
-  Use the arrows to move, Up or X and Z to rotate each way, Space to hard drop,
-  C or Shift to hold, and Esc to return to the lobby.
-
-
-  El_Perforator's team wanted a game that was both competitive and a puzzle,
-  according to the creator. They picked Tetris as the classic to start from and
+  According to the creator, El_Perforator's team wanted a game that was both
+  competitive and a puzzle. They picked Tetris as the classic to start from and
   added their own twists to make it a duel.
 play:
   url: https://puzzle-punch.com

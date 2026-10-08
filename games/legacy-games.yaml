@@ -2,31 +2,27 @@ slug: legacy-games
 title: legacy games
 tagline: Play a collection of twelve retro pixel art games in your browser.
 description: >-
-  The collection holds 12 pixel art games, and you pick whichever one you want
-  to play. The games range from defending the galaxy against alien waves to
-  clearing sci-fi dungeon floors.
+  You pick one of 12 pixel art games, from defending the galaxy against alien
+  waves to clearing sci-fi dungeon floors. Most of the others are side-scrolling
+  platformers and fighters.
 
 
-  The arcade corner has a vertical space shooter you fly with WASD and Space,
-  plus Flappy Chicken, where Space is the only key and you flap past obstacles.
-  A flapping chicken that also has to defeat bosses is a good joke on its own.
+  Underwater Diving and Top-Down Shooter, a deep-ocean survival game and a
+  twin-stick shooter. Flappy Chicken, with obstacles to flap past and bosses to
+  defeat. Two Gothicvania games, a haunted swamp and an undead graveyard.
+  Exploring caverns in Grotto Escape, cliff climbing in Magic Cliffs, and a
+  run-and-gun with wall-clinging in Warped Caves. Warped City, a cyberpunk
+  shooter across rooftops. Streets of Fight, a beat 'em up through city streets.
+  Tiny RPG Forest, a top-down RPG through enchanted woods.
 
 
-  Underwater Diving sends you deep to survive the ocean on WASD and Shift, while
-  Top-Down Shooter is a twin-stick game that puts moving on WASD and aiming on
-  the arrow keys.
+  Fly with WASD and Space in the vertical space shooter. Press Space to flap in
+  Flappy Chicken. Space is its only key. Use WASD and Shift in Underwater
+  Diving. Move with WASD and aim with the arrow keys in Top-Down Shooter. In
+  most of the other games, move with WASD and use Z, X or C for actions.
 
 
-  Most of the other games are side-scrolling platformers and fighters, played
-  with WASD to move and Z, X or C for actions. Grotto Escape has you exploring
-  caverns, the two Gothicvania games cover a haunted swamp and a graveyard of
-  undead, and Magic Cliffs is about climbing cliff faces. Warped Caves adds
-  wall-clinging to its run-and-gun, Warped City is a cyberpunk shooter across
-  rooftops, and Streets of Fight is a beat 'em up brawl through city streets.
-  Tiny RPG Forest is a top-down RPG through enchanted woods.
-
-
-  All the art comes from Ansimuz's Legacy Collection. Sound effects are
+  All the art comes from Ansimuz's Legacy Collection, and the sound effects are
   generated in the browser with the Web Audio API.
 play:
   url: https://humancto.github.io/legacy-games

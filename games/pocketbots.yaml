@@ -2,29 +2,22 @@ slug: pocketbots
 title: PocketBots
 tagline: Assemble a toy battle robot from scavenged parts and fight arena duels.
 description: >-
-  Pick a robot, or put a new one together from salvaged parts with Build-a-Bot.
+  Pick or build a robot with Build-a-Bot from salvaged parts for short arena
+  duels.
 
 
-  Then you send it into short duels in an arena. Every limb you bolt on adds
-  something to your loadout. Win a fight and you earn an upgrade to carry into
-  the next one.
+  Each bolted-on limb adding to your loadout. The built-in Base Unit, a readable
+  sample with a scan pulse head, core torso and boost dash legs. Open Circuit
+  Battles, for jumping into open matches. An upgrade for each fight won, carried
+  into the next.
 
 
-  The built-in Base Unit gives you a clear picture of how a loadout reads. Its
-  head carries a scan pulse, its torso holds a core and its legs give you a
-  boost dash.
+  Host a 1v1 and share the room code, or enter a friend's code. Use left mouse
+  for the revolver, right for the repeater.
 
 
-  Left mouse fires a revolver, while right mouse handles a repeater.
-
-
-  If you'd rather fight people, you can host a 1v1 and pass the room code along,
-  or type in a friend's code and join theirs. You can also jump into open
-  matches through Open Circuit Battles.
-
-
-  circa90x set out to make a Western take on Medabots Dual and Girls Mission.
-  They wanted one you could play without a Japanese translator.
+  circa90x set out to make a Western take on Medabots Dual and Girls Mission,
+  one playable without a Japanese translator.
 play:
   url: https://pokebots-vibejamv.netlify.app
   embeddable: true

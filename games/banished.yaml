@@ -2,20 +2,18 @@ slug: banished
 title: Banished
 tagline: Fly and fight in a six-degrees-of-freedom arena shooter with multiplayer.
 description: >-
-  Banished has no floor for you to stick to. It is a six-degrees-of-freedom
-  arena shooter, so you fly and turn freely in every direction, up and down
-  included, inside enclosed arenas, outmaneuvering opponents and shooting them
-  down in online multiplayer matches.
+  You fly through enclosed arenas with no floor. You outmaneuver your opponents
+  and shoot them down.
 
 
-  Its subtitle points to Forsaken 64, a fast free-flight shooter, as the clear
-  reference for the style of play. Built by AnarchyArcade with Claude Code on
-  PlayCanvas.
-
-
-  The art, sound effects and music are all generated, and they fill in around
-  levels built by hand. The arenas themselves were made in Hammer, the level
+  You move with six degrees of freedom and can turn in every direction, up and
+  down included. Online multiplayer matches. Arenas made in Hammer, the level
   editor from Half-Life 2.
+
+
+  AnarchyArcade built it. All of the art, sound effects and music is generated,
+  filling the space around hand-built levels. Forsaken 64, a fast free-flight
+  shooter, is the reference for how it plays.
 play:
   url: https://banished.smsithlord.com
   embeddable: true

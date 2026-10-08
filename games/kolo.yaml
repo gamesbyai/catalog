@@ -2,21 +2,22 @@ slug: kolo
 title: KOLO
 tagline: Decode words written in the Glagolitic script, solo or against other players.
 description: >-
-  KOLO turns the Glagolitic script, the alphabet historically used for Old
-  Slavic, into a code to crack. Each round hides a word, and you work it out by
-  reading and matching the ancient characters, alone or in multiplayer rounds
-  with other people, on desktop or on a phone.
+  KOLO turns Glagolitic, Old Slavic's historical alphabet, into a code to crack.
+  Each round hides a word you solve by reading and matching characters. It is a
+  puzzle, word and educational game.
 
 
-  The game draws on Old Slavic mythology and Slavic heritage, subjects the
-  creator felt were largely absent from modern games. The creator used Lovable
-  and describes the goal as making the study of history feel like winning a
-  round of a social game.
+  Solo and multiplayer rounds with other people. Old Slavic mythology and Slavic
+  heritage as source material. Progress through recognizing symbols and solving
+  puzzles.
 
 
-  You learn the script by playing it: progress comes from recognizing the
-  symbols and solving the puzzles, one hidden word at a time. It is a puzzle
-  game, a word game and an educational one all at once.
+  Learn the script by playing. Move on one hidden word at a time.
+
+
+  flereadri felt Old Slavic mythology and Slavic heritage were largely absent
+  from modern games. flereadri describes the goal as making learning history
+  feel like winning a round of a social game.
 play:
   url: https://kolo.fleresjourney.com
   embeddable: true
@@ -51,7 +52,7 @@ media:
     - games/kolo/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-09-29
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:vibejam-2026

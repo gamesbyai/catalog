@@ -2,32 +2,27 @@ slug: prime-time-panic
 title: prime time panic
 tagline: Run a TV production studio in a simulation that parodies prime-time media.
 description: >-
-  You're running a small TV station that starts with $50,000 in the bank and
-  nobody watching. Your first week asks you to hire at least one host or
-  technician, commission a show from the catalog, put a finished show into the
-  schedule, then advance the week. Weekly expenses are $500 even before
-  anything's on air, with zero income to offset them.
+  You run a small TV station that starts with $50,000 in the bank and nobody
+  watching. Weekly expenses of $500 apply even before anything is on air, with
+  zero income to offset them. The interface is in German.
 
 
-  Each of the seven days is split into morning, afternoon and primetime slots,
-  each with its own viewer multiplier. Mornings get x0.6 and afternoons x0.8,
-  while primetime jumps all the way to x2.
+  Seven days of morning, afternoon and primetime slots. Viewer multipliers of
+  x0.6 for mornings, x0.8 for afternoons and x2 for primetime. A talent agency
+  where you can search for new hires. Morale boosts like a pizza party (€800,
+  +12%), a company outing, a bonus for everyone (€8,000, +35%) and a mandatory
+  motivational talk (€200, +3%). News with silly parody headlines, such as one
+  about a magician whose assistant keeps vanishing at 8:15 pm.
 
 
-  You hire staff through a talent agency, where you can search for new hires.
-  You can lift the team's morale with things like a pizza party, a company
-  outing or a bonus for everyone, each with its own price and boost. The pizza
-  party costs €800 for +12% and the bonus runs €8,000 for +35%, while a
-  mandatory motivational talk buys a measly 3% for €200.
+  In your first week, hire at least one host or technician. Commission a show
+  from the catalog, put a finished show into the schedule, then advance the
+  week. Work toward goals that begin at your first 100 viewers and climb to
+  1,000 and then 10,000.
 
 
-  Goals start at your first 100 viewers, and they'll climb to 1,000 and then
-  10,000.
-
-
-  The news features silly parody headlines, like one about a magician whose
-  assistant keeps vanishing at 8:15 pm. The interface is in German. bimon
-  describes it as Game Dev Story meets MADtv.
+  bimon describes the game as Game Dev Story meets MADtv, naming both as its
+  points of comparison.
 play:
   url: https://prime-time-panic.com
   embeddable: true

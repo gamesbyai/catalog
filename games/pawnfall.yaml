@@ -2,21 +2,17 @@ slug: pawnfall
 title: Pawnfall
 tagline: Lead a squad of chess pieces through a roguelike run of tactical battles.
 description: >-
-  Pawnfall turns chess pieces into a roguelike squad. You build and manage your
-  army, take on tactical encounters one after another, and try to carry it as
+  Lead a squad of chess pieces through a roguelike run and try to carry it as
   far as it will go before the run comes to an end.
 
 
-  It draws on four influences: the overland travel and party management of
-  Wartales, the run structure of Slay the Spire, the escalating build-crafting
-  of Balatro and the movement rules of chess. The creator names Cursor as the
-  tool behind this Vibe Jam 2026 entry, which placed 168th of 945 and is
-  rendered in 3D with Three.js.
+  Army building and management. Tactical encounters, one after another. Variety
+  from one run to the next.
 
 
-  The pieces move the way you already know, which gives the tactics a readable
-  foundation, and the roguelike framing adds variety from one run to the next.
-  It is a single-player game played in the browser.
+  It draws on four influences: Wartales for overland travel and party
+  management, Slay the Spire for run structure, Balatro for escalating
+  build-crafting, and chess for its movement rules.
 play:
   url: https://pawnfall.vercel.app
   embeddable: true
@@ -50,7 +46,7 @@ media:
     - games/pawnfall/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-09-29
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:vibejam-2026

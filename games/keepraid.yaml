@@ -3,20 +3,20 @@ title: KeepRaid
 tagline: Build a fortress, defend your flag, and break into the enemy keep to
   capture theirs.
 description: >-
-  Each team builds its own keep before attacking the other one in KeepRaid, a
-  multiplayer take on capture the flag. A match moves between building defenses,
-  holding them against intruders, and tearing through enemy walls to reach the
-  flag and carry it home.
+  Teams face off in KeepRaid, a multiplayer take on capture the flag, where each
+  side has its own keep. Players shape the map, so keeps can look different.
 
 
-  The creator says it was inspired by King Arthur's Gold, a game they loved and
-  miss. Claude Code was the tool used to make it. Matches are played online.
+  Walls and layout you build as your defense. Defenses held against intruders.
+  The other team's structures as obstacles to break.
 
 
-  Players shape the map, so keeps can look different, with your walls and layout
-  as your defense and the other team's structures as the obstacles you have to
-  break. A match runs in three steps: build your keep, break the enemy's walls,
-  and take the flag.
+  Build your keep first. Break through the enemy's walls. Take their flag and
+  carry it home.
+
+
+  corysimmons123 says the game was inspired by King Arthur's Gold, a game they
+  "loved and miss."
 play:
   url: https://keepraid.com
   embeddable: false

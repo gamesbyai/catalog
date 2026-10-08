@@ -2,21 +2,19 @@ slug: palomitas
 title: Palomitas
 tagline: Play a pigeon who swipes food to stay alive.
 description: >-
-  In Palomitas you play a pigeon, and the only way to get food is to steal it.
-  It is a single-player 3D adventure where survival depends on eating, so a run
-  is a hungry scavenging loop: look for something edible, grab it and try to
-  keep yourself fed.
+  In Palomitas, you play a pigeon, and the only way to get food is to steal it.
+  Palomitas is the Spanish word for popcorn.
 
 
-  The creator says they wanted to try a completely vibe-coded project instead of
-  doing everything by hand, as they usually do. Cursor handled the building, it
-  runs on Three.js in the browser, and it ranked 368th of 945 entries at Vibe
-  Jam 2026.
+  A city pigeon as the lead character. Survival tied to eating. Adventure in 3D.
 
 
-  The premise is small and funny, casting a city bird as a scrappy thief. The
-  title is Spanish for popcorn, which fits a pigeon that spends the whole game
-  hunting for food scraps to survive.
+  Look for something edible, then grab it. Try to keep yourself fed.
+
+
+  lexandermorgan made it with an AI coding tool handling the building. "I wanted
+  to try a completely vibe-coded project rather than doing everything manually
+  like I usually do," the creator writes.
 play:
   url: https://palomitas.pages.dev
   embeddable: true
@@ -50,7 +48,7 @@ media:
     - games/palomitas/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-09-29
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:vibejam-2026

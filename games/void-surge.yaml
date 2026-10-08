@@ -3,36 +3,25 @@ title: Void Surge
 tagline: Steer a ship while its weapons fire on their own, then extract before
   four bosses arrive.
 description: >-
-  You're the lone survivor holding the extract pad on Station Helix-9, and all
-  you ever do is steer, because every weapon you carry aims and fires by itself.
+  You're the only survivor on the extract pad at Station Helix-9, holding out
+  until the shuttle leaves. Every weapon you carry aims and fires by itself. The
+  Light Saber is always your core weapon, with room for three arms and three
+  mods, and every piece ranks up to Mk 5.
 
 
-  A run lasts ten minutes, with intensity climbing one step each minute from 1
-  up to 10. In the final 60 seconds, enemies start showing up twice as fast with
-  each ten-second stretch, so the swarm gets a lot thicker right before the
-  shuttle leaves.
+  Intensity 1 to 10, one step each minute. Final-minute spawn rate, doubling
+  every ten seconds. Ten arm weapons, including plasma shotgun, laser beam, fire
+  trail, energy orbs, combat drone, sentry turret, Tesla coil, radiation cloud,
+  orbital strike and cryo grenade. Four bosses at 2:00, 4:00, 6:00 and 8:00.
+  Gold pickup from each dead boss, pulling every gem on the map. Score from
+  kills alone, 8 points at intensity 1 and 140 at intensity 10.
 
 
-  Every kill drops an XP gem, and each new level stops the timer while you pick
-  one of three cards. The Light Saber is always your core weapon, with room for
-  three arms and three mods, and every piece ranks up to Mk 5. The arms run
-  wide, covering a plasma shotgun, laser beam, fire trail, orbiting orbs, drone,
-  sentry turret, Tesla coil, radiation cloud, orbital strike and cryo grenade.
-
-
-  A boss shows up at the 2:00, 4:00, 6:00 and 8:00 marks, and since none of them
-  leaves when the next one arrives, falling behind on a kill means fighting
-  several of them together.
-
-
-  Each dead boss drops a gold pickup that drags all the gems across the map
-  straight to you. Medkits patch your hull back up by 28, and it starts at 100.
-  Score comes from kills alone, with each one worth 8 points at intensity 1 but
-  140 by intensity 10.
-
-
-  Survive to 10:00 and the run is marked as extracted on a scoreboard saved in
-  your browser, under a callsign of up to 14 characters that you type.
+  Steer with WASD or arrow keys, or drag anywhere on a phone or tablet. Kills
+  drop XP gems. Level-ups stop the clock while you pick from three cards. Walk
+  over medkits to patch your hull. Bosses stay when the next arrives, so falling
+  behind means fighting several at once. Survive to 10:00 to mark the run
+  extracted on a browser-saved scoreboard.
 play:
   url: https://void-surge-survivor.grok.me
   embeddable: true

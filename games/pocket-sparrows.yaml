@@ -2,24 +2,22 @@ slug: pocket-sparrows
 title: Pocket Sparrows
 tagline: Toss food to sparrows, pet them, and dress them in tiny hats.
 description: >-
-  Click or tap anywhere to throw food to the sparrows. Click or tap a bird
-  itself to pet it. Newly met sparrows may flee at first, but they can come to
-  trust you over time.
+  A cozy game about feeding and watching sparrows. Days pass in the game.
 
 
-  Each sparrow is generated with its own name, stats and personality quirks.
-  Right-click one to open its profile. Happy birds puff up.
+  Generated sparrows, each with its own name, stats and personality quirks.
+  Happy birds that puff up. Different foods sold in an evening shop. Small hats
+  to put on your favorite birds. New foods and areas unlocked across in-game
+  days. No fail states. Automatic saving in your browser.
 
 
-  Days pass in the game, and an evening shop sells different foods. Progressing
-  through the days unlocks new foods and new areas. You can also put small hats
-  on your favorite birds.
+  Click or tap anywhere to throw food. Click or tap a sparrow itself to pet it.
+  Newly met sparrows may flee at first, but they may come to trust you over
+  time. Right-click any sparrow to open its profile.
 
 
-  There are no fail states, so play is about feeding and watching. Progress
-  saves automatically in the browser. The creator made it for a friend who feeds
-  and names the local sparrows. The creator used AI for code, images, music and
-  sound effects.
+  Yen Rye made it for a friend who feeds and names the local sparrows. According
+  to the creator, AI was used for the code, images, music and sound effects.
 play:
   url: https://yenrye.itch.io/pocket-sparrows
   embeddable: false
