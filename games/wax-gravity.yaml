@@ -1,0 +1,70 @@
+slug: wax-gravity
+title: Wax & Gravity
+tagline: Land skateboard tricks and string them into combos before the clock runs out.
+description: >-
+  Each session starts with a minute and a half on the clock, and once it runs
+  out, that's the end. Landing tricks, linking them into combos and clearing
+  goals is what keeps the session going. It's a 3D skateboarding game in a
+  sun-baked park, which has a pool, a halfpipe, plus all that coping, framed by
+  pastel walls and palm trees.
+
+
+  The art's drawn like a cartoon, but under it the physics go surprisingly deep,
+  with gravity at 9.81 meters per second squared, urethane grip, air drag and
+  rolling resistance.
+
+
+  Everything runs off the keyboard, and W's the one that pushes you along and
+  pumps on ramps. S brakes, while A and D pull triple duty, carving on the
+  ground, spinning in the air and balancing on rails.
+
+
+  Hold Space to crouch, then let go to ollie. J gives you a kickflip, K a
+  heelflip and L a shove-it. There's a goal that asks you to grind along a rail
+  or a ledge for a full second, which makes sense given that A and D handle the
+  balance.
+
+
+  Land with the board beneath you and aimed where you're headed. Touch down
+  sideways or in the middle of a flip and you slam.
+play:
+  url: https://tesana.com/game/wax-gravity
+  embeddable: false
+  platforms:
+    - browser
+  controls:
+    - "W: push, and pump on ramps"
+    - "S: brake"
+    - "A / D: carve on the ground, spin in the air, balance on rails"
+    - "Space: hold to crouch, release to ollie"
+    - "J: kickflip"
+    - "K: heelflip"
+    - "L: shove-it"
+    - "I or Shift: hold to grab the board"
+creator:
+  name: waxpaper
+  handle: waxpaper
+made:
+  models: []
+  tools:
+    - tesana
+  aiShare: most
+  source: Tesana
+  evidence: direct
+  evidenceUrl: https://tesana.com/game/wax-gravity
+tech:
+  multiplayer: single
+genres:
+  - sports
+  - arcade
+media:
+  cover: games/wax-gravity/cover
+  screenshots:
+    - games/wax-gravity/shot-1
+    - games/wax-gravity/shot-2
+dates:
+  added: 2026-10-08
+  updated: 2026-10-08
+status: live
+provenance:
+  foundVia: scout:platform-tesana

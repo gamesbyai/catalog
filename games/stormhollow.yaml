@@ -1,0 +1,72 @@
+slug: stormhollow
+title: Stormhollow
+tagline: Mine, build and keep your torches lit until dawn in a stormy blocky forest
+description: >-
+  When it loads, you're in a blocky forest after dark, with torch and lantern
+  light pushing back the gloom. The storm has you cooped up in this wooded
+  hollow until dawn, with things moving around in the dark between the trunks.
+  They won't step into torchlight, which is almost polite of them, so your job
+  comes down to keeping your lights lit.
+
+
+  Holding left click mines and strikes, but a right click is for placing blocks.
+  The 1-9 keys switch which item you're holding.
+
+
+  The lake's nicely done, with rain dimpling the still water and torchlight
+  bouncing off it.
+
+
+  WASD moves you while the mouse looks around, and Shift is there for sprinting.
+  Space jumps or swims, which makes sense given there's a lake in the hollow.
+  Around you there are tall trees with leafy canopies, sandy shores and wooden
+  bridges.
+
+
+  Survive the night is the full challenge, and dawn's where it ends, but Explore
+  freely is there for roaming the hollow at whatever pace suits you.
+
+
+  It's a bit of a surprise that explore mode also lets you fly in a game that
+  unfolds over one stormy night. High and Low graphics settings let you match
+  performance to your own computer.
+play:
+  url: https://tesana.com/game/stormhollow
+  embeddable: false
+  platforms:
+    - browser
+  controls:
+    - "WASD: move"
+    - "Mouse: look around"
+    - "Shift: sprint"
+    - "Space: jump or swim"
+    - "Hold left click: mine and strike"
+    - "Right click: place blocks"
+    - "1-9 keys: switch items"
+creator:
+  name: stormwatchgames
+  handle: stormwatchgames
+made:
+  models: []
+  tools:
+    - tesana
+  aiShare: most
+  source: Tesana
+  evidence: direct
+  evidenceUrl: https://tesana.com/game/stormhollow
+tech:
+  multiplayer: single
+genres:
+  - survival
+  - sandbox
+media:
+  cover: games/stormhollow/cover
+  screenshots:
+    - games/stormhollow/shot-1
+    - games/stormhollow/shot-2
+dates:
+  added: 2026-10-08
+  updated: 2026-10-08
+status: live
+provenance:
+  foundVia: scout:platform-tesana

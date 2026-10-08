@@ -1,0 +1,76 @@
+slug: brinewake
+title: Brinewake
+tagline: Sail your own pirate sloop, dig up buried gold, and haul it home.
+description: >-
+  Thirty thousand gold is what it takes to become a Legend in this first-person
+  pirate sandbox, and you get there by digging up buried gold and carrying it
+  home. You're the captain of your own sloop, following maps with an X on them
+  across 22 isles of the Shimmering Sea, and that's a lot of ocean for one ship.
+
+
+  Skeleton crews, bad weather, and the Deepjaw can each send you down to the
+  Locker before you bring the gold home.
+
+
+  You steer with A and D, lower or raise the sails with W and S, and handle the
+  trim with Q and E. A wind from behind gives you speed, and the gauge in the
+  corner shows where the wind's blowing from, a neat bit of design.
+
+
+  Holes can open up in the hull, and once they do, the hold fills with water.
+  You seal the leaks with planks, and you empty the flooding out with a bucket.
+  Put the sailing and the leaks together, and the sloop becomes something you've
+  got to look after as well as steer.
+
+
+  There's a cutlass, a pistol, and a shovel in the kit you cycle through, plus
+  bananas and a concertina, which is a funny mix for a pirate.
+
+
+  Once you're off the ship, walking, sprinting, jumping, and swimming are all
+  open to you. A click uses whichever item you've got out, and right-click is
+  for aiming or blocking. E is for interacting, picking things up, and taking a
+  post aboard the ship.
+
+
+  When you're planning your next voyage, reach for the world map with M.
+play:
+  url: https://tesana.com/game/brinewake
+  embeddable: false
+  platforms:
+    - browser
+  controls:
+    - "A / D: steer"
+    - "W / S: lower or raise the sails"
+    - "Q / E: trim"
+    - "Click: use an item"
+    - "Right-click: aim or block"
+    - "E: interact, pick things up, or take a post aboard ship"
+    - "M: open the world map"
+creator:
+  name: tidewright
+  handle: tidewright
+made:
+  models: []
+  tools:
+    - tesana
+  aiShare: most
+  source: Tesana
+  evidence: direct
+  evidenceUrl: https://tesana.com/game/brinewake
+tech:
+  multiplayer: single
+genres:
+  - sandbox
+  - open-world
+media:
+  cover: games/brinewake/cover
+  screenshots:
+    - games/brinewake/shot-1
+    - games/brinewake/shot-2
+dates:
+  added: 2026-10-08
+  updated: 2026-10-08
+status: live
+provenance:
+  foundVia: scout:platform-tesana

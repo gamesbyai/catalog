@@ -1,0 +1,67 @@
+slug: hoop-court
+title: Hoop Court
+tagline: Play 2-on-2 basketball against the Rivals, first to 15, shooting over
+  defenders.
+description: >-
+  You play 2-on-2 against the Rivals in this third-person hoops game, first to
+  15.
+
+
+  When it starts, you're looking at a navy-and-gold arena with a HOME and RIVALS
+  scoreboard at the top. The game clock keeps running while there's a shot clock
+  sitting above the rim.
+
+
+  A live stat line keeps tabs on your scoring, including field goals and threes,
+  plus your steals and blocks. For a 2-on-2 game, that's a surprising amount of
+  bookkeeping, with the defense counted right alongside the points.
+
+
+  You can rise up for a jumper over a defender. You can also mix it up in the
+  paint. You can even watch the ball roll around the rim.
+
+
+  To keep your matchup in view with four players on the floor, each one gets a
+  glowing ring on the hardwood.
+
+
+  If you're not ready for the real thing, the title screen offers Training and
+  Shootaround. Training has you dribble through a cone slalom, finish at the
+  rim, and then go around the world against the clock. Shootaround is the
+  practice option where it's only you and the rim, which makes sense for getting
+  some reps in.
+
+
+  Controller support is aimed at couch-style play. The creator built it for
+  short sessions.
+play:
+  url: https://tesana.com/game/hoop-court
+  embeddable: false
+  platforms:
+    - browser
+creator:
+  name: Juicer
+  handle: juicer
+made:
+  models: []
+  tools:
+    - tesana
+  aiShare: most
+  source: Tesana
+  evidence: direct
+  evidenceUrl: https://tesana.com/game/hoop-court
+tech:
+  multiplayer: single
+genres:
+  - sports
+media:
+  cover: games/hoop-court/cover
+  screenshots:
+    - games/hoop-court/shot-1
+    - games/hoop-court/shot-2
+dates:
+  added: 2026-10-08
+  updated: 2026-10-08
+status: live
+provenance:
+  foundVia: scout:platform-tesana

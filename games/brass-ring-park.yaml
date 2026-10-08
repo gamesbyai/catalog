@@ -1,0 +1,60 @@
+slug: brass-ring-park
+title: Brass Ring Park
+tagline: Lay out a theme park on bare grass, then open the gates to guests.
+description: >-
+  From an angled overhead view, you build a park that begins as a grassy plot,
+  with a road up to the gate and a few path tiles. Surprisingly, the build list
+  is pretty long for a start that small, covering paths, gentle and thrill
+  rides, coasters, food and shops, facilities, scenery, staff, land tools and
+  bulldozing. From there it's all on you.
+
+
+  Menus are where you see how the place is running, with one for the park itself
+  and more for money, rides, guests, staff and research. For some reason the
+  News menu's tacked on right after Research.
+
+
+  The park starts out closed, with a gold Open Park button under the top bar for
+  when you're ready to let guests in.
+
+
+  The strip across the top somehow fits a lot in, from your cash and guest count
+  to the park rating, the date and the current weather. Pause and several speed
+  settings are there for planning, or for skipping ahead through the day. And
+  there's a play button sitting right between pause and the faster ones.
+
+
+  Sandbox mode makes sense for anyone who wants to try out layouts, since
+  money's no object in it. The cash readout up top says Unlimited.
+play:
+  url: https://tesana.com/game/brass-ring-park
+  embeddable: false
+  platforms:
+    - browser
+creator:
+  name: midwaymarlo
+  handle: midwaymarlo
+made:
+  models: []
+  tools:
+    - tesana
+  aiShare: most
+  source: Tesana
+  evidence: direct
+  evidenceUrl: https://tesana.com/game/brass-ring-park
+tech:
+  multiplayer: single
+genres:
+  - simulation
+  - management
+media:
+  cover: games/brass-ring-park/cover
+  screenshots:
+    - games/brass-ring-park/shot-1
+    - games/brass-ring-park/shot-2
+dates:
+  added: 2026-10-08
+  updated: 2026-10-08
+status: live
+provenance:
+  foundVia: scout:platform-tesana

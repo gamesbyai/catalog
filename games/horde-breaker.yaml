@@ -1,0 +1,71 @@
+slug: horde-breaker
+title: Horde Breaker
+tagline: Steer a blue squad through gates and gunfire toward a boss on a desert road.
+description: >-
+  A long concrete road runs off into a sun-baked desert, with a blue +10 gate
+  and a red -6 gate already sitting across it, which is a cheerful bit of math
+  in a war zone. You steer the blue squad down the road, while a counter above
+  the squad tells you how many soldiers you've got.
+
+
+  Blue gates like the +10 bring soldiers in while red ones like the -6 send them
+  out, which is why your lane choice matters, since every soldier counts once
+  you're up against the horde.
+
+
+  The squad keeps firing as it goes, sending bright rounds toward the red horde
+  farther along. A progress bar across the top fills as you push on, and the
+  skull at its far end, where the boss is waiting, is about as subtle a warning
+  as you can get. The road runs up to that skull, with more gates lined up in
+  between.
+
+
+  You also grab coins along the way, and there's a coin count at the right end
+  of the top bar, beside the pause button.
+
+
+  The LV badge in the top left says Level 1, and you're really testing how far
+  your squad can push through the levels after it. Upgrades and progression are
+  part of it too, which makes sense when there's more than one level to get
+  through.
+
+
+  The look is stylized, with ruined buildings, sandbags, and barrels dotting a
+  post-apocalyptic desert. The blue gates match your blue soldiers while the red
+  ones match the horde ahead, a pairing so literal it's almost funny. The view
+  is third person, looking up the road from behind your squad.
+play:
+  url: https://tesana.com/game/horde-breaker
+  embeddable: false
+  platforms:
+    - browser
+  controls:
+    - "Pause button: pause the game"
+creator:
+  name: arcadebloom
+  handle: arcadebloom
+made:
+  models: []
+  tools:
+    - tesana
+  aiShare: most
+  source: Tesana
+  evidence: direct
+  evidenceUrl: https://tesana.com/game/horde-breaker
+tech:
+  engine: threejs
+  multiplayer: single
+genres:
+  - arcade
+  - shooter
+media:
+  cover: games/horde-breaker/cover
+  screenshots:
+    - games/horde-breaker/shot-1
+    - games/horde-breaker/shot-2
+dates:
+  added: 2026-10-08
+  updated: 2026-10-08
+status: live
+provenance:
+  foundVia: scout:platform-tesana

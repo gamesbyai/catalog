@@ -1,0 +1,62 @@
+slug: craig-s-castle
+title: Craig's Castle
+tagline: Guide a candle knight through deadly castle rooms, chasing three-star times.
+description: >-
+  Run, jump, slide down walls, and leap off them to get Craig through twenty
+  castle rooms. You're steering him past saw blades and molten stone in rooms
+  that are deadly. Making him a candle knight, of all things, is a pretty odd
+  pick for a place this dangerous.
+
+
+  The music and sound effects are surprisingly original.
+
+
+  Winning a room isn't the end of it, but there are times that earn three stars
+  to chase. You can also retry a room if you want.
+
+
+  You get to choose which room to play. Once you've won, you can watch every
+  attempt play back at once, built around your winning run. Retry and replay
+  pair up well, with one giving you attempts and the other letting you look back
+  over every one of them.
+
+
+  You can play with either a keyboard or a standard controller, whichever you'd
+  like.
+play:
+  url: https://remix.gg/g/craigs-castle
+  embeddable: true
+  platforms:
+    - browser
+  controls:
+    - "Keyboard: play the game"
+    - "Standard controller: play the game"
+creator:
+  name: grumby
+  handle: grumby
+  links:
+    - https://remix.gg/u/0x406zfgeY
+made:
+  models: []
+  tools:
+    - remix
+  aiShare: most
+  source: Remix
+  evidence: direct
+  evidenceUrl: https://remix.gg/g/craigs-castle
+tech:
+  multiplayer: single
+genres:
+  - action
+  - platformer
+media:
+  cover: games/craig-s-castle/cover
+  screenshots:
+    - games/craig-s-castle/shot-1
+    - games/craig-s-castle/shot-2
+dates:
+  added: 2026-10-08
+  updated: 2026-10-08
+status: live
+provenance:
+  foundVia: scout:platform-remix

@@ -1,0 +1,67 @@
+slug: red-acre
+title: Red Acre
+tagline: Ride across canyon country and bring your palomino to the stable before sunset.
+description: >-
+  Your one job here is getting a palomino to the livery stable at Red Acre, and
+  you've got until sunset. You're a cowboy in suspenders and a blue shirt,
+  riding across dusty frontier land from a third-person view.
+
+
+  A dirt trail runs along a canyon's edge, with rock walls banded in red and
+  orange, past wooden signposts, scrubby trees and dry grass. Even the telegraph
+  poles lean, which is a nice bit of wear. Off in the distance, there's a town
+  of weathered buildings and barns.
+
+
+  To keep you pointed at the stable, there's a compass strip along the top edge
+  and an objective panel that tracks the distance live, which suits a trip
+  that's got a sunset deadline.
+
+
+  You'll ride and steer with W A S D, while Shift asks the palomino for a
+  gallop. Pressing E gets you off the horse or back up on it.
+
+
+  Holding Space soothes your horse, a really gentle thing to bind to a key.
+
+
+  Your palomino has a Nerve reading, so keeping it calm is part of getting
+  there. Between the compass, the distance readout and the speed gauge in the
+  corner, you can follow both the route and your horse's nerve at once. You're
+  riding under warm, golden light.
+play:
+  url: https://tesana.com/game/red-acre
+  embeddable: false
+  platforms:
+    - browser
+  controls:
+    - "W A S D: ride and steer"
+    - "Shift: gallop"
+    - "E: dismount or mount up"
+    - "Space (hold): soothe your horse"
+creator:
+  name: Juicer
+  handle: juicer
+made:
+  models: []
+  tools:
+    - tesana
+  aiShare: most
+  source: Tesana
+  evidence: direct
+  evidenceUrl: https://tesana.com/game/red-acre
+tech:
+  multiplayer: single
+genres:
+  - adventure
+media:
+  cover: games/red-acre/cover
+  screenshots:
+    - games/red-acre/shot-1
+    - games/red-acre/shot-2
+dates:
+  added: 2026-10-08
+  updated: 2026-10-08
+status: live
+provenance:
+  foundVia: scout:platform-tesana

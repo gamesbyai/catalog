@@ -1,0 +1,57 @@
+slug: moss-cathedral
+title: Moss Cathedral
+tagline: Walk a flagstone trail through a sunlit forest to reach a stone arch.
+description: >-
+  Moss Cathedral has you walking a winding trail of flagstones, in first person,
+  past enormous trunks. You're after the stone arch at the far end.
+
+
+  You'll also step across a shallow brook on stones furred with moss. Bright
+  bars of sun slice into the haze up ahead, and you keep heading toward them,
+  which is a sly way to do the pointing. Ferns line the sides of the path.
+
+
+  A little note counts the meters left on the trail, which is more exact than
+  you'd expect from a game like this.
+
+
+  A timer starts counting when you take your first step. With one way through
+  the forest, there's a single route for that note to track.
+
+
+  It's a short, unhurried walk where the path, the trees, and the arch hold the
+  focus, which makes sense when the trail is aimed at the arch.
+
+
+  There's controller support too. Visually, it's stylized fantasy art.
+play:
+  url: https://tesana.com/game/moss-cathedral
+  embeddable: false
+  platforms:
+    - browser
+creator:
+  name: Juicer
+  handle: juicer
+made:
+  models: []
+  tools:
+    - tesana
+  aiShare: most
+  source: Tesana
+  evidence: direct
+  evidenceUrl: https://tesana.com/game/moss-cathedral
+tech:
+  multiplayer: single
+genres:
+  - adventure
+media:
+  cover: games/moss-cathedral/cover
+  screenshots:
+    - games/moss-cathedral/shot-1
+    - games/moss-cathedral/shot-2
+dates:
+  added: 2026-10-08
+  updated: 2026-10-08
+status: live
+provenance:
+  foundVia: scout:platform-tesana

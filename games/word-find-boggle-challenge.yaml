@@ -1,0 +1,64 @@
+slug: word-find-boggle-challenge
+title: "Word Find: Boggle Challenge"
+tagline: Trace neighboring letters on a grid to spell words before the timer runs out.
+description: >-
+  The start screen shows the Word Find title and the Boggle Challenge subtitle
+  against a dark, blurry backdrop, with a best score and best level box above a
+  gold START GAME button.
+
+
+  Once you start, you trace paths through a grid of letters to spell words,
+  dragging or tapping from one letter to the next. A neighbor is any letter in
+  one of eight directions, diagonals included, which gives each letter more ways
+  to build a word than a grid that only connects up, down and sideways would.
+  When a finished word is in the game's dictionary, it's accepted and scored by
+  how long it is.
+
+
+  Words you've already found won't score again, which is a sensible guard
+  against repeats padding your total.
+
+
+  Reaching the goal is how you level up. Words found in quick succession build
+  combos, and that's the only tip on the screen with an exclamation point, a bit
+  of drama for a word game. Tracking down the DW and TW tiles brings big
+  bonuses, the game says.
+
+
+  Each round is short and timed, and it's over once the clock hits zero. Your
+  score shows up at that point, and then you can start another round.
+play:
+  url: https://rosebud.ai/play/7027d6e3-4516-4311-9da6-a964e5c9524b
+  embeddable: true
+  platforms:
+    - browser
+    - mobile
+  controls:
+    - "Drag or tap: trace a path through neighboring letters to spell a word"
+creator:
+  name: Erika
+  handle: erika
+made:
+  models: []
+  tools:
+    - rosebud
+  aiShare: most
+  source: Rosebud AI
+  evidence: direct
+  evidenceUrl: https://rosebud.ai/play/7027d6e3-4516-4311-9da6-a964e5c9524b
+tech:
+  multiplayer: single
+genres:
+  - word
+  - puzzle
+media:
+  cover: games/word-find-boggle-challenge/cover
+  screenshots:
+    - games/word-find-boggle-challenge/shot-1
+    - games/word-find-boggle-challenge/shot-2
+dates:
+  added: 2026-10-08
+  updated: 2026-10-08
+status: live
+provenance:
+  foundVia: scout:platform-rosebud

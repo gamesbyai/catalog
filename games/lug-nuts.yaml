@@ -1,0 +1,76 @@
+slug: lug-nuts
+title: Lug Nuts
+tagline: Fix cars in first person to hit daily quotas, or the landlord takes your shop.
+description: >-
+  A small-town garage is yours to run, and the customers want their cars fixed
+  before they blow their top. You work the shop floor in first person, with a
+  car hoisted onto the lift. Your tool kit's within easy reach.
+
+
+  Your goal's to hit the daily quota three days in a row, or the landlord ends
+  up with the garage.
+
+
+  Before you clock in, you put your name on the coveralls and settle on a color
+  for them. Then you pick a silly hat from six options, and somehow there's a
+  traffic cone on the same list as a top hat.
+
+
+  Holding down the left mouse button uses whatever tool's in your hand, and the
+  number keys 1 through 4 flip between your four tool slots. The right mouse
+  button grabs a part, and pressing it again throws it, which keeps the number
+  of buttons down. Q drops whatever you're holding, and it's a separate key from
+  the throw.
+
+
+  E handles interacting with things and hopping into a car to drive, which is a
+  surprising amount for one key to cover.
+
+
+  F honks or flips on the flashlight. Shift lets you sprint, and Space gets you
+  off the ground.
+
+
+  Oddly enough, the hand-outlined 3D look keeps the mood light, even with the
+  rent looming.
+play:
+  url: https://tesana.com/game/lug-nuts
+  embeddable: false
+  platforms:
+    - browser
+  controls:
+    - "Left mouse button (hold): use the tool in your hand"
+    - "1-4: switch between the four tool slots"
+    - "Right mouse button: grab a part, press again to throw it"
+    - "Q: drop whatever you're holding"
+    - "E: interact, or hop into a car and drive"
+    - "F: honk, or flip on the flashlight"
+    - "Shift: sprint"
+    - "Space: jump"
+creator:
+  name: shiftworkgames
+  handle: shiftworkgames
+made:
+  models: []
+  tools:
+    - tesana
+  aiShare: most
+  source: Tesana
+  evidence: direct
+  evidenceUrl: https://tesana.com/game/lug-nuts
+tech:
+  multiplayer: single
+genres:
+  - simulation
+  - management
+media:
+  cover: games/lug-nuts/cover
+  screenshots:
+    - games/lug-nuts/shot-1
+    - games/lug-nuts/shot-2
+dates:
+  added: 2026-10-08
+  updated: 2026-10-08
+status: live
+provenance:
+  foundVia: scout:platform-tesana

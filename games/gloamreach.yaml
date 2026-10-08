@@ -1,0 +1,68 @@
+slug: gloamreach
+title: Gloamreach
+tagline: Carry a lantern's last ember down through a dark kingdom under the ground.
+description: >-
+  Move with the arrow keys. Space is the one you press when it's time to choose.
+
+
+  It's a side-scrolling dark-fantasy action-adventure with puzzle solving mixed
+  in.
+
+
+  You're the Wick, a fitting name for a small hooded wanderer who hauls the last
+  living ember around in a lantern worn on its back. The descent takes you into
+  a long-forgotten kingdom under the ground, where the Great Lantern no longer
+  burns.
+
+
+  The world is hand-drawn in inked outlines, with cold blue shadows. Crumbling
+  ledges, arched windows, and rusted chains show up in the scenery. You'll find
+  silent winged statues too, and they suit a place this forgotten.
+
+
+  Warm light is scarce here, coming from a lantern that hangs, a shrine that
+  flickers, and even a lone street lamp, which is a funny thing to find this far
+  underground.
+
+
+  In the top-left corner, the display borrows that warm light, showing a lantern
+  icon beside a row of candles and a counter tucked underneath.
+
+
+  Turns out you've got the Controls and Settings menus to look over before you
+  go down. You begin with New Journey on the title screen.
+play:
+  url: https://tesana.com/game/gloamreach
+  embeddable: false
+  platforms:
+    - browser
+  controls:
+    - "Arrow keys: move"
+    - "Space: choose"
+creator:
+  name: kaelwrites
+  handle: kaelwrites
+made:
+  models: []
+  tools:
+    - tesana
+  aiShare: most
+  source: Tesana
+  evidence: direct
+  evidenceUrl: https://tesana.com/game/gloamreach
+tech:
+  multiplayer: single
+genres:
+  - adventure
+  - action
+media:
+  cover: games/gloamreach/cover
+  screenshots:
+    - games/gloamreach/shot-1
+    - games/gloamreach/shot-2
+dates:
+  added: 2026-10-08
+  updated: 2026-10-08
+status: live
+provenance:
+  foundVia: scout:platform-tesana

@@ -1,0 +1,68 @@
+slug: solstice-drive
+title: Solstice Drive
+tagline: Drift around a sunlit island and take on the Coast Circuit to win
+description: >-
+  What's on screen when the game starts is a golden-hour island, with bunting
+  strung between the lamp posts and a hot air balloon floating over the hills. A
+  Festival Points counter sits at zero in the top-left corner, with camera, map,
+  sound and pause buttons along the top-right.
+
+
+  There are only three cars to pick from, but each one has a surprisingly
+  specific build. The Vireo GT is an S1 car with its engine behind the seats,
+  sending power to the rear wheels. The Kestrel R's an A-class rally hatch with
+  all-wheel drive, while the Bramble V8 is an A-class muscle coupe that also
+  sends its power to the rear wheels.
+
+
+  Each car gets its own ratings for Speed, Grip, Launch and Dirt, which is a
+  neat way to set up a choice between raw pace and a car that deals with rough
+  ground.
+
+
+  Once you've picked a car, you choose from seven paint jobs. The colors run
+  from Solstice Gold through deep blues to grays that are trying to pass for
+  chrome.
+
+
+  Press Start Driving and the whole island's open to you, seen from a
+  third-person view.
+
+
+  Out on the roads, you can string drifts and near misses together. You can also
+  blast through speed traps. To claim the win, you take on the Coast Circuit.
+
+
+  Upgrades and progression are part of it. Controller support's built in too.
+play:
+  url: https://tesana.com/game/solstice-drive
+  embeddable: false
+  platforms:
+    - browser
+creator:
+  name: sundrift
+  handle: sundrift
+made:
+  models: []
+  tools:
+    - tesana
+  aiShare: most
+  source: Tesana
+  evidence: direct
+  evidenceUrl: https://tesana.com/game/solstice-drive
+tech:
+  multiplayer: single
+genres:
+  - racing
+  - open-world
+media:
+  cover: games/solstice-drive/cover
+  screenshots:
+    - games/solstice-drive/shot-1
+    - games/solstice-drive/shot-2
+dates:
+  added: 2026-10-08
+  updated: 2026-10-08
+status: live
+provenance:
+  foundVia: scout:platform-tesana

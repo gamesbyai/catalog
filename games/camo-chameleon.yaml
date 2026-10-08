@@ -1,0 +1,65 @@
+slug: camo-chameleon
+title: Camo Chameleon
+tagline: Blend into your surroundings with paint and stay hidden from the hunter.
+description: >-
+  If you're a survivor, the hunter is after you, and your job is to find a spot
+  and blend into it. You sample the colors nearby and paint yourself to match
+  them, so the spot you pick feeds into the paint you end up with, which is
+  sneakier than it sounds.
+
+
+  It's a horror game with a hunter at its center. Surviving the hunt is the
+  goal, and the hunter's the reason all that painting matters.
+
+
+  Join Online Game is for playing with others, and it waits until someone else
+  joins. Solo Practice is for going it alone. It's the one that starts right
+  away with the hunter, which pairs well with the online mode.
+
+
+  Survivors look around by dragging, while hunters lock the mouse with a click.
+  The two roles don't even handle the mouse the same way, which makes sense when
+  one side is hiding and the other is hunting. The controls are shown near the
+  bottom of the start screen.
+
+
+  The little green creature peeking over the title isn't exactly subtle for a
+  game about blending in.
+
+
+  Music and sound effects each have their own switch, with both starting on.
+play:
+  url: https://rosebud.ai/play/c5fa1ce2-c188-4ca1-9cb5-6fff46c19e1d
+  embeddable: true
+  platforms:
+    - browser
+  controls:
+    - "Drag (survivors): look around"
+    - "Click (hunters): lock the mouse"
+creator:
+  name: Jason
+  handle: jason
+made:
+  models: []
+  tools:
+    - rosebud
+  aiShare: most
+  source: Rosebud AI
+  evidence: direct
+  evidenceUrl: https://rosebud.ai/play/c5fa1ce2-c188-4ca1-9cb5-6fff46c19e1d
+tech:
+  multiplayer: online
+genres:
+  - horror
+  - stealth
+media:
+  cover: games/camo-chameleon/cover
+  screenshots:
+    - games/camo-chameleon/shot-1
+    - games/camo-chameleon/shot-2
+dates:
+  added: 2026-10-08
+  updated: 2026-10-08
+status: live
+provenance:
+  foundVia: scout:platform-rosebud

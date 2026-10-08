@@ -1,0 +1,68 @@
+slug: amberbrook
+title: Amberbrook
+tagline: Talk to villagers, use elemental abilities, and wake a spring that's
+  gone quiet.
+description: >-
+  Waking the spring is the goal, and you'll begin with a quest called The
+  Whispering Spring. It sends you to Elder Ysolde at the Amberbrook well, which
+  is a funny spot to start a quest named for a spring.
+
+
+  The desert village is made of simple 3D shapes, with clay-walled homes, teal
+  domes, palm trees, and awnings over the market. The camera looks down on the
+  village at an angle. Around town you can talk to Suri the Herbalist by the
+  garden plots, browse the stalls run by Nima the Trader, or make your way out
+  past the stables.
+
+
+  It's a considerate touch that the on-screen hint covers running with WASD and
+  the camera following you.
+
+
+  Fights run on Elemental Arts, which gives you five abilities covering fire,
+  water, and earth spikes, plus a whirlwind and a technique that blends the
+  elements. Each one spends its own amount of mana, which pairs nicely with the
+  mana bar that's sitting right under your health.
+
+
+  Dodging, jumping, and drinking potions each get a key of their own.
+
+
+  There's an inventory and an upgrade system too, and together with the quest,
+  the townsfolk, and the abilities, they give you quite a bit to work with. A
+  small map in one corner helps you find your way around. Gold builds up as you
+  go.
+play:
+  url: https://tesana.com/game/amberbrook-9e6c6503
+  embeddable: false
+  platforms:
+    - browser
+  controls:
+    - "WASD: run"
+creator:
+  name: houser
+  handle: houser
+made:
+  models: []
+  tools:
+    - tesana
+  aiShare: most
+  source: Tesana
+  evidence: direct
+  evidenceUrl: https://tesana.com/game/amberbrook-9e6c6503
+tech:
+  multiplayer: single
+genres:
+  - rpg
+  - action
+media:
+  cover: games/amberbrook/cover
+  screenshots:
+    - games/amberbrook/shot-1
+    - games/amberbrook/shot-2
+dates:
+  added: 2026-10-08
+  updated: 2026-10-08
+status: live
+provenance:
+  foundVia: scout:platform-tesana

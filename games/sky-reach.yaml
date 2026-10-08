@@ -1,0 +1,70 @@
+slug: sky-reach
+title: Sky Reach
+tagline: Fly between alien planets, dogfight in space, and haul giant creatures
+  down with ropes.
+description: >-
+  You fly a beat-up starship through a universe the creator says holds hundreds
+  of worlds, and each one's got its own terrain, finds, and threats. A universe
+  that size is a lot of ground for one ship to cover. Light beams mark the way
+  to distant landmarks.
+
+
+  On Elysia you explore a grassy surface dotted with towering sandstone arches,
+  spires of rock, and boulders, all under a huge ringed planet. The arches look
+  like they belong on a postcard, and that ringed planet's hanging right over
+  them.
+
+
+  Leave the atmosphere and you're in deep space, where you dogfight enemy ships
+  and steer through enormous battlefields.
+
+
+  Land on a hostile world and the fight moves to the ground, where giant alien
+  behemoths loom over the land. You'll use your tools and weapons in that fight
+  too. The grappling ropes let you scramble up these giants and haul them down.
+
+
+  There's also a Ring World to visit for unknown monsters, which is a pretty
+  funny way to sell a place.
+
+
+  Your Pulse and Boost abilities are there for when you need them. It makes
+  sense that the flight HUD tracks them next to your speed, height, hull
+  condition, and fuel.
+
+
+  Your warp drive's broken, and your job's to retrieve the warp cores and get
+  your ship back in working order. Along the way you explore unknown planets,
+  survive run-ins with enemy forces, and see what's past the next world.
+play:
+  url: https://tesana.com/game/sky-reach
+  embeddable: false
+  platforms:
+    - browser
+creator:
+  name: jonesiller
+  handle: jonesiller
+made:
+  models: []
+  tools:
+    - tesana
+  aiShare: most
+  source: Tesana
+  evidence: direct
+  evidenceUrl: https://tesana.com/game/sky-reach
+tech:
+  multiplayer: single
+genres:
+  - open-world
+  - shooter
+media:
+  cover: games/sky-reach/cover
+  screenshots:
+    - games/sky-reach/shot-1
+    - games/sky-reach/shot-2
+dates:
+  added: 2026-10-08
+  updated: 2026-10-08
+status: live
+provenance:
+  foundVia: scout:platform-tesana

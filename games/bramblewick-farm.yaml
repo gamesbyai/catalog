@@ -1,0 +1,67 @@
+slug: bramblewick-farm
+title: Bramblewick Farm
+tagline: Name your farmer, start a farm in a pixel-art village, and craft new items.
+description: >-
+  You move your farmer with WASD or the arrow keys. Space or a click both use
+  your tools and let you talk. Funnily enough, the number keys run from 1 all
+  the way across to the equals sign, and there's a mouse wheel for switching
+  tools too.
+
+
+  You'll name your farmer, pick a shirt, and settle on a hair color before
+  setting up a new farm at the edge of the village.
+
+
+  The whole village is drawn in pixel art, seen from a top-down view. The
+  cobblestone town square has a stone well, wooden benches, lamp posts, and a
+  market stall draped in bunting. There are cottages with chimneys puffing
+  smoke, a pink tree in bloom and a river with a wooden bridge across it, and
+  that's a lot of village for a farm that starts at its edge.
+
+
+  Pressing I opens your bag, which is where you keep track of whatever you're
+  carrying. C opens crafting, where you make new items, while J brings up the
+  journal you can check as you go. Each of the three gets its own key, which
+  makes sense when the number keys already switch between your tools.
+
+
+  There's a clock and a money counter in the top right corner of the screen.
+play:
+  url: https://tesana.com/game/bramblewick-farm
+  embeddable: false
+  platforms:
+    - browser
+  controls:
+    - "WASD / arrow keys: move"
+    - "Space / click: use tools and talk"
+    - "1 through = / mouse wheel: switch tools"
+    - "I: open the bag"
+    - "C: craft"
+    - "J: open the journal"
+creator:
+  name: mossyjuno
+  handle: mossyjuno
+made:
+  models: []
+  tools:
+    - tesana
+  aiShare: most
+  source: Tesana
+  evidence: direct
+  evidenceUrl: https://tesana.com/game/bramblewick-farm
+tech:
+  multiplayer: single
+genres:
+  - simulation
+  - sandbox
+media:
+  cover: games/bramblewick-farm/cover
+  screenshots:
+    - games/bramblewick-farm/shot-1
+    - games/bramblewick-farm/shot-2
+dates:
+  added: 2026-10-08
+  updated: 2026-10-08
+status: live
+provenance:
+  foundVia: scout:platform-tesana

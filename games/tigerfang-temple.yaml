@@ -1,0 +1,78 @@
+slug: tigerfang-temple
+title: Tigerfang Temple
+tagline: Relight two braziers and carry a jungle idol out alive past mercenaries
+  and tigers
+description: >-
+  In the Kaal Valley, hauling Tigerfang's idol out of a cave is what you're
+  doing, seen from a third-person view. Mercenaries are after it too. The tigers
+  want it as well, which is a funny detail to find in a jungle game.
+
+
+  You have to cross the jungle, light the temple's two sun braziers again, and
+  then bring the idol back out while you're still breathing. The on-screen
+  objective says to find the temple ruins by following the trail north, while a
+  note underneath adds that tigers hunt away from the path.
+
+
+  The game builds the jungle itself from a set of rules, and drawing that live
+  in your browser is a bigger trick than it sounds.
+
+
+  The canopy overhead is thick. Misty cliffs sit in the view too. Shafts of
+  light cut through the trees, and they're easy to miss under all that canopy.
+
+
+  To tune performance to your computer, the quality setting runs from low to
+  high, which makes sense when the jungle's being drawn live.
+
+
+  You'll use keyboard and mouse, with WASD for moving, the mouse for looking
+  around, left click for firing, and right click for aiming. Shift sprints,
+  Space jumps and climbs, C does a dodge roll, R reloads, and 1, 2, or Q swap
+  weapons, while E interacts with the world, F toggles your flashlight in the
+  dark, and Esc pauses.
+
+
+  Every successful escape gets recorded, and that record puts your expeditions
+  side by side over time.
+play:
+  url: https://tesana.com/game/tigerfang-temple
+  embeddable: false
+  platforms:
+    - browser
+  controls:
+    - "WASD: move"
+    - "Mouse: look around"
+    - "Left click / right click: fire / aim"
+    - "Shift / Space / C: sprint / jump and climb / dodge roll"
+    - "R: reload"
+    - "1 / 2 / Q: switch weapons"
+    - "E / F: interact / toggle flashlight"
+    - "Esc: pause"
+creator:
+  name: junglejack
+  handle: junglejack
+made:
+  models: []
+  tools:
+    - tesana
+  aiShare: most
+  source: Tesana
+  evidence: direct
+  evidenceUrl: https://tesana.com/game/tigerfang-temple
+tech:
+  multiplayer: single
+genres:
+  - action
+  - adventure
+media:
+  cover: games/tigerfang-temple/cover
+  screenshots:
+    - games/tigerfang-temple/shot-1
+    - games/tigerfang-temple/shot-2
+dates:
+  added: 2026-10-08
+  updated: 2026-10-08
+status: live
+provenance:
+  foundVia: scout:platform-tesana

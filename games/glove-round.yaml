@@ -1,0 +1,70 @@
+slug: glove-round
+title: Glove Round
+tagline: Throw real-time punches as Kid against Marcus 'The Hammer'.
+description: >-
+  The fight itself runs in real time. Your jab lives on J, the cross on K, the
+  hook on U and the uppercut on I, while Space blocks and C slips the shots
+  coming at you. You can use the mouse or the keyboard, whichever you'd rather.
+
+
+  You're Kid in the red corner, seen from over your shoulder, while Marcus 'The
+  Hammer' waits in the blue corner. It all happens in a boxing club from the old
+  school.
+
+
+  Oddly, getting knocked down means mashing J and K to climb back up before the
+  fight's over.
+
+
+  A bout can go up to three rounds, with a clock counting down through each one.
+  Each of you has a segmented health bar. In a fight that keeps its own books,
+  whoever ends up on the canvas gets marked.
+
+
+  Sensibly, if you're new to the ring, the Rookie difficulty comes with a
+  sparring partner who goes easy on you.
+
+
+  There's a surprising amount of detail in the room, from the brick walls and
+  tall factory windows to the warm lighting. A referee keeps an eye on the bout
+  from the ropes.
+play:
+  url: https://tesana.com/game/glove-round
+  embeddable: false
+  platforms:
+    - browser
+  controls:
+    - "J: jab"
+    - "K: cross"
+    - "U: hook"
+    - "I: uppercut"
+    - "Space: block"
+    - "C: slip"
+    - "J / K (mash): get back up after a knockdown"
+creator:
+  name: Juicer
+  handle: juicer
+made:
+  models: []
+  tools:
+    - tesana
+  aiShare: most
+  source: Tesana
+  evidence: direct
+  evidenceUrl: https://tesana.com/game/glove-round
+tech:
+  multiplayer: single
+genres:
+  - fighting
+  - sports
+media:
+  cover: games/glove-round/cover
+  screenshots:
+    - games/glove-round/shot-1
+    - games/glove-round/shot-2
+dates:
+  added: 2026-10-08
+  updated: 2026-10-08
+status: live
+provenance:
+  foundVia: scout:platform-tesana

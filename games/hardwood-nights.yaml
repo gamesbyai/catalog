@@ -1,0 +1,65 @@
+slug: hardwood-nights
+title: Hardwood Nights
+tagline: Shoot, pass, and cross over in 2v2 half-court hoops against AI opponents.
+description: >-
+  In 2v2 half-court games against AI opponents, you handle the ball from a
+  third-person camera that sits behind your player. The defender is right on top
+  of you, and you're reading them while you watch the shot clock.
+
+
+  It's a smart move to have the shot clock counting down between the Home and
+  Away scores and again above the backboard.
+
+
+  You take your shots with Space. E passes to your teammate, the other player on
+  your side. Q's the crossover that puts the ball out of your defender's reach,
+  which makes sense when they're that close.
+
+
+  The Home and Away scores sit up top.
+
+
+  Generating every model, texture, and sound in code is an ambitious way to
+  build a 3D half-court game. Even the glossy hardwood under your player and the
+  red paint on it come from that code.
+
+
+  The stands sink into the dark while the floor stays lit under the arena
+  lights. One of the banners says No Ball Left Behind, a funny motto to hang
+  over a court. The game's set late, once the main event is done.
+play:
+  url: https://tesana.com/game/hardwood-nights
+  embeddable: false
+  platforms:
+    - browser
+  controls:
+    - "Space: shoot"
+    - "E: pass to teammate"
+    - "Q: cross over"
+creator:
+  name: hoopsbyrae
+  handle: hoopsbyrae
+made:
+  models: []
+  tools:
+    - tesana
+  aiShare: most
+  source: Tesana
+  evidence: direct
+  evidenceUrl: https://tesana.com/game/hardwood-nights
+tech:
+  engine: threejs
+  multiplayer: single
+genres:
+  - sports
+media:
+  cover: games/hardwood-nights/cover
+  screenshots:
+    - games/hardwood-nights/shot-1
+    - games/hardwood-nights/shot-2
+dates:
+  added: 2026-10-08
+  updated: 2026-10-08
+status: live
+provenance:
+  foundVia: scout:platform-tesana

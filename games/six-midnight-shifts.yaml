@@ -1,0 +1,63 @@
+slug: six-midnight-shifts
+title: Six Midnight Shifts
+tagline: Run a convenience store and check every customer against county records.
+description: >-
+  Seventeen people vanished along a service corridor in Gray County, and the
+  emergency radio is telling every business still open to check each customer
+  against county records.
+
+
+  You're running a convenience store, serving impatient customers while keeping
+  it in shape. The game also mixes survival sim with identity checks and
+  spotting what's off, which covers a lot more ground than the store itself
+  would suggest.
+
+
+  According to the bulletin, the visitors resembling the dead aren't the
+  residents who were formally identified. You compare faces and answers against
+  county records to verify identity. Checking answers along with faces makes
+  sense when the visitors look and sound like the deceased.
+
+
+  Your sidearm only comes out once you're certain a skinwalker isn't human,
+  which is a fair limit for a game about lookalikes.
+
+
+  The bulletin types itself out letter by letter. It also spells out the rule
+  for letting people in: anyone who can't verify personal information stays out.
+
+
+  Shift at Midnight is the game's inspiration, a name that shares its midnight
+  and shift words with the title.
+play:
+  url: https://rosebud.ai/play/1a37a20e-bafd-465d-b822-8dcee16fb3da
+  embeddable: true
+  platforms:
+    - browser
+creator:
+  name: Jason
+  handle: jason
+made:
+  models: []
+  tools:
+    - rosebud
+  aiShare: most
+  source: Rosebud AI
+  evidence: direct
+  evidenceUrl: https://rosebud.ai/play/1a37a20e-bafd-465d-b822-8dcee16fb3da
+tech:
+  multiplayer: single
+genres:
+  - horror
+  - simulation
+media:
+  cover: games/six-midnight-shifts/cover
+  screenshots:
+    - games/six-midnight-shifts/shot-1
+    - games/six-midnight-shifts/shot-2
+dates:
+  added: 2026-10-08
+  updated: 2026-10-08
+status: live
+provenance:
+  foundVia: scout:platform-rosebud

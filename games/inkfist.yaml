@@ -1,0 +1,73 @@
+slug: inkfist
+title: Inkfist
+tagline: Throw punches, kicks and ink orbs in best-of-three brawls on a rainy pier.
+description: >-
+  You throw punches and kicks on a waterfront pier at night while rain's coming
+  down. The two fighters, drawn in a cartoon style with ink outlines, face each
+  other in front of a barbed-wire fence.
+
+
+  A crowd of silhouettes watches without making a sound, which makes them pretty
+  much the politest audience on the pier.
+
+
+  You can also launch an ink orb. Once the ink bar fills up, you can cash in a
+  super. The name Inkfist fits once you notice that the ink outlines on the
+  fighters and the ink orb both really tie back to it.
+
+
+  When the match loads, Riva's health bar sits on the left, Brask's on the
+  right, and a clock hangs between them. Each match is best of three rounds.
+  You'll win a round by putting your opponent down, or by still being on your
+  feet when the clock runs out.
+
+
+  Before the first punch, you pick one of two fighters. Riva's a debt runner who
+  moves fast and has nothing to lose, with 95 health, while Brask is a slow dock
+  enforcer with 112 health and more power behind each strike, which balances out
+  the slowness.
+
+
+  You're free to take on the CPU alone, or bench it for a friend on the same
+  keyboard.
+
+
+  A and D walk, W jumps, and S drops you into a crouch. Blocking's done by
+  holding away from your opponent.
+play:
+  url: https://tesana.com/game/inkfist-dc958164
+  embeddable: false
+  platforms:
+    - browser
+  controls:
+    - "A / D: walk"
+    - "W: jump"
+    - "S: crouch"
+    - "Hold away from opponent: block"
+creator:
+  name: twohands
+  handle: twohands
+made:
+  models: []
+  tools:
+    - tesana
+  aiShare: most
+  source: Tesana
+  evidence: direct
+  evidenceUrl: https://tesana.com/game/inkfist-dc958164
+tech:
+  multiplayer: single
+genres:
+  - fighting
+  - action
+media:
+  cover: games/inkfist/cover
+  screenshots:
+    - games/inkfist/shot-1
+    - games/inkfist/shot-2
+dates:
+  added: 2026-10-08
+  updated: 2026-10-08
+status: live
+provenance:
+  foundVia: scout:platform-tesana

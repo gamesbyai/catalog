@@ -1,0 +1,69 @@
+slug: inkwharf
+title: Inkwharf
+tagline: Splash lime ink over a harbor pier and paint more of it than four bots
+  in three minutes
+description: >-
+  You're one of four lime fighters on a sunny harbor pier, with three teammates
+  going up against four magenta bots. It's smart that each blast of lime ink
+  lands on both the floor and the walls, which is why the pier gradually shows
+  who holds which spots.
+
+
+  Low barriers, wooden crates, and gray block walls line a stretch of bright
+  white tiles. Off in the background there's a lighthouse banded in red and
+  white, some palm trees, strings of colorful flags, and a huge suspension
+  bridge, more bridge than one pier really needs. The whole scene has a stylized
+  look.
+
+
+  Each match runs on a three-minute clock, and when it hits zero, whichever team
+  has painted more of the pier wins.
+
+
+  The minimap in the corner helps you see the unpainted ground and the magenta
+  team's advance, which makes a lot of sense when paint decides the match. Hit
+  TAB to bring up the full map.
+
+
+  You're playing in third person, with the camera trailing your fighter from
+  behind.
+
+
+  Up top, weapon icons show what every fighter carries, with your squad on the
+  left and the bots on the right, which makes for a thoughtful layout that keeps
+  both sides in view. The countdown's in the middle, between the two teams.
+  Pause and sound buttons sit in the top-left corner.
+play:
+  url: https://tesana.com/game/inkwharf
+  embeddable: false
+  platforms:
+    - browser
+  controls:
+    - "TAB: open the full map"
+creator:
+  name: neonharbor
+  handle: neonharbor
+made:
+  models: []
+  tools:
+    - tesana
+  aiShare: most
+  source: Tesana
+  evidence: direct
+  evidenceUrl: https://tesana.com/game/inkwharf
+tech:
+  multiplayer: single
+genres:
+  - shooter
+  - arcade
+media:
+  cover: games/inkwharf/cover
+  screenshots:
+    - games/inkwharf/shot-1
+    - games/inkwharf/shot-2
+dates:
+  added: 2026-10-08
+  updated: 2026-10-08
+status: live
+provenance:
+  foundVia: scout:platform-tesana

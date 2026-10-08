@@ -1,0 +1,71 @@
+slug: boneyard-rally
+title: Boneyard Rally
+tagline: Race a skeleton kart through a moonlit graveyard and boost past five rivals.
+description: >-
+  You're the skeleton driving a chunky kart on orange wheels, waiting on the
+  grid under a skull-topped gate. Under a full moon, the graveyard around the
+  track has gothic towers, bare trees, lanterns that flicker and rows of
+  headstones, all drawn with a bold cel-shaded look.
+
+
+  Three laps, five rivals, and you're all skeletons, which makes for a pretty
+  bony field.
+
+
+  Each of the five rivals has a look of their own: a red cap, a crown, a witch's
+  hat, a Western hat or a top hat. Giving every rival different headwear makes
+  each one easy to pick out from the others, which comes in handy when they're
+  all skeletons. Their karts have glowing wheels in purple and blue, plus red,
+  yellow and teal.
+
+
+  There's a perfect start for anyone who hits the up arrow right as the
+  countdown's 1 fades, which is a generous reward for timing before the wheels
+  turn.
+
+
+  The screen packs more into a kart race than you'd expect, with a little map of
+  the track, the lap you're on, where you stand, the clock and your score. A
+  speedometer and a rev counter, both styled like analog dials, sit alongside
+  all of that.
+
+
+  To get past the pack, you hold Space to use the Soul Boost, which you fill by
+  grabbing glowing blue souls. Tying the boost to those souls gives them a
+  purpose beyond the shine, so they're more than set dressing. Stay clear of the
+  headstones lining the track.
+play:
+  url: https://tesana.com/game/boneyard-rally
+  embeddable: false
+  platforms:
+    - browser
+  controls:
+    - "Up arrow: tap as the countdown's 1 fades for a perfect start"
+    - "Space: hold to boost"
+creator:
+  name: pitlanepixel
+  handle: pitlanepixel
+made:
+  models: []
+  tools:
+    - tesana
+  aiShare: most
+  source: Tesana
+  evidence: direct
+  evidenceUrl: https://tesana.com/game/boneyard-rally
+tech:
+  multiplayer: single
+genres:
+  - racing
+  - arcade
+media:
+  cover: games/boneyard-rally/cover
+  screenshots:
+    - games/boneyard-rally/shot-1
+    - games/boneyard-rally/shot-2
+dates:
+  added: 2026-10-08
+  updated: 2026-10-08
+status: live
+provenance:
+  foundVia: scout:platform-tesana

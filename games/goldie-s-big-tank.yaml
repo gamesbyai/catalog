@@ -1,0 +1,64 @@
+slug: goldie-s-big-tank
+title: Goldie's Big Tank
+tagline: Swim Goldie around her tank, keep her fed, and gather gold coins.
+description: >-
+  You're steering Goldie, a round little goldfish, from a third-person view
+  while she swims around a big home aquarium.
+
+
+  The game opens inside the tank, with a pink-roofed stone castle in the
+  foreground. The bars and counters are tucked into the top left corner, small
+  enough to leave the tank in view, while a pause button sits in the top right.
+  The look's stylized, with bright rainbow gravel covering the floor.
+
+
+  Among the classic decorations sit a brass diver's helmet and some leafy
+  plants. Then, oddly enough, there's a pirate ship flying a
+  skull-and-crossbones flag.
+
+
+  Her hunger's the number to watch, so she stays fed. Gold coins are scattered
+  around the aquarium, and every one you grab adds to your total. In a tank this
+  big, a short surge from the dash bar makes sense when you need to move fast.
+
+
+  A yellow outline means you can interact with an object, which is a helpful
+  signal while you explore the decor.
+
+
+  You swim with WASD. There's controller support too, alongside keyboard and
+  mouse.
+play:
+  url: https://tesana.com/game/goldies-big-tank
+  embeddable: false
+  platforms:
+    - browser
+  controls:
+    - "WASD: swim"
+creator:
+  name: goldiedev
+  handle: goldiedev
+made:
+  models: []
+  tools:
+    - tesana
+  aiShare: most
+  source: Tesana
+  evidence: direct
+  evidenceUrl: https://tesana.com/game/goldies-big-tank
+tech:
+  multiplayer: single
+genres:
+  - simulation
+  - casual
+media:
+  cover: games/goldie-s-big-tank/cover
+  screenshots:
+    - games/goldie-s-big-tank/shot-1
+    - games/goldie-s-big-tank/shot-2
+dates:
+  added: 2026-10-08
+  updated: 2026-10-08
+status: live
+provenance:
+  foundVia: scout:platform-tesana

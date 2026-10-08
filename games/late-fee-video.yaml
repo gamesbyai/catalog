@@ -1,0 +1,73 @@
+slug: late-fee-video
+title: Late Fee Video
+tagline: Rewind returns, reshelve tapes and keep the line moving in Uncle Ray's
+  video store.
+description: >-
+  Start by grabbing one of the tapes lying on the floor, where they've been
+  scattered everywhere since Uncle Ray's last day.
+
+
+  Uncle Ray has retired and passed his video store on to you, which this
+  first-person simulator asks you to take over. The carpet's covered in confetti
+  stars, a pretty odd touch for a store like this.
+
+
+  Running the place is hands-on, from rewinding returns to sorting the shelves
+  alphabetically by genre and keeping the candy wall topped up. You grab, place,
+  rotate and toss items, and you can flip your pose too. Hold Tab to get a close
+  look at a tape before it heads back to the shelf, which makes sense when every
+  tape's one of a kind.
+
+
+  WASD gets you up and down the aisles, the mouse changes where you're looking,
+  Shift lets you run, and C drops you low to reach the bottom shelves.
+
+
+  The line has to be moving before the regulars walk out. You'll see a tidy
+  percentage on screen, along with counts of misfiled and loose tapes, trash,
+  and the people in the store and in line.
+
+
+  Progress is saved when each day ends, a smart call that lets the shop carry
+  over from one shift to the next.
+play:
+  url: https://tesana.com/game/late-fee-video
+  embeddable: false
+  platforms:
+    - browser
+  controls:
+    - "WASD: move through the aisles"
+    - "Mouse: look around"
+    - "Shift: run"
+    - "C: crouch to reach the low shelves"
+    - "Tab (hold): inspect a tape up close"
+    - "Click: pick up a tape you're looking at"
+    - "Esc: pause"
+    - "M: mute the store radio"
+creator:
+  name: shiftworkgames
+  handle: shiftworkgames
+made:
+  models: []
+  tools:
+    - tesana
+  aiShare: most
+  source: Tesana
+  evidence: direct
+  evidenceUrl: https://tesana.com/game/late-fee-video
+tech:
+  multiplayer: single
+genres:
+  - simulation
+  - management
+media:
+  cover: games/late-fee-video/cover
+  screenshots:
+    - games/late-fee-video/shot-1
+    - games/late-fee-video/shot-2
+dates:
+  added: 2026-10-08
+  updated: 2026-10-08
+status: live
+provenance:
+  foundVia: scout:platform-tesana
