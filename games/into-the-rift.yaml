@@ -3,10 +3,8 @@ title: Into The Rift
 tagline: Draft a team of riftlings and auto-battle through the rift to defeat
   the elite boss.
 description: >-
-  You begin in a dark pixel-art forest clearing and walk your character up to
-  one of three creatures to pick your starter riftling. A timer in the top left
-  corner starts at 0:00, and a volume slider sits in the top right next to the
-  control hints.
+  You start by walking your character up to one of three creatures to pick your
+  starter riftling.
 
 
   From there you draft a team of riftlings and send them through the rift in
@@ -57,7 +55,7 @@ media:
     - games/into-the-rift/shot-2
 dates:
   added: 2026-10-01
-  updated: 2026-10-02
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:vibejam-2026

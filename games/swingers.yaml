@@ -6,30 +6,23 @@ description: >-
   grapple onto it and swing off through the city.
 
 
-  Your goal is to rack up the most dollars in property damage. The bill climbs
-  in a running total at the top center of the screen, where it's hard to miss.
-  _offmylawn's idea is that you swing with your friends to see who causes more
-  damage to critical infrastructure.
+  Your goal is to rack up the most dollars in property damage. _offmylawn's idea
+  is that you swing with your friends to see who causes more damage to critical
+  infrastructure.
 
 
-  Right click does an air dash. The city itself is a whole field of tall blue
-  towers, with billboards perched on the rooftops and green rings floating in
-  the gaps.
+  Right click does an air dash. You can smash into the billboards and fly
+  through the green speed rings.
 
 
   A Getting Started checklist eases you in with five jobs to tick off, asking
   you to grapple onto a building, air dash, fly through a green speed ring,
-  smash into a billboard and destroy part of a building.
-
-
-  There's a speed readout in meters per second sitting just above the crosshair,
-  a nice touch for a game built on momentum. A timer sits in the top left
-  corner. Back on the start menu, a global leaderboard ranks everyone by their
-  damage total.
+  smash into a billboard and destroy part of a building. A global leaderboard
+  ranks everyone by their damage total.
 
 
   _offmylawn made it, and they say they simply love swinging and insurance
-  fraud. Hints and audio can each be switched on or off from the start menu.
+  fraud.
 play:
   url: https://swing.offmylawn.com
   embeddable: true
@@ -70,7 +63,7 @@ media:
     - games/swingers/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-10-02
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:vibejam-2026

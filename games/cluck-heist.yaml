@@ -2,33 +2,23 @@ slug: cluck-heist
 title: Cluck Heist
 tagline: Rampage as a chicken through a cartoon version of your own neighborhood.
 description: >-
-  You're a menacing chicken loose on a top-down map of a real neighborhood. You
-  peck, poop, scream and lob eggs while you grab items and carry them back to
-  your nest.
+  You're a menacing chicken loose in a real neighborhood. You peck, poop, scream
+  and lob eggs while you grab items and carry them back to your nest.
 
 
-  A start screen asks for your handle and a location. Type in an address and
+  You pick a handle and a location before you start. Type in an address and
   OpenStreetMap data rebuilds those streets as a cartoon world, but if you leave
-  it blank you get dropped on a random suburban block. Oddly, the sign-up card
-  insists a pigeon needs a name, even though you're very much a chicken.
+  it blank you get dropped on a random suburban block.
 
 
-  A row of wanted stars in the upper left tracks how much attention you're
-  pulling from the humans, while your score sits at the upper right.
+  Wanted stars track how much attention you're pulling from the humans.
 
 
-  Under the stars there's an HP bar and a food bar, plus a counter for the items
-  you're carrying and one for your eggs out of three. There's even a cat posse
-  tracked out of three, which seems like a lot of backup for one bird.
+  HP and food are both part of the game. A cat posse is in the mix too.
 
 
-  An address bar along the top loads a new location, so your crime spree doesn't
-  have to stay on one street.
-
-
-  Zoom buttons sit in the top corner. A small music player with a track selector
-  hangs in the lower left. The keys for every move are printed along the bottom
-  edge of the screen.
+  You can also load a new location, so your crime spree doesn't have to stay on
+  one street. The game has a music player with a track selector.
 
 
   catesb made it with nothing particular in mind, setting out to build the most
@@ -77,7 +67,7 @@ media:
     - games/cluck-heist/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-10-02
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:vibejam-2026

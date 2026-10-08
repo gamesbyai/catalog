@@ -3,40 +3,31 @@ title: Plunder
 tagline: Sail a pirate ship, collect resources, and sink rival captains on
   chaotic islands.
 description: >-
-  You captain a pirate ship in a top-down ocean arena, trading cannon fire with
-  nineteen rival captains while you haul wood and gold home to spend on
-  upgrades.
+  You captain a pirate ship in an ocean arena, trading cannon fire with nineteen
+  rival captains while you haul wood and gold home to spend on upgrades.
 
 
-  You get resources from Wood Islands and Gold Islands, and each one has a red
-  ring around it. You gather by staying inside that ring instead of sitting on
-  the island itself. None of it counts until you sail back to the green city
-  ring and bank it, so a full hold out at sea is never safe.
+  You get resources from Wood Islands and Gold Islands. You gather by staying
+  inside that ring instead of sitting on the island itself. None of it counts
+  until you sail back to the city ring and bank it, so a full hold out at sea is
+  never safe.
 
 
   If another captain sinks you before you get home, your unbanked cargo is at
-  risk. The game clearly wants that rule remembered, because it's spelled out in
-  a box at the bottom of the screen right under the gathering tip.
+  risk.
 
 
   The city ring is also where you spend what you've banked, with four upgrades
-  for Cannon, Sail, Hull and Cargo. Level 1 prices run from 15 wood and 25
-  gold for cannons to 28 wood and 12 gold for the hull, and a considerate
-  banner at the top tells you how much more wood you still need.
+  for Cannon, Sail, Hull and Cargo. Level 1 prices run from 15 wood and 25 gold
+  for cannons to 28 wood and 12 gold for the hull.
 
 
   Each match opens with a 12-second grace period where you can't take damage.
+  WASD steers the ship, while Q and E fire broadsides.
 
 
-  WASD steers the ship, while Q and E fire broadsides. The HUD shows the match
-  phase, a countdown timer, the storm's radius and whether the boss is still
-  dormant. It also counts your kills and prestige, and a whole top-ten board
-  ranks the captains.
-
-
-  You pick a ship on the fleet screen before you set sail. You start in the
-  Sloop, with 120 hull, 16 cannons and room for 50 cargo, while the Galleon and
-  Brig show up as locked silhouettes.
+  You choose your ship before you set sail. You start in the Sloop, with 120
+  hull, 16 cannons and room for 50 cargo, while the Galleon and Brig are locked.
 play:
   url: https://plunder.magnificentgames.com
   embeddable: true
@@ -75,7 +66,7 @@ media:
     - games/plunder/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-10-02
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:vibejam-2026

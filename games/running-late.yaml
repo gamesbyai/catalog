@@ -5,38 +5,31 @@ tagline: Sprint and wall-jump through 30 commuter rooms while deaths add time to
 description: >-
   An ordinary commute gets stretched into 30 rooms with a 24-minute clock
   running the whole way. You run, hold the jump button longer when you want more
-  height, and bounce back and forth between walls. Each room has an orange
-  validator you have to land on before the exit unlocks.
+  height, and bounce back and forth between walls. Each room has a validator you
+  have to land on before the exit unlocks.
 
 
   The rooms bring in moving trains, timed gates and pressure plates, and the
-  mechanics arrive in five tiers that start with plain jumping and end with a
-  whole stack of everything combined. Coyote time and input buffering are both
-  in there, along with a wall-slide and the wall-jump.
+  mechanics arrive in five tiers that start with plain jumping and end with
+  everything combined. Coyote time and input buffering are both in there, along
+  with a wall-slide and the wall-jump.
 
 
   Dying is instant and a failed room comes back in under a quarter of a second,
-  but each death still adds twenty seconds to a clock that, a bit cruelly,
-  doesn't reset when you do.
+  but each death still adds twenty seconds to a clock that doesn't reset when
+  you do.
 
 
   Between legs of the trip you pick Local, Express or Shortcut, and there's no
   going back on that choice. The 30 rooms themselves get pulled from 35
-  hand-built modules by a journey seed printed on the start screen, right
-  beside a start button that fittingly says "Catch the 08:36" in big letters.
-  You can edit or copy that seed, rerun the same one, or start a new commute
-  with a fresh seed.
+  hand-built modules by a journey seed. You can edit or copy that seed, rerun
+  the same one, or start a new commute with a fresh seed.
 
 
   Afterward the game keeps all 30 splits, your route history, your deaths and a
   record of how you arrived, and paired with same-seed retries that turns each
-  commute into something you can come back and shave down.
-
-
-  Settings give music and sound effects their own volume controls, plus reduced
-  motion and fullscreen. Landscape touch controls are included too. It's a
-  thoughtful touch that the important surfaces also stand out by silhouette,
-  pattern, motion and shape instead of leaning only on the two-color palette.
+  commute into something you can come back and shave down. Landscape touch
+  controls are included too.
 
 
   0x00000000 used generative AI to help with the code, the copy, three transit
@@ -89,7 +82,7 @@ media:
     - games/running-late/shot-2
 dates:
   added: 2026-09-30
-  updated: 2026-10-02
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:aibgj-4

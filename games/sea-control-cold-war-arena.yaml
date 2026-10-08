@@ -13,25 +13,21 @@ description: >-
   objective.
 
 
-  The camera looks straight down on the water at your ship, which starts out as
-  a small fast attack craft. The steering is laid out a bit like a real ship's
-  bridge, with one slider for the throttle running from full ahead through stop
-  to full astern and another swinging the rudder from hard to port to hard to
-  starboard.
+  Your ship starts out as a small fast attack craft. You steer with a throttle
+  slider that runs from full ahead through stop to full astern, and a rudder
+  slider that swings from hard to port to hard to starboard.
 
 
-  To attack, you click an enemy hull to lock onto it. A panel in the top right
-  counts the anti-ship missiles loaded on your port and starboard sides, with a
-  bar for your hull's HP just above. There's a round radar scope up there too,
-  and R switches the search radar on and off.
+  To attack, you click an enemy hull to lock onto it. Your ship carries
+  anti-ship missiles on both its port and starboard sides, and its hull has HP.
+  R switches the search radar on and off.
 
 
-  Over in the top left you'll find the match timer, your score, an XP bar and
-  your rank, which begins at a humble Ensign.
+  Matches are timed and scored, and your rank starts out as a humble Ensign.
 
 
-  A comms log calls out everyone who joins the room. When you want the full
-  briefing, the Help button opens it.
+  The game announces everyone who joins the room. The game includes a full
+  briefing for when you want more detail.
 play:
   url: https://coldwararena.seacontrol.net
   embeddable: true
@@ -70,7 +66,7 @@ media:
     - games/sea-control-cold-war-arena/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-10-02
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:vibejam-2026

@@ -3,11 +3,10 @@ title: Cube's Gravity Maze
 tagline: Flip gravity to run mazes, dodge traps, collect keys, and beat the Core
   Guardian boss
 description: >-
-  Hitting Space flips gravity, so the little green cube falls toward either the
-  ceiling or the floor of a randomly generated maze. The left and right arrow
-  keys handle the rest of your movement. A hint at the bottom of the screen lays
-  out the plan, which is to find the key or the exit and break obstacles on your
-  way.
+  Hitting Space flips gravity, so the cube falls toward either the ceiling or
+  the floor of a randomly generated maze. The left and right arrow keys handle
+  the rest of your movement. Your job is to find the key or the exit, and you
+  can break obstacles on the way.
 
 
   The maze is crowded with things that want you dead. Turrets shoot as soon as
@@ -15,14 +14,14 @@ description: >-
   while spiked wheels, crumbling blocks and spike traps fill in the gaps.
 
 
-  Red and blue phase walls add a wrinkle to the layout, and you can make them
-  passable with the Phase skill.
+  The maze also has red and blue phase walls, and you can make them passable
+  with the Phase skill.
 
 
   Your skills turn up inside the maze itself. Q is a dash that keeps you
   invulnerable while it lasts, W switches the phase walls, and E is a spin slash
   that burns energy. Coins refill that energy and give you extra protection on
-  top, a tidy way to tie spending to collecting.
+  top.
 
 
   Other pickups include shields, time orbs and a compass that points you to keys
@@ -34,13 +33,10 @@ description: >-
   survive as well.
 
 
-  The top bar tracks your level, score and timer, with a little skull counting
-  your deaths. Once you finish, a results screen records your score, deaths and
-  clear time.
+  Once you finish, the game records your score, deaths and clear time.
 
 
-  If the default keys don't suit you, you can remap the controls from the pause
-  menu in the top-left corner.
+  If the default keys don't suit you, you can remap the controls.
 
 
   Inkling123 built the game with AI assisting on the code, according to the
@@ -85,7 +81,7 @@ media:
     - games/cube-s-gravity-maze/shot-2
 dates:
   added: 2026-09-30
-  updated: 2026-10-02
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:aibgj-2

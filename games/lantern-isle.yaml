@@ -3,34 +3,25 @@ title: Lantern Isle
 tagline: Help island residents earn back crystal shards and restore shrines in a
   cozy adventure.
 description: >-
-  Walk your small character around a floating isometric island and talk to
-  whoever lives there. Anyone with something to say has a little speech bubble
-  hovering over their head. Their lines pop up in a text box along the bottom of
-  the screen, with the speaker's name sitting on top.
+  Walk your character around an island and talk to whoever lives there. Anyone
+  with something to say is marked with a speech bubble. Their lines come up as
+  dialogue, labeled with the speaker's name.
 
 
   On the first island, Elder Moss asks you to reunite a lost firefly with its
   friend, and a crystal shard appears. You pick it up and carry every shard to
-  the shrine in the middle, while a resident called Sprite mentions that more
-  glowing shards are scattered through the forest.
+  the shrine, while a resident called Sprite mentions that more glowing shards
+  are scattered through the forest.
 
 
-  A counter in the top left tracks your shards starting from 0 / 5, and there's
-  a Map button up at the top center.
+  The game spans six islands. Each character you help earns back a crystal
+  shard. As you restore the ancient shrines, the story slowly pieces together
+  why the Guardian Star went dark.
 
 
-  The whole game stretches across six islands, a generous amount of ground for a
-  cozy adventure. Each character you help earns back a crystal shard. As you
-  restore the ancient shrines, the story slowly pieces together why the Guardian
-  Star went dark.
+  You can pick Begin Adventure or head off into a separate Explore Mode instead.
 
 
-  The title screen lets you pick Begin Adventure or head off into a separate
-  Explore Mode instead.
-
-
-  The islands float against a soft purple sky, dotted with small trees and
-  glowing orbs, and a sound toggle is tucked into the top right corner.
   kristytaing drew on childhood memories of playing Animal Crossing and
   Poptropica when making it.
 play:
@@ -66,7 +57,7 @@ media:
     - games/lantern-isle/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-10-02
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:vibejam-2026

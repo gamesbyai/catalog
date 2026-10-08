@@ -2,20 +2,16 @@ slug: diggy-dash
 title: Diggy Dash
 tagline: Tap popping Diglett in 3D holes before the timer runs out.
 description: >-
-  The field is a 3x3 grid of stone-ringed holes set in a floor of green blocks,
-  with trees, mushrooms and flowers around the edges. Brown Diglett heads rise
-  out of the holes, and you tap them to score. The camera looks down at the grid
-  at an angle, in a soft cartoon 3D style.
+  The field is a 3x3 grid of holes. Diglett heads rise out of the holes, and you
+  tap them to score.
 
 
-  A wooden score counter sits in the top left corner and a countdown timer in
-  the top right. The clock starts at 45 seconds, and the goal is to tap as many
-  Digletts as you can before it reaches zero.
+  The clock starts at 45 seconds, and the goal is to tap as many Digletts as you
+  can before it reaches zero.
 
 
-  Scores go onto a leaderboard that you try to climb. The main menu offers Play,
-  Dashboard, Sound and About buttons. The creator chose Diglett because a
-  creature popping out of holes suits the whack-a-mole format.
+  Scores go onto a leaderboard that you try to climb. The creator chose Diglett
+  because a creature popping out of holes suits the whack-a-mole format.
 play:
   url: https://diggy-dash.vercel.app
   embeddable: true
@@ -52,7 +48,7 @@ media:
     - games/diggy-dash/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-10-02
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:vibejam-2026

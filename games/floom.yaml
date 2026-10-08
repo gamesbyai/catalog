@@ -3,33 +3,26 @@ title: floom
 tagline: Drift through a shared canvas, plant seeds, and grow flowers alongside
   strangers.
 description: >-
-  Press play and you're dropped into a shared green field with white seeds
-  floating past. You show up as a small dot with a generated name tag, something
-  like Swift Camellia, and other players turn up in that same space.
+  Press play and you're dropped into a shared field. You show up with a
+  generated name, something like Swift Camellia, and other players turn up in
+  that same space.
 
 
-  It pitches itself as a place where strangers run into each other by chance
-  and leave flowers, sound and brief connections behind.
+  It pitches itself as a place where strangers run into each other by chance and
+  leave flowers, sound and brief connections behind.
 
 
-  Two lines of text in the top right corner count how many of the 49 flowers
-  you've seen and show how long it'll be until the meadow resets. Forty-nine
-  is a specific number of flowers to keep track of. A help button sits quietly
-  in the top left.
+  The meadow holds 49 flowers in all, and it resets on a timer.
 
 
   Pressing spacebar opens a memento, a snapshot of the field with the date and
-  time stamped in the corner like an old film photo. There's a download button
-  right in that window. Since the meadow resets anyway, it makes sense that you
-  can save a picture of it.
+  time stamped on it. You can download the memento. Since the meadow resets
+  anyway, you can save a picture of it. You can share the meadow or take a
+  snapshot of it.
 
 
-  The bar along the bottom is minimal, with one button each for sharing,
-  taking a snapshot and toggling the sound.
-
-
-  jeremiespoken started from the effect people have on the world around them.
-  The other half of that idea is the effect their surroundings have on them in
+  jeremiespoken started from the effect people have on the world around them. It
+  also works the other way, with the space around people affecting them in
   return.
 play:
   url: https://floom-game.vercel.app
@@ -69,7 +62,7 @@ media:
     - games/floom/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-10-02
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:vibejam-2026

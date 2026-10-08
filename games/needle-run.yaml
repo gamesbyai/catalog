@@ -3,9 +3,8 @@ title: NEEDLE RUN
 tagline: Fly through gates, avoid pursuers, and chase score multipliers for a
   leaderboard spot.
 description: >-
-  Red diamond enemies keep closing in on your little arrow ship as it zips
-  across a neon grid, and you don't have a single weapon to fight them off
-  with.
+  Enemies keep closing in on your ship, and you don't have a single weapon to
+  fight them off with.
 
 
   Instead, your job is to fly through gates without getting caught while you
@@ -14,19 +13,13 @@ description: >-
   rather than an oversight.
 
 
-  Grabbing multipliers bumps up the number at the top of the screen, which
-  starts at a humble x1. You've also got a bomb held back in reserve. A small
-  note in the HUD tells you when it's ready, and B or Shift sets it off.
+  Grabbing multipliers raises your multiplier, which starts at x1. You've also
+  got a bomb held back in reserve. B or Shift sets off the bomb once it's ready.
+  You're chasing the top-ranked score.
 
 
-  Your own best score sits in the top left corner, while the top-ranked score
-  you're chasing stares back at you from the top right.
-
-
-  Scores go up to an online leaderboard, and it's right there on the title
-  screen beside a big glowing orange logo. There's even a profile editor on that
-  screen for tidying up how your entry looks. Space, a click or a tap starts the
-  run.
+  Scores go up to an online leaderboard. You can edit your profile to change how
+  your entry looks. Space, a click or a tap starts the run.
 
 
   You can move with the mouse, WASD, a gamepad's left stick or a virtual stick
@@ -73,7 +66,7 @@ media:
     - games/needle-run/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-10-02
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:vibejam-2026

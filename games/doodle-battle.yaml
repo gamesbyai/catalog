@@ -2,15 +2,9 @@ slug: doodle-battle
 title: Doodle Battle
 tagline: Sketch a picture, let AI name it, then watch it fight your opponent's drawing.
 description: >-
-  Three big glossy buttons in yellow, pink and teal greet you on the start
-  screen. Quick Play throws you into a game automatically, while Create Room
-  sets one up that you can invite friends into. Join Room takes a room code, or
-  if you'd rather, you can browse the open rooms instead.
-
-
-  There's a Tutorial button and a profile icon up in the top corner. The whole
-  thing's got a candy-bright look, with chunky bubble lettering and rounded
-  panels everywhere.
+  Quick Play throws you into a game automatically, while Create Room sets one up
+  that you can invite friends into. Join Room takes a room code, or if you'd
+  rather, you can browse the open rooms instead.
 
 
   Every match starts with a sketch, and it's an AI that has to work out what
@@ -25,8 +19,7 @@ description: >-
   at 4 players, 5 rounds and a 60-second drawing timer.
 
 
-  Drawing time's set on a slider, which gives the room creator a bit more
-  freedom to nudge it up or down.
+  The room creator can nudge the drawing time up or down with a slider.
 play:
   url: https://doodlebattle.online
   embeddable: true
@@ -62,7 +55,7 @@ media:
     - games/doodle-battle/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-10-02
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:vibejam-2026

@@ -4,33 +4,17 @@ tagline: Play a Madrid pigeon dodging runners, energy gels, and selfie-stick
   influencers.
 description: >-
   Push the on-screen joystick to steer a pigeon down a Madrid street that's been
-  closed off for a marathon. There's also a red Jump button waiting at the
-  bottom right.
+  closed off for a marathon. There's also a Jump button.
 
 
-  Your goal is to survive the race while runners, splattered energy gels and,
-  for some reason, influencers waving selfie sticks take over what used to be
-  your quiet patch of road.
-
-
-  The camera looks down at a tilt over a low-poly avenue with a yellow center
-  line and red barriers running along both sides. Spectators line the grass
-  verges, while parked cars sit beside the buildings. It's a tidy, toy-like
-  city block, all chunky trees and boxy buildings in reds and blues.
-
-
-  A distance counter in the top left starts at 0.0 KM and ticks up as you move,
-  with a segmented bar sitting underneath it.
-
-
-  Over in the top right, a red number keeps climbing as well. Pause and M
-  buttons sit along the right edge.
+  Your goal is to survive the race while runners, splattered energy gels and
+  influencers waving selfie sticks take over what used to be your quiet patch of
+  road. Your distance in km ticks up as you move.
 
 
   soyAlvaroMarin wanted to flip the usual view of an urban marathon, with its
   runners in expensive GPS watches and its runfluencers, and put you in the
-  feathers of an ordinary pigeon on Calle Alcalá. It's a funny choice of hero
-  for a race nobody asked the pigeons about. According to the creator, it's
+  feathers of an ordinary pigeon on Calle Alcalá. According to the creator, it's
   satire written with real affection for running culture.
 play:
   url: https://antimarathongame.sgty.es
@@ -71,7 +55,7 @@ media:
     - games/anti-marathon-game/shot-2
 dates:
   added: 2026-10-01
-  updated: 2026-10-02
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:vibejam-2026

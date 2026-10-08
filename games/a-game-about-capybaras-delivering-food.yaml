@@ -3,34 +3,28 @@ title: A Game About Capybaras Delivering Food
 tagline: Drive capybaras around a cozy open world delivering food without
   toppling the fruit stack.
 description: >-
-  You're a capybara on a scooter with a red delivery box strapped to the back,
-  working as a food courier in a cozy open world. The job is to accept orders
-  and get them where they're going as fast as you can. On the title screen your
-  capybara does it in sunglasses, which suits the job.
+  You're a capybara on a scooter with a delivery box strapped to the back,
+  working as a food courier in an open world. The job is to accept orders and
+  get them where they're going as fast as you can.
 
 
-  Whatever food you pick up stacks above the box. The title screen shows the
-  kind of tower this builds, with noodle cups, milk cartons, bubble tea and a
-  few other items piled into a tall column.
+  Whatever food you pick up stacks above the box. Items like noodle cups, milk
+  cartons, bubble tea and a few others pile up into a tall column above the box.
 
 
   Your goal is to keep that tower standing so nothing falls off before the order
   arrives.
 
 
-  The city you ride through has hills, trees, street lamps and apartment
-  buildings. leocooout, a former developer on a food delivery app, says the
-  buildings, the apps and the outdoor areas all carry the capybara theme. The
-  joke reaches well past the main character.
+  You make your deliveries by riding through a city. leocooout, a former
+  developer on a food delivery app, says the capybara theme runs through the
+  buildings, the apps and the outdoor areas. The theme also shows up in more
+  than just the main character. You can play online or offline.
 
 
-  From the menu you can play online or offline, change the settings or check a
-  stats screen.
-
-
-  The music, sound effects and 3D rigging each came from a separate AI tool, a
-  bit of a crew for one scooter-riding rodent. Suno made the music, ElevenLabs
-  supplied the sound effects and Tripo3D handled the rigging.
+  The music, sound effects and 3D rigging each came from a separate AI tool.
+  Suno made the music, ElevenLabs supplied the sound effects and Tripo3D handled
+  the rigging.
 play:
   url: https://capybara-vibejam26.leocoout.dev
   embeddable: true
@@ -68,7 +62,7 @@ media:
     - games/a-game-about-capybaras-delivering-food/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-10-02
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:vibejam-2026

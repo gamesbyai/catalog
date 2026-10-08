@@ -3,33 +3,24 @@ title: Leviathan
 tagline: Play a vengeful whale smashing whaling ships and snapping harpoon lines.
 description: >-
   Leviathan turns the Moby-Dick hunt around and puts you in the whale's body.
-  You come up out of the black deep to wreck whaling ships, and the title screen
-  sums up the mood with its tagline, "Take your revenge on the whalers."
+  You come up out of the deep to wreck whaling ships.
 
 
   Your jobs are to smash the fleets, snap their harpoon lines and free the other
-  whales, all before the hunters close in on you. Two bars in the top right
-  corner track your whale's health and its air. The air bar makes sense for an
-  animal that has to come up to breathe between attacks.
+  whales, all before the hunters close in on you. Your whale has health and air.
+  Your whale has to come up to breathe between attacks.
 
 
-  Down in the bottom left there's a running score, a timer and a count of the
-  ships you've sunk.
+  The controls are WASD, Shift, Space and F. The keys cover diving, rising and
+  splashing.
 
 
-  The controls sit along the bottom of the screen as WASD, Shift, Space and F.
-  Each key gets its own little whale icon, diving, rising or splashing, and it's
-  a nicer touch than a plain key list.
+  The game doesn't start you as the whale at all; you're rowing a little boat
+  past a big wooden ship.
 
 
-  The odd part is that the game doesn't start you as the whale at all, because
-  you're rowing a little lantern-lit boat past a big wooden ship.
-
-
-  A line of text tells you something's moving in the deeps and that you'd better
-  row for open water. The fog and the dark sea around that little boat set the
-  mood for the hunt. baumant points to the imagery of Moby-Dick as the
-  inspiration.
+  Something is moving in the deeps, and you'd better row for open water. baumant
+  points to the imagery of Moby-Dick as the inspiration.
 play:
   url: https://leviathan.timothybauman.com
   embeddable: true
@@ -69,7 +60,7 @@ media:
     - games/leviathan/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-10-02
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:vibejam-2026

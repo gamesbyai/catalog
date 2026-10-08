@@ -3,28 +3,21 @@ title: Scooter Boy
 tagline: Ride an electric scooter through traffic, grab coins, and hop through portals.
 description: >-
   Scooter Boy has you riding an electric scooter down a road full of traffic,
-  switching lanes to slip between the cars while you scoop up coins. The
-  roadside is low-poly and blocky, with buildings, trees and speed signs lining
-  the way.
+  switching lanes to slip between the cars while you scoop up coins.
 
 
   The left and right arrows move you over a lane, and the up arrow launches you
   into a jump.
 
 
-  Once you're in the air, pressing arrows makes the rider pull off tricks, a
-  neat bit of extra mileage from keys you're already using. On a touch screen
-  you swipe to move and jump instead. Any key or a tap gets things rolling.
+  Once you're in the air, pressing arrows makes the rider pull off tricks. On a
+  touch screen you swipe to move and jump instead. Any key or a tap gets things
+  rolling.
 
 
-  The screen stays clean while you ride, with a coin counter and a sound
-  toggle in the top left corner and a small label up top marking the mode as
-  Endless.
-
-
-  When a run ends, the game over screen shows the coins you collected next to
-  your best total. You can type in a name and submit your score to a
-  leaderboard, and it keeps separate Endless and Daily tabs.
+  When a run ends, your coins collected are measured against your best total.
+  You can type in a name and submit your score to a leaderboard, which keeps
+  Endless and Daily scores separate.
 
 
   Portals also turn up along the road, and they don't lead to bonus areas at all
@@ -73,7 +66,7 @@ media:
     - games/scooter-boy/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-10-02
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:vibejam-2026

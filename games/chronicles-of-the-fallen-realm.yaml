@@ -14,9 +14,7 @@ description: >-
 
 
   A session lasts about half an hour. You can play with a mouse, a touchscreen,
-  or a gamepad, including Xbox and PlayStation controllers. The title screen
-  offers Begin and About buttons, with the name of the current music track shown
-  in the top corner.
+  or a gamepad, including Xbox and PlayStation controllers.
 play:
   url: https://cinderfall-games.itch.io/chronicles-of-the-fallen-realm
   embeddable: false
@@ -62,7 +60,7 @@ media:
     - games/chronicles-of-the-fallen-realm/shot-2
 dates:
   added: 2026-09-30
-  updated: 2026-10-01
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:aibgj-4

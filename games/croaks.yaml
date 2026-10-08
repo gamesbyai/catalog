@@ -2,21 +2,18 @@ slug: croaks
 title: CROAKS
 tagline: Aim and fire at rival frogs in a turn-based artillery battle.
 description: >-
-  A pixel-art swamp full of armed frogs greets you on the title screen, with one
-  of them mid-leap and looking a bit panicked about the grenade it's clutching
-  under a banner that promises 21 weapons. From the menu you can find an online
+  Your frogs are armed, and the game has 21 weapons. You can find an online
   opponent, play against the AI, try Survival, take on a daily challenge with
-  its own countdown or head into Customize.
+  its own countdown, or use Customize.
 
 
   On your first visit there's a kind offer of a roughly 90-second tutorial,
   where the AI opponent stays passive and your ammo never runs out.
 
 
-  The matches are turn-based artillery between two teams of frogs on a side-view
-  landscape of dirt hills. You and the other side take turns blowing each other
-  up, and whoever still has frogs standing at the end wins. A round timer ticks
-  at the top of the screen while each team's health sits in its own bar.
+  The matches are turn-based artillery between two teams of frogs. You and the
+  other side take turns blowing each other up, and whoever still has frogs
+  standing at the end wins.
 
 
   Number keys 1 to 9 pick your weapon, and Tab hands control to a different frog
@@ -28,9 +25,8 @@ description: >-
   your frog clear.
 
 
-  Along the bottom sits the weapon bar, which splits the arsenal into Direct,
-  Fuse / Cluster, Special and Utility groups. It's a tidy way to fit 21
-  weapons on a single strip.
+  The arsenal is sorted into four groups, Direct, Fuse / Cluster, Special and
+  Utility.
 
 
   thomaskanze grew up playing Worms and made CROAKS to bring those memories
@@ -75,7 +71,7 @@ media:
     - games/croaks/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-10-02
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:vibejam-2026

@@ -2,28 +2,13 @@ slug: astroxite
 title: Astroxite
 tagline: Take jobs between alien settlements and build a life in a shared frontier.
 description: >-
-  Astroxite puts you on a frontier wilderness that's shared with other players
-  online, with alien settlements scattered across it. You pick up jobs that run
-  between those settlements and build a reputation along the way, while making a
-  life of your own out in the wild.
+  Astroxite is played in a frontier wilderness shared with other players online,
+  with alien settlements scattered across it. You pick up jobs that run between
+  those settlements and build a reputation along the way, while making a life of
+  your own out in the wild.
 
 
-  You start as a small blocky figure seen from overhead, standing on
-  desert-colored ground. Dark four-legged animals wander around close by. It's a
-  bit of a quiet first sight for a place that also keeps a combat log.
-
-
-  Your health bar starts at 200 and your CRD balance at a humble zero, while
-  an RVT counter already sits at 500.
-
-
-  A clock and a weather readout sit in the top corner, next to your ping and
-  your map coordinates. There's also a guide button marked Start here on the
-  right edge, and a world this open can use one.
-
-
-  Down in the bottom left, a comms panel switches between a chat tab and that
-  combat log.
+  A comms panel lets you switch between chat and the combat log.
 
 
   You can jump in as a guest without signing up. Sending chat messages, though,
@@ -66,7 +51,7 @@ media:
     - games/astroxite/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-10-02
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:vibejam-2026

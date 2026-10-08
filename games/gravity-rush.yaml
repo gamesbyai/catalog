@@ -3,26 +3,18 @@ title: Gravity Rush
 tagline: Flip gravity to run, jump, and collect crystals through endless
   generated levels.
 description: >-
-  One button flips gravity. You steer a small teal cube left and right along
-  floating light-blue platforms, and pressing the flip key switches which way is
-  down. Yellow crystals sit on and around the platforms, and the first screen
-  shows a pink pyramid hazard floating nearby.
+  One button flips gravity. You steer the cube left and right along the
+  platforms, and pressing the flip key switches which way is down. Yellow
+  crystals are what you collect, and pink pyramids are hazards to dodge.
 
 
-  Each level asks you to collect every crystal and dodge the hazards. A counter
-  in the top left starts at 0/5 on level 1, next to a level label. The top right
-  shows three hearts and a score counter.
+  Each level asks you to collect every crystal and dodge the hazards. Level 1
+  asks you to collect 5 crystals.
 
 
   Levels are procedurally generated and continue without a stated end, with
-  hazards that escalate as you advance. A glowing ring labeled as a portal sits
-  near the start. The creator cites VVVVVV and momentum-based platformers as
-  inspiration.
-
-
-  The scene is rendered in 3D with soft, pale colors and a fogged background,
-  while movement stays on a side-view line. A short on-screen prompt at the
-  start lists the controls.
+  hazards that escalate as you advance. The creator cites VVVVVV and
+  momentum-based platformers as inspiration. Movement stays on a side-view line.
 play:
   url: https://gravity-heist.vercel.app
   embeddable: true
@@ -62,7 +54,7 @@ media:
     - games/gravity-rush/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-10-01
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:vibejam-2026

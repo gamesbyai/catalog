@@ -2,30 +2,23 @@ slug: videovideogame
 title: VideoVideoGame
 tagline: Choose your path through 100+ video scenes and short minigames as Levelsio.
 description: >-
-  Each scene in story mode is a short video that stops on a prompt with text
-  buttons, like "Pet the dog" or "Storm is coming". Whichever one you pick
+  Each scene in story mode is a short video that ends on a prompt with text
+  choices, like "Pet the dog" or "Storm is coming". Whichever one you pick
   decides which clip plays next, so the whole choose-your-own-adventure is told
   through footage instead of text.
 
 
-  Levelsio is the main character, and the title screen makes the dedication
-  plain with a big "for @levelsio" right under the name.
+  Levelsio is the main character, and the game carries the dedication "for
+  @levelsio."
 
 
-  It opens on a boat out on a lake, with a dog aboard and hills rising along
-  the shore. From there the story branches across more than 100 videos and
-  scenes. Different choices lead you to different clips, which adds up to a
-  large stack of generated video for one story.
+  The story opens with a dog aboard a boat. From there the story branches across
+  more than 100 videos and scenes. Different choices lead you to different
+  clips, and the one story is made up of a large amount of generated video.
 
 
   There's also a separate minigames mode with a few games in it, including
-  racing and puzzle types.
-
-
-  Next to the two modes, the menu has a How to Play screen and, a bit
-  unexpectedly for a story game, a leaderboard. The video plays in a frame
-  beside the menu, and you get a fullscreen button on that frame plus a sound
-  toggle up in the top corner.
+  racing and puzzle types. There's also a How to Play screen and a leaderboard.
 
 
   javitoshi generated the clips with Seedance. According to javitoshi, making
@@ -65,7 +58,7 @@ media:
     - games/videovideogame/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-10-02
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:vibejam-2026

@@ -2,18 +2,16 @@ slug: starjam
 title: StarJam
 tagline: Place defenses and click for income in a tower defense idler hybrid.
 description: >-
-  StarJam drops you in as an astronaut standing in a field of blue and red
-  crystal clusters, right next to a refinery that's hungry for both colors.
+  StarJam casts you as an astronaut, and a refinery is hungry for both blue and
+  red crystals.
 
 
-  Counters under your character start at 0/5 for each color. The refinery takes
-  one blue and one red crystal and turns the pair into currency. That money is
-  what pays for your upgrades.
+  The refinery takes one blue and one red crystal and turns the pair into
+  currency. That money is what pays for your upgrades.
 
 
-  Your goal is a whole 7,000 crystals, gathered as quickly as you can. A timer
-  ticks at the top of the screen while a purple crystal counter in the top left
-  tracks how close you are.
+  Your goal is 7,000 crystals, gathered as quickly as you can. A purple crystal
+  counter tracks how close you are to the goal.
 
 
   Every time the refinery processes crystals, it draws in aliens bent on
@@ -23,11 +21,8 @@ description: >-
   Since the machine paying you is also what brings the attack, the game ends up
   mixing tower defense with clicker and idle play. A text tutorial explains all
   of this at the start, and you click Next to step through it. If you'd rather
-  jump straight in, there's a skip button tucked in the top left.
-
-
-  It's all drawn in chunky pixel art, with a dark rocky ground that makes the
-  crystal colors pop. Space pauses the game, and F toggles fullscreen.
+  jump straight in, there's a skip button. Space pauses the game, and F toggles
+  fullscreen.
 play:
   url: https://star-jam.vercel.app
   embeddable: true
@@ -67,7 +62,7 @@ media:
     - games/starjam/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-10-02
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:vibejam-2026

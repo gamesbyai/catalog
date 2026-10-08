@@ -5,29 +5,17 @@ tagline: Pilot a rescue helicopter to pull trapped survivors out of disasters
 description: >-
   Take a rescue chopper into a disaster zone and get the trapped people out
   before the clock runs down. Each mission comes down to how carefully you can
-  fly against how much time you've got left. In the city level you start on a
-  glowing yellow helipad on a rooftop, with a green beam of light shooting up
-  into the sky beside you.
+  fly against how much time you've got left.
 
 
-  The setting changes from level to level, taking you from towers on fire to the
-  edges of mountain cliffs, then suburbs under floodwater, a highway full of
-  crashed cars and a blizzard in the arctic. Every place asks you to reach the
-  survivors in its own way, so the flying doesn't settle into one routine.
+  The levels move from towers on fire to mountain cliffs, flooded suburbs, a
+  highway full of crashed cars and an arctic blizzard. Every place asks you to
+  reach the survivors in its own way, so the flying doesn't settle into one
+  routine.
 
 
-  Five different kinds of disaster make for a busy shift in one small chopper.
-
-
-  The screen packs a full dashboard around the action. A counter in the top
-  left tracks rescued survivors out of five, while the middle shows the
-  seconds remaining, a little over two minutes in the night city. Over on the
-  right there's an integrity bar for the helicopter and an onboard row with
-  three empty boxes, and a small radar map sits in the bottom corner.
-
-
-  That city is a skyline of blocky towers full of warm yellow windows at dusk,
-  though a few windows on one building glow an ominous red instead.
+  You need to rescue five survivors before the clock runs out, and the night
+  city gives you a little over two minutes.
 
 
   marscole76 made it out of a plain fondness for helicopter rescue games.
@@ -68,7 +56,7 @@ media:
     - games/skyrescue/shot-2
 dates:
   added: 2026-10-01
-  updated: 2026-10-02
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:vibejam-2026

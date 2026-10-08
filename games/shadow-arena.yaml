@@ -2,22 +2,22 @@ slug: shadow-arena
 title: Shadow Arena
 tagline: Fight off waves of monsters and bosses in a top-down arena with a friend.
 description: >-
-  Pick a champion, press Space to ready up, and fight off waves of monsters in a
-  top-down arena. You level up in the middle of a fight and can chase unusual
+  Pick a champion, press Space to ready up, and fight off waves of monsters in
+  an arena. You level up in the middle of a fight, and you can go after unusual
   builds. Bosses show up among the waves, and the goal is to outlast them.
 
 
-  The character screen lists each class with a starting weapon, a passive and a
-  class weapon. The Mage uses a Magic Staff, gains area scaling and has Arcane
-  Runes. The Revenant fires a Soul Projectile, heals through Soul Rip when it
-  kills and has Soul Push. The Berserker swings a Heavy Cleave, gains Blood Rage
-  and has Ground Slam. HP, speed and damage bars compare the classes.
+  Each class comes with a starting weapon, a passive and a class weapon. The
+  Mage uses a Magic Staff, gains area scaling and has Arcane Runes. The Revenant
+  fires a Soul Projectile, heals through Soul Rip when it kills and has Soul
+  Push. The Berserker swings a Heavy Cleave, gains Blood Rage and has Ground
+  Slam.
 
 
-  Solo play and local multiplayer share one mode, with a selector for one to
-  four players on the same keyboard. Online co-op is a separate menu entry, and
-  a note on the title screen says it may feel less smooth than solo or local
-  play. The creator modeled the game on Vampire Survivors.
+  Solo play and local multiplayer share one mode, with one to four players on
+  the same keyboard. Online co-op is available as its own option, and the game
+  warns that it may feel less smooth than solo or local play. The creator
+  modeled the game on Vampire Survivors.
 play:
   url: https://shadow-arena-five.vercel.app
   embeddable: true
@@ -58,7 +58,7 @@ media:
     - games/shadow-arena/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-10-01
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:vibejam-2026

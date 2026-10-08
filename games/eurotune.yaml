@@ -2,11 +2,10 @@ slug: eurotune
 title: eurotune
 tagline: Answer Eurovision questions in a quick quiz built for phones and browsers.
 description: >-
-  A big headline promises five Eurovision songs, and below it there's a Start
-  Playing button next to a picker with three difficulty settings, Easy, Regular
-  and Expert. Easy narrows the pool to the top five grand-final finishers from
-  each year. That cuts out a whole lot of half-forgotten entries before you've
-  heard a note.
+  Each game uses five Eurovision songs, and you choose from three difficulty
+  levels, Easy, Regular or Expert. Easy narrows the pool to the top five
+  grand-final finishers from each year. Any entry that missed the top five in
+  its year's grand final is left out.
 
 
   Every one of the five rounds kicks off with a clip of a song. Then you've got
@@ -23,12 +22,7 @@ description: >-
   game reveal the answers.
 
 
-  Five clips with four questions apiece adds up to twenty answers in a full
-  game.
-
-
-  The screen stays tidy, with dark panels and orange buttons. A How It Works
-  panel on the right lays out all four steps before you press start.
+  A full game asks four questions on each of five clips, twenty answers in all.
 play:
   url: https://eurotune.net
   embeddable: true
@@ -62,7 +56,7 @@ media:
     - games/eurotune/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-10-02
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:vibejam-2026

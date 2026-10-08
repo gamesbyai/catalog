@@ -7,20 +7,12 @@ description: >-
   swallows you whole.
 
 
-  It all starts in first person, in a narrow teal corridor, with 30 staples
-  loaded and 100 health. A panel in the top corner gives you a single
-  objective, find a way out. Scrawled on the far wall is something that
-  appears to read "No escape," a rude welcome from your own office.
+  You start with 30 staples loaded and 100 health. Your one objective is to find
+  a way out.
 
 
-  The things standing in your way are 2D animated characters dropped into 3D
-  office spaces. The office itself takes a bit of a beating too, with desks,
-  furniture and other props all open to smashing.
-
-
-  Your stapler gun is inked by hand in black and white, a detailed drawing
-  that sits against flat teal walls traced with orange edges for a comic-book
-  horror look.
+  The things standing in your way are 2D animated characters. Desks, furniture
+  and other props can all be smashed.
 
 
   Lucas Teixeira set out to make a quick, violent and surreal shooter about
@@ -62,7 +54,7 @@ media:
     - games/effective-immediately/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-10-02
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:vibejam-2026

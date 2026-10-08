@@ -6,19 +6,13 @@ description: >-
   the round is yours.
 
 
-  Type a name, hit Play and you drop into a first-person arena where every other
-  player is a target. A Copy Link button on that same screen copies the game's
-  link.
+  You drop into a first-person arena where every other player is a target.
 
 
   What you're holding comes down to luck, because each spawn hands you a random
   weapon from a roster of 11. It runs from a pistol, shotgun, SMG and assault
   rifle through a sniper, rocket launcher, rail gun, minigun, flamethrower and
-  grenade launcher. Then, for some reason, there's also a katana.
-
-
-  The start screen lays out the whole lineup as little tags, each in its own
-  color, a tidy preview of the spawn lottery.
+  grenade launcher. The roster also includes a katana.
 
 
   WASD moves you, Space jumps and Shift drops you into a slide. You aim with the
@@ -70,7 +64,7 @@ media:
     - games/gun-ladder/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-10-02
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:vibejam-2026

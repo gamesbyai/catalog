@@ -7,28 +7,20 @@ description: >-
   steps has you press Space.
 
 
-  If you'd rather get straight to the fighting, there's a Tab button up in the
-  corner that skips the whole tutorial.
+  If you'd rather get straight to the fighting, Tab skips the tutorial.
 
 
-  Your fighter is shown from behind, sword in hand, with a crosshair in the
-  middle of the screen and a health bar in the bottom left. A counter in the top
-  left tells you how many players are in the room. Other fighters share the
-  space with you, and pressing T opens chat when you want to talk to them.
+  Other fighters share the space with you, and pressing T opens chat when you
+  want to talk to them.
 
 
-  The arena is a pink, dithered room with walls covered in dense blocks of
-  text, a long way from any medieval castle.
-
-
-  There's also a video screen hanging on one wall. A DJ panel on the left lets
-  you paste in a YouTube link, then queue it, play it right away, skip it or
-  stop it, putting you in charge of the dance music.
+  You can paste in a YouTube link to queue it, play it right away, skip it or
+  stop it, which puts you in charge of the dance music.
 
 
   neetsdotfun describes it as a multiplayer sword fighting game in the style of
   Chivalry: Medieval Warfare, set to dance music. You have to click once before
-  the DJ audio plays. A dropdown picks what the wall screen shows.
+  the DJ audio plays. You can choose what the video screen on the wall shows.
 play:
   url: https://fight.neets.fun
   embeddable: true
@@ -70,7 +62,7 @@ media:
     - games/raveswords/shot-2
 dates:
   added: 2026-10-01
-  updated: 2026-10-02
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:vibejam-2026

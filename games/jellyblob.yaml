@@ -3,43 +3,38 @@ title: JellyBlob
 tagline: Grow a wobbly jelly, trap rivals with your trail and go Supernova in a
   shared pond.
 description: >-
-  JellyBlob has you type a name for your jelly, pick one of several colors and
-  press Play, which drops you into a pond you share with other players online.
-  Even the menu is busy, with glowing dots and other jellies drifting over a
-  hex-patterned floor behind it.
+  You start as a small jelly in a pond you share with other players online, and
+  you grow by eating glowing dew.
 
 
-  Once you're in, your score sits in the top corner, a round minimap fills the
-  bottom-left and a bar labeled Glow runs along the bottom. Four numbered emote
-  buttons wait in the other corner, and they're a bit sweet, running from a
-  cheerful Hi and a GG to a smiley and a heart.
+  Every jelly leaves a glowing trail behind it, and touching someone else's
+  trail splats you. The game's own advice is to cut other jellies off.
 
 
-  Quests on the left are split into Daily, Weekly and Run tabs, and the daily
-  set reads like a blob's chore list, asking you to hop 40 times, vault 15
-  trails and stomp 8 smaller jellies.
+  When you're boxed in, you hop. A hop carries you over a trail, and vaulting
+  trails fills your Glow meter, along with close calls, splats and combos. Land
+  a hop on a much smaller jelly and it bursts flat.
 
 
-  Those pay 201, 402 and 804 XP, a tidy little ladder where each reward doubles
-  the one before it. Your first run of the day also earns a 50% XP bonus on top.
+  A full Glow meter sets off Supernova, seven seconds of extra speed and pull in
+  which trails can't touch you and smaller jellies get swallowed on contact.
 
 
-  XP raises your level, which starts at 1 and needs 214 XP before you reach the
-  next one.
+  You can surge by holding Shift or the right mouse button, but it costs you
+  size, and the goo you shed is food for everyone else. Blue currents speed you
+  up when you ride them the right way and slow you down against them, and power
+  bubbles hand out a magnet, a shield or a turbo.
 
 
-  The reward road shows what's ahead for your increasingly well-dressed blob,
-  starting with a Party Cone hat at level 2. A Coral color follows at level 3.
-  Then a Ribbon Bow hat waits at level 4.
+  You steer with the mouse, WASD, the arrow keys or a thumbstick, and hop with a
+  click, Space or the on-screen button. Between rounds there are daily, weekly
+  and run quests, a locker of cosmetics and a level track, and one color, Color
+  Shift, is a paid unlock.
 
 
-  A Profile & trophies panel keeps your personal bests, and if you want Color
-  Shift, that one's a paid unlock.
-
-
-  All of the code came from the AI, steered by Kvickan through hundreds of
-  iterations of input and instructions. The game was built with one model first
-  and then remade with another.
+  All of the code came from AI, steered by Kvickan through hundreds of rounds of
+  input and instructions. The game was built with one model first and then
+  rebuilt with another.
 play:
   url: https://jellyblob.win
   embeddable: false
@@ -89,7 +84,7 @@ media:
     - games/jellyblob/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-10-02
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: pr

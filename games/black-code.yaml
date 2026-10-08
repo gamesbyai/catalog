@@ -2,10 +2,9 @@ slug: black-code
 title: BLACK CODE
 tagline: Command a tactical squad in an isometric cyberpunk action-strategy prototype.
 description: >-
-  You command a squad of armed operatives through a rain-soaked cyberpunk city,
-  seen from above in isometric pixel art. It plays out in real time as a mix of
-  tactical action and strategy, where left click shoots or selects and right
-  click moves your people or interacts with things.
+  You command a squad of armed operatives through a cyberpunk city. It plays out
+  in real time as a mix of tactical action and strategy, where left click shoots
+  or selects and right click moves your people or interacts with things.
 
 
   Q and E step through your squad members one at a time, while T grabs the whole
@@ -15,23 +14,16 @@ description: >-
   Beyond walking around, each operative can hold position, dash, or blink. Two
   stances change how the squad behaves, with a normal/aggressive mode on one key
   and a stealth mode on another. The number keys 1 to 4 use items, and a
-  separate gear key opens your equipment.
+  separate gear key opens your equipment. Its makers call this build a
+  prototype.
 
 
-  For a build its makers call a prototype, there's a full set of tactical
-  overlays, covering a map, a status panel, an objectives list and a grid
-  view, plus zoom and pause.
+  If you'd rather move with the keyboard, you can swap the classic mouse scheme
+  for WASD movement in the options menu.
 
 
-  If you'd rather move with the keyboard, the options menu swaps the classic
-  mouse scheme for WASD movement. It's a considerate extra in a game that
-  already spreads this many actions across the keys.
-
-
-  The title screen shows the armed squad standing on a neon-lit balcony in the
-  rain, under the bookish subtitle Ghost in the Ledger. Sessions run a few
-  minutes, and the game's tags point to roguelike elements. According to
-  war3d, AI assisted with the graphics and sounds.
+  Sessions run a few minutes, and the game's tags point to roguelike elements.
+  According to war3d, AI assisted with the graphics and sounds.
 play:
   url: https://war3d.itch.io/esquadro-brics
   embeddable: false
@@ -69,7 +61,7 @@ media:
     - games/black-code/shot-2
 dates:
   added: 2026-09-30
-  updated: 2026-10-02
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:aibgj-1

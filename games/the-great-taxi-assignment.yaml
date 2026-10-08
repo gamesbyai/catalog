@@ -3,28 +3,15 @@ title: The Great Taxi Assignment
 tagline: Drive a taxi through a 3D city, delivering passengers before the clock
   runs out.
 description: >-
-  A welcome panel greets you over a dusky street lined with palm trees, and the
-  title's pink neon script makes no secret of which Vice City it's riffing on.
-  Behind the panel there's already a speedometer in the bottom left and a round
-  map in the bottom right. Info, radio, music and sound buttons run along the
-  top left, next to a little album cover with a vinyl record sliding out of it.
-
-
-  Before you press Start playing, two checkboxes on that panel let you switch
-  off the music and the sound effects.
-
-
-  The job is classic GTA-style taxi work, set in a 3D city called Vibe City. You
+  The job is classic GTA-style taxi work, set in a city called Vibe City. You
   drive around looking for passengers to pick up, and each fare's destination
   gets marked on your map.
 
 
   From there you have to get them where they're going before your timer runs
   out. You drive with WASD or the arrow keys. The space bar is your brake, and
-  it's the only other key the game asks you to remember.
-
-
-  Tomáš Bencko built the whole thing in 60 hours.
+  it's the only other key the game asks you to remember. Tomáš Bencko built the
+  whole thing in 60 hours.
 
 
   According to the creator, about 99 percent of the code was AI generated.
@@ -69,7 +56,7 @@ media:
     - games/the-great-taxi-assignment/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-10-02
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:awesome-cc0

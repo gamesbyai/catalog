@@ -2,34 +2,17 @@ slug: brass-rain
 title: Brass Rain
 tagline: Run and shoot across a sun-baked desert, with a friend able to drop in.
 description: >-
-  The game opens on MISSION 1 with a big pale sun hanging over a blue sky. Along
-  the top, there's a 1UP score at one end and a 2UP score at the other, with the
-  HI score in between.
+  You play a soldier pushing through a desert. Your standard ammo is unlimited,
+  and you start with 10 bombs.
 
 
-  You're a soldier wearing green fatigues, with a red beret perched on top,
-  pushing through a desert of red mesas, cacti, dunes and a single canvas tent.
-  Wooden towers stand along the canyon, falling away behind you as the screen
-  scrolls. The canyon backdrops come in layers, which is a pretty nice bit of
-  craft for a side-scroller.
-
-
-  The ARMS readout shows an infinity sign while BOMB shows 10, and that's a neat
-  way to pair unlimited standard ammo with the bombs you start with.
-
-
-  A friend can join at any moment by pressing Enter, and the P2 PRESS ENTER
-  prompt up in the corner is a considerate touch. Each of you racks up your own
-  points, while there's one shared HI score between you.
-
-
-  Put together, the missions and the drop-in co-op make this a run-and-gun you
-  can play solo or with a friend.
+  A friend can join at any moment by pressing Enter. Each of you racks up your
+  own points, but you share one HI score. This is a run-and-gun you can play
+  solo or with a friend.
 
 
   You move through a string of missions that starts in this desert, with boss
-  fights in the mix. There's a leaderboard too. You can also play with a
-  controller.
+  fights in the mix. You can also play with a controller.
 play:
   url: https://tesana.com/play/44cfa8db-49e5-4ad1-89b1-7068aa55b70a
   embeddable: false

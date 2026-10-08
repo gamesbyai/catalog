@@ -2,37 +2,21 @@ slug: tiny-skies
 title: Tiny Skies
 tagline: Explore a small shared world and relax together while an apocalypse looms.
 description: >-
-  A green biplane hangs over a tiny round planet when the game loads, with a
-  river winding between forested hills, a cluster of white cottages and a
-  smoking volcano in view. A prompt in the corner tells you to climb with the Up
-  Arrow. Meanwhile a striped hot air balloon drifts nearby, and somebody else's
-  plane cuts across the sky.
+  You fly a biplane around a tiny round planet. You climb with the Up Arrow.
 
 
-  Villagers chat with you in speech bubbles, and one of them hands you a parcel
-  for a village they name, like a fisherman's package for Mossglen that's
-  apparently stuffed with jam. Once you're carrying it, the top of the screen
-  shows how far you still have to fly to drop it off.
+  Villagers talk with you, and one of them hands you a parcel for a village they
+  name, like a fisherman's package for Mossglen that's apparently stuffed with
+  jam. Once you're carrying it, you fly to the village and drop it off.
 
 
-  Over in the sidebar there are two collectible counters, starting at 0/7 and
-  0/3, plus a goal to finish a race, a slightly surprising entry for a game
-  built around hanging out.
+  There's also a race you can finish, and collectibles to hunt down.
 
 
-  A level and XP bar runs along the bottom of the screen. Other players fly
-  around the same world with you, and the room's name and head count show up
-  in the top corner. dannylimanseta wanted a cozy multiplayer game where
-  people hang out instead of trying to kill each other, which makes the
-  apocalypse looming in the background an ominous neighbor.
-
-
-  The sky doesn't stay put either, showing daytime blue at one moment and a
-  dusky purple streaked with auroras at another.
-
-
-  Up in the top corner you'll find a fullscreen button. A sound toggle sits
-  right beside it.
+  There's a level and XP system as well. Other players fly around the same world
+  with you. dannylimanseta wanted a cozy multiplayer game where people hang out
+  instead of trying to kill each other, with an apocalypse looming in the
+  background.
 play:
   url: https://tinyskies.vercel.app
   embeddable: true
@@ -70,7 +54,7 @@ media:
     - games/tiny-skies/shot-2
 dates:
   added: 2026-10-01
-  updated: 2026-10-02
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:vibejam-2026

@@ -2,30 +2,20 @@ slug: brass-ring-park
 title: Brass Ring Park
 tagline: Lay out a theme park on bare grass, then open the gates to guests.
 description: >-
-  From an angled overhead view, you build a park that begins as a grassy plot,
-  with a road up to the gate and a few path tiles. Surprisingly, the build list
-  is pretty long for a start that small, covering paths, gentle and thrill
-  rides, coasters, food and shops, facilities, scenery, staff, land tools and
-  bulldozing. From there it's all on you.
+  You build a park that starts as a small plot, with a road up to the gate and a
+  few path tiles. The build list covers paths, gentle and thrill rides,
+  coasters, food and shops, facilities, scenery, staff, land tools and
+  bulldozing.
 
 
-  Menus are where you see how the place is running, with one for the park itself
-  and more for money, rides, guests, staff and research. For some reason the
-  News menu's tacked on right after Research.
+  The park starts out closed, and you open it when you're ready to let guests
+  in.
 
 
-  The park starts out closed, with a gold Open Park button under the top bar for
-  when you're ready to let guests in.
+  Pause and several speed settings let you plan, or skip ahead through the day.
 
 
-  The strip across the top somehow fits a lot in, from your cash and guest count
-  to the park rating, the date and the current weather. Pause and several speed
-  settings are there for planning, or for skipping ahead through the day. And
-  there's a play button sitting right between pause and the faster ones.
-
-
-  Sandbox mode makes sense for anyone who wants to try out layouts, since
-  money's no object in it. The cash readout up top says Unlimited.
+  Sandbox mode is for trying out layouts, since money's no object in it.
 play:
   url: https://tesana.com/play/10ee5d63-e49b-46d2-a8b3-1774c0f0a061
   embeddable: false

@@ -2,27 +2,18 @@ slug: tdshooter
 title: TDShooter
 tagline: Shoot enemies from above, finish quests, and open up new zones.
 description: >-
-  You're a small character standing on a dark green grid, and a prompt on screen
-  spells out the basics right away. You walk with W, A, S, D, aim with the mouse
-  and click to shoot. Up top, a counter reads Enemies killed: 0/40.
-
-
-  Just below it, a line points you toward Zone 2, which is up, and yellow arrows
-  on the floor helpfully lead the same way.
+  You play as a single character. You walk with W, A, S, D, aim with the mouse
+  and click to shoot. Zone 2 is up.
 
 
   According to ok_kutas, the game is about shooting enemies, doing quests and
-  unlocking new zones. Your stats sit in the top left, where HP shows 100 out of
-  100, a level readout lists your perk points and an XP bar starts at 0 of 100.
+  unlocking new zones. Your character has HP, XP and perk points.
 
 
-  A slide ability sits on Space, labeled at the bottom center of the screen.
-  On the right edge there's a column of emote buttons with a grim back half.
-  Next to a heart, a thumbs up, arrows, a question mark and an exclamation
-  mark, you'll find a skull, a gravestone and a coffin.
-
-
-  Two icons in the top right switch between mouse and touch input.
+  Your character can slide with Space. The game also has a set of emotes you can
+  use. The emotes include a heart, a thumbs up, arrows, a question mark, an
+  exclamation mark, a skull, a gravestone and a coffin. You can switch between
+  mouse and touch input.
 play:
   url: https://tdshooter.space
   embeddable: true
@@ -62,7 +53,7 @@ media:
     - games/tdshooter/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-10-02
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:vibejam-2026

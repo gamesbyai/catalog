@@ -8,28 +8,16 @@ description: >-
   meaning near and red meaning danger.
 
 
-  The title screen lays out that color key as a legend, sitting just under a
-  slightly unsettling tagline that tells you you're blind and it isn't.
-
-
   Every level asks you to reach the exit, and a full run strings 10 levels
-  together. Staying silent is a second goal that runs alongside it, which fits a
-  game whose title screen calls it a horror roguelite.
+  together. Staying silent is a second goal that runs alongside it.
 
 
   You move with WASD and look around with the mouse. Holding Shift lets you
-  sprint. There's also a Top Echoes board on the title screen for your results,
-  a bit of bragging room in a game that's all about keeping quiet.
+  sprint. Your results go on a Top Echoes board.
 
 
   According to the creator, the echolocation is modeled on the Odradek scanner
   from Death Stranding, the source for a tool that maps what you can't see.
-
-
-  The look is stripped way back. Glowing blue, amber and red lettering and
-  markers sit against a black screen, and even the title is split across those
-  same three colors. There's just one button on the title screen, and it's
-  labeled Enter the Dark.
 play:
   url: https://project-kqtw7.vercel.app
   embeddable: true
@@ -70,7 +58,7 @@ media:
     - games/echo-ohce/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-10-02
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:vibejam-2026

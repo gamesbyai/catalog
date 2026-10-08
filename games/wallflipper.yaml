@@ -3,14 +3,9 @@ title: Wallflipper
 tagline: Race through a neon corridor, flipping gravity to dodge obstacles and
   grab objects.
 description: >-
-  When it starts, a Launch button sits over a dark neon corridor with a glowing
-  cyan grid floor. In the top left there's a readout showing gravity set to
-  Normal and direction set to Forward, while the top right counts distance in
-  meters above two counters at zero and a thin bar.
-
-
-  Once you're off, you race down that corridor on the floor, the walls and the
-  ceiling, which turns pretty much the whole tube into road.
+  A Launch button starts the game. Once you're off, you race down that corridor
+  on the floor, the walls and the ceiling, which turns pretty much the whole
+  tube into road.
 
 
   Steering left or right carries you up the sides, and if you keep holding the
@@ -19,18 +14,9 @@ description: >-
 
 
   The goal is to stay alive at full speed while picking up objects along the
-  way. Text on the screen also points you toward following fragment routes
-  through the corridor. Oddly enough, R turns you around entirely, and that's
-  what the Direction readout in the corner keeps track of.
-
-
-  P pauses, a small mercy in a game that wants you going full speed.
-
-
-  Music and sound sensibly get their own toggles instead of sharing one mute.
-  Both have buttons in the bottom-left corner, and M and S switch them from the
-  keyboard too. The full list of keys runs along the bottom of the screen as
-  well.
+  way. On-screen text also points you toward following fragment routes through
+  the corridor. R turns you around entirely. P pauses. M and S switch music and
+  sound from the keyboard too.
 play:
   url: https://expectfun.github.io/vibetools/wallflipper.html
   embeddable: true
@@ -70,7 +56,7 @@ media:
     - games/wallflipper/shot-2
 dates:
   added: 2026-10-01
-  updated: 2026-10-02
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:vibejam-2026
