@@ -2,19 +2,15 @@ slug: wayward-judgment-run
 title: Wayward Judgment Run
 tagline: Run a route where each life you take comes back to judge you in Purgatory.
 description: >-
-  In Wayward Judgment Run, every life you take on the way comes back for you
-  later. It is a cinematic runner built around morality: you move through a
-  course in the style of a familiar endless runner, and the people you kill do
-  not simply vanish.
+  Run a course in the style of a familiar endless runner, where every life you
+  take comes back to judge you in Purgatory.
 
 
-  The Great Taxi Assignment was the inspiration, according to the creator, who
-  built it with Bolt as a 3D Three.js game.
+  A cinematic runner built around morality. The dead returning for a later
+  reckoning. Mortality, judgment and consequence as themes.
 
 
-  The dead return in Purgatory, where you face what you have done. Instead of
-  treating harm as a scoring event, the game turns each death into part of a
-  later reckoning, with mortality, judgment, and consequence as its themes.
+  Inspired by The Great Taxi Assignment, according to the creator.
 play:
   url: https://waywardjudgmentrun.com
   embeddable: true

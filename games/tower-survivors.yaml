@@ -2,20 +2,16 @@ slug: tower-survivors
 title: Tower Survivors
 tagline: Defend your tower against endless waves of enemies in a 3D arena.
 description: >-
-  Tower Survivors puts a single tower in the middle of a 3D arena and sends
-  endless waves of enemies at it. It is a solo tower defense game with an action
-  bent: you protect the central tower, and a run lasts until your defense
-  finally gives way.
+  Protect a single tower in the middle of a 3D arena against endless waves of
+  enemies.
 
 
-  The game takes its premise from the Warcraft 3 custom map of the same name and
-  mixes survival-style pressure with strategic choices about how to protect the
-  tower. According to the creator, it was built with Claude Code on Three.js,
-  and it landed 146th of 945 in Vibe Jam 2026.
+  Waves that never stop coming. A run that lasts until your defense gives way.
+  Survival-style pressure with strategic choices. Pressure that only rises, with
+  no finish line.
 
 
-  The pressure only rises. There is no finish line to reach, just the question
-  of how many waves you can hold out against before the tower falls.
+  Based on the Warcraft 3 custom map of the same name.
 play:
   url: https://ts.pliete.it
   embeddable: true
@@ -51,7 +47,7 @@ media:
     - games/tower-survivors/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-09-29
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:vibejam-2026

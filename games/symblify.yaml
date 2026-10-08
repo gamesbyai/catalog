@@ -2,28 +2,19 @@ slug: symblify
 title: Symblify
 tagline: Decode a daily phrase by working out what each symbol instructs you to do.
 description: >-
-  Each puzzle asks you to crack a short phrase, and you've got four guesses to
-  do it. The phrase comes written as a line of words strung together with
-  symbols, and every symbol is an instruction for what to do with the words next
-  to it. Each puzzle also comes with a one-line clue to steer you toward the
-  answer.
+  Each puzzle is a line of words and symbols that spells out a phrase. Work it
+  out in four guesses.
 
 
-  When you think you've got it, type the phrase in and hit the Enter button.
+  Symbols that mean the same thing every day. A one-line clue per puzzle. A
+  practice puzzle to start with. Daily puzzles.
 
 
-  Puzzle 0 is a practice round rated medium, using the line ~BRAKE + FAST and
-  the clue "The first meal of the day," and its two tags, Homophone and Combine.
+  Type your guess and press Enter.
 
 
-  A symbol keeps the same meaning from one puzzle to the next, so you're slowly
-  picking up a small language and using it on later lines. A new puzzle shows up
-  every day.
-
-
-  Symblify describes the idea as a cross between word puzzles, cryptic
-  crosswords and maths notation, with the mechanics designed first and the game
-  built around them.
+  A cross between word puzzles, cryptic crosswords and maths notation, according
+  to its maker.
 play:
   url: https://symblify.app
   embeddable: true

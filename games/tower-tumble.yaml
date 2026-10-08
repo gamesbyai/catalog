@@ -2,25 +2,18 @@ slug: tower-tumble
 title: Tower Tumble
 tagline: Bounce off walls and backflip your way up an endless pixelated tower.
 description: >-
-  Start running along the ground floor, then jump for the first platform and
-  keep going up an endless tower.
+  Run along the ground floor, jump for the first platform and keep climbing an
+  endless tower.
 
 
-  Speed is what gets you higher, because the faster you're running when you
-  leave the ledge, the bigger your jump. On top of that, you can hold the jump
-  button to charge an even taller leap.
+  Bigger jumps the faster you're running. A charged leap when you hold the jump
+  button. Walls that build momentum when you bounce off them. Combo points for
+  skipping platforms. Style points for midair backflips. Red platforms among the
+  steps. An online leaderboard.
 
 
-  The two side walls do a bit more than keep you in, since bouncing off them
-  builds momentum. Skipping platforms on the way up earns you combo points.
-  Throwing a backflip in midair adds style points, so the game rewards showing
-  off along with plain height. Some red platforms are mixed in with the rest of
-  the steps.
-
-
-  andreaskruszaki based it on Icy Tower, a childhood favorite of theirs that no
-  longer exists, and it includes an online leaderboard where you can compare
-  climbs with other players.
+  andreaskruszaki based it on Icy Tower, a childhood favorite that no longer
+  exists.
 play:
   url: https://tower-tumble.vercel.app
   embeddable: true

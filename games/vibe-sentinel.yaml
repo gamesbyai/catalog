@@ -3,33 +3,27 @@ title: Vibe Sentinel
 tagline: Fight shadow beasts through ten turn-based dungeon levels, one careful
   move at a time.
 description: >-
-  A green-glowing panel greets you first, with a short briefing, the controls
-  and a button to choose your Sentinel. You're the last guardian of the Ancient
-  Grove, walking a dark dungeon one grid tile at a time and fighting shadow
-  beasts by simply bumping into them.
+  Playing alone, you are the last guardian of the Ancient Grove, walking a dark
+  dungeon one grid tile at a time and fighting the shadow beasts inside. Get
+  through all 10 levels to win the run.
 
 
-  Somewhere on every level there's a glowing exit star that takes you down to
-  the next floor. Get through all 10 levels and the run is won. You begin with
-  only 10 HP, though potions put 6 back, and crystals pay for the Sentinel
-  Pulse, which spends 2 of them to hit every enemy within 3 tiles.
+  Ten biomes, one for each level, from a forest grove through a volcanic maze to
+  a void sanctum. Escalating shadow beasts across the levels. Glowing exit stars
+  on every level, each leading to the next floor. The Sentinel Pulse, a
+  2-crystal blast that reaches every enemy within 3 tiles. Endless mode past the
+  main run, and badges to earn. A portal into another game. Your Sentinel,
+  picked before you start.
 
 
-  Turns are discrete, so nothing moves until you do, and the enemies only take a
-  step every other turn, which hands you a little gap to reposition.
+  Bump into a shadow beast to fight it. Nothing moves until you take a turn, and
+  enemies only step every other turn, which gives you a little room to
+  reposition. Wait in place to pass your turn, but enemies keep acting while you
+  stand still. You begin with 10 HP, and potions restore 6 HP.
 
 
-  Waiting passes your turn, but the enemies keep acting while you stand there.
-  The outer border is solid wall too.
-
-
-  Each of the 10 levels gets its own biome, and the spread is wide, from a
-  forest grove through a volcanic maze all the way to a void sanctum.
-
-
-  Past the main run there's an endless mode, plus badges to earn. There's also a
-  portal that leads into another game. The design follows early Rogue and
-  Nethack, where managing your resources matters more than fast reflexes.
+  The design follows early Rogue and Nethack, where managing your resources
+  matters more than fast reflexes.
 play:
   url: https://flash-source.github.io/vibeSentinel
   embeddable: true
@@ -71,7 +65,7 @@ media:
     - games/vibe-sentinel/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-10-02
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:vibejam-2026

@@ -2,29 +2,23 @@ slug: vibe-city
 title: vibe city
 tagline: Hang out in a pixel-art isometric town, chat, and play arcade games
 description: >-
-  You play as a small avatar on a city street. Building entrances let you step
-  off the street and into a room.
+  Vibe City puts you on a city street as an avatar, sharing it with other
+  players. The Arcade is the building where you go to play games, the hub for
+  play in a place that's otherwise mostly for chatting.
 
 
-  You're not out there alone, because other players share the street with you.
-  You chat with other players in messages of up to 72 characters, and you post
-  them with the Send button. It's a tight limit, closer to a speech bubble than
-  a letter.
+  Chat with the other players. Games across action, puzzle, shooter, racing and
+  RPG inside the Arcade. Avatar customization. A room list and your own home.
+  Daily goals.
 
 
-  The Arcade is the building where you go to play games, the hub for play in a
-  place that's otherwise mostly for chatting. Inside it there's a wide spread of
-  genres, including action, puzzle, shooter, racing and RPG, so when you want a
-  break from hanging out, you can head in for a round of something else.
+  Step through a building entrance to go inside a room. Type a message and press
+  Send to post it.
 
 
-  You can customize your avatar, browse the list of rooms, and head back to your
-  home. There are also daily goals.
-
-
-  vibemaxxer drew on Habbo and a love of many kinds of games, wanting a warm
-  place to hang out online that's free and that you can step into without an
-  install or an account.
+  vibemaxxer drew on Habbo and a love of many kinds of games. The aim was a
+  free, warm place to hang out online that you can step into without an install
+  or an account.
 play:
   url: https://isometric-social-game.vercel.app
   embeddable: true

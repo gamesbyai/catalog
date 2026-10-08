@@ -2,21 +2,16 @@ slug: slay-the-spore
 title: Slay the Spore
 tagline: Fight through strategic battles using randomly generated creatures.
 description: >-
-  Slay the Spore is a strategy game that takes the structure of Slay the Spire
-  and fills it with creatures nobody designed by hand. You fight through
-  strategic encounters in that deck-driven style, and the creatures you face and
-  the ones you use are all randomly generated.
+  Fight through deck-driven strategic encounters where every creature, yours and
+  the enemy's, is randomly generated.
 
 
-  The name gives away the two inspirations: the tactical decisions of a Slay the
-  Spire climb and the creature-making spirit of Spore. Three.js draws each
-  generated creature in 3D, right in the browser, and the game placed 100th
-  among 945 entries in Vibe Jam 2026.
+  Creatures nobody designed by hand, drawn in 3D. Opponents and allies that
+  change from run to run. The structure of a Slay the Spire climb.
 
 
-  Because every creature is procedurally generated, the opponents you fight and
-  the allies you fight with change from run to run. It is built for solo play,
-  on a phone or a computer.
+  Inspired by Slay the Spire and by the creature-making spirit of Spore, as the
+  name suggests.
 play:
   url: https://slaythespore.netlify.app
   embeddable: true
@@ -55,7 +50,7 @@ media:
     - games/slay-the-spore/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-10-01
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:vibejam-2026

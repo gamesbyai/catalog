@@ -3,30 +3,20 @@ title: TimeCrime
 tagline: Spot the impossible object in a 360° historical scene, then guess where
   and when.
 description: >-
-  Each round drops you inside a scene from history with one object that couldn't
-  have existed in that time. The story goes that a time traveler left it there.
-  You look around the panorama, find the culprit, then guess where and when you
-  are to set the timeline right.
+  Each round drops you into a 360-degree scene from history with one object that
+  couldn't have existed then, supposedly left by a time traveler.
 
 
-  The first scene is set on the Moon. The anomaly there is a phone on a tripod.
+  Five rounds per run, 45 seconds each. The Moon as the first scene, with a
+  phone on a tripod as the anomaly. Daily Rift or Random Run, no login needed. A
+  hidden-object hunt paired with history trivia.
 
 
-  A full run is five rounds, and you only get 45 seconds for each one.
+  Find the object that doesn't belong, then guess where and when you are.
 
 
-  You can play the Daily Rift or a Random Run. You don't even have to log in for
-  either.
-
-
-  It's a pairing of a hidden-object hunt with history trivia, and the order
-  matters, since you have to notice what feels wrong in the scene before you get
-  to guess the place and era.
-
-
-  Peter TP says the spark was blending curiosity about history with a quick,
-  simple hunt for hidden objects. They also say the aim was for players to scan
-  each scene and spot anomalies rather than only recall facts.
+  Peter TP wanted players to scan each scene and spot anomalies, not only recall
+  facts.
 play:
   url: https://timecrime.vercel.app
   embeddable: true

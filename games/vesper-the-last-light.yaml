@@ -1,26 +1,21 @@
 slug: vesper-the-last-light
 title: "Vesper: The Last Light"
 tagline: Carry a drowned world's last light through a flooded voxel gate.
-description: "Vesper: The Last Light is a single-player adventure through a
-  drowned voxel world, played in the browser with mouse and keyboard. You carry
-  a lantern, and its light is everything at once: your health, your ammunition
-  and your money. Every beam you fire spends the same meter that keeps you
-  alive, so each fight is also a budget.
+description: "Carry a lantern through a drowned voxel world. Its light is your
+  health, your ammunition and your money, so every beam you fire spends what
+  keeps you alive.
 
 
-  The first expedition, the Flooded Gate in the Nacre Expanse, asks you to
-  restore three seals and earn your passage through a glowing portal. The route
-  runs past a grove, a lighthouse and a temple, under cherry trees and a ringed
-  planet. You jump across gaps, fire a beam of light and strike up close with a
-  melee attack.
+  The Flooded Gate in the Nacre Expanse as the first expedition. Three seals to
+  restore before a glowing portal opens. A route past a grove, a lighthouse and
+  a temple. Jumps across gaps, a light beam and a melee strike.
 
 
-  According to its maker, Kvickan, the game was made with GPT-6 Astra in Codex
-  and shaped through playtesting and iteration, with procedural assets and
-  licensed resources. The stated aim was a world you can explore, understand and
-  finish rather than a scene that only looks impressive. The pacing follows it:
-  readable spaces, one clear goal, a finish line. It runs on Three.js. It suits
-  fans of short, atmospheric adventures."
+  Play with mouse and keyboard.
+
+
+  Its maker shaped it through playtesting and iteration, with GPT-6 Astra in
+  Codex, aiming for a world you can explore, understand and finish."
 play:
   url: https://vesper.mansgullberg.chatgpt.site/
   platforms:
@@ -64,7 +59,7 @@ media:
     - games/vesper-the-last-light/shot-2
 dates:
   added: 2026-09-30
-  updated: 2026-09-30
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: form

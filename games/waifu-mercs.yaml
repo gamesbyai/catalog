@@ -3,18 +3,15 @@ title: Waifu Mercs
 tagline: Shoot waves of zombies from behind the shoulder in split-screen co-op.
 description: >-
   Two players share one screen and fight off zombie hordes from behind the
-  shoulder. Each of you plays a mercenary, and together you push back the undead
-  as the pressure builds.
+  shoulder, each as a mercenary.
 
 
-  The creator wanted a couch-style co-op game to play with their wife, and that
-  goal shaped the design, down to each player having their own view of the
-  fight. It was built in Three.js with Claude Code.
+  Split-screen co-op with a view for each player. Over-the-shoulder aiming from
+  survival horror. Horde-clearing waves from survivor-style games. A fast,
+  casual pace for both players.
 
 
-  The combat blends the over-the-shoulder aiming of survival horror with the
-  horde-clearing loop of survivor-style games, and the waves keep the pace fast
-  and casual for both players.
+  The creator wanted a couch co-op game to play with their wife.
 play:
   url: https://waifumercs.com
   embeddable: true

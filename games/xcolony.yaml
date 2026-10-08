@@ -3,19 +3,16 @@ title: xColony
 tagline: Mine the Moon, research tech, launch cargo to orbit, and prestige to
   new worlds.
 description: >-
-  xColony starts you mining the Moon and ends each cycle on a new world. Gather
-  resources to feed a growing settlement, spend them on upgrades and research,
-  and then send cargo up to orbit.
+  Mine the Moon, research tech, launch cargo to orbit, and prestige to new
+  worlds.
 
 
-  Two separate tech trees give the colony more than one direction to grow, so
-  what you research shapes how quickly each cycle moves. Claude Code and
-  Three.js are behind this one.
+  Resources that feed a growing settlement. Two separate tech trees. Upgrades
+  and research that set the pace of each cycle. A prestige loop that carries the
+  colony out to other worlds.
 
 
-  When progress slows, you prestige and begin again somewhere new. That loop
-  carries the colony from the Moon out to other worlds, with mining, launches,
-  and expansion all tied together.
+  Send cargo up to orbit, then start again somewhere new when progress slows.
 play:
   url: https://x-colony.vercel.app
   embeddable: true

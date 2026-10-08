@@ -2,32 +2,21 @@ slug: vibe-voyage
 title: Vibe Voyage
 tagline: Haul cargo across the planet by ship and spend your earnings on better vessels.
 description: >-
-  Vibe Voyage puts you at the helm of a cargo ship that sails around an entire
-  planet, hauling freight from port to port and getting paid for every load you
-  deliver.
+  Sail a cargo ship around an entire planet, hauling freight from port to port
+  and getting paid for every load.
 
 
-  The money you earn goes toward buying better ships. It's a simple loop to hang
-  on a shipping game that wraps its whole map around one round world.
+  Better ships bought with your earnings. A map that wraps around one round
+  world. A first job waiting at Whitepier, with arrows on the water pointing the
+  way. A throttle instead of a set speed.
 
 
-  Your first job is waiting at Whitepier. You sail over and dock there to load
-  your opening cargo. Arrows on the water point you toward the port.
+  Raise the throttle with W or Up and lower it with S or Down, past zero to back
+  up. Press X to cut it to zero. Turn with A and D or the arrows, and fire the
+  side thrusters with Q and E.
 
 
-  Speed works a bit differently here, since you drive the ship with a throttle
-  rather than setting how fast it goes directly.
-
-
-  W or the up arrow raises the throttle to push you ahead, while S or the down
-  arrow lowers it, and if you keep going past zero you start backing up. When
-  you'd rather just stop pushing, X drops it straight to zero in one press.
-  Turning sits on A and D or the left and right arrows, and Q and E fire the
-  left and right thrusters.
-
-
-  jallen_dev based the idea on Shipping Lanes, a Roblox game, keeping the same
-  basic premise while putting their own spin on it.
+  jallen_dev based it on Shipping Lanes, a Roblox game, with their own spin.
 play:
   url: https://vibe.voyage
   embeddable: true

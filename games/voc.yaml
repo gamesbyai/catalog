@@ -2,20 +2,16 @@ slug: voc
 title: VOC
 tagline: Sail a global Age of Sail map to plunder, trade, or explore.
 description: >-
-  VOC is an Age of Sail role-playing game on a map of the whole globe, built
-  from real geographic data. You command a ship and choose how to make your way:
-  plunder other vessels as a pirate, trade goods between ports, or simply
-  explore the seas and coastlines.
+  Sail a ship across a map of the whole globe built from real geographic data,
+  as a pirate, a trader or an explorer.
 
 
-  The creator's interest in maps, boats, maritime law, and shipwrecks shapes the
-  setting. They say a post from the three.js account inspired the game, and they
-  built it with Codex. It was 274th of 945 entries in Vibe Jam 2026.
+  Plunder, trade between ports or open-ended exploration. Routes that follow
+  real oceans and coasts. Other players sharing the waters.
 
 
-  Because the world follows actual geography, the routes you sail trace the
-  shape of real oceans and coasts, and other players share those waters in
-  multiplayer, on phones as well as desktop browsers.
+  The creator's interest in maps, boats, maritime law and shipwrecks shapes the
+  setting.
 play:
   url: https://vocgame.com
   embeddable: true
@@ -53,7 +49,7 @@ media:
     - games/voc/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-09-29
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:vibejam-2026

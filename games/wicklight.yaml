@@ -3,27 +3,21 @@ title: Wicklight
 tagline: Steer a flame through a dark room where pillar shadows shelter the
   shades hunting you.
 description: >-
-  You play a flame, and the shades hunting you die in light but are safe in
-  shadow. Each pillar blocks your light and leaves a wedge of darkness behind
-  it, and the wedge shifts as you move. Shades can walk up that wedge untouched.
+  You're a flame. The shades hunting you die in your light but are safe in the
+  shadows your pillars cast.
+
+
+  Wedges of darkness behind every pillar that shift as you move. Light that
+  burns down, refueled by wax scattered in the dark. A charged flare that
+  ignites every shade it can see. Scored runs of a few minutes.
 
 
   Keep moving with the mouse, because standing still stops your shadows from
-  sweeping and gets you killed. Your light burns down over time. Wax that
-  refuels it is scattered in the dark, usually where you can't see it. Running
-  dry doesn't kill you, but it leaves your reach small while the room fills with
-  shades.
+  sweeping. Hold the left button to charge and release to flare.
 
 
-  Holding the left button charges the flame, pulling the light inward and giving
-  up almost half your reach. Releasing sends it all outward in a flare that
-  ignites every shade it can actually see. The flare still stops at pillars, so
-  cover works against it too.
-
-
-  The game is scored, and a run lasts a few minutes. The creator describes it as
-  one rule with everything else following from it. The code, text and graphics
-  were made with heavy AI assistance, and the audio is synthesized live.
+  The creator describes it as one rule with everything else following from it.
+  The audio is synthesized live.
 play:
   url: https://csaf.itch.io/wicklight
   embeddable: false
