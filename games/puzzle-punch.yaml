@@ -3,19 +3,16 @@ title: Puzzle-Punch
 tagline: Stack falling blocks in a 1v1 duel and use abilities to sabotage your rival.
 description: >-
   Puzzle-Punch has you stacking falling blocks and clearing lines in your own
-  well while another player works theirs. You're both racing to post the
-  bigger score by the end of the match. It's Tetris turned into a straight
-  one-on-one fight, and the name fits it well.
+  well while another player works theirs. You're both racing to post the bigger
+  score by the end of the match. It's Tetris turned into a straight one-on-one
+  fight, and the name fits it well.
 
 
   On top of the familiar stacking, there are abilities the game calls spells.
   Some of them get in your opponent's way and others help you push your own
   score higher, so each match mixes clean stacking with choosing when to strike
-  at the other player and when to boost yourself instead.
-
-
-  The spells even get their own how-to-play page on the menu, and a game built
-  around them needs one.
+  at the other player and when to boost yourself instead. The spells get their
+  own how-to-play page.
 
 
   You don't need a live rival to get going, since there's a practice mode and a
@@ -24,9 +21,8 @@ description: >-
   of it.
 
 
-  The keys sit in small print right on the menu, with arrows to move, Up or X
-  and Z to rotate each way, Space to hard drop, C or Shift to hold, and Esc to
-  return to the lobby.
+  Use the arrows to move, Up or X and Z to rotate each way, Space to hard drop,
+  C or Shift to hold, and Esc to return to the lobby.
 
 
   El_Perforator's team wanted a game that was both competitive and a puzzle,
@@ -73,7 +69,7 @@ media:
     - games/puzzle-punch/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-10-02
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:vibejam-2026

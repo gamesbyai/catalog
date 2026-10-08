@@ -2,29 +2,18 @@ slug: rainy-day-sort
 title: Rainy Day Sort
 tagline: Pour and sort colored water between glasses in a calm, tactile puzzle.
 description: >-
-  Rows of glass tubes hold stacked bands of pink, blue, green, orange, purple
-  and teal liquid that need sorting. You pick a tube, then pick a second one to
-  pour into, while a move counter under the buttons starts you off at zero.
+  Tubes hold stacked bands of liquid that need sorting. You pick a tube, then
+  pick a second one to pour into.
 
 
-  A few tubes start out frozen behind a little padlock, though. The line under
-  the board says four neighboring moves unlock one, which means a frozen tube
-  opens up once you've made moves in the tubes beside it. It's a nice wrinkle on
-  the usual pouring puzzle.
+  A few tubes start out frozen, though. Four neighboring moves unlock a frozen
+  tube, so it opens up once you've made moves in the tubes beside it.
 
 
-  When a pour goes wrong there's an Undo button just under the title, and an SOS
-  button sits right next to it.
+  When a pour goes wrong, you can use Undo, and there's an SOS button too.
 
 
-  Along the top you can choose a level from a menu, start a new game or open the
-  settings. The first board lays out two rows of tubes, and most of them have
-  some empty room at the top.
-
-
-  It all sits on a pale gray-blue background under a serif title that calls
-  itself a gentle little puzzle, with a small blue rabbit keeping you company in
-  the corner.
+  You can choose a level, start a new game or open the settings.
 
 
   JoysomeStudios built it with Claude Code and Gemini, plus a computer science
@@ -72,7 +61,7 @@ media:
     - games/rainy-day-sort/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-10-02
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:vibejam-2026

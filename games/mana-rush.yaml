@@ -2,11 +2,10 @@ slug: mana-rush
 title: Mana Rush
 tagline: Fly a broom through collapsing crystal caves before your mana runs out.
 description: >-
-  You're a witch on a borrowed broom, racing through a crystal cavern that's
-  falling apart around you. You fly from seal to seal, skim past hazards and
-  break through a final portal before your magic gives out. The cavern is
-  procedurally generated, and the one on screen asks you to light four seals
-  along the way.
+  You're a witch on a borrowed broom, racing through a cavern that's falling
+  apart around you. You fly from seal to seal, skim past hazards and break
+  through a final portal before your magic gives out. The cavern is procedurally
+  generated, and the one you're in asks you to light four seals along the way.
 
 
   Mana works as your clock, because flying, boosting and crashing all burn
@@ -20,18 +19,16 @@ description: >-
 
   Every run is timed, with medals, personal bests and splits to chase. It also
   keeps track of your collisions, respawns, top speed and how long you spent
-  boosting. Finishing a depth sends you into a harder cave and earns you
-  Crystal Charge.
+  boosting. Finishing a depth sends you into a harder cave and earns you Crystal
+  Charge.
 
 
   That Crystal Charge pays for permanent upgrades, along with unlockable hats
-  and brooms that each come with their own stat tradeoffs, so even the witch's
-  hat counts as gear.
+  and brooms that each come with their own stat tradeoffs.
 
 
-  You steer with WASD or the arrow keys and move the camera with the mouse.
-  Space or E climbs, Q drops you lower and Left Shift boosts, and a gamepad
-  works too.
+  You steer with WASD or the arrow keys. Space or E climbs, Q drops you lower
+  and Left Shift boosts, and a gamepad works too.
 
 
   netravelr credits Codex for the programming, GPT Image 2 for the 2D images,
@@ -79,7 +76,7 @@ media:
     - games/mana-rush/shot-2
 dates:
   added: 2026-10-01
-  updated: 2026-10-02
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:aibgj-4

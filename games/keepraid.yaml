@@ -10,14 +10,13 @@ description: >-
 
 
   The creator says it was inspired by King Arthur's Gold, a game they loved and
-  miss. With Claude Code as the tool, it ranked 197th of 945 at Vibe Jam 2026.
-  Matches are online, and the game plays in the browser.
+  miss. Claude Code was the tool used to make it. Matches are played online.
 
 
-  Because the players shape the map, no two keeps have to look alike: your walls
-  and layout are your defense, and the other team's structures are the obstacle
-  you have to break. The whole match fits in three steps: build it, break it,
-  take it.
+  Players shape the map, so keeps can look different, with your walls and layout
+  as your defense and the other team's structures as the obstacles you have to
+  break. A match runs in three steps: build your keep, break the enemy's walls,
+  and take the flag.
 play:
   url: https://keepraid.com
   embeddable: false
@@ -51,7 +50,7 @@ media:
     - games/keepraid/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-09-29
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:vibejam-2026

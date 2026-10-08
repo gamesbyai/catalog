@@ -7,10 +7,9 @@ description: >-
   quickly and stay ahead of it for as long as you can.
 
 
-  The chase is endless, so a run lasts as long as you keep your lead. The
-  pressure comes from that endless chase, and the horror mood is built around a
-  single pursuer that stays close behind the whole time. The 3D scene was made
-  with Three.js and Codex, and the game ranked 295th of 945 in Vibe Jam 2026.
+  The chase is endless, so a run lasts as long as you keep your lead. A single
+  pursuer stays close behind you the whole time. The 3D scene was made with
+  Three.js and Codex.
 
 
   A strong dislike of clowns inspired the project, according to the creator, who
@@ -51,7 +50,7 @@ media:
     - games/right-behind-you/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-09-29
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:vibejam-2026

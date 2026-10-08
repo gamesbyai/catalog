@@ -2,15 +2,13 @@ slug: o-vos-omnes
 title: O Vos Omnes
 tagline: Sing a Renaissance motet together with other players in a shared choir.
 description: >-
-  O Vos Omnes is a multiplayer simulation and party game that puts you in a
-  Renaissance choir with other players, and together you perform a motet. Each
-  participant takes a place among the singers, and the piece comes together
-  through the group's combined voices.
+  Take a place in a Renaissance choir with other players and perform a motet
+  together, in this multiplayer simulation and party game. Each player takes a
+  spot among the singers, and together their voices form the piece.
 
 
-  The title points to a well-known Latin motet text. It renders on a canvas in
-  the browser, and players join online. According to the creator, Claude Code
-  was used to build this Vibe Jam 2026 entry, which placed 297th of 945.
+  The title points to a well-known Latin motet text. Players join online.
+  According to the creator, Claude Code was used to build this game.
 
 
   Instead of a competitive lobby, players cooperate on a piece of sacred choral
@@ -51,7 +49,7 @@ media:
     - games/o-vos-omnes/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-09-29
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:vibejam-2026

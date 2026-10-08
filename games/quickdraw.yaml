@@ -2,14 +2,14 @@ slug: quickdraw
 title: Quickdraw
 tagline: Face an opponent in a western duel and fire before they do.
 description: >-
-  Quickdraw is a western duel built around a single split-second reaction test.
-  Two gunslingers stand facing each other, and you have to fire before your
-  opponent does, so every round comes down to timing.
+  You take on a gunslinger in a western duel that comes down to one split-second
+  reaction. You have to fire before your opponent does, so every round comes
+  down to timing.
 
 
   The creator wanted to see how far AI tools could help them make something fun
-  and engaging. Cursor was the tool, the whole thing is drawn on a canvas in the
-  browser, and it came 206th of 945 at Vibe Jam 2026.
+  and engaging. The creator built it with Cursor, and everything in it is drawn
+  on a canvas.
 
 
   The appeal is the speed and simplicity of the setup. Each duel is just the
@@ -49,7 +49,7 @@ media:
     - games/quickdraw/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-09-29
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:vibejam-2026

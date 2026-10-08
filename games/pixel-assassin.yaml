@@ -2,15 +2,13 @@ slug: pixel-assassin
 title: Pixel Assassin
 tagline: Kill enemies to take their weapons and survive endless pixelated levels.
 description: >-
-  In Pixel Assassin, every enemy you take down hands you a weapon. You play a
-  pixel-styled killer facing a steady stream of enemies in a single-player 3D
-  action shooter, and the goal is to last through endless pixelated levels as
-  they keep coming.
+  In Pixel Assassin, every enemy you take down hands you a weapon. You face a
+  steady stream of enemies in this 3D action shooter, and the goal is to survive
+  endless levels as they keep coming.
 
 
   That makes your loadout depend on who you have taken down. Claude Code and
-  Three.js were the building blocks, it ended up 571st of 945 at Vibe Jam 2026,
-  and phones work as well as desktop.
+  Three.js were the building blocks.
 
 
   The pickup loop ties offense to progress: you cannot just wait out a fight,
@@ -53,7 +51,7 @@ media:
     - games/pixel-assassin/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-09-29
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:vibejam-2026

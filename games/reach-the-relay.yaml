@@ -10,8 +10,7 @@ description: >-
 
 
   The design draws on Final Fantasy, Dragon Quest, and the Temple Trekking
-  activity from OSRS. It was made with Claude Code on Phaser, and it finished
-  65th of 945 in Vibe Jam 2026.
+  activity from OSRS. It was made with Claude Code on Phaser.
 
 
   Fights use the active time battle style of SNES-era role-playing games, so
@@ -54,7 +53,7 @@ media:
     - games/reach-the-relay/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-09-29
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:vibejam-2026

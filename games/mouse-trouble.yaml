@@ -2,20 +2,19 @@ slug: mouse-trouble
 title: Mouse Trouble
 tagline: Sneak, grab loot, and escape as a mouse in a cartoon extraction shooter.
 description: >-
-  The goal is to steal cheese as a tiny mouse and reach a glowing mouse hole
-  once the exit opens. Press E near cheese and tasks to collect them. Contact
-  with the cat or the roomba can ruin the raid, so keep clear of both.
+  Steal cheese as a tiny mouse, then reach a mouse hole once the exit opens.
+  Press E near cheese and tasks to collect them. Contact with the cat or the
+  roomba can ruin the raid, so keep clear of both.
 
 
   Mischief counts too. Smack things with E, grab them with Q, and chain the
-  moves into combos. When an EXIT OPEN message appears, stand inside a glowing
-  mouse hole to extract.
+  moves into combos. Once the exit opens, stand inside a mouse hole to extract.
 
 
   After the escape, the game hands out grades and awards. The score counts
   cheese, chaos, chases, tasks and the escape itself. The creator says it draws
-  on golden age cartoons and loot extraction shooters, and was built to be
-  multiplayer, fast to load and small in download size.
+  on loot extraction shooters and was built to be multiplayer, fast to load and
+  small in download size.
 play:
   url: https://mouse.ryanfitzpatrick.io
   embeddable: false
@@ -56,7 +55,7 @@ media:
     - games/mouse-trouble/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-10-01
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:vibejam-2026

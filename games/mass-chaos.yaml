@@ -9,8 +9,8 @@ description: >-
 
   But heavy cargo also tilts the arena, and that can send you sliding. Every
   step you take tips the arena's balance too, not just the cargo you're holding.
-  The menu's slogan, carry more and risk more, sums up that bargain in four
-  words.
+  The game's slogan is "carry more and risk more," which describes that
+  trade-off.
 
 
   Along with grabbing, carrying and delivering, you can shoot, while the one
@@ -18,11 +18,7 @@ description: >-
 
 
   Before you start, you type in a pilot name and choose Solo, Free-for-All or
-  Teams. The menu is all neon cyan and magenta lettering glowing on a black
-  background.
-
-
-  The default pilot name is ANONYMOUS.
+  Teams.
 
 
   vahagn_bbjnyan had wanted to make a game for a long time, and this is the
@@ -66,7 +62,7 @@ media:
     - games/mass-chaos/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-10-02
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:vibejam-2026

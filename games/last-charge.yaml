@@ -11,13 +11,13 @@ description: >-
   means giving up its tempo right now.
 
 
-  Every charge feeds a Trace track, and when it reaches 6 a Sentinel drops
-  into the fight. The track resets after that. It never goes all the way back
-  to zero, though.
+  Every charge feeds a Trace track, and when it reaches 6 a Sentinel drops into
+  the fight. The track resets after that. It never goes all the way back to
+  zero, though.
 
 
-  At least nothing is hidden. Each machine shows its next action and damage
-  above its head, and every node on the route reveals its threat rating before
+  At least nothing is hidden from you. Each machine's next action and damage are
+  shown before it acts, and every route node reveals its threat rating before
   you pick it. The game skips random rolls entirely, so every gamble you take is
   on numbers you can see.
 
@@ -44,7 +44,7 @@ description: >-
 
 
   Once you've collected 50 Salvage, the final battle opens up with uncapped
-  Trace and waves that never end, while your districts on the meta map act as
+  Trace and waves that never end, and your districts on the meta map act as
   cards. A session runs about an hour.
 play:
   url: https://bittiai.itch.io/last-charge
@@ -89,7 +89,7 @@ media:
     - games/last-charge/shot-2
 dates:
   added: 2026-09-30
-  updated: 2026-10-02
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:aibgj-4

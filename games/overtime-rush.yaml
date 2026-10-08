@@ -3,26 +3,17 @@ title: Overtime Rush
 tagline: Race your coworkers down an office track, dodging obstacles and
   dismissing phone calls.
 description: >-
-  Loading in, you see a long office corridor lined with cubicles, with the
-  Overtime Rush logo at the top and a Start Overtime button near the bottom.
-  Right under the logo there's a line that reads 'a stupid idea,' which is a
-  cheeky way to greet you. Between the cubicles runs a pale track that bends off
-  into the distance.
+  The two characters you play as are Daniel and Derek. Everyone in the group is
+  racing for the finish line, and you're trying to outrun your coworkers.
 
 
-  The two characters you play as are Daniel in the white shirt and Derek in the
-  blue one, which makes them easy to tell apart. Everyone in the group is racing
-  for the finish line, and you're trying to outrun your coworkers.
-
-
-  Along the way you've got obstacles to avoid while dismissing phone calls, an
-  odd thing to bolt onto a race.
+  Along the way you've got obstacles to avoid while dismissing phone calls.
 
 
   You can go through the track walls, because the creator ran into problems
   adding collisions to them. Their answer is simply to follow the track, which
-  they think is all you need to be fine. They even swear there's nothing past
-  the office walls, a funny thing to be so sure about.
+  they think is all you need to be fine. They swear there's nothing past the
+  office walls.
 
 
   If you win the race, the game's ending is there for you to reach.

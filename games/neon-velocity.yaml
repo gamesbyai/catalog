@@ -2,20 +2,15 @@ slug: neon-velocity
 title: NEON VELOCITY
 tagline: Race eight AI cars over three laps of a synthwave highway.
 description: >-
-  Your cyan car starts at the very back of the grid in ninth place, looking down
-  a pseudo-3D highway toward a huge striped sun that sinks behind dark
-  mountains.
-
-
-  Eight AI rivals fill the road ahead of you, each painted its own neon color,
-  from magenta to spring green. The race runs three laps, and your place updates
-  live from 1st to 9th as you pass them or they pass you. You only win by
-  crossing the line first, so you'll have to work your way past the whole field.
+  You start at the back of the grid in ninth place. Eight AI rivals share the
+  road with you. The race runs three laps, and passing rivals or getting passed
+  moves you up or down the order from 1st to 9th. You only win by crossing the
+  line first, so you'll have to work your way past the whole field.
 
 
   The circuit is a long chain of hand-built sections, opening with a start
-  straight and gentle S-curves before a hill climb, a long sweeping right and
-  a descent. After that come a tight chicane, a straight up on a plateau,
+  straight and gentle S-curves before a hill climb, a long sweeping right and a
+  descent. After that come a tight chicane, a straight up on a plateau,
   hairpins, a valley dip, fast esses and the final straight home.
 
 
@@ -23,17 +18,15 @@ description: >-
   counter-steer, and the shove gets stronger the faster you're going.
 
 
-  Your boost bar fills on its own over time and empties while you burn it for
-  extra speed. Golden pads spread evenly around the track top it back up for
-  free. If you leave the tarmac the car slows hard, while rear-ending a rival
-  costs you speed and, a bit rudely, gives them a small shove forward.
+  Boost builds up on its own over time, and using it for extra speed drains it.
+  Golden pads spread evenly around the track top it back up for free. If you
+  leave the tarmac the car slows hard, and rear-ending a rival costs you speed
+  and gives them a small shove forward.
 
 
-  Across the top of the screen you get your position, lap count, a race timer,
-  your best lap and your speed, which flips between KMH and MPH with a single
-  key for anyone who thinks in miles. Once you finish, a results screen lays out
-  your place, total time and every lap split. On phones, touch buttons show up
-  on screen to drive with.
+  A single key switches the speed readout between KMH and MPH. Finishing gives
+  you your final place, total time and every lap split. On phones, you drive
+  with touch buttons on the screen.
 
 
   INTJT2 packed it all into one HTML file, and even the synthwave soundtrack and
@@ -81,7 +74,7 @@ media:
     - games/neon-velocity/shot-2
 dates:
   added: 2026-10-01
-  updated: 2026-10-02
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:aibgj-3

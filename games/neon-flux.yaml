@@ -2,20 +2,18 @@ slug: neon-flux
 title: Neon Flux
 tagline: Blow up your own ship to set off chain explosions and rack up points
 description: >-
-  In Neon Flux your main weapon is your own ship. Waves of enemies fill the
-  screen, and instead of only firing at them, you detonate the ship to set off
-  chain explosions that sweep through the crowd, all against a countdown.
+  Your own ship is your main weapon. Enemies arrive in waves, and instead of
+  only shooting them, you detonate your ship to set off chain explosions that
+  sweep through the crowd, all against a countdown.
 
 
   It is a score-chasing arcade shooter built for repeat attempts at a higher
-  score. Built with Claude Code and Three.js, it placed 162nd of 945 at Vibe Jam
-  2026 and runs on phones as well as on a desktop.
+  score. Built with Claude Code and Three.js.
 
 
   Lining up enemies so one blast ripples through many of them matters more than
-  picking targets off one at a time. The timer keeps every decision tight, and
-  each run is a race to turn the clock into as many points as possible before it
-  hits zero.
+  picking targets off one at a time. Each run is a race to turn the countdown
+  into as many points as you can before it hits zero.
 play:
   url: https://neon-flux.org
   embeddable: true
@@ -52,7 +50,7 @@ media:
     - games/neon-flux/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-09-29
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:vibejam-2026

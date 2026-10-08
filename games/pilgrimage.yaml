@@ -2,21 +2,19 @@ slug: pilgrimage
 title: Pilgrimage
 tagline: Trek across a lonely digital wilderness and find companions along the way.
 description: >-
-  Pilgrimage sends you on a long 3D trek through a digital void, looking for
-  companionship along the way. The game frames it as a Cyber-Odyssey: you move
-  from place to place across an unknown landscape, with action, adventure and
-  simulation elements mixed into the journey.
+  Pilgrimage sends you on a long trek through a digital void, looking for
+  companionship along the way. The game calls itself a Cyber-Odyssey, and you
+  move from place to place across an unknown landscape with action, adventure
+  and simulation elements mixed into the journey.
 
 
   It draws on the classic Chinese tale Journey to the West and on Death
   Stranding, and it aims to capture the deep solitude of a long journey into the
-  unknown. The build used Claude Code and Three.js, and it placed 62nd of 945 at
-  Vibe Jam 2026.
+  unknown. The game was built with Claude Code and Three.js.
 
 
-  The mood is the main draw, and multiplayer gives the search for company a real
-  answer: the companions you find can be other players sharing the same space.
-  It plays in the browser.
+  Multiplayer is part of it too, and the companions you find can be other
+  players sharing the same space.
 play:
   url: https://pilgrimage.alsomindtech.com
   embeddable: true
@@ -52,7 +50,7 @@ media:
     - games/pilgrimage/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-09-29
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:vibejam-2026

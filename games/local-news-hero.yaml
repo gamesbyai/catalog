@@ -11,22 +11,16 @@ description: >-
   name.
 
 
-  It's built in photorealistic 3D from Google's 3D Tiles, so you might end up on
-  streets you actually know. The title screen warns you up front that it works
-  best in big cities, since rural areas may look sparse.
+  It's built in photorealistic 3D from Google's 3D Tiles. It works best in big
+  cities, since rural areas may look sparse.
 
 
-  Stories show up as glowing markers on the map, and you steer through the
-  city's streets to get to them. When you're close enough, you hit the spacebar
-  to go live.
+  Stories pop up around the city, and you steer through the streets to reach
+  them. When you're close enough, you hit the spacebar to go live.
 
 
-  Shift fires off a NOS boost that green pickups refill, while the white pickups
-  are health packs.
-
-
-  There's also a scrolling news ticker along the bottom of the menu that suits a
-  game about chasing headlines.
+  Shift fires a NOS boost that green pickups refill, while the white pickups are
+  health packs.
 
 
   supleezy says the idea came from wanting to play something like Simpsons Hit
@@ -71,7 +65,7 @@ media:
     - games/local-news-hero/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-10-02
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:vibejam-2026

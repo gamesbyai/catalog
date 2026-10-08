@@ -3,21 +3,15 @@ title: MoonCraft
 tagline: Fight through a first-person shooter set on the moon, alone or with
   other players.
 description: >-
-  MoonCraft moves the arena shooter to the moon. You move through a lunar arena
-  in first person, aim and fire at your opponents in fast, arena-style combat.
+  Fight it out in arena shooter matches set on the moon. You move through a
+  lunar arena, aiming and firing at your opponents in fast, arena-style combat.
   You can play alone or in multiplayer matches against other people, straight
   from the browser.
 
 
   The game takes its cue from Quake 3, and that shows in the emphasis on quick
   movement and direct gunplay in every round. Claude Code and Three.js were used
-  to make it, it ranked 460th of 945 entries at Vibe Jam 2026, and it also plays
-  on phones and other mobile devices.
-
-
-  The lunar setting is what sets it apart, giving the familiar arena shooter
-  template a different backdrop from the usual industrial corridors of the
-  genre. Every match plays out in that lunar arena.
+  to make it.
 play:
   url: https://mooncraft.ericcampbell.dev
   embeddable: true
@@ -53,7 +47,7 @@ media:
     - games/mooncraft/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-09-29
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:vibejam-2026

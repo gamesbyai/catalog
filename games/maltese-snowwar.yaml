@@ -2,14 +2,12 @@ slug: maltese-snowwar
 title: maltese snowwar
 tagline: Fight snowball battles in a Maltese-themed remake of a classic Flash game
 description: >-
-  Every snowball here starts with letting go, because you press and drag one of
-  your three Maltese to move it, then release to fling a snowball at the nearest
-  opponent a dashed line points to.
+  You press and drag one of your three Maltese to move it, then release to fling
+  a snowball at the nearest opponent.
 
 
   A quick tap gives you a short toss, while holding longer charges up a long
-  throw. If nobody's in a clear shot, though, the line won't appear and letting
-  go throws nothing at all.
+  throw. If nobody's in a clear shot, though, letting go throws nothing at all.
 
 
   Your opponents are a team of golden retrievers. One hit stuns a dog and a
@@ -23,11 +21,10 @@ description: >-
   can throw.
 
 
-  A gold-rimmed big snowball turns up during a match, and you grab it by walking
-  onto it or tapping it. That gives your team three big throws within ten
-  seconds. Big balls fly slower, shrink when a small ball hits them and shatter
-  against another big one, a neat bit of snowball physics for such a short-lived
-  pickup.
+  A big snowball turns up during a match, and you grab it by walking onto it or
+  tapping it. That gives your team three big throws within ten seconds. Big
+  balls fly slower, shrink when a small ball hits them and shatter against
+  another big one.
 
 
   You can fight the AI on Easy or Hard, or play a friend on a second device by
@@ -39,7 +36,7 @@ description: >-
 
 
   The game is a fan tribute to the 1998 Flash game SnowCraft. There's also an
-  alternate Chibi Pups cast you can switch to from the title screen.
+  alternate Chibi Pups cast you can switch to.
 play:
   url: https://maltese-snowwar.grok.me
   embeddable: true
@@ -78,7 +75,7 @@ media:
     - games/maltese-snowwar/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-10-02
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:github

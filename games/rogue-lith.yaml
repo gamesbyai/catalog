@@ -2,21 +2,15 @@ slug: rogue-lith
 title: Rogue Lith
 tagline: Sneak downward through hostile levels, stealing and shooting your way deeper.
 description: >-
-  The first objective sends you down through a dark, riveted-metal base to find
-  the entrance to the lower base. You see it from a first-person cockpit view,
-  and a briefing screen with text over an asteroid-like rock comes before the
-  level starts.
+  The first objective sends you down through the base to find the entrance to
+  the lower base. A briefing comes before the level starts.
 
 
-  Left mouse fires a laser and right mouse launches a flare. Both sit in
-  numbered slots on the dashboard. Hull, shield and energy bars track your
-  condition, and a light gauge in the center reads LIT or not, which ties into
-  the stealth side of the game. A flashlight is also on the panel.
+  Left mouse fires a laser and right mouse launches a flare. Whether your ship
+  is lit ties into the stealth side of the game. You also have a flashlight.
 
 
-  Tab opens a wireframe sector map in the corner of the screen. A level and XP
-  counter at the top starts at level 1 with 0 of 40 XP. Objectives appear as
-  prompts, and Space opens them for a closer look.
+  Tab opens a wireframe sector map. Space opens objectives for a closer look.
 play:
   url: https://roguelith.com
   embeddable: true
@@ -57,7 +51,7 @@ media:
     - games/rogue-lith/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-10-02
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:vibejam-2026

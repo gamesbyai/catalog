@@ -2,10 +2,10 @@ slug: signal-lost
 title: Signal Lost
 tagline: Watch autonomous AI vessels explore ruins and nudge them with limited commands
 description: >-
-  Signal Lost puts you at an operator console, watching autonomous AI vessels
-  pick through the ruins of an Earth wrecked by war. You don't steer any of
-  them. Each one writes its own mission log live from generation tables, while
-  the wording bends to suit the faction it belongs to.
+  In Signal Lost you watch autonomous AI vessels pick through the ruins of an
+  Earth wrecked by war. You don't steer any of them. Each one writes its own
+  mission log live from generation tables, while the wording bends to suit the
+  faction it belongs to.
 
 
   The vessels come from five AI cultures, the Determinists, Stochasts, Swarm,
@@ -19,8 +19,8 @@ description: >-
 
 
   That connection runs through a satellite network that wears down over time.
-  Let it sink too low and you lose control. A SAT meter in the corner of the
-  console shows where it stands, starting at 5 out of 5.
+  Let it sink too low and you lose control. Your satellite connection starts at
+  5 out of 5.
 
 
   For an operator, you've got a modest toolkit of just three commands.
@@ -29,13 +29,12 @@ description: >-
   BOOST improves a vessel's next tick, while PING forces a scan that might turn
   up loot. INJECT is the strangest one, since it sends a message into the world
   that the vessel later comes across as a sign, graffiti or a broadcast. Boost
-  and Ping go on cooldown after you use them, and the timer counts down right on
-  the button.
+  and Ping go on cooldown after you use them.
 
 
-  To pick a target, click a vessel's column, then issue commands from the
-  buttons along the bottom bar. Other buttons change the font size, the game
-  speed and the audio. A session runs a few minutes.
+  To pick a target, click a vessel's column, then issue your commands from the
+  buttons. You can also change the font size and the game speed. A session runs
+  a few minutes.
 
 
   vuvko adapted the setting from Eclipse Phase. According to the creator, the
@@ -80,7 +79,7 @@ media:
     - games/signal-lost/shot-2
 dates:
   added: 2026-10-01
-  updated: 2026-10-02
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:aibgj-1

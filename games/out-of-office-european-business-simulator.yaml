@@ -9,19 +9,17 @@ description: >-
 
 
   Out of office replies are the whole strategy. You farm them, then spend them
-  on smarter ways of firing off even more of them, a loop the game lays out
-  with a perfectly straight face. One purchase in the side panel adds a modest
-  0.4 a second.
+  on smarter ways of firing off even more of them, a loop the game lays out with
+  a perfectly straight face. One purchase adds a modest 0.4 a second.
 
 
-  On the left, a vacation ladder lists your time off, starting with the
-  specific "a cheeky fortnight" at a passive multiplier of x1 and a long
-  weekend extension at x1.8, with "a proper month off" further up.
+  Your time off comes in steps, starting with "a cheeky fortnight" at a passive
+  multiplier of x1 and a long weekend extension at x1.8, with "a proper month
+  off" as a later step.
 
 
-  Some upgrades start out locked, with their names hidden behind question marks.
-  Even the news ticker plays along, since it carries a notice about something in
-  the 9th arrondissement being closed.
+  Some upgrades start out locked. The in-game news reports that something in the
+  9th arrondissement is closed.
 
 
   It bills itself, tongue firmly in cheek, as a completely realistic picture of
@@ -29,10 +27,8 @@ description: >-
 
 
   The satire comes from the serious title sitting on top of an owner with zero
-  interest in working, so doing less is literally the plan. It's drawn in chunky
-  retro pixel lettering on navy and cream panels. The opening screen is styled
-  as a summer cash flow notice, and you start by pressing a big green button
-  that says to keep the company alive.
+  interest in working, so doing less is literally the plan. You start by
+  pressing a green button that says to keep the company alive.
 play:
   url: https://business-tycoon-european-summer-edi.vercel.app
   embeddable: true
@@ -68,7 +64,7 @@ media:
     - games/out-of-office-european-business-simulator/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-10-02
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:vibejam-2026

@@ -18,10 +18,6 @@ description: >-
   Pickups stack: shields build up to 6 layers of armor and bombs up to 8. P
   pauses. The creator made it to learn vibe coding and build a game they wanted
   to play.
-
-
-  Backgrounds show a starfield with asteroids, and enemy ships fly in swarms
-  across the screen behind the menu.
 play:
   url: https://secondformrequiem.com
   embeddable: false
@@ -64,7 +60,7 @@ media:
     - games/second-form-requiem/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-10-01
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:vibejam-2026

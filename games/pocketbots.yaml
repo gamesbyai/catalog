@@ -2,8 +2,7 @@ slug: pocketbots
 title: PocketBots
 tagline: Assemble a toy battle robot from scavenged parts and fight arena duels.
 description: >-
-  Pick a robot in the hangar, or hit Build-a-Bot to put a new one together out
-  of salvaged parts.
+  Pick a robot, or put a new one together from salvaged parts with Build-a-Bot.
 
 
   Then you send it into short duels in an arena. Every limb you bolt on adds
@@ -19,13 +18,9 @@ description: >-
   Left mouse fires a revolver, while right mouse handles a repeater.
 
 
-  Its stat panel lists core mass, height, detailing and optics.
-
-
   If you'd rather fight people, you can host a 1v1 and pass the room code along,
-  or type in a friend's code and join theirs. There's also an Open Circuit
-  Battles button that takes you to open matches, plus a glowing exit portal in
-  the hangar.
+  or type in a friend's code and join theirs. You can also jump into open
+  matches through Open Circuit Battles.
 
 
   circa90x set out to make a Western take on Medabots Dual and Girls Mission.
@@ -68,7 +63,7 @@ media:
     - games/pocketbots/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-10-02
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:vibejam-2026

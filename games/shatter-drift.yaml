@@ -3,14 +3,14 @@ title: SHATTER DRIFT
 tagline: Hold to shatter through obstacles, release to recombine and collect energy.
 description: >-
   SHATTER DRIFT runs on one input. Hold it and your crystal breaks apart to pass
-  through obstacles; let go and the pieces recombine and collect energy. It is
-  an abstract arcade runner through endless procedural space, and a run swings
-  between those two states: shattered and safe, or whole and collecting.
+  through obstacles; let go and the pieces recombine and collect energy. It's an
+  abstract arcade runner through endless procedural space. Each run moves back
+  and forth between two states, shattered and safe or whole and collecting.
 
 
   Five biomes, boss waves, and power-ups add variety, and a global leaderboard
-  tracks scores. The game loads at under a megabyte, and custom post-processing
-  shaders and procedural audio with convolution reverb shape the look and sound.
+  tracks scores. The game loads at under a megabyte, and its audio is procedural
+  and uses convolution reverb.
 
 
   The creator says they built it entirely with Claude Code, to show that one AI
@@ -56,7 +56,7 @@ media:
     - games/shatter-drift/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-09-29
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:vibejam-2026

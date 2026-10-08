@@ -5,20 +5,18 @@ tagline: Play a tourist turned hero fighting rogue AI and giant robots across
 description: >-
   An eight-panel comic opens the game. A tourist in Seoul sees the city's AI and
   its five color-coded E.R.A. heroes taken over by a hacker. A soldier asks him
-  to help, and the last panel shows a huge robot above the skyline. A Game Start
-  button then opens the setup screen.
+  to help.
 
 
-  On the setup screen you type a username, choose a language, and pick the Seoul
-  or Wai-kiki stage. You can use a camera or upload a photo to put your own face
-  on the character. Four outfits are available, Bao Soldier, Bao Fighter, Bao
-  Spy and Bao Superhuman, along with a hair toggle.
+  You type a username, choose a language, and pick the Seoul or Wai-kiki stage.
+  You can put your own face on the character with a camera or an uploaded photo.
+  You can dress your character in one of four outfits (Bao Soldier, Bao Fighter,
+  Bao Spy or Bao Superhuman), and there's a hair toggle too.
 
 
-  Each stage runs on a 300-second countdown in a blocky 3D city, with the goal
-  shown as saving the city. A P1 panel shows five hearts and two bars. Your
-  opponents are a rogue AI, E.R.A. heroes that have been corrupted, and giant
-  robots. The creator drew on a game from their childhood.
+  Each stage is set in a city and runs on a 300-second countdown, and your goal
+  is to save it. Your opponents are a rogue AI, E.R.A. heroes that have been
+  corrupted, and giant robots. The creator drew on a game from their childhood.
 play:
   url: https://savecity.vizuo.work
   embeddable: true
@@ -53,7 +51,7 @@ media:
     - games/save-the-city/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-10-02
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:vibejam-2026

@@ -2,10 +2,9 @@ slug: mobius-strip
 title: Mobius Strip
 tagline: Race and fight on gravity-defying tracks until you're the last rider alive.
 description: >-
-  Wait out the countdown, then go. Your red craft starts on a dark, neon-edged
-  track that curves through the clouds, with two rivals, Nyx Steel and Kai
-  Blaze, lined up beside you. All three of you race, but only the last rider
-  still alive gets the win.
+  Wait out the countdown, then go. You start lined up beside two rivals, Nyx
+  Steel and Kai Blaze. All three of you race, but only the last rider still
+  alive gets the win.
 
 
   The tracks bend gravity, and the soundtrack to all of it is explosions and
@@ -14,19 +13,7 @@ description: >-
 
   Fighting is part of the race itself. A tutorial pilot chimes in early with an
   order to take out an enforcer further up the track, because wrecking it earns
-  you XP. Each enemy wears a name tag with its health as a percentage.
-
-
-  Meanwhile, a level counter along the bottom fills up as your XP comes in.
-
-
-  There's a lot on the screen at once. A ranked list keeps each racer's level,
-  hull and distance, and there's a minimap of the oval course plus a speedometer
-  reading in mph. A side panel holds the bonuses you earn when you level up.
-
-
-  There's also a row of ability slots with a draw pile and a discard pile,
-  like a hand of cards on the dashboard.
+  you XP. You earn bonuses each time you level up.
 
 
   yaworsw used AI for the art, animation, audio and visual polish. Those are the
@@ -66,7 +53,7 @@ media:
     - games/mobius-strip/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-10-02
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:vibejam-2026

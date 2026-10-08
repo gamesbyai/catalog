@@ -9,32 +9,30 @@ description: >-
   free-diving drowning.
 
 
-  Your job is to confirm or overturn that ruling, and everything you need sits
-  in 18 files along a side dock. There's a case briefing, a list of persons of
-  interest, coast photos, cellar logs, sale and alibi documents, and witness
-  messages. Each source only holds part of the story, so you cross-check the
-  timeline and hunt for the places where they contradict each other.
+  Your job is to confirm or overturn that ruling, and the 18 files hold
+  everything you need. There's a case briefing, a list of persons of interest,
+  coast photos, cellar logs, sale and alibi documents, and witness messages.
+  Each source only holds part of the story, so you cross-check the timeline and
+  hunt for the places where they contradict each other.
 
 
-  The briefing points you to the coast first, a fair place to begin when the
-  official story blames the water.
+  The briefing points you to the coast first, and the official story blames the
+  water.
 
 
-  A strip of dates under the files lays out the key stretch, from Cole arriving
-  at the Vance estate on April 14 to his body turning up on April 19 and a
-  signing date on April 22. Someone's even left a scribbled sticky note on the
-  desk with "HVAC anomaly", "service gate" and "ask Tom" on it.
+  The key stretch runs from Cole arriving at the Vance estate on April 14 to his
+  body turning up on April 19, with a signing date on April 22. A sticky note
+  has "HVAC anomaly", "service gate" and "ask Tom" written on it.
 
 
   Marcus Vance, Cole's half-brother who runs the estate, is named as the prime
   suspect from the start.
 
 
-  The Casebook beside the files is where you finally have to commit, with six
-  dropdown answers split into physical and proof sections. They ask what Cole
-  died from, where he really died, what the beach scene was, the fatal tell, who
-  lied for Marcus and what Marcus's motive was. Once every answer is filled in,
-  you send off your final report.
+  You commit your answers in the Casebook, six questions split between physical
+  evidence and proof. They ask what Cole died from, where he really died, what
+  the beach scene was, the fatal tell, who lied for Marcus and what Marcus's
+  motive was. Once every answer is filled in, you send off your final report.
 play:
   url: https://case.stephapp.com
   embeddable: true
@@ -70,7 +68,7 @@ media:
     - games/open-case/shot-2
 dates:
   added: 2026-10-01
-  updated: 2026-10-02
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:vibejam-2026

@@ -4,9 +4,9 @@ tagline: Launch cherries and sugar cubes onto dishes to finish orders at a
   late-night café.
 description: >-
   Fling cherries, sugar cubes and other toppings onto the dish to finish each
-  order at a junkissa, a retro Japanese-style café that opens late at night.
-  The toppings do the diving here instead of you. SukimaStock kept the
-  controls simple and spent the extra effort on how each launch feels.
+  order at a junkissa, a Japanese-style café. The toppings do the diving here
+  instead of you. SukimaStock kept the controls simple and spent the extra
+  effort on how each launch feels.
 
 
   A shift lasts five orders. When the fifth one's done, your whole shift gets
@@ -22,17 +22,12 @@ description: >-
   They wanted each run to be about seeing how your day turned out, whether every
   topping landed perfectly or something strange ended up on the plate. Getting
   your shift back as a poster suits that idea, since even a weird dessert still
-  gets its moment.
+  gets its moment. The game is available in Japanese and English.
 
 
-  The title screen sets a moody scene with a lit signboard on a dark night
-  street, a JP/EN language toggle up in the corner and a red button along the
-  bottom that opens the shop.
-
-
-  SukimaStock also put plenty of time into the sounds, the camera movement, the
-  receipts and the posters. They worked with ChatGPT as a development buddy on
-  the code, the screen design and the game rules.
+  SukimaStock also put plenty of time into the sounds, the receipts and the
+  posters. SukimaStock worked with ChatGPT on the code, the screen design and
+  the game rules.
 play:
   url: https://sukimastock.itch.io/junkissa-dive
   embeddable: false
@@ -69,7 +64,7 @@ media:
     - games/junkissa-dive/shot-2
 dates:
   added: 2026-09-30
-  updated: 2026-10-02
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:aibgj-4

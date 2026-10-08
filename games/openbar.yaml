@@ -7,33 +7,26 @@ description: >-
   into games and keep track of how you've treated them.
 
 
-  When you'd rather settle in, F lets you take a seat. Enter puts you in the
-  chat box so you can type your side of things, while holding the left mouse
-  button orbits the camera and holding the right one steers. Esc walks you out
-  of a conversation.
+  When you'd rather settle in, F lets you take a seat. Press Enter to type your
+  side of the conversation, hold the left mouse button to orbit the camera, and
+  hold the right one to steer. Esc walks you out of a conversation.
 
 
-  The start screen, titled TheNeighborhood, pitches a persistent social sim
-  set on a single street with a single bar, where the gossip doesn't fade and
-  old grudges keep quietly simmering.
+  TheNeighborhood is a persistent social sim set on a single street with a
+  single bar, where the gossip doesn't fade and old grudges keep quietly
+  simmering.
 
 
-  Before you head in, you can customize your own character or just keep the
-  default look. There's also a hands-on AI settings panel where you set the
-  provider, endpoint and model.
+  You can customize your own character or just stick with the default look. You
+  can also set the AI provider, endpoint and model yourself.
 
 
-  Up top, a little weather report for the bar tracks the night number, the phase
-  and the room's mood.
+  The night's threads come as gossip-style hints, such as a chill between two
+  regulars that it nudges you to get closer to and figure out.
 
 
-  Off to the side, the night's threads read like a gossip column, with hints
-  such as a chill between two regulars that it nudges you to get closer to and
-  figure out. Below that sits a feed of recent beats from around the room.
-
-
-  kingcyruscrypto wanted a space where AI characters can interact in a 3D world,
-  and a dive bar is the setting they chose for it.
+  kingcyruscrypto wanted a space where AI characters can interact, and they
+  chose a dive bar as the setting.
 play:
   url: https://openbar.live
   embeddable: true
@@ -77,7 +70,7 @@ media:
     - games/openbar/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-10-02
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:vibejam-2026

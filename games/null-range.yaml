@@ -2,16 +2,12 @@ slug: null-range
 title: Null Range
 tagline: Fly a first-person spacecraft and dogfight other pilots online
 description: >-
-  Null Range puts you in a cockpit for first-person dogfights against other
-  pilots online. You fly your ship through open space and try to get enemy craft
-  in your sights while staying out of theirs. It plays in the browser on desktop
-  and on phones.
+  In Null Range you dogfight other pilots online. You fly your ship through open
+  space and try to get enemy craft in your sights while staying out of theirs.
 
 
-  The creator points to Elite: Dangerous as a reference, which fits the emphasis
-  on cockpit-view flight. Built with Cursor and Three.js, it placed fourth of
-  945 at Vibe Jam 2026 and won the Best Art Direction award, presented by
-  Cursor, so the jam singled out its visual style.
+  The creator points to Elite: Dangerous as a reference. Built with Cursor and
+  Three.js.
 
 
   The combat is action-oriented, pairing a shooter's aiming with a flight
@@ -52,7 +48,7 @@ media:
     - games/null-range/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-09-29
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:vibejam-2026

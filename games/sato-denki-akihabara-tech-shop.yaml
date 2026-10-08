@@ -19,13 +19,9 @@ description: >-
   loud combo feedback and global stakes meant to pull you back for one more run.
 
 
-  Every sprite came out of DogSprite, an AI pixel art tool they were building on
-  their own. Having one generator make all of it is a clever way to keep the
-  shop's look consistent.
-
-
-  The title screen sets the mood nicely with a glowing yellow sign, a dark
-  purple backdrop and the shop's name in Japanese, 佐藤電気.
+  Every sprite was made with DogSprite, an AI pixel art tool they were building
+  on their own. Having one generator make all of it helps keep the shop's look
+  consistent.
 
 
   SYSTEMCRASH92 made the game to test that pixel art generator and their coding
@@ -68,7 +64,7 @@ media:
     - games/sato-denki-akihabara-tech-shop/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-10-02
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:vibejam-2026

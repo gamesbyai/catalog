@@ -5,25 +5,20 @@ tagline: Fly a near-light-speed spacecraft through the solar system and watch
 description: >-
   Fly a spacecraft through a 3D solar system with the keyboard, switching
   between six speed modes that start at subsonic and climb toward light speed.
-  On-screen panels show velocity as a percentage of light speed, the Lorentz
-  factor, and your XYZ coordinates.
 
 
-  A time dilation panel runs two clocks, one for Earth and one for the ship. At
-  low speed they read the same. Accelerate and watch them drift apart. Planets
-  can be clicked to read facts about them.
+  You can compare time on Earth with time on your ship. At low speed they read
+  the same. Accelerate and watch them drift apart. Planets can be clicked to
+  read facts about them.
 
 
-  A solar map marks your position and the black-hole portal, with the flat
-  distance to it and your range to the black hole. Follow the cyan route to the
-  portal, or press Jump to Black Hole to skip the trip. Snap Back returns you to
-  the solar system. Reaching the portal sends you out into a webring of other
-  games.
+  You can follow the route to the portal, or press Jump to Black Hole to skip
+  the trip. Snap Back returns you to the solar system. Reaching the portal sends
+  you out into a webring of other games.
 
 
-  Stop, Pause, Reset and Free Camera buttons sit on screen. The creator built it
-  after watching Interstellar, wanting players to experience time dilation
-  themselves.
+  There's also a Free Camera option. The creator built it after watching
+  Interstellar, wanting players to experience time dilation themselves.
 play:
   url: https://relativity-cng.vercel.app
   embeddable: true
@@ -65,7 +60,7 @@ media:
     - games/relativityx/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-10-01
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:vibejam-2026

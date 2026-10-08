@@ -9,10 +9,8 @@ description: >-
   defense, action and survival, and it is played alone.
 
 
-  The theme draws on Artemis-style lunar exploration, with a playful nod to
-  Nintendo-flavored arcade design. Its maker used the Gemini app, entering it in
-  Vibe Jam 2026, where it placed 451st of 945, and touch screens are supported
-  alongside desktop.
+  The theme draws on Artemis-style lunar exploration. Its maker built it with
+  the Gemini app.
 
 
   Real-time action sits on top of tower-defense planning and resource
@@ -56,7 +54,7 @@ media:
     - games/lunar-shots/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-09-29
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:vibejam-2026

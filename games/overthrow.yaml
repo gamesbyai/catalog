@@ -3,35 +3,25 @@ title: Overthrow
 tagline: Battle other players in a physics-driven king of the hill arena to hold
   the top score.
 description: >-
-  You're a little round player on a crowded hill, and staying near the peak is
-  how you earn points. Everyone else in the arena wants that same spot, so it
-  turns into a physics-driven king of the hill where you bump rivals off while
-  guarding the ground you've taken.
+  You play on a crowded hill, and staying near the peak is how you earn points.
+  Everyone else in the arena wants that same spot, so it turns into a
+  physics-driven king of the hill where you bump rivals off while guarding the
+  ground you've taken.
 
 
-  Your main tool is a boost on Space, and the game is refreshingly blunt that
-  it's there for shoving other players off the slope. Powerups are scattered
-  around to give you an edge.
+  Your main tool is a boost on Space, meant for shoving other players off the
+  slope. Powerups are scattered around to give you an edge.
 
 
-  The action is fast, with a bit of strategy on top, because every round keeps
-  asking when to dig in at the top and when to push the challengers out of your
-  way. Each round runs on a clock, and whoever leads the scoreboard when it runs
-  out comes out ahead.
-
-
-  When someone gets knocked from the top, a banner announces they've been
-  overthrown, a nice payoff for the title.
-
-
-  The hill itself changes between rounds, from the grassy green mound of Bliss
-  to the dusty red slopes of Olympus, and the corner of the screen tells you
-  which map is up next.
+  The action is fast, and each round asks you to decide when to hold the top and
+  when to push the challengers out of your way. Each round runs on a clock, and
+  whoever is in the lead when it runs out comes out ahead. Anyone knocked off
+  the top gets overthrown. The hill ranges from Bliss to Olympus.
 
 
   forkexecwait had carried the idea around for a while before turning it into a
-  finished game. They drew on Super Mario Party and went for a similar charming
-  feel, casual and whimsical rather than grim.
+  finished game. They drew on Super Mario Party for a similar feel, casual and
+  whimsical rather than grim.
 play:
   url: https://overthrow.gg
   embeddable: true
@@ -70,7 +60,7 @@ media:
     - games/overthrow/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-10-02
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:vibejam-2026
