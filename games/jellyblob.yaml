@@ -32,9 +32,9 @@ description: >-
   Shift, is a paid unlock.
 
 
-  All of the code came from AI, steered by Kvickan through hundreds of rounds of
-  input and instructions. The game was built with one model first and then
-  rebuilt with another.
+  All of the code came from AI, steered by its creator through hundreds of
+  rounds of input and instructions. The game was built with one model first and
+  then rebuilt with another.
 play:
   url: https://jellyblob.win
   embeddable: false
