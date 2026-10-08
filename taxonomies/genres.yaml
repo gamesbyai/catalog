@@ -81,7 +81,7 @@ terms:
 
       The content has to be accurate and suited to the learner's age. The code usually pairs a bank of questions or scenarios with a way to check answers and give feedback, built around clear learning goals and structured rules. In a browser, localStorage can remember a learner's progress between visits, and pointer events let the same activity work with a mouse, a pen or a finger.
 
-      The Oregon Trail is a surprisingly old example. Three student teachers in Minnesota wrote it in 1971, and it teaches 19th-century pioneer life through supply and travel decisions.
+      The Oregon Trail is an early example. Three student teachers in Minnesota wrote it in 1971, and it teaches 19th-century pioneer life through supply and travel decisions.
     sources:
       - "https://en.wikipedia.org/wiki/Educational_game"
       - "https://en.wikipedia.org/wiki/The_Oregon_Trail_(series)"
@@ -152,7 +152,7 @@ terms:
     intro: |-
       Ink Side Down hands you a cube with one inked face and a grid with some squares marked, and you roll it so the ink prints on those squares and nowhere else. Every roll turns the cube, so the inked face keeps moving, and planning the route ahead helps more than reacting to the tile in front of you.
 
-      Puzzle games are a bit of a broad family. They test skills like logic, pattern recognition, sequence solving and spatial awareness, and you study a board or a set of rules, make a move and see whether it got you closer to the solution, level after level. Tetris (1985), Bejeweled and Portal all count.
+      Puzzle games are a broad family. They test skills like logic, pattern recognition, sequence solving and spatial awareness, and you study a board or a set of rules, make a move and see whether it got you closer to the solution, level after level. Tetris (1985), Bejeweled and Portal all count.
 
       Since they're defined by their rules, the code centers on a clear model of the board or the pieces and a check for win and lose conditions. Levels have to be built or generated so that a solution exists, and some games add physics or a real-time element, like the falling blocks in Tetris.
 

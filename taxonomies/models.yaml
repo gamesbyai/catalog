@@ -11,7 +11,7 @@ terms:
 
       Fable 5.1 is Anthropic's model for demanding reasoning and long-horizon agentic work, released September 1, 2026. It extends Claude Fable 5 at the same prices, with stronger long-running agentic coding, multistep research, and document, spreadsheet and slide work. Claude Mythos 5.1 has the same capabilities but is open only to Project Glasswing participants.
 
-      Anthropic suggests starting most work on Opus and moving to Fable when results at higher Opus effort still fall short. That makes sense, since it's the slowest and most expensive current Claude model, at $10 per million input tokens and $50 per million output. It reads text and images, writes text, has a 1M-token context window, and is on claude.ai, in Claude Code and through the API and major clouds.
+      Anthropic suggests starting most work on Opus and moving to Fable when results at higher Opus effort still fall short. Fable is the slowest and most expensive current Claude model, at $10 per million input tokens and $50 per million output. It reads text and images, writes text, has a 1M-token context window, and is on claude.ai, in Claude Code and through the API and major clouds.
 
       Canva's head of AI, quoted in the announcement, says it built a rhythm game in Canva Code with real music and on-beat gameplay matched to the level it generated. As of September 2026 it's the newest Fable model, with retirement not sooner than September 1, 2027.
     sources:
@@ -36,7 +36,7 @@ terms:
     name: Claude Opus 5.5
     provider: anthropic
     intro: |-
-      Arkanoid Neon's eight hand-built brick rounds start with Regnbågen, a rainbow of colored rows, and an AI-controlled demo plays on the title screen. It was made with Claude Code on Claude Opus 5.5.
+      Arkanoid Neon has eight hand-built brick rounds, starting with one called Regnbågen. It was made with Claude Code on Claude Opus 5.5.
 
       Opus 5.5 is Anthropic's model for long-running agentic coding and knowledge work, released September 22, 2026 as the first of the Claude 5.5 family. Anthropic says it performs at the level of Claude Fable 5.1 on most work, at $4 per million input tokens and $20 per million output tokens, a bit below Opus 5's $5 and $25.
 
@@ -70,7 +70,7 @@ terms:
 
       Sonnet 5.5 came out on September 28, 2026 as the second model in the Claude 5.5 family, and Anthropic's docs call it the best combination of speed and intelligence. The announcement says it generates output faster than Claude Sonnet 5 and can cost less per task, at the same list price of $2 per million input tokens and $10 per million output tokens.
 
-      Its launch demos are single HTML files, like a murmuration of 400 starlings, wind shaping sand dunes and, for some reason, a clock made of 24 small clocks. It's in the Claude apps, in Claude Code, on the Claude API and on Amazon Bedrock, Google Cloud and Microsoft Foundry, and it reads text and images, writes text, and has a 1M-token context window.
+      Its launch demos are single HTML files, like a murmuration of 400 starlings, wind shaping sand dunes and a clock made of 24 small clocks. It's in the Claude apps, in Claude Code, on the Claude API and on Amazon Bedrock, Google Cloud and Microsoft Foundry, and it reads text and images, writes text, and has a 1M-token context window.
 
       As of September 2026 it's the newest Sonnet model, with retirement not sooner than September 28, 2027, and in the current lineup only Claude Haiku 4.5 is faster.
     sources:
@@ -80,7 +80,7 @@ terms:
     name: Claude Sonnet 5
     provider: anthropic
     intro: |-
-      Chess3dastra, a full chess game with a computer opponent, was built in a surprisingly quick 41 minutes or so, from a handful of prompts. Claude Sonnet 5 and GPT-6 Astra are the models behind it.
+      Chess3dastra, a full chess game with a computer opponent, was built in about 41 minutes from a handful of prompts. Claude Sonnet 5 and GPT-6 Astra are the models behind it.
 
       Sonnet 5 came out on June 30, 2026, and Anthropic built it to be its most agentic Sonnet model at the time, one that can make plans, use tools such as browsers and terminals, and work autonomously. At launch it became the default model for Free and Pro users of the Claude apps.
 
@@ -95,7 +95,7 @@ terms:
     name: Claude Opus 4.8
     provider: anthropic
     intro: |-
-      Halfway to Mars in Fly To Mars, the hull springs a leak and you have to seal it while the asteroids keep coming. The game was made with a whole stack of AI tools and models, and Claude Opus 4.8 is one of them.
+      Halfway to Mars in Fly To Mars, the hull springs a leak and you have to seal it while the asteroids keep coming. The game was made with five AI coding tools and five models, and Claude Opus 4.8 is one of them.
 
       Anthropic released Opus 4.8 on May 28, 2026 and said it builds on Claude Opus 4.7 with improvements across benchmarks and is a more effective collaborator. The price stayed at $5 per million input tokens and $25 per million output tokens.
 
