@@ -2,10 +2,10 @@ slug: bomber-guys
 title: Bomber Guys
 tagline: Blast the floor away and knock seven rivals off the arena.
 description: >-
-  You're a googly-eyed bean dropped into an eight-player arena where the floor
-  itself is the thing you're fighting over. You plant bombs to blow holes in the
-  ground and shove the other beans toward the edge, and the last one still
-  standing once the other seven are gone takes the round.
+  You're a bean in an eight-player arena where the floor itself is the thing
+  you're fighting over. You plant bombs to blow holes in the ground and shove
+  the other beans toward the edge, and the last one still standing once the
+  other seven are gone takes the round.
 
 
   Every explosion eats away footing, so a well-placed bomb can trap a rival
@@ -17,19 +17,12 @@ description: >-
   seems fair on a floor that keeps losing pieces.
 
 
-  Before a match you name your bean and pick one of eight colors, and with the
-  blue one picked, your bean even shows up labeled Pool. Quick Play throws you
-  in with other beans, or you can set up a private room instead. The beans are
-  chunky, rounded figures with big wobbly eyes, and they look goofy against
-  the soft glowing purple menu.
-
-
-  Even the title screen swaps "last one standing" for "last bean bouncing", a
-  fair trade for a cast this round.
+  Before a match you name your bean and pick one of eight colors. Quick Play
+  throws you in with other beans, or you can set up a private room instead.
 
 
   sergebocancea says it draws on the kind of simple games they used to work on
-  at Voodoo.io. Matches stay short and easy to read in that same arcade style.
+  at Voodoo.io. Matches stay short.
 play:
   url: https://bomber-guys.vercel.app
   embeddable: true
@@ -70,7 +63,7 @@ media:
     - games/bomber-guys/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-10-02
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:vibejam-2026

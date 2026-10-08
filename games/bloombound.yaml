@@ -2,10 +2,9 @@ slug: bloombound
 title: BloomBound
 tagline: Cross a bloom portal to heal four broken worlds and befriend their creatures.
 description: >-
-  Stepping through the bloom portal starts at a Bloom Passport screen. Type a
-  gardener name, pick one of six glow colors, then press Enter Portal for a new
-  run or Use Saved to load a stored profile. An opening voice note can be played
-  or skipped.
+  You start by stepping through the bloom portal. You type a gardener name and
+  pick one of six glow colors, then start a new run or load a stored profile. An
+  opening voice note can be played or skipped.
 
 
   You arrive in Heart Grove, the central grove, and from there restore four
@@ -14,10 +13,10 @@ description: >-
   restored.
 
 
-  After the fourth world you return to Heart Grove for a festival finale.
-  On-screen buttons cover movement with a move pad, a drag-to-look camera, and
-  Use, Pulse and Guide actions. The creator built it from a shared love of games
-  with their three kids.
+  After the fourth world you return to Heart Grove for a festival finale. You
+  move with a move pad, drag to look around with the camera, and act with Use,
+  Pulse and Guide. The creator built it from a shared love of games with their
+  three kids.
 play:
   url: https://bloombound-jam.vercel.app
   embeddable: true
@@ -54,7 +53,7 @@ media:
     - games/bloombound/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-10-01
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:vibejam-2026

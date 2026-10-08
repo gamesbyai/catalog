@@ -1,28 +1,43 @@
 slug: colonia
 title: Colonia
 tagline: Lay roads, house Roman families, and defend a growing city from raiders.
-description: "Lay out roads, drop in homes, and then keep the people in them supplied. Walkers carry water, food and religion down the streets, and as a home gets what it needs it grows from a tent into something much grander.
+description: "Lay out roads, drop in homes, and then keep the people in them
+  supplied. As a home gets what it needs, it grows from a tent into something
+  much grander.
 
 
-  There's a whole 20-level housing ladder, and the top rung is an imperial palace. Click any home and it tells you what it needs next.
+  The housing ladder has 20 levels, and the top one is an imperial palace.
 
 
-  Buildings all carry their Latin names, so your goods go into a Horreum and your legion lives in a Castra, with the English name shown beside it. Fittingly, the same five gods Caesar III had (Ceres, Neptune, Mercury, Mars and Venus) are here too. Temples and festivals keep them content and blessing the city, while neglect makes them strike.
+  Buildings all carry their Latin names: your goods go into a Horreum and your
+  legion lives in a Castra. The same five gods Caesar III had (Ceres, Neptune,
+  Mercury, Mars and Venus) are here too. Temples and festivals keep them content
+  and blessing the city, while neglect makes them strike.
 
 
-  Trouble comes from plenty of directions. Unhappy homes produce protesters, thieves and eventually rioters, and crowded, unhealthy ones can fall sick, but overlays show where each problem is brewing.
+  Unhappy homes produce protesters, thieves and eventually rioters, and crowded,
+  unhealthy ones can fall sick.
 
 
-  Raiders arrive by land, and by ship where a river or coast reaches the sea. You answer with legions, archers, cavalry and a fleet of liburnians, which is a surprisingly complete military for a city builder.
+  Raiders arrive by land, and by ship where a river or coast reaches the sea.
+  You answer with legions, archers, cavalry and a fleet of liburnians.
 
 
-  Trade runs by caravan and by ship with twelve partner cities, each with its own prices and yearly quota, and a clever switch on every partner's card lets you choose who gets each good.
+  Trade runs by caravan and by ship with twelve partner cities, each with its
+  own prices and yearly quota, and a switch on every partner's card lets you
+  choose who gets each good.
 
 
-  The campaign has ten steps, starting at a village on a river and ending at a sprawling city split into districts, and from step 3 you pick a peaceful or military post next. A sandbox offers five landscapes and four map sizes, up to 256x256. There's also a governor's career with ranks, a salary you choose for yourself, and a Hall of Fame for scored wins.
+  The campaign has ten steps, starting at a village on a river and ending at a
+  sprawling city split into districts, and from step 3 you pick a peaceful or
+  military post next. A sandbox offers five landscapes and four map sizes, up to
+  256x256. The governor's career has ranks and a salary you choose for yourself,
+  and there's a Hall of Fame for scored wins.
 
 
-  Er2oneousbit asked Claude to make a Caesar III style game without using any of the original's code or art. Every picture is drawn by code, and the sound and music are generated on the fly."
+  Er2oneousbit asked Claude to make a Caesar III style game without using any of
+  the original's code or art. The art is drawn by code, and the sound and music
+  are generated on the fly."
 play:
   url: https://er2oneousbit.github.io/Colonia/
   platforms:
@@ -45,7 +60,8 @@ made:
   aiShare: all
   source: "Creator's submission (issue #104)"
   evidence: creator
-  notes: I asked claude to make a Caeser 3 clone, based on the original but do not use any of its code or art.
+  notes: I asked claude to make a Caeser 3 clone, based on the original but do not
+    use any of its code or art.
 tech:
   engine: canvas
   multiplayer: single
@@ -60,7 +76,7 @@ media:
     - games/colonia/shot-2
 dates:
   added: 2026-10-03
-  updated: 2026-10-03
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: form

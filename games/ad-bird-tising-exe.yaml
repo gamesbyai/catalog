@@ -7,15 +7,14 @@ description: >-
   obstacles, and the first collision ends the run.
 
 
-  The joke lives in the packaging. The title is styled like an old executable
-  file, the theme is a send-up of marketing, and the slogan promises
-  high-performance marketing delivered one flap at a time. Google's Antigravity
-  was the AI tool, and it came 431st of 945 at Vibe Jam 2026.
+  The theme is a send-up of marketing, and the slogan promises high-performance
+  marketing delivered one flap at a time. The game was made with Google's
+  Antigravity.
 
 
   Under the theme sits the familiar one-button loop: tap, dodge and see how far
-  you get. A single tap is the whole control scheme, on a phone or at a desk, in
-  a single-player run that lasts as long as you keep clear of the obstacles.
+  you get. A single tap is the whole control scheme, and a run lasts as long as
+  you keep clear of the obstacles.
 play:
   url: https://stockout.studio
   embeddable: true
@@ -51,7 +50,7 @@ media:
     - games/ad-bird-tising-exe/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-09-29
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:vibejam-2026

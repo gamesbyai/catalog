@@ -2,34 +2,25 @@ slug: gravity-golf
 title: Gravity Golf
 tagline: Guide a golf ball through solar systems using orbital pull
 description: >-
-  Gravity Golf has you drag back and let go to send a white ball out across a
-  dark field of stars, and then watch everything nearby tug at it.
+  Gravity Golf has you drag back and let go to send the ball out, then watch
+  everything nearby tug at it.
 
 
-  A grid covers the whole board, and it sags around every body sitting on it.
-  Because of that pull, the ball's path bends as it slips past each one. It's a
-  neat way of drawing gravity right onto the playfield, where you can see the
-  dips before you shoot.
+  Because of that pull, the ball's path bends as it slips past each one. The
+  pull shows up right on the playfield, so you can see it before you shoot.
 
 
-  Open Lane, the first level, already puts a yellow sun in the middle of things,
-  wrapped in a thin orbit ring. There's also a teal planet with a small moon
-  tucked against it, plus a dark purple ring off on the right, while a gold ring
-  waits down in the lower left corner.
+  Open Lane, the first level, starts you off with a sun in the middle of the
+  field. There's also a planet with a small moon tucked against it. The game has
+  160 levels in total.
 
 
-  The header counts Level 1 of 160, a surprising amount of space to cover, with
-  a map icon sitting right beside it.
-
-
-  There's a considerate safety net for bad shots. Retry and Undo buttons sit in
-  the top right corner, and they're tied to the R and Z keys. A small how-to
-  card also walks you through the drag-and-release launch.
+  Retry and Undo, on the R and Z keys, take back a bad shot.
 
 
   RichardGerum says the idea came from playing Outer Wilds and wanting to
-  explore orbital mechanics further. The levels carry the ball through different
-  solar systems, with gravity itself as the puzzle.
+  explore orbital mechanics further. Levels take the ball through different
+  solar systems, and gravity itself is the puzzle.
 play:
   url: https://gravity-golf-olive.vercel.app
   embeddable: true
@@ -70,7 +61,7 @@ media:
     - games/gravity-golf/shot-2
 dates:
   added: 2026-10-01
-  updated: 2026-10-02
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:vibejam-2026

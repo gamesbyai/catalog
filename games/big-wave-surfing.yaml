@@ -7,23 +7,12 @@ description: >-
   the foam is the thing that ends your run if it swallows you.
 
 
-  The camera sits low behind your surfer out on open water, with a wall of
-  turquoise rising up ahead.
-
-
   The first level goes by Mellow Point, a gentle name for a wave that size. If
-  you don't manage to catch the wave, the round ends on a Missed the Wave
-  screen. It breaks down your time, top speed, average speed, turns, tricks
-  and score, and the Retry and Menu buttons sit right underneath.
-
-
-  It's all set on a bright daytime sea, with scattered clouds overhead and low
-  hills along the horizon.
+  you don't manage to catch the wave, the round ends.
 
 
   rolznz built it for coworkers who have never surfed. The focus is the simple
-  physics of being carried by a wave rather than tricks, even though the results
-  screen still keeps a count of them.
+  physics of being carried by a wave rather than tricks.
 play:
   url: https://bigwavesurfing.fun
   embeddable: true
@@ -60,7 +49,7 @@ media:
     - games/big-wave-surfing/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-10-02
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:vibejam-2026

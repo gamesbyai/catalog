@@ -5,9 +5,8 @@ tagline: Build a hex archipelago and defend your Captain's Keep from enemy ships
 description: >-
   Pirate ships and tentacled sea creatures come at your castle in waves, and
   your job is to keep the Captain's Keep standing through all of them.
-  Everything plays out in real time on a top-down map made of hexagonal tiles. A
-  three-line motto on the title screen tells you to build your island, defend
-  the Keep and hold back the waves.
+  Everything happens in real time on a map made of hexagonal tiles. The goal is
+  to build your island, defend the Keep and hold back the waves.
 
 
   Your island grows one hex at a time, so you're slowly stretching it out into a
@@ -21,18 +20,11 @@ description: >-
   by.
 
 
-  It's all modeled to look like clay, from the sand and grass tiles to the small
-  ponds tucked into the land. Palm trees, piles of gold coins and wooden barrels
-  are dotted around the island. Even the pirate flags on the ships and the
-  castle tower get the same soft, handmade treatment.
+  You can play solo or start a multiplayer game, after entering a captain name.
 
 
-  Before anything starts, the game asks you for a captain name and then lets you
-  pick Start Solo or Start Multiplayer.
-
-
-  Multiplayer is co-op, and there's a list of open rooms you can join if someone
-  has already set sail. It comes with a global leaderboard as well.
+  Multiplayer is co-op, and you can join open rooms that someone has already
+  started. It comes with a global leaderboard as well.
 
 
   radomir_3 aimed for a look a nine-year-old would enjoy that adults could still
@@ -74,7 +66,7 @@ media:
     - games/ship-snatch/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-10-02
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:vibejam-2026

@@ -7,32 +7,28 @@ description: >-
   off it for 3 minutes.
 
 
-  An intro scene sets things up with the laddoo sitting on a metal plate while a
-  tidy little line of ants marches along the table's edge, though a Skip Intro
-  button lets you get straight to the defending.
+  The game opens with an intro scene that sets up the situation.
 
 
   Five tools stand between the ants and your sweet. Protective Rekha lets you
   draw a line they can't cross, so you can shut off entire pathways, but you
   only get 2 uses. Water comes with the same 2-use limit and drops a pool that
-  blocks nearby ants and drowns them, a grim end for a sugar craving.
+  blocks nearby ants and drowns them.
 
 
-  Sugar is the sneaky option, a recurring decoy that pulls ants away from the
-  laddoo, though you can only have 3 of them down at a time.
+  Sugar is a recurring decoy that pulls ants away from the laddoo, though you
+  can only have 3 of them down at a time.
 
 
-  Then there's the chappal, a sandal that flattens a whole cluster in one hit
-  and is tagged as spawning. Tap is the plain fallback, letting you squash ants
-  one at a time, precise but slow.
+  Then there's the chappal, a sandal that flattens a whole cluster of ants in
+  one hit. Tap is the plain fallback, letting you squash ants one at a time.
 
 
-  akarshmanas built it from memories of 90s Indian summers, with Nani's house,
-  the ceiling fan and load-shedding all in the mix, plus recently spotting
-  ants on a window sill. According to akarshmanas, it's meant to take people
-  back to their childhood rather than chase a score, and to the grandmother
-  who cared, be it Abuela, Grandma or Nani. The start card shows a photo of a
-  child beside a handwritten note reading "Save the Laddoo".
+  akarshmanas built it from memories of 90s Indian summers, drawing on Nani's
+  house and load-shedding, plus recently spotting ants on a window sill.
+  According to akarshmanas, it's meant to take people back to their childhood
+  rather than chase a score, and to the grandmother who cared, be it Abuela,
+  Grandma or Nani.
 play:
   url: https://savetheladdoo.vercel.app
   embeddable: true
@@ -71,7 +67,7 @@ media:
     - games/save-the-laddoo/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-10-02
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:vibejam-2026

@@ -3,8 +3,8 @@ title: Bayou Blitz
 tagline: Collect crawfish through the bayou while dodging hungry gators.
 description: >-
   Move with WASD or the arrow keys through a mall while a pursuer who likes you
-  far too much chases you around it. Your real job isn't escaping her, though,
-  because you have to keep a Loneliness meter somewhere between 20 and 80.
+  far too much chases you around it. Escaping her isn't really the goal, because
+  you have to keep a Loneliness meter somewhere between 20 and 80.
 
 
   Running away makes you lonely, while getting caught makes her cling, so the
@@ -12,24 +12,22 @@ description: >-
 
 
   Shift sends you into a dash with invincibility frames. Space fires off a
-  power-up, which you pick up by walking over one of the glowing pads scattered
-  around the floor. The HUD up top packs in plenty, tracking your Loneliness
-  value, a Clingy count, a countdown timer and a running score.
+  power-up, which you pick up by walking over one of the pads on the floor.
 
 
-  If she does grab you, a STRUGGLE prompt pops up in a burst of pink hearts, and
-  you alternate A and D to wriggle free.
+  If she does grab you, a STRUGGLE prompt appears, and you alternate A and D to
+  wriggle free.
 
 
-  The first level is a mall with an alt-fashion store, laid out with store
-  islands and one-way escalators marked by big yellow arrows. The ordinary
-  mall-walkers count as a hazard too, since they get in your way and slow you
-  down, and you clear the level by surviving for 2:00.
+  The first level takes place in a mall, with an alt-fashion store, store
+  islands and one-way escalators. The ordinary mall-walkers count as a hazard
+  too, since they get in your way and slow you down, and you clear the level by
+  surviving for 2:00.
 
 
   Four more levels start out locked. They're a cemetery at midnight, a goth
-  club, a coffee shop and, a little ominously, her apartment. You pick a level
-  with the left and right arrows and press Enter to start it.
+  club, a coffee shop and her apartment. You pick a level with the left and
+  right arrows and press Enter to start it.
 play:
   url: https://gogg.cloud
   embeddable: true
@@ -72,7 +70,7 @@ media:
     - games/bayou-blitz/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-10-02
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:vibejam-2026

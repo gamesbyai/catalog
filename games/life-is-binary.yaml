@@ -5,34 +5,22 @@ description: >-
   Missions pop up from characters such as Nova, and each one comes with a title,
   a short brief and a reward in Bits that you can accept, decline or just
   ignore. It suits a game whose tagline says every choice comes down to a 1 or a
-  0. Every prompt also has a button to open a chat with whoever sent it.
+  0. You can also open a chat with whoever sent each mission.
 
 
-  Your first job is a humble one. You're asked to fit a starter fuse by
-  opening the Fuse Panel, picking an empty slot and seating it for 25 Bits,
-  though the brief cheerfully admits you could pocket the fuse instead.
+  Your first job is seating a starter fuse. You're asked to seat a starter fuse
+  for 25 Bits, though the brief admits you could pocket the fuse instead. All of
+  this starts in a 14 by 10 foot apartment.
 
 
-  All of this starts in a cramped isometric apartment, 14 by 10 feet, packed
-  with bookshelves, monitors and neon posters of long-dead memes that flicker on
-  the walls.
-
-
-  Your only roommate is GL1TCH, a sarcastic toaster that hovers in midair with a
-  single glowing red eye. The intro says its voice sounds like a chain-smoking
-  dial-up modem, and for some reason the place smells of burnt RAM. A six-step
-  slideshow sets all this up before you take over a pixel-art character, and you
-  can skip it or tick a box so it never shows again.
-
-
-  Around the edges of the screen you'll find the day and time, your level, a
-  coin balance and a log-in button, plus a hotbar holding items like a wooden
-  stick.
+  Your only roommate is GL1TCH, a sarcastic toaster. The intro says its voice
+  sounds like a chain-smoking dial-up modem, and the place smells of burnt RAM.
+  A six-step slideshow sets all this up before you take control of a character,
+  and you can skip it or tick a box so it never shows again.
 
 
   Beyond that first room, it's a multiplayer life sim about farming, hacking and
-  hustling across a pixel-art world. Other players share that world with you
-  online.
+  hustling. Other players share that world with you online.
 play:
   url: https://lifeisbinary.com
   embeddable: true
@@ -67,7 +55,7 @@ media:
     - games/life-is-binary/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-10-02
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:vibejam-2026

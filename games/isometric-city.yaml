@@ -2,46 +2,41 @@ slug: isometric-city
 title: IsoCity
 tagline: Build and manage an isometric city, growing it from the ground up.
 description: >-
-  IsoCity hands you a bare patch of isometric tiles and a $100,000 bank balance,
-  and it's up to you what city grows on it.
+  IsoCity starts you with empty land and $100,000, and you decide how the city
+  grows from there.
 
 
   You lay down roads, rail or subway lines, then zone the tiles as residential,
   commercial or industrial. Everything carries a price, from $10 for the
-  bulldozer to $25 a road tile, $40 for rail and $50 for subway or any zone. A
-  side panel also holds parks, utilities and services you can drop in.
+  bulldozer to $25 a road tile, $40 for rail and $50 for subway or any zone. You
+  can also place parks, utilities and services.
 
 
-  A top bar counts your people, jobs, money and monthly income, with small
-  demand meters showing how much each of the three zone types is wanted.
-  Underneath it, percentages track health, happiness, safety, education and the
-  environment, and there's a lot to keep an eye on for a town that starts with
-  zero people.
+  Health, happiness, safety, education and the environment are each tracked as a
+  percentage, and your town starts with zero people.
 
 
-  You set the rate with a tax slider, while the time controls let you pause the
-  simulation or speed it up.
+  You set the tax rate, and you can speed the simulation up or pause it.
 
 
-  The streets get far busier than the tidy grid suggests. Buses, cars, trains,
-  barges, planes and even seaplanes all move through the city, and they'll
-  actually stop for traffic lights. People on foot wander among them.
+  Buses, cars, trains, barges, planes and even seaplanes all move through the
+  city, and they'll actually stop for traffic lights. People on foot wander
+  among them.
 
 
-  When you want to check one particular condition, a view overlay highlights it
-  across the map. A minimap in the corner shows where each zone type has spread.
+  You can check one condition at a time with a view overlay that highlights it
+  across the map.
 
 
-  From the main menu you can start a new game, open a co-op mode or pull up a
-  ready-made example city. You can keep several cities saved and load any of
-  them back later. On touch screens the interface reshapes itself into drawers
-  and toolbars.
+  You can also start a new game, play co-op, or open a ready-made example city.
+  You can keep several cities saved and load any of them back later. The game
+  also works on touch screens.
 
 
-  amilich didn't lean on an outside game engine, building the isometric renderer
-  on HTML5 Canvas with its own depth sorting and layer handling. It's open
-  source, and the same project also holds IsoCoaster, a theme park builder full
-  of coasters, rides and guests.
+  amilich built the game without an outside game engine, drawing the isometric
+  renderer on HTML5 Canvas with its own depth sorting and layer handling. It's
+  open source, and the same project also holds IsoCoaster, a theme park builder
+  full of coasters, rides and guests.
 play:
   url: https://iso-city.com
   embeddable: true
@@ -72,7 +67,7 @@ media:
     - games/isometric-city/shot-2
 dates:
   added: 2026-09-30
-  updated: 2026-10-02
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:github

@@ -3,22 +3,20 @@ title: Bluffub
 tagline: Match cards, claim hidden poker bonuses, and bluff opponents in a game
   of Pişti.
 description: >-
-  Bluffub is a card game built on Pişti, the Turkish table-capture game. Players
-  put cards onto a shared pile and try to match the top card to take the table.
+  Your moves are built on Pişti, the Turkish table-capture game. Players put
+  cards onto a shared pile and try to match the top card to take the table.
   Hidden poker bonuses can be claimed along the way, so each round mixes
   matching with deciding what to announce.
 
 
-  The bluffing is what sets it apart. A player can claim a bonus they may or may
+  Bluffing is central to the game. A player can claim a bonus they may or may
   not hold, and a wrong call hands the whole table to the opponent. That makes
   every challenge a risk, and a careful read of the other player matters as much
   as the cards in hand.
 
 
-  It supports multiplayer and runs on mobile. It was made for Vibe Jam 2026 with
-  Claude Code and rendered with PixiJS. The creator describes a liking for the
-  power of numbers and the element of surprise, both of which show up in the
-  card play.
+  It supports multiplayer. The creator built it with Claude Code, using PixiJS
+  for the graphics.
 play:
   url: https://bluff-4vz.pages.dev
   embeddable: true
@@ -55,7 +53,7 @@ media:
     - games/bluffub/shot-2
 dates:
   added: 2026-10-01
-  updated: 2026-10-01
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:vibejam-2026

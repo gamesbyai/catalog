@@ -2,10 +2,9 @@ slug: marble-garble
 title: MARBLE GARBLE
 tagline: Roll a marble across hazardous terrain and collect all the money in each level.
 description: >-
-  A red marble sits on a dark, walled grid scattered with gold coins, black
-  blocks and open pits ringed in orange. You roll it with the keyboard, building
-  momentum to collect every coin on the board. Collecting them all advances you
-  to the next level.
+  You guide a marble around walled grids that hold coins, blocks and open pits,
+  rolling it with the keyboard and building momentum to collect every coin on
+  the board.
 
 
   The game has 50 procedurally generated levels across five worlds. Surfaces
@@ -14,12 +13,9 @@ description: >-
   such as hovering UFOs and forest snakes patrol the levels.
 
 
-  The title menu offers a New Game button, a High Score list, and two
-  checkboxes: one turns enemies on or off, the other adds a total game timer for
-  speedrunning. A progress bar at the top tracks how close you are to unlocking
-  the next world, and the HUD shows your level and coin count. Press R to
-  restart a level after a fall or when you get stuck, and Esc to pause. Sessions
-  run a few minutes.
+  You can switch enemies on or off, add a total game timer for speedrunning, and
+  check a high score list. Press R to restart a level after a fall or when you
+  get stuck. Sessions run a few minutes.
 play:
   url: https://daniel-bk.itch.io/marble-garble
   embeddable: false
@@ -62,7 +58,7 @@ media:
     - games/marble-garble/shot-2
 dates:
   added: 2026-09-30
-  updated: 2026-10-01
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:aibgj-1

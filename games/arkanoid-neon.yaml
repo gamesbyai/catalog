@@ -2,11 +2,9 @@ slug: arkanoid-neon
 title: Arkanoid Neon
 tagline: Bounce a ball off a paddle to clear glowing neon brick levels.
 description: >-
-  One of the falling capsules, marked B, opens a portal in the right wall, and
-  driving your paddle into it skips you to the next round with 10,000 points as
-  a bonus. It's a cheeky shortcut in an otherwise classic brick-breaker. You
-  slide a paddle along the bottom of the screen, keep the ball in play and break
-  every block above it.
+  You slide a paddle to keep the ball in play and break every block. One of the
+  falling capsules, marked B, opens a portal, and driving your paddle into it
+  skips you to the next round with 10,000 points as a bonus.
 
 
   The other capsules carry letters too, and they widen the paddle, slow the
@@ -14,10 +12,10 @@ description: >-
   mount twin lasers on the paddle.
 
 
-  Eight hand-built rounds come in a fixed order, starting with Regnbågen, where
-  rows of rainbow colors sit under a line of silver blocks. The later rounds get
-  Swedish names too, like Trappan, Pyramiden, Hjärtat and Fästningen. Silver
-  takes several hits, but gold blocks can't be destroyed at all.
+  Eight hand-built rounds come in a fixed order, starting with Regnbågen, a
+  round with a line of silver blocks above several rows of bricks. The later
+  rounds get Swedish names too, like Trappan, Pyramiden, Hjärtat and Fästningen.
+  Silver takes several hits, but gold blocks can't be destroyed at all.
 
 
   Once you clear the eighth round, the set loops back around at a faster tempo.
@@ -25,19 +23,13 @@ description: >-
   locally.
 
 
-  The neon look gets backup from particle bursts, shockwaves, screen shake and a
-  glowing trail behind the ball.
-
-
   Sound effects and a synthwave soundtrack are generated live with Web Audio.
-  While you sit on the title screen, an AI player runs a demo game in the
-  background. Touch screens work too, since you can drag to move and tap to
-  shoot.
+  Touch screens work too, since you can drag to move and tap to shoot.
 
 
-  Jack-c3l2w asked for a really nice-looking Arkanoid in a single sentence, and
-  the AI built all of it, from the code, graphics and sound to the music and the
-  levels. It's a fan project inspired by Taito's Arkanoid from 1986.
+  Jack-c3l2w asked for an Arkanoid in a single sentence, and the AI built all of
+  it, from the code, graphics and sound to the music and the levels. It's a fan
+  project inspired by Taito's Arkanoid from 1986.
 play:
   url: https://jack-c3l2w.github.io/arkanoid-neon
   embeddable: true
@@ -77,7 +69,7 @@ media:
     - games/arkanoid-neon/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-10-02
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:awesome-opus

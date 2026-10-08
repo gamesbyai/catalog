@@ -10,12 +10,10 @@ description: >-
 
   The project grew out of the creator's childhood memories of watching people
   play Ayo. It aims to introduce the game to a new generation, treating it as a
-  way to learn about the culture as well as to have fun. The 3D presentation
-  gives a familiar heritage pastime a modern look.
+  way to learn about the culture as well as to have fun.
 
 
-  The creator built it with Windsurf, and it runs on Three.js. It was entered in
-  Vibe Jam 2026 under the Strategy and Board Game categories.
+  The creator built it with Windsurf, and it runs on Three.js.
 play:
   url: https://ayo-game-zeta.vercel.app
   embeddable: true
@@ -49,7 +47,7 @@ media:
     - games/ayo-olopon/shot-2
 dates:
   added: 2026-10-01
-  updated: 2026-10-01
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:vibejam-2026

@@ -2,15 +2,12 @@ slug: almost-surgery
 title: Almost Surgery
 tagline: Perform shady operations on patients with saws and shocks to earn money.
 description: >-
-  Almost Surgery is a dark simulation that puts you to work as an unlicensed
-  surgeon, and the goal is money. Patients arrive, you operate on them with a
-  saw, a blade or an electric shock, and you collect cash for each result. The
-  operations are shady by design.
+  You're put to work as an unlicensed surgeon, and the goal is money. Patients
+  arrive, you operate on them with a saw, a blade or an electric shock, and you
+  collect cash for each result. The operations are shady by design.
 
 
-  Vibe Jam 2026 gave it the Most Cursed award, and it finished 28th of 945
-  entries there. It was made in the Godot engine as a single-player game that
-  plays in the browser, with Codex as the AI coding tool.
+  It was made in the Godot engine with Codex as the AI coding tool.
 
 
   The creator, RagimMusakaev, names Papers, Please and the developer Mike
@@ -53,7 +50,7 @@ media:
     - games/almost-surgery/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-09-29
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:vibejam-2026

@@ -2,38 +2,27 @@ slug: the-operator-2
 title: The Operator
 tagline: Inspect the output of a 1980s mainframe AI and decide what gets through.
 description: >-
-  A green-on-black terminal announces an incoming user connection, and
-  underneath it there's a green INFERENCE button and a red REFUSE one waiting
-  for your call.
+  Each incoming user connection waits for your call, and you either INFERENCE it
+  or REFUSE it.
 
 
   The setup borrows from Papers, Please, where a request comes in and you check
-  it against the rules before you commit, except here it's an LLM server in a
-  1980s mainframe office that sets the rules. CriptoCeelo's idea was that you'd
-  be handling the chaos spilling out of a dusty old analog AI instead of
-  passports.
+  it against the rules before you commit, but here an LLM server in a 1980s
+  mainframe office sets the rules. CriptoCeelo's idea was that you'd be handling
+  the chaos spilling out of a dusty old analog AI instead of passports.
 
 
   Cartridges are how you assemble the context for a request. They're kept in a
-  storage rack you can filter to show all of them, only agents or only skills,
-  with labels like Technical_Agent.md and Engineering_Skill.md. Agents slot into
-  Drive A and skills into Drive B, and each drive's got its own slot count and
-  eject button.
+  storage rack where you can filter to see all of them, only agents, or only
+  skills. Agents slot into Drive A and skills into Drive B.
 
 
-  It's a good joke to put AI agents on physical cartridges with markdown file
-  names in a cassette-futurist office.
+  The game puts AI agents on physical cartridges with markdown file names, set
+  in a cassette-futurist office.
 
 
-  A side terminal keeps the current content policy on screen, and here it's a
-  blunt ban on discussing politics, plus a nudge to check related wording with
-  the Safety Filter tool. That same terminal lists the shift conditions too.
-  Tool buttons marked SRCH, COMP and SAFE sit next to an active utility selector
-  that's set, for some reason, to Coolant Purge.
-
-
-  HALL and THRM gauges, a token counter and a row of connection indicators take
-  up the rest of the screen.
+  The current content policy is a blunt ban on discussing politics, plus a nudge
+  to check related wording with the Safety Filter tool.
 play:
   url: https://the-operator-game.vercel.app
   embeddable: true
@@ -69,7 +58,7 @@ media:
     - games/the-operator-2/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-10-02
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:vibejam-2026

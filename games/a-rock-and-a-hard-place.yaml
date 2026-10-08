@@ -14,17 +14,17 @@ description: >-
   if you approach slowly.
 
 
-  Ten villages cover meadow, snowfield, desert and night, and all are open from
-  the start. Ice keeps the rock sliding after you stop tilting, while sand makes
-  it slow to start. The last four villages have two rocks and two leaks on one
-  board, so tilting moves both.
+  The ten villages are set in meadow, snowfield, desert and night, and all of
+  them are open from the start. Ice keeps the rock sliding after you stop
+  tilting, while sand makes it slow to start. The last four villages have two
+  rocks and two leaks on one board, so tilting moves both.
 
 
-  Stars reward fewer knocked-over villagers, not speed. A flooded village simply
-  restarts, with no game over screen. A Fast water mode raises the challenge and
-  tracks its own stars. The text is in English and Korean. The creator used
-  Claude Code to write and debug the code and to run an automated playtest that
-  found two impossible stages.
+  Stars reward fewer knocked-over villagers, not speed. A flooded village
+  restarts, and the game doesn't end there. A Fast water mode raises the
+  challenge and tracks its own stars. The text is in English and Korean. The
+  creator used Claude Code to write and debug the code and to run an automated
+  playtest that found two impossible stages.
 play:
   url: https://hf-doodle-studio.itch.io/a-rock-and-a-hard-place
   embeddable: false
@@ -67,7 +67,7 @@ media:
     - games/a-rock-and-a-hard-place/shot-2
 dates:
   added: 2026-10-01
-  updated: 2026-10-01
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:aibgj-4

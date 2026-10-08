@@ -3,27 +3,22 @@ title: Blocky Pursuit
 tagline: Drive through a blocky city and outrun the police without getting busted.
 description: >-
   Blocky Pursuit puts you behind the wheel of a car that drives itself through a
-  blocky city, seen from above at an angle, while the cops chase you and you try
-  not to get busted.
+  blocky city while the cops chase you and you try not to get busted.
 
 
   The only thing you control is turning left or right. You don't have to think
   about the gas pedal at all, since the car takes care of that part itself.
 
 
-  The map mixes roads with grass, trees, houses and patches of water. That
-  water's handy for you, because you can lure the cops into it to shake them
-  off. Even so, the on-screen tips tell you to stick to the roads.
+  Water is handy for you, because you can lure the cops into it to shake them
+  off. Even so, the game advises you to stick to the roads.
 
 
   When you skim close past obstacles, you build a combo that triples your score,
   so the game rewards you for cutting it fine.
 
 
-  Before you start, the menu gives you a garage, a leaderboard and a feedback
-  form. There's a small GitHub link tucked under the buttons too. It all has a
-  chunky low-poly look, with yellow pixel-font headings over a dimmed view of
-  the town.
+  The game also has a garage, a leaderboard and a feedback form.
 
 
   culeeiz built it in one sleepless night, inspired by a long stretch of playing
@@ -63,7 +58,7 @@ media:
     - games/blocky-pursuit/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-10-02
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:vibejam-2026

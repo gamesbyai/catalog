@@ -7,11 +7,10 @@ description: >-
   of beasts, then command it against the other commander.
 
 
-  It is a lightweight fantasy real-time strategy game, built with Codex and
-  played in 3D, with online multiplayer support, and it works on phones too. The
-  factions are beasts, so your forces are creatures instead of the usual
-  soldiers, and each match is a contest between commanders. It ranked 288th of
-  945 at Vibe Jam 2026.
+  Built with Codex, it's a lightweight fantasy real-time strategy game with
+  online multiplayer support. The factions are beasts, so your forces are
+  creatures instead of the usual soldiers, and each match is a contest between
+  commanders.
 
 
   The scouting, expansion and economy loop is the one associated with Age of
@@ -53,7 +52,7 @@ media:
     - games/beaststorm/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-09-29
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:vibejam-2026

@@ -22,10 +22,10 @@ description: >-
   you a boost and Esc pauses.
 
 
-  The title screen calls this version Asteroid Ace 3 Beta, and it lets you tune
-  a few things before you launch. A Graphics button opens the quality settings,
-  and a Touch button turns on on-screen controls. Two sliders change the game's
-  speed and scale, and both start at 1.0x.
+  This version is called Asteroid Ace 3 Beta, and you can tune a few things
+  before you launch. You can set the graphics quality and turn on on-screen
+  controls for touch play. You can change the game's speed and scale, and both
+  start at 1.0x.
 
 
   Paul Shroom built it with a local model running on an RTX 5090 laptop GPU with
@@ -77,7 +77,7 @@ media:
     - games/asteroid-ace/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-10-02
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:vibejam-2026

@@ -2,12 +2,10 @@ slug: little-flock
 title: little flock
 tagline: Tend a shared flock of sheep on a cozy farm with other players.
 description: >-
-  The opening screen shows a whole painted valley, with a stone cottage, a
-  wooden footbridge over a stream, a cart piled with produce and a flock of
-  pastel sheep. A button invites you to start farm life, written in Simplified
-  Chinese like the rest of the interface. After that, a 16-step tutorial shows
-  you how to build a shelter, take in a first sheep, look after the flock each
-  day and get a garden going.
+  The game is set on a farm, where you tend a flock of sheep. The interface is
+  written in Simplified Chinese. A 16-step tutorial shows you how to build a
+  shelter, take in a first sheep, look after the flock each day and get a garden
+  going.
 
 
   Day to day, you pet, feed and shear your sheep, and you're there to welcome
@@ -15,17 +13,14 @@ description: >-
   the neighbors and upgrade the farm.
 
 
-  Grazing turns into a proper little outing. You whistle everyone together,
-  stroll out to the meadow while they eat and drink, then bring them home
-  again.
+  To graze, you whistle the flock together, stroll out to the meadow while they
+  eat and drink, then bring them home again.
 
 
-  The flock is surprisingly varied for such soft-looking art, spread across 12
-  breeds, six personalities and five tiers of rarity, and you get to name each
-  sheep. Paths lead out from the home farm to a meadow full of flowers, woods
-  full of mushrooms and a highland for stargazing. You can also restyle your
-  shepherd's skin, hair, outfit and hat while a live 3D preview shows the
-  result.
+  The flock comes in 12 breeds, six personalities and five tiers of rarity, and
+  you get to name each sheep. Paths lead out from the home farm to a meadow, a
+  wood and a highland for stargazing. You can also restyle your shepherd's skin,
+  hair, outfit and hat.
 
 
   Farms are shared, so you either start one or join a friend's with an
@@ -33,9 +28,7 @@ description: >-
   buildings and sheep, with live presence and chat.
 
 
-  The scenery shifts as day turns to night, with rain, colors that follow the
-  seasons, lit windows and fireflies. Your sheep never die and ripe crops
-  don't rot. The soundtrack is gentle.
+  Your sheep never die and ripe crops don't rot. The soundtrack is gentle.
 
 
   Everything here, from the 3D world and game systems to the multiplayer server,
@@ -83,7 +76,7 @@ media:
     - games/little-flock/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-10-02
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:github

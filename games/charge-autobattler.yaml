@@ -8,9 +8,8 @@ description: >-
   without you.
 
 
-  The unit cards are more detailed than you'd expect, with each one listing its
-  weapon, armor, mount, formation and grade on top of stats like morale, mass
-  and agility. The Silver Lancers, for some reason, ride a unicorn of mythic
+  Each unit has a weapon, armor, mount, formation and grade, along with stats
+  like morale, mass and agility. The Silver Lancers ride a unicorn of mythic
   grade, and their ability forces nearby melee allies to charge.
 
 
@@ -20,22 +19,19 @@ description: >-
   reach and try to kite away, but when their ammo runs out they charge in too.
 
 
-  Morale counts here, with a unit that's low on it retreating and one that has
-  none left breaking into a full rout.
+  A unit that's low on morale retreats, and one with none left breaks into a
+  full rout.
 
 
   Between fights you're back in the shop, where rarer units turn up more often
   the further you get. Armies whose units share culture and weapon traits earn
-  bonuses for it. Strangely enough, you also collect interest that grows with
-  the lives you've lost.
+  bonuses for it. You also collect interest that grows with the lives you've
+  lost.
 
 
-  There's also a box you can tick to challenge a battle, giving the enemy 25%
-  more budget in exchange for 4 extra gold in the next shop and a challenge
-  counter if you win.
-
-
-  On top of that, a bunch of more obscure stat mechanics run in the background.
+  You can also choose to challenge a battle, which gives the enemy 25% more
+  budget in exchange for 4 extra gold in the next shop and a challenge counter
+  if you win.
 
 
   ID107 built it in TypeScript, with Claude writing the code, Suno making the
@@ -76,7 +72,7 @@ media:
     - games/charge-autobattler/shot-2
 dates:
   added: 2026-10-01
-  updated: 2026-10-02
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:aibgj-4

@@ -2,21 +2,8 @@ slug: blockzilla
 title: Blockzilla
 tagline: Play a giant kaiju smashing New York while evolving new powers each run.
 description: >-
-  A giant blocky green Kaiju stands on a New York street, seen from an angled
-  overhead camera, and you drag to move it through the city. The creator pitches
-  it as Vampire Survivors meets Rampage: you wreck buildings while evolving new
-  powers.
-
-
-  A prompt at the start reads "Drag to move". The street has dashed lane
-  markings, and loose cubes in warm colors float and scatter around the monster
-  in the opening seconds.
-
-
-  A level bar runs across the top of the screen and starts at LVL 1. A segmented
-  health bar, shaded from red to orange, sits at the bottom center. A small
-  yellow counter in the top right reads 0, and a settings gear is in the bottom
-  right corner.
+  You drag to move the Kaiju through the city. The creator pitches it as Vampire
+  Survivors meets Rampage, where you wreck buildings while evolving new powers.
 
 
   The creator says they loved playing Rampage as a kid and fused it with
@@ -59,7 +46,7 @@ media:
     - games/blockzilla/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-10-01
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:vibejam-2026

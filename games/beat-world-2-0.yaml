@@ -3,9 +3,9 @@ title: Beat World 2.0
 tagline: Make beats in pixel-art cities, win critic reviews, and collect each
   city's soundsystem.
 description: >-
-  Beat World 2.0 has you produce beats in pixel-art cities around the world.
-  Each city has hometown critics who review what you make, and earning their
-  approval wins you that city's iconic soundsystem rig.
+  Beat World 2.0 has you produce beats in cities around the world. Each city has
+  hometown critics who review what you make, and earning their approval wins you
+  that city's iconic soundsystem rig.
 
 
   The rigs come from local music cultures: the boombox of the Bronx, the picó of
@@ -14,11 +14,10 @@ description: >-
   than a full production program.
 
 
-  The game opens on a character select screen. Step through producer styles with
-  the arrow buttons, starting with Boombap, pick M or F, type a producer name,
-  and optionally enter a home city. The creator, an architect-turned-DJ from
-  Bogotá, aimed it at beginners and kids, drawing on DOS games like Commander
-  Keen.
+  You pick a producer style with the arrow buttons, starting with Boombap,
+  choose M or F, type a producer name, and can optionally enter a home city. The
+  creator, an architect-turned-DJ from Bogotá, aimed it at beginners and kids,
+  drawing on DOS games like Commander Keen.
 play:
   url: https://beatworld.nicoborja.com
   embeddable: true
@@ -56,7 +55,7 @@ media:
     - games/beat-world-2-0/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-10-01
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:vibejam-2026

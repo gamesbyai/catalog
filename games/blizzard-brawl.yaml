@@ -12,21 +12,13 @@ description: >-
   the other player while the frozen arena shrinks around you.
 
 
-  The on-screen controls panel lists three build keys, 1 for a wall, 2 for a
-  turret and 3 for a heater. Left click throws a snowball, but it places your
-  selected item instead when you've picked one. If you change your mind,
-  Escape or right click cancels it.
+  Press 1 to build a wall, 2 for a turret or 3 for a heater. Left click throws a
+  snowball, but it places your selected item instead when you've picked one. If
+  you change your mind, Escape or right click cancels it.
 
 
-  Every fight happens on a round sheet of ice under an angled overhead camera.
-
-
-  Snow-capped rocks and pine trees are scattered across it. The little blocky
-  fighters look a bit like they wandered out of a toy box.
-
-
-  When a round ends, a result screen such as a defeat by elimination lets you
-  restart the round or queue for a duel.
+  When a round ends, such as with a defeat by elimination, you can restart the
+  round or queue for a duel.
 
 
   seanDDari made it after reading an article about levelsio earning money from a
@@ -74,7 +66,7 @@ media:
     - games/blizzard-brawl/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-10-02
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:vibejam-2026

@@ -3,37 +3,32 @@ title: Copycat
 tagline: Race a shadow cat across short black-and-white platform maps
 description: >-
   Hit Space or click to jump, then press again in midair for a double jump that
-  sends your little pixel cat into a barrel-roll with a particle trail behind
-  it.
+  sends your little pixel cat into a barrel-roll.
 
 
-  You're racing your own shadow, a gray copy of the cat that runs beside you
-  with SHADOW printed over its head in case there's any doubt. The maps are
-  short and dense. Platforms, spikes, floating ledges and collectible echoes
-  are seeded for each race, so a map stays familiar while shifting a little
-  every time you play it.
+  You're racing your own shadow, a copy of the cat that runs beside you. The
+  maps are short and dense. Platforms, spikes, floating ledges and collectible
+  echoes are seeded for each race, so a map stays familiar while shifting a
+  little every time you play it.
 
 
   Echoes are more than decoration, because the ones you grab feed into your
-  final time. The jump comes with a considerate pair of safety nets too, since
-  you can grab onto edges and jump buffering catches presses that land slightly
-  early.
+  final time. You can also grab onto edges, and jump buffering catches presses
+  that land a little early.
 
 
   When a race goes wrong, restarting is instant and skips the menus entirely,
-  with R shown on screen as the reset key.
+  and R is the reset key.
 
 
   The game keeps a thorough record of you between sessions. Your ghost data is
   saved, and local stats track wins, losses, your current streak and your best
-  time. Between the stored shadow and that running tally, every race you
-  finish leaves something behind to beat.
+  time. Between the stored shadow and that running tally, every race you finish
+  leaves something behind to beat.
 
 
-  It's all strict black and white, drawn in a one-bit style with scanlines and
-  some gentle motion. Under the hood it's a single HTML file running on a
-  1200x600 canvas, with Web Audio sound effects and multi-touch handling for
-  phones.
+  It's a single HTML file running on a 1200x600 canvas, with Web Audio sound
+  effects and multi-touch input.
 
 
   webXOS lists it as under development, with more modes and new shadow mechanics
@@ -76,7 +71,7 @@ media:
     - games/copycat/shot-2
 dates:
   added: 2026-10-01
-  updated: 2026-10-02
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:aibgj-4

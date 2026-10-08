@@ -6,27 +6,19 @@ description: >-
   run is a time trial and your best time gets posted to a global leaderboard.
 
 
-  First you type in a driver name, and the example it offers is LEC16, a tag
-  for anyone picturing themselves on an F1 timing screen. Then you hit Drive
-  and you're out on the track.
+  First you type in a driver name. Then you hit Drive and you're out on the
+  track.
 
 
   Every other driver who's online shares the same track with you in real time,
   in what's usually a solo time trial, so you're running your laps alongside
   live players. The handling is arcade with an F1 flavor, and according to the
-  creator, race mechanics and physics got most of their attention. Space pulls
-  a handbrake so you can drift, while R drops you back on the track.
+  creator, race mechanics and physics got most of their attention. Space pulls a
+  handbrake so you can drift, while R drops you back on the track.
 
 
-  Customizing your car gets a whole key combo of its own, and another one is
-  set aside just for orbiting the camera around it.
-
-
-  The road snakes along a coastline lined with low-poly buildings, with green
-  mountains rising up behind it. Out on the water sits a harbor crowded with a
-  surprising number of boats, which gives the hairpins a proper Riviera
-  backdrop. From up high you can trace the winding course between the hills and
-  the sea.
+  Customizing your car has a key combo of its own, and another one is set aside
+  just for orbiting the camera around it.
 
 
   The car model came out of GPT Image 2 and Tripo3D, while the music was made
@@ -73,7 +65,7 @@ media:
     - games/monaco-gp/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-10-02
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:vibejam-2026

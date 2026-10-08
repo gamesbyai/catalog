@@ -6,26 +6,19 @@ description: >-
   fight that zone's boss.
 
 
-  A whole run is ten zones long, and clearing all of them finishes it. The
-  enemies get tougher the deeper you go, while each zone has its own visual
-  theme, starting with a place called Hell's Antechamber, a grim name for the
-  front door.
+  A run is ten zones long, and clearing all of them finishes it. The enemies get
+  tougher the deeper you go.
 
 
   You've got four guns on the number keys 1 to 4, a pistol, a shotgun, a
-  chaingun and a rocket launcher. At least the pistol's ammo readout shows an
-  infinity sign at the start of a run. For everything else, health, armor and
-  ammo pickups are scattered around the levels.
+  chaingun and a rocket launcher. For everything else, health, armor and ammo
+  pickups are scattered around the levels.
 
 
   Levels are generated procedurally, so the layout changes between runs.
 
 
-  It looks the part, with chunky pixel art seen through scanlines and CRT
-  effects over chiptune-style audio. A little map in the corner, tidy for such
-  dark halls, traces the corridors around you, while a timer ticks at the top
-  of the screen beside a kill counter. Pressing R restarts the run at any
-  point, a sensible button for a game pitched around speed runs.
+  The audio is chiptune-style. Pressing R restarts the run at any point.
 
 
   You move with WASD, aim with the mouse and left-click to fire, while Space
@@ -76,7 +69,7 @@ media:
     - games/doombreaker-carnage/shot-2
 dates:
   added: 2026-10-01
-  updated: 2026-10-02
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:aibgj-3

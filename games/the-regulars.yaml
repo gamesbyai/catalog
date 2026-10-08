@@ -6,9 +6,8 @@ description: >-
   raises how familiar they are to you, and you're the one working the counter.
 
 
-  Across from you sits a handful of regulars, among them Walter, who for some
-  reason needs two newspapers, Mrs. Finch with her secret peppermints and Danny
-  the paperboy.
+  The regulars include Walter, who needs two newspapers, Mrs. Finch with her
+  secret peppermints and Danny the paperboy.
 
 
   Once you know someone well enough, you try to guess their order before they
@@ -17,19 +16,19 @@ description: >-
   to flag whatever doesn't fit. There's more than one ending to reach.
 
 
-  Refill Rush is a separate arcade mode that sits apart from the story. You
-  get 60 seconds to keep three cups of coffee full while you build a combo.
-  It's pure score-attack, with a high score to chase and nothing else.
+  Refill Rush is a separate arcade mode that sits apart from the story. You get
+  60 seconds to keep three cups of coffee full while you build a combo. It's
+  pure score-attack, with a high score to chase and nothing else.
 
 
-  Every picture and every sound in the game comes out of code drawn onto a
-  canvas.
+  Every picture and every sound in the game is generated in code and drawn onto
+  a canvas.
 
 
-  The faces, the rainy window, the neon glow and the music are all produced
-  that way, without a single image or audio file behind them. Each face grows
-  out of a seed, so a regular looks the same every time you come back.
-  According to HAFFNERVISION, the game is AI-generated.
+  The faces and the music are generated that way too, without a single image or
+  audio file behind them. Each face grows out of a seed, so a regular looks the
+  same every time you come back. According to HAFFNERVISION, the game is
+  AI-generated.
 play:
   url: https://granthaffner.itch.io/the-regulars
   embeddable: false
@@ -68,7 +67,7 @@ media:
     - games/the-regulars/shot-2
 dates:
   added: 2026-10-01
-  updated: 2026-10-02
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:aibgj-3

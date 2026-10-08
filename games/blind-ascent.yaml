@@ -2,16 +2,15 @@ slug: blind-ascent
 title: Blind Ascent
 tagline: Climb a dark tower with friends by shouting to reveal the platforms around you.
 description: >-
-  In Blind Ascent you climb a dark tower without seeing any of it. The only way
-  to make the surroundings visible is to scream into the darkness, which reveals
-  nearby surfaces for a moment before the dark closes back in. You work out
-  where the next ledge sits from what each shout showed.
+  You climb a tower you can't see. Screaming is the only way to see your
+  surroundings, and it reveals nearby surfaces for a moment before the dark
+  closes back in. You work out where the next ledge sits from what each shout
+  showed.
 
 
-  It is a cooperative vertical platformer, built with Claude Code on Babylon.js
-  as a jam entry rather than a long-running production, and it placed 469th of
-  945 at Vibe Jam 2026. Multiplayer lets friends share the climb and help one
-  another read the space as it flickers into view.
+  Built with Claude Code and Babylon.js, it's a cooperative vertical platformer.
+  Multiplayer lets friends share the climb and help one another piece together
+  the space from what the screams reveal.
 
 
   Sight is tied to sound, so every jump is a choice: call out again for more
@@ -51,7 +50,7 @@ media:
     - games/blind-ascent/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-09-29
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:vibejam-2026

@@ -3,29 +3,21 @@ title: Portal-Runner
 tagline: Run through five parallel worlds, dodging vanishing obstacles and
   leaping through portals.
 description: >-
-  A blocky blue runner stands on a night city street when the game starts, with
-  the camera sitting right behind them. The score ticks upward in the top left,
-  and your coin count sits under it next to a small label naming the world
-  you're in, City Night. Over in the top right, a thin speed bar keeps track of
-  how fast the run is going.
+  You play as a runner who starts out in a city. Your score climbs as you run
+  and you collect coins along the way. The world you're in is called City Night.
 
 
-  You sprint down the middle of a lit road, scooping up glowing yellow coins
-  and steering around striped barriers stacked in your path. Tall dark towers
-  and lampposts line the street, all built from chunky low-poly blocks that
-  give the whole city a toy-like look.
+  You sprint down the road, collecting coins and steering around barriers
+  stacked in your path.
 
 
-  Some of those obstacles disappear right in front of you, a sneaky twist that
-  means you can't fully trust the road ahead, even on a stretch you've already
-  run.
+  Some of those obstacles disappear right in front of you, even on a stretch
+  you've already run.
 
 
   Portals are your way out of the city. They carry you across five parallel
-  worlds, and each one swaps out the rules, colors and feel rather than just
-  repainting the background, a big ambition for an endless runner. Between the
-  vanishing barriers and the shifting rules, the road keeps changing what it
-  asks of you.
+  worlds, and each one swaps out the rules and feel rather than just repainting
+  the background.
 
 
   Eventually a golden exit shows up and pulls you out into the multiverse.
@@ -67,7 +59,7 @@ media:
     - games/portal-runner/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-10-02
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:vibejam-2026
