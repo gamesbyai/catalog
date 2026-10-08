@@ -2,34 +2,24 @@ slug: arkanoid-neon
 title: Arkanoid Neon
 tagline: Bounce a ball off a paddle to clear glowing neon brick levels.
 description: >-
-  You slide a paddle to keep the ball in play and break every block. One of the
-  falling capsules, marked B, opens a portal, and driving your paddle into it
-  skips you to the next round with 10,000 points as a bonus.
+  Slide the paddle, keep the ball in play and break every block across eight
+  hand-built rounds.
 
 
-  The other capsules carry letters too, and they widen the paddle, slow the
-  ball, let you catch it and aim, split it into three, give you an extra life or
-  mount twin lasers on the paddle.
+  Letter capsules that widen the paddle, slow the ball, let you catch and aim
+  it, split it into three, add a life or mount twin lasers. The B capsule, a
+  portal to the next round with 10,000 bonus points. Silver blocks that take
+  several hits, and gold ones that never break. Rounds with Swedish names, from
+  Regnbågen to Trappan, Pyramiden, Hjärtat and Fästningen. A faster loop after
+  round eight. An extra life every 30,000 points.
 
 
-  Eight hand-built rounds come in a fixed order, starting with Regnbågen, a
-  round with a line of silver blocks above several rows of bricks. The later
-  rounds get Swedish names too, like Trappan, Pyramiden, Hjärtat and Fästningen.
-  Silver takes several hits, but gold blocks can't be destroyed at all.
+  Drag to move and tap to shoot on a touchscreen.
 
 
-  Once you clear the eighth round, the set loops back around at a faster tempo.
-  An extra life arrives every 30,000 points, and your high score is saved
-  locally.
-
-
-  Sound effects and a synthwave soundtrack are generated live with Web Audio.
-  Touch screens work too, since you can drag to move and tap to shoot.
-
-
-  Jack-c3l2w asked for an Arkanoid in a single sentence, and the AI built all of
-  it, from the code, graphics and sound to the music and the levels. It's a fan
-  project inspired by Taito's Arkanoid from 1986.
+  Jack-c3l2w asked for an Arkanoid in one sentence, and the AI built the code,
+  graphics, sound, music and levels. It's a fan project inspired by Taito's 1986
+  Arkanoid.
 play:
   url: https://jack-c3l2w.github.io/arkanoid-neon
   embeddable: true

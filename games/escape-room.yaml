@@ -2,20 +2,16 @@ slug: escape-room
 title: Escape Room
 tagline: Solve puzzles to escape rooms that an AI generates on the fly.
 description: >-
-  Escape Room locks you in a room that an AI generated on the fly and asks you
-  to work out how to get out. Because the rooms are generated dynamically, the
-  layout and the puzzles can differ from one attempt to the next.
+  Get out of a room an AI generated on the fly. The layout and puzzles can
+  change from one attempt to the next.
 
 
-  The creator says they simply like escape rooms, and the project is an attempt
-  to recreate the real thing virtually. According to the creator, it was built
-  with Claude Code and rendered with Three.js, and it ranked 574th of the 945
-  entries at Vibe Jam 2026.
+  Puzzle-first design. A 3D room to look around and examine. A new way out to
+  find on every attempt.
 
 
-  The design is puzzle-first, built around a 3D space you can look around and
-  examine. Since the rooms can differ, each attempt starts with a fresh look at
-  your surroundings and a new way out to find.
+  The creator likes escape rooms and wanted to recreate the real thing
+  virtually.
 play:
   url: https://escape-room.ybouane.com
   embeddable: true
@@ -52,7 +48,7 @@ media:
     - games/escape-room/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-09-29
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:vibejam-2026

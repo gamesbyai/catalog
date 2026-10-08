@@ -2,32 +2,24 @@ slug: rift-survivors
 title: Rift Survivors
 tagline: Fight through 100 neon floors with combos, parries, and stamina management.
 description: >-
-  Press any key or tap to start. Step into the purple MISSION portal to head
-  down into the dungeon. Your skills are mapped to the F, X and H keys.
+  Played solo, this hack-and-slash roguelike sends you down into a dungeon to
+  fight your way through.
 
 
-  Once you're down there, it's hack-and-slash combat with handling modeled on
-  Demon's Souls. You attack, guard, parry and dodge while managing your stamina,
-  and you can link your skills together into chains.
+  Demon's Souls-style combat, with attack, guard, parry and dodge. Stamina to
+  manage during combat. Skill chains linking your skills together. A cycle of
+  100 floors to descend. Three kinds of boss along the way, each with five or
+  six attack patterns. MMO-style gear rarity, from Common up to Legendary.
+  Automatic switching between Japanese and English, with no setting to change.
 
 
-  The dungeon is laid out as a cycle of 100 floors. Three kinds of boss wait for
-  you along the way. Each of them has plenty of variety, working through five or
-  six different attack patterns.
-
-
-  The interface switches between Japanese and English on its own, with no
-  setting to change.
-
-
-  Gear borrows its rarity ladder from MMOs, running from Common all the way up
-  to Legendary. You sort out what you're wearing.
+  Press any key or tap to start. Step into the MISSION portal to head down into
+  the dungeon. Press F, X or H to use a skill. Sort out what you're wearing.
 
 
   otani_ai_memo once made games for feature phones, where each one had to stay
   under 1MB. They kept this game to a similar size limit. According to
-  otani_ai_memo, working under that constraint again brought back nostalgic
-  memories.
+  otani_ai_memo, working under that limit again brought back nostalgic memories.
 play:
   url: https://rift-survivors.pages.dev
   embeddable: true

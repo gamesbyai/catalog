@@ -2,20 +2,15 @@ slug: game-20-0
 title: 20-0
 tagline: Draft an NFL roster from random franchise eras and try for a perfect season.
 description: >-
-  In 20-0 you draft an NFL roster and try to take it through a season without a
-  loss. Every pick draws from a random franchise era somewhere in NFL history,
-  so your lineup ends up mixing players from different teams and decades. Once
-  it is full, you find out whether the finished team can win every game.
+  Draft an NFL roster and try to take it through a season without a loss.
 
 
-  The strategy lives in the roster-building decisions. Because the eras come up
-  at random, you have to weigh star names against positional needs and adjust as
-  the pool changes from one pick to the next.
+  Picks from a random franchise era somewhere in NFL history. Lineups that mix
+  players from different teams and decades. Star names weighed against
+  positional needs. A perfect season as the measure of every draft.
 
 
-  A perfect season is the target, which gives every draft a clear measure of
-  success. The creator names Claude and Kimi as the AI behind it, and you play
-  it solo.
+  The creator names Claude and Kimi as the AI behind it.
 play:
   url: https://20-0.com
   embeddable: true

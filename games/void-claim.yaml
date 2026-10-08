@@ -2,33 +2,22 @@ slug: void-claim
 title: Void Claim
 tagline: Mine asteroids, upgrade your ship, and fight rivals in dangerous space zones.
 description: >-
-  You pick a callsign and one of eight ship colors, then drop into a space you
-  share with other players.
+  Mine asteroids for crystals and gold in a space you share with other players,
+  then spend what you earn on ship upgrades.
 
 
-  You fly a ship fitted with drills and guns through asteroids that hold
-  crystals and gold. The tagline, Mine. Steal. Survive., sums up the whole plan
-  in three words. You start in a safe area, mine, and put what you earn into
-  ship upgrades.
+  Drills and guns on every ship. A safe starting area, and PvP zones farther out
+  where the richest asteroids wait. Jettisoned cargo that scatters into loot
+  anyone can grab. Shields that soak fire first, with the rest going to the
+  hull. NPC ships, and something ancient stirring in the deepest void that hunts
+  players too.
 
 
-  Further out, the zones turn into PvP territory, where the richest asteroids
-  are waiting. Other players can attack you there, and when you jettison cargo
-  it scatters into individual pieces of loot that can be picked up.
+  Pick a callsign and one of eight ship colors to start.
 
 
-  Shields take incoming fire first, but any damage beyond what they absorb
-  carries over to the hull.
-
-
-  NPC ships share the space too. NPC ships won't instantly grab back the cargo
-  they jettison. Under all the mining runs a story thread about something
-  ancient stirring in the deepest void, and it hunts players as well.
-
-
-  SigGravitas built it with no technical background and little time. According
-  to SigGravitas, they made it on the AutoGPT Platform to see what was possible
-  to build that way.
+  SigGravitas built it on the AutoGPT Platform with no technical background and
+  little time, to see what was possible that way.
 play:
   url: https://torantulino.github.io/void-claim
   embeddable: true

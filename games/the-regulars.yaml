@@ -2,33 +2,20 @@ slug: the-regulars
 title: THE REGULARS
 tagline: Talk to diner regulars, guess their orders, and spot what doesn't fit.
 description: >-
-  Every line you learn while chatting with a regular at the Last Stop Diner
-  raises how familiar they are to you, and you're the one working the counter.
+  Work the counter at the Last Stop Diner, chat with the regulars and learn
+  enough about each one to guess their order before they say it.
 
 
-  The regulars include Walter, who needs two newspapers, Mrs. Finch with her
-  secret peppermints and Danny the paperboy.
+  Regulars like Walter with his two newspapers, Mrs. Finch and her secret
+  peppermints, and Danny the paperboy. Familiarity that grows with every line
+  you learn. A Memory Notebook for their stories. Details that start to drift,
+  which you flag when they don't fit. More than one ending. Refill Rush, a
+  60-second arcade mode for keeping three coffee cups full.
 
 
-  Once you know someone well enough, you try to guess their order before they
-  say it. Then you serve them, fill up the counter and jot down their stories in
-  a Memory Notebook. When things start drifting from what you know, it's on you
-  to flag whatever doesn't fit. There's more than one ending to reach.
-
-
-  Refill Rush is a separate arcade mode that sits apart from the story. You get
-  60 seconds to keep three cups of coffee full while you build a combo. It's
-  pure score-attack, with a high score to chase and nothing else.
-
-
-  Every picture and every sound in the game is generated in code and drawn onto
-  a canvas.
-
-
-  The faces and the music are generated that way too, without a single image or
-  audio file behind them. Each face grows out of a seed, so a regular looks the
-  same every time you come back. According to HAFFNERVISION, the game is
-  AI-generated.
+  Every face, picture and sound is generated in code, and each face grows from a
+  seed so a regular looks the same every visit. According to HAFFNERVISION, the
+  game is AI-generated.
 play:
   url: https://granthaffner.itch.io/the-regulars
   embeddable: false

@@ -2,30 +2,21 @@ slug: deckrunner
 title: DECKRUNNER
 tagline: Shoot through a derelict space station deck by deck and reach the escape pod.
 description: >-
-  You're dropped into a derelict space station and fight your way through it one
-  deck at a time. Each run has you scavenging weapons and perks and killing
-  anything that's still moving. The goal is the escape pod, and you're racing
-  the station itself to get there before it gets you.
+  Fight through a derelict space station one deck at a time and reach the escape
+  pod before the station gets you.
 
 
-  Beyond the mission, there are plenty of extra modes. There's a PvP arena
-  filled with bots, where you set how many there are, their difficulty and the
-  score that wins the match.
+  Weapons and perks scavenged on every run. A PvP arena of bots, with their
+  number, difficulty and the winning score up to you. A firing range for
+  practice. Customization, a bestiary and a leaderboard. Barrels that set off
+  chain explosions near enemies.
 
 
-  If you'd rather warm up first, there's a firing range for practice.
+  Scavenge, shoot anything still moving and head for the pod.
 
 
-  There's also customization, a bestiary and a leaderboard. The game is built
-  around whatever's still crawling through a dead station.
-
-
-  The game suggests shooting barrels near enemies to set off chain explosions.
-
-
-  paledustgames says they love roguelikes and shooters, and they wanted to blend
-  roguelike structure with first-person shooting. Customization was part of the
-  mix as well.
+  paledustgames loves roguelikes and shooters and wanted to blend roguelike
+  structure with first-person shooting.
 play:
   url: https://deckrunner.paledust.com
   embeddable: true

@@ -2,20 +2,19 @@ slug: chanclazo
 title: Chanclazo
 tagline: Dodge incoming attacks and survive as long as you can in a comic 3D arena.
 description: >-
-  Chanclazo is an arcade survival game built around the chancla, the flip-flop a
-  scolding relative throws when words run out. You move around a comic 3D arena,
-  avoid whatever comes at you and try to last as long as you can before one hits
-  you.
+  Dodge the chancla, the flip-flop a scolding relative throws when words run
+  out, and last as long as you can in a comic 3D arena.
 
 
-  The creator says the idea had been on their mind for a couple of years before
-  AI made it possible to build, and they finally built it with Bolt. At Vibe Jam
-  2026 it placed 149th of 945.
+  Arcade survival built on a piece of family humor. A household threat as the
+  main hazard. Runs that last exactly until the chancla lands.
 
 
-  The premise leans on a familiar piece of family humor, turning a household
-  threat into the core hazard. The joke is that the chanclazo speaks when words
-  fail, and the whole game follows from it: a run lasts exactly until it lands.
+  Keep moving and stay out of the way of whatever comes at you.
+
+
+  The creator had the idea for a couple of years before AI made it possible to
+  build.
 play:
   url: https://chanclazo.com
   embeddable: true
@@ -50,7 +49,7 @@ media:
     - games/chanclazo/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-09-29
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:vibejam-2026

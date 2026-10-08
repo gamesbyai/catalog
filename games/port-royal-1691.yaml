@@ -3,20 +3,13 @@ title: Port Royal 1691
 tagline: Wreck Port Royal as a pirate with ten weapons, smashing buildings and
   fighting NPCs.
 description: >-
-  Port Royal 1691 puts you in the boots of a pirate loose in the richest city in
-  the Caribbean, carrying ten brutal weapons. You tear through the streets,
-  smash buildings and fight the NPCs who get in your way, and the town slides
-  steadily into chaos. It is an action-adventure game, played alone.
+  You play a pirate loose in Port Royal in 1691, the richest city in the
+  Caribbean. You run through the streets and fight the NPCs who stand in your
+  way. The town slides further into chaos as you play.
 
 
-  The title pins the setting to a real city and year, which gives the
-  destruction a clear historical identity. It is a single-player game built with
-  Codex on Three.js, and it placed 76th of 945 entries at Vibe Jam 2026.
-
-
-  The game treats the city as something to break apart, and the range of weapons
-  gives you different ways to go about it, from up-close brawling to bigger acts
-  of demolition across the town.
+  Ten brutal weapons. Destructible buildings across the town. Close brawling and
+  large-scale demolition.
 play:
   url: https://portroyal1691.vercel.app
   embeddable: true
@@ -52,7 +45,7 @@ media:
     - games/port-royal-1691/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-09-29
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:vibejam-2026

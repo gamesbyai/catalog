@@ -2,19 +2,18 @@ slug: pilgrimage
 title: Pilgrimage
 tagline: Trek across a lonely digital wilderness and find companions along the way.
 description: >-
-  Pilgrimage sends you on a long trek through a digital void, looking for
-  companionship along the way. The game calls itself a Cyber-Odyssey, and you
-  move from place to place across an unknown landscape with action, adventure
-  and simulation elements mixed into the journey.
+  Crossing an unknown landscape inside a digital void, you move from place to
+  place on a long trek. The game calls itself a Cyber-Odyssey.
 
 
-  It draws on the classic Chinese tale Journey to the West and on Death
-  Stranding, and it aims to capture the deep solitude of a long journey into the
-  unknown. The game was built with Claude Code and Three.js.
+  Action, adventure and simulation elements mixed into the journey. Companions
+  to find along the way. Multiplayer, with other players sharing the same space
+  as possible companions.
 
 
-  Multiplayer is part of it too, and the companions you find can be other
-  players sharing the same space.
+  The game draws on the classic Chinese tale Journey to the West and on Death
+  Stranding. It aims to capture the deep solitude of a long journey into the
+  unknown.
 play:
   url: https://pilgrimage.alsomindtech.com
   embeddable: true

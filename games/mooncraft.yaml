@@ -3,15 +3,15 @@ title: MoonCraft
 tagline: Fight through a first-person shooter set on the moon, alone or with
   other players.
 description: >-
-  Fight it out in arena shooter matches set on the moon. You move through a
-  lunar arena, aiming and firing at your opponents in fast, arena-style combat.
-  You can play alone or in multiplayer matches against other people, straight
-  from the browser.
+  Arena shooter matches set on the moon, played from a first-person view. You
+  move through a lunar arena, aiming and firing at your opponents.
 
 
-  The game takes its cue from Quake 3, and that shows in the emphasis on quick
-  movement and direct gunplay in every round. Claude Code and Three.js were used
-  to make it.
+  Solo play. Multiplayer matches against other people. Quick movement and direct
+  gunplay in every round.
+
+
+  Made by ericcampbell59, and the game takes its cue from Quake 3.
 play:
   url: https://mooncraft.ericcampbell.dev
   embeddable: true

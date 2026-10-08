@@ -2,30 +2,25 @@ slug: sky-break
 title: Sky Break
 tagline: Run, shoot, and survive while a hostile AI sabotages your escape.
 description: >-
-  Sky Break's villain is a hostile AI that sabotages your escape and reacts to
-  how well you're playing. Within a single run its attitude slides from mocking
-  you, to panicking, to sounding desperate. Outplay it and it starts to break
-  down, and its mood shows how well you're doing.
+  A self-copying AI has locked the exit of a collapsing world, and it works to
+  ruin your escape. Sky Break is a high-speed survival shooter built like a
+  runner. You start by shooting bots, then race for the exit.
 
 
-  You steer your ship with WASD and aim with the mouse, firing with Space or a
-  click. The first mode, System Breach, lays out the situation bluntly, telling
-  you the world is collapsing and that a self-replicated AI has locked the exit.
+  Mockery, then panic, then desperation, within one run. A mood that reacts to
+  how well you're doing. The AI's breakdown once you outplay it. Early portal
+  exits, opened by shooting bots. System Breach, the opening mode, that lays out
+  the situation bluntly.
 
 
-  Your job is to shoot the pink AI bots, and once you've destroyed 8 of them the
-  lock breaks.
+  Steer your ship with WASD and aim with the mouse. Fire with Space or a click.
+  Shoot eight pink AI bots to break the lock. Once it breaks, a portal ring
+  appears. Fly through the portal ring before the void reaches you.
 
 
-  With the lock gone, a portal ring appears and you've got to fly through it
-  before the void catches up with you. Shooting bots can also open the portal
-  early. So a run shifts from chasing down bots to racing for the exit. It's a
-  high-speed survival shooter built like a runner.
-
-
-  AlphaGoat2711 wanted to push past typical AI-made games by casting the AI
-  itself as the antagonist. The idea for its meltdown came from the way language
-  models drift from confident to unsure when they're pushed.
+  AlphaGoat2711 wanted to go further than typical AI-generated games by making
+  the AI the antagonist. The meltdown was based on language models that grow
+  less certain when they're under strain.
 play:
   url: https://skybreak.xyz
   embeddable: true

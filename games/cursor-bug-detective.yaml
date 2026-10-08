@@ -2,32 +2,21 @@ slug: cursor-bug-detective
 title: Cursor Bug Detective
 tagline: Scan props on a 3D desk, decode cipher clues, and name the bug in 90 seconds
 description: >-
-  Every day there's one new case waiting, and a round lasts about 90 seconds.
-  You play the Cursor mascot as a tiny detective, searching a developer's desk
-  for clues.
+  Play the Cursor mascot as a tiny detective, searching a developer's desk for
+  clues to one new bug every day.
 
 
-  Hover across the desk to spot whatever looks off, then open the monitor, the
-  envelope, the agents tray and the lamp. Each one gives you a clue written in
-  cipher.
+  Rounds of about 90 seconds. Cipher clues in the monitor, the envelope, the
+  agents tray and the lamp. Four mini-puzzles for cracking them, one styled like
+  an editor's autocomplete. A daily case in the spirit of Wordle.
 
 
-  You crack those ciphers through four mini-puzzles. One of them is a case file
-  styled like an editor's autocomplete, and you finish a sentence like "The case
-  file sheet was" by picking between a plain "floating" and a theatrical
-  "levitating dramatically". Read the clue before you choose an answer.
+  Hover across the desk to spot what looks off, then open each prop for its
+  clue. Name the bug once the evidence adds up.
 
 
-  Once the evidence adds up, you make the call and name the bug to close the
-  case.
-
-
-  casper_chsieh modeled the loop on daily word games like Wordle, which ask for
-  one short session a day, and picked a bug hunt because finding bugs is what
-  most developers spend their days doing. The desk was built by hand, and the
-  idea was to give the mascot a story bigger than a logo. casper_chsieh also
-  points to a few further games with new and retro themes to explore alongside
-  the daily case.
+  casper_chsieh built the desk by hand and wanted to give the mascot a story
+  bigger than a logo.
 play:
   url: https://bug-detective.pages.dev
   embeddable: true

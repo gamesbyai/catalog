@@ -2,28 +2,40 @@ slug: rimehold
 title: Rimehold
 tagline: Maze your towers to hold a frozen mountain pass, Warcraft 3 tower
   defense style.
-description: "Rimehold: Siege of the Frozen Pass is a mazing tower defense game
-  that runs in the browser in 3D. You hold a snowbound pass against creeps by
-  placing towers so they form the maze the enemies have to walk.
+description: "Rimehold, Siege of the Frozen Pass, is a 3D mazing tower defense
+  game where corrupted creatures from two northern rifts push toward the Gate of
+  a snowbound pass. You hold the pass by placing towers that form a maze for
+  creeps to walk through. The game describes itself as original, with no
+  external assets, and it's for anyone who misses the tower defense maps of the
+  Warcraft 3 era.
 
 
-  Before a run you pick a watch, the game's word for difficulty. Recruit is
-  billed as a gentle introduction to mazing, with 60 lives, 360 starting gold,
-  half-strength creeps and bigger bounties. Warden is the intended challenge at
-  40 lives and 300 gold. Warlord and Rimebound drop to 25 and 15 lives with less
-  gold and smaller bounties, and Rimebound's own card says only the perfect maze
-  survives.
+  Forty waves, with four boss fights spaced ten waves apart. Cheap walls, plus
+  nine tower lines four tiers deep, most splitting into two branches at the top
+  tier. Five kinds of damage against six kinds of armor. Seven wave types,
+  including Flying and Swarm, each wanting a different answer. Interest on
+  banked gold, plus bonuses for early wave calls. Beaconlight towers, boosting
+  every tower around them.
 
 
-  The mazing idea comes from Warcraft 3 custom maps, which the creator names as
-  the reference. According to the creator's submission, they left every design
-  decision to Claude and built the game with Claude Code, using Claude Opus 5.5
-  and Claude Sonnet 5.5. The title screen calls it an original game built with
-  Three.js with no external assets.
+  Pick a tower, then left-click clear snow to place it. Creeps always route
+  around towers, and placements that fully block the path are rejected. Build
+  Rime Walls (10 gold) to lengthen routes. Later, select a wall and make it a
+  tower on that spot. Select a tower, then upgrade, retarget or sell it. Press N
+  to call the next wave early, or let the countdown run. Each creep reaching the
+  Gate takes a life, and a boss takes many.
 
 
-  It's a single-player game for anyone who misses the tower defense maps of the
-  Warcraft 3 era and wants a clear difficulty ladder to climb."
+  Difficulty climbs in four steps called watches, and you pick one before each
+  run. The game presents Recruit as a gentle entry into mazing, with 60 lives,
+  360 gold to start, creeps at half strength and bigger bounties. Warden, the
+  intended challenge, has 300 gold and 40 lives. Warlord gives 25 lives and
+  Rimebound 15, and both start with less gold and pay smaller bounties.
+  Rimebound's card says a maze must be flawless to survive.
+
+
+  According to malny, Warcraft 3 custom maps were the reference for mazing, and
+  every design decision was left to the AI."
 play:
   url: https://malnourishd.itch.io/rimehold
   platforms:
@@ -32,6 +44,15 @@ play:
     by: submission
     date: 2026-10-01
   embeddable: false
+  controls:
+    - "1 – 0: pick a tower to build"
+    - "Left click: place or select"
+    - "Right click or Esc: cancel"
+    - "U or Y: upgrade the selected tower"
+    - "T: change targeting"
+    - "X or Delete: sell"
+    - "N: send the next wave early"
+    - "Shift + 1 – 9: convert a wall"
 creator:
   name: malny
   handle: malny
@@ -58,7 +79,7 @@ media:
     - games/rimehold/shot-2
 dates:
   added: 2026-10-01
-  updated: 2026-10-01
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: form

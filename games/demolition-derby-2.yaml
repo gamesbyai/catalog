@@ -2,21 +2,16 @@ slug: demolition-derby-2
 title: demolition derby
 tagline: Smash rival cars in a browser demolition derby on a figure 8 or in a bowl.
 description: >-
-  In demolition derby you drive into an arena full of rival cars and try to
-  wreck them. It is a browser game in the style of Destruction Derby, built
-  around the Collect cars, and each run is a crash-focused contest on one of two
-  tracks.
+  Drive into an arena full of rival cars and wreck them, in the style of
+  Destruction Derby.
 
 
-  According to the README, it was built with Claude Code. It is a small project,
-  released under the MIT license, and its README keeps to the tracks and the car
-  theme without listing further modes or systems.
+  Two tracks. A figure 8 with a deadly crossing, where cars meeting in the
+  middle end runs fast. A floodlit bowl where every car is a potential
+  collision. The Collect cars as the theme.
 
 
-  The two tracks set the tone. One is a figure 8 with a deadly crossing, where
-  cars meeting in the middle can end a run quickly. The other is a floodlit
-  bowl, an open space where the action stays close and every car is a potential
-  collision.
+  Released under the MIT license.
 play:
   url: https://drcollect.github.io/demolition-derby
   embeddable: true
@@ -49,7 +44,7 @@ media:
     - games/demolition-derby-2/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-09-29
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:github

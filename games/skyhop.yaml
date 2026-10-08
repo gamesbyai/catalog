@@ -2,15 +2,16 @@ slug: skyhop
 title: SkyHop
 tagline: Pilot a hovering craft through a futuristic space racing course.
 description: >-
-  You pilot a hovering craft through a futuristic course set among the stars,
-  racing against the course itself. Your aim is to get around the course cleanly
-  and quickly.
+  You pilot a hovering craft in a space racing game set among the stars.
 
 
-  The creator made it as a fresh take on HexGL, the browser racer they felt was
-  long overdue for an update. The creator's main goal is to show what current
-  WebGL rendering can look like in a browser. Cursor was the AI tool and
-  Three.js handles the rendering.
+  The course itself as the opponent. Getting around the course cleanly and
+  quickly as the goal.
+
+
+  sidcode_ made it as a fresh take on HexGL, a browser racer they felt was long
+  overdue for an update. Their main goal is to show what current WebGL rendering
+  can look like on the web.
 play:
   url: https://sidcode.github.io/SkyHop
   embeddable: true

@@ -3,33 +3,22 @@ title: Duality
 tagline: Guide two linked entities across parallel dimensions to their portals,
   dodging Void Agents
 description: >-
-  You control two orbs at the same time. One orb is yours, and the other is your
-  Echo, which copies every move you make in its own bent way.
+  An Echo copies every move you make in its own bent way. Control both orbs
+  together.
 
 
-  Those copies aren't direct. The first dimension uses the Mirror X rule. Later
-  levels twist the mirroring further.
+  Mirror X in the first dimension, twisted further in later levels. Arena
+  halves, one per orb, each with a far-end escape portal that orb must reach.
+  Void Agents patrolling both halves. Moves safe for both orbs at once. Small
+  pickups in two types on both sides. Streak multiplier.
 
 
-  The arena is split down the middle, with one side for each orb, and each side
-  has its own escape portal at the far end where its orb needs to reach.
+  Nothing starts until your first move. You have three hearts.
 
 
-  Void Agents patrol both halves of the field. A move that's safe for you also
-  has to be safe for your Echo at the same moment.
-
-
-  Small pickups are scattered around both sides, in two types.
-
-
-  The game has a streak multiplier. You have three hearts. Nothing starts until
-  you first move.
-
-
-  alessio_cagnin_ built it around a fascination with quantum physics and
-  parallel dimensions, and the idea of an echo with its own rules came up while
-  brainstorming with AI. They shaped each level as a small physics puzzle
-  dressed up as a survival game.
+  alessio_cagnin_, fascinated by quantum physics and parallel dimensions, made
+  each level a small physics puzzle framed as survival. The Echo's own rules
+  surfaced during AI brainstorming.
 play:
   url: https://duality-game-vibejam.vercel.app
   embeddable: true

@@ -2,34 +2,21 @@ slug: robot-royale
 title: Robot Royale
 tagline: Fight through a ruined cyber-city arena, upgrading from bare fists to RPGs.
 description: >-
-  Your robot starts out with nothing but its fists, and from there you fight
-  your way up through heavier weapons, with explosive RPGs at the very top,
-  across a crumbling cyber-city arena.
+  Your robot starts out with nothing but its fists in a crumbling cyber-city
+  arena. From there, you fight your way up through heavier weapons.
 
 
-  The camera hangs at an angle above a small, blocky robot with a single cyan
-  eye. You steer it with WASD and attack with the mouse. Shift sends you into a
-  dash, and Esc pauses.
+  Explosive RPGs at the top of the weapon ladder. Scrap to collect. Medical
+  pickups on the arena floor. Bosses, the first at level 5, with the next one's
+  level shown. A portal in the arena.
 
 
-  A panel in the corner keeps track of the phase, the clock, the scrap you've
-  collected and your level, plus the level where the next boss turns up, which
-  starts at Nv.5. It also names your current weapon, humbly listed as Basic
-  Punches at first, and shows when your dash is ready again.
+  Steer with WASD. Attack with the mouse. Press Shift to dash. Press Esc to
+  pause.
 
 
-  Below all that, a long red bar stretches across the bottom of the screen.
-
-
-  Red medical pickups are scattered across the floor between tall, angular
-  towers. Near the edge of the arena there's a glowing green ring with a
-  portal label on it. Long slanting light cuts across the ground and throws
-  dramatic shadows off those towers.
-
-
-  According to marssaum, the idea behind it is robots growing more powerful
-  once they're combined with AI, and a robot punching its way up to rocket
-  launchers fits that nicely. The whole game lives in a single file.
+  According to marssaum, the idea behind the game is robots growing more
+  powerful when combined with AI. The whole game sits in one file.
 play:
   url: https://robot-royale.pages.dev
   embeddable: true
@@ -70,7 +57,7 @@ media:
     - games/robot-royale/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-10-02
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:vibejam-2026

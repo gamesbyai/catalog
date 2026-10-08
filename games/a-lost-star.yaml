@@ -2,21 +2,17 @@ slug: a-lost-star
 title: A Lost Star
 tagline: Fly a ship through alien space landscapes and fight other pilots in dogfights.
 description: >-
-  A Lost Star is a multiplayer space action game where you pilot a ship through
-  alien landscapes and fight other pilots online in dogfights. Combat is the
-  core loop: you maneuver in open space, line up shots on opposing ships and try
-  to stay alive while exploring the surroundings.
+  A multiplayer space shooter where you pilot a ship through alien landscapes
+  and fight other pilots in dogfights. Staying alive while you explore is the
+  core of it.
 
 
-  The creator's Vibe Jam 2026 submission names Claude Code as the build tool,
-  with Three.js handling the 3D rendering, and the game finished 143rd of 945
-  entries. The creator also names three inspirations for its mix of exploration
-  and fast shooting: Minecraft, EVE Online and Quake 3.
+  Open-space maneuvering. Shots lined up on opposing ships. Alien vistas the
+  creator calls beautiful, as the backdrop for every fight.
 
 
-  The scenery is meant to matter as much as the fighting. The creator describes
-  the alien space vistas as beautiful, and every dogfight plays out against that
-  alien backdrop.
+  felacalana names Minecraft, EVE Online and Quake 3 as inspirations, for a mix
+  of exploration and fast shooting.
 play:
   url: https://aloststar.com
   embeddable: true
@@ -53,7 +49,7 @@ media:
     - games/a-lost-star/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-09-29
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:vibejam-2026

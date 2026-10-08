@@ -3,22 +3,21 @@ title: RelativityX
 tagline: Fly a near-light-speed spacecraft through the solar system and watch
   time stretch.
 description: >-
-  Fly a spacecraft through a 3D solar system with the keyboard, switching
-  between six speed modes that start at subsonic and climb toward light speed.
+  Fly a spacecraft through a 3D solar system with the keyboard.
 
 
-  You can compare time on Earth with time on your ship. At low speed they read
-  the same. Accelerate and watch them drift apart. Planets can be clicked to
-  read facts about them.
+  Six speed modes, from subsonic toward light speed. Clickable planets with
+  facts about each one. Free Camera option. Portal into a webring of other
+  games.
 
 
-  You can follow the route to the portal, or press Jump to Black Hole to skip
-  the trip. Snap Back returns you to the solar system. Reaching the portal sends
-  you out into a webring of other games.
+  Earth time and ship time read the same at low speed. Accelerate and watch them
+  drift apart. Follow the route to the portal, or press Jump to Black Hole to
+  skip the trip. Snap Back returns you to the solar system.
 
 
-  There's also a Free Camera option. The creator built it after watching
-  Interstellar, wanting players to experience time dilation themselves.
+  cng13m built it after watching Interstellar, wanting players to experience
+  time dilation for themselves.
 play:
   url: https://relativity-cng.vercel.app
   embeddable: true

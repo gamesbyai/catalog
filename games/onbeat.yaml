@@ -2,21 +2,13 @@ slug: onbeat
 title: onbeat
 tagline: Say the requested word in time with the beat in quick action challenges.
 description: >-
-  In onbeat you do not press buttons in time with the beat; you say words out
-  loud. Each challenge asks for a requested word right on the beat, so a run is
-  a string of short timing tests where hitting the rhythm matters more than
-  anything else.
+  Say the requested word right on the beat. onbeat is a silly action game about
+  speaking in time with the rhythm. You do not press buttons. Hitting the rhythm
+  matters more than anything else.
 
 
-  It is a silly action game built around rhythm and speech, and the joke-driven
-  premise keeps the tone light. Delivering a word at the right moment turns a
-  familiar rhythm idea into something more physical and a little embarrassing.
-  It was a Vibe Jam 2026 entry, placing 50th of 945, and it draws on a
-  canvas-based presentation.
-
-
-  Rounds are quick and repeatable, which suits short sessions and one more try
-  at landing the timing a little better than last time.
+  Runs built from a string of short timing tests. A joke-driven premise with a
+  light tone. Quick, repeatable rounds for retrying the timing.
 play:
   url: https://onbeat26.replit.app
   embeddable: true
@@ -48,7 +40,7 @@ media:
     - games/onbeat/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-09-29
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:vibejam-2026

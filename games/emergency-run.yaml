@@ -2,21 +2,16 @@ slug: emergency-run
 title: Emergency Run
 tagline: Escape a series of crisis rooms by spotting the real fix before time runs out.
 description: >-
-  Emergency Run drops you into a series of crisis rooms, each one a 360-degree
-  space with a problem and a timer. You look around, work out what is actually
-  going wrong and pick the fix that solves it before time runs out, then move on
-  to the next room.
+  Each crisis room is a 360-degree space with a problem and a timer. Look
+  around, work out what is really wrong and fix it before time runs out.
 
 
-  Built with Codex and drawn on an HTML canvas, it ranked 299th of 945 at Vibe
-  Jam 2026 and plays on phones as well as desktops. Adventure exploration and
-  puzzle logic share the work, and each room asks for fresh problem-solving
-  under pressure.
+  Clues anywhere in the full circle around you. Distractions next to the real
+  fix. Exploration and puzzle logic in every room. A new problem in the next
+  room.
 
 
-  The tension comes from the clock and from telling a genuine solution from a
-  distraction. The full-circle view means clues can be anywhere around you, so
-  it pays to observe carefully rather than grab the first option in reach.
+  Observe first, then pick your fix.
 play:
   url: https://er.lediana.net
   embeddable: true
@@ -52,7 +47,7 @@ media:
     - games/emergency-run/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-09-29
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:vibejam-2026

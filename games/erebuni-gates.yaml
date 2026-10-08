@@ -3,20 +3,16 @@ title: Erebuni Gates
 tagline: Defend the walls of ancient Erebuni through endless waves, picking
   trials between fights.
 description: >-
-  Erebuni Gates is a wave-based action shooter that puts you on the walls of the
-  ancient Armenian fortress of Erebuni as its last defender. The siege of shadow
-  and stone does not end, so each run is a string of waves, and the goal is to
-  hold the ramparts for as long as you can.
+  Hold the walls of the ancient Armenian fortress of Erebuni as its last
+  defender, wave after wave, for as long as you can.
 
 
-  The setting draws on Armenian history, which the creator gives as the reason
-  for making it. Made in Cursor on Three.js, it ranked 185th of the 945 entries
-  at Vibe Jam 2026.
+  A siege of shadow and stone that never ends. Powerful trials to choose between
+  waves, each shaping the next stretch. Wave-based action shooting on the
+  ramparts.
 
 
-  Between waves, you choose from a set of powerful trials, and each choice
-  shapes how the next stretch of the siege plays out. It is a single-player
-  game, played wave by wave against a siege that never lets up.
+  Armenian history is the creator's reason for making it.
 play:
   url: https://erebuni-gates.amiracle.net
   embeddable: true
@@ -51,7 +47,7 @@ media:
     - games/erebuni-gates/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-09-29
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:vibejam-2026

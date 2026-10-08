@@ -2,41 +2,30 @@ slug: ikuta-73
 title: Ikuta '73
 tagline: Mow lawns in a 1973 Tokyo summer and rest in the shade to keep your stamina up
 description: >-
-  It's the summer of 1973, out in the hilly country west of Tokyo, and you're a
-  college kid cutting grass for a company your uncle runs.
+  It's the summer of 1973 out in the hilly country west of Tokyo, and you're a
+  college student cutting grass for a company your uncle runs. You push a mower
+  through people's yards and steer it across the grass, and the game is about
+  taking care with the work even when nobody would check. A session runs about
+  half an hour.
 
 
-  You push a mower through people's yards and steer it across the grass. The
-  game is about taking care with the work even when nobody would check, and it
-  takes its cues from a Murakami short story. A session runs about half an hour.
+  Your own body working like a solar panel in reverse. Fast stamina loss in
+  direct sun, refilled in shade. Slow loss of maximum stamina through the day.
+  Possible cold drinks as hospitality for neat enough work, each a stamina
+  boost. A day cycle with a sun crossing the sky. Optional two-stick mower
+  control for a dual-stick gamepad. Cicada calls shifting through the day,
+  morning and late-afternoon ones built from one noon recording.
 
 
-  Direct sun drains your stamina fast while shade gives it back, so when the
-  afternoon gets heavy you step out of the light, your own body working like a
-  solar panel in reverse. Your maximum stamina also shrinks a little as the day
-  wears on.
-
-
-  Do neat enough work and someone might hand you a cold drink, a kind bit of
-  hospitality that gives your stamina a boost.
-
-
-  Time keeps moving too, with a day cycle and a sun that crosses the sky. A
-  wheelie spins the mower around in a hurry when you need a quick pivot. There's
-  also an optional two-stick mode, but it needs a dual-stick gamepad.
-
-
-  The cicadas shift through the day, with the morning and late-afternoon calls
-  built from a single noon recording.
-
-
-  On a touchscreen, one side walks and steers, the other side turns the view,
-  and a tap grabs or uses an item. Grass density can be turned down.
+  Push forward with W and steer with A and D. Step out of the light when the
+  afternoon gets heavy. Press Space to wheelie, spinning the mower around for a
+  quick pivot. On a touchscreen, use one side to walk and steer, and the other
+  to turn the view. Tap to grab or use an item.
 
 
   Claude Code wrote the code, made the sound effects and models, and handled
-  level testing, while Grok Build made the title screen. plinth did everything
-  else.
+  level testing; Grok Build made the title screen. plinth did everything else.
+  The game takes its cues from a short story by Haruki Murakami.
 play:
   url: https://plinthcybernetics.itch.io/ikuta-73
   embeddable: false

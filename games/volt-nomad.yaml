@@ -3,45 +3,24 @@ title: VOLT NOMAD
 tagline: Click to damage mechanical beasts, spend charge on gear trees, and
   steal their cores.
 description: >-
-  Click, or tap Space, to strike the mechanical beast squaring off against your
-  lone automaton deep underground, and every hit also banks you some charge to
-  spend.
+  Strike a mechanical beast with clicks or Space, deep underground, and bank
+  charge with every hit.
 
 
-  That charge goes into five linked gear trees with 86 nodes between them. Over
-  time, drones and automatic weapons start doing the clicking for you, with
-  gatling and rail mutations among the weapon options. Eventually you can have
-  five OVERLIMIT systems running at the same time.
+  Five linked gear trees with 86 nodes. Drones and automatic weapons that take
+  over the clicking, with gatling and rail mutations. Up to five OVERLIMIT
+  systems at once. Six beasts to hunt in any order, each fighting by its own
+  rule, like Gearmaw cracking its armor every 12th click. Cores inherited from
+  beaten beasts. No game over.
 
 
-  Six beasts sit on the hunt map, and you can take them in whatever order you
-  like, while each one fights by its own rule. Each beast's rule is spelled out
-  (Gearmaw cracks its armor on every 12th click for a 4× hit), and each one
-  names the kind of build it rewards.
-
-
-  Beat a beast and you inherit its core, which combines with the rest of your
-  build for bonuses, and your weapons, charge and cores all carry over from one
-  hunt to the next.
-
-
-  Taking down any three of the six gets you a quick ending. If you want more,
-  you can go back for the rest, plus a second abyssal boss called ARCH
-  SINGULARITY and a final fight against three forms waiting below the world
-  engine. Clear everything and you get a true-ending cinematic and an archive of
-  14 artworks.
-
-
-  There's no game over, and losing isn't punished at all. What you're actually
-  chasing is a build whose damage outruns what each fight asks for.
-
-
-  All the text comes in English and Japanese, and one key press flips between
-  them.
+  Beat any three beasts for a quick ending, or go on to ARCH SINGULARITY and the
+  three forms below the world engine for the true ending and an archive of 14
+  artworks. Press one key to switch the text between English and Japanese.
 
 
   Takahiro Saeki directed and playtested it and made the final calls. According
-  to the creator, Codex wrote the code, PixelLab made the pixel art, and Suno
+  to the creator, Codex wrote the code, PixelLab made the pixel art and Suno
   produced the music.
 play:
   url: https://tsgamestudio.itch.io/volt-nomad

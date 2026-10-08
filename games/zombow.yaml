@@ -2,23 +2,20 @@ slug: zombow
 title: Zombow
 tagline: Shoot arrows at an endless zombie horde and keep moving to survive.
 description: >-
-  You play a hooded archer, and the zombies just keep spawning. The bow is your
-  only weapon, and a run comes down to staying alive while you move around the
-  arena, line up shots and thin out the horde before it closes in. You can jump,
-  too.
+  A hooded archer against a zombie horde that never stops spawning. The bow is
+  your only weapon.
 
 
-  Thick fog cuts down how far you can see, and spatial audio tells you where
-  threats are coming from.
+  Thick fog that cuts how far you can see. Spatial audio for telling where
+  threats come from. Pacing borrowed from classic arcade survival shooters.
 
 
-  The pacing borrows from classic arcade survival shooters. Scrolling zooms in
-  and out.
+  Keep moving, line up shots and thin the horde before it closes in. Jump to get
+  clear, and scroll to zoom in and out.
 
 
-  It was built through what sandman_sh calls vibe coding, and the audio is
-  described as AI-generated. The stated goal was a frightening horde experience
-  that runs entirely in the browser.
+  sandman_sh calls the way it was built vibe coding, and the audio is
+  AI-generated. They were after a frightening horde.
 play:
   url: https://zombow-game.vercel.app
   embeddable: true

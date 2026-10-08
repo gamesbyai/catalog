@@ -2,15 +2,18 @@ slug: rogue-lith
 title: Rogue Lith
 tagline: Sneak downward through hostile levels, stealing and shooting your way deeper.
 description: >-
-  The first objective sends you down through the base to find the entrance to
-  the lower base. A briefing comes before the level starts.
+  Your first objective is to go down through the base and find the entrance to
+  the lower base. Rogue Lith mixes descent with stealth and rogue-like
+  mechanics.
 
 
-  Left mouse fires a laser and right mouse launches a flare. Whether your ship
-  is lit ties into the stealth side of the game. You also have a flashlight.
+  A briefing before the level starts. A flashlight. Your ship's lit state as
+  part of stealth.
 
 
-  Tab opens a wireframe sector map. Space opens objectives for a closer look.
+  Use the left mouse button to fire the laser. Press the right mouse button to
+  launch a flare. Press Tab to open the wireframe sector map. Press Space to
+  open the objectives for a closer look.
 play:
   url: https://roguelith.com
   embeddable: true

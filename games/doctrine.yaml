@@ -2,21 +2,17 @@ slug: doctrine
 title: Doctrine
 tagline: Summon conquered armies from spellcards and battle rival wizards in real time.
 description: >-
-  In Doctrine you play an interdimensional wizard at war with other wizards, and
-  your army lives in your deck. Armies you have defeated, hired or bound are
-  stored as spellcards, and when a war begins you summon them onto the
-  battlefield in real time.
+  An interdimensional wizard goes to war with other wizards, armed with a deck
+  of spellcards. Each card holds an army that was defeated, hired or bound.
 
 
-  The creator says the idea had been in their head for years, and that AI and
-  Cursor let them turn it into a playable game in about two weeks. It is built
-  on Three.js, and the premise explains the cards: a living Doctrine holds the
-  armies of broken worlds.
+  Cards for units, spells and towers. Real-time summoning onto the battlefield.
+  Autobattler-style clashes once your forces are out. Quick choices about what
+  to deploy and where.
 
 
-  Cards stand in for units, spells and towers, so a match is a series of quick
-  decisions about what to deploy and where. Once summoned, your forces clash on
-  their own in autobattler-style chaos while you keep choosing what comes next.
+  The creator had this idea for years. With AI, it became playable in about two
+  weeks.
 play:
   url: https://doctrine.shinythings.space
   embeddable: true
@@ -51,7 +47,7 @@ media:
     - games/doctrine/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-09-29
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:vibejam-2026

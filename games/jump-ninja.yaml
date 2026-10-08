@@ -2,20 +2,16 @@ slug: jump-ninja
 title: Jump Ninja
 tagline: Charge your jump and hop upward as a ninja in a simple platformer.
 description: >-
-  Jump Ninja has one move: charge up a jump, then let go to leap. You play a
-  ninja hopping upward, and the controls are kept deliberately small. A run
-  comes down to judging how much power each gap or ledge needs and timing every
-  hop on the way up.
+  Jump Ninja has one move: charge a jump, then let go to leap upward as a ninja.
+  You climb by judging how much power each leap needs.
 
 
-  The creator is a parent who found that complex games had become a chore, and
-  says the goal was a game anyone can play at any time, on any device. It was
-  assembled in Lovable, and Three.js does the rendering.
+  Gaps and ledges as the obstacles. Timing for every hop on the way up. Simple
+  controls, meant to be picked up quickly for short sessions wherever you are.
 
 
-  That is why it runs on phones and other devices as well as desktop: it is
-  meant to be picked up quickly for a short session, wherever you are. A single
-  charged jump is all there is to learn, and the rest is judgment.
+  playpareho is a parent for whom complex games had become a chore, and they say
+  the goal was a game anyone can play at any time, on any device.
 play:
   url: https://jumpninja.fun
   embeddable: true
@@ -50,7 +46,7 @@ media:
     - games/jump-ninja/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-09-29
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:vibejam-2026

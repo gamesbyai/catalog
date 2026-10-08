@@ -2,33 +2,27 @@ slug: starfall
 title: Starfall
 tagline: Pilot a spaceship in a duel to the death against one opposing ship
 description: >-
-  In Starfall Melee, you and one opponent each fly a spaceship around a sun in a
-  single arena, and the fight lasts until one crew is wiped out. You thrust,
-  turn and brake, with a primary and a secondary weapon to throw at the other
-  ship. Asteroids also drift through the arena. It's an homage to the Melee mode
-  of Star Control 2.
+  Starfall pits you against one opponent in a single arena, each flying a
+  spaceship around a sun until one crew is wiped out.
 
 
-  Before each round you pick from a roster of about sixteen races, among them
-  Asterion Patrol, Terran Vanguard, Helix Nomad and Hive Carrier, or pick a
-  random one. Every ship has its own crew count, battery and weapon pair, so
-  Asterion Patrol starts with 30 crew, Ion Bolts and a Seeker Missile while
-  Terran Vanguard brings 38 crew and a Vanguard Missile.
+  About sixteen races, among them Helix Nomad and Hive Carrier. Each race with
+  its own crew, battery and weapon pair. Asterion Patrol, with 30 crew, Ion
+  Bolts and a Seeker Missile. Terran Vanguard, with 38 crew and a Vanguard
+  Missile. Drifting asteroids in the arena. An AI for the second ship, choosing
+  its own next ship. Rounds with a running score, and a ship you haven't flown
+  yet each time.
 
 
-  If nobody's around to play against, you can hand the second ship to an AI,
-  which chooses its own next ship. Leave it off and two people share one
-  keyboard, with Player 1 on WASD and Player 2 on the arrow keys. Each player
-  flips through the races with their own pair of keys.
+  Thrust, turn and brake to fly, and use your primary and secondary weapons on
+  the other ship. Before each round, pick a race or choose a random one. Leave
+  the AI off and share one keyboard: Player 1 uses WASD and Player 2 uses the
+  arrow keys. Each player cycles through races with their own pair of keys.
 
 
-  Matches run in rounds with a running score, and every new round asks you for a
-  ship you haven't flown yet.
-
-
-  kashprime made the ship portraits and artwork with Codex's built-in image
-  generation. According to kashprime, generating them that way saved a lot of
-  time.
+  Starfall is an homage to the Melee mode of Star Control 2. kashprime made the
+  ship portraits and artwork with built-in image generation. According to
+  kashprime, doing it that way saved a lot of time.
 play:
   url: https://sfmelee.pages.dev
   embeddable: true

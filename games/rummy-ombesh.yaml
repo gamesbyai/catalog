@@ -2,20 +2,19 @@ slug: rummy-ombesh
 title: Rummy - Ombesh
 tagline: Build melds and race for bonuses in a rummy variant driven by one flipped card
 description: >-
-  One flipped card changes each round of Ombesh. Rummy - Ombesh is a rummy
-  variant built around the Taba, a single card turned over at the start of each
-  round that decides which card counts as wild and changes what scores.
+  In Rummy - Ombesh, one card is flipped over at the start of each round. That
+  card, called the Taba, decides which card counts as wild and changes what
+  scores. Because the Taba changes, the same hand can play very differently from
+  one round to the next.
 
 
-  The rules are a family variant the creator learned from their father, and they
-  say they made the game to preserve it and share it with more people. It was
-  built in Unity with Claude Code, Codex, and Cursor, and it supports online
-  multiplayer.
+  Sets and runs as the building blocks of each hand. A race for the round's
+  bonuses. Finishing ahead of the other players as the goal.
 
 
-  You still build sets and runs and try to finish ahead of the other players,
-  but each hand turns into a race for that round's bonuses. Because the Taba
-  changes, the same hand can play very differently from one round to the next.
+  The creator learned this family variant from their father. According to the
+  creator, they made the game to preserve the variant and share it with more
+  people.
 play:
   url: https://ombesh.vercel.app
   embeddable: true
@@ -55,7 +54,7 @@ media:
     - games/rummy-ombesh/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-09-29
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:vibejam-2026

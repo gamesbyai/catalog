@@ -3,28 +3,20 @@ title: Solar Drift
 tagline: Fly a spacecraft between planets and slingshot around a true-scale
   solar system.
 description: >-
-  Solar Drift puts you at the controls of a small spacecraft inside a true-scale
-  solar system, with worlds ranging from the Sun down to tiny Pluto. Near Earth
-  you're flying it by hand, but pressing Space boosts the ship all the way to
-  light speed.
+  Solar Drift lets you pilot a small spacecraft through a true-scale solar
+  system, from the Sun down to tiny Pluto.
 
 
-  Each body comes with its distance from the Sun, how long its light takes to
-  get there, and a vivid one-line sketch, like Mercury being scorched and full
-  of craters.
+  Distance from the Sun and light travel time for every body. One-line sketches
+  of each world, such as Mercury, scorched and full of craters. Direct jumps to
+  any body, or light-speed travel toward it. A size comparison view. Expedition
+  1, the Earth Survey. First of five stops on a route through Earth, Moon, Mars,
+  Jupiter and Saturn. The Artemis II mission as the theme for the trip.
 
 
-  You can jump straight to a body or engage light-speed travel toward it.
-  There's also a size comparison view. Selecting a world brings up a description
-  of it.
-
-
-  Choosing Earth starts Expedition 1, the Earth Survey, where you fly out to a
-  beacon near the planet's observation shell and finish 3 scans.
-
-
-  It's the first of five stops on a route that runs through Earth, Moon, Mars,
-  Jupiter and Saturn. The trip is themed around the Artemis II mission.
+  Fly by hand near Earth. Press Space to boost the ship all the way to light
+  speed. Choose Earth to start Expedition 1. Fly to the beacon near the planet's
+  observation shell and finish 3 scans. Select a world to read its description.
 play:
   url: https://solar.chikocorp.com
   embeddable: true

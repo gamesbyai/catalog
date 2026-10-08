@@ -2,19 +2,17 @@ slug: code-rage
 title: Code Rage
 tagline: Fight off enemy waves inside a buggy codebase that keeps corrupting itself.
 description: >-
-  Code Rage traps you, a vibe coder, inside your own broken game. Enemies come
-  in waves, and while you shoot them down the code around you keeps corrupting
-  itself, so the arena gets less stable the longer you survive.
+  Fight off enemy waves inside a buggy codebase that keeps corrupting itself.
+  You play a vibe coder stuck in your own broken game.
 
 
-  The premise comes from a familiar frustration: AI-coded projects that ship
-  with odd glitches, where it is hard to tell a bug from an intended feature.
-  The creator built this shooter with Claude Code on Three.js.
+  An arena that gets less stable the longer you survive. Corruptions to fix or
+  ignore mid-fight. Bugs that look like features, and features that look like
+  bugs.
 
 
-  That confusion is the core loop. Mid-fight, you choose which corruptions to
-  fix and which to leave alone while the waves keep coming. Staying alive longer
-  leaves the arena more corrupted.
+  RohanSudo built it with Claude Code, after one too many AI-coded projects
+  shipped with odd glitches.
 play:
   url: https://code-rage.pages.dev
   embeddable: true

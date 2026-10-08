@@ -2,35 +2,24 @@ slug: service-squad
 title: Service Squad
 tagline: Manage a repair business and fix broken things yourself in first person
 description: >-
-  Pick up the phone when a customer rings in, look over the job they need done,
-  and either take it or tell them you'll call back later. You're running the
-  whole service company, so you're the manager and the dispatcher at once and
-  every decision falls to you.
+  Answer the phone when a customer calls, and look over the job they need done.
+  You run the whole company as manager and dispatcher at once, and every
+  decision falls to you.
 
 
-  Once you've said yes, the job goes to your technicians, and you're the one who
-  decides who gets sent where.
-
-
-  Hiring is how the company grows. Each technician you add lets the crew work on
-  more jobs at the same time, which raises how much work the business can take
-  on. The phone and the payroll end up feeding the same question of how much
+  Growth through hiring. Hired technicians, each one adding to how many jobs run
+  at once and how much work the business can take on. First-person repair work
+  alongside the dispatching. Calls and payroll, both weighing on how much work
   your crew can carry.
 
 
-  The desk work is only half the game, with first-person repair action paired
-  alongside the dispatching and company management.
+  Accept a job or tell the customer you'll call back later. Accepted jobs go to
+  your technicians, and you decide who gets sent where.
 
 
-  A short How To Play panel greets you at the start and walks through
-  answering calls, accepting jobs and dispatching your crew. The cartoon art
-  stars a grinning dispatcher in a headset and a technician in a cap holding a
-  wrench, a cheerful pair for a game about fixing broken things.
-
-
-  ralphcanapa built it alone with Flutter and Dart on the front end. There's a
-  Node.js backend behind it too, and that's a lot of ground for one person to
-  cover. They made the game to learn how the new AI tools work.
+  ralphcanapa built it alone with Flutter and Dart on the front end and a
+  Node.js backend. According to the creator, they made it to learn how the new
+  AI tools work.
 play:
   url: https://service-sim.netlify.app
   embeddable: true
@@ -66,7 +55,7 @@ media:
     - games/service-squad/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-10-02
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:vibejam-2026

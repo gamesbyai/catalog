@@ -2,37 +2,22 @@ slug: cannon-clash
 title: Cannon Clash
 tagline: Aim a cannon and outshoot a rival in a physics-driven puzzle duel.
 description: >-
-  Aim your cannon, fire, and watch the shot bounce and tumble its way through a
-  board full of pegs. Your rival has a cannon of their own, and the two of you
-  take turns trying to outshoot each other, so whoever reads the physics better
-  and lines up the smarter shot comes out ahead.
+  Take turns with a rival, firing a cannon into a board full of pegs and reading
+  the bounces better than they do.
 
 
-  Spent pucks don't vanish after they land, so every old shot stays on the board
-  as one more thing for the next one to hit.
+  Spent pucks that stay on the board as new obstacles. Peg clearing on every
+  board. Turns that end only when everything has stopped moving. One-player and
+  two-player modes. Levels to pick before a match, like Prism with its diamond
+  lanes of evenly spaced pegs.
 
 
-  Clearing the pegs is part of the job on every board. A turn doesn't pass the
-  moment your puck drops out of sight, though, since it only ends once
-  everything on the board has stopped moving. Ricochets and chain reactions
-  count for more than quick reflexes here, so the real skill is picturing where
-  a shot will bounce before you let it go.
+  Aim, fire, and picture where the shot will ricochet before you let it go.
 
 
-  Rounds are short and easy to learn, and there's a one-player mode next to a
-  two-player one.
-
-
-  Before a match you pick a level, and the Prism level comes with a short note
-  describing its layout. The Prism level sets its pegs in diamond lanes locked
-  to a grid, evenly spaced, with openings that mirror each other.
-
-
-  swiftfoxsw wanted a simple, quick game that works well on a phone, so it was
-  built with touch screens in mind. The design comes from Peggle and, before
-  that, from the Plinko board on The Price Is Right. This browser version
-  rebuilds their iPhone build for the web while keeping the same turn-based
-  ricochet board.
+  swiftfoxsw rebuilt their iPhone game for the web with touch screens in mind.
+  The design comes from Peggle and, before that, the Plinko board on The Price
+  Is Right.
 play:
   url: https://cannonclash.com
   embeddable: true

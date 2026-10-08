@@ -2,20 +2,22 @@ slug: shoot-or-die
 title: Shoot or Die
 tagline: Grab a gun, shoot rival players, and be the last one standing.
 description: >-
-  Type a callsign, press Enter the Arena, and pick PC or mobile. Move with WASD,
-  sprint with Shift, roll with Space, and press E to grab a gun from a weapon
-  pedestal. Then shoot the other players. The last one standing wins the round.
+  Grab a gun from a weapon pedestal and shoot the other players. The last one
+  standing wins the round.
 
 
-  On mobile, the controls are two joystick areas: one moves your character and
-  the other rotates it. The arena is an open grassy hill with trees and rocks
-  under a cloudy sky, and the rules are on screen before you enter: shoot, or
-  run.
+  Online rounds against other players. Two choices, as the rules on screen put
+  it: shoot, or run. PC and mobile controls.
 
 
-  The game is based on a map the creator had built earlier in UEFN. Claude Code
-  produced the game, the multiplayer server and bug fixes in about a day and a
-  half, followed by another day and a half of polish and deployment.
+  Type a callsign and press Enter the Arena. Move with WASD, sprint with Shift
+  and roll with Space. Press E at a pedestal to take a gun. On mobile, one
+  joystick area moves you and the other rotates you.
+
+
+  SuperAppGames based it on a map built earlier in UEFN. AI produced the game,
+  its multiplayer server and bug fixes in about a day and a half, and polish and
+  deployment took another day and a half.
 play:
   url: https://play.fortlite.org
   embeddable: true
@@ -59,7 +61,7 @@ media:
     - games/shoot-or-die/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-10-01
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:vibejam-2026

@@ -2,21 +2,25 @@ slug: second-form-requiem
 title: "Second Form: Requiem"
 tagline: Pilot a spaceship that becomes a mecha and blast through waves of enemies.
 description: >-
-  Pick a difficulty, then fly a space shooter against waves of enemies. Beginner
-  takes 50% damage and enemies have 25% less health. Normal is the standard
-  setting. Hard raises damage taken to 150% and enemy health by 50%. Beginner is
-  recommended for keyboard players, Normal for a USB controller.
+  Pick a difficulty, then fly a fighter through waves of enemies in this space
+  shoot 'em up.
 
 
-  Move and aim separately: WASD or the left stick moves your ship, the arrow
-  keys or right stick aim. Auto-fire is on, and holding Space or the right
-  trigger charges a heavier shot. B or the B button sets off a bomb, and holding
-  Shift or the left bumper triggers bullet time.
+  Beginner difficulty, with 50% of the damage taken and enemies at 25% less
+  health. Normal, the standard difficulty. Hard difficulty, with 150% of the
+  damage taken and enemies at 50% more health. Stacking pickups, with shields up
+  to 6 layers of armor and bombs up to 8.
 
 
-  Press T, or Y on a controller, to transform your fighter into a combat mecha.
-  Pickups stack: shields build up to 6 layers of armor and bombs up to 8. P
-  pauses. The creator made it to learn vibe coding and build a game they wanted
+  Beginner is recommended for keyboard players, and Normal for a USB controller.
+  Move with WASD or the left stick, and aim with the arrow keys or the right
+  stick. Auto-fire is on. Hold Space or the right trigger to charge a heavier
+  shot. Press B or the B button to set off a bomb. Hold Shift or the left bumper
+  to trigger bullet time. Press T, or Y on a controller, to switch into combat
+  mecha form.
+
+
+  iamchuck504 made the game to learn vibe coding and to build a game they wanted
   to play.
 play:
   url: https://secondformrequiem.com

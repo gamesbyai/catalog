@@ -3,28 +3,19 @@ title: FrameFrenzy
 tagline: Rebuild a scrambled sliding puzzle made from a YouTube video that keeps
   playing.
 description: >-
-  The timer in this sliding puzzle is the video itself, since you have to
-  rebuild the scrambled picture before the YouTube clip you picked finishes
-  playing.
+  Rebuild a scrambled sliding puzzle made from a YouTube video that keeps
+  playing. You have until the clip ends.
 
 
-  You paste in a YouTube address, choose a 3×3 or 4×4 grid and start the round,
-  then tap once when the countdown ends.
+  3×3 or 4×4 grids. Tiles that keep playing their part of the clip, so the
+  picture never holds still. Music clips, trailers, memes or lectures as the
+  source. Your time and move count at the end. A link that packs in the video
+  and grid size, so a friend gets the identical puzzle.
 
 
-  Each tile shows a live crop of the same clip as it keeps playing, so the
-  picture you're matching keeps moving. There's no freeze frame to study, which
-  means you're matching motion as much as shapes. You slide pieces into the
-  empty gap until the whole frame lines up again.
-
-
-  Music clips, trailers, memes and lectures can all serve as the source of your
-  puzzle.
-
-
-  Finishing shows your time and move count. The video and grid size are packed
-  into the link, so a friend who opens it gets the identical puzzle and can try
-  to beat your time. It works with a keyboard, a mouse or a touchscreen.
+  Paste in a YouTube link and tap once when the countdown ends. Slide pieces
+  into the empty gap until the frame lines up. Play with a keyboard, a mouse or
+  a touchscreen.
 play:
   url: https://kevinloeffler.itch.io/framefrenzy
   embeddable: false

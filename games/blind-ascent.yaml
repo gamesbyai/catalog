@@ -2,19 +2,15 @@ slug: blind-ascent
 title: Blind Ascent
 tagline: Climb a dark tower with friends by shouting to reveal the platforms around you.
 description: >-
-  You climb a tower you can't see. Screaming is the only way to see your
-  surroundings, and it reveals nearby surfaces for a moment before the dark
-  closes back in. You work out where the next ledge sits from what each shout
-  showed.
+  Climb a tower you can't see. Scream to light up the surfaces around you for a
+  moment, then jump before the dark comes back.
 
 
-  Built with Claude Code and Babylon.js, it's a cooperative vertical platformer.
-  Multiplayer lets friends share the climb and help one another piece together
-  the space from what the screams reveal.
+  Cooperative vertical platforming with friends. Screams as the only way to see.
+  Ledges remembered from the last shout.
 
 
-  Sight is tied to sound, so every jump is a choice: call out again for more
-  information, or move on with what you remember of the last shout.
+  Call out again for more information, or move on with what you remember.
 play:
   url: https://blind.entropytrace.com
   embeddable: true

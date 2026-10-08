@@ -3,22 +3,14 @@ title: GLITCH COURT
 tagline: Judge absurd disputes between digital objects and chain combo streaks
   in a 3D courtroom.
 description: >-
-  In GLITCH COURT you are the judge, and the parties before you are everyday
-  digital objects with unhinged disputes. Cases like a Toaster suing a Microwave
-  arrive one after another in an endless tribunal, and you rule on each at a
-  fast pace.
+  Judge absurd disputes between everyday digital objects, like a Toaster suing a
+  Microwave, in an endless 3D tribunal.
 
 
-  Correct calls build combo streaks, so a run is about keeping your momentum
-  through a steady stream of ridiculous cases. The humor comes from the
-  absurdity of modern tech relationships, and the courtroom drama takes cues
-  from Phoenix Wright. It is part arcade game, part simulation.
-
-
-  The feedback is punchy and escalating in the manner of Balatro, and
-  screen-breaking revenge mechanics add a chaotic payoff when the loop peaks.
-  The creator used Cursor, with Three.js rendering the court for desktop and
-  mobile browsers.
+  Fast rulings, one case after another. Combo streaks for correct calls. Humor
+  drawn from the absurdity of modern tech relationships. Courtroom drama with
+  cues from Phoenix Wright. Punchy, escalating feedback in the manner of
+  Balatro. Screen-breaking revenge mechanics when a run peaks.
 play:
   url: https://glitch-court.vercel.app
   embeddable: true
