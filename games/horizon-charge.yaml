@@ -2,35 +2,27 @@ slug: horizon-charge
 title: Horizon Charge
 tagline: Fly an ion craft fast enough to keep its capacitor charged
 description: >-
-  Flying fast is what refills your ion craft's capacitor, and the aim is to
-  cover as much distance as you can before its energy runs out. You hold the
-  charge input to build speed, and as long as you stay above a gold charge line
-  the capacitor refills, but once you sink below it, whatever energy is left
-  starts draining away.
+  Flying fast is what refills the capacitor on an experimental ion craft. You
+  fly through a 3D planetary course and try to cover as much distance as you can
+  before the craft's energy runs out.
 
 
-  Steering eats into your momentum, so every sharp turn costs you a bit of speed
-  in exchange for a better spot.
+  Designed tower formations to thread between. Open capacitor arcs to grab along
+  the way. Near-miss bonuses for skimming close past hazards. Deterministic
+  obstacle layouts, the same on every run and learnable with practice. Three
+  stages, Ignition, Vector and Redline, on a course that speeds up without end.
+  Best-distance record saved between sessions. A bit of speed lost on every
+  sharp turn, in exchange for a better spot.
 
 
-  The course is made of designed tower formations that you thread between, with
-  open capacitor arcs to grab along the way. Skimming close past a hazard earns
-  you a near-miss bonus. The obstacle layouts are deterministic, which means the
-  same patterns come back every run and you get to learn them.
+  Hold Space, W or Up to charge and build speed. Steer with A/D or the arrow
+  keys. Stay above the gold charge line, and the capacitor refills. Fall below
+  it, and whatever energy is left drains away. A mouse or a finger can steer and
+  charge. Play with a keyboard, gamepad, mouse or touch.
 
 
-  The course keeps speeding up without end and runs through three stages, from
-  Ignition through Vector to Redline. Your best distance is saved between
-  sessions.
-
-
-  It takes keyboard, gamepad, mouse and touch. On a keyboard, A/D or the arrow
-  keys steer while you hold Space, W or Up to charge, and a mouse or a finger
-  can handle both jobs.
-
-
-  The code, graphics, sounds and text were all made with AI assistance,
-  according to Small Loop Works.
+  According to Small Loop Works, the code, graphics, sounds and text were all
+  made with AI assistance.
 play:
   url: https://smallloopworks.itch.io/horizon-charge
   embeddable: false

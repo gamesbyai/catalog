@@ -2,25 +2,29 @@ slug: turbo-kart-rally
 title: turbo kart rally
 tagline: Race colorful karts around tracks in a Mario Kart-style arcade racer.
 description: >-
-  Press Enter or click to begin, then choose one of eight racers, an engine
-  class of 50cc, 100cc or 150cc, and how many laps to run.
+  Alone against seven computer drivers, you race karts around Palm Cove Circuit,
+  about 2.1 km long.
 
 
-  The race is against seven computer drivers on Palm Cove Circuit, about 2.1 km
-  long. The course has sweeping turns, an S-bend, a bridge across a lagoon and a
-  hairpin, plus 8 boost pads and 2 jump ramps. Hop into a drift and hold it
-  through a corner. Releasing the drift gives a bigger boost the longer you held
-  it.
+  Eight racers, each with its own speed, acceleration, handling and weight.
+  Engine classes of 50cc, 100cc and 150cc. Sweeping turns, an S-bend, a hairpin,
+  a lagoon bridge, eight boost pads and two jump ramps. Item boxes for
+  mushrooms, bananas, green and red shells, a star, lightning or a blue shell.
+  Odds set by your place in the pack. Rivals that use items and close the gap if
+  you pull ahead. Music that speeds up on the last lap.
 
 
-  Item boxes hand out mushrooms, bananas, green and red shells, a star,
-  lightning or a blue shell, with the odds set by your place in the pack. Rivals
-  use items too, and they close the gap if you pull ahead. Revving as the
-  countdown ends gives a rocket start.
+  To begin, press Enter or click. Pick a racer, engine class and lap count. Hold
+  W or Up to accelerate. Steer with A and D or the arrow keys. Press Space to
+  hop into a drift and hold it through a corner. Release a drift for a boost
+  that grows the longer you hold it. Rev as the countdown ends for a rocket
+  start. Press E, X or Left Shift to use an item. Use a keyboard or gamepad.
 
 
-  Racers differ in speed, acceleration, handling and weight. Music speeds up on
-  the last lap. Keyboard and gamepad both work.
+  A single prompt, given to Claude Code, had five AI sub-agents build the game
+  in parallel, without asking any questions back. Each sub-agent owned one part
+  of the code and tested it in a browser. Models, textures, sounds and music are
+  all made in code as the page loads, with no asset files.
 play:
   url: https://bridge-mind.github.io/turbo-kart-rally
   embeddable: true

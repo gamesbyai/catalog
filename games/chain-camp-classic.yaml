@@ -3,35 +3,29 @@ title: Chain Camp Classic
 tagline: Charge and release disc throws across nine top-down holes of pixel-art
   disc golf.
 description: >-
-  A full round is nine holes of disc golf on a single course, and you're trying
-  to reach the basket on each one in as few throws as you can. Your scorecard
-  and your best scores stay saved in the browser.
+  Play nine holes on one disc golf course, getting the disc into the basket on
+  each hole with the fewest throws. A scorecard and your best scores are kept in
+  your browser. Sessions average a few minutes.
 
 
-  Every throw asks for two separate presses. You aim by clicking or dragging on
-  the course, then hold to charge power and let go to lock it in. A second tap
-  sets the angle of release.
+  Driver, midrange or putter discs, thrown backhand or forehand. Wind that
+  shifts from one hole to the next. Ricochet shots and risky routes, plus
+  penalties for rough, water or out-of-bounds. Trailhead Toss, a 521-foot par 3
+  opening hole. Practice Field mode. Procedurally generated music that adapts as
+  you play.
 
 
-  Once you're near the basket, putting becomes a separate timing test, and you
-  tap when the meter hits the center.
+  Each throw takes two separate presses. Aim by clicking or dragging on the
+  course. Press and hold Space, or hold the throw panel, to build power. Release
+  to lock the power in, then tap once more to choose the release angle. Use Q
+  and E for fine aim. Near the basket, tap to putt when the meter reaches its
+  midpoint. Touch works alongside the keyboard and mouse.
 
 
-  You pick a driver, midrange or putter and throw it backhand or forehand, while
-  the wind changes from hole to hole. The holes also mix in risky routes,
-  ricochets, rough, water and out-of-bounds penalties, so there's plenty more to
-  read than the distance.
-
-
-  The opening hole gets the cheerful name Trailhead Toss and plays as a 521-foot
-  par 3. A Practice Field mode is also available. Sessions run a few minutes,
-  and touch controls work alongside keyboard and mouse.
-
-
-  joeydoorbell drew heavily on games they played as a kid. The procedural music
-  adapts as you play. The art was generated with OpenAI image generation and
-  then prepared by the Chain Camp team. It's built with TypeScript and Bun, and
-  the pixel font is Fibberish by Nathan Scott / Caffinate.
+  joeydoorbell leaned heavily on games from their own childhood. AI image
+  generation produced the art, and the Chain Camp team then readied it.
+  TypeScript and Bun were used to build it, and the pixel font is Fibberish,
+  credited to Nathan Scott / Caffinate.
 play:
   url: https://joeydoorbell.itch.io/chain-camp-classic
   embeddable: false

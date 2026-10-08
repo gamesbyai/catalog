@@ -2,38 +2,28 @@ slug: quadron-x
 title: Quadron X
 tagline: Fly an X-wing through a 15-mission dogfight campaign with a voice-acted story.
 description: >-
-  Quadron X puts you in an X-wing cockpit and sends you through a dogfight
-  campaign. The start screen promises six missions across asteroid fields,
-  convoy lanes and Imperial trenches, while the creator's own pitch describes a
-  full 15-mission campaign with a voice-acted story.
+  Quadron X puts you in an X-wing cockpit for a dogfight campaign. According to
+  the creator, the campaign runs 15 missions with a voice-acted story, while the
+  start screen advertises six.
 
 
-  You fly with WASD plus Q and E, aim with the mouse and fire with Space, and F
-  sends off a torpedo.
+  Missions over asteroid fields, convoy lanes and Imperial trenches. A
+  multiplayer mode alongside the campaign. Levels and ranks to browse. Callsigns
+  for every pilot, such as Comet-982. An Easy toggle.
 
 
-  Targeting gets two keys of its own, with T cycling through targets and R
-  snapping to whichever one's nearest. X matches your speed to the target you've
-  picked.
+  Fly with WASD, Q and E. Aim with the mouse. Press Space to fire, and F to
+  launch a torpedo. Press T to cycle targets, or R to snap to the nearest one.
+  Press X to match your speed to your selected target. Use Shift to boost and
+  Ctrl to brake. Press B to raise the barrier shield, and N to switch on the
+  night-vision zoom. Press C to change the camera. Press Tab to rename your
+  callsign.
 
 
-  The rest of the keyboard is busy as well. Shift boosts and Ctrl brakes, B
-  raises a barrier shield, and N switches on a night-vision zoom. C changes
-  the camera, P or Esc pauses, the bracket keys adjust volume and M mutes.
-
-
-  According to the creator, the cockpit wraps a full 360 degrees and is built
-  procedurally, and it's backed by more than 200 video comms generated with
-  Grok.
-
-
-  From the menu you can start the campaign, jump into multiplayer, or browse
-  levels and ranks. An Easy toggle sits right there too. Every pilot gets a
-  callsign like Comet-982, and you can rename yours with Tab.
-
-
-  daniel-farinax calls it a spiritual successor to xpilot. They say it was made
-  from scratch in one Sunday.
+  daniel-farinax says it was made from scratch over a single Sunday and calls it
+  a spiritual successor to xpilot. According to the creator, the cockpit wraps a
+  full 360 degrees and is built procedurally. The creator also says more than
+  200 video comms generated with Grok back the game.
 play:
   url: https://x.danielfarina.com
   embeddable: true
@@ -79,7 +69,7 @@ media:
     - games/quadron-x/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-10-02
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:vibejam-2026

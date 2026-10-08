@@ -2,41 +2,27 @@ slug: isometric-city
 title: IsoCity
 tagline: Build and manage an isometric city, growing it from the ground up.
 description: >-
-  IsoCity starts you with empty land and $100,000, and you decide how the city
-  grows from there.
+  IsoCity starts you on empty land with $100,000 to spend. The town begins with
+  zero people, and you decide how it grows.
 
 
-  You lay down roads, rail or subway lines, then zone the tiles as residential,
-  commercial or industrial. Everything carries a price, from $10 for the
-  bulldozer to $25 a road tile, $40 for rail and $50 for subway or any zone. You
-  can also place parks, utilities and services.
+  Buses, cars, trains, barges, planes and seaplanes that stop at traffic lights.
+  Pedestrians wandering among the vehicles. Health, happiness, safety, education
+  and the environment, each tracked as a percentage. Overlay views that
+  highlight one condition at a time across the map. Touch screen support.
 
 
-  Health, happiness, safety, education and the environment are each tracked as a
-  percentage, and your town starts with zero people.
-
-
-  You set the tax rate, and you can speed the simulation up or pause it.
-
-
-  Buses, cars, trains, barges, planes and even seaplanes all move through the
-  city, and they'll actually stop for traffic lights. People on foot wander
-  among them.
-
-
-  You can check one condition at a time with a view overlay that highlights it
-  across the map.
-
-
-  You can also start a new game, play co-op, or open a ready-made example city.
-  You can keep several cities saved and load any of them back later. The game
-  also works on touch screens.
+  Start a new game, play co-op, or open a ready-made example city. Lay roads,
+  rail or subway lines, then zone tiles as residential, commercial or
+  industrial. Place parks, utilities and services. Set the tax rate, and speed
+  the simulation up or pause it. Keep several cities saved, and load any of them
+  back later.
 
 
   amilich built the game without an outside game engine, drawing the isometric
-  renderer on HTML5 Canvas with its own depth sorting and layer handling. It's
-  open source, and the same project also holds IsoCoaster, a theme park builder
-  full of coasters, rides and guests.
+  renderer on HTML5 Canvas with its own depth sorting and layer handling. The
+  project is open source, and it also holds IsoCoaster, a theme park builder
+  with coasters, rides and guests.
 play:
   url: https://iso-city.com
   embeddable: true

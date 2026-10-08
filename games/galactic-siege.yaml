@@ -3,44 +3,28 @@ title: GALACTIC SIEGE
 tagline: Send fleets between star systems and capture the galaxy before the
   timer runs out.
 description: >-
-  Alien empires are carving up a procedurally generated galaxy, and you're in
-  charge of the blue Terran star systems standing in their way. You click one of
-  your systems to select it, then click a connected node to send a fleet down
-  the hyperspace lane toward it.
+  Alien empires are carving up a galaxy, and you command the blue Terran star
+  systems standing in their way. The galaxy map and alien opponent names are
+  randomized every match. The game is playable in English and Portuguese.
 
 
-  Every launch takes half the garrison of the system you picked, a blunt rule
-  that leaves the place it came from weaker after each attack.
+  Hyperspace lanes, with map connections setting reach as much as fleet numbers.
+  Fortress nodes with reduced incoming damage. Shipyard nodes with faster fleet
+  builds. Portal nodes with long jumps between distant systems. Once-per-match
+  random events, such as solar storms that cut production, warp surges speeding
+  fleets and nanite blooms raising production for every faction, aliens
+  included. Four modes, Classic (3 minutes), Blitz (2 minutes, doubled
+  production, faster fleets), Conquest (production bonuses for sector
+  majorities) and Survival (enemy waves).
 
 
-  Fleets travel along the lanes and fight the moment they arrive. If you send
-  more ships than the defenders hold, the system is yours. Every system you own
-  builds new fleets over time, so early expansion feeds the attacks that come
-  later, and since the map's connections decide what you can reach, the shape of
-  the lanes counts as much as the numbers.
-
-
-  Some nodes carry a structure. Fortresses take less damage from incoming
-  fleets, shipyards build fleets faster, and portals open a long jump lane
-  between distant systems.
-
-
-  Once per match, a random event can hit. It might be a solar storm that cuts
-  production, a warp surge that speeds up fleets, or a nanite bloom, a mixed
-  blessing since it raises production for every faction, the aliens included.
-
-
-  Four modes change how long the war runs and what winning means. Classic lasts
-  3 minutes, Blitz gives you 2 with doubled production and quicker fleets, and
-  Conquest hands out production bonuses for holding sector majorities. In those
-  you win by wiping out every alien faction or by holding the top score when
-  time's up. Survival flips it around by sending enemy waves at you, and
-  outlasting them until the timer ends is the win.
-
-
-  The maps get randomized every match, and the alien opponents' names do too.
-  Before a match you can pick a difficulty setting and a map size. It's playable
-  in English and Portuguese.
+  Select a blue system, then click a connected node to send half its garrison.
+  Each launch leaves the origin system weaker. Fleets fight on arrival. Send
+  more ships than defenders hold to capture. Owned systems build fleets over
+  time, so early expansion feeds later attacks. Before a match, pick difficulty
+  and map size. In Classic, Blitz and Conquest, eliminate all alien factions or
+  hold the top score at time-up. In Survival, outlast enemy waves until the
+  timer ends.
 
 
   According to ArkantosKira, AI assisted with the game's code and text.

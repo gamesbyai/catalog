@@ -2,25 +2,26 @@ slug: night-drop
 title: Night Drop
 tagline: Fly a tiny delivery drone through a dark apartment without waking the cat
 description: >-
-  A shift is a run of timed courier jobs, where you fly a drone through an
-  apartment. Touch the pickup beam to grab a parcel, then carry it to the
-  drop-off beam. The countdown begins when you grab the parcel.
+  A shift is a run of timed courier jobs in a giant apartment at 3 a.m. You fly
+  a cookie-sized drone and deliver tiny parcels. Don't wake the cat.
 
 
-  Faster drop-offs pay bigger tips. A late one pays half and resets your streak.
-  Each order pairs an item, such as an AA battery, a sugar cube, a lost earring,
-  a Lego brick or a cat treat, with a drop spot in a different zone. There are
-  15 spots in total.
+  Random orders pairing an AA battery, a sugar cube, a lost earring, a Lego
+  brick or a cat treat with one of fifteen spots in another zone. Bigger tips
+  for faster drops, and half pay with a reset streak when late. Hot burners that
+  push the drone around. The ceiling fan that knocks the drone down. Cat
+  sleeping on the sofa, moving to the table and counter on long shifts. Your
+  best shift, saved in the browser.
 
 
-  Hot burners push the drone around and the ceiling fan knocks it down. The cat
-  sleeps on the sofa, and you need to keep track of whether it wakes up. Keep
-  away for a few seconds and it dozes off again. On long shifts it relocates to
-  the table and the counter.
+  Touch the pickup beam to grab a parcel. The countdown starts when you grab the
+  parcel. Carry the parcel to the drop-off beam. Keep track of whether the cat
+  wakes up. Stay away from the cat for a few seconds, and it dozes off again.
 
 
-  Your best shift is saved in the browser. All the furniture is generated from
-  basic shapes when the page loads.
+  According to Gipppp121, ideas and prompts came from one AI model, and the code
+  was built with another. All the furniture is generated from basic shapes when
+  the page loads.
 play:
   url: https://gipppp121.github.io/buzzdrop
   embeddable: true

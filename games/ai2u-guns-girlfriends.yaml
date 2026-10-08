@@ -3,37 +3,31 @@ title: AI2U - Guns & Girlfriends
 tagline: Build a base, launch nukes and outfight three rival factions in a
   real-time strategy game.
 description: >-
-  You're in a '90s Red Alert style skirmish where you build a base, harvest ore,
-  roll out tank columns and deal with nuclear superweapons. You pick one of
-  three factions, and all three of them are in love with you, which the game
-  treats as the real problem.
+  Pick one of three factions and take on AI opponents across five maps of
+  islands, deserts, glaciers and a volcano crater. Build a base, harvest ore,
+  roll out tank columns and deal with nuclear superweapons in a '90s Red
+  Alert-style skirmish. All three factions are in love with you.
 
 
-  Catgirls send out conscript soldiers, tanks and rocket launchers, backed by a
-  commando hero who blows up buildings with C4. Witches move fast and bring
-  healing cauldrons, a bit of chaos in the form of potions that run at the enemy
-  and explode, and a Grand Cannon with the longest range of anything. Sirens
-  hide their guards behind bubble shields and also field chain-lightning
-  platforms plus a siege crab.
+  Catgirls with conscript soldiers, tanks, rocket launchers and a commando hero
+  who blows up buildings with C4. Witches with fast movement, healing cauldrons
+  and potions that run at enemies and explode, plus a Grand Cannon with the
+  longest range of anything. Sirens with guards behind bubble shields,
+  chain-lightning platforms and a siege crab. Three difficulties with AI that
+  rushes, builds turrets or waits for an opening. Unit counters built on
+  abilities like healing auras and hero infiltration.
 
 
-  You get 5 maps of islands, deserts, glaciers and a volcano crater, plus 3
-  difficulties where AI opponents rush you, build turrets or wait for an
-  opening.
-
-
-  Units counter each other through abilities like healing auras and hero
-  infiltration, and there's an in-game wiki with stats for every unit. There's a
-  power supply to manage as well.
-
-
-  Your wins get saved as local victory records, split by difficulty for each
-  faction.
+  Left click and drag to select units. Right click to move, attack, harvest or
+  set a rally point. Select the commando and right click a structure to plant
+  C4. Manage your power supply, and check the in-game wiki for stats on every
+  unit. Win a round and it's saved as a local victory record, split by
+  difficulty for each faction.
 
 
   DGSpitzer built the 3D units almost entirely from procedural geometry, which
-  keeps the download small, near 10 MB, while Suno AI made the soundtrack and
-  Nano Banana drew the character art.
+  keeps the download small, near 10 MB. Suno AI made the soundtrack, and Nano
+  Banana drew the character art.
 play:
   url: https://helixngc7293.itch.io/gandg
   embeddable: false

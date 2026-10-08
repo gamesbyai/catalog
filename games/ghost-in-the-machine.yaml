@@ -3,33 +3,27 @@ title: Ghost In The Machine
 tagline: Search a storm-struck computer lab for hidden ghosts with a detector
   before time runs out.
 description: >-
-  Your run ends with a score for the ghosts you track down and how much of an
-  abandoned computer lab you've finished off, and everything plays out in text.
+  Track down hidden ghosts in an abandoned computer lab before a non-stop timer
+  runs out. You're trapped there during a storm, and everything plays out in
+  text. Your run ends with a score for the ghosts you find and how much of the
+  lab you've completed.
 
 
-  You get around by typing commands, either compass directions or turns and
-  steps based on the way you're facing. Typing just "north" works too, and you
-  can click buttons for common commands like look, scan and inspect.
+  Four tools to collect, nine pieces of terminal lore to read and nine rooms to
+  map. Obstacles that block some routes, four in all, each shut until the
+  matching tool is in hand. The detector that finds hidden entities in the
+  building. Ghost chases, with a place of safety you always know. Everything
+  explored, collected, read and overcome, tracked as you go. A Secret Victory
+  ending for a full clear, with its own music.
 
 
-  Your detector is how you find the hidden entities in the building. When one of
-  them gives chase, you've got to make it back to the Lab Entrance before it
-  catches you, so at least you always know where safety is. Obstacles block some
-  routes, and each one stays shut until you're carrying the tool that matches
-  it.
+  Type a compass direction, such as north, to move that way. Type turn and step
+  commands based on the way you're facing. You can also click buttons for common
+  commands, such as look, scan and inspect. When a ghost gives chase, make it
+  back to the Lab Entrance before it catches you.
 
 
-  A timer runs non-stop and caps how long you've got to find the ghosts.
-
-
-  Completion gets tracked closely, with four tools to collect, nine pieces of
-  terminal lore to read, nine rooms to map and four obstacles to clear.
-  Everything you've explored, collected, read and overcome gets tracked as you
-  go. Clear every last one of those and you unlock a Secret Victory ending that
-  even gets its own music.
-
-
-  jetblackrlsh lists AI help with the code, graphics, sounds and text.
+  According to jetblackrlsh, AI helped with the code, graphics, sounds and text.
 play:
   url: https://jetblackrlsh.itch.io/ghost-in-the-machine
   embeddable: false

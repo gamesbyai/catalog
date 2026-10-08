@@ -2,26 +2,20 @@ slug: ironclash
 title: ironclash
 tagline: Fight multiplayer battles from tanks, helicopters, and FPV drones.
 description: >-
-  Every round comes down to a sector, which one side has to capture or
-  neutralize. The armor team pushes forward with a tank and infantry, taking
-  sectors to hit a point target before time runs out. The drone team only has to
-  hold out until the timer expires, so the clock works for one side and against
-  the other.
+  Each round turns on a sector that one side has to capture or neutralize. It's
+  a first-person shooter built on combined arms, where armor breaks through the
+  line while drones hit it from above.
 
 
-  It's a first-person shooter built on combined arms, where armor breaks through
-  the line while drones hit it from above.
+  Armor team of a tank and infantry, taking sectors to hit a point target before
+  time runs out. Drones that only hold out until the timer expires, with the
+  clock working for one side and against the other. Tank, helicopter and FPV
+  drone roles, each playing very differently. FPV drones, steered from cover to
+  stall advances and find openings in the enemy line. Team and role assigned on
+  joining, with no side to pick.
 
 
-  You don't get to pick a side, because the game hands out your team and role
-  when you join a match. All it asks first is a callsign of 1 to 16 characters,
-  and it'll take letters, numbers, spaces, dashes and the _ character.
-
-
-  Each role plays very differently. You might end up driving a tank, flying a
-  helicopter or steering an FPV drone from cover. The smallest machine is the
-  one meant to stall the advance and look for openings in the enemy line. If you
-  want to warm up first, there's a training option.
+  Use the training option first if you want to warm up.
 
 
   xaitoshi_ made the game because they loved playing Black Ops when they were

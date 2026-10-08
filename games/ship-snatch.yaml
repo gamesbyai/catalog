@@ -3,32 +3,25 @@ title: Ship Snatch
 tagline: Build a hex archipelago and defend your Captain's Keep from enemy ships
   and sea monsters.
 description: >-
-  Pirate ships and tentacled sea creatures come at your castle in waves, and
-  your job is to keep the Captain's Keep standing through all of them.
-  Everything happens in real time on a map made of hexagonal tiles. The goal is
-  to build your island, defend the Keep and hold back the waves.
+  Keep the Captain's Keep standing through waves of pirate ships and tentacled
+  sea creatures. You build your island and defend the Keep on a map of hexagonal
+  tiles. Everything happens in real time.
 
 
-  Your island grows one hex at a time, so you're slowly stretching it out into a
-  little chain of islands. You place defenses and upgrade them, but only on
-  ground you've already claimed, which means your coastline decides where your
+  Cannons on the tiles around the central keep, firing at ships sailing across
+  the water. Sea tentacles that rise out of the sea close to the cannons. Solo
+  play, or co-op for up to 32 players. Open rooms that other players have
+  already started. A global leaderboard.
+
+
+  Enter a captain name before you start. Grow your island one hex at a time, so
+  you slowly stretch it into a little chain of islands. Place and upgrade
+  defenses only on ground you have already claimed. Your coastline decides where
   cannons can stand.
 
 
-  Those cannons sit on the tiles around the central keep and fire at ships
-  sailing in across the water, while purple tentacles rise out of the sea close
-  by.
-
-
-  You can play solo or start a multiplayer game, after entering a captain name.
-
-
-  Multiplayer is co-op, and you can join open rooms that someone has already
-  started. It comes with a global leaderboard as well.
-
-
-  radomir_3 aimed for a look a nine-year-old would enjoy that adults could still
-  find worth playing.
+  radomir_3 aimed for a look a nine-year-old would enjoy, with the game still
+  worth playing for adults.
 play:
   url: https://shipsnatch.com
   embeddable: true

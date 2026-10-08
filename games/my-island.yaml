@@ -2,41 +2,28 @@ slug: my-island
 title: My-Island
 tagline: Build a cozy tropical island city from a single Town Hall and collect coins.
 description: >-
-  The decor you put on this tropical island pulls a lot more weight than it
-  looks, because it raises Happiness, and Happiness multiplies every coin your
-  buildings bring in.
+  The decor you place on this tropical island raises Happiness, and Happiness
+  multiplies every coin your buildings bring in. You start with a single Town
+  Hall and a pile of coins, then build the island up. Nothing on the island runs
+  on a timer, and there's no way to fail at all.
 
 
-  You start with a single Town Hall and a pile of coins to spend. You can pick
-  out homes, businesses and decor to place. Each building earns coins over time,
-  and you tap it when you want to collect them.
+  14 buildings across homes, businesses and decor, including beach huts, coconut
+  stands, tiki bars and a lighthouse. Island land, stretched from 9x9 out to
+  15x15 through Town Hall upgrades. Pip, a blue parrot and your island's
+  familiar, wandering the beaches and cheering you on. Automatic saving of your
+  progress in the browser. Driftwood, shells and wild coconuts washing up over
+  time, cleared for bonus coins and rare Shells.
 
 
-  Those coins go back into new buildings and into upgrades for each one you've
-  already got. Tapping a building also lets you check its info, upgrade it, move
-  it or sell it.
+  Pick a home, business or decor piece to place. Tap a building to collect coins
+  it earns over time. Open its menu to check info, upgrade, move or sell it.
+  Spend coins on new buildings and upgrades for each one you own. Once
+  population is high enough, upgrade the Town Hall to raise the island level and
+  unlock new buildings.
 
 
-  Nothing on this island runs on a timer, and there's no way to fail at all.
-
-
-  Your next target is something like a population number and a coin cost for
-  growing the island. Once your population is high enough, you can upgrade the
-  Town Hall, which lifts the island level, unlocks new buildings and stretches
-  the land from 9x9 out to 15x15.
-
-
-  Driftwood, shells and wild coconuts wash up along the shoreline over time.
-  Clearing them away pays out bonus coins and rare Shells.
-
-
-  There are 14 buildings across homes, businesses and decor, including beach
-  huts, coconut stands, tiki bars and a lighthouse, and a blue parrot named Pip,
-  cast as your island's familiar, wanders the beaches cheering you on. Your
-  progress saves automatically in the browser.
-
-
-  Both the art and the music are generated in code. According to the creator,
+  Both the art and the music are generated in code. According to MaoKoroku,
   development was heavily AI-assisted.
 play:
   url: https://maokoroku.itch.io/my-island

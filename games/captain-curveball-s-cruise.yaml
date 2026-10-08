@@ -3,15 +3,18 @@ title: Captain Curveball's Cruise
 tagline: Drive a speedboat around Maldivian islands, picking up tourists and
   dodging disasters.
 description: >-
-  A run is a timed excursion shift. You drive a speedboat between islands, pick
-  up tourists, and deliver them safely to earn money while disasters get in the
-  way. The aim is the highest earnings before the clock runs out. One or two
-  players can take part, and the tagline frames it as a race against a rival.
+  One or two players take a speedboat between tropical islands in a timed
+  excursion shift. The tagline frames it as a race against a rival.
 
 
-  The creator is Maldivian and based the game on what excursion crews deal with.
-  They also wanted sailing around the islands and banking past resorts to be fun
-  apart from the score chase.
+  Tourist passengers to pick up and deliver safely for money. Ridiculous
+  disasters that get in the way. Resorts and reefs among the islands. Highest
+  earnings within the time limit as the goal.
+
+
+  AdamMufassir426 is Maldivian and based the game on what excursion crews deal
+  with. They also wanted cruising the islands and banking past resorts to be
+  enjoyable apart from the earnings goal.
 play:
   url: https://captain-curveballs-cruise.netlify.app
   embeddable: true

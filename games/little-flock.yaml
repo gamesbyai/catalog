@@ -2,37 +2,27 @@ slug: little-flock
 title: little flock
 tagline: Tend a shared flock of sheep on a cozy farm with other players.
 description: >-
-  The game is set on a farm, where you tend a flock of sheep. The interface is
-  written in Simplified Chinese. A 16-step tutorial shows you how to build a
-  shelter, take in a first sheep, look after the flock each day and get a garden
-  going.
+  Start your own farm or join a friend's with an invitation code. There you tend
+  sheep that never die, and ripe crops that don't rot. The interface is in
+  Simplified Chinese.
 
 
-  Day to day, you pet, feed and shear your sheep, and you're there to welcome
-  newborn lambs. You can plant, water and harvest seven crops, fill orders for
-  the neighbors and upgrade the farm.
+  Opening 16-step tutorial covering a shelter, a first sheep and a garden. Sheep
+  you name, in 12 breeds, six personalities, five rarity tiers. Seven crops to
+  plant, water and harvest, neighbor orders and farm upgrades. Paths from the
+  home farm to a meadow, wood and stargazing highland. Restyling for your
+  shepherd's skin, hair, outfit and hat. Shared farms with one pool of coins,
+  items, buildings and sheep, plus live presence and chat. A gentle soundtrack.
 
 
-  To graze, you whistle the flock together, stroll out to the meadow while they
-  eat and drink, then bring them home again.
+  Pet, feed and shear your sheep each day, and welcome newborn lambs. Whistle to
+  gather the flock, walk out to the meadow while they eat and drink, then bring
+  them home again.
 
 
-  The flock comes in 12 breeds, six personalities and five tiers of rarity, and
-  you get to name each sheep. Paths lead out from the home farm to a meadow, a
-  wood and a highland for stargazing. You can also restyle your shepherd's skin,
-  hair, outfit and hat.
-
-
-  Farms are shared, so you either start one or join a friend's with an
-  invitation code, and then everyone draws from one pool of coins, items,
-  buildings and sheep, with live presence and chat.
-
-
-  Your sheep never die and ripe crops don't rot. The soundtrack is gentle.
-
-
-  Everything here, from the 3D world and game systems to the multiplayer server,
-  art, audio and deployment, came out of one single run of an AI coding agent.
+  Everything in the game, from the 3D world and game systems to the multiplayer
+  server, art, audio and deployment, came out of one single run of an AI coding
+  agent.
 play:
   url: https://sharpherd.song.work
   embeddable: false

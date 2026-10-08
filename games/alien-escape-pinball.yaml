@@ -4,39 +4,29 @@ tagline: Work the flippers, hit ramps, and crack alien eggs to survive an
   invasion in pinball.
 description: >-
   Hold Space to pull back the plunger and fire the ball, then keep it alive with
-  the flippers while you try to survive an alien invasion.
+  the flippers while you try to survive an alien invasion. Drain every ball
+  you've got and the aliens win.
 
 
-  Every fresh ball opens with a skill shot, a rollover lane that pays a bonus if
-  you land the ball in it. The table has slingshots, bumpers, drop targets, a
-  spinner and two ramps, all running on Box2D physics. Drain every ball you've
-  got and the aliens win.
+  Skill shot on every fresh ball, a rollover bonus for landing in it. Box2D
+  physics table with slingshots, bumpers, drop targets, spinner and two ramps.
+  Egg you smash and capture for repeatable jackpots, hatching an alien in four
+  forms. A-L-I-E-N spelling, an end-of-ball multiplier up to 5x and a briefly
+  lit extra ball. Combo points for alternating target and lock hits within five
+  seconds. Wizard mode, with a 5x multiplier, multiball and a boss alien from
+  the egg.
 
 
-  Hit each ramp three times and multiball kicks off. There's also an egg you can
-  smash and capture for jackpots that pay out again and again, and it hatches an
-  alien that shows up in one of four forms. Killing those aliens refreshes your
-  ball saver.
-
-
-  Spelling A-L-I-E-N cranks the end-of-ball bonus multiplier up as far as 5x,
-  and it briefly lights an extra ball too. When you alternate target and lock
-  hits within five seconds, you earn combo points on top. Wizard mode stacks
-  that 5x multiplier with multiball, and breaking the egg while it's running
-  brings out a boss alien.
-
-
-  You can nudge the table by swiping or with keys, and the game works with
-  mouse, keyboard, gamepad or touch. On a phone, swipe across the top half of
-  the screen to nudge the table.
-
-
-  Voice lines get spoken aloud in real time through text-to-speech. Three songs
-  come with it.
+  Hit each ramp three times to start multiball. Use Z or Left Arrow for the left
+  flipper, and Forward Slash or Right Arrow for the right. Nudge the table by
+  swiping, or with the period and X keys. On a phone, swipe across the top half
+  of the screen. Killing the aliens the egg hatches refreshes your ball saver.
+  Play with a mouse, keyboard, gamepad or touch.
 
 
   Focaccai says the code, art and sound were all made with heavy AI use. Suno
-  made the music, and GPT Image 2 painted all the artwork.
+  made the music, and three songs come with it. GPT Image 2 painted all the
+  artwork, and voice lines are spoken aloud in real time through text-to-speech.
 play:
   url: https://focaccai.itch.io/alien-pinball
   embeddable: false

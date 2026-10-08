@@ -4,32 +4,20 @@ tagline: Carve down an endless mountain at dusk and reach each checkpoint before
   time runs out.
 description: >-
   Carve left and right with the arrow keys to steer your snowboarder down an
-  endless mountain at dusk, in 16-bit style pixel art. You're threading past
-  snowy pines and course flags on pink and violet snow, which sounds odd for a
-  mountain but looks pretty right as the light fades. Your job is to get through
-  each checkpoint before the timer runs out.
+  endless mountain. Your job is to get through each checkpoint before the timer
+  runs out, and every run is a chance to beat your best score.
 
 
-  Hold Space to crouch, then let go to jump. In the air, that same key grabs,
-  which keeps Space surprisingly busy. Left and right carve, or spin you around
-  in the air, while up and down tuck, brake or flip depending on whether you're
-  off the ground.
+  Rails and rings for chaining combos. Wipeouts on any landing that isn't flat.
+  Tricks that refill the boost meter and move you closer to Surge. Surge,
+  triggered by a full boost meter. Checkpoints, combos, boost and Surge running
+  at the same time. A leaderboard for your runs.
 
 
-  Rails and rings keep your combo alive, but the landing needs to be flat, or
-  it's a wipeout.
-
-
-  Shift fires your boost. Tricks refill the boost meter, and once it's full, it
-  triggers Surge. So tricks do two things at once, topping up your boost and
-  moving you closer to Surge.
-
-
-  The boost, Surge, combos and checkpoints are all running at the same time,
-  which means there's a lot more going on in each run than just carving.
-
-
-  There's a leaderboard too. Every run is a chance to beat your best score.
+  Hold Space to crouch, then release it to jump. While you're in the air, press
+  Space again to grab, and left and right spin you around. Use up and down to
+  tuck, brake or flip, depending on whether you're off the ground. Press Shift
+  to fire your boost.
 play:
   url: https://tesana.com/play/cf9ea13d-8805-4919-83a1-b58945a29120
   embeddable: false

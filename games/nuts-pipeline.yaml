@@ -2,37 +2,23 @@ slug: nuts-pipeline
 title: Nuts Pipeline
 tagline: Place converters on pipe nodes to sort nuts from stones and feed a hamster.
 description: >-
-  Nuts Pipeline has you placing converters on the nodes of a pipe network to
+  Nuts Pipeline has you place converters on the nodes of a pipe network to
   decide where everything flows. Nuts and stones leave the source together, and
-  you need the right combination of converters to sort them so only nuts reach
-  the hamster waiting at the goal.
+  you need the right mix of converters so only nuts reach the hamster waiting at
+  the goal. The creator pitches it as easy for beginners to pick up, since
+  swapping converters is the main thing you do.
 
 
-  Selecting a node opens a dialog where you swap its converter, with a reference
-  chart to check against. The creator pitches it as easy for beginners to pick
-  up, since swapping converters is the main thing you do.
+  Levels from easy stages up to harder ones, ten turns each within a 3-minute
+  limit. Two-miss game over for stones that reach the hamster. Unlock Route, a
+  one-turn release for a locked node. Hamster reactions for every nut that
+  arrives. Rules taught in a built-in tutorial. Casual mode, with no time or
+  miss limits and no saved or submitted rankings. Stop-and-resume play, with
+  autosave after every placement and turn.
 
 
-  Any stone that slips through to the hamster counts as a miss, and a second
-  miss ends the run.
-
-
-  Each level plays out in turns, and you have to get through 10 of them inside a
-  3-minute limit. When a node is locked, an Unlock Route action frees it for a
-  single turn.
-
-
-  The hamster at the end of the line reacts every time a nut arrives, giving all
-  that careful sorting a small audience.
-
-
-  A built-in tutorial walks you through the rules, and the levels run from easy
-  stages up to harder ones. Progress autosaves after every placement and every
-  turn, so you can stop and pick it back up later.
-
-
-  There's also a Casual mode that drops the time and miss limits entirely. It's
-  a gentler way in, though it doesn't save or submit rankings.
+  Select a node to open its converter dialog. Switch converters there while
+  checking the reference chart.
 
 
   According to IS Product, AI helped with the game's code, graphics and text.

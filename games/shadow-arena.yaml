@@ -4,20 +4,18 @@ tagline: Fight off waves of monsters and bosses in a top-down arena with a frien
 description: >-
   Pick a champion, press Space to ready up, and fight off waves of monsters in
   an arena. You level up in the middle of a fight, and you can go after unusual
-  builds. Bosses show up among the waves, and the goal is to outlast them.
+  builds. Bosses show up among the waves, and your goal is to outlast them.
 
 
-  Each class comes with a starting weapon, a passive and a class weapon. The
-  Mage uses a Magic Staff, gains area scaling and has Arcane Runes. The Revenant
-  fires a Soul Projectile, heals through Soul Rip when it kills and has Soul
-  Push. The Berserker swings a Heavy Cleave, gains Blood Rage and has Ground
-  Slam.
+  Starting weapon, passive and class weapon for every class. Magic Staff, area
+  scaling and Arcane Runes for the Mage. Soul Projectile, Soul Rip healing on
+  kills and Soul Push for the Revenant. Heavy Cleave, Blood Rage and Ground Slam
+  for the Berserker. Solo and local play, one mode for one to four players on
+  one keyboard. Online co-op as a separate option, with a warning it may feel
+  less smooth than solo or local play.
 
 
-  Solo play and local multiplayer share one mode, with one to four players on
-  the same keyboard. Online co-op is available as its own option, and the game
-  warns that it may feel less smooth than solo or local play. The creator
-  modeled the game on Vampire Survivors.
+  BWBlit, the game's creator, modeled it on Vampire Survivors.
 play:
   url: https://shadow-arena-five.vercel.app
   embeddable: true

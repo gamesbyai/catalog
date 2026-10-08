@@ -3,19 +3,20 @@ title: Slime Escape
 tagline: Survive ten waves of mutant slimes, beat the boss, and flee through a
   suspicious portal.
 description: >-
-  You move with WASD and shoot with the left mouse button. You have five weapon
-  slots, numbered 1 to 5. Those weapons run from a pointed yellow shot and a
-  pink blob to a green dart, a thin pink-and-green needle and a green grenade.
+  Alone, you fight through ten waves of mutant slimes, beat the boss and leave
+  through a portal. By the game's own admission, that exit definitely shouldn't
+  be trusted.
 
 
-  Your goal is to get through ten waves of mutant slimes, take down the boss and
-  then leave through the portal. By the game's own admission, it's an exit that
-  definitely shouldn't be trusted.
+  Five numbered weapon slots, a grenade among them.
 
 
-  alxdos_ took the scribbled look from their son's hand-drawn fantastic worlds.
-  Those drawings were full of strange creatures and weird machines. According to
-  alxdos_, the tiny stories in them looked like they wanted to become a game.
+  Move with WASD and shoot with the left mouse button to take on the slimes.
+
+
+  alxdos_ took the scribbled look from their son's hand-drawn fantastic worlds,
+  full of strange creatures and weird machines. According to alxdos_, the
+  drawings held "tiny stories that looked like they wanted to become a game."
 play:
   url: https://slimeescape.com/portal
   embeddable: true

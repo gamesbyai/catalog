@@ -3,28 +3,21 @@ title: MANA FIGHT
 tagline: Pick a spellcasting class and fight through fast third-person arena battles.
 description: >-
   Pick one of four classes, then fight in an arena with spells and melee
-  weapons. It's also got two attacks, one on the 1 key and one on the 2 key,
+  weapons. Each class has two attacks, one on the 1 key and one on the 2 key,
   plus a passive trait.
 
 
-  Tank is the frontline pick, hurling a Fireball that does 28 damage across an
-  area or swinging a Sword for 35 up close, while Heavy Plate shaves 20% off the
-  damage you're taking. Ranger fires a magic arrow for 40 damage, or stabs with
-  a 20-damage dagger instead. Hawk's Eye stretches its range by 25%.
+  Tank, the frontline class with 28-damage area Fireball, 35-damage up-close
+  Sword and Heavy Plate passive, 20% less damage taken. Ranger, with 40-damage
+  magic arrow, 20-damage dagger and Hawk's Eye passive, 25% more range. Esq, the
+  area-damage class with homing dark-magic Shadow Bolt for 30, 15-damage melee
+  Staff Whack and Arcane Focus passive, 50% more mana regeneration. Phantom, the
+  assassin with twin thrown Spirit Daggers for 15 each, 25-damage melee Twin
+  Daggers and Backstab passive, 50% more damage from behind.
 
 
-  Esq's the area-damage class, and its Shadow Bolt is homing dark magic that
-  hits for 30. Its Staff Whack is a modest 15-damage melee swing. Arcane Focus
-  raises mana regeneration by 50%.
-
-
-  Phantom plays the assassin, throwing twin Spirit Daggers for 15 damage each or
-  cutting with Twin Daggers for 25 in melee, while Backstab adds 50% damage when
-  you're hitting from behind.
-
-
-  NinoGreeno wanted the familiar core of shooters, usually built around guns and
-  grenades, carried into a fantasy setting.
+  NinoGreeno wanted to take the familiar core of shooters, usually built around
+  guns and grenades, and carry it into a fantasy setting.
 play:
   url: https://manafight.vercel.app
   embeddable: true

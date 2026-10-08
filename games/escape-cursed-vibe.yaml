@@ -3,27 +3,22 @@ title: Escape cursed vibe
 tagline: Race friends through five deadly themed stages and dodge hazards to
   escape first
 description: >-
-  You're racing along a cursed 3D path with up to three other players in the
-  same lobby, where the traps kill you and stepping off an edge drops you into
-  the void.
+  You race along a cursed 3D path with up to three other players in the same
+  lobby. Traps kill you, and stepping off an edge drops you into the void.
 
 
-  There are five stages, and your goal is to clear all of them and be the one
-  who escapes. They're called Star Gauntlet, Playtime Is Over, The Chaos Divide,
-  Polar Escape and Infernal Arena.
+  Five deadly themed stages named Star Gauntlet, Playtime Is Over, The Chaos
+  Divide, Polar Escape and Infernal Arena. A goal of clearing every stage and
+  being the one who escapes. Starting stage picked by the host, not always the
+  first stage. Late joins right up until the run begins.
 
 
-  Before a run you type in a name of up to 16 characters, which the other
-  players can see. The host chooses the stage the run starts on, so a group
-  doesn't have to begin with the first one every time. More players can still
-  drop in right up until the run begins.
+  Move with WASD or the arrow keys. Press Space to jump. Move the mouse to look
+  around.
 
 
-  WASD or the arrow keys move you, Space jumps and the mouse looks around.
-
-
-  Speazed describes it as a dodge map where cursed friends race and only the
-  swift escape, and they say it's based on a Warcraft 3 custom map.
+  Speazed calls it a dodge map with cursed friends racing, where only a swift
+  escape matters. They say it's based on a Warcraft 3 custom map.
 play:
   url: https://escape-cursed-vibe.pages.dev
   embeddable: true

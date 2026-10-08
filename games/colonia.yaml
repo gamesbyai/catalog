@@ -1,43 +1,31 @@
 slug: colonia
 title: Colonia
 tagline: Lay roads, house Roman families, and defend a growing city from raiders.
-description: "Lay out roads, drop in homes, and then keep the people in them
+description: "Lay out roads, drop in homes, and keep the people in them
   supplied. As a home gets what it needs, it grows from a tent into something
-  much grander.
+  much grander. Unhappy homes produce protesters, thieves and eventually
+  rioters, and crowded, unhealthy ones can fall sick.
 
 
-  The housing ladder has 20 levels, and the top one is an imperial palace.
+  Twenty housing levels, topped by an imperial palace. Latin-named buildings,
+  from a Horreum for goods to a Castra for your legion. Raids by land, and by
+  ship where a river or coast reaches the sea. Twelve partner cities, each with
+  its own prices and yearly quota. A ten-step campaign, from a river village to
+  a sprawling city split into districts. Sandbox with five landscapes and four
+  map sizes, up to 256x256. Hall of Fame for scored wins.
 
 
-  Buildings all carry their Latin names: your goods go into a Horreum and your
-  legion lives in a Castra. The same five gods Caesar III had (Ceres, Neptune,
-  Mercury, Mars and Venus) are here too. Temples and festivals keep them content
-  and blessing the city, while neglect makes them strike.
+  Trade by caravan and ship, using each partner's card switch to choose who gets
+  each good. Answer raids with legions, archers, cavalry and a fleet of
+  liburnians. From step 3, pick a peaceful or military post next. Follow the
+  governor's career through its ranks, and choose your own salary. Keep the five
+  gods of Caesar III, Ceres, Neptune, Mercury, Mars and Venus, content with
+  temples and festivals, and they bless the city. Neglect them, and they strike.
 
 
-  Unhappy homes produce protesters, thieves and eventually rioters, and crowded,
-  unhealthy ones can fall sick.
-
-
-  Raiders arrive by land, and by ship where a river or coast reaches the sea.
-  You answer with legions, archers, cavalry and a fleet of liburnians.
-
-
-  Trade runs by caravan and by ship with twelve partner cities, each with its
-  own prices and yearly quota, and a switch on every partner's card lets you
-  choose who gets each good.
-
-
-  The campaign has ten steps, starting at a village on a river and ending at a
-  sprawling city split into districts, and from step 3 you pick a peaceful or
-  military post next. A sandbox offers five landscapes and four map sizes, up to
-  256x256. The governor's career has ranks and a salary you choose for yourself,
-  and there's a Hall of Fame for scored wins.
-
-
-  Er2oneousbit asked Claude to make a Caesar III style game without using any of
-  the original's code or art. The art is drawn by code, and the sound and music
-  are generated on the fly."
+  Er2oneousbit asked for a Caesar III style game, built without any of the
+  original's code or art. The art is drawn in code, and the sound and music are
+  synthesized live."
 play:
   url: https://er2oneousbit.github.io/Colonia/
   platforms:
@@ -46,6 +34,10 @@ play:
     by: submission
     date: 2026-10-03
   embeddable: true
+  controls:
+    - "R: turn a building while placing it"
+    - "Q: view the city from another side"
+    - "Click a home: see what it needs next"
 repo: https://github.com/Er2oneousbit/Colonia/
 creator:
   name: Er2oneousbit

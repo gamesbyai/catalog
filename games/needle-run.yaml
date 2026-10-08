@@ -3,27 +3,23 @@ title: NEEDLE RUN
 tagline: Fly through gates, avoid pursuers, and chase score multipliers for a
   leaderboard spot.
 description: >-
-  Enemies keep closing in on your ship, and you don't have a single weapon to
-  fight them off with.
+  Your aim is to slip through gates without getting caught and drive your score
+  as high as it can go. Enemies chase your ship. You have no weapon.
 
 
-  Instead, your job is to fly through gates without getting caught while you
-  push your score as high as it'll go. AfterimageDev took the idea from the
-  Pacifism mode in the Geometry Wars series, so the missing gun is the premise
-  rather than an oversight.
+  Multipliers to grab. Scores that go up to an online leaderboard. The
+  top-ranked score as the goal. Profile edits that change how your leaderboard
+  entry looks.
 
 
-  Grabbing multipliers raises your multiplier, which starts at x1. You've also
-  got a bomb held back in reserve. B or Shift sets off the bomb once it's ready.
-  You're chasing the top-ranked score.
+  You move with WASD, the left stick on a gamepad, or a virtual stick on a
+  touchscreen. Use the mouse to move and aim the ship. Start a run with Space, a
+  click, or a tap. Press B or Shift to set off your reserve bomb once it's
+  ready.
 
 
-  Scores go up to an online leaderboard. You can edit your profile to change how
-  your entry looks. Space, a click or a tap starts the run.
-
-
-  You can move with the mouse, WASD, a gamepad's left stick or a virtual stick
-  on a touchscreen, and the mouse pulls double duty by aiming the ship as well.
+  AfterimageDev took the idea from Pacifism, a mode in Geometry Wars. The
+  missing gun is the premise, not an oversight.
 play:
   url: https://needle-run.afterimage-dev.com
   embeddable: false

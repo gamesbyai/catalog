@@ -3,32 +3,29 @@ title: "DEMONETIZED: The Authenticity Purge"
 tagline: Survive waves of enemies in a cyberpunk satire, picking cards and
   upgrades along the way.
 description: >-
-  Move with WASD, aim with the mouse and fire with the left button, while Space
-  or the right button makes you dash. Before any of that, though, every run
-  starts with a choice between three starter cards, and each one works only
-  once.
+  Choose one of three starter cards to begin each run. Each card works only
+  once. You play as T.O.P.E., the moderation AI for a made-up video platform
+  called TheirTube, in a cyberpunk survivor shooter.
 
 
-  Value Override raises your max Signal, Compliance Budget Patch heals you, and
-  Demonetization Order wipes out every enemy.
+  Value Override, a starter card for more max Signal. Compliance Budget Patch, a
+  starter card for healing. Demonetization Order, a starter card for wiping out
+  every enemy. Between runs, you spend money on permanent upgrades in the store.
+  Extra starting cards, more max Signal, a wider pickup range, shorter cooldowns
+  or a damage bonus. Shields such as Legal Armor and Reputation Insurance. A
+  card reroll and an orbiting drone or satellite.
 
 
-  You're T.O.P.E., the moderation AI working for a made-up video platform called
-  TheirTube, in a cyberpunk survivor shooter.
+  Move with WASD and aim with the mouse. Fire with the left button, and press
+  Space or the right button to dash. Press Enter to begin the next run. The
+  interface can be switched between English and Spanish.
 
 
-  Between runs, you spend money on permanent upgrades in the store. You can buy
-  an extra starting card, more max Signal, a wider pickup range, shorter
-  cooldowns or a damage bonus. The store also has a card reroll, an orbiting
-  drone or satellite, and a shield, named things like Legal Armor and Reputation
-  Insurance. Pressing Enter starts the next run.
-
-
-  TheINAOG calls the story satire, in which a platform erases human creators in
-  the name of "brand safety" while its ads keep making money. They drew on the
-  recent debate over demonetization and channel removals, and because they love
-  progression-based games, they set out to make something compact you can play
-  right away. The interface can be switched between English and Spanish.
+  TheINAOG describes the story as satire. In it, a platform erases human
+  creators in the name of "brand safety" while its ads keep making money. They
+  drew on the recent debate over demonetization and channel removals. They love
+  progression-based games, so they wanted something compact and instantly
+  playable.
 play:
   url: https://demonetized.iaen.es
   embeddable: true

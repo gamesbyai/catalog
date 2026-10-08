@@ -2,26 +2,20 @@ slug: blood-blade
 title: Blood&Blade
 tagline: Fight melee duels with directional attacks and blocks in the browser.
 description: >-
-  Type a warrior name, then press Enter the Battlefield to join. Everyone joins
-  one shared multiplayer world, and it holds up to 64 warriors.
+  Type a warrior name and press Enter to join a multiplayer battle.
 
 
-  Every fight here is melee, so it always comes down to blade against blade.
+  Melee-only fights in one shared world for up to 64 warriors.
 
 
-  To swing, you hold left click, and the spot on screen where you click decides
-  which direction the blow comes from. Right click blocks, and it reads your
-  click position the same way, which gives your guard a direction just like your
-  attacks.
-
-
-  You move with WASD while the mouse turns your view. When you want your cursor
-  back, ESC lets it go.
+  Hold left click to swing. The spot you click sets the blow's direction. Right
+  click to block. Your click position sets the guard's direction the same way.
+  Move with WASD. Turn with the mouse. Press ESC to free your cursor.
 
 
   zahrdaniel loves the combat in Mount & Blade and wanted to rebuild it in the
-  browser. The plan was to keep its directional attacks and blocks while
-  limiting the fighting to melee.
+  browser, keeping directional attacks and blocks while limiting fights to
+  melee.
 play:
   url: https://bloodandblade.hexpandify.com
   embeddable: true

@@ -2,22 +2,21 @@ slug: aeralis
 title: Aeralis
 tagline: Fly and fight other players in a fast multiplayer third-person space shooter.
 description: >-
-  Your gun is the Nullifier, fired with the left mouse button. Its ammo has an
-  unlimited reserve, and the right mouse button aims down the sights.
+  Play a shooter where getting around isn't limited to running.
 
 
-  Getting around isn't limited to running, with jump, crouch and slide all
-  mapped to the keyboard. A lightning ability is bound to the F key, separate
-  from the gun. Reload and the map each have a key of their own too.
+  The Nullifier, a gun with unlimited ammo reserve. Jump, crouch and slide
+  movement on the keyboard. Minimap marking an exit point.
 
 
-  The next wave is named Damage, and it deals 60 damage against the 100 health
-  you start with. A minimap marks an exit point.
+  Fire with left mouse button. Aim down sights with right mouse button. Press F
+  for a lightning ability separate from the gun. Reload and open the map on
+  separate keys.
 
 
-  duckocancode describes it as a fast multiplayer third-person shooter that
-  draws on movement shooters like Tribes, Destiny and Titanfall, along with
-  space games like Star Citizen, Starfield and No Man's Sky.
+  duckocancode calls it a fast multiplayer third-person shooter drawing on
+  movement shooters like Tribes, Destiny and Titanfall, plus space games like
+  Star Citizen, Starfield and No Man's Sky.
 play:
   url: https://playaeralis.com
   embeddable: true

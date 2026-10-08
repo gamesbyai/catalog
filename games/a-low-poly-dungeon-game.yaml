@@ -3,28 +3,31 @@ title: A Low Poly Dungeon Game
 tagline: Fight skeletons and find three keys in a seeded first-person dungeon to
   claim the crown.
 description: >-
-  Every dungeon is built from a seed, and the same seed always produces the same
+  Each dungeon grows out of a seed, and the same seed always produces the same
   layout, boss included. You can enter your own seed or let the game generate
   one, then explore a first-person labyrinth of rooms, locked gates, and
   skeletons.
 
 
-  The dungeon has three zones, each sealed by a gate. Bronze, Silver, and Gold
-  keys sit in chests in the zone before each gate. The Gold key opens the Grand
-  Hall, where the gate shuts behind you. Defeat the boss, take the key to the
-  treasure vault, and pick up the crown to end the run.
+  Three zones, each behind a locked gate. Bronze, Silver, and Gold keys, each in
+  a chest before its gate. The Grand Hall, opened by the Gold key, where the
+  gate shuts behind you. A boss fight inside the Grand Hall. Armored skeletons
+  that hit harder, and some that throw a slow crush. Potions that restore
+  health, and scrolls that fuel a fireball. Treasure vault key, taken once the
+  boss falls, and the crown ending the run.
 
 
-  Combat uses stamina. A tap is a quick slash, holding the attack button charges
-  a heavy chop, and raising a guard at the right moment parries. Armored
-  skeletons hit harder, and some throw a slow crush that breaks through a guard,
-  so you step out of the way. Health potions restore health, and scrolls fuel a
-  fireball.
+  Move with WASD or the arrow keys. Tap attack for a quick slash, or hold it and
+  release for a heavy chop. Combat uses stamina. Raise your guard at the right
+  moment to parry. A slow crush breaks through a raised guard, so step out of
+  its path. Difficulty can be changed mid-run, and all keys can be remapped. On
+  touch screens, walk with the virtual stick, drag to look, and tap the
+  on-screen attack and guard buttons.
 
 
-  Difficulty can be changed mid-run, and all keys can be remapped. Touch
-  controls give you a virtual stick, drag-to-look, and on-screen attack and
-  guard buttons. The creator lists the average session as a few minutes.
+  Several itch.io asset packs supply the art. The audio combines generated sound
+  from ElevenLabs and Suno with CC0 assets from Kenney and OpenGameArt. The
+  creator lists the average session as a few minutes.
 play:
   url: https://fynbosexplorer.itch.io/a-low-poly-dungeon-game
   embeddable: false

@@ -3,23 +3,23 @@ title: Racernaut
 tagline: Drive through an endless generated city, choosing turns at every
   junction to stay alive.
 description: >-
-  A single wrong turn ends your run in Racernaut, so every junction counts. The
-  city isn't waiting for you either, since it generates itself as you drive and
-  the streets stream in just ahead of the car.
+  One wrong turn ends your run in Racernaut, a race through an endless city.
 
 
-  Press Space and you're off, steering with A and D while you hold W to boost
-  and S to brake. C switches the camera.
+  Junctions, each a split-second bet on which turn to take. Streets built as you
+  drive, streaming in just ahead of the car. Opening rows of city, built before
+  the first drive.
 
 
-  Before you can drive, the first rows of city get built. The music is credited
-  to StudioKolomna from Pixabay, and the ambient sound to ZapSplat.
+  Press Space to start driving. Steer with A and D, hold W to boost, and hold S
+  to brake. Press C to switch the camera.
 
 
-  rameshvel had toyed with procedural generation over the years but never built
-  anything serious with it. According to them, AI is what changed that. Their
-  view is that imagination is now most of what you need, and development
-  experience on top of it helps even more.
+  rameshvel had dabbled in procedural generation for years without building
+  anything serious with it. According to them, AI changed that, and imagination
+  is now most of what you need. Experience as a developer on top of that helps
+  even more. Credit for the music goes to StudioKolomna on Pixabay, and the
+  ambient sound to ZapSplat.
 play:
   url: https://racernaut.com
   embeddable: true

@@ -2,36 +2,23 @@ slug: copycat
 title: Copycat
 tagline: Race a shadow cat across short black-and-white platform maps
 description: >-
-  Hit Space or click to jump, then press again in midair for a double jump that
-  sends your little pixel cat into a barrel-roll.
+  Press Space to jump, then press again midair for a double jump with a barrel
+  roll. The race is against a shadow copy of your cat that runs alongside you.
 
 
-  You're racing your own shadow, a copy of the cat that runs beside you. The
-  maps are short and dense. Platforms, spikes, floating ledges and collectible
-  echoes are seeded for each race, so a map stays familiar while shifting a
-  little every time you play it.
+  Short, dense maps of platforms, spikes and floating ledges. Collectible echoes
+  that count toward your final time. Ledge grabs, plus jump buffering that
+  catches early presses. Seeded layouts that stay familiar but shift slightly
+  between races. Local records of wins, losses, current streak and best time,
+  plus ghost data kept between sessions. A single HTML file on a 1200x600
+  canvas, with Web Audio sound effects and multi-touch input.
 
 
-  Echoes are more than decoration, because the ones you grab feed into your
-  final time. You can also grab onto edges, and jump buffering catches presses
-  that land a little early.
+  Click to jump as well. When a race goes wrong, press R. The restart is instant
+  and skips the menus entirely.
 
 
-  When a race goes wrong, restarting is instant and skips the menus entirely,
-  and R is the reset key.
-
-
-  The game keeps a thorough record of you between sessions. Your ghost data is
-  saved, and local stats track wins, losses, your current streak and your best
-  time. Between the stored shadow and that running tally, every race you finish
-  leaves something behind to beat.
-
-
-  It's a single HTML file running on a 1200x600 canvas, with Web Audio sound
-  effects and multi-touch input.
-
-
-  webXOS lists it as under development, with more modes and new shadow mechanics
+  webXOS lists it as under development, with more modes and shadow mechanics
   planned. According to the creator, AI assisted with the code, graphics, sounds
   and text.
 play:

@@ -3,27 +3,28 @@ title: Riders Of The Nine Planes
 tagline: Ride a steed through dungeons, charging at targets to build energy and
   cast spells.
 description: >-
-  Ride with WASD or the arrow keys to build energy from motion, then press 1 to
-  6 to commit a charge. Your mount hurtles at a target, sometimes a wall, and
-  releases the spell you picked. Hidden spells are added to those number picks
-  later.
+  Ride a steed through a dungeon, building energy from motion as you go. The
+  game opens as a roguelike and grows toward a full RPG. Standing still leaves
+  your rider vulnerable, so each run loops through riding, discharging, and
+  riding again while you plan a route.
 
 
-  A stationary rider is vulnerable, so each run is a loop of riding,
-  discharging, and riding again while you plan your route. The game begins as a
-  roguelike dungeon crawl and grows toward a full RPG. Trainers can be reached
-  with T.
+  Optional deeper systems. Arcade-style smashing through the dungeon. Hidden
+  spells, added to the number picks later. The title Emperor Of The Known
+  Multiverse, for a cavalier kept alive.
 
 
-  You can skip the deeper systems and smash around the dungeon, or keep one
-  cavalier alive and aim for the title Emperor Of The Known Multiverse. Press J
-  to save your journey and continue it from the title screen.
+  Ride with WASD or the arrow keys. Press 1 to 6 to commit a charge, and your
+  steed hurtles toward a target, sometimes a wall, releasing the spell you
+  picked. Press T to reach trainers. Press J to save your journey, then continue
+  it from the title screen.
 
 
-  The creator says the ordinary stairs are not working in the current build, so
-  leaving the first plane depends on finding a portal. The M key mutes music and
-  also intercepts that letter in equipment slots. The music is not AI made; only
-  the sound effects are procedural.
+  According to the creator, the ordinary stairs are out of action in the current
+  build, so leaving the first plane depends on finding a portal.
+
+
+  The music is not made with AI, and only the sound effects are procedural.
 play:
   url: https://exedexes1.itch.io/riders-of-the-nine-planes
   embeddable: false

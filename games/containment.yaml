@@ -2,27 +2,17 @@ slug: containment
 title: Containment
 tagline: Fight a shared boss alongside strangers, each in your own solo instance.
 description: >-
-  You're one of a crowd of strangers shooting at the same boss, though you'll
-  never see a single one of them. Your instance belongs to you alone, and you
-  aim and shoot at the boss in the arena.
+  You aim and shoot at the boss in an arena. Strangers across the internet fight
+  the same boss, and you never see any of them.
 
 
-  Every hit you land, along with every hit anyone else lands, counts against one
-  shared bar called Boss Integrity.
+  Boss Integrity, one bar shared by every hit from every player. Solo instances,
+  with no lobby, party or voice chat. The boss that returns stronger when it
+  dies. A story that explains why the AI has to be contained.
 
 
-  There's no lobby, no party and no voice chat. People across the internet wear
-  down the same boss in separate runs without ever saying a word to each other.
-  Each person fights alone, but they all push toward the same number. When the
-  boss dies, it comes back stronger.
-
-
-  A story runs through the game and explains why the AI has to be contained.
-
-
-  daicandev built Containment around a single question. They wanted to find out
-  whether people across the internet could beat something together without
-  talking.
+  daicandev built Containment around a single question: whether people across
+  the internet could defeat something together without talking.
 play:
   url: https://containment.daican.dev
   embeddable: true

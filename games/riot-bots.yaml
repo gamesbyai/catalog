@@ -3,30 +3,19 @@ title: Riot Bots
 tagline: Fight as a robot in a Martian colony, solo or allied, against an
   invading Dark AI.
 description: >-
-  Ronin is the bot selected from the start. You can choose from four bots.
+  Fight alone or form alliances to defend the colony. A hostile Dark AI is
+  invading a Martian base during a riot to take over the energy center. The
+  ending is open-ended.
 
 
-  Blunt is the heavy tank at 28 weight, while Taichi is a balanced controller at
-  21. Ronin is a mid-weight striker at 20, while 2Claws is a mid-weight
-  controller at 16, the lightest of the four.
+  Four bots to choose from, each with a class and stats for speed, defense,
+  power and weight. Blunt, a heavy tank. Taichi, a balanced controller. Ronin, a
+  mid-weight striker and duelist who applies pressure from the front. 2Claws, a
+  controller and the lightest of the four.
 
 
-  Every bot has a name, a class and stats for speed, defense, power and weight,
-  so you can compare them before you commit.
-
-
-  Ronin has 28.9 speed, 12 defense, 20 power and 20 weight. Its card calls it a
-  duelist that applies pressure from the front. The thin defense next to that
-  high speed fits a bot meant to keep pushing forward.
-
-
-  The story puts you in a riot at a Martian base, where a hostile Dark AI is
-  invading to take over the energy center. You can fight on your own or form
-  alliances to defend the colony, and the ending is left open.
-
-
-  PanPiller likes battlebots and hardware. Riot Bots was a first try at 3D game
-  development.
+  PanPiller, who enjoys battlebots and hardware, made Riot Bots as a first
+  attempt at developing a game in 3D.
 play:
   url: https://riotbots.up.railway.app
   embeddable: true

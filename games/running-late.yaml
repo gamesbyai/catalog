@@ -3,33 +3,25 @@ title: RUNNING LATE
 tagline: Sprint and wall-jump through 30 commuter rooms while deaths add time to
   your clock
 description: >-
-  An ordinary commute gets stretched into 30 rooms with a 24-minute clock
-  running the whole way. You run, hold the jump button longer when you want more
-  height, and bounce back and forth between walls. Each room has a validator you
-  have to land on before the exit unlocks.
+  An ordinary commute is stretched into a chain of rooms, with a 24-minute clock
+  running the whole way. You run and bounce between walls, and each room has a
+  validator you land on before its exit unlocks.
 
 
-  The rooms bring in moving trains, timed gates and pressure plates, and the
-  mechanics arrive in five tiers that start with plain jumping and end with
-  everything combined. Coyote time and input buffering are both in there, along
-  with a wall-slide and the wall-jump.
+  Thirty rooms picked by a journey seed from 35 hand-built modules. Five tiers
+  of mechanics, from plain jumping to everything combined. Moving trains, timed
+  gates and pressure plates. Coyote time, input buffering, wall-slide and
+  wall-jump. Local, Express and Shortcut choices between legs, with no going
+  back. Twenty seconds added per death, on a clock that doesn't reset on
+  restart. Same-seed retries to shave down a commute, with all 30 splits,
+  deaths, route history and arrival records kept.
 
 
-  Dying is instant and a failed room comes back in under a quarter of a second,
-  but each death still adds twenty seconds to a clock that doesn't reset when
-  you do.
-
-
-  Between legs of the trip you pick Local, Express or Shortcut, and there's no
-  going back on that choice. The 30 rooms themselves get pulled from 35
-  hand-built modules by a journey seed. You can edit or copy that seed, rerun
-  the same one, or start a new commute with a fresh seed.
-
-
-  Afterward the game keeps all 30 splits, your route history, your deaths and a
-  record of how you arrived, and paired with same-seed retries that turns each
-  commute into something you can come back and shave down. Landscape touch
-  controls are included too.
+  Move with A and D, or the arrow keys. Hold W, Space or Up for a higher jump.
+  Die and the room restarts at once, in under a quarter of a second. Choose your
+  route with a click, a tap, or keys 1, 2 or 3. Edit or copy the journey seed,
+  or start a new commute with a fresh one. Use the touch controls in landscape
+  orientation.
 
 
   0x00000000 used generative AI to help with the code, the copy, three transit

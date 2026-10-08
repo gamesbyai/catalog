@@ -2,16 +2,16 @@ slug: diggy-dash
 title: Diggy Dash
 tagline: Tap popping Diglett in 3D holes before the timer runs out.
 description: >-
-  The field is a 3x3 grid of holes. Diglett heads rise out of the holes, and you
-  tap them to score.
+  Playing alone, you tap Pokémon Diglett heads to score as they rise out of a
+  3x3 grid of holes.
 
 
-  The clock starts at 45 seconds, and the goal is to tap as many Digletts as you
-  can before it reaches zero.
+  A clock that starts at 45 seconds. Tapping as many Digletts as you can before
+  the clock reaches zero. Climbing a leaderboard of your scores.
 
 
-  Scores go onto a leaderboard that you try to climb. The creator chose Diglett
-  because a creature popping out of holes suits the whack-a-mole format.
+  IlaneLopez picked Diglett because popping out of holes suits a whack-a-mole
+  format.
 play:
   url: https://diggy-dash.vercel.app
   embeddable: true

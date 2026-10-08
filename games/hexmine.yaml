@@ -1,25 +1,24 @@
 slug: hexmine
 title: HexMine
 tagline: Minesweeper on a hex grid, with a safe first click and three board sizes.
-description: "Every tile in this Minesweeper variant is a hexagon, so each
-  number tells you how many of the six touching tiles hold a mine.
+description: "In this Minesweeper variant, every tile is a hexagon, and each
+  number counts the mines among the six tiles touching it.
 
 
-  Use the pick tool to open tiles and the flag tool to mark mines. Hold a tile
-  to flag it. You can pick a small, medium or large board, and there are
-  settings for sound, animations, the timer and the language.
+  Small, medium and large boards to pick from. An always-safe first click. Blank
+  areas unfolding in rolling waves across the board. Every mine revealed on a
+  lost board. Game tallies and personal bests. 20 achievements to earn, and a
+  firework celebration on a win.
 
 
-  Your first click is always safe. Blank areas open up in rolling waves.
+  Open tiles with the pick tool, and mark mines with the flag tool. Hold down a
+  tile to place a flag on it.
 
 
-  Lose a board and the mines are revealed. The game also tallies your games
-  played and personal bests, and it has 20 achievements to earn.
-
-
-  According to the creator, GPT-3 wrote the first version and Claude Opus 5 then
-  did a technical revision that added the board solver and auto-sweep. It's
-  released as CC0."
+  According to Kevin MacLeod, an AI model wrote the first version of the game. A
+  later technical revision also added a board solver and auto-sweep. The game
+  runs off one HTML file and a short solver script. The game is released under
+  CC0."
 play:
   url: https://danger.academy/HexMine/
   platforms:

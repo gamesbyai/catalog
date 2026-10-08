@@ -3,24 +3,23 @@ title: The Underground
 tagline: Explore generated tunnels, open locked doors, and find artifacts before
   time runs out.
 description: >-
-  Each run starts with the clock at a specific 03:00:00, and you've got until it
-  ticks over to 05:00:00 to find what's hidden underground before time runs out.
+  Each run starts with the clock at 03:00 and ends when it reaches 05:00. Until
+  then, you explore a network of underground tunnels and search for whatever is
+  hidden there.
 
 
-  The tunnel network is procedurally generated, and the creator describes the
-  system as endless. You explore it, get through locked doors and hunt for
-  artifacts tucked out of sight. Clues that other players leave behind get
-  shared into your world too.
+  Procedurally generated tunnels, described by the creator as endless. Locked
+  doors you have to get through. Artifacts hidden out of sight. Other players'
+  clues, shared into your world too. A battery-powered flashlight. A camera for
+  photographing evidence. A crowbar with five pries at the start.
 
 
-  You carry three tools. The flashlight runs on battery and its brightness
-  changes with R, while the camera is there for photographing evidence. The
-  crowbar starts with five pries. Pressing N pulls up a notebook.
+  Press R to change how bright the flashlight is. Press N to open the notebook.
 
 
-  mythcitygames made it after riding subway trains around the world and always
-  wondering what's down those dark tunnels they passed. They wanted to find out
-  what lies down there, such as abandoned stations and old bunkers.
+  mythcitygames made the game after riding subway trains around the world. They
+  had always wondered what lies down the dark tunnels the trains passed, and
+  wanted to find out what's there, such as abandoned stations and old bunkers.
 play:
   url: https://mcg-urbex.web.app
   embeddable: true

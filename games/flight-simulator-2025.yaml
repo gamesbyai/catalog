@@ -2,21 +2,18 @@ slug: flight-simulator-2025
 title: Flight Simulator 2025
 tagline: Take off, fly over a shared world and dogfight other pilots online.
 description: >-
-  Type a name and join, and you'll start on an airport runway. Push it up with W
-  and ease it back with S, then roll and pitch with the arrow keys while A and D
-  work the rudder.
+  Type a name to join and start on an airport runway. Once you're off the
+  ground, you fly over a shared world alongside other players.
 
 
-  Once you're off the ground you're sharing the sky with other players, and you
-  can take them on in a dogfight, firing missiles with Space.
+  Three missions of shooting down all the balloons, shooting down other planes
+  and flying to space. Dogfights in the air. Toggles for landing gear, engine
+  and camera view. In-game chat and a leaderboard.
 
 
-  Your three missions are to shoot down all the balloons, shoot down other
-  planes and fly to space. Shift switches on something called SuperTURBO XXL.
-
-
-  You can toggle the landing gear, engine and camera view, and the game also has
-  a chat and a leaderboard.
+  Push W to throttle up and S to ease back. Use the arrow keys to roll and
+  pitch. Use A and D for the rudder. In a dogfight, press Space to fire
+  missiles. Press Shift to switch on something called SuperTURBO XXL.
 play:
   url: https://fly.pieter.com
   embeddable: true

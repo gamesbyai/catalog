@@ -3,28 +3,20 @@ title: Portal-Runner
 tagline: Run through five parallel worlds, dodging vanishing obstacles and
   leaping through portals.
 description: >-
-  You play as a runner who starts out in a city. Your score climbs as you run
-  and you collect coins along the way. The world you're in is called City Night.
+  Playing alone as a runner, you start out in a city called City Night. Your
+  score goes up as you run through the city.
 
 
-  You sprint down the road, collecting coins and steering around barriers
-  stacked in your path.
+  Portals that carry you out of the city. Five parallel worlds, each with its
+  own rules. Obstacles that vanish as you get close. A golden exit into the
+  multiverse.
 
 
-  Some of those obstacles disappear right in front of you, even on a stretch
-  you've already run.
+  You run down the road and pick up coins as you go. You dodge barriers as they
+  pile up ahead.
 
 
-  Portals are your way out of the city. They carry you across five parallel
-  worlds, and each one swaps out the rules and feel rather than just repainting
-  the background.
-
-
-  Eventually a golden exit shows up and pulls you out into the multiverse.
-
-
-  tempest_4754 modeled the endless-runner core after Temple Run and Subway
-  Surfers.
+  tempest_4754 drew the endless-runner core from Temple Run and Subway Surfers.
 play:
   url: https://portal-runner.vercel.app
   embeddable: true

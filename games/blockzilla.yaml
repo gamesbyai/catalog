@@ -2,12 +2,19 @@ slug: blockzilla
 title: Blockzilla
 tagline: Play a giant kaiju smashing New York while evolving new powers each run.
 description: >-
-  You drag to move the Kaiju through the city. The creator pitches it as Vampire
-  Survivors meets Rampage, where you wreck buildings while evolving new powers.
+  A giant Kaiju rampages through New York City. The creator pitches it as
+  Vampire Survivors meets Rampage, and you destroy the city rather than save
+  humanity.
 
 
-  The creator says they loved playing Rampage as a kid and fused it with
-  roguelike mechanics. Instead of saving humanity, you destroy the city.
+  Buildings across the city to wreck. New powers to evolve during play.
+
+
+  Drag to move the Kaiju through the streets of New York City.
+
+
+  The creator says they loved playing Rampage in childhood and fused it with
+  roguelike mechanics.
 play:
   url: https://blockzilla.io
   embeddable: true

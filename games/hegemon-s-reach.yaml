@@ -2,38 +2,29 @@ slug: hegemon-s-reach
 title: Hegemon's Reach
 tagline: Build a colony with production chains, then raise an army to crush a rival.
 description: >-
-  The long game here is a colony that runs like clockwork, and then, once your
-  war machine is ready, a win over a rival colony that's been building toward
-  the same thing. You start at a headquarters with 40 planks and 24 stone, plus
-  8 hammers, 8 shovels, 6 pickaxes, 4 axes and 2 saws.
+  Defeat a rival colony once your war machine is ready. You build a colony over
+  a long game, starting from a headquarters stocked with planks, stone and
+  tools. The rival has been working toward the same goal.
 
 
-  Control is indirect, so you don't order individual workers around. You place
-  buildings and steer where they work, and the colony takes it from there.
+  Four building categories, covering industry, food, civil and military.
+  Woodcutter's huts, sawmills, forester's huts and stonecutter's huts. Coal and
+  iron mines next to surveyed deposits. Sapling replanting by foresters on empty
+  grass. A warning when a stonecutter's outcrops run out. Faster mining on
+  bread, meat or fish, and faster again with a more varied diet. Industry
+  buildings, each priced in planks and stone.
 
 
-  You can build in four categories: industry, food, civil and military.
+  Place buildings and steer where they work, and the colony takes it from there.
+  You don't order individual workers around. Use Move Area to retarget a
+  woodcutter's or stonecutter's area. A stonecutter that runs out of outcrops
+  sits idle until you move it. Click the headquarters to see everything it
+  stores, and set the clock to 1x, 2x or 4x.
 
 
-  Industry covers the woodcutter's hut, sawmill, forester's hut, stonecutter's
-  hut, coal mine and iron mine, each priced in planks and stone. Woodcutters and
-  stonecutters work inside an area you can retarget with a Move Area button, and
-  a stonecutter that runs out of outcrops warns you and sits idle until you move
-  it. Foresters, meanwhile, replant saplings on empty grass.
-
-
-  Mines are a bit pickier than the huts, needing a spot next to a surveyed
-  deposit and digging faster on bread, meat or fish, with a more varied diet
-  speeding them up even more.
-
-
-  Clicking the headquarters shows everything it stores. The clock runs at 1x, 2x
-  or 4x.
-
-
-  maxgeithe describes it as modeled on classic settlers games. They say games
-  like this were a childhood love and their entry into tech. They also put part
-  of it down to peer pressure from other developers in their X bubble.
+  maxgeithe describes it as patterned after the classic Settlers games. They say
+  games like this were a childhood love and their way into tech. They also put
+  part of it down to peer pressure from fellow developers in their X bubble.
 play:
   url: https://hegemon.max.vodka
   embeddable: true

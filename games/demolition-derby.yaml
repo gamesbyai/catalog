@@ -2,26 +2,21 @@ slug: demolition-derby
 title: Demolition Derby
 tagline: Ram other players' cars in a dusty arena until one is left running
 description: >-
-  Your job here is to ram other cars until they're wrecked. Each round runs on a
-  countdown that starts close to four minutes. Shield-shaped pickups are
-  scattered around the arena.
+  Ram other cars in an arena until they're wrecked, alongside strangers online.
+  Rounds run on a countdown starting close to four minutes.
 
 
-  The lineup has muscle cars and vans, plus a wreck built to look like a dog's
-  face. Your hull wears down as the dents pile up.
+  Muscle cars, vans and a dog-faced wreck. Shield-shaped pickups scattered
+  around the arena. Hull wear from dents piling up. Points on a standings board
+  ranking the leaders. A feed calling out who just wrecked whom.
 
 
-  Points are tracked on a standings board that ranks the leaders. Hold Tab to
-  see the full board. A feed calls out who just wrecked whom.
+  Press Shift to burn boost. Boost refills on its own over time. Press Space to
+  pull the handbrake. Hold Tab for the full board.
 
 
-  Boost refills on its own over time and you burn it with Shift, while Space
-  pulls the handbrake.
-
-
-  The creators describe it as dumb fun, smashing cars with a bunch of strangers
-  online. They point to FlatOut 2's demolition derby, a favorite at their old
-  LAN parties, as the inspiration.
+  Inspired by FlatOut 2's demolition derby, a favorite at the creators' old LAN
+  parties. They call this game just dumb fun.
 play:
   url: https://demolition-derby.xyz
   embeddable: false
