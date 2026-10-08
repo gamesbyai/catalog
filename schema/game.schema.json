@@ -526,7 +526,7 @@
       "then": {
         "properties": {
           "description": {
-            "minLength": 600
+            "minLength": 250
           }
         }
       }
