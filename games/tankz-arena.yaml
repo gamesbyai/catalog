@@ -3,30 +3,27 @@ title: "Tankz: Arena"
 tagline: Drive a tank through waves of enemies, pick upgrades, and fight bosses
   until you die.
 description: >-
-  You control a single tank. Enemy tanks are already rolling in around scattered
-  wall blocks, and your job is to keep that tank alive through wave after wave
-  until it's finally destroyed. The creator cheerfully admits you'll die
-  eventually, ideally somewhere after wave one.
+  You control a single tank. Enemy tanks come in wave after wave, and you try to
+  last as long as you can. The creator says you'll die at some point, ideally
+  after wave one.
 
 
   You steer with WASD and aim with the mouse, firing the main gun on left-click
   and rockets on right-click. Shift gives you a boost, and E sets off
-  Multi-Burst. A boss shows up every five waves.
+  Multi-Burst. A boss comes every five waves.
 
 
   Each time you level up, you're offered three random upgrades and you take one
   of them.
 
 
-  Now and then you'll find chain lightning lying around as a pickup, and
-  according to the creator each one charges up your next thirty seconds, with
-  the bold promise that those seconds become your favorite memory.
+  Now and then you'll find a chain lightning pickup, and according to the
+  creator each one charges up your next thirty seconds.
 
 
-  Durian Arcade made it as a fast arcade roguelite tagged Action and Survival,
-  with each run looping between outlasting waves, grabbing upgrades and taking
-  on whichever boss comes next. According to the creator, AI worked as an
-  assistant on the code, graphics, sounds and text.
+  Durian Arcade made this quick arcade roguelite, an Action and Survival game
+  where each run goes through waves, upgrades and bosses. According to the
+  creator, AI worked as an assistant on the code, graphics, sounds and text.
 play:
   url: https://durian-arcade.itch.io/tankz-arena
   embeddable: false

@@ -2,21 +2,17 @@ slug: sumoball-io
 title: SumoBall.io
 tagline: Bump rival sumo balls off the arena to be the last one standing.
 description: >-
-  SumoBall.io is a shoving match between balls, played online. You control a
-  sumo ball in a multiplayer arena and try to knock every other player off the
-  platform, and the last ball still on it wins.
+  You control a sumo ball in an online arena and try to knock every other player
+  off the platform.
 
 
-  The creator took the idea from the sumo minigame in Fusion Frenzy and the
-  bumper balls in Mario Party, then built the rest by feel. They made it with
-  Codex, with Three.js rendering the 3D arena, and it ended up 371st of 945 in
-  Vibe Jam 2026.
+  Fast multiplayer rounds. Easy drop-in and drop-out play. A win for the last
+  ball left on the platform.
 
 
-  Everything is set up for quick multiplayer rounds, which is where the project
-  started. Rounds are fast, matches end quickly, and players can drop in or out,
-  on a phone as well as in a desktop browser, so little stands between you and
-  the next bump.
+  netpro2k took the idea from the sumo minigame in Fusion Frenzy and the bumper
+  balls in Mario Party. The project started with quick multiplayer rounds, and
+  they built the rest by feel.
 play:
   url: https://sumoball.io
   embeddable: true
@@ -54,7 +50,7 @@ media:
     - games/sumoball-io/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-09-29
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:vibejam-2026

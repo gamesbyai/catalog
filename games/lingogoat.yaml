@@ -2,21 +2,15 @@ slug: lingogoat
 title: LingoGoat
 tagline: Feed a hungry goat by speaking words in a new language.
 description: >-
-  LingoGoat is a casual language-learning game built around a goat that needs
-  feeding. You speak words aloud in the language you are practicing, and correct
-  speech is how the goat gets its meal, so learning happens through your voice.
+  Feed a hungry goat by saying words in a new language. Get the word right and
+  the goat eats.
 
 
-  The simple premise is the appeal: a hungry goat replaces the flashcards and
-  quizzes of a typical study app, and your voice replaces the keyboard. It is a
-  solo game made with Claude Code, ranked 202nd of 945 at Vibe Jam 2026, and
-  since it runs on phones too, practice can happen anywhere you have a
-  microphone.
+  Speaking as the only input. Pronunciation practice disguised as feeding time.
+  Recall over flashcards and typing. A goat that waits on every attempt.
 
 
-  Speaking is the main input, which keeps the focus on pronunciation and recall.
-  A session is a series of spoken attempts, with the hungry goat waiting on each
-  one.
+  Play anywhere you have a microphone, on your own.
 play:
   url: https://lingogoat.com
   embeddable: true
@@ -54,7 +48,7 @@ media:
     - games/lingogoat/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-09-29
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:vibejam-2026

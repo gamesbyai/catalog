@@ -2,35 +2,22 @@ slug: graviton
 title: GRAVITON
 tagline: Orbit a star and bend photon beams through gravity to destroy enemy waves
 description: >-
-  Your photon beams don't fly straight in this 3D orbital arena, because they
-  travel on curved paths through the gravity around a star. You circle that star
-  and slingshot past gravity wells while waves of enemies come at you.
+  Circle a star in a 3D orbital arena and fire photon beams that bend through
+  its gravity at waves of enemies.
 
 
-  It's the pull that shapes every shot you fire. Your dodges bend with it as
-  well, and so do your slingshot maneuvers. With the physics doing that much of
-  the steering, aiming means thinking about where the curve carries the beam
-  rather than where the enemy is right now.
+  Shots that curve like light. Slingshots past gravity wells. Dodges that bend
+  with the pull. Aiming at where the curve carries the beam, not where the enemy
+  is now.
 
 
-  You thrust the ship with WASD or the arrow keys while the mouse handles
-  aiming, and a left click sends out a photon, a shot that gravity bends like
-  light.
+  Thrust with WASD or the arrow keys and aim with the mouse. Left-click to fire
+  a photon. Press Space for a gravity boost. Shift raises your mass and tightens
+  your orbit.
 
 
-  Space kicks in a gravity boost. Shift is the odd one out, since it raises your
-  ship's mass, which tightens your orbit around the star.
-
-
-  sivaguru_shiva built the game around orbital mechanics and gravitational
-  lensing, wanting gravity to be the core mechanic instead of something sitting
-  in the background.
-
-
-  The title screen is pretty much all black, with GRAVITON glowing in gold above
-  the subtitle Orbital Slingshot Arena. Under that sit a Launch button and a How
-  to Play page. A short list of the controls is printed in small type at the
-  bottom, and you can read the keys before you've even pressed Launch.
+  sivaguru_shiva built it around orbital mechanics and gravitational lensing,
+  with gravity as the core mechanic.
 play:
   url: https://graviton-space.netlify.app
   embeddable: true
@@ -75,7 +62,7 @@ media:
     - games/graviton/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-10-02
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:vibejam-2026

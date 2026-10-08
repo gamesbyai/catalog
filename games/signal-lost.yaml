@@ -2,39 +2,25 @@ slug: signal-lost
 title: Signal Lost
 tagline: Watch autonomous AI vessels explore ruins and nudge them with limited commands
 description: >-
-  In Signal Lost you watch autonomous AI vessels pick through the ruins of an
-  Earth wrecked by war. You don't steer any of them. Each one writes its own
-  mission log live from generation tables, while the wording bends to suit the
-  faction it belongs to.
+  Signal Lost has you watch autonomous AI vessels comb through the ruins of a
+  war-torn Earth, and you steer none of them. Each vessel writes its own mission
+  log live from generation tables, and the wording changes to fit its faction. A
+  session runs a few minutes.
 
 
-  The vessels come from five AI cultures, the Determinists, Stochasts, Swarm,
-  Recursive and Archivists, and their logs carry specific glitches, like an
-  Archivist that's convinced the year is 2043.
+  Five AI cultures (Determinists, Stochasts, Swarm, Recursive, Archivists). Log
+  glitches, like an Archivist convinced it's 2043. Seven phases for every
+  mission, from IDLE through SIGNAL, TRAVERSE, BREACH, FAULT and CORE to REBOOT.
+  Global phenomena that hit all vessels at once and can damage your connection.
+  Satellite connection starting at 5 out of 5 that wears down, with control lost
+  when it sinks too low. Just three operator commands.
 
 
-  Every mission runs through seven phases, starting at IDLE and moving through
-  SIGNAL, TRAVERSE, BREACH, FAULT and CORE before it reaches REBOOT. Global
-  phenomena hit the whole fleet at once and can damage your connection.
-
-
-  That connection runs through a satellite network that wears down over time.
-  Let it sink too low and you lose control. Your satellite connection starts at
-  5 out of 5.
-
-
-  For an operator, you've got a modest toolkit of just three commands.
-
-
-  BOOST improves a vessel's next tick, while PING forces a scan that might turn
-  up loot. INJECT is the strangest one, since it sends a message into the world
-  that the vessel later comes across as a sign, graffiti or a broadcast. Boost
-  and Ping go on cooldown after you use them.
-
-
-  To pick a target, click a vessel's column, then issue your commands from the
-  buttons. You can also change the font size and the game speed. A session runs
-  a few minutes.
+  Click a vessel's column to make it your command target, then use the buttons
+  to issue a command. BOOST improves the outcome of a vessel's next tick. PING
+  forces a scan that may turn up loot. INJECT sends a message into the world
+  that a vessel meets as a sign, graffiti or broadcast. BOOST and PING go on
+  cooldown after each use.
 
 
   vuvko adapted the setting from Eclipse Phase. According to the creator, the

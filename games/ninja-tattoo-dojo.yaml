@@ -2,22 +2,16 @@ slug: ninja-tattoo-dojo
 title: Ninja Tattoo Dojo
 tagline: Throw shuriken at kanji to carve out wildly questionable tattoos.
 description: >-
-  Ninja Tattoo Dojo is a browser shooter where the target is a kanji character
-  and the weapon is a shuriken. You aim and throw, and each hit lands on the
-  symbol and turns into a tattoo of dubious wisdom. The setup is a dojo, and the
-  goal is to keep your throws accurate.
+  Aim, throw your shuriken at a kanji character, and carve out a wildly
+  questionable tattoo.
 
 
-  The game takes its tone from the over-the-top mini-games in the Yakuza series,
-  where a silly premise gets played completely straight. That deadpan approach
-  carries through the whole concept, pairing precise ninja action with the idea
-  of permanent body art that probably should not exist. The creator also cites a
-  fondness for odd kanji tattoos as a driver of the idea.
+  A dojo as the setting. Accuracy as the whole challenge. Deadpan humor in the
+  spirit of the Yakuza mini-games. Tattoos that probably shouldn't exist.
 
 
-  It was built with Three.js and entered in Vibe Jam 2026. The creator's
-  statement names Codex as the tool used to make it. It is designed to work on
-  mobile as well as desktop browsers.
+  The creator has a fondness for odd kanji tattoos, and named Codex as the tool
+  used to make it.
 play:
   url: https://deluxe-queijadas-4bcdc2.netlify.app
   embeddable: true
@@ -54,7 +48,7 @@ media:
     - games/ninja-tattoo-dojo/shot-2
 dates:
   added: 2026-10-01
-  updated: 2026-10-01
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:vibejam-2026

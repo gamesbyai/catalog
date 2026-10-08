@@ -3,25 +3,20 @@ title: Overthrow
 tagline: Battle other players in a physics-driven king of the hill arena to hold
   the top score.
 description: >-
-  You play on a crowded hill, and staying near the peak is how you earn points.
-  Everyone else in the arena wants that same spot, so it turns into a
-  physics-driven king of the hill where you bump rivals off while guarding the
-  ground you've taken.
+  Hold the peak of a crowded hill to earn points while everyone else tries to
+  bump you off it.
 
 
-  Your main tool is a boost on Space, meant for shoving other players off the
-  slope. Powerups are scattered around to give you an edge.
+  Physics-driven king of the hill against other players. A boost for shoving
+  rivals off the slope. Powerups scattered around the hill. Rounds on a clock,
+  won by whoever leads at the end. Hills from Bliss to Olympus.
 
 
-  The action is fast, and each round asks you to decide when to hold the top and
-  when to push the challengers out of your way. Each round runs on a clock, and
-  whoever is in the lead when it runs out comes out ahead. Anyone knocked off
-  the top gets overthrown. The hill ranges from Bliss to Olympus.
+  Press Space to boost.
 
 
-  forkexecwait had carried the idea around for a while before turning it into a
-  finished game. They drew on Super Mario Party for a similar feel, casual and
-  whimsical rather than grim.
+  forkexecwait carried the idea for a while and aimed for a casual, whimsical
+  feel like Super Mario Party.
 play:
   url: https://overthrow.gg
   embeddable: true

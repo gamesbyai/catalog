@@ -2,20 +2,15 @@ slug: news-ninja
 title: News Ninja
 tagline: Slice real headlines as they fly past and let the satirical ones go by.
 description: >-
-  News Ninja is an arcade slicing game in the spirit of Fruit Ninja, with
-  headlines instead of fruit. They are tossed across the screen, and you cut
-  through the true ones while letting the satirical ones go by.
+  Headlines fly across the screen. Slice the real ones and let the satirical
+  ones go by.
 
 
-  The creator says they loved Fruit Ninja as a child, and that inspiration shows
-  in the core mechanic. It went into Vibe Jam 2026, and it mixes arcade reflexes
-  with trivia.
+  Fruit Ninja-style slicing, with headlines in place of fruit. Reflexes and a
+  bit of trivia. Runs that last as long as you keep up.
 
 
-  The difference is that every target is a piece of text instead of a piece of
-  fruit, so each throw asks for a quick read before the cut. That turns a reflex
-  game into a light test of judgment about what is real and what is a joke, and
-  a run lasts as long as you can keep up.
+  The creator loved Fruit Ninja as a child and swapped the fruit for the news.
 play:
   url: https://news-ninja.pages.dev
   embeddable: true
@@ -48,7 +43,7 @@ media:
     - games/news-ninja/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-10-01
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:vibejam-2026

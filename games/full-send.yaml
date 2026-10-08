@@ -2,20 +2,16 @@ slug: full-send
 title: FULL SEND
 tagline: Race against other players in a fast 2D top-down style circuit racer.
 description: >-
-  FULL SEND is a 2D racing game inspired by Formula 1 and old-school arcade
-  racers. Each run puts you on the track to push for position and a clean lap,
-  with quick restarts so another attempt is never far away. It loads in about
-  two seconds, so a session starts almost immediately.
+  Race other players around a fast, top-down 2D circuit, pushing for position
+  and a clean lap on every run.
 
 
-  The game supports multiplayer and runs on mobile as well as desktop. It placed
-  19th of 945 entries in Vibe Jam 2026. It also won the Most Portal Transfers
-  award, a nod to how many players moved into it through the jam's portal links.
+  Multiplayer races. Quick restarts, so another attempt is never far away. A
+  load time of about two seconds, so a session starts almost at once.
 
 
-  The creator built it with Cursor. The short load time and the
-  pick-up-and-retry loop give it the feel of a classic arcade racer, aimed at
-  players who want one more lap.
+  Inspired by Formula 1 and old-school arcade racers, for players who want one
+  more lap.
 play:
   url: https://fullsend.game
   embeddable: true
@@ -49,7 +45,7 @@ media:
     - games/full-send/shot-2
 dates:
   added: 2026-10-01
-  updated: 2026-10-01
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:vibejam-2026

@@ -2,17 +2,16 @@ slug: hamster-hustle
 title: Hamster Hustle
 tagline: Escape the office wheel as a hamster in a pixel-art adventure with puzzles.
 description: >-
-  You play as a hamster with one wish: to get off the wheel. You guide it
-  through a corporate-flavored world, solving puzzles and making strategic
-  choices on the way to freedom from the daily grind.
+  Guide a hamster with one wish, to get off the wheel, through a
+  corporate-flavored world of puzzles and choices.
 
 
-  The creator grew up loving Game Boy Color games, and those handhelds inspired
-  this one. Workplace satire runs through the setting and pokes fun at office
-  life, with a hamster standing in for the worker.
+  Puzzles and strategic decisions on the way to freedom. Workplace satire, with
+  a hamster standing in for the worker. Inspiration from the Game Boy Color
+  games the creator grew up with.
 
 
-  The creator made it in Claude Code as a way to decompress from work.
+  The creator made it as a way to decompress from work.
 play:
   url: https://hamsterhustle.co
   embeddable: true

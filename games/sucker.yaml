@@ -3,20 +3,18 @@ title: Sucker
 tagline: Race a vacuum cleaner from a first-person view, cleaning faster and
   more efficiently.
 description: >-
-  Drive a vacuum cleaner in this first-person racing game. The aim is to clean
-  up faster and more efficiently, so a run comes down to picking a good route
-  and moving quickly through the space instead of wandering around.
+  Sucker lets you drive a vacuum cleaner in this first-person racing game. Your
+  aim is to clean up faster and more efficiently. You move quickly through the
+  space and don't wander around.
 
 
-  The idea came from the creator watching a robot cleaner in their own room and
-  wondering how it could be quicker and more efficient. It was the creator's
-  first vibe-coded game, made with Claude Code on Three.js after they saw games
-  shared by Levelsio on X.
+  Picking a good route through the space. A household chore played as a timed
+  race. Time lost on every wasted pass across the floor.
 
 
-  That everyday scene gives the game its hook: a household chore with the
-  pressure of a timed race on top, where every wasted pass across the floor
-  costs time.
+  tekr0x got the idea while watching a robot cleaner in their own room,
+  wondering how it could be quicker and more efficient. It is their first
+  vibe-coded game, made after they saw games shared by Levelsio on X.
 play:
   url: https://sucker-game.vercel.app
   embeddable: true

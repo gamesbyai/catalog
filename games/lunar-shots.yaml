@@ -3,20 +3,16 @@ title: Lunar Shots
 tagline: Build defenses and manage resources to survive aliens and meteors
   before impact.
 description: >-
-  Lunar Shots is tower defense on the Moon with a deadline. Alien attackers and
-  meteor showers come at your position while a final impact draws closer, and
-  you have to hold out by fighting and building at the same time. It mixes tower
-  defense, action and survival, and it is played alone.
+  Hold out on the Moon against alien attackers and meteor showers while a final
+  impact draws closer.
 
 
-  The theme draws on Artemis-style lunar exploration. Its maker built it with
-  the Gemini app.
+  Tower-defense planning with real-time action on top. Resource management, with
+  income and defenses to watch at once. Threats from two directions. A theme
+  drawn from Artemis-style lunar exploration.
 
 
-  Real-time action sits on top of tower-defense planning and resource
-  management. With threats coming from two directions, you keep an eye on your
-  defenses and your income at once, and spending choices matter as much as your
-  aim.
+  The creator built it with the Gemini app.
 play:
   url: https://lunarshots.vercel.app
   embeddable: true

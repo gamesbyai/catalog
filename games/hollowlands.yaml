@@ -2,19 +2,16 @@ slug: hollowlands
 title: Hollowlands
 tagline: Explore an endless shared world, survive, and build alongside other players.
 description: >-
-  Hollowlands gives you an infinite world to roam, survive in and build on,
-  shared with other players. You cross the landscape, gather what you need to
-  stay alive and put up structures as you go, next to whoever else is out there.
+  Roam an infinite world shared with other players. Gather what you need to
+  survive and put up structures as you go.
 
 
-  Sessions are open-ended, driven by curiosity about what lies past the next
-  horizon. The game cites Zelda: Breath of the Wild as its inspiration. It is
-  survival, open-world and adventure in one.
+  Open-ended sessions. Survival, open-world exploration and building in one.
+  Other people out there building and traveling too. The next horizon as the
+  reason to keep going.
 
 
-  Because the world is infinite and other people share it, building and
-  traveling can play out differently on each visit. Built with Claude Code and
-  Three.js.
+  Inspired by Zelda: Breath of the Wild.
 play:
   url: https://hollowlands.andreelias.dev
   embeddable: true

@@ -2,20 +2,14 @@ slug: hired-swords
 title: Hired Swords
 tagline: Draft a team of fighters and battle other players' ghost teams in auto-battles.
 description: >-
-  You draft a team of fighters in Hired Swords and send it into automatic
-  battles against other players' saved teams. It is a roguelite autobattler that
-  takes its cue from Super Auto Pets: each round you shape your lineup, then
-  watch it face a ghost built by another human player.
+  Draft a team of fighters and send it into automatic battles against other
+  players' saved teams.
 
 
-  The game is about synergies. Which units you hold and how they combine with
-  each other matter more than reflexes, which gives the drafting a puzzle-like
-  feel. Because the opponents are recorded teams, each climb meets a different
-  set of rivals without anyone needing to be online at the same time.
-
-
-  Win enough fights and you climb toward the top. It came 68th of 945 at Vibe
-  Jam 2026, built with Claude Code on the Phaser engine.
+  Roguelite autobattling in the spirit of Super Auto Pets. Ghost teams built by
+  other human players, with no one needing to be online at the same time. Unit
+  combinations that matter more than reflexes. A climb toward the top with every
+  win.
 play:
   url: https://hiredswordsvibecode2026.netlify.app
   embeddable: true
@@ -52,7 +46,7 @@ media:
     - games/hired-swords/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-09-29
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:vibejam-2026

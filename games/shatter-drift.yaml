@@ -2,21 +2,24 @@ slug: shatter-drift
 title: SHATTER DRIFT
 tagline: Hold to shatter through obstacles, release to recombine and collect energy.
 description: >-
-  SHATTER DRIFT runs on one input. Hold it and your crystal breaks apart to pass
-  through obstacles; let go and the pieces recombine and collect energy. It's an
-  abstract arcade runner through endless procedural space. Each run moves back
-  and forth between two states, shattered and safe or whole and collecting.
+  You guide a crystal drifting through endless procedural space in this abstract
+  arcade runner. Each run moves back and forth between two states: shattered,
+  where you are safe, and whole, where you collect.
 
 
-  Five biomes, boss waves, and power-ups add variety, and a global leaderboard
-  tracks scores. The game loads at under a megabyte, and its audio is procedural
-  and uses convolution reverb.
+  Five biomes. Boss waves. Power-ups. A global leaderboard for scores.
+  Procedural audio with a convolution reverb. More than 22 game systems. Under a
+  megabyte to load.
 
 
-  The creator says they built it entirely with Claude Code, to show that one AI
-  tool could produce a polished arcade game from scratch. It has more than 22
-  game systems, the skyboxes for its five biomes were AI-generated, and Ikaruga
-  and Super Hexagon are the cited inspirations for its risk-and-reward design.
+  One input runs the whole game. Hold to shatter your crystal and pass through
+  obstacles. Let go to recombine the pieces and collect energy.
+
+
+  tommyatoai says they built it entirely with one AI tool, to show that such a
+  tool could make a polished arcade game start to finish. Its biome skyboxes
+  were AI-generated. Ikaruga and Super Hexagon inspired the risk-and-reward
+  design, per the creator.
 play:
   url: https://tommyato.com/games/shatter-drift
   embeddable: true

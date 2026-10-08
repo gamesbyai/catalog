@@ -3,19 +3,17 @@ title: MazeRift
 tagline: Roll through mazes, collect perks, and race through increasingly
   strange worlds.
 description: >-
-  MazeRift is a maze roller: you guide a ball through a series of mazes, and the
-  rules fit in one line. Find the way through each layout, and do it quickly.
+  Roll a ball through a series of mazes, finding the way through each one as
+  fast as you can.
 
 
-  The creator says the idea came from a four-year-old's love of mazes and from a
-  lack of good maze games on the App Store. Bolt and Three.js were used for its
-  Vibe Jam 2026 build, and it runs on phones, which suits a quick session.
+  Perks and better speed earned through skillful play. Levels that turn more
+  surreal the further you get. A task that stays simple while the mazes change.
+  Quick sessions.
 
 
-  Skillful play earns perks and better speed as the levels go on, which gives
-  you a reason to play cleanly instead of just finishing. The environments also
-  turn more surreal the further you get, so the look of the maze keeps changing
-  even when the task stays the same.
+  The idea came from a four-year-old's love of mazes and a lack of good maze
+  games on the App Store.
 play:
   url: https://mazerift.bolt.host
   embeddable: true
@@ -50,7 +48,7 @@ media:
     - games/mazerift/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-09-29
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:vibejam-2026

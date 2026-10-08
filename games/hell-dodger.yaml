@@ -2,21 +2,13 @@ slug: hell-dodger
 title: Hell Dodger
 tagline: Fly and drift through the sky, dodging a constant stream of incoming missiles.
 description: >-
-  In Hell Dodger, missiles home in from all sides and you stay alive by moving
-  fast and turning sharply. It is a single-player 3D shooter built around
-  evasion: you pilot a craft that flies and drifts through the sky, and the
-  constant stream of missiles does not stop coming.
+  Missiles home in from all sides, and you stay alive by flying fast and turning
+  sharp.
 
 
-  Drifting is part of the movement, so the craft slides through turns while you
-  weave between threats at speed. That puts the weight on speed and quick
-  reactions rather than slow, careful aiming, and the mix of shooter and
-  roguelite play points to short, repeatable runs.
-
-
-  Windsurf was the coding tool the creator used during Vibe Jam 2026, where it
-  finished 523rd of 945, and Three.js renders the craft, the sky and the
-  missiles closing in from every direction.
+  A craft that flies and drifts through the sky. A stream of missiles that never
+  stops. Drifting through turns while you weave between threats. Speed and quick
+  reactions over careful aiming. Short, repeatable roguelite runs.
 play:
   url: https://hell-dodger.vercel.app
   embeddable: true
@@ -50,7 +42,7 @@ media:
     - games/hell-dodger/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-09-29
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:vibejam-2026

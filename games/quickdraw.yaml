@@ -2,20 +2,16 @@ slug: quickdraw
 title: Quickdraw
 tagline: Face an opponent in a western duel and fire before they do.
 description: >-
-  You take on a gunslinger in a western duel that comes down to one split-second
-  reaction. You have to fire before your opponent does, so every round comes
-  down to timing.
+  Face a gunslinger in a western duel and fire before they do.
 
 
-  The creator wanted to see how far AI tools could help them make something fun
-  and engaging. The creator built it with Cursor, and everything in it is drawn
-  on a canvas.
+  Split-second timing as the whole game. The wait, then the moment to react.
+  Short, tense showdowns, quick to replay one after another. Duels against other
+  people online.
 
 
-  The appeal is the speed and simplicity of the setup. Each duel is just the
-  wait and then the moment to react, so a run becomes a string of short, tense
-  showdowns that are quick to replay, one after another. Multiplayer lets the
-  gunslinger across from you be another person online.
+  The creator wanted to see how far AI tools could help make something fun and
+  engaging.
 play:
   url: https://quickdraw-jam.web.app
   embeddable: true

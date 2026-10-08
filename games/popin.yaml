@@ -3,21 +3,17 @@ title: POPIN
 tagline: Survive escalating waves with auto-aimed shots and pick upgrades
   between levels.
 description: >-
-  POPIN is a survivor-style roguelite where your shots aim themselves. With
-  combat on auto-targeting, you concentrate on positioning while enemies arrive
-  in waves that grow tougher and more crowded as the run goes on. It is a
-  single-player shooter with roguelite runs.
+  Survive escalating waves in a roguelite where your shots aim themselves, so
+  the job is where you stand.
 
 
-  The creator loves modern roguelites and wanted this one to be approachable for
-  everyone, including players who have never tried the genre. Cursor and Phaser
-  were the tools behind this Vibe Jam 2026 entry, which finished 518th of 945.
+  Auto-targeted shots. Waves that grow tougher and more crowded. A choice of
+  upgrades at every level-up, shaping the build for the later waves. Punchy hit
+  effects on every shot and kill.
 
 
-  Each level-up offers a choice of upgrades, and those picks shape the build
-  that has to hold up against the later waves. The emphasis is on feedback:
-  simple visuals are paired with punchy hit effects, so every shot and every
-  kill gets a clear response.
+  The creator loves modern roguelites and wanted this one approachable for
+  everyone, including players new to the genre.
 play:
   url: https://popin-13239.web.app
   embeddable: true
@@ -51,7 +47,7 @@ media:
     - games/popin/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-09-29
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:vibejam-2026

@@ -3,20 +3,16 @@ title: Exploding Hamsters
 tagline: Solve puzzles built around explosive hamsters in a cartoon-styled
   mobile-friendly game
 description: >-
-  Exploding Hamsters is a puzzle game where the hamsters go boom, in a browser
-  or on a phone. Every level is built around a single mechanic: you set up the
-  blasts so the explosive critters do what the level demands.
+  Hamsters blow up in this puzzle game. Each level uses just one mechanic. Set
+  the blasts so the hamsters do what the level needs.
 
 
-  The creator had liked this puzzle mechanic for a long time and wanted to give
-  it a proper look. They say the art comes from AI image generation, which they
-  felt had become good enough to produce consistent, interesting characters, and
-  they built the frontend with Cursor. It ranked 116th of 945 at Vibe Jam 2026.
+  This puzzle mechanic is one theboredzebra has liked for a long time.
+  theboredzebra wanted the game to look polished.
 
 
-  The hamsters are the visual focus of this single-player, mobile-friendly
-  puzzler. They keep a consistent, distinctive cartoon look across the game,
-  which gives a simple premise a lot of personality.
+  According to the creator, the art is made with AI. They felt AI images were
+  good enough for consistent, interesting characters.
 play:
   url: https://explodinghamsters.com
   embeddable: true
@@ -49,7 +45,7 @@ media:
     - games/exploding-hamsters/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-09-29
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:vibejam-2026

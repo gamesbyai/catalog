@@ -2,14 +2,16 @@ slug: tank-town
 title: Tank Town
 tagline: Defend your base and blast enemy tanks in a cartoon take on Battle City.
 description: >-
-  Fire at enemy tanks and defend your base in this tank shooter inspired by the
-  NES classic Battle City. You drive a tank and fire at enemy tanks while
-  protecting a single base that has to survive each round.
+  Tank Town puts you in the driver's seat of a tank in a shooter inspired by the
+  NES classic Battle City.
 
 
-  The creator wanted to play Battle City with friends, but the emulator version
-  they tried only allowed solo play. Multiplayer is built in. The game came
-  together in Claude Code on Three.js.
+  Enemy tanks to fire at. A single base to defend, which has to survive each
+  round. Multiplayer built in.
+
+
+  KBezbailis wanted to play that game with friends, but the emulator version
+  they tried only allowed solo play.
 play:
   url: https://tanktown.kristapsbezbailis.com
   embeddable: true

@@ -2,38 +2,23 @@ slug: goof-balls
 title: Goof Balls
 tagline: Switch elements and outlast rival balls in a shrinking ring
 description: >-
-  Every ball in the ring is fire, grass or water, and you can change yours with
-  a single key press. The swap happens instantly, but your new element locks in
-  for a moment afterward, so a last-second switch is a bet you can't take back.
+  Be the last ball left in a shrinking ring. Every ball is fire, grass or water,
+  and you can switch yours with one key press.
 
 
-  Three matchups decide every collision, and the whole rulebook fits on a sticky
-  note. Fire burns grass, grass soaks up water, and water puts out fire.
+  Three matchups, with fire burning grass, grass soaking up water and water
+  putting out fire. A brief lock after every swap, so a last-second switch is a
+  bet. Rushes at the opponents your element beats. A shield for when things go
+  badly. Bots, private rooms for friends and a built-in chat.
 
 
-  A round drops you into a ring that keeps shrinking, along with a crowd of
-  other balls, all fighting to the finish. The goal is to be the final ball
-  left, or the last goof standing.
+  Steer with the mouse or WASD and pick an element with 1, 2 or 3. Rush with
+  left click or Space, and shield with right click or Shift.
 
 
-  You charge at the opponents your element beats. When someone comes for you,
-  you swap to counter them, and if things go badly you can throw up a shield.
-  The creator calls it a game about reading people, and a well-timed
-  counter-swap asks you to do just that.
-
-
-  You can play alone against bots or set up a private room for friends, and
-  there's even a built-in chat for a bit of trash talk.
-
-
-  Your ball follows the mouse or WASD, while keys 1, 2 and 3 pick the element.
-  Rush sits on left click or Space, and the shield goes on right click or Shift.
-
-
-  tappInc got the idea from a scene in a martial-arts manga, where two masters
-  threw rock-paper-scissors at ridiculous speed and switched hands only at the
-  final instant. Years later they mixed it with the type triangle from the early
-  Pokémon games. They're still tuning it and want to hear what players think.
+  tappInc got the idea from a martial-arts manga scene where two masters threw
+  rock-paper-scissors at ridiculous speed, then mixed it with the type triangle
+  from early Pokémon games.
 play:
   url: https://tappinc.itch.io/goof-balls
   embeddable: false

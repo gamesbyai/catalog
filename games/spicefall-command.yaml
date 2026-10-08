@@ -3,36 +3,25 @@ title: Spicefall Command
 tagline: Harvest spice, capture condensers, and defend your Command Spire in
   desert RTS fights.
 description: >-
-  A desert base is yours to run in this real-time strategy skirmish, while
-  hostile commanders try to tear it down. You harvest spice, keep the power grid
-  stable and grow your water capacity, all while guarding your Command Spire
-  from destruction.
+  Hostile commanders are trying to tear down your desert base in this real-time
+  strategy skirmish. You harvest spice, keep the power grid stable, raise your
+  water capacity and guard your Command Spire from destruction.
 
 
-  Capturing atmospheric condensers gives you a strategic edge over the opposing
-  houses, so there's a bit more on the map worth fighting over than spice alone.
+  Atmospheric condensers, worth capturing for a strategic edge over the other
+  houses. Two sci-fi houses, one of them the Sunforge Compact. Randomized desert
+  maps for each match. Small skirmishes up to large AI battles. A separate house
+  and team setting for each AI opponent. Matches of a few minutes each.
 
 
-  Before any shooting starts, you choose your house, the map size, how many AI
-  players join and which team you're on. Each AI opponent gets its own house and
-  team setting too. Alliances are settled by number, so anyone sharing your team
-  number fights on your side while every other command center is hostile, and an
-  AI can be your partner just as easily as your enemy.
+  Pick your house, map size, AI count and team before shooting begins. Same team
+  number means allies; every other command center is hostile. An AI can be a
+  partner as easily as an enemy. Drag to select units. Right-click to move,
+  attack, harvest or set a rally point. Press 1–7 to train units, Q, W, E, R, Y
+  or T to build structures. Use A for attack-move and Shift to queue orders.
 
 
-  Bitten Heart Studio drew on classic desert strategy games. Two sci-fi houses
-  compete, and one of them is the Sunforge Compact. Each match randomizes the
-  map, anywhere from a small skirmish up to a large AI battle.
-
-
-  The controls are the classic RTS kind, with a drag to select units and a
-  right-click to move, attack, harvest or set a rally point. Hotkeys handle
-  production, since 1 through 7 train units and Q, W, E, R, Y and T place
-  structures. A attack-moves and Shift queues orders.
-
-
-  A match only runs a few minutes. Fullscreen at 1280x720 or higher is
-  recommended.
+  Bitten Heart Studio looked to classic desert strategy games for inspiration.
 play:
   url: https://bitten-heart-studio.itch.io/spicefall-command
   embeddable: false

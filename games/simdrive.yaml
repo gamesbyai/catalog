@@ -2,25 +2,24 @@ slug: simdrive
 title: SimDrive
 tagline: Race friends in a shared car game, steering with your phone as the controller.
 description: >-
-  Your phone is the steering wheel. Open the game on a TV or computer, create a
-  room, then scan the QR code with a phone. Tilt the phone to steer and touch
-  the on-screen Brake and Throttle buttons. The phone gives feedback through
-  sound and haptics: engine roar, tire slip, curb rumble and rain grip.
+  Your phone is the steering wheel in this multiplayer racing game.
 
 
-  The game can run solo, in 4-way split-screen, in two 4-way split screens, or
-  with everyone on their own screen by joining with a room code. Race options
-  include the number of laps, the track, rain and ghost cars.
+  Solo play, a 4-way split screen, or two 4-way split screens. Everyone on their
+  own screen, joined with a room code. Race options for lap count, track, rain
+  and ghost cars. Car physics with dynamic traction, downforce and rain effects.
+  Phone sound and haptics for engine roar, tire slip, curb rumble and rain grip.
 
 
-  The car physics include dynamic traction, downforce and rain effects. The
-  creator drew on party games like Jackbox and Gaming Couch, plus Mario Kart,
-  and wanted to use a phone's motion sensors the way the PS3 controller was
-  meant to.
+  Open the game on a TV or computer, then create a room. Scan the QR code with
+  each phone to join. Tilt the phone to steer. Touch the Brake and Throttle
+  buttons on the phone's screen to slow down and speed up. Each player needs
+  their own phone as a controller.
 
 
-  Each player needs their own phone as a controller, so playing on a single
-  phone means using two devices.
+  1000xcat drew on party games like Jackbox and Gaming Couch, plus Mario Kart,
+  and wanted a phone's motion sensors used in the manner the PS3 controller was
+  intended. The creator writes, "it's my first game."
 play:
   url: https://simdrive.xyz
   embeddable: true

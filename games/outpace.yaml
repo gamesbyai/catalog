@@ -2,21 +2,16 @@ slug: outpace
 title: Outpace
 tagline: Type words to run, press space to jump, and stay ahead of an adaptive wave.
 description: >-
-  Outpace is a typing runner with a Claude theme. Your character runs forward as
-  you type, and the space bar makes it jump. Behind you, a wave closes in, and
-  the goal is to keep typing accurately enough to stay ahead of it for as long
-  as you can.
+  Type to run, press Space to jump, and stay ahead of the wave closing in behind
+  you.
 
 
-  The wave adapts as you play, so the pressure follows your typing instead of
-  staying fixed. The game uses a pixel-art look and includes a leaderboard for
-  comparing runs. It combines the pacing of an endless runner with the skill
-  practice of a typing test.
+  A wave that adapts to your typing. Endless-runner pacing with typing-test
+  practice. A leaderboard for comparing runs.
 
 
-  According to the repository, Claude Opus 5.5 built the whole project from
-  start to finish as a test of its abilities. The tags list Claude and Claude
-  Code as the tools involved.
+  According to the creator, Claude Opus 5.5 built the whole project from start
+  to finish as a test of its abilities.
 play:
   url: https://outpace.ethanplus.ai
   embeddable: false
@@ -54,7 +49,7 @@ media:
     - games/outpace/shot-2
 dates:
   added: 2026-09-30
-  updated: 2026-09-30
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:github

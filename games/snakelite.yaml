@@ -2,21 +2,13 @@ slug: snakelite
 title: Snakelite
 tagline: Steer a growing snake through roguelite runs and pick up upgrades along the way
 description: >-
-  Snakelite is a roguelite take on the classic snake game. You guide a snake
-  around the board, eating to grow while avoiding walls and your own tail. Each
-  run is a fresh attempt, so the goal is to last as long as you can and get
-  further than the previous try.
+  Last as long as you can and get further than your previous run in Snakelite.
+  You steer a snake around the board, eating to grow while avoiding walls and
+  your own tail.
 
 
-  The appeal comes from mixing two familiar formats: the simple grid movement of
-  snake and the run-based structure of roguelites. Players who enjoy either one
-  get a quick, replayable loop where every attempt starts over and rewards
-  careful steering and good decisions.
-
-
-  It was entered in Vibe Jam 2026, where it placed 615th among 945 entries. The
-  creator built it with GitHub Copilot and draws it on an HTML canvas, which
-  keeps the game light enough to play directly in a browser.
+  Grid movement from classic snake. Roguelite run structure. Fresh attempts, one
+  run after another, rewarding careful steering and good decisions.
 play:
   url: https://armin-l.github.io/Snake
   embeddable: true
@@ -50,7 +42,7 @@ media:
     - games/snakelite/shot-2
 dates:
   added: 2026-10-01
-  updated: 2026-10-01
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:vibejam-2026

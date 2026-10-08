@@ -1,19 +1,17 @@
 slug: dustlight
 title: Dustlight
 tagline: Carry a paper lantern and pull a sky island back together out of glowing dust.
-description: "Dustlight is a short exploration game played in the browser, set
-  on a sky island at night that has crumbled into drifting dust. You're a small
-  paper-lantern spirit, and colour comes back wherever your warm light falls.
-  Each ember you find sends a spark to a landmark, a lighthouse, a keeper's
-  cottage, a blossom tree or a mossy shrine arch, and it pulls itself back
-  together out of swirling motes.
+description: "In this short exploration game, you wander a sky island at night
+  that has crumbled into drifting dust. You play a small paper-lantern spirit,
+  and color comes back to anything your warm light falls on. Each ember you find
+  sends a spark to a landmark, a lighthouse, a keeper's cottage, a blossom tree
+  or a shrine arch, and that landmark restores itself.
 
 
   With all four standing, a fifth ember turns up on the lighthouse gallery and
-  an updraft lifts you to it. Lighting the lamp floods the island with colour,
-  and a whale gathers itself out of the stars. An old lighthouse keeper speaks a
-  few quiet lines along the way. You can play with keyboard and mouse or with
-  touch controls.
+  an updraft lifts you to it. Lighting the lamp brings a whale gathering itself
+  out of the stars. An old lighthouse keeper speaks a few quiet lines along the
+  way. You can play with keyboard and mouse or with touch controls.
 
 
   Everything you see is drawn with about 1.7 million Gaussian splats rather than
@@ -71,7 +69,7 @@ media:
     - games/dustlight/shot-2
 dates:
   added: 2026-10-03
-  updated: 2026-10-03
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: pr

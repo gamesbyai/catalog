@@ -2,15 +2,16 @@ slug: pictomaze
 title: Pictomaze
 tagline: Find your way through hand-drawn style 2D mazes
 description: >-
-  You trace a route from the start to the exit through 2D mazes, and it's quick
-  to pick up.
+  Find your way through 2D mazes, from the start to the exit, one maze after
+  another.
 
 
-  The idea comes from the creator's school days, when they and a friend sketched
-  mazes on paper and played them with a finger and some imagination. Codex was
-  used to build it, with Three.js handling the rendering even though the play
-  itself is flat and two-dimensional, like the paper original. Find the way out,
-  then move on to the next maze.
+  Quick to pick up. Flat, two-dimensional mazes, like the ones drawn on paper. A
+  new maze waiting after every exit.
+
+
+  Based on the paper mazes the creator and a friend sketched at school and
+  played with a finger and some imagination.
 play:
   url: https://pictomaze.aq.to
   embeddable: true

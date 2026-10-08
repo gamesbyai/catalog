@@ -2,21 +2,16 @@ slug: rift-wars
 title: Rift Wars
 tagline: Build a deck and battle other players in tactical ranked card matches.
 description: >-
-  Rift Wars is a free-to-play tactical card game with real-time ranked
-  multiplayer. You build a deck from a pool of 4,276 unique cards, then climb a
-  ranked ladder in head-to-head matches. Bots are there too, so a match can be
-  played solo.
+  Build a deck from 4,276 unique cards and climb a ranked ladder in real-time,
+  head-to-head card matches.
 
 
-  Beyond the card pool, the game has 16 clans and a bot opponent with six
-  difficulty tiers. The server is authoritative, which means it decides match
-  outcomes rather than your device. Playing requires a login.
+  16 clans. Bots in six difficulty tiers for solo matches. An authoritative
+  server that decides match outcomes. A login to play.
 
 
   The creator says one developer built it in under 15 days with AI as a
-  development partner. It was still in beta when it went into Vibe Jam 2026,
-  where it ranked 77th of 945, and the creator was looking for feedback from
-  people working in AI games.
+  development partner, and wanted feedback from people working on AI games.
 play:
   url: https://rift.metamachina.io
   embeddable: false
@@ -49,7 +44,7 @@ media:
     - games/rift-wars/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-09-29
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:vibejam-2026

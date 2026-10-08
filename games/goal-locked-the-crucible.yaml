@@ -2,29 +2,19 @@ slug: goal-locked-the-crucible
 title: "Goal-Locked: The Crucible"
 tagline: Score goals and outlast rivals in a shrinking cyber-sport arena.
 description: >-
-  You're a sphere, and your goal is to be the last one still standing.
+  Every goal you score knocks a rival out of the arena. Last sphere standing
+  wins.
 
 
-  It puts battle royale rules on a sport, where every goal you score counts as a
-  way to knock one of your opponents out. Survival and scoring end up being the
-  same job. Meanwhile the tactical arena keeps shrinking, pushing everyone
-  toward the same spot as the match goes on.
+  Battle royale rules on a sport. A shrinking arena. Physics-driven brawling,
+  with collisions and momentum doing the work. Best result, kills and a tier,
+  starting at T1.
 
 
-  Chaotic physics drive the brawling, so collisions and momentum shape each
-  match instead of fixed animations.
+  Roll with WASD or the arrows, dash with Shift and fire a pulse with Space.
 
 
-  You roll around with WASD or the arrow keys and tap Shift to dash. Spacebar
-  fires off a pulse, the one move the game files under tactics.
-
-
-  The game tracks your best result, your kills and a tier that starts at T1.
-
-
-  whinhosa_exe wanted to shake up how predictable sports games tend to be. Tying
-  survival to scoring, which puts elimination stakes into a sports format, is
-  the main idea behind the design.
+  whinhosa_exe wanted to shake up how predictable sports games tend to be.
 play:
   url: https://goal-locked.vercel.app
   embeddable: true

@@ -13,8 +13,8 @@ description: >-
 
   The game has two modes. Arcade Mission is one long stage that ends at General
   Morden's armored fortress. Below 60% health the fortress sheds its armor and
-  calls down mortar rain, with marked spots that warn you where the shells will
-  land, and under 35% it enrages.
+  calls down mortar rain, with each shell's landing spot marked ahead of time,
+  and under 35% it enrages.
 
 
   Survival is the other choice, an endless string of waves in an arena that
@@ -28,8 +28,8 @@ description: >-
   nearby, so you can lure enemies over to them.
 
 
-  Freeing prisoners pays out points and weapon crates, while close-range kills
-  push a score multiplier up to x3 until taking a hit breaks the chain.
+  Freeing prisoners pays out points and weapon crates, and close-range kills
+  build a score multiplier up to x3 that resets when you take a hit.
 
 
   There's also a parked SLUG tank you board just by touching it. It carries 3
@@ -42,8 +42,8 @@ description: >-
   browser.
 
 
-  Andrea Vitolo had Claude build the whole game in plain JavaScript, and nothing
-  is loaded from files, since the sprites, the level, the sound effects and the
+  Andrea Vitolo had Claude build the game in plain JavaScript, and nothing is
+  loaded from files, since the sprites, the level, the sound effects and the
   music are all generated in code.
 play:
   url: https://m-assault-fable.netlify.app

@@ -3,23 +3,31 @@ title: Survive Coders
 tagline: Cross San Francisco on foot, shooting bugs and shouting voice commands
   at a boss.
 description: >-
-  A robotaxi drops a vibe coder in Daly City with one request: make one small
-  change before the demo. Survive Coders is the platformer run that follows,
-  across San Francisco toward Anthropic HQ. The creator says it was built as a
-  hackathon demo with Claude Code, with Claude Opus 5.5 as a pair programmer,
-  and its commits carry co-author trailers.
+  Start in Daly City, where a robotaxi drops you off with one request from
+  #demo-day to make one small change before the demo. Survive Coders is the
+  platformer run that follows, across San Francisco toward Anthropic HQ. You
+  play a vibe coder fighting with a floating laptop, and your voice is the
+  weapon.
 
 
-  Your voice is the weapon. Hold a key, say a command such as ship it, rollback,
-  or refactor, and the power fires on release. Speech is optional, since every
-  power also has a keyboard key and a touch target on phones.
+  Voice powers such as ship it, rollback, and refactor. Bad Prompt Blobs,
+  Keyboard Goblins, and overheating GPUs as enemies. Salesforce Park, with
+  pitch-throwing founders and a demo-day amphitheater. Three Salesforce Tower
+  floors, where contracts lock your weapon. A typed parachute fall and a Waymo
+  ride. The Context Rot Hydra, a three-headed boss at the end. New threats added
+  one at a time, level by level.
 
 
-  The enemies come from vibe-coding pain: Bad Prompt Blobs, Keyboard Goblins,
-  and overheating GPUs. Each level adds threats one at a time, from
-  pitch-throwing founders in Salesforce Park to Salesforce Tower floors where
-  contracts lock your weapon, then a typed parachute fall and a Waymo ride. The
-  Context Rot Hydra, a three-headed boss, waits at the end.
+  Hold M, speak the command, and let go to fire. Skip the voice and press the
+  power's keyboard key, or tap it on a phone. Ordinary talk fires nothing.
+  During the fall, type build me a parachute, then no, a real one, then ship it.
+  Case and small typos don't matter, and Tab fills in the line. On a phone, tap
+  each letter, or hold talk and say the line. Steer the canopy through three
+  arcs of stars.
+
+
+  According to travisstephenfraser, it was built as a hackathon demo with an AI
+  model as pair programmer, and its commits carry co-author trailers.
 play:
   url: https://survive-coders.vercel.app
   embeddable: true
@@ -60,7 +68,7 @@ media:
     - games/survive-coders/shot-2
 dates:
   added: 2026-09-29
-  updated: 2026-10-01
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:awesome-opus

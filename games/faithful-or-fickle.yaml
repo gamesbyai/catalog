@@ -4,10 +4,10 @@ tagline: Play a black cat familiar who secretly steers a manor's fate across
   several eras
 description: >-
   Faithful Or Fickle puts you in the paws of a black-cat familiar serving a
-  manor's lord or lady, in a pixel-art platformer spanning eras from the 1400s
-  to the early 1900s. Each era has its own map, and you cross it toward the far
-  right, where the ruler fights a big battle. Whether they win or lose depends
-  on the state of the estate, and that state is what you get to meddle with.
+  manor's lord or lady, in a platformer spanning eras from the 1400s to the
+  early 1900s. Each era has its own map, and you cross it to reach the ruler's
+  big battle. Whether they win or lose depends on the state of the estate, and
+  that state is what you get to meddle with.
 
 
   Your master grabs you for short stretches of familiar duties quite often, but
@@ -21,23 +21,23 @@ description: >-
   convinced you're a lovely little companion.
 
 
-  The battle won't start until you've tracked down two house-needs items. The
-  core route keeps you in the middle band with the ground, the road and the
-  manor, where most of the powerups sit clumped together. You can also climb to
-  the heights or drop into the deeps to fight large beasts such as dragons.
+  The battle won't start until you've tracked down two house-needs items. Most
+  of the powerups are clumped together on the core route, which runs through the
+  ground, the road and the manor. You can also climb to the heights or drop into
+  the deeps to fight large beasts such as dragons.
 
 
   There are no extra-life pickups. You have nine lives, and when they're gone,
   the run is over.
 
 
-  X is the claw swipe, and holding an arrow key aims it. Swipe upward in
-  midair and you can sort of hold off gravity, hauling yourself slowly back
-  toward the surface.
+  X is the claw swipe, and holding an arrow key aims it. Swipe upward in midair
+  and you can sort of hold off gravity, hauling yourself slowly back toward the
+  surface.
 
 
-  Frame-skip settings let faster machines show more detail, though the creator
-  admits the deeps still feel quite empty.
+  There's a frame-skip option for faster machines, which can show more detail.
+  The creator also says the deeps still feel quite empty.
 
 
   According to the creator, AI assisted with the code, graphics, sounds and
@@ -80,7 +80,7 @@ media:
     - games/faithful-or-fickle/shot-2
 dates:
   added: 2026-10-01
-  updated: 2026-10-02
+  updated: 2026-10-08
 status: live
 provenance:
   foundVia: scout:aibgj-3
