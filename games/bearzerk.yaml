@@ -54,11 +54,8 @@ made:
   source: "GamesByAI's own build notes: we made the game"
   evidence: creator
   notes: >-
-    Claude Code on Claude Opus 5.5, in the Claude desktop app, built the game.
-    Codex on GPT-6 Astra reviewed the code, hunted bugs, generated the images
-    and did the early work on the 3D models. The swarm runs on the GPU through
-    three.js's WebGPU renderer, and browsers without WebGPU get the same
-    simulation written in Rust and compiled to WebAssembly.
+    Made with Claude Opus 5.5 in the Claude app. Codex on GPT-6 Astra did code
+    review, bug testing, image generation and early model work.
 tech:
   engine: threejs
   multiplayer: single
