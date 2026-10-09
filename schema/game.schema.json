@@ -386,6 +386,30 @@
       "pattern": "^(?=[a-z0-9-]*[a-z])[a-z0-9]+(?:-[a-z0-9]+)*$",
       "maxLength": 60
     },
+    "inspiredBy": {
+      "type": "array",
+      "maxItems": 3,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "game",
+          "note"
+        ],
+        "properties": {
+          "game": {
+            "type": "string",
+            "pattern": "^(?=[a-z0-9-]*[a-z])[a-z0-9]+(?:-[a-z0-9]+)*$",
+            "maxLength": 60
+          },
+          "note": {
+            "type": "string",
+            "minLength": 10,
+            "maxLength": 120
+          }
+        }
+      }
+    },
     "editor": {
       "type": "object",
       "additionalProperties": false,
