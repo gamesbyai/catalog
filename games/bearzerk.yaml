@@ -1,0 +1,84 @@
+slug: bearzerk
+title: Bearzerk!
+tagline: Hold out from dawn to nightfall as a gummy bear while a candy swarm grows around you.
+description: "Survive one alien day as a see-through gummy bear on a candy planet.
+  Your weapons fire on their own while the planet's candy creatures close in
+  from every side, more of them every minute, until a final boss rises at
+  nightfall.
+
+
+  22 weapons, each with an evolution, plus two unions that fuse a pair of maxed
+  weapons. 22 passives. Four candy biomes with
+  rivers of syrup, caramel or soda. Eight bosses, four in each run, one every
+  five minutes. Golden Gumdrops to chase down and a herd of Mallow Bison that
+  tramples the swarm. Six bear flavors, each with its own starting weapon. A
+  Candy Shop for upgrades between runs, a Codex and a Daily World.
+
+
+  Move with WASD or the arrow keys, or hold the left mouse button to walk
+  toward the cursor. Jump with Space or a right-click to clear shockwave rings.
+  Pick an upgrade every time you level up. Max a weapon while you hold its
+  matching passive, then open a Candy Box to evolve it. Stand in a Candy
+  Altar's circle for a few seconds to claim its boon.
+
+
+  Play it in a desktop browser for now, since it isn't built for phones yet."
+play:
+  url: https://gamesbyai.github.io/bearzerk/
+  platforms:
+    - browser
+  controls:
+    - WASD or arrow keys to move, or hold the left mouse button
+    - Space or right-click to jump
+    - Esc or P to pause
+    - "Gamepad: left stick to move, A to jump"
+  embedPermission:
+    by: submission
+    date: 2026-10-09
+  embeddable: true
+repo: https://github.com/gamesbyai/bearzerk
+license: MIT
+creator:
+  name: GamesByAI
+  handle: gamesbyai
+  links:
+    - https://gamesbyai.win/
+  x: GamesByAI
+  youtube: "@GamesByAI-win"
+made:
+  models:
+    - claude-opus-5-5
+    - gpt-6-astra
+  tools:
+    - claude-code
+    - codex
+  aiShare: all
+  source: "GamesByAI's own build notes: we made the game"
+  evidence: creator
+  notes: >-
+    Claude Code on Claude Opus 5.5, in the Claude desktop app, built the game.
+    Codex on GPT-6 Astra reviewed the code, hunted bugs, generated the images
+    and did the early work on the 3D models. The swarm runs on the GPU through
+    three.js's WebGPU renderer, and browsers without WebGPU get the same
+    simulation written in Rust and compiled to WebAssembly.
+tech:
+  engine: threejs
+  multiplayer: single
+genres:
+  - action
+  - roguelike
+  - shooter
+inspiredBy:
+  - game: swarmfall
+    note: heavily inspired its balance, weapons and passives
+media:
+  cover: games/bearzerk/cover
+  screenshots:
+    - games/bearzerk/shot-1
+    - games/bearzerk/shot-2
+dates:
+  added: 2026-10-09
+  updated: 2026-10-09
+status: live
+provenance:
+  foundVia: pr
