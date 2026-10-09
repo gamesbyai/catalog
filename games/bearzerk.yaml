@@ -1,10 +1,10 @@
 slug: bearzerk
 title: Bearzerk!
 tagline: Hold out from dawn to nightfall as a gummy bear while a candy swarm grows around you.
-description: "Survive one alien day as a see-through gummy bear on a candy planet.
-  Your weapons fire on their own while the planet's candy creatures close in
-  from every side, more of them every minute, until a final boss rises at
-  nightfall.
+description: "Play a see-through gummy bear on a candy planet, from sunrise to the
+  final boss that rises at nightfall. Your weapons fire on their own while the
+  planet's candy creatures close in from every side, more of them every
+  minute.
 
 
   22 weapons, each with an evolution, plus two unions that fuse a pair of maxed
@@ -36,8 +36,6 @@ play:
     by: submission
     date: 2026-10-09
   embeddable: true
-repo: https://github.com/gamesbyai/bearzerk
-license: MIT
 creator:
   name: GamesByAI
   handle: gamesbyai
