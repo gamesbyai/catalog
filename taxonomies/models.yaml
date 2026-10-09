@@ -590,11 +590,13 @@ terms:
     name: Gemini 3 Deep Think
     provider: google
     intro: |-
-      In Google's own example, Gemini 3 Deep Think turns a sketch into a 3D-printable object, modeling the shape and generating the file for the printer.
+      Google's own example has Gemini 3 Deep Think turn a sketch into a 3D-printable object, modeling the shape and generating the file for the printer, and it's a reasoning mode of the Gemini models rather than a separate model line.
 
-      It's a reasoning mode of Google's Gemini models rather than a separate model line. Google introduced it on December 4, 2025 for Google AI Ultra subscribers in the Gemini app, where it uses parallel reasoning to explore several hypotheses at once on hard math, science and logic problems.
+      Google introduced the mode on December 4, 2025 for Google AI Ultra subscribers in the Gemini app, where parallel reasoning explores several hypotheses at once on hard math, science and logic problems.
 
-      A major upgrade on February 12, 2026 aimed it at science, research and engineering. Ultra subscribers get it in the Gemini app, and select researchers, engineers and enterprises can apply for early access in the Gemini API. As of September 2026 DeepMind's Gemini page lists the mode as Gemini 3.1 Deep Think.
+      A major upgrade on February 12, 2026 aimed it at science, research and engineering, with the mode in the Gemini app for Ultra subscribers and early access in the Gemini API for select researchers, engineers and enterprises who apply.
+
+      As of September 2026 DeepMind's Gemini page lists the mode as Gemini 3.1 Deep Think.
     sources:
       - "https://blog.google/products/gemini/gemini-3-deep-think/"
       - "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-deep-think/"
@@ -617,11 +619,11 @@ terms:
     intro: |-
       Google pitched Gemini 3 Flash for building interactive games and for in-game assistants that need quick answers, and one launch demo gives near real-time help in a hand-tracked ball-launching puzzle game.
 
-      It came out in preview on December 17, 2025, and Google called it frontier intelligence built for speed at a fraction of the cost, saying it outperforms Gemini 2.5 Pro while running three times faster. It became the default model in the Gemini app and AI Mode in Search.
+      Google released it in preview on December 17, 2025, made it the default model in the Gemini app and AI Mode in Search, and said it outperforms Gemini 2.5 Pro while running three times faster.
 
       Developers got it in Google AI Studio, Google Antigravity, Gemini CLI, Android Studio and Vertex AI at $0.50 per million input tokens and $3 per million output tokens.
 
-      As of September 2026 it's been superseded by newer Flash models. The deprecations page names Gemini 3.6 Flash as its replacement, and the API still labels it a preview with no shutdown date.
+      Newer Flash models have superseded it since, and as of September 2026 the deprecations page names Gemini 3.6 Flash as its replacement while the API still labels it a preview with no shutdown date.
     sources:
       - "https://blog.google/products/gemini/gemini-3-flash/"
       - "https://ai.google.dev/gemini-api/docs/deprecations"
@@ -980,11 +982,11 @@ terms:
     name: Kimi K2
     provider: moonshot
     intro: |-
-      Moonshot's API offered an Anthropic-compatible endpoint for Kimi K2, so tools built for Claude's API format could talk to it.
+      Tools built for Claude's API format could talk to Kimi K2 through an Anthropic-compatible endpoint on Moonshot's API.
 
       Moonshot AI released K2 in July 2025. It's a mixture-of-experts model with 1 trillion total parameters and 32 billion active, designed for tool use, reasoning and autonomous problem-solving, including coding. It came as Kimi-K2-Base for fine-tuning and Kimi-K2-Instruct for chat and agents, both with a 128K-token context, and the code and weights are under a modified MIT license.
 
-      It's been superseded by later Kimi models, up to Kimi K3. Moonshot's API docs say the kimi-k2 series was discontinued on May 25, 2026, and they point users to kimi-k3.
+      Later Kimi models have superseded it, up to Kimi K3, and Moonshot's API docs say the kimi-k2 series was discontinued on May 25, 2026, pointing users to kimi-k3.
     sources:
       - "https://github.com/MoonshotAI/Kimi-K2"
       - "https://huggingface.co/moonshotai/Kimi-K2-Instruct"

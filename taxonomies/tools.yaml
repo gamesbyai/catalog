@@ -46,9 +46,9 @@ terms:
     maker: Google
     url: "https://github.com/google-gemini/gemini-cli"
     intro: |-
-      Gemini CLI brings Gemini models to the command line. You run it in your game's project folder and its built-in tools for file operations, shell commands, web fetching and Google Search grounding work on your code, and MCP servers add more tools. It's Google's open-source AI agent for the terminal, released under the Apache 2.0 license.
+      Gemini CLI brings Gemini models to the command line, and in your game's project folder its built-in tools for file operations, shell commands, web fetching and Google Search grounding work on your code. Google released it as open source under the Apache 2.0 license.
 
-      Access has narrowed, though. On June 18, 2026, Gemini CLI stopped serving requests for free users and for Google AI Pro and Ultra subscribers, as Google announced in May. It still works with paid Gemini API keys and with Gemini Code Assist Standard or Enterprise licenses, and Google points everyone else to Antigravity CLI, part of Google Antigravity.
+      On June 18, 2026, Gemini CLI stopped serving requests for free users and for Google AI Pro and Ultra subscribers, as Google announced in May. It still works with paid Gemini API keys and with Gemini Code Assist Standard or Enterprise licenses, and Google points everyone else to Antigravity CLI, part of Google Antigravity.
     sources:
       - "https://github.com/google-gemini/gemini-cli"
       - "https://developers.googleblog.com/an-important-update-transitioning-gemini-cli-to-antigravity-cli/"
@@ -70,9 +70,9 @@ terms:
     maker: Cognition
     url: "https://devin.ai/"
     intro: |-
-      You hand Devin a task in the web app at app.devin.ai, from Slack or Microsoft Teams, through the Devin CLI or the API, and it works toward a pull request. It's Cognition's autonomous AI software engineer, and it writes, runs and tests code in a cloud environment with its own shell, code editor and browser.
+      Cognition built Devin as an autonomous AI software engineer that writes, runs and tests code in a cloud environment with its own shell, code editor and browser. You give it a task in the web app at app.devin.ai, from Slack or Microsoft Teams, through the Devin CLI or the API, and it works toward a pull request.
 
-      The docs name web app testing as one use of that browser, which suits browser games. Typical jobs include tickets from Jira or Linear, new features, bug fixes, migrations and pull request reviews.
+      Web app testing is one of the uses the docs name for that browser, next to tickets from Jira or Linear, new features, bug fixes, migrations and pull request reviews.
 
       Devin is also the name of a product family that includes Devin Desktop, the editor Cognition renamed from Windsurf on June 2. As of September 2026, cloud agents start with the Pro plan at $20 a month, and the free plan comes with a light quota.
     sources:
@@ -84,11 +84,11 @@ terms:
     name: OpenCode
     url: "https://opencode.ai/"
     intro: |-
-      BUNGR INC., where you work a burger line in a cursed kitchen to earn your freedom, was made with OpenCode. Anomaly makes that open-source coding agent under the MIT license, and it runs in the terminal, as an IDE extension and as a desktop app that's still in beta for macOS, Windows and Linux.
+      BUNGR INC., where you're the cook on a cursed burger line, making burgers to earn your freedom, was made with OpenCode. Anomaly makes the open-source coding agent under the MIT license, and it runs in the terminal, as an IDE extension and as a desktop app still in beta for macOS, Windows and Linux.
 
-      It isn't tied to one model maker, either. The site says it connects to more than 75 providers through Models.dev, from Claude, GPT and Gemini to local models, and some free models are included. You can also sign in with GitHub Copilot or a ChatGPT Plus or Pro account.
+      The site says it connects to more than 75 providers through Models.dev, from Claude, GPT and Gemini to local models, with some free models included. You can also sign in with GitHub Copilot or a ChatGPT Plus or Pro account.
 
-      For a game, you run it in the project folder with the build agent, which has full access, or the read-only plan agent for exploring code. MCP servers add tools, and the Blender MCP server lists OpenCode as a client for 3D work.
+      You run it in a game's project folder with the build agent, which has full access, or the read-only plan agent for exploring code, and for 3D work the Blender MCP server lists OpenCode as a client.
     sources:
       - "https://opencode.ai/"
       - "https://github.com/anomalyco/opencode"
@@ -137,11 +137,11 @@ terms:
     name: Warp
     url: "https://www.warp.dev/"
     intro: |-
-      In the Warp Terminal you work in your game's project folder with Warp's built-in agent or with command-line agents you bring, like Claude Code, Codex or Gemini CLI. Agents there can triage issues, write specs, implement changes and review pull requests.
+      In the Warp Terminal you work in your game's project folder with Warp's built-in agent or with the command-line agents you bring, like Claude Code, Codex or Gemini CLI, to triage issues, write specs, implement changes and review pull requests.
 
-      Warp is an agentic development environment that grew out of a terminal. The company Warp builds it in Rust, and the client code is open source on GitHub under the AGPL v3 license, with an MIT-licensed UI framework. It runs on macOS, Linux and Windows.
+      Warp grew out of a terminal into what the company calls an agentic development environment, built in Rust for macOS, Linux and Windows. The client code is open source on GitHub under the AGPL v3 license, with an MIT-licensed UI framework.
 
-      There's also a standalone Agent CLI and Warp Factories, which runs fleets of agents across a team's workflow. Models include Claude, GPT, Gemini and open-weight options, and you can bring your own.
+      There's also a standalone Agent CLI, plus Warp Factories for running fleets of agents across a team's workflow, and the models include Claude, GPT, Gemini and open-weight options, or your own.
     sources:
       - "https://github.com/warpdotdev/warp"
       - "https://www.warp.dev/"
@@ -151,13 +151,13 @@ terms:
     maker: Anysphere
     url: "https://cursor.com/"
     intro: |-
-      Tiny Skies, the biplane game on a small planet shared with other players, won Most Polished at Vibe Jam 2026, and Cursor is where it was built. Anysphere makes Cursor, and SpaceX completed its acquisition of the company on August 14, 2026.
+      Cursor is where Tiny Skies was built, the biplane game that won Most Polished at Vibe Jam 2026, with a tiny planet you share with other players. Anysphere makes the AI code editor and coding agent, and SpaceX completed its acquisition of the company on August 14, 2026.
 
-      It's an AI code editor and coding agent that runs as a desktop editor, a command-line tool and cloud agents, and it connects to Slack and GitHub. For a game, you open the project folder and hand tasks to the agent, which can scope bigger changes first in Plan Mode.
+      It's a desktop editor, a command-line tool and a set of cloud agents, and it connects to Slack and GitHub. For a game you open the project folder and hand tasks to the agent, which can scope bigger changes first in Plan Mode.
 
-      The built-in browser opens pages in a pane, clicks, takes screenshots and reads console errors, so the agent can actually load a browser game and check its own work. MCP servers reach further, and Unity's official server and the community Godot AI server both list Cursor as a client.
+      The built-in browser opens pages in a pane, clicks, takes screenshots and reads console errors, and with it the agent can load a browser game and check its own work. For engines, Unity's official MCP server and the community Godot AI server name Cursor among their clients.
 
-      Cursor has its own Composer models and also offers models from OpenAI, Anthropic, Google and other makers. As of September 2026, the free Hobby plan includes limited agent requests.
+      As of September 2026 the free Hobby plan includes limited agent requests, and besides its own Composer models, Cursor offers models from OpenAI, Anthropic, Google and other makers.
     sources:
       - "https://cursor.com/docs"
       - "https://cursor.com/docs/agent/browser"
@@ -226,11 +226,11 @@ terms:
     intro: |-
       Kiro really wants a plan before it writes code. Its spec-driven development turns a prompt into requirements, a design and a sequenced task list, and only then does it start writing.
 
-      Sky Break was made with it, along with Google Antigravity. The game's villain is a hostile AI whose attitude shifts from mockery to panic to desperation as you outplay it.
+      Sky Break was made with Kiro and Google Antigravity, and its villain is a self-copying AI that goes from mockery to panic to desperation as you outplay it.
 
       Kiro is an agentic IDE that Amazon Web Services builds and operates, introduced on July 14, 2025. It's built on Code OSS, so VS Code settings and Open VSX plugins carry over, and it also comes as a CLI, a web app and a mobile app. Hooks run automations when files change, and steering files keep project rules in place.
 
-      MCP servers connect other tools, and Unity lists Kiro as a client of its official MCP server. Models come from Anthropic, OpenAI and open-weight makers such as DeepSeek and Qwen, plus an Auto mode that picks one by task. As of September 2026, the free plan includes 50 credits, and Pro costs $20 a month for a thousand credits.
+      Unity lists Kiro as a client of its official MCP server, and the models come from Anthropic, OpenAI and open-weight makers such as DeepSeek and Qwen, plus an Auto mode that picks one by task. As of September 2026, the free plan includes 50 credits, and Pro costs $20 a month for a thousand credits.
     sources:
       - "https://kiro.dev/"
       - "https://kiro.dev/blog/introducing-kiro/"
@@ -308,11 +308,11 @@ terms:
     name: Continue
     url: "https://continue.dev/"
     intro: |-
-      Continue isn't maintained anymore. Its GitHub repository is read-only and no longer actively maintained, so it gets no further fixes or features, and its final 2.0.0 release removed anonymous telemetry and pulled out authentication.
+      Continue's GitHub repository is read-only for all users now, with no further fixes or features, and its final 2.0.0 release removed anonymous telemetry and pulled out authentication.
 
-      It was an open-source AI coding assistant under the Apache 2.0 license that ran as a VS Code extension, a JetBrains plugin and a command-line tool, and Continue was acquired by Cursor.
+      Continue Dev built it as an open-source coding assistant under the Apache 2.0 license, with a VS Code extension, a JetBrains plugin and a command-line tool that its README recommends over the plugin.
 
-      The notice on its site says the team's mission was to amplify developers rather than automate them, and that the open-source codebase remains freely available as a foundation for others.
+      The site notes that Cursor acquired Continue and that the open-source codebase stays freely available for other projects to build on.
     sources:
       - "https://www.continue.dev/"
       - "https://github.com/continuedev/continue"
@@ -322,13 +322,11 @@ terms:
     maker: Anthropic
     url: "https://claude.ai/"
     intro: |-
-      Sketching Fish, a crayon-drawn fishing game whose 75 species are all stationery puns, was made in the Claude app, Anthropic's chat assistant. It runs on the web at claude.ai, as desktop apps for macOS and Windows with a Linux beta, and as mobile apps for iOS and Android.
+      Rogue Memory, the AI Browser Game Jam 1 winner, was made in the Claude app, and so was Sketching Fish, a fishing game whose 75 species are all stationery puns. The app runs at claude.ai, on macOS and Windows with a Linux beta, and on iOS and Android.
 
-      For games, the feature to know is artifacts, which Anthropic introduced on June 21, 2024. Ask for a small browser game and Claude builds it as an interactive artifact in a side panel, where you play it and change it by chatting.
+      Artifacts, which Anthropic introduced on June 21, 2024 and includes on every plan, Free too, turn a request for a small browser game into an interactive piece in a side panel that you play and change by chatting.
 
-      Artifacts start private, and you can publish one with a public link that others can remix. AI-powered artifacts can even call Claude themselves, and players sign in with their own Claude account, so the maker pays no API costs.
-
-      Artifacts come with every plan, Free included, so you don't need to pay to make one. The desktop app also runs Claude Code for projects that outgrow one page.
+      You can publish an artifact with a public link that others can remix, and AI-powered artifacts can call Claude themselves while players sign in with their own Claude account, leaving the maker with no API costs. The desktop app also runs Claude Code for projects that outgrow one page.
     sources:
       - "https://support.claude.com/en/articles/9487310-what-are-artifacts-and-how-do-i-use-them"
       - "https://www.anthropic.com/news/claude-3-5-sonnet"
@@ -361,11 +359,11 @@ terms:
     maker: Google
     url: "https://gemini.google.com/"
     intro: |-
-      Google's Gemini app, the assistant built on its Gemini models, is where SKY WALKER was made. In that game you balance on a tightrope above a neon city while storms and wind push you around.
+      In SKY WALKER you keep a tightrope walker balanced above a procedurally generated city while storms and wind push against them, and its creator made it in the Gemini app, Google's assistant built on its Gemini models.
 
-      The app runs on the web and on Android and iOS. It writes, summarizes and helps with code, and it generates images too, plus video with Veo.
+      The app runs on the web and on Android and iOS, and besides writing, summarizing and helping with code, it generates images, plus video with Veo.
 
-      For games, Canvas is the part you want. You describe an idea, Canvas writes the code, and you preview the result, refine it by chatting and share it with a link. Google's own examples run from a sound memory game to a 3D planet generator.
+      In Canvas you describe an idea, it writes the code, and you preview the result, refine it by chatting and share it with a link. Google's own examples run from a sound memory game to a 3D planet generator.
 
       Canvas is available to every Gemini user, and Google AI Pro and Ultra subscribers get it with Gemini 3 and a 1-million-token context window. Projects open in the mobile apps, though text formatting edits only work on the desktop web version.
     sources:
@@ -378,11 +376,11 @@ terms:
     intro: |-
       In maltese snowwar, three Maltese dogs throw snowballs at a team of golden retrievers, in a fan tribute to the 1998 Flash game SnowCraft. Its creator made it with the Grok app and Grok Build.
 
-      The Grok app is the chat assistant from SpaceXAI, the company behind the Grok models, and the naming gets a bit tangled. SpaceXAI used to be xAI. SpaceX acquired it on February 2, 2026, and the new name came later.
+      The Grok app is the chat assistant from SpaceXAI, the company behind the Grok models, which was called xAI until SpaceX acquired it on February 2, 2026 and the new name followed.
 
       The app runs at grok.com, and SpaceXAI's Imagine models generate images and video, which developers can also reach through its API.
 
-      For building a game on your own computer, there's Grok Build, a coding agent with a full-screen terminal interface, a headless mode for scripts and Agent Client Protocol support for running inside other editors. It installs on macOS, Linux and Windows, the docs list grok-4.7 as the coding model behind it, and you sign in through the browser or with an xAI API key.
+      To build a game on your own computer there's Grok Build, a coding agent with a full-screen terminal interface, a headless mode for scripts and Agent Client Protocol support for running inside other editors. It installs on macOS, Linux and Windows, with grok-4.7 as its coding model, and you sign in through the browser or with an xAI API key.
     sources:
       - "https://docs.x.ai/build/overview"
       - "https://docs.x.ai/overview"
@@ -418,9 +416,9 @@ terms:
     name: Replit
     url: "https://replit.com/"
     intro: |-
-      Toxic Boss Cards pits you against 50 terrible bosses in card duels, and its creator built it on Replit. Replit's own site lists 3D games right next to apps, dashboards and mobile apps among the things its Agent builds.
+      Toxic Boss Cards, where you face a campaign of 50 terrible bosses in card duels, was built on Replit, whose site lists 3D games next to apps, dashboards and mobile apps among the things its Agent builds.
 
-      It's an online platform for building and publishing apps and websites with AI. You describe the game, the Agent writes the code and tests it in a browser, and you publish from the same place, so the game gets a live link without separate hosting. Authentication, a database, hosting and monitoring are built in.
+      It's an online platform for building and publishing apps and websites with AI, where the Agent writes your game's code from a description, tests it in a browser and publishes it to a live link without separate hosting. Authentication, a database, hosting and monitoring are built in.
 
       Replit runs in the browser, as desktop apps for macOS and Windows, and on iOS and Android. As of September 2026, a free mode needs no credit card, and paid plans start with Core at $20 a month.
     sources:
@@ -431,11 +429,11 @@ terms:
     name: Lovable
     url: "https://lovable.dev/"
     intro: |-
-      In Deep Sea Duel you pilot a shrimp or an axolotl with a diver on board and shoot it out underwater against another player online. Its creator built it with Lovable, a full-stack AI development platform where you make web apps by chatting.
+      In Deep Sea Duel you pilot a shrimp or an axolotl with a diver on board and shoot it out underwater against another player online. camryn_alvares built it with Lovable, the full-stack AI platform where you make web apps by chatting while it generates the frontend, backend, database, authentication and integrations as editable code.
 
-      Lovable generates the frontend, backend, database, authentication and integrations as editable code, and its docs list games and interactive content among the things people build. You describe the app, try it in Lovable's preview, publish it to a live URL and, when you want to deploy elsewhere, sync the code to GitHub, GitLab or Bitbucket.
+      You describe the app, try it in Lovable's preview and publish it to a live URL, or sync the code to GitHub, GitLab or Bitbucket to deploy it somewhere else. Games and interactive content are on the docs' list of things people build there.
 
-      The output is a web app, so a game made there runs in the browser, and the generated backend can hold player accounts and data. Plans are priced by credits, and as of September 2026 the free plan grants 5 build credits a day, up to 30 a month.
+      Necrotic Dungeon, an old-school dungeon crawler in a haunted dark fantasy setting, was built there too. Plans are priced in credits, and as of September 2026 the free plan grants 5 build credits a day, up to 30 a month.
     sources:
       - "https://docs.lovable.dev/introduction/welcome"
       - "https://lovable.dev/pricing"
@@ -444,11 +442,11 @@ terms:
     maker: StackBlitz
     url: "https://bolt.new/"
     intro: |-
-      Bolt, at bolt.new, turns a chat into websites and apps, and it was one of three tools behind GRAVITON, along with Cursor and the Claude app. In that game you circle a star and fire photon beams that curve through gravity wells.
+      GRAVITON, where you circle a star and fire photon beams that bend through its gravity at waves of enemies, was made with Cursor, the Claude app and Bolt, which turns a chat at bolt.new into websites and apps.
 
-      Its help center lists marketing sites, portfolios, online stores, dashboards and internal tools, and when you ask for a mobile app, Bolt builds it with Expo for iPhone and Android. Plan Mode lets you talk an idea through before Bolt writes any code.
+      Its help center lists marketing sites, portfolios, online stores, dashboards and internal tools, and a mobile app request gets built with Expo for iPhone and Android, with Plan Mode for talking an idea through before any code is written.
 
-      When the game works, Bolt Cloud publishes it to a live website, with a database and third-party domains available, and projects can connect to GitHub. Bolt picks the model for each task, balancing quality and cost.
+      When the game works, Bolt Cloud publishes it to a live website, with a database and third-party domains available, projects can connect to GitHub, and Bolt picks the model for each task to balance quality and cost.
 
       As of September 2026, the free plan allows 300K tokens a day and 1M a month, and free sites carry Bolt branding.
     sources:
@@ -502,9 +500,9 @@ terms:
     maker: SpaceXAI
     url: https://docs.x.ai/build/overview
     intro: |-
-      Oddly enough, in Void Surge you never aim or fire. Every weapon triggers by itself while you move a lone survivor around a space station, and the game was made with Grok Build, SpaceXAI's AI coding agent.
+      In Void Surge you never aim or fire, since every weapon triggers by itself while you move a lone survivor around a space station, and the game was made with Grok Build, SpaceXAI's AI coding agent.
 
-      The agent runs in a terminal as an interactive interface or in scripts, and editors can integrate it through the Agent Client Protocol. Grok also offers building on the web and in its iOS and Android apps.
+      The agent runs in a terminal, interactively or in scripts, and editors can integrate it through the Agent Client Protocol, while Grok's web and iOS and Android apps offer building too.
 
       For a browser game, you can start the terminal agent in your project folder to read and edit code and run builds and tests. In Grok's web or mobile chat, you describe a game and it builds a working version, which you can publish at a grok.me address, choose who can open, or export to GitHub to keep going in an editor.
 
@@ -577,11 +575,11 @@ terms:
     name: Astrocade
     url: https://www.astrocade.com/
     intro: |-
-      Describe the game you want to make in Astrocade, then keep asking for changes as you try the result. You don't need to write code, and those follow-up requests can change something as small as a hitbox or how a character turns.
+      Astrocade has you describe a game and then keep asking for changes as you try it, down to a hitbox or how a character turns, while the same tool makes the art, background music, sound effects, animations and UI elements.
 
-      Art and sound come from the same place, so you can ask for a new background or music while you work on the game. Astrocade supports 2D and 3D browser games, and publishing puts them on a platform where players browse a feed and share what they find.
+      Its 2D and 3D browser games publish to Astrocade's own platform, where players browse a feed and share what they find, and creators can join Office Hours with the team, Game Nights and an Ambassador Program.
 
-      As of October 2026, Astrocade says its creation tools and asset generators are free.
+      Astrocade's blog calls the platform 100% free, every tool and asset generator included, and says games that reach 100,000 plays in the last 30 days are invited into its Creator Economy Program to earn money from them.
     sources:
       - https://www.astrocade.com/
       - https://www.astrocade.com/create
@@ -593,11 +591,13 @@ terms:
     maker: Dreamsands, Inc.
     url: https://tesana.com/
     intro: |-
-      Start with a game idea in Tesana's chat, and the live preview sits beside the conversation while the AI builds it. You can try a change, ask for another, and roll back a build if it's gone in the wrong direction.
+      In Boneyard Rally you race a skeleton kart through a graveyard against five rivals, and in Brass Rain you run and shoot across a desert with a friend able to drop in, and both were made in Tesana.
 
-      The games run in a browser, in either 2D or 3D, and you don't need to write code to make one. A published game gets its own store page and appears in the marketplace, where other people can find it and play.
+      In Tesana's chat a live preview sits beside the conversation while the AI builds your idea, and you can try a change, ask for another and roll back a build if it's gone in the wrong direction.
 
-      As of October 2026, you can start on a free plan with daily credits, capped each month. Pro adds public publishing and downloads of your original game's source code, plus Windows and macOS exports.
+      The games run in a browser, in 2D or 3D, with no code to write, and a published game gets its own store page in the marketplace, where other people can find it and play.
+
+      As of October 2026 the free plan comes with daily credits, capped each month, and Pro adds public publishing and downloads of your original game's source code, plus Windows and macOS exports.
     sources:
       - https://tesana.com/
       - https://tesana.com/help
@@ -625,13 +625,13 @@ terms:
     maker: AI Tools, Inc.
     url: https://www.spawn.co/
     intro: |-
-      In Spawn you build a game by talking to Savi, then keep the conversation going as you change the terrain, characters or rules. You can also fly around in God Mode and move objects yourself, so a chat message isn't your only way to adjust the world.
+      In Spawn you build a game by talking to Savi and keep the conversation going as you change the terrain, the characters or the rules, or you fly around in God Mode and move objects yourself.
 
-      You can make 2D or 3D games, and friends can even try an unfinished version while you keep building. Games run in a browser, including on phones, though ones marked Desktop only need a computer.
+      Games can be 2D or 3D, friends can try an unfinished version while you keep building, and they run in a browser, phones included, unless they're marked Desktop only.
 
-      Publishing puts a game in the homepage's New section, and you can send people its link to play.
+      A published game shows up in the New section of Spawn's homepage, with a link you can send to people.
 
-      As of October 2026, creating and playing are free, with Savi included and no separate AI subscription needed. Spawn says Savi runs on Claude Opus 5.5 by default.
+      As of October 2026, creating and playing on Spawn are free, Savi included, with no separate AI subscription, and Spawn says Savi runs on Claude Opus 5.5 by default.
     sources:
       - https://www.spawn.co/
       - https://www.spawn.co/privacy-policy
@@ -642,9 +642,9 @@ terms:
     intro: |-
       Describe a 3D game in Bitmagic's browser Creator and change it through prompts as the scene takes shape. If you'd like to work in code, its GDK gives your coding agent a project with the engine included as editable TypeScript.
 
-      The two routes share an account and publishing system, so either can lead to a game people play in their browser. Each game gets a page with cover art and a play button, and public releases can appear in Bitmagic's discovery feed. GDK uploads start private until you choose to list them publicly.
+      Either route ends in a game people play in their browser, on a page with cover art and a play button, and public releases can appear in Bitmagic's discovery feed, while GDK uploads stay private until you list them.
 
-      As of October 2026, the browser Creator is free to start, but the GDK requires Bitmagic Pro. Free Creator sessions can have a queue when too many people are editing at once.
+      As of October 2026 the browser Creator is free to start and the GDK needs Bitmagic Pro, and free Creator sessions can have a queue when too many people are editing at once.
     sources:
       - https://bitmagic.ai/
       - https://bitmagic.ai/about/
