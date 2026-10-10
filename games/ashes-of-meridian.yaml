@@ -1,7 +1,19 @@
 slug: ashes-of-meridian
 title: Ashes of Meridian
-tagline: Submitted by its creator; the description is added during review.
-description: ""
+tagline: Build a base, win the fight and carry your upgrades on until one defeat ends the run.
+description: "Ashes of Meridian has you land with your workers, build your own HQ and win the battle, then pick an expedition bonus and move on to the next world. It's real-time strategy inside a roguelite run, so a single defeat ends the whole expedition.
+
+
+  Three factions. Six kinds of landscape, with every expedition map grown from a seed. A fixed loadout of four commands for each run. Civilization buildings that grow on their own and carry upgrades into later battles. Bonuses that stack across every world you clear in a run. A Codex with the story and every faction, unlocked or not.
+
+
+  Drag with one finger or the right mouse button to move the camera, and turn it with two fingers or the middle button. Pinch or scroll to zoom. Tap or left-click to select, drag to grab several units, then tap a target or right-click to give an order.
+
+
+  mktcode likes StarCraft and wanted a simpler version for long bathroom breaks. They say they couldn't stop prompting once they'd started and spent their entire usage limit on it for a week, all without looking at the code once.
+
+
+  By their own account it's still a prototype, and the core gameplay and the upgrades through civil buildings need a lot more refinement."
 play:
   url: https://mktcode.itch.io/ashes-of-meridian
   platforms:
@@ -9,6 +21,7 @@ play:
   embedPermission:
     by: submission
     date: 2026-10-10
+  embeddable: false
 repo: https://github.com/mktcode/ashes-of-meridian
 creator:
   name: mktcode
@@ -25,19 +38,13 @@ made:
   source: "Creator's submission (issue #147)"
   evidence: creator
   notes: >-
-    I like Starcraft and wanted to have a simplified version for longer toilette
-    sessions. Then I couldn't stop prompting and spending my entire usage limit
-    on it for a week.
+    I like Starcraft and wanted to have a simplified version for longer toilette sessions. Then I couldn't stop prompting and spending my entire usage limit on it for a week.
 
 
-    The core gameplay and upgrade mechanics via civil buildings still needs a
-    lot of refinement but I didn't expect to get that far without looking and
-    the code once. I do have some experience as a developer though. I know where
-    the bottlenecks are and what to ask an LLM.
+    The core gameplay and upgrade mechanics via civil buildings still needs a lot of refinement but I didn't expect to get that far without looking and the code once. I do have some experience as a developer though. I know where the bottlenecks are and what to ask an LLM.
 
 
-    Any positive feedback will definitely keep me from getting bored quite so
-    soon.
+    Any positive feedback will definitely keep me from getting bored quite so soon.
 tech:
   engine: canvas
   multiplayer: single
