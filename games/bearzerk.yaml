@@ -1,25 +1,26 @@
 slug: bearzerk
 title: Bearzerk!
-tagline: Hold out from dawn to nightfall as a gummy bear while a candy swarm grows around you.
-description: "Play a see-through gummy bear on a candy planet, from sunrise to the
-  final boss that rises at nightfall. Your weapons fire on their own while the
-  planet's candy creatures close in from every side, more of them every
+tagline: Hold out from dawn to nightfall as a gummy bear while a candy swarm
+  grows around you.
+description: "Play a see-through gummy bear on a candy planet, from sunrise to
+  the final boss that rises at nightfall. Your weapons fire on their own while
+  the planet's candy creatures close in from every side, more of them every
   minute.
 
 
   22 weapons, each with an evolution, plus two unions that fuse a pair of maxed
-  weapons. 22 passives. Four candy biomes with
-  rivers of syrup, caramel or soda. Eight bosses, four in each run, one every
-  five minutes. Golden Gumdrops to chase down and a herd of Mallow Bison that
-  tramples the swarm. Six bear flavors, each with its own starting weapon. A
-  Candy Shop for upgrades between runs, a Codex and a Daily World.
+  weapons. 22 passives. Four candy biomes with rivers of syrup, caramel or soda.
+  Eight bosses, four in each run, one every five minutes. Golden Gumdrops to
+  chase down and a herd of Mallow Bison that tramples the swarm. Six bear
+  flavors, each with its own starting weapon. A Candy Shop for upgrades between
+  runs, a Codex and a Daily World.
 
 
-  Move with WASD or the arrow keys, or hold the left mouse button to walk
-  toward the cursor. Jump with Space or a right-click to clear shockwave rings.
-  Pick an upgrade every time you level up. Max a weapon while you hold its
-  matching passive, then open a Candy Box to evolve it. Stand in a Candy
-  Altar's circle for a few seconds to claim its boon.
+  Move with WASD or the arrow keys, or hold the left mouse button to walk toward
+  the cursor. Jump with Space or a right-click to clear shockwave rings. Pick an
+  upgrade every time you level up. Max a weapon while you hold its matching
+  passive, then open a Candy Box to evolve it. Stand in a Candy Altar's circle
+  for a few seconds to claim its boon.
 
 
   Play it in a desktop browser for now, since it isn't built for phones yet."
@@ -77,3 +78,9 @@ dates:
 status: live
 provenance:
   foundVia: pr
+videos:
+  - youtube: fa9-Tged5qs
+    title: We vibe coded 15,000 candy enemies with Claude Opus 5.5
+    channel: GamesByAI
+    channelId: UCZQ9z0_JDA8PA3qW4B8CMsQ
+    added: 2026-10-10
