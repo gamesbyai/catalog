@@ -1,0 +1,60 @@
+slug: ashes-of-meridian
+title: Ashes of Meridian
+tagline: Submitted by its creator; the description is added during review.
+description: ""
+play:
+  url: https://mktcode.itch.io/ashes-of-meridian
+  platforms:
+    - browser
+  embedPermission:
+    by: submission
+    date: 2026-10-10
+repo: https://github.com/mktcode/ashes-of-meridian
+creator:
+  name: mktcode
+  handle: mktcode
+  links:
+    - https://github.com/mktcode
+made:
+  models:
+    - gpt-6-1-sol
+    - gpt-6-astra
+  tools:
+    - pi
+  aiShare: all
+  source: "Creator's submission (issue #147)"
+  evidence: creator
+  notes: >-
+    I like Starcraft and wanted to have a simplified version for longer toilette
+    sessions. Then I couldn't stop prompting and spending my entire usage limit
+    on it for a week.
+
+
+    The core gameplay and upgrade mechanics via civil buildings still needs a
+    lot of refinement but I didn't expect to get that far without looking and
+    the code once. I do have some experience as a developer though. I know where
+    the bottlenecks are and what to ask an LLM.
+
+
+    Any positive feedback will definitely keep me from getting bored quite so
+    soon.
+tech:
+  engine: canvas
+  multiplayer: single
+genres:
+  - strategy
+media:
+  cover: games/ashes-of-meridian/cover
+  screenshots:
+    - games/ashes-of-meridian/shot-1
+    - games/ashes-of-meridian/shot-2
+dates:
+  added: 2026-10-10
+  updated: 2026-10-10
+status: live
+provenance:
+  foundVia: form
+  submittedBy: "#147"
+  uploads:
+    ref: 176dc180421b0f6a
+    count: 3
