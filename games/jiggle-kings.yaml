@@ -1,0 +1,75 @@
+slug: jiggle-kings
+title: JIGGLE KINGS
+tagline: Hold out 15 minutes as a jelly king against a candy horde, alone or with three friends.
+description: "Hold out for 15 minutes on a toy island as a wobbly gelatin king, alone
+  or with up to three friends online, while candy creatures close in from every
+  side. Your toys fire on their own, and your own body counts as a weapon too,
+  so a slam, a belly bump or a roll sends candy flying.
+
+
+  12 weapons, each with an evolution, and 12 passives. Three bosses, one every
+  five minutes, and beating The Sundae Sovereign at the end wins the run. Co-op
+  for one to four kings with shared XP, separate builds and revives. Parties by
+  code or quick play. Enemies that
+  tumble, get launched and drown in the sea when you knock them in. A gauntlet of
+  chainsaws, saw blades and wrecking balls that shreds candy and only bumps kings.
+
+
+  Move with WASD and jump with Space. Slam or belly bump with Ctrl or the left
+  mouse button, and roll with Shift or the right mouse button. Pick an upgrade
+  card every level with 1, 2 or 3. Max a weapon while you hold its paired
+  passive, and the next chest or level-up offers its evolution. Stand next to a
+  downed friend for a few seconds to bring them back.
+
+
+  It's made for a desktop browser with a keyboard and mouse or a gamepad, and it
+  isn't built for phones."
+play:
+  url: https://gamesbyai.github.io/jiggle-kings/
+  platforms:
+    - browser
+  controls:
+    - WASD to move, mouse to look
+    - Space to jump
+    - Ctrl or left mouse button to slam or belly bump
+    - Shift or right mouse button to roll
+    - 1, 2 or 3 to pick an upgrade card
+    - 5 to 8 for emotes
+    - Esc to pause
+    - "Gamepad: left stick to move, A to jump, B to slam, X to roll"
+  embedPermission:
+    by: submission
+    date: 2026-10-11
+  embeddable: true
+creator:
+  name: GamesByAI
+  handle: gamesbyai
+  links:
+    - https://gamesbyai.win/
+  x: GamesByAI
+  youtube: "@GamesByAI-win"
+made:
+  models:
+    - claude-opus-5-5
+  tools:
+    - claude-code
+  aiShare: all
+  source: "GamesByAI's own build notes: we made the game"
+  evidence: creator
+tech:
+  engine: threejs
+  multiplayer: online
+genres:
+  - roguelike
+  - action
+media:
+  cover: games/jiggle-kings/cover
+  screenshots:
+    - games/jiggle-kings/shot-1
+    - games/jiggle-kings/shot-2
+dates:
+  added: 2026-10-11
+  updated: 2026-10-11
+status: live
+provenance:
+  foundVia: pr
