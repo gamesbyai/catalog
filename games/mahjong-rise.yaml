@@ -1,0 +1,46 @@
+slug: mahjong-rise
+title: Mahjong Rise
+tagline: Submitted by its creator; the description is added during review.
+description: ""
+play:
+  url: https://play.google.com/store/apps/details?id=com.rise.mahjong
+  platforms:
+    - browser
+  embedPermission:
+    by: submission
+    date: 2026-10-12
+creator:
+  name: Oleksii Hnylytskyi
+  handle: oleksii-hnylytskyi
+made:
+  models: []
+  tools:
+    - cursor
+  aiShare: all
+  source: "Creator's submission (issue #152)"
+  evidence: creator
+  notes: "I'm a solo developer from Pervomaisk, Ukraine. I built Mahjong Rise
+    entirely with AI: the code was written by AI in Cursor, and the art and
+    texts were made with AI too. My part was the idea, the decisions and testing
+    on my phone. It's a calm mahjong tile solitaire with a small yard you grow
+    around it; neighbours only appear if both players agree. It's live on Google
+    Play."
+tech:
+  engine: flutter
+  multiplayer: single
+genres:
+  - puzzle
+  - casual
+  - board
+media:
+  cover: games/mahjong-rise/cover
+  screenshots:
+    - games/mahjong-rise/shot-1
+    - games/mahjong-rise/shot-2
+dates:
+  added: 2026-10-12
+  updated: 2026-10-12
+status: live
+provenance:
+  foundVia: form
+  submittedBy: "#152"
