@@ -1,0 +1,80 @@
+slug: penguin-smack
+title: Penguin Smack
+tagline: One swing of a yeti's bat sends a penguin bouncing down an endless frozen lake.
+description: "A penguin slides down an ice chute and arcs toward a furry yeti holding
+  a baseball bat. You get one swing. Catch it in the ring for a PERFECT smack and
+  the penguin leaves the bat at well over 200 km/h, then flies, bounces and skids
+  down an endless frozen lake while you watch.
+
+
+  The swing is the only input. After it, the lake decides: glowing boost pads,
+  trampolines, exploding barrels, gummy bumpers, wind tunnels, ice ramps, rockets
+  the penguin rides for a few seconds, and a rare cannon that fires it back into
+  the sky. Every hit in a row grows a chain that adds speed. Ice walls cost speed
+  and halve the chain, and snow drifts slow it down.
+
+
+  Golden fish hang in arcs over the ice. Each fish adds a little speed, and
+  catching a whole arc sets off a Fish Frenzy that throws the penguin forward and
+  up. Most runs end after a few hundred metres; the lucky ones go past five
+  kilometres.
+
+
+  Every run goes on a worldwide leaderboard, next to a live count of every
+  penguin smacked. Put your own name on the board or keep the random one it gives
+  you, and share a run to X, Bluesky, Threads, Facebook or WhatsApp from the
+  results screen.
+
+
+  It plays in the browser on a phone, in portrait or landscape, or on a desktop.
+  Tap the screen, click, press Space or press A on a gamepad to swing."
+play:
+  url: https://penguinsmack.pages.dev/
+  platforms:
+    - browser
+    - mobile
+  controls:
+    - Tap, click or press Space to swing
+    - "Gamepad: A to swing"
+    - M mutes the sound, N turns the music off, L opens the leaderboard
+  embedPermission:
+    by: submission
+    date: 2026-10-13
+  embeddable: true
+creator:
+  name: GamesByAI
+  handle: gamesbyai
+  links:
+    - https://gamesbyai.win/
+  x: GamesByAI
+  youtube: "@GamesByAI-win"
+made:
+  models:
+    - claude-opus-5-5
+    - gpt-6-1-sol
+  tools:
+    - claude-code
+    - codex
+  aiShare: all
+  source: "GamesByAI's own build notes: we made the game"
+  evidence: creator
+  notes: >-
+    Made with Claude Opus 5.5 in Claude Code. Codex on GPT-6.1 Sol generated the
+    textures, the logo and the share art. The sounds and music come from Pixabay.
+tech:
+  engine: threejs
+  multiplayer: single
+genres:
+  - arcade
+  - casual
+media:
+  cover: games/penguin-smack/cover
+  screenshots:
+    - games/penguin-smack/shot-1
+    - games/penguin-smack/shot-2
+dates:
+  added: 2026-10-13
+  updated: 2026-10-13
+status: live
+provenance:
+  foundVia: pr
