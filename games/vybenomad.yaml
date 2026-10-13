@@ -1,7 +1,16 @@
 slug: vybenomad
 title: VybeNomad
-tagline: Submitted by its creator; the description is added during review.
-description: ""
+tagline: Travel from city to city, launch products and manage your burnout.
+description: "You play a digital nomad who moves between cities and builds income from your own projects.
+
+
+  Cities such as Lisbon, Tokyo and Mexico City. Launched products that gain subscribers and monthly revenue. More subscribers from product launches in Bali. Burnout to track alongside your income. Different daily living costs in each city. Chapters, each with a goal such as visiting different cities.
+
+
+  Open Travel, pick a city on the map or in the list, then click the Travel button for it. Open Projects to start a new one or check on your existing ones. Use the speed buttons to pause or speed up time.
+
+
+  Albert Simon first made the game in 2025, then rebuilt almost all of it in 2026 with AI tools. They designed it, tuned its economy, chose the cities and checked every build manually. The music and artwork were also made with AI."
 play:
   url: https://vaigames.com/vybenomad/
   platforms:
@@ -9,6 +18,7 @@ play:
   embedPermission:
     by: submission
     date: 2026-10-13
+  embeddable: true
 creator:
   name: Albert Simon
   handle: albertsimondev
@@ -22,11 +32,7 @@ made:
   aiShare: most
   source: "Creator's submission (issue #154)"
   evidence: creator
-  notes: "First made for Vibe Jam 2025. In 2026 I rebuilt almost all of it with
-    Claude Code and Grok: new gameplay systems, better Three.js graphics and
-    many new screens. Music made with Suno, artwork with fal.ai. I designed the
-    game, tuned the economy and burnout balance, picked the cities and tested
-    every build by hand."
+  notes: "First made for Vibe Jam 2025. In 2026 I rebuilt almost all of it with Claude Code and Grok: new gameplay systems, better Three.js graphics and many new screens. Music made with Suno, artwork with fal.ai. I designed the game, tuned the economy and burnout balance, picked the cities and tested every build by hand."
 tech:
   engine: threejs
   multiplayer: single
