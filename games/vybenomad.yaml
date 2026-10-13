@@ -1,0 +1,49 @@
+slug: vybenomad
+title: VybeNomad
+tagline: Submitted by its creator; the description is added during review.
+description: ""
+play:
+  url: https://vaigames.com/vybenomad/
+  platforms:
+    - browser
+  embedPermission:
+    by: submission
+    date: 2026-10-13
+creator:
+  name: Albert Simon
+  handle: albertsimondev
+  x: AlbertSimonDev
+made:
+  models:
+    - claude-fable-5-1
+    - grok-4-7
+  tools:
+    - claude-code
+  aiShare: most
+  source: "Creator's submission (issue #154)"
+  evidence: creator
+  notes: "First made for Vibe Jam 2025. In 2026 I rebuilt almost all of it with
+    Claude Code and Grok: new gameplay systems, better Three.js graphics and
+    many new screens. Music made with Suno, artwork with fal.ai. I designed the
+    game, tuned the economy and burnout balance, picked the cities and tested
+    every build by hand."
+tech:
+  engine: threejs
+  multiplayer: single
+genres:
+  - simulation
+media:
+  cover: games/vybenomad/cover
+  screenshots:
+    - games/vybenomad/shot-1
+    - games/vybenomad/shot-2
+dates:
+  added: 2026-10-13
+  updated: 2026-10-13
+status: live
+provenance:
+  foundVia: form
+  submittedBy: "#154"
+  uploads:
+    ref: 2916c41199f3c77d
+    count: 3
