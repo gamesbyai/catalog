@@ -1,0 +1,68 @@
+slug: cross-current
+title: Cross Current
+tagline: Find the one sequence of card plays that wins two lanes on the final turn of a match.
+description: >-
+  You start on the final turn with six energy, behind in all three lanes, and
+  only one sequence of plays wins the match from there. Card order matters,
+  because it decides where your cards end up and which bonuses they get.
+
+
+  No turn after this one, and an opponent who makes no further plays. Reveal
+  effects that resolve in the order you play your cards. Tidewright, a card
+  that moves your weakest other ally to the next lane. Two Lone Spire lanes,
+  where a side with exactly one card gets +5 power. Driftling, already on the
+  board, gaining +3 whenever it moves. Guest play in the browser, no account
+  needed.
+
+
+  Drag cards from your hand onto lanes and press End Turn when you're done. Tap
+  or hold a card or location to read its effect. Win more lanes than your
+  opponent, and if that's tied, higher total power wins.
+
+
+  Cross Current is a final-turn puzzle from Sixth Sigil, Eric Crook's free
+  browser card game, which used to be called Aether Vanguard. The game's site
+  says its graphics and narrative text are AI-generated and its code is
+  AI-assisted.
+play:
+  url: https://sixthsigil.com/aethervanguard/?puzzle=cross-current
+  embeddable: false
+  platforms:
+    - browser
+    - mobile
+  controls:
+    - "Drag: play a card onto a lane"
+    - "Tap or hold: inspect a card or location"
+creator:
+  name: Eric Crook
+  handle: eric-crook
+  links:
+    - https://sixthsigil.com/
+    - https://theredwizard.net/
+    - https://thereddestwizard.itch.io/aether-vanguard
+made:
+  models: []
+  tools: []
+  aiShare: unknown
+  source: "The game's AI disclosure on sixthsigil.com"
+  evidence: creator
+  evidenceUrl: https://sixthsigil.com/
+  notes: "The project includes AI-generated graphics and narrative text, and
+    AI-assisted code."
+tech:
+  engine: phaser
+  multiplayer: single
+genres:
+  - puzzle
+  - card
+media:
+  cover: games/cross-current/cover
+  screenshots:
+    - games/cross-current/shot-1
+    - games/cross-current/shot-2
+dates:
+  added: 2026-10-13
+  updated: 2026-10-13
+status: live
+provenance:
+  foundVia: scout:email
