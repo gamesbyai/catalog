@@ -42,9 +42,12 @@ creator:
     - https://thereddestwizard.itch.io/aether-vanguard
 made:
   models: []
-  tools: []
+  providers:
+    - anthropic
+  tools:
+    - claude-code
   aiShare: unknown
-  source: "The game's AI disclosure on sixthsigil.com"
+  source: "The game's AI disclosure on sixthsigil.com and the creator's email"
   evidence: creator
   evidenceUrl: https://sixthsigil.com/
   notes: "The project includes AI-generated graphics and narrative text, and
@@ -59,10 +62,9 @@ media:
   cover: games/cross-current/cover
   screenshots:
     - games/cross-current/shot-1
-    - games/cross-current/shot-2
 dates:
-  added: 2026-10-13
-  updated: 2026-10-13
+  added: 2026-10-14
+  updated: 2026-10-14
 status: live
 provenance:
   foundVia: scout:email
