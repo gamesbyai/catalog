@@ -1,0 +1,51 @@
+slug: bubenjump-2026
+title: Bubenjump 2026
+tagline: Submitted by its creator; the description is added during review.
+description: ""
+play:
+  url: https://bubenjump.xyz/
+  platforms:
+    - browser
+  embedPermission:
+    by: submission
+    date: 2026-10-15
+creator:
+  name: Krischan
+  handle: randalaise
+  x: randalaise
+made:
+  models:
+    - claude-fable-5-1
+    - claude-opus-5-5
+  tools:
+    - claude-ai
+  aiShare: all
+  source: "Creator's submission (issue #164)"
+  evidence: creator
+  notes: >-
+    All the graphics are drawn in code on a canvas, the jumpers and their faces
+    included. The only external assets are the music (by ssilk) and a few
+    sounds.
+
+    How I worked: I’d describe a feature, Claude Code built it in its own git
+    branch, and I played it in a local preview and complained until it felt
+    right. A lot of the feedback was screenshots with comments like “this layout
+    is cluttered” or “why is he raising his arms in the portrait”. My friends
+    have played it since the beginning, and most of the backlog came from them.
+tech:
+  multiplayer: online
+genres:
+  - simulation
+  - sports
+media:
+  cover: games/bubenjump-2026/cover
+  screenshots:
+    - games/bubenjump-2026/shot-1
+    - games/bubenjump-2026/shot-2
+dates:
+  added: 2026-10-15
+  updated: 2026-10-15
+status: live
+provenance:
+  foundVia: form
+  submittedBy: "#164"
