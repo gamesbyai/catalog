@@ -1,0 +1,51 @@
+slug: the-workshop-of-stopped-clocks-room-esca
+title: The Workshop of Stopped Clocks — Room Escape
+tagline: Submitted by its creator; the description is added during review.
+description: ""
+play:
+  url: https://roomescape.dev/?play=1&theme=stopped-clocks&lang=en
+  platforms:
+    - browser
+  embedPermission:
+    by: submission
+    date: 2026-10-15
+creator:
+  name: Room Escape
+  handle: roomescapedev
+  youtube: "@RoomEscapeDev"
+made:
+  models: []
+  tools:
+    - codex
+  aiShare: most
+  source: "Creator's submission (issue #159)"
+  evidence: creator
+  notes: Built with extensive Codex-assisted programming and AI-generated artwork;
+    Three.js powers the 3D rooms and object interactions. The creator reviews
+    and iterates on the experience. Grandfather died last winter; his workshop
+    will be cleared tomorrow. A letter and key guide your search. PC has
+    keyboard/mouse controls; mobile has built-in touch controls. Early release,
+    currently free, Google sign-in required, 60-minute limit. Please keep
+    screenshots to the opening room, without solutions, later rooms or ending.
+    Codex helps operate this account. Please link to our site rather than embed.
+tech:
+  engine: threejs
+  multiplayer: single
+genres:
+  - puzzle
+  - adventure
+media:
+  cover: games/the-workshop-of-stopped-clocks-room-esca/cover
+  screenshots:
+    - games/the-workshop-of-stopped-clocks-room-esca/shot-1
+    - games/the-workshop-of-stopped-clocks-room-esca/shot-2
+dates:
+  added: 2026-10-15
+  updated: 2026-10-15
+status: live
+provenance:
+  foundVia: form
+  submittedBy: "#159"
+  uploads:
+    ref: 085ea10b884d0d85
+    count: 1
