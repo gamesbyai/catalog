@@ -1,0 +1,74 @@
+slug: midgard-arena
+title: Midgard Arena
+tagline: Build a party of anime heroes, hunt on auto or by hand, and duel real players 4v4.
+description: >-
+  Heroes who fell before reaching Valhalla wake up on Hjartaminni, an island
+  outside time, and you lead a party of four of them across it. Your party can
+  hunt on its own, and you take over for bosses, campaign battles and PvP.
+
+
+  Seven classes and 35 heroes, five per class from Common to Legendary. Eight
+  runes per class, four equipped on each hero, with fusion up to level 5.
+  Memory Sparks, which turn duplicate heroes into backstory and a higher level
+  cap. A ten-stage campaign across Sigrava's Isle, with dark dungeons in the
+  first four. Offline Mode, so your party keeps hunting while
+  the game's closed. Live 4v4 PvP rooms and friendly duels with players you
+  meet in the field.
+
+
+  Make a free account with email or Google, then pick a stage on the map and
+  walk it yourself or switch on Auto. Summon new heroes with Ember earned from
+  hunts, quests and battles, or buy Ember from other players at the Millennial
+  Fair. The only summon you pay for is the limited Founder's Wish.
+
+
+  According to the team, AI wrote most of the code, from the web client to the
+  backend and the live PvP, while the game design is their own. It's free to
+  play and still in alpha.
+play:
+  url: https://midgardarena.com/
+  embeddable: false
+  platforms:
+    - browser
+    - desktop
+creator:
+  name: Midgard Arena Team
+  handle: midgard-arena-team
+  links:
+    - https://midgardarena.com/
+    - https://discord.com/invite/AJR2uaevQV
+made:
+  models: []
+  providers:
+    - anthropic
+    - openai
+  tools:
+    - claude-code
+    - chatgpt
+  aiShare: most
+  source: "Creator's email submission"
+  evidence: creator
+  notes: "Midgard Arena is an anime idle MMORPG made by a small indie team. AI
+    wrote most of the code, mainly with Claude Code: the React web client, the
+    backend and live 4v4 PvP. We used ChatGPT, Kling and ElevenLabs across code,
+    art, animation and audio. The game design is ours: 7 classes, 35 heroes, 56
+    runes, Memory Sparks, a 10-stage campaign, offline hunting and a player-run
+    market. Free to play, no pay-to-win, currently in alpha."
+tech:
+  engine: react
+  multiplayer: online
+genres:
+  - idle
+  - rpg
+  - strategy
+media:
+  cover: games/midgard-arena/cover
+  screenshots:
+    - games/midgard-arena/shot-1
+    - games/midgard-arena/shot-2
+dates:
+  added: 2026-10-15
+  updated: 2026-10-15
+status: live
+provenance:
+  foundVia: scout:email
