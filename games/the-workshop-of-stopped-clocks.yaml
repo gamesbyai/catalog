@@ -1,0 +1,60 @@
+slug: the-workshop-of-stopped-clocks
+title: The Workshop of Stopped Clocks
+tagline: Search your late grandfather's workshop of stopped clocks before it's cleared.
+description: >-
+  Your grandfather left you a letter and a key, and his workshop is about to be
+  cleared out. It's a first-person 3D room full of stopped clocks, and somewhere
+  in it is whatever he meant to leave you.
+
+
+  One room and a sixty-minute limit. Every answer hidden somewhere in the room
+  as a clue. Drawers to open, notes to read and codes to dial into locks. A
+  drama and mystery theme, rated three stars for difficulty and none for fear.
+  Free, with your progress and records kept on your account across devices.
+
+
+  Sign in with your Google account and open the theme. Search with keyboard and
+  mouse on a PC, or with touch controls if you're on a phone.
+
+
+  It comes from Room Escape, a site of escape rooms built to work like a real
+  escape room cafe. According to the creator, AI helped write most of the code
+  and made the artwork, and they review and rework each version themselves.
+play:
+  url: https://roomescape.dev/?play=1&theme=stopped-clocks&lang=en
+  embeddable: false
+  platforms:
+    - browser
+    - mobile
+creator:
+  name: Room Escape
+  handle: roomescapedev
+  youtube: "@RoomEscapeDev"
+made:
+  models: []
+  tools:
+    - codex
+  aiShare: most
+  source: "Creator's submission (issue #159)"
+  evidence: creator
+  notes: Built with extensive Codex-assisted programming and AI-generated artwork;
+    Three.js powers the 3D rooms and object interactions. The creator reviews
+    and iterates on the experience.
+tech:
+  engine: threejs
+  multiplayer: single
+genres:
+  - puzzle
+  - adventure
+media:
+  cover: games/the-workshop-of-stopped-clocks/cover
+dates:
+  added: 2026-10-15
+  updated: 2026-10-15
+status: live
+provenance:
+  foundVia: form
+  submittedBy: "#159"
+  uploads:
+    ref: 085ea10b884d0d85
+    count: 1
