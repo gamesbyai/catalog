@@ -25,7 +25,7 @@ description: >-
   says its graphics and narrative text are AI-generated and its code is
   AI-assisted.
 play:
-  url: https://sixthsigil.com/aethervanguard/?puzzle=cross-current
+  url: https://sixthsigil.com/aethervanguard/?puzzle=cross-current&utm_source=gamesbyai&utm_medium=game_directory&utm_campaign=cross_current
   embeddable: false
   platforms:
     - browser
@@ -64,7 +64,7 @@ media:
     - games/cross-current/shot-1
 dates:
   added: 2026-10-14
-  updated: 2026-10-14
+  updated: 2026-10-15
 status: live
 provenance:
   foundVia: scout:email
