@@ -63,9 +63,6 @@ genres:
   - strategy
 media:
   cover: games/midgard-arena/cover
-  screenshots:
-    - games/midgard-arena/shot-1
-    - games/midgard-arena/shot-2
 dates:
   added: 2026-10-15
   updated: 2026-10-15
