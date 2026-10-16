@@ -1,16 +1,25 @@
 slug: bubenjump-2026
 title: Bubenjump 2026
 tagline: Ski jump down the in-run and fly for distance.
-description: "Control a ski jumper from the top of the in-run through the flight. Each jump is measured in meters.
+description: "You take a ski jumper from the top of the in-run all the way
+  through the flight, and every jump's measured in meters.
 
 
-  Headwind and tailwind on the slope. A choice of starting gates. Points for each jump. Hill records to chase.
+  Headwind and tailwind on the slope, and a choice of starting gates. Points for
+  each jump, plus hill records to chase. Online leagues where every player picks
+  a different jumper.
 
 
-  Press Space to start. Press Up or Space to take off. Press Right to lean forward and Left to straighten up. Land with Down for a telemark or Space for a parallel landing.
+  Press Space to start, then Up or Space to take off. Lean forward with Right
+  and straighten up with Left. Land with Down for a telemark, or Space for a
+  parallel landing.
 
 
-  Krischan drew inspiration from SJ3. Every graphic, the jumpers included, is painted by code onto a canvas. The music is by ssilk, and the only other outside assets are a few sounds. Krischan described each feature, and an AI coding assistant built it on its own git branch. They tested each build in a local preview and gave feedback until it felt right. Friends have played it since day one, and most of the to-do list came from them."
+  It's inspired by SJ3, and every graphic is drawn in code on a canvas, down to
+  the jumpers' faces. The music is by ssilk. Krischan described each feature,
+  the AI built it on its own git branch, and Krischan \"complained until it felt
+  right\". Most of the backlog came from friends who've played it since the
+  beginning."
 play:
   url: https://bubenjump.xyz/
   platforms:
@@ -34,9 +43,15 @@ made:
   source: "Creator's submission (issue #164)"
   evidence: creator
   notes: >-
-    All the graphics are drawn in code on a canvas, the jumpers and their faces included. The only external assets are the music (by ssilk) and a few sounds.
+    All the graphics are drawn in code on a canvas, the jumpers and their faces
+    included. The only external assets are the music (by ssilk) and a few
+    sounds.
 
-    How I worked: I’d describe a feature, Claude Code built it in its own git branch, and I played it in a local preview and complained until it felt right. A lot of the feedback was screenshots with comments like “this layout is cluttered” or “why is he raising his arms in the portrait”. My friends have played it since the beginning, and most of the backlog came from them.
+    How I worked: I’d describe a feature, Claude Code built it in its own git
+    branch, and I played it in a local preview and complained until it felt
+    right. A lot of the feedback was screenshots with comments like “this layout
+    is cluttered” or “why is he raising his arms in the portrait”. My friends
+    have played it since the beginning, and most of the backlog came from them.
 tech:
   multiplayer: online
   engine: canvas
