@@ -1,0 +1,51 @@
+slug: voxel-rush-frontline
+title: Voxel Rush — Frontline
+tagline: Submitted by its creator; the description is added during review.
+description: ""
+play:
+  url: https://play.voxelrush.app/?mode=frontline&utm_source=gamesbyai&utm_medium=referral&utm_campaign=frontline_20261016
+  platforms:
+    - browser
+  embedPermission:
+    by: submission
+    date: 2026-10-16
+creator:
+  name: Max Dmitriev / 0xProbabillity
+  handle: 0xprobabillity
+  x: 0xProbabillity
+made:
+  models: []
+  tools:
+    - codex
+  aiShare: some
+  source: "Creator's submission (issue #170)"
+  evidence: creator
+  notes: "Solo-developed browser FPS built with Three.js and TypeScript, with
+    AI-assisted coding using Codex. Frontline: capture five flags, choose six
+    classes, drive tanks and fly helicopters on destructible terrain. Bots fill
+    empty slots. Guest play, 13 languages, no in-game ads or download.
+    Proprietary game; no source code or repository submitted. Exact AI code
+    share is not measured. For the cover please use Frontline gameplay:
+    https://voxelrush.app/media/"
+tech:
+  engine: threejs
+  multiplayer: online
+genres:
+  - action
+  - shooter
+  - strategy
+media:
+  cover: games/voxel-rush-frontline/cover
+  screenshots:
+    - games/voxel-rush-frontline/shot-1
+    - games/voxel-rush-frontline/shot-2
+dates:
+  added: 2026-10-16
+  updated: 2026-10-16
+status: live
+provenance:
+  foundVia: form
+  submittedBy: "#170"
+  uploads:
+    ref: dd8529cd2089349b
+    count: 3
