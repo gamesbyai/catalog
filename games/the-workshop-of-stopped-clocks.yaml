@@ -7,14 +7,16 @@ description: >-
   in it is whatever he meant to leave you.
 
 
-  One room and a sixty-minute limit. Every answer hidden somewhere in the room
-  as a clue. Drawers to open, notes to read and codes to dial into locks. A
-  drama and mystery theme, rated three stars for difficulty and none for fear.
-  Free, with your progress and records kept on your account across devices.
+  A sixty-minute escape room. Every answer hidden somewhere in the room as a
+  clue. Drawers to open, notes to read and codes to dial into locks. A drama
+  and mystery theme, rated three stars for difficulty and none for fear. Early
+  release, currently free, with your progress and records kept on your account
+  across devices.
 
 
-  Sign in with your Google account and open the theme. Search with keyboard and
-  mouse on a PC, or with touch controls if you're on a phone.
+  Sign in with your Google account and open the theme in a browser with WebGL2.
+  Search with keyboard and mouse on a PC, or with touch controls if you're on a
+  phone.
 
 
   The game is one theme on roomescape.dev, which the creator set up to play
@@ -50,7 +52,7 @@ media:
   cover: games/the-workshop-of-stopped-clocks/cover
 dates:
   added: 2026-10-15
-  updated: 2026-10-15
+  updated: 2026-10-16
 status: live
 provenance:
   foundVia: form
