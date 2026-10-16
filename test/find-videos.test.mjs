@@ -43,6 +43,36 @@ test('Many games exclusions stay video-level across a large catalog', () => {
   assert.equal(offeredPairs(prs, entries.keys()).size, 1);
 });
 
+test('a YouTube rate limit waits and retries, then stops that budget instead of failing the run', async () => {
+  // rateLimitExceeded is YouTube's short-term limit, not the daily quota; it failed the whole run on 2026-10-12.
+  const waits = [], reserved = [];
+  const reserveQuota = async (q) => { reserved.push(q); return true; };
+  const sleep = async (ms) => { waits.push(ms); };
+  let n = 0;
+  const flaky = async () => (++n === 1
+    ? Response.json({ error: { errors: [{ reason: 'rateLimitExceeded' }] } }, { status: 403 })
+    : Response.json({ items: [] }));
+  assert.deepEqual(await youtubeGet('videos', { id: vid('a') }, { key: 'test-key', reserveQuota, fetchImpl: flaky, sleep }), { items: [] });
+  assert.equal(reserved.length, 2, 'every attempt reserves its quota');
+  assert.equal(waits.length, 1);
+
+  const budget = { units: 0, searches: 0, baseUnits: 0, baseSearches: 0, searchLimit: 5 };
+  const limited = async () => Response.json({ error: { errors: [{ reason: 'userRateLimitExceeded' }] } }, { status: 403 });
+  waits.length = 0;
+  assert.equal(await youtubeGet('search', { q: 'x' }, { key: 'test-key', reserveQuota, fetchImpl: limited, budget, sleep }), null);
+  assert.equal(budget.searchStopped, true);
+  assert.equal(budget.rateLimited, true);
+  assert.equal(waits.length, 2, 'two waits, then it gives up for this run');
+  assert.ok(waits[1] > waits[0]);
+});
+
+test('a run that keeps hitting the rate limit ends cleanly and says so', async () => {
+  const api = fakeYouTube({ search: () => [], fail: ({ path }) => path === 'search' ? { reason: 'rateLimitExceeded' } : null });
+  const result = await dryRun([entry('game')], api, { searches: 1, sleep: async () => {} });
+  assert.ok(result.logs.includes('videos: rate limit stop (search)'), result.logs.join('\n'));
+  assert.ok(!result.logs.some((l) => l.includes('run failed')));
+});
+
 test('title completion waits for all result IDs to be verified', async () => {
   const api = fakeYouTube({ search: (p) => p.q.startsWith('game ') ? [vid('a')] : [],
     fail: ({ path }) => path === 'videos' ? { reason: 'quotaExceeded' } : null });

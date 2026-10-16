@@ -17,6 +17,11 @@ const HANDLE = /^@[A-Za-z0-9._-]{3,30}$/;
 const SOURCES = new Set(['form', 'manual', 'title', 'site', 'channel']);
 const YOUTUBE_HOSTS = new Set(['youtube.com', 'www.youtube.com', 'm.youtube.com']);
 const QUOTA_REASONS = new Set(['quotaExceeded', 'dailyLimitExceeded']);
+// YouTube's short-term limits, not the daily quota: wait and try again, then stop that budget for this run like a
+// quota stop. Thrown, one failed the whole run (2026-10-12) and sent a failure mail for a limit that clears in seconds.
+const RATE_REASONS = new Set(['rateLimitExceeded', 'userRateLimitExceeded']);
+const RATE_WAITS_MS = [5_000, 20_000];
+const wait = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
 const ERROR_CODES = new Set(['input', 'catalog', 'network', 'response', 'keyInvalid', 'forbidden', 'rateLimitExceeded', 'quotaExceeded', 'channel', 'post']);
 export const MAX_PER_GAME = 4;
 export const MAX_ROWS = 60;
@@ -100,28 +105,36 @@ async function jsonResponse(res, max) {
   } catch { throw fixedError('response'); }
 }
 
-export async function youtubeGet(path, params, { key, fetchImpl = fetch, budget, reserveQuota }) {
+export async function youtubeGet(path, params, { key, fetchImpl = fetch, budget, reserveQuota, sleep = wait }) {
   const search = path === 'search';
-  if (budget && (search ? budget.searchStopped || budget.baseSearches + budget.searches >= budget.searchLimit : budget.unitStopped || budget.baseUnits + budget.units >= 9_000)) return null;
-  if (!reserveQuota) throw fixedError('input');
-  const allowed = await reserveQuota({ units: search ? 0 : 1, searches: search ? 1 : 0 });
-  if (!allowed) { if (budget) budget[search ? 'searchStopped' : 'unitStopped'] = true; return null; }
-  if (budget) budget[search ? 'searches' : 'units']++;
-  let res;
-  try {
-    res = await fetchImpl(`${API}/${path}?${new URLSearchParams(params)}`, { headers: { 'X-Goog-Api-Key': key }, signal: AbortSignal.timeout(5_000), redirect: 'error' });
-  } catch { throw fixedError('network'); }
-  const data = await jsonResponse(res, 2_000_000);
-  if (!res.ok) {
-    const reason = data?.error?.errors?.[0]?.reason;
-    if (budget && QUOTA_REASONS.has(reason)) {
-      budget[search ? 'searchStopped' : 'unitStopped'] = true;
-      return null;
+  const stop = search ? 'searchStopped' : 'unitStopped';
+  for (let attempt = 0; ; attempt++) {
+    if (budget && (search ? budget.searchStopped || budget.baseSearches + budget.searches >= budget.searchLimit : budget.unitStopped || budget.baseUnits + budget.units >= 9_000)) return null;
+    if (!reserveQuota) throw fixedError('input');
+    // Every attempt reserves and counts its own quota: YouTube charges for refused requests too.
+    const allowed = await reserveQuota({ units: search ? 0 : 1, searches: search ? 1 : 0 });
+    if (!allowed) { if (budget) budget[stop] = true; return null; }
+    if (budget) budget[search ? 'searches' : 'units']++;
+    let res;
+    try {
+      res = await fetchImpl(`${API}/${path}?${new URLSearchParams(params)}`, { headers: { 'X-Goog-Api-Key': key }, signal: AbortSignal.timeout(5_000), redirect: 'error' });
+    } catch { throw fixedError('network'); }
+    const data = await jsonResponse(res, 2_000_000);
+    if (!res.ok) {
+      const reason = data?.error?.errors?.[0]?.reason;
+      if (budget && QUOTA_REASONS.has(reason)) {
+        budget[stop] = true;
+        return null;
+      }
+      if (RATE_REASONS.has(reason) || res.status === 429) {
+        if (attempt < RATE_WAITS_MS.length) { await sleep(RATE_WAITS_MS[attempt]); continue; }
+        if (budget) { budget[stop] = true; budget.rateLimited = true; budget[search ? 'searchRateLimited' : 'unitRateLimited'] = true; return null; }
+      }
+      throw Object.assign(fixedError(reason), { status: res.status });
     }
-    throw Object.assign(fixedError(reason), { status: res.status });
+    if (!data || !Array.isArray(data.items) || data.items.length > 50) throw fixedError('response');
+    return data;
   }
-  if (!data || !Array.isArray(data.items) || data.items.length > 50) throw fixedError('response');
-  return data;
 }
 
 /** Reject an entire malformed state rather than use a partial answer. */
@@ -381,7 +394,7 @@ function loadEntries(dir) {
 }
 
 /** Quota is reserved before calls. Discovery mutations remain in the local report until PR success. */
-export async function run({ key, root = ROOT, prs = [], bodyFile, reportFile, fetchImpl = fetch, now = new Date(), log = console.log, siteState, notifyUrl, token, manual = false, searches = 5, reserveQuota, runId = randomUUID() }) {
+export async function run({ key, root = ROOT, prs = [], bodyFile, reportFile, fetchImpl = fetch, now = new Date(), log = console.log, siteState, notifyUrl, token, manual = false, searches = 5, reserveQuota, runId = randomUUID(), sleep = wait }) {
   if (!Array.isArray(prs)) throw fixedError('input');
   searchCap(searches);
   const entries = loadEntries(join(root, 'games'));
@@ -400,7 +413,7 @@ export async function run({ key, root = ROOT, prs = [], bodyFile, reportFile, fe
     const { reserveRunQuota } = await import('./videos-post.mjs');
     reserveQuota = reserveRunQuota({ notifyUrl, token, fetchImpl, runId, searchLimit: budget.searchLimit });
   }
-  const ctx = { key, fetchImpl, budget, reserveQuota };
+  const ctx = { key, fetchImpl, budget, reserveQuota, sleep };
   const cache = new Map();
   const candidates = new Map();
   const many = new Map();
@@ -633,8 +646,8 @@ export async function run({ key, root = ROOT, prs = [], bodyFile, reportFile, fe
     writeFileSync(reportFile, JSON.stringify(report));
   }
   log(`videos: landings ${bucketCounts.landings}; new ${bucketCounts.new}; played ${bucketCounts.played}; rotation ${bucketCounts.rotation}; channels ${channelChecks}; channels skipped ${Math.max(0, channels.size - MAX_CHANNELS)}; handles skipped ${Math.max(0, refs.filter((r) => r.handle).length - handles)}; checked ${checked}; usable ${usableIds.size}; proposed ${rows.length}; enqueued ${report.enqueue.length}; units ${budget.units}; searches ${budget.searches}`);
-  if (budget.searchStopped) log('videos: quota stop (search)');
-  if (budget.unitStopped || budget.baseUnits + budget.units >= 9_000) log('videos: quota stop (units)');
+  if (budget.searchStopped) log(budget.searchRateLimited ? 'videos: rate limit stop (search)' : 'videos: quota stop (search)');
+  if (budget.unitStopped || budget.baseUnits + budget.units >= 9_000) log(budget.unitRateLimited ? 'videos: rate limit stop (units)' : 'videos: quota stop (units)');
   return prOpen ? 0 : rows.length + changes.length + manyRows.length;
 }
 
