@@ -75,14 +75,23 @@ jobs:
               [[ "$s" =~ ^[a-z0-9]+(-[a-z0-9]+)*$ ]] && [ -f "games/$s.yaml" ] && echo "$s"
             done > "$RUNNER_TEMP/slugs.txt"
           else
-            base="${BASE_SHA:-origin/main}"
-            fork=$(git merge-base "$base" HEAD)
-            # New entries always; a changed entry only when its play URL changed. Text edits keep their screenshots.
-            node scripts/changed-play-urls.mjs "$fork" > "$RUNNER_TEMP/changed.txt"
-            {
-              git diff --name-only --diff-filter=A "$fork" HEAD -- 'games/*.yaml'
-              cat "$RUNNER_TEMP/changed.txt"
-            } | sed -nE 's#^games/([a-z0-9]+(-[a-z0-9]+)*)\.yaml$#\1#p' > "$RUNNER_TEMP/slugs.txt"
+            # A merge moves the PR branch to its rebuilt head moments before main (merge-pr.mjs), and that push starts
+            # this run with the base SHA from before the merge. Main as it is now already holds the head then: the PR is
+            # merged and there is nothing to capture.
+            git fetch --quiet --no-tags origin +refs/heads/main:refs/remotes/origin/main
+            if git merge-base --is-ancestor HEAD origin/main; then
+              echo "the head is already on main (merged): nothing to capture"
+              : > "$RUNNER_TEMP/slugs.txt"
+            else
+              base="${BASE_SHA:-origin/main}"
+              fork=$(git merge-base "$base" HEAD)
+              # New entries always; a changed entry only when its play URL changed. Text edits keep their screenshots.
+              node scripts/changed-play-urls.mjs "$fork" > "$RUNNER_TEMP/changed.txt"
+              {
+                git diff --name-only --diff-filter=A "$fork" HEAD -- 'games/*.yaml'
+                cat "$RUNNER_TEMP/changed.txt"
+              } | sed -nE 's#^games/([a-z0-9]+(-[a-z0-9]+)*)\.yaml$#\1#p' > "$RUNNER_TEMP/slugs.txt"
+            fi
           fi
           echo "count=$(wc -l < "$RUNNER_TEMP/slugs.txt" | tr -d ' ')" >> "$GITHUB_OUTPUT"
           echo "sha=$(git rev-parse HEAD)" >> "$GITHUB_OUTPUT"
