@@ -1,0 +1,48 @@
+slug: bramblewild
+title: Bramblewild
+tagline: Submitted by its creator; the description is added during review.
+description: ""
+play:
+  url: https://goblinarcade.com/play/bramblewild
+  platforms:
+    - browser
+  embedPermission:
+    by: submission
+    date: 2026-10-17
+creator:
+  name: Goblin Originals (Goblin Arcade)
+  handle: goblin-originals-goblin-arcade
+made:
+  models:
+    - claude-opus-5-5
+  tools:
+    - claude-code
+  aiShare: most
+  source: "Creator's submission (issue #172)"
+  evidence: creator
+  notes: "Original 3D deer simulator for the browser: hook and fling props with
+    your antlers, find eight woodland discoveries, or try the 90-second Orchard
+    Rush. Made with AI-assisted coding and visuals under human direction: the
+    code was written in Claude Code sessions (mainly Claude Opus 5.5), with a
+    human setting direction and reviewing each build. Exact AI code share is not
+    measured. Free, no download, no account. Proprietary game; no repository
+    submitted."
+tech:
+  engine: threejs
+  multiplayer: single
+genres:
+  - simulation
+  - sandbox
+  - adventure
+media:
+  cover: games/bramblewild/cover
+  screenshots:
+    - games/bramblewild/shot-1
+    - games/bramblewild/shot-2
+dates:
+  added: 2026-10-17
+  updated: 2026-10-17
+status: live
+provenance:
+  foundVia: form
+  submittedBy: "#172"
