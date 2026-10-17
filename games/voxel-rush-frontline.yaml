@@ -1,7 +1,24 @@
 slug: voxel-rush-frontline
 title: Voxel Rush — Frontline
-tagline: Submitted by its creator; the description is added during review.
-description: ""
+tagline: Fight for five flags in 40-soldier voxel battles with tanks and helicopters.
+description: "Two armies fight over five flags in Frontline, the big-battle mode of
+  Voxel Rush. A battle holds up to 40 soldiers, and bots take the slots no
+  player has filled.
+
+
+  Six classes, from a medic who revives fallen teammates to an engineer with
+  guided rockets and a welder for fixing armor. Tanks to drive and helicopters
+  to fly. Destructible terrain. Team Deathmatch and a survival world with base
+  building elsewhere in the same game. Guest play in 13 languages, with nothing
+  to download and no ads in the game.
+
+
+  Pick a class with the 1 to 6 keys, click the map to choose where you come in
+  and press Space to deploy.
+
+
+  Max Dmitriev develops Voxel Rush solo in TypeScript with AI-assisted coding
+  and hasn't measured how much of the code the AI wrote."
 play:
   url: https://play.voxelrush.app/?mode=frontline&utm_source=gamesbyai&utm_medium=referral&utm_campaign=frontline_20261016
   platforms:
@@ -15,6 +32,8 @@ creator:
   x: 0xProbabillity
 made:
   models: []
+  providers:
+    - openai
   tools:
     - codex
   aiShare: some
@@ -25,8 +44,7 @@ made:
     classes, drive tanks and fly helicopters on destructible terrain. Bots fill
     empty slots. Guest play, 13 languages, no in-game ads or download.
     Proprietary game; no source code or repository submitted. Exact AI code
-    share is not measured. For the cover please use Frontline gameplay:
-    https://voxelrush.app/media/"
+    share is not measured."
 tech:
   engine: threejs
   multiplayer: online
