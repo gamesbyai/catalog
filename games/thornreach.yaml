@@ -1,0 +1,47 @@
+slug: thornreach
+title: Thornreach
+tagline: Submitted by its creator; the description is added during review.
+description: ""
+play:
+  url: https://goblinarcade.com/play/thornreach
+  platforms:
+    - browser
+  embedPermission:
+    by: submission
+    date: 2026-10-17
+creator:
+  name: Goblin Originals (Goblin Arcade)
+  handle: goblin-originals-goblin-arcade
+made:
+  models:
+    - claude-opus-5-5
+  tools:
+    - claude-code
+  aiShare: most
+  source: "Creator's submission (issue #174)"
+  evidence: creator
+  notes: "Original medieval campaign: rise from landless knight to ruler of the
+    realm. Recruit an army, fight real-time battles and sieges, and claim the
+    empty throne, with saved progress. Made with AI-assisted coding and visuals
+    under human direction: the code was written in Claude Code sessions (mainly
+    Claude Opus 5.5), with a human setting direction and reviewing each build.
+    Exact AI code share is not measured. Free, no download, no account.
+    Proprietary game; no repository submitted."
+tech:
+  engine: canvas
+  multiplayer: single
+genres:
+  - strategy
+  - rpg
+media:
+  cover: games/thornreach/cover
+  screenshots:
+    - games/thornreach/shot-1
+    - games/thornreach/shot-2
+dates:
+  added: 2026-10-17
+  updated: 2026-10-17
+status: live
+provenance:
+  foundVia: form
+  submittedBy: "#174"
