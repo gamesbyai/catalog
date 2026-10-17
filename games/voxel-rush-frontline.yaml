@@ -1,24 +1,16 @@
 slug: voxel-rush-frontline
 title: Voxel Rush — Frontline
 tagline: Fight for five flags in 40-soldier voxel battles with tanks and helicopters.
-description: "Two armies fight over five flags in Frontline, the big-battle mode of
-  Voxel Rush. A battle holds up to 40 soldiers, and bots take the slots no
-  player has filled.
+description: "Two armies fight over five flags in Frontline, the big-battle mode of Voxel Rush. A battle holds up to 40 soldiers, and bots take the slots no player has filled.
 
 
-  Six classes, from a medic who revives fallen teammates to an engineer with
-  guided rockets and a welder for fixing armor. Tanks to drive and helicopters
-  to fly. Destructible terrain. Team Deathmatch and a survival world with base
-  building elsewhere in the same game. Guest play in 13 languages, with nothing
-  to download and no ads in the game.
+  Six classes, from a medic who revives fallen teammates to an engineer with guided rockets and a welder for fixing armor. Tanks to drive and helicopters to fly. Destructible terrain. Team Deathmatch and a survival world with base building elsewhere in the same game. Guest play in 13 languages, with nothing to download and no ads in the game.
 
 
-  Pick a class with the 1 to 6 keys, click the map to choose where you come in
-  and press Space to deploy.
+  Pick a class with the 1 to 6 keys, click the map to choose where you come in and press Space to deploy.
 
 
-  Max Dmitriev develops Voxel Rush solo in TypeScript with AI-assisted coding
-  and hasn't measured how much of the code the AI wrote."
+  Max Dmitriev develops Voxel Rush solo in TypeScript with AI-assisted coding and hasn't measured how much of the code the AI wrote."
 play:
   url: https://play.voxelrush.app/?mode=frontline&utm_source=gamesbyai&utm_medium=referral&utm_campaign=frontline_20261016
   platforms:
@@ -26,6 +18,7 @@ play:
   embedPermission:
     by: submission
     date: 2026-10-16
+  embeddable: true
 creator:
   name: Max Dmitriev / 0xProbabillity
   handle: 0xprobabillity
@@ -39,12 +32,7 @@ made:
   aiShare: some
   source: "Creator's submission (issue #170)"
   evidence: creator
-  notes: "Solo-developed browser FPS built with Three.js and TypeScript, with
-    AI-assisted coding using Codex. Frontline: capture five flags, choose six
-    classes, drive tanks and fly helicopters on destructible terrain. Bots fill
-    empty slots. Guest play, 13 languages, no in-game ads or download.
-    Proprietary game; no source code or repository submitted. Exact AI code
-    share is not measured."
+  notes: "Solo-developed browser FPS built with Three.js and TypeScript, with AI-assisted coding using Codex. Frontline: capture five flags, choose six classes, drive tanks and fly helicopters on destructible terrain. Bots fill empty slots. Guest play, 13 languages, no in-game ads or download. Proprietary game; no source code or repository submitted. Exact AI code share is not measured."
 tech:
   engine: threejs
   multiplayer: online
