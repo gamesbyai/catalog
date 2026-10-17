@@ -1,7 +1,13 @@
 slug: ram-man-half-goat-half-god
 title: "Ram Man: Half Goat, Half God"
-tagline: Submitted by its creator; the description is added during review.
-description: ""
+tagline: Punch, grab and ram through a labyrinth under the city as half goat, half god.
+description: "You're Ram Man, half goat and half god, fighting your way through a labyrinth under the city in this 3D beat 'em up.
+
+
+  Punches, grabs, dodges, a ram attack and a Wrath meter. Cars you can pick up and throw, with cannon-es physics. A running lariat, gamepad support and a training yard, all new in update 3.7.0. On-screen buttons for phones. Free to play in your browser and on Android, with no ads and no microtransactions.
+
+
+  Claude helped write much of the code, Meshy made the base 3D models and Chatterbox voiced the cast. Everything else was done by hand: the design, combat tuning, level layout and testing, cleaning the models up for phones and retargeting 16 Mixamo motion-capture animations onto them."
 play:
   url: https://azreal-the-fallen.itch.io/ram-man
   platforms:
@@ -9,6 +15,7 @@ play:
   embedPermission:
     by: submission
     date: 2026-10-17
+  embeddable: false
 creator:
   name: Azreal the fallen
   handle: azreal-the-fallen
@@ -18,13 +25,9 @@ made:
   aiShare: most
   source: "Creator's submission (issue #178)"
   evidence: creator
-  notes: Ram Man is a free 3D beat 'em up built in three.js with cannon-es
-    physics, for browser and Android. Claude (by Anthropic) helped write much of
-    the code, Meshy made the base 3D models and Chatterbox voiced the cast. We
-    did the design, combat tuning, level layout and testing, cleaned up the
-    models for phones, and retargeted 16 Mixamo mocap animations onto them.
-    Update 3.7.0 adds a running lariat, gamepad support, a training yard and
-    throwable cars. No ads, no microtransactions.
+  notes: Ram Man is a free 3D beat 'em up built in three.js with cannon-es physics, for browser and Android. Claude (by Anthropic) helped write much of the code, Meshy made the base 3D models and Chatterbox voiced the cast. We did the design, combat tuning, level layout and testing, cleaned up the models for phones, and retargeted 16 Mixamo mocap animations onto them. Update 3.7.0 adds a running lariat, gamepad support, a training yard and throwable cars. No ads, no microtransactions.
+  providers:
+    - anthropic
 tech:
   engine: threejs
   multiplayer: single
