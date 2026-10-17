@@ -1,7 +1,13 @@
 slug: thornreach
 title: Thornreach
-tagline: Submitted by its creator; the description is added during review.
-description: ""
+tagline: Start with six farmhands and a sword, then fight for a medieval crown.
+description: "The old king of Thornreach is dead and three great houses are circling his empty throne. You start as a landless knight with six farmhands, a little silver and a sword, and you're aiming to be crowned at Highcrown. Your renown at the coronation is your final score, and getting there sooner earns a bonus.
+
+
+  Real-time battles on their own field, where you fight as your knight while giving orders to your troops. Sieges with walls, a gate, ladders and a ram. Militia, spearmen, swordsmen, archers and riders to recruit and upgrade into pikemen, knights, crossbowmen and lancers. Wages and food to pay, and fiefs that bring in money every week. A nine-chapter story of about 45 to 90 minutes, saved after battles and every in-game week.
+
+
+  Tap the gold arrow on the objective card to march to your next goal, or click any place on the map to travel there. In battle, move your knight with WASD and attack with a click. Space orders a charge, R calls your troops to follow you and H holds them in place."
 play:
   url: https://goblinarcade.com/play/thornreach
   platforms:
@@ -9,9 +15,12 @@ play:
   embedPermission:
     by: submission
     date: 2026-10-17
+  embeddable: true
 creator:
   name: Goblin Originals (Goblin Arcade)
   handle: goblin-originals-goblin-arcade
+  links:
+    - https://goblinarcade.com/
 made:
   models:
     - claude-opus-5-5
@@ -20,13 +29,7 @@ made:
   aiShare: most
   source: "Creator's submission (issue #174)"
   evidence: creator
-  notes: "Original medieval campaign: rise from landless knight to ruler of the
-    realm. Recruit an army, fight real-time battles and sieges, and claim the
-    empty throne, with saved progress. Made with AI-assisted coding and visuals
-    under human direction: the code was written in Claude Code sessions (mainly
-    Claude Opus 5.5), with a human setting direction and reviewing each build.
-    Exact AI code share is not measured. Free, no download, no account.
-    Proprietary game; no repository submitted."
+  notes: "Original medieval campaign: rise from landless knight to ruler of the realm. Recruit an army, fight real-time battles and sieges, and claim the empty throne, with saved progress. Made with AI-assisted coding and visuals under human direction: the code was written in Claude Code sessions (mainly Claude Opus 5.5), with a human setting direction and reviewing each build. Exact AI code share is not measured. Free, no download, no account. Proprietary game; no repository submitted."
 tech:
   engine: canvas
   multiplayer: single
