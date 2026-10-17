@@ -1,16 +1,16 @@
 slug: seventh-moon
 title: Seventh Moon
 tagline: Search your late grandmother's townhouse and throw moon blocks to ask the ancestors.
-description: "You come home alone on the night after the funeral, to your late grandmother's two-story townhouse in a small town in Taiwan. This first-person psychological horror story is set during Ghost Month in the early 1990s. Your family has gone to the temple overnight for a sutra service.
+description: "You come home alone the night after your grandmother's funeral, to her two-story townhouse in a small Taiwanese town. It's a rainy night in Ghost Month in the early 1990s, and the rest of the family is at the temple for an overnight sutra service.
 
 
-  The looping upstairs corridor. A cassette from Grandma, mailed last year and never played. Tangled tape to wind back with a pencil. Dad's note, Grandma's offering list and old letters. Restringing a broken prayer-bead bracelet. Silver paper to burn on the balcony. Three endings, set by what you find and how you answer.
+  A first-person psychological horror story with no combat and no gore. An upstairs corridor that loops back on itself, with the house a little more wrong each time around. Moon blocks to ask the ancestors yes-or-no questions at the family altar. Three endings, decided by what you find and how you answer. Gentle mode to turn off the three sudden scares and the strobing light. Every line in Traditional Chinese and English.
 
 
-  Walk with WASD or the arrow keys, and move the mouse to look around. Press E or click to pick things up and open them. Light incense at the altar and relight it once it goes out. At the altar, throw the moon blocks with Space, E, or a click. Flat and round sides up means yes. Two flat sides mean ask again. Two round sides mean no. Key requests need three consecutive yes answers.
+  Walk with WASD or the arrow keys, look around with the mouse and press E to pick up, read or open whatever you point at. Find the incense and the matches, light the incense at the altar, then throw the moon blocks with Space. One flat and one round side up means yes, two flat sides mean ask again and two round sides mean no.
 
 
-  Goblin Originals built it with AI-assisted coding and visuals, and a person directed the work and reviewed each build. The story, characters and house are original. The creator says the share of AI-written code is not measured."
+  The story, characters, house and puzzles are all original, drawn from the mood of Taiwan's Ghost Month and its family altar customs rather than from another game."
 play:
   url: https://goblinarcade.com/play/seventh-moon
   platforms:
@@ -22,6 +22,8 @@ play:
 creator:
   name: Goblin Originals (Goblin Arcade)
   handle: goblin-originals-goblin-arcade
+  links:
+    - https://goblinarcade.com/
 made:
   models:
     - claude-opus-5-5
