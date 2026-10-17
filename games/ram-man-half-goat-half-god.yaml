@@ -1,0 +1,48 @@
+slug: ram-man-half-goat-half-god
+title: "Ram Man: Half Goat, Half God"
+tagline: Submitted by its creator; the description is added during review.
+description: ""
+play:
+  url: https://azreal-the-fallen.itch.io/ram-man
+  platforms:
+    - browser
+  embedPermission:
+    by: submission
+    date: 2026-10-17
+creator:
+  name: Azreal the fallen
+  handle: azreal-the-fallen
+made:
+  models: []
+  tools: []
+  aiShare: most
+  source: "Creator's submission (issue #178)"
+  evidence: creator
+  notes: Ram Man is a free 3D beat 'em up built in three.js with cannon-es
+    physics, for browser and Android. Claude (by Anthropic) helped write much of
+    the code, Meshy made the base 3D models and Chatterbox voiced the cast. We
+    did the design, combat tuning, level layout and testing, cleaned up the
+    models for phones, and retargeted 16 Mixamo mocap animations onto them.
+    Update 3.7.0 adds a running lariat, gamepad support, a training yard and
+    throwable cars. No ads, no microtransactions.
+tech:
+  engine: threejs
+  multiplayer: single
+genres:
+  - action
+  - fighting
+media:
+  cover: games/ram-man-half-goat-half-god/cover
+  screenshots:
+    - games/ram-man-half-goat-half-god/shot-1
+    - games/ram-man-half-goat-half-god/shot-2
+dates:
+  added: 2026-10-17
+  updated: 2026-10-17
+status: live
+provenance:
+  foundVia: form
+  submittedBy: "#178"
+  uploads:
+    ref: a26d24346b3f9227
+    count: 3
