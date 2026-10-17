@@ -1,7 +1,25 @@
 slug: bramblewild
 title: Bramblewild
-tagline: Submitted by its creator; the description is added during review.
-description: ""
+tagline: Play a deer that hooks props with its antlers and flings them into chain reactions.
+description: "Your deer roams a woodland, an orchard and a market clearing that all
+  link together. Hook apples, crates, barrels and carts on your antlers, carry
+  them around and fling them into chain reactions.
+
+
+  Eight optional discoveries, from ringing the bell to rolling a barrel through
+  the arch and reaching the hill overlook. A herd grove where you share apples.
+  Free roam with no countdown. Orchard Rush, a 90-second score challenge you can
+  start at any time. Discoveries and your best Rush score saved in the browser.
+
+
+  Drag to run, and drag farther to sprint and ram loose props. Flick to leap, tap
+  a prop once you're close to hook it, then flick or tap toward a spot to throw it. On a
+  keyboard, move with WASD or the arrows, sprint with Shift, jump with Space and
+  hook or throw with E.
+
+
+  A person at Goblin Originals set the direction and reviewed every build, while
+  AI wrote the code and helped with the visuals."
 play:
   url: https://goblinarcade.com/play/bramblewild
   platforms:
@@ -12,6 +30,8 @@ play:
 creator:
   name: Goblin Originals (Goblin Arcade)
   handle: goblin-originals-goblin-arcade
+  links:
+    - https://goblinarcade.com/
 made:
   models:
     - claude-opus-5-5
