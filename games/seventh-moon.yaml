@@ -1,7 +1,16 @@
 slug: seventh-moon
 title: Seventh Moon
-tagline: Submitted by its creator; the description is added during review.
-description: ""
+tagline: Search your late grandmother's townhouse and throw moon blocks to ask the ancestors.
+description: "You come home alone on the night after the funeral, to your late grandmother's two-story townhouse in a small town in Taiwan. This first-person psychological horror story is set during Ghost Month in the early 1990s. Your family has gone to the temple overnight for a sutra service.
+
+
+  The looping upstairs corridor. A cassette from Grandma, mailed last year and never played. Tangled tape to wind back with a pencil. Dad's note, Grandma's offering list and old letters. Restringing a broken prayer-bead bracelet. Silver paper to burn on the balcony. Three endings, set by what you find and how you answer.
+
+
+  Walk with WASD or the arrow keys, and move the mouse to look around. Press E or click to pick things up and open them. Light incense at the altar and relight it once it goes out. At the altar, throw the moon blocks with Space, E, or a click. Flat and round sides up means yes. Two flat sides mean ask again. Two round sides mean no. Key requests need three consecutive yes answers.
+
+
+  Goblin Originals built it with AI-assisted coding and visuals, and a person directed the work and reviewed each build. The story, characters and house are original. The creator says the share of AI-written code is not measured."
 play:
   url: https://goblinarcade.com/play/seventh-moon
   platforms:
@@ -9,6 +18,7 @@ play:
   embedPermission:
     by: submission
     date: 2026-10-17
+  embeddable: true
 creator:
   name: Goblin Originals (Goblin Arcade)
   handle: goblin-originals-goblin-arcade
@@ -20,13 +30,7 @@ made:
   aiShare: most
   source: "Creator's submission (issue #173)"
   evidence: creator
-  notes: "Original first-person ghost story set during Taiwan's Ghost Month.
-    Search your late grandmother's rain-soaked townhouse, ask the family altar
-    with moon blocks and keep a promise. Made with AI-assisted coding and
-    visuals under human direction: the code was written in Claude Code sessions
-    (mainly Claude Opus 5.5), with a human setting direction and reviewing each
-    build. Exact AI code share is not measured. Free, no download, no account.
-    Proprietary game; no repository submitted."
+  notes: "Original first-person ghost story set during Taiwan's Ghost Month. Search your late grandmother's rain-soaked townhouse, ask the family altar with moon blocks and keep a promise. Made with AI-assisted coding and visuals under human direction: the code was written in Claude Code sessions (mainly Claude Opus 5.5), with a human setting direction and reviewing each build. Exact AI code share is not measured. Free, no download, no account. Proprietary game; no repository submitted."
 tech:
   engine: threejs
   multiplayer: single
