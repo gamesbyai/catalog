@@ -6,14 +6,16 @@
 // uploaded from here).
 // Every game gets a fresh browser context, a hard deadline kept by Node (not by Playwright), a page that can never lock
 // the pointer, go fullscreen or lock the keyboard (noLocks, in every mode), and nothing
-// from the page is read back except screenshot pixels, bounded engine hints, and on itch.io the address of the game's
-// own frame, which must match itch's CDN pattern (itchFrame). The opt-in start step (CAPTURE_START, startGame) also
-// asks the page whether a Start or Play button or a name field is visible, and before every click or key whether its
-// target is a link or a control that isn't the game's (pressCheck); those answers only decide a press and are never
-// saved or logged. After every screenshot the capture asks whether an ad frame was in view (adInView: frame addresses
-// and names matched against fixed lists, a box and a visible yes or no); the answer only drops that frame. The top
-// frame's host is compared with the one the game ran on at the first frame: a navigation to another host (a jam
-// game's exit portal) ends all input, and no frame from then on is kept ("left the game").
+// from the page is read back except screenshot pixels, bounded engine hints, and the address of the game's own frame:
+// on itch.io one that must match itch's CDN pattern (itchFrame); elsewhere the addresses and sizes of the page's frames,
+// of which only the largest counts, and only when it is big and on the page's own host (siteFrame). The opt-in start
+// step (CAPTURE_START, startGame) also asks the page whether a Start or Play button or a name field is visible, and
+// before every click or key whether its target is a link or a control that isn't the game's (pressCheck); those
+// answers only decide a press and are never saved or logged. After every screenshot the capture asks whether an ad
+// frame was in view (adInView: frame addresses and names matched against fixed lists, a box and a visible yes or no);
+// the answer only drops that frame. The top frame's host is compared with the one the game ran on at the first frame: a
+// navigation to another host (a jam game's exit portal) ends all input, and no frame from then on is kept ("left the
+// game").
 // Games whose creator sent screenshots with the submission (provenance.uploads) are never captured; the upload job
 // fetches those instead. node scripts/capture.mjs --split <slug-list file> prints { capture, uploads } for the workflow.
 import { mkdirSync, mkdtempSync, rmSync, rmdirSync, writeFileSync, readFileSync, existsSync, copyFileSync } from 'node:fs';
@@ -55,6 +57,7 @@ export const DEFAULTS = {
   allowLocalHttp: false, // tests only: http://127.0.0.1
   itchHost: /\.itch\.io$/, // pages captured the itch.io way (tests point it at 127.0.0.1)
   itchPage: false, // on itch.io: capture the page itself, toolbar hidden, instead of the game's own frame
+  ownPage: false, // elsewhere: capture the page itself, even when it runs the game in a frame from its own host (siteFrame)
   sandbox: process.env.CAPTURE_SANDBOX !== '0',
   // Local captures on a machine with a GPU (`--gpu`): full Chromium in its new headless mode draws WebGL and WebGPU on
   // the real GPU, for games CI's software renderer leaves blank. `headed: true` shows the window instead.
@@ -125,6 +128,92 @@ export function itchFrame(pageUrl, candidate) {
     if (u.protocol === 'https:' && ['html.itch.zone', 'html-classic.itch.zone'].includes(u.host) && !u.username && !u.password && u.pathname.startsWith(match[1])) return u.href;
   } catch {}
   return null;
+}
+
+// Portals often run a game in a frame from their own host, under their header and next to their links (Goblin
+// Arcade's /play/<slug> page frames /games/<slug>/index.html), so the cover showed the portal and its title card. Such a
+// frame is opened on its own, as itch's is: the largest frame on the page, when it is big enough to be the game.
+export const SITE_FRAME_MIN = { width: 480, height: 270 };
+const SITE_FRAMES = 20; // frames read from a page at most
+// The page's answer at most: SITE_FRAMES lines of four numbers, a visible flag, a length and an address of 2 kB.
+const FRAME_LIST_MAX = SITE_FRAMES * (4 * 33 + 2 + 5 + 2048 + 1);
+
+/**
+ * Runs in the page: its first `max` frames as one string for frameList, a line each (x y width height shown length
+ * address), the address read once and dropped when over 2 kB. Only number conversions, string lengths and
+ * concatenation build it, which a page can't rewrite, so its size has a fixed bound. Self-contained, like pressCheck.
+ */
+export function frameReport(max) {
+  let out = '';
+  const frames = document.querySelectorAll('iframe');
+  for (let i = 0; i < max; i++) {
+    const f = frames[i];
+    if (!f) break;
+    const r = f.getBoundingClientRect();
+    const address = f.src; // read once: a getter could answer differently the next time
+    const src = typeof address === 'string' && address.length <= 2048 ? address : '';
+    const shown = typeof f.checkVisibility === 'function' ? f.checkVisibility({ opacityProperty: true, visibilityProperty: true }) === true : true;
+    out += `${+r.x} ${+r.y} ${+r.width} ${+r.height} ${shown ? 1 : 0} ${src.length} ${src}\n`;
+  }
+  return out;
+}
+
+/**
+ * The page's frames, from its one-string answer (a line per frame: x y width height shown length address), as
+ * siteFrame's candidates. An answer over FRAME_LIST_MAX gives none; a line that doesn't parse ends the list.
+ */
+export function frameList(text) {
+  const out = [];
+  if (typeof text !== 'string' || text.length > FRAME_LIST_MAX) return out;
+  let at = 0;
+  while (out.length < SITE_FRAMES && at < text.length) {
+    const m = /^(\S{1,32}) (\S{1,32}) (\S{1,32}) (\S{1,32}) ([01]) (\d{1,4}) /.exec(text.slice(at, at + 160));
+    if (!m) break;
+    const start = at + m[0].length;
+    const length = Number(m[6]);
+    if (length > 2048 || text[start + length] !== '\n') break;
+    out.push({ x: Number(m[1]), y: Number(m[2]), w: Number(m[3]), h: Number(m[4]), shown: m[5] === '1', src: text.slice(start, start + length) });
+    at = start + length + 1;
+  }
+  return out;
+}
+
+/**
+ * The game's own frame on a page that runs it in a frame from the page's own host, or null. `candidates` are the
+ * page's frames as { src, x, y, w, h, shown } (the address, the box on screen, and whether it is visible), read as
+ * data. Hidden frames and frames placed off the page (above or left of it) don't count. Of the rest only the largest
+ * counts, and only when it is at least SITE_FRAME_MIN, its address at most 2 kB, on the page's exact host and scheme,
+ * without credentials, not an ad frame (isAdFrame) and not the page itself. A frame from any other host is never
+ * followed, not even a subdomain. The address keeps its fragment: a frame may choose its game by it.
+ */
+export function siteFrame(pageUrl, candidates, { allowLocalHttp = false } = {}) {
+  let page;
+  try {
+    page = new URL(pageUrl);
+  } catch {
+    return null;
+  }
+  if (!checkUrl(page.href, { allowLocalHttp }) || !Array.isArray(candidates)) return null;
+  let best = null;
+  for (const c of candidates.slice(0, SITE_FRAMES)) {
+    if (!c || typeof c.src !== 'string' || c.shown === false || ![c.x ?? 0, c.y ?? 0, c.w, c.h].every(Number.isFinite)) continue;
+    if ((c.x ?? 0) + c.w <= 0 || (c.y ?? 0) + c.h <= 0) continue;
+    if (!best || c.w * c.h > best.w * best.h) best = c;
+  }
+  if (!best || best.w < SITE_FRAME_MIN.width || best.h < SITE_FRAME_MIN.height || best.src.length > 2048) return null;
+  let u;
+  try {
+    u = new URL(best.src, page);
+  } catch {
+    return null;
+  }
+  if (!checkUrl(u.href, { allowLocalHttp }) || u.protocol !== page.protocol || u.host !== page.host || isAdFrame(u.href, '')) return null;
+  const bare = (v) => {
+    const w = new URL(v.href);
+    w.hash = '';
+    return w.href;
+  };
+  return bare(u) === bare(page) ? null : u.href;
 }
 
 // One browser per process, launched through launchServer so a hung browser can be killed outright.
@@ -514,11 +603,11 @@ export const SOLO_NAMES = phrase([
 ]);
 /** Buttons that start a game, matched against the whole name or text (arrows and punctuation around it ignored). */
 export const START_NAMES = phrase([
-  'play', 'start', 'play now', 'play game', 'play the game', 'start game', 'start the game', 'new game', 'start run', 'new run',
+  'play', 'start', 'play now', 'play game', 'play the game', 'start game', 'start the game', 'new game', 'new campaign', 'start run', 'new run',
   'begin', 'begin game', 'begin run', 'begin adventure', 'begin journey', 'launch', 'launch game', 'launch mission', 'quick ?play',
   'single ?player', 'solo', 'play solo', 'play offline', 'play as guest', 'play (?:vs|against) (?:cpu|ai|computer|bots?)', 'vs (?:cpu|ai)',
   "let[\\u2019']?s (?:go|play)", '(?:click|tap|press) (?:here |anywhere )?to (?:start|play|begin)', 'press start', 'start (?:adventure|mission|playing|now|demo)',
-  'enter (?:the )?(?:game|arena|world|battle|match)', 'run game', 'dive in', 'drop in', 'jump in', 'insert coin',
+  'enter (?:the )?(?:game|arena|world|battle|match)', 'run game', 'dive in', 'drop in', 'jump in', 'insert coin', 'let loose',
   // German
   'spielen', 'jetzt spielen', 'spiel starten', 'starten', 'neues spiel', 'spiel beginnen', 'beginnen', 'los', "los geht[\\u2019']?s",
   '(?:klicken|tippen|dr(?:ü|ue)cken) (?:zum|um zu) (?:starten|spielen)',
@@ -528,7 +617,7 @@ export const START_NAMES = phrase([
  * ("Enable sound?", a newsletter) gets the declining answer: a capture never opts in to anything.
  */
 export const NEXT_NAMES = phrase([
-  'continue', 'join', 'join game', 'enter', 'go', 'fight', 'ok', 'okay', 'got it', 'skip', 'skip intro', 'next', 'ready', "i[\\u2019']?m ready", 'deploy', 'embark',
+  'continue', 'join', 'join game', 'enter', 'go', 'fight', 'ok', 'okay', 'got it', 'skip', 'skip intro', 'next', 'ready', "i[\\u2019']?m ready", 'deploy', 'embark', 'ride out',
   'no', 'no thanks', 'not now', 'maybe later', 'mute', 'sound off', 'no sound', '(?:play )?without sound',
   'weiter', 'fortfahren', 'beitreten', 'bereit', '(?:ü|ue)berspringen', 'verstanden', 'alles klar', 'nein', 'nein danke', 'sp(?:ä|ae)ter', 'ohne ton',
 ]);
@@ -904,7 +993,8 @@ export async function captureOne(url, outDir, opts = {}) {
   // `ads` counts frames dropped because an ad was in view. `home` is the host the game runs on, fixed at the first frame
   // (an address that sends the browser on to the game's real site before then is part of opening it); `left` is set when
   // the top frame then heads for another host (a jam game's exit portal, a link out of the game).
-  const state = { context: null, page: null, opened: false, finished: false, shots: [], before: [], timedOut: false, ads: 0, home: null, left: false };
+  // `siteFrame` is set when the capture opened the page's own game frame (siteFrame) instead of the page.
+  const state = { context: null, page: null, opened: false, finished: false, shots: [], before: [], timedOut: false, ads: 0, home: null, left: false, siteFrame: false };
   // The best engine and the best renderer across all scans, each by its own priority.
   let engine = { engine: null, renderer: null, evidence: [] };
   const better = (order, next, current) => next && (!current || order.indexOf(next) < order.indexOf(current));
@@ -1023,6 +1113,21 @@ export async function captureOne(url, outDir, opts = {}) {
         });
         const frame = itchFrame(url, candidate);
         if (frame) await open(frame);
+      }
+    } else if (!o.ownPage) {
+      // A game in a frame from the page's own host (siteFrame) is opened on its own. The page reports its first
+      // SITE_FRAMES frames as one bounded string (frameReport, parsed by frameList); the bound goes in as text, since a
+      // page that rewrites array setters garbles arguments passed through Playwright. A game that fails in its frame
+      // gets a pass on the page itself (ownPage, in captureSlugs).
+      const read = await guard(page.evaluate(`(${frameReport})(${SITE_FRAMES})`)).catch((e) => {
+        if (e instanceof CaptureError) throw e;
+        return null;
+      });
+      const frame = siteFrame(page.url(), frameList(read), o);
+      if (frame) {
+        state.siteFrame = true;
+        trace?.("opened the page's own game frame");
+        await open(frame);
       }
     }
 
@@ -1175,8 +1280,9 @@ export async function captureOne(url, outDir, opts = {}) {
       writeFileSync(engineFile, JSON.stringify(engine) + '\n');
     }
   }
-  // How many frames an ad cost, and whether the page left the game: the run log says so.
-  return { ...result, ...(state.ads ? { adFrames: state.ads } : {}), ...(state.left ? { left: true } : {}) };
+  // How many frames an ad cost, whether the page left the game, and whether the game ran in the page's own frame: the
+  // run log says so.
+  return { ...result, ...(state.ads ? { adFrames: state.ads } : {}), ...(state.left ? { left: true } : {}), ...(state.siteFrame ? { siteFrame: true } : {}) };
 }
 
 function firstLine(e) {
@@ -1257,6 +1363,13 @@ export async function captureSlugs(slugs, { root = ROOT, out = join(root, 'out')
           const again = await run({ ...opts, itchPage: true });
           if (again.ok) res = { ...again, itchPage: true };
         }
+        // A game that fails in its page's own frame (siteFrame), which may need the page around it: one more pass on
+        // the page itself.
+        if (!res.ok && res.siteFrame && !opts.ownPage && Date.now() - batchStart < budgetMs) {
+          log(`     ${slug}: ${res.reason} in the page's own game frame, retry on the page`);
+          const again = await run({ ...opts, ownPage: true });
+          if (again.ok) res = { ...again, ownPage: true };
+        }
         // One more pass in a scratch folder, so a worse pass never removes a better one: it replaces this game's files
         // only when it kept more than `kept` frames. Returns its result with the files in place, or null.
         const betterPass = async (o, kept) => {
@@ -1282,16 +1395,16 @@ export async function captureSlugs(slugs, { root = ROOT, out = join(root, 'out')
         const kept = res.ok ? res.files.length : 0;
         if (opts.start === 'retry' && (res.ok ? kept < NAMES.length : res.reason === 'blank') && Date.now() - batchStart < budgetMs) {
           log(`     ${slug}: ${res.ok ? `${kept} of ${NAMES.length} frames` : res.reason}, retry with the start step`);
-          const again = await betterPass({ ...opts, start: true, ...(res.throttled ? { throttle: true } : {}), ...(res.itchPage ? { itchPage: true } : {}) }, kept);
-          if (again) res = { ...again, started: true };
+          const again = await betterPass({ ...opts, start: true, ...(res.throttled ? { throttle: true } : {}), ...(res.itchPage ? { itchPage: true } : {}), ...(res.ownPage ? { ownPage: true } : {}) }, kept);
+          if (again) res = { ...again, started: true, ...(res.itchPage ? { itchPage: true } : {}), ...(res.ownPage ? { ownPage: true } : {}) };
         }
         // Frames that stopped coming (every later screenshot timed out, as when heavy 3D starts after a light menu) leave
         // only what came before: one more pass with throttled frames; the pass that kept more frames wins.
         if (res.ok && res.stalled && !res.throttled && !opts.throttle && res.files.length < NAMES.length && Date.now() - batchStart < budgetMs) {
           log(`     ${slug}: frames stopped after ${res.files.length}, retry throttled`);
           const started = res.started || opts.start === true;
-          const again = await betterPass({ ...opts, throttle: true, ...(started ? { start: true } : {}), ...(res.itchPage ? { itchPage: true } : {}) }, res.files.length);
-          if (again) res = { ...again, throttled: true, ...(res.started ? { started: true } : {}), ...(res.itchPage ? { itchPage: true } : {}) };
+          const again = await betterPass({ ...opts, throttle: true, ...(started ? { start: true } : {}), ...(res.itchPage ? { itchPage: true } : {}), ...(res.ownPage ? { ownPage: true } : {}) }, res.files.length);
+          if (again) res = { ...again, throttled: true, ...(res.started ? { started: true } : {}), ...(res.itchPage ? { itchPage: true } : {}), ...(res.ownPage ? { ownPage: true } : {}) };
         }
       }
     }
@@ -1301,6 +1414,8 @@ export async function captureSlugs(slugs, { root = ROOT, out = join(root, 'out')
     else {
       const notes = res.ok ? [`${res.files.length} of ${NAMES.length} frames`, ...(res.adFrames ? [`${res.adFrames} dropped for an ad in view`] : [])] : [];
       if (res.left) notes.push('left the game');
+      if (res.ok && res.siteFrame) notes.push("in the page's own game frame");
+      if (res.ownPage) notes.push('on the page itself');
       log(`${res.ok ? 'ok  ' : 'FAIL'} ${name} (${[`${((Date.now() - started) / 1000).toFixed(1)} s`, ...notes].join(', ')})${res.ok ? '' : `: ${res.reason}`}`);
     }
     results.push({ slug: name, ...res });

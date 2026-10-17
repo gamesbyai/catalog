@@ -6,7 +6,7 @@ import { tmpdir } from 'node:os';
 import { chromium } from 'playwright';
 import sharp from 'sharp';
 import { join } from 'node:path';
-import { captureOne, captureSlugs, closeBrowser, throttleFrames, itchFrame, DEFAULTS } from '../scripts/capture.mjs';
+import { captureOne, captureSlugs, closeBrowser, throttleFrames, itchFrame, siteFrame, frameList, SITE_FRAME_MIN, DEFAULTS } from '../scripts/capture.mjs';
 
 // Fixture pages are our own, so the Chromium sandbox is off here (CI's validate job has no sandbox setup).
 const FAST = { times: [300, 700, 1100], navTimeout: 4000, deadline: 6000, shotTimeout: 2000, clickTimeout: 1000, closeTimeout: 2000, allowLocalHttp: true, sandbox: false };
@@ -106,6 +106,25 @@ const PAGES = {
     const g = document.getElementById('c').getContext('2d');
     for (let x = 0; x < 1280; x += 40) for (let y = 0; y < 720; y += 40) { g.fillStyle = 'hsl(' + ((x + y * 3) % 360) + ' 60% ' + (30 + ((x * y) % 40)) + '%)'; g.fillRect(x, y, 40, 40); }
   </script>`),
+  // A portal page: its own header in red behind the game, which runs in a frame from the same host.
+  '/site-page': html(`<div style="position:fixed;left:0;top:0;width:100%;height:100%;background:#f00"></div>
+    <iframe src="/game" style="position:absolute;left:160px;top:90px;width:960px;height:540px;border:0"></iframe>`),
+  // The same portal with a bigger frame that is hidden: the visible game wins.
+  '/site-hidden': html(`<div style="position:fixed;left:0;top:0;width:100%;height:100%;background:#f00"></div>
+    <iframe src="/black" style="position:absolute;left:0;top:0;width:1280px;height:720px;border:0;visibility:hidden"></iframe>
+    <iframe src="/game" style="position:absolute;left:160px;top:90px;width:960px;height:540px;border:0"></iframe>`),
+  // The same portal, whose script turns every array or object index 0 written anywhere into a thousand big frames on
+  // its own host: the capture's answer is one string built without arrays or objects, so it still reads the real frame.
+  '/site-tamper': html(`<div style="position:fixed;left:0;top:0;width:100%;height:100%;background:#f00"></div>
+    <iframe src="/game" style="position:absolute;left:160px;top:90px;width:960px;height:540px;border:0"></iframe>
+    <script>
+    const fake = () => ({ src: location.origin + '/black?' + 'x'.repeat(1000), x: 0, y: 0, w: 9999, h: 9999, shown: true });
+    const own = (o, k, value) => Object.defineProperty(o, k, { value, writable: true, enumerable: true, configurable: true });
+    Object.defineProperty(Array.prototype, '0', { configurable: true, set(v) { own(this, '0', fake()); for (let i = 1; i < 1000; i++) own(this, String(i), fake()); } });
+    Object.defineProperty(Object.prototype, '0', { configurable: true, set(v) { own(this, '0', fake()); } });
+    </script>`),
+  // A game page whose frame from the same host stays black: the frame pass is blank, the page itself is not.
+  '/site-black': gamePage(`<iframe src="/black" style="position:absolute;left:160px;top:90px;width:960px;height:540px;border:0"></iframe>`),
   '/to-download': html(`<p style="color:#fff">starting</p><script>addEventListener('load', () => setTimeout(() => { location.href = '/download'; }, 100));</script>`),
   '/alerts': html(`<script>
     addEventListener('beforeunload', (e) => { e.preventDefault(); e.returnValue = ''; });
@@ -405,6 +424,111 @@ test('itchFrame: encoded dot segments cannot escape the upload directory after U
     'https://html.itch.zone/html/42/%2e%2e/43/index.html',
   ]) assert.equal(itchFrame('https://fixture.itch.io/game', src), null, src);
   assert.equal(itchFrame('https://fixture.itch.io/game', 'https://html.itch.zone/html/42/sub/%2e%2e/index.html'), 'https://html.itch.zone/html/42/index.html');
+});
+
+test("siteFrame: only the largest frame counts, and only when it is big and on the page's exact host", () => {
+  const pageUrl = 'https://portal.example/play/deer';
+  const game = 'https://portal.example/games/deer/index.html';
+  const big = { w: 1148, h: 646 };
+  assert.equal(siteFrame(pageUrl, [{ src: game, ...big }]), game);
+  assert.equal(siteFrame(pageUrl, [{ src: '/games/deer/index.html', ...big }]), game, 'a relative address resolves on the page');
+  assert.equal(siteFrame(pageUrl, [{ src: `${game}#deer`, ...big }]), `${game}#deer`, 'the fragment stays: a frame may pick its game by it');
+  assert.equal(siteFrame(pageUrl, [{ src: game, x: 66, y: 255, ...big, shown: true }]), game, 'a box partly below the fold counts');
+  // A hidden or off-page frame never wins over the game, however big it is.
+  assert.equal(siteFrame(pageUrl, [{ src: 'https://portal.example/preload.html', w: 1280, h: 720, shown: false }, { src: game, ...big }]), game);
+  assert.equal(siteFrame(pageUrl, [{ src: 'https://portal.example/offscreen.html', x: -5000, y: 0, w: 1280, h: 720 }, { src: game, ...big }]), game);
+  assert.equal(siteFrame(pageUrl, [{ src: 'https://portal.example/above.html', x: 0, y: -2000, w: 1280, h: 720 }, { src: game, ...big }]), game);
+  assert.equal(siteFrame(pageUrl, [{ src: game, w: SITE_FRAME_MIN.width, h: SITE_FRAME_MIN.height }]), game, 'the minimum size counts');
+  // The largest frame wins over a smaller one, wherever each sits in the page.
+  assert.equal(siteFrame(pageUrl, [{ src: 'https://portal.example/ad-slot.html', w: 728, h: 300 }, { src: game, ...big }]), game);
+  for (const [name, candidates] of [
+    ['another host', [{ src: 'https://other.example/games/deer/index.html', ...big }]],
+    ['a subdomain', [{ src: 'https://cdn.portal.example/games/deer/index.html', ...big }]],
+    ['a parent domain', [{ src: 'https://example/games/deer/index.html', ...big }]],
+    ['another port', [{ src: 'https://portal.example:8443/games/deer/index.html', ...big }]],
+    ['plain http', [{ src: 'http://portal.example/games/deer/index.html', ...big }]],
+    ['credentials', [{ src: 'https://user:pass@portal.example/games/deer/index.html', ...big }]],
+    ['a script address', [{ src: 'javascript:alert(1)', ...big }]],
+    ['srcdoc', [{ src: 'about:srcdoc', ...big }]],
+    ['no address', [{ src: '', ...big }]],
+    ['the page itself', [{ src: `${pageUrl}#game`, ...big }]],
+    ['hidden', [{ src: game, ...big, shown: false }]],
+    ['off the page', [{ src: game, x: -1148, y: 0, ...big }]],
+    ['a position that is not a number', [{ src: game, x: NaN, y: 0, ...big }]],
+    ['an address over 2 kB on the same host', [{ src: `${game}?${'a'.repeat(2100)}`, ...big }]],
+    ['too narrow', [{ src: game, w: SITE_FRAME_MIN.width - 1, h: 646 }]],
+    ['too short', [{ src: game, w: 1148, h: SITE_FRAME_MIN.height - 1 }]],
+    ['no size', [{ src: game, w: 0, h: 0 }]],
+    // A bigger frame from elsewhere (a trailer) means the game isn't the page's own frame: nothing is followed.
+    ['not the largest', [{ src: 'https://video.example/embed/1', w: 1280, h: 720 }, { src: game, ...big }]],
+    ['sizes that are not numbers', [{ src: game, w: '1148', h: '646' }, { src: game, w: NaN, h: 646 }, { src: game, w: Infinity, h: Infinity }]],
+    ['not a list', { src: game, ...big }],
+    ['no frames', []],
+  ]) assert.equal(siteFrame(pageUrl, candidates), null, name);
+  // Only the first 20 frames are read.
+  const many = Array.from({ length: 20 }, (_, i) => ({ src: `https://other.example/${i}`, w: 10, h: 10 }));
+  assert.equal(siteFrame(pageUrl, [...many, { src: game, ...big }]), null);
+  // Pages that aren't https, and ad hosts, never give a frame.
+  for (const page of ['http://portal.example/play/deer', 'not a url', 'file:///C:/game.html']) assert.equal(siteFrame(page, [{ src: game, ...big }]), null, page);
+  assert.equal(siteFrame('https://ads.doubleclick.net/page', [{ src: 'https://ads.doubleclick.net/game.html', ...big }]), null, 'an ad host');
+  // Plain http only on 127.0.0.1, and only when allowed (tests).
+  assert.equal(siteFrame('http://127.0.0.1:8080/play', [{ src: 'http://127.0.0.1:8080/game', ...big }], { allowLocalHttp: true }), 'http://127.0.0.1:8080/game');
+  assert.equal(siteFrame('http://127.0.0.1:8080/play', [{ src: 'http://127.0.0.1:8080/game', ...big }]), null);
+});
+
+test("frameList: the page's one-string answer becomes at most 20 frames, and an answer over its bound gives none", () => {
+  const game = 'https://portal.example/games/deer/index.html';
+  const line = (src, box = '0 255 1148 646 1') => `${box} ${src.length} ${src}\n`;
+  assert.deepEqual(frameList(line(game) + line('', '-5 NaN 0 0 0')), [
+    { x: 0, y: 255, w: 1148, h: 646, shown: true, src: game },
+    { x: -5, y: NaN, w: 0, h: 0, shown: false, src: '' },
+  ]);
+  // An address can't run into the next line: its length is given, and the line must end right after it.
+  assert.deepEqual(frameList(`0 0 960 540 1 5 ${game}\n`), []);
+  assert.deepEqual(frameList(`0 0 960 540 1 ${game.length + 1} ${game}\n`), []);
+  // A line that doesn't parse ends the list; the lines before it stay.
+  assert.equal(frameList(line(game) + 'not a frame\n' + line(game)).length, 1);
+  assert.equal(frameList(Array.from({ length: 25 }, () => line(game)).join('')).length, 20);
+  for (const bad of [null, undefined, 42, {}, ['0 0 1 1 1 0 \n'], '', `0 0 960 540 1 3000 ${'a'.repeat(3000)}\n`]) assert.deepEqual(frameList(bad), [], String(bad).slice(0, 40));
+  // Over the bound (20 lines of 2 kB addresses and their numbers), nothing at all is read.
+  assert.deepEqual(frameList(line(game) + 'x'.repeat(50_000)), []);
+});
+
+test("captureOne: a game in a frame from the page's own host is captured in that frame, not the page around it", async () => {
+  const dir = join(tmp(), 'site-frame');
+  const res = await captureOne(`${base}/site-page`, dir, { ...FAST, times: [400, 1200], shotTimeout: 6000, deadline: 20_000 });
+  assert.equal(res.ok, true, res.reason);
+  assert.equal(res.siteFrame, true);
+  const { data } = await sharp(readFileSync(join(dir, 'cover.png'))).extract({ left: 20, top: 20, width: 1, height: 1 }).raw().toBuffer({ resolveWithObject: true });
+  assert.notDeepEqual([...data.subarray(0, 3)], [255, 0, 0], "the portal's page is not in the cover");
+  // ownPage: the page itself, portal and all.
+  const own = join(tmp(), 'site-own');
+  const page = await captureOne(`${base}/site-page`, own, { ...FAST, times: [400, 1200], shotTimeout: 6000, deadline: 20_000, ownPage: true });
+  assert.equal(page.ok, true, page.reason);
+  assert.equal(page.siteFrame, undefined);
+  const corner = await sharp(readFileSync(join(own, 'cover.png'))).extract({ left: 20, top: 20, width: 1, height: 1 }).raw().toBuffer({ resolveWithObject: true });
+  assert.deepEqual([...corner.data.subarray(0, 3)], [255, 0, 0]);
+  // A bigger hidden frame doesn't win, and a page that rewrites array and object setters can't add frames to the answer.
+  for (const path of ['/site-hidden', '/site-tamper']) {
+    const at = join(tmp(), path.slice(1));
+    const r = await captureOne(`${base}${path}`, at, { ...FAST, times: [400, 1200], shotTimeout: 6000, deadline: 20_000 });
+    assert.equal(r.ok, true, `${path}: ${r.reason}`);
+    assert.equal(r.siteFrame, true, path);
+    const px = await sharp(readFileSync(join(at, 'cover.png'))).extract({ left: 20, top: 20, width: 1, height: 1 }).raw().toBuffer();
+    assert.ok(![[255, 0, 0], [0, 0, 0]].some((c) => c.every((v, i) => px[i] === v)), `${path}: the cover is the game, not the portal or the black frame`);
+  }
+});
+
+test("a game that fails in its page's own frame gets one more try on the page itself", async () => {
+  const root = tmp();
+  mkdirSync(join(root, 'games'));
+  writeFileSync(join(root, 'games', 'framed.yaml'), `play:\n  url: ${base}/site-black\n`);
+  const lines = [];
+  const [res] = await captureSlugs(['framed'], { ...FAST, times: [400, 1200], shotTimeout: 6000, deadline: 20_000, root, out: join(root, 'out'), log: (l) => lines.push(l) });
+  assert.match(lines.join(' '), /framed: blank in the page's own game frame, retry on the page/);
+  assert.equal(res.ok, true, res.reason);
+  assert.equal(res.ownPage, true);
+  assert.match(lines.join(' '), /ok {3}framed \(.*on the page itself\)/);
 });
 
 test('captureOne: only the game frame is read from an itch.io page, even with a decoy URL in the title', async (t) => {
@@ -802,9 +926,9 @@ const magentaAt = async (file, left, top) => {
 
 test('start, next and name-field patterns match whole names only', async () => {
   const { START_NAMES, NEXT_NAMES, NAME_FIELD } = await import('../scripts/capture.mjs');
-  for (const s of ['Play', '▶ PLAY', 'PLAY NOW!', 'Start Game', 'start', "Let's go", 'Let’s play', 'Tap to start', 'Click here to play', 'Single Player', 'singleplayer', 'New Game', 'Begin Adventure', 'Play vs CPU', 'Quick Play', '[ Launch ]']) assert.match(s, START_NAMES, s);
+  for (const s of ['Play', '▶ PLAY', 'PLAY NOW!', 'Start Game', 'start', "Let's go", 'Let’s play', 'Tap to start', 'Click here to play', 'Single Player', 'singleplayer', 'New Game', 'Begin Adventure', 'Play vs CPU', 'Quick Play', '[ Launch ]', 'New campaign', 'Let loose', '開始 Begin']) assert.match(s, START_NAMES, s);
   for (const s of ['Display', 'How to play', 'Play with friends', 'Playground', 'Settings', 'Leaderboard', 'Play on itch.io', 'Restart level', 'Join Discord', 'Continue']) assert.doesNotMatch(s, START_NAMES, s);
-  for (const s of ['Continue', 'JOIN', 'OK', 'Got it!', 'Skip intro', "I'm ready"]) assert.match(s, NEXT_NAMES, s);
+  for (const s of ['Continue', 'JOIN', 'OK', 'Got it!', 'Skip intro', "I'm ready", '▷ Ride out']) assert.match(s, NEXT_NAMES, s);
   for (const s of ['Join Discord', 'Next level select', 'Okay then']) assert.doesNotMatch(s, NEXT_NAMES, s);
   for (const s of ['Enter your nickname', 'Your name', 'Username', 'Pilot name', 'Callsign', 'NAME']) assert.match(s, NAME_FIELD, s);
   for (const s of ['Search', 'Type a message to other players', 'Email', 'Rename']) assert.doesNotMatch(s, NAME_FIELD, s);
@@ -927,7 +1051,7 @@ test('the deny pattern catches wallet, payment, account, rating and sharing cont
   // A capture never accepts or allows anything: cookie and consent banners, terms, browser permissions.
   for (const s of ['Accept all', 'Accept cookies', 'I agree', 'Agree and continue', 'Allow', 'Allow notifications', 'Consent', 'Cookie settings', 'Terms of Service', 'Privacy policy', 'GDPR', 'Alle akzeptieren', 'Zustimmen', 'Einverstanden', 'Erlauben', 'Datenschutz']) assert.match(s, DENY, s);
   for (const s of ['Play', '▶ PLAY', 'Start Game', 'Display', 'Pirates 2/8', 'Better luck', 'Shard 3/10', 'Continue', 'Join', 'Deploy', 'Solo', 'Practice', 'Training', 'Spielen', 'Weiter', 'Neon Corner 0/12', 'Player']) assert.doesNotMatch(s, DENY, s);
-  const examples = ['Play', 'Start', 'Play Now', 'Start Game', 'New Game', 'Begin Adventure', 'Quick Play', 'Single Player', 'Play Solo', 'Play Offline', 'Play as Guest', 'Play vs CPU', "Let's go", 'Tap to start', 'Press Start', 'Enter the Arena', 'Insert Coin', 'Spiel starten', 'Neues Spiel', 'Continue', 'Join Game', 'Got it', 'Skip intro', "I'm ready", 'Deploy', 'Embark', 'No thanks', 'Not now', 'Maybe later', 'Mute', 'Play without sound', 'Fortfahren', 'Beitreten', 'Practice Range', 'Training Mode', 'Free Play', 'Sandbox', 'FFA Bot Lobby', 'Add Bots', 'Einzelspieler', 'Gegen Computer'];
+  const examples = ['Play', 'Start', 'Play Now', 'Start Game', 'New Game', 'Begin Adventure', 'Quick Play', 'Single Player', 'Play Solo', 'Play Offline', 'Play as Guest', 'Play vs CPU', "Let's go", 'Tap to start', 'Press Start', 'Enter the Arena', 'Insert Coin', 'Spiel starten', 'Neues Spiel', 'Continue', 'Join Game', 'Got it', 'Skip intro', "I'm ready", 'Deploy', 'Embark', 'No thanks', 'Not now', 'Maybe later', 'Mute', 'Play without sound', 'Fortfahren', 'Beitreten', 'Practice Range', 'Training Mode', 'Free Play', 'Sandbox', 'FFA Bot Lobby', 'Add Bots', 'Einzelspieler', 'Gegen Computer', 'New campaign', 'Let loose', 'Ride out'];
   for (const s of examples) {
     assert.ok([SOLO_NAMES, START_NAMES, NEXT_NAMES].some((re) => re.test(s)), `${s} is a start, next or solo name`);
     assert.doesNotMatch(s, DENY, s);
@@ -1335,8 +1459,12 @@ test('a frame with an ad in view is dropped: a game whose every frame shows one 
 });
 
 test('an ad inside a framed page counts too; ads below the fold, hidden or a pixel in size do not', async () => {
-  const nested = await captureOne(`${base}/ad-nested`, join(tmp(), 'ad-nested'), FAST);
+  // On the page itself (ownPage) the ad sits in a frame inside the game's frame; by default the game's frame is opened
+  // on its own (siteFrame) and its ad still counts.
+  const nested = await captureOne(`${base}/ad-nested`, join(tmp(), 'ad-nested'), { ...FAST, ownPage: true });
   assert.deepEqual([nested.ok, nested.reason], [false, 'ads']);
+  const opened = await captureOne(`${base}/ad-nested`, join(tmp(), 'ad-nested-frame'), FAST);
+  assert.deepEqual([opened.ok, opened.reason, opened.siteFrame], [false, 'ads', true]);
   for (const path of ['/ad-below', '/ad-hidden']) {
     const dir = join(tmp(), path.slice(1));
     const res = await captureOne(`${base}${path}`, dir, { ...FAST, times: [400, 1200, 2000], shotTimeout: 6000, deadline: 20_000 });

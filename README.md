@@ -34,6 +34,8 @@ Nothing is merged automatically: every entry is approved before it goes live.
 
 The capture job takes screenshots from the live game. Screenshots supplied through the submission form skip the browser; don't add image files to your pull request.
 
+When the play page runs the game in a frame, the capture opens that frame on its own so the screenshots show the game rather than the page around it: on itch.io the game's frame on itch's CDN, and elsewhere the page's largest frame when it is at least 480×270 and served from the page's own host. A game that fails in its frame gets one more pass on the page itself.
+
 For each game it opens, `scripts/capture.mjs` also writes `out/<slug>/engine.json` beside `cover.png`, `shot-1.png` and `shot-2.png` in the `shots` artifact:
 
 ```json
