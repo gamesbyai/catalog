@@ -1,0 +1,49 @@
+slug: bank-and-boat
+title: Bank and Boat
+tagline: Submitted by its creator; the description is added during review.
+description: ""
+play:
+  url: https://bank-and-boat.grok.me/
+  platforms:
+    - browser
+  embedPermission:
+    by: submission
+    date: 2026-10-20
+creator:
+  name: Dave Simpson
+  handle: bankandboat
+  links:
+    - https://bankandboat.itch.io
+made:
+  models:
+    - grok-build
+  tools:
+    - grok-build
+  aiShare: most
+  source: "Creator's submission (issue #184)"
+  evidence: creator
+  notes: Built with AI (Grok Build); the fishing design is mine. I'm an angler and
+    solo dev from Leighton Buzzard. I decided how the day tickets, swims, bites,
+    tackle, club records and daily match should work, and used Grok Build to
+    turn that into the game. Try a free day, no sign-in.
+tech:
+  multiplayer: single
+genres:
+  - simulation
+  - casual
+  - sports
+media:
+  cover: games/bank-and-boat/cover
+  screenshots:
+    - games/bank-and-boat/shot-1
+    - games/bank-and-boat/shot-2
+dates:
+  added: 2026-10-20
+  updated: 2026-10-20
+status: live
+provenance:
+  foundVia: form
+  submittedBy: "#184"
+  uploads:
+    ref: 760b944abf8178a1
+    count: 3
