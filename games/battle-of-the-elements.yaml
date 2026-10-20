@@ -1,0 +1,46 @@
+slug: battle-of-the-elements
+title: Battle of the Elements
+tagline: Submitted by its creator; the description is added during review.
+description: ""
+play:
+  url: https://battleoftheelements.com/
+  platforms:
+    - browser
+  embedPermission:
+    by: submission
+    date: 2026-10-20
+creator:
+  name: battleoftheelements
+  handle: battleoftheelements
+made:
+  models:
+    - gpt-6-1-sol
+    - gemini-3-8-flash
+    - deepseek-v4-1-flash
+  tools:
+    - codex
+    - antigravity
+  aiShare: all
+  source: "Creator's submission (issue #182)"
+  evidence: creator
+  notes: Using orca with codex, deepseek, and antigravity, I orchestrated the
+    development of the game in multiple stages. Used pixellab for textures and
+    elevenlabs for sounds. The toughest part was achieving parity between local
+    and offline play.
+tech:
+  engine: canvas
+  multiplayer: online
+genres:
+  - action
+media:
+  cover: games/battle-of-the-elements/cover
+  screenshots:
+    - games/battle-of-the-elements/shot-1
+    - games/battle-of-the-elements/shot-2
+dates:
+  added: 2026-10-20
+  updated: 2026-10-20
+status: live
+provenance:
+  foundVia: form
+  submittedBy: "#182"
