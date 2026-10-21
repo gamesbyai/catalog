@@ -1,0 +1,43 @@
+slug: tiberava
+title: TIBERAVA
+tagline: Submitted by its creator; the description is added during review.
+description: ""
+play:
+  url: https://tiberava.online/
+  platforms:
+    - browser
+  embedPermission:
+    by: submission
+    date: 2026-10-21
+creator:
+  name: Grangapps
+  handle: grangapps
+made:
+  models: []
+  tools: []
+  aiShare: most
+  source: "Creator's submission (issue #186)"
+  evidence: creator
+  notes: Built with AI coding assistants (vibe coded). Plain HTML5/JavaScript city
+    builder; free with ads; desktop and mobile. Build a Roman city from 50 BC,
+    free.
+tech:
+  multiplayer: single
+genres:
+  - simulation
+  - strategy
+media:
+  cover: games/tiberava/cover
+  screenshots:
+    - games/tiberava/shot-1
+    - games/tiberava/shot-2
+dates:
+  added: 2026-10-21
+  updated: 2026-10-21
+status: live
+provenance:
+  foundVia: form
+  submittedBy: "#186"
+  uploads:
+    ref: 5870a28f3c85783b
+    count: 1
