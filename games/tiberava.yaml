@@ -1,0 +1,51 @@
+slug: tiberava
+title: TIBERAVA
+tagline: Grow a small Italian settlement into a Roman city from 50 BC.
+description: "You found Nova Roma, a settlement in the Province of Italy in 50 BC, and grow it into a Roman city by laying out its roads and buildings.
+
+
+  A guided quest path called The Road to Rome, in seven chapters. Homes that go up beside your roads. Wells and water catchment to keep those homes supplied. Denarius rewards for each finished quest step. A chronicle with news from your city. Food stores, a treasury and citizen happiness to manage.
+
+
+  Tap to build and hold to see information. Follow the suggestions at your own pace, or skip the guide entirely.
+
+
+  Grangapps says the game was vibe coded with AI coding assistants, in plain HTML5 and JavaScript. It's free with ads, and you can play it on desktop or mobile."
+play:
+  url: https://tiberava.online/
+  platforms:
+    - browser
+  embedPermission:
+    by: submission
+    date: 2026-10-21
+  embeddable: true
+creator:
+  name: Grangapps
+  handle: grangapps
+made:
+  models: []
+  tools: []
+  aiShare: most
+  source: "Creator's submission (issue #186)"
+  evidence: creator
+  notes: Built with AI coding assistants (vibe coded). Plain HTML5/JavaScript city builder; free with ads; desktop and mobile. Build a Roman city from 50 BC, free.
+tech:
+  multiplayer: single
+genres:
+  - simulation
+  - strategy
+media:
+  cover: games/tiberava/cover
+  screenshots:
+    - games/tiberava/shot-1
+    - games/tiberava/shot-2
+dates:
+  added: 2026-10-21
+  updated: 2026-10-21
+status: live
+provenance:
+  foundVia: form
+  submittedBy: "#186"
+  uploads:
+    ref: 5870a28f3c85783b
+    count: 1
