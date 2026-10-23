@@ -1,16 +1,16 @@
 slug: bank-and-boat
 title: Bank and Boat
 tagline: Fish canal swims and track your personal bests.
-description: "Alone on a canal swim, you cast a line baited with maggots and wait for a bite. Your casts and your maggots both count down as you fish.
+description: "Alone on a canal swim, you cast a line baited with maggots and wait for a bite. Your casts and your maggots both run down as you fish.
 
 
-  Swims on the canal, such as Near shelf. Tackle, including a canal rod. Weight and length recorded for each catch. Payouts in pounds. Personal bests and club records. The daily match. A free day ticket to try, with no sign-in.
+  Swims on the canal, such as Near shelf. Tackle, including a canal rod. Weight and length recorded for each catch, with payouts in pounds. Personal bests, club records and a daily match. A free day ticket to try, with no sign-in.
 
 
   Tap the water, then press Cast. Hold the reel button when a fish is on to wind it in. Photograph the catch, or choose Next cast to keep fishing. Choose End the session to finish.
 
 
-  Dave Simpson is an angler and solo developer. They used an AI tool to build the game, and the creator writes that \"the fishing design is mine.\""
+  Dave Simpson, an angler and solo developer from Leighton Buzzard, decided how the day tickets, swims, bites and tackle should work, then used Grok Build to turn that into the game. \"The fishing design is mine,\" the creator writes."
 play:
   url: https://bank-and-boat.grok.me/
   platforms:
