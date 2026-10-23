@@ -1,7 +1,16 @@
 slug: bank-and-boat
 title: Bank and Boat
-tagline: Submitted by its creator; the description is added during review.
-description: ""
+tagline: Fish canal swims and track your personal bests.
+description: "Alone on a canal swim, you cast a line baited with maggots and wait for a bite. Your casts and your maggots both count down as you fish.
+
+
+  Swims on the canal, such as Near shelf. Tackle, including a canal rod. Weight and length recorded for each catch. Payouts in pounds. Personal bests and club records. The daily match. A free day ticket to try, with no sign-in.
+
+
+  Tap the water, then press Cast. Hold the reel button when a fish is on to wind it in. Photograph the catch, or choose Next cast to keep fishing. Choose End the session to finish.
+
+
+  Dave Simpson is an angler and solo developer. They used an AI tool to build the game, and the creator writes that \"the fishing design is mine.\""
 play:
   url: https://bank-and-boat.grok.me/
   platforms:
@@ -9,6 +18,7 @@ play:
   embedPermission:
     by: submission
     date: 2026-10-20
+  embeddable: true
 creator:
   name: Dave Simpson
   handle: bankandboat
@@ -22,10 +32,7 @@ made:
   aiShare: most
   source: "Creator's submission (issue #184)"
   evidence: creator
-  notes: Built with AI (Grok Build); the fishing design is mine. I'm an angler and
-    solo dev from Leighton Buzzard. I decided how the day tickets, swims, bites,
-    tackle, club records and daily match should work, and used Grok Build to
-    turn that into the game. Try a free day, no sign-in.
+  notes: Built with AI (Grok Build); the fishing design is mine. I'm an angler and solo dev from Leighton Buzzard. I decided how the day tickets, swims, bites, tackle, club records and daily match should work, and used Grok Build to turn that into the game. Try a free day, no sign-in.
 tech:
   multiplayer: single
 genres:
