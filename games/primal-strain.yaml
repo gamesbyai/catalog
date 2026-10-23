@@ -1,7 +1,19 @@
 slug: primal-strain
 title: Primal Strain
-tagline: Submitted by its creator; the description is added during review.
-description: ""
+tagline: Draw a creature and spread its brood until no rival species is left.
+description: "Draw your own creature, then lead its brood against rival species until none of them is left.
+
+
+  Abilities you pick for your creature. Seed pods to gather as food. Eggs that grow your brood. Rival nests to break before they hatch new young. Four difficulty levels, from Easy all the way to Impossible.
+
+
+  Press Enter to begin and choose a difficulty. Move with WASD, open the guide with Tab, and pause with Esc.
+
+
+  Portal Rabbit says generative AI was used to some degree in the code, art, audio and text, though it doesn't name the tools or say how much was done by hand.
+
+
+  It's a free demo that's still in development, with no account or download, and your progress saves in the browser. Portal Rabbit recommends playing on desktop."
 play:
   url: https://portalrabbit.com/games/primal-strain/
   platforms:
@@ -9,6 +21,7 @@ play:
   embedPermission:
     by: submission
     date: 2026-10-22
+  embeddable: true
 creator:
   name: Portal Rabbit / dopamineloop
   handle: dopamineloop
@@ -20,12 +33,7 @@ made:
   aiShare: some
   source: "Creator's submission (issue #190)"
   evidence: creator
-  notes: "Submitted on behalf of Portal Rabbit. Generative AI was used to some
-    degree in code, art, audio and text; exact tools and manual-work split
-    unspecified. Draw a creature, choose abilities, gather food, lay eggs and
-    lead a brood against rival species. Free public browser demo in development,
-    desktop recommended; no game account or download. Progress saves in the
-    browser. Trailer: https://portalrabbit.com/game-demos"
+  notes: "Submitted on behalf of Portal Rabbit. Generative AI was used to some degree in code, art, audio and text; exact tools and manual-work split unspecified. Draw a creature, choose abilities, gather food, lay eggs and lead a brood against rival species. Free public browser demo in development, desktop recommended; no game account or download. Progress saves in the browser. Trailer: https://portalrabbit.com/game-demos"
 tech:
   multiplayer: single
 genres:
