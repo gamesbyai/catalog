@@ -10,7 +10,7 @@ description: "You play a bender who fights other players live online for control
   Move with WASD and aim with the mouse. Hold the attack button for auto-aim. Use Q or right-click for zones, Space for rides, E or R for ultimates, and F for Avatar. Press H to open the bending codex.
 
 
-  Development ran in multiple stages, with the creator orchestrating AI tools. Textures and sounds came from separate generation tools. \"The toughest part was achieving parity between local and offline play,\" the creator writes."
+  It was built in stages, with Orca coordinating Codex, DeepSeek and Antigravity, while PixelLab made the textures and ElevenLabs the sounds. \"The toughest part was achieving parity between local and offline play,\" the creator writes."
 play:
   url: https://battleoftheelements.com/
   platforms:
