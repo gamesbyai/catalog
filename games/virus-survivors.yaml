@@ -1,16 +1,19 @@
 slug: virus-survivors
 title: Virus Survivors
 tagline: Aim, shoot and build a fortress to survive a quarantine sector.
-description: "Set in a quarantined zone, you defend a position against enemies. The free public demo is still in development.
+description: "Hold out in a quarantine sector, shooting down enemies while you build and upgrade a fortress around you. Survive 24 minutes to clear a level.
 
 
-  A 24-minute survival run or Endless Mode. Power cores collected for experience. Three upgrade choices each time you level up. Periodic boss fights. Character choice for each run. Purchasable weapons. Saved progress, including the Upgrade Tree.
+  Power cores to collect for experience. Three upgrades to pick from at every level-up. A boss every five minutes. Endless Mode as an alternative to the timed levels. Characters to choose between before a run, and weapons to buy. Up to three artifacts active at once.
 
 
-  Move with WASD or the arrow keys. Aim with the mouse, and fire by holding the left button. Press 1 to 4 to select a structure, then hold the left button to build inside placement range. Press R to rotate smoothly, or E to snap rotation. Press U to upgrade a nearby structure. Press X twice to delete a nearby structure. Stand on a teleporter and hold to travel. Press Esc to pause.
+  Move with WASD or the arrow keys, aim with the mouse and hold left click to fire. Press 1 to 4 to pick a structure, then hold left click inside placement range to build it. U upgrades a nearby structure, X twice deletes one, and Esc pauses.
 
 
-  According to Portal Rabbit, generative AI played a partial role in the code, art, audio and text."
+  On a phone, Mobile Game Mode adds joysticks for moving and for aiming and firing, though Portal Rabbit recommends desktop.
+
+
+  Portal Rabbit says generative AI played some part in the code, art, audio and text. The music credits name Matthew Pablo and Centurion_of_war, and the sound effects come from Kenney. It's a free demo that's still in development, and your progress saves in the browser."
 play:
   url: https://portalrabbit.com/games/virus-survivors/
   platforms:
