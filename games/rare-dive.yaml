@@ -1,0 +1,45 @@
+slug: rare-dive
+title: Rare Dive
+tagline: Submitted by its creator; the description is added during review.
+description: ""
+play:
+  url: https://rare-dive.vercel.app/
+  platforms:
+    - browser
+  embedPermission:
+    by: submission
+    date: 2026-10-23
+creator:
+  name: Hao
+  handle: hao
+made:
+  models: []
+  tools:
+    - codex
+  aiShare: all
+  source: "Creator's submission (issue #196)"
+  evidence: creator
+  notes: Hao supplied the specification and reviewed the experience. Codex wrote
+    the React/Next.js game, original 98-category answer bank, tests and SEO
+    pages. Answer seven timed open-category questions; less familiar listed
+    answers earn more depth. Daily and free Unlimited, six editorial score
+    tiers, local progress and spoiler-free sharing. No ads, account or runtime
+    AI judge. Independent and unofficial; not affiliated with krillion.io. No
+    official assets or scraped answers.
+tech:
+  engine: react
+  multiplayer: single
+genres:
+  - puzzle
+media:
+  cover: games/rare-dive/cover
+  screenshots:
+    - games/rare-dive/shot-1
+    - games/rare-dive/shot-2
+dates:
+  added: 2026-10-23
+  updated: 2026-10-23
+status: live
+provenance:
+  foundVia: form
+  submittedBy: "#196"
