@@ -1,7 +1,16 @@
 slug: battle-of-the-elements
 title: Battle of the Elements
-tagline: Submitted by its creator; the description is added during review.
-description: ""
+tagline: Bend earth, air, water or fire in live online battles for the Spirit Oasis.
+description: "You play a bender who fights other players live online for control of the Spirit Oasis.
+
+
+  Earth, Air, Water and Fire nations, each with four abilities. Elemental reactions, such as Earth and Fire combining into lava. Hijacking of enemy base zones into hazards that spare your teammates. Avatar form that releases pulses in all directions. Offline practice against bots.
+
+
+  Move with WASD and aim with the mouse. Hold the attack button for auto-aim. Use Q or right-click for zones, Space for rides, E or R for ultimates, and F for Avatar. Press H to open the bending codex.
+
+
+  Development ran in multiple stages, with the creator orchestrating AI tools. Textures and sounds came from separate generation tools. \"The toughest part was achieving parity between local and offline play,\" the creator writes."
 play:
   url: https://battleoftheelements.com/
   platforms:
@@ -9,6 +18,7 @@ play:
   embedPermission:
     by: submission
     date: 2026-10-20
+  embeddable: true
 creator:
   name: battleoftheelements
   handle: battleoftheelements
@@ -23,10 +33,7 @@ made:
   aiShare: all
   source: "Creator's submission (issue #182)"
   evidence: creator
-  notes: Using orca with codex, deepseek, and antigravity, I orchestrated the
-    development of the game in multiple stages. Used pixellab for textures and
-    elevenlabs for sounds. The toughest part was achieving parity between local
-    and offline play.
+  notes: Using orca with codex, deepseek, and antigravity, I orchestrated the development of the game in multiple stages. Used pixellab for textures and elevenlabs for sounds. The toughest part was achieving parity between local and offline play.
 tech:
   engine: canvas
   multiplayer: online
