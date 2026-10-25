@@ -1,0 +1,53 @@
+slug: second-tail
+title: Second Tail
+tagline: Submitted by its creator; the description is added during review.
+description: ""
+play:
+  url: https://para1992.itch.io/second-tail
+  platforms:
+    - browser
+  embedPermission:
+    by: submission
+    date: 2026-10-25
+creator:
+  name: para1992
+  handle: para1992
+  links:
+    - https://para1992.itch.io
+made:
+  models:
+    - claude-opus-5-5
+    - gpt-6-1-sol
+    - gpt-6-astra
+  tools:
+    - claude-code
+    - codex
+  aiShare: most
+  source: "Creator's submission (issue #198)"
+  evidence: creator
+  notes: "Claude Code and Codex agents wrote nearly all the C# in Unity 6 (481
+    files, 587 commits); I write tickets, review and decide what goes in. A
+    coordinator agent splits tickets for parallel workers, a reviewer agent plus
+    a git hook gate main. Art: AI-generated images cut into parts and animated
+    in code. Story drafted by Claude, rewritten by me. Sound: CC0 and Suno."
+tech:
+  engine: unity
+  multiplayer: single
+genres:
+  - action
+  - adventure
+media:
+  cover: games/second-tail/cover
+  screenshots:
+    - games/second-tail/shot-1
+    - games/second-tail/shot-2
+dates:
+  added: 2026-10-25
+  updated: 2026-10-25
+status: live
+provenance:
+  foundVia: form
+  submittedBy: "#198"
+  uploads:
+    ref: deb1bccbb124504c
+    count: 3
