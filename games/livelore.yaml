@@ -1,0 +1,42 @@
+slug: livelore
+title: LiveLore
+tagline: Submitted by its creator; the description is added during review.
+description: ""
+play:
+  url: https://livelore.ai/
+  platforms:
+    - browser
+  embedPermission:
+    by: submission
+    date: 2026-10-27
+creator:
+  name: LiveLore Team
+  handle: livelore-team
+made:
+  models: []
+  tools: []
+  aiShare: most
+  source: "Creator's submission (issue #202)"
+  evidence: creator
+  notes: "An interactive ghost-story player that runs in the browser. Each tale is
+    a branching scene graph: the reader taps a choice and the next passage, the
+    mood and the ending change. AI drafts and polishes the folklore,
+    urban-legend and campfire scripts and produces the narrated audio; we edit
+    every story by hand and wire up the branches and pacing ourselves."
+tech:
+  multiplayer: single
+genres:
+  - adventure
+  - casual
+media:
+  cover: games/livelore/cover
+  screenshots:
+    - games/livelore/shot-1
+    - games/livelore/shot-2
+dates:
+  added: 2026-10-27
+  updated: 2026-10-27
+status: live
+provenance:
+  foundVia: form
+  submittedBy: "#202"
