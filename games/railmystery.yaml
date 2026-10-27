@@ -1,0 +1,43 @@
+slug: railmystery
+title: RailMystery
+tagline: Submitted by its creator; the description is added during review.
+description: ""
+play:
+  url: https://railmystery.onrender.com/demo/
+  platforms:
+    - browser
+  embedPermission:
+    by: submission
+    date: 2026-10-27
+creator:
+  name: Kaimo Media
+  handle: kaimo-media
+made:
+  models:
+    - gemini-2-5-flash
+  tools:
+    - cursor
+  aiShare: most
+  source: "Creator's submission (issue #200)"
+  evidence: creator
+  notes: "AI DM murder-mystery party game. Host buys a $7 pass; guests join free
+    in any phone browser. Case: Midnight Ferry. Playable now at /demo/."
+tech:
+  engine: canvas
+  multiplayer: online
+genres:
+  - adventure
+  - horror
+  - party
+media:
+  cover: games/railmystery/cover
+  screenshots:
+    - games/railmystery/shot-1
+    - games/railmystery/shot-2
+dates:
+  added: 2026-10-27
+  updated: 2026-10-27
+status: live
+provenance:
+  foundVia: form
+  submittedBy: "#200"
