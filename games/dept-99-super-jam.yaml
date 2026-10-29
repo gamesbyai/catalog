@@ -1,0 +1,48 @@
+slug: dept-99-super-jam
+title: DEPT.99 SUPER JAM
+tagline: Submitted by its creator; the description is added during review.
+description: ""
+play:
+  url: https://pinec.itch.io/dept-99-super-jam
+  platforms:
+    - browser
+  embedPermission:
+    by: submission
+    date: 2026-10-28
+creator:
+  name: Pinec Games
+  handle: pinecgames
+  links:
+    - https://bsky.app/profile/pinecgames.bsky.social
+made:
+  models:
+    - deepseek-v4-1-flash
+    - kimi-k3
+    - qwen3-coder
+  tools: []
+  aiShare: all
+  source: "Creator's submission (issue #204)"
+  evidence: creator
+  notes: I told  Used DeepSeek V4.1 to create a vaporwave  mall game inspired by
+    Mall Quest.
+tech:
+  multiplayer: single
+genres:
+  - simulation
+  - adventure
+  - casual
+media:
+  cover: games/dept-99-super-jam/cover
+  screenshots:
+    - games/dept-99-super-jam/shot-1
+    - games/dept-99-super-jam/shot-2
+dates:
+  added: 2026-10-28
+  updated: 2026-10-28
+status: live
+provenance:
+  foundVia: form
+  submittedBy: "#204"
+  uploads:
+    ref: 22ee60c7dbf6f3b7
+    count: 1
