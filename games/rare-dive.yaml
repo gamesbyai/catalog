@@ -10,7 +10,7 @@ description: "You name a member of each category in a seven-question round, with
   Read the category, then type your answer. If an answer isn't accepted, keep typing while the clock runs. Pass to skip a prompt and move on. Finish the round to see your total.
 
 
-  Hao provided the specification and reviewed the experience. An AI coding tool wrote the game code, the answer bank, the tests and the SEO pages. The game is inspired by Krillion's open-category format and is not affiliated with krillion.io."
+  Hao wrote the specification and reviewed how it plays, while Codex wrote the React and Next.js code, the answer bank, the tests and the SEO pages. It takes its open-category format from Krillion, but it isn't affiliated with krillion.io."
 play:
   url: https://rare-dive.vercel.app/
   platforms:
