@@ -1,0 +1,47 @@
+slug: cozy-hamster
+title: Cozy Hamster
+tagline: Submitted by its creator; the description is added during review.
+description: ""
+play:
+  url: https://cozyhamster.com/play/
+  platforms:
+    - browser
+  embedPermission:
+    by: submission
+    date: 2026-10-29
+creator:
+  name: Cozy Hamster
+  handle: cozy-hamster
+made:
+  models:
+    - claude-opus-5-5
+  tools:
+    - claude-code
+  aiShare: most
+  source: "Creator's submission (issue #206)"
+  evidence: creator
+  notes: Built with Claude Code (Claude Opus 5.5) using Three.js. Design and
+    expand the hamster habitat in build mode, feed and pat the hamster to earn
+    its trust until it sits on your palm, and watch how it uses the layout you
+    built.
+tech:
+  engine: threejs
+  multiplayer: single
+genres:
+  - simulation
+  - casual
+media:
+  cover: games/cozy-hamster/cover
+  screenshots:
+    - games/cozy-hamster/shot-1
+    - games/cozy-hamster/shot-2
+dates:
+  added: 2026-10-29
+  updated: 2026-10-29
+status: live
+provenance:
+  foundVia: form
+  submittedBy: "#206"
+  uploads:
+    ref: 75b5425b9b8779ef
+    count: 3
