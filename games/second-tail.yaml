@@ -1,7 +1,19 @@
 slug: second-tail
 title: Second Tail
-tagline: Submitted by its creator; the description is added during review.
-description: ""
+tagline: Lead two abandoned pet rats home through a big, wet city at rat height.
+description: "Their owner said he'd be back for them, and he never came, so two pet rats who've never seen the world outside set off across a big, wet city to walk home. You play both of them, Sal and Ben, and the way home needs each one's skills.
+
+
+  Sal, in a felt hat and round glasses, with a double jump and a climb. Ben, in a yellow hard hat, with a dash and a ram. Rooftops, a mine, an aqueduct, a market and a boat station, all at rat height. Bosses like a giant snail and the Stink Rat mechanic in his bucket tank. An eight-lane race in the rain, piranhas, and prisoners to free one key at a time.
+
+
+  Move with A and D or the arrow keys, and jump with Space, pressing it again in the air for Sal's double jump. Climb with W and S, dash with Shift and switch rats with Q or E. F interacts and Esc pauses. Phones get on-screen controls, and a controller works too.
+
+
+  It started when the developer asked an AI to draw their own two rats, just for fun, and then wanted them to move. Claude Code and Codex agents wrote nearly all of the C# in Unity 6, while the developer writes the tickets and decides what goes in. The art is AI-generated and animated in code, Claude drafted the story, and the sound mixes CC0 recordings with Suno.
+
+
+  It's an early demo in English and Ukrainian. The first load is big, but your browser keeps it afterwards."
 play:
   url: https://para1992.itch.io/second-tail
   platforms:
@@ -9,6 +21,7 @@ play:
   embedPermission:
     by: submission
     date: 2026-10-25
+  embeddable: false
 creator:
   name: para1992
   handle: para1992
@@ -25,11 +38,7 @@ made:
   aiShare: most
   source: "Creator's submission (issue #198)"
   evidence: creator
-  notes: "Claude Code and Codex agents wrote nearly all the C# in Unity 6 (481
-    files, 587 commits); I write tickets, review and decide what goes in. A
-    coordinator agent splits tickets for parallel workers, a reviewer agent plus
-    a git hook gate main. Art: AI-generated images cut into parts and animated
-    in code. Story drafted by Claude, rewritten by me. Sound: CC0 and Suno."
+  notes: "Claude Code and Codex agents wrote nearly all the C# in Unity 6 (481 files, 587 commits); I write tickets, review and decide what goes in. A coordinator agent splits tickets for parallel workers, a reviewer agent plus a git hook gate main. Art: AI-generated images cut into parts and animated in code. Story drafted by Claude, rewritten by me. Sound: CC0 and Suno."
 tech:
   engine: unity
   multiplayer: single
