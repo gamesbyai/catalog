@@ -1,7 +1,16 @@
 slug: railmystery
 title: RailMystery
-tagline: Submitted by its creator; the description is added during review.
-description: ""
+tagline: Solve a murder aboard a stalled ferry with an AI game master running the case.
+description: "Your group investigates a murder aboard the ferry Silver Wake, stalled in fog. An AI game master runs the case on a big screen, and players take part from their own phones. One host buys a pass, and guests join free from any phone browser.
+
+
+  Mara Voss, the compliance officer and victim. A death staged to pass as a slip in a restricted crew corridor. Private clues on each player's phone. Suspects to interrogate. Four possible endings for the final accusation.
+
+
+  Start the demo, then tap Next to move the recorded session forward one round at a time.
+
+
+  Testers typed the player lines in a recorded session made with the live engine, and every game-master reply is unedited AI output. The story is original, with no licensed or fan IP behind it."
 play:
   url: https://railmystery.onrender.com/demo/
   platforms:
@@ -9,6 +18,7 @@ play:
   embedPermission:
     by: submission
     date: 2026-10-27
+  embeddable: true
 creator:
   name: Kaimo Media
   handle: kaimo-media
@@ -20,8 +30,7 @@ made:
   aiShare: most
   source: "Creator's submission (issue #200)"
   evidence: creator
-  notes: "AI DM murder-mystery party game. Host buys a $7 pass; guests join free
-    in any phone browser. Case: Midnight Ferry. Playable now at /demo/."
+  notes: "AI DM murder-mystery party game. Host buys a $7 pass; guests join free in any phone browser. Case: Midnight Ferry. Playable now at /demo/."
 tech:
   engine: canvas
   multiplayer: online
