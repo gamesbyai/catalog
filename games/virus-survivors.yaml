@@ -1,0 +1,54 @@
+slug: virus-survivors
+title: Virus Survivors
+tagline: Aim, shoot and build a fortress to survive a quarantine sector.
+description: "Hold out in a quarantine sector, shooting down enemies while you build and upgrade a fortress around you. Survive 24 minutes to clear a level.
+
+
+  Power cores to collect for experience. Three upgrades to pick from at every level-up. A boss every five minutes. Endless Mode as an alternative to the timed levels. Characters to choose between before a run, and weapons to buy. Up to three artifacts active at once.
+
+
+  Move with WASD or the arrow keys, aim with the mouse and hold left click to fire. Press 1 to 4 to pick a structure, then hold left click inside placement range to build it. U upgrades a nearby structure, X twice deletes one, and Esc pauses.
+
+
+  On a phone, Mobile Game Mode adds joysticks for moving and for aiming and firing, though Portal Rabbit recommends desktop.
+
+
+  Portal Rabbit says generative AI played some part in the code, art, audio and text. The music credits name Matthew Pablo and Centurion_of_war, and the sound effects come from Kenney. It's a free demo that's still in development, and your progress saves in the browser."
+play:
+  url: https://portalrabbit.com/games/virus-survivors/
+  platforms:
+    - browser
+  embedPermission:
+    by: submission
+    date: 2026-10-22
+  embeddable: true
+creator:
+  name: Portal Rabbit / dopamineloop
+  handle: dopamineloop
+  links:
+    - https://dopamineloop.itch.io
+made:
+  models: []
+  tools: []
+  aiShare: some
+  source: "Creator's submission (issue #194)"
+  evidence: creator
+  notes: "Submitted on behalf of Portal Rabbit. Generative AI was used to some degree in code, art, audio and text; exact tools and manual-work split unspecified. Aim and shoot while building and upgrading a fortress. Collect power cores, choose upgrades and face bosses in 24-minute survival or Endless Mode. Free public browser demo in development, desktop recommended; no game account or download. Progress saves in the browser. Trailer: https://portalrabbit.com/game-demos"
+tech:
+  multiplayer: single
+genres:
+  - action
+  - shooter
+  - strategy
+media:
+  cover: games/virus-survivors/cover
+  screenshots:
+    - games/virus-survivors/shot-1
+    - games/virus-survivors/shot-2
+dates:
+  added: 2026-10-22
+  updated: 2026-10-22
+status: live
+provenance:
+  foundVia: form
+  submittedBy: "#194"
