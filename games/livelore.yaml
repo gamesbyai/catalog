@@ -1,7 +1,16 @@
 slug: livelore
 title: LiveLore
-tagline: Submitted by its creator; the description is added during review.
-description: ""
+tagline: Pick the branches of creepy ghost stories and vote on where they go.
+description: "Tap a choice to send a ghost story down another branch. Each tale has branches, and your pick changes the next passage, the mood and the ending.
+
+
+  Five campfire tales, three to four minutes each. Noctur, a weekly horror collection with a new chapter each Wednesday. Reader ballots for the next chapter, with editors settling close votes. The Last Collection, an interactive mystery pilot. Complete stories and opening chapters, labeled on each page. Original scary stories, with retold urban legends on a separate page.
+
+
+  Read any story free, without an account. Vote at the end of an interactive story, one choice per browser. After you vote, rate the chapter or leave a note with your own idea.
+
+
+  LiveLore Team edits every story by hand and sets up the branches and pacing. According to the creator, AI drafts and polishes the scripts and produces the narrated audio."
 play:
   url: https://livelore.ai/
   platforms:
@@ -9,6 +18,7 @@ play:
   embedPermission:
     by: submission
     date: 2026-10-27
+  embeddable: false
 creator:
   name: LiveLore Team
   handle: livelore-team
@@ -18,11 +28,7 @@ made:
   aiShare: most
   source: "Creator's submission (issue #202)"
   evidence: creator
-  notes: "An interactive ghost-story player that runs in the browser. Each tale is
-    a branching scene graph: the reader taps a choice and the next passage, the
-    mood and the ending change. AI drafts and polishes the folklore,
-    urban-legend and campfire scripts and produces the narrated audio; we edit
-    every story by hand and wire up the branches and pacing ourselves."
+  notes: "An interactive ghost-story player that runs in the browser. Each tale is a branching scene graph: the reader taps a choice and the next passage, the mood and the ending change. AI drafts and polishes the folklore, urban-legend and campfire scripts and produces the narrated audio; we edit every story by hand and wire up the branches and pacing ourselves."
 tech:
   multiplayer: single
 genres:
