@@ -1,0 +1,53 @@
+slug: diggy-little-dwarves
+title: Diggy Little Dwarves
+tagline: Dig for gold and gems with a crew of dwarves, then prestige and dig again.
+description: "Lead a little crew of dwarves into the mountain to dig out gold and gems, grow them into a mining company, and face whatever lurks beneath.
+
+
+  Stone walls studded with ore to tunnel through. Gold to sell once you haul it up. A prestige reset that trades your gold, crew and upgrades for a prestige point. Rewards from prestige that survive every reset, starting with gold that sells for double.
+
+
+  Enter the mine to start digging and sell the gold you bring back. When you're ready, prestige and start the dig over.
+
+
+  According to Portal Rabbit, generative AI had some part in the code, art, sound and writing, though the tools aren't named.
+
+
+  There's no account or download, the demo is free while it's still being built, and your progress stays saved in the browser. Desktop is the recommended way to play."
+play:
+  url: https://portalrabbit.com/games/diggy-little-dwarves/
+  platforms:
+    - browser
+  embedPermission:
+    by: submission
+    date: 2026-10-22
+  embeddable: true
+creator:
+  name: Portal Rabbit / dopamineloop
+  handle: dopamineloop
+  links:
+    - https://dopamineloop.itch.io
+made:
+  models: []
+  tools: []
+  aiShare: some
+  source: "Creator's submission (issue #192)"
+  evidence: creator
+  notes: "Submitted on behalf of Portal Rabbit. Generative AI was used to some degree in code, art, audio and text; exact tools and manual-work split unspecified. Grow a dwarf mining company, dig gold and gems, and face what lurks beneath the mountain. Free public browser demo in development, desktop recommended; no game account or download. Progress saves in the browser. Trailer: https://portalrabbit.com/game-demos"
+tech:
+  multiplayer: single
+genres:
+  - simulation
+  - strategy
+media:
+  cover: games/diggy-little-dwarves/cover
+  screenshots:
+    - games/diggy-little-dwarves/shot-1
+    - games/diggy-little-dwarves/shot-2
+dates:
+  added: 2026-10-22
+  updated: 2026-10-22
+status: live
+provenance:
+  foundVia: form
+  submittedBy: "#192"
