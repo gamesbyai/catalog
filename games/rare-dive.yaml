@@ -1,7 +1,16 @@
 slug: rare-dive
 title: Rare Dive
-tagline: Submitted by its creator; the description is added during review.
-description: ""
+tagline: Name less familiar members of seven timed categories to score deeper.
+description: "You name a member of each category in a seven-question round, with 25 seconds on each prompt. Obvious answers still count, but less familiar ones from the game's list earn more points.
+
+
+  98 categories, from nature and geography to everyday life. Daily mode, with the same categories for everyone on a given UTC date. Unlimited mode for repeat rounds, with no daily limit. Six score bands set in advance by editors, from 10 to 100 points. Best score, unfinished rounds and daily streak saved in your browser. Spoiler-free results to share with friends.
+
+
+  Read the category, then type your answer. If an answer isn't accepted, keep typing while the clock runs. Pass to skip a prompt and move on. Finish the round to see your total.
+
+
+  Hao provided the specification and reviewed the experience. An AI coding tool wrote the game code, the answer bank, the tests and the SEO pages. The game is inspired by Krillion's open-category format and is not affiliated with krillion.io."
 play:
   url: https://rare-dive.vercel.app/
   platforms:
@@ -9,6 +18,7 @@ play:
   embedPermission:
     by: submission
     date: 2026-10-23
+  embeddable: true
 creator:
   name: Hao
   handle: hao
@@ -19,13 +29,7 @@ made:
   aiShare: all
   source: "Creator's submission (issue #196)"
   evidence: creator
-  notes: Hao supplied the specification and reviewed the experience. Codex wrote
-    the React/Next.js game, original 98-category answer bank, tests and SEO
-    pages. Answer seven timed open-category questions; less familiar listed
-    answers earn more depth. Daily and free Unlimited, six editorial score
-    tiers, local progress and spoiler-free sharing. No ads, account or runtime
-    AI judge. Independent and unofficial; not affiliated with krillion.io. No
-    official assets or scraped answers.
+  notes: Hao supplied the specification and reviewed the experience. Codex wrote the React/Next.js game, original 98-category answer bank, tests and SEO pages. Answer seven timed open-category questions; less familiar listed answers earn more depth. Daily and free Unlimited, six editorial score tiers, local progress and spoiler-free sharing. No ads, account or runtime AI judge. Independent and unofficial; not affiliated with krillion.io. No official assets or scraped answers.
 tech:
   engine: react
   multiplayer: single
