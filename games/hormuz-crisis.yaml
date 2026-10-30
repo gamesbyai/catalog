@@ -1,0 +1,42 @@
+slug: hormuz-crisis
+title: Hormuz Crisis
+tagline: Submitted by its creator; the description is added during review.
+description: ""
+play:
+  url: https://vaigames.com/hormuzcrisis/
+  platforms:
+    - browser
+  embedPermission:
+    by: submission
+    date: 2026-10-30
+creator:
+  name: AlbertSimonDev
+  handle: albertsimondev-213
+  x: albertsimondev
+made:
+  models: []
+  tools: []
+  aiShare: all
+  source: "Creator's submission (issue #213)"
+  evidence: creator
+  notes: "Built with AI and Phaser 3: AI wrote most of the code and design
+    iterations while I steered by playing each build. Round-based naval strategy
+    where you play Iran or the USA. Music made with Suno."
+tech:
+  engine: phaser
+  multiplayer: single
+genres:
+  - simulation
+  - strategy
+media:
+  cover: games/hormuz-crisis/cover
+  screenshots:
+    - games/hormuz-crisis/shot-1
+    - games/hormuz-crisis/shot-2
+dates:
+  added: 2026-10-30
+  updated: 2026-10-30
+status: live
+provenance:
+  foundVia: form
+  submittedBy: "#213"
