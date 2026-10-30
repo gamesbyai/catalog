@@ -1,0 +1,41 @@
+slug: airis
+title: AIRIS
+tagline: Submitted by its creator; the description is added during review.
+description: ""
+play:
+  url: https://vaigames.com/airis/
+  platforms:
+    - browser
+  embedPermission:
+    by: submission
+    date: 2026-10-30
+creator:
+  name: AlbertSimonDev
+  handle: albertsimondev-211
+  x: albertsimondev
+made:
+  models: []
+  tools: []
+  aiShare: all
+  source: "Creator's submission (issue #211)"
+  evidence: creator
+  notes: "Made entirely with AI: Claude wrote the code, story, art direction and
+    music prompts. I steered by playing each build and describing changes. Plain
+    web/JS, no engine. 37 endings, a Daily world, and a play-as-the-AI mode."
+tech:
+  multiplayer: single
+genres:
+  - strategy
+  - adventure
+media:
+  cover: games/airis/cover
+  screenshots:
+    - games/airis/shot-1
+    - games/airis/shot-2
+dates:
+  added: 2026-10-30
+  updated: 2026-10-30
+status: live
+provenance:
+  foundVia: form
+  submittedBy: "#211"
