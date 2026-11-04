@@ -1,0 +1,43 @@
+slug: bronx-ollie
+title: Bronx Ollie
+tagline: Submitted by its creator; the description is added during review.
+description: ""
+play:
+  url: https://bronx-ollie.pages.dev/
+  platforms:
+    - browser
+  embedPermission:
+    by: submission
+    date: 2026-11-04
+creator:
+  name: NOFUNNYSHXT
+  handle: nofunnyshxt
+made:
+  models: []
+  tools: []
+  aiShare: most
+  source: "Creator's submission (issue #216)"
+  evidence: creator
+  notes: Skateboarding game through Bronx streets. The game's code was built with
+    AI assistance (Claude), and it also includes AI-generated art in addition to
+    AI-assisted code.
+tech:
+  multiplayer: single
+genres:
+  - arcade
+  - sports
+media:
+  cover: games/bronx-ollie/cover
+  screenshots:
+    - games/bronx-ollie/shot-1
+    - games/bronx-ollie/shot-2
+dates:
+  added: 2026-11-04
+  updated: 2026-11-04
+status: live
+provenance:
+  foundVia: form
+  submittedBy: "#216"
+  uploads:
+    ref: 2db7c3a449f93ce2
+    count: 1
