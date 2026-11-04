@@ -1,0 +1,43 @@
+slug: gulper-io
+title: Gulper.io
+tagline: Submitted by its creator; the description is added during review.
+description: ""
+play:
+  url: https://gulperio.com/
+  platforms:
+    - browser
+  embedPermission:
+    by: submission
+    date: 2026-11-04
+creator:
+  name: guo x
+  handle: guo-x
+made:
+  models: []
+  tools: []
+  aiShare: all
+  source: "Creator's submission (issue #226)"
+  evidence: creator
+  notes: "All of the code was written by AI coding assistants (the model was not
+    recorded); I directed the design, tested it in the browser and published it.
+    Independent Gulper.io-style snake arena with computer rivals: steer a neon
+    worm, eat energy orbs to grow, boost to cut off rivals and climb a top-10
+    board. HTML5 Canvas, no download, no account."
+tech:
+  engine: canvas
+  multiplayer: single
+genres:
+  - arcade
+  - io
+media:
+  cover: games/gulper-io/cover
+  screenshots:
+    - games/gulper-io/shot-1
+    - games/gulper-io/shot-2
+dates:
+  added: 2026-11-04
+  updated: 2026-11-04
+status: live
+provenance:
+  foundVia: form
+  submittedBy: "#226"
