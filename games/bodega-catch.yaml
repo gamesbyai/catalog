@@ -1,0 +1,43 @@
+slug: bodega-catch
+title: Bodega Catch
+tagline: Submitted by its creator; the description is added during review.
+description: ""
+play:
+  url: https://bodega-catch.pages.dev/
+  platforms:
+    - browser
+  embedPermission:
+    by: submission
+    date: 2026-11-04
+creator:
+  name: NOFUNNYSHXT
+  handle: nofunnyshxt
+made:
+  models: []
+  tools: []
+  aiShare: most
+  source: "Creator's submission (issue #220)"
+  evidence: creator
+  notes: "Fast arcade catching game: catch the falling bodega goods, dodge the
+    junk. The game's code was built with AI assistance (Claude); its visuals are
+    drawn in code — no AI-generated image or audio assets."
+tech:
+  multiplayer: single
+genres:
+  - arcade
+  - casual
+media:
+  cover: games/bodega-catch/cover
+  screenshots:
+    - games/bodega-catch/shot-1
+    - games/bodega-catch/shot-2
+dates:
+  added: 2026-11-04
+  updated: 2026-11-04
+status: live
+provenance:
+  foundVia: form
+  submittedBy: "#220"
+  uploads:
+    ref: 914a99e1dffa8c56
+    count: 1
