@@ -1,0 +1,43 @@
+slug: snack-slice
+title: Snack Slice
+tagline: Submitted by its creator; the description is added during review.
+description: ""
+play:
+  url: https://snack-slice.pages.dev/
+  platforms:
+    - browser
+  embedPermission:
+    by: submission
+    date: 2026-11-04
+creator:
+  name: NOFUNNYSHXT
+  handle: nofunnyshxt
+made:
+  models: []
+  tools: []
+  aiShare: most
+  source: "Creator's submission (issue #224)"
+  evidence: creator
+  notes: Fast slicing arcade game with snacks flying. The game's code was built
+    with AI assistance (Claude); its visuals are drawn in code — no AI-generated
+    image or audio assets.
+tech:
+  multiplayer: single
+genres:
+  - arcade
+  - casual
+media:
+  cover: games/snack-slice/cover
+  screenshots:
+    - games/snack-slice/shot-1
+    - games/snack-slice/shot-2
+dates:
+  added: 2026-11-04
+  updated: 2026-11-04
+status: live
+provenance:
+  foundVia: form
+  submittedBy: "#224"
+  uploads:
+    ref: 8e6c15148afc70a2
+    count: 1
