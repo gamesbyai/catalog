@@ -1,0 +1,43 @@
+slug: britbox
+title: BRITBOX
+tagline: Submitted by its creator; the description is added during review.
+description: ""
+play:
+  url: https://mentalent.itch.io/britbox
+  platforms:
+    - browser
+  embedPermission:
+    by: submission
+    date: 2026-11-04
+creator:
+  name: Mental Entertainment
+  handle: mental-entertainment
+made:
+  models: []
+  tools:
+    - cursor
+  aiShare: most
+  source: "Creator's submission (issue #228)"
+  evidence: creator
+  notes: Built with Cursor AI coding agents, with AI-generated art. I directed the
+    design, tuned the fighters and balance by hand.
+tech:
+  multiplayer: online
+genres:
+  - action
+  - fighting
+media:
+  cover: games/britbox/cover
+  screenshots:
+    - games/britbox/shot-1
+    - games/britbox/shot-2
+dates:
+  added: 2026-11-04
+  updated: 2026-11-04
+status: live
+provenance:
+  foundVia: form
+  submittedBy: "#228"
+  uploads:
+    ref: 77c6a13e53ecb867
+    count: 3
