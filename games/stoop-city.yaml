@@ -1,0 +1,44 @@
+slug: stoop-city
+title: Stoop City
+tagline: Submitted by its creator; the description is added during review.
+description: ""
+play:
+  url: https://stoop-city.pages.dev/
+  platforms:
+    - browser
+  embedPermission:
+    by: submission
+    date: 2026-11-04
+creator:
+  name: NOFUNNYSHXT
+  handle: nofunnyshxt
+made:
+  models: []
+  tools: []
+  aiShare: most
+  source: "Creator's submission (issue #218)"
+  evidence: creator
+  notes: "Free top-down driving game on a Bronx-style block: hop in your car,
+    cruise, dodge traffic, run errands, don't draw the cops' attention. The
+    game's code was built with AI assistance (Claude); its visuals are drawn in
+    code — no AI-generated image or audio assets."
+tech:
+  multiplayer: single
+genres:
+  - arcade
+  - racing
+media:
+  cover: games/stoop-city/cover
+  screenshots:
+    - games/stoop-city/shot-1
+    - games/stoop-city/shot-2
+dates:
+  added: 2026-11-04
+  updated: 2026-11-04
+status: live
+provenance:
+  foundVia: form
+  submittedBy: "#218"
+  uploads:
+    ref: b357fe81a684360c
+    count: 1
