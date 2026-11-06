@@ -1,0 +1,52 @@
+slug: fish-tank-plus
+title: Fish Tank Plus
+tagline: Submitted by its creator; the description is added during review.
+description: ""
+play:
+  url: https://play.fishtankplus.com/
+  platforms:
+    - browser
+  embedPermission:
+    by: submission
+    date: 2026-11-06
+repo: https://github.com/leksicon1/aquarium
+creator:
+  name: Mike
+  handle: leksicon
+  x: leksicon
+made:
+  models:
+    - claude-sonnet-4-5
+    - gpt-5
+    - grok-4
+  tools:
+    - cursor
+    - chatgpt
+    - grok-app
+  aiShare: most
+  source: "Creator's submission (issue #230)"
+  evidence: creator
+  notes: Solo Vancouver dev. Claude, ChatGPT and Grok helped write the three.js
+    browser tank and the Windows Direct3D screensaver; I directed the design,
+    fish photo pipeline, Octopus Boy behaviour and the multi-monitor setup. You
+    feed fish, tweak count/speed/lighting and unlock décor with fish sticks.
+    Optional sign-in syncs the collection; play works without an account.
+tech:
+  engine: threejs
+  multiplayer: single
+genres:
+  - simulation
+  - casual
+  - idle
+media:
+  cover: games/fish-tank-plus/cover
+  screenshots:
+    - games/fish-tank-plus/shot-1
+    - games/fish-tank-plus/shot-2
+dates:
+  added: 2026-11-06
+  updated: 2026-11-06
+status: live
+provenance:
+  foundVia: form
+  submittedBy: "#230"
