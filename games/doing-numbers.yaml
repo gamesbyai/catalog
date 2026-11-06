@@ -1,0 +1,43 @@
+slug: doing-numbers
+title: Doing Numbers
+tagline: Submitted by its creator; the description is added during review.
+description: ""
+play:
+  url: https://splatzoneentertainment.itch.io/doing-numbers
+  platforms:
+    - browser
+  embedPermission:
+    by: submission
+    date: 2026-11-06
+creator:
+  name: Splat Zone Entertainment
+  handle: splatzoneentertainment
+  links:
+    - https://splatzoneentertainment.itch.io
+made:
+  models: []
+  tools:
+    - claude-code
+  aiShare: all
+  source: "Creator's submission (issue #236)"
+  evidence: creator
+  notes: I made Doing Numbers with Claude Code - I described what I wanted, Claude
+    wrote the code, and I kept steering it pass after pass until it was the game
+    I had in mind.
+tech:
+  multiplayer: single
+genres:
+  - casual
+  - educational
+media:
+  cover: games/doing-numbers/cover
+  screenshots:
+    - games/doing-numbers/shot-1
+    - games/doing-numbers/shot-2
+dates:
+  added: 2026-11-06
+  updated: 2026-11-06
+status: live
+provenance:
+  foundVia: form
+  submittedBy: "#236"
