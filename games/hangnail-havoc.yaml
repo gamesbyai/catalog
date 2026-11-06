@@ -1,0 +1,43 @@
+slug: hangnail-havoc
+title: Hangnail Havoc
+tagline: Submitted by its creator; the description is added during review.
+description: ""
+play:
+  url: https://splatzoneentertainment.itch.io/hangnail-havoc
+  platforms:
+    - browser
+  embedPermission:
+    by: submission
+    date: 2026-11-06
+creator:
+  name: Splat Zone Entertainment
+  handle: splatzoneentertainment
+  links:
+    - https://splatzoneentertainment.itch.io
+made:
+  models: []
+  tools:
+    - claude-code
+  aiShare: all
+  source: "Creator's submission (issue #232)"
+  evidence: creator
+  notes: I made Hangnail Havoc with Claude Code - I described what I wanted,
+    Claude wrote the code, and I kept steering it pass after pass until it was
+    the game I had in mind.
+tech:
+  multiplayer: single
+genres:
+  - arcade
+  - casual
+media:
+  cover: games/hangnail-havoc/cover
+  screenshots:
+    - games/hangnail-havoc/shot-1
+    - games/hangnail-havoc/shot-2
+dates:
+  added: 2026-11-06
+  updated: 2026-11-06
+status: live
+provenance:
+  foundVia: form
+  submittedBy: "#232"
