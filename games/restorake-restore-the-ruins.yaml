@@ -1,0 +1,51 @@
+slug: restorake-restore-the-ruins
+title: "RestoRake: Restore the Ruins"
+tagline: Submitted by its creator; the description is added during review.
+description: ""
+play:
+  url: https://playgama.com/game/restorake-restore-the-ruins?clid=p_e92a3981-893a-44af-9aba-0b89956c6b28
+  platforms:
+    - browser
+  embedPermission:
+    by: submission
+    date: 2026-11-07
+creator:
+  name: SvitsGames
+  handle: svitsgames
+  links:
+    - https://bsky.app/profile/svitsgames.bsky.social
+made:
+  models:
+    - claude-opus-5-5
+  tools:
+    - claude-code
+  aiShare: most
+  source: "Creator's submission (issue #252)"
+  evidence: creator
+  notes: "I made the design calls; Claude Code (Claude Opus 5.5) wrote all the
+    code, in Phaser 4 and TypeScript, and the tools around it: balance bots that
+    play the whole game to tune the prices, the asset pipeline and the release
+    checks. I played it through on desktop and phone with play logging on, the
+    bots were fitted to my own play, and I tuned the pace by feel. Claude also
+    handled the Playgama listing through its MCP."
+tech:
+  engine: phaser
+  multiplayer: single
+genres:
+  - casual
+  - idle
+media:
+  cover: games/restorake-restore-the-ruins/cover
+  screenshots:
+    - games/restorake-restore-the-ruins/shot-1
+    - games/restorake-restore-the-ruins/shot-2
+dates:
+  added: 2026-11-07
+  updated: 2026-11-07
+status: live
+provenance:
+  foundVia: form
+  submittedBy: "#252"
+  uploads:
+    ref: 071754763f8a74bd
+    count: 3
