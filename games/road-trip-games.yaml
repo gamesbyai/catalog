@@ -1,0 +1,44 @@
+slug: road-trip-games
+title: Road Trip Games
+tagline: Submitted by its creator; the description is added during review.
+description: ""
+play:
+  url: https://splatzoneentertainment.itch.io/road-trip-games
+  platforms:
+    - browser
+  embedPermission:
+    by: submission
+    date: 2026-11-07
+creator:
+  name: Splat Zone Entertainment
+  handle: splatzoneentertainment
+  links:
+    - https://splatzoneentertainment.itch.io
+made:
+  models: []
+  tools:
+    - claude-code
+  aiShare: all
+  source: "Creator's submission (issue #245)"
+  evidence: creator
+  notes: I made Road Trip Games with Claude Code - I described what I wanted,
+    Claude wrote the code, and I kept steering it pass after pass until it was
+    the game I had in mind.
+tech:
+  multiplayer: local
+genres:
+  - board
+  - party
+  - trivia
+media:
+  cover: games/road-trip-games/cover
+  screenshots:
+    - games/road-trip-games/shot-1
+    - games/road-trip-games/shot-2
+dates:
+  added: 2026-11-07
+  updated: 2026-11-07
+status: live
+provenance:
+  foundVia: form
+  submittedBy: "#245"
