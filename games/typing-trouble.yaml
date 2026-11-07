@@ -1,0 +1,43 @@
+slug: typing-trouble
+title: Typing Trouble
+tagline: Submitted by its creator; the description is added during review.
+description: ""
+play:
+  url: https://splatzoneentertainment.itch.io/typing-trouble
+  platforms:
+    - browser
+  embedPermission:
+    by: submission
+    date: 2026-11-07
+creator:
+  name: Splat Zone Entertainment
+  handle: splatzoneentertainment
+  links:
+    - https://splatzoneentertainment.itch.io
+made:
+  models: []
+  tools:
+    - claude-code
+  aiShare: all
+  source: "Creator's submission (issue #248)"
+  evidence: creator
+  notes: I made Typing Trouble with Claude Code - I described what I wanted,
+    Claude wrote the code, and I kept steering it pass after pass until it was
+    the game I had in mind.
+tech:
+  multiplayer: single
+genres:
+  - arcade
+  - educational
+media:
+  cover: games/typing-trouble/cover
+  screenshots:
+    - games/typing-trouble/shot-1
+    - games/typing-trouble/shot-2
+dates:
+  added: 2026-11-07
+  updated: 2026-11-07
+status: live
+provenance:
+  foundVia: form
+  submittedBy: "#248"
