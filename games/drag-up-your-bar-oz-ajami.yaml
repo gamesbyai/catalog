@@ -1,0 +1,50 @@
+slug: drag-up-your-bar-oz-ajami
+title: DRAG UP YOUR BAR | Oz Ajami
+tagline: Submitted by its creator; the description is added during review.
+description: ""
+play:
+  url: https://ozajart.com/game.html
+  platforms:
+    - browser
+  embedPermission:
+    by: submission
+    date: 2026-11-09
+creator:
+  name: Oz ART
+  handle: oz-art
+made:
+  models:
+    - claude-opus-5-5
+    - gpt-6-astra
+    - gemini-3-pro
+  tools:
+    - claude-code
+    - claude-ai
+    - chatgpt
+  aiShare: all
+  source: "Creator's submission (issue #265)"
+  evidence: creator
+  notes: Claude wrote basically all of the code while I directed it one mechanic
+    at a time. The art started in ChatGPT's image tools, and I did the art
+    direction and finished everything by hand in Photoshop and Adobe tools.
+tech:
+  engine: canvas
+  multiplayer: single
+genres:
+  - simulation
+  - casual
+media:
+  cover: games/drag-up-your-bar-oz-ajami/cover
+  screenshots:
+    - games/drag-up-your-bar-oz-ajami/shot-1
+    - games/drag-up-your-bar-oz-ajami/shot-2
+dates:
+  added: 2026-11-09
+  updated: 2026-11-09
+status: live
+provenance:
+  foundVia: form
+  submittedBy: "#265"
+  uploads:
+    ref: a5cab99af708aaed
+    count: 3
