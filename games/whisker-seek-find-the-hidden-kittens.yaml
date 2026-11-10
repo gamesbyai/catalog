@@ -1,0 +1,47 @@
+slug: whisker-seek-find-the-hidden-kittens
+title: "Whisker Seek: Find the Hidden Kittens"
+tagline: Submitted by its creator; the description is added during review.
+description: ""
+play:
+  url: https://www.whiskerseek.com/?ref=gamesbyai
+  platforms:
+    - browser
+  embedPermission:
+    by: submission
+    date: 2026-11-10
+creator:
+  name: nrgatomik
+  handle: nrgatomik
+  x: nrgatomik
+made:
+  models: []
+  tools:
+    - grok-app
+  aiShare: most
+  source: "Creator's submission (issue #267)"
+  evidence: creator
+  notes: "Scene and kitten art was made with Grok. The game code, kitten texts and
+    UI were built with AI coding tools, then tested and arranged by hand: 10
+    farm scenes, a free Barn, a free Apple Orchard bonus after the Barn, lens,
+    pinch-zoom and 3 hints. A one-time $2 unlock on whiskerseek.com opens all 10
+    scenes. No ads and no account."
+tech:
+  multiplayer: single
+genres:
+  - puzzle
+  - casual
+media:
+  cover: games/whisker-seek-find-the-hidden-kittens/cover
+  screenshots:
+    - games/whisker-seek-find-the-hidden-kittens/shot-1
+    - games/whisker-seek-find-the-hidden-kittens/shot-2
+dates:
+  added: 2026-11-10
+  updated: 2026-11-10
+status: live
+provenance:
+  foundVia: form
+  submittedBy: "#267"
+  uploads:
+    ref: 9330983376a28aba
+    count: 3
