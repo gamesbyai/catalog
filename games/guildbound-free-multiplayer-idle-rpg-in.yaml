@@ -1,0 +1,47 @@
+slug: guildbound-free-multiplayer-idle-rpg-in
+title: Guildbound — Free Multiplayer Idle RPG in Your Browser
+tagline: Submitted by its creator; the description is added during review.
+description: ""
+play:
+  url: https://guildbound.online/
+  platforms:
+    - browser
+  embedPermission:
+    by: submission
+    date: 2026-11-11
+creator:
+  name: m3ch4nism
+  handle: m3ch4nism
+  links:
+    - https://m3ch4nism.itch.io
+made:
+  models:
+    - claude-opus-5
+  tools: []
+  aiShare: all
+  source: "Creator's submission (issue #269)"
+  evidence: creator
+  notes: I described my favorite games growing up and we turned it into an idle
+    game but i wanted to offer active players benefits for being active.
+tech:
+  engine: pixijs
+  multiplayer: single
+genres:
+  - adventure
+  - idle
+  - rpg
+media:
+  cover: games/guildbound-free-multiplayer-idle-rpg-in/cover
+  screenshots:
+    - games/guildbound-free-multiplayer-idle-rpg-in/shot-1
+    - games/guildbound-free-multiplayer-idle-rpg-in/shot-2
+dates:
+  added: 2026-11-11
+  updated: 2026-11-11
+status: live
+provenance:
+  foundVia: form
+  submittedBy: "#269"
+  uploads:
+    ref: 40b38dd76adf447d
+    count: 3
