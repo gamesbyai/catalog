@@ -1,0 +1,48 @@
+slug: word-impostor
+title: Word Impostor
+tagline: Submitted by its creator; the description is added during review.
+description: ""
+play:
+  url: https://www.imposterwords.com/
+  platforms:
+    - browser
+  embedPermission:
+    by: submission
+    date: 2026-11-12
+repo: https://github.com/bozhouDev/imposterwords_game
+creator:
+  name: Jason Wu
+  handle: bozhou-ai
+  x: bozhou_ai
+made:
+  models: []
+  tools:
+    - cursor
+  aiShare: most
+  source: "Creator's submission (issue #271)"
+  evidence: creator
+  notes: I designed the game rules and wrote the product briefs, then built the
+    game with AI coding assistants (mainly Cursor) as a React + TypeScript
+    browser front end and a Go WebSocket back end for online rooms. I directed
+    the features, reviewed the code, and shipped it. Word packs are curated, not
+    generated live. The game itself does not call an AI model while you play.
+    The soundtrack includes AI-generated party music.
+tech:
+  engine: react
+  multiplayer: online
+genres:
+  - strategy
+  - party
+  - word
+media:
+  cover: games/word-impostor/cover
+  screenshots:
+    - games/word-impostor/shot-1
+    - games/word-impostor/shot-2
+dates:
+  added: 2026-11-12
+  updated: 2026-11-12
+status: live
+provenance:
+  foundVia: form
+  submittedBy: "#271"
