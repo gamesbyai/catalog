@@ -1,0 +1,50 @@
+slug: cyber-siege
+title: Cyber Siege
+tagline: Submitted by its creator; the description is added during review.
+description: ""
+play:
+  url: https://hiroakiishibashi.com/games/cyber-siege/?utm_source=gamesbyai&utm_medium=directory&utm_campaign=cyber_siege_ai_2026nov
+  platforms:
+    - browser
+  embedPermission:
+    by: submission
+    date: 2026-11-13
+creator:
+  name: Hiroaki Ishibashi
+  handle: hisg5a
+  x: hisg5a
+made:
+  models: []
+  tools:
+    - claude-code
+    - antigravity
+  aiShare: most
+  source: "Creator's submission (issue #277)"
+  evidence: creator
+  notes: I designed the game and playtested each iteration. Claude Code and Google
+    Antigravity coding agents implemented the browser game and recent 3D battle
+    effects; I directed changes and checked the results in play. It uses
+    Three.js and other third-party components. A free strategy/tower-defense
+    game with a 10-commander campaign and custom arena. Current in-game UI is
+    Japanese.
+tech:
+  engine: threejs
+  multiplayer: single
+genres:
+  - strategy
+  - tower-defense
+media:
+  cover: games/cyber-siege/cover
+  screenshots:
+    - games/cyber-siege/shot-1
+    - games/cyber-siege/shot-2
+dates:
+  added: 2026-11-13
+  updated: 2026-11-13
+status: live
+provenance:
+  foundVia: form
+  submittedBy: "#277"
+  uploads:
+    ref: bb2655b53f8174f2
+    count: 3
