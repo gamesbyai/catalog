@@ -1,0 +1,43 @@
+slug: forked-lives
+title: Forked Lives
+tagline: Submitted by its creator; the description is added during review.
+description: ""
+play:
+  url: https://1in8b.space/en/
+  platforms:
+    - browser
+  embedPermission:
+    by: submission
+    date: 2026-11-13
+creator:
+  name: Zifan Wang
+  handle: zifan-wang
+made:
+  models: []
+  tools:
+    - codex
+  aiShare: most
+  source: "Creator's submission (issue #275)"
+  evidence: creator
+  notes: Forked Lives is a free life simulator built with AI-assisted coding in
+    Codex. The creator guides the design, tests changes, and refines the stories
+    and gameplay. Players make choices about education, work and relationships,
+    then revisit turning points to explore another path. It is playable with
+    touch or mouse, with no account or download. Recommended for ages 15+ due to
+    themes of illness and loss.
+tech:
+  multiplayer: single
+genres:
+  - simulation
+media:
+  cover: games/forked-lives/cover
+  screenshots:
+    - games/forked-lives/shot-1
+    - games/forked-lives/shot-2
+dates:
+  added: 2026-11-13
+  updated: 2026-11-13
+status: live
+provenance:
+  foundVia: form
+  submittedBy: "#275"
