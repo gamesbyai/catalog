@@ -1,0 +1,46 @@
+slug: clover-house
+title: Clover House
+tagline: Submitted by its creator; the description is added during review.
+description: ""
+play:
+  url: https://nelson-lee-games.itch.io/clover-house
+  platforms:
+    - browser
+  embedPermission:
+    by: submission
+    date: 2026-11-13
+creator:
+  name: Nelson Lee
+  handle: nelson-lee-games
+  links:
+    - https://nelson-lee-games.itch.io
+made:
+  models: []
+  tools:
+    - cursor
+  aiShare: most
+  source: "Creator's submission (issue #273)"
+  evidence: creator
+  notes: "I'm a big romance VN fan and wanted to make my own. Made with
+    AI-assisted code, art and music: an AI agent in Cursor wrote the React/Vite
+    code, the character and background art is AI-generated, and the music is
+    generated in the browser. Goal: in 14 days, raise one person's hearts with
+    your choices to reach her route's ending."
+tech:
+  multiplayer: single
+genres:
+  - simulation
+  - adventure
+  - casual
+media:
+  cover: games/clover-house/cover
+  screenshots:
+    - games/clover-house/shot-1
+    - games/clover-house/shot-2
+dates:
+  added: 2026-11-13
+  updated: 2026-11-13
+status: live
+provenance:
+  foundVia: form
+  submittedBy: "#273"
