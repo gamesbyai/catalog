@@ -1,0 +1,57 @@
+slug: crust-core
+title: Crust Core 🪐☄️
+tagline: Submitted by its creator; the description is added during review.
+description: ""
+play:
+  url: https://3up-moon.itch.io/crust-core
+  platforms:
+    - browser
+  embedPermission:
+    by: submission
+    date: 2026-11-15
+creator:
+  name: Three Up Games
+  handle: 3up-moon
+  links:
+    - https://3up-moon.itch.io
+made:
+  models:
+    - gpt-6-sol
+  tools:
+    - codex
+  aiShare: some
+  source: "Creator's submission (issue #292)"
+  evidence: creator
+  notes: >-
+    Game design, concept, creative direction, mini-game design and sound design
+    by 3UP_Moon (Three Up Games)
+
+
+    Code: Codex and CodePen AI were used for coding assistance, including the
+    code structure, menu UI, bug-testing and animation system.
+
+
+    Graphics: AI tools were used to create the planet artwork on collectible
+    cards, planet cores, and the game’s logo.
+tech:
+  engine: canvas
+  multiplayer: single
+genres:
+  - simulation
+  - arcade
+  - casual
+media:
+  cover: games/crust-core/cover
+  screenshots:
+    - games/crust-core/shot-1
+    - games/crust-core/shot-2
+dates:
+  added: 2026-11-15
+  updated: 2026-11-15
+status: live
+provenance:
+  foundVia: form
+  submittedBy: "#292"
+  uploads:
+    ref: 9c72993888b69520
+    count: 3
