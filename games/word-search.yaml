@@ -1,0 +1,44 @@
+slug: word-search
+title: Word Search
+tagline: Submitted by its creator; the description is added during review.
+description: ""
+play:
+  url: https://poprecallgames.com/word-search/
+  platforms:
+    - browser
+  embedPermission:
+    by: submission
+    date: 2026-11-15
+creator:
+  name: Pop Recall
+  handle: pop-recall
+  links:
+    - https://pop-recall.itch.io
+made:
+  models: []
+  tools: []
+  aiShare: most
+  source: "Creator's submission (issue #281)"
+  evidence: creator
+  notes: "Built with AI assistance in vanilla JavaScript (hand-written HTML, CSS
+    and JS — no engine, no framework). Tap the first and last letter to find 4
+    words. Free browser game: no downloads, no account; works on desktop and
+    mobile; single player. Part of the Pop Recall collection at
+    poprecallgames.com."
+tech:
+  multiplayer: single
+genres:
+  - word
+  - puzzle
+media:
+  cover: games/word-search/cover
+  screenshots:
+    - games/word-search/shot-1
+    - games/word-search/shot-2
+dates:
+  added: 2026-11-15
+  updated: 2026-11-15
+status: live
+provenance:
+  foundVia: form
+  submittedBy: "#281"
