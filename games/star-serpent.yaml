@@ -1,0 +1,44 @@
+slug: star-serpent
+title: Star Serpent
+tagline: Submitted by its creator; the description is added during review.
+description: ""
+play:
+  url: https://poprecallgames.com/star-serpent/
+  platforms:
+    - browser
+  embedPermission:
+    by: submission
+    date: 2026-11-15
+creator:
+  name: Pop Recall
+  handle: pop-recall
+  links:
+    - https://pop-recall.itch.io
+made:
+  models:
+    - muse-spark-1-3
+  tools: []
+  aiShare: most
+  source: "Creator's submission (issue #279)"
+  evidence: creator
+  notes: "Built with AI assistance in vanilla JavaScript (hand-written HTML, CSS
+    and JS — no engine, no framework). Eat ten golden stars. Don't bite
+    yourself. Free browser game: no downloads, no account; works on desktop and
+    mobile; single player. Part of the Pop Recall collection at
+    poprecallgames.com."
+tech:
+  multiplayer: single
+genres:
+  - arcade
+media:
+  cover: games/star-serpent/cover
+  screenshots:
+    - games/star-serpent/shot-1
+    - games/star-serpent/shot-2
+dates:
+  added: 2026-11-15
+  updated: 2026-11-15
+status: live
+provenance:
+  foundVia: form
+  submittedBy: "#279"
