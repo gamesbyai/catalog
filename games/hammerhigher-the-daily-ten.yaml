@@ -1,0 +1,48 @@
+slug: hammerhigher-the-daily-ten
+title: HammerHigher — The Daily Ten
+tagline: Submitted by its creator; the description is added during review.
+description: ""
+play:
+  url: https://hammerhigher.com/daily
+  platforms:
+    - browser
+  embedPermission:
+    by: submission
+    date: 2026-11-15
+creator:
+  name: HammerHigher
+  handle: hammerhigher
+made:
+  models:
+    - claude-opus-5-5
+    - gpt-6-1-sol
+    - gpt-6-astra
+  tools:
+    - codex
+  aiShare: most
+  source: "Creator's submission (issue #294)"
+  evidence: creator
+  notes: "Human concept, specification and review; GPT-6 Astra built the core,
+    GPT-6.1 Sol iterated gameplay, and Claude Opus 5.5 refined the interface.
+    Most application code was AI-written. Original Auctionet photos are reused
+    under its published permission, not AI-generated: retain house, Auctionet
+    and original-lot-link credits in screenshots. Daily Ten: ten higher-or-lower
+    auction-price guesses, with swipe/button/keyboard controls. Free, no account
+    required."
+tech:
+  multiplayer: single
+genres:
+  - puzzle
+  - casual
+media:
+  cover: games/hammerhigher-the-daily-ten/cover
+  screenshots:
+    - games/hammerhigher-the-daily-ten/shot-1
+    - games/hammerhigher-the-daily-ten/shot-2
+dates:
+  added: 2026-11-15
+  updated: 2026-11-15
+status: live
+provenance:
+  foundVia: form
+  submittedBy: "#294"
