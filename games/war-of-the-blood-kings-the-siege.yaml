@@ -1,0 +1,44 @@
+slug: war-of-the-blood-kings-the-siege
+title: "War of the Blood Kings: The Siege"
+tagline: Submitted by its creator; the description is added during review.
+description: ""
+play:
+  url: https://harbor-iris-pixel-meadow.grok.me/?utm_source=gamesbyai&utm_campaign=wotbk_directory
+  platforms:
+    - browser
+  embedPermission:
+    by: submission
+    date: 2026-11-16
+creator:
+  name: FOGG Games
+  handle: fogey-tom
+  x: fogey_tom
+made:
+  models: []
+  tools: []
+  aiShare: most
+  source: "Creator's submission (issue #296)"
+  evidence: creator
+  notes: "Turn-based medieval siege game built from a board game our designer has
+    worked on for decades. A small team of Grok Bot AI agents wrote most of the
+    HTML5 code and helps with art and playtesting; the designer set the rules,
+    lore and art direction and approves what ships. Two brother kings, one
+    castle: pick the Violet or Azure army and break the siege, or two players on
+    one screen. Free, no login, plays in phone and desktop browsers."
+tech:
+  multiplayer: single
+genres:
+  - strategy
+  - board
+media:
+  cover: games/war-of-the-blood-kings-the-siege/cover
+  screenshots:
+    - games/war-of-the-blood-kings-the-siege/shot-1
+    - games/war-of-the-blood-kings-the-siege/shot-2
+dates:
+  added: 2026-11-16
+  updated: 2026-11-16
+status: live
+provenance:
+  foundVia: form
+  submittedBy: "#296"
