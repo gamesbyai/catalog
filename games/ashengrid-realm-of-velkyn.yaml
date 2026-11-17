@@ -1,0 +1,44 @@
+slug: ashengrid-realm-of-velkyn
+title: "ASHENGRID: Realm of Velkyn"
+tagline: Submitted by its creator; the description is added during review.
+description: ""
+play:
+  url: https://ashengrid.com/
+  platforms:
+    - browser
+  embedPermission:
+    by: submission
+    date: 2026-11-17
+creator:
+  name: VelkynForge
+  handle: velkynforge
+made:
+  models: []
+  tools:
+    - claude-code
+  aiShare: most
+  source: "Creator's submission (issue #302)"
+  evidence: creator
+  notes: "Built with AI coding assistance (Claude Code): a Rust/WASM combat core
+    with a JS canvas client and a live Nakama backend. I hand-tuned the
+    onboarding, the first-fight flow and combat balance against real player
+    telemetry. Features four playable covenants, AP/MP turn-based isometric grid
+    combat, an eight-chapter prologue, and gathering/crafting. Plays free in the
+    browser as a guest with no download or signup wall."
+tech:
+  multiplayer: single
+genres:
+  - strategy
+  - rpg
+media:
+  cover: games/ashengrid-realm-of-velkyn/cover
+  screenshots:
+    - games/ashengrid-realm-of-velkyn/shot-1
+    - games/ashengrid-realm-of-velkyn/shot-2
+dates:
+  added: 2026-11-17
+  updated: 2026-11-17
+status: live
+provenance:
+  foundVia: form
+  submittedBy: "#302"
