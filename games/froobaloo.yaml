@@ -1,0 +1,41 @@
+slug: froobaloo
+title: Froobaloo
+tagline: Submitted by its creator; the description is added during review.
+description: ""
+play:
+  url: https://froobaloo.com/
+  platforms:
+    - browser
+  embedPermission:
+    by: submission
+    date: 2026-11-17
+creator:
+  name: Jeremy Toeman
+  handle: froobalooo
+  x: Froobalooo
+made:
+  models: []
+  tools: []
+  aiShare: most
+  source: "Creator's submission (issue #300)"
+  evidence: creator
+  notes: All code written by Claude. All logic, curation, content, theory,
+    writing, etc written by Jeremy, so I curate each of the games, every day. i
+    concieved of them all. i work on the logic and how to make them better/more
+    fun/challenging myself. but claude writes all the code
+tech:
+  multiplayer: single
+genres:
+  - puzzle
+media:
+  cover: games/froobaloo/cover
+  screenshots:
+    - games/froobaloo/shot-1
+    - games/froobaloo/shot-2
+dates:
+  added: 2026-11-17
+  updated: 2026-11-17
+status: live
+provenance:
+  foundVia: form
+  submittedBy: "#300"
