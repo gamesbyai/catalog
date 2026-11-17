@@ -1,0 +1,40 @@
+slug: deepcut-duel
+title: Deepcut Duel
+tagline: Submitted by its creator; the description is added during review.
+description: ""
+play:
+  url: https://deepcutduel.com/
+  platforms:
+    - browser
+  embedPermission:
+    by: submission
+    date: 2026-11-17
+creator:
+  name: Mirai
+  handle: mirai
+made:
+  models: []
+  tools:
+    - codex
+  aiShare: most
+  source: "Creator's submission (issue #298)"
+  evidence: creator
+  notes: Codex was used for implementation, with Claude coordinating and reviewing
+    visual design. The game offers a daily shared trivia set, unlimited
+    practice, and optional challenge links.
+tech:
+  multiplayer: online
+genres:
+  - puzzle
+media:
+  cover: games/deepcut-duel/cover
+  screenshots:
+    - games/deepcut-duel/shot-1
+    - games/deepcut-duel/shot-2
+dates:
+  added: 2026-11-17
+  updated: 2026-11-17
+status: live
+provenance:
+  foundVia: form
+  submittedBy: "#298"
