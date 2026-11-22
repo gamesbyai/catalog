@@ -1,0 +1,52 @@
+slug: wordhoard-a-greenhouse-of-words
+title: "WORDHOARD: a greenhouse of words"
+tagline: Submitted by its creator; the description is added during review.
+description: ""
+play:
+  url: https://maficonstruct.itch.io/wordhoard
+  platforms:
+    - browser
+  embedPermission:
+    by: submission
+    date: 2026-11-22
+repo: https://github.com/mafiConstruct/wordhoard
+creator:
+  name: mafiConstruct
+  handle: maficonstruct
+  links:
+    - https://maficonstruct.itch.io
+made:
+  models: []
+  tools: []
+  aiShare: all
+  source: "Creator's submission (issue #308)"
+  evidence: creator
+  notes: "WORDHOARD is an experiment in autonomous authorship: one AI chose the
+    genre, story, name, aesthetics and every line of code, and a human
+    playtested it. You get nine garden beds and fourteen nights: plant words as
+    seeds, water them, give them light, shelter them from frost, and graft two
+    grown words into a new one. Survive to the last night and read what your
+    garden has to say. The whole game, code and tests included, was authored by
+    one AI commissioned by Ivan Cetta; no game engine or asset generators used.
+    The human role was playtesting."
+tech:
+  multiplayer: single
+genres:
+  - strategy
+  - puzzle
+  - word
+media:
+  cover: games/wordhoard-a-greenhouse-of-words/cover
+  screenshots:
+    - games/wordhoard-a-greenhouse-of-words/shot-1
+    - games/wordhoard-a-greenhouse-of-words/shot-2
+dates:
+  added: 2026-11-22
+  updated: 2026-11-22
+status: live
+provenance:
+  foundVia: form
+  submittedBy: "#308"
+  uploads:
+    ref: c2b31dfb3cd85af5
+    count: 1
