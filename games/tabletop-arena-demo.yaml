@@ -1,0 +1,52 @@
+slug: tabletop-arena-demo
+title: Tabletop Arena Demo
+tagline: Submitted by its creator; the description is added during review.
+description: ""
+play:
+  url: https://oblivionknight117.itch.io/tabletop-arena-web
+  platforms:
+    - browser
+  embedPermission:
+    by: submission
+    date: 2026-11-22
+creator:
+  name: Dakota
+  handle: oblivionknight117
+  links:
+    - https://oblivionknight117.itch.io
+made:
+  models:
+    - claude-opus-5-5
+  tools:
+    - claude-code
+    - claude-ai
+    - chatgpt
+  aiShare: most
+  source: "Creator's submission (issue #310)"
+  evidence: creator
+  notes: "I designed the game and directed every step. Claude wrote most of the
+    Godot code, rules engine and store text from my instructions, and I tested
+    and tuned it all. Art, 3D figures and audio were made with generative AI
+    tools (including ChatGPT) and curated by me. Free browser demo; the full
+    game is headed to Steam. Trailer: https://youtu.be/oicUpVFCoeQ"
+tech:
+  engine: godot
+  multiplayer: single
+genres:
+  - strategy
+  - adventure
+media:
+  cover: games/tabletop-arena-demo/cover
+  screenshots:
+    - games/tabletop-arena-demo/shot-1
+    - games/tabletop-arena-demo/shot-2
+dates:
+  added: 2026-11-22
+  updated: 2026-11-22
+status: live
+provenance:
+  foundVia: form
+  submittedBy: "#310"
+  uploads:
+    ref: 11fbcde14f5549dd
+    count: 1
