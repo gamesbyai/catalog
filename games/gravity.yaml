@@ -1,0 +1,49 @@
+slug: gravity
+title: Gravity
+tagline: Submitted by its creator; the description is added during review.
+description: ""
+play:
+  url: https://gravity.hertzmc.com/
+  platforms:
+    - browser
+  embedPermission:
+    by: submission
+    date: 2026-11-22
+creator:
+  name: HertzMC
+  handle: hertzmc
+  links:
+    - https://hertzmc.itch.io
+made:
+  models: []
+  tools:
+    - claude-code
+  aiShare: all
+  source: "Creator's submission (issue #312)"
+  evidence: creator
+  notes: "We had the idea: a little planet with eyes that eats smaller space rocks
+    until it's a black hole. Claude Code wrote all the code in plain JavaScript
+    and HTML5 Canvas. The art is drawn in code and the sounds are made in code
+    too, so there are no outside assets. We picked the six levels, played it on
+    our phones and asked for changes until it felt right."
+tech:
+  engine: canvas
+  multiplayer: single
+genres:
+  - arcade
+  - casual
+media:
+  cover: games/gravity/cover
+  screenshots:
+    - games/gravity/shot-1
+    - games/gravity/shot-2
+dates:
+  added: 2026-11-22
+  updated: 2026-11-22
+status: live
+provenance:
+  foundVia: form
+  submittedBy: "#312"
+  uploads:
+    ref: e927b3e5bb7f63ab
+    count: 3
