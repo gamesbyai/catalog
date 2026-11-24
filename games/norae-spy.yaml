@@ -1,0 +1,47 @@
+slug: norae-spy
+title: NORAE SPY (노래 스파이)
+tagline: Submitted by its creator; the description is added during review.
+description: ""
+play:
+  url: https://claude.ai/artifact/MpNqnrBz9eBHo6dkcje4EA
+  platforms:
+    - browser
+  embedPermission:
+    by: submission
+    date: 2026-11-24
+creator:
+  name: Jeongyeon Entertainment Co., Ltd. · Norae.ai
+  handle: jeongyeon-entertainment-co-ltd-norae-ai
+made:
+  models: []
+  tools:
+    - claude-ai
+  aiShare: most
+  source: "Creator's submission (issue #320)"
+  evidence: creator
+  notes: "Built entirely with Claude in a prompt-driven workflow: I described the
+    building (B1 parking garage up to 9F, rooftop helicopter escape), the
+    shooting and stealth rules and the look, played each build, and asked for
+    changes until it felt right. Claude wrote the code, level layout, 3D
+    geometry and audio. I made the design calls by hand: floor plan, escape
+    goal, difficulty, WASD + mouse controls and the Korean UI text."
+tech:
+  multiplayer: single
+genres:
+  - action
+  - shooter
+media:
+  cover: games/norae-spy/cover
+  screenshots:
+    - games/norae-spy/shot-1
+    - games/norae-spy/shot-2
+dates:
+  added: 2026-11-24
+  updated: 2026-11-24
+status: live
+provenance:
+  foundVia: form
+  submittedBy: "#320"
+  uploads:
+    ref: fb673b7e8a6a1ba2
+    count: 1
