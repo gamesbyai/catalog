@@ -1,0 +1,48 @@
+slug: cluster-bust
+title: cluster bust
+tagline: Submitted by its creator; the description is added during review.
+description: ""
+play:
+  url: https://clusterbust.com/
+  platforms:
+    - browser
+  embedPermission:
+    by: submission
+    date: 2026-11-25
+creator:
+  name: Chris
+  handle: sightspinner
+  x: sightspinner
+made:
+  models:
+    - gpt-6-1-sol
+    - deepseek-v4-1-flash
+    - glm-5-3-flash
+  tools: []
+  aiShare: most
+  source: "Creator's submission (issue #322)"
+  evidence: creator
+  notes: Laid out architecture to Sol. Gave it the theme, strict game rules, had
+    it write a plan for the other agents (deepseek/glm based ones) to actually
+    implement.
+tech:
+  engine: threejs
+  multiplayer: single
+genres:
+  - puzzle
+  - casual
+media:
+  cover: games/cluster-bust/cover
+  screenshots:
+    - games/cluster-bust/shot-1
+    - games/cluster-bust/shot-2
+dates:
+  added: 2026-11-25
+  updated: 2026-11-25
+status: live
+provenance:
+  foundVia: form
+  submittedBy: "#322"
+  uploads:
+    ref: 5ad646c4540a7774
+    count: 2
