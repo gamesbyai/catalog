@@ -1,0 +1,51 @@
+slug: moth-hour
+title: Moth Hour
+tagline: Submitted by its creator; the description is added during review.
+description: ""
+play:
+  url: https://oryn.dev/games/moth-hour
+  platforms:
+    - browser
+  embedPermission:
+    by: submission
+    date: 2026-11-25
+repo: https://github.com/oryn-dev/babylonjs-bullet-hell
+creator:
+  name: Lukas
+  handle: oryn-dev
+  links:
+    - https://github.com/oryn-dev
+made:
+  models: []
+  tools: []
+  aiShare: all
+  source: "Creator's submission (issue #332)"
+  evidence: creator
+  notes: "Made with Oryn, an AI game engine built on Babylon.js. AI wrote the code
+    and made the shaders, art, stages and sound. I set the direction and
+    playtested. You fly a moth through five stages: grazing bullets fills your
+    dust meter, and a full meter releases an Eclipse that turns nearby bullets
+    to dust. Source is on GitHub (MIT). Please open the game on oryn.dev in a
+    new tab rather than in your player."
+tech:
+  engine: babylonjs
+  multiplayer: single
+genres:
+  - action
+  - shooter
+  - arcade
+media:
+  cover: games/moth-hour/cover
+  screenshots:
+    - games/moth-hour/shot-1
+    - games/moth-hour/shot-2
+dates:
+  added: 2026-11-25
+  updated: 2026-11-25
+status: live
+provenance:
+  foundVia: form
+  submittedBy: "#332"
+  uploads:
+    ref: 5f4bfdce5ce1c665
+    count: 3
