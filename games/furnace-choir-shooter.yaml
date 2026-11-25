@@ -1,0 +1,47 @@
+slug: furnace-choir-shooter
+title: Furnace Choir (Shooter)
+tagline: Submitted by its creator; the description is added during review.
+description: ""
+play:
+  url: https://oryn.dev/games/furnace-choir
+  platforms:
+    - browser
+  embedPermission:
+    by: submission
+    date: 2026-11-25
+repo: https://github.com/oryn-dev/babylonjs-boomer-shooter
+creator:
+  name: Nufect
+  handle: nufect
+made:
+  models:
+    - claude-opus-5-5
+  tools: []
+  aiShare: all
+  source: "Creator's submission (issue #329)"
+  evidence: creator
+  notes: Made with Oryn, an AI game engine built on Babylon.js. AI wrote the code
+    and made the shaders, models, textures, level and sound. I set the direction
+    and playtested. Source is on GitHub (MIT).
+tech:
+  engine: babylonjs
+  multiplayer: single
+genres:
+  - action
+  - shooter
+  - fighting
+media:
+  cover: games/furnace-choir-shooter/cover
+  screenshots:
+    - games/furnace-choir-shooter/shot-1
+    - games/furnace-choir-shooter/shot-2
+dates:
+  added: 2026-11-25
+  updated: 2026-11-25
+status: live
+provenance:
+  foundVia: form
+  submittedBy: "#329"
+  uploads:
+    ref: 8ec6e108996ab26a
+    count: 3
