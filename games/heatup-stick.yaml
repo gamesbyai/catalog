@@ -1,0 +1,44 @@
+slug: heatup-stick
+title: HEATUP STICK
+tagline: Submitted by its creator; the description is added during review.
+description: ""
+play:
+  url: https://heatup-sdick.vercel.app/
+  platforms:
+    - browser
+  embedPermission:
+    by: submission
+    date: 2026-11-26
+creator:
+  name: MR.STICK
+  handle: mr-stick
+made:
+  models: []
+  tools:
+    - codex
+  aiShare: most
+  source: "Creator's submission (issue #343)"
+  evidence: creator
+  notes: OpenAI Codex wrote most of the code for HEATUP STICK by MR.STICK. The
+    core loop is choosing one of five sticks, moving it to build heat and
+    reaching 100% before your personal best time. On desktop, drag up and down
+    with the mouse or alternate the Up and Down keys. Stage Mode lets you get
+    the feel for the controls, then Time Attack stops the clock when heat
+    reaches 100%. A real desktop run finished in 4.46s. English and Korean
+    interface.
+tech:
+  multiplayer: single
+genres:
+  - arcade
+media:
+  cover: games/heatup-stick/cover
+  screenshots:
+    - games/heatup-stick/shot-1
+    - games/heatup-stick/shot-2
+dates:
+  added: 2026-11-26
+  updated: 2026-11-26
+status: live
+provenance:
+  foundVia: form
+  submittedBy: "#343"
