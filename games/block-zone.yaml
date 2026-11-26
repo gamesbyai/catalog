@@ -1,0 +1,51 @@
+slug: block-zone
+title: Block Zone
+tagline: Submitted by its creator; the description is added during review.
+description: ""
+play:
+  url: https://blockzone.ru/
+  platforms:
+    - browser
+  embedPermission:
+    by: submission
+    date: 2026-11-26
+creator:
+  name: ONYX
+  handle: onyx
+made:
+  models:
+    - claude-opus-5-5
+    - gpt-6-1-sol
+    - deepseek-v4-1-flash
+  tools:
+    - codex
+  aiShare: most
+  source: "Creator's submission (issue #341)"
+  evidence: creator
+  notes: Block Zone was developed with substantial assistance from OpenAI Codex
+    across gameplay systems, maps, interfaces, testing and production fixes. I
+    directed the game design, reviewed and tested builds, provided assets and
+    requirements, and integrated the final result. It is a free browser-based
+    voxel FPS with guest bot battles, online modes, mobile controls,
+    progression, squads and clans.
+tech:
+  multiplayer: online
+genres:
+  - action
+  - shooter
+  - arcade
+media:
+  cover: games/block-zone/cover
+  screenshots:
+    - games/block-zone/shot-1
+    - games/block-zone/shot-2
+dates:
+  added: 2026-11-26
+  updated: 2026-11-26
+status: live
+provenance:
+  foundVia: form
+  submittedBy: "#341"
+  uploads:
+    ref: 00f92cccc4a0c490
+    count: 1
