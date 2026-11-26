@@ -1,0 +1,41 @@
+slug: rockettunnel-z
+title: RocketTunnel Z
+tagline: Submitted by its creator; the description is added during review.
+description: ""
+play:
+  url: https://play.google.com/store/apps/details?id=com.gametrip.rockettunnelZ&pcampaignid=web_share
+  platforms:
+    - browser
+  embedPermission:
+    by: submission
+    date: 2026-11-26
+creator:
+  name: GameTrip
+  handle: gametrip
+made:
+  models:
+    - claude-fable-5
+    - claude-opus-5
+  tools:
+    - claude-code
+  aiShare: all
+  source: "Creator's submission (issue #334)"
+  evidence: creator
+  notes: i gave directions about platform, language and game details.
+tech:
+  multiplayer: single
+genres:
+  - simulation
+  - arcade
+media:
+  cover: games/rockettunnel-z/cover
+  screenshots:
+    - games/rockettunnel-z/shot-1
+    - games/rockettunnel-z/shot-2
+dates:
+  added: 2026-11-26
+  updated: 2026-11-26
+status: live
+provenance:
+  foundVia: form
+  submittedBy: "#334"
