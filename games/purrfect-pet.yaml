@@ -1,0 +1,45 @@
+slug: purrfect-pet
+title: Purrfect Pet
+tagline: Submitted by its creator; the description is added during review.
+description: ""
+play:
+  url: https://purrfect-pet.netlify.app/
+  platforms:
+    - browser
+  embedPermission:
+    by: submission
+    date: 2026-11-26
+creator:
+  name: Shan Akbar
+  handle: shanbinakbar786
+  links:
+    - https://github.com/shanbinakbar786
+made:
+  models: []
+  tools: []
+  aiShare: most
+  source: "Creator's submission (issue #339)"
+  evidence: creator
+  notes: "Feed, bathe and play with Milo, the cute orange-white kitten! Purrfect
+    Pet is a free virtual pet game with 1000 levels, 5 mini-games, dress-up and
+    coins. Play the full game free here: https://purrfect-pet.netlify.app — no
+    download, no sign-in! Built as a free HTML5 web browser game; AI helped
+    write the code and I designed and refined the gameplay by hand."
+tech:
+  engine: canvas
+  multiplayer: single
+genres:
+  - casual
+  - simulation
+media:
+  cover: games/purrfect-pet/cover
+  screenshots:
+    - games/purrfect-pet/shot-1
+    - games/purrfect-pet/shot-2
+dates:
+  added: 2026-11-26
+  updated: 2026-11-26
+status: live
+provenance:
+  foundVia: form
+  submittedBy: "#339"
