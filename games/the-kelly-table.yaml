@@ -1,0 +1,41 @@
+slug: the-kelly-table
+title: The Kelly Table
+tagline: Submitted by its creator; the description is added during review.
+description: ""
+play:
+  url: https://kellytable.com/
+  platforms:
+    - browser
+  embedPermission:
+    by: submission
+    date: 2026-11-28
+creator:
+  name: Young Yin
+  handle: young-yin
+made:
+  models: []
+  tools: []
+  aiShare: most
+  source: "Creator's submission (issue #348)"
+  evidence: creator
+  notes: The idea, game design and playtesting are mine. The code, visuals and
+    most of the writing were made with AI coding assistants. Built with Three.js
+    and JavaScript. It is free, uses a $100 virtual bankroll, and involves no
+    real money.
+tech:
+  engine: threejs
+  multiplayer: single
+genres:
+  - educational
+media:
+  cover: games/the-kelly-table/cover
+  screenshots:
+    - games/the-kelly-table/shot-1
+    - games/the-kelly-table/shot-2
+dates:
+  added: 2026-11-28
+  updated: 2026-11-28
+status: live
+provenance:
+  foundVia: form
+  submittedBy: "#348"
